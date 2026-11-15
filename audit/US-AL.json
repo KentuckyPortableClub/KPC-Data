@@ -1,6 +1,6 @@
 {
  "area": "US-AL",
- "built": "2026-11-08",
+ "built": "2026-11-15",
  "tool": "KPC-map-audit",
  "rules": "2026-11-02c",
  "parks": [
@@ -62,53 +62,75 @@
    "name": "Fort Gaines National Historic Site",
    "key_name": "Fort Gaines National Historic Site",
    "type": "National Historic Site",
-   "grade": "pin",
+   "grade": "official",
    "pin": [
     30.2483,
     -88.0756
    ],
-   "outline_from": [],
-   "acres_drawn": null,
-   "records": [],
-   "record_ids": [],
+   "outline_from": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+   ],
+   "acres_drawn": 16.7,
+   "records": [
+    {
+     "id": "padus#166719",
+     "name": "Historic Fort Gaines",
+     "type": "Historic Site Local Historic or Cultural Area",
+     "category": "Other",
+     "acres": 17.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=166719&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#166719"
+   ],
    "tests": {
     "T1": {
-     "flag": "NO OUTLINE"
+     "flag": "PASS",
+     "metres": 0
     },
     "T2": {
-     "flag": "NO OUTLINE"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
-     "flag": "CAN'T TELL",
-     "note": "no record name"
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Fort Gaines National Historic Site",
+     "record_name": "Historic Fort Gaines"
     },
     "T4": {
-     "flag": "CAN'T TELL",
-     "note": "no record"
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
     },
     "T5": {
-     "flag": "NO OUTLINE",
-     "note": "no outline saved (pin only)"
+     "flag": "PASS",
+     "pieces": 1
     },
     "T6": {
-     "flag": "NO OUTLINE"
+     "flag": "PASS"
     },
     "T7": {
-     "flag": "NO OUTLINE"
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
     },
     "T8": {
-     "flag": "CAN'T TELL",
-     "note": "no record id"
+     "flag": "PASS"
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: mapservices.nps.gov: down for this run (failed 3 times)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "Nothing could be tested."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-0136",
@@ -345,78 +367,50 @@
     31.8151,
     -88.1922
    ],
-   "outline_from": [
-    "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0"
-   ],
-   "acres_drawn": 3975.0,
-   "records": [
-    {
-     "id": "fws4879",
-     "name": "CHOCTAW NATIONAL WILDLIFE REFUGE",
-     "type": "U.S. Fish & Wildlife Service",
-     "acres": 3975.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0",
-     "link": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?objectIds=4879&outFields=*&returnGeometry=false&f=html",
-     "name_field": "ORGNAME"
-    }
-   ],
-   "record_ids": [
-    "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0#4879"
-   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "PASS",
-     "metres": 0
+     "flag": "NO OUTLINE"
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 3975.0,
-     "official_acres": 3975.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Choctaw National Wildlife Refuge",
-     "record_name": "CHOCTAW NATIONAL WILDLIFE REFUGE"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": "refuge",
-     "record_kind": "refuge",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "PASS",
-     "pieces": 1
+     "flag": "CAN'T TELL",
+     "note": "source down"
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "DUPLICATE",
-     "parks": {
-      "US-13088": [
-       "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0#4879"
-      ]
-     },
-     "note": "same record id(s) as another park number: for KPC 13"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
-     "last_edit": "2026-08-24",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "DUPLICATE: Another park number uses the same record: US-13088."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: Nothing could be tested."
   },
   {
    "ref": "US-0139",
@@ -1132,7 +1126,7 @@
      "flag": "NOTE",
      "metres": 2533.6,
      "was": "OUTSIDE",
-     "note": "the park spans several states / provinces (US-AL, US-MS): POTA's one pin may be in another part"
+     "note": "the park spans several states / provinces (US-AL, US-MS): POTA's one pin may be in another part (the key says MS)"
     },
     "T2": {
      "flag": "PASS",
@@ -1275,8 +1269,18 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 4117.6,
+   "acres_drawn": 35644.8,
    "records": [
+    {
+     "id": "padus#3552",
+     "name": "Natchez Trace Parkway",
+     "type": "Parkway Special Designation Area",
+     "category": "Fee",
+     "acres": 31527.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3552&outFields=*&returnGeometry=false&f=html"
+    },
     {
      "id": "padus#3551",
      "name": "Natchez Trace Parkway",
@@ -1289,19 +1293,18 @@
     }
    ],
    "record_ids": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3552",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3551"
    ],
    "tests": {
     "T1": {
-     "flag": "NOTE",
-     "metres": 63503.7,
-     "was": "FAR",
-     "note": "the park spans several states / provinces (US-AL, US-MS, US-TN): POTA's one pin may be in another part (the key says MS)"
+     "flag": "PASS",
+     "metres": 0
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 4117.6,
-     "official_acres": 4118.0,
+     "outline_acres": 35644.8,
+     "official_acres": 35645.0,
      "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
@@ -1317,8 +1320,18 @@
      "flag": "CAN'T TELL"
     },
     "T5": {
-     "flag": "PASS",
-     "pieces": 6
+     "flag": "SELF-INTERSECTION",
+     "pieces": 45,
+     "flags": [
+      "SELF-INTERSECTION"
+     ],
+     "note": "Ring Self-intersection[-89.9755724943113 32.5252903653566]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -1328,7 +1341,13 @@
      "note": "read live at full detail, not a saved copy"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "DUPLICATE",
+     "parks": {
+      "US-4560": [
+       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3552"
+      ]
+     },
+     "note": "same record id(s) as another park number: for KPC 13"
     },
     "T9": {
      "flag": "CAN'T TELL",
@@ -1339,8 +1358,8 @@
     "record 3551: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
    ],
    "status": "graded",
-   "score": 0,
-   "why": "All tests pass."
+   "score": 2,
+   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-89.9755724943113 32.5252903653566] (+1 more flag)."
   },
   {
    "ref": "US-0719",
@@ -1425,8 +1444,8 @@
    "type": "National Historic Site",
    "grade": "official",
    "pin": [
-    32.4588,
-    -85.6881
+    32.4572,
+    -85.6801
    ],
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
@@ -1449,8 +1468,8 @@
    ],
    "tests": {
     "T1": {
-     "flag": "NEAR",
-     "metres": 255.5
+     "flag": "PASS",
+     "metres": 0
     },
     "T2": {
      "flag": "PASS",
@@ -1491,8 +1510,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "NEAR: POTA's pin is 256 m outside the outline."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-0869",
@@ -2132,31 +2151,10 @@
     -85.6337
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://conservationgis.alabama.gov/adcnrweb/rest/services/StateParks/MapServer/0"
    ],
-   "acres_drawn": 1746.2,
+   "acres_drawn": 1541.1,
    "records": [
-    {
-     "id": "padus#256240",
-     "name": "Desoto State Park",
-     "type": "SP State Park",
-     "category": "Fee",
-     "acres": 327.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=256240&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "padus#256208",
-     "name": "DeSoto State Park",
-     "type": "SP State Park",
-     "category": "Fee",
-     "acres": 74.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=256208&outFields=*&returnGeometry=false&f=html"
-    },
     {
      "id": "sgala6",
      "name": "Desoto State Park",
@@ -2167,8 +2165,6 @@
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#256240",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#256208",
     "https://conservationgis.alabama.gov/adcnrweb/rest/services/StateParks/MapServer/0#6"
    ],
    "tests": {
@@ -2178,10 +2174,10 @@
     },
     "T2": {
      "flag": "OFF",
-     "outline_acres": 1746.2,
-     "official_acres": 401.0,
-     "times": 4.35,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "outline_acres": 1541.1,
+     "official_acres": 3502.0,
+     "times": 2.27,
+     "official_from": "the club's acreage list"
     },
     "T3": {
      "flag": "WEAK",
@@ -2196,7 +2192,7 @@
     },
     "T5": {
      "flag": "PASS",
-     "pieces": 3
+     "pieces": 1
     },
     "T6": {
      "flag": "PASS"
@@ -2216,7 +2212,7 @@
    "problems": [],
    "status": "graded",
    "score": 2,
-   "why": "OFF: The outline is 4.3 times bigger than the official 401 acres (1,746 ac drawn) (+1 more flag)."
+   "why": "OFF: The outline is 2.3 times smaller than the official 3,502 acres (1,541 ac drawn) (+1 more flag)."
   },
   {
    "ref": "US-10396",
@@ -2285,7 +2281,20 @@
      }
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "US-3706",
+       "name": "Sipsey Wilderness Wilderness Area",
+       "share": 1.0
+      },
+      {
+       "ref": "US-4452",
+       "name": "William B. Bankhead National Forest",
+       "share": 0.49
+      }
+     ],
+     "count": 2
     },
     "T7": {
      "flag": "N/A",
@@ -2301,8 +2310,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-87.320249408224 34.3762766594542]."
+   "score": 4,
+   "why": "SPILL: The outline covers 100% of US-3706 Sipsey Wilderness Wilderness Area, with no 2-fer row (maybe the wrong record) (+1 more flag)."
   },
   {
    "ref": "US-1040",
@@ -5987,78 +5996,50 @@
     31.8416,
     -88.1679
    ],
-   "outline_from": [
-    "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0"
-   ],
-   "acres_drawn": 3975.0,
-   "records": [
-    {
-     "id": "fws4879",
-     "name": "CHOCTAW NATIONAL WILDLIFE REFUGE",
-     "type": "U.S. Fish & Wildlife Service",
-     "acres": 3975.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0",
-     "link": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?objectIds=4879&outFields=*&returnGeometry=false&f=html",
-     "name_field": "ORGNAME"
-    }
-   ],
-   "record_ids": [
-    "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0#4879"
-   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "PASS",
-     "metres": 0
+     "flag": "NO OUTLINE"
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 3975.0,
-     "official_acres": 3975.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Choctaw Nation Wildlife Refuge National Wildlife Area",
-     "record_name": "CHOCTAW NATIONAL WILDLIFE REFUGE"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": "refuge",
-     "record_kind": "refuge",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "PASS",
-     "pieces": 1
+     "flag": "CAN'T TELL",
+     "note": "source down"
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "DUPLICATE",
-     "parks": {
-      "US-0138": [
-       "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0#4879"
-      ]
-     },
-     "note": "same record id(s) as another park number: for KPC 13"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
-     "last_edit": "2026-08-24",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "DUPLICATE: Another park number uses the same record: US-0138."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: Nothing could be tested."
   },
   {
    "ref": "US-13311",
@@ -7901,71 +7882,50 @@
     33.4148,
     -85.8302
    ],
-   "outline_from": [
-    "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0"
-   ],
-   "acres_drawn": 7399.8,
-   "records": [
-    {
-     "id": "wld77",
-     "name": "Cheaha Wilderness",
-     "type": "National Wilderness Preservation System",
-     "acres": 7400.0,
-     "acres_from": "the key's acres",
-     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
-     "link": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0/query?objectIds=77&outFields=*&returnGeometry=false&f=html",
-     "name_field": "wildernessname"
-    }
-   ],
-   "record_ids": [
-    "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0#77"
-   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "PASS",
-     "metres": 0
+     "flag": "NO OUTLINE"
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 7399.8,
-     "official_acres": 7400.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Cheaha Wilderness Area",
-     "record_name": "Cheaha Wilderness"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": "wilderness",
-     "record_kind": "wilderness",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "PASS",
-     "pieces": 1
+     "flag": "CAN'T TELL",
+     "note": "source down"
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
      "flag": "CAN'T TELL",
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: apps.fs.usda.gov: saved copies only, no live read"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: Nothing could be tested."
   },
   {
    "ref": "US-3683",
@@ -8034,7 +7994,15 @@
      }
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "US-0158",
+       "name": "Mountain Longleaf National Wildlife Refuge",
+       "share": 0.37
+      }
+     ],
+     "count": 1
     },
     "T7": {
      "flag": "N/A",
@@ -8050,8 +8018,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-85.6553505438054 33.7220636189744]."
+   "score": 4,
+   "why": "SPILL: The outline covers 37% of US-0158 Mountain Longleaf National Wildlife Refuge, with no 2-fer row (maybe the wrong record) (+1 more flag)."
   },
   {
    "ref": "US-3684",
@@ -8325,61 +8293,38 @@
     33.8931,
     -85.5529
    ],
-   "outline_from": [
-    "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0"
-   ],
-   "acres_drawn": 8947.4,
-   "records": [
-    {
-     "id": "wld115",
-     "name": "Dugger Mountain Wilderness",
-     "type": "National Wilderness Preservation System",
-     "acres": 8947.0,
-     "acres_from": "the key's acres",
-     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
-     "link": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0/query?objectIds=115&outFields=*&returnGeometry=false&f=html",
-     "name_field": "wildernessname"
-    }
-   ],
-   "record_ids": [
-    "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0#115"
-   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "NEAR",
-     "metres": 40.5
+     "flag": "NO OUTLINE"
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 8947.4,
-     "official_acres": 8947.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Dugger Mountain Wilderness National Forest",
-     "record_name": "Dugger Mountain Wilderness"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": "national forest",
-     "record_kind": "wilderness",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "PASS",
-     "pieces": 1
+     "flag": "CAN'T TELL",
+     "note": "source down"
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
      "flag": "CAN'T TELL",
@@ -8387,11 +8332,11 @@
     }
    },
    "problems": [
-    "record wld115: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
+    "SOURCE DOWN: refused, no request made: apps.fs.usda.gov: saved copies only, no live read"
    ],
-   "status": "graded",
-   "score": 1,
-   "why": "NEAR: POTA's pin is 40 m outside the outline."
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: Nothing could be tested."
   },
   {
    "ref": "US-3688",
@@ -9205,7 +9150,15 @@
      }
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "US-10428",
+       "name": "Walls of Jericho State Natural Area",
+       "share": 1.0
+      }
+     ],
+     "count": 1
     },
     "T7": {
      "flag": "N/A",
@@ -9221,8 +9174,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-85.9641497831044 34.9179347047456]; 7 hole(s) under 100 m2 (+1 more flag)."
+   "score": 5,
+   "why": "SPILL: The outline covers 100% of US-10428 Walls of Jericho State Natural Area, with no 2-fer row (maybe the wrong record) (+2 more flags)."
   },
   {
    "ref": "US-3695",
@@ -10520,81 +10473,50 @@
     34.3318,
     -87.4347
    ],
-   "outline_from": [
-    "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0"
-   ],
-   "acres_drawn": 25850.6,
-   "records": [
-    {
-     "id": "wld397",
-     "name": "Sipsey Wilderness",
-     "type": "National Wilderness Preservation System",
-     "acres": 25851.0,
-     "acres_from": "the key's acres",
-     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
-     "link": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0/query?objectIds=397&outFields=*&returnGeometry=false&f=html",
-     "name_field": "wildernessname"
-    }
-   ],
-   "record_ids": [
-    "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0#397"
-   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "PASS",
-     "metres": 0
+     "flag": "NO OUTLINE"
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 25850.6,
-     "official_acres": 25851.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Sipsey Wilderness Wilderness Area",
-     "record_name": "Sipsey Wilderness"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": "wilderness",
-     "record_kind": "wilderness",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "TINY HOLES",
-     "pieces": 1,
-     "flags": [
-      "TINY HOLES"
-     ],
-     "note": "4 hole(s) under 100 m2",
-     "repair": {
-      "ok": true,
-      "area_change_pct": 0.0,
-      "holes": 4,
-      "pieces": 0
-     }
+     "flag": "CAN'T TELL",
+     "note": "source down"
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
      "flag": "CAN'T TELL",
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "TINY HOLES: The shape has problems: 4 hole(s) under 100 m2."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: apps.fs.usda.gov: saved copies only, no live read"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: Nothing could be tested."
   },
   {
    "ref": "US-3707",
@@ -11780,7 +11702,20 @@
      }
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "US-9911",
+       "name": "Boggy Hollow Wildlife Management Area",
+       "share": 0.99
+      },
+      {
+       "ref": "US-9912",
+       "name": "Blue Spring Wildlife Management Area",
+       "share": 0.99
+      }
+     ],
+     "count": 2
     },
     "T7": {
      "flag": "N/A",
@@ -11796,8 +11731,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-86.4974740064281 31.1607583564367]."
+   "score": 4,
+   "why": "SPILL: The outline covers 99% of US-9911 Boggy Hollow Wildlife Management Area, with no 2-fer row (maybe the wrong record) (+1 more flag)."
   },
   {
    "ref": "US-4450",
@@ -11868,7 +11803,40 @@
      }
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "US-3682",
+       "name": "Cheaha Wilderness Area",
+       "share": 1.0
+      },
+      {
+       "ref": "US-9924",
+       "name": "Oakmulgee Wildlife Management Area",
+       "share": 1.0
+      },
+      {
+       "ref": "US-3693",
+       "name": "Hollins Wildlife Management Area",
+       "share": 0.96
+      },
+      {
+       "ref": "US-3687",
+       "name": "Dugger Mountain Wilderness National Forest",
+       "share": 0.93
+      },
+      {
+       "ref": "US-3683",
+       "name": "Choccolocco Wildlife Management Area",
+       "share": 0.91
+      },
+      {
+       "ref": "US-1037",
+       "name": "Cheaha Resort State Park",
+       "share": 0.41
+      }
+     ],
+     "count": 6
     },
     "T7": {
      "flag": "N/A",
@@ -11884,8 +11852,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-85.5155260526507 33.8556293943079]; 1 hole(s) under 100 m2; 90 pieces spread over 253 km (+2 more flags)."
+   "score": 6,
+   "why": "SPILL: The outline covers 100% of US-3682 Cheaha Wilderness Area, with no 2-fer row (maybe the wrong record) (+3 more flags)."
   },
   {
    "ref": "US-4451",
@@ -12032,7 +12000,20 @@
      }
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "US-10396",
+       "name": "Black Warrior Wildlife Management Area",
+       "share": 1.0
+      },
+      {
+       "ref": "US-3706",
+       "name": "Sipsey Wilderness Wilderness Area",
+       "share": 1.0
+      }
+     ],
+     "count": 2
     },
     "T7": {
      "flag": "N/A",
@@ -12048,78 +12029,100 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 4,
-   "why": "NEAR: POTA's pin is 170 m outside the outline (+3 more flags)."
+   "score": 7,
+   "why": "SPILL: The outline covers 100% of US-10396 Black Warrior Wildlife Management Area, with no 2-fer row (maybe the wrong record) (+4 more flags)."
   },
   {
    "ref": "US-4560",
    "name": "Natchez Trace Trail National Scenic Trail",
    "key_name": "Natchez Trace Trail National Scenic Trail",
    "type": "National Scenic Trail",
-   "grade": "official",
+   "grade": "approximate",
    "pin": [
     34.3305,
     -88.71
    ],
    "outline_from": [
-    "trails/US-4560.json"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": null,
+   "acres_drawn": 31527.2,
    "records": [
     {
-     "id": "trl:US-4560",
-     "name": "Natchez Trace Trail National Scenic Trail",
-     "type": "trail",
-     "layer": "trails/US-4560.json"
+     "id": "padus#3552",
+     "name": "Natchez Trace Parkway",
+     "type": "Parkway Special Designation Area",
+     "category": "Fee",
+     "acres": 31527.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=3552&outFields=*&returnGeometry=false&f=html"
     }
    ],
-   "record_ids": [],
+   "record_ids": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3552"
+   ],
    "tests": {
     "T1": {
-     "flag": "NEAR",
-     "metres": 47.2
+     "flag": "PASS",
+     "metres": 0
     },
     "T2": {
-     "flag": "N/A",
-     "note": "a line, not an area"
+     "flag": "PASS",
+     "outline_acres": 31527.2,
+     "official_acres": 31527.0,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "Natchez Trace Trail National Scenic Trail",
-     "record_name": "Natchez Trace Trail National Scenic Trail"
+     "record_name": "Natchez Trace Parkway"
     },
     "T4": {
      "park_kind": "trail",
-     "record_kind": "trail",
-     "flag": "PASS"
+     "record_kind": null,
+     "flag": "CAN'T TELL"
     },
     "T5": {
-     "flag": "N/A",
-     "note": "a line, not an area"
+     "flag": "SELF-INTERSECTION",
+     "pieces": 40,
+     "flags": [
+      "SELF-INTERSECTION"
+     ],
+     "note": "Ring Self-intersection[-89.9755724943113 32.5252903653566]",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 0,
+      "pieces": 0
+     }
     },
     "T6": {
-     "flag": "NO OUTLINE"
+     "flag": "PASS"
     },
     "T7": {
      "flag": "N/A",
      "note": "read live at full detail, not a saved copy"
     },
     "T8": {
-     "flag": "CAN'T TELL",
-     "note": "no record id"
+     "flag": "DUPLICATE",
+     "parks": {
+      "US-0642": [
+       "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#3552"
+      ]
+     },
+     "note": "same record id(s) as another park number: for KPC 13"
     },
     "T9": {
      "flag": "CAN'T TELL",
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [
-    "SOURCE DOWN: : down for this run (failed 3 times)"
-   ],
-   "status": "SOURCE DOWN: retry next run",
-   "score": 1,
-   "why": "SOURCE DOWN: NEAR: POTA's pin is 47 m outside the outline."
+   "problems": [],
+   "status": "graded",
+   "score": 2,
+   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-89.9755724943113 32.5252903653566] (+1 more flag)."
   },
   {
    "ref": "US-4580",

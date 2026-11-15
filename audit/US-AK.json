@@ -1,6 +1,6 @@
 {
  "area": "US-AK",
- "built": "2026-11-08",
+ "built": "2026-11-15",
  "tool": "KPC-map-audit",
  "rules": "2026-11-02c",
  "parks": [
@@ -1814,8 +1814,18 @@
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 1637279.4,
+   "acres_drawn": 1637748.8,
    "records": [
+    {
+     "id": "padus#4005",
+     "name": "Kodiak National Wildlife Refuge",
+     "type": "NWR National Wildlife Refuge",
+     "category": "Fee",
+     "acres": 1637304.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=4005&outFields=*&returnGeometry=false&f=html"
+    },
     {
      "id": "padus#4957",
      "name": "Kodiak National Wildlife Refuge",
@@ -1828,17 +1838,18 @@
     }
    ],
    "record_ids": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#4005",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#4957"
    ],
    "tests": {
     "T1": {
      "flag": "FAR",
-     "metres": 24508.7
+     "metres": 24507.5
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 1637279.4,
-     "official_acres": 1637279.0,
+     "outline_acres": 1637748.8,
+     "official_acres": 1637304.0,
      "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
@@ -1855,19 +1866,19 @@
     },
     "T5": {
      "flag": "SELF-INTERSECTION",
-     "pieces": 63,
+     "pieces": 60,
      "flags": [
       "SELF-INTERSECTION",
       "SLIVERS",
       "TINY HOLES",
       "SCATTERED"
      ],
-     "note": "Ring Self-intersection[-153.491188946693 57.1000312792777]; 4 piece(s) under 10 m wide; 56 hole(s) under 100 m2; 63 pieces spread over 236 km",
+     "note": "Ring Self-intersection[-153.000025008461 57.2931389510831]; 5 piece(s) under 10 m wide; 64 hole(s) under 100 m2; 60 pieces spread over 236 km",
      "repair": {
       "ok": true,
       "area_change_pct": 0.0,
-      "holes": 56,
-      "pieces": 4
+      "holes": 64,
+      "pieces": 5
      }
     },
     "T6": {
@@ -3580,78 +3591,50 @@
     66.9939,
     -162.838
    ],
-   "outline_from": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2"
-   ],
-   "acres_drawn": 649531.4,
-   "records": [
-    {
-     "id": "sgakd1200",
-     "name": "Cape Krusenstern National Monument",
-     "type": "National Park Service (legal boundary) (park, state GIS table)",
-     "layer": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
-     "link": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2/query?objectIds=1200&outFields=*&returnGeometry=false&f=html",
-     "name_field": "UNIT_NAME"
-    }
-   ],
-   "record_ids": [
-    "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2#1200"
-   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "PASS",
-     "metres": 0
+     "flag": "NO OUTLINE"
     },
     "T2": {
-     "flag": "NO FIGURE",
-     "outline_acres": 649531.4
+     "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Cape Krusenstern National Monument",
-     "record_name": "Cape Krusenstern National Monument"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": "national park",
-     "record_kind": "national park",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "SLIVERS",
-     "pieces": 74,
-     "flags": [
-      "SLIVERS",
-      "SCATTERED"
-     ],
-     "note": "35 piece(s) under 10 m wide; 74 pieces spread over 110 km",
-     "repair": {
-      "ok": true,
-      "area_change_pct": 0.0,
-      "holes": 0,
-      "pieces": 35
-     }
+     "flag": "CAN'T TELL",
+     "note": "source down"
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
-     "last_edit": "2026-10-16",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 2,
-   "why": "SLIVERS: The shape has problems: 35 piece(s) under 10 m wide; 74 pieces spread over 110 km (+1 more flag)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: Nothing could be tested."
   },
   {
    "ref": "US-10281",
@@ -3664,11 +3647,21 @@
     -145.987
    ],
    "outline_from": [
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1"
    ],
-   "acres_drawn": 1016250.2,
+   "acres_drawn": 1016233.2,
    "records": [
+    {
+     "id": "rst11010",
+     "name": "White Mountains SRMA",
+     "type": "Bureau of Land Management",
+     "acres": 1016250.6,
+     "acres_from": "acres field",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
+     "link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0/query?objectIds=11010&outFields=*&returnGeometry=false&f=html",
+     "name_field": "FET_NAME"
+    },
     {
      "id": "sgakg11010",
      "name": "White Mountains SRMA",
@@ -3678,21 +3671,11 @@
      "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1",
      "link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1/query?objectIds=11010&outFields=*&returnGeometry=false&f=html",
      "name_field": "FET_NAME"
-    },
-    {
-     "id": "padus#2165",
-     "name": "Eastern Interior Field Office",
-     "type": "National Recreation Area National Public Lands",
-     "category": "Fee",
-     "acres": 932728.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=2165&outFields=*&returnGeometry=false&f=html"
     }
    ],
    "record_ids": [
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1#11010",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#2165"
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0#11010",
+    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/1#11010"
    ],
    "tests": {
     "T1": {
@@ -3701,7 +3684,7 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 1016250.2,
+     "outline_acres": 1016233.2,
      "official_acres": 1016250.6,
      "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
@@ -3710,16 +3693,12 @@
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "White Mountains National Recreation Area BLM Recreation Management Area",
-     "record_name": "White Mountains SRMA",
-     "worst_record": {
-      "name": "Eastern Interior Field Office",
-      "score": 0.0
-     }
+     "record_name": "White Mountains SRMA"
     },
     "T4": {
      "park_kind": "recreation area",
-     "record_kind": "recreation area",
-     "flag": "PASS"
+     "record_kind": null,
+     "flag": "CAN'T TELL"
     },
     "T5": {
      "flag": "PASS",
@@ -7968,17 +7947,12 @@
      "flag": "SPILL",
      "parks": [
       {
-       "ref": "US-7884",
-       "name": "Kenai Mountains-Turnagain Arm National Heritage Area",
-       "share": 0.93
-      },
-      {
        "ref": "US-13462",
        "name": "Sportsman's Angler Access State Recreation Site",
        "share": 0.31
       }
      ],
-     "count": 2
+     "count": 1
     },
     "T7": {
      "flag": "N/A",
@@ -7995,7 +7969,7 @@
    "problems": [],
    "status": "graded",
    "score": 7,
-   "why": "SPILL: The outline covers 93% of US-7884 Kenai Mountains-Turnagain Arm National Heritage Area, with no 2-fer row (maybe the wrong record) (+4 more flags)."
+   "why": "SPILL: The outline covers 31% of US-13462 Sportsman's Angler Access State Recreation Site, with no 2-fer row (maybe the wrong record) (+4 more flags)."
   },
   {
    "ref": "US-4448",
@@ -8070,14 +8044,14 @@
      "flag": "SPILL",
      "parks": [
       {
-       "ref": "US-4538",
-       "name": "Misty Fjords National Monument",
+       "ref": "US-4537",
+       "name": "Admiralty Island National Monument",
        "share": 1.0
       },
       {
-       "ref": "US-4537",
-       "name": "Admiralty Island National Monument",
-       "share": 0.99
+       "ref": "US-4538",
+       "name": "Misty Fjords National Monument",
+       "share": 0.5
       },
       {
        "ref": "US-11862",
@@ -8102,7 +8076,7 @@
    "problems": [],
    "status": "graded",
    "score": 7,
-   "why": "SPILL: The outline covers 100% of US-4538 Misty Fjords National Monument, with no 2-fer row (maybe the wrong record) (+4 more flags)."
+   "why": "SPILL: The outline covers 100% of US-4537 Admiralty Island National Monument, with no 2-fer row (maybe the wrong record) (+4 more flags)."
   },
   {
    "ref": "US-4537",
@@ -8114,73 +8088,38 @@
     57.7079,
     -134.368
    ],
-   "outline_from": [
-    "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0"
-   ],
-   "acres_drawn": 1018363.5,
-   "records": [
-    {
-     "id": "fsod169",
-     "name": "Admiralty Island National Monument",
-     "type": "Forest Service national designated areas (monuments, NRAs, scenic areas)",
-     "acres": 1018364.0,
-     "acres_from": "the key's acres",
-     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
-     "link": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0/query?objectIds=169&outFields=*&returnGeometry=false&f=html",
-     "name_field": "fullname"
-    }
-   ],
-   "record_ids": [
-    "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0#169"
-   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "PASS",
-     "metres": 0
+     "flag": "NO OUTLINE"
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 1018363.5,
-     "official_acres": 1018364.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Admiralty Island National Monument",
-     "record_name": "Admiralty Island National Monument"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": "national park",
-     "record_kind": "national forest",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "SLIVERS",
-     "pieces": 645,
-     "flags": [
-      "SLIVERS",
-      "TINY HOLES",
-      "SCATTERED"
-     ],
-     "note": "31 piece(s) under 10 m wide; 1 hole(s) under 100 m2; 645 pieces spread over 150 km",
-     "repair": {
-      "ok": true,
-      "area_change_pct": 0.0,
-      "holes": 1,
-      "pieces": 31
-     }
+     "flag": "CAN'T TELL",
+     "note": "source down"
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
      "flag": "CAN'T TELL",
@@ -8188,11 +8127,11 @@
     }
    },
    "problems": [
-    "record fsod169: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
+    "SOURCE DOWN: refused, no request made: apps.fs.usda.gov: saved copies only, no live read"
    ],
-   "status": "graded",
-   "score": 3,
-   "why": "SLIVERS: The shape has problems: 31 piece(s) under 10 m wide; 1 hole(s) under 100 m2; 645 pieces spread over 150 km (+2 more flags)."
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: Nothing could be tested."
   },
   {
    "ref": "US-4538",
@@ -8204,94 +8143,51 @@
     54.767,
     -130.849
    ],
-   "outline_from": [
-    "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
-    "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0"
-   ],
-   "acres_drawn": 2294703.0,
-   "records": [
-    {
-     "id": "fsod170",
-     "name": "Misty Fjords National Monument",
-     "type": "Forest Service national designated areas (monuments, NRAs, scenic areas)",
-     "acres": 2294702.0,
-     "acres_from": "the key's acres",
-     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
-     "link": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0/query?objectIds=170&outFields=*&returnGeometry=false&f=html",
-     "name_field": "fullname"
-    },
-    {
-     "id": "wld293",
-     "name": "Misty Fjords National Monument Wilderness",
-     "type": "National Wilderness Preservation System",
-     "acres": 2144883.0,
-     "acres_from": "the key's acres",
-     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0",
-     "link": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0/query?objectIds=293&outFields=*&returnGeometry=false&f=html",
-     "name_field": "wildernessname"
-    }
-   ],
-   "record_ids": [
-    "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0#170",
-    "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_Wilderness_02/MapServer/0#293"
-   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "NEAR",
-     "metres": 5.3
+     "flag": "NO OUTLINE"
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 2294703.0,
-     "official_acres": 2294702.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Misty Fjords National Monument",
-     "record_name": "Misty Fjords National Monument Wilderness"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": "national park",
-     "record_kind": "national forest",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "SLIVERS",
-     "pieces": 784,
-     "flags": [
-      "SLIVERS",
-      "SCATTERED"
-     ],
-     "note": "77 piece(s) under 10 m wide; 784 pieces spread over 209 km",
-     "repair": {
-      "ok": true,
-      "area_change_pct": 0.0,
-      "holes": 0,
-      "pieces": 77
-     }
+     "flag": "CAN'T TELL",
+     "note": "source down"
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
      "flag": "CAN'T TELL",
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 3,
-   "why": "NEAR: POTA's pin is 5 m outside the outline (+2 more flags)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: apps.fs.usda.gov: saved copies only, no live read",
+    "SOURCE DOWN: refused, no request made: apps.fs.usda.gov: saved copies only, no live read"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: Nothing could be tested."
   },
   {
    "ref": "US-4570",
@@ -8475,10 +8371,9 @@
    ],
    "outline_from": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
     "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0"
    ],
-   "acres_drawn": 449538.4,
+   "acres_drawn": 446640.4,
    "records": [
     {
      "id": "padus#165912",
@@ -8489,96 +8384,6 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=165912&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "sgakc407",
-     "name": "Haines State Forest",
-     "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
-     "acres": 41196.5,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
-     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=407&outFields=*&returnGeometry=false&f=html",
-     "name_field": "forestname"
-    },
-    {
-     "id": "sgakc403",
-     "name": "Haines State Forest",
-     "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
-     "acres": 19131.2,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
-     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=403&outFields=*&returnGeometry=false&f=html",
-     "name_field": "forestname"
-    },
-    {
-     "id": "sgakc404",
-     "name": "Haines State Forest",
-     "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
-     "acres": 16906.1,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
-     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=404&outFields=*&returnGeometry=false&f=html",
-     "name_field": "forestname"
-    },
-    {
-     "id": "sgakc410",
-     "name": "Haines State Forest",
-     "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
-     "acres": 16445.5,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
-     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=410&outFields=*&returnGeometry=false&f=html",
-     "name_field": "forestname"
-    },
-    {
-     "id": "sgakc409",
-     "name": "Haines State Forest",
-     "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
-     "acres": 4189.3,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
-     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=409&outFields=*&returnGeometry=false&f=html",
-     "name_field": "forestname"
-    },
-    {
-     "id": "sgakc402",
-     "name": "Haines State Forest",
-     "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
-     "acres": 3782.1,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
-     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=402&outFields=*&returnGeometry=false&f=html",
-     "name_field": "forestname"
-    },
-    {
-     "id": "sgakc408",
-     "name": "Haines State Forest",
-     "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
-     "acres": 767.3,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
-     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=408&outFields=*&returnGeometry=false&f=html",
-     "name_field": "forestname"
-    },
-    {
-     "id": "sgakc405",
-     "name": "Haines State Forest",
-     "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
-     "acres": 371.1,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
-     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=405&outFields=*&returnGeometry=false&f=html",
-     "name_field": "forestname"
-    },
-    {
-     "id": "sgakc406",
-     "name": "Haines State Forest",
-     "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
-     "acres": 110.5,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
-     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=406&outFields=*&returnGeometry=false&f=html",
-     "name_field": "forestname"
     },
     {
      "id": "sgakb752",
@@ -8595,19 +8400,26 @@
      "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0",
      "link": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0/query?objectIds=807&outFields=*&returnGeometry=false&f=html",
      "name_field": "LDA_NAME_1"
+    },
+    {
+     "id": "sgakb1395",
+     "name": "Haines State Forest",
+     "type": "Alaska Department of Natural Resources (preserve, state GIS table)",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0",
+     "link": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0/query?objectIds=1395&outFields=*&returnGeometry=false&f=html",
+     "name_field": "LDA_NAME_1"
+    },
+    {
+     "id": "sgakb1396",
+     "name": "Haines State Forest",
+     "type": "Alaska Department of Natural Resources (preserve, state GIS table)",
+     "layer": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0",
+     "link": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0/query?objectIds=1396&outFields=*&returnGeometry=false&f=html",
+     "name_field": "LDA_NAME_1"
     }
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#165912",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#407",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#403",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#404",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#410",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#409",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#402",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#408",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#405",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#406",
     "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0#752",
     "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0#807",
     "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0#1395",
@@ -8619,11 +8431,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 449538.4,
-     "official_acres": 304424.0,
-     "times": 1.48,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -8638,15 +8447,16 @@
     },
     "T5": {
      "flag": "SELF-INTERSECTION",
-     "pieces": 4,
+     "pieces": 6,
      "flags": [
-      "SELF-INTERSECTION"
+      "SELF-INTERSECTION",
+      "TINY HOLES"
      ],
-     "note": "Ring Self-intersection[-135.416564255528 59.2795743662399]",
+     "note": "Ring Self-intersection[-135.416564255528 59.2795743662399]; 2 hole(s) under 100 m2",
      "repair": {
       "ok": true,
       "area_change_pct": 0.0,
-      "holes": 0,
+      "holes": 2,
       "pieces": 0
      }
     },
@@ -8674,18 +8484,17 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-11-07",
-     "read": "2026-11-05",
-     "flag": "NOTE",
-     "note": "the source changed on 2026-11-07, after the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
    "problems": [
+    "SOURCE DOWN: refused, no request made: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)",
     "record sgakb807: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
    ],
-   "status": "graded",
-   "score": 4,
-   "why": "SPILL: The outline covers 100% of US-7241 Chilkoot Lake State Recreation Site, with no 2-fer row (maybe the wrong record) (+1 more flag)."
+   "status": "SOURCE DOWN: retry next run",
+   "score": 5,
+   "why": "SOURCE DOWN: SPILL: The outline covers 100% of US-7241 Chilkoot Lake State Recreation Site, with no 2-fer row (maybe the wrong record) (+2 more flags)."
   },
   {
    "ref": "US-4593",
@@ -8697,194 +8506,50 @@
     56.5932,
     -132.545
    ],
-   "outline_from": [
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0"
-   ],
-   "acres_drawn": 15536.1,
-   "records": [
-    {
-     "id": "sgakc43",
-     "name": "Southeast State Forest",
-     "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
-     "acres": 3112.7,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
-     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=43&outFields=*&returnGeometry=false&f=html",
-     "name_field": "forestname"
-    },
-    {
-     "id": "sgakc51",
-     "name": "Southeast State Forest",
-     "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
-     "acres": 2592.7,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
-     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=51&outFields=*&returnGeometry=false&f=html",
-     "name_field": "forestname"
-    },
-    {
-     "id": "sgakc53",
-     "name": "Southeast State Forest",
-     "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
-     "acres": 2313.9,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
-     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=53&outFields=*&returnGeometry=false&f=html",
-     "name_field": "forestname"
-    },
-    {
-     "id": "sgakc123",
-     "name": "Southeast State Forest",
-     "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
-     "acres": 1569.0,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
-     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=123&outFields=*&returnGeometry=false&f=html",
-     "name_field": "forestname"
-    },
-    {
-     "id": "sgakc64",
-     "name": "Southeast State Forest",
-     "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
-     "acres": 1289.0,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
-     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=64&outFields=*&returnGeometry=false&f=html",
-     "name_field": "forestname"
-    },
-    {
-     "id": "sgakc55",
-     "name": "Southeast State Forest",
-     "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
-     "acres": 1045.6,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
-     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=55&outFields=*&returnGeometry=false&f=html",
-     "name_field": "forestname"
-    },
-    {
-     "id": "sgakc124",
-     "name": "Southeast State Forest",
-     "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
-     "acres": 915.9,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
-     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=124&outFields=*&returnGeometry=false&f=html",
-     "name_field": "forestname"
-    },
-    {
-     "id": "sgakc52",
-     "name": "Southeast State Forest",
-     "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
-     "acres": 663.3,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
-     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=52&outFields=*&returnGeometry=false&f=html",
-     "name_field": "forestname"
-    },
-    {
-     "id": "sgakc119",
-     "name": "Southeast State Forest",
-     "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
-     "acres": 648.0,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
-     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=119&outFields=*&returnGeometry=false&f=html",
-     "name_field": "forestname"
-    },
-    {
-     "id": "sgakc110",
-     "name": "Southeast State Forest",
-     "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
-     "acres": 500.0,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
-     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=110&outFields=*&returnGeometry=false&f=html",
-     "name_field": "forestname"
-    },
-    {
-     "id": "sgakc56",
-     "name": "Southeast State Forest",
-     "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
-     "acres": 478.9,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
-     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=56&outFields=*&returnGeometry=false&f=html",
-     "name_field": "forestname"
-    },
-    {
-     "id": "sgakc111",
-     "name": "Southeast State Forest",
-     "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
-     "acres": 407.1,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
-     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=111&outFields=*&returnGeometry=false&f=html",
-     "name_field": "forestname"
-    }
-   ],
-   "record_ids": [
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#43",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#51",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#53",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#123",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#64",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#55",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#124",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#52",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#119",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#110",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#56",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#111"
-   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "NEAR",
-     "metres": 18.6
+     "flag": "NO OUTLINE"
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 15536.1,
-     "official_acres": 15536.3,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Southeast State Forest",
-     "record_name": "Southeast State Forest"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": "state forest",
-     "record_kind": "state forest",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "PASS",
-     "pieces": 11
+     "flag": "CAN'T TELL",
+     "note": "source down"
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
-     "last_edit": "2026-11-07",
-     "read": "2026-11-05",
-     "flag": "NOTE",
-     "note": "the source changed on 2026-11-07, after the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "NEAR: POTA's pin is 19 m outside the outline."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: Nothing could be tested."
   },
   {
    "ref": "US-4594",
@@ -8897,10 +8562,9 @@
     -143.116
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 2449362.5,
+   "acres_drawn": 1754913.5,
    "records": [
     {
      "id": "padus#165913",
@@ -8911,207 +8575,10 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=165913&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "sgakc2",
-     "name": "Tanana Valley State Forest",
-     "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
-     "acres": 199685.8,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
-     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=2&outFields=*&returnGeometry=false&f=html",
-     "name_field": "forestname"
-    },
-    {
-     "id": "sgakc22",
-     "name": "Tanana Valley State Forest",
-     "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
-     "acres": 151267.8,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
-     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=22&outFields=*&returnGeometry=false&f=html",
-     "name_field": "forestname"
-    },
-    {
-     "id": "sgakc5",
-     "name": "Tanana Valley State Forest",
-     "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
-     "acres": 118397.0,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
-     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=5&outFields=*&returnGeometry=false&f=html",
-     "name_field": "forestname"
-    },
-    {
-     "id": "sgakc38",
-     "name": "Tanana Valley State Forest",
-     "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
-     "acres": 94036.5,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
-     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=38&outFields=*&returnGeometry=false&f=html",
-     "name_field": "forestname"
-    },
-    {
-     "id": "sgakc19",
-     "name": "Tanana Valley State Forest",
-     "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
-     "acres": 80175.8,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
-     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=19&outFields=*&returnGeometry=false&f=html",
-     "name_field": "forestname"
-    },
-    {
-     "id": "sgakc32",
-     "name": "Tanana Valley State Forest",
-     "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
-     "acres": 77001.7,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
-     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=32&outFields=*&returnGeometry=false&f=html",
-     "name_field": "forestname"
-    },
-    {
-     "id": "sgakc13",
-     "name": "Tanana Valley State Forest",
-     "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
-     "acres": 75827.9,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
-     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=13&outFields=*&returnGeometry=false&f=html",
-     "name_field": "forestname"
-    },
-    {
-     "id": "sgakc14",
-     "name": "Tanana Valley State Forest",
-     "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
-     "acres": 74799.3,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
-     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=14&outFields=*&returnGeometry=false&f=html",
-     "name_field": "forestname"
-    },
-    {
-     "id": "sgakc309",
-     "name": "Tanana Valley State Forest",
-     "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
-     "acres": 73026.1,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
-     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=309&outFields=*&returnGeometry=false&f=html",
-     "name_field": "forestname"
-    },
-    {
-     "id": "sgakc7",
-     "name": "Tanana Valley State Forest",
-     "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
-     "acres": 69965.4,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
-     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=7&outFields=*&returnGeometry=false&f=html",
-     "name_field": "forestname"
-    },
-    {
-     "id": "sgakc287",
-     "name": "Tanana Valley State Forest",
-     "type": "Alaska DNR Division of Forestry (Alaska DNR AGOL org) (forest, state GIS table)",
-     "acres": 69758.5,
-     "acres_from": "acres field",
-     "layer": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0",
-     "link": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0/query?objectIds=287&outFields=*&returnGeometry=false&f=html",
-     "name_field": "forestname"
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#165913",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#2",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#22",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#5",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#38",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#19",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#32",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#13",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#14",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#309",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#7",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#287",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#9",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#34",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#288",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#109",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#8",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#27",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#329",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#3",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#20",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#31",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#25",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#12",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#17",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#325",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#302",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#35",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#11",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#279",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#36",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#324",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#37",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#317",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#24",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#33",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#1",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#311",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#326",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#301",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#145",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#293",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#294",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#26",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#141",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#328",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#312",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#292",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#283",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#323",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#315",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#39",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#284",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#4",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#322",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#28",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#319",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#6",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#295",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#21",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#23",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#296",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#291",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#316",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#281",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#18",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#10",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#321",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#308",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#280",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#15",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#282",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#305",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#313",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#304",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#29",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#297",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#318",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#16",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#298",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#320",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#286",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#310",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#307",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#349",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#299",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#343",
-    "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/State_Forest_Boundary_Public_View_2/FeatureServer/0#347"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#165913"
    ],
    "tests": {
     "T1": {
@@ -9119,11 +8586,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 2449362.5,
-     "official_acres": 1955211.0,
-     "times": 1.25,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -9137,20 +8601,8 @@
      "flag": "PASS"
     },
     "T5": {
-     "flag": "SELF-INTERSECTION",
-     "pieces": 41,
-     "flags": [
-      "SELF-INTERSECTION",
-      "SLIVERS",
-      "TINY HOLES"
-     ],
-     "note": "Ring Self-intersection[-144.147160652392 63.8243784183349]; 3 piece(s) under 10 m wide; 66 hole(s) under 100 m2",
-     "repair": {
-      "ok": true,
-      "area_change_pct": 0.0,
-      "holes": 66,
-      "pieces": 3
-     }
+     "flag": "PASS",
+     "pieces": 25
     },
     "T6": {
      "flag": "SPILL",
@@ -9158,7 +8610,7 @@
       {
        "ref": "US-7232",
        "name": "Eagle Trail State Recreation Site",
-       "share": 1.0
+       "share": 0.96
       }
      ],
      "count": 1
@@ -9171,35 +8623,17 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-11-07",
-     "read": "2026-11-05",
-     "flag": "NOTE",
-     "note": "the source changed on 2026-11-07, after the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
    "problems": [
-    "record 165913: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail",
-    "record sgakc22: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail",
-    "record sgakc5: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail",
-    "record sgakc13: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail",
-    "record sgakc287: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail",
-    "record sgakc9: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail",
-    "record sgakc8: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail",
-    "record sgakc25: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail",
-    "record sgakc325: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail",
-    "record sgakc279: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail",
-    "record sgakc324: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail",
-    "record sgakc311: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail",
-    "record sgakc294: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail",
-    "record sgakc283: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail",
-    "record sgakc323: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail",
-    "record sgakc315: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail",
-    "record sgakc305: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail",
-    "official acres count once the land of sgakc347: it lies inside a bigger record from the same source"
+    "SOURCE DOWN: refused, no request made: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)",
+    "record 165913: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
    ],
-   "status": "graded",
-   "score": 6,
-   "why": "SPILL: The outline covers 100% of US-7232 Eagle Trail State Recreation Site, with no 2-fer row (maybe the wrong record) (+3 more flags)."
+   "status": "SOURCE DOWN: retry next run",
+   "score": 3,
+   "why": "SOURCE DOWN: SPILL: The outline covers 96% of US-7232 Eagle Trail State Recreation Site, with no 2-fer row (maybe the wrong record)."
   },
   {
    "ref": "US-6332",
@@ -11375,10 +10809,9 @@
     "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2",
     "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/2",
     "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-    "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 1099.0,
+   "acres_drawn": 939.0,
    "records": [
     {
      "id": "sgaka69",
@@ -11419,22 +10852,13 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=157446&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "sgaki400882",
-     "name": "Independence Mines",
-     "type": "National Register of Historic Places Polygons (land, state GIS table)",
-     "layer": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
-     "link": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?objectIds=400882&outFields=*&returnGeometry=false&f=html",
-     "name_field": "RESNAME"
     }
    ],
    "record_ids": [
     "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2#69",
     "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/2#69",
     "https://arcgis.dnr.alaska.gov/arcgis/rest/services/DPOR/Park_Boundary_Facility/MapServer/2#69",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#157446",
-    "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1#400882"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#157446"
    ],
    "tests": {
     "T1": {
@@ -11442,11 +10866,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 1099.0,
-     "official_acres": 831.0,
-     "times": 1.32,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -11460,8 +10881,18 @@
      "flag": "CAN'T TELL"
     },
     "T5": {
-     "flag": "PASS",
-     "pieces": 1
+     "flag": "TINY HOLES",
+     "pieces": 1,
+     "flags": [
+      "TINY HOLES"
+     ],
+     "note": "1 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 1,
+      "pieces": 0
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -11478,10 +10909,12 @@
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 0,
-   "why": "All tests pass."
+   "problems": [
+    "SOURCE DOWN: mapservices.nps.gov: down for this run (failed 3 times)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 1,
+   "why": "SOURCE DOWN: TINY HOLES: The shape has problems: 1 hole(s) under 100 m2."
   },
   {
    "ref": "US-7214",
@@ -15890,89 +15323,50 @@
     60.9603,
     -149.117
    ],
-   "outline_from": [
-    "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0"
-   ],
-   "acres_drawn": 1176782.1,
-   "records": [
-    {
-     "id": "fsod168",
-     "name": "Kenai Mountains-Turnagain Arm National Heritage Area",
-     "type": "Forest Service national designated areas (monuments, NRAs, scenic areas)",
-     "acres": 1176785.0,
-     "acres_from": "the key's acres",
-     "layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
-     "link": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0/query?objectIds=168&outFields=*&returnGeometry=false&f=html",
-     "name_field": "fullname"
-    }
-   ],
-   "record_ids": [
-    "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0#168"
-   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "OUTSIDE",
-     "metres": 963.1
+     "flag": "NO OUTLINE"
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 1176782.1,
-     "official_acres": 1176785.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Kenai Mountains-Turnagain Arm National Heritage Area",
-     "record_name": "Kenai Mountains-Turnagain Arm National Heritage Area"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": null,
-     "record_kind": "national forest",
-     "flag": "CAN'T TELL"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "SLIVERS",
-     "pieces": 33,
-     "flags": [
-      "SLIVERS"
-     ],
-     "note": "2 piece(s) under 10 m wide",
-     "repair": {
-      "ok": true,
-      "area_change_pct": 0.0,
-      "holes": 0,
-      "pieces": 2
-     }
+     "flag": "CAN'T TELL",
+     "note": "source down"
     },
     "T6": {
-     "flag": "SPILL",
-     "parks": [
-      {
-       "ref": "US-13462",
-       "name": "Sportsman's Angler Access State Recreation Site",
-       "share": 0.48
-      }
-     ],
-     "count": 1
+     "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
      "flag": "CAN'T TELL",
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 7,
-   "why": "OUTSIDE: POTA's pin is 963 m outside the outline (+2 more flags)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: apps.fs.usda.gov: saved copies only, no live read"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: Nothing could be tested."
   },
   {
    "ref": "US-7885",

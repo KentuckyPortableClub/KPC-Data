@@ -21,59 +21,78 @@ It decides nothing: it ranks. Score 0 = all pass; +3 OUTSIDE / WAY OFF / MISMATC
 | 3 | US-1255 | Fishtrap Lake Wildlife Management Area | OUTSIDE: POTA's pin is 620 m outside the outline. |
 | 3 | US-1259 | Green River Lake State Park | CONFLICT: The park is a state park but the record is a wma. |
 
-## US-TN
+## US-AK
 
-- parks: 277 (235 with an outline graded, 14 with no outline, 28 with records this tool can't read)
-- pass every test: 136; have flags: 141; source down (retry): 235
-- flags: NEAR 72, TINY HOLES 42, SLIVERS 28, SELF-INTERSECTION 27, DUPLICATE 24, SPILL 15, OUTSIDE 10, MISMATCH 8, CONFLICT 5, WEAK 3, SCATTERED 2
-
-| score | ref | park | why |
-|---|---|---|---|
-| 10 | US-2955 | Wilson Cumberland Trail State Park | SOURCE DOWN: MISMATCH: The record name 'Cumberland Trail' does not match POTA's name 'Wilson Cumberland Trail State Park' (score 0.50) (+5 more flags). |
-| 9 | US-2945 | Fall Creek Falls State Park | SOURCE DOWN: OUTSIDE: POTA's pin is 1.1 km outside the outline (+2 more flags). |
-| 8 | US-11879 | North Chickamauga Creek Gorge State Park | SOURCE DOWN: MISMATCH: The record name 'Cumberland Trail' does not match POTA's name 'North Chickamauga Creek Gorge State Park' (score 0.00) (+3 more flags). |
-| 7 | US-4525 | Cherokee National Forest | SPILL: The outline covers 86% of US-12663 Ocoee River State Park, with no 2-fer row (maybe the wrong record) (+4 more flags). |
-| 7 | US-5498 | Pickett State Forest | SOURCE DOWN: SPILL: The outline covers 44% of US-6261 Pogue Creek Canyon State Natural Area, with no 2-fer row (maybe the wrong record) (+4 more flags). |
-| 6 | US-3928 | Bridgestone/firestone Centennial Wilderness Wildlife Management Area | SOURCE DOWN: SPILL: The outline covers 61% of US-12361 Scott's Gulf Wilderness State Park, with no 2-fer row (maybe the wrong record) (+3 more flags). |
-| 6 | US-3960 | Reelfoot State Wildlife Area | SOURCE DOWN: CONFLICT: The park is a wma but the record is a state park (+3 more flags). |
-| 6 | US-7622 | Tellico Lake Wildlife Management Area | SOURCE DOWN: OUTSIDE: POTA's pin is 3.1 km outside the outline (+3 more flags). |
-| 5 | US-2971 | Reelfoot Lake State Park | SOURCE DOWN: CONFLICT: The park is a state park but the record is a wma (+2 more flags). |
-| 5 | US-3934 | Chickasaw State Wildlife Area | SOURCE DOWN: CONFLICT: The park is a wma but the record is a state park (+2 more flags). |
-
-## CA-ON
-
-- parks: 1180 (952 with an outline graded, 205 with no outline, 23 with records this tool can't read)
-- pass every test: 811; have flags: 369
-- flags: NEAR 167, OFF 81, OUTSIDE 48, DUPLICATE 46, SLIVERS 45, SPILL 39, TOO COARSE 38, MISMATCH 34, TINY HOLES 29, FAR 14, SELF-INTERSECTION 10, SCATTERED 8, INVALID 5, WAY OFF 3, WEAK 2
+- parks: 179 (143 with an outline graded, 31 with no outline, 5 with records this tool can't read)
+- pass every test: 95; have flags: 84; source down (retry): 11
+- flags: TINY HOLES 31, SELF-INTERSECTION 27, SLIVERS 24, NEAR 23, SCATTERED 18, OUTSIDE 11, SPILL 11, FAR 9, DUPLICATE 6, OFF 2, WAY OFF 1, MISMATCH 1
 
 | score | ref | park | why |
 |---|---|---|---|
-| 12 | CA-0027 | Georgian Bay Littoral Biosphere Reserve | FAR: POTA's pin is 10.7 km outside the outline (+3 more flags). |
-| 11 | CA-1467 | Kishkebus Lake Wilderness Area | FAR: POTA's pin is 23.0 km outside the outline (+2 more flags). |
-| 11 | CA-5616 | Hawkins Tract Conservation Area | FAR: POTA's pin is 25.5 km outside the outline (+2 more flags). |
-| 10 | CA-5633 | Bowmanville Valley Conservation Area | OUTSIDE: POTA's pin is 3.5 km outside the outline (+3 more flags). |
-| 9 | CA-0050 | Lake Superior National Marine Area | OUTSIDE: POTA's pin is 566 m outside the outline (+4 more flags). |
-| 9 | CA-1476 | Lake Nipigon Conservation Reserve | FAR: POTA's pin is 66.3 km outside the outline (+2 more flags). |
-| 9 | CA-1587 | Tiffany Falls Conservation Area | OUTSIDE: POTA's pin is 4.7 km outside the outline (+2 more flags). |
-| 9 | CA-1620 | Sherman Falls Conservation Reserve | OUTSIDE: POTA's pin is 5.4 km outside the outline (+2 more flags). |
-| 9 | CA-5354 | Burlington Heights National Historic Site | OUTSIDE: POTA's pin is 4.6 km outside the outline (+2 more flags). |
-| 8 | CA-1475 | Lake Country  (Weeskayjahk Ohtahzhoganiing) Conservation Reserve | MISMATCH: The record name 'Weeskayjahk Ohtahzhoganeeng' does not match POTA's name 'Lake Country  (Weeskayjahk Ohtahzhoganiing) Conservation Reserve' (score 0.67) (+3 more flags). |
+| 9 | US-0150 | Kodiak National Wildlife Refuge | FAR: POTA's pin is 24.5 km outside the outline (+4 more flags). |
+| 8 | US-10281 | White Mountains National Recreation Area BLM Recreation Management Area | FAR: POTA's pin is 23.2 km outside the outline (+1 more flag). |
+| 7 | US-0143 | Alaska Maritime National Wildlife Refuge | SPILL: The outline covers 70% of US-7862 Aleutian Islands WW2 National Historic Site, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 7 | US-0144 | Alaska Peninsula National Wildlife Refuge | OUTSIDE: POTA's pin is 5.6 km outside the outline (+4 more flags). |
+| 7 | US-0156 | Yukon Delta National Wildlife Refuge | OUTSIDE: POTA's pin is 541 m outside the outline (+4 more flags). |
+| 7 | US-12708 | Kenai River State Conservation Area | OUTSIDE: POTA's pin is 632 m outside the outline (+2 more flags). |
+| 7 | US-4447 | Chugach National Forest | SPILL: The outline covers 31% of US-13462 Sportsman's Angler Access State Recreation Site, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 7 | US-4448 | Tongass National Forest | SPILL: The outline covers 100% of US-4537 Admiralty Island National Monument, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 5 | US-0048 | Lake Clark National Park | SPILL: The outline covers 100% of US-0893 Tlikakila National Wild and Scenic River, with no 2-fer row (maybe the wrong record) (+2 more flags). |
+| 5 | US-0149 | Kenai National Wildlife Refuge | SPILL: The outline covers 53% of US-13462 Sportsman's Angler Access State Recreation Site, with no 2-fer row (maybe the wrong record) (+2 more flags). |
 
-## CH
+## US-AL
 
-- parks: 189 (189 with an outline graded, 0 with no outline, 0 with records this tool can't read)
-- pass every test: 127; have flags: 62
-- flags: MISMATCH 29, SPILL 19, WEAK 16, DUPLICATE 13, NEAR 10, SELF-INTERSECTION 10, TINY HOLES 10, SLIVERS 3, OUTSIDE 2
+- parks: 155 (129 with an outline graded, 21 with no outline, 5 with records this tool can't read)
+- pass every test: 75; have flags: 80; source down (retry): 7
+- flags: NEAR 32, SELF-INTERSECTION 28, TINY HOLES 20, SLIVERS 14, DUPLICATE 8, MISMATCH 8, SPILL 8, OFF 2, WEAK 2, OUTSIDE 2, SCATTERED 2
 
 | score | ref | park | why |
 |---|---|---|---|
-| 9 | CH-0180 | Speer – Churfirsten – Alvier (Teilraum 3) Natural Monument | MISMATCH: The record name 'Speer – Churfirsten – Alvier' does not match POTA's name 'Speer – Churfirsten – Alvier (Teilraum 3) Natural Monument' (score 0.60) (+4 more flags). |
-| 8 | CH-0174 | Säntisgebiet (Teilraum 1) Natural Monument | MISMATCH: The record name 'Säntisgebiet' does not match POTA's name 'Säntisgebiet (Teilraum 1) Natural Monument' (score 0.33) (+3 more flags). |
-| 8 | CH-0175 | Säntisgebiet (Teilraum 2) Natural Monument | MISMATCH: The record name 'Säntisgebiet' does not match POTA's name 'Säntisgebiet (Teilraum 2) Natural Monument' (score 0.33) (+3 more flags). |
-| 8 | CH-0176 | Säntisgebiet (Teilraum 3) Natural Monument | MISMATCH: The record name 'Säntisgebiet' does not match POTA's name 'Säntisgebiet (Teilraum 3) Natural Monument' (score 0.33) (+3 more flags). |
-| 8 | CH-0177 | Säntisgebiet (Teilraum 4) Natural Monument | MISMATCH: The record name 'Säntisgebiet' does not match POTA's name 'Säntisgebiet (Teilraum 4) Natural Monument' (score 0.33) (+3 more flags). |
-| 8 | CH-0178 | Speer – Churfirsten – Alvier (Teilraum 1) Natural Monument | MISMATCH: The record name 'Speer – Churfirsten – Alvier' does not match POTA's name 'Speer – Churfirsten – Alvier (Teilraum 1) Natural Monument' (score 0.60) (+3 more flags). |
-| 8 | CH-0179 | Speer – Churfirsten – Alvier (Teilraum 2) Natural Monument | MISMATCH: The record name 'Speer – Churfirsten – Alvier' does not match POTA's name 'Speer – Churfirsten – Alvier (Teilraum 2) Natural Monument' (score 0.60) (+3 more flags). |
-| 6 | CH-0029 | Le Rhône genevois - Vallons de l'Allondon et de la Laire Ramsar Site | SPILL: The outline covers 60% of CH-0287 Bois des Mouilles Nature Reserve, with no 2-fer row (maybe the wrong record) (+3 more flags). |
-| 6 | CH-0187 | Berner Hochalpen und Aletsch- Bietschhorn-Gebiet (südlicher Teil, Teilraum 3. Südtäler) Natural Monument | MISMATCH: The record name 'Berner Hochalpen und Aletsch-Bietschhorn-Gebiet (südlicher Teil)' does not match POTA's name 'Berner Hochalpen und Aletsch- Bietschhorn-Gebiet (südlicher Teil, Teilraum 3. Südtäler) Natural Monument' (score 0.73) (+1 more flag). |
-| 6 | CH-0309 | Greifensee Wetland Reserve | OUTSIDE: POTA's pin is 641 m outside the outline (+1 more flag). |
+| 7 | US-4452 | William B. Bankhead National Forest | SPILL: The outline covers 100% of US-10396 Black Warrior Wildlife Management Area, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 6 | US-3691 | Grand Bay Savanna Complex Wildlife Management Area | SPILL: The outline covers 98% of US-3692 Heron Bay and Portersville Bay State Fish and Wildlife Area, with no 2-fer row (maybe the wrong record) (+3 more flags). |
+| 6 | US-4450 | Talladega National Forest | SPILL: The outline covers 100% of US-3682 Cheaha Wilderness Area, with no 2-fer row (maybe the wrong record) (+3 more flags). |
+| 5 | US-1043 | Joe Wheeler State Park | SPILL: The outline covers 58% of US-13083 TVA Wheeler Dam Public Park National Recreation Area, with no 2-fer row (maybe the wrong record) (+2 more flags). |
+| 5 | US-3694 | James D Martin - Skyline Wildlife Management Area | SPILL: The outline covers 100% of US-10428 Walls of Jericho State Natural Area, with no 2-fer row (maybe the wrong record) (+2 more flags). |
+| 4 | US-0161 | Wheeler National Wildlife Refuge | NEAR: POTA's pin is 6 m outside the outline (+3 more flags). |
+| 4 | US-10396 | Black Warrior Wildlife Management Area | SPILL: The outline covers 100% of US-3706 Sipsey Wilderness Wilderness Area, with no 2-fer row (maybe the wrong record) (+1 more flag). |
+| 4 | US-1040 | Lake Jackson RV Park at Florala State Park | MISMATCH: The record name 'Florala State Park' does not match POTA's name 'Lake Jackson RV Park at Florala State Park' (score 0.33) (+1 more flag). |
+| 4 | US-13003 | TVA Little Bear Creek Dam Multiple Use Area | MISMATCH: The record name 'Little Bear Creek Reservoir Retained Land' does not match POTA's name 'TVA Little Bear Creek Dam Multiple Use Area' (score 0.60) (+1 more flag). |
+| 4 | US-13004 | TVA Cedar Creek Dam Multiple Use Area | MISMATCH: The record name 'Cedar Creek Reservoir Retained Land' does not match POTA's name 'TVA Cedar Creek Dam Multiple Use Area' (score 0.50) (+1 more flag). |
+
+## US-AR
+
+- parks: 306 (251 with an outline graded, 36 with no outline, 19 with records this tool can't read)
+- pass every test: 153; have flags: 153; source down (retry): 67
+- flags: NEAR 73, TINY HOLES 31, SPILL 29, DUPLICATE 24, SELF-INTERSECTION 22, OFF 18, OUTSIDE 15, SLIVERS 14, INVALID 8, MISMATCH 7, SCATTERED 5, CONFLICT 3, WEAK 2, WAY OFF 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 10 | US-4425 | Ozark-St. Francis National Forest | MISMATCH: The record name 'Ozark Purchase Unit' does not match POTA's name 'Ozark-St. Francis National Forest' (score 0.33) (+5 more flags). |
+| 9 | US-1114 | Queen Wilhelmina State Park | WAY OFF: The outline is 17.6 times bigger than the official 505 acres (8,883 ac drawn) (+2 more flags). |
+| 9 | US-7333 | White Rock Wildlife Management Area | OUTSIDE: POTA's pin is 941 m outside the outline (+4 more flags). |
+| 7 | US-0038 | Hot Springs National Park | SPILL: The outline covers 90% of US-7441 Gulpha Gorge National Recreation Area, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 7 | US-0171 | White River National Wildlife Refuge | SPILL: The outline covers 57% of US-11355 Cook’s Lake Nature Center Nature Recreation Area, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 7 | US-4424 | Ouachita National Forest | SPILL: The outline covers 100% of US-7307 Muddy Creek Wildlife Management Area, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 6 | US-11713 | Dale Bumpers White River National Wildlife Refuge National Wildlife Area | SPILL: The outline covers 57% of US-11355 Cook’s Lake Nature Center Nature Recreation Area, with no 2-fer row (maybe the wrong record) (+3 more flags). |
+| 6 | US-4373 | Blue Mountain Lake (Outlet Area and Waveland Park) National Recreation Area | SOURCE DOWN: MISMATCH: The record name 'Blue Mountain Recreation Area' does not match POTA's name 'Blue Mountain Lake (Outlet Area and Waveland Park) National Recreation Area' (score 0.50) (+1 more flag). |
+| 6 | US-7271 | Camp Robinson Wildlife Management Area | OUTSIDE: POTA's pin is 3.6 km outside the outline (+1 more flag). |
+| 6 | US-7315 | Piney Creeks Wildlife Management Area | SPILL: The outline covers 98% of US-13623 Alum Cove Natural Bridge Trail National Recreation Trail, with no 2-fer row (maybe the wrong record) (+3 more flags). |
+
+## US-AZ
+
+- parks: 119 (90 with an outline graded, 13 with no outline, 16 with records this tool can't read)
+- pass every test: 83; have flags: 36; source down (retry): 57
+- flags: SELF-INTERSECTION 14, NEAR 14, SLIVERS 8, SPILL 8, TINY HOLES 6, OUTSIDE 2, MISMATCH 2, SCATTERED 1, WEAK 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 8 | US-4432 | Tonto National Forest | OUTSIDE: POTA's pin is 3.9 km outside the outline (+3 more flags). |
+| 7 | US-4427 | Apache-Sitgreaves National Forest | MISMATCH: The record name 'Sitgreaves National Forest' does not match POTA's name 'Apache-Sitgreaves National Forest' (score 0.50) (+2 more flags). |
+| 6 | US-4431 | Prescott National Forest | SPILL: The outline covers 44% of US-11124 Rockin' River Ranch State Park, with no 2-fer row (maybe the wrong record) (+3 more flags). |
+| 5 | US-4428 | Coconino National Forest | SPILL: The outline covers 42% of US-1068 Slide Rock State Park, with no 2-fer row (maybe the wrong record) (+2 more flags). |
+| 5 | US-4429 | Coronado National Forest | SPILL: The outline covers 89% of US-1055 Catalina State Park, with no 2-fer row (maybe the wrong record) (+2 more flags). |
+| 3 | US-0030 | Grand Canyon National Park | SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-113.414187455687 35.9298825951743]; 1 piece(s) under 10 m wide; 1 hole(s) under 100 m2 (+2 more flags). |
+| 3 | US-0771 | Coronado National Memorial | SPILL: The outline covers 82% of US-4557 Arizona Trail National Scenic Trail, with no 2-fer row (maybe the wrong record). |
+| 3 | US-1067 | Roper Lake State Park | SOURCE DOWN: SPILL: The outline covers 42% of US-11944 Dankworth Pond State Park, with no 2-fer row (maybe the wrong record). |
+| 3 | US-11943 | Sonoita Creek State Natural Area | SOURCE DOWN: OUTSIDE: POTA's pin is 3.5 km outside the outline. |
+| 3 | US-11984 | Quigley-Achee State Wildlife Area | SOURCE DOWN: MISMATCH: The record name 'Quigley Wildlife Area' does not match POTA's name 'Quigley-Achee State Wildlife Area' (score 0.50). |

@@ -1,6 +1,6 @@
 {
  "area": "US-AZ",
- "built": "2026-11-08",
+ "built": "2026-11-15",
  "tool": "KPC-map-audit",
  "rules": "2026-11-02c",
  "parks": [
@@ -676,72 +676,50 @@
     32.9984,
     -114.486
    ],
-   "outline_from": [
-    "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSApproved_Authoritative/FeatureServer/0"
-   ],
-   "acres_drawn": 31475.4,
-   "records": [
-    {
-     "id": "sgazd165",
-     "name": "IMPERIAL NATIONAL WILDLIFE REFUGE",
-     "type": "US Fish and Wildlife Service (approved boundary) (wild, state GIS table)",
-     "acres": 31474.9,
-     "acres_from": "acres field",
-     "layer": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSApproved_Authoritative/FeatureServer/0",
-     "link": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSApproved_Authoritative/FeatureServer/0/query?objectIds=165&outFields=*&returnGeometry=false&f=html",
-     "name_field": "ORGNAME"
-    }
-   ],
-   "record_ids": [
-    "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSApproved_Authoritative/FeatureServer/0#165"
-   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "PASS",
-     "metres": 0
+     "flag": "NO OUTLINE"
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 31475.4,
-     "official_acres": 31474.9,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Imperial National Wildlife Refuge",
-     "record_name": "IMPERIAL NATIONAL WILDLIFE REFUGE"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": "refuge",
-     "record_kind": "refuge",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "PASS",
-     "pieces": 1
+     "flag": "CAN'T TELL",
+     "note": "source down"
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
-     "last_edit": "2026-08-24",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: Nothing could be tested."
   },
   {
    "ref": "US-0177",
@@ -1147,7 +1125,7 @@
      "flag": "NOTE",
      "metres": 1156.5,
      "was": "OUTSIDE",
-     "note": "the park spans several states / provinces (US-AZ, US-UT): POTA's one pin may be in another part"
+     "note": "the park spans several states / provinces (US-AZ, US-UT): POTA's one pin may be in another part (the key says UT)"
     },
     "T2": {
      "flag": "PASS",
@@ -2504,32 +2482,10 @@
     -111.852
    ],
    "outline_from": [
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0",
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 12.3,
+   "acres_drawn": 11.4,
    "records": [
-    {
-     "id": "sgaze1",
-     "name": "Fort Verde State Historic Park",
-     "type": "Arizona State Parks and Trails (park boundaries) (park, state GIS table)",
-     "acres": 12.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0/query?objectIds=1&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgaza8",
-     "name": "Fort Verde SHP",
-     "type": "Arizona State Parks & Trails (park, state GIS table)",
-     "acres": 11.3,
-     "acres_from": "GIS_Acres",
-     "layer": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
-     "link": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0/query?objectIds=8&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
     {
      "id": "padus#167515",
      "name": "Fort Verde State Historic Park",
@@ -2552,8 +2508,6 @@
     }
    ],
    "record_ids": [
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0#1",
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0#8",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167515",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167514"
    ],
@@ -2563,11 +2517,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 12.3,
-     "official_acres": 12.0,
-     "times": 1.03,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -2581,18 +2532,8 @@
      "flag": "CAN'T TELL"
     },
     "T5": {
-     "flag": "TINY HOLES",
-     "pieces": 1,
-     "flags": [
-      "TINY HOLES"
-     ],
-     "note": "1 hole(s) under 100 m2",
-     "repair": {
-      "ok": true,
-      "area_change_pct": 0.009,
-      "holes": 1,
-      "pieces": 0
-     }
+     "flag": "PASS",
+     "pieces": 1
     },
     "T6": {
      "flag": "PASS"
@@ -2605,16 +2546,17 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-03",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-03, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 2,
-   "why": "TINY HOLES: The shape has problems: 1 hole(s) under 100 m2 (+1 more flag)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)",
+    "SOURCE DOWN: refused, no request made: services6.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-10510",
@@ -2698,21 +2640,10 @@
     -112.022
    ],
    "outline_from": [
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 662.6,
+   "acres_drawn": 646.9,
    "records": [
-    {
-     "id": "sgaza28",
-     "name": "Verde River Greenway SNA",
-     "type": "Arizona State Parks & Trails (park, state GIS table)",
-     "acres": 649.2,
-     "acres_from": "GIS_Acres",
-     "layer": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
-     "link": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0/query?objectIds=28&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
     {
      "id": "padus#167527",
      "name": "Verde River Greenway State Natural Area",
@@ -2725,7 +2656,6 @@
     }
    ],
    "record_ids": [
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0#28",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167527"
    ],
    "tests": {
@@ -2734,11 +2664,8 @@
      "metres": 46.4
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 662.6,
-     "official_acres": 649.2,
-     "times": 1.02,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -2753,7 +2680,7 @@
     },
     "T5": {
      "flag": "PASS",
-     "pieces": 10
+     "pieces": 11
     },
     "T6": {
      "flag": "PASS"
@@ -2766,18 +2693,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-03",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-03, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
    "problems": [
-    "record sgaza28: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
+    "SOURCE DOWN: refused, no request made: services6.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
    ],
-   "status": "graded",
-   "score": 2,
-   "why": "NEAR: POTA's pin is 46 m outside the outline (+1 more flag)."
+   "status": "SOURCE DOWN: retry next run",
+   "score": 1,
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 46 m outside the outline."
   },
   {
    "ref": "US-10513",
@@ -2789,47 +2714,97 @@
     34.2114,
     -112.77
    ],
-   "outline_from": [
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0"
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "CAN'T TELL",
+     "note": "source down"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
    ],
-   "acres_drawn": 320.3,
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: Nothing could be tested."
+  },
+  {
+   "ref": "US-10514",
+   "name": "San Pedro Riparian BLM National Conservation Area",
+   "key_name": "San Pedro Riparian BLM National Conservation Area",
+   "type": "BLM National Conservation Area",
+   "grade": "official",
+   "pin": [
+    31.5834,
+    -110.134
+   ],
+   "outline_from": [
+    "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0"
+   ],
+   "acres_drawn": 55537.7,
    "records": [
     {
-     "id": "sgaze29",
-     "name": "Granite Mountain Hotshots Memorial State Park",
-     "type": "Arizona State Parks and Trails (park boundaries) (park, state GIS table)",
-     "acres": 320.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0/query?objectIds=29&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
+     "id": "nca22332",
+     "name": "San Pedro Riparian",
+     "type": "Bureau of Land Management",
+     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0",
+     "link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0/query?objectIds=22332&outFields=*&returnGeometry=false&f=html",
+     "name_field": "NCA_NAME"
     }
    ],
    "record_ids": [
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0#29"
+    "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0#22332"
    ],
    "tests": {
     "T1": {
-     "flag": "OUTSIDE",
-     "metres": 559.5
+     "flag": "PASS",
+     "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 320.3,
-     "official_acres": 320.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
      "score": 1.0,
-     "pota_name": "Granite Mountain Hotshots State Park",
-     "record_name": "Granite Mountain Hotshots Memorial State Park"
+     "pota_name": "San Pedro Riparian BLM National Conservation Area",
+     "record_name": "San Pedro Riparian"
     },
     "T4": {
-     "park_kind": "state park",
-     "record_kind": "state park",
-     "flag": "PASS"
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
     },
     "T5": {
      "flag": "PASS",
@@ -2846,110 +2821,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2020-01-13",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2020-01-13, over a year before the club read it (2026-11-05)"
-    }
-   },
-   "problems": [],
-   "status": "graded",
-   "score": 4,
-   "why": "OUTSIDE: POTA's pin is 560 m outside the outline (+1 more flag)."
-  },
-  {
-   "ref": "US-10514",
-   "name": "San Pedro Riparian BLM National Conservation Area",
-   "key_name": "San Pedro Riparian BLM National Conservation Area",
-   "type": "BLM National Conservation Area",
-   "grade": "official",
-   "pin": [
-    31.5834,
-    -110.134
-   ],
-   "outline_from": [
-    "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0",
-    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_NLCS_National_Monuments_National_Conservation_Areas_Polygons/FeatureServer/0"
-   ],
-   "acres_drawn": 61319.9,
-   "records": [
-    {
-     "id": "nca22332",
-     "name": "San Pedro Riparian",
-     "type": "Bureau of Land Management",
-     "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0",
-     "link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0/query?objectIds=22332&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NCA_NAME"
-    },
-    {
-     "id": "sgazf463",
-     "name": "San Pedro Riparian",
-     "type": "BLM Natl NLCS National Monuments National Conservation Areas Polygons (preserve, state GIS table)",
-     "layer": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_NLCS_National_Monuments_National_Conservation_Areas_Polygons/FeatureServer/0",
-     "link": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_NLCS_National_Monuments_National_Conservation_Areas_Polygons/FeatureServer/0/query?objectIds=463&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NCA_NAME"
-    }
-   ],
-   "record_ids": [
-    "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0#22332",
-    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_NLCS_National_Monuments_National_Conservation_Areas_Polygons/FeatureServer/0#463"
-   ],
-   "tests": {
-    "T1": {
-     "flag": "PASS",
-     "metres": 0
-    },
-    "T2": {
-     "flag": "NO FIGURE",
-     "outline_acres": 61319.9
-    },
-    "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "San Pedro Riparian BLM National Conservation Area",
-     "record_name": "San Pedro Riparian"
-    },
-    "T4": {
-     "park_kind": null,
-     "record_kind": null,
-     "flag": "CAN'T TELL"
-    },
-    "T5": {
-     "flag": "SLIVERS",
-     "pieces": 6,
-     "flags": [
-      "SLIVERS"
-     ],
-     "note": "1 piece(s) under 10 m wide",
-     "repair": {
-      "ok": true,
-      "area_change_pct": 0.0,
-      "holes": 0,
-      "pieces": 1
-     }
-    },
-    "T6": {
-     "flag": "PASS"
-    },
-    "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
-    },
-    "T8": {
-     "flag": "PASS"
-    },
-    "T9": {
-     "last_edit": "2026-08-06",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
    "problems": [
-    "record sgazf463: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
+    "SOURCE DOWN: refused, no request made: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
    ],
-   "status": "graded",
-   "score": 1,
-   "why": "SLIVERS: The shape has problems: 1 piece(s) under 10 m wide."
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-10516",
@@ -2962,11 +2843,9 @@
     -112.111
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 8.8,
+   "acres_drawn": 7.1,
    "records": [
     {
      "id": "padus#167516",
@@ -2977,32 +2856,10 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=167516&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "sgaza10",
-     "name": "Jerome SHP",
-     "type": "Arizona State Parks & Trails (park, state GIS table)",
-     "acres": 7.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
-     "link": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0/query?objectIds=10&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgaze6",
-     "name": "Jerome State Historic Park",
-     "type": "Arizona State Parks and Trails (park boundaries) (park, state GIS table)",
-     "acres": 7.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0/query?objectIds=6&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167516",
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0#10",
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0#6"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167516"
    ],
    "tests": {
     "T1": {
@@ -3010,11 +2867,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 8.8,
-     "official_acres": 7.0,
-     "times": 1.25,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -3042,16 +2896,17 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-03",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-03, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-09-03, over a year before the club read it (2026-11-05)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services6.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)",
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-10518",
@@ -3064,32 +2919,10 @@
     -110.07
    ],
    "outline_from": [
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 5.1,
+   "acres_drawn": 4.2,
    "records": [
-    {
-     "id": "sgaza25",
-     "name": "Tombstone Courthouse SHP",
-     "type": "Arizona State Parks & Trails (park, state GIS table)",
-     "acres": 5.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
-     "link": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0/query?objectIds=25&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgaze18",
-     "name": "Tombstone Courthouse State Historic Park",
-     "type": "Arizona State Parks and Trails (park boundaries) (park, state GIS table)",
-     "acres": 5.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0/query?objectIds=18&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
     {
      "id": "padus#167525",
      "name": "Tombstone Courthouse State Historic Park",
@@ -3102,21 +2935,16 @@
     }
    ],
    "record_ids": [
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0#25",
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0#18",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167525"
    ],
    "tests": {
     "T1": {
      "flag": "NEAR",
-     "metres": 86.1
+     "metres": 88.3
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 5.1,
-     "official_acres": 5.0,
-     "times": 1.02,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -3130,8 +2958,19 @@
      "flag": "CAN'T TELL"
     },
     "T5": {
-     "flag": "PASS",
-     "pieces": 4
+     "flag": "SLIVERS",
+     "pieces": 4,
+     "flags": [
+      "SLIVERS"
+     ],
+     "note": "1 piece(s) under 10 m wide",
+     "repair": {
+      "ok": false,
+      "area_change_pct": 2.11,
+      "holes": 0,
+      "pieces": 1,
+      "why": "the repair would change the land by 2.1 %"
+     }
     },
     "T6": {
      "flag": "PASS"
@@ -3144,16 +2983,17 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-03",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-03, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services6.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)",
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 2,
-   "why": "NEAR: POTA's pin is 86 m outside the outline (+1 more flag)."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 88 m outside the outline (+1 more flag)."
   },
   {
    "ref": "US-1052",
@@ -3166,11 +3006,9 @@
     -113.555
    ],
    "outline_from": [
-    "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0"
+    "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0"
    ],
-   "acres_drawn": 191000.6,
+   "acres_drawn": 189106.4,
    "records": [
     {
      "id": "hma51",
@@ -3181,32 +3019,10 @@
      "layer": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
      "link": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0/query?objectIds=51&outFields=*&returnGeometry=false&f=html",
      "name_field": "HMA_NAME"
-    },
-    {
-     "id": "sgaza1",
-     "name": "Alamo Lake SP",
-     "type": "Arizona State Parks & Trails (park, state GIS table)",
-     "acres": 2856.7,
-     "acres_from": "GIS_Acres",
-     "layer": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
-     "link": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0/query?objectIds=1&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgaze31",
-     "name": "Alamo Lake State Park",
-     "type": "Arizona State Parks and Trails (park boundaries) (park, state GIS table)",
-     "acres": 2857.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0/query?objectIds=31&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
     }
    ],
    "record_ids": [
-    "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0#51",
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0#1",
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0#31"
+    "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0#51"
    ],
    "tests": {
     "T1": {
@@ -3214,22 +3030,19 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 191000.6,
-     "official_acres": 189084.0,
-     "times": 1.01,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "Alamo Lake State Park",
-     "record_name": "Alamo Lake State Park"
+     "record_name": "Alamo"
     },
     "T4": {
      "park_kind": "state park",
-     "record_kind": "state park",
-     "flag": "PASS"
+     "record_kind": null,
+     "flag": "CAN'T TELL"
     },
     "T5": {
      "flag": "SELF-INTERSECTION",
@@ -3256,16 +3069,17 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-03",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-03, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 2,
-   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-113.678492946634 34.1579387755363] (+1 more flag)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services6.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)",
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 1,
+   "why": "SOURCE DOWN: SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-113.678492946634 34.1579387755363]."
   },
   {
    "ref": "US-1053",
@@ -3277,36 +3091,192 @@
     33.2794,
     -111.159
    ],
-   "outline_from": [
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0",
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0"
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "CAN'T TELL",
+     "note": "source down"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)",
+    "SOURCE DOWN: refused, no request made: services6.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
    ],
-   "acres_drawn": 402.8,
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: Nothing could be tested."
+  },
+  {
+   "ref": "US-1054",
+   "name": "Buckskin Mountain State Park",
+   "key_name": "Buckskin Mountain State Park",
+   "type": "State Park",
+   "grade": "official",
+   "pin": [
+    34.2562,
+    -114.16
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "CAN'T TELL",
+     "note": "source down"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services6.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)",
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: Nothing could be tested."
+  },
+  {
+   "ref": "US-1055",
+   "name": "Catalina State Park",
+   "key_name": "Catalina State Park",
+   "type": "State Park",
+   "grade": "official",
+   "pin": [
+    32.4212,
+    -110.925
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "CAN'T TELL",
+     "note": "source down"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services6.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)",
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: Nothing could be tested."
+  },
+  {
+   "ref": "US-1056",
+   "name": "Cattail Cove State Park",
+   "key_name": "Cattail Cove State Park",
+   "type": "State Park",
+   "grade": "official",
+   "pin": [
+    34.3506,
+    -114.17
+   ],
+   "outline_from": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+   ],
+   "acres_drawn": 2160.3,
    "records": [
     {
-     "id": "sgaze2",
-     "name": "Boyce Thompson Arboretum State Park",
-     "type": "Arizona State Parks and Trails (park boundaries) (park, state GIS table)",
-     "acres": 402.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0/query?objectIds=2&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgaza2",
-     "name": "Boyce Thompson Arboretum SP",
-     "type": "Arizona State Parks & Trails (park, state GIS table)",
-     "acres": 368.9,
+     "id": "padus#167512",
+     "name": "Cattail Cove State Park",
+     "type": "State Park State Park",
+     "category": "Fee",
+     "acres": 2161.0,
      "acres_from": "GIS_Acres",
-     "layer": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
-     "link": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0/query?objectIds=2&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=167512&outFields=*&returnGeometry=false&f=html"
     }
    ],
    "record_ids": [
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0#2",
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0#2"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167512"
    ],
    "tests": {
     "T1": {
@@ -3314,17 +3284,14 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 402.8,
-     "official_acres": 402.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
      "score": 1.0,
-     "pota_name": "Boyce Thompson Arboretum State Park",
-     "record_name": "Boyce Thompson Arboretum State Park"
+     "pota_name": "Cattail Cove State Park",
+     "record_name": "Cattail Cove State Park"
     },
     "T4": {
      "park_kind": "state park",
@@ -3346,326 +3313,17 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-03",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-03, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-09-03, over a year before the club read it (2026-11-05)."
-  },
-  {
-   "ref": "US-1054",
-   "name": "Buckskin Mountain State Park",
-   "key_name": "Buckskin Mountain State Park",
-   "type": "State Park",
-   "grade": "official",
-   "pin": [
-    34.2562,
-    -114.16
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services6.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)",
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
    ],
-   "outline_from": [
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0"
-   ],
-   "acres_drawn": 950.4,
-   "records": [
-    {
-     "id": "sgaza3",
-     "name": "Buckskin Mountain SP",
-     "type": "Arizona State Parks & Trails (park, state GIS table)",
-     "acres": 949.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
-     "link": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0/query?objectIds=3&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgaze3",
-     "name": "Buckskin Mountain State Park",
-     "type": "Arizona State Parks and Trails (park boundaries) (park, state GIS table)",
-     "acres": 944.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0/query?objectIds=3&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    }
-   ],
-   "record_ids": [
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0#3",
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0#3"
-   ],
-   "tests": {
-    "T1": {
-     "flag": "PASS",
-     "metres": 0
-    },
-    "T2": {
-     "flag": "PASS",
-     "outline_acres": 950.4,
-     "official_acres": 949.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
-    },
-    "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Buckskin Mountain State Park",
-     "record_name": "Buckskin Mountain State Park"
-    },
-    "T4": {
-     "park_kind": "state park",
-     "record_kind": "state park",
-     "flag": "PASS"
-    },
-    "T5": {
-     "flag": "PASS",
-     "pieces": 2
-    },
-    "T6": {
-     "flag": "SPILL",
-     "parks": [
-      {
-       "ref": "US-3390",
-       "name": "River Island State Park",
-       "share": 0.71
-      }
-     ],
-     "count": 1
-    },
-    "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
-    },
-    "T8": {
-     "flag": "PASS"
-    },
-    "T9": {
-     "last_edit": "2021-09-03",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-03, over a year before the club read it (2026-11-05)"
-    }
-   },
-   "problems": [],
-   "status": "graded",
-   "score": 4,
-   "why": "SPILL: The outline covers 71% of US-3390 River Island State Park, with no 2-fer row (maybe the wrong record) (+1 more flag)."
-  },
-  {
-   "ref": "US-1055",
-   "name": "Catalina State Park",
-   "key_name": "Catalina State Park",
-   "type": "State Park",
-   "grade": "official",
-   "pin": [
-    32.4212,
-    -110.925
-   ],
-   "outline_from": [
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0"
-   ],
-   "acres_drawn": 5477.6,
-   "records": [
-    {
-     "id": "sgaza4",
-     "name": "Catalina SP",
-     "type": "Arizona State Parks & Trails (park, state GIS table)",
-     "acres": 5472.6,
-     "acres_from": "GIS_Acres",
-     "layer": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
-     "link": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0/query?objectIds=4&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgaze22",
-     "name": "Catalina State Park",
-     "type": "Arizona State Parks and Trails (park boundaries) (park, state GIS table)",
-     "acres": 5473.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0/query?objectIds=22&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    }
-   ],
-   "record_ids": [
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0#4",
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0#22"
-   ],
-   "tests": {
-    "T1": {
-     "flag": "PASS",
-     "metres": 0
-    },
-    "T2": {
-     "flag": "PASS",
-     "outline_acres": 5477.6,
-     "official_acres": 5473.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
-    },
-    "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Catalina State Park",
-     "record_name": "Catalina State Park"
-    },
-    "T4": {
-     "park_kind": "state park",
-     "record_kind": "state park",
-     "flag": "PASS"
-    },
-    "T5": {
-     "flag": "TINY HOLES",
-     "pieces": 1,
-     "flags": [
-      "TINY HOLES"
-     ],
-     "note": "1 hole(s) under 100 m2",
-     "repair": {
-      "ok": true,
-      "area_change_pct": 0.0,
-      "holes": 1,
-      "pieces": 0
-     }
-    },
-    "T6": {
-     "flag": "PASS"
-    },
-    "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
-    },
-    "T8": {
-     "flag": "PASS"
-    },
-    "T9": {
-     "last_edit": "2021-09-03",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-03, over a year before the club read it (2026-11-05)"
-    }
-   },
-   "problems": [],
-   "status": "graded",
-   "score": 2,
-   "why": "TINY HOLES: The shape has problems: 1 hole(s) under 100 m2 (+1 more flag)."
-  },
-  {
-   "ref": "US-1056",
-   "name": "Cattail Cove State Park",
-   "key_name": "Cattail Cove State Park",
-   "type": "State Park",
-   "grade": "official",
-   "pin": [
-    34.3506,
-    -114.17
-   ],
-   "outline_from": [
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
-   ],
-   "acres_drawn": 2541.4,
-   "records": [
-    {
-     "id": "sgaza5",
-     "name": "Cattail Cove SP",
-     "type": "Arizona State Parks & Trails (park, state GIS table)",
-     "acres": 2528.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
-     "link": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0/query?objectIds=5&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgaze21",
-     "name": "Cattail Cove State Park",
-     "type": "Arizona State Parks and Trails (park boundaries) (park, state GIS table)",
-     "acres": 2176.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0/query?objectIds=21&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "padus#167512",
-     "name": "Cattail Cove State Park",
-     "type": "State Park State Park",
-     "category": "Fee",
-     "acres": 2161.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=167512&outFields=*&returnGeometry=false&f=html"
-    }
-   ],
-   "record_ids": [
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0#5",
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0#21",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167512"
-   ],
-   "tests": {
-    "T1": {
-     "flag": "PASS",
-     "metres": 0
-    },
-    "T2": {
-     "flag": "PASS",
-     "outline_acres": 2541.4,
-     "official_acres": 2528.0,
-     "times": 1.01,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
-    },
-    "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Cattail Cove State Park",
-     "record_name": "Cattail Cove State Park"
-    },
-    "T4": {
-     "park_kind": "state park",
-     "record_kind": "state park",
-     "flag": "PASS"
-    },
-    "T5": {
-     "flag": "TINY HOLES",
-     "pieces": 1,
-     "flags": [
-      "TINY HOLES"
-     ],
-     "note": "1 hole(s) under 100 m2",
-     "repair": {
-      "ok": true,
-      "area_change_pct": 0.0,
-      "holes": 1,
-      "pieces": 0
-     }
-    },
-    "T6": {
-     "flag": "PASS"
-    },
-    "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
-    },
-    "T8": {
-     "flag": "PASS"
-    },
-    "T9": {
-     "last_edit": "2021-09-03",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-03, over a year before the club read it (2026-11-05)"
-    }
-   },
-   "problems": [],
-   "status": "graded",
-   "score": 2,
-   "why": "TINY HOLES: The shape has problems: 1 hole(s) under 100 m2 (+1 more flag)."
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-1057",
@@ -3678,11 +3336,9 @@
     -112.019
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 335.6,
+   "acres_drawn": 335.0,
    "records": [
     {
      "id": "padus#167513",
@@ -3693,32 +3349,10 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=167513&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "sgaza6",
-     "name": "Dead Horse Ranch SP",
-     "type": "Arizona State Parks & Trails (park, state GIS table)",
-     "acres": 334.9,
-     "acres_from": "GIS_Acres",
-     "layer": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
-     "link": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0/query?objectIds=6&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgaze11",
-     "name": "Dead Horse Ranch State Park",
-     "type": "Arizona State Parks and Trails (park boundaries) (park, state GIS table)",
-     "acres": 335.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0/query?objectIds=11&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167513",
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0#6",
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0#11"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167513"
    ],
    "tests": {
     "T1": {
@@ -3726,11 +3360,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 335.6,
-     "official_acres": 335.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -3752,10 +3383,10 @@
      "note": "2 piece(s) under 10 m wide",
      "repair": {
       "ok": false,
-      "area_change_pct": 1.172,
+      "area_change_pct": 1.092,
       "holes": 0,
       "pieces": 2,
-      "why": "the repair would change the land by 1.2 %"
+      "why": "the repair would change the land by 1.1 %"
      }
     },
     "T6": {
@@ -3769,19 +3400,17 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-03",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-03, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
    "problems": [
-    "record sgaza6: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail",
-    "record sgaze11: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
+    "SOURCE DOWN: refused, no request made: services6.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)",
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
    ],
-   "status": "graded",
-   "score": 2,
-   "why": "SLIVERS: The shape has problems: 2 piece(s) under 10 m wide (+1 more flag)."
+   "status": "SOURCE DOWN: retry next run",
+   "score": 1,
+   "why": "SOURCE DOWN: SLIVERS: The shape has problems: 2 piece(s) under 10 m wide."
   },
   {
    "ref": "US-1058",
@@ -3794,32 +3423,10 @@
     -110.664
    ],
    "outline_from": [
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 4565.1,
+   "acres_drawn": 1383.1,
    "records": [
-    {
-     "id": "sgaza9",
-     "name": "Homolovi Ruins SP",
-     "type": "Arizona State Parks & Trails (park, state GIS table)",
-     "acres": 4542.3,
-     "acres_from": "GIS_Acres",
-     "layer": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
-     "link": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0/query?objectIds=9&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgaze30",
-     "name": "Homolovi Ruins State Park",
-     "type": "Arizona State Parks and Trails (park boundaries) (park, state GIS table)",
-     "acres": 4542.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0/query?objectIds=30&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
     {
      "id": "padus#167329",
      "name": "Homolovi Ruins State Park",
@@ -3842,22 +3449,17 @@
     }
    ],
    "record_ids": [
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0#9",
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0#30",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167329",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167330"
    ],
    "tests": {
     "T1": {
      "flag": "NEAR",
-     "metres": 138.3
+     "metres": 147.0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 4565.1,
-     "official_acres": 4542.3,
-     "times": 1.01,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -3872,7 +3474,7 @@
     },
     "T5": {
      "flag": "PASS",
-     "pieces": 4
+     "pieces": 3
     },
     "T6": {
      "flag": "PASS"
@@ -3885,16 +3487,17 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-03",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-03, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 2,
-   "why": "NEAR: POTA's pin is 138 m outside the outline (+1 more flag)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services6.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)",
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 1,
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 147 m outside the outline."
   },
   {
    "ref": "US-1059",
@@ -3907,11 +3510,9 @@
     -110.35
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0",
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 731.5,
+   "acres_drawn": 727.2,
    "records": [
     {
      "id": "padus#167511",
@@ -3922,32 +3523,10 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=167511&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "sgaze13",
-     "name": "Kartchner Caverns State Park",
-     "type": "Arizona State Parks and Trails (park boundaries) (park, state GIS table)",
-     "acres": 721.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0/query?objectIds=13&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgaza11",
-     "name": "Kartchner Caverns SP",
-     "type": "Arizona State Parks & Trails (park, state GIS table)",
-     "acres": 719.7,
-     "acres_from": "GIS_Acres",
-     "layer": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
-     "link": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0/query?objectIds=11&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167511",
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0#13",
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0#11"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167511"
    ],
    "tests": {
     "T1": {
@@ -3955,11 +3534,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 731.5,
-     "official_acres": 727.0,
-     "times": 1.01,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -3987,16 +3563,17 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-03",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-03, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-09-03, over a year before the club read it (2026-11-05)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)",
+    "SOURCE DOWN: refused, no request made: services6.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-1060",
@@ -4009,22 +3586,10 @@
     -114.36
    ],
    "outline_from": [
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 930.2,
+   "acres_drawn": 492.1,
    "records": [
-    {
-     "id": "sgaza12",
-     "name": "Lake Havasu SP",
-     "type": "Arizona State Parks & Trails (park, state GIS table)",
-     "acres": 929.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
-     "link": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0/query?objectIds=12&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
     {
      "id": "padus#167517",
      "name": "Lake Havasu State Park",
@@ -4034,22 +3599,10 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=167517&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "sgaze20",
-     "name": "Lake Havasu State Park",
-     "type": "Arizona State Parks and Trails (park boundaries) (park, state GIS table)",
-     "acres": 349.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0/query?objectIds=20&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
     }
    ],
    "record_ids": [
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0#12",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167517",
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0#20"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167517"
    ],
    "tests": {
     "T1": {
@@ -4057,209 +3610,14 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 930.2,
-     "official_acres": 929.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "Lake Havasu State Park",
      "record_name": "Lake Havasu State Park"
-    },
-    "T4": {
-     "park_kind": "state park",
-     "record_kind": "state park",
-     "flag": "PASS"
-    },
-    "T5": {
-     "flag": "PASS",
-     "pieces": 2
-    },
-    "T6": {
-     "flag": "PASS"
-    },
-    "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
-    },
-    "T8": {
-     "flag": "PASS"
-    },
-    "T9": {
-     "last_edit": "2021-09-03",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-03, over a year before the club read it (2026-11-05)"
-    }
-   },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-09-03, over a year before the club read it (2026-11-05)."
-  },
-  {
-   "ref": "US-1061",
-   "name": "Lost Dutchman State Park",
-   "key_name": "Lost Dutchman State Park",
-   "type": "State Park",
-   "grade": "official",
-   "pin": [
-    33.4639,
-    -111.482
-   ],
-   "outline_from": [
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0"
-   ],
-   "acres_drawn": 312.8,
-   "records": [
-    {
-     "id": "sgaza13",
-     "name": "Lost Dutchman SP",
-     "type": "Arizona State Parks & Trails (park, state GIS table)",
-     "acres": 309.2,
-     "acres_from": "GIS_Acres",
-     "layer": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
-     "link": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0/query?objectIds=13&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgaze10",
-     "name": "Lost Dutchman State Park",
-     "type": "Arizona State Parks and Trails (park boundaries) (park, state GIS table)",
-     "acres": 309.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0/query?objectIds=10&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    }
-   ],
-   "record_ids": [
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0#13",
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0#10"
-   ],
-   "tests": {
-    "T1": {
-     "flag": "PASS",
-     "metres": 0
-    },
-    "T2": {
-     "flag": "PASS",
-     "outline_acres": 312.8,
-     "official_acres": 309.2,
-     "times": 1.01,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
-    },
-    "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Lost Dutchman State Park",
-     "record_name": "Lost Dutchman State Park"
-    },
-    "T4": {
-     "park_kind": "state park",
-     "record_kind": "state park",
-     "flag": "PASS"
-    },
-    "T5": {
-     "flag": "PASS",
-     "pieces": 2
-    },
-    "T6": {
-     "flag": "PASS"
-    },
-    "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
-    },
-    "T8": {
-     "flag": "PASS"
-    },
-    "T9": {
-     "last_edit": "2021-09-03",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-03, over a year before the club read it (2026-11-05)"
-    }
-   },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-09-03, over a year before the club read it (2026-11-05)."
-  },
-  {
-   "ref": "US-1062",
-   "name": "Lyman Lake State Park",
-   "key_name": "Lyman Lake State Park",
-   "type": "State Park",
-   "grade": "official",
-   "pin": [
-    34.3616,
-    -109.379
-   ],
-   "outline_from": [
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0",
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
-   ],
-   "acres_drawn": 918.6,
-   "records": [
-    {
-     "id": "sgaze7",
-     "name": "Lyman Lake State Park",
-     "type": "Arizona State Parks and Trails (park boundaries) (park, state GIS table)",
-     "acres": 917.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0/query?objectIds=7&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgaza14",
-     "name": "Lyman Lake SP",
-     "type": "Arizona State Parks & Trails (park, state GIS table)",
-     "acres": 913.3,
-     "acres_from": "GIS_Acres",
-     "layer": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
-     "link": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0/query?objectIds=14&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "padus#167332",
-     "name": "Lyman Lake State Park",
-     "type": "State Park State Park",
-     "category": "Fee",
-     "acres": 66.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=167332&outFields=*&returnGeometry=false&f=html"
-    }
-   ],
-   "record_ids": [
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0#7",
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0#14",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167332"
-   ],
-   "tests": {
-    "T1": {
-     "flag": "PASS",
-     "metres": 0
-    },
-    "T2": {
-     "flag": "PASS",
-     "outline_acres": 918.6,
-     "official_acres": 917.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
-    },
-    "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Lyman Lake State Park",
-     "record_name": "Lyman Lake State Park"
     },
     "T4": {
      "park_kind": "state park",
@@ -4281,16 +3639,149 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-03",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-03, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services6.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)",
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
+  },
+  {
+   "ref": "US-1061",
+   "name": "Lost Dutchman State Park",
+   "key_name": "Lost Dutchman State Park",
+   "type": "State Park",
+   "grade": "official",
+   "pin": [
+    33.4639,
+    -111.482
+   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
+   "tests": {
+    "T1": {
+     "flag": "NO OUTLINE"
+    },
+    "T2": {
+     "flag": "NO OUTLINE"
+    },
+    "T3": {
+     "flag": "CAN'T TELL",
+     "note": "no record name"
+    },
+    "T4": {
+     "flag": "CAN'T TELL",
+     "note": "no record"
+    },
+    "T5": {
+     "flag": "CAN'T TELL",
+     "note": "source down"
+    },
+    "T6": {
+     "flag": "NO OUTLINE"
+    },
+    "T7": {
+     "flag": "NO OUTLINE"
+    },
+    "T8": {
+     "flag": "CAN'T TELL",
+     "note": "no record id"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services6.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)",
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: Nothing could be tested."
+  },
+  {
+   "ref": "US-1062",
+   "name": "Lyman Lake State Park",
+   "key_name": "Lyman Lake State Park",
+   "type": "State Park",
+   "grade": "official",
+   "pin": [
+    34.3616,
+    -109.379
+   ],
+   "outline_from": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+   ],
+   "acres_drawn": 66.3,
+   "records": [
+    {
+     "id": "padus#167332",
+     "name": "Lyman Lake State Park",
+     "type": "State Park State Park",
+     "category": "Fee",
+     "acres": 66.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=167332&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167332"
+   ],
+   "tests": {
+    "T1": {
+     "flag": "NEAR",
+     "metres": 7.9
+    },
+    "T2": {
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
+    },
+    "T3": {
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Lyman Lake State Park",
+     "record_name": "Lyman Lake State Park"
+    },
+    "T4": {
+     "park_kind": "state park",
+     "record_kind": "state park",
+     "flag": "PASS"
+    },
+    "T5": {
+     "flag": "PASS",
+     "pieces": 1
+    },
+    "T6": {
+     "flag": "PASS"
+    },
+    "T7": {
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
+    },
+    "T8": {
+     "flag": "PASS"
+    },
+    "T9": {
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
+    }
+   },
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)",
+    "SOURCE DOWN: refused, no request made: services6.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-09-03, over a year before the club read it (2026-11-05)."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 8 m outside the outline."
   },
   {
    "ref": "US-1063",
@@ -4303,11 +3794,9 @@
     -110.732
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0",
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 4125.4,
+   "acres_drawn": 4120.7,
    "records": [
     {
      "id": "padus#167519",
@@ -4318,32 +3807,10 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=167519&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "sgaze12",
-     "name": "Oracle State Park",
-     "type": "Arizona State Parks and Trails (park boundaries) (park, state GIS table)",
-     "acres": 4111.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0/query?objectIds=12&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgaza16",
-     "name": "Oracle SP",
-     "type": "Arizona State Parks & Trails (park, state GIS table)",
-     "acres": 4103.1,
-     "acres_from": "GIS_Acres",
-     "layer": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
-     "link": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0/query?objectIds=16&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167519",
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0#12",
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0#16"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167519"
    ],
    "tests": {
     "T1": {
@@ -4351,11 +3818,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 4125.4,
-     "official_acres": 4121.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -4372,14 +3836,13 @@
      "flag": "SELF-INTERSECTION",
      "pieces": 1,
      "flags": [
-      "SELF-INTERSECTION",
-      "TINY HOLES"
+      "SELF-INTERSECTION"
      ],
-     "note": "Ring Self-intersection[-110.733919455234 32.5971607293731]; 2 hole(s) under 100 m2",
+     "note": "Ring Self-intersection[-110.733919455234 32.5971607293731]",
      "repair": {
       "ok": true,
       "area_change_pct": 0.0,
-      "holes": 2,
+      "holes": 0,
       "pieces": 0
      }
     },
@@ -4394,16 +3857,17 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-03",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-03, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 3,
-   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-110.733919455234 32.5971607293731]; 2 hole(s) under 100 m2 (+2 more flags)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)",
+    "SOURCE DOWN: refused, no request made: services6.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 1,
+   "why": "SOURCE DOWN: SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-110.733919455234 32.5971607293731]."
   },
   {
    "ref": "US-1064",
@@ -4416,32 +3880,10 @@
     -110.854
    ],
    "outline_from": [
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 2595.2,
+   "acres_drawn": 600.3,
    "records": [
-    {
-     "id": "sgaza17",
-     "name": "Patagonia Lake SP",
-     "type": "Arizona State Parks & Trails (park, state GIS table)",
-     "acres": 2591.3,
-     "acres_from": "GIS_Acres",
-     "layer": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
-     "link": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0/query?objectIds=17&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgaze14",
-     "name": "Patagonia Lake State Park",
-     "type": "Arizona State Parks and Trails (park boundaries) (park, state GIS table)",
-     "acres": 2591.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0/query?objectIds=14&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
     {
      "id": "padus#167448",
      "name": "Patagonia Lake State Park",
@@ -4454,8 +3896,6 @@
     }
    ],
    "record_ids": [
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0#17",
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0#14",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167448"
    ],
    "tests": {
@@ -4464,11 +3904,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 2595.2,
-     "official_acres": 2591.3,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -4496,16 +3933,17 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-03",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-03, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-09-03, over a year before the club read it (2026-11-05)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services6.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)",
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-1065",
@@ -4518,32 +3956,10 @@
     -111.401
    ],
    "outline_from": [
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0",
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 3762.9,
+   "acres_drawn": 3461.3,
    "records": [
-    {
-     "id": "sgaze15",
-     "name": "Picacho Peak State Park",
-     "type": "Arizona State Parks and Trails (park boundaries) (park, state GIS table)",
-     "acres": 3724.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0/query?objectIds=15&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgaza18",
-     "name": "Picacho Peak SP",
-     "type": "Arizona State Parks & Trails (park, state GIS table)",
-     "acres": 3720.1,
-     "acres_from": "GIS_Acres",
-     "layer": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
-     "link": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0/query?objectIds=18&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
     {
      "id": "padus#167520",
      "name": "Picacho Peak State Park",
@@ -4556,8 +3972,6 @@
     }
    ],
    "record_ids": [
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0#15",
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0#18",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167520"
    ],
    "tests": {
@@ -4566,11 +3980,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 3762.9,
-     "official_acres": 3724.0,
-     "times": 1.01,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -4598,16 +4009,17 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-03",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-03, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-09-03, over a year before the club read it (2026-11-05)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)",
+    "SOURCE DOWN: refused, no request made: services6.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-1066",
@@ -4620,32 +4032,10 @@
     -111.831
    ],
    "outline_from": [
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 287.3,
+   "acres_drawn": 282.1,
    "records": [
-    {
-     "id": "sgaza19",
-     "name": "Red Rock SP",
-     "type": "Arizona State Parks & Trails (park, state GIS table)",
-     "acres": 286.7,
-     "acres_from": "GIS_Acres",
-     "layer": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
-     "link": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0/query?objectIds=19&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgaze16",
-     "name": "Red Rock State Park",
-     "type": "Arizona State Parks and Trails (park boundaries) (park, state GIS table)",
-     "acres": 286.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0/query?objectIds=16&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
     {
      "id": "padus#167521",
      "name": "Red Rock State Park",
@@ -4658,8 +4048,6 @@
     }
    ],
    "record_ids": [
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0#19",
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0#16",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167521"
    ],
    "tests": {
@@ -4668,11 +4056,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 287.3,
-     "official_acres": 286.7,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -4700,16 +4085,17 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-03",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-03, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-09-03, over a year before the club read it (2026-11-05)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services6.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)",
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-1067",
@@ -4722,32 +4108,10 @@
     -109.705
    ],
    "outline_from": [
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 353.8,
+   "acres_drawn": 333.5,
    "records": [
-    {
-     "id": "sgaza21",
-     "name": "Roper Lake SP",
-     "type": "Arizona State Parks & Trails (park, state GIS table)",
-     "acres": 336.1,
-     "acres_from": "GIS_Acres",
-     "layer": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
-     "link": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0/query?objectIds=21&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgaze23",
-     "name": "Roper Lake State Park",
-     "type": "Arizona State Parks and Trails (park boundaries) (park, state GIS table)",
-     "acres": 336.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0/query?objectIds=23&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
     {
      "id": "padus#167510",
      "name": "Roper Lake and Land",
@@ -4770,8 +4134,6 @@
     }
    ],
    "record_ids": [
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0#21",
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0#23",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167510",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167331"
    ],
@@ -4781,11 +4143,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 353.8,
-     "official_acres": 336.1,
-     "times": 1.05,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -4795,7 +4154,7 @@
     },
     "T4": {
      "park_kind": "state park",
-     "record_kind": "state park",
+     "record_kind": "recreation area",
      "flag": "PASS"
     },
     "T5": {
@@ -4808,7 +4167,7 @@
       {
        "ref": "US-11944",
        "name": "Dankworth Pond State Park",
-       "share": 0.43
+       "share": 0.42
       }
      ],
      "count": 1
@@ -4821,16 +4180,17 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-03",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-03, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 4,
-   "why": "SPILL: The outline covers 43% of US-11944 Dankworth Pond State Park, with no 2-fer row (maybe the wrong record) (+1 more flag)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services6.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)",
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 3,
+   "why": "SOURCE DOWN: SPILL: The outline covers 42% of US-11944 Dankworth Pond State Park, with no 2-fer row (maybe the wrong record)."
   },
   {
    "ref": "US-1068",
@@ -4843,32 +4203,10 @@
     -111.754
    ],
    "outline_from": [
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 75.2,
+   "acres_drawn": 53.6,
    "records": [
-    {
-     "id": "sgaza23",
-     "name": "Slide Rock SP",
-     "type": "Arizona State Parks & Trails (park, state GIS table)",
-     "acres": 55.5,
-     "acres_from": "GIS_Acres",
-     "layer": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
-     "link": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0/query?objectIds=23&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgaze5",
-     "name": "Slide Rock State Park",
-     "type": "Arizona State Parks and Trails (park boundaries) (park, state GIS table)",
-     "acres": 55.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0/query?objectIds=5&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
     {
      "id": "padus#167523",
      "name": "Slide Rock State Park",
@@ -4881,8 +4219,6 @@
     }
    ],
    "record_ids": [
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0#23",
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0#5",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167523"
    ],
    "tests": {
@@ -4891,11 +4227,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 75.2,
-     "official_acres": 55.5,
-     "times": 1.36,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -4923,16 +4256,17 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-03",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-03, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-09-03, over a year before the club read it (2026-11-05)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services6.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)",
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-1069",
@@ -4944,85 +4278,51 @@
     34.3227,
     -111.448
    ],
-   "outline_from": [
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0"
-   ],
-   "acres_drawn": 191.5,
-   "records": [
-    {
-     "id": "sgaza26",
-     "name": "Tonto Natural Bridge SP",
-     "type": "Arizona State Parks & Trails (park, state GIS table)",
-     "acres": 190.7,
-     "acres_from": "GIS_Acres",
-     "layer": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
-     "link": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0/query?objectIds=26&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgaze25",
-     "name": "Tonto Natural Bridge State Park",
-     "type": "Arizona State Parks and Trails (park boundaries) (park, state GIS table)",
-     "acres": 191.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0/query?objectIds=25&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    }
-   ],
-   "record_ids": [
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0#26",
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0#25"
-   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "PASS",
-     "metres": 0
+     "flag": "NO OUTLINE"
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 191.5,
-     "official_acres": 191.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Tonto Natural Bridge State Park",
-     "record_name": "Tonto Natural Bridge State Park"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": "state park",
-     "record_kind": "state park",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "PASS",
-     "pieces": 1
+     "flag": "CAN'T TELL",
+     "note": "source down"
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
-     "last_edit": "2021-09-03",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-03, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-09-03, over a year before the club read it (2026-11-05)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services6.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)",
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: Nothing could be tested."
   },
   {
    "ref": "US-10995",
@@ -5087,68 +4387,50 @@
     33.3209,
     -112.672
    ],
-   "outline_from": [
-    "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0"
-   ],
-   "acres_drawn": 5676.8,
-   "records": [
-    {
-     "id": "sgazb24",
-     "name": "Robbins Butte Wildlife Area",
-     "type": "Arizona Game and Fish Department (AZGFD_GIS org) (wild, state GIS table)",
-     "layer": "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0",
-     "link": "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0/query?objectIds=24&outFields=*&returnGeometry=false&f=html",
-     "name_field": "MasterName"
-    }
-   ],
-   "record_ids": [
-    "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0#24"
-   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "PASS",
-     "metres": 0
+     "flag": "NO OUTLINE"
     },
     "T2": {
-     "flag": "NO FIGURE",
-     "outline_acres": 5676.8
+     "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Robbins Butte Wildlife Area State Wildlife Area",
-     "record_name": "Robbins Butte Wildlife Area"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": "wma",
-     "record_kind": "wma",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "PASS",
-     "pieces": 3
+     "flag": "CAN'T TELL",
+     "note": "source down"
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
-     "last_edit": "2019-12-16",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2019-12-16, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2019-12-16, over a year before the club read it (2026-11-05)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: Nothing could be tested."
   },
   {
    "ref": "US-11045",
@@ -5436,8 +4718,7 @@
     -112.403
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-    "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
    "acres_drawn": 1085.0,
    "records": [
@@ -5450,19 +4731,10 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=167489&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "sgazb32",
-     "name": "Upper Verde River Wildlife Area",
-     "type": "Arizona Game and Fish Department (AZGFD_GIS org) (wild, state GIS table)",
-     "layer": "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0",
-     "link": "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0/query?objectIds=32&outFields=*&returnGeometry=false&f=html",
-     "name_field": "MasterName"
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167489",
-    "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0#32"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167489"
    ],
    "tests": {
     "T1": {
@@ -5470,11 +4742,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 1085.0,
-     "official_acres": 1085.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -5502,16 +4771,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2019-12-16",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2019-12-16, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2019-12-16, over a year before the club read it (2026-11-05)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-11122",
@@ -5663,73 +4932,50 @@
     34.5033,
     -111.833
    ],
-   "outline_from": [
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0"
-   ],
-   "acres_drawn": 211.2,
-   "records": [
-    {
-     "id": "sgaze28",
-     "name": "Rockin' River Ranch",
-     "type": "Arizona State Parks and Trails (park boundaries) (park, state GIS table)",
-     "acres": 211.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0/query?objectIds=28&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    }
-   ],
-   "record_ids": [
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0#28"
-   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "PASS",
-     "metres": 0
+     "flag": "NO OUTLINE"
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 211.2,
-     "official_acres": 211.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Rockin' River Ranch State Park",
-     "record_name": "Rockin' River Ranch"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": "state park",
-     "record_kind": "state park",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "PASS",
-     "pieces": 1
+     "flag": "CAN'T TELL",
+     "note": "source down"
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
-     "last_edit": "2020-01-13",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2020-01-13, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2020-01-13, over a year before the club read it (2026-11-05)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: Nothing could be tested."
   },
   {
    "ref": "US-11942",
@@ -5813,21 +5059,10 @@
     -110.854
    ],
    "outline_from": [
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 8327.5,
+   "acres_drawn": 5238.7,
    "records": [
-    {
-     "id": "sgaze26",
-     "name": "Sonoita Creek Natural Area",
-     "type": "Arizona State Parks and Trails (park boundaries) (park, state GIS table)",
-     "acres": 7904.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0/query?objectIds=26&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
     {
      "id": "padus#167524",
      "name": "Sonoita Creek Natural Area",
@@ -5840,20 +5075,16 @@
     }
    ],
    "record_ids": [
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0#26",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167524"
    ],
    "tests": {
     "T1": {
      "flag": "OUTSIDE",
-     "metres": 1349.0
+     "metres": 3484.7
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 8327.5,
-     "official_acres": 7904.0,
-     "times": 1.05,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -5867,18 +5098,8 @@
      "flag": "PASS"
     },
     "T5": {
-     "flag": "SLIVERS",
-     "pieces": 4,
-     "flags": [
-      "SLIVERS"
-     ],
-     "note": "2 piece(s) under 10 m wide",
-     "repair": {
-      "ok": true,
-      "area_change_pct": 0.017,
-      "holes": 0,
-      "pieces": 2
-     }
+     "flag": "PASS",
+     "pieces": 5
     },
     "T6": {
      "flag": "PASS"
@@ -5891,18 +5112,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2020-01-13",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2020-01-13, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
    "problems": [
-    "record sgaze26: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
    ],
-   "status": "graded",
-   "score": 5,
-   "why": "OUTSIDE: POTA's pin is 1.3 km outside the outline (+2 more flags)."
+   "status": "SOURCE DOWN: retry next run",
+   "score": 3,
+   "why": "SOURCE DOWN: OUTSIDE: POTA's pin is 3.5 km outside the outline."
   },
   {
    "ref": "US-11944",
@@ -5968,10 +5187,9 @@
     -111.889
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-    "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Hatchery_Polys/FeatureServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 187.8,
+   "acres_drawn": 123.6,
    "records": [
     {
      "id": "padus#167503",
@@ -5982,31 +5200,19 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=167503&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "sgazc3",
-     "name": "Page Springs Hatchery",
-     "type": "Arizona Game and Fish Department (AZGFD_GIS org) (land, state GIS table)",
-     "layer": "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Hatchery_Polys/FeatureServer/0",
-     "link": "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Hatchery_Polys/FeatureServer/0/query?objectIds=3&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Prop_name"
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167503",
-    "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Hatchery_Polys/FeatureServer/0#3"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167503"
    ],
    "tests": {
     "T1": {
      "flag": "NEAR",
-     "metres": 14.5
+     "metres": 186.0
     },
     "T2": {
-     "flag": "OFF",
-     "outline_acres": 187.8,
-     "official_acres": 124.0,
-     "times": 1.51,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -6021,7 +5227,7 @@
     },
     "T5": {
      "flag": "PASS",
-     "pieces": 3
+     "pieces": 2
     },
     "T6": {
      "flag": "PASS"
@@ -6034,16 +5240,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2023-06-27",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-27, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 3,
-   "why": "NEAR: POTA's pin is 14 m outside the outline (+2 more flags)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 1,
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 186 m outside the outline."
   },
   {
    "ref": "US-11946",
@@ -6056,10 +5262,9 @@
     -109.757
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-    "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 558.3,
+   "acres_drawn": 441.1,
    "records": [
     {
      "id": "padus#167495",
@@ -6070,19 +5275,10 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=167495&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "sgazb36",
-     "name": "Willcox Playa Wildlife Area",
-     "type": "Arizona Game and Fish Department (AZGFD_GIS org) (wild, state GIS table)",
-     "layer": "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0",
-     "link": "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0/query?objectIds=36&outFields=*&returnGeometry=false&f=html",
-     "name_field": "MasterName"
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167495",
-    "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0#36"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167495"
    ],
    "tests": {
     "T1": {
@@ -6090,11 +5286,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 558.3,
-     "official_acres": 441.0,
-     "times": 1.27,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -6109,7 +5302,7 @@
     },
     "T5": {
      "flag": "PASS",
-     "pieces": 1
+     "pieces": 2
     },
     "T6": {
      "flag": "PASS"
@@ -6122,16 +5315,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2019-12-16",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2019-12-16, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2019-12-16, over a year before the club read it (2026-11-05)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-11949",
@@ -6144,10 +5337,9 @@
     -109.294
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-    "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 636.4,
+   "acres_drawn": 635.4,
    "records": [
     {
      "id": "padus#167488",
@@ -6158,19 +5350,10 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=167488&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "sgazb6",
-     "name": "Becker Lake Wildlife Area",
-     "type": "Arizona Game and Fish Department (AZGFD_GIS org) (wild, state GIS table)",
-     "layer": "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0",
-     "link": "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0/query?objectIds=6&outFields=*&returnGeometry=false&f=html",
-     "name_field": "MasterName"
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167488",
-    "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0#6"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167488"
    ],
    "tests": {
     "T1": {
@@ -6178,11 +5361,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 636.4,
-     "official_acres": 635.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -6210,16 +5390,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2019-12-16",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2019-12-16, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2019-12-16, over a year before the club read it (2026-11-05)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-11950",
@@ -6232,10 +5412,9 @@
     -109.845
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-    "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 774.5,
+   "acres_drawn": 774.3,
    "records": [
     {
      "id": "padus#167484",
@@ -6246,19 +5425,10 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=167484&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "sgazb12",
-     "name": "Cluff Ranch Wildlife Area",
-     "type": "Arizona Game and Fish Department (AZGFD_GIS org) (wild, state GIS table)",
-     "layer": "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0",
-     "link": "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0/query?objectIds=12&outFields=*&returnGeometry=false&f=html",
-     "name_field": "MasterName"
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167484",
-    "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0#12"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167484"
    ],
    "tests": {
     "T1": {
@@ -6266,11 +5436,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 774.5,
-     "official_acres": 774.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -6285,7 +5452,7 @@
     },
     "T5": {
      "flag": "PASS",
-     "pieces": 2
+     "pieces": 3
     },
     "T6": {
      "flag": "PASS"
@@ -6298,16 +5465,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2019-12-16",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2019-12-16, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2019-12-16, over a year before the club read it (2026-11-05)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-11971",
@@ -6426,10 +5593,9 @@
     -109.72
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-    "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 1693.0,
+   "acres_drawn": 1691.0,
    "records": [
     {
      "id": "padus#167498",
@@ -6440,19 +5606,10 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=167498&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "sgazb35",
-     "name": "White Water Draw Wildlife Area",
-     "type": "Arizona Game and Fish Department (AZGFD_GIS org) (wild, state GIS table)",
-     "layer": "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0",
-     "link": "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0/query?objectIds=35&outFields=*&returnGeometry=false&f=html",
-     "name_field": "MasterName"
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167498",
-    "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0#35"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167498"
    ],
    "tests": {
     "T1": {
@@ -6460,21 +5617,14 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 1693.0,
-     "official_acres": 1691.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "Whitewater Draw State Wildlife Area",
-     "record_name": "Whitewater Draw Wildlife Area",
-     "worst_record": {
-      "name": "White Water Draw Wildlife Area",
-      "score": 0.71
-     }
+     "record_name": "Whitewater Draw Wildlife Area"
     },
     "T4": {
      "park_kind": "wma",
@@ -6496,16 +5646,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2019-12-16",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2019-12-16, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2019-12-16, over a year before the club read it (2026-11-05)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-11979",
@@ -6517,68 +5667,50 @@
     34.3071,
     -110.031
    ],
-   "outline_from": [
-    "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0"
-   ],
-   "acres_drawn": 238.8,
-   "records": [
-    {
-     "id": "sgazb2",
-     "name": "Allen Severson Memorial Wildlife Area",
-     "type": "Arizona Game and Fish Department (AZGFD_GIS org) (wild, state GIS table)",
-     "layer": "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0",
-     "link": "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0/query?objectIds=2&outFields=*&returnGeometry=false&f=html",
-     "name_field": "MasterName"
-    }
-   ],
-   "record_ids": [
-    "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0#2"
-   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "NEAR",
-     "metres": 60.1
+     "flag": "NO OUTLINE"
     },
     "T2": {
-     "flag": "NO FIGURE",
-     "outline_acres": 238.8
+     "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Allen Severson State Wildlife Area",
-     "record_name": "Allen Severson Memorial Wildlife Area"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": "wma",
-     "record_kind": "wma",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "PASS",
-     "pieces": 2
+     "flag": "CAN'T TELL",
+     "note": "source down"
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
-     "last_edit": "2019-12-16",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2019-12-16, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 2,
-   "why": "NEAR: POTA's pin is 60 m outside the outline (+1 more flag)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: Nothing could be tested."
   },
   {
    "ref": "US-11981",
@@ -6667,10 +5799,9 @@
     -112.307
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-    "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 622.2,
+   "acres_drawn": 220.1,
    "records": [
     {
      "id": "padus#167493",
@@ -6681,19 +5812,10 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=167493&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "sgazb5",
-     "name": "Base and Meridian",
-     "type": "Arizona Game and Fish Department (AZGFD_GIS org) (wild, state GIS table)",
-     "layer": "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0",
-     "link": "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0/query?objectIds=5&outFields=*&returnGeometry=false&f=html",
-     "name_field": "MasterName"
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167493",
-    "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0#5"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167493"
    ],
    "tests": {
     "T1": {
@@ -6701,11 +5823,8 @@
      "metres": 103.4
     },
     "T2": {
-     "flag": "OFF",
-     "outline_acres": 622.2,
-     "official_acres": 220.0,
-     "times": 2.83,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -6733,16 +5852,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2019-12-16",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2019-12-16, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 3,
-   "why": "NEAR: POTA's pin is 103 m outside the outline (+2 more flags)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 1,
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 103 m outside the outline."
   },
   {
    "ref": "US-11984",
@@ -6755,10 +5874,9 @@
     -113.96
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-    "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 610.3,
+   "acres_drawn": 610.0,
    "records": [
     {
      "id": "padus#167486",
@@ -6769,19 +5887,10 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=167486&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "sgazb22",
-     "name": "Quigley-Achee Wildlife Area",
-     "type": "Arizona Game and Fish Department (AZGFD_GIS org) (wild, state GIS table)",
-     "layer": "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0",
-     "link": "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0/query?objectIds=22&outFields=*&returnGeometry=false&f=html",
-     "name_field": "MasterName"
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167486",
-    "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0#22"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167486"
    ],
    "tests": {
     "T1": {
@@ -6789,21 +5898,14 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 610.3,
-     "official_acres": 610.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
+     "flag": "MISMATCH",
+     "score": 0.5,
      "pota_name": "Quigley-Achee State Wildlife Area",
-     "record_name": "Quigley-Achee Wildlife Area",
-     "worst_record": {
-      "name": "Quigley Wildlife Area",
-      "score": 0.5
-     }
+     "record_name": "Quigley Wildlife Area"
     },
     "T4": {
      "park_kind": "wma",
@@ -6825,16 +5927,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2019-12-16",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2019-12-16, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2019-12-16, over a year before the club read it (2026-11-05)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 3,
+   "why": "SOURCE DOWN: MISMATCH: The record name 'Quigley Wildlife Area' does not match POTA's name 'Quigley-Achee State Wildlife Area' (score 0.50)."
   },
   {
    "ref": "US-11985",
@@ -6846,68 +5948,50 @@
     34.997,
     -111.145
    ],
-   "outline_from": [
-    "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0"
-   ],
-   "acres_drawn": 14637.4,
-   "records": [
-    {
-     "id": "sgazb23",
-     "name": "Raymond Wildlife Area",
-     "type": "Arizona Game and Fish Department (AZGFD_GIS org) (wild, state GIS table)",
-     "layer": "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0",
-     "link": "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0/query?objectIds=23&outFields=*&returnGeometry=false&f=html",
-     "name_field": "MasterName"
-    }
-   ],
-   "record_ids": [
-    "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0#23"
-   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "PASS",
-     "metres": 0
+     "flag": "NO OUTLINE"
     },
     "T2": {
-     "flag": "NO FIGURE",
-     "outline_acres": 14637.4
+     "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Raymond State Wildlife Area",
-     "record_name": "Raymond Wildlife Area"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": "wma",
-     "record_kind": "wma",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "PASS",
-     "pieces": 1
+     "flag": "CAN'T TELL",
+     "note": "source down"
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
-     "last_edit": "2019-12-16",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2019-12-16, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2019-12-16, over a year before the club read it (2026-11-05)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: Nothing could be tested."
   },
   {
    "ref": "US-11986",
@@ -6920,10 +6004,9 @@
     -109.304
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-    "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 354.2,
+   "acres_drawn": 353.4,
    "records": [
     {
      "id": "padus#167490",
@@ -6934,19 +6017,10 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=167490&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "sgazb33",
-     "name": "Wenima Wildlife Area",
-     "type": "Arizona Game and Fish Department (AZGFD_GIS org) (wild, state GIS table)",
-     "layer": "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0",
-     "link": "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0/query?objectIds=33&outFields=*&returnGeometry=false&f=html",
-     "name_field": "MasterName"
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167490",
-    "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0#33"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167490"
    ],
    "tests": {
     "T1": {
@@ -6954,11 +6028,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 354.2,
-     "official_acres": 353.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -6986,16 +6057,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2019-12-16",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2019-12-16, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2019-12-16, over a year before the club read it (2026-11-05)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-11987",
@@ -7007,68 +6078,50 @@
     34.1324,
     -109.427
    ],
-   "outline_from": [
-    "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0"
-   ],
-   "acres_drawn": 2860.3,
-   "records": [
-    {
-     "id": "sgazb34",
-     "name": "White Mountain Grasslands Wildlife Area",
-     "type": "Arizona Game and Fish Department (AZGFD_GIS org) (wild, state GIS table)",
-     "layer": "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0",
-     "link": "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0/query?objectIds=34&outFields=*&returnGeometry=false&f=html",
-     "name_field": "MasterName"
-    }
-   ],
-   "record_ids": [
-    "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0#34"
-   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "PASS",
-     "metres": 0
+     "flag": "NO OUTLINE"
     },
     "T2": {
-     "flag": "NO FIGURE",
-     "outline_acres": 2860.3
+     "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "White Mountain State Wildlife Area",
-     "record_name": "White Mountain Grasslands Wildlife Area"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": "wma",
-     "record_kind": "wma",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "PASS",
-     "pieces": 5
+     "flag": "CAN'T TELL",
+     "note": "source down"
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
-     "last_edit": "2019-12-16",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2019-12-16, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2019-12-16, over a year before the club read it (2026-11-05)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: Nothing could be tested."
   },
   {
    "ref": "US-12142",
@@ -7328,10 +6381,9 @@
     -109.238
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-    "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 1365.8,
+   "acres_drawn": 1361.3,
    "records": [
     {
      "id": "padus#167487",
@@ -7342,19 +6394,10 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=167487&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "sgazb27",
-     "name": "Sipe White Mountain Wildlife Area",
-     "type": "Arizona Game and Fish Department (AZGFD_GIS org) (wild, state GIS table)",
-     "layer": "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0",
-     "link": "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0/query?objectIds=27&outFields=*&returnGeometry=false&f=html",
-     "name_field": "MasterName"
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167487",
-    "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0#27"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167487"
    ],
    "tests": {
     "T1": {
@@ -7362,11 +6405,8 @@
      "metres": 174.9
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 1365.8,
-     "official_acres": 1361.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -7394,16 +6434,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2019-12-16",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2019-12-16, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 2,
-   "why": "NEAR: POTA's pin is 175 m outside the outline (+1 more flag)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 1,
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 175 m outside the outline."
   },
   {
    "ref": "US-13331",
@@ -7416,8 +6456,7 @@
     -111.719
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-    "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
    "acres_drawn": 154.9,
    "records": [
@@ -7430,19 +6469,10 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=167477&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "sgazb17",
-     "name": "Lamar Haines Wildlife Area",
-     "type": "Arizona Game and Fish Department (AZGFD_GIS org) (wild, state GIS table)",
-     "layer": "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0",
-     "link": "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0/query?objectIds=17&outFields=*&returnGeometry=false&f=html",
-     "name_field": "MasterName"
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167477",
-    "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0#17"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167477"
    ],
    "tests": {
     "T1": {
@@ -7450,11 +6480,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 154.9,
-     "official_acres": 155.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -7482,16 +6509,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2019-12-16",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2019-12-16, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2019-12-16, over a year before the club read it (2026-11-05)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-13332",
@@ -7504,8 +6531,7 @@
     -112.041
    ],
    "outline_from": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-    "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
    "acres_drawn": 159.1,
    "records": [
@@ -7518,19 +6544,10 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=167497&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "sgazb29",
-     "name": "Sunflower Flat Wildlife Area",
-     "type": "Arizona Game and Fish Department (AZGFD_GIS org) (wild, state GIS table)",
-     "layer": "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0",
-     "link": "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0/query?objectIds=29&outFields=*&returnGeometry=false&f=html",
-     "name_field": "MasterName"
     }
    ],
    "record_ids": [
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167497",
-    "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0#29"
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167497"
    ],
    "tests": {
     "T1": {
@@ -7538,11 +6555,8 @@
      "metres": 37.3
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 159.1,
-     "official_acres": 159.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -7570,356 +6584,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2019-12-16",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2019-12-16, over a year before the club read it (2026-11-05)"
-    }
-   },
-   "problems": [],
-   "status": "graded",
-   "score": 2,
-   "why": "NEAR: POTA's pin is 37 m outside the outline (+1 more flag)."
-  },
-  {
-   "ref": "US-13335",
-   "name": "Saddleback Mountain BLM Special Recreation Management Area",
-   "key_name": "Saddleback Mountain BLM Special Recreation Management Area",
-   "type": "BLM Special Recreation Management Area",
-   "grade": "approximate",
-   "pin": [
-    33.8311,
-    -112.325
-   ],
-   "outline_from": [
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0"
-   ],
-   "acres_drawn": 18.8,
-   "records": [
-    {
-     "id": "rma13825",
-     "name": "Saddleback Mountain Facility Area",
-     "type": "Bureau of Land Management",
-     "acres": 18.8,
-     "acres_from": "acres field",
-     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9",
-     "link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9/query?objectIds=13825&outFields=*&returnGeometry=false&f=html",
-     "name_field": "FET_NAME"
-    },
-    {
-     "id": "rst13825",
-     "name": "Saddleback Mountain Facility Area",
-     "type": "Bureau of Land Management",
-     "acres": 18.8,
-     "acres_from": "acres field",
-     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
-     "link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0/query?objectIds=13825&outFields=*&returnGeometry=false&f=html",
-     "name_field": "FET_NAME"
-    }
-   ],
-   "record_ids": [
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9#13825",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0#13825"
-   ],
-   "tests": {
-    "T1": {
-     "flag": "NEAR",
-     "metres": 32.6
-    },
-    "T2": {
-     "flag": "PASS",
-     "outline_acres": 18.8,
-     "official_acres": 18.8,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
-    },
-    "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Saddleback Mountain BLM Special Recreation Management Area",
-     "record_name": "Saddleback Mountain Facility Area"
-    },
-    "T4": {
-     "park_kind": null,
-     "record_kind": null,
-     "flag": "CAN'T TELL"
-    },
-    "T5": {
-     "flag": "PASS",
-     "pieces": 1
-    },
-    "T6": {
-     "flag": "PASS"
-    },
-    "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
-    },
-    "T8": {
-     "flag": "PASS"
-    },
-    "T9": {
      "flag": "CAN'T TELL",
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "NEAR: POTA's pin is 33 m outside the outline."
-  },
-  {
-   "ref": "US-13336",
-   "name": "Box Canyon BLM Special Recreation Management Area",
-   "key_name": "Box Canyon BLM Special Recreation Management Area",
-   "type": "BLM Special Recreation Management Area",
-   "grade": "approximate",
-   "pin": [
-    33.0123,
-    -112.152
-   ],
-   "outline_from": [
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0"
-   ],
-   "acres_drawn": 68.4,
-   "records": [
-    {
-     "id": "rma13828",
-     "name": "Box Canyon Facility Area",
-     "type": "Bureau of Land Management",
-     "acres": 68.4,
-     "acres_from": "acres field",
-     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9",
-     "link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9/query?objectIds=13828&outFields=*&returnGeometry=false&f=html",
-     "name_field": "FET_NAME"
-    },
-    {
-     "id": "rst13828",
-     "name": "Box Canyon Facility Area",
-     "type": "Bureau of Land Management",
-     "acres": 68.4,
-     "acres_from": "acres field",
-     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
-     "link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0/query?objectIds=13828&outFields=*&returnGeometry=false&f=html",
-     "name_field": "FET_NAME"
-    }
-   ],
-   "record_ids": [
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9#13828",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0#13828"
-   ],
-   "tests": {
-    "T1": {
-     "flag": "PASS",
-     "metres": 0
-    },
-    "T2": {
-     "flag": "PASS",
-     "outline_acres": 68.4,
-     "official_acres": 68.4,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
-    },
-    "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Box Canyon BLM Special Recreation Management Area",
-     "record_name": "Box Canyon Facility Area"
-    },
-    "T4": {
-     "park_kind": null,
-     "record_kind": null,
-     "flag": "CAN'T TELL"
-    },
-    "T5": {
-     "flag": "PASS",
-     "pieces": 1
-    },
-    "T6": {
-     "flag": "PASS"
-    },
-    "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
-    },
-    "T8": {
-     "flag": "PASS"
-    },
-    "T9": {
-     "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
-    }
-   },
-   "problems": [],
-   "status": "graded",
-   "score": 0,
-   "why": "All tests pass."
-  },
-  {
-   "ref": "US-13337",
-   "name": "Church Camp Road BLM Special Recreation Management Area",
-   "key_name": "Church Camp Road BLM Special Recreation Management Area",
-   "type": "BLM Special Recreation Management Area",
-   "grade": "approximate",
-   "pin": [
-    33.8417,
-    -112.334
-   ],
-   "outline_from": [
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9"
-   ],
-   "acres_drawn": 16.4,
-   "records": [
-    {
-     "id": "rma13826",
-     "name": "Church Camp Facility Area",
-     "type": "Bureau of Land Management",
-     "acres": 16.4,
-     "acres_from": "acres field",
-     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9",
-     "link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9/query?objectIds=13826&outFields=*&returnGeometry=false&f=html",
-     "name_field": "FET_NAME"
-    }
-   ],
-   "record_ids": [
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9#13826"
-   ],
-   "tests": {
-    "T1": {
-     "flag": "PASS",
-     "metres": 0
-    },
-    "T2": {
-     "flag": "PASS",
-     "outline_acres": 16.4,
-     "official_acres": 16.4,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
-    },
-    "T3": {
-     "flag": "MISMATCH",
-     "score": 0.667,
-     "pota_name": "Church Camp Road BLM Special Recreation Management Area",
-     "record_name": "Church Camp Facility Area"
-    },
-    "T4": {
-     "park_kind": null,
-     "record_kind": null,
-     "flag": "CAN'T TELL"
-    },
-    "T5": {
-     "flag": "PASS",
-     "pieces": 1
-    },
-    "T6": {
-     "flag": "PASS"
-    },
-    "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
-    },
-    "T8": {
-     "flag": "PASS"
-    },
-    "T9": {
-     "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
-    }
-   },
-   "problems": [],
-   "status": "graded",
-   "score": 3,
-   "why": "MISMATCH: The record name 'Church Camp Facility Area' does not match POTA's name 'Church Camp Road BLM Special Recreation Management Area' (score 0.67)."
-  },
-  {
-   "ref": "US-13339",
-   "name": "Baldy Mountain BLM Special Recreation Management Area",
-   "key_name": "Baldy Mountain BLM Special Recreation Management Area",
-   "type": "BLM Special Recreation Management Area",
-   "grade": "approximate",
-   "pin": [
-    33.8762,
-    -112.333
-   ],
-   "outline_from": [
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0"
-   ],
-   "acres_drawn": 13.5,
-   "records": [
-    {
-     "id": "rma13827",
-     "name": "Baldy Mountain Facility Area",
-     "type": "Bureau of Land Management",
-     "acres": 13.5,
-     "acres_from": "acres field",
-     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9",
-     "link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9/query?objectIds=13827&outFields=*&returnGeometry=false&f=html",
-     "name_field": "FET_NAME"
-    },
-    {
-     "id": "rst13827",
-     "name": "Baldy Mountain Facility Area",
-     "type": "Bureau of Land Management",
-     "acres": 13.5,
-     "acres_from": "acres field",
-     "layer": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
-     "link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0/query?objectIds=13827&outFields=*&returnGeometry=false&f=html",
-     "name_field": "FET_NAME"
-    }
-   ],
-   "record_ids": [
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9#13827",
-    "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0#13827"
-   ],
-   "tests": {
-    "T1": {
-     "flag": "PASS",
-     "metres": 0
-    },
-    "T2": {
-     "flag": "PASS",
-     "outline_acres": 13.5,
-     "official_acres": 13.5,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
-    },
-    "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Baldy Mountain BLM Special Recreation Management Area",
-     "record_name": "Baldy Mountain Facility Area"
-    },
-    "T4": {
-     "park_kind": null,
-     "record_kind": null,
-     "flag": "CAN'T TELL"
-    },
-    "T5": {
-     "flag": "PASS",
-     "pieces": 1
-    },
-    "T6": {
-     "flag": "PASS"
-    },
-    "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
-    },
-    "T8": {
-     "flag": "PASS"
-    },
-    "T9": {
-     "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
-    }
-   },
-   "problems": [],
-   "status": "graded",
-   "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 37 m outside the outline."
   },
   {
    "ref": "US-13593",
@@ -7981,8 +6655,8 @@
    "type": "National Recreation Trail",
    "grade": "official",
    "pin": [
-    33.9846,
-    -112.169
+    33.8808,
+    -112.18
    ],
    "outline_from": [
     "trails/US-13594.json"
@@ -8107,85 +6781,51 @@
     34.2688,
     -110.074
    ],
-   "outline_from": [
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0"
-   ],
-   "acres_drawn": 733.0,
-   "records": [
-    {
-     "id": "sgaza7",
-     "name": "Fool Hollow Lake RA",
-     "type": "Arizona State Parks & Trails (park, state GIS table)",
-     "acres": 732.3,
-     "acres_from": "GIS_Acres",
-     "layer": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
-     "link": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0/query?objectIds=7&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgaze9",
-     "name": "Fool Hollow Lake Recreation Area",
-     "type": "Arizona State Parks and Trails (park boundaries) (park, state GIS table)",
-     "acres": 723.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0/query?objectIds=9&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    }
-   ],
-   "record_ids": [
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0#7",
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0#9"
-   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "PASS",
-     "metres": 0
+     "flag": "NO OUTLINE"
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 733.0,
-     "official_acres": 732.3,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Fool Hollow Lake State Recreation Area",
-     "record_name": "Fool Hollow Lake Recreation Area"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": "recreation area",
-     "record_kind": "state park",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "PASS",
-     "pieces": 1
+     "flag": "CAN'T TELL",
+     "note": "source down"
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
-     "last_edit": "2021-09-03",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-03, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-09-03, over a year before the club read it (2026-11-05)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services6.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)",
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: Nothing could be tested."
   },
   {
    "ref": "US-4427",
@@ -8257,14 +6897,14 @@
      "flag": "SPILL",
      "parks": [
       {
-       "ref": "US-11979",
-       "name": "Allen Severson State Wildlife Area",
+       "ref": "US-3672",
+       "name": "Fool Hollow Lake State Recreation Area",
        "share": 1.0
       },
       {
-       "ref": "US-3672",
-       "name": "Fool Hollow Lake State Recreation Area",
-       "share": 0.98
+       "ref": "US-11979",
+       "name": "Allen Severson State Wildlife Area",
+       "share": 1.0
       },
       {
        "ref": "US-11122",
@@ -8364,7 +7004,7 @@
       {
        "ref": "US-1068",
        "name": "Slide Rock State Park",
-       "share": 0.34
+       "share": 0.42
       }
      ],
      "count": 1
@@ -8384,7 +7024,7 @@
    "problems": [],
    "status": "graded",
    "score": 5,
-   "why": "SPILL: The outline covers 34% of US-1068 Slide Rock State Park, with no 2-fer row (maybe the wrong record) (+2 more flags)."
+   "why": "SPILL: The outline covers 42% of US-1068 Slide Rock State Park, with no 2-fer row (maybe the wrong record) (+2 more flags)."
   },
   {
    "ref": "US-4429",
@@ -8459,7 +7099,7 @@
       {
        "ref": "US-1055",
        "name": "Catalina State Park",
-       "share": 0.99
+       "share": 0.89
       }
      ],
      "count": 1
@@ -8479,7 +7119,7 @@
    "problems": [],
    "status": "graded",
    "score": 5,
-   "why": "SPILL: The outline covers 99% of US-1055 Catalina State Park, with no 2-fer row (maybe the wrong record) (+2 more flags)."
+   "why": "SPILL: The outline covers 89% of US-1055 Catalina State Park, with no 2-fer row (maybe the wrong record) (+2 more flags)."
   },
   {
    "ref": "US-4430",
@@ -8637,7 +7277,15 @@
      }
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "US-11124",
+       "name": "Rockin' River Ranch State Park",
+       "share": 0.44
+      }
+     ],
+     "count": 1
     },
     "T7": {
      "flag": "N/A",
@@ -8653,8 +7301,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-112.391448619131 34.456487304627]; 30 piece(s) under 10 m wide; 182 pieces spread over 166 km (+2 more flags)."
+   "score": 6,
+   "why": "SPILL: The outline covers 44% of US-11124 Rockin' River Ranch State Park, with no 2-fer row (maybe the wrong record) (+3 more flags)."
   },
   {
    "ref": "US-4432",
@@ -8904,10 +7552,21 @@
     -112.383
    ],
    "outline_from": [
+    "https://gis.blm.gov/azarcgis/rest/services/recreation/BLM_AZ_RECS/MapServer/1",
     "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0"
    ],
-   "acres_drawn": 495843.9,
+   "acres_drawn": 496808.1,
    "records": [
+    {
+     "id": "sgazg1353",
+     "name": "Sonoran Desert National Monument ERMA",
+     "type": "Bureau of Land Management, Arizona (recreation sites, polygons) (park, state GIS table)",
+     "acres": 496384.2,
+     "acres_from": "acres field",
+     "layer": "https://gis.blm.gov/azarcgis/rest/services/recreation/BLM_AZ_RECS/MapServer/1",
+     "link": "https://gis.blm.gov/azarcgis/rest/services/recreation/BLM_AZ_RECS/MapServer/1/query?objectIds=1353&outFields=*&returnGeometry=false&f=html",
+     "name_field": "FET_NAME"
+    },
     {
      "id": "nca22329",
      "name": "Sonoran Desert",
@@ -8918,6 +7577,7 @@
     }
    ],
    "record_ids": [
+    "https://gis.blm.gov/azarcgis/rest/services/recreation/BLM_AZ_RECS/MapServer/1#1353",
     "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0#22329"
    ],
    "tests": {
@@ -8926,19 +7586,22 @@
      "metres": 0
     },
     "T2": {
-     "flag": "NO FIGURE",
-     "outline_acres": 495843.9
+     "flag": "PASS",
+     "outline_acres": 496808.1,
+     "official_acres": 496384.2,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "Sonoran Desert National Monument",
-     "record_name": "Sonoran Desert"
+     "record_name": "Sonoran Desert National Monument ERMA"
     },
     "T4": {
      "park_kind": "national park",
-     "record_kind": null,
-     "flag": "CAN'T TELL"
+     "record_kind": "national park",
+     "flag": "PASS"
     },
     "T5": {
      "flag": "PASS",
@@ -9566,10 +8229,9 @@
     -110.612
    ],
    "outline_from": [
-    "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0",
-    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_NLCS_National_Monuments_National_Conservation_Areas_Polygons/FeatureServer/0"
+    "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0"
    ],
-   "acres_drawn": 50481.4,
+   "acres_drawn": 46218.4,
    "records": [
     {
      "id": "nca22338",
@@ -9586,20 +8248,11 @@
      "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0",
      "link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0/query?objectIds=22340&outFields=*&returnGeometry=false&f=html",
      "name_field": "NCA_NAME"
-    },
-    {
-     "id": "sgazf464",
-     "name": "Las Cienegas",
-     "type": "BLM Natl NLCS National Monuments National Conservation Areas Polygons (preserve, state GIS table)",
-     "layer": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_NLCS_National_Monuments_National_Conservation_Areas_Polygons/FeatureServer/0",
-     "link": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_NLCS_National_Monuments_National_Conservation_Areas_Polygons/FeatureServer/0/query?objectIds=464&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NCA_NAME"
     }
    ],
    "record_ids": [
     "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0#22338",
-    "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0#22340",
-    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_NLCS_National_Monuments_National_Conservation_Areas_Polygons/FeatureServer/0#464"
+    "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0#22340"
    ],
    "tests": {
     "T1": {
@@ -9607,8 +8260,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "NO FIGURE",
-     "outline_acres": 50481.4
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -9623,7 +8276,7 @@
     },
     "T5": {
      "flag": "PASS",
-     "pieces": 5
+     "pieces": 2
     },
     "T6": {
      "flag": "PASS"
@@ -9636,15 +8289,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-08-06",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-7382",
@@ -9656,68 +8310,50 @@
     33.2708,
     -112.78
    ],
-   "outline_from": [
-    "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0"
-   ],
-   "acres_drawn": 2574.9,
-   "records": [
-    {
-     "id": "sgazb4",
-     "name": "Arlington Wildlife Area",
-     "type": "Arizona Game and Fish Department (AZGFD_GIS org) (wild, state GIS table)",
-     "layer": "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0",
-     "link": "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0/query?objectIds=4&outFields=*&returnGeometry=false&f=html",
-     "name_field": "MasterName"
-    }
-   ],
-   "record_ids": [
-    "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0#4"
-   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "PASS",
-     "metres": 0
+     "flag": "NO OUTLINE"
     },
     "T2": {
-     "flag": "NO FIGURE",
-     "outline_acres": 2574.9
+     "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Arlington State Wildlife Area",
-     "record_name": "Arlington Wildlife Area"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": "wma",
-     "record_kind": "wma",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "PASS",
-     "pieces": 1
+     "flag": "CAN'T TELL",
+     "note": "source down"
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
-     "last_edit": "2019-12-16",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2019-12-16, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2019-12-16, over a year before the club read it (2026-11-05)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: Nothing could be tested."
   },
   {
    "ref": "US-7383",
@@ -9729,68 +8365,50 @@
     34.3835,
     -111.097
    ],
-   "outline_from": [
-    "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Hatchery_Polys/FeatureServer/0"
-   ],
-   "acres_drawn": 62.4,
-   "records": [
-    {
-     "id": "sgazc6",
-     "name": "Tonto Creek Hatchery",
-     "type": "Arizona Game and Fish Department (AZGFD_GIS org) (land, state GIS table)",
-     "layer": "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Hatchery_Polys/FeatureServer/0",
-     "link": "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Hatchery_Polys/FeatureServer/0/query?objectIds=6&outFields=*&returnGeometry=false&f=html",
-     "name_field": "Prop_name"
-    }
-   ],
-   "record_ids": [
-    "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Hatchery_Polys/FeatureServer/0#6"
-   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "PASS",
-     "metres": 0
+     "flag": "NO OUTLINE"
     },
     "T2": {
-     "flag": "NO FIGURE",
-     "outline_acres": 62.4
+     "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Tonto State Fish Hatchery",
-     "record_name": "Tonto Creek Hatchery"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": null,
-     "record_kind": null,
-     "flag": "CAN'T TELL"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "PASS",
-     "pieces": 1
+     "flag": "CAN'T TELL",
+     "note": "source down"
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
-     "last_edit": "2023-06-27",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2023-06-27, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2023-06-27, over a year before the club read it (2026-11-05)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: Nothing could be tested."
   },
   {
    "ref": "US-7637",
@@ -9803,32 +8421,10 @@
     -111.66
    ],
    "outline_from": [
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
    ],
-   "acres_drawn": 6.2,
+   "acres_drawn": 5.1,
    "records": [
-    {
-     "id": "sgaza20",
-     "name": "Riordan Mansion SHP",
-     "type": "Arizona State Parks & Trails (park, state GIS table)",
-     "acres": 6.1,
-     "acres_from": "GIS_Acres",
-     "layer": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0",
-     "link": "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0/query?objectIds=20&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
-    {
-     "id": "sgaze17",
-     "name": "Riordan Mansion State Historic Park",
-     "type": "Arizona State Parks and Trails (park boundaries) (park, state GIS table)",
-     "acres": 6.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0",
-     "link": "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0/query?objectIds=17&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NAME"
-    },
     {
      "id": "padus#167522",
      "name": "Riordan Mansion State Historic Park",
@@ -9841,8 +8437,6 @@
     }
    ],
    "record_ids": [
-    "https://services6.arcgis.com/clPWQMwZfdWn4MQZ/ArcGIS/rest/services/AZ_State_Parks_Boundary/FeatureServer/0#20",
-    "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Arizona_State_Park_Boundaries/FeatureServer/0#17",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#167522"
    ],
    "tests": {
@@ -9851,11 +8445,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 6.2,
-     "official_acres": 6.1,
-     "times": 1.01,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -9883,16 +8474,17 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2021-09-03",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2021-09-03, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2021-09-03, over a year before the club read it (2026-11-05)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services6.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)",
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-7887",
@@ -10046,68 +8638,50 @@
     32.819,
     -114.471
    ],
-   "outline_from": [
-    "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0"
-   ],
-   "acres_drawn": 3874.9,
-   "records": [
-    {
-     "id": "sgazb20",
-     "name": "Mittry Lake Wildlife Area",
-     "type": "Arizona Game and Fish Department (AZGFD_GIS org) (wild, state GIS table)",
-     "layer": "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0",
-     "link": "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0/query?objectIds=20&outFields=*&returnGeometry=false&f=html",
-     "name_field": "MasterName"
-    }
-   ],
-   "record_ids": [
-    "https://services2.arcgis.com/os1CphwIyxBDDUGn/arcgis/rest/services/Wildlife_Areas/FeatureServer/0#20"
-   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "PASS",
-     "metres": 0
+     "flag": "NO OUTLINE"
     },
     "T2": {
-     "flag": "NO FIGURE",
-     "outline_acres": 3874.9
+     "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Mittry Lake Wildlife Area",
-     "record_name": "Mittry Lake Wildlife Area"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": "wma",
-     "record_kind": "wma",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "PASS",
-     "pieces": 1
+     "flag": "CAN'T TELL",
+     "note": "source down"
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
-     "last_edit": "2019-12-16",
-     "read": "2026-11-05",
-     "flag": "STALE CHECK",
-     "note": "the source was last edited 2019-12-16, over a year before the club read it (2026-11-05)"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "STALE CHECK: The source was last edited 2019-12-16, over a year before the club read it (2026-11-05)."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: Nothing could be tested."
   },
   {
    "ref": "US-8312",
@@ -10120,10 +8694,9 @@
     -109.479
    ],
    "outline_from": [
-    "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0",
-    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_NLCS_National_Monuments_National_Conservation_Areas_Polygons/FeatureServer/0"
+    "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0"
    ],
-   "acres_drawn": 23459.8,
+   "acres_drawn": 23458.8,
    "records": [
     {
      "id": "nca22328",
@@ -10132,19 +8705,10 @@
      "layer": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0",
      "link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0/query?objectIds=22328&outFields=*&returnGeometry=false&f=html",
      "name_field": "NCA_NAME"
-    },
-    {
-     "id": "sgazf459",
-     "name": "Gila Box Riparian",
-     "type": "BLM Natl NLCS National Monuments National Conservation Areas Polygons (preserve, state GIS table)",
-     "layer": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_NLCS_National_Monuments_National_Conservation_Areas_Polygons/FeatureServer/0",
-     "link": "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_NLCS_National_Monuments_National_Conservation_Areas_Polygons/FeatureServer/0/query?objectIds=459&outFields=*&returnGeometry=false&f=html",
-     "name_field": "NCA_NAME"
     }
    ],
    "record_ids": [
-    "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0#22328",
-    "https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/BLM_Natl_NLCS_National_Monuments_National_Conservation_Areas_Polygons/FeatureServer/0#459"
+    "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0#22328"
    ],
    "tests": {
     "T1": {
@@ -10152,8 +8716,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "NO FIGURE",
-     "outline_acres": 23459.8
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -10181,15 +8745,16 @@
      "flag": "PASS"
     },
     "T9": {
-     "last_edit": "2026-08-06",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "All tests pass."
+   "why": "SOURCE DOWN: All tests pass."
   },
   {
    "ref": "US-9757",
