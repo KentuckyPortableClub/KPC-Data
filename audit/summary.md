@@ -913,3 +913,79 @@ It decides nothing: it ranks. Score 0 = all pass; +3 OUTSIDE / WAY OFF / MISMATC
 | 9 | US-6583 | Asotin Creek State Wildlife Area | WAY OFF: The outline is 29.6 times bigger than the official 1,234 acres (36,558 ac drawn) (+2 more flags). |
 | 8 | US-10630 | Colockum Wildlife Area | CONFLICT: The park is a wma but the record is a state park (+3 more flags). |
 | 8 | US-12265 | Sunnyside Wildlife Area State Fish and Wildlife Area | CONFLICT: The park is a wma but the record is a state park (+3 more flags). |
+
+## US-WI
+
+- parks: 348 (329 with an outline graded, 17 with no outline, 2 with records this tool can't read)
+- pass every test: 202; have flags: 146; source down (retry): 6
+- flags: TINY HOLES 74, SELF-INTERSECTION 66, SLIVERS 39, NEAR 37, MISMATCH 14, SCATTERED 10, DUPLICATE 9, SPILL 7, OUTSIDE 5, WEAK 2, FAR 1, OFF 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 11 | US-4263 | Piers Gorge Unit of Menominee River State Recreation Area | MISMATCH: The record name 'Menominee River State Recreation Area' does not match POTA's name 'Piers Gorge Unit of Menominee River State Recreation Area' (score 0.33) (+6 more flags). |
+| 7 | US-4236 | Upper Mississippi River National Wildlife Refuge | SPILL: The outline covers 48% of US-11955 Genoa National Fish Hatchery, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 7 | US-4238 | Ice Age National Scenic Trail | SPILL: The outline covers 49% of US-8363 Gibraltar Rock State Natural Area, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 7 | US-4533 | Chequamegon-Nicolet National Forest | MISMATCH: The record name 'Chequamegon National Forest' does not match POTA's name 'Chequamegon-Nicolet National Forest' (score 0.50) (+4 more flags). |
+| 7 | US-7260 | Northern Highland American Legion State Forest | SPILL: The outline covers 64% of US-4318 New Wood State Wildlife Area, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 6 | US-4264 | Quiver Falls Unit of Menominee River State Recreation Area | MISMATCH: The record name 'Menominee River State Recreation Area' does not match POTA's name 'Quiver Falls Unit of Menominee River State Recreation Area' (score 0.33) (+3 more flags). |
+| 6 | US-4332 | Theresa Marsh State Wildlife Area | MISMATCH: The record name 'Theresa Wildlife Area' does not match POTA's name 'Theresa Marsh State Wildlife Area' (score 0.50) (+3 more flags). |
+| 6 | US-4343 | LaSage Unit of Wolf River Bottoms State Wildlife Area | MISMATCH: The record name 'Wolf River Bottoms Wildlife Area' does not match POTA's name 'LaSage Unit of Wolf River Bottoms State Wildlife Area' (score 0.67) (+1 more flag). |
+| 6 | US-5577 | Brule River State Forest | SPILL: The outline covers 94% of US-8211 Bear Beach State Natural Area, with no 2-fer row (maybe the wrong record) (+3 more flags). |
+| 5 | US-13535 | La Crosse Area Comprehensive State Fish and Wildlife Area | FAR: POTA's pin is 13.1 km outside the outline. |
+
+## US-WV
+
+- parks: 172 (157 with an outline graded, 7 with no outline, 8 with records this tool can't read)
+- pass every test: 141; have flags: 31; source down (retry): 118
+- flags: SELF-INTERSECTION 10, TINY HOLES 10, NEAR 10, SLIVERS 7, SCATTERED 3, SPILL 2, OUTSIDE 2
+
+| score | ref | park | why |
+|---|---|---|---|
+| 7 | US-0632 | Monongahela National Forest | SPILL: The outline covers 100% of US-12436 Big Draft Wilderness Area, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 4 | US-4526 | George Washington & Jefferson National Forest | SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-78.7192919286108 38.9208954173449]; 203 piece(s) under 10 m wide; 14 hole(s) under 100 m2; 304 pieces spread over 281 km (+3 more flags). |
+| 3 | US-0696 | New River Gorge National Park | SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-80.9237665219749 37.7561387567045]; 4 piece(s) under 10 m wide; 115 pieces spread over 55 km (+2 more flags). |
+| 3 | US-1820 | Pipestem Resort State Park | SPILL: The outline covers 32% of US-0697 Bluestone National Wild and Scenic River, with no 2-fer row (maybe the wrong record). |
+| 3 | US-7027 | Slatyfork Wildlife Management Area | SOURCE DOWN: OUTSIDE: POTA's pin is 5.9 km outside the outline. |
+| 3 | US-7043 | Tate Lohr Wildlife Management Area | SOURCE DOWN: OUTSIDE: POTA's pin is 2.4 km outside the outline. |
+| 2 | US-0608 | Ohio River Islands National Wildlife Refuge | SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-80.8205346618746 39.8202341016991]; 2 hole(s) under 100 m2 (+1 more flag). |
+| 2 | US-0631 | Cathedral State Park | SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-79.533532202745 39.3267711669188]; 1 hole(s) under 100 m2 (+1 more flag). |
+| 2 | US-1811 | Droop Mountain Battlefield State Park | NEAR: POTA's pin is 1 m outside the outline (+1 more flag). |
+| 2 | US-1818 | North Bend State Park | SELF-INTERSECTION: The shape has problems: Ring Self-intersection[-81.0690181152473 39.2169539814945]; 2 piece(s) under 10 m wide (+1 more flag). |
+
+## US-WY
+
+- parks: 294 (171 with an outline graded, 81 with no outline, 42 with records this tool can't read)
+- pass every test: 187; have flags: 107; source down (retry): 112
+- flags: NEAR 37, MISMATCH 32, SPILL 30, SELF-INTERSECTION 21, OUTSIDE 17, TINY HOLES 12, SLIVERS 9, DUPLICATE 8, WEAK 4, SCATTERED 4, OFF 3, FAR 1
+
+| score | ref | park | why |
+|---|---|---|---|
+| 10 | US-10897 | Greater Sand Dunes BLM Special Recreation Management Area | OUTSIDE: POTA's pin is 1.9 km outside the outline (+3 more flags). |
+| 9 | US-10930 | Devil's Playground BLM WSA Wilderness Area | MISMATCH: The record name 'Devil's Playground-Twin Buttes' does not match POTA's name 'Devil's Playground BLM WSA Wilderness Area' (score 0.67) (+4 more flags). |
+| 9 | US-10944 | Twin Buttes BLM WSA Wilderness Area | MISMATCH: The record name 'Devil's Playground-Twin Buttes' does not match POTA's name 'Twin Buttes BLM WSA Wilderness Area' (score 0.67) (+4 more flags). |
+| 8 | US-4534 | Bighorn National Forest | OUTSIDE: POTA's pin is 4.2 km outside the outline (+3 more flags). |
+| 8 | US-6188 | Point of Rocks Cemetery State Historic Site | MISMATCH: The record name 'Point of Rocks Stage Station' does not match POTA's name 'Point of Rocks Cemetery State Historic Site' (score 0.67) (+3 more flags). |
+| 8 | US-6204 | Little Colorado BLM Herd Management Area | FAR: POTA's pin is 11.8 km outside the outline (+1 more flag). |
+| 7 | US-0613 | National Elk National Wildlife Refuge | OUTSIDE: POTA's pin is 6.1 km outside the outline (+2 more flags). |
+| 7 | US-4403 | Medicine Bow - Routt National Forest | SPILL: The outline covers 100% of US-6125 Platte River Wilderness Area, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 7 | US-4536 | Shoshone National Forest | SPILL: The outline covers 100% of US-6217 Fitzpatrick Wilderness Area, with no 2-fer row (maybe the wrong record) (+4 more flags). |
+| 6 | US-10810 | Green Mountain BLM Herd Management Area | OUTSIDE: POTA's pin is 905 m outside the outline (+1 more flag). |
+
+## CA-AB
+
+- parks: 459 (398 with an outline graded, 61 with no outline, 0 with records this tool can't read)
+- pass every test: 325; have flags: 134
+- flags: NEAR 55, CONFLICT 24, DUPLICATE 21, INVALID 19, SPILL 14, TINY HOLES 12, TOO COARSE 6, MISMATCH 5, OUTSIDE 5, SLIVERS 4, FAR 3, SCATTERED 2, OFF 2, WEAK 2
+
+| score | ref | park | why |
+|---|---|---|---|
+| 11 | CA-0109 | Waterton Biosphere Reserve | FAR: POTA's pin is 29.0 km outside the outline (+2 more flags). |
+| 8 | CA-6112 | Kananaskis Country Provincial Park | FAR: POTA's pin is 12.4 km outside the outline (+1 more flag). |
+| 6 | CA-1164 | Beaver Lake Provincial Recreation Area | OUTSIDE: POTA's pin is 5.1 km outside the outline (+1 more flag). |
+| 6 | CA-1194 | Sylvan Lake Provincial Park | FAR: POTA's pin is 13.4 km outside the outline (+1 more flag). |
+| 5 | CA-0115 | Wood Buffalo National Park | SPILL: The outline covers 100% of CA-0663 Peace-Athabasca Delta Natural Area, with no 2-fer row (maybe the wrong record) (+2 more flags). |
+| 5 | CA-6125 | Porcupine Hills Public Land Use Zone Other Conservation Area | MISMATCH: The record name 'Porcupine Hills' does not match POTA's name 'Porcupine Hills Public Land Use Zone Other Conservation Area' (score 0.67) (+2 more flags). |
+| 5 | CA-6588 | Barrier Lake Provincial Recreation Area | CONFLICT: The record is the whole lake but the park is a recreation area on it (+2 more flags). |
+| 4 | CA-0005 | Banff National Park | SPILL: The outline covers 100% of CA-4784 Sulphur Mountain Cosmic Ray Station National Historic Site, with no 2-fer row (maybe the wrong record) (+1 more flag). |
+| 4 | CA-0011 | CFB Suffield National Wildlife Area | MISMATCH: The record name 'Canadian Forces Base Suffield National Wildlife Area' does not match POTA's name 'CFB Suffield National Wildlife Area' (score 0.50) (+1 more flag). |
+| 4 | CA-0040 | Jasper National Park | SPILL: The outline covers 100% of CA-6116 Athabasca River Canadian Heritage River, with no 2-fer row (maybe the wrong record) (+1 more flag). |

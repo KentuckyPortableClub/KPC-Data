@@ -1,6 +1,6 @@
 {
  "area": "CA-AB",
- "built": "2026-11-08",
+ "built": "2026-11-15",
  "tool": "KPC-map-audit",
  "rules": "2026-11-02c",
  "parks": [
@@ -33,6 +33,12 @@
      "layer": "Alberta Park"
     },
     {
+     "id": "Parks Canada:3",
+     "name": "Banff National Park of Canada",
+     "acres": 1692181,
+     "layer": "Parks Canada"
+    },
+    {
      "id": "21984",
      "name": "Banff National Park Of Canada",
      "acres": 1641024,
@@ -41,6 +47,7 @@
    ],
    "record_ids": [
     "Alberta Park:435",
+    "Parks Canada:3",
     "cpcad#21984"
    ],
    "tests": {
@@ -59,7 +66,7 @@
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "Banff National Park",
-     "record_name": "Banff National Park Of Canada"
+     "record_name": "Banff National Park of Canada"
     },
     "T4": {
      "park_kind": "national park",
@@ -314,11 +321,18 @@
      "name": "Elk Island",
      "acres": 47519,
      "layer": "Alberta Park"
+    },
+    {
+     "id": "Parks Canada:6",
+     "name": "Elk Island National Park of Canada",
+     "acres": 47303,
+     "layer": "Parks Canada"
     }
    ],
    "record_ids": [
     "cpcad#21987",
-    "Alberta Park:175"
+    "Alberta Park:175",
+    "Parks Canada:6"
    ],
    "tests": {
     "T1": {
@@ -336,7 +350,7 @@
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "Elk Island National Park",
-     "record_name": "Elk Island National Park Of Canada"
+     "record_name": "Elk Island National Park of Canada"
     },
     "T4": {
      "park_kind": "national park",
@@ -400,6 +414,12 @@
      "layer": "Alberta Park"
     },
     {
+     "id": "Parks Canada:16",
+     "name": "Jasper National Park of Canada",
+     "acres": 2753704,
+     "layer": "Parks Canada"
+    },
+    {
      "id": "22007",
      "name": "Jasper National Park Of Canada",
      "acres": 2688008,
@@ -408,6 +428,7 @@
    ],
    "record_ids": [
     "Alberta Park:436",
+    "Parks Canada:16",
     "cpcad#22007"
    ],
    "tests": {
@@ -426,7 +447,7 @@
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "Jasper National Park",
-     "record_name": "Jasper National Park Of Canada"
+     "record_name": "Jasper National Park of Canada"
     },
     "T4": {
      "park_kind": "national park",
@@ -757,11 +778,18 @@
      "name": "Waterton Lakes",
      "acres": 123216,
      "layer": "Alberta Park"
+    },
+    {
+     "id": "Parks Canada:41",
+     "name": "Waterton Lakes National Park of Canada",
+     "acres": 122321,
+     "layer": "Parks Canada"
     }
    ],
    "record_ids": [
     "cpcad#22053",
-    "Alberta Park:433"
+    "Alberta Park:433",
+    "Parks Canada:41"
    ],
    "tests": {
     "T1": {
@@ -779,7 +807,7 @@
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "Waterton Lakes National Park",
-     "record_name": "Waterton Lakes National Park Of Canada"
+     "record_name": "Waterton Lakes National Park of Canada"
     },
     "T4": {
      "park_kind": "national park",
@@ -849,9 +877,15 @@
      "layer": "canada-bounds/CA-0115.json"
     },
     {
+     "id": "Parks Canada:42",
+     "name": "Wood Buffalo National Park of Canada",
+     "type": "National Park",
+     "acres": 11036220,
+     "layer": "Parks Canada"
+    },
+    {
      "id": "Alberta Park:491",
      "name": "Wood Buffalo",
-     "type": "National Park",
      "acres": 8938414,
      "layer": "Alberta Park"
     },
@@ -869,6 +903,7 @@
     }
    ],
    "record_ids": [
+    "Parks Canada:42",
     "Alberta Park:491",
     "cpcad#22054",
     "cpcad#22055"
@@ -879,17 +914,17 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
+     "flag": "OFF",
      "outline_acres": 11258352.4,
-     "official_acres": 11064947.0,
-     "times": 1.02,
+     "official_acres": 19974634.0,
+     "times": 1.77,
      "official_from": "the key's record acres (CPCAD / provincial lists)"
     },
     "T3": {
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "Wood Buffalo National Park",
-     "record_name": "Wood Buffalo National Park Of Canada"
+     "record_name": "Wood Buffalo National Park of Canada"
     },
     "T4": {
      "park_kind": "national park",
@@ -929,8 +964,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 4,
-   "why": "SPILL: The outline covers 100% of CA-0663 Peace-Athabasca Delta Natural Area, with no 2-fer row (maybe the wrong record) (+1 more flag)."
+   "score": 5,
+   "why": "SPILL: The outline covers 100% of CA-0663 Peace-Athabasca Delta Natural Area, with no 2-fer row (maybe the wrong record) (+2 more flags)."
   },
   {
    "ref": "CA-0118",
