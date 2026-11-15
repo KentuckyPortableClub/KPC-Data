@@ -9977,7 +9977,20 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_32.jpg)
 
-## 768. US-0050 Mammoth Cave National Park — score 0.75
+## 768. US-3836 Veterans Memorial Wildlife Management Area — score 0.76
+
+**Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
+
+Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate. About 60 m outside the boundary. A bare patch of about 7182 m² (68 x 215 m) touches Hayden Ln (S1400, local road) for about 152 m; 69% of it is grey like gravel or pavement. NAIP photo 2022.
+
+- where: 38.348474, -84.567675 (outside, about 63 m)
+- road: Hayden Ln (S1400)
+- photo: NAIP 2022
+- sources: [NAIP photo](https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPImagery/ImageServer/exportImage?bbox=712420.00%2C4246920.00%2C713080.00%2C4247580.00&bboxSR=32616&imageSR=32616&size=1100%2C1100&format=tiff&pixelType=U8&noData=0&renderingRule=%7B%22rasterFunction%22%3A+%22None%22%7D&interpolation=RSP_BilinearInterpolation&f=image) · [TIGER roads](https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/8/query?where=1%3D1&geometry=-84.570904%2C38.299682%2C-84.524217%2C38.352631&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=MTFCC%2CNAME%2CBASENAME%2COBJECTID&returnGeometry=true&outSR=4326&resultOffset=0&resultRecordCount=2000&f=json) · outline: /home/runner/work/KPC-Data/KPC-Data/prep/one/US-3836.geojson · read 2026-11-15
+
+![chip](chips/US-3836_01.jpg)
+
+## 769. US-0050 Mammoth Cave National Park — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -9990,7 +10003,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_45.jpg)
 
-## 769. US-0050 Mammoth Cave National Park — score 0.75
+## 770. US-0050 Mammoth Cave National Park — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10003,7 +10016,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_46.jpg)
 
-## 770. US-0050 Mammoth Cave National Park — score 0.75
+## 771. US-0050 Mammoth Cave National Park — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -10016,7 +10029,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0050_47.jpg)
 
-## 771. US-0050 Mammoth Cave National Park — score 0.75
+## 772. US-0050 Mammoth Cave National Park — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10029,7 +10042,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_48.jpg)
 
-## 772. US-0050 Mammoth Cave National Park — score 0.75
+## 773. US-0050 Mammoth Cave National Park — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10042,7 +10055,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_49.jpg)
 
-## 773. US-0295 Clarks River National Wildlife Refuge — score 0.75
+## 774. US-0295 Clarks River National Wildlife Refuge — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -10055,7 +10068,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0295_07.jpg)
 
-## 774. US-0686 Big South Fork National Recreation Area — score 0.75
+## 775. US-0686 Big South Fork National Recreation Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -10068,7 +10081,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0686_300.jpg)
 
-## 775. US-0686 Big South Fork National Recreation Area — score 0.75
+## 776. US-0686 Big South Fork National Recreation Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10081,7 +10094,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_301.jpg)
 
-## 776. US-0686 Big South Fork National Recreation Area — score 0.75
+## 777. US-0686 Big South Fork National Recreation Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10094,7 +10107,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_302.jpg)
 
-## 777. US-0686 Big South Fork National Recreation Area — score 0.75
+## 778. US-0686 Big South Fork National Recreation Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10107,7 +10120,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_303.jpg)
 
-## 778. US-0686 Big South Fork National Recreation Area — score 0.75
+## 779. US-0686 Big South Fork National Recreation Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10120,7 +10133,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_304.jpg)
 
-## 779. US-0686 Big South Fork National Recreation Area — score 0.75
+## 780. US-0686 Big South Fork National Recreation Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10133,7 +10146,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_305.jpg)
 
-## 780. US-0686 Big South Fork National Recreation Area — score 0.75
+## 781. US-0686 Big South Fork National Recreation Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10146,7 +10159,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_306.jpg)
 
-## 781. US-0686 Big South Fork National Recreation Area — score 0.75
+## 782. US-0686 Big South Fork National Recreation Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10159,7 +10172,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_307.jpg)
 
-## 782. US-0686 Big South Fork National Recreation Area — score 0.75
+## 783. US-0686 Big South Fork National Recreation Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10172,7 +10185,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_308.jpg)
 
-## 783. US-0686 Big South Fork National Recreation Area — score 0.75
+## 784. US-0686 Big South Fork National Recreation Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10185,7 +10198,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_309.jpg)
 
-## 784. US-0686 Big South Fork National Recreation Area — score 0.75
+## 785. US-0686 Big South Fork National Recreation Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10198,7 +10211,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_310.jpg)
 
-## 785. US-0686 Big South Fork National Recreation Area — score 0.75
+## 786. US-0686 Big South Fork National Recreation Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10211,7 +10224,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_311.jpg)
 
-## 786. US-0686 Big South Fork National Recreation Area — score 0.75
+## 787. US-0686 Big South Fork National Recreation Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10224,7 +10237,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_312.jpg)
 
-## 787. US-0686 Big South Fork National Recreation Area — score 0.75
+## 788. US-0686 Big South Fork National Recreation Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10237,7 +10250,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_313.jpg)
 
-## 788. US-0686 Big South Fork National Recreation Area — score 0.75
+## 789. US-0686 Big South Fork National Recreation Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10250,7 +10263,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_314.jpg)
 
-## 789. US-0686 Big South Fork National Recreation Area — score 0.75
+## 790. US-0686 Big South Fork National Recreation Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10263,7 +10276,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_315.jpg)
 
-## 790. US-0686 Big South Fork National Recreation Area — score 0.75
+## 791. US-0686 Big South Fork National Recreation Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10276,7 +10289,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_316.jpg)
 
-## 791. US-0686 Big South Fork National Recreation Area — score 0.75
+## 792. US-0686 Big South Fork National Recreation Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10289,7 +10302,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_317.jpg)
 
-## 792. US-0686 Big South Fork National Recreation Area — score 0.75
+## 793. US-0686 Big South Fork National Recreation Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10302,7 +10315,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_318.jpg)
 
-## 793. US-0686 Big South Fork National Recreation Area — score 0.75
+## 794. US-0686 Big South Fork National Recreation Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10315,7 +10328,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_319.jpg)
 
-## 794. US-0686 Big South Fork National Recreation Area — score 0.75
+## 795. US-0686 Big South Fork National Recreation Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10328,7 +10341,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_320.jpg)
 
-## 795. US-0686 Big South Fork National Recreation Area — score 0.75
+## 796. US-0686 Big South Fork National Recreation Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10341,7 +10354,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_321.jpg)
 
-## 796. US-0686 Big South Fork National Recreation Area — score 0.75
+## 797. US-0686 Big South Fork National Recreation Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10354,7 +10367,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_322.jpg)
 
-## 797. US-0686 Big South Fork National Recreation Area — score 0.75
+## 798. US-0686 Big South Fork National Recreation Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10367,7 +10380,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_323.jpg)
 
-## 798. US-0686 Big South Fork National Recreation Area — score 0.75
+## 799. US-0686 Big South Fork National Recreation Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10380,7 +10393,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_324.jpg)
 
-## 799. US-0686 Big South Fork National Recreation Area — score 0.75
+## 800. US-0686 Big South Fork National Recreation Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10393,7 +10406,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_325.jpg)
 
-## 800. US-0703 Fort Donelson National Battlefield — score 0.75
+## 801. US-0703 Fort Donelson National Battlefield — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10406,7 +10419,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0703_49.jpg)
 
-## 801. US-1253 Dawkins Line Rail Trail State Park — score 0.75
+## 802. US-1253 Dawkins Line Rail Trail State Park — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -10419,7 +10432,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-1253_10.jpg)
 
-## 802. US-1254 E.P. 'Tom' Sawyer State Park — score 0.75
+## 803. US-1254 E.P. 'Tom' Sawyer State Park — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10432,7 +10445,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1254_04.jpg)
 
-## 803. US-1257 General Burnside State Park — score 0.75
+## 804. US-1257 General Burnside State Park — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10445,7 +10458,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1257_03.jpg)
 
-## 804. US-1257 General Burnside State Park — score 0.75
+## 805. US-1257 General Burnside State Park — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10458,7 +10471,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1257_04.jpg)
 
-## 805. US-1257 General Burnside State Park — score 0.75
+## 806. US-1257 General Burnside State Park — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -10471,7 +10484,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-1257_05.jpg)
 
-## 806. US-1258 Grayson Lake State Park — score 0.75
+## 807. US-1258 Grayson Lake State Park — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10484,7 +10497,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1258_02.jpg)
 
-## 807. US-1258 Grayson Lake State Park — score 0.75
+## 808. US-1258 Grayson Lake State Park — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10497,7 +10510,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1258_03.jpg)
 
-## 808. US-1262 Kingdom Come State Park — score 0.75
+## 809. US-1262 Kingdom Come State Park — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10510,7 +10523,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1262_02.jpg)
 
-## 809. US-1264 Levi Jackson Wilderness Road State Park — score 0.75
+## 810. US-1264 Levi Jackson Wilderness Road State Park — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10523,7 +10536,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1264_04.jpg)
 
-## 810. US-1271 Taylorsville Lake State Park — score 0.75
+## 811. US-1271 Taylorsville Lake State Park — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10536,7 +10549,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1271_04.jpg)
 
-## 811. US-1271 Taylorsville Lake State Park — score 0.75
+## 812. US-1271 Taylorsville Lake State Park — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10549,7 +10562,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1271_05.jpg)
 
-## 812. US-1272 Yatesville Lake State Park — score 0.75
+## 813. US-1272 Yatesville Lake State Park — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10562,7 +10575,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1272_06.jpg)
 
-## 813. US-1273 Barren River Lake State Park — score 0.75
+## 814. US-1273 Barren River Lake State Park — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10575,7 +10588,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1273_02.jpg)
 
-## 814. US-1278 Dale Hollow State Park — score 0.75
+## 815. US-1278 Dale Hollow State Park — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10588,7 +10601,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1278_11.jpg)
 
-## 815. US-1278 Dale Hollow State Park — score 0.75
+## 816. US-1278 Dale Hollow State Park — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10601,7 +10614,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1278_12.jpg)
 
-## 816. US-1281 Jenny Wiley State Park — score 0.75
+## 817. US-1281 Jenny Wiley State Park — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10614,7 +10627,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1281_10.jpg)
 
-## 817. US-1281 Jenny Wiley State Park — score 0.75
+## 818. US-1281 Jenny Wiley State Park — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10627,7 +10640,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1281_11.jpg)
 
-## 818. US-1281 Jenny Wiley State Park — score 0.75
+## 819. US-1281 Jenny Wiley State Park — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10640,7 +10653,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1281_12.jpg)
 
-## 819. US-1282 Kenlake State Park — score 0.75
+## 820. US-1282 Kenlake State Park — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10653,7 +10666,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1282_13.jpg)
 
-## 820. US-1282 Kenlake State Park — score 0.75
+## 821. US-1282 Kenlake State Park — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10666,7 +10679,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1282_14.jpg)
 
-## 821. US-1282 Kenlake State Park — score 0.75
+## 822. US-1282 Kenlake State Park — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10679,7 +10692,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1282_15.jpg)
 
-## 822. US-1283 Kentucky Dam Village State Park — score 0.75
+## 823. US-1283 Kentucky Dam Village State Park — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10692,7 +10705,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_21.jpg)
 
-## 823. US-1283 Kentucky Dam Village State Park — score 0.75
+## 824. US-1283 Kentucky Dam Village State Park — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10705,7 +10718,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_22.jpg)
 
-## 824. US-1283 Kentucky Dam Village State Park — score 0.75
+## 825. US-1283 Kentucky Dam Village State Park — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -10718,7 +10731,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-1283_23.jpg)
 
-## 825. US-1288 Pine Mountain State Park — score 0.75
+## 826. US-1288 Pine Mountain State Park — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10731,7 +10744,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1288_05.jpg)
 
-## 826. US-1288 Pine Mountain State Park — score 0.75
+## 827. US-1288 Pine Mountain State Park — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10744,7 +10757,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1288_06.jpg)
 
-## 827. US-1288 Pine Mountain State Park — score 0.75
+## 828. US-1288 Pine Mountain State Park — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10757,7 +10770,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1288_07.jpg)
 
-## 828. US-1289 Rough River Dam State Park — score 0.75
+## 829. US-1289 Rough River Dam State Park — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -10770,7 +10783,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-1289_07.jpg)
 
-## 829. US-3779 Big Bone Lick State Historic Site — score 0.75
+## 830. US-3779 Big Bone Lick State Historic Site — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10783,7 +10796,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3779_06.jpg)
 
-## 830. US-3781 Breaks Interstate State Park — score 0.75
+## 831. US-3781 Breaks Interstate State Park — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10796,7 +10809,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_30.jpg)
 
-## 831. US-3781 Breaks Interstate State Park — score 0.75
+## 832. US-3781 Breaks Interstate State Park — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10809,7 +10822,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_31.jpg)
 
-## 832. US-3792 Land Between the Lakes National Recreation Area — score 0.75
+## 833. US-3792 Land Between the Lakes National Recreation Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10822,7 +10835,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_29.jpg)
 
-## 833. US-3792 Land Between the Lakes National Recreation Area — score 0.75
+## 834. US-3792 Land Between the Lakes National Recreation Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10835,7 +10848,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_30.jpg)
 
-## 834. US-3792 Land Between the Lakes National Recreation Area — score 0.75
+## 835. US-3792 Land Between the Lakes National Recreation Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10848,7 +10861,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_31.jpg)
 
-## 835. US-3792 Land Between the Lakes National Recreation Area — score 0.75
+## 836. US-3792 Land Between the Lakes National Recreation Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10861,7 +10874,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_32.jpg)
 
-## 836. US-3792 Land Between the Lakes National Recreation Area — score 0.75
+## 837. US-3792 Land Between the Lakes National Recreation Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10874,7 +10887,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_33.jpg)
 
-## 837. US-3792 Land Between the Lakes National Recreation Area — score 0.75
+## 838. US-3792 Land Between the Lakes National Recreation Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10887,7 +10900,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_34.jpg)
 
-## 838. US-3794 Beaver Creek Wildlife Management Area — score 0.75
+## 839. US-3794 Beaver Creek Wildlife Management Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -10900,7 +10913,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3794_06.jpg)
 
-## 839. US-3796 Big Rivers Wildlife Management Area — score 0.75
+## 840. US-3796 Big Rivers Wildlife Management Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -10913,7 +10926,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3796_03.jpg)
 
-## 840. US-3800 Cedar Creek Lake Wildlife Management Area — score 0.75
+## 841. US-3800 Cedar Creek Lake Wildlife Management Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -10926,7 +10939,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3800_07.jpg)
 
-## 841. US-3802 Clyde E Buckley Sanctuary — score 0.75
+## 842. US-3802 Clyde E Buckley Sanctuary — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -10939,7 +10952,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3802_03.jpg)
 
-## 842. US-3804 Cranks Creek Wildlife Management Area — score 0.75
+## 843. US-3804 Cranks Creek Wildlife Management Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -10952,7 +10965,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3804_01.jpg)
 
-## 843. US-3805 Curtis Gates Lloyd Wildlife Management Area — score 0.75
+## 844. US-3805 Curtis Gates Lloyd Wildlife Management Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -10965,7 +10978,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3805_14.jpg)
 
-## 844. US-3812 Fleming Wildlife Management Area — score 0.75
+## 845. US-3812 Fleming Wildlife Management Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -10978,7 +10991,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3812_03.jpg)
 
-## 845. US-3814 Hensley-Pine Mountain Wildlife Management Area — score 0.75
+## 846. US-3814 Hensley-Pine Mountain Wildlife Management Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -10991,7 +11004,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3814_01.jpg)
 
-## 846. US-3816 John A. Kleber Wildlife Management Area — score 0.75
+## 847. US-3816 John A. Kleber Wildlife Management Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -11004,7 +11017,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3816_04.jpg)
 
-## 847. US-3825 Miller Welch Wildlife Management Area — score 0.75
+## 848. US-3825 Miller Welch Wildlife Management Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -11017,7 +11030,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3825_02.jpg)
 
-## 848. US-3828 Peabody Wildlife Management Area — score 0.75
+## 849. US-3828 Peabody Wildlife Management Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11030,7 +11043,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_33.jpg)
 
-## 849. US-3828 Peabody Wildlife Management Area — score 0.75
+## 850. US-3828 Peabody Wildlife Management Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -11043,7 +11056,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_34.jpg)
 
-## 850. US-3828 Peabody Wildlife Management Area — score 0.75
+## 851. US-3828 Peabody Wildlife Management Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -11056,7 +11069,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_35.jpg)
 
-## 851. US-3828 Peabody Wildlife Management Area — score 0.75
+## 852. US-3828 Peabody Wildlife Management Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11069,7 +11082,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_36.jpg)
 
-## 852. US-3830 Sloughs Wildlife Management Area — score 0.75
+## 853. US-3830 Sloughs Wildlife Management Area — score 0.75
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11082,7 +11095,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3830_07.jpg)
 
-## 853. US-0019 Cumberland Gap National Historical Park — score 0.74
+## 854. US-0019 Cumberland Gap National Historical Park — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11095,7 +11108,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_25.jpg)
 
-## 854. US-0050 Mammoth Cave National Park — score 0.74
+## 855. US-0050 Mammoth Cave National Park — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11108,7 +11121,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_50.jpg)
 
-## 855. US-0050 Mammoth Cave National Park — score 0.74
+## 856. US-0050 Mammoth Cave National Park — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11121,7 +11134,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_51.jpg)
 
-## 856. US-0050 Mammoth Cave National Park — score 0.74
+## 857. US-0050 Mammoth Cave National Park — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11134,7 +11147,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_52.jpg)
 
-## 857. US-0686 Big South Fork National Recreation Area — score 0.74
+## 858. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -11147,7 +11160,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0686_326.jpg)
 
-## 858. US-0686 Big South Fork National Recreation Area — score 0.74
+## 859. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -11160,7 +11173,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0686_327.jpg)
 
-## 859. US-0686 Big South Fork National Recreation Area — score 0.74
+## 860. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11173,7 +11186,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_328.jpg)
 
-## 860. US-0686 Big South Fork National Recreation Area — score 0.74
+## 861. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11186,7 +11199,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_329.jpg)
 
-## 861. US-0686 Big South Fork National Recreation Area — score 0.74
+## 862. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11199,7 +11212,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_330.jpg)
 
-## 862. US-0686 Big South Fork National Recreation Area — score 0.74
+## 863. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11212,7 +11225,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_331.jpg)
 
-## 863. US-0686 Big South Fork National Recreation Area — score 0.74
+## 864. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11225,7 +11238,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_332.jpg)
 
-## 864. US-0686 Big South Fork National Recreation Area — score 0.74
+## 865. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11238,7 +11251,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_333.jpg)
 
-## 865. US-0686 Big South Fork National Recreation Area — score 0.74
+## 866. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11251,7 +11264,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_334.jpg)
 
-## 866. US-0686 Big South Fork National Recreation Area — score 0.74
+## 867. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11264,7 +11277,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_335.jpg)
 
-## 867. US-0686 Big South Fork National Recreation Area — score 0.74
+## 868. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11277,7 +11290,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_336.jpg)
 
-## 868. US-0686 Big South Fork National Recreation Area — score 0.74
+## 869. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11290,7 +11303,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_337.jpg)
 
-## 869. US-0686 Big South Fork National Recreation Area — score 0.74
+## 870. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11303,7 +11316,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_338.jpg)
 
-## 870. US-0686 Big South Fork National Recreation Area — score 0.74
+## 871. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11316,7 +11329,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_339.jpg)
 
-## 871. US-0686 Big South Fork National Recreation Area — score 0.74
+## 872. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11329,7 +11342,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_340.jpg)
 
-## 872. US-0686 Big South Fork National Recreation Area — score 0.74
+## 873. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11342,7 +11355,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_341.jpg)
 
-## 873. US-0686 Big South Fork National Recreation Area — score 0.74
+## 874. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11355,7 +11368,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_342.jpg)
 
-## 874. US-0686 Big South Fork National Recreation Area — score 0.74
+## 875. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11368,7 +11381,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_343.jpg)
 
-## 875. US-0686 Big South Fork National Recreation Area — score 0.74
+## 876. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11381,7 +11394,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_344.jpg)
 
-## 876. US-0686 Big South Fork National Recreation Area — score 0.74
+## 877. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11394,7 +11407,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_345.jpg)
 
-## 877. US-0686 Big South Fork National Recreation Area — score 0.74
+## 878. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11407,7 +11420,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_346.jpg)
 
-## 878. US-0686 Big South Fork National Recreation Area — score 0.74
+## 879. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -11420,7 +11433,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0686_347.jpg)
 
-## 879. US-0686 Big South Fork National Recreation Area — score 0.74
+## 880. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11433,7 +11446,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_348.jpg)
 
-## 880. US-0686 Big South Fork National Recreation Area — score 0.74
+## 881. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11446,7 +11459,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_349.jpg)
 
-## 881. US-0686 Big South Fork National Recreation Area — score 0.74
+## 882. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11459,7 +11472,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_350.jpg)
 
-## 882. US-0686 Big South Fork National Recreation Area — score 0.74
+## 883. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11472,7 +11485,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_351.jpg)
 
-## 883. US-0686 Big South Fork National Recreation Area — score 0.74
+## 884. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11485,7 +11498,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_352.jpg)
 
-## 884. US-0686 Big South Fork National Recreation Area — score 0.74
+## 885. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11498,7 +11511,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_353.jpg)
 
-## 885. US-0686 Big South Fork National Recreation Area — score 0.74
+## 886. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11511,7 +11524,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_354.jpg)
 
-## 886. US-0686 Big South Fork National Recreation Area — score 0.74
+## 887. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11524,7 +11537,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_355.jpg)
 
-## 887. US-0686 Big South Fork National Recreation Area — score 0.74
+## 888. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11537,7 +11550,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_356.jpg)
 
-## 888. US-0686 Big South Fork National Recreation Area — score 0.74
+## 889. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11550,7 +11563,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_357.jpg)
 
-## 889. US-0686 Big South Fork National Recreation Area — score 0.74
+## 890. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11563,7 +11576,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_358.jpg)
 
-## 890. US-0686 Big South Fork National Recreation Area — score 0.74
+## 891. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11576,7 +11589,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_359.jpg)
 
-## 891. US-0686 Big South Fork National Recreation Area — score 0.74
+## 892. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11589,7 +11602,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_360.jpg)
 
-## 892. US-0686 Big South Fork National Recreation Area — score 0.74
+## 893. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11602,7 +11615,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_361.jpg)
 
-## 893. US-0686 Big South Fork National Recreation Area — score 0.74
+## 894. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11615,7 +11628,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_362.jpg)
 
-## 894. US-0686 Big South Fork National Recreation Area — score 0.74
+## 895. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11628,7 +11641,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_363.jpg)
 
-## 895. US-0686 Big South Fork National Recreation Area — score 0.74
+## 896. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11641,7 +11654,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_364.jpg)
 
-## 896. US-0686 Big South Fork National Recreation Area — score 0.74
+## 897. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11654,7 +11667,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_365.jpg)
 
-## 897. US-0686 Big South Fork National Recreation Area — score 0.74
+## 898. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11667,7 +11680,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_366.jpg)
 
-## 898. US-0686 Big South Fork National Recreation Area — score 0.74
+## 899. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11680,7 +11693,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_367.jpg)
 
-## 899. US-0686 Big South Fork National Recreation Area — score 0.74
+## 900. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11693,7 +11706,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_368.jpg)
 
-## 900. US-0686 Big South Fork National Recreation Area — score 0.74
+## 901. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11706,7 +11719,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_369.jpg)
 
-## 901. US-0686 Big South Fork National Recreation Area — score 0.74
+## 902. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11719,7 +11732,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_370.jpg)
 
-## 902. US-0686 Big South Fork National Recreation Area — score 0.74
+## 903. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11732,7 +11745,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_371.jpg)
 
-## 903. US-0686 Big South Fork National Recreation Area — score 0.74
+## 904. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11745,7 +11758,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_372.jpg)
 
-## 904. US-0686 Big South Fork National Recreation Area — score 0.74
+## 905. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11758,7 +11771,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_373.jpg)
 
-## 905. US-0686 Big South Fork National Recreation Area — score 0.74
+## 906. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11771,7 +11784,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_374.jpg)
 
-## 906. US-0686 Big South Fork National Recreation Area — score 0.74
+## 907. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11784,7 +11797,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_375.jpg)
 
-## 907. US-0686 Big South Fork National Recreation Area — score 0.74
+## 908. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11797,7 +11810,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_376.jpg)
 
-## 908. US-0686 Big South Fork National Recreation Area — score 0.74
+## 909. US-0686 Big South Fork National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -11810,7 +11823,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0686_377.jpg)
 
-## 909. US-0703 Fort Donelson National Battlefield — score 0.74
+## 910. US-0703 Fort Donelson National Battlefield — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11823,7 +11836,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0703_50.jpg)
 
-## 910. US-0703 Fort Donelson National Battlefield — score 0.74
+## 911. US-0703 Fort Donelson National Battlefield — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11836,7 +11849,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0703_51.jpg)
 
-## 911. US-0703 Fort Donelson National Battlefield — score 0.74
+## 912. US-0703 Fort Donelson National Battlefield — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11849,7 +11862,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0703_52.jpg)
 
-## 912. US-0703 Fort Donelson National Battlefield — score 0.74
+## 913. US-0703 Fort Donelson National Battlefield — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11862,7 +11875,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0703_53.jpg)
 
-## 913. US-1253 Dawkins Line Rail Trail State Park — score 0.74
+## 914. US-1253 Dawkins Line Rail Trail State Park — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11875,7 +11888,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1253_11.jpg)
 
-## 914. US-1257 General Burnside State Park — score 0.74
+## 915. US-1257 General Burnside State Park — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11888,7 +11901,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1257_06.jpg)
 
-## 915. US-1258 Grayson Lake State Park — score 0.74
+## 916. US-1258 Grayson Lake State Park — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11901,7 +11914,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1258_04.jpg)
 
-## 916. US-1264 Levi Jackson Wilderness Road State Park — score 0.74
+## 917. US-1264 Levi Jackson Wilderness Road State Park — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11914,7 +11927,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1264_05.jpg)
 
-## 917. US-1271 Taylorsville Lake State Park — score 0.74
+## 918. US-1271 Taylorsville Lake State Park — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11927,7 +11940,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1271_06.jpg)
 
-## 918. US-1278 Dale Hollow State Park — score 0.74
+## 919. US-1278 Dale Hollow State Park — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11940,7 +11953,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1278_13.jpg)
 
-## 919. US-1279 General Butler State Park — score 0.74
+## 920. US-1279 General Butler State Park — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11953,7 +11966,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1279_05.jpg)
 
-## 920. US-1281 Jenny Wiley State Park — score 0.74
+## 921. US-1281 Jenny Wiley State Park — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11966,7 +11979,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1281_13.jpg)
 
-## 921. US-1282 Kenlake State Park — score 0.74
+## 922. US-1282 Kenlake State Park — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -11979,7 +11992,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-1282_16.jpg)
 
-## 922. US-1283 Kentucky Dam Village State Park — score 0.74
+## 923. US-1283 Kentucky Dam Village State Park — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -11992,7 +12005,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_24.jpg)
 
-## 923. US-1283 Kentucky Dam Village State Park — score 0.74
+## 924. US-1283 Kentucky Dam Village State Park — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12005,7 +12018,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_25.jpg)
 
-## 924. US-1283 Kentucky Dam Village State Park — score 0.74
+## 925. US-1283 Kentucky Dam Village State Park — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12018,7 +12031,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_26.jpg)
 
-## 925. US-1283 Kentucky Dam Village State Park — score 0.74
+## 926. US-1283 Kentucky Dam Village State Park — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12031,7 +12044,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_27.jpg)
 
-## 926. US-1283 Kentucky Dam Village State Park — score 0.74
+## 927. US-1283 Kentucky Dam Village State Park — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -12044,7 +12057,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-1283_28.jpg)
 
-## 927. US-1284 Lake Barkley State Park — score 0.74
+## 928. US-1284 Lake Barkley State Park — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12057,7 +12070,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1284_04.jpg)
 
-## 928. US-1288 Pine Mountain State Park — score 0.74
+## 929. US-1288 Pine Mountain State Park — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12070,7 +12083,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1288_08.jpg)
 
-## 929. US-1288 Pine Mountain State Park — score 0.74
+## 930. US-1288 Pine Mountain State Park — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12083,7 +12096,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1288_09.jpg)
 
-## 930. US-3781 Breaks Interstate State Park — score 0.74
+## 931. US-3781 Breaks Interstate State Park — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12096,7 +12109,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_32.jpg)
 
-## 931. US-3781 Breaks Interstate State Park — score 0.74
+## 932. US-3781 Breaks Interstate State Park — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12109,7 +12122,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_33.jpg)
 
-## 932. US-3781 Breaks Interstate State Park — score 0.74
+## 933. US-3781 Breaks Interstate State Park — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12122,7 +12135,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_34.jpg)
 
-## 933. US-3781 Breaks Interstate State Park — score 0.74
+## 934. US-3781 Breaks Interstate State Park — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12135,7 +12148,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_35.jpg)
 
-## 934. US-3781 Breaks Interstate State Park — score 0.74
+## 935. US-3781 Breaks Interstate State Park — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -12148,7 +12161,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3781_36.jpg)
 
-## 935. US-3781 Breaks Interstate State Park — score 0.74
+## 936. US-3781 Breaks Interstate State Park — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12161,7 +12174,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_37.jpg)
 
-## 936. US-3781 Breaks Interstate State Park — score 0.74
+## 937. US-3781 Breaks Interstate State Park — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12174,7 +12187,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_38.jpg)
 
-## 937. US-3781 Breaks Interstate State Park — score 0.74
+## 938. US-3781 Breaks Interstate State Park — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -12187,7 +12200,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3781_39.jpg)
 
-## 938. US-3792 Land Between the Lakes National Recreation Area — score 0.74
+## 939. US-3792 Land Between the Lakes National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12200,7 +12213,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_35.jpg)
 
-## 939. US-3792 Land Between the Lakes National Recreation Area — score 0.74
+## 940. US-3792 Land Between the Lakes National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12213,7 +12226,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_36.jpg)
 
-## 940. US-3792 Land Between the Lakes National Recreation Area — score 0.74
+## 941. US-3792 Land Between the Lakes National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12226,7 +12239,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_37.jpg)
 
-## 941. US-3792 Land Between the Lakes National Recreation Area — score 0.74
+## 942. US-3792 Land Between the Lakes National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12239,7 +12252,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_38.jpg)
 
-## 942. US-3792 Land Between the Lakes National Recreation Area — score 0.74
+## 943. US-3792 Land Between the Lakes National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12252,7 +12265,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_39.jpg)
 
-## 943. US-3792 Land Between the Lakes National Recreation Area — score 0.74
+## 944. US-3792 Land Between the Lakes National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12265,7 +12278,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_40.jpg)
 
-## 944. US-3792 Land Between the Lakes National Recreation Area — score 0.74
+## 945. US-3792 Land Between the Lakes National Recreation Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12278,7 +12291,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_41.jpg)
 
-## 945. US-3793 Ballard Wildlife Management Area — score 0.74
+## 946. US-3793 Ballard Wildlife Management Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12291,7 +12304,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3793_15.jpg)
 
-## 946. US-3794 Beaver Creek Wildlife Management Area — score 0.74
+## 947. US-3794 Beaver Creek Wildlife Management Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12304,7 +12317,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3794_07.jpg)
 
-## 947. US-3797 Boatwright Wildlife Management Area — score 0.74
+## 948. US-3797 Boatwright Wildlife Management Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -12317,7 +12330,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3797_05.jpg)
 
-## 948. US-3800 Cedar Creek Lake Wildlife Management Area — score 0.74
+## 949. US-3800 Cedar Creek Lake Wildlife Management Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12330,7 +12343,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3800_08.jpg)
 
-## 949. US-3812 Fleming Wildlife Management Area — score 0.74
+## 950. US-3812 Fleming Wildlife Management Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -12343,7 +12356,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3812_04.jpg)
 
-## 950. US-3815 Higginson-Henry Wildlife Management Area — score 0.74
+## 951. US-3815 Higginson-Henry Wildlife Management Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12356,7 +12369,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3815_20.jpg)
 
-## 951. US-3815 Higginson-Henry Wildlife Management Area — score 0.74
+## 952. US-3815 Higginson-Henry Wildlife Management Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12369,7 +12382,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3815_21.jpg)
 
-## 952. US-3815 Higginson-Henry Wildlife Management Area — score 0.74
+## 953. US-3815 Higginson-Henry Wildlife Management Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -12382,7 +12395,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3815_22.jpg)
 
-## 953. US-3815 Higginson-Henry Wildlife Management Area — score 0.74
+## 954. US-3815 Higginson-Henry Wildlife Management Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -12395,7 +12408,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3815_23.jpg)
 
-## 954. US-3815 Higginson-Henry Wildlife Management Area — score 0.74
+## 955. US-3815 Higginson-Henry Wildlife Management Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12408,7 +12421,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3815_24.jpg)
 
-## 955. US-3816 John A. Kleber Wildlife Management Area — score 0.74
+## 956. US-3816 John A. Kleber Wildlife Management Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -12421,7 +12434,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3816_05.jpg)
 
-## 956. US-3817 John C. Williams Wildlife Management Area — score 0.74
+## 957. US-3817 John C. Williams Wildlife Management Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -12434,7 +12447,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3817_06.jpg)
 
-## 957. US-3819 Kaler Bottoms Wildlife Management Area — score 0.74
+## 958. US-3819 Kaler Bottoms Wildlife Management Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -12447,7 +12460,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3819_02.jpg)
 
-## 958. US-3823 Livingston County Wildlife Management Area — score 0.74
+## 959. US-3823 Livingston County Wildlife Management Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -12460,7 +12473,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3823_01.jpg)
 
-## 959. US-3825 Miller Welch Wildlife Management Area — score 0.74
+## 960. US-3825 Miller Welch Wildlife Management Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -12473,7 +12486,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3825_03.jpg)
 
-## 960. US-3827 Obion Creek Wildlife Management Area — score 0.74
+## 961. US-3827 Obion Creek Wildlife Management Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12486,7 +12499,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3827_03.jpg)
 
-## 961. US-3828 Peabody Wildlife Management Area — score 0.74
+## 962. US-3828 Peabody Wildlife Management Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12499,7 +12512,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_37.jpg)
 
-## 962. US-3828 Peabody Wildlife Management Area — score 0.74
+## 963. US-3828 Peabody Wildlife Management Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -12512,7 +12525,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_38.jpg)
 
-## 963. US-3828 Peabody Wildlife Management Area — score 0.74
+## 964. US-3828 Peabody Wildlife Management Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -12525,7 +12538,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_39.jpg)
 
-## 964. US-3828 Peabody Wildlife Management Area — score 0.74
+## 965. US-3828 Peabody Wildlife Management Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -12538,7 +12551,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_40.jpg)
 
-## 965. US-3830 Sloughs Wildlife Management Area — score 0.74
+## 966. US-3830 Sloughs Wildlife Management Area — score 0.74
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -12551,7 +12564,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3830_08.jpg)
 
-## 966. US-0019 Cumberland Gap National Historical Park — score 0.73
+## 967. US-0019 Cumberland Gap National Historical Park — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12564,7 +12577,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_26.jpg)
 
-## 967. US-0019 Cumberland Gap National Historical Park — score 0.73
+## 968. US-0019 Cumberland Gap National Historical Park — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12577,7 +12590,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_27.jpg)
 
-## 968. US-0019 Cumberland Gap National Historical Park — score 0.73
+## 969. US-0019 Cumberland Gap National Historical Park — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12590,7 +12603,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_28.jpg)
 
-## 969. US-0019 Cumberland Gap National Historical Park — score 0.73
+## 970. US-0019 Cumberland Gap National Historical Park — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12603,7 +12616,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_29.jpg)
 
-## 970. US-0050 Mammoth Cave National Park — score 0.73
+## 971. US-0050 Mammoth Cave National Park — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12616,7 +12629,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_53.jpg)
 
-## 971. US-0050 Mammoth Cave National Park — score 0.73
+## 972. US-0050 Mammoth Cave National Park — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -12629,7 +12642,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0050_54.jpg)
 
-## 972. US-0050 Mammoth Cave National Park — score 0.73
+## 973. US-0050 Mammoth Cave National Park — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12642,7 +12655,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_55.jpg)
 
-## 973. US-0295 Clarks River National Wildlife Refuge — score 0.73
+## 974. US-0295 Clarks River National Wildlife Refuge — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -12655,7 +12668,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0295_08.jpg)
 
-## 974. US-0295 Clarks River National Wildlife Refuge — score 0.73
+## 975. US-0295 Clarks River National Wildlife Refuge — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12668,7 +12681,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0295_09.jpg)
 
-## 975. US-0295 Clarks River National Wildlife Refuge — score 0.73
+## 976. US-0295 Clarks River National Wildlife Refuge — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12681,7 +12694,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0295_10.jpg)
 
-## 976. US-0295 Clarks River National Wildlife Refuge — score 0.73
+## 977. US-0295 Clarks River National Wildlife Refuge — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12694,7 +12707,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0295_11.jpg)
 
-## 977. US-0686 Big South Fork National Recreation Area — score 0.73
+## 978. US-0686 Big South Fork National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12707,7 +12720,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_378.jpg)
 
-## 978. US-0686 Big South Fork National Recreation Area — score 0.73
+## 979. US-0686 Big South Fork National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12720,7 +12733,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_379.jpg)
 
-## 979. US-0686 Big South Fork National Recreation Area — score 0.73
+## 980. US-0686 Big South Fork National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12733,7 +12746,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_380.jpg)
 
-## 980. US-0686 Big South Fork National Recreation Area — score 0.73
+## 981. US-0686 Big South Fork National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12746,7 +12759,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_381.jpg)
 
-## 981. US-0686 Big South Fork National Recreation Area — score 0.73
+## 982. US-0686 Big South Fork National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12759,7 +12772,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_382.jpg)
 
-## 982. US-0686 Big South Fork National Recreation Area — score 0.73
+## 983. US-0686 Big South Fork National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12772,7 +12785,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_383.jpg)
 
-## 983. US-0686 Big South Fork National Recreation Area — score 0.73
+## 984. US-0686 Big South Fork National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12785,7 +12798,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_384.jpg)
 
-## 984. US-0686 Big South Fork National Recreation Area — score 0.73
+## 985. US-0686 Big South Fork National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12798,7 +12811,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_385.jpg)
 
-## 985. US-0686 Big South Fork National Recreation Area — score 0.73
+## 986. US-0686 Big South Fork National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12811,7 +12824,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_386.jpg)
 
-## 986. US-0686 Big South Fork National Recreation Area — score 0.73
+## 987. US-0686 Big South Fork National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12824,7 +12837,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_387.jpg)
 
-## 987. US-0686 Big South Fork National Recreation Area — score 0.73
+## 988. US-0686 Big South Fork National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12837,7 +12850,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_388.jpg)
 
-## 988. US-0686 Big South Fork National Recreation Area — score 0.73
+## 989. US-0686 Big South Fork National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12850,7 +12863,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_389.jpg)
 
-## 989. US-0686 Big South Fork National Recreation Area — score 0.73
+## 990. US-0686 Big South Fork National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12863,7 +12876,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_390.jpg)
 
-## 990. US-0686 Big South Fork National Recreation Area — score 0.73
+## 991. US-0686 Big South Fork National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12876,7 +12889,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_391.jpg)
 
-## 991. US-0686 Big South Fork National Recreation Area — score 0.73
+## 992. US-0686 Big South Fork National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12889,7 +12902,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_392.jpg)
 
-## 992. US-0686 Big South Fork National Recreation Area — score 0.73
+## 993. US-0686 Big South Fork National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12902,7 +12915,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_393.jpg)
 
-## 993. US-0686 Big South Fork National Recreation Area — score 0.73
+## 994. US-0686 Big South Fork National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12915,7 +12928,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_394.jpg)
 
-## 994. US-0686 Big South Fork National Recreation Area — score 0.73
+## 995. US-0686 Big South Fork National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12928,7 +12941,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_395.jpg)
 
-## 995. US-0686 Big South Fork National Recreation Area — score 0.73
+## 996. US-0686 Big South Fork National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -12941,7 +12954,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0686_396.jpg)
 
-## 996. US-0686 Big South Fork National Recreation Area — score 0.73
+## 997. US-0686 Big South Fork National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12954,7 +12967,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_397.jpg)
 
-## 997. US-0686 Big South Fork National Recreation Area — score 0.73
+## 998. US-0686 Big South Fork National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12967,7 +12980,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_398.jpg)
 
-## 998. US-0686 Big South Fork National Recreation Area — score 0.73
+## 999. US-0686 Big South Fork National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12980,7 +12993,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_399.jpg)
 
-## 999. US-0686 Big South Fork National Recreation Area — score 0.73
+## 1000. US-0686 Big South Fork National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -12993,7 +13006,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_400.jpg)
 
-## 1000. US-0686 Big South Fork National Recreation Area — score 0.73
+## 1001. US-0686 Big South Fork National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13006,7 +13019,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_401.jpg)
 
-## 1001. US-0686 Big South Fork National Recreation Area — score 0.73
+## 1002. US-0686 Big South Fork National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13019,7 +13032,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_402.jpg)
 
-## 1002. US-0686 Big South Fork National Recreation Area — score 0.73
+## 1003. US-0686 Big South Fork National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13032,7 +13045,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_403.jpg)
 
-## 1003. US-0686 Big South Fork National Recreation Area — score 0.73
+## 1004. US-0686 Big South Fork National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13045,7 +13058,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_404.jpg)
 
-## 1004. US-0686 Big South Fork National Recreation Area — score 0.73
+## 1005. US-0686 Big South Fork National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13058,7 +13071,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_405.jpg)
 
-## 1005. US-0686 Big South Fork National Recreation Area — score 0.73
+## 1006. US-0686 Big South Fork National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13071,7 +13084,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_406.jpg)
 
-## 1006. US-0686 Big South Fork National Recreation Area — score 0.73
+## 1007. US-0686 Big South Fork National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13084,7 +13097,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_407.jpg)
 
-## 1007. US-0686 Big South Fork National Recreation Area — score 0.73
+## 1008. US-0686 Big South Fork National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13097,7 +13110,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_408.jpg)
 
-## 1008. US-0686 Big South Fork National Recreation Area — score 0.73
+## 1009. US-0686 Big South Fork National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13110,7 +13123,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_409.jpg)
 
-## 1009. US-0686 Big South Fork National Recreation Area — score 0.73
+## 1010. US-0686 Big South Fork National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13123,7 +13136,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_410.jpg)
 
-## 1010. US-0686 Big South Fork National Recreation Area — score 0.73
+## 1011. US-0686 Big South Fork National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13136,7 +13149,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_411.jpg)
 
-## 1011. US-0686 Big South Fork National Recreation Area — score 0.73
+## 1012. US-0686 Big South Fork National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13149,7 +13162,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_412.jpg)
 
-## 1012. US-0686 Big South Fork National Recreation Area — score 0.73
+## 1013. US-0686 Big South Fork National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13162,7 +13175,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_413.jpg)
 
-## 1013. US-0686 Big South Fork National Recreation Area — score 0.73
+## 1014. US-0686 Big South Fork National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13175,7 +13188,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_414.jpg)
 
-## 1014. US-0686 Big South Fork National Recreation Area — score 0.73
+## 1015. US-0686 Big South Fork National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -13188,7 +13201,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0686_415.jpg)
 
-## 1015. US-0686 Big South Fork National Recreation Area — score 0.73
+## 1016. US-0686 Big South Fork National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13201,7 +13214,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_416.jpg)
 
-## 1016. US-0686 Big South Fork National Recreation Area — score 0.73
+## 1017. US-0686 Big South Fork National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13214,7 +13227,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_417.jpg)
 
-## 1017. US-0703 Fort Donelson National Battlefield — score 0.73
+## 1018. US-0703 Fort Donelson National Battlefield — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13227,7 +13240,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0703_54.jpg)
 
-## 1018. US-0703 Fort Donelson National Battlefield — score 0.73
+## 1019. US-0703 Fort Donelson National Battlefield — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -13240,7 +13253,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0703_55.jpg)
 
-## 1019. US-0703 Fort Donelson National Battlefield — score 0.73
+## 1020. US-0703 Fort Donelson National Battlefield — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13253,7 +13266,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0703_56.jpg)
 
-## 1020. US-1259 Green River Lake State Park — score 0.73
+## 1021. US-1259 Green River Lake State Park — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13266,7 +13279,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1259_04.jpg)
 
-## 1021. US-1260 John James Audubon State Park — score 0.73
+## 1022. US-1260 John James Audubon State Park — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13279,7 +13292,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1260_03.jpg)
 
-## 1022. US-1262 Kingdom Come State Park — score 0.73
+## 1023. US-1262 Kingdom Come State Park — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13292,7 +13305,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1262_03.jpg)
 
-## 1023. US-1264 Levi Jackson Wilderness Road State Park — score 0.73
+## 1024. US-1264 Levi Jackson Wilderness Road State Park — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13305,7 +13318,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1264_06.jpg)
 
-## 1024. US-1270 Paintsville Lake State Park — score 0.73
+## 1025. US-1270 Paintsville Lake State Park — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13318,7 +13331,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1270_03.jpg)
 
-## 1025. US-1273 Barren River Lake State Park — score 0.73
+## 1026. US-1273 Barren River Lake State Park — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13331,7 +13344,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1273_03.jpg)
 
-## 1026. US-1274 Blue Licks Battlefield State Park — score 0.73
+## 1027. US-1274 Blue Licks Battlefield State Park — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13344,7 +13357,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1274_04.jpg)
 
-## 1027. US-1278 Dale Hollow State Park — score 0.73
+## 1028. US-1278 Dale Hollow State Park — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13357,7 +13370,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1278_14.jpg)
 
-## 1028. US-1278 Dale Hollow State Park — score 0.73
+## 1029. US-1278 Dale Hollow State Park — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13370,7 +13383,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1278_15.jpg)
 
-## 1029. US-1280 Greenbo Lake State Park — score 0.73
+## 1030. US-1280 Greenbo Lake State Park — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13383,7 +13396,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1280_01.jpg)
 
-## 1030. US-1281 Jenny Wiley State Park — score 0.73
+## 1031. US-1281 Jenny Wiley State Park — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13396,7 +13409,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1281_14.jpg)
 
-## 1031. US-1282 Kenlake State Park — score 0.73
+## 1032. US-1282 Kenlake State Park — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13409,7 +13422,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1282_17.jpg)
 
-## 1032. US-1282 Kenlake State Park — score 0.73
+## 1033. US-1282 Kenlake State Park — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13422,7 +13435,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1282_18.jpg)
 
-## 1033. US-1283 Kentucky Dam Village State Park — score 0.73
+## 1034. US-1283 Kentucky Dam Village State Park — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13435,7 +13448,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_29.jpg)
 
-## 1034. US-1283 Kentucky Dam Village State Park — score 0.73
+## 1035. US-1283 Kentucky Dam Village State Park — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13448,7 +13461,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_30.jpg)
 
-## 1035. US-1285 Lake Cumberland State Park — score 0.73
+## 1036. US-1285 Lake Cumberland State Park — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13461,7 +13474,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1285_03.jpg)
 
-## 1036. US-3779 Big Bone Lick State Historic Site — score 0.73
+## 1037. US-3779 Big Bone Lick State Historic Site — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13474,7 +13487,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3779_07.jpg)
 
-## 1037. US-3779 Big Bone Lick State Historic Site — score 0.73
+## 1038. US-3779 Big Bone Lick State Historic Site — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13487,7 +13500,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3779_08.jpg)
 
-## 1038. US-3781 Breaks Interstate State Park — score 0.73
+## 1039. US-3781 Breaks Interstate State Park — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -13500,7 +13513,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3781_40.jpg)
 
-## 1039. US-3781 Breaks Interstate State Park — score 0.73
+## 1040. US-3781 Breaks Interstate State Park — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13513,7 +13526,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_41.jpg)
 
-## 1040. US-3781 Breaks Interstate State Park — score 0.73
+## 1041. US-3781 Breaks Interstate State Park — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13526,7 +13539,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_42.jpg)
 
-## 1041. US-3781 Breaks Interstate State Park — score 0.73
+## 1042. US-3781 Breaks Interstate State Park — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -13539,7 +13552,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3781_43.jpg)
 
-## 1042. US-3782 Dr. Thomas Walker State Historic Site — score 0.73
+## 1043. US-3782 Dr. Thomas Walker State Historic Site — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13552,7 +13565,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3782_01.jpg)
 
-## 1043. US-3785 Perryville Battlefield State Historic Site — score 0.73
+## 1044. US-3785 Perryville Battlefield State Historic Site — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13565,7 +13578,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3785_03.jpg)
 
-## 1044. US-3792 Land Between the Lakes National Recreation Area — score 0.73
+## 1045. US-3792 Land Between the Lakes National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13578,7 +13591,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_42.jpg)
 
-## 1045. US-3792 Land Between the Lakes National Recreation Area — score 0.73
+## 1046. US-3792 Land Between the Lakes National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13591,7 +13604,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_43.jpg)
 
-## 1046. US-3792 Land Between the Lakes National Recreation Area — score 0.73
+## 1047. US-3792 Land Between the Lakes National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13604,7 +13617,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_44.jpg)
 
-## 1047. US-3792 Land Between the Lakes National Recreation Area — score 0.73
+## 1048. US-3792 Land Between the Lakes National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13617,7 +13630,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_45.jpg)
 
-## 1048. US-3792 Land Between the Lakes National Recreation Area — score 0.73
+## 1049. US-3792 Land Between the Lakes National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13630,7 +13643,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_46.jpg)
 
-## 1049. US-3792 Land Between the Lakes National Recreation Area — score 0.73
+## 1050. US-3792 Land Between the Lakes National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13643,7 +13656,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_47.jpg)
 
-## 1050. US-3792 Land Between the Lakes National Recreation Area — score 0.73
+## 1051. US-3792 Land Between the Lakes National Recreation Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13656,7 +13669,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_48.jpg)
 
-## 1051. US-3805 Curtis Gates Lloyd Wildlife Management Area — score 0.73
+## 1052. US-3805 Curtis Gates Lloyd Wildlife Management Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -13669,7 +13682,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3805_15.jpg)
 
-## 1052. US-3811 Ed Mabry-Laurel Gorge Wildlife Management Area — score 0.73
+## 1053. US-3811 Ed Mabry-Laurel Gorge Wildlife Management Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -13682,7 +13695,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3811_01.jpg)
 
-## 1053. US-3814 Hensley-Pine Mountain Wildlife Management Area — score 0.73
+## 1054. US-3814 Hensley-Pine Mountain Wildlife Management Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -13695,7 +13708,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3814_02.jpg)
 
-## 1054. US-3814 Hensley-Pine Mountain Wildlife Management Area — score 0.73
+## 1055. US-3814 Hensley-Pine Mountain Wildlife Management Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -13708,7 +13721,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3814_03.jpg)
 
-## 1055. US-3815 Higginson-Henry Wildlife Management Area — score 0.73
+## 1056. US-3815 Higginson-Henry Wildlife Management Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13721,7 +13734,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3815_25.jpg)
 
-## 1056. US-3820 Kentucky River Wildlife Management Area — score 0.73
+## 1057. US-3820 Kentucky River Wildlife Management Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -13734,7 +13747,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3820_06.jpg)
 
-## 1057. US-3825 Miller Welch Wildlife Management Area — score 0.73
+## 1058. US-3825 Miller Welch Wildlife Management Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13747,7 +13760,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3825_04.jpg)
 
-## 1058. US-3825 Miller Welch Wildlife Management Area — score 0.73
+## 1059. US-3825 Miller Welch Wildlife Management Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13760,7 +13773,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3825_05.jpg)
 
-## 1059. US-3828 Peabody Wildlife Management Area — score 0.73
+## 1060. US-3828 Peabody Wildlife Management Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13773,7 +13786,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_41.jpg)
 
-## 1060. US-3828 Peabody Wildlife Management Area — score 0.73
+## 1061. US-3828 Peabody Wildlife Management Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13786,7 +13799,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_42.jpg)
 
-## 1061. US-3828 Peabody Wildlife Management Area — score 0.73
+## 1062. US-3828 Peabody Wildlife Management Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -13799,7 +13812,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_43.jpg)
 
-## 1062. US-3828 Peabody Wildlife Management Area — score 0.73
+## 1063. US-3828 Peabody Wildlife Management Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13812,7 +13825,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_44.jpg)
 
-## 1063. US-3828 Peabody Wildlife Management Area — score 0.73
+## 1064. US-3828 Peabody Wildlife Management Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13825,7 +13838,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_45.jpg)
 
-## 1064. US-3828 Peabody Wildlife Management Area — score 0.73
+## 1065. US-3828 Peabody Wildlife Management Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -13838,7 +13851,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_46.jpg)
 
-## 1065. US-3828 Peabody Wildlife Management Area — score 0.73
+## 1066. US-3828 Peabody Wildlife Management Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -13851,7 +13864,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_47.jpg)
 
-## 1066. US-3830 Sloughs Wildlife Management Area — score 0.73
+## 1067. US-3830 Sloughs Wildlife Management Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13864,7 +13877,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3830_09.jpg)
 
-## 1067. US-3830 Sloughs Wildlife Management Area — score 0.73
+## 1068. US-3830 Sloughs Wildlife Management Area — score 0.73
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13877,7 +13890,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3830_10.jpg)
 
-## 1068. US-0019 Cumberland Gap National Historical Park — score 0.72
+## 1069. US-0019 Cumberland Gap National Historical Park — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13890,7 +13903,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_30.jpg)
 
-## 1069. US-0019 Cumberland Gap National Historical Park — score 0.72
+## 1070. US-0019 Cumberland Gap National Historical Park — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13903,7 +13916,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_31.jpg)
 
-## 1070. US-0019 Cumberland Gap National Historical Park — score 0.72
+## 1071. US-0019 Cumberland Gap National Historical Park — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13916,7 +13929,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_32.jpg)
 
-## 1071. US-0019 Cumberland Gap National Historical Park — score 0.72
+## 1072. US-0019 Cumberland Gap National Historical Park — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13929,7 +13942,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_33.jpg)
 
-## 1072. US-0019 Cumberland Gap National Historical Park — score 0.72
+## 1073. US-0019 Cumberland Gap National Historical Park — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13942,7 +13955,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_34.jpg)
 
-## 1073. US-0019 Cumberland Gap National Historical Park — score 0.72
+## 1074. US-0019 Cumberland Gap National Historical Park — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13955,7 +13968,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_35.jpg)
 
-## 1074. US-0019 Cumberland Gap National Historical Park — score 0.72
+## 1075. US-0019 Cumberland Gap National Historical Park — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -13968,7 +13981,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0019_36.jpg)
 
-## 1075. US-0050 Mammoth Cave National Park — score 0.72
+## 1076. US-0050 Mammoth Cave National Park — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13981,7 +13994,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_56.jpg)
 
-## 1076. US-0050 Mammoth Cave National Park — score 0.72
+## 1077. US-0050 Mammoth Cave National Park — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -13994,7 +14007,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_57.jpg)
 
-## 1077. US-0050 Mammoth Cave National Park — score 0.72
+## 1078. US-0050 Mammoth Cave National Park — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14007,7 +14020,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_58.jpg)
 
-## 1078. US-0050 Mammoth Cave National Park — score 0.72
+## 1079. US-0050 Mammoth Cave National Park — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14020,7 +14033,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_59.jpg)
 
-## 1079. US-0050 Mammoth Cave National Park — score 0.72
+## 1080. US-0050 Mammoth Cave National Park — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14033,7 +14046,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_60.jpg)
 
-## 1080. US-0050 Mammoth Cave National Park — score 0.72
+## 1081. US-0050 Mammoth Cave National Park — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14046,7 +14059,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_61.jpg)
 
-## 1081. US-0050 Mammoth Cave National Park — score 0.72
+## 1082. US-0050 Mammoth Cave National Park — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14059,7 +14072,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_62.jpg)
 
-## 1082. US-0050 Mammoth Cave National Park — score 0.72
+## 1083. US-0050 Mammoth Cave National Park — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14072,7 +14085,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_63.jpg)
 
-## 1083. US-0050 Mammoth Cave National Park — score 0.72
+## 1084. US-0050 Mammoth Cave National Park — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14085,7 +14098,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_64.jpg)
 
-## 1084. US-0050 Mammoth Cave National Park — score 0.72
+## 1085. US-0050 Mammoth Cave National Park — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14098,7 +14111,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_65.jpg)
 
-## 1085. US-0050 Mammoth Cave National Park — score 0.72
+## 1086. US-0050 Mammoth Cave National Park — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14111,7 +14124,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_66.jpg)
 
-## 1086. US-0050 Mammoth Cave National Park — score 0.72
+## 1087. US-0050 Mammoth Cave National Park — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -14124,7 +14137,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0050_67.jpg)
 
-## 1087. US-0686 Big South Fork National Recreation Area — score 0.72
+## 1088. US-0686 Big South Fork National Recreation Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14137,7 +14150,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_418.jpg)
 
-## 1088. US-0686 Big South Fork National Recreation Area — score 0.72
+## 1089. US-0686 Big South Fork National Recreation Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -14150,7 +14163,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0686_419.jpg)
 
-## 1089. US-0686 Big South Fork National Recreation Area — score 0.72
+## 1090. US-0686 Big South Fork National Recreation Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14163,7 +14176,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_420.jpg)
 
-## 1090. US-0686 Big South Fork National Recreation Area — score 0.72
+## 1091. US-0686 Big South Fork National Recreation Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -14176,7 +14189,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0686_421.jpg)
 
-## 1091. US-0686 Big South Fork National Recreation Area — score 0.72
+## 1092. US-0686 Big South Fork National Recreation Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14189,7 +14202,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_422.jpg)
 
-## 1092. US-0686 Big South Fork National Recreation Area — score 0.72
+## 1093. US-0686 Big South Fork National Recreation Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14202,7 +14215,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_423.jpg)
 
-## 1093. US-0686 Big South Fork National Recreation Area — score 0.72
+## 1094. US-0686 Big South Fork National Recreation Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14215,7 +14228,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_424.jpg)
 
-## 1094. US-0686 Big South Fork National Recreation Area — score 0.72
+## 1095. US-0686 Big South Fork National Recreation Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14228,7 +14241,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_425.jpg)
 
-## 1095. US-0686 Big South Fork National Recreation Area — score 0.72
+## 1096. US-0686 Big South Fork National Recreation Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14241,7 +14254,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_426.jpg)
 
-## 1096. US-0686 Big South Fork National Recreation Area — score 0.72
+## 1097. US-0686 Big South Fork National Recreation Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14254,7 +14267,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_427.jpg)
 
-## 1097. US-0686 Big South Fork National Recreation Area — score 0.72
+## 1098. US-0686 Big South Fork National Recreation Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14267,7 +14280,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_428.jpg)
 
-## 1098. US-0686 Big South Fork National Recreation Area — score 0.72
+## 1099. US-0686 Big South Fork National Recreation Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14280,7 +14293,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_429.jpg)
 
-## 1099. US-0686 Big South Fork National Recreation Area — score 0.72
+## 1100. US-0686 Big South Fork National Recreation Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14293,7 +14306,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_430.jpg)
 
-## 1100. US-0686 Big South Fork National Recreation Area — score 0.72
+## 1101. US-0686 Big South Fork National Recreation Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14306,7 +14319,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_431.jpg)
 
-## 1101. US-0686 Big South Fork National Recreation Area — score 0.72
+## 1102. US-0686 Big South Fork National Recreation Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14319,7 +14332,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_432.jpg)
 
-## 1102. US-0686 Big South Fork National Recreation Area — score 0.72
+## 1103. US-0686 Big South Fork National Recreation Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14332,7 +14345,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_433.jpg)
 
-## 1103. US-0686 Big South Fork National Recreation Area — score 0.72
+## 1104. US-0686 Big South Fork National Recreation Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14345,7 +14358,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_434.jpg)
 
-## 1104. US-0686 Big South Fork National Recreation Area — score 0.72
+## 1105. US-0686 Big South Fork National Recreation Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14358,7 +14371,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_435.jpg)
 
-## 1105. US-0686 Big South Fork National Recreation Area — score 0.72
+## 1106. US-0686 Big South Fork National Recreation Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14371,7 +14384,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_436.jpg)
 
-## 1106. US-0686 Big South Fork National Recreation Area — score 0.72
+## 1107. US-0686 Big South Fork National Recreation Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14384,7 +14397,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_437.jpg)
 
-## 1107. US-0686 Big South Fork National Recreation Area — score 0.72
+## 1108. US-0686 Big South Fork National Recreation Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14397,7 +14410,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_438.jpg)
 
-## 1108. US-0686 Big South Fork National Recreation Area — score 0.72
+## 1109. US-0686 Big South Fork National Recreation Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14410,7 +14423,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_439.jpg)
 
-## 1109. US-0686 Big South Fork National Recreation Area — score 0.72
+## 1110. US-0686 Big South Fork National Recreation Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14423,7 +14436,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_440.jpg)
 
-## 1110. US-0686 Big South Fork National Recreation Area — score 0.72
+## 1111. US-0686 Big South Fork National Recreation Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14436,7 +14449,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_441.jpg)
 
-## 1111. US-0686 Big South Fork National Recreation Area — score 0.72
+## 1112. US-0686 Big South Fork National Recreation Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14449,7 +14462,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_442.jpg)
 
-## 1112. US-0686 Big South Fork National Recreation Area — score 0.72
+## 1113. US-0686 Big South Fork National Recreation Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14462,7 +14475,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_443.jpg)
 
-## 1113. US-0686 Big South Fork National Recreation Area — score 0.72
+## 1114. US-0686 Big South Fork National Recreation Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14475,7 +14488,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_444.jpg)
 
-## 1114. US-0686 Big South Fork National Recreation Area — score 0.72
+## 1115. US-0686 Big South Fork National Recreation Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14488,7 +14501,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_445.jpg)
 
-## 1115. US-0686 Big South Fork National Recreation Area — score 0.72
+## 1116. US-0686 Big South Fork National Recreation Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14501,7 +14514,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_446.jpg)
 
-## 1116. US-0686 Big South Fork National Recreation Area — score 0.72
+## 1117. US-0686 Big South Fork National Recreation Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14514,7 +14527,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_447.jpg)
 
-## 1117. US-0686 Big South Fork National Recreation Area — score 0.72
+## 1118. US-0686 Big South Fork National Recreation Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14527,7 +14540,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_448.jpg)
 
-## 1118. US-0686 Big South Fork National Recreation Area — score 0.72
+## 1119. US-0686 Big South Fork National Recreation Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14540,7 +14553,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_449.jpg)
 
-## 1119. US-0686 Big South Fork National Recreation Area — score 0.72
+## 1120. US-0686 Big South Fork National Recreation Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14553,7 +14566,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_450.jpg)
 
-## 1120. US-0686 Big South Fork National Recreation Area — score 0.72
+## 1121. US-0686 Big South Fork National Recreation Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14566,7 +14579,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_451.jpg)
 
-## 1121. US-0686 Big South Fork National Recreation Area — score 0.72
+## 1122. US-0686 Big South Fork National Recreation Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14579,7 +14592,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_452.jpg)
 
-## 1122. US-0686 Big South Fork National Recreation Area — score 0.72
+## 1123. US-0686 Big South Fork National Recreation Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14592,7 +14605,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_453.jpg)
 
-## 1123. US-0703 Fort Donelson National Battlefield — score 0.72
+## 1124. US-0703 Fort Donelson National Battlefield — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14605,7 +14618,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0703_57.jpg)
 
-## 1124. US-0703 Fort Donelson National Battlefield — score 0.72
+## 1125. US-0703 Fort Donelson National Battlefield — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14618,7 +14631,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0703_58.jpg)
 
-## 1125. US-0703 Fort Donelson National Battlefield — score 0.72
+## 1126. US-0703 Fort Donelson National Battlefield — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14631,7 +14644,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0703_59.jpg)
 
-## 1126. US-1253 Dawkins Line Rail Trail State Park — score 0.72
+## 1127. US-1253 Dawkins Line Rail Trail State Park — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -14644,7 +14657,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-1253_12.jpg)
 
-## 1127. US-1257 General Burnside State Park — score 0.72
+## 1128. US-1257 General Burnside State Park — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -14657,7 +14670,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-1257_07.jpg)
 
-## 1128. US-1263 Lake Malone State Park — score 0.72
+## 1129. US-1263 Lake Malone State Park — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -14670,7 +14683,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-1263_03.jpg)
 
-## 1129. US-1272 Yatesville Lake State Park — score 0.72
+## 1130. US-1272 Yatesville Lake State Park — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -14683,7 +14696,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-1272_07.jpg)
 
-## 1130. US-1275 Buckhorn Lake State Park — score 0.72
+## 1131. US-1275 Buckhorn Lake State Park — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14696,7 +14709,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1275_01.jpg)
 
-## 1131. US-1278 Dale Hollow State Park — score 0.72
+## 1132. US-1278 Dale Hollow State Park — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -14709,7 +14722,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-1278_16.jpg)
 
-## 1132. US-1278 Dale Hollow State Park — score 0.72
+## 1133. US-1278 Dale Hollow State Park — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14722,7 +14735,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1278_17.jpg)
 
-## 1133. US-1278 Dale Hollow State Park — score 0.72
+## 1134. US-1278 Dale Hollow State Park — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14735,7 +14748,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1278_18.jpg)
 
-## 1134. US-1282 Kenlake State Park — score 0.72
+## 1135. US-1282 Kenlake State Park — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14748,7 +14761,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1282_19.jpg)
 
-## 1135. US-1282 Kenlake State Park — score 0.72
+## 1136. US-1282 Kenlake State Park — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14761,7 +14774,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1282_20.jpg)
 
-## 1136. US-1283 Kentucky Dam Village State Park — score 0.72
+## 1137. US-1283 Kentucky Dam Village State Park — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -14774,7 +14787,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-1283_31.jpg)
 
-## 1137. US-1283 Kentucky Dam Village State Park — score 0.72
+## 1138. US-1283 Kentucky Dam Village State Park — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14787,7 +14800,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_32.jpg)
 
-## 1138. US-1286 Natural Bridge State Park — score 0.72
+## 1139. US-1286 Natural Bridge State Park — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14800,7 +14813,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1286_04.jpg)
 
-## 1139. US-3781 Breaks Interstate State Park — score 0.72
+## 1140. US-3781 Breaks Interstate State Park — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14813,7 +14826,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_44.jpg)
 
-## 1140. US-3781 Breaks Interstate State Park — score 0.72
+## 1141. US-3781 Breaks Interstate State Park — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14826,7 +14839,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_45.jpg)
 
-## 1141. US-3781 Breaks Interstate State Park — score 0.72
+## 1142. US-3781 Breaks Interstate State Park — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -14839,7 +14852,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3781_46.jpg)
 
-## 1142. US-3788 Wickliffe Mounds State Historic Site — score 0.72
+## 1143. US-3788 Wickliffe Mounds State Historic Site — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14852,7 +14865,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3788_01.jpg)
 
-## 1143. US-3792 Land Between the Lakes National Recreation Area — score 0.72
+## 1144. US-3792 Land Between the Lakes National Recreation Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14865,7 +14878,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_49.jpg)
 
-## 1144. US-3792 Land Between the Lakes National Recreation Area — score 0.72
+## 1145. US-3792 Land Between the Lakes National Recreation Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -14878,7 +14891,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3792_50.jpg)
 
-## 1145. US-3792 Land Between the Lakes National Recreation Area — score 0.72
+## 1146. US-3792 Land Between the Lakes National Recreation Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14891,7 +14904,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_51.jpg)
 
-## 1146. US-3792 Land Between the Lakes National Recreation Area — score 0.72
+## 1147. US-3792 Land Between the Lakes National Recreation Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14904,7 +14917,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_52.jpg)
 
-## 1147. US-3792 Land Between the Lakes National Recreation Area — score 0.72
+## 1148. US-3792 Land Between the Lakes National Recreation Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14917,7 +14930,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_53.jpg)
 
-## 1148. US-3792 Land Between the Lakes National Recreation Area — score 0.72
+## 1149. US-3792 Land Between the Lakes National Recreation Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14930,7 +14943,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_54.jpg)
 
-## 1149. US-3793 Ballard Wildlife Management Area — score 0.72
+## 1150. US-3793 Ballard Wildlife Management Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14943,7 +14956,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3793_16.jpg)
 
-## 1150. US-3800 Cedar Creek Lake Wildlife Management Area — score 0.72
+## 1151. US-3800 Cedar Creek Lake Wildlife Management Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -14956,7 +14969,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3800_09.jpg)
 
-## 1151. US-3802 Clyde E Buckley Sanctuary — score 0.72
+## 1152. US-3802 Clyde E Buckley Sanctuary — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -14969,7 +14982,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3802_04.jpg)
 
-## 1152. US-3802 Clyde E Buckley Sanctuary — score 0.72
+## 1153. US-3802 Clyde E Buckley Sanctuary — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -14982,7 +14995,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3802_05.jpg)
 
-## 1153. US-3805 Curtis Gates Lloyd Wildlife Management Area — score 0.72
+## 1154. US-3805 Curtis Gates Lloyd Wildlife Management Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -14995,7 +15008,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3805_16.jpg)
 
-## 1154. US-3815 Higginson-Henry Wildlife Management Area — score 0.72
+## 1155. US-3815 Higginson-Henry Wildlife Management Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15008,7 +15021,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3815_26.jpg)
 
-## 1155. US-3815 Higginson-Henry Wildlife Management Area — score 0.72
+## 1156. US-3815 Higginson-Henry Wildlife Management Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -15021,7 +15034,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3815_27.jpg)
 
-## 1156. US-3815 Higginson-Henry Wildlife Management Area — score 0.72
+## 1157. US-3815 Higginson-Henry Wildlife Management Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -15034,7 +15047,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3815_28.jpg)
 
-## 1157. US-3816 John A. Kleber Wildlife Management Area — score 0.72
+## 1158. US-3816 John A. Kleber Wildlife Management Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -15047,7 +15060,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3816_06.jpg)
 
-## 1158. US-3816 John A. Kleber Wildlife Management Area — score 0.72
+## 1159. US-3816 John A. Kleber Wildlife Management Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -15060,7 +15073,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3816_07.jpg)
 
-## 1159. US-3825 Miller Welch Wildlife Management Area — score 0.72
+## 1160. US-3825 Miller Welch Wildlife Management Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -15073,7 +15086,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3825_06.jpg)
 
-## 1160. US-3828 Peabody Wildlife Management Area — score 0.72
+## 1161. US-3828 Peabody Wildlife Management Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15086,7 +15099,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_48.jpg)
 
-## 1161. US-3828 Peabody Wildlife Management Area — score 0.72
+## 1162. US-3828 Peabody Wildlife Management Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15099,7 +15112,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_49.jpg)
 
-## 1162. US-3828 Peabody Wildlife Management Area — score 0.72
+## 1163. US-3828 Peabody Wildlife Management Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -15112,7 +15125,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_50.jpg)
 
-## 1163. US-3828 Peabody Wildlife Management Area — score 0.72
+## 1164. US-3828 Peabody Wildlife Management Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15125,7 +15138,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_51.jpg)
 
-## 1164. US-3828 Peabody Wildlife Management Area — score 0.72
+## 1165. US-3828 Peabody Wildlife Management Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -15138,7 +15151,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_52.jpg)
 
-## 1165. US-3830 Sloughs Wildlife Management Area — score 0.72
+## 1166. US-3830 Sloughs Wildlife Management Area — score 0.72
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15151,7 +15164,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3830_11.jpg)
 
-## 1166. US-0019 Cumberland Gap National Historical Park — score 0.71
+## 1167. US-0019 Cumberland Gap National Historical Park — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15164,7 +15177,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_37.jpg)
 
-## 1167. US-0019 Cumberland Gap National Historical Park — score 0.71
+## 1168. US-0019 Cumberland Gap National Historical Park — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15177,7 +15190,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_38.jpg)
 
-## 1168. US-0050 Mammoth Cave National Park — score 0.71
+## 1169. US-0050 Mammoth Cave National Park — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15190,7 +15203,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_68.jpg)
 
-## 1169. US-0050 Mammoth Cave National Park — score 0.71
+## 1170. US-0050 Mammoth Cave National Park — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15203,7 +15216,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_69.jpg)
 
-## 1170. US-0050 Mammoth Cave National Park — score 0.71
+## 1171. US-0050 Mammoth Cave National Park — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15216,7 +15229,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_70.jpg)
 
-## 1171. US-0295 Clarks River National Wildlife Refuge — score 0.71
+## 1172. US-0295 Clarks River National Wildlife Refuge — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -15229,7 +15242,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0295_12.jpg)
 
-## 1172. US-0686 Big South Fork National Recreation Area — score 0.71
+## 1173. US-0686 Big South Fork National Recreation Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15242,7 +15255,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_454.jpg)
 
-## 1173. US-0686 Big South Fork National Recreation Area — score 0.71
+## 1174. US-0686 Big South Fork National Recreation Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -15255,7 +15268,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0686_455.jpg)
 
-## 1174. US-0686 Big South Fork National Recreation Area — score 0.71
+## 1175. US-0686 Big South Fork National Recreation Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -15268,7 +15281,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0686_456.jpg)
 
-## 1175. US-0686 Big South Fork National Recreation Area — score 0.71
+## 1176. US-0686 Big South Fork National Recreation Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15281,7 +15294,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_457.jpg)
 
-## 1176. US-0686 Big South Fork National Recreation Area — score 0.71
+## 1177. US-0686 Big South Fork National Recreation Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15294,7 +15307,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_458.jpg)
 
-## 1177. US-0686 Big South Fork National Recreation Area — score 0.71
+## 1178. US-0686 Big South Fork National Recreation Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15307,7 +15320,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_459.jpg)
 
-## 1178. US-0686 Big South Fork National Recreation Area — score 0.71
+## 1179. US-0686 Big South Fork National Recreation Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15320,7 +15333,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_460.jpg)
 
-## 1179. US-0686 Big South Fork National Recreation Area — score 0.71
+## 1180. US-0686 Big South Fork National Recreation Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15333,7 +15346,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_461.jpg)
 
-## 1180. US-0686 Big South Fork National Recreation Area — score 0.71
+## 1181. US-0686 Big South Fork National Recreation Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15346,7 +15359,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_462.jpg)
 
-## 1181. US-0686 Big South Fork National Recreation Area — score 0.71
+## 1182. US-0686 Big South Fork National Recreation Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15359,7 +15372,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_463.jpg)
 
-## 1182. US-0686 Big South Fork National Recreation Area — score 0.71
+## 1183. US-0686 Big South Fork National Recreation Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15372,7 +15385,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_464.jpg)
 
-## 1183. US-0686 Big South Fork National Recreation Area — score 0.71
+## 1184. US-0686 Big South Fork National Recreation Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15385,7 +15398,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_465.jpg)
 
-## 1184. US-0686 Big South Fork National Recreation Area — score 0.71
+## 1185. US-0686 Big South Fork National Recreation Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15398,7 +15411,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_466.jpg)
 
-## 1185. US-0686 Big South Fork National Recreation Area — score 0.71
+## 1186. US-0686 Big South Fork National Recreation Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15411,7 +15424,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_467.jpg)
 
-## 1186. US-0686 Big South Fork National Recreation Area — score 0.71
+## 1187. US-0686 Big South Fork National Recreation Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15424,7 +15437,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_468.jpg)
 
-## 1187. US-0686 Big South Fork National Recreation Area — score 0.71
+## 1188. US-0686 Big South Fork National Recreation Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15437,7 +15450,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_469.jpg)
 
-## 1188. US-0686 Big South Fork National Recreation Area — score 0.71
+## 1189. US-0686 Big South Fork National Recreation Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15450,7 +15463,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_470.jpg)
 
-## 1189. US-0686 Big South Fork National Recreation Area — score 0.71
+## 1190. US-0686 Big South Fork National Recreation Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15463,7 +15476,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_471.jpg)
 
-## 1190. US-0686 Big South Fork National Recreation Area — score 0.71
+## 1191. US-0686 Big South Fork National Recreation Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15476,7 +15489,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_472.jpg)
 
-## 1191. US-0686 Big South Fork National Recreation Area — score 0.71
+## 1192. US-0686 Big South Fork National Recreation Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15489,7 +15502,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_473.jpg)
 
-## 1192. US-0686 Big South Fork National Recreation Area — score 0.71
+## 1193. US-0686 Big South Fork National Recreation Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15502,7 +15515,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_474.jpg)
 
-## 1193. US-0686 Big South Fork National Recreation Area — score 0.71
+## 1194. US-0686 Big South Fork National Recreation Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15515,7 +15528,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_475.jpg)
 
-## 1194. US-0686 Big South Fork National Recreation Area — score 0.71
+## 1195. US-0686 Big South Fork National Recreation Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15528,7 +15541,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_476.jpg)
 
-## 1195. US-0686 Big South Fork National Recreation Area — score 0.71
+## 1196. US-0686 Big South Fork National Recreation Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15541,7 +15554,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_477.jpg)
 
-## 1196. US-0686 Big South Fork National Recreation Area — score 0.71
+## 1197. US-0686 Big South Fork National Recreation Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15554,7 +15567,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_478.jpg)
 
-## 1197. US-0703 Fort Donelson National Battlefield — score 0.71
+## 1198. US-0703 Fort Donelson National Battlefield — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15567,7 +15580,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0703_60.jpg)
 
-## 1198. US-0703 Fort Donelson National Battlefield — score 0.71
+## 1199. US-0703 Fort Donelson National Battlefield — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15580,7 +15593,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0703_61.jpg)
 
-## 1199. US-1260 John James Audubon State Park — score 0.71
+## 1200. US-1260 John James Audubon State Park — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15593,7 +15606,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1260_04.jpg)
 
-## 1200. US-1271 Taylorsville Lake State Park — score 0.71
+## 1201. US-1271 Taylorsville Lake State Park — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15606,7 +15619,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1271_07.jpg)
 
-## 1201. US-1272 Yatesville Lake State Park — score 0.71
+## 1202. US-1272 Yatesville Lake State Park — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15619,7 +15632,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1272_08.jpg)
 
-## 1202. US-1278 Dale Hollow State Park — score 0.71
+## 1203. US-1278 Dale Hollow State Park — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15632,7 +15645,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1278_19.jpg)
 
-## 1203. US-1281 Jenny Wiley State Park — score 0.71
+## 1204. US-1281 Jenny Wiley State Park — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15645,7 +15658,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1281_15.jpg)
 
-## 1204. US-1282 Kenlake State Park — score 0.71
+## 1205. US-1282 Kenlake State Park — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15658,7 +15671,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1282_21.jpg)
 
-## 1205. US-1282 Kenlake State Park — score 0.71
+## 1206. US-1282 Kenlake State Park — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15671,7 +15684,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1282_22.jpg)
 
-## 1206. US-1283 Kentucky Dam Village State Park — score 0.71
+## 1207. US-1283 Kentucky Dam Village State Park — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15684,7 +15697,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_33.jpg)
 
-## 1207. US-1283 Kentucky Dam Village State Park — score 0.71
+## 1208. US-1283 Kentucky Dam Village State Park — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15697,7 +15710,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_34.jpg)
 
-## 1208. US-1283 Kentucky Dam Village State Park — score 0.71
+## 1209. US-1283 Kentucky Dam Village State Park — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15710,7 +15723,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_35.jpg)
 
-## 1209. US-1284 Lake Barkley State Park — score 0.71
+## 1210. US-1284 Lake Barkley State Park — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15723,7 +15736,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1284_05.jpg)
 
-## 1210. US-1284 Lake Barkley State Park — score 0.71
+## 1211. US-1284 Lake Barkley State Park — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15736,7 +15749,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1284_06.jpg)
 
-## 1211. US-1285 Lake Cumberland State Park — score 0.71
+## 1212. US-1285 Lake Cumberland State Park — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15749,7 +15762,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1285_04.jpg)
 
-## 1212. US-1288 Pine Mountain State Park — score 0.71
+## 1213. US-1288 Pine Mountain State Park — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15762,7 +15775,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1288_10.jpg)
 
-## 1213. US-1288 Pine Mountain State Park — score 0.71
+## 1214. US-1288 Pine Mountain State Park — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15775,7 +15788,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1288_11.jpg)
 
-## 1214. US-1289 Rough River Dam State Park — score 0.71
+## 1215. US-1289 Rough River Dam State Park — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15788,7 +15801,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1289_08.jpg)
 
-## 1215. US-3781 Breaks Interstate State Park — score 0.71
+## 1216. US-3781 Breaks Interstate State Park — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -15801,7 +15814,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3781_47.jpg)
 
-## 1216. US-3781 Breaks Interstate State Park — score 0.71
+## 1217. US-3781 Breaks Interstate State Park — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15814,7 +15827,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_48.jpg)
 
-## 1217. US-3781 Breaks Interstate State Park — score 0.71
+## 1218. US-3781 Breaks Interstate State Park — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15827,7 +15840,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_49.jpg)
 
-## 1218. US-3781 Breaks Interstate State Park — score 0.71
+## 1219. US-3781 Breaks Interstate State Park — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15840,7 +15853,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_50.jpg)
 
-## 1219. US-3781 Breaks Interstate State Park — score 0.71
+## 1220. US-3781 Breaks Interstate State Park — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15853,7 +15866,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_51.jpg)
 
-## 1220. US-3792 Land Between the Lakes National Recreation Area — score 0.71
+## 1221. US-3792 Land Between the Lakes National Recreation Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15866,7 +15879,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_55.jpg)
 
-## 1221. US-3792 Land Between the Lakes National Recreation Area — score 0.71
+## 1222. US-3792 Land Between the Lakes National Recreation Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15879,7 +15892,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_56.jpg)
 
-## 1222. US-3792 Land Between the Lakes National Recreation Area — score 0.71
+## 1223. US-3792 Land Between the Lakes National Recreation Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15892,7 +15905,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_57.jpg)
 
-## 1223. US-3792 Land Between the Lakes National Recreation Area — score 0.71
+## 1224. US-3792 Land Between the Lakes National Recreation Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15905,7 +15918,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_58.jpg)
 
-## 1224. US-3792 Land Between the Lakes National Recreation Area — score 0.71
+## 1225. US-3792 Land Between the Lakes National Recreation Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15918,7 +15931,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_59.jpg)
 
-## 1225. US-3792 Land Between the Lakes National Recreation Area — score 0.71
+## 1226. US-3792 Land Between the Lakes National Recreation Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15931,7 +15944,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_60.jpg)
 
-## 1226. US-3793 Ballard Wildlife Management Area — score 0.71
+## 1227. US-3793 Ballard Wildlife Management Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15944,7 +15957,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3793_17.jpg)
 
-## 1227. US-3794 Beaver Creek Wildlife Management Area — score 0.71
+## 1228. US-3794 Beaver Creek Wildlife Management Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -15957,7 +15970,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3794_08.jpg)
 
-## 1228. US-3797 Boatwright Wildlife Management Area — score 0.71
+## 1229. US-3797 Boatwright Wildlife Management Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -15970,7 +15983,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3797_06.jpg)
 
-## 1229. US-3797 Boatwright Wildlife Management Area — score 0.71
+## 1230. US-3797 Boatwright Wildlife Management Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -15983,7 +15996,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3797_07.jpg)
 
-## 1230. US-3800 Cedar Creek Lake Wildlife Management Area — score 0.71
+## 1231. US-3800 Cedar Creek Lake Wildlife Management Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -15996,7 +16009,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3800_10.jpg)
 
-## 1231. US-3800 Cedar Creek Lake Wildlife Management Area — score 0.71
+## 1232. US-3800 Cedar Creek Lake Wildlife Management Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16009,7 +16022,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3800_11.jpg)
 
-## 1232. US-3802 Clyde E Buckley Sanctuary — score 0.71
+## 1233. US-3802 Clyde E Buckley Sanctuary — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -16022,7 +16035,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3802_06.jpg)
 
-## 1233. US-3809 Dr. James R. Rich Wildlife Management Area — score 0.71
+## 1234. US-3809 Dr. James R. Rich Wildlife Management Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -16035,7 +16048,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3809_07.jpg)
 
-## 1234. US-3811 Ed Mabry-Laurel Gorge Wildlife Management Area — score 0.71
+## 1235. US-3811 Ed Mabry-Laurel Gorge Wildlife Management Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -16048,7 +16061,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3811_02.jpg)
 
-## 1235. US-3815 Higginson-Henry Wildlife Management Area — score 0.71
+## 1236. US-3815 Higginson-Henry Wildlife Management Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -16061,7 +16074,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3815_29.jpg)
 
-## 1236. US-3815 Higginson-Henry Wildlife Management Area — score 0.71
+## 1237. US-3815 Higginson-Henry Wildlife Management Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -16074,7 +16087,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3815_30.jpg)
 
-## 1237. US-3815 Higginson-Henry Wildlife Management Area — score 0.71
+## 1238. US-3815 Higginson-Henry Wildlife Management Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16087,7 +16100,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3815_31.jpg)
 
-## 1238. US-3816 John A. Kleber Wildlife Management Area — score 0.71
+## 1239. US-3816 John A. Kleber Wildlife Management Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -16100,7 +16113,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3816_08.jpg)
 
-## 1239. US-3816 John A. Kleber Wildlife Management Area — score 0.71
+## 1240. US-3816 John A. Kleber Wildlife Management Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16113,7 +16126,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3816_09.jpg)
 
-## 1240. US-3827 Obion Creek Wildlife Management Area — score 0.71
+## 1241. US-3827 Obion Creek Wildlife Management Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16126,7 +16139,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3827_04.jpg)
 
-## 1241. US-3828 Peabody Wildlife Management Area — score 0.71
+## 1242. US-3828 Peabody Wildlife Management Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -16139,7 +16152,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_53.jpg)
 
-## 1242. US-3828 Peabody Wildlife Management Area — score 0.71
+## 1243. US-3828 Peabody Wildlife Management Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16152,7 +16165,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_54.jpg)
 
-## 1243. US-3828 Peabody Wildlife Management Area — score 0.71
+## 1244. US-3828 Peabody Wildlife Management Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -16165,7 +16178,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_55.jpg)
 
-## 1244. US-3830 Sloughs Wildlife Management Area — score 0.71
+## 1245. US-3830 Sloughs Wildlife Management Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -16178,7 +16191,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3830_12.jpg)
 
-## 1245. US-3830 Sloughs Wildlife Management Area — score 0.71
+## 1246. US-3830 Sloughs Wildlife Management Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -16191,7 +16204,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3830_13.jpg)
 
-## 1246. US-3830 Sloughs Wildlife Management Area — score 0.71
+## 1247. US-3830 Sloughs Wildlife Management Area — score 0.71
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16204,7 +16217,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3830_14.jpg)
 
-## 1247. US-0019 Cumberland Gap National Historical Park — score 0.70
+## 1248. US-0019 Cumberland Gap National Historical Park — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16217,7 +16230,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_39.jpg)
 
-## 1248. US-0019 Cumberland Gap National Historical Park — score 0.70
+## 1249. US-0019 Cumberland Gap National Historical Park — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16230,7 +16243,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_40.jpg)
 
-## 1249. US-0019 Cumberland Gap National Historical Park — score 0.70
+## 1250. US-0019 Cumberland Gap National Historical Park — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16243,7 +16256,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_41.jpg)
 
-## 1250. US-0019 Cumberland Gap National Historical Park — score 0.70
+## 1251. US-0019 Cumberland Gap National Historical Park — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16256,7 +16269,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_42.jpg)
 
-## 1251. US-0019 Cumberland Gap National Historical Park — score 0.70
+## 1252. US-0019 Cumberland Gap National Historical Park — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16269,7 +16282,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_43.jpg)
 
-## 1252. US-0019 Cumberland Gap National Historical Park — score 0.70
+## 1253. US-0019 Cumberland Gap National Historical Park — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16282,7 +16295,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_44.jpg)
 
-## 1253. US-0050 Mammoth Cave National Park — score 0.70
+## 1254. US-0050 Mammoth Cave National Park — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16295,7 +16308,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_71.jpg)
 
-## 1254. US-0295 Clarks River National Wildlife Refuge — score 0.70
+## 1255. US-0295 Clarks River National Wildlife Refuge — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -16308,7 +16321,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0295_13.jpg)
 
-## 1255. US-0295 Clarks River National Wildlife Refuge — score 0.70
+## 1256. US-0295 Clarks River National Wildlife Refuge — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16321,7 +16334,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0295_14.jpg)
 
-## 1256. US-0295 Clarks River National Wildlife Refuge — score 0.70
+## 1257. US-0295 Clarks River National Wildlife Refuge — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16334,7 +16347,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0295_15.jpg)
 
-## 1257. US-0686 Big South Fork National Recreation Area — score 0.70
+## 1258. US-0686 Big South Fork National Recreation Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16347,7 +16360,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_479.jpg)
 
-## 1258. US-0686 Big South Fork National Recreation Area — score 0.70
+## 1259. US-0686 Big South Fork National Recreation Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16360,7 +16373,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_480.jpg)
 
-## 1259. US-0686 Big South Fork National Recreation Area — score 0.70
+## 1260. US-0686 Big South Fork National Recreation Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16373,7 +16386,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_481.jpg)
 
-## 1260. US-0686 Big South Fork National Recreation Area — score 0.70
+## 1261. US-0686 Big South Fork National Recreation Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16386,7 +16399,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_482.jpg)
 
-## 1261. US-0686 Big South Fork National Recreation Area — score 0.70
+## 1262. US-0686 Big South Fork National Recreation Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16399,7 +16412,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_483.jpg)
 
-## 1262. US-0686 Big South Fork National Recreation Area — score 0.70
+## 1263. US-0686 Big South Fork National Recreation Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16412,7 +16425,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_484.jpg)
 
-## 1263. US-0686 Big South Fork National Recreation Area — score 0.70
+## 1264. US-0686 Big South Fork National Recreation Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16425,7 +16438,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_485.jpg)
 
-## 1264. US-0686 Big South Fork National Recreation Area — score 0.70
+## 1265. US-0686 Big South Fork National Recreation Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16438,7 +16451,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_486.jpg)
 
-## 1265. US-0686 Big South Fork National Recreation Area — score 0.70
+## 1266. US-0686 Big South Fork National Recreation Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16451,7 +16464,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_487.jpg)
 
-## 1266. US-0686 Big South Fork National Recreation Area — score 0.70
+## 1267. US-0686 Big South Fork National Recreation Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16464,7 +16477,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_488.jpg)
 
-## 1267. US-0686 Big South Fork National Recreation Area — score 0.70
+## 1268. US-0686 Big South Fork National Recreation Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -16477,7 +16490,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0686_489.jpg)
 
-## 1268. US-0686 Big South Fork National Recreation Area — score 0.70
+## 1269. US-0686 Big South Fork National Recreation Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16490,7 +16503,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_490.jpg)
 
-## 1269. US-0686 Big South Fork National Recreation Area — score 0.70
+## 1270. US-0686 Big South Fork National Recreation Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16503,7 +16516,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_491.jpg)
 
-## 1270. US-0686 Big South Fork National Recreation Area — score 0.70
+## 1271. US-0686 Big South Fork National Recreation Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16516,7 +16529,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_492.jpg)
 
-## 1271. US-0686 Big South Fork National Recreation Area — score 0.70
+## 1272. US-0686 Big South Fork National Recreation Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16529,7 +16542,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_493.jpg)
 
-## 1272. US-0686 Big South Fork National Recreation Area — score 0.70
+## 1273. US-0686 Big South Fork National Recreation Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16542,7 +16555,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_494.jpg)
 
-## 1273. US-0686 Big South Fork National Recreation Area — score 0.70
+## 1274. US-0686 Big South Fork National Recreation Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16555,7 +16568,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_495.jpg)
 
-## 1274. US-0686 Big South Fork National Recreation Area — score 0.70
+## 1275. US-0686 Big South Fork National Recreation Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16568,7 +16581,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_496.jpg)
 
-## 1275. US-0686 Big South Fork National Recreation Area — score 0.70
+## 1276. US-0686 Big South Fork National Recreation Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16581,7 +16594,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_497.jpg)
 
-## 1276. US-0686 Big South Fork National Recreation Area — score 0.70
+## 1277. US-0686 Big South Fork National Recreation Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16594,7 +16607,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_498.jpg)
 
-## 1277. US-0686 Big South Fork National Recreation Area — score 0.70
+## 1278. US-0686 Big South Fork National Recreation Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16607,7 +16620,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_499.jpg)
 
-## 1278. US-0686 Big South Fork National Recreation Area — score 0.70
+## 1279. US-0686 Big South Fork National Recreation Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16620,7 +16633,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_500.jpg)
 
-## 1279. US-0686 Big South Fork National Recreation Area — score 0.70
+## 1280. US-0686 Big South Fork National Recreation Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16633,7 +16646,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_501.jpg)
 
-## 1280. US-0686 Big South Fork National Recreation Area — score 0.70
+## 1281. US-0686 Big South Fork National Recreation Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16646,7 +16659,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_502.jpg)
 
-## 1281. US-0686 Big South Fork National Recreation Area — score 0.70
+## 1282. US-0686 Big South Fork National Recreation Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -16659,7 +16672,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0686_503.jpg)
 
-## 1282. US-0686 Big South Fork National Recreation Area — score 0.70
+## 1283. US-0686 Big South Fork National Recreation Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16672,7 +16685,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_504.jpg)
 
-## 1283. US-0686 Big South Fork National Recreation Area — score 0.70
+## 1284. US-0686 Big South Fork National Recreation Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16685,7 +16698,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_505.jpg)
 
-## 1284. US-0686 Big South Fork National Recreation Area — score 0.70
+## 1285. US-0686 Big South Fork National Recreation Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16698,7 +16711,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_506.jpg)
 
-## 1285. US-0686 Big South Fork National Recreation Area — score 0.70
+## 1286. US-0686 Big South Fork National Recreation Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16711,7 +16724,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_507.jpg)
 
-## 1286. US-0686 Big South Fork National Recreation Area — score 0.70
+## 1287. US-0686 Big South Fork National Recreation Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16724,7 +16737,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_508.jpg)
 
-## 1287. US-0686 Big South Fork National Recreation Area — score 0.70
+## 1288. US-0686 Big South Fork National Recreation Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16737,7 +16750,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_509.jpg)
 
-## 1288. US-0703 Fort Donelson National Battlefield — score 0.70
+## 1289. US-0703 Fort Donelson National Battlefield — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16750,7 +16763,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0703_62.jpg)
 
-## 1289. US-0703 Fort Donelson National Battlefield — score 0.70
+## 1290. US-0703 Fort Donelson National Battlefield — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16763,7 +16776,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0703_63.jpg)
 
-## 1290. US-0703 Fort Donelson National Battlefield — score 0.70
+## 1291. US-0703 Fort Donelson National Battlefield — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16776,7 +16789,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0703_64.jpg)
 
-## 1291. US-0703 Fort Donelson National Battlefield — score 0.70
+## 1292. US-0703 Fort Donelson National Battlefield — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16789,7 +16802,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0703_65.jpg)
 
-## 1292. US-0703 Fort Donelson National Battlefield — score 0.70
+## 1293. US-0703 Fort Donelson National Battlefield — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16802,7 +16815,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0703_66.jpg)
 
-## 1293. US-0703 Fort Donelson National Battlefield — score 0.70
+## 1294. US-0703 Fort Donelson National Battlefield — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16815,7 +16828,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0703_67.jpg)
 
-## 1294. US-1253 Dawkins Line Rail Trail State Park — score 0.70
+## 1295. US-1253 Dawkins Line Rail Trail State Park — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -16828,7 +16841,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-1253_13.jpg)
 
-## 1295. US-1264 Levi Jackson Wilderness Road State Park — score 0.70
+## 1296. US-1264 Levi Jackson Wilderness Road State Park — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16841,7 +16854,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1264_07.jpg)
 
-## 1296. US-1270 Paintsville Lake State Park — score 0.70
+## 1297. US-1270 Paintsville Lake State Park — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -16854,7 +16867,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-1270_04.jpg)
 
-## 1297. US-1281 Jenny Wiley State Park — score 0.70
+## 1298. US-1281 Jenny Wiley State Park — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16867,7 +16880,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1281_16.jpg)
 
-## 1298. US-1282 Kenlake State Park — score 0.70
+## 1299. US-1282 Kenlake State Park — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16880,7 +16893,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1282_23.jpg)
 
-## 1299. US-1282 Kenlake State Park — score 0.70
+## 1300. US-1282 Kenlake State Park — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16893,7 +16906,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1282_24.jpg)
 
-## 1300. US-1282 Kenlake State Park — score 0.70
+## 1301. US-1282 Kenlake State Park — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16906,7 +16919,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1282_25.jpg)
 
-## 1301. US-1282 Kenlake State Park — score 0.70
+## 1302. US-1282 Kenlake State Park — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16919,7 +16932,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1282_26.jpg)
 
-## 1302. US-1282 Kenlake State Park — score 0.70
+## 1303. US-1282 Kenlake State Park — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16932,7 +16945,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1282_27.jpg)
 
-## 1303. US-1283 Kentucky Dam Village State Park — score 0.70
+## 1304. US-1283 Kentucky Dam Village State Park — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16945,7 +16958,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_36.jpg)
 
-## 1304. US-1283 Kentucky Dam Village State Park — score 0.70
+## 1305. US-1283 Kentucky Dam Village State Park — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16958,7 +16971,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_37.jpg)
 
-## 1305. US-1283 Kentucky Dam Village State Park — score 0.70
+## 1306. US-1283 Kentucky Dam Village State Park — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16971,7 +16984,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_38.jpg)
 
-## 1306. US-1285 Lake Cumberland State Park — score 0.70
+## 1307. US-1285 Lake Cumberland State Park — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -16984,7 +16997,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1285_05.jpg)
 
-## 1307. US-3781 Breaks Interstate State Park — score 0.70
+## 1308. US-3781 Breaks Interstate State Park — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -16997,7 +17010,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3781_52.jpg)
 
-## 1308. US-3781 Breaks Interstate State Park — score 0.70
+## 1309. US-3781 Breaks Interstate State Park — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17010,7 +17023,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_53.jpg)
 
-## 1309. US-3781 Breaks Interstate State Park — score 0.70
+## 1310. US-3781 Breaks Interstate State Park — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17023,7 +17036,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_54.jpg)
 
-## 1310. US-3781 Breaks Interstate State Park — score 0.70
+## 1311. US-3781 Breaks Interstate State Park — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17036,7 +17049,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_55.jpg)
 
-## 1311. US-3781 Breaks Interstate State Park — score 0.70
+## 1312. US-3781 Breaks Interstate State Park — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17049,7 +17062,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_56.jpg)
 
-## 1312. US-3781 Breaks Interstate State Park — score 0.70
+## 1313. US-3781 Breaks Interstate State Park — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17062,7 +17075,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_57.jpg)
 
-## 1313. US-3792 Land Between the Lakes National Recreation Area — score 0.70
+## 1314. US-3792 Land Between the Lakes National Recreation Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17075,7 +17088,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_61.jpg)
 
-## 1314. US-3792 Land Between the Lakes National Recreation Area — score 0.70
+## 1315. US-3792 Land Between the Lakes National Recreation Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17088,7 +17101,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_62.jpg)
 
-## 1315. US-3792 Land Between the Lakes National Recreation Area — score 0.70
+## 1316. US-3792 Land Between the Lakes National Recreation Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17101,7 +17114,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_63.jpg)
 
-## 1316. US-3792 Land Between the Lakes National Recreation Area — score 0.70
+## 1317. US-3792 Land Between the Lakes National Recreation Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17114,7 +17127,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_64.jpg)
 
-## 1317. US-3792 Land Between the Lakes National Recreation Area — score 0.70
+## 1318. US-3792 Land Between the Lakes National Recreation Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17127,7 +17140,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_65.jpg)
 
-## 1318. US-3793 Ballard Wildlife Management Area — score 0.70
+## 1319. US-3793 Ballard Wildlife Management Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17140,7 +17153,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3793_18.jpg)
 
-## 1319. US-3793 Ballard Wildlife Management Area — score 0.70
+## 1320. US-3793 Ballard Wildlife Management Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -17153,7 +17166,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3793_19.jpg)
 
-## 1320. US-3796 Big Rivers Wildlife Management Area — score 0.70
+## 1321. US-3796 Big Rivers Wildlife Management Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17166,7 +17179,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3796_04.jpg)
 
-## 1321. US-3797 Boatwright Wildlife Management Area — score 0.70
+## 1322. US-3797 Boatwright Wildlife Management Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -17179,7 +17192,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3797_08.jpg)
 
-## 1322. US-3800 Cedar Creek Lake Wildlife Management Area — score 0.70
+## 1323. US-3800 Cedar Creek Lake Wildlife Management Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -17192,7 +17205,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3800_12.jpg)
 
-## 1323. US-3805 Curtis Gates Lloyd Wildlife Management Area — score 0.70
+## 1324. US-3805 Curtis Gates Lloyd Wildlife Management Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -17205,7 +17218,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3805_17.jpg)
 
-## 1324. US-3809 Dr. James R. Rich Wildlife Management Area — score 0.70
+## 1325. US-3809 Dr. James R. Rich Wildlife Management Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -17218,7 +17231,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3809_08.jpg)
 
-## 1325. US-3809 Dr. James R. Rich Wildlife Management Area — score 0.70
+## 1326. US-3809 Dr. James R. Rich Wildlife Management Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -17231,7 +17244,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3809_09.jpg)
 
-## 1326. US-3813 Griffith Woods Wildlife Management Area — score 0.70
+## 1327. US-3813 Griffith Woods Wildlife Management Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -17244,7 +17257,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3813_07.jpg)
 
-## 1327. US-3815 Higginson-Henry Wildlife Management Area — score 0.70
+## 1328. US-3815 Higginson-Henry Wildlife Management Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -17257,7 +17270,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3815_32.jpg)
 
-## 1328. US-3815 Higginson-Henry Wildlife Management Area — score 0.70
+## 1329. US-3815 Higginson-Henry Wildlife Management Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -17270,7 +17283,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3815_33.jpg)
 
-## 1329. US-3815 Higginson-Henry Wildlife Management Area — score 0.70
+## 1330. US-3815 Higginson-Henry Wildlife Management Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17283,7 +17296,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3815_34.jpg)
 
-## 1330. US-3815 Higginson-Henry Wildlife Management Area — score 0.70
+## 1331. US-3815 Higginson-Henry Wildlife Management Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -17296,7 +17309,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3815_35.jpg)
 
-## 1331. US-3815 Higginson-Henry Wildlife Management Area — score 0.70
+## 1332. US-3815 Higginson-Henry Wildlife Management Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -17309,7 +17322,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3815_36.jpg)
 
-## 1332. US-3817 John C. Williams Wildlife Management Area — score 0.70
+## 1333. US-3817 John C. Williams Wildlife Management Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -17322,7 +17335,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3817_07.jpg)
 
-## 1333. US-3821 L. B. Davison Wildlife Management Area — score 0.70
+## 1334. US-3821 L. B. Davison Wildlife Management Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -17335,7 +17348,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3821_01.jpg)
 
-## 1334. US-3828 Peabody Wildlife Management Area — score 0.70
+## 1335. US-3828 Peabody Wildlife Management Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17348,7 +17361,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_56.jpg)
 
-## 1335. US-3828 Peabody Wildlife Management Area — score 0.70
+## 1336. US-3828 Peabody Wildlife Management Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -17361,7 +17374,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_57.jpg)
 
-## 1336. US-3830 Sloughs Wildlife Management Area — score 0.70
+## 1337. US-3830 Sloughs Wildlife Management Area — score 0.70
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17374,7 +17387,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3830_15.jpg)
 
-## 1337. US-0019 Cumberland Gap National Historical Park — score 0.69
+## 1338. US-0019 Cumberland Gap National Historical Park — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17387,7 +17400,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_45.jpg)
 
-## 1338. US-0019 Cumberland Gap National Historical Park — score 0.69
+## 1339. US-0019 Cumberland Gap National Historical Park — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17400,7 +17413,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_46.jpg)
 
-## 1339. US-0019 Cumberland Gap National Historical Park — score 0.69
+## 1340. US-0019 Cumberland Gap National Historical Park — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17413,7 +17426,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_47.jpg)
 
-## 1340. US-0050 Mammoth Cave National Park — score 0.69
+## 1341. US-0050 Mammoth Cave National Park — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -17426,7 +17439,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0050_72.jpg)
 
-## 1341. US-0050 Mammoth Cave National Park — score 0.69
+## 1342. US-0050 Mammoth Cave National Park — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17439,7 +17452,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_73.jpg)
 
-## 1342. US-0050 Mammoth Cave National Park — score 0.69
+## 1343. US-0050 Mammoth Cave National Park — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17452,7 +17465,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_74.jpg)
 
-## 1343. US-0050 Mammoth Cave National Park — score 0.69
+## 1344. US-0050 Mammoth Cave National Park — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17465,7 +17478,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_75.jpg)
 
-## 1344. US-0686 Big South Fork National Recreation Area — score 0.69
+## 1345. US-0686 Big South Fork National Recreation Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17478,7 +17491,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_510.jpg)
 
-## 1345. US-0686 Big South Fork National Recreation Area — score 0.69
+## 1346. US-0686 Big South Fork National Recreation Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -17491,7 +17504,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0686_511.jpg)
 
-## 1346. US-0686 Big South Fork National Recreation Area — score 0.69
+## 1347. US-0686 Big South Fork National Recreation Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17504,7 +17517,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_512.jpg)
 
-## 1347. US-0686 Big South Fork National Recreation Area — score 0.69
+## 1348. US-0686 Big South Fork National Recreation Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17517,7 +17530,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_513.jpg)
 
-## 1348. US-0686 Big South Fork National Recreation Area — score 0.69
+## 1349. US-0686 Big South Fork National Recreation Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17530,7 +17543,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_514.jpg)
 
-## 1349. US-0686 Big South Fork National Recreation Area — score 0.69
+## 1350. US-0686 Big South Fork National Recreation Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17543,7 +17556,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_515.jpg)
 
-## 1350. US-0686 Big South Fork National Recreation Area — score 0.69
+## 1351. US-0686 Big South Fork National Recreation Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17556,7 +17569,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_516.jpg)
 
-## 1351. US-0686 Big South Fork National Recreation Area — score 0.69
+## 1352. US-0686 Big South Fork National Recreation Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17569,7 +17582,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_517.jpg)
 
-## 1352. US-0686 Big South Fork National Recreation Area — score 0.69
+## 1353. US-0686 Big South Fork National Recreation Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -17582,7 +17595,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0686_518.jpg)
 
-## 1353. US-0686 Big South Fork National Recreation Area — score 0.69
+## 1354. US-0686 Big South Fork National Recreation Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17595,7 +17608,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_519.jpg)
 
-## 1354. US-0686 Big South Fork National Recreation Area — score 0.69
+## 1355. US-0686 Big South Fork National Recreation Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17608,7 +17621,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_520.jpg)
 
-## 1355. US-0686 Big South Fork National Recreation Area — score 0.69
+## 1356. US-0686 Big South Fork National Recreation Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17621,7 +17634,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_521.jpg)
 
-## 1356. US-0686 Big South Fork National Recreation Area — score 0.69
+## 1357. US-0686 Big South Fork National Recreation Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17634,7 +17647,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_522.jpg)
 
-## 1357. US-0686 Big South Fork National Recreation Area — score 0.69
+## 1358. US-0686 Big South Fork National Recreation Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17647,7 +17660,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_523.jpg)
 
-## 1358. US-0686 Big South Fork National Recreation Area — score 0.69
+## 1359. US-0686 Big South Fork National Recreation Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17660,7 +17673,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_524.jpg)
 
-## 1359. US-0686 Big South Fork National Recreation Area — score 0.69
+## 1360. US-0686 Big South Fork National Recreation Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17673,7 +17686,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_525.jpg)
 
-## 1360. US-0686 Big South Fork National Recreation Area — score 0.69
+## 1361. US-0686 Big South Fork National Recreation Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17686,7 +17699,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_526.jpg)
 
-## 1361. US-0686 Big South Fork National Recreation Area — score 0.69
+## 1362. US-0686 Big South Fork National Recreation Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17699,7 +17712,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_527.jpg)
 
-## 1362. US-0686 Big South Fork National Recreation Area — score 0.69
+## 1363. US-0686 Big South Fork National Recreation Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17712,7 +17725,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_528.jpg)
 
-## 1363. US-0686 Big South Fork National Recreation Area — score 0.69
+## 1364. US-0686 Big South Fork National Recreation Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17725,7 +17738,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_529.jpg)
 
-## 1364. US-0686 Big South Fork National Recreation Area — score 0.69
+## 1365. US-0686 Big South Fork National Recreation Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17738,7 +17751,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_530.jpg)
 
-## 1365. US-0686 Big South Fork National Recreation Area — score 0.69
+## 1366. US-0686 Big South Fork National Recreation Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17751,7 +17764,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_531.jpg)
 
-## 1366. US-0686 Big South Fork National Recreation Area — score 0.69
+## 1367. US-0686 Big South Fork National Recreation Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17764,7 +17777,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_532.jpg)
 
-## 1367. US-0686 Big South Fork National Recreation Area — score 0.69
+## 1368. US-0686 Big South Fork National Recreation Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17777,7 +17790,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_533.jpg)
 
-## 1368. US-0686 Big South Fork National Recreation Area — score 0.69
+## 1369. US-0686 Big South Fork National Recreation Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17790,7 +17803,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_534.jpg)
 
-## 1369. US-0686 Big South Fork National Recreation Area — score 0.69
+## 1370. US-0686 Big South Fork National Recreation Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17803,7 +17816,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_535.jpg)
 
-## 1370. US-0686 Big South Fork National Recreation Area — score 0.69
+## 1371. US-0686 Big South Fork National Recreation Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17816,7 +17829,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_536.jpg)
 
-## 1371. US-0686 Big South Fork National Recreation Area — score 0.69
+## 1372. US-0686 Big South Fork National Recreation Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -17829,7 +17842,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0686_537.jpg)
 
-## 1372. US-0686 Big South Fork National Recreation Area — score 0.69
+## 1373. US-0686 Big South Fork National Recreation Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17842,7 +17855,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_538.jpg)
 
-## 1373. US-0686 Big South Fork National Recreation Area — score 0.69
+## 1374. US-0686 Big South Fork National Recreation Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17855,7 +17868,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_539.jpg)
 
-## 1374. US-0686 Big South Fork National Recreation Area — score 0.69
+## 1375. US-0686 Big South Fork National Recreation Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17868,7 +17881,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_540.jpg)
 
-## 1375. US-0686 Big South Fork National Recreation Area — score 0.69
+## 1376. US-0686 Big South Fork National Recreation Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17881,7 +17894,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_541.jpg)
 
-## 1376. US-0686 Big South Fork National Recreation Area — score 0.69
+## 1377. US-0686 Big South Fork National Recreation Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17894,7 +17907,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_542.jpg)
 
-## 1377. US-0686 Big South Fork National Recreation Area — score 0.69
+## 1378. US-0686 Big South Fork National Recreation Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17907,7 +17920,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_543.jpg)
 
-## 1378. US-0703 Fort Donelson National Battlefield — score 0.69
+## 1379. US-0703 Fort Donelson National Battlefield — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17920,7 +17933,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0703_68.jpg)
 
-## 1379. US-0703 Fort Donelson National Battlefield — score 0.69
+## 1380. US-0703 Fort Donelson National Battlefield — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -17933,7 +17946,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0703_69.jpg)
 
-## 1380. US-0703 Fort Donelson National Battlefield — score 0.69
+## 1381. US-0703 Fort Donelson National Battlefield — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -17946,7 +17959,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0703_70.jpg)
 
-## 1381. US-1253 Dawkins Line Rail Trail State Park — score 0.69
+## 1382. US-1253 Dawkins Line Rail Trail State Park — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17959,7 +17972,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1253_14.jpg)
 
-## 1382. US-1253 Dawkins Line Rail Trail State Park — score 0.69
+## 1383. US-1253 Dawkins Line Rail Trail State Park — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -17972,7 +17985,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-1253_15.jpg)
 
-## 1383. US-1258 Grayson Lake State Park — score 0.69
+## 1384. US-1258 Grayson Lake State Park — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17985,7 +17998,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1258_05.jpg)
 
-## 1384. US-1258 Grayson Lake State Park — score 0.69
+## 1385. US-1258 Grayson Lake State Park — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -17998,7 +18011,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1258_06.jpg)
 
-## 1385. US-1270 Paintsville Lake State Park — score 0.69
+## 1386. US-1270 Paintsville Lake State Park — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -18011,7 +18024,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-1270_05.jpg)
 
-## 1386. US-1271 Taylorsville Lake State Park — score 0.69
+## 1387. US-1271 Taylorsville Lake State Park — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18024,7 +18037,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1271_08.jpg)
 
-## 1387. US-1278 Dale Hollow State Park — score 0.69
+## 1388. US-1278 Dale Hollow State Park — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18037,7 +18050,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1278_20.jpg)
 
-## 1388. US-1278 Dale Hollow State Park — score 0.69
+## 1389. US-1278 Dale Hollow State Park — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18050,7 +18063,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1278_21.jpg)
 
-## 1389. US-1278 Dale Hollow State Park — score 0.69
+## 1390. US-1278 Dale Hollow State Park — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18063,7 +18076,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1278_22.jpg)
 
-## 1390. US-1281 Jenny Wiley State Park — score 0.69
+## 1391. US-1281 Jenny Wiley State Park — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18076,7 +18089,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1281_17.jpg)
 
-## 1391. US-1282 Kenlake State Park — score 0.69
+## 1392. US-1282 Kenlake State Park — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18089,7 +18102,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1282_28.jpg)
 
-## 1392. US-1282 Kenlake State Park — score 0.69
+## 1393. US-1282 Kenlake State Park — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18102,7 +18115,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1282_29.jpg)
 
-## 1393. US-1283 Kentucky Dam Village State Park — score 0.69
+## 1394. US-1283 Kentucky Dam Village State Park — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18115,7 +18128,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_39.jpg)
 
-## 1394. US-1284 Lake Barkley State Park — score 0.69
+## 1395. US-1284 Lake Barkley State Park — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18128,7 +18141,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1284_07.jpg)
 
-## 1395. US-1284 Lake Barkley State Park — score 0.69
+## 1396. US-1284 Lake Barkley State Park — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18141,7 +18154,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1284_08.jpg)
 
-## 1396. US-1284 Lake Barkley State Park — score 0.69
+## 1397. US-1284 Lake Barkley State Park — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18154,7 +18167,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1284_09.jpg)
 
-## 1397. US-1288 Pine Mountain State Park — score 0.69
+## 1398. US-1288 Pine Mountain State Park — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18167,7 +18180,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1288_12.jpg)
 
-## 1398. US-3781 Breaks Interstate State Park — score 0.69
+## 1399. US-3781 Breaks Interstate State Park — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18180,7 +18193,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_58.jpg)
 
-## 1399. US-3781 Breaks Interstate State Park — score 0.69
+## 1400. US-3781 Breaks Interstate State Park — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18193,7 +18206,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_59.jpg)
 
-## 1400. US-3781 Breaks Interstate State Park — score 0.69
+## 1401. US-3781 Breaks Interstate State Park — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18206,7 +18219,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_60.jpg)
 
-## 1401. US-3781 Breaks Interstate State Park — score 0.69
+## 1402. US-3781 Breaks Interstate State Park — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -18219,7 +18232,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3781_61.jpg)
 
-## 1402. US-3782 Dr. Thomas Walker State Historic Site — score 0.69
+## 1403. US-3782 Dr. Thomas Walker State Historic Site — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18232,7 +18245,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3782_02.jpg)
 
-## 1403. US-3792 Land Between the Lakes National Recreation Area — score 0.69
+## 1404. US-3792 Land Between the Lakes National Recreation Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18245,7 +18258,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_66.jpg)
 
-## 1404. US-3792 Land Between the Lakes National Recreation Area — score 0.69
+## 1405. US-3792 Land Between the Lakes National Recreation Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18258,7 +18271,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_67.jpg)
 
-## 1405. US-3792 Land Between the Lakes National Recreation Area — score 0.69
+## 1406. US-3792 Land Between the Lakes National Recreation Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18271,7 +18284,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_68.jpg)
 
-## 1406. US-3792 Land Between the Lakes National Recreation Area — score 0.69
+## 1407. US-3792 Land Between the Lakes National Recreation Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18284,7 +18297,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_69.jpg)
 
-## 1407. US-3792 Land Between the Lakes National Recreation Area — score 0.69
+## 1408. US-3792 Land Between the Lakes National Recreation Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18297,7 +18310,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_70.jpg)
 
-## 1408. US-3792 Land Between the Lakes National Recreation Area — score 0.69
+## 1409. US-3792 Land Between the Lakes National Recreation Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18310,7 +18323,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_71.jpg)
 
-## 1409. US-3793 Ballard Wildlife Management Area — score 0.69
+## 1410. US-3793 Ballard Wildlife Management Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -18323,7 +18336,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3793_20.jpg)
 
-## 1410. US-3794 Beaver Creek Wildlife Management Area — score 0.69
+## 1411. US-3794 Beaver Creek Wildlife Management Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -18336,7 +18349,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3794_09.jpg)
 
-## 1411. US-3794 Beaver Creek Wildlife Management Area — score 0.69
+## 1412. US-3794 Beaver Creek Wildlife Management Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18349,7 +18362,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3794_10.jpg)
 
-## 1412. US-3797 Boatwright Wildlife Management Area — score 0.69
+## 1413. US-3797 Boatwright Wildlife Management Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -18362,7 +18375,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3797_09.jpg)
 
-## 1413. US-3797 Boatwright Wildlife Management Area — score 0.69
+## 1414. US-3797 Boatwright Wildlife Management Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18375,7 +18388,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3797_10.jpg)
 
-## 1414. US-3800 Cedar Creek Lake Wildlife Management Area — score 0.69
+## 1415. US-3800 Cedar Creek Lake Wildlife Management Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -18388,7 +18401,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3800_13.jpg)
 
-## 1415. US-3813 Griffith Woods Wildlife Management Area — score 0.69
+## 1416. US-3813 Griffith Woods Wildlife Management Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -18401,7 +18414,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3813_08.jpg)
 
-## 1416. US-3815 Higginson-Henry Wildlife Management Area — score 0.69
+## 1417. US-3815 Higginson-Henry Wildlife Management Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18414,7 +18427,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3815_37.jpg)
 
-## 1417. US-3815 Higginson-Henry Wildlife Management Area — score 0.69
+## 1418. US-3815 Higginson-Henry Wildlife Management Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -18427,7 +18440,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3815_38.jpg)
 
-## 1418. US-3820 Kentucky River Wildlife Management Area — score 0.69
+## 1419. US-3820 Kentucky River Wildlife Management Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -18440,7 +18453,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3820_07.jpg)
 
-## 1419. US-3821 L. B. Davison Wildlife Management Area — score 0.69
+## 1420. US-3821 L. B. Davison Wildlife Management Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -18453,7 +18466,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3821_02.jpg)
 
-## 1420. US-3828 Peabody Wildlife Management Area — score 0.69
+## 1421. US-3828 Peabody Wildlife Management Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18466,7 +18479,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_58.jpg)
 
-## 1421. US-3828 Peabody Wildlife Management Area — score 0.69
+## 1422. US-3828 Peabody Wildlife Management Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18479,7 +18492,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_59.jpg)
 
-## 1422. US-3828 Peabody Wildlife Management Area — score 0.69
+## 1423. US-3828 Peabody Wildlife Management Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18492,7 +18505,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_60.jpg)
 
-## 1423. US-3828 Peabody Wildlife Management Area — score 0.69
+## 1424. US-3828 Peabody Wildlife Management Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18505,7 +18518,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_61.jpg)
 
-## 1424. US-3828 Peabody Wildlife Management Area — score 0.69
+## 1425. US-3828 Peabody Wildlife Management Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -18518,7 +18531,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_62.jpg)
 
-## 1425. US-3828 Peabody Wildlife Management Area — score 0.69
+## 1426. US-3828 Peabody Wildlife Management Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -18531,7 +18544,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_63.jpg)
 
-## 1426. US-3830 Sloughs Wildlife Management Area — score 0.69
+## 1427. US-3830 Sloughs Wildlife Management Area — score 0.69
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -18544,7 +18557,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3830_16.jpg)
 
-## 1427. US-0019 Cumberland Gap National Historical Park — score 0.68
+## 1428. US-0019 Cumberland Gap National Historical Park — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18557,7 +18570,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_48.jpg)
 
-## 1428. US-0019 Cumberland Gap National Historical Park — score 0.68
+## 1429. US-0019 Cumberland Gap National Historical Park — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18570,7 +18583,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_49.jpg)
 
-## 1429. US-0050 Mammoth Cave National Park — score 0.68
+## 1430. US-0050 Mammoth Cave National Park — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18583,7 +18596,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_76.jpg)
 
-## 1430. US-0050 Mammoth Cave National Park — score 0.68
+## 1431. US-0050 Mammoth Cave National Park — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -18596,7 +18609,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0050_77.jpg)
 
-## 1431. US-0050 Mammoth Cave National Park — score 0.68
+## 1432. US-0050 Mammoth Cave National Park — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18609,7 +18622,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_78.jpg)
 
-## 1432. US-0050 Mammoth Cave National Park — score 0.68
+## 1433. US-0050 Mammoth Cave National Park — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18622,7 +18635,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_79.jpg)
 
-## 1433. US-0050 Mammoth Cave National Park — score 0.68
+## 1434. US-0050 Mammoth Cave National Park — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -18635,7 +18648,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0050_80.jpg)
 
-## 1434. US-0050 Mammoth Cave National Park — score 0.68
+## 1435. US-0050 Mammoth Cave National Park — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -18648,7 +18661,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0050_81.jpg)
 
-## 1435. US-0050 Mammoth Cave National Park — score 0.68
+## 1436. US-0050 Mammoth Cave National Park — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18661,7 +18674,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_82.jpg)
 
-## 1436. US-0050 Mammoth Cave National Park — score 0.68
+## 1437. US-0050 Mammoth Cave National Park — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18674,7 +18687,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_83.jpg)
 
-## 1437. US-0295 Clarks River National Wildlife Refuge — score 0.68
+## 1438. US-0295 Clarks River National Wildlife Refuge — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -18687,7 +18700,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0295_16.jpg)
 
-## 1438. US-0686 Big South Fork National Recreation Area — score 0.68
+## 1439. US-0686 Big South Fork National Recreation Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18700,7 +18713,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_544.jpg)
 
-## 1439. US-0686 Big South Fork National Recreation Area — score 0.68
+## 1440. US-0686 Big South Fork National Recreation Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18713,7 +18726,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_545.jpg)
 
-## 1440. US-0686 Big South Fork National Recreation Area — score 0.68
+## 1441. US-0686 Big South Fork National Recreation Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18726,7 +18739,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_546.jpg)
 
-## 1441. US-0686 Big South Fork National Recreation Area — score 0.68
+## 1442. US-0686 Big South Fork National Recreation Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -18739,7 +18752,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0686_547.jpg)
 
-## 1442. US-0686 Big South Fork National Recreation Area — score 0.68
+## 1443. US-0686 Big South Fork National Recreation Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18752,7 +18765,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_548.jpg)
 
-## 1443. US-0686 Big South Fork National Recreation Area — score 0.68
+## 1444. US-0686 Big South Fork National Recreation Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18765,7 +18778,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_549.jpg)
 
-## 1444. US-0686 Big South Fork National Recreation Area — score 0.68
+## 1445. US-0686 Big South Fork National Recreation Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18778,7 +18791,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_550.jpg)
 
-## 1445. US-0686 Big South Fork National Recreation Area — score 0.68
+## 1446. US-0686 Big South Fork National Recreation Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18791,7 +18804,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_551.jpg)
 
-## 1446. US-0686 Big South Fork National Recreation Area — score 0.68
+## 1447. US-0686 Big South Fork National Recreation Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18804,7 +18817,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_552.jpg)
 
-## 1447. US-0686 Big South Fork National Recreation Area — score 0.68
+## 1448. US-0686 Big South Fork National Recreation Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18817,7 +18830,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_553.jpg)
 
-## 1448. US-0686 Big South Fork National Recreation Area — score 0.68
+## 1449. US-0686 Big South Fork National Recreation Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18830,7 +18843,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_554.jpg)
 
-## 1449. US-0686 Big South Fork National Recreation Area — score 0.68
+## 1450. US-0686 Big South Fork National Recreation Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18843,7 +18856,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_555.jpg)
 
-## 1450. US-0686 Big South Fork National Recreation Area — score 0.68
+## 1451. US-0686 Big South Fork National Recreation Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18856,7 +18869,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_556.jpg)
 
-## 1451. US-0686 Big South Fork National Recreation Area — score 0.68
+## 1452. US-0686 Big South Fork National Recreation Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18869,7 +18882,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_557.jpg)
 
-## 1452. US-0686 Big South Fork National Recreation Area — score 0.68
+## 1453. US-0686 Big South Fork National Recreation Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -18882,7 +18895,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0686_558.jpg)
 
-## 1453. US-0686 Big South Fork National Recreation Area — score 0.68
+## 1454. US-0686 Big South Fork National Recreation Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18895,7 +18908,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_559.jpg)
 
-## 1454. US-0686 Big South Fork National Recreation Area — score 0.68
+## 1455. US-0686 Big South Fork National Recreation Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18908,7 +18921,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_560.jpg)
 
-## 1455. US-0686 Big South Fork National Recreation Area — score 0.68
+## 1456. US-0686 Big South Fork National Recreation Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18921,7 +18934,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_561.jpg)
 
-## 1456. US-0686 Big South Fork National Recreation Area — score 0.68
+## 1457. US-0686 Big South Fork National Recreation Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18934,7 +18947,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_562.jpg)
 
-## 1457. US-0686 Big South Fork National Recreation Area — score 0.68
+## 1458. US-0686 Big South Fork National Recreation Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18947,7 +18960,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_563.jpg)
 
-## 1458. US-0686 Big South Fork National Recreation Area — score 0.68
+## 1459. US-0686 Big South Fork National Recreation Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18960,7 +18973,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_564.jpg)
 
-## 1459. US-0686 Big South Fork National Recreation Area — score 0.68
+## 1460. US-0686 Big South Fork National Recreation Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18973,7 +18986,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_565.jpg)
 
-## 1460. US-0686 Big South Fork National Recreation Area — score 0.68
+## 1461. US-0686 Big South Fork National Recreation Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18986,7 +18999,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_566.jpg)
 
-## 1461. US-0686 Big South Fork National Recreation Area — score 0.68
+## 1462. US-0686 Big South Fork National Recreation Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -18999,7 +19012,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_567.jpg)
 
-## 1462. US-0686 Big South Fork National Recreation Area — score 0.68
+## 1463. US-0686 Big South Fork National Recreation Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19012,7 +19025,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_568.jpg)
 
-## 1463. US-0686 Big South Fork National Recreation Area — score 0.68
+## 1464. US-0686 Big South Fork National Recreation Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19025,7 +19038,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_569.jpg)
 
-## 1464. US-0686 Big South Fork National Recreation Area — score 0.68
+## 1465. US-0686 Big South Fork National Recreation Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19038,7 +19051,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_570.jpg)
 
-## 1465. US-0686 Big South Fork National Recreation Area — score 0.68
+## 1466. US-0686 Big South Fork National Recreation Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19051,7 +19064,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_571.jpg)
 
-## 1466. US-0686 Big South Fork National Recreation Area — score 0.68
+## 1467. US-0686 Big South Fork National Recreation Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19064,7 +19077,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_572.jpg)
 
-## 1467. US-0686 Big South Fork National Recreation Area — score 0.68
+## 1468. US-0686 Big South Fork National Recreation Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19077,7 +19090,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_573.jpg)
 
-## 1468. US-0686 Big South Fork National Recreation Area — score 0.68
+## 1469. US-0686 Big South Fork National Recreation Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19090,7 +19103,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_574.jpg)
 
-## 1469. US-0686 Big South Fork National Recreation Area — score 0.68
+## 1470. US-0686 Big South Fork National Recreation Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19103,7 +19116,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_575.jpg)
 
-## 1470. US-0686 Big South Fork National Recreation Area — score 0.68
+## 1471. US-0686 Big South Fork National Recreation Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19116,7 +19129,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_576.jpg)
 
-## 1471. US-0686 Big South Fork National Recreation Area — score 0.68
+## 1472. US-0686 Big South Fork National Recreation Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -19129,7 +19142,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0686_577.jpg)
 
-## 1472. US-0703 Fort Donelson National Battlefield — score 0.68
+## 1473. US-0703 Fort Donelson National Battlefield — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -19142,7 +19155,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0703_71.jpg)
 
-## 1473. US-0703 Fort Donelson National Battlefield — score 0.68
+## 1474. US-0703 Fort Donelson National Battlefield — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -19155,7 +19168,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0703_72.jpg)
 
-## 1474. US-0703 Fort Donelson National Battlefield — score 0.68
+## 1475. US-0703 Fort Donelson National Battlefield — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19168,7 +19181,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0703_73.jpg)
 
-## 1475. US-0703 Fort Donelson National Battlefield — score 0.68
+## 1476. US-0703 Fort Donelson National Battlefield — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19181,7 +19194,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0703_74.jpg)
 
-## 1476. US-0703 Fort Donelson National Battlefield — score 0.68
+## 1477. US-0703 Fort Donelson National Battlefield — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19194,7 +19207,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0703_75.jpg)
 
-## 1477. US-1251 Carr Creek State Park — score 0.68
+## 1478. US-1251 Carr Creek State Park — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -19207,7 +19220,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-1251_05.jpg)
 
-## 1478. US-1253 Dawkins Line Rail Trail State Park — score 0.68
+## 1479. US-1253 Dawkins Line Rail Trail State Park — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19220,7 +19233,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1253_16.jpg)
 
-## 1479. US-1255 Fishtrap Lake Wildlife Management Area — score 0.68
+## 1480. US-1255 Fishtrap Lake Wildlife Management Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19233,7 +19246,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1255_03.jpg)
 
-## 1480. US-1261 Kincaid Lake State Park — score 0.68
+## 1481. US-1261 Kincaid Lake State Park — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19246,7 +19259,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1261_01.jpg)
 
-## 1481. US-1267 My Old Kentucky Home State Park — score 0.68
+## 1482. US-1267 My Old Kentucky Home State Park — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19259,7 +19272,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1267_03.jpg)
 
-## 1482. US-1271 Taylorsville Lake State Park — score 0.68
+## 1483. US-1271 Taylorsville Lake State Park — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19272,7 +19285,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1271_09.jpg)
 
-## 1483. US-1272 Yatesville Lake State Park — score 0.68
+## 1484. US-1272 Yatesville Lake State Park — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -19285,7 +19298,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-1272_09.jpg)
 
-## 1484. US-1278 Dale Hollow State Park — score 0.68
+## 1485. US-1278 Dale Hollow State Park — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19298,7 +19311,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1278_23.jpg)
 
-## 1485. US-1281 Jenny Wiley State Park — score 0.68
+## 1486. US-1281 Jenny Wiley State Park — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19311,7 +19324,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1281_18.jpg)
 
-## 1486. US-1282 Kenlake State Park — score 0.68
+## 1487. US-1282 Kenlake State Park — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19324,7 +19337,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1282_30.jpg)
 
-## 1487. US-1283 Kentucky Dam Village State Park — score 0.68
+## 1488. US-1283 Kentucky Dam Village State Park — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19337,7 +19350,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_40.jpg)
 
-## 1488. US-1283 Kentucky Dam Village State Park — score 0.68
+## 1489. US-1283 Kentucky Dam Village State Park — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19350,7 +19363,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_41.jpg)
 
-## 1489. US-1284 Lake Barkley State Park — score 0.68
+## 1490. US-1284 Lake Barkley State Park — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19363,7 +19376,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1284_10.jpg)
 
-## 1490. US-1284 Lake Barkley State Park — score 0.68
+## 1491. US-1284 Lake Barkley State Park — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19376,7 +19389,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1284_11.jpg)
 
-## 1491. US-1287 Pennyrile Forest State Park — score 0.68
+## 1492. US-1287 Pennyrile Forest State Park — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19389,7 +19402,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1287_01.jpg)
 
-## 1492. US-1288 Pine Mountain State Park — score 0.68
+## 1493. US-1288 Pine Mountain State Park — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19402,7 +19415,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1288_13.jpg)
 
-## 1493. US-3781 Breaks Interstate State Park — score 0.68
+## 1494. US-3781 Breaks Interstate State Park — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19415,7 +19428,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_62.jpg)
 
-## 1494. US-3781 Breaks Interstate State Park — score 0.68
+## 1495. US-3781 Breaks Interstate State Park — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19428,7 +19441,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_63.jpg)
 
-## 1495. US-3782 Dr. Thomas Walker State Historic Site — score 0.68
+## 1496. US-3782 Dr. Thomas Walker State Historic Site — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19441,7 +19454,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3782_03.jpg)
 
-## 1496. US-3785 Perryville Battlefield State Historic Site — score 0.68
+## 1497. US-3785 Perryville Battlefield State Historic Site — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19454,7 +19467,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3785_04.jpg)
 
-## 1497. US-3789 William Whitley House State Historic Site — score 0.68
+## 1498. US-3789 William Whitley House State Historic Site — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19467,7 +19480,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3789_01.jpg)
 
-## 1498. US-3792 Land Between the Lakes National Recreation Area — score 0.68
+## 1499. US-3792 Land Between the Lakes National Recreation Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19480,7 +19493,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_72.jpg)
 
-## 1499. US-3792 Land Between the Lakes National Recreation Area — score 0.68
+## 1500. US-3792 Land Between the Lakes National Recreation Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19493,7 +19506,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_73.jpg)
 
-## 1500. US-3792 Land Between the Lakes National Recreation Area — score 0.68
+## 1501. US-3792 Land Between the Lakes National Recreation Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19506,7 +19519,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_74.jpg)
 
-## 1501. US-3792 Land Between the Lakes National Recreation Area — score 0.68
+## 1502. US-3792 Land Between the Lakes National Recreation Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19519,7 +19532,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_75.jpg)
 
-## 1502. US-3792 Land Between the Lakes National Recreation Area — score 0.68
+## 1503. US-3792 Land Between the Lakes National Recreation Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19532,7 +19545,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_76.jpg)
 
-## 1503. US-3792 Land Between the Lakes National Recreation Area — score 0.68
+## 1504. US-3792 Land Between the Lakes National Recreation Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19545,7 +19558,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_77.jpg)
 
-## 1504. US-3792 Land Between the Lakes National Recreation Area — score 0.68
+## 1505. US-3792 Land Between the Lakes National Recreation Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19558,7 +19571,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_78.jpg)
 
-## 1505. US-3792 Land Between the Lakes National Recreation Area — score 0.68
+## 1506. US-3792 Land Between the Lakes National Recreation Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19571,7 +19584,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_79.jpg)
 
-## 1506. US-3793 Ballard Wildlife Management Area — score 0.68
+## 1507. US-3793 Ballard Wildlife Management Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -19584,7 +19597,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3793_21.jpg)
 
-## 1507. US-3793 Ballard Wildlife Management Area — score 0.68
+## 1508. US-3793 Ballard Wildlife Management Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19597,7 +19610,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3793_22.jpg)
 
-## 1508. US-3796 Big Rivers Wildlife Management Area — score 0.68
+## 1509. US-3796 Big Rivers Wildlife Management Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -19610,7 +19623,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3796_05.jpg)
 
-## 1509. US-3797 Boatwright Wildlife Management Area — score 0.68
+## 1510. US-3797 Boatwright Wildlife Management Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -19623,7 +19636,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3797_11.jpg)
 
-## 1510. US-3802 Clyde E Buckley Sanctuary — score 0.68
+## 1511. US-3802 Clyde E Buckley Sanctuary — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -19636,7 +19649,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3802_07.jpg)
 
-## 1511. US-3809 Dr. James R. Rich Wildlife Management Area — score 0.68
+## 1512. US-3809 Dr. James R. Rich Wildlife Management Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19649,7 +19662,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3809_10.jpg)
 
-## 1512. US-3815 Higginson-Henry Wildlife Management Area — score 0.68
+## 1513. US-3815 Higginson-Henry Wildlife Management Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19662,7 +19675,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3815_39.jpg)
 
-## 1513. US-3816 John A. Kleber Wildlife Management Area — score 0.68
+## 1514. US-3816 John A. Kleber Wildlife Management Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -19675,7 +19688,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3816_10.jpg)
 
-## 1514. US-3825 Miller Welch Wildlife Management Area — score 0.68
+## 1515. US-3825 Miller Welch Wildlife Management Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19688,7 +19701,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3825_07.jpg)
 
-## 1515. US-3825 Miller Welch Wildlife Management Area — score 0.68
+## 1516. US-3825 Miller Welch Wildlife Management Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -19701,7 +19714,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3825_08.jpg)
 
-## 1516. US-3828 Peabody Wildlife Management Area — score 0.68
+## 1517. US-3828 Peabody Wildlife Management Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19714,7 +19727,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_64.jpg)
 
-## 1517. US-3828 Peabody Wildlife Management Area — score 0.68
+## 1518. US-3828 Peabody Wildlife Management Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19727,7 +19740,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_65.jpg)
 
-## 1518. US-3830 Sloughs Wildlife Management Area — score 0.68
+## 1519. US-3830 Sloughs Wildlife Management Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19740,7 +19753,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3830_17.jpg)
 
-## 1519. US-3830 Sloughs Wildlife Management Area — score 0.68
+## 1520. US-3830 Sloughs Wildlife Management Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -19753,7 +19766,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3830_18.jpg)
 
-## 1520. US-3830 Sloughs Wildlife Management Area — score 0.68
+## 1521. US-3830 Sloughs Wildlife Management Area — score 0.68
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -19766,7 +19779,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3830_19.jpg)
 
-## 1521. US-0019 Cumberland Gap National Historical Park — score 0.67
+## 1522. US-0019 Cumberland Gap National Historical Park — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19779,7 +19792,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_50.jpg)
 
-## 1522. US-0019 Cumberland Gap National Historical Park — score 0.67
+## 1523. US-0019 Cumberland Gap National Historical Park — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19792,7 +19805,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_51.jpg)
 
-## 1523. US-0019 Cumberland Gap National Historical Park — score 0.67
+## 1524. US-0019 Cumberland Gap National Historical Park — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19805,7 +19818,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_52.jpg)
 
-## 1524. US-0050 Mammoth Cave National Park — score 0.67
+## 1525. US-0050 Mammoth Cave National Park — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19818,7 +19831,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_84.jpg)
 
-## 1525. US-0050 Mammoth Cave National Park — score 0.67
+## 1526. US-0050 Mammoth Cave National Park — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19831,7 +19844,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_85.jpg)
 
-## 1526. US-0050 Mammoth Cave National Park — score 0.67
+## 1527. US-0050 Mammoth Cave National Park — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19844,7 +19857,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_86.jpg)
 
-## 1527. US-0050 Mammoth Cave National Park — score 0.67
+## 1528. US-0050 Mammoth Cave National Park — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19857,7 +19870,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_87.jpg)
 
-## 1528. US-0050 Mammoth Cave National Park — score 0.67
+## 1529. US-0050 Mammoth Cave National Park — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19870,7 +19883,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_88.jpg)
 
-## 1529. US-0050 Mammoth Cave National Park — score 0.67
+## 1530. US-0050 Mammoth Cave National Park — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19883,7 +19896,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_89.jpg)
 
-## 1530. US-0295 Clarks River National Wildlife Refuge — score 0.67
+## 1531. US-0295 Clarks River National Wildlife Refuge — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -19896,7 +19909,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0295_17.jpg)
 
-## 1531. US-0295 Clarks River National Wildlife Refuge — score 0.67
+## 1532. US-0295 Clarks River National Wildlife Refuge — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -19909,7 +19922,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0295_18.jpg)
 
-## 1532. US-0295 Clarks River National Wildlife Refuge — score 0.67
+## 1533. US-0295 Clarks River National Wildlife Refuge — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19922,7 +19935,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0295_19.jpg)
 
-## 1533. US-0686 Big South Fork National Recreation Area — score 0.67
+## 1534. US-0686 Big South Fork National Recreation Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19935,7 +19948,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_578.jpg)
 
-## 1534. US-0686 Big South Fork National Recreation Area — score 0.67
+## 1535. US-0686 Big South Fork National Recreation Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19948,7 +19961,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_579.jpg)
 
-## 1535. US-0686 Big South Fork National Recreation Area — score 0.67
+## 1536. US-0686 Big South Fork National Recreation Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -19961,7 +19974,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0686_580.jpg)
 
-## 1536. US-0686 Big South Fork National Recreation Area — score 0.67
+## 1537. US-0686 Big South Fork National Recreation Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19974,7 +19987,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_581.jpg)
 
-## 1537. US-0686 Big South Fork National Recreation Area — score 0.67
+## 1538. US-0686 Big South Fork National Recreation Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -19987,7 +20000,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_582.jpg)
 
-## 1538. US-0686 Big South Fork National Recreation Area — score 0.67
+## 1539. US-0686 Big South Fork National Recreation Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20000,7 +20013,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_583.jpg)
 
-## 1539. US-0686 Big South Fork National Recreation Area — score 0.67
+## 1540. US-0686 Big South Fork National Recreation Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20013,7 +20026,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_584.jpg)
 
-## 1540. US-0686 Big South Fork National Recreation Area — score 0.67
+## 1541. US-0686 Big South Fork National Recreation Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20026,7 +20039,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_585.jpg)
 
-## 1541. US-0686 Big South Fork National Recreation Area — score 0.67
+## 1542. US-0686 Big South Fork National Recreation Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20039,7 +20052,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_586.jpg)
 
-## 1542. US-0686 Big South Fork National Recreation Area — score 0.67
+## 1543. US-0686 Big South Fork National Recreation Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20052,7 +20065,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_587.jpg)
 
-## 1543. US-0686 Big South Fork National Recreation Area — score 0.67
+## 1544. US-0686 Big South Fork National Recreation Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20065,7 +20078,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_588.jpg)
 
-## 1544. US-0686 Big South Fork National Recreation Area — score 0.67
+## 1545. US-0686 Big South Fork National Recreation Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20078,7 +20091,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_589.jpg)
 
-## 1545. US-0686 Big South Fork National Recreation Area — score 0.67
+## 1546. US-0686 Big South Fork National Recreation Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20091,7 +20104,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_590.jpg)
 
-## 1546. US-0686 Big South Fork National Recreation Area — score 0.67
+## 1547. US-0686 Big South Fork National Recreation Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20104,7 +20117,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_591.jpg)
 
-## 1547. US-0686 Big South Fork National Recreation Area — score 0.67
+## 1548. US-0686 Big South Fork National Recreation Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20117,7 +20130,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_592.jpg)
 
-## 1548. US-0686 Big South Fork National Recreation Area — score 0.67
+## 1549. US-0686 Big South Fork National Recreation Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20130,7 +20143,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_593.jpg)
 
-## 1549. US-0686 Big South Fork National Recreation Area — score 0.67
+## 1550. US-0686 Big South Fork National Recreation Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20143,7 +20156,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_594.jpg)
 
-## 1550. US-0686 Big South Fork National Recreation Area — score 0.67
+## 1551. US-0686 Big South Fork National Recreation Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20156,7 +20169,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_595.jpg)
 
-## 1551. US-0686 Big South Fork National Recreation Area — score 0.67
+## 1552. US-0686 Big South Fork National Recreation Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20169,7 +20182,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_596.jpg)
 
-## 1552. US-0686 Big South Fork National Recreation Area — score 0.67
+## 1553. US-0686 Big South Fork National Recreation Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20182,7 +20195,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_597.jpg)
 
-## 1553. US-0686 Big South Fork National Recreation Area — score 0.67
+## 1554. US-0686 Big South Fork National Recreation Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20195,7 +20208,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_598.jpg)
 
-## 1554. US-0686 Big South Fork National Recreation Area — score 0.67
+## 1555. US-0686 Big South Fork National Recreation Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20208,7 +20221,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_599.jpg)
 
-## 1555. US-0686 Big South Fork National Recreation Area — score 0.67
+## 1556. US-0686 Big South Fork National Recreation Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20221,7 +20234,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_600.jpg)
 
-## 1556. US-0686 Big South Fork National Recreation Area — score 0.67
+## 1557. US-0686 Big South Fork National Recreation Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20234,7 +20247,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_601.jpg)
 
-## 1557. US-0686 Big South Fork National Recreation Area — score 0.67
+## 1558. US-0686 Big South Fork National Recreation Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20247,7 +20260,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_602.jpg)
 
-## 1558. US-0686 Big South Fork National Recreation Area — score 0.67
+## 1559. US-0686 Big South Fork National Recreation Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20260,7 +20273,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_603.jpg)
 
-## 1559. US-0686 Big South Fork National Recreation Area — score 0.67
+## 1560. US-0686 Big South Fork National Recreation Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20273,7 +20286,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_604.jpg)
 
-## 1560. US-0686 Big South Fork National Recreation Area — score 0.67
+## 1561. US-0686 Big South Fork National Recreation Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20286,7 +20299,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_605.jpg)
 
-## 1561. US-0686 Big South Fork National Recreation Area — score 0.67
+## 1562. US-0686 Big South Fork National Recreation Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -20299,7 +20312,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0686_606.jpg)
 
-## 1562. US-0686 Big South Fork National Recreation Area — score 0.67
+## 1563. US-0686 Big South Fork National Recreation Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20312,7 +20325,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_607.jpg)
 
-## 1563. US-0686 Big South Fork National Recreation Area — score 0.67
+## 1564. US-0686 Big South Fork National Recreation Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20325,7 +20338,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_608.jpg)
 
-## 1564. US-0703 Fort Donelson National Battlefield — score 0.67
+## 1565. US-0703 Fort Donelson National Battlefield — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20338,7 +20351,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0703_76.jpg)
 
-## 1565. US-0703 Fort Donelson National Battlefield — score 0.67
+## 1566. US-0703 Fort Donelson National Battlefield — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20351,7 +20364,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0703_77.jpg)
 
-## 1566. US-1253 Dawkins Line Rail Trail State Park — score 0.67
+## 1567. US-1253 Dawkins Line Rail Trail State Park — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -20364,7 +20377,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-1253_17.jpg)
 
-## 1567. US-1255 Fishtrap Lake Wildlife Management Area — score 0.67
+## 1568. US-1255 Fishtrap Lake Wildlife Management Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20377,7 +20390,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1255_04.jpg)
 
-## 1568. US-1258 Grayson Lake State Park — score 0.67
+## 1569. US-1258 Grayson Lake State Park — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20390,7 +20403,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1258_07.jpg)
 
-## 1569. US-1264 Levi Jackson Wilderness Road State Park — score 0.67
+## 1570. US-1264 Levi Jackson Wilderness Road State Park — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20403,7 +20416,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1264_08.jpg)
 
-## 1570. US-1266 Mineral Mounds State Park — score 0.67
+## 1571. US-1266 Mineral Mounds State Park — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20416,7 +20429,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1266_05.jpg)
 
-## 1571. US-1267 My Old Kentucky Home State Park — score 0.67
+## 1572. US-1267 My Old Kentucky Home State Park — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20429,7 +20442,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1267_04.jpg)
 
-## 1572. US-1271 Taylorsville Lake State Park — score 0.67
+## 1573. US-1271 Taylorsville Lake State Park — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20442,7 +20455,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1271_10.jpg)
 
-## 1573. US-1272 Yatesville Lake State Park — score 0.67
+## 1574. US-1272 Yatesville Lake State Park — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -20455,7 +20468,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-1272_10.jpg)
 
-## 1574. US-1275 Buckhorn Lake State Park — score 0.67
+## 1575. US-1275 Buckhorn Lake State Park — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20468,7 +20481,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1275_02.jpg)
 
-## 1575. US-1278 Dale Hollow State Park — score 0.67
+## 1576. US-1278 Dale Hollow State Park — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20481,7 +20494,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1278_24.jpg)
 
-## 1576. US-1281 Jenny Wiley State Park — score 0.67
+## 1577. US-1281 Jenny Wiley State Park — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20494,7 +20507,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1281_19.jpg)
 
-## 1577. US-1282 Kenlake State Park — score 0.67
+## 1578. US-1282 Kenlake State Park — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20507,7 +20520,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1282_31.jpg)
 
-## 1578. US-1282 Kenlake State Park — score 0.67
+## 1579. US-1282 Kenlake State Park — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20520,7 +20533,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1282_32.jpg)
 
-## 1579. US-1283 Kentucky Dam Village State Park — score 0.67
+## 1580. US-1283 Kentucky Dam Village State Park — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20533,7 +20546,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_42.jpg)
 
-## 1580. US-1284 Lake Barkley State Park — score 0.67
+## 1581. US-1284 Lake Barkley State Park — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20546,7 +20559,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1284_12.jpg)
 
-## 1581. US-1285 Lake Cumberland State Park — score 0.67
+## 1582. US-1285 Lake Cumberland State Park — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20559,7 +20572,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1285_06.jpg)
 
-## 1582. US-1286 Natural Bridge State Park — score 0.67
+## 1583. US-1286 Natural Bridge State Park — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20572,7 +20585,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1286_05.jpg)
 
-## 1583. US-1287 Pennyrile Forest State Park — score 0.67
+## 1584. US-1287 Pennyrile Forest State Park — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20585,7 +20598,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1287_02.jpg)
 
-## 1584. US-1288 Pine Mountain State Park — score 0.67
+## 1585. US-1288 Pine Mountain State Park — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20598,7 +20611,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1288_14.jpg)
 
-## 1585. US-3779 Big Bone Lick State Historic Site — score 0.67
+## 1586. US-3779 Big Bone Lick State Historic Site — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -20611,7 +20624,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3779_09.jpg)
 
-## 1586. US-3781 Breaks Interstate State Park — score 0.67
+## 1587. US-3781 Breaks Interstate State Park — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20624,7 +20637,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_64.jpg)
 
-## 1587. US-3792 Land Between the Lakes National Recreation Area — score 0.67
+## 1588. US-3792 Land Between the Lakes National Recreation Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20637,7 +20650,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_80.jpg)
 
-## 1588. US-3792 Land Between the Lakes National Recreation Area — score 0.67
+## 1589. US-3792 Land Between the Lakes National Recreation Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20650,7 +20663,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_81.jpg)
 
-## 1589. US-3792 Land Between the Lakes National Recreation Area — score 0.67
+## 1590. US-3792 Land Between the Lakes National Recreation Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20663,7 +20676,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_82.jpg)
 
-## 1590. US-3792 Land Between the Lakes National Recreation Area — score 0.67
+## 1591. US-3792 Land Between the Lakes National Recreation Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20676,7 +20689,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_83.jpg)
 
-## 1591. US-3796 Big Rivers Wildlife Management Area — score 0.67
+## 1592. US-3796 Big Rivers Wildlife Management Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -20689,7 +20702,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3796_06.jpg)
 
-## 1592. US-3796 Big Rivers Wildlife Management Area — score 0.67
+## 1593. US-3796 Big Rivers Wildlife Management Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20702,7 +20715,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3796_07.jpg)
 
-## 1593. US-3797 Boatwright Wildlife Management Area — score 0.67
+## 1594. US-3797 Boatwright Wildlife Management Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -20715,7 +20728,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3797_12.jpg)
 
-## 1594. US-3816 John A. Kleber Wildlife Management Area — score 0.67
+## 1595. US-3816 John A. Kleber Wildlife Management Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -20728,7 +20741,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3816_11.jpg)
 
-## 1595. US-3816 John A. Kleber Wildlife Management Area — score 0.67
+## 1596. US-3816 John A. Kleber Wildlife Management Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20741,7 +20754,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3816_12.jpg)
 
-## 1596. US-3825 Miller Welch Wildlife Management Area — score 0.67
+## 1597. US-3825 Miller Welch Wildlife Management Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20754,7 +20767,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3825_09.jpg)
 
-## 1597. US-3825 Miller Welch Wildlife Management Area — score 0.67
+## 1598. US-3825 Miller Welch Wildlife Management Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -20767,7 +20780,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3825_10.jpg)
 
-## 1598. US-3827 Obion Creek Wildlife Management Area — score 0.67
+## 1599. US-3827 Obion Creek Wildlife Management Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20780,7 +20793,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3827_05.jpg)
 
-## 1599. US-3828 Peabody Wildlife Management Area — score 0.67
+## 1600. US-3828 Peabody Wildlife Management Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20793,7 +20806,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_66.jpg)
 
-## 1600. US-3828 Peabody Wildlife Management Area — score 0.67
+## 1601. US-3828 Peabody Wildlife Management Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -20806,7 +20819,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_67.jpg)
 
-## 1601. US-3828 Peabody Wildlife Management Area — score 0.67
+## 1602. US-3828 Peabody Wildlife Management Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20819,7 +20832,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_68.jpg)
 
-## 1602. US-3828 Peabody Wildlife Management Area — score 0.67
+## 1603. US-3828 Peabody Wildlife Management Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20832,7 +20845,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_69.jpg)
 
-## 1603. US-3830 Sloughs Wildlife Management Area — score 0.67
+## 1604. US-3830 Sloughs Wildlife Management Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -20845,7 +20858,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3830_20.jpg)
 
-## 1604. US-3830 Sloughs Wildlife Management Area — score 0.67
+## 1605. US-3830 Sloughs Wildlife Management Area — score 0.67
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -20858,7 +20871,20 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3830_21.jpg)
 
-## 1605. US-0019 Cumberland Gap National Historical Park — score 0.66
+## 1606. US-3834 Tradewater Wildlife Management Area — score 0.67
+
+**Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
+
+Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate. About 60 m outside the boundary. A bare patch of about 408 m² (24 x 36 m) touches Outwood (S1400, local road) for about 37 m; 53% of it is grey like gravel or pavement. NAIP photo 2022.
+
+- where: 37.138769, -87.667572 (outside, about 58 m)
+- road: Outwood (S1400)
+- photo: NAIP 2022
+- sources: [NAIP photo](https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPImagery/ImageServer/exportImage?bbox=440420.00%2C4109920.00%2C441080.00%2C4110580.00&bboxSR=32616&imageSR=32616&size=1100%2C1100&format=tiff&pixelType=U8&noData=0&renderingRule=%7B%22rasterFunction%22%3A+%22None%22%7D&interpolation=RSP_BilinearInterpolation&f=image) · [TIGER roads](https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/8/query?where=1%3D1&geometry=-87.681212%2C37.132765%2C-87.646346%2C37.165193&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=MTFCC%2CNAME%2CBASENAME%2COBJECTID&returnGeometry=true&outSR=4326&resultOffset=0&resultRecordCount=2000&f=json) · outline: /home/runner/work/KPC-Data/KPC-Data/prep/one/US-3834.geojson · read 2026-11-15
+
+![chip](chips/US-3834_01.jpg)
+
+## 1607. US-0019 Cumberland Gap National Historical Park — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20871,7 +20897,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_53.jpg)
 
-## 1606. US-0019 Cumberland Gap National Historical Park — score 0.66
+## 1608. US-0019 Cumberland Gap National Historical Park — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20884,7 +20910,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_54.jpg)
 
-## 1607. US-0050 Mammoth Cave National Park — score 0.66
+## 1609. US-0050 Mammoth Cave National Park — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20897,7 +20923,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_90.jpg)
 
-## 1608. US-0050 Mammoth Cave National Park — score 0.66
+## 1610. US-0050 Mammoth Cave National Park — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20910,7 +20936,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_91.jpg)
 
-## 1609. US-0050 Mammoth Cave National Park — score 0.66
+## 1611. US-0050 Mammoth Cave National Park — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20923,7 +20949,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_92.jpg)
 
-## 1610. US-0050 Mammoth Cave National Park — score 0.66
+## 1612. US-0050 Mammoth Cave National Park — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20936,7 +20962,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_93.jpg)
 
-## 1611. US-0050 Mammoth Cave National Park — score 0.66
+## 1613. US-0050 Mammoth Cave National Park — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20949,7 +20975,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_94.jpg)
 
-## 1612. US-0295 Clarks River National Wildlife Refuge — score 0.66
+## 1614. US-0295 Clarks River National Wildlife Refuge — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20962,7 +20988,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0295_20.jpg)
 
-## 1613. US-0686 Big South Fork National Recreation Area — score 0.66
+## 1615. US-0686 Big South Fork National Recreation Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20975,7 +21001,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_609.jpg)
 
-## 1614. US-0686 Big South Fork National Recreation Area — score 0.66
+## 1616. US-0686 Big South Fork National Recreation Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -20988,7 +21014,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_610.jpg)
 
-## 1615. US-0686 Big South Fork National Recreation Area — score 0.66
+## 1617. US-0686 Big South Fork National Recreation Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21001,7 +21027,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_611.jpg)
 
-## 1616. US-0686 Big South Fork National Recreation Area — score 0.66
+## 1618. US-0686 Big South Fork National Recreation Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21014,7 +21040,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_612.jpg)
 
-## 1617. US-0686 Big South Fork National Recreation Area — score 0.66
+## 1619. US-0686 Big South Fork National Recreation Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21027,7 +21053,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_613.jpg)
 
-## 1618. US-0686 Big South Fork National Recreation Area — score 0.66
+## 1620. US-0686 Big South Fork National Recreation Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21040,7 +21066,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_614.jpg)
 
-## 1619. US-0686 Big South Fork National Recreation Area — score 0.66
+## 1621. US-0686 Big South Fork National Recreation Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21053,7 +21079,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_615.jpg)
 
-## 1620. US-0686 Big South Fork National Recreation Area — score 0.66
+## 1622. US-0686 Big South Fork National Recreation Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21066,7 +21092,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_616.jpg)
 
-## 1621. US-0686 Big South Fork National Recreation Area — score 0.66
+## 1623. US-0686 Big South Fork National Recreation Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21079,7 +21105,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_617.jpg)
 
-## 1622. US-0686 Big South Fork National Recreation Area — score 0.66
+## 1624. US-0686 Big South Fork National Recreation Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -21092,7 +21118,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0686_618.jpg)
 
-## 1623. US-0686 Big South Fork National Recreation Area — score 0.66
+## 1625. US-0686 Big South Fork National Recreation Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21105,7 +21131,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_619.jpg)
 
-## 1624. US-0686 Big South Fork National Recreation Area — score 0.66
+## 1626. US-0686 Big South Fork National Recreation Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21118,7 +21144,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_620.jpg)
 
-## 1625. US-0686 Big South Fork National Recreation Area — score 0.66
+## 1627. US-0686 Big South Fork National Recreation Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21131,7 +21157,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_621.jpg)
 
-## 1626. US-0686 Big South Fork National Recreation Area — score 0.66
+## 1628. US-0686 Big South Fork National Recreation Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21144,7 +21170,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_622.jpg)
 
-## 1627. US-0686 Big South Fork National Recreation Area — score 0.66
+## 1629. US-0686 Big South Fork National Recreation Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21157,7 +21183,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_623.jpg)
 
-## 1628. US-0686 Big South Fork National Recreation Area — score 0.66
+## 1630. US-0686 Big South Fork National Recreation Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21170,7 +21196,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_624.jpg)
 
-## 1629. US-0686 Big South Fork National Recreation Area — score 0.66
+## 1631. US-0686 Big South Fork National Recreation Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21183,7 +21209,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_625.jpg)
 
-## 1630. US-0686 Big South Fork National Recreation Area — score 0.66
+## 1632. US-0686 Big South Fork National Recreation Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21196,7 +21222,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_626.jpg)
 
-## 1631. US-0686 Big South Fork National Recreation Area — score 0.66
+## 1633. US-0686 Big South Fork National Recreation Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21209,7 +21235,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_627.jpg)
 
-## 1632. US-0686 Big South Fork National Recreation Area — score 0.66
+## 1634. US-0686 Big South Fork National Recreation Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21222,7 +21248,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_628.jpg)
 
-## 1633. US-0686 Big South Fork National Recreation Area — score 0.66
+## 1635. US-0686 Big South Fork National Recreation Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21235,7 +21261,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_629.jpg)
 
-## 1634. US-0686 Big South Fork National Recreation Area — score 0.66
+## 1636. US-0686 Big South Fork National Recreation Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21248,7 +21274,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_630.jpg)
 
-## 1635. US-0686 Big South Fork National Recreation Area — score 0.66
+## 1637. US-0686 Big South Fork National Recreation Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -21261,7 +21287,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0686_631.jpg)
 
-## 1636. US-0686 Big South Fork National Recreation Area — score 0.66
+## 1638. US-0686 Big South Fork National Recreation Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21274,7 +21300,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_632.jpg)
 
-## 1637. US-0686 Big South Fork National Recreation Area — score 0.66
+## 1639. US-0686 Big South Fork National Recreation Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21287,7 +21313,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_633.jpg)
 
-## 1638. US-0686 Big South Fork National Recreation Area — score 0.66
+## 1640. US-0686 Big South Fork National Recreation Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -21300,7 +21326,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0686_634.jpg)
 
-## 1639. US-0703 Fort Donelson National Battlefield — score 0.66
+## 1641. US-0703 Fort Donelson National Battlefield — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -21313,7 +21339,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0703_78.jpg)
 
-## 1640. US-1253 Dawkins Line Rail Trail State Park — score 0.66
+## 1642. US-1253 Dawkins Line Rail Trail State Park — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -21326,7 +21352,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-1253_18.jpg)
 
-## 1641. US-1258 Grayson Lake State Park — score 0.66
+## 1643. US-1258 Grayson Lake State Park — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21339,7 +21365,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1258_08.jpg)
 
-## 1642. US-1261 Kincaid Lake State Park — score 0.66
+## 1644. US-1261 Kincaid Lake State Park — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21352,7 +21378,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1261_02.jpg)
 
-## 1643. US-1264 Levi Jackson Wilderness Road State Park — score 0.66
+## 1645. US-1264 Levi Jackson Wilderness Road State Park — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -21365,7 +21391,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-1264_09.jpg)
 
-## 1644. US-1264 Levi Jackson Wilderness Road State Park — score 0.66
+## 1646. US-1264 Levi Jackson Wilderness Road State Park — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21378,7 +21404,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1264_10.jpg)
 
-## 1645. US-1267 My Old Kentucky Home State Park — score 0.66
+## 1647. US-1267 My Old Kentucky Home State Park — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21391,7 +21417,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1267_05.jpg)
 
-## 1646. US-1274 Blue Licks Battlefield State Park — score 0.66
+## 1648. US-1274 Blue Licks Battlefield State Park — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -21404,7 +21430,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-1274_05.jpg)
 
-## 1647. US-1274 Blue Licks Battlefield State Park — score 0.66
+## 1649. US-1274 Blue Licks Battlefield State Park — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21417,7 +21443,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1274_06.jpg)
 
-## 1648. US-1275 Buckhorn Lake State Park — score 0.66
+## 1650. US-1275 Buckhorn Lake State Park — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21430,7 +21456,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1275_03.jpg)
 
-## 1649. US-1276 Carter Caves State Park — score 0.66
+## 1651. US-1276 Carter Caves State Park — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21443,7 +21469,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1276_01.jpg)
 
-## 1650. US-1279 General Butler State Park — score 0.66
+## 1652. US-1279 General Butler State Park — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21456,7 +21482,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1279_06.jpg)
 
-## 1651. US-1282 Kenlake State Park — score 0.66
+## 1653. US-1282 Kenlake State Park — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -21469,7 +21495,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-1282_33.jpg)
 
-## 1652. US-1282 Kenlake State Park — score 0.66
+## 1654. US-1282 Kenlake State Park — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21482,7 +21508,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1282_34.jpg)
 
-## 1653. US-1282 Kenlake State Park — score 0.66
+## 1655. US-1282 Kenlake State Park — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21495,7 +21521,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1282_35.jpg)
 
-## 1654. US-1284 Lake Barkley State Park — score 0.66
+## 1656. US-1284 Lake Barkley State Park — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21508,7 +21534,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1284_13.jpg)
 
-## 1655. US-1289 Rough River Dam State Park — score 0.66
+## 1657. US-1289 Rough River Dam State Park — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21521,7 +21547,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1289_09.jpg)
 
-## 1656. US-3781 Breaks Interstate State Park — score 0.66
+## 1658. US-3781 Breaks Interstate State Park — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21534,7 +21560,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_65.jpg)
 
-## 1657. US-3781 Breaks Interstate State Park — score 0.66
+## 1659. US-3781 Breaks Interstate State Park — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21547,7 +21573,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_66.jpg)
 
-## 1658. US-3781 Breaks Interstate State Park — score 0.66
+## 1660. US-3781 Breaks Interstate State Park — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21560,7 +21586,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_67.jpg)
 
-## 1659. US-3781 Breaks Interstate State Park — score 0.66
+## 1661. US-3781 Breaks Interstate State Park — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21573,7 +21599,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_68.jpg)
 
-## 1660. US-3792 Land Between the Lakes National Recreation Area — score 0.66
+## 1662. US-3792 Land Between the Lakes National Recreation Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21586,7 +21612,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_84.jpg)
 
-## 1661. US-3792 Land Between the Lakes National Recreation Area — score 0.66
+## 1663. US-3792 Land Between the Lakes National Recreation Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21599,7 +21625,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_85.jpg)
 
-## 1662. US-3792 Land Between the Lakes National Recreation Area — score 0.66
+## 1664. US-3792 Land Between the Lakes National Recreation Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21612,7 +21638,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_86.jpg)
 
-## 1663. US-3792 Land Between the Lakes National Recreation Area — score 0.66
+## 1665. US-3792 Land Between the Lakes National Recreation Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21625,7 +21651,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_87.jpg)
 
-## 1664. US-3792 Land Between the Lakes National Recreation Area — score 0.66
+## 1666. US-3792 Land Between the Lakes National Recreation Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21638,7 +21664,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_88.jpg)
 
-## 1665. US-3792 Land Between the Lakes National Recreation Area — score 0.66
+## 1667. US-3792 Land Between the Lakes National Recreation Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21651,7 +21677,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_89.jpg)
 
-## 1666. US-3793 Ballard Wildlife Management Area — score 0.66
+## 1668. US-3793 Ballard Wildlife Management Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21664,7 +21690,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3793_23.jpg)
 
-## 1667. US-3794 Beaver Creek Wildlife Management Area — score 0.66
+## 1669. US-3794 Beaver Creek Wildlife Management Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21677,7 +21703,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3794_11.jpg)
 
-## 1668. US-3794 Beaver Creek Wildlife Management Area — score 0.66
+## 1670. US-3794 Beaver Creek Wildlife Management Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -21690,7 +21716,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3794_12.jpg)
 
-## 1669. US-3794 Beaver Creek Wildlife Management Area — score 0.66
+## 1671. US-3794 Beaver Creek Wildlife Management Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -21703,7 +21729,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3794_13.jpg)
 
-## 1670. US-3800 Cedar Creek Lake Wildlife Management Area — score 0.66
+## 1672. US-3800 Cedar Creek Lake Wildlife Management Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21716,7 +21742,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3800_14.jpg)
 
-## 1671. US-3815 Higginson-Henry Wildlife Management Area — score 0.66
+## 1673. US-3815 Higginson-Henry Wildlife Management Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -21729,7 +21755,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3815_40.jpg)
 
-## 1672. US-3816 John A. Kleber Wildlife Management Area — score 0.66
+## 1674. US-3816 John A. Kleber Wildlife Management Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21742,7 +21768,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3816_13.jpg)
 
-## 1673. US-3825 Miller Welch Wildlife Management Area — score 0.66
+## 1675. US-3825 Miller Welch Wildlife Management Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -21755,7 +21781,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3825_11.jpg)
 
-## 1674. US-3828 Peabody Wildlife Management Area — score 0.66
+## 1676. US-3828 Peabody Wildlife Management Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21768,7 +21794,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_70.jpg)
 
-## 1675. US-3828 Peabody Wildlife Management Area — score 0.66
+## 1677. US-3828 Peabody Wildlife Management Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21781,7 +21807,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_71.jpg)
 
-## 1676. US-3828 Peabody Wildlife Management Area — score 0.66
+## 1678. US-3828 Peabody Wildlife Management Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21794,7 +21820,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_72.jpg)
 
-## 1677. US-3828 Peabody Wildlife Management Area — score 0.66
+## 1679. US-3828 Peabody Wildlife Management Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -21807,7 +21833,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_73.jpg)
 
-## 1678. US-3828 Peabody Wildlife Management Area — score 0.66
+## 1680. US-3828 Peabody Wildlife Management Area — score 0.66
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -21820,7 +21846,20 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_74.jpg)
 
-## 1679. US-0019 Cumberland Gap National Historical Park — score 0.65
+## 1681. US-3836 Veterans Memorial Wildlife Management Area — score 0.66
+
+**Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
+
+Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate. About 20 m outside the boundary. A bare patch of about 572 m² (22 x 43 m) touches State Hwy 620 (S1200, primary/secondary road) for about 23 m; 13% of it is grey like gravel or pavement. NAIP photo 2022.
+
+- where: 38.346864, -84.533637 (outside, about 19 m)
+- road: State Hwy 620 (S1200)
+- photo: NAIP 2022
+- sources: [NAIP photo](https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPImagery/ImageServer/exportImage?bbox=715420.00%2C4246920.00%2C716080.00%2C4247580.00&bboxSR=32616&imageSR=32616&size=1100%2C1100&format=tiff&pixelType=U8&noData=0&renderingRule=%7B%22rasterFunction%22%3A+%22None%22%7D&interpolation=RSP_BilinearInterpolation&f=image) · [TIGER roads](https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/6/query?where=1%3D1&geometry=-84.570904%2C38.299682%2C-84.524217%2C38.352631&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=MTFCC%2CNAME%2CBASENAME%2COBJECTID&returnGeometry=true&outSR=4326&resultOffset=0&resultRecordCount=2000&f=json) · outline: /home/runner/work/KPC-Data/KPC-Data/prep/one/US-3836.geojson · read 2026-11-15
+
+![chip](chips/US-3836_02.jpg)
+
+## 1682. US-0019 Cumberland Gap National Historical Park — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21833,7 +21872,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_55.jpg)
 
-## 1680. US-0019 Cumberland Gap National Historical Park — score 0.65
+## 1683. US-0019 Cumberland Gap National Historical Park — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21846,7 +21885,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_56.jpg)
 
-## 1681. US-0019 Cumberland Gap National Historical Park — score 0.65
+## 1684. US-0019 Cumberland Gap National Historical Park — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21859,7 +21898,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_57.jpg)
 
-## 1682. US-0050 Mammoth Cave National Park — score 0.65
+## 1685. US-0050 Mammoth Cave National Park — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21872,7 +21911,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_95.jpg)
 
-## 1683. US-0050 Mammoth Cave National Park — score 0.65
+## 1686. US-0050 Mammoth Cave National Park — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21885,7 +21924,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_96.jpg)
 
-## 1684. US-0050 Mammoth Cave National Park — score 0.65
+## 1687. US-0050 Mammoth Cave National Park — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21898,7 +21937,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_97.jpg)
 
-## 1685. US-0050 Mammoth Cave National Park — score 0.65
+## 1688. US-0050 Mammoth Cave National Park — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21911,7 +21950,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_98.jpg)
 
-## 1686. US-0050 Mammoth Cave National Park — score 0.65
+## 1689. US-0050 Mammoth Cave National Park — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21924,7 +21963,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_99.jpg)
 
-## 1687. US-0538 Reelfoot National Wildlife Refuge — score 0.65
+## 1690. US-0538 Reelfoot National Wildlife Refuge — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -21937,7 +21976,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0538_02.jpg)
 
-## 1688. US-0686 Big South Fork National Recreation Area — score 0.65
+## 1691. US-0686 Big South Fork National Recreation Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21950,7 +21989,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_635.jpg)
 
-## 1689. US-0686 Big South Fork National Recreation Area — score 0.65
+## 1692. US-0686 Big South Fork National Recreation Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21963,7 +22002,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_636.jpg)
 
-## 1690. US-0686 Big South Fork National Recreation Area — score 0.65
+## 1693. US-0686 Big South Fork National Recreation Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21976,7 +22015,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_637.jpg)
 
-## 1691. US-0686 Big South Fork National Recreation Area — score 0.65
+## 1694. US-0686 Big South Fork National Recreation Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -21989,7 +22028,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_638.jpg)
 
-## 1692. US-0686 Big South Fork National Recreation Area — score 0.65
+## 1695. US-0686 Big South Fork National Recreation Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22002,7 +22041,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_639.jpg)
 
-## 1693. US-0686 Big South Fork National Recreation Area — score 0.65
+## 1696. US-0686 Big South Fork National Recreation Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22015,7 +22054,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_640.jpg)
 
-## 1694. US-0686 Big South Fork National Recreation Area — score 0.65
+## 1697. US-0686 Big South Fork National Recreation Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22028,7 +22067,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_641.jpg)
 
-## 1695. US-0686 Big South Fork National Recreation Area — score 0.65
+## 1698. US-0686 Big South Fork National Recreation Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22041,7 +22080,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_642.jpg)
 
-## 1696. US-0686 Big South Fork National Recreation Area — score 0.65
+## 1699. US-0686 Big South Fork National Recreation Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22054,7 +22093,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_643.jpg)
 
-## 1697. US-0686 Big South Fork National Recreation Area — score 0.65
+## 1700. US-0686 Big South Fork National Recreation Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22067,7 +22106,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_644.jpg)
 
-## 1698. US-0686 Big South Fork National Recreation Area — score 0.65
+## 1701. US-0686 Big South Fork National Recreation Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22080,7 +22119,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_645.jpg)
 
-## 1699. US-0686 Big South Fork National Recreation Area — score 0.65
+## 1702. US-0686 Big South Fork National Recreation Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22093,7 +22132,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_646.jpg)
 
-## 1700. US-0686 Big South Fork National Recreation Area — score 0.65
+## 1703. US-0686 Big South Fork National Recreation Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22106,7 +22145,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_647.jpg)
 
-## 1701. US-0686 Big South Fork National Recreation Area — score 0.65
+## 1704. US-0686 Big South Fork National Recreation Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22119,7 +22158,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_648.jpg)
 
-## 1702. US-0686 Big South Fork National Recreation Area — score 0.65
+## 1705. US-0686 Big South Fork National Recreation Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22132,7 +22171,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_649.jpg)
 
-## 1703. US-0686 Big South Fork National Recreation Area — score 0.65
+## 1706. US-0686 Big South Fork National Recreation Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22145,7 +22184,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_650.jpg)
 
-## 1704. US-0686 Big South Fork National Recreation Area — score 0.65
+## 1707. US-0686 Big South Fork National Recreation Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22158,7 +22197,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_651.jpg)
 
-## 1705. US-0686 Big South Fork National Recreation Area — score 0.65
+## 1708. US-0686 Big South Fork National Recreation Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22171,7 +22210,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_652.jpg)
 
-## 1706. US-0686 Big South Fork National Recreation Area — score 0.65
+## 1709. US-0686 Big South Fork National Recreation Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22184,7 +22223,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_653.jpg)
 
-## 1707. US-0686 Big South Fork National Recreation Area — score 0.65
+## 1710. US-0686 Big South Fork National Recreation Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22197,7 +22236,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_654.jpg)
 
-## 1708. US-0686 Big South Fork National Recreation Area — score 0.65
+## 1711. US-0686 Big South Fork National Recreation Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22210,7 +22249,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_655.jpg)
 
-## 1709. US-0686 Big South Fork National Recreation Area — score 0.65
+## 1712. US-0686 Big South Fork National Recreation Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22223,7 +22262,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_656.jpg)
 
-## 1710. US-0686 Big South Fork National Recreation Area — score 0.65
+## 1713. US-0686 Big South Fork National Recreation Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22236,7 +22275,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_657.jpg)
 
-## 1711. US-0686 Big South Fork National Recreation Area — score 0.65
+## 1714. US-0686 Big South Fork National Recreation Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22249,7 +22288,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_658.jpg)
 
-## 1712. US-0686 Big South Fork National Recreation Area — score 0.65
+## 1715. US-0686 Big South Fork National Recreation Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22262,7 +22301,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_659.jpg)
 
-## 1713. US-0686 Big South Fork National Recreation Area — score 0.65
+## 1716. US-0686 Big South Fork National Recreation Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22275,7 +22314,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_660.jpg)
 
-## 1714. US-0686 Big South Fork National Recreation Area — score 0.65
+## 1717. US-0686 Big South Fork National Recreation Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22288,7 +22327,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_661.jpg)
 
-## 1715. US-0686 Big South Fork National Recreation Area — score 0.65
+## 1718. US-0686 Big South Fork National Recreation Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22301,7 +22340,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_662.jpg)
 
-## 1716. US-0686 Big South Fork National Recreation Area — score 0.65
+## 1719. US-0686 Big South Fork National Recreation Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22314,7 +22353,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_663.jpg)
 
-## 1717. US-0703 Fort Donelson National Battlefield — score 0.65
+## 1720. US-0703 Fort Donelson National Battlefield — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22327,7 +22366,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0703_79.jpg)
 
-## 1718. US-0703 Fort Donelson National Battlefield — score 0.65
+## 1721. US-0703 Fort Donelson National Battlefield — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22340,7 +22379,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0703_80.jpg)
 
-## 1719. US-1253 Dawkins Line Rail Trail State Park — score 0.65
+## 1722. US-1253 Dawkins Line Rail Trail State Park — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22353,7 +22392,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1253_19.jpg)
 
-## 1720. US-1253 Dawkins Line Rail Trail State Park — score 0.65
+## 1723. US-1253 Dawkins Line Rail Trail State Park — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22366,7 +22405,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1253_20.jpg)
 
-## 1721. US-1257 General Burnside State Park — score 0.65
+## 1724. US-1257 General Burnside State Park — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22379,7 +22418,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1257_08.jpg)
 
-## 1722. US-1257 General Burnside State Park — score 0.65
+## 1725. US-1257 General Burnside State Park — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22392,7 +22431,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1257_09.jpg)
 
-## 1723. US-1261 Kincaid Lake State Park — score 0.65
+## 1726. US-1261 Kincaid Lake State Park — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22405,7 +22444,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1261_03.jpg)
 
-## 1724. US-1264 Levi Jackson Wilderness Road State Park — score 0.65
+## 1727. US-1264 Levi Jackson Wilderness Road State Park — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22418,7 +22457,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1264_11.jpg)
 
-## 1725. US-1264 Levi Jackson Wilderness Road State Park — score 0.65
+## 1728. US-1264 Levi Jackson Wilderness Road State Park — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22431,7 +22470,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1264_12.jpg)
 
-## 1726. US-1264 Levi Jackson Wilderness Road State Park — score 0.65
+## 1729. US-1264 Levi Jackson Wilderness Road State Park — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22444,7 +22483,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1264_13.jpg)
 
-## 1727. US-1265 Lincoln Homestead State Park — score 0.65
+## 1730. US-1265 Lincoln Homestead State Park — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22457,7 +22496,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1265_04.jpg)
 
-## 1728. US-1278 Dale Hollow State Park — score 0.65
+## 1731. US-1278 Dale Hollow State Park — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22470,7 +22509,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1278_25.jpg)
 
-## 1729. US-1278 Dale Hollow State Park — score 0.65
+## 1732. US-1278 Dale Hollow State Park — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22483,7 +22522,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1278_26.jpg)
 
-## 1730. US-1278 Dale Hollow State Park — score 0.65
+## 1733. US-1278 Dale Hollow State Park — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22496,7 +22535,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1278_27.jpg)
 
-## 1731. US-1282 Kenlake State Park — score 0.65
+## 1734. US-1282 Kenlake State Park — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22509,7 +22548,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1282_36.jpg)
 
-## 1732. US-1282 Kenlake State Park — score 0.65
+## 1735. US-1282 Kenlake State Park — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22522,7 +22561,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1282_37.jpg)
 
-## 1733. US-1283 Kentucky Dam Village State Park — score 0.65
+## 1736. US-1283 Kentucky Dam Village State Park — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22535,7 +22574,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_43.jpg)
 
-## 1734. US-1283 Kentucky Dam Village State Park — score 0.65
+## 1737. US-1283 Kentucky Dam Village State Park — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22548,7 +22587,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_44.jpg)
 
-## 1735. US-1283 Kentucky Dam Village State Park — score 0.65
+## 1738. US-1283 Kentucky Dam Village State Park — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22561,7 +22600,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_45.jpg)
 
-## 1736. US-1283 Kentucky Dam Village State Park — score 0.65
+## 1739. US-1283 Kentucky Dam Village State Park — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22574,7 +22613,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_46.jpg)
 
-## 1737. US-1284 Lake Barkley State Park — score 0.65
+## 1740. US-1284 Lake Barkley State Park — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22587,7 +22626,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1284_14.jpg)
 
-## 1738. US-1284 Lake Barkley State Park — score 0.65
+## 1741. US-1284 Lake Barkley State Park — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22600,7 +22639,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1284_15.jpg)
 
-## 1739. US-1287 Pennyrile Forest State Park — score 0.65
+## 1742. US-1287 Pennyrile Forest State Park — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22613,7 +22652,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1287_03.jpg)
 
-## 1740. US-1289 Rough River Dam State Park — score 0.65
+## 1743. US-1289 Rough River Dam State Park — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22626,7 +22665,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1289_10.jpg)
 
-## 1741. US-3779 Big Bone Lick State Historic Site — score 0.65
+## 1744. US-3779 Big Bone Lick State Historic Site — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22639,7 +22678,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3779_10.jpg)
 
-## 1742. US-3781 Breaks Interstate State Park — score 0.65
+## 1745. US-3781 Breaks Interstate State Park — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22652,7 +22691,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_69.jpg)
 
-## 1743. US-3781 Breaks Interstate State Park — score 0.65
+## 1746. US-3781 Breaks Interstate State Park — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -22665,7 +22704,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3781_70.jpg)
 
-## 1744. US-3781 Breaks Interstate State Park — score 0.65
+## 1747. US-3781 Breaks Interstate State Park — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22678,7 +22717,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_71.jpg)
 
-## 1745. US-3792 Land Between the Lakes National Recreation Area — score 0.65
+## 1748. US-3792 Land Between the Lakes National Recreation Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22691,7 +22730,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_90.jpg)
 
-## 1746. US-3792 Land Between the Lakes National Recreation Area — score 0.65
+## 1749. US-3792 Land Between the Lakes National Recreation Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22704,7 +22743,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_91.jpg)
 
-## 1747. US-3792 Land Between the Lakes National Recreation Area — score 0.65
+## 1750. US-3792 Land Between the Lakes National Recreation Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22717,7 +22756,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_92.jpg)
 
-## 1748. US-3794 Beaver Creek Wildlife Management Area — score 0.65
+## 1751. US-3794 Beaver Creek Wildlife Management Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -22730,7 +22769,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3794_14.jpg)
 
-## 1749. US-3797 Boatwright Wildlife Management Area — score 0.65
+## 1752. US-3797 Boatwright Wildlife Management Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22743,7 +22782,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3797_13.jpg)
 
-## 1750. US-3805 Curtis Gates Lloyd Wildlife Management Area — score 0.65
+## 1753. US-3805 Curtis Gates Lloyd Wildlife Management Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22756,7 +22795,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3805_18.jpg)
 
-## 1751. US-3805 Curtis Gates Lloyd Wildlife Management Area — score 0.65
+## 1754. US-3805 Curtis Gates Lloyd Wildlife Management Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -22769,7 +22808,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3805_19.jpg)
 
-## 1752. US-3811 Ed Mabry-Laurel Gorge Wildlife Management Area — score 0.65
+## 1755. US-3811 Ed Mabry-Laurel Gorge Wildlife Management Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -22782,7 +22821,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3811_03.jpg)
 
-## 1753. US-3815 Higginson-Henry Wildlife Management Area — score 0.65
+## 1756. US-3815 Higginson-Henry Wildlife Management Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -22795,7 +22834,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3815_41.jpg)
 
-## 1754. US-3815 Higginson-Henry Wildlife Management Area — score 0.65
+## 1757. US-3815 Higginson-Henry Wildlife Management Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -22808,7 +22847,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3815_42.jpg)
 
-## 1755. US-3816 John A. Kleber Wildlife Management Area — score 0.65
+## 1758. US-3816 John A. Kleber Wildlife Management Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -22821,7 +22860,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3816_14.jpg)
 
-## 1756. US-3823 Livingston County Wildlife Management Area — score 0.65
+## 1759. US-3823 Livingston County Wildlife Management Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -22834,7 +22873,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3823_02.jpg)
 
-## 1757. US-3825 Miller Welch Wildlife Management Area — score 0.65
+## 1760. US-3825 Miller Welch Wildlife Management Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -22847,7 +22886,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3825_12.jpg)
 
-## 1758. US-3828 Peabody Wildlife Management Area — score 0.65
+## 1761. US-3828 Peabody Wildlife Management Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22860,7 +22899,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_75.jpg)
 
-## 1759. US-3828 Peabody Wildlife Management Area — score 0.65
+## 1762. US-3828 Peabody Wildlife Management Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -22873,7 +22912,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_76.jpg)
 
-## 1760. US-3830 Sloughs Wildlife Management Area — score 0.65
+## 1763. US-3830 Sloughs Wildlife Management Area — score 0.65
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22886,7 +22925,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3830_22.jpg)
 
-## 1761. US-0019 Cumberland Gap National Historical Park — score 0.64
+## 1764. US-0019 Cumberland Gap National Historical Park — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22899,7 +22938,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_58.jpg)
 
-## 1762. US-0019 Cumberland Gap National Historical Park — score 0.64
+## 1765. US-0019 Cumberland Gap National Historical Park — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22912,7 +22951,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_59.jpg)
 
-## 1763. US-0019 Cumberland Gap National Historical Park — score 0.64
+## 1766. US-0019 Cumberland Gap National Historical Park — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -22925,7 +22964,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0019_60.jpg)
 
-## 1764. US-0050 Mammoth Cave National Park — score 0.64
+## 1767. US-0050 Mammoth Cave National Park — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22938,7 +22977,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_100.jpg)
 
-## 1765. US-0050 Mammoth Cave National Park — score 0.64
+## 1768. US-0050 Mammoth Cave National Park — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22951,7 +22990,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_101.jpg)
 
-## 1766. US-0050 Mammoth Cave National Park — score 0.64
+## 1769. US-0050 Mammoth Cave National Park — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22964,7 +23003,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_102.jpg)
 
-## 1767. US-0050 Mammoth Cave National Park — score 0.64
+## 1770. US-0050 Mammoth Cave National Park — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22977,7 +23016,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_103.jpg)
 
-## 1768. US-0050 Mammoth Cave National Park — score 0.64
+## 1771. US-0050 Mammoth Cave National Park — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -22990,7 +23029,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_104.jpg)
 
-## 1769. US-0050 Mammoth Cave National Park — score 0.64
+## 1772. US-0050 Mammoth Cave National Park — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23003,7 +23042,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_105.jpg)
 
-## 1770. US-0050 Mammoth Cave National Park — score 0.64
+## 1773. US-0050 Mammoth Cave National Park — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23016,7 +23055,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_106.jpg)
 
-## 1771. US-0050 Mammoth Cave National Park — score 0.64
+## 1774. US-0050 Mammoth Cave National Park — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -23029,7 +23068,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0050_107.jpg)
 
-## 1772. US-0050 Mammoth Cave National Park — score 0.64
+## 1775. US-0050 Mammoth Cave National Park — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23042,7 +23081,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_108.jpg)
 
-## 1773. US-0050 Mammoth Cave National Park — score 0.64
+## 1776. US-0050 Mammoth Cave National Park — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23055,7 +23094,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_109.jpg)
 
-## 1774. US-0295 Clarks River National Wildlife Refuge — score 0.64
+## 1777. US-0295 Clarks River National Wildlife Refuge — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -23068,7 +23107,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0295_21.jpg)
 
-## 1775. US-0295 Clarks River National Wildlife Refuge — score 0.64
+## 1778. US-0295 Clarks River National Wildlife Refuge — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23081,7 +23120,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0295_22.jpg)
 
-## 1776. US-0686 Big South Fork National Recreation Area — score 0.64
+## 1779. US-0686 Big South Fork National Recreation Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23094,7 +23133,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_664.jpg)
 
-## 1777. US-0686 Big South Fork National Recreation Area — score 0.64
+## 1780. US-0686 Big South Fork National Recreation Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23107,7 +23146,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_665.jpg)
 
-## 1778. US-0686 Big South Fork National Recreation Area — score 0.64
+## 1781. US-0686 Big South Fork National Recreation Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23120,7 +23159,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_666.jpg)
 
-## 1779. US-0686 Big South Fork National Recreation Area — score 0.64
+## 1782. US-0686 Big South Fork National Recreation Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23133,7 +23172,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_667.jpg)
 
-## 1780. US-0686 Big South Fork National Recreation Area — score 0.64
+## 1783. US-0686 Big South Fork National Recreation Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23146,7 +23185,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_668.jpg)
 
-## 1781. US-0686 Big South Fork National Recreation Area — score 0.64
+## 1784. US-0686 Big South Fork National Recreation Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23159,7 +23198,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_669.jpg)
 
-## 1782. US-0686 Big South Fork National Recreation Area — score 0.64
+## 1785. US-0686 Big South Fork National Recreation Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23172,7 +23211,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_670.jpg)
 
-## 1783. US-0686 Big South Fork National Recreation Area — score 0.64
+## 1786. US-0686 Big South Fork National Recreation Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23185,7 +23224,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_671.jpg)
 
-## 1784. US-0686 Big South Fork National Recreation Area — score 0.64
+## 1787. US-0686 Big South Fork National Recreation Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23198,7 +23237,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_672.jpg)
 
-## 1785. US-0686 Big South Fork National Recreation Area — score 0.64
+## 1788. US-0686 Big South Fork National Recreation Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23211,7 +23250,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_673.jpg)
 
-## 1786. US-0686 Big South Fork National Recreation Area — score 0.64
+## 1789. US-0686 Big South Fork National Recreation Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23224,7 +23263,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_674.jpg)
 
-## 1787. US-0686 Big South Fork National Recreation Area — score 0.64
+## 1790. US-0686 Big South Fork National Recreation Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23237,7 +23276,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_675.jpg)
 
-## 1788. US-0686 Big South Fork National Recreation Area — score 0.64
+## 1791. US-0686 Big South Fork National Recreation Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23250,7 +23289,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_676.jpg)
 
-## 1789. US-0686 Big South Fork National Recreation Area — score 0.64
+## 1792. US-0686 Big South Fork National Recreation Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23263,7 +23302,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_677.jpg)
 
-## 1790. US-0686 Big South Fork National Recreation Area — score 0.64
+## 1793. US-0686 Big South Fork National Recreation Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23276,7 +23315,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_678.jpg)
 
-## 1791. US-0686 Big South Fork National Recreation Area — score 0.64
+## 1794. US-0686 Big South Fork National Recreation Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23289,7 +23328,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_679.jpg)
 
-## 1792. US-0686 Big South Fork National Recreation Area — score 0.64
+## 1795. US-0686 Big South Fork National Recreation Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23302,7 +23341,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_680.jpg)
 
-## 1793. US-0686 Big South Fork National Recreation Area — score 0.64
+## 1796. US-0686 Big South Fork National Recreation Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23315,7 +23354,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_681.jpg)
 
-## 1794. US-0686 Big South Fork National Recreation Area — score 0.64
+## 1797. US-0686 Big South Fork National Recreation Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23328,7 +23367,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_682.jpg)
 
-## 1795. US-0686 Big South Fork National Recreation Area — score 0.64
+## 1798. US-0686 Big South Fork National Recreation Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23341,7 +23380,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_683.jpg)
 
-## 1796. US-0686 Big South Fork National Recreation Area — score 0.64
+## 1799. US-0686 Big South Fork National Recreation Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23354,7 +23393,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_684.jpg)
 
-## 1797. US-0686 Big South Fork National Recreation Area — score 0.64
+## 1800. US-0686 Big South Fork National Recreation Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23367,7 +23406,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_685.jpg)
 
-## 1798. US-0686 Big South Fork National Recreation Area — score 0.64
+## 1801. US-0686 Big South Fork National Recreation Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23380,7 +23419,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_686.jpg)
 
-## 1799. US-0686 Big South Fork National Recreation Area — score 0.64
+## 1802. US-0686 Big South Fork National Recreation Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23393,7 +23432,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_687.jpg)
 
-## 1800. US-0686 Big South Fork National Recreation Area — score 0.64
+## 1803. US-0686 Big South Fork National Recreation Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23406,7 +23445,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_688.jpg)
 
-## 1801. US-0686 Big South Fork National Recreation Area — score 0.64
+## 1804. US-0686 Big South Fork National Recreation Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23419,7 +23458,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_689.jpg)
 
-## 1802. US-0686 Big South Fork National Recreation Area — score 0.64
+## 1805. US-0686 Big South Fork National Recreation Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23432,7 +23471,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_690.jpg)
 
-## 1803. US-0686 Big South Fork National Recreation Area — score 0.64
+## 1806. US-0686 Big South Fork National Recreation Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -23445,7 +23484,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0686_691.jpg)
 
-## 1804. US-0686 Big South Fork National Recreation Area — score 0.64
+## 1807. US-0686 Big South Fork National Recreation Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23458,7 +23497,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_692.jpg)
 
-## 1805. US-0686 Big South Fork National Recreation Area — score 0.64
+## 1808. US-0686 Big South Fork National Recreation Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23471,7 +23510,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_693.jpg)
 
-## 1806. US-0686 Big South Fork National Recreation Area — score 0.64
+## 1809. US-0686 Big South Fork National Recreation Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23484,7 +23523,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_694.jpg)
 
-## 1807. US-0686 Big South Fork National Recreation Area — score 0.64
+## 1810. US-0686 Big South Fork National Recreation Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23497,7 +23536,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_695.jpg)
 
-## 1808. US-0703 Fort Donelson National Battlefield — score 0.64
+## 1811. US-0703 Fort Donelson National Battlefield — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -23510,7 +23549,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0703_81.jpg)
 
-## 1809. US-0703 Fort Donelson National Battlefield — score 0.64
+## 1812. US-0703 Fort Donelson National Battlefield — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23523,7 +23562,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0703_82.jpg)
 
-## 1810. US-0703 Fort Donelson National Battlefield — score 0.64
+## 1813. US-0703 Fort Donelson National Battlefield — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -23536,7 +23575,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0703_83.jpg)
 
-## 1811. US-1253 Dawkins Line Rail Trail State Park — score 0.64
+## 1814. US-1253 Dawkins Line Rail Trail State Park — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23549,7 +23588,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1253_21.jpg)
 
-## 1812. US-1255 Fishtrap Lake Wildlife Management Area — score 0.64
+## 1815. US-1255 Fishtrap Lake Wildlife Management Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23562,7 +23601,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1255_05.jpg)
 
-## 1813. US-1256 Fort Boonesborough State Park — score 0.64
+## 1816. US-1256 Fort Boonesborough State Park — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23575,7 +23614,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1256_02.jpg)
 
-## 1814. US-1256 Fort Boonesborough State Park — score 0.64
+## 1817. US-1256 Fort Boonesborough State Park — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23588,7 +23627,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1256_03.jpg)
 
-## 1815. US-1269 Old Fort Harrod State Park — score 0.64
+## 1818. US-1269 Old Fort Harrod State Park — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23601,7 +23640,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1269_03.jpg)
 
-## 1816. US-1270 Paintsville Lake State Park — score 0.64
+## 1819. US-1270 Paintsville Lake State Park — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23614,7 +23653,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1270_06.jpg)
 
-## 1817. US-1271 Taylorsville Lake State Park — score 0.64
+## 1820. US-1271 Taylorsville Lake State Park — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23627,7 +23666,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1271_11.jpg)
 
-## 1818. US-1271 Taylorsville Lake State Park — score 0.64
+## 1821. US-1271 Taylorsville Lake State Park — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -23640,7 +23679,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-1271_12.jpg)
 
-## 1819. US-1274 Blue Licks Battlefield State Park — score 0.64
+## 1822. US-1274 Blue Licks Battlefield State Park — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23653,7 +23692,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1274_07.jpg)
 
-## 1820. US-1278 Dale Hollow State Park — score 0.64
+## 1823. US-1278 Dale Hollow State Park — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23666,7 +23705,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1278_28.jpg)
 
-## 1821. US-1282 Kenlake State Park — score 0.64
+## 1824. US-1282 Kenlake State Park — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23679,7 +23718,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1282_38.jpg)
 
-## 1822. US-1282 Kenlake State Park — score 0.64
+## 1825. US-1282 Kenlake State Park — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23692,7 +23731,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1282_39.jpg)
 
-## 1823. US-1282 Kenlake State Park — score 0.64
+## 1826. US-1282 Kenlake State Park — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23705,7 +23744,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1282_40.jpg)
 
-## 1824. US-1283 Kentucky Dam Village State Park — score 0.64
+## 1827. US-1283 Kentucky Dam Village State Park — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23718,7 +23757,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_47.jpg)
 
-## 1825. US-1283 Kentucky Dam Village State Park — score 0.64
+## 1828. US-1283 Kentucky Dam Village State Park — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23731,7 +23770,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_48.jpg)
 
-## 1826. US-1286 Natural Bridge State Park — score 0.64
+## 1829. US-1286 Natural Bridge State Park — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23744,7 +23783,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1286_06.jpg)
 
-## 1827. US-1287 Pennyrile Forest State Park — score 0.64
+## 1830. US-1287 Pennyrile Forest State Park — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23757,7 +23796,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1287_04.jpg)
 
-## 1828. US-1288 Pine Mountain State Park — score 0.64
+## 1831. US-1288 Pine Mountain State Park — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23770,7 +23809,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1288_15.jpg)
 
-## 1829. US-1288 Pine Mountain State Park — score 0.64
+## 1832. US-1288 Pine Mountain State Park — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23783,7 +23822,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1288_16.jpg)
 
-## 1830. US-1288 Pine Mountain State Park — score 0.64
+## 1833. US-1288 Pine Mountain State Park — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23796,7 +23835,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1288_17.jpg)
 
-## 1831. US-3781 Breaks Interstate State Park — score 0.64
+## 1834. US-3781 Breaks Interstate State Park — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23809,7 +23848,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_72.jpg)
 
-## 1832. US-3781 Breaks Interstate State Park — score 0.64
+## 1835. US-3781 Breaks Interstate State Park — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23822,7 +23861,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_73.jpg)
 
-## 1833. US-3781 Breaks Interstate State Park — score 0.64
+## 1836. US-3781 Breaks Interstate State Park — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23835,7 +23874,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_74.jpg)
 
-## 1834. US-3781 Breaks Interstate State Park — score 0.64
+## 1837. US-3781 Breaks Interstate State Park — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23848,7 +23887,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_75.jpg)
 
-## 1835. US-3781 Breaks Interstate State Park — score 0.64
+## 1838. US-3781 Breaks Interstate State Park — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -23861,7 +23900,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3781_76.jpg)
 
-## 1836. US-3783 Jefferson Davis State Historic Site — score 0.64
+## 1839. US-3783 Jefferson Davis State Historic Site — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23874,7 +23913,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3783_01.jpg)
 
-## 1837. US-3792 Land Between the Lakes National Recreation Area — score 0.64
+## 1840. US-3792 Land Between the Lakes National Recreation Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23887,7 +23926,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_93.jpg)
 
-## 1838. US-3792 Land Between the Lakes National Recreation Area — score 0.64
+## 1841. US-3792 Land Between the Lakes National Recreation Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23900,7 +23939,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_94.jpg)
 
-## 1839. US-3792 Land Between the Lakes National Recreation Area — score 0.64
+## 1842. US-3792 Land Between the Lakes National Recreation Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23913,7 +23952,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_95.jpg)
 
-## 1840. US-3792 Land Between the Lakes National Recreation Area — score 0.64
+## 1843. US-3792 Land Between the Lakes National Recreation Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23926,7 +23965,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_96.jpg)
 
-## 1841. US-3792 Land Between the Lakes National Recreation Area — score 0.64
+## 1844. US-3792 Land Between the Lakes National Recreation Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23939,7 +23978,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_97.jpg)
 
-## 1842. US-3792 Land Between the Lakes National Recreation Area — score 0.64
+## 1845. US-3792 Land Between the Lakes National Recreation Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23952,7 +23991,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_98.jpg)
 
-## 1843. US-3792 Land Between the Lakes National Recreation Area — score 0.64
+## 1846. US-3792 Land Between the Lakes National Recreation Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23965,7 +24004,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_99.jpg)
 
-## 1844. US-3793 Ballard Wildlife Management Area — score 0.64
+## 1847. US-3793 Ballard Wildlife Management Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23978,7 +24017,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3793_24.jpg)
 
-## 1845. US-3794 Beaver Creek Wildlife Management Area — score 0.64
+## 1848. US-3794 Beaver Creek Wildlife Management Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -23991,7 +24030,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3794_15.jpg)
 
-## 1846. US-3794 Beaver Creek Wildlife Management Area — score 0.64
+## 1849. US-3794 Beaver Creek Wildlife Management Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24004,7 +24043,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3794_16.jpg)
 
-## 1847. US-3800 Cedar Creek Lake Wildlife Management Area — score 0.64
+## 1850. US-3800 Cedar Creek Lake Wildlife Management Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -24017,7 +24056,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3800_15.jpg)
 
-## 1848. US-3811 Ed Mabry-Laurel Gorge Wildlife Management Area — score 0.64
+## 1851. US-3811 Ed Mabry-Laurel Gorge Wildlife Management Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -24030,7 +24069,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3811_04.jpg)
 
-## 1849. US-3815 Higginson-Henry Wildlife Management Area — score 0.64
+## 1852. US-3815 Higginson-Henry Wildlife Management Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24043,7 +24082,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3815_43.jpg)
 
-## 1850. US-3815 Higginson-Henry Wildlife Management Area — score 0.64
+## 1853. US-3815 Higginson-Henry Wildlife Management Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -24056,7 +24095,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3815_44.jpg)
 
-## 1851. US-3815 Higginson-Henry Wildlife Management Area — score 0.64
+## 1854. US-3815 Higginson-Henry Wildlife Management Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24069,7 +24108,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3815_45.jpg)
 
-## 1852. US-3825 Miller Welch Wildlife Management Area — score 0.64
+## 1855. US-3825 Miller Welch Wildlife Management Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24082,7 +24121,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3825_13.jpg)
 
-## 1853. US-3825 Miller Welch Wildlife Management Area — score 0.64
+## 1856. US-3825 Miller Welch Wildlife Management Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -24095,7 +24134,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3825_14.jpg)
 
-## 1854. US-3825 Miller Welch Wildlife Management Area — score 0.64
+## 1857. US-3825 Miller Welch Wildlife Management Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -24108,7 +24147,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3825_15.jpg)
 
-## 1855. US-3828 Peabody Wildlife Management Area — score 0.64
+## 1858. US-3828 Peabody Wildlife Management Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24121,7 +24160,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_77.jpg)
 
-## 1856. US-3828 Peabody Wildlife Management Area — score 0.64
+## 1859. US-3828 Peabody Wildlife Management Area — score 0.64
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -24134,7 +24173,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_78.jpg)
 
-## 1857. US-0019 Cumberland Gap National Historical Park — score 0.63
+## 1860. US-0019 Cumberland Gap National Historical Park — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24147,7 +24186,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_61.jpg)
 
-## 1858. US-0019 Cumberland Gap National Historical Park — score 0.63
+## 1861. US-0019 Cumberland Gap National Historical Park — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24160,7 +24199,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_62.jpg)
 
-## 1859. US-0019 Cumberland Gap National Historical Park — score 0.63
+## 1862. US-0019 Cumberland Gap National Historical Park — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24173,7 +24212,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_63.jpg)
 
-## 1860. US-0019 Cumberland Gap National Historical Park — score 0.63
+## 1863. US-0019 Cumberland Gap National Historical Park — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24186,7 +24225,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_64.jpg)
 
-## 1861. US-0019 Cumberland Gap National Historical Park — score 0.63
+## 1864. US-0019 Cumberland Gap National Historical Park — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -24199,7 +24238,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0019_65.jpg)
 
-## 1862. US-0019 Cumberland Gap National Historical Park — score 0.63
+## 1865. US-0019 Cumberland Gap National Historical Park — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -24212,7 +24251,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0019_66.jpg)
 
-## 1863. US-0050 Mammoth Cave National Park — score 0.63
+## 1866. US-0050 Mammoth Cave National Park — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -24225,7 +24264,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0050_110.jpg)
 
-## 1864. US-0050 Mammoth Cave National Park — score 0.63
+## 1867. US-0050 Mammoth Cave National Park — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24238,7 +24277,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_111.jpg)
 
-## 1865. US-0050 Mammoth Cave National Park — score 0.63
+## 1868. US-0050 Mammoth Cave National Park — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24251,7 +24290,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_112.jpg)
 
-## 1866. US-0050 Mammoth Cave National Park — score 0.63
+## 1869. US-0050 Mammoth Cave National Park — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24264,7 +24303,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_113.jpg)
 
-## 1867. US-0050 Mammoth Cave National Park — score 0.63
+## 1870. US-0050 Mammoth Cave National Park — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24277,7 +24316,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_114.jpg)
 
-## 1868. US-0050 Mammoth Cave National Park — score 0.63
+## 1871. US-0050 Mammoth Cave National Park — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24290,7 +24329,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_115.jpg)
 
-## 1869. US-0050 Mammoth Cave National Park — score 0.63
+## 1872. US-0050 Mammoth Cave National Park — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24303,7 +24342,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_116.jpg)
 
-## 1870. US-0050 Mammoth Cave National Park — score 0.63
+## 1873. US-0050 Mammoth Cave National Park — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24316,7 +24355,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_117.jpg)
 
-## 1871. US-0686 Big South Fork National Recreation Area — score 0.63
+## 1874. US-0686 Big South Fork National Recreation Area — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24329,7 +24368,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_696.jpg)
 
-## 1872. US-0686 Big South Fork National Recreation Area — score 0.63
+## 1875. US-0686 Big South Fork National Recreation Area — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -24342,7 +24381,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0686_697.jpg)
 
-## 1873. US-0686 Big South Fork National Recreation Area — score 0.63
+## 1876. US-0686 Big South Fork National Recreation Area — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24355,7 +24394,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_698.jpg)
 
-## 1874. US-0686 Big South Fork National Recreation Area — score 0.63
+## 1877. US-0686 Big South Fork National Recreation Area — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24368,7 +24407,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_699.jpg)
 
-## 1875. US-0686 Big South Fork National Recreation Area — score 0.63
+## 1878. US-0686 Big South Fork National Recreation Area — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24381,7 +24420,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_700.jpg)
 
-## 1876. US-0686 Big South Fork National Recreation Area — score 0.63
+## 1879. US-0686 Big South Fork National Recreation Area — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24394,7 +24433,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_701.jpg)
 
-## 1877. US-0686 Big South Fork National Recreation Area — score 0.63
+## 1880. US-0686 Big South Fork National Recreation Area — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24407,7 +24446,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_702.jpg)
 
-## 1878. US-0686 Big South Fork National Recreation Area — score 0.63
+## 1881. US-0686 Big South Fork National Recreation Area — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24420,7 +24459,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_703.jpg)
 
-## 1879. US-0686 Big South Fork National Recreation Area — score 0.63
+## 1882. US-0686 Big South Fork National Recreation Area — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24433,7 +24472,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_704.jpg)
 
-## 1880. US-0686 Big South Fork National Recreation Area — score 0.63
+## 1883. US-0686 Big South Fork National Recreation Area — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24446,7 +24485,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_705.jpg)
 
-## 1881. US-0686 Big South Fork National Recreation Area — score 0.63
+## 1884. US-0686 Big South Fork National Recreation Area — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24459,7 +24498,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_706.jpg)
 
-## 1882. US-0686 Big South Fork National Recreation Area — score 0.63
+## 1885. US-0686 Big South Fork National Recreation Area — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24472,7 +24511,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_707.jpg)
 
-## 1883. US-0686 Big South Fork National Recreation Area — score 0.63
+## 1886. US-0686 Big South Fork National Recreation Area — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24485,7 +24524,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_708.jpg)
 
-## 1884. US-0686 Big South Fork National Recreation Area — score 0.63
+## 1887. US-0686 Big South Fork National Recreation Area — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24498,7 +24537,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_709.jpg)
 
-## 1885. US-0686 Big South Fork National Recreation Area — score 0.63
+## 1888. US-0686 Big South Fork National Recreation Area — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -24511,7 +24550,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0686_710.jpg)
 
-## 1886. US-0686 Big South Fork National Recreation Area — score 0.63
+## 1889. US-0686 Big South Fork National Recreation Area — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24524,7 +24563,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_711.jpg)
 
-## 1887. US-0686 Big South Fork National Recreation Area — score 0.63
+## 1890. US-0686 Big South Fork National Recreation Area — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24537,7 +24576,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_712.jpg)
 
-## 1888. US-0686 Big South Fork National Recreation Area — score 0.63
+## 1891. US-0686 Big South Fork National Recreation Area — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24550,7 +24589,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_713.jpg)
 
-## 1889. US-0686 Big South Fork National Recreation Area — score 0.63
+## 1892. US-0686 Big South Fork National Recreation Area — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24563,7 +24602,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_714.jpg)
 
-## 1890. US-0686 Big South Fork National Recreation Area — score 0.63
+## 1893. US-0686 Big South Fork National Recreation Area — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24576,7 +24615,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_715.jpg)
 
-## 1891. US-0686 Big South Fork National Recreation Area — score 0.63
+## 1894. US-0686 Big South Fork National Recreation Area — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24589,7 +24628,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_716.jpg)
 
-## 1892. US-0686 Big South Fork National Recreation Area — score 0.63
+## 1895. US-0686 Big South Fork National Recreation Area — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24602,7 +24641,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_717.jpg)
 
-## 1893. US-0686 Big South Fork National Recreation Area — score 0.63
+## 1896. US-0686 Big South Fork National Recreation Area — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -24615,7 +24654,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0686_718.jpg)
 
-## 1894. US-0686 Big South Fork National Recreation Area — score 0.63
+## 1897. US-0686 Big South Fork National Recreation Area — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24628,7 +24667,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_719.jpg)
 
-## 1895. US-0686 Big South Fork National Recreation Area — score 0.63
+## 1898. US-0686 Big South Fork National Recreation Area — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24641,7 +24680,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_720.jpg)
 
-## 1896. US-0686 Big South Fork National Recreation Area — score 0.63
+## 1899. US-0686 Big South Fork National Recreation Area — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24654,7 +24693,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_721.jpg)
 
-## 1897. US-0686 Big South Fork National Recreation Area — score 0.63
+## 1900. US-0686 Big South Fork National Recreation Area — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24667,7 +24706,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_722.jpg)
 
-## 1898. US-0686 Big South Fork National Recreation Area — score 0.63
+## 1901. US-0686 Big South Fork National Recreation Area — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24680,7 +24719,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_723.jpg)
 
-## 1899. US-1260 John James Audubon State Park — score 0.63
+## 1902. US-1260 John James Audubon State Park — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24693,7 +24732,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1260_05.jpg)
 
-## 1900. US-1264 Levi Jackson Wilderness Road State Park — score 0.63
+## 1903. US-1264 Levi Jackson Wilderness Road State Park — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24706,7 +24745,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1264_14.jpg)
 
-## 1901. US-1264 Levi Jackson Wilderness Road State Park — score 0.63
+## 1904. US-1264 Levi Jackson Wilderness Road State Park — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -24719,7 +24758,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-1264_15.jpg)
 
-## 1902. US-1265 Lincoln Homestead State Park — score 0.63
+## 1905. US-1265 Lincoln Homestead State Park — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24732,7 +24771,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1265_05.jpg)
 
-## 1903. US-1271 Taylorsville Lake State Park — score 0.63
+## 1906. US-1271 Taylorsville Lake State Park — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24745,7 +24784,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1271_13.jpg)
 
-## 1904. US-1274 Blue Licks Battlefield State Park — score 0.63
+## 1907. US-1274 Blue Licks Battlefield State Park — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24758,7 +24797,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1274_08.jpg)
 
-## 1905. US-1275 Buckhorn Lake State Park — score 0.63
+## 1908. US-1275 Buckhorn Lake State Park — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24771,7 +24810,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1275_04.jpg)
 
-## 1906. US-1280 Greenbo Lake State Park — score 0.63
+## 1909. US-1280 Greenbo Lake State Park — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24784,7 +24823,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1280_02.jpg)
 
-## 1907. US-1281 Jenny Wiley State Park — score 0.63
+## 1910. US-1281 Jenny Wiley State Park — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24797,7 +24836,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1281_20.jpg)
 
-## 1908. US-1283 Kentucky Dam Village State Park — score 0.63
+## 1911. US-1283 Kentucky Dam Village State Park — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24810,7 +24849,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_49.jpg)
 
-## 1909. US-1283 Kentucky Dam Village State Park — score 0.63
+## 1912. US-1283 Kentucky Dam Village State Park — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24823,7 +24862,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_50.jpg)
 
-## 1910. US-1283 Kentucky Dam Village State Park — score 0.63
+## 1913. US-1283 Kentucky Dam Village State Park — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24836,7 +24875,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_51.jpg)
 
-## 1911. US-1283 Kentucky Dam Village State Park — score 0.63
+## 1914. US-1283 Kentucky Dam Village State Park — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24849,7 +24888,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_52.jpg)
 
-## 1912. US-1283 Kentucky Dam Village State Park — score 0.63
+## 1915. US-1283 Kentucky Dam Village State Park — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -24862,7 +24901,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-1283_53.jpg)
 
-## 1913. US-1284 Lake Barkley State Park — score 0.63
+## 1916. US-1284 Lake Barkley State Park — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24875,7 +24914,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1284_16.jpg)
 
-## 1914. US-1285 Lake Cumberland State Park — score 0.63
+## 1917. US-1285 Lake Cumberland State Park — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24888,7 +24927,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1285_07.jpg)
 
-## 1915. US-1288 Pine Mountain State Park — score 0.63
+## 1918. US-1288 Pine Mountain State Park — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24901,7 +24940,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1288_18.jpg)
 
-## 1916. US-1289 Rough River Dam State Park — score 0.63
+## 1919. US-1289 Rough River Dam State Park — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24914,7 +24953,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1289_11.jpg)
 
-## 1917. US-3779 Big Bone Lick State Historic Site — score 0.63
+## 1920. US-3779 Big Bone Lick State Historic Site — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24927,7 +24966,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3779_11.jpg)
 
-## 1918. US-3779 Big Bone Lick State Historic Site — score 0.63
+## 1921. US-3779 Big Bone Lick State Historic Site — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24940,7 +24979,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3779_12.jpg)
 
-## 1919. US-3781 Breaks Interstate State Park — score 0.63
+## 1922. US-3781 Breaks Interstate State Park — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24953,7 +24992,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_77.jpg)
 
-## 1920. US-3781 Breaks Interstate State Park — score 0.63
+## 1923. US-3781 Breaks Interstate State Park — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -24966,7 +25005,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3781_78.jpg)
 
-## 1921. US-3781 Breaks Interstate State Park — score 0.63
+## 1924. US-3781 Breaks Interstate State Park — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24979,7 +25018,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_79.jpg)
 
-## 1922. US-3781 Breaks Interstate State Park — score 0.63
+## 1925. US-3781 Breaks Interstate State Park — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -24992,7 +25031,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_80.jpg)
 
-## 1923. US-3781 Breaks Interstate State Park — score 0.63
+## 1926. US-3781 Breaks Interstate State Park — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -25005,7 +25044,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3781_81.jpg)
 
-## 1924. US-3785 Perryville Battlefield State Historic Site — score 0.63
+## 1927. US-3785 Perryville Battlefield State Historic Site — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25018,7 +25057,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3785_05.jpg)
 
-## 1925. US-3792 Land Between the Lakes National Recreation Area — score 0.63
+## 1928. US-3792 Land Between the Lakes National Recreation Area — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25031,7 +25070,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_100.jpg)
 
-## 1926. US-3792 Land Between the Lakes National Recreation Area — score 0.63
+## 1929. US-3792 Land Between the Lakes National Recreation Area — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25044,7 +25083,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_101.jpg)
 
-## 1927. US-3792 Land Between the Lakes National Recreation Area — score 0.63
+## 1930. US-3792 Land Between the Lakes National Recreation Area — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25057,7 +25096,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_102.jpg)
 
-## 1928. US-3792 Land Between the Lakes National Recreation Area — score 0.63
+## 1931. US-3792 Land Between the Lakes National Recreation Area — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25070,7 +25109,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_103.jpg)
 
-## 1929. US-3800 Cedar Creek Lake Wildlife Management Area — score 0.63
+## 1932. US-3800 Cedar Creek Lake Wildlife Management Area — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -25083,7 +25122,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3800_16.jpg)
 
-## 1930. US-3802 Clyde E Buckley Sanctuary — score 0.63
+## 1933. US-3802 Clyde E Buckley Sanctuary — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -25096,7 +25135,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3802_08.jpg)
 
-## 1931. US-3802 Clyde E Buckley Sanctuary — score 0.63
+## 1934. US-3802 Clyde E Buckley Sanctuary — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -25109,7 +25148,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3802_09.jpg)
 
-## 1932. US-3802 Clyde E Buckley Sanctuary — score 0.63
+## 1935. US-3802 Clyde E Buckley Sanctuary — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -25122,7 +25161,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3802_10.jpg)
 
-## 1933. US-3811 Ed Mabry-Laurel Gorge Wildlife Management Area — score 0.63
+## 1936. US-3811 Ed Mabry-Laurel Gorge Wildlife Management Area — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -25135,7 +25174,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3811_05.jpg)
 
-## 1934. US-3818 Jones-Keeney Wildlife Management Area — score 0.63
+## 1937. US-3818 Jones-Keeney Wildlife Management Area — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -25148,7 +25187,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3818_03.jpg)
 
-## 1935. US-3818 Jones-Keeney Wildlife Management Area — score 0.63
+## 1938. US-3818 Jones-Keeney Wildlife Management Area — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -25161,7 +25200,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3818_04.jpg)
 
-## 1936. US-3820 Kentucky River Wildlife Management Area — score 0.63
+## 1939. US-3820 Kentucky River Wildlife Management Area — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -25174,7 +25213,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3820_08.jpg)
 
-## 1937. US-3828 Peabody Wildlife Management Area — score 0.63
+## 1940. US-3828 Peabody Wildlife Management Area — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -25187,7 +25226,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_79.jpg)
 
-## 1938. US-3828 Peabody Wildlife Management Area — score 0.63
+## 1941. US-3828 Peabody Wildlife Management Area — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -25200,7 +25239,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_80.jpg)
 
-## 1939. US-3828 Peabody Wildlife Management Area — score 0.63
+## 1942. US-3828 Peabody Wildlife Management Area — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25213,7 +25252,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_81.jpg)
 
-## 1940. US-3830 Sloughs Wildlife Management Area — score 0.63
+## 1943. US-3830 Sloughs Wildlife Management Area — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -25226,7 +25265,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3830_23.jpg)
 
-## 1941. US-3833 T. N. Sullivan Wildlife Management Area — score 0.63
+## 1944. US-3833 T. N. Sullivan Wildlife Management Area — score 0.63
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -25239,7 +25278,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3833_01.jpg)
 
-## 1942. US-0050 Mammoth Cave National Park — score 0.62
+## 1945. US-0050 Mammoth Cave National Park — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25252,7 +25291,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_118.jpg)
 
-## 1943. US-0050 Mammoth Cave National Park — score 0.62
+## 1946. US-0050 Mammoth Cave National Park — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25265,7 +25304,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_119.jpg)
 
-## 1944. US-0050 Mammoth Cave National Park — score 0.62
+## 1947. US-0050 Mammoth Cave National Park — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25278,7 +25317,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_120.jpg)
 
-## 1945. US-0050 Mammoth Cave National Park — score 0.62
+## 1948. US-0050 Mammoth Cave National Park — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25291,7 +25330,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_121.jpg)
 
-## 1946. US-0050 Mammoth Cave National Park — score 0.62
+## 1949. US-0050 Mammoth Cave National Park — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25304,7 +25343,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_122.jpg)
 
-## 1947. US-0050 Mammoth Cave National Park — score 0.62
+## 1950. US-0050 Mammoth Cave National Park — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25317,7 +25356,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_123.jpg)
 
-## 1948. US-0050 Mammoth Cave National Park — score 0.62
+## 1951. US-0050 Mammoth Cave National Park — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25330,7 +25369,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_124.jpg)
 
-## 1949. US-0050 Mammoth Cave National Park — score 0.62
+## 1952. US-0050 Mammoth Cave National Park — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25343,7 +25382,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_125.jpg)
 
-## 1950. US-0050 Mammoth Cave National Park — score 0.62
+## 1953. US-0050 Mammoth Cave National Park — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25356,7 +25395,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_126.jpg)
 
-## 1951. US-0050 Mammoth Cave National Park — score 0.62
+## 1954. US-0050 Mammoth Cave National Park — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25369,7 +25408,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_127.jpg)
 
-## 1952. US-0295 Clarks River National Wildlife Refuge — score 0.62
+## 1955. US-0295 Clarks River National Wildlife Refuge — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -25382,7 +25421,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0295_23.jpg)
 
-## 1953. US-0686 Big South Fork National Recreation Area — score 0.62
+## 1956. US-0686 Big South Fork National Recreation Area — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25395,7 +25434,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_724.jpg)
 
-## 1954. US-0686 Big South Fork National Recreation Area — score 0.62
+## 1957. US-0686 Big South Fork National Recreation Area — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -25408,7 +25447,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0686_725.jpg)
 
-## 1955. US-0686 Big South Fork National Recreation Area — score 0.62
+## 1958. US-0686 Big South Fork National Recreation Area — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25421,7 +25460,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_726.jpg)
 
-## 1956. US-0686 Big South Fork National Recreation Area — score 0.62
+## 1959. US-0686 Big South Fork National Recreation Area — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25434,7 +25473,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_727.jpg)
 
-## 1957. US-0686 Big South Fork National Recreation Area — score 0.62
+## 1960. US-0686 Big South Fork National Recreation Area — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25447,7 +25486,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_728.jpg)
 
-## 1958. US-0686 Big South Fork National Recreation Area — score 0.62
+## 1961. US-0686 Big South Fork National Recreation Area — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25460,7 +25499,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_729.jpg)
 
-## 1959. US-0686 Big South Fork National Recreation Area — score 0.62
+## 1962. US-0686 Big South Fork National Recreation Area — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25473,7 +25512,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_730.jpg)
 
-## 1960. US-0686 Big South Fork National Recreation Area — score 0.62
+## 1963. US-0686 Big South Fork National Recreation Area — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25486,7 +25525,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_731.jpg)
 
-## 1961. US-0686 Big South Fork National Recreation Area — score 0.62
+## 1964. US-0686 Big South Fork National Recreation Area — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25499,7 +25538,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_732.jpg)
 
-## 1962. US-0686 Big South Fork National Recreation Area — score 0.62
+## 1965. US-0686 Big South Fork National Recreation Area — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25512,7 +25551,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_733.jpg)
 
-## 1963. US-0686 Big South Fork National Recreation Area — score 0.62
+## 1966. US-0686 Big South Fork National Recreation Area — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25525,7 +25564,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_734.jpg)
 
-## 1964. US-0686 Big South Fork National Recreation Area — score 0.62
+## 1967. US-0686 Big South Fork National Recreation Area — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25538,7 +25577,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_735.jpg)
 
-## 1965. US-0686 Big South Fork National Recreation Area — score 0.62
+## 1968. US-0686 Big South Fork National Recreation Area — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25551,7 +25590,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_736.jpg)
 
-## 1966. US-0686 Big South Fork National Recreation Area — score 0.62
+## 1969. US-0686 Big South Fork National Recreation Area — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25564,7 +25603,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_737.jpg)
 
-## 1967. US-0686 Big South Fork National Recreation Area — score 0.62
+## 1970. US-0686 Big South Fork National Recreation Area — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25577,7 +25616,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_738.jpg)
 
-## 1968. US-0686 Big South Fork National Recreation Area — score 0.62
+## 1971. US-0686 Big South Fork National Recreation Area — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25590,7 +25629,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_739.jpg)
 
-## 1969. US-0686 Big South Fork National Recreation Area — score 0.62
+## 1972. US-0686 Big South Fork National Recreation Area — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25603,7 +25642,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_740.jpg)
 
-## 1970. US-0686 Big South Fork National Recreation Area — score 0.62
+## 1973. US-0686 Big South Fork National Recreation Area — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25616,7 +25655,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_741.jpg)
 
-## 1971. US-0686 Big South Fork National Recreation Area — score 0.62
+## 1974. US-0686 Big South Fork National Recreation Area — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25629,7 +25668,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_742.jpg)
 
-## 1972. US-0686 Big South Fork National Recreation Area — score 0.62
+## 1975. US-0686 Big South Fork National Recreation Area — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -25642,7 +25681,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0686_743.jpg)
 
-## 1973. US-0686 Big South Fork National Recreation Area — score 0.62
+## 1976. US-0686 Big South Fork National Recreation Area — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25655,7 +25694,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_744.jpg)
 
-## 1974. US-0686 Big South Fork National Recreation Area — score 0.62
+## 1977. US-0686 Big South Fork National Recreation Area — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25668,7 +25707,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_745.jpg)
 
-## 1975. US-0686 Big South Fork National Recreation Area — score 0.62
+## 1978. US-0686 Big South Fork National Recreation Area — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25681,7 +25720,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_746.jpg)
 
-## 1976. US-0686 Big South Fork National Recreation Area — score 0.62
+## 1979. US-0686 Big South Fork National Recreation Area — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25694,7 +25733,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_747.jpg)
 
-## 1977. US-0686 Big South Fork National Recreation Area — score 0.62
+## 1980. US-0686 Big South Fork National Recreation Area — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25707,7 +25746,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_748.jpg)
 
-## 1978. US-0686 Big South Fork National Recreation Area — score 0.62
+## 1981. US-0686 Big South Fork National Recreation Area — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25720,7 +25759,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_749.jpg)
 
-## 1979. US-0686 Big South Fork National Recreation Area — score 0.62
+## 1982. US-0686 Big South Fork National Recreation Area — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25733,7 +25772,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_750.jpg)
 
-## 1980. US-0686 Big South Fork National Recreation Area — score 0.62
+## 1983. US-0686 Big South Fork National Recreation Area — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25746,7 +25785,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_751.jpg)
 
-## 1981. US-1260 John James Audubon State Park — score 0.62
+## 1984. US-1260 John James Audubon State Park — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25759,7 +25798,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1260_06.jpg)
 
-## 1982. US-1261 Kincaid Lake State Park — score 0.62
+## 1985. US-1261 Kincaid Lake State Park — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25772,7 +25811,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1261_04.jpg)
 
-## 1983. US-1264 Levi Jackson Wilderness Road State Park — score 0.62
+## 1986. US-1264 Levi Jackson Wilderness Road State Park — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25785,7 +25824,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1264_16.jpg)
 
-## 1984. US-1264 Levi Jackson Wilderness Road State Park — score 0.62
+## 1987. US-1264 Levi Jackson Wilderness Road State Park — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25798,7 +25837,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1264_17.jpg)
 
-## 1985. US-1278 Dale Hollow State Park — score 0.62
+## 1988. US-1278 Dale Hollow State Park — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25811,7 +25850,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1278_29.jpg)
 
-## 1986. US-1278 Dale Hollow State Park — score 0.62
+## 1989. US-1278 Dale Hollow State Park — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25824,7 +25863,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1278_30.jpg)
 
-## 1987. US-1278 Dale Hollow State Park — score 0.62
+## 1990. US-1278 Dale Hollow State Park — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25837,7 +25876,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1278_31.jpg)
 
-## 1988. US-1282 Kenlake State Park — score 0.62
+## 1991. US-1282 Kenlake State Park — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25850,7 +25889,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1282_41.jpg)
 
-## 1989. US-1282 Kenlake State Park — score 0.62
+## 1992. US-1282 Kenlake State Park — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25863,7 +25902,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1282_42.jpg)
 
-## 1990. US-1282 Kenlake State Park — score 0.62
+## 1993. US-1282 Kenlake State Park — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25876,7 +25915,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1282_43.jpg)
 
-## 1991. US-1283 Kentucky Dam Village State Park — score 0.62
+## 1994. US-1283 Kentucky Dam Village State Park — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25889,7 +25928,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_54.jpg)
 
-## 1992. US-1283 Kentucky Dam Village State Park — score 0.62
+## 1995. US-1283 Kentucky Dam Village State Park — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25902,7 +25941,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_55.jpg)
 
-## 1993. US-1283 Kentucky Dam Village State Park — score 0.62
+## 1996. US-1283 Kentucky Dam Village State Park — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25915,7 +25954,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_56.jpg)
 
-## 1994. US-1284 Lake Barkley State Park — score 0.62
+## 1997. US-1284 Lake Barkley State Park — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25928,7 +25967,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1284_17.jpg)
 
-## 1995. US-1284 Lake Barkley State Park — score 0.62
+## 1998. US-1284 Lake Barkley State Park — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25941,7 +25980,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1284_18.jpg)
 
-## 1996. US-1284 Lake Barkley State Park — score 0.62
+## 1999. US-1284 Lake Barkley State Park — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25954,7 +25993,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1284_19.jpg)
 
-## 1997. US-1285 Lake Cumberland State Park — score 0.62
+## 2000. US-1285 Lake Cumberland State Park — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25967,7 +26006,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1285_08.jpg)
 
-## 1998. US-1288 Pine Mountain State Park — score 0.62
+## 2001. US-1288 Pine Mountain State Park — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25980,7 +26019,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1288_19.jpg)
 
-## 1999. US-3781 Breaks Interstate State Park — score 0.62
+## 2002. US-3781 Breaks Interstate State Park — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -25993,7 +26032,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_82.jpg)
 
-## 2000. US-3781 Breaks Interstate State Park — score 0.62
+## 2003. US-3781 Breaks Interstate State Park — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26006,7 +26045,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_83.jpg)
 
-## 2001. US-3792 Land Between the Lakes National Recreation Area — score 0.62
+## 2004. US-3792 Land Between the Lakes National Recreation Area — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26019,7 +26058,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_104.jpg)
 
-## 2002. US-3792 Land Between the Lakes National Recreation Area — score 0.62
+## 2005. US-3792 Land Between the Lakes National Recreation Area — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26032,7 +26071,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_105.jpg)
 
-## 2003. US-3792 Land Between the Lakes National Recreation Area — score 0.62
+## 2006. US-3792 Land Between the Lakes National Recreation Area — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26045,7 +26084,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_106.jpg)
 
-## 2004. US-3796 Big Rivers Wildlife Management Area — score 0.62
+## 2007. US-3796 Big Rivers Wildlife Management Area — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -26058,7 +26097,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3796_08.jpg)
 
-## 2005. US-3797 Boatwright Wildlife Management Area — score 0.62
+## 2008. US-3797 Boatwright Wildlife Management Area — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -26071,7 +26110,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3797_14.jpg)
 
-## 2006. US-3820 Kentucky River Wildlife Management Area — score 0.62
+## 2009. US-3820 Kentucky River Wildlife Management Area — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -26084,7 +26123,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3820_09.jpg)
 
-## 2007. US-3825 Miller Welch Wildlife Management Area — score 0.62
+## 2010. US-3825 Miller Welch Wildlife Management Area — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -26097,7 +26136,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3825_16.jpg)
 
-## 2008. US-3825 Miller Welch Wildlife Management Area — score 0.62
+## 2011. US-3825 Miller Welch Wildlife Management Area — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26110,7 +26149,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3825_17.jpg)
 
-## 2009. US-3826 Mullins Wildlife Management Area — score 0.62
+## 2012. US-3826 Mullins Wildlife Management Area — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -26123,7 +26162,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3826_03.jpg)
 
-## 2010. US-3828 Peabody Wildlife Management Area — score 0.62
+## 2013. US-3828 Peabody Wildlife Management Area — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26136,7 +26175,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_82.jpg)
 
-## 2011. US-3828 Peabody Wildlife Management Area — score 0.62
+## 2014. US-3828 Peabody Wildlife Management Area — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -26149,7 +26188,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_83.jpg)
 
-## 2012. US-3828 Peabody Wildlife Management Area — score 0.62
+## 2015. US-3828 Peabody Wildlife Management Area — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -26162,7 +26201,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_84.jpg)
 
-## 2013. US-3828 Peabody Wildlife Management Area — score 0.62
+## 2016. US-3828 Peabody Wildlife Management Area — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -26175,7 +26214,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_85.jpg)
 
-## 2014. US-3830 Sloughs Wildlife Management Area — score 0.62
+## 2017. US-3830 Sloughs Wildlife Management Area — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -26188,7 +26227,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3830_24.jpg)
 
-## 2015. US-3833 T. N. Sullivan Wildlife Management Area — score 0.62
+## 2018. US-3833 T. N. Sullivan Wildlife Management Area — score 0.62
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -26201,7 +26240,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3833_02.jpg)
 
-## 2016. US-0019 Cumberland Gap National Historical Park — score 0.61
+## 2019. US-0019 Cumberland Gap National Historical Park — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -26214,7 +26253,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0019_67.jpg)
 
-## 2017. US-0050 Mammoth Cave National Park — score 0.61
+## 2020. US-0050 Mammoth Cave National Park — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26227,7 +26266,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_128.jpg)
 
-## 2018. US-0050 Mammoth Cave National Park — score 0.61
+## 2021. US-0050 Mammoth Cave National Park — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -26240,7 +26279,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0050_129.jpg)
 
-## 2019. US-0050 Mammoth Cave National Park — score 0.61
+## 2022. US-0050 Mammoth Cave National Park — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26253,7 +26292,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_130.jpg)
 
-## 2020. US-0295 Clarks River National Wildlife Refuge — score 0.61
+## 2023. US-0295 Clarks River National Wildlife Refuge — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26266,7 +26305,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0295_24.jpg)
 
-## 2021. US-0686 Big South Fork National Recreation Area — score 0.61
+## 2024. US-0686 Big South Fork National Recreation Area — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26279,7 +26318,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_752.jpg)
 
-## 2022. US-0686 Big South Fork National Recreation Area — score 0.61
+## 2025. US-0686 Big South Fork National Recreation Area — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26292,7 +26331,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_753.jpg)
 
-## 2023. US-0686 Big South Fork National Recreation Area — score 0.61
+## 2026. US-0686 Big South Fork National Recreation Area — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26305,7 +26344,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_754.jpg)
 
-## 2024. US-0686 Big South Fork National Recreation Area — score 0.61
+## 2027. US-0686 Big South Fork National Recreation Area — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26318,7 +26357,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_755.jpg)
 
-## 2025. US-0686 Big South Fork National Recreation Area — score 0.61
+## 2028. US-0686 Big South Fork National Recreation Area — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26331,7 +26370,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_756.jpg)
 
-## 2026. US-0686 Big South Fork National Recreation Area — score 0.61
+## 2029. US-0686 Big South Fork National Recreation Area — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26344,7 +26383,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_757.jpg)
 
-## 2027. US-0686 Big South Fork National Recreation Area — score 0.61
+## 2030. US-0686 Big South Fork National Recreation Area — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26357,7 +26396,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_758.jpg)
 
-## 2028. US-0686 Big South Fork National Recreation Area — score 0.61
+## 2031. US-0686 Big South Fork National Recreation Area — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26370,7 +26409,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_759.jpg)
 
-## 2029. US-0686 Big South Fork National Recreation Area — score 0.61
+## 2032. US-0686 Big South Fork National Recreation Area — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26383,7 +26422,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_760.jpg)
 
-## 2030. US-0686 Big South Fork National Recreation Area — score 0.61
+## 2033. US-0686 Big South Fork National Recreation Area — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26396,7 +26435,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_761.jpg)
 
-## 2031. US-0686 Big South Fork National Recreation Area — score 0.61
+## 2034. US-0686 Big South Fork National Recreation Area — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26409,7 +26448,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_762.jpg)
 
-## 2032. US-0686 Big South Fork National Recreation Area — score 0.61
+## 2035. US-0686 Big South Fork National Recreation Area — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26422,7 +26461,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_763.jpg)
 
-## 2033. US-0686 Big South Fork National Recreation Area — score 0.61
+## 2036. US-0686 Big South Fork National Recreation Area — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26435,7 +26474,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_764.jpg)
 
-## 2034. US-0686 Big South Fork National Recreation Area — score 0.61
+## 2037. US-0686 Big South Fork National Recreation Area — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26448,7 +26487,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_765.jpg)
 
-## 2035. US-0686 Big South Fork National Recreation Area — score 0.61
+## 2038. US-0686 Big South Fork National Recreation Area — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26461,7 +26500,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_766.jpg)
 
-## 2036. US-0686 Big South Fork National Recreation Area — score 0.61
+## 2039. US-0686 Big South Fork National Recreation Area — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26474,7 +26513,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_767.jpg)
 
-## 2037. US-0686 Big South Fork National Recreation Area — score 0.61
+## 2040. US-0686 Big South Fork National Recreation Area — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26487,7 +26526,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_768.jpg)
 
-## 2038. US-0686 Big South Fork National Recreation Area — score 0.61
+## 2041. US-0686 Big South Fork National Recreation Area — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26500,7 +26539,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_769.jpg)
 
-## 2039. US-0703 Fort Donelson National Battlefield — score 0.61
+## 2042. US-0703 Fort Donelson National Battlefield — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26513,7 +26552,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0703_84.jpg)
 
-## 2040. US-0703 Fort Donelson National Battlefield — score 0.61
+## 2043. US-0703 Fort Donelson National Battlefield — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26526,7 +26565,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0703_85.jpg)
 
-## 2041. US-1253 Dawkins Line Rail Trail State Park — score 0.61
+## 2044. US-1253 Dawkins Line Rail Trail State Park — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26539,7 +26578,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1253_22.jpg)
 
-## 2042. US-1253 Dawkins Line Rail Trail State Park — score 0.61
+## 2045. US-1253 Dawkins Line Rail Trail State Park — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -26552,7 +26591,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-1253_23.jpg)
 
-## 2043. US-1253 Dawkins Line Rail Trail State Park — score 0.61
+## 2046. US-1253 Dawkins Line Rail Trail State Park — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -26565,7 +26604,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-1253_24.jpg)
 
-## 2044. US-1257 General Burnside State Park — score 0.61
+## 2047. US-1257 General Burnside State Park — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26578,7 +26617,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1257_10.jpg)
 
-## 2045. US-1261 Kincaid Lake State Park — score 0.61
+## 2048. US-1261 Kincaid Lake State Park — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26591,7 +26630,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1261_05.jpg)
 
-## 2046. US-1261 Kincaid Lake State Park — score 0.61
+## 2049. US-1261 Kincaid Lake State Park — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26604,7 +26643,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1261_06.jpg)
 
-## 2047. US-1261 Kincaid Lake State Park — score 0.61
+## 2050. US-1261 Kincaid Lake State Park — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26617,7 +26656,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1261_07.jpg)
 
-## 2048. US-1267 My Old Kentucky Home State Park — score 0.61
+## 2051. US-1267 My Old Kentucky Home State Park — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26630,7 +26669,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1267_06.jpg)
 
-## 2049. US-1270 Paintsville Lake State Park — score 0.61
+## 2052. US-1270 Paintsville Lake State Park — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26643,7 +26682,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1270_07.jpg)
 
-## 2050. US-1278 Dale Hollow State Park — score 0.61
+## 2053. US-1278 Dale Hollow State Park — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26656,7 +26695,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1278_32.jpg)
 
-## 2051. US-1279 General Butler State Park — score 0.61
+## 2054. US-1279 General Butler State Park — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26669,7 +26708,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1279_07.jpg)
 
-## 2052. US-1281 Jenny Wiley State Park — score 0.61
+## 2055. US-1281 Jenny Wiley State Park — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26682,7 +26721,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1281_21.jpg)
 
-## 2053. US-1283 Kentucky Dam Village State Park — score 0.61
+## 2056. US-1283 Kentucky Dam Village State Park — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26695,7 +26734,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_57.jpg)
 
-## 2054. US-1283 Kentucky Dam Village State Park — score 0.61
+## 2057. US-1283 Kentucky Dam Village State Park — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26708,7 +26747,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_58.jpg)
 
-## 2055. US-1284 Lake Barkley State Park — score 0.61
+## 2058. US-1284 Lake Barkley State Park — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26721,7 +26760,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1284_20.jpg)
 
-## 2056. US-1289 Rough River Dam State Park — score 0.61
+## 2059. US-1289 Rough River Dam State Park — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -26734,7 +26773,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-1289_12.jpg)
 
-## 2057. US-3781 Breaks Interstate State Park — score 0.61
+## 2060. US-3781 Breaks Interstate State Park — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26747,7 +26786,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_84.jpg)
 
-## 2058. US-3785 Perryville Battlefield State Historic Site — score 0.61
+## 2061. US-3785 Perryville Battlefield State Historic Site — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26760,7 +26799,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3785_06.jpg)
 
-## 2059. US-3785 Perryville Battlefield State Historic Site — score 0.61
+## 2062. US-3785 Perryville Battlefield State Historic Site — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -26773,7 +26812,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3785_07.jpg)
 
-## 2060. US-3792 Land Between the Lakes National Recreation Area — score 0.61
+## 2063. US-3792 Land Between the Lakes National Recreation Area — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26786,7 +26825,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_107.jpg)
 
-## 2061. US-3792 Land Between the Lakes National Recreation Area — score 0.61
+## 2064. US-3792 Land Between the Lakes National Recreation Area — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26799,7 +26838,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_108.jpg)
 
-## 2062. US-3792 Land Between the Lakes National Recreation Area — score 0.61
+## 2065. US-3792 Land Between the Lakes National Recreation Area — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26812,7 +26851,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_109.jpg)
 
-## 2063. US-3792 Land Between the Lakes National Recreation Area — score 0.61
+## 2066. US-3792 Land Between the Lakes National Recreation Area — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26825,7 +26864,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_110.jpg)
 
-## 2064. US-3792 Land Between the Lakes National Recreation Area — score 0.61
+## 2067. US-3792 Land Between the Lakes National Recreation Area — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26838,7 +26877,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_111.jpg)
 
-## 2065. US-3792 Land Between the Lakes National Recreation Area — score 0.61
+## 2068. US-3792 Land Between the Lakes National Recreation Area — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26851,7 +26890,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_112.jpg)
 
-## 2066. US-3792 Land Between the Lakes National Recreation Area — score 0.61
+## 2069. US-3792 Land Between the Lakes National Recreation Area — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26864,7 +26903,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_113.jpg)
 
-## 2067. US-3792 Land Between the Lakes National Recreation Area — score 0.61
+## 2070. US-3792 Land Between the Lakes National Recreation Area — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26877,7 +26916,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_114.jpg)
 
-## 2068. US-3794 Beaver Creek Wildlife Management Area — score 0.61
+## 2071. US-3794 Beaver Creek Wildlife Management Area — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26890,7 +26929,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3794_17.jpg)
 
-## 2069. US-3796 Big Rivers Wildlife Management Area — score 0.61
+## 2072. US-3796 Big Rivers Wildlife Management Area — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -26903,7 +26942,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3796_09.jpg)
 
-## 2070. US-3796 Big Rivers Wildlife Management Area — score 0.61
+## 2073. US-3796 Big Rivers Wildlife Management Area — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -26916,7 +26955,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3796_10.jpg)
 
-## 2071. US-3796 Big Rivers Wildlife Management Area — score 0.61
+## 2074. US-3796 Big Rivers Wildlife Management Area — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -26929,7 +26968,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3796_11.jpg)
 
-## 2072. US-3805 Curtis Gates Lloyd Wildlife Management Area — score 0.61
+## 2075. US-3805 Curtis Gates Lloyd Wildlife Management Area — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26942,7 +26981,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3805_20.jpg)
 
-## 2073. US-3815 Higginson-Henry Wildlife Management Area — score 0.61
+## 2076. US-3815 Higginson-Henry Wildlife Management Area — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -26955,7 +26994,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3815_46.jpg)
 
-## 2074. US-3815 Higginson-Henry Wildlife Management Area — score 0.61
+## 2077. US-3815 Higginson-Henry Wildlife Management Area — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -26968,7 +27007,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3815_47.jpg)
 
-## 2075. US-3825 Miller Welch Wildlife Management Area — score 0.61
+## 2078. US-3825 Miller Welch Wildlife Management Area — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -26981,7 +27020,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3825_18.jpg)
 
-## 2076. US-3825 Miller Welch Wildlife Management Area — score 0.61
+## 2079. US-3825 Miller Welch Wildlife Management Area — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -26994,7 +27033,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3825_19.jpg)
 
-## 2077. US-3828 Peabody Wildlife Management Area — score 0.61
+## 2080. US-3828 Peabody Wildlife Management Area — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27007,7 +27046,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_86.jpg)
 
-## 2078. US-3828 Peabody Wildlife Management Area — score 0.61
+## 2081. US-3828 Peabody Wildlife Management Area — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27020,7 +27059,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_87.jpg)
 
-## 2079. US-3828 Peabody Wildlife Management Area — score 0.61
+## 2082. US-3828 Peabody Wildlife Management Area — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27033,7 +27072,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_88.jpg)
 
-## 2080. US-3830 Sloughs Wildlife Management Area — score 0.61
+## 2083. US-3830 Sloughs Wildlife Management Area — score 0.61
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27046,7 +27085,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3830_25.jpg)
 
-## 2081. US-0019 Cumberland Gap National Historical Park — score 0.60
+## 2084. US-0019 Cumberland Gap National Historical Park — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27059,7 +27098,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_68.jpg)
 
-## 2082. US-0050 Mammoth Cave National Park — score 0.60
+## 2085. US-0050 Mammoth Cave National Park — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27072,7 +27111,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_131.jpg)
 
-## 2083. US-0050 Mammoth Cave National Park — score 0.60
+## 2086. US-0050 Mammoth Cave National Park — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27085,7 +27124,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_132.jpg)
 
-## 2084. US-0050 Mammoth Cave National Park — score 0.60
+## 2087. US-0050 Mammoth Cave National Park — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27098,7 +27137,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_133.jpg)
 
-## 2085. US-0050 Mammoth Cave National Park — score 0.60
+## 2088. US-0050 Mammoth Cave National Park — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -27111,7 +27150,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0050_134.jpg)
 
-## 2086. US-0050 Mammoth Cave National Park — score 0.60
+## 2089. US-0050 Mammoth Cave National Park — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27124,7 +27163,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_135.jpg)
 
-## 2087. US-0050 Mammoth Cave National Park — score 0.60
+## 2090. US-0050 Mammoth Cave National Park — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27137,7 +27176,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_136.jpg)
 
-## 2088. US-0050 Mammoth Cave National Park — score 0.60
+## 2091. US-0050 Mammoth Cave National Park — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27150,7 +27189,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_137.jpg)
 
-## 2089. US-0538 Reelfoot National Wildlife Refuge — score 0.60
+## 2092. US-0538 Reelfoot National Wildlife Refuge — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -27163,7 +27202,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0538_03.jpg)
 
-## 2090. US-0538 Reelfoot National Wildlife Refuge — score 0.60
+## 2093. US-0538 Reelfoot National Wildlife Refuge — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -27176,7 +27215,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0538_04.jpg)
 
-## 2091. US-0686 Big South Fork National Recreation Area — score 0.60
+## 2094. US-0686 Big South Fork National Recreation Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27189,7 +27228,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_770.jpg)
 
-## 2092. US-0686 Big South Fork National Recreation Area — score 0.60
+## 2095. US-0686 Big South Fork National Recreation Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27202,7 +27241,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_771.jpg)
 
-## 2093. US-0686 Big South Fork National Recreation Area — score 0.60
+## 2096. US-0686 Big South Fork National Recreation Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27215,7 +27254,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_772.jpg)
 
-## 2094. US-0686 Big South Fork National Recreation Area — score 0.60
+## 2097. US-0686 Big South Fork National Recreation Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27228,7 +27267,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_773.jpg)
 
-## 2095. US-0686 Big South Fork National Recreation Area — score 0.60
+## 2098. US-0686 Big South Fork National Recreation Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27241,7 +27280,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_774.jpg)
 
-## 2096. US-0686 Big South Fork National Recreation Area — score 0.60
+## 2099. US-0686 Big South Fork National Recreation Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27254,7 +27293,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_775.jpg)
 
-## 2097. US-0686 Big South Fork National Recreation Area — score 0.60
+## 2100. US-0686 Big South Fork National Recreation Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27267,7 +27306,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_776.jpg)
 
-## 2098. US-0686 Big South Fork National Recreation Area — score 0.60
+## 2101. US-0686 Big South Fork National Recreation Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27280,7 +27319,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_777.jpg)
 
-## 2099. US-0686 Big South Fork National Recreation Area — score 0.60
+## 2102. US-0686 Big South Fork National Recreation Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27293,7 +27332,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_778.jpg)
 
-## 2100. US-0686 Big South Fork National Recreation Area — score 0.60
+## 2103. US-0686 Big South Fork National Recreation Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27306,7 +27345,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_779.jpg)
 
-## 2101. US-0686 Big South Fork National Recreation Area — score 0.60
+## 2104. US-0686 Big South Fork National Recreation Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27319,7 +27358,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_780.jpg)
 
-## 2102. US-0686 Big South Fork National Recreation Area — score 0.60
+## 2105. US-0686 Big South Fork National Recreation Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27332,7 +27371,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_781.jpg)
 
-## 2103. US-0686 Big South Fork National Recreation Area — score 0.60
+## 2106. US-0686 Big South Fork National Recreation Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27345,7 +27384,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_782.jpg)
 
-## 2104. US-0686 Big South Fork National Recreation Area — score 0.60
+## 2107. US-0686 Big South Fork National Recreation Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27358,7 +27397,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_783.jpg)
 
-## 2105. US-0686 Big South Fork National Recreation Area — score 0.60
+## 2108. US-0686 Big South Fork National Recreation Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27371,7 +27410,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_784.jpg)
 
-## 2106. US-0686 Big South Fork National Recreation Area — score 0.60
+## 2109. US-0686 Big South Fork National Recreation Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27384,7 +27423,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_785.jpg)
 
-## 2107. US-0686 Big South Fork National Recreation Area — score 0.60
+## 2110. US-0686 Big South Fork National Recreation Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27397,7 +27436,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_786.jpg)
 
-## 2108. US-0686 Big South Fork National Recreation Area — score 0.60
+## 2111. US-0686 Big South Fork National Recreation Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27410,7 +27449,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_787.jpg)
 
-## 2109. US-0686 Big South Fork National Recreation Area — score 0.60
+## 2112. US-0686 Big South Fork National Recreation Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27423,7 +27462,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_788.jpg)
 
-## 2110. US-0686 Big South Fork National Recreation Area — score 0.60
+## 2113. US-0686 Big South Fork National Recreation Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27436,7 +27475,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_789.jpg)
 
-## 2111. US-0686 Big South Fork National Recreation Area — score 0.60
+## 2114. US-0686 Big South Fork National Recreation Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27449,7 +27488,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_790.jpg)
 
-## 2112. US-0686 Big South Fork National Recreation Area — score 0.60
+## 2115. US-0686 Big South Fork National Recreation Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27462,7 +27501,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_791.jpg)
 
-## 2113. US-0686 Big South Fork National Recreation Area — score 0.60
+## 2116. US-0686 Big South Fork National Recreation Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27475,7 +27514,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_792.jpg)
 
-## 2114. US-0686 Big South Fork National Recreation Area — score 0.60
+## 2117. US-0686 Big South Fork National Recreation Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27488,7 +27527,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_793.jpg)
 
-## 2115. US-0686 Big South Fork National Recreation Area — score 0.60
+## 2118. US-0686 Big South Fork National Recreation Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27501,7 +27540,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_794.jpg)
 
-## 2116. US-0686 Big South Fork National Recreation Area — score 0.60
+## 2119. US-0686 Big South Fork National Recreation Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27514,7 +27553,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_795.jpg)
 
-## 2117. US-0686 Big South Fork National Recreation Area — score 0.60
+## 2120. US-0686 Big South Fork National Recreation Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27527,7 +27566,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_796.jpg)
 
-## 2118. US-0686 Big South Fork National Recreation Area — score 0.60
+## 2121. US-0686 Big South Fork National Recreation Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -27540,7 +27579,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0686_797.jpg)
 
-## 2119. US-0703 Fort Donelson National Battlefield — score 0.60
+## 2122. US-0703 Fort Donelson National Battlefield — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27553,7 +27592,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0703_86.jpg)
 
-## 2120. US-1253 Dawkins Line Rail Trail State Park — score 0.60
+## 2123. US-1253 Dawkins Line Rail Trail State Park — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27566,7 +27605,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1253_25.jpg)
 
-## 2121. US-1253 Dawkins Line Rail Trail State Park — score 0.60
+## 2124. US-1253 Dawkins Line Rail Trail State Park — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27579,7 +27618,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1253_26.jpg)
 
-## 2122. US-1255 Fishtrap Lake Wildlife Management Area — score 0.60
+## 2125. US-1255 Fishtrap Lake Wildlife Management Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27592,7 +27631,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1255_06.jpg)
 
-## 2123. US-1257 General Burnside State Park — score 0.60
+## 2126. US-1257 General Burnside State Park — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27605,7 +27644,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1257_11.jpg)
 
-## 2124. US-1261 Kincaid Lake State Park — score 0.60
+## 2127. US-1261 Kincaid Lake State Park — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27618,7 +27657,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1261_08.jpg)
 
-## 2125. US-1264 Levi Jackson Wilderness Road State Park — score 0.60
+## 2128. US-1264 Levi Jackson Wilderness Road State Park — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27631,7 +27670,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1264_18.jpg)
 
-## 2126. US-1266 Mineral Mounds State Park — score 0.60
+## 2129. US-1266 Mineral Mounds State Park — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27644,7 +27683,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1266_06.jpg)
 
-## 2127. US-1278 Dale Hollow State Park — score 0.60
+## 2130. US-1278 Dale Hollow State Park — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27657,7 +27696,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1278_33.jpg)
 
-## 2128. US-1278 Dale Hollow State Park — score 0.60
+## 2131. US-1278 Dale Hollow State Park — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27670,7 +27709,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1278_34.jpg)
 
-## 2129. US-1278 Dale Hollow State Park — score 0.60
+## 2132. US-1278 Dale Hollow State Park — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27683,7 +27722,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1278_35.jpg)
 
-## 2130. US-1283 Kentucky Dam Village State Park — score 0.60
+## 2133. US-1283 Kentucky Dam Village State Park — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27696,7 +27735,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_59.jpg)
 
-## 2131. US-3781 Breaks Interstate State Park — score 0.60
+## 2134. US-3781 Breaks Interstate State Park — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27709,7 +27748,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_85.jpg)
 
-## 2132. US-3781 Breaks Interstate State Park — score 0.60
+## 2135. US-3781 Breaks Interstate State Park — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27722,7 +27761,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_86.jpg)
 
-## 2133. US-3781 Breaks Interstate State Park — score 0.60
+## 2136. US-3781 Breaks Interstate State Park — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27735,7 +27774,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_87.jpg)
 
-## 2134. US-3788 Wickliffe Mounds State Historic Site — score 0.60
+## 2137. US-3788 Wickliffe Mounds State Historic Site — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -27748,7 +27787,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3788_02.jpg)
 
-## 2135. US-3789 William Whitley House State Historic Site — score 0.60
+## 2138. US-3789 William Whitley House State Historic Site — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -27761,7 +27800,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3789_02.jpg)
 
-## 2136. US-3792 Land Between the Lakes National Recreation Area — score 0.60
+## 2139. US-3792 Land Between the Lakes National Recreation Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27774,7 +27813,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_115.jpg)
 
-## 2137. US-3792 Land Between the Lakes National Recreation Area — score 0.60
+## 2140. US-3792 Land Between the Lakes National Recreation Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27787,7 +27826,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_116.jpg)
 
-## 2138. US-3792 Land Between the Lakes National Recreation Area — score 0.60
+## 2141. US-3792 Land Between the Lakes National Recreation Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27800,7 +27839,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_117.jpg)
 
-## 2139. US-3792 Land Between the Lakes National Recreation Area — score 0.60
+## 2142. US-3792 Land Between the Lakes National Recreation Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27813,7 +27852,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_118.jpg)
 
-## 2140. US-3792 Land Between the Lakes National Recreation Area — score 0.60
+## 2143. US-3792 Land Between the Lakes National Recreation Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27826,7 +27865,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_119.jpg)
 
-## 2141. US-3792 Land Between the Lakes National Recreation Area — score 0.60
+## 2144. US-3792 Land Between the Lakes National Recreation Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27839,7 +27878,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_120.jpg)
 
-## 2142. US-3794 Beaver Creek Wildlife Management Area — score 0.60
+## 2145. US-3794 Beaver Creek Wildlife Management Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -27852,7 +27891,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3794_18.jpg)
 
-## 2143. US-3794 Beaver Creek Wildlife Management Area — score 0.60
+## 2146. US-3794 Beaver Creek Wildlife Management Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27865,7 +27904,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3794_19.jpg)
 
-## 2144. US-3797 Boatwright Wildlife Management Area — score 0.60
+## 2147. US-3797 Boatwright Wildlife Management Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27878,7 +27917,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3797_15.jpg)
 
-## 2145. US-3802 Clyde E Buckley Sanctuary — score 0.60
+## 2148. US-3802 Clyde E Buckley Sanctuary — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -27891,7 +27930,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3802_11.jpg)
 
-## 2146. US-3816 John A. Kleber Wildlife Management Area — score 0.60
+## 2149. US-3816 John A. Kleber Wildlife Management Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27904,7 +27943,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3816_15.jpg)
 
-## 2147. US-3825 Miller Welch Wildlife Management Area — score 0.60
+## 2150. US-3825 Miller Welch Wildlife Management Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27917,7 +27956,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3825_20.jpg)
 
-## 2148. US-3826 Mullins Wildlife Management Area — score 0.60
+## 2151. US-3826 Mullins Wildlife Management Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -27930,7 +27969,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3826_04.jpg)
 
-## 2149. US-3827 Obion Creek Wildlife Management Area — score 0.60
+## 2152. US-3827 Obion Creek Wildlife Management Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27943,7 +27982,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3827_06.jpg)
 
-## 2150. US-3828 Peabody Wildlife Management Area — score 0.60
+## 2153. US-3828 Peabody Wildlife Management Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -27956,7 +27995,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_89.jpg)
 
-## 2151. US-3828 Peabody Wildlife Management Area — score 0.60
+## 2154. US-3828 Peabody Wildlife Management Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27969,7 +28008,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_90.jpg)
 
-## 2152. US-3830 Sloughs Wildlife Management Area — score 0.60
+## 2155. US-3830 Sloughs Wildlife Management Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -27982,7 +28021,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3830_26.jpg)
 
-## 2153. US-3830 Sloughs Wildlife Management Area — score 0.60
+## 2156. US-3830 Sloughs Wildlife Management Area — score 0.60
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -27995,7 +28034,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3830_27.jpg)
 
-## 2154. US-0019 Cumberland Gap National Historical Park — score 0.59
+## 2157. US-0019 Cumberland Gap National Historical Park — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28008,7 +28047,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_69.jpg)
 
-## 2155. US-0019 Cumberland Gap National Historical Park — score 0.59
+## 2158. US-0019 Cumberland Gap National Historical Park — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28021,7 +28060,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_70.jpg)
 
-## 2156. US-0019 Cumberland Gap National Historical Park — score 0.59
+## 2159. US-0019 Cumberland Gap National Historical Park — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28034,7 +28073,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_71.jpg)
 
-## 2157. US-0019 Cumberland Gap National Historical Park — score 0.59
+## 2160. US-0019 Cumberland Gap National Historical Park — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28047,7 +28086,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_72.jpg)
 
-## 2158. US-0050 Mammoth Cave National Park — score 0.59
+## 2161. US-0050 Mammoth Cave National Park — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28060,7 +28099,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_138.jpg)
 
-## 2159. US-0050 Mammoth Cave National Park — score 0.59
+## 2162. US-0050 Mammoth Cave National Park — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -28073,7 +28112,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0050_139.jpg)
 
-## 2160. US-0050 Mammoth Cave National Park — score 0.59
+## 2163. US-0050 Mammoth Cave National Park — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28086,7 +28125,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_140.jpg)
 
-## 2161. US-0050 Mammoth Cave National Park — score 0.59
+## 2164. US-0050 Mammoth Cave National Park — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28099,7 +28138,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_141.jpg)
 
-## 2162. US-0050 Mammoth Cave National Park — score 0.59
+## 2165. US-0050 Mammoth Cave National Park — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28112,7 +28151,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_142.jpg)
 
-## 2163. US-0538 Reelfoot National Wildlife Refuge — score 0.59
+## 2166. US-0538 Reelfoot National Wildlife Refuge — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -28125,7 +28164,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0538_05.jpg)
 
-## 2164. US-0686 Big South Fork National Recreation Area — score 0.59
+## 2167. US-0686 Big South Fork National Recreation Area — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28138,7 +28177,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_798.jpg)
 
-## 2165. US-0686 Big South Fork National Recreation Area — score 0.59
+## 2168. US-0686 Big South Fork National Recreation Area — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28151,7 +28190,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_799.jpg)
 
-## 2166. US-0686 Big South Fork National Recreation Area — score 0.59
+## 2169. US-0686 Big South Fork National Recreation Area — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28164,7 +28203,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_800.jpg)
 
-## 2167. US-0686 Big South Fork National Recreation Area — score 0.59
+## 2170. US-0686 Big South Fork National Recreation Area — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28177,7 +28216,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_801.jpg)
 
-## 2168. US-0686 Big South Fork National Recreation Area — score 0.59
+## 2171. US-0686 Big South Fork National Recreation Area — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28190,7 +28229,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_802.jpg)
 
-## 2169. US-0686 Big South Fork National Recreation Area — score 0.59
+## 2172. US-0686 Big South Fork National Recreation Area — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28203,7 +28242,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_803.jpg)
 
-## 2170. US-0686 Big South Fork National Recreation Area — score 0.59
+## 2173. US-0686 Big South Fork National Recreation Area — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28216,7 +28255,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_804.jpg)
 
-## 2171. US-0686 Big South Fork National Recreation Area — score 0.59
+## 2174. US-0686 Big South Fork National Recreation Area — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28229,7 +28268,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_805.jpg)
 
-## 2172. US-0686 Big South Fork National Recreation Area — score 0.59
+## 2175. US-0686 Big South Fork National Recreation Area — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28242,7 +28281,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_806.jpg)
 
-## 2173. US-0686 Big South Fork National Recreation Area — score 0.59
+## 2176. US-0686 Big South Fork National Recreation Area — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28255,7 +28294,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_807.jpg)
 
-## 2174. US-0686 Big South Fork National Recreation Area — score 0.59
+## 2177. US-0686 Big South Fork National Recreation Area — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28268,7 +28307,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_808.jpg)
 
-## 2175. US-0686 Big South Fork National Recreation Area — score 0.59
+## 2178. US-0686 Big South Fork National Recreation Area — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -28281,7 +28320,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0686_809.jpg)
 
-## 2176. US-0686 Big South Fork National Recreation Area — score 0.59
+## 2179. US-0686 Big South Fork National Recreation Area — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28294,7 +28333,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_810.jpg)
 
-## 2177. US-0686 Big South Fork National Recreation Area — score 0.59
+## 2180. US-0686 Big South Fork National Recreation Area — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28307,7 +28346,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_811.jpg)
 
-## 2178. US-0686 Big South Fork National Recreation Area — score 0.59
+## 2181. US-0686 Big South Fork National Recreation Area — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28320,7 +28359,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_812.jpg)
 
-## 2179. US-0686 Big South Fork National Recreation Area — score 0.59
+## 2182. US-0686 Big South Fork National Recreation Area — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28333,7 +28372,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_813.jpg)
 
-## 2180. US-0686 Big South Fork National Recreation Area — score 0.59
+## 2183. US-0686 Big South Fork National Recreation Area — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28346,7 +28385,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_814.jpg)
 
-## 2181. US-0686 Big South Fork National Recreation Area — score 0.59
+## 2184. US-0686 Big South Fork National Recreation Area — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28359,7 +28398,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_815.jpg)
 
-## 2182. US-0686 Big South Fork National Recreation Area — score 0.59
+## 2185. US-0686 Big South Fork National Recreation Area — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -28372,7 +28411,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0686_816.jpg)
 
-## 2183. US-0686 Big South Fork National Recreation Area — score 0.59
+## 2186. US-0686 Big South Fork National Recreation Area — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28385,7 +28424,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_817.jpg)
 
-## 2184. US-0703 Fort Donelson National Battlefield — score 0.59
+## 2187. US-0703 Fort Donelson National Battlefield — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28398,7 +28437,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0703_87.jpg)
 
-## 2185. US-0703 Fort Donelson National Battlefield — score 0.59
+## 2188. US-0703 Fort Donelson National Battlefield — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28411,7 +28450,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0703_88.jpg)
 
-## 2186. US-1253 Dawkins Line Rail Trail State Park — score 0.59
+## 2189. US-1253 Dawkins Line Rail Trail State Park — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28424,7 +28463,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1253_27.jpg)
 
-## 2187. US-1257 General Burnside State Park — score 0.59
+## 2190. US-1257 General Burnside State Park — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28437,7 +28476,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1257_12.jpg)
 
-## 2188. US-1260 John James Audubon State Park — score 0.59
+## 2191. US-1260 John James Audubon State Park — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28450,7 +28489,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1260_07.jpg)
 
-## 2189. US-1262 Kingdom Come State Park — score 0.59
+## 2192. US-1262 Kingdom Come State Park — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28463,7 +28502,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1262_04.jpg)
 
-## 2190. US-1264 Levi Jackson Wilderness Road State Park — score 0.59
+## 2193. US-1264 Levi Jackson Wilderness Road State Park — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28476,7 +28515,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1264_19.jpg)
 
-## 2191. US-1264 Levi Jackson Wilderness Road State Park — score 0.59
+## 2194. US-1264 Levi Jackson Wilderness Road State Park — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28489,7 +28528,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1264_20.jpg)
 
-## 2192. US-1267 My Old Kentucky Home State Park — score 0.59
+## 2195. US-1267 My Old Kentucky Home State Park — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28502,7 +28541,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1267_07.jpg)
 
-## 2193. US-1270 Paintsville Lake State Park — score 0.59
+## 2196. US-1270 Paintsville Lake State Park — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28515,7 +28554,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1270_08.jpg)
 
-## 2194. US-1273 Barren River Lake State Park — score 0.59
+## 2197. US-1273 Barren River Lake State Park — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28528,7 +28567,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1273_04.jpg)
 
-## 2195. US-1279 General Butler State Park — score 0.59
+## 2198. US-1279 General Butler State Park — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28541,7 +28580,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1279_08.jpg)
 
-## 2196. US-1282 Kenlake State Park — score 0.59
+## 2199. US-1282 Kenlake State Park — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28554,7 +28593,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1282_44.jpg)
 
-## 2197. US-1282 Kenlake State Park — score 0.59
+## 2200. US-1282 Kenlake State Park — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28567,7 +28606,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1282_45.jpg)
 
-## 2198. US-1284 Lake Barkley State Park — score 0.59
+## 2201. US-1284 Lake Barkley State Park — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28580,7 +28619,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1284_21.jpg)
 
-## 2199. US-1288 Pine Mountain State Park — score 0.59
+## 2202. US-1288 Pine Mountain State Park — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28593,7 +28632,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1288_20.jpg)
 
-## 2200. US-3781 Breaks Interstate State Park — score 0.59
+## 2203. US-3781 Breaks Interstate State Park — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28606,7 +28645,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_88.jpg)
 
-## 2201. US-3781 Breaks Interstate State Park — score 0.59
+## 2204. US-3781 Breaks Interstate State Park — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28619,7 +28658,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_89.jpg)
 
-## 2202. US-3783 Jefferson Davis State Historic Site — score 0.59
+## 2205. US-3783 Jefferson Davis State Historic Site — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28632,7 +28671,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3783_02.jpg)
 
-## 2203. US-3790 Fort Heiman National Battlefield — score 0.59
+## 2206. US-3790 Fort Heiman National Battlefield — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28645,7 +28684,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3790_01.jpg)
 
-## 2204. US-3792 Land Between the Lakes National Recreation Area — score 0.59
+## 2207. US-3792 Land Between the Lakes National Recreation Area — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28658,7 +28697,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_121.jpg)
 
-## 2205. US-3792 Land Between the Lakes National Recreation Area — score 0.59
+## 2208. US-3792 Land Between the Lakes National Recreation Area — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28671,7 +28710,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_122.jpg)
 
-## 2206. US-3792 Land Between the Lakes National Recreation Area — score 0.59
+## 2209. US-3792 Land Between the Lakes National Recreation Area — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28684,7 +28723,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_123.jpg)
 
-## 2207. US-3792 Land Between the Lakes National Recreation Area — score 0.59
+## 2210. US-3792 Land Between the Lakes National Recreation Area — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28697,7 +28736,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_124.jpg)
 
-## 2208. US-3792 Land Between the Lakes National Recreation Area — score 0.59
+## 2211. US-3792 Land Between the Lakes National Recreation Area — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28710,7 +28749,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_125.jpg)
 
-## 2209. US-3792 Land Between the Lakes National Recreation Area — score 0.59
+## 2212. US-3792 Land Between the Lakes National Recreation Area — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28723,7 +28762,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_126.jpg)
 
-## 2210. US-3792 Land Between the Lakes National Recreation Area — score 0.59
+## 2213. US-3792 Land Between the Lakes National Recreation Area — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28736,7 +28775,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_127.jpg)
 
-## 2211. US-3792 Land Between the Lakes National Recreation Area — score 0.59
+## 2214. US-3792 Land Between the Lakes National Recreation Area — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28749,7 +28788,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_128.jpg)
 
-## 2212. US-3792 Land Between the Lakes National Recreation Area — score 0.59
+## 2215. US-3792 Land Between the Lakes National Recreation Area — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28762,7 +28801,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_129.jpg)
 
-## 2213. US-3792 Land Between the Lakes National Recreation Area — score 0.59
+## 2216. US-3792 Land Between the Lakes National Recreation Area — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -28775,7 +28814,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3792_130.jpg)
 
-## 2214. US-3800 Cedar Creek Lake Wildlife Management Area — score 0.59
+## 2217. US-3800 Cedar Creek Lake Wildlife Management Area — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -28788,7 +28827,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3800_17.jpg)
 
-## 2215. US-3812 Fleming Wildlife Management Area — score 0.59
+## 2218. US-3812 Fleming Wildlife Management Area — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -28801,7 +28840,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3812_05.jpg)
 
-## 2216. US-3813 Griffith Woods Wildlife Management Area — score 0.59
+## 2219. US-3813 Griffith Woods Wildlife Management Area — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -28814,7 +28853,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3813_09.jpg)
 
-## 2217. US-3815 Higginson-Henry Wildlife Management Area — score 0.59
+## 2220. US-3815 Higginson-Henry Wildlife Management Area — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28827,7 +28866,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3815_48.jpg)
 
-## 2218. US-3815 Higginson-Henry Wildlife Management Area — score 0.59
+## 2221. US-3815 Higginson-Henry Wildlife Management Area — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28840,7 +28879,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3815_49.jpg)
 
-## 2219. US-3816 John A. Kleber Wildlife Management Area — score 0.59
+## 2222. US-3816 John A. Kleber Wildlife Management Area — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28853,7 +28892,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3816_16.jpg)
 
-## 2220. US-3825 Miller Welch Wildlife Management Area — score 0.59
+## 2223. US-3825 Miller Welch Wildlife Management Area — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28866,7 +28905,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3825_21.jpg)
 
-## 2221. US-3828 Peabody Wildlife Management Area — score 0.59
+## 2224. US-3828 Peabody Wildlife Management Area — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -28879,7 +28918,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_91.jpg)
 
-## 2222. US-3828 Peabody Wildlife Management Area — score 0.59
+## 2225. US-3828 Peabody Wildlife Management Area — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28892,7 +28931,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_92.jpg)
 
-## 2223. US-3828 Peabody Wildlife Management Area — score 0.59
+## 2226. US-3828 Peabody Wildlife Management Area — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28905,7 +28944,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_93.jpg)
 
-## 2224. US-3828 Peabody Wildlife Management Area — score 0.59
+## 2227. US-3828 Peabody Wildlife Management Area — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28918,7 +28957,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_94.jpg)
 
-## 2225. US-3828 Peabody Wildlife Management Area — score 0.59
+## 2228. US-3828 Peabody Wildlife Management Area — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -28931,7 +28970,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_95.jpg)
 
-## 2226. US-3830 Sloughs Wildlife Management Area — score 0.59
+## 2229. US-3830 Sloughs Wildlife Management Area — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28944,7 +28983,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3830_28.jpg)
 
-## 2227. US-3830 Sloughs Wildlife Management Area — score 0.59
+## 2230. US-3830 Sloughs Wildlife Management Area — score 0.59
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28957,7 +28996,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3830_29.jpg)
 
-## 2228. US-0019 Cumberland Gap National Historical Park — score 0.58
+## 2231. US-0019 Cumberland Gap National Historical Park — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28970,7 +29009,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_73.jpg)
 
-## 2229. US-0019 Cumberland Gap National Historical Park — score 0.58
+## 2232. US-0019 Cumberland Gap National Historical Park — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28983,7 +29022,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_74.jpg)
 
-## 2230. US-0019 Cumberland Gap National Historical Park — score 0.58
+## 2233. US-0019 Cumberland Gap National Historical Park — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -28996,7 +29035,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_75.jpg)
 
-## 2231. US-0050 Mammoth Cave National Park — score 0.58
+## 2234. US-0050 Mammoth Cave National Park — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29009,7 +29048,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_143.jpg)
 
-## 2232. US-0050 Mammoth Cave National Park — score 0.58
+## 2235. US-0050 Mammoth Cave National Park — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29022,7 +29061,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_144.jpg)
 
-## 2233. US-0050 Mammoth Cave National Park — score 0.58
+## 2236. US-0050 Mammoth Cave National Park — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29035,7 +29074,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_145.jpg)
 
-## 2234. US-0050 Mammoth Cave National Park — score 0.58
+## 2237. US-0050 Mammoth Cave National Park — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29048,7 +29087,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_146.jpg)
 
-## 2235. US-0050 Mammoth Cave National Park — score 0.58
+## 2238. US-0050 Mammoth Cave National Park — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29061,7 +29100,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_147.jpg)
 
-## 2236. US-0050 Mammoth Cave National Park — score 0.58
+## 2239. US-0050 Mammoth Cave National Park — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -29074,7 +29113,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0050_148.jpg)
 
-## 2237. US-0295 Clarks River National Wildlife Refuge — score 0.58
+## 2240. US-0295 Clarks River National Wildlife Refuge — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29087,7 +29126,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0295_25.jpg)
 
-## 2238. US-0538 Reelfoot National Wildlife Refuge — score 0.58
+## 2241. US-0538 Reelfoot National Wildlife Refuge — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -29100,7 +29139,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0538_06.jpg)
 
-## 2239. US-0686 Big South Fork National Recreation Area — score 0.58
+## 2242. US-0686 Big South Fork National Recreation Area — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29113,7 +29152,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_818.jpg)
 
-## 2240. US-0686 Big South Fork National Recreation Area — score 0.58
+## 2243. US-0686 Big South Fork National Recreation Area — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29126,7 +29165,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_819.jpg)
 
-## 2241. US-0686 Big South Fork National Recreation Area — score 0.58
+## 2244. US-0686 Big South Fork National Recreation Area — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29139,7 +29178,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_820.jpg)
 
-## 2242. US-0686 Big South Fork National Recreation Area — score 0.58
+## 2245. US-0686 Big South Fork National Recreation Area — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29152,7 +29191,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_821.jpg)
 
-## 2243. US-0686 Big South Fork National Recreation Area — score 0.58
+## 2246. US-0686 Big South Fork National Recreation Area — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29165,7 +29204,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_822.jpg)
 
-## 2244. US-0686 Big South Fork National Recreation Area — score 0.58
+## 2247. US-0686 Big South Fork National Recreation Area — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29178,7 +29217,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_823.jpg)
 
-## 2245. US-0686 Big South Fork National Recreation Area — score 0.58
+## 2248. US-0686 Big South Fork National Recreation Area — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29191,7 +29230,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_824.jpg)
 
-## 2246. US-0686 Big South Fork National Recreation Area — score 0.58
+## 2249. US-0686 Big South Fork National Recreation Area — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29204,7 +29243,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_825.jpg)
 
-## 2247. US-0686 Big South Fork National Recreation Area — score 0.58
+## 2250. US-0686 Big South Fork National Recreation Area — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29217,7 +29256,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_826.jpg)
 
-## 2248. US-0686 Big South Fork National Recreation Area — score 0.58
+## 2251. US-0686 Big South Fork National Recreation Area — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29230,7 +29269,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_827.jpg)
 
-## 2249. US-0686 Big South Fork National Recreation Area — score 0.58
+## 2252. US-0686 Big South Fork National Recreation Area — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29243,7 +29282,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_828.jpg)
 
-## 2250. US-0686 Big South Fork National Recreation Area — score 0.58
+## 2253. US-0686 Big South Fork National Recreation Area — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29256,7 +29295,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_829.jpg)
 
-## 2251. US-0686 Big South Fork National Recreation Area — score 0.58
+## 2254. US-0686 Big South Fork National Recreation Area — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29269,7 +29308,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_830.jpg)
 
-## 2252. US-0686 Big South Fork National Recreation Area — score 0.58
+## 2255. US-0686 Big South Fork National Recreation Area — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29282,7 +29321,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_831.jpg)
 
-## 2253. US-0686 Big South Fork National Recreation Area — score 0.58
+## 2256. US-0686 Big South Fork National Recreation Area — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29295,7 +29334,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_832.jpg)
 
-## 2254. US-0686 Big South Fork National Recreation Area — score 0.58
+## 2257. US-0686 Big South Fork National Recreation Area — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29308,7 +29347,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_833.jpg)
 
-## 2255. US-0686 Big South Fork National Recreation Area — score 0.58
+## 2258. US-0686 Big South Fork National Recreation Area — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29321,7 +29360,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_834.jpg)
 
-## 2256. US-0686 Big South Fork National Recreation Area — score 0.58
+## 2259. US-0686 Big South Fork National Recreation Area — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29334,7 +29373,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_835.jpg)
 
-## 2257. US-0686 Big South Fork National Recreation Area — score 0.58
+## 2260. US-0686 Big South Fork National Recreation Area — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29347,7 +29386,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_836.jpg)
 
-## 2258. US-1255 Fishtrap Lake Wildlife Management Area — score 0.58
+## 2261. US-1255 Fishtrap Lake Wildlife Management Area — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29360,7 +29399,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1255_07.jpg)
 
-## 2259. US-1257 General Burnside State Park — score 0.58
+## 2262. US-1257 General Burnside State Park — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29373,7 +29412,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1257_13.jpg)
 
-## 2260. US-1264 Levi Jackson Wilderness Road State Park — score 0.58
+## 2263. US-1264 Levi Jackson Wilderness Road State Park — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29386,7 +29425,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1264_21.jpg)
 
-## 2261. US-1265 Lincoln Homestead State Park — score 0.58
+## 2264. US-1265 Lincoln Homestead State Park — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29399,7 +29438,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1265_06.jpg)
 
-## 2262. US-1275 Buckhorn Lake State Park — score 0.58
+## 2265. US-1275 Buckhorn Lake State Park — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29412,7 +29451,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1275_05.jpg)
 
-## 2263. US-1278 Dale Hollow State Park — score 0.58
+## 2266. US-1278 Dale Hollow State Park — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29425,7 +29464,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1278_36.jpg)
 
-## 2264. US-1279 General Butler State Park — score 0.58
+## 2267. US-1279 General Butler State Park — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29438,7 +29477,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1279_09.jpg)
 
-## 2265. US-1282 Kenlake State Park — score 0.58
+## 2268. US-1282 Kenlake State Park — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -29451,7 +29490,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-1282_46.jpg)
 
-## 2266. US-1282 Kenlake State Park — score 0.58
+## 2269. US-1282 Kenlake State Park — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29464,7 +29503,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1282_47.jpg)
 
-## 2267. US-1282 Kenlake State Park — score 0.58
+## 2270. US-1282 Kenlake State Park — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29477,7 +29516,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1282_48.jpg)
 
-## 2268. US-1283 Kentucky Dam Village State Park — score 0.58
+## 2271. US-1283 Kentucky Dam Village State Park — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29490,7 +29529,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_60.jpg)
 
-## 2269. US-1283 Kentucky Dam Village State Park — score 0.58
+## 2272. US-1283 Kentucky Dam Village State Park — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29503,7 +29542,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_61.jpg)
 
-## 2270. US-1283 Kentucky Dam Village State Park — score 0.58
+## 2273. US-1283 Kentucky Dam Village State Park — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29516,7 +29555,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_62.jpg)
 
-## 2271. US-1283 Kentucky Dam Village State Park — score 0.58
+## 2274. US-1283 Kentucky Dam Village State Park — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29529,7 +29568,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_63.jpg)
 
-## 2272. US-1283 Kentucky Dam Village State Park — score 0.58
+## 2275. US-1283 Kentucky Dam Village State Park — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29542,7 +29581,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_64.jpg)
 
-## 2273. US-3781 Breaks Interstate State Park — score 0.58
+## 2276. US-3781 Breaks Interstate State Park — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29555,7 +29594,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_90.jpg)
 
-## 2274. US-3783 Jefferson Davis State Historic Site — score 0.58
+## 2277. US-3783 Jefferson Davis State Historic Site — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29568,7 +29607,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3783_03.jpg)
 
-## 2275. US-3792 Land Between the Lakes National Recreation Area — score 0.58
+## 2278. US-3792 Land Between the Lakes National Recreation Area — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29581,7 +29620,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_131.jpg)
 
-## 2276. US-3792 Land Between the Lakes National Recreation Area — score 0.58
+## 2279. US-3792 Land Between the Lakes National Recreation Area — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29594,7 +29633,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_132.jpg)
 
-## 2277. US-3792 Land Between the Lakes National Recreation Area — score 0.58
+## 2280. US-3792 Land Between the Lakes National Recreation Area — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29607,7 +29646,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_133.jpg)
 
-## 2278. US-3796 Big Rivers Wildlife Management Area — score 0.58
+## 2281. US-3796 Big Rivers Wildlife Management Area — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29620,7 +29659,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3796_12.jpg)
 
-## 2279. US-3811 Ed Mabry-Laurel Gorge Wildlife Management Area — score 0.58
+## 2282. US-3811 Ed Mabry-Laurel Gorge Wildlife Management Area — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -29633,7 +29672,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3811_06.jpg)
 
-## 2280. US-3818 Jones-Keeney Wildlife Management Area — score 0.58
+## 2283. US-3818 Jones-Keeney Wildlife Management Area — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -29646,7 +29685,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3818_05.jpg)
 
-## 2281. US-3819 Kaler Bottoms Wildlife Management Area — score 0.58
+## 2284. US-3819 Kaler Bottoms Wildlife Management Area — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -29659,7 +29698,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3819_03.jpg)
 
-## 2282. US-3825 Miller Welch Wildlife Management Area — score 0.58
+## 2285. US-3825 Miller Welch Wildlife Management Area — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -29672,7 +29711,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3825_22.jpg)
 
-## 2283. US-3825 Miller Welch Wildlife Management Area — score 0.58
+## 2286. US-3825 Miller Welch Wildlife Management Area — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -29685,7 +29724,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3825_23.jpg)
 
-## 2284. US-3828 Peabody Wildlife Management Area — score 0.58
+## 2287. US-3828 Peabody Wildlife Management Area — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29698,7 +29737,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_96.jpg)
 
-## 2285. US-3828 Peabody Wildlife Management Area — score 0.58
+## 2288. US-3828 Peabody Wildlife Management Area — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -29711,7 +29750,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_97.jpg)
 
-## 2286. US-3828 Peabody Wildlife Management Area — score 0.58
+## 2289. US-3828 Peabody Wildlife Management Area — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29724,7 +29763,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_98.jpg)
 
-## 2287. US-3828 Peabody Wildlife Management Area — score 0.58
+## 2290. US-3828 Peabody Wildlife Management Area — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29737,7 +29776,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_99.jpg)
 
-## 2288. US-3828 Peabody Wildlife Management Area — score 0.58
+## 2291. US-3828 Peabody Wildlife Management Area — score 0.58
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -29750,7 +29789,20 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_100.jpg)
 
-## 2289. US-0019 Cumberland Gap National Historical Park — score 0.57
+## 2292. US-3836 Veterans Memorial Wildlife Management Area — score 0.58
+
+**Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
+
+Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate. About 60 m outside the boundary. A bare patch of about 746 m² (31 x 99 m) touches Rogers Gap Rd (S1400, local road) for about 4 m; 90% of it is grey like gravel or pavement. NAIP photo 2022.
+
+- where: 38.310808, -84.533048 (outside, about 59 m)
+- road: Rogers Gap Rd (S1400)
+- photo: NAIP 2022
+- sources: [NAIP photo](https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPImagery/ImageServer/exportImage?bbox=715420.00%2C4242920.00%2C716080.00%2C4243580.00&bboxSR=32616&imageSR=32616&size=1100%2C1100&format=tiff&pixelType=U8&noData=0&renderingRule=%7B%22rasterFunction%22%3A+%22None%22%7D&interpolation=RSP_BilinearInterpolation&f=image) · [TIGER roads](https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/8/query?where=1%3D1&geometry=-84.570904%2C38.299682%2C-84.524217%2C38.352631&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=MTFCC%2CNAME%2CBASENAME%2COBJECTID&returnGeometry=true&outSR=4326&resultOffset=0&resultRecordCount=2000&f=json) · outline: /home/runner/work/KPC-Data/KPC-Data/prep/one/US-3836.geojson · read 2026-11-15
+
+![chip](chips/US-3836_03.jpg)
+
+## 2293. US-0019 Cumberland Gap National Historical Park — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29763,7 +29815,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_76.jpg)
 
-## 2290. US-0019 Cumberland Gap National Historical Park — score 0.57
+## 2294. US-0019 Cumberland Gap National Historical Park — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29776,7 +29828,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_77.jpg)
 
-## 2291. US-0019 Cumberland Gap National Historical Park — score 0.57
+## 2295. US-0019 Cumberland Gap National Historical Park — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29789,7 +29841,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_78.jpg)
 
-## 2292. US-0019 Cumberland Gap National Historical Park — score 0.57
+## 2296. US-0019 Cumberland Gap National Historical Park — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29802,7 +29854,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_79.jpg)
 
-## 2293. US-0019 Cumberland Gap National Historical Park — score 0.57
+## 2297. US-0019 Cumberland Gap National Historical Park — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29815,7 +29867,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_80.jpg)
 
-## 2294. US-0019 Cumberland Gap National Historical Park — score 0.57
+## 2298. US-0019 Cumberland Gap National Historical Park — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -29828,7 +29880,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0019_81.jpg)
 
-## 2295. US-0019 Cumberland Gap National Historical Park — score 0.57
+## 2299. US-0019 Cumberland Gap National Historical Park — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29841,7 +29893,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_82.jpg)
 
-## 2296. US-0050 Mammoth Cave National Park — score 0.57
+## 2300. US-0050 Mammoth Cave National Park — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29854,7 +29906,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_149.jpg)
 
-## 2297. US-0050 Mammoth Cave National Park — score 0.57
+## 2301. US-0050 Mammoth Cave National Park — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29867,7 +29919,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_150.jpg)
 
-## 2298. US-0050 Mammoth Cave National Park — score 0.57
+## 2302. US-0050 Mammoth Cave National Park — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29880,7 +29932,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_151.jpg)
 
-## 2299. US-0050 Mammoth Cave National Park — score 0.57
+## 2303. US-0050 Mammoth Cave National Park — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -29893,7 +29945,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0050_152.jpg)
 
-## 2300. US-0050 Mammoth Cave National Park — score 0.57
+## 2304. US-0050 Mammoth Cave National Park — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29906,7 +29958,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_153.jpg)
 
-## 2301. US-0050 Mammoth Cave National Park — score 0.57
+## 2305. US-0050 Mammoth Cave National Park — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29919,7 +29971,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_154.jpg)
 
-## 2302. US-0050 Mammoth Cave National Park — score 0.57
+## 2306. US-0050 Mammoth Cave National Park — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29932,7 +29984,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_155.jpg)
 
-## 2303. US-0050 Mammoth Cave National Park — score 0.57
+## 2307. US-0050 Mammoth Cave National Park — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29945,7 +29997,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_156.jpg)
 
-## 2304. US-0050 Mammoth Cave National Park — score 0.57
+## 2308. US-0050 Mammoth Cave National Park — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29958,7 +30010,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_157.jpg)
 
-## 2305. US-0050 Mammoth Cave National Park — score 0.57
+## 2309. US-0050 Mammoth Cave National Park — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29971,7 +30023,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_158.jpg)
 
-## 2306. US-0538 Reelfoot National Wildlife Refuge — score 0.57
+## 2310. US-0538 Reelfoot National Wildlife Refuge — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29984,7 +30036,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0538_07.jpg)
 
-## 2307. US-0686 Big South Fork National Recreation Area — score 0.57
+## 2311. US-0686 Big South Fork National Recreation Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -29997,7 +30049,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_837.jpg)
 
-## 2308. US-0686 Big South Fork National Recreation Area — score 0.57
+## 2312. US-0686 Big South Fork National Recreation Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30010,7 +30062,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_838.jpg)
 
-## 2309. US-0686 Big South Fork National Recreation Area — score 0.57
+## 2313. US-0686 Big South Fork National Recreation Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30023,7 +30075,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_839.jpg)
 
-## 2310. US-0686 Big South Fork National Recreation Area — score 0.57
+## 2314. US-0686 Big South Fork National Recreation Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -30036,7 +30088,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0686_840.jpg)
 
-## 2311. US-0686 Big South Fork National Recreation Area — score 0.57
+## 2315. US-0686 Big South Fork National Recreation Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30049,7 +30101,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_841.jpg)
 
-## 2312. US-0686 Big South Fork National Recreation Area — score 0.57
+## 2316. US-0686 Big South Fork National Recreation Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30062,7 +30114,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_842.jpg)
 
-## 2313. US-0686 Big South Fork National Recreation Area — score 0.57
+## 2317. US-0686 Big South Fork National Recreation Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30075,7 +30127,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_843.jpg)
 
-## 2314. US-0686 Big South Fork National Recreation Area — score 0.57
+## 2318. US-0686 Big South Fork National Recreation Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30088,7 +30140,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_844.jpg)
 
-## 2315. US-0686 Big South Fork National Recreation Area — score 0.57
+## 2319. US-0686 Big South Fork National Recreation Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30101,7 +30153,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_845.jpg)
 
-## 2316. US-0686 Big South Fork National Recreation Area — score 0.57
+## 2320. US-0686 Big South Fork National Recreation Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30114,7 +30166,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_846.jpg)
 
-## 2317. US-0686 Big South Fork National Recreation Area — score 0.57
+## 2321. US-0686 Big South Fork National Recreation Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30127,7 +30179,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_847.jpg)
 
-## 2318. US-0686 Big South Fork National Recreation Area — score 0.57
+## 2322. US-0686 Big South Fork National Recreation Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30140,7 +30192,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_848.jpg)
 
-## 2319. US-0686 Big South Fork National Recreation Area — score 0.57
+## 2323. US-0686 Big South Fork National Recreation Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30153,7 +30205,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_849.jpg)
 
-## 2320. US-0686 Big South Fork National Recreation Area — score 0.57
+## 2324. US-0686 Big South Fork National Recreation Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30166,7 +30218,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_850.jpg)
 
-## 2321. US-0686 Big South Fork National Recreation Area — score 0.57
+## 2325. US-0686 Big South Fork National Recreation Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30179,7 +30231,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_851.jpg)
 
-## 2322. US-0686 Big South Fork National Recreation Area — score 0.57
+## 2326. US-0686 Big South Fork National Recreation Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -30192,7 +30244,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0686_852.jpg)
 
-## 2323. US-0686 Big South Fork National Recreation Area — score 0.57
+## 2327. US-0686 Big South Fork National Recreation Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30205,7 +30257,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_853.jpg)
 
-## 2324. US-0686 Big South Fork National Recreation Area — score 0.57
+## 2328. US-0686 Big South Fork National Recreation Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30218,7 +30270,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_854.jpg)
 
-## 2325. US-0686 Big South Fork National Recreation Area — score 0.57
+## 2329. US-0686 Big South Fork National Recreation Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30231,7 +30283,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_855.jpg)
 
-## 2326. US-0686 Big South Fork National Recreation Area — score 0.57
+## 2330. US-0686 Big South Fork National Recreation Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30244,7 +30296,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_856.jpg)
 
-## 2327. US-0686 Big South Fork National Recreation Area — score 0.57
+## 2331. US-0686 Big South Fork National Recreation Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30257,7 +30309,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_857.jpg)
 
-## 2328. US-0686 Big South Fork National Recreation Area — score 0.57
+## 2332. US-0686 Big South Fork National Recreation Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30270,7 +30322,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_858.jpg)
 
-## 2329. US-0686 Big South Fork National Recreation Area — score 0.57
+## 2333. US-0686 Big South Fork National Recreation Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30283,7 +30335,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_859.jpg)
 
-## 2330. US-0686 Big South Fork National Recreation Area — score 0.57
+## 2334. US-0686 Big South Fork National Recreation Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30296,7 +30348,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_860.jpg)
 
-## 2331. US-0686 Big South Fork National Recreation Area — score 0.57
+## 2335. US-0686 Big South Fork National Recreation Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30309,7 +30361,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_861.jpg)
 
-## 2332. US-0686 Big South Fork National Recreation Area — score 0.57
+## 2336. US-0686 Big South Fork National Recreation Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30322,7 +30374,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_862.jpg)
 
-## 2333. US-0686 Big South Fork National Recreation Area — score 0.57
+## 2337. US-0686 Big South Fork National Recreation Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30335,7 +30387,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_863.jpg)
 
-## 2334. US-0686 Big South Fork National Recreation Area — score 0.57
+## 2338. US-0686 Big South Fork National Recreation Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30348,7 +30400,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_864.jpg)
 
-## 2335. US-0686 Big South Fork National Recreation Area — score 0.57
+## 2339. US-0686 Big South Fork National Recreation Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30361,7 +30413,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_865.jpg)
 
-## 2336. US-0686 Big South Fork National Recreation Area — score 0.57
+## 2340. US-0686 Big South Fork National Recreation Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30374,7 +30426,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_866.jpg)
 
-## 2337. US-0703 Fort Donelson National Battlefield — score 0.57
+## 2341. US-0703 Fort Donelson National Battlefield — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30387,7 +30439,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0703_89.jpg)
 
-## 2338. US-0703 Fort Donelson National Battlefield — score 0.57
+## 2342. US-0703 Fort Donelson National Battlefield — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30400,7 +30452,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0703_90.jpg)
 
-## 2339. US-0703 Fort Donelson National Battlefield — score 0.57
+## 2343. US-0703 Fort Donelson National Battlefield — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30413,7 +30465,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0703_91.jpg)
 
-## 2340. US-1255 Fishtrap Lake Wildlife Management Area — score 0.57
+## 2344. US-1255 Fishtrap Lake Wildlife Management Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30426,7 +30478,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1255_08.jpg)
 
-## 2341. US-1258 Grayson Lake State Park — score 0.57
+## 2345. US-1258 Grayson Lake State Park — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30439,7 +30491,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1258_09.jpg)
 
-## 2342. US-1267 My Old Kentucky Home State Park — score 0.57
+## 2346. US-1267 My Old Kentucky Home State Park — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30452,7 +30504,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1267_08.jpg)
 
-## 2343. US-1268 Nolin Lake State Park — score 0.57
+## 2347. US-1268 Nolin Lake State Park — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30465,7 +30517,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1268_01.jpg)
 
-## 2344. US-1279 General Butler State Park — score 0.57
+## 2348. US-1279 General Butler State Park — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30478,7 +30530,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1279_10.jpg)
 
-## 2345. US-1282 Kenlake State Park — score 0.57
+## 2349. US-1282 Kenlake State Park — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30491,7 +30543,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1282_49.jpg)
 
-## 2346. US-1283 Kentucky Dam Village State Park — score 0.57
+## 2350. US-1283 Kentucky Dam Village State Park — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30504,7 +30556,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_65.jpg)
 
-## 2347. US-1283 Kentucky Dam Village State Park — score 0.57
+## 2351. US-1283 Kentucky Dam Village State Park — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30517,7 +30569,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_66.jpg)
 
-## 2348. US-1284 Lake Barkley State Park — score 0.57
+## 2352. US-1284 Lake Barkley State Park — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30530,7 +30582,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1284_22.jpg)
 
-## 2349. US-1285 Lake Cumberland State Park — score 0.57
+## 2353. US-1285 Lake Cumberland State Park — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30543,7 +30595,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1285_09.jpg)
 
-## 2350. US-1288 Pine Mountain State Park — score 0.57
+## 2354. US-1288 Pine Mountain State Park — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30556,7 +30608,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1288_21.jpg)
 
-## 2351. US-3779 Big Bone Lick State Historic Site — score 0.57
+## 2355. US-3779 Big Bone Lick State Historic Site — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -30569,7 +30621,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3779_13.jpg)
 
-## 2352. US-3781 Breaks Interstate State Park — score 0.57
+## 2356. US-3781 Breaks Interstate State Park — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30582,7 +30634,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_91.jpg)
 
-## 2353. US-3781 Breaks Interstate State Park — score 0.57
+## 2357. US-3781 Breaks Interstate State Park — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30595,7 +30647,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_92.jpg)
 
-## 2354. US-3781 Breaks Interstate State Park — score 0.57
+## 2358. US-3781 Breaks Interstate State Park — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30608,7 +30660,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_93.jpg)
 
-## 2355. US-3781 Breaks Interstate State Park — score 0.57
+## 2359. US-3781 Breaks Interstate State Park — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30621,7 +30673,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_94.jpg)
 
-## 2356. US-3785 Perryville Battlefield State Historic Site — score 0.57
+## 2360. US-3785 Perryville Battlefield State Historic Site — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30634,7 +30686,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3785_08.jpg)
 
-## 2357. US-3786 Waveland State Historic Site — score 0.57
+## 2361. US-3786 Waveland State Historic Site — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -30647,7 +30699,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3786_01.jpg)
 
-## 2358. US-3792 Land Between the Lakes National Recreation Area — score 0.57
+## 2362. US-3792 Land Between the Lakes National Recreation Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30660,7 +30712,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_134.jpg)
 
-## 2359. US-3805 Curtis Gates Lloyd Wildlife Management Area — score 0.57
+## 2363. US-3805 Curtis Gates Lloyd Wildlife Management Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -30673,7 +30725,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3805_21.jpg)
 
-## 2360. US-3811 Ed Mabry-Laurel Gorge Wildlife Management Area — score 0.57
+## 2364. US-3811 Ed Mabry-Laurel Gorge Wildlife Management Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -30686,7 +30738,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3811_07.jpg)
 
-## 2361. US-3811 Ed Mabry-Laurel Gorge Wildlife Management Area — score 0.57
+## 2365. US-3811 Ed Mabry-Laurel Gorge Wildlife Management Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -30699,7 +30751,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3811_08.jpg)
 
-## 2362. US-3811 Ed Mabry-Laurel Gorge Wildlife Management Area — score 0.57
+## 2366. US-3811 Ed Mabry-Laurel Gorge Wildlife Management Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -30712,7 +30764,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3811_09.jpg)
 
-## 2363. US-3811 Ed Mabry-Laurel Gorge Wildlife Management Area — score 0.57
+## 2367. US-3811 Ed Mabry-Laurel Gorge Wildlife Management Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -30725,7 +30777,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3811_10.jpg)
 
-## 2364. US-3814 Hensley-Pine Mountain Wildlife Management Area — score 0.57
+## 2368. US-3814 Hensley-Pine Mountain Wildlife Management Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -30738,7 +30790,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3814_04.jpg)
 
-## 2365. US-3817 John C. Williams Wildlife Management Area — score 0.57
+## 2369. US-3817 John C. Williams Wildlife Management Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -30751,7 +30803,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3817_08.jpg)
 
-## 2366. US-3820 Kentucky River Wildlife Management Area — score 0.57
+## 2370. US-3820 Kentucky River Wildlife Management Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -30764,7 +30816,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3820_10.jpg)
 
-## 2367. US-3825 Miller Welch Wildlife Management Area — score 0.57
+## 2371. US-3825 Miller Welch Wildlife Management Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30777,7 +30829,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3825_24.jpg)
 
-## 2368. US-3826 Mullins Wildlife Management Area — score 0.57
+## 2372. US-3826 Mullins Wildlife Management Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -30790,7 +30842,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3826_05.jpg)
 
-## 2369. US-3828 Peabody Wildlife Management Area — score 0.57
+## 2373. US-3828 Peabody Wildlife Management Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -30803,7 +30855,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_101.jpg)
 
-## 2370. US-3828 Peabody Wildlife Management Area — score 0.57
+## 2374. US-3828 Peabody Wildlife Management Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -30816,7 +30868,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_102.jpg)
 
-## 2371. US-3828 Peabody Wildlife Management Area — score 0.57
+## 2375. US-3828 Peabody Wildlife Management Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30829,7 +30881,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_103.jpg)
 
-## 2372. US-3828 Peabody Wildlife Management Area — score 0.57
+## 2376. US-3828 Peabody Wildlife Management Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -30842,7 +30894,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_104.jpg)
 
-## 2373. US-3830 Sloughs Wildlife Management Area — score 0.57
+## 2377. US-3830 Sloughs Wildlife Management Area — score 0.57
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -30855,7 +30907,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3830_30.jpg)
 
-## 2374. US-0019 Cumberland Gap National Historical Park — score 0.56
+## 2378. US-0019 Cumberland Gap National Historical Park — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30868,7 +30920,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_83.jpg)
 
-## 2375. US-0019 Cumberland Gap National Historical Park — score 0.56
+## 2379. US-0019 Cumberland Gap National Historical Park — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30881,7 +30933,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_84.jpg)
 
-## 2376. US-0019 Cumberland Gap National Historical Park — score 0.56
+## 2380. US-0019 Cumberland Gap National Historical Park — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30894,7 +30946,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_85.jpg)
 
-## 2377. US-0050 Mammoth Cave National Park — score 0.56
+## 2381. US-0050 Mammoth Cave National Park — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30907,7 +30959,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_159.jpg)
 
-## 2378. US-0050 Mammoth Cave National Park — score 0.56
+## 2382. US-0050 Mammoth Cave National Park — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -30920,7 +30972,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0050_160.jpg)
 
-## 2379. US-0050 Mammoth Cave National Park — score 0.56
+## 2383. US-0050 Mammoth Cave National Park — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -30933,7 +30985,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0050_161.jpg)
 
-## 2380. US-0050 Mammoth Cave National Park — score 0.56
+## 2384. US-0050 Mammoth Cave National Park — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30946,7 +30998,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_162.jpg)
 
-## 2381. US-0295 Clarks River National Wildlife Refuge — score 0.56
+## 2385. US-0295 Clarks River National Wildlife Refuge — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -30959,7 +31011,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0295_26.jpg)
 
-## 2382. US-0538 Reelfoot National Wildlife Refuge — score 0.56
+## 2386. US-0538 Reelfoot National Wildlife Refuge — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30972,7 +31024,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0538_08.jpg)
 
-## 2383. US-0686 Big South Fork National Recreation Area — score 0.56
+## 2387. US-0686 Big South Fork National Recreation Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30985,7 +31037,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_867.jpg)
 
-## 2384. US-0686 Big South Fork National Recreation Area — score 0.56
+## 2388. US-0686 Big South Fork National Recreation Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -30998,7 +31050,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_868.jpg)
 
-## 2385. US-0686 Big South Fork National Recreation Area — score 0.56
+## 2389. US-0686 Big South Fork National Recreation Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31011,7 +31063,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_869.jpg)
 
-## 2386. US-0686 Big South Fork National Recreation Area — score 0.56
+## 2390. US-0686 Big South Fork National Recreation Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31024,7 +31076,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_870.jpg)
 
-## 2387. US-0686 Big South Fork National Recreation Area — score 0.56
+## 2391. US-0686 Big South Fork National Recreation Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31037,7 +31089,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_871.jpg)
 
-## 2388. US-0686 Big South Fork National Recreation Area — score 0.56
+## 2392. US-0686 Big South Fork National Recreation Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31050,7 +31102,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_872.jpg)
 
-## 2389. US-0686 Big South Fork National Recreation Area — score 0.56
+## 2393. US-0686 Big South Fork National Recreation Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31063,7 +31115,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_873.jpg)
 
-## 2390. US-0686 Big South Fork National Recreation Area — score 0.56
+## 2394. US-0686 Big South Fork National Recreation Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31076,7 +31128,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_874.jpg)
 
-## 2391. US-0686 Big South Fork National Recreation Area — score 0.56
+## 2395. US-0686 Big South Fork National Recreation Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31089,7 +31141,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_875.jpg)
 
-## 2392. US-0686 Big South Fork National Recreation Area — score 0.56
+## 2396. US-0686 Big South Fork National Recreation Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31102,7 +31154,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_876.jpg)
 
-## 2393. US-0686 Big South Fork National Recreation Area — score 0.56
+## 2397. US-0686 Big South Fork National Recreation Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31115,7 +31167,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_877.jpg)
 
-## 2394. US-0686 Big South Fork National Recreation Area — score 0.56
+## 2398. US-0686 Big South Fork National Recreation Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31128,7 +31180,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_878.jpg)
 
-## 2395. US-0686 Big South Fork National Recreation Area — score 0.56
+## 2399. US-0686 Big South Fork National Recreation Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31141,7 +31193,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_879.jpg)
 
-## 2396. US-0686 Big South Fork National Recreation Area — score 0.56
+## 2400. US-0686 Big South Fork National Recreation Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31154,7 +31206,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_880.jpg)
 
-## 2397. US-0686 Big South Fork National Recreation Area — score 0.56
+## 2401. US-0686 Big South Fork National Recreation Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31167,7 +31219,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_881.jpg)
 
-## 2398. US-0686 Big South Fork National Recreation Area — score 0.56
+## 2402. US-0686 Big South Fork National Recreation Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31180,7 +31232,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_882.jpg)
 
-## 2399. US-0686 Big South Fork National Recreation Area — score 0.56
+## 2403. US-0686 Big South Fork National Recreation Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31193,7 +31245,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_883.jpg)
 
-## 2400. US-0686 Big South Fork National Recreation Area — score 0.56
+## 2404. US-0686 Big South Fork National Recreation Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31206,7 +31258,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_884.jpg)
 
-## 2401. US-0686 Big South Fork National Recreation Area — score 0.56
+## 2405. US-0686 Big South Fork National Recreation Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31219,7 +31271,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_885.jpg)
 
-## 2402. US-0686 Big South Fork National Recreation Area — score 0.56
+## 2406. US-0686 Big South Fork National Recreation Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31232,7 +31284,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_886.jpg)
 
-## 2403. US-0686 Big South Fork National Recreation Area — score 0.56
+## 2407. US-0686 Big South Fork National Recreation Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31245,7 +31297,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_887.jpg)
 
-## 2404. US-0686 Big South Fork National Recreation Area — score 0.56
+## 2408. US-0686 Big South Fork National Recreation Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31258,7 +31310,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_888.jpg)
 
-## 2405. US-0686 Big South Fork National Recreation Area — score 0.56
+## 2409. US-0686 Big South Fork National Recreation Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31271,7 +31323,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_889.jpg)
 
-## 2406. US-0686 Big South Fork National Recreation Area — score 0.56
+## 2410. US-0686 Big South Fork National Recreation Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31284,7 +31336,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_890.jpg)
 
-## 2407. US-0686 Big South Fork National Recreation Area — score 0.56
+## 2411. US-0686 Big South Fork National Recreation Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31297,7 +31349,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_891.jpg)
 
-## 2408. US-0686 Big South Fork National Recreation Area — score 0.56
+## 2412. US-0686 Big South Fork National Recreation Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31310,7 +31362,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_892.jpg)
 
-## 2409. US-0686 Big South Fork National Recreation Area — score 0.56
+## 2413. US-0686 Big South Fork National Recreation Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -31323,7 +31375,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0686_893.jpg)
 
-## 2410. US-0686 Big South Fork National Recreation Area — score 0.56
+## 2414. US-0686 Big South Fork National Recreation Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31336,7 +31388,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_894.jpg)
 
-## 2411. US-0686 Big South Fork National Recreation Area — score 0.56
+## 2415. US-0686 Big South Fork National Recreation Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31349,7 +31401,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_895.jpg)
 
-## 2412. US-0686 Big South Fork National Recreation Area — score 0.56
+## 2416. US-0686 Big South Fork National Recreation Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -31362,7 +31414,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0686_896.jpg)
 
-## 2413. US-1252 Columbus Belmont State Park — score 0.56
+## 2417. US-1252 Columbus Belmont State Park — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31375,7 +31427,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1252_01.jpg)
 
-## 2414. US-1253 Dawkins Line Rail Trail State Park — score 0.56
+## 2418. US-1253 Dawkins Line Rail Trail State Park — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -31388,7 +31440,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-1253_28.jpg)
 
-## 2415. US-1255 Fishtrap Lake Wildlife Management Area — score 0.56
+## 2419. US-1255 Fishtrap Lake Wildlife Management Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31401,7 +31453,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1255_09.jpg)
 
-## 2416. US-1258 Grayson Lake State Park — score 0.56
+## 2420. US-1258 Grayson Lake State Park — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31414,7 +31466,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1258_10.jpg)
 
-## 2417. US-1271 Taylorsville Lake State Park — score 0.56
+## 2421. US-1271 Taylorsville Lake State Park — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31427,7 +31479,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1271_14.jpg)
 
-## 2418. US-1271 Taylorsville Lake State Park — score 0.56
+## 2422. US-1271 Taylorsville Lake State Park — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31440,7 +31492,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1271_15.jpg)
 
-## 2419. US-1275 Buckhorn Lake State Park — score 0.56
+## 2423. US-1275 Buckhorn Lake State Park — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31453,7 +31505,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1275_06.jpg)
 
-## 2420. US-1276 Carter Caves State Park — score 0.56
+## 2424. US-1276 Carter Caves State Park — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31466,7 +31518,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1276_02.jpg)
 
-## 2421. US-1278 Dale Hollow State Park — score 0.56
+## 2425. US-1278 Dale Hollow State Park — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31479,7 +31531,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1278_37.jpg)
 
-## 2422. US-1278 Dale Hollow State Park — score 0.56
+## 2426. US-1278 Dale Hollow State Park — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31492,7 +31544,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1278_38.jpg)
 
-## 2423. US-1279 General Butler State Park — score 0.56
+## 2427. US-1279 General Butler State Park — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31505,7 +31557,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1279_11.jpg)
 
-## 2424. US-1283 Kentucky Dam Village State Park — score 0.56
+## 2428. US-1283 Kentucky Dam Village State Park — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31518,7 +31570,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_67.jpg)
 
-## 2425. US-1283 Kentucky Dam Village State Park — score 0.56
+## 2429. US-1283 Kentucky Dam Village State Park — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31531,7 +31583,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_68.jpg)
 
-## 2426. US-1283 Kentucky Dam Village State Park — score 0.56
+## 2430. US-1283 Kentucky Dam Village State Park — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31544,7 +31596,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_69.jpg)
 
-## 2427. US-1283 Kentucky Dam Village State Park — score 0.56
+## 2431. US-1283 Kentucky Dam Village State Park — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31557,7 +31609,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_70.jpg)
 
-## 2428. US-1284 Lake Barkley State Park — score 0.56
+## 2432. US-1284 Lake Barkley State Park — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31570,7 +31622,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1284_23.jpg)
 
-## 2429. US-1284 Lake Barkley State Park — score 0.56
+## 2433. US-1284 Lake Barkley State Park — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31583,7 +31635,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1284_24.jpg)
 
-## 2430. US-1288 Pine Mountain State Park — score 0.56
+## 2434. US-1288 Pine Mountain State Park — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31596,7 +31648,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1288_22.jpg)
 
-## 2431. US-3781 Breaks Interstate State Park — score 0.56
+## 2435. US-3781 Breaks Interstate State Park — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31609,7 +31661,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_95.jpg)
 
-## 2432. US-3781 Breaks Interstate State Park — score 0.56
+## 2436. US-3781 Breaks Interstate State Park — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31622,7 +31674,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_96.jpg)
 
-## 2433. US-3785 Perryville Battlefield State Historic Site — score 0.56
+## 2437. US-3785 Perryville Battlefield State Historic Site — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31635,7 +31687,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3785_09.jpg)
 
-## 2434. US-3792 Land Between the Lakes National Recreation Area — score 0.56
+## 2438. US-3792 Land Between the Lakes National Recreation Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31648,7 +31700,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_135.jpg)
 
-## 2435. US-3792 Land Between the Lakes National Recreation Area — score 0.56
+## 2439. US-3792 Land Between the Lakes National Recreation Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31661,7 +31713,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_136.jpg)
 
-## 2436. US-3792 Land Between the Lakes National Recreation Area — score 0.56
+## 2440. US-3792 Land Between the Lakes National Recreation Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31674,7 +31726,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_137.jpg)
 
-## 2437. US-3797 Boatwright Wildlife Management Area — score 0.56
+## 2441. US-3797 Boatwright Wildlife Management Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31687,7 +31739,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3797_16.jpg)
 
-## 2438. US-3799 Burchell-Beech Wildlife Management Area — score 0.56
+## 2442. US-3799 Burchell-Beech Wildlife Management Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31700,7 +31752,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3799_01.jpg)
 
-## 2439. US-3812 Fleming Wildlife Management Area — score 0.56
+## 2443. US-3812 Fleming Wildlife Management Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -31713,7 +31765,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3812_06.jpg)
 
-## 2440. US-3815 Higginson-Henry Wildlife Management Area — score 0.56
+## 2444. US-3815 Higginson-Henry Wildlife Management Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -31726,7 +31778,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3815_50.jpg)
 
-## 2441. US-3825 Miller Welch Wildlife Management Area — score 0.56
+## 2445. US-3825 Miller Welch Wildlife Management Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -31739,7 +31791,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3825_25.jpg)
 
-## 2442. US-3825 Miller Welch Wildlife Management Area — score 0.56
+## 2446. US-3825 Miller Welch Wildlife Management Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -31752,7 +31804,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3825_26.jpg)
 
-## 2443. US-3828 Peabody Wildlife Management Area — score 0.56
+## 2447. US-3828 Peabody Wildlife Management Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31765,7 +31817,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_105.jpg)
 
-## 2444. US-3828 Peabody Wildlife Management Area — score 0.56
+## 2448. US-3828 Peabody Wildlife Management Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31778,7 +31830,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_106.jpg)
 
-## 2445. US-3828 Peabody Wildlife Management Area — score 0.56
+## 2449. US-3828 Peabody Wildlife Management Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31791,7 +31843,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_107.jpg)
 
-## 2446. US-3828 Peabody Wildlife Management Area — score 0.56
+## 2450. US-3828 Peabody Wildlife Management Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31804,7 +31856,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_108.jpg)
 
-## 2447. US-3830 Sloughs Wildlife Management Area — score 0.56
+## 2451. US-3830 Sloughs Wildlife Management Area — score 0.56
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31817,7 +31869,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3830_31.jpg)
 
-## 2448. US-0019 Cumberland Gap National Historical Park — score 0.55
+## 2452. US-0019 Cumberland Gap National Historical Park — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31830,7 +31882,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_86.jpg)
 
-## 2449. US-0019 Cumberland Gap National Historical Park — score 0.55
+## 2453. US-0019 Cumberland Gap National Historical Park — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -31843,7 +31895,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0019_87.jpg)
 
-## 2450. US-0050 Mammoth Cave National Park — score 0.55
+## 2454. US-0050 Mammoth Cave National Park — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31856,7 +31908,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_163.jpg)
 
-## 2451. US-0050 Mammoth Cave National Park — score 0.55
+## 2455. US-0050 Mammoth Cave National Park — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31869,7 +31921,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_164.jpg)
 
-## 2452. US-0686 Big South Fork National Recreation Area — score 0.55
+## 2456. US-0686 Big South Fork National Recreation Area — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -31882,7 +31934,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0686_897.jpg)
 
-## 2453. US-0686 Big South Fork National Recreation Area — score 0.55
+## 2457. US-0686 Big South Fork National Recreation Area — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31895,7 +31947,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_898.jpg)
 
-## 2454. US-0686 Big South Fork National Recreation Area — score 0.55
+## 2458. US-0686 Big South Fork National Recreation Area — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31908,7 +31960,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_899.jpg)
 
-## 2455. US-0686 Big South Fork National Recreation Area — score 0.55
+## 2459. US-0686 Big South Fork National Recreation Area — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31921,7 +31973,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_900.jpg)
 
-## 2456. US-0686 Big South Fork National Recreation Area — score 0.55
+## 2460. US-0686 Big South Fork National Recreation Area — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31934,7 +31986,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_901.jpg)
 
-## 2457. US-0686 Big South Fork National Recreation Area — score 0.55
+## 2461. US-0686 Big South Fork National Recreation Area — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31947,7 +31999,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_902.jpg)
 
-## 2458. US-0686 Big South Fork National Recreation Area — score 0.55
+## 2462. US-0686 Big South Fork National Recreation Area — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31960,7 +32012,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_903.jpg)
 
-## 2459. US-0686 Big South Fork National Recreation Area — score 0.55
+## 2463. US-0686 Big South Fork National Recreation Area — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31973,7 +32025,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_904.jpg)
 
-## 2460. US-0686 Big South Fork National Recreation Area — score 0.55
+## 2464. US-0686 Big South Fork National Recreation Area — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31986,7 +32038,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_905.jpg)
 
-## 2461. US-0686 Big South Fork National Recreation Area — score 0.55
+## 2465. US-0686 Big South Fork National Recreation Area — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -31999,7 +32051,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_906.jpg)
 
-## 2462. US-0686 Big South Fork National Recreation Area — score 0.55
+## 2466. US-0686 Big South Fork National Recreation Area — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32012,7 +32064,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_907.jpg)
 
-## 2463. US-0686 Big South Fork National Recreation Area — score 0.55
+## 2467. US-0686 Big South Fork National Recreation Area — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32025,7 +32077,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_908.jpg)
 
-## 2464. US-0686 Big South Fork National Recreation Area — score 0.55
+## 2468. US-0686 Big South Fork National Recreation Area — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32038,7 +32090,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_909.jpg)
 
-## 2465. US-0686 Big South Fork National Recreation Area — score 0.55
+## 2469. US-0686 Big South Fork National Recreation Area — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -32051,7 +32103,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0686_910.jpg)
 
-## 2466. US-0686 Big South Fork National Recreation Area — score 0.55
+## 2470. US-0686 Big South Fork National Recreation Area — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32064,7 +32116,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_911.jpg)
 
-## 2467. US-0686 Big South Fork National Recreation Area — score 0.55
+## 2471. US-0686 Big South Fork National Recreation Area — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32077,7 +32129,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_912.jpg)
 
-## 2468. US-0686 Big South Fork National Recreation Area — score 0.55
+## 2472. US-0686 Big South Fork National Recreation Area — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32090,7 +32142,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_913.jpg)
 
-## 2469. US-0686 Big South Fork National Recreation Area — score 0.55
+## 2473. US-0686 Big South Fork National Recreation Area — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32103,7 +32155,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_914.jpg)
 
-## 2470. US-0703 Fort Donelson National Battlefield — score 0.55
+## 2474. US-0703 Fort Donelson National Battlefield — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32116,7 +32168,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0703_92.jpg)
 
-## 2471. US-0703 Fort Donelson National Battlefield — score 0.55
+## 2475. US-0703 Fort Donelson National Battlefield — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32129,7 +32181,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0703_93.jpg)
 
-## 2472. US-0703 Fort Donelson National Battlefield — score 0.55
+## 2476. US-0703 Fort Donelson National Battlefield — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32142,7 +32194,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0703_94.jpg)
 
-## 2473. US-1253 Dawkins Line Rail Trail State Park — score 0.55
+## 2477. US-1253 Dawkins Line Rail Trail State Park — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32155,7 +32207,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1253_29.jpg)
 
-## 2474. US-1253 Dawkins Line Rail Trail State Park — score 0.55
+## 2478. US-1253 Dawkins Line Rail Trail State Park — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -32168,7 +32220,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-1253_30.jpg)
 
-## 2475. US-1255 Fishtrap Lake Wildlife Management Area — score 0.55
+## 2479. US-1255 Fishtrap Lake Wildlife Management Area — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32181,7 +32233,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1255_10.jpg)
 
-## 2476. US-1259 Green River Lake State Park — score 0.55
+## 2480. US-1259 Green River Lake State Park — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -32194,7 +32246,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-1259_05.jpg)
 
-## 2477. US-1264 Levi Jackson Wilderness Road State Park — score 0.55
+## 2481. US-1264 Levi Jackson Wilderness Road State Park — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32207,7 +32259,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1264_22.jpg)
 
-## 2478. US-1264 Levi Jackson Wilderness Road State Park — score 0.55
+## 2482. US-1264 Levi Jackson Wilderness Road State Park — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32220,7 +32272,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1264_23.jpg)
 
-## 2479. US-1266 Mineral Mounds State Park — score 0.55
+## 2483. US-1266 Mineral Mounds State Park — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32233,7 +32285,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1266_07.jpg)
 
-## 2480. US-1271 Taylorsville Lake State Park — score 0.55
+## 2484. US-1271 Taylorsville Lake State Park — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32246,7 +32298,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1271_16.jpg)
 
-## 2481. US-1275 Buckhorn Lake State Park — score 0.55
+## 2485. US-1275 Buckhorn Lake State Park — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32259,7 +32311,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1275_07.jpg)
 
-## 2482. US-1276 Carter Caves State Park — score 0.55
+## 2486. US-1276 Carter Caves State Park — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32272,7 +32324,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1276_03.jpg)
 
-## 2483. US-1279 General Butler State Park — score 0.55
+## 2487. US-1279 General Butler State Park — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32285,7 +32337,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1279_12.jpg)
 
-## 2484. US-1279 General Butler State Park — score 0.55
+## 2488. US-1279 General Butler State Park — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32298,7 +32350,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1279_13.jpg)
 
-## 2485. US-1282 Kenlake State Park — score 0.55
+## 2489. US-1282 Kenlake State Park — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32311,7 +32363,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1282_50.jpg)
 
-## 2486. US-1283 Kentucky Dam Village State Park — score 0.55
+## 2490. US-1283 Kentucky Dam Village State Park — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32324,7 +32376,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_71.jpg)
 
-## 2487. US-1283 Kentucky Dam Village State Park — score 0.55
+## 2491. US-1283 Kentucky Dam Village State Park — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32337,7 +32389,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_72.jpg)
 
-## 2488. US-1283 Kentucky Dam Village State Park — score 0.55
+## 2492. US-1283 Kentucky Dam Village State Park — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32350,7 +32402,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_73.jpg)
 
-## 2489. US-1287 Pennyrile Forest State Park — score 0.55
+## 2493. US-1287 Pennyrile Forest State Park — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32363,7 +32415,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1287_05.jpg)
 
-## 2490. US-1288 Pine Mountain State Park — score 0.55
+## 2494. US-1288 Pine Mountain State Park — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32376,7 +32428,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1288_23.jpg)
 
-## 2491. US-3781 Breaks Interstate State Park — score 0.55
+## 2495. US-3781 Breaks Interstate State Park — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -32389,7 +32441,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3781_97.jpg)
 
-## 2492. US-3781 Breaks Interstate State Park — score 0.55
+## 2496. US-3781 Breaks Interstate State Park — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32402,7 +32454,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_98.jpg)
 
-## 2493. US-3781 Breaks Interstate State Park — score 0.55
+## 2497. US-3781 Breaks Interstate State Park — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32415,7 +32467,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_99.jpg)
 
-## 2494. US-3787 White Hall State Historic Site — score 0.55
+## 2498. US-3787 White Hall State Historic Site — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -32428,7 +32480,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3787_01.jpg)
 
-## 2495. US-3792 Land Between the Lakes National Recreation Area — score 0.55
+## 2499. US-3792 Land Between the Lakes National Recreation Area — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32441,7 +32493,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_138.jpg)
 
-## 2496. US-3792 Land Between the Lakes National Recreation Area — score 0.55
+## 2500. US-3792 Land Between the Lakes National Recreation Area — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32454,7 +32506,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_139.jpg)
 
-## 2497. US-3792 Land Between the Lakes National Recreation Area — score 0.55
+## 2501. US-3792 Land Between the Lakes National Recreation Area — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32467,7 +32519,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_140.jpg)
 
-## 2498. US-3802 Clyde E Buckley Sanctuary — score 0.55
+## 2502. US-3802 Clyde E Buckley Sanctuary — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -32480,7 +32532,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3802_12.jpg)
 
-## 2499. US-3802 Clyde E Buckley Sanctuary — score 0.55
+## 2503. US-3802 Clyde E Buckley Sanctuary — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -32493,7 +32545,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3802_13.jpg)
 
-## 2500. US-3815 Higginson-Henry Wildlife Management Area — score 0.55
+## 2504. US-3815 Higginson-Henry Wildlife Management Area — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32506,7 +32558,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3815_51.jpg)
 
-## 2501. US-3816 John A. Kleber Wildlife Management Area — score 0.55
+## 2505. US-3816 John A. Kleber Wildlife Management Area — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -32519,7 +32571,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3816_17.jpg)
 
-## 2502. US-3818 Jones-Keeney Wildlife Management Area — score 0.55
+## 2506. US-3818 Jones-Keeney Wildlife Management Area — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -32532,7 +32584,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3818_06.jpg)
 
-## 2503. US-3825 Miller Welch Wildlife Management Area — score 0.55
+## 2507. US-3825 Miller Welch Wildlife Management Area — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32545,7 +32597,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3825_27.jpg)
 
-## 2504. US-3825 Miller Welch Wildlife Management Area — score 0.55
+## 2508. US-3825 Miller Welch Wildlife Management Area — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -32558,7 +32610,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3825_28.jpg)
 
-## 2505. US-3828 Peabody Wildlife Management Area — score 0.55
+## 2509. US-3828 Peabody Wildlife Management Area — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32571,7 +32623,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_109.jpg)
 
-## 2506. US-3828 Peabody Wildlife Management Area — score 0.55
+## 2510. US-3828 Peabody Wildlife Management Area — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -32584,7 +32636,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_110.jpg)
 
-## 2507. US-3830 Sloughs Wildlife Management Area — score 0.55
+## 2511. US-3830 Sloughs Wildlife Management Area — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32597,7 +32649,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3830_32.jpg)
 
-## 2508. US-3830 Sloughs Wildlife Management Area — score 0.55
+## 2512. US-3830 Sloughs Wildlife Management Area — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32610,7 +32662,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3830_33.jpg)
 
-## 2509. US-3830 Sloughs Wildlife Management Area — score 0.55
+## 2513. US-3830 Sloughs Wildlife Management Area — score 0.55
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32623,7 +32675,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3830_34.jpg)
 
-## 2510. US-0019 Cumberland Gap National Historical Park — score 0.54
+## 2514. US-0019 Cumberland Gap National Historical Park — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32636,7 +32688,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_88.jpg)
 
-## 2511. US-0019 Cumberland Gap National Historical Park — score 0.54
+## 2515. US-0019 Cumberland Gap National Historical Park — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32649,7 +32701,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_89.jpg)
 
-## 2512. US-0019 Cumberland Gap National Historical Park — score 0.54
+## 2516. US-0019 Cumberland Gap National Historical Park — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32662,7 +32714,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_90.jpg)
 
-## 2513. US-0019 Cumberland Gap National Historical Park — score 0.54
+## 2517. US-0019 Cumberland Gap National Historical Park — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32675,7 +32727,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_91.jpg)
 
-## 2514. US-0050 Mammoth Cave National Park — score 0.54
+## 2518. US-0050 Mammoth Cave National Park — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32688,7 +32740,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_165.jpg)
 
-## 2515. US-0050 Mammoth Cave National Park — score 0.54
+## 2519. US-0050 Mammoth Cave National Park — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32701,7 +32753,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_166.jpg)
 
-## 2516. US-0050 Mammoth Cave National Park — score 0.54
+## 2520. US-0050 Mammoth Cave National Park — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32714,7 +32766,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_167.jpg)
 
-## 2517. US-0050 Mammoth Cave National Park — score 0.54
+## 2521. US-0050 Mammoth Cave National Park — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32727,7 +32779,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_168.jpg)
 
-## 2518. US-0050 Mammoth Cave National Park — score 0.54
+## 2522. US-0050 Mammoth Cave National Park — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32740,7 +32792,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_169.jpg)
 
-## 2519. US-0538 Reelfoot National Wildlife Refuge — score 0.54
+## 2523. US-0538 Reelfoot National Wildlife Refuge — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -32753,7 +32805,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0538_09.jpg)
 
-## 2520. US-0686 Big South Fork National Recreation Area — score 0.54
+## 2524. US-0686 Big South Fork National Recreation Area — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32766,7 +32818,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_915.jpg)
 
-## 2521. US-0686 Big South Fork National Recreation Area — score 0.54
+## 2525. US-0686 Big South Fork National Recreation Area — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32779,7 +32831,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_916.jpg)
 
-## 2522. US-0686 Big South Fork National Recreation Area — score 0.54
+## 2526. US-0686 Big South Fork National Recreation Area — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32792,7 +32844,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_917.jpg)
 
-## 2523. US-0686 Big South Fork National Recreation Area — score 0.54
+## 2527. US-0686 Big South Fork National Recreation Area — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32805,7 +32857,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_918.jpg)
 
-## 2524. US-0686 Big South Fork National Recreation Area — score 0.54
+## 2528. US-0686 Big South Fork National Recreation Area — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32818,7 +32870,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_919.jpg)
 
-## 2525. US-0686 Big South Fork National Recreation Area — score 0.54
+## 2529. US-0686 Big South Fork National Recreation Area — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32831,7 +32883,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_920.jpg)
 
-## 2526. US-0686 Big South Fork National Recreation Area — score 0.54
+## 2530. US-0686 Big South Fork National Recreation Area — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32844,7 +32896,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_921.jpg)
 
-## 2527. US-0686 Big South Fork National Recreation Area — score 0.54
+## 2531. US-0686 Big South Fork National Recreation Area — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32857,7 +32909,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_922.jpg)
 
-## 2528. US-0686 Big South Fork National Recreation Area — score 0.54
+## 2532. US-0686 Big South Fork National Recreation Area — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32870,7 +32922,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_923.jpg)
 
-## 2529. US-0686 Big South Fork National Recreation Area — score 0.54
+## 2533. US-0686 Big South Fork National Recreation Area — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32883,7 +32935,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_924.jpg)
 
-## 2530. US-0686 Big South Fork National Recreation Area — score 0.54
+## 2534. US-0686 Big South Fork National Recreation Area — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -32896,7 +32948,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0686_925.jpg)
 
-## 2531. US-0686 Big South Fork National Recreation Area — score 0.54
+## 2535. US-0686 Big South Fork National Recreation Area — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32909,7 +32961,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_926.jpg)
 
-## 2532. US-0686 Big South Fork National Recreation Area — score 0.54
+## 2536. US-0686 Big South Fork National Recreation Area — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32922,7 +32974,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_927.jpg)
 
-## 2533. US-0686 Big South Fork National Recreation Area — score 0.54
+## 2537. US-0686 Big South Fork National Recreation Area — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32935,7 +32987,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_928.jpg)
 
-## 2534. US-0686 Big South Fork National Recreation Area — score 0.54
+## 2538. US-0686 Big South Fork National Recreation Area — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32948,7 +33000,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_929.jpg)
 
-## 2535. US-0686 Big South Fork National Recreation Area — score 0.54
+## 2539. US-0686 Big South Fork National Recreation Area — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32961,7 +33013,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_930.jpg)
 
-## 2536. US-0686 Big South Fork National Recreation Area — score 0.54
+## 2540. US-0686 Big South Fork National Recreation Area — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32974,7 +33026,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_931.jpg)
 
-## 2537. US-0686 Big South Fork National Recreation Area — score 0.54
+## 2541. US-0686 Big South Fork National Recreation Area — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -32987,7 +33039,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_932.jpg)
 
-## 2538. US-0686 Big South Fork National Recreation Area — score 0.54
+## 2542. US-0686 Big South Fork National Recreation Area — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33000,7 +33052,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_933.jpg)
 
-## 2539. US-0686 Big South Fork National Recreation Area — score 0.54
+## 2543. US-0686 Big South Fork National Recreation Area — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33013,7 +33065,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_934.jpg)
 
-## 2540. US-0686 Big South Fork National Recreation Area — score 0.54
+## 2544. US-0686 Big South Fork National Recreation Area — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33026,7 +33078,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_935.jpg)
 
-## 2541. US-0703 Fort Donelson National Battlefield — score 0.54
+## 2545. US-0703 Fort Donelson National Battlefield — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -33039,7 +33091,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0703_95.jpg)
 
-## 2542. US-0703 Fort Donelson National Battlefield — score 0.54
+## 2546. US-0703 Fort Donelson National Battlefield — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33052,7 +33104,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0703_96.jpg)
 
-## 2543. US-1253 Dawkins Line Rail Trail State Park — score 0.54
+## 2547. US-1253 Dawkins Line Rail Trail State Park — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -33065,7 +33117,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-1253_31.jpg)
 
-## 2544. US-1259 Green River Lake State Park — score 0.54
+## 2548. US-1259 Green River Lake State Park — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -33078,7 +33130,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-1259_06.jpg)
 
-## 2545. US-1267 My Old Kentucky Home State Park — score 0.54
+## 2549. US-1267 My Old Kentucky Home State Park — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33091,7 +33143,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1267_09.jpg)
 
-## 2546. US-1278 Dale Hollow State Park — score 0.54
+## 2550. US-1278 Dale Hollow State Park — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33104,7 +33156,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1278_39.jpg)
 
-## 2547. US-1279 General Butler State Park — score 0.54
+## 2551. US-1279 General Butler State Park — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33117,7 +33169,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1279_14.jpg)
 
-## 2548. US-1281 Jenny Wiley State Park — score 0.54
+## 2552. US-1281 Jenny Wiley State Park — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33130,7 +33182,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1281_22.jpg)
 
-## 2549. US-1283 Kentucky Dam Village State Park — score 0.54
+## 2553. US-1283 Kentucky Dam Village State Park — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33143,7 +33195,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_74.jpg)
 
-## 2550. US-1284 Lake Barkley State Park — score 0.54
+## 2554. US-1284 Lake Barkley State Park — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33156,7 +33208,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1284_25.jpg)
 
-## 2551. US-1287 Pennyrile Forest State Park — score 0.54
+## 2555. US-1287 Pennyrile Forest State Park — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33169,7 +33221,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1287_06.jpg)
 
-## 2552. US-1289 Rough River Dam State Park — score 0.54
+## 2556. US-1289 Rough River Dam State Park — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33182,7 +33234,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1289_13.jpg)
 
-## 2553. US-3781 Breaks Interstate State Park — score 0.54
+## 2557. US-3781 Breaks Interstate State Park — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33195,7 +33247,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_100.jpg)
 
-## 2554. US-3781 Breaks Interstate State Park — score 0.54
+## 2558. US-3781 Breaks Interstate State Park — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33208,7 +33260,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_101.jpg)
 
-## 2555. US-3787 White Hall State Historic Site — score 0.54
+## 2559. US-3787 White Hall State Historic Site — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33221,7 +33273,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3787_02.jpg)
 
-## 2556. US-3792 Land Between the Lakes National Recreation Area — score 0.54
+## 2560. US-3792 Land Between the Lakes National Recreation Area — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33234,7 +33286,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_141.jpg)
 
-## 2557. US-3792 Land Between the Lakes National Recreation Area — score 0.54
+## 2561. US-3792 Land Between the Lakes National Recreation Area — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33247,7 +33299,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_142.jpg)
 
-## 2558. US-3792 Land Between the Lakes National Recreation Area — score 0.54
+## 2562. US-3792 Land Between the Lakes National Recreation Area — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33260,7 +33312,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_143.jpg)
 
-## 2559. US-3792 Land Between the Lakes National Recreation Area — score 0.54
+## 2563. US-3792 Land Between the Lakes National Recreation Area — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33273,7 +33325,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_144.jpg)
 
-## 2560. US-3792 Land Between the Lakes National Recreation Area — score 0.54
+## 2564. US-3792 Land Between the Lakes National Recreation Area — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33286,7 +33338,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_145.jpg)
 
-## 2561. US-3797 Boatwright Wildlife Management Area — score 0.54
+## 2565. US-3797 Boatwright Wildlife Management Area — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -33299,7 +33351,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3797_17.jpg)
 
-## 2562. US-3812 Fleming Wildlife Management Area — score 0.54
+## 2566. US-3812 Fleming Wildlife Management Area — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -33312,7 +33364,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3812_07.jpg)
 
-## 2563. US-3823 Livingston County Wildlife Management Area — score 0.54
+## 2567. US-3823 Livingston County Wildlife Management Area — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -33325,7 +33377,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3823_03.jpg)
 
-## 2564. US-3828 Peabody Wildlife Management Area — score 0.54
+## 2568. US-3828 Peabody Wildlife Management Area — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -33338,7 +33390,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_111.jpg)
 
-## 2565. US-3828 Peabody Wildlife Management Area — score 0.54
+## 2569. US-3828 Peabody Wildlife Management Area — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33351,7 +33403,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_112.jpg)
 
-## 2566. US-3828 Peabody Wildlife Management Area — score 0.54
+## 2570. US-3828 Peabody Wildlife Management Area — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33364,7 +33416,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_113.jpg)
 
-## 2567. US-3828 Peabody Wildlife Management Area — score 0.54
+## 2571. US-3828 Peabody Wildlife Management Area — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -33377,7 +33429,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_114.jpg)
 
-## 2568. US-3828 Peabody Wildlife Management Area — score 0.54
+## 2572. US-3828 Peabody Wildlife Management Area — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -33390,7 +33442,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_115.jpg)
 
-## 2569. US-3828 Peabody Wildlife Management Area — score 0.54
+## 2573. US-3828 Peabody Wildlife Management Area — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -33403,7 +33455,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_116.jpg)
 
-## 2570. US-3830 Sloughs Wildlife Management Area — score 0.54
+## 2574. US-3830 Sloughs Wildlife Management Area — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33416,7 +33468,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3830_35.jpg)
 
-## 2571. US-3830 Sloughs Wildlife Management Area — score 0.54
+## 2575. US-3830 Sloughs Wildlife Management Area — score 0.54
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33429,7 +33481,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3830_36.jpg)
 
-## 2572. US-0019 Cumberland Gap National Historical Park — score 0.53
+## 2576. US-0019 Cumberland Gap National Historical Park — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33442,7 +33494,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_92.jpg)
 
-## 2573. US-0019 Cumberland Gap National Historical Park — score 0.53
+## 2577. US-0019 Cumberland Gap National Historical Park — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33455,7 +33507,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_93.jpg)
 
-## 2574. US-0019 Cumberland Gap National Historical Park — score 0.53
+## 2578. US-0019 Cumberland Gap National Historical Park — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33468,7 +33520,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_94.jpg)
 
-## 2575. US-0019 Cumberland Gap National Historical Park — score 0.53
+## 2579. US-0019 Cumberland Gap National Historical Park — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33481,7 +33533,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_95.jpg)
 
-## 2576. US-0050 Mammoth Cave National Park — score 0.53
+## 2580. US-0050 Mammoth Cave National Park — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33494,7 +33546,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_170.jpg)
 
-## 2577. US-0050 Mammoth Cave National Park — score 0.53
+## 2581. US-0050 Mammoth Cave National Park — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33507,7 +33559,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_171.jpg)
 
-## 2578. US-0050 Mammoth Cave National Park — score 0.53
+## 2582. US-0050 Mammoth Cave National Park — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33520,7 +33572,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_172.jpg)
 
-## 2579. US-0686 Big South Fork National Recreation Area — score 0.53
+## 2583. US-0686 Big South Fork National Recreation Area — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -33533,7 +33585,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0686_936.jpg)
 
-## 2580. US-0686 Big South Fork National Recreation Area — score 0.53
+## 2584. US-0686 Big South Fork National Recreation Area — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33546,7 +33598,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_937.jpg)
 
-## 2581. US-0686 Big South Fork National Recreation Area — score 0.53
+## 2585. US-0686 Big South Fork National Recreation Area — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -33559,7 +33611,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0686_938.jpg)
 
-## 2582. US-0686 Big South Fork National Recreation Area — score 0.53
+## 2586. US-0686 Big South Fork National Recreation Area — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33572,7 +33624,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_939.jpg)
 
-## 2583. US-0686 Big South Fork National Recreation Area — score 0.53
+## 2587. US-0686 Big South Fork National Recreation Area — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33585,7 +33637,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_940.jpg)
 
-## 2584. US-0686 Big South Fork National Recreation Area — score 0.53
+## 2588. US-0686 Big South Fork National Recreation Area — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33598,7 +33650,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_941.jpg)
 
-## 2585. US-0686 Big South Fork National Recreation Area — score 0.53
+## 2589. US-0686 Big South Fork National Recreation Area — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33611,7 +33663,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_942.jpg)
 
-## 2586. US-0686 Big South Fork National Recreation Area — score 0.53
+## 2590. US-0686 Big South Fork National Recreation Area — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33624,7 +33676,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_943.jpg)
 
-## 2587. US-0686 Big South Fork National Recreation Area — score 0.53
+## 2591. US-0686 Big South Fork National Recreation Area — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33637,7 +33689,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_944.jpg)
 
-## 2588. US-0686 Big South Fork National Recreation Area — score 0.53
+## 2592. US-0686 Big South Fork National Recreation Area — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33650,7 +33702,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_945.jpg)
 
-## 2589. US-0686 Big South Fork National Recreation Area — score 0.53
+## 2593. US-0686 Big South Fork National Recreation Area — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33663,7 +33715,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_946.jpg)
 
-## 2590. US-0686 Big South Fork National Recreation Area — score 0.53
+## 2594. US-0686 Big South Fork National Recreation Area — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33676,7 +33728,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_947.jpg)
 
-## 2591. US-0686 Big South Fork National Recreation Area — score 0.53
+## 2595. US-0686 Big South Fork National Recreation Area — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33689,7 +33741,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_948.jpg)
 
-## 2592. US-0686 Big South Fork National Recreation Area — score 0.53
+## 2596. US-0686 Big South Fork National Recreation Area — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33702,7 +33754,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_949.jpg)
 
-## 2593. US-0686 Big South Fork National Recreation Area — score 0.53
+## 2597. US-0686 Big South Fork National Recreation Area — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33715,7 +33767,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_950.jpg)
 
-## 2594. US-0686 Big South Fork National Recreation Area — score 0.53
+## 2598. US-0686 Big South Fork National Recreation Area — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -33728,7 +33780,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0686_951.jpg)
 
-## 2595. US-0686 Big South Fork National Recreation Area — score 0.53
+## 2599. US-0686 Big South Fork National Recreation Area — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33741,7 +33793,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_952.jpg)
 
-## 2596. US-0686 Big South Fork National Recreation Area — score 0.53
+## 2600. US-0686 Big South Fork National Recreation Area — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33754,7 +33806,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_953.jpg)
 
-## 2597. US-0686 Big South Fork National Recreation Area — score 0.53
+## 2601. US-0686 Big South Fork National Recreation Area — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33767,7 +33819,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_954.jpg)
 
-## 2598. US-0686 Big South Fork National Recreation Area — score 0.53
+## 2602. US-0686 Big South Fork National Recreation Area — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33780,7 +33832,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_955.jpg)
 
-## 2599. US-0686 Big South Fork National Recreation Area — score 0.53
+## 2603. US-0686 Big South Fork National Recreation Area — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33793,7 +33845,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_956.jpg)
 
-## 2600. US-0703 Fort Donelson National Battlefield — score 0.53
+## 2604. US-0703 Fort Donelson National Battlefield — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33806,7 +33858,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0703_97.jpg)
 
-## 2601. US-1253 Dawkins Line Rail Trail State Park — score 0.53
+## 2605. US-1253 Dawkins Line Rail Trail State Park — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33819,7 +33871,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1253_32.jpg)
 
-## 2602. US-1253 Dawkins Line Rail Trail State Park — score 0.53
+## 2606. US-1253 Dawkins Line Rail Trail State Park — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33832,7 +33884,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1253_33.jpg)
 
-## 2603. US-1255 Fishtrap Lake Wildlife Management Area — score 0.53
+## 2607. US-1255 Fishtrap Lake Wildlife Management Area — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33845,7 +33897,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1255_11.jpg)
 
-## 2604. US-1258 Grayson Lake State Park — score 0.53
+## 2608. US-1258 Grayson Lake State Park — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33858,7 +33910,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1258_11.jpg)
 
-## 2605. US-1267 My Old Kentucky Home State Park — score 0.53
+## 2609. US-1267 My Old Kentucky Home State Park — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33871,7 +33923,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1267_10.jpg)
 
-## 2606. US-1279 General Butler State Park — score 0.53
+## 2610. US-1279 General Butler State Park — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33884,7 +33936,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1279_15.jpg)
 
-## 2607. US-1280 Greenbo Lake State Park — score 0.53
+## 2611. US-1280 Greenbo Lake State Park — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33897,7 +33949,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1280_03.jpg)
 
-## 2608. US-1281 Jenny Wiley State Park — score 0.53
+## 2612. US-1281 Jenny Wiley State Park — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33910,7 +33962,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1281_23.jpg)
 
-## 2609. US-1282 Kenlake State Park — score 0.53
+## 2613. US-1282 Kenlake State Park — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33923,7 +33975,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1282_51.jpg)
 
-## 2610. US-1282 Kenlake State Park — score 0.53
+## 2614. US-1282 Kenlake State Park — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33936,7 +33988,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1282_52.jpg)
 
-## 2611. US-1283 Kentucky Dam Village State Park — score 0.53
+## 2615. US-1283 Kentucky Dam Village State Park — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33949,7 +34001,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_75.jpg)
 
-## 2612. US-1283 Kentucky Dam Village State Park — score 0.53
+## 2616. US-1283 Kentucky Dam Village State Park — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33962,7 +34014,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_76.jpg)
 
-## 2613. US-1283 Kentucky Dam Village State Park — score 0.53
+## 2617. US-1283 Kentucky Dam Village State Park — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33975,7 +34027,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_77.jpg)
 
-## 2614. US-3779 Big Bone Lick State Historic Site — score 0.53
+## 2618. US-3779 Big Bone Lick State Historic Site — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -33988,7 +34040,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3779_14.jpg)
 
-## 2615. US-3781 Breaks Interstate State Park — score 0.53
+## 2619. US-3781 Breaks Interstate State Park — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34001,7 +34053,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_102.jpg)
 
-## 2616. US-3781 Breaks Interstate State Park — score 0.53
+## 2620. US-3781 Breaks Interstate State Park — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34014,7 +34066,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_103.jpg)
 
-## 2617. US-3785 Perryville Battlefield State Historic Site — score 0.53
+## 2621. US-3785 Perryville Battlefield State Historic Site — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34027,7 +34079,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3785_10.jpg)
 
-## 2618. US-3792 Land Between the Lakes National Recreation Area — score 0.53
+## 2622. US-3792 Land Between the Lakes National Recreation Area — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34040,7 +34092,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_146.jpg)
 
-## 2619. US-3792 Land Between the Lakes National Recreation Area — score 0.53
+## 2623. US-3792 Land Between the Lakes National Recreation Area — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34053,7 +34105,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_147.jpg)
 
-## 2620. US-3792 Land Between the Lakes National Recreation Area — score 0.53
+## 2624. US-3792 Land Between the Lakes National Recreation Area — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34066,7 +34118,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_148.jpg)
 
-## 2621. US-3792 Land Between the Lakes National Recreation Area — score 0.53
+## 2625. US-3792 Land Between the Lakes National Recreation Area — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34079,7 +34131,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_149.jpg)
 
-## 2622. US-3792 Land Between the Lakes National Recreation Area — score 0.53
+## 2626. US-3792 Land Between the Lakes National Recreation Area — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34092,7 +34144,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_150.jpg)
 
-## 2623. US-3792 Land Between the Lakes National Recreation Area — score 0.53
+## 2627. US-3792 Land Between the Lakes National Recreation Area — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34105,7 +34157,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_151.jpg)
 
-## 2624. US-3792 Land Between the Lakes National Recreation Area — score 0.53
+## 2628. US-3792 Land Between the Lakes National Recreation Area — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34118,7 +34170,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_152.jpg)
 
-## 2625. US-3792 Land Between the Lakes National Recreation Area — score 0.53
+## 2629. US-3792 Land Between the Lakes National Recreation Area — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34131,7 +34183,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_153.jpg)
 
-## 2626. US-3792 Land Between the Lakes National Recreation Area — score 0.53
+## 2630. US-3792 Land Between the Lakes National Recreation Area — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34144,7 +34196,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_154.jpg)
 
-## 2627. US-3812 Fleming Wildlife Management Area — score 0.53
+## 2631. US-3812 Fleming Wildlife Management Area — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34157,7 +34209,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3812_08.jpg)
 
-## 2628. US-3816 John A. Kleber Wildlife Management Area — score 0.53
+## 2632. US-3816 John A. Kleber Wildlife Management Area — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34170,7 +34222,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3816_18.jpg)
 
-## 2629. US-3816 John A. Kleber Wildlife Management Area — score 0.53
+## 2633. US-3816 John A. Kleber Wildlife Management Area — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -34183,7 +34235,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3816_19.jpg)
 
-## 2630. US-3818 Jones-Keeney Wildlife Management Area — score 0.53
+## 2634. US-3818 Jones-Keeney Wildlife Management Area — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -34196,7 +34248,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3818_07.jpg)
 
-## 2631. US-3828 Peabody Wildlife Management Area — score 0.53
+## 2635. US-3828 Peabody Wildlife Management Area — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -34209,7 +34261,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_117.jpg)
 
-## 2632. US-3828 Peabody Wildlife Management Area — score 0.53
+## 2636. US-3828 Peabody Wildlife Management Area — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34222,7 +34274,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_118.jpg)
 
-## 2633. US-3828 Peabody Wildlife Management Area — score 0.53
+## 2637. US-3828 Peabody Wildlife Management Area — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34235,7 +34287,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_119.jpg)
 
-## 2634. US-3828 Peabody Wildlife Management Area — score 0.53
+## 2638. US-3828 Peabody Wildlife Management Area — score 0.53
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34248,7 +34300,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_120.jpg)
 
-## 2635. US-0019 Cumberland Gap National Historical Park — score 0.52
+## 2639. US-0019 Cumberland Gap National Historical Park — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34261,7 +34313,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_96.jpg)
 
-## 2636. US-0019 Cumberland Gap National Historical Park — score 0.52
+## 2640. US-0019 Cumberland Gap National Historical Park — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34274,7 +34326,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_97.jpg)
 
-## 2637. US-0019 Cumberland Gap National Historical Park — score 0.52
+## 2641. US-0019 Cumberland Gap National Historical Park — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34287,7 +34339,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_98.jpg)
 
-## 2638. US-0019 Cumberland Gap National Historical Park — score 0.52
+## 2642. US-0019 Cumberland Gap National Historical Park — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34300,7 +34352,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_99.jpg)
 
-## 2639. US-0050 Mammoth Cave National Park — score 0.52
+## 2643. US-0050 Mammoth Cave National Park — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34313,7 +34365,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_173.jpg)
 
-## 2640. US-0050 Mammoth Cave National Park — score 0.52
+## 2644. US-0050 Mammoth Cave National Park — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34326,7 +34378,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_174.jpg)
 
-## 2641. US-0050 Mammoth Cave National Park — score 0.52
+## 2645. US-0050 Mammoth Cave National Park — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34339,7 +34391,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_175.jpg)
 
-## 2642. US-0050 Mammoth Cave National Park — score 0.52
+## 2646. US-0050 Mammoth Cave National Park — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34352,7 +34404,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_176.jpg)
 
-## 2643. US-0050 Mammoth Cave National Park — score 0.52
+## 2647. US-0050 Mammoth Cave National Park — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34365,7 +34417,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_177.jpg)
 
-## 2644. US-0050 Mammoth Cave National Park — score 0.52
+## 2648. US-0050 Mammoth Cave National Park — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34378,7 +34430,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_178.jpg)
 
-## 2645. US-0050 Mammoth Cave National Park — score 0.52
+## 2649. US-0050 Mammoth Cave National Park — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34391,7 +34443,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_179.jpg)
 
-## 2646. US-0295 Clarks River National Wildlife Refuge — score 0.52
+## 2650. US-0295 Clarks River National Wildlife Refuge — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34404,7 +34456,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0295_27.jpg)
 
-## 2647. US-0295 Clarks River National Wildlife Refuge — score 0.52
+## 2651. US-0295 Clarks River National Wildlife Refuge — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -34417,7 +34469,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0295_28.jpg)
 
-## 2648. US-0686 Big South Fork National Recreation Area — score 0.52
+## 2652. US-0686 Big South Fork National Recreation Area — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34430,7 +34482,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_957.jpg)
 
-## 2649. US-0686 Big South Fork National Recreation Area — score 0.52
+## 2653. US-0686 Big South Fork National Recreation Area — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34443,7 +34495,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_958.jpg)
 
-## 2650. US-0686 Big South Fork National Recreation Area — score 0.52
+## 2654. US-0686 Big South Fork National Recreation Area — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34456,7 +34508,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_959.jpg)
 
-## 2651. US-0686 Big South Fork National Recreation Area — score 0.52
+## 2655. US-0686 Big South Fork National Recreation Area — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34469,7 +34521,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_960.jpg)
 
-## 2652. US-0686 Big South Fork National Recreation Area — score 0.52
+## 2656. US-0686 Big South Fork National Recreation Area — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34482,7 +34534,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_961.jpg)
 
-## 2653. US-0686 Big South Fork National Recreation Area — score 0.52
+## 2657. US-0686 Big South Fork National Recreation Area — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34495,7 +34547,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_962.jpg)
 
-## 2654. US-0686 Big South Fork National Recreation Area — score 0.52
+## 2658. US-0686 Big South Fork National Recreation Area — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34508,7 +34560,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_963.jpg)
 
-## 2655. US-0686 Big South Fork National Recreation Area — score 0.52
+## 2659. US-0686 Big South Fork National Recreation Area — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34521,7 +34573,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_964.jpg)
 
-## 2656. US-0686 Big South Fork National Recreation Area — score 0.52
+## 2660. US-0686 Big South Fork National Recreation Area — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34534,7 +34586,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_965.jpg)
 
-## 2657. US-0686 Big South Fork National Recreation Area — score 0.52
+## 2661. US-0686 Big South Fork National Recreation Area — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34547,7 +34599,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_966.jpg)
 
-## 2658. US-0686 Big South Fork National Recreation Area — score 0.52
+## 2662. US-0686 Big South Fork National Recreation Area — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34560,7 +34612,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_967.jpg)
 
-## 2659. US-0686 Big South Fork National Recreation Area — score 0.52
+## 2663. US-0686 Big South Fork National Recreation Area — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34573,7 +34625,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_968.jpg)
 
-## 2660. US-0686 Big South Fork National Recreation Area — score 0.52
+## 2664. US-0686 Big South Fork National Recreation Area — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34586,7 +34638,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_969.jpg)
 
-## 2661. US-0686 Big South Fork National Recreation Area — score 0.52
+## 2665. US-0686 Big South Fork National Recreation Area — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34599,7 +34651,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_970.jpg)
 
-## 2662. US-0686 Big South Fork National Recreation Area — score 0.52
+## 2666. US-0686 Big South Fork National Recreation Area — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34612,7 +34664,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_971.jpg)
 
-## 2663. US-0686 Big South Fork National Recreation Area — score 0.52
+## 2667. US-0686 Big South Fork National Recreation Area — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34625,7 +34677,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_972.jpg)
 
-## 2664. US-0686 Big South Fork National Recreation Area — score 0.52
+## 2668. US-0686 Big South Fork National Recreation Area — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34638,7 +34690,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_973.jpg)
 
-## 2665. US-0686 Big South Fork National Recreation Area — score 0.52
+## 2669. US-0686 Big South Fork National Recreation Area — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34651,7 +34703,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_974.jpg)
 
-## 2666. US-0686 Big South Fork National Recreation Area — score 0.52
+## 2670. US-0686 Big South Fork National Recreation Area — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34664,7 +34716,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_975.jpg)
 
-## 2667. US-0686 Big South Fork National Recreation Area — score 0.52
+## 2671. US-0686 Big South Fork National Recreation Area — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34677,7 +34729,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_976.jpg)
 
-## 2668. US-0686 Big South Fork National Recreation Area — score 0.52
+## 2672. US-0686 Big South Fork National Recreation Area — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34690,7 +34742,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_977.jpg)
 
-## 2669. US-0703 Fort Donelson National Battlefield — score 0.52
+## 2673. US-0703 Fort Donelson National Battlefield — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34703,7 +34755,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0703_98.jpg)
 
-## 2670. US-1261 Kincaid Lake State Park — score 0.52
+## 2674. US-1261 Kincaid Lake State Park — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34716,7 +34768,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1261_09.jpg)
 
-## 2671. US-1264 Levi Jackson Wilderness Road State Park — score 0.52
+## 2675. US-1264 Levi Jackson Wilderness Road State Park — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34729,7 +34781,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1264_24.jpg)
 
-## 2672. US-1264 Levi Jackson Wilderness Road State Park — score 0.52
+## 2676. US-1264 Levi Jackson Wilderness Road State Park — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34742,7 +34794,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1264_25.jpg)
 
-## 2673. US-1264 Levi Jackson Wilderness Road State Park — score 0.52
+## 2677. US-1264 Levi Jackson Wilderness Road State Park — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34755,7 +34807,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1264_26.jpg)
 
-## 2674. US-1273 Barren River Lake State Park — score 0.52
+## 2678. US-1273 Barren River Lake State Park — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34768,7 +34820,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1273_05.jpg)
 
-## 2675. US-1279 General Butler State Park — score 0.52
+## 2679. US-1279 General Butler State Park — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34781,7 +34833,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1279_16.jpg)
 
-## 2676. US-1281 Jenny Wiley State Park — score 0.52
+## 2680. US-1281 Jenny Wiley State Park — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34794,7 +34846,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1281_24.jpg)
 
-## 2677. US-1282 Kenlake State Park — score 0.52
+## 2681. US-1282 Kenlake State Park — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34807,7 +34859,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1282_53.jpg)
 
-## 2678. US-1282 Kenlake State Park — score 0.52
+## 2682. US-1282 Kenlake State Park — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34820,7 +34872,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1282_54.jpg)
 
-## 2679. US-1283 Kentucky Dam Village State Park — score 0.52
+## 2683. US-1283 Kentucky Dam Village State Park — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34833,7 +34885,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_78.jpg)
 
-## 2680. US-1283 Kentucky Dam Village State Park — score 0.52
+## 2684. US-1283 Kentucky Dam Village State Park — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34846,7 +34898,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_79.jpg)
 
-## 2681. US-1284 Lake Barkley State Park — score 0.52
+## 2685. US-1284 Lake Barkley State Park — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34859,7 +34911,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1284_26.jpg)
 
-## 2682. US-1285 Lake Cumberland State Park — score 0.52
+## 2686. US-1285 Lake Cumberland State Park — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34872,7 +34924,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1285_10.jpg)
 
-## 2683. US-3781 Breaks Interstate State Park — score 0.52
+## 2687. US-3781 Breaks Interstate State Park — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34885,7 +34937,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_104.jpg)
 
-## 2684. US-3781 Breaks Interstate State Park — score 0.52
+## 2688. US-3781 Breaks Interstate State Park — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34898,7 +34950,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_105.jpg)
 
-## 2685. US-3781 Breaks Interstate State Park — score 0.52
+## 2689. US-3781 Breaks Interstate State Park — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34911,7 +34963,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_106.jpg)
 
-## 2686. US-3781 Breaks Interstate State Park — score 0.52
+## 2690. US-3781 Breaks Interstate State Park — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34924,7 +34976,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_107.jpg)
 
-## 2687. US-3786 Waveland State Historic Site — score 0.52
+## 2691. US-3786 Waveland State Historic Site — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -34937,7 +34989,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3786_02.jpg)
 
-## 2688. US-3792 Land Between the Lakes National Recreation Area — score 0.52
+## 2692. US-3792 Land Between the Lakes National Recreation Area — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34950,7 +35002,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_155.jpg)
 
-## 2689. US-3792 Land Between the Lakes National Recreation Area — score 0.52
+## 2693. US-3792 Land Between the Lakes National Recreation Area — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34963,7 +35015,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_156.jpg)
 
-## 2690. US-3792 Land Between the Lakes National Recreation Area — score 0.52
+## 2694. US-3792 Land Between the Lakes National Recreation Area — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34976,7 +35028,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_157.jpg)
 
-## 2691. US-3792 Land Between the Lakes National Recreation Area — score 0.52
+## 2695. US-3792 Land Between the Lakes National Recreation Area — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -34989,7 +35041,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_158.jpg)
 
-## 2692. US-3828 Peabody Wildlife Management Area — score 0.52
+## 2696. US-3828 Peabody Wildlife Management Area — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -35002,7 +35054,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_121.jpg)
 
-## 2693. US-3828 Peabody Wildlife Management Area — score 0.52
+## 2697. US-3828 Peabody Wildlife Management Area — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35015,7 +35067,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_122.jpg)
 
-## 2694. US-3828 Peabody Wildlife Management Area — score 0.52
+## 2698. US-3828 Peabody Wildlife Management Area — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35028,7 +35080,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_123.jpg)
 
-## 2695. US-3828 Peabody Wildlife Management Area — score 0.52
+## 2699. US-3828 Peabody Wildlife Management Area — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -35041,7 +35093,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_124.jpg)
 
-## 2696. US-3828 Peabody Wildlife Management Area — score 0.52
+## 2700. US-3828 Peabody Wildlife Management Area — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35054,7 +35106,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_125.jpg)
 
-## 2697. US-3828 Peabody Wildlife Management Area — score 0.52
+## 2701. US-3828 Peabody Wildlife Management Area — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -35067,7 +35119,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_126.jpg)
 
-## 2698. US-3830 Sloughs Wildlife Management Area — score 0.52
+## 2702. US-3830 Sloughs Wildlife Management Area — score 0.52
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35080,7 +35132,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3830_37.jpg)
 
-## 2699. US-0019 Cumberland Gap National Historical Park — score 0.51
+## 2703. US-0019 Cumberland Gap National Historical Park — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35093,7 +35145,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0019_100.jpg)
 
-## 2700. US-0019 Cumberland Gap National Historical Park — score 0.51
+## 2704. US-0019 Cumberland Gap National Historical Park — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -35106,7 +35158,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0019_101.jpg)
 
-## 2701. US-0050 Mammoth Cave National Park — score 0.51
+## 2705. US-0050 Mammoth Cave National Park — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35119,7 +35171,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_180.jpg)
 
-## 2702. US-0050 Mammoth Cave National Park — score 0.51
+## 2706. US-0050 Mammoth Cave National Park — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35132,7 +35184,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_181.jpg)
 
-## 2703. US-0050 Mammoth Cave National Park — score 0.51
+## 2707. US-0050 Mammoth Cave National Park — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35145,7 +35197,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_182.jpg)
 
-## 2704. US-0050 Mammoth Cave National Park — score 0.51
+## 2708. US-0050 Mammoth Cave National Park — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35158,7 +35210,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_183.jpg)
 
-## 2705. US-0295 Clarks River National Wildlife Refuge — score 0.51
+## 2709. US-0295 Clarks River National Wildlife Refuge — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35171,7 +35223,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0295_29.jpg)
 
-## 2706. US-0295 Clarks River National Wildlife Refuge — score 0.51
+## 2710. US-0295 Clarks River National Wildlife Refuge — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35184,7 +35236,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0295_30.jpg)
 
-## 2707. US-0686 Big South Fork National Recreation Area — score 0.51
+## 2711. US-0686 Big South Fork National Recreation Area — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35197,7 +35249,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_978.jpg)
 
-## 2708. US-0686 Big South Fork National Recreation Area — score 0.51
+## 2712. US-0686 Big South Fork National Recreation Area — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35210,7 +35262,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_979.jpg)
 
-## 2709. US-0686 Big South Fork National Recreation Area — score 0.51
+## 2713. US-0686 Big South Fork National Recreation Area — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35223,7 +35275,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_980.jpg)
 
-## 2710. US-0686 Big South Fork National Recreation Area — score 0.51
+## 2714. US-0686 Big South Fork National Recreation Area — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35236,7 +35288,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_981.jpg)
 
-## 2711. US-0686 Big South Fork National Recreation Area — score 0.51
+## 2715. US-0686 Big South Fork National Recreation Area — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35249,7 +35301,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_982.jpg)
 
-## 2712. US-0686 Big South Fork National Recreation Area — score 0.51
+## 2716. US-0686 Big South Fork National Recreation Area — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35262,7 +35314,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_983.jpg)
 
-## 2713. US-0686 Big South Fork National Recreation Area — score 0.51
+## 2717. US-0686 Big South Fork National Recreation Area — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35275,7 +35327,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_984.jpg)
 
-## 2714. US-0686 Big South Fork National Recreation Area — score 0.51
+## 2718. US-0686 Big South Fork National Recreation Area — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35288,7 +35340,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_985.jpg)
 
-## 2715. US-0686 Big South Fork National Recreation Area — score 0.51
+## 2719. US-0686 Big South Fork National Recreation Area — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35301,7 +35353,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_986.jpg)
 
-## 2716. US-0686 Big South Fork National Recreation Area — score 0.51
+## 2720. US-0686 Big South Fork National Recreation Area — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35314,7 +35366,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_987.jpg)
 
-## 2717. US-0686 Big South Fork National Recreation Area — score 0.51
+## 2721. US-0686 Big South Fork National Recreation Area — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35327,7 +35379,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_988.jpg)
 
-## 2718. US-0686 Big South Fork National Recreation Area — score 0.51
+## 2722. US-0686 Big South Fork National Recreation Area — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35340,7 +35392,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_989.jpg)
 
-## 2719. US-0686 Big South Fork National Recreation Area — score 0.51
+## 2723. US-0686 Big South Fork National Recreation Area — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35353,7 +35405,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_990.jpg)
 
-## 2720. US-0686 Big South Fork National Recreation Area — score 0.51
+## 2724. US-0686 Big South Fork National Recreation Area — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35366,7 +35418,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_991.jpg)
 
-## 2721. US-0686 Big South Fork National Recreation Area — score 0.51
+## 2725. US-0686 Big South Fork National Recreation Area — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35379,7 +35431,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_992.jpg)
 
-## 2722. US-0686 Big South Fork National Recreation Area — score 0.51
+## 2726. US-0686 Big South Fork National Recreation Area — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35392,7 +35444,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_993.jpg)
 
-## 2723. US-0686 Big South Fork National Recreation Area — score 0.51
+## 2727. US-0686 Big South Fork National Recreation Area — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -35405,7 +35457,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-0686_994.jpg)
 
-## 2724. US-1253 Dawkins Line Rail Trail State Park — score 0.51
+## 2728. US-1253 Dawkins Line Rail Trail State Park — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35418,7 +35470,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1253_34.jpg)
 
-## 2725. US-1258 Grayson Lake State Park — score 0.51
+## 2729. US-1258 Grayson Lake State Park — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35431,7 +35483,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1258_12.jpg)
 
-## 2726. US-1260 John James Audubon State Park — score 0.51
+## 2730. US-1260 John James Audubon State Park — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35444,7 +35496,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1260_08.jpg)
 
-## 2727. US-1260 John James Audubon State Park — score 0.51
+## 2731. US-1260 John James Audubon State Park — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35457,7 +35509,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1260_09.jpg)
 
-## 2728. US-1282 Kenlake State Park — score 0.51
+## 2732. US-1282 Kenlake State Park — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35470,7 +35522,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1282_55.jpg)
 
-## 2729. US-1283 Kentucky Dam Village State Park — score 0.51
+## 2733. US-1283 Kentucky Dam Village State Park — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35483,7 +35535,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_80.jpg)
 
-## 2730. US-1283 Kentucky Dam Village State Park — score 0.51
+## 2734. US-1283 Kentucky Dam Village State Park — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35496,7 +35548,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1283_81.jpg)
 
-## 2731. US-1288 Pine Mountain State Park — score 0.51
+## 2735. US-1288 Pine Mountain State Park — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35509,7 +35561,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1288_24.jpg)
 
-## 2732. US-1288 Pine Mountain State Park — score 0.51
+## 2736. US-1288 Pine Mountain State Park — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35522,7 +35574,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1288_25.jpg)
 
-## 2733. US-3781 Breaks Interstate State Park — score 0.51
+## 2737. US-3781 Breaks Interstate State Park — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35535,7 +35587,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_108.jpg)
 
-## 2734. US-3781 Breaks Interstate State Park — score 0.51
+## 2738. US-3781 Breaks Interstate State Park — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -35548,7 +35600,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3781_109.jpg)
 
-## 2735. US-3783 Jefferson Davis State Historic Site — score 0.51
+## 2739. US-3783 Jefferson Davis State Historic Site — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -35561,7 +35613,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3783_04.jpg)
 
-## 2736. US-3792 Land Between the Lakes National Recreation Area — score 0.51
+## 2740. US-3792 Land Between the Lakes National Recreation Area — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35574,7 +35626,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_159.jpg)
 
-## 2737. US-3792 Land Between the Lakes National Recreation Area — score 0.51
+## 2741. US-3792 Land Between the Lakes National Recreation Area — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35587,7 +35639,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_160.jpg)
 
-## 2738. US-3792 Land Between the Lakes National Recreation Area — score 0.51
+## 2742. US-3792 Land Between the Lakes National Recreation Area — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35600,7 +35652,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_161.jpg)
 
-## 2739. US-3794 Beaver Creek Wildlife Management Area — score 0.51
+## 2743. US-3794 Beaver Creek Wildlife Management Area — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35613,7 +35665,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3794_20.jpg)
 
-## 2740. US-3797 Boatwright Wildlife Management Area — score 0.51
+## 2744. US-3797 Boatwright Wildlife Management Area — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35626,7 +35678,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3797_18.jpg)
 
-## 2741. US-3802 Clyde E Buckley Sanctuary — score 0.51
+## 2745. US-3802 Clyde E Buckley Sanctuary — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35639,7 +35691,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3802_14.jpg)
 
-## 2742. US-3813 Griffith Woods Wildlife Management Area — score 0.51
+## 2746. US-3813 Griffith Woods Wildlife Management Area — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -35652,7 +35704,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3813_10.jpg)
 
-## 2743. US-3818 Jones-Keeney Wildlife Management Area — score 0.51
+## 2747. US-3818 Jones-Keeney Wildlife Management Area — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -35665,7 +35717,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3818_08.jpg)
 
-## 2744. US-3828 Peabody Wildlife Management Area — score 0.51
+## 2748. US-3828 Peabody Wildlife Management Area — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35678,7 +35730,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_127.jpg)
 
-## 2745. US-3828 Peabody Wildlife Management Area — score 0.51
+## 2749. US-3828 Peabody Wildlife Management Area — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -35691,7 +35743,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_128.jpg)
 
-## 2746. US-3828 Peabody Wildlife Management Area — score 0.51
+## 2750. US-3828 Peabody Wildlife Management Area — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35704,7 +35756,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_129.jpg)
 
-## 2747. US-3828 Peabody Wildlife Management Area — score 0.51
+## 2751. US-3828 Peabody Wildlife Management Area — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -35717,7 +35769,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_130.jpg)
 
-## 2748. US-3828 Peabody Wildlife Management Area — score 0.51
+## 2752. US-3828 Peabody Wildlife Management Area — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35730,7 +35782,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_131.jpg)
 
-## 2749. US-3828 Peabody Wildlife Management Area — score 0.51
+## 2753. US-3828 Peabody Wildlife Management Area — score 0.51
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -35743,7 +35795,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_132.jpg)
 
-## 2750. US-0050 Mammoth Cave National Park — score 0.50
+## 2754. US-0050 Mammoth Cave National Park — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35756,7 +35808,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_184.jpg)
 
-## 2751. US-0050 Mammoth Cave National Park — score 0.50
+## 2755. US-0050 Mammoth Cave National Park — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35769,7 +35821,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_185.jpg)
 
-## 2752. US-0050 Mammoth Cave National Park — score 0.50
+## 2756. US-0050 Mammoth Cave National Park — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35782,7 +35834,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_186.jpg)
 
-## 2753. US-0050 Mammoth Cave National Park — score 0.50
+## 2757. US-0050 Mammoth Cave National Park — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35795,7 +35847,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0050_187.jpg)
 
-## 2754. US-0686 Big South Fork National Recreation Area — score 0.50
+## 2758. US-0686 Big South Fork National Recreation Area — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35808,7 +35860,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_995.jpg)
 
-## 2755. US-0686 Big South Fork National Recreation Area — score 0.50
+## 2759. US-0686 Big South Fork National Recreation Area — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35821,7 +35873,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_996.jpg)
 
-## 2756. US-0686 Big South Fork National Recreation Area — score 0.50
+## 2760. US-0686 Big South Fork National Recreation Area — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35834,7 +35886,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_997.jpg)
 
-## 2757. US-0686 Big South Fork National Recreation Area — score 0.50
+## 2761. US-0686 Big South Fork National Recreation Area — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35847,7 +35899,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_998.jpg)
 
-## 2758. US-0686 Big South Fork National Recreation Area — score 0.50
+## 2762. US-0686 Big South Fork National Recreation Area — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35860,7 +35912,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_999.jpg)
 
-## 2759. US-0686 Big South Fork National Recreation Area — score 0.50
+## 2763. US-0686 Big South Fork National Recreation Area — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35873,7 +35925,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_1000.jpg)
 
-## 2760. US-0686 Big South Fork National Recreation Area — score 0.50
+## 2764. US-0686 Big South Fork National Recreation Area — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35886,7 +35938,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_1001.jpg)
 
-## 2761. US-0686 Big South Fork National Recreation Area — score 0.50
+## 2765. US-0686 Big South Fork National Recreation Area — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35899,7 +35951,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_1002.jpg)
 
-## 2762. US-0686 Big South Fork National Recreation Area — score 0.50
+## 2766. US-0686 Big South Fork National Recreation Area — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35912,7 +35964,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_1003.jpg)
 
-## 2763. US-0686 Big South Fork National Recreation Area — score 0.50
+## 2767. US-0686 Big South Fork National Recreation Area — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35925,7 +35977,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_1004.jpg)
 
-## 2764. US-0686 Big South Fork National Recreation Area — score 0.50
+## 2768. US-0686 Big South Fork National Recreation Area — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35938,7 +35990,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_1005.jpg)
 
-## 2765. US-0686 Big South Fork National Recreation Area — score 0.50
+## 2769. US-0686 Big South Fork National Recreation Area — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35951,7 +36003,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_1006.jpg)
 
-## 2766. US-0686 Big South Fork National Recreation Area — score 0.50
+## 2770. US-0686 Big South Fork National Recreation Area — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35964,7 +36016,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_1007.jpg)
 
-## 2767. US-0686 Big South Fork National Recreation Area — score 0.50
+## 2771. US-0686 Big South Fork National Recreation Area — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35977,7 +36029,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_1008.jpg)
 
-## 2768. US-0686 Big South Fork National Recreation Area — score 0.50
+## 2772. US-0686 Big South Fork National Recreation Area — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -35990,7 +36042,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_1009.jpg)
 
-## 2769. US-0686 Big South Fork National Recreation Area — score 0.50
+## 2773. US-0686 Big South Fork National Recreation Area — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -36003,7 +36055,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_1010.jpg)
 
-## 2770. US-0686 Big South Fork National Recreation Area — score 0.50
+## 2774. US-0686 Big South Fork National Recreation Area — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -36016,7 +36068,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_1011.jpg)
 
-## 2771. US-0686 Big South Fork National Recreation Area — score 0.50
+## 2775. US-0686 Big South Fork National Recreation Area — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -36029,7 +36081,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_1012.jpg)
 
-## 2772. US-0686 Big South Fork National Recreation Area — score 0.50
+## 2776. US-0686 Big South Fork National Recreation Area — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -36042,7 +36094,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_1013.jpg)
 
-## 2773. US-0686 Big South Fork National Recreation Area — score 0.50
+## 2777. US-0686 Big South Fork National Recreation Area — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -36055,7 +36107,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_1014.jpg)
 
-## 2774. US-0686 Big South Fork National Recreation Area — score 0.50
+## 2778. US-0686 Big South Fork National Recreation Area — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -36068,7 +36120,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_1015.jpg)
 
-## 2775. US-0686 Big South Fork National Recreation Area — score 0.50
+## 2779. US-0686 Big South Fork National Recreation Area — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -36081,7 +36133,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_1016.jpg)
 
-## 2776. US-0686 Big South Fork National Recreation Area — score 0.50
+## 2780. US-0686 Big South Fork National Recreation Area — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -36094,7 +36146,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0686_1017.jpg)
 
-## 2777. US-0703 Fort Donelson National Battlefield — score 0.50
+## 2781. US-0703 Fort Donelson National Battlefield — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -36107,7 +36159,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-0703_99.jpg)
 
-## 2778. US-1258 Grayson Lake State Park — score 0.50
+## 2782. US-1258 Grayson Lake State Park — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -36120,7 +36172,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1258_13.jpg)
 
-## 2779. US-1262 Kingdom Come State Park — score 0.50
+## 2783. US-1262 Kingdom Come State Park — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -36133,7 +36185,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1262_05.jpg)
 
-## 2780. US-1265 Lincoln Homestead State Park — score 0.50
+## 2784. US-1265 Lincoln Homestead State Park — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -36146,7 +36198,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-1265_07.jpg)
 
-## 2781. US-3781 Breaks Interstate State Park — score 0.50
+## 2785. US-3781 Breaks Interstate State Park — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -36159,7 +36211,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3781_110.jpg)
 
-## 2782. US-3781 Breaks Interstate State Park — score 0.50
+## 2786. US-3781 Breaks Interstate State Park — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -36172,7 +36224,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3781_111.jpg)
 
-## 2783. US-3792 Land Between the Lakes National Recreation Area — score 0.50
+## 2787. US-3792 Land Between the Lakes National Recreation Area — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -36185,7 +36237,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_162.jpg)
 
-## 2784. US-3792 Land Between the Lakes National Recreation Area — score 0.50
+## 2788. US-3792 Land Between the Lakes National Recreation Area — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -36198,7 +36250,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_163.jpg)
 
-## 2785. US-3792 Land Between the Lakes National Recreation Area — score 0.50
+## 2789. US-3792 Land Between the Lakes National Recreation Area — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -36211,7 +36263,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_164.jpg)
 
-## 2786. US-3792 Land Between the Lakes National Recreation Area — score 0.50
+## 2790. US-3792 Land Between the Lakes National Recreation Area — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -36224,7 +36276,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_165.jpg)
 
-## 2787. US-3792 Land Between the Lakes National Recreation Area — score 0.50
+## 2791. US-3792 Land Between the Lakes National Recreation Area — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -36237,7 +36289,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_166.jpg)
 
-## 2788. US-3792 Land Between the Lakes National Recreation Area — score 0.50
+## 2792. US-3792 Land Between the Lakes National Recreation Area — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -36250,7 +36302,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3792_167.jpg)
 
-## 2789. US-3792 Land Between the Lakes National Recreation Area — score 0.50
+## 2793. US-3792 Land Between the Lakes National Recreation Area — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -36263,7 +36315,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3792_168.jpg)
 
-## 2790. US-3793 Ballard Wildlife Management Area — score 0.50
+## 2794. US-3793 Ballard Wildlife Management Area — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -36276,7 +36328,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3793_25.jpg)
 
-## 2791. US-3797 Boatwright Wildlife Management Area — score 0.50
+## 2795. US-3797 Boatwright Wildlife Management Area — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -36289,7 +36341,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3797_19.jpg)
 
-## 2792. US-3797 Boatwright Wildlife Management Area — score 0.50
+## 2796. US-3797 Boatwright Wildlife Management Area — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -36302,7 +36354,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3797_20.jpg)
 
-## 2793. US-3802 Clyde E Buckley Sanctuary — score 0.50
+## 2797. US-3802 Clyde E Buckley Sanctuary — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -36315,7 +36367,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3802_15.jpg)
 
-## 2794. US-3815 Higginson-Henry Wildlife Management Area — score 0.50
+## 2798. US-3815 Higginson-Henry Wildlife Management Area — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -36328,7 +36380,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3815_52.jpg)
 
-## 2795. US-3828 Peabody Wildlife Management Area — score 0.50
+## 2799. US-3828 Peabody Wildlife Management Area — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
 
@@ -36341,7 +36393,7 @@ Possible pull-off (seen on an aerial photo, not official). Just outside the park
 
 ![chip](chips/US-3828_133.jpg)
 
-## 2796. US-3828 Peabody Wildlife Management Area — score 0.50
+## 2800. US-3828 Peabody Wildlife Management Area — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -36354,7 +36406,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_134.jpg)
 
-## 2797. US-3828 Peabody Wildlife Management Area — score 0.50
+## 2801. US-3828 Peabody Wildlife Management Area — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -36367,7 +36419,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_135.jpg)
 
-## 2798. US-3828 Peabody Wildlife Management Area — score 0.50
+## 2802. US-3828 Peabody Wildlife Management Area — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -36380,7 +36432,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_136.jpg)
 
-## 2799. US-3828 Peabody Wildlife Management Area — score 0.50
+## 2803. US-3828 Peabody Wildlife Management Area — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -36393,7 +36445,7 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 
 ![chip](chips/US-3828_137.jpg)
 
-## 2800. US-3830 Sloughs Wildlife Management Area — score 0.50
+## 2804. US-3830 Sloughs Wildlife Management Area — score 0.50
 
 **Possible pull-off (seen on an aerial photo, not official). Inside the park's official boundary.**
 
@@ -36405,4 +36457,17 @@ Possible pull-off (seen on an aerial photo, not official). Inside the park's off
 - sources: [NAIP photo](https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPImagery/ImageServer/exportImage?bbox=433920.00%2C4190920.00%2C434580.00%2C4191580.00&bboxSR=32616&imageSR=32616&size=1100%2C1100&format=tiff&pixelType=U8&noData=0&renderingRule=%7B%22rasterFunction%22%3A+%22None%22%7D&interpolation=RSP_BilinearInterpolation&f=image) · [TIGER roads](https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/8/query?where=1%3D1&geometry=-87.823840%2C37.774526%2C-87.723840%2C37.874526&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=MTFCC%2CNAME%2CBASENAME%2COBJECTID&returnGeometry=true&outSR=4326&resultOffset=0&resultRecordCount=2000&f=json) · outline: /home/runner/work/KPC-Data/KPC-Data/prep/one/US-3830.geojson · read 2026-11-15
 
 ![chip](chips/US-3830_38.jpg)
+
+## 2805. US-3836 Veterans Memorial Wildlife Management Area — score 0.50
+
+**Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate.**
+
+Possible pull-off (seen on an aerial photo, not official). Just outside the park's boundary: walk in to activate. About 70 m outside the boundary. A bare patch of about 399 m² (26 x 36 m) touches State Hwy 620 (S1200, primary/secondary road) for about 3 m; 59% of it is grey like gravel or pavement. NAIP photo 2022.
+
+- where: 38.345732, -84.530739 (outside, about 71 m)
+- road: State Hwy 620 (S1200)
+- photo: NAIP 2022
+- sources: [NAIP photo](https://imagery.nationalmap.gov/arcgis/rest/services/USGSNAIPImagery/ImageServer/exportImage?bbox=715420.00%2C4246920.00%2C716080.00%2C4247580.00&bboxSR=32616&imageSR=32616&size=1100%2C1100&format=tiff&pixelType=U8&noData=0&renderingRule=%7B%22rasterFunction%22%3A+%22None%22%7D&interpolation=RSP_BilinearInterpolation&f=image) · [TIGER roads](https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer/6/query?where=1%3D1&geometry=-84.570904%2C38.299682%2C-84.524217%2C38.352631&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=MTFCC%2CNAME%2CBASENAME%2COBJECTID&returnGeometry=true&outSR=4326&resultOffset=0&resultRecordCount=2000&f=json) · outline: /home/runner/work/KPC-Data/KPC-Data/prep/one/US-3836.geojson · read 2026-11-15
+
+![chip](chips/US-3836_04.jpg)
 

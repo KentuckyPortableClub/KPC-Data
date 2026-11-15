@@ -1,12 +1,12 @@
 # kpc_pulloffs run report (2026-11-15)
 
-- version 1.0.0; exit code 3; ran 50.6 min; 87 web requests
-- parks in this input (after --areas / --limit): 190; done: 100; left for the next run: 90
-- candidates for chat 11: 2800; kept out (log only, work/log/kept_out.jsonl): 7908
+- version 1.0.0; exit code 3; ran 52.2 min; 82 web requests
+- parks in this input (after --areas / --limit): 190; done: 103; left for the next run: 87
+- candidates for chat 11: 2805; kept out (log only, work/log/kept_out.jsonl): 7928
 
 ## Recall check (acceptance test only, before the duplicate drop)
 
-Official access pins next to a public road (within 30 m) inside the search band: 468; found within 50 m: 100 (21%)
+Official access pins next to a public road (within 30 m) inside the search band: 473; found within 50 m: 100 (21%)
 
 ## Parks
 
@@ -172,7 +172,14 @@ Official access pins next to a public road (within 30 m) inside the search band:
   - problem (skipped, run went on): NAIP photo for cell 617,8140 not read: HTTP 504
 - US-3833 T. N. Sullivan Wildlife Management Area: done; 2 candidate(s); 5 kept out; photo cells 5; points looked at {'entry': 18, 'road': 24, 'hint': 0}; roads {'public': 3, 'dropped (interstate/ramp/private/alley)': 0, 'lot-road hints': 0}; recall 1/3
   - note: FEMA USA Structures (building outlines) not read (robots.txt does not allow /FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query): only the roof test on the photo was used
-- US-3834 Tradewater Wildlife Management Area: time ran out after 9 of 13 photo cells looked at; nothing written for it yet. Run again with --resume (downloads are cached).
+- US-3834 Tradewater Wildlife Management Area: done; 1 candidate(s); 5 kept out; photo cells 13; points looked at {'entry': 22, 'road': 79, 'hint': 0}; roads {'public': 46, 'dropped (interstate/ramp/private/alley)': 0, 'lot-road hints': 0}; recall 0/1
+  - note: FEMA USA Structures (building outlines) not read (robots.txt does not allow /FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query): only the roof test on the photo was used
+- US-3835 Twin Eagle Wildlife Management Area: done; 0 candidate(s); 2 kept out; photo cells 6; points looked at {'entry': 2, 'road': 15, 'hint': 0}; roads {'public': 5, 'dropped (interstate/ramp/private/alley)': 1, 'lot-road hints': 0}; recall 0/2
+  - note: FEMA USA Structures (building outlines) not read (robots.txt does not allow /FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query): only the roof test on the photo was used
+- US-3836 Veterans Memorial Wildlife Management Area: done; 4 candidate(s); 13 kept out; photo cells 13; points looked at {'entry': 2, 'road': 44, 'hint': 0}; roads {'public': 20, 'dropped (interstate/ramp/private/alley)': 2, 'lot-road hints': 0}; recall 0/2
+  - note: FEMA USA Structures (building outlines) not read (robots.txt does not allow /FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query): only the roof test on the photo was used
+  - problem (skipped, run went on): NAIP photo for cell 1427,8484 not read: HTTP 504
+- US-3837 West Kentucky Wildlife Management Area: time ran out after 12 of 72 photo cells looked at; nothing written for it yet. Run again with --resume (downloads are cached).
 
 ## Web manners
 
