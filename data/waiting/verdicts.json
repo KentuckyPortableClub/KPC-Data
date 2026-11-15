@@ -789,7 +789,7 @@
    "path": "data/docs/US-HI.json",
    "kind": "docs",
    "why": [
-    "F-D3 5 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/kealia-pond/visit-us/rules-policies"
+    "F-D3 6 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/kealia-pond/visit-us/rules-policies"
    ],
    "notes": [
     "no live copy: first time this file is published"
@@ -872,7 +872,7 @@
    "path": "data/docs/US-MI.json",
    "kind": "docs",
    "why": [
-    "F-D3 3 of 20 re-tested links dead, e.g. https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/s"
+    "F-D3 4 of 20 re-tested links dead, e.g. https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/s"
    ],
    "notes": [
     "no live copy: first time this file is published"
@@ -3826,11 +3826,11 @@
   {
    "path": "data/world-key/BZ.json",
    "kind": "key",
-   "why": [],
-   "notes": [
-    "F-O4 shape test: 43 changed outlines read from PAD-US, 0 far from the park pin"
+   "why": [
+    "F-4 unsure: PAD-US did not answer the shape test (HTTPError)"
    ],
-   "verdict": "PASS"
+   "notes": [],
+   "verdict": "HOLD"
   },
   {
    "path": "data/world-key/CC.json",
