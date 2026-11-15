@@ -1,6 +1,6 @@
 {
  "area": "US-MD",
- "built": "2026-11-08",
+ "built": "2026-11-15",
  "tool": "KPC-map-audit",
  "rules": "2026-11-02c",
  "parks": [
@@ -1092,12 +1092,17 @@
      "flag": "SPILL",
      "parks": [
       {
+       "ref": "US-7974",
+       "name": "Harmony Hall National Heritage Site",
+       "share": 0.97
+      },
+      {
        "ref": "US-7776",
        "name": "Oxon Cove Park & Farm National Historical Park",
        "share": 0.77
       }
      ],
-     "count": 1
+     "count": 2
     },
     "T7": {
      "flag": "N/A",
@@ -1116,7 +1121,7 @@
    ],
    "status": "graded",
    "score": 6,
-   "why": "SPILL: The outline covers 77% of US-7776 Oxon Cove Park & Farm National Historical Park, with no 2-fer row (maybe the wrong record) (+3 more flags)."
+   "why": "SPILL: The outline covers 97% of US-7974 Harmony Hall National Heritage Site, with no 2-fer row (maybe the wrong record) (+3 more flags)."
   },
   {
    "ref": "US-0671",
@@ -7834,7 +7839,6 @@
      "flag": "DUPLICATE",
      "parks": {
       "US-7760": [
-       "https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/FeatureServer/0#293",
        "https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/FeatureServer/0#350",
        "https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/FeatureServer/0#370"
       ]
@@ -10829,7 +10833,7 @@
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
     "https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/FeatureServer/0"
    ],
-   "acres_drawn": 8005.5,
+   "acres_drawn": 6841.0,
    "records": [
     {
      "id": "padus#9284",
@@ -10862,36 +10866,6 @@
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=9291&outFields=*&returnGeometry=false&f=html"
     },
     {
-     "id": "padus#9285",
-     "name": "Pocomoke River State Forest",
-     "type": "SF State Resource Management Area",
-     "category": "Fee",
-     "acres": 573.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=9285&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "padus#56814",
-     "name": "Pocomoke River State Forest",
-     "type": "SF State Resource Management Area",
-     "category": "Fee",
-     "acres": 340.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=56814&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "padus#9286",
-     "name": "Pocomoke River State Forest",
-     "type": "SF State Resource Management Area",
-     "category": "Fee",
-     "acres": 252.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=9286&outFields=*&returnGeometry=false&f=html"
-    },
-    {
      "id": "padus#9283",
      "name": "Pocomoke River State Forest",
      "type": "SF State Resource Management Area",
@@ -10910,16 +10884,6 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=56811&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "padus#9288",
-     "name": "Pocomoke River State Forest",
-     "type": "SF State Resource Management Area",
-     "category": "Fee",
-     "acres": 1.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=9288&outFields=*&returnGeometry=false&f=html"
     },
     {
      "id": "mdd489",
@@ -10942,12 +10906,8 @@
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#9284",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#9287",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#9291",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#9285",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#56814",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#9286",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#9283",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#56811",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#9288",
     "https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/FeatureServer/0#489",
     "https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/FeatureServer/0#489"
    ],
@@ -10958,12 +10918,10 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 8005.5,
-     "official_acres": 7981.0,
+     "outline_acres": 6841.0,
+     "official_acres": 6815.0,
      "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area); includes copies drawn by The Nature Conservancy (PAD-US source TNC_PADUS2_0_SA2015_Public_gdb)",
-     "official_acres_low": 7584.0,
-     "note": "PAD-US holds this land from more than one data provider: counted once per provider it is 7,584 ac, all providers added 7,981 ac"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area); includes copies drawn by The Nature Conservancy (PAD-US source TNC_PADUS2_0_SA2015_Public_gdb)"
     },
     "T3": {
      "flag": "PASS",
@@ -10977,18 +10935,8 @@
      "flag": "PASS"
     },
     "T5": {
-     "flag": "TINY HOLES",
-     "pieces": 9,
-     "flags": [
-      "TINY HOLES"
-     ],
-     "note": "1 hole(s) under 100 m2",
-     "repair": {
-      "ok": true,
-      "area_change_pct": 0.0,
-      "holes": 1,
-      "pieces": 0
-     }
+     "flag": "PASS",
+     "pieces": 6
     },
     "T6": {
      "flag": "SPILL",
@@ -11015,8 +10963,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 4,
-   "why": "SPILL: The outline covers 96% of US-10762 Furnace Natural Area, with no 2-fer row (maybe the wrong record) (+1 more flag)."
+   "score": 3,
+   "why": "SPILL: The outline covers 96% of US-10762 Furnace Natural Area, with no 2-fer row (maybe the wrong record)."
   },
   {
    "ref": "US-4768",
@@ -17024,7 +16972,7 @@
    "outline_from": [
     "https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/FeatureServer/0"
    ],
-   "acres_drawn": 1916.6,
+   "acres_drawn": 281.6,
    "records": [
     {
      "id": "mdd350",
@@ -17057,22 +17005,13 @@
      "layer": "https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/FeatureServer/0",
      "link": "https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/FeatureServer/0/query?objectIds=370&outFields=*&returnGeometry=false&f=html",
      "name_field": "DNRName"
-    },
-    {
-     "id": "sgmda293",
-     "name": "NANJEMOY WMA",
-     "type": "Maryland DNR (state parks, WMAs, forests, natural resource areas) (land, state GIS table)",
-     "layer": "https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/FeatureServer/0",
-     "link": "https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/FeatureServer/0/query?objectIds=293&outFields=*&returnGeometry=false&f=html",
-     "name_field": "DNRName"
     }
    ],
    "record_ids": [
     "https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/FeatureServer/0#350",
     "https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/FeatureServer/0#370",
     "https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/FeatureServer/0#350",
-    "https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/FeatureServer/0#370",
-    "https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/FeatureServer/0#293"
+    "https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/FeatureServer/0#370"
    ],
    "tests": {
     "T1": {
@@ -17081,17 +17020,13 @@
     },
     "T2": {
      "flag": "NO FIGURE",
-     "outline_acres": 1916.6
+     "outline_acres": 281.6
     },
     "T3": {
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "Nanjemoy Creek Wildlife Management Area",
-     "record_name": "NANJEMOY CREEK WMA",
-     "worst_record": {
-      "name": "NANJEMOY WMA",
-      "score": 0.5
-     }
+     "record_name": "NANJEMOY CREEK WMA"
     },
     "T4": {
      "park_kind": "wma",
@@ -17101,18 +17036,10 @@
     },
     "T5": {
      "flag": "PASS",
-     "pieces": 10
+     "pieces": 2
     },
     "T6": {
-     "flag": "SPILL",
-     "parks": [
-      {
-       "ref": "US-7782",
-       "name": "Ben Doane Parcel of Nanjemoy Wildlife Management Area",
-       "share": 0.49
-      }
-     ],
-     "count": 1
+     "flag": "PASS"
     },
     "T7": {
      "flag": "N/A",
@@ -17122,7 +17049,6 @@
      "flag": "DUPLICATE",
      "parks": {
       "US-1591": [
-       "https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/FeatureServer/0#293",
        "https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/FeatureServer/0#350",
        "https://mdgeodata.md.gov/imap/rest/services/Environment/MD_ProtectedLands/FeatureServer/0#370"
       ]
@@ -17136,8 +17062,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 10,
-   "why": "OUTSIDE: POTA's pin is 2.1 km outside the outline (+3 more flags)."
+   "score": 7,
+   "why": "OUTSIDE: POTA's pin is 2.1 km outside the outline (+2 more flags)."
   },
   {
    "ref": "US-7761",
@@ -17921,53 +17847,76 @@
    "name": "Frederick City Watershed Cooperative Wildlife Management Area",
    "key_name": "Frederick City Watershed Cooperative Wildlife Management Area",
    "type": "Wildlife Management Area",
-   "grade": "pin",
+   "grade": "official",
    "pin": [
     39.5258,
     -77.4629
    ],
-   "outline_from": [],
-   "acres_drawn": null,
-   "records": [],
-   "record_ids": [],
+   "outline_from": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+   ],
+   "acres_drawn": 5185.7,
+   "records": [
+    {
+     "id": "padus#16458",
+     "name": "Frederick Municipal Forest",
+     "type": "ML Local Other or Unknown",
+     "category": "Fee",
+     "acres": 5186.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=16458&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#16458"
+   ],
    "tests": {
     "T1": {
-     "flag": "NO OUTLINE"
+     "flag": "PASS",
+     "metres": 0
     },
     "T2": {
-     "flag": "NO OUTLINE"
+     "flag": "PASS",
+     "outline_acres": 5185.7,
+     "official_acres": 5186.0,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "CAN'T TELL",
-     "note": "no record name"
+     "flag": "MISMATCH",
+     "score": 0.333,
+     "pota_name": "Frederick City Watershed Cooperative Wildlife Management Area",
+     "record_name": "Frederick Municipal Forest"
     },
     "T4": {
-     "flag": "CAN'T TELL",
-     "note": "no record"
+     "park_kind": "wma",
+     "record_kind": null,
+     "flag": "CAN'T TELL"
     },
     "T5": {
-     "flag": "NO OUTLINE",
-     "note": "no outline saved (pin only)"
+     "flag": "PASS",
+     "pieces": 1
     },
     "T6": {
-     "flag": "NO OUTLINE"
+     "flag": "PASS"
     },
     "T7": {
-     "flag": "NO OUTLINE"
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
     },
     "T8": {
-     "flag": "CAN'T TELL",
-     "note": "no record id"
+     "flag": "PASS"
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+     "note": "the source's layer details give no last-edit date"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 0,
-   "why": "Nothing could be tested."
+   "score": 3,
+   "why": "MISMATCH: The record name 'Frederick Municipal Forest' does not match POTA's name 'Frederick City Watershed Cooperative Wildlife Management Area' (score 0.33)."
   },
   {
    "ref": "US-7769",
@@ -19449,7 +19398,7 @@
    "name": "Baltimore-Washington National Parkway",
    "key_name": "Baltimore-Washington National Parkway",
    "type": "National Parkway",
-   "grade": "pin",
+   "grade": "official",
    "pin": [
     38.9792,
     -76.8976
@@ -19495,11 +19444,8 @@
      "flag": "NO OUTLINE"
     },
     "T7": {
-     "detail_m": 0.09,
-     "declared_m": null,
-     "coordinate_step_m": 0.09,
-     "median_spacing_m": 0.0,
-     "flag": "PASS"
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
     },
     "T8": {
      "flag": "CAN'T TELL",
@@ -19507,66 +19453,86 @@
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: : down for this run (failed 3 times)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "NEAR: POTA's pin is 272 m outside the outline."
+   "why": "SOURCE DOWN: NEAR: POTA's pin is 272 m outside the outline."
   },
   {
    "ref": "US-7974",
    "name": "Harmony Hall National Heritage Site",
    "key_name": "Harmony Hall National Heritage Site",
    "type": "National Heritage Site",
-   "grade": "pin",
+   "grade": "official",
    "pin": [
     38.745,
     -77.0006
    ],
-   "outline_from": [],
-   "acres_drawn": null,
-   "records": [],
-   "record_ids": [],
+   "outline_from": [
+    "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1"
+   ],
+   "acres_drawn": 21.6,
+   "records": [
+    {
+     "id": "sgaki382060",
+     "name": "Harmony Hall",
+     "type": "National Register of Historic Places Polygons (land, state GIS table)",
+     "layer": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
+     "link": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?objectIds=382060&outFields=*&returnGeometry=false&f=html",
+     "name_field": "RESNAME"
+    }
+   ],
+   "record_ids": [
+    "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1#382060"
+   ],
    "tests": {
     "T1": {
-     "flag": "NO OUTLINE"
+     "flag": "PASS",
+     "metres": 0
     },
     "T2": {
-     "flag": "NO OUTLINE"
+     "flag": "NO FIGURE",
+     "outline_acres": 21.6
     },
     "T3": {
-     "flag": "CAN'T TELL",
-     "note": "no record name"
+     "flag": "MISMATCH",
+     "score": 0.667,
+     "pota_name": "Harmony Hall National Heritage Site",
+     "record_name": "Harmony Hall"
     },
     "T4": {
-     "flag": "CAN'T TELL",
-     "note": "no record"
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
     },
     "T5": {
-     "flag": "NO OUTLINE",
-     "note": "no outline saved (pin only)"
+     "flag": "PASS",
+     "pieces": 1
     },
     "T6": {
-     "flag": "NO OUTLINE"
+     "flag": "PASS"
     },
     "T7": {
-     "flag": "NO OUTLINE"
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
     },
     "T8": {
-     "flag": "CAN'T TELL",
-     "note": "no record id"
+     "flag": "PASS"
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+     "note": "the source's layer details give no last-edit date"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 0,
-   "why": "Nothing could be tested."
+   "score": 3,
+   "why": "MISMATCH: The record name 'Harmony Hall' does not match POTA's name 'Harmony Hall National Heritage Site' (score 0.67)."
   },
   {
    "ref": "US-7975",

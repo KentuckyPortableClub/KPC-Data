@@ -1,6 +1,6 @@
 {
  "area": "US-IN",
- "built": "2026-11-08",
+ "built": "2026-11-15",
  "tool": "KPC-map-audit",
  "rules": "2026-11-02c",
  "parks": [
@@ -14,82 +14,50 @@
     38.9605,
     -85.4165
    ],
-   "outline_from": [
-    "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0"
-   ],
-   "acres_drawn": 50657.4,
-   "records": [
-    {
-     "id": "fws4302",
-     "name": "BIG OAKS NATIONAL WILDLIFE REFUGE",
-     "type": "U.S. Fish & Wildlife Service",
-     "acres": 50658.0,
-     "acres_from": "the key's acres",
-     "layer": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0",
-     "link": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?objectIds=4302&outFields=*&returnGeometry=false&f=html",
-     "name_field": "ORGNAME"
-    }
-   ],
-   "record_ids": [
-    "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0#4302"
-   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "PASS",
-     "metres": 0
+     "flag": "NO OUTLINE"
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 50657.4,
-     "official_acres": 50658.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Big Oaks National Wildlife Refuge",
-     "record_name": "BIG OAKS NATIONAL WILDLIFE REFUGE"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": "refuge",
-     "record_kind": "refuge",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "TINY HOLES",
-     "pieces": 1,
-     "flags": [
-      "TINY HOLES"
-     ],
-     "note": "1 hole(s) under 100 m2",
-     "repair": {
-      "ok": true,
-      "area_change_pct": 0.0,
-      "holes": 1,
-      "pieces": 0
-     }
+     "flag": "CAN'T TELL",
+     "note": "source down"
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
-     "last_edit": "2026-08-24",
-     "read": "2026-11-05",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
-   "score": 1,
-   "why": "TINY HOLES: The shape has problems: 1 hole(s) under 100 m2."
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
+   "score": 0,
+   "why": "SOURCE DOWN: Nothing could be tested."
   },
   {
    "ref": "US-0289",
@@ -868,7 +836,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -971,16 +939,6 @@
    "acres_drawn": 483.0,
    "records": [
     {
-     "id": "ind3561",
-     "name": "Elkhart Bog",
-     "type": "Indiana DNR properties",
-     "acres": 218.0,
-     "acres_from": "acres field",
-     "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
-     "link": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?objectIds=3561&outFields=*&returnGeometry=false&f=html",
-     "name_field": "unitname"
-    },
-    {
      "id": "sgina3561",
      "name": "Elkhart Bog",
      "type": "Indiana DNR (land, state GIS table)",
@@ -1032,7 +990,6 @@
     }
    ],
    "record_ids": [
-    "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#3561",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#3561",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_NaturePreserves/FeatureServer/0#3561",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_NaturePreserves/FeatureServer/0#3560",
@@ -1089,7 +1046,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -1266,7 +1223,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -1367,7 +1324,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -1403,16 +1360,6 @@
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=200894&outFields=*&returnGeometry=false&f=html"
     },
     {
-     "id": "ind4419",
-     "name": "Manitou Islands Wetland Conservation Area",
-     "type": "Indiana DNR properties",
-     "acres": 22.0,
-     "acres_from": "acres field",
-     "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
-     "link": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?objectIds=4419&outFields=*&returnGeometry=false&f=html",
-     "name_field": "unitname"
-    },
-    {
      "id": "sgina4419",
      "name": "Manitou Islands Wetland Conservation Area",
      "type": "Indiana DNR (land, state GIS table)",
@@ -1425,7 +1372,6 @@
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#200894",
-    "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#4419",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#4419"
    ],
    "tests": {
@@ -1467,7 +1413,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -1568,7 +1514,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -1920,26 +1866,6 @@
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=200824&outFields=*&returnGeometry=false&f=html"
     },
     {
-     "id": "ind5256",
-     "name": "Stoutsburg Savanna",
-     "type": "Indiana DNR properties",
-     "acres": 238.0,
-     "acres_from": "acres field",
-     "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
-     "link": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?objectIds=5256&outFields=*&returnGeometry=false&f=html",
-     "name_field": "unitname"
-    },
-    {
-     "id": "ind5255",
-     "name": "Stoutsburg Savanna",
-     "type": "Indiana DNR properties",
-     "acres": 165.0,
-     "acres_from": "acres field",
-     "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
-     "link": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?objectIds=5255&outFields=*&returnGeometry=false&f=html",
-     "name_field": "unitname"
-    },
-    {
      "id": "sgina5256",
      "name": "Stoutsburg Savanna",
      "type": "Indiana DNR (land, state GIS table)",
@@ -1982,8 +1908,6 @@
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#200824",
-    "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#5256",
-    "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#5255",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#5256",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#5255",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_NaturePreserves/FeatureServer/0#5256",
@@ -2038,7 +1962,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -2214,7 +2138,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-11",
      "flag": "PASS"
     }
    },
@@ -2307,7 +2231,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -2407,7 +2331,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-11",
      "flag": "PASS"
     }
    },
@@ -2606,7 +2530,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -2696,53 +2620,87 @@
    "name": "Mongoquinong State Nature Preserve",
    "key_name": "Mongoquinong State Nature Preserve",
    "type": "State Nature Preserve",
-   "grade": "pin",
+   "grade": "approximate",
    "pin": [
     41.6957,
     -85.314
    ],
-   "outline_from": [],
-   "acres_drawn": null,
-   "records": [],
-   "record_ids": [],
+   "outline_from": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0"
+   ],
+   "acres_drawn": 74.8,
+   "records": [
+    {
+     "id": "padus#200897",
+     "name": "Mongoquinong Nature Preserve Sawmill Fen",
+     "type": "Nature Preserve State Conservation Area",
+     "category": "Fee",
+     "acres": 38.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=200897&outFields=*&returnGeometry=false&f=html"
+    },
+    {
+     "id": "padus#200896",
+     "name": "Mongoquinong Nature Preserve Buckbean Fen",
+     "type": "Nature Preserve State Conservation Area",
+     "category": "Fee",
+     "acres": 37.0,
+     "acres_from": "GIS_Acres",
+     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=200896&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#200897",
+    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#200896"
+   ],
    "tests": {
     "T1": {
-     "flag": "NO OUTLINE"
+     "flag": "OUTSIDE",
+     "metres": 2018.0
     },
     "T2": {
-     "flag": "NO OUTLINE"
+     "flag": "PASS",
+     "outline_acres": 74.8,
+     "official_acres": 75.0,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
-     "flag": "CAN'T TELL",
-     "note": "no record name"
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Mongoquinong State Nature Preserve",
+     "record_name": "Mongoquinong Nature Preserve Sawmill Fen"
     },
     "T4": {
-     "flag": "CAN'T TELL",
-     "note": "no record"
+     "park_kind": "preserve",
+     "record_kind": "preserve",
+     "flag": "PASS"
     },
     "T5": {
-     "flag": "NO OUTLINE",
-     "note": "no outline saved (pin only)"
+     "flag": "PASS",
+     "pieces": 2
     },
     "T6": {
-     "flag": "NO OUTLINE"
+     "flag": "PASS"
     },
     "T7": {
-     "flag": "NO OUTLINE"
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
     },
     "T8": {
-     "flag": "CAN'T TELL",
-     "note": "no record id"
+     "flag": "PASS"
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+     "note": "the source's layer details give no last-edit date"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 0,
-   "why": "Nothing could be tested."
+   "score": 3,
+   "why": "OUTSIDE: POTA's pin is 2.0 km outside the outline."
   },
   {
    "ref": "US-10238",
@@ -2838,26 +2796,6 @@
    "acres_drawn": 134.0,
    "records": [
     {
-     "id": "ind4482",
-     "name": "McCloskey's Burr Oak Savanna",
-     "type": "Indiana DNR properties",
-     "acres": 55.0,
-     "acres_from": "acres field",
-     "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
-     "link": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?objectIds=4482&outFields=*&returnGeometry=false&f=html",
-     "name_field": "unitname"
-    },
-    {
-     "id": "ind4481",
-     "name": "McCloskey's Burr Oak Savanna",
-     "type": "Indiana DNR properties",
-     "acres": 17.0,
-     "acres_from": "acres field",
-     "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
-     "link": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?objectIds=4481&outFields=*&returnGeometry=false&f=html",
-     "name_field": "unitname"
-    },
-    {
      "id": "sgina4482",
      "name": "McCloskey's Burr Oak Savanna",
      "type": "Indiana DNR (land, state GIS table)",
@@ -2921,8 +2859,6 @@
    "record_ids": [
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#4482",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#4481",
-    "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#4482",
-    "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#4481",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_NaturePreserves/FeatureServer/0#4482",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_NaturePreserves/FeatureServer/0#4480",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_NaturePreserves/FeatureServer/0#4481",
@@ -2967,7 +2903,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -3068,7 +3004,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -3611,7 +3547,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -4015,7 +3951,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-11",
      "flag": "PASS"
     }
    },
@@ -4194,16 +4130,6 @@
    "acres_drawn": 452.3,
    "records": [
     {
-     "id": "ind3375",
-     "name": "Conrad Savanna ",
-     "type": "Indiana DNR properties",
-     "acres": 447.0,
-     "acres_from": "acres field",
-     "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
-     "link": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?objectIds=3375&outFields=*&returnGeometry=false&f=html",
-     "name_field": "unitname"
-    },
-    {
      "id": "sgina3375",
      "name": "Conrad Savanna ",
      "type": "Indiana DNR (land, state GIS table)",
@@ -4245,7 +4171,6 @@
     }
    ],
    "record_ids": [
-    "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#3375",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#3375",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_NaturePreserves/FeatureServer/0#3375",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#200784",
@@ -4290,7 +4215,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -4565,16 +4490,6 @@
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=200854&outFields=*&returnGeometry=false&f=html"
     },
     {
-     "id": "ind3760",
-     "name": "Galena Marsh Wetland Conservation Area",
-     "type": "Indiana DNR properties",
-     "acres": 121.0,
-     "acres_from": "acres field",
-     "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
-     "link": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?objectIds=3760&outFields=*&returnGeometry=false&f=html",
-     "name_field": "unitname"
-    },
-    {
      "id": "sgina3760",
      "name": "Galena Marsh Wetland Conservation Area",
      "type": "Indiana DNR (land, state GIS table)",
@@ -4587,7 +4502,6 @@
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#200854",
-    "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#3760",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#3760"
    ],
    "tests": {
@@ -4629,7 +4543,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -4717,7 +4631,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-11",
      "flag": "PASS"
     }
    },
@@ -4897,7 +4811,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -4933,16 +4847,6 @@
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=201013&outFields=*&returnGeometry=false&f=html"
     },
     {
-     "id": "ind4451",
-     "name": "Martindale Public Fishing Area",
-     "type": "Indiana DNR properties",
-     "acres": 24.0,
-     "acres_from": "acres field",
-     "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
-     "link": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?objectIds=4451&outFields=*&returnGeometry=false&f=html",
-     "name_field": "unitname"
-    },
-    {
      "id": "sgina4451",
      "name": "Martindale Public Fishing Area",
      "type": "Indiana DNR (land, state GIS table)",
@@ -4955,7 +4859,6 @@
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201013",
-    "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#4451",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#4451"
    ],
    "tests": {
@@ -4997,7 +4900,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -5120,7 +5023,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -5220,7 +5123,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -5321,7 +5224,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -5541,7 +5444,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -5675,7 +5578,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -5721,26 +5624,6 @@
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=200876&outFields=*&returnGeometry=false&f=html"
     },
     {
-     "id": "ind5377",
-     "name": "Trail Creek Public Fishing Area",
-     "type": "Indiana DNR properties",
-     "acres": 33.0,
-     "acres_from": "acres field",
-     "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
-     "link": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?objectIds=5377&outFields=*&returnGeometry=false&f=html",
-     "name_field": "unitname"
-    },
-    {
-     "id": "ind5375",
-     "name": "Trail Creek Forks Public Fishing Area",
-     "type": "Indiana DNR properties",
-     "acres": 7.0,
-     "acres_from": "acres field",
-     "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
-     "link": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?objectIds=5375&outFields=*&returnGeometry=false&f=html",
-     "name_field": "unitname"
-    },
-    {
      "id": "sgina5377",
      "name": "Trail Creek Public Fishing Area",
      "type": "Indiana DNR (land, state GIS table)",
@@ -5764,8 +5647,6 @@
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201039",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#200876",
-    "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#5377",
-    "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#5375",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#5377",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#5375"
    ],
@@ -5808,7 +5689,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -5844,16 +5725,6 @@
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=201045&outFields=*&returnGeometry=false&f=html"
     },
     {
-     "id": "ind5593",
-     "name": "Williams Dam Public Fishing Area",
-     "type": "Indiana DNR properties",
-     "acres": 38.0,
-     "acres_from": "acres field",
-     "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
-     "link": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?objectIds=5593&outFields=*&returnGeometry=false&f=html",
-     "name_field": "unitname"
-    },
-    {
      "id": "sgina5593",
      "name": "Williams Dam Public Fishing Area",
      "type": "Indiana DNR (land, state GIS table)",
@@ -5866,7 +5737,6 @@
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201045",
-    "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#5593",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#5593"
    ],
    "tests": {
@@ -5908,7 +5778,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -5955,16 +5825,6 @@
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=200767&outFields=*&returnGeometry=false&f=html"
     },
     {
-     "id": "ind3056",
-     "name": "Big Chapman Lake",
-     "type": "Indiana DNR properties",
-     "acres": 145.0,
-     "acres_from": "acres field",
-     "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
-     "link": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?objectIds=3056&outFields=*&returnGeometry=false&f=html",
-     "name_field": "unitname"
-    },
-    {
      "id": "sgina3056",
      "name": "Big Chapman Lake",
      "type": "Indiana DNR (land, state GIS table)",
@@ -5998,7 +5858,6 @@
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#200766",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#200767",
-    "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#3056",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#3056",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_NaturePreserves/FeatureServer/0#3056",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_NaturePreserves/FeatureServer/0#3057"
@@ -6042,7 +5901,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -6087,26 +5946,6 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=200840&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "ind4367",
-     "name": "Little Chapman Lake",
-     "type": "Indiana DNR properties",
-     "acres": 94.0,
-     "acres_from": "acres field",
-     "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
-     "link": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?objectIds=4367&outFields=*&returnGeometry=false&f=html",
-     "name_field": "unitname"
-    },
-    {
-     "id": "ind4366",
-     "name": "Little Chapman Lake",
-     "type": "Indiana DNR properties",
-     "acres": 1.0,
-     "acres_from": "acres field",
-     "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
-     "link": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?objectIds=4366&outFields=*&returnGeometry=false&f=html",
-     "name_field": "unitname"
     },
     {
      "id": "sgina4367",
@@ -6154,8 +5993,6 @@
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#200840",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#4367",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#4366",
-    "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#4367",
-    "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#4366",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_NaturePreserves/FeatureServer/0#4367",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_NaturePreserves/FeatureServer/0#4368"
    ],
@@ -6198,7 +6035,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -6481,7 +6318,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -6907,7 +6744,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-11",
      "flag": "PASS"
     }
    },
@@ -7040,7 +6877,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-11",
      "flag": "PASS"
     }
    },
@@ -7228,7 +7065,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -7340,7 +7177,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -7880,16 +7717,6 @@
    "acres_drawn": 376.7,
    "records": [
     {
-     "id": "ind3804",
-     "name": "Goose Creek Gamebird Habitat Area",
-     "type": "Indiana DNR properties",
-     "acres": 376.0,
-     "acres_from": "acres field",
-     "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
-     "link": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?objectIds=3804&outFields=*&returnGeometry=false&f=html",
-     "name_field": "unitname"
-    },
-    {
      "id": "sgina3804",
      "name": "Goose Creek Gamebird Habitat Area",
      "type": "Indiana DNR (land, state GIS table)",
@@ -7901,7 +7728,6 @@
     }
    ],
    "record_ids": [
-    "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#3804",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#3804"
    ],
    "tests": {
@@ -7943,7 +7769,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -8032,7 +7858,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -8130,7 +7956,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-11",
      "flag": "PASS"
     }
    },
@@ -8158,16 +7984,6 @@
    "acres_drawn": 210.5,
    "records": [
     {
-     "id": "ind4890",
-     "name": "Province Pond Wetland Conservation Area",
-     "type": "Indiana DNR properties",
-     "acres": 210.0,
-     "acres_from": "acres field",
-     "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
-     "link": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?objectIds=4890&outFields=*&returnGeometry=false&f=html",
-     "name_field": "unitname"
-    },
-    {
      "id": "sgina4890",
      "name": "Province Pond Wetland Conservation Area",
      "type": "Indiana DNR (land, state GIS table)",
@@ -8179,7 +7995,6 @@
     }
    ],
    "record_ids": [
-    "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#4890",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#4890"
    ],
    "tests": {
@@ -8221,7 +8036,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -8322,7 +8137,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -8411,7 +8226,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -8488,7 +8303,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-11",
      "flag": "PASS"
     }
    },
@@ -8576,7 +8391,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-11",
      "flag": "PASS"
     }
    },
@@ -8612,16 +8427,6 @@
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=200998&outFields=*&returnGeometry=false&f=html"
     },
     {
-     "id": "ind3971",
-     "name": "Hindostan Falls Public Fishing Area",
-     "type": "Indiana DNR properties",
-     "acres": 119.0,
-     "acres_from": "acres field",
-     "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
-     "link": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?objectIds=3971&outFields=*&returnGeometry=false&f=html",
-     "name_field": "unitname"
-    },
-    {
      "id": "sgina3971",
      "name": "Hindostan Falls Public Fishing Area",
      "type": "Indiana DNR (land, state GIS table)",
@@ -8634,7 +8439,6 @@
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#200998",
-    "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#3971",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#3971"
    ],
    "tests": {
@@ -8676,7 +8480,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -8701,16 +8505,6 @@
    "acres_drawn": 9.1,
    "records": [
     {
-     "id": "ind5342",
-     "name": "Three Rivers Public Fishing Area",
-     "type": "Indiana DNR properties",
-     "acres": 9.0,
-     "acres_from": "acres field",
-     "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
-     "link": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?objectIds=5342&outFields=*&returnGeometry=false&f=html",
-     "name_field": "unitname"
-    },
-    {
      "id": "sgina5342",
      "name": "Three Rivers Public Fishing Area",
      "type": "Indiana DNR (land, state GIS table)",
@@ -8722,7 +8516,6 @@
     }
    ],
    "record_ids": [
-    "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#5342",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#5342"
    ],
    "tests": {
@@ -8764,7 +8557,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -8932,7 +8725,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -9073,7 +8866,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -9184,7 +8977,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -9336,7 +9129,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -9435,11 +9228,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 251.2,
-     "official_acres": 227.0,
-     "times": 1.11,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -9478,14 +9268,16 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 1,
-   "why": "SLIVERS: The shape has problems: 2 piece(s) under 10 m wide."
+   "why": "SOURCE DOWN: SLIVERS: The shape has problems: 2 piece(s) under 10 m wide."
   },
   {
    "ref": "US-2256",
@@ -9502,7 +9294,7 @@
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLandsAll_DNR_INHD_IN_SP/FeatureServer/0"
    ],
-   "acres_drawn": 1416.9,
+   "acres_drawn": 1389.8,
    "records": [
     {
      "id": "padus#201098",
@@ -9513,16 +9305,6 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=201098&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "padus#200789",
-     "name": "Fort Benjamin Harrison State Park Nature Preserve",
-     "type": "Nature Preserve State Conservation Area",
-     "category": "Fee",
-     "acres": 27.0,
-     "acres_from": "GIS_Acres",
-     "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
-     "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=200789&outFields=*&returnGeometry=false&f=html"
     },
     {
      "id": "padus#201099",
@@ -9623,11 +9405,20 @@
      "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
      "link": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?objectIds=3710&outFields=*&returnGeometry=false&f=html",
      "name_field": "unitname"
+    },
+    {
+     "id": "sgina3709",
+     "name": "Fort Harrison State Park",
+     "type": "Indiana DNR (land, state GIS table)",
+     "acres": 6.0,
+     "acres_from": "acres field",
+     "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
+     "link": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?objectIds=3709&outFields=*&returnGeometry=false&f=html",
+     "name_field": "unitname"
     }
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201098",
-    "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#200789",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#201099",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#3708",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#3711",
@@ -9652,9 +9443,9 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 1416.9,
+     "outline_acres": 1389.8,
      "official_acres": 1386.0,
-     "times": 1.02,
+     "times": 1.0,
      "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
     },
     "T3": {
@@ -9697,7 +9488,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -9864,7 +9655,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -10017,7 +9808,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -10213,7 +10004,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -10381,7 +10172,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -10482,7 +10273,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -10646,7 +10437,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -10779,7 +10570,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -10930,7 +10721,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -11053,7 +10844,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -11196,7 +10987,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -11340,7 +11131,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -11469,7 +11260,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -11665,7 +11456,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -11766,7 +11557,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -11929,7 +11720,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -11955,16 +11746,6 @@
    ],
    "acres_drawn": 2328.1,
    "records": [
-    {
-     "id": "ind5399",
-     "name": "Turkey Run State Park",
-     "type": "Indiana DNR properties",
-     "acres": 1423.0,
-     "acres_from": "acres field",
-     "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
-     "link": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?objectIds=5399&outFields=*&returnGeometry=false&f=html",
-     "name_field": "unitname"
-    },
     {
      "id": "sgina5399",
      "name": "Turkey Run State Park",
@@ -12017,7 +11798,6 @@
     }
    ],
    "record_ids": [
-    "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#5399",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#5399",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#5398",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLandsAll_DNR_INHD_IN_SP/FeatureServer/0#5399",
@@ -12081,7 +11861,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -12278,7 +12058,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -12530,7 +12310,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -12768,7 +12548,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-11",
      "flag": "PASS"
     }
    },
@@ -12968,7 +12748,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-11",
      "flag": "PASS"
     }
    },
@@ -13139,7 +12919,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -13332,7 +13112,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -13358,16 +13138,6 @@
    "acres_drawn": 3652.0,
    "records": [
     {
-     "id": "ind4061",
-     "name": "Interlake Off-Road State Recreation Area",
-     "type": "Indiana DNR properties",
-     "acres": 3649.0,
-     "acres_from": "acres field",
-     "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
-     "link": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?objectIds=4061&outFields=*&returnGeometry=false&f=html",
-     "name_field": "unitname"
-    },
-    {
      "id": "sgina4061",
      "name": "Interlake Off-Road State Recreation Area",
      "type": "Indiana DNR (land, state GIS table)",
@@ -13389,7 +13159,6 @@
     }
    ],
    "record_ids": [
-    "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#4061",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#4061",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLandsAll_DNR_INHD_IN_SP/FeatureServer/0#4061"
    ],
@@ -13432,7 +13201,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -14036,13 +13805,13 @@
     "T8": {
      "flag": "DUPLICATE",
      "parks": {
+      "US-4174": [
+       "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#4773"
+      ],
       "US-4173": [
        "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#4773"
       ],
       "US-4175": [
-       "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#4773"
-      ],
-      "US-4174": [
        "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#4773"
       ]
      },
@@ -14050,7 +13819,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-11",
      "flag": "PASS"
     }
    },
@@ -14154,13 +13923,13 @@
     "T8": {
      "flag": "DUPLICATE",
      "parks": {
-      "US-4175": [
-       "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#4773"
-      ],
       "US-4172": [
        "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#4773"
       ],
       "US-4174": [
+       "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#4773"
+      ],
+      "US-4175": [
        "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#4773"
       ]
      },
@@ -14168,7 +13937,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-11",
      "flag": "PASS"
     }
    },
@@ -14272,13 +14041,13 @@
     "T8": {
      "flag": "DUPLICATE",
      "parks": {
+      "US-4172": [
+       "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#4773"
+      ],
       "US-4173": [
        "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#4773"
       ],
       "US-4175": [
-       "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#4773"
-      ],
-      "US-4172": [
        "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#4773"
       ]
      },
@@ -14286,7 +14055,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-11",
      "flag": "PASS"
     }
    },
@@ -14390,13 +14159,13 @@
     "T8": {
      "flag": "DUPLICATE",
      "parks": {
-      "US-4173": [
-       "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#4773"
-      ],
       "US-4172": [
        "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#4773"
       ],
       "US-4174": [
+       "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#4773"
+      ],
+      "US-4173": [
        "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#4773"
       ]
      },
@@ -14404,7 +14173,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-11",
      "flag": "PASS"
     }
    },
@@ -14430,16 +14199,6 @@
    "acres_drawn": 1583.0,
    "records": [
     {
-     "id": "ind4926",
-     "name": "Redbird Off-Road State Recreation Area",
-     "type": "Indiana DNR properties",
-     "acres": 1582.0,
-     "acres_from": "acres field",
-     "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
-     "link": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?objectIds=4926&outFields=*&returnGeometry=false&f=html",
-     "name_field": "unitname"
-    },
-    {
      "id": "sgina4926",
      "name": "Redbird Off-Road State Recreation Area",
      "type": "Indiana DNR (land, state GIS table)",
@@ -14461,7 +14220,6 @@
     }
    ],
    "record_ids": [
-    "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#4926",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#4926",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLandsAll_DNR_INHD_IN_SP/FeatureServer/0#4926"
    ],
@@ -14504,7 +14262,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -14593,10 +14351,10 @@
     "T8": {
      "flag": "DUPLICATE",
      "parks": {
-      "US-4180": [
+      "US-4179": [
        "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#5037"
       ],
-      "US-4179": [
+      "US-4180": [
        "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#5037"
       ]
      },
@@ -14604,7 +14362,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-11",
      "flag": "PASS"
     }
    },
@@ -14682,7 +14440,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-11",
      "flag": "PASS"
     }
    },
@@ -14782,7 +14540,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-11",
      "flag": "PASS"
     }
    },
@@ -14882,7 +14640,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-11",
      "flag": "PASS"
     }
    },
@@ -15109,7 +14867,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-08",
      "flag": "PASS"
     }
    },
@@ -15208,7 +14966,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -15311,7 +15069,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -15412,7 +15170,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -15622,7 +15380,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-11",
      "flag": "PASS"
     }
    },
@@ -15712,16 +15470,6 @@
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=200781&outFields=*&returnGeometry=false&f=html"
     },
     {
-     "id": "ind3293",
-     "name": "Chamberlain Lake",
-     "type": "Indiana DNR properties",
-     "acres": 83.0,
-     "acres_from": "acres field",
-     "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
-     "link": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?objectIds=3293&outFields=*&returnGeometry=false&f=html",
-     "name_field": "unitname"
-    },
-    {
      "id": "sgina3293",
      "name": "Chamberlain Lake",
      "type": "Indiana DNR (land, state GIS table)",
@@ -15744,7 +15492,6 @@
    ],
    "record_ids": [
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#200781",
-    "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#3293",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#3293",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_NaturePreserves/FeatureServer/0#3293"
    ],
@@ -15787,7 +15534,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -15876,7 +15623,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -16055,7 +15802,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -16189,7 +15936,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -16281,7 +16028,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -16391,7 +16138,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-11",
      "flag": "PASS"
     }
    },
@@ -16676,7 +16423,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -16776,7 +16523,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -16865,7 +16612,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -16954,7 +16701,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -17045,7 +16792,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -17156,7 +16903,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -17353,7 +17100,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -17454,7 +17201,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -17542,7 +17289,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-11",
      "flag": "PASS"
     }
    },
@@ -17746,7 +17493,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -17889,7 +17636,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -18124,7 +17871,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -18258,7 +18005,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -18358,7 +18105,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -18457,7 +18204,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -18579,7 +18326,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -18733,7 +18480,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -18898,7 +18645,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -19021,7 +18768,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -19133,7 +18880,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -19258,13 +19005,13 @@
      "flag": "SPILL",
      "parks": [
       {
-       "ref": "US-10237",
-       "name": "Mongoquinong State Nature Preserve",
-       "share": 0.99
-      },
-      {
        "ref": "US-10238",
        "name": "Tamarack Bog State Nature Preserve",
+       "share": 0.98
+      },
+      {
+       "ref": "US-10237",
+       "name": "Mongoquinong State Nature Preserve",
        "share": 0.98
       }
      ],
@@ -19279,14 +19026,14 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
    "problems": [],
    "status": "graded",
    "score": 5,
-   "why": "SPILL: The outline covers 99% of US-10237 Mongoquinong State Nature Preserve, with no 2-fer row (maybe the wrong record) (+2 more flags)."
+   "why": "SPILL: The outline covers 98% of US-10238 Tamarack Bog State Nature Preserve, with no 2-fer row (maybe the wrong record) (+2 more flags)."
   },
   {
    "ref": "US-4219",
@@ -19368,7 +19115,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -19469,7 +19216,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -19558,7 +19305,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -19584,26 +19331,6 @@
    ],
    "acres_drawn": 457.4,
    "records": [
-    {
-     "id": "ind4867",
-     "name": "Portland Arch",
-     "type": "Indiana DNR properties",
-     "acres": 404.0,
-     "acres_from": "acres field",
-     "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
-     "link": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?objectIds=4867&outFields=*&returnGeometry=false&f=html",
-     "name_field": "unitname"
-    },
-    {
-     "id": "ind4866",
-     "name": "Portland Arch",
-     "type": "Indiana DNR properties",
-     "acres": 46.0,
-     "acres_from": "acres field",
-     "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
-     "link": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?objectIds=4866&outFields=*&returnGeometry=false&f=html",
-     "name_field": "unitname"
-    },
     {
      "id": "sgina4867",
      "name": "Portland Arch",
@@ -19668,8 +19395,6 @@
    "record_ids": [
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#4867",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#4866",
-    "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#4867",
-    "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#4866",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_NaturePreserves/FeatureServer/0#4867",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_NaturePreserves/FeatureServer/0#4866",
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#200817",
@@ -19714,7 +19439,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -19803,7 +19528,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -19828,16 +19553,6 @@
    "acres_drawn": 950.3,
    "records": [
     {
-     "id": "ind5039",
-     "name": "Salamonie River State Forest",
-     "type": "Indiana DNR properties",
-     "acres": 950.0,
-     "acres_from": "acres field",
-     "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
-     "link": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?objectIds=5039&outFields=*&returnGeometry=false&f=html",
-     "name_field": "unitname"
-    },
-    {
      "id": "sgina5039",
      "name": "Salamonie River State Forest",
      "type": "Indiana DNR (land, state GIS table)",
@@ -19849,7 +19564,6 @@
     }
    ],
    "record_ids": [
-    "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#5039",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#5039"
    ],
    "tests": {
@@ -19891,7 +19605,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -19980,7 +19694,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -20092,7 +19806,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -20181,7 +19895,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -20291,7 +20005,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -20399,7 +20113,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -20434,26 +20148,6 @@
      "acres_from": "GIS_Acres",
      "layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
      "link": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query?objectIds=200826&outFields=*&returnGeometry=false&f=html"
-    },
-    {
-     "id": "ind5410",
-     "name": "Twin Swamps",
-     "type": "Indiana DNR properties",
-     "acres": 595.0,
-     "acres_from": "acres field",
-     "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
-     "link": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?objectIds=5410&outFields=*&returnGeometry=false&f=html",
-     "name_field": "unitname"
-    },
-    {
-     "id": "ind5409",
-     "name": "Twin Swamps",
-     "type": "Indiana DNR properties",
-     "acres": 22.0,
-     "acres_from": "acres field",
-     "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
-     "link": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?objectIds=5409&outFields=*&returnGeometry=false&f=html",
-     "name_field": "unitname"
     },
     {
      "id": "sgina5410",
@@ -20500,8 +20194,6 @@
     "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0#200826",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#5410",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#5409",
-    "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#5410",
-    "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#5409",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_NaturePreserves/FeatureServer/0#5410",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_NaturePreserves/FeatureServer/0#5409"
    ],
@@ -20544,7 +20236,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -20665,7 +20357,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-11",
      "flag": "PASS"
     }
    },
@@ -20754,7 +20446,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -20872,7 +20564,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -20961,7 +20653,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -21091,7 +20783,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -21405,7 +21097,7 @@
    "name": "Little Turtle State Recreation Area",
    "key_name": "Little Turtle State Recreation Area",
    "type": "State Recreation Area",
-   "grade": "pin",
+   "grade": "official",
    "pin": [
     40.8348,
     -85.4414
@@ -21430,8 +21122,8 @@
      "note": "no record"
     },
     "T5": {
-     "flag": "NO OUTLINE",
-     "note": "no outline saved (pin only)"
+     "flag": "CAN'T TELL",
+     "note": "source down"
     },
     "T6": {
      "flag": "NO OUTLINE"
@@ -21445,13 +21137,15 @@
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "Nothing could be tested."
+   "why": "SOURCE DOWN: Nothing could be tested."
   },
   {
    "ref": "US-5682",
@@ -21488,11 +21182,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 155.6,
-     "official_acres": 155.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "MISMATCH",
@@ -21522,14 +21213,16 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-11",
      "flag": "PASS"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 6,
-   "why": "MISMATCH: The record name 'Monroe Lake' does not match POTA's name 'Moores Creek State Recreation Area' (score 0.00) (+1 more flag)."
+   "why": "SOURCE DOWN: MISMATCH: The record name 'Monroe Lake' does not match POTA's name 'Moores Creek State Recreation Area' (score 0.00) (+1 more flag)."
   },
   {
    "ref": "US-5683",
@@ -21619,11 +21312,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 289.8,
-     "official_acres": 290.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "MISMATCH",
@@ -21653,14 +21343,16 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-11",
      "flag": "PASS"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 6,
-   "why": "MISMATCH: The record name 'Monroe Lake' does not match POTA's name 'Allens Creek State Recreation Area' (score 0.00) (+1 more flag)."
+   "why": "SOURCE DOWN: MISMATCH: The record name 'Monroe Lake' does not match POTA's name 'Allens Creek State Recreation Area' (score 0.00) (+1 more flag)."
   },
   {
    "ref": "US-5685",
@@ -21737,7 +21429,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-11",
      "flag": "PASS"
     }
    },
@@ -21781,11 +21473,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 741.3,
-     "official_acres": 741.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "MISMATCH",
@@ -21815,14 +21504,16 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-11",
      "flag": "PASS"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 6,
-   "why": "MISMATCH: The record name 'Monroe Lake' does not match POTA's name 'Fairfax State Recreation Area' (score 0.00) (+1 more flag)."
+   "why": "SOURCE DOWN: MISMATCH: The record name 'Monroe Lake' does not match POTA's name 'Fairfax State Recreation Area' (score 0.00) (+1 more flag)."
   },
   {
    "ref": "US-5687",
@@ -21871,11 +21562,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 176.5,
-     "official_acres": 169.0,
-     "times": 1.04,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "PASS",
@@ -21909,14 +21597,16 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 3,
-   "why": "CONFLICT: The record is the whole lake but the park is a recreation area on it."
+   "why": "SOURCE DOWN: CONFLICT: The record is the whole lake but the park is a recreation area on it."
   },
   {
    "ref": "US-5688",
@@ -21953,11 +21643,8 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 313.0,
-     "official_acres": 313.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "MISMATCH",
@@ -21987,21 +21674,23 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-11",
      "flag": "PASS"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 6,
-   "why": "MISMATCH: The record name 'Monroe Lake' does not match POTA's name 'Salt Creek State Recreation Area' (score 0.00) (+1 more flag)."
+   "why": "SOURCE DOWN: MISMATCH: The record name 'Monroe Lake' does not match POTA's name 'Salt Creek State Recreation Area' (score 0.00) (+1 more flag)."
   },
   {
    "ref": "US-5689",
    "name": "Pine Grove State Recreation Area",
    "key_name": "Pine Grove State Recreation Area",
    "type": "State Recreation Area",
-   "grade": "pin",
+   "grade": "official",
    "pin": [
     39.1066,
     -86.4003
@@ -22026,8 +21715,8 @@
      "note": "no record"
     },
     "T5": {
-     "flag": "NO OUTLINE",
-     "note": "no outline saved (pin only)"
+     "flag": "CAN'T TELL",
+     "note": "source down"
     },
     "T6": {
      "flag": "NO OUTLINE"
@@ -22041,20 +21730,22 @@
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "Nothing could be tested."
+   "why": "SOURCE DOWN: Nothing could be tested."
   },
   {
    "ref": "US-5690",
    "name": "Crooked Creek State Recreation Area",
    "key_name": "Crooked Creek State Recreation Area",
    "type": "State Recreation Area",
-   "grade": "pin",
+   "grade": "official",
    "pin": [
     39.094,
     -86.3286
@@ -22079,8 +21770,8 @@
      "note": "no record"
     },
     "T5": {
-     "flag": "NO OUTLINE",
-     "note": "no outline saved (pin only)"
+     "flag": "CAN'T TELL",
+     "note": "source down"
     },
     "T6": {
      "flag": "NO OUTLINE"
@@ -22094,13 +21785,15 @@
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "Nothing could be tested."
+   "why": "SOURCE DOWN: Nothing could be tested."
   },
   {
    "ref": "US-5691",
@@ -22193,7 +21886,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -22346,7 +22039,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -23234,7 +22927,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-11",
      "flag": "PASS"
     }
    },
@@ -23259,16 +22952,6 @@
    "acres_drawn": 1369.9,
    "records": [
     {
-     "id": "ind4917",
-     "name": "Ravinia State Forest",
-     "type": "Indiana DNR properties",
-     "acres": 1369.0,
-     "acres_from": "acres field",
-     "layer": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
-     "link": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?objectIds=4917&outFields=*&returnGeometry=false&f=html",
-     "name_field": "unitname"
-    },
-    {
      "id": "sgina4917",
      "name": "Ravinia State Forest",
      "type": "Indiana DNR (land, state GIS table)",
@@ -23280,7 +22963,6 @@
     }
    ],
    "record_ids": [
-    "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#4917",
     "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0#4917"
    ],
    "tests": {
@@ -23322,7 +23004,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -23422,7 +23104,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-11",
      "flag": "PASS"
     }
    },
@@ -23527,7 +23209,7 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-03",
      "flag": "PASS"
     }
    },
@@ -23571,11 +23253,8 @@
      "metres": 50.7
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 203.6,
-     "official_acres": 203.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "CAN'T TELL",
+     "note": "a source was down: only part of the park could be read"
     },
     "T3": {
      "flag": "MISMATCH",
@@ -23605,21 +23284,23 @@
     },
     "T9": {
      "last_edit": "2026-06-16",
-     "read": "2026-11-05",
+     "read": "2026-11-11",
      "flag": "PASS"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 7,
-   "why": "MISMATCH: The record name 'Mississinewa Lake' does not match POTA's name 'Red Bridge State Recreation Area' (score 0.00) (+2 more flags)."
+   "why": "SOURCE DOWN: MISMATCH: The record name 'Mississinewa Lake' does not match POTA's name 'Red Bridge State Recreation Area' (score 0.00) (+2 more flags)."
   },
   {
    "ref": "US-7843",
    "name": "Pearson Mill State Recreation Area",
    "key_name": "Pearson Mill State Recreation Area",
    "type": "State Recreation Area",
-   "grade": "pin",
+   "grade": "official",
    "pin": [
     40.6697,
     -85.8489
@@ -23644,8 +23325,8 @@
      "note": "no record"
     },
     "T5": {
-     "flag": "NO OUTLINE",
-     "note": "no outline saved (pin only)"
+     "flag": "CAN'T TELL",
+     "note": "source down"
     },
     "T6": {
      "flag": "NO OUTLINE"
@@ -23659,13 +23340,15 @@
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
-   "status": "graded",
+   "problems": [
+    "SOURCE DOWN: refused, no request made: services7.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)"
+   ],
+   "status": "SOURCE DOWN: retry next run",
    "score": 0,
-   "why": "Nothing could be tested."
+   "why": "SOURCE DOWN: Nothing could be tested."
   }
  ]
 }
