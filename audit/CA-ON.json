@@ -1,6 +1,6 @@
 {
  "area": "CA-ON",
- "built": "2026-11-08",
+ "built": "2026-11-15",
  "tool": "KPC-map-audit",
  "rules": "2026-11-02c",
  "parks": [
@@ -130,6 +130,12 @@
      "layer": "Ontario fede"
     },
     {
+     "id": "Parks Canada:4",
+     "name": "Bruce Peninsula National Park of Canada",
+     "acres": 36692,
+     "layer": "Parks Canada"
+    },
+    {
      "id": "21985",
      "name": "Bruce Peninsula National Park Of Canada",
      "acres": 30938,
@@ -138,6 +144,7 @@
    ],
    "record_ids": [
     "Ontario fede:12",
+    "Parks Canada:4",
     "cpcad#21985"
    ],
    "tests": {
@@ -146,17 +153,17 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
+     "flag": "OFF",
      "outline_acres": 39301.2,
-     "official_acres": 41297.0,
-     "times": 1.05,
+     "official_acres": 77989.0,
+     "times": 1.98,
      "official_from": "the key's record acres (CPCAD / provincial lists)"
     },
     "T3": {
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "Bruce Peninsula National Park",
-     "record_name": "Bruce Peninsula National Park Of Canada"
+     "record_name": "Bruce Peninsula National Park of Canada"
     },
     "T4": {
      "park_kind": "national park",
@@ -206,8 +213,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "SPILL: The outline covers 100% of CA-0273 Little Cove Provincial Park, with no 2-fer row (maybe the wrong record)."
+   "score": 4,
+   "why": "SPILL: The outline covers 100% of CA-0273 Little Cove Provincial Park, with no 2-fer row (maybe the wrong record) (+1 more flag)."
   },
   {
    "ref": "CA-0021",
@@ -238,6 +245,12 @@
      "layer": "CPCAD"
     },
     {
+     "id": "Parks Canada:7",
+     "name": "Fathom Five National Marine Park of Canada",
+     "acres": 27854,
+     "layer": "Parks Canada"
+    },
+    {
      "id": "Ontario fede:2",
      "name": "Fathom Five National Marine Park",
      "acres": 24177,
@@ -246,6 +259,7 @@
    ],
    "record_ids": [
     "cpcad#21988",
+    "Parks Canada:7",
     "Ontario fede:2"
    ],
    "tests": {
@@ -254,17 +268,17 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
+     "flag": "OFF",
      "outline_acres": 29045.9,
-     "official_acres": 28046.0,
-     "times": 1.04,
+     "official_acres": 52031.0,
+     "times": 1.79,
      "official_from": "the key's record acres (CPCAD / provincial lists)"
     },
     "T3": {
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "Fathom Five National Park",
-     "record_name": "Fathom Five National Marine Park Of Canada"
+     "record_name": "Fathom Five National Marine Park of Canada"
     },
     "T4": {
      "park_kind": "national park",
@@ -296,32 +310,23 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 0,
-   "why": "All tests pass."
+   "score": 1,
+   "why": "OFF: The outline is 1.8 times smaller than the official 52,031 acres (29,046 ac drawn)."
   },
   {
    "ref": "CA-0023",
    "name": "Frontenac Arch Biosphere Reserve",
    "key_name": "Frontenac Arch Biosphere Reserve",
    "type": "Biosphere Reserve",
-   "grade": "official",
+   "grade": "pin",
    "pin": [
     44.3333,
     -76.1667
    ],
    "outline_from": [],
    "acres_drawn": null,
-   "records": [
-    {
-     "id": "Hard look~5:1",
-     "name": "Frontenac Arch Biosphere Reserve",
-     "acres": 627876,
-     "layer": "Hard look~5"
-    }
-   ],
-   "record_ids": [
-    "Hard look~5:1"
-   ],
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
      "flag": "NO OUTLINE"
@@ -330,19 +335,16 @@
      "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Frontenac Arch Biosphere Reserve",
-     "record_name": "Frontenac Arch Biosphere Reserve"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": null,
-     "record_kind": null,
-     "flag": "CAN'T TELL"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "CAN'T TELL",
-     "note": "the park's records could not be read (see problems)"
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
     },
     "T6": {
      "flag": "NO OUTLINE"
@@ -351,19 +353,18 @@
      "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
      "flag": "CAN'T TELL",
      "note": "a saved club copy: the source's last-edit date is not recorded with it"
     }
    },
-   "problems": [
-    "CAN'T TELL: 1 record(s) on provincial lists this tool can't read live (Hard look~5)"
-   ],
+   "problems": [],
    "status": "graded",
    "score": 0,
-   "why": "All tests pass."
+   "why": "Nothing could be tested."
   },
   {
    "ref": "CA-0026",
@@ -398,11 +399,18 @@
      "name": "Georgian Bay Islands National Park Of Canada",
      "acres": 3459,
      "layer": "CPCAD"
+    },
+    {
+     "id": "Parks Canada:10",
+     "name": "Georgian Bay Islands National Park of Canada",
+     "acres": 3320,
+     "layer": "Parks Canada"
     }
    ],
    "record_ids": [
     "Ontario fede:10",
-    "cpcad#21992"
+    "cpcad#21992",
+    "Parks Canada:10"
    ],
    "tests": {
     "T1": {
@@ -410,10 +418,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
+     "flag": "OFF",
      "outline_acres": 3202.8,
-     "official_acres": 4244.0,
-     "times": 1.33,
+     "official_acres": 7564.0,
+     "times": 2.36,
      "official_from": "the key's record acres (CPCAD / provincial lists)"
     },
     "T3": {
@@ -470,8 +478,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 4,
-   "why": "SPILL: The outline covers 100% of CA-0027 Georgian Bay Littoral Biosphere Reserve, with no 2-fer row (maybe the wrong record) (+1 more flag)."
+   "score": 5,
+   "why": "SPILL: The outline covers 100% of CA-0027 Georgian Bay Littoral Biosphere Reserve, with no 2-fer row (maybe the wrong record) (+2 more flags)."
   },
   {
    "ref": "CA-0027",
@@ -585,9 +593,15 @@
      "layer": "canada-bounds/CA-0050.json"
     },
     {
+     "id": "Parks Canada:22",
+     "name": "Lake Superior National Marine Conservation Area",
+     "type": "National Marine Conservation Area",
+     "acres": 2892100,
+     "layer": "Parks Canada"
+    },
+    {
      "id": "22016",
      "name": "Lake Superior National Marine Conservation Area Of Canada",
-     "type": "National Marine Conservation Area",
      "acres": 2688502,
      "layer": "CPCAD"
     },
@@ -599,6 +613,7 @@
     }
    ],
    "record_ids": [
+    "Parks Canada:22",
     "cpcad#22016",
     "Ontario fede:4161"
    ],
@@ -608,10 +623,10 @@
      "metres": 565.9
     },
     "T2": {
-     "flag": "PASS",
+     "flag": "OFF",
      "outline_acres": 2811724.8,
-     "official_acres": 2688502.0,
-     "times": 1.05,
+     "official_acres": 5554695.0,
+     "times": 1.98,
      "official_from": "the key's record acres (CPCAD / provincial lists)"
     },
     "T3": {
@@ -688,8 +703,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 8,
-   "why": "OUTSIDE: POTA's pin is 566 m outside the outline (+3 more flags)."
+   "score": 9,
+   "why": "OUTSIDE: POTA's pin is 566 m outside the outline (+4 more flags)."
   },
   {
    "ref": "CA-0052",
@@ -1197,6 +1212,12 @@
      "layer": "CPCAD"
     },
     {
+     "id": "Parks Canada:26",
+     "name": "Point Pelee National Park of Canada",
+     "acres": 3704,
+     "layer": "Parks Canada"
+    },
+    {
      "id": "Ontario fede:3569",
      "name": "Point Pelee National Park of Canada",
      "acres": 25,
@@ -1206,6 +1227,7 @@
    "record_ids": [
     "Ontario fede:3553",
     "cpcad#22026",
+    "Parks Canada:26",
     "Ontario fede:3569"
    ],
    "tests": {
@@ -1214,10 +1236,10 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
+     "flag": "OFF",
      "outline_acres": 3746.3,
-     "official_acres": 4485.0,
-     "times": 1.2,
+     "official_acres": 8189.0,
+     "times": 2.19,
      "official_from": "the key's record acres (CPCAD / provincial lists)"
     },
     "T3": {
@@ -1256,8 +1278,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 0,
-   "why": "All tests pass."
+   "score": 1,
+   "why": "OFF: The outline is 2.2 times smaller than the official 8,189 acres (3,746 ac drawn)."
   },
   {
    "ref": "CA-0077",
@@ -1413,11 +1435,18 @@
      "name": "Pukaskwa National Park",
      "acres": 460011,
      "layer": "Ontario fede"
+    },
+    {
+     "id": "Parks Canada:28",
+     "name": "Pukaskwa National Park of Canada",
+     "acres": 453459,
+     "layer": "Parks Canada"
     }
    ],
    "record_ids": [
     "cpcad#22029",
-    "Ontario fede:3201"
+    "Ontario fede:3201",
+    "Parks Canada:28"
    ],
    "tests": {
     "T1": {
@@ -1425,17 +1454,17 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
+     "flag": "OFF",
      "outline_acres": 460969.5,
-     "official_acres": 464014.0,
-     "times": 1.01,
+     "official_acres": 913470.0,
+     "times": 1.98,
      "official_from": "the key's record acres (CPCAD / provincial lists)"
     },
     "T3": {
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "Pukaskwa National Park",
-     "record_name": "Pukaskwa National Park Of Canada"
+     "record_name": "Pukaskwa National Park of Canada"
     },
     "T4": {
      "park_kind": "national park",
@@ -1479,8 +1508,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 4,
-   "why": "SLIVERS: The shape has problems: 18 piece(s) under 10 m wide; 4 hole(s) under 100 m2; 121 pieces spread over 90 km (+3 more flags)."
+   "score": 5,
+   "why": "OFF: The outline is 2.0 times smaller than the official 913,470 acres (460,970 ac drawn) (+4 more flags)."
   },
   {
    "ref": "CA-0094",
@@ -1615,6 +1644,12 @@
      "layer": "CPCAD"
     },
     {
+     "id": "Parks Canada:35",
+     "name": "Thousand Islands National Park of Canada",
+     "acres": 5629,
+     "layer": "Parks Canada"
+    },
+    {
      "id": "Ontario fede:2881",
      "name": "Thousand Islands National Park of Canada",
      "acres": 1352,
@@ -1623,6 +1658,7 @@
    ],
    "record_ids": [
     "cpcad#22041",
+    "Parks Canada:35",
     "Ontario fede:2881"
    ],
    "tests": {
@@ -1633,8 +1669,8 @@
     "T2": {
      "flag": "PASS",
      "outline_acres": 6305.1,
-     "official_acres": 5842.0,
-     "times": 1.08,
+     "official_acres": 6981.0,
+     "times": 1.11,
      "official_from": "the key's record acres (CPCAD / provincial lists)"
     },
     "T3": {
@@ -8856,7 +8892,7 @@
    "name": "Fawn River Provincial Park",
    "key_name": "Fawn River Provincial Park",
    "type": "Provincial Park",
-   "grade": "official",
+   "grade": "pin",
    "pin": [
     53.8433,
     -90.0938
@@ -8871,36 +8907,17 @@
      "name": "Fawn River Provincial Park",
      "type": "Provincial Park",
      "layer": "canada-bounds/CA-0208.json"
-    },
-    {
-     "id": "Ontario Park:38289",
-     "name": "FAWN RIVER PROVINCIAL PARK",
-     "type": "Provincial Park",
-     "acres": 31808,
-     "layer": "Ontario Park"
-    },
-    {
-     "id": "16342",
-     "name": "Fawn River Provincial Park",
-     "acres": 29984,
-     "layer": "CPCAD"
     }
    ],
-   "record_ids": [
-    "Ontario Park:38289",
-    "cpcad#16342"
-   ],
+   "record_ids": [],
    "tests": {
     "T1": {
      "flag": "FAR",
      "metres": 17404.4
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 29424.9,
-     "official_acres": 31808.0,
-     "times": 1.08,
-     "official_from": "the key's record acres (CPCAD / provincial lists)"
+     "flag": "NO FIGURE",
+     "outline_acres": 29424.9
     },
     "T3": {
      "flag": "PASS",
@@ -8929,7 +8946,8 @@
      "note": "between 3 and 5 m: allowed, but over the 3 m aim"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
      "flag": "CAN'T TELL",
@@ -36097,7 +36115,7 @@
    "name": "Cache Bay Wetland Conservation Reserve",
    "key_name": "Cache Bay Wetland Conservation Reserve",
    "type": "Conservation Reserve",
-   "grade": "official",
+   "grade": "pin",
    "pin": [
     46.3302,
     -80.3736
@@ -36112,36 +36130,17 @@
      "name": "Cache Bay Wetland Conservation Reserve",
      "type": "Conservation Reserve",
      "layer": "canada-bounds/CA-1336.json"
-    },
-    {
-     "id": "15878",
-     "name": "Cache Bay Wetland Conservation Reserve",
-     "type": "Conservation Reserve",
-     "acres": 9701,
-     "layer": "CPCAD"
-    },
-    {
-     "id": "Ontario cons:10721",
-     "name": "CACHE BAY WETLAND CONSERVATION RESERVE",
-     "acres": 8529,
-     "layer": "Ontario cons"
     }
    ],
-   "record_ids": [
-    "cpcad#15878",
-    "Ontario cons:10721"
-   ],
+   "record_ids": [],
    "tests": {
     "T1": {
      "flag": "FAR",
      "metres": 24873.5
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 9839.8,
-     "official_acres": 9701.0,
-     "times": 1.01,
-     "official_from": "the key's record acres (CPCAD / provincial lists)"
+     "flag": "NO FIGURE",
+     "outline_acres": 9839.8
     },
     "T3": {
      "flag": "PASS",
@@ -36170,7 +36169,8 @@
      "note": "between 3 and 5 m: allowed, but over the 3 m aim"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
      "flag": "CAN'T TELL",
@@ -70434,21 +70434,32 @@
     -75.7006
    ],
    "outline_from": [
-    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+    "canada-bounds/CA-4882.json"
    ],
-   "acres_drawn": 49872.1,
+   "acres_drawn": 50689.2,
    "records": [
     {
-     "id": "cpcad#22063",
-     "name": "Rideau Canal National Historic Site",
+     "id": "canada-bounds",
+     "name": "Rideau Canal National Historic Site of Canada",
      "type": "National Historic Site",
-     "acres": 49351.9,
-     "acres_from": "O_AREA_HA",
-     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
-     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22063&outFields=*&returnGeometry=false&f=html"
+     "layer": "canada-bounds/CA-4882.json"
+    },
+    {
+     "id": "Parks Canada:30",
+     "name": "Rideau Canal National Historic Site of Canada",
+     "type": "National Historic Site",
+     "acres": 56766,
+     "layer": "Parks Canada"
+    },
+    {
+     "id": "22063",
+     "name": "Rideau Canal National Historic Site",
+     "acres": 49352,
+     "layer": "CPCAD"
     }
    ],
    "record_ids": [
+    "Parks Canada:30",
     "cpcad#22063"
    ],
    "tests": {
@@ -70458,16 +70469,16 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 49872.1,
-     "official_acres": 49351.9,
-     "times": 1.01,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "outline_acres": 50689.2,
+     "official_acres": 56766.0,
+     "times": 1.12,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
     },
     "T3": {
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "Rideau Canal National Historic Site",
-     "record_name": "Rideau Canal National Historic Site"
+     "record_name": "Rideau Canal National Historic Site of Canada"
     },
     "T4": {
      "park_kind": "canal",
@@ -70475,17 +70486,18 @@
      "flag": "PASS"
     },
     "T5": {
-     "flag": "SLIVERS",
-     "pieces": 41,
+     "flag": "SELF-INTERSECTION",
+     "pieces": 10,
      "flags": [
+      "SELF-INTERSECTION",
       "SLIVERS",
       "TINY HOLES"
      ],
-     "note": "7 piece(s) under 10 m wide; 401 hole(s) under 100 m2",
+     "note": "Self-intersection[-75.6963362992126 45.3233768503937]; 7 piece(s) under 10 m wide; 36 hole(s) under 100 m2",
      "repair": {
       "ok": true,
-      "area_change_pct": 0.003,
-      "holes": 401,
+      "area_change_pct": 0.0,
+      "holes": 36,
       "pieces": 7
      }
     },
@@ -70493,41 +70505,37 @@
      "flag": "SPILL",
      "parks": [
       {
-       "ref": "CA-1385",
-       "name": "Chapman Mills Conservation Area",
-       "share": 0.47
+       "ref": "CA-6199",
+       "name": "Smiths Falls Bascule Bridge National Historic Site",
+       "share": 0.33
       },
       {
        "ref": "CA-0364",
        "name": "Rideau Migratory Bird Sanctuary",
        "share": 0.33
-      },
-      {
-       "ref": "CA-6199",
-       "name": "Smiths Falls Bascule Bridge National Historic Site",
-       "share": 0.31
       }
      ],
-     "count": 3
+     "count": 2
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "detail_m": 0.79,
+     "declared_m": null,
+     "coordinate_step_m": 0.79,
+     "median_spacing_m": 55.5,
+     "flag": "PASS"
     },
     "T8": {
      "flag": "PASS"
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
     }
    },
-   "problems": [
-    "record 22063: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
-   ],
+   "problems": [],
    "status": "graded",
-   "score": 5,
-   "why": "SPILL: The outline covers 47% of CA-1385 Chapman Mills Conservation Area, with no 2-fer row (maybe the wrong record) (+2 more flags)."
+   "score": 6,
+   "why": "SPILL: The outline covers 33% of CA-6199 Smiths Falls Bascule Bridge National Historic Site, with no 2-fer row (maybe the wrong record) (+3 more flags)."
   },
   {
    "ref": "CA-4883",
@@ -70895,43 +70903,92 @@
    "name": "Trent - Severn Waterway National Historic Site",
    "key_name": "Trent - Severn Waterway National Historic Site",
    "type": "National Historic Site",
-   "grade": "pin",
+   "grade": "official",
    "pin": [
     44.2991,
     -78.305
    ],
-   "outline_from": [],
-   "acres_drawn": null,
-   "records": [],
-   "record_ids": [],
+   "outline_from": [
+    "canada-bounds/CA-4889.json"
+   ],
+   "acres_drawn": 115395.5,
+   "records": [
+    {
+     "id": "canada-bounds",
+     "name": "Trent-Severn Waterway National Historic Site of Canada",
+     "type": "National Historic Site",
+     "layer": "canada-bounds/CA-4889.json"
+    },
+    {
+     "id": "Parks Canada:37",
+     "name": "Trent-Severn Waterway National Historic Site of Canada",
+     "type": "National Historic Site",
+     "acres": 160701,
+     "layer": "Parks Canada"
+    }
+   ],
+   "record_ids": [
+    "Parks Canada:37"
+   ],
    "tests": {
     "T1": {
-     "flag": "NO OUTLINE"
+     "flag": "PASS",
+     "metres": 0
     },
     "T2": {
-     "flag": "NO OUTLINE"
+     "flag": "PASS",
+     "outline_acres": 115395.5,
+     "official_acres": 160701.0,
+     "times": 1.39,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
     },
     "T3": {
-     "flag": "CAN'T TELL",
-     "note": "no record name"
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Trent - Severn Waterway National Historic Site",
+     "record_name": "Trent-Severn Waterway National Historic Site of Canada"
     },
     "T4": {
-     "flag": "CAN'T TELL",
-     "note": "no record"
+     "park_kind": null,
+     "record_kind": null,
+     "flag": "CAN'T TELL"
     },
     "T5": {
-     "flag": "NO OUTLINE",
-     "note": "no outline saved (pin only)"
+     "flag": "SELF-INTERSECTION",
+     "pieces": 13,
+     "flags": [
+      "SELF-INTERSECTION",
+      "SLIVERS",
+      "TINY HOLES"
+     ],
+     "note": "Self-intersection[-77.5819248 44.151699]; 8 piece(s) under 10 m wide; 16 hole(s) under 100 m2",
+     "repair": {
+      "ok": true,
+      "area_change_pct": 0.0,
+      "holes": 16,
+      "pieces": 8
+     }
     },
     "T6": {
-     "flag": "NO OUTLINE"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-0442",
+       "name": "Wolf Island Provincial Park",
+       "share": 0.45
+      }
+     ],
+     "count": 1
     },
     "T7": {
-     "flag": "NO OUTLINE"
+     "detail_m": 0.8,
+     "declared_m": null,
+     "coordinate_step_m": 0.8,
+     "median_spacing_m": 57.2,
+     "flag": "PASS"
     },
     "T8": {
-     "flag": "CAN'T TELL",
-     "note": "no record id"
+     "flag": "PASS"
     },
     "T9": {
      "flag": "CAN'T TELL",
@@ -70940,8 +70997,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 0,
-   "why": "Nothing could be tested."
+   "score": 6,
+   "why": "SPILL: The outline covers 45% of CA-0442 Wolf Island Provincial Park, with no 2-fer row (maybe the wrong record) (+3 more flags)."
   },
   {
    "ref": "CA-4890",
@@ -73229,24 +73286,15 @@
    "name": "Pier 4 Park",
    "key_name": "Pier 4 Park",
    "type": "Park",
-   "grade": "official",
+   "grade": "pin",
    "pin": [
     43.2729,
     -79.866
    ],
    "outline_from": [],
    "acres_drawn": null,
-   "records": [
-    {
-     "id": "Hard look~10:567",
-     "name": "Pier 4 Park",
-     "acres": 8,
-     "layer": "Hard look~10"
-    }
-   ],
-   "record_ids": [
-    "Hard look~10:567"
-   ],
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
      "flag": "NO OUTLINE"
@@ -73255,19 +73303,16 @@
      "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Pier 4 Park",
-     "record_name": "Pier 4 Park"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": null,
-     "record_kind": null,
-     "flag": "CAN'T TELL"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "CAN'T TELL",
-     "note": "the park's records could not be read (see problems)"
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
     },
     "T6": {
      "flag": "NO OUTLINE"
@@ -73276,19 +73321,18 @@
      "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
      "flag": "CAN'T TELL",
      "note": "a saved club copy: the source's last-edit date is not recorded with it"
     }
    },
-   "problems": [
-    "CAN'T TELL: 1 record(s) on provincial lists this tool can't read live (Hard look~10)"
-   ],
+   "problems": [],
    "status": "graded",
    "score": 0,
-   "why": "All tests pass."
+   "why": "Nothing could be tested."
   },
   {
    "ref": "CA-5115",
@@ -74179,24 +74223,15 @@
    "name": "Bell Homestead National Historic Site",
    "key_name": "Bell Homestead National Historic Site",
    "type": "National Historic Site",
-   "grade": "official",
+   "grade": "pin",
    "pin": [
     43.1076,
     -80.2707
    ],
    "outline_from": [],
    "acres_drawn": null,
-   "records": [
-    {
-     "id": "Hard look~11:111",
-     "name": "Bell Homestead Historic Site",
-     "acres": 9,
-     "layer": "Hard look~11"
-    }
-   ],
-   "record_ids": [
-    "Hard look~11:111"
-   ],
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
      "flag": "NO OUTLINE"
@@ -74205,19 +74240,16 @@
      "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Bell Homestead National Historic Site",
-     "record_name": "Bell Homestead Historic Site"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": null,
-     "record_kind": null,
-     "flag": "CAN'T TELL"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "CAN'T TELL",
-     "note": "the park's records could not be read (see problems)"
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
     },
     "T6": {
      "flag": "NO OUTLINE"
@@ -74226,19 +74258,18 @@
      "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
      "flag": "CAN'T TELL",
      "note": "a saved club copy: the source's last-edit date is not recorded with it"
     }
    },
-   "problems": [
-    "CAN'T TELL: 1 record(s) on provincial lists this tool can't read live (Hard look~11)"
-   ],
+   "problems": [],
    "status": "graded",
    "score": 0,
-   "why": "All tests pass."
+   "why": "Nothing could be tested."
   },
   {
    "ref": "CA-5298",
@@ -77758,24 +77789,15 @@
    "name": "Mackenzie Glen District Park Recreation Park",
    "key_name": "Mackenzie Glen District Park Recreation Park",
    "type": "Recreation Park",
-   "grade": "official",
+   "grade": "pin",
    "pin": [
     43.8632,
     -79.5282
    ],
    "outline_from": [],
    "acres_drawn": null,
-   "records": [
-    {
-     "id": "Hard look~13:639",
-     "name": "Mackenzie Glen District Park",
-     "acres": 21,
-     "layer": "Hard look~13"
-    }
-   ],
-   "record_ids": [
-    "Hard look~13:639"
-   ],
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
      "flag": "NO OUTLINE"
@@ -77784,19 +77806,16 @@
      "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Mackenzie Glen District Park Recreation Park",
-     "record_name": "Mackenzie Glen District Park"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": null,
-     "record_kind": null,
-     "flag": "CAN'T TELL"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "CAN'T TELL",
-     "note": "the park's records could not be read (see problems)"
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
     },
     "T6": {
      "flag": "NO OUTLINE"
@@ -77805,19 +77824,18 @@
      "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
      "flag": "CAN'T TELL",
      "note": "a saved club copy: the source's last-edit date is not recorded with it"
     }
    },
-   "problems": [
-    "CAN'T TELL: 1 record(s) on provincial lists this tool can't read live (Hard look~13)"
-   ],
+   "problems": [],
    "status": "graded",
    "score": 0,
-   "why": "All tests pass."
+   "why": "Nothing could be tested."
   },
   {
    "ref": "CA-5535",
@@ -88352,24 +88370,15 @@
    "name": "Cooper Marsh Conservation Area",
    "key_name": "Cooper Marsh Conservation Area",
    "type": "Conservation Area",
-   "grade": "official",
+   "grade": "pin",
    "pin": [
     45.1166,
     -74.518
    ],
    "outline_from": [],
    "acres_drawn": null,
-   "records": [
-    {
-     "id": "Hard look~15:602",
-     "name": "Cooper Marsh",
-     "acres": 645,
-     "layer": "Hard look~15"
-    }
-   ],
-   "record_ids": [
-    "Hard look~15:602"
-   ],
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
      "flag": "NO OUTLINE"
@@ -88378,19 +88387,16 @@
      "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Cooper Marsh Conservation Area",
-     "record_name": "Cooper Marsh"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": null,
-     "record_kind": null,
-     "flag": "CAN'T TELL"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "CAN'T TELL",
-     "note": "the park's records could not be read (see problems)"
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
     },
     "T6": {
      "flag": "NO OUTLINE"
@@ -88399,19 +88405,18 @@
      "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
      "flag": "CAN'T TELL",
      "note": "a saved club copy: the source's last-edit date is not recorded with it"
     }
    },
-   "problems": [
-    "CAN'T TELL: 1 record(s) on provincial lists this tool can't read live (Hard look~15)"
-   ],
+   "problems": [],
    "status": "graded",
    "score": 0,
-   "why": "All tests pass."
+   "why": "Nothing could be tested."
   },
   {
    "ref": "CA-5947",
@@ -93019,14 +93024,14 @@
    "acres_drawn": null,
    "records": [
     {
-     "id": "Hard look~16:202385",
+     "id": "Hard look~16:203646",
      "name": "Fingal Wildlife Management Area",
      "acres": 369,
      "layer": "Hard look~16"
     }
    ],
    "record_ids": [
-    "Hard look~16:202385"
+    "Hard look~16:203646"
    ],
    "tests": {
     "T1": {
@@ -93318,24 +93323,15 @@
    "name": "Vincent Massey Conservation Park",
    "key_name": "Vincent Massey Conservation Park",
    "type": "Conservation Park",
-   "grade": "official",
+   "grade": "pin",
    "pin": [
     45.3779,
     -75.6947
    ],
    "outline_from": [],
    "acres_drawn": null,
-   "records": [
-    {
-     "id": "Hard look~7:2",
-     "name": "Vincent Massey Park",
-     "acres": 31,
-     "layer": "Hard look~7"
-    }
-   ],
-   "record_ids": [
-    "Hard look~7:2"
-   ],
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
      "flag": "NO OUTLINE"
@@ -93344,19 +93340,16 @@
      "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Vincent Massey Conservation Park",
-     "record_name": "Vincent Massey Park"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": null,
-     "record_kind": null,
-     "flag": "CAN'T TELL"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "CAN'T TELL",
-     "note": "the park's records could not be read (see problems)"
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
     },
     "T6": {
      "flag": "NO OUTLINE"
@@ -93365,19 +93358,18 @@
      "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
      "flag": "CAN'T TELL",
      "note": "a saved club copy: the source's last-edit date is not recorded with it"
     }
    },
-   "problems": [
-    "CAN'T TELL: 1 record(s) on provincial lists this tool can't read live (Hard look~7)"
-   ],
+   "problems": [],
    "status": "graded",
    "score": 0,
-   "why": "All tests pass."
+   "why": "Nothing could be tested."
   },
   {
    "ref": "CA-6208",
@@ -93962,24 +93954,15 @@
    "name": "Major's Hill National Park",
    "key_name": "Major's Hill National Park",
    "type": "National Park",
-   "grade": "official",
+   "grade": "pin",
    "pin": [
     45.4284,
     -75.6986
    ],
    "outline_from": [],
    "acres_drawn": null,
-   "records": [
-    {
-     "id": "Hard look~7:10",
-     "name": "Major's Hill Park",
-     "acres": 6,
-     "layer": "Hard look~7"
-    }
-   ],
-   "record_ids": [
-    "Hard look~7:10"
-   ],
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
      "flag": "NO OUTLINE"
@@ -93988,19 +93971,16 @@
      "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Major's Hill National Park",
-     "record_name": "Major's Hill Park"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": "national park",
-     "record_kind": null,
-     "flag": "CAN'T TELL"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "CAN'T TELL",
-     "note": "the park's records could not be read (see problems)"
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
     },
     "T6": {
      "flag": "NO OUTLINE"
@@ -94009,43 +93989,33 @@
      "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
      "flag": "CAN'T TELL",
      "note": "a saved club copy: the source's last-edit date is not recorded with it"
     }
    },
-   "problems": [
-    "CAN'T TELL: 1 record(s) on provincial lists this tool can't read live (Hard look~7)"
-   ],
+   "problems": [],
    "status": "graded",
    "score": 0,
-   "why": "All tests pass."
+   "why": "Nothing could be tested."
   },
   {
    "ref": "CA-6257",
    "name": "Rideau Falls and Green Island National Park",
    "key_name": "Rideau Falls and Green Island National Park",
    "type": "National Park",
-   "grade": "official",
+   "grade": "pin",
    "pin": [
     45.4426,
     -75.694
    ],
    "outline_from": [],
    "acres_drawn": null,
-   "records": [
-    {
-     "id": "Hard look~7:13",
-     "name": "Rideau Falls Park and Green Island",
-     "acres": 7,
-     "layer": "Hard look~7"
-    }
-   ],
-   "record_ids": [
-    "Hard look~7:13"
-   ],
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
      "flag": "NO OUTLINE"
@@ -94054,19 +94024,16 @@
      "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Rideau Falls and Green Island National Park",
-     "record_name": "Rideau Falls Park and Green Island"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": "national park",
-     "record_kind": null,
-     "flag": "CAN'T TELL"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "CAN'T TELL",
-     "note": "the park's records could not be read (see problems)"
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
     },
     "T6": {
      "flag": "NO OUTLINE"
@@ -94075,19 +94042,18 @@
      "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
      "flag": "CAN'T TELL",
      "note": "a saved club copy: the source's last-edit date is not recorded with it"
     }
    },
-   "problems": [
-    "CAN'T TELL: 1 record(s) on provincial lists this tool can't read live (Hard look~7)"
-   ],
+   "problems": [],
    "status": "graded",
    "score": 0,
-   "why": "All tests pass."
+   "why": "Nothing could be tested."
   },
   {
    "ref": "CA-6317",
@@ -94396,24 +94362,15 @@
    "name": "LeBreton Flats National Park",
    "key_name": "LeBreton Flats National Park",
    "type": "National Park",
-   "grade": "official",
+   "grade": "pin",
    "pin": [
     45.4146,
     -75.7185
    ],
    "outline_from": [],
    "acres_drawn": null,
-   "records": [
-    {
-     "id": "Hard look~7:6",
-     "name": "LeBreton Flats Park",
-     "acres": 16,
-     "layer": "Hard look~7"
-    }
-   ],
-   "record_ids": [
-    "Hard look~7:6"
-   ],
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
      "flag": "NO OUTLINE"
@@ -94422,19 +94379,16 @@
      "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "LeBreton Flats National Park",
-     "record_name": "LeBreton Flats Park"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": "national park",
-     "record_kind": null,
-     "flag": "CAN'T TELL"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "CAN'T TELL",
-     "note": "the park's records could not be read (see problems)"
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
     },
     "T6": {
      "flag": "NO OUTLINE"
@@ -94443,19 +94397,18 @@
      "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
      "flag": "CAN'T TELL",
      "note": "a saved club copy: the source's last-edit date is not recorded with it"
     }
    },
-   "problems": [
-    "CAN'T TELL: 1 record(s) on provincial lists this tool can't read live (Hard look~7)"
-   ],
+   "problems": [],
    "status": "graded",
    "score": 0,
-   "why": "All tests pass."
+   "why": "Nothing could be tested."
   },
   {
    "ref": "CA-6341",
@@ -94515,24 +94468,15 @@
    "name": "Confederation National Park",
    "key_name": "Confederation National Park",
    "type": "National Park",
-   "grade": "official",
+   "grade": "pin",
    "pin": [
     45.4225,
     -75.6924
    ],
    "outline_from": [],
    "acres_drawn": null,
-   "records": [
-    {
-     "id": "Hard look~7:8",
-     "name": "Confederation Park",
-     "acres": 2,
-     "layer": "Hard look~7"
-    }
-   ],
-   "record_ids": [
-    "Hard look~7:8"
-   ],
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
      "flag": "NO OUTLINE"
@@ -94541,19 +94485,16 @@
      "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Confederation National Park",
-     "record_name": "Confederation Park"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": "national park",
-     "record_kind": null,
-     "flag": "CAN'T TELL"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "CAN'T TELL",
-     "note": "the park's records could not be read (see problems)"
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
     },
     "T6": {
      "flag": "NO OUTLINE"
@@ -94562,19 +94503,18 @@
      "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
      "flag": "CAN'T TELL",
      "note": "a saved club copy: the source's last-edit date is not recorded with it"
     }
    },
-   "problems": [
-    "CAN'T TELL: 1 record(s) on provincial lists this tool can't read live (Hard look~7)"
-   ],
+   "problems": [],
    "status": "graded",
    "score": 0,
-   "why": "All tests pass."
+   "why": "Nothing could be tested."
   },
   {
    "ref": "CA-6346",
@@ -96512,24 +96452,15 @@
    "name": "Kìwekì Point National Park",
    "key_name": "Kìwekì Point National Park",
    "type": "National Park",
-   "grade": "official",
+   "grade": "pin",
    "pin": [
     45.4303,
     -75.7009
    ],
    "outline_from": [],
    "acres_drawn": null,
-   "records": [
-    {
-     "id": "Hard look~7:11",
-     "name": "Kìwekì Point",
-     "acres": 4,
-     "layer": "Hard look~7"
-    }
-   ],
-   "record_ids": [
-    "Hard look~7:11"
-   ],
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
      "flag": "NO OUTLINE"
@@ -96538,19 +96469,16 @@
      "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Kìwekì Point National Park",
-     "record_name": "Kìwekì Point"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": "national park",
-     "record_kind": null,
-     "flag": "CAN'T TELL"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "CAN'T TELL",
-     "note": "the park's records could not be read (see problems)"
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
     },
     "T6": {
      "flag": "NO OUTLINE"
@@ -96559,19 +96487,18 @@
      "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
      "flag": "CAN'T TELL",
      "note": "a saved club copy: the source's last-edit date is not recorded with it"
     }
    },
-   "problems": [
-    "CAN'T TELL: 1 record(s) on provincial lists this tool can't read live (Hard look~7)"
-   ],
+   "problems": [],
    "status": "graded",
    "score": 0,
-   "why": "All tests pass."
+   "why": "Nothing could be tested."
   },
   {
    "ref": "CA-6513",

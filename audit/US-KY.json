@@ -1,6 +1,6 @@
 {
  "area": "US-KY",
- "built": "2026-11-08",
+ "built": "2026-11-15",
  "tool": "KPC-map-audit",
  "rules": "2026-11-02c",
  "parks": [
@@ -3502,7 +3502,7 @@
    "outline_from": [
     "club file ky-padus-parks.geojson"
    ],
-   "acres_drawn": 250.3,
+   "acres_drawn": 132.4,
    "records": [
     {
      "id": "bpad:Salato Wildlife Refuge",
@@ -3522,8 +3522,8 @@
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 250.3,
-     "official_acres": 250.0,
+     "outline_acres": 132.4,
+     "official_acres": 132.0,
      "times": 1.0,
      "official_from": "the outline files' ACRES / the key's tract acres"
     },
@@ -3549,7 +3549,7 @@
      "detail_m": 0.88,
      "declared_m": null,
      "coordinate_step_m": 0.88,
-     "median_spacing_m": 120.0,
+     "median_spacing_m": 62.4,
      "flag": "PASS"
     },
     "T8": {
@@ -7443,7 +7443,7 @@
    "outline_from": [
     "club file ky-padus-parks.geojson"
    ],
-   "acres_drawn": 33.7,
+   "acres_drawn": 41.6,
    "records": [
     {
      "id": "bpad:Kingfisher Lakes",
@@ -7458,13 +7458,13 @@
    ],
    "tests": {
     "T1": {
-     "flag": "NEAR",
-     "metres": 5.3
+     "flag": "PASS",
+     "metres": 0
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 33.7,
-     "official_acres": 34.0,
+     "outline_acres": 41.6,
+     "official_acres": 42.0,
      "times": 1.01,
      "official_from": "the outline files' ACRES / the key's tract acres"
     },
@@ -7490,7 +7490,7 @@
      "detail_m": 0.88,
      "declared_m": null,
      "coordinate_step_m": 0.88,
-     "median_spacing_m": 16.9,
+     "median_spacing_m": 17.4,
      "flag": "PASS"
     },
     "T8": {
@@ -7503,8 +7503,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "NEAR: POTA's pin is 5 m outside the outline."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-13600",
@@ -7519,7 +7519,7 @@
    "outline_from": [
     "club file ky-padus-parks.geojson"
    ],
-   "acres_drawn": 66.4,
+   "acres_drawn": 79.8,
    "records": [
     {
      "id": "bpad:Carpenters Lake",
@@ -7534,14 +7534,14 @@
    ],
    "tests": {
     "T1": {
-     "flag": "NEAR",
-     "metres": 21.0
+     "flag": "PASS",
+     "metres": 0
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 66.4,
-     "official_acres": 66.0,
-     "times": 1.01,
+     "outline_acres": 79.8,
+     "official_acres": 80.0,
+     "times": 1.0,
      "official_from": "the outline files' ACRES / the key's tract acres"
     },
     "T3": {
@@ -7566,7 +7566,7 @@
      "detail_m": 0.88,
      "declared_m": null,
      "coordinate_step_m": 0.88,
-     "median_spacing_m": 17.1,
+     "median_spacing_m": 15.1,
      "flag": "PASS"
     },
     "T8": {
@@ -7579,8 +7579,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "NEAR: POTA's pin is 21 m outside the outline."
+   "score": 0,
+   "why": "All tests pass."
   },
   {
    "ref": "US-13601",
