@@ -1,6 +1,6 @@
 # kpc_pulloffs run report (2026-11-15)
 
-- version 1.0.0; exit code 3; ran 51.7 min; 79 web requests
+- version 1.0.0; exit code 3; ran 50.7 min; 69 web requests
 - parks in this input (after --areas / --limit): 190; done: 103; left for the next run: 87
 - candidates for chat 11: 2805; kept out (log only, work/log/kept_out.jsonl): 7928
 
@@ -179,7 +179,7 @@ Official access pins next to a public road (within 30 m) inside the search band:
 - US-3836 Veterans Memorial Wildlife Management Area: done; 4 candidate(s); 13 kept out; photo cells 13; points looked at {'entry': 2, 'road': 44, 'hint': 0}; roads {'public': 20, 'dropped (interstate/ramp/private/alley)': 2, 'lot-road hints': 0}; recall 0/2
   - note: FEMA USA Structures (building outlines) not read (robots.txt does not allow /FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query): only the roof test on the photo was used
   - problem (skipped, run went on): NAIP photo for cell 1427,8484 not read: HTTP 504
-- US-3837 West Kentucky Wildlife Management Area: time ran out after 44 of 72 photo cells looked at; nothing written for it yet. Run again with --resume (downloads are cached).
+- US-3837 West Kentucky Wildlife Management Area: time ran out after 69 of 72 photo cells looked at; nothing written for it yet. Run again with --resume (downloads are cached).
 
 ## Web manners
 
