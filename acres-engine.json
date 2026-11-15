@@ -696,6 +696,15 @@
    "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWS_NWRS_HQ_PublicHuntUnits_view/FeatureServer/0; read 2026-11-02"
   },
   {
+   "Park number (if matched)": "US-2218",
+   "Park name (as the agency writes it)": "NUUANU PALI STATE WAYSIDE",
+   "Size": 4,
+   "Unit": "acres",
+   "Agency": "Hawaii Division of State Parks (DLNR) (park, state GIS table)",
+   "Source page": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16/query?where=OBJECTID%3D12&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16; read 2026-11-12"
+  },
+  {
    "Park number (if matched)": "US-0731",
    "Park name (as the agency writes it)": "Columbia River Gorge National Scenic Area",
    "Size": 292690,
@@ -829,15 +838,6 @@
    "Agency": "Hawaii Division of State Parks (DLNR) (park, state GIS table)",
    "Source page": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16/query?where=OBJECTID%3D25&outFields=%2A&f=html",
    "Notes": "computed from the official outline polygon (approx); layer https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16; read 2026-11-05"
-  },
-  {
-   "Park number (if matched)": "US-2218",
-   "Park name (as the agency writes it)": "NUUANU PALI STATE WAYSIDE",
-   "Size": 4,
-   "Unit": "acres",
-   "Agency": "Hawaii Division of State Parks (DLNR) (park, state GIS table)",
-   "Source page": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16/query?where=OBJECTID%3D12&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16; read 2026-11-12"
   },
   {
    "Park number (if matched)": "US-2221",
@@ -2285,6 +2285,16 @@
    "Retry?": "NO"
   },
   {
+   "Host": "geodata.hawaii.gov",
+   "Agency/area": "Hawaii Division of State Parks (DLNR) (park, state GIS table)",
+   "Kind": "GIS layer",
+   "Example URL": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
+   "# times used": 3,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
    "Host": "apps.fs.usda.gov",
    "Agency/area": "Forest Service national designated areas (monuments, NRAs, scenic areas)",
    "Kind": "GIS layer",
@@ -2299,16 +2309,6 @@
    "Agency/area": "Nevada outdoor recreation areas (NV Division of State Parks SCORP, DCNR server) (land, state GIS table)",
    "Kind": "GIS layer",
    "Example URL": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0",
-   "# times used": 3,
-   "Status": "OK",
-   "Detail": "answered the engine (official outline layer)",
-   "Retry?": "NO"
-  },
-  {
-   "Host": "geodata.hawaii.gov",
-   "Agency/area": "Hawaii Division of State Parks (DLNR) (park, state GIS table)",
-   "Kind": "GIS layer",
-   "Example URL": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
    "# times used": 3,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
