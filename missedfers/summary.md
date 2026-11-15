@@ -1,12 +1,12 @@
-# Missed 2-fer leads (2026-11-08)
+# Missed 2-fer leads (2026-11-15)
 
 Leads only: the official outlines and the club's 2-fer rules decide. No callsigns are kept here.
 
-Areas asked: 1. Parks with history: 193. Raw same-day pairs: 954. Rove days dropped: 322. Pairs listed: 41. Problems: 0.
+Areas asked: 1. Parks with history: 193. Raw same-day pairs: 956. Rove days dropped: 325. Pairs listed: 41. Problems: 0.
 
 Known live-list pairs seen in raw counts with >= 3 activators: 62 (all excluded from the list).
 
-Rejected: below thresholds 626, known (already ours) 163, too far apart 124
+Rejected: below thresholds 628, known (already ours) 164, too far apart 123
 
 ## Counts per area and route
 
@@ -61,4 +61,4 @@ Rejected: below thresholds 626, known (already ours) 163, too far apart 124
 | 40 | US-3788 | US-3803 | Wickliffe Mounds State Historic Site / Coil Estate Wildlife Management Area | US-KY | 4 | 3 | 8.87 | pin/pin | check-official-map |
 | 41 | US-3803 | US-3838 | Coil Estate Wildlife Management Area / Winford Wildlife Management Area | US-KY | 4 | 3 | 3.55 | pin/pin | check-official-map |
 
-Source: https://api.pota.app (park lists and activation histories), read 2026-11-08.
+Source: https://api.pota.app (park lists and activation histories), read 2026-11-15.
