@@ -1,6 +1,6 @@
 # kpc_pulloffs run report (2026-11-15)
 
-- version 1.0.0; exit code 3; ran 52.3 min; 79 web requests
+- version 1.0.0; exit code 3; ran 51.8 min; 75 web requests
 - parks in this input (after --areas / --limit): 190; done: 105; left for the next run: 85
 - candidates for chat 11: 2861; kept out (log only, work/log/kept_out.jsonl): 8034
 
@@ -189,7 +189,7 @@ Official access pins next to a public road (within 30 m) inside the search band:
   - note: FEMA USA Structures (building outlines) not read (robots.txt does not allow /FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query): only the roof test on the photo was used
   - problem (skipped, run went on): NAIP photo for cell 632,8177 not read: HTTP 504
   - problem (skipped, run went on): NAIP photo for cell 633,8177 not read: HTTP 504
-- US-3839 Yatesville Lake Wildlife Management Area: time ran out after 73 of 165 photo cells looked at; nothing written for it yet. Run again with --resume (downloads are cached).
+- US-3839 Yatesville Lake Wildlife Management Area: time ran out after 99 of 165 photo cells looked at; nothing written for it yet. Run again with --resume (downloads are cached).
 
 ## Web manners
 
