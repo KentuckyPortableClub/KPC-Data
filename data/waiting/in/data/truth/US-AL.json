@@ -2,21 +2,22 @@
  "about": "Park truth checker: official acreage vs our outline, handover hints, second-witness score. Review lists only: nothing here changes a key or a card.",
  "area": "US-AL",
  "counts": {
-  "agree": 33,
-  "handover_hints": 5,
+  "agree": 31,
+  "handover_hints": 4,
   "no_page": 3,
-  "no_size": 56,
-  "off": 16,
-  "ours_unknown": 4,
+  "no_size": 58,
+  "not_read": 0,
+  "off": 10,
+  "ours_unknown": 6,
   "parks": 155,
   "retired": 0,
-  "unsure": 17,
-  "weak": 7,
-  "with_outline": 133
+  "unsure": 23,
+  "weak": 5,
+  "with_outline": 134
  },
  "parks": {
   "US-0025": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Fort Morgan National Historic Site",
    "ours": null,
@@ -26,17 +27,53 @@
    "verdict": "no outline"
   },
   "US-0042": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Fort Gaines National Historic Site",
-   "ours": null,
-   "score": null,
+   "official": null,
+   "ours": {
+    "acres": 32,
+    "manager": "",
+    "pieces": [
+     [
+      166719,
+      "Historic Fort Gaines",
+      17,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://fort-gaines.com/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://fort-gaines.com/hours-of-operation-and-admission/",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
    "t": "National Historic Site",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "no size on page"
   },
   "US-0136": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Bon Secour National Wildlife Refuge",
    "official": null,
@@ -98,21 +135,13 @@
    "verdict": "no size on page"
   },
   "US-0137": {
-   "checked": "2026-11-01",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Cahaba River National Wildlife Refuge",
-   "official": {
-    "acres": 7784.0,
-    "as": "7,784 acres",
-    "clean": false,
-    "line": "al lioplax snail. The refuge consists of 3,681 acres in Bibb County, with an approved acquisition boundary of 7,784 acres. The Cahaba River itself stretches for almost 200 miles and is Alabama's longest free-flowing stream. The riv",
-    "read": "2026-11-01",
-    "sent": "The refuge consists of 3,681 acres in Bibb County, with an approved acquisition boundary of 7,784 acres.",
-    "url": "https://www.fws.gov/refuge/cahaba-river/about-us",
-    "why": "history"
-   },
+   "official": null,
    "ours": {
-    "acres": 8383,
+    "acres": 4928,
     "family_fold": "layers {'sgalc': 4873, 'padus': 8383}: one land in 2 layers, the padus copy used (4,873 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -162,13 +191,12 @@
      "why": "FWS refuge about page"
     }
    ],
-   "pct": 8,
-   "same_agency": false,
-   "score": 8,
+   "pct": null,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 1,
     "source": 2
    },
    "sizes": [
@@ -247,10 +275,10 @@
    ],
    "t": "National Wildlife Refuge",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "unsure"
   },
   "US-0138": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Choctaw National Wildlife Refuge",
    "official": null,
@@ -297,16 +325,16 @@
    "verdict": "no size on page"
   },
   "US-0139": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Eufaula National Wildlife Refuge",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-AL': 48, 'US-GA': 12604})",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-AL': 15, 'US-GA': 11005})",
    "official": null,
    "ours": {
-    "acres": 12652,
+    "acres": 11020,
     "acres_by_state": {
-     "US-AL": 48,
-     "US-GA": 12604
+     "US-AL": 15,
+     "US-GA": 11005
     },
     "manager": "",
     "pieces": [
@@ -360,22 +388,21 @@
    "verdict": "no size on page"
   },
   "US-0140": {
-   "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Fern Cave National Wildlife Refuge",
    "official": {
     "acres": 199.0,
     "as": "199 acres",
     "clean": false,
-    "line": "orcement and resource protection. More About What We Do Our Species Image Details Although the refuge is only 199 acres in size, a diversity of species make their home here. Two hundred species of birds, mammals, fish, reptiles,",
-    "read": "2026-11-01",
-    "sent": "Although the refuge is only 199 acres in size, a diversity of species make their home here.",
+    "line": "Indiana bat, Social Bat Myotis sodalis About Established in 1981, Fern Cave National Wildlife Refuge protects 199 acres of forested hillside and a massive cave system containing five hidden entrances. The cave is a complex vertic",
+    "read": "2026-11-15",
+    "sent": "Established in 1981, Fern Cave National Wildlife Refuge protects 199 acres of forested hillside and a massive cave system containing five hidden entrances.",
     "url": "https://www.fws.gov/refuge/fern-cave",
-    "why": "total-looking"
+    "why": "history"
    },
    "ours": {
-    "acres": 406,
+    "acres": 204,
     "manager": "",
     "pieces": [
      [
@@ -404,23 +431,23 @@
     },
     {
      "other_unit": true,
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/fern-cave/visit-us/rules-policies",
      "why": "rules page (documents bot)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/fern-cave/about-us",
      "why": "FWS refuge about page"
     }
    ],
-   "pct": 104,
+   "pct": 3,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -428,47 +455,29 @@
      "acres": 199.0,
      "as": "199 acres",
      "clean": false,
-     "line": "orcement and resource protection. More About What We Do Our Species Image Details Although the refuge is only 199 acres in size, a diversity of species make their home here. Two hundred species of birds, mammals, fish, reptiles,",
-     "total_like": true,
+     "line": "Indiana bat, Social Bat Myotis sodalis About Established in 1981, Fern Cave National Wildlife Refuge protects 199 acres of forested hillside and a massive cave system containing five hidden entrances. The cave is a complex vertic",
+     "total_like": false,
      "url": "https://www.fws.gov/refuge/fern-cave",
-     "why": "total-looking"
-    },
-    {
-     "acres": 199.0,
-     "as": "199 acres",
-     "clean": false,
-     "line": "WheelerNWRComplex About Us Image Details Fern Cave National Wildlife Refuge, established in 1981, consists of 199 acres of forested hillside underlain by a massive cave with many stalactite and stalagmite-filled rooms. The cave h",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/fern-cave/about-us",
      "why": "history"
-    },
-    {
-     "acres": 264.0,
-     "as": "264 acre",
-     "clean": false,
-     "line": "pecies. National Wildlife Refuge Sauta Cave National Wildlife Refuge Sauta Cave National Wildlife Refuge is a 264-acre Refuge located west of Scottsboro, Alabama. The refuge provides protection for the federally endangered Gray",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/fern-cave/about-us",
-     "why": "another park / unit named in the sentence"
     }
    ],
    "t": "National Wildlife Refuge",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-0141": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Key Cave National Wildlife Refuge",
    "official": {
     "acres": 1060.0,
-    "as": "1,060 acre",
-    "clean": true,
-    "line": "an integral component of groundwater recharge to the caves. Prior to 1992, the Monsanto Company owned a large 1,060-acre tract of land just north of Key Cave and about five miles southwest of Florence, Lauderdale County, Alabama,",
-    "read": "2026-11-01",
-    "sent": "Prior to 1992, the Monsanto Company owned a large 1,060-acre tract of land just north of Key Cave and about five miles southwest of Florence, Lauderdale County, Alabama, in the high-hazard risk area of the Key Cave aquifer.",
-    "url": "https://www.fws.gov/refuge/key-cave/about-us",
-    "why": "clean total"
+    "as": "1,060 acres",
+    "clean": false,
+    "line": "sit, be sure to bring insect repellent, drinking water, and/or sunscreen. Key Cave National Wildlife Refuge’s 1,060 acres are open to public entry from dawn to dusk. No motorized vehicles are allowed to enter the refuge. Vehicles m",
+    "read": "2026-11-15",
+    "sent": "Key Cave National Wildlife Refuge’s 1,060 acres are open to public entry from dawn to dusk.",
+    "url": "https://www.fws.gov/refuge/key-cave",
+    "why": "total-looking"
    },
    "ours": {
     "acres": 1053,
@@ -502,18 +511,13 @@
      "why": "the park's page (data/parkinfo)"
     },
     {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/key-cave/about-us",
-     "why": "about / history page of the park's site"
-    },
-    {
      "other_unit": true,
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/key-cave/visit-us/rules-policies",
      "why": "rules page (documents bot)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/key-cave/about-us",
      "why": "FWS refuge about page"
     }
@@ -530,39 +534,30 @@
    "sizes": [
     {
      "acres": 1060.0,
-     "as": "1,060 acre",
-     "clean": true,
-     "line": "an integral component of groundwater recharge to the caves. Prior to 1992, the Monsanto Company owned a large 1,060-acre tract of land just north of Key Cave and about five miles southwest of Florence, Lauderdale County, Alabama,",
-     "total_like": true,
-     "url": "https://www.fws.gov/refuge/key-cave/about-us",
-     "why": "clean total"
-    },
-    {
-     "acres": 264.0,
-     "as": "264 acre",
+     "as": "1,060 acres",
      "clean": false,
-     "line": "pecies. National Wildlife Refuge Sauta Cave National Wildlife Refuge Sauta Cave National Wildlife Refuge is a 264-acre Refuge located west of Scottsboro, Alabama. The refuge provides protection for the federally endangered Gray",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/key-cave/about-us",
-     "why": "another park / unit named in the sentence"
+     "line": "sit, be sure to bring insect repellent, drinking water, and/or sunscreen. Key Cave National Wildlife Refuge’s 1,060 acres are open to public entry from dawn to dusk. No motorized vehicles are allowed to enter the refuge. Vehicles m",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/key-cave",
+     "why": "total-looking"
     },
     {
      "acres": 1060.0,
-     "as": "1,060 acre",
-     "clean": true,
-     "line": "an integral component of groundwater recharge to the caves. Prior to 1992, the Monsanto Company owned a large 1,060-acre tract of land just north of Key Cave and about five miles southwest of Florence, Lauderdale County, Alabama,",
+     "as": "1,060 acres",
+     "clean": false,
+     "line": ": Dusk Detailed hours Safety Policies For emergencies: 911 Detailed Hours Key Cave National Wildlife Refuge’s 1,060 acres are open to public entry from dawn to dusk. No motorized vehicles are allowed to enter the refuge. Activities",
      "total_like": true,
-     "url": "https://www.fws.gov/refuge/key-cave/about-us",
-     "why": "clean total"
+     "url": "https://www.fws.gov/refuge/key-cave",
+     "why": "total-looking"
     },
     {
-     "acres": 264.0,
-     "as": "264 acre",
+     "acres": 1060.0,
+     "as": "1,060 acres",
      "clean": false,
-     "line": "pecies. National Wildlife Refuge Sauta Cave National Wildlife Refuge Sauta Cave National Wildlife Refuge is a 264-acre Refuge located west of Scottsboro, Alabama. The refuge provides protection for the federally endangered Gray",
+     "line": "ered Alabama cavefish and serves as a priority maternity cave for the endangered gray bat. The refuge manages 1,060 acres of diverse habitats including row crops, grasslands, and hardwood forests which support a variety of migrator",
      "total_like": false,
-     "url": "https://www.fws.gov/refuge/key-cave/about-us",
-     "why": "another park / unit named in the sentence"
+     "url": "https://www.fws.gov/refuge/key-cave",
+     "why": "part (a lake, a purchase, a campground…)"
     }
    ],
    "t": "National Wildlife Refuge",
@@ -570,27 +565,18 @@
    "verdict": "agree"
   },
   "US-0158": {
-   "checked": "2026-11-01",
-   "handover": [
-    {
-     "date_hint": null,
-     "kind": "transfer",
-     "line": "ial presence of unexploded ordinance (UXO) and other environmental concerns. Within the legislative transfer of land to the Service, stipulations were made that the Army remains responsible for the remediation of all UXO within the refuge. The removal of the UXO is still ongoing, so you will likely ",
-     "owner_now": "Service",
-     "src": "https://www.fws.gov/refuge/mountain-longleaf/about-us",
-     "why": "about / history page of the park's site"
-    }
-   ],
+   "checked": "2026-11-15",
+   "handover": [],
    "n": "Mountain Longleaf National Wildlife Refuge",
    "official": {
     "acres": 9016.0,
-    "as": "9,016 acres",
+    "as": "9,016 acre",
     "clean": false,
-    "line": "cClellan. On October 23, 2003, an additional 1,257 acres were contributed by the JPA for the current total of 9,016 acres. As part of the base closure process, the Army is surveying and characterizing all training lands for potenti",
-    "read": "2026-11-01",
-    "sent": "On October 23, 2003, an additional 1,257 acres were contributed by the JPA for the current total of 9,016 acres.",
-    "url": "https://www.fws.gov/refuge/mountain-longleaf/about-us",
-    "why": "total-looking"
+    "line": "sure of generations to follow. Services Law Enforcement About Mountain Longleaf National Wildlife Refuge is a 9,016-acre site in Calhoun County, Alabama, established in 2003 on the former Fort McClellan military base. The primary",
+    "read": "2026-11-15",
+    "sent": "Mountain Longleaf National Wildlife Refuge is a 9,016-acre site in Calhoun County, Alabama, established in 2003 on the former Fort McClellan military base.",
+    "url": "https://www.fws.gov/refuge/mountain-longleaf",
+    "why": "history"
    },
    "ours": {
     "acres": 9014,
@@ -616,7 +602,7 @@
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
-   "owner_now": "Service",
+   "owner_now": null,
    "pages": [
     {
      "status": "ok",
@@ -624,9 +610,15 @@
      "why": "the park's page (data/parkinfo)"
     },
     {
-     "status": "ok",
+     "other_unit": true,
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/mountain-longleaf/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/mountain-longleaf/about-us",
-     "why": "about / history page of the park's site"
+     "why": "FWS refuge about page"
     }
    ],
    "pct": 0,
@@ -640,40 +632,13 @@
    },
    "sizes": [
     {
-     "acres": 7759.0,
-     "as": "7,759 acre",
-     "clean": false,
-     "line": "to the city of Anniston and lies approximately 65 miles east of Birmingham and 90 miles west of Atlanta. The 7,759 acre refuge was legislatively established on May 31, 2003 within the former military training base of Fort McClell",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/mountain-longleaf/about-us",
-     "why": "history"
-    },
-    {
-     "acres": 1257.0,
-     "as": "1,257 acres",
-     "clean": false,
-     "line": "n May 31, 2003 within the former military training base of Fort McClellan. On October 23, 2003, an additional 1,257 acres were contributed by the JPA for the current total of 9,016 acres. As part of the base closure process, the Ar",
-     "total_like": true,
-     "url": "https://www.fws.gov/refuge/mountain-longleaf/about-us",
-     "why": "total-looking"
-    },
-    {
      "acres": 9016.0,
-     "as": "9,016 acres",
+     "as": "9,016 acre",
      "clean": false,
-     "line": "cClellan. On October 23, 2003, an additional 1,257 acres were contributed by the JPA for the current total of 9,016 acres. As part of the base closure process, the Army is surveying and characterizing all training lands for potenti",
-     "total_like": true,
-     "url": "https://www.fws.gov/refuge/mountain-longleaf/about-us",
-     "why": "total-looking"
-    },
-    {
-     "acres": 264.0,
-     "as": "264 acre",
-     "clean": false,
-     "line": "pecies. National Wildlife Refuge Sauta Cave National Wildlife Refuge Sauta Cave National Wildlife Refuge is a 264-acre Refuge located west of Scottsboro, Alabama. The refuge provides protection for the federally endangered Gray",
+     "line": "sure of generations to follow. Services Law Enforcement About Mountain Longleaf National Wildlife Refuge is a 9,016-acre site in Calhoun County, Alabama, established in 2003 on the former Fort McClellan military base. The primary",
      "total_like": false,
-     "url": "https://www.fws.gov/refuge/mountain-longleaf/about-us",
-     "why": "another park / unit named in the sentence"
+     "url": "https://www.fws.gov/refuge/mountain-longleaf",
+     "why": "history"
     }
    ],
    "t": "National Wildlife Refuge",
@@ -681,22 +646,21 @@
    "verdict": "agree"
   },
   "US-0159": {
-   "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Sauta Cave National Wildlife Refuge",
    "official": {
     "acres": 264.0,
-    "as": "264 acre",
-    "clean": true,
-    "line": "News Library Species Map https://www.facebook.com/WheelerNWRComplex Sauta Cave National Wildlife Refuge is a 264-acre Refuge located west of Scottsboro, Alabama. The refuge provides protection for the federally endangered Gray",
-    "read": "2026-11-01",
-    "sent": "Sauta Cave National Wildlife Refuge is a 264-acre Refuge located west of Scottsboro, Alabama.",
+    "as": "264 acres",
+    "clean": false,
+    "line": "or center by calling (256)-350-6639. About Sauta Cave National Wildlife Refuge, established in 1978, protects 264 acres of hardwood forest and provides crucial habitat for federally endangered gray and Indiana bats. The cave itse",
+    "read": "2026-11-15",
+    "sent": "Sauta Cave National Wildlife Refuge, established in 1978, protects 264 acres of hardwood forest and provides crucial habitat for federally endangered gray and Indiana bats.",
     "url": "https://www.fws.gov/refuge/sauta-cave",
-    "why": "clean total"
+    "why": "history"
    },
    "ours": {
-    "acres": 532,
+    "acres": 272,
     "manager": "",
     "pieces": [
      [
@@ -725,66 +689,56 @@
     },
     {
      "other_unit": true,
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/sauta-cave/visit-us/rules-policies",
      "why": "rules page (documents bot)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/sauta-cave/about-us",
      "why": "FWS refuge about page"
     }
    ],
-   "pct": 102,
+   "pct": 3,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
     {
      "acres": 264.0,
-     "as": "264 acre",
-     "clean": true,
-     "line": "News Library Species Map https://www.facebook.com/WheelerNWRComplex Sauta Cave National Wildlife Refuge is a 264-acre Refuge located west of Scottsboro, Alabama. The refuge provides protection for the federally endangered Gray",
-     "total_like": true,
-     "url": "https://www.fws.gov/refuge/sauta-cave",
-     "why": "clean total"
-    },
-    {
-     "acres": 264.0,
      "as": "264 acres",
      "clean": false,
-     "line": "provide protection for the federally endangered gray and Indiana bats and their crucial habitat consisting of 264 acres of hardwood forest. The cave provides a summer roosting site for about 300,000 - 400,000 gray bats and a wint",
+     "line": "or center by calling (256)-350-6639. About Sauta Cave National Wildlife Refuge, established in 1978, protects 264 acres of hardwood forest and provides crucial habitat for federally endangered gray and Indiana bats. The cave itse",
      "total_like": false,
-     "url": "https://www.fws.gov/refuge/sauta-cave/about-us",
+     "url": "https://www.fws.gov/refuge/sauta-cave",
      "why": "history"
     }
    ],
    "t": "National Wildlife Refuge",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-0160": {
-   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 1.5 acres, a tiny number without size wording)",
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Watercress Darter National Wildlife Refuge",
    "official": {
-    "acres": 1.5,
-    "as": "1.5 acres",
+    "acres": 24.0,
+    "as": "24 acre",
     "clean": false,
-    "line": "hment of Watercress Darter NWR were completed by the Service in 1979, and included the planned acquisition of 1.5 acres at Thomas Spring and a 1.0-acre tract at Glenn Springs. On October 1, 1980, the Service purchased 7.1 acres i",
-    "read": "2026-11-01",
-    "sent": "Planning efforts for the establishment of Watercress Darter NWR were completed by the Service in 1979, and included the planned acquisition of 1.5 acres at Thomas Spring and a 1.0-acre tract at Glenn Springs.",
-    "url": "https://www.fws.gov/refuge/watercress-darter/about-us",
-    "why": "a tiny number without size wording"
+    "line": "ap Hours Opens: Sunrise Closes: Sunset Detailed hours Safety Policies For emergencies: 911 Detailed Hours The 24-acre Watercress Darter National Wildlife Refuge is open to the public during daylight hours. The refuge office hou",
+    "read": "2026-11-15",
+    "sent": "The 24-acre Watercress Darter National Wildlife Refuge is open to the public during daylight hours.",
+    "url": "https://www.fws.gov/refuge/watercress-darter",
+    "why": "total-looking"
    },
    "ours": {
-    "acres": 48,
+    "acres": 24,
     "manager": "",
     "pieces": [
      [
@@ -812,117 +766,53 @@
      "why": "the park's page (data/parkinfo)"
     },
     {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/watercress-darter/about-us",
-     "why": "about / history page of the park's site"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/watercress-darter/visit-us",
-     "why": "about / history page of the park's site"
-    },
-    {
      "other_unit": true,
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/watercress-darter/visit-us/rules-policies",
      "why": "rules page (documents bot)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/watercress-darter/about-us",
      "why": "FWS refuge about page"
     }
    ],
-   "pct": 3100,
+   "pct": 0,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
     {
-     "acres": 25.0,
-     "as": "25 acre",
+     "acres": 24.0,
+     "as": "24 acre",
      "clean": false,
-     "line": "0 to provide protection for the watercress darter and to conserve and restore its crucial habitat. Today, the 25-acre refuge consists of two ponds, several stands of mixed pine-hardwoods with shrubs, and a single residence. Tho",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/watercress-darter/about-us",
-     "why": "part (a lake, a purchase, a campground…)"
-    },
-    {
-     "acres": 1.5,
-     "as": "1.5 acres",
-     "clean": false,
-     "line": "hment of Watercress Darter NWR were completed by the Service in 1979, and included the planned acquisition of 1.5 acres at Thomas Spring and a 1.0-acre tract at Glenn Springs. On October 1, 1980, the Service purchased 7.1 acres i",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/watercress-darter/about-us",
-     "why": "a tiny number without size wording"
-    },
-    {
-     "acres": 1.0,
-     "as": "1.0 acre",
-     "clean": false,
-     "line": "re completed by the Service in 1979, and included the planned acquisition of 1.5 acres at Thomas Spring and a 1.0-acre tract at Glenn Springs. On October 1, 1980, the Service purchased 7.1 acres in fee title around Thomas Spring",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/watercress-darter/about-us",
-     "why": "a tiny number without size wording"
-    },
-    {
-     "acres": 7.1,
-     "as": "7.1 acres",
-     "clean": false,
-     "line": "f 1.5 acres at Thomas Spring and a 1.0-acre tract at Glenn Springs. On October 1, 1980, the Service purchased 7.1 acres in fee title around Thomas Spring, naming the property Watercress Darter National Wildlife Refuge. This refug",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/watercress-darter/about-us",
-     "why": "part (a lake, a purchase, a campground…)"
-    },
-    {
-     "acres": 264.0,
-     "as": "264 acre",
-     "clean": false,
-     "line": "pecies. National Wildlife Refuge Sauta Cave National Wildlife Refuge Sauta Cave National Wildlife Refuge is a 264-acre Refuge located west of Scottsboro, Alabama. The refuge provides protection for the federally endangered Gray",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/watercress-darter/about-us",
-     "why": "another park / unit named in the sentence"
-    },
-    {
-     "acres": 264.0,
-     "as": "264 acre",
-     "clean": false,
-     "line": "pecies. National Wildlife Refuge Sauta Cave National Wildlife Refuge Sauta Cave National Wildlife Refuge is a 264-acre Refuge located west of Scottsboro, Alabama. The refuge provides protection for the federally endangered Gray",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/watercress-darter/visit-us",
-     "why": "another park / unit named in the sentence"
+     "line": "ap Hours Opens: Sunrise Closes: Sunset Detailed hours Safety Policies For emergencies: 911 Detailed Hours The 24-acre Watercress Darter National Wildlife Refuge is open to the public during daylight hours. The refuge office hou",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/watercress-darter",
+     "why": "total-looking"
     },
     {
      "acres": 25.0,
      "as": "25 acre",
      "clean": false,
-     "line": "0 to provide protection for the watercress darter and to conserve and restore its crucial habitat. Today, the 25-acre refuge consists of two ponds, several stands of mixed pine-hardwoods with shrubs, and a single residence. Tho",
+     "line": "er, Alabama, was established in 1980 to protect the endangered watercress darter and its crucial habitat. The 25-acre refuge consists of two ponds, Thomas Spring and a second constructed pond, along with stands of mixed pine-ha",
      "total_like": false,
-     "url": "https://www.fws.gov/refuge/watercress-darter/about-us",
+     "url": "https://www.fws.gov/refuge/watercress-darter",
      "why": "part (a lake, a purchase, a campground…)"
-    },
-    {
-     "acres": 1.5,
-     "as": "1.5 acres",
-     "clean": false,
-     "line": "hment of Watercress Darter NWR were completed by the Service in 1979, and included the planned acquisition of 1.5 acres at Thomas Spring and a 1.0-acre tract at Glenn Springs. On October 1, 1980, the Service purchased 7.1 acres i",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/watercress-darter/about-us",
-     "why": "a tiny number without size wording"
     }
    ],
    "t": "National Wildlife Refuge",
    "ver": 15,
-   "verdict": "unsure"
+   "verdict": "agree"
   },
   "US-0161": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Wheeler National Wildlife Refuge",
    "official": {
@@ -930,7 +820,7 @@
     "as": "35,000 acre",
     "clean": false,
     "line": "ttracting migratory waterfowl onto a multipurpose impoundment. Although designated as a waterfowl refuge, the 35,000 acre refuge provides for a wide spectrum of wildlife. Its great diversity of habitat includes deep river channels,",
-    "read": "2026-11-01",
+    "read": "2026-11-15",
     "sent": "Although designated as a waterfowl refuge, the 35,000 acre refuge provides for a wide spectrum of wildlife.",
     "url": "https://www.fws.gov/refuge/wheeler/about-us",
     "why": "total-looking"
@@ -1038,25 +928,17 @@
    "verdict": "off"
   },
   "US-0384": {
-   "checked": "2026-11-01",
+   "cause": "whole park compared (POTA lists it in 2 states: {'US-AL': 2727, 'US-MS': 10394})",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Grand Bay National Wildlife Refuge",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-AL': 2727, 'US-MS': 6542})",
-   "official": {
-    "acres": 10188.0,
-    "as": "10,188 acre",
-    "clean": true,
-    "line": "nly 3% of wet pine savanna remaining across its originally range, it is considered an endangered habitat. The 10,188 acre refuge partially overlays the Grand Bay National Estuarine Research Reserve. Together, they protect nearly 18",
-    "read": "2026-11-01",
-    "sent": "The 10,188 acre refuge partially overlays the Grand Bay National Estuarine Research Reserve.",
-    "url": "https://www.fws.gov/refuge/grand_bay/",
-    "why": "clean total"
-   },
+   "note": "whole park compared (POTA lists it in 2 states: {'US-AL': 2727, 'US-MS': 10394})",
+   "official": null,
    "ours": {
-    "acres": 9269,
+    "acres": 13121,
     "acres_by_state": {
      "US-AL": 2727,
-     "US-MS": 6542
+     "US-MS": 10394
     },
     "dissolved": {
      "after": 2727,
@@ -1073,10 +955,10 @@
       3871,
       "Grand Bay National Wildlife Refuge",
       2727,
-      "name"
+      "reviewed"
      ]
     ],
-    "pin": "well outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "states": [
      "US-AL",
@@ -1094,7 +976,7 @@
     },
     {
      "other_unit": true,
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/grand-bay/visit-us/rules-policies",
      "why": "rules page (documents bot)"
     },
@@ -1109,41 +991,40 @@
      "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
     }
    ],
-   "pct": 9,
-   "same_agency": false,
-   "score": 6,
+   "pct": null,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 0,
-    "size": 2,
+    "pin": 2,
+    "size": 1,
     "source": 2
    },
    "sizes": [
     {
      "acres": 10188.0,
      "as": "10,188 acre",
-     "clean": true,
-     "line": "nly 3% of wet pine savanna remaining across its originally range, it is considered an endangered habitat. The 10,188 acre refuge partially overlays the Grand Bay National Estuarine Research Reserve. Together, they protect nearly 18",
-     "total_like": true,
+     "clean": false,
+     "line": "panses of Gulf Coast wet pine savanna, an endangered habitat. Located in coastal Mississippi and Alabama, the 10,188-acre refuge works alongside the Grand Bay National Estuarine Research Reserve to protect nearly 18,000 acres of un",
+     "total_like": false,
      "url": "https://www.fws.gov/refuge/grand_bay/",
-     "why": "clean total"
+     "why": "part (a lake, a purchase, a campground…)"
     },
     {
      "acres": 18000.0,
      "as": "18,000 acres",
      "clean": false,
-     "line": "re refuge partially overlays the Grand Bay National Estuarine Research Reserve. Together, they protect nearly 18,000 acres of relatively undisturbed wildlife habitat. In addition to the wet pine savanna, other refuge habitats includ",
-     "total_like": true,
+     "line": "a, the 10,188-acre refuge works alongside the Grand Bay National Estuarine Research Reserve to protect nearly 18,000 acres of undisturbed habitat. The landscape features a transition from wet pine savannas to maritime forests, tidal",
+     "total_like": false,
      "url": "https://www.fws.gov/refuge/grand_bay/",
-     "why": "total-looking"
+     "why": "part (a lake, a purchase, a campground…)"
     }
    ],
    "t": "National Wildlife Refuge",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "unsure"
   },
   "US-0641": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Little River Canyon National Preserve",
    "official": null,
@@ -1205,20 +1086,27 @@
    "verdict": "no size on page"
   },
   "US-0642": {
-   "cause": "whole park compared (POTA lists it in 2 states: {'US-AL': 4118, 'US-MS': 31527})",
-   "checked": "2026-11-01",
+   "cause": "whole park compared (POTA lists it in 3 states: {'US-TN': 31527, 'US-AL': 35645, 'US-MS': 31527})",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Natchez Trace Parkway National Parkway",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-AL': 4118, 'US-MS': 31527})",
+   "note": "whole park compared (POTA lists it in 3 states: {'US-TN': 31527, 'US-AL': 35645, 'US-MS': 31527})",
    "official": null,
    "ours": {
-    "acres": 35645,
+    "acres": 98699,
     "acres_by_state": {
-     "US-AL": 4118,
-     "US-MS": 31527
+     "US-AL": 35645,
+     "US-MS": 31527,
+     "US-TN": 31527
     },
     "manager": "",
     "pieces": [
+     [
+      3552,
+      "Natchez Trace Parkway",
+      31527,
+      "reviewed"
+     ],
      [
       3551,
       "Natchez Trace Parkway",
@@ -1229,8 +1117,8 @@
     "pin": "inside",
     "src": "USGS PAD-US",
     "states": [
-     "US-AL",
      "US-TN",
+     "US-AL",
      "US-MS"
     ],
     "unknown_pieces": 0,
@@ -1295,7 +1183,7 @@
   },
   "US-0719": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 23,000,000 acres, a statewide / agency-wide total (over a million acres) on a park that is not a big federal unit)",
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Horseshoe Bend National Military Park",
    "official": {
@@ -1303,7 +1191,7 @@
     "as": "23,000,000 acres",
     "clean": false,
     "line": "oosa River. Over 800 Red Sticks died that day. This battle ended the Creek War, resulted in a land cession of 23,000,000 acres to the United States and created a national hero of Andrew Jackson. Plan your visit About the park Visitors c",
-    "read": "2026-11-01",
+    "read": "2026-11-15",
     "sent": "This battle ended the Creek War, resulted in a land cession of 23,000,000 acres to the United States and created a national hero of Andrew Jackson.",
     "url": "https://www.nps.gov/hobe/index.htm",
     "why": "a statewide / agency-wide total (over a million acres) on a park that is not a big federal unit"
@@ -1391,7 +1279,7 @@
    "verdict": "unsure"
   },
   "US-0868": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Tuskegee Airmen National Historic Site",
    "official": null,
@@ -1458,7 +1346,7 @@
    "verdict": "no size on page"
   },
   "US-0869": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Tuskegee Institute National Historic Site",
    "official": null,
@@ -1521,7 +1409,7 @@
   },
   "US-0960": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Russell Cave National Monument",
    "official": {
@@ -1529,7 +1417,7 @@
     "as": "14,000 acres",
     "clean": false,
     "line": "bout the park Prehistoric people continuously used Russell Cave for over 10,000 years NPS Photo / Mary Dawson 14,000 acres drain into Russell Cave NPS Photo / Mary Dawson Looking out of the cave shelter in the fall NPS Photo / Mary",
-    "read": "2026-11-01",
+    "read": "2026-11-15",
     "sent": "14,000 acres drain into Russell Cave",
     "url": "https://www.nps.gov/ruca/index.htm",
     "why": "total-looking"
@@ -1598,7 +1486,7 @@
    "verdict": "off"
   },
   "US-1034": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Blue Springs State Park",
    "official": null,
@@ -1665,23 +1553,16 @@
    "verdict": "no size on page"
   },
   "US-1035": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Buck's Pocket State Park",
    "official": null,
    "ours": {
-    "acres": 669,
+    "acres": 0,
     "manager": "",
-    "pieces": [
-     [
-      256239,
-      "Buck's Pocket State Park",
-      669,
-      "name"
-     ]
-    ],
+    "pieces": [],
     "pin": "inside",
-    "src": "USGS PAD-US",
+    "src": "",
     "unknown_pieces": 1
    },
    "owner_now": null,
@@ -1714,22 +1595,13 @@
    "sizes": [],
    "t": "State Park",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "ours unknown"
   },
   "US-1036": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Cathedral Caverns State Park",
-   "official": {
-    "acres": 493.0,
-    "as": "493 acres",
-    "clean": true,
-    "line": "d, making it an excellent field trip destination for schools, churches, or other groups. The park encompasses 493 acres, and marked hiking trails are available for those who want to enjoy the outdoors. Recreation In addition to c",
-    "read": "2026-11-01",
-    "sent": "The park encompasses 493 acres, and marked hiking trails are available for those who want to enjoy the outdoors.",
-    "url": "https://www.alapark.com/parks/cathedral-caverns-state-park",
-    "why": "clean total"
-   },
+   "official": null,
    "ours": {
     "acres": 513,
     "dissolved": {
@@ -1769,7 +1641,7 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok",
+     "status": "rest",
      "url": "https://www.alapark.com/parks/cathedral-caverns-state-park",
      "why": "the park's page (data/parkinfo)"
     },
@@ -1785,29 +1657,18 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 4,
-   "same_agency": false,
-   "score": 8,
+   "pct": null,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 1,
     "source": 2
    },
-   "sizes": [
-    {
-     "acres": 493.0,
-     "as": "493 acres",
-     "clean": true,
-     "line": "d, making it an excellent field trip destination for schools, churches, or other groups. The park encompasses 493 acres, and marked hiking trails are available for those who want to enjoy the outdoors. Recreation In addition to c",
-     "total_like": true,
-     "url": "https://www.alapark.com/parks/cathedral-caverns-state-park",
-     "why": "clean total"
-    }
-   ],
+   "sizes": [],
    "t": "State Park",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "no size on page"
   },
   "US-1037": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 2,799 acres, no total words near it)",
@@ -2020,7 +1881,7 @@
   "US-10396": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Black Warrior Wildlife Management Area",
    "official": null,
    "ours": {
@@ -2147,11 +2008,11 @@
   "US-1041": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Frank Jackson State Park",
    "official": null,
    "ours": {
-    "acres": 2847,
+    "acres": 2460,
     "manager": "",
     "pieces": [
      [
@@ -2194,11 +2055,11 @@
   "US-1042": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Gulf State Park",
    "official": null,
    "ours": {
-    "acres": 3781,
+    "acres": 4958,
     "manager": "",
     "pieces": [
      [
@@ -2214,7 +2075,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 1
    },
@@ -2256,7 +2117,7 @@
   },
   "US-10428": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Walls of Jericho State Natural Area",
    "official": {
@@ -2264,13 +2125,13 @@
     "as": "25,000 acres",
     "clean": false,
     "line": "greet visitors to the Walls of Jericho in Jackson County by the headwaters of the Paint Rock River. The over 25,000 acres of tract acquisitions are an addition to the James D. Martin - Skyline Wildlife Management Area and physicall",
-    "read": "2026-11-01",
+    "read": "2026-11-15",
     "sent": "The over 25,000 acres of tract acquisitions are an addition to the James D.",
     "url": "https://www.alabamaforeverwild.com/walls-jericho",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 349,
+    "acres": 12617,
     "manager": "",
     "pieces": [
      [
@@ -2308,7 +2169,7 @@
      "why": "official map (parkinfo-web)"
     }
    ],
-   "pct": 99,
+   "pct": 50,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -2335,11 +2196,11 @@
   "US-1043": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Joe Wheeler State Park",
    "official": null,
    "ours": {
-    "acres": 2603,
+    "acres": 2370,
     "manager": "",
     "pieces": [
      [
@@ -2349,7 +2210,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 1
    },
@@ -2387,11 +2248,11 @@
   "US-1044": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Lake Guntersville State Park",
    "official": null,
    "ours": {
-    "acres": 7506,
+    "acres": 7041,
     "manager": "",
     "pieces": [
      [
@@ -2446,11 +2307,11 @@
   "US-1045": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Lake Lurleen State Park",
    "official": null,
    "ours": {
-    "acres": 1503,
+    "acres": 1647,
     "manager": "",
     "pieces": [
      [
@@ -2493,11 +2354,11 @@
   "US-1046": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Lakepoint Resort State Park",
    "official": null,
    "ours": {
-    "acres": 1303,
+    "acres": 1679,
     "manager": "",
     "pieces": [
      [
@@ -2545,11 +2406,11 @@
   "US-1047": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Meaher State Park",
    "official": null,
    "ours": {
-    "acres": 425,
+    "acres": 314,
     "manager": "",
     "pieces": [
      [
@@ -2559,7 +2420,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 1
    },
@@ -2592,11 +2453,11 @@
   "US-1048": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Monte Sano State Park",
    "official": null,
    "ours": {
-    "acres": 3491,
+    "acres": 2831,
     "manager": "",
     "pieces": [
      [
@@ -2668,11 +2529,11 @@
   "US-1049": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Oak Mountain State Park",
    "official": null,
    "ours": {
-    "acres": 12314,
+    "acres": 10831,
     "manager": "",
     "pieces": [
      [
@@ -2720,11 +2581,11 @@
   "US-1050": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Rickwood Caverns State Park",
    "official": null,
    "ours": {
-    "acres": 361,
+    "acres": 445,
     "manager": "",
     "pieces": [
      [
@@ -2767,11 +2628,11 @@
   "US-1051": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Wind Creek State Park",
    "official": null,
    "ours": {
-    "acres": 1284,
+    "acres": 1378,
     "manager": "",
     "pieces": [
      [
@@ -2812,7 +2673,7 @@
    "verdict": "no size on page"
   },
   "US-11025": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Uchee Creek Conservation Area",
    "ours": null,
@@ -2822,8 +2683,7 @@
    "verdict": "no outline"
   },
   "US-11026": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "The Indian Mountain Conservation Area",
    "official": {
@@ -2831,13 +2691,13 @@
     "as": "1,114 acres",
     "clean": true,
     "line": "ed in partnership with The Conservation Fund, the three tract acquisitions that make up Indian Mountain cover 1,114 acres of mountainous upland hardwood forest land in Cherokee County. Within the Indian Mountain Tract, the Pinhoti",
-    "read": "2026-11-01",
+    "read": "2026-11-15",
     "sent": "Purchased in partnership with The Conservation Fund, the three tract acquisitions that make up Indian Mountain cover 1,114 acres of mountainous upland hardwood forest land in Cherokee County.",
     "url": "https://www.alabamaforeverwild.com/indian-mountain",
     "why": "clean total"
    },
    "ours": {
-    "acres": 520,
+    "acres": 1115,
     "dissolved": {
      "after": 600,
      "before": 1709,
@@ -2848,8 +2708,10 @@
      },
      "family_fold": 80,
      "family_used": "sgalb",
+     "key_union": 1115,
      "parts": 0,
      "records": 5,
+     "summed": 520,
      "tracts": 2
     },
     "family_fold": "layers {'sgalb': 520, 'padus': 80}: one land in 2 layers, the sgalb copy used (80 ac of copies not added)",
@@ -2880,13 +2742,13 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 53,
+   "pct": 0,
    "same_agency": false,
-   "score": 4,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 0,
+    "size": 2,
     "source": 1
    },
    "sizes": [
@@ -2911,26 +2773,90 @@
    ],
    "t": "Conservation Area",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-11027": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Big Canoe Creek Nature Reserve",
-   "ours": null,
-   "score": null,
+   "official": {
+    "acres": 422.0,
+    "as": "422 acres",
+    "clean": false,
+    "line": "ver Wild Skip to main content Menu Search Overview Big Canoe Creek offers visitors the opportunity to explore 422 acres of Ridge and Valley lands containing a mix of upland hardwood/pine forest situated along the Big Canoe Creek",
+    "read": "2026-11-15",
+    "sent": "Big Canoe Creek offers visitors the opportunity to explore 422 acres of Ridge and Valley lands containing a mix of upland hardwood/pine forest situated along the Big Canoe Creek drainage.",
+    "url": "https://www.alabamaforeverwild.com/big-canoe-creek",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 382,
+    "manager": "",
+    "pieces": [
+     [
+      "sgalb181",
+      "Big Canoe Creek",
+      382,
+      "alias name (pin inside): Big Canoe Creek"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.alabamaforeverwild.com/big-canoe-creek",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://conservationgis.alabama.gov/Documents/NoHunting.pdf",
+     "why": "official map (parkinfo-web)"
+    }
+   ],
+   "pct": 9,
+   "same_agency": false,
+   "score": 5,
+   "score_parts": {
+    "name": 1,
+    "pin": 1,
+    "size": 2,
+    "source": 1
+   },
+   "sizes": [
+    {
+     "acres": 422.0,
+     "as": "422 acres",
+     "clean": false,
+     "line": "ver Wild Skip to main content Menu Search Overview Big Canoe Creek offers visitors the opportunity to explore 422 acres of Ridge and Valley lands containing a mix of upland hardwood/pine forest situated along the Big Canoe Creek",
+     "total_like": true,
+     "url": "https://www.alabamaforeverwild.com/big-canoe-creek",
+     "why": "total-looking"
+    }
+   ],
    "t": "Nature Reserve",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "agree"
   },
   "US-11032": {
-   "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Old Cahawba Prairie Conservation Reserve",
-   "official": null,
+   "official": {
+    "acres": 4564.0,
+    "as": "4,564 Acres",
+    "clean": false,
+    "line": "d - 0 0.5 10.25 Miles Forever Wild Land Trust Old Cahawba Prairie Tract Nature Preserve and Recreational Area 4,564 Acres Federal Trail (3.7 miles) Cahawba Trail (6.3 miles) Indian Trail (1.6 miles) Access roads Old Cahawba Rail Tr",
+    "read": "2026-11-15",
+    "sent": "4,564 Acres",
+    "url": "https://www.alabamaforeverwild.com/sites/default/files/Old-Cahawba-Prairie-Tract-Permit-Map-2025-2026.pdf",
+    "why": "a map label (no sentence)"
+   },
    "ours": {
-    "acres": 3078,
+    "acres": 4553,
     "manager": "",
     "pieces": [
      [
@@ -2963,12 +2889,13 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 0,
+   "same_agency": false,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 1
    },
    "sizes": [
@@ -2993,77 +2920,20 @@
    ],
    "t": "Conservation Reserve",
    "ver": 15,
-   "verdict": "unsure"
+   "verdict": "agree"
   },
   "US-11033": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "The Portland Landing Conservation Reserve",
-   "official": {
-    "acres": 2473.0,
-    "as": "2,473 acres",
-    "clean": false,
-    "line": "u Search Overview Together the Pine Barren Creek, Rum Creek, and the Portland Landing-Gilmore Addition create 2,473 acres of public hunting opportunity in the black belt prairie area of the State as part of the Portland Landing Spe",
-    "read": "2026-11-01",
-    "sent": "Together the Pine Barren Creek, Rum Creek, and the Portland Landing-Gilmore Addition create 2,473 acres of public hunting opportunity in the black belt prairie area of the State as part of the Portland Landing Special Opportunity Area.",
-    "url": "https://www.alabamaforeverwild.com/pine-barren-and-rum-creek",
-    "why": "total-looking"
-   },
-   "ours": {
-    "acres": 317,
-    "manager": "",
-    "pieces": [
-     [
-      "sgalb190",
-      "Portland Landing - Gilmore Addition",
-      317,
-      "name"
-     ]
-    ],
-    "pin": "well outside",
-    "src": "",
-    "unknown_pieces": 0
-   },
-   "owner_now": null,
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://www.alabamaforeverwild.com/pine-barren-and-rum-creek",
-     "why": "the park's page (data/parkinfo)"
-    },
-    {
-     "status": "ok, no readable text",
-     "url": "https://www.outdooralabama.com/sites/default/files/Wildlife/wildlife-management-areas/2021-2022/SOA/SOA-%20portland.pdf",
-     "why": "official map (parkinfo-web)"
-    }
-   ],
-   "pct": 87,
-   "same_agency": false,
-   "score": 3,
-   "score_parts": {
-    "name": 2,
-    "pin": 0,
-    "size": 0,
-    "source": 1
-   },
-   "sizes": [
-    {
-     "acres": 2473.0,
-     "as": "2,473 acres",
-     "clean": false,
-     "line": "u Search Overview Together the Pine Barren Creek, Rum Creek, and the Portland Landing-Gilmore Addition create 2,473 acres of public hunting opportunity in the black belt prairie area of the State as part of the Portland Landing Spe",
-     "total_like": true,
-     "url": "https://www.alabamaforeverwild.com/pine-barren-and-rum-creek",
-     "why": "total-looking"
-    }
-   ],
+   "ours": null,
+   "score": null,
    "t": "Conservation Reserve",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "no outline"
   },
   "US-11272": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Mulberry Fork Wildlife Management Area",
    "official": {
@@ -3071,7 +2941,7 @@
     "as": "33,280 acres",
     "clean": false,
     "line": "ry Fork Wildlife Management Area Tract in Walker and Tuscaloosa counties provides a 94-year hunting lease for 33,280 acres. Mountainous and wooded terrain, host springs and rocky bluffs comprise the landscape, along with early succe",
-    "read": "2026-11-01",
+    "read": "2026-11-15",
     "sent": "The Mulberry Fork Wildlife Management Area Tract in Walker and Tuscaloosa counties provides a 94-year hunting lease for 33,280 acres.",
     "url": "https://www.alabamaforeverwild.com/mulberry-fork-wma",
     "why": "total-looking"
@@ -3084,7 +2954,7 @@
       "sgalc286",
       "Mulberry Fork Wildlife Management Area",
       33251,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -3130,7 +3000,7 @@
   },
   "US-11292": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Historic Blakeley State Park Historic Site",
    "official": {
@@ -3138,7 +3008,7 @@
     "as": "2,000 acres",
     "clean": false,
     "line": "Park is one of the largest and most diverse attractions within the Gulf Coast region. Within these more than 2,000 acres of some of the most biodiverse habitat in North America, the park contains the sites of Alabama's largest Civ",
-    "read": "2026-11-01",
+    "read": "2026-11-15",
     "sent": "Within these more than 2,000 acres of some of the most biodiverse habitat in North America, the park contains the sites of Alabama's largest Civil War battle, the important early Alabama town of Blakeley, and Native American settlements dating back thousands of years.",
     "url": "https://www.blakeleypark.com/",
     "why": "total-looking"
@@ -3191,58 +3061,17 @@
    "verdict": "off"
   },
   "US-11376": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "USS Alabama Battleship Park",
-   "official": null,
-   "ours": {
-    "acres": 81,
-    "manager": "",
-    "pieces": [
-     [
-      166717,
-      "Battleship Memorial Park",
-      81,
-      "reviewed"
-     ]
-    ],
-    "pin": "just outside",
-    "src": "USGS PAD-US",
-    "unknown_pieces": 0
-   },
-   "owner_now": null,
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://www.ussalabama.com/",
-     "why": "the park's page (data/parkinfo)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.ussalabama.com/explore/park-history/",
-     "why": "about / history page of the park's site"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.ussalabama.com/get-involved/living-history-crew/",
-     "why": "about / history page of the park's site"
-    }
-   ],
-   "pct": null,
-   "score": 4,
-   "score_parts": {
-    "name": 2,
-    "pin": 1,
-    "size": 1,
-    "source": 0
-   },
-   "sizes": [],
+   "ours": null,
+   "score": null,
    "t": "Park",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "no outline"
   },
   "US-12311": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Butler County State Wildlife Management Area",
    "ours": null,
@@ -3252,7 +3081,7 @@
    "verdict": "no outline"
   },
   "US-12405": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "TVA Guntersville Dam 5(1)(g) Reserve",
    "ours": null,
@@ -3262,7 +3091,7 @@
    "verdict": "no outline"
   },
   "US-12409": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "TVA Cave Mountain Small Wild Area National Park",
    "ours": null,
@@ -3272,7 +3101,7 @@
    "verdict": "no outline"
   },
   "US-12410": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "TVA Flint Creek Access National Park",
    "ours": null,
@@ -3282,7 +3111,7 @@
    "verdict": "no outline"
   },
   "US-12411": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "TVA Second Creek Access Area National Park",
    "ours": null,
@@ -3292,7 +3121,7 @@
    "verdict": "no outline"
   },
   "US-12412": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "TVA Rockpile Recreation Area National Park",
    "ours": null,
@@ -3302,7 +3131,7 @@
    "verdict": "no outline"
   },
   "US-12517": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Confederate Memorial Park Historic Site",
    "ours": null,
@@ -3312,7 +3141,7 @@
    "verdict": "no outline"
   },
   "US-12603": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Fort Mims Historic Site",
    "official": null,
@@ -3353,7 +3182,7 @@
    "verdict": "no size on page"
   },
   "US-12740": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Hinds Road Outcrop Forever Wild Tract State Conservation Area",
    "official": {
@@ -3361,7 +3190,7 @@
     "as": "80 acres",
     "clean": false,
     "line": "to by Ashley Peters Overview The Hinds Road Outcrop is a Forever Wild property in Etowah County consisting of 80 acres of mixed hardwood/pine forest and large expanses of treeless sandstone rock outcrops. The thin soils associat",
-    "read": "2026-11-01",
+    "read": "2026-11-15",
     "sent": "The Hinds Road Outcrop is a Forever Wild property in Etowah County consisting of 80 acres of mixed hardwood/pine forest and large expanses of treeless sandstone rock outcrops.",
     "url": "https://www.alabamaforeverwild.com/hinds-road-outcrop",
     "why": "total-looking"
@@ -3387,6 +3216,11 @@
      "status": "ok",
      "url": "https://www.alabamaforeverwild.com/hinds-road-outcrop",
      "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://conservationgis.alabama.gov/Documents/NoHunting.pdf",
+     "why": "official map (parkinfo-web)"
     }
    ],
    "pct": 0,
@@ -3414,7 +3248,7 @@
    "verdict": "agree"
   },
   "US-12803": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Lee County State Public Fishing Lake",
    "official": {
@@ -3422,7 +3256,7 @@
     "as": "130 acre",
     "clean": false,
     "line": "ke Lee County State Public Fishing Lake is located approximately 12 miles southeast of Auburn, Alabama . This 130-acre lake is stocked with l argemouth bass, bluegill, redear sunfish, channel catfish, and crappie. Amenities incl",
-    "read": "2026-11-01",
+    "read": "2026-11-15",
     "sent": "This 130-acre lake is stocked with l argemouth bass, bluegill, redear sunfish, channel catfish, and crappie.",
     "url": "https://www.outdooralabama.com/public-fishing-lakes/lee-county-pfl",
     "why": "part (a lake, a purchase, a campground…)"
@@ -3484,7 +3318,7 @@
    "verdict": "agree"
   },
   "US-12962": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "TVA Veterans Park Regional Park",
    "ours": null,
@@ -3494,7 +3328,7 @@
    "verdict": "no outline"
   },
   "US-12963": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Washington County State Public Fishing Lake",
    "official": {
@@ -3502,13 +3336,13 @@
     "as": "84 acre",
     "clean": false,
     "line": "tate Public Fishing Lake, also known as J. Emmett Wood Lake, is located 2 miles west of Millry, Alabama. This 84-acre lake is stocked with largemouth bass, bluegill, redear sunfish, crappie, and channel catfish. Amenities inclu",
-    "read": "2026-11-01",
+    "read": "2026-11-15",
     "sent": "This 84-acre lake is stocked with largemouth bass, bluegill, redear sunfish, crappie, and channel catfish.",
     "url": "https://www.outdooralabama.com/alabama-public-fishing-lakes-pfls/washington-county-pfl",
     "why": "part (a lake, a purchase, a campground…)"
    },
    "ours": {
-    "acres": 80,
+    "acres": 88,
     "manager": "",
     "pieces": [
      [
@@ -3564,7 +3398,7 @@
    "verdict": "agree"
   },
   "US-12964": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Dallas County State Public Fishing Lake",
    "official": {
@@ -3572,7 +3406,7 @@
     "as": "100 acre",
     "clean": false,
     "line": "Public Fishing Lake Dallas County State Public Fishing Lake is located 11 miles south of Selma, Alabama. This 100-acre lake is stocked with l argemouth bass, bluegill, redear sunfish, channel catfish, and crappie. Amenities incl",
-    "read": "2026-11-01",
+    "read": "2026-11-15",
     "sent": "This 100-acre lake is stocked with l argemouth bass, bluegill, redear sunfish, channel catfish, and crappie.",
     "url": "https://www.outdooralabama.com/alabama-public-fishing-lakes-pfls/dallas-county-pfl",
     "why": "part (a lake, a purchase, a campground…)"
@@ -3634,7 +3468,7 @@
    "verdict": "agree"
   },
   "US-12965": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Dale Country State Public Fishing Lake",
    "official": {
@@ -3642,13 +3476,13 @@
     "as": "92 acre",
     "clean": false,
     "line": "known as Ed Lisenby Lake, is located 1 mile north of Roy Parker Road (County Road 36) in Ozark, Alabama. This 92-acre lake is stocked with l argemouth bass, bluegill, redear sunfish, and channel catfish. Amenities include restr",
-    "read": "2026-11-01",
+    "read": "2026-11-15",
     "sent": "This 92-acre lake is stocked with l argemouth bass, bluegill, redear sunfish, and channel catfish.",
     "url": "https://www.outdooralabama.com/alabama-public-fishing-lakes-pfls/dale-county-pfl",
     "why": "part (a lake, a purchase, a campground…)"
    },
    "ours": {
-    "acres": 84,
+    "acres": 100,
     "manager": "",
     "pieces": [
      [
@@ -3705,7 +3539,7 @@
   },
   "US-12966": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Geneva County State Public Fishing Lake",
    "official": {
@@ -3713,13 +3547,13 @@
     "as": "35 acre",
     "clean": false,
     "line": "uth bass, bluegill, redear sunfish, channel catfish, and crappie. Facilities 33-acre Upper Geneva County Lake 35-acre Lower Geneva County Lake Boat ramp Fishing pier (ADA Compliant) Restrooms Concessions, including bait, tackle",
-    "read": "2026-11-01",
+    "read": "2026-11-15",
     "sent": "35-acre Lower Geneva County Lake",
     "url": "https://www.outdooralabama.com/alabama-public-fishing-lakes-pfls/geneva-county-pfl",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 57,
+    "acres": 63,
     "manager": "",
     "pieces": [
      [
@@ -3741,7 +3575,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 63,
+   "pct": 80,
    "same_agency": false,
    "score": 5,
    "score_parts": {
@@ -3775,7 +3609,7 @@
    "verdict": "off"
   },
   "US-12967": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Chambers County State Public Fishing Lake",
    "official": {
@@ -3783,7 +3617,7 @@
     "as": "183 acre",
     "clean": false,
     "line": "shing Lake Chambers County State Public Fishing Lake is located 5 miles southeast of LaFayette, Alabama. This 183-acre lake is stocked with largemouth bass, bluegill, redear sunfish, channel catfish, and crappie. Amenities inclu",
-    "read": "2026-11-01",
+    "read": "2026-11-15",
     "sent": "This 183-acre lake is stocked with largemouth bass, bluegill, redear sunfish, channel catfish, and crappie.",
     "url": "https://www.outdooralabama.com/alabama-public-fishing-lakes-pfls/chambers-county-pfl",
     "why": "part (a lake, a purchase, a campground…)"
@@ -3845,21 +3679,21 @@
    "verdict": "agree"
   },
   "US-12968": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Walker County State Public Fishing Lake",
    "official": {
     "acres": 163.0,
     "as": "163 acre",
     "clean": false,
-    "line": "ic Fishing Lake Walker County State Public Fishing Lake is located 3 miles southeast of Jasper, Alabama. This 163-acre lake is stocked with largemouth bass, bluegill, redear sunfish, channel catfish, crappie, hybrid striped bass",
-    "read": "2026-11-01",
+    "line": "for Renovation Walker County State Public Fishing Lake is located 3 miles southeast of Jasper, Alabama. This 163-acre lake is stocked with largemouth bass, bluegill, redear sunfish, channel catfish, crappie, hybrid striped bass",
+    "read": "2026-11-15",
     "sent": "This 163-acre lake is stocked with largemouth bass, bluegill, redear sunfish, channel catfish, crappie, hybrid striped bass, and rainbow trout during winter.",
     "url": "https://www.outdooralabama.com/alabama-public-fishing-lakes-pfls/walker-county-pfl",
     "why": "part (a lake, a purchase, a campground…)"
    },
    "ours": {
-    "acres": 152,
+    "acres": 160,
     "manager": "",
     "pieces": [
      [
@@ -3881,7 +3715,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 7,
+   "pct": 2,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -3895,7 +3729,7 @@
      "acres": 163.0,
      "as": "163 acre",
      "clean": false,
-     "line": "ic Fishing Lake Walker County State Public Fishing Lake is located 3 miles southeast of Jasper, Alabama. This 163-acre lake is stocked with largemouth bass, bluegill, redear sunfish, channel catfish, crappie, hybrid striped bass",
+     "line": "for Renovation Walker County State Public Fishing Lake is located 3 miles southeast of Jasper, Alabama. This 163-acre lake is stocked with largemouth bass, bluegill, redear sunfish, channel catfish, crappie, hybrid striped bass",
      "total_like": false,
      "url": "https://www.outdooralabama.com/alabama-public-fishing-lakes-pfls/walker-county-pfl",
      "why": "part (a lake, a purchase, a campground…)"
@@ -3915,21 +3749,13 @@
    "verdict": "agree"
   },
   "US-12969": {
-   "checked": "2026-11-01",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Marion County State Public Fishing Lake",
-   "official": {
-    "acres": 37.0,
-    "as": "37 acre",
-    "clean": false,
-    "line": "Marion County State Public Fishing Lake is located 6 miles north of Guin, Alabama, off U.S. Highway 43. This 37-acre lake is stocked with largemouth bass, bluegill, redear sunfish, channel catfish, and crappie. Amenities inclu",
-    "read": "2026-11-01",
-    "sent": "This 37-acre lake is stocked with largemouth bass, bluegill, redear sunfish, channel catfish, and crappie.",
-    "url": "https://www.outdooralabama.com/alabama-public-fishing-lakes-pfls/marion-county-pfl",
-    "why": "part (a lake, a purchase, a campground…)"
-   },
+   "official": null,
    "ours": {
-    "acres": 40,
+    "acres": 49,
     "manager": "",
     "pieces": [
      [
@@ -3951,13 +3777,12 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 8,
-   "same_agency": false,
-   "score": 7,
+   "pct": null,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 2,
+    "size": 1,
     "source": 2
    },
    "sizes": [
@@ -3982,10 +3807,10 @@
    ],
    "t": "State Public Fishing Lake",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "unsure"
   },
   "US-12970": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Madison County Public State Fishing Lake",
    "official": {
@@ -3993,7 +3818,7 @@
     "as": "105 acre",
     "clean": false,
     "line": "Lake Madison County State Public Fishing Lake is located 11 miles east of Huntsville in Gurley, Alabama. This 105-acre lake is stocked with largemouth bass, bluegill, redear sunfish, channel catfish, crappie, and rainbow trout d",
-    "read": "2026-11-01",
+    "read": "2026-11-15",
     "sent": "This 105-acre lake is stocked with largemouth bass, bluegill, redear sunfish, channel catfish, crappie, and rainbow trout during winter.",
     "url": "https://www.outdooralabama.com/alabama-public-fishing-lakes-pfls/madison-county-pfl",
     "why": "part (a lake, a purchase, a campground…)"
@@ -4048,78 +3873,19 @@
    "verdict": "ours unknown"
   },
   "US-12996": {
-   "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Fowl River Access Site BLM Recreation Management Area",
-   "official": null,
-   "ours": {
-    "acres": 792,
-    "manager": "",
-    "pieces": [
-     [
-      166042,
-      "Fowl River",
-      792,
-      "name"
-     ]
-    ],
-    "pin": "well outside",
-    "src": "USGS PAD-US",
-    "unknown_pieces": 0
-   },
-   "owner_now": null,
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://www.blm.gov/sites/default/files/docs/2022-06/News%20Release.Fowl%20River_FINAL.pdf",
-     "why": "the park's page (data/parkinfo)"
-    }
-   ],
-   "pct": null,
-   "score": 3,
-   "score_parts": {
-    "name": 2,
-    "pin": 0,
-    "size": 1,
-    "source": 0
-   },
-   "sizes": [
-    {
-     "acres": 5.1,
-     "as": "5.1 acres",
-     "clean": false,
-     "line": "FLOWOOD, Miss. – The Bureau of Land Management is increasing outdoor recreational opportunities by acquiring 5.1 acres that opens access to more than 40 acres of public land and 300 river miles along the Fowl River in Mobile Co",
-     "total_like": false,
-     "url": "https://www.blm.gov/sites/default/files/docs/2022-06/News%20Release.Fowl%20River_FINAL.pdf",
-     "why": "a map label (no sentence)"
-    },
-    {
-     "acres": 40.0,
-     "as": "40 acres",
-     "clean": false,
-     "line": "ement is increasing outdoor recreational opportunities by acquiring 5.1 acres that opens access to more than 40 acres of public land and 300 river miles along the Fowl River in Mobile County, Alabama. The BLM and its partners",
-     "total_like": false,
-     "url": "https://www.blm.gov/sites/default/files/docs/2022-06/News%20Release.Fowl%20River_FINAL.pdf",
-     "why": "a map label (no sentence)"
-    },
-    {
-     "acres": 5.1,
-     "as": "5.1 acre",
-     "clean": false,
-     "line": "brated the acquisition of the Fowl River Access Site with a ribbon cutting ceremony on Thursday, June 9. The 5.1-acre property was purchased through the Land and Water Conservation Fund, a fund authorized by Congress to protec",
-     "total_like": false,
-     "url": "https://www.blm.gov/sites/default/files/docs/2022-06/News%20Release.Fowl%20River_FINAL.pdf",
-     "why": "a map label (no sentence)"
-    }
-   ],
+   "ours": null,
+   "score": null,
    "t": "BLM Recreation Management Area",
    "ver": 15,
-   "verdict": "unsure"
+   "verdict": "no outline"
   },
   "US-13003": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "TVA Little Bear Creek Dam Multiple Use Area",
    "official": null,
    "ours": {
@@ -4166,7 +3932,7 @@
   "US-13004": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "TVA Cedar Creek Dam Multiple Use Area",
    "ours": {
     "acres": 2716,
@@ -4191,7 +3957,7 @@
   "US-13005": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "TVA Big Bear Creek Dam Multiple Use Area",
    "ours": {
     "acres": 2327,
@@ -4214,10 +3980,10 @@
    "verdict": "no outline"
   },
   "US-13081": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
-   "last_read_failed": "2026-11-08",
    "n": "Fort Toulouse Forever Wild Tract State Wildlife Area",
+   "official": null,
    "ours": {
     "acres": 254,
     "manager": "",
@@ -4229,17 +3995,38 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 0
    },
-   "score": null,
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok (browser)",
+     "url": "https://conservationgis.alabama.gov/dcnr/?xmin=-9605230&ymin=3827740&xmax=-9596060&ymax=3831670",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://conservationgis.alabama.gov/Documents/NoHunting.pdf",
+     "why": "official map (parkinfo-web)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
    "t": "State Wildlife Area",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "no size on page"
   },
   "US-13083": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "TVA Wheeler Dam Public Park National Recreation Area",
    "ours": null,
@@ -4249,18 +4036,18 @@
    "verdict": "no outline"
   },
   "US-13088": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Choctaw Nation Wildlife Refuge National Wildlife Area",
    "official": {
     "acres": 4218.0,
-    "as": "4,218 acres",
+    "as": "4,218 acre",
     "clean": false,
-    "line": "njoy. Learn More About Visiting Location and Contact Information About Us Choctaw National Wildlife Refuge is 4,218 acres acquired by the Corp of Engineers in conjunction with the Coffeeville Lock and Dam project. The refuge encomp",
-    "read": "2026-11-01",
-    "sent": "Choctaw National Wildlife Refuge is 4,218 acres acquired by the Corp of Engineers in conjunction with the Coffeeville Lock and Dam project.",
+    "line": "and nesting habitat for wood ducks. Located on the west bank of the Tombigbee River in southwest Alabama, the 4,218-acre refuge supports over 10,000 wintering waterfowl and produces up to 200 wood duck broods annually. It also pro",
+    "read": "2026-11-15",
+    "sent": "Located on the west bank of the Tombigbee River in southwest Alabama, the 4,218-acre refuge supports over 10,000 wintering waterfowl and produces up to 200 wood duck broods annually.",
     "url": "https://www.fws.gov/refuge/choctaw",
-    "why": "part (a lake, a purchase, a campground…)"
+    "why": "history"
    },
    "ours": {
     "acres": 3975,
@@ -4286,12 +4073,12 @@
     },
     {
      "other_unit": true,
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/choctaw/visit-us/rules-policies",
      "why": "rules page (documents bot)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/choctaw/about-us",
      "why": "FWS refuge about page"
     }
@@ -4308,57 +4095,12 @@
    "sizes": [
     {
      "acres": 4218.0,
-     "as": "4,218 acres",
+     "as": "4,218 acre",
      "clean": false,
-     "line": "njoy. Learn More About Visiting Location and Contact Information About Us Choctaw National Wildlife Refuge is 4,218 acres acquired by the Corp of Engineers in conjunction with the Coffeeville Lock and Dam project. The refuge encomp",
+     "line": "and nesting habitat for wood ducks. Located on the west bank of the Tombigbee River in southwest Alabama, the 4,218-acre refuge supports over 10,000 wintering waterfowl and produces up to 200 wood duck broods annually. It also pro",
      "total_like": false,
      "url": "https://www.fws.gov/refuge/choctaw",
-     "why": "part (a lake, a purchase, a campground…)"
-    },
-    {
-     "acres": 1802.0,
-     "as": "1,802 acres",
-     "clean": false,
-     "line": "p of Engineers in conjunction with the Coffeeville Lock and Dam project. The refuge encompasses approximately 1,802 acres of lakes, sloughs, and creeks, 2,265 acres of bottomland hardwoods, and 151 acres of croplands and moist soil",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/choctaw",
-     "why": "part (a lake, a purchase, a campground…)"
-    },
-    {
-     "acres": 2265.0,
-     "as": "2,265 acres",
-     "clean": false,
-     "line": "eeville Lock and Dam project. The refuge encompasses approximately 1,802 acres of lakes, sloughs, and creeks, 2,265 acres of bottomland hardwoods, and 151 acres of croplands and moist soil units. Learn More About Us What We Do Imag",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/choctaw",
-     "why": "part (a lake, a purchase, a campground…)"
-    },
-    {
-     "acres": 151.0,
-     "as": "151 acres",
-     "clean": false,
-     "line": "encompasses approximately 1,802 acres of lakes, sloughs, and creeks, 2,265 acres of bottomland hardwoods, and 151 acres of croplands and moist soil units. Learn More About Us What We Do Image Details Lakes, sloughs, and creeks co",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/choctaw",
-     "why": "part (a lake, a purchase, a campground…)"
-    },
-    {
-     "acres": 151.0,
-     "as": "151 acres",
-     "clean": false,
-     "line": "o Image Details Lakes, sloughs, and creeks comprise over 40 percent of Choctaw National Wildlife Refuge. Only 151 acres consist of openings or clearings, such as farm fields or most-soil units. The remainder, or 2,265 acres, is c",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/choctaw",
-     "why": "part (a lake, a purchase, a campground…)"
-    },
-    {
-     "acres": 2265.0,
-     "as": "2,265 acres",
-     "clean": false,
-     "line": "e. Only 151 acres consist of openings or clearings, such as farm fields or most-soil units. The remainder, or 2,265 acres, is composed of typical bottomland hardwoods associated with the Tombigbee River Basin. More About What We Do",
-     "total_like": true,
-     "url": "https://www.fws.gov/refuge/choctaw",
-     "why": "total-looking"
+     "why": "history"
     }
    ],
    "t": "National Wildlife Area",
@@ -4367,7 +4109,7 @@
   },
   "US-13311": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "TVA Upper Bear Creek Dam Resource Management Area",
    "official": null,
@@ -4424,7 +4166,7 @@
    "verdict": "unsure"
   },
   "US-13317": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Coffee County State Public Fishing Lake",
    "official": {
@@ -4432,13 +4174,13 @@
     "as": "80 acre",
     "clean": false,
     "line": "blic Fishing Lake Coffee County State Public Fishing Lake is located 8 miles northwest of Elba, Alabama. This 80-acre lake is stocked with largemouth bass, bluegill, redear sunfish, channel catfish, and crappie. Amenities inclu",
-    "read": "2026-11-01",
+    "read": "2026-11-15",
     "sent": "This 80-acre lake is stocked with largemouth bass, bluegill, redear sunfish, channel catfish, and crappie.",
     "url": "https://www.outdooralabama.com/public-fishing-lakes/coffee-county-pfl",
     "why": "part (a lake, a purchase, a campground…)"
    },
    "ours": {
-    "acres": 76,
+    "acres": 71,
     "manager": "",
     "pieces": [
      [
@@ -4460,7 +4202,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 5,
+   "pct": 11,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -4486,12 +4228,12 @@
   },
   "US-13318": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Pike County State Public Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 37,
+    "acres": 35,
     "manager": "",
     "pieces": [
      [
@@ -4546,7 +4288,7 @@
    "verdict": "unsure"
   },
   "US-13338": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Clay County State Public Fishing Lake",
    "official": {
@@ -4554,7 +4296,7 @@
     "as": "13 + 23 + 38 acres",
     "clean": false,
     "line": "s Fred R. Harders Lake, is located 1 mile west of Delta, Alabama. This ADCNR facility features three lakes of 13, 23 and 38 acres stocked with largemouth bass, bluegill, redear sunfish, channel catfish, and crappie. Amenities include restr",
-    "read": "2026-11-01",
+    "read": "2026-11-15",
     "sent": "",
     "url": "https://www.outdooralabama.com/public-fishing-lakes/clay-county-pfl",
     "why": "sum of the pieces named in one sentence"
@@ -4634,7 +4376,7 @@
    "verdict": "agree"
   },
   "US-13340": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "DeKalb County State Public Fishing Lake",
    "official": {
@@ -4642,13 +4384,13 @@
     "as": "120 acre",
     "clean": false,
     "line": "e DeKalb County State Public Fishing Lake is located on Sand Mountain 1 mile north of Sylvania, Alabama. This 120-acre lake is stocked with l argemouth bass, bluegill, redear sunfish, channel catfish, and crappie . Amenities inc",
-    "read": "2026-11-01",
+    "read": "2026-11-15",
     "sent": "This 120-acre lake is stocked with l argemouth bass, bluegill, redear sunfish, channel catfish, and crappie .",
     "url": "https://www.outdooralabama.com/public-fishing-lakes/dekalb-county-pfl",
     "why": "part (a lake, a purchase, a campground…)"
    },
    "ours": {
-    "acres": 114,
+    "acres": 138,
     "manager": "",
     "pieces": [
      [
@@ -4670,7 +4412,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 5,
+   "pct": 15,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -4704,7 +4446,7 @@
    "verdict": "agree"
   },
   "US-13342": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Bibb Country State Public Fishing Lake",
    "official": {
@@ -4712,13 +4454,13 @@
     "as": "100 acre",
     "clean": false,
     "line": "c Fishing Lake Bibb County State Public Fishing Lake is located 7.5 miles north of Centreville, Alabama. This 100-acre lake is stocked with largemouth bass, bluegill, redear sunfish, channel catfish, and crappie. Amenities inclu",
-    "read": "2026-11-01",
+    "read": "2026-11-15",
     "sent": "This 100-acre lake is stocked with largemouth bass, bluegill, redear sunfish, channel catfish, and crappie.",
     "url": "https://www.outdooralabama.com/public-fishing-lakes/bibb-county-pfl",
     "why": "part (a lake, a purchase, a campground…)"
    },
    "ours": {
-    "acres": 95,
+    "acres": 107,
     "manager": "",
     "pieces": [
      [
@@ -4740,7 +4482,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 5,
+   "pct": 7,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -4774,21 +4516,13 @@
    "verdict": "agree"
   },
   "US-13343": {
-   "checked": "2026-11-01",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Fayette County State Public Fishing Lake",
-   "official": {
-    "acres": 60.0,
-    "as": "60 acre",
-    "clean": false,
-    "line": "Fishing Lake Fayette County State Public Fishing Lake is located 6 miles southeast of Fayette, Alabama. This 60-acre lake is stocked with l argemouth bass, bluegill, redear sunfish, and channel catfish . Amenities include rest",
-    "read": "2026-11-01",
-    "sent": "This 60-acre lake is stocked with l argemouth bass, bluegill, redear sunfish, and channel catfish .",
-    "url": "https://www.outdooralabama.com/public-fishing-lakes/fayette-county-pfl",
-    "why": "part (a lake, a purchase, a campground…)"
-   },
+   "official": null,
    "ours": {
-    "acres": 58,
+    "acres": 70,
     "manager": "",
     "pieces": [
      [
@@ -4810,13 +4544,12 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 3,
-   "same_agency": false,
-   "score": 7,
+   "pct": null,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 2,
+    "size": 1,
     "source": 2
    },
    "sizes": [
@@ -4841,24 +4574,16 @@
    ],
    "t": "State Public Fishing Lake",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "unsure"
   },
   "US-13344": {
-   "checked": "2026-11-01",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Lamar County State Public Fishing Lake",
-   "official": {
-    "acres": 68.0,
-    "as": "68 acre",
-    "clean": false,
-    "line": "e Public Fishing Lake Lamar County State Public Fishing Lake is located 8 miles west of Vernon, Alabama. This 68-acre lake is stocked with l argemouth bass, bluegill, redear sunfish, channel catfish, crappie, and hybrid striped",
-    "read": "2026-11-01",
-    "sent": "This 68-acre lake is stocked with l argemouth bass, bluegill, redear sunfish, channel catfish, crappie, and hybrid striped bass .",
-    "url": "https://www.outdooralabama.com/public-fishing-lakes/lamar-county-pfl",
-    "why": "part (a lake, a purchase, a campground…)"
-   },
+   "official": null,
    "ours": {
-    "acres": 58,
+    "acres": 54,
     "manager": "",
     "pieces": [
      [
@@ -4880,13 +4605,12 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 15,
-   "same_agency": false,
-   "score": 7,
+   "pct": null,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 2,
+    "size": 1,
     "source": 2
    },
    "sizes": [
@@ -4911,10 +4635,10 @@
    ],
    "t": "State Public Fishing Lake",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "unsure"
   },
   "US-13345": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Monroe County State Public Fishing Lake",
    "official": {
@@ -4922,7 +4646,7 @@
     "as": "94 acre",
     "clean": false,
     "line": "ublic Fishing Lake Monroe County State Public Fishing Lake is located 5 miles west of Beatrice, Alabama. This 94-acre lake is stocked with largemouth bass, bluegill, redear sunfish, and channel catfish. Amenities include restro",
-    "read": "2026-11-01",
+    "read": "2026-11-15",
     "sent": "This 94-acre lake is stocked with largemouth bass, bluegill, redear sunfish, and channel catfish.",
     "url": "https://www.outdooralabama.com/public-fishing-lakes/monroe-county-pfl",
     "why": "part (a lake, a purchase, a campground…)"
@@ -4984,7 +4708,7 @@
    "verdict": "agree"
   },
   "US-13473": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Old Cahawba Archaeological Park State Historical Park",
    "ours": null,
@@ -4994,7 +4718,7 @@
    "verdict": "no outline"
   },
   "US-13533": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Brierfield Ironworks Historial State Park State Historical Park",
    "ours": null,
@@ -5004,7 +4728,7 @@
    "verdict": "no outline"
   },
   "US-13558": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "St. Stephens State Historical Park",
    "ours": null,
@@ -5016,11 +4740,11 @@
   "US-3600": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Bladon Springs State Park",
    "official": null,
    "ours": {
-    "acres": 154,
+    "acres": 310,
     "manager": "",
     "pieces": [
      [
@@ -5030,7 +4754,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 1
    },
@@ -5061,7 +4785,7 @@
    "verdict": "no size on page"
   },
   "US-3601": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Tannehill Ironworks State Historical Park",
    "official": {
@@ -5069,7 +4793,7 @@
     "as": "1,500 acres",
     "clean": false,
     "line": "day’s visitors a pleasurable escape from modern life. Tannehill Ironworks Historical State Park has more than 1,500 acres in three counties set aside for hiking, camping and outdoor recreation. A miniature railroad chugs through th",
-    "read": "2026-11-01",
+    "read": "2026-11-15",
     "sent": "Tannehill Ironworks Historical State Park has more than 1,500 acres in three counties set aside for hiking, camping and outdoor recreation.",
     "url": "https://www.tannehillstatepark.org/",
     "why": "total-looking"
@@ -5134,7 +4858,7 @@
    "verdict": "agree"
   },
   "US-3602": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Birmingham Civil Rights National Monument",
    "official": null,
@@ -5194,7 +4918,7 @@
    "verdict": "ours unknown"
   },
   "US-3603": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Freedom Riders National Monument",
    "official": null,
@@ -5263,11 +4987,11 @@
   "US-3676": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Chickasaw State Park",
    "official": null,
    "ours": {
-    "acres": 351,
+    "acres": 489,
     "manager": "",
     "pieces": [
      [
@@ -5310,11 +5034,11 @@
   "US-3677": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Paul M. Grist State Park",
    "official": null,
    "ours": {
-    "acres": 1146,
+    "acres": 1094,
     "manager": "",
     "pieces": [
      [
@@ -5357,7 +5081,7 @@
   "US-3678": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Roland Cooper State Park",
    "official": null,
    "ours": {
@@ -5396,7 +5120,7 @@
   },
   "US-3679": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Charles D. Kelley Wildlife Management Area",
    "official": null,
@@ -5448,7 +5172,7 @@
   },
   "US-3680": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Barbour Wildlife Management Area",
    "official": null,
@@ -5461,7 +5185,7 @@
       "sgalc262",
       "Barbour Wildlife Management Area",
       29565,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -5505,7 +5229,7 @@
    "verdict": "unsure"
   },
   "US-3681": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Blowing Springs Cave Preserve State Conservation Area",
    "official": {
@@ -5513,7 +5237,7 @@
     "as": "60 acre",
     "clean": false,
     "line": "d Property The May apple is woodland plant typically growing in colonies. common snapping turtle Overview The 60-acre Blowing Springs Cave Tract in Lauderdale County is primarily preserved to protect the cave habitat vital to t",
-    "read": "2026-11-01",
+    "read": "2026-11-15",
     "sent": "The 60-acre Blowing Springs Cave Tract in Lauderdale County is primarily preserved to protect the cave habitat vital to the federally-listed gray bat ( Myotis grisescens ).",
     "url": "https://www.alabamaforeverwild.com/blowing-springs-cave",
     "why": "total-looking"
@@ -5566,7 +5290,7 @@
    "verdict": "agree"
   },
   "US-3682": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Cheaha Wilderness Area",
    "official": {
@@ -5574,7 +5298,7 @@
     "as": "6,780 acres",
     "clean": true,
     "line": "essary in wilderness . Contacts Applicable Wilderness Law(s) Public Law 97-411 Date: January 3, 1983 Acreage: 6,780 acres (No official title, designates Cheaha Wilderness) - Public law 97-411 (1/3/1983) To designate the Cheaha Wild",
-    "read": "2026-11-01",
+    "read": "2026-11-15",
     "sent": "Acreage: 6,780 acres",
     "url": "https://wilderness.net/visit-wilderness/?ID=115",
     "why": "clean total"
@@ -5662,7 +5386,7 @@
   "US-3683": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Choccolocco Wildlife Management Area",
    "official": null,
    "ours": {
@@ -5702,7 +5426,7 @@
    "verdict": "no size on page"
   },
   "US-3684": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Coon Creek Preserve State Conservation Area",
    "official": null,
@@ -5744,7 +5468,7 @@
   },
   "US-3685": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Coosa Wildlife Management Area",
    "official": null,
@@ -5757,7 +5481,7 @@
       "sgalc269",
       "Coosa Wildlife Management Area",
       16990,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -5807,7 +5531,7 @@
    "verdict": "unsure"
   },
   "US-3686": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "David K. Nelson Wildlife Management Area",
    "official": null,
@@ -5849,7 +5573,7 @@
   },
   "US-3687": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Dugger Mountain Wilderness National Forest",
    "official": {
@@ -5857,7 +5581,7 @@
     "as": "5,878 acres",
     "clean": false,
     "line": "miles are maintained? 283 How many road miles maintained? 524 How many cultural resources surveys completed? 5,878 acres How many land use permits? 21 with $73,239 collected in land use fees. How many recreation special use permit",
-    "read": "2026-11-01",
+    "read": "2026-11-15",
     "sent": "5,878 acres",
     "url": "https://www.fs.usda.gov/r08/alabama/about-area",
     "why": "total-looking"
@@ -5984,7 +5708,7 @@
    "verdict": "off"
   },
   "US-3688": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Fred T Stimpson Wildlife Management Area",
    "official": null,
@@ -6011,7 +5735,7 @@
    "verdict": "no official page on file"
   },
   "US-3689": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Freedom Hills Wildlife Management Area",
    "official": {
@@ -6019,7 +5743,7 @@
     "as": "38,000 acres",
     "clean": false,
     "line": "Freedom HIlls Freedom Hills Overview Hunters, bird watchers, and trail riders have much to enjoy across over 38,000 acres of the Lauderdale and Freedom Hills Wildlife Management Area additions. Birding The walking trail at Freedom",
-    "read": "2026-11-01",
+    "read": "2026-11-15",
     "sent": "Hunters, bird watchers, and trail riders have much to enjoy across over 38,000 acres of the Lauderdale and Freedom Hills Wildlife Management Area additions.",
     "url": "https://www.alabamaforeverwild.com/lauderdale-and-freedom-hills-wma",
     "why": "total-looking"
@@ -6049,7 +5773,7 @@
       "sgalc273",
       "Freedom Hills Wildlife Management Area",
       35710,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -6105,7 +5829,7 @@
   "US-3690": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Geneva State Forest Wildlife Management Area",
    "official": null,
    "ours": {
@@ -6148,11 +5872,11 @@
   "US-3691": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Grand Bay Savanna Complex Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 13243,
+    "acres": 15062,
     "family_fold": "layers {'sgalc': 15062, 'padus': 5233}: one land in 2 layers, the sgalc copy used (5,233 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -6189,7 +5913,7 @@
    "verdict": "no size on page"
   },
   "US-3692": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Heron Bay and Portersville Bay State Fish and Wildlife Area",
    "official": null,
@@ -6218,7 +5942,7 @@
   "US-3693": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Hollins Wildlife Management Area",
    "official": null,
    "ours": {
@@ -6260,19 +5984,17 @@
   "US-3694": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "James D Martin - Skyline Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 66449,
+    "acres": 60238,
     "dissolved": {
      "after": 60238,
      "before": 120451,
      "copies": 0,
-     "key_union": 66449,
      "parts": 4,
      "records": 6,
-     "summed": 60238,
      "tracts": 2
     },
     "manager": "",
@@ -6319,11 +6041,11 @@
   "US-3695": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Lauderdale Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 21678,
+    "acres": 19784,
     "dissolved": {
      "after": 35120,
      "before": 41951,
@@ -6335,10 +6057,8 @@
      },
      "family_fold": 15336,
      "family_used": "sgalc",
-     "key_union": 21678,
      "parts": 8,
      "records": 16,
-     "summed": 19784,
      "tracts": 6
     },
     "family_fold": "layers {'sgalc': 19784, 'padus': 15141, 'sgalb': 195}: one land in 3 layers, the sgalc copy used (15,336 ac of copies not added)",
@@ -6384,12 +6104,12 @@
   },
   "US-3696": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Lillian Swamp Complex Preserve State Conservation Area",
    "official": null,
    "ours": {
-    "acres": 1852,
+    "acres": 1992,
     "family_fold": "layers {'padus': 1852, 'sgalb': 486}: one land in 2 layers, the padus copy used (486 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -6461,7 +6181,7 @@
   },
   "US-3697": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Lowndes Wildlife Management Area",
    "official": {
@@ -6469,7 +6189,7 @@
     "as": "1,967 acres",
     "clean": true,
     "line": "ty consist of two acquisitions featuring upland and bottomland hardwoods, pine plantations and open fields on 1,967 acres of gently rolling alluvial land within Alabama’s famed Black Belt. Hunting Hunters must possess a valid hunti",
-    "read": "2026-11-01",
+    "read": "2026-11-15",
     "sent": "Managed for public hunting, the Lowndes Wildlife Management Area additions in Lowndes County consist of two acquisitions featuring upland and bottomland hardwoods, pine plantations and open fields on 1,967 acres of gently rolling alluvial land within Alabama’s famed Black Belt.",
     "url": "https://www.alabamaforeverwild.com/lowndes-wma-additions",
     "why": "clean total"
@@ -6541,7 +6261,7 @@
    "verdict": "off"
   },
   "US-3698": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Mallard-Fox Creek Wildlife Management Area",
    "official": null,
@@ -6554,7 +6274,7 @@
       "sgalc282",
       "Mallard-Fox Creek Wildlife Management Area",
       4510,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -6590,11 +6310,11 @@
   "US-3699": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Mobile-Tensaw Delta Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 22495,
+    "acres": 24423,
     "family_fold": "layers {'sgalc': 22495, 'padus': 2079}: one land in 2 layers, the sgalc copy used (2,079 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -6605,7 +6325,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -6632,7 +6352,7 @@
   },
   "US-3700": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Perdido River Wildlife Management Area",
    "official": null,
@@ -6660,7 +6380,7 @@
       "sgalc289",
       "Perdido River Wildlife Management Area",
       19158,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -6704,29 +6424,15 @@
    "verdict": "unsure"
   },
   "US-3701": {
-   "checked": "2026-11-01",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Pike County Pocosin Complex State Fish and Wildlife Area",
-   "official": {
-    "acres": 333.0,
-    "as": "333 acres",
-    "clean": false,
-    "line": "unty Pocosin A ravine on the Pocosin Tract Overview Pike County Pocosin consists of two acquisitions totaling 333 acres. The tract supports two unique plant communities: an uncommon upland scrub-hardwood/longleaf pine/reindeer mo",
-    "read": "2026-11-01",
-    "sent": "Pike County Pocosin consists of two acquisitions totaling 333 acres.",
-    "url": "https://www.alabamaforeverwild.com/pike-county-pocosin-complex",
-    "why": "history"
-   },
+   "official": null,
    "ours": {
-    "acres": 336,
+    "acres": 140,
     "manager": "",
     "pieces": [
-     [
-      166069,
-      "Pike County Pocosin Complex",
-      196,
-      "name"
-     ],
      [
       166070,
       "Pike County Pocosin Complex",
@@ -6752,14 +6458,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 1,
-   "same_agency": false,
-   "score": 6,
+   "pct": null,
+   "score": 4,
    "score_parts": {
     "name": 2,
     "pin": 0,
-    "size": 2,
-    "source": 2
+    "size": 1,
+    "source": 1
    },
    "sizes": [
     {
@@ -6783,12 +6488,12 @@
    ],
    "t": "State Fish and Wildlife Area",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "unsure"
   },
   "US-3702": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Red Hills Wildlife Management Area",
    "official": null,
    "ours": {
@@ -6839,7 +6544,7 @@
    "verdict": "no outline"
   },
   "US-3704": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Sam R Murphy Wildlife Management Area",
    "official": null,
@@ -6851,7 +6556,7 @@
       "sgalc301",
       "Sam R. Murphy Wildlife Management Area",
       15643,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -6880,7 +6585,7 @@
    "verdict": "no size on page"
   },
   "US-3705": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Shoal Creek Preserve State Conservation Area",
    "official": {
@@ -6888,7 +6593,7 @@
     "as": "300 acre",
     "clean": false,
     "line": "miles give hikers views of Shoal Creek, Indian camp Creek, Lawson Branch, and Jones Branch, all on this small 300-acre property. Parking is located on County Road 61. The National Recreation Trails website has additional informa",
-    "read": "2026-11-01",
+    "read": "2026-11-15",
     "sent": "Two trails totaling 4.3 miles give hikers views of Shoal Creek, Indian camp Creek, Lawson Branch, and Jones Branch, all on this small 300-acre property.",
     "url": "https://www.alabamaforeverwild.com/shoal-creek-preserve",
     "why": "history"
@@ -6973,7 +6678,7 @@
    "verdict": "agree"
   },
   "US-3706": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Sipsey Wilderness Wilderness Area",
    "official": null,
@@ -7022,16 +6727,16 @@
   "US-3707": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Sipsey River Complex Preserve State Conservation Area",
    "official": null,
    "ours": {
-    "acres": 5421,
+    "acres": 7063,
     "dissolved": {
      "after": 4082,
      "before": 7067,
      "copies": 0,
-     "key_union": 5421,
+     "key_union": 7063,
      "parts": 3,
      "records": 6,
      "summed": 4082,
@@ -7085,7 +6790,7 @@
    "verdict": "no size on page"
   },
   "US-3708": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Splinter Hill Bog Complex Preserve State Conservation Area",
    "official": {
@@ -7093,7 +6798,7 @@
     "as": "1,358 Acres",
     "clean": false,
     "line": "Lot West Parking Lot Forever Wild Land Trust Splinter Hill Bog Complex Nature Preserve and Recreational Area 1,358 Acres This map is your permit to hunt all game in accordance with the seasons, rules, and reulations listed hereon.",
-    "read": "2026-11-01",
+    "read": "2026-11-15",
     "sent": "1,358 Acres",
     "url": "https://www.alabamaforeverwild.com/sites/default/files/Splinter-Hill-Bog-Complex-Permit-Map-2025-2026.pdf",
     "why": "a map label (no sentence)"
@@ -7173,7 +6878,7 @@
    "verdict": "agree"
   },
   "US-3709": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [
     {
      "date_hint": null,
@@ -7243,11 +6948,11 @@
   "US-3710": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Upper Delta Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 39222,
+    "acres": 42181,
     "dissolved": {
      "after": 81477,
      "before": 84331,
@@ -7258,10 +6963,8 @@
      },
      "family_fold": 39296,
      "family_used": "sgalc",
-     "key_union": 39222,
      "parts": 5,
      "records": 11,
-     "summed": 42181,
      "tracts": 6
     },
     "family_fold": "layers {'sgalc': 42181, 'padus': 39296}: one land in 2 layers, the sgalc copy used (39,296 ac of copies not added)",
@@ -7301,18 +7004,20 @@
    "verdict": "no size on page"
   },
   "US-3711": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Weeks Bay Reserve National Conservation Area",
    "official": null,
    "ours": {
-    "acres": 1706,
+    "acres": 2655,
     "dissolved": {
      "after": 1706,
      "before": 3513,
      "copies": 3,
+     "key_union": 2655,
      "parts": 7,
      "records": 16,
+     "summed": 1706,
      "tracts": 6
     },
     "manager": "",
@@ -7388,7 +7093,7 @@
   },
   "US-3712": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Wehle State Nature Preserve",
    "official": {
@@ -7396,7 +7101,7 @@
     "as": "1,505 acres",
     "clean": false,
     "line": "e at Wehle Overview Recreational opportunities abound on the Wehle Tract in Bullock County. Visitors to these 1,505 acres of rolling pine hills and hardwood bottoms can camp, fish, hike, horseback ride and observe wildlife. Additio",
-    "read": "2026-11-01",
+    "read": "2026-11-15",
     "sent": "Visitors to these 1,505 acres of rolling pine hills and hardwood bottoms can camp, fish, hike, horseback ride and observe wildlife.",
     "url": "https://www.alabamaforeverwild.com/wehle-tract",
     "why": "total-looking"
@@ -7456,7 +7161,7 @@
   "US-3713": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "William R. Ireland, Sr. - Cahaba River Wildlife Management Area",
    "official": null,
    "ours": {
@@ -7496,7 +7201,7 @@
    "verdict": "no size on page"
   },
   "US-3714": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Yates Lake Wildlife Management Area",
    "official": {
@@ -7504,7 +7209,7 @@
     "as": "5,810 acres",
     "clean": false,
     "line": "Lake WMA Road at Yates Lake Overview The Forever Wild Gothard-AWF Yates Lake WMA in Elmore County consists of 5,810 acres of pine-hardwood hills and creek valleys on the western shore of scenic Yates Lake. Habitats include longleaf",
-    "read": "2026-11-01",
+    "read": "2026-11-15",
     "sent": "The Forever Wild Gothard-AWF Yates Lake WMA in Elmore County consists of 5,810 acres of pine-hardwood hills and creek valleys on the western shore of scenic Yates Lake.",
     "url": "https://www.alabamaforeverwild.com/yates-lake-wma",
     "why": "part (a lake, a purchase, a campground…)"
@@ -7568,30 +7273,105 @@
    "verdict": "agree"
   },
   "US-3791": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Trail of Tears National Historic Trail",
-   "ours": null,
-   "score": null,
+   "note": "whole park compared (POTA lists it in 0 states: {})",
+   "official": {
+    "acres": 640.0,
+    "as": "640 acres",
+    "clean": false,
+    "line": "ail of Tears, as well as subsequent history of the home and region. NPS Cherokee leader John Brown, who owned 640 acres in this area, ordered the construction of Browns Ferry Tavern in 1803. In 1838, the road running past this st",
+    "read": "2026-11-15",
+    "sent": "Cherokee leader John Brown, who owned 640 acres in this area, ordered the construction of Browns Ferry Tavern in 1803.",
+    "url": "https://www.nps.gov/trte/index.htm",
+    "why": "a page of another unit; the sentence does not name this park"
+   },
+   "ours": {
+    "acres": 0,
+    "acres_by_state": {},
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "states": [
+     "US-OK",
+     "US-MO",
+     "US-AR",
+     "US-NC",
+     "US-IL",
+     "US-TN",
+     "US-AL",
+     "US-GA"
+    ],
+    "unknown_pieces": 1,
+    "whole_park": true
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/trte/index.htm",
+     "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/trte/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/trte/planyourvisit/upload/National-Park-Service-Trail-of-Tears-Map-508.pdf",
+     "why": "official map (documents bot)"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/trte/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "pct": null,
+   "same_agency": false,
+   "score": 4,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [
+    {
+     "acres": 640.0,
+     "as": "640 acres",
+     "clean": false,
+     "line": "ail of Tears, as well as subsequent history of the home and region. NPS Cherokee leader John Brown, who owned 640 acres in this area, ordered the construction of Browns Ferry Tavern in 1803. In 1838, the road running past this st",
+     "total_like": false,
+     "url": "https://www.nps.gov/trte/index.htm",
+     "why": "a page of another unit; the sentence does not name this park"
+    },
+    {
+     "acres": 4300.0,
+     "as": "4,300 acres",
+     "clean": false,
+     "line": "e conditions in the Ohio River to allow a safe crossing. NPS The Pea Ridge National Military Park encompasses 4,300 acres and features a visitor center, museum, self-guided tours, reconstructed Elkhorn Tavern, and a retracement tra",
+     "total_like": false,
+     "url": "https://www.nps.gov/trte/index.htm",
+     "why": "another park / unit named in the sentence"
+    }
+   ],
    "t": "National Historic Trail",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "ours unknown"
   },
   "US-4449": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "cause": "a number 3 parks share from one page (673,000 ac): an agency total, not this park",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Conecuh National Forest",
-   "official": {
-    "acres": 673000.0,
-    "as": "673,000 acres",
-    "clean": false,
-    "line": "abama Alabama is home to four national forests: Bankhead, Conecuh, Talladega and Tuskegee, spanning more than 673,000 acres across 17 counties. Together, they showcase the state's remarkably diverse geography, from the Southern Appal",
-    "read": "2026-11-01",
-    "sent": "Alabama is home to four national forests: Bankhead, Conecuh, Talladega and Tuskegee, spanning more than 673,000 acres across 17 counties.",
-    "url": "https://www.fs.usda.gov/r08/alabama",
-    "why": "total-looking"
-   },
+   "official": null,
    "ours": {
     "acres": 84808,
     "manager": "",
@@ -7610,7 +7390,7 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok",
+     "status": "host-rule",
      "url": "https://www.fs.usda.gov/recarea/alabama/recarea/?recid=30107",
      "why": "the park's page (data/parkinfo)"
     },
@@ -7621,7 +7401,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 87,
+   "pct": null,
    "same_agency": false,
    "score": 5,
    "score_parts": {
@@ -7631,24 +7411,6 @@
     "source": 1
    },
    "sizes": [
-    {
-     "acres": 1700.0,
-     "as": "1,700 acre",
-     "clean": false,
-     "line": "Oak Hunter Camp is our only physically disabled hunting area in the Talladega National Forest. This camp is a 1,700 acre hunting unit for physically disabled hunters possessing the required State… Blue Lake Recreation Area Site Op",
-     "total_like": false,
-     "url": "https://www.fs.usda.gov/recarea/alabama/recarea/?recid=30107",
-     "why": "no total words near it"
-    },
-    {
-     "acres": 33.0,
-     "as": "33 acres",
-     "clean": false,
-     "line": "g from camping, picnicking, boating, and fishing to sanitary facilities including a bathhouse. Brushy Lake is 33-acres and has 13 campsites that… Clear Creek Recreation Area Site Open The Clear Creek Recreation Area has become o",
-     "total_like": false,
-     "url": "https://www.fs.usda.gov/recarea/alabama/recarea/?recid=30107",
-     "why": "no total words near it"
-    },
     {
      "acres": 673000.0,
      "as": "673,000 acres",
@@ -7661,23 +7423,14 @@
    ],
    "t": "National Forest",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "unsure"
   },
   "US-4450": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "cause": "a number 3 parks share from one page (673,000 ac): an agency total, not this park",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Talladega National Forest",
-   "official": {
-    "acres": 673000.0,
-    "as": "673,000 acres",
-    "clean": false,
-    "line": "abama Alabama is home to four national forests: Bankhead, Conecuh, Talladega and Tuskegee, spanning more than 673,000 acres across 17 counties. Together, they showcase the state's remarkably diverse geography, from the Southern Appal",
-    "read": "2026-11-01",
-    "sent": "Alabama is home to four national forests: Bankhead, Conecuh, Talladega and Tuskegee, spanning more than 673,000 acres across 17 counties.",
-    "url": "https://www.fs.usda.gov/r08/alabama",
-    "why": "total-looking"
-   },
+   "official": null,
    "ours": {
     "acres": 394709,
     "manager": "",
@@ -7696,7 +7449,7 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok",
+     "status": "host-rule",
      "url": "https://www.fs.usda.gov/recarea/alabama/null/recarea/?recid=30119&actid=54",
      "why": "the park's page (data/parkinfo)"
     },
@@ -7707,7 +7460,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 41,
+   "pct": null,
    "same_agency": false,
    "score": 5,
    "score_parts": {
@@ -7717,24 +7470,6 @@
     "source": 1
    },
    "sizes": [
-    {
-     "acres": 1700.0,
-     "as": "1,700 acre",
-     "clean": false,
-     "line": "Oak Hunter Camp is our only physically disabled hunting area in the Talladega National Forest. This camp is a 1,700 acre hunting unit for physically disabled hunters possessing the required State… Blue Lake Recreation Area Site Op",
-     "total_like": true,
-     "url": "https://www.fs.usda.gov/recarea/alabama/null/recarea/?recid=30119&actid=54",
-     "why": "total-looking"
-    },
-    {
-     "acres": 33.0,
-     "as": "33 acres",
-     "clean": false,
-     "line": "g from camping, picnicking, boating, and fishing to sanitary facilities including a bathhouse. Brushy Lake is 33-acres and has 13 campsites that… Clear Creek Recreation Area Site Open The Clear Creek Recreation Area has become o",
-     "total_like": false,
-     "url": "https://www.fs.usda.gov/recarea/alabama/null/recarea/?recid=30119&actid=54",
-     "why": "no total words near it"
-    },
     {
      "acres": 673000.0,
      "as": "673,000 acres",
@@ -7747,23 +7482,14 @@
    ],
    "t": "National Forest",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "unsure"
   },
   "US-4451": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "cause": "a number 3 parks share from one page (673,000 ac): an agency total, not this park",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Tuskegee National Forest",
-   "official": {
-    "acres": 673000.0,
-    "as": "673,000 acres",
-    "clean": false,
-    "line": "abama Alabama is home to four national forests: Bankhead, Conecuh, Talladega and Tuskegee, spanning more than 673,000 acres across 17 counties. Together, they showcase the state's remarkably diverse geography, from the Southern Appal",
-    "read": "2026-11-01",
-    "sent": "Alabama is home to four national forests: Bankhead, Conecuh, Talladega and Tuskegee, spanning more than 673,000 acres across 17 counties.",
-    "url": "https://www.fs.usda.gov/detail/alabama/about-forest/districts/?cid=stelprdb5152167",
-    "why": "total-looking"
-   },
+   "official": null,
    "ours": {
     "acres": 11347,
     "manager": "",
@@ -7782,7 +7508,7 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok",
+     "status": "host-rule",
      "url": "https://www.fs.usda.gov/detail/alabama/about-forest/districts/?cid=stelprdb5152167",
      "why": "the park's page (data/parkinfo)"
     },
@@ -7798,7 +7524,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 98,
+   "pct": null,
    "same_agency": false,
    "score": 5,
    "score_parts": {
@@ -7814,26 +7540,17 @@
      "clean": false,
      "line": "abama Alabama is home to four national forests: Bankhead, Conecuh, Talladega and Tuskegee, spanning more than 673,000 acres across 17 counties. Together, they showcase the state's remarkably diverse geography, from the Southern Appal",
      "total_like": true,
-     "url": "https://www.fs.usda.gov/detail/alabama/about-forest/districts/?cid=stelprdb5152167",
-     "why": "total-looking"
-    },
-    {
-     "acres": 673000.0,
-     "as": "673,000 acres",
-     "clean": false,
-     "line": "abama Alabama is home to four national forests: Bankhead, Conecuh, Talladega and Tuskegee, spanning more than 673,000 acres across 17 counties. Together, they showcase the state's remarkably diverse geography, from the Southern Appal",
-     "total_like": true,
      "url": "https://www.fs.usda.gov/r08/alabama",
      "why": "total-looking"
     }
    ],
    "t": "National Forest",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "unsure"
   },
   "US-4452": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "William B. Bankhead National Forest",
    "official": null,
@@ -7855,7 +7572,7 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok",
+     "status": "host-rule",
      "url": "https://www.fs.usda.gov/detail/alabama/about-forest/districts/?cid=fsbdev3_002553",
      "why": "the park's page (data/parkinfo)"
     },
@@ -7881,15 +7598,6 @@
      "clean": false,
      "line": "abama Alabama is home to four national forests: Bankhead, Conecuh, Talladega and Tuskegee, spanning more than 673,000 acres across 17 counties. Together, they showcase the state's remarkably diverse geography, from the Southern Appal",
      "total_like": false,
-     "url": "https://www.fs.usda.gov/detail/alabama/about-forest/districts/?cid=fsbdev3_002553",
-     "why": "another park / unit named in the sentence"
-    },
-    {
-     "acres": 673000.0,
-     "as": "673,000 acres",
-     "clean": false,
-     "line": "abama Alabama is home to four national forests: Bankhead, Conecuh, Talladega and Tuskegee, spanning more than 673,000 acres across 17 counties. Together, they showcase the state's remarkably diverse geography, from the Southern Appal",
-     "total_like": false,
      "url": "https://www.fs.usda.gov/r08/alabama",
      "why": "another park / unit named in the sentence"
     }
@@ -7899,17 +7607,86 @@
    "verdict": "unsure"
   },
   "US-4560": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Natchez Trace Trail National Scenic Trail",
-   "ours": null,
-   "score": null,
+   "note": "whole park compared (POTA lists it in 3 states: {'US-TN': 31527, 'US-AL': 31527, 'US-MS': 31527})",
+   "official": null,
+   "ours": {
+    "acres": 94581,
+    "acres_by_state": {
+     "US-AL": 31527,
+     "US-MS": 31527,
+     "US-TN": 31527
+    },
+    "manager": "",
+    "pieces": [
+     [
+      3552,
+      "Natchez Trace Parkway",
+      31527,
+      "reviewed-approx"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "states": [
+     "US-TN",
+     "US-AL",
+     "US-MS"
+    ],
+    "unknown_pieces": 0,
+    "whole_park": true
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/natt/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/natt/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/natt/learn/historyculture/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/natt/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/natt/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/natt/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
    "t": "National Scenic Trail",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "no size on page"
   },
   "US-4580": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Selma to Montgomery National Historic Trail",
    "official": null,
@@ -7947,17 +7724,17 @@
     },
     {
      "other_unit": true,
-     "status": "HTTP 404",
+     "status": "rest",
      "url": "https://www.nps.gov/semo/learn/management/lawsandpolicies.htm",
      "why": "rules page (documents bot)"
     },
     {
-     "status": "HTTP 404",
+     "status": "rest",
      "url": "https://www.nps.gov/semo/learn/management/statistics.htm",
      "why": "NPS park statistics page"
     },
     {
-     "status": "ok",
+     "status": "rest",
      "url": "https://www.nps.gov/semo/learn/news/newsreleases.htm",
      "why": "NPS news releases"
     }
@@ -7976,7 +7753,7 @@
    "verdict": "no size on page"
   },
   "US-4595": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Choccolocco State Forest",
    "official": {
@@ -7984,7 +7761,7 @@
     "as": "4,392 acres",
     "clean": true,
     "line": "outh eastern Calhoun County, Choccolocco State Forest comprises approximately 4,406 acres of land with around 4,392 acres being in some type of forest cover. The remaining 14 acres consists of various openings. Four major paved roa",
-    "read": "2026-11-01",
+    "read": "2026-11-15",
     "sent": "Located in south eastern Calhoun County, Choccolocco State Forest comprises approximately 4,406 acres of land with around 4,392 acres being in some type of forest cover.",
     "url": "https://forestry.alabama.gov/Pages/Management/ChoccoloccoSF.aspx",
     "why": "clean total"
@@ -8071,7 +7848,7 @@
   },
   "US-4596": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [
     {
      "date_hint": "1930",
@@ -8096,7 +7873,7 @@
     "as": "7,200 acres",
     "clean": true,
     "line": "State Forest (GSF) is Alabama’s largest state forest. Managed by the Alabama Forestry Commission encompassing 7,200 acres of predominately longleaf pine Geneva State Forest provides the state of Alabama with one of the most valuabl",
-    "read": "2026-11-01",
+    "read": "2026-11-15",
     "sent": "Managed by the Alabama Forestry Commission encompassing 7,200 acres of predominately longleaf pine Geneva State Forest provides the state of Alabama with one of the most valuable natural resources Timber!",
     "url": "https://www.forestry.alabama.gov/Pages/Management/GenevaSF.aspx",
     "why": "clean total"
@@ -8159,7 +7936,7 @@
    "verdict": "off"
   },
   "US-4597": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Hauss State Forest",
    "official": null,
@@ -8200,7 +7977,8 @@
    "verdict": "no size on page"
   },
   "US-4598": {
-   "checked": "2026-11-01",
+   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
+   "checked": "2026-11-15",
    "handover": [
     {
      "date_hint": null,
@@ -8217,13 +7995,13 @@
     "as": "2,100 acres",
     "clean": false,
     "line": "County in south Alabama is a little known gem, Little River State Forest (LRSF). Consisting of approximately 2,100 acres of longleaf pine forest, this area provides a unique setting for many outdoor activities such as hiking, camp",
-    "read": "2026-11-01",
+    "read": "2026-11-15",
     "sent": "Consisting of approximately 2,100 acres of longleaf pine forest, this area provides a unique setting for many outdoor activities such as hiking, camping, fishing, and horseback riding.",
     "url": "https://forestry.alabama.gov/Pages/Management/LittleRiverSF.aspx",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 2164,
+    "acres": 2850,
     "family_fold": "layers {'padus': 2164, 'sgalb': 712}: one land in 2 layers, the padus copy used (712 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -8246,13 +8024,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 3,
+   "pct": 36,
    "same_agency": false,
-   "score": 8,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 0,
     "source": 2
    },
    "sizes": [
@@ -8286,10 +8064,10 @@
    ],
    "t": "State Forest",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "off"
   },
   "US-4600": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Weogufka State Forest",
    "official": {
@@ -8297,7 +8075,7 @@
     "as": "240 acres",
     "clean": true,
     "line": "bama, in Coosa County, and contains a CCC-built lookout tower and shelters. Weogufka State Forest consists of 240 acres of upland hardwood on Flagg Mountain. It is owned by the State of Alabama and Managed by the Alabama Forestry",
-    "read": "2026-11-01",
+    "read": "2026-11-15",
     "sent": "Weogufka State Forest consists of 240 acres of upland hardwood on Flagg Mountain.",
     "url": "https://forestry.alabama.gov/Pages/Management/WeogufkaSF.aspx",
     "why": "clean total"
@@ -8361,7 +8139,7 @@
    "verdict": "agree"
   },
   "US-6457": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Elk River Lodge State Park",
    "ours": null,
@@ -8371,7 +8149,7 @@
    "verdict": "no outline"
   },
   "US-6459": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Kinterbish Wildlife Management Area",
    "ours": null,
@@ -8381,7 +8159,7 @@
    "verdict": "no outline"
   },
   "US-6460": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Fort Toulouse National Historical Park",
    "official": null,
@@ -8410,7 +8188,7 @@
   "US-9844": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Seven Mile Island Wildlife Management Area",
    "official": null,
    "ours": {
@@ -8453,11 +8231,11 @@
   "US-9865": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Swan Creek Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 9772,
+    "acres": 8698,
     "family_fold": "layers {'sgalc': 8698, 'padus': 3856}: one land in 2 layers, the sgalc copy used (3,856 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -8496,7 +8274,7 @@
   "US-9874": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Mud Creek Management Area",
    "official": null,
    "ours": {
@@ -8544,11 +8322,11 @@
   "US-9875": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Raccoon Creek Management Area",
    "official": null,
    "ours": {
-    "acres": 4190,
+    "acres": 5862,
     "family_fold": "layers {'sgalc': 4575, 'padus': 1472}: one land in 2 layers, the sgalc copy used (1,472 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -8559,7 +8337,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -8587,11 +8365,11 @@
   "US-9876": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Crow Creek Management Area",
    "official": null,
    "ours": {
-    "acres": 6414,
+    "acres": 5967,
     "family_fold": "layers {'sgalc': 5525, 'padus': 459}: one land in 2 layers, the sgalc copy used (459 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -8636,7 +8414,7 @@
   "US-9880": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Crow Creek Nature Refuge",
    "ours": {
     "acres": 3430,
@@ -8661,7 +8439,7 @@
   "US-9911": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Boggy Hollow Wildlife Management Area",
    "official": null,
    "ours": {
@@ -8703,7 +8481,7 @@
   "US-9912": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Blue Spring Wildlife Management Area",
    "official": null,
    "ours": {
@@ -8745,7 +8523,7 @@
   "US-9916": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Blackwater River State Nature Preserve",
    "official": null,
    "ours": {
@@ -8783,7 +8561,7 @@
    "verdict": "ours unknown"
   },
   "US-9918": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Thigpen Hill Nature Recreation Area",
    "ours": null,
@@ -8795,11 +8573,11 @@
   "US-9919": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Dallas County Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 520,
+    "acres": 705,
     "manager": "",
     "pieces": [
      [
@@ -8848,7 +8626,7 @@
   "US-9924": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-08",
+   "last_read_failed": "2026-11-15",
    "n": "Oakmulgee Wildlife Management Area",
    "official": null,
    "ours": {
@@ -8888,5 +8666,5 @@
    "verdict": "no size on page"
   }
  },
- "read": "2026-11-08"
+ "read": "2026-11-15"
 }

@@ -83,22 +83,23 @@
   "US-AL": {
    "checked": 155,
    "counts": {
-    "agree": 33,
-    "handover_hints": 5,
+    "agree": 31,
+    "handover_hints": 4,
     "no_page": 3,
-    "no_size": 56,
-    "off": 16,
-    "ours_unknown": 4,
+    "no_size": 58,
+    "not_read": 0,
+    "off": 10,
+    "ours_unknown": 6,
     "parks": 155,
     "retired": 0,
-    "unsure": 17,
-    "weak": 7,
-    "with_outline": 133
+    "unsure": 23,
+    "weak": 5,
+    "with_outline": 134
    },
    "left": 0,
    "parks": 155,
-   "status": "queued",
-   "updated": "2026-11-08"
+   "status": "done",
+   "updated": "2026-11-15"
   },
   "US-AR": {
    "checked": 306,
@@ -1087,45 +1088,58 @@
    "updated": "2026-11-09"
   }
  },
- "hosts": {},
+ "hosts": {
+  "www.alapark.com": 1794839162.2541056,
+  "www.nps.gov": 1794839637.6295125
+ },
  "last": {
   "areas": [
-   "US-GA"
+   "US-AL"
   ],
   "manners": {
-   "browser": 1,
-   "errors": 0,
+   "browser": 30,
+   "dropped_queued": 2,
+   "errors": 3,
    "for_person": 2,
    "for_person_urls": [
     [
-     "https://www.gwcca.org/centennial-olympic-park",
+     "https://www.alapark.com/rules-and-regulations",
      "HTTP 403 twice"
     ],
     [
-     "https://georgiawildlife.com/news",
+     "https://www.alapark.com/rules-and-regulations",
      "HTTP 403 twice"
+    ],
+    [
+     "https://www.tva.com/robots.txt",
+     "robots.txt answered 403 (counted as a Disallow): a person downloads what is needed from www.tva.com"
+    ],
+    [
+     "https://tva-azr-eastus-cdn-ep-tvawcm-prd.azureedge.net/robots.txt",
+     "robots.txt answered 400: nothing fetched from tva-azr-eastus-cdn-ep-tvawcm-prd.azureedge.net this run"
     ]
    ],
-   "host_rule": 0,
-   "requests": 9,
-   "rested": 0,
+   "host_rule": 4,
+   "requests": 283,
+   "rested": 40,
    "retry403": 2,
-   "robots": 0,
-   "strikes": 4
+   "robots": 2,
+   "robots_unreadable": 1,
+   "strikes": 7
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 11,
-   "no_size": 2,
-   "ours_unknown": 0,
-   "pages_read": 1,
-   "parks": 3,
+   "handover_hints": 4,
+   "no_size": 64,
+   "ours_unknown": 6,
+   "pages_read": 188,
+   "parks": 150,
    "retired": 0,
-   "size_agree": 0,
-   "size_off": 0,
-   "size_unsure": 0,
-   "skipped_fresh": 235,
-   "with_outline": 2
+   "size_agree": 31,
+   "size_off": 10,
+   "size_unsure": 19,
+   "skipped_fresh": 5,
+   "with_outline": 130
   },
   "when": "2026-11-15"
  },
