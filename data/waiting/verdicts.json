@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-15T10:04Z",
+ "checked": "2026-11-15T10:18Z",
  "switched_on": false,
  "results": [
   {
@@ -821,7 +821,7 @@
    "path": "data/docs/US-IN.json",
    "kind": "docs",
    "why": [
-    "F-D3 5 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/big-oaks/visit-us/rules-policies"
+    "F-D3 7 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/big-oaks/visit-us/rules-policies"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -4112,39 +4112,37 @@
    "path": "data/world-key/JP.json",
    "kind": "key",
    "why": [
-    "F-O2 101 of 185 outlines carry a layer name that shares no word with the park (55%; live 97/185): outlines swapped to other parks?"
+    "F-4 unsure: PAD-US did not answer the shape test (HTTPError)"
    ],
-   "notes": [
-    "F-O4 shape test: 23 changed outlines read from PAD-US, 0 far from the park pin"
-   ],
+   "notes": [],
    "verdict": "HOLD"
   },
   {
    "path": "data/world-key/KE.json",
    "kind": "key",
-   "why": [],
-   "notes": [
-    "F-O4 shape test: 3 changed outlines read from PAD-US, 0 far from the park pin"
+   "why": [
+    "F-4 unsure: PAD-US did not answer the shape test (HTTPError)"
    ],
-   "verdict": "PASS"
+   "notes": [],
+   "verdict": "HOLD"
   },
   {
    "path": "data/world-key/LK.json",
    "kind": "key",
-   "why": [],
-   "notes": [
-    "F-O4 shape test: 4 changed outlines read from PAD-US, 0 far from the park pin"
+   "why": [
+    "F-4 unsure: PAD-US did not answer the shape test (HTTPError)"
    ],
-   "verdict": "PASS"
+   "notes": [],
+   "verdict": "HOLD"
   },
   {
    "path": "data/world-key/LR.json",
    "kind": "key",
-   "why": [],
-   "notes": [
-    "F-O4 shape test: 1 changed outlines read from PAD-US, 0 far from the park pin"
+   "why": [
+    "F-4 unsure: PAD-US did not answer the shape test (HTTPError)"
    ],
-   "verdict": "PASS"
+   "notes": [],
+   "verdict": "HOLD"
   },
   {
    "path": "data/world-key/LT.json",
@@ -4231,11 +4229,11 @@
   {
    "path": "data/world-key/NI.json",
    "kind": "key",
-   "why": [],
-   "notes": [
-    "F-O4 shape test: 19 changed outlines read from PAD-US, 0 far from the park pin"
+   "why": [
+    "F-4 unsure: PAD-US did not answer the shape test (HTTPError)"
    ],
-   "verdict": "PASS"
+   "notes": [],
+   "verdict": "HOLD"
   },
   {
    "path": "data/world-key/NL.json",

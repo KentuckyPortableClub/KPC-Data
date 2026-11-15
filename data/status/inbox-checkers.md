@@ -323,7 +323,6 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM BOT campground info bot (2026-11-15): grade me: US-CT data/status/samples/campground-info-bot-US-CT-2026-11-15.md (+ review.md) — done; gate none; {"camps": 32, "needs_browser": 0, "needs_key": 2, "no_page": 0, "not_official": 29, "ok": 1, "other": 0, "resting": 0, "robots": 0, "with_bo · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43693733002)
 - FROM BOT campground info bot (2026-11-15): grade me: US-ID data/status/samples/campground-info-bot-US-ID-2026-11-15.md (+ review.md) — done; gate none; {"camps": 450, "kept_after_failed_read": 9, "needs_browser": 33, "needs_key": 311, "no_page": 0, "not_official": 35, "ok": 27, "other": 24,  · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43693733002)
 - FROM BOT campground info bot (2026-11-15): grade me: US-MD data/status/samples/campground-info-bot-US-MD-2026-11-15.md (+ review.md) — done; gate none; {"camps": 77, "needs_browser": 1, "needs_key": 30, "no_page": 0, "not_official": 0, "ok": 40, "other": 6, "resting": 0, "robots": 0, "with_b · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43693733002)
-- FROM BOT campground info bot (2026-11-15): grade me: US-NC data/status/samples/campground-info-bot-US-NC-2026-11-15.md (+ review.md) — done; gate none; {"camps": 141, "needs_browser": 0, "needs_key": 66, "no_page": 0, "not_official": 0, "ok": 66, "other": 3, "resting": 6, "robots": 0, "with_ · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43693733002)
 - FROM WAITING ROOM (held since 2026-11-12, 3 days): campinfo data/campinfo/US-AK.json held: F-I6 campgrounds with source-lined facts 122 -> 11 (more than 30% lost: a blocked read emptied them?)
 - FROM WAITING ROOM (held since 2026-11-04, 11 days): campinfo data/campinfo/US-AR.json held: F-I4 1 toll-free reservation numbers kept as a camp phone, e.g. Designated WMA campsites
 - FROM WAITING ROOM (held since 2026-11-12, 3 days): campinfo data/campinfo/US-KY.json held: F-I6 campgrounds with source-lined facts 60 -> 22 (more than 30% lost: a blocked read emptied them?)
@@ -340,7 +339,7 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-11-11, 4 days): docs data/docs/US-HI.json held: F-D3 5 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/kealia-pond/visit-us/rules-policies
 - FROM WAITING ROOM (held since 2026-10-31, 15 days): docs data/docs/US-ID.json held: F-D1 one rules page on 63 of 362 parks: https://idfg.idaho.gov/sites/default/files/seasons-rules-big-game-2026.pdf
 - FROM WAITING ROOM (held since 2026-10-31, 15 days): docs data/docs/US-IL.json held: F-D2 3 map links on a banned host (fire news / map pins / social), e.g. https://www.google.com/maps/place/39%C2%B006'01.1%22N+88%C2%B047'57.1% · F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/kankakee-and-conservation-area/visit-us/rul
-- FROM WAITING ROOM (held since 2026-11-15): docs data/docs/US-IN.json held: F-D3 5 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/big-oaks/visit-us/rules-policies
+- FROM WAITING ROOM (held since 2026-11-15): docs data/docs/US-IN.json held: F-D3 7 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/big-oaks/visit-us/rules-policies
 - FROM WAITING ROOM (held since 2026-11-11, 4 days): docs data/docs/US-KS.json held: F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/flint-hills/visit-us/rules-policies
 - FROM WAITING ROOM (held since 2026-11-11, 4 days): docs data/docs/US-LA.json held: F-D3 3 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/catahoula/visit-us/rules-policies
 - FROM WAITING ROOM (held since 2026-10-31, 15 days): docs data/docs/US-ME.json held: F-D1 one map page on 33 of 148 parks: https://www.maine.gov/dacf/parks/publications_maps/index.shtml · F-D1 one rules page on 48 of 148 parks: https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml
@@ -430,7 +429,12 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-11-10, 5 days): truth data/truth/US-WA.json held: F-R2 5 OFF rows share the size 564.0 ac · F-R3 157 of 188 sized parks are OFF (over half: a reading problem?)
 - FROM WAITING ROOM (held since 2026-11-13, 2 days): key data/world-key/BS.json held: F-O1 outlines 32 -> 29 (more than 1% lost)
 - FROM WAITING ROOM (held since 2026-11-11, 4 days): key data/world-key/FR.json held: F-O1 outlines 13877 -> 12882 (more than 1% lost)
-- FROM WAITING ROOM (held since 2026-11-11, 4 days): key data/world-key/JP.json held: F-O2 101 of 185 outlines carry a layer name that shares no word with the park (55%; live 97/185): outlines swapped to other parks?
+- FROM WAITING ROOM (held since 2026-11-11, 4 days): key data/world-key/JP.json held: F-4 unsure: PAD-US did not answer the shape test (HTTPError)
+- FROM WAITING ROOM (held since 2026-11-15): key data/world-key/KE.json held: F-4 unsure: PAD-US did not answer the shape test (HTTPError)
+- FROM WAITING ROOM (held since 2026-11-15): key data/world-key/LK.json held: F-4 unsure: PAD-US did not answer the shape test (HTTPError)
+- FROM WAITING ROOM (held since 2026-11-15): key data/world-key/LR.json held: F-4 unsure: PAD-US did not answer the shape test (HTTPError)
 - FROM WAITING ROOM (held since 2026-11-11, 4 days): key data/world-key/LU.json held: F-O1 outlines 49 -> 46 (more than 1% lost)
+- FROM WAITING ROOM (held since 2026-11-15): key data/world-key/NI.json held: F-4 unsure: PAD-US did not answer the shape test (HTTPError)
 - FROM WAITING ROOM (held since 2026-11-07, 8 days): key data/world-key/ZA.json held: F-O2 4 of 75 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks?
 - FROM WAITING ROOM (held since 2026-11-08, 7 days): wwff data/wwff/CTFF.json held: F-W2 rows 702 -> 280 (under 80% of the saved list)
+- FROM WAITING ROOM HEALTH (2026-11-15): RED: 385 files waiting over 3 days in data/waiting/in/ (e.g. US-SD.json)
