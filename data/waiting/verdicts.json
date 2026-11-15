@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-15T13:58Z",
+ "checked": "2026-11-15T14:10Z",
  "switched_on": false,
  "results": [
   {
@@ -810,7 +810,7 @@
    "kind": "docs",
    "why": [
     "F-D2 3 map links on a banned host (fire news / map pins / social), e.g. https://www.google.com/maps/place/39%C2%B006'01.1%22N+88%C2%B047'57.1%",
-    "F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/kankakee-and-conservation-area/visit-us/rul"
+    "F-D3 16 of 20 re-tested links dead, e.g. https://dnr.illinois.gov/content/dam/soi/en/web/dnr/parks/documents/pe"
    ],
    "notes": [],
    "verdict": "HOLD"
@@ -818,9 +818,11 @@
   {
    "path": "data/docs/US-IN.json",
    "kind": "docs",
-   "why": [],
+   "why": [
+    "F-D3 7 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/big-oaks/visit-us/rules-policies"
+   ],
    "notes": [],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/docs/US-KS.json",
@@ -868,7 +870,7 @@
    "path": "data/docs/US-MI.json",
    "kind": "docs",
    "why": [
-    "F-D3 3 of 20 re-tested links dead, e.g. https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/s"
+    "F-D3 2 of 20 re-tested links dead, e.g. https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/s"
    ],
    "notes": [
     "no live copy: first time this file is published"
