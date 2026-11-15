@@ -100,11 +100,10 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-13 | 2 | data/fers/CA-AB.json.gz | HOLD | F-2 only 27 of 37 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 5 new candidate pairs since the live file (over 10% of 37): a person looks at them first, e.g. C |
 | 2026-11-13 | 2 | data/fers/CA-BC.json.gz | HOLD | F-2 candidates 29 -> 111 (over 30% change); F-2 only 16 of 29 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 95 new candidate pairs since the live file (over 10% |
 | 2026-11-13 | 2 | data/fers/CA-ON.json.gz | HOLD | F-2 candidates 13 -> 138 (over 30% change); F-2 NOT SURE 302 -> 19 (over 30% change); F-2 only 5 of 13 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 133 new can |
-| 2026-11-14 | 1 | data/docs/US-IN.json | HOLD | F-D3 6 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/big-oaks/visit-us/rules-policies |
 | 2026-11-14 | 1 | data/fers/US-MI.json.gz | HOLD | F-2 candidates 82 -> 137 (over 30% change); F-2 NOT SURE 9 -> 12 (over 30% change); F-2 60 new candidate pairs since the live file (over 10% of 82): a person looks at them first, e.g. US-0766+US-4239, US-10088+US-4239, U |
 | 2026-11-14 | 1 | data/fers/US-OH.json.gz | HOLD | F-2 candidates 27 -> 64 (over 30% change); F-2 38 new candidate pairs since the live file (over 10% of 27): a person looks at them first, e.g. US-11673+US-4239, US-12057+US-9444, US-1935+US-4239 |
 | 2026-11-15 | 0 | data/docs/US-AR.json | HOLD | F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/logan-cave/visit-us/rules-policies |
-| 2026-11-15 | 0 | data/docs/US-MI.json | HOLD | F-D3 5 of 20 re-tested links dead, e.g. https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/s |
+| 2026-11-15 | 0 | data/docs/US-MI.json | HOLD | F-D3 2 of 20 re-tested links dead, e.g. https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/s |
 | 2026-11-15 | 0 | data/docs/US-NH.json | HOLD | F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/silvio-o-conte/visit-us/rules-policies |
 | 2026-11-15 | 0 | data/docs/US-NM.json | HOLD | F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/las-vegas/visit-us/rules-policies |
 | 2026-11-15 | 0 | data/docs/US-OR.json | HOLD | F-D3 3 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/siletz-bay/visit-us/rules-policies |
@@ -189,6 +188,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/docs/US-DC.json | PASS |  |
 | ? | ? | data/docs/US-FL.json | PASS |  |
 | ? | ? | data/docs/US-GA.json | PASS |  |
+| ? | ? | data/docs/US-IN.json | PASS |  |
 | ? | ? | data/docs/US-MA.json | PASS |  |
 | ? | ? | data/docs/US-MD.json | PASS |  |
 | ? | ? | data/docs/US-MS.json | PASS |  |
@@ -364,7 +364,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-11 | 4 | data/world-key/JP.json | HOLD | F-O2 101 of 185 outlines carry a layer name that shares no word with the park (55%; live 97/185): outlines swapped to other parks? |
 | 2026-11-11 | 4 | data/world-key/LU.json | HOLD | F-O1 outlines 49 -> 46 (more than 1% lost) |
 | 2026-11-13 | 2 | data/world-key/BS.json | HOLD | F-O1 outlines 32 -> 29 (more than 1% lost) |
-| 2026-11-15 | 0 | data/world-key/BZ.json | HOLD | F-4 unsure: PAD-US did not answer the shape test (HTTPError) |
+| 2026-11-15 | 0 | data/world-key/AT.json | HOLD | F-4 unsure: PAD-US did not answer the shape test (HTTPError) |
 | ? | ? | data/ca-key/index.json | RELEASE |  |
 | ? | ? | data/pile-solver/AS.json | PASS |  |
 | ? | ? | data/pile-solver/AT.json | PASS |  |
@@ -430,13 +430,13 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/us-key/overrides.json | PASS |  |
 | ? | ? | data/world-key/AE.json | PASS |  |
 | ? | ? | data/world-key/AS.json | PASS |  |
-| ? | ? | data/world-key/AT.json | PASS |  |
 | ? | ? | data/world-key/AU.json | PASS |  |
 | ? | ? | data/world-key/AX.json | PASS |  |
 | ? | ? | data/world-key/BE.json | PASS |  |
 | ? | ? | data/world-key/BM.json | PASS |  |
 | ? | ? | data/world-key/BT.json | PASS |  |
 | ? | ? | data/world-key/BW.json | PASS |  |
+| ? | ? | data/world-key/BZ.json | PASS |  |
 | ? | ? | data/world-key/CC.json | PASS |  |
 | ? | ? | data/world-key/CD.json | PASS |  |
 | ? | ? | data/world-key/CG.json | PASS |  |
