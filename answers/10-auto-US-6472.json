@@ -1,0 +1,40 @@
+{
+ "request": "requests/10-auto-US-6472.json",
+ "id": "10-auto-US-6472",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "US-6472",
+  "name": "Anita B Gorman Discovery Center State Conservation Area",
+  "agency": "Missouri Department of Conservation",
+  "url": "https://mdc.mo.gov/sites/default/files/2024-06/9706map.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-10 18:41Z",
+ "results": [
+  {
+   "url": "https://mdc.mo.gov/sites/default/files/2024-06/9706map.pdf",
+   "map_url": "https://mdc.mo.gov/sites/default/files/2024-06/9706map.pdf",
+   "saved": [
+    "maps/US-6472_anita-b-gorman-discovery-center-.jpg"
+   ],
+   "bytes": 200084,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 12,
+ "manners": {
+  "requests": 2,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "arcgis_exempt": 0,
+  "for_person_urls": []
+ },
+ "short": "1 result(s), 1 read OK"
+}
