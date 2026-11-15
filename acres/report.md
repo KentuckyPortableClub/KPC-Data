@@ -1,8 +1,8 @@
-# kpc_acres report (2026-11-08)
+# kpc_acres report (2026-11-15)
 
 - tool version 1.0.0; areas: all US, then all Canada
-- work items: 234 done of 234 - complete
-- parks with an official size: 1600; flagged: 18; unmatched rows: 27234
+- work items: 240 done of 240 - complete
+- parks with an official size: 1668; flagged: 17; unmatched rows: 27234
 - web requests this run: 0
 
 ## One line per agency
@@ -14,7 +14,7 @@
 - US-AK | U.S. Fish and Wildlife Service | failed: PDF table skipped: pypdf is not installed (pip install pypdf) | rows read 0, matched 0, unmatched 0, flagged 0 | https://www.fws.gov/sites/default/files/documents/2026-01/2025_annual_report_of_lands_data_tables-v2.pdf
 - US-AK | USDA Forest Service | failed: blocked by robots.txt | rows read 0, matched 0, unmatched 0, flagged 0 | https://usfs-public.app.box.com/index.php?rm=box_download_shared_file&shared_name=rhq1lm3rq3wauhtz6yulanuzoijaaqsw&file_id=f_2146441076608
 - US-AK | National Park Service (hand copy) | read OK (hand sizes) | rows read 1, matched 1, unmatched 0, flagged 0
-- US-AK | USDA Forest Service (hand copy) | read OK (hand sizes) | rows read 10, matched 10, unmatched 0, flagged 3
+- US-AK | USDA Forest Service (hand copy) | read OK (hand sizes) | rows read 7, matched 7, unmatched 0, flagged 1
 - US-AL | ADCNR Wildlife & Freshwater Fisheries | skipped: page only, no list to read (research says so) | rows read 0, matched 0, unmatched 0, flagged 0 | https://www.outdooralabama.com/hunting/wildlife-management-areas
 - US-AL | Alabama State Parks (ADCNR) | skipped: page only, no list to read (research says so) | rows read 0, matched 0, unmatched 0, flagged 0 | https://www.alapark.com/sites/default/files/2020-11/Parksoverviewchartcompassmedia.pdf
 - US-AL | Bureau of Land Management | skipped: no list (research says so) | rows read 0, matched 0, unmatched 0, flagged 0 | https://www.blm.gov/sites/default/files/docs/2026-08/BLM-Public-Land-Statistics-2025.pdf
@@ -214,6 +214,7 @@
 - ? | Delaware Fish & Wildlife (DNREC) (wild, state GIS table) (hand copy) | read OK (hand sizes) | rows read 1, matched 1, unmatched 0, flagged 0
 - ? | FWC (wild, state GIS table) (hand copy) | read OK (hand sizes) | rows read 1, matched 1, unmatched 0, flagged 0
 - ? | Florida State Parks (DEP) (park, state GIS table) (hand copy) | read OK (hand sizes) | rows read 5, matched 5, unmatched 0, flagged 0
+- ? | Forest Service national designated areas (monuments, NRAs, scenic areas) (hand copy) | read OK (hand sizes) | rows read 1, matched 1, unmatched 0, flagged 1
 - ? | Government of British Columbia (Historic Places) (hand copy) | read OK (hand sizes) | rows read 1, matched 0, unmatched 1, flagged 0
 - ? | Grey County GIS (upper-tier municipal government) publishing Grey Sauble Conservation Authority property data (hand copy) | read OK (hand sizes) | rows read 3, matched 0, unmatched 3, flagged 0
 - ? | Grey County GIS publishing Saugeen Valley Conservation Authority property data (hand copy) | read OK (hand sizes) | rows read 2, matched 0, unmatched 2, flagged 0
@@ -222,6 +223,9 @@
 - ? | Heritage Properties (hand copy) | read OK (hand sizes) | rows read 1, matched 0, unmatched 1, flagged 0
 - ? | IDNR Properties (hand copy) | read OK (hand sizes) | rows read 4, matched 4, unmatched 0, flagged 0
 - ? | Indiana DNR properties (hand copy) | read OK (hand sizes) | rows read 1, matched 1, unmatched 0, flagged 0
+- ? | Kentucky Department of Parks (hand copy) | read OK (hand sizes) | rows read 42, matched 42, unmatched 0, flagged 0
+- ? | Kentucky Division of Forestry (hand copy) | read OK (hand sizes) | rows read 7, matched 7, unmatched 0, flagged 0
+- ? | Kentucky Heritage Land Conservation Fund (hand copy) | read OK (hand sizes) | rows read 7, matched 7, unmatched 0, flagged 0
 - ? | Maryland DNR (Maryland Natural Areas) (preserve, state GIS table) (hand copy) | read OK (hand sizes) | rows read 3, matched 3, unmatched 0, flagged 0
 - ? | MassGIS / Executive Office of Energy and Environmental Affai (land, state GIS table) (hand copy) | read OK (hand sizes) | rows read 1, matched 1, unmatched 0, flagged 0
 - ? | NC Natural Heritage Program, NC Dept of Natural and Cultural (preserve, state GIS table) (hand copy) | read OK (hand sizes) | rows read 1, matched 1, unmatched 0, flagged 0
@@ -229,14 +233,16 @@
 - ? | NS_Lands_Proposed_or_Pending_Protection (hand copy) | read OK (hand sizes) | rows read 5, matched 0, unmatched 5, flagged 0
 - ? | National Register of Historic Places Polygons (hand copy) | read OK (hand sizes) | rows read 6, matched 6, unmatched 0, flagged 0
 - ? | National_Heritage_Areas_Updated2023 (hand copy) | read OK (hand sizes) | rows read 1, matched 1, unmatched 0, flagged 0
-- ? | Natural Area Parcel Ownership (hand copy) | read OK (hand sizes) | rows read 6, matched 6, unmatched 0, flagged 0
+- ? | Natural Area Parcel Ownership (hand copy) | read OK (hand sizes) | rows read 5, matched 5, unmatched 0, flagged 0
 - ? | Nevada outdoor recreation areas (NV Division of State Parks SCORP, DCNR server) (land, state GIS table) (hand copy) | read OK (hand sizes) | rows read 3, matched 3, unmatched 0, flagged 0
+- ? | Office of Kentucky Nature Preserves (hand copy) | read OK (hand sizes) | rows read 14, matched 14, unmatched 0, flagged 0
+- ? | Office of Kentucky Nature Preserves (Kentucky Wild Rivers) (hand copy) | read OK (hand sizes) | rows read 3, matched 3, unmatched 0, flagged 0
 - ? | Parks (hand copy) | read OK (hand sizes) | rows read 12, matched 0, unmatched 12, flagged 0
 - ? | Property Boundaries (hand copy) | read OK (hand sizes) | rows read 15, matched 0, unmatched 15, flagged 0
 - ? | State of Oregon (Oregon parklands) (park, state GIS table) (hand copy) | read OK (hand sizes) | rows read 1, matched 1, unmatched 0, flagged 0
 - ? | Tennessee Wildlife Resources Agency (credit: TWRA) (wild, state GIS table) (hand copy) | read OK (hand sizes) | rows read 1, matched 1, unmatched 0, flagged 0
 - ? | US Fish and Wildlife Service (hand copy) | read OK (hand sizes) | rows read 5, matched 5, unmatched 0, flagged 1
-- ? | Utah Division of Wildlife Resources (AGOL owner dwrutah, Utah DNR org) (land, state GIS table) (hand copy) | read OK (hand sizes) | rows read 8, matched 8, unmatched 0, flagged 0
+- ? | Utah Division of Wildlife Resources (AGOL owner dwrutah, Utah DNR org) (land, state GIS table) (hand copy) | read OK (hand sizes) | rows read 5, matched 5, unmatched 0, flagged 0
 - ? | Washington Department of Fish and Wildlife (wild, state GIS table) (hand copy) | read OK (hand sizes) | rows read 6, matched 6, unmatched 0, flagged 0
 - ? | Washington State Department of Natural Resources (Non-DNR Major Public Lands parcels; MANAGER field gives WDFW / State Parks) (land, state GIS table) (hand copy) | read OK (hand sizes) | rows read 1, matched 1, unmatched 0, flagged 0
 - ? | Wisconsin DNR (land, state GIS table) (hand copy) | read OK (hand sizes) | rows read 1, matched 1, unmatched 0, flagged 0
@@ -245,7 +251,19 @@
 ## Checks
 
 - WMA matched to a state park (must be 0): 0
-- flags: another official list differs by more than 10%: 8; over 50x the current outline: 2; possible duplicate rows: 8
-- answer key: 1 matched parks have a hand-checked size; 1 agree within 10% (100.0%; pass mark 95%)
+- flags: another official list differs by more than 10%: 8; over 50x the current outline: 2; possible duplicate rows: 7
+- answer key: 74 matched parks have a hand-checked size; 62 agree within 10% (83.8%; pass mark 95%)
+  - US-1274 Blue Licks Battlefield State Park: list 54 ac vs key 1,062 ac (Office of Kentucky Nature Preserves, number)
+  - US-3789 William Whitley House State Historic Site: list 31 ac vs key 89 ac (Kentucky Heritage Land Conservation Fund, number)
+  - US-3797 Boatwright Wildlife Management Area: list 256 ac vs key 8,839 ac (Kentucky Heritage Land Conservation Fund, number)
+  - US-3813 Griffith Woods Wildlife Management Area: list 377 ac vs key 742 ac (Kentucky Heritage Land Conservation Fund, number)
+  - US-3828 Peabody Wildlife Management Area: list 7,991 ac vs key 40,546 ac (Kentucky Heritage Land Conservation Fund, number)
+  - US-4688 Kentenia State Forest: list 2,796 ac vs key 4,061 ac (Kentucky Division of Forestry, number)
+  - US-4689 Kentucky Ridge State Forest: list 9,041 ac vs key 11,734 ac (Kentucky Division of Forestry, number)
+  - US-4690 Knobs State Forest: list 426 ac vs key 1,529 ac (Kentucky Division of Forestry, number)
+  - US-4693 Tygarts State Forest: list 683 ac vs key 1,169 ac (Kentucky Division of Forestry, number)
+  - US-7890 Isaac Shelby Cemetery State Historic Site: list 4 ac vs key 3 ac (Kentucky Department of Parks, number)
+  - US-7951 Green River State Forest: list 688 ac vs key 1,087 ac (Kentucky Division of Forestry, number)
+  - US-7952 Marrowbone State Forest: list 305 ac vs key 1,946 ac (Kentucky Division of Forestry, number)
 
 These sizes are candidates for the waiting room (kind `acres`); the club's rules and chat 11 decide.
