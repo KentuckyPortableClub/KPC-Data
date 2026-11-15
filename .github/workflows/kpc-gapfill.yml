@@ -1,4 +1,5 @@
 name: KPC gap filler (now the park detective)
+# RETIRED 2026-11-14: the gap filler job is retired (the detective now runs questions only); no schedule; file kept because kpc_gapfill_bot.py names it. A manual run here still starts kpc-detective.yml (jobs default 'questions').
 # Oct 28 2026: the gap filler grew into the PARK DETECTIVE (kpc-detective.yml, kpc_detective_bot.py, data/detective). This workflow is
 # kept so the earlier wiring still works: a manual run here just starts the detective with the same inputs. No schedule here
 # (the detective has the Monday one).

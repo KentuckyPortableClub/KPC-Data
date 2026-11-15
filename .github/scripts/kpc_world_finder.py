@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# RETIRED 2026-11-14: kpc-world-finder.yml has no schedule; file kept because tests import it.
 """WORLD FINDER v2 (chat 10, Opus, Oct 29 2026; replaces the world harvester's way of working). Design: Fable's
 KPC-Links .claude/build/research/KPC_WorldHarvester_Redesign_Fable.md (sections 1-6 + Opus 9-10 + Brandon's stages 11-12).
 STAGE 1 ONLY (Brandon 10:09 PM): Fable's plan to a T over the WHOLE world list (every POTA country outside the US + Canada),

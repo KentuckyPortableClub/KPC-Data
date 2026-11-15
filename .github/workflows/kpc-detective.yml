@@ -26,7 +26,7 @@ on:
         description: 'How many MORE jobs may follow this one by themselves when areas remain (0 = none)'
         default: '6'
       jobs:
-        description: 'Which jobs, in order: questions gaps (any subset)'
+        description: 'Which jobs: questions (the gaps job is RETIRED 2026-11-14; asked for, it is skipped with a notice)'
         default: 'questions'
   schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
     - cron: '39 10 * * *'   # Oct 31 (Brandon 'fold detective into look up'): daily, answers the look-up branch's 'dig' questions   # G9 Nov 2: was '41 10 * * *' (spread the start times; now 2 min earlier)
@@ -115,7 +115,7 @@ jobs:
         run: |
           C=$(( ${{ inputs.chain }} - 1 ))
           echo "::notice title=Park detective::$LEFT areas left: the next job starts itself (then $C more may follow)"
-          gh workflow run kpc-detective.yml -R ${{ github.repository }} -f areas= -f chunks=5 -f chain=$C -f jobs="${{ inputs.jobs || 'questions gaps' }}" || { kpc_rc=$?; echo "::error title=Next run::could not start the next run; the chain stops here (exit $kpc_rc)"; echo "Next run - could not start the next run; the chain stops here (exit $kpc_rc)" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          gh workflow run kpc-detective.yml -R ${{ github.repository }} -f areas= -f chunks=5 -f chain=$C -f jobs="${{ inputs.jobs || 'questions' }}" || { kpc_rc=$?; echo "::error title=Next run::could not start the next run; the chain stops here (exit $kpc_rc)"; echo "Next run - could not start the next run; the chain stops here (exit $kpc_rc)" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()
         env:

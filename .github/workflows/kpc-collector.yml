@@ -1,4 +1,5 @@
 name: KPC layer collector (starts itself when the Fable / atlas files have new work)
+# RETIRED 2026-11-14: the layer collector and GIS finders are off (paused since Nov 4, the GIS hunter does this work); schedule removed; files kept because tests and kpc-history-restart.yml name it, kpc_layer_collector.py helpers are read by tests. Was: cron '16 3,9,15,21 * * *' (every 6 h).
 # Oct 30 2026 (chat 10; HQ 8:10 AM + Brandon 10:41 AM 'just add that feature … and auto start'). Every 2 hours it looks at
 # KPC-Links .claude/build/research/fable + agency-atlas: if nothing changed since the last look it stops in seconds; else it runs
 # kpc_layer_collector.py: chat 8's LAYER lines AND every layer the atlas crawler listed are pin-tested against the area's parks still
@@ -6,8 +7,6 @@ name: KPC layer collector (starts itself when the Fable / atlas files have new w
 # layers to the intake queue, reasons in data/intake/collector.json. Nothing goes on a map without chat 11's YES. Never red.
 on:
   # PAUSED Nov 4 (fix bundle; Brandon's yes relayed via Super Head Bot 4:53 PM CST; revert this one commit to resume): the schedule is off, by hand (workflow_dispatch) only
-  # schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
-    # - cron: '16 3,9,15,21 * * *'   # PR2 (Nov 2): every 6 h (was every 2 h, '16 */2 * * *'); it still starts its own next run while pairs are left   # G9 Nov 2: was '17 */2 * * *' (spread the start times; now 1 min earlier)
   workflow_dispatch:
     inputs:
       as_schedule:
