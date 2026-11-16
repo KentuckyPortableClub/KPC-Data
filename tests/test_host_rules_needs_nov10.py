@@ -64,14 +64,15 @@ def test_manners_host_rule_before_any_request(no_net, monkeypatch, tmp_path):
     assert any(r['page'].startswith('https://hub.arcgis.com/search?q=') for r in rows.values())
 
 
-def test_manners_robots_403_is_disallow(monkeypatch):
+def test_manners_robots_403_is_no_rules(monkeypatch):
+    """Nov 15 (KPC owner, 2026-11-15: one robots rule everywhere = the store engine 3.6.2 rule): a robots.txt 401 / 403 is
+    "unavailable" = no rules (RFC 9309 2.3.1.3), as in the engine; it was a Disallow from Nov 10. A 5xx stays "could not be read"."""
     import kpc_manners as K; K = importlib.reload(K)
     def r403(*a, **k): raise urllib.error.HTTPError('https://gis.example.gov/robots.txt', 403, 'no', {}, None)
     monkeypatch.setattr(urllib.request, 'urlopen', r403)
     M = K.Manners('test'); M._pace = lambda *a, **k: None
-    st = M.get('https://gis.example.gov/arcgis/rest/services/x/MapServer/0?f=json')[0]
-    assert st == 'robots' and not K.next_run(st)
-    assert M.needs and M.needs[0][2] == 'robots'
+    assert M.robots_ok('https://gis.example.gov/arcgis/rest/services/x/MapServer/0?f=json') is True
+    assert not M.needs and not M.for_person
     def r503(*a, **k): raise urllib.error.HTTPError('https://gis2.example.gov/robots.txt', 503, 'busy', {}, None)
     monkeypatch.setattr(urllib.request, 'urlopen', r503)
     assert M.get('https://gis2.example.gov/arcgis/rest/services/x/MapServer/0')[0] == 'robots-unreadable'

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Offline test, Nov 14 2026: the Kentucky State Parks alert feed (src_ky_parks) goes through the bot's Manners: robots.txt
-check + 2 s gap per host. robots 200 = obey; 404/410 = allowed; 401/403 or a Disallow = not read; 5xx / no answer = not read
+check + 2 s gap per host. robots 200 = obey; 404/410 = allowed; Nov 15: 401/403 = no rules (the engine 3.6.2 rule); a Disallow = not read; 5xx / no answer = not read
 this run. A refused read is never a clean read: the source is recorded as failed/skipped and its last items stay.
 The real Manners runs; only urlopen is replaced (robots.txt answers per case, the feed answers one alert). No real network.
 Run: python3 -B tests/test_closures_ky_robots_nov14.py"""
@@ -89,14 +89,13 @@ s, kept, asked, gap, log = run(200, b'User-agent: *\nAllow: /\n')
 check(asked and s.get('ok') is True, f'robots 200 allow: the feed is read and the source is clean ({s.get("why")!r})')
 check(gap is not None and gap >= 1.9, f'robots 200 allow: 2 s gap between robots.txt and the feed on the same host ({gap})')
 
-# robots.txt 404 / 410: no rules, allowed
-for st in (404, 410):
+# robots.txt 404 / 410: no rules, allowed; Nov 15: 401 / 403 = "unavailable" = no rules too (the store engine 3.6.2 rule, one rule everywhere)
+for st in (404, 410, 401, 403):
     s, kept, asked, gap, log = run(st)
     check(asked and s.get('ok') is True, f'robots {st}: allowed, the feed is read ({s.get("why")!r})')
 
-# robots.txt 200 with a Disallow for the feed path; 401 / 403 = a Disallow: not read, failed (not clean), old item kept
-for st, txt, name in ((200, b'User-agent: *\nDisallow: /api/\n', 'Disallow /api/'), (200, b'User-agent: *\nDisallow: /\n', 'Disallow whole site'),
-                      (401, b'', '401'), (403, b'', '403')):
+# robots.txt 200 with a Disallow for the feed path: not read, failed (not clean), old item kept
+for st, txt, name in ((200, b'User-agent: *\nDisallow: /api/\n', 'Disallow /api/'), (200, b'User-agent: *\nDisallow: /\n', 'Disallow whole site')):
     s, kept, asked, gap, log = run(st, txt)
     check(not asked, f'robots {name}: the feed is NOT asked')
     check(s.get('ok') is False and s.get('why', '').startswith('robots') and s.get('skipped') is False and s.get('fails') == 1,

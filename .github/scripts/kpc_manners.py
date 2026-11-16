@@ -2,7 +2,8 @@
 """KPC BOT MANNERS (Fable, chat 10 'bot workshop', Oct 28 2026). ONE small module every workshop bot imports, so the house
 rules are written once: the host rules first (kpc_host_rules.py, Nov 10: never-contact hosts, every services*.arcgis.com host
 and the saved-copy-only list get no request of any kind, robots.txt included), robots.txt obeyed with NO exemption (the old ArcGIS
-REST exemption is gone, Nov 10; a robots.txt 401 / 403 is a Disallow), 1 request / 2 s per host, back-off on 429 / 5xx, three strikes
+REST exemption is gone, Nov 10; Nov 15: robots.txt read by the store engine 3.6.2 rule, the same everywhere: 401 / 403 and any other
+4xx but 429 = "unavailable" = no rules, a web page with no robots line from the site's own address = no rules), 1 request / 2 s per host, back-off on 429 / 5xx, three strikes
 = that host rests a day (remembered across runs in the bot's state file), range reads for PDFs, a User-Agent that names the club
 site and never an email. Nothing here decides anything about a park: it only fetches politely.
 
@@ -21,6 +22,55 @@ def _load_host_rules():
 
 
 HR = _load_host_rules()   # no fallback: a fetch module without the host rules must not run
+
+
+# Nov 15: the store engine 3.6.2 (final) rule for a robots.txt web page (kpc_outline_store.read_robots, robots_final_problem,
+# robots_html_no_rules_ok, robots_normalize: the same regular expressions). KPC-Links kpc_inbox_manners.robots_page is the same code.
+ROBOTS_SCRIPT_RX = re.compile(r'<script\b.*?</script\s*>|<style\b.*?</style\s*>|<!--.*?-->', re.I | re.S)
+ROBOTS_ANY_RX = re.compile(r'(?<![\w-])(user-agent|useragent|allow|disallow|sitemap|crawl-delay)\s*:', re.I)
+ROBOTS_LINE_RX = re.compile(r'^\s*(user-agent|useragent|allow|disallow|sitemap|crawl-delay)\s*:', re.I | re.M)
+ROBOTS_FORM_RX = re.compile(r'<input\b[^>]{0,300}\btype\s*=\s*["\']?password|<form\b[^>]{0,400}\b(action|id|name|class)\s*=\s*["\']?[^"\'>]{0,200}'
+                            r'(log[\s_-]?in|sign[\s_-]?in|auth|sso|saml|oauth|session|credential|j_security_check|account|captcha|challenge)', re.I)
+ROBOTS_WALL_RX = re.compile(r'cf-chl|challenge-platform|captcha-delivery|verify (that )?you are (a )?human|are you a robot', re.I)
+ROBOTS_SIGNIN_TEXT_RX = re.compile(r'\b(please|you must|you need to|required to)\s+(sign|log)\s?-?\s?(in|on)\b|\b(sign|log)\s?-?\s?(in|on)\s+(to continue|is required|required)\b'
+                                   r'|\b(login|sign[\s-]?in|authentication)\s+(is\s+)?required\b|\baccess denied\b', re.I)
+ROBOTS_SIGNIN_PATH_RX = re.compile(r'log[\s_-]?in|log[\s_-]?on|sign[\s_-]?in|sign[\s_-]?on|auth|sso|saml|oauth|openid|account|session|(?:^|/)cas/|\bidp\b|j_security', re.I)
+_TAG_RX = re.compile(r'<[^>]{0,400}>')
+
+
+def robots_normalize(txt):
+    out = []
+    for line in re.split(r'\r\n|\r|\n', str(txt or '')):
+        body, hsh, com = line.partition('#')
+        out.append(re.sub(r'(?<=\S)[ \t]+(?=(?:user-agent|useragent|disallow|allow|sitemap|crawl-delay)\s*:)', '\n', body, flags=re.I) + hsh + com)
+    return '\n'.join(out)
+
+
+def robots_final_problem(final_url, first_url):
+    """'' when the answer came from this site's own /robots.txt address (same scheme and host, no user name, not a sign-in address)."""
+    b, fu = urllib.parse.urlsplit(first_url), urllib.parse.urlsplit(final_url or first_url)
+    if (fu.scheme or '').lower() != (b.scheme or '').lower() or (fu.hostname or '').lower() != (b.hostname or '').lower() or fu.port != b.port:
+        return f'the answer came from another site ({str(final_url)[:120]}): not read as "no rules"'
+    if '@' in fu.netloc: return 'the answer address carries a user name: not read as "no rules"'
+    if ROBOTS_SIGNIN_PATH_RX.search(fu.path + '?' + fu.query + '#' + fu.fragment): return f'the redirects ended at a sign-in address ({str(final_url)[:120]}): not read as "no rules"'
+    return ''
+
+
+def robots_page(txt, headers, final_url, first_url):
+    """A robots.txt that answered 200 with a web page -> ('yes' | 'parsed' | 'unreadable', robots text for 'parsed', why)."""
+    import html as _html
+    vis = ROBOTS_SCRIPT_RX.sub(' ', txt)
+    why = robots_final_problem(final_url, first_url)
+    if ROBOTS_ANY_RX.search(_TAG_RX.sub(' ', _html.unescape(vis))):
+        if why: return 'unreadable', '', f'robots.txt answered with a web page holding robots directives, but {why}'
+        return 'parsed', robots_normalize(_TAG_RX.sub('\n', _html.unescape(vis))), 'robots.txt answered with a web page holding robots directives: parsed'
+    if not why and ROBOTS_LINE_RX.search(vis): why = 'the page holds robots lines inside HTML'
+    if not why and ROBOTS_WALL_RX.search(txt): why = 'the page is a bot challenge (captcha / "verify you are human")'
+    if not why and ROBOTS_SIGNIN_TEXT_RX.search(_TAG_RX.sub(' ', _html.unescape(vis))): why = 'the page asks the reader to sign in'
+    if not why and {str(k).lower(): v for k, v in (headers or {}).items()}.get('www-authenticate'): why = 'the answer carries a WWW-Authenticate header (a sign-in)'
+    if not why and ROBOTS_FORM_RX.search(txt): why = 'the page has a password field or a form that posts credentials (a sign-in page)'
+    if why: return 'unreadable', '', f'robots.txt answered with a web page, not a robots file ({why}): not read as "no rules"'
+    return 'yes', '', 'robots.txt answered with a web page holding no robots line: no rules'
 
 
 class HostRuleRefused(urllib.error.URLError):
@@ -126,9 +176,12 @@ class Manners:
         return bool(KEYED_API.get(h)) and (pp.path or '').startswith(KEYED_API[h])
 
     def robots_ok(self, u):
-        """Nov 3 (Quality A1, RFC 9309): robots.txt 200 = its rules; 404/410 = no rules (allowed); anything else (401/403/5xx,
-        a time-out, no connection) = we cannot know the rules, so this run does NOT fetch from that host:port, and the failure is
-        never cached. The cache keeps the real status (200/404/410). The robots read is a request like any other (A5)."""
+        """Nov 15 (KPC owner, 2026-11-15: ONE robots rule everywhere = the store engine 3.6.2 rule, kpc_outline_store.read_robots):
+        robots.txt 200 = its rules (a web page with no robots line, from this site's own /robots.txt address, that is not a sign-in or
+        bot-challenge page = no rules; a page holding robots directives is parsed; any other web page = nothing fetched, for a person);
+        404/410 = no file; 401/403 and any other 4xx except 429 = "unavailable" = no rules (RFC 9309 2.3.1.3); 429, 5xx, a time-out,
+        no connection = we cannot know the rules, so this run does NOT fetch from that host:port, and that failure is never cached.
+        The cache keeps the real status. The robots read is a request like any other (A5)."""
         h = self.host(u)
         if not HR.host_ok(u)[0]: return False                # Nov 10: the host rules first; robots.txt of a blocked host is never read
         if self.keyed(u):
@@ -149,27 +202,37 @@ class Manners:
         pu = urllib.parse.urlparse(u)
         ru = f'{pu.scheme or "https"}://{pu.netloc}/robots.txt'
         c = self._cache_read('robots ' + ru, 1.0)
-        st, txt = (c[0], c[2]) if c is not None and c[0] in (200, 404, 410) else (None, None)
+        cacheable = lambda s_: isinstance(s_, int) and (s_ == 200 or (400 <= s_ < 500 and s_ != 429))
+        st, txt, hdr, final = (c[0], c[2], c[1] or {}, ru if str(c[3]).startswith('robots ') else c[3]) if c is not None and cacheable(c[0]) else (None, None, {}, ru)
         if st is None:
             self._pace(h, 0.0)
             try:
                 with urllib.request.urlopen(urllib.request.Request(ru, headers={'User-Agent': self.ua}), timeout=15) as r:
                     st, txt = r.status, r.read(512_000)   # RFC 9309: parse at least 500 KiB (Quality: was 40,000 bytes)
+                    hdr, final = {k.lower(): v for k, v in r.headers.items()}, r.geturl() or ru
             except urllib.error.HTTPError as e:
                 st, txt = e.code, b''
             except Exception:  # noqa: BLE001
                 st, txt = 'unreachable', b''
-            if st in (200, 404, 410): self._cache_write('robots ' + ru, st, {}, txt)
+            if cacheable(st):
+                self._cache_write('robots ' + ru, st, {k: v for k, v in hdr.items() if k == 'www-authenticate'}, txt, final if final != ru else None)
+        page = st == 200 and txt.decode('utf-8', 'replace').lstrip('\ufeff \t\r\n').startswith('<')
+        if page:   # Nov 15: a web page at robots.txt, the store engine 3.6.2 rule
+            kind, body, why = robots_page(txt.decode('utf-8', 'replace'), hdr, final, ru)
+            if kind == 'yes': self.robots[rk] = None; return
+            if kind == 'unreadable':
+                self.robots[rk] = False; self.robots_disallow = getattr(self, 'robots_disallow', set()) | {rk}
+                self.blocked[rk] = ('robots', why)
+                self.for_person.append((ru, f'{why}: a person downloads what is needed from {rk}')); return
+            txt = body.encode('utf-8')   # a page holding robots directives: its directives are the rules
         if st == 200:
             rp = urllib.robotparser.RobotFileParser(); rp.parse(txt.decode('utf-8', 'replace').splitlines()); self.robots[rk] = rp
             try: all_no = not rp.can_fetch(self.ua, f'{pu.scheme or "https"}://{pu.netloc}/')
             except Exception: all_no = True  # noqa: BLE001
             if all_no: self.blocked[rk] = ('robots', 'robots.txt disallows the whole site for us')
         elif st in (404, 410): self.robots[rk] = None          # no rules
-        elif st in (401, 403):                                  # Nov 10: a robots.txt 401 / 403 counts as a Disallow (not retried as unreadable)
-            self.robots[rk] = False; self.robots_disallow = getattr(self, 'robots_disallow', set()) | {rk}
-            self.blocked[rk] = ('robots', f'robots.txt answered {st}: counted as a Disallow')
-            self.for_person.append((ru, f'robots.txt answered {st} (counted as a Disallow): a person downloads what is needed from {rk}'))
+        elif isinstance(st, int) and 400 <= st < 500 and st != 429:
+            self.robots[rk] = None   # Nov 15: 401 / 403 / other 4xx = "unavailable" = no rules (the store engine 3.6.2 rule, RFC 9309 2.3.1.3)
         else:
             self.robots[rk] = False                             # unknown rules: refuse this run (not cached)
             self.blocked[rk] = ('robots-unreadable', f'robots.txt answered {st}')   # addendum: every queued request to it is dropped

@@ -938,7 +938,7 @@ def src_ky_parks(url):
     # Oct 29 (HQ 9:55 AM: feed down since Oct 28 'host resting'): ask EXACTLY the way the old KPC-Links reader does (kpc_park_alerts.py,
     # every 3 h, works): its short User-Agent, JSON only, ONE try, and never through the shared strike counter, so page reads of other
     # parks.ky.gov pages can no longer put this feed to rest.
-    # Nov 14: before that one try, the bot's Manners (M) checks robots.txt (200 = obey; 404/410 = allowed; 401/403 or a Disallow =
+    # Nov 14: before that one try, the bot's Manners (M) checks robots.txt (200 = obey; 404/410 = allowed; a Disallow =
     # 'robots', not read; 5xx / no answer = 'robots-unreadable', not read this run) and keeps the 2 s gap per host. A refused read
     # raises the Manners word, so process_area records it like every other source: last items kept, never a clean read.
     if OFFLINE: raise RuntimeError('offline')
