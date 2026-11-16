@@ -1,6 +1,6 @@
 # Closures super-bot: review (2026-11-16; RULE SHEET D; compared quietly, nothing on cards until GO)
 
-Run: 2026-11-16T02:32Z · requests 106 · pages 80 · PDFs 17 · sentences read 326 · unmatched 118 · look-alikes skipped 203 · sources failed 3
+Run: 2026-11-16T08:33Z · requests 106 · pages 80 · PDFs 17 · sentences read 326 · unmatched 118 · look-alikes skipped 203 · sources failed 3
 
 ## Kentucky gate: **FAIL** — 20 of 27 of Kentucky's own reader's items found here on the same park (74%); 53 only here
 
@@ -10,7 +10,7 @@ Run: 2026-11-16T02:32Z · requests 106 · pages 80 · PDFs 17 · sentences read 
 - US-KY ky-fs-dbnf: rest (host resting after an earlier strike; last items kept) (https://www.fs.usda.gov/alerts/dbnf/alerts-notices)
 - US-KY nps-ky: rest (host resting after an earlier strike; last items kept) (https://www.nps.gov/state/ky/index.htm)
 
-## US-KY (done, read 2026-11-16T02:32)
+## US-KY (done, read 2026-11-16T08:33)
 whole 1 · part 0 · hunt 0 · seasonal 0 · note 69 · taken_down 17 · 0 banners
 
 Sources that failed (last items kept): ky-fs-dbnf (rest (host resting after an earlier strike; last items kept)); nps-ky (rest (host resting after an earlier strike; last items kept)); fs-gwj (rest (host resting after an earlier strike; last items kept))
