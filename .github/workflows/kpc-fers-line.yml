@@ -253,6 +253,9 @@ jobs:
           PASS=1 MINUTES=$(( M / 3 )) python3 .github/scripts/kpc_fers.py || { kpc_rc=$?; echo "::error title=kpc_fers.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           fi
           PASS=2 MINUTES=$(( M * 2 / 3 )) python3 .github/scripts/kpc_fers.py || { kpc_rc=$?; echo "::error title=kpc_fers.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          # KPC owner, 2026-11-16 (item 1, round 1): "done" comes from the receipt of the passes this step ran (red when missing or not measured)
+          RAN=2; [ "$SKIP_PASS1" = yes ] || RAN=1,2
+          if [ -f .github/scripts/kpc_fers_receipt.py ]; then python3 .github/scripts/kpc_fers_receipt.py check --dir data/fers --passes "$RAN" --allow-time-stop || { kpc_rc=$?; echo "::error title=2-fer receipt::the receipt says this run is not done (exit $kpc_rc)"; echo "kpc_fers_receipt.py - the receipt says this run is not done (exit $kpc_rc)" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; exit $kpc_rc; }; fi
       - name: USGS water from the BULK FILES up front (HU4 files on USGS's Amazon storage, never the live map; HQ Oct 28 6:57 PM)
         id: kept_green_5
         continue-on-error: true
@@ -397,6 +400,8 @@ jobs:
           fi
           PASS=3 MINUTES=$(( M * 4 / 5 )) python3 .github/scripts/kpc_fers.py || { kpc_rc=$?; echo "::error title=kpc_fers.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           PASS=5 MINUTES=$(( M / 3 )) python3 .github/scripts/kpc_fers.py || { kpc_rc=$?; echo "::error title=kpc_fers.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          # KPC owner, 2026-11-16 (item 1, round 1): "done" comes from the receipt of the passes this step ran (red when missing or not measured)
+          if [ -f .github/scripts/kpc_fers_receipt.py ]; then python3 .github/scripts/kpc_fers_receipt.py check --dir data/fers --passes "3,5" --allow-time-stop || { kpc_rc=$?; echo "::error title=2-fer receipt::the receipt says this run is not done (exit $kpc_rc)"; echo "kpc_fers_receipt.py - the receipt says this run is not done (exit $kpc_rc)" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; exit $kpc_rc; }; fi
       - name: Water report per state (tiles needed / saved / rows not checked; a 'not checked' row with every tile saved = the store was not read)
         id: kept_green_9
         continue-on-error: true
