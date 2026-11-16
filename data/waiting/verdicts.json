@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-16T17:47Z",
+ "checked": "2026-11-16T18:10Z",
  "switched_on": false,
  "results": [
   {
@@ -3741,11 +3741,11 @@
   {
    "path": "data/world-key/AE.json",
    "kind": "key",
-   "why": [],
-   "notes": [
-    "F-O4 shape test: 1 changed outlines read from PAD-US, 0 far from the park pin"
+   "why": [
+    "F-4 unsure: PAD-US did not answer the shape test (HTTPError)"
    ],
-   "verdict": "PASS"
+   "notes": [],
+   "verdict": "HOLD"
   },
   {
    "path": "data/world-key/AS.json",

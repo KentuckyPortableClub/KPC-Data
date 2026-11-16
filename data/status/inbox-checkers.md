@@ -450,6 +450,7 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-11-01, 15 days): truth data/truth/US-TX.json held: F-R2 5 OFF rows share the size 675,000.0 ac
 - FROM WAITING ROOM (held since 2026-11-10, 6 days): truth data/truth/US-UT.json held: F-R2 6 OFF rows share the size 2,200,000.0 ac
 - FROM WAITING ROOM (held since 2026-11-10, 6 days): truth data/truth/US-WA.json held: F-R2 5 OFF rows share the size 564.0 ac · F-R3 157 of 188 sized parks are OFF (over half: a reading problem?)
+- FROM WAITING ROOM (held since 2026-11-16): key data/world-key/AE.json held: F-4 unsure: PAD-US did not answer the shape test (HTTPError)
 - FROM WAITING ROOM (held since 2026-11-13, 3 days): key data/world-key/BS.json held: F-O1 outlines 32 -> 29 (more than 1% lost)
 - FROM WAITING ROOM (held since 2026-11-11, 5 days): key data/world-key/FR.json held: F-O1 outlines 13877 -> 12882 (more than 1% lost)
 - FROM WAITING ROOM (held since 2026-11-11, 5 days): key data/world-key/JP.json held: F-O2 101 of 185 outlines carry a layer name that shares no word with the park (55%; live 97/185): outlines swapped to other parks?
