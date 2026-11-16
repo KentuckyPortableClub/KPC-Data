@@ -652,6 +652,70 @@
   ]
  },
  {
+  "ref": "US-5730",
+  "area": "US-IA",
+  "park": "Blood Run State Historic Site",
+  "agency_group": "iowaculture.gov",
+  "kind": "outline",
+  "date": "2026-11-07",
+  "status": "check failed",
+  "st": "US-IA",
+  "url": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9?f=html",
+  "service_url": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9",
+  "name_field": "AREA_NAME",
+  "agency": "Iowa DNR (wild, state GIS table)",
+  "licence": "see the publisher",
+  "answer": "",
+  "checked_by": "",
+  "tier": "T-2",
+  "band": "WEAK",
+  "step": "L0",
+  "record": 4852,
+  "record_name": "BLOOD RUN/ROCK ISLAND NATIONAL LANDMARK",
+  "layer": "PACK-US-IA-wildlife-254",
+  "record_link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9/query?where=OBJECTID%3D4852&outFields=%2A&f=html",
+  "where": "OBJECTID=4852",
+  "pin_m": 0,
+  "acres_approx": 166.9,
+  "grade": "official",
+  "envelope": [
+   -96.5856,
+   43.46216,
+   -96.57173,
+   43.46923
+  ],
+  "rule": null,
+  "others": [],
+  "source_url": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9/query?geometry=-96.5761%2C43.4674&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+  "read_date": "2026-11-07",
+  "rule_g": "LIKELY",
+  "rule_g_why": "names overlap",
+  "size_band": "unknown",
+  "why": "T-2 WEAK: 'BLOOD RUN/ROCK ISLAND NATIONAL LANDMARK' at the POTA pin",
+  "notes": {
+   "where_looked": [
+    {
+     "source": "PACK-US-IA-wildlife-254",
+     "gave": "hit (1 at pin, 0 by name)"
+    },
+    {
+     "source": "WDPA (last resort)",
+     "gave": "not asked: an official layer has a record for this park (W-10)"
+    }
+   ],
+   "solved": "NAME SOLVED: agency calls it BLOOD RUN/ROCK ISLAND NATIONAL LANDMARK",
+   "why_this_record": "record 'BLOOD RUN/ROCK ISLAND NATIONAL LANDMARK' (PACK-US-IA-wildlife-254); pin inside; about 166.9 acres; Rule G: LIKELY (names overlap); size unknown",
+   "confidence": {
+    "level": "likely",
+    "double_check": "check the kind of place and the size"
+   }
+  },
+  "pass": 1,
+  "check_problem": [
+   "source_url does not open (HTTP 522)"
+  ]
+ },
+ {
   "ref": "CA-5166",
   "area": "CA-NB",
   "park": "Dominion Park Recreation Park",
