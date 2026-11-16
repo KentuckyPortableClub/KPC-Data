@@ -179,6 +179,7 @@ jobs:
             # the POTA history first, and the passes then hit the job limit mid-pass); 5 minutes are kept for the save
             HARD=$(( ${KPC_JOB_T0:-$(date +%s)} + 335 * 60 - 300 )); [ $END -gt $HARD ] && END=$HARD
             TOTAL=$(( (END - $(date +%s)) / 60 ))
+            RAN=""   # KPC owner, 2026-11-16 (proof of work, item 1): the passes that ran; done is decided from their receipt
             for p in 1 2 3 5; do   # 5 = re-check water + tidy the rows + 'same land' owner / pin (Oct 27)
               LEFT=$(( (END - $(date +%s)) / 60 ))
               # Nov 9: pass 1 tests every touching pair (46,261 in US + Canada) and was cut at 359 with a fifth: it now gets 2/5
@@ -186,8 +187,13 @@ jobs:
               [ $CAP -gt $LEFT ] && CAP=$LEFT
               [ $CAP -lt 5 ] && { echo "::notice title=2-fer bot::no time left for pass $p (next run carries on)"; break; }
               PASS=$p MINUTES=$CAP python3 .github/scripts/kpc_fers.py || { kpc_rc=$?; echo "::error title=kpc_fers.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; exit $kpc_rc; }
+              RAN="$RAN,$p"
             done
-          else python3 .github/scripts/kpc_fers.py || { kpc_rc=$?; echo "::error title=kpc_fers.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; exit $kpc_rc; }; fi
+            # KPC owner, 2026-11-16 (item 1): "done" comes from the receipt, never from the log: no receipt, a pass without its
+            # section, an area not measured (store empty / missing / 0 read) or another rules hash = red, and Save does not run
+            if [ -n "$RAN" ] && [ -f .github/scripts/kpc_fers_receipt.py ]; then python3 .github/scripts/kpc_fers_receipt.py check --dir data/fers --passes "${RAN#,}" --allow-time-stop || { kpc_rc=$?; echo "::error title=2-fer receipt::the receipt says this run is not done (exit $kpc_rc): nothing is saved"; echo "kpc_fers_receipt.py - the receipt says this run is not done (exit $kpc_rc)" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; exit $kpc_rc; }; fi
+          else python3 .github/scripts/kpc_fers.py || { kpc_rc=$?; echo "::error title=kpc_fers.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; exit $kpc_rc; }
+            if [ -f .github/scripts/kpc_fers_receipt.py ]; then python3 .github/scripts/kpc_fers_receipt.py check --dir data/fers --passes "$PASS" --allow-time-stop || { kpc_rc=$?; echo "::error title=2-fer receipt::the receipt says this run is not done (exit $kpc_rc): nothing is saved"; echo "kpc_fers_receipt.py - the receipt says this run is not done (exit $kpc_rc)" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; exit $kpc_rc; }; fi; fi
           # Oct 27 (HQ): Kentucky's known river + trail pairs must come out before any big run
           if [ "$REGION" = ky ]; then python3 .github/scripts/kpc_fers_known.py || { kpc_rc=$?; echo "::error title=kpc_fers_known.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers_known.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; exit $kpc_rc; }; fi
           # Oct 27 (HQ 3:46 PM): MISSING CHECK = every pair we have outside reason to expect: FOUND / DROPPED / NEVER LOOKED AT
