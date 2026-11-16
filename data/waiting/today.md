@@ -102,7 +102,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-15 | 1 | data/docs/US-OR.json | HOLD | F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/bandon-marsh/visit-us/rules-policies |
 | 2026-11-16 | 0 | data/docs/US-CT.json | HOLD | F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/silvio-o-conte/visit-us/rules-policies |
 | 2026-11-16 | 0 | data/docs/US-DC.json | HOLD | F-D3 2 of 20 re-tested links dead, e.g. https://www.nps.gov/lyba/learn/management/lawsandpolicies.htm |
-| 2026-11-16 | 0 | data/docs/US-MI.json | HOLD | F-D3 3 of 20 re-tested links dead, e.g. https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/ |
+| 2026-11-16 | 0 | data/docs/US-MI.json | HOLD | F-D3 3 of 20 re-tested links dead, e.g. https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/s |
 | 2026-11-16 | 0 | data/docs/US-MS.json | HOLD | F-D3 2 of 20 re-tested links dead, e.g. https://www.nps.gov/tupe/learn/management/lawsandpolicies.htm |
 | 2026-11-16 | 0 | data/docs/US-MT.json | HOLD | F-D3 3 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/ninepipe/visit-us/rules-policies |
 | 2026-11-16 | 0 | data/docs/US-TX.json | HOLD | F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/aransas/visit-us/rules-policies |
