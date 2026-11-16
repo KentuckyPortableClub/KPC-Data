@@ -14,7 +14,7 @@
    "last_run": "2026-11-16",
    "made": "1068 audit rows not clean in 43 areas; waiting for audit 43, waiting for key 23",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43923425298",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43932987519",
    "waiting_on": "chat 11 / 12 (audit answers), chat 2 (fixes)"
   },
   "Cell coverage (FCC)": {
@@ -1020,9 +1020,9 @@
   "Key bots: errors and silence": {
    "areas": "",
    "last_run": "2026-11-16",
-   "made": "4 key bot(s) with errors or gone silent: KPC-Data watchdog (Key bots); activation / CW boards (silent: no finished run in 3 h (expected every 3 h or less)); band alerts (NOAA) (silent: no finished run in 3 h (expected every 3 h or less)); waiting room (kpc_engine.py)",
+   "made": "2 key bot(s) with errors or gone silent: KPC-Data watchdog (Key bots); waiting room (kpc_engine.py)",
    "result": "red",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43923425298",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43932987519",
    "waiting_on": "HQ: open the watchdog run summary for the run links"
   },
   "Layer collector": {
@@ -1084,9 +1084,9 @@
   "Skipped-run watchdog": {
    "areas": "",
    "last_run": "2026-11-16",
-   "made": "2026-11-16 17:56 UTC: 2 skipped run(s) started again: kpc-copy-from-links.yml (missed Nov 16 17:11 UTC); kpc-waiting-room.yml (missed Nov 16 16:42 UTC)",
-   "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43923425298",
+   "made": "nothing skipped",
+   "result": "green",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43932987519",
    "waiting_on": "nobody (it restarts them itself)"
   },
   "Storage keeper (weekly)": {
@@ -1148,9 +1148,9 @@
   "Tool trial: pulloffs": {
    "areas": "",
    "last_run": "2026-11-16",
-   "made": "exit 3 2026-11-16: US-4484: photo cell 9/6239",
+   "made": "exit 3 2026-11-16: US-4484: photo cell 254/6239",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43896799099",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43907076767",
    "waiting_on": "chat 11 grades tools-out/pulloffs/ against the spec pass mark; open files only when red"
   },
   "Tool trial: sameland": {
@@ -1196,9 +1196,9 @@
   "Website copy (site branch)": {
    "areas": "",
    "last_run": "2026-11-16",
-   "made": "site = main: the website has the newest data",
+   "made": "site is under 60 min behind main: the copy bot will catch up",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43923425298",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43932987519",
    "waiting_on": "nobody (the watchdog restarts the copy bot itself)"
   },
   "answer-sheet-check": {
@@ -1212,7 +1212,7 @@
   "campground info bot": {
    "areas": "left: 25",
    "last_run": "2026-11-16",
-   "made": "US-AK: partial; {\"camps\": 368, \"kept_after_failed_read\": 2, \"needs_browser\": 0, \"needs_key\": 234, \"no_page\": 4, \"not_official\": 0, \"ok\": 8, \"other\": 9, \"resting\": 0, \"robots\": 113, \"with_booking\": 64, \"with_elevation",
+   "made": "US-IL: done; {\"camps\": 252, \"needs_browser\": 0, \"needs_key\": 28, \"no_page\": 0, \"not_official\": 4, \"ok\": 15, \"other\": 204, \"resting\": 1, \"robots\": 0, \"with_booking\": 220, \"with_elevation\": 252, \"with_facts\": 202, \"",
    "result": "green",
    "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43915872714",
    "waiting_on": "chat 8 grades the sample; Brandon GO before any card"
