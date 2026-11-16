@@ -1,6 +1,6 @@
 # Missing list (gaps)
 
-Built 2026-11-15 from the club files (read-only).
+Built 2026-11-16 from the club files (read-only).
 
 | area | kind | parks | missing | solved since last night |
 |---|---|---|---|---|
@@ -532,9 +532,9 @@ Built 2026-11-15 from the club files (read-only).
 | DE | outline | 1265 | 582 | 0 |
 | DE | map | 1265 | 1265 | 0 |
 | DE | page | 1265 | 1265 | 0 |
-| PL | outline | 3000 | 2972 | 0 |
-| PL | map | 3000 | 3000 | 0 |
-| PL | page | 3000 | 3000 | 0 |
+| PL | outline | 3001 | 2973 | 0 |
+| PL | map | 3001 | 3001 | 0 |
+| PL | page | 3001 | 3001 | 0 |
 | FR | outline | 13309 | 3470 | 0 |
 | FR | map | 13309 | 13309 | 0 |
 | FR | page | 13309 | 13309 | 0 |
@@ -571,9 +571,9 @@ Built 2026-11-15 from the club files (read-only).
 | AQ | outline | 77 | 77 | 0 |
 | AQ | map | 77 | 77 | 0 |
 | AQ | page | 77 | 77 | 0 |
-| AR | outline | 393 | 393 | 0 |
-| AR | map | 393 | 393 | 0 |
-| AR | page | 393 | 393 | 0 |
+| AR | outline | 394 | 394 | 0 |
+| AR | map | 394 | 394 | 0 |
+| AR | page | 394 | 394 | 0 |
 | AS | outline | 4 | 2 | 0 |
 | AS | map | 4 | 4 | 0 |
 | AS | page | 4 | 4 | 0 |
@@ -766,9 +766,9 @@ Built 2026-11-15 from the club files (read-only).
 | HR | outline | 381 | 381 | 0 |
 | HR | map | 381 | 381 | 0 |
 | HR | page | 381 | 381 | 0 |
-| HU | outline | 244 | 244 | 0 |
-| HU | map | 244 | 244 | 0 |
-| HU | page | 244 | 244 | 0 |
+| HU | outline | 246 | 246 | 0 |
+| HU | map | 246 | 246 | 0 |
+| HU | page | 246 | 246 | 0 |
 | ID | outline | 107 | 89 | 0 |
 | ID | map | 107 | 107 | 0 |
 | ID | page | 107 | 107 | 0 |
@@ -973,9 +973,9 @@ Built 2026-11-15 from the club files (read-only).
 | RS | outline | 243 | 243 | 0 |
 | RS | map | 243 | 243 | 0 |
 | RS | page | 243 | 243 | 0 |
-| RU | outline | 8766 | 8766 | 0 |
-| RU | map | 8766 | 8766 | 0 |
-| RU | page | 8766 | 8766 | 0 |
+| RU | outline | 10531 | 10531 | 0 |
+| RU | map | 10531 | 10531 | 0 |
+| RU | page | 10531 | 10531 | 0 |
 | RW | outline | 5 | 2 | 0 |
 | RW | map | 5 | 5 | 0 |
 | RW | page | 5 | 5 | 0 |
@@ -1060,9 +1060,9 @@ Built 2026-11-15 from the club files (read-only).
 | TO | outline | 8 | 8 | 0 |
 | TO | map | 8 | 8 | 0 |
 | TO | page | 8 | 8 | 0 |
-| TR | outline | 467 | 467 | 0 |
-| TR | map | 467 | 467 | 0 |
-| TR | page | 467 | 467 | 0 |
+| TR | outline | 468 | 468 | 0 |
+| TR | map | 468 | 468 | 0 |
+| TR | page | 468 | 468 | 0 |
 | TW | outline | 64 | 64 | 0 |
 | TW | map | 64 | 64 | 0 |
 | TW | page | 64 | 64 | 0 |
