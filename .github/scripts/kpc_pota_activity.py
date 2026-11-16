@@ -1,35 +1,40 @@
 #!/usr/bin/env python3
 """POTA ACTIVITY, WHOLE WORLD (chat 10, Nov 1 2026; Brandon 7:59 PM: 'make the file download by country in rank of activity in
-pota'). POTA's own public lists (api.pota.app /locations, then /location/parks/<location> for every location of every program,
+pota'). POTA's own public lists (/locations, then /location/parks/<location> for every location of every program,
 the same calls kpc_state_links / kpc_northam already make) -> data/pota/activity.json {ref: [activations, attempts, location]}
 (compact). Used to rank the 'parks still missing a boundary' lists (kpc_missing_lists.py) and any queue by activity.
-A location that fails keeps last week's numbers. One request at a time, 0.5 s apart. Weekly. Never fails.
-  python3 .github/scripts/kpc_pota_activity.py"""
-import json, pathlib, time, urllib.request
-import kpc_host_rules; kpc_host_rules.install()
+A location that fails keeps last week's numbers. Weekly. Never fails.
+KPC owner, 2026-11-16 (handoff item 7, be polite to POTA): this script NEVER calls POTA. It reads the SAVED copy that the one
+park-list job of KPC-Links (kpc_pota_parklists.py, through its POTA door) keeps in KPC-Links data/pota/saved: locations.json and
+parks/<location>.json.gz. KPC_POTA_SAVED names that folder (the workflow checks out only that folder of the public KPC-Links).
+A location with no saved list counts as failed (it keeps last week's numbers).
+  KPC_POTA_SAVED=links/data/pota/saved python3 .github/scripts/kpc_pota_activity.py"""
+import gzip, json, os, pathlib, time
 
 OUT = pathlib.Path('data/pota/activity.json')
-UA = 'KPC-Bot/1.0 (Kentucky Portable Club ham radio club; https://github.com/KentuckyPortableClub)'
+SAVED = pathlib.Path(os.environ.get('KPC_POTA_SAVED') or 'links/data/pota/saved')
 
 
-def get(u):
-    req = urllib.request.Request(u, headers={'User-Agent': UA, 'Accept': 'application/json'})
-    with urllib.request.urlopen(req, timeout=60) as r: return json.loads(r.read().decode('utf-8'))
+def saved_locations():
+    return json.load(open(SAVED / 'locations.json', encoding='utf-8'))['data']
+
+
+def saved_park_list(loc):
+    with gzip.open(SAVED / 'parks' / f'{loc}.json.gz', 'rt', encoding='utf-8') as f: return json.load(f)['data']
 
 
 def main():
     try: old = json.load(open(OUT)).get('parks') or {}
     except Exception: old = {}  # noqa: BLE001
-    try: locs = [l['locationDesc'] for l in get('https://api.pota.app/locations') if l.get('locationDesc')]
-    except Exception as e: print(f'::notice title=POTA activity::locations list failed ({e}): kept last week'); return
+    try: locs = [l['locationDesc'] for l in saved_locations() if l.get('locationDesc')]
+    except Exception as e: print(f'::notice title=POTA activity::no saved locations list ({e}): kept last week'); return
     parks, failed = {}, []
     for desc in sorted(set(locs)):
         try:
-            for p in get(f'https://api.pota.app/location/parks/{desc}') or []:
+            for p in saved_park_list(desc) or []:
                 ref = p.get('reference')
                 if ref: parks[ref] = [int(p.get('activations') or 0), int(p.get('attempts') or 0), p.get('locationDesc') or desc]
         except Exception: failed.append(desc)  # noqa: BLE001
-        time.sleep(0.5)
     for ref, v in old.items():   # a location that failed keeps last week's numbers
         if ref not in parks and v[2] in failed: parks[ref] = v
     # Nov 11: a location that ANSWERED with an empty list (a 200 with nothing in it) is not a failure, so its parks used to lose their
@@ -45,7 +50,7 @@ def main():
     if len(old) >= 1000 and len(parks) < 0.8 * len(old):
         print(f'::warning title=POTA activity::only {len(parks)} parks read vs {len(old)} last week: the answer looks short. Nothing was changed; last week\'s file stays.'); return
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    json.dump({'about': 'POTA activations per park (api.pota.app location lists), weekly: {ref: [activations, attempts, location]}',
+    json.dump({'about': 'POTA activations per park (POTA\'s location lists, the club\'s saved copy), weekly: {ref: [activations, attempts, location]}',
                'built': time.strftime('%Y-%m-%d'), 'parks': parks}, open(OUT, 'w'), separators=(',', ':'), ensure_ascii=False)
     print(f'::notice title=POTA activity::{len(parks)} parks from {len(set(locs))} locations ({len(failed)} failed, kept last week)')
 

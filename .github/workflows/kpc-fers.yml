@@ -135,15 +135,8 @@ jobs:
           STATES: ${{ matrix.r.states }}
         run: |
           python3 kpcdata/.github/scripts/kpc_fers_key_gate.py || { kpc_rc=$?; echo "::error title=kpc_fers_key_gate.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers_key_gate.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; exit 1; }
-      - name: POTA activation history (pairs worked the same day, counts only)
-        if: ${{ steps.wait.outputs.wait != '1' && (matrix.r.region == 'ky' || (matrix.r.region == 'na' && matrix.r.states != '')) }}
-        id: kept_green_2
-        continue-on-error: true
-        timeout-minutes: 45
-        env:
-          STATES: ${{ matrix.r.region == 'ky' && 'US-KY' || matrix.r.states }}
-          PAIR_MINUTES: '40'
-        run: LINKS=. DATA=kpcdata python3 kpcdata/.github/scripts/kpc_pota_pairs_run.py || { kpc_rc=$?; echo "::error title=kpc_pota_pairs_run.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_pota_pairs_run.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+      # KPC owner, 2026-11-16 (handoff item 7, be polite to POTA): the POTA activation history step is out of the 2-fer run (it asked
+      # POTA once per park of the area before every run). Nothing in the passes reads it.
       - name: Look for shared ground
         if: ${{ steps.wait.outputs.wait != '1' }}
         id: kept_green_3
@@ -176,7 +169,7 @@ jobs:
           if [ "$PASS" = all ]; then
             END=$(( $(date +%s) + ${MINUTES:-320} * 60 ))
             # Nov 9 (Quality must-fix 1): never plan past this step's own 335-minute limit (a one-state run spends up to 45 minutes on
-            # the POTA history first, and the passes then hit the job limit mid-pass); 5 minutes are kept for the save
+            # the POTA history first (that step is out since Nov 16), and the passes then hit the job limit mid-pass); 5 minutes are kept for the save
             HARD=$(( ${KPC_JOB_T0:-$(date +%s)} + 335 * 60 - 300 )); [ $END -gt $HARD ] && END=$HARD
             TOTAL=$(( (END - $(date +%s)) / 60 ))
             for p in 1 2 3 5; do   # 5 = re-check water + tidy the rows + 'same land' owner / pin (Oct 27)

@@ -35,6 +35,14 @@ def fake(req, *a, **k):
 urllib.request.urlopen = fake
 time.sleep = lambda *a, **k: None
 import kpc_pota_activity as A   # noqa: E402
+# KPC owner, 2026-11-16 (item 7): the script reads the club's SAVED copy of POTA's lists, never POTA; the same answers are fed as that copy
+def _saved(u):
+    v = API[u]
+    if isinstance(v, Exception): raise v
+    return v
+A.saved_locations = lambda: _saved('https://api.pota.app/locations')
+A.saved_park_list = lambda loc: _saved(f'https://api.pota.app/location/parks/{loc}')
+check('api.pota.app' not in (ROOT / '.github/scripts/kpc_pota_activity.py').read_text(), 'Nov 16: kpc_pota_activity.py never names POTA (saved copy only)')
 
 
 def parks(loc, n, act=1): return [{'reference': f'{loc}-{i:04d}', 'activations': act, 'attempts': 2, 'locationDesc': loc} for i in range(n)]
