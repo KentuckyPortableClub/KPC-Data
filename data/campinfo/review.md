@@ -54,7 +54,7 @@ Updated 2026-11-16. Every fact in <area>.json carries its source url, read date 
 | US-AK | 368 | 8 | 234 | 0 | 113 | 0 | 4 | 0 | 9 | 5 | 64 | 366 |
 | US-HI | 22 | 10 | 2 | 0 | 0 | 0 | 8 | 0 | 2 | 0 | 12 | 0 |
 | US-MI | 511 | 3 | 110 | 0 | 12 | 0 | 377 | 0 | 9 | 0 | 12 | 0 |
-| US-OH | 96 | 0 | 11 | 0 | 12 | 0 | 62 | 0 | 11 | 0 | 11 | 0 |
+| US-OH | 96 | 0 | 11 | 2 | 0 | 11 | 62 | 0 | 10 | 0 | 11 | 96 |
 | US-UT | 459 | 39 | 331 | 8 | 0 | 4 | 13 | 0 | 64 | 1 | 115 | 0 |
 
 ## Needs a secret / not built yet
@@ -65,7 +65,7 @@ Updated 2026-11-16. Every fact in <area>.json carries its source url, read date 
 ## Hosts that need a browser (403), say no in robots.txt, or are resting
 
 - outdoornebraska.gov: 187 campgrounds · host resting
-- www.fs.usda.gov: 126 campgrounds · host resting
+- www.fs.usda.gov: 127 campgrounds · host resting
 - dnr.alaska.gov: 113 campgrounds · robots.txt says no
 - cpw.state.co.us: 98 campgrounds · host resting
 - reservemn.usedirect.com: 94 campgrounds · robots.txt says no
@@ -86,7 +86,7 @@ Updated 2026-11-16. Every fact in <area>.json carries its source url, read date 
 - azstateparks.com: 15 campgrounds · robots.txt says no
 - washington.goingtocamp.com: 15 campgrounds · robots.txt says no
 - midnrreservations.com: 12 campgrounds · host resting (robots.txt could not be read: next run)
-- reserveohio.com: 12 campgrounds · host resting (robots.txt could not be read: next run)
+- reserveohio.com: 12 campgrounds · HTTP 403 -> needs browser
 - www.reservecalifornia.com: 5 campgrounds · robots.txt says no
 - getoutside.idaho.gov: 4 campgrounds · host resting (robots.txt could not be read: next run)
 - www.dec.ny.gov: 3 campgrounds · host resting (robots.txt could not be read: next run)
