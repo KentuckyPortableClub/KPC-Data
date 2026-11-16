@@ -21,7 +21,7 @@ Updated 2026-11-16. Every fact in <area>.json carries its source url, read date 
 | US-WI | 107 | 3 | 45 | 1 | 0 | 58 | 0 | 0 | 0 | 1 | 25 | 0 |
 | US-MN | 227 | 34 | 45 | 0 | 94 | 2 | 50 | 0 | 2 | 0 | 132 | 0 |
 | US-IA | 222 | 27 | 32 | 0 | 0 | 0 | 93 | 0 | 70 | 0 | 97 | 0 |
-| US-ND | 92 | 12 | 17 | 0 | 0 | 0 | 0 | 6 | 57 | 11 | 69 | 0 |
+| US-ND | 92 | 12 | 17 | 0 | 0 | 0 | 0 | 6 | 57 | 11 | 69 | 92 |
 | US-SD | 126 | 36 | 29 | 4 | 0 | 51 | 0 | 0 | 6 | 30 | 45 | 0 |
 | US-PA | 161 | 37 | 45 | 1 | 0 | 1 | 0 | 0 | 77 | 1 | 115 | 0 |
 | US-NY | 584 | 93 | 5 | 242 | 58 | 1 | 1 | 0 | 184 | 35 | 569 | 0 |
@@ -1475,7 +1475,7 @@ Updated 2026-11-16. Every fact in <area>.json carries its source url, read date 
 
 ## US-ND: 12 random samples (records with facts; seed = the date)
 
-- **Fort Abraham Lincoln State Park campground** (US-2758:hq0, state, status ok, 14 facts) · [www.parkrec.nd.gov](https://www.parkrec.nd.gov/fort-abraham-lincoln-state-park-camping)
+- **Fort Abraham Lincoln State Park campground** (US-2758:hq0, state, status ok, 14 facts, 1698 ft) · [www.parkrec.nd.gov](https://www.parkrec.nd.gov/fort-abraham-lincoln-state-park-camping)
   - booking.how = "online: www.parkrec.nd.gov" · “link “Gunlogson State Nature Preserve””
   - booking.url = "https://www.parkrec.nd.gov/gunlogson-state-nature-preserve" · “link “Gunlogson State Nature Preserve” -> https://www.parkrec.nd.gov/gunlogson-state-nature-preserve”
   - checkin = "4:00 pm" · “he date you wish to stay. - Reservations can be made online or by calling 800-807-4723. - Check-in is at 4:00 pm on the first day of the res”
@@ -1486,7 +1486,7 @@ Updated 2026-11-16. Every fact in <area>.json carries its source url, read date 
   - map.date_how = "PDF, no date in the link" · “link “Campground Map””
   - map.url = "https://www.parkrec.nd.gov/sites/www/files/documents/Fort%2 · “link “Campground Map” -> https://www.parkrec.nd.gov/sites/www/files/documents/Fort%20Lincoln/FALSP%20-%20Campground%20Map.pdf”
   - reservable = true · “nformation - Campsites can be booked 95 days in advance from the date you wish to stay. - Reservations can be made online or by calling 800-”
-- **Lake Sakakawea State Park** (US-2764, state, status ok, 16 facts) · [www.parkrec.nd.gov](https://www.parkrec.nd.gov/lake-sakakawea-state-park)
+- **Lake Sakakawea State Park** (US-2764, state, status ok, 16 facts, 1878 ft) · [www.parkrec.nd.gov](https://www.parkrec.nd.gov/lake-sakakawea-state-park)
   - booking.how = "online: www.parkrec.nd.gov" · “link “Gunlogson State Nature Preserve””
   - booking.url = "https://www.parkrec.nd.gov/gunlogson-state-nature-preserve" · “link “Gunlogson State Nature Preserve” -> https://www.parkrec.nd.gov/gunlogson-state-nature-preserve”
   - checkin = "4 pm" · “re vacating, including sweeping, wiping down surfaces and collecting and bagging trash. - Check-in is after 4 pm, check-out is at noon. - Sm”
@@ -1497,7 +1497,7 @@ Updated 2026-11-16. Every fact in <area>.json carries its source url, read date 
   - map.date_how = "PDF, no date in the link" · “link “Campground Map””
   - map.url = "https://www.parkrec.nd.gov/sites/www/files/documents/Destin · “link “Campground Map” -> https://www.parkrec.nd.gov/sites/www/files/documents/Destinations/Lake%20Sakakawea/LSSP%20-%20Campgr”
   - reservable = true · “nformation - Campsites can be booked 95 days in advance from the date you wish to stay. - Reservations can be made online or by calling 800-”
-- **Turtle River State Park campgrounds** (US-2768:hq0, state, status ok, 12 facts) · [www.parkrec.nd.gov](https://www.parkrec.nd.gov/turtle-river-state-park-camping)
+- **Turtle River State Park campgrounds** (US-2768:hq0, state, status ok, 12 facts, 958 ft) · [www.parkrec.nd.gov](https://www.parkrec.nd.gov/turtle-river-state-park-camping)
   - booking.how = "online: www.parkrec.nd.gov" · “link “Gunlogson State Nature Preserve””
   - booking.url = "https://www.parkrec.nd.gov/gunlogson-state-nature-preserve" · “link “Gunlogson State Nature Preserve” -> https://www.parkrec.nd.gov/gunlogson-state-nature-preserve”
   - checkin = "4:00 pm" · “he date you wish to stay. - Reservations can be made online or by calling 800-807-4723. - Check-in is at 4:00 pm on the first day of the res”
@@ -1508,7 +1508,7 @@ Updated 2026-11-16. Every fact in <area>.json carries its source url, read date 
   - reservable = true · “nformation - Campsites can be booked 95 days in advance from the date you wish to stay. - Reservations can be made online or by calling 800-”
   - rules.pets = "Pets are welcome but must stay on a leash" · “t day of the reservation and checkout is at 3:00 pm on the last day of the reservation. - Pets are welcome but must stay on a leash. Most pa”
   - sites.group = 3 · “Camping Campsite Types 67 Modern Campsites (electricity & water) Price: $25-30 per night 3 Modern Group Campsites (the ability to put multip”
-- **Lake Metigoshe State Park** (US-2763, state, status ok, 20 facts) · [www.parkrec.nd.gov](https://www.parkrec.nd.gov/lake-metigoshe-state-park)
+- **Lake Metigoshe State Park** (US-2763, state, status ok, 20 facts, 2181 ft) · [www.parkrec.nd.gov](https://www.parkrec.nd.gov/lake-metigoshe-state-park)
   - booking.how = "online: www.parkrec.nd.gov" · “link “Gunlogson State Nature Preserve””
   - booking.url = "https://www.parkrec.nd.gov/gunlogson-state-nature-preserve" · “link “Gunlogson State Nature Preserve” -> https://www.parkrec.nd.gov/gunlogson-state-nature-preserve”
   - checkin = "4 pm" · “re vacating, including sweeping, wiping down surfaces and collecting and bagging trash. - Check-in is after 4 pm, check-out is at noon. - Sm”
@@ -1519,7 +1519,7 @@ Updated 2026-11-16. Every fact in <area>.json carries its source url, read date 
   - hookups.water = true · “e: $25-30 per night 39 Primitive Campsites Price: $15 per night 3 Modern Group Campsites (electricity, water and the ability to put multiple”
   - map.date_how = "PDF, no date in the link" · “link “Washegum, Maid O'Moonshine, and Primitive Campgrounds Map””
   - map.url = "https://www.parkrec.nd.gov/sites/www/files/documents/Destin · “link “Washegum, Maid O'Moonshine, and Primitive Campgrounds Map” -> https://www.parkrec.nd.gov/sites/www/files/documents/Destinations/Lake%2”
-- **Beaver Lake State Park** (US-2756, state, status ok, no campground facts even in a browser, 9 facts) · [www.parkrec.nd.gov](https://www.parkrec.nd.gov/)
+- **Beaver Lake State Park** (US-2756, state, status ok, no campground facts even in a browser, 9 facts, 2014 ft) · [www.parkrec.nd.gov](https://www.parkrec.nd.gov/)
   - booking.how = "online: www.parkrec.nd.gov" · “link “Gunlogson State Nature Preserve””
   - booking.url = "https://www.parkrec.nd.gov/gunlogson-state-nature-preserve" · “link “Gunlogson State Nature Preserve” -> https://www.parkrec.nd.gov/gunlogson-state-nature-preserve”
   - checkin = "4:00 pm" · “he date you wish to stay. - Reservations can be made online or by calling 800-807-4723. - Check-in is at 4:00 pm on the first day of the res”
@@ -1529,7 +1529,7 @@ Updated 2026-11-16. Every fact in <area>.json carries its source url, read date 
   - map.url = "https://www.parkrec.nd.gov/maps-widget/map" · “link “MAP: Find a park with our Destination Finder” -> https://www.parkrec.nd.gov/maps-widget/map”
   - reservable = true · “r you are a returning visitor or new to the state, your journey starts here! RESERVATIONS Book your next stay in a campsite, cabin, wagon or”
   - rules.pets = "Pets are welcome but must stay on a leash" · “t day of the reservation and checkout is at 3:00 pm on the last day of the reservation. - Pets are welcome but must stay on a leash. Most pa”
-- **Lewis and Clark State Park** (US-2765, state, status ok, 18 facts) · [www.parkrec.nd.gov](https://www.parkrec.nd.gov/lewis-clark-state-park)
+- **Lewis and Clark State Park** (US-2765, state, status ok, 18 facts, 1911 ft) · [www.parkrec.nd.gov](https://www.parkrec.nd.gov/lewis-clark-state-park)
   - booking.how = "online: www.parkrec.nd.gov" · “link “Gunlogson State Nature Preserve””
   - booking.url = "https://www.parkrec.nd.gov/gunlogson-state-nature-preserve" · “link “Gunlogson State Nature Preserve” -> https://www.parkrec.nd.gov/gunlogson-state-nature-preserve”
   - checkin = "4 pm" · “re vacating, including sweeping, wiping down surfaces and collecting and bagging trash. - Check-in is after 4 pm, check-out is at noon. - Sm”
@@ -1540,7 +1540,7 @@ Updated 2026-11-16. Every fact in <area>.json carries its source url, read date 
   - hookups.water = true · “eservations on our FAQs page . Copy Link Campsite type 41 Premium Campsites (electricity, sewer & water) Price: $30-35 per night 47 Modern C”
   - map.date_how = "PDF, no date in the link" · “link “Campground Map””
   - map.url = "https://www.parkrec.nd.gov/sites/www/files/documents/Destin · “link “Campground Map” -> https://www.parkrec.nd.gov/sites/www/files/documents/Destinations/Lewis%20%26%20Clark/LCSP%20-%20Cam”
-- **Fort Stevenson State Park campgrounds** (US-2760:hq0, state, status ok, 15 facts) · [www.parkrec.nd.gov](https://www.parkrec.nd.gov/fort-stevenson-state-park-camping)
+- **Fort Stevenson State Park campgrounds** (US-2760:hq0, state, status ok, 15 facts, 1859 ft) · [www.parkrec.nd.gov](https://www.parkrec.nd.gov/fort-stevenson-state-park-camping)
   - booking.how = "online: www.parkrec.nd.gov" · “link “Gunlogson State Nature Preserve””
   - booking.url = "https://www.parkrec.nd.gov/gunlogson-state-nature-preserve" · “link “Gunlogson State Nature Preserve” -> https://www.parkrec.nd.gov/gunlogson-state-nature-preserve”
   - checkin = "4:00 pm" · “he date you wish to stay. - Reservations can be made online or by calling 800-807-4723. - Check-in is at 4:00 pm on the first day of the res”
@@ -1551,7 +1551,7 @@ Updated 2026-11-16. Every fact in <area>.json carries its source url, read date 
   - hookups.water = true · “pt Decline Search Fort Stevenson State Park - Camping campsite type 48 Premium Campsites (electricity, water & sewer) Price: $30-35 per nigh”
   - map.date_how = "PDF, no date in the link" · “link “Campground Map””
   - map.url = "https://www.parkrec.nd.gov/sites/www/files/documents/Destin · “link “Campground Map” -> https://www.parkrec.nd.gov/sites/www/files/documents/Destinations/Fort%20Stevenson/FSSP%20-%20Campgr”
-- **Fort Ransom State Park** (US-2759, state, status ok, 16 facts) · [www.parkrec.nd.gov](https://www.parkrec.nd.gov/fort-ransom-state-park-camping)
+- **Fort Ransom State Park** (US-2759, state, status ok, 16 facts, 1204 ft) · [www.parkrec.nd.gov](https://www.parkrec.nd.gov/fort-ransom-state-park-camping)
   - booking.how = "online: www.parkrec.nd.gov" · “link “Gunlogson State Nature Preserve””
   - booking.url = "https://www.parkrec.nd.gov/gunlogson-state-nature-preserve" · “link “Gunlogson State Nature Preserve” -> https://www.parkrec.nd.gov/gunlogson-state-nature-preserve”
   - checkin = "4:00 pm" · “he date you wish to stay. - Reservations can be made online or by calling 800-807-4723. - Check-in is at 4:00 pm on the first day of the res”
@@ -1562,7 +1562,7 @@ Updated 2026-11-16. Every fact in <area>.json carries its source url, read date 
   - hookups.electric = true · “Decline Search Fort Ransom State Park - Camping Campsite Types 24 Modern Horse Campsites (electricity, corral access, central water hydrant)”
   - hookups.water = true · “t Ransom State Park 10 Primitive Campsites Price: $15 per night 4 Group Modern Campsites (electricity, water and the ability to put multiple”
   - map.date_how = "PDF, no date in the link" · “link “Campground Map””
-- **Icelandic State Park** (US-2762, state, status ok, 14 facts) · [www.parkrec.nd.gov](https://www.parkrec.nd.gov/icelandic-state-park-camping)
+- **Icelandic State Park** (US-2762, state, status ok, 14 facts, 986 ft) · [www.parkrec.nd.gov](https://www.parkrec.nd.gov/icelandic-state-park-camping)
   - booking.how = "online: www.parkrec.nd.gov" · “link “Gunlogson State Nature Preserve””
   - booking.url = "https://www.parkrec.nd.gov/gunlogson-state-nature-preserve" · “link “Gunlogson State Nature Preserve” -> https://www.parkrec.nd.gov/gunlogson-state-nature-preserve”
   - checkin = "4:00 pm" · “he date you wish to stay. - Reservations can be made online or by calling 800-807-4723. - Check-in is at 4:00 pm on the first day of the res”
@@ -1573,7 +1573,7 @@ Updated 2026-11-16. Every fact in <area>.json carries its source url, read date 
   - map.date_how = "PDF, no date in the link" · “link “Campground Map””
   - map.url = "https://www.parkrec.nd.gov/sites/www/files/documents/Destin · “link “Campground Map” -> https://www.parkrec.nd.gov/sites/www/files/documents/Destinations/Icelandic/ISP_Campground.pdf”
   - reservable = true · “nformation - Campsites can be booked 95 days in advance from the date you wish to stay. - Reservations can be made online or by calling 800-”
-- **Cross Ranch State Park** (US-2757, state, status ok, 10 facts) · [www.parkrec.nd.gov](https://www.parkrec.nd.gov/cross-ranch-state-park-camping)
+- **Cross Ranch State Park** (US-2757, state, status ok, 10 facts, 1658 ft) · [www.parkrec.nd.gov](https://www.parkrec.nd.gov/cross-ranch-state-park-camping)
   - booking.how = "online: www.parkrec.nd.gov" · “link “Gunlogson State Nature Preserve””
   - booking.url = "https://www.parkrec.nd.gov/gunlogson-state-nature-preserve" · “link “Gunlogson State Nature Preserve” -> https://www.parkrec.nd.gov/gunlogson-state-nature-preserve”
   - checkin = "4:00 pm" · “he date you wish to stay. - Reservations can be made online or by calling 800-807-4723. - Check-in is at 4:00 pm on the first day of the res”
@@ -1584,7 +1584,7 @@ Updated 2026-11-16. Every fact in <area>.json carries its source url, read date 
   - sites.group = 6 · “Park - Camping Campsite Types 35 Standard Campsites (electricity) Price: $25-30 per night 6 Group Standard Campsites (electricity and the ab”
   - sites.primitive = 22 · “rnors Centennial, Primitive & Sanger Campground Maps Full Park Map Cross Ranch State Park 22 Primitive Campsites Price: $15 per night 2 Grou”
   - sites.total = 35 · “rsion will prevail. Accept Decline Search Cross Ranch State Park - Camping Campsite Types 35 Standard Campsites (electricity) Price: $25-30 ”
-- **Pembina Gorge State Recreation Area** (US-7509, state, status ok (browser), 9 facts) · [www.parkrec.nd.gov](https://www.parkrec.nd.gov/pembina-gorge-state-park)
+- **Pembina Gorge State Recreation Area** (US-7509, state, status ok (browser), 9 facts, 1277 ft) · [www.parkrec.nd.gov](https://www.parkrec.nd.gov/pembina-gorge-state-park)
   - booking.how = "online: www.parkrec.nd.gov" · “link “Gunlogson State Nature Preserve””
   - booking.url = "https://www.parkrec.nd.gov/gunlogson-state-nature-preserve" · “link “Gunlogson State Nature Preserve” -> https://www.parkrec.nd.gov/gunlogson-state-nature-preserve”
   - checkin = "4:00 pm" · “he date you wish to stay. - Reservations can be made online or by calling 800-807-4723. - Check-in is at 4:00 pm on the first day of the res”
@@ -1594,7 +1594,7 @@ Updated 2026-11-16. Every fact in <area>.json carries its source url, read date 
   - map.url = "https://www.parkrec.nd.gov/sites/www/files/documents/Destin · “link “Multi-Use Trail Map” -> https://www.parkrec.nd.gov/sites/www/files/documents/Destinations/Pembina/PGSP%20Map%20-%20Trails.pd”
   - reservable = true · “at to know - Campsites can be booked 95 days in advance from the date you wish to stay. - Reservations can be made online or by calling 800-”
   - rules.pets = "Pets are welcome but must stay on a leash" · “t day of the reservation and checkout is at 3:00 pm on the last day of the reservation. - Pets are welcome but must stay on a leash. Most pa”
-- **Grahams Island State Park** (US-2761, state, status ok, 17 facts) · [www.parkrec.nd.gov](https://www.parkrec.nd.gov/grahams-island-state-park)
+- **Grahams Island State Park** (US-2761, state, status ok, 17 facts, 1472 ft) · [www.parkrec.nd.gov](https://www.parkrec.nd.gov/grahams-island-state-park)
   - booking.how = "online: www.parkrec.nd.gov" · “link “Gunlogson State Nature Preserve””
   - booking.url = "https://www.parkrec.nd.gov/gunlogson-state-nature-preserve" · “link “Gunlogson State Nature Preserve” -> https://www.parkrec.nd.gov/gunlogson-state-nature-preserve”
   - checkin = "4 pm" · “re vacating, including sweeping, wiping down surfaces and collecting and bagging trash. - Check-in is after 4 pm, check-out is at noon. - Sm”

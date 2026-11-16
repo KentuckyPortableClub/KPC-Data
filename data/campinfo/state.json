@@ -633,13 +633,13 @@
     "resting": 0,
     "robots": 0,
     "with_booking": 69,
-    "with_elevation": 0,
+    "with_elevation": 92,
     "with_facts": 13,
     "with_sites": 11
    },
    "left": 0,
    "status": "done",
-   "updated": "2026-11-09"
+   "updated": "2026-11-16"
   },
   "US-NE": {
    "camps": 236,
@@ -1157,7 +1157,7 @@
   "US-MS": "FCC listAsOfDates: robots.txt says no",
   "US-MT": "FCC listAsOfDates: robots.txt says no",
   "US-NC": "FCC listAsOfDates: robots.txt says no",
-  "US-ND": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
+  "US-ND": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-NE": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-NH": "FCC listAsOfDates: robots.txt says no",
   "US-NJ": "FCC listAsOfDates: robots.txt says no",
@@ -1438,10 +1438,10 @@
    "cell": {
     "carriers": null,
     "files": [],
-    "src": null,
-    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
+    "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2026-06-30?category=State&subcategory=Mobile%20Broadband",
+    "status": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
    },
-   "read": "2026-11-09"
+   "read": "2026-11-16"
   },
   "US-NE": {
    "cell": {
@@ -2593,42 +2593,31 @@
  },
  "last": {
   "areas": [
-   "US-ME"
+   "US-ND"
   ],
   "fcc_token": true,
   "manners": {
-   "errors": 3,
-   "for_person": 2,
-   "for_person_urls": [
-    [
-     "https://www.maine.gov/dacf/parks/camping/",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://www.maine.gov/dacf/parks/camping/pdf/Camden.pdf",
-     "HTTP 403 twice"
-    ]
-   ],
+   "errors": 0,
+   "for_person_urls": [],
    "host_rule": 0,
-   "requests": 49,
-   "rested": 1,
-   "retry403": 2,
+   "requests": 229,
+   "rested": 0,
    "robots": 0,
-   "strikes": 7
+   "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "browser": 4,
-   "camps": 25,
-   "elevations": 25,
+   "browser": 58,
+   "camps": 92,
+   "elevations": 92,
    "errors": 0,
-   "needs_browser": 5,
-   "needs_key": 4,
-   "no_page": 11,
-   "not_official": 1,
-   "ok": 6,
-   "pages_read": 5,
-   "resting": 2,
+   "needs_browser": 57,
+   "needs_key": 17,
+   "no_page": 0,
+   "not_official": 6,
+   "ok": 70,
+   "pages_read": 72,
+   "resting": 0,
    "ridb_calls": 0,
    "robots": 0,
    "skipped_fresh": 0
