@@ -176,29 +176,48 @@ def area_ready(links, sts):
         return all(x.startswith(('US-', 'CA-')) for x in sts)
 
 
+def same_lines(b):
+    """Nov 16 2026 (KPC owner): a text input's line endings must not change a fingerprint. Git for Windows writes CRLF on
+    checkout, so a Windows copy of the very same answer-key file holds different bytes than the Linux build read, and every
+    area looks changed. (The same thing stopped the PC 2-fer runner: KPC-Links rules_hash read CRLF rule files and the key
+    gate called all 65 green areas stale.) A tree stored with LF keeps the fingerprint it has always had: no stamp moves."""
+    return b.replace(b'\r\n', b'\n').replace(b'\r', b'\n')
+
+
+def where(root, p):
+    """Nov 16 2026 (KPC owner): a file's place INSIDE the checkout, for the fingerprint. It used to be the whole path on the
+    machine, so the same files in a different folder gave a different fingerprint: a run on the owner's PC could never match a
+    stamp written under GitHub's own folders, and every area looked changed every time. Every area is measured once more after
+    this change, and matches from then on wherever it runs."""
+    try: return p.resolve().relative_to(pathlib.Path(root).resolve()).as_posix().encode()
+    except Exception: return p.name.encode()  # noqa: BLE001  a file outside the checkout: its name alone
+
+
 def area_fp(links, kind, sts, fers):
-    """sha256 of the area's key files, outline files, and the 2-fer rules hash: the same files and rules = the same 2-fer answer."""
+    """sha256 of the area's key files, outline files, and the 2-fer rules hash: the same files and rules = the same 2-fer answer.
+    The text inputs are read with their line endings levelled (same_lines), so a Windows checkout gives the same answer as a
+    Linux one. The packed outline files are bytes already and are hashed as they are."""
     h = hashlib.sha256(str(fers).encode())
     root = pathlib.Path(links)
     for st in sts:
         key_name = st if kind != 'world-key' else st.replace('W-', '')
         f = root / f'data/{kind}/{key_name}.json'
-        h.update(st.encode() + b'\0' + (f.read_bytes() if f.exists() else b'missing'))
+        h.update(st.encode() + b'\0' + (same_lines(f.read_bytes()) if f.exists() else b'missing'))
         ol_name = st if kind != 'world-key' else (st if str(st).startswith('W-') else f'W-{st}')
         for ol in (root / 'data/outlines' / f'{ol_name}.geojson.gz',
                    root / 'data/released/outlines' / f'{ol_name}.geojson.gz'):
-            h.update(ol.as_posix().encode() + b'\0' + (ol.read_bytes() if ol.is_file() else b'missing'))
+            h.update(where(root, ol) + b'\0' + (ol.read_bytes() if ol.is_file() else b'missing'))
         # Quality regrade: .pN outline parts are inputs too
         parts_dir = root / 'data/outlines'
         if parts_dir.is_dir():
             for ol in sorted(parts_dir.glob(f'{ol_name}.p*.geojson.gz')):
-                h.update(ol.as_posix().encode() + b'\0' + ol.read_bytes())
+                h.update(where(root, ol) + b'\0' + ol.read_bytes())
         # Canada members also hash data/canada-bounds
         if kind == 'ca-key' or str(st).startswith('CA-'):
             bounds = root / 'data/canada-bounds'
             if bounds.is_dir():
                 for bf in sorted(bounds.glob('*.json')):
-                    h.update(bf.as_posix().encode() + b'\0' + bf.read_bytes())
+                    h.update(where(root, bf) + b'\0' + same_lines(bf.read_bytes()))
     return h.hexdigest()[:16]
 
 
