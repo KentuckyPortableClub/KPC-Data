@@ -16,7 +16,7 @@ Updated 2026-11-16. Every fact in <area>.json carries its source url, read date 
 | US-FL | 299 | 5 | 38 | 0 | 78 | 3 | 147 | 8 | 20 | 0 | 106 | 0 |
 | US-MS | 196 | 21 | 45 | 0 | 2 | 0 | 0 | 6 | 122 | 6 | 59 | 0 |
 | US-IN | 94 | 61 | 13 | 0 | 0 | 0 | 2 | 8 | 10 | 8 | 68 | 0 |
-| US-IL | 252 | 15 | 28 | 0 | 0 | 0 | 0 | 4 | 205 | 2 | 220 | 0 |
+| US-IL | 252 | 15 | 28 | 0 | 0 | 1 | 0 | 4 | 204 | 2 | 220 | 252 |
 | US-MO | 188 | 97 | 74 | 0 | 0 | 16 | 0 | 0 | 1 | 87 | 114 | 0 |
 | US-WI | 107 | 3 | 45 | 1 | 0 | 58 | 0 | 0 | 0 | 1 | 25 | 0 |
 | US-MN | 227 | 34 | 45 | 0 | 94 | 2 | 50 | 0 | 2 | 0 | 132 | 0 |
@@ -60,12 +60,12 @@ Updated 2026-11-16. Every fact in <area>.json carries its source url, read date 
 ## Needs a secret / not built yet
 
 - RIDB_API_KEY is not set in KPC-Data: every federal (Recreation.gov) row has status "needs RIDB_API_KEY secret in KPC-Data". Free key: ridb.recreation.gov, Profile. Add it under Settings -> Secrets and variables -> Actions.
-- Cell coverage (one status per area; cell = null on every record until the point lookup exists): US-AK FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-AL FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-AR FCC listAsOfDates: robots.txt says no; US-AZ FCC listAsOfDates: robots.txt says no; US-CA FCC listAsOfDates: robots.txt says no; US-CO FCC listAsOfDates: robots.txt says no; US-CT FCC listAsOfDates: robots.txt says no; US-DE FCC listAsOfDates: host resting (robots.txt could not be read: next run)
+- Cell coverage (one status per area; cell = null on every record until the point lookup exists): US-AK FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-AL FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-AR FCC listAsOfDates: robots.txt says no; US-AZ FCC listAsOfDates: robots.txt says no; US-CA FCC listAsOfDates: robots.txt says no; US-CO FCC listAsOfDates: robots.txt says no; US-CT FCC listAsOfDates: robots.txt says no; US-DC FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)
 
 ## Hosts that need a browser (403), say no in robots.txt, or are resting
 
 - outdoornebraska.gov: 187 campgrounds · host resting
-- www.fs.usda.gov: 124 campgrounds · host resting
+- www.fs.usda.gov: 125 campgrounds · host resting
 - dnr.alaska.gov: 113 campgrounds · robots.txt says no
 - cpw.state.co.us: 98 campgrounds · host resting
 - reservemn.usedirect.com: 94 campgrounds · robots.txt says no
@@ -1044,47 +1044,47 @@ Updated 2026-11-16. Every fact in <area>.json carries its source url, read date 
 
 ## US-IL: 12 random samples (records with facts; seed = the date)
 
-- **Gray Tent (12 campsites)** (US-1028:3, state, status ok, no campground facts even in a browser, 4 facts) · [dnr.illinois.gov](https://dnr.illinois.gov/parks.html)
+- **Gray Tent (12 campsites)** (US-1028:3, state, status ok, no campground facts even in a browser, 4 facts, 648 ft) · [dnr.illinois.gov](https://dnr.illinois.gov/parks.html)
   - booking.how = "online: dnr.illinois.gov" · “link “Camping/Shelter Reservation””
   - booking.url = "https://dnr.illinois.gov/parks/camp/reservation-information · “link “Camping/Shelter Reservation” -> https://dnr.illinois.gov/parks/camp/reservation-information.html”
   - phone = "(217) 782-6302" · “ou may contact the Illinois Department of Natural Resources 217-782-6302 for more information. Thank you for making the sustainabili”
   - reservable = true · “de Notifications Permits Picnicking Visitor Centers Find a Park by Region Find a Park A-Z Reserve a Campsite or Shelter Recreational Activit”
-- **Rock Cut State Park: (area name blank in layer) 1 cabins** (US-1019:7, state, status ok, no campground facts even in a browser, 4 facts) · [dnr.illinois.gov](https://dnr.illinois.gov/parks.html)
+- **Rock Cut State Park: (area name blank in layer) 1 cabins** (US-1019:7, state, status ok, no campground facts even in a browser, 4 facts, 848 ft) · [dnr.illinois.gov](https://dnr.illinois.gov/parks.html)
   - booking.how = "online: dnr.illinois.gov" · “link “Camping/Shelter Reservation””
   - booking.url = "https://dnr.illinois.gov/parks/camp/reservation-information · “link “Camping/Shelter Reservation” -> https://dnr.illinois.gov/parks/camp/reservation-information.html”
   - phone = "(217) 782-6302" · “ou may contact the Illinois Department of Natural Resources 217-782-6302 for more information. Thank you for making the sustainabili”
   - reservable = true · “de Notifications Permits Picnicking Visitor Centers Find a Park by Region Find a Park A-Z Reserve a Campsite or Shelter Recreational Activit”
-- **Lake Le-Aqua-Na State Park: (area name blank in layer) 5 group camp** (US-1005:3, state, status ok, no campground facts even in a browser, 4 facts) · [dnr.illinois.gov](https://dnr.illinois.gov/parks.html)
+- **Lake Le-Aqua-Na State Park: (area name blank in layer) 5 group camp** (US-1005:3, state, status ok, no campground facts even in a browser, 4 facts, 922 ft) · [dnr.illinois.gov](https://dnr.illinois.gov/parks.html)
   - booking.how = "online: dnr.illinois.gov" · “link “Camping/Shelter Reservation””
   - booking.url = "https://dnr.illinois.gov/parks/camp/reservation-information · “link “Camping/Shelter Reservation” -> https://dnr.illinois.gov/parks/camp/reservation-information.html”
   - phone = "(217) 782-6302" · “ou may contact the Illinois Department of Natural Resources 217-782-6302 for more information. Thank you for making the sustainabili”
   - reservable = true · “de Notifications Permits Picnicking Visitor Centers Find a Park by Region Find a Park A-Z Reserve a Campsite or Shelter Recreational Activit”
-- **300 Row (60 campsites)** (US-1000:1, state, status ok, no campground facts even in a browser, 4 facts) · [dnr.illinois.gov](https://dnr.illinois.gov/parks.html)
+- **300 Row (60 campsites)** (US-1000:1, state, status ok, no campground facts even in a browser, 4 facts, 586 ft) · [dnr.illinois.gov](https://dnr.illinois.gov/parks.html)
   - booking.how = "online: dnr.illinois.gov" · “link “Camping/Shelter Reservation””
   - booking.url = "https://dnr.illinois.gov/parks/camp/reservation-information · “link “Camping/Shelter Reservation” -> https://dnr.illinois.gov/parks/camp/reservation-information.html”
   - phone = "(217) 782-6302" · “ou may contact the Illinois Department of Natural Resources 217-782-6302 for more information. Thank you for making the sustainabili”
   - reservable = true · “de Notifications Permits Picnicking Visitor Centers Find a Park by Region Find a Park A-Z Reserve a Campsite or Shelter Recreational Activit”
-- **Eagle Creek State Park: (area name blank in layer) 3 group camp** (US-4094:8, state, status ok, no campground facts even in a browser, 4 facts) · [dnr.illinois.gov](https://dnr.illinois.gov/parks.html)
+- **Eagle Creek State Park: (area name blank in layer) 3 group camp** (US-4094:8, state, status ok, no campground facts even in a browser, 4 facts, 657 ft) · [dnr.illinois.gov](https://dnr.illinois.gov/parks.html)
   - booking.how = "online: dnr.illinois.gov" · “link “Camping/Shelter Reservation””
   - booking.url = "https://dnr.illinois.gov/parks/camp/reservation-information · “link “Camping/Shelter Reservation” -> https://dnr.illinois.gov/parks/camp/reservation-information.html”
   - phone = "(217) 782-6302" · “ou may contact the Illinois Department of Natural Resources 217-782-6302 for more information. Thank you for making the sustainabili”
   - reservable = true · “de Notifications Permits Picnicking Visitor Centers Find a Park by Region Find a Park A-Z Reserve a Campsite or Shelter Recreational Activit”
-- **Drive-in Tent (15 campsites)** (US-4094:6, state, status ok, no campground facts even in a browser, 4 facts) · [dnr.illinois.gov](https://dnr.illinois.gov/parks.html)
+- **Drive-in Tent (15 campsites)** (US-4094:6, state, status ok, no campground facts even in a browser, 4 facts, 663 ft) · [dnr.illinois.gov](https://dnr.illinois.gov/parks.html)
   - booking.how = "online: dnr.illinois.gov" · “link “Camping/Shelter Reservation””
   - booking.url = "https://dnr.illinois.gov/parks/camp/reservation-information · “link “Camping/Shelter Reservation” -> https://dnr.illinois.gov/parks/camp/reservation-information.html”
   - phone = "(217) 782-6302" · “ou may contact the Illinois Department of Natural Resources 217-782-6302 for more information. Thank you for making the sustainabili”
   - reservable = true · “de Notifications Permits Picnicking Visitor Centers Find a Park by Region Find a Park A-Z Reserve a Campsite or Shelter Recreational Activit”
-- **Merganser (40 campsites)** (US-4103:1, state, status ok, no campground facts even in a browser, 4 facts) · [dnr.illinois.gov](https://dnr.illinois.gov/parks.html)
+- **Merganser (40 campsites)** (US-4103:1, state, status ok, no campground facts even in a browser, 4 facts, 873 ft) · [dnr.illinois.gov](https://dnr.illinois.gov/parks.html)
   - booking.how = "online: dnr.illinois.gov" · “link “Camping/Shelter Reservation””
   - booking.url = "https://dnr.illinois.gov/parks/camp/reservation-information · “link “Camping/Shelter Reservation” -> https://dnr.illinois.gov/parks/camp/reservation-information.html”
   - phone = "(217) 782-6302" · “ou may contact the Illinois Department of Natural Resources 217-782-6302 for more information. Thank you for making the sustainabili”
   - reservable = true · “de Notifications Permits Picnicking Visitor Centers Find a Park by Region Find a Park A-Z Reserve a Campsite or Shelter Recreational Activit”
-- **Woodchuck Ridge (46 campsites)** (US-1003:1, state, status ok, no campground facts even in a browser, 4 facts) · [dnr.illinois.gov](https://dnr.illinois.gov/parks.html)
+- **Woodchuck Ridge (46 campsites)** (US-1003:1, state, status ok, no campground facts even in a browser, 4 facts, 668 ft) · [dnr.illinois.gov](https://dnr.illinois.gov/parks.html)
   - booking.how = "online: dnr.illinois.gov" · “link “Camping/Shelter Reservation””
   - booking.url = "https://dnr.illinois.gov/parks/camp/reservation-information · “link “Camping/Shelter Reservation” -> https://dnr.illinois.gov/parks/camp/reservation-information.html”
   - phone = "(217) 782-6302" · “ou may contact the Illinois Department of Natural Resources 217-782-6302 for more information. Thank you for making the sustainabili”
   - reservable = true · “de Notifications Permits Picnicking Visitor Centers Find a Park by Region Find a Park A-Z Reserve a Campsite or Shelter Recreational Activit”
-- **Pere Marquette Class A Campground** (intake-US-1015, agency (outside research camping-us-oct31), status ok, 14 facts) · [dnr.illinois.gov](https://dnr.illinois.gov/parks/camp/park.peremarquette.html)
+- **Pere Marquette Class A Campground** (intake-US-1015, agency (outside research camping-us-oct31), status ok, 14 facts, 524 ft) · [dnr.illinois.gov](https://dnr.illinois.gov/parks/camp/park.peremarquette.html)
   - booking.how = "online: dnr.illinois.gov" · “link “Camping/Shelter Reservation””
   - booking.url = "https://dnr.illinois.gov/parks/camp/reservation-information · “link “Camping/Shelter Reservation” -> https://dnr.illinois.gov/parks/camp/reservation-information.html”
   - drinking_water = true · “shower buildings. Campsites do not have individual water or sewer hookups, but there are water hydrants throughout the campground and a dump”
@@ -1095,7 +1095,7 @@ Updated 2026-11-16. Every fact in <area>.json carries its source url, read date 
   - hookups.sewer = false · “nt in the campground near the shower buildings. Campsites do not have individual water or sewer hookups, but there are water hydrants throug”
   - reservable = "mixed" · “on summer weekends, reservations are recommended. Unreserved campsites are available on a first-come, first-serve basis. Five handicap acces”
   - restrooms = "yes (kind not stated)" · “s. Cabins have electricity but do not have water inside the cabin. Cabins are next to the bathhouse for bathrooms and showers. These rustic ”
-- **Gebhard Woods Campground** (intake-US-0995, agency (outside research camping-us-oct31), status ok, 11 facts) · [dnr.illinois.gov](https://dnr.illinois.gov/parks/camp/park.gebhardwoods.html)
+- **Gebhard Woods Campground** (intake-US-0995, agency (outside research camping-us-oct31), status ok, 11 facts, 502 ft) · [dnr.illinois.gov](https://dnr.illinois.gov/parks/camp/park.gebhardwoods.html)
   - booking.how = "online: dnr.illinois.gov" · “link “Camping/Shelter Reservation””
   - booking.url = "https://dnr.illinois.gov/parks/camp/reservation-information · “link “Camping/Shelter Reservation” -> https://dnr.illinois.gov/parks/camp/reservation-information.html”
   - drinking_water = true · “shower buildings. Campsites do not have individual water or sewer hookups, but there are water hydrants throughout the campground and a dump”
@@ -1106,12 +1106,12 @@ Updated 2026-11-16. Every fact in <area>.json carries its source url, read date 
   - reservable = "mixed" · “on summer weekends, reservations are recommended. Unreserved campsites are available on a first-come, first-serve basis. Five handicap acces”
   - restrooms = "vault" · “rings, picnic tables and grills are located in the camping area. A drinking fountain and pit toilets are located within a short distance. A ”
   - season = "April 1 through Nov. 15" · “camping unit with them at check-in.&lt;/p>\n&lt;p>&nbsp;&lt;/p>\n&lt;p>The campground is open from April 1 through Nov. 15. Reservations can”
-- **Water Lily Campground (5 campsites)** (US-1006:3, state, status ok, no campground facts even in a browser, 4 facts) · [dnr.illinois.gov](https://dnr.illinois.gov/parks.html)
+- **Water Lily Campground (5 campsites)** (US-1006:3, state, status ok, no campground facts even in a browser, 4 facts, 391 ft) · [dnr.illinois.gov](https://dnr.illinois.gov/parks.html)
   - booking.how = "online: dnr.illinois.gov" · “link “Camping/Shelter Reservation””
   - booking.url = "https://dnr.illinois.gov/parks/camp/reservation-information · “link “Camping/Shelter Reservation” -> https://dnr.illinois.gov/parks/camp/reservation-information.html”
   - phone = "(217) 782-6302" · “ou may contact the Illinois Department of Natural Resources 217-782-6302 for more information. Thank you for making the sustainabili”
   - reservable = true · “de Notifications Permits Picnicking Visitor Centers Find a Park by Region Find a Park A-Z Reserve a Campsite or Shelter Recreational Activit”
-- **Salt Creek Backpack Trail (2 campsites)** (US-1030:3, state, status ok, no campground facts even in a browser, 4 facts) · [dnr.illinois.gov](https://dnr.illinois.gov/parks.html)
+- **Salt Creek Backpack Trail (2 campsites)** (US-1030:3, state, status ok, no campground facts even in a browser, 4 facts, 650 ft) · [dnr.illinois.gov](https://dnr.illinois.gov/parks.html)
   - booking.how = "online: dnr.illinois.gov" · “link “Camping/Shelter Reservation””
   - booking.url = "https://dnr.illinois.gov/parks/camp/reservation-information · “link “Camping/Shelter Reservation” -> https://dnr.illinois.gov/parks/camp/reservation-information.html”
   - phone = "(217) 782-6302" · “ou may contact the Illinois Department of Natural Resources 217-782-6302 for more information. Thank you for making the sustainabili”

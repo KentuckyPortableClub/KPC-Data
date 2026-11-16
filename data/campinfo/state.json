@@ -321,17 +321,17 @@
     "no_page": 0,
     "not_official": 4,
     "ok": 15,
-    "other": 205,
-    "resting": 0,
+    "other": 204,
+    "resting": 1,
     "robots": 0,
     "with_booking": 220,
-    "with_elevation": 0,
+    "with_elevation": 252,
     "with_facts": 202,
     "with_sites": 2
    },
    "left": 0,
    "status": "done",
-   "updated": "2026-11-09"
+   "updated": "2026-11-16"
   },
   "US-IN": {
    "camps": 96,
@@ -1142,7 +1142,7 @@
   "US-HI": "FCC listAsOfDates: robots.txt says no",
   "US-IA": "FCC listAsOfDates: robots.txt says no",
   "US-ID": "FCC listAsOfDates: robots.txt says no",
-  "US-IL": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
+  "US-IL": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-IN": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-KS": "FCC listAsOfDates: robots.txt says no",
   "US-KY": "FCC listAsOfDates: robots.txt says no",
@@ -1311,10 +1311,10 @@
    "cell": {
     "carriers": null,
     "files": [],
-    "src": null,
-    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
+    "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2026-06-30?category=State&subcategory=Mobile%20Broadband",
+    "status": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
    },
-   "read": "2026-11-09"
+   "read": "2026-11-16"
   },
   "US-IN": {
    "cell": {
@@ -1642,9 +1642,7 @@
   }
  },
  "hosts": {
-  "dnr.wisconsin.gov": 1794829150.5408707,
-  "gfp.sd.gov": 1794827639.7593935,
-  "www.fs.usda.gov": 1794827672.7619686
+  "dnr.wisconsin.gov": 1794829150.5408707
  },
  "ky_check": {
   "agree": 53,
@@ -2593,30 +2591,31 @@
  },
  "last": {
   "areas": [
-   "US-DC"
+   "US-IL"
   ],
   "fcc_token": true,
   "manners": {
    "errors": 0,
    "for_person_urls": [],
    "host_rule": 0,
-   "requests": 5,
-   "rested": 0,
+   "requests": 662,
+   "rested": 1,
    "robots": 0,
    "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "camps": 1,
-   "elevations": 1,
+   "browser": 191,
+   "camps": 256,
+   "elevations": 256,
    "errors": 0,
-   "needs_browser": 0,
-   "needs_key": 0,
-   "no_page": 1,
-   "not_official": 0,
-   "ok": 0,
-   "pages_read": 0,
-   "resting": 0,
+   "needs_browser": 191,
+   "needs_key": 28,
+   "no_page": 17,
+   "not_official": 4,
+   "ok": 206,
+   "pages_read": 210,
+   "resting": 1,
    "ridb_calls": 0,
    "robots": 0,
    "skipped_fresh": 0
