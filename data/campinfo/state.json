@@ -468,21 +468,22 @@
    "checked": 25,
    "counts": {
     "camps": 25,
-    "needs_browser": 0,
+    "needs_browser": 2,
     "needs_key": 4,
     "no_page": 0,
     "not_official": 1,
-    "ok": 0,
-    "other": 13,
-    "resting": 0,
-    "robots": 7,
+    "ok": 2,
+    "other": 14,
+    "resting": 2,
+    "robots": 0,
     "with_booking": 20,
-    "with_elevation": 0,
-    "with_sites": 0
+    "with_elevation": 25,
+    "with_facts": 4,
+    "with_sites": 1
    },
    "left": 0,
    "status": "done",
-   "updated": "2026-11-09"
+   "updated": "2026-11-16"
   },
   "US-MI": {
    "camps": 521,
@@ -1149,7 +1150,7 @@
   "US-LA": "FCC listAsOfDates: robots.txt says no",
   "US-MA": "FCC listAsOfDates: robots.txt says no",
   "US-MD": "FCC listAsOfDates: robots.txt says no",
-  "US-ME": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
+  "US-ME": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-MI": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-MN": "FCC listAsOfDates: robots.txt says no",
   "US-MO": "FCC listAsOfDates: robots.txt says no",
@@ -1374,10 +1375,10 @@
    "cell": {
     "carriers": null,
     "files": [],
-    "src": null,
-    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
+    "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2026-06-30?category=State&subcategory=Mobile%20Broadband",
+    "status": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
    },
-   "read": "2026-11-09"
+   "read": "2026-11-16"
   },
   "US-MI": {
    "cell": {
@@ -1642,7 +1643,8 @@
   }
  },
  "hosts": {
-  "dnr.wisconsin.gov": 1794829150.5408707
+  "www.fs.usda.gov": 1794915521.5681503,
+  "www.maine.gov": 1794915485.191769
  },
  "ky_check": {
   "agree": 53,
@@ -2591,31 +2593,42 @@
  },
  "last": {
   "areas": [
-   "US-IL"
+   "US-ME"
   ],
   "fcc_token": true,
   "manners": {
-   "errors": 0,
-   "for_person_urls": [],
+   "errors": 3,
+   "for_person": 2,
+   "for_person_urls": [
+    [
+     "https://www.maine.gov/dacf/parks/camping/",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://www.maine.gov/dacf/parks/camping/pdf/Camden.pdf",
+     "HTTP 403 twice"
+    ]
+   ],
    "host_rule": 0,
-   "requests": 662,
+   "requests": 49,
    "rested": 1,
+   "retry403": 2,
    "robots": 0,
-   "strikes": 0
+   "strikes": 7
   },
   "ridb_key": false,
   "stat": {
-   "browser": 191,
-   "camps": 256,
-   "elevations": 256,
+   "browser": 4,
+   "camps": 25,
+   "elevations": 25,
    "errors": 0,
-   "needs_browser": 191,
-   "needs_key": 28,
-   "no_page": 17,
-   "not_official": 4,
-   "ok": 206,
-   "pages_read": 210,
-   "resting": 1,
+   "needs_browser": 5,
+   "needs_key": 4,
+   "no_page": 11,
+   "not_official": 1,
+   "ok": 6,
+   "pages_read": 5,
+   "resting": 2,
    "ridb_calls": 0,
    "robots": 0,
    "skipped_fresh": 0

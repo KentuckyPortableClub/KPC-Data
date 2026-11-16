@@ -31,7 +31,7 @@ Updated 2026-11-16. Every fact in <area>.json carries its source url, read date 
 | US-MA | 36 | 25 | 8 | 0 | 0 | 0 | 0 | 0 | 3 | 18 | 28 | 0 |
 | US-VT | 280 | 105 | 9 | 0 | 0 | 1 | 146 | 0 | 19 | 103 | 125 | 0 |
 | US-NH | 79 | 41 | 24 | 0 | 0 | 2 | 12 | 0 | 0 | 3 | 43 | 0 |
-| US-ME | 25 | 0 | 4 | 0 | 7 | 0 | 0 | 1 | 13 | 0 | 20 | 0 |
+| US-ME | 25 | 2 | 4 | 2 | 0 | 2 | 0 | 1 | 14 | 1 | 20 | 25 |
 | US-MD | 77 | 40 | 30 | 1 | 0 | 0 | 0 | 0 | 6 | 10 | 43 | 0 |
 | US-DE | 24 | 2 | 0 | 0 | 22 | 0 | 0 | 0 | 0 | 0 | 24 | 0 |
 | US-DC | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 1 | 1 |
@@ -65,7 +65,7 @@ Updated 2026-11-16. Every fact in <area>.json carries its source url, read date 
 ## Hosts that need a browser (403), say no in robots.txt, or are resting
 
 - outdoornebraska.gov: 187 campgrounds · host resting
-- www.fs.usda.gov: 125 campgrounds · host resting
+- www.fs.usda.gov: 126 campgrounds · host resting
 - dnr.alaska.gov: 113 campgrounds · robots.txt says no
 - cpw.state.co.us: 98 campgrounds · host resting
 - reservemn.usedirect.com: 94 campgrounds · robots.txt says no
@@ -88,10 +88,9 @@ Updated 2026-11-16. Every fact in <area>.json carries its source url, read date 
 - midnrreservations.com: 12 campgrounds · host resting (robots.txt could not be read: next run)
 - reserveohio.com: 12 campgrounds · host resting (robots.txt could not be read: next run)
 - www.reservecalifornia.com: 5 campgrounds · robots.txt says no
-- apps.web.maine.gov: 4 campgrounds · host resting (robots.txt could not be read: next run)
 - getoutside.idaho.gov: 4 campgrounds · host resting (robots.txt could not be read: next run)
 - www.dec.ny.gov: 3 campgrounds · host resting (robots.txt could not be read: next run)
-- www.maine.gov: 3 campgrounds · host resting (robots.txt could not be read: next run)
+- www.maine.gov: 3 campgrounds · HTTP 403 -> needs browser
 - tpwd.texas.gov: 3 campgrounds · robots.txt says no
 - reserve.mdwfp.com: 2 campgrounds · robots.txt says no
 - reserve.arkansasstateparks.com: 2 campgrounds · robots.txt says no
@@ -2351,6 +2350,36 @@ Updated 2026-11-16. Every fact in <area>.json carries its source url, read date 
 
 ## US-ME: 12 random samples (records with facts; seed = the date)
 
+- **Penobscot River Corridor campsites** (intake-US-8442, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 7 facts, 980 ft) · [apps.web.maine.gov](https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/details.pl?park_id=84)
+  - booking.how = "online: www.maine.gov" · “link “Camping fees are listed under the River Camping section of this linked Campgroun””
+  - booking.url = "http://www.maine.gov/dacf/parks/camping/reservations/campgr · “link “Camping fees are listed under the River Camping section of this linked Campgroun” -> http://www.maine.gov/dacf/parks/camping/reservati”
+  - map.date_how = "PDF, no date in the link" · “link “Penobscot River Corridor Map (1.73MB)””
+  - map.url = "http://www.state.me.us/dacf/parks/docs/maps/seboomprc.pdf" · “link “Penobscot River Corridor Map (1.73MB)” -> http://www.state.me.us/dacf/parks/docs/maps/seboomprc.pdf”
+  - phone = "(207) 941-4014" · “ore information contact the Northern Region Parks Office at (207) 941-4014. Located in the heart of Maine's undeveloped forest land, t”
+  - phone_hint = "(888) 514-7527" · “h Trailered boat launch Description Please check the Bureau's Safety Page and text PRC to 888-514-7527 to subscribe to the park's Condition ”
+  - rules.fires = "firewood, buy it from a local source" · “port exotic insects & diseases that pose a serious threat to our forests. Don't transport firewood, buy it from a local source. Burn It Wher”
+- **Mount Kineo / Moosehead Lake shoreline water-access campsites** (intake-US-2398, agency (outside research camping-us-oct31), status ok, 3 facts, 1032 ft) · [apps.web.maine.gov](https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/details.pl?park_id=99)
+  - booking.url = "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/de · “booking link from our outside research (camping, in the park) row (official system apps.web.maine.gov)”
+  - season = "year-round" · “ing Hiking (trails) Description Prepare for Your Visit - check the Bureau's Safety Page . Open all year; 9:00 a.m. to sunset daily unless ot”
+  - sites.total = 91 · “r landscape long cherished for its natural beauty and plentiful resources. Lily Bay State Park offers 91 wooded and lakeside campsites and t”
+- **Penobscot River Corridor campsites** (intake-US-8443, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 7 facts, 1276 ft) · [apps.web.maine.gov](https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/details.pl?park_id=84)
+  - booking.how = "online: www.maine.gov" · “link “Camping fees are listed under the River Camping section of this linked Campgroun””
+  - booking.url = "http://www.maine.gov/dacf/parks/camping/reservations/campgr · “link “Camping fees are listed under the River Camping section of this linked Campgroun” -> http://www.maine.gov/dacf/parks/camping/reservati”
+  - map.date_how = "PDF, no date in the link" · “link “Penobscot River Corridor Map (1.73MB)””
+  - map.url = "http://www.state.me.us/dacf/parks/docs/maps/seboomprc.pdf" · “link “Penobscot River Corridor Map (1.73MB)” -> http://www.state.me.us/dacf/parks/docs/maps/seboomprc.pdf”
+  - phone = "(207) 941-4014" · “ore information contact the Northern Region Parks Office at (207) 941-4014. Located in the heart of Maine's undeveloped forest land, t”
+  - phone_hint = "(888) 514-7527" · “h Trailered boat launch Description Please check the Bureau's Safety Page and text PRC to 888-514-7527 to subscribe to the park's Condition ”
+  - rules.fires = "firewood, buy it from a local source" · “port exotic insects & diseases that pose a serious threat to our forests. Don't transport firewood, buy it from a local source. Burn It Wher”
+- **Allagash Wilderness Waterway campsites (Chamberlain Lake)** (intake-US-8440, agency (outside research camping-us-oct31), status ok (browser), 9 facts, 1062 ft) · [apps.web.maine.gov](https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/details.pl?park_id=2)
+  - booking.how = "online: www.maine.gov" · “link “listed on the Campground Fees webpage.””
+  - booking.url = "http://www.maine.gov/dacf/parks/camping/reservations/campgr · “link “listed on the Campground Fees webpage.” -> http://www.maine.gov/dacf/parks/camping/reservations/campground_fees.shtml”
+  - fees = "$7/day | $12/day" · “. These are per person fees: North Maine Woods Day-use Fees Maine Resident, age 15 to 69: $7/day Non-Resident, age 15-69: $12/day All person”
+  - map.date_how = "PDF, no date in the link" · “link “map: color, 18x32 inches””
+  - map.url = "http://www.maine.gov/dacf/parksearch/PropertyGuides/Maps/Fu · “link “map: color, 18x32 inches” -> http://www.maine.gov/dacf/parksearch/PropertyGuides/Maps/FullSize/aww-map.pdf”
+  - phone = "(207) 941-4014" · “ption. Contact the Bureau's Northern Region Parks office at (207) 941-4014 for to get an AWW trip planning packet and information. Vis”
+  - phone_hint = "(888) 514-7527" · “Location Lat 46.170889 / Lon -69.208944 - at Chamberlain Bridge Open all year Text AWW to 888-514-7527 to subscribe to the Waterway Conditio”
+  - rules.fires = "firewood, buy it from a local source" · “port exotic insects & diseases that pose a serious threat to our forests. Don't transport firewood, buy it from a local source. Buy It Where”
+  - season = "year-round" · “y boat launch Description Location Lat 46.170889 / Lon -69.208944 - at Chamberlain Bridge Open all year Text AWW to 888-514-7527 to subscrib”
 
 ## US-MD: 12 random samples (records with facts; seed = the date)
 
