@@ -1,6 +1,6 @@
 # kpc_pulloffs run report (2026-11-16)
 
-- version 1.0.0; exit code 3; ran 50.3 min; 106 web requests
+- version 1.0.0; exit code 3; ran 51.2 min; 79 web requests
 - parks in this input (after --areas / --limit): 190; done: 106; left for the next run: 84
 - candidates for chat 11: 2891; kept out (log only, work/log/kept_out.jsonl): 8171
 
@@ -199,10 +199,9 @@ Official access pins next to a public road (within 30 m) inside the search band:
   - problem (skipped, run went on): NAIP photo for cell 704,8427 not read: HTTP 504
   - problem (skipped, run went on): NAIP photo for cell 705,8426 not read: HTTP 504
   - problem (skipped, run went on): NAIP photo for cell 705,8427 not read: HTTP 504
-- US-3840 Yellowbank Wildlife Management Area: time ran out after 7 of 85 photo cells looked at; nothing written for it yet. Run again with --resume (downloads are cached).
+- US-3840 Yellowbank Wildlife Management Area: time ran out after 52 of 85 photo cells looked at; nothing written for it yet. Run again with --resume (downloads are cached).
 
 ## Web manners
 
-- services2.arcgis.com: robots.txt could not be read (network error: _ReqRefused: <urlopen error services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)>); host skipped (RFC 9309: unreachable = disallow)
 - imagery.nationalmap.gov: no robots rules (HTTP 403); treated as allow-all (RFC 9309)
-- tigerweb.geo.census.gov: no robots rules (it answered with a web page, not a robots file); treated as allow-all (RFC 9309)
+- services2.arcgis.com: robots.txt could not be read (network error: _ReqRefused: <urlopen error services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)>); host skipped (RFC 9309: unreachable = disallow)
