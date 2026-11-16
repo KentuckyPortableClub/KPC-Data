@@ -19326,6 +19326,398 @@
    "pass": 1
   },
   {
+   "ref": "US-3692",
+   "area": "US-AL",
+   "park": "Heron Bay and Portersville Bay State Fish and Wildlife Area",
+   "agency_group": "State Fish and Wildlife Area",
+   "kind": "outline",
+   "date": "2026-11-16",
+   "status": "candidate",
+   "st": "US-AL",
+   "url": "https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0?f=html",
+   "service_url": "https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0",
+   "name_field": "DCNR_Name",
+   "agency": "Alabama Dept of Conservation and Natural Resources, State La (preserve, state GIS table)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 122,
+   "record_name": "Heron Bay Wetlands",
+   "layer": "PACK-US-AL-preserve-217",
+   "record_link": "https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0/query?where=OBJECTID%3D122&outFields=%2A&f=html",
+   "where": "OBJECTID=122",
+   "pin_m": 0,
+   "acres_approx": 462.9,
+   "grade": "official",
+   "envelope": [
+    -88.14554,
+    30.32466,
+    -88.12056,
+    30.35492
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Grand Bay Savanna Wildlife Management Area",
+     "layer": "PACK-US-AL-wildlife-218",
+     "tier": "T-6",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0/query?geometry=-88.1301%2C30.3485&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-16",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Heron Bay Wetlands' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-AL-park-216",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AL-preserve-217",
+      "gave": "hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-AL-wildlife-218",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AL-wildlife-219",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-41",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "NAME SOLVED: agency calls it Heron Bay Wetlands",
+    "why_this_record": "same land also in PACK-US-AL-wildlife-218 'Grand Bay Savanna Wildlife Management Area': merged, counted once; record 'Heron Bay Wetlands' (PACK-US-AL-preserve-217); pin inside; about 462.9 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-9886",
+   "area": "US-DE",
+   "park": "Dupont Nature Center State Conservation Area",
+   "agency_group": "dnrec.alpha.delaware.gov",
+   "kind": "outline",
+   "date": "2026-11-16",
+   "status": "candidate",
+   "st": "US-DE",
+   "url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11?f=html",
+   "service_url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11",
+   "name_field": "NAME",
+   "agency": "Delaware public protected lands (DNREC) (land, state GIS table)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-2",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 840,
+   "record_name": "https://dnrec.delaware.gov/fish-wildlife/education-outreach/dupont-nature-center/",
+   "layer": "PACK-US-DE-land-240",
+   "record_link": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11/query?where=OBJECTID%3D840&outFields=%2A&f=html",
+   "where": "OBJECTID=840",
+   "pin_m": 0,
+   "acres_approx": 66.6,
+   "grade": "official",
+   "envelope": [
+    -75.32606,
+    38.93997,
+    -75.31461,
+    38.94837
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "https://dnrec.delaware.gov/fish-wildlife/education-outreach/dupont-nature-center/",
+     "layer": "PACK-US-DE-land-240",
+     "tier": "T-3",
+     "pin_m": 9
+    },
+    {
+     "record_name": "https://dnrec.delaware.gov/fish-wildlife/education-outreach/dupont-nature-center/",
+     "layer": "PACK-US-DE-land-240",
+     "tier": "T-3",
+     "pin_m": 31
+    },
+    {
+     "record_name": "Mispillion Marine Reserve",
+     "layer": "PACK-US-DE-wildlife-238",
+     "tier": "T-5",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/11/query?geometry=-75.3151%2C38.9476&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-16",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-2 WEAK: 'https://dnrec.delaware.gov/fish-wildlife/education-outreach/dupont-nature-center/' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-DE-trail-4",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-DE-trail-21",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-DE-trail-38",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-DE-land-236",
+      "gave": "error (error: {\"code\": 400, \"message\": \"Unable to complete operation.\", \"details\": [\"Un)"
+     },
+     {
+      "source": "PACK-US-DE-forest-237",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-DE-wildlife-238",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-DE-preserve-239",
+      "gave": "no hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-DE-land-240",
+      "gave": "hit (3 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "NAME SOLVED: agency calls it https://dnrec.delaware.gov/fish-wildlife/education-outreach/dupont-nature-center/",
+    "why_this_record": "same land also in PACK-US-DE-wildlife-238 'Mispillion Marine Reserve': merged, counted once; record 'https://dnrec.delaware.gov/fish-wildlife/education-outreach/dupont-nature-center/' (PACK-US-DE-land-240); pin inside; about 66.6 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-3374",
+   "area": "US-NE",
+   "park": "Neligh Mill State Historic Site",
+   "agency_group": "history.nebraska.gov",
+   "kind": "outline",
+   "date": "2026-11-16",
+   "status": "candidate",
+   "st": "US-NE",
+   "url": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1?f=html",
+   "service_url": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
+   "name_field": "RESNAME",
+   "agency": "National Register of Historic Places Polygons",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-2",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 395858,
+   "record_name": "Neligh Mill (Boundary Increase)",
+   "layer": "PACK-US-AK-land-41",
+   "record_link": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?where=OBJECTID%3D395858&outFields=%2A&f=html",
+   "where": "OBJECTID=395858",
+   "pin_m": 0,
+   "acres_approx": 101.4,
+   "grade": "official",
+   "envelope": [
+    -98.03829,
+    42.12223,
+    -98.02988,
+    42.13572
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Neligh Mill",
+     "layer": "PACK-US-AK-land-41",
+     "tier": "T-3",
+     "pin_m": 4
+    }
+   ],
+   "source_url": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?geometry=-98.0311%2C42.1264&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-16",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-2 WEAK: 'Neligh Mill (Boundary Increase)' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-NE-land-203",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-NE-wildlife-293",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-NE-land-294",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-AK-land-41",
+      "gave": "hit (3 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "NAME SOLVED: agency calls it Neligh Mill (Boundary Increase)",
+    "why_this_record": "same land also in PACK-US-AK-land-41 'Neligh Mill': merged, counted once; record 'Neligh Mill (Boundary Increase)' (PACK-US-AK-land-41); pin inside; about 101.4 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "other names at the pin: neligh mill; check the kind of place and the size"
+    }
+   },
+   "pass": 1,
+   "url_check": {
+    "url": "not checked: blocked (host resting: 3 strikes)",
+    "record_link": "not checked: blocked (host resting: 3 strikes)"
+   }
+  },
+  {
    "ref": "CA-6408",
    "area": "CA-QC",
    "park": "Phare de l'Île-Brion Historic Site",
@@ -19567,6 +19959,255 @@
     ],
     "solved": "NAME SOLVED: agency calls it Milieu naturel délimité sur un plan de l'Île-Brion",
     "why_this_record": "record 'Milieu naturel délimité sur un plan de l'Île-Brion' (Q-1527); pin inside; about 137.1 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-6413",
+   "area": "CA-QC",
+   "park": "Site historique de La Grave Historic Site",
+   "agency_group": "historicplaces.ca",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "candidate",
+   "st": "CA-QC",
+   "url": "https://www.donneesquebec.ca/recherche/dataset/578d182d-4897-4c11-aa7f-ee0cfed222a0/resource/5abd7e57-bfeb-49ba-a76c-93d961ae0633/download/sites_classes_pg.geojson",
+   "service_url": "https://www.donneesquebec.ca/recherche/dataset/578d182d-4897-4c11-aa7f-ee0cfed222a0/resource/5abd7e57-bfeb-49ba-a76c-93d961ae0633/download/sites_classes_pg.geojson",
+   "name_field": "nom_bien",
+   "agency": "Ministère de la Culture et des Communications du Québec (Répertoire du patrimoine culturel du Québec), via Données Québec",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": "feature#52",
+   "record_name": "Site patrimonial de La Grave",
+   "layer": "PACK-CA-QC-land-392",
+   "record_link": "https://www.donneesquebec.ca/recherche/dataset/578d182d-4897-4c11-aa7f-ee0cfed222a0/resource/5abd7e57-bfeb-49ba-a76c-93d961ae0633/download/sites_classes_pg.geojson",
+   "where": "id=feature#52",
+   "pin_m": 0,
+   "acres_approx": 7.7,
+   "grade": "official",
+   "envelope": [
+    -61.8393,
+    47.23562,
+    -61.8339,
+    47.23806
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://www.donneesquebec.ca/recherche/dataset/578d182d-4897-4c11-aa7f-ee0cfed222a0/resource/5abd7e57-bfeb-49ba-a76c-93d961ae0633/download/sites_classes_pg.geojson",
+   "read_date": "2026-11-02",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Site patrimonial de La Grave' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-QC-park-90",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-91",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-land-392",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-land-393",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-land-394",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-wildlife-395",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-439",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-440",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-441",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-442",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-443",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-444",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-445",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-446",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-447",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-448",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-PC-np-legal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-park-438",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-CPCAD",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "Q-1164",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1165",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1166",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1167",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1168",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1169",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1170",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1171",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1371",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1440",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1441",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1442",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1523",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1525",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1527",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1528",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1529",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1530",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1531",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1532",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1533",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1534",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1781",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1819",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1820",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1824",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1825",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1827",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1828",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "NAME SOLVED: agency calls it Site patrimonial de La Grave",
+    "why_this_record": "record 'Site patrimonial de La Grave' (PACK-CA-QC-land-392); pin inside; about 7.7 acres; Rule G: LIKELY (names overlap); size unknown",
     "confidence": {
      "level": "likely",
      "double_check": "check the kind of place and the size"
@@ -40179,10 +40820,7 @@
      "double_check": "other names at the pin: blm; check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-11260",
@@ -40420,11 +41058,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-11281",
@@ -40644,11 +41278,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-11308",
@@ -40892,11 +41522,7 @@
      "double_check": "name or pin only: read the agency map"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-11312",
@@ -41128,11 +41754,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-11316",
@@ -41364,11 +41986,7 @@
      "double_check": "other names at the pin: blm; check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-11330",
@@ -41594,11 +42212,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-12210",
@@ -41836,11 +42450,7 @@
      "double_check": "other names at the pin: jump creek canyon; check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-12230",
@@ -42084,11 +42694,7 @@
      "double_check": "name or pin only: read the agency map"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-4886",
@@ -42153,11 +42759,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-11793",
@@ -42354,11 +42956,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-4092",
@@ -42567,11 +43165,7 @@
      "double_check": "name or pin only: read the agency map"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-9966",
@@ -42824,11 +43418,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-7980",
@@ -43031,9 +43621,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host resting: 3 strikes)",
+    "record_link": "not checked: blocked (host resting: 3 strikes)",
+    "source_url": "not checked: blocked (host resting: 3 strikes)"
    }
   },
   {
@@ -43345,10 +43935,7 @@
      "double_check": "name or pin only: read the agency map"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-3408",
@@ -43853,9 +44440,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host resting: 3 strikes)",
+    "record_link": "not checked: blocked (host resting: 3 strikes)",
+    "source_url": "not checked: blocked (host resting: 3 strikes)"
    }
   },
   {
@@ -43964,11 +44551,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4858",
@@ -44188,11 +44771,7 @@
      "double_check": "other names at the pin: bellevue house national historic site; bellevue house nhs part lots a and b part lot 22; check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4859",
@@ -44393,11 +44972,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4896",
@@ -44526,11 +45101,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4897",
@@ -44659,11 +45230,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4899",
@@ -44792,11 +45359,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4901",
@@ -44944,11 +45507,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4904",
@@ -45096,11 +45655,7 @@
      "double_check": "other names at the pin: fort chambly nhs richelieu street; check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4906",
@@ -45248,11 +45803,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4909",
@@ -45400,11 +45951,7 @@
      "double_check": "other names at the pin: fortifications of quebec national historic site; fortifications of quebec nhs magazines of the esplanade east; site patrimonial du vieux quebec; check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4911",
@@ -45558,11 +46105,7 @@
      "double_check": "other names at the pin: lachine canal nhs visitor centre lock 5; check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4917",
@@ -45710,11 +46253,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4919",
@@ -45862,11 +46401,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4921",
@@ -46026,11 +46561,7 @@
      "double_check": "other names at the pin: saint louis forts and chateaux national historic site governors walkway; check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4823",
@@ -46114,11 +46645,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-1253",
@@ -46371,12 +46898,7 @@
      "double_check": "name or pin only: read the agency map"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-5631",
@@ -46667,12 +47189,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-12426",
@@ -46920,12 +47437,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-12488",
@@ -47191,12 +47703,7 @@
      "double_check": "other names at the pin: columbia basin wildlife area; upland restoration; check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-13395",
@@ -47269,12 +47776,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-13397",
@@ -47347,12 +47849,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-13398",
@@ -47425,12 +47922,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-13399",
@@ -47503,12 +47995,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-13419",
@@ -47756,12 +48243,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-13441",
@@ -48009,12 +48491,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-8666",
@@ -48292,12 +48769,7 @@
      "double_check": "name or pin only: read the agency map"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-3797",
@@ -48567,12 +49039,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-3813",
@@ -48656,12 +49123,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-3823",
@@ -48931,12 +49393,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-3828",
@@ -49013,12 +49470,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-3832",
@@ -49270,12 +49722,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-10141",
@@ -49545,12 +49992,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-10299",
@@ -49741,9 +50183,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host resting: 3 strikes)",
+    "record_link": "not checked: blocked (host resting: 3 strikes)",
+    "source_url": "not checked: blocked (host resting: 3 strikes)"
    }
   },
   {
@@ -49935,9 +50377,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host resting: 3 strikes)",
+    "record_link": "not checked: blocked (host resting: 3 strikes)",
+    "source_url": "not checked: blocked (host resting: 3 strikes)"
    }
   },
   {
@@ -50129,9 +50571,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host resting: 3 strikes)",
+    "record_link": "not checked: blocked (host resting: 3 strikes)",
+    "source_url": "not checked: blocked (host resting: 3 strikes)"
    }
   },
   {
@@ -50880,9 +51322,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (robots)",
+    "record_link": "not checked: blocked (robots)",
+    "source_url": "not checked: blocked (robots)"
    }
   },
   {
@@ -50964,12 +51406,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-1708",
@@ -51183,12 +51620,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-0956",
@@ -51313,11 +51745,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-13241",
@@ -51623,12 +52051,7 @@
      "double_check": "record is only 4.0 acres for a big kind of park; check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-6409",
@@ -51846,12 +52269,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-6411",
@@ -51929,12 +52347,7 @@
      "double_check": "other names at the pin: polipoli state park entrance; check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-6426",
@@ -52032,9 +52445,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host resting: 3 strikes)",
+    "record_link": "not checked: blocked (host resting: 3 strikes)",
+    "source_url": "not checked: blocked (host resting: 3 strikes)"
    }
   },
   {
@@ -52108,10 +52521,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-10387",
@@ -52331,10 +52741,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-5709",
@@ -52407,10 +52814,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-6529",
@@ -52660,10 +53064,7 @@
      "double_check": "name or pin only: read the agency map"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-7519",
@@ -52736,10 +53137,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-8263",
@@ -52812,10 +53210,199 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
+  },
+  {
+   "ref": "US-10547",
+   "area": "US-RI",
+   "park": "Silver Spring State Recreation Area",
+   "agency_group": "dem.ri.gov",
+   "kind": "outline",
+   "date": "2026-11-16",
+   "status": "candidate",
+   "st": "US-RI",
+   "url": "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0?f=html",
+   "service_url": "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0",
+   "name_field": "NAME",
+   "agency": "Rhode Island DEM (land, state GIS table)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 646,
+   "record_name": "Silver Spring Lake Fishing Access",
+   "layer": "PACK-US-RI-land-328",
+   "record_link": "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0/query?where=OBJECTID%3D646&outFields=%2A&f=html",
+   "where": "OBJECTID=646",
+   "pin_m": 0,
+   "acres_approx": 15.9,
+   "grade": "official",
+   "envelope": [
+    -71.47368,
+    41.53664,
+    -71.46902,
+    41.53976
+   ],
+   "rule": "R-G12",
+   "others": [
+    {
+     "record_name": "Silver Spring Lake Fishing Access",
+     "layer": "PACK-US-RI-land-330",
+     "tier": "T-3",
+     "pin_m": 0
+    }
+   ],
+   "source_url": "https://risegis.ri.gov/hosting/rest/services/RIDEM/State_Conservation_Land/MapServer/0/query?geometry=-71.4705%2C41.5388&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-16",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Silver Spring Lake Fishing Access' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-RI-land-328",
+      "gave": "hit (2 at pin, 3 by name)"
+     },
+     {
+      "source": "PACK-US-RI-land-329",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-RI-land-330",
+      "gave": "hit (2 at pin, 3 by name)"
+     },
+     {
+      "source": "PACK-US-AZ-land-44",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 2 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 9 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "pin just outside (0 m): candidate only (G-F1); NAME SOLVED: agency calls it Silver Spring Lake Fishing Access",
+    "why_this_record": "same land also in PACK-US-RI-land-330 'Silver Spring Lake Fishing Access': merged, counted once; record 'Silver Spring Lake Fishing Access' (PACK-US-RI-land-328); pin 0 m from the edge; about 15.9 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1
   },
   {
    "ref": "US-4481",
@@ -52950,9 +53537,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "record_link": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "source_url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)"
    }
   },
   {
@@ -53059,11 +53646,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-4427",
@@ -53166,9 +53749,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "record_link": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "source_url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)"
    }
   },
   {
@@ -53456,9 +54039,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "record_link": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "source_url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)"
    }
   },
   {
@@ -53542,9 +54125,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "record_link": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "source_url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)"
    }
   },
   {
@@ -53624,9 +54207,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "record_link": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "source_url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)"
    }
   },
   {
@@ -53739,9 +54322,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "record_link": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "source_url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)"
    }
   },
   {
@@ -53836,9 +54419,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "record_link": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "source_url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)"
    }
   },
   {
@@ -53918,9 +54501,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "record_link": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "source_url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)"
    }
   },
   {
@@ -54012,9 +54595,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "record_link": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "source_url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)"
    }
   },
   {
@@ -54110,9 +54693,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "record_link": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "source_url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)"
    }
   },
   {
@@ -54669,9 +55252,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "record_link": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "source_url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)"
    }
   },
   {
@@ -55228,9 +55811,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "record_link": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "source_url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)"
    }
   },
   {
@@ -55787,9 +56370,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "record_link": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "source_url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)"
    }
   },
   {
@@ -56346,9 +56929,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "record_link": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "source_url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)"
    }
   },
   {
@@ -56463,9 +57046,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "record_link": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "source_url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)"
    }
   },
   {
@@ -56580,9 +57163,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "record_link": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "source_url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)"
    }
   },
   {
@@ -57139,9 +57722,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "record_link": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "source_url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)"
    }
   },
   {
@@ -57698,9 +58281,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "record_link": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "source_url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)"
    }
   },
   {
@@ -58257,9 +58840,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "record_link": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "source_url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)"
    }
   },
   {
@@ -58816,9 +59399,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "record_link": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "source_url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)"
    }
   },
   {
@@ -59375,9 +59958,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "record_link": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "source_url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)"
    }
   },
   {
@@ -59626,9 +60209,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "record_link": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "source_url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)"
    }
   },
   {
@@ -59860,9 +60443,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "record_link": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "source_url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)"
    }
   },
   {
@@ -60107,11 +60690,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-13474",
@@ -61485,12 +62064,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-7816",
@@ -62698,7 +63272,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -62766,12 +63339,7 @@
      "double_check": "record is only 4.0 acres for a big kind of park; check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-2221",
@@ -62838,7 +63406,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -63059,12 +63626,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-6411",
@@ -63142,12 +63704,7 @@
      "double_check": "other names at the pin: polipoli state park entrance; check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-6426",
@@ -63596,11 +64153,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-4092",
@@ -63809,11 +64362,7 @@
      "double_check": "name or pin only: read the agency map"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-4105",
@@ -65200,12 +65749,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-7723",
@@ -65417,7 +65961,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -66085,12 +66628,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-12488",
@@ -66356,12 +66894,7 @@
      "double_check": "other names at the pin: columbia basin wildlife area; upland restoration; check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-13395",
@@ -66434,12 +66967,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-13397",
@@ -66512,12 +67040,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-13398",
@@ -66590,12 +67113,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-13399",
@@ -66668,12 +67186,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-13419",
@@ -66921,12 +67434,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-13441",
@@ -67174,12 +67682,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-8666",
@@ -67457,12 +67960,7 @@
      "double_check": "name or pin only: read the agency map"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "GB-1733",
@@ -79691,10 +80189,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-10387",
@@ -79914,10 +80409,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-5709",
@@ -79990,10 +80482,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-6529",
@@ -80243,10 +80732,7 @@
      "double_check": "name or pin only: read the agency map"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-7519",
@@ -80319,10 +80805,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-8263",
@@ -80395,10 +80878,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-7879",
@@ -81177,7 +81657,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -83437,11 +83916,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-13259",
@@ -94466,12 +94941,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-12147",
@@ -95263,11 +95733,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-13474",
@@ -96296,12 +96762,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-1020",
@@ -96522,12 +96983,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-5748",
@@ -97709,11 +98165,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-4092",
@@ -97922,11 +98374,7 @@
      "double_check": "name or pin only: read the agency map"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-9966",
@@ -98179,11 +98627,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-3692",
@@ -98383,11 +98827,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-9442",
@@ -98468,12 +98908,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-12426",
@@ -98721,12 +99156,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-12488",
@@ -98992,12 +99422,7 @@
      "double_check": "other names at the pin: columbia basin wildlife area; upland restoration; check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-13395",
@@ -99070,12 +99495,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-13397",
@@ -99148,12 +99568,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-13398",
@@ -99226,12 +99641,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-13399",
@@ -99304,12 +99714,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-13419",
@@ -99557,12 +99962,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-13441",
@@ -99810,12 +100210,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-8666",
@@ -100093,12 +100488,7 @@
      "double_check": "name or pin only: read the agency map"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-1251",
@@ -100345,7 +100735,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -100411,7 +100800,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -100477,7 +100865,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -100739,7 +101126,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -100805,7 +101191,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -101055,7 +101440,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -101305,7 +101689,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -101371,7 +101754,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -101621,7 +102003,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -101687,7 +102068,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -101937,7 +102317,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -102187,7 +102566,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -102253,7 +102631,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -102319,7 +102696,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -102569,7 +102945,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -102831,7 +103206,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -103081,7 +103455,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -103331,7 +103704,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -103581,7 +103953,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -103831,7 +104202,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -104106,7 +104476,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -104356,7 +104725,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -104422,7 +104790,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -104488,7 +104855,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -104738,7 +105104,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -104804,7 +105169,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -105054,7 +105418,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -105120,7 +105483,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -105186,7 +105548,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -105448,7 +105809,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -105698,7 +106058,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -105948,7 +106307,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -106014,7 +106372,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -106289,7 +106646,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -106355,7 +106711,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -106605,7 +106960,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -107553,7 +107907,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -107662,11 +108015,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-11902",
@@ -109519,7 +109868,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -109585,7 +109933,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -109651,7 +109998,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -109717,7 +110063,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -109783,7 +110128,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -109849,7 +110193,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -109915,7 +110258,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -110172,7 +110514,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -110422,7 +110763,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -113851,6 +114191,600 @@
    "pass": 1
   },
   {
+   "ref": "GB-1102",
+   "area": "GB",
+   "park": "Castle Point Old Fort National Monument",
+   "agency_group": "unknown",
+   "kind": "outline",
+   "date": "2026-11-16",
+   "status": "candidate",
+   "st": "GB",
+   "url": "https://datamap.gov.wales/geoserver/ows?service=WFS&request=DescribeFeatureType&version=2.0.0&typeNames=inspire-nrw%3ANRW_SSSI",
+   "service_url": "https://datamap.gov.wales/geoserver/ows",
+   "name_field": "sssi_name",
+   "agency": "Natural Resources Wales / Welsh Government (DataMapWales)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": "NRW_SSSI.14908",
+   "record_name": "Old Castle Down",
+   "layer": "GB-WLS-NRW_SSSI",
+   "record_link": "https://datamap.gov.wales/geoserver/ows?service=WFS&version=2.0.0&request=GetFeature&typeNames=inspire-nrw%3ANRW_SSSI&count=25&filter=%3Cfes%3AFilter%20xmlns%3Afes%3D%22http%3A%2F%2Fwww.opengis.net%2Ffes%2F2.0%22%3E%3Cfes%3APropertyIsLike%20wildCard%3D%22%2A%22%20singleChar%3D%22.%22%20escapeChar%3D%22%21%22%20matchCase%3D%22false%22%3E%3Cfes%3AValueReference%3Esssi_name%3C%2Ffes%3AValueReference%3E%3Cfes%3ALiteral%3E%2Acastle%2A%3C%2Ffes%3ALiteral%3E%3C%2Ffes%3APropertyIsLike%3E%3C%2Ffes%3AFilter%3E",
+   "where": "id=NRW_SSSI.14908",
+   "pin_m": 0,
+   "acres_approx": null,
+   "grade": "official",
+   "envelope": null,
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Carew Castle",
+     "layer": "GB-WLS-NRW_SSSI",
+     "tier": "T-6",
+     "pin_m": null
+    },
+    {
+     "record_name": "Castell y Waun a'i Barcdir / Chirk Castle and Parkland",
+     "layer": "GB-WLS-NRW_SSSI",
+     "tier": "T-6",
+     "pin_m": null
+    },
+    {
+     "record_name": "Castlemartin Corse",
+     "layer": "GB-WLS-NRW_SSSI",
+     "tier": "T-6",
+     "pin_m": null
+    },
+    {
+     "record_name": "Castlemartin Range",
+     "layer": "GB-WLS-NRW_SSSI",
+     "tier": "T-6",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://datamap.gov.wales/geoserver/ows?service=WFS&version=2.0.0&request=GetFeature&typeNames=inspire-nrw%3ANRW_SSSI&count=25&filter=%3Cfes%3AFilter%20xmlns%3Afes%3D%22http%3A%2F%2Fwww.opengis.net%2Ffes%2F2.0%22%3E%3Cfes%3APropertyIsLike%20wildCard%3D%22%2A%22%20singleChar%3D%22.%22%20escapeChar%3D%22%21%22%20matchCase%3D%22false%22%3E%3Cfes%3AValueReference%3Esssi_name%3C%2Ffes%3AValueReference%3E%3Cfes%3ALiteral%3E%2Acastle%2A%3C%2Ffes%3ALiteral%3E%3C%2Ffes%3APropertyIsLike%3E%3C%2Ffes%3AFilter%3E",
+   "read_date": "2026-11-16",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Old Castle Down' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-GB-preserve-96",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-land-97",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-land-98",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-park-111",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-preserve-112",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-land-151",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-land-152",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-park-153",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-land-154",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-land-155",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-land-173",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-GB-park-174",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-land-175",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-preserve-176",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-preserve-177",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-land-178",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-forest-179",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-forest-180",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "GB-ENG-National_Parks_England",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "GB-ENG-Ramsar_England",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "GB-ENG-Millennium_Greens_England_Polygons",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "GB-WLS-NRW_NATIONAL_PARK",
+      "gave": "error (bad xml)"
+     },
+     {
+      "source": "GB-WLS-NRW_NNR",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "GB-WLS-NRW_SSSI",
+      "gave": "hit (1 at pin, 9 by name)"
+     },
+     {
+      "source": "GB-SCT-nnr",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "GB-SCT-sssi",
+      "gave": "hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "GB-SCT-National_Nature_Reserves_ArcGIS",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "GB-ENG-Doorstep_Greens_England",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "GB-WLS-country_parks",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "GB-WLS-GWC21_Area_of_Outstanding_Natural_Beauty",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "GB-SCT-cpk",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "GB-SCT-rp",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "GB-SCT-lnr",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "GB-SCT-sac",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "GB-SCT-spa",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "GB-SCT-ramsar",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-WORLD-220",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-WORLD-287",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-WORLD-291",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-WORLD-303",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-WORLD-377",
+      "gave": "hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "WB-WORLD-378",
+      "gave": "error (bad xml)"
+     },
+     {
+      "source": "WB-WORLD-524",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-WORLD-526",
+      "gave": "no hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-WORLD-527",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-WORLD-530",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-WORLD-531",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-WORLD-533",
+      "gave": "hit (0 at pin, 4 by name)"
+     },
+     {
+      "source": "WB-WORLD-536",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-WORLD-539",
+      "gave": "hit (0 at pin, 3 by name)"
+     },
+     {
+      "source": "WB-WORLD-540",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-WORLD-541",
+      "gave": "hit (0 at pin, 17 by name)"
+     },
+     {
+      "source": "WB-WORLD-542",
+      "gave": "hit (0 at pin, 5 by name)"
+     },
+     {
+      "source": "WB-WORLD-543",
+      "gave": "hit (0 at pin, 6 by name)"
+     },
+     {
+      "source": "WB-WORLD-544",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "NAME SOLVED: agency calls it Old Castle Down",
+    "why_this_record": "record 'Old Castle Down' (GB-WLS-NRW_SSSI); pin inside; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "GB-1176",
+   "area": "GB",
+   "park": "Dyfi Biosphere Reserve",
+   "agency_group": "unknown",
+   "kind": "outline",
+   "date": "2026-11-16",
+   "status": "candidate",
+   "st": "GB",
+   "url": "https://datamap.gov.wales/geoserver/ows?service=WFS&request=DescribeFeatureType&version=2.0.0&typeNames=inspire-nrw%3ANRW_NNR",
+   "service_url": "https://datamap.gov.wales/geoserver/ows",
+   "name_field": "NNR_Name",
+   "agency": "Natural Resources Wales / Welsh Government (DataMapWales)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": "NRW_NNR.11750",
+   "record_name": "DYFI",
+   "layer": "GB-WLS-NRW_NNR",
+   "record_link": "https://datamap.gov.wales/geoserver/ows?service=WFS&version=2.0.0&request=GetFeature&typeNames=inspire-nrw%3ANRW_NNR&count=25&bbox=263903.83693401515%2C296443.6719101004%2C264212.64800119237%2C296751.7568697907%2CEPSG%3A27700",
+   "where": "id=NRW_NNR.11750",
+   "pin_m": 0,
+   "acres_approx": null,
+   "grade": "official",
+   "envelope": null,
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Dyfi",
+     "layer": "GB-WLS-NRW_SSSI",
+     "tier": "T-3",
+     "pin_m": null
+    },
+    {
+     "record_name": "Dyfi Estuary / Aber Dyfi",
+     "layer": "WB-WORLD-377",
+     "tier": "T-3",
+     "pin_m": null
+    },
+    {
+     "record_name": "Eryri / Snowdonia",
+     "layer": "GB-WLS-NRW_NATIONAL_PARK",
+     "tier": "T-5",
+     "pin_m": null
+    },
+    {
+     "record_name": "Coed y Gofer",
+     "layer": "GB-WLS-NRW_SSSI",
+     "tier": "T-5",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://datamap.gov.wales/geoserver/ows?service=WFS&version=2.0.0&request=GetFeature&typeNames=inspire-nrw%3ANRW_NNR&count=25&bbox=263903.83693401515%2C296443.6719101004%2C264212.64800119237%2C296751.7568697907%2CEPSG%3A27700",
+   "read_date": "2026-11-16",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'DYFI' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-GB-preserve-96",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-land-97",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-land-98",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-park-111",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-preserve-112",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-land-151",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-land-152",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-park-153",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-land-154",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-land-155",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-land-173",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-GB-park-174",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-land-175",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-preserve-176",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-preserve-177",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-land-178",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-forest-179",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-forest-180",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "GB-ENG-National_Parks_England",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "GB-ENG-Ramsar_England",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "GB-ENG-Millennium_Greens_England_Polygons",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "GB-WLS-NRW_NATIONAL_PARK",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "GB-WLS-NRW_NNR",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "GB-WLS-NRW_SSSI",
+      "gave": "hit (2 at pin, 0 by name)"
+     },
+     {
+      "source": "GB-SCT-nnr",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "GB-SCT-sssi",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "GB-SCT-National_Nature_Reserves_ArcGIS",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "GB-ENG-Doorstep_Greens_England",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "GB-WLS-country_parks",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "GB-WLS-GWC21_Area_of_Outstanding_Natural_Beauty",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "GB-SCT-cpk",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "GB-SCT-rp",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "GB-SCT-lnr",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "GB-SCT-sac",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "GB-SCT-spa",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "GB-SCT-ramsar",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-WORLD-220",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-WORLD-287",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-WORLD-291",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-WORLD-303",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-WORLD-377",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-WORLD-378",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-WORLD-524",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-WORLD-526",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-WORLD-527",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-WORLD-530",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-WORLD-531",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-WORLD-533",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-WORLD-536",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-WORLD-539",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-WORLD-540",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-WORLD-541",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-WORLD-542",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-WORLD-543",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-WORLD-544",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "NAME SOLVED: agency calls it DYFI",
+    "why_this_record": "record 'DYFI' (GB-WLS-NRW_NNR); pin inside; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "other names at the pin: dyfi estuary aber dyfi; check the kind of place and the size"
+    }
+   },
+   "pass": 1
+  },
+  {
    "ref": "US-13324",
    "area": "US-NV",
    "park": "Sparks State Historical Monument",
@@ -114314,11 +115248,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-13325",
@@ -117572,11 +118502,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-4385",
@@ -119723,11 +120649,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-5626",
@@ -122260,11 +123182,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-3374",
@@ -122347,8 +123265,7 @@
    "pass": 1,
    "url_check": {
     "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "record_link": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -122457,11 +123374,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4858",
@@ -122681,11 +123594,7 @@
      "double_check": "other names at the pin: bellevue house national historic site; bellevue house nhs part lots a and b part lot 22; check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4859",
@@ -122886,11 +123795,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4896",
@@ -123019,11 +123924,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4897",
@@ -123152,11 +124053,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4899",
@@ -123285,11 +124182,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4901",
@@ -123437,11 +124330,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4904",
@@ -123589,11 +124478,7 @@
      "double_check": "other names at the pin: fort chambly nhs richelieu street; check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4906",
@@ -123741,11 +124626,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4909",
@@ -123893,11 +124774,7 @@
      "double_check": "other names at the pin: fortifications of quebec national historic site; fortifications of quebec nhs magazines of the esplanade east; site patrimonial du vieux quebec; check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4911",
@@ -124051,11 +124928,7 @@
      "double_check": "other names at the pin: lachine canal nhs visitor centre lock 5; check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4917",
@@ -124203,11 +125076,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4919",
@@ -124355,11 +125224,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4921",
@@ -124519,11 +125384,7 @@
      "double_check": "other names at the pin: saint louis forts and chateaux national historic site governors walkway; check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4823",
@@ -124607,11 +125468,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-7816",
@@ -125731,12 +126588,7 @@
      "double_check": "record is only 4.0 acres for a big kind of park; check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-6409",
@@ -125954,12 +126806,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-6411",
@@ -126037,12 +126884,7 @@
      "double_check": "other names at the pin: polipoli state park entrance; check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-6426",
@@ -126575,12 +127417,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-1020",
@@ -126801,12 +127638,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-13269",
@@ -130926,11 +131758,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-4092",
@@ -131139,11 +131967,7 @@
      "double_check": "name or pin only: read the agency map"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-9966",
@@ -131396,11 +132220,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-7980",
@@ -135327,6 +136147,147 @@
    }
   },
   {
+   "ref": "CA-4986",
+   "area": "CA-QC",
+   "park": "Parc de la Baie-des-Rochers Regional Park",
+   "agency_group": "Regional Park",
+   "kind": "outline",
+   "date": "2026-11-16",
+   "status": "candidate",
+   "st": "CA-QC",
+   "url": "https://geo.environnement.gouv.qc.ca/donnees/rest/services/Biodiversite/Aires_protegees/MapServer/23?f=html",
+   "service_url": "https://geo.environnement.gouv.qc.ca/donnees/rest/services/Biodiversite/Aires_protegees/MapServer/23",
+   "name_field": null,
+   "agency": "Québec prote",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 465,
+   "record_name": "Aire de concentration d'oiseaux aquatiques de la Baie des Rochers",
+   "layer": "PACK-CA-QC-park-447",
+   "record_link": "https://geo.environnement.gouv.qc.ca/donnees/rest/services/Biodiversite/Aires_protegees/MapServer/23/query?where=OBJECTID%3D465&outFields=%2A&f=html",
+   "where": "OBJECTID=465",
+   "pin_m": 56,
+   "acres_approx": 432.6,
+   "grade": "official",
+   "envelope": [
+    -69.81501,
+    47.94917,
+    -69.78503,
+    47.96417
+   ],
+   "rule": "R-G12",
+   "others": [],
+   "source_url": "https://geo.environnement.gouv.qc.ca/donnees/rest/services/Biodiversite/Aires_protegees/MapServer/23/query?geometry=-69.8128%2C47.9537&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-16",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Aire de concentration d'oiseaux aquatiques de la Baie des Rochers' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-QC-park-90",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-QC-park-91",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-land-392",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-land-393",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-land-394",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-wildlife-395",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-439",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-440",
+      "gave": "no hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-441",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-442",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-443",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-444",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-445",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-446",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-447",
+      "gave": "hit (3 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-448",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-CANAD-79",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-NB-land-73",
+      "gave": "no hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-PC-np-legal",
+      "gave": "no hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-park-438",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "CA-CPCAD",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "pin just outside (56 m): candidate only (G-F1); NAME SOLVED: agency calls it Aire de concentration d'oiseaux aquatiques de la Baie des Rochers",
+    "why_this_record": "record 'Aire de concentration d'oiseaux aquatiques de la Baie des Rochers' (PACK-CA-QC-park-447); pin 56 m from the edge; about 432.6 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1
+  },
+  {
    "ref": "US-5981",
    "area": "US-UT",
    "park": "Simpson Springs Pony Express Station National Historic Site",
@@ -139112,12 +140073,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4794",
@@ -139767,11 +140723,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-5626",
@@ -140958,12 +141910,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-13241",
@@ -141292,12 +142239,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-6035",
@@ -145994,11 +146936,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-7179",
@@ -151215,7 +152153,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -152163,7 +153100,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -152272,11 +153208,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-11902",
@@ -154704,7 +155636,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -154778,7 +155709,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -154852,7 +155782,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -155102,7 +156031,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -155176,7 +156104,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -155451,7 +156378,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -155525,7 +156451,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -156075,7 +157000,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -156149,7 +157073,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -156223,7 +157146,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -156498,7 +157420,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -156572,7 +157493,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -156654,7 +157574,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -156761,7 +157680,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -157018,7 +157936,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -157099,7 +158016,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -157368,7 +158284,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -157475,7 +158390,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -157974,12 +158888,7 @@
      "double_check": "record is only 4.0 acres for a big kind of park; check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-6409",
@@ -158197,12 +159106,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-6411",
@@ -158280,12 +159184,7 @@
      "double_check": "other names at the pin: polipoli state park entrance; check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-6426",
@@ -172968,7 +173867,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -175777,11 +176675,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-9886",
@@ -175882,8 +176776,7 @@
    "pass": 1,
    "url_check": {
     "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "record_link": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -175967,8 +176860,7 @@
    "pass": 1,
    "url_check": {
     "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "record_link": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -182016,11 +182908,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4900",
@@ -182756,12 +183644,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-5896",
@@ -183056,12 +183939,7 @@
      "double_check": "other names at the pin: trois rivieres post office; check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4842",
@@ -184017,11 +184895,7 @@
      "double_check": "other names at the pin: battle of the chateauguay; check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4899",
@@ -184253,11 +185127,7 @@
      "double_check": "other names at the pin: carillon canal; name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4901",
@@ -184519,11 +185389,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4904",
@@ -184785,11 +185651,7 @@
      "double_check": "other names at the pin: fort chambly; check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4906",
@@ -185306,11 +186168,7 @@
      "double_check": "other names at the pin: fortifications de quebec lhn poudriere de lesplanade est; lieu historique national des fortifications de quebec; site patrimonial du vieux quebec; check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4911",
@@ -185584,11 +186442,7 @@
      "double_check": "other names at the pin: lieu historique national du canada du canal de lachine; check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4917",
@@ -185874,11 +186728,7 @@
      "double_check": "WDPA (last resort): no official layer had a record; approximate only, a person must check (W-10); name or pin only: read the agency map"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4918",
@@ -186673,11 +187523,7 @@
      "double_check": "other names at the pin: lieu historique national des forts et chateaux saint louis promenade des gouverneurs; saint louis forts and chateaux; check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4791",
@@ -189940,11 +190786,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4891",
@@ -194624,12 +195466,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-2335",
@@ -197287,12 +198124,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-12488",
@@ -197558,12 +198390,7 @@
      "double_check": "other names at the pin: columbia basin wildlife area; upland restoration; check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-13392",
@@ -197806,7 +198633,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -197882,12 +198708,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-13396",
@@ -197962,7 +198783,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -198038,12 +198858,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-13398",
@@ -198116,12 +198931,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-13399",
@@ -198194,12 +199004,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-13419",
@@ -198447,12 +199252,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-13441",
@@ -198700,12 +199500,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-13516",
@@ -198955,7 +199750,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -199236,12 +200030,7 @@
      "double_check": "name or pin only: read the agency map"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-3128",
@@ -202815,7 +203604,6 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
     "record_link": "not checked: not read (time budget used up; the next run reads it)",
     "source_url": "not checked: not read (time budget used up; the next run reads it)"
    }
@@ -205626,12 +206414,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-5896",
@@ -205926,12 +206709,7 @@
      "double_check": "other names at the pin: trois rivieres post office; check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4842",
@@ -206442,12 +207220,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4794",
