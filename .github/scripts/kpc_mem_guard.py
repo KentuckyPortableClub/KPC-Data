@@ -5,7 +5,9 @@ nothing for 30 minutes and the runner got a shutdown signal; the whole southeast
     python3 kpc_mem_guard.py [--label TEXT] -- COMMAND ...
     shell: python3 kpcdata/.github/scripts/kpc_mem_guard.py -- bash -e {0}      (a workflow step's own shell: the whole step is guarded)
 
-Runs COMMAND as a child (its own process group) and watches it from OUTSIDE (standard library, Linux /proc only):
+Runs COMMAND as a child (its own process group) and watches it from OUTSIDE, standard library only. It reads Linux /proc when
+it runs on Linux and asks Windows itself when it runs on Windows (KPC owner, 2026-11-16: the owner's PC runs the 2-fers now, and
+this guard used preexec_fn, which Windows has not got, so every one of the 65 areas stopped before it started):
   - every KPC_MEM_GUARD_SAMPLE_S (2) seconds: the resident memory of the child's whole process tree, and what the SYSTEM still has
     (MemAvailable in /proc/meminfo, and the cgroup's room when the job runs under a cgroup memory limit): the runner dies when the
     machine runs out, not when one process reaches a number;
@@ -18,7 +20,10 @@ Runs COMMAND as a child (its own process group) and watches it from OUTSIDE (sta
     nothing is saved by the stopped pass), then SIGKILL after KPC_MEM_GUARD_GRACE_S (30) seconds, or at once when the system falls
     under half the floor. Exit code 86, one ::error line, one line in the step summary and one line in KPC_MEM_STOP_FILE
     (default $RUNNER_TEMP/kpc-mem-stop.txt) for the workflow.
-  - the kernel backstop: the child (and everything it starts) gets oom_score_adj 1000, so if a spike between two samples empties the
+  - on Windows: the memory figures come from GlobalMemoryStatusEx and the tree from Win32_Process (working set), the child is
+    started in its own process group, a stop is asked for with taskkill and then forced with taskkill /F, and there is no kernel
+    backstop to lean on (Windows has none), so the floor does the work. Everything else reads the same.
+  - the kernel backstop (Linux): the child (and everything it starts) gets oom_score_adj 1000, so if a spike between two samples empties the
     machine, the kernel's out-of-memory killer takes the 2-fer process first, never the runner agent. Raising one's own score needs no
     privilege. A kernel kill of the child is reported as a memory stop too (the oom_kill count in /proc/vmstat went up): exit 86.
     NOT used, on purpose: RLIMIT_AS / ulimit -v. kpc_fers.py's pair test (find_spots, 'except Exception' around area_spots /
@@ -35,6 +40,77 @@ import time
 
 STOP_CODE = 86
 MB = 1048576.0
+WINDOWS = os.name == 'nt'
+
+
+# ---------------------------------------------------------------- Windows (KPC owner, 2026-11-16)
+def win_system():
+    """(total MB, available MB, swap used MB) from Windows itself. GlobalMemoryStatusEx needs nothing installed."""
+    import ctypes
+
+    class MS(ctypes.Structure):
+        _fields_ = [('dwLength', ctypes.c_ulong), ('dwMemoryLoad', ctypes.c_ulong),
+                    ('ullTotalPhys', ctypes.c_ulonglong), ('ullAvailPhys', ctypes.c_ulonglong),
+                    ('ullTotalPageFile', ctypes.c_ulonglong), ('ullAvailPageFile', ctypes.c_ulonglong),
+                    ('ullTotalVirtual', ctypes.c_ulonglong), ('ullAvailVirtual', ctypes.c_ulonglong),
+                    ('ullAvailExtendedVirtual', ctypes.c_ulonglong)]
+    m = MS(); m.dwLength = ctypes.sizeof(MS)
+    if not ctypes.windll.kernel32.GlobalMemoryStatusEx(ctypes.byref(m)):
+        return 0.0, 0.0, 0.0
+    phys_used = m.ullTotalPhys - m.ullAvailPhys
+    page_used = m.ullTotalPageFile - m.ullAvailPageFile
+    return m.ullTotalPhys / MB, m.ullAvailPhys / MB, max(0.0, (page_used - phys_used) / MB)
+
+
+_WIN_SNAP = {'t': 0.0, 'procs': {}}
+
+
+def win_processes(ttl=1.0, now=time.monotonic):
+    """{pid: (ppid, working set bytes)} for every process, kept for `ttl` seconds so one sample asks Windows once."""
+    if now() - _WIN_SNAP['t'] < ttl and _WIN_SNAP['procs']:
+        return _WIN_SNAP['procs']
+    cmd = ['powershell', '-NoProfile', '-NonInteractive', '-Command',
+           'Get-CimInstance Win32_Process | ForEach-Object '
+           '{ "{0} {1} {2}" -f $_.ProcessId, $_.ParentProcessId, $_.WorkingSetSize }']
+    out = ''
+    try:
+        out = subprocess.run(cmd, capture_output=True, text=True, timeout=30).stdout or ''
+    except Exception:  # noqa: BLE001  the guard must never be what stops a run
+        pass
+    procs = {}
+    for ln in out.splitlines():
+        bits = ln.split()
+        if len(bits) == 3:
+            try: procs[int(bits[0])] = (int(bits[1]), int(bits[2]))
+            except ValueError: continue
+    if procs:
+        _WIN_SNAP['t'], _WIN_SNAP['procs'] = now(), procs
+    return procs
+
+
+def win_tree(root):
+    """(pids of root and every descendant, {pid: (ppid, 0, 'R', 0)} in the shape the Linux side uses)"""
+    procs = win_processes()
+    kids = {}
+    for pid, (ppid, _rss) in procs.items(): kids.setdefault(ppid, []).append(pid)
+    out, todo = set(), [root]
+    while todo:
+        p = todo.pop()
+        if p in out: continue
+        out.add(p); todo += kids.get(p, [])
+    return out, {p: (procs[p][0], 0, 'R', 0) for p in out if p in procs}
+
+
+def win_rss_mb(pids):
+    procs = win_processes()
+    return sum(procs[p][1] for p in pids if p in procs) / MB
+
+
+def win_stop(pid, hard=False):
+    """Ask the whole tree to stop (taskkill), or force it (taskkill /F). Windows has no SIGINT to send to a group."""
+    cmd = ['taskkill', '/PID', str(pid), '/T'] + (['/F'] if hard else [])
+    try: subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+    except Exception: pass  # noqa: BLE001
 
 
 def _num(v, d):
@@ -86,6 +162,7 @@ def cgroup_room():
 
 def system():
     """(MemTotal MB, available MB, swap used MB): available = the smaller of MemAvailable and the cgroup's room."""
+    if WINDOWS: return win_system()
     m = meminfo()
     av = m.get('MemAvailable', 0.0)
     cg = cgroup_room()
@@ -103,6 +180,7 @@ def _stat(pid):
 
 def tree(root, pgid=None):
     """Pids of root and every descendant, plus any process still in the child's process group (a grandchild whose parent died)."""
+    if WINDOWS: return win_tree(root)
     kids, info = {}, {}
     for d in os.listdir('/proc'):
         if not d.isdigit(): continue
@@ -123,6 +201,7 @@ TICK = os.sysconf('SC_CLK_TCK') if hasattr(os, 'sysconf') else 100
 
 
 def rss_mb(pids):
+    if WINDOWS: return win_rss_mb(pids)
     t = 0
     for p in pids:
         try: t += int(open(f'/proc/{p}/statm').read().split()[1])
@@ -131,7 +210,8 @@ def rss_mb(pids):
 
 
 def pressure():
-    """'some avg10' of /proc/pressure/memory (percent of time tasks waited on memory), or None."""
+    """'some avg10' of /proc/pressure/memory (percent of time tasks waited on memory), or None. Windows has no such figure."""
+    if WINDOWS: return None
     try:
         for ln in open('/proc/pressure/memory'):
             if ln.startswith('some'):
@@ -141,6 +221,7 @@ def pressure():
 
 
 def oom_kills():
+    if WINDOWS: return None   # Windows has no out-of-memory killer to count
     try:
         for ln in open('/proc/vmstat'):
             if ln.startswith('oom_kill '): return int(ln.split()[1])
@@ -149,7 +230,10 @@ def oom_kills():
 
 
 def what_pass(pids):
-    """'pass 2' when a process in the tree runs with PASS=2 in its environment (kpc_fers.py), else ''."""
+    """'pass 2' when a process in the tree runs with PASS=2 in its environment (kpc_fers.py), else ''. Linux only: on Windows a
+    process's environment is not readable from outside without more privilege than this guard asks for, and the runner already
+    names the pass in the log file it writes to."""
+    if WINDOWS: return ''
     best = ''
     for p in sorted(pids):
         try: env = open(f'/proc/{p}/environ', 'rb').read().split(b'\0')
@@ -192,7 +276,8 @@ def fmt(x): return f'{x:,.0f}'
 def run(cmd, env=os.environ, sample=None, beat=None, grace=None, read_system=None, read_rss=None, now=time.monotonic):
     """Start cmd, watch it, return the exit code (STOP_CODE after a memory stop). read_system() -> (total, avail, swap) and
     read_rss(pids) -> MB can be injected (tests)."""
-    sample = sample if sample is not None else _num(env.get('KPC_MEM_GUARD_SAMPLE_S'), 2.0)
+    # Windows is asked through one PowerShell call a sample, so it is read a little less often than Linux /proc
+    sample = sample if sample is not None else _num(env.get('KPC_MEM_GUARD_SAMPLE_S'), 5.0 if WINDOWS else 2.0)
     beat = beat if beat is not None else _num(env.get('KPC_MEM_GUARD_BEAT_S'), 60.0)
     grace = grace if grace is not None else _num(env.get('KPC_MEM_GUARD_GRACE_S'), 30.0)
     read_system = read_system or system
@@ -210,15 +295,21 @@ def run(cmd, env=os.environ, sample=None, beat=None, grace=None, read_system=Non
         except OSError: pass
     oom0 = oom_kills()
     t0 = now()
-    p = subprocess.Popen(cmd, preexec_fn=pre, start_new_session=True)
+    if WINDOWS:
+        # Windows has no preexec_fn and no process groups to signal: its own group flag, and taskkill /T for the tree.
+        p = subprocess.Popen(cmd, creationflags=getattr(subprocess, 'CREATE_NEW_PROCESS_GROUP', 0))
+    else:
+        p = subprocess.Popen(cmd, preexec_fn=pre, start_new_session=True)
     pgid = p.pid
 
-    def fwd(sig, _f):   # the runner cancels a step with SIGINT / SIGTERM to this process: pass it on to the guarded group
-        try: os.killpg(pgid, sig)
-        except OSError: pass
+    def fwd(sig, _f):   # the runner cancels a step with SIGINT / SIGTERM to this process: pass it on to the guarded child
+        if WINDOWS: win_stop(pgid, hard=False)
+        else:
+            try: os.killpg(pgid, sig)
+            except OSError: pass
     for s in (signal.SIGINT, signal.SIGTERM):
         try: signal.signal(s, fwd)
-        except (ValueError, OSError): pass
+        except (ValueError, OSError, AttributeError): pass
 
     peak, last_beat, cpu0, stop, stop_t, killed, why = 0.0, t0, None, None, None, False, ''
     while True:
@@ -231,7 +322,8 @@ def run(cmd, env=os.environ, sample=None, beat=None, grace=None, read_system=Non
         t = now()
         if t - last_beat >= beat:
             cpu = sum(info[q][3] for q in pids if q in info) / float(TICK)
-            used = '' if cpu0 is None else f', CPU {cpu - cpu0:.0f} s in the last {t - last_beat:.0f} s'
+            # Windows does not hand the CPU seconds of a tree to this guard, so the line leaves that out rather than printing 0
+            used = '' if (cpu0 is None or WINDOWS) else f', CPU {cpu - cpu0:.0f} s in the last {t - last_beat:.0f} s'
             states = ''.join(sorted({info[q][2] for q in pids if q in info}))
             psi = pressure()
             say(f'memory guard: {name} {what_pass(pids)}'.rstrip() + f': {(t - t0) / 60:.0f} min, RSS {fmt(rss)} MB ({len(pids)} processes, '
@@ -241,29 +333,40 @@ def run(cmd, env=os.environ, sample=None, beat=None, grace=None, read_system=Non
         if on and stop is None and (rss > lim or avail < floor):
             why = (f'the step passed {fmt(lim)} MB' if rss > lim else f'the machine had only {fmt(avail)} MB left (floor {fmt(floor)} MB)')
             stop = (rss, avail, what_pass(pids)); stop_t = t
-            say(f'memory guard: {name}: {why} (RSS {fmt(rss)} MB): asking it to stop (SIGINT), hard stop in {grace:.0f} s')
-            try: os.killpg(pgid, signal.SIGINT)
-            except OSError: pass
-            for q in pids:
-                try: os.kill(q, signal.SIGINT)
+            how = 'taskkill' if WINDOWS else 'SIGINT'
+            say(f'memory guard: {name}: {why} (RSS {fmt(rss)} MB): asking it to stop ({how}), hard stop in {grace:.0f} s')
+            if WINDOWS:
+                win_stop(pgid, hard=False)
+            else:
+                try: os.killpg(pgid, signal.SIGINT)
                 except OSError: pass
+                for q in pids:
+                    try: os.kill(q, signal.SIGINT)
+                    except OSError: pass
         elif stop is not None and not killed and (t - stop_t >= grace or avail < floor / 2):
-            say(f'memory guard: {name}: still running {t - stop_t:.0f} s after the request (available {fmt(avail)} MB): killed (SIGKILL)')
+            say(f'memory guard: {name}: still running {t - stop_t:.0f} s after the request (available {fmt(avail)} MB): '
+                f'killed ({"taskkill /F" if WINDOWS else "SIGKILL"})')
             killed = True
-            for q in pids:
-                try: os.kill(q, signal.SIGKILL)
+            if WINDOWS:
+                win_stop(pgid, hard=True)
+            else:
+                for q in pids:
+                    try: os.kill(q, signal.SIGKILL)
+                    except OSError: pass
+                try: os.killpg(pgid, signal.SIGKILL)
                 except OSError: pass
-            try: os.killpg(pgid, signal.SIGKILL)
-            except OSError: pass
         time.sleep(sample)
     # nothing of the guarded group may outlive it (a grandchild whose parent already exited)
     left, _ = tree(p.pid, pgid)
-    for q in left - {p.pid}:
-        try: os.kill(q, signal.SIGKILL)
-        except OSError: pass
+    if WINDOWS:
+        if left - {p.pid}: win_stop(pgid, hard=True)
+    else:
+        for q in left - {p.pid}:
+            try: os.kill(q, signal.SIGKILL)
+            except OSError: pass
     code = rc if rc >= 0 else 128 - rc
     oom1 = oom_kills()
-    if stop is None and rc == -signal.SIGKILL and oom0 is not None and oom1 is not None and oom1 > oom0:
+    if stop is None and rc == -getattr(signal, 'SIGKILL', 9) and oom0 is not None and oom1 is not None and oom1 > oom0:
         stop, why = (peak, read_system()[1], ''), 'the kernel ran out of memory and killed it (oom_kill in /proc/vmstat went up)'
     if stop is None:
         say(f'memory guard: {name}: finished with exit {code}; peak {fmt(peak)} MB of the {fmt(lim)} MB limit')
