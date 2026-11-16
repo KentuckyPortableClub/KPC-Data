@@ -1,65 +1,65 @@
-# Spot check: all kinds (20 random rows of 12442)
+# Spot check: all kinds (20 random rows of 12488)
 
 For chat 11: open each link and say YES / NO. The engine decides nothing.
 
-## US-5973 Salt Creek State Waterfowl Management Area (US-UT)
+## CA-2196 Place Émilie-Gamelin Recreation Park (CA-QC)
 - status: candidate
-- tier: T-4
+- tier: T-3
 - band: WEAK
-- record_name: Salt Creek WMA
-- url: https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0?f=html
-- record_link: https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0/query?where=OBJECTID%3D206&outFields=%2A&f=html
-- source_url: https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0/query?geometry=-112.246%2C41.634&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 0
-- why: same land also in PACK-US-UT-land-381 'Salt Creek WMA', Q-1474 'Salt Lake', Q-1472 '': merged, counted once; record 'Salt Creek WMA' (PACK-US-UT-land-351); pin inside; about 5886.7 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: weak
-- answer: 
-
-## CA-5052 Parc Nature de Pointe-aux-Outardes Regional Park (CA-QC)
-- status: candidate
-- tier: T-2
-- band: WEAK
-- record_name: Municipalité de Pointe-aux-Outardes
-- url: https://geo.environnement.gouv.qc.ca/donnees/rest/services/Biodiversite/Aires_protegees/MapServer/23?f=html
-- record_link: https://geo.environnement.gouv.qc.ca/donnees/rest/services/Biodiversite/Aires_protegees/MapServer/23/query?where=OBJECTID%3D5534&outFields=%2A&f=html
-- source_url: https://geo.environnement.gouv.qc.ca/donnees/rest/services/Biodiversite/Aires_protegees/MapServer/23/query?geometry=-68.4513%2C49.0422&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 0
-- why: record 'Municipalité de Pointe-aux-Outardes' (PACK-CA-QC-park-447); pin inside; about 226.0 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
-- answer: 
-
-## US-12988 North Nehalem State Fish Hatchery (US-OR)
-- status: candidate
-- tier: T-4
-- band: WEAK
-- record_name: North Fork Nehalem Park
-- url: https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0?f=html
-- record_link: https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0/query?where=OBJECTID%3D2418&outFields=%2A&f=html
-- source_url: https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0/query?geometry=-123.772%2C45.8123&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 0
-- why: record 'North Fork Nehalem Park' (PACK-US-OR-park-322); pin inside; about 2.8 acres; Rule G: LIKELY (names overlap); size unknown; confidence: weak
-- answer: 
-
-## CA-5010 Parc René-Lévesque Regional Park (CA-QC)
-- status: found
-- tier: T-2
-- band: STRONG
-- record_name: René-Lévesque
+- record_name: Émilie-Gamelin
 - url: https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0?f=html
-- record_link: https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0/query?where=OBJECTID%3D2194&outFields=%2A&f=html
-- source_url: https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0/query?geometry=-73.6712%2C45.429&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_link: https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0/query?where=OBJECTID%3D1459&outFields=%2A&f=html
+- source_url: https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0/query?geometry=-73.5601%2C45.5151&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: record 'René-Lévesque' (Q-1819); pin inside; about 43.1 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
+- why: record 'Émilie-Gamelin' (Q-1819); pin inside; about 2.3 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
-## CA-4896 Battle of the Chateauguay National Historic Site (CA-QC)
+## US-10302 Atherton Meadows State Wildlife Habitat Management Area (US-VT)
 - status: candidate
-- tier: T-2
+- tier: T-3
 - band: WEAK
-- record_name: Battle of the Châteauguay National Historic Site CNPA
-- url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4?f=html
-- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D2042&outFields=%2A&f=html
-- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-73.929%2C45.1587&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_name: Atherton Meadows WMA
+- url: https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38?f=html
+- record_link: https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38/query?where=OBJECTID%3D279&outFields=%2A&f=html
+- source_url: https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38/query?geometry=-72.9111%2C42.7669&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: record 'Battle of the Châteauguay National Historic Site CNPA' (Q-1781); pin inside; about 3.3 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- why: record 'Atherton Meadows WMA' (PACK-US-VT-preserve-362); pin inside; about 1035.9 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- answer: 
+
+## US-11090 Kamas Utah State Fish Hatchery (US-UT)
+- status: candidate
+- tier: T-3
+- band: WEAK
+- record_name: Kamas Hatchery
+- url: https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0?f=html
+- record_link: https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0/query?where=OBJECTID%3D107&outFields=%2A&f=html
+- source_url: https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0/query?geometry=-111.228%2C40.6238&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 0
+- why: record 'Kamas Hatchery' (PACK-US-UT-land-351); pin inside; about 74.6 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- answer: 
+
+## CA-1000 Parc-nature du Ruisseau-De Montigny Nature Park (CA-QC)
+- status: candidate
+- tier: T-3
+- band: WEAK
+- record_name: Ruisseau-De Montigny
+- url: https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0?f=html
+- record_link: https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0/query?where=OBJECTID%3D268&outFields=%2A&f=html
+- source_url: https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0/query?geometry=-73.6043%2C45.6127&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 117
+- why: record 'Ruisseau-De Montigny' (Q-1819); pin 117 m from the edge; about 26.8 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: likely
+- answer: 
+
+## CA-4842 Marconi National Historic Site (CA-NS)
+- status: candidate
+- tier: T-3
+- band: WEAK
+- record_name: Marconi Wireless Station
+- url: https://novarocmaps.novascotia.ca/arcgis/rest/services/NovaRoc/MapServer/29?f=html
+- record_link: https://novarocmaps.novascotia.ca/arcgis/rest/services/NovaRoc/MapServer/29/query?where=OBJECTID%3D26&outFields=%2A&f=html
+- source_url: https://novarocmaps.novascotia.ca/arcgis/rest/services/NovaRoc/MapServer/29/query?geometry=-59.9528%2C46.211&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 8
+- why: record 'Marconi Wireless Station' (PACK-CA-NS-land-66); pin 8 m from the edge; about 4.1 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
 ## GB-1191 Denbigh Moors (Mynydd Hiraethog) Historic Site (GB)
@@ -86,28 +86,28 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: record 'GORDON-RICHMOND EST (PT)' (WB-WORLD-541); pin inside; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
-## CA-4918 Pointe-au-Père Lighthouse National Historic Site (CA-QC)
+## CA-4906 57 63 St. Louis Street National Historic Site (CA-QC)
 - status: candidate
 - tier: T-3
 - band: WEAK
-- record_name: Pointe-au-Père Lighthouse
+- record_name: 57-63 St. Louis Street
 - url: https://services.arcgis.com/As5CFN3ThbQpy8Ph/ArcGIS/rest/services/ParksCanadaRevised/FeatureServer/0?f=html
-- record_link: https://services.arcgis.com/As5CFN3ThbQpy8Ph/ArcGIS/rest/services/ParksCanadaRevised/FeatureServer/0/query?where=OBJECTID%3D120&outFields=%2A&f=html
-- source_url: https://services.arcgis.com/As5CFN3ThbQpy8Ph/ArcGIS/rest/services/ParksCanadaRevised/FeatureServer/0/query?geometry=-68.4695%2C48.5165&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 114
-- why: record 'Pointe-au-Père Lighthouse' (Q-1371); pin 114 m from the edge; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: likely
+- record_link: https://services.arcgis.com/As5CFN3ThbQpy8Ph/ArcGIS/rest/services/ParksCanadaRevised/FeatureServer/0/query?where=OBJECTID%3D1&outFields=%2A&f=html
+- source_url: https://services.arcgis.com/As5CFN3ThbQpy8Ph/ArcGIS/rest/services/ParksCanadaRevised/FeatureServer/0/query?geometry=-71.2086%2C46.8109&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 18
+- why: record '57-63 St. Louis Street' (Q-1371); pin 18 m from the edge; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: likely
 - answer: 
 
-## US-4854 DuPont State Recreational Forest State Forest (US-NC)
+## CA-0831 Inuujarvik Territorial Park (CA-NU)
 - status: found
 - tier: T-2
 - band: STRONG
-- record_name: Dupont State Forest
-- url: https://ncnhde.natureserve.org/arcgis/rest/services/NC_Public/Managed_Areas/MapServer/0?f=html
-- record_link: https://ncnhde.natureserve.org/arcgis/rest/services/NC_Public/Managed_Areas/MapServer/0/query?where=OBJECTID%3D3364&outFields=%2A&f=html
-- source_url: https://ncnhde.natureserve.org/arcgis/rest/services/NC_Public/Managed_Areas/MapServer/0/query?geometry=-82.6025%2C35.1903&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_name: Inuujaarvik Territorial Park
+- url: https://services.aadnc-aandc.gc.ca/arcgis/rest/services/nms20/nms/MapServer/21?f=html
+- record_link: https://services.aadnc-aandc.gc.ca/arcgis/rest/services/nms20/nms/MapServer/21/query?where=OBJECTID%3D648&outFields=%2A&f=html
+- source_url: https://services.aadnc-aandc.gc.ca/arcgis/rest/services/nms20/nms/MapServer/21/query?geometry=-96.0506%2C64.317&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: same land also in PACK-US-NC-preserve-289 'Dupont State Forest Dedicated Nature Preserve', PACK-US-NC-preserve-289 'NC Land and Water Fund Project', PACK-US-NC-preserve-289 'NC Division of Mitigation Services Easement': merged, counted once; record 'Dupont State Forest' (PACK-US-NC-preserve-289); pin inside; about 12468.6 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
+- why: record 'Inuujaarvik Territorial Park' (PACK-CA-NU-park-389); pin inside; about 2.8 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
 - answer: 
 
 ## GB-4151 Riddings Country Park (GB)
@@ -134,17 +134,16 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: same land also in PACK-US-IN-land-387 'Mississinewa Lake': merged, counted once; record 'Mississinewa Lake' (PACK-US-IN-land-191); pin inside; about 797.5 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
-## CA-1922 Banc-des-AmÃ©ricains Marine Nature Reserve (CA-QC)
+## CA-4907 Fort Ste. Therese National Historic Site (CA-QC)
 - status: candidate
 - tier: T-3
 - band: WEAK
-- record_name: Banc-des-Américains Marine Protected Area
-- url: https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1?f=html
-- record_link: https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1/query?where=OBJECTID%3D429223&outFields=%2A&f=html
-- source_url: https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1/query?geometry=-64.0352%2C48.6091&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- label: WDPA (last resort)
-- pin_m: 0
-- why: same land also in WDPA-last-resort-WDPA_v0 'Proposed Banc-des-Américains Aquatic Reserve': merged, counted once; record 'Banc-des-Américains Marine Protected Area' (WDPA-last-resort-WDPA_v0); pin inside; about 247126.6 acres; Rule G: LIKELY (names overlap); size unknown; confidence: weak
+- record_name: Fort Ste. Thérèse
+- url: https://services.arcgis.com/As5CFN3ThbQpy8Ph/ArcGIS/rest/services/ParksCanadaRevised/FeatureServer/0?f=html
+- record_link: https://services.arcgis.com/As5CFN3ThbQpy8Ph/ArcGIS/rest/services/ParksCanadaRevised/FeatureServer/0/query?where=OBJECTID%3D67&outFields=%2A&f=html
+- source_url: https://services.arcgis.com/As5CFN3ThbQpy8Ph/ArcGIS/rest/services/ParksCanadaRevised/FeatureServer/0/query?geometry=-73.2601%2C45.3974&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 25
+- why: record 'Fort Ste. Thérèse' (Q-1371); pin 25 m from the edge; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: likely
 - answer: 
 
 ## CA-5052 Parc Nature de Pointe-aux-Outardes Regional Park (CA-QC)
@@ -183,16 +182,16 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: record 'Round Lake Wetland Nature Preserve' (PACK-US-IN-land-191); pin inside; about 138.0 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
-## US-4162 Mounds on Brookville Lake State Recreation Area (US-IN)
+## US-12016 Round Lake State Nature Preserve (US-IN)
 - status: candidate
-- tier: T-3
+- tier: T-2
 - band: WEAK
-- record_name: Brookville Lake
+- record_name: Round Lake Wetland Nature Preserve
 - url: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0?f=html
-- record_link: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?where=OBJECTID%3D3170&outFields=%2A&f=html
-- source_url: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?geometry=-84.9633%2C39.4949&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_link: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?where=OBJECTID%3D5016&outFields=%2A&f=html
+- source_url: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?geometry=-86.6656%2C41.2362&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: same land also in PACK-US-IN-land-387 'Brookville Lake': merged, counted once; record 'Brookville Lake' (PACK-US-IN-land-191); pin inside; about 2734.6 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- why: record 'Round Lake Wetland Nature Preserve' (PACK-US-IN-land-191); pin inside; about 138.0 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
 ## CA-6253 Moirs Ltd. Power House Historic Site (CA-NS)
@@ -207,28 +206,28 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: record 'Moirs Ltd. Power House' (PACK-CA-NS-land-83); pin 6 m from the edge; about 3.3 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: likely
 - answer: 
 
-## US-6468 Iron Range OHV State Recreation Area (US-MN)
-- status: candidate
-- tier: T-3
-- band: WEAK
-- record_name: Iron Range Off-Highway Vehicle
+## US-13650 Darwin S. Meyers Wildlife Management Area (US-MN)
+- status: found
+- tier: T-2
+- band: STRONG
+- record_name: Darwin S. Myers WMA
 - url: https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0?f=html
-- record_link: https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D4192&outFields=%2A&f=html
-- source_url: https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?geometry=-92.4434%2C47.4825&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_link: https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D5368&outFields=%2A&f=html
+- source_url: https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?geometry=-92.2233%2C47.6364&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: record 'Iron Range Off-Highway Vehicle' (PACK-US-MN-forest-27); pin inside; about 3531.3 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- why: record 'Darwin S. Myers WMA' (PACK-US-MN-forest-27); pin inside; about 746.3 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
 - answer: 
 
-## US-5990 Timpie Springs State Waterfowl Management Area (US-UT)
+## CA-4988 Parc de la Promenade-Bellerive Regional Park (CA-QC)
 - status: candidate
 - tier: T-3
 - band: WEAK
-- record_name: Timpie Springs WMA
-- url: https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0?f=html
-- record_link: https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0/query?where=OBJECTID%3D231&outFields=%2A&f=html
-- source_url: https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0/query?geometry=-112.626%2C40.7538&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 0
-- why: same land also in PACK-US-UT-land-381 'Timpie Springs WMA', Q-1472 '', Q-1473 'West Desert': merged, counted once; record 'Timpie Springs WMA' (PACK-US-UT-land-351); pin inside; about 1402.9 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: likely
+- record_name: Promenade-Bellerive
+- url: https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0?f=html
+- record_link: https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0/query?where=OBJECTID%3D2204&outFields=%2A&f=html
+- source_url: https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0/query?geometry=-73.5095%2C45.5951&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 5
+- why: record 'Promenade-Bellerive' (Q-1819); pin 5 m from the edge; about 57.0 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: likely
 - answer: 
 
 ## US-5967 Ogden Bay State Waterfowl Management Area (US-UT)
