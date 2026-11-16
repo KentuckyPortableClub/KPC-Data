@@ -19,6 +19,9 @@ CLK = Clock(); K.time = CLK
 
 hits = {}
 MODE = {'robots': 'normal'}
+PAGES_R = {'page': b'<!DOCTYPE html><html><body><h1>Welcome</h1></body></html>',
+           'signin': b'<html><body><form action="/login"><input type="password" name="p"></form></body></html>',
+           'inpage': b'<html><pre>User-agent: *\nDisallow: /private/</pre></html>'}
 class H(http.server.BaseHTTPRequestHandler):
     def log_message(self, *a): pass
     def do_GET(self):
@@ -32,6 +35,8 @@ class H(http.server.BaseHTTPRequestHandler):
             if m == '404': self.send_response(404); self.end_headers(); return
             if m == 'denyall':
                 self.send_response(200); self.end_headers(); self.wfile.write(b"User-agent: *\nDisallow: /\n"); return
+            if m in PAGES_R:   # Nov 15: web pages at robots.txt (the store engine 3.6.2 rule)
+                self.send_response(200); self.send_header('Content-Type', 'text/html'); self.end_headers(); self.wfile.write(PAGES_R[m]); return
             if m == 'slowcd':
                 self.send_response(200); self.end_headers(); self.wfile.write(b"User-agent: *\nCrawl-delay: 500\n"); return
             self.send_response(int(m)); self.end_headers(); return
@@ -72,13 +77,23 @@ M2 = K.Manners('offline test, next night'); M2.gap = 0.1
 a3 = M2.get(B + '/a')
 check('next run: /a still from the disk cache and robots.txt not re-read', a3[0] == 200 and hits['/a'] == 1 and hits['/robots.txt'] == 1, f"robots reads {hits['/robots.txt']}")
 
-# --- A1: robots.txt that fails = do not fetch; never cached; only 404/410 = no rules ---
-for base, code in ((B503, '503'), (B403, '403'), (B401, '401')):
+# --- A1: robots.txt that fails = do not fetch; never cached. Nov 15 (KPC owner, 2026-11-15: one robots rule everywhere = the store
+# engine 3.6.2 rule): 404/410 = no file; 401 / 403 = "unavailable" = no rules (RFC 9309 2.3.1.3), read; 5xx = nothing fetched ---
+Mx = K.Manners('a1'); Mx.gap = 0.1; r = Mx.get(B503 + '/x')
+check('A1 robots.txt 503 -> nothing fetched (robots-unreadable), listed for a person', r[0] == 'robots-unreadable' and Mx.for_person and 'robots.txt answered 503' in Mx.for_person[-1][1], str((r[0], Mx.for_person)))
+for base, code in ((B403, '403'), (B401, '401')):
     Mx = K.Manners('a1'); Mx.gap = 0.1; r = Mx.get(base + '/x')
-    # Nov 10: a robots.txt 401 / 403 counts as a Disallow ('robots'); only 5xx / unreachable stays 'robots-unreadable' (next run)
-    want = 'robots' if code in ('401', '403') else 'robots-unreadable'
-    check(f'A1 robots.txt {code} -> nothing fetched ({want}), listed for a person', r[0] == want and Mx.for_person and 'robots.txt answered ' + code in Mx.for_person[-1][1], str((r[0], Mx.for_person)))
-check('A1 a failed robots.txt is never cached', not any(c['key'].startswith('robots ') and c['st'] not in (200, 404, 410) for c in cache_files()), str([(c['key'], c['st']) for c in cache_files()]))
+    check(f'A1 robots.txt {code} -> no rules (the store engine 3.6.2 rule): read, nobody asked to download', r[0] == 200 and not Mx.for_person, str((r[0], Mx.for_person)))
+check('A1 a failed robots.txt (5xx / unreachable) is never cached; a 401 / 403 is cached with its real status',
+      not any(c['key'].startswith('robots ') and (not isinstance(c['st'], int) or c['st'] >= 500 or c['st'] == 429) for c in cache_files())
+      and any(c['key'] == 'robots ' + B403 + '/robots.txt' and c['st'] == 403 for c in cache_files()), str([(c['key'], c['st']) for c in cache_files()]))
+BPG = serve(18811, 'page'); BSI = serve(18812, 'signin'); BIP = serve(18813, 'inpage')
+Mx = K.Manners('a1 page'); Mx.gap = 0.1
+check('A1 robots.txt is an ordinary web page (no robots line, same site) -> no rules: read', Mx.get(BPG + '/x')[0] == 200)
+r = Mx.get(BSI + '/x')
+check('A1 robots.txt is a sign-in page -> nothing fetched (robots), listed for a person (a hand download)', r[0] == 'robots' and any('sign-in' in w for _, w in Mx.for_person), str(Mx.for_person[-1:]))
+check('A1 robots.txt is a web page holding robots directives -> parsed: its Disallow obeyed, other paths read',
+      Mx.get(BIP + '/private/x')[0] == 'robots' and Mx.get(BIP + '/open')[0] == 200)
 Mx = K.Manners('a1 404'); Mx.gap = 0.1; r = Mx.get(B404 + '/x')
 check('A1 robots.txt 404 -> no rules, allowed; cached with the real status 404', r[0] == 200 and any(c['key'] == 'robots ' + B404 + '/robots.txt' and c['st'] == 404 for c in cache_files()))
 Mx = K.Manners('a1 dead'); Mx.gap = 0.1; r = Mx.get('http://127.0.0.1:18899/x')   # nothing listens there
@@ -147,18 +162,18 @@ K.time = CLK
 check('Q8 KEYED_API is only RIDB + NPS, /api/ only', K.KEYED_API == {'ridb.recreation.gov': '/api/', 'developer.nps.gov': '/api/'}, str(K.KEYED_API))
 
 # --- addendum (Nov 3, Quality spot-check slip): a queued request to a host whose robots.txt said no / could not be read is DROPPED ---
-BQ403 = serve(18809, '403'); BQNO = serve(18810, 'denyall')
+BQ403 = serve(18809, '503'); BQNO = serve(18810, 'denyall')
 for k in [k for k in list(hits) if k.startswith('/q/')]: hits.pop(k)
 MQ = K.Manners('queue'); MQ.gap = 0.1
 before = dict(hits)
 out = list(MQ.fetch_all([BQ403 + '/q/park/CA-2123', BQ403 + '/q/park/CA-2359', B + '/q/ok1', BQ403 + '/q/park/CA-2131']))
 st = [r[0] for _, r in out]
-check('Q-drop robots.txt 403: the first read and the 2 queued reads to that host make NO request',
-      not any(k.startswith('/q/park') for k in hits) and st[0] == 'robots' and st[1] == st[3] == 'robots', str(st))   # Nov 10: a 403 robots.txt = a Disallow
+check('Q-drop robots.txt 503: the first read and the 2 queued reads to that host make NO request',
+      not any(k.startswith('/q/park') for k in hits) and st[0] == 'robots-unreadable' and st[1] == st[3] == 'robots-unreadable', str(st))   # Nov 15: a 403 is no rules now; a 503 is dropped
 check('Q-drop another host in the same queue is still read', st[2] == 200 and hits.get('/q/ok1') == 1)
 check('Q-drop the dropped reads are listed for a person with the count', len(MQ.dropped) >= 2 and any('2 queued request(s) dropped' in w for _, w in MQ.for_person), str(MQ.for_person[-1:]))
 r = MQ.get(BQ403 + '/q/park/CA-9999')
-check('Q-drop a later single get() to the same host is dropped before any pacing (status robots: a 403 = a Disallow)', r[0] == 'robots' and '/q/park/CA-9999' not in hits and MQ.stat.get('dropped_queued', 0) >= 3)
+check('Q-drop a later single get() to the same host is dropped before any pacing (robots.txt could not be read)', r[0] in ('robots', 'robots-unreadable') and '/q/park/CA-9999' not in hits and MQ.stat.get('dropped_queued', 0) >= 3)
 out = list(MQ.fetch_all([BQNO + '/q/x1', BQNO + '/q/x2']))
 check('Q-drop robots.txt "Disallow: /" blocks the whole site: status robots, no request', [r[0] for _, r in out] == ['robots', 'robots'] and '/q/x1' not in hits and '/q/x2' not in hits)
 out = list(MQ.fetch_all([B + '/private/q1', B + '/q/ok2', B + '/q/ok3']))
