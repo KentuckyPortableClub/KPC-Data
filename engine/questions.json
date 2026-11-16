@@ -37380,6 +37380,67 @@
    "pass": 1
   },
   {
+   "ref": "US-5730",
+   "area": "US-IA",
+   "park": "Blood Run State Historic Site",
+   "agency_group": "iowaculture.gov",
+   "kind": "outline",
+   "date": "2026-11-07",
+   "status": "candidate",
+   "st": "US-IA",
+   "url": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9?f=html",
+   "service_url": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9",
+   "name_field": "AREA_NAME",
+   "agency": "Iowa DNR (wild, state GIS table)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-2",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 4852,
+   "record_name": "BLOOD RUN/ROCK ISLAND NATIONAL LANDMARK",
+   "layer": "PACK-US-IA-wildlife-254",
+   "record_link": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9/query?where=OBJECTID%3D4852&outFields=%2A&f=html",
+   "where": "OBJECTID=4852",
+   "pin_m": 0,
+   "acres_approx": 166.9,
+   "grade": "official",
+   "envelope": [
+    -96.5856,
+    43.46216,
+    -96.57173,
+    43.46923
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/9/query?geometry=-96.5761%2C43.4674&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-07",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-2 WEAK: 'BLOOD RUN/ROCK ISLAND NATIONAL LANDMARK' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-IA-wildlife-254",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "NAME SOLVED: agency calls it BLOOD RUN/ROCK ISLAND NATIONAL LANDMARK",
+    "why_this_record": "record 'BLOOD RUN/ROCK ISLAND NATIONAL LANDMARK' (PACK-US-IA-wildlife-254); pin inside; about 166.9 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1
+  },
+  {
    "ref": "US-13030",
    "area": "US-NV",
    "park": "Fox-Lake BLM Herd Management Area",
@@ -115002,6 +115063,488 @@
    "pass": 1
   },
   {
+   "ref": "GB-1005",
+   "area": "GB",
+   "park": "Afan Forest Park",
+   "agency_group": "unknown",
+   "kind": "outline",
+   "date": "2026-11-16",
+   "status": "candidate",
+   "st": "GB",
+   "url": "https://ogc.nature.scot/geoserver/ows?service=WFS&request=DescribeFeatureType&version=2.0.0&typeNames=scottishforestry%3ANational_Forest_Estate_Forest_Parks",
+   "service_url": "https://ogc.nature.scot/geoserver/ows",
+   "name_field": "FOREST_PAR",
+   "agency": "Scottish Forestry (National Forest Estate): Forest Park (GB-wide)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-2",
+   "band": "WEAK",
+   "step": "L0",
+   "record": "National_Forest_Estate_Forest_Parks.1",
+   "record_name": "Afan Argoed",
+   "layer": "WB-WORLD-287",
+   "record_link": "https://ogc.nature.scot/geoserver/ows?service=WFS&version=2.0.0&request=GetFeature&typeNames=scottishforestry%3ANational_Forest_Estate_Forest_Parks&count=25&bbox=51.67355253323751%2C-3.6560329032344847%2C51.67624746676249%2C-3.651687096765515%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326",
+   "where": "id=National_Forest_Estate_Forest_Parks.1",
+   "pin_m": 0,
+   "acres_approx": null,
+   "grade": "official",
+   "envelope": null,
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Traeth Lafan",
+     "layer": "GB-WLS-NRW_SSSI",
+     "tier": "T-5",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://ogc.nature.scot/geoserver/ows?service=WFS&version=2.0.0&request=GetFeature&typeNames=scottishforestry%3ANational_Forest_Estate_Forest_Parks&count=25&bbox=51.67355253323751%2C-3.6560329032344847%2C51.67624746676249%2C-3.651687096765515%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326",
+   "read_date": "2026-11-16",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-2 WEAK: 'Afan Argoed' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-GB-preserve-96",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-land-97",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-land-98",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-park-111",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-preserve-112",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-land-151",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-land-152",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-park-153",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-land-154",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-land-155",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-land-173",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-GB-park-174",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-land-175",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-preserve-176",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-preserve-177",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-land-178",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-forest-179",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-forest-180",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "GB-ENG-National_Parks_England",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "GB-ENG-Ramsar_England",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "GB-ENG-Millennium_Greens_England_Polygons",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "GB-WLS-NRW_NATIONAL_PARK",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "GB-WLS-NRW_NNR",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "GB-WLS-NRW_SSSI",
+      "gave": "hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "GB-SCT-nnr",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "GB-SCT-sssi",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "GB-SCT-National_Nature_Reserves_ArcGIS",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "GB-ENG-Doorstep_Greens_England",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "GB-WLS-country_parks",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "GB-WLS-GWC21_Area_of_Outstanding_Natural_Beauty",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "GB-SCT-cpk",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "GB-SCT-rp",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "GB-SCT-lnr",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "GB-SCT-sac",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "GB-SCT-spa",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "GB-SCT-ramsar",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-WORLD-220",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-WORLD-287",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "NAME SOLVED: agency calls it Afan Argoed",
+    "why_this_record": "record 'Afan Argoed' (WB-WORLD-287); pin inside; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "GB-1007",
+   "area": "GB",
+   "park": "Bryngarw Country Park",
+   "agency_group": "unknown",
+   "kind": "outline",
+   "date": "2026-11-16",
+   "status": "found",
+   "st": "GB",
+   "url": "https://datamap.gov.wales/geoserver/ows?service=WFS&request=DescribeFeatureType&version=2.0.0&typeNames=geonode%3Anrw_national_forest",
+   "service_url": "https://datamap.gov.wales/geoserver/ows",
+   "name_field": "site_name",
+   "agency": "Wales - National Forest for Wales sites (DataMapWales geonode:nrw_national_forest)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-2",
+   "band": "STRONG",
+   "step": "L0",
+   "record": "nrw_national_forest.118",
+   "record_name": "Parc Bryngarw",
+   "layer": "WB-WORLD-542",
+   "record_link": "https://datamap.gov.wales/geoserver/ows?service=WFS&version=2.0.0&request=GetFeature&typeNames=geonode%3Anrw_national_forest&count=25&bbox=51.55515253323751%2C-3.5829072421547337%2C51.55784746676249%2C-3.5785727578452664%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326",
+   "where": "id=nrw_national_forest.118",
+   "pin_m": 0,
+   "acres_approx": null,
+   "grade": "official",
+   "envelope": null,
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Ogwr",
+     "layer": "WB-WORLD-542",
+     "tier": "T-5",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://datamap.gov.wales/geoserver/ows?service=WFS&version=2.0.0&request=GetFeature&typeNames=geonode%3Anrw_national_forest&count=25&bbox=51.55515253323751%2C-3.5829072421547337%2C51.55784746676249%2C-3.5785727578452664%2Curn%3Aogc%3Adef%3Acrs%3AEPSG%3A%3A4326",
+   "read_date": "2026-11-16",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped",
+   "size_band": "unknown",
+   "why": "T-2 STRONG: 'Parc Bryngarw' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-GB-preserve-96",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-land-97",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-land-98",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-park-111",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-preserve-112",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-land-151",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-land-152",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-park-153",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-land-154",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-land-155",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-land-173",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-GB-park-174",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-land-175",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-preserve-176",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-preserve-177",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-land-178",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-forest-179",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-GB-forest-180",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "GB-ENG-National_Parks_England",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "GB-ENG-Ramsar_England",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "GB-ENG-Millennium_Greens_England_Polygons",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "GB-WLS-NRW_NATIONAL_PARK",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "GB-WLS-NRW_NNR",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "GB-WLS-NRW_SSSI",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "GB-SCT-nnr",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "GB-SCT-sssi",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "GB-SCT-National_Nature_Reserves_ArcGIS",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "GB-ENG-Doorstep_Greens_England",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "GB-WLS-country_parks",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "GB-WLS-GWC21_Area_of_Outstanding_Natural_Beauty",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "GB-SCT-cpk",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "GB-SCT-rp",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "GB-SCT-lnr",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "GB-SCT-sac",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "GB-SCT-spa",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "GB-SCT-ramsar",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-WORLD-220",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-WORLD-287",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-WORLD-291",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-WORLD-303",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-WORLD-377",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-WORLD-378",
+      "gave": "error (bad xml)"
+     },
+     {
+      "source": "WB-WORLD-524",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-WORLD-526",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-WORLD-527",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-WORLD-530",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-WORLD-531",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-WORLD-533",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-WORLD-536",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-WORLD-539",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-WORLD-540",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-WORLD-541",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-WORLD-542",
+      "gave": "hit (2 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Parc Bryngarw' (WB-WORLD-542); pin inside; Rule G: SURE (names equal once kind words are stripped); size unknown",
+    "confidence": {
+     "level": "sure",
+     "double_check": "name + pin inside; check the size against the agency page"
+    }
+   },
+   "pass": 1
+  },
+  {
    "ref": "US-13324",
    "area": "US-NV",
    "park": "Sparks State Historical Monument",
@@ -144969,10 +145512,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-13644",
@@ -145037,11 +145577,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-13645",
@@ -145106,11 +145642,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-13646",
@@ -145175,11 +145707,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-13647",
@@ -145391,11 +145919,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-13648",
@@ -145460,11 +145984,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-13649",
@@ -145529,11 +146049,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-13650",
@@ -145598,11 +146114,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-13651",
@@ -145667,11 +146179,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-6468",
@@ -146096,9 +146604,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "record_link": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "source_url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)"
    }
   },
   {
@@ -146294,9 +146802,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "record_link": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "source_url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)"
    }
   },
   {
@@ -147294,9 +147802,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (robots)",
+    "record_link": "not checked: blocked (robots)",
+    "source_url": "not checked: blocked (robots)"
    }
   },
   {
@@ -147492,9 +148000,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "record_link": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "source_url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)"
    }
   },
   {
@@ -147624,11 +148132,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-1922",
@@ -147802,9 +148306,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "record_link": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "source_url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)"
    }
   },
   {
@@ -148880,10 +149384,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-10200",
@@ -150644,9 +151145,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host resting: 3 strikes)",
+    "record_link": "not checked: blocked (host resting: 3 strikes)",
+    "source_url": "not checked: blocked (host resting: 3 strikes)"
    }
   },
   {
@@ -150866,9 +151367,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host resting: 3 strikes)",
+    "record_link": "not checked: blocked (host resting: 3 strikes)",
+    "source_url": "not checked: blocked (host resting: 3 strikes)"
    }
   },
   {
@@ -151082,10 +151583,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-7782",
@@ -152431,9 +152929,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "record_link": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "source_url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)"
    }
   },
   {
@@ -152966,9 +153464,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "record_link": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "source_url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)"
    }
   },
   {
@@ -153559,9 +154057,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "record_link": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "source_url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)"
    }
   },
   {
@@ -153645,9 +154143,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "record_link": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "source_url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)"
    }
   },
   {
@@ -153760,9 +154258,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "record_link": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "source_url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)"
    }
   },
   {
@@ -153857,9 +154355,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "record_link": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "source_url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)"
    }
   },
   {
@@ -153951,9 +154449,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "record_link": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "source_url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)"
    }
   },
   {
@@ -154724,10 +155222,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-1020",
@@ -155121,9 +155616,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "record_link": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)",
+    "source_url": "not checked: blocked (host rule: saved copies only or never contact; on the needs-download list)"
    }
   },
   {
@@ -155753,11 +156248,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-7955",
@@ -155826,11 +156317,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-7956",
@@ -155899,11 +156386,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-7957",
@@ -156148,11 +156631,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-7959",
@@ -156221,11 +156700,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-7960",
@@ -156495,11 +156970,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-7961",
@@ -156568,11 +157039,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-7962",
@@ -156842,12 +157309,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-7963",
@@ -157117,11 +157579,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-7965",
@@ -157190,11 +157648,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-7966",
@@ -162467,6 +162921,270 @@
    "pass": 1
   },
   {
+   "ref": "US-11193",
+   "area": "US-UT",
+   "park": "Desolation Gray Canyons of The Green River BLM Recreation Management Area",
+   "agency_group": "blm.gov",
+   "kind": "outline",
+   "date": "2026-11-16",
+   "status": "candidate",
+   "st": "US-UT",
+   "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0?f=html",
+   "service_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+   "name_field": "ACEC_NAME",
+   "agency": "BLM Areas of Critical Environmental Concern (national, 1,120) (land, state GIS table)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-6",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 1540,
+   "record_name": "Lower Green River",
+   "layer": "PACK-US-AK-land-215",
+   "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?where=OBJECTID%3D1540&outFields=%2A&f=html",
+   "where": "OBJECTID=1540",
+   "pin_m": 0,
+   "acres_approx": 6990.5,
+   "grade": "official",
+   "envelope": [
+    -109.92299,
+    39.80624,
+    -109.7368,
+    40.04581
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Bureau of Land Management",
+     "layer": "US-BLM-sma",
+     "tier": "T-6",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?geometry=-109.914%2C39.8394&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-16",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-6 WEAK: 'Lower Green River' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-UT-park-7",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-UT-park-8",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-UT-park-18",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-UT-trail-28",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-UT-trail-37",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-UT-land-40",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-trail-56",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-park-57",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-UT-land-351",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-UT-land-352",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-UT-land-353",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-UT-land-381",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-UT-trail-DPRTrails-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-AR-trail-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-AR-trail-3",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-AK-land-41",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-214",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-215",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 2 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 3 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "https://www.blm.gov/visit/desolation-gray-canyons-green-river",
+      "gave": "page read (fetch); 0 file candidates"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for US-UT in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official source was blocked (blocked is not not-found; retry first)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "same land also in US-BLM-sma 'Bureau of Land Management': merged, counted once; record 'Lower Green River' (PACK-US-AK-land-215); pin inside; about 6990.5 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "pass": 1
+  },
+  {
    "ref": "CA-4898",
    "area": "CA-QC",
    "park": "Carillon Barracks National Historic Site",
@@ -163197,11 +163915,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4913",
@@ -179469,10 +180183,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-10200",
@@ -205106,11 +205817,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4986",

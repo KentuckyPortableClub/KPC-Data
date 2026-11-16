@@ -1,125 +1,125 @@
-# Spot check: all kinds (20 random rows of 12534)
+# Spot check: all kinds (20 random rows of 12582)
 
 For chat 11: open each link and say YES / NO. The engine decides nothing.
 
-## CA-1000 Parc-nature du Ruisseau-De Montigny Nature Park (CA-QC)
-- status: candidate
-- tier: T-3
-- band: WEAK
-- record_name: Ruisseau-De Montigny
-- url: https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0?f=html
-- record_link: https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0/query?where=OBJECTID%3D268&outFields=%2A&f=html
-- source_url: https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0/query?geometry=-73.6043%2C45.6127&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 117
-- why: record 'Ruisseau-De Montigny' (Q-1819); pin 117 m from the edge; about 26.8 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: likely
-- answer: 
-
-## US-10301 Gale Meadows State Wildlife Habitat Management Area (US-VT)
-- status: candidate
-- tier: T-3
-- band: WEAK
-- record_name: Gale Meadows WMA
-- url: https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38?f=html
-- record_link: https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38/query?where=OBJECTID%3D200&outFields=%2A&f=html
-- source_url: https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38/query?geometry=-72.8645%2C43.1679&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 0
-- why: record 'Gale Meadows WMA' (PACK-US-VT-preserve-362); pin inside; about 867.9 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
-- answer: 
-
-## US-4441 Lahontan State Recreation Area (US-NV)
-- status: candidate
-- tier: T-3
-- band: WEAK
-- record_name: Lake Lahontan Recreation Area
-- url: https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0?f=html
-- record_link: https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0/query?where=OBJECTID%3D23&outFields=%2A&f=html
-- source_url: https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0/query?geometry=-119.057%2C39.4591&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 14
-- why: same land also in PACK-US-NV-land-305 'Lake Lahontan Recreation Area', PACK-US-NV-park-306 'Lake Lahontan Recreation Area': merged, counted once; record 'Lake Lahontan Recreation Area' (PACK-US-NV-land-303); pin 14 m from the edge; about 28888.0 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
-- answer: 
-
-## CA-0994 Parc Maisonneuve Regional Park (CA-QC)
-- status: candidate
-- tier: T-2
-- band: WEAK
-- record_name: Maisonneuve, Golf municipal de Montréal
-- url: https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0?f=html
-- record_link: https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0/query?where=OBJECTID%3D2122&outFields=%2A&f=html
-- source_url: https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0/query?geometry=-73.5548%2C45.5611&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 0
-- why: record 'Maisonneuve, Golf municipal de Montréal' (Q-1819); pin inside; about 154.4 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
-- answer: 
-
-## CA-5898 Fort Trois-Rivières National Historic Site (CA-QC)
-- status: candidate
-- tier: T-3
-- band: WEAK
-- record_name: Site patrimonial de Trois-Rivières
-- url: https://www.donneesquebec.ca/recherche/dataset/b35078ae-f1a6-4f9a-a9d2-b00244ae1e84/resource/059897d4-f927-4c30-b345-bf6810f2d00f/download/sites_declares_pg.geojson
-- record_link: https://www.donneesquebec.ca/recherche/dataset/b35078ae-f1a6-4f9a-a9d2-b00244ae1e84/resource/059897d4-f927-4c30-b345-bf6810f2d00f/download/sites_declares_pg.geojson
-- source_url: https://www.donneesquebec.ca/recherche/dataset/b35078ae-f1a6-4f9a-a9d2-b00244ae1e84/resource/059897d4-f927-4c30-b345-bf6810f2d00f/download/sites_declares_pg.geojson
-- pin_m: 0
-- why: same land also in PACK-CA-QC-land-394 'Trois-Rivières': merged, counted once; record 'Site patrimonial de Trois-Rivières' (PACK-CA-QC-land-393); pin inside; about 16.8 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
-- answer: 
-
-## GB-2469 Aberduna Nature Reserve (GB)
+## CA-0962 Parc Angrignon Regional Park (CA-QC)
 - status: found
 - tier: T-2
 - band: STRONG
-- record_name: Aberdunant
-- url: https://datamap.gov.wales/geoserver/ows?service=WFS&request=DescribeFeatureType&version=2.0.0&typeNames=inspire-nrw%3ANRW_SSSI
-- record_link: https://datamap.gov.wales/geoserver/ows?service=WFS&version=2.0.0&request=GetFeature&typeNames=inspire-nrw%3ANRW_SSSI&count=25&filter=%3Cfes%3AFilter%20xmlns%3Afes%3D%22http%3A%2F%2Fwww.opengis.net%2Ffes%2F2.0%22%3E%3Cfes%3APropertyIsLike%20wildCard%3D%22%2A%22%20singleChar%3D%22.%22%20escapeChar%3D%22%21%22%20matchCase%3D%22false%22%3E%3Cfes%3AValueReference%3Esssi_name%3C%2Ffes%3AValueReference%3E%3Cfes%3ALiteral%3E%2Aaberduna%2A%3C%2Ffes%3ALiteral%3E%3C%2Ffes%3APropertyIsLike%3E%3C%2Ffes%3AFilter%3E
-- source_url: https://datamap.gov.wales/geoserver/ows?service=WFS&version=2.0.0&request=GetFeature&typeNames=inspire-nrw%3ANRW_SSSI&count=25&filter=%3Cfes%3AFilter%20xmlns%3Afes%3D%22http%3A%2F%2Fwww.opengis.net%2Ffes%2F2.0%22%3E%3Cfes%3APropertyIsLike%20wildCard%3D%22%2A%22%20singleChar%3D%22.%22%20escapeChar%3D%22%21%22%20matchCase%3D%22false%22%3E%3Cfes%3AValueReference%3Esssi_name%3C%2Ffes%3AValueReference%3E%3Cfes%3ALiteral%3E%2Aaberduna%2A%3C%2Ffes%3ALiteral%3E%3C%2Ffes%3APropertyIsLike%3E%3C%2Ffes%3AFilter%3E
+- record_name: Angrignon
+- url: https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0?f=html
+- record_link: https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0/query?where=OBJECTID%3D1237&outFields=%2A&f=html
+- source_url: https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0/query?geometry=-73.6027%2C45.4446&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: record 'Aberdunant' (GB-WLS-NRW_SSSI); pin inside; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
+- why: record 'Angrignon' (Q-1819); pin inside; about 238.2 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
 - answer: 
 
-## GB-4030 Brook Park (GB)
-- status: candidate
-- tier: T-2
-- band: WEAK
-- record_name: Brook Cottage, Llangybi
-- url: https://datamap.gov.wales/geoserver/ows?service=WFS&request=DescribeFeatureType&version=2.0.0&typeNames=inspire-nrw%3ANRW_SSSI
-- record_link: https://datamap.gov.wales/geoserver/ows?service=WFS&version=2.0.0&request=GetFeature&typeNames=inspire-nrw%3ANRW_SSSI&count=25&filter=%3Cfes%3AFilter%20xmlns%3Afes%3D%22http%3A%2F%2Fwww.opengis.net%2Ffes%2F2.0%22%3E%3Cfes%3APropertyIsLike%20wildCard%3D%22%2A%22%20singleChar%3D%22.%22%20escapeChar%3D%22%21%22%20matchCase%3D%22false%22%3E%3Cfes%3AValueReference%3Esssi_name%3C%2Ffes%3AValueReference%3E%3Cfes%3ALiteral%3E%2Abrook%2A%3C%2Ffes%3ALiteral%3E%3C%2Ffes%3APropertyIsLike%3E%3C%2Ffes%3AFilter%3E
-- source_url: https://datamap.gov.wales/geoserver/ows?service=WFS&version=2.0.0&request=GetFeature&typeNames=inspire-nrw%3ANRW_SSSI&count=25&filter=%3Cfes%3AFilter%20xmlns%3Afes%3D%22http%3A%2F%2Fwww.opengis.net%2Ffes%2F2.0%22%3E%3Cfes%3APropertyIsLike%20wildCard%3D%22%2A%22%20singleChar%3D%22.%22%20escapeChar%3D%22%21%22%20matchCase%3D%22false%22%3E%3Cfes%3AValueReference%3Esssi_name%3C%2Ffes%3AValueReference%3E%3Cfes%3ALiteral%3E%2Abrook%2A%3C%2Ffes%3ALiteral%3E%3C%2Ffes%3APropertyIsLike%3E%3C%2Ffes%3AFilter%3E
-- pin_m: 0
-- why: record 'Brook Cottage, Llangybi' (GB-WLS-NRW_SSSI); pin inside; Rule G: LIKELY (names overlap); size unknown; confidence: likely
-- answer: 
-
-## CA-4904 Fort Chambly National Historic Site (CA-QC)
+## US-2810 Alderwood Wayside State Park (US-OR)
 - status: candidate
 - tier: T-3
 - band: WEAK
-- record_name: Lieu historique national du Fort-Chambly
+- record_name: Alderwood
+- url: https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_State_Parks/FeatureServer/0?f=html
+- record_link: https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_State_Parks/FeatureServer/0/query?where=OBJECTID%3D41&outFields=%2A&f=html
+- source_url: https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_State_Parks/FeatureServer/0/query?geometry=-123.424%2C44.154&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 0
+- why: same land also in PACK-US-OR-park-322 'Alderwood': merged, counted once; record 'Alderwood' (PACK-US-OR-land-206); pin inside; about 79.8 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- answer: 
+
+## US-11955 Genoa National Fish Hatchery (US-WI)
+- status: found
+- tier: T-1
+- band: STRONG
+- record_name: Genoa National Fish Hatchery
+- url: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWS_NWRS_HQ_PublicHuntUnits_view/FeatureServer/0?f=html
+- record_link: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWS_NWRS_HQ_PublicHuntUnits_view/FeatureServer/0/query?where=OBJECTID%3D1602&outFields=%2A&f=html
+- source_url: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWS_NWRS_HQ_PublicHuntUnits_view/FeatureServer/0/query?geometry=-91.219%2C43.5258&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 0
+- why: same land also in US-FWS-interest 'UPPER MISSISSIPPI RIVER NATIONAL WILDLIFE AND FISH REFUGE', US-FWS-nwrs 'UPPER MISSISSIPPI RIVER NATIONAL WILDLIFE AND FISH REFUGE': merged, counted once; record 'Genoa National Fish Hatchery' (US-FWS-huntunits); pin inside; about 159.8 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
+- answer: 
+
+## CA-2219 Parc Central Recreation Park (CA-QC)
+- status: candidate
+- tier: T-3
+- band: WEAK
+- record_name: Parc Central
+- url: https://services3.arcgis.com/qsNXG7LzoUbR4c1C/arcgis/rest/services/AireAmenagee/FeatureServer/0?f=html
+- record_link: https://services3.arcgis.com/qsNXG7LzoUbR4c1C/arcgis/rest/services/AireAmenagee/FeatureServer/0/query?where=OBJECTID%3D2&outFields=%2A&f=html
+- source_url: https://services3.arcgis.com/qsNXG7LzoUbR4c1C/arcgis/rest/services/AireAmenagee/FeatureServer/0/query?geometry=-71.9943%2C45.3549&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 5
+- why: same land also in Q-1820 'Parc Central': merged, counted once; record 'Parc Central' (Q-1820); pin 5 m from the edge; about 94.5 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: likely
+- answer: 
+
+## CA-4920 Sainte-Anne-de-Bellevue Canal National Historic Site (CA-QC)
+- status: found
+- tier: T-1
+- band: STRONG
+- record_name: Sainte-Anne-de-Bellevue Canal National Historic Site
 - url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4?f=html
-- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D1973&outFields=%2A&f=html
-- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-73.2778%2C45.4492&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 3
-- why: record 'Lieu historique national du Fort-Chambly' (Q-1781); pin 3 m from the edge; about 1.9 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: likely
+- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D4700&outFields=%2A&f=html
+- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-73.9566%2C45.4049&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 0
+- why: record 'Sainte-Anne-de-Bellevue Canal National Historic Site' (PACK-CA-NB-land-73); pin inside; about 11.5 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
 - answer: 
 
-## US-10787 Weinberg-King Scripps Unit State Park (US-IL)
+## GB-1191 Denbigh Moors (Mynydd Hiraethog) Historic Site (GB)
 - status: candidate
 - tier: T-3
 - band: WEAK
-- record_name: Weinberg-King
-- url: https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11?f=html
-- record_link: https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11/query?where=OBJECTID%3D306&outFields=%2A&f=html
-- source_url: https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11/query?geometry=-90.6406%2C40.0994&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_name: Mynydd Hiraethog
+- url: https://datamap.gov.wales/geoserver/ows?service=WFS&request=DescribeFeatureType&version=2.0.0&typeNames=inspire-nrw%3ANRW_SSSI
+- record_link: https://datamap.gov.wales/geoserver/ows?service=WFS&version=2.0.0&request=GetFeature&typeNames=inspire-nrw%3ANRW_SSSI&count=25&bbox=294128.0238415956%2C355957.32033365185%2C294435.1364743521%2C356263.7204355337%2CEPSG%3A27700
+- source_url: https://datamap.gov.wales/geoserver/ows?service=WFS&version=2.0.0&request=GetFeature&typeNames=inspire-nrw%3ANRW_SSSI&count=25&bbox=294128.0238415956%2C355957.32033365185%2C294435.1364743521%2C356263.7204355337%2CEPSG%3A27700
 - pin_m: 0
-- why: record 'Weinberg-King' (PACK-US-IL-wildlife-14); pin inside; about 2275.5 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- why: record 'Mynydd Hiraethog' (GB-WLS-NRW_SSSI); pin inside; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
-## GB-0982 The Bin Forest Country Park (GB)
+## GB-3954 Richmond Park (GB)
 - status: candidate
 - tier: T-2
 - band: WEAK
-- record_name: Bin Quarry
-- url: https://ogc.nature.scot/geoserver/protectedareas/wfs?service=WFS&request=DescribeFeatureType&version=2.0.0&typeNames=protectedareas%3Asssi
-- record_link: https://ogc.nature.scot/geoserver/protectedareas/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=protectedareas%3Asssi&count=25&filter=%3Cfes%3AFilter%20xmlns%3Afes%3D%22http%3A%2F%2Fwww.opengis.net%2Ffes%2F2.0%22%3E%3Cfes%3APropertyIsLike%20wildCard%3D%22%2A%22%20singleChar%3D%22.%22%20escapeChar%3D%22%21%22%20matchCase%3D%22false%22%3E%3Cfes%3AValueReference%3ENAME%3C%2Ffes%3AValueReference%3E%3Cfes%3ALiteral%3E%2Abin%2A%3C%2Ffes%3ALiteral%3E%3C%2Ffes%3APropertyIsLike%3E%3C%2Ffes%3AFilter%3E
-- source_url: https://ogc.nature.scot/geoserver/protectedareas/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=protectedareas%3Asssi&count=25&filter=%3Cfes%3AFilter%20xmlns%3Afes%3D%22http%3A%2F%2Fwww.opengis.net%2Ffes%2F2.0%22%3E%3Cfes%3APropertyIsLike%20wildCard%3D%22%2A%22%20singleChar%3D%22.%22%20escapeChar%3D%22%21%22%20matchCase%3D%22false%22%3E%3Cfes%3AValueReference%3ENAME%3C%2Ffes%3AValueReference%3E%3Cfes%3ALiteral%3E%2Abin%2A%3C%2Ffes%3ALiteral%3E%3C%2Ffes%3APropertyIsLike%3E%3C%2Ffes%3AFilter%3E
+- record_name: GORDON-RICHMOND EST (PT)
+- url: https://ogc.nature.scot/geoserver/wfs?service=WFS&request=DescribeFeatureType&version=2.0.0&typeNames=scottishforestry%3ANational_Forest_Estate_Ownership_Scotland
+- record_link: https://ogc.nature.scot/geoserver/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=scottishforestry%3ANational_Forest_Estate_Ownership_Scotland&count=25&filter=%3Cfes%3AFilter%20xmlns%3Afes%3D%22http%3A%2F%2Fwww.opengis.net%2Ffes%2F2.0%22%3E%3Cfes%3APropertyIsLike%20wildCard%3D%22%2A%22%20singleChar%3D%22.%22%20escapeChar%3D%22%21%22%20matchCase%3D%22false%22%3E%3Cfes%3AValueReference%3Etitle%3C%2Ffes%3AValueReference%3E%3Cfes%3ALiteral%3E%2Arichmond%2A%3C%2Ffes%3ALiteral%3E%3C%2Ffes%3APropertyIsLike%3E%3C%2Ffes%3AFilter%3E
+- source_url: https://ogc.nature.scot/geoserver/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=scottishforestry%3ANational_Forest_Estate_Ownership_Scotland&count=25&filter=%3Cfes%3AFilter%20xmlns%3Afes%3D%22http%3A%2F%2Fwww.opengis.net%2Ffes%2F2.0%22%3E%3Cfes%3APropertyIsLike%20wildCard%3D%22%2A%22%20singleChar%3D%22.%22%20escapeChar%3D%22%21%22%20matchCase%3D%22false%22%3E%3Cfes%3AValueReference%3Etitle%3C%2Ffes%3AValueReference%3E%3Cfes%3ALiteral%3E%2Arichmond%2A%3C%2Ffes%3ALiteral%3E%3C%2Ffes%3APropertyIsLike%3E%3C%2Ffes%3AFilter%3E
 - pin_m: 0
-- why: record 'Bin Quarry' (GB-SCT-sssi); pin inside; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- why: record 'GORDON-RICHMOND EST (PT)' (WB-WORLD-541); pin inside; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- answer: 
+
+## CA-4887 Sir John Johnson House National Historic Site (CA-ON)
+- status: found
+- tier: T-1
+- band: STRONG
+- record_name: Sir John Johnson House National Historic Site
+- url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4?f=html
+- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D4694&outFields=%2A&f=html
+- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-74.579%2C45.1449&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 0
+- why: record 'Sir John Johnson House National Historic Site' (PACK-CA-NB-land-73); pin inside; about 8.5 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
+- answer: 
+
+## US-10765 Millington Natural Area (US-MD)
+- status: found
+- tier: T-2
+- band: STRONG
+- record_name: Millington
+- url: https://dnr.geodata.md.gov/dnrdata/rest/services/Environment/MDNaturalAreasGuide/MapServer/0?f=html
+- record_link: https://dnr.geodata.md.gov/dnrdata/rest/services/Environment/MDNaturalAreasGuide/MapServer/0/query?where=OBJECTID%3D21&outFields=%2A&f=html
+- source_url: https://dnr.geodata.md.gov/dnrdata/rest/services/Environment/MDNaturalAreasGuide/MapServer/0/query?geometry=-75.7836%2C39.3112&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 0
+- why: same land also in PACK-US-MD-land-195 'MILLINGTON WMA': merged, counted once; record 'Millington' (PACK-US-MD-preserve-272); pin inside; about 488.5 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
+- answer: 
+
+## GB-4151 Riddings Country Park (GB)
+- status: candidate
+- tier: T-2
+- band: WEAK
+- record_name: PT.RIDDINGS WOOD
+- url: https://datamap.gov.wales/geoserver/ows?service=WFS&request=DescribeFeatureType&version=2.0.0&typeNames=inspire-nrw%3ANRW_FORESTRY_OWNERSHIP_GB
+- record_link: https://datamap.gov.wales/geoserver/ows?service=WFS&version=2.0.0&request=GetFeature&typeNames=inspire-nrw%3ANRW_FORESTRY_OWNERSHIP_GB&count=25&filter=%3Cfes%3AFilter%20xmlns%3Afes%3D%22http%3A%2F%2Fwww.opengis.net%2Ffes%2F2.0%22%3E%3Cfes%3APropertyIsLike%20wildCard%3D%22%2A%22%20singleChar%3D%22.%22%20escapeChar%3D%22%21%22%20matchCase%3D%22false%22%3E%3Cfes%3AValueReference%3Etitle%3C%2Ffes%3AValueReference%3E%3Cfes%3ALiteral%3E%2Ariddings%2A%3C%2Ffes%3ALiteral%3E%3C%2Ffes%3APropertyIsLike%3E%3C%2Ffes%3AFilter%3E
+- source_url: https://datamap.gov.wales/geoserver/ows?service=WFS&version=2.0.0&request=GetFeature&typeNames=inspire-nrw%3ANRW_FORESTRY_OWNERSHIP_GB&count=25&filter=%3Cfes%3AFilter%20xmlns%3Afes%3D%22http%3A%2F%2Fwww.opengis.net%2Ffes%2F2.0%22%3E%3Cfes%3APropertyIsLike%20wildCard%3D%22%2A%22%20singleChar%3D%22.%22%20escapeChar%3D%22%21%22%20matchCase%3D%22false%22%3E%3Cfes%3AValueReference%3Etitle%3C%2Ffes%3AValueReference%3E%3Cfes%3ALiteral%3E%2Ariddings%2A%3C%2Ffes%3ALiteral%3E%3C%2Ffes%3APropertyIsLike%3E%3C%2Ffes%3AFilter%3E
+- pin_m: 0
+- why: record 'PT.RIDDINGS WOOD' (WB-WORLD-543); pin inside; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
 ## US-4169 Miami on Mississinewa Lake State Recreation Area (US-IN)
@@ -134,40 +134,40 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: same land also in PACK-US-IN-land-387 'Mississinewa Lake': merged, counted once; record 'Mississinewa Lake' (PACK-US-IN-land-191); pin inside; about 797.5 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
-## CA-4898 Carillon Barracks National Historic Site (CA-QC)
+## US-13030 Fox-Lake BLM Herd Management Area (US-NV)
 - status: candidate
 - tier: T-3
 - band: WEAK
-- record_name: Carillon Barracks
-- url: https://services.arcgis.com/As5CFN3ThbQpy8Ph/ArcGIS/rest/services/ParksCanadaRevised/FeatureServer/0?f=html
-- record_link: https://services.arcgis.com/As5CFN3ThbQpy8Ph/ArcGIS/rest/services/ParksCanadaRevised/FeatureServer/0/query?where=OBJECTID%3D26&outFields=%2A&f=html
-- source_url: https://services.arcgis.com/As5CFN3ThbQpy8Ph/ArcGIS/rest/services/ParksCanadaRevised/FeatureServer/0/query?geometry=-74.3716%2C45.5649&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 25
-- why: record 'Carillon Barracks' (Q-1371); pin 25 m from the edge; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: likely
-- answer: 
-
-## CA-4902 Coteau du Lac National Historic Site (CA-QC)
-- status: found
-- tier: T-1
-- band: STRONG
-- record_name: Coteau-du-Lac National Historic Site
-- url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4?f=html
-- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D2051&outFields=%2A&f=html
-- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-74.1775%2C45.2878&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_name: Fox-Lake Range
+- url: https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1?f=html
+- record_link: https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1/query?where=OBJECTID%3D9&outFields=%2A&f=html
+- source_url: https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/1/query?geometry=-119.574%2C40.3897&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: record 'Coteau-du-Lac National Historic Site' (PACK-CA-NB-land-73); pin inside; about 13.2 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
+- why: same land also in PACK-US-land-189 'Fox-Lake Range', US-BLM-sma 'Bureau of Land Management': merged, counted once; record 'Fox-Lake Range' (PACK-US-land-188); pin inside; about 177676.1 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
-## US-13241 Lake Mead Fish Hatchery State Fish Hatchery (US-NV)
+## CA-5052 Parc Nature de Pointe-aux-Outardes Regional Park (CA-QC)
 - status: candidate
-- tier: T-6
+- tier: T-2
 - band: WEAK
-- record_name: Lake Mead National Recreation Area
-- url: https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORP_Recreation_Areas/FeatureServer/0?f=html
-- record_link: https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORP_Recreation_Areas/FeatureServer/0/query?geometry=-114.808%2C36.0696&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- source_url: https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORP_Recreation_Areas/FeatureServer/0/query?geometry=-114.808%2C36.0696&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_name: Municipalité de Pointe-aux-Outardes
+- url: https://geo.environnement.gouv.qc.ca/donnees/rest/services/Biodiversite/Aires_protegees/MapServer/23?f=html
+- record_link: https://geo.environnement.gouv.qc.ca/donnees/rest/services/Biodiversite/Aires_protegees/MapServer/23/query?where=OBJECTID%3D5534&outFields=%2A&f=html
+- source_url: https://geo.environnement.gouv.qc.ca/donnees/rest/services/Biodiversite/Aires_protegees/MapServer/23/query?geometry=-68.4513%2C49.0422&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: record 'Lake Mead National Recreation Area' (PACK-US-NV-land-305); pin inside; about 563050.1 acres; Rule G: LIKELY (names overlap); size unknown; confidence: weak
+- why: record 'Municipalité de Pointe-aux-Outardes' (PACK-CA-QC-park-447); pin inside; about 226.0 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- answer: 
+
+## CA-0956 Boisé de Marly Forest Reserve (CA-QC)
+- status: candidate
+- tier: T-2
+- band: WEAK
+- record_name: Habitat d'une espèce floristique menacée ou vulnérable du Boisé-de-Marly
+- url: https://geo.environnement.gouv.qc.ca/donnees/rest/services/Biodiversite/Aires_protegees/MapServer/24?f=html
+- record_link: https://geo.environnement.gouv.qc.ca/donnees/rest/services/Biodiversite/Aires_protegees/MapServer/24/query?where=OBJECTID%3D52&outFields=%2A&f=html
+- source_url: https://geo.environnement.gouv.qc.ca/donnees/rest/services/Biodiversite/Aires_protegees/MapServer/24/query?geometry=-71.3328%2C46.754&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 0
+- why: record 'Habitat d'une espèce floristique menacée ou vulnérable du Boisé-de-Marly' (WB-CANAD-79); pin inside; about 36.0 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
 ## US-12016 Round Lake State Nature Preserve (US-IN)
@@ -182,16 +182,16 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: record 'Round Lake Wetland Nature Preserve' (PACK-US-IN-land-191); pin inside; about 138.0 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
-## US-10237 Mongoquinong State Nature Preserve (US-IN)
-- status: found
-- tier: T-2
-- band: STRONG
-- record_name: Mongoquinong Nature Preserve
-- url: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0?f=html
-- record_link: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?where=OBJECTID%3D4818&outFields=%2A&f=html
-- source_url: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?geometry=-85.314%2C41.6957&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 0
-- why: record 'Mongoquinong Nature Preserve' (PACK-US-IN-land-191); pin inside; about 159.7 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
+## CA-5631 Cavan Swamp Wildlife Area (CA-ON)
+- status: candidate
+- tier: T-3
+- band: WEAK
+- record_name: Cavan Swamp Wildlife Area - Mount Pleasant Block
+- url: https://maps2.grca.on.ca/server/rest/services/ORCA_Public/ORCA_Annual_Report_CAs/MapServer/2?f=html
+- record_link: https://maps2.grca.on.ca/server/rest/services/ORCA_Public/ORCA_Annual_Report_CAs/MapServer/2/query?where=OBJECTID%3D95&outFields=%2A&f=html
+- source_url: https://maps2.grca.on.ca/server/rest/services/ORCA_Public/ORCA_Annual_Report_CAs/MapServer/2/query?geometry=-78.4557%2C44.2829&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 9
+- why: record 'Cavan Swamp Wildlife Area - Mount Pleasant Block' (PACK-CA-ON-land-407); pin 9 m from the edge; about 278.9 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
 ## CA-6253 Moirs Ltd. Power House Historic Site (CA-NS)
@@ -206,39 +206,39 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: record 'Moirs Ltd. Power House' (PACK-CA-NS-land-83); pin 6 m from the edge; about 3.3 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: likely
 - answer: 
 
-## US-13649 Old Koschak Farm Wildlife Management Area (US-MN)
+## US-13646 Bohemian Wildlife Management Area (US-MN)
 - status: found
 - tier: T-2
 - band: STRONG
-- record_name: Old Koschak Farm WMA
+- record_name: Bohemian WMA
 - url: https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0?f=html
-- record_link: https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D6602&outFields=%2A&f=html
-- source_url: https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?geometry=-91.8297%2C47.9224&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_link: https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D6394&outFields=%2A&f=html
+- source_url: https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?geometry=-96.4067%2C44.6337&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: record 'Old Koschak Farm WMA' (PACK-US-MN-forest-27); pin inside; about 87.3 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
+- why: record 'Bohemian WMA' (PACK-US-MN-forest-27); pin inside; about 664.5 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
 - answer: 
 
-## CA-2196 Place Émilie-Gamelin Recreation Park (CA-QC)
+## CA-0986 Parc Frédéric-Back Regional Park (CA-QC)
 - status: candidate
-- tier: T-3
-- band: WEAK
-- record_name: Émilie-Gamelin
+- tier: T-2
+- band: CONFLICT
+- record_name: Frédéric-Back - Complexe de Soccer
 - url: https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0?f=html
-- record_link: https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0/query?where=OBJECTID%3D1459&outFields=%2A&f=html
-- source_url: https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0/query?geometry=-73.5601%2C45.5151&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_link: https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0/query?where=OBJECTID%3D1779&outFields=%2A&f=html
+- source_url: https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0/query?geometry=-73.6379%2C45.5623&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: record 'Émilie-Gamelin' (Q-1819); pin inside; about 2.3 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- why: record 'Frédéric-Back - Complexe de Soccer' (Q-1819); pin inside; about 9.2 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
-## US-5968 Howard Slough State Waterfowl Management Area (US-UT)
+## US-5967 Ogden Bay State Waterfowl Management Area (US-UT)
 - status: candidate
 - tier: T-3
 - band: WEAK
-- record_name: Howard Slough WMA
+- record_name: Ogden Bay WMA
 - url: https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0?f=html
-- record_link: https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0/query?where=OBJECTID%3D100&outFields=%2A&f=html
-- source_url: https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0/query?geometry=-112.134%2C41.1159&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_link: https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0/query?where=OBJECTID%3D170&outFields=%2A&f=html
+- source_url: https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0/query?geometry=-112.161%2C41.1887&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: same land also in PACK-US-UT-land-381 'Howard Slough WMA', Q-1472 '', Q-1473 'West Desert': merged, counted once; record 'Howard Slough WMA' (PACK-US-UT-land-351); pin inside; about 2547.6 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: likely
+- why: same land also in PACK-US-UT-land-381 'Ogden Bay WMA', Q-1472 '', Q-1473 'West Desert': merged, counted once; record 'Ogden Bay WMA' (PACK-US-UT-land-351); pin inside; about 16665.1 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: likely
 - answer: 
 
