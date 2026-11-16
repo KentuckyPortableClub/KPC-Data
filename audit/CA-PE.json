@@ -1,6 +1,6 @@
 {
  "area": "CA-PE",
- "built": "2026-11-08",
+ "built": "2026-11-15",
  "tool": "KPC-map-audit",
  "rules": "2026-11-02c",
  "parks": [
@@ -30,7 +30,8 @@
     }
    ],
    "record_ids": [
-    "cpcad#22028"
+    "cpcad#22028",
+    "Parks Canada:24"
    ],
    "tests": {
     "T1": {
@@ -42,7 +43,8 @@
      "outline_acres": 6793.5,
      "official_acres": 6713.9,
      "times": 1.01,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "note": "only the records this tool can read (CPCAD) are drawn and counted"
     },
     "T3": {
      "flag": "PASS",
@@ -87,7 +89,9 @@
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
+   "problems": [
+    "CAN'T TELL: 1 record(s) on provincial lists this tool can't read live (Parks Canada)"
+   ],
    "status": "graded",
    "score": 3,
    "why": "SPILL: The outline covers 68% of CA-4893 Green Gables Heritage Place (L.M. Montgomery's Cavendish NHS) National Historic Site, with no 2-fer row (maybe the wrong record)."

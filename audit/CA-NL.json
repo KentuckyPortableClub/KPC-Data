@@ -1,6 +1,6 @@
 {
  "area": "CA-NL",
- "built": "2026-11-08",
+ "built": "2026-11-15",
  "tool": "KPC-map-audit",
  "rules": "2026-11-02c",
  "parks": [
@@ -30,7 +30,8 @@
     }
    ],
    "record_ids": [
-    "cpcad#21995"
+    "cpcad#21995",
+    "Parks Canada:13"
    ],
    "tests": {
     "T1": {
@@ -42,7 +43,8 @@
      "outline_acres": 454399.5,
      "official_acres": 446025.2,
      "times": 1.02,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "note": "only the records this tool can read (CPCAD) are drawn and counted"
     },
     "T3": {
      "flag": "PASS",
@@ -74,7 +76,9 @@
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
+   "problems": [
+    "CAN'T TELL: 1 record(s) on provincial lists this tool can't read live (Parks Canada)"
+   ],
    "status": "graded",
    "score": 0,
    "why": "All tests pass."
@@ -105,7 +109,8 @@
     }
    ],
    "record_ids": [
-    "cpcad#22044"
+    "cpcad#22044",
+    "Parks Canada:36"
    ],
    "tests": {
     "T1": {
@@ -117,7 +122,8 @@
      "outline_acres": 99523.8,
      "official_acres": 98817.4,
      "times": 1.01,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "note": "only the records this tool can read (CPCAD) are drawn and counted"
     },
     "T3": {
      "flag": "PASS",
@@ -149,7 +155,9 @@
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
+   "problems": [
+    "CAN'T TELL: 1 record(s) on provincial lists this tool can't read live (Parks Canada)"
+   ],
    "status": "graded",
    "score": 0,
    "why": "All tests pass."
@@ -180,7 +188,8 @@
     }
    ],
    "record_ids": [
-    "cpcad#22046"
+    "cpcad#22046",
+    "Parks Canada:47"
    ],
    "tests": {
     "T1": {
@@ -192,7 +201,8 @@
      "outline_acres": 2435136.8,
      "official_acres": 2396922.2,
      "times": 1.02,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "note": "only the records this tool can read (CPCAD) are drawn and counted"
     },
     "T3": {
      "flag": "PASS",
@@ -236,7 +246,9 @@
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
+   "problems": [
+    "CAN'T TELL: 1 record(s) on provincial lists this tool can't read live (Parks Canada)"
+   ],
    "status": "graded",
    "score": 4,
    "why": "SPILL: The outline covers 100% of CA-4820 Kitjigattalik - Ramah Chert Quarries National Historic Site, with no 2-fer row (maybe the wrong record) (+1 more flag)."
@@ -2015,7 +2027,8 @@
     }
    ],
    "record_ids": [
-    "cpcad#22017"
+    "cpcad#22017",
+    "Parks Canada:48"
    ],
    "tests": {
     "T1": {
@@ -2027,7 +2040,8 @@
      "outline_acres": 2646814.8,
      "official_acres": 2644027.6,
      "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "note": "only the records this tool can read (CPCAD) are drawn and counted"
     },
     "T3": {
      "flag": "PASS",
@@ -2071,6 +2085,7 @@
     }
    },
    "problems": [
+    "CAN'T TELL: 1 record(s) on provincial lists this tool can't read live (Parks Canada)",
     "record 22017: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
    ],
    "status": "graded",

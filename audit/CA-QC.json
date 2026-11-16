@@ -1,6 +1,6 @@
 {
  "area": "CA-QC",
- "built": "2026-11-08",
+ "built": "2026-11-15",
  "tool": "KPC-map-audit",
  "rules": "2026-11-02c",
  "parks": [
@@ -284,9 +284,15 @@
      "layer": "canada-bounds/CA-0022.json"
     },
     {
+     "id": "Parks Canada:8",
+     "name": "Forillon National Park of Canada",
+     "type": "National Park",
+     "acres": 60359,
+     "layer": "Parks Canada"
+    },
+    {
      "id": "Québec Parc ~1:n-Parc national du Canada Forillon",
      "name": "Parc national du Canada Forillon",
-     "type": "National Park",
      "acres": 60281,
      "layer": "Québec Parc ~1"
     },
@@ -310,6 +316,7 @@
     }
    ],
    "record_ids": [
+    "Parks Canada:8",
     "Québec Parc ~1:n-Parc national du Canada Forillon",
     "Québec prote:741",
     "cpcad#21989",
@@ -323,7 +330,7 @@
     "T2": {
      "flag": "OFF",
      "outline_acres": 60857.4,
-     "official_acres": 113903.0,
+     "official_acres": 113981.0,
      "times": 1.87,
      "official_from": "the key's record acres (CPCAD / provincial lists)"
     },
@@ -364,7 +371,7 @@
    "problems": [],
    "status": "graded",
    "score": 1,
-   "why": "OFF: The outline is 1.9 times smaller than the official 113,903 acres (60,857 ac drawn)."
+   "why": "OFF: The outline is 1.9 times smaller than the official 113,981 acres (60,857 ac drawn)."
   },
   {
    "ref": "CA-0033",
@@ -1035,12 +1042,19 @@
      "name": "Parc national du Canada de la Mauricie",
      "acres": 132231,
      "layer": "Québec Parc ~1"
+    },
+    {
+     "id": "Parks Canada:21",
+     "name": "La Mauricie National Park of Canada",
+     "acres": 131552,
+     "layer": "Parks Canada"
     }
    ],
    "record_ids": [
     "cpcad#22015",
     "Québec prote:2158",
-    "Québec Parc ~1:n-Parc national du Canada de la Mauricie"
+    "Québec Parc ~1:n-Parc national du Canada de la Mauricie",
+    "Parks Canada:21"
    ],
    "tests": {
     "T1": {
@@ -1323,40 +1337,51 @@
     -63.6189
    ],
    "outline_from": [
-    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+    "canada-bounds/CA-0056.json"
    ],
-   "acres_drawn": 23901.0,
+   "acres_drawn": 78.4,
    "records": [
     {
-     "id": "cpcad#22018",
+     "id": "canada-bounds",
      "name": "Mingan Archipelago National Park Reserve Of Canada",
-     "type": "National Park",
-     "acres": 37238.8,
-     "acres_from": "O_AREA_HA",
-     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
-     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22018&outFields=*&returnGeometry=false&f=html"
+     "type": "National Park Reserve",
+     "layer": "canada-bounds/CA-0056.json"
+    },
+    {
+     "id": "22018",
+     "name": "Mingan Archipelago National Park Reserve Of Canada",
+     "type": "National Park Reserve",
+     "acres": 37239,
+     "layer": "CPCAD"
+    },
+    {
+     "id": "Parks Canada:32",
+     "name": "Mingan Archipelago National Park Reserve of Canada",
+     "acres": 23641,
+     "layer": "Parks Canada"
     }
    ],
    "record_ids": [
-    "cpcad#22018"
+    "cpcad#22018",
+    "Parks Canada:32"
    ],
    "tests": {
     "T1": {
-     "flag": "PASS",
-     "metres": 0
+     "flag": "OUTSIDE",
+     "metres": 5130.4
     },
     "T2": {
-     "flag": "OFF",
-     "outline_acres": 23901.0,
-     "official_acres": 37238.8,
-     "times": 1.56,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "WAY OFF",
+     "outline_acres": 78.4,
+     "official_acres": 37239.0,
+     "times": 475.0,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
     },
     "T3": {
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "Mingan Archipelago National Park Reserve",
-     "record_name": "Mingan Archipelago National Park Reserve Of Canada"
+     "record_name": "Mingan Archipelago National Park Reserve of Canada"
     },
     "T4": {
      "park_kind": "national park",
@@ -1364,39 +1389,43 @@
      "flag": "PASS"
     },
     "T5": {
-     "flag": "SLIVERS",
-     "pieces": 3786,
+     "flag": "SELF-INTERSECTION",
+     "pieces": 79,
      "flags": [
-      "SLIVERS",
+      "SELF-INTERSECTION",
       "SCATTERED"
      ],
-     "note": "2338 piece(s) under 10 m wide; 3786 pieces spread over 150 km",
+     "note": "Self-intersection[-62.585 50.266]; 79 pieces spread over 142 km",
      "repair": {
       "ok": true,
-      "area_change_pct": 0.146,
+      "area_change_pct": 0.0,
       "holes": 0,
-      "pieces": 2338
+      "pieces": 0
      }
     },
     "T6": {
      "flag": "PASS"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "detail_m": 71.17,
+     "declared_m": null,
+     "coordinate_step_m": 71.17,
+     "median_spacing_m": 111.2,
+     "flag": "TOO COARSE",
+     "note": "saved at about 71 m detail"
     },
     "T8": {
      "flag": "PASS"
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "OFF: The outline is 1.6 times smaller than the official 37,239 acres (23,901 ac drawn) (+2 more flags)."
+   "score": 9,
+   "why": "OUTSIDE: POTA's pin is 5.1 km outside the outline (+4 more flags)."
   },
   {
    "ref": "CA-0059",
@@ -1756,7 +1785,8 @@
    ],
    "record_ids": [
     "cpcad#10838",
-    "cpcad#22037"
+    "cpcad#22037",
+    "Parks Canada:33"
    ],
    "tests": {
     "T1": {
@@ -1768,7 +1798,8 @@
      "outline_acres": 308199.7,
      "official_acres": 307893.3,
      "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "note": "only the records this tool can read (CPCAD) are drawn and counted"
     },
     "T3": {
      "flag": "PASS",
@@ -1818,7 +1849,9 @@
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
+   "problems": [
+    "CAN'T TELL: 1 record(s) on provincial lists this tool can't read live (Parks Canada)"
+   ],
    "status": "graded",
    "score": 6,
    "why": "OUTSIDE: POTA's pin is 1.4 km outside the outline (+1 more flag)."
@@ -1828,75 +1861,53 @@
    "name": "Ulittaniujalik National Park",
    "key_name": "Ulittaniujalik National Park",
    "type": "National Park",
-   "grade": "official",
+   "grade": "pin",
    "pin": [
     56.9756,
     -64.9242
    ],
-   "outline_from": [
-    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
-   ],
-   "acres_drawn": 1308143.4,
-   "records": [
-    {
-     "id": "cpcad#15112",
-     "name": "Ulittaniujalik National Park (Québec)",
-     "type": "Quebec's national park",
-     "acres": 1307928.8,
-     "acres_from": "O_AREA_HA",
-     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
-     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=15112&outFields=*&returnGeometry=false&f=html"
-    }
-   ],
-   "record_ids": [
-    "cpcad#15112"
-   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "FAR",
-     "metres": 45614.7
+     "flag": "NO OUTLINE"
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 1308143.4,
-     "official_acres": 1307928.8,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Ulittaniujalik National Park",
-     "record_name": "Ulittaniujalik National Park (Québec)"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": "national park",
-     "record_kind": "national park",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "PASS",
-     "pieces": 1
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 5,
-   "why": "FAR: POTA's pin is 45.6 km outside the outline."
+   "score": 0,
+   "why": "Nothing could be tested."
   },
   {
    "ref": "CA-0446",
@@ -40679,7 +40690,15 @@
      "pieces": 1
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-0056",
+       "name": "Mingan Archipelago National Park Reserve",
+       "share": 0.38
+      }
+     ],
+     "count": 1
     },
     "T7": {
      "detail_m": 5,
@@ -40701,8 +40720,8 @@
     "POTA's pin lat 0.0, lon -0.0 is 0, 0 (no real pin) (read from POTA list)"
    ],
    "status": "graded",
-   "score": 3,
-   "why": "MISMATCH: The record name 'Watshishou Bird Sanctuary' does not match POTA's name 'Watshishou Migratory Bird Sanctuary' (score 0.67)."
+   "score": 6,
+   "why": "MISMATCH: The record name 'Watshishou Bird Sanctuary' does not match POTA's name 'Watshishou Migratory Bird Sanctuary' (score 0.67) (+1 more flag)."
   },
   {
    "ref": "CA-2281",

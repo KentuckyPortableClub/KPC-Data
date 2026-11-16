@@ -1,6 +1,6 @@
 {
  "area": "CA-NB",
- "built": "2026-11-08",
+ "built": "2026-11-15",
  "tool": "KPC-map-audit",
  "rules": "2026-11-02c",
  "parks": [
@@ -156,7 +156,8 @@
     }
    ],
    "record_ids": [
-    "cpcad#21991"
+    "cpcad#21991",
+    "Parks Canada:9"
    ],
    "tests": {
     "T1": {
@@ -168,7 +169,8 @@
      "outline_acres": 50816.8,
      "official_acres": 50879.0,
      "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "note": "only the records this tool can read (CPCAD) are drawn and counted"
     },
     "T3": {
      "flag": "MISMATCH",
@@ -204,7 +206,8 @@
      "flag": "DUPLICATE",
      "parks": {
       "CA-0025": [
-       "cpcad#21991"
+       "cpcad#21991",
+       "Parks Canada:9"
       ]
      },
      "note": "same record id(s) as another park number: for KPC 13"
@@ -214,7 +217,9 @@
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
+   "problems": [
+    "CAN'T TELL: 1 record(s) on provincial lists this tool can't read live (Parks Canada)"
+   ],
    "status": "graded",
    "score": 7,
    "why": "MISMATCH: The record name 'Fundy National Park Of Canada' does not match POTA's name 'Fundy Biosphere Reserve' (score 0.50) (+2 more flags)."
@@ -245,7 +250,8 @@
     }
    ],
    "record_ids": [
-    "cpcad#21991"
+    "cpcad#21991",
+    "Parks Canada:9"
    ],
    "tests": {
     "T1": {
@@ -257,7 +263,8 @@
      "outline_acres": 50816.8,
      "official_acres": 50879.0,
      "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "note": "only the records this tool can read (CPCAD) are drawn and counted"
     },
     "T3": {
      "flag": "PASS",
@@ -293,7 +300,8 @@
      "flag": "DUPLICATE",
      "parks": {
       "CA-0024": [
-       "cpcad#21991"
+       "cpcad#21991",
+       "Parks Canada:9"
       ]
      },
      "note": "same record id(s) as another park number: for KPC 13"
@@ -303,7 +311,9 @@
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
+   "problems": [
+    "CAN'T TELL: 1 record(s) on provincial lists this tool can't read live (Parks Canada)"
+   ],
    "status": "graded",
    "score": 4,
    "why": "SPILL: The outline covers 57% of CA-6455 Saltwater Pool and Bathhouse Historic Site, with no 2-fer row (maybe the wrong record) (+1 more flag)."
@@ -344,7 +354,8 @@
    ],
    "record_ids": [
     "cpcad#22013",
-    "cpcad#22014"
+    "cpcad#22014",
+    "Parks Canada:20"
    ],
    "tests": {
     "T1": {
@@ -356,7 +367,8 @@
      "outline_acres": 58734.9,
      "official_acres": 59115.0,
      "times": 1.01,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "note": "only the records this tool can read (CPCAD) are drawn and counted"
     },
     "T3": {
      "flag": "PASS",
@@ -388,7 +400,9 @@
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
+   "problems": [
+    "CAN'T TELL: 1 record(s) on provincial lists this tool can't read live (Parks Canada)"
+   ],
    "status": "graded",
    "score": 0,
    "why": "All tests pass."
@@ -3659,7 +3673,15 @@
      "pieces": 3
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-4404",
+       "name": "Grand Manan Bird Sanctuary",
+       "share": 0.31
+      }
+     ],
+     "count": 1
     },
     "T7": {
      "detail_m": 5,
@@ -3679,8 +3701,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 0,
-   "why": "All tests pass."
+   "score": 3,
+   "why": "SPILL: The outline covers 31% of CA-4404 Grand Manan Bird Sanctuary, with no 2-fer row (maybe the wrong record)."
   },
   {
    "ref": "CA-0800",
@@ -7422,85 +7444,53 @@
    "name": "Allardville Protected Natural Area",
    "key_name": "Allardville Protected Natural Area",
    "type": "Natural Area",
-   "grade": "official",
+   "grade": "pin",
    "pin": [
     47.4802,
     -65.825
    ],
-   "outline_from": [
-    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
-   ],
-   "acres_drawn": 3011.9,
-   "records": [
-    {
-     "id": "cpcad#3109",
-     "name": "Allardville",
-     "type": "Protected Natural Area",
-     "acres": 3012.1,
-     "acres_from": "O_AREA_HA",
-     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
-     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=3109&outFields=*&returnGeometry=false&f=html"
-    }
-   ],
-   "record_ids": [
-    "cpcad#3109"
-   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "FAR",
-     "metres": 25771.4
+     "flag": "NO OUTLINE"
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 3011.9,
-     "official_acres": 3012.1,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Allardville Protected Natural Area",
-     "record_name": "Allardville"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": "preserve",
-     "record_kind": "preserve",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "TINY HOLES",
-     "pieces": 1,
-     "flags": [
-      "TINY HOLES"
-     ],
-     "note": "1 hole(s) under 100 m2",
-     "repair": {
-      "ok": true,
-      "area_change_pct": 0.0,
-      "holes": 1,
-      "pieces": 0
-     }
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 6,
-   "why": "FAR: POTA's pin is 25.8 km outside the outline (+1 more flag)."
+   "score": 0,
+   "why": "Nothing could be tested."
   },
   {
    "ref": "CA-4351",
@@ -8064,75 +8054,53 @@
    "name": "Becaguimec Stream Protected Natural Area",
    "key_name": "Becaguimec Stream Protected Natural Area",
    "type": "Natural Area",
-   "grade": "official",
+   "grade": "pin",
    "pin": [
     46.036,
     -67.0361
    ],
-   "outline_from": [
-    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
-   ],
-   "acres_drawn": 185.6,
-   "records": [
-    {
-     "id": "cpcad#3117",
-     "name": "Becaguimec Stream",
-     "type": "Protected Natural Area",
-     "acres": 185.4,
-     "acres_from": "O_AREA_HA",
-     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
-     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=3117&outFields=*&returnGeometry=false&f=html"
-    }
-   ],
-   "record_ids": [
-    "cpcad#3117"
-   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "FAR",
-     "metres": 44670.5
+     "flag": "NO OUTLINE"
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 185.6,
-     "official_acres": 185.4,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Becaguimec Stream Protected Natural Area",
-     "record_name": "Becaguimec Stream"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": "preserve",
-     "record_kind": "preserve",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "PASS",
-     "pieces": 1
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 5,
-   "why": "FAR: POTA's pin is 44.7 km outside the outline."
+   "score": 0,
+   "why": "Nothing could be tested."
   },
   {
    "ref": "CA-4359",
@@ -10231,7 +10199,7 @@
    "name": "Cains River Protected Area",
    "key_name": "Cains River Protected Area",
    "type": "Protected Area",
-   "grade": "official",
+   "grade": "pin",
    "pin": [
     46.5086,
     -65.8477
@@ -10246,36 +10214,17 @@
      "name": "Cains River",
      "type": "Protected Natural Area",
      "layer": "canada-bounds/CA-4380.json"
-    },
-    {
-     "id": "New Brunswic~1:1033",
-     "name": "Cains River",
-     "type": "Protected Natural Area",
-     "acres": 8962,
-     "layer": "New Brunswic~1"
-    },
-    {
-     "id": "New Brunswic:145",
-     "name": "Cains River",
-     "acres": 510,
-     "layer": "New Brunswic"
     }
    ],
-   "record_ids": [
-    "New Brunswic~1:1033",
-    "New Brunswic:145"
-   ],
+   "record_ids": [],
    "tests": {
     "T1": {
      "flag": "FAR",
      "metres": 21765.3
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 11478.4,
-     "official_acres": 9472.0,
-     "times": 1.21,
-     "official_from": "the key's record acres (CPCAD / provincial lists)"
+     "flag": "NO FIGURE",
+     "outline_acres": 11478.4
     },
     "T3": {
      "flag": "PASS",
@@ -10304,7 +10253,8 @@
      "note": "between 3 and 5 m: allowed, but over the 3 m aim"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
      "flag": "CAN'T TELL",
@@ -12520,7 +12470,15 @@
      }
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-0798",
+       "name": "The Anchorage Provincial Park",
+       "share": 0.86
+      }
+     ],
+     "count": 1
     },
     "T7": {
      "flag": "N/A",
@@ -12536,8 +12494,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "TINY HOLES: The shape has problems: 1 hole(s) under 100 m2."
+   "score": 4,
+   "why": "SPILL: The outline covers 86% of CA-0798 The Anchorage Provincial Park, with no 2-fer row (maybe the wrong record) (+1 more flag)."
   },
   {
    "ref": "CA-4405",
@@ -14220,9 +14178,14 @@
        "ref": "CA-6536",
        "name": "New Brunswick #20 Wilderness Area",
        "share": 1.0
+      },
+      {
+       "ref": "CA-4432",
+       "name": "Little Tomoowa Lake Protected Area",
+       "share": 0.53
       }
      ],
-     "count": 1
+     "count": 2
     },
     "T7": {
      "detail_m": 5,
@@ -14617,7 +14580,15 @@
      }
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-5153",
+       "name": "Butternut Island Nature Reserve",
+       "share": 0.45
+      }
+     ],
+     "count": 1
     },
     "T7": {
      "detail_m": 5,
@@ -14637,8 +14608,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "SLIVERS: The shape has problems: 1 piece(s) under 10 m wide."
+   "score": 4,
+   "why": "SPILL: The outline covers 45% of CA-5153 Butternut Island Nature Reserve, with no 2-fer row (maybe the wrong record) (+1 more flag)."
   },
   {
    "ref": "CA-4430",
@@ -15902,7 +15873,7 @@
    "name": "McCluskey Brook Protected Area",
    "key_name": "McCluskey Brook Protected Area",
    "type": "Protected Area",
-   "grade": "official",
+   "grade": "pin",
    "pin": [
     46.2677,
     -67.278
@@ -15917,36 +15888,17 @@
      "name": "McCluskey Brook",
      "type": "Protected Area",
      "layer": "canada-bounds/CA-4443.json"
-    },
-    {
-     "id": "New Brunswic:7",
-     "name": "McCluskey Brook",
-     "type": "Protected Area",
-     "acres": 1515,
-     "layer": "New Brunswic"
-    },
-    {
-     "id": "New Brunswic~1:992",
-     "name": "McCluskey Brook",
-     "acres": 509,
-     "layer": "New Brunswic~1"
     }
    ],
-   "record_ids": [
-    "New Brunswic:7",
-    "New Brunswic~1:992"
-   ],
+   "record_ids": [],
    "tests": {
     "T1": {
      "flag": "FAR",
      "metres": 36720.7
     },
     "T2": {
-     "flag": "OFF",
-     "outline_acres": 3179.3,
-     "official_acres": 2024.0,
-     "times": 1.57,
-     "official_from": "the key's record acres (CPCAD / provincial lists)"
+     "flag": "NO FIGURE",
+     "outline_acres": 3179.3
     },
     "T3": {
      "flag": "PASS",
@@ -15985,7 +15937,8 @@
      "note": "between 3 and 5 m: allowed, but over the 3 m aim"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
      "flag": "CAN'T TELL",
@@ -15994,8 +15947,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 7,
-   "why": "FAR: POTA's pin is 36.7 km outside the outline (+2 more flags)."
+   "score": 6,
+   "why": "FAR: POTA's pin is 36.7 km outside the outline (+1 more flag)."
   },
   {
    "ref": "CA-4444",
@@ -21994,7 +21947,7 @@
    "name": "Shikatehawk Stream Protected Area",
    "key_name": "Shikatehawk Stream Protected Area",
    "type": "Protected Area",
-   "grade": "official",
+   "grade": "pin",
    "pin": [
     46.5,
     -67.15
@@ -22009,29 +21962,17 @@
      "name": "Shikatehawk Stream",
      "type": "Protected Natural Area",
      "layer": "canada-bounds/CA-4508.json"
-    },
-    {
-     "id": "New Brunswic:2242",
-     "name": "Shikatehawk Stream",
-     "type": "Protected Natural Area",
-     "acres": 132,
-     "layer": "New Brunswic"
     }
    ],
-   "record_ids": [
-    "New Brunswic:2242"
-   ],
+   "record_ids": [],
    "tests": {
     "T1": {
      "flag": "FAR",
      "metres": 22237.6
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 131.4,
-     "official_acres": 132.0,
-     "times": 1.0,
-     "official_from": "the key's record acres (CPCAD / provincial lists)"
+     "flag": "NO FIGURE",
+     "outline_acres": 131.4
     },
     "T3": {
      "flag": "PASS",
@@ -22060,7 +22001,8 @@
      "note": "between 3 and 5 m: allowed, but over the 3 m aim"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
      "flag": "CAN'T TELL",
@@ -26351,75 +26293,53 @@
    "name": "Butternut Island Nature Reserve",
    "key_name": "Butternut Island Nature Reserve",
    "type": "Nature Reserve",
-   "grade": "official",
+   "grade": "pin",
    "pin": [
     46.058,
     -66.22
    ],
-   "outline_from": [
-    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
-   ],
-   "acres_drawn": 5.9,
-   "records": [
-    {
-     "id": "cpcad#3272",
-     "name": "Butternut Island",
-     "type": "Nature Preserve",
-     "acres": 6.0,
-     "acres_from": "O_AREA_HA",
-     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
-     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=3272&outFields=*&returnGeometry=false&f=html"
-    }
-   ],
-   "record_ids": [
-    "cpcad#3272"
-   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "FAR",
-     "metres": 34084.6
+     "flag": "NO OUTLINE"
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 5.9,
-     "official_acres": 6.0,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Butternut Island Nature Reserve",
-     "record_name": "Butternut Island"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": "preserve",
-     "record_kind": "preserve",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "PASS",
-     "pieces": 1
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 5,
-   "why": "FAR: POTA's pin is 34.1 km outside the outline."
+   "score": 0,
+   "why": "Nothing could be tested."
   },
   {
    "ref": "CA-5154",
@@ -39569,8 +39489,33 @@
      "flag": "SPILL",
      "parks": [
       {
+       "ref": "CA-1226",
+       "name": "Cape Enrage Marsh Nature Reserve",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-0090",
+       "name": "Shepody National Wildlife Area",
+       "share": 1.0
+      },
+      {
        "ref": "CA-0785",
        "name": "Mary's Point Ramsar Site",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-1225",
+       "name": "Caledonia Gorge Nature Reserve",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-0777",
+       "name": "Hopewell Rocks Provincial Park",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-4425",
+       "name": "Lewis Mountain Protected Area",
        "share": 1.0
       },
       {
@@ -39579,42 +39524,22 @@
        "share": 1.0
       },
       {
-       "ref": "CA-6451",
-       "name": "Battle of Petitcodiac Historic Site",
+       "ref": "CA-4459",
+       "name": "Mount Tom Protected Area",
        "share": 1.0
       },
       {
-       "ref": "CA-6489",
-       "name": "Hon. William Henry Steeves National Historical Site",
+       "ref": "CA-4383",
+       "name": "Cat Road Protected Area",
        "share": 1.0
       },
       {
-       "ref": "CA-6388",
-       "name": "Dobson Recreational Trail Recreation Site",
+       "ref": "CA-5195",
+       "name": "Mapleton Acadian Forest Nature Reserve",
        "share": 1.0
-      },
-      {
-       "ref": "CA-6248",
-       "name": "Coverdale United Church Historic Site",
-       "share": 1.0
-      },
-      {
-       "ref": "CA-6555",
-       "name": "Riverview's Peace Park National Memorial",
-       "share": 1.0
-      },
-      {
-       "ref": "CA-1239",
-       "name": "Grindstone Island Conservation Nature Reserve",
-       "share": 0.85
-      },
-      {
-       "ref": "CA-6495",
-       "name": "Joseph Broussard dit Beausoleil National Historic Site",
-       "share": 0.33
       }
      ],
-     "count": 9
+     "count": 20
     },
     "T7": {
      "detail_m": 5,
@@ -39635,7 +39560,7 @@
    "problems": [],
    "status": "graded",
    "score": 3,
-   "why": "SPILL: The outline covers 100% of CA-0785 Mary's Point Ramsar Site, with no 2-fer row (maybe the wrong record)."
+   "why": "SPILL: The outline covers 100% of CA-1226 Cape Enrage Marsh Nature Reserve, with no 2-fer row (maybe the wrong record)."
   },
   {
    "ref": "CA-6504",
@@ -39700,11 +39625,6 @@
      "flag": "SPILL",
      "parks": [
       {
-       "ref": "CA-6519",
-       "name": "Lutz Mountain Heritage Museum & Meeting House Historic Site",
-       "share": 1.0
-      },
-      {
        "ref": "CA-6515",
        "name": "Intercolonial Railway National Historic Site",
        "share": 1.0
@@ -39715,8 +39635,28 @@
        "share": 1.0
       },
       {
+       "ref": "CA-6519",
+       "name": "Lutz Mountain Heritage Museum & Meeting House Historic Site",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-4442",
+       "name": "McLean Settlement Protected Area",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-4370",
+       "name": "Blind Brook Protected Area",
+       "share": 1.0
+      },
+      {
        "ref": "CA-6590",
        "name": "Shediac Bay Watershed Ecological Area",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-6389",
+       "name": "Grande-Digue Nature Reserve",
        "share": 1.0
       },
       {
@@ -39733,24 +39673,9 @@
        "ref": "CA-6394",
        "name": "St. Lawrence Anglican Church Historic Site",
        "share": 1.0
-      },
-      {
-       "ref": "CA-6380",
-       "name": "Convent of the Immaculate Conception Provincial Historic Site",
-       "share": 1.0
-      },
-      {
-       "ref": "CA-6485",
-       "name": "Cap-Lumiere Nature Reserve",
-       "share": 0.94
-      },
-      {
-       "ref": "CA-6520",
-       "name": "Musée des Pionniers Historic Site",
-       "share": 0.89
       }
      ],
-     "count": 12
+     "count": 15
     },
     "T7": {
      "detail_m": 5,
@@ -39771,7 +39696,7 @@
    "problems": [],
    "status": "graded",
    "score": 3,
-   "why": "SPILL: The outline covers 100% of CA-6519 Lutz Mountain Heritage Museum & Meeting House Historic Site, with no 2-fer row (maybe the wrong record)."
+   "why": "SPILL: The outline covers 100% of CA-6515 Intercolonial Railway National Historic Site, with no 2-fer row (maybe the wrong record)."
   },
   {
    "ref": "CA-6505",
@@ -39836,6 +39761,11 @@
      "flag": "SPILL",
      "parks": [
       {
+       "ref": "CA-4419",
+       "name": "Johnson's Mills Shorebird Protected Area",
+       "share": 1.0
+      },
+      {
        "ref": "CA-6450",
        "name": "Yorkshire Immigration National Historic Site",
        "share": 1.0
@@ -39879,14 +39809,9 @@
        "ref": "CA-6463",
        "name": "Keillor House Historic Site",
        "share": 1.0
-      },
-      {
-       "ref": "CA-5234",
-       "name": "Tonge's Island National Historic Site",
-       "share": 1.0
       }
      ],
-     "count": 20
+     "count": 25
     },
     "T7": {
      "detail_m": 5,
@@ -39907,7 +39832,7 @@
    "problems": [],
    "status": "graded",
    "score": 3,
-   "why": "SPILL: The outline covers 100% of CA-6450 Yorkshire Immigration National Historic Site, with no 2-fer row (maybe the wrong record)."
+   "why": "SPILL: The outline covers 100% of CA-4419 Johnson's Mills Shorebird Protected Area, with no 2-fer row (maybe the wrong record)."
   },
   {
    "ref": "CA-6507",
@@ -39977,8 +39902,18 @@
        "share": 1.0
       },
       {
+       "ref": "CA-5165",
+       "name": "Dolan Woodlands Nature Reserve",
+       "share": 1.0
+      },
+      {
        "ref": "CA-6472",
        "name": "Eastern Lowlands Ecological Area",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-4460",
+       "name": "Bonar Law House Historic Site",
        "share": 1.0
       },
       {
@@ -39997,32 +39932,22 @@
        "share": 1.0
       },
       {
-       "ref": "CA-6462",
-       "name": "Old St. Michael's Rectory Historic Site",
+       "ref": "CA-4369",
+       "name": "Black River Protected Area",
        "share": 1.0
       },
       {
-       "ref": "CA-6456",
-       "name": "Point Escuminac Nature Reserve",
-       "share": 0.98
+       "ref": "CA-4400",
+       "name": "Goodfellow Brook Protected Area",
+       "share": 1.0
       },
       {
-       "ref": "CA-5674",
-       "name": "Chatham Waterfront Trail Recreation Park",
-       "share": 0.94
-      },
-      {
-       "ref": "CA-4463",
-       "name": "Notre-Dame-de l'assompton Monument Historic Site",
-       "share": 0.81
-      },
-      {
-       "ref": "CA-6391",
-       "name": "Escuminac Disaster Monument Provincial Historic Site",
-       "share": 0.75
+       "ref": "CA-4412",
+       "name": "Hells Gate Hardwoods Protected Area",
+       "share": 1.0
       }
      ],
-     "count": 11
+     "count": 19
     },
     "T7": {
      "detail_m": 5,
@@ -40108,6 +40033,11 @@
      "flag": "SPILL",
      "parks": [
       {
+       "ref": "CA-1253",
+       "name": "Sea Dog Cove Nature Reserve",
+       "share": 1.0
+      },
+      {
        "ref": "CA-5223",
        "name": "Sand Point Lighthouse National Historic Site",
        "share": 1.0
@@ -40115,6 +40045,26 @@
       {
        "ref": "CA-5149",
        "name": "Bayswater Lighthouse National Heritage Site",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-5216",
+       "name": "Rayworth Beach Nature Reserve",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-1245",
+       "name": "Minister's Face Nature Reserve",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-6482",
+       "name": "Grand Lake Lowlands Ecological Area",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-5218",
+       "name": "Reg Bonney Nature Reserve",
        "share": 1.0
       },
       {
@@ -40131,29 +40081,9 @@
        "ref": "CA-5706",
        "name": "Pines Conservation Park National Heritage Site",
        "share": 1.0
-      },
-      {
-       "ref": "CA-0782",
-       "name": "Lakeside Recreation Park",
-       "share": 1.0
-      },
-      {
-       "ref": "CA-6482",
-       "name": "Grand Lake Lowlands Ecological Area",
-       "share": 1.0
-      },
-      {
-       "ref": "CA-5241",
-       "name": "Fort Jemseg National Historic Site",
-       "share": 0.85
-      },
-      {
-       "ref": "CA-6492",
-       "name": "Petitcodiac - Washademoak Portage National Historic Site",
-       "share": 0.84
       }
      ],
-     "count": 9
+     "count": 14
     },
     "T7": {
      "detail_m": 5,
@@ -40174,7 +40104,7 @@
    "problems": [],
    "status": "graded",
    "score": 3,
-   "why": "SPILL: The outline covers 100% of CA-5223 Sand Point Lighthouse National Historic Site, with no 2-fer row (maybe the wrong record)."
+   "why": "SPILL: The outline covers 100% of CA-1253 Sea Dog Cove Nature Reserve, with no 2-fer row (maybe the wrong record)."
   },
   {
    "ref": "CA-6509",
@@ -40236,7 +40166,55 @@
      "pieces": 1
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-4479",
+       "name": "Partridge Valley West Protected Area",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-4478",
+       "name": "Partridge Valley East Protected Area",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-4482",
+       "name": "Phillipstown Protected Natural Area",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-4375",
+       "name": "Brookvale Protected Area",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-6510",
+       "name": "Canaan River Wildlife Management Area",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-4381",
+       "name": "Canaan Bog Protected Area",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-1230",
+       "name": "Cranberry Lake Nature Reserve",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-4538",
+       "name": "West Branch Coy Brook Protected Area",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-4422",
+       "name": "Lake Stream Protected Area",
+       "share": 1.0
+      }
+     ],
+     "count": 9
     },
     "T7": {
      "detail_m": 5,
@@ -40256,8 +40234,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 0,
-   "why": "All tests pass."
+   "score": 3,
+   "why": "SPILL: The outline covers 100% of CA-4479 Partridge Valley West Protected Area, with no 2-fer row (maybe the wrong record)."
   },
   {
    "ref": "CA-6510",
@@ -40567,52 +40545,52 @@
        "share": 1.0
       },
       {
-       "ref": "CA-6392",
-       "name": "French Fort Cove Nature Recreation Area",
-       "share": 0.98
+       "ref": "CA-6377",
+       "name": "MacDonald Farm Provincial Historic Site",
+       "share": 1.0
       },
       {
-       "ref": "CA-5197",
-       "name": "Marine Hospital National Historic Site",
-       "share": 0.97
+       "ref": "CA-4405",
+       "name": "Green Brook Protected Area",
+       "share": 1.0
       },
       {
-       "ref": "CA-6376",
-       "name": "Ortho Robichaud Historic Site",
-       "share": 0.96
+       "ref": "CA-4359",
+       "name": "Bellefond Protected Area",
+       "share": 1.0
       },
       {
-       "ref": "CA-0787",
-       "name": "Middle Island Historic Site",
-       "share": 0.95
+       "ref": "CA-4420",
+       "name": "Kingston Family Nature Preserve Protected Area",
+       "share": 1.0
       },
       {
-       "ref": "CA-6496",
-       "name": "Peter Mitchell National Historic Site",
-       "share": 0.71
+       "ref": "CA-0772",
+       "name": "East Branch Portage River Natural Area",
+       "share": 1.0
       },
       {
-       "ref": "CA-6493",
-       "name": "William Davidson National Historic Site",
-       "share": 0.67
+       "ref": "CA-4402",
+       "name": "Gordon Meadow Brook Protected Area",
+       "share": 1.0
       },
       {
-       "ref": "CA-6379",
-       "name": "St. Peters & St. Pauls Church Provincial Historic Site",
-       "share": 0.63
+       "ref": "CA-4356",
+       "name": "Bass River Protected Area",
+       "share": 1.0
       },
       {
-       "ref": "CA-0778",
-       "name": "Ile-Aux-Foins (Hay Island) Recreation Park",
-       "share": 0.54
+       "ref": "CA-1221",
+       "name": "Bass Brook Nature Reserve",
+       "share": 1.0
       },
       {
-       "ref": "CA-6530",
-       "name": "Sentier Nepisiguit Mi’gmaq Trail Recreation Site",
-       "share": 0.35
+       "ref": "CA-4514",
+       "name": "South Branch Burnt Church River Protected Area",
+       "share": 1.0
       }
      ],
-     "count": 11
+     "count": 34
     },
     "T7": {
      "detail_m": 5,
@@ -40910,16 +40888,6 @@
      "flag": "SPILL",
      "parks": [
       {
-       "ref": "CA-4943",
-       "name": "Fort Nerepis National Historic Site",
-       "share": 1.0
-      },
-      {
-       "ref": "CA-5232",
-       "name": "Tilley House National Historic Site",
-       "share": 1.0
-      },
-      {
        "ref": "CA-5134",
        "name": "Gateway Wetland Nature Trails Conservation Area",
        "share": 1.0
@@ -40945,22 +40913,32 @@
        "share": 1.0
       },
       {
+       "ref": "CA-4943",
+       "name": "Fort Nerepis National Historic Site",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-5232",
+       "name": "Tilley House National Historic Site",
+       "share": 1.0
+      },
+      {
        "ref": "CA-5238",
        "name": "Belmont House / R. Wilmot Home National Historic Site",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-5208",
+       "name": "Noloqonokek Nature Reserve",
        "share": 1.0
       },
       {
        "ref": "CA-6448",
        "name": "The Church of St. Mary the Virgin Historic Site",
        "share": 1.0
-      },
-      {
-       "ref": "CA-5217",
-       "name": "Reading Street Park Recreation Park",
-       "share": 1.0
       }
      ],
-     "count": 26
+     "count": 28
     },
     "T7": {
      "detail_m": 5,
@@ -40981,7 +40959,7 @@
    "problems": [],
    "status": "graded",
    "score": 3,
-   "why": "SPILL: The outline covers 100% of CA-4943 Fort Nerepis National Historic Site, with no 2-fer row (maybe the wrong record)."
+   "why": "SPILL: The outline covers 100% of CA-5134 Gateway Wetland Nature Trails Conservation Area, with no 2-fer row (maybe the wrong record)."
   },
   {
    "ref": "CA-6530",
@@ -41160,7 +41138,7 @@
        "share": 1.0
       }
      ],
-     "count": 43
+     "count": 55
     },
     "T7": {
      "detail_m": 5,
@@ -41314,42 +41292,52 @@
        "share": 1.0
       },
       {
+       "ref": "CA-4511",
+       "name": "Skiff Lake Protected Area",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-6452",
+       "name": "Kings Landing Wildlife Management Area",
+       "share": 1.0
+      },
+      {
        "ref": "CA-5259",
        "name": "Kings Landing Historic Settlement Historic Site",
        "share": 1.0
       },
       {
-       "ref": "CA-6465",
-       "name": "Shrine to Saint Francis of Assisi Historic Site",
+       "ref": "CA-4517",
+       "name": "Spednic Lake Protected Natural Area",
        "share": 1.0
       },
       {
-       "ref": "CA-6478",
-       "name": "Valley Lowlands Ecological Area",
+       "ref": "CA-0795",
+       "name": "Spednic Lake Recreation Park",
        "share": 1.0
       },
       {
-       "ref": "CA-6246",
-       "name": "St. David's Presbyterian Church Historic Site",
+       "ref": "CA-4527",
+       "name": "Tamarack Brook Protected Area",
        "share": 1.0
       },
       {
-       "ref": "CA-5247",
-       "name": "Mehtawtik (Meductic) Village National Historic Site",
+       "ref": "CA-4411",
+       "name": "Hay Brook Protected Area",
        "share": 1.0
       },
       {
-       "ref": "CA-6499",
-       "name": "Meductic-Eel River Portage National Historic Site",
+       "ref": "CA-4395",
+       "name": "First Eel Lake Protected Area",
        "share": 1.0
       },
       {
-       "ref": "CA-5200",
-       "name": "McAdam Railway Station (Canadian Pacific) National Historic Site",
-       "share": 0.48
+       "ref": "CA-4391",
+       "name": "Eel River Protected Area",
+       "share": 1.0
       }
      ],
-     "count": 8
+     "count": 29
     },
     "T7": {
      "detail_m": 5,
@@ -41435,57 +41423,57 @@
      "flag": "SPILL",
      "parks": [
       {
+       "ref": "CA-0784",
+       "name": "Mactaquac Provincial Park",
+       "share": 1.0
+      },
+      {
        "ref": "CA-6475",
        "name": "St. John River National Heritage Area",
        "share": 1.0
       },
       {
-       "ref": "CA-6522",
-       "name": "Stickney Area Veterans National Memorial",
+       "ref": "CA-4408",
+       "name": "Greer Creek Protected Area",
        "share": 1.0
       },
       {
-       "ref": "CA-5171",
-       "name": "Ferris Street Forest and Wetland Nature Reserve",
+       "ref": "CA-5226",
+       "name": "Slippery Mitten Nature Reserve",
        "share": 1.0
       },
       {
-       "ref": "CA-5258",
-       "name": "Killarney Lake Park Recreation Park",
+       "ref": "CA-4382",
+       "name": "Carr Falls Brook Protected Area",
        "share": 1.0
       },
       {
-       "ref": "CA-1242",
-       "name": "James C. Yerxa Nature Reserve",
+       "ref": "CA-4542",
+       "name": "Woodman Protected Area",
        "share": 1.0
       },
       {
-       "ref": "CA-6491",
-       "name": "Welsh Chapel Historic Site",
+       "ref": "CA-4353",
+       "name": "Ayers Lake Stream Protected Area",
        "share": 1.0
       },
       {
-       "ref": "CA-5193",
-       "name": "Malloy Field Recreation Park",
-       "share": 0.86
+       "ref": "CA-4352",
+       "name": "Angle Hill Lake Protected Natural Area",
+       "share": 1.0
       },
       {
-       "ref": "CA-1255",
-       "name": "Sugar Island Nature Reserve",
-       "share": 0.86
+       "ref": "CA-1247",
+       "name": "Otter Brook Nature Reserve",
+       "share": 1.0
       },
       {
-       "ref": "CA-6487",
-       "name": "42nd Highland Memorial Cemetery Historic Site",
-       "share": 0.83
-      },
-      {
-       "ref": "CA-5253",
-       "name": "Carleton Park Recreation Park",
-       "share": 0.75
+       "ref": "CA-4390",
+       "name": "East Cloverdale Protected Area",
+       "share": 1.0
       }
      ],
-     "count": 15
+     "count": 39
     },
     "T7": {
      "detail_m": 5,
@@ -41506,7 +41494,7 @@
    "problems": [],
    "status": "graded",
    "score": 3,
-   "why": "SPILL: The outline covers 100% of CA-6475 St. John River National Heritage Area, with no 2-fer row (maybe the wrong record)."
+   "why": "SPILL: The outline covers 100% of CA-0784 Mactaquac Provincial Park, with no 2-fer row (maybe the wrong record)."
   },
   {
    "ref": "CA-6539",
@@ -41576,32 +41564,52 @@
        "share": 1.0
       },
       {
+       "ref": "CA-1249",
+       "name": "Pickerel Pond Nature Reserve",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-0073",
+       "name": "Portobello Creek National Wildlife Area",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-1238",
+       "name": "Grand Lake Nature Reserve",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-5153",
+       "name": "Butternut Island Nature Reserve",
+       "share": 1.0
+      },
+      {
        "ref": "CA-6461",
        "name": "First Export of Coal National Historic Site",
        "share": 1.0
       },
       {
-       "ref": "CA-5156",
-       "name": "Christ Church Anglican National Historic Site",
-       "share": 0.9
+       "ref": "CA-4378",
+       "name": "Burpee Lake Protected Area",
+       "share": 1.0
       },
       {
-       "ref": "CA-5198",
-       "name": "Marysville Cotton Mill National Historic Site",
-       "share": 0.87
+       "ref": "CA-4429",
+       "name": "Little River Protected Area",
+       "share": 1.0
       },
       {
-       "ref": "CA-5199",
-       "name": "Marysville Historic District National Historic Site",
-       "share": 0.69
+       "ref": "CA-4427",
+       "name": "Little Forks Brook Protected Area",
+       "share": 1.0
       },
       {
-       "ref": "CA-5184",
-       "name": "Henry Park Recreation Park",
-       "share": 0.31
+       "ref": "CA-4380",
+       "name": "Cains River Protected Area",
+       "share": 1.0
       }
      ],
-     "count": 6
+     "count": 17
     },
     "T7": {
      "detail_m": 5,
@@ -41687,8 +41695,18 @@
      "flag": "SPILL",
      "parks": [
       {
+       "ref": "CA-4512",
+       "name": "Smith Brook Protected Area",
+       "share": 1.0
+      },
+      {
        "ref": "CA-5160",
        "name": "Connell Park Recreation Park",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-4450",
+       "name": "Mill Brook Protected Area",
        "share": 1.0
       },
       {
@@ -41697,47 +41715,37 @@
        "share": 1.0
       },
       {
-       "ref": "CA-6498",
-       "name": "Beechwood Community Park",
+       "ref": "CA-4449",
+       "name": "Meduxnekeag Valley Nature Reserve",
        "share": 1.0
       },
       {
-       "ref": "CA-6247",
-       "name": "Mineral Free Baptist Meetinghouse Historic Site",
+       "ref": "CA-4360",
+       "name": "Belleville Protected Area",
        "share": 1.0
       },
       {
-       "ref": "CA-6235",
-       "name": "Victoria County Court House Historic Site",
+       "ref": "CA-1259",
+       "name": "Williamstown Lake Protected Area",
        "share": 1.0
       },
       {
-       "ref": "CA-6460",
-       "name": "Former St. James United Church Historic Site",
+       "ref": "CA-1228",
+       "name": "Clarke Brook Nature Reserve",
        "share": 1.0
       },
       {
-       "ref": "CA-5178",
-       "name": "George M Stirrett Nature Reserve",
+       "ref": "CA-4423",
+       "name": "Lakeville Protected Area",
        "share": 1.0
       },
       {
-       "ref": "CA-5233",
-       "name": "Mahsusuwi-monihkuk Nature Reserve",
+       "ref": "CA-5167",
+       "name": "Eagle's Eye Nature Reserve",
        "share": 1.0
-      },
-      {
-       "ref": "CA-0794",
-       "name": "Shea Lake Natural Area",
-       "share": 1.0
-      },
-      {
-       "ref": "CA-5159",
-       "name": "Connell House National Historic Site",
-       "share": 0.95
       }
      ],
-     "count": 13
+     "count": 31
     },
     "T7": {
      "detail_m": 5,
@@ -41758,7 +41766,7 @@
    "problems": [],
    "status": "graded",
    "score": 3,
-   "why": "SPILL: The outline covers 100% of CA-5160 Connell Park Recreation Park, with no 2-fer row (maybe the wrong record)."
+   "why": "SPILL: The outline covers 100% of CA-4512 Smith Brook Protected Area, with no 2-fer row (maybe the wrong record)."
   },
   {
    "ref": "CA-6541",
@@ -41826,9 +41834,19 @@
        "ref": "CA-4522",
        "name": "Stony Brook Protected Area",
        "share": 1.0
+      },
+      {
+       "ref": "CA-4476",
+       "name": "Oven Rock Brook Protected Area",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-0768",
+       "name": "Blue Mountain Natural Area",
+       "share": 1.0
       }
      ],
-     "count": 1
+     "count": 3
     },
     "T7": {
      "detail_m": 5,
@@ -41914,6 +41932,26 @@
      "flag": "SPILL",
      "parks": [
       {
+       "ref": "CA-4472",
+       "name": "North Pole Stream Protected Area",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-4434",
+       "name": "Lower North Branch Little Southwest Miramichi River Protected Area",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-4363",
+       "name": "Big Bald Mountain Protected Area",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-0774",
+       "name": "Freeze Lakes Natural Area",
+       "share": 1.0
+      },
+      {
        "ref": "CA-5262",
        "name": "Metepenagiag Heritage Park National Heritage Site",
        "share": 1.0
@@ -41924,37 +41962,27 @@
        "share": 1.0
       },
       {
-       "ref": "CA-6481",
-       "name": "New Brunswick Highlands Ecological Area",
+       "ref": "CA-4808",
+       "name": "Beaubears Island Shipbuilding National Historic Site",
        "share": 1.0
       },
       {
-       "ref": "CA-4530",
-       "name": "Wilson's Point (Enclosure) Park Historic Site",
-       "share": 0.96
+       "ref": "CA-4447",
+       "name": "McNeal Brook Protected Area",
+       "share": 1.0
       },
       {
-       "ref": "CA-4809",
-       "name": "Boishebert Refuge National Historic Site",
-       "share": 0.89
+       "ref": "CA-4431",
+       "name": "Little Southwest Miramichi River Protected Area",
+       "share": 1.0
       },
       {
-       "ref": "CA-4444",
-       "name": "McCoy Brook Protected Area",
-       "share": 0.78
-      },
-      {
-       "ref": "CA-6386",
-       "name": "Beaverbrook House Historic Site",
-       "share": 0.66
-      },
-      {
-       "ref": "CA-6493",
-       "name": "William Davidson National Historic Site",
-       "share": 0.33
+       "ref": "CA-4457",
+       "name": "Mount Denys Protected Area",
+       "share": 1.0
       }
      ],
-     "count": 8
+     "count": 28
     },
     "T7": {
      "detail_m": 5,
@@ -41975,7 +42003,7 @@
    "problems": [],
    "status": "graded",
    "score": 3,
-   "why": "SPILL: The outline covers 100% of CA-5262 Metepenagiag Heritage Park National Heritage Site, with no 2-fer row (maybe the wrong record)."
+   "why": "SPILL: The outline covers 100% of CA-4472 North Pole Stream Protected Area, with no 2-fer row (maybe the wrong record)."
   },
   {
    "ref": "CA-6543",
@@ -42040,6 +42068,11 @@
      "flag": "SPILL",
      "parks": [
       {
+       "ref": "CA-4417",
+       "name": "Inkerman Migratory Bird Sanctuary",
+       "share": 1.0
+      },
+      {
        "ref": "CA-6586",
        "name": "Return of the Acadians National Monument",
        "share": 1.0
@@ -42050,8 +42083,18 @@
        "share": 1.0
       },
       {
+       "ref": "CA-6598",
+       "name": "Miscou Island Park Provincial Park",
+       "share": 1.0
+      },
+      {
        "ref": "CA-5203",
        "name": "Miscou Island Lighthouse National Historic Site",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-4453",
+       "name": "Miscou Grande Plaine Protected Area",
        "share": 1.0
       },
       {
@@ -42073,14 +42116,9 @@
        "ref": "CA-5255",
        "name": "Ecological Park of the Acadian Peninsula Ecological Site",
        "share": 0.81
-      },
-      {
-       "ref": "CA-6500",
-       "name": "Big Shippegan Shore Light National Heritage Site",
-       "share": 0.36
       }
      ],
-     "count": 8
+     "count": 11
     },
     "T7": {
      "detail_m": 5,
@@ -42101,14 +42139,14 @@
    "problems": [],
    "status": "graded",
    "score": 3,
-   "why": "SPILL: The outline covers 100% of CA-6586 Return of the Acadians National Monument, with no 2-fer row (maybe the wrong record)."
+   "why": "SPILL: The outline covers 100% of CA-4417 Inkerman Migratory Bird Sanctuary, with no 2-fer row (maybe the wrong record)."
   },
   {
    "ref": "CA-6544",
    "name": "New Brunswick #5 Wildlife Management Area",
    "key_name": "New Brunswick #5 Wildlife Management Area",
    "type": "Wildlife Management Area",
-   "grade": "official",
+   "grade": "pin",
    "pin": [
     47.4735,
     -65.3193
@@ -42123,29 +42161,17 @@
      "name": "New Brunswick #5 Wildlife Management Area",
      "type": "Wildlife Management Area",
      "layer": "canada-bounds/CA-6544.json"
-    },
-    {
-     "id": "NB WMZ:323",
-     "name": "New Brunswick #5 Wildlife Management Area",
-     "type": "Wildlife Management Area",
-     "acres": 768121,
-     "layer": "NB WMZ"
     }
    ],
-   "record_ids": [
-    "NB WMZ:323"
-   ],
+   "record_ids": [],
    "tests": {
     "T1": {
      "flag": "FAR",
      "metres": 26350.6
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 779522.0,
-     "official_acres": 768121.0,
-     "times": 1.01,
-     "official_from": "the key's record acres (CPCAD / provincial lists)"
+     "flag": "NO FIGURE",
+     "outline_acres": 779522.0
     },
     "T3": {
      "flag": "PASS",
@@ -42196,6 +42222,16 @@
        "share": 1.0
       },
       {
+       "ref": "CA-0779",
+       "name": "Jacquet River Gorge Natural Area",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-4350",
+       "name": "Allardville Protected Natural Area",
+       "share": 1.0
+      },
+      {
        "ref": "CA-6471",
        "name": "Nicolas Denys National Historic Site",
        "share": 0.89
@@ -42216,7 +42252,7 @@
        "share": 0.63
       }
      ],
-     "count": 8
+     "count": 10
     },
     "T7": {
      "detail_m": 5,
@@ -42227,7 +42263,8 @@
      "note": "between 3 and 5 m: allowed, but over the 3 m aim"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
      "flag": "CAN'T TELL",
@@ -42313,27 +42350,57 @@
      "flag": "SPILL",
      "parks": [
       {
+       "ref": "CA-4456",
+       "name": "Mount Akroyd Protected Area",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-1257",
+       "name": "Upsalquitch Forks Nature Reserve",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-4491",
+       "name": "Popelogan Depot Protected Area",
+       "share": 1.0
+      },
+      {
        "ref": "CA-6480",
        "name": "Northern Uplands Ecological Area",
        "share": 1.0
       },
       {
-       "ref": "CA-5267",
-       "name": "Rotary Memorial Park Recreation Park",
-       "share": 0.97
+       "ref": "CA-1237",
+       "name": "Goulette Brook Nature Reserve",
+       "share": 1.0
       },
       {
-       "ref": "CA-6312",
-       "name": "Larry's Gulch Lodge Provincial Park",
-       "share": 0.76
+       "ref": "CA-0796",
+       "name": "Sugarloaf Provincial Park",
+       "share": 1.0
       },
       {
-       "ref": "CA-5186",
-       "name": "Inch Arran Point Front Range National Historic Site",
-       "share": 0.3
+       "ref": "CA-4521",
+       "name": "Stillwater Brook Protected Area",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-4536",
+       "name": "Upper Thorn Point Brook Protected Area",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-4473",
+       "name": "Northwest Upsalquitch River Protected Area",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-4445",
+       "name": "McDougalls Brook Protected Area",
+       "share": 1.0
       }
      ],
-     "count": 4
+     "count": 18
     },
     "T7": {
      "detail_m": 5,
@@ -42354,7 +42421,7 @@
    "problems": [],
    "status": "graded",
    "score": 5,
-   "why": "SPILL: The outline covers 100% of CA-6480 Northern Uplands Ecological Area, with no 2-fer row (maybe the wrong record) (+2 more flags)."
+   "why": "SPILL: The outline covers 100% of CA-4456 Mount Akroyd Protected Area, with no 2-fer row (maybe the wrong record) (+2 more flags)."
   },
   {
    "ref": "CA-6546",
@@ -42426,7 +42493,60 @@
      }
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-4418",
+       "name": "Jardine Brook Protected Area",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-4389",
+       "name": "Downs Gulch Protected Area",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-4361",
+       "name": "Bells Brook Protected Area",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-4435",
+       "name": "MacFarlane Brook Protected Area",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-4455",
+       "name": "Moose Valley Hill Protected Area",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-4392",
+       "name": "Eight Mile Brook Protected Area",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-4362",
+       "name": "Belone Brook Protected Area",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-4396",
+       "name": "Five Mile Brook Protected Area",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-1229",
+       "name": "Connors Brook Nature Reserve",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-4515",
+       "name": "South Kedgwick River Natural Area",
+       "share": 1.0
+      }
+     ],
+     "count": 15
     },
     "T7": {
      "detail_m": 5,
@@ -42446,8 +42566,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "TINY HOLES: The shape has problems: 1 hole(s) under 100 m2."
+   "score": 4,
+   "why": "SPILL: The outline covers 100% of CA-4418 Jardine Brook Protected Area, with no 2-fer row (maybe the wrong record) (+1 more flag)."
   },
   {
    "ref": "CA-6547",
@@ -42512,6 +42632,16 @@
      "flag": "SPILL",
      "parks": [
       {
+       "ref": "CA-4496",
+       "name": "Quisibis River Protected Area",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-4495",
+       "name": "Quisibis Mountain Protected Area",
+       "share": 1.0
+      },
+      {
        "ref": "CA-6479",
        "name": "Central Uplands Ecological Area",
        "share": 1.0
@@ -42527,6 +42657,16 @@
        "share": 1.0
       },
       {
+       "ref": "CA-4407",
+       "name": "Green River North Protected Area",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-4394",
+       "name": "Falls Brook Protected Area",
+       "share": 1.0
+      },
+      {
        "ref": "CA-6443",
        "name": "Edmundston CPR Station Historic Site",
        "share": 0.85
@@ -42537,7 +42677,7 @@
        "share": 0.65
       }
      ],
-     "count": 5
+     "count": 9
     },
     "T7": {
      "detail_m": 5,
@@ -42558,7 +42698,7 @@
    "problems": [],
    "status": "graded",
    "score": 3,
-   "why": "SPILL: The outline covers 100% of CA-6479 Central Uplands Ecological Area, with no 2-fer row (maybe the wrong record)."
+   "why": "SPILL: The outline covers 100% of CA-4496 Quisibis River Protected Area, with no 2-fer row (maybe the wrong record)."
   },
   {
    "ref": "CA-6548",
@@ -42623,6 +42763,31 @@
      "flag": "SPILL",
      "parks": [
       {
+       "ref": "CA-4397",
+       "name": "Foley Island Protected Area",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-4409",
+       "name": "Grew Brook Protected Area",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-1235",
+       "name": "Glazier Lake Nature Reserve",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-4354",
+       "name": "Baker Brook Protected Area",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-0771",
+       "name": "De la République Provincial Park",
+       "share": 1.0
+      },
+      {
        "ref": "CA-6441",
        "name": "Cathedral of the Immaculate Conception Historic Site",
        "share": 0.86
@@ -42638,7 +42803,7 @@
        "share": 0.33
       }
      ],
-     "count": 3
+     "count": 8
     },
     "T7": {
      "detail_m": 5,
@@ -42659,14 +42824,14 @@
    "problems": [],
    "status": "graded",
    "score": 3,
-   "why": "SPILL: The outline covers 86% of CA-6441 Cathedral of the Immaculate Conception Historic Site, with no 2-fer row (maybe the wrong record)."
+   "why": "SPILL: The outline covers 100% of CA-4397 Foley Island Protected Area, with no 2-fer row (maybe the wrong record)."
   },
   {
    "ref": "CA-6549",
    "name": "New Brunswick #6 Wildlife Management Area",
    "key_name": "New Brunswick #6 Wildlife Management Area",
    "type": "Wildlife Management Area",
-   "grade": "official",
+   "grade": "pin",
    "pin": [
     47.2844,
     -66.7125
@@ -42681,29 +42846,17 @@
      "name": "New Brunswick #6 Wildlife Management Area",
      "type": "Wildlife Management Area",
      "layer": "canada-bounds/CA-6549.json"
-    },
-    {
-     "id": "NB WMZ:329",
-     "name": "New Brunswick #6 Wildlife Management Area",
-     "type": "Wildlife Management Area",
-     "acres": 619679,
-     "layer": "NB WMZ"
     }
    ],
-   "record_ids": [
-    "NB WMZ:329"
-   ],
+   "record_ids": [],
    "tests": {
     "T1": {
      "flag": "FAR",
      "metres": 21234.3
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 621335.2,
-     "official_acres": 619679.0,
-     "times": 1.0,
-     "official_from": "the key's record acres (CPCAD / provincial lists)"
+     "flag": "NO FIGURE",
+     "outline_acres": 621335.2
     },
     "T3": {
      "flag": "PASS",
@@ -42721,7 +42874,30 @@
      "pieces": 1
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-4377",
+       "name": "Burgess Settlement Protected Area",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-4468",
+       "name": "Nictau Protected Area",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-4426",
+       "name": "Little Cedar Brook Protected Area",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-4364",
+       "name": "Big Cedar Brook Protected Area",
+       "share": 1.0
+      }
+     ],
+     "count": 4
     },
     "T7": {
      "detail_m": 5,
@@ -42732,7 +42908,8 @@
      "note": "between 3 and 5 m: allowed, but over the 3 m aim"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
      "flag": "CAN'T TELL",
@@ -42741,8 +42918,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 5,
-   "why": "FAR: POTA's pin is 21.2 km outside the outline."
+   "score": 8,
+   "why": "FAR: POTA's pin is 21.2 km outside the outline (+1 more flag)."
   },
   {
    "ref": "CA-6550",
@@ -42807,12 +42984,37 @@
      "flag": "SPILL",
      "parks": [
       {
+       "ref": "CA-4518",
+       "name": "Spud Brook Protected Area",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-1233",
+       "name": "Dungarvon Nature Reserve",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-4534",
+       "name": "Upper Dungarvon River Protected Area",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-1234",
+       "name": "Dungarvon Whooper Spring Woodlot Nature Reserve",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-4367",
+       "name": "Big Rocky Brook Protected Area",
+       "share": 0.99
+      },
+      {
        "ref": "CA-5249",
        "name": "Blackville Recreation Park",
        "share": 0.85
       }
      ],
-     "count": 1
+     "count": 6
     },
     "T7": {
      "detail_m": 5,
@@ -42833,7 +43035,7 @@
    "problems": [],
    "status": "graded",
    "score": 3,
-   "why": "SPILL: The outline covers 85% of CA-5249 Blackville Recreation Park, with no 2-fer row (maybe the wrong record)."
+   "why": "SPILL: The outline covers 100% of CA-4518 Spud Brook Protected Area, with no 2-fer row (maybe the wrong record)."
   },
   {
    "ref": "CA-6551",
@@ -42895,7 +43097,30 @@
      "pieces": 1
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-4531",
+       "name": "Trout Brook Protected Area",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-4509",
+       "name": "Shinnickburn Protected Natural Area",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-4507",
+       "name": "Semiwagan Meadows Protected Area",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-4398",
+       "name": "Gaspereau Protected Area",
+       "share": 0.39
+      }
+     ],
+     "count": 4
     },
     "T7": {
      "detail_m": 5,
@@ -42915,8 +43140,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 0,
-   "why": "All tests pass."
+   "score": 3,
+   "why": "SPILL: The outline covers 100% of CA-4531 Trout Brook Protected Area, with no 2-fer row (maybe the wrong record)."
   },
   {
    "ref": "CA-6555",

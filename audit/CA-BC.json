@@ -1,6 +1,6 @@
 {
  "area": "CA-BC",
- "built": "2026-11-08",
+ "built": "2026-11-15",
  "tool": "KPC-map-audit",
  "rules": "2026-11-02c",
  "parks": [
@@ -70,7 +70,15 @@
      "pieces": 2
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-3539",
+       "name": "George C. Reifel Migratory Bird Sanctuary",
+       "share": 0.38
+      }
+     ],
+     "count": 1
     },
     "T7": {
      "flag": "N/A",
@@ -86,8 +94,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 0,
-   "why": "All tests pass."
+   "score": 3,
+   "why": "SPILL: The outline covers 38% of CA-3539 George C. Reifel Migratory Bird Sanctuary, with no 2-fer row (maybe the wrong record)."
   },
   {
    "ref": "CA-0017",
@@ -273,7 +281,8 @@
     }
    ],
    "record_ids": [
-    "cpcad#21993"
+    "cpcad#21993",
+    "Parks Canada:11"
    ],
    "tests": {
     "T1": {
@@ -285,7 +294,8 @@
      "outline_acres": 334522.0,
      "official_acres": 333345.2,
      "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "note": "only the records this tool can read (CPCAD) are drawn and counted"
     },
     "T3": {
      "flag": "PASS",
@@ -325,7 +335,9 @@
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
+   "problems": [
+    "CAN'T TELL: 1 record(s) on provincial lists this tool can't read live (Parks Canada)"
+   ],
    "status": "graded",
    "score": 3,
    "why": "SPILL: The outline covers 100% of CA-4796 Rogers Pass National Historic Site, with no 2-fer row (maybe the wrong record)."
@@ -485,40 +497,58 @@
     -131.558
    ],
    "outline_from": [
-    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+    "canada-bounds/CA-0032.json"
    ],
-   "acres_drawn": 364458.7,
+   "acres_drawn": 968495.2,
    "records": [
     {
-     "id": "cpcad#22004",
-     "name": "Gwaii Haanas National Park Reserve Of Canada And Haida Heritage Site",
+     "id": "canada-bounds",
+     "name": "Gwaii Haanas National Park Reserve, National Marine Conservation Area Reserve, and Haida Heritage Site",
      "type": "National Park",
-     "acres": 364332.2,
-     "acres_from": "O_AREA_HA",
-     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
-     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=22004&outFields=*&returnGeometry=false&f=html"
+     "layer": "canada-bounds/CA-0032.json"
+    },
+    {
+     "id": "Parks Canada:14",
+     "name": "Gwaii Haanas National Park Reserve, National Marine Conservation Area Reserve, and Haida Heritage Site",
+     "type": "National Park",
+     "acres": 1074099,
+     "layer": "Parks Canada"
+    },
+    {
+     "id": "22004",
+     "name": "Gwaii Haanas National Park Reserve Of Canada And Haida Heritage Site",
+     "acres": 364332,
+     "layer": "CPCAD"
+    },
+    {
+     "id": "Parks Canada:51",
+     "name": "Gwaii Haanas National Park Reserve of Canada and Haida Heritage Site",
+     "acres": 361465,
+     "layer": "Parks Canada"
     }
    ],
    "record_ids": [
-    "cpcad#22004"
+    "Parks Canada:14",
+    "cpcad#22004",
+    "Parks Canada:51"
    ],
    "tests": {
     "T1": {
-     "flag": "PASS",
-     "metres": 0
+     "flag": "OUTSIDE",
+     "metres": 2775.8
     },
     "T2": {
      "flag": "PASS",
-     "outline_acres": 364458.7,
-     "official_acres": 364332.2,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "outline_acres": 968495.2,
+     "official_acres": 1435564.0,
+     "times": 1.48,
+     "official_from": "the key's record acres (CPCAD / provincial lists)"
     },
     "T3": {
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "Gwaii Haanas and Haida National Park",
-     "record_name": "Gwaii Haanas National Park Reserve Of Canada And Haida Heritage Site"
+     "record_name": "Gwaii Haanas National Park Reserve, National Marine Conservation Area Reserve, and Haida Heritage Site"
     },
     "T4": {
      "park_kind": "national park",
@@ -526,21 +556,8 @@
      "flag": "PASS"
     },
     "T5": {
-     "flag": "INVALID",
-     "pieces": 1943,
-     "flags": [
-      "INVALID",
-      "SLIVERS",
-      "TINY HOLES",
-      "SCATTERED"
-     ],
-     "note": "Nested shells[-130.966901490079 52.207983057089]; 87 piece(s) under 10 m wide; 26 hole(s) under 100 m2; 1943 pieces spread over 128 km",
-     "repair": {
-      "ok": true,
-      "area_change_pct": 0.0,
-      "holes": 26,
-      "pieces": 87
-     }
+     "flag": "PASS",
+     "pieces": 1
     },
     "T6": {
      "flag": "SPILL",
@@ -548,32 +565,35 @@
       {
        "ref": "CA-5483",
        "name": "SGang Gwaay National Heritage Site",
-       "share": 0.81
+       "share": 1.0
       },
       {
        "ref": "CA-4795",
        "name": "Nan Sdins National Historic Site",
-       "share": 0.65
+       "share": 1.0
       }
      ],
      "count": 2
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "detail_m": 0.68,
+     "declared_m": null,
+     "coordinate_step_m": 0.68,
+     "median_spacing_m": 59.0,
+     "flag": "PASS"
     },
     "T8": {
      "flag": "PASS"
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 7,
-   "why": "SPILL: The outline covers 81% of CA-5483 SGang Gwaay National Heritage Site, with no 2-fer row (maybe the wrong record) (+4 more flags)."
+   "score": 6,
+   "why": "OUTSIDE: POTA's pin is 2.8 km outside the outline (+1 more flag)."
   },
   {
    "ref": "CA-0045",
@@ -601,7 +621,8 @@
     }
    ],
    "record_ids": [
-    "cpcad#22012"
+    "cpcad#22012",
+    "Parks Canada:19"
    ],
    "tests": {
     "T1": {
@@ -613,7 +634,8 @@
      "outline_acres": 340836.0,
      "official_acres": 347529.0,
      "times": 1.02,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "note": "only the records this tool can read (CPCAD) are drawn and counted"
     },
     "T3": {
      "flag": "PASS",
@@ -645,7 +667,9 @@
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
+   "problems": [
+    "CAN'T TELL: 1 record(s) on provincial lists this tool can't read live (Parks Canada)"
+   ],
    "status": "graded",
    "score": 0,
    "why": "All tests pass."
@@ -729,7 +753,8 @@
     }
    ],
    "record_ids": [
-    "cpcad#22019"
+    "cpcad#22019",
+    "Parks Canada:43"
    ],
    "tests": {
     "T1": {
@@ -741,7 +766,8 @@
      "outline_acres": 65042.1,
      "official_acres": 64865.2,
      "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "note": "only the records this tool can read (CPCAD) are drawn and counted"
     },
     "T3": {
      "flag": "PASS",
@@ -773,7 +799,9 @@
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
+   "problems": [
+    "CAN'T TELL: 1 record(s) on provincial lists this tool can't read live (Parks Canada)"
+   ],
    "status": "graded",
    "score": 0,
    "why": "All tests pass."
@@ -814,7 +842,8 @@
    ],
    "record_ids": [
     "cpcad#22022",
-    "cpcad#22023"
+    "cpcad#22023",
+    "Parks Canada:25"
    ],
    "tests": {
     "T1": {
@@ -826,7 +855,8 @@
      "outline_acres": 127413.9,
      "official_acres": 126023.7,
      "times": 1.01,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "note": "only the records this tool can read (CPCAD) are drawn and counted"
     },
     "T3": {
      "flag": "PASS",
@@ -854,7 +884,15 @@
      }
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-5344",
+       "name": "The West Coast Trail National Park",
+       "share": 0.56
+      }
+     ],
+     "count": 1
     },
     "T7": {
      "flag": "N/A",
@@ -869,11 +907,12 @@
     }
    },
    "problems": [
+    "CAN'T TELL: 1 record(s) on provincial lists this tool can't read live (Parks Canada)",
     "record 22022: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
    ],
    "status": "graded",
-   "score": 1,
-   "why": "TINY HOLES: The shape has problems: 3559 hole(s) under 100 m2."
+   "score": 4,
+   "why": "SPILL: The outline covers 56% of CA-5344 The West Coast Trail National Park, with no 2-fer row (maybe the wrong record) (+1 more flag)."
   },
   {
    "ref": "CA-0079",
@@ -1208,7 +1247,8 @@
     }
    ],
    "record_ids": [
-    "cpcad#22056"
+    "cpcad#22056",
+    "Parks Canada:45"
    ],
    "tests": {
     "T1": {
@@ -1220,7 +1260,8 @@
      "outline_acres": 319382.4,
      "official_acres": 324474.1,
      "times": 1.02,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "note": "only the records this tool can read (CPCAD) are drawn and counted"
     },
     "T3": {
      "flag": "PASS",
@@ -1249,9 +1290,14 @@
        "ref": "CA-4793",
        "name": "Kicking Horse Pass National Historic Site",
        "share": 1.0
+      },
+      {
+       "ref": "CA-4798",
+       "name": "Twin Falls Tea House National Historic Site",
+       "share": 1.0
       }
      ],
-     "count": 2
+     "count": 3
     },
     "T7": {
      "flag": "N/A",
@@ -1265,7 +1311,9 @@
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
+   "problems": [
+    "CAN'T TELL: 1 record(s) on provincial lists this tool can't read live (Parks Canada)"
+   ],
    "status": "graded",
    "score": 3,
    "why": "SPILL: The outline covers 100% of CA-6133 Kicking Horse River Canadian Heritage River, with no 2-fer row (maybe the wrong record)."
@@ -6532,7 +6580,15 @@
      "pieces": 3
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-3543",
+       "name": "Gilnockie Creek Ecological Reserve",
+       "share": 1.0
+      }
+     ],
+     "count": 1
     },
     "T7": {
      "detail_m": 5,
@@ -6558,8 +6614,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "DUPLICATE: Another park number uses the same record: CA-3542."
+   "score": 4,
+   "why": "SPILL: The outline covers 100% of CA-3543 Gilnockie Creek Ecological Reserve, with no 2-fer row (maybe the wrong record) (+1 more flag)."
   },
   {
    "ref": "CA-1203",
@@ -9413,9 +9469,14 @@
        "ref": "CA-3192",
        "name": "Babine Lake (Pendleton Bay Site) Marine Park",
        "share": 1.0
+      },
+      {
+       "ref": "CA-3194",
+       "name": "Babine Lake (Smithers Landing Site) Marine Park",
+       "share": 1.0
       }
      ],
-     "count": 1
+     "count": 2
     },
     "T7": {
      "flag": "N/A",
@@ -9505,12 +9566,17 @@
      "flag": "SPILL",
      "parks": [
       {
+       "ref": "CA-3193",
+       "name": "Babine Lake (Pinkut Creek Site) Marine Park",
+       "share": 1.0
+      },
+      {
        "ref": "CA-3192",
        "name": "Babine Lake (Pendleton Bay Site) Marine Park",
        "share": 1.0
       }
      ],
-     "count": 1
+     "count": 2
     },
     "T7": {
      "flag": "N/A",
@@ -12360,7 +12426,15 @@
      }
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-4214",
+       "name": "Tranquille Wildlife Management Area",
+       "share": 0.94
+      }
+     ],
+     "count": 1
     },
     "T7": {
      "flag": "N/A",
@@ -12379,8 +12453,8 @@
     "record 20345: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
    ],
    "status": "graded",
-   "score": 1,
-   "why": "SLIVERS: The shape has problems: 3 piece(s) under 10 m wide."
+   "score": 4,
+   "why": "SPILL: The outline covers 94% of CA-4214 Tranquille Wildlife Management Area, with no 2-fer row (maybe the wrong record) (+1 more flag)."
   },
   {
    "ref": "CA-3229",
@@ -34205,7 +34279,15 @@
      "pieces": 1
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-5327",
+       "name": "Island 22 Regional Park",
+       "share": 1.0
+      }
+     ],
+     "count": 1
     },
     "T7": {
      "flag": "N/A",
@@ -34223,8 +34305,8 @@
     "CAN'T TELL: 1 record(s) on provincial lists this tool can't read live (BC BC Parks )"
    ],
    "status": "graded",
-   "score": 1,
-   "why": "NEAR: POTA's pin is 16 m outside the outline."
+   "score": 4,
+   "why": "SPILL: The outline covers 100% of CA-5327 Island 22 Regional Park, with no 2-fer row (maybe the wrong record) (+1 more flag)."
   },
   {
    "ref": "CA-3499",
@@ -38094,7 +38176,15 @@
      }
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-0001",
+       "name": "Alaksen National Wildlife Area",
+       "share": 0.39
+      }
+     ],
+     "count": 1
     },
     "T7": {
      "flag": "N/A",
@@ -38110,8 +38200,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "TINY HOLES: The shape has problems: 2 hole(s) under 100 m2."
+   "score": 4,
+   "why": "SPILL: The outline covers 39% of CA-0001 Alaksen National Wildlife Area, with no 2-fer row (maybe the wrong record) (+1 more flag)."
   },
   {
    "ref": "CA-3540",
@@ -38447,7 +38537,15 @@
      "pieces": 1
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-0750",
+       "name": "Yahk Provincial Park",
+       "share": 0.49
+      }
+     ],
+     "count": 1
     },
     "T7": {
      "flag": "N/A",
@@ -38465,8 +38563,8 @@
     "CAN'T TELL: 1 record(s) on provincial lists this tool can't read live (BC BC Parks )"
    ],
    "status": "graded",
-   "score": 0,
-   "why": "All tests pass."
+   "score": 3,
+   "why": "SPILL: The outline covers 49% of CA-0750 Yahk Provincial Park, with no 2-fer row (maybe the wrong record)."
   },
   {
    "ref": "CA-3544",
@@ -62920,7 +63018,15 @@
      "pieces": 3
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-4027",
+       "name": "Roberts Creek Provincial Park",
+       "share": 0.78
+      }
+     ],
+     "count": 1
     },
     "T7": {
      "flag": "N/A",
@@ -62938,8 +63044,8 @@
     "CAN'T TELL: 1 record(s) on provincial lists this tool can't read live (BC BC Parks )"
    ],
    "status": "graded",
-   "score": 3,
-   "why": "OUTSIDE: POTA's pin is 827 m outside the outline."
+   "score": 6,
+   "why": "OUTSIDE: POTA's pin is 827 m outside the outline (+1 more flag)."
   },
   {
    "ref": "CA-3835",
@@ -79086,7 +79192,15 @@
      "pieces": 3
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-3539",
+       "name": "George C. Reifel Migratory Bird Sanctuary",
+       "share": 0.61
+      }
+     ],
+     "count": 1
     },
     "T7": {
      "flag": "N/A",
@@ -79102,8 +79216,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 0,
-   "why": "All tests pass."
+   "score": 3,
+   "why": "SPILL: The outline covers 61% of CA-3539 George C. Reifel Migratory Bird Sanctuary, with no 2-fer row (maybe the wrong record)."
   },
   {
    "ref": "CA-4027",
@@ -79179,7 +79293,15 @@
      "pieces": 6
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-3834",
+       "name": "Mount Elphinstone Provincial Park",
+       "share": 1.0
+      }
+     ],
+     "count": 1
     },
     "T7": {
      "detail_m": 5,
@@ -79199,8 +79321,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 1.6 times bigger than the official 287 acres (445 ac drawn)."
+   "score": 4,
+   "why": "SPILL: The outline covers 100% of CA-3834 Mount Elphinstone Provincial Park, with no 2-fer row (maybe the wrong record) (+1 more flag)."
   },
   {
    "ref": "CA-4028",
@@ -79545,7 +79667,15 @@
      "pieces": 1
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-5901",
+       "name": "Kwomais Point Park",
+       "share": 0.67
+      }
+     ],
+     "count": 1
     },
     "T7": {
      "detail_m": 5,
@@ -79565,8 +79695,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 8,
-   "why": "FAR: POTA's pin is 31.7 km outside the outline (+1 more flag)."
+   "score": 11,
+   "why": "FAR: POTA's pin is 31.7 km outside the outline (+2 more flags)."
   },
   {
    "ref": "CA-4032",
@@ -80635,7 +80765,15 @@
      "pieces": 1
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-3209",
+       "name": "Beaver Point Provincial Park",
+       "share": 0.99
+      }
+     ],
+     "count": 1
     },
     "T7": {
      "detail_m": 5,
@@ -80655,8 +80793,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "OFF: The outline is 1.5 times smaller than the official 2,059 acres (1,357 ac drawn)."
+   "score": 4,
+   "why": "SPILL: The outline covers 99% of CA-3209 Beaver Point Provincial Park, with no 2-fer row (maybe the wrong record) (+1 more flag)."
   },
   {
    "ref": "CA-4045",
@@ -82332,7 +82470,15 @@
      "pieces": 1
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-3724",
+       "name": "Lanz and Cox Islands Provincial Park",
+       "share": 0.62
+      }
+     ],
+     "count": 1
     },
     "T7": {
      "flag": "N/A",
@@ -82348,8 +82494,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 0,
-   "why": "All tests pass."
+   "score": 3,
+   "why": "SPILL: The outline covers 62% of CA-3724 Lanz and Cox Islands Provincial Park, with no 2-fer row (maybe the wrong record)."
   },
   {
    "ref": "CA-4066",
@@ -89575,7 +89721,15 @@
      "pieces": 2
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-5502",
+       "name": "Iona Beach Regional Park",
+       "share": 0.74
+      }
+     ],
+     "count": 1
     },
     "T7": {
      "flag": "N/A",
@@ -89591,8 +89745,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 0,
-   "why": "All tests pass."
+   "score": 3,
+   "why": "SPILL: The outline covers 74% of CA-5502 Iona Beach Regional Park, with no 2-fer row (maybe the wrong record)."
   },
   {
    "ref": "CA-4156",
@@ -98263,7 +98417,15 @@
      }
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-4218",
+       "name": "Trial Islands Ecological Reserve",
+       "share": 1.0
+      }
+     ],
+     "count": 1
     },
     "T7": {
      "flag": "N/A",
@@ -98279,8 +98441,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "TINY HOLES: The shape has problems: 2 hole(s) under 100 m2."
+   "score": 4,
+   "why": "SPILL: The outline covers 100% of CA-4218 Trial Islands Ecological Reserve, with no 2-fer row (maybe the wrong record) (+1 more flag)."
   },
   {
    "ref": "CA-4259",
@@ -104353,7 +104515,15 @@
      "pieces": 1
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-3498",
+       "name": "Ferry Island Provincial Park",
+       "share": 0.99
+      }
+     ],
+     "count": 1
     },
     "T7": {
      "detail_m": 5,
@@ -104373,8 +104543,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 5,
-   "why": "FAR: POTA's pin is 13.4 km outside the outline."
+   "score": 8,
+   "why": "FAR: POTA's pin is 13.4 km outside the outline (+1 more flag)."
   },
   {
    "ref": "CA-5330",
@@ -106917,7 +107087,15 @@
      "pieces": 1
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-4031",
+       "name": "Roche Point Park",
+       "share": 0.68
+      }
+     ],
+     "count": 1
     },
     "T7": {
      "detail_m": 72.99,
@@ -106937,8 +107115,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 1,
-   "why": "TOO COARSE: Saved at about 73 m detail."
+   "score": 4,
+   "why": "SPILL: The outline covers 68% of CA-4031 Roche Point Park, with no 2-fer row (maybe the wrong record) (+1 more flag)."
   },
   {
    "ref": "CA-6131",

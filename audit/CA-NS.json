@@ -1,6 +1,6 @@
 {
  "area": "CA-NS",
- "built": "2026-11-08",
+ "built": "2026-11-15",
  "tool": "KPC-map-audit",
  "rules": "2026-11-02c",
  "parks": [
@@ -177,6 +177,12 @@
      "layer": "NS-PPA Nova "
     },
     {
+     "id": "Parks Canada:5",
+     "name": "Cape Breton Highlands National Park of Canada",
+     "acres": 233319,
+     "layer": "Parks Canada"
+    },
+    {
      "id": "Nova Scotia :35",
      "name": "Cape Breton Highlands National Park Of Canada",
      "acres": 226558,
@@ -205,6 +211,7 @@
     "cpcad#21986",
     "Nova Scotia ~2:131",
     "NS-PPA Nova :131",
+    "Parks Canada:5",
     "Nova Scotia :35",
     "Nova Scotia ~2:130",
     "NS-PPA Nova :130",
@@ -226,7 +233,7 @@
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "Cape Breton Highlands National Park",
-     "record_name": "Cape Breton Highlands National Park Of Canada"
+     "record_name": "Cape Breton Highlands National Park of Canada"
     },
     "T4": {
      "park_kind": "national park",
@@ -544,9 +551,15 @@
      "layer": "canada-bounds/CA-0042.json"
     },
     {
+     "id": "Parks Canada:17",
+     "name": "Kejimkujik National Park and National Historic Site of Canada",
+     "type": "National Park",
+     "acres": 99502,
+     "layer": "Parks Canada"
+    },
+    {
      "id": "Nova Scotia ~2:144",
      "name": "Kejimkujik National Park And National Historic Site Of Canada",
-     "type": "National Park",
      "acres": 94445,
      "layer": "Nova Scotia ~2"
     },
@@ -603,15 +616,10 @@
      "name": "Kejimkujik National Park And National Historic Site Of Canada",
      "acres": 319,
      "layer": "CPCAD"
-    },
-    {
-     "id": "Nova Scotia ~2:797",
-     "name": "Kejimkujik National Park And National Historic Site Of Canada",
-     "acres": 96,
-     "layer": "Nova Scotia ~2"
     }
    ],
    "record_ids": [
+    "Parks Canada:17",
     "Nova Scotia ~2:144",
     "NS-PPA Nova :144",
     "cpcad#22008",
@@ -633,15 +641,15 @@
     "T2": {
      "flag": "OFF",
      "outline_acres": 99954.0,
-     "official_acres": 194107.0,
-     "times": 1.94,
+     "official_acres": 293609.0,
+     "times": 2.94,
      "official_from": "the key's record acres (CPCAD / provincial lists)"
     },
     "T3": {
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "Kejimkujik National Park",
-     "record_name": "Kejimkujik National Park And National Historic Site Of Canada"
+     "record_name": "Kejimkujik National Park and National Historic Site of Canada"
     },
     "T4": {
      "park_kind": "national park",
@@ -682,7 +690,7 @@
    "problems": [],
    "status": "graded",
    "score": 2,
-   "why": "OFF: The outline is 1.9 times smaller than the official 194,107 acres (99,954 ac drawn) (+1 more flag)."
+   "why": "OFF: The outline is 2.9 times smaller than the official 293,609 acres (99,954 ac drawn) (+1 more flag)."
   },
   {
    "ref": "CA-0043",
@@ -6024,7 +6032,15 @@
      "pieces": 3
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-5495",
+       "name": "Swissair Memorial Site (Bayswater) Provincial Park",
+       "share": 0.99
+      }
+     ],
+     "count": 1
     },
     "T7": {
      "detail_m": 5,
@@ -6044,8 +6060,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 0,
-   "why": "All tests pass."
+   "score": 3,
+   "why": "SPILL: The outline covers 99% of CA-5495 Swissair Memorial Site (Bayswater) Provincial Park, with no 2-fer row (maybe the wrong record)."
   },
   {
    "ref": "CA-0886",
@@ -10376,7 +10392,7 @@
     "T8": {
      "flag": "DUPLICATE",
      "parks": {
-      "CA-1824": [
+      "CA-1822": [
        "cpcad#22214",
        "cpcad#22142",
        "cpcad#22143",
@@ -10386,7 +10402,7 @@
        "cpcad#22139",
        "cpcad#22144"
       ],
-      "CA-1822": [
+      "CA-1824": [
        "cpcad#22214",
        "cpcad#22142",
        "cpcad#22143",
@@ -24395,7 +24411,15 @@
      "pieces": 12
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-1822",
+       "name": "Port Hebert Migratory Bird Sanctuary",
+       "share": 0.33
+      }
+     ],
+     "count": 1
     },
     "T7": {
      "detail_m": 5,
@@ -24438,8 +24462,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "NEAR: POTA's pin is 149 m outside the outline (+2 more flags)."
+   "score": 6,
+   "why": "SPILL: The outline covers 33% of CA-1822 Port Hebert Migratory Bird Sanctuary, with no 2-fer row (maybe the wrong record) (+3 more flags)."
   },
   {
    "ref": "CA-1825",
@@ -33685,7 +33709,15 @@
      }
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-6111",
+       "name": "Swiss Air Memorial Peggys Cove Provincial Park",
+       "share": 1.0
+      }
+     ],
+     "count": 1
     },
     "T7": {
      "detail_m": 5,
@@ -33705,8 +33737,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 2,
-   "why": "OFF: The outline is 1.7 times smaller than the official 4,380 acres (2,566 ac drawn) (+1 more flag)."
+   "score": 5,
+   "why": "SPILL: The outline covers 100% of CA-6111 Swiss Air Memorial Peggys Cove Provincial Park, with no 2-fer row (maybe the wrong record) (+2 more flags)."
   },
   {
    "ref": "CA-1914",
@@ -34864,6 +34896,11 @@
      "flag": "SPILL",
      "parks": [
       {
+       "ref": "CA-4849",
+       "name": "Wolfe's Landing National Historic Site",
+       "share": 1.0
+      },
+      {
        "ref": "CA-6375",
        "name": "Louisbourg Lighthouse (The Tower) Historic Site",
        "share": 0.46
@@ -34874,7 +34911,7 @@
        "share": 0.39
       }
      ],
-     "count": 2
+     "count": 3
     },
     "T7": {
      "detail_m": 5,
@@ -34895,7 +34932,7 @@
    "problems": [],
    "status": "graded",
    "score": 3,
-   "why": "SPILL: The outline covers 46% of CA-6375 Louisbourg Lighthouse (The Tower) Historic Site, with no 2-fer row (maybe the wrong record)."
+   "why": "SPILL: The outline covers 100% of CA-4849 Wolfe's Landing National Historic Site, with no 2-fer row (maybe the wrong record)."
   },
   {
    "ref": "CA-4838",

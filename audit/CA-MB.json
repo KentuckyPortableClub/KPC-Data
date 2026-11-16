@@ -1,6 +1,6 @@
 {
  "area": "CA-MB",
- "built": "2026-11-08",
+ "built": "2026-11-15",
  "tool": "KPC-map-audit",
  "rules": "2026-11-02c",
  "parks": [
@@ -194,7 +194,8 @@
     }
    ],
    "record_ids": [
-    "cpcad#22034"
+    "cpcad#22034",
+    "Parks Canada:31"
    ],
    "tests": {
     "T1": {
@@ -206,7 +207,8 @@
      "outline_acres": 756015.7,
      "official_acres": 733334.6,
      "times": 1.03,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "note": "only the records this tool can read (CPCAD) are drawn and counted"
     },
     "T3": {
      "flag": "PASS",
@@ -244,7 +246,9 @@
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
+   "problems": [
+    "CAN'T TELL: 1 record(s) on provincial lists this tool can't read live (Parks Canada)"
+   ],
    "status": "graded",
    "score": 1,
    "why": "DUPLICATE: Another park number uses the same record: CA-0083."
@@ -360,7 +364,8 @@
    ],
    "record_ids": [
     "cpcad#22051",
-    "cpcad#22052"
+    "cpcad#22052",
+    "Parks Canada:40"
    ],
    "tests": {
     "T1": {
@@ -372,7 +377,8 @@
      "outline_acres": 2838176.4,
      "official_acres": 2835534.2,
      "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "note": "only the records this tool can read (CPCAD) are drawn and counted"
     },
     "T3": {
      "flag": "PASS",
@@ -404,7 +410,9 @@
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
+   "problems": [
+    "CAN'T TELL: 1 record(s) on provincial lists this tool can't read live (Parks Canada)"
+   ],
    "status": "graded",
    "score": 0,
    "why": "All tests pass."
@@ -17428,7 +17436,7 @@
    "name": "Saskeram Wildlife Management Area",
    "key_name": "Saskeram Wildlife Management Area",
    "type": "Wildlife Management Area",
-   "grade": "official",
+   "grade": "pin",
    "pin": [
     53.568,
     -101.31
@@ -17442,28 +17450,17 @@
      "id": "canada-bounds",
      "name": "Saskeram Wildlife Management Area",
      "layer": "canada-bounds/CA-2506.json"
-    },
-    {
-     "id": "Manitoba wil~2:103",
-     "name": "Saskeram Wildlife Management Area",
-     "acres": 234500,
-     "layer": "Manitoba wil~2"
     }
    ],
-   "record_ids": [
-    "Manitoba wil~2:103"
-   ],
+   "record_ids": [],
    "tests": {
     "T1": {
      "flag": "FAR",
      "metres": 25829.3
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 234760.2,
-     "official_acres": 234500.0,
-     "times": 1.0,
-     "official_from": "the key's record acres (CPCAD / provincial lists)"
+     "flag": "NO FIGURE",
+     "outline_acres": 234760.2
     },
     "T3": {
      "flag": "PASS",
@@ -17492,7 +17489,8 @@
      "note": "between 3 and 5 m: allowed, but over the 3 m aim"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
      "flag": "CAN'T TELL",

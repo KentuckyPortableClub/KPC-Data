@@ -1,6 +1,6 @@
 {
  "area": "CA-SK",
- "built": "2026-11-08",
+ "built": "2026-11-15",
  "tool": "KPC-map-audit",
  "rules": "2026-11-02c",
  "parks": [
@@ -101,9 +101,15 @@
      "layer": "canada-bounds/CA-0029.json"
     },
     {
+     "id": "Parks Canada:12",
+     "name": "Grasslands National Park of Canada",
+     "type": "National Park",
+     "acres": 187870,
+     "layer": "Parks Canada"
+    },
+    {
      "id": "21994",
      "name": "Grasslands National Park Of Canada",
-     "type": "National Park",
      "acres": 180387,
      "layer": "CPCAD"
     },
@@ -127,6 +133,7 @@
     }
    ],
    "record_ids": [
+    "Parks Canada:12",
     "cpcad#21994",
     "SK-PT Govern:179",
     "SK-ALL Gover:3314",
@@ -140,8 +147,8 @@
     "T2": {
      "flag": "PASS",
      "outline_acres": 189133.4,
-     "official_acres": 181104.0,
-     "times": 1.04,
+     "official_acres": 278896.0,
+     "times": 1.47,
      "official_from": "the key's record acres (CPCAD / provincial lists)"
     },
     "T3": {
@@ -399,6 +406,12 @@
      "layer": "SK-PT Govern"
     },
     {
+     "id": "Parks Canada:27",
+     "name": "Prince Albert National Park of Canada",
+     "acres": 973361,
+     "layer": "Parks Canada"
+    },
+    {
      "id": "22027",
      "name": "Prince Albert National Park Of Canada",
      "acres": 957433,
@@ -407,6 +420,7 @@
    ],
    "record_ids": [
     "SK-PT Govern:157",
+    "Parks Canada:27",
     "cpcad#22027"
    ],
    "tests": {
@@ -415,17 +429,17 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
+     "flag": "OFF",
      "outline_acres": 977493.0,
-     "official_acres": 988424.0,
-     "times": 1.01,
+     "official_acres": 1961785.0,
+     "times": 2.01,
      "official_from": "the key's record acres (CPCAD / provincial lists)"
     },
     "T3": {
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "Prince Albert National Park",
-     "record_name": "Prince Albert National Park Of Canada"
+     "record_name": "Prince Albert National Park of Canada"
     },
     "T4": {
      "park_kind": "national park",
@@ -439,6 +453,21 @@
     "T6": {
      "flag": "SPILL",
      "parks": [
+      {
+       "ref": "CA-6145",
+       "name": "Hunters Lake Trail National Recreation Trail",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-6144",
+       "name": "Elk Trail National Recreation Trail",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-6143",
+       "name": "Freight Tait Springs Trail National Recreation Trail",
+       "share": 1.0
+      },
       {
        "ref": "CA-6142",
        "name": "Spruce River Highlands Trail National Recreation Trail",
@@ -460,27 +489,22 @@
        "share": 1.0
       },
       {
+       "ref": "CA-6151",
+       "name": "Boundary Bog Trail National Geologic Trail",
+       "share": 1.0
+      },
+      {
+       "ref": "CA-6153",
+       "name": "Fisher Trail National Recreation Trail",
+       "share": 1.0
+      },
+      {
        "ref": "CA-6152",
        "name": "Red Deer Trail National Recreation Trail",
        "share": 1.0
-      },
-      {
-       "ref": "CA-2900",
-       "name": "Waskesiu River Resource Management Area",
-       "share": 1.0
-      },
-      {
-       "ref": "CA-6149",
-       "name": "Narrows Peninsula Trail National Recreation Trail",
-       "share": 1.0
-      },
-      {
-       "ref": "CA-6150",
-       "name": "Kingsmere River Trail National Recreation Trail",
-       "share": 1.0
       }
      ],
-     "count": 8
+     "count": 17
     },
     "T7": {
      "detail_m": 5,
@@ -500,8 +524,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "SPILL: The outline covers 100% of CA-6142 Spruce River Highlands Trail National Recreation Trail, with no 2-fer row (maybe the wrong record)."
+   "score": 4,
+   "why": "SPILL: The outline covers 100% of CA-6145 Hunters Lake Trail National Recreation Trail, with no 2-fer row (maybe the wrong record) (+1 more flag)."
   },
   {
    "ref": "CA-0081",
@@ -12518,75 +12542,53 @@
    "name": "Backes Island Wildlife Refuge",
    "key_name": "Backes Island Wildlife Refuge",
    "type": "Wildlife Refuge",
-   "grade": "official",
+   "grade": "pin",
    "pin": [
     54.8736,
     -109.947
    ],
-   "outline_from": [
-    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
-   ],
-   "acres_drawn": 12.1,
-   "records": [
-    {
-     "id": "cpcad#18250",
-     "name": "Backes Island",
-     "type": "Wildlife Refuge",
-     "acres": 12.1,
-     "acres_from": "O_AREA_HA",
-     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
-     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=18250&outFields=*&returnGeometry=false&f=html"
-    }
-   ],
-   "record_ids": [
-    "cpcad#18250"
-   ],
+   "outline_from": [],
+   "acres_drawn": null,
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
-     "flag": "FAR",
-     "metres": 17844.1
+     "flag": "NO OUTLINE"
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 12.1,
-     "official_acres": 12.1,
-     "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "PASS",
-     "score": 1.0,
-     "pota_name": "Backes Island Wildlife Refuge",
-     "record_name": "Backes Island"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": "refuge",
-     "record_kind": "refuge",
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "PASS",
-     "pieces": 1
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "NO OUTLINE"
     },
     "T7": {
-     "flag": "N/A",
-     "note": "read live at full detail, not a saved copy"
+     "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "the source's layer details give no last-edit date"
+     "note": "a saved club copy: the source's last-edit date is not recorded with it"
     }
    },
    "problems": [],
    "status": "graded",
-   "score": 5,
-   "why": "FAR: POTA's pin is 17.8 km outside the outline."
+   "score": 0,
+   "why": "Nothing could be tested."
   },
   {
    "ref": "CA-2555",
@@ -16265,7 +16267,15 @@
      "pieces": 1
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-2654",
+       "name": "Fir River Road Recreation Site",
+       "share": 1.0
+      }
+     ],
+     "count": 1
     },
     "T7": {
      "flag": "N/A",
@@ -16281,8 +16291,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "MISMATCH: The record name 'Fir River' does not match POTA's name 'Fir River Ecological Reserve' (score 0.50)."
+   "score": 6,
+   "why": "MISMATCH: The record name 'Fir River' does not match POTA's name 'Fir River Ecological Reserve' (score 0.50) (+1 more flag)."
   },
   {
    "ref": "CA-2654",
@@ -18640,7 +18650,15 @@
      "pieces": 1
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-0081",
+       "name": "Raven Island National Wildlife Area",
+       "share": 1.0
+      }
+     ],
+     "count": 1
     },
     "T7": {
      "flag": "N/A",
@@ -18658,8 +18676,8 @@
     "official acres count once the land of cpcad#18248: it lies inside a bigger record from the same source"
    ],
    "status": "graded",
-   "score": 0,
-   "why": "All tests pass."
+   "score": 3,
+   "why": "SPILL: The outline covers 100% of CA-0081 Raven Island National Wildlife Area, with no 2-fer row (maybe the wrong record)."
   },
   {
    "ref": "CA-2718",
@@ -24045,7 +24063,15 @@
      "pieces": 1
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-2839",
+       "name": "Scentgrass Lake Game Preserve",
+       "share": 0.47
+      }
+     ],
+     "count": 1
     },
     "T7": {
      "flag": "N/A",
@@ -24061,8 +24087,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 0,
-   "why": "All tests pass."
+   "score": 3,
+   "why": "SPILL: The outline covers 47% of CA-2839 Scentgrass Lake Game Preserve, with no 2-fer row (maybe the wrong record)."
   },
   {
    "ref": "CA-2839",
@@ -24120,7 +24146,15 @@
      "pieces": 1
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-2838",
+       "name": "Scent Grass Lake Migratory Bird Sanctuary",
+       "share": 0.96
+      }
+     ],
+     "count": 1
     },
     "T7": {
      "flag": "N/A",
@@ -24136,8 +24170,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 0,
-   "why": "All tests pass."
+   "score": 3,
+   "why": "SPILL: The outline covers 96% of CA-2838 Scent Grass Lake Migratory Bird Sanctuary, with no 2-fer row (maybe the wrong record)."
   },
   {
    "ref": "CA-2844",
@@ -24233,7 +24267,7 @@
    "name": "Shell Lake Recreation Site",
    "key_name": "Shell Lake Recreation Site",
    "type": "Recreation Site",
-   "grade": "official",
+   "grade": "pin",
    "pin": [
     53.2257,
     -107.172
@@ -24248,36 +24282,17 @@
      "name": "Shell Lake Recreation Site",
      "type": "Recreation Site",
      "layer": "canada-bounds/CA-2846.json"
-    },
-    {
-     "id": "18476",
-     "name": "Shell Lake Recreation Site",
-     "type": "Recreation Site",
-     "acres": 90,
-     "layer": "CPCAD"
-    },
-    {
-     "id": "SK-ALL Gover:3373",
-     "name": "Shell Lake Recreation Site",
-     "acres": 50,
-     "layer": "SK-ALL Gover"
     }
    ],
-   "record_ids": [
-    "cpcad#18476",
-    "SK-ALL Gover:3373"
-   ],
+   "record_ids": [],
    "tests": {
     "T1": {
      "flag": "FAR",
      "metres": 72463.2
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 92.5,
-     "official_acres": 90.0,
-     "times": 1.03,
-     "official_from": "the key's record acres (CPCAD / provincial lists)"
+     "flag": "NO FIGURE",
+     "outline_acres": 92.5
     },
     "T3": {
      "flag": "PASS",
@@ -24306,7 +24321,8 @@
      "note": "between 3 and 5 m: allowed, but over the 3 m aim"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
      "flag": "CAN'T TELL",
@@ -26076,6 +26092,11 @@
      "flag": "SPILL",
      "parks": [
       {
+       "ref": "CA-2896",
+       "name": "Wascana Lake Migratory Bird Sanctuary",
+       "share": 1.0
+      },
+      {
        "ref": "CA-5139",
        "name": "Saskatchewan Legislative Building and Grounds National Historic Site",
        "share": 0.75
@@ -26086,7 +26107,7 @@
        "share": 0.75
       }
      ],
-     "count": 2
+     "count": 3
     },
     "T7": {
      "flag": "N/A",
@@ -26185,53 +26206,86 @@
    "name": "Wascana Trails Recreation Site",
    "key_name": "Wascana Trails Recreation Site",
    "type": "Recreation Site",
-   "grade": "pin",
+   "grade": "official",
    "pin": [
     50.5581,
     -104.84
    ],
-   "outline_from": [],
-   "acres_drawn": null,
-   "records": [],
-   "record_ids": [],
+   "outline_from": [
+    "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0"
+   ],
+   "acres_drawn": 314.0,
+   "records": [
+    {
+     "id": "cpcad#18465",
+     "name": "Wascana Valley Natural Area Recreation Site",
+     "type": "Recreation Site",
+     "acres": 313.7,
+     "acres_from": "O_AREA_HA",
+     "layer": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0",
+     "link": "https://maps-cartes.ec.gc.ca/arcgis/rest/services/CWS_SCF/CPCAD/MapServer/0/query?objectIds=18465&outFields=*&returnGeometry=false&f=html"
+    }
+   ],
+   "record_ids": [
+    "cpcad#18465",
+    "SK-ALL Gover:3392"
+   ],
    "tests": {
     "T1": {
-     "flag": "NO OUTLINE"
+     "flag": "PASS",
+     "metres": 0
     },
     "T2": {
-     "flag": "NO OUTLINE"
+     "flag": "PASS",
+     "outline_acres": 314.0,
+     "official_acres": 313.7,
+     "times": 1.0,
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "note": "only the records this tool can read (CPCAD) are drawn and counted"
     },
     "T3": {
-     "flag": "CAN'T TELL",
-     "note": "no record name"
+     "flag": "PASS",
+     "score": 1.0,
+     "pota_name": "Wascana Trails Recreation Site",
+     "record_name": "Wascana Valley Natural Area Recreation Site"
     },
     "T4": {
-     "flag": "CAN'T TELL",
-     "note": "no record"
+     "park_kind": null,
+     "record_kind": "preserve",
+     "flag": "CAN'T TELL"
     },
     "T5": {
-     "flag": "NO OUTLINE",
-     "note": "no outline saved (pin only)"
+     "flag": "PASS",
+     "pieces": 1
     },
     "T6": {
-     "flag": "NO OUTLINE"
+     "flag": "PASS"
     },
     "T7": {
-     "flag": "NO OUTLINE"
+     "flag": "N/A",
+     "note": "read live at full detail, not a saved copy"
     },
     "T8": {
-     "flag": "CAN'T TELL",
-     "note": "no record id"
+     "flag": "DUPLICATE",
+     "parks": {
+      "CA-2898": [
+       "cpcad#18465",
+       "SK-ALL Gover:3392"
+      ]
+     },
+     "note": "same record id(s) as another park number: for KPC 13"
     },
     "T9": {
      "flag": "CAN'T TELL",
-     "note": "a saved club copy: the source's last-edit date is not recorded with it"
+     "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
+   "problems": [
+    "CAN'T TELL: 1 record(s) on provincial lists this tool can't read live (SK-ALL Gover)"
+   ],
    "status": "graded",
-   "score": 0,
-   "why": "Nothing could be tested."
+   "score": 1,
+   "why": "DUPLICATE: Another park number uses the same record: CA-2898."
   },
   {
    "ref": "CA-2898",
@@ -26311,7 +26365,14 @@
      "note": "between 3 and 5 m: allowed, but over the 3 m aim"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "DUPLICATE",
+     "parks": {
+      "CA-2897": [
+       "cpcad#18465",
+       "SK-ALL Gover:3392"
+      ]
+     },
+     "note": "same record id(s) as another park number: for KPC 13"
     },
     "T9": {
      "flag": "CAN'T TELL",
@@ -26320,8 +26381,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 0,
-   "why": "All tests pass."
+   "score": 1,
+   "why": "DUPLICATE: Another park number uses the same record: CA-2897."
   },
   {
    "ref": "CA-2899",

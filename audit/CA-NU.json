@@ -1,6 +1,6 @@
 {
  "area": "CA-NU",
- "built": "2026-11-08",
+ "built": "2026-11-15",
  "tool": "KPC-map-audit",
  "rules": "2026-11-02c",
  "parks": [
@@ -40,7 +40,8 @@
    ],
    "record_ids": [
     "cpcad#21982",
-    "cpcad#21983"
+    "cpcad#21983",
+    "Parks Canada:44"
    ],
    "tests": {
     "T1": {
@@ -52,7 +53,8 @@
      "outline_acres": 4822240.5,
      "official_acres": 4716994.6,
      "times": 1.02,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "note": "only the records this tool can read (CPCAD) are drawn and counted"
     },
     "T3": {
      "flag": "PASS",
@@ -84,7 +86,9 @@
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
+   "problems": [
+    "CAN'T TELL: 1 record(s) on provincial lists this tool can't read live (Parks Canada)"
+   ],
    "status": "graded",
    "score": 0,
    "why": "All tests pass."
@@ -295,7 +299,8 @@
    ],
    "record_ids": [
     "cpcad#22030",
-    "cpcad#22031"
+    "cpcad#22031",
+    "Parks Canada:29"
    ],
    "tests": {
     "T1": {
@@ -307,7 +312,8 @@
      "outline_acres": 9351945.1,
      "official_acres": 9390004.4,
      "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "note": "only the records this tool can read (CPCAD) are drawn and counted"
     },
     "T3": {
      "flag": "PASS",
@@ -350,6 +356,7 @@
     }
    },
    "problems": [
+    "CAN'T TELL: 1 record(s) on provincial lists this tool can't read live (Parks Canada)",
     "record 22030: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
    ],
    "status": "graded",
@@ -382,7 +389,8 @@
     }
    ],
    "record_ids": [
-    "cpcad#22039"
+    "cpcad#22039",
+    "Parks Canada:34"
    ],
    "tests": {
     "T1": {
@@ -394,7 +402,8 @@
      "outline_acres": 5422110.8,
      "official_acres": 5428163.9,
      "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "note": "only the records this tool can read (CPCAD) are drawn and counted"
     },
     "T3": {
      "flag": "PASS",
@@ -426,7 +435,9 @@
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
+   "problems": [
+    "CAN'T TELL: 1 record(s) on provincial lists this tool can't read live (Parks Canada)"
+   ],
    "status": "graded",
    "score": 0,
    "why": "All tests pass."
@@ -467,7 +478,8 @@
    ],
    "record_ids": [
     "cpcad#22048",
-    "cpcad#22049"
+    "cpcad#22049",
+    "Parks Canada:46"
    ],
    "tests": {
     "T1": {
@@ -479,7 +491,8 @@
      "outline_acres": 5162767.5,
      "official_acres": 5159560.3,
      "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "note": "only the records this tool can read (CPCAD) are drawn and counted"
     },
     "T3": {
      "flag": "PASS",
@@ -511,7 +524,9 @@
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
+   "problems": [
+    "CAN'T TELL: 1 record(s) on provincial lists this tool can't read live (Parks Canada)"
+   ],
    "status": "graded",
    "score": 0,
    "why": "All tests pass."
@@ -807,7 +822,8 @@
    ],
    "record_ids": [
     "cpcad#22032",
-    "cpcad#22033"
+    "cpcad#22033",
+    "Parks Canada:50"
    ],
    "tests": {
     "T1": {
@@ -819,7 +835,8 @@
      "outline_acres": 2722798.4,
      "official_acres": 2720136.0,
      "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "note": "only the records this tool can read (CPCAD) are drawn and counted"
     },
     "T3": {
      "flag": "PASS",
@@ -862,6 +879,7 @@
     }
    },
    "problems": [
+    "CAN'T TELL: 1 record(s) on provincial lists this tool can't read live (Parks Canada)",
     "record 22032: the fault came from the 1 m / GeoJSON read only; the record is fine at full detail"
    ],
    "status": "graded",
@@ -2901,7 +2919,8 @@
    ],
    "record_ids": [
     "cpcad#22042",
-    "cpcad#22043"
+    "cpcad#22043",
+    "Parks Canada:53"
    ],
    "tests": {
     "T1": {
@@ -2913,7 +2932,8 @@
      "outline_acres": 26816583.5,
      "official_acres": 26687381.0,
      "times": 1.0,
-     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)"
+     "official_from": "the records' own acres fields (PAD-US GIS_Acres / CPCAD official area)",
+     "note": "only the records this tool can read (CPCAD) are drawn and counted"
     },
     "T3": {
      "flag": "MISMATCH",
@@ -2945,7 +2965,9 @@
      "note": "the source's layer details give no last-edit date"
     }
    },
-   "problems": [],
+   "problems": [
+    "CAN'T TELL: 1 record(s) on provincial lists this tool can't read live (Parks Canada)"
+   ],
    "status": "graded",
    "score": 3,
    "why": "MISMATCH: The record name 'Tallurutiup Imanga National Marine Conservation Area' does not match POTA's name 'Tallurutiup Imanga / Lancaster Sound NMCA National Marine Area' (score 0.50)."

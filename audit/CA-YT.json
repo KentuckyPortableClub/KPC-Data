@@ -1,6 +1,6 @@
 {
  "area": "CA-YT",
- "built": "2026-11-08",
+ "built": "2026-11-15",
  "tool": "KPC-map-audit",
  "rules": "2026-11-02c",
  "parks": [
@@ -26,9 +26,15 @@
      "layer": "canada-bounds/CA-0039.json"
     },
     {
+     "id": "Parks Canada:15",
+     "name": "Ivvavik National Park of Canada",
+     "type": "National Park",
+     "acres": 2401002,
+     "layer": "Parks Canada"
+    },
+    {
      "id": "22005",
      "name": "Ivvavik National Park Of Canada",
-     "type": "National Park",
      "acres": 2389752,
      "layer": "CPCAD"
     },
@@ -46,6 +52,7 @@
     }
    ],
    "record_ids": [
+    "Parks Canada:15",
     "cpcad#22005",
     "Yukon parks :17",
     "cpcad#22006"
@@ -56,17 +63,17 @@
      "metres": 0
     },
     "T2": {
-     "flag": "PASS",
+     "flag": "OFF",
      "outline_acres": 2419119.7,
-     "official_acres": 2409273.0,
-     "times": 1.0,
+     "official_acres": 4756379.0,
+     "times": 1.97,
      "official_from": "the key's record acres (CPCAD / provincial lists)"
     },
     "T3": {
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "Ivvavik National Park",
-     "record_name": "Ivvavik National Park Of Canada"
+     "record_name": "Ivvavik National Park of Canada"
     },
     "T4": {
      "park_kind": "national park",
@@ -110,8 +117,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "INVALID: The shape has problems: Too few points in geometry component[-140.558585 69.598758]; 17 piece(s) under 10 m wide; 8 hole(s) under 100 m2 (+2 more flags)."
+   "score": 4,
+   "why": "OFF: The outline is 2.0 times smaller than the official 4,756,379 acres (2,419,120 ac drawn) (+3 more flags)."
   },
   {
    "ref": "CA-0044",
@@ -148,6 +155,12 @@
      "layer": "Yukon parks "
     },
     {
+     "id": "Parks Canada:18",
+     "name": "Kluane National Park and Reserve of Canada",
+     "acres": 5379003,
+     "layer": "Parks Canada"
+    },
+    {
      "id": "Yukon parks :23",
      "name": "Kluane",
      "acres": 859646,
@@ -157,6 +170,7 @@
    "record_ids": [
     "cpcad#22011",
     "Yukon parks :22",
+    "Parks Canada:18",
     "Yukon parks :23"
    ],
    "tests": {
@@ -175,7 +189,7 @@
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "Kluane National Park",
-     "record_name": "Kluane National Park Reserve Of Canada"
+     "record_name": "Kluane National Park and Reserve of Canada"
     },
     "T4": {
      "park_kind": "national park",
@@ -362,6 +376,12 @@
      "layer": "CPCAD"
     },
     {
+     "id": "Parks Canada:39",
+     "name": "Vuntut National Park of Canada",
+     "acres": 1066915,
+     "layer": "Parks Canada"
+    },
+    {
      "id": "Yukon parks :5",
      "name": "Vuntut",
      "acres": 1061307,
@@ -370,6 +390,7 @@
    ],
    "record_ids": [
     "cpcad#22050",
+    "Parks Canada:39",
     "Yukon parks :5"
    ],
    "tests": {
@@ -388,7 +409,7 @@
      "flag": "PASS",
      "score": 1.0,
      "pota_name": "Vuntut National Park",
-     "record_name": "Vuntut National Park Of Canada"
+     "record_name": "Vuntut National Park of Canada"
     },
     "T4": {
      "park_kind": "national park",
@@ -400,7 +421,15 @@
      "pieces": 1
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-4623",
+       "name": "Old Crow Flats Special Management Area Habitat Protection Area",
+       "share": 0.37
+      }
+     ],
+     "count": 1
     },
     "T7": {
      "detail_m": 5,
@@ -420,8 +449,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 0,
-   "why": "All tests pass."
+   "score": 3,
+   "why": "SPILL: The outline covers 37% of CA-4623 Old Crow Flats Special Management Area Habitat Protection Area, with no 2-fer row (maybe the wrong record)."
   },
   {
    "ref": "CA-0841",
@@ -1235,24 +1264,15 @@
    "name": "Alsek River Canadian Heritage River",
    "key_name": "Alsek River Canadian Heritage River",
    "type": "National Heritage Area",
-   "grade": "official",
+   "grade": "pin",
    "pin": [
     60.003,
     -137.82
    ],
    "outline_from": [],
    "acres_drawn": null,
-   "records": [
-    {
-     "id": "Hard look~20:4",
-     "name": "Alsek River",
-     "acres": 45317,
-     "layer": "Hard look~20"
-    }
-   ],
-   "record_ids": [
-    "Hard look~20:4"
-   ],
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
      "flag": "NO OUTLINE"
@@ -1261,19 +1281,16 @@
      "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.333,
-     "pota_name": "Alsek River Canadian Heritage River",
-     "record_name": "Alsek River"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": null,
-     "record_kind": null,
-     "flag": "CAN'T TELL"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "CAN'T TELL",
-     "note": "the park's records could not be read (see problems)"
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
     },
     "T6": {
      "flag": "NO OUTLINE"
@@ -1282,19 +1299,18 @@
      "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
      "flag": "CAN'T TELL",
      "note": "a saved club copy: the source's last-edit date is not recorded with it"
     }
    },
-   "problems": [
-    "CAN'T TELL: 1 record(s) on provincial lists this tool can't read live (Hard look~20)"
-   ],
+   "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "MISMATCH: The record name 'Alsek River' does not match POTA's name 'Alsek River Canadian Heritage River' (score 0.33)."
+   "score": 0,
+   "why": "Nothing could be tested."
   },
   {
    "ref": "CA-4601",
@@ -2394,7 +2410,7 @@
    "name": "Old Crow Flats Special Management Area Habitat Protection Area",
    "key_name": "Old Crow Flats Special Management Area Habitat Protection Area",
    "type": "Habitat Protection Area",
-   "grade": "official",
+   "grade": "pin",
    "pin": [
     67.395,
     -139.705
@@ -2409,29 +2425,17 @@
      "name": "Old Crow Flats",
      "type": "Habitat Protection Area",
      "layer": "canada-bounds/CA-4623.json"
-    },
-    {
-     "id": "Yukon parks :6",
-     "name": "Old Crow Flats",
-     "type": "Habitat Protection Area",
-     "acres": 2944877,
-     "layer": "Yukon parks "
     }
    ],
-   "record_ids": [
-    "Yukon parks :6"
-   ],
+   "record_ids": [],
    "tests": {
     "T1": {
      "flag": "FAR",
      "metres": 24294.0
     },
     "T2": {
-     "flag": "PASS",
-     "outline_acres": 2989780.4,
-     "official_acres": 2944877.0,
-     "times": 1.02,
-     "official_from": "the key's record acres (CPCAD / provincial lists)"
+     "flag": "NO FIGURE",
+     "outline_acres": 2989780.4
     },
     "T3": {
      "flag": "PASS",
@@ -2449,7 +2453,15 @@
      "pieces": 1
     },
     "T6": {
-     "flag": "PASS"
+     "flag": "SPILL",
+     "parks": [
+      {
+       "ref": "CA-0106",
+       "name": "Vuntut National Park",
+       "share": 0.98
+      }
+     ],
+     "count": 1
     },
     "T7": {
      "detail_m": 5,
@@ -2460,7 +2472,8 @@
      "note": "between 3 and 5 m: allowed, but over the 3 m aim"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
      "flag": "CAN'T TELL",
@@ -2469,8 +2482,8 @@
    },
    "problems": [],
    "status": "graded",
-   "score": 5,
-   "why": "FAR: POTA's pin is 24.3 km outside the outline."
+   "score": 8,
+   "why": "FAR: POTA's pin is 24.3 km outside the outline (+1 more flag)."
   },
   {
    "ref": "CA-4624",
@@ -2861,24 +2874,15 @@
    "name": "Tatshenshini River Canadian Heritage River",
    "key_name": "Tatshenshini River Canadian Heritage River",
    "type": "National Heritage Area",
-   "grade": "official",
+   "grade": "pin",
    "pin": [
     60.001,
     -136.885
    ],
    "outline_from": [],
    "acres_drawn": null,
-   "records": [
-    {
-     "id": "Hard look~20:3",
-     "name": "Tatshenshini River",
-     "acres": 16687,
-     "layer": "Hard look~20"
-    }
-   ],
-   "record_ids": [
-    "Hard look~20:3"
-   ],
+   "records": [],
+   "record_ids": [],
    "tests": {
     "T1": {
      "flag": "NO OUTLINE"
@@ -2887,19 +2891,16 @@
      "flag": "NO OUTLINE"
     },
     "T3": {
-     "flag": "MISMATCH",
-     "score": 0.333,
-     "pota_name": "Tatshenshini River Canadian Heritage River",
-     "record_name": "Tatshenshini River"
+     "flag": "CAN'T TELL",
+     "note": "no record name"
     },
     "T4": {
-     "park_kind": null,
-     "record_kind": null,
-     "flag": "CAN'T TELL"
+     "flag": "CAN'T TELL",
+     "note": "no record"
     },
     "T5": {
-     "flag": "CAN'T TELL",
-     "note": "the park's records could not be read (see problems)"
+     "flag": "NO OUTLINE",
+     "note": "no outline saved (pin only)"
     },
     "T6": {
      "flag": "NO OUTLINE"
@@ -2908,19 +2909,18 @@
      "flag": "NO OUTLINE"
     },
     "T8": {
-     "flag": "PASS"
+     "flag": "CAN'T TELL",
+     "note": "no record id"
     },
     "T9": {
      "flag": "CAN'T TELL",
      "note": "a saved club copy: the source's last-edit date is not recorded with it"
     }
    },
-   "problems": [
-    "CAN'T TELL: 1 record(s) on provincial lists this tool can't read live (Hard look~20)"
-   ],
+   "problems": [],
    "status": "graded",
-   "score": 3,
-   "why": "MISMATCH: The record name 'Tatshenshini River' does not match POTA's name 'Tatshenshini River Canadian Heritage River' (score 0.33)."
+   "score": 0,
+   "why": "Nothing could be tested."
   },
   {
    "ref": "CA-4632",
@@ -3126,12 +3126,12 @@
     "T8": {
      "flag": "DUPLICATE",
      "parks": {
+      "CA-6261": [
+       "cpcad#21762"
+      ],
       "CA-4636": [
        "cpcad#21762",
        "Yukon parks :20"
-      ],
-      "CA-6261": [
-       "cpcad#21762"
       ]
      },
      "note": "same record id(s) as another park number: for KPC 13"
@@ -3234,12 +3234,12 @@
     "T8": {
      "flag": "DUPLICATE",
      "parks": {
+      "CA-6261": [
+       "cpcad#21762"
+      ],
       "CA-4635": [
        "cpcad#21762",
        "Yukon parks :20"
-      ],
-      "CA-6261": [
-       "cpcad#21762"
       ]
      },
      "note": "same record id(s) as another park number: for KPC 13"

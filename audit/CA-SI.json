@@ -1,6 +1,6 @@
 {
  "area": "CA-SI",
- "built": "2026-11-08",
+ "built": "2026-11-15",
  "tool": "KPC-map-audit",
  "rules": "2026-11-02c",
  "parks": [
@@ -45,6 +45,12 @@
      "layer": "NS-PPA Nova "
     },
     {
+     "id": "Parks Canada:1",
+     "name": "Sable Island National Park Reserve",
+     "acres": 6568,
+     "layer": "Parks Canada"
+    },
+    {
      "id": "Nova Scotia :50",
      "name": "Sable Island National Park Reserve Of Canada/Sable Island Bird Sanctuary",
      "acres": 5398,
@@ -73,6 +79,7 @@
     "cpcad#22036",
     "Nova Scotia ~2:146",
     "NS-PPA Nova :146",
+    "Parks Canada:1",
     "Nova Scotia :50",
     "Nova Scotia ~2:145",
     "NS-PPA Nova :145",
@@ -86,8 +93,8 @@
     "T2": {
      "flag": "OFF",
      "outline_acres": 7542.2,
-     "official_acres": 12537.0,
-     "times": 1.66,
+     "official_acres": 19105.0,
+     "times": 2.53,
      "official_from": "the key's record acres (CPCAD / provincial lists)"
     },
     "T3": {
@@ -138,7 +145,7 @@
    "problems": [],
    "status": "graded",
    "score": 4,
-   "why": "OFF: The outline is 1.7 times smaller than the official 12,537 acres (7,542 ac drawn) (+3 more flags)."
+   "why": "OFF: The outline is 2.5 times smaller than the official 19,105 acres (7,542 ac drawn) (+3 more flags)."
   }
  ]
 }
