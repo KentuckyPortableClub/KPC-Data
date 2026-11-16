@@ -286,7 +286,7 @@ Source file: `data/campinfo/US-AK.json`
  "dump_station": null,
  "elevation_ft": {
   "src": "https://epqs.nationalmap.gov/v1/json?x=-133.27694&y=56.95278&units=Feet&wkid=4326",
-  "value": 99
+  "value": 0
  },
  "features": null,
  "fees": null,
