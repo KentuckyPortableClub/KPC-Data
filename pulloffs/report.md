@@ -1,6 +1,6 @@
 # kpc_pulloffs run report (2026-11-16)
 
-- version 1.0.0; exit code 3; ran 50.5 min; 255 web requests
+- version 1.0.0; exit code 3; ran 50.0 min; 188 web requests
 - parks in this input (after --areas / --limit): 190; done: 107; left for the next run: 83
 - candidates for chat 11: 2904; kept out (log only, work/log/kept_out.jsonl): 8207
 
@@ -203,7 +203,7 @@ Official access pins next to a public road (within 30 m) inside the search band:
   - note: FEMA USA Structures (building outlines) not read (robots.txt does not allow /FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query): only the roof test on the photo was used
   - problem (skipped, run went on): NAIP photo for cell 1090,8407 not read: HTTP 504
   - problem (skipped, run went on): NAIP photo for cell 1090,8408 not read: HTTP 504
-- US-4484 Daniel Boone National Forest: time ran out after 254 of 6239 photo cells looked at; nothing written for it yet. Run again with --resume (downloads are cached).
+- US-4484 Daniel Boone National Forest: time ran out after 426 of 6239 photo cells looked at; nothing written for it yet. Run again with --resume (downloads are cached).
 
 ## Web manners
 
