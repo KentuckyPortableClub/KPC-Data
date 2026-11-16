@@ -154,7 +154,8 @@ Source file: `data/campinfo/US-WV.json`
  "dump_station": null,
  "elevation_ft": {
   "src": "https://epqs.nationalmap.gov/v1/json?x=-77.79658&y=39.4592&units=Feet&wkid=4326",
-  "value": 312
+  "status": "host resting",
+  "value": null
  },
  "features": null,
  "fees": null,
@@ -221,7 +222,8 @@ Source file: `data/campinfo/US-WV.json`
  "dump_station": null,
  "elevation_ft": {
   "src": "https://epqs.nationalmap.gov/v1/json?x=-80.61133&y=38.84123&units=Feet&wkid=4326",
-  "value": 798
+  "status": "host resting",
+  "value": null
  },
  "features": null,
  "fees": null,
@@ -231,10 +233,6 @@ Source file: `data/campinfo/US-WV.json`
   "sewer": null,
   "water": null
  },
- "ids": [
-  "10234906",
-  "248530"
- ],
  "kind": "c",
  "lat": 38.84123,
  "list": "campfed",
@@ -429,7 +427,8 @@ Source file: `data/campinfo/US-WV.json`
  "dump_station": null,
  "elevation_ft": {
   "src": "https://epqs.nationalmap.gov/v1/json?x=-78.58898&y=39.53094&units=Feet&wkid=4326",
-  "value": 578
+  "status": "host resting",
+  "value": null
  },
  "features": null,
  "fees": null,
@@ -496,7 +495,8 @@ Source file: `data/campinfo/US-WV.json`
  "dump_station": null,
  "elevation_ft": {
   "src": "https://epqs.nationalmap.gov/v1/json?x=-80.27111&y=37.92028&units=Feet&wkid=4326",
-  "value": 1913
+  "status": "host resting",
+  "value": null
  },
  "features": null,
  "fees": null,
@@ -563,7 +563,8 @@ Source file: `data/campinfo/US-WV.json`
  "dump_station": null,
  "elevation_ft": {
   "src": "https://epqs.nationalmap.gov/v1/json?x=-80.52389&y=38.29606&units=Feet&wkid=4326",
-  "value": 2149
+  "status": "host resting",
+  "value": null
  },
  "features": null,
  "fees": null,
@@ -630,7 +631,8 @@ Source file: `data/campinfo/US-WV.json`
  "dump_station": null,
  "elevation_ft": {
   "src": "https://epqs.nationalmap.gov/v1/json?x=-78.45969&y=39.54158&units=Feet&wkid=4326",
-  "value": 534
+  "status": "host resting",
+  "value": null
  },
  "features": null,
  "fees": null,
@@ -697,7 +699,8 @@ Source file: `data/campinfo/US-WV.json`
  "dump_station": null,
  "elevation_ft": {
   "src": "https://epqs.nationalmap.gov/v1/json?x=-80.23186&y=38.34327&units=Feet&wkid=4326",
-  "value": 2995
+  "status": "host resting",
+  "value": null
  },
  "features": null,
  "fees": null,
@@ -764,7 +767,8 @@ Source file: `data/campinfo/US-WV.json`
  "dump_station": null,
  "elevation_ft": {
   "src": "https://epqs.nationalmap.gov/v1/json?x=-78.68909&y=38.92454&units=Feet&wkid=4326",
-  "value": 2244
+  "status": "host resting",
+  "value": null
  },
  "features": null,
  "fees": null,

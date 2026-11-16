@@ -1098,12 +1098,12 @@
     "resting": 1,
     "robots": 29,
     "with_booking": 54,
-    "with_elevation": 100,
+    "with_elevation": 52,
     "with_facts": 2,
     "with_sites": 0
    },
-   "left": 0,
-   "status": "done",
+   "left": 2,
+   "status": "partial",
    "updated": "2026-11-16"
   },
   "US-WY": {
@@ -2597,33 +2597,38 @@
  },
  "last": {
   "areas": [
-   "US-TN"
+   "US-WV"
   ],
   "fcc_token": true,
   "manners": {
    "errors": 0,
-   "for_person_urls": [],
+   "for_person_urls": [
+    [
+     "https://reservations.wvstateparks.com/robots.txt",
+     "robots.txt answered with a web page, not a robots file (the answer came from another site (https://book.wvstateparks.com/ecomm/shop/lodging/7816932/en-US/?destination=all&destination_backup=0&search_date_ui=2027): not read as \"no rules\"): not read as \"no rules\": a person downloads what is needed from reservations.wvstateparks.com"
+    ]
+   ],
    "host_rule": 0,
-   "requests": 85,
-   "rested": 46,
-   "robots": 0,
-   "strikes": 3
+   "requests": 1,
+   "rested": 50,
+   "robots": 1,
+   "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "camps": 103,
-   "elevations": 81,
+   "camps": 49,
+   "elevations": 0,
    "errors": 0,
    "needs_browser": 0,
-   "needs_key": 78,
+   "needs_key": 47,
    "no_page": 0,
    "not_official": 0,
    "ok": 0,
    "pages_read": 0,
-   "resting": 25,
+   "resting": 1,
    "ridb_calls": 0,
-   "robots": 0,
-   "skipped_fresh": 294
+   "robots": 1,
+   "skipped_fresh": 56
   },
   "when": "2026-11-16"
  },
