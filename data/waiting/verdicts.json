@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-16T19:46Z",
+ "checked": "2026-11-16T20:24Z",
  "switched_on": false,
  "results": [
   {
@@ -713,9 +713,11 @@
   {
    "path": "data/docs/US-AR.json",
    "kind": "docs",
-   "why": [],
+   "why": [
+    "F-D3 2 of 20 re-tested links dead, e.g. https://www.arkansas.com/sites/default/files/2025-12/Millwood_2017_web"
+   ],
    "notes": [],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/docs/US-AZ.json",
@@ -872,7 +874,7 @@
    "path": "data/docs/US-MI.json",
    "kind": "docs",
    "why": [
-    "F-D3 2 of 20 re-tested links dead, e.g. https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/s"
+    "F-D3 4 of 20 re-tested links dead, e.g. https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/s"
    ],
    "notes": [
     "no live copy: first time this file is published"

@@ -6,7 +6,7 @@ Updated 2026-11-16. Every fact in <area>.json carries its source url, read date 
 | area | campgrounds | read ok | needs RIDB key | needs browser (403) | robots no | host resting | no page on file | not official host | other | with site count | with booking link | with elevation |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | US-KY | 100 | 17 | 35 | 1 | 0 | 41 | 0 | 0 | 6 | 11 | 51 | 0 |
-| US-TN | 394 | 2 | 78 | 2 | 17 | 25 | 267 | 0 | 3 | 2 | 49 | 394 |
+| US-TN | 394 | 2 | 78 | 2 | 17 | 25 | 267 | 0 | 3 | 2 | 49 | 372 |
 | US-NC | 141 | 66 | 66 | 0 | 0 | 6 | 0 | 0 | 3 | 23 | 75 | 0 |
 | US-VA | 163 | 2 | 74 | 0 | 0 | 4 | 40 | 30 | 13 | 2 | 19 | 0 |
 | US-WV | 101 | 1 | 47 | 2 | 29 | 1 | 0 | 0 | 21 | 0 | 54 | 100 |

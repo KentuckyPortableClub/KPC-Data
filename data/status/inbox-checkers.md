@@ -358,6 +358,7 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-11-06, 10 days): campinfo data/campinfo/US-VT.json held: F-I3 the same site count on 101 camps of one agency (state: 27): copied from a shared page?
 - FROM WAITING ROOM (held since 2026-11-12, 4 days): campinfo data/campinfo/US-WI.json held: F-I6 campgrounds with source-lined facts 12 -> 4 (more than 30% lost: a blocked read emptied them?)
 - FROM WAITING ROOM (held since 2026-11-11, 5 days): docs data/docs/US-AK.json held: F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/togiak/visit-us/rules-policies
+- FROM WAITING ROOM (held since 2026-11-16): docs data/docs/US-AR.json held: F-D3 2 of 20 re-tested links dead, e.g. https://www.arkansas.com/sites/default/files/2025-12/Millwood_2017_web
 - FROM WAITING ROOM (held since 2026-11-16): docs data/docs/US-CT.json held: F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/silvio-o-conte/visit-us/rules-policies
 - FROM WAITING ROOM (held since 2026-11-16): docs data/docs/US-DC.json held: F-D3 2 of 20 re-tested links dead, e.g. https://www.nps.gov/lyba/learn/management/lawsandpolicies.htm
 - FROM WAITING ROOM (held since 2026-11-11, 5 days): docs data/docs/US-DE.json held: F-D3 2 of 13 re-tested links dead, e.g. https://www.fws.gov/refuge/prime-hook/visit-us/rules-policies
@@ -368,7 +369,7 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-11-11, 5 days): docs data/docs/US-KS.json held: F-D3 3 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/flint-hills/visit-us/rules-policies
 - FROM WAITING ROOM (held since 2026-11-11, 5 days): docs data/docs/US-LA.json held: F-D3 5 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/upper-ouachita/visit-us/rules-policies
 - FROM WAITING ROOM (held since 2026-10-31, 16 days): docs data/docs/US-ME.json held: F-D1 one map page on 33 of 148 parks: https://www.maine.gov/dacf/parks/publications_maps/index.shtml · F-D1 one rules page on 48 of 148 parks: https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml · F-D3 2 of 20 re-tested links dead, e.g. https://www.nps.gov/maac/learn/management/lawsandpolicies.htm
-- FROM WAITING ROOM (held since 2026-11-16): docs data/docs/US-MI.json held: F-D3 2 of 20 re-tested links dead, e.g. https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/s
+- FROM WAITING ROOM (held since 2026-11-16): docs data/docs/US-MI.json held: F-D3 4 of 20 re-tested links dead, e.g. https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/s
 - FROM WAITING ROOM (held since 2026-11-11, 5 days): docs data/docs/US-MN.json held: F-D3 6 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/glacial-ridge/visit-us/rules-policies
 - FROM WAITING ROOM (held since 2026-10-31, 16 days): docs data/docs/US-MO.json held: F-D1 one rules page on 426 of 561 parks: https://www.sos.mo.gov/adrules/csr/current/3csr/3csr.asp
 - FROM WAITING ROOM (held since 2026-11-16): docs data/docs/US-MS.json held: F-D3 2 of 20 re-tested links dead, e.g. https://www.nps.gov/tupe/learn/management/lawsandpolicies.htm
