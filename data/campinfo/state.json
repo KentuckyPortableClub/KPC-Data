@@ -1088,22 +1088,23 @@
    "checked": 101,
    "counts": {
     "camps": 101,
-    "needs_browser": 28,
+    "kept_after_failed_read": 1,
+    "needs_browser": 2,
     "needs_key": 47,
     "no_page": 0,
     "not_official": 0,
     "ok": 1,
-    "other": 25,
-    "resting": 0,
-    "robots": 0,
+    "other": 21,
+    "resting": 1,
+    "robots": 29,
     "with_booking": 54,
-    "with_elevation": 0,
+    "with_elevation": 100,
     "with_facts": 2,
     "with_sites": 0
    },
    "left": 0,
    "status": "done",
-   "updated": "2026-11-09"
+   "updated": "2026-11-16"
   },
   "US-WY": {
    "camps": 314,
@@ -1178,7 +1179,7 @@
   "US-VT": "FCC listAsOfDates: robots.txt says no",
   "US-WA": "FCC listAsOfDates: robots.txt says no",
   "US-WI": "FCC listAsOfDates: robots.txt says no",
-  "US-WV": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
+  "US-WV": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-WY": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
  },
  "fcc": {
@@ -1627,10 +1628,10 @@
    "cell": {
     "carriers": null,
     "files": [],
-    "src": null,
-    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
+    "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2026-06-30?category=State&subcategory=Mobile%20Broadband",
+    "status": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
    },
-   "read": "2026-11-09"
+   "read": "2026-11-16"
   },
   "US-WY": {
    "cell": {
@@ -2595,50 +2596,39 @@
  },
  "last": {
   "areas": [
-   "US-TN"
+   "US-WV"
   ],
   "fcc_token": true,
   "manners": {
-   "dropped_queued": 16,
+   "dropped_queued": 29,
    "errors": 0,
-   "for_person": 2,
    "for_person_urls": [
     [
-     "https://www.tn.gov/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from www.tn.gov this run"
-    ],
-    [
-     "https://reserve.tnstateparks.com/big-hill-pond/camping",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://reserve.tnstateparks.com/bledsoe-creek/camping",
-     "HTTP 403 twice"
+     "https://reservations.wvstateparks.com/robots.txt",
+     "robots.txt answered with a web page, not a robots file (the answer came from another site (https://book.wvstateparks.com/ecomm/shop/lodging/7816932/en-US/?destination=all&destination_backup=0&search_date_ui=2027): not read as \"no rules\"): not read as \"no rules\": a person downloads what is needed from reservations.wvstateparks.com"
     ]
    ],
    "host_rule": 0,
-   "requests": 413,
-   "rested": 25,
-   "retry403": 2,
+   "requests": 159,
+   "rested": 1,
    "robots": 1,
-   "robots_unreadable": 1,
-   "strikes": 4
+   "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "browser": 1,
-   "camps": 397,
-   "elevations": 397,
+   "browser": 21,
+   "camps": 105,
+   "elevations": 105,
    "errors": 0,
-   "needs_browser": 3,
-   "needs_key": 81,
-   "no_page": 269,
+   "needs_browser": 23,
+   "needs_key": 51,
+   "no_page": 0,
    "not_official": 0,
-   "ok": 3,
-   "pages_read": 3,
-   "resting": 25,
+   "ok": 23,
+   "pages_read": 24,
+   "resting": 1,
    "ridb_calls": 0,
-   "robots": 0,
+   "robots": 30,
    "skipped_fresh": 0
   },
   "when": "2026-11-16"

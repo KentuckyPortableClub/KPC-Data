@@ -9,7 +9,7 @@ Updated 2026-11-16. Every fact in <area>.json carries its source url, read date 
 | US-TN | 394 | 2 | 78 | 2 | 17 | 25 | 267 | 0 | 3 | 2 | 49 | 394 |
 | US-NC | 141 | 66 | 66 | 0 | 0 | 6 | 0 | 0 | 3 | 23 | 75 | 0 |
 | US-VA | 163 | 2 | 74 | 0 | 0 | 4 | 40 | 30 | 13 | 2 | 19 | 0 |
-| US-WV | 101 | 1 | 47 | 28 | 0 | 0 | 0 | 0 | 25 | 0 | 54 | 0 |
+| US-WV | 101 | 1 | 47 | 2 | 29 | 1 | 0 | 0 | 21 | 0 | 54 | 100 |
 | US-GA | 205 | 61 | 64 | 4 | 0 | 1 | 0 | 8 | 67 | 8 | 131 | 0 |
 | US-AL | 100 | 12 | 34 | 1 | 0 | 0 | 0 | 4 | 49 | 6 | 60 | 0 |
 | US-SC | 77 | 21 | 26 | 20 | 0 | 2 | 0 | 7 | 1 | 18 | 31 | 0 |
@@ -65,7 +65,7 @@ Updated 2026-11-16. Every fact in <area>.json carries its source url, read date 
 ## Hosts that need a browser (403), say no in robots.txt, or are resting
 
 - outdoornebraska.gov: 187 campgrounds · host resting
-- www.fs.usda.gov: 129 campgrounds · host resting
+- www.fs.usda.gov: 130 campgrounds · host resting
 - dnr.alaska.gov: 113 campgrounds · robots.txt says no
 - cpw.state.co.us: 98 campgrounds · host resting
 - reservemn.usedirect.com: 94 campgrounds · robots.txt says no
@@ -76,6 +76,7 @@ Updated 2026-11-16. Every fact in <area>.json carries its source url, read date 
 - gfp.sd.gov: 49 campgrounds · host resting
 - www.wlf.louisiana.gov: 31 campgrounds · host resting (robots.txt could not be read: next run)
 - parks.ky.gov: 29 campgrounds · host resting
+- reservations.wvstateparks.com: 29 campgrounds · robots.txt says no
 - reserve.tnstateparks.com: 25 campgrounds · host resting
 - www.fdacs.gov: 23 campgrounds · robots.txt says no
 - destateparks.com: 22 campgrounds · host resting (robots.txt could not be read: next run)
@@ -102,7 +103,6 @@ Updated 2026-11-16. Every fact in <area>.json carries its source url, read date 
 
 - dec.ny.gov: 240 campgrounds
 - itd.idaho.gov: 30 campgrounds
-- reservations.wvstateparks.com: 26 campgrounds
 - southcarolinaparks.com: 20 campgrounds
 - cpw.state.co.us: 15 campgrounds
 - wildlife.utah.gov: 7 campgrounds
@@ -506,7 +506,7 @@ Updated 2026-11-16. Every fact in <area>.json carries its source url, read date 
 
 ## US-WV: 12 random samples (records with facts; seed = the date)
 
-- **Gauley Tailwaters** (intake-US-0695, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts) · [www.nps.gov](https://www.nps.gov/gari/planyourvisit/camping.htm)
+- **Gauley Tailwaters** (intake-US-0695, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 4 facts, 1425 ft) · [www.nps.gov](https://www.nps.gov/gari/planyourvisit/camping.htm)
   - booking.how = "online: www.nps.gov" · “link “New River Gorge National Park and Preserve””
   - booking.url = "https://www.nps.gov/neri/index.htm" · “link “New River Gorge National Park and Preserve” -> https://www.nps.gov/neri/index.htm”
   - rules.fires = "Open fires are allowed where campfire receptacles are provi · “oric ruin. The maximum stay is 14 days at the same camping area. There is no camping fee. Open fires are allowed where campfire receptacles ”
