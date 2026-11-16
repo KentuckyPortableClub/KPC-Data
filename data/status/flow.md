@@ -1,10 +1,10 @@
-# Flow board (2026-11-16 08:38Z, kpc_flow.py)
+# Flow board (2026-11-16 14:57Z, kpc_flow.py)
 Every pile of work, who it waits on and when it last moved. STUCK = work in it and no move for 2+ days. Fix the STUCK ones first.
 
 ## STUCK (42)
 - STUCK 17 d · **1** · hours fees permits bot: not run for 17 days · waits on **chat 10** · US-KY: done; {"fees": 8, "hours": 41, "hours_lines": 77, "no_page": 0, "nothing": 144, "parks": 193, · chat 8 grades the sample; Brandon GO before any card
 - STUCK 16 d · **9** · HELD campinfo files (a check failed; data/waiting/today.md says why) · waits on **chat 2 (fix) + chat 11** · US-MA, US-NC, US-AR, US-MO, US-MS, US-VT, US-AK, US-KY, US-WI
-- STUCK 16 d · **49** · HELD docs files (a check failed; data/waiting/today.md says why) · waits on **chat 2 (fix) + chat 11** · US-ID, US-IL, US-ME, US-MO, US-AK, US-DE, US-HI, US-KS, US-LA, US-MN, US-RI, US-ND, US-IN, US-OR, US-AL, US-AR, US-AZ, US-CA, US-CO, US-CT, US-DC, US-FL, US-GA, …
+- STUCK 16 d · **20** · HELD docs files (a check failed; data/waiting/today.md says why) · waits on **chat 2 (fix) + chat 11** · US-ID, US-IL, US-ME, US-MO, US-AK, US-DE, US-HI, US-KS, US-LA, US-MN, US-RI, US-ND, US-IN, US-OR, US-CT, US-DC, US-MI, US-MS, US-MT, US-TX
 - STUCK 15 d · **146** · questions/not-sure-for-chat9.json waiting for an answer · waits on **chat 9**
 - STUCK 15 d · **59** · HELD fers files (a check failed; data/waiting/today.md says why) · waits on **chat 2 (fix) + chat 11** · US-IL, US-NE, US-SD, US-CT, US-ND, US-NH, US-SC, US-WV, US-DE, US-IA, US-MO, CA-MB, CA-QC, CA-SK, US-KS, US-OK, US-CA, US-DC, US-NM, US-VT, US-MS, CA-NS, US-AL, …
 - STUCK 15 d · **9** · HELD truth files (a check failed; data/waiting/today.md says why) · waits on **chat 2 (fix) + chat 11** · US-CT, US-MA, US-MD, US-MN, US-NY, US-OK, US-TX, US-UT, US-WA
@@ -48,7 +48,7 @@ Every pile of work, who it waits on and when it last moved. STUCK = work in it a
 ## Waiting on each chat (open work, oldest first)
 ### chat 2
 - STUCK 9 · HELD campinfo files (a check failed; data/waiting/today.md says why) · since 2026-10-31
-- STUCK 49 · HELD docs files (a check failed; data/waiting/today.md says why) · since 2026-10-31
+- STUCK 20 · HELD docs files (a check failed; data/waiting/today.md says why) · since 2026-10-31
 - STUCK 59 · HELD fers files (a check failed; data/waiting/today.md says why) · since 2026-11-01
 - STUCK 9 · HELD truth files (a check failed; data/waiting/today.md says why) · since 2026-11-01
 - STUCK 1 · 2-fer checker: found work · since 2026-11-01
@@ -80,7 +80,7 @@ Every pile of work, who it waits on and when it last moved. STUCK = work in it a
 - 1 · Website copy (site branch): RED (the bot is broken) · since 2026-11-15
 ### chat 11
 - STUCK 9 · HELD campinfo files (a check failed; data/waiting/today.md says why) · since 2026-10-31
-- STUCK 49 · HELD docs files (a check failed; data/waiting/today.md says why) · since 2026-10-31
+- STUCK 20 · HELD docs files (a check failed; data/waiting/today.md says why) · since 2026-10-31
 - STUCK 59 · HELD fers files (a check failed; data/waiting/today.md says why) · since 2026-11-01
 - STUCK 9 · HELD truth files (a check failed; data/waiting/today.md says why) · since 2026-11-01
 - STUCK 1 · 2-fer checker: found work · since 2026-11-01
@@ -132,7 +132,7 @@ Every pile of work, who it waits on and when it last moved. STUCK = work in it a
 | 6 questions | questions/parked.json waiting for an answer | 168 | chat 11 | 2026-11-05 **STUCK** |
 | 6 questions | questions/world-finder.json waiting for an answer | 37 | chat 11 | 2026-11-05 **STUCK** |
 | 7 waiting room | HELD campinfo files (a check failed; data/waiting/today.md says why) | 9 | chat 2 (fix) + chat 11 | 2026-10-31 **STUCK** |
-| 7 waiting room | HELD docs files (a check failed; data/waiting/today.md says why) | 49 | chat 2 (fix) + chat 11 | 2026-10-31 **STUCK** |
+| 7 waiting room | HELD docs files (a check failed; data/waiting/today.md says why) | 20 | chat 2 (fix) + chat 11 | 2026-10-31 **STUCK** |
 | 7 waiting room | HELD fers files (a check failed; data/waiting/today.md says why) | 59 | chat 2 (fix) + chat 11 | 2026-11-01 **STUCK** |
 | 7 waiting room | HELD pile-solver files (a check failed; data/waiting/today.md says why) | 1 | chat 2 (fix) + chat 11 | 2026-11-05 **STUCK** |
 | 7 waiting room | HELD trails files (a check failed; data/waiting/today.md says why) | 4 | chat 2 (fix) + chat 11 | 2026-11-04 **STUCK** |
