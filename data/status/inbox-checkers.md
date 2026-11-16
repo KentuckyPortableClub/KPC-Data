@@ -339,6 +339,7 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM BOT 2-fer line (chat 2; 2026-11-16): grade me: CA-SP (casp) — READY · known 19/19 on 2026-11-02 · CA-SP: live 0, not sure 0, water only 0 · files data/fers/<state>.json + line-casp.json + missing-casp.json · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43783800272)
 - FROM BOT closures super-bot (2026-11-16): FAILED its gate: US-KY — 20 of 27 of Kentucky's own reader's items found here on the same park (74%); 53 only here · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43832049934)
 - FROM BOT campground info bot (2026-11-16): grade me: US-AK data/status/samples/campground-info-bot-US-AK-2026-11-16.md (+ review.md) — done; gate none; {"camps": 368, "kept_after_failed_read": 2, "needs_browser": 0, "needs_key": 234, "no_page": 4, "not_official": 0, "ok": 8, "other": 9, "res · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43839746941)
+- FROM BOT campground info bot (2026-11-16): grade me: US-DC data/status/samples/campground-info-bot-US-DC-2026-11-16.md (+ review.md) — done; gate none; {"camps": 1, "needs_browser": 0, "needs_key": 0, "no_page": 0, "not_official": 0, "ok": 0, "other": 1, "resting": 0, "robots": 0, "with_book · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43839746941)
 - FROM WAITING ROOM (held since 2026-11-12, 4 days): campinfo data/campinfo/US-AK.json held: F-I6 campgrounds with source-lined facts 122 -> 11 (more than 30% lost: a blocked read emptied them?)
 - FROM WAITING ROOM (held since 2026-11-04, 12 days): campinfo data/campinfo/US-AR.json held: F-I4 1 toll-free reservation numbers kept as a camp phone, e.g. Designated WMA campsites
 - FROM WAITING ROOM (held since 2026-11-12, 4 days): campinfo data/campinfo/US-KY.json held: F-I6 campgrounds with source-lined facts 60 -> 22 (more than 30% lost: a blocked read emptied them?)
@@ -430,7 +431,7 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-11-05, 11 days): pilesolver data/pile-solver/US-VT.json held: US-5538: pin 1920 m out without the POTA pin flag
 - FROM WAITING ROOM (held since 2026-11-08, 8 days): trails data/trails/US-13626.json held: F-T3 length 16 -> 114 km (outside -25% / +50%)
 - FROM WAITING ROOM (held since 2026-11-08, 8 days): trails data/trails/US-9203.json held: F-T2 points 19246 -> 1822 (under half the saved line) · F-T3 length 138 -> 88 km (outside -25% / +50%)
-- FROM WAITING ROOM (held since 2026-11-09, 7 days): trails data/trails/index.json held: F-T4 trail index 139 -> 102 lines (under 80% of the saved list)
+- FROM WAITING ROOM (held since 2026-11-09, 7 days): trails data/trails/index.json held: F-T4 trail index 139 -> 101 lines (under 80% of the saved list)
 - FROM WAITING ROOM (held since 2026-11-04, 12 days): trails data/trails/state-report.json held: F-T1 the line has no points
 - FROM WAITING ROOM (held since 2026-11-01, 15 days): truth data/truth/US-CT.json held: F-R2 9 OFF rows share the size 255,000.0 ac
 - FROM WAITING ROOM (held since 2026-11-01, 15 days): truth data/truth/US-MA.json held: F-R2 6 OFF rows share the size 1,000.0 ac · F-R3 169 of 242 sized parks are OFF (over half: a reading problem?)

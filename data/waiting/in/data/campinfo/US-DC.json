@@ -9,19 +9,18 @@
     "url": "https://www.recreation.gov/camping/campgrounds/250017"
    },
    "cell": null,
-   "checked": "2026-11-09",
+   "checked": "2026-11-16",
    "checkin": null,
    "checkout": null,
    "drinking_water": null,
    "dump_station": null,
    "elevation_ft": {
     "src": "https://epqs.nationalmap.gov/v1/json?x=-77.0436&y=38.8904&units=Feet&wkid=4326",
-    "status": "host resting (robots.txt could not be read: next run)",
-    "value": null
+    "value": 14
    },
    "facts_src": {
     "booking.url": {
-     "date": "2026-11-09",
+     "date": "2026-11-16",
      "line": "booking link from our outside research (camping, nearby only) row (official system www.recreation.gov)",
      "url": "https://www.recreation.gov/camping/campgrounds/250017"
     }
@@ -75,7 +74,7 @@
    "ver": 8
   }
  },
- "cell_status": "needs FCC token",
+ "cell_status": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
  "counts": {
   "camps": 1,
   "needs_browser": 0,
@@ -87,9 +86,9 @@
   "resting": 0,
   "robots": 0,
   "with_booking": 1,
-  "with_elevation": 0,
+  "with_elevation": 1,
   "with_sites": 0
  },
  "merged": 0,
- "read": "2026-11-09"
+ "read": "2026-11-16"
 }

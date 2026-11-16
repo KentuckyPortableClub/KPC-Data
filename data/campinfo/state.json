@@ -171,12 +171,12 @@
     "resting": 0,
     "robots": 0,
     "with_booking": 1,
-    "with_elevation": 0,
+    "with_elevation": 1,
     "with_sites": 0
    },
    "left": 0,
    "status": "done",
-   "updated": "2026-11-09"
+   "updated": "2026-11-16"
   },
   "US-DE": {
    "camps": 24,
@@ -1135,6 +1135,7 @@
   "US-CA": "FCC listAsOfDates: robots.txt says no",
   "US-CO": "FCC listAsOfDates: robots.txt says no",
   "US-CT": "FCC listAsOfDates: robots.txt says no",
+  "US-DC": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-DE": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-FL": "FCC listAsOfDates: robots.txt says no",
   "US-GA": "FCC listAsOfDates: robots.txt says no",
@@ -1242,6 +1243,15 @@
     "status": "FCC listAsOfDates: robots.txt says no"
    },
    "read": "2026-11-15"
+  },
+  "US-DC": {
+   "cell": {
+    "carriers": null,
+    "files": [],
+    "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2026-06-30?category=State&subcategory=Mobile%20Broadband",
+    "status": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
+   },
+   "read": "2026-11-16"
   },
   "US-DE": {
    "cell": {
@@ -2583,34 +2593,32 @@
  },
  "last": {
   "areas": [
-   "US-AK"
+   "US-DC"
   ],
   "fcc_token": true,
   "manners": {
-   "dropped_queued": 114,
    "errors": 0,
    "for_person_urls": [],
    "host_rule": 0,
-   "requests": 406,
-   "rested": 2,
+   "requests": 5,
+   "rested": 0,
    "robots": 0,
    "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "browser": 5,
-   "camps": 378,
-   "elevations": 378,
+   "camps": 1,
+   "elevations": 1,
    "errors": 0,
-   "needs_browser": 5,
-   "needs_key": 244,
-   "no_page": 7,
+   "needs_browser": 0,
+   "needs_key": 0,
+   "no_page": 1,
    "not_official": 0,
-   "ok": 12,
-   "pages_read": 14,
-   "resting": 2,
+   "ok": 0,
+   "pages_read": 0,
+   "resting": 0,
    "ridb_calls": 0,
-   "robots": 113,
+   "robots": 0,
    "skipped_fresh": 0
   },
   "when": "2026-11-16"
