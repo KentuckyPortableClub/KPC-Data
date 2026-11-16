@@ -933,22 +933,22 @@
    "checked": 394,
    "counts": {
     "camps": 394,
-    "needs_browser": 0,
+    "needs_browser": 2,
     "needs_key": 78,
     "no_page": 267,
     "not_official": 0,
     "ok": 2,
-    "other": 5,
-    "resting": 0,
-    "robots": 42,
+    "other": 3,
+    "resting": 25,
+    "robots": 17,
     "with_booking": 49,
-    "with_elevation": 0,
+    "with_elevation": 394,
     "with_facts": 2,
     "with_sites": 2
    },
    "left": 0,
    "status": "done",
-   "updated": "2026-11-09"
+   "updated": "2026-11-16"
   },
   "US-TX": {
    "camps": 484,
@@ -1171,7 +1171,7 @@
   "US-RI": "FCC listAsOfDates: robots.txt says no",
   "US-SC": "FCC listAsOfDates: robots.txt says no",
   "US-SD": "FCC listAsOfDates: robots.txt says no",
-  "US-TN": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
+  "US-TN": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-TX": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-UT": "FCC listAsOfDates: robots.txt says no",
   "US-VA": "FCC listAsOfDates: robots.txt says no",
@@ -1564,10 +1564,10 @@
    "cell": {
     "carriers": null,
     "files": [],
-    "src": null,
-    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
+    "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2026-06-30?category=State&subcategory=Mobile%20Broadband",
+    "status": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
    },
-   "read": "2026-11-09"
+   "read": "2026-11-16"
   },
   "US-TX": {
    "cell": {
@@ -1643,6 +1643,7 @@
   }
  },
  "hosts": {
+  "reserve.tnstateparks.com": 1794920406.150574,
   "reserveohio.com": 1794918753.22784,
   "www.fs.usda.gov": 1794915521.5681503,
   "www.maine.gov": 1794915485.191769
@@ -2594,41 +2595,48 @@
  },
  "last": {
   "areas": [
-   "US-OH"
+   "US-TN"
   ],
   "fcc_token": true,
   "manners": {
+   "dropped_queued": 16,
    "errors": 0,
    "for_person": 2,
    "for_person_urls": [
     [
-     "https://reserveohio.com/",
+     "https://www.tn.gov/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from www.tn.gov this run"
+    ],
+    [
+     "https://reserve.tnstateparks.com/big-hill-pond/camping",
      "HTTP 403 twice"
     ],
     [
-     "https://reserveohio.com/",
+     "https://reserve.tnstateparks.com/bledsoe-creek/camping",
      "HTTP 403 twice"
     ]
    ],
    "host_rule": 0,
-   "requests": 115,
-   "rested": 11,
+   "requests": 413,
+   "rested": 25,
    "retry403": 2,
-   "robots": 0,
+   "robots": 1,
+   "robots_unreadable": 1,
    "strikes": 4
   },
   "ridb_key": false,
   "stat": {
-   "camps": 96,
-   "elevations": 96,
+   "browser": 1,
+   "camps": 397,
+   "elevations": 397,
    "errors": 0,
-   "needs_browser": 2,
-   "needs_key": 11,
-   "no_page": 63,
+   "needs_browser": 3,
+   "needs_key": 81,
+   "no_page": 269,
    "not_official": 0,
-   "ok": 0,
-   "pages_read": 0,
-   "resting": 11,
+   "ok": 3,
+   "pages_read": 3,
+   "resting": 25,
    "ridb_calls": 0,
    "robots": 0,
    "skipped_fresh": 0

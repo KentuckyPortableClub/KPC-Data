@@ -6,7 +6,7 @@ Updated 2026-11-16. Every fact in <area>.json carries its source url, read date 
 | area | campgrounds | read ok | needs RIDB key | needs browser (403) | robots no | host resting | no page on file | not official host | other | with site count | with booking link | with elevation |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | US-KY | 100 | 17 | 35 | 1 | 0 | 41 | 0 | 0 | 6 | 11 | 51 | 0 |
-| US-TN | 394 | 2 | 78 | 0 | 42 | 0 | 267 | 0 | 5 | 2 | 49 | 0 |
+| US-TN | 394 | 2 | 78 | 2 | 17 | 25 | 267 | 0 | 3 | 2 | 49 | 394 |
 | US-NC | 141 | 66 | 66 | 0 | 0 | 6 | 0 | 0 | 3 | 23 | 75 | 0 |
 | US-VA | 163 | 2 | 74 | 0 | 0 | 4 | 40 | 30 | 13 | 2 | 19 | 0 |
 | US-WV | 101 | 1 | 47 | 28 | 0 | 0 | 0 | 0 | 25 | 0 | 54 | 0 |
@@ -65,7 +65,7 @@ Updated 2026-11-16. Every fact in <area>.json carries its source url, read date 
 ## Hosts that need a browser (403), say no in robots.txt, or are resting
 
 - outdoornebraska.gov: 187 campgrounds · host resting
-- www.fs.usda.gov: 127 campgrounds · host resting
+- www.fs.usda.gov: 129 campgrounds · host resting
 - dnr.alaska.gov: 113 campgrounds · robots.txt says no
 - cpw.state.co.us: 98 campgrounds · host resting
 - reservemn.usedirect.com: 94 campgrounds · robots.txt says no
@@ -76,7 +76,7 @@ Updated 2026-11-16. Every fact in <area>.json carries its source url, read date 
 - gfp.sd.gov: 49 campgrounds · host resting
 - www.wlf.louisiana.gov: 31 campgrounds · host resting (robots.txt could not be read: next run)
 - parks.ky.gov: 29 campgrounds · host resting
-- reserve.tnstateparks.com: 25 campgrounds · host resting (robots.txt could not be read: next run)
+- reserve.tnstateparks.com: 25 campgrounds · host resting
 - www.fdacs.gov: 23 campgrounds · robots.txt says no
 - destateparks.com: 22 campgrounds · host resting (robots.txt could not be read: next run)
 - www.lastateparks.com: 21 campgrounds · robots.txt says no
@@ -333,7 +333,7 @@ Updated 2026-11-16. Every fact in <area>.json carries its source url, read date 
 
 ## US-TN: 12 random samples (records with facts; seed = the date)
 
-- **Bandy Creek Campground** (intake-US-5500, agency (outside research camping-us-oct31), status ok, 16 facts) · [www.nps.gov](https://www.nps.gov/biso/planyourvisit/bandycreekcampground.htm)
+- **Bandy Creek Campground** (intake-US-5500, agency (outside research camping-us-oct31), status ok, 16 facts, 1424 ft) · [www.nps.gov](https://www.nps.gov/biso/planyourvisit/bandycreekcampground.htm)
   - booking.how = "online: www.recreation.gov" · “link “Start Your Reservation””
   - booking.url = "https://www.recreation.gov/camping/campgrounds/232506" · “link “Start Your Reservation” -> https://www.recreation.gov/camping/campgrounds/232506”
   - checkin = "12:00 pm" · “es a bookstore and vending machines at this location. Important Information Check-out and check-in time is 12:00 pm (ET) for all campsites i”
@@ -344,7 +344,7 @@ Updated 2026-11-16. Every fact in <area>.json carries its source url, read date 
   - hookups.electric = "some" · “n. The campground offers a total of 181 campsites: 96 trailer sites which offer water and electric hook-ups, 49 sites for tent camping, and ”
   - hookups.sewer = false · “estrooms and showers. A dump station is located near the registration kiosk. There are no sewer hook-ups at individual trailer sites. The gr”
   - hookups.water = true · “f Jamestown. The campground offers a total of 181 campsites: 96 trailer sites which offer water and electric hook-ups, 49 sites for tent cam”
-- **Jeff Busby Campground, Milepost 193.1** (intake-US-0642, agency (outside research camping-us-oct31), status ok, 6 facts) · [www.recreation.gov](https://www.recreation.gov/camping/poi/259043)
+- **Jeff Busby Campground, Milepost 193.1** (intake-US-0642, agency (outside research camping-us-oct31), status ok, 6 facts, 316 ft) · [www.recreation.gov](https://www.recreation.gov/camping/poi/259043)
   - booking.how = "online: www.recreation.gov" · “link “Natchez Trace Parkway””
   - booking.url = "https://www.recreation.gov/camping/gateways/2872" · “link “Natchez Trace Parkway” -> https://www.recreation.gov/camping/gateways/2872”
   - reservable = false · “strooms, trails, exhibits and an overlook atop Little Mountain. Campground sites are on a first come first served basis, no reservations. Pu”
