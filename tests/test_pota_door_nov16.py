@@ -63,5 +63,19 @@ def crons(ref=None):
 
 ref = next((r for r in ('origin/main', 'main') if subprocess.run(['git', 'rev-parse', '--verify', '-q', r], cwd=ROOT, capture_output=True).returncode == 0), None)
 if ref: check(crons(ref) == crons(), f'4. no schedule changed and no new workflow (against {ref})')
+# v4 (Nov 16): a saved list rewritten from POTA's all-parks export has no counts: those parks keep last week's numbers
+import gzip, os, subprocess, sys, tempfile  # noqa: E402
+with tempfile.TemporaryDirectory() as t:
+    t = pathlib.Path(t); sv = t / 'saved'; (sv / 'parks').mkdir(parents=True); (t / 'data/pota').mkdir(parents=True)
+    (sv / 'locations.json').write_text(json.dumps({'data': [{'locationDesc': 'US-ZZ'}]}))
+    with gzip.open(sv / 'parks/US-ZZ.json.gz', 'wt') as f:
+        json.dump({'data': [{'reference': 'US-9901', 'locationDesc': 'US-ZZ'}, {'reference': 'US-9902', 'locationDesc': 'US-ZZ', 'activations': 4, 'attempts': 5},
+                            {'reference': 'US-9903', 'locationDesc': 'US-ZZ'}]}, f)
+    (t / 'data/pota/activity.json').write_text(json.dumps({'parks': {'US-9901': [7, 8, 'US-ZZ']}}))
+    subprocess.run([sys.executable, '-B', str(ROOT / '.github/scripts/kpc_pota_activity.py')], cwd=t, env={**os.environ, 'KPC_POTA_SAVED': str(sv)}, capture_output=True, text=True)
+    got = json.loads((t / 'data/pota/activity.json').read_text())['parks']
+    check(got == {'US-9901': [7, 8, 'US-ZZ'], 'US-9902': [4, 5, 'US-ZZ'], 'US-9903': [0, 0, 'US-ZZ']},
+          '2. a park with no counts in the saved list keeps last week\'s numbers (a new one starts at 0)')
+
 print('ALL PASS' if not FAILS else 'SOME FAILED')
 sys.exit(1 if FAILS else 0)

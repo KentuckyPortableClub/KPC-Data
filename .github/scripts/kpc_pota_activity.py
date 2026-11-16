@@ -7,7 +7,9 @@ A location that fails keeps last week's numbers. Weekly. Never fails.
 KPC owner, 2026-11-16 (handoff item 7, be polite to POTA): this script NEVER calls POTA. It reads the SAVED copy that the one
 park-list job of KPC-Links (kpc_pota_parklists.py, through its POTA door) keeps in KPC-Links data/pota/saved: locations.json and
 parks/<location>.json.gz. KPC_POTA_SAVED names that folder (the workflow checks out only that folder of the public KPC-Links).
-A location with no saved list counts as failed (it keeps last week's numbers).
+A location with no saved list counts as failed (it keeps last week's numbers). v4 (Nov 16): the saved lists come from POTA's
+all-parks export, which has no activation counts; a park whose saved row has none keeps last week's numbers (new parks: 0 until
+the park-list job reads that location's own list).
   KPC_POTA_SAVED=links/data/pota/saved python3 .github/scripts/kpc_pota_activity.py"""
 import gzip, json, os, pathlib, time
 
@@ -28,12 +30,17 @@ def main():
     except Exception: old = {}  # noqa: BLE001
     try: locs = [l['locationDesc'] for l in saved_locations() if l.get('locationDesc')]
     except Exception as e: print(f'::notice title=POTA activity::no saved locations list ({e}): kept last week'); return
-    parks, failed = {}, []
+    parks, failed, kept_n = {}, [], 0
     for desc in sorted(set(locs)):
         try:
             for p in saved_park_list(desc) or []:
                 ref = p.get('reference')
-                if ref: parks[ref] = [int(p.get('activations') or 0), int(p.get('attempts') or 0), p.get('locationDesc') or desc]
+                if not ref: continue
+                if 'activations' not in p and 'attempts' not in p:   # v4: a list rewritten from the all-parks export has no counts yet
+                    o = old.get(ref)
+                    parks[ref] = [o[0], o[1], p.get('locationDesc') or desc] if o else [0, 0, p.get('locationDesc') or desc]; kept_n += 1
+                    continue
+                parks[ref] = [int(p.get('activations') or 0), int(p.get('attempts') or 0), p.get('locationDesc') or desc]
         except Exception: failed.append(desc)  # noqa: BLE001
     for ref, v in old.items():   # a location that failed keeps last week's numbers
         if ref not in parks and v[2] in failed: parks[ref] = v
@@ -52,7 +59,8 @@ def main():
     OUT.parent.mkdir(parents=True, exist_ok=True)
     json.dump({'about': 'POTA activations per park (POTA\'s location lists, the club\'s saved copy), weekly: {ref: [activations, attempts, location]}',
                'built': time.strftime('%Y-%m-%d'), 'parks': parks}, open(OUT, 'w'), separators=(',', ':'), ensure_ascii=False)
-    print(f'::notice title=POTA activity::{len(parks)} parks from {len(set(locs))} locations ({len(failed)} failed, kept last week)')
+    print(f'::notice title=POTA activity::{len(parks)} parks from {len(set(locs))} locations ({len(failed)} failed, kept last week;'
+          f' {kept_n} parks had no counts in the saved list and kept last week\'s numbers)')
 
 
 if __name__ == '__main__':
