@@ -536,7 +536,8 @@
    "dump_station": null,
    "elevation_ft": {
     "src": "https://epqs.nationalmap.gov/v1/json?x=-98.00832&y=47.09572&units=Feet&wkid=4326",
-    "value": 1338
+    "status": "unreadable: Expecting value: line 1 column 1 (char 0",
+    "value": null
    },
    "facts_src": {},
    "features": null,
@@ -7951,7 +7952,7 @@
   "resting": 0,
   "robots": 0,
   "with_booking": 69,
-  "with_elevation": 92,
+  "with_elevation": 91,
   "with_facts": 13,
   "with_sites": 11
  },
