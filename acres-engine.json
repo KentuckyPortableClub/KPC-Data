@@ -291,6 +291,15 @@
    "Notes": "computed from the official outline polygon (approx); layer https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11; read 2026-11-05"
   },
   {
+   "Park number (if matched)": "US-3684",
+   "Park name (as the agency writes it)": "Coon Creek Tract",
+   "Size": 316,
+   "Unit": "acres",
+   "Agency": "Alabama Dept of Conservation and Natural Resources, State La (preserve, state GIS table)",
+   "Source page": "https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0/query?where=OBJECTID%3D55&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0; read 2026-11-05"
+  },
+  {
    "Park number (if matched)": "CA-6251",
    "Park name (as the agency writes it)": "GRAND PARADE",
    "Size": 2,
@@ -487,15 +496,6 @@
    "Agency": "DNR Management Units",
    "Source page": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D4463&outFields=%2A&f=html",
    "Notes": "computed from the official outline polygon (approx); layer https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0; read 2026-11-04"
-  },
-  {
-   "Park number (if matched)": "US-3684",
-   "Park name (as the agency writes it)": "Coon Creek Tract",
-   "Size": 316,
-   "Unit": "acres",
-   "Agency": "Alabama Dept of Conservation and Natural Resources, State La (preserve, state GIS table)",
-   "Source page": "https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0/query?where=OBJECTID%3D55&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0; read 2026-11-05"
   },
   {
    "Park number (if matched)": "US-12938",
@@ -2225,21 +2225,21 @@
    "Retry?": "NO"
   },
   {
-   "Host": "apps.bwsr.state.mn.us",
-   "Agency/area": "DNR Management Units",
-   "Kind": "GIS layer",
-   "Example URL": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0",
-   "# times used": 24,
-   "Status": "OK",
-   "Detail": "answered the engine (official outline layer)",
-   "Retry?": "NO"
-  },
-  {
    "Host": "conservationgis.alabama.gov",
    "Agency/area": "Alabama Dept of Conservation and Natural Resources, State La (preserve, state GIS table)",
    "Kind": "GIS layer",
    "Example URL": "https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0",
    "# times used": 2,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "apps.bwsr.state.mn.us",
+   "Agency/area": "DNR Management Units",
+   "Kind": "GIS layer",
+   "Example URL": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0",
+   "# times used": 24,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
    "Retry?": "NO"
