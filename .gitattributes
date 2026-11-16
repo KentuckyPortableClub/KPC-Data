@@ -1,0 +1,14 @@
+# Nov 16 2026 (KPC owner): LINE ENDINGS. The per-area 2-fer fingerprint (.github/scripts/kpc_fers_chain_plan.py area_fp)
+# is worked out from the BYTES of the answer-key JSON files, and KPC-Links' answer-key rules hash works the same way over
+# its rule files. Git for Windows writes CRLF on checkout by default, so a Windows checkout of the very same commit held
+# different bytes than the club's own Linux builds. That is what stopped the PC 2-fer runner: its key gate called every
+# green key stale and refused all 65 areas. These lines keep every checkout, on every machine, byte for byte what this
+# repository holds: LF. area_fp also levels line endings itself, so this file is the second lock, not the only one.
+*.json text eol=lf
+*.geojson text eol=lf
+
+# packed files are bytes already: git must never touch them
+*.gz -text
+*.zip -text
+*.png -text
+*.jpg -text
