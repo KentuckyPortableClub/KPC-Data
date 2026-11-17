@@ -93,15 +93,6 @@
    "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-05"
   },
   {
-   "Park number (if matched)": "US-0843",
-   "Park name (as the agency writes it)": "Longfellow National Historic House",
-   "Size": 2,
-   "Unit": "acres",
-   "Agency": "MassGIS / Executive Office of Energy and Environmental Affai (land, state GIS table)",
-   "Source page": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0/query?where=OBJECTID%3D664800&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0; read 2026-11-02"
-  },
-  {
    "Park number (if matched)": "US-7973",
    "Park name (as the agency writes it)": "Baltimore--Washington Parkway",
    "Size": 4290,
@@ -2104,16 +2095,6 @@
    "Retry?": "NO"
   },
   {
-   "Host": "arcgisserver.digital.mass.gov",
-   "Agency/area": "MassGIS / Executive Office of Energy and Environmental Affai (land, state GIS table)",
-   "Kind": "GIS layer",
-   "Example URL": "https://arcgisserver.digital.mass.gov/arcgisserver/rest/services/AGOL/openspace/FeatureServer/0",
-   "# times used": 1,
-   "Status": "OK",
-   "Detail": "answered the engine (official outline layer)",
-   "Retry?": "NO"
-  },
-  {
    "Host": "mapservices.nps.gov",
    "Agency/area": "National Register of Historic Places Polygons",
    "Kind": "GIS layer",
@@ -2825,6 +2806,16 @@
   },
   {
    "Host": "www.dfg.idaho.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (robots.txt not readable this run)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "arcgisserver.digital.mass.gov",
    "Agency/area": null,
    "Kind": "GIS layer",
    "Example URL": null,
