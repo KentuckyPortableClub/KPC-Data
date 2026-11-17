@@ -20,7 +20,7 @@ Use:  kpc_waiting_room.py check   [--promote]        every file under data/waiti
       kpc_waiting_room.py undo-bot <bot> [<area>]    every file of one bot (optionally one area, e.g. US-KY)
       kpc_waiting_room.py release <live path>        a person approved a held file: it goes live (previous copy kept)
 Env: DATA (KPC-Data checkout, default .) · LINKS (KPC-Links checkout, default ../links) · NET=1 (link re-tests may use the
-     network) · WAITING_ON=1 (promotion allowed; unset = report only)."""
+     network) · WAITING_ON=1 (promotion allowed; unset = report only) · WAITING_RESUME_FAILED=1 (hand the bot a held copy even when it failed its checks; the default is to start from the live file)."""
 import copy, datetime as dt, glob, json, math, os, pathlib, random, re, shutil, subprocess, sys, time, urllib.parse, urllib.request
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from kpc_json_any import append_jsonl_gz  # noqa: E402
@@ -899,16 +899,65 @@ def mode_divert(paths):
     if moved: mode_check(False)
 
 
+def verdict_of(rel):
+    """Latest waiting-room verdict for this live path, or None if it was never checked."""
+    rel = str(rel).replace('\\', '/')
+    for r in reversed((load(W / 'verdicts.json', {}) or {}).get('results') or []):
+        if r.get('path') == rel:
+            return r.get('verdict')
+    return None
+
+
+def resume_failed():
+    """True when mode_resume may hand the bot a held copy that failed its checks.
+    Safer default is no: the bot starts from the live file. The owner can flip it:
+      WAITING_RESUME_FAILED=1  — old behaviour, resume HOLD files too
+      WAITING_RESUME_FAILED=0  — start from live when the held copy failed (default)
+    A file data/waiting/known/resume.json with {"resume_failed": true} also flips it;
+    the environment variable wins if both are set. Waiting for the owner's ruling."""
+    env = os.environ.get('WAITING_RESUME_FAILED')
+    if env is not None and env != '':
+        return env == '1'
+    conf = load(W / 'known' / 'resume.json', {}) or {}
+    return bool(conf.get('resume_failed'))
+
+
+def resume_from_held(rel):
+    """Whether this held file may become the bot's working copy. Key and 2-fer files
+    keep today's behaviour (another chat owns those). For every other kind, only a
+    file that passed its checks (PASS or LIVE-FILTERED) is resumed, unless the owner
+    has flipped resume_failed."""
+    rel = str(rel).replace('\\', '/')
+    kind, _ = kind_of(rel)
+    if kind in ('key', 'fers') or rel.startswith(('data/fers/', 'data/us-key/', 'data/ca-key/', 'data/world-key/')):
+        return True
+    if resume_failed():
+        return True
+    return verdict_of(rel) in ('PASS', 'LIVE-FILTERED')
+
+
 def mode_resume(paths):
-    """Before a held bot runs again: its waiting files become its working copy, so it continues from what it held (not from live)."""
-    n, skipped = 0, []
+    """Before a bot runs again: a held file that passed its checks becomes the working
+    copy, so the bot continues from that work (not from live). A held file that failed
+    its checks is left in the waiting room and is NOT copied over the live file, so
+    damage does not compound (default; WAITING_RESUME_FAILED=1 restores the old
+    behaviour). Nothing held is deleted. Key and 2-fer files keep today's behaviour."""
+    n, skipped, from_live = 0, [], []
     for pth in paths:
         for f in (W / 'in' / pth).rglob('*') if (W / 'in' / pth).exists() else []:
             if not f.is_file(): continue
             rel = f.relative_to(W / 'in')
-            if not_line(rel.as_posix()): skipped.append(rel.as_posix()); continue   # Nov 4: a held status report is not a bot's working copy
+            rel_s = rel.as_posix()
+            if not_line(rel_s): skipped.append(rel_s); continue   # Nov 4: a held status report is not a bot's working copy
+            if not resume_from_held(rel_s):
+                from_live.append(rel_s); continue
             (DATA / rel).parent.mkdir(parents=True, exist_ok=True); shutil.copy2(f, DATA / rel); n += 1
-    print(f'::notice title=Waiting room (hold)::{n} held files taken as the working copy' + (f'; not taken (not a trail line, see known/trails.json): {", ".join(skipped)}' if skipped else ''))
+    msg = f'{n} held files taken as the working copy'
+    if from_live:
+        msg += f'; started from live (held copy failed its checks, left in the waiting room): {", ".join(from_live)}'
+    if skipped:
+        msg += f'; not taken (not a trail line, see known/trails.json): {", ".join(skipped)}'
+    print(f'::notice title=Waiting room (hold)::{msg}')
 
 
 def row_map(d):
