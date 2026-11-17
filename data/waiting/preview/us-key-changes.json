@@ -1,21 +1,46 @@
 {
  "about": "us-key: the HELD build (data/waiting/in/data/us-key/) vs the LIVE key (data/us-key/). Chat 11: check the sample, then write KEY YES or KEY NO: <refs> in data/waiting/approved.json (item 'what': 'us-key', 'build': the held build id from data/waiting/in/data/us-key/index.json, 'date': 'YYYY-MM-DD' and 'time': 'h:mm AM/PM' Central; rule 22: no build field or a grade from before Nov 2 9:37 AM CST is not a release). Written by kpc_key_summary.py.",
- "made": "2026-11-17 19:20 UTC",
+ "made": "2026-11-17 22:18 UTC",
  "totals": {
-  "gained": 1,
+  "gained": 2,
   "lost": 0,
-  "pieces_changed": 1,
+  "pieces_changed": 0,
   "grade_changed": 0
  },
  "per_area": {
+  "US-FL": {
+   "gained": 1,
+   "lost": 0,
+   "pieces_changed": 0,
+   "grade_changed": 0
+  },
   "US-IN": {
    "gained": 1,
    "lost": 0,
-   "pieces_changed": 1,
+   "pieces_changed": 0,
    "grade_changed": 0
   }
  },
  "gained": [
+  {
+   "area": "US-FL",
+   "ref": "US-7879",
+   "name": "Citrus Wildlife Management Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgflg58",
+     "Citrus Wildlife Management Area",
+     0,
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-7879"
+  },
   {
    "area": "US-IN",
    "ref": "US-10180",
@@ -39,6 +64,25 @@
  "lost": [],
  "grade_changed": [],
  "sample": [
+  {
+   "area": "US-FL",
+   "ref": "US-7879",
+   "name": "Citrus Wildlife Management Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgflg58",
+     "Citrus Wildlife Management Area",
+     0,
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-7879"
+  },
   {
    "area": "US-IN",
    "ref": "US-10180",

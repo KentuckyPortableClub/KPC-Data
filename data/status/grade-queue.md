@@ -1,4 +1,4 @@
-# Waiting for a grader (2026-11-17 20:42Z, written by the waiting room)
+# Waiting for a grader (2026-11-17 22:18Z, written by the waiting room)
 Rows the same as the live (already graded) copy keep their old YES: check only the NEW + CHANGED rows listed. Held = a check failed: fix first.
 
 - **data/ca-key/CA-QC.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build CA-43866754543): 0 new, 19 changed, 0 gone, 815 same (carried); check: CA-2056, CA-2058, CA-2064, CA-2080, CA-2082, CA-2089, CA-2092, CA-2093, CA-2097, CA-2099, CA-2103, CA-2198, CA-2223, CA-2227, CA-2228, CA-2238, CA-2246, CA-2261, CA-2274
@@ -238,64 +238,64 @@ Rows the same as the live (already graded) copy keep their old YES: check only t
 - **data/truth/US-VT.json** (truth, PASS; grader chat 11): 0 new, 109 changed, 0 gone, 0 same (carried); check: US-0329, US-0574, US-0744, US-10298, US-10299, US-10300, US-10301, US-10302, US-11966, US-13530, US-3098, US-3099, US-3100, US-3101, US-3102, US-3103, US-3104, US-3105, US-3106, US-3107, US-3108, US-3109, US-3110, US-3111, US-3112 ...
 - **data/truth/US-WV.json** (truth, PASS; grader chat 11): 0 new, 172 changed, 0 gone, 0 same (carried); check: US-0015, US-0607, US-0608, US-0629, US-0631, US-0632, US-0695, US-0696, US-0697, US-0735, US-10031, US-12031, US-12032, US-12033, US-12034, US-12035, US-12036, US-12037, US-12038, US-12039, US-12040, US-12041, US-12042, US-12043, US-12044 ...
 - **data/truth/US-WY.json** (truth, PASS; grader chat 11): 294 new, 0 changed, 0 gone, 0 same (carried); check: US-0031, US-0070, US-0609, US-0610, US-0611, US-0613, US-0614, US-0615, US-0698, US-0817, US-0920, US-0934, US-10776, US-10778, US-10789, US-10790, US-10791, US-10792, US-10793, US-10795, US-10796, US-10797, US-10798, US-10799, US-10800 ...
-- **data/us-key/US-AK.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 1 changed, 0 gone, 178 same (carried); check: US-10281
-- **data/us-key/US-AL.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 0 changed, 0 gone, 155 same (carried)
-- **data/us-key/US-AR.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 0 changed, 0 gone, 306 same (carried)
-- **data/us-key/US-AZ.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 5 changed, 0 gone, 114 same (carried); check: US-4433, US-4434, US-4436, US-6071, US-7887
-- **data/us-key/US-CA.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 4 changed, 0 gone, 407 same (carried); check: US-10400, US-11336, US-11580, US-13334
-- **data/us-key/US-CO.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 0 changed, 0 gone, 276 same (carried)
-- **data/us-key/US-CT.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 0 changed, 0 gone, 157 same (carried)
-- **data/us-key/US-DC.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 0 changed, 0 gone, 35 same (carried)
-- **data/us-key/US-DE.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 1 changed, 0 gone, 88 same (carried); check: US-11812
-- **data/us-key/US-FL.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 0 changed, 0 gone, 460 same (carried)
-- **data/us-key/US-GA.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 0 changed, 0 gone, 238 same (carried)
-- **data/us-key/US-HI.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 0 changed, 0 gone, 103 same (carried)
-- **data/us-key/US-IA.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 7 changed, 0 gone, 174 same (carried); check: US-10174, US-11875, US-12376, US-12623, US-8283, US-9312, US-9334
-- **data/us-key/US-ID.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 2 changed, 0 gone, 360 same (carried); check: US-11282, US-7363
-- **data/us-key/US-IL.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 179 changed, 0 gone, 40 same (carried); check: US-0272, US-0281, US-0282, US-0283, US-0284, US-0285, US-0286, US-0287, US-0523, US-0526, US-0841, US-0978, US-0979, US-0981, US-0982, US-0984, US-0985, US-0986, US-0987, US-0988, US-0990, US-0991, US-0992, US-0993, US-0994 ...
-- **data/us-key/US-IN.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 192 changed, 0 gone, 37 same (carried); check: US-0289, US-0290, US-0734, US-0765, US-0782, US-10177, US-10178, US-10180, US-10181, US-10185, US-10201, US-10202, US-10204, US-10206, US-10224, US-10225, US-10226, US-10227, US-10229, US-10230, US-10231, US-10232, US-10233, US-10234, US-10235 ...
-- **data/us-key/US-KS.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 0 changed, 0 gone, 145 same (carried)
-- **data/us-key/US-LA.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 0 changed, 0 gone, 123 same (carried)
-- **data/us-key/US-MA.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 0 changed, 0 gone, 421 same (carried)
-- **data/us-key/US-MD.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 6 changed, 0 gone, 180 same (carried); check: US-10766, US-10779, US-10781, US-6396, US-7749, US-7783
-- **data/us-key/US-ME.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 0 changed, 0 gone, 148 same (carried)
-- **data/us-key/US-MI.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 0 changed, 0 gone, 388 same (carried)
-- **data/us-key/US-MN.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 32 changed, 0 gone, 287 same (carried); check: US-10720, US-10723, US-10725, US-11023, US-11151, US-11152, US-11872, US-11983, US-12152, US-12378, US-12380, US-12395, US-12600, US-12625, US-12626, US-12685, US-12809, US-12810, US-12811, US-13156, US-13203, US-13502, US-13545, US-13562, US-13620 ...
-- **data/us-key/US-MO.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 4 changed, 0 gone, 557 same (carried); check: US-10147, US-11156, US-11771, US-12779
-- **data/us-key/US-MS.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 0 changed, 0 gone, 155 same (carried)
-- **data/us-key/US-MT.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 0 changed, 0 gone, 254 same (carried)
-- **data/us-key/US-NC.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 0 changed, 0 gone, 253 same (carried)
-- **data/us-key/US-ND.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 0 changed, 0 gone, 155 same (carried)
-- **data/us-key/US-NE.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 0 changed, 0 gone, 201 same (carried)
-- **data/us-key/US-NH.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 9 changed, 0 gone, 197 same (carried); check: US-12637, US-2666, US-2679, US-4512, US-4866, US-4918, US-4924, US-4938, US-4970
-- **data/us-key/US-NJ.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 0 changed, 0 gone, 134 same (carried)
-- **data/us-key/US-NM.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 2 changed, 0 gone, 122 same (carried); check: US-7876, US-8621
-- **data/us-key/US-NV.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 22 changed, 0 gone, 345 same (carried); check: US-0464, US-11050, US-13018, US-13165, US-13207, US-13222, US-13230, US-13463, US-2625, US-2627, US-2628, US-2629, US-2630, US-2632, US-2636, US-2637, US-2639, US-4437, US-4438, US-4441, US-9235, US-9268
-- **data/us-key/US-NY.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 0 changed, 0 gone, 851 same (carried)
-- **data/us-key/US-OH.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 1 changed, 0 gone, 275 same (carried); check: US-1946
-- **data/us-key/US-OK.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 0 changed, 0 gone, 205 same (carried)
-- **data/us-key/US-OR.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 25 changed, 0 gone, 415 same (carried); check: US-10018, US-10023, US-10026, US-10474, US-10475, US-10481, US-10485, US-10486, US-10505, US-12462, US-12469, US-12881, US-12959, US-12991, US-13065, US-13066, US-13068, US-13069, US-13071, US-13075, US-9541, US-9560, US-9568, US-9983, US-9987
-- **data/us-key/US-PA.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 0 changed, 0 gone, 494 same (carried)
-- **data/us-key/US-RI.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 0 changed, 0 gone, 61 same (carried)
-- **data/us-key/US-SC.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 0 changed, 0 gone, 167 same (carried)
-- **data/us-key/US-SD.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 0 changed, 0 gone, 120 same (carried)
-- **data/us-key/US-TN.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 1 changed, 0 gone, 276 same (carried); check: US-7565
-- **data/us-key/US-TX.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 0 changed, 0 gone, 222 same (carried)
-- **data/us-key/US-UT.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 60 changed, 0 gone, 632 same (carried); check: US-10980, US-10982, US-10983, US-10985, US-10986, US-10987, US-10991, US-10994, US-10996, US-11012, US-11098, US-11100, US-11101, US-11114, US-11727, US-11734, US-11747, US-11753, US-11760, US-5755, US-5768, US-5780, US-5784, US-5785, US-5789 ...
-- **data/us-key/US-VA.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 0 changed, 0 gone, 184 same (carried)
-- **data/us-key/US-VT.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 2 changed, 0 gone, 107 same (carried); check: US-3140, US-3151
-- **data/us-key/US-WA.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 45 changed, 0 gone, 491 same (carried); check: US-10629, US-10630, US-10631, US-10707, US-10712, US-12241, US-12243, US-12244, US-12249, US-12255, US-12262, US-12265, US-12271, US-12285, US-12286, US-12306, US-12322, US-12323, US-12399, US-12485, US-12486, US-12488, US-12503, US-12524, US-12529 ...
-- **data/us-key/US-WI.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 0 changed, 0 gone, 348 same (carried)
-- **data/us-key/US-WV.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 0 changed, 0 gone, 172 same (carried)
-- **data/us-key/US-WY.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 5 changed, 0 gone, 289 same (carried); check: US-6161, US-6165, US-6196, US-6198, US-6230
-- **data/us-key/area-tables.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): new file (no live copy), no rows to list
-- **data/us-key/changed-parks.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): whole file changed, no rows to list: look at the whole file
-- **data/us-key/index.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 50 changed, 0 gone, 0 same (carried); check: AK, AL, AR, AZ, CA, CO, CT, DC, DE, FL, GA, HI, IA, ID, IL, IN, KS, LA, MA, MD, ME, MI, MN, MO, MS ...
-- **data/us-key/lost-finds.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): whole file changed, no rows to list: look at the whole file
+- **data/us-key/US-AK.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 2 changed, 0 gone, 177 same (carried); check: US-0643, US-10281
+- **data/us-key/US-AL.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 1 changed, 0 gone, 154 same (carried); check: US-0868
+- **data/us-key/US-AR.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 0 changed, 0 gone, 306 same (carried)
+- **data/us-key/US-AZ.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 5 changed, 0 gone, 114 same (carried); check: US-4433, US-4434, US-4436, US-6071, US-7887
+- **data/us-key/US-CA.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 4 changed, 0 gone, 407 same (carried); check: US-10400, US-11336, US-11580, US-13334
+- **data/us-key/US-CO.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 1 changed, 0 gone, 275 same (carried); check: US-4404
+- **data/us-key/US-CT.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 0 changed, 0 gone, 157 same (carried)
+- **data/us-key/US-DC.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 0 changed, 0 gone, 35 same (carried)
+- **data/us-key/US-DE.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 1 changed, 0 gone, 88 same (carried); check: US-11812
+- **data/us-key/US-FL.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 3 changed, 0 gone, 457 same (carried); check: US-0635, US-3650, US-7879
+- **data/us-key/US-GA.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 0 changed, 0 gone, 238 same (carried)
+- **data/us-key/US-HI.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 0 changed, 0 gone, 103 same (carried)
+- **data/us-key/US-IA.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 7 changed, 0 gone, 174 same (carried); check: US-10174, US-11875, US-12376, US-12623, US-8283, US-9312, US-9334
+- **data/us-key/US-ID.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 2 changed, 0 gone, 360 same (carried); check: US-11282, US-7363
+- **data/us-key/US-IL.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 179 changed, 0 gone, 40 same (carried); check: US-0272, US-0281, US-0282, US-0283, US-0284, US-0285, US-0286, US-0287, US-0523, US-0526, US-0841, US-0978, US-0979, US-0981, US-0982, US-0984, US-0985, US-0986, US-0987, US-0988, US-0990, US-0991, US-0992, US-0993, US-0994 ...
+- **data/us-key/US-IN.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 183 changed, 0 gone, 46 same (carried); check: US-0289, US-0290, US-0734, US-0765, US-0782, US-10177, US-10178, US-10180, US-10181, US-10185, US-10201, US-10202, US-10204, US-10206, US-10224, US-10225, US-10226, US-10227, US-10229, US-10230, US-10231, US-10232, US-10233, US-10234, US-10235 ...
+- **data/us-key/US-KS.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 0 changed, 0 gone, 145 same (carried)
+- **data/us-key/US-LA.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 0 changed, 0 gone, 123 same (carried)
+- **data/us-key/US-MA.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 0 changed, 0 gone, 421 same (carried)
+- **data/us-key/US-MD.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 6 changed, 0 gone, 180 same (carried); check: US-10766, US-10779, US-10781, US-6396, US-7749, US-7783
+- **data/us-key/US-ME.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 0 changed, 0 gone, 148 same (carried)
+- **data/us-key/US-MI.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 0 changed, 0 gone, 388 same (carried)
+- **data/us-key/US-MN.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 4 new, 32 changed, 0 gone, 287 same (carried); check: US-13655, US-13656, US-13657, US-13658, US-10720, US-10723, US-10725, US-11023, US-11151, US-11152, US-11872, US-11983, US-12152, US-12378, US-12380, US-12395, US-12600, US-12625, US-12626, US-12685, US-12809, US-12810, US-12811, US-13156, US-13203 ...
+- **data/us-key/US-MO.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 4 changed, 0 gone, 557 same (carried); check: US-10147, US-11156, US-11771, US-12779
+- **data/us-key/US-MS.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 0 changed, 0 gone, 155 same (carried)
+- **data/us-key/US-MT.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 0 changed, 0 gone, 254 same (carried)
+- **data/us-key/US-NC.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 0 changed, 0 gone, 253 same (carried)
+- **data/us-key/US-ND.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 0 changed, 0 gone, 155 same (carried)
+- **data/us-key/US-NE.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 0 changed, 0 gone, 201 same (carried)
+- **data/us-key/US-NH.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 11 changed, 0 gone, 195 same (carried); check: US-12637, US-2666, US-2679, US-4512, US-4866, US-4868, US-4886, US-4918, US-4924, US-4938, US-4970
+- **data/us-key/US-NJ.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 0 changed, 0 gone, 134 same (carried)
+- **data/us-key/US-NM.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 2 changed, 0 gone, 122 same (carried); check: US-7876, US-8621
+- **data/us-key/US-NV.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 22 changed, 0 gone, 345 same (carried); check: US-0464, US-11050, US-13018, US-13165, US-13207, US-13222, US-13230, US-13463, US-2625, US-2627, US-2628, US-2629, US-2630, US-2632, US-2636, US-2637, US-2639, US-4437, US-4438, US-4441, US-9235, US-9268
+- **data/us-key/US-NY.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 0 changed, 0 gone, 851 same (carried)
+- **data/us-key/US-OH.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 1 changed, 0 gone, 275 same (carried); check: US-1946
+- **data/us-key/US-OK.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 0 changed, 0 gone, 205 same (carried)
+- **data/us-key/US-OR.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 25 changed, 0 gone, 415 same (carried); check: US-10018, US-10023, US-10026, US-10474, US-10475, US-10481, US-10485, US-10486, US-10505, US-12462, US-12469, US-12881, US-12959, US-12991, US-13065, US-13066, US-13068, US-13069, US-13071, US-13075, US-9541, US-9560, US-9568, US-9983, US-9987
+- **data/us-key/US-PA.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 0 changed, 0 gone, 494 same (carried)
+- **data/us-key/US-RI.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 0 changed, 0 gone, 61 same (carried)
+- **data/us-key/US-SC.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 0 changed, 0 gone, 167 same (carried)
+- **data/us-key/US-SD.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 0 changed, 0 gone, 120 same (carried)
+- **data/us-key/US-TN.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 1 changed, 0 gone, 276 same (carried); check: US-7565
+- **data/us-key/US-TX.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 0 changed, 0 gone, 222 same (carried)
+- **data/us-key/US-UT.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 2 new, 60 changed, 0 gone, 632 same (carried); check: US-13659, US-13660, US-10980, US-10982, US-10983, US-10985, US-10986, US-10987, US-10991, US-10994, US-10996, US-11012, US-11098, US-11100, US-11101, US-11114, US-11727, US-11734, US-11747, US-11753, US-11760, US-5755, US-5768, US-5780, US-5784 ...
+- **data/us-key/US-VA.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 0 changed, 0 gone, 184 same (carried)
+- **data/us-key/US-VT.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 2 changed, 0 gone, 107 same (carried); check: US-3140, US-3151
+- **data/us-key/US-WA.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 5 new, 44 changed, 0 gone, 492 same (carried); check: US-12237, US-13661, US-13662, US-13663, US-13664, US-10629, US-10630, US-10631, US-10707, US-10712, US-12241, US-12243, US-12244, US-12249, US-12255, US-12262, US-12265, US-12271, US-12285, US-12286, US-12306, US-12322, US-12323, US-12399, US-12485 ...
+- **data/us-key/US-WI.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 0 changed, 0 gone, 348 same (carried)
+- **data/us-key/US-WV.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 0 changed, 0 gone, 172 same (carried)
+- **data/us-key/US-WY.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 5 changed, 0 gone, 289 same (carried); check: US-6161, US-6165, US-6196, US-6198, US-6230
+- **data/us-key/area-tables.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): new file (no live copy), no rows to list
+- **data/us-key/changed-parks.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): whole file changed, no rows to list: look at the whole file
+- **data/us-key/index.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 50 changed, 0 gone, 0 same (carried); check: AK, AL, AR, AZ, CA, CO, CT, DC, DE, FL, GA, HI, IA, ID, IL, IN, KS, LA, MA, MD, ME, MI, MN, MO, MS ...
+- **data/us-key/lost-finds.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): whole file changed, no rows to list: look at the whole file
 - **data/us-key/overrides-parks-01.json** (key, PASS): a part of the override set, counted with data/us-key/overrides.json
 - **data/us-key/overrides-parks-02.json** (key, PASS): a part of the override set, counted with data/us-key/overrides.json
-- **data/us-key/overrides.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 6 changed, 0 gone, 5032 same (carried); check: US-0643, US-4404, US-4868, US-4886, US-7879, US-10180
-- **data/us-key/refresh.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 2 new, 0 changed, 0 gone, 14 same (carried); check: IL, IN
+- **data/us-key/overrides.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 0 new, 10 changed, 0 gone, 5028 same (carried); check: US-0643, US-4404, US-4868, US-4886, US-7879, US-10180, US-10709, US-12234, US-12792, US-12798
+- **data/us-key/refresh.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44149999389): 2 new, 0 changed, 0 gone, 14 same (carried); check: IL, IN
 - **data/world-key/AE.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build W-44085508762): 0 new, 1 changed, 0 gone, 108 same (carried); check: AE-0002
 - **data/world-key/AS.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build W-44085508762): 0 new, 4 changed, 0 gone, 0 same (carried); check: AS-0001, AS-0002, AS-0003, AS-0004
 - **data/world-key/AT.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build W-44085508762): 0 new, 420 changed, 0 gone, 0 same (carried); check: AT-0001, AT-0002, AT-0003, AT-0004, AT-0005, AT-0006, AT-0007, AT-0008, AT-0009, AT-0010, AT-0011, AT-0012, AT-0013, AT-0014, AT-0015, AT-0016, AT-0017, AT-0018, AT-0019, AT-0020, AT-0021, AT-0022, AT-0023, AT-0024, AT-0025 ...
