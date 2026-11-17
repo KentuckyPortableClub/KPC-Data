@@ -975,6 +975,80 @@
   ]
  },
  {
+  "ref": "CA-0515",
+  "area": "CA-QC",
+  "park": "Parc de la Chute-Montmorency Provincial Park",
+  "agency_group": "sepaq.com",
+  "kind": "outline",
+  "date": "2026-11-04",
+  "status": "check failed",
+  "st": "CA-QC",
+  "url": "https://www.donneesquebec.ca/recherche/dataset/578d182d-4897-4c11-aa7f-ee0cfed222a0/resource/5abd7e57-bfeb-49ba-a76c-93d961ae0633/download/sites_classes_pg.geojson",
+  "service_url": "https://www.donneesquebec.ca/recherche/dataset/578d182d-4897-4c11-aa7f-ee0cfed222a0/resource/5abd7e57-bfeb-49ba-a76c-93d961ae0633/download/sites_classes_pg.geojson",
+  "name_field": "nom_bien",
+  "agency": "Ministère de la Culture et des Communications du Québec (Répertoire du patrimoine culturel du Québec), via Données Québec",
+  "licence": "see the publisher",
+  "answer": "",
+  "checked_by": "",
+  "tier": "T-2",
+  "band": "WEAK",
+  "step": "L0",
+  "record": "feature#51",
+  "record_name": "Site patrimonial de la Chute-Montmorency",
+  "layer": "PACK-CA-QC-land-392",
+  "record_link": "https://www.donneesquebec.ca/recherche/dataset/578d182d-4897-4c11-aa7f-ee0cfed222a0/resource/5abd7e57-bfeb-49ba-a76c-93d961ae0633/download/sites_classes_pg.geojson",
+  "where": "id=feature#51",
+  "pin_m": 0,
+  "acres_approx": 355.9,
+  "grade": "official",
+  "envelope": [
+   -71.17091,
+   46.8817,
+   -71.13701,
+   46.904
+  ],
+  "rule": null,
+  "others": [],
+  "source_url": "https://www.donneesquebec.ca/recherche/dataset/578d182d-4897-4c11-aa7f-ee0cfed222a0/resource/5abd7e57-bfeb-49ba-a76c-93d961ae0633/download/sites_classes_pg.geojson",
+  "read_date": "2026-11-04",
+  "rule_g": "LIKELY",
+  "rule_g_why": "names overlap",
+  "size_band": "unknown",
+  "why": "T-2 WEAK: 'Site patrimonial de la Chute-Montmorency' at the POTA pin",
+  "notes": {
+   "where_looked": [
+    {
+     "source": "PACK-CA-QC-park-90",
+     "gave": "error (HTTP robots-unreadable)"
+    },
+    {
+     "source": "PACK-CA-QC-park-91",
+     "gave": "no hit (0 at pin, 0 by name)"
+    },
+    {
+     "source": "PACK-CA-QC-land-392",
+     "gave": "hit (1 at pin, 0 by name)"
+    },
+    {
+     "source": "WDPA (last resort)",
+     "gave": "not asked: an official layer has a record for this park (W-10)"
+    }
+   ],
+   "solved": "NAME SOLVED: agency calls it Site patrimonial de la Chute-Montmorency",
+   "why_this_record": "record 'Site patrimonial de la Chute-Montmorency' (PACK-CA-QC-land-392); pin inside; about 355.9 acres; Rule G: LIKELY (names overlap); size unknown",
+   "confidence": {
+    "level": "likely",
+    "double_check": "check the kind of place and the size"
+   }
+  },
+  "pass": 1,
+  "check_problem": [
+   "url does not open (HTTP deferred)",
+   "record_link does not open (HTTP deferred)",
+   "source_url does not open (HTTP deferred)"
+  ]
+ },
+ {
   "ref": "CA-5166",
   "area": "CA-NB",
   "park": "Dominion Park Recreation Park",

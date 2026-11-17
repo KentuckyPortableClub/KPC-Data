@@ -1,125 +1,137 @@
-# Spot check: all kinds (20 random rows of 12871)
+# Spot check: all kinds (20 random rows of 12912)
 
 For chat 11: open each link and say YES / NO. The engine decides nothing.
 
-## US-6078 Fort Pearce BLM National Historic Site (US-UT)
+## US-11739 Three Peaks RC Track BLM Special Recreation Management Area (US-UT)
+- status: candidate
+- tier: T-6
+- band: WEAK
+- record_name: Three Peaks
+- url: https://gis.blm.gov/natl/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0?f=html
+- record_link: https://gis.blm.gov/natl/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0/query?where=OBJECTID%3D9179&outFields=%2A&f=html
+- source_url: https://gis.blm.gov/natl/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0/query?geometry=-113.17%2C37.7657&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 0
+- why: same land also in PACK-US-UT-park-8 'Three Peaks', PACK-US-land-208 'Three Peaks', PACK-US-AK-land-214 'Three Peaks': merged, counted once; record 'Three Peaks' (PACK-US-UT-park-7); pin inside; about 6631.7 acres; Rule G: LIKELY (names overlap); size unknown; confidence: weak
+- answer: 
+
+## US-13441 Lake Desire State Fishing Lake (US-WA)
 - status: candidate
 - tier: T-3
 - band: WEAK
-- record_name: Warner Ridge / Fort Pearce
-- url: https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0?f=html
-- record_link: https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?where=OBJECTID%3D1588&outFields=%2A&f=html
-- source_url: https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?geometry=-113.411%2C37.0074&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_name: Lake Desire
+- url: https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0?f=html
+- record_link: https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0/query?geometry=-122.108%2C47.4465&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- source_url: https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0/query?geometry=-122.108%2C47.4465&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: same land also in US-BLM-sma 'Bureau of Land Management', PACK-US-UT-park-7 'Sand Mountain', PACK-US-UT-park-8 'Sand Mountain': merged, counted once; record 'Warner Ridge / Fort Pearce' (PACK-US-AK-land-215); pin inside; about 4288.0 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- why: same land also in PACK-US-WA-land-366 'King County Lakes': merged, counted once; record 'Lake Desire' (PACK-US-WA-wildlife-364); pin inside; about 1.5 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
-## US-12708 Kenai River State Conservation Area (US-AK)
-- status: candidate
-- tier: T-3
-- band: WEAK
-- record_name: Kenai National
-- url: https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0?f=html
-- record_link: https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0/query?where=OBJECTID%3D1813&outFields=%2A&f=html
-- source_url: https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/SurfaceClassification_LegislativelyDesignatedAreas/MapServer/0/query?geometry=-151.04%2C60.4879&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 0
-- why: record 'Kenai National' (PACK-US-AK-preserve-210); pin inside; about 2101826.0 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
-- answer: 
-
-## US-5756 Browns Park National Wildlife Management Area (US-UT)
+## US-13486 Bellamy River Wildlife Management Area - East Wildlife Management Area (US-NH)
 - status: found
 - tier: T-2
 - band: STRONG
-- record_name: Browns Park WMA
-- url: https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0?f=html
-- record_link: https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0/query?where=OBJECTID%3D27&outFields=%2A&f=html
-- source_url: https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0/query?geometry=-109.148%2C40.8886&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_name: Bellamy River WMA - East
+- url: https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/0?f=html
+- record_link: https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/0/query?where=OBJECTID%3D5894&outFields=%2A&f=html
+- source_url: https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/0/query?geometry=-70.8419%2C43.1294&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: record 'Browns Park WMA' (PACK-US-UT-land-351); pin inside; about 3133.5 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
+- why: record 'Bellamy River WMA - East' (PACK-US-NH-land-204); pin inside; about 21.2 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
 - answer: 
 
-## US-6048 Notch Peak Trailhead BLM Recreation Management Area (US-UT)
+## US-11732 Mount Ellen Summit BLM Recreation Management Area (US-UT)
 - status: candidate
 - tier: T-3
 - band: WEAK
-- record_name: Notch Peak
+- record_name: Mt. Ellen-Blue Hills
 - url: https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1?f=html
-- record_link: https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1/query?where=OBJECTID%3D966&outFields=%2A&f=html
-- source_url: https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1/query?geometry=-113.352%2C39.1294&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_link: https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1/query?where=OBJECTID%3D1014&outFields=%2A&f=html
+- source_url: https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1/query?geometry=-110.802%2C38.0858&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: same land also in US-BLM-sma 'Bureau of Land Management': merged, counted once; record 'Notch Peak' (PACK-US-land-385); pin inside; about 51434.9 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- why: same land also in US-BLM-sma 'Bureau of Land Management', PACK-US-UT-park-7 'Henry Mountains', PACK-US-UT-park-8 'Henry Mountains': merged, counted once; record 'Mt. Ellen-Blue Hills' (PACK-US-land-385); pin inside; about 81290.1 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
-## CA-2218 Rimouski Reserve Nature Reserve (CA-QC)
-- status: candidate
-- tier: T-2
-- band: WEAK
-- record_name: Réserve faunique de Rimouski
-- url: https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/11?f=html
-- record_link: https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/11/query?geometry=-68.2098%2C48.1781&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- source_url: https://servicescarto.mrnf.gouv.qc.ca/pes/rest/services/Territoire/TRQ_WMS/MapServer/11/query?geometry=-68.2098%2C48.1781&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 0
-- why: record 'Réserve faunique de Rimouski' (PACK-CA-QC-wildlife-395); pin inside; about 180234.2 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
-- answer: 
-
-## GB-3747 Central Park (GB)
-- status: candidate
-- tier: T-2
-- band: WEAK
-- record_name: Central Sanday
-- url: https://ogc.nature.scot/geoserver/protectedareas/wfs?service=WFS&request=DescribeFeatureType&version=2.0.0&typeNames=protectedareas%3Asssi
-- record_link: https://ogc.nature.scot/geoserver/protectedareas/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=protectedareas%3Asssi&count=25&filter=%3Cfes%3AFilter%20xmlns%3Afes%3D%22http%3A%2F%2Fwww.opengis.net%2Ffes%2F2.0%22%3E%3Cfes%3APropertyIsLike%20wildCard%3D%22%2A%22%20singleChar%3D%22.%22%20escapeChar%3D%22%21%22%20matchCase%3D%22false%22%3E%3Cfes%3AValueReference%3ENAME%3C%2Ffes%3AValueReference%3E%3Cfes%3ALiteral%3E%2Acentral%2A%3C%2Ffes%3ALiteral%3E%3C%2Ffes%3APropertyIsLike%3E%3C%2Ffes%3AFilter%3E
-- source_url: https://ogc.nature.scot/geoserver/protectedareas/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=protectedareas%3Asssi&count=25&filter=%3Cfes%3AFilter%20xmlns%3Afes%3D%22http%3A%2F%2Fwww.opengis.net%2Ffes%2F2.0%22%3E%3Cfes%3APropertyIsLike%20wildCard%3D%22%2A%22%20singleChar%3D%22.%22%20escapeChar%3D%22%21%22%20matchCase%3D%22false%22%3E%3Cfes%3AValueReference%3ENAME%3C%2Ffes%3AValueReference%3E%3Cfes%3ALiteral%3E%2Acentral%2A%3C%2Ffes%3ALiteral%3E%3C%2Ffes%3APropertyIsLike%3E%3C%2Ffes%3AFilter%3E
-- pin_m: 0
-- why: record 'Central Sanday' (GB-SCT-sssi); pin inside; Rule G: LIKELY (names overlap); size unknown; confidence: likely
-- answer: 
-
-## GB-4036 Manor Park (GB)
-- status: candidate
-- tier: T-2
-- band: WEAK
-- record_name: MANOR FARM WOODLANDS
-- url: https://datamap.gov.wales/geoserver/ows?service=WFS&request=DescribeFeatureType&version=2.0.0&typeNames=inspire-nrw%3ANRW_FORESTRY_OWNERSHIP_GB
-- record_link: https://datamap.gov.wales/geoserver/ows?service=WFS&version=2.0.0&request=GetFeature&typeNames=inspire-nrw%3ANRW_FORESTRY_OWNERSHIP_GB&count=25&filter=%3Cfes%3AFilter%20xmlns%3Afes%3D%22http%3A%2F%2Fwww.opengis.net%2Ffes%2F2.0%22%3E%3Cfes%3APropertyIsLike%20wildCard%3D%22%2A%22%20singleChar%3D%22.%22%20escapeChar%3D%22%21%22%20matchCase%3D%22false%22%3E%3Cfes%3AValueReference%3Etitle%3C%2Ffes%3AValueReference%3E%3Cfes%3ALiteral%3E%2Amanor%2A%3C%2Ffes%3ALiteral%3E%3C%2Ffes%3APropertyIsLike%3E%3C%2Ffes%3AFilter%3E
-- source_url: https://datamap.gov.wales/geoserver/ows?service=WFS&version=2.0.0&request=GetFeature&typeNames=inspire-nrw%3ANRW_FORESTRY_OWNERSHIP_GB&count=25&filter=%3Cfes%3AFilter%20xmlns%3Afes%3D%22http%3A%2F%2Fwww.opengis.net%2Ffes%2F2.0%22%3E%3Cfes%3APropertyIsLike%20wildCard%3D%22%2A%22%20singleChar%3D%22.%22%20escapeChar%3D%22%21%22%20matchCase%3D%22false%22%3E%3Cfes%3AValueReference%3Etitle%3C%2Ffes%3AValueReference%3E%3Cfes%3ALiteral%3E%2Amanor%2A%3C%2Ffes%3ALiteral%3E%3C%2Ffes%3APropertyIsLike%3E%3C%2Ffes%3AFilter%3E
-- pin_m: 0
-- why: record 'MANOR FARM WOODLANDS' (WB-WORLD-543); pin inside; Rule G: LIKELY (names overlap); size unknown; confidence: likely
-- answer: 
-
-## CA-4903 Forges du Saint Maurice National Historic Site (CA-QC)
+## CA-4866 Fort Mississauga National Historic Site (CA-ON)
 - status: found
 - tier: T-1
 - band: STRONG
-- record_name: Forges du Saint-Maurice National Historic Site
+- record_name: Fort Mississauga National Historic Site
 - url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4?f=html
-- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D1951&outFields=%2A&f=html
-- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-72.6596%2C46.3951&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D2309&outFields=%2A&f=html
+- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-79.0767%2C43.2616&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: record 'Forges du Saint-Maurice National Historic Site' (PACK-CA-NB-land-73); pin inside; about 117.1 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
+- why: record 'Fort Mississauga National Historic Site' (PACK-CA-NB-land-73); pin inside; about 55.6 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
 - answer: 
 
-## US-1896 Letchworth-Love Mounds State Park (US-FL)
+## US-12064 Henderson Swamp State Wilderness Area (US-TN)
+- status: candidate
+- tier: T-3
+- band: WEAK
+- record_name: Henderson Swamp
+- url: https://tnmap.tn.gov/arcgis/rest/services/ENVIRONMENTAL/TWRA/MapServer/3?f=html
+- record_link: https://tnmap.tn.gov/arcgis/rest/services/ENVIRONMENTAL/TWRA/MapServer/3/query?where=OBJECTID%3D29&outFields=%2A&f=html
+- source_url: https://tnmap.tn.gov/arcgis/rest/services/ENVIRONMENTAL/TWRA/MapServer/3/query?geometry=-82.5799%2C36.2794&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 33
+- why: record 'Henderson Swamp' (PACK-US-TN-wildlife-345); pin 33 m from the edge; about 24.1 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: likely
+- answer: 
+
+## GB-4228 The Mount Historic Site (GB)
 - status: candidate
 - tier: T-2
 - band: WEAK
-- record_name: Letchworth-Love Mounds Archaeological State Park
-- url: https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0?f=html
-- record_link: https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0/query?where=OBJECTID%3D68&outFields=%2A&f=html
-- source_url: https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0/query?geometry=-83.9916%2C30.5177&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_name: Mount Bog
+- url: https://ogc.nature.scot/geoserver/protectedareas/wfs?service=WFS&request=DescribeFeatureType&version=2.0.0&typeNames=protectedareas%3Asssi
+- record_link: https://ogc.nature.scot/geoserver/protectedareas/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=protectedareas%3Asssi&count=25&filter=%3Cfes%3AFilter%20xmlns%3Afes%3D%22http%3A%2F%2Fwww.opengis.net%2Ffes%2F2.0%22%3E%3Cfes%3APropertyIsLike%20wildCard%3D%22%2A%22%20singleChar%3D%22.%22%20escapeChar%3D%22%21%22%20matchCase%3D%22false%22%3E%3Cfes%3AValueReference%3ENAME%3C%2Ffes%3AValueReference%3E%3Cfes%3ALiteral%3E%2Amount%2A%3C%2Ffes%3ALiteral%3E%3C%2Ffes%3APropertyIsLike%3E%3C%2Ffes%3AFilter%3E
+- source_url: https://ogc.nature.scot/geoserver/protectedareas/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=protectedareas%3Asssi&count=25&filter=%3Cfes%3AFilter%20xmlns%3Afes%3D%22http%3A%2F%2Fwww.opengis.net%2Ffes%2F2.0%22%3E%3Cfes%3APropertyIsLike%20wildCard%3D%22%2A%22%20singleChar%3D%22.%22%20escapeChar%3D%22%21%22%20matchCase%3D%22false%22%3E%3Cfes%3AValueReference%3ENAME%3C%2Ffes%3AValueReference%3E%3Cfes%3ALiteral%3E%2Amount%2A%3C%2Ffes%3ALiteral%3E%3C%2Ffes%3APropertyIsLike%3E%3C%2Ffes%3AFilter%3E
 - pin_m: 0
-- why: record 'Letchworth-Love Mounds Archaeological State Park' (PACK-US-FL-park-241); pin inside; about 190.0 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- why: record 'Mount Bog' (GB-SCT-sssi); pin inside; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
-## GB-7231 Tyrebagger Forest Park (GB)
+## GB-4151 Riddings Country Park (GB)
 - status: candidate
 - tier: T-2
 - band: WEAK
-- record_name: TYREBAGGER HILL
-- url: https://ogc.nature.scot/geoserver/wfs?service=WFS&request=DescribeFeatureType&version=2.0.0&typeNames=scottishforestry%3ANational_Forest_Estate_Ownership_Scotland
-- record_link: https://ogc.nature.scot/geoserver/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=scottishforestry%3ANational_Forest_Estate_Ownership_Scotland&count=25&filter=%3Cfes%3AFilter%20xmlns%3Afes%3D%22http%3A%2F%2Fwww.opengis.net%2Ffes%2F2.0%22%3E%3Cfes%3APropertyIsLike%20wildCard%3D%22%2A%22%20singleChar%3D%22.%22%20escapeChar%3D%22%21%22%20matchCase%3D%22false%22%3E%3Cfes%3AValueReference%3Etitle%3C%2Ffes%3AValueReference%3E%3Cfes%3ALiteral%3E%2Atyrebagger%2A%3C%2Ffes%3ALiteral%3E%3C%2Ffes%3APropertyIsLike%3E%3C%2Ffes%3AFilter%3E
-- source_url: https://ogc.nature.scot/geoserver/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=scottishforestry%3ANational_Forest_Estate_Ownership_Scotland&count=25&filter=%3Cfes%3AFilter%20xmlns%3Afes%3D%22http%3A%2F%2Fwww.opengis.net%2Ffes%2F2.0%22%3E%3Cfes%3APropertyIsLike%20wildCard%3D%22%2A%22%20singleChar%3D%22.%22%20escapeChar%3D%22%21%22%20matchCase%3D%22false%22%3E%3Cfes%3AValueReference%3Etitle%3C%2Ffes%3AValueReference%3E%3Cfes%3ALiteral%3E%2Atyrebagger%2A%3C%2Ffes%3ALiteral%3E%3C%2Ffes%3APropertyIsLike%3E%3C%2Ffes%3AFilter%3E
+- record_name: PT.RIDDINGS WOOD
+- url: https://datamap.gov.wales/geoserver/ows?service=WFS&request=DescribeFeatureType&version=2.0.0&typeNames=inspire-nrw%3ANRW_FORESTRY_OWNERSHIP_GB
+- record_link: https://datamap.gov.wales/geoserver/ows?service=WFS&version=2.0.0&request=GetFeature&typeNames=inspire-nrw%3ANRW_FORESTRY_OWNERSHIP_GB&count=25&filter=%3Cfes%3AFilter%20xmlns%3Afes%3D%22http%3A%2F%2Fwww.opengis.net%2Ffes%2F2.0%22%3E%3Cfes%3APropertyIsLike%20wildCard%3D%22%2A%22%20singleChar%3D%22.%22%20escapeChar%3D%22%21%22%20matchCase%3D%22false%22%3E%3Cfes%3AValueReference%3Etitle%3C%2Ffes%3AValueReference%3E%3Cfes%3ALiteral%3E%2Ariddings%2A%3C%2Ffes%3ALiteral%3E%3C%2Ffes%3APropertyIsLike%3E%3C%2Ffes%3AFilter%3E
+- source_url: https://datamap.gov.wales/geoserver/ows?service=WFS&version=2.0.0&request=GetFeature&typeNames=inspire-nrw%3ANRW_FORESTRY_OWNERSHIP_GB&count=25&filter=%3Cfes%3AFilter%20xmlns%3Afes%3D%22http%3A%2F%2Fwww.opengis.net%2Ffes%2F2.0%22%3E%3Cfes%3APropertyIsLike%20wildCard%3D%22%2A%22%20singleChar%3D%22.%22%20escapeChar%3D%22%21%22%20matchCase%3D%22false%22%3E%3Cfes%3AValueReference%3Etitle%3C%2Ffes%3AValueReference%3E%3Cfes%3ALiteral%3E%2Ariddings%2A%3C%2Ffes%3ALiteral%3E%3C%2Ffes%3APropertyIsLike%3E%3C%2Ffes%3AFilter%3E
 - pin_m: 0
-- why: record 'TYREBAGGER HILL' (WB-WORLD-541); pin inside; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- why: record 'PT.RIDDINGS WOOD' (WB-WORLD-543); pin inside; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- answer: 
+
+## US-12453 Rocky Creek Viewpoint State Park (US-OR)
+- status: candidate
+- tier: T-4
+- band: WEAK
+- record_name: Rocky Creek
+- url: https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_State_Parks/FeatureServer/0?f=html
+- record_link: https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_State_Parks/FeatureServer/0/query?where=OBJECTID%3D412&outFields=%2A&f=html
+- source_url: https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_State_Parks/FeatureServer/0/query?geometry=-124.073%2C44.7847&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 0
+- why: same land also in PACK-US-OR-park-322 'Rocky Creek': merged, counted once; record 'Rocky Creek' (PACK-US-OR-land-206); pin inside; about 74.8 acres; Rule G: LIKELY (names overlap); size unknown; confidence: weak
+- answer: 
+
+## US-11095 DWR Wahweap Warm Water State Fish Hatchery (US-UT)
+- status: candidate
+- tier: T-6
+- band: WEAK
+- record_name: Wahweap Hatchery
+- url: https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0?f=html
+- record_link: https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0/query?where=OBJECTID%3D244&outFields=%2A&f=html
+- source_url: https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0/query?geometry=-111.676%2C37.103&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 0
+- why: same land also in WDPA-last-resort-WDPA_v0 'Utah State Department of Wildlife Resources 57': merged, counted once; record 'Wahweap Hatchery' (PACK-US-UT-land-351); pin inside; about 263.7 acres; Rule G: LIKELY (names overlap); size unknown; confidence: weak
+- answer: 
+
+## GB-7239 Kirkhill Forest Park (GB)
+- status: candidate
+- tier: T-2
+- band: WEAK
+- record_name: Moss of Kirkhill
+- url: https://ogc.nature.scot/geoserver/protectedareas/wfs?service=WFS&request=DescribeFeatureType&version=2.0.0&typeNames=protectedareas%3Asssi
+- record_link: https://ogc.nature.scot/geoserver/protectedareas/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=protectedareas%3Asssi&count=25&filter=%3Cfes%3AFilter%20xmlns%3Afes%3D%22http%3A%2F%2Fwww.opengis.net%2Ffes%2F2.0%22%3E%3Cfes%3APropertyIsLike%20wildCard%3D%22%2A%22%20singleChar%3D%22.%22%20escapeChar%3D%22%21%22%20matchCase%3D%22false%22%3E%3Cfes%3AValueReference%3ENAME%3C%2Ffes%3AValueReference%3E%3Cfes%3ALiteral%3E%2Akirkhill%2A%3C%2Ffes%3ALiteral%3E%3C%2Ffes%3APropertyIsLike%3E%3C%2Ffes%3AFilter%3E
+- source_url: https://ogc.nature.scot/geoserver/protectedareas/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=protectedareas%3Asssi&count=25&filter=%3Cfes%3AFilter%20xmlns%3Afes%3D%22http%3A%2F%2Fwww.opengis.net%2Ffes%2F2.0%22%3E%3Cfes%3APropertyIsLike%20wildCard%3D%22%2A%22%20singleChar%3D%22.%22%20escapeChar%3D%22%21%22%20matchCase%3D%22false%22%3E%3Cfes%3AValueReference%3ENAME%3C%2Ffes%3AValueReference%3E%3Cfes%3ALiteral%3E%2Akirkhill%2A%3C%2Ffes%3ALiteral%3E%3C%2Ffes%3APropertyIsLike%3E%3C%2Ffes%3AFilter%3E
+- pin_m: 0
+- why: record 'Moss of Kirkhill' (GB-SCT-sssi); pin inside; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
 ## US-4171 Paynetown on Monroe Lake State Recreation Area (US-IN)
@@ -134,16 +146,16 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: same land also in PACK-US-IN-land-387 'Monroe Lake': merged, counted once; record 'Monroe Lake' (PACK-US-IN-land-191); pin 29 m from the edge; about 482.2 acres; Rule G: LIKELY (names overlap); size unknown; confidence: weak
 - answer: 
 
-## US-7374 Wysong Park State Conservation Area (US-FL)
+## US-12988 North Nehalem State Fish Hatchery (US-OR)
 - status: candidate
 - tier: T-4
 - band: WEAK
-- record_name: Wysong Lock And Dam
-- url: https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/STATE_OWNED_LANDS/MapServer/0?f=html
-- record_link: https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/STATE_OWNED_LANDS/MapServer/0/query?where=OBJECTID%3D18532&outFields=%2A&f=html
-- source_url: https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/STATE_OWNED_LANDS/MapServer/0/query?geometry=-82.1821%2C28.823&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 7
-- why: record 'Wysong Lock And Dam' (PACK-US-FL-land-246); pin 7 m from the edge; about 0.2 acres; Rule G: LIKELY (names overlap); size unknown; confidence: weak
+- record_name: North Fork Nehalem Park
+- url: https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0?f=html
+- record_link: https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0/query?where=OBJECTID%3D2418&outFields=%2A&f=html
+- source_url: https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0/query?geometry=-123.772%2C45.8123&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 0
+- why: record 'North Fork Nehalem Park' (PACK-US-OR-park-322); pin inside; about 2.8 acres; Rule G: LIKELY (names overlap); size unknown; confidence: weak
 - answer: 
 
 ## CA-3408 Denetiah Corridor Protected Area (CA-BC)
@@ -182,16 +194,16 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: record 'Goose Creek Gamebird Habitat Area' (PACK-US-IN-land-191); pin inside; about 376.9 acres; Rule G: LIKELY (names overlap); size unknown; confidence: weak
 - answer: 
 
-## US-7524 Lake Greeson National Recreation Area (US-AR)
+## CA-6560 Kingsburg Beach Provincial Park (CA-NS)
 - status: candidate
-- tier: T-3
+- tier: T-1
 - band: WEAK
-- record_name: NARROWS DAM-LAKE GREESON
-- url: https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_recreation_areas/FeatureServer/0?f=html
-- record_link: https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_recreation_areas/FeatureServer/0/query?where=OBJECTID%3D824&outFields=%2A&f=html
-- source_url: https://services7.arcgis.com/n1YM8pTrFmm7L4hs/arcgis/rest/services/usace_recreation_areas/FeatureServer/0/query?geometry=-93.7116%2C34.1451&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 7
-- why: record 'NARROWS DAM-LAKE GREESON' (WB-US-503); pin 7 m from the edge; about 6.6 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- record_name: Kingsburg Beach Provincial Park
+- url: https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0?f=html
+- record_link: https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0/query?where=OBJECTID%3D136&outFields=%2A&f=html
+- source_url: https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0/query?geometry=-64.2585%2C44.2745&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 0
+- why: record 'Kingsburg Beach Provincial Park' (PACK-CA-NS-park-80); pin inside; about 2.7 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: likely
 - answer: 
 
 ## CA-6253 Moirs Ltd. Power House Historic Site (CA-NS)
@@ -206,39 +218,27 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: record 'Moirs Ltd. Power House' (PACK-CA-NS-land-83); pin 6 m from the edge; about 3.3 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: likely
 - answer: 
 
-## US-13643 Coon Creek Wildlife Management Area (US-MN)
+## US-13639 Hopeful Wildlife Management Area (US-MN)
 - status: found
 - tier: T-2
 - band: STRONG
-- record_name: Coon Creek WMA
+- record_name: Hopeful WMA
 - url: https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0?f=html
-- record_link: https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D5783&outFields=%2A&f=html
-- source_url: https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?geometry=-96.0402%2C44.3361&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_link: https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D5807&outFields=%2A&f=html
+- source_url: https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?geometry=-96.0983%2C44.2557&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: record 'Coon Creek WMA' (PACK-US-MN-forest-27); pin inside; about 1102.6 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
+- why: record 'Hopeful WMA' (PACK-US-MN-forest-27); pin inside; about 589.3 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
 - answer: 
 
-## US-6084 Santa Clara River Reserve BLM Recreation Management Area (US-UT)
+## US-11746 Devil's Rock Garden Day Use BLM Recreation Management Area (US-UT)
 - status: candidate
-- tier: T-4
+- tier: T-6
 - band: WEAK
-- record_name: Santa Clara River / Land Hill
-- url: https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0?f=html
-- record_link: https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?where=OBJECTID%3D1521&outFields=%2A&f=html
-- source_url: https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?geometry=-113.688%2C37.142&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_name: Devils Garden ISA
+- url: https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1?f=html
+- record_link: https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1/query?where=OBJECTID%3D777&outFields=%2A&f=html
+- source_url: https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer/1/query?geometry=-111.414%2C37.5847&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: same land also in US-BLM-sma 'Bureau of Land Management': merged, counted once; record 'Santa Clara River / Land Hill' (PACK-US-AK-land-215); pin inside; about 1662.8 acres; Rule G: LIKELY (names overlap); size unknown; confidence: weak
-- answer: 
-
-## US-5971 Harold S. Crane State Waterfowl Management Area (US-UT)
-- status: candidate
-- tier: T-3
-- band: WEAK
-- record_name: Harold Crane WMA
-- url: https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0?f=html
-- record_link: https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0/query?where=OBJECTID%3D89&outFields=%2A&f=html
-- source_url: https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0/query?geometry=-112.173%2C41.3451&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 0
-- why: same land also in PACK-US-UT-land-381 'Harold Crane WMA', Q-1472 '', Q-1473 'West Desert': merged, counted once; record 'Harold Crane WMA' (PACK-US-UT-land-351); pin inside; about 9851.7 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: likely
+- why: same land also in US-BLM-sma 'Bureau of Land Management': merged, counted once; record 'Devils Garden ISA' (PACK-US-land-385); pin inside; about 617.3 acres; Rule G: LIKELY (names overlap); size unknown; confidence: weak
 - answer: 
 
