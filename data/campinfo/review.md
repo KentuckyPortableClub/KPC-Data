@@ -5,7 +5,7 @@ Updated 2026-11-17. Every fact in <area>.json carries its source url, read date 
 
 | area | campgrounds | read ok | needs RIDB key | needs browser (403) | robots no | host resting | no page on file | not official host | other | with site count | with booking link | with elevation |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| US-KY | 100 | 17 | 35 | 1 | 0 | 41 | 0 | 0 | 6 | 11 | 51 | 0 |
+| US-KY | 100 | 51 | 35 | 3 | 0 | 0 | 0 | 0 | 11 | 15 | 51 | 46 |
 | US-TN | 394 | 2 | 78 | 2 | 17 | 25 | 267 | 0 | 3 | 2 | 49 | 372 |
 | US-NC | 141 | 66 | 66 | 0 | 0 | 6 | 0 | 0 | 3 | 23 | 75 | 0 |
 | US-VA | 163 | 2 | 74 | 0 | 0 | 4 | 40 | 30 | 13 | 2 | 19 | 0 |
@@ -118,9 +118,9 @@ Updated 2026-11-17. Every fact in <area>.json carries its source url, read date 
 
 ## Kentucky answer-key check (R5: the bot vs kpc-campgrounds.json, hand-checked)
 
-- 2026-11-12: 67 hand-checked campgrounds · fields agree 53 · DIFFER 5 · bot blank 247
+- 2026-11-17: 67 hand-checked campgrounds · fields agree 104 · DIFFER 11 · bot blank 194
 
-**GATE=PASS** · FACTS vs hand key: 47/50 right = 94% (need 80%, at least 10 filled; sites 9/10, electric 15/16, water 7/7, sewer 4/5, dump_station 3/3, showers 9/9) · 0 fee/site values from the wrong page or sentence (need 0) · known answers 12 right of 12 read, 0 waiting on the secret, 4 warn · all-field agreement 53/58 = 91% ('some' = agree; KEY_WRONG left out)
+**GATE=PASS** · FACTS vs hand key: 96/103 right = 93% (need 80%, at least 10 filled; sites 13/14, electric 32/36, water 20/21, sewer 7/8, dump_station 4/4, showers 20/20) · 0 fee/site values from the wrong page or sentence (need 0) · known answers 16 right of 16 read, 0 waiting on the secret, 0 warn · all-field agreement 104/115 = 90% ('some' = agree; KEY_WRONG left out)
 
 - ok: Higginson-Henry WMA: no RV length (the page gives elevation 675 ft, not an RV length) · got None
 - ok: Rolling Fork WMA: no RV length (elevation 980 ft is not an RV length) · got None
@@ -129,97 +129,97 @@ Updated 2026-11-17. Every fact in <area>.json carries its source url, read date 
 - ok: Yellowbank WMA: no camping season (Nov. 1-Dec. 31 is the rabbit / quail hunting season) · got None
 - ok: Higginson-Henry WMA: no camping season (hunting season dates are not the camping season) · got None
 - ok: Mammoth Cave: showers from a real sentence or null, never the 'Shower Types' menu heading · got None from “”
-- WARN: Twin Knobs: 'RV sites range from electric-only to full hookups' = sewer 'some' · got not read: host resting
+- ok: Twin Knobs: 'RV sites range from electric-only to full hookups' = sewer 'some' · got some
 - ok: Bandy Creek: phone is not the (877) reservation line · got None
 - ok: Bear Creek Horse Camp: phone is not the (877) reservation line · got None
 - ok: Blue Heron: phone is not the (877) reservation line · got None
 - ok: Station Camp: phone is not the (877) reservation line · got None
-- WARN: White Sulphur Horse Camp: booking link is a campground page, not a bare domain · got not read: host resting
-- WARN: S-Tree: booking link is a campground page, not a bare domain · got not read: host resting
+- ok: White Sulphur Horse Camp: booking link is a campground page, not a bare domain · got None
+- ok: S-Tree: booking link is a campground page, not a bare domain · got None
 - ok: Mammoth Cave Campground: one record only (duplicates merged) · got 1 record(s)
-- WARN: Fort Boonesborough: site count read from the state park page (key 163, so >= 100) · got not read: host resting
+- ok: Fort Boonesborough: site count read from the state park page (key 163, so >= 100) · got 166
 
 **KEY_WRONG (hand-key rows the checkers found wrong; left out of the count; Brandon fixes the key):**
 
 | campground | field | bot | key | why |
 |---|---|---|---|---|
-| Clear Creek Campground | electric | None | False | agency words say no hookups (chat 11 regrade); key says electric True |
-| White Sulphur Horse Camp | electric | None | False | agency words say no hookups (chat 11 regrade); key says electric True |
-| Koomer Ridge Campground | electric | None | False | agency page says 'no hookups' (chat 8 grade); key says electric True |
-| Great Meadows Campground | electric | None | False | agency words say no hookups (chat 11 regrade); key says electric True |
-| Turkey Foot Campground | electric | None | False | agency page: 'There is no water, electricity or dump station available' (chat 8); key says electric True |
+| Clear Creek Campground | electric | False | False | agency words say no hookups (chat 11 regrade); key says electric True |
+| White Sulphur Horse Camp | electric | False | False | agency words say no hookups (chat 11 regrade); key says electric True |
+| Koomer Ridge Campground | electric | False | False | agency page says 'no hookups' (chat 8 grade); key says electric True |
+| Great Meadows Campground | electric | False | False | agency words say no hookups (chat 11 regrade); key says electric True |
+| Turkey Foot Campground | electric | False | False | agency page: 'There is no water, electricity or dump station available' (chat 8); key says electric True |
 
-- Barren River Lake State Resort Park Campground (ok, no campground facts in the page text: needs browser?): amps bot blank (key: [30, 50]); dump_station bot blank (key: True); electric bot blank (key: False); sewer bot blank (key: False); showers bot blank (key: True); sites bot blank (key: 101); water bot blank (key: False)
-- Big Bone Lick Campground (host resting): amps bot blank (key: [30]); dump_station bot blank (key: True); electric bot blank (key: True); showers bot blank (key: True); sites bot blank (key: 62); water bot blank (key: True)
-- Blue Heron Campground (KY) (ok (browser)): electric agree (True); phone bot blank (key: (423) 286-7275); showers agree (True); sites agree (45)
-- Bear Creek Horse Camp (KY) (ok (browser)): electric agree (True); phone bot blank (key: (423) 286-7275); showers agree (True); sites agree (22) [bot: 23]
-- Alum Ford Campground (KY) (ok (browser)): electric bot blank (key: False); phone bot blank (key: (423) 569-9778); sewer bot blank (key: False); sites bot blank (key: 6); water bot blank (key: False)
-- Bandy Creek Campground (TN) (ok): electric agree (True) [bot: some]; phone bot blank (key: (423) 286-7275); showers agree (True)
-- Station Camp Campground (TN) (ok (browser)): electric agree (True); phone bot blank (key: (423) 286-7275); showers agree (True); sites agree (24)
-- Blue Licks Battlefield Campground (host resting): dump_station bot blank (key: True); electric bot blank (key: True); phone bot blank (key: (859) 289-3653); showers bot blank (key: True); sites bot blank (key: 55); water bot blank (key: False)
-- Carr Creek Campground (host resting): electric bot blank (key: False); sites bot blank (key: 39); water bot blank (key: True)
-- Carter Caves Campground (host resting): amps bot blank (key: [20, 30, 50]); dump_station bot blank (key: True); electric bot blank (key: True); phone bot blank (key: (606) 286-4411); showers bot blank (key: True); sites bot blank (key: 128); water bot blank (key: True)
-- Columbus-Belmont Campground (host resting): amps bot blank (key: [50]); dump_station bot blank (key: True); electric bot blank (key: True); sewer bot blank (key: True); showers bot blank (key: True); sites bot blank (key: 35); water bot blank (key: True)
-- Ridgeline & Clifty Campgrounds (host resting): amps bot blank (key: [20, 30]); electric bot blank (key: False); phone bot blank (key: (800) 325-0063); sites bot blank (key: 50); water bot blank (key: True)
-- Wilderness Road Campground (ok): amps bot blank (key: [20, 30, 50]); dump_station agree (True); electric agree (True) [bot: some]; phone bot blank (key: (606) 248-2817); sewer DIFFER bot False vs key True; showers agree (True); sites bot blank (key: 151); water agree (False)
-- Dale Hollow Lake Campground (host resting): amps bot blank (key: [50]); electric bot blank (key: True); sewer bot blank (key: True); sites bot blank (key: 151); water bot blank (key: True)
-- Twin Knobs Campground (host resting): electric bot blank (key: True); phone bot blank (key: (606) 780-7818); sewer bot blank (key: True); showers bot blank (key: True); sites bot blank (key: 200); water bot blank (key: True)
-- Clear Creek Campground (host resting): electric KEY WRONG (bot None, key False): left out; phone bot blank (key: (606) 784-6428); sites bot blank (key: 20); water bot blank (key: True)
-- White Sulphur Horse Camp (host resting): electric KEY WRONG (bot None, key False): left out; phone bot blank (key: (606) 784-6428); water bot blank (key: True)
-- Koomer Ridge Campground (host resting): electric KEY WRONG (bot None, key False): left out; phone bot blank (key: (606) 784-6428); sewer bot blank (key: False); showers bot blank (key: True); sites bot blank (key: 54); water bot blank (key: False)
-- Holly Bay Campground (host resting): electric bot blank (key: True); phone bot blank (key: (606) 864-4163); showers bot blank (key: True); sites bot blank (key: 94); water bot blank (key: True)
-- Grove Drive-In Campground (host resting): electric bot blank (key: True); phone bot blank (key: (606) 864-4163); sites bot blank (key: 44); water bot blank (key: True)
-- Bee Rock Campground (host resting): electric bot blank (key: False); phone bot blank (key: (606) 864-4163); sewer bot blank (key: False); sites bot blank (key: 25); water bot blank (key: False)
-- Great Meadows Campground (host resting): electric KEY WRONG (bot None, key False): left out; phone bot blank (key: (606) 376-5323); sewer bot blank (key: False); sites bot blank (key: 18); water bot blank (key: False)
-- Barren Fork Horse Camp (host resting): electric bot blank (key: True); phone bot blank (key: (606) 376-5323); sites bot blank (key: 41); water bot blank (key: True)
-- Turkey Foot Campground (host resting): electric KEY WRONG (bot None, key False): left out; phone bot blank (key: (606) 864-4163); sites bot blank (key: 15); water bot blank (key: False)
-- S-Tree Campground (host resting): phone bot blank (key: (606) 864-4163); sites bot blank (key: 20); water bot blank (key: True)
-- Fort Boonesborough Campground (host resting): electric bot blank (key: True); phone bot blank (key: (859) 527-3454); sewer bot blank (key: True); sites bot blank (key: 163); water bot blank (key: True)
-- General Burnside Island Campground (host resting): electric bot blank (key: True); phone bot blank (key: (606) 561-3625); sewer bot blank (key: True); sites bot blank (key: 101); water bot blank (key: True)
-- General Butler Campground (host resting): electric bot blank (key: True); sites bot blank (key: 104); water bot blank (key: True)
-- Grayson Lake Campground (host resting): amps bot blank (key: [50]); electric bot blank (key: True); phone bot blank (key: (606) 474-6856); sites bot blank (key: 69); water bot blank (key: True)
-- Green River Lake Campground (host resting): electric bot blank (key: True); phone bot blank (key: (270) 465-8255); sites bot blank (key: 227); water bot blank (key: True)
-- Greenbo Lake Campground (host resting): amps bot blank (key: [30]); electric bot blank (key: True); sewer bot blank (key: True); sites bot blank (key: 102); water bot blank (key: True)
-- Jenny Wiley Campground (host resting): dump_station bot blank (key: True); electric bot blank (key: True); phone bot blank (key: (606) 889-1790); showers bot blank (key: True); sites bot blank (key: 118); water bot blank (key: True)
-- John James Audubon Campground (host resting): amps bot blank (key: [20]); electric bot blank (key: True); sites bot blank (key: 83); water bot blank (key: True)
-- Kenlake Campground (host resting): electric bot blank (key: True); phone bot blank (key: (270) 474-2211); sewer bot blank (key: True); sites bot blank (key: 63); water bot blank (key: True)
-- Kentucky Dam Village Campground (host resting): electric bot blank (key: True); sites bot blank (key: 69); water bot blank (key: True)
-- Kincaid Lake Campground (host resting): electric bot blank (key: True); sites bot blank (key: 159)
-- Lake Barkley Campground (host resting): amps bot blank (key: [30]); electric bot blank (key: True); sites bot blank (key: 79); water bot blank (key: True)
-- Lake Cumberland Campground (host resting): electric bot blank (key: True); phone bot blank (key: (270) 343-3111); sewer bot blank (key: True); sites bot blank (key: 87); water bot blank (key: True)
-- Lake Malone Campground (host resting): amps bot blank (key: [30]); electric bot blank (key: True); sites bot blank (key: 25); water bot blank (key: True)
-- Hillman Ferry Campground (ok): amps agree ([30, 50]); electric agree (True); phone bot blank (key: (270) 924-2181); sewer agree (True); showers agree (True); sites agree (368); water agree (True)
-- Energy Lake Campground (ok): amps DIFFER bot [30, 50] vs key [50]; electric agree (True); phone bot blank (key: (270) 924-2270); sites DIFFER bot 13 vs key 35
-- Wranglers Campground (ok): amps agree ([30, 50]); electric agree (True) [bot: some]; phone bot blank (key: (270) 924-2200); sewer agree (True); showers agree (True); sites agree (198); water agree (True)
-- Piney Campground (TN) (ok): electric agree (True); phone bot blank (key: (931) 232-5331); sewer agree (True); sites agree (384); water agree (True)
+- Barren River Lake State Resort Park Campground (ok (browser)): sites bot blank (key: 101); amps bot blank (key: [30, 50]); electric DIFFER bot True vs key False; water DIFFER bot True vs key False; sewer bot blank (key: False); dump_station agree (True); showers agree (True)
+- Big Bone Lick Campground (ok (browser)): sites agree (62); amps bot blank (key: [30]); electric agree (True); water agree (True); dump_station bot blank (key: True); showers agree (True)
+- Blue Heron Campground (KY) (ok (browser)): sites agree (45); electric agree (True); showers agree (True); phone bot blank (key: (423) 286-7275)
+- Bear Creek Horse Camp (KY) (ok (browser)): sites agree (22) [bot: 23]; electric agree (True); showers agree (True); phone bot blank (key: (423) 286-7275)
+- Alum Ford Campground (KY) (ok (browser)): sites bot blank (key: 6); electric bot blank (key: False); water bot blank (key: False); sewer bot blank (key: False); phone bot blank (key: (423) 569-9778)
+- Bandy Creek Campground (TN) (ok): electric agree (True) [bot: some]; showers agree (True); phone bot blank (key: (423) 286-7275)
+- Station Camp Campground (TN) (ok (browser)): sites bot blank (key: 24); electric agree (True); showers agree (True); phone bot blank (key: (423) 286-7275)
+- Blue Licks Battlefield Campground (ok, no campground facts even in a browser): sites bot blank (key: 55); electric bot blank (key: True); water bot blank (key: False); dump_station bot blank (key: True); showers bot blank (key: True); phone DIFFER bot (859) 289-5507 vs key (859) 289-3653
+- Carr Creek Campground (ok (browser)): sites bot blank (key: 39); electric DIFFER bot True vs key False; water agree (True)
+- Carter Caves Campground (ok (browser)): sites bot blank (key: 128); amps bot blank (key: [20, 30, 50]); electric bot blank (key: True); water bot blank (key: True); dump_station bot blank (key: True); showers agree (True); phone bot blank (key: (606) 286-4411)
+- Columbus-Belmont Campground (ok, no campground facts even in a browser): sites bot blank (key: 35); amps bot blank (key: [50]); electric bot blank (key: True); water bot blank (key: True); sewer bot blank (key: True); dump_station bot blank (key: True); showers bot blank (key: True)
+- Ridgeline & Clifty Campgrounds (ok, no campground facts even in a browser): sites bot blank (key: 50); amps bot blank (key: [20, 30]); electric bot blank (key: False); water bot blank (key: True); phone bot blank (key: (800) 325-0063)
+- Wilderness Road Campground (ok): sites bot blank (key: 151); amps bot blank (key: [20, 30, 50]); electric agree (True) [bot: some]; water agree (False); sewer DIFFER bot False vs key True; dump_station agree (True); showers agree (True); phone bot blank (key: (606) 248-2817)
+- Dale Hollow Lake Campground (ok (browser)): sites bot blank (key: 151); amps bot blank (key: [50]); electric agree (True); water bot blank (key: True); sewer bot blank (key: True)
+- Twin Knobs Campground (ok): sites bot blank (key: 200); electric agree (True) [bot: some]; water agree (True) [bot: some]; sewer agree (True) [bot: some]; showers agree (True); phone bot blank (key: (606) 780-7818)
+- Zilpo Campground (ok): electric agree (True) [bot: some]; sewer bot blank (key: False); showers agree (True); phone bot blank (key: (606) 768-2722)
+- Clear Creek Campground (ok): sites bot blank (key: 20); electric KEY WRONG (bot False, key False): left out; water bot blank (key: True); phone bot blank (key: (606) 784-6428)
+- White Sulphur Horse Camp (ok): electric KEY WRONG (bot False, key False): left out; water bot blank (key: True); phone bot blank (key: (606) 784-6428)
+- Koomer Ridge Campground (ok): sites bot blank (key: 54); electric KEY WRONG (bot False, key False): left out; water bot blank (key: False); sewer bot blank (key: False); showers agree (True); phone bot blank (key: (606) 784-6428)
+- Holly Bay Campground (ok): sites bot blank (key: 94); electric agree (True) [bot: some]; water agree (True); showers agree (True); phone bot blank (key: (606) 864-4163)
+- Grove Drive-In Campground (ok): sites bot blank (key: 44); electric agree (True) [bot: some]; water agree (True); phone bot blank (key: (606) 864-4163)
+- Bee Rock Campground (ok (browser)): sites bot blank (key: 25); electric bot blank (key: False); water bot blank (key: False); sewer bot blank (key: False); phone bot blank (key: (606) 864-4163)
+- Great Meadows Campground (ok): sites agree (18); electric KEY WRONG (bot False, key False): left out; water bot blank (key: False); sewer bot blank (key: False); phone bot blank (key: (606) 376-5323)
+- Barren Fork Horse Camp (ok): sites agree (41); electric bot blank (key: True); water bot blank (key: True); phone bot blank (key: (606) 376-5323)
+- Turkey Foot Campground (ok): sites bot blank (key: 15); electric KEY WRONG (bot False, key False): left out; water bot blank (key: False); phone bot blank (key: (606) 864-4163)
+- S-Tree Campground (ok): sites agree (20); water bot blank (key: True); phone bot blank (key: (606) 864-4163)
+- Fort Boonesborough Campground (ok (browser)): sites agree (163) [bot: 166]; electric agree (True); water agree (True); sewer agree (True); phone agree ((859) 527-3454)
+- General Burnside Island Campground (ok (browser)): sites bot blank (key: 101); electric agree (True); water agree (True); sewer bot blank (key: True); phone agree ((606) 561-3625)
+- General Butler Campground (ok (browser)): sites bot blank (key: 104); electric bot blank (key: True); water bot blank (key: True)
+- Grayson Lake Campground (ok (browser)): sites agree (69) [bot: 71]; amps bot blank (key: [50]); electric agree (True); water agree (True); phone DIFFER bot (606) 474-4513 vs key (606) 474-6856
+- Green River Lake Campground (ok (browser)): sites bot blank (key: 227); electric bot blank (key: True); water bot blank (key: True); phone bot blank (key: (270) 465-8255)
+- Greenbo Lake Campground (ok, no campground facts in the page text: needs browser?): sites bot blank (key: 102); amps bot blank (key: [30]); electric bot blank (key: True); water bot blank (key: True); sewer bot blank (key: True)
+- Jenny Wiley Campground (ok, no campground facts in the page text: needs browser?): sites bot blank (key: 118); electric bot blank (key: True); water bot blank (key: True); dump_station bot blank (key: True); showers bot blank (key: True); phone bot blank (key: (606) 889-1790)
+- John James Audubon Campground (ok (browser)): sites bot blank (key: 83); amps bot blank (key: [20]); electric bot blank (key: True); water bot blank (key: True)
+- Kenlake Campground (ok (browser)): sites bot blank (key: 63); electric bot blank (key: True); water bot blank (key: True); sewer bot blank (key: True); phone bot blank (key: (270) 474-2211)
+- Kentucky Dam Village Campground (ok, no campground facts even in a browser): sites bot blank (key: 69); electric bot blank (key: True); water bot blank (key: True)
+- Kincaid Lake Campground (ok (browser)): sites DIFFER bot 84 vs key 159; electric agree (True)
+- Lake Barkley Campground (ok (browser)): sites bot blank (key: 79); amps bot blank (key: [30]); electric agree (True); water agree (True)
+- Lake Cumberland Campground (ok (browser)): sites bot blank (key: 87); electric agree (True); water agree (True); sewer bot blank (key: True); phone bot blank (key: (270) 343-3111)
+- Lake Malone Campground (ok (browser)): sites bot blank (key: 25); amps bot blank (key: [30]); electric agree (True); water agree (True)
+- Hillman Ferry Campground (ok): sites bot blank (key: 368); amps agree ([30, 50]); electric agree (True); water agree (True); sewer agree (True); showers agree (True); phone bot blank (key: (270) 924-2181)
+- Energy Lake Campground (ok): sites bot blank (key: 35); amps DIFFER bot [30, 50] vs key [50]; electric agree (True); phone bot blank (key: (270) 924-2270)
+- Wranglers Campground (ok): sites bot blank (key: 198); amps agree ([30, 50]); electric agree (True) [bot: some]; water agree (True); sewer agree (True); showers agree (True); phone bot blank (key: (270) 924-2200)
+- Piney Campground (TN) (ok): sites agree (384); electric agree (True); water agree (True); sewer agree (True); phone bot blank (key: (931) 232-5331)
 - Fenton Self-Service Campground (ok): amps agree ([30]); electric agree (True)
-- Self-service lakeside campgrounds (10) (ok): electric DIFFER bot True vs key False; sewer bot blank (key: False); water bot blank (key: False)
-- Mammoth Cave Campground (ok, no campground facts even in a browser): dump_station bot blank (key: True); electric bot blank (key: False); phone bot blank (key: (270) 758-2424); sewer bot blank (key: False); showers bot blank (key: True); sites bot blank (key: 111); water bot blank (key: False)
-- Maple Springs Group Campground (ok (browser)): dump_station bot blank (key: True); electric agree (True); phone DIFFER bot (270) 758-2166 vs key (270) 758-2180; sewer bot blank (key: False); sites bot blank (key: 7)
-- Houchin Ferry Campground (ok (browser)): electric agree (True); phone bot blank (key: (270) 758-2180); sites bot blank (key: 12); water bot blank (key: True)
-- My Old Kentucky Home Campground (host resting): amps bot blank (key: [50]); electric bot blank (key: True); phone bot blank (key: (502) 348-3502); sewer bot blank (key: True); sites bot blank (key: 49); water bot blank (key: True)
-- Whittleton & Middle Fork Campgrounds (host resting): amps bot blank (key: [20]); electric bot blank (key: True); phone bot blank (key: (606) 663-2214); sites bot blank (key: 86); water bot blank (key: True)
-- Nolin Lake Campground (host resting): electric bot blank (key: False); showers bot blank (key: True); sites bot blank (key: 65)
-- Otter Creek ORA Campground (ok, no campground facts even in a browser): dump_station bot blank (key: True); electric bot blank (key: True); phone bot blank (key: (270) 750-4257); showers bot blank (key: True); water bot blank (key: True)
-- Paintsville Lake Campground (host resting): electric bot blank (key: True); sewer bot blank (key: True); sites bot blank (key: 42); water bot blank (key: True)
-- Pennyrile Forest Campground (host resting): electric bot blank (key: True); sewer bot blank (key: True); sites bot blank (key: 63); water bot blank (key: True)
-- Taylorsville Lake Campground (host resting): amps bot blank (key: [20]); dump_station bot blank (key: True); electric bot blank (key: True); sewer bot blank (key: True); showers bot blank (key: True); sites bot blank (key: 75); water bot blank (key: True)
-- Twin Knobs Campground (host resting): electric bot blank (key: True); phone bot blank (key: (606) 780-7818); sewer bot blank (key: True); showers bot blank (key: True); sites bot blank (key: 200); water bot blank (key: True)
-- Yatesville Lake Campground (host resting): electric bot blank (key: True); sites bot blank (key: 47); water bot blank (key: True)
-- Yellowbank WMA primitive campground (Main Area) (ok, no campground facts even in a browser): electric bot blank (key: False); phone agree ((270) 547-6856); sewer bot blank (key: False); water bot blank (key: False)
-- Zilpo Campground (host resting): electric bot blank (key: True); phone bot blank (key: (606) 768-2722); sewer bot blank (key: False); showers bot blank (key: True)
-- Kentucky Horse Park Campground (ok (browser)): amps agree ([20, 30, 50]); dump_station agree (True); electric agree (True) [bot: some]; phone agree ((859) 259-4257); showers agree (True); sites agree (257) [bot: 260]; water agree (True)
-- Levi Jackson Campground (ok): amps bot blank (key: [30, 50]); dump_station agree (True); electric agree (True); phone bot blank (key: (606) 330-2130); sewer bot blank (key: True); showers agree (True); sites agree (146); water agree (True)
-- Breaks Interstate Park Campground (ok): electric agree (True) [bot: some]; phone bot blank (key: (276) 865-4413); sewer agree (True); sites agree (138); water agree (True)
-- Kingdom Come primitive campsites (host resting): electric bot blank (key: False); sewer bot blank (key: False); water bot blank (key: False)
-- Higginson-Henry WMA designated campsites (ok, no campground facts even in a browser): electric bot blank (key: False); sewer bot blank (key: False); water bot blank (key: False)
-- West Kentucky WMA designated camping site (ok, no campground facts even in a browser): electric bot blank (key: False); sewer bot blank (key: False); water bot blank (key: False)
-- Rolling Fork WMA designated camping area (ok, no campground facts even in a browser): electric bot blank (key: False); sewer bot blank (key: False); water bot blank (key: False)
-- … 1 hand-checked campgrounds not read yet (next chunk)
+- Self-service lakeside campgrounds (10) (ok): electric DIFFER bot True vs key False; water bot blank (key: False); sewer bot blank (key: False)
+- Mammoth Cave Campground (ok, no campground facts even in a browser): sites bot blank (key: 111); electric bot blank (key: False); water bot blank (key: False); sewer bot blank (key: False); dump_station bot blank (key: True); showers bot blank (key: True); phone bot blank (key: (270) 758-2424)
+- Maple Springs Group Campground (ok (browser)): sites bot blank (key: 7); electric agree (True); sewer bot blank (key: False); dump_station bot blank (key: True); phone DIFFER bot (270) 758-2166 vs key (270) 758-2180
+- Houchin Ferry Campground (ok (browser)): sites bot blank (key: 12); electric agree (True); water bot blank (key: True); phone bot blank (key: (270) 758-2180)
+- My Old Kentucky Home Campground (ok (browser)): sites bot blank (key: 49); amps bot blank (key: [50]); electric agree (True); water agree (True); sewer bot blank (key: True); phone bot blank (key: (502) 348-3502)
+- Whittleton & Middle Fork Campgrounds (ok (browser)): sites bot blank (key: 86); amps bot blank (key: [20]); electric agree (True); water bot blank (key: True); phone bot blank (key: (606) 663-2214)
+- Nolin Lake Campground (ok (browser)): sites bot blank (key: 65); electric DIFFER bot True vs key False; showers agree (True)
+- Otter Creek ORA Campground (ok, no campground facts even in a browser): electric bot blank (key: True); water bot blank (key: True); dump_station bot blank (key: True); showers bot blank (key: True); phone bot blank (key: (270) 750-4257)
+- Paintsville Lake Campground (ok, no campground facts in the page text: needs browser?): sites bot blank (key: 42); electric bot blank (key: True); water bot blank (key: True); sewer bot blank (key: True)
+- Pennyrile Forest Campground (ok, no campground facts even in a browser): sites bot blank (key: 63); electric bot blank (key: True); water bot blank (key: True); sewer bot blank (key: True)
+- Taylorsville Lake Campground (ok (browser)): sites bot blank (key: 75); amps bot blank (key: [20]); electric bot blank (key: True); water bot blank (key: True); sewer bot blank (key: True); dump_station bot blank (key: True); showers agree (True)
+- Twin Knobs Campground (ok): sites bot blank (key: 200); electric agree (True) [bot: some]; water agree (True) [bot: some]; sewer agree (True) [bot: some]; showers agree (True); phone bot blank (key: (606) 780-7818)
+- Yatesville Lake Campground (ok (browser)): sites agree (47); electric bot blank (key: True); water bot blank (key: True)
+- Yellowbank WMA primitive campground (Main Area) (ok, no campground facts even in a browser): electric bot blank (key: False); water bot blank (key: False); sewer bot blank (key: False); phone agree ((270) 547-6856)
+- Zilpo Campground (ok): electric agree (True) [bot: some]; sewer bot blank (key: False); showers agree (True); phone bot blank (key: (606) 768-2722)
+- Kentucky Horse Park Campground (ok (browser)): sites agree (257) [bot: 260]; amps agree ([20, 30, 50]); electric agree (True) [bot: some]; water agree (True); dump_station agree (True); showers agree (True); phone agree ((859) 259-4257)
+- Levi Jackson Campground (ok): sites agree (146); amps bot blank (key: [30, 50]); electric agree (True); water agree (True); sewer bot blank (key: True); dump_station agree (True); showers agree (True); phone bot blank (key: (606) 330-2130)
+- Breaks Interstate Park Campground (ok): sites agree (138); electric agree (True) [bot: some]; water agree (True); sewer agree (True); phone bot blank (key: (276) 865-4413)
+- Kingdom Come primitive campsites (ok (browser)): electric bot blank (key: False); water bot blank (key: False); sewer bot blank (key: False)
+- Higginson-Henry WMA designated campsites (ok, no campground facts even in a browser): electric bot blank (key: False); water bot blank (key: False); sewer bot blank (key: False)
+- West Kentucky WMA designated camping site (ok, no campground facts even in a browser): electric bot blank (key: False); water bot blank (key: False); sewer bot blank (key: False)
+- Rolling Fork WMA designated camping area (ok, no campground facts even in a browser): electric bot blank (key: False); water bot blank (key: False); sewer bot blank (key: False)
 
 ## US-KY: 12 random samples (records with facts; seed = the date)
 
-- **Piney Campground (TN)** (piney-campground-tn, KY (hand-checked list), status ok, 17 facts, 401 ft) · [www.landbetweenthelakes.us](https://www.landbetweenthelakes.us/visit/piney-campground/)
+- **Piney Campground (TN)** (piney-campground-tn, KY (hand-checked list), status ok, 17 facts) · [www.landbetweenthelakes.us](https://www.landbetweenthelakes.us/visit/piney-campground/)
   - booking.how = "online: lblweb.usedirect.com" · “link “Reserve Online””
   - booking.url = "https://lblweb.usedirect.com/camplbl/" · “link “Reserve Online” -> https://lblweb.usedirect.com/camplbl/”
   - checkin = "4:30 p.m" · “IND YOUR NEXT ADVENTURE... SEARCH About Piney Campground Outpost is open March – November Check-in is 4:30 p.m., you may check in anytime of”
@@ -240,7 +240,7 @@ Updated 2026-11-17. Every fact in <area>.json carries its source url, read date 
   - restrooms = "yes (kind not stated)" · “259 View All Photos There are campsites with water and electricity and primitive sites, a restroom/shower building laundry facilities, and a”
   - rules.pets = "Pets are allowed if restrained" · “A playground is located by the sites. Three RV sites have been adapted for the disabled. Pets are allowed if restrained. ... Reservations On”
   - showers = true · “All Photos There are campsites with water and electricity and primitive sites, a restroom/shower building laundry facilities, and a dump sta”
-- **Wranglers Campground** (wranglers-campground, KY (hand-checked list), status ok, 15 facts, 380 ft) · [www.landbetweenthelakes.us](https://www.landbetweenthelakes.us/visit/wranglers-campground/)
+- **Wranglers Campground** (wranglers-campground, KY (hand-checked list), status ok, 17 facts) · [www.landbetweenthelakes.us](https://www.landbetweenthelakes.us/visit/wranglers-campground/)
   - booking.how = "online: lblweb.usedirect.com" · “link “Reserve Online””
   - booking.url = "https://lblweb.usedirect.com/camplbl/" · “link “Reserve Online” -> https://lblweb.usedirect.com/camplbl/”
   - checkin = "4:30 p.m" · “.. SEARCH About Wranglers Campground Wranglers Campground is open for camping year-round. Check-in is 4:30 p.m. , you may check in anytime o”
@@ -319,7 +319,7 @@ Updated 2026-11-17. Every fact in <area>.json carries its source url, read date 
   - lodging_booking.url = "https://parks.ky.gov/things-to-do/lodging/reserve-a-lodge-c · “link “Reservations Online” -> https://parks.ky.gov/things-to-do/lodging/reserve-a-lodge-cottage”
   - restrooms = "yes (kind not stated)" · “. Tent campsites are also available. Dump stations and two central service buildings with restrooms and showers are furnished for your conve”
   - showers = true · “es are also available. Dump stations and two central service buildings with restrooms and showers are furnished for your convenience.Â Reser”
-- **Higginson-Henry WMA designated campsites** (higginson-henry-wma-designated-campsites, KY (hand-checked list), status ok, no campground facts even in a browser, 3 facts, 457 ft) · [app.fw.ky.gov](https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=132)
+- **Higginson-Henry WMA designated campsites** (higginson-henry-wma-designated-campsites, KY (hand-checked list), status ok, no campground facts even in a browser, 3 facts) · [app.fw.ky.gov](https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=132)
   - map.date_how = "PDF, no date in the link" · “link “View Detailed Map””
   - map.url = "https://fw.ky.gov/More/Documents/Higginson-HenryWMA_ALL.pdf · “link “View Detailed Map” -> https://fw.ky.gov/More/Documents/Higginson-HenryWMA_ALL.pdf”
   - phone = "(270) 389-3580" · “A Overview Size: 5446 acres Location: Union Contact: Office (270) 389-3580 Elevation: minimum 396 feet, maximum 675 feet. Entrance GPS”
