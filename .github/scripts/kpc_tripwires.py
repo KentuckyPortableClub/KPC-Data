@@ -335,8 +335,9 @@ def t5_size(keys, outl):
 SAME_LAND = 0.90       # T6: overlap / smaller outline at or over this = the same land (owner, Handoff 8 Part 3)
 T6_LINES = 400         # T6: scan lines per outline area and per pair overlap
 T6_IDS = 12            # T6: record ids shown per park in a row (the full count is beside them)
-T6_ON_NOT_SURE = ('twin', 'inside')   # T6 kinds put on the D10 not-sure list (ON TRIAL: the handoff lists both; 'inside' is mostly a
-                                      # small park inside a big one, e.g. a wilderness in a national forest, so the owner may narrow it)
+T6_ON_NOT_SURE = ('twin',)   # T6 kinds put on the D10 not-sure list. HQ 17 Nov: TWINS ONLY. An 'inside' pair is a small park inside a
+                             # big one (a campground or wilderness in a national forest): POTA removed its sub-park rule and the owner
+                             # ruled that overlapping official boundaries are the 2-fer, so 'inside' pairs stay in the report only.
 
 
 def _outline_rings(rec, f):

@@ -8,7 +8,7 @@ temp folder (key, pins and saved outlines; the outline reader is the real KPC-Li
   4. a small park inside a big one is listed as 'inside'; two parks on one ground as 'twin'; a park in the big park's HOLE is not
      listed (holes are holes); one outline drawn as two records over each other counts its land once (the share never goes over 1)
   5. busiest first by POTA activations (KPC-Data data/parkinfo field 7; a park with no count = 0); the count per area is reported
-  6. the not-sure list (D10) gets T6 on both parks of a listed pair; a person's clear (with 'by') takes that park off, the other stays
+  6. the not-sure list (D10) gets T6 on both parks of a TWIN pair (HQ 17 Nov: twins only; 'inside' = a sub-park, report only); a person's clear (with 'by') takes that park off, the other stays
   7. the scan-line areas agree with plain geometry: two equal squares shifted a known share come back at that share (to 0.5%)
   8. still a report: standard library only (shapely / pyproj / numpy blocked), no network, no web address in any output
 Prints PASS / FAIL lines, ends ALL PASS / SOME FAILED."""
@@ -124,8 +124,8 @@ with tempfile.TemporaryDirectory() as t:
           and rep['totals']['us']['T6_kinds'] == {'twin': 3, 'inside': 1} and 'US-ZZ 4' in p.stdout)
     d = json.load(open(ns))
     t6 = sorted(r for r, v in d['parks'].items() if 'T6' in v)
-    check(f'6. the not-sure list carries T6 on both parks of every listed pair ({t6})',
-          t6 == ['US-9101', 'US-9102', 'US-9107', 'US-9108', 'US-9113', 'US-9114', 'US-9116', 'US-9117'] and 'T6' in d['reasons'])
+    check(f"6. the not-sure list carries T6 on both parks of every TWIN pair; an 'inside' pair (a park inside a bigger one) stays in the report only ({t6})",
+          t6 == ['US-9101', 'US-9102', 'US-9107', 'US-9108', 'US-9116', 'US-9117'] and 'T6' in d['reasons'])
     cl.write_text(json.dumps({'parks': {'US-9101': {'by': 'KPC owner', 'date': '2026-11-18', 'why': 'two park numbers, same land'}}}))
     run(['--links', str(L), '--out', str(out), '--keys', 'us', '--not-sure', str(ns), '--cleared', str(cl), '--parkinfo', str(K / 'data/parkinfo'), '--date', '2026-11-18'])
     d2 = json.load(open(ns))
