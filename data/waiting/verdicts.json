@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-17T17:27Z",
+ "checked": "2026-11-17T17:50Z",
  "switched_on": false,
  "results": [
   {
@@ -3528,7 +3528,7 @@
    "notes": [
     "no live copy: first time this file is published",
     "F-D3 retest 20 links: 18 ok, 0 dead, 2 could not check",
-    "F-D3 links: ok 200 https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/sga/Townli; could not check HTTP 503 https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/sga/Goose_C; ok 200 https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/sga/Manist; ok 200 https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/sga/Elmwoo; ok 200 https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/sga/Holly_; ok 200 https://www.fws.gov/sites/default/files/documents/seney-general-brochure-2022-ac; ok 200 https://dnr.wisconsin.gov/topic/parks/menominee/maps; ok 200 https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/sga/Gratio; could not check HTTP 503 https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/sga/Cass_Ci; ok 200 https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/SGA/Crane_P; ok"
+    "F-D3 links: ok 200 https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/sga/Townli; ok 200 https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/sga/Goose_C; ok 200 https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/sga/Manist; ok 200 https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/sga/Elmwoo; ok 200 https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/sga/Holly_; ok 200 https://www.fws.gov/sites/default/files/documents/seney-general-brochure-2022-ac; ok 200 https://dnr.wisconsin.gov/topic/parks/menominee/maps; ok 200 https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/sga/Gratio; ok 200 https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/sga/Cass_Ci; could not check HTTP 503 https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/SGA/Crane_P; ok 200 https://www.b"
    ],
    "verdict": "PASS",
    "retest": {
@@ -3562,8 +3562,8 @@
      },
      {
       "url": "https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/sga/Goose_Creek_Flooding_SWMA_map.pdf",
-      "result": "could not check",
-      "detail": "HTTP 503"
+      "result": "ok",
+      "detail": "200"
      },
      {
       "url": "https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/sga/Manistee_River_SGA_map.pdf",
@@ -3597,13 +3597,13 @@
      },
      {
       "url": "https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/sga/Cass_City_SGA_map.pdf",
-      "result": "could not check",
-      "detail": "HTTP 503"
+      "result": "ok",
+      "detail": "200"
      },
      {
       "url": "https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/SGA/Crane_Pond_SGA_map.pdf",
-      "result": "ok",
-      "detail": "200"
+      "result": "could not check",
+      "detail": "HTTP 503"
      },
      {
       "url": "https://www.bingmapsportal.com/terms/EndUserTerms",
@@ -3622,8 +3622,8 @@
      },
      {
       "url": "https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/sga/Almer_Township_SGA_map.pdf",
-      "result": "ok",
-      "detail": "200"
+      "result": "could not check",
+      "detail": "HTTP 503"
      },
      {
       "url": "https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/sga/Edmore_SGA_map.pdf",
@@ -6531,7 +6531,7 @@
    "why": [],
    "notes": [
     "no live copy: first time this file is published",
-    "F-D3 retest 20 links: 20 ok, 0 dead, 0 could not check",
+    "F-D3 retest 20 links: 19 ok, 0 dead, 1 could not check",
     "F-D3 links: ok 200 https://www.nps.gov/glca/learn/management/lawsandpolicies.htm; ok 200 https://www.blm.gov/sites/default/files/docs/2024-05/ParietteWetlandsData_2023.p; ok 200 https://capitolreefcountry.com/outdoor-activities/trails/; ok 200 https://www.nps.gov/rabr/planyourvisit/maps.htm; ok 200 https://www.fws.gov/locations/bear-river-migratory-bird-refuge/rules-and-policie; ok 200 https://www.blm.gov/sites/blm.gov/files/documents/files/BLMUtahKlondikeBluffsMap; ok 200 https://www.nps.gov/arch/planyourvisit/maps.htm; ok 200 https://stateparks.utah.gov/wp-content/uploads/gunlock-digital-brochure-2026.pdf; ok 200 https://www.nps.gov/tica/planyourvisit/maps.htm; ok 200 https://www.blm.gov/programs/wild-horse-and-burro/herd-management; ok 200 https://stateparks.utah.gov/wp-content/uploads/Quail-Creek-Brochure-4-19-web_use; ok 200 https://stateparks.utah.gov/wp-content/uploads/hyrum-digital-brochure-"
    ],
    "verdict": "PASS",
@@ -6656,8 +6656,8 @@
      },
      {
       "url": "https://geology.utah.gov/map-pub/survey-notes/energy-news/energy-news-rules-limiting-mercury-emissions/",
-      "result": "ok",
-      "detail": "200"
+      "result": "could not check",
+      "detail": "timeout"
      }
     ]
    }

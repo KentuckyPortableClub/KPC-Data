@@ -184,14 +184,15 @@
    "checked": 24,
    "counts": {
     "camps": 24,
-    "needs_browser": 0,
+    "kept_after_failed_read": 20,
+    "needs_browser": 2,
     "needs_key": 0,
     "no_page": 0,
     "not_official": 0,
     "ok": 2,
     "other": 0,
     "resting": 0,
-    "robots": 22,
+    "robots": 20,
     "with_booking": 24,
     "with_elevation": 0,
     "with_facts": 2,
@@ -199,7 +200,7 @@
    },
    "left": 0,
    "status": "done",
-   "updated": "2026-11-10"
+   "updated": "2026-11-17"
   },
   "US-FL": {
    "camps": 302,
@@ -1141,7 +1142,7 @@
   "US-CO": "FCC listAsOfDates: robots.txt says no",
   "US-CT": "FCC listAsOfDates: robots.txt says no",
   "US-DC": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
-  "US-DE": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
+  "US-DE": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-FL": "FCC listAsOfDates: robots.txt says no",
   "US-GA": "FCC listAsOfDates: robots.txt says no",
   "US-HI": "FCC listAsOfDates: robots.txt says no",
@@ -1262,10 +1263,10 @@
    "cell": {
     "carriers": null,
     "files": [],
-    "src": null,
-    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
+    "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2026-06-30?category=State&subcategory=Mobile%20Broadband",
+    "status": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
    },
-   "read": "2026-11-10"
+   "read": "2026-11-17"
   },
   "US-FL": {
    "cell": {
@@ -1647,6 +1648,7 @@
   }
  },
  "hosts": {
+  "destateparks.com": 1795022925.4138083,
   "dnr.wisconsin.gov": 1794995624.471894,
   "epqs.nationalmap.gov": 1794945664.950545,
   "gfp.sd.gov": 1794992499.336771,
@@ -2607,31 +2609,41 @@
  },
  "last": {
   "areas": [
-   "US-AL"
+   "US-DE"
   ],
   "fcc_token": true,
   "manners": {
-   "errors": 3,
-   "for_person_urls": [],
+   "errors": 0,
+   "for_person": 2,
+   "for_person_urls": [
+    [
+     "https://destateparks.com/",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://destateparks.com/",
+     "HTTP 403 twice"
+    ]
+   ],
    "host_rule": 0,
-   "requests": 152,
-   "rested": 102,
+   "requests": 13,
+   "rested": 44,
+   "retry403": 2,
    "robots": 0,
-   "strikes": 3
+   "strikes": 4
   },
   "ridb_key": false,
   "stat": {
-   "browser": 49,
-   "camps": 100,
+   "camps": 24,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 49,
-   "needs_key": 34,
+   "needs_browser": 2,
+   "needs_key": 0,
    "no_page": 0,
-   "not_official": 4,
-   "ok": 59,
-   "pages_read": 90,
-   "resting": 3,
+   "not_official": 0,
+   "ok": 2,
+   "pages_read": 2,
+   "resting": 20,
    "ridb_calls": 0,
    "robots": 0,
    "skipped_fresh": 0
