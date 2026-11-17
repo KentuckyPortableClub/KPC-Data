@@ -293,23 +293,23 @@
    "checked": 450,
    "counts": {
     "camps": 450,
-    "kept_after_failed_read": 9,
+    "kept_after_failed_read": 25,
     "needs_browser": 33,
     "needs_key": 311,
     "no_page": 0,
     "not_official": 35,
     "ok": 27,
-    "other": 24,
-    "resting": 16,
-    "robots": 4,
+    "other": 44,
+    "resting": 0,
+    "robots": 0,
     "with_booking": 100,
-    "with_elevation": 0,
+    "with_elevation": 2,
     "with_facts": 37,
-    "with_sites": 8
+    "with_sites": 5
    },
    "left": 0,
    "status": "done",
-   "updated": "2026-11-15"
+   "updated": "2026-11-17"
   },
   "US-IL": {
    "camps": 256,
@@ -1144,7 +1144,7 @@
   "US-GA": "FCC listAsOfDates: robots.txt says no",
   "US-HI": "FCC listAsOfDates: robots.txt says no",
   "US-IA": "FCC listAsOfDates: robots.txt says no",
-  "US-ID": "FCC listAsOfDates: robots.txt says no",
+  "US-ID": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-IL": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-IN": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-KS": "FCC listAsOfDates: robots.txt says no",
@@ -1305,10 +1305,10 @@
    "cell": {
     "carriers": null,
     "files": [],
-    "src": null,
-    "status": "FCC listAsOfDates: robots.txt says no"
+    "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2026-06-30?category=State&subcategory=Mobile%20Broadband",
+    "status": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
    },
-   "read": "2026-11-15"
+   "read": "2026-11-17"
   },
   "US-IL": {
    "cell": {
@@ -2605,31 +2605,30 @@
  },
  "last": {
   "areas": [
-   "US-AK"
+   "US-ID"
   ],
   "fcc_token": true,
   "manners": {
    "errors": 0,
    "for_person_urls": [],
    "host_rule": 0,
-   "requests": 252,
-   "rested": 380,
+   "requests": 104,
+   "rested": 489,
    "robots": 0,
    "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "browser": 6,
-   "camps": 378,
+   "camps": 464,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 7,
-   "needs_key": 244,
-   "no_page": 7,
-   "not_official": 0,
-   "ok": 124,
-   "pages_read": 236,
-   "resting": 2,
+   "needs_browser": 33,
+   "needs_key": 325,
+   "no_page": 12,
+   "not_official": 35,
+   "ok": 60,
+   "pages_read": 81,
+   "resting": 25,
    "ridb_calls": 0,
    "robots": 0,
    "skipped_fresh": 0

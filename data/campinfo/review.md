@@ -43,7 +43,7 @@ Updated 2026-11-17. Every fact in <area>.json carries its source url, read date 
 | US-NE | 232 | 3 | 11 | 2 | 0 | 185 | 6 | 23 | 2 | 0 | 74 | 0 |
 | US-CO | 653 | 183 | 337 | 15 | 0 | 110 | 0 | 0 | 8 | 2 | 316 | 0 |
 | US-WY | 301 | 5 | 162 | 3 | 0 | 0 | 79 | 0 | 52 | 0 | 41 | 0 |
-| US-ID | 450 | 27 | 311 | 33 | 4 | 16 | 0 | 35 | 24 | 8 | 100 | 0 |
+| US-ID | 450 | 27 | 311 | 33 | 0 | 0 | 0 | 35 | 44 | 5 | 100 | 2 |
 | US-MT | 389 | 30 | 311 | 0 | 0 | 4 | 0 | 0 | 44 | 0 | 78 | 0 |
 | US-NV | 87 | 23 | 34 | 1 | 0 | 4 | 0 | 7 | 18 | 11 | 46 | 0 |
 | US-AZ | 198 | 1 | 168 | 0 | 16 | 7 | 0 | 2 | 4 | 0 | 28 | 0 |
@@ -65,8 +65,8 @@ Updated 2026-11-17. Every fact in <area>.json carries its source url, read date 
 ## Hosts that need a browser (403), say no in robots.txt, or are resting
 
 - outdoornebraska.gov: 187 campgrounds · host resting
-- www.fs.usda.gov: 110 campgrounds · host resting
 - cpw.state.co.us: 98 campgrounds · host resting
+- www.fs.usda.gov: 94 campgrounds · host resting
 - reservemn.usedirect.com: 94 campgrounds · robots.txt says no
 - www.ksoutdoors.gov: 63 campgrounds · robots.txt says no
 - reserve.floridastateparks.org: 55 campgrounds · robots.txt says no
@@ -87,7 +87,6 @@ Updated 2026-11-17. Every fact in <area>.json carries its source url, read date 
 - midnrreservations.com: 12 campgrounds · host resting (robots.txt could not be read: next run)
 - reserveohio.com: 12 campgrounds · HTTP 403 -> needs browser
 - www.reservecalifornia.com: 5 campgrounds · robots.txt says no
-- getoutside.idaho.gov: 4 campgrounds · host resting (robots.txt could not be read: next run)
 - www.dec.ny.gov: 3 campgrounds · host resting (robots.txt could not be read: next run)
 - www.maine.gov: 3 campgrounds · HTTP 403 -> needs browser
 - tpwd.texas.gov: 3 campgrounds · robots.txt says no
@@ -2462,17 +2461,17 @@ Updated 2026-11-17. Every fact in <area>.json carries its source url, read date 
   - booking.how = "online: www.recreation.gov" · “link “Login””
   - booking.url = "https://www.recreation.gov/log-in" · “link “Login” -> https://www.recreation.gov/log-in”
   - drinking_water = false · “e Owyhee River Canyon, much of which was designated Wilderness in March 2009. There is no potable water at this site. Photo Gallery Camp, RV”
-- **Bear Lake State Park** (US-2228, state, status ok, 10 facts) · [parksandrecreation.idaho.gov](https://parksandrecreation.idaho.gov/)
+- **Bear Lake State Park** (US-2228, state, status ok, 20 facts) · [parksandrecreation.idaho.gov](https://parksandrecreation.idaho.gov/)
   - booking.how = "online: parksandrecreation.idaho.gov" · “link “Reservations””
   - booking.url = "https://parksandrecreation.idaho.gov/reservations" · “link “Reservations” -> https://parksandrecreation.idaho.gov/reservations”
+  - checkin = "2 p.m" · “eas within parks or campgrounds are open from 7 a.m. to 10 p.m., unless otherwise posted. Check-in time is 2 p.m. for campsites and 3 p.m. f”
+  - checkout = "1 p.m" · “osted. Check-in time is 2 p.m. for campsites and 3 p.m. for facilities (local park time). Checkout time is 1 p.m. for campsites and 12 p.m. ”
+  - features = "fire pit" · “oom cabins that sleep up to 5 on bunk beds, and futons. Cook outside on the grill-covered fire pit. Cabins are powered, heated, and air cond”
+  - fees = "$4 on camping | $10.00 for individual campsites, yurts, and · “mited income (Medicaid card) or who sign a limited income form will receive a discount of $4 on camping. Idaho Disabled Veterans Idaho Veter”
+  - hookups.electric = "some" · “are ADA friendly and support service animals. Per IDAPA Code 26.01.20, park services and utilities are for state park customer use only. IDP”
+  - hookups.sewer = "some" · “, and/or grill. $14-$24 Electric Basic site with electricity. May include: water. $26-$32 Full Hook-Up Basic site with water, electricity, a”
+  - hookups.water = true · “, and/or grill. $14-$24 Electric Basic site with electricity. May include: water. $26-$32 Full Hook-Up Basic site with water, electricity, a”
   - lodging_booking.how = "online: parksandrecreation.idaho.gov" · “link “Reserve a Yurt””
-  - lodging_booking.url = "https://parksandrecreation.idaho.gov/park-activity/yurts/" · “link “Reserve a Yurt” -> https://parksandrecreation.idaho.gov/park-activity/yurts/”
-  - map.date_how = "PDF, year 2018 in the link" · “link “Bicycle Tourism Map””
-  - map.url = "https://parksandrecreation.idaho.gov/wp-content/uploads/act · “link “Bicycle Tourism Map” -> https://parksandrecreation.idaho.gov/wp-content/uploads/activities/biking/2018-05_IDStateParks-ACARo”
-  - phone = "(208) 939-0696" · “rk to Begin Nov 14, 2022 Contact: Eagle Island State Park | 208-939-0696 , EAG@idpr.idaho.gov Park staff will be conducting hazardou”
-  - restrooms = "yes (kind not stated)" · “te responsibly while having fun. In recent weeks, a few visitors have left trash, defaced restrooms, and damaged private property&hellip; Re”
-  - rules.fires = "Campfires Allowed for Labor Day Weekend!" · “e Safety Still Necessary Aug 30 2023 Fire Restrictions Eased at North Idaho Parks &mdash; Campfires Allowed for Labor Day Weekend! NORTH IDA”
-  - sites.total = 500 · “tment of Parks and Recreation manages across the state. The experience at the more than 2,500 campsites, yurts, cabins and&hellip; Read More”
 - **Lake Cascade State Park** (US-2239, state, status ok, 23 facts) · [parksandrecreation.idaho.gov](https://parksandrecreation.idaho.gov/state-park/lake-cascade-state-park/)
   - booking.how = "online: parksandrecreation.idaho.gov" · “link “Reservations””
   - booking.url = "https://parksandrecreation.idaho.gov/reservations" · “link “Reservations” -> https://parksandrecreation.idaho.gov/reservations”
