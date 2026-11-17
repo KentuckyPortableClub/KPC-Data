@@ -492,8 +492,8 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/wwff/D4FF.json | RELEASE |  |
 | ? | ? | data/wwff/DLFF.json | PASS |  |
 | ? | ? | data/wwff/IFF.json | PASS |  |
+| ? | ? | data/wwff/KFF.json | PASS |  |
 | ? | ? | data/wwff/OAFF.json | PASS |  |
-| ? | ? | data/wwff/ONFF.json | PASS |  |
 | ? | ? | data/wwff/PYFF.json | PASS |  |
 | ? | ? | data/wwff/VEFF.json | PASS |  |
 | ? | ? | data/wwff/YVFF.json | PASS |  |
