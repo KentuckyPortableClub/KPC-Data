@@ -1,4 +1,4 @@
-# Waiting for a grader (2026-11-17 19:23Z, written by the waiting room)
+# Waiting for a grader (2026-11-17 19:48Z, written by the waiting room)
 Rows the same as the live (already graded) copy keep their old YES: check only the NEW + CHANGED rows listed. Held = a check failed: fix first.
 
 - **data/ca-key/CA-QC.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build CA-43866754543): 0 new, 19 changed, 0 gone, 815 same (carried); check: CA-2056, CA-2058, CA-2064, CA-2080, CA-2082, CA-2089, CA-2092, CA-2093, CA-2097, CA-2099, CA-2103, CA-2198, CA-2223, CA-2227, CA-2228, CA-2238, CA-2246, CA-2261, CA-2274
@@ -295,8 +295,8 @@ Rows the same as the live (already graded) copy keep their old YES: check only t
 - **data/us-key/US-HI.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 0 changed, 0 gone, 103 same (carried)
 - **data/us-key/US-IA.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 7 changed, 0 gone, 174 same (carried); check: US-10174, US-11875, US-12376, US-12623, US-8283, US-9312, US-9334
 - **data/us-key/US-ID.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 2 changed, 0 gone, 360 same (carried); check: US-11282, US-7363
-- **data/us-key/US-IL.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 0 changed, 0 gone, 219 same (carried)
-- **data/us-key/US-IN.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 26 changed, 0 gone, 203 same (carried); check: US-10230, US-10232, US-10256, US-10405, US-12012, US-12013, US-12312, US-13101, US-13102, US-4162, US-4163, US-4172, US-4173, US-4174, US-4175, US-4177, US-4178, US-4179, US-4180, US-4187, US-4194, US-4205, US-4231, US-5685, US-7369 ...
+- **data/us-key/US-IL.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 179 changed, 0 gone, 40 same (carried); check: US-0272, US-0281, US-0282, US-0283, US-0284, US-0285, US-0286, US-0287, US-0523, US-0526, US-0841, US-0978, US-0979, US-0981, US-0982, US-0984, US-0985, US-0986, US-0987, US-0988, US-0990, US-0991, US-0992, US-0993, US-0994 ...
+- **data/us-key/US-IN.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 192 changed, 0 gone, 37 same (carried); check: US-0289, US-0290, US-0734, US-0765, US-0782, US-10177, US-10178, US-10180, US-10181, US-10185, US-10201, US-10202, US-10204, US-10206, US-10224, US-10225, US-10226, US-10227, US-10229, US-10230, US-10231, US-10232, US-10233, US-10234, US-10235 ...
 - **data/us-key/US-KS.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 0 changed, 0 gone, 145 same (carried)
 - **data/us-key/US-LA.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 0 changed, 0 gone, 123 same (carried)
 - **data/us-key/US-MA.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 0 changed, 0 gone, 421 same (carried)
@@ -338,6 +338,7 @@ Rows the same as the live (already graded) copy keep their old YES: check only t
 - **data/us-key/overrides-parks-01.json** (key, PASS): a part of the override set, counted with data/us-key/overrides.json
 - **data/us-key/overrides-parks-02.json** (key, PASS): a part of the override set, counted with data/us-key/overrides.json
 - **data/us-key/overrides.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 0 new, 6 changed, 0 gone, 5032 same (carried); check: US-0643, US-4404, US-4868, US-4886, US-7879, US-10180
+- **data/us-key/refresh.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44036242520): 2 new, 0 changed, 0 gone, 14 same (carried); check: IL, IN
 - **data/world-key/AE.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build W-44085508762): 0 new, 1 changed, 0 gone, 108 same (carried); check: AE-0002
 - **data/world-key/AS.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build W-44085508762): 0 new, 4 changed, 0 gone, 0 same (carried); check: AS-0001, AS-0002, AS-0003, AS-0004
 - **data/world-key/AT.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build W-44085508762): 0 new, 420 changed, 0 gone, 0 same (carried); check: AT-0001, AT-0002, AT-0003, AT-0004, AT-0005, AT-0006, AT-0007, AT-0008, AT-0009, AT-0010, AT-0011, AT-0012, AT-0013, AT-0014, AT-0015, AT-0016, AT-0017, AT-0018, AT-0019, AT-0020, AT-0021, AT-0022, AT-0023, AT-0024, AT-0025 ...

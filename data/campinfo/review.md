@@ -38,7 +38,7 @@ Updated 2026-11-17. Every fact in <area>.json carries its source url, read date 
 | US-AR | 229 | 20 | 120 | 0 | 2 | 1 | 0 | 5 | 81 | 5 | 78 | 0 |
 | US-LA | 67 | 0 | 13 | 0 | 52 | 1 | 0 | 0 | 1 | 0 | 33 | 0 |
 | US-OK | 199 | 36 | 84 | 0 | 0 | 0 | 0 | 69 | 10 | 6 | 41 | 0 |
-| US-TX | 483 | 0 | 120 | 1 | 3 | 0 | 329 | 0 | 30 | 0 | 34 | 0 |
+| US-TX | 483 | 2 | 120 | 1 | 0 | 0 | 329 | 0 | 31 | 0 | 34 | 0 |
 | US-KS | 117 | 0 | 52 | 0 | 65 | 0 | 0 | 0 | 0 | 0 | 63 | 0 |
 | US-NE | 232 | 3 | 11 | 2 | 0 | 185 | 6 | 23 | 2 | 0 | 74 | 0 |
 | US-CO | 653 | 183 | 337 | 15 | 0 | 110 | 0 | 0 | 8 | 2 | 316 | 0 |
@@ -89,7 +89,6 @@ Updated 2026-11-17. Every fact in <area>.json carries its source url, read date 
 - www.reservecalifornia.com: 5 campgrounds · robots.txt says no
 - www.dec.ny.gov: 3 campgrounds · host resting (robots.txt could not be read: next run)
 - www.maine.gov: 3 campgrounds · HTTP 403 -> needs browser
-- tpwd.texas.gov: 3 campgrounds · robots.txt says no
 - ksoutdoors.gov: 2 campgrounds · robots.txt says no
 - www.fire.ca.gov: 2 campgrounds · robots.txt says no
 - azprtl.azstateparks.com: 1 campgrounds · robots.txt says no
@@ -2301,6 +2300,34 @@ Updated 2026-11-17. Every fact in <area>.json carries its source url, read date 
 
 ## US-TX: 12 random samples (records with facts; seed = the date)
 
+- **Walter Umphrey SP RV park** (intake-US-3061, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 5 facts) · [tpwd.texas.gov](https://tpwd.texas.gov/state-parks/walter-umphrey)
+  - booking.how = "online: tpwd.texas.gov" · “link “Reservations””
+  - booking.url = "https://tpwd.texas.gov/state-parks/reservations/" · “link “Reservations” -> https://tpwd.texas.gov/state-parks/reservations/”
+  - map.date_how = "web page, no date in the link" · “link “Find a Park””
+  - map.url = "https://tpwd.texas.gov/state-parks/parks-map" · “link “Find a Park” -> https://tpwd.texas.gov/state-parks/parks-map”
+  - phone = "(409) 736-2851" · “other state park promotions do not apply at this park. Call (409) 736-2851 for more information. Texas State Parks Reservation Assista”
+- **Palo Pinto Mountains SP campsites (W/E, walk-in tent, hike-in primitive, equestrian)** (intake-US-3047, agency (outside research camping-us-oct31), status ok, 13 facts) · [tpwd.texas.gov](https://tpwd.texas.gov/state-parks/palo-pinto-mountains)
+  - booking.how = "online: tpwd.texas.gov" · “link “Reservations””
+  - booking.url = "https://tpwd.texas.gov/state-parks/reservations/" · “link “Reservations” -> https://tpwd.texas.gov/state-parks/reservations/”
+  - hookups.amps = [20, 30, 50] · “r of Sites: 23 These sites are in the Warbler Ridge campgroun Picnic table Water Electric 20/30/50 amp Fire ring with grill Restrooms with s”
+  - hookups.electric = true · “and visit for the day or reserve a campsite for an overnight visit. Choose from water and electric sites, walk-in tent sites, or hike-in pri”
+  - hookups.water = true · “a picnic and visit for the day or reserve a campsite for an overnight visit. Choose from water and electric sites, walk-in tent sites, or hi”
+  - map.date_how = "PDF, no date in the link" · “link “Park Map | PDF””
+  - map.url = "https://tpwd.texas.gov/publications/pwdpubs/media/park_maps · “link “Park Map | PDF” -> https://tpwd.texas.gov/publications/pwdpubs/media/park_maps/pwd_mp_p4506_0182d.pdf”
+  - phone = "(512) 389-8900" · “@tpwd.texas.gov Make reservations online Reserve by phone : (512) 389-8900 Get reservation details & FAQ Entrance Fees Adult (13 years”
+  - reservable = true · “r! Read through our water safety tips . Visiting… Bring a picnic and visit for the day or reserve a campsite for an overnight visit. Choose ”
+  - restrooms = "yes (kind not stated)" · “the Warbler Ridge campgroun Picnic table Water Electric 20/30/50 amp Fire ring with grill Restrooms with showers nearby Playground nearby Mo”
+- **Mustang Island SP campground (water/electric) + primitive beach camping** (intake-US-3043, agency (outside research camping-us-oct31), status ok, 14 facts) · [tpwd.texas.gov](https://tpwd.texas.gov/state-parks/mustang-island)
+  - booking.how = "online: tpwd.texas.gov" · “link “Reservations””
+  - booking.url = "https://tpwd.texas.gov/state-parks/reservations/" · “link “Reservations” -> https://tpwd.texas.gov/state-parks/reservations/”
+  - hookups.amps = [50] · “te. Cooking in the grills at the site is allowed. Picnic table Outdoor grill Water hookup 50 amp hookup Shade shelter Restrooms with showers”
+  - hookups.electric = true · “lly during spring and fall migrations) and geocache . Camping Stay at one of 48 water and electric campsites or 50 drive-up primitive sites ”
+  - hookups.water = true · “h (especially during spring and fall migrations) and geocache . Camping Stay at one of 48 water and electric campsites or 50 drive-up primit”
+  - map.date_how = "PDF, no date in the link" · “link “Park Map | PDF””
+  - map.url = "https://tpwd.texas.gov/publications/pwdpubs/media/park_maps · “link “Park Map | PDF” -> https://tpwd.texas.gov/publications/pwdpubs/media/park_maps/pwd_mp_p4502_084e.pdf”
+  - phone = "(512) 389-8900" · “(361) 749-5246 Make reservations online Reserve by phone : (512) 389-8900 Get reservation details & FAQ Entrance Fees Adult: $7 Daily”
+  - reservable = true · “is near headquarters. Swim at your own risk in the Gulf, as there are no lifeguards. Non-reservable More » $13 Nightly Plus daily entrance f”
+  - restrooms = "vault" · “primitive sites . (The water and electric campsites are 1/3 mile from the beach.) We have portable toilets along two miles of the beach. Ful”
 
 ## US-KS: 12 random samples (records with facts; seed = the date)
 

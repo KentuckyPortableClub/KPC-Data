@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-17T19:23Z",
+ "checked": "2026-11-17T19:48Z",
  "switched_on": false,
  "results": [
   {
@@ -1523,7 +1523,7 @@
    "why": [],
    "notes": [
     "F-D3 retest 20 links: 20 ok, 0 dead, 0 could not check",
-    "F-D3 links: ok 200 https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_hunting_area/map; ok 200 https://www.nps.gov/neen/planyourvisit/maps.htm; ok 304 https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_hunting_area/map; ok 200 https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_hunting_area/map; ok 200 https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_hunting_area/map; ok 200 https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_hunting_area/map; ok 200 https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_hunting_area/map; ok 200 https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_hunting_area/map; ok 200 https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail; ok 200 https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_hunting_area/map; ok 200 https://portal.ct.gov/-/media/deep/w"
+    "F-D3 links: ok 200 https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_hunting_area/map; ok 200 https://www.nps.gov/neen/planyourvisit/maps.htm; ok 200 https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_hunting_area/map; ok 200 https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_hunting_area/map; ok 200 https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_hunting_area/map; ok 200 https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_hunting_area/map; ok 200 https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_hunting_area/map; ok 200 https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_hunting_area/map; ok 200 https://portal.ct.gov/deep/state-parks/recreation-information/recreational-trail; ok 200 https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_hunting_area/map; ok 200 https://portal.ct.gov/-/media/deep/w"
    ],
    "verdict": "PASS",
    "retest": {
@@ -1563,7 +1563,7 @@
      {
       "url": "https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_hunting_area/map503.pdf",
       "result": "ok",
-      "detail": "304"
+      "detail": "200"
      },
      {
       "url": "https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_hunting_area/map6.pdf",
@@ -5439,7 +5439,7 @@
    "kind": "docs",
    "why": [],
    "notes": [
-    "F-D3 retest 20 links: 18 ok, 1 dead, 1 could not check (1 dead already ok in live, not a new fault)",
+    "F-D3 retest 20 links: 19 ok, 1 dead, 0 could not check (1 dead already ok in live, not a new fault)",
     "F-D3 links: ok 200 https://www.wildlifedepartment.com/sites/default/files/wma-maps/Fort%20Gibson%20; ok 200 https://d1pk12b7bb81je.cloudfront.net/okdataengine/appmedia/documents/5/5269/Ala; ok 200 https://www.wildlifedepartment.com/sites/default/files/wma-maps/Cherokee%20GMA%2; ok 200 https://oklahoma.gov/content/dam/ok/en/owrb/documents/maps-and-data/printable-ma; ok 200 https://www.wildlifedepartment.com/sites/default/files/wma-maps/Cimarron%20Bluff; ok 200 https://www.fws.gov/refuge/ozark-plateau/visit-us/rules-policies; ok 200 https://www.nps.gov/waba/learn/management/lawsandpolicies.htm; ok 200 https://www.nps.gov/trte/learn/management/lawsandpolicies.htm; ok 200 https://www.nps.gov/chic/planyourvisit/maps.htm; ok 200 https://d1pk12b7bb81je.cloudfront.net/okdataengine/appmedia/documents/3/3726/New; ok 200 https://www.wildlifedepartment.com/sites/default/files/wma-maps/Whitegrass%20Fla; ok 200 h"
    ],
    "verdict": "PASS",
@@ -5549,8 +5549,8 @@
      },
      {
       "url": "https://www.wildlifedepartment.com/fishing/regs/department-fishing-areas",
-      "result": "could not check",
-      "detail": "timeout"
+      "result": "ok",
+      "detail": "200"
      },
      {
       "url": "https://www.fws.gov/refuge/washita/visit-us/rules-policies",
@@ -36433,7 +36433,9 @@
    "path": "data/us-key/US-IN.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 2 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS",
    "retest": {
     "sample": [
@@ -41897,6 +41899,139 @@
    "notes": [
     "override set read whole: 5038 parks in 3 file(s) (live: 5038 parks)"
    ],
+   "verdict": "PASS",
+   "retest": {
+    "sample": [
+     "https://www.fws.gov/fish-hatchery/saratoga/map",
+     "http://www.blm.gov/style/medialib/blm/wy/field-offices/lander/pics.Par.5515.Image.620.869.1.gif",
+     "https://www.fs.usda.gov/r04/bridger-teton",
+     "https://www.fs.usda.gov/r04/ashley/maps-guides",
+     "https://www.nps.gov/yell/learn/management/lawsandpolicies.htm",
+     "https://www.fs.usda.gov/sites/nfs/files/r02/blackhills/publication/Recreation%20Sites%20Map.pdf",
+     "https://www.fws.gov/fish-hatchery/jackson/map",
+     "https://www.fs.usda.gov/visit/know-before-you-go",
+     "https://www.nps.gov/deto/learn/management/lawsandpolicies.htm",
+     "https://www.nps.gov/fobu/learn/management/lawsandpolicies.htm",
+     "https://wgfapps.wyo.gov/GISFLS/Com_Lands/WHMA_Sand%20Creek.pdf",
+     "https://www.fws.gov/refuge/bamforth/map",
+     "https://www.fws.gov/refuge/cokeville-meadows/visit-us/rules-policies",
+     "https://www.fs.usda.gov/trails/nez-perce-nht",
+     "https://www.nps.gov/mopi/planyourvisit/maps.htm",
+     "https://www.nps.gov/fola/planyourvisit/maps.htm",
+     "https://wgfapps.wyo.gov/GISFLS/Com_Lands/WHMA_Luke%20Lynch.pdf",
+     "https://www.fs.usda.gov/r02/shoshone",
+     "https://www.nps.gov/yell/planyourvisit/maps.htm",
+     "https://www.nps.gov/poex/learn/management/lawsandpolicies.htm"
+    ],
+    "results": [
+     {
+      "url": "https://www.fws.gov/fish-hatchery/saratoga/map",
+      "result": "ok",
+      "detail": "200"
+     },
+     {
+      "url": "http://www.blm.gov/style/medialib/blm/wy/field-offices/lander/pics.Par.5515.Image.620.869.1.gif",
+      "result": "dead",
+      "detail": "404"
+     },
+     {
+      "url": "https://www.fs.usda.gov/r04/bridger-teton",
+      "result": "ok",
+      "detail": "200"
+     },
+     {
+      "url": "https://www.fs.usda.gov/r04/ashley/maps-guides",
+      "result": "ok",
+      "detail": "200"
+     },
+     {
+      "url": "https://www.nps.gov/yell/learn/management/lawsandpolicies.htm",
+      "result": "ok",
+      "detail": "200"
+     },
+     {
+      "url": "https://www.fs.usda.gov/sites/nfs/files/r02/blackhills/publication/Recreation%20Sites%20Map.pdf",
+      "result": "ok",
+      "detail": "200"
+     },
+     {
+      "url": "https://www.fws.gov/fish-hatchery/jackson/map",
+      "result": "ok",
+      "detail": "200"
+     },
+     {
+      "url": "https://www.fs.usda.gov/visit/know-before-you-go",
+      "result": "ok",
+      "detail": "200"
+     },
+     {
+      "url": "https://www.nps.gov/deto/learn/management/lawsandpolicies.htm",
+      "result": "ok",
+      "detail": "200"
+     },
+     {
+      "url": "https://www.nps.gov/fobu/learn/management/lawsandpolicies.htm",
+      "result": "ok",
+      "detail": "200"
+     },
+     {
+      "url": "https://wgfapps.wyo.gov/GISFLS/Com_Lands/WHMA_Sand%20Creek.pdf",
+      "result": "ok",
+      "detail": "200"
+     },
+     {
+      "url": "https://www.fws.gov/refuge/bamforth/map",
+      "result": "ok",
+      "detail": "200"
+     },
+     {
+      "url": "https://www.fws.gov/refuge/cokeville-meadows/visit-us/rules-policies",
+      "result": "ok",
+      "detail": "200"
+     },
+     {
+      "url": "https://www.fs.usda.gov/trails/nez-perce-nht",
+      "result": "ok",
+      "detail": "200"
+     },
+     {
+      "url": "https://www.nps.gov/mopi/planyourvisit/maps.htm",
+      "result": "ok",
+      "detail": "200"
+     },
+     {
+      "url": "https://www.nps.gov/fola/planyourvisit/maps.htm",
+      "result": "ok",
+      "detail": "200"
+     },
+     {
+      "url": "https://wgfapps.wyo.gov/GISFLS/Com_Lands/WHMA_Luke%20Lynch.pdf",
+      "result": "ok",
+      "detail": "200"
+     },
+     {
+      "url": "https://www.fs.usda.gov/r02/shoshone",
+      "result": "ok",
+      "detail": "200"
+     },
+     {
+      "url": "https://www.nps.gov/yell/planyourvisit/maps.htm",
+      "result": "ok",
+      "detail": "200"
+     },
+     {
+      "url": "https://www.nps.gov/poex/learn/management/lawsandpolicies.htm",
+      "result": "ok",
+      "detail": "200"
+     }
+    ]
+   }
+  },
+  {
+   "path": "data/us-key/refresh.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
    "verdict": "PASS",
    "retest": {
     "sample": [
@@ -53713,13 +53848,6 @@
      }
     ]
    }
-  },
-  {
-   "path": "data/us-key/refresh.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
   }
  ]
 }
