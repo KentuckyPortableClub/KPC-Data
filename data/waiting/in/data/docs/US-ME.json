@@ -549,22 +549,15 @@
    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=2&historic_site=&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
    "checked": "2026-10-30",
    "map": {
-    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "the page in a browser ('Publications and Maps')",
-    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-10-30",
-    "via": "linked from the agency page (maine.gov)"
+    "url": "",
+    "status": "no map (an agency maps or publications list was dropped: https://www.maine.gov/dacf/parks/publications_maps/index.shtml)",
+    "how": "the page in a browser ('Publications and Maps')"
    },
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -580,22 +573,15 @@
    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=98&historic_site=&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
    "checked": "2026-10-30",
    "map": {
-    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "the page in a browser ('Publications and Maps')",
-    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-10-30",
-    "via": "linked from the agency page (maine.gov)"
+    "url": "",
+    "status": "no map (an agency maps or publications list was dropped: https://www.maine.gov/dacf/parks/publications_maps/index.shtml)",
+    "how": "the page in a browser ('Publications and Maps')"
    },
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -611,22 +597,15 @@
    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=7&historic_site=&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
    "checked": "2026-10-30",
    "map": {
-    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "the page in a browser ('Publications and Maps')",
-    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-10-30",
-    "via": "linked from the agency page (maine.gov)"
+    "url": "",
+    "status": "no map (an agency maps or publications list was dropped: https://www.maine.gov/dacf/parks/publications_maps/index.shtml)",
+    "how": "the page in a browser ('Publications and Maps')"
    },
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -663,22 +642,15 @@
    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/details.pl?park_id=72",
    "checked": "2026-10-30",
    "map": {
-    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "the page in a browser ('Publications and Maps')",
-    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl?park_id=72",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-10-30",
-    "via": "linked from the agency page (maine.gov)"
+    "url": "",
+    "status": "no map (an agency maps or publications list was dropped: https://www.maine.gov/dacf/parks/publications_maps/index.shtml)",
+    "how": "the page in a browser ('Publications and Maps')"
    },
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -709,7 +681,8 @@
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -755,22 +728,15 @@
    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=14&historic_site=&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
    "checked": "2026-10-30",
    "map": {
-    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "the page in a browser ('Publications and Maps')",
-    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-10-30",
-    "via": "linked from the agency page (maine.gov)"
+    "url": "",
+    "status": "no map (an agency maps or publications list was dropped: https://www.maine.gov/dacf/parks/publications_maps/index.shtml)",
+    "how": "the page in a browser ('Publications and Maps')"
    },
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -801,7 +767,8 @@
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -847,22 +814,15 @@
    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/details.pl?park_id=4",
    "checked": "2026-10-30",
    "map": {
-    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "the page in a browser ('Publications and Maps')",
-    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl?park_id=4",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-10-30",
-    "via": "linked from the agency page (maine.gov)"
+    "url": "",
+    "status": "no map (an agency maps or publications list was dropped: https://www.maine.gov/dacf/parks/publications_maps/index.shtml)",
+    "how": "the page in a browser ('Publications and Maps')"
    },
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -878,22 +838,15 @@
    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=5&historic_site=&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
    "checked": "2026-10-30",
    "map": {
-    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "the page in a browser ('Publications and Maps')",
-    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-10-30",
-    "via": "linked from the agency page (maine.gov)"
+    "url": "",
+    "status": "no map (an agency maps or publications list was dropped: https://www.maine.gov/dacf/parks/publications_maps/index.shtml)",
+    "how": "the page in a browser ('Publications and Maps')"
    },
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -924,7 +877,8 @@
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -985,7 +939,8 @@
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -1046,7 +1001,8 @@
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [
@@ -1094,22 +1050,15 @@
    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=9&historic_site=&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
    "checked": "2026-10-30",
    "map": {
-    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "the page in a browser ('Publications and Maps')",
-    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-10-30",
-    "via": "linked from the agency page (maine.gov)"
+    "url": "",
+    "status": "no map (an agency maps or publications list was dropped: https://www.maine.gov/dacf/parks/publications_maps/index.shtml)",
+    "how": "the page in a browser ('Publications and Maps')"
    },
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -1125,22 +1074,15 @@
    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=27&historic_site=&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
    "checked": "2026-10-30",
    "map": {
-    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "the page in a browser ('Publications and Maps')",
-    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-10-30",
-    "via": "linked from the agency page (maine.gov)"
+    "url": "",
+    "status": "no map (an agency maps or publications list was dropped: https://www.maine.gov/dacf/parks/publications_maps/index.shtml)",
+    "how": "the page in a browser ('Publications and Maps')"
    },
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -1171,7 +1113,8 @@
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -1217,22 +1160,15 @@
    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=17&historic_site=&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
    "checked": "2026-10-30",
    "map": {
-    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "the page in a browser ('Publications and Maps')",
-    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-10-30",
-    "via": "linked from the agency page (maine.gov)"
+    "url": "",
+    "status": "no map (an agency maps or publications list was dropped: https://www.maine.gov/dacf/parks/publications_maps/index.shtml)",
+    "how": "the page in a browser ('Publications and Maps')"
    },
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -1263,7 +1199,8 @@
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -1295,22 +1232,15 @@
    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=19&historic_site=&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
    "checked": "2026-10-30",
    "map": {
-    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "the page in a browser ('Publications and Maps')",
-    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-10-30",
-    "via": "linked from the agency page (maine.gov)"
+    "url": "",
+    "status": "no map (an agency maps or publications list was dropped: https://www.maine.gov/dacf/parks/publications_maps/index.shtml)",
+    "how": "the page in a browser ('Publications and Maps')"
    },
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -1341,7 +1271,8 @@
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -1387,22 +1318,15 @@
    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=99&historic_site=&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
    "checked": "2026-10-30",
    "map": {
-    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "the page in a browser ('Publications and Maps')",
-    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-10-30",
-    "via": "linked from the agency page (maine.gov)"
+    "url": "",
+    "status": "no map (an agency maps or publications list was dropped: https://www.maine.gov/dacf/parks/publications_maps/index.shtml)",
+    "how": "the page in a browser ('Publications and Maps')"
    },
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -1418,22 +1342,15 @@
    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=92&historic_site=&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
    "checked": "2026-10-30",
    "map": {
-    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "the page in a browser ('Publications and Maps')",
-    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-10-30",
-    "via": "linked from the agency page (maine.gov)"
+    "url": "",
+    "status": "no map (an agency maps or publications list was dropped: https://www.maine.gov/dacf/parks/publications_maps/index.shtml)",
+    "how": "the page in a browser ('Publications and Maps')"
    },
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -1472,22 +1389,15 @@
    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/details.pl?park_id=20",
    "checked": "2026-10-30",
    "map": {
-    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "the page in a browser ('Publications and Maps')",
-    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl?park_id=20",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-10-30",
-    "via": "linked from the agency page (maine.gov)"
+    "url": "",
+    "status": "no map (an agency maps or publications list was dropped: https://www.maine.gov/dacf/parks/publications_maps/index.shtml)",
+    "how": "the page in a browser ('Publications and Maps')"
    },
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -1527,22 +1437,15 @@
    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=22&historic_site=&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
    "checked": "2026-10-30",
    "map": {
-    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "the page in a browser ('Publications and Maps')",
-    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-10-30",
-    "via": "linked from the agency page (maine.gov)"
+    "url": "",
+    "status": "no map (an agency maps or publications list was dropped: https://www.maine.gov/dacf/parks/publications_maps/index.shtml)",
+    "how": "the page in a browser ('Publications and Maps')"
    },
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -1573,7 +1476,8 @@
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -1619,22 +1523,15 @@
    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=11&historic_site=&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
    "checked": "2026-10-30",
    "map": {
-    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "the page in a browser ('Publications and Maps')",
-    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-10-30",
-    "via": "linked from the agency page (maine.gov)"
+    "url": "",
+    "status": "no map (an agency maps or publications list was dropped: https://www.maine.gov/dacf/parks/publications_maps/index.shtml)",
+    "how": "the page in a browser ('Publications and Maps')"
    },
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -1665,7 +1562,8 @@
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -1711,22 +1609,15 @@
    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=13&historic_site=&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
    "checked": "2026-10-30",
    "map": {
-    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "the page in a browser ('Publications and Maps')",
-    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-10-30",
-    "via": "linked from the agency page (maine.gov)"
+    "url": "",
+    "status": "no map (an agency maps or publications list was dropped: https://www.maine.gov/dacf/parks/publications_maps/index.shtml)",
+    "how": "the page in a browser ('Publications and Maps')"
    },
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -1757,7 +1648,8 @@
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -1818,7 +1710,8 @@
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -1887,22 +1780,15 @@
    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=24&historic_site=&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
    "checked": "2026-10-30",
    "map": {
-    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "the page in a browser ('Publications and Maps')",
-    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-10-30",
-    "via": "linked from the agency page (maine.gov)"
+    "url": "",
+    "status": "no map (an agency maps or publications list was dropped: https://www.maine.gov/dacf/parks/publications_maps/index.shtml)",
+    "how": "the page in a browser ('Publications and Maps')"
    },
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -1933,7 +1819,8 @@
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -1979,22 +1866,15 @@
    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/details.pl?park_id=29",
    "checked": "2026-10-30",
    "map": {
-    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "the page in a browser ('Publications and Maps')",
-    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl?park_id=29",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-10-30",
-    "via": "linked from the agency page (maine.gov)"
+    "url": "",
+    "status": "no map (an agency maps or publications list was dropped: https://www.maine.gov/dacf/parks/publications_maps/index.shtml)",
+    "how": "the page in a browser ('Publications and Maps')"
    },
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -2027,7 +1907,8 @@
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -2041,22 +1922,15 @@
    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=31&historic_site=&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
    "checked": "2026-10-30",
    "map": {
-    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "the page in a browser ('Publications and Maps')",
-    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-10-30",
-    "via": "linked from the agency page (maine.gov)"
+    "url": "",
+    "status": "no map (an agency maps or publications list was dropped: https://www.maine.gov/dacf/parks/publications_maps/index.shtml)",
+    "how": "the page in a browser ('Publications and Maps')"
    },
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -2083,7 +1957,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-30",
     "via": "the agency site",
-    "kind_note": "forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only"
+    "kind_note": "forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r09/whitemountain",
@@ -2191,22 +2065,15 @@
    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=&historic_site=39&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
    "checked": "2026-10-30",
    "map": {
-    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "the page in a browser ('Publications and Maps')",
-    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-10-30",
-    "via": "linked from the agency page (maine.gov)"
+    "url": "",
+    "status": "no map (an agency maps or publications list was dropped: https://www.maine.gov/dacf/parks/publications_maps/index.shtml)",
+    "how": "the page in a browser ('Publications and Maps')"
    },
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -2222,22 +2089,15 @@
    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=&historic_site=32&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
    "checked": "2026-10-30",
    "map": {
-    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "the page in a browser ('Publications and Maps')",
-    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-10-30",
-    "via": "linked from the agency page (maine.gov)"
+    "url": "",
+    "status": "no map (an agency maps or publications list was dropped: https://www.maine.gov/dacf/parks/publications_maps/index.shtml)",
+    "how": "the page in a browser ('Publications and Maps')"
    },
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -2315,22 +2175,15 @@
    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=&historic_site=38&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
    "checked": "2026-10-30",
    "map": {
-    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "the page in a browser ('Publications and Maps')",
-    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-10-30",
-    "via": "linked from the agency page (maine.gov)"
+    "url": "",
+    "status": "no map (an agency maps or publications list was dropped: https://www.maine.gov/dacf/parks/publications_maps/index.shtml)",
+    "how": "the page in a browser ('Publications and Maps')"
    },
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -2346,22 +2199,15 @@
    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=&historic_site=40&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
    "checked": "2026-10-30",
    "map": {
-    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "the page in a browser ('Publications and Maps')",
-    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-10-30",
-    "via": "linked from the agency page (maine.gov)"
+    "url": "",
+    "status": "no map (an agency maps or publications list was dropped: https://www.maine.gov/dacf/parks/publications_maps/index.shtml)",
+    "how": "the page in a browser ('Publications and Maps')"
    },
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -2377,22 +2223,15 @@
    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=&historic_site=86&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
    "checked": "2026-10-30",
    "map": {
-    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "the page in a browser ('Publications and Maps')",
-    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-10-30",
-    "via": "linked from the agency page (maine.gov)"
+    "url": "",
+    "status": "no map (an agency maps or publications list was dropped: https://www.maine.gov/dacf/parks/publications_maps/index.shtml)",
+    "how": "the page in a browser ('Publications and Maps')"
    },
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -2408,22 +2247,15 @@
    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=&historic_site=80&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
    "checked": "2026-10-30",
    "map": {
-    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "the page in a browser ('Publications and Maps')",
-    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-10-30",
-    "via": "linked from the agency page (maine.gov)"
+    "url": "",
+    "status": "no map (an agency maps or publications list was dropped: https://www.maine.gov/dacf/parks/publications_maps/index.shtml)",
+    "how": "the page in a browser ('Publications and Maps')"
    },
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -2439,22 +2271,15 @@
    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=&historic_site=53&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
    "checked": "2026-10-30",
    "map": {
-    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "the page in a browser ('Publications and Maps')",
-    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-10-30",
-    "via": "linked from the agency page (maine.gov)"
+    "url": "",
+    "status": "no map (an agency maps or publications list was dropped: https://www.maine.gov/dacf/parks/publications_maps/index.shtml)",
+    "how": "the page in a browser ('Publications and Maps')"
    },
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -2470,22 +2295,15 @@
    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=&historic_site=36&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
    "checked": "2026-10-30",
    "map": {
-    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "the page in a browser ('Publications and Maps')",
-    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-10-30",
-    "via": "linked from the agency page (maine.gov)"
+    "url": "",
+    "status": "no map (an agency maps or publications list was dropped: https://www.maine.gov/dacf/parks/publications_maps/index.shtml)",
+    "how": "the page in a browser ('Publications and Maps')"
    },
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -2524,22 +2342,15 @@
    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=&historic_site=85&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
    "checked": "2026-10-30",
    "map": {
-    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "the page in a browser ('Publications and Maps')",
-    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-10-30",
-    "via": "linked from the agency page (maine.gov)"
+    "url": "",
+    "status": "no map (an agency maps or publications list was dropped: https://www.maine.gov/dacf/parks/publications_maps/index.shtml)",
+    "how": "the page in a browser ('Publications and Maps')"
    },
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -2615,22 +2426,15 @@
    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=&historic_site=37&public_reserved_land=&shared_use_trails=&town=&distance=&submit=Go+%BB",
    "checked": "2026-10-30",
    "map": {
-    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "the page in a browser ('Publications and Maps')",
-    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-10-30",
-    "via": "linked from the agency page (maine.gov)"
+    "url": "",
+    "status": "no map (an agency maps or publications list was dropped: https://www.maine.gov/dacf/parks/publications_maps/index.shtml)",
+    "how": "the page in a browser ('Publications and Maps')"
    },
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -2646,22 +2450,15 @@
    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=&historic_site=&public_reserved_land=&shared_use_trails=79&town=&distance=&submit=Go+%BB",
    "checked": "2026-10-30",
    "map": {
-    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "the page in a browser ('Publications and Maps')",
-    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-10-30",
-    "via": "linked from the agency page (maine.gov)"
+    "url": "",
+    "status": "no map (an agency maps or publications list was dropped: https://www.maine.gov/dacf/parks/publications_maps/index.shtml)",
+    "how": "the page in a browser ('Publications and Maps')"
    },
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -2723,22 +2520,15 @@
    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=&historic_site=&public_reserved_land=41&shared_use_trails=&town=&distance=&submit=Go+%BB",
    "checked": "2026-10-30",
    "map": {
-    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "the page in a browser ('Publications and Maps')",
-    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-10-30",
-    "via": "linked from the agency page (maine.gov)"
+    "url": "",
+    "status": "no map (an agency maps or publications list was dropped: https://www.maine.gov/dacf/parks/publications_maps/index.shtml)",
+    "how": "the page in a browser ('Publications and Maps')"
    },
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -2792,7 +2582,8 @@
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
@@ -2838,22 +2629,15 @@
    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?search_radio=1&state_park=&historic_site=&public_reserved_land=48&shared_use_trails=&town=&distance=&submit=Go+%BB, https://www.nrcm.org/explore-maine-map/donnell-pond-public-reserved-land/",
    "checked": "2026-10-30",
    "map": {
-    "url": "https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "the page in a browser ('Publications and Maps')",
-    "page": "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-10-30",
-    "via": "linked from the agency page (maine.gov)"
+    "url": "",
+    "status": "no map (an agency maps or publications list was dropped: https://www.maine.gov/dacf/parks/publications_maps/index.shtml)",
+    "how": "the page in a browser ('Publications and Maps')"
    },
    "rules": {
     "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
     "how": "a link on the park's page ('Park Passes, Fees Rules')",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "government agency (apps.web.maine.gov)",
    "runs": [],
