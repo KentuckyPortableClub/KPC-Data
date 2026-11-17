@@ -1,6 +1,6 @@
 name: KPC 2-fer assembly line (hidden)
 # Oct 27 5:23 PM (HQ): FETCHER -> WORKER -> CHECKER for one area (a state, or a few).
-#  1 FETCHER (network, polite): POTA same-day history + passes 1-2 (saved + fresh outlines). Every map-server answer is kept in a
+#  1 FETCHER (network, polite): passes 1-2 (Nov 16: the POTA same-day history step is out) (saved + fresh outlines). Every map-server answer is kept in a
 #    BUNDLE (kpc_http_cache.py) = a KPC-Data release asset 'bundle-<tag>.tar.gz' (release 'fers-bundles'), never in git.
 #  2 WORKER: unpacks the bundle, passes 3 + 5 (finest shapes, ownership, water, pins, rule 15); the bundle goes back up.
 #    A worker out of time can be run again alone (stage = worker) from the bundle.
@@ -221,13 +221,7 @@ jobs:
           if gh release download fers-bundles -R "$REPO" -p "$WATER_ASSET" -D . --clobber 2>/dev/null; then tar xzf "$WATER_ASSET" bundle/water 2>/dev/null || { kpc_rc=$?; echo "::warning title=Release::a release step failed (exit $kpc_rc)"; echo "Release - a release step failed (exit $kpc_rc)" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; fi
           echo "saved water tiles: $(ls bundle/water | wc -l)"
           echo "$(date -u +%F)" > data/fers/.since-$RUN_TAG
-      - name: POTA same-day history
-        id: kept_green_2
-        continue-on-error: true
-        timeout-minutes: 65
-        env:
-          PAIR_MINUTES: '60'
-        run: LINKS=. DATA=kpcdata python3 kpcdata/.github/scripts/kpc_pota_pairs_run.py || { kpc_rc=$?; echo "::error title=kpc_pota_pairs_run.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_pota_pairs_run.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+      # KPC owner, 2026-11-16 (handoff item 7, be polite to POTA): the POTA same-day history step is out of the 2-fer run.
       - name: USGS water from the bulk files BEFORE the line (tiles under last run's rows; Fable Oct 28 10:34 PM)
         id: kept_green_3
         continue-on-error: true
