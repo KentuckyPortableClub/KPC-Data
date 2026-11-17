@@ -34,13 +34,21 @@ def current_verdicts():
 
 
 def verdict_for(rel, current, log_last):
-    """Prefer the latest check. Fall back to the change log when that file was not in the last run."""
+    """Prefer the latest check. Fall back to the change log when that file was not in the last run.
+    An owner's RELEASE on the change log is kept when the latest check is only a PASS (or
+    LIVE-FILTERED): the checker never writes RELEASE, so preferring that check would hide the
+    approval and show PASS. A later HOLD still comes from the latest check."""
     key = rel[:-3] if rel.endswith('.gz') else rel
+    cur, log = {}, {}
     for k in (rel, key, key + '.gz', rel + '.gz'):
-        if k in current: return current[k]
+        if k in current:
+            cur = current[k]; break
     for k in (rel, key, key + '.gz', rel + '.gz'):
-        if k in log_last: return log_last[k]
-    return {}
+        if k in log_last:
+            log = log_last[k]; break
+    if log.get('verdict') == 'RELEASE' and (not cur.get('verdict') or cur.get('verdict') in ('PASS', 'LIVE-FILTERED', 'RELEASE')):
+        return log
+    return cur or log
 
 
 def main():
