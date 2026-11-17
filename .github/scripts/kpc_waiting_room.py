@@ -1155,6 +1155,22 @@ def mode_tidy():
     return gone
 
 
+def record_verdict_change(lastv, r, checked):
+    """Append one change-log line, then remember it. If the write fails, lastv is left as it was so
+    the next run tries again (Nov 16: a PASS after an F-4 checker crash was stored in verdicts-last
+    but never reached the log, and the morning list kept showing the crash)."""
+    row = {'kind': r['kind'], 'path': r['path'], 'verdict': r['verdict'], 'why': (r.get('why') or [])[:4], 'notes': (r.get('notes') or [])[:3]}
+    sig = json.dumps(row, sort_keys=True, ensure_ascii=False)
+    if lastv.get(r['path']) == sig: return False
+    try:
+        append_jsonl_gz(W / 'verdicts.jsonl', {'date': checked, **row})
+    except Exception as e:  # noqa: BLE001
+        print(f"::notice title=Waiting room::verdict log not updated for {r.get('path')}: {type(e).__name__}: {e}")
+        return False
+    lastv[r['path']] = sig
+    return True
+
+
 def mode_check(promote):
     try: mode_tidy()
     except Exception as e: print(f'::error title=Waiting room tidy::stopped ({type(e).__name__}: {e}); nothing else changed')  # noqa: BLE001
@@ -1179,11 +1195,7 @@ def mode_check(promote):
     except Exception as e: print(f'::notice title=Waiting room::grade list skipped ({type(e).__name__}: {e})')  # noqa: BLE001
     lastv = load(W / 'verdicts-last.json', {}) or {}   # Nov 2 (storage): the log took 135,000 lines in 4 days, mostly the same PASS every 2 h
     for r in out:   # Fable note b: one line per verdict CHANGE, kept, so thresholds can be tuned from a month of data
-        row = {'kind': r['kind'], 'path': r['path'], 'verdict': r['verdict'], 'why': r['why'][:4], 'notes': r['notes'][:3]}
-        sig = json.dumps(row, sort_keys=True, ensure_ascii=False)
-        if lastv.get(r['path']) == sig: continue
-        lastv[r['path']] = sig
-        append_jsonl_gz(W / 'verdicts.jsonl', {'date': rep['checked'], **row})
+        record_verdict_change(lastv, r, rep['checked'])
     json.dump(lastv, open(W / 'verdicts-last.json', 'w'), ensure_ascii=False, separators=(',', ':'))
     json.dump({'ok': rep['checked']}, open(W / 'heartbeat.json', 'w'))
     since = load(W / 'held-since.json', {}) or {}
