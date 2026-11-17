@@ -2,9 +2,8 @@
 """Nov 16: the documents bot must not take a link that sits on a site-wide official
 page (a home, index, or footer shared by many parks of the state) as each park's
 own rules or map, unless that destination clearly names the park. A resting or
-unread copy of the wrong page is still dropped: blank beats wrong. Parks that
-each have their own page and all link to the same state-wide rules page are not
-this case. Offline: synthetic records only, nothing is fetched, and nothing in
+unread copy of the wrong page is still dropped: blank beats wrong. A state-wide rules page on many parks that each have their own official page is
+handled in shared_pass (agency-wide on file is kept and labelled; otherwise it is dropped). Offline: synthetic records only, nothing is fetched, and nothing in
 the repo is written."""
 import os, pathlib, sys, tempfile
 
@@ -62,8 +61,9 @@ check(all((p.get('rules') or {}).get('url') == '' for k, p in D['parks'].items()
 check((D['parks']['US-1024']['rules'] or {}).get('url', '').endswith('willow-creek-pond-rules.pdf'),
       "a link on that shared home that names Willow Creek Pond is kept as that park's rules")
 
-# (c) ME / MO shape: each park has its own official page, all link to the same
-# state-wide rules URL, status is not ok, the URL is not in lists.json. Kept.
+# (c) a state-wide rules URL on 25 parks, each with its own official page, not
+# the agency-wide page on file (Missouri Title 3 shape): not each park's rules,
+# even when the page was not read. Dropped.
 own = {}
 STATEWIDE = 'https://www.example-agency.test/park_passes_fees_rules/index.shtml'
 for i in range(25):
@@ -72,12 +72,11 @@ for i in range(25):
                               STATEWIDE, how="a link on the park's page ('Park Passes, Fees Rules')",
                               status='did not open')
 D = area(own)
-before = {k: dict(p['rules']) for k, p in D['parks'].items()}
 B.shared_pass(D, {})
-check(all((p.get('rules') or {}).get('url') == STATEWIDE and (p.get('rules') or {}).get('status') == 'did not open' for p in D['parks'].values()),
-      '25 parks that each have their own page and all link to the same unread state-wide rules page keep that page')
-check(all(D['parks'][k]['rules'] == before[k] for k in before),
-      'those state-wide rows are unchanged (status, how, and URL)')
+check(all((p.get('rules') or {}).get('url') == '' for p in D['parks'].values()),
+      '25 parks that each have their own page and all link to the same unread rules page, not on file as agency-wide, do not keep that page')
+check(all('page shared by 25 parks was dropped' in ((p.get('rules') or {}).get('status') or '') for p in D['parks'].values()),
+      'the drop reason names the shared unread page')
 
 # (d) the listed agency-wide rules page is kept even when 25 parks share a home
 listed = {f'US-{3000+i}': rec(f'US-{3000+i}', f'Lake {i}', HOME, AGENCY,

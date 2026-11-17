@@ -904,9 +904,8 @@ def shared_home_pass(D, lists_area=None):
     """Nov 16: a link taken from an official page that 20+ parks of the area share (a site home, index, or
     footer — not each park's own page) is not that park's rules or map, unless the destination clearly names
     the park or it is the agency-wide rules page on file. Any status counts: a resting or unread copy is
-    still the wrong page. Blank beats wrong. Denied-page maps are left alone. Parks that each have their
-    own page and all link to the same state-wide rules page (IL / ME / MO) are not this case: existing
-    shared_pass / lists.json handling is unchanged."""
+    still the wrong page. Blank beats wrong. Denied-page maps are left alone. A state-wide rules or
+    maps page on many parks that each have their own official page is handled in shared_pass."""
     from collections import Counter
     agency_rules = {(e or {}).get('rules') for e in (lists_area or {}).values()} - {None, ''}
     ps = D.get('parks') or {}
@@ -929,30 +928,67 @@ def shared_home_pass(D, lists_area=None):
     if n_r or n_m: notice(f"{D.get('area')}: site-wide links on a shared official page dropped: rules {n_r}, maps {n_m}")
 
 
+def _list_page_keys(lists_area):
+    """page_key of each agency list / publications / maps index on file (lists.json 'pages')."""
+    out = set()
+    for e in (lists_area or {}).values():
+        for u in (e or {}).get('pages') or []:
+            if u: out.add(page_key(u))
+    return out
+
+
+def _is_agency_rules(r, agency_rules):
+    """True when this rules row is the agency-wide page (on file, or already labelled). Do not
+    change how a correctly labelled statewide page is treated."""
+    u = (r or {}).get('url') or ''
+    if u in agency_rules or (u and page_key(u) in {page_key(x) for x in agency_rules}):
+        return True
+    how, note = str((r or {}).get('how') or ''), str((r or {}).get('status_note') or '')
+    return (r or {}).get('rules_scope') == 'agency' or 'agency-wide' in how or 'agency-wide' in note
+
+
 def shared_pass(D, lists_area):
     """Oct 28 (chat 11, chunks 1-3): ONE rules page given to 20+ parks (WV: 83 on a whitewater-commission page; FL: 53 on a shooting-
     range page) is not each park's rules unless it is the agency-wide rules page on file for that park's own agency; ONE map
     file given to 20+ parks (GA: 130 on a flip-book) is not each park's map. Those are dropped with the reason. A map that is a
     national forest's maps page is labelled 'forest map only'. Nov 16: a link on an official page shared by 20+ parks is also
-    dropped (any status), unless it names the park or is the agency-wide page on file — see shared_home_pass."""
+    dropped (any status), unless it names the park or is the agency-wide page on file — see shared_home_pass.
+    Nov 16 evening (owner's ruling): the same 20+ / 5+ drop counts every status, not only ok, so a 403 or unread or resting
+    copy of the wrong page is still dropped (Maine's publications/maps index was HTTP 403 on 33 parks and was left as each
+    park's map). A correctly identified agency-wide maps or publications list (lists.json 'pages') is never each park's own
+    map, even on one park, unless the destination names that park. An agency-wide rules page on file, or one already labelled
+    agency-wide, is kept and labelled rules_scope 'agency' even when it was not read; URL, how, and status stay as they were.
+    A Title 3 style law index that is not the agency-wide rules page is not labelled; it is dropped when 20+ parks share it."""
     from collections import Counter
     agency_rules = {(e or {}).get('rules') for e in (lists_area or {}).values()} - {None, ''}
+    list_pages = _list_page_keys(lists_area)
     ps = D.get('parks') or {}
-    ru = Counter((p.get('rules') or {}).get('url') for p in ps.values() if (p.get('rules') or {}).get('status') == 'ok')
-    mp = Counter((p.get('map') or {}).get('url') for p in ps.values() if (p.get('map') or {}).get('status') == 'ok')
-    n_r = n_m = n_f = 0
+    ru = Counter((p.get('rules') or {}).get('url') for p in ps.values() if (p.get('rules') or {}).get('url'))
+    mp = Counter((p.get('map') or {}).get('url') for p in ps.values()
+                 if (p.get('map') or {}).get('url') and (p.get('map') or {}).get('kind') != 'denied page')
+    n_r = n_m = n_f = n_lab = 0
     for p in ps.values():
         r = p.get('rules') or {}
-        if r.get('status') == 'ok' and ru[r.get('url')] >= 20 and r.get('url') not in agency_rules:
-            p['rules'] = {'url': '', 'status': f"not found (a page shared by {ru[r.get('url')]} parks was dropped: {r.get('url')[:90]})", 'how': r.get('how', '')}; n_r += 1
+        url = r.get('url') or ''
+        if url and _is_agency_rules(r, agency_rules):
+            if r.get('rules_scope') != 'agency':
+                r['rules_scope'] = 'agency'; p['rules'] = r; n_lab += 1
+        elif url and ru[url] >= 20:
+            p['rules'] = {'url': '', 'status': f"not found (a page shared by {ru[url]} parks was dropped: {url[:90]})", 'how': r.get('how', '')}; n_r += 1
         m = p.get('map') or {}
+        mu = m.get('url') or ''
+        if m.get('kind') == 'denied page':
+            pass
+        elif mu and page_key(mu) in list_pages and not link_is_the_park(p.get('n'), mu, m.get('how') or '', m.get('names_park')):
+            p['map'] = {'url': '', 'status': f"no map (an agency maps or publications list was dropped: {mu[:90]})", 'how': m.get('how', '')}; n_m += 1
         # Oct 29 (chat 11, docs v7 South 83%): ONE map file on 5+ parks (the Indiana Museum map on 10 historic sites, the FWS rivers
         # map on 5 wild and scenic rivers) is the AGENCY's map, not each park's: dropped too, unless it is a real multi-park NPS page
-        if m.get('status') == 'ok' and m.get('kind') != 'region overview' and (mp[m.get('url')] >= 20 or (mp[m.get('url')] >= 5 and 'nps.gov' not in (m.get('url') or ''))):
-            p['map'] = {'url': '', 'status': f"no map (one file shared by {mp[m.get('url')]} parks was dropped: {m.get('url')[:90]})", 'how': m.get('how', '')}; n_m += 1
-        elif m.get('status') == 'ok' and FORESTLVL.search(m.get('url') or ''):
+        elif mu and page_key(mu) not in list_pages and m.get('kind') != 'region overview' and (mp[mu] >= 20 or (mp[mu] >= 5 and 'nps.gov' not in mu)):
+            p['map'] = {'url': '', 'status': f"no map (one file shared by {mp[mu]} parks was dropped: {mu[:90]})", 'how': m.get('how', '')}; n_m += 1
+        elif m.get('status') == 'ok' and FORESTLVL.search(mu):
             m['kind_note'] = (m.get('kind_note', '') + '; ' if m.get('kind_note') else '') + 'forest map only'; n_f += 1
-    if n_r or n_m or n_f: notice(f"{D.get('area')}: shared pages dropped: rules {n_r}, maps {n_m}; forest-level maps labelled {n_f}")
+    if n_r or n_m or n_f or n_lab:
+        notice(f"{D.get('area')}: shared pages dropped: rules {n_r}, maps {n_m}; forest-level maps labelled {n_f}; agency-wide rules labelled {n_lab}")
     shared_home_pass(D, lists_area)
 
 
