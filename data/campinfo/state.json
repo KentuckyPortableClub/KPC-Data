@@ -651,6 +651,7 @@
    "checked": 232,
    "counts": {
     "camps": 232,
+    "kept_after_failed_read": 188,
     "needs_browser": 2,
     "needs_key": 11,
     "no_page": 6,
@@ -666,7 +667,7 @@
    },
    "left": 0,
    "status": "done",
-   "updated": "2026-11-10"
+   "updated": "2026-11-17"
   },
   "US-NH": {
    "camps": 79,
@@ -1165,7 +1166,7 @@
   "US-MT": "FCC listAsOfDates: robots.txt says no",
   "US-NC": "FCC listAsOfDates: robots.txt says no",
   "US-ND": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
-  "US-NE": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
+  "US-NE": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-NH": "FCC listAsOfDates: robots.txt says no",
   "US-NJ": "FCC listAsOfDates: robots.txt says no",
   "US-NM": "FCC listAsOfDates: robots.txt says no",
@@ -1454,10 +1455,10 @@
    "cell": {
     "carriers": null,
     "files": [],
-    "src": null,
-    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
+    "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2026-06-30?category=State&subcategory=Mobile%20Broadband",
+    "status": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
    },
-   "read": "2026-11-10"
+   "read": "2026-11-17"
   },
   "US-NH": {
    "cell": {
@@ -1655,6 +1656,7 @@
   "epqs.nationalmap.gov": 1794945664.950545,
   "gfp.sd.gov": 1794992499.336771,
   "midnrreservations.com": 1795025798.233715,
+  "outdoornebraska.gov": 1795027132.2688487,
   "parks.ky.gov": 1794987285.4093177,
   "www.fs.usda.gov": 1795021264.9896526,
   "www.in.gov": 1795024358.702078,
@@ -2613,7 +2615,7 @@
  },
  "last": {
   "areas": [
-   "US-MI"
+   "US-NE"
   ],
   "fcc_token": true,
   "manners": {
@@ -2621,34 +2623,33 @@
    "for_person": 2,
    "for_person_urls": [
     [
-     "https://midnrreservations.com/",
+     "https://outdoornebraska.gov/parks/",
      "HTTP 403 twice"
     ],
     [
-     "https://midnrreservations.com/",
+     "https://outdoornebraska.gov/parks/",
      "HTTP 403 twice"
     ]
    ],
    "host_rule": 0,
-   "requests": 16,
-   "rested": 544,
+   "requests": 13,
+   "rested": 427,
    "retry403": 2,
    "robots": 0,
    "strikes": 4
   },
   "ridb_key": false,
   "stat": {
-   "browser": 2,
-   "camps": 521,
+   "camps": 236,
    "elevations": 0,
    "errors": 0,
    "needs_browser": 3,
-   "needs_key": 114,
-   "no_page": 379,
-   "not_official": 0,
-   "ok": 4,
-   "pages_read": 5,
-   "resting": 23,
+   "needs_key": 11,
+   "no_page": 6,
+   "not_official": 23,
+   "ok": 3,
+   "pages_read": 4,
+   "resting": 191,
    "ridb_calls": 0,
    "robots": 0,
    "skipped_fresh": 0
