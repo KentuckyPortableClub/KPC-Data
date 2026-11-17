@@ -42,7 +42,7 @@ Updated 2026-11-17. Every fact in <area>.json carries its source url, read date 
 | US-KS | 117 | 0 | 52 | 0 | 65 | 0 | 0 | 0 | 0 | 0 | 63 | 0 |
 | US-NE | 232 | 3 | 11 | 2 | 0 | 185 | 6 | 23 | 2 | 0 | 74 | 0 |
 | US-CO | 653 | 183 | 337 | 15 | 0 | 110 | 0 | 0 | 8 | 2 | 316 | 0 |
-| US-WY | 301 | 5 | 162 | 3 | 0 | 0 | 79 | 0 | 52 | 0 | 41 | 0 |
+| US-WY | 301 | 5 | 162 | 2 | 0 | 0 | 79 | 0 | 53 | 0 | 41 | 0 |
 | US-ID | 450 | 27 | 311 | 33 | 0 | 0 | 0 | 35 | 44 | 5 | 100 | 2 |
 | US-MT | 389 | 30 | 311 | 0 | 0 | 4 | 0 | 0 | 44 | 0 | 78 | 0 |
 | US-NV | 87 | 23 | 34 | 1 | 0 | 4 | 0 | 7 | 18 | 11 | 46 | 0 |
@@ -103,9 +103,9 @@ Updated 2026-11-17. Every fact in <area>.json carries its source url, read date 
 - www.recreation.gov: 6 campgrounds
 - dnr.wisconsin.gov: 4 campgrounds
 - gfp.sd.gov: 4 campgrounds
-- www.nps.gov: 4 campgrounds
 - parks.ky.gov: 3 campgrounds
 - gastateparks.org: 3 campgrounds
+- www.nps.gov: 3 campgrounds
 - wvdnr.gov: 2 campgrounds
 - www.in.gov: 2 campgrounds
 - files.dfm.idaho.gov: 2 campgrounds

@@ -1121,12 +1121,13 @@
    "checked": 301,
    "counts": {
     "camps": 301,
-    "needs_browser": 3,
+    "kept_after_failed_read": 7,
+    "needs_browser": 2,
     "needs_key": 162,
     "no_page": 79,
     "not_official": 0,
     "ok": 5,
-    "other": 52,
+    "other": 53,
     "resting": 0,
     "robots": 0,
     "with_booking": 41,
@@ -1134,9 +1135,9 @@
     "with_facts": 20,
     "with_sites": 0
    },
-   "left": 1,
-   "status": "partial",
-   "updated": "2026-11-10"
+   "left": 0,
+   "status": "done",
+   "updated": "2026-11-17"
   }
  },
  "cell_status": {
@@ -1190,7 +1191,7 @@
   "US-WA": "FCC listAsOfDates: robots.txt says no",
   "US-WI": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-WV": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
-  "US-WY": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
+  "US-WY": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
  },
  "fcc": {
   "US-AK": {
@@ -1647,10 +1648,10 @@
    "cell": {
     "carriers": null,
     "files": [],
-    "src": null,
-    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
+    "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2026-06-30?category=State&subcategory=Mobile%20Broadband",
+    "status": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
    },
-   "read": "2026-11-10"
+   "read": "2026-11-17"
   }
  },
  "hosts": {
@@ -2618,31 +2619,31 @@
  },
  "last": {
   "areas": [
-   "US-TX"
+   "US-WY"
   ],
   "fcc_token": true,
   "manners": {
    "errors": 0,
    "for_person_urls": [],
    "host_rule": 0,
-   "requests": 87,
-   "rested": 488,
+   "requests": 132,
+   "rested": 321,
    "robots": 0,
    "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "browser": 27,
-   "camps": 484,
+   "browser": 46,
+   "camps": 314,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 28,
-   "needs_key": 121,
-   "no_page": 329,
+   "needs_browser": 46,
+   "needs_key": 164,
+   "no_page": 92,
    "not_official": 0,
-   "ok": 30,
-   "pages_read": 54,
-   "resting": 4,
+   "ok": 53,
+   "pages_read": 74,
+   "resting": 7,
    "ridb_calls": 0,
    "robots": 0,
    "skipped_fresh": 0
