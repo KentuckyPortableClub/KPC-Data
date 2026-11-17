@@ -12,9 +12,9 @@
   "2-fer gate (areas ready / waiting)": {
    "areas": "",
    "last_run": "2026-11-17",
-   "made": "1068 audit rows not clean in 43 areas; waiting for audit 13, waiting for key 53",
+   "made": "1068 audit rows not clean in 43 areas; waiting for audit 66",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44188263253",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44191594888",
    "waiting_on": "chat 11 / 12 (audit answers), chat 2 (fixes)"
   },
   "Cell coverage (FCC)": {
@@ -1084,9 +1084,9 @@
   "Skipped-run watchdog": {
    "areas": "",
    "last_run": "2026-11-17",
-   "made": "2026-11-17 22:16 UTC: 2 skipped run(s) started again: kpc-copy-from-links.yml (missed Nov 17 21:11 UTC); kpc-waiting-room.yml (missed Nov 17 20:42 UTC)",
-   "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44188263253",
+   "made": "nothing skipped",
+   "result": "green",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44191594888",
    "waiting_on": "nobody (it restarts them itself)"
   },
   "Storage keeper (weekly)": {
@@ -1196,9 +1196,9 @@
   "Website copy (site branch)": {
    "areas": "",
    "last_run": "2026-11-17",
-   "made": "site = main: the website has the newest data",
+   "made": "site is under 60 min behind main: the copy bot will catch up",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44188263253",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44191594888",
    "waiting_on": "nobody (the watchdog restarts the copy bot itself)"
   },
   "answer-sheet-check": {
@@ -1291,7 +1291,7 @@
   },
   "waiting room": {
    "last_run": "2026-11-17",
-   "made": "heartbeat 0 h old, 497 files waiting",
+   "made": "heartbeat 0 h old, 321 files waiting",
    "result": "green",
    "waiting_on": "nothing"
   },
