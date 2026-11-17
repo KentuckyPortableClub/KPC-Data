@@ -934,22 +934,23 @@
    "checked": 394,
    "counts": {
     "camps": 394,
-    "needs_browser": 2,
+    "kept_after_failed_read": 43,
+    "needs_browser": 4,
     "needs_key": 78,
     "no_page": 267,
     "not_official": 0,
     "ok": 2,
-    "other": 3,
-    "resting": 25,
-    "robots": 17,
+    "other": 5,
+    "resting": 23,
+    "robots": 15,
     "with_booking": 49,
-    "with_elevation": 372,
-    "with_facts": 2,
+    "with_elevation": 33,
+    "with_facts": 3,
     "with_sites": 2
    },
    "left": 0,
    "status": "done",
-   "updated": "2026-11-16"
+   "updated": "2026-11-17"
   },
   "US-TX": {
    "camps": 484,
@@ -1569,7 +1570,7 @@
     "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2026-06-30?category=State&subcategory=Mobile%20Broadband",
     "status": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
    },
-   "read": "2026-11-16"
+   "read": "2026-11-17"
   },
   "US-TX": {
    "cell": {
@@ -1651,7 +1652,8 @@
   "reserve.tnstateparks.com": 1794920406.150574,
   "reserveohio.com": 1794918753.22784,
   "www.fs.usda.gov": 1794915521.5681503,
-  "www.maine.gov": 1794915485.191769
+  "www.maine.gov": 1794915485.191769,
+  "www.tn.gov": 1794994022.1993356
  },
  "ky_check": {
   "agree": 104,
@@ -2606,31 +2608,38 @@
  },
  "last": {
   "areas": [
-   "US-SD"
+   "US-TN"
   ],
   "fcc_token": true,
   "manners": {
-   "errors": 3,
-   "for_person_urls": [],
+   "errors": 1,
+   "for_person": 1,
+   "for_person_urls": [
+    [
+     "https://www.tn.gov/twra/wildlife-management-areas/cumberland-plateau-r3/cordell-hull-wma.html",
+     "HTTP 403 twice"
+    ]
+   ],
    "host_rule": 0,
-   "requests": 20,
-   "rested": 207,
+   "requests": 15,
+   "rested": 439,
+   "retry403": 2,
    "robots": 0,
-   "strikes": 3
+   "strikes": 4
   },
   "ridb_key": false,
   "stat": {
    "browser": 1,
-   "camps": 126,
+   "camps": 397,
    "elevations": 0,
-   "errors": 3,
-   "needs_browser": 5,
-   "needs_key": 29,
-   "no_page": 2,
+   "errors": 0,
+   "needs_browser": 2,
+   "needs_key": 81,
+   "no_page": 269,
    "not_official": 0,
-   "ok": 7,
-   "pages_read": 7,
-   "resting": 85,
+   "ok": 3,
+   "pages_read": 3,
+   "resting": 43,
    "ridb_calls": 0,
    "robots": 0,
    "skipped_fresh": 0
