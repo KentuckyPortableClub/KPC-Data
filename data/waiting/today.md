@@ -2,7 +2,7 @@
 
 For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in data/waiting/approved.json; the nightly run lets it out.
 
-## Held files: 491 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
+## Held files: 487 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
 
 | since | days | file | last check | why |
 |---|---|---|---|---|
@@ -36,7 +36,6 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-10 | 7 | data/truth/US-WA.json | HOLD | F-R2 5 OFF rows share the size 564.0 ac; F-R3 157 of 188 sized parks are OFF (over half: a reading problem?) |
 | 2026-11-11 | 6 | data/docs/US-AK.json | HOLD | F-D3 2 of 20 re-tested links definitely dead (not already ok in live), e.g. https://www.fws.gov/refuge/nowitna/visit-us/rules-policies |
 | 2026-11-11 | 6 | data/docs/US-HI.json | HOLD | F-D3 5 of 20 re-tested links definitely dead (not already ok in live), e.g. https://www.nps.gov/puhe/learn/management/lawsandpolicies.htm |
-| 2026-11-12 | 5 | data/campinfo/US-WI.json | HOLD | F-I6 campgrounds with source-lined facts 12 -> 4 (more than 30% lost: a blocked read emptied them?) |
 | 2026-11-12 | 5 | data/fers/US-IN.json.gz | HOLD | F-2 candidates 51 -> 79 (over 30% change); F-2 34 new candidate pairs since the live file (over 10% of 51): a person looks at them first, e.g. US-10237+US-4218, US-2251+US-4170, US-2251+US-4171; F-K known 2-fer missing:  |
 | 2026-11-12 | 5 | data/fers/US-MA.json.gz | HOLD | F-2 30 new candidate pairs since the live file (over 10% of 75): a person looks at them first, e.g. US-0672+US-11686, US-0672+US-8395, US-0728+US-4582; F-K known 2-fer missing: US-0891 + US-2430 |
 | 2026-11-12 | 5 | data/fers/US-MD.json.gz | HOLD | F-2 NOT SURE 8 -> 5 (over 30% change); F-2 only 99 of 140 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 69 new candidate pairs since the live file (over 10% of  |
@@ -51,7 +50,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-14 | 3 | data/fers/US-MI.json.gz | HOLD | F-2 candidates 82 -> 137 (over 30% change); F-2 NOT SURE 9 -> 12 (over 30% change); F-2 60 new candidate pairs since the live file (over 10% of 82): a person looks at them first, e.g. US-0766+US-4239, US-10088+US-4239, U |
 | 2026-11-14 | 3 | data/fers/US-OH.json.gz | HOLD | F-2 candidates 27 -> 64 (over 30% change); F-2 38 new candidate pairs since the live file (over 10% of 27): a person looks at them first, e.g. US-11673+US-4239, US-12057+US-9444, US-1935+US-4239 |
 | 2026-11-15 | 2 | data/docs/US-OR.json | HOLD | F-D3 5 of 20 re-tested links definitely dead (not already ok in live), e.g. https://www.fws.gov/refuge/siletz-bay/visit-us/rules-policies |
-| 2026-11-16 | 1 | data/docs/US-MS.json | HOLD | F-D3 2 of 20 re-tested links definitely dead (not already ok in live), e.g. https://www.nps.gov/tupe/learn/management/lawsandpolicies.htm |
+| 2026-11-16 | 1 | data/docs/US-MS.json | HOLD | F-D3 2 of 20 re-tested links definitely dead (not already ok in live), e.g. https://www.fws.gov/refuge/coldwater_river/visit-us/rules-policies |
 | 2026-11-17 | 0 | data/ca-key/CA-ON.json | HOLD | F-O3 retired parks still outlined: CA-6621 |
 | 2026-11-17 | 0 | data/docs/US-AZ.json | HOLD | F-D3 2 of 20 re-tested links definitely dead (not already ok in live), e.g. https://www.fws.gov/refuge/bill-williams-river/visit-us/rules-policies |
 | 2026-11-17 | 0 | data/docs/US-KY.json | HOLD | F-D3 2 of 20 re-tested links definitely dead (not already ok in live), e.g. https://parks.ky.gov/park-rules |
@@ -101,6 +100,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/campinfo/US-UT.json | PASS |  |
 | ? | ? | data/campinfo/US-VA.json | PASS |  |
 | ? | ? | data/campinfo/US-WA.json | PASS |  |
+| ? | ? | data/campinfo/US-WI.json | PASS |  |
 | ? | ? | data/campinfo/US-WV.json | PASS |  |
 | ? | ? | data/campinfo/US-WY.json | PASS |  |
 | ? | ? | data/campstate/US-AK.json | PASS |  |
@@ -489,13 +489,9 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/world-key/UY.json | PASS |  |
 | ? | ? | data/world-key/VI.json | PASS |  |
 | ? | ? | data/wwff/7PFF.json | PASS |  |
-| ? | ? | data/wwff/D4FF.json | RELEASE |  |
 | ? | ? | data/wwff/DLFF.json | PASS |  |
 | ? | ? | data/wwff/IFF.json | PASS |  |
-| ? | ? | data/wwff/KFF.json | RELEASE |  |
 | ? | ? | data/wwff/OAFF.json | PASS |  |
-| ? | ? | data/wwff/ONFF.json | RELEASE |  |
-| ? | ? | data/wwff/PYFF.json | PASS |  |
 | ? | ? | data/wwff/YVFF.json | PASS |  |
 
 ## Questions waiting for an answer
