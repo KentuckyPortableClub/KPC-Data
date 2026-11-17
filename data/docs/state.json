@@ -5,7 +5,7 @@
    "parks": 561,
    "checked": 561,
    "left": 0,
-   "updated": "2026-11-03"
+   "updated": "2026-11-17"
   },
   "US-FL": {
    "status": "done",
@@ -19,7 +19,7 @@
    "parks": 193,
    "checked": 193,
    "left": 0,
-   "updated": "2026-10-29"
+   "updated": "2026-11-17"
   },
   "US-TN": {
    "status": "done",
@@ -185,7 +185,7 @@
    "parks": 148,
    "checked": 148,
    "left": 0,
-   "updated": "2026-11-03"
+   "updated": "2026-11-17"
   },
   "US-MD": {
    "status": "done",
@@ -713,25 +713,28 @@
   "www.idfg.id.gov": 1794979460.720802,
   "www.idfg.idaho.goc": 1794979531.3224669,
   "www.idfg.idah.gov": 1794979579.741332,
-  "www.fs.usda.gov": 1794979618.2756577
+  "www.fs.usda.gov": 1794979618.2756577,
+  "parks.ky.gov": 1794981925.9118094
  },
  "last": {
   "when": "2026-11-17",
   "areas": [
-   "US-ID"
+   "US-KY",
+   "US-ME",
+   "US-MO"
   ],
   "stat": {
-   "requests": 794,
-   "parks": 362,
-   "maps_ok": 177,
-   "maps_found": 164,
+   "requests": 647,
+   "parks": 148,
+   "maps_ok": 70,
+   "maps_found": 66,
    "dates": 0,
-   "rules": 216,
-   "browser": 151,
-   "robots": 1,
-   "strikes": 27,
-   "errors": 27,
-   "skipped_fresh": 0
+   "rules": 32,
+   "browser": 77,
+   "robots": 5,
+   "strikes": 3,
+   "errors": 3,
+   "skipped_fresh": 754
   }
  }
 }
