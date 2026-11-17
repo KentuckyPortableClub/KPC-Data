@@ -1213,8 +1213,13 @@ def has_facts(r):
 def earlier_record(working, live):
     """The record keep_known treats as 'what we already had'. Reads the LIVE (published) file, not only the working copy,
     which may be a held and possibly damaged file after mode_resume. If the live record has campground facts the working
-    copy lost, live is used. If the working copy kept those facts (and maybe found more), the working copy is used so a
-    later failed re-read does not drop them."""
+    copy lost, live is used. If the working copy is a struck-out or robots-blocked wipe and live is still the earlier
+    record (even a booking-only page), live is used so those camps are left as they were. If the working copy kept those
+    facts (and maybe found more), the working copy is used so a later failed re-read does not drop them."""
+    if live and host_unread((working or {}).get('status') or '') and not host_unread((live or {}).get('status') or ''):
+        # a live 'bot error' with no campground facts is not "how the camp was"; keep the working copy
+        if not (str(live.get('status') or '').startswith('bot error') and not has_facts(live)):
+            return live
     if not has_facts(live):
         return working
     if not has_facts(working):
@@ -1224,34 +1229,74 @@ def earlier_record(working, live):
     return working
 
 
+def repo_root():
+    """The KPC-Data repo root (this file lives in .github/scripts/). Tests may replace this."""
+    return pathlib.Path(__file__).resolve().parents[2]
+
+
 def load_published(area):
     """The published (live) campground file for this area. After mode_resume the file at OUT may be a held copy, so this
-    does not read OUT. Tests set LIVE_CAMPINFO to a folder of published files. In the repo, this is git
-    HEAD:data/campinfo/<area>.json, and only when OUT is that folder."""
+    does not read OUT. Tests set LIVE_CAMPINFO to a folder of published files. In the repo this is always
+    git HEAD:data/campinfo/<area>.json (the published commit), even when OUT is a work folder or a held copy
+    was laid over the working tree. The file is decoded as UTF-8 (locale-sensitive git show used to fail silently)."""
     hook = os.environ.get('LIVE_CAMPINFO')
     if hook:
         return load(pathlib.Path(hook) / f'{area}.json', None)
+    root = repo_root()
     try:
-        root = pathlib.Path.cwd().resolve()
-        if OUT.resolve() != (root / 'data' / 'campinfo').resolve():
-            return None
-        r = subprocess.run(['git', '-C', str(root), 'show', f'HEAD:data/campinfo/{area}.json'], capture_output=True, text=True)
+        r = subprocess.run(['git', '-C', str(root), 'show', f'HEAD:data/campinfo/{area}.json'], capture_output=True)
         if r.returncode == 0 and r.stdout:
-            return json.loads(r.stdout)
+            return json.loads(r.stdout.decode('utf-8'))
+    except Exception:
+        pass  # noqa: BLE001
+    # On-disk published file, only when OUT is some other folder (do not treat a damaged working copy as live)
+    try:
+        live_dir = root / 'data' / 'campinfo'
+        if OUT.resolve() != live_dir.resolve() and (live_dir / f'{area}.json').exists():
+            return load(live_dir / f'{area}.json', None)
     except Exception:
         pass  # noqa: BLE001
     return None
+
+
+def host_unread(st):
+    """This run did not read the page because the host is off-limits: struck out (host resting), robots.txt
+    says no, robots.txt could not be read, a slow-host deferral / crawl-delay, or a host rule. Not a
+    page-level 403 / soft 404. We still do not fetch what robots disallows; we just leave the earlier
+    record alone."""
+    s = str(st or '')
+    if s == 'robots.txt says no' or s.startswith('RIDB API refused by its robots.txt'):
+        return True
+    if 'robots.txt could not be read' in s:
+        return True
+    if s == 'host resting' or s.startswith('host resting ('):
+        return True
+    if s == 'host-rule' or s.startswith('host-rule'):
+        return True
+    return False
 
 
 def keep_known(old, new):
     """Nov 11: a re-read that found NO campground facts (page blocked, robots, host resting, soft 404, script-built page, a bot error, a
     missing key) must not wipe the facts and source lines an earlier read found: the old record stays, marked with the day and the reason
     the re-read failed (last_read_failed / last_read_status), and its own 'checked' date stays so it is tried again next run. The record
-    is rebuilt blank on every read, so before this a single 403 on the monthly re-read emptied a good record. The earlier record is the live (published) one when the working copy lost those facts (see earlier_record). Returns the record to keep."""
-    if not old or not has_facts(old) or has_facts(new): return new
+    is rebuilt blank on every read, so before this a single 403 on the monthly re-read emptied a good record. The earlier record is the live (published) one when the working copy lost those facts (see earlier_record).
+    Nov 16: if the host is struck out or robots-blocked, the camp is left as it was (the earlier / live record), even when that
+    record had only a booking link or no has_facts() campground fields; the status is not replaced with 'host resting' or
+    'robots.txt says no'. Returns the record to keep."""
+    if not old:
+        return new
+    st = new.get('status') or ''
+    if host_unread(st):
+        kept = dict(old)
+        kept['last_read_failed'] = TODAY
+        kept['last_read_status'] = st
+        return kept
+    if not has_facts(old) or has_facts(new):
+        return new
     kept = dict(old)
     kept['last_read_failed'] = TODAY
-    kept['last_read_status'] = new.get('status') or 'no facts read'
+    kept['last_read_status'] = st or 'no facts read'
     return kept
 
 
@@ -1325,7 +1370,7 @@ def run_area(area, state):
         live_camps = {}
     for cid, live_rec in list(live_camps.items()):   # Nov 16: restore live facts the working (held) copy lost, so a mid-run stop cannot save the loss
         old = earlier_record(D['camps'].get(cid), live_rec)
-        if old is not D['camps'].get(cid) and has_facts(old):
+        if old is not None and old is not D['camps'].get(cid):
             D['camps'][cid] = dict(old)
     rows = camp_rows(area)
     if not rows:

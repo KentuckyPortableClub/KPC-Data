@@ -51,7 +51,12 @@ fresh = good(); fresh['sites']['total'] = 40; fresh['status'] = 'ok'
 check(C.keep_known(old, fresh) is fresh, 'a re-read that found facts replaces the record (a changed value is a real change)')
 check(C.keep_known(None, failed('HTTP 403 -> needs browser'))['status'] == 'HTTP 403 -> needs browser', 'no earlier record: the failed read is the record, as before')
 only_elev = C.blank_record(ROW); only_elev['elevation_ft'] = {'value': 900, 'src': 'x'}; only_elev['status'] = 'ok'
-check(C.keep_known(only_elev, failed('host resting'))['status'] == 'host resting', 'an earlier record with no campground facts is not kept')
+kept_elev = C.keep_known(only_elev, failed('host resting'))
+check(kept_elev['status'] == 'ok' and (kept_elev.get('elevation_ft') or {}).get('value') == 900,
+      'when the host is resting, the earlier record is left as it was even with no campground facts')
+check(kept_elev.get('last_read_status') == 'host resting', 'the resting re-read is noted on the earlier record')
+check(C.keep_known(only_elev, failed('HTTP 403 -> needs browser'))['status'] == 'HTTP 403 -> needs browser',
+      'an earlier record with no campground facts is still not kept for a page-level 403')
 
 # the whole area loop: stub the list and the page read; no network
 C.camp_rows = lambda area: {'pine': ROW}
@@ -59,11 +64,11 @@ calls = []
 def stub_one(area, r, state): calls.append(r['id']); return failed('HTTP 403 -> needs browser')
 C.one_camp = stub_one
 C.merge_duplicates = lambda D: None
-D0 = {'area': 'US-TN', 'camps': {'pine': dict(old, ver=C.VER)}}
-pathlib.Path(TMP, 'US-TN.json').write_text(json.dumps(D0), encoding='utf-8')
+D0 = {'area': 'US-ZZ', 'camps': {'pine': dict(old, ver=C.VER)}}
+pathlib.Path(TMP, 'US-ZZ.json').write_text(json.dumps(D0), encoding='utf-8')
 state = {'areas': {}}
-C.run_area('US-TN', state)
-D1 = json.loads(pathlib.Path(TMP, 'US-TN.json').read_text(encoding='utf-8'))
+C.run_area('US-ZZ', state)
+D1 = json.loads(pathlib.Path(TMP, 'US-ZZ.json').read_text(encoding='utf-8'))
 rec = D1['camps']['pine']
 check(calls == ['pine'], 'the stale record was re-read once')
 check(rec['sites']['total'] == 42 and rec['last_read_status'] == 'HTTP 403 -> needs browser', 'run_area keeps the facts after a blocked re-read')
@@ -72,9 +77,9 @@ check(D1['counts'].get('with_facts') == 1, 'the kept record still counts as havi
 # a bot error inside the read
 def boom(area, r, state): raise RuntimeError('boom')
 C.one_camp = boom
-pathlib.Path(TMP, 'US-TN.json').write_text(json.dumps(D0), encoding='utf-8')
-C.run_area('US-TN', {'areas': {}})
-rec = json.loads(pathlib.Path(TMP, 'US-TN.json').read_text(encoding='utf-8'))['camps']['pine']
+pathlib.Path(TMP, 'US-ZZ.json').write_text(json.dumps(D0), encoding='utf-8')
+C.run_area('US-ZZ', {'areas': {}})
+rec = json.loads(pathlib.Path(TMP, 'US-ZZ.json').read_text(encoding='utf-8'))['camps']['pine']
 check(rec['sites']['total'] == 42 and rec['last_read_status'].startswith('bot error'), 'a bot error also keeps the earlier facts')
 
 print('ALL PASS' if ok else 'SOME FAILED')
