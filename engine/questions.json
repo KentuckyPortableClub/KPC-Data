@@ -5679,8 +5679,7 @@
    "pass": 1,
    "url_check": {
     "url": "not checked: blocked (host resting: 3 strikes)",
-    "record_link": "not checked: blocked (host resting: 3 strikes)",
-    "source_url": "not checked: blocked (host resting: 3 strikes)"
+    "record_link": "not checked: blocked (host resting: 3 strikes)"
    }
   },
   {
@@ -19950,6 +19949,255 @@
     ],
     "solved": "NAME SOLVED: agency calls it Milieu naturel délimité sur un plan de l'Île-Brion",
     "why_this_record": "record 'Milieu naturel délimité sur un plan de l'Île-Brion' (Q-1527); pin inside; about 137.1 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-6413",
+   "area": "CA-QC",
+   "park": "Site historique de La Grave Historic Site",
+   "agency_group": "historicplaces.ca",
+   "kind": "outline",
+   "date": "2026-11-02",
+   "status": "candidate",
+   "st": "CA-QC",
+   "url": "https://www.donneesquebec.ca/recherche/dataset/578d182d-4897-4c11-aa7f-ee0cfed222a0/resource/5abd7e57-bfeb-49ba-a76c-93d961ae0633/download/sites_classes_pg.geojson",
+   "service_url": "https://www.donneesquebec.ca/recherche/dataset/578d182d-4897-4c11-aa7f-ee0cfed222a0/resource/5abd7e57-bfeb-49ba-a76c-93d961ae0633/download/sites_classes_pg.geojson",
+   "name_field": "nom_bien",
+   "agency": "Ministère de la Culture et des Communications du Québec (Répertoire du patrimoine culturel du Québec), via Données Québec",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": "feature#52",
+   "record_name": "Site patrimonial de La Grave",
+   "layer": "PACK-CA-QC-land-392",
+   "record_link": "https://www.donneesquebec.ca/recherche/dataset/578d182d-4897-4c11-aa7f-ee0cfed222a0/resource/5abd7e57-bfeb-49ba-a76c-93d961ae0633/download/sites_classes_pg.geojson",
+   "where": "id=feature#52",
+   "pin_m": 0,
+   "acres_approx": 7.7,
+   "grade": "official",
+   "envelope": [
+    -61.8393,
+    47.23562,
+    -61.8339,
+    47.23806
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://www.donneesquebec.ca/recherche/dataset/578d182d-4897-4c11-aa7f-ee0cfed222a0/resource/5abd7e57-bfeb-49ba-a76c-93d961ae0633/download/sites_classes_pg.geojson",
+   "read_date": "2026-11-02",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Site patrimonial de La Grave' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-QC-park-90",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-91",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-land-392",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-land-393",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-land-394",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-wildlife-395",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-439",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-440",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-441",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-442",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-443",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-444",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-445",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-446",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-447",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-park-448",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-PC-np-legal",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-park-438",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "CA-CPCAD",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "Q-1164",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1165",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1166",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1167",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1168",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1169",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1170",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1171",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1371",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1440",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1441",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1442",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1523",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1525",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1527",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1528",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1529",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1530",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1531",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1532",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1533",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1534",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1781",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1819",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1820",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1824",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1825",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1827",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "Q-1828",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "NAME SOLVED: agency calls it Site patrimonial de La Grave",
+    "why_this_record": "record 'Site patrimonial de La Grave' (PACK-CA-QC-land-392); pin inside; about 7.7 acres; Rule G: LIKELY (names overlap); size unknown",
     "confidence": {
      "level": "likely",
      "double_check": "check the kind of place and the size"
@@ -46868,6 +47116,71 @@
    "pass": 1
   },
   {
+   "ref": "CA-4960",
+   "area": "CA-QC",
+   "park": "Parc Michel-Chartrand Regional Park",
+   "agency_group": "longueuil.quebec",
+   "kind": "outline",
+   "date": "2026-11-12",
+   "status": "found",
+   "st": "CA-QC",
+   "url": "https://www.donneesquebec.ca/recherche/dataset/2bf9329d-d6b4-4041-8581-e4ffaa3538e6/resource/481ca9a8-7ab7-4937-9092-66d3f4acb6d3/download/parcsespacesverts.json",
+   "service_url": "https://www.donneesquebec.ca/recherche/dataset/2bf9329d-d6b4-4041-8581-e4ffaa3538e6/resource/481ca9a8-7ab7-4937-9092-66d3f4acb6d3/download/parcsespacesverts.json",
+   "name_field": "NOM",
+   "agency": null,
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-2",
+   "band": "STRONG",
+   "step": "L0",
+   "record": "feature#107",
+   "record_name": "Michel-Chartrand, Parc",
+   "layer": "PACK-CA-QC-park-91",
+   "record_link": "https://www.donneesquebec.ca/recherche/dataset/2bf9329d-d6b4-4041-8581-e4ffaa3538e6/resource/481ca9a8-7ab7-4937-9092-66d3f4acb6d3/download/parcsespacesverts.json",
+   "where": "id=feature#107",
+   "pin_m": 0,
+   "acres_approx": 410.4,
+   "grade": "official",
+   "envelope": [
+    -73.48342,
+    45.54208,
+    -73.4559,
+    45.55751
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://www.donneesquebec.ca/recherche/dataset/2bf9329d-d6b4-4041-8581-e4ffaa3538e6/resource/481ca9a8-7ab7-4937-9092-66d3f4acb6d3/download/parcsespacesverts.json",
+   "read_date": "2026-11-12",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped",
+   "size_band": "unknown",
+   "why": "T-2 STRONG: 'Michel-Chartrand, Parc' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-QC-park-90",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-CA-QC-park-91",
+      "gave": "hit (2 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Michel-Chartrand, Parc' (PACK-CA-QC-park-91); pin inside; about 410.4 acres; Rule G: SURE (names equal once kind words are stripped); size unknown",
+    "confidence": {
+     "level": "sure",
+     "double_check": "name + pin inside; check the size against the agency page"
+    }
+   },
+   "pass": 1
+  },
+  {
    "ref": "US-12426",
    "area": "US-WA",
    "park": "Hog Canyon State Fishing Lake",
@@ -53565,6 +53878,195 @@
     }
    },
    "pass": 1
+  },
+  {
+   "ref": "US-7776",
+   "area": "US-MD",
+   "park": "Oxon Cove Park & Farm National Historical Park",
+   "agency_group": "National Historical Park",
+   "kind": "outline",
+   "date": "2026-11-17",
+   "status": "candidate",
+   "st": "US-MD",
+   "url": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1?f=html",
+   "service_url": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
+   "name_field": "RESNAME",
+   "agency": "National Register of Historic Places Polygons",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 393029,
+   "record_name": "Oxon Cove Park",
+   "layer": "PACK-US-AK-land-41",
+   "record_link": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?where=OBJECTID%3D393029&outFields=%2A&f=html",
+   "where": "OBJECTID=393029",
+   "pin_m": 0,
+   "acres_approx": 317.3,
+   "grade": "official",
+   "envelope": [
+    -77.02174,
+    38.80158,
+    -77.00179,
+    38.81322
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?geometry=-77.0079%2C38.8021&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-17",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Oxon Cove Park' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-MD-land-195",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-MD-preserve-272",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-41",
+      "gave": "hit (1 at pin, 2 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "NAME SOLVED: agency calls it Oxon Cove Park",
+    "why_this_record": "record 'Oxon Cove Park' (PACK-US-AK-land-41); pin inside; about 317.3 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1,
+   "url_check": {
+    "url": "not checked: blocked (host resting: 3 strikes)",
+    "record_link": "not checked: blocked (host resting: 3 strikes)"
+   }
   },
   {
    "ref": "US-4481",
@@ -62135,6 +62637,75 @@
     ],
     "solved": "NAME SOLVED: agency calls it Sainte-Catherine",
     "why_this_record": "record 'Sainte-Catherine' (PACK-CA-NB-land-73); pin inside; about 4395.3 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "CA-0515",
+   "area": "CA-QC",
+   "park": "Parc de la Chute-Montmorency Provincial Park",
+   "agency_group": "sepaq.com",
+   "kind": "outline",
+   "date": "2026-11-04",
+   "status": "candidate",
+   "st": "CA-QC",
+   "url": "https://www.donneesquebec.ca/recherche/dataset/578d182d-4897-4c11-aa7f-ee0cfed222a0/resource/5abd7e57-bfeb-49ba-a76c-93d961ae0633/download/sites_classes_pg.geojson",
+   "service_url": "https://www.donneesquebec.ca/recherche/dataset/578d182d-4897-4c11-aa7f-ee0cfed222a0/resource/5abd7e57-bfeb-49ba-a76c-93d961ae0633/download/sites_classes_pg.geojson",
+   "name_field": "nom_bien",
+   "agency": "Ministère de la Culture et des Communications du Québec (Répertoire du patrimoine culturel du Québec), via Données Québec",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-2",
+   "band": "WEAK",
+   "step": "L0",
+   "record": "feature#51",
+   "record_name": "Site patrimonial de la Chute-Montmorency",
+   "layer": "PACK-CA-QC-land-392",
+   "record_link": "https://www.donneesquebec.ca/recherche/dataset/578d182d-4897-4c11-aa7f-ee0cfed222a0/resource/5abd7e57-bfeb-49ba-a76c-93d961ae0633/download/sites_classes_pg.geojson",
+   "where": "id=feature#51",
+   "pin_m": 0,
+   "acres_approx": 355.9,
+   "grade": "official",
+   "envelope": [
+    -71.17091,
+    46.8817,
+    -71.13701,
+    46.904
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://www.donneesquebec.ca/recherche/dataset/578d182d-4897-4c11-aa7f-ee0cfed222a0/resource/5abd7e57-bfeb-49ba-a76c-93d961ae0633/download/sites_classes_pg.geojson",
+   "read_date": "2026-11-04",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-2 WEAK: 'Site patrimonial de la Chute-Montmorency' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-CA-QC-park-90",
+      "gave": "error (HTTP robots-unreadable)"
+     },
+     {
+      "source": "PACK-CA-QC-park-91",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-CA-QC-land-392",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "NAME SOLVED: agency calls it Site patrimonial de la Chute-Montmorency",
+    "why_this_record": "record 'Site patrimonial de la Chute-Montmorency' (PACK-CA-QC-land-392); pin inside; about 355.9 acres; Rule G: LIKELY (names overlap); size unknown",
     "confidence": {
      "level": "likely",
      "double_check": "check the kind of place and the size"
@@ -78784,8 +79355,7 @@
    "pass": 1,
    "url_check": {
     "url": "not checked: blocked (host resting: 3 strikes)",
-    "record_link": "not checked: blocked (host resting: 3 strikes)",
-    "source_url": "not checked: blocked (host resting: 3 strikes)"
+    "record_link": "not checked: blocked (host resting: 3 strikes)"
    }
   },
   {
@@ -89036,8 +89606,7 @@
    "pass": 1,
    "url_check": {
     "url": "not checked: blocked (host resting: 3 strikes)",
-    "record_link": "not checked: blocked (host resting: 3 strikes)",
-    "source_url": "not checked: blocked (host resting: 3 strikes)"
+    "record_link": "not checked: blocked (host resting: 3 strikes)"
    }
   },
   {
@@ -93112,10 +93681,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-8668",
@@ -93323,11 +93889,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-9837",
@@ -93396,11 +93958,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-9872",
@@ -93494,11 +94052,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-2912",
@@ -93694,9 +94248,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (robots)",
+    "record_link": "not checked: blocked (robots)",
+    "source_url": "not checked: blocked (robots)"
    }
   },
   {
@@ -93910,11 +94464,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-11027",
@@ -94126,11 +94676,7 @@
      "double_check": "name or pin only: read the agency map"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-3679",
@@ -94477,12 +95023,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-1083",
@@ -94940,11 +95481,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-9886",
@@ -95322,11 +95859,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-12150",
@@ -95596,11 +96129,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-13324",
@@ -96071,8 +96600,8 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host resting: 3 strikes)",
+    "record_link": "not checked: blocked (host resting: 3 strikes)"
    }
   },
   {
@@ -96572,12 +97101,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-1596",
@@ -96868,12 +97392,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-1020",
@@ -97090,12 +97609,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-5748",
@@ -97174,9 +97688,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host resting: 3 strikes)",
+    "record_link": "not checked: blocked (host resting: 3 strikes)",
+    "source_url": "not checked: blocked (host resting: 3 strikes)"
    }
   },
   {
@@ -97256,9 +97770,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host resting: 3 strikes)",
+    "record_link": "not checked: blocked (host resting: 3 strikes)",
+    "source_url": "not checked: blocked (host resting: 3 strikes)"
    }
   },
   {
@@ -97462,9 +97976,9 @@
    },
    "pass": 1,
    "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "url": "not checked: blocked (host resting: 3 strikes)",
+    "record_link": "not checked: blocked (host resting: 3 strikes)",
+    "source_url": "not checked: blocked (host resting: 3 strikes)"
    }
   },
   {
@@ -97710,11 +98224,7 @@
      "double_check": "name or pin only: read the agency map"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-11839",
@@ -97936,11 +98446,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-7238",
@@ -98005,11 +98511,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-7239",
@@ -98074,11 +98576,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-11793",
@@ -100843,11 +101341,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-1252",
@@ -100908,11 +101402,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-1254",
@@ -100973,11 +101463,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-1256",
@@ -101234,11 +101720,7 @@
      "double_check": "name or pin only: read the agency map"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-1257",
@@ -101299,11 +101781,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-1258",
@@ -101548,11 +102026,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-1259",
@@ -101797,11 +102271,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-1260",
@@ -101862,11 +102332,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-1261",
@@ -102111,11 +102577,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-1262",
@@ -102176,11 +102638,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-1263",
@@ -102425,11 +102883,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-1265",
@@ -102674,11 +103128,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-1266",
@@ -102739,11 +103189,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-1267",
@@ -102804,11 +103250,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-1268",
@@ -103053,11 +103495,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-1269",
@@ -103314,11 +103752,7 @@
      "double_check": "name or pin only: read the agency map"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-1270",
@@ -103563,11 +103997,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-1271",
@@ -103812,11 +104242,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-1272",
@@ -104061,11 +104487,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-1273",
@@ -104310,11 +104732,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-1274",
@@ -130169,12 +130587,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-7179",
@@ -130516,12 +130929,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-1020",
@@ -130738,12 +131146,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-13269",
@@ -133158,11 +133561,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-9837",
@@ -133233,8 +133632,7 @@
    },
    "pass": 1,
    "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "record_link": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -133331,8 +133729,7 @@
    },
    "pass": 1,
    "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "record_link": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -133956,11 +134353,7 @@
      "double_check": "name or pin only: read the agency map"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-12128",
@@ -134175,8 +134568,7 @@
    },
    "pass": 1,
    "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "record_link": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -137778,12 +138170,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-0855",
@@ -137998,11 +138385,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-7239",
@@ -138067,11 +138450,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-1879",
@@ -140038,6 +140417,71 @@
    "pass": 1
   },
   {
+   "ref": "US-13561",
+   "area": "US-MN",
+   "park": "Vermillion Highlands Wildlife Management Area",
+   "agency_group": "Wildlife Management Area",
+   "kind": "outline",
+   "date": "2026-11-17",
+   "status": "candidate",
+   "st": "US-MN",
+   "url": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0?f=html",
+   "service_url": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0",
+   "name_field": "UNIT_NAME",
+   "agency": "DNR Management Units",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-2",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 6582,
+   "record_name": "Vermillion Highlands Research Recreation and WMA",
+   "layer": "PACK-US-MN-forest-27",
+   "record_link": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D6582&outFields=%2A&f=html",
+   "where": "OBJECTID=6582",
+   "pin_m": 0,
+   "acres_approx": 2841.3,
+   "grade": "official",
+   "envelope": [
+    -93.08558,
+    44.67381,
+    -93.03477,
+    44.71008
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?geometry=-93.0604%2C44.6826&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-17",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-2 WEAK: 'Vermillion Highlands Research Recreation and WMA' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-MN-trail-15",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-MN-forest-27",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Vermillion Highlands Research Recreation and WMA' (PACK-US-MN-forest-27); pin inside; about 2841.3 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1
+  },
+  {
    "ref": "US-5981",
    "area": "US-UT",
    "park": "Simpson Springs Pony Express Station National Historic Site",
@@ -141764,8 +142208,7 @@
    "pass": 1,
    "url_check": {
     "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "record_link": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -143823,12 +144266,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4794",
@@ -145665,12 +146103,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-13241",
@@ -145999,12 +146432,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-6035",
@@ -146537,12 +146965,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-12830",
@@ -153580,10 +154003,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-8668",
@@ -153791,11 +154211,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-9837",
@@ -153864,11 +154280,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-9872",
@@ -153962,11 +154374,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-12064",
@@ -154625,8 +155033,7 @@
    },
    "pass": 1,
    "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "record_link": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -163191,11 +163598,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-7238",
@@ -163260,11 +163663,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-7239",
@@ -163329,11 +163728,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-12147",
@@ -163603,11 +163998,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-12150",
@@ -163877,11 +164268,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-5748",
@@ -164496,11 +164883,7 @@
      "double_check": "name or pin only: read the agency map"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-6326",
@@ -179252,11 +179635,7 @@
      "double_check": "name or pin only: read the agency map"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-1879",
@@ -187081,11 +187460,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-9837",
@@ -187154,11 +187529,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-9872",
@@ -187252,11 +187623,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-12064",
@@ -187915,8 +188282,7 @@
    },
    "pass": 1,
    "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "record_link": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -191512,12 +191878,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-5896",
@@ -191812,12 +192173,7 @@
      "double_check": "other names at the pin: trois rivieres post office; check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4842",
@@ -192710,6 +193066,166 @@
     ],
     "solved": "NAME SOLVED: agency calls it Warner Ridge / Fort Pearce",
     "why_this_record": "same land also in US-BLM-sma 'Bureau of Land Management', PACK-US-UT-park-7 'Sand Mountain', PACK-US-UT-park-8 'Sand Mountain': merged, counted once; record 'Warner Ridge / Fort Pearce' (PACK-US-AK-land-215); pin inside; about 4288.0 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-6185",
+   "area": "US-WY",
+   "park": "South Pass Historic Landmark National Historic Site",
+   "agency_group": "National Historic Site",
+   "kind": "outline",
+   "date": "2026-11-17",
+   "status": "candidate",
+   "st": "US-WY",
+   "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0?f=html",
+   "service_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0",
+   "name_field": "ACEC_NAME",
+   "agency": "BLM Areas of Critical Environmental Concern (national, 1,120) (land, state GIS table)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-2",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 1592,
+   "record_name": "South Pass Historic Landscape ACEC",
+   "layer": "PACK-US-AK-land-215",
+   "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?where=OBJECTID%3D1592&outFields=%2A&f=html",
+   "where": "OBJECTID=1592",
+   "pin_m": 0,
+   "acres_approx": 53775.9,
+   "grade": "official",
+   "envelope": [
+    -109.09057,
+    42.24407,
+    -108.62016,
+    42.43759
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Continental Peak",
+     "layer": "PACK-US-land-188",
+     "tier": "T-5",
+     "pin_m": null
+    },
+    {
+     "record_name": "Rock Springs Field Office ERMA",
+     "layer": "PACK-US-land-208",
+     "tier": "T-5",
+     "pin_m": null
+    },
+    {
+     "record_name": "Rock Springs Field Office ERMA",
+     "layer": "PACK-US-AK-land-214",
+     "tier": "T-5",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_ACEC/MapServer/0/query?geometry=-108.886%2C42.3437&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-17",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-2 WEAK: 'South Pass Historic Landscape ACEC' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-WY-trail-35",
+      "gave": "no hit (0 at pin, 25 by name)"
+     },
+     {
+      "source": "PACK-US-WY-trail-61",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-WY-land-62",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-WY-park-377",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-WY-wildlife-378",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-WY-wildlife-379",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "hit (1 at pin, 8 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 4 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 14 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "hit (2 at pin, 25 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-214",
+      "gave": "hit (2 at pin, 25 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-215",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "same land also in PACK-US-land-208 'Rock Springs Field Office ERMA', PACK-US-AK-land-214 'Rock Springs Field Office ERMA': merged, counted once; record 'South Pass Historic Landscape ACEC' (PACK-US-AK-land-215); pin inside; about 53775.9 acres; Rule G: LIKELY (names overlap); size unknown",
     "confidence": {
      "level": "likely",
      "double_check": "check the kind of place and the size"
@@ -202809,12 +203325,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4902",
@@ -204129,12 +204640,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-2335",
@@ -209298,11 +209804,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-12708",
@@ -209606,11 +210108,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-7239",
@@ -209675,11 +210173,7 @@
      "double_check": "name + pin inside; check the size against the agency page"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-10212",
@@ -215057,12 +215551,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-5896",
@@ -215357,12 +215846,7 @@
      "double_check": "other names at the pin: trois rivieres post office; check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4842",
@@ -215873,12 +216357,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "url": "not checked: not read (time budget used up; the next run reads it)",
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "CA-4794",
@@ -216920,11 +217399,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-9837",
@@ -216995,8 +217470,7 @@
    },
    "pass": 1,
    "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "record_link": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -217093,8 +217567,7 @@
    },
    "pass": 1,
    "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
+    "record_link": "not checked: not read (time budget used up; the next run reads it)"
    }
   },
   {
@@ -217809,11 +218282,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   },
   {
    "ref": "US-12150",
@@ -218083,11 +218552,7 @@
      "double_check": "check the kind of place and the size"
     }
    },
-   "pass": 1,
-   "url_check": {
-    "record_link": "not checked: not read (time budget used up; the next run reads it)",
-    "source_url": "not checked: not read (time budget used up; the next run reads it)"
-   }
+   "pass": 1
   }
  ]
 }

@@ -1555,7 +1555,7 @@
  "US-0843": {
   "tag": "blocked (27 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record",
   "step_reached": "L5",
-  "date": "2026-11-12"
+  "date": "2026-11-17"
  },
  "US-7975": {
   "tag": "UNLIKELY only (evidence, never a question): line park vs polygon record (or the other way round)",
@@ -1585,7 +1585,7 @@
  "US-0831": {
   "tag": "blocked (23 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record",
   "step_reached": "L5",
-  "date": "2026-11-12"
+  "date": "2026-11-17"
  },
  "US-4009": {
   "tag": "blocked (23 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record",
@@ -1615,7 +1615,7 @@
  "US-3373": {
   "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
   "step_reached": "L5",
-  "date": "2026-11-02"
+  "date": "2026-11-17"
  },
  "US-0885": {
   "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
@@ -1633,9 +1633,9 @@
   "date": "2026-11-02"
  },
  "US-8061": {
-  "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
+  "tag": "blocked (27 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record",
   "step_reached": "L5",
-  "date": "2026-11-02"
+  "date": "2026-11-17"
  },
  "US-8081": {
   "tag": "UNLIKELY only (evidence, never a question): other kind of place (container vs nra)",
@@ -1658,9 +1658,9 @@
   "date": "2026-11-03"
  },
  "US-8085": {
-  "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
+  "tag": "blocked (27 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record",
   "step_reached": "L5",
-  "date": "2026-11-03"
+  "date": "2026-11-17"
  },
  "US-8086": {
   "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
@@ -2674,9 +2674,9 @@
   "date": "2026-11-05"
  },
  "US-13077": {
-  "tag": "no-layer: no official record at the pin or by name",
+  "tag": "blocked (24 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record",
   "step_reached": "L5",
-  "date": "2026-11-05"
+  "date": "2026-11-17"
  },
  "CA-5464": {
   "tag": "no-layer: no official record at the pin or by name",
@@ -5677,14 +5677,14 @@
   "date": "2026-11-04"
  },
  "US-10951": {
-  "tag": "blocked (1 source could not be read, e.g. blocked (host resting: 3 strikes)); the sources that answered had no record",
+  "tag": "blocked (24 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record",
   "step_reached": "L5",
-  "date": "2026-11-04"
+  "date": "2026-11-17"
  },
  "US-11820": {
-  "tag": "blocked (1 source could not be read, e.g. blocked (host resting: 3 strikes)); the sources that answered had no record",
+  "tag": "UNLIKELY only (evidence, never a question): name: one word(s) in common",
   "step_reached": "L5",
-  "date": "2026-11-04"
+  "date": "2026-11-17"
  },
  "US-11842": {
   "tag": "blocked (1 source could not be read, e.g. blocked (host resting: 3 strikes)); the sources that answered had no record",
@@ -6150,6 +6150,26 @@
   "tag": "no-layer: no official record at the pin or by name",
   "step_reached": "L5",
   "date": "2026-11-03"
+ },
+ "US-6188": {
+  "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
+  "step_reached": "L5",
+  "date": "2026-11-17"
+ },
+ "US-6219": {
+  "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
+  "step_reached": "L5",
+  "date": "2026-11-03"
+ },
+ "US-3723": {
+  "tag": "blocked (25 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-15"
+ },
+ "US-3724": {
+  "tag": "blocked (25 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-15"
  },
  "US-11731": {
   "tag": "UNLIKELY only (evidence, never a question): name: one word(s) in common",
@@ -7871,11 +7891,6 @@
   "step_reached": "L5",
   "date": "2026-11-03"
  },
- "US-6219": {
-  "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
-  "step_reached": "L5",
-  "date": "2026-11-03"
- },
  "US-6232": {
   "tag": "no-layer: no official record at the pin or by name",
   "step_reached": "L5",
@@ -7932,9 +7947,9 @@
   "date": "2026-11-04"
  },
  "US-11769": {
-  "tag": "no-layer: no official record at the pin or by name",
+  "tag": "blocked (24 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record",
   "step_reached": "L5",
-  "date": "2026-11-04"
+  "date": "2026-11-17"
  },
  "US-11778": {
   "tag": "no-layer: no official record at the pin or by name",
@@ -7944,7 +7959,7 @@
  "US-11837": {
   "tag": "UNLIKELY only (evidence, never a question): container: one record under several parks (or a management district)",
   "step_reached": "L5",
-  "date": "2026-11-04"
+  "date": "2026-11-17"
  },
  "US-11864": {
   "tag": "no-layer: no official record at the pin or by name",
@@ -11562,7 +11577,7 @@
  "US-9356": {
   "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
   "step_reached": "L5",
-  "date": "2026-11-07"
+  "date": "2026-11-17"
  },
  "CA-2643": {
   "tag": "no-layer: no official record at the pin or by name",
@@ -11643,6 +11658,11 @@
   "tag": "UNLIKELY only (evidence, never a question): name: one word(s) in common",
   "step_reached": "L5",
   "date": "2026-11-09"
+ },
+ "US-3493": {
+  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
+  "step_reached": "L5",
+  "date": "2026-11-16"
  },
  "CA-1194": {
   "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
@@ -12746,11 +12766,6 @@
  },
  "US-9931": {
   "tag": "blocked (37 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record",
-  "step_reached": "L5",
-  "date": "2026-11-16"
- },
- "US-3493": {
-  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
   "step_reached": "L5",
   "date": "2026-11-16"
  },
@@ -14704,6 +14719,11 @@
   "step_reached": "L5",
   "date": "2026-11-17"
  },
+ "US-7542": {
+  "tag": "blocked (24 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-12"
+ },
  "CA-1312": {
   "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
   "step_reached": "L5",
@@ -15066,16 +15086,6 @@
   "date": "2026-11-15"
  },
  "US-2200": {
-  "tag": "blocked (25 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record",
-  "step_reached": "L5",
-  "date": "2026-11-15"
- },
- "US-3723": {
-  "tag": "blocked (25 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record",
-  "step_reached": "L5",
-  "date": "2026-11-15"
- },
- "US-3724": {
   "tag": "blocked (25 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record",
   "step_reached": "L5",
   "date": "2026-11-15"
@@ -16701,6 +16711,21 @@
   "step_reached": "L5",
   "date": "2026-11-17"
  },
+ "US-1660": {
+  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
+  "step_reached": "L5",
+  "date": "2026-11-12"
+ },
+ "US-1666": {
+  "tag": "blocked (24 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-12"
+ },
+ "US-1670": {
+  "tag": "blocked (24 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record",
+  "step_reached": "L5",
+  "date": "2026-11-12"
+ },
  "US-10508": {
   "tag": "UNLIKELY only (evidence, never a question): line park vs polygon record (or the other way round)",
   "step_reached": "L5",
@@ -17261,21 +17286,6 @@
   "step_reached": "L5",
   "date": "2026-11-12"
  },
- "US-1660": {
-  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
-  "step_reached": "L5",
-  "date": "2026-11-12"
- },
- "US-1666": {
-  "tag": "blocked (24 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record",
-  "step_reached": "L5",
-  "date": "2026-11-12"
- },
- "US-1670": {
-  "tag": "blocked (24 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record",
-  "step_reached": "L5",
-  "date": "2026-11-12"
- },
  "US-6861": {
   "tag": "blocked (24 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record",
   "step_reached": "L5",
@@ -17287,11 +17297,6 @@
   "date": "2026-11-17"
  },
  "US-7529": {
-  "tag": "blocked (24 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record",
-  "step_reached": "L5",
-  "date": "2026-11-12"
- },
- "US-7542": {
   "tag": "blocked (24 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record",
   "step_reached": "L5",
   "date": "2026-11-12"
@@ -17833,6 +17838,21 @@
  },
  "US-13660": {
   "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
+  "step_reached": "L5",
+  "date": "2026-11-17"
+ },
+ "US-12237": {
+  "tag": "UNLIKELY only (evidence, never a question): name: none word(s) in common",
+  "step_reached": "L5",
+  "date": "2026-11-17"
+ },
+ "US-13661": {
+  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
+  "step_reached": "L5",
+  "date": "2026-11-17"
+ },
+ "US-13662": {
+  "tag": "UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check)",
   "step_reached": "L5",
   "date": "2026-11-17"
  },
