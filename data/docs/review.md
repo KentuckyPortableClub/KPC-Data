@@ -5,9 +5,9 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 
 | area | parks | map ok | found by the bot | names the park | date on the map | posted only | date unknown | no map | rules ok | needs browser | handover notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| US-KY | 193 | 150 | 6 | 144 | 41 | 100 | 9 | 43 | 21 | 0 | 0 |
+| US-KY | 193 | 150 | 6 | 144 | 41 | 100 | 9 | 43 | 40 | 0 | 0 |
 | US-TN | 277 | 27 | 14 | 26 | 1 | 18 | 8 | 250 | 26 | 0 | 0 |
-| US-NC | 253 | 154 | 113 | 149 | 110 | 35 | 9 | 99 | 55 | 0 | 0 |
+| US-NC | 253 | 112 | 71 | 108 | 76 | 27 | 9 | 141 | 55 | 1 | 0 |
 | US-VA | 184 | 117 | 76 | 112 | 26 | 75 | 16 | 67 | 50 | 0 | 0 |
 | US-WV | 172 | 138 | 58 | 123 | 7 | 123 | 8 | 34 | 35 | 0 | 0 |
 | US-GA | 238 | 143 | 97 | 127 | 16 | 85 | 42 | 95 | 42 | 59 | 0 |
@@ -26,7 +26,7 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-PA | 494 | 478 | 446 | 476 | 4 | 327 | 147 | 16 | 29 | 0 | 0 |
 | US-NY | 851 | 690 | 628 | 616 | 203 | 473 | 14 | 161 | 68 | 0 | 0 |
 | US-NJ | 134 | 94 | 28 | 91 | 3 | 81 | 10 | 40 | 15 | 50 | 0 |
-| US-CT | 157 | 59 | 56 | 48 | 23 | 25 | 11 | 98 | 116 | 89 | 0 |
+| US-CT | 157 | 40 | 1 | 40 | 13 | 26 | 1 | 117 | 60 | 0 | 0 |
 | US-RI | 61 | 20 | 15 | 20 | 2 | 13 | 5 | 41 | 16 | 0 | 0 |
 | US-MA | 421 | 117 | 101 | 29 | 28 | 80 | 9 | 304 | 47 | 1 | 0 |
 | US-VT | 109 | 84 | 81 | 21 | 24 | 55 | 5 | 25 | 6 | 0 | 0 |
@@ -108,7 +108,7 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-0538 | Reelfoot National Wildlife Refuge | https://www.fws.gov/refuge/reelfoot/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/policies ✓ |  |
 | US-0608 | Ohio River Islands National Wildlife Ref | https://www.fws.gov/refuge/ohio-river-islands/visit-us | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/ohio-river-islands/visit-us/rules-policies ✓ |  |
 | US-10099 | Wolf Creek National Fish Hatchery | https://www.fws.gov/fish-hatchery/wolf-creek/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/policies ✓ |  |
-| US-10098 | Green River National Wildlife Refuge | https://www.fws.gov/sites/default/files/documents/2024-12/2024-hunt-map-508.pdf | pdf ✓name · combined map: covers 2 units · the agency site | 2024 (printed on the map) · posted 2024-12 | https://www.fws.gov/refuge/green-river/visit-us/rules-policies ✗ |  |
+| US-10098 | Green River National Wildlife Refuge | https://www.fws.gov/sites/default/files/documents/2024-12/2024-hunt-map-508.pdf | pdf ✓name · combined map: covers 2 units · the agency site | 2024 (printed on the map) · posted 2024-12 | https://www.fws.gov/locations/green-river-national-wildlife-refuge/rul ✓ |  |
 | US-1260 | John James Audubon State Park | https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map504750 | pdf ✓name · combined map: covers 3 units · same government (kentuckytourism.com) | date unknown (date unknown, checked 2026-10-29) · posted May 20, 2026 | https://parks.ky.gov/park-rules ✗ |  |
 | US-1286 | Natural Bridge State Park | https://www.kentuckytourism.com/media/docs/default-source/listing-documents/trail-park-map | pdf ✓name · combined map: covers 4 units · same government (kentuckytourism.com) | 2022 (file stamp 2022 (older than the posting 2026 ) · posted May 20, 2026 | https://parks.ky.gov/park-rules ✗ |  |
 | US-1283 | Kentucky Dam Village State Park | https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-mapa1d96c | pdf ✓name · combined map: covers 4 units · same government (kentuckytourism.com) | 2022 (file stamp 2022 (older than the posting 2026 ) · posted Sep 04, 2026 | https://parks.ky.gov/park-rules ✗ |  |
@@ -123,7 +123,7 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-1258 | Grayson Lake State Park | https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map0b6523 | pdf ✓name · combined map: covers 2 units · same government (kentuckytourism.com) | 2022 (file stamp 2022 (older than the posting 2026 ) · posted May 20, 2026 | https://parks.ky.gov/park-rules ✗ |  |
 | US-12083 | University of the Cumberlands Wildlife M | https://fw.ky.gov/More/Documents/University%20of%20the%20Cumberlands%20WMAAll.pdf | pdf ✓name · same government (fw.ky.gov) | date unknown (date unknown, checked 2026-10-29) · posted Dec 13, 2024 |  ✗ |  |
 | US-10128 | Ferguson Creek Wildlife Management Area | https://fw.ky.gov/More/Documents/FergusonCreekWMA_All.pdf | pdf ✓name · linked from the agency page (fw.ky.gov) | date unknown (date unknown, checked 2026-10-29) · posted Mar 28, 2023 |  ✗ |  |
-| US-3818 | Jones-Keeney Wildlife Management Area | https://fw.ky.gov/More/Documents/Jones-KeeneyWMA_All.pdf | pdf ✓name · combined map: covers 2 units · the agency site | date unknown (date unknown, checked 2026-10-29) · posted Jan 31, 2017 | https://fw.ky.gov/Hunt/Pages/Public-Hunting-Areas.aspx ✗ |  |
+| US-3818 | Jones-Keeney Wildlife Management Area | https://fw.ky.gov/More/Documents/Jones-KeeneyWMA_All.pdf | pdf ✓name · combined map: covers 2 units · the agency site | date unknown (date unknown, checked 2026-11-17) · posted Jan 31, 2017 | https://fw.ky.gov/Hunt/Pages/Public-Land-Hunting.aspx ✓ |  |
 | US-3793 | Ballard Wildlife Management Area | https://fw.ky.gov/More/Documents/BallardWMA_All.pdf | pdf ✓name · linked from the agency page (fw.ky.gov) | date unknown (date unknown, checked 2026-10-29) · posted Sep 21, 2022 |  ✗ |  |
 | US-10140 | Kentucky Lake Wildlife Management Area | https://fw.ky.gov/More/Documents/KentuckyLakeWMA_ALL.pdf | pdf ✓name · linked from the agency page (fw.ky.gov) | date unknown (date unknown, checked 2026-10-29) · posted Nov 22, 2016 |  ✗ |  |
 | US-10148 | Mud Camp Creek Wildlife Management Area | https://fw.ky.gov/More/Documents/MudCreekCampWMA_All.pdf | pdf ✓name · linked from the agency page (fw.ky.gov) | date unknown (date unknown, checked 2026-10-29) · posted Nov 18, 2016 |  ✗ |  |
@@ -132,7 +132,7 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-9756 | Decker Wildlife Management Area | https://fw.ky.gov/More/Documents/DeckerWMAmap_ALL.pdf | pdf ✓name · linked from the agency page (fw.ky.gov) | date unknown (date unknown, checked 2026-10-29) · posted Oct 04, 2023 |  ✗ |  |
 | US-10158 | Pioneer Weapons Wildlife Management Area | https://fw.ky.gov/More/Documents/PioneerWeaponsWMA_ALL.pdf | pdf ✓name · linked from the agency page (fw.ky.gov) | date unknown (date unknown, checked 2026-10-29) · posted Dec 03, 2018 |  ✗ |  |
 | US-10167 | Simon Kenton Wildlife Management Area | https://fw.ky.gov/More/Documents/SimonKentonWMA_all.pdf | pdf ✓name · linked from the agency page (fw.ky.gov) | date unknown (date unknown, checked 2026-10-29) · posted Apr 12, 2019 |  ✗ |  |
-| US-3831 | South Shore Wildlife Management Area | https://fw.ky.gov/More/Documents/SouthShoreWMA_ALL.pdf | pdf ✓name · combined map: covers 2 units · the agency site | 2016: check it is still current (printed on the map) · posted Nov 18, 2016 | https://fw.ky.gov/Hunt/Pages/Public-Hunting-Areas.aspx ✗ |  |
+| US-3831 | South Shore Wildlife Management Area | https://fw.ky.gov/More/Documents/SouthShoreWMA_ALL.pdf | pdf ✓name · combined map: covers 2 units · the agency site | 2016: check it is still current (printed on the map) · posted Nov 18, 2016 | https://fw.ky.gov/Hunt/Pages/Public-Land-Hunting.aspx ✓ |  |
 | US-10173 | Kentucky Horse Park | https://kyhorsepark.com/park-information/park-maps/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — |  ✗ | operated by the Commonwealth of Kentucky |
 | US-3792 | Land Between the Lakes National Recreati | https://www.landbetweenthelakes.us/help-center/lbl-maps/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — |  ✗ |  |
 | US-1264 | Levi Jackson Wilderness Road State Park | https://levijacksonpark.com/maps-policies/ | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://levijacksonpark.com/maps-policies/ ✓ |  |
@@ -146,8 +146,8 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 | US-0724 | Abraham Lincoln Birthplace National Hist | https://www.nps.gov/abli/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted December 17, 2022 | https://www.nps.gov/abli/learn/management/lawsandpolicies.htm ✓ |  |
 | US-0050 | Mammoth Cave National Park | https://www.nps.gov/maca/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted February 4, 2022 | https://www.nps.gov/maca/learn/management/lawsandpolicies.htm ✓ |  |
 | US-7708 | Mill Springs Battlefield National Monume | https://www.nps.gov/misp/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted April 12, 2025 | https://www.nps.gov/misp/learn/management/lawsandpolicies.htm ✓ |  |
-| US-4526 | George Washington & Jefferson National F | https://www.fs.usda.gov/r08/gwj/maps-guides/motor-vehicle-use-map | page · forest map only · the agency site | — (date unknown, checked 2026-10-29) · posted October 22, 2026 | https://www.fs.usda.gov/r08/gwj ✓ |  |
-| US-10104 | Red River National Wild and Scenic River | https://www.fs.usda.gov/r08/danielboone/maps-guides | page · forest map only · the agency site | — (date unknown, checked 2026-10-29) · posted October 5, 2026 | https://www.fs.usda.gov/r08/danielboone ✓ |  |
+| US-4526 | George Washington & Jefferson National F | https://www.fs.usda.gov/r08/gwj/maps-guides/motor-vehicle-use-map | page · forest map only; forest map only · the agency site | — (date unknown, checked 2026-10-29) · posted October 22, 2026 | https://www.fs.usda.gov/r08/gwj ✓ |  |
+| US-10104 | Red River National Wild and Scenic River | https://www.fs.usda.gov/r08/danielboone/maps-guides | page · forest map only; forest map only · the agency site | — (date unknown, checked 2026-10-29) · posted October 5, 2026 | https://www.fs.usda.gov/r08/danielboone ✓ |  |
 | US-7954 | Blackacre State Nature Preserve | https://visitblackacre.org/nature-preserve/ | page ✓name · linked from the agency page (visitblacka | date unknown (date unknown, checked 2026-10-29) · posted — | https://visitblackacre.org/rules-for-kentucky-nature-preserves/ ✓ |  |
 
 ### US-KY no map yet (43): the reason
@@ -192,12 +192,12 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - US-7961 Jesse Stuart State Nature Preserve: no map link on file and none on the park page
 - US-7962 Little South Fork State Natural Area: no map link on file and none on the park page
 
-### Kentucky FINDER check (seed hidden, 25 parks): the bot found the SAME map as the hand-checked answer for 13, another official map for 3, none for 9
+### Kentucky FINDER check (seed hidden, 25 parks): the bot found the SAME map as the hand-checked answer for 13, another official map for 1, none for 11
 - US-0019 Cumberland Gap National Historical Park: answer https://www.nps.gov/cuga/planyourvisit/upload/CUGAmap1-3.pdf | bot https://www.nps.gov/cuga/planyourvisit/upload/CUGAmap1-3.pdf → same
 - US-0050 Mammoth Cave National Park: answer https://www.nps.gov/maca/planyourvisit/maps.htm | bot https://www.nps.gov/maca/planyourvisit/maps.htm → same
 - US-0295 Clarks River National Wildlife Refuge: answer https://www.fws.gov/sites/default/files/documents/2024-08/public-map-j | bot https://www.fws.gov/refuge/clarks-river/map → other_map
-- US-0538 Reelfoot National Wildlife Refuge: answer https://legacy.fws.gov/sites/default/files/documents/RF%20Gen%20Brochu | bot https://www.fws.gov/refuge/reelfoot/map → other_map
-- US-0608 Ohio River Islands National Wildlife Ref: answer https://www.fws.gov/refuge/ohio-river-islands/visit-us | bot https://www.fws.gov/refuge/ohio-river-islands/map → other_map
+- US-0538 Reelfoot National Wildlife Refuge: answer https://legacy.fws.gov/sites/default/files/documents/RF%20Gen%20Brochu | bot — → none
+- US-0608 Ohio River Islands National Wildlife Ref: answer https://www.fws.gov/refuge/ohio-river-islands/visit-us | bot — → none
 - US-0686 Big South Fork National Recreation Area: answer https://www.nps.gov/biso/planyourvisit/maps.htm | bot https://www.nps.gov/biso/planyourvisit/maps.htm → same
 - US-0703 Fort Donelson National Battlefield: answer https://www.nps.gov/fodo/planyourvisit/maps.htm | bot https://www.nps.gov/fodo/planyourvisit/maps.htm → same
 - US-0724 Abraham Lincoln Birthplace National Hist: answer https://www.nps.gov/abli/planyourvisit/maps.htm | bot https://www.nps.gov/abli/planyourvisit/maps.htm → same
@@ -293,74 +293,74 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 ## US-NC sample (random 12 per agency group, seed 28)
 | ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
 |---|---|---|---|---|---|---|
-| US-10389 | Hiwassee Dam Recreation Park | https://tva-azr-eastus-cdn-ep-tvawcm-prd.azureedge.net/cdn-tvawcma/docs/default-source/def | pdf · linked from the agency page (tva-azr-eas | — (date unknown, checked 2026-11-03) · posted Apr 06, 2020 |  ✗ |  |
 | US-10399 | Apalachia Reservoir Recreation Park | https://tva-azr-eastus-cdn-ep-tvawcm-prd.azureedge.net/cdn-tvawcma/docs/default-source/def | pdf · linked from the agency page (tva-azr-eas | — (date unknown, checked 2026-10-29) · posted Apr 06, 2020 |  ✗ |  |
 | US-2724 | Chimney Rock State Park | https://www.chimneyrockpark.com/wp-content/uploads/2022/08/Chimney-Rock-Trail-Map-2022.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted 2022-08 | https://www.chimneyrockpark.com/rules-of-the-trail/ ✓ |  |
-| US-0413 | Mackay Island National Wildlife Refuge | https://www.fws.gov/sites/default/files/documents/mackay-island-nwr-brochure.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted Nov 18, 2021 | https://www.fws.gov/refuge/mackay-island/visit-us/rules-policies ✓ |  |
-| US-0412 | Currituck National Wildlife Refuge | https://www.fws.gov/refuge/currituck/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/currituck/visit-us/rules-policies ✓ |  |
-| US-0417 | Pocosin Lakes National Wildlife Refuge | https://www.fws.gov/sites/default/files/documents/2026-02/pocosin-lakes-national-wildlife- | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted 2026-02 | https://www.fws.gov/refuge/pocosin-lakes/visit-us/rules-policies ✓ |  |
-| US-0416 | Pee Dee National Wildlife Refuge | https://www.fws.gov/refuge/pee-dee/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/locations/pee-dee-national-wildlife-refuge/rules-a ✓ |  |
-| US-9758 | Chattooga National Wild and Scenic River | https://www.fws.gov/rivers/map | page ✓name · linked from the agency page (fws.gov) | date unknown (date unknown, checked 2026-10-29) · posted — |  ✗ |  |
-| US-0411 | Cedar Island National Wildlife Refuge | https://www.fws.gov/refuge/cedar-island/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/cedar-island/visit-us/rules-policies ✓ |  |
 | US-0418 | Roanoke River National Wildlife Refuge | https://www.fws.gov/sites/default/files/documents/general-brochure-roanoke-river-national- | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted Jul 21, 2023 | https://www.fws.gov/refuge/roanoke-river/visit-us/rules-policies ✓ |  |
 | US-0419 | Swanquarter National Wildlife Refuge | https://www.fws.gov/refuge/swanquarter/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/swanquarter/visit-us/rules-policies ✓ |  |
-| US-0415 | Pea Island National Wildlife Refuge | https://www.fws.gov/sites/default/files/documents/trail-map-pea-island-national-wildlife-r | pdf ✓name · the agency site | 2015: check it is still current (file stamp 2015 (older than the posting 2021 ) · posted Nov 30, 2021 | https://www.fws.gov/refuge/pea-island/visit-us/rules-policies ✓ |  |
-| US-0410 | Alligator River National Wildlife Refuge | https://www.fws.gov/sites/default/files/documents/2024-09/tearsheet-map-2024-alligator-riv | pdf ✓name · combined map: covers 2 units · the agency site | 2024 (a month + year printed on the map) · posted 2024-09 | https://www.fws.gov/refuge/alligator-river/visit-us/rules-policies ✓ |  |
+| US-0412 | Currituck National Wildlife Refuge | https://www.fws.gov/refuge/currituck/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/currituck/visit-us/rules-policies ✓ |  |
+| US-0413 | Mackay Island National Wildlife Refuge | https://www.fws.gov/sites/default/files/documents/mackay-island-nwr-brochure.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted Nov 18, 2021 | https://www.fws.gov/refuge/mackay-island/visit-us/rules-policies ✓ |  |
 | US-0566 | Great Dismal Swamp National Wildlife Ref | https://www.fws.gov/refuge/great-dismal-swamp/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/great-dismal-swamp/visit-us/rules-policies ✓ |  |
+| US-0415 | Pea Island National Wildlife Refuge | https://www.fws.gov/sites/default/files/documents/trail-map-pea-island-national-wildlife-r | pdf ✓name · the agency site | 2015: check it is still current (file stamp 2015 (older than the posting 2021 ) · posted Nov 30, 2021 | https://www.fws.gov/refuge/pea-island/visit-us/rules-policies ✓ |  |
+| US-9758 | Chattooga National Wild and Scenic River | https://www.fws.gov/rivers/map | page ✓name · linked from the agency page (fws.gov) | date unknown (date unknown, checked 2026-10-29) · posted — |  ✗ |  |
+| US-0416 | Pee Dee National Wildlife Refuge | https://www.fws.gov/refuge/pee-dee/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/locations/pee-dee-national-wildlife-refuge/rules-a ✓ |  |
+| US-0411 | Cedar Island National Wildlife Refuge | https://www.fws.gov/refuge/cedar-island/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/cedar-island/visit-us/rules-policies ✓ |  |
+| US-0410 | Alligator River National Wildlife Refuge | https://www.fws.gov/sites/default/files/documents/2024-09/tearsheet-map-2024-alligator-riv | pdf ✓name · combined map: covers 2 units · the agency site | 2024 (a month + year printed on the map) · posted 2024-09 | https://www.fws.gov/refuge/alligator-river/visit-us/rules-policies ✓ |  |
+| US-0417 | Pocosin Lakes National Wildlife Refuge | https://www.fws.gov/sites/default/files/documents/2026-02/pocosin-lakes-national-wildlife- | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted 2026-02 | https://www.fws.gov/refuge/pocosin-lakes/visit-us/rules-policies ✓ |  |
 | US-0414 | Mattamuskeet National Wildlife Refuge | https://www.fws.gov/refuge/mattamuskeet/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.fws.gov/refuge/mattamuskeet/visit-us/rules-policies ✓ |  |
-| US-11856 | Fonta-Flora State Trail | https://trails.nc.gov/maps/map-pdfs-fonta-flora-state-trail/open | pdf ✓name · the agency site | 2022 (the PDF file's own stamp (may be the print da) · posted Nov 18, 2022 |  ✗ |  |
-| US-13002 | Dan River State Trail | https://trails.nc.gov/maps/map-pdfs-dan-river-state-trail/open | pdf ✓name · combined map: covers 5 units · the agency site | 2022 (the PDF file's own stamp (may be the print da) · posted Nov 23, 2022 |  ✗ |  |
-| US-12320 | Yadkin River State Trail | https://trails.nc.gov/maps/map-pdfs-yadkin-river-state-trail/open | pdf ✓name · combined map: covers 2 units · the agency site | 2022 (the PDF file's own stamp (may be the print da) · posted Nov 18, 2022 |  ✗ |  |
-| US-8313 | Mountains to Sea State Trail | https://trails.nc.gov/maps/map-pdfs-mountains-sea-state-trail/open | pdf ✓name · combined map: covers 36 units · on file, checked by a person or the link | 2022 (the PDF file's own stamp (may be the print da) · posted Nov 18, 2022 |  ✗ |  |
-| US-3860 | Kitty Hawk Woods State Preserve | https://www.deq.nc.gov/coastal-management/coastal-reserve/sites/kitty-hawk-woods/khw-site- | pdf ✓name · combined map: covers 2 units · the agency site | 2011: check it is still current (file stamp 2011 (older than the posting 2018 ) · posted Nov 20, 2018 | https://www.deq.nc.gov/about/divisions/coastal-management/nc-coastal-r ✓ |  |
-| US-3864 | Permuda Island State Reserve | https://www.deq.nc.gov/media/49377/download?attachment | pdf ✓name · the agency site | 2025 (the PDF file's own stamp (may be the print da) · posted Aug 14, 2025 | https://www.deq.nc.gov/about/divisions/coastal-management/nc-coastal-r ✓ |  |
 | US-12717 | Deep River State Trail | https://trails.nc.gov/maps/map-pdfs-deep-river-state-trail/open | pdf ✓name · combined map: covers 3 units · the agency site | 2022 (the PDF file's own stamp (may be the print da) · posted Nov 18, 2022 |  ✗ |  |
 | US-8006 | Rachel Carson State Reserve | https://www.deq.nc.gov/media/49379/download?attachment | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted Aug 14, 2025 | https://www.deq.nc.gov/about/divisions/nc-coastal-reserve/stewardship/ ✓ |  |
+| US-12320 | Yadkin River State Trail | https://trails.nc.gov/maps/map-pdfs-yadkin-river-state-trail/open | pdf ✓name · combined map: covers 2 units · the agency site | 2022 (the PDF file's own stamp (may be the print da) · posted Nov 18, 2022 |  ✗ |  |
+| US-3860 | Kitty Hawk Woods State Preserve | https://www.deq.nc.gov/coastal-management/coastal-reserve/sites/kitty-hawk-woods/khw-site- | pdf ✓name · combined map: covers 2 units · the agency site | 2011: check it is still current (file stamp 2011 (older than the posting 2018 ) · posted Nov 20, 2018 | https://www.deq.nc.gov/about/divisions/coastal-management/nc-coastal-r ✓ |  |
+| US-3864 | Permuda Island State Reserve | https://www.deq.nc.gov/media/49377/download?attachment | pdf ✓name · the agency site | 2025 (the PDF file's own stamp (may be the print da) · posted Aug 14, 2025 | https://www.deq.nc.gov/about/divisions/coastal-management/nc-coastal-r ✓ |  |
+| US-11856 | Fonta-Flora State Trail | https://trails.nc.gov/maps/map-pdfs-fonta-flora-state-trail/open | pdf ✓name · the agency site | 2022 (the PDF file's own stamp (may be the print da) · posted Nov 18, 2022 |  ✗ |  |
+| US-8313 | Mountains to Sea State Trail | https://trails.nc.gov/maps/map-pdfs-mountains-sea-state-trail/open | pdf ✓name · combined map: covers 36 units · on file, checked by a person or the link | 2022 (the PDF file's own stamp (may be the print da) · posted Nov 18, 2022 |  ✗ |  |
+| US-13002 | Dan River State Trail | https://trails.nc.gov/maps/map-pdfs-dan-river-state-trail/open | pdf ✓name · combined map: covers 5 units · the agency site | 2022 (the PDF file's own stamp (may be the print da) · posted Nov 23, 2022 |  ✗ |  |
 | US-4858 | Mountain Island Educational State Forest | https://www.ncagr.gov/divisions/nc-forest-service/NCFS%20-%20Mountain%20Island%20Trail%20M | pdf · linked from the agency page (ncagr.gov) | date unknown (date unknown, checked 2026-10-29) · posted May 01, 2026 | https://www.ncagr.gov/divisions/nc-forest-service/state-forest-rules/o ✓ |  |
-| US-3844 | Jordan Lake State Recreation Area | https://www.ncparks.gov/maps/jordan-lake-state-recreation-area-map/open | pdf ✓name · the agency site | 2021 (the PDF file's own stamp (may be the print da) · posted Jun 24, 2022 |  ✗ |  |
-| US-3845 | Kerr Lake State Recreation Area | https://www.ncparks.gov/maps/kerr-lake-state-recreation-area-map/open | pdf ✓name · the agency site | 2024 (the PDF file's own stamp (may be the print da) · posted May 12, 2025 |  ✗ |  |
-| US-2742 | Lumber River State Park | https://www.ncparks.gov/maps/lumber-river-state-park-map/open | pdf ✓name · the agency site | 2025 (the PDF file's own stamp (may be the print da) · posted May 12, 2025 |  ✗ |  |
-| US-2738 | Jones Lake State Park | https://www.ncparks.gov/maps/jones-lake-state-park-map/open | pdf ✓name · the agency site | 2020: check it is still current (file stamp 2020 (older than the posting 2022 ) · posted Feb 11, 2022 |  ✗ |  |
-| US-2755 | William B. Umstead State Park | https://www.ncparks.gov/maps/william-b-umstead-state-park-campground-map/open | pdf ✓name · campground map (nothing better found) · the agency site | date unknown (date unknown, checked 2026-10-29) · posted Jun 03, 2026 |  ✗ | Campground map: the agency has no park map. |
 | US-2727 | Dismal Swamp State Park | https://www.ncparks.gov/maps/dismal-swamp-state-park-map/open | pdf ✓name · the agency site | 2025 (the PDF file's own stamp (may be the print da) · posted May 12, 2025 |  ✗ |  |
 | US-2729 | Eno River State Park | https://www.ncparks.gov/maps/eno-river-state-park-cox-mountain-group-camp-map/open | pdf · the agency site | 2025 (the PDF file's own stamp (may be the print da) · posted May 12, 2025 |  ✗ |  |
-| US-2722 | Carolina Beach State Park | https://www.ncparks.gov/maps/carolina-beach-state-park-map/open | pdf ✓name · combined map: covers 2 units · the agency site | date unknown (date unknown, checked 2026-10-29) · posted Jul 21, 2026 |  ✗ |  |
-| US-2750 | Pilot Mountain State Park | https://www.ncparks.gov/maps/pilot-mountain-state-park-campground-map/open | pdf ✓name · campground map (nothing better found) · the agency site | 2022 (the PDF file's own stamp (may be the print da) · posted Apr 06, 2022 |  ✗ | Campground map: the agency has no park map. |
-| US-2732 | Gorges State Park | https://www.ncparks.gov/maps/gorges-state-park-map/open | pdf ✓name · combined map: covers 3 units · the agency site | 2025 (the PDF file's own stamp (may be the print da) · posted May 12, 2025 |  ✗ |  |
+| US-2753 | South Mountains State Park | https://www.ncparks.gov/maps/south-mountains-state-park-campground-map/open | pdf ✓name · campground map (nothing better found) · the agency site | 2020: check it is still current (file stamp 2020 (older than the posting 2022 ) · posted Mar 31, 2022 |  ✗ | Campground map: the agency has no park map. |
 | US-2746 | Morrow Mountain State Park | https://www.ncparks.gov/maps/morrow-mountain-state-park-map/open | pdf ✓name · combined map: covers 6 units · the agency site | 2023 (the PDF file's own stamp (may be the print da) · posted May 17, 2024 |  ✗ |  |
+| US-2731 | Goose Creek State Park | https://www.ncparks.gov/maps/goose-creek-state-park-map/open | pdf ✓name · the agency site | 2025 (the PDF file's own stamp (may be the print da) · posted May 12, 2025 |  ✗ |  |
+| US-2728 | Elk Knob State Park | https://www.ncparks.gov/maps/elk-knob-state-park-map/open | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted Apr 14, 2026 |  ✗ |  |
+| US-2755 | William B. Umstead State Park | https://www.ncparks.gov/maps/william-b-umstead-state-park-campground-map/open | pdf ✓name · campground map (nothing better found) · the agency site | date unknown (date unknown, checked 2026-10-29) · posted Jun 03, 2026 |  ✗ | Campground map: the agency has no park map. |
+| US-2741 | Lake Waccamaw State Park | https://www.ncparks.gov/maps/lake-waccamaw-state-park-map/open | pdf ✓name · combined map: covers 2 units · the agency site | 2025 (the PDF file's own stamp (may be the print da) · posted May 12, 2025 |  ✗ |  |
+| US-3841 | Falls Lake State Recreation Area | https://www.ncparks.gov/maps/falls-lake-state-recreation-area-map/open | pdf ✓name · combined map: covers 2 units · the agency site | 2023 (the PDF file's own stamp (may be the print da) · posted Sep 20, 2023 |  ✗ |  |
+| US-2748 | New River State Park | https://www.ncparks.gov/maps/new-river-state-park-map/open | pdf ✓name · combined map: covers 2 units · the agency site | 2024 (the PDF file's own stamp (may be the print da) · posted Feb 23, 2024 |  ✗ |  |
+| US-2749 | Pettigrew State Park | https://www.ncparks.gov/maps/pettigrew-state-park-map/open | pdf ✓name · combined map: covers 2 units · the agency site | 2025 (the PDF file's own stamp (may be the print da) · posted May 12, 2025 |  ✗ |  |
 | US-2747 | Mount Mitchell State Park | https://www.ncparks.gov/maps/mount-mitchell-state-park-map/open | pdf ✓name · combined map: covers 4 units · the agency site | 2018: check it is still current (file stamp 2018 (older than the posting 2022 ) · posted Mar 31, 2022 |  ✗ | is managed by the National Park Service |
-| US-6910 | Headwaters State Game Land | https://www.ncwildlife.gov/media/949/download?attachment | pdf ✓name · outside research | 2024-11-01 (the PDF file's own stamp (may be the print da) · posted Nov 04, 2024 |  ✗ |  |
-| US-6883 | Brinkleyville State Game Land | https://www.ncwildlife.gov/media/878/download?attachment | pdf ✓name · outside research | 2023-09-08 (the PDF file's own stamp (may be the print da) · posted Apr 18, 2024 |  ✗ |  |
-| US-6951 | Shocco Creek State Game Land | https://www.ncwildlife.gov/media/898/download?attachment | pdf ✓name · outside research | 2026-08-24 (the PDF file's own stamp (may be the print da) · posted Sep 10, 2026 |  ✗ |  |
-| US-6954 | Suggs Mill Pond State Game Land | https://www.ncwildlife.gov/media/848/download?attachment | pdf ✓name · combined map: covers 3 units · the agency site | date unknown (date unknown, checked 2026-10-29) · posted Jun 01, 2026 | https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands ✗ |  |
 | US-6912 | Holly Shelter State Game Land | https://www.ncwildlife.gov/media/832/download?attachment | pdf ✓name · combined map: covers 2 units · the agency site | 2025 (the PDF file's own stamp (may be the print da) · posted Aug 19, 2025 | https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands ✗ |  |
-| US-6888 | Butner-Falls of the Neuse State Game Lan | https://www.ncwildlife.gov/media/716/download?attachment | pdf ✓name · outside research | — (date unknown, checked 2026-10-31) · posted Sep 10, 2026 |  ✗ |  |
-| US-6959 | Tillery State Game Land | https://www.ncwildlife.gov/media/900/download?attachment | pdf ✓name · outside research | 2026-05-19 (the PDF file's own stamp (may be the print da) · posted May 22, 2026 |  ✗ |  |
-| US-6933 | Northwest River Marsh State Game Land | https://www.ncwildlife.gov/media/839/download?attachment | pdf ✓name · combined map: covers 2 units · the agency site | 2020: check it is still current (file stamp 2020 (older than the posting 2024 ) · posted Apr 15, 2024 | https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands ✗ |  |
-| US-6896 | Columbus County State Game Land | https://www.ncwildlife.gov/media/822/download?attachment | pdf ✓name · combined map: covers 2 units · the agency site | date unknown (date unknown, checked 2026-10-29) · posted Sep 01, 2026 | https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands ✗ |  |
-| US-6901 | Dover Bay State Game Land | https://www.ncwildlife.gov/media/826/download?attachment | pdf ✓name · the agency site | 2020: check it is still current (file stamp 2020 (older than the posting 2024 ) · posted Apr 15, 2024 | https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands ✗ |  |
-| US-6927 | Nantahala State Game Land | https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands-maps/mountain-game-land-map | page ✓name · linked from the agency page (ncwildlife. | date unknown (date unknown, checked 2026-10-29) · posted — | https://www.ncwildlife.gov/enforcement/ginseng-regulation ✓ |  |
-| US-6881 | Bertie County State Game Land | https://www.ncwildlife.gov/media/812/download?attachment | pdf ✓name · combined map: covers 2 units · the agency site | 2026 (the PDF file's own stamp (may be the print da) · posted Jan 22, 2026 | https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands ✗ |  |
-| US-0034 | Great Smoky Mountains National Park | https://www.nps.gov/grsm/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted July 7, 2026 | https://www.nps.gov/grsm/learn/management/lawsandpolicies.htm ✓ |  |
-| US-0804 | Carl Sandburg National Historic Site | https://www.nps.gov/carl/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted March 2, 2016 | https://www.nps.gov/carl/learn/management/lawsandpolicies.htm ✓ |  |
-| US-0820 | Fort Raleigh National Historic Site | https://www.nps.gov/fora/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted March 7, 2016 | https://www.nps.gov/fora/learn/management/lawsandpolicies.htm ✓ |  |
-| US-0797 | Wright Brothers National Memorial | https://www.nps.gov/wrbr/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted March 7, 2016 | https://www.nps.gov/wrbr/learn/management/lawsandpolicies.htm ✓ |  |
-| US-0683 | Cape Lookout National Seashore | https://www.nps.gov/calo/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted September 9, 2021 | https://www.nps.gov/calo/learn/management/lawsandpolicies.htm ✓ |  |
-| US-0706 | Moores Creek National Battlefield | https://www.nps.gov/mocr/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted May 20, 2026 | https://www.nps.gov/mocr/learn/management/lawsandpolicies.htm ✓ |  |
-| US-3791 | Trail of Tears National Historic Trail | https://www.nps.gov/trte/planyourvisit/upload/National-Park-Service-Trail-of-Tears-Map-508 | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted Mar 22, 2018 | https://www.nps.gov/trte/learn/management/lawsandpolicies.htm ✓ |  |
-| US-4556 | Appalachian Trail National Scenic Trail | https://www.nps.gov/appa/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted December 21, 2022 | https://www.nps.gov/appa/learn/management/lawsandpolicies.htm ✓ | is managed by the National Park Service |
-| US-0682 | Cape Hatteras National Seashore | https://www.nps.gov/caha/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted July 29, 2025 | https://www.nps.gov/caha/learn/management/lawsandpolicies.htm ✓ |  |
+| US-6905 | Goose Creek State Game Land | https://www.ncwildlife.gov/media/828/download?attachment | pdf ✓name · the agency site | 2026 (the PDF file's own stamp (may be the print da) · posted Jun 16, 2026 | https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands ✗ |  |
+| US-6939 | Pungo River State Game Land | https://www.ncwildlife.gov/media/841/download?attachment | pdf ✓name · the agency site | 2021 (file stamp 2021 (older than the posting 2024 ) · posted Apr 15, 2024 | https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands ✗ |  |
+| US-6890 | Cape Fear River Wetlands State Game Land | https://www.ncwildlife.gov/media/818/download?attachment | pdf ✓name · combined map: covers 2 units · the agency site | 2025 (the PDF file's own stamp (may be the print da) · posted Apr 11, 2025 | https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands ✗ |  |
+| US-6900 | Dare State Game Land | https://www.ncwildlife.gov/media/825/download?attachment | pdf ✓name · the agency site | 2022 (file stamp 2022 (older than the posting 2024 ) · posted Apr 15, 2024 | https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands ✗ |  |
+| US-3870 | Van Swamp State Game Land | https://www.ncwildlife.gov/media/850/download?attachment | pdf ✓name · combined map: covers 2 units · the agency site | 2026 (the PDF file's own stamp (may be the print da) · posted Oct 16, 2026 | https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands ✗ |  |
+| US-6914 | J Morgan Futch State Game Land | https://www.ncwildlife.gov/media/831/download?attachment | pdf ✓name · combined map: covers 2 units · the agency site | 2026 (the PDF file's own stamp (may be the print da) · posted Jun 30, 2026 | https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands ✗ |  |
+| US-6908 | Gull Rock State Game Land | https://www.ncwildlife.gov/media/830/download?attachment | pdf ✓name · combined map: covers 4 units · the agency site | 2025 (the PDF file's own stamp (may be the print da) · posted Sep 24, 2025 | https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands ✗ |  |
+| US-6885 | Buckridge State Game Land | https://www.ncwildlife.gov/media/814/download?attachment | pdf ✓name · combined map: covers 3 units · the agency site | 2026 (the PDF file's own stamp (may be the print da) · posted May 22, 2026 | https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands ✗ |  |
+| US-6946 | Sampson State Game Land | https://www.ncwildlife.gov/media/845/download?attachment | pdf · the agency site | 2020: check it is still current (file stamp 2020 (older than the posting 2024 ) · posted Apr 15, 2024 | https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands ✗ |  |
+| US-6966 | Whitehall Plantation State Game Land | https://www.ncwildlife.gov/media/852/download?attachment | pdf ✓name · the agency site | 2026 (the PDF file's own stamp (may be the print da) · posted Sep 10, 2026 | https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands ✗ |  |
+| US-6957 | Texas Plantation State Game Land | https://www.ncwildlife.gov/media/849/download?attachment | pdf ✓name · combined map: covers 2 units · the agency site | 2022 (file stamp 2022 (older than the posting 2024 ) · posted Apr 15, 2024 | https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands ✗ |  |
 | US-4577 | Overmountain Victory National Historic T | https://www.nps.gov/ovvi/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted November 4, 2024 | https://www.nps.gov/ovvi/learn/management/lawsandpolicies.htm ✓ |  |
-| US-3378 | Blue Ridge National Parkway | https://www.nps.gov/blri/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted September 15, 2026 | https://www.nps.gov/blri/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0682 | Cape Hatteras National Seashore | https://www.nps.gov/caha/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted July 29, 2025 | https://www.nps.gov/caha/learn/management/lawsandpolicies.htm ✓ |  |
+| US-3791 | Trail of Tears National Historic Trail | https://www.nps.gov/trte/planyourvisit/upload/National-Park-Service-Trail-of-Tears-Map-508 | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted Mar 22, 2018 | https://www.nps.gov/trte/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0804 | Carl Sandburg National Historic Site | https://www.nps.gov/carl/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted March 2, 2016 | https://www.nps.gov/carl/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0683 | Cape Lookout National Seashore | https://www.nps.gov/calo/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted September 9, 2021 | https://www.nps.gov/calo/learn/management/lawsandpolicies.htm ✓ |  |
+| US-4556 | Appalachian Trail National Scenic Trail | https://www.nps.gov/appa/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted December 21, 2022 | https://www.nps.gov/appa/learn/management/lawsandpolicies.htm ✓ | is managed by the National Park Service |
+| US-0820 | Fort Raleigh National Historic Site | https://www.nps.gov/fora/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted March 7, 2016 | https://www.nps.gov/fora/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0034 | Great Smoky Mountains National Park | https://www.nps.gov/grsm/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted July 7, 2026 | https://www.nps.gov/grsm/learn/management/lawsandpolicies.htm ✓ |  |
 | US-0718 | Guilford Courthouse National Military Pa | https://www.nps.gov/guco/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted September 18, 2021 | https://www.nps.gov/guco/learn/management/lawsandpolicies.htm ✓ |  |
+| US-3378 | Blue Ridge National Parkway | https://www.nps.gov/blri/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted September 15, 2026 | https://www.nps.gov/blri/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0797 | Wright Brothers National Memorial | https://www.nps.gov/wrbr/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted March 7, 2016 | https://www.nps.gov/wrbr/learn/management/lawsandpolicies.htm ✓ |  |
+| US-0706 | Moores Creek National Battlefield | https://www.nps.gov/mocr/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted May 20, 2026 | https://www.nps.gov/mocr/learn/management/lawsandpolicies.htm ✓ |  |
 | US-6855 | Tryon Palace State Historic Site | https://www.tryonpalace.org/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-29) · posted — |  ✗ |  |
 
-### US-NC no map yet (99): the reason
+### US-NC no map yet (141): the reason
 - US-10259 NC Vietnam Veteran's Memorial Historic Site: no map link on file and none on the park page
 - US-10260 Birkhead Mountains Wilderness Area: no map (one file shared by 10 parks was dropped: https://www.fs.usda.gov/r08/northcarolina/maps-guides) (needs browser: host on the browser list)
 - US-10262 Linville Gorge Wilderness Area: no map (one file shared by 10 parks was dropped: https://www.fs.usda.gov/r08/northcarolina/maps-guides) (needs browser: host on the browser list)
 - US-10263 Bonner House Historic Site: no map link on file and none on the park page
 - US-10388 Palmer Marsh House Historic Site: no map link on file and none on the park page
+- US-10389 Hiwassee Dam Recreation Park: no map link on file and none on the park page (needs browser: the page refused a plain reader (HTTP 403))
 - US-10397 Southern Nantahala Wilderness Area: no map (one file shared by 10 parks was dropped: https://www.fs.usda.gov/r08/northcarolina/maps-guides) (needs browser: host on the browser list)
 - US-10398 Chatuge Dam Trail Recreation Park: no map link on file and none on the park page
 - US-10406 Lake Rim Fishing & Boating Multiple Use Area: no map link on file and none on the park page
@@ -371,8 +371,10 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - US-11271 Joyce Kilmer-Slickrock Wilderness Area: no map (one file shared by 10 parks was dropped: https://www.fs.usda.gov/r08/northcarolina/maps-guides) (needs browser: host on the browser list)
 - US-11375 Averasboro Battlefield Historic Site: no map link on file and none on the park page
 - US-12119 Moses H. Cone National Park: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.nps.gov/blri/planyourvisit/maps.htm)
+- US-12175 Vance State Game Land: no map link on file and none on the park page
 - US-12371 Julian Price National Park: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.nps.gov/blri/planyourvisit/maps.htm)
 - US-12414 Doughton Recreation Park: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.nps.gov/blri/planyourvisit/maps.htm)
+- US-12662 Harmon Den Wildlife Management Area: no map link on file and none on the park page
 - US-2721 Bay Tree Lake State Park: no map link on file and none on the park page (needs browser: host on the browser list)
 - US-2740 Lake Norman State Park: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.ncparks.gov/maps/lake-norman-state-park-map/open; opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.ncparks.gov/maps/lake-norman-state-park-itusi-trail-map/op)
 - US-2743 Mayo River State Park: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://www.ncparks.gov/maps/mayo-river-state-park-map/open)
@@ -393,9 +395,6 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - US-3866 Ward State Nature Preserve: no map link on file and none on the park page
 - US-3867 Swift Creek Bluffs State Nature Preserve: no map link on file and none on the park page
 - US-3868 Theodore Roosevelt State Conservation Area: no working map link (tried: opened, a government data / policies page, not this park's map (chat 11 regrade 2) https://www.google.com/maps?q=Theodore+Roosevelt+Natural+Area+1+Roosev)
-- US-3871 White Pines State Nature Preserve: no map link on file and none on the park page
-- US-4508 Croatan National Forest: no map (one file shared by 10 parks was dropped: https://www.fs.usda.gov/r08/northcarolina/maps-guides) (needs browser: host on the browser list)
-- US-4509 Nantahala National Forest: no map (one file shared by 10 parks was dropped: https://www.fs.usda.gov/r08/northcarolina/maps-guides) (needs browser: host on the browser list)
 
 ## US-VA sample (random 12 per agency group, seed 28)
 | ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
@@ -1924,79 +1923,63 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 ## US-CT sample (random 12 per agency group, seed 28)
 | ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
 |---|---|---|---|---|---|---|
-| US-10961 | Mattatuck State Forest | https://portal.ct.gov/deep/state-parks/forests/mattatuck-state-forest/maps | page · the agency site | — (date unknown, checked 2026-10-31) · posted — | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
-| US-10962 | Babcock Pond WMA Wildlife Management Are | https://portal.ct.gov/-/media/DEEP/wildlife/pdf_files/maps/maps_hunting_area/BabcockPondPh | pdf ✓name · outside research | April 2024 (printed on the map) · posted May 29, 2024 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
-| US-12459 | Housatonic River Southern Fields Wildlif | https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_hunting_area/housatonicwma | pdf ✓name · outside research | May 2024 (printed on the map) · posted May 29, 2024 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
-| US-12777 | Paugnut State Forest | https://portal.ct.gov/deep/state-parks/forests/paugnut-state-forest | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted July 18, 2016 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
-| US-7548 | Pachaug State Forest | https://portal.ct.gov/-/media/DEEP/wildlife/pdf_files/maps/maps_hunting_area/map6.pdf | pdf · linked from the agency page (portal.ct.g | — (date unknown, checked 2026-11-02) · posted May 16, 2025 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
-| US-1679 | Higganum Reservoir State Park | https://portal.ct.gov/-/media/DEEP/wildlife/pdf_files/maps/maps_hunting_area/map215.pdf | pdf ✓name · outside research | October 2024 (printed on the map) · posted Apr 09, 2025 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
-| US-7537 | Natchaug State Forest | https://portal.ct.gov/deep/state-parks/forests/natchaug-state-forest | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
-| US-6860 | Ferry Landing State Park | https://www.depdata.ct.gov/maps/parksforests/parksmap.htm | page · government host (depdata.ct.gov) | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
-| US-12628 | Sessions Woods Wildlife Management Area | https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_other/swtrailpdf.pdf?rev=9 | pdf ✓name · outside research | — (date unknown, checked 2026-10-31) · posted Jan 12, 2023 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
-| US-10952 | Paugussett State Forest | https://portal.ct.gov/-/media/DEEP/stateparks/maps/PaugussettSouthGPSpdf.pdf | pdf ✓name · outside research | — (date unknown, checked 2026-10-31) · posted Jun 03, 2020 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
-| US-6865 | Nathan Hale State Forest | https://portal.ct.gov/-/media/DEEP/wildlife/pdf_files/maps/maps_hunting_area/NathanHalePhe | pdf ✓name · outside research | May 2024 (printed on the map) · posted Oct 01, 2024 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
-| US-10092 | Seaside State Park | https://portal.ct.gov/-/media/deep/stateparks/maps/boltonnotchpdf.pdf?rev=8ab1d6ad8f244e13 | pdf · the agency site | — (date unknown, checked 2026-10-31) · posted Jun 03, 2020 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ | is maintained by Bolton Conservation Commission |
-| US-6869 | Peoples State Forest | https://ctparks.com/media/445/download?inline | pdf ✓name · outside research | June 18, 2018 (printed on the map) · posted Sep 14, 2023 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
-| US-1665 | Farm River State Park | https://ctparks.com/media/2000/download?inline | pdf ✓name · outside research | — (date unknown, checked 2026-10-31) · posted 2000 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
-| US-7535 | Moosup Valley State Trail | https://ctparks.com/media/2015/download?inline | pdf ✓name · outside research | June 23, 2015 (printed on the map) · posted 2015 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
-| US-7538 | Naugatuck State Forest | https://ctparks.com/media/558/download?inline | pdf ✓name · outside research | June 15, 2016 (printed on the map) · posted Sep 14, 2023 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
-| US-1710 | River Highlands State Park | https://ctparks.com/media/1701/download?inline | pdf ✓name · outside research | April 29, 2016 (printed on the map) · posted Jan 31, 2024 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
-| US-1672 | Gillette Castle State Park | https://ctparks.com/media/419/download?inline | pdf ✓name · outside research | June 26, 2020 (printed on the map) · posted Sep 14, 2023 | https://ctparks.com/park-policies ✓ |  |
-| US-1712 | Ross Pond State Park | https://ctparks.com/media/1821/download?inline | pdf ✓name · outside research | September 2023 (printed on the map) · posted Feb 12, 2024 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
-| US-1654 | Camp Columbia State Park | https://ctparks.com/media/1320/download?inline | pdf ✓name · outside research | February 19, 2015 (printed on the map) · posted Sep 14, 2023 |  ✗ |  |
-| US-1688 | Killingly Pond State Park | https://ctparks.com/media/2007/download?inline | pdf ✓name · outside research | September 2023 (printed on the map) · posted 2007 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
-| US-1657 | Collis P. Huntington State Park | https://ctparks.com/park-maps#cp-huntington-state-park | page · the agency site | — (date unknown, checked 2026-11-02) · posted — | https://ctparks.com/park-policies ✓ |  |
-| US-1708 | Quaddick State Park | https://ctparks.com/media/1684/download?inline | pdf ✓name · outside research | February 4, 2009 (printed on the map) · posted Jan 31, 2024 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
-| US-1685 | John A. Minetto State Park | https://ctparks.com/media/2315/download?inline | pdf ✓name · outside research | August 26, 2009 (printed on the map) · posted Jun 26, 2025 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
-| US-0329 | Silvio O Conte National Wildlife Refuge | https://www.fws.gov/refuge/silvio-o-conte/visit-us | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://www.fws.gov/refuge/silvio-o-conte/visit-us/rules-policies ✓ |  |
-| US-0228 | Stewart B. Mckinney National Wildlife Re | https://www.fws.gov/refuge/stewart-b-mckinney/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted — | https://www.fws.gov/policies ✓ |  |
-| US-6868 | Pawcatuck River Wildlife Management Area | https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnvz1a4uuPIJLlLdSwSLV5_QP6rsY5t | image · linked from the agency page (blogger.goo | date unknown (date unknown, checked 2026-10-31) · posted — |  ✗ |  |
-| US-4556 | Appalachian Trail National Scenic Trail | https://www.nps.gov/appa/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted December 21, 2022 | https://www.nps.gov/appa/learn/management/lawsandpolicies.htm ✓ | is managed by the National Park Service |
-| US-4561 | New England Trail National Scenic Trail | https://www.nps.gov/neen/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted November 8, 2023 | https://www.nps.gov/neen/learn/management/lawsandpolicies.htm ✗ |  |
-| US-4582 | Washington-Rochambeau Revolutionary Rout | https://www.nps.gov/waro/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted June 16, 2026 | https://www.nps.gov/waro/learn/management/lawsandpolicies.htm ✓ |  |
-| US-0873 | Weir Farm National Historic Site | https://www.nps.gov/wefa/planyourvisit/upload/RV-Map.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-10-31) · posted Dec 26, 2023 | https://www.nps.gov/wefa/learn/management/lawsandpolicies.htm ✓ |  |
+| US-11712 | Cromwell Meadows WMA Wildlife Management | https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_hunting_area/map110.pdf | pdf ✓name · the agency site | 2025 (printed on the map) · posted Aug 28, 2025 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
+| US-12092 | Nipmuck State Forest | https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_hunting_area/map339.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-11-17) · posted Apr 03, 2025 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
+| US-7548 | Pachaug State Forest | https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_hunting_area/map363.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-11-17) · posted Apr 07, 2026 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
+| US-1646 | Beaver Brook State Park | https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_hunting_area/map38.pdf | pdf ✓name · the agency site | 2025 (printed on the map) · posted Jun 10, 2025 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
+| US-1685 | John A. Minetto State Park | https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_hunting_area/map244.pdf | pdf ✓name · the agency site | 2025 (printed on the map) · posted Aug 28, 2025 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
+| US-7652 | Franklin Wildlife Management Area | https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_hunting_area/map173.pdf | pdf ✓name · the agency site | 2026 (printed on the map) · posted Feb 09, 2026 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
+| US-6865 | Nathan Hale State Forest | https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_hunting_area/map324.pdf | pdf ✓name · the agency site | 2024 (printed on the map) · posted Oct 01, 2024 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
+| US-7541 | Salmon River State Forest | https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_hunting_area/map434.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-11-17) · posted Sep 26, 2024 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
+| US-6874 | Tunxis State Forest | https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_hunting_area/map503.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-11-17) · posted Aug 25, 2023 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
+| US-1677 | Harkness Memorial State Park | https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_hunting_area/map209.pdf | pdf ✓name · the agency site | 2025 (printed on the map) · posted Feb 06, 2025 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
+| US-11013 | Bishop Swamp WMA Wildlife Management Are | https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_hunting_area/map51.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-11-17) · posted Sep 18, 2023 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
+| US-7530 | Centennial Watershed State Forest | https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_hunting_area/map9148.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-11-17) · posted Jun 26, 2026 | https://portal.ct.gov/deep/state-parks/recreation-information/recreati ✓ |  |
+| US-0329 | Silvio O Conte National Wildlife Refuge | https://www.fws.gov/refuge/silvio-o-conte/map | page ✓name · the agency site | date unknown (date unknown, checked 2026-11-17) · posted — | https://www.fws.gov/policies ✓ |  |
+| US-4561 | New England Trail National Scenic Trail | https://www.nps.gov/neen/planyourvisit/maps.htm | page ✓name · the agency site | date unknown (date unknown, checked 2026-11-17) · posted November 8, 2023 | https://www.nps.gov/neen/learn/management/lawsandpolicies.htm ✗ |  |
+| US-0873 | Weir Farm National Historic Site | https://www.nps.gov/wefa/planyourvisit/upload/RV-Map.pdf | pdf ✓name · the agency site | date unknown (date unknown, checked 2026-11-17) · posted Dec 26, 2023 | https://www.nps.gov/wefa/learn/management/lawsandpolicies.htm ✓ |  |
 
-### US-CT no map yet (98): the reason
+### US-CT no map yet (117): the reason
+- US-0228 Stewart B. Mckinney National Wildlife Refuge: no map link on file and none on the park page
 - US-0881 Eightmile National Wild and Scenic River: no map link on file and none on the park page
 - US-0882 Farmington National Wild and Scenic River: no map link on file and none on the park page
-- US-12092 Nipmuck State Forest: no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps) (needs browser: host on the browser list)
-- US-12604 Meshomasic State Forest: no map link on file and none on the park page (needs browser: host on the browser list)
-- US-12620 Old New-Gate Prison & Copper Mine Historical : no map link on file and none on the park page (needs browser: host on the browser list)
-- US-13483 Humaston Brook State Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- US-1645 Above All State Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- US-1646 Beaver Brook State Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- US-1647 Bennett's Pond State Park: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://ctparks.com/) (needs browser: host on the browser list)
-- US-1648 Bigelow Hollow State Park: no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps) (needs browser: host on the browser list)
-- US-1649 Black Rock State Park: no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps) (needs browser: the map link refused a plain reader (HTTP 403))
-- US-1650 Bluff Point State Park: no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps) (needs browser: host on the browser list)
-- US-1652 Brainard Homestead State Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- US-1653 Burr Pond State Park: no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps) (needs browser: host on the browser list)
-- US-1656 Chatfield Hollow State Park: no working map link (tried: ok https://ctparks.com/parks/chatfield-hollow-state-park) (needs browser: host on the browser list)
-- US-1658 Connecticut Valley Railroad State Park: no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps) (needs browser: host on the browser list)
-- US-1659 Dart Island State Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- US-1660 Day Pond State Park: no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps) (needs browser: host on the browser list)
-- US-1661 Dennis Hill State Park: no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps) (needs browser: host on the browser list)
-- US-1662 Devil's Hopyard State Park: no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps) (needs browser: host on the browser list)
-- US-1663 Dinosaur State Park: no working map link (tried: ok https://ctparks.com/parks/dinosaur-state-park) (needs browser: host on the browser list)
-- US-1664 Eagle Landing State Park: no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps) (needs browser: host on the browser list)
-- US-1666 Fort Griswold Battlefield State Park: no working map link (tried: ok https://ctparks.com/parks/fort-griswold-battlefield-state-park) (needs browser: host on the browser list)
-- US-1667 Fort Trumbull State Park: no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps)
-- US-1669 Gay City State Park: no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps) (needs browser: host on the browser list)
-- US-1671 George Waldo State Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- US-1673 Haddam Island State Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- US-1674 Haddam Meadows State Park: no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps) (needs browser: host on the browser list)
-- US-1676 Hammonasset Beach State Beach: no map link on file and none on the park page (needs browser: host on the browser list)
-- US-1677 Harkness Memorial State Park: no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps) (needs browser: host on the browser list)
-- US-1678 Haystack Mountain State Park: no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps) (needs browser: host on the browser list)
-- US-1680 Hopemead State Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- US-1681 Hopeville Pond State Park: no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps) (needs browser: host on the browser list)
-- US-1682 Housatonic Meadows State Park: no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps) (needs browser: host on the browser list)
-- US-1683 Hurd State Park: no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps) (needs browser: host on the browser list)
-- US-1684 Indian Well State Park: no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps) (needs browser: host on the browser list)
-- US-1686 Kent Falls State Park: no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps) (needs browser: host on the browser list)
-- US-1687 Kettletown State Park: no map (one file shared by 46 parks was dropped: https://ctparks.com/park-maps) (needs browser: host on the browser list)
-- US-1689 Lake Waramaug State Park: no map link on file and none on the park page (needs browser: host on the browser list)
-- US-1690 Lamentation Mountain State Park: no map link on file and none on the park page (needs browser: host on the browser list)
+- US-10073 Whittemore Glen State Park Scenic Reserve: no map link on file and none on the park page
+- US-10075 Nepaug State Forest: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_huntin)
+- US-10092 Seaside State Park: no map link on file and none on the park page
+- US-12459 Housatonic River Southern Fields Wildlife Man: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_huntin)
+- US-12604 Meshomasic State Forest: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_huntin)
+- US-12620 Old New-Gate Prison & Copper Mine Historical : no map link on file and none on the park page
+- US-12628 Sessions Woods Wildlife Management Area: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_huntin)
+- US-13483 Humaston Brook State Park: no map link on file and none on the park page
+- US-13487 Seth Low Pierrepont State Park: no map link on file and none on the park page
+- US-1645 Above All State Park: no map link on file and none on the park page
+- US-1647 Bennett's Pond State Park: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_huntin)
+- US-1649 Black Rock State Park: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_huntin)
+- US-1650 Bluff Point State Park: no map link on file and none on the park page
+- US-1651 Bolton Notch State Park: no map link on file and none on the park page
+- US-1652 Brainard Homestead State Park: no map link on file and none on the park page
+- US-1653 Burr Pond State Park: no map link on file and none on the park page
+- US-1654 Camp Columbia State Park: no map link on file and none on the park page
+- US-1655 Campbell Falls State Park: no map link on file and none on the park page
+- US-1656 Chatfield Hollow State Park: no map link on file and none on the park page
+- US-1657 Collis P. Huntington State Park: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_huntin)
+- US-1658 Connecticut Valley Railroad State Park: no map link on file and none on the park page
+- US-1659 Dart Island State Park: no map link on file and none on the park page
+- US-1660 Day Pond State Park: no map link on file and none on the park page
+- US-1661 Dennis Hill State Park: no map link on file and none on the park page
+- US-1662 Devil's Hopyard State Park: no map link on file and none on the park page
+- US-1663 Dinosaur State Park: no map link on file and none on the park page
+- US-1664 Eagle Landing State Park: no map link on file and none on the park page
+- US-1665 Farm River State Park: no map link on file and none on the park page
+- US-1666 Fort Griswold Battlefield State Park: no map link on file and none on the park page
+- US-1667 Fort Trumbull State Park: no map link on file and none on the park page
+- US-1668 Gardner Lake State Park: no map link on file and none on the park page
+- US-1669 Gay City State Park: no map link on file and none on the park page
+- US-1670 George Dudley Seymour State Park: no map link on file and none on the park page
+- US-1671 George Waldo State Park: no working map link (tried: opened, a readable map that does not name this park (chat 8 F2: another unit / several units) https://portal.ct.gov/-/media/deep/wildlife/pdf_files/maps/maps_huntin)
+- US-1672 Gillette Castle State Park: no map link on file and none on the park page
+- US-1673 Haddam Island State Park: no map link on file and none on the park page
+- US-1674 Haddam Meadows State Park: no map link on file and none on the park page
 
 ## US-RI sample (random 12 per agency group, seed 28)
 | ref | park | map | kind · via | date (how) · posted / page updated | rules | runs / card note |
@@ -2105,7 +2088,7 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 ### US-MA no map yet (304): the reason
 - US-0330 Thatcher Island National Wildlife Refuge: no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://www.fws.gov/refuge/thacher-island/map)
 - US-0891 Taunton National Wild and Scenic River: no map link on file and none on the park page
-- US-11395 Abbott Brook Wildlife Management Area: opened, a statewide map viewer, not this park's map (chat 8 F2) (needs browser: host on the browser list)
+- US-11395 Abbott Brook Wildlife Management Area: no map (one file shared by 5 parks was dropped: https://www.arcgis.com/apps/webappviewer/index.html?id=3a7c475cb6d54578ba8c7149d885ad30&ex) (needs browser: host on the browser list)
 - US-11396 Agawam Lake Wildlife Management Area: opened, a statewide map viewer, not this park's map (chat 8 F2) (needs browser: host on the browser list)
 - US-11397 Ashfield Hawley Wildlife Management Area: opened, a statewide map viewer, not this park's map (chat 8 F2) (needs browser: host on the browser list)
 - US-11398 Barton's Ledge Wildlife Management Area: opened, a statewide map viewer, not this park's map (chat 8 F2) (needs browser: host on the browser list)
@@ -6324,7 +6307,7 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - AU-0041 Shell Beach Conservation Park: no map link on file and none on the park page
 
 ## robots.txt said no (hosts we did not read)
-- https://arcg.is: 1 addresses (robots.txt unreadable (<urlopen error redirect refused: http://))
+- https://doifwsnextprod.prod.acquia-sites.com: 1 addresses (User-agent: * | Disallow: /)
 
 ## hosts resting a day (three strikes)
 - idt.idaho.gov
@@ -6332,6 +6315,7 @@ Dates (Oct 28 rules): **date on the map** = printed on it (or the PDF file stamp
 - parks.ky.gov
 - www.dfg.idaho.gov
 - www.fs.usda.gov
+- www.fws.gov
 - www.idfg.id.gov
 - www.idfg.idah.gov
 - www.idfg.idaho.goc

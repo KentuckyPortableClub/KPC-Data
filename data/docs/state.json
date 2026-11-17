@@ -714,32 +714,27 @@
   "www.idfg.idaho.goc": 1794979531.3224669,
   "www.idfg.idah.gov": 1794979579.741332,
   "www.fs.usda.gov": 1794979618.2756577,
-  "parks.ky.gov": 1794981925.9118094
+  "parks.ky.gov": 1794981925.9118094,
+  "www.fws.gov": 1795034507.6893659
  },
  "last": {
   "when": "2026-11-17",
   "areas": [
-   "US-TX",
-   "US-LA",
-   "US-MI",
-   "US-NE",
-   "US-FL",
-   "US-GA",
-   "US-TN",
-   "US-VA"
+   "US-KY"
   ],
   "stat": {
-   "requests": 39,
-   "parks": 1,
-   "maps_ok": 0,
-   "maps_found": 0,
-   "dates": 0,
-   "rules": 0,
-   "browser": 5,
+   "requests": 156,
+   "parks": 66,
+   "maps_ok": 72,
+   "maps_found": 14,
+   "dates": 37,
+   "rules": 33,
+   "browser": 0,
    "robots": 1,
-   "strikes": 0,
+   "strikes": 3,
    "errors": 0,
-   "skipped_fresh": 2092
+   "skipped_fresh": 127,
+   "kept_on_rest": 47
   }
  }
 }
