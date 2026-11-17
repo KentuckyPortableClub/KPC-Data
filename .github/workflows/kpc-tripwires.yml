@@ -1,7 +1,8 @@
-name: KPC tripwires T1-T5 (report only; by hand until HQ turns the schedule on)
-# KPC owner, 2026-11-17 (owner rulings D1-D11, fourth job of Handoff 3). Counts the five tripwires of every join (T1 one record one
-# park, T2 every piece connects to the pin, T3 from the key build, T4 pin in or at the edge or a person behind it, T5 size form)
-# from KPC-Links' saved outlines, POTA pins and keys (.github/scripts/kpc_tripwires.py). A REPORT: no key build, no network request
+name: KPC tripwires T1-T6 (report only; by hand until HQ turns the schedule on)
+# KPC owner, 2026-11-17 (owner rulings D1-D11, fourth job of Handoff 3; T6 Handoff 8 Part 3). Counts the tripwires of every join
+# (T1 one record one park, T2 every piece connects to the pin, T3 from the key build, T4 pin in or at the edge or a person behind it,
+# T5 size form, T6 two parks whose drawn land is 90% or more the same with no record id shared) from KPC-Links' saved outlines, POTA
+# pins and keys (.github/scripts/kpc_tripwires.py); T6 busiest first by KPC-Data data/parkinfo activations. A REPORT: no key build, no network request
 # by the bot (it refuses every socket), nothing on the map changes. D2 is on trial: the slack numbers are first guesses, nothing binds.
 # Writes: KPC-Data branch `tripwires` (counts per area, the counts history = the meter, the rows grouped by pattern = the waiting
 # room) and, for D10, the small not-sure list data/waiting/tripwires/not-sure.json on KPC-Data main (refs + reasons; the 2-fer bot
@@ -63,17 +64,18 @@ jobs:
         run: |
           DRY=""; [ "${{ inputs.dry_run }}" = yes ] && DRY=--dry-run
           python3 kpcdata/.github/scripts/kpc_tripwires.py run --links links --out tw --keys "${{ inputs.keys || 'us,ca,world' }}" \
-            --not-sure kpcdata/data/waiting/tripwires/not-sure.json --cleared kpcdata/data/waiting/tripwires/cleared.json $DRY
+            --not-sure kpcdata/data/waiting/tripwires/not-sure.json --cleared kpcdata/data/waiting/tripwires/cleared.json \
+            --parkinfo kpcdata/data/parkinfo $DRY
       - name: Counts to the run page (no addresses)
         if: inputs.dry_run != 'yes'
         run: |
           python3 - <<'PY'
           import json, os
           r = json.load(open('tw/counts/latest.json', encoding='utf-8'))
-          rows = ['| key | T1 | T2 | T3 | T4 | T5 | since last run |', '|---|---|---|---|---|---|---|']
+          rows = ['| key | T1 | T2 | T3 | T4 | T5 | T6 | since last run |', '|---|---|---|---|---|---|---|---|']
           for k, t in r['totals'].items():
               j = r['jump'].get(k) or {}
-              rows.append(f"| {k} | " + ' | '.join(str(t.get(x, '')) for x in ('T1', 'T2', 'T3', 'T4', 'T5')) + ' | ' + (', '.join(f'{a} {b:+d}' for a, b in j.items()) or 'no change') + ' |')
+              rows.append(f"| {k} | " + ' | '.join(str(t.get(x, '')) for x in ('T1', 'T2', 'T3', 'T4', 'T5', 'T6')) + ' | ' + (', '.join(f'{a} {b:+d}' for a, b in j.items()) or 'no change') + ' |')
           new = r.get('new_patterns') or {}
           txt = '**Tripwires (report only; nothing binds)**\n\n' + '\n'.join(rows) + '\n' + (('\nNew patterns: ' + '; '.join(f"{t}: {', '.join(v[:10])}" for t, v in new.items()) + '\n') if new else '')
           print(txt)

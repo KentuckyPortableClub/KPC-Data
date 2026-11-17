@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Tripwires T1-T5 (KPC owner, 2026-11-17; owner rulings D1-D11). Offline, on a made-up KPC-Links in a temp folder (keys, pins and
+"""Tripwires T1-T5 (KPC owner, 2026-11-17; owner rulings D1-D11; T6 has its own test, test_tripwires_t6_nov17.py). Offline, on a made-up KPC-Links in a temp folder (keys, pins and
 saved outlines; the outline reader is the real KPC-Links kpc_master, found by tests/_links_checkout.py):
   1. T1 one record one park: the same record in two parks of one key file is a row; a record every join of which is a person's
      is marked all_person (and puts no park on the not-sure list); world records are told apart by source (equal numbers of two
@@ -174,12 +174,15 @@ with tempfile.TemporaryDirectory() as t:
     check('totals: US T1 2, T2 1, T4 2, T5 1; Canada T1 1; world T1 1 (census way 2)',
           {k: rep['totals']['us'][k] for k in ('T1', 'T2', 'T4', 'T5')} == {'T1': 2, 'T2': 1, 'T4': 2, 'T5': 1}
           and rep['totals']['ca']['T1'] == 1 and rep['totals']['world']['T1'] == 1 and rep['totals']['world']['T1_census_method'] == 2)
-    check('per-area counts', rep['areas']['US-ZZ'] == {'T1': 2, 'T2': 1, 'T4': 2, 'T5': 1})
+    # T6 (Handoff 8): this fixture stacks many parks on one square at one pin, so T6 lights up here too; T6 is proven in its own file
+    # (tests/test_tripwires_t6_nov17.py), and the T1-T5 checks below look at T1-T5 only.
+    check('per-area counts', {k: v for k, v in rep['areas']['US-ZZ'].items() if k != 'T6'} == {'T1': 2, 'T2': 1, 'T4': 2, 'T5': 1})
     # 8. D10 list
     d = json.load(open(ns))
-    check(f"8. not-sure list: T1 by name (9001, 9002), T2 (9005), T4 (9007, 9011); the person's same-land record (9003) is not on it ({d['parks']})",
-          d['parks'] == {'US-9001': ['T1'], 'US-9002': ['T1'], 'US-9005': ['T2'], 'US-9007': ['T4'], 'US-9011': ['T4'],
-                         'CA-9001': ['T1'], 'CA-9002': ['T1'], 'ZZ-0001': ['T1'], 'ZZ-0002': ['T1']} and set(d['reasons']) == {'T1', 'T2', 'T4'})
+    d15 = {r: [w for w in v if w != 'T6'] for r, v in d['parks'].items() if [w for w in v if w != 'T6']}
+    check(f"8. not-sure list: T1 by name (9001, 9002), T2 (9005), T4 (9007, 9011); the person's same-land record (9003) is not on it ({d15})",
+          d15 == {'US-9001': ['T1'], 'US-9002': ['T1'], 'US-9005': ['T2'], 'US-9007': ['T4'], 'US-9011': ['T4'],
+                         'CA-9001': ['T1'], 'CA-9002': ['T1'], 'ZZ-0001': ['T1'], 'ZZ-0002': ['T1']} and set(d['reasons']) == {'T1', 'T2', 'T4', 'T6'})
     check('8. the list is small (under 1 MB) and LF only', ns.stat().st_size < 1_000_000 and b'\r' not in ns.read_bytes())
     cl.write_text(json.dumps({'parks': {'US-9007': {'by': 'KPC owner', 'date': '2026-11-18', 'why': 'pin checked'}, 'US-9005': {'why': 'no name'}}}))
     # 7. the meter: add a T1 family and run again
@@ -190,7 +193,7 @@ with tempfile.TemporaryDirectory() as t:
     check(f"7. the jump shows the next morning (US T1 +1: {rep2['jump']['us']}) and the new pattern sgqqa_name", p2.returncode == 0 and rep2['jump']['us'] == {'T1': 1}
           and 'sgqqa_name' in rep2['new_patterns'].get('T1', []) and 'T1 +1' in p2.stdout)
     h = (out / 'counts/history.csv').read_text().splitlines()
-    check('7. history.csv: one line per key per day (2 days x 3 keys)', h[0] == 'date,key,T1,T2,T3,T4,T5' and len(h) == 7)
+    check('7. history.csv: one line per key per day (2 days x 3 keys)', h[0] == 'date,key,T1,T2,T3,T4,T5,T6' and len(h) == 7)
     d2 = json.load(open(ns))
     check('8. a person\'s clear (with by) takes US-9007 off; a clear with no by (US-9005) does not', 'US-9007' not in d2['parks'] and 'US-9005' in d2['parks'] and d2['cleared_left_out'] == 1)
     # 5. T3 from a key build file
