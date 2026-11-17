@@ -37,10 +37,10 @@ campground we already list (federal, state, Kentucky hand-checked) it writes ONE
   NEVER FAILS     exit 0 always; MINUTES (55) per chunk; state.json resumes; one commit per chunk by the workflow.
 
 Env: AREAS='US-KY US-TN' (blank = next unfinished in queue order) · BROWSER=1 (Playwright browser pass for 'needs browser' pages) · MINUTES · LINKS (KPC-Links checkout, default 'links') ·
-     OUT (data/campinfo) · REFRESH_DAYS · RIDB_API_KEY · FCC_BDC_USERNAME · FCC_BDC_TOKEN.  `--selftest` runs the regexes on
+     OUT (data/campinfo) · LIVE_CAMPINFO (folder of published area files, when the working copy may be a held file) · REFRESH_DAYS · RIDB_API_KEY · FCC_BDC_USERNAME · FCC_BDC_TOKEN.  `--selftest` runs the regexes on
      sample page texts offline and prints what they pulled out (no network); `--negtest` = the 30-sentence negation test (C-1).
 """
-import json, os, pathlib, re, sys, time, urllib.parse, urllib.request
+import json, os, pathlib, re, subprocess, sys, time, urllib.parse, urllib.request
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from kpc_manners import Manners, page_text, links_in  # noqa: E402
 import kpc_host_rules; kpc_host_rules.install()
@@ -1008,17 +1008,55 @@ def merge_duplicates(D):
     D['merged'] = len(gone)
 
 
+def fact_keys(r):
+    """Campground fact fields on a record (the same fields has_facts counts)."""
+    return {k for k in ((r or {}).get('facts_src') or {}) if not k.startswith(('booking', 'lodging_booking', 'map', 'phone_hint', 'features'))}
+
+
 def has_facts(r):
     """Round 7: a record 'has facts' only with a campground fact (sites, hookups, dump, showers, restrooms, water, fees, season,
     rules); an elevation, a booking link or a map link alone is not 'facts'."""
-    return any(not k.startswith(('booking', 'lodging_booking', 'map', 'phone_hint', 'features')) for k in (r.get('facts_src') or {}))
+    return bool(fact_keys(r))
+
+
+def earlier_record(working, live):
+    """The record keep_known treats as 'what we already had'. Reads the LIVE (published) file, not only the working copy,
+    which may be a held and possibly damaged file after mode_resume. If the live record has campground facts the working
+    copy lost, live is used. If the working copy kept those facts (and maybe found more), the working copy is used so a
+    later failed re-read does not drop them."""
+    if not has_facts(live):
+        return working
+    if not has_facts(working):
+        return live
+    if fact_keys(live) - fact_keys(working):
+        return live
+    return working
+
+
+def load_published(area):
+    """The published (live) campground file for this area. After mode_resume the file at OUT may be a held copy, so this
+    does not read OUT. Tests set LIVE_CAMPINFO to a folder of published files. In the repo, this is git
+    HEAD:data/campinfo/<area>.json, and only when OUT is that folder."""
+    hook = os.environ.get('LIVE_CAMPINFO')
+    if hook:
+        return load(pathlib.Path(hook) / f'{area}.json', None)
+    try:
+        root = pathlib.Path.cwd().resolve()
+        if OUT.resolve() != (root / 'data' / 'campinfo').resolve():
+            return None
+        r = subprocess.run(['git', '-C', str(root), 'show', f'HEAD:data/campinfo/{area}.json'], capture_output=True, text=True)
+        if r.returncode == 0 and r.stdout:
+            return json.loads(r.stdout)
+    except Exception:
+        pass  # noqa: BLE001
+    return None
 
 
 def keep_known(old, new):
     """Nov 11: a re-read that found NO campground facts (page blocked, robots, host resting, soft 404, script-built page, a bot error, a
     missing key) must not wipe the facts and source lines an earlier read found: the old record stays, marked with the day and the reason
     the re-read failed (last_read_failed / last_read_status), and its own 'checked' date stays so it is tried again next run. The record
-    is rebuilt blank on every read, so before this a single 403 on the monthly re-read emptied a good record. Returns the record to keep."""
+    is rebuilt blank on every read, so before this a single 403 on the monthly re-read emptied a good record. The earlier record is the live (published) one when the working copy lost those facts (see earlier_record). Returns the record to keep."""
     if not old or not has_facts(old) or has_facts(new): return new
     kept = dict(old)
     kept['last_read_failed'] = TODAY
@@ -1090,6 +1128,14 @@ def browser_pass(area, D, rows, budget_s=900):
 def run_area(area, state):
     f = OUT / f'{area}.json'
     D = load(f, {'area': area, 'about': 'Campground info bot: facts from the agency that runs each campground, every fact with its source line. Gathers facts, decides nothing. Maps and park info are a planning aid, not a guarantee: always check the official agency page and rules before you go.', 'camps': {}})
+    published = load_published(area)
+    live_camps = (published or {}).get('camps') if isinstance(published, dict) else {}
+    if not isinstance(live_camps, dict):
+        live_camps = {}
+    for cid, live_rec in list(live_camps.items()):   # Nov 16: restore live facts the working (held) copy lost, so a mid-run stop cannot save the loss
+        old = earlier_record(D['camps'].get(cid), live_rec)
+        if old is not D['camps'].get(cid) and has_facts(old):
+            D['camps'][cid] = dict(old)
     rows = camp_rows(area)
     if not rows:
         why = 'no campground rows on file' + (' (Canada: no Parks Canada / provincial campground list in KPC-Data yet)' if area.startswith('CA-') else '')
@@ -1098,12 +1144,15 @@ def run_area(area, state):
     done = fresh = 0
     for cid in sorted(rows, key=lambda i: (rows[i]['src'] != 'kpc-campgrounds.json', rows[i]['name'])):
         if late(): break
-        old = D['camps'].get(cid)
-        if old is None:
+        working = D['camps'].get(cid)
+        live_rec = live_camps.get(cid)
+        if working is None:
             host = next((r for r in D['camps'].values() if cid in (r.get('ids') or [])), None)   # merged into a twin: skip unless the twin is stale
             if host and host.get('ver', 0) >= VER and host.get('checked', '') >= fresh_cut: fresh += 1; STAT['skipped_fresh'] += 1; continue
-        stale_status = (old or {}).get('status') in ('needs RIDB_API_KEY secret in KPC-Data', 'host resting') or ('secret' in str((old or {}).get('status')) and RIDB_KEY)
-        if old and old.get('ver', 0) >= VER and old.get('checked', '') >= fresh_cut and not stale_status:
+        old = earlier_record(working, live_rec)
+        stale_status = (working or {}).get('status') in ('needs RIDB_API_KEY secret in KPC-Data', 'host resting') or ('secret' in str((working or {}).get('status')) and RIDB_KEY)
+        lost_live = has_facts(old) and old is not working
+        if working and working.get('ver', 0) >= VER and working.get('checked', '') >= fresh_cut and not stale_status and not lost_live:
             fresh += 1; STAT['skipped_fresh'] += 1; continue
         STAT['camps'] += 1
         try: D['camps'][cid] = keep_known(old, one_camp(area, rows[cid], state))
