@@ -11,7 +11,7 @@ Updated 2026-11-17. Every fact in <area>.json carries its source url, read date 
 | US-VA | 163 | 2 | 74 | 0 | 0 | 4 | 40 | 30 | 13 | 2 | 19 | 0 |
 | US-WV | 101 | 1 | 47 | 2 | 29 | 1 | 0 | 0 | 21 | 0 | 54 | 52 |
 | US-GA | 205 | 61 | 64 | 4 | 0 | 1 | 0 | 8 | 67 | 8 | 131 | 0 |
-| US-AL | 100 | 12 | 34 | 1 | 0 | 0 | 0 | 4 | 49 | 6 | 60 | 0 |
+| US-AL | 100 | 12 | 34 | 1 | 0 | 0 | 0 | 4 | 49 | 2 | 60 | 0 |
 | US-SC | 77 | 21 | 26 | 20 | 0 | 2 | 0 | 7 | 1 | 18 | 31 | 0 |
 | US-FL | 299 | 5 | 38 | 0 | 78 | 3 | 147 | 8 | 20 | 0 | 106 | 0 |
 | US-MS | 196 | 21 | 45 | 0 | 2 | 0 | 0 | 6 | 122 | 6 | 59 | 0 |
@@ -60,7 +60,7 @@ Updated 2026-11-17. Every fact in <area>.json carries its source url, read date 
 ## Needs a secret / not built yet
 
 - RIDB_API_KEY is not set in KPC-Data: every federal (Recreation.gov) row has status "needs RIDB_API_KEY secret in KPC-Data". Free key: ridb.recreation.gov, Profile. Add it under Settings -> Secrets and variables -> Actions.
-- Cell coverage (one status per area; cell = null on every record until the point lookup exists): US-AK FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-AL FCC listAsOfDates: host resting (robots.txt could not be read: next run); US-AR FCC listAsOfDates: robots.txt says no; US-AZ FCC listAsOfDates: robots.txt says no; US-CA FCC listAsOfDates: robots.txt says no; US-CO FCC listAsOfDates: robots.txt says no; US-CT FCC listAsOfDates: robots.txt says no; US-DC FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)
+- Cell coverage (one status per area; cell = null on every record until the point lookup exists): US-AK FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-AL FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-AR FCC listAsOfDates: robots.txt says no; US-AZ FCC listAsOfDates: robots.txt says no; US-CA FCC listAsOfDates: robots.txt says no; US-CO FCC listAsOfDates: robots.txt says no; US-CT FCC listAsOfDates: robots.txt says no; US-DC FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)
 
 ## Hosts that need a browser (403), say no in robots.txt, or are resting
 
