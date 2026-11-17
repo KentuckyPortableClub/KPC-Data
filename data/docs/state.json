@@ -269,7 +269,7 @@
    "parks": 362,
    "checked": 362,
    "left": 0,
-   "updated": "2026-11-03"
+   "updated": "2026-11-17"
   },
   "US-MT": {
    "status": "done",
@@ -705,27 +705,33 @@
   }
  },
  "hosts": {
-  "iowaculture.gov": 1793746896.3872542,
-  "www.cgcounty.org": 1793747226.2396,
-  "www.mdwfp.com": 1793753546.3331113
+  "www.idfg.idaho.gov": 1794979081.9362056,
+  "www.dfg.idaho.gov": 1794979112.0071707,
+  "idt.idaho.gov": 1794979172.2219472,
+  "idt.idao.gov": 1794979219.1092222,
+  "www.wildhorsesonline.blm.gov": 1794979289.0695868,
+  "www.idfg.id.gov": 1794979460.720802,
+  "www.idfg.idaho.goc": 1794979531.3224669,
+  "www.idfg.idah.gov": 1794979579.741332,
+  "www.fs.usda.gov": 1794979618.2756577
  },
  "last": {
-  "when": "2026-11-03",
+  "when": "2026-11-17",
   "areas": [
-   "US-MN"
+   "US-ID"
   ],
   "stat": {
-   "requests": 0,
-   "parks": 0,
-   "maps_ok": 0,
-   "maps_found": 0,
+   "requests": 794,
+   "parks": 362,
+   "maps_ok": 177,
+   "maps_found": 164,
    "dates": 0,
-   "rules": 0,
-   "browser": 0,
-   "robots": 0,
-   "strikes": 0,
-   "errors": 0,
-   "skipped_fresh": 298
+   "rules": 216,
+   "browser": 151,
+   "robots": 1,
+   "strikes": 27,
+   "errors": 27,
+   "skipped_fresh": 0
   }
  }
 }
