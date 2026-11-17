@@ -26,7 +26,7 @@ most); a User-Agent naming the club site. Resumable: a park checked in the last 
 Env: AREAS='US-MO US-FL' (blank = the next unfinished areas in queue order) · MINUTES (default 55) · BROWSER=1 (the Chromium pass)
      · LINKS (the KPC-Links checkout, default 'links') · OUT (default data/docs) · SAMPLE=25 (Kentucky finder check size)
 """
-import io, json, os, pathlib, re, sys, time, urllib.error, urllib.parse, urllib.request, urllib.robotparser
+import copy, io, json, os, pathlib, re, sys, time, urllib.error, urllib.parse, urllib.request, urllib.robotparser
 import kpc_host_rules; kpc_host_rules.install()
 
 OUT = pathlib.Path(os.environ.get('OUT') or 'data/docs')
@@ -869,6 +869,75 @@ def ky_answers():
     return {x['c']: {'off': x.get('off'), 'off2': x.get('off2'), 'web': x.get('web'), 'n': x.get('n'), 'agency': ''} for x in d.get('parks', []) if x.get('c')}
 
 
+
+def skipped_read(st):
+    """This run did not read the page: robots.txt unreadable, the host is resting, or robots.txt blocked it."""
+    s = str(st or '')
+    if not s:
+        return False
+    if s in ('rest', 'robots', 'robots-unreadable'):
+        return True
+    if s.startswith('host resting') or 'the site is resting' in s:
+        return True
+    if 'robots-unreadable' in s:
+        return True
+    if re.search(r'(?:^|[(;:] )rest https?://', s):
+        return True
+    if s.startswith('no working map link (tried:'):
+        body = s.split('tried:', 1)[-1]
+        if 'robots-unreadable' in body or re.search(r'\brobots\b', body) or re.search(r'\brest\b', body):
+            return True
+    if s.startswith('robots'):
+        return True
+    return False
+
+
+def keep_known_docs(old, new):
+    """A skipped read (robots-unreadable, rest / host resting, robots-blocked) must keep the earlier
+    map AND rules exactly as they were, the same way the campground bot's keep_known does for camps.
+    The earlier checked/ver stay so the park is tried again next run."""
+    if not old or not new:
+        return new
+    nm = new.get('map') or {}
+    nr = new.get('rules') or {}
+    map_skip = skipped_read(nm.get('status')) or any(
+        skipped_read((t or {}).get('status')) for t in (new.get('map_tried') or [])
+    )
+    rules_skip = skipped_read(nr.get('status'))
+    page_skip = False
+    for n in (new.get('notes') or []):
+        s = str(n)
+        if s.startswith('park page:') and skipped_read(s.split(':', 1)[-1].strip()):
+            page_skip = True
+            break
+    if not (map_skip or rules_skip or page_skip):
+        return new
+    kept = dict(new)
+    if 'map' in old:
+        kept['map'] = copy.deepcopy(old['map'])
+    if 'map_also' in old:
+        kept['map_also'] = copy.deepcopy(old['map_also'])
+    elif 'map_also' in kept:
+        del kept['map_also']
+    if 'map_tried' in old:
+        kept['map_tried'] = copy.deepcopy(old['map_tried'])
+    elif 'map_tried' in kept:
+        del kept['map_tried']
+    if 'rules' in old:
+        kept['rules'] = copy.deepcopy(old['rules'])
+    if 'checked' in old:
+        kept['checked'] = old['checked']
+    if 'ver' in old:
+        kept['ver'] = old['ver']
+    kept['last_read_failed'] = TODAY
+    kept['last_read_status'] = (
+        (nm.get('status') if map_skip else None)
+        or (nr.get('status') if rules_skip else None)
+        or 'skipped read'
+    )
+    return kept
+
+
 def run_area(area, state, web, lists, ky):
     f = OUT / f'{area}.json'
     D = load(f, {'area': area, 'about': 'Official map + rules page + who runs it, per park (documents bot). Nothing here reaches a card until chat 8 grades it.', 'parks': {}})
@@ -885,9 +954,8 @@ def run_area(area, state, web, lists, ky):
         S = seeds(ref, parks, web, ky if area == 'US-KY' else {})
         try:
             D['parks'][ref] = one_park(ref, S, lists, area); D['parks'][ref]['ver'] = VER
-            nm, om = D['parks'][ref].get('map') or {}, (old or {}).get('map') or {}
-            if not nm.get('url') and om.get('url') and re.search(r'(?:^|[(;:] )rest https?://', str(nm.get('status') or '')):   # tune Oct 29: kept on rest (no VER bump)
-                D['parks'][ref]['map'] = dict(om, kept=f"{TODAY}: kept the last good map: the host was resting (our strikes), not a dead link")   # tune Oct 29 (WI 294 -> 113: dnrmaps.wi.gov rested after 3 strikes)
+            D['parks'][ref] = keep_known_docs(old, D['parks'][ref])
+            if old and D['parks'][ref].get('last_read_failed') == TODAY:
                 STAT['kept_on_rest'] = STAT.get('kept_on_rest', 0) + 1
         except Exception as e:  # noqa: BLE001
             D['parks'][ref] = {'n': S['name'], 'checked': TODAY, 'map': {'url': '', 'status': 'bot error: ' + str(e)[:80]}, 'rules': None, 'notes': []}
