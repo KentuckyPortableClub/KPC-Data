@@ -1155,6 +1155,41 @@ def mode_tidy():
     return gone
 
 
+NETLESS = 'needs the network'
+
+
+def fingerprint(new, live):
+    """Nov 17 (storage): one short mark for 'this waiting file and its live copy are the same bytes as last time'."""
+    import hashlib
+    h = hashlib.sha1()
+    for x in (new, live): h.update(json.dumps(x, sort_keys=True, ensure_ascii=False, default=str).encode('utf-8')); h.update(b'|')
+    return h.hexdigest()[:16]
+
+
+def keep_networked_rows(out, prev):
+    """Nov 17 (storage; Brandon 5:28 PM 'do what sonnet said for the waiting room'). A check WITHOUT the network (a bot's
+    divert) cannot re-test links or shapes, so every docs file flipped PASS -> HOLD 'needs the network' and every key lost
+    its shape note, then the next networked check flipped them back: about 1,400 change-log lines and 40 one-MB saves a day
+    that said nothing. Now a no-network run keeps the last NETWORKED row for a file when (a) the waiting file and its live
+    copy are unchanged (same fingerprint) and (b) this run found no reason the networked run did not already have.
+    Anything new still shows at once; a file never checked with the network still waits as before. -> rows kept."""
+    kept = 0
+    for i, r in enumerate(out):
+        old = prev.get(r.get('path'))
+        if not (isinstance(old, dict) and old.get('net') is True and old.get('fp') and old.get('fp') == r.get('fp')): continue
+        fresh = [w for w in (r.get('why') or []) if NETLESS not in w]
+        if any(w not in (old.get('why') or []) for w in fresh): continue
+        out[i] = dict(old); kept += 1
+    return kept
+
+
+def log_path(when=None):
+    """Nov 17 (storage): the change log is one small file a day (data/waiting/verdicts-log/2026-11-17.jsonl). The old single
+    verdicts.jsonl.gz (1 MB, rewritten whole for every new line) stays where it is as the history up to Nov 17."""
+    day = (when or dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%d'))[:10]
+    return W / 'verdicts-log' / f'{day}.jsonl'
+
+
 def record_verdict_change(lastv, r, checked):
     """Append one change-log line, then remember it. If the write fails, lastv is left as it was so
     the next run tries again (Nov 16: a PASS after an F-4 checker crash was stored in verdicts-last
@@ -1163,7 +1198,7 @@ def record_verdict_change(lastv, r, checked):
     sig = json.dumps(row, sort_keys=True, ensure_ascii=False)
     if lastv.get(r['path']) == sig: return False
     try:
-        append_jsonl_gz(W / 'verdicts.jsonl', {'date': checked, **row})
+        append_jsonl_gz(log_path(checked), {'date': checked, **row})
     except Exception as e:  # noqa: BLE001
         print(f"::notice title=Waiting room::verdict log not updated for {r.get('path')}: {type(e).__name__}: {e}")
         return False
@@ -1180,13 +1215,18 @@ def mode_check(promote):
     ctx = {'set': batch}
     out = []
     for rel, new in batch.items():
-        r = judge(rel, new, *live_of(rel), ctx=ctx); out.append(r)
+        lv = live_of(rel)
+        r = judge(rel, new, *lv, ctx=ctx); out.append(r)
+        r['fp'] = fingerprint(new, lv[0]); r['net'] = NET   # Nov 17 (storage): see keep_networked_rows
         allowed = [k for k in (os.environ.get('PROMOTE_KINDS') or '').split(',') if k]   # only the bots Brandon switched on promote; held bots wait for chat 11
         if on and r['verdict'] in ('PASS', 'LIVE-FILTERED') and allowed and r['kind'] in allowed and r['kind'] not in NEVER_AUTO:
             if promote_file(rel, r.get('out'), raw=(W / 'in' / rel)) is False: continue   # Nov 12: an override set that does not read whole stays held
             (W / 'in' / rel).unlink(missing_ok=True)   # Nov 12: an override part already went live (and left) with its set
             tw = live_of(rel)[1]
             if tw and tw not in ('both', rel) and (DATA / tw).exists(): keep_generation(tw); (DATA / tw).unlink()   # one name only (chat 8 attack 5)
+    if not NET and not on:   # never on a run that may promote: a kept row is a record, not a fresh pass
+        try: keep_networked_rows(out, {r.get('path'): r for r in ((load(W / 'verdicts.json', {}) or {}).get('results') or []) if isinstance(r, dict)})
+        except Exception as e: print(f'::notice title=Waiting room::networked rows not kept ({type(e).__name__}: {e})')  # noqa: BLE001
     held = [r for r in out if r['verdict'] == 'HOLD']
     rep = {'checked': dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%dT%H:%MZ'), 'switched_on': on, 'results': [{k: v for k, v in r.items() if k != 'out'} for r in out]}
     W.mkdir(parents=True, exist_ok=True)
@@ -1466,7 +1506,7 @@ def mode_undo(rel, gen=1):
 
 def log_action(what, rel):
     W.mkdir(parents=True, exist_ok=True)
-    append_jsonl_gz(W / 'verdicts.jsonl', {'date': dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%dT%H:%MZ'), 'kind': what, 'path': rel, 'verdict': what.upper(), 'by': os.environ.get('GITHUB_ACTOR') or 'local'})   # chat 8 C3: who / when for every undo and release
+    append_jsonl_gz(log_path(), {'date': dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%dT%H:%MZ'), 'kind': what, 'path': rel, 'verdict': what.upper(), 'by': os.environ.get('GITHUB_ACTOR') or 'local'})   # chat 8 C3: who / when for every undo and release
 
 
 BOT_FOLDERS = {'access': 'data/access', 'campfed': 'data/campfed', 'campstate': 'data/campstate', 'campinfo': 'data/campinfo', 'trails': 'data/trails',
