@@ -1,0 +1,188 @@
+name: KPC trace hold (by hand only) - tracers on the keeper's list, every trace HELD on branch traces, PDF finder (find only)
+# KPC owner, 2026-11-17 (Handoff 3: tracers and the PDF finder). Built and wired, NOT turned on: HQ starts it when the rest of the
+# system is ready. No schedule: block (by hand only), and it starts no other run. Every trace is held on the orphan branch traces in
+# the store's hand-file format (GeoJSON + .kpc-source.json + a small picture + index.json review rows). Nothing goes to the store,
+# to KPC-Links data/fers-approx-outlines.json, to a key, to the public map or to the 2-fer line. No scoring step.
+# Default is a dry run: no request at all, nothing saved, a receipt in the log.
+on:
+  workflow_dispatch:
+    inputs:
+      areas:
+        description: 'areas, comma list (for example US-AR,US-IL,US-VT,CA-ON); empty = every area on the list'
+        default: ''
+      dry_run:
+        description: 'yes = no request at all and nothing saved (counts and a receipt only)'
+        default: 'yes'
+      trace:
+        description: 'yes = run the picture + parcel tracers on the listed parks first (their own basemap / parcel requests); no = use their stored outputs on tools-out'
+        default: 'no'
+      finder:
+        description: 'yes = run the PDF finder (find only; agency requests through kpc_manners, store fetch-settings.json caps)'
+        default: 'no'
+      save_maps:
+        description: 'yes = hand the PDFs the finder queued to picture-maps (kpc_lookup.py save-map, the existing rule)'
+        default: 'no'
+      substitute_list:
+        description: "yes = when data/keeper-asks/latest.json is missing, use the public key view (KPC-Links why-not.json) instead of the keeper's list"
+        default: 'no'
+permissions:
+  contents: write
+concurrency:
+  group: kpc-trace-hold
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          path: links
+          persist-credentials: false
+          sparse-checkout: |
+            /kpc-ky-data.json
+            /data/us-key/
+            /data/ca-key/
+            /data/tracts/
+            /data/status/key-check/dropped-us/latest/
+            /data/status/key-check/dropped-ca/latest/
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/cache@v4
+        with:
+          path: kpcdata/.finder_saved
+          key: kpc-trace-hold-finder-${{ github.run_id }}
+          restore-keys: kpc-trace-hold-finder-
+      - name: Branches (traces, picture-maps, tools-out, intake-files) and the list
+        id: prep
+        run: |
+          cd kpcdata
+          git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for b in traces picture-maps tools-out intake-files; do git fetch -q origin "+refs/heads/$b:refs/remotes/origin/$b" || { echo "::error title=Branch::$b not found"; exit 1; }; done
+          git worktree add -q -B traces ../traces origin/traces
+          git worktree add -q -B picture-maps ../pm origin/picture-maps
+          git worktree add -q --detach ../out origin/tools-out
+          git worktree add -q -B intake-files ../intake origin/intake-files
+          mkdir -p ../work
+          if [ -s data/keeper-asks/latest.json ]; then cp data/keeper-asks/latest.json ../work/asks.json; echo "list=keeper" >> "$GITHUB_OUTPUT"
+          elif [ "${{ inputs.substitute_list }}" = yes ]; then
+            python3 .github/scripts/kpc_trace_hold.py asks-from-why-not --links ../links --data . --areas "${{ inputs.areas }}" --out ../work/asks.json
+            echo "::warning title=Trace hold::the keeper's list (data/keeper-asks/latest.json) is missing: using the SUBSTITUTE public key view"
+            echo "list=substitute" >> "$GITHUB_OUTPUT"
+          else echo "::error title=Trace hold::no keeper's list (data/keeper-asks/latest.json) and substitute_list is not yes: nothing to do"; exit 1; fi
+          # the store's manners settings (KPC-Store is private: the manager session's change file puts them on intake-files store-settings/)
+          for f in fetch-settings.json extra-blocked-hosts.txt robots-disallowed-layers.csv; do [ -s "../intake/store-settings/$f" ] && cp "../intake/store-settings/$f" ../work/; done
+          ls ../work
+      - name: Prune (a park with an official outline now loses its held trace)
+        if: inputs.dry_run != 'yes'
+        run: |
+          cd kpcdata && python3 .github/scripts/kpc_trace_hold.py prune --traces ../traces --links ../links
+      - name: Tracers on the listed parks (by hand; their own requests)
+        if: inputs.trace == 'yes' && inputs.dry_run != 'yes'
+        env:
+          KPC_CONTACT: 'https://github.com/KentuckyPortableClub (Kentucky Portable Club ham radio club)'
+          KPC_TRACE_MAX_PX: '4000'
+          KPC_TRACE_ACRES_FILE: ${{ vars.KPC_TRACE_ACRES_TRACTS == 'yes' && '../out/acres/acres.json,../links/data/tracts,../links/data/us-key/tracts,../links/data/ca-key/tracts' || '../out/acres/acres.json' }}
+        run: |
+          cd kpcdata
+          sudo apt-get install -y -qq poppler-utils >/dev/null 2>&1 || { kpc_rc=$?; echo "::warning title=install::poppler-utils did not install (exit $kpc_rc)"; echo "install - poppler-utils did not install (exit $kpc_rc)" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          pip install -q -r .github/scripts/draft/requirements.txt -r .github/scripts/draft/tools/kpc_parcel_trace/requirements.txt pypdf 2>&1 | tail -1
+          python3 .github/scripts/draft/kpc_trace_picture.py --selftest > /tmp/st.txt 2>&1 && python3 .github/scripts/draft/kpc_trace_marks.py --selftest >> /tmp/st.txt 2>&1 || { tail -20 /tmp/st.txt; echo "::error title=Tracer offline checks::failed; no trace"; exit 1; }
+          python3 .github/scripts/kpc_picture_prep.py ../pm ../links
+          python3 .github/scripts/kpc_trace_hold.py limit-index --asks ../work/asks.json --pic-base ../pm
+          python3 .github/scripts/draft/kpc_picture_geo.py ../pm /tmp/kpc-pdf || { echo "::error title=kpc_picture_geo.py::failed; no trace"; exit 1; }
+          python3 .github/scripts/draft/kpc_trace_picture.py --all --base ../pm --out ../work/pictraced --time-budget-min 25 || true   # ok: one map never stops the batch; the report says what happened
+          python3 .github/scripts/kpc_trace_prep.py ../work/parcel-parks.json
+          python3 .github/scripts/kpc_trace_hold.py limit-parks --asks ../work/asks.json --parks ../work/parcel-parks.json
+          python3 .github/scripts/draft/tools/kpc_parcel_trace/kpc_parcel_trace.py --parks ../work/parcel-parks.json --all --out ../work/parcel --max-minutes 20 --official-dir data || true   # ok: exit 3 = time ran out (the report says so)
+          git -C ../pm checkout -q -- . 2>/dev/null; git -C ../pm clean -qfd 2>/dev/null; true   # ok: the prep files on picture-maps are never saved by this job
+      - name: Hold (cards, the chain, held traces, the finder)
+        id: hold
+        run: |
+          cd kpcdata
+          PIC=../out/picture-trace/traced; PAR=../out/trace
+          [ -f ../work/pictraced/report.csv ] && PIC=../work/pictraced
+          [ -f ../work/parcel/parcels/report.csv ] && PAR=../work/parcel
+          TR=../traces; DRY=""
+          if [ "${{ inputs.dry_run }}" = yes ]; then TR="$RUNNER_TEMP/traces-dry"; mkdir -p "$TR"; cp ../traces/index.json "$TR/" 2>/dev/null || true; DRY=--dry-run; fi   # ok: no earlier index on a first run
+          FND=no; [ "${{ inputs.finder }}" = yes ] && FND=yes
+          python3 .github/scripts/kpc_trace_hold.py run --asks ../work/asks.json --areas "${{ inputs.areas }}" --data . --links ../links \
+            --picture-maps ../pm --picture-traced "$PIC" --parcel-traced "$PAR" --parcel-input ../work/parcel-parks.json --traces "$TR" \
+            --receipt ../work/receipt.json --finder "$FND" --finder-queue ../work/queue --saved .finder_saved \
+            --settings ../work/fetch-settings.json --blocked ../work/extra-blocked-hosts.txt --disallowed ../work/robots-disallowed-layers.csv $DRY
+      - name: Receipt (no receipt = red)
+        run: |
+          [ -s work/receipt.json ] || { echo "::error title=Trace hold::no receipt: red"; exit 1; }
+          python3 - <<'PY'
+          import json, os, sys
+          r = json.load(open('work/receipt.json'))
+          print(json.dumps({k: r[k] for k in ('list_source', 'areas', 'parks_asked', 'parks_tried', 'cards_made', 'sorts', 'chain', 'outlines_found',
+                            'outlines_held', 'private_not_saved', 'requests_made', 'served_from_stored_copy', 'requests_planned_dry_run', 'refused',
+                            'pota_requests', 'dry_run')}, indent=1))
+          if os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write(f"**Trace hold:** {r['parks_tried']} parks tried, {r['cards_made']} cards, {r['outlines_held']} traces held, "
+                                                                 f"{r['requests_made']} requests, {r['served_from_stored_copy']} from stored copies, POTA requests {r['pota_requests']}"
+                                                                 f"{' (dry run)' if r['dry_run'] else ''}\n")
+          if r['parks_asked'] and not r['parks_tried']: print('::error title=Trace hold::the list has parks but none was tried: red'); sys.exit(1)
+          PY
+      - name: Save held traces (branch traces)
+        if: inputs.dry_run != 'yes'
+        run: |
+          mkdir -p traces/receipts && cp work/receipt.json "traces/receipts/$(date -u +%F)-run-${{ github.run_id }}.json"
+          cd traces && git add -A && { git diff --cached --quiet || git commit -qm "held traces (run ${{ github.run_id }})"; }
+          bash ../kpcdata/.github/scripts/kpc_push_retry.sh traces 4 "US-AK US-AL US-AR US-AZ US-CA US-CO US-CT US-DC US-DE US-FL US-GA US-HI US-IA US-ID US-IL US-IN US-KS US-KY US-LA US-MA US-MD US-ME US-MI US-MN US-MO US-MS US-MT US-NC US-ND US-NE US-NH US-NJ US-NM US-NV US-NY US-OH US-OK US-OR US-PA US-RI US-SC US-SD US-TN US-TX US-UT US-VA US-VT US-WA US-WI US-WV US-WY CA-AB CA-BC CA-MB CA-NB CA-NL CA-NS CA-NT CA-NU CA-ON CA-PE CA-QC CA-SK CA-YT index.json receipts" || exit 1
+      - name: Save the finder queue (branch intake-files)
+        if: inputs.finder == 'yes' && inputs.dry_run != 'yes'
+        run: |
+          D="intake/pdf-finder/$(date -u +%F)"; mkdir -p "$D"; cp -r work/queue/. "$D/"
+          cd intake && git add -A pdf-finder && { git diff --cached --quiet || git commit -qm "PDF finder queue (run ${{ github.run_id }})"; }
+          bash ../kpcdata/.github/scripts/kpc_push_retry.sh intake-files 4 "pdf-finder" || exit 1
+      - name: Hand found PDFs to picture-maps (the existing save-map rule)
+        if: inputs.save_maps == 'yes' && inputs.finder == 'yes' && inputs.dry_run != 'yes'
+        run: |
+          sudo apt-get install -y -qq poppler-utils >/dev/null 2>&1 || { kpc_rc=$?; echo "::warning title=install::poppler-utils did not install (exit $kpc_rc)"; echo "install - poppler-utils did not install (exit $kpc_rc)" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          pip install -q pillow numpy pypdf 2>&1 | tail -1
+          mkdir -p work/lookup/requests && cp work/queue/save-map/*.json work/lookup/requests/ 2>/dev/null || true   # ok: nothing queued = nothing to save
+          cd work/lookup
+          for r in requests/*.json; do [ -f "$r" ] || continue; LOOKUP_ROOT=. PIC_ROOT=../../pm python3 ../../kpcdata/.github/scripts/kpc_lookup.py run "$r"; done
+          PIC_ROOT=../../pm python3 ../../kpcdata/.github/scripts/kpc_lookup.py map-index
+          cd ../../pm && git add -A maps rows index.json && { git diff --cached --quiet || git commit -qm "picture maps from the PDF finder (run ${{ github.run_id }})"; }
+          bash ../kpcdata/.github/scripts/kpc_push_retry.sh picture-maps 4 "index.json" || exit 1
+      - name: Report hidden failures (Nov 2 review, G8)
+        if: always()
+        env:
+          KPC_STEPS: ${{ toJSON(steps) }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          s = json.loads(os.environ.get('KPC_STEPS') or '{}')
+          bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
+          for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
+          print(f'{len(bad)} hidden step failure(s)')
+          # Nov 4 PM fix bundle item 7: the errors a step caught itself ('|| echo ::error ...') are listed too (kpc-hidden.txt)
+          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt')
+          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
+          print(f'{len(said)} error(s) caught inside steps and kept green')
+          if said and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write(f'**Errors caught inside steps and kept green ({len(said)}):**\n' + ''.join(f'- {x}\n' for x in said[:50]))
+          if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
+          # Next round C4 (Nov 5; Brandon's yes relayed via Super): the errors a step caught itself ('|| { ...; echo ::error ... }') are listed
+          # too (kpc-hidden.txt), one 'Hidden failures' line is left for the check-up (data/status/hidden-failures.json), and a job the
+          # check-up lists as safe to fail (KPC_FAIL_SAFE=1: it starts nothing after it) goes red on a caught ERROR (not on a warning).
+          import sys
+          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt'); he = h[:-4] + '-errors.txt'
+          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
+          errs = [x.strip() for x in open(he, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(he) else []
+          if said or bad:
+              print(f"::warning title=Hidden failures::{len(errs)} error(s) and {len(said) - len(errs)} warning(s) caught inside steps, {len(bad)} step(s) failed but kept green (job {os.environ.get('GITHUB_JOB', '?')})")
+          if errs and os.environ.get('KPC_FAIL_SAFE') == '1':
+              print(f'::error title=Fail where safe::{len(errs)} error(s) were caught inside steps, so this job is red (it starts nothing after it). The repo variable KPC_HIDDEN_RED=off turns this off.')
+              sys.exit(1)
+          PY
