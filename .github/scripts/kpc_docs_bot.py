@@ -28,6 +28,7 @@ Env: AREAS='US-MO US-FL' (blank = the next unfinished areas in queue order) · M
 """
 import io, json, os, pathlib, re, sys, time, urllib.error, urllib.parse, urllib.request, urllib.robotparser
 import kpc_host_rules; kpc_host_rules.install()
+import kpc_manners
 
 OUT = pathlib.Path(os.environ.get('OUT') or 'data/docs')
 LINKS = pathlib.Path(os.environ.get('LINKS') or 'links')
@@ -156,7 +157,7 @@ def robots_ok(u):
             ROBOTS_SAID[h] = ' | '.join(l.strip() for l in txt.splitlines() if l.strip() and not l.startswith('#'))[:160]
         except Exception as e: ROBOTS[h] = None; ROBOTS_SAID[h] = 'no robots.txt (' + str(e)[:30] + ')'  # noqa: BLE001  (no robots file = allowed)
     rp = ROBOTS[h]
-    try: ok = rp is None or rp.can_fetch(UA, u) or rp.can_fetch('*', u)
+    try: ok = rp is None or kpc_manners.robots_allowed(rp, UA, u)
     except Exception: ok = True  # noqa: BLE001
     if not ok: STAT['robots'] += 1; ROBOTS_REFUSED[h] = ROBOTS_REFUSED.get(h, 0) + 1
     return ok

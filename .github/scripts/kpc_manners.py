@@ -143,6 +143,50 @@ def safe_url(u):
     except Exception: return u.split('?')[0]  # noqa: BLE001
 
 
+
+def robots_allowed(rp, useragent, url):
+    """May this user-agent fetch this URL, using RFC 9309 longest-match (Disallow wins ties)?
+
+    urllib.robotparser.can_fetch uses the FIRST matching rule in the file, so
+    "Allow: /a" then "Disallow: /a/b" would allow /a/b/x. The longest matching
+    path wins here; if an Allow and a Disallow are the same length, Disallow
+    wins. User-agent group selection and path matching otherwise follow the
+    already-parsed robotparser entries (including the '*' group).
+    """
+    if rp is None:
+        return True
+    if rp is False:
+        return False
+    if getattr(rp, 'disallow_all', False):
+        return False
+    if getattr(rp, 'allow_all', False):
+        return True
+    parsed = urllib.parse.urlparse(urllib.parse.unquote(url))
+    path = urllib.parse.urlunparse(('', '', parsed.path, parsed.params, parsed.query, parsed.fragment))
+    path = urllib.parse.quote(path) or '/'
+    entry = None
+    for e in getattr(rp, 'entries', []) or []:
+        if e.applies_to(useragent):
+            entry = e
+            break
+    if entry is None:
+        entry = getattr(rp, 'default_entry', None)
+    if entry is None:
+        return True
+    best = None  # (length, disallow_sort, allowance)
+    for line in entry.rulelines:
+        if not line.applies_to(path):
+            continue
+        # longer path wins; at the same length, Disallow (allowance False) wins
+        cand = (len(line.path), 0 if not line.allowance else 1, line.allowance)
+        if best is None or cand[0] > best[0] or (cand[0] == best[0] and cand[1] < best[1]):
+            best = cand
+    if best is None:
+        return True
+    return best[2]
+
+
+
 class Manners:
     def __init__(self, job, resting=None, gap=2.0, strikes_out=3, rest_s=86400, read_max=3_000_000):
         self.ua = f'KPC bot: {job} ({SITE}; ham radio club; 1 request per 2 s per host; reads page text and metadata only)'
@@ -193,7 +237,7 @@ class Manners:
         if rp is False: ok = False
         else:
             # can_fetch(self.ua) already falls back to the '*' group; OR-ing '*' let a '*' allow override a rule aimed at us.
-            try: ok = rp is None or rp.can_fetch(self.ua, u)
+            try: ok = robots_allowed(rp, self.ua, u)
             except Exception: ok = False  # noqa: BLE001  (rules we cannot apply = do not fetch)
         if not ok: self.stat['robots'] += 1; self.refused[h] = self.refused.get(h, 0) + 1
         return ok
