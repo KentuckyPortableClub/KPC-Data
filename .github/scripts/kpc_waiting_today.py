@@ -3,11 +3,12 @@
 waiting-room run: every file held in data/waiting/in/ (oldest first, how long, why it was held), every questions file with its
 open count, and the approvals not yet used. Chat 11 reads it when Brandon types 'inbox' (README line). No alerts.
   python3 kpc_waiting_today.py   -> data/waiting/today.md. Never fails."""
-import datetime as dt, json, pathlib, sys
+import datetime as dt, json, os, pathlib, sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from kpc_json_any import glob_json_any, iter_jsonl_any, load_json_any  # noqa: E402
 
-W = pathlib.Path('data/waiting')
+DATA = pathlib.Path(os.environ.get('DATA') or '.')
+W = DATA / 'data' / 'waiting'
 
 
 def load(p, d=None):
@@ -16,16 +17,39 @@ def load(p, d=None):
 
 
 def verdict_rows():
-    """One dict per line of verdicts.jsonl (or verdicts.jsonl.gz)."""
+    """One dict per line of verdicts.jsonl (or verdicts.jsonl.gz). The change log only: a line is
+    written when a file's verdict changes, so a later PASS can be missing if that write did not land."""
     return list(iter_jsonl_any(W / 'verdicts.jsonl'))
+
+
+def current_verdicts():
+    """The latest complete check (verdicts.json): every waiting file re-checked on that run."""
+    rep = load(W / 'verdicts.json', {}) or {}
+    out = {}
+    if not isinstance(rep, dict): return out
+    for r in rep.get('results') or []:
+        if isinstance(r, dict) and r.get('path'):
+            out[r['path']] = r
+    return out
+
+
+def verdict_for(rel, current, log_last):
+    """Prefer the latest check. Fall back to the change log when that file was not in the last run."""
+    key = rel[:-3] if rel.endswith('.gz') else rel
+    for k in (rel, key, key + '.gz', rel + '.gz'):
+        if k in current: return current[k]
+    for k in (rel, key, key + '.gz', rel + '.gz'):
+        if k in log_last: return log_last[k]
+    return {}
 
 
 def main():
     today = dt.date.today()
     since = load(W / 'held-since.json', {}) or {}
-    last = {}
+    log_last = {}
     for r in verdict_rows():
-        if r.get('path'): last[r['path']] = r
+        if r.get('path'): log_last[r['path']] = r
+    current = current_verdicts()
     held = []
     for f in (W / 'in').rglob('*') if (W / 'in').exists() else []:
         if not f.is_file() or f.name == '.keep': continue
@@ -33,7 +57,7 @@ def main():
         s = since.get(rel) or since.get(key) or ''
         try: days = (today - dt.date.fromisoformat(s[:10])).days
         except ValueError: days = None
-        v = last.get(rel) or last.get(key) or {}
+        v = verdict_for(rel, current, log_last)
         held.append((s or '9999', rel, days, v.get('verdict') or '?', '; '.join(v.get('why') or [])[:220]))
     try:
         sys.path.insert(0, str(pathlib.Path(__file__).parent)); import kpc_order as O
