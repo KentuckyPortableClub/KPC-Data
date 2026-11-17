@@ -1,16 +1,16 @@
 # Closures super-bot: review (2026-11-17; RULE SHEET D; compared quietly, nothing on cards until GO)
 
-Run: 2026-11-17T16:13Z · requests 106 · pages 81 · PDFs 17 · sentences read 360 · unmatched 118 · look-alikes skipped 208 · sources failed 2
+Run: 2026-11-17T21:54Z · requests 106 · pages 81 · PDFs 17 · sentences read 363 · unmatched 118 · look-alikes skipped 208 · sources failed 2
 
-## Kentucky gate: **FAIL** — 20 of 27 of Kentucky's own reader's items found here on the same park (74%); 53 only here
+## Kentucky gate: **FAIL** — 20 of 27 of Kentucky's own reader's items found here on the same park (74%); 54 only here
 
 ## Sources that failed this run
 
 - US-KY fs-gwj: rest (host resting after an earlier strike; last items kept) (https://www.fs.usda.gov/alerts/gwj/alerts-notices)
 - US-KY ky-fs-dbnf: rest (host resting after an earlier strike; last items kept) (https://www.fs.usda.gov/alerts/dbnf/alerts-notices)
 
-## US-KY (done, read 2026-11-17T16:13)
-whole 1 · part 0 · hunt 0 · seasonal 0 · note 69 · taken_down 2 · 0 banners
+## US-KY (done, read 2026-11-17T21:54)
+whole 1 · part 0 · hunt 0 · seasonal 0 · note 70 · taken_down 2 · 0 banners
 
 Sources that failed (last items kept): ky-fs-dbnf (rest (host resting after an earlier strike; last items kept)); fs-gwj (rest (host resting after an earlier strike; last items kept))
 
@@ -48,7 +48,7 @@ Unmatched (two parks or none; for chat 11 to judge):
 - Day of the hunt requirements [ky-fw-public-land] · no park name shares a word
 - EXCEPTIONS [ky-fw-public-land] · no park name shares a word
 
-### Side-by-side vs Kentucky's own reader (kpc_park_alerts.py + hc-): matched 20 · only here 53 · only there 7
+### Side-by-side vs Kentucky's own reader (kpc_park_alerts.py + hc-): matched 20 · only here 54 · only there 7
 
 - ONLY THERE: US-4687 hc-US-4687-2026-11-07: Kentucky Fish & Wildlife: Nov 7–8: closed to everyone except drawn hunters (and one helper each) for
 - ONLY THERE: US-3834 hc-US-3834-2026-11-07: Kentucky Fish & Wildlife: Nov 7–8: closed to everyone except drawn hunters (and one helper each) for
@@ -57,6 +57,7 @@ Unmatched (two parks or none; for chat 11 to judge):
 - ONLY THERE: US-3806 hc-US-3806-2026-11-07: Kentucky Fish & Wildlife: Nov 7–8: closed to everyone except drawn hunters (and one helper each) for
 - ONLY THERE: US-3794 hc-US-3794-2026-11-07: Kentucky Fish & Wildlife: Nov 7–8: closed to everyone except drawn hunters (and one helper each) for
 - ONLY THERE: US-3793 hc-US-3793-2026-11-07: Kentucky Fish & Wildlife: Nov 7–8: closed to everyone except drawn hunters (and one helper each) for
+- ONLY HERE: US-0019 [note] "The Pinnacle restrooms are closed, but portable restrooms are available for use instead"
 - ONLY HERE: US-0050 [note] "Elevator for Accessible Tour Out of Service."
 - ONLY HERE: US-0050 [note] "The Green River Ferry has temporarily suspended operation due to low water levels."
 - ONLY HERE: US-0538 [note] "Due to lack of staffing, there may be times that the Visitor Center will be temporarily closed."
@@ -81,8 +82,8 @@ Unmatched (two parks or none; for chat 11 to judge):
 - ONLY HERE: US-1280 [note] "Parts of the park may be closed during the quota hunt Dec. 17-20."
 - ONLY HERE: US-1281 [note] "Jenny Wiley State Resort Park lodge is closed for critical structural integrity renovations."
 - ONLY HERE: US-1282 [note] "Parts of the park may be closed during the quota hunt Nov. 19-22 (archery/crossbow)."
-- ONLY HERE: US-1282 [note] "Parts of the park may be closed during the quota hunt Dec. 3-6."
 
+- US-0019 · ℹ️ Note: "The Pinnacle restrooms are closed, but portable restrooms are available for use instead" (National Park Service)
 - US-0050 · ℹ️ Note: "Elevator for Accessible Tour Out of Service." (National Park Service)
 - US-0050 · ℹ️ Note: "The Green River Ferry has temporarily suspended operation due to low water levels." (National Park Service)
 - US-0538 · ℹ️ Note: "Due to lack of staffing, there may be times that the Visitor Center will be temporarily closed." (US Fish and Wildlife Service)
@@ -94,5 +95,4 @@ Unmatched (two parks or none; for chat 11 to judge):
 - US-10153 · ℹ️ Part closed (easternmost tract): "The easternmost tract is currently closed to public use" (Kentucky Fish and Wildlife)
 - US-10159 · ℹ️ Part closed (Sugar Creek Trailhead and Redbird Crest Trail Sections 4, 5 and 6 will also be closed duri): "Sugar Creek Trailhead and Redbird Crest Trail Sections 4, 5 and 6 will also be closed duri
 - US-10159 · ⚠ CLOSED: "A portion of the Redbird Wildlife Management Area in Leslie County will be closed during planned prescribed burn operations on Tuesday, November 10, 2026." (Daniel Boone National Forest, 20
-- US-10170 · ℹ️ May not be public land now: "This area is only open during the quota hunt on the second Saturday in December during odd-numbered years for mobility-impaired persons." (Kentucky Fish and Wildlife)
 

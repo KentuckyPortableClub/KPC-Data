@@ -470,3 +470,4 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-11-17): key data/world-key/ZA.json held: F-O2 4 of 76 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks?
 - FROM WAITING ROOM (held since 2026-11-08, 9 days): wwff data/wwff/CTFF.json held: F-W2 rows 702 -> 280 (under 80% of the saved list)
 - FROM BOT official documents bot (2026-11-17): grade me: US-KY data/docs/<area>.json + review.md — chunk 1 · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44170920773)
+- FROM BOT closures super-bot (2026-11-17): FAILED its gate: US-KY — 20 of 27 of Kentucky's own reader's items found here on the same park (74%); 54 only here · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44184503775)
