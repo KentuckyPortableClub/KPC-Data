@@ -435,18 +435,25 @@ def retest(urls, n=20):
     return {'sample': sample, 'results': rows}
 
 
+def docs_url(rec, kind):
+    """A stored map or rules URL, omitting a page already marked denied (not a map, and not a fault)."""
+    d = (rec or {}).get(kind) or {}
+    if d.get('kind') == 'denied page': return None
+    return d.get('url')
+
+
 def c_docs(path, new, live, ctx):
     holds, notes = [], []
     P = new.get('parks') or {}
     banned = re.compile(known('docs').get('banned_hosts') or r'inciweb|google\.[a-z.]+/maps|maps\.app\.goo\.gl|goo\.gl/maps|facebook\.com', re.I)
     for kind in ('map', 'rules'):
-        urls = [((r.get(kind) or {}).get('url')) for r in P.values()]
+        urls = [docs_url(r, kind) for r in P.values()]
         agency = lambda d: (d or {}).get('rules_scope') == 'agency' or 'agency-wide' in str((d or {}).get('how') or '') or 'agency-wide' in str((d or {}).get('status_note') or '')
-        shared = [((r.get(kind) or {}).get('url')) for r in P.values() if not (kind == 'rules' and agency(r.get(kind)))]   # tune Oct 29: an agency-wide rules page LABELLED so (docs v6 rule) is allowed on many parks
+        shared = [docs_url(r, kind) for r in P.values() if not (kind == 'rules' and agency(r.get(kind)))]   # tune Oct 29: an agency-wide rules page LABELLED so (docs v6 rule) is allowed on many parks
         for u, k in share(shared, len(P)): holds.append(f'F-D1 one {kind} page on {k} of {len(P)} parks: {u[:80]}')
         bad = [u for u in urls if u and banned.search(u)]
         if bad: holds.append(f'F-D2 {len(bad)} {kind} links on a banned host (fire news / map pins / social), e.g. {bad[0][:70]}')
-    kept = [(r.get(k) or {}).get('url') for r in P.values() for k in ('map', 'rules')]
+    kept = [docs_url(r, k) for r in P.values() for k in ('map', 'rules')]
     try:
         rt = retest(kept)
         if ctx is not None: ctx['retest'] = rt
