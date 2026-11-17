@@ -10260,7 +10260,7 @@
    "status": "open",
    "url": "https://gis.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_ODNR_Lands_Public_nolakes/FeatureServer/7",
    "who": "person",
-   "why": "KPC park-info engine: robots.txt disallows the whole site for us"
+   "why": "KPC park-info engine: robots.txt does not allow it (a 403 counts as no)"
   },
   {
    "added": "2026-11-12",
@@ -10278,7 +10278,7 @@
    "status": "open",
    "url": "https://gis.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_ODNR_Lands_Public_nolakes/FeatureServer/6",
    "who": "person",
-   "why": "KPC park-info engine: robots.txt disallows the whole site for us"
+   "why": "KPC park-info engine: robots.txt does not allow it (a 403 counts as no)"
   },
   {
    "added": "2026-11-12",
@@ -10296,7 +10296,7 @@
    "status": "open",
    "url": "https://gis.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_ODNR_Lands_Public_nolakes/FeatureServer/8",
    "who": "person",
-   "why": "KPC park-info engine: robots.txt disallows the whole site for us"
+   "why": "KPC park-info engine: robots.txt does not allow it (a 403 counts as no)"
   },
   {
    "added": "2026-11-12",
@@ -10314,7 +10314,7 @@
    "status": "open",
    "url": "https://gis.ohiodnr.gov/image/rest/services/OIT_Services/ODNR_Basemap_Streets_2018_WM/MapServer/134",
    "who": "person",
-   "why": "KPC park-info engine: robots.txt disallows the whole site for us"
+   "why": "KPC park-info engine: robots.txt does not allow it (a 403 counts as no)"
   },
   {
    "added": "2026-11-11",
@@ -10548,7 +10548,7 @@
    "status": "open",
    "url": "https://utility.arcgis.com/usrsvcs/servers/4787d99dcb1f4728b33f89a9eb9ae03e/rest/services/OpenData/SouthDakota_ParksAndRecreationAreas/FeatureServer/0",
    "who": "person",
-   "why": "KPC park-info engine: robots.txt does not allow it (a 403 counts as no)"
+   "why": "KPC park-info engine: robots.txt answered with a web page, not a robots file (the answer came from another site (https://www.arcgis.com/index.html): not read as \"no rules\"): not read as \"no rules\""
   },
   {
    "added": "2026-11-11",
@@ -15012,7 +15012,7 @@
    "status": "open",
    "url": "https://gis.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_Lakes/MapServer/0",
    "who": "person",
-   "why": "KPC park-info engine: robots.txt disallows the whole site for us"
+   "why": "KPC park-info engine: robots.txt does not allow it (a 403 counts as no)"
   },
   {
    "added": "2026-11-12",
