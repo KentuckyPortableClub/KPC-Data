@@ -117,7 +117,10 @@ AGENCY = [  # host -> who runs it (families first, then named agencies; states f
 ]
 FED_RULES = {  # family -> candidate rules pages built from the unit / refuge / forest slug (each one is OPENED before it is kept)
     'nps': ['https://www.nps.gov/{u}/learn/management/lawsandpolicies.htm', 'https://www.nps.gov/{u}/learn/management/superintendents-compendium.htm'],
-    'fws': ['https://www.fws.gov/refuge/{u}/visit-us/rules-policies', 'https://www.fws.gov/refuge/{u}/rules-and-policies', 'https://www.fws.gov/refuge/{u}/visit-us/activities'],
+    # Nov 17: FWS is moving refuges to /locations/<name>-national-wildlife-refuge (fws.gov/refuge/<slug> now redirects there);
+    # the old /refuge/<slug>/visit-us/rules-policies is HTTP 404 for those (Green River, KY). The new address is tried right after the old one.
+    'fws': ['https://www.fws.gov/refuge/{u}/visit-us/rules-policies', 'https://www.fws.gov/locations/{h}-national-wildlife-refuge/rules-and-policies',
+            'https://www.fws.gov/refuge/{u}/rules-and-policies', 'https://www.fws.gov/refuge/{u}/visit-us/activities'],
     'usfs': ['https://www.fs.usda.gov/{u}/alerts-notices', 'https://www.fs.usda.gov/alerts/{u}/alerts-notices', 'https://www.fs.usda.gov/main/{u}/alerts-notices'],
 }
 USACE_RULES = 'https://www.ecfr.gov/current/title-36/chapter-III/part-327'
@@ -325,7 +328,7 @@ def unit_slug(url, fam):
         m = re.search(r'^/([a-z]{4})(/|$)', p)
         return m.group(1) if m else ''
     if fam == 'fws':
-        m = re.search(r'/refuge/([a-z0-9_-]+)', p)
+        m = re.search(r'/refuge/([a-z0-9_-]+)', p) or re.search(r'^/locations/([a-z0-9_-]+?)-national-wildlife-refuge(?:/|$)', p)   # Nov 17: the new FWS address
         return m.group(1) if m else ''
     if fam == 'usfs':
         m = re.search(r'^/(?:main/|detail/|recarea/|r\d\d/)?([a-z0-9_-]+)', p)
@@ -629,7 +632,7 @@ def rules_for(fam, urls, pg_rules, lists_entry):
     agency-wide rules page from lists.json."""
     cands = []
     slug = next((unit_slug(u, fam) for u in urls if unit_slug(u, fam)), '')
-    if fam in FED_RULES and slug: cands += [(x.format(u=slug), f'{fam.upper()} rules page (pattern + opened)') for x in FED_RULES[fam]]
+    if fam in FED_RULES and slug: cands += [(x.format(u=slug, h=slug.lower().replace('_', '-')), f'{fam.upper()} rules page (pattern + opened)') for x in FED_RULES[fam]]
     if fam == 'usace': cands.append((USACE_RULES, 'Corps lakes: 36 CFR Part 327 (one national rule book) + the lake page'))
     cands += [(u, f"a link on the park's page ('{t}')") for s, u, t in pg_rules[:3]]
     if lists_entry and lists_entry.get('rules'): cands.append((lists_entry['rules'], 'the agency-wide rules page (chat 8 survey)'))
@@ -946,6 +949,17 @@ def keep_known_docs(old, new):
     return kept
 
 
+RULES_VER = 2   # Nov 17: rules candidates changed (FWS /locations/ address; KY statewide rules page in lists.json)
+
+
+def rules_reread(old):
+    """A record whose rules page did not open under an older rules-candidate set is read again even when it is
+    still fresh (Kentucky's 47 parks.ky.gov/park-rules and Green River NWR held the KY file). Only 'did not open':
+    an ok rules page, or a read that was skipped (rest / robots), is left as it was."""
+    r = (old or {}).get('rules')
+    return isinstance(r, dict) and r.get('status') == 'did not open' and (old.get('rules_ver') or 1) < RULES_VER
+
+
 def run_area(area, state, web, lists, ky):
     f = OUT / f'{area}.json'
     D = load(f, {'area': area, 'about': 'Official map + rules page + who runs it, per park (documents bot). Nothing here reaches a card until chat 8 grades it.', 'parks': {}})
@@ -957,12 +971,13 @@ def run_area(area, state, web, lists, ky):
     for ref in sorted(parks, key=lambda r: (r not in FL, r not in NO, r)):   # Oct 30 1:30 PM: what we DON'T have first (Fable book, then no official outline)
         if late(): break
         old = D['parks'].get(ref)
-        if old and old.get('ver', 1) >= VER and old.get('checked', '') >= time.strftime('%Y-%m-%d', time.gmtime(time.time() - REFRESH_DAYS * 86400)):
+        if old and old.get('ver', 1) >= VER and old.get('checked', '') >= time.strftime('%Y-%m-%d', time.gmtime(time.time() - REFRESH_DAYS * 86400)) and not rules_reread(old):
             fresh += 1; STAT['skipped_fresh'] += 1; continue
         S = seeds(ref, parks, web, ky if area == 'US-KY' else {})
         try:
-            D['parks'][ref] = one_park(ref, S, lists, area); D['parks'][ref]['ver'] = VER
-            D['parks'][ref] = keep_known_docs(old, D['parks'][ref])
+            new = one_park(ref, S, lists, area); new['ver'] = VER
+            D['parks'][ref] = keep_known_docs(old, new)
+            if D['parks'][ref] is new: new['rules_ver'] = RULES_VER   # a skipped read keeps the old record (no rules_ver): tried again next run
             if old and D['parks'][ref].get('last_read_failed') == TODAY:
                 STAT['kept_on_rest'] = STAT.get('kept_on_rest', 0) + 1
         except Exception as e:  # noqa: BLE001
