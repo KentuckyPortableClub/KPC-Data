@@ -11,7 +11,7 @@ Use:  M = Manners('KPC park truth checker', state.get('hosts'))   # a name for t
       st, headers, body, final_url = M.get(url)                   # st = int HTTP status, or 'rest' / 'robots' / 'err:...'
       state['hosts'] = M.resting()                                 # save before the run ends
 """
-import atexit, hashlib, importlib.util, json, os, re, threading, time, urllib.error, urllib.parse, urllib.request, urllib.robotparser
+import atexit, hashlib, importlib.util, json, os, re, threading, time, urllib.error, urllib.parse, urllib.request
 
 
 def _load_host_rules():
@@ -143,6 +143,236 @@ def safe_url(u):
     except Exception: return u.split('?')[0]  # noqa: BLE001
 
 
+
+# RFC 9309: parse at least 500 KiB; a longer file is a parse error so we never
+# apply a truncated rule set (a Disallow past the cap would otherwise be missed).
+ROBOTS_MAX = 512_000
+_UNRESERVED = frozenset('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-._~')
+_RESERVED = frozenset(":/?#[]@!$&'()*+,;=")
+
+
+class RobotsRules:
+    """Parsed robots.txt. Not a urllib.robotparser object; those internals changed in Python 3.13.18."""
+
+    def __init__(self, groups):
+        self.groups = groups  # list of {'agents', 'rules', 'delay'}
+
+    def crawl_delay(self, useragent):
+        g = _pick_robots_group(self.groups, useragent)
+        if not g or g['delay'] is None:
+            return 0.0
+        return float(g['delay'])
+
+
+def _product_token(useragent):
+    """The crawler's product token: the first token of the User-Agent (up to space or '/').
+
+    Matching uses this token only, as a whole token, case-insensitive (RFC 9309 2.2.1).
+    For our UA ('KPC bot: ...') that token is 'kpc', not the word 'bot' later in the string.
+    """
+    raw = (useragent or '').strip()
+    if not raw:
+        return ''
+    tok = raw.split()[0]
+    tok = tok.split('/', 1)[0]
+    return tok.lower()
+
+
+def _agent_token(agent):
+    """The token on a User-agent line (first word, version after '/' dropped), or '*'."""
+    raw = (agent or '').strip()
+    if not raw or raw == '*':
+        return raw
+    tok = raw.split()[0]
+    tok = tok.split('/', 1)[0]
+    return tok.lower()
+
+
+def _normalize_robots_path(path):
+    """Canonical path (+ query) for matching: decode unreserved %XX, keep reserved
+    encodings, percent-encode non-ASCII and other non-unreserved octets. Raw reserved
+    characters such as '/' and '?' stay as themselves (RFC 9309 2.2.2 / RFC 3986)."""
+    if path is None:
+        return ''
+    if isinstance(path, str):
+        raw = path.encode('utf-8')
+    else:
+        raw = path
+    out = bytearray()
+    i, n = 0, len(raw)
+    while i < n:
+        if raw[i] == 0x25 and i + 2 < n:  # %
+            try:
+                b = int(raw[i + 1:i + 3].decode('ascii'), 16)
+            except ValueError:
+                out.append(raw[i])
+                i += 1
+                continue
+            if 32 <= b < 127 and chr(b) in _UNRESERVED:
+                out.append(b)
+            else:
+                out.extend(b'%%%02X' % b)
+            i += 3
+            continue
+        b = raw[i]
+        if b < 128:
+            ch = chr(b)
+            if ch in _UNRESERVED or ch in _RESERVED or ch == '%':
+                out.append(b)
+            else:
+                out.extend(b'%%%02X' % b)
+        else:
+            out.extend(b'%%%02X' % b)
+        i += 1
+    return out.decode('ascii')
+
+
+def _compile_robots_pattern(pattern):
+    """Compile one Allow/Disallow path. '*' is any string; a trailing '$' means end of path.
+    The path is percent-normalized first. Length is the octet length of the normalized pattern."""
+    if pattern is None:
+        pattern = ''
+    end = pattern.endswith('$')
+    body = _normalize_robots_path(pattern[:-1] if end else pattern)
+    length = len(body) + (1 if end else 0)
+    parts = []
+    for ch in body:
+        parts.append('.*' if ch == '*' else re.escape(ch))
+    rx = '^' + ''.join(parts)
+    if end:
+        rx += '$'
+    return re.compile(rx, re.DOTALL), length
+
+
+def parse_robots(text):
+    """Parse a robots.txt body into RobotsRules. Raises on a parse error (callers must not fetch).
+
+    A file longer than ROBOTS_MAX, or one that contains a NUL, is a parse error.
+    Blank lines do not end a group. Consecutive User-agent lines share rules; a new
+    User-agent after Allow/Disallow have started begins a new group. Crawl-delay
+    between User-agent lines does not start a new group. Directive names are
+    case-insensitive. A leading BOM and CRLF line endings are accepted.
+    """
+    if isinstance(text, (bytes, bytearray)):
+        text = text.decode('utf-8', 'replace')
+    if text.startswith('\ufeff'):
+        text = text[1:]
+    if '\x00' in text:
+        raise ValueError('NUL in robots.txt')
+    if len(text) > ROBOTS_MAX:
+        raise ValueError('robots.txt too long')
+    groups = []
+    agents, rules, delay = [], [], None
+
+    def finish():
+        nonlocal agents, rules, delay
+        if agents:
+            groups.append({'agents': list(agents), 'rules': list(rules), 'delay': delay})
+        agents, rules, delay = [], [], None
+
+    for raw in text.splitlines():
+        line = raw.split('#', 1)[0].strip()
+        if not line:
+            continue
+        if ':' not in line:
+            continue
+        field, _, value = line.partition(':')
+        field, value = field.strip().lower(), value.strip()
+        if field == 'user-agent':
+            if rules:
+                finish()
+            if value:
+                agents.append(value.lower())
+        elif field in ('allow', 'disallow'):
+            if not agents:
+                continue
+            allow = field == 'allow'
+            path = value
+            if path == '' and not allow:
+                allow, path = True, ''   # empty Disallow = allow all
+            regex, length = _compile_robots_pattern(path)
+            rules.append((allow, regex, length))
+        elif field == 'crawl-delay':
+            if not agents:
+                continue
+            try:
+                delay = float(value)
+            except ValueError:
+                pass
+        # sitemap and other fields are ignored
+    finish()
+    return RobotsRules(groups)
+
+
+def _pick_robots_group(groups, useragent):
+    """Merge ALL groups that match the chosen agent (RFC 9309 2.2.1).
+
+    The chosen agent is our product token if any group lists it (whole token,
+    case-insensitive); otherwise '*'. A named match is not merged with '*'.
+    """
+    product = _product_token(useragent)
+    specific, star = [], []
+    for g in groups:
+        tokens = [_agent_token(a) for a in g['agents']]
+        if product and product in tokens:
+            specific.append(g)
+        if '*' in tokens:
+            star.append(g)
+    chosen = specific if specific else star
+    if not chosen:
+        return None
+    if len(chosen) == 1:
+        return chosen[0]
+    merged_rules, agents = [], []
+    delay = None
+    for g in chosen:
+        agents.extend(g['agents'])
+        merged_rules.extend(g['rules'])
+        if g['delay'] is not None:
+            delay = g['delay'] if delay is None else max(delay, float(g['delay']))
+    return {'agents': agents, 'rules': merged_rules, 'delay': delay}
+
+
+def _robots_path(url):
+    """Path and query the rules are matched against (no scheme, host, or fragment), percent-normalized."""
+    p = urllib.parse.urlsplit(url)
+    path = p.path or '/'
+    if p.query:
+        path += '?' + p.query
+    return _normalize_robots_path(path)
+
+
+def robots_allowed(rules, useragent, url):
+    """May this user-agent fetch this URL? RFC 9309 longest-match; Disallow wins ties.
+
+    rules is RobotsRules (from parse_robots), None (no file = allowed), or False (unreadable
+    or a parse error = do not fetch). A RobotFileParser or any other object is refused
+    (do not fail open). '*' and '$' wildcards are supported. Matching uses the product
+    token only; all groups for that agent are merged; paths are percent-normalized.
+    """
+    if rules is None:
+        return True
+    if rules is False or not isinstance(rules, RobotsRules):
+        return False
+    try:
+        path = _robots_path(url)
+        group = _pick_robots_group(rules.groups, useragent)
+        if group is None:
+            return True
+        best = None  # (length, disallow_first, allow)
+        for allow, regex, length in group['rules']:
+            if regex.search(path) is None:
+                continue
+            cand = (length, 0 if not allow else 1, allow)
+            if best is None or cand[0] > best[0] or (cand[0] == best[0] and cand[1] < best[1]):
+                best = cand
+        if best is None:
+            return True
+        return best[2]
+    except Exception:
+        return False  # noqa: BLE001  parse/match error = do not fetch
+
+
 class Manners:
     def __init__(self, job, resting=None, gap=2.0, strikes_out=3, rest_s=86400, read_max=3_000_000):
         self.ua = f'KPC bot: {job} ({SITE}; ham radio club; 1 request per 2 s per host; reads page text and metadata only)'
@@ -193,7 +423,7 @@ class Manners:
         if rp is False: ok = False
         else:
             # can_fetch(self.ua) already falls back to the '*' group; OR-ing '*' let a '*' allow override a rule aimed at us.
-            try: ok = rp is None or rp.can_fetch(self.ua, u)
+            try: ok = robots_allowed(rp, self.ua, u)
             except Exception: ok = False  # noqa: BLE001  (rules we cannot apply = do not fetch)
         if not ok: self.stat['robots'] += 1; self.refused[h] = self.refused.get(h, 0) + 1
         return ok
@@ -208,7 +438,7 @@ class Manners:
             self._pace(h, 0.0)
             try:
                 with urllib.request.urlopen(urllib.request.Request(ru, headers={'User-Agent': self.ua}), timeout=15) as r:
-                    st, txt = r.status, r.read(512_000)   # RFC 9309: parse at least 500 KiB (Quality: was 40,000 bytes)
+                    st, txt = r.status, r.read(ROBOTS_MAX + 1)   # RFC 9309: parse at least 500 KiB; +1 detects a truncated file
                     hdr, final = {k.lower(): v for k, v in r.headers.items()}, r.geturl() or ru
             except urllib.error.HTTPError as e:
                 st, txt = e.code, b''
@@ -226,7 +456,16 @@ class Manners:
                 self.for_person.append((ru, f'{why}: a person downloads what is needed from {rk}')); return
             txt = body.encode('utf-8')   # a page holding robots directives: its directives are the rules
         if st == 200:
-            rp = urllib.robotparser.RobotFileParser(); rp.parse(txt.decode('utf-8', 'replace').splitlines()); self.robots[rk] = rp
+            try:
+                if isinstance(txt, (bytes, bytearray)) and len(txt) > ROBOTS_MAX:
+                    raise ValueError('robots.txt too long')
+                self.robots[rk] = parse_robots(txt.decode('utf-8', 'replace') if isinstance(txt, (bytes, bytearray)) else txt)
+            except Exception:  # noqa: BLE001
+                self.robots[rk] = False
+                self.blocked[rk] = ('robots-unreadable', 'robots.txt could not be parsed')
+                self.stat['robots_unreadable'] = self.stat.get('robots_unreadable', 0) + 1
+                self.for_person.append((f'{pu.scheme or "https"}://{pu.netloc}/robots.txt', f'robots.txt could not be parsed: nothing fetched from {rk} this run'))
+                return
             # Nov 17: decide each URL by can_fetch on that page. "Disallow: /" plus a more specific Allow
             # (Alaska: Allow: /parks, then Disallow: /) is not a whole-site block. A path that is
             # actually disallowed is still refused in robots_ok / get, and is never fetched.
@@ -271,7 +510,7 @@ class Manners:
     def crawl_delay(self, h):
         """h = a url, or a host:port / host key of self.robots."""
         rp = self.robots.get(self.rkey(h) if '://' in str(h) else h)
-        try: d = (rp.crawl_delay(self.ua) or rp.crawl_delay('*')) if rp else None
+        try: d = rp.crawl_delay(self.ua) if rp else None
         except Exception: d = None  # noqa: BLE001
         return float(d) if d else 0.0
 

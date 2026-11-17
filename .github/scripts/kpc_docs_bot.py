@@ -26,8 +26,9 @@ most); a User-Agent naming the club site. Resumable: a park checked in the last 
 Env: AREAS='US-MO US-FL' (blank = the next unfinished areas in queue order) · MINUTES (default 55) · BROWSER=1 (the Chromium pass)
      · LINKS (the KPC-Links checkout, default 'links') · OUT (default data/docs) · SAMPLE=25 (Kentucky finder check size)
 """
-import copy, io, json, os, pathlib, re, sys, time, urllib.error, urllib.parse, urllib.request, urllib.robotparser
+import copy, io, json, os, pathlib, re, sys, time, urllib.error, urllib.parse, urllib.request
 import kpc_host_rules; kpc_host_rules.install()
+import kpc_manners
 
 OUT = pathlib.Path(os.environ.get('OUT') or 'data/docs')
 LINKS = pathlib.Path(os.environ.get('LINKS') or 'links')
@@ -159,9 +160,9 @@ def _load_docs_robots(u, rk):
     ru = f'{pu.scheme or "https"}://{pu.netloc}/robots.txt'
     try:
         with urllib.request.urlopen(urllib.request.Request(ru, headers={'User-Agent': UA}), timeout=15) as r:
-            st, txt = r.status, r.read(30000).decode('utf-8', 'replace')
+            st, raw = r.status, r.read(kpc_manners.ROBOTS_MAX + 1)
     except urllib.error.HTTPError as e:
-        st, txt = e.code, ''
+        st, raw = e.code, b''
     except Exception as e:  # noqa: BLE001
         ROBOTS[rk] = False
         ROBOTS_SAID[rk] = 'robots.txt unreadable (' + str(e)[:40] + ')'
@@ -174,8 +175,15 @@ def _load_docs_robots(u, rk):
         ROBOTS[rk] = False
         ROBOTS_SAID[rk] = f'robots.txt unreadable ({st})'
         return
-    rp = urllib.robotparser.RobotFileParser(); rp.parse(txt.splitlines()); ROBOTS[rk] = rp
-    ROBOTS_SAID[rk] = ' | '.join(l.strip() for l in txt.splitlines() if l.strip() and not l.startswith('#'))[:160]
+    try:
+        if len(raw) > kpc_manners.ROBOTS_MAX:
+            raise ValueError('robots.txt too long')
+        txt = raw.decode('utf-8', 'replace')
+        ROBOTS[rk] = kpc_manners.parse_robots(txt)
+        ROBOTS_SAID[rk] = ' | '.join(l.strip() for l in txt.splitlines() if l.strip() and not l.startswith('#'))[:160]
+    except Exception as e:  # noqa: BLE001
+        ROBOTS[rk] = False
+        ROBOTS_SAID[rk] = 'robots.txt could not be parsed (' + str(e)[:40] + ')'
 
 
 def robots_status(u):
@@ -189,7 +197,7 @@ def robots_status(u):
         STAT['robots'] += 1; ROBOTS_REFUSED[rk] = ROBOTS_REFUSED.get(rk, 0) + 1
         return 'robots-unreadable'
     try:
-        ok = rp is None or rp.can_fetch(UA, u) or rp.can_fetch('*', u)
+        ok = kpc_manners.robots_allowed(rp, UA, u)
     except Exception:  # noqa: BLE001
         ok = False   # rules we cannot apply = do not fetch
     if not ok:
