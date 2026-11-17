@@ -15,7 +15,7 @@ Updated 2026-11-17. Every fact in <area>.json carries its source url, read date 
 | US-SC | 77 | 21 | 26 | 20 | 0 | 2 | 0 | 7 | 1 | 18 | 31 | 0 |
 | US-FL | 299 | 5 | 38 | 0 | 78 | 3 | 147 | 8 | 20 | 0 | 106 | 0 |
 | US-MS | 196 | 21 | 45 | 0 | 2 | 0 | 0 | 6 | 122 | 6 | 59 | 0 |
-| US-IN | 94 | 61 | 13 | 0 | 0 | 0 | 2 | 8 | 10 | 8 | 68 | 0 |
+| US-IN | 94 | 61 | 13 | 2 | 0 | 0 | 2 | 8 | 8 | 8 | 68 | 0 |
 | US-IL | 252 | 15 | 28 | 0 | 0 | 1 | 0 | 4 | 204 | 2 | 220 | 252 |
 | US-MO | 188 | 97 | 74 | 0 | 0 | 16 | 0 | 0 | 1 | 0 | 114 | 0 |
 | US-WI | 107 | 9 | 45 | 4 | 0 | 48 | 0 | 0 | 1 | 5 | 31 | 0 |
@@ -108,6 +108,7 @@ Updated 2026-11-17. Every fact in <area>.json carries its source url, read date 
 - parks.ky.gov: 3 campgrounds
 - gastateparks.org: 3 campgrounds
 - wvdnr.gov: 2 campgrounds
+- www.in.gov: 2 campgrounds
 - files.dfm.idaho.gov: 2 campgrounds
 - explore.gastateparks.org: 1 campgrounds
 - www.outdooralabama.com: 1 campgrounds

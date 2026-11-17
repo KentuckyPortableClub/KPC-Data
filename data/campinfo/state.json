@@ -340,12 +340,13 @@
    "checked": 94,
    "counts": {
     "camps": 94,
-    "needs_browser": 0,
+    "kept_after_failed_read": 8,
+    "needs_browser": 2,
     "needs_key": 13,
     "no_page": 2,
     "not_official": 8,
     "ok": 61,
-    "other": 10,
+    "other": 8,
     "resting": 0,
     "robots": 0,
     "with_booking": 68,
@@ -355,7 +356,7 @@
    },
    "left": 0,
    "status": "done",
-   "updated": "2026-11-10"
+   "updated": "2026-11-17"
   },
   "US-KS": {
    "camps": 117,
@@ -1149,7 +1150,7 @@
   "US-IA": "FCC listAsOfDates: robots.txt says no",
   "US-ID": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-IL": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
-  "US-IN": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
+  "US-IN": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-KS": "FCC listAsOfDates: robots.txt says no",
   "US-KY": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-LA": "FCC listAsOfDates: robots.txt says no",
@@ -1326,10 +1327,10 @@
    "cell": {
     "carriers": null,
     "files": [],
-    "src": null,
-    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
+    "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2026-06-30?category=State&subcategory=Mobile%20Broadband",
+    "status": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
    },
-   "read": "2026-11-10"
+   "read": "2026-11-17"
   },
   "US-KS": {
    "cell": {
@@ -1654,6 +1655,7 @@
   "gfp.sd.gov": 1794992499.336771,
   "parks.ky.gov": 1794987285.4093177,
   "www.fs.usda.gov": 1795021264.9896526,
+  "www.in.gov": 1795024358.702078,
   "www.tn.gov": 1794994022.1993356
  },
  "ky_check": {
@@ -2609,41 +2611,31 @@
  },
  "last": {
   "areas": [
-   "US-DE"
+   "US-IN"
   ],
   "fcc_token": true,
   "manners": {
-   "errors": 0,
-   "for_person": 2,
-   "for_person_urls": [
-    [
-     "https://destateparks.com/",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://destateparks.com/",
-     "HTTP 403 twice"
-    ]
-   ],
+   "errors": 3,
+   "for_person_urls": [],
    "host_rule": 0,
-   "requests": 13,
-   "rested": 44,
-   "retry403": 2,
+   "requests": 76,
+   "rested": 102,
    "robots": 0,
-   "strikes": 4
+   "strikes": 3
   },
   "ridb_key": false,
   "stat": {
-   "camps": 24,
+   "browser": 1,
+   "camps": 96,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 2,
-   "needs_key": 0,
-   "no_page": 0,
-   "not_official": 0,
-   "ok": 2,
-   "pages_read": 2,
-   "resting": 20,
+   "needs_browser": 3,
+   "needs_key": 14,
+   "no_page": 4,
+   "not_official": 8,
+   "ok": 62,
+   "pages_read": 61,
+   "resting": 7,
    "ridb_calls": 0,
    "robots": 0,
    "skipped_fresh": 0

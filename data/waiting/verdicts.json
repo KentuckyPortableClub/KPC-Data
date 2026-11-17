@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-17T17:56Z",
+ "checked": "2026-11-17T18:15Z",
  "switched_on": false,
  "results": [
   {
@@ -1113,7 +1113,7 @@
    "notes": [
     "no live copy: first time this file is published",
     "F-D3 retest 20 links: 18 ok, 2 dead, 0 could not check",
-    "F-D3 links: ok 200 https://www.fs.usda.gov/r03/tonto; dead 404 https://www.fws.gov/refuge/bill-williams-river/visit-us/rules-policies; ok 200 https://www.nps.gov/glca/planyourvisit/maps.htm; ok 200 https://www.fs.usda.gov/r03/coconino; ok 200 https://www.nps.gov/sagu/planyourvisit/maps.htm; ok 200 https://www.fs.usda.gov/r03/coronado; ok 200 https://www.blm.gov/documents/arizona/public-room/map/agua-fria-national-monumen; ok 200 https://www.nps.gov/buov/planyourvisit/maps.htm; ok 200 https://www.nps.gov/orpi/learn/management/lawsandpolicies.htm; ok 403 https://azstateparks.com/verde-river/maps; ok 200 https://www.blm.gov/documents/arizona-phoenix-do/public-room/map/sonoran-desert-; ok 200 https://www.fs.usda.gov/r03/kaibab/maps-guides; ok 200 https://btarboretum.org/map/; dead 404 https://www.fws.gov/refuge/san-bernardino/visit-us/rules-policies; ok 200 https://www.fws.gov/refuge/leslie-canyon/map; "
+    "F-D3 links: ok 200 https://www.fs.usda.gov/r03/tonto; dead 404 https://www.fws.gov/refuge/bill-williams-river/visit-us/rules-policies; ok 200 https://www.nps.gov/glca/planyourvisit/maps.htm; ok 200 https://www.fs.usda.gov/r03/coconino; ok 200 https://www.nps.gov/sagu/planyourvisit/maps.htm; ok 200 https://www.fs.usda.gov/r03/coronado; ok 200 https://www.blm.gov/documents/arizona/public-room/map/agua-fria-national-monumen; ok 200 https://www.nps.gov/buov/planyourvisit/maps.htm; ok 200 https://www.nps.gov/orpi/learn/management/lawsandpolicies.htm; ok 200 https://azstateparks.com/verde-river/maps; ok 200 https://www.blm.gov/documents/arizona-phoenix-do/public-room/map/sonoran-desert-; ok 200 https://www.fs.usda.gov/r03/kaibab/maps-guides; ok 200 https://btarboretum.org/map/; dead 404 https://www.fws.gov/refuge/san-bernardino/visit-us/rules-policies; ok 200 https://www.fws.gov/refuge/leslie-canyon/map; "
    ],
    "verdict": "HOLD",
    "retest": {
@@ -1188,7 +1188,7 @@
      {
       "url": "https://azstateparks.com/verde-river/maps",
       "result": "ok",
-      "detail": "403"
+      "detail": "200"
      },
      {
       "url": "https://www.blm.gov/documents/arizona-phoenix-do/public-room/map/sonoran-desert-national-monument-map",
@@ -2572,8 +2572,8 @@
    "kind": "docs",
    "why": [],
    "notes": [
-    "F-D3 retest 20 links: 13 ok, 0 dead, 7 could not check",
-    "F-D3 links: ok 200 https://www.in.gov/dnr/fish-and-wildlife/files/fw-Busseron_Creek_FWA_Map.pdf; ok 200 https://www.in.gov/dA/12e8e9842b/turkey_run_trail.pdf?language_id=1; ok 200 https://www.in.gov/dA/e8d433e4b3/shades_pine_hills_np_trail_map.pdf?language_id=; ok 200 https://www.nps.gov/libo/learn/management/lawsandpolicies.htm; ok 200 https://www.in.gov/dA/4ed90eb9f3/shades_trail.pdf?language_id=1; ok 200 https://www.in.gov/dA/95c9b0b79d/pokagon_trail.pdf?language_id=1; ok 200 https://www.in.gov/dnr/fish-and-wildlife/files/HE-WabashCA_Parke1.pdf; ok 200 https://www.in.gov/dA/f3827c4344/spi-potawatomi-trail-3.jpg?force_download=1&fil; ok 200 https://in.gov/dnr/state-parks/property-rules-and-regulations; could not check connection error https://www.in.gov/dnr/state-parks/files/fo-Deam_Lake_map.pdf; could not check connection error https://www.in.gov/dA/f884c23fc7/fo-harrison-crawford-trail-map.pdf?l"
+    "F-D3 retest 20 links: 20 ok, 0 dead, 0 could not check",
+    "F-D3 links: ok 200 https://www.in.gov/dnr/fish-and-wildlife/files/fw-Busseron_Creek_FWA_Map.pdf; ok 200 https://www.in.gov/dA/12e8e9842b/turkey_run_trail.pdf?language_id=1; ok 200 https://www.in.gov/dA/e8d433e4b3/shades_pine_hills_np_trail_map.pdf?language_id=; ok 200 https://www.nps.gov/libo/learn/management/lawsandpolicies.htm; ok 200 https://www.in.gov/dA/4ed90eb9f3/shades_trail.pdf?language_id=1; ok 200 https://www.in.gov/dA/95c9b0b79d/pokagon_trail.pdf?language_id=1; ok 200 https://www.in.gov/dnr/fish-and-wildlife/files/HE-WabashCA_Parke1.pdf; ok 200 https://www.in.gov/dA/f3827c4344/spi-potawatomi-trail-3.jpg?force_download=1&fil; ok 200 https://in.gov/dnr/state-parks/property-rules-and-regulations; ok 200 https://www.in.gov/dnr/state-parks/files/fo-Deam_Lake_map.pdf; ok 200 https://www.in.gov/dA/f884c23fc7/fo-harrison-crawford-trail-map.pdf?language_id=; ok 200 https://www.in.gov/dA/4636e3d2ba"
    ],
    "verdict": "PASS",
    "retest": {
@@ -2647,13 +2647,13 @@
      },
      {
       "url": "https://www.in.gov/dnr/state-parks/files/fo-Deam_Lake_map.pdf",
-      "result": "could not check",
-      "detail": "connection error"
+      "result": "ok",
+      "detail": "200"
      },
      {
       "url": "https://www.in.gov/dA/f884c23fc7/fo-harrison-crawford-trail-map.pdf?language_id=1",
-      "result": "could not check",
-      "detail": "connection error"
+      "result": "ok",
+      "detail": "200"
      },
      {
       "url": "https://www.in.gov/dA/4636e3d2ba/mounds_trail.pdf?language_id=1",
@@ -2667,8 +2667,8 @@
      },
      {
       "url": "https://www.in.gov/dnr/fish-and-wildlife/files/fw-jasper-pulaski.pdf",
-      "result": "could not check",
-      "detail": "connection error"
+      "result": "ok",
+      "detail": "200"
      },
      {
       "url": "https://whiteriverstatepark.org/park-rules/",
@@ -2677,13 +2677,13 @@
      },
      {
       "url": "https://www.in.gov/dnr/fish-and-wildlife/files/fw-GoosePondMap.pdf",
-      "result": "could not check",
-      "detail": "connection error"
+      "result": "ok",
+      "detail": "200"
      },
      {
       "url": "https://www.in.gov/dnr/fish-and-wildlife/files/fw-Province_Pond_Map.pdf",
-      "result": "could not check",
-      "detail": "connection error"
+      "result": "ok",
+      "detail": "200"
      },
      {
       "url": "https://www.in.gov/dA/83329b738c/hardy_lake_trail.pdf?language_id=1",
@@ -2692,13 +2692,13 @@
      },
      {
       "url": "https://www.in.gov/dA/e7720fcb60/cagles_mill_lieber_poplargrove_electric.pdf?language_id=1",
-      "result": "could not check",
-      "detail": "connection error"
+      "result": "ok",
+      "detail": "200"
      },
      {
       "url": "https://www.in.gov/dnr/fish-and-wildlife/files/hovey.pdf",
-      "result": "could not check",
-      "detail": "connection error"
+      "result": "ok",
+      "detail": "200"
      }
     ]
    }
@@ -3528,7 +3528,7 @@
    "notes": [
     "no live copy: first time this file is published",
     "F-D3 retest 20 links: 18 ok, 0 dead, 2 could not check",
-    "F-D3 links: ok 200 https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/sga/Townli; ok 200 https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/sga/Goose_C; ok 200 https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/sga/Manist; ok 200 https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/sga/Elmwoo; ok 200 https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/sga/Holly_; ok 200 https://www.fws.gov/sites/default/files/documents/seney-general-brochure-2022-ac; ok 200 https://dnr.wisconsin.gov/topic/parks/menominee/maps; ok 200 https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/sga/Gratio; ok 200 https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/sga/Cass_Ci; could not check HTTP 503 https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/SGA/Crane_P; ok 200 https://www.b"
+    "F-D3 links: ok 200 https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/sga/Townli; ok 200 https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/sga/Goose_C; ok 200 https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/sga/Manist; ok 200 https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/sga/Elmwoo; ok 200 https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/sga/Holly_; ok 200 https://www.fws.gov/sites/default/files/documents/seney-general-brochure-2022-ac; ok 200 https://dnr.wisconsin.gov/topic/parks/menominee/maps; ok 200 https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/sga/Gratio; could not check HTTP 503 https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/sga/Cass_Ci; ok 200 https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/SGA/Crane_P; ok 200 https://www.b"
    ],
    "verdict": "PASS",
    "retest": {
@@ -3597,13 +3597,13 @@
      },
      {
       "url": "https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/sga/Cass_City_SGA_map.pdf",
-      "result": "ok",
-      "detail": "200"
+      "result": "could not check",
+      "detail": "HTTP 503"
      },
      {
       "url": "https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/SGA/Crane_Pond_SGA_map.pdf",
-      "result": "could not check",
-      "detail": "HTTP 503"
+      "result": "ok",
+      "detail": "200"
      },
      {
       "url": "https://www.bingmapsportal.com/terms/EndUserTerms",
