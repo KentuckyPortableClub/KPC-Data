@@ -18,7 +18,7 @@ Updated 2026-11-17. Every fact in <area>.json carries its source url, read date 
 | US-IN | 94 | 61 | 13 | 0 | 0 | 0 | 2 | 8 | 10 | 8 | 68 | 0 |
 | US-IL | 252 | 15 | 28 | 0 | 0 | 1 | 0 | 4 | 204 | 2 | 220 | 252 |
 | US-MO | 188 | 97 | 74 | 0 | 0 | 16 | 0 | 0 | 1 | 0 | 114 | 0 |
-| US-WI | 107 | 3 | 45 | 1 | 0 | 58 | 0 | 0 | 0 | 1 | 25 | 0 |
+| US-WI | 107 | 9 | 45 | 4 | 0 | 48 | 0 | 0 | 1 | 5 | 31 | 0 |
 | US-MN | 227 | 34 | 45 | 0 | 94 | 2 | 50 | 0 | 2 | 0 | 132 | 0 |
 | US-IA | 222 | 27 | 32 | 0 | 0 | 0 | 93 | 0 | 70 | 0 | 97 | 0 |
 | US-ND | 92 | 12 | 17 | 0 | 0 | 0 | 0 | 6 | 57 | 11 | 69 | 91 |
@@ -1127,7 +1127,7 @@ Updated 2026-11-17. Every fact in <area>.json carries its source url, read date 
   - reservable = true · “park headquarters. Each site has a fire ring and an open-air toilet. Reservations Camping reservations are required and can be made for the ”
   - restrooms = "yes (kind not stated)" · “about 5 miles away from the park headquarters. Each site has a fire ring and an open-air toilet. Reservations Camping reservations are requi”
   - rules.fires = "firewood! Due to the potential of carrying harmful tree pes · “on any site. Reserve a campsite online or by calling 1-888-947-2757. Firewood Don't move firewood! Due to the potential of carrying harmful ”
-- **Family campground (100 sites)** (US-1440:hq0, state, status ok, 12 facts) · [dnr.wisconsin.gov](https://dnr.wisconsin.gov/topic/parks/bigfoot/recreation/camping)
+- **Family campground (100 sites)** (US-1440:hq0, state, status ok, 11 facts) · [dnr.wisconsin.gov](https://dnr.wisconsin.gov/topic/parks/bigfoot/recreation/camping)
   - booking.how = "online: dnr.wisconsin.gov" · “link “Parks_Topic Contact_WSPS Reservations””
   - booking.url = "https://dnr.wisconsin.gov/node/26781" · “link “Parks_Topic Contact_WSPS Reservations” -> https://dnr.wisconsin.gov/node/26781”
   - dump_station = true · “ic table. There are 34 sites with electric pedestals. Campground Map The campground has a dump station, vault toilets and a shower building.”

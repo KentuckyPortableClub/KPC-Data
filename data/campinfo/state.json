@@ -1067,23 +1067,23 @@
    "checked": 107,
    "counts": {
     "camps": 107,
-    "kept_after_failed_read": 1,
-    "needs_browser": 1,
+    "kept_after_failed_read": 59,
+    "needs_browser": 4,
     "needs_key": 45,
     "no_page": 0,
     "not_official": 0,
-    "ok": 3,
-    "other": 0,
-    "resting": 58,
+    "ok": 9,
+    "other": 1,
+    "resting": 48,
     "robots": 0,
-    "with_booking": 25,
+    "with_booking": 31,
     "with_elevation": 0,
-    "with_facts": 4,
-    "with_sites": 1
+    "with_facts": 12,
+    "with_sites": 5
    },
    "left": 0,
    "status": "done",
-   "updated": "2026-11-15"
+   "updated": "2026-11-17"
   },
   "US-WV": {
    "camps": 105,
@@ -1180,7 +1180,7 @@
   "US-VA": "FCC listAsOfDates: robots.txt says no",
   "US-VT": "FCC listAsOfDates: robots.txt says no",
   "US-WA": "FCC listAsOfDates: robots.txt says no",
-  "US-WI": "FCC listAsOfDates: robots.txt says no",
+  "US-WI": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-WV": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-WY": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
  },
@@ -1621,10 +1621,10 @@
    "cell": {
     "carriers": null,
     "files": [],
-    "src": null,
-    "status": "FCC listAsOfDates: robots.txt says no"
+    "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2026-06-30?category=State&subcategory=Mobile%20Broadband",
+    "status": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
    },
-   "read": "2026-11-15"
+   "read": "2026-11-17"
   },
   "US-WV": {
    "cell": {
@@ -1646,6 +1646,7 @@
   }
  },
  "hosts": {
+  "dnr.wisconsin.gov": 1794995624.471894,
   "epqs.nationalmap.gov": 1794945664.950545,
   "gfp.sd.gov": 1794992499.336771,
   "parks.ky.gov": 1794987285.4093177,
@@ -2608,38 +2609,41 @@
  },
  "last": {
   "areas": [
-   "US-TN"
+   "US-WI"
   ],
   "fcc_token": true,
   "manners": {
-   "errors": 1,
-   "for_person": 1,
+   "errors": 0,
+   "for_person": 2,
    "for_person_urls": [
     [
-     "https://www.tn.gov/twra/wildlife-management-areas/cumberland-plateau-r3/cordell-hull-wma.html",
+     "https://dnr.wisconsin.gov/node/30776",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://dnr.wisconsin.gov/node/30776",
      "HTTP 403 twice"
     ]
    ],
    "host_rule": 0,
-   "requests": 15,
-   "rested": 439,
+   "requests": 12,
+   "rested": 166,
    "retry403": 2,
    "robots": 0,
    "strikes": 4
   },
   "ridb_key": false,
   "stat": {
-   "browser": 1,
-   "camps": 397,
+   "camps": 107,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 2,
-   "needs_key": 81,
-   "no_page": 269,
+   "needs_browser": 1,
+   "needs_key": 45,
+   "no_page": 0,
    "not_official": 0,
    "ok": 3,
-   "pages_read": 3,
-   "resting": 43,
+   "pages_read": 4,
+   "resting": 59,
    "ridb_calls": 0,
    "robots": 0,
    "skipped_fresh": 0
