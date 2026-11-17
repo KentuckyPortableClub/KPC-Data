@@ -151,10 +151,14 @@ def robots_ok(u):
     if h not in ROBOTS:
         try:
             ru = f'{urllib.parse.urlparse(u).scheme or "https"}://{h}/robots.txt'
-            with urllib.request.urlopen(urllib.request.Request(ru, headers={'User-Agent': UA}), timeout=15) as r: txt = r.read(30000).decode('utf-8', 'replace')
+            with urllib.request.urlopen(urllib.request.Request(ru, headers={'User-Agent': UA}), timeout=15) as r:
+                raw = r.read(kpc_manners.ROBOTS_MAX + 1)
         except Exception as e: ROBOTS[h] = None; ROBOTS_SAID[h] = 'no robots.txt (' + str(e)[:30] + ')'  # noqa: BLE001  (unreadability is #113; a fetch error still lands here)
         else:
             try:
+                if len(raw) > kpc_manners.ROBOTS_MAX:
+                    raise ValueError('robots.txt too long')
+                txt = raw.decode('utf-8', 'replace')
                 ROBOTS[h] = kpc_manners.parse_robots(txt)
                 ROBOTS_SAID[h] = ' | '.join(l.strip() for l in txt.splitlines() if l.strip() and not l.startswith('#'))[:160]
             except Exception as e:  # noqa: BLE001

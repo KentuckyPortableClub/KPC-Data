@@ -157,6 +157,119 @@ B.ROBOTS['127.0.0.1'] = rules('User-agent: *\nAllow: /a\nDisallow: /a/b\n')
 check(B.robots_ok('http://127.0.0.1/a/page.htm') is True, 'documents bot allows /a/page.htm')
 check(B.robots_ok('http://127.0.0.1/a/b/secret.htm') is False, 'documents bot refuses /a/b/secret.htm')
 
+
+# --- duplicate groups are merged (RFC 9309 2.2.1)
+rp = rules('User-agent: *\nDisallow: /a\n\nUser-agent: *\nDisallow: /private')
+check(K.robots_allowed(rp, UA, 'https://ex.test/private/x') is False,
+      'duplicate * groups are merged: Disallow: /private refuses /private/x')
+check(K.robots_allowed(rp, UA, 'https://ex.test/a/x') is False,
+      'duplicate * groups are merged: the first group\'s Disallow: /a still applies')
+check(K.robots_allowed(rp, UA, 'https://ex.test/ok') is True,
+      'a path neither merged * group names is still allowed')
+rp = rules('User-agent: kpc\nDisallow: /a\n\nUser-agent: KPC\nDisallow: /private\n\nUser-agent: *\nAllow: /\n')
+check(K.robots_allowed(rp, UA, 'https://ex.test/private/x') is False,
+      'duplicate groups for our product token are merged (and * is not mixed in)')
+check(K.robots_allowed(rp, UA, 'https://ex.test/ok') is True,
+      'a named match is not merged with the * Allow: /')
+
+# --- product token only, whole token (not a substring of the whole UA string)
+# Our UA is 'KPC bot: ...'; the product token is 'kpc'. 'User-agent: bot' must not match.
+rp = rules('User-agent: bot\nAllow: /\n\nUser-agent: *\nDisallow: /\n')
+check(K.robots_allowed(rp, UA, 'https://ex.test/q') is False,
+      "User-agent: bot does not match our product token; * Disallow: / still applies")
+rp = rules('User-agent: KPC\nDisallow: /private\n\nUser-agent: *\nAllow: /\n')
+check(K.robots_allowed(rp, UA, 'https://ex.test/private/x') is False,
+      'User-agent: KPC matches the product token (case-insensitive whole token)')
+rp = rules('User-agent: kp\nAllow: /\n\nUser-agent: *\nDisallow: /\n')
+check(K.robots_allowed(rp, UA, 'https://ex.test/q') is False,
+      'User-agent: kp is not a whole-token match for kpc; * Disallow: / still applies')
+check(K._product_token(UA) == 'kpc', 'product token of our UA is kpc')
+
+# --- percent-encoding: decode unreserved %XX, keep reserved encoded (RFC 9309 2.2.2)
+rp = rules('User-agent: *\nDisallow: /~joe/\n')
+check(K.robots_allowed(rp, UA, 'https://ex.test/%7Ejoe/x') is False,
+      'Disallow: /~joe/ also refuses /%7Ejoe/x (unreserved %7E is ~)')
+check(K.robots_allowed(rp, UA, 'https://ex.test/~joe/x') is False,
+      'Disallow: /~joe/ refuses /~joe/x')
+check(K.robots_allowed(rp, UA, 'https://ex.test/other') is True,
+      'Disallow: /~joe/ does not refuse an unrelated path')
+rp = rules('User-agent: *\nDisallow: /%7Ejoe/\n')
+check(K.robots_allowed(rp, UA, 'https://ex.test/~joe/x') is False,
+      'Disallow: /%7Ejoe/ also refuses /~joe/x')
+rp = rules('User-agent: *\nAllow: /\nDisallow: /a%2Fb\n')
+check(K.robots_allowed(rp, UA, 'https://ex.test/a/b') is True,
+      'Disallow: /a%2Fb (reserved slash stays encoded) does not refuse /a/b')
+check(K.robots_allowed(rp, UA, 'https://ex.test/a%2Fb') is False,
+      'Disallow: /a%2Fb does refuse the encoded path /a%2Fb')
+
+# --- self-audit: consecutive User-agent lines share one group
+rp = rules('User-agent: kpc\nUser-agent: otherbot\nDisallow: /private\n')
+check(K.robots_allowed(rp, UA, 'https://ex.test/private/x') is False,
+      'consecutive User-agent lines share Disallow: /private')
+rp = rules('User-agent: kpc\n\nUser-agent: otherbot\nDisallow: /private\n')
+check(K.robots_allowed(rp, UA, 'https://ex.test/private/x') is False,
+      'a blank line between User-agent lines still shares the group')
+rp = rules('User-agent: kpc\nCrawl-delay: 5\nUser-agent: otherbot\nDisallow: /private\n')
+check(K.robots_allowed(rp, UA, 'https://ex.test/private/x') is False,
+      'Crawl-delay between User-agent lines does not start a new group')
+
+# --- self-audit: directive names are case-insensitive
+rp = rules('USER-AGENT: *\nDisAllow: /private\nALLOW: /private/ok\n')
+check(K.robots_allowed(rp, UA, 'https://ex.test/private/x') is False,
+      'USER-AGENT / DisAllow are honoured (directive names are case-insensitive)')
+check(K.robots_allowed(rp, UA, 'https://ex.test/private/ok') is True,
+      'ALLOW is honoured as Allow (case-insensitive)')
+
+# --- self-audit: leading BOM and CRLF line endings
+rp = rules('\ufeffUser-agent: *\nDisallow: /private\n')
+check(K.robots_allowed(rp, UA, 'https://ex.test/private/x') is False,
+      'a leading BOM does not hide Disallow: /private')
+rp = rules('User-agent: *\r\nDisallow: /private\r\n')
+check(K.robots_allowed(rp, UA, 'https://ex.test/private/x') is False,
+      'CRLF line endings still apply Disallow: /private')
+rp = rules(b'\xef\xbb\xbfUser-agent: *\r\nDisallow: /private\r\n')
+check(K.robots_allowed(rp, UA, 'https://ex.test/private/x') is False,
+      'UTF-8 BOM bytes plus CRLF still apply Disallow: /private')
+
+# --- self-audit: a very long file or a NUL is a parse error (do not fetch)
+# A file over ROBOTS_MAX must not be silently truncated: a Disallow past the cap would fail open.
+long_err = None
+try:
+    K.parse_robots('User-agent: *\nDisallow: /\n' + '#' * (K.ROBOTS_MAX + 1))
+except Exception as e:  # noqa: BLE001
+    long_err = e
+check(long_err is not None, f'a robots.txt longer than ROBOTS_MAX is a parse error (got {long_err!r})')
+nul_err = None
+try:
+    K.parse_robots('User-agent: *\nDisallow: /\n\x00')
+except Exception as e:  # noqa: BLE001
+    nul_err = e
+check(nul_err is not None, f'a robots.txt with a NUL is a parse error (got {nul_err!r})')
+
+# Through Manners: an oversized robots.txt is unreadable, so the page is not fetched
+class Hlong(http.server.BaseHTTPRequestHandler):
+    def log_message(self, *a):
+        pass
+
+    def do_GET(self):
+        hits[('long', self.path)] = hits.get(('long', self.path), 0) + 1
+        if self.path == '/robots.txt':
+            self.send_response(200); self.end_headers()
+            self.wfile.write(b'User-agent: *\nDisallow: /secret\n' + b'#' * (K.ROBOTS_MAX + 1))
+            return
+        self.send_response(200); self.end_headers(); self.wfile.write(b'should-not-be-read')
+
+
+sl = http.server.ThreadingHTTPServer(('127.0.0.1', 0), Hlong)
+threading.Thread(target=sl.serve_forever, daemon=True).start()
+basel = f'http://127.0.0.1:{sl.server_address[1]}'
+Ml = K.Manners('too-long robots test'); Ml.gap = 0.0
+st_long, _, body_long, _ = Ml.get(basel + '/ok.htm')
+check(st_long == 'robots-unreadable', f'oversized robots.txt through get() is robots-unreadable (got {st_long!r})')
+check(body_long == b'' and hits.get(('long', '/ok.htm'), 0) == 0,
+      'an oversized robots.txt does not fail open: the page was not fetched')
+sl.shutdown()
+
 s.shutdown(); s2.shutdown()
 print('ALL PASS' if ok else 'FAILED')
 print('Python', PY)
