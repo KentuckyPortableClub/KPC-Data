@@ -33,6 +33,8 @@ campground we already list (federal, state, Kentucky hand-checked) it writes ONE
                   or menu item ('Shower Types') is never a fact; a lodge / cottage link is 'lodging_booking', not booking;
                   'phone_hint' = the first number in the campground section. GATE = 8 known Kentucky answers + >= 70% hand-key
                   agreement -> 'GATE=PASS/FAIL' line + state['test'].
+                  R8 a count from a sentence that names a particular campground belongs to that campground alone. If we
+                  can't tell which record the sentence names, the count is left blank. Blank beats wrong.
   MANNERS         kpc_manners.py (robots.txt obeyed, 1 request / 2 s per host incl. RIDB, back-off, three strikes = a day's rest).
   NEVER FAILS     exit 0 always; MINUTES (55) per chunk; state.json resumes; one commit per chunk by the workflow.
 
@@ -116,8 +118,17 @@ def status_text(st):
 MON = r'(?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)[a-z]*\.?'
 DATE = r'(?:early |mid-? ?|late )?' + MON + r'(?:\s+\d{1,2})?(?:,?\s+\d{4})?'
 TIME = r'\d{1,2}(?::\d\d)?\s*(?:a\.?m\.?|p\.?m\.?|noon|midnight)?'
-SITE = re.compile(r'(\d{1,4})[- ]+((?:[\w/-]+,?[- ]+){0,4}?)(campsites?|camp sites?|sites?|cabins?|cottages?|yurts?|lean-tos?|shelters?|pads?|spaces?)\b', re.I)
-SITE_TOTAL2 = re.compile(r'(?:campground|park|area|\bit|which|that|and|also)\s+(?:has|offers|features|with|provides|contains|includes|boasts)\s+(?:a total of\s+)?(\d{1,4})\s+(?:[\w-]+\s+){0,4}?(?:campsites?|sites?)|(\d{1,4})[- ]site campground|(\d{1,4})\s+sites? for (?:tents?|rvs?|campers)|total of (\d{1,4}) (?:campsites?|sites?)', re.I)
+# a whole number, optional thousands commas; not the tail of a larger number ("3,500" is 3500, never 500)
+NUM = r'(?<![\d,])(\d{1,3}(?:,\d{3})+|\d{1,4})(?![\d,])'
+
+
+def parse_count(s):
+    """A site-count number, including thousands with a comma (3,500 -> 3500)."""
+    return int(str(s).replace(',', ''))
+
+
+SITE = re.compile(NUM + r'[- ]+((?:[\w/-]+,?[- ]+){0,4}?)(campsites?|camp sites?|sites?|cabins?|cottages?|yurts?|lean-tos?|shelters?|pads?|spaces?)\b', re.I)
+SITE_TOTAL2 = re.compile(r'(?:campground|park|area|\bit|which|that|and|also)\s+(?:has|offers|features|with|provides|contains|includes|boasts)\s+(?:a total of\s+)?' + NUM + r'\s+(?:[\w-]+\s+){0,4}?(?:campsites?|sites?)|' + NUM + r'[- ]site campground|' + NUM + r'\s+sites? for (?:tents?|rvs?|campers)|total of ' + NUM + r' (?:campsites?|sites?)', re.I)
 PARTIAL_BEFORE = re.compile(r'\b(at|of|for|in|on|only|including|includes|and|plus|with|to)\s*$', re.I)
 TENT_W = re.compile(r'\btent', re.I); RV_W = re.compile(r'\brv\b|full[- ]hook|pull[- ]thr|back[- ]in|trailer|motorhome', re.I)
 CABIN_W = re.compile(r'cabin|cottage|yurt|lean-to|shelter', re.I); GROUP_W = re.compile(r'\bgroup', re.I)
@@ -303,6 +314,111 @@ def fee_line_ok(text, m):
     return bool(FEE_W.search(sent))
 
 
+def front_or_index_page(url):
+    """True when the URL is a site front page or a statewide camping / locations index, not one park's own page."""
+    p = urllib.parse.urlparse(url or '')
+    path = p.path.rstrip('/') or '/'
+    if p.scheme in ('http', 'https') and path == '/':
+        return True
+    if re.fullmatch(r'/(?:activity/)?camping', path, re.I):
+        return True
+    if re.search(r'/camping-at-[^/]+/locations/?$', path, re.I):
+        return True
+    return False
+
+
+def statewide_site_count(text, m):
+    """True when the sentence is about the state's parks as a whole, not this park's own count."""
+    sent = sentence_of(text, m.start(), m.end())
+    if re.search(r'\bacross the state\b|\bstatewide\b|\bstate[- ]wide\b|\bthroughout the state\b', sent, re.I):
+        return True
+    if re.search(r'\b(?:more than|over)\s+[\d,]+\s+(?:camp\s*)?sites\b', sent, re.I) and re.search(r'\b(?:state parks|historic sites|the state|our parks)\b', sent, re.I):
+        return True
+    if re.search(r'\b(?:state|provincial) parks\b(?: and historic sites?)?.{0,80}\b(?:more than|over|offer)', sent, re.I):
+        return True
+    return False
+
+
+def sentence_names_camp(text, m, name):
+    words = key_words(name or '')
+    if not words:
+        return False
+    sent = norm_name(sentence_of(text, m.start(), m.end()))
+    return all(w in sent.split() for w in words)
+
+
+def count_name_context(text, m=None, line=None):
+    """The count's sentence plus a short stretch just before it (a campground name often sits on the line above)."""
+    if m is None:
+        return line or text or ''
+    sent = sentence_of(text, m.start(), m.end())
+    prev = text[max(0, m.start() - 160):m.start()]
+    return (prev + ' ' + sent).strip()
+
+
+def tidy_named_camp(name):
+    """'Poplar Point Poplar Point' (a heading repeated in the sentence) -> 'Poplar Point'."""
+    words = str(name or '').split()
+    for n in range(1, len(words) // 2 + 1):
+        if words[:n] == words[n:2 * n]:
+            return tidy_named_camp(' '.join(words[n:]))
+    return ' '.join(words)
+
+
+GENERIC_COUNT_SUBJECT = re.compile(
+    r'^(?:the|this|our|a|an|its|their|each|every|these|those)(?:\s+(?:campground|park|area|site|camp|facility|property)s?)?$|'
+    r'^(?:campground|park|area|sites?|camp)$', re.I)
+NAMED_BEFORE_COUNT = re.compile(
+    r'\b((?:[A-Z][\w\'.-]+(?:\s+[A-Z][\w\'.-]+){0,5})(?:\s+(?:Campground|Horse Camp|State Park|State Forest|Recreation Area|Camp))?)'
+    r'\s+(?:offers|has|features|with|provides|contains|includes|boasts)\b')
+
+
+def named_campground_in_count(text, m=None, line=None):
+    """The particular campground a count sentence names, or None when it does not name one
+    ('The campground has 62 sites' names none; 'Poplar Point offers 579 sites' names Poplar Point)."""
+    ctx = count_name_context(text, m, line)
+    found = []
+    for mm in NAMED_BEFORE_COUNT.finditer(ctx):
+        name = tidy_named_camp(mm.group(1))
+        if name and not GENERIC_COUNT_SUBJECT.match(name):
+            found.append(name)
+    return found[-1] if found else None
+
+
+def bundle_name(name):
+    """True when the record name lists two or more campgrounds (joined with semicolons), so it is
+    not clearly any one of them."""
+    parts = [p.strip() for p in re.split(r'\s*;\s*', name or '') if p.strip()]
+    camps = [p for p in parts if re.search(r'campground|campsites?|\bcamp\b|horse camp', p, re.I) or len(p.split()) >= 2]
+    return len(camps) >= 2
+
+
+def record_clearly_is(record_name, named):
+    """True when this record is clearly the named campground alone, not a bundle of several."""
+    if not record_name or not named or bundle_name(record_name):
+        return False
+    words = key_words(named)
+    if not words:
+        return False
+    blob = set(norm_name(record_name).split())
+    return all(w in blob for w in words)
+
+
+def skip_site_count(text, m, url, name):
+    """True when this mention is not a count for this park. A whole-state sentence, or a state
+    homepage / shared camping page that does not name the park, is skipped. "State Park" (one park)
+    is not treated as "state parks". R8: a count from a sentence that names a particular
+    campground belongs to that campground alone; if this record is not clearly that one, skip."""
+    if statewide_site_count(text, m):
+        return True
+    if front_or_index_page(url) and not sentence_names_camp(text, m, name):
+        return True
+    named = named_campground_in_count(text, m)
+    if named and name and not record_clearly_is(name, named):
+        return True
+    return False
+
+
 def facts_from_text(text, url, name=''):
     """Every campground fact the regexes can read from one page's visible text. Unknown = not present (never guessed)."""
     F = {}
@@ -312,8 +428,9 @@ def facts_from_text(text, url, name=''):
     def take(k, n, m):
         if sites[k] is None or (k == 'total' and n > sites[k]): sites[k] = n; lines[k] = line_at(text, m.start(), m.end())
     for m in SITE.finditer(text):
-        n = int(m.group(1)); q = m.group(2) or ''; noun = m.group(3).lower(); before = text[max(0, m.start() - 24):m.start()]
+        n = parse_count(m.group(1)); q = m.group(2) or ''; noun = m.group(3).lower(); before = text[max(0, m.start() - 24):m.start()]
         if n == 0 or n > 2000 or re.search(r'\bweb\s*$|\bhistoric\s*$', before, re.I): continue
+        if skip_site_count(text, m, url, name): continue
         partial = bool(PARTIAL_BEFORE.search(before)) or bool(AMPS.search(before)) or bool(re.search(r'(water|electric|sewer|hook)\w*\s*$', before, re.I))
         if GROUP_W.search(q) or noun.startswith('group'): take('group', n, m)
         elif CABIN_W.search(q) or CABIN_W.search(noun): take('cabin', n, m)
@@ -321,7 +438,10 @@ def facts_from_text(text, url, name=''):
         elif PRIM_W.search(q): take('primitive', n, m)
         elif RV_W.search(q): take('rv', n, m)
         elif PLAIN_W.match(q) and not partial and noun.startswith(('camp', 'site')): take('total', n, m)
-    for m in SITE_TOTAL2.finditer(text): take('total', int(next(g for g in m.groups() if g)), m)
+    for m in SITE_TOTAL2.finditer(text):
+        n = parse_count(next(g for g in m.groups() if g))
+        if n == 0 or n > 2000 or skip_site_count(text, m, url, name): continue
+        take('total', n, m)
     for k, v in sites.items():
         if v is not None: F['sites.' + k] = fact(v, url, lines[k])
     for m in RVMAX.finditer(text):
@@ -739,6 +859,75 @@ def names_this(link, name):
     return any(w in slug for w in key_words(name))
 
 
+def page_names_camp(url, name, text=''):
+    """True when this page is (or names) the campground: the URL slug has a distinctive word of the
+    name, or the page text does. A front page or statewide camping index never counts as the park's
+    own page."""
+    if front_or_index_page(url):
+        return False
+    if names_this(url, name):
+        return True
+    words = key_words(name or '')
+    return bool(words) and all(w in norm_name(text or '').split() for w in words)
+
+
+def drop_shared_site_counts(D):
+    """A site count taken from one URL for many different parks is a statewide or shared page, not
+    each park's own count. Those counts are left blank. Sub-records of the same park (the id before
+    a colon) count as one park, so a single park split into four records is not treated as shared."""
+    url_parks = {}
+    for cid, r in (D.get('camps') or {}).items():
+        src = (r.get('facts_src') or {}).get('sites.total') or {}
+        u = src.get('url')
+        if not u or (r.get('sites') or {}).get('total') is None:
+            continue
+        url_parks.setdefault(u, set()).add(str(cid).split(':')[0])
+    bad = {u for u, parks in url_parks.items() if len(parks) > 3}
+    n = 0
+    for r in (D.get('camps') or {}).values():
+        src = (r.get('facts_src') or {}).get('sites.total') or {}
+        if src.get('url') not in bad:
+            continue
+        if r.get('sites'):
+            r['sites']['total'] = None
+        (r.get('facts_src') or {}).pop('sites.total', None)
+        n += 1
+    return n
+
+
+def _blank_site_total(r):
+    if r.get('sites'):
+        r['sites']['total'] = None
+    (r.get('facts_src') or {}).pop('sites.total', None)
+
+
+def apply_named_site_counts(D):
+    """R8: a count from a sentence that names a particular campground belongs to that
+    campground alone. If we can't tell which record the sentence names, the count is
+    left blank. Blank beats wrong. Sub-records of one park are judged one by one: a
+    clearly named Poplar Point keeps 579; the others go blank; if none is clearly that
+    campground, all of them go blank."""
+    groups = {}
+    for cid, r in (D.get('camps') or {}).items():
+        src = (r.get('facts_src') or {}).get('sites.total') or {}
+        if (r.get('sites') or {}).get('total') is None or not (src.get('line') or src.get('url')):
+            continue
+        named = named_campground_in_count(src.get('line') or '')
+        if not named:
+            continue
+        key = (src.get('url') or '', ' '.join(key_words(named)), (r.get('sites') or {}).get('total'))
+        groups.setdefault(key, []).append((cid, r, named))
+    n = 0
+    for rows in groups.values():
+        named = rows[0][2]
+        clear = [cid for cid, rec in (D.get('camps') or {}).items() if record_clearly_is(rec.get('name'), named)]
+        keep = clear[0] if len(clear) == 1 else None
+        for cid, r, _ in rows:
+            if cid != keep:
+                _blank_site_total(r); n += 1
+    return n
+
+
 def names_other_camps(text, name):
     """True when the page names 2+ campgrounds other than this one (a list page)."""
     others = {m.group(0).lower() for m in re.finditer(r'\b[A-Z][\w\'-]+(?:\s+[A-Z][\w\'-]+){0,3}\s+(?:Campground|Horse Camp)\b', text) if norm_name(m.group(0)) != norm_name(name)}
@@ -783,6 +972,8 @@ def one_camp(area, r, state):
                             F2 = facts_from_text(text2, sub, r['name']) if text2 else {}
                             if text2: F2.update(links_facts(links2, sub))
                             for k2, v2 in F2.items():
+                                if k2.startswith('sites.') and not page_names_camp(sub, r['name'], text2):
+                                    continue
                                 if k2 not in F: F[k2] = v2
                 apply_facts(rec, F); STAT['ok'] += 1
                 # round 4 rule 3: a state-park page that gave no campground facts at all is probably filled by script -> say so
@@ -1163,6 +1354,12 @@ def run_area(area, state):
     except Exception as e:  # noqa: BLE001
         STAT['errors'] += 1; notice(f'{area}: browser pass stopped: {str(e)[:100]}')
     merge_duplicates(D)
+    dropped = drop_shared_site_counts(D)
+    if dropped:
+        notice(f'{area}: left {dropped} site counts blank (same page used for many parks)')
+    named_drop = apply_named_site_counts(D)
+    if named_drop:
+        notice(f'{area}: left {named_drop} site counts blank (a named count belongs to one campground, or to none if we cannot tell)')
     D['cell_status'] = (state.get('cell_status') or {}).get(area) or 'needs FCC token'
     for rr in D['camps'].values():
         if isinstance(rr.get('cell'), dict): rr['cell'] = None   # old per-record blocks go
