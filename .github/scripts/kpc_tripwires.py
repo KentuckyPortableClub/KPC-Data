@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""TRIPWIRES T1-T5 (KPC owner, 2026-11-17; the owner's KEY MATCHING RULINGS D1-D11 in KPC-Links .claude/notes/mapping.md).
-A REPORT, NOT A RULE. This bot counts five things that must be true of every join in the answer keys and lists the parks that break
+"""TRIPWIRES T1-T6 (KPC owner, 2026-11-17; the owner's KEY MATCHING RULINGS D1-D11 in KPC-Links .claude/notes/mapping.md).
+A REPORT, NOT A RULE. This bot counts six things that must be true of every join in the answer keys and lists the parks that break
 them, grouped by pattern, for a person to work. It decides nothing: no key is built or changed, nothing on the map changes, no join
 is made or removed, no 2-fer is held. D2 is ON TRIAL: the slack numbers below are first guesses, and nothing binds until the owner
 says so. D10 (tripwire parks not sure for 2-fers) is NOT built here: it waits for the 2-fer phase.
@@ -26,6 +26,11 @@ side branch `tripwires`; never main of KPC-Links). No layer address is written o
   T5  a park's land comes from a layer of its own kind. That needs D11's labels (data/state-gis.json 'what'); until a rule reads
       them, only the SIZE FORM is counted: a record joined by name only (m row 'name'), drawn in the park's saved outline, more than
       SIZE_X times the acres of the record that holds the pin (the key's bk row at 0 km), from another layer. US.
+  T6  same land through different records (Handoff 8 Part 3): two parks of one area whose saved outlines are SAME_LAND (90 %) or
+      more the same land, the overlap over the SMALLER outline, and that share NO record id (a shared id is T1's). Some states
+      publish one ground twice under two ids (Missouri sgmoc / sgmoh, North Carolina ncg / sgncb, North Dakota ndw / sgnda), so T1
+      cannot see it. Each row says 'twin' (also 90 % of the larger: one ground, two parks) or 'inside' (the smaller sits inside the
+      larger). Busiest first by POTA activations (KPC-Data data/parkinfo field 7). Standard library only, scan-line areas. US.
 
 Output (--out):
   counts/latest.json        this run's counts per area and per key, the slack numbers used, binds: false, the jump from the last run
@@ -33,7 +38,7 @@ Output (--out):
   waiting/<T>/<pattern>.json  the rows, grouped by pattern, for a person (the waiting room on this branch)
   README.md                 what this branch is
 and, with --not-sure FILE (D10, KPC-Data main data/waiting/tripwires/not-sure.json), the small list the 2-fer bot reads: every park
-on T1, T2 or T4, with its reasons, that a person has not cleared (--cleared FILE, data/waiting/tripwires/cleared.json, written by
+on T1, T2, T4 or T6, with its reasons, that a person has not cleared (--cleared FILE, data/waiting/tripwires/cleared.json, written by
 a person only: {"parks": {"US-1234": {"by": ..., "date": ..., "why": ...}}}). A T1 record whose every join is a person's (same land
 under two numbers, D9) puts no park on it. The 2-fer bot (KPC-Links kpc_fers.py, D10) treats a listed park as NOT SURE; its
 outline stays on the map. No list = the 2-fer bot changes nothing.
@@ -43,7 +48,7 @@ really wrong: no KPC-Links checkout, locations.json unreadable, or no key file a
   python3 kpc_tripwires.py run --links <KPC-Links checkout> --out <tripwires branch checkout> [--keys us,ca,world] [--date YYYY-MM-DD]
   python3 kpc_tripwires.py run ... --not-sure <KPC-Data>/data/waiting/tripwires/not-sure.json --cleared <KPC-Data>/data/waiting/tripwires/cleared.json
   python3 kpc_tripwires.py run ... --dry-run      (counts printed, nothing written)"""
-import argparse, csv, datetime as _dt, glob, io, json, math, os, pathlib, re, socket, sys
+import argparse, bisect, csv, datetime as _dt, glob, io, json, math, os, pathlib, re, socket, sys
 
 # ---- first guesses ON TRIAL (D2): the owner tunes these before anything binds. They change counts only, never a key.
 GAP_KM = 25.0          # T2: an empty gap over this many km between two pieces cuts the chain
@@ -53,6 +58,7 @@ SIZE_X = 3.0           # T5 size form: a name-only record over this many times t
 PERSON_HOW = ('reviewed', 'official trail')   # T4 'a person is behind the join'
 BINDS = False          # nothing binds until the owner says (D2 on trial)
 NOV17 = {'us': {'T1': 1366, 'T2': 268, 'T4': 580, 'T5': 82}, 'ca': {'T1': 348}, 'world': {'T1': 5564}}   # the owner's census, a sanity check only
+PARKINFO = pathlib.Path(__file__).resolve().parents[2] / 'data/parkinfo'   # KPC-Data's own (T6 busiest first)
 KEY_GLOB = {'us': 'data/us-key/US-??.json', 'ca': 'data/ca-key/CA-??.json', 'world': 'data/world-key/*.json'}
 ADDR = re.compile(r'(?:svc:)?(?:https?|ftp|file):[^\s"\'<>|,\]\)]*', re.I)
 
@@ -315,6 +321,200 @@ def t5_size(keys, outl):
     return rows
 
 
+# ---------------------------------------------------------------- T6 (same land through different records)
+# Some states publish the SAME ground twice, in two layers under different ids (Missouri sgmoc / sgmoh, North Carolina ncg / sgncb,
+# North Dakota ndw / sgnda). Two parks can then carry the same land and T1 (one record id on two parks) never sees it. T6 compares
+# the drawn outlines themselves: two parks of one area whose saved outlines are SAME_LAND or more the same land (the overlap area
+# over the SMALLER outline's area) and that share NO record id (a shared id is T1's). Standard library only, like T2 / T4: every
+# outline of the area goes onto one azimuthal equidistant plane centred on the area (the plane T2 / T4 use; over a state its area
+# scale is off by well under 1 %, and both outlines of a pair sit at the same spot, so their ratio is not moved). Areas are measured
+# by scan lines: each outline's area on T6_LINES horizontal lines across its own box, the common land on T6_LINES lines across the
+# band the two boxes share; every line is cut EXACTLY against the outline(s) (pieces united, holes respected) and the covered length
+# times the line spacing summed (the midpoint rule). Checked against exact polygon overlay on Missouri and North Carolina: the same
+# pairs, the share within 0.5 %.
+SAME_LAND = 0.90       # T6: overlap / smaller outline at or over this = the same land (owner, Handoff 8 Part 3)
+T6_LINES = 400         # T6: scan lines per outline area and per pair overlap
+T6_IDS = 12            # T6: record ids shown per park in a row (the full count is beside them)
+T6_ON_NOT_SURE = ('twin', 'inside')   # T6 kinds put on the D10 not-sure list (ON TRIAL: the handoff lists both; 'inside' is mostly a
+                                      # small park inside a big one, e.g. a wilderness in a national forest, so the owner may narrow it)
+
+
+def _outline_rings(rec, f):
+    """[[ring xy, ...] per polygon] of one saved outline on plane f (rings under 3 points left out)."""
+    out = []
+    for poly in _polygons(rec.get('geometry')):
+        rings = [r for r in (_ring_xy(x, f) for x in poly or []) if len(r) >= 3]
+        if rings: out.append(rings)
+    return out
+
+
+def _bbox(polys):
+    xs = [x for rings in polys for x, _ in rings[0]]; ys = [y for rings in polys for _, y in rings[0]]
+    return (min(xs), min(ys), max(xs), max(ys)) if xs else None
+
+
+def _edges(polys):
+    """The edges of an outline, per polygon (each polygon's rings together, so holes are holes), sorted by their low y, for the scan
+    lines: [(lows, [(lo, hi, x1, y1, x2, y2), ...], top y) per polygon]. Flat edges are left out (a scan line never cuts them)."""
+    out = []
+    for rings in polys:
+        es = []
+        for ring in rings:
+            for k in range(len(ring)):
+                (x1, y1), (x2, y2) = ring[k - 1], ring[k]
+                if y1 != y2: es.append((min(y1, y2), max(y1, y2), x1, y1, x2, y2))
+        es.sort()
+        if es: out.append(([e[0] for e in es], es, max(e[1] for e in es)))
+    return out
+
+
+def _line_spans(edges, y0, dy, n):
+    """For each of n scan lines y = y0 + (i + 0.5) dy: the merged x spans covered by the outline (each polygon even-odd over its own
+    rings, so holes are holes; the polygons united, so two records drawn over each other count once). Only the edges that reach the
+    lines' band are read."""
+    per = [[] for _ in range(n)]; top = y0 + n * dy
+    for lows, es, ymax in edges:
+        if ymax <= y0 or lows[0] >= top: continue      # this polygon is outside the band
+        cuts = {}
+        for lo, hi, x1, y1, x2, y2 in es[:bisect.bisect_left(lows, top)]:
+            if hi <= y0: continue
+            i0 = max(0, math.ceil((lo - y0) / dy - 0.5)); i1 = min(n - 1, math.ceil((hi - y0) / dy - 0.5) - 1)
+            for i in range(i0, i1 + 1):
+                y = y0 + (i + 0.5) * dy
+                if lo <= y < hi: cuts.setdefault(i, []).append(x1 + (y - y1) * (x2 - x1) / (y2 - y1))
+        for i, c in cuts.items():
+            if len(c) < 2: continue
+            c.sort(); per[i].extend((c[j], c[j + 1]) for j in range(0, len(c) - 1, 2))
+    out = []
+    for spans in per:
+        spans.sort(); merged = []
+        for a, b in spans:
+            if merged and a <= merged[-1][1]: merged[-1][1] = max(merged[-1][1], b)
+            else: merged.append([a, b])
+        out.append(merged)
+    return out
+
+
+def _len(spans):
+    return sum(b - a for a, b in spans)
+
+
+def _overlap_len(s1, s2):
+    i = j = 0; tot = 0.0
+    while i < len(s1) and j < len(s2):
+        a, b = max(s1[i][0], s2[j][0]), min(s1[i][1], s2[j][1])
+        if b > a: tot += b - a
+        if s1[i][1] < s2[j][1]: i += 1
+        else: j += 1
+    return tot
+
+
+def scan_area(edges, box, lines=None):
+    """The area (m2) of one outline on its own scan lines (T6_LINES across its own box)."""
+    n = lines or T6_LINES
+    if not box or box[3] <= box[1]: return 0.0
+    dy = (box[3] - box[1]) / n
+    return sum(_len(u) for u in _line_spans(edges, box[1], dy, n)) * dy
+
+
+def overlap_area(ea, eb, ba, bb, lines=None):
+    """The common land (m2) of two outlines: T6_LINES scan lines across the band their boxes share (no common land lies outside it),
+    each line cut exactly against both outlines."""
+    if not ba or not bb: return 0.0
+    y0, y1 = max(ba[1], bb[1]), min(ba[3], bb[3]); n = lines or T6_LINES
+    if y1 <= y0: return 0.0
+    dy = (y1 - y0) / n
+    return sum(_overlap_len(u, v) for u, v in zip(_line_spans(ea, y0, dy, n), _line_spans(eb, y0, dy, n))) * dy
+
+
+def same_land(pa, pb, lines=None):
+    """(overlap m2, area a m2, area b m2) of two outlines (lists of polygons on one plane). The overlap is capped at the smaller area
+    (the two are measured on different lines, so a twin could otherwise read a hair over 100 %)."""
+    ea, eb, ba, bb = _edges(pa), _edges(pb), _bbox(pa), _bbox(pb)
+    ma, mb = scan_area(ea, ba, lines), scan_area(eb, bb, lines)
+    return min(overlap_area(ea, eb, ba, bb, lines), ma, mb), ma, mb
+
+
+def read_activations(parkinfo):
+    """{ref: POTA activation count} from KPC-Data data/parkinfo/*.json (field 7 of each park row; a park with no count = 0)."""
+    act = {}
+    for f in sorted(glob.glob(str(pathlib.Path(parkinfo) / '*.json'))):
+        try: pk = json.load(open(f, encoding='utf-8')).get('parks')
+        except Exception: continue  # noqa: BLE001
+        for ref, row in (pk or {}).items() if isinstance(pk, dict) else ():
+            v = row[7] if isinstance(row, list) and len(row) > 7 else None
+            if isinstance(v, (int, float)) and not isinstance(v, bool): act[str(ref)] = max(act.get(str(ref), 0), int(v))
+    return act
+
+
+def t6_same_land(outl, keys, act=None, share=None):
+    """Rows: one per pair of parks of one area whose saved outlines are `share` (SAME_LAND) or more the same land, over the smaller
+    outline, and that share no record id (not in the outlines' record_ids, not in any US key m row of either park). Busiest first
+    (the two parks' POTA activations added), then the larger share. A pair seen in two areas is one row listing both."""
+    share = SAME_LAND if share is None else share; act = act or {}
+    ids = {}
+    for ref, recs in outl.items():
+        for _a, r in recs: ids.setdefault(ref, set()).update(str(x) for x in (r.get('record_ids') or []))
+    for _area, pk in keys.items():
+        for ref, p in pk.items():
+            if ref in ids: ids[ref].update(str(m[0]) for m in (p.get('m') or []) if m)
+    by_area = {}
+    for ref, recs in outl.items():
+        for area, r in recs: by_area.setdefault(area, []).append((ref, r))
+    pairs = {}
+    for area, items in sorted(by_area.items()):
+        boxes = [b for _r, rec in items for b in [_bbox_ll(rec)] if b]
+        if not boxes: continue
+        lat0 = (min(b[1] for b in boxes) + max(b[3] for b in boxes)) / 2
+        lon0 = _mid_lon([((b[0] + b[2]) / 2) for b in boxes])
+        f = _plane(lat0, lon0)
+        geo = []
+        for ref, rec in items:
+            polys = _outline_rings(rec, f); bb = _bbox(polys)
+            if bb: es = _edges(polys); geo.append((bb[0], ref, rec, es, bb, scan_area(es, bb)))
+        geo.sort(key=lambda g: (g[0], g[1]))
+        for i, (_x, ra, reca, pa, ba, aa) in enumerate(geo):
+            for _x2, rb, recb, pb, bb, ab in geo[i + 1:]:
+                if bb[0] > ba[2]: break                                   # sorted by west edge: nothing further east can touch
+                if rb == ra or bb[1] > ba[3] or bb[3] < ba[1]: continue
+                small = min(aa, ab)
+                box = max(0.0, min(ba[2], bb[2]) - max(ba[0], bb[0])) * max(0.0, min(ba[3], bb[3]) - max(ba[1], bb[1]))
+                if small <= 0 or box < 0.999 * share * small: continue   # the boxes' common rectangle cannot hold that much land
+                if ids.get(ra, set()) & ids.get(rb, set()): continue      # a shared record id is T1's
+                ma, mb = aa, ab; lo = min(ma, mb)
+                ov = min(overlap_area(pa, pb, ba, bb), lo)
+                if lo <= 0 or ov / lo < share: continue
+                key = tuple(sorted((ra, rb)))
+                if key in pairs: pairs[key]['areas'] = sorted(set(pairs[key]['areas']) | {area}); continue
+                (r1, p1, m1), (r2, p2, m2) = sorted([(ra, reca, ma), (rb, recb, mb)], key=lambda t: t[0])
+                twin = ov / max(ma, mb) >= share
+                la = '+'.join(sorted(p1.get('layers') or sorted({layer_of(x) for x in p1.get('record_ids') or []}) or ['?']))
+                lb = '+'.join(sorted(p2.get('layers') or sorted({layer_of(x) for x in p2.get('record_ids') or []}) or ['?']))
+                pairs[key] = {'parks': [r1, r2], 'names': [str(p1.get('name') or ''), str(p2.get('name') or '')], 'areas': [area],
+                              'same_land_share': round(ov / lo, 3), 'share_of_larger': round(ov / max(ma, mb), 3),
+                              'kind': 'twin' if twin else 'inside',
+                              'acres': [round(m1 / 4046.8564224), round(m2 / 4046.8564224)], 'overlap_acres': round(ov / 4046.8564224),
+                              'records': [sorted(str(x) for x in p1.get('record_ids') or [])[:T6_IDS], sorted(str(x) for x in p2.get('record_ids') or [])[:T6_IDS]],
+                              'record_counts': [len(p1.get('record_ids') or []), len(p2.get('record_ids') or [])],
+                              'layers': [la, lb], 'activations': [act.get(r1, 0), act.get(r2, 0)],
+                              'pattern': ('twin_' if twin else 'inside_') + '_x_'.join(sorted({la, lb}) if la != lb else [la, la])}
+    rows = list(pairs.values())
+    rows.sort(key=lambda r: (-sum(r['activations']), -max(r['activations']), -r['same_land_share'], r['parks']))
+    return rows
+
+
+def _bbox_ll(rec):
+    pts = [c for poly in _polygons(rec.get('geometry')) for c in (poly[0] if poly else []) if c is not None and len(c) >= 2]
+    if not pts: return None
+    return (min(float(c[0]) for c in pts), min(float(c[1]) for c in pts), max(float(c[0]) for c in pts), max(float(c[1]) for c in pts))
+
+
+def _mid_lon(lons):
+    """The middle longitude of an area, right across the date line too (Alaska's Aleutians): the mean of the unit vectors."""
+    sx = sum(math.cos(math.radians(x)) for x in lons); sy = sum(math.sin(math.radians(x)) for x in lons)
+    return math.degrees(math.atan2(sy, sx)) if lons else 0.0
+
+
 # ---------------------------------------------------------------- T3 (from the key build)
 def t3_hook(links, kind):
     """T3 IS PRODUCED BY THE KEY BUILD, NOT BY THIS BOT (it needs the build's own read of the layer: D1). When a key build writes
@@ -350,10 +550,10 @@ def run(a):
     kinds = [k.strip() for k in a.keys.split(',') if k.strip() in KEY_GLOB]
     date = a.date or _dt.date.today().isoformat()
     report = {'date': date, 'binds': BINDS, 'report_only': True,
-              'about': 'Tripwires T1-T5 (owner rulings D1-D11, 17 Nov 2026). A REPORT: it changes no key, no join, no map and no 2-fer. '
+              'about': 'Tripwires T1-T6 (owner rulings D1-D11, 17 Nov 2026; T6 Handoff 8). A REPORT: it changes no key, no join, no map and no 2-fer. '
                        'D2 is on trial: the slack numbers are first guesses; nothing binds until the owner says. D10 is not built.',
               'on_trial': {'T2_gap_km': GAP_KM, 'T4_edge_min_m': EDGE_MIN_M, 'T4_edge_share_of_radius': EDGE_SHARE, 'T5_size_times': SIZE_X,
-                           'T4_person': list(PERSON_HOW)},
+                           'T4_person': list(PERSON_HOW), 'T6_same_land_share': SAME_LAND, 'T6_on_not_sure': list(T6_ON_NOT_SURE)},
               'reference_nov17': NOV17, 'totals': {}, 'areas': {}, 'unread': [], 'not_counted': {}}
     waiting = {}
     all_keys = {}
@@ -392,8 +592,16 @@ def run(a):
                 tot['T5'] = count_refs(r5); tot['T5_form'] = 'size form only (D11 labels not read by a rule yet)'
                 for ar, n in per_area(r5).items(): report['areas'].setdefault(ar, {})['T5'] = n
                 waiting.setdefault('T5', []).extend(r5)
+            if outl:
+                r6 = t6_same_land(outl, keys, read_activations(a.parkinfo or PARKINFO))
+                tot['T6'] = len(r6); tot['T6_parks'] = len({x for r in r6 for x in r['parks']})
+                tot['T6_kinds'] = {k: sum(1 for r in r6 if r['kind'] == k) for k in ('twin', 'inside')}
+                for ar, n in per_area(r6).items(): report['areas'].setdefault(ar, {})['T6'] = n
+                report['t6_busiest'] = [{k: r[k] for k in ('parks', 'names', 'areas', 'same_land_share', 'kind', 'activations')} for r in r6[:25]]
+                waiting.setdefault('T6', []).extend(r6)
+                if r6: say('notice', 'Tripwires us T6 per area', ', '.join(f'{ar} {n}' for ar, n in sorted(per_area(r6).items(), key=lambda x: (-x[1], x[0]))))
         else:
-            tot.update({'T2': 'no saved outlines for this key', 'T4': 'no saved outlines for this key', 'T5': 'no saved outlines for this key'})
+            tot.update({t: 'no saved outlines for this key' for t in ('T2', 'T4', 'T5', 'T6')})
         report['totals'][kind] = tot
     out = pathlib.Path(a.out) if a.out else None
     prev = None
@@ -407,7 +615,7 @@ def run(a):
     for kind, tot in report['totals'].items():
         ref = NOV17.get(kind, {})
         cm = f" (census way {tot['T1_census_method']}, 17 Nov: {ref['T1']})" if 'T1_census_method' in tot else ''
-        say('notice', f'Tripwires {kind}', ', '.join(f"{t} {tot.get(t)}" + (cm if t == 'T1' and cm else f" (17 Nov: {ref[t]})" if t in ref else '') for t in ('T1', 'T2', 'T3', 'T4', 'T5') if t in tot))
+        say('notice', f'Tripwires {kind}', ', '.join(f"{t} {tot.get(t)}" + (cm if t == 'T1' and cm else f" (17 Nov: {ref[t]})" if t in ref else '') for t in ('T1', 'T2', 'T3', 'T4', 'T5', 'T6') if t in tot))
     for kind, j in report['jump'].items():
         if j: say('notice', f'Tripwires {kind} since last run', ', '.join(f'{t} {d:+d}' for t, d in j.items()))
     if a.dry_run or not out:
@@ -432,20 +640,25 @@ def read_cleared(path):
 
 
 def not_sure_list(waiting, cleared, date):
-    """D10: {ref: [reasons]} for every park on T1 (not a person's same-land record), T2 or T4, less the parks a person cleared."""
+    """D10: {ref: [reasons]} for every park on T1 (not a person's same-land record), T2, T4 or T6, less the parks a person cleared."""
     why = {}
     for r in waiting.get('T1', []):
         if r.get('all_person'): continue
         for ref in r['parks']: why.setdefault(ref, set()).add('T1')
     for r in waiting.get('T2', []): why.setdefault(r['ref'], set()).add('T2')
     for r in waiting.get('T4', []): why.setdefault(r['ref'], set()).add('T4')
+    for r in waiting.get('T6', []):
+        if r.get('kind') not in T6_ON_NOT_SURE: continue
+        for ref in r['parks']: why.setdefault(ref, set()).add('T6')
     left = sorted(set(why) & cleared)
-    return {'about': 'D10 (owner, 17 Nov 2026): parks on tripwire T1, T2 or T4 are NOT SURE for 2-fers until a person clears them '
+    return {'about': 'D10 (owner, 17 Nov 2026): parks on tripwire T1, T2, T4 or T6 are NOT SURE for 2-fers until a person clears them '
                      '(data/waiting/tripwires/cleared.json). Their outline stays on the map. Written by kpc_tripwires.py; read by KPC-Links kpc_fers.py.',
             'reasons': {'T1': 'one of its records is also joined to another park in the same key file (not a person\'s same-land record)',
                         'T2': f'a piece of its land is cut off from its pin by an empty gap over {GAP_KM:g} km',
-                        'T4': f'its pin is outside its land by more than max({EDGE_MIN_M:g} m, {EDGE_SHARE:g} x its radius) and no person is behind the join'},
-            'detail': 'the rows behind each reason: KPC-Data branch tripwires, waiting/T1, T2, T4',
+                        'T4': f'its pin is outside its land by more than max({EDGE_MIN_M:g} m, {EDGE_SHARE:g} x its radius) and no person is behind the join',
+                        'T6': f'its drawn land is {SAME_LAND:.0%} or more the same land as another park of its area (over the smaller outline) '
+                              'through different records (no record id shared): until a person says same land, two park numbers, or one gives it back'},
+            'detail': 'the rows behind each reason: KPC-Data branch tripwires, waiting/T1, T2, T4, T6',
             'date': date, 'on_trial': True, 'cleared_left_out': len(left),
             'parks': {ref: sorted(w) for ref, w in sorted(why.items()) if ref not in cleared}}
 
@@ -454,7 +667,7 @@ def jump(prev, now):
     out = {}
     for kind, tot in now['totals'].items():
         was = ((prev or {}).get('totals') or {}).get(kind) or {}
-        out[kind] = {t: tot[t] - was[t] for t in ('T1', 'T2', 'T3', 'T4', 'T5') if isinstance(tot.get(t), int) and isinstance(was.get(t), int) and tot[t] != was[t]}
+        out[kind] = {t: tot[t] - was[t] for t in ('T1', 'T2', 'T3', 'T4', 'T5', 'T6') if isinstance(tot.get(t), int) and isinstance(was.get(t), int) and tot[t] != was[t]}
     return out
 
 
@@ -480,7 +693,7 @@ def write(out, report, waiting):
                     'rows': len(rs), 'items': rs}
             (d / f'{safe}.json').write_text(json.dumps(scrub(body), indent=1, ensure_ascii=False) + '\n', encoding='utf-8', newline='\n')
     (out / 'counts/latest.json').write_text(json.dumps(report, indent=1, ensure_ascii=False) + '\n', encoding='utf-8', newline='\n')
-    hist = out / 'counts/history.csv'; head = ['date', 'key', 'T1', 'T2', 'T3', 'T4', 'T5']
+    hist = out / 'counts/history.csv'; head = ['date', 'key', 'T1', 'T2', 'T3', 'T4', 'T5', 'T6']
     rows = []
     if hist.is_file():
         rows = [r for r in csv.DictReader(open(hist, encoding='utf-8', newline='')) if r.get('date') != report['date']]
@@ -492,7 +705,7 @@ def write(out, report, waiting):
     (out / 'README.md').write_text(README, encoding='utf-8', newline='\n')
 
 
-README = """# Tripwires T1-T5 (report only)
+README = """# Tripwires T1-T6 (report only)
 
 Written by KPC-Data `.github/scripts/kpc_tripwires.py` (workflow `KPC tripwires`, by hand until HQ turns its schedule on).
 Owner rulings D1-D11, 17 Nov 2026. This branch is a REPORT: nothing here changes a key, a join, the map or a 2-fer.
@@ -500,10 +713,11 @@ D2 is on trial: the slack numbers in `counts/latest.json` (`on_trial`) are first
 
 - `counts/latest.json`: this run's counts per key and per area, and the change since the last run (`jump`).
 - `counts/history.csv`: one line per key per day. A new bad family shows as a jump the next morning.
-- `waiting/T1..T5/<pattern>.json`: the parks to work by hand, grouped by pattern. A fix comes with its park list and runs
+- `waiting/T1..T6/<pattern>.json`: the parks to work by hand, grouped by pattern. A fix comes with its park list and runs
   park-scoped (KPC_KEY_ONLY_PARKS), never a fifty-state rebuild.
 - T3 (a saved row still describes its record) is reported by the key build, not here.
 - T5 is the size form only until a rule reads the D11 layer labels.
+- T6 lists pairs of parks whose drawn land is 90% or more the same (over the smaller one) with no record shared, busiest first.
 """
 
 
@@ -515,6 +729,7 @@ def main(argv=None):
     r.add_argument('--keys', default='us,ca,world'); r.add_argument('--date', default='')
     r.add_argument('--not-sure', default='', help='D10: write the not-sure list here (KPC-Data data/waiting/tripwires/not-sure.json)')
     r.add_argument('--cleared', default='', help='D10: parks a person cleared (KPC-Data data/waiting/tripwires/cleared.json)')
+    r.add_argument('--parkinfo', default='', help='T6 busiest first: KPC-Data data/parkinfo (field 7 = POTA activations); default: this repo\'s')
     r.add_argument('--dry-run', action='store_true')
     a = ap.parse_args(argv)
     try: return run(a)
