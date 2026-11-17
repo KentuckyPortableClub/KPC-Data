@@ -905,6 +905,76 @@
   ]
  },
  {
+  "ref": "CA-4960",
+  "area": "CA-QC",
+  "park": "Parc Michel-Chartrand Regional Park",
+  "agency_group": "longueuil.quebec",
+  "kind": "outline",
+  "date": "2026-11-12",
+  "status": "check failed",
+  "st": "CA-QC",
+  "url": "https://www.donneesquebec.ca/recherche/dataset/2bf9329d-d6b4-4041-8581-e4ffaa3538e6/resource/481ca9a8-7ab7-4937-9092-66d3f4acb6d3/download/parcsespacesverts.json",
+  "service_url": "https://www.donneesquebec.ca/recherche/dataset/2bf9329d-d6b4-4041-8581-e4ffaa3538e6/resource/481ca9a8-7ab7-4937-9092-66d3f4acb6d3/download/parcsespacesverts.json",
+  "name_field": "NOM",
+  "agency": null,
+  "licence": "see the publisher",
+  "answer": "",
+  "checked_by": "",
+  "tier": "T-2",
+  "band": "STRONG",
+  "step": "L0",
+  "record": "feature#107",
+  "record_name": "Michel-Chartrand, Parc",
+  "layer": "PACK-CA-QC-park-91",
+  "record_link": "https://www.donneesquebec.ca/recherche/dataset/2bf9329d-d6b4-4041-8581-e4ffaa3538e6/resource/481ca9a8-7ab7-4937-9092-66d3f4acb6d3/download/parcsespacesverts.json",
+  "where": "id=feature#107",
+  "pin_m": 0,
+  "acres_approx": 410.4,
+  "grade": "official",
+  "envelope": [
+   -73.48342,
+   45.54208,
+   -73.4559,
+   45.55751
+  ],
+  "rule": null,
+  "others": [],
+  "source_url": "https://www.donneesquebec.ca/recherche/dataset/2bf9329d-d6b4-4041-8581-e4ffaa3538e6/resource/481ca9a8-7ab7-4937-9092-66d3f4acb6d3/download/parcsespacesverts.json",
+  "read_date": "2026-11-12",
+  "rule_g": "SURE",
+  "rule_g_why": "names equal once kind words are stripped",
+  "size_band": "unknown",
+  "why": "T-2 STRONG: 'Michel-Chartrand, Parc' at the POTA pin",
+  "notes": {
+   "where_looked": [
+    {
+     "source": "PACK-CA-QC-park-90",
+     "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+    },
+    {
+     "source": "PACK-CA-QC-park-91",
+     "gave": "hit (2 at pin, 0 by name)"
+    },
+    {
+     "source": "WDPA (last resort)",
+     "gave": "not asked: an official layer has a record for this park (W-10)"
+    }
+   ],
+   "solved": "",
+   "why_this_record": "record 'Michel-Chartrand, Parc' (PACK-CA-QC-park-91); pin inside; about 410.4 acres; Rule G: SURE (names equal once kind words are stripped); size unknown",
+   "confidence": {
+    "level": "sure",
+    "double_check": "name + pin inside; check the size against the agency page"
+   }
+  },
+  "pass": 1,
+  "check_problem": [
+   "url does not open (HTTP deferred)",
+   "record_link does not open (HTTP deferred)",
+   "source_url does not open (HTTP deferred)"
+  ]
+ },
+ {
   "ref": "CA-5166",
   "area": "CA-NB",
   "park": "Dominion Park Recreation Park",
