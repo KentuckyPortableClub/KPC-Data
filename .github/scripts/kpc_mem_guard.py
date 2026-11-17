@@ -280,6 +280,12 @@ def run(cmd, env=os.environ, sample=None, beat=None, grace=None, read_system=Non
     sample = sample if sample is not None else _num(env.get('KPC_MEM_GUARD_SAMPLE_S'), 5.0 if WINDOWS else 2.0)
     beat = beat if beat is not None else _num(env.get('KPC_MEM_GUARD_BEAT_S'), 60.0)
     grace = grace if grace is not None else _num(env.get('KPC_MEM_GUARD_GRACE_S'), 30.0)
+    # KPC owner, 2026-11-16 (the owner's PC, run of 2026-11-16: 17 of 41 areas were stopped while the 2-fer tree held 421 to 4,881 MB
+    # of an 11,373 MB limit; what fired was the MACHINE's free memory dipping under the floor for a moment). The machine's free memory
+    # is other programs' business and bounces: a dip must HOLD for this long before the run is asked to stop. The tree's own size
+    # (rss > lim) is the run's own doing and still acts at once, and so does a real emergency (under half the floor).
+    floor_hold = _num(env.get('KPC_MEM_GUARD_FLOOR_HOLD_S'), 20.0)
+    cancels_left = int(_num(env.get('KPC_MEM_GUARD_CANCELS'), 2.0))
     read_system = read_system or system
     read_rss = read_rss or rss_mb
     on = str(env.get('KPC_MEM_GUARD') or 'on').lower() not in ('off', '0', 'no')
@@ -312,6 +318,8 @@ def run(cmd, env=os.environ, sample=None, beat=None, grace=None, read_system=Non
         except (ValueError, OSError, AttributeError): pass
 
     peak, last_beat, cpu0, stop, stop_t, killed, why = 0.0, t0, None, None, None, False, ''
+    # KPC owner, 2026-11-16: when the machine first fell under the floor, and whether the stop was the tree's own size
+    low_since, stop_rss = None, False
     while True:
         rc = p.poll()
         if rc is not None: break
@@ -330,9 +338,12 @@ def run(cmd, env=os.environ, sample=None, beat=None, grace=None, read_system=Non
                 f'state {states or "-"}), peak {fmt(peak)} MB, machine available {fmt(avail)} of {fmt(total)} MB, swap used {fmt(swap)} MB'
                 + (f', memory pressure {psi:.0f} %' if psi is not None else '') + used + f'; limit {fmt(lim)} MB, floor {fmt(floor)} MB')
             cpu0, last_beat = cpu, t
-        if on and stop is None and (rss > lim or avail < floor):
+        if on and stop is None and avail >= floor: low_since = None
+        if on and stop is None and avail < floor and low_since is None: low_since = t
+        _low_held = low_since is not None and t - low_since >= floor_hold
+        if on and stop is None and (rss > lim or (avail < floor and (_low_held or avail < floor / 2))):
             why = (f'the step passed {fmt(lim)} MB' if rss > lim else f'the machine had only {fmt(avail)} MB left (floor {fmt(floor)} MB)')
-            stop = (rss, avail, what_pass(pids)); stop_t = t
+            stop = (rss, avail, what_pass(pids)); stop_t = t; stop_rss = rss > lim
             how = 'taskkill' if WINDOWS else 'SIGINT'
             say(f'memory guard: {name}: {why} (RSS {fmt(rss)} MB): asking it to stop ({how}), hard stop in {grace:.0f} s')
             if WINDOWS:
@@ -343,6 +354,14 @@ def run(cmd, env=os.environ, sample=None, beat=None, grace=None, read_system=Non
                 for q in pids:
                     try: os.kill(q, signal.SIGINT)
                     except OSError: pass
+        elif (stop is not None and not killed and not stop_rss and cancels_left > 0
+              and t - stop_t >= grace and avail >= floor and rss <= lim):
+            # KPC owner, 2026-11-16: it was asked to stop because the MACHINE was short, the machine is fine again and the run is
+            # still going (on Windows a soft taskkill often does not reach a console program at all). Killing it now would throw
+            # away a healthy area for a dip that has passed: US-MI was killed at 421 MB with 3,195 MB free.
+            say(f'memory guard: {name}: the machine is back above the floor ({fmt(avail)} MB, floor {fmt(floor)} MB) and the run is '
+                f'still going: the stop is called off ({cancels_left} left)')
+            stop = None; stop_rss = False; low_since = None; cancels_left -= 1
         elif stop is not None and not killed and (t - stop_t >= grace or avail < floor / 2):
             say(f'memory guard: {name}: still running {t - stop_t:.0f} s after the request (available {fmt(avail)} MB): '
                 f'killed ({"taskkill /F" if WINDOWS else "SIGKILL"})')
