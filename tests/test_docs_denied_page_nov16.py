@@ -2,8 +2,9 @@
 """Nov 16: the waiting-room documents check must not treat a denied-page URL as a
 real map or as a fault. Illinois already stores three google.com/maps links marked
 "denied page" (not shown as a map); F-D2 was holding the file for those same
-links. A banned-host URL that is not marked denied is still a fault. Offline:
-synthetic records only, nothing is fetched, and nothing in the repo is written."""
+links. A banned-host URL that is not marked denied is still a fault. The retest stub returns the #107 shape ({sample, results}), not the old
+(tested, dead) pair. Offline: synthetic records only, nothing is fetched, and
+nothing in the repo is written."""
 import importlib.util, os, pathlib, sys, tempfile
 
 HERE = pathlib.Path(__file__).resolve().parent.parent
@@ -25,8 +26,11 @@ seen = []
 
 
 def stub_retest(urls, n=20):
-    seen.append([u for u in urls if u])
-    return (max(1, len([u for u in urls if u])), [])
+    # After #107, retest returns {sample, results}, not (tested, dead).
+    kept = [u for u in urls if u]
+    seen.append(kept)
+    sample = kept[:n]
+    return {'sample': sample, 'results': [{'url': u, 'result': 'ok', 'detail': ''} for u in sample]}
 
 
 WR.retest = stub_retest
