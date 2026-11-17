@@ -2,7 +2,7 @@
 
 For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in data/waiting/approved.json; the nightly run lets it out.
 
-## Held files: 487 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
+## Held files: 496 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
 
 | since | days | file | last check | why |
 |---|---|---|---|---|
@@ -357,6 +357,10 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-11 | 6 | data/world-key/JP.json | HOLD | F-O2 101 of 185 outlines carry a layer name that shares no word with the park (55%; live 97/185): outlines swapped to other parks? |
 | 2026-11-11 | 6 | data/world-key/LU.json | HOLD | F-O1 outlines 49 -> 46 (more than 1% lost) |
 | 2026-11-13 | 4 | data/world-key/BS.json | HOLD | F-O1 outlines 32 -> 29 (more than 1% lost) |
+| 2026-11-17 | 0 | data/world-key/DK.json | HOLD | F-O1 outlines 192 -> 188 (more than 1% lost) |
+| 2026-11-17 | 0 | data/world-key/IE.json | HOLD | F-O1 outlines 175 -> 166 (more than 1% lost) |
+| 2026-11-17 | 0 | data/world-key/RO.json | HOLD | F-O1 outlines 666 -> 659 (more than 1% lost) |
+| 2026-11-17 | 0 | data/world-key/SI.json | HOLD | F-O1 outlines 621 -> 572 (more than 1% lost) |
 | 2026-11-17 | 0 | data/world-key/ZA.json | HOLD | F-O2 4 of 76 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks? |
 | ? | ? | data/ca-key/index.json | RELEASE |  |
 | ? | ? | data/pile-solver/AS.json | PASS |  |
@@ -426,6 +430,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/world-key/AT.json | PASS |  |
 | ? | ? | data/world-key/AU.json | PASS |  |
 | ? | ? | data/world-key/AX.json | PASS |  |
+| ? | ? | data/world-key/BE.json | PASS |  |
 | ? | ? | data/world-key/BM.json | PASS |  |
 | ? | ? | data/world-key/BT.json | PASS |  |
 | ? | ? | data/world-key/BW.json | PASS |  |
@@ -433,7 +438,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/world-key/CC.json | PASS |  |
 | ? | ? | data/world-key/CD.json | PASS |  |
 | ? | ? | data/world-key/CG.json | PASS |  |
-| ? | ? | data/world-key/CH.json | RELEASE |  |
+| ? | ? | data/world-key/CH.json | PASS |  |
 | ? | ? | data/world-key/CL.json | PASS |  |
 | ? | ? | data/world-key/CM.json | PASS |  |
 | ? | ? | data/world-key/CO.json | PASS |  |
@@ -442,6 +447,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/world-key/DO.json | PASS |  |
 | ? | ? | data/world-key/EC.json | PASS |  |
 | ? | ? | data/world-key/EE.json | PASS |  |
+| ? | ? | data/world-key/ES.json | PASS |  |
 | ? | ? | data/world-key/FI.json | PASS |  |
 | ? | ? | data/world-key/FO.json | PASS |  |
 | ? | ? | data/world-key/GA.json | PASS |  |
@@ -453,8 +459,10 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/world-key/GU.json | PASS |  |
 | ? | ? | data/world-key/GY.json | PASS |  |
 | ? | ? | data/world-key/HR.json | PASS |  |
+| ? | ? | data/world-key/HU.json | PASS |  |
 | ? | ? | data/world-key/ID.json | PASS |  |
 | ? | ? | data/world-key/IM.json | PASS |  |
+| ? | ? | data/world-key/IT.json | PASS |  |
 | ? | ? | data/world-key/JE.json | PASS |  |
 | ? | ? | data/world-key/KE.json | PASS |  |
 | ? | ? | data/world-key/LK.json | PASS |  |
@@ -470,6 +478,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/world-key/NF.json | PASS |  |
 | ? | ? | data/world-key/NI.json | PASS |  |
 | ? | ? | data/world-key/NL.json | PASS |  |
+| ? | ? | data/world-key/NO.json | PASS |  |
 | ? | ? | data/world-key/NZ.json | PASS |  |
 | ? | ? | data/world-key/OM.json | PASS |  |
 | ? | ? | data/world-key/PA.json | PASS |  |
@@ -479,7 +488,6 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/world-key/PR.json | PASS |  |
 | ? | ? | data/world-key/PY.json | PASS |  |
 | ? | ? | data/world-key/QA.json | PASS |  |
-| ? | ? | data/world-key/RO.json | PASS |  |
 | ? | ? | data/world-key/RW.json | PASS |  |
 | ? | ? | data/world-key/SE.json | PASS |  |
 | ? | ? | data/world-key/SJ.json | PASS |  |
@@ -488,6 +496,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/world-key/UM.json | PASS |  |
 | ? | ? | data/world-key/UY.json | PASS |  |
 | ? | ? | data/world-key/VI.json | PASS |  |
+| ? | ? | data/world-key/index.json | PASS |  |
 | ? | ? | data/wwff/7PFF.json | PASS |  |
 | ? | ? | data/wwff/DLFF.json | PASS |  |
 | ? | ? | data/wwff/IFF.json | PASS |  |
