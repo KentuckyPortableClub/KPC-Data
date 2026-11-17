@@ -66,10 +66,10 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-13 | 4 | data/fers/CA-ON.json.gz | HOLD | F-2 candidates 13 -> 138 (over 30% change); F-2 NOT SURE 302 -> 19 (over 30% change); F-2 only 5 of 13 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 133 new can |
 | 2026-11-14 | 3 | data/fers/US-MI.json.gz | HOLD | F-2 candidates 82 -> 137 (over 30% change); F-2 NOT SURE 9 -> 12 (over 30% change); F-2 60 new candidate pairs since the live file (over 10% of 82): a person looks at them first, e.g. US-0766+US-4239, US-10088+US-4239, U |
 | 2026-11-14 | 3 | data/fers/US-OH.json.gz | HOLD | F-2 candidates 27 -> 64 (over 30% change); F-2 38 new candidate pairs since the live file (over 10% of 27): a person looks at them first, e.g. US-11673+US-4239, US-12057+US-9444, US-1935+US-4239 |
-| 2026-11-15 | 2 | data/docs/US-IN.json | HOLD | F-D3 6 of 20 re-tested links dead, e.g. https://www.in.gov/dA/4636e3d2ba/mounds_trail.pdf?language_id=1 |
+| 2026-11-15 | 2 | data/docs/US-IN.json | HOLD | F-D3 6 of 20 re-tested links dead, e.g. https://www.in.gov/dnr/state-parks/files/fo-Deam_Lake_map.pdf |
 | 2026-11-15 | 2 | data/docs/US-OR.json | HOLD | F-D3 5 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/siletz-bay/visit-us/rules-policies |
 | 2026-11-16 | 1 | data/docs/US-CT.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
-| 2026-11-16 | 1 | data/docs/US-MI.json | HOLD | F-D3 7 of 20 re-tested links dead, e.g. https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/s |
+| 2026-11-16 | 1 | data/docs/US-MI.json | HOLD | F-D3 3 of 20 re-tested links dead, e.g. https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/s |
 | 2026-11-16 | 1 | data/docs/US-MS.json | HOLD | F-D3 3 of 20 re-tested links dead, e.g. https://www.nps.gov/tupe/learn/management/lawsandpolicies.htm |
 | 2026-11-17 | 0 | data/docs/US-AZ.json | HOLD | F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/bill-williams-river/visit-us/rules-policies |
 | 2026-11-17 | 0 | data/docs/US-GA.json | HOLD | F-D3 2 of 20 re-tested links dead, e.g. https://gastateparks.org/Rules |
