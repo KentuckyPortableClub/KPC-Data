@@ -1,15 +1,62 @@
 {
  "about": "us-key: the HELD build (data/waiting/in/data/us-key/) vs the LIVE key (data/us-key/). Chat 11: check the sample, then write KEY YES or KEY NO: <refs> in data/waiting/approved.json (item 'what': 'us-key', 'build': the held build id from data/waiting/in/data/us-key/index.json, 'date': 'YYYY-MM-DD' and 'time': 'h:mm AM/PM' Central; rule 22: no build field or a grade from before Nov 2 9:37 AM CST is not a release). Written by kpc_key_summary.py.",
- "made": "2026-11-17 16:12 UTC",
+ "made": "2026-11-17 19:20 UTC",
  "totals": {
-  "gained": 0,
+  "gained": 1,
   "lost": 0,
-  "pieces_changed": 0,
+  "pieces_changed": 1,
   "grade_changed": 0
  },
- "per_area": {},
- "gained": [],
+ "per_area": {
+  "US-IN": {
+   "gained": 1,
+   "lost": 0,
+   "pieces_changed": 1,
+   "grade_changed": 0
+  }
+ },
+ "gained": [
+  {
+   "area": "US-IN",
+   "ref": "US-10180",
+   "name": "Fourteenmile Creek State Nature Preserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "201064",
+     "Fourteen Mile Creek Nature Preserve",
+     830,
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-10180"
+  }
+ ],
  "lost": [],
  "grade_changed": [],
- "sample": []
+ "sample": [
+  {
+   "area": "US-IN",
+   "ref": "US-10180",
+   "name": "Fourteenmile Creek State Nature Preserve",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "201064",
+     "Fourteen Mile Creek Nature Preserve",
+     830,
+     "name"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-10180"
+  }
+ ]
 }
