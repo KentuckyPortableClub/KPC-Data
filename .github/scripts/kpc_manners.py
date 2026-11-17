@@ -124,8 +124,8 @@ SLOW_BUDGET = int(os.environ.get('KPC_SLOW_HOST_BUDGET') or 10)
 # ('robots'): nothing is fetched this run, but the next run asks again. Nov 10: a robots.txt 401 / 403 IS a Disallow ('robots').
 NEXT_RUN = ('rest', 'deferred', 'crawl-delay', 'robots-unreadable')
 def next_run(st): return isinstance(st, str) and st in NEXT_RUN
-# Nov 3 addendum (Quality spot-check, 7:05 PM CST): the two robots statuses. 'robots' = robots.txt says no (a Disallow for this URL,
-# or for the whole site); 'robots-unreadable' = robots.txt could not be read (A13, retried next run). A caller (or a grader) that
+# Nov 3 addendum (Quality spot-check, 7:05 PM CST): the two robots statuses. 'robots' = robots.txt says no (a Disallow for this URL);
+# 'robots-unreadable' = robots.txt could not be read (A13, retried next run). A caller (or a grader) that
 # only wants to know "robots stopped this read" uses robots_block(st), which is True for BOTH words; 'robots' alone is a Disallow.
 # Nov 10: 'host-rule' = kpc_host_rules.py says no request of any kind (counted as a robots block, never retried next run).
 ROBOTS_BLOCK = ('robots', 'robots-unreadable', 'host-rule')
@@ -156,7 +156,7 @@ class Manners:
         _ALL.append(self)
         self.refused = {}
         self.slow_used = {}
-        self.blocked = {}             # addendum: host:port -> (status, why) once robots.txt says no to the whole site or is unreadable
+        self.blocked = {}             # host:port -> (status, why) when robots.txt is unreadable (5xx/timeout/no connection, or a non-robots HTML page)
         self.dropped = []             # addendum: [(url without secrets, status)] queued requests dropped without any request
         self.for_person = []          # A2: [(url without secrets, why)] - every second 403 and every Crawl-delay skip, never only a count
         self.stat['for_person_urls'] = self.for_person   # saved with M.stat by the bots that keep it (detective, truth)
@@ -227,9 +227,9 @@ class Manners:
             txt = body.encode('utf-8')   # a page holding robots directives: its directives are the rules
         if st == 200:
             rp = urllib.robotparser.RobotFileParser(); rp.parse(txt.decode('utf-8', 'replace').splitlines()); self.robots[rk] = rp
-            try: all_no = not rp.can_fetch(self.ua, f'{pu.scheme or "https"}://{pu.netloc}/')
-            except Exception: all_no = True  # noqa: BLE001
-            if all_no: self.blocked[rk] = ('robots', 'robots.txt disallows the whole site for us')
+            # Nov 17: decide each URL by can_fetch on that page. "Disallow: /" plus a more specific Allow
+            # (Alaska: Allow: /parks, then Disallow: /) is not a whole-site block. A path that is
+            # actually disallowed is still refused in robots_ok / get, and is never fetched.
         elif st in (404, 410): self.robots[rk] = None          # no rules
         elif isinstance(st, int) and 400 <= st < 500 and st != 429:
             self.robots[rk] = None   # Nov 15: 401 / 403 / other 4xx = "unavailable" = no rules (the store engine 3.6.2 rule, RFC 9309 2.3.1.3)
@@ -372,9 +372,9 @@ class Manners:
     def fetch_all(self, urls, **kw):
         """Read a QUEUE of urls politely (addendum, Nov 3: Quality's spot-check had one api.pota.app lookup run after its
         robots.txt answered 403, because it was already queued). Yields (url, (status, headers, body, final url)) in order.
-        Once robots.txt refuses a host:port as a WHOLE (unreadable: 401/403/5xx/unreachable, or a whole-site Disallow), every url
-        still queued for that host:port is DROPPED for this run: no robots read, no request, status 'robots' / 'robots-unreadable'
-        (robots_block() is True), listed once per host for a person with the count.
+        Once robots.txt is unreadable for a host:port (5xx, a time-out, no connection — we cannot know the rules), every url
+        still queued for that host:port is DROPPED for this run: no request, status 'robots-unreadable'
+        (robots_block() is True), listed once per host for a person with the count. A parsed Disallow is decided per URL path.
         Quality grade of the addendum (7:33 PM CST Nov 3): a Disallow for ONE PATH drops only the queued urls whose paths it
         matches; they still get status 'robots' (from the cached rules, no request) and the host's other urls are read."""
         stop, n_drop = {}, {}
