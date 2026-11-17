@@ -2,7 +2,7 @@
 
 For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in data/waiting/approved.json; the nightly run lets it out.
 
-## Held files: 429 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
+## Held files: 492 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
 
 | since | days | file | last check | why |
 |---|---|---|---|---|
@@ -36,8 +36,6 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-10 | 7 | data/truth/US-WA.json | HOLD | F-R2 5 OFF rows share the size 564.0 ac; F-R3 157 of 188 sized parks are OFF (over half: a reading problem?) |
 | 2026-11-11 | 6 | data/docs/US-AK.json | HOLD | F-D3 2 of 20 re-tested links definitely dead (not already ok in live), e.g. https://www.fws.gov/refuge/nowitna/visit-us/rules-policies |
 | 2026-11-11 | 6 | data/docs/US-HI.json | HOLD | F-D3 5 of 20 re-tested links definitely dead (not already ok in live), e.g. https://www.nps.gov/puhe/learn/management/lawsandpolicies.htm |
-| 2026-11-12 | 5 | data/campinfo/US-AK.json | HOLD | F-I6 campgrounds with source-lined facts 122 -> 11 (more than 30% lost: a blocked read emptied them?) |
-| 2026-11-12 | 5 | data/campinfo/US-KY.json | HOLD | F-I6 campgrounds with source-lined facts 60 -> 22 (more than 30% lost: a blocked read emptied them?) |
 | 2026-11-12 | 5 | data/campinfo/US-WI.json | HOLD | F-I6 campgrounds with source-lined facts 12 -> 4 (more than 30% lost: a blocked read emptied them?) |
 | 2026-11-12 | 5 | data/fers/US-IN.json.gz | HOLD | F-2 candidates 51 -> 79 (over 30% change); F-2 34 new candidate pairs since the live file (over 10% of 51): a person looks at them first, e.g. US-10237+US-4218, US-2251+US-4170, US-2251+US-4171; F-K known 2-fer missing:  |
 | 2026-11-12 | 5 | data/fers/US-MA.json.gz | HOLD | F-2 30 new candidate pairs since the live file (over 10% of 75): a person looks at them first, e.g. US-0672+US-11686, US-0672+US-8395, US-0728+US-4582; F-K known 2-fer missing: US-0891 + US-2430 |
@@ -54,11 +52,13 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-14 | 3 | data/fers/US-OH.json.gz | HOLD | F-2 candidates 27 -> 64 (over 30% change); F-2 38 new candidate pairs since the live file (over 10% of 27): a person looks at them first, e.g. US-11673+US-4239, US-12057+US-9444, US-1935+US-4239 |
 | 2026-11-15 | 2 | data/docs/US-OR.json | HOLD | F-D3 5 of 20 re-tested links definitely dead (not already ok in live), e.g. https://www.fws.gov/refuge/siletz-bay/visit-us/rules-policies |
 | 2026-11-16 | 1 | data/docs/US-MS.json | HOLD | F-D3 2 of 20 re-tested links definitely dead (not already ok in live), e.g. https://www.nps.gov/tupe/learn/management/lawsandpolicies.htm |
+| 2026-11-17 | 0 | data/ca-key/CA-ON.json | HOLD | F-O3 retired parks still outlined: CA-6621 |
 | 2026-11-17 | 0 | data/docs/US-AZ.json | HOLD | F-D3 2 of 20 re-tested links definitely dead (not already ok in live), e.g. https://www.fws.gov/refuge/bill-williams-river/visit-us/rules-policies |
 | 2026-11-17 | 0 | data/docs/US-KY.json | HOLD | F-D3 2 of 20 re-tested links definitely dead (not already ok in live), e.g. https://parks.ky.gov/park-rules |
 | 2026-11-17 | 0 | data/docs/US-NV.json | HOLD | F-D3 2 of 20 re-tested links definitely dead (not already ok in live), e.g. https://www.fs.usda.gov/recmain/alerts-notices |
-| ? | ? | data/ca-key/CA-ON.json | RELEASE |  |
 | ? | ? | data/ca-key/CA-QC.json | RELEASE |  |
+| ? | ? | data/ca-key/CA-SK.json | RELEASE |  |
+| ? | ? | data/campinfo/US-AK.json | PASS |  |
 | ? | ? | data/campinfo/US-AL.json | PASS |  |
 | ? | ? | data/campinfo/US-AZ.json | PASS |  |
 | ? | ? | data/campinfo/US-CA.json | PASS |  |
@@ -74,6 +74,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/campinfo/US-IL.json | PASS |  |
 | ? | ? | data/campinfo/US-IN.json | PASS |  |
 | ? | ? | data/campinfo/US-KS.json | PASS |  |
+| ? | ? | data/campinfo/US-KY.json | PASS |  |
 | ? | ? | data/campinfo/US-LA.json | PASS |  |
 | ? | ? | data/campinfo/US-MD.json | PASS |  |
 | ? | ? | data/campinfo/US-ME.json | PASS |  |
@@ -108,16 +109,28 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/campstate/US-CO.json | PASS |  |
 | ? | ? | data/campstate/US-FL.json | PASS |  |
 | ? | ? | data/campstate/US-GA.json | PASS |  |
+| ? | ? | data/campstate/US-HI.json | PASS |  |
+| ? | ? | data/campstate/US-IA.json | PASS |  |
 | ? | ? | data/campstate/US-ID.json | PASS |  |
+| ? | ? | data/campstate/US-IN.json | PASS |  |
+| ? | ? | data/campstate/US-MI.json | PASS |  |
+| ? | ? | data/campstate/US-MN.json | PASS |  |
 | ? | ? | data/campstate/US-MT.json | PASS |  |
 | ? | ? | data/campstate/US-ND.json | PASS |  |
+| ? | ? | data/campstate/US-NE.json | PASS |  |
+| ? | ? | data/campstate/US-NH.json | PASS |  |
 | ? | ? | data/campstate/US-NM.json | PASS |  |
 | ? | ? | data/campstate/US-NV.json | PASS |  |
+| ? | ? | data/campstate/US-NY.json | PASS |  |
+| ? | ? | data/campstate/US-OH.json | PASS |  |
 | ? | ? | data/campstate/US-OR.json | PASS |  |
 | ? | ? | data/campstate/US-PA.json | PASS |  |
 | ? | ? | data/campstate/US-SD.json | PASS |  |
+| ? | ? | data/campstate/US-TN.json | PASS |  |
+| ? | ? | data/campstate/US-TX.json | PASS |  |
 | ? | ? | data/campstate/US-UT.json | PASS |  |
 | ? | ? | data/campstate/US-VA.json | PASS |  |
+| ? | ? | data/campstate/US-VT.json | PASS |  |
 | ? | ? | data/campstate/US-WA.json | PASS |  |
 | ? | ? | data/campstate/US-WY.json | PASS |  |
 | ? | ? | data/docs/US-AL.json | PASS |  |
@@ -288,25 +301,54 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/truth/US-WV.json | PASS |  |
 | ? | ? | data/truth/US-WY.json | PASS |  |
 | ? | ? | data/us-key/US-AK.json | RELEASE |  |
+| ? | ? | data/us-key/US-AL.json | RELEASE |  |
+| ? | ? | data/us-key/US-AR.json | RELEASE |  |
 | ? | ? | data/us-key/US-AZ.json | PASS |  |
 | ? | ? | data/us-key/US-CA.json | RELEASE |  |
 | ? | ? | data/us-key/US-CO.json | RELEASE |  |
+| ? | ? | data/us-key/US-CT.json | RELEASE |  |
+| ? | ? | data/us-key/US-DC.json | RELEASE |  |
 | ? | ? | data/us-key/US-DE.json | RELEASE |  |
+| ? | ? | data/us-key/US-FL.json | RELEASE |  |
+| ? | ? | data/us-key/US-GA.json | RELEASE |  |
+| ? | ? | data/us-key/US-HI.json | RELEASE |  |
 | ? | ? | data/us-key/US-IA.json | RELEASE |  |
 | ? | ? | data/us-key/US-ID.json | RELEASE |  |
+| ? | ? | data/us-key/US-IL.json | RELEASE |  |
 | ? | ? | data/us-key/US-IN.json | RELEASE |  |
+| ? | ? | data/us-key/US-KS.json | RELEASE |  |
+| ? | ? | data/us-key/US-LA.json | RELEASE |  |
+| ? | ? | data/us-key/US-MA.json | RELEASE |  |
 | ? | ? | data/us-key/US-MD.json | RELEASE |  |
+| ? | ? | data/us-key/US-ME.json | RELEASE |  |
+| ? | ? | data/us-key/US-MI.json | RELEASE |  |
 | ? | ? | data/us-key/US-MN.json | RELEASE |  |
 | ? | ? | data/us-key/US-MO.json | RELEASE |  |
+| ? | ? | data/us-key/US-MS.json | RELEASE |  |
+| ? | ? | data/us-key/US-MT.json | RELEASE |  |
+| ? | ? | data/us-key/US-NC.json | RELEASE |  |
+| ? | ? | data/us-key/US-ND.json | RELEASE |  |
+| ? | ? | data/us-key/US-NE.json | RELEASE |  |
 | ? | ? | data/us-key/US-NH.json | RELEASE |  |
+| ? | ? | data/us-key/US-NJ.json | RELEASE |  |
 | ? | ? | data/us-key/US-NM.json | RELEASE |  |
 | ? | ? | data/us-key/US-NV.json | RELEASE |  |
+| ? | ? | data/us-key/US-NY.json | RELEASE |  |
 | ? | ? | data/us-key/US-OH.json | RELEASE |  |
+| ? | ? | data/us-key/US-OK.json | RELEASE |  |
 | ? | ? | data/us-key/US-OR.json | RELEASE |  |
+| ? | ? | data/us-key/US-PA.json | RELEASE |  |
+| ? | ? | data/us-key/US-RI.json | RELEASE |  |
+| ? | ? | data/us-key/US-SC.json | RELEASE |  |
+| ? | ? | data/us-key/US-SD.json | RELEASE |  |
 | ? | ? | data/us-key/US-TN.json | RELEASE |  |
+| ? | ? | data/us-key/US-TX.json | RELEASE |  |
 | ? | ? | data/us-key/US-UT.json | RELEASE |  |
+| ? | ? | data/us-key/US-VA.json | RELEASE |  |
 | ? | ? | data/us-key/US-VT.json | RELEASE |  |
 | ? | ? | data/us-key/US-WA.json | RELEASE |  |
+| ? | ? | data/us-key/US-WI.json | RELEASE |  |
+| ? | ? | data/us-key/US-WV.json | RELEASE |  |
 | ? | ? | data/us-key/US-WY.json | RELEASE |  |
 | 2026-11-04 | 13 | data/trails/state-report.json | HOLD | F-T1 the line has no points |
 | 2026-11-08 | 9 | data/wwff/CTFF.json | HOLD | F-W2 rows 702 -> 280 (under 80% of the saved list) |
@@ -315,6 +357,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-11 | 6 | data/world-key/JP.json | HOLD | F-O2 101 of 185 outlines carry a layer name that shares no word with the park (55%; live 97/185): outlines swapped to other parks? |
 | 2026-11-11 | 6 | data/world-key/LU.json | HOLD | F-O1 outlines 49 -> 46 (more than 1% lost) |
 | 2026-11-13 | 4 | data/world-key/BS.json | HOLD | F-O1 outlines 32 -> 29 (more than 1% lost) |
+| 2026-11-17 | 0 | data/world-key/ZA.json | HOLD | F-O2 4 of 76 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks? |
 | ? | ? | data/ca-key/index.json | RELEASE |  |
 | ? | ? | data/pile-solver/AS.json | PASS |  |
 | ? | ? | data/pile-solver/AT.json | PASS |  |
@@ -378,43 +421,63 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/us-key/overrides-parks-01.json | PASS |  |
 | ? | ? | data/us-key/overrides-parks-02.json | PASS |  |
 | ? | ? | data/us-key/overrides.json | PASS |  |
+| ? | ? | data/world-key/AE.json | PASS |  |
 | ? | ? | data/world-key/AS.json | PASS |  |
 | ? | ? | data/world-key/AT.json | PASS |  |
+| ? | ? | data/world-key/AU.json | PASS |  |
 | ? | ? | data/world-key/AX.json | PASS |  |
 | ? | ? | data/world-key/BM.json | PASS |  |
 | ? | ? | data/world-key/BT.json | PASS |  |
 | ? | ? | data/world-key/BW.json | PASS |  |
+| ? | ? | data/world-key/BZ.json | PASS |  |
 | ? | ? | data/world-key/CC.json | PASS |  |
+| ? | ? | data/world-key/CD.json | PASS |  |
 | ? | ? | data/world-key/CG.json | PASS |  |
 | ? | ? | data/world-key/CH.json | RELEASE |  |
+| ? | ? | data/world-key/CL.json | PASS |  |
 | ? | ? | data/world-key/CM.json | PASS |  |
+| ? | ? | data/world-key/CO.json | PASS |  |
 | ? | ? | data/world-key/CV.json | PASS |  |
 | ? | ? | data/world-key/CX.json | PASS |  |
 | ? | ? | data/world-key/DO.json | PASS |  |
 | ? | ? | data/world-key/EC.json | PASS |  |
 | ? | ? | data/world-key/EE.json | PASS |  |
 | ? | ? | data/world-key/FI.json | PASS |  |
+| ? | ? | data/world-key/FO.json | PASS |  |
 | ? | ? | data/world-key/GA.json | PASS |  |
+| ? | ? | data/world-key/GB.json | PASS |  |
 | ? | ? | data/world-key/GE.json | PASS |  |
 | ? | ? | data/world-key/GL.json | PASS |  |
+| ? | ? | data/world-key/GR.json | PASS |  |
 | ? | ? | data/world-key/GT.json | PASS |  |
 | ? | ? | data/world-key/GU.json | PASS |  |
 | ? | ? | data/world-key/GY.json | PASS |  |
 | ? | ? | data/world-key/HR.json | PASS |  |
+| ? | ? | data/world-key/ID.json | PASS |  |
 | ? | ? | data/world-key/IM.json | PASS |  |
 | ? | ? | data/world-key/JE.json | PASS |  |
+| ? | ? | data/world-key/KE.json | PASS |  |
+| ? | ? | data/world-key/LK.json | PASS |  |
+| ? | ? | data/world-key/LR.json | PASS |  |
 | ? | ? | data/world-key/LT.json | PASS |  |
 | ? | ? | data/world-key/LV.json | PASS |  |
 | ? | ? | data/world-key/MK.json | PASS |  |
 | ? | ? | data/world-key/MP.json | PASS |  |
+| ? | ? | data/world-key/MT.json | PASS |  |
+| ? | ? | data/world-key/MV.json | PASS |  |
+| ? | ? | data/world-key/MX.json | PASS |  |
+| ? | ? | data/world-key/NC.json | PASS |  |
 | ? | ? | data/world-key/NF.json | PASS |  |
 | ? | ? | data/world-key/NI.json | PASS |  |
 | ? | ? | data/world-key/NL.json | PASS |  |
+| ? | ? | data/world-key/NZ.json | PASS |  |
 | ? | ? | data/world-key/OM.json | PASS |  |
 | ? | ? | data/world-key/PA.json | PASS |  |
 | ? | ? | data/world-key/PE.json | PASS |  |
 | ? | ? | data/world-key/PF.json | PASS |  |
 | ? | ? | data/world-key/PL.json | PASS |  |
+| ? | ? | data/world-key/PR.json | PASS |  |
+| ? | ? | data/world-key/PY.json | PASS |  |
 | ? | ? | data/world-key/QA.json | PASS |  |
 | ? | ? | data/world-key/RO.json | PASS |  |
 | ? | ? | data/world-key/RW.json | PASS |  |
