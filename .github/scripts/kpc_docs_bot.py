@@ -145,21 +145,61 @@ def core(x): return ' '.join(KINDW.sub(' ', low(x)).split())
 
 
 # ------------------------------------------------------------------ manners
+def robots_rkey(u):
+    """Scheme + host:port (http and https are different robots.txt files)."""
+    pu = urllib.parse.urlparse(u)
+    return f'{pu.scheme or "https"}://{pu.netloc.lower()}'
+
+
+def _load_docs_robots(u, rk):
+    """Read robots.txt for this scheme+host. 200 = its rules; 404/410 and other 4xx except
+    429 = no rules (RFC 9309); 429, 5xx, a time-out, or no connection = unreadable: nothing
+    is fetched from this host this run (not treated as permission)."""
+    pu = urllib.parse.urlparse(u)
+    ru = f'{pu.scheme or "https"}://{pu.netloc}/robots.txt'
+    try:
+        with urllib.request.urlopen(urllib.request.Request(ru, headers={'User-Agent': UA}), timeout=15) as r:
+            st, txt = r.status, r.read(30000).decode('utf-8', 'replace')
+    except urllib.error.HTTPError as e:
+        st, txt = e.code, ''
+    except Exception as e:  # noqa: BLE001
+        ROBOTS[rk] = False
+        ROBOTS_SAID[rk] = 'robots.txt unreadable (' + str(e)[:40] + ')'
+        return
+    if st in (404, 410) or (isinstance(st, int) and 400 <= st < 500 and st != 429):
+        ROBOTS[rk] = None   # no file, or unavailable = no rules
+        ROBOTS_SAID[rk] = f'no robots.txt ({st})' if st not in (404, 410) else 'no robots.txt'
+        return
+    if st != 200:
+        ROBOTS[rk] = False
+        ROBOTS_SAID[rk] = f'robots.txt unreadable ({st})'
+        return
+    rp = urllib.robotparser.RobotFileParser(); rp.parse(txt.splitlines()); ROBOTS[rk] = rp
+    ROBOTS_SAID[rk] = ' | '.join(l.strip() for l in txt.splitlines() if l.strip() and not l.startswith('#'))[:160]
+
+
+def robots_status(u):
+    """None if this URL may be fetched; 'robots' if robots.txt disallows it;
+    'robots-unreadable' if we could not read the rules, so nothing is fetched this run."""
+    rk = robots_rkey(u)
+    if rk not in ROBOTS:
+        _load_docs_robots(u, rk)
+    rp = ROBOTS[rk]
+    if rp is False:
+        STAT['robots'] += 1; ROBOTS_REFUSED[rk] = ROBOTS_REFUSED.get(rk, 0) + 1
+        return 'robots-unreadable'
+    try:
+        ok = rp is None or rp.can_fetch(UA, u) or rp.can_fetch('*', u)
+    except Exception:  # noqa: BLE001
+        ok = False   # rules we cannot apply = do not fetch
+    if not ok:
+        STAT['robots'] += 1; ROBOTS_REFUSED[rk] = ROBOTS_REFUSED.get(rk, 0) + 1
+        return 'robots'
+    return None
+
+
 def robots_ok(u):
-    h = host_of(u)
-    if h not in ROBOTS:
-        rp = urllib.robotparser.RobotFileParser()
-        try:
-            ru = f'{urllib.parse.urlparse(u).scheme or "https"}://{h}/robots.txt'
-            with urllib.request.urlopen(urllib.request.Request(ru, headers={'User-Agent': UA}), timeout=15) as r: txt = r.read(30000).decode('utf-8', 'replace')
-            rp.parse(txt.splitlines()); ROBOTS[h] = rp
-            ROBOTS_SAID[h] = ' | '.join(l.strip() for l in txt.splitlines() if l.strip() and not l.startswith('#'))[:160]
-        except Exception as e: ROBOTS[h] = None; ROBOTS_SAID[h] = 'no robots.txt (' + str(e)[:30] + ')'  # noqa: BLE001  (no robots file = allowed)
-    rp = ROBOTS[h]
-    try: ok = rp is None or rp.can_fetch(UA, u) or rp.can_fetch('*', u)
-    except Exception: ok = True  # noqa: BLE001
-    if not ok: STAT['robots'] += 1; ROBOTS_REFUSED[h] = ROBOTS_REFUSED.get(h, 0) + 1
-    return ok
+    return robots_status(u) is None
 
 
 def rested(h):
@@ -173,7 +213,8 @@ def get(u, rng=None, timeout=40, head=False):
     u = urllib.parse.quote(u, safe=":/?&=%#+~@,;$!*()'[]")   # chat 11: an address with spaces (University of the Cumberlands WMA) is sent escaped
     h = host_of(u)
     if rested(h): return 'rest', {}, b'', u
-    if not robots_ok(u): return 'robots', {}, b'', u
+    why = robots_status(u)
+    if why: return why, {}, b'', u
     hdr = {'User-Agent': UA, 'Accept': 'text/html,application/pdf,*/*;q=0.8', 'Accept-Language': 'en-US,en;q=0.8,fr;q=0.5'}
     if rng: hdr['Range'] = f'bytes={rng[0]}-{rng[1]}'
     for attempt in range(3):
@@ -596,7 +637,7 @@ def rules_for(fam, urls, pg_rules, lists_entry):
             out = {'url': final or u, 'how': how, 'status': 'ok'}
             if u in AGENCYWIDE or 'agency-wide' in how: out['rules_scope'] = 'agency'   # v6 (Fable): an agency-wide rules page is kept, labelled
             return out
-        if st in ('rest', 'robots'): return {'url': u, 'how': how, 'status': 'rules page not read (the site is resting: next run)' if st == 'rest' else str(st)}
+        if st in ('rest', 'robots', 'robots-unreadable'): return {'url': u, 'how': how, 'status': 'rules page not read (the site is resting: next run)' if st == 'rest' else str(st)}
     return {'url': cands[0][0] if cands else '', 'how': cands[0][1] if cands else '', 'status': 'not found' if not cands else 'did not open'}
 
 
@@ -1036,7 +1077,7 @@ def counts(D):
             else: c['date unknown'] += 1
             if m.get('names_park'): c['map names the park'] += 1
             if m.get('kind') == 'region overview': c['region overview only'] += 1
-        elif m.get('status') in ('rest', 'robots'): c['host resting / robots'] += 1
+        elif m.get('status') in ('rest', 'robots', 'robots-unreadable'): c['host resting / robots'] += 1
         else: c['no map'] += 1
         if (p.get('rules') or {}).get('status') == 'ok': c['rules ok'] += 1
         if p.get('needs_browser') and not p.get('browser_checked'): c['needs browser'] += 1
