@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-16T21:29Z",
+ "checked": "2026-11-17T00:14Z",
  "switched_on": false,
  "results": [
   {
@@ -713,11 +713,9 @@
   {
    "path": "data/docs/US-AR.json",
    "kind": "docs",
-   "why": [
-    "F-D3 4 of 20 re-tested links dead, e.g. https://www.arkansas.com/sites/default/files/2025-12/woollyhollow_2011"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-AZ.json",
@@ -855,9 +853,11 @@
   {
    "path": "data/docs/US-MD.json",
    "kind": "docs",
-   "why": [],
+   "why": [
+    "F-D3 3 of 20 re-tested links dead, e.g. https://dnr.maryland.gov/publiclands/Documents/DCL_TrailMap.pdf"
+   ],
    "notes": [],
-   "verdict": "PASS"
+   "verdict": "HOLD"
   },
   {
    "path": "data/docs/US-ME.json",
@@ -874,7 +874,7 @@
    "path": "data/docs/US-MI.json",
    "kind": "docs",
    "why": [
-    "F-D3 2 of 20 re-tested links dead, e.g. https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/s"
+    "F-D3 4 of 20 re-tested links dead, e.g. https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/"
    ],
    "notes": [
     "no live copy: first time this file is published"
@@ -1089,11 +1089,9 @@
   {
    "path": "data/docs/US-WI.json",
    "kind": "docs",
-   "why": [
-    "F-D3 11 of 20 re-tested links dead, e.g. https://dnrmaps.wi.gov/H5/?Viewer=Public_Access_Lands&amp;ID=ALLENTON+"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/docs/US-WV.json",

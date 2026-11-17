@@ -1,7 +1,7 @@
 {
- "made": "2026-11-16 21:30 UTC",
+ "made": "2026-11-17 00:15 UTC",
  "snap": {
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "outlines": {
    "US": {
     "official": 11271,
@@ -143,12 +143,12 @@
   }
  },
  "first": {
-  "date": "2026-11-09",
+  "date": "2026-11-10",
   "outlines": {
    "US": {
-    "official": 11223,
-    "pin": 1459,
-    "approximate": 424
+    "official": 11262,
+    "pin": 1428,
+    "approximate": 417
    },
    "Canada": {
     "official": 4372,
@@ -1432,9 +1432,9 @@
   "Tool trial: pulloffs": {
    "areas": "",
    "last_run": "2026-11-16",
-   "made": "exit 3 2026-11-16: US-4484: photo cell 830/6239",
+   "made": "exit 3 2026-11-16: US-4484: photo cell 1141/6239",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43946218115",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43973388796",
    "waiting_on": "chat 11 grades tools-out/pulloffs/ against the spec pass mark; open files only when red"
   },
   "Tool trial: sameland": {
@@ -1519,10 +1519,10 @@
   },
   "key-doctor": {
    "areas": "",
-   "last_run": "2026-11-16",
-   "made": "NOs: 434 of 723 NOs landed; 289 missing (re-applied to overrides.fixed.json); 1288 came back in the key release: 6035 parks pass, 198 held, 21 files; per-park release ON stuck: 0 area(s) stuck; see stuck-2026-11-16.md ",
+   "last_run": "2026-11-17",
+   "made": "NOs: 434 of 723 NOs landed; 289 missing (re-applied to overrides.fixed.json); 1288 came back in the key release: 6035 parks pass, 198 held, 21 files; per-park release ON stuck: 0 area(s) stuck; see stuck-2026-11-17.md ",
    "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43792685935",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43982120177",
    "waiting_on": "chat 10 (came-back NOs / stuck areas); per-park release in release-approved"
   },
   "layer intake": {
@@ -1574,8 +1574,8 @@
    "waiting_on": "nothing (facts only)"
   },
   "waiting room": {
-   "last_run": "2026-11-16",
-   "made": "439 files waiting over 3 days in data/waiting/in/ (e.g. US-SD.json)",
+   "last_run": "2026-11-17",
+   "made": "447 files waiting over 3 days in data/waiting/in/ (e.g. US-SD.json)",
    "result": "red",
    "waiting_on": "chat 11 (look at the waiting room run)"
   },

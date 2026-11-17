@@ -359,7 +359,6 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-11-06, 10 days): campinfo data/campinfo/US-VT.json held: F-I3 the same site count on 101 camps of one agency (state: 27): copied from a shared page?
 - FROM WAITING ROOM (held since 2026-11-12, 4 days): campinfo data/campinfo/US-WI.json held: F-I6 campgrounds with source-lined facts 12 -> 4 (more than 30% lost: a blocked read emptied them?)
 - FROM WAITING ROOM (held since 2026-11-11, 5 days): docs data/docs/US-AK.json held: F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/togiak/visit-us/rules-policies
-- FROM WAITING ROOM (held since 2026-11-16): docs data/docs/US-AR.json held: F-D3 4 of 20 re-tested links dead, e.g. https://www.arkansas.com/sites/default/files/2025-12/woollyhollow_2011
 - FROM WAITING ROOM (held since 2026-11-16): docs data/docs/US-CT.json held: F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/silvio-o-conte/visit-us/rules-policies
 - FROM WAITING ROOM (held since 2026-11-16): docs data/docs/US-DC.json held: F-D3 2 of 20 re-tested links dead, e.g. https://www.nps.gov/lyba/learn/management/lawsandpolicies.htm
 - FROM WAITING ROOM (held since 2026-11-11, 5 days): docs data/docs/US-DE.json held: F-D3 2 of 13 re-tested links dead, e.g. https://www.fws.gov/refuge/prime-hook/visit-us/rules-policies
@@ -369,8 +368,9 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-11-15, 1 days): docs data/docs/US-IN.json held: F-D3 8 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/big-oaks/visit-us/rules-policies
 - FROM WAITING ROOM (held since 2026-11-11, 5 days): docs data/docs/US-KS.json held: F-D3 3 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/flint-hills/visit-us/rules-policies
 - FROM WAITING ROOM (held since 2026-11-11, 5 days): docs data/docs/US-LA.json held: F-D3 5 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/upper-ouachita/visit-us/rules-policies
+- FROM WAITING ROOM (held since 2026-11-16): docs data/docs/US-MD.json held: F-D3 3 of 20 re-tested links dead, e.g. https://dnr.maryland.gov/publiclands/Documents/DCL_TrailMap.pdf
 - FROM WAITING ROOM (held since 2026-10-31, 16 days): docs data/docs/US-ME.json held: F-D1 one map page on 33 of 148 parks: https://www.maine.gov/dacf/parks/publications_maps/index.shtml · F-D1 one rules page on 48 of 148 parks: https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml · F-D3 2 of 20 re-tested links dead, e.g. https://www.nps.gov/maac/learn/management/lawsandpolicies.htm
-- FROM WAITING ROOM (held since 2026-11-16): docs data/docs/US-MI.json held: F-D3 2 of 20 re-tested links dead, e.g. https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/s
+- FROM WAITING ROOM (held since 2026-11-16): docs data/docs/US-MI.json held: F-D3 4 of 20 re-tested links dead, e.g. https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/
 - FROM WAITING ROOM (held since 2026-11-11, 5 days): docs data/docs/US-MN.json held: F-D3 6 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/glacial-ridge/visit-us/rules-policies
 - FROM WAITING ROOM (held since 2026-10-31, 16 days): docs data/docs/US-MO.json held: F-D1 one rules page on 426 of 561 parks: https://www.sos.mo.gov/adrules/csr/current/3csr/3csr.asp
 - FROM WAITING ROOM (held since 2026-11-16): docs data/docs/US-MS.json held: F-D3 2 of 20 re-tested links dead, e.g. https://www.nps.gov/tupe/learn/management/lawsandpolicies.htm
@@ -379,7 +379,6 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-11-15, 1 days): docs data/docs/US-OR.json held: F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/bandon-marsh/visit-us/rules-policies
 - FROM WAITING ROOM (held since 2026-11-11, 5 days): docs data/docs/US-RI.json held: F-D3 3 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/john-h-chafee/visit-us/rules-policies
 - FROM WAITING ROOM (held since 2026-11-16): docs data/docs/US-TX.json held: F-D3 2 of 20 re-tested links dead, e.g. https://www.fws.gov/refuge/aransas/visit-us/rules-policies
-- FROM WAITING ROOM (held since 2026-11-16): docs data/docs/US-WI.json held: F-D3 11 of 20 re-tested links dead, e.g. https://dnrmaps.wi.gov/H5/?Viewer=Public_Access_Lands&amp;ID=ALLENTON+
 - FROM WAITING ROOM (held since 2026-11-13, 3 days): fers data/fers/CA-AB.json.gz held: F-2 only 27 of 37 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand) · F-2 5 new candidate pairs since the live file (over 10% of 37): a person looks at them first, e.g. CA-0110+US-4558, CA-0664+CA-0719+CA-0726, CA-2956+CA-2958
 - FROM WAITING ROOM (held since 2026-11-13, 3 days): fers data/fers/CA-BC.json.gz held: F-2 candidates 29 -> 111 (over 30% change) · F-2 only 16 of 29 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand) · F-2 95 new candidate pairs since the live file (over 10% of 29): a person looks at them first, e.g. CA-0045+CA-0117, CA-0045+CA-3435, CA-0045+CA-3829
 - FROM WAITING ROOM (held since 2026-11-05, 11 days): fers data/fers/CA-MB.json held: F-2 only 3 of 4 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand)
@@ -459,4 +458,4 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-11-11, 5 days): key data/world-key/LU.json held: F-O1 outlines 49 -> 46 (more than 1% lost)
 - FROM WAITING ROOM (held since 2026-11-07, 9 days): key data/world-key/ZA.json held: F-O2 4 of 75 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks?
 - FROM WAITING ROOM (held since 2026-11-08, 8 days): wwff data/wwff/CTFF.json held: F-W2 rows 702 -> 280 (under 80% of the saved list)
-- FROM WAITING ROOM HEALTH (2026-11-16): RED: 439 files waiting over 3 days in data/waiting/in/ (e.g. US-SD.json)
+- FROM WAITING ROOM HEALTH (2026-11-17): RED: 447 files waiting over 3 days in data/waiting/in/ (e.g. US-SD.json)
