@@ -33,6 +33,8 @@ campground we already list (federal, state, Kentucky hand-checked) it writes ONE
                   or menu item ('Shower Types') is never a fact; a lodge / cottage link is 'lodging_booking', not booking;
                   'phone_hint' = the first number in the campground section. GATE = 8 known Kentucky answers + >= 70% hand-key
                   agreement -> 'GATE=PASS/FAIL' line + state['test'].
+                  R8 a count from a sentence that names a particular campground belongs to that campground alone. If we
+                  can't tell which record the sentence names, the count is left blank. Blank beats wrong.
   MANNERS         kpc_manners.py (robots.txt obeyed, 1 request / 2 s per host incl. RIDB, back-off, three strikes = a day's rest).
   NEVER FAILS     exit 0 always; MINUTES (55) per chunk; state.json resumes; one commit per chunk by the workflow.
 
@@ -345,13 +347,74 @@ def sentence_names_camp(text, m, name):
     return all(w in sent.split() for w in words)
 
 
+def count_name_context(text, m=None, line=None):
+    """The count's sentence plus a short stretch just before it (a campground name often sits on the line above)."""
+    if m is None:
+        return line or text or ''
+    sent = sentence_of(text, m.start(), m.end())
+    prev = text[max(0, m.start() - 160):m.start()]
+    return (prev + ' ' + sent).strip()
+
+
+def tidy_named_camp(name):
+    """'Poplar Point Poplar Point' (a heading repeated in the sentence) -> 'Poplar Point'."""
+    words = str(name or '').split()
+    for n in range(1, len(words) // 2 + 1):
+        if words[:n] == words[n:2 * n]:
+            return tidy_named_camp(' '.join(words[n:]))
+    return ' '.join(words)
+
+
+GENERIC_COUNT_SUBJECT = re.compile(
+    r'^(?:the|this|our|a|an|its|their|each|every|these|those)(?:\s+(?:campground|park|area|site|camp|facility|property)s?)?$|'
+    r'^(?:campground|park|area|sites?|camp)$', re.I)
+NAMED_BEFORE_COUNT = re.compile(
+    r'\b((?:[A-Z][\w\'.-]+(?:\s+[A-Z][\w\'.-]+){0,5})(?:\s+(?:Campground|Horse Camp|State Park|State Forest|Recreation Area|Camp))?)'
+    r'\s+(?:offers|has|features|with|provides|contains|includes|boasts)\b')
+
+
+def named_campground_in_count(text, m=None, line=None):
+    """The particular campground a count sentence names, or None when it does not name one
+    ('The campground has 62 sites' names none; 'Poplar Point offers 579 sites' names Poplar Point)."""
+    ctx = count_name_context(text, m, line)
+    found = []
+    for mm in NAMED_BEFORE_COUNT.finditer(ctx):
+        name = tidy_named_camp(mm.group(1))
+        if name and not GENERIC_COUNT_SUBJECT.match(name):
+            found.append(name)
+    return found[-1] if found else None
+
+
+def bundle_name(name):
+    """True when the record name lists two or more campgrounds (joined with semicolons), so it is
+    not clearly any one of them."""
+    parts = [p.strip() for p in re.split(r'\s*;\s*', name or '') if p.strip()]
+    camps = [p for p in parts if re.search(r'campground|campsites?|\bcamp\b|horse camp', p, re.I) or len(p.split()) >= 2]
+    return len(camps) >= 2
+
+
+def record_clearly_is(record_name, named):
+    """True when this record is clearly the named campground alone, not a bundle of several."""
+    if not record_name or not named or bundle_name(record_name):
+        return False
+    words = key_words(named)
+    if not words:
+        return False
+    blob = set(norm_name(record_name).split())
+    return all(w in blob for w in words)
+
+
 def skip_site_count(text, m, url, name):
     """True when this mention is not a count for this park. A whole-state sentence, or a state
     homepage / shared camping page that does not name the park, is skipped. "State Park" (one park)
-    is not treated as "state parks"."""
+    is not treated as "state parks". R8: a count from a sentence that names a particular
+    campground belongs to that campground alone; if this record is not clearly that one, skip."""
     if statewide_site_count(text, m):
         return True
     if front_or_index_page(url) and not sentence_names_camp(text, m, name):
+        return True
+    named = named_campground_in_count(text, m)
+    if named and name and not record_clearly_is(name, named):
         return True
     return False
 
@@ -832,6 +895,39 @@ def drop_shared_site_counts(D):
     return n
 
 
+def _blank_site_total(r):
+    if r.get('sites'):
+        r['sites']['total'] = None
+    (r.get('facts_src') or {}).pop('sites.total', None)
+
+
+def apply_named_site_counts(D):
+    """R8: a count from a sentence that names a particular campground belongs to that
+    campground alone. If we can't tell which record the sentence names, the count is
+    left blank. Blank beats wrong. Sub-records of one park are judged one by one: a
+    clearly named Poplar Point keeps 579; the others go blank; if none is clearly that
+    campground, all of them go blank."""
+    groups = {}
+    for cid, r in (D.get('camps') or {}).items():
+        src = (r.get('facts_src') or {}).get('sites.total') or {}
+        if (r.get('sites') or {}).get('total') is None or not (src.get('line') or src.get('url')):
+            continue
+        named = named_campground_in_count(src.get('line') or '')
+        if not named:
+            continue
+        key = (src.get('url') or '', ' '.join(key_words(named)), (r.get('sites') or {}).get('total'))
+        groups.setdefault(key, []).append((cid, r, named))
+    n = 0
+    for rows in groups.values():
+        named = rows[0][2]
+        clear = [cid for cid, rec in (D.get('camps') or {}).items() if record_clearly_is(rec.get('name'), named)]
+        keep = clear[0] if len(clear) == 1 else None
+        for cid, r, _ in rows:
+            if cid != keep:
+                _blank_site_total(r); n += 1
+    return n
+
+
 def names_other_camps(text, name):
     """True when the page names 2+ campgrounds other than this one (a list page)."""
     others = {m.group(0).lower() for m in re.finditer(r'\b[A-Z][\w\'-]+(?:\s+[A-Z][\w\'-]+){0,3}\s+(?:Campground|Horse Camp)\b', text) if norm_name(m.group(0)) != norm_name(name)}
@@ -1212,6 +1308,9 @@ def run_area(area, state):
     dropped = drop_shared_site_counts(D)
     if dropped:
         notice(f'{area}: left {dropped} site counts blank (same page used for many parks)')
+    named_drop = apply_named_site_counts(D)
+    if named_drop:
+        notice(f'{area}: left {named_drop} site counts blank (a named count belongs to one campground, or to none if we cannot tell)')
     D['cell_status'] = (state.get('cell_status') or {}).get(area) or 'needs FCC token'
     for rr in D['camps'].values():
         if isinstance(rr.get('cell'), dict): rr['cell'] = None   # old per-record blocks go

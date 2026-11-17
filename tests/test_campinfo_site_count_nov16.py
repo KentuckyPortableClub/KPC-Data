@@ -120,7 +120,55 @@ check(all(D['camps'][k]['sites']['total'] is None for k in ('p1', 'p2', 'p3', 'p
 check(n_drop == 4 and D['camps']['own']['sites']['total'] == 27,
       'a count from a park\'s own unique page is not dropped')
 check(all(D['camps'][k]['sites']['total'] == 579 for k in ('j:hq0', 'j:hq1', 'j:hq2', 'j:hq3')),
-      'four sub-records of one park that share a page keep the count (for the owner to judge)')
+      'four sub-records of one park that share a page keep an unnamed count (drop_shared does not treat them as four parks)')
+
+# R8: a count from a sentence that names a particular campground belongs to that campground alone.
+# If we can't tell which record the sentence names, the count is left blank. Blank beats wrong.
+JL = 'https://example.test/state-parks/jordan-lake/camping'
+POPLAR = 'Poplar Point offers 579 sites for RV, tent and trailer camping; 363 sites have electric and water hookups.'
+check(C.named_campground_in_count(POPLAR) == 'Poplar Point',
+      'the count sentence is read as naming Poplar Point (a repeated heading is folded)')
+check(C.named_campground_in_count('The campground offers 146 sites with electric hookups.') is None,
+      '"The campground offers 146 sites" names no particular campground')
+check(C.record_clearly_is('Poplar Point Campground', 'Poplar Point') and not C.record_clearly_is('Crosswinds Campground', 'Poplar Point'),
+      'a record named Poplar Point is a clear match; Crosswinds is not')
+check(not C.record_clearly_is(
+    'Crosswinds Campground; Parkers Creek Campground; Poplar Point Campground; New Hope Overlook primitive campsites',
+    'Poplar Point'),
+      'a combined name that lists several campgrounds is not clearly Poplar Point')
+
+check(total_of(POPLAR, JL, 'Poplar Point Campground') == 579,
+      '579 is kept when the record is clearly Poplar Point')
+check(total_of(POPLAR, JL, 'Crosswinds Campground') is None,
+      '579 is not written on a different campground on the same page')
+check(total_of(POPLAR, JL,
+               'Crosswinds Campground; Parkers Creek Campground; Poplar Point Campground; New Hope Overlook primitive campsites') is None,
+      '579 is not written on a combined name that is not clearly Poplar Point alone')
+
+def rec_named(cid, name, url, n, line):
+    r = rec_with(cid, name, url, n)
+    r['facts_src']['sites.total']['line'] = line
+    return r
+
+# four distinct records: only the one that is clearly Poplar Point keeps 579
+D2 = {'camps': {
+    'j:hq0': rec_named('j:hq0', 'Crosswinds Campground', JL, 579, POPLAR),
+    'j:hq1': rec_named('j:hq1', 'Parkers Creek Campground', JL, 579, POPLAR),
+    'j:hq2': rec_named('j:hq2', 'Poplar Point Campground', JL, 579, POPLAR),
+    'j:hq3': rec_named('j:hq3', 'New Hope Overlook primitive campsites', JL, 579, POPLAR),
+}}
+n2 = C.apply_named_site_counts(D2)
+check(D2['camps']['j:hq2']['sites']['total'] == 579,
+      'R8: 579 stays on the sub-record that is clearly Poplar Point')
+check(all(D2['camps'][k]['sites']['total'] is None for k in ('j:hq0', 'j:hq1', 'j:hq3')) and n2 == 3,
+      'R8: the other three sub-records are left blank')
+
+# none of the four is clearly Poplar Point (all share the same combined name): all blank
+BUNDLE = 'Crosswinds Campground; Parkers Creek Campground; Poplar Point Campground; New Hope Overlook primitive campsites'
+D3 = {'camps': {f'j:hq{i}': rec_named(f'j:hq{i}', BUNDLE, JL, 579, POPLAR) for i in range(4)}}
+n3 = C.apply_named_site_counts(D3)
+check(n3 == 4 and all(r['sites']['total'] is None for r in D3['camps'].values()),
+      'R8: if none of the records is clearly Poplar Point, all four counts are left blank')
 
 print('ALL PASS' if ok else 'SOME FAILED')
 sys.exit(0 if ok else 1)
