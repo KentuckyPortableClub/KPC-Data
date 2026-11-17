@@ -545,11 +545,11 @@
     "with_booking": 114,
     "with_elevation": 0,
     "with_facts": 97,
-    "with_sites": 87
+    "with_sites": 0
    },
    "left": 0,
    "status": "done",
-   "updated": "2026-11-12"
+   "updated": "2026-11-17"
   },
   "US-MS": {
    "camps": 203,
@@ -1154,7 +1154,7 @@
   "US-ME": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-MI": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-MN": "FCC listAsOfDates: robots.txt says no",
-  "US-MO": "FCC listAsOfDates: robots.txt says no",
+  "US-MO": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-MS": "FCC listAsOfDates: robots.txt says no",
   "US-MT": "FCC listAsOfDates: robots.txt says no",
   "US-NC": "FCC listAsOfDates: robots.txt says no",
@@ -1403,10 +1403,10 @@
    "cell": {
     "carriers": null,
     "files": [],
-    "src": null,
-    "status": "FCC listAsOfDates: robots.txt says no"
+    "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2026-06-30?category=State&subcategory=Mobile%20Broadband",
+    "status": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
    },
-   "read": "2026-11-12"
+   "read": "2026-11-17"
   },
   "US-MS": {
    "cell": {
@@ -2597,40 +2597,36 @@
  },
  "last": {
   "areas": [
-   "US-WV"
+   "US-MO"
   ],
   "fcc_token": true,
   "manners": {
+   "deferred": 15,
    "errors": 0,
-   "for_person_urls": [
-    [
-     "https://reservations.wvstateparks.com/robots.txt",
-     "robots.txt answered with a web page, not a robots file (the answer came from another site (https://book.wvstateparks.com/ecomm/shop/lodging/7816932/en-US/?destination=all&destination_backup=0&search_date_ui=2027): not read as \"no rules\"): not read as \"no rules\": a person downloads what is needed from reservations.wvstateparks.com"
-    ]
-   ],
+   "for_person_urls": [],
    "host_rule": 0,
-   "requests": 1,
-   "rested": 50,
-   "robots": 1,
+   "requests": 193,
+   "rested": 191,
+   "robots": 0,
    "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "camps": 49,
+   "camps": 190,
    "elevations": 0,
    "errors": 0,
    "needs_browser": 0,
-   "needs_key": 47,
-   "no_page": 0,
+   "needs_key": 74,
+   "no_page": 1,
    "not_official": 0,
-   "ok": 0,
-   "pages_read": 0,
+   "ok": 99,
+   "pages_read": 188,
    "resting": 1,
    "ridb_calls": 0,
-   "robots": 1,
-   "skipped_fresh": 56
+   "robots": 0,
+   "skipped_fresh": 0
   },
-  "when": "2026-11-16"
+  "when": "2026-11-17"
  },
  "test": {
   "result": "PASS",
