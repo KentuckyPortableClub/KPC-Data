@@ -290,6 +290,60 @@ class Manners:
             self.stat['deferred'] = self.stat.get('deferred', 0) + 1; return False
         self.slow_used[h] = self.slow_used.get(h, 0) + 1; return True
 
+
+    def https_form(self, u):
+        """The https form of a plain http URL, or None. A non-default port is left alone (we do not
+        guess that https lives on the same port). Tests may set self.https_port to a local TLS port."""
+        pu = urllib.parse.urlparse(u)
+        if (pu.scheme or '').lower() != 'http':
+            return None
+        host = pu.hostname or ''
+        if not host:
+            return None
+        port = getattr(self, 'https_port', None)
+        if port:
+            netloc = f'{host}:{int(port)}'
+        elif pu.port and pu.port != 80:
+            return None
+        else:
+            netloc = host
+        return urllib.parse.urlunparse(pu._replace(scheme='https', netloc=netloc))
+
+    @staticmethod
+    def same_https_page(http_u, st, body, final, head=False):
+        """True if an https fetch is the same page as the http URL (same host, same path and query)."""
+        if st not in (200, 206):
+            return False
+        if not head and not body:
+            return False
+        a, b = urllib.parse.urlparse(http_u), urllib.parse.urlparse(final or '')
+        if (b.scheme or '').lower() != 'https':
+            return False
+        def host(p):
+            h = (p.hostname or '').lower()
+            return h[4:] if h.startswith('www.') else h
+        if host(a) != host(b):
+            return False
+        def pq(p):
+            path = p.path or '/'
+            if path != '/' and path.endswith('/'):
+                path = path[:-1]
+            return path.lower(), p.query
+        return pq(a) == pq(b)
+
+    def _try_https_when_http_unreadable(self, u, rng, timeout, head, accept):
+        """If http robots.txt is unreadable, try the https form when those rules allow the page
+        and the https response is the same page. Never fetches a disallowed https URL."""
+        hu = self.https_form(u)
+        if not hu:
+            return None
+        st, hd, body, final = self.get(hu, rng=rng, timeout=timeout, head=head, accept=accept)
+        if self.same_https_page(u, st, body, final, head=head):
+            self.stat['https_upgrade'] = self.stat.get('https_upgrade', 0) + 1
+            return st, hd, body, final
+        return None
+
+
     def get(self, u, rng=None, timeout=40, head=False, accept='text/html,application/pdf,application/json,*/*;q=0.8'):
         """Polite GET. Returns (status, headers dict, body bytes, final url). rng=(a,b) reads only those bytes.
         status = int HTTP status, or 'rest' / 'robots' / 'robots-unreadable' / 'deferred' / 'crawl-delay' / 'err:...' (next_run() tells which mean
@@ -304,13 +358,22 @@ class Manners:
         if bl and not self.keyed(u):
             # addendum (Quality's api.pota.app slip, Nov 3): once robots.txt said no to the site or could not be read, a request
             # already queued for that host is dropped here, before any pacing or network
+            if bl[0] == 'robots-unreadable':
+                up = self._try_https_when_http_unreadable(u, rng, timeout, head, accept)
+                if up is not None:
+                    return up
             self.stat['dropped_queued'] = self.stat.get('dropped_queued', 0) + 1; self.dropped.append((safe_url(u), bl[0]))
             if bl[0] == 'robots': self.need(u, 'robots', bl[1])
             return bl[0], {}, b'', u
         if not self.robots_ok(u):   # A13: a robots.txt we could not read (5xx / unreachable) is a next-run status; 401 / 403 / a Disallow is 'robots'
             rk = self.rkey(u)
             st = 'robots-unreadable' if self.robots.get(rk) is False and rk not in getattr(self, 'robots_disallow', set()) else 'robots'
-            if st == 'robots': self.need(u, 'robots', 'robots.txt does not allow it (a 403 counts as no)')
+            if st == 'robots':
+                self.need(u, 'robots', 'robots.txt does not allow it (a 403 counts as no)')
+                return st, {}, b'', u
+            up = self._try_https_when_http_unreadable(u, rng, timeout, head, accept)
+            if up is not None:
+                return up
             return st, {}, b'', u
         cd = self.crawl_delay(u)
         if cd > MAX_CRAWL_DELAY:
@@ -385,7 +448,11 @@ class Manners:
                 n_drop[rk] = n_drop.get(rk, 0) + 1
                 yield u, (stop[rk], {}, b'', u); continue
             r = self.get(u, **kw)
-            if robots_block(r[0]) and (rk in self.blocked or r[0] == 'robots-unreadable'): stop[rk] = r[0]   # whole host only
+            # An unreadable http robots.txt may still have a same-page https form for later
+            # URLs, so do not drop those. A custom-port http URL has no https form: drop as before.
+            if robots_block(r[0]) and (rk in self.blocked or r[0] == 'robots-unreadable'):
+                if not (r[0] == 'robots-unreadable' and self.https_form(u)):
+                    stop[rk] = r[0]   # whole host only
             yield u, r
         for rk, k in n_drop.items():
             self.for_person.append((rk, f'{k} queued request(s) dropped: robots.txt said {stop[rk]!r} for {rk} this run'))
