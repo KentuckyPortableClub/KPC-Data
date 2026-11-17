@@ -22,17 +22,29 @@ def load(p, d=None):
     except Exception: return d  # noqa: BLE001
 
 
+# Matching plan section 7a (Fable 17 Nov; HQ): every person list is sorted by activations, busiest first, and the key's newer
+# check rows (the contest, D9 one record one park, exact name, D1 saved land, D3 designations, D7 state copies) are asked too.
+ASK = ('held (rule G-1)', 'check (rule R-G8)', 'check (contest)', 'check (D9)', 'check (exact name)', 'check (D1)', 'check (D3)', 'check (D7)')
+
+
+def activations(area):
+    """{ref: activations} from data/parkinfo/<area>.json (field 7); {} when missing."""
+    d = load(pathlib.Path('data/parkinfo') / f'{area}.json', {}) or {}
+    return {r: (v[7] if isinstance(v, list) and len(v) > 7 and isinstance(v[7], int) else 0) for r, v in (d.get('parks') or {}).items()}
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     old = {(q['ref'], str(q['record'])): q for q in (load(OUT / 'key-pieces.json', {}) or {}).get('questions') or []}
     qs, pins = [], []
     for f in sorted(glob.glob(str(LINKS / 'data' / 'us-key' / 'US-*.json'))):
         st = pathlib.Path(f).stem
+        act = activations(st)
         for ref, r in ((load(f, {}) or {}).get('parks') or {}).items():
             for c in r.get('c') or []:
-                if not (isinstance(c, list) and len(c) > 3 and ('held (rule G-1)' in str(c[3]) or 'check (rule R-G8)' in str(c[3]))): continue   # Oct 29: R-G8 CHECK pieces too
+                if not (isinstance(c, list) and len(c) > 3 and any(k in str(c[3]) for k in ASK)): continue   # Oct 29: R-G8 CHECK pieces too; Nov 17: the newer checks
                 rid = c[0]
-                q = {'area': st, 'ref': ref, 'park': r.get('n'), 'record': rid, 'record_name': c[1], 'acres': c[2], 'why': c[3],
+                q = {'area': st, 'ref': ref, 'park': r.get('n'), 'activations': act.get(ref, 0), 'record': rid, 'record_name': c[1], 'acres': c[2], 'why': c[3],
                      'record_link': PADUS.format(rid) if isinstance(rid, int) else '', 'pota_link': f'https://pota.app/#/park/{ref}',
                      'question': "Is this piece part of that park on the agency's own map? YES / NO",
                      'answer': None, 'checked_by': None, 'how': None}
@@ -40,6 +52,7 @@ def main():
                 if prev: q.update({k: prev.get(k) for k in ('answer', 'checked_by', 'how', 'rechecked_by_chat2')})
                 qs.append(q)
             if r.get('pin_may_be_wrong'): pins.append({'area': st, 'ref': ref, 'park': r.get('n'), 'pota_link': f'https://pota.app/#/park/{ref}'})
+    qs.sort(key=lambda q: (-(q.get('activations') or 0), q['area'], q['ref'], str(q['record'])))   # busiest first
     open_n = sum(1 for q in qs if not q['answer'])
     D = {'about': "RULE SHEET G step 2: held similar-name key pieces, one question each. Chat 11 fills answer (YES / NO) + checked_by + how "
                   "(the agency map it looked at); chat 2 rechecks and writes overrides.json. 'pins' = POTA pin may be wrong (information only).",
@@ -47,9 +60,10 @@ def main():
     save_json_gz(OUT / 'key-pieces.json', D, indent=1, ensure_ascii=False)
     L = ['# Key pieces waiting for a person (RULE SHEET G step 2)', '',
          f'{len(qs)} held pieces, {open_n} still open. Answer in key-pieces.json (answer YES / NO, checked_by, how). Chat 2 rechecks and writes overrides.json.', '',
-         '| area | park | piece (record) | acres | answer | links |', '|---|---|---|---|---|---|']
+         'Busiest parks first (POTA activations).', '',
+         '| area | park | activations | piece (record) | acres | answer | links |', '|---|---|---|---|---|---|---|']
     for q in qs:
-        L.append(f"| {q['area']} | {q['ref']} {q['park']} | {q['record_name']} ({q['record']}) | {q['acres']:,} | {q['answer'] or 'OPEN'} | "
+        L.append(f"| {q['area']} | {q['ref']} {q['park']} | {q.get('activations') or 0:,} | {q['record_name']} ({q['record']}) | {q['acres']:,} | {q['answer'] or 'OPEN'} | "
                  + (f"[record]({q['record_link']}) · " if q['record_link'] else '') + f"[POTA]({q['pota_link']}) |")
     L += ['', f'## POTA pin may be wrong (information only): {len(pins)}', ''] + [f"- {p['area']} {p['ref']} {p['park']}" for p in pins]
     save_text_gz(OUT / 'key-pieces.md', '\n'.join(L) + '\n')
