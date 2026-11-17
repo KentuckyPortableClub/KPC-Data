@@ -53,7 +53,6 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-16 | 1 | data/docs/US-MS.json | HOLD | F-D3 2 of 20 re-tested links definitely dead (not already ok in live), e.g. https://www.fws.gov/refuge/coldwater_river/visit-us/rules-policies |
 | 2026-11-17 | 0 | data/ca-key/CA-ON.json | HOLD | F-O3 retired parks still outlined: CA-6621 |
 | 2026-11-17 | 0 | data/docs/US-AZ.json | HOLD | F-D3 2 of 20 re-tested links definitely dead (not already ok in live), e.g. https://www.fws.gov/refuge/bill-williams-river/visit-us/rules-policies |
-| 2026-11-17 | 0 | data/docs/US-KY.json | HOLD | F-D3 2 of 20 re-tested links definitely dead (not already ok in live), e.g. https://parks.ky.gov/park-rules |
 | 2026-11-17 | 0 | data/docs/US-NV.json | HOLD | F-D3 2 of 20 re-tested links definitely dead (not already ok in live), e.g. https://www.fs.usda.gov/recmain/alerts-notices |
 | ? | ? | data/ca-key/CA-QC.json | RELEASE |  |
 | ? | ? | data/ca-key/CA-SK.json | RELEASE |  |
@@ -146,6 +145,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/docs/US-IL.json | PASS |  |
 | ? | ? | data/docs/US-IN.json | PASS |  |
 | ? | ? | data/docs/US-KS.json | PASS |  |
+| ? | ? | data/docs/US-KY.json | PASS |  |
 | ? | ? | data/docs/US-LA.json | PASS |  |
 | ? | ? | data/docs/US-MA.json | PASS |  |
 | ? | ? | data/docs/US-MD.json | PASS |  |
