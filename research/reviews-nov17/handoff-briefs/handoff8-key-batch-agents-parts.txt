@@ -1,0 +1,55 @@
+Handoff 8: key batch, the agent's parts
+Nov 17, 2026 · @Brandon
+Why, who does what, ground rules
+The Kentucky Portable Club (ham radio) builds an answer key: which official land record(s) belong to each POTA park. Two reviews and a design pass (by Fable) produced one plan to make the matching better. It lives in the repo at .claude/notes/matching-plan.md; read it first. The owner, Brandon (KZ4CP), is a ham, not a programmer: plain words, real park examples, counted numbers.
+Who does what:
+• You (this handoff): Part 1, the scorecard (a new tool); Part 2, a set of small key bug fixes; Part 3, one new tripwire. These are self-contained.
+• HQ (the club's lead chat), at the same time: wiring the rule switches into the workflows and the rules hash, 'the contest' (a record goes to the park it fits best), 'a NO blocks the land', the website-agency tie-break, D3 reading the layer labels, D7, and the lists for a person. Do NOT touch those.
+• HQ reviews your pull requests, fixes what is needed and merges them.
+Ground rules (house rules):
+• Repos: KentuckyPortableClub/KPC-Links (main) and, for Part 3 only, KentuckyPortableClub/KPC-Data.
+• Work on your own branch per part (agent8/scorecard, agent8/key-fixes, agent8/t6) and open a pull request per part. Never merge. One pull request per part, commits inside it as you like.
+• No GitHub Actions runs (every run emails the owner), no issue comments, never ask for or print a token. GitHub GraphQL is blocked; use REST (gh api repos/...).
+• Do NOT edit docs/key-rules-change.txt or the *-rule-scope.json files (HQ edits those for every change at merge time, to keep one order). Instead, write in your pull request body the changelog line and the scope you propose, and which rules hash moves.
+• Every change that can move a join goes behind its own switch in kpc_key_rules.py DEFAULTS, OFF, named in the pull request.
+• Every change comes with a test in tests/ (real parks that must change, and real parks that must NOT) and an offline before / after on a state that has cases. Compare two offline runs, never an offline run with the published file.
+• How to run a state offline (no network): download the state's cache from the KPC-Links release boundary-cache (asset US-XX.json.gz) into cache/us/, copy data/parkinfo/ from KPC-Data, then in a COPY of the repo: STATES=OH KPC_KEY_REMATCH_IDS=1 GEO_CACHE_MODE=only KPC_KEY_OFFLINE=1 KPC_MASTER_OWNS=1 GEO_DETAIL=0.001 GEO_PAGE=200 python3 .github/scripts/kpc_us_key.py (it rewrites data/us-key/).
+• Golden tests must stay green: python3 tests/run_match_tests.py (53 cases) and the tests/test_d*_nov17.py files.
+Part 1: the scorecard (do this first)
+The grade every later change is measured against (matching plan section 4). People's answers are the answer sheet: about 12,900 person-reviewed joins (how starts with 'reviewed') and about 2,500 NOs (no lists in data/us-key/overrides.json + parts, read with kpc_overrides.py).
+Build .github/scripts/kpc_key_scorecard.py (a tool, not a rule file):
+• Input: one or more states, offline (the same saved copies the key reads).
+• It runs the US key for those states TWICE in a scratch copy: once as today, once with the people's answers hidden (overrides' joins / YES / NO emptied, reviewed rows not carried, KPC_KEY_REMATCH_IDS=1).
+• It compares the hidden run with the people's answers and prints one line per state:
+    ◦ FOUND = share of person-YES records the matcher joins by itself;
+    ◦ WRONG = person-NO records it joins;
+    ◦ EXTRA = records it joins on person-reviewed parks that the person did not choose (top 20 listed for a skim);
+    ◦ each also weighted by activations (POTA activation count, data/parkinfo/<area>.json field 7), because the busiest 1,000 parks carry half of all activations.
+• Any rule switch can be passed in (KPC_ONE_RECORD_ONE_PARK=1 ...), so HQ can compare before / after per switch.
+• Output: the per-state lines as text, plus a small JSON with the counts and the park lists, written OUTSIDE data/ (a scratch folder you name). Nothing goes into the repo's data.
+• Speed: keep it to what one state needs; say how long OH, NC, AR and UT take.
+Prove it: run it on OH, WI, AR, NC, MD and UT with every switch off; put the numbers in the pull request. Check by hand that 5 FOUND, 5 WRONG and 5 EXTRA rows are what the tool says they are.
+Test: a small fixture state (made-up parks and records) where the right answers are known, so the tool's own counting is proven.
+Part 2: key bug fixes (one pull request, one commit per fix, each behind a switch)
+From the reviewers' reports (A = US key, B = Canada / world). Each fix: the test parks below must change, and the 'must NOT' parks must not.
+1.  Park Service unit codes before names (matching plan section 3). 468 US parks have nps.gov/<4-letter code> in their POTA website (data/parkinfo, field 1). Join them to the Park Service boundary record with the same unit code (check the code field on the layer the US key reads). 25 codes are used by two or more POTA parks (park + preserve): there the name decides INSIDE that unit (owner: each unit its own). Test: US-0661 Gulf Islands National Seashore joins; US-0033 Great Sand Dunes NP and US-8295 the Preserve each keep only their own unit.
+2.  Forest Service wild and scenic river names (A6): drop ', <State>' and '(<forest> NF)' from FS river names before matching; also test the record's second name field. Test: US-12792 Manistee, US-12798 Sturgeon (Hiawatha), US-12234 Allegheny, US-10709 Klickitat join; US-6259 Ozone Falls SNA joins by its second name field.
+3.  Schools, cities and counties are another kind of place in R-G8 (A7): school, college, city, county, town, cemetery, church, airport, unless the park's own name has that word or the record holds the park's full name. Test: US-2859 Tumalo SP loses 'Tumalo Community School', US-9149 Ontario SRA loses 'Ontario High School', US-3445 Huntington SB loses 'Huntington City Beach'; must NOT: US-3332 Watkins Lake SP keeps 'Watkins Lake State Park and County Preserve'.
+4.  Measured acres (A9): when a record has no acres, measure them from its saved shape and mark the 'ac' as measured (2,266 joined parks have no 'ac' today). Test: a park drawn only from 0-acre study-area pieces gets an 'ac' within 5% of its shape.
+5.  Canada: a 'different place' decision is kept (B4): a park with none: true in data/ca-key/overrides.json takes no name join until a person clears it. Test: CA-0485 Trout Brook PP, CA-6371 Cedar Creek CA, CA-5201 Ministers Island NHS lose their joins (9 parks in all).
+6.  Canada: hand decisions saved as the land (B3): store CPCAD's own ZONE_ID with the name and hectares (the tracts files carry it as 'sid'); a saved id whose record now has another name goes to a person. Today all 86 still point at the right names; prove it with a test that renumbers a saved copy.
+7.  Japan: the park-name code list (B2): in kpc_world_key.py pull_a10n(), take the name cell next to the code whether or not it contains 公園 (only 3 of 397 codes are read today). The owner approved A10 for KPC (non-commercial). Test: JP-0102 Abashiri, JP-0132 Biwako, JP-0116 Minami-Boso find their candidate.
+8.  North Macedonia: read layer 93 (B8) in data/world-key/sheet-countries.json, and a record marked 'proposed' never gives official land (owner ruling: proposed = pin). Test: MK-0002 Galichica, MK-0003 Mavrovo, MK-0004 Pelister join; MK-0074 Mariovo (proposed) does not.
+For each: the offline before / after (state or country with cases) and the counts, in the pull request.
+Part 3: tripwire T6, same land through different records (KPC-Data)
+The tripwire bot (kpc_tripwires.py in KPC-Data, report only, offline) has T1-T5. T1 only sees one record ID on two parks. Some states publish the same land in two layers under different ids (Missouri sgmoc / sgmoh, North Carolina ncg / sgncb, North Dakota ndw / sgnda), so two parks can carry the same ground and T1 never sees it.
+T6: two parks of the same area whose drawn outlines are 90% or more the same land (overlap area over the smaller outline) and that share no record id. They go on the not-sure list (D10 keeps them out of 2-fers) until a person says 'same land, two park numbers' or one gives it back. A person's clear (the existing cleared list) removes them.
+• Use the same saved outlines the bot already reads; standard library geometry as the bot does today.
+• Report: count per area + the pairs, busiest first (activation counts, data/parkinfo field 7).
+• Test: a made-up pair at 95% (listed), one at 60% (not listed), one pair sharing a record id (left to T1).
+• Prove it on Missouri and North Carolina; say how many pairs and give 10 examples.
+How to hand back
+• Three pull requests (scorecard, key fixes, T6), not merged, each with: what it does in plain words; the switch(es); the proposed changelog line and scope; the offline before / after numbers; the tests and their results (Python 3.12).
+• Part 1 first: HQ needs the scorecard before it switches anything on. If time runs short, finish Part 1 and say what is left.
+• A short note for the owner (5-10 lines, plain words) with anything you think he should rule on, numbered, each with your lean.
+• If you hit something that needs HQ's parts (switch wiring, the contest), stop that item and say so; do not build around it.
