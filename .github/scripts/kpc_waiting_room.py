@@ -335,24 +335,104 @@ def not_line(path):
     return (known('trails').get('not_lines') or {}).get(re.sub(r'\.gz$', '', str(path).replace('\\', '/')))
 
 
+def open_link(u, timeout=30):
+    """One GET of a kept link (tests mock this; no network in the tests)."""
+    return urllib.request.urlopen(urllib.request.Request(u, headers={'User-Agent': UA}), timeout=timeout)
+
+
+def gone_domain(err):
+    """True when the domain itself is gone (NXDOMAIN), not a temporary DNS hiccup."""
+    import socket
+    r = getattr(err, 'reason', err)
+    if isinstance(r, socket.gaierror):
+        en = r.errno if getattr(r, 'errno', None) is not None else (r.args[0] if r.args else 0)
+        if en in (getattr(socket, 'EAI_AGAIN', -3), getattr(socket, 'EAI_MEMORY', -10)):
+            return False
+        if en in (getattr(socket, 'EAI_NONAME', -2), getattr(socket, 'EAI_NODATA', -5)):
+            return True
+        msg = str(r).lower()
+        if 'temporary' in msg or 'try again' in msg:
+            return False
+        if 'name or service not known' in msg or 'nodename nor servname' in msg or 'name not resolved' in msg:
+            return True
+    msg = str(r).lower()
+    if 'temporary failure in name resolution' in msg or 'try again' in msg:
+        return False
+    if 'name or service not known' in msg or 'nodename nor servname' in msg or 'name not resolved' in msg:
+        return True
+    return False
+
+
+def timed_out(err):
+    import socket
+    r = getattr(err, 'reason', err)
+    if isinstance(err, (TimeoutError, socket.timeout)) or isinstance(r, (TimeoutError, socket.timeout)):
+        return True
+    return 'timed out' in str(err).lower() or 'timed out' in str(r).lower()
+
+
+def classify_response(status=None, err=None):
+    """-> (result, detail) with result 'ok', 'dead' (404/410/gone domain), or 'could not check' (timeout / connection / 5xx)."""
+    if err is not None and status is None:
+        status = getattr(err, 'code', None)
+    if status is not None:
+        try: status = int(status)
+        except (TypeError, ValueError): status = None
+    if status is not None:
+        if status in (404, 410): return 'dead', str(status)
+        if 500 <= status <= 599 or status == 408: return 'could not check', 'HTTP ' + str(status)
+        return 'ok', str(status)
+    if err is not None:
+        if gone_domain(err): return 'dead', 'gone domain'
+        if timed_out(err): return 'could not check', 'timeout'
+        return 'could not check', 'connection error'
+    return 'could not check', 'connection error'
+
+
+def probe_link(u, timeout=30, retries=1):
+    """One link, with one retry on a soft failure (timeout / connection / 5xx). -> (result, detail)."""
+    last = ('could not check', 'connection error')
+    for attempt in range(1 + max(0, retries)):
+        try:
+            with open_link(u, timeout=timeout) as r:
+                last = classify_response(status=getattr(r, 'status', None) or getattr(r, 'code', None))
+        except Exception as e:  # noqa: BLE001
+            last = classify_response(err=e)
+        if last[0] != 'could not check' or attempt >= retries:
+            return last
+    return last
+
+
+def live_ok_links(live):
+    """URLs in the live file that were already read OK (not a new fault from this file)."""
+    out = set()
+    if not isinstance(live, dict): return out
+    for p in (live.get('parks') or {}).values():
+        for k in ('map', 'rules'):
+            d = p.get(k) or {}
+            if (d.get('url') or '').startswith('http') and d.get('status') == 'ok':
+                out.add(d['url'])
+    return out
+
+
 def retest(urls, n=20):
-    """Re-test up to n kept links (GET, 2 s per host). -> (tested, dead [url]). No network = Unsure (hold)."""
+    """Re-test up to n kept links (GET, 2 s per host).
+    -> {'sample': [url], 'results': [{'url', 'result', 'detail'}]}. result is ok, dead (a definite
+    404/410 or a gone domain), or 'could not check' (timeout / connection / 5xx, after one retry).
+    No network = Unsure (hold)."""
     if not NET: raise Unsure('link re-test needs the network (NET=1): not run, so the file waits')
     urls = sorted(set(u for u in urls if u and u.startswith('http')))
     random.Random(str(TODAY)).shuffle(urls)
-    last, dead, tested = {}, [], 0
-    for u in urls[:n]:
-        h = u.split('/')[2]
+    sample = urls[:n]
+    last, rows = {}, []
+    for u in sample:
+        h = u.split('/')[2] if '://' in u else ''
         w = 2 - (time.time() - last.get(h, 0))
         if w > 0: time.sleep(w)
         last[h] = time.time()
-        try:
-            with urllib.request.urlopen(urllib.request.Request(u, headers={'User-Agent': UA}), timeout=30) as r: ok = r.status < 400
-        except Exception as e:  # noqa: BLE001
-            ok = getattr(e, 'code', 0) in (401, 403, 405, 429)   # alive, just not for bots
-        tested += 1
-        if not ok: dead.append(u)
-    return tested, dead
+        result, detail = probe_link(u)
+        rows.append({'url': u, 'result': result, 'detail': detail})
+    return {'sample': sample, 'results': rows}
 
 
 def docs_url(rec, kind):
@@ -375,8 +455,25 @@ def c_docs(path, new, live, ctx):
         if bad: holds.append(f'F-D2 {len(bad)} {kind} links on a banned host (fire news / map pins / social), e.g. {bad[0][:70]}')
     kept = [docs_url(r, k) for r in P.values() for k in ('map', 'rules')]
     try:
-        tested, dead = retest(kept)
-        if tested and (len(dead) / tested > .03 and len(dead) >= 2): holds.append(f'F-D3 {len(dead)} of {tested} re-tested links dead, e.g. {dead[0][:70]}')
+        rt = retest(kept)
+        if ctx is not None: ctx['retest'] = rt
+        already = live_ok_links(live)
+        rows = rt.get('results') or []
+        n = len(rows)
+        dead = [row for row in rows if row.get('result') == 'dead']
+        already_dead = [row for row in dead if row.get('url') in already]
+        new_dead = [row for row in dead if row.get('url') not in already]
+        soft = [row for row in rows if row.get('result') == 'could not check']
+        ok_n = sum(1 for row in rows if row.get('result') == 'ok')
+        notes.append(
+            f"F-D3 retest {n} links: {ok_n} ok, {len(dead)} dead, {len(soft)} could not check"
+            + (f" ({len(already_dead)} dead already ok in live, not a new fault)" if already_dead else '')
+        )
+        notes.append('F-D3 links: ' + '; '.join(
+            f"{row.get('result')}" + (f" {row.get('detail')}" if row.get('detail') else '') + f" {str(row.get('url') or '')[:80]}"
+            for row in rows)[:900])
+        if n and new_dead and (len(new_dead) / n > .03 and len(new_dead) >= 2):
+            holds.append(f"F-D3 {len(new_dead)} of {n} re-tested links definitely dead (not already ok in live), e.g. {new_dead[0]['url'][:70]}")
     except Unsure as e: holds.append(f'F-4 unsure: {e}')   # keep the other reasons too
     return holds, notes
 
@@ -870,6 +967,7 @@ def judge(path, new, live, twin=None, ctx=None):
         holds += h2
         holds, waived = apply_stamp(path, kind, holds)
         res.update(verdict='HOLD' if holds else 'PASS', why=holds, notes=res['notes'] + notes + waived)
+        if ctx.get('retest') is not None: res['retest'] = ctx['retest']
     except Unsure as e: res.update(verdict='HOLD', why=[f'F-4 unsure: {e}'])
     except Exception as e:  # noqa: BLE001  (own error = hold, fail closed)
         res.update(verdict='HOLD', why=[f'F-4 checker error: {type(e).__name__}: {str(e)[:160]}'])
