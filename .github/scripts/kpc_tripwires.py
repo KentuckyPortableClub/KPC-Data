@@ -14,7 +14,7 @@ side branch `tripwires`; never main of KPC-Links). No layer address is written o
   T1  one record belongs to one park, unless a person said 'same land under two numbers' (D9): the same record id in the m rows of
       two or more parks in ONE key file. Every key (US, Canada, world).
   T2  every piece of a park's land connects back to its pin (D2 leg 2): per polygon of the saved outline, 0 when the pin is inside
-      (holes respected), else the distance from the pin to its outer ring, on a flat projection centred on the pin; the distances
+      (holes respected), else the distance from the pin to its outer ring, on a flat plane centred on the pin; the distances
       sorted; a gap of more than GAP_KM between two neighbours cuts the chain. US (the saved outlines are US only).
   T3  a saved row still describes its record (name + acres it was saved with, D1). This needs the key build's OWN read of the layer,
       so it is REPORTED BY THE KEY BUILD, NOT HERE. t3_hook() below is the place it plugs in: when a key build writes
@@ -43,7 +43,7 @@ really wrong: no KPC-Links checkout, locations.json unreadable, or no key file a
   python3 kpc_tripwires.py run --links <KPC-Links checkout> --out <tripwires branch checkout> [--keys us,ca,world] [--date YYYY-MM-DD]
   python3 kpc_tripwires.py run ... --not-sure <KPC-Data>/data/waiting/tripwires/not-sure.json --cleared <KPC-Data>/data/waiting/tripwires/cleared.json
   python3 kpc_tripwires.py run ... --dry-run      (counts printed, nothing written)"""
-import argparse, csv, datetime as _dt, glob, io, json, math, os, pathlib, re, socket, sys, warnings
+import argparse, csv, datetime as _dt, glob, io, json, math, os, pathlib, re, socket, sys
 
 # ---- first guesses ON TRIAL (D2): the owner tunes these before anything binds. They change counts only, never a key.
 GAP_KM = 25.0          # T2: an empty gap over this many km between two pieces cuts the chain
@@ -170,30 +170,79 @@ def t1(keys, kind='us'):
 
 
 # ---------------------------------------------------------------- geometry (T2 / T4)
-def _geo():
-    from shapely.geometry import Point, shape
-    from pyproj import CRS, Transformer
-    try: from shapely import transform as _tf   # shapely 2: coordinates in arrays
-    except ImportError: _tf = None  # noqa: BLE001
-    return Point, shape, CRS, Transformer, _tf
+# Standard library only (17 Nov, sent back from review: a runner without shapely / pyproj counted no T2 / T4 and the test died on
+# its sample data). Each vertex goes onto an azimuthal equidistant plane centred on the pin (spherical, mean Earth radius): the
+# distance from the pin to every vertex is exact on the sphere, which is what T2 and T4 measure. Holes are respected: a pin in a
+# hole is not inside, and its distance is to the outer ring.
+R_EARTH_M = 6371008.8
 
 
-def pieces(recs, lat, lon, geo):
-    """[(distance m, area m2)] per polygon of a park's land (all its saved outline records), on a flat projection centred on the pin."""
-    Point, shape, CRS, Transformer, _tf = geo
-    tr = Transformer.from_crs('EPSG:4326', CRS.from_proj4(f'+proj=aeqd +lat_0={lat} +lon_0={lon} +datum=WGS84 +units=m'), always_xy=True)
-    pin = Point(0, 0); out = []
-    for _area, rec in recs:
-        g = shape(rec['geometry'])
-        for pg in (list(g.geoms) if hasattr(g, 'geoms') else [g]):
-            if pg.is_empty or pg.geom_type != 'Polygon': continue
-            if _tf is not None:
-                q = _tf(pg, lambda a: __import__('numpy').column_stack(tr.transform(a[:, 0], a[:, 1])))
-            else:
-                from shapely.ops import transform as _otf
-                q = _otf(tr.transform, pg)
-            inside = q.covers(pin)   # holes respected: a pin in a hole is not inside
-            out.append((0.0 if inside else q.exterior.distance(pin), abs(q.area)))
+def _plane(lat0, lon0):
+    """(lon, lat) -> (x, y) metres on the azimuthal equidistant plane centred on (lat0, lon0) (sphere)."""
+    p0, s0, c0 = math.radians(lat0), math.sin(math.radians(lat0)), math.cos(math.radians(lat0))
+    def f(lon, lat):
+        p, dl = math.radians(lat), math.radians(lon - lon0)
+        sp, cp = math.sin(p), math.cos(p)
+        h = math.sin((p - p0) / 2) ** 2 + c0 * cp * math.sin(dl / 2) ** 2
+        c = 2 * math.asin(min(1.0, math.sqrt(max(h, 0.0))))
+        if c == 0: return 0.0, 0.0
+        az = math.atan2(math.sin(dl) * cp, c0 * sp - s0 * cp * math.cos(dl))
+        return R_EARTH_M * c * math.sin(az), R_EARTH_M * c * math.cos(az)
+    return f
+
+
+def _polygons(g):
+    """The polygons (lists of rings of [lon, lat]) of a GeoJSON geometry: Polygon, MultiPolygon, or a GeometryCollection of them."""
+    t = (g or {}).get('type')
+    if t == 'Polygon': return [g.get('coordinates') or []]
+    if t == 'MultiPolygon': return list(g.get('coordinates') or [])
+    if t == 'GeometryCollection': return [p for x in (g.get('geometries') or []) for p in _polygons(x)]
+    return []
+
+
+def _ring_xy(ring, f):
+    pts = [f(float(c[0]), float(c[1])) for c in ring if c is not None and len(c) >= 2]
+    if len(pts) > 1 and pts[0] == pts[-1]: pts.pop()
+    return pts
+
+
+def _contains_origin(pts):
+    """Even-odd ray cast from (0, 0) along +x."""
+    inside, n = False, len(pts)
+    for i in range(n):
+        (x1, y1), (x2, y2) = pts[i], pts[i - 1]
+        if (y1 > 0) != (y2 > 0) and x1 + (0 - y1) * (x2 - x1) / (y2 - y1) > 0: inside = not inside
+    return inside
+
+
+def _dist_origin(pts):
+    """Distance from (0, 0) to the closed ring pts."""
+    best, n = math.inf, len(pts)
+    for i in range(n):
+        (x1, y1), (x2, y2) = pts[i - 1], pts[i]
+        dx, dy = x2 - x1, y2 - y1; L = dx * dx + dy * dy
+        t = 0.0 if L == 0 else max(0.0, min(1.0, -(x1 * dx + y1 * dy) / L))
+        best = min(best, math.hypot(x1 + t * dx, y1 + t * dy))
+    return best
+
+
+def _area(pts):
+    return abs(sum(pts[i - 1][0] * pts[i][1] - pts[i][0] * pts[i - 1][1] for i in range(len(pts)))) / 2
+
+
+def pieces(recs, lat, lon):
+    """[(distance m, area m2)] per polygon of a park's land (all its saved outline records), on a flat plane centred on the pin."""
+    f = _plane(lat, lon); out = []
+    for _area_name, rec in recs:
+        for poly in _polygons(rec.get('geometry')):
+            rings = [r for r in (_ring_xy(x, f) for x in poly or []) if len(r) >= 3]
+            if not rings: continue
+            shell, holes = rings[0], rings[1:]
+            a = _area(shell) - sum(_area(h) for h in holes)
+            if a <= 0: continue
+            d = _dist_origin(shell)
+            inside = d == 0 or (_contains_origin(shell) and not any(_contains_origin(h) and _dist_origin(h) > 0 for h in holes))
+            out.append((0.0 if inside else d, a))
     return out
 
 
@@ -216,7 +265,7 @@ def band(km, edges, unit='km'):
     return f'over-{edges[-1]:g}{unit}'
 
 
-def t2_t4(outl, pins, keys, geo):
+def t2_t4(outl, pins, keys):
     by_ref = {}
     for area, pk in keys.items():
         for ref, p in pk.items(): by_ref.setdefault(ref, []).append((area, p))
@@ -224,7 +273,7 @@ def t2_t4(outl, pins, keys, geo):
     for ref, recs in sorted(outl.items()):
         if ref not in pins: nopin += 1; continue
         lat, lon = pins[ref]
-        ps = pieces(recs, lat, lon, geo)
+        ps = pieces(recs, lat, lon)
         if not ps: continue
         areas = sorted({a for a, _ in recs}); name = next((str(r.get('name') or '') for _, r in recs), '')
         grade = next((str(r.get('g') or '') for _, r in recs), '')
@@ -331,14 +380,8 @@ def run(a):
             except Exception as e:  # noqa: BLE001
                 outl = {}; report['not_counted']['us'] = f'saved outlines not read ({type(e).__name__})'
                 say('warning', 'Tripwires', f'saved outlines not read ({type(e).__name__}): T2, T4 and T5 not counted this run')
-            try: geo = _geo()
-            except Exception as e:  # noqa: BLE001
-                geo = None; report['not_counted']['T2_T4'] = f'shapely / pyproj missing ({type(e).__name__})'
-                say('warning', 'Tripwires', 'shapely / pyproj not installed: T2 and T4 not counted this run')
-            if outl and geo:
-                with warnings.catch_warnings():
-                    warnings.simplefilter('ignore')
-                    r2, r4, nopin = t2_t4(outl, pins, keys, geo)
+            if outl:
+                r2, r4, nopin = t2_t4(outl, pins, keys)
                 tot['T2'], tot['T4'] = count_refs(r2), count_refs(r4)
                 report['us_outlined_parks'] = len(outl); report['us_outlined_no_pin'] = nopin
                 for t, rows in (('T2', r2), ('T4', r4)):

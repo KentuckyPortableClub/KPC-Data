@@ -17,10 +17,7 @@ def check(c, msg):
     print(('PASS ' if c else 'FAIL ') + msg); ok = ok and bool(c)
 G8 = 'Report hidden failures'
 docs = {f.name: (f.read_text(), yaml.safe_load(f.read_text())) for f in sorted(WF.glob('*.yml'))}
-# KPC owner, 2026-11-17 (tripwire bot): a workflow that is not on main yet was never paused (its commented cron is 'not on yet', by hand only)
-_main = set(subprocess.run(['git', 'ls-tree', '--name-only', 'origin/main', '.github/workflows/'], cwd=HERE, capture_output=True, text=True).stdout.split())
-_new = {n for n in docs if _main and f'.github/workflows/{n}' not in _main}
-paused = [n for n, (t, d) in docs.items() if n not in _new and ('Paused bot' in t or re.search(r'^\s*#\s*- cron', t, re.M) or re.search(r'^# RETIRED .*paused since Nov 4', t, re.M))]   # Nov 14: the Nov 4 paused bots lost their commented cron when retired; their RETIRED header marks them
+paused = [n for n, (t, d) in docs.items() if 'Paused bot' in t or re.search(r'^\s*#\s*- cron', t, re.M) or re.search(r'^# RETIRED .*paused since Nov 4', t, re.M)]   # Nov 14: the Nov 4 paused bots lost their commented cron when retired; their RETIRED header marks them
 check(len(paused) >= 10 and not any('next round C4' in docs[n][0] or 'kpc-hidden-errors.txt' in docs[n][0] or 'KPC_FAIL_SAFE' in docs[n][0] for n in paused), f'the {len(paused)} paused (or commented-cron) bots are not touched')
 listened = set()
 for n, (t, d) in docs.items():

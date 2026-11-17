@@ -16,7 +16,7 @@ saved outlines; the outline reader is the real KPC-Links kpc_master, found by te
      the inputs cannot be read (no locations.json, no key file); one unreadable key file is a warning (exit 0)
   7. the meter: a second run shows the jump and the new pattern; history.csv keeps one line per key per day
   8. D10 not-sure list: refs + reasons (T1 / T2 / T4), a person's clear (with 'by') takes a park off, a clear with no 'by' does not
-  9. the workflow: by hand only (the schedule lines are comments), writes branch tripwires + data/waiting/tripwires/not-sure.json
+  9. the workflow: by hand only (no cron line, not even a commented one), writes branch tripwires + data/waiting/tripwires/not-sure.json
      only, never KPC-Links, no new live cron against main
 Prints PASS / FAIL lines, ends ALL PASS / SOME FAILED."""
 import gzip, hashlib, json, math, os, pathlib, re, socket, subprocess, sys, tempfile
@@ -142,12 +142,24 @@ with tempfile.TemporaryDirectory() as t:
     rows = {tw: [json.load(open(x)) for x in sorted((out / 'waiting' / tw).glob('*.json'))] for tw in ('T1', 'T2', 'T4', 'T5')}
     refs = {tw: sorted({i.get('ref') for g in v for i in g['items']}) for tw, v in rows.items()}
     check(f"2. T2: 0/19/39 km pieces chain; 0/39 km is cut (flagged {refs['T2']})", refs['T2'] == ['US-9005'])
-    t2 = rows['T2'][0]['items'][0]
-    check('2. T2 row: 2 pieces, 1 cut off, gap ~39 km, pattern gap_25-50km', t2['pieces'] == 2 and t2['pieces_cut_off'] == 1 and 38 < t2['gap_km'] < 40 and t2['pattern'] == 'gap_25-50km')
+    t2 = next((i for g in rows['T2'] for i in g['items']), {})   # no T2 row = a FAIL line below, not a crash
+    check('2. T2 row: 2 pieces, 1 cut off, gap ~39 km, pattern gap_25-50km', t2.get('pieces') == 2 and t2.get('pieces_cut_off') == 1 and 38 < t2.get('gap_km', 0) < 40 and t2.get('pattern') == 'gap_25-50km')
+    # sent back 17 Nov: on a runner without shapely / pyproj the bot counted no T2 / T4. It now needs the standard library only.
+    blocker = t / 'noextra'
+    for mod in ('shapely', 'pyproj', 'numpy'):
+        (blocker / mod).mkdir(parents=True); (blocker / mod / '__init__.py').write_text(f'raise ImportError("{mod} blocked by the test")\n')
+    pb = subprocess.run([sys.executable, str(S / 'kpc_tripwires.py'), 'run', '--links', str(L), '--dry-run', '--keys', 'us'], capture_output=True, text=True,
+                        timeout=300, env=dict(os.environ, PYTHONPATH=str(blocker)))
+    tb = (json.loads(pb.stdout[pb.stdout.index('{'):pb.stdout.rindex('}') + 1]).get('totals') or {}).get('us', {}) if '{' in pb.stdout else {}
+    check(f"2/3. standard library only: with shapely, pyproj and numpy blocked the same T2 1 / T4 2 ({pb.returncode}, {tb})",
+          pb.returncode == 0 and tb.get('T2') == 1 and tb.get('T4') == 2)
+    check('2/3. the plane is exact from the pin: 39 km east and 3 km north come back as ~39000 m and ~3000 m',
+          abs(math.hypot(*T._plane(LAT0, LON0)(LON0 + 39 * KM_LON, LAT0)) - 39000) < 200 and abs(T._plane(LAT0, LON0)(LON0, LAT0 + 3 * KM_LAT)[1] - 3000) < 20)
     check(f"3. T4: 300 m off (US-9007) and pin in a hole (US-9011) flagged; 50 m off, reviewed, big park within a tenth of its radius not ({refs['T4']})",
           refs['T4'] == ['US-9007', 'US-9011'])
-    hole = [i for g in rows['T4'] for i in g['items'] if i['ref'] == 'US-9011'][0]
-    check('2/3. a pin in a hole is not inside: its distance is to the outer ring (~3 km), not the hole (1 km)', 2.9 < hole['pin_km_from_land'] < 3.1)
+    hole = next((i for g in rows['T4'] for i in g['items'] if i['ref'] == 'US-9011'), {})
+    check('2/3. a pin in a hole is not inside: its distance is to the outer ring (~3 km), not the hole (1 km)', 2.9 < hole.get('pin_km_from_land', 0) < 3.1)
+    check(f"2/3. T2 and T4 were counted (nothing left out: {rep.get('not_counted')}, unread {rep.get('unread')})", not rep.get('not_counted') and not rep.get('unread'))
     check('3. edge slack = max(100 m, a tenth of the radius)', T.edge_slack(0) == 100 and abs(T.edge_slack(math.pi * 5000 ** 2) - 500) < 1e-6)
     t5 = [i for g in rows['T5'] for i in g['items']]
     check(f"4. T5 size form: only PAD-US 900 (500 ac, name only, drawn, other layer) over holder sgzza1 (100 ac) ({[(i['ref'], i['big_record']) for i in t5]})",
@@ -211,8 +223,9 @@ Y = (ROOT / '.github/workflows/kpc-tripwires.yml').read_text(encoding='utf-8')
 import yaml  # noqa: E402
 on = yaml.safe_load(Y)[True]
 live_cron = [l for l in Y.splitlines() if 'cron:' in l and not l.lstrip().startswith('#')]
-check('9. by hand only: workflow_dispatch, the schedule lines are comments (HQ turns it on)', list(on) == ['workflow_dispatch'] and not live_cron
-      and re.search(r"^  # schedule:\n  #   - cron: ", Y, re.M))
+check('9. by hand only: workflow_dispatch only and no cron line at all, not even a commented one (a commented cron reads as a paused bot)',
+      list(on) == ['workflow_dispatch'] and not live_cron and not re.search(r'^\s*#\s*-?\s*cron:', Y, re.M) and "cron '47 11 * * *'" in Y)
+check('9. no extra install step: the bot needs the standard library only', 'pip install' not in Y and 'shapely' not in Y and 'pyproj' not in Y)
 check('9. writes only branch tripwires and data/waiting/tripwires/not-sure.json on KPC-Data; KPC-Links is read-only',
       'kpc_push_retry.sh tripwires' in Y and 'kpc_push_retry.sh main 4 "data/waiting/tripwires/not-sure.json"' in Y
       and 'git add data/waiting/tripwires/not-sure.json' in Y and 'persist-credentials: false' in Y and 'git add -A' not in Y.split('cd kpcdata && git add')[1])
