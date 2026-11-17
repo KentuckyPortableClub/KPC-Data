@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-17T07:00Z",
+ "checked": "2026-11-17T07:32Z",
  "switched_on": false,
  "results": [
   {
@@ -2753,6 +2753,144 @@
    }
   },
   {
+   "path": "data/docs/US-KY.json",
+   "kind": "docs",
+   "why": [
+    "F-D3 2 of 20 re-tested links definitely dead (not already ok in live), e.g. https://parks.ky.gov/park-rules"
+   ],
+   "notes": [
+    "F-D3 retest 20 links: 18 ok, 2 dead, 0 could not check",
+    "F-D3 links: ok 200 https://www.fws.gov/refuge/ohio-river-islands/visit-us; ok 200 https://fw.ky.gov/More/Documents/Higginson-HenryWMA_ALL.pdf; ok 200 https://fw.ky.gov/More/Documents/Veterans_Memorial_WMA_all.pdf; ok 200 https://app.fw.ky.gov/kfwis/Map_Images/JeffersonNationalForest_onlineimage.jpg; ok 200 https://eec.ky.gov/Natural-Resources/Forestry/Documents/KentuckyRidgeStateForest; ok 200 https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park; ok 200 https://fw.ky.gov/More/Documents/YatesvilleLakeWMA_ALL.pdf; ok 200 https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park; ok 200 https://fw.ky.gov/More/Documents/MarionCountyWMAandSF_ALL.pdf; ok 200 https://www.fs.usda.gov/r08/gwj/maps-guides/motor-vehicle-use-map; ok 200 https://fw.ky.gov/More/Documents/TN_SullivanWMA_All.pdf; dead 404 https://parks.ky.gov/park-rules; ok 200 https://www.kentucky"
+   ],
+   "verdict": "HOLD",
+   "retest": {
+    "sample": [
+     "https://www.fws.gov/refuge/ohio-river-islands/visit-us",
+     "https://fw.ky.gov/More/Documents/Higginson-HenryWMA_ALL.pdf",
+     "https://fw.ky.gov/More/Documents/Veterans_Memorial_WMA_all.pdf",
+     "https://app.fw.ky.gov/kfwis/Map_Images/JeffersonNationalForest_onlineimage.jpg",
+     "https://eec.ky.gov/Natural-Resources/Forestry/Documents/KentuckyRidgeStateForest_ALL.pdf",
+     "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-mapa3c1f5b0-c74b-4d8b-9d28-ff8e3cb13018.pdf?sfvrsn=ebab9901_2",
+     "https://fw.ky.gov/More/Documents/YatesvilleLakeWMA_ALL.pdf",
+     "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-mapdfb1e246-2868-4a48-9910-0a7654200f0b.pdf?sfvrsn=dd759b8b_2",
+     "https://fw.ky.gov/More/Documents/MarionCountyWMAandSF_ALL.pdf",
+     "https://www.fs.usda.gov/r08/gwj/maps-guides/motor-vehicle-use-map",
+     "https://fw.ky.gov/More/Documents/TN_SullivanWMA_All.pdf",
+     "https://parks.ky.gov/park-rules",
+     "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map786e23f1-10fd-43dc-8a0d-ae5790d0a26b.pdf?sfvrsn=d3a95095_2",
+     "https://eec.ky.gov/Nature-Preserves/Brochures/MetropolisLakeBrochure_bw.pdf",
+     "https://fw.ky.gov/More/Documents/Hoskins_WMA_All.pdf",
+     "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map299d3114-7520-4a68-9eb4-9c83abd57b53.pdf?sfvrsn=10762b4_2",
+     "https://www.nps.gov/biso/planyourvisit/maps.htm",
+     "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-mape83dbdcd-0e10-442e-896e-749c8363bb03.pdf?sfvrsn=b777de3_2",
+     "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-mapd99a2476-e940-431e-9e02-1589dfccd4aa.pdf?sfvrsn=9acbaaa8_2",
+     "https://www.fws.gov/refuge/green-river/visit-us/rules-policies"
+    ],
+    "results": [
+     {
+      "url": "https://www.fws.gov/refuge/ohio-river-islands/visit-us",
+      "result": "ok",
+      "detail": "200"
+     },
+     {
+      "url": "https://fw.ky.gov/More/Documents/Higginson-HenryWMA_ALL.pdf",
+      "result": "ok",
+      "detail": "200"
+     },
+     {
+      "url": "https://fw.ky.gov/More/Documents/Veterans_Memorial_WMA_all.pdf",
+      "result": "ok",
+      "detail": "200"
+     },
+     {
+      "url": "https://app.fw.ky.gov/kfwis/Map_Images/JeffersonNationalForest_onlineimage.jpg",
+      "result": "ok",
+      "detail": "200"
+     },
+     {
+      "url": "https://eec.ky.gov/Natural-Resources/Forestry/Documents/KentuckyRidgeStateForest_ALL.pdf",
+      "result": "ok",
+      "detail": "200"
+     },
+     {
+      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-mapa3c1f5b0-c74b-4d8b-9d28-ff8e3cb13018.pdf?sfvrsn=ebab9901_2",
+      "result": "ok",
+      "detail": "200"
+     },
+     {
+      "url": "https://fw.ky.gov/More/Documents/YatesvilleLakeWMA_ALL.pdf",
+      "result": "ok",
+      "detail": "200"
+     },
+     {
+      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-mapdfb1e246-2868-4a48-9910-0a7654200f0b.pdf?sfvrsn=dd759b8b_2",
+      "result": "ok",
+      "detail": "200"
+     },
+     {
+      "url": "https://fw.ky.gov/More/Documents/MarionCountyWMAandSF_ALL.pdf",
+      "result": "ok",
+      "detail": "200"
+     },
+     {
+      "url": "https://www.fs.usda.gov/r08/gwj/maps-guides/motor-vehicle-use-map",
+      "result": "ok",
+      "detail": "200"
+     },
+     {
+      "url": "https://fw.ky.gov/More/Documents/TN_SullivanWMA_All.pdf",
+      "result": "ok",
+      "detail": "200"
+     },
+     {
+      "url": "https://parks.ky.gov/park-rules",
+      "result": "dead",
+      "detail": "404"
+     },
+     {
+      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map786e23f1-10fd-43dc-8a0d-ae5790d0a26b.pdf?sfvrsn=d3a95095_2",
+      "result": "ok",
+      "detail": "200"
+     },
+     {
+      "url": "https://eec.ky.gov/Nature-Preserves/Brochures/MetropolisLakeBrochure_bw.pdf",
+      "result": "ok",
+      "detail": "200"
+     },
+     {
+      "url": "https://fw.ky.gov/More/Documents/Hoskins_WMA_All.pdf",
+      "result": "ok",
+      "detail": "200"
+     },
+     {
+      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-map299d3114-7520-4a68-9eb4-9c83abd57b53.pdf?sfvrsn=10762b4_2",
+      "result": "ok",
+      "detail": "200"
+     },
+     {
+      "url": "https://www.nps.gov/biso/planyourvisit/maps.htm",
+      "result": "ok",
+      "detail": "200"
+     },
+     {
+      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-mape83dbdcd-0e10-442e-896e-749c8363bb03.pdf?sfvrsn=b777de3_2",
+      "result": "ok",
+      "detail": "200"
+     },
+     {
+      "url": "https://www.kentuckytourism.com/media/docs/default-source/listing-documents/park-mapd99a2476-e940-431e-9e02-1589dfccd4aa.pdf?sfvrsn=9acbaaa8_2",
+      "result": "ok",
+      "detail": "200"
+     },
+     {
+      "url": "https://www.fws.gov/refuge/green-river/visit-us/rules-policies",
+      "result": "dead",
+      "detail": "404"
+     }
+    ]
+   }
+  },
+  {
    "path": "data/docs/US-LA.json",
    "kind": "docs",
    "why": [],
@@ -3163,49 +3301,45 @@
   {
    "path": "data/docs/US-ME.json",
    "kind": "docs",
-   "why": [
-    "F-D1 one map page on 33 of 148 parks: https://www.maine.gov/dacf/parks/publications_maps/index.shtml",
-    "F-D1 one rules page on 48 of 148 parks: https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
-    "F-D3 2 of 20 re-tested links definitely dead (not already ok in live), e.g. https://www.nps.gov/maac/learn/management/lawsandpolicies.htm"
-   ],
+   "why": [],
    "notes": [
-    "F-D3 retest 20 links: 17 ok, 3 dead, 0 could not check (1 dead already ok in live, not a new fault)",
-    "F-D3 links: ok 403 https://www.maine.gov/dacf/parksearch/PropertyGuides/Maps/FullSize/machiasriverm; ok 200 https://www.fws.gov/refuge/umbagog/visit-us/rules-policies; ok 200 https://www.fws.gov/refuge/sunkhaze-meadows/map; ok 200 https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl?park_i; ok 200 https://www.fws.gov/refuge/petit-manan/visit-us/rules-policies; dead 404 https://www.fws.gov/refuge/sunkhaze-meadows/visit-us/rules-policies; ok 200 https://www.nps.gov/acad/planyourvisit/maps.htm; ok 200 https://www.fws.gov/refuge/aroostook/map; ok 200 https://www.nps.gov/maac/planyourvisit/maps.htm; dead 404 https://www.nps.gov/maac/learn/management/lawsandpolicies.htm; ok 403 http://www.maine.gov/dacf/parks/docs/maps/bradburymountaintrailmapeast.pdf; ok 200 https://www.fws.gov/refuge/moosehorn/map; ok 403 https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml; dead 404 "
+    "F-D3 retest 20 links: 19 ok, 1 dead, 0 could not check",
+    "F-D3 links: ok 200 https://www.fws.gov/refuge/pond-island/map; ok 403 https://www.maine.gov/dacf/parks/docs/LoopTrailBrochure-LamoineStatePark.pdf; ok 200 https://www.fws.gov/refuge/sunkhaze-meadows/map; ok 200 https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl?park_i; ok 200 https://www.fws.gov/refuge/rachel-carson/visit-us/rules-policies; ok 200 https://www.fws.gov/refuge/umbagog/map; ok 200 https://www.nps.gov/acad/planyourvisit/maps.htm; ok 200 https://www.fws.gov/refuge/aroostook/map; ok 200 https://www.nps.gov/maac/planyourvisit/maps.htm; ok 403 https://www.maine.gov/dacf/parksearch/PropertyGuides/PDF_GUIDE/ferry-beach-guide; ok 403 http://www.maine.gov/dacf/parks/docs/maps/bradburymountaintrailmapeast.pdf; ok 200 https://www.fws.gov/refuge/moosehorn/visit-us/rules-policies; ok 403 https://www.maine.gov/dacf/parksearch/PropertyGuides/Maps/FullSize/machiasriverm; ok 200 h"
    ],
-   "verdict": "HOLD",
+   "verdict": "PASS",
    "retest": {
     "sample": [
-     "https://www.maine.gov/dacf/parksearch/PropertyGuides/Maps/FullSize/machiasrivermap.pdf",
-     "https://www.fws.gov/refuge/umbagog/visit-us/rules-policies",
+     "https://www.fws.gov/refuge/pond-island/map",
+     "https://www.maine.gov/dacf/parks/docs/LoopTrailBrochure-LamoineStatePark.pdf",
      "https://www.fws.gov/refuge/sunkhaze-meadows/map",
      "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl?park_id=30",
-     "https://www.fws.gov/refuge/petit-manan/visit-us/rules-policies",
-     "https://www.fws.gov/refuge/sunkhaze-meadows/visit-us/rules-policies",
+     "https://www.fws.gov/refuge/rachel-carson/visit-us/rules-policies",
+     "https://www.fws.gov/refuge/umbagog/map",
      "https://www.nps.gov/acad/planyourvisit/maps.htm",
      "https://www.fws.gov/refuge/aroostook/map",
      "https://www.nps.gov/maac/planyourvisit/maps.htm",
-     "https://www.nps.gov/maac/learn/management/lawsandpolicies.htm",
+     "https://www.maine.gov/dacf/parksearch/PropertyGuides/PDF_GUIDE/ferry-beach-guide.pdf",
      "http://www.maine.gov/dacf/parks/docs/maps/bradburymountaintrailmapeast.pdf",
-     "https://www.fws.gov/refuge/moosehorn/map",
-     "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
-     "https://www.nps.gov/roca/learn/management/lawsandpolicies.htm",
-     "https://www.fws.gov/refuge/rachel-carson/map",
-     "https://www.nps.gov/appa/learn/management/lawsandpolicies.htm",
+     "https://www.fws.gov/refuge/moosehorn/visit-us/rules-policies",
+     "https://www.maine.gov/dacf/parksearch/PropertyGuides/Maps/FullSize/machiasrivermap.pdf",
+     "https://www.mainetrailfinder.com/services?lat=45.35928726196289&lon=-69.94104766845703",
+     "https://www.nps.gov/maac/learn/management/lawsandpolicies.htm",
+     "https://www.fws.gov/refuge/umbagog/visit-us/rules-policies",
      "http://www.maine.gov/dacf/parksearch/PropertyGuides/Maps/FullSize/graftonmahoosucmap.pdf",
-     "https://www.fws.gov/refuge/franklin-island/visit-us/rules-policies",
+     "https://www.fws.gov/refuge/moosehorn/map",
      "https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/gmaps/doc_map.pl",
      "http://www.maine.gov/dacf/parks/camping/pdf/sebago-group-camp-map.pdf"
     ],
     "results": [
      {
-      "url": "https://www.maine.gov/dacf/parksearch/PropertyGuides/Maps/FullSize/machiasrivermap.pdf",
-      "result": "ok",
-      "detail": "403"
-     },
-     {
-      "url": "https://www.fws.gov/refuge/umbagog/visit-us/rules-policies",
+      "url": "https://www.fws.gov/refuge/pond-island/map",
       "result": "ok",
       "detail": "200"
+     },
+     {
+      "url": "https://www.maine.gov/dacf/parks/docs/LoopTrailBrochure-LamoineStatePark.pdf",
+      "result": "ok",
+      "detail": "403"
      },
      {
       "url": "https://www.fws.gov/refuge/sunkhaze-meadows/map",
@@ -3218,14 +3352,14 @@
       "detail": "200"
      },
      {
-      "url": "https://www.fws.gov/refuge/petit-manan/visit-us/rules-policies",
+      "url": "https://www.fws.gov/refuge/rachel-carson/visit-us/rules-policies",
       "result": "ok",
       "detail": "200"
      },
      {
-      "url": "https://www.fws.gov/refuge/sunkhaze-meadows/visit-us/rules-policies",
-      "result": "dead",
-      "detail": "404"
+      "url": "https://www.fws.gov/refuge/umbagog/map",
+      "result": "ok",
+      "detail": "200"
      },
      {
       "url": "https://www.nps.gov/acad/planyourvisit/maps.htm",
@@ -3243,9 +3377,9 @@
       "detail": "200"
      },
      {
-      "url": "https://www.nps.gov/maac/learn/management/lawsandpolicies.htm",
-      "result": "dead",
-      "detail": "404"
+      "url": "https://www.maine.gov/dacf/parksearch/PropertyGuides/PDF_GUIDE/ferry-beach-guide.pdf",
+      "result": "ok",
+      "detail": "403"
      },
      {
       "url": "http://www.maine.gov/dacf/parks/docs/maps/bradburymountaintrailmapeast.pdf",
@@ -3253,27 +3387,27 @@
       "detail": "403"
      },
      {
-      "url": "https://www.fws.gov/refuge/moosehorn/map",
+      "url": "https://www.fws.gov/refuge/moosehorn/visit-us/rules-policies",
       "result": "ok",
       "detail": "200"
      },
      {
-      "url": "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+      "url": "https://www.maine.gov/dacf/parksearch/PropertyGuides/Maps/FullSize/machiasrivermap.pdf",
       "result": "ok",
       "detail": "403"
      },
      {
-      "url": "https://www.nps.gov/roca/learn/management/lawsandpolicies.htm",
-      "result": "dead",
-      "detail": "404"
-     },
-     {
-      "url": "https://www.fws.gov/refuge/rachel-carson/map",
+      "url": "https://www.mainetrailfinder.com/services?lat=45.35928726196289&lon=-69.94104766845703",
       "result": "ok",
       "detail": "200"
      },
      {
-      "url": "https://www.nps.gov/appa/learn/management/lawsandpolicies.htm",
+      "url": "https://www.nps.gov/maac/learn/management/lawsandpolicies.htm",
+      "result": "dead",
+      "detail": "404"
+     },
+     {
+      "url": "https://www.fws.gov/refuge/umbagog/visit-us/rules-policies",
       "result": "ok",
       "detail": "200"
      },
@@ -3283,7 +3417,7 @@
       "detail": "403"
      },
      {
-      "url": "https://www.fws.gov/refuge/franklin-island/visit-us/rules-policies",
+      "url": "https://www.fws.gov/refuge/moosehorn/map",
       "result": "ok",
       "detail": "200"
      },
@@ -3306,8 +3440,8 @@
    "why": [],
    "notes": [
     "no live copy: first time this file is published",
-    "F-D3 retest 20 links: 19 ok, 0 dead, 1 could not check",
-    "F-D3 links: ok 200 https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/sga/Townli; ok 200 https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/sga/Flat_Ri; ok 200 https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/SWGAs/Ralp; ok 200 https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/sga/Blendon; ok 200 https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/sga/Headqu; ok 200 https://www.fws.gov/sites/default/files/documents/seney-general-brochure-2022-ac; ok 200 https://dnr.wisconsin.gov/topic/parks/menominee/maps; ok 200 https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/sga/Molass; ok 200 https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/sga/Fish_Po; ok 403 https://www.michigan.org/regions-and-cities; ok 200 https://www.bingmapsportal.com/terms/EndUserTerms; ok 200 https://ww"
+    "F-D3 retest 20 links: 18 ok, 0 dead, 2 could not check",
+    "F-D3 links: ok 200 https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/sga/Townli; ok 200 https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/sga/Flat_Ri; ok 200 https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/SWGAs/Ralp; ok 200 https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/sga/Blendon; ok 200 https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/sga/Headqu; ok 200 https://www.fws.gov/sites/default/files/documents/seney-general-brochure-2022-ac; ok 200 https://dnr.wisconsin.gov/topic/parks/menominee/maps; ok 200 https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/sga/Molass; could not check HTTP 503 https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/sga/Fish_Po; ok 403 https://www.michigan.org/regions-and-cities; ok 200 https://www.bingmapsportal.com/terms/EndUserTerms;"
    ],
    "verdict": "PASS",
    "retest": {
@@ -3376,8 +3510,8 @@
      },
      {
       "url": "https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/sga/Fish_Point_SWA_map.pdf",
-      "result": "ok",
-      "detail": "200"
+      "result": "could not check",
+      "detail": "HTTP 503"
      },
      {
       "url": "https://www.michigan.org/regions-and-cities",
@@ -3401,8 +3535,8 @@
      },
      {
       "url": "https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/sga/Allegan_SGA_map.pdf",
-      "result": "could not check",
-      "detail": "HTTP 503"
+      "result": "ok",
+      "detail": "200"
      },
      {
       "url": "https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/sga/Langston_SGA_map.pdf",
@@ -3421,8 +3555,8 @@
      },
      {
       "url": "https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/sga/Bentley_Marsh_Flooding_SWMA_map.pdf",
-      "result": "ok",
-      "detail": "200"
+      "result": "could not check",
+      "detail": "HTTP 503"
      },
      {
       "url": "https://www.michigan.gov/dnr/managing-resources/public-land/boundaries",
@@ -3576,75 +3710,78 @@
   {
    "path": "data/docs/US-MO.json",
    "kind": "docs",
-   "why": [
-    "F-D1 one rules page on 426 of 561 parks: https://www.sos.mo.gov/adrules/csr/current/3csr/3csr.asp"
-   ],
+   "why": [],
    "notes": [
-    "F-D3 retest 20 links: 19 ok, 1 dead, 0 could not check (1 dead already ok in live, not a new fault)",
-    "F-D3 links: ok 200 https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/82; ok 200 https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/20; ok 200 https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/87; ok 200 https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/99; ok 200 https://mdc.mo.gov/sites/default/files/2023-05/7912map_0.pdf; ok 200 https://mdc.mo.gov/sites/default/files/2024-06/5202map.pdf; ok 200 https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/82; ok 200 https://mdc.mo.gov/sites/default/files/2024-08/7935map.pdf; ok 200 https://mdc.mo.gov/sites/default/files/2024-09/4644map.pdf; ok 200 https://mostateparks.com/media/pdf/onondaga-cave-state-park-map; dead 404 https://www.fws.gov/refuge/swan-lake/visit-us/rules-policies; ok 200 https://mdc.mo.gov/sites/default/fi"
+    "F-D3 retest 20 links: 20 ok, 0 dead, 0 could not check",
+    "F-D3 links: ok 200 https://mdc.mo.gov/sites/default/files/2023-10/9111map.pdf; ok 200 https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/67; ok 200 https://mdc.mo.gov/sites/default/files/2022-12/6404map.pdf; ok 200 https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/88; ok 200 https://mostateparks.com/page/katy-trail-state-park/entire-trail-katy-trail; ok 200 https://mdc.mo.gov/sites/default/files/2024-10/7832map_0.pdf; ok 200 https://mdc.mo.gov/sites/default/files/2022-12/8147map.pdf; ok 200 https://mostateparks.com/media/pdf/ha-ha-tonka-state-park-map; ok 200 https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/86; ok 200 https://mdc.mo.gov/sites/default/files/2024-09/4644map.pdf; ok 200 https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/86; ok 200 https://mdc.mo.gov/sites/default/files/mo_natu"
    ],
-   "verdict": "HOLD",
+   "verdict": "PASS",
    "retest": {
     "sample": [
-     "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8212map.pdf",
-     "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/201302map.pdf",
-     "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8738map.pdf",
-     "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/9908map.pdf",
-     "https://mdc.mo.gov/sites/default/files/2023-05/7912map_0.pdf",
-     "https://mdc.mo.gov/sites/default/files/2024-06/5202map.pdf",
-     "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8252map.pdf",
-     "https://mdc.mo.gov/sites/default/files/2024-08/7935map.pdf",
+     "https://mdc.mo.gov/sites/default/files/2023-10/9111map.pdf",
+     "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/6719map.pdf",
+     "https://mdc.mo.gov/sites/default/files/2022-12/6404map.pdf",
+     "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8801map.pdf",
+     "https://mostateparks.com/page/katy-trail-state-park/entire-trail-katy-trail",
+     "https://mdc.mo.gov/sites/default/files/2024-10/7832map_0.pdf",
+     "https://mdc.mo.gov/sites/default/files/2022-12/8147map.pdf",
+     "https://mostateparks.com/media/pdf/ha-ha-tonka-state-park-map",
+     "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8617map.pdf",
      "https://mdc.mo.gov/sites/default/files/2024-09/4644map.pdf",
-     "https://mostateparks.com/media/pdf/onondaga-cave-state-park-map",
-     "https://www.fws.gov/refuge/swan-lake/visit-us/rules-policies",
-     "https://mdc.mo.gov/sites/default/files/2024-05/7513map.pdf",
-     "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/9610map.pdf",
-     "https://www.nps.gov/wicr/planyourvisit/maps.htm",
-     "https://mdc.mo.gov/sites/default/files/2023-02/8211map.pdf",
-     "https://mdc.mo.gov/sites/default/files/2024-07/7910map.pdf",
-     "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8917map.pdf",
-     "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/6807map.pdf",
-     "https://www.nps.gov/trte/learn/management/lawsandpolicies.htm",
-     "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8043map.pdf"
+     "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8604map.pdf",
+     "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/9334map.pdf",
+     "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8212map.pdf",
+     "https://mostateparks.com/media/pdf/prairie-state-park-map",
+     "https://mdc.mo.gov/sites/default/files/2024-06/7103map.pdf",
+     "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/9020map.pdf",
+     "https://mdc.mo.gov/sites/default/files/2023-02/8322map.pdf",
+     "https://mdc.mo.gov/sites/default/files/2024-04/8310map.pdf",
+     "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/4604map.pdf",
+     "https://www.nps.gov/wicr/planyourvisit/maps.htm"
     ],
     "results": [
      {
-      "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8212map.pdf",
+      "url": "https://mdc.mo.gov/sites/default/files/2023-10/9111map.pdf",
       "result": "ok",
       "detail": "200"
      },
      {
-      "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/201302map.pdf",
+      "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/6719map.pdf",
       "result": "ok",
       "detail": "200"
      },
      {
-      "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8738map.pdf",
+      "url": "https://mdc.mo.gov/sites/default/files/2022-12/6404map.pdf",
       "result": "ok",
       "detail": "200"
      },
      {
-      "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/9908map.pdf",
+      "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8801map.pdf",
       "result": "ok",
       "detail": "200"
      },
      {
-      "url": "https://mdc.mo.gov/sites/default/files/2023-05/7912map_0.pdf",
+      "url": "https://mostateparks.com/page/katy-trail-state-park/entire-trail-katy-trail",
       "result": "ok",
       "detail": "200"
      },
      {
-      "url": "https://mdc.mo.gov/sites/default/files/2024-06/5202map.pdf",
+      "url": "https://mdc.mo.gov/sites/default/files/2024-10/7832map_0.pdf",
       "result": "ok",
       "detail": "200"
      },
      {
-      "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8252map.pdf",
+      "url": "https://mdc.mo.gov/sites/default/files/2022-12/8147map.pdf",
       "result": "ok",
       "detail": "200"
      },
      {
-      "url": "https://mdc.mo.gov/sites/default/files/2024-08/7935map.pdf",
+      "url": "https://mostateparks.com/media/pdf/ha-ha-tonka-state-park-map",
+      "result": "ok",
+      "detail": "200"
+     },
+     {
+      "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8617map.pdf",
       "result": "ok",
       "detail": "200"
      },
@@ -3654,57 +3791,52 @@
       "detail": "200"
      },
      {
-      "url": "https://mostateparks.com/media/pdf/onondaga-cave-state-park-map",
+      "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8604map.pdf",
       "result": "ok",
       "detail": "200"
      },
      {
-      "url": "https://www.fws.gov/refuge/swan-lake/visit-us/rules-policies",
-      "result": "dead",
-      "detail": "404"
-     },
-     {
-      "url": "https://mdc.mo.gov/sites/default/files/2024-05/7513map.pdf",
+      "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/9334map.pdf",
       "result": "ok",
       "detail": "200"
      },
      {
-      "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/9610map.pdf",
+      "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8212map.pdf",
+      "result": "ok",
+      "detail": "200"
+     },
+     {
+      "url": "https://mostateparks.com/media/pdf/prairie-state-park-map",
+      "result": "ok",
+      "detail": "200"
+     },
+     {
+      "url": "https://mdc.mo.gov/sites/default/files/2024-06/7103map.pdf",
+      "result": "ok",
+      "detail": "200"
+     },
+     {
+      "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/9020map.pdf",
+      "result": "ok",
+      "detail": "200"
+     },
+     {
+      "url": "https://mdc.mo.gov/sites/default/files/2023-02/8322map.pdf",
+      "result": "ok",
+      "detail": "200"
+     },
+     {
+      "url": "https://mdc.mo.gov/sites/default/files/2024-04/8310map.pdf",
+      "result": "ok",
+      "detail": "200"
+     },
+     {
+      "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/4604map.pdf",
       "result": "ok",
       "detail": "200"
      },
      {
       "url": "https://www.nps.gov/wicr/planyourvisit/maps.htm",
-      "result": "ok",
-      "detail": "200"
-     },
-     {
-      "url": "https://mdc.mo.gov/sites/default/files/2023-02/8211map.pdf",
-      "result": "ok",
-      "detail": "200"
-     },
-     {
-      "url": "https://mdc.mo.gov/sites/default/files/2024-07/7910map.pdf",
-      "result": "ok",
-      "detail": "200"
-     },
-     {
-      "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8917map.pdf",
-      "result": "ok",
-      "detail": "200"
-     },
-     {
-      "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/6807map.pdf",
-      "result": "ok",
-      "detail": "200"
-     },
-     {
-      "url": "https://www.nps.gov/trte/learn/management/lawsandpolicies.htm",
-      "result": "ok",
-      "detail": "200"
-     },
-     {
-      "url": "https://mdc.mo.gov/sites/default/files/mo_nature/downloads/conservation-areas/8043map.pdf",
       "result": "ok",
       "detail": "200"
      }
@@ -33274,13 +33406,11 @@
   {
    "path": "data/truth/US-TX.json",
    "kind": "truth",
-   "why": [
-    "F-R2 5 OFF rows share the size 675,000.0 ac"
-   ],
+   "why": [],
    "notes": [
     "no live copy: first time this file is published"
    ],
-   "verdict": "HOLD",
+   "verdict": "PASS",
    "retest": {
     "sample": [
      "https://www.fws.gov/fish-hatchery/saratoga/map",
@@ -46240,15 +46370,6 @@
      }
     ]
    }
-  },
-  {
-   "path": "data/docs/US-KY.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [],
-   "verdict": "HOLD"
   }
  ]
 }

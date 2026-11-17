@@ -936,22 +936,23 @@
   "US-TX": {
    "checked": 222,
    "counts": {
-    "agree": 47,
-    "handover_hints": 15,
+    "agree": 49,
+    "handover_hints": 10,
     "no_page": 0,
-    "no_size": 74,
-    "off": 33,
+    "no_size": 86,
+    "not_read": 19,
+    "off": 15,
     "ours_unknown": 6,
     "parks": 222,
     "retired": 0,
-    "unsure": 47,
-    "weak": 5,
+    "unsure": 32,
+    "weak": 4,
     "with_outline": 207
    },
    "left": 0,
    "parks": 222,
-   "status": "queued",
-   "updated": "2026-11-09"
+   "status": "done",
+   "updated": "2026-11-17"
   },
   "US-UT": {
    "checked": 692,
@@ -1101,52 +1102,43 @@
  },
  "last": {
   "areas": [
-   "US-NY"
+   "US-TX"
   ],
   "manners": {
-   "browser": 7,
-   "dropped_queued": 561,
+   "browser": 1,
    "errors": 0,
    "for_person": 1,
    "for_person_urls": [
     [
-     "https://www.dec.ny.gov/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from www.dec.ny.gov this run"
+     "https://visitlonghorncavern.com/robots.txt",
+     "robots.txt answered 202: nothing fetched from visitlonghorncavern.com this run"
     ],
     [
-     "https://parks.ny.gov/system/files/file-visibility/2026-11/Sampson_Hunting_Map.pdf",
+     "https://www.pacificwarmuseum.org/",
      "HTTP 403 twice"
-    ],
-    [
-     "https://www.njpalisades.org/robots.txt",
-     "robots.txt answered 202: nothing fetched from www.njpalisades.org this run"
-    ],
-    [
-     "https://sojournertruthstatepark.info/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from sojournertruthstatepark.info this run"
     ]
    ],
-   "host_rule": 0,
-   "requests": 1263,
+   "host_rule": 7,
+   "requests": 384,
    "rested": 0,
    "retry403": 1,
-   "robots": 18,
-   "robots_unreadable": 3,
+   "robots": 182,
+   "robots_unreadable": 1,
    "strikes": 2
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 17,
-   "no_size": 684,
-   "ours_unknown": 15,
-   "pages_read": 906,
-   "parks": 851,
+   "handover_hints": 10,
+   "no_size": 105,
+   "ours_unknown": 6,
+   "pages_read": 335,
+   "parks": 222,
    "retired": 0,
-   "size_agree": 54,
-   "size_off": 24,
-   "size_unsure": 53,
+   "size_agree": 49,
+   "size_off": 15,
+   "size_unsure": 32,
    "skipped_fresh": 0,
-   "with_outline": 830
+   "with_outline": 207
   },
   "when": "2026-11-17"
  },
