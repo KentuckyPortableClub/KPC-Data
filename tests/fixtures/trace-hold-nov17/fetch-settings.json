@@ -1,0 +1,5 @@
+{
+ "about": "TEST FIXTURE, not the store's file. The numbers are Handoff 3's table (KPC owner, 2026-11-17); the real fetch-settings.json lives in KPC-Store and is passed to the finder by path (--settings / KPC_FETCH_SETTINGS).",
+ "per_host": {"requests_per_hour": 200, "requests_per_day": 1500, "seconds_between_requests": 2, "failures_before_parked": 3},
+ "host_gaps": {"apps.fs.usda.gov": 10}
+}

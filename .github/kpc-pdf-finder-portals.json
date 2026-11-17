@@ -1,0 +1,19 @@
+{
+ "about": "PDF finder step 1 (KPC owner, 2026-11-17; Handoff 3): each area's open-data portal and its search API kind (arcgis-hub = /api/search/v1, socrata = /api/catalog/v1, ckan = /api/3/action/package_search). Robots, the host rules and fetch-settings.json still apply to every one. verify = HQ checks the address and the API answer before the finder is turned on; nothing here was requested from the box.",
+ "portals": {
+  "US-AR": {"kind": "arcgis-hub", "host": "gis.arkansas.gov", "verify": true},
+  "US-CT": {"kind": "socrata", "host": "data.ct.gov", "verify": true},
+  "US-IL": {"kind": "ckan", "host": "data.illinois.gov", "verify": true},
+  "US-KY": {"kind": "arcgis-hub", "host": "opengisdata.ky.gov", "verify": true},
+  "US-MD": {"kind": "socrata", "host": "opendata.maryland.gov", "verify": true},
+  "US-NY": {"kind": "socrata", "host": "data.ny.gov", "verify": true},
+  "US-TX": {"kind": "socrata", "host": "data.texas.gov", "verify": true},
+  "US-VT": {"kind": "arcgis-hub", "host": "geodata.vermont.gov", "verify": true},
+  "US-WA": {"kind": "socrata", "host": "data.wa.gov", "verify": true},
+  "CA-AB": {"kind": "ckan", "host": "open.alberta.ca", "verify": true},
+  "CA-BC": {"kind": "ckan", "host": "catalogue.data.gov.bc.ca", "verify": true},
+  "CA-NS": {"kind": "socrata", "host": "data.novascotia.ca", "verify": true},
+  "CA-ON": {"kind": "ckan", "host": "data.ontario.ca", "verify": true},
+  "CA-QC": {"kind": "ckan", "host": "www.donneesquebec.ca", "api": "/recherche/api/3/action", "verify": true}
+ }
+}
