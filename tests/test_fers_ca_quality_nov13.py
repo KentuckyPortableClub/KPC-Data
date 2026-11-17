@@ -293,8 +293,9 @@ with tempfile.TemporaryDirectory() as t:
         os.chdir(cwd)
         os.environ.pop('STATES', None)
 
-check('kpc_pota_pairs_run.py' in line_src and 'kpc_pota_pairs_run.py' in bot_src,
-      'B5: the line and the monthly bot run kpc_pota_pairs_run.py (not a bare skip that looks like 0)')
+# KPC owner, 2026-11-16 (handoff item 7, be polite to POTA): the POTA history step is out of every 2-fer run
+check('kpc_pota_pairs_run.py' not in line_src and 'kpc_pota_pairs_run.py' not in bot_src,
+      'B5 (Nov 16): neither the line nor the monthly bot runs the POTA history (kpc_pota_pairs_run.py) any more')
 
 # Water / canadaeast are not blocked in code
 water = (ROOT / '.github/workflows/kpc-fers-water.yml').read_text()
