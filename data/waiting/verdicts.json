@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-17T18:15Z",
+ "checked": "2026-11-17T18:37Z",
  "switched_on": false,
  "results": [
   {
@@ -3527,8 +3527,8 @@
    "why": [],
    "notes": [
     "no live copy: first time this file is published",
-    "F-D3 retest 20 links: 18 ok, 0 dead, 2 could not check",
-    "F-D3 links: ok 200 https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/sga/Townli; ok 200 https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/sga/Goose_C; ok 200 https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/sga/Manist; ok 200 https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/sga/Elmwoo; ok 200 https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/sga/Holly_; ok 200 https://www.fws.gov/sites/default/files/documents/seney-general-brochure-2022-ac; ok 200 https://dnr.wisconsin.gov/topic/parks/menominee/maps; ok 200 https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/sga/Gratio; could not check HTTP 503 https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/sga/Cass_Ci; ok 200 https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/SGA/Crane_P; ok 200 https://www.b"
+    "F-D3 retest 20 links: 20 ok, 0 dead, 0 could not check",
+    "F-D3 links: ok 200 https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/sga/Townli; ok 200 https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/sga/Goose_C; ok 200 https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/sga/Manist; ok 200 https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/sga/Elmwoo; ok 200 https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/sga/Holly_; ok 200 https://www.fws.gov/sites/default/files/documents/seney-general-brochure-2022-ac; ok 200 https://dnr.wisconsin.gov/topic/parks/menominee/maps; ok 200 https://www2.dnr.state.mi.us/publications/pdfs/huntingwildlifehabitat/sga/Gratio; ok 200 https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/sga/Cass_Ci; ok 200 https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/SGA/Crane_P; ok 200 https://www.bingmapsportal.com/"
    ],
    "verdict": "PASS",
    "retest": {
@@ -3597,8 +3597,8 @@
      },
      {
       "url": "https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/sga/Cass_City_SGA_map.pdf",
-      "result": "could not check",
-      "detail": "HTTP 503"
+      "result": "ok",
+      "detail": "200"
      },
      {
       "url": "https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/SGA/Crane_Pond_SGA_map.pdf",
@@ -3622,8 +3622,8 @@
      },
      {
       "url": "https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/sga/Almer_Township_SGA_map.pdf",
-      "result": "could not check",
-      "detail": "HTTP 503"
+      "result": "ok",
+      "detail": "200"
      },
      {
       "url": "https://www.michigandnr.com/publications/pdfs/huntingwildlifehabitat/sga/Edmore_SGA_map.pdf",
