@@ -6,22 +6,22 @@
    "counts": {
     "camps": 368,
     "kept_after_failed_read": 2,
-    "needs_browser": 0,
+    "needs_browser": 1,
     "needs_key": 234,
     "no_page": 4,
     "not_official": 0,
-    "ok": 8,
-    "other": 9,
+    "ok": 118,
+    "other": 11,
     "resting": 0,
-    "robots": 113,
-    "with_booking": 64,
-    "with_elevation": 366,
-    "with_facts": 11,
-    "with_sites": 5
+    "robots": 0,
+    "with_booking": 127,
+    "with_elevation": 2,
+    "with_facts": 122,
+    "with_sites": 6
    },
-   "left": 5,
-   "status": "partial",
-   "updated": "2026-11-16"
+   "left": 0,
+   "status": "done",
+   "updated": "2026-11-17"
   },
   "US-AL": {
    "camps": 100,
@@ -1191,7 +1191,7 @@
     "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2026-06-30?category=State&subcategory=Mobile%20Broadband",
     "status": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
    },
-   "read": "2026-11-16"
+   "read": "2026-11-17"
   },
   "US-AL": {
    "cell": {
@@ -2605,31 +2605,31 @@
  },
  "last": {
   "areas": [
-   "US-KY"
+   "US-AK"
   ],
   "fcc_token": true,
   "manners": {
-   "errors": 3,
+   "errors": 0,
    "for_person_urls": [],
    "host_rule": 0,
-   "requests": 56,
-   "rested": 147,
+   "requests": 252,
+   "rested": 380,
    "robots": 0,
-   "strikes": 3
+   "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "browser": 9,
-   "camps": 109,
+   "browser": 6,
+   "camps": 378,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 10,
-   "needs_key": 42,
-   "no_page": 0,
+   "needs_browser": 7,
+   "needs_key": 244,
+   "no_page": 7,
    "not_official": 0,
-   "ok": 26,
-   "pages_read": 31,
-   "resting": 43,
+   "ok": 124,
+   "pages_read": 236,
+   "resting": 2,
    "ridb_calls": 0,
    "robots": 0,
    "skipped_fresh": 0

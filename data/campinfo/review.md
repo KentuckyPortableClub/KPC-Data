@@ -51,7 +51,7 @@ Updated 2026-11-17. Every fact in <area>.json carries its source url, read date 
 | US-CA | 1190 | 50 | 752 | 0 | 7 | 14 | 352 | 0 | 15 | 4 | 81 | 0 |
 | US-OR | 496 | 47 | 410 | 0 | 0 | 14 | 0 | 1 | 24 | 8 | 85 | 0 |
 | US-WA | 363 | 24 | 212 | 1 | 15 | 5 | 66 | 0 | 40 | 3 | 70 | 0 |
-| US-AK | 368 | 8 | 234 | 0 | 113 | 0 | 4 | 0 | 9 | 5 | 64 | 366 |
+| US-AK | 368 | 118 | 234 | 1 | 0 | 0 | 4 | 0 | 11 | 6 | 127 | 2 |
 | US-HI | 22 | 10 | 2 | 0 | 0 | 0 | 8 | 0 | 2 | 0 | 12 | 0 |
 | US-MI | 511 | 3 | 110 | 0 | 12 | 0 | 377 | 0 | 9 | 0 | 12 | 0 |
 | US-OH | 96 | 0 | 11 | 2 | 0 | 11 | 62 | 0 | 10 | 0 | 11 | 96 |
@@ -105,9 +105,9 @@ Updated 2026-11-17. Every fact in <area>.json carries its source url, read date 
 - www.recreation.gov: 6 campgrounds
 - dnr.wisconsin.gov: 4 campgrounds
 - gfp.sd.gov: 4 campgrounds
+- www.nps.gov: 4 campgrounds
 - parks.ky.gov: 3 campgrounds
 - gastateparks.org: 3 campgrounds
-- www.nps.gov: 3 campgrounds
 - wvdnr.gov: 2 campgrounds
 - files.dfm.idaho.gov: 2 campgrounds
 - explore.gastateparks.org: 1 campgrounds
@@ -149,73 +149,73 @@ Updated 2026-11-17. Every fact in <area>.json carries its source url, read date 
 | Great Meadows Campground | electric | False | False | agency words say no hookups (chat 11 regrade); key says electric True |
 | Turkey Foot Campground | electric | False | False | agency page: 'There is no water, electricity or dump station available' (chat 8); key says electric True |
 
-- Barren River Lake State Resort Park Campground (ok (browser)): sites bot blank (key: 101); amps bot blank (key: [30, 50]); electric DIFFER bot True vs key False; water DIFFER bot True vs key False; sewer bot blank (key: False); dump_station agree (True); showers agree (True)
-- Big Bone Lick Campground (ok (browser)): sites agree (62); amps bot blank (key: [30]); electric agree (True); water agree (True); dump_station bot blank (key: True); showers agree (True)
-- Blue Heron Campground (KY) (ok (browser)): sites agree (45); electric agree (True); showers agree (True); phone bot blank (key: (423) 286-7275)
-- Bear Creek Horse Camp (KY) (ok (browser)): sites agree (22) [bot: 23]; electric agree (True); showers agree (True); phone bot blank (key: (423) 286-7275)
-- Alum Ford Campground (KY) (ok (browser)): sites bot blank (key: 6); electric bot blank (key: False); water bot blank (key: False); sewer bot blank (key: False); phone bot blank (key: (423) 569-9778)
-- Bandy Creek Campground (TN) (ok): electric agree (True) [bot: some]; showers agree (True); phone bot blank (key: (423) 286-7275)
-- Station Camp Campground (TN) (ok (browser)): sites bot blank (key: 24); electric agree (True); showers agree (True); phone bot blank (key: (423) 286-7275)
-- Blue Licks Battlefield Campground (ok, no campground facts even in a browser): sites bot blank (key: 55); electric bot blank (key: True); water bot blank (key: False); dump_station bot blank (key: True); showers bot blank (key: True); phone DIFFER bot (859) 289-5507 vs key (859) 289-3653
-- Carr Creek Campground (ok (browser)): sites bot blank (key: 39); electric DIFFER bot True vs key False; water agree (True)
-- Carter Caves Campground (ok (browser)): sites bot blank (key: 128); amps bot blank (key: [20, 30, 50]); electric bot blank (key: True); water bot blank (key: True); dump_station bot blank (key: True); showers agree (True); phone bot blank (key: (606) 286-4411)
-- Columbus-Belmont Campground (ok, no campground facts even in a browser): sites bot blank (key: 35); amps bot blank (key: [50]); electric bot blank (key: True); water bot blank (key: True); sewer bot blank (key: True); dump_station bot blank (key: True); showers bot blank (key: True)
-- Ridgeline & Clifty Campgrounds (ok, no campground facts even in a browser): sites bot blank (key: 50); amps bot blank (key: [20, 30]); electric bot blank (key: False); water bot blank (key: True); phone bot blank (key: (800) 325-0063)
-- Wilderness Road Campground (ok): sites bot blank (key: 151); amps bot blank (key: [20, 30, 50]); electric agree (True) [bot: some]; water agree (False); sewer DIFFER bot False vs key True; dump_station agree (True); showers agree (True); phone bot blank (key: (606) 248-2817)
-- Dale Hollow Lake Campground (ok (browser)): sites bot blank (key: 151); amps bot blank (key: [50]); electric agree (True); water bot blank (key: True); sewer bot blank (key: True)
-- Twin Knobs Campground (ok): sites bot blank (key: 200); electric agree (True) [bot: some]; water agree (True) [bot: some]; sewer agree (True) [bot: some]; showers agree (True); phone bot blank (key: (606) 780-7818)
-- Zilpo Campground (ok): electric agree (True) [bot: some]; sewer bot blank (key: False); showers agree (True); phone bot blank (key: (606) 768-2722)
-- Clear Creek Campground (ok): sites bot blank (key: 20); electric KEY WRONG (bot False, key False): left out; water bot blank (key: True); phone bot blank (key: (606) 784-6428)
-- White Sulphur Horse Camp (ok): electric KEY WRONG (bot False, key False): left out; water bot blank (key: True); phone bot blank (key: (606) 784-6428)
-- Koomer Ridge Campground (ok): sites bot blank (key: 54); electric KEY WRONG (bot False, key False): left out; water bot blank (key: False); sewer bot blank (key: False); showers agree (True); phone bot blank (key: (606) 784-6428)
-- Holly Bay Campground (ok): sites bot blank (key: 94); electric agree (True) [bot: some]; water agree (True); showers agree (True); phone bot blank (key: (606) 864-4163)
-- Grove Drive-In Campground (ok): sites bot blank (key: 44); electric agree (True) [bot: some]; water agree (True); phone bot blank (key: (606) 864-4163)
-- Bee Rock Campground (ok (browser)): sites bot blank (key: 25); electric bot blank (key: False); water bot blank (key: False); sewer bot blank (key: False); phone bot blank (key: (606) 864-4163)
-- Great Meadows Campground (ok): sites agree (18); electric KEY WRONG (bot False, key False): left out; water bot blank (key: False); sewer bot blank (key: False); phone bot blank (key: (606) 376-5323)
-- Barren Fork Horse Camp (ok): sites agree (41); electric bot blank (key: True); water bot blank (key: True); phone bot blank (key: (606) 376-5323)
-- Turkey Foot Campground (ok): sites bot blank (key: 15); electric KEY WRONG (bot False, key False): left out; water bot blank (key: False); phone bot blank (key: (606) 864-4163)
-- S-Tree Campground (ok): sites agree (20); water bot blank (key: True); phone bot blank (key: (606) 864-4163)
-- Fort Boonesborough Campground (ok (browser)): sites agree (163) [bot: 166]; electric agree (True); water agree (True); sewer agree (True); phone agree ((859) 527-3454)
-- General Burnside Island Campground (ok (browser)): sites bot blank (key: 101); electric agree (True); water agree (True); sewer bot blank (key: True); phone agree ((606) 561-3625)
-- General Butler Campground (ok (browser)): sites bot blank (key: 104); electric bot blank (key: True); water bot blank (key: True)
-- Grayson Lake Campground (ok (browser)): sites agree (69) [bot: 71]; amps bot blank (key: [50]); electric agree (True); water agree (True); phone DIFFER bot (606) 474-4513 vs key (606) 474-6856
-- Green River Lake Campground (ok (browser)): sites bot blank (key: 227); electric bot blank (key: True); water bot blank (key: True); phone bot blank (key: (270) 465-8255)
-- Greenbo Lake Campground (ok, no campground facts in the page text: needs browser?): sites bot blank (key: 102); amps bot blank (key: [30]); electric bot blank (key: True); water bot blank (key: True); sewer bot blank (key: True)
-- Jenny Wiley Campground (ok, no campground facts in the page text: needs browser?): sites bot blank (key: 118); electric bot blank (key: True); water bot blank (key: True); dump_station bot blank (key: True); showers bot blank (key: True); phone bot blank (key: (606) 889-1790)
-- John James Audubon Campground (ok (browser)): sites bot blank (key: 83); amps bot blank (key: [20]); electric bot blank (key: True); water bot blank (key: True)
-- Kenlake Campground (ok (browser)): sites bot blank (key: 63); electric bot blank (key: True); water bot blank (key: True); sewer bot blank (key: True); phone bot blank (key: (270) 474-2211)
-- Kentucky Dam Village Campground (ok, no campground facts even in a browser): sites bot blank (key: 69); electric bot blank (key: True); water bot blank (key: True)
-- Kincaid Lake Campground (ok (browser)): sites DIFFER bot 84 vs key 159; electric agree (True)
-- Lake Barkley Campground (ok (browser)): sites bot blank (key: 79); amps bot blank (key: [30]); electric agree (True); water agree (True)
-- Lake Cumberland Campground (ok (browser)): sites bot blank (key: 87); electric agree (True); water agree (True); sewer bot blank (key: True); phone bot blank (key: (270) 343-3111)
-- Lake Malone Campground (ok (browser)): sites bot blank (key: 25); amps bot blank (key: [30]); electric agree (True); water agree (True)
-- Hillman Ferry Campground (ok): sites bot blank (key: 368); amps agree ([30, 50]); electric agree (True); water agree (True); sewer agree (True); showers agree (True); phone bot blank (key: (270) 924-2181)
-- Energy Lake Campground (ok): sites bot blank (key: 35); amps DIFFER bot [30, 50] vs key [50]; electric agree (True); phone bot blank (key: (270) 924-2270)
-- Wranglers Campground (ok): sites bot blank (key: 198); amps agree ([30, 50]); electric agree (True) [bot: some]; water agree (True); sewer agree (True); showers agree (True); phone bot blank (key: (270) 924-2200)
-- Piney Campground (TN) (ok): sites agree (384); electric agree (True); water agree (True); sewer agree (True); phone bot blank (key: (931) 232-5331)
+- Barren River Lake State Resort Park Campground (ok (browser)): amps bot blank (key: [30, 50]); dump_station agree (True); electric DIFFER bot True vs key False; sewer bot blank (key: False); showers agree (True); sites bot blank (key: 101); water DIFFER bot True vs key False
+- Big Bone Lick Campground (ok (browser)): amps bot blank (key: [30]); dump_station bot blank (key: True); electric agree (True); showers agree (True); sites agree (62); water agree (True)
+- Blue Heron Campground (KY) (ok (browser)): electric agree (True); phone bot blank (key: (423) 286-7275); showers agree (True); sites agree (45)
+- Bear Creek Horse Camp (KY) (ok (browser)): electric agree (True); phone bot blank (key: (423) 286-7275); showers agree (True); sites agree (22) [bot: 23]
+- Alum Ford Campground (KY) (ok (browser)): electric bot blank (key: False); phone bot blank (key: (423) 569-9778); sewer bot blank (key: False); sites bot blank (key: 6); water bot blank (key: False)
+- Bandy Creek Campground (TN) (ok): electric agree (True) [bot: some]; phone bot blank (key: (423) 286-7275); showers agree (True)
+- Station Camp Campground (TN) (ok (browser)): electric agree (True); phone bot blank (key: (423) 286-7275); showers agree (True); sites bot blank (key: 24)
+- Blue Licks Battlefield Campground (ok, no campground facts even in a browser): dump_station bot blank (key: True); electric bot blank (key: True); phone DIFFER bot (859) 289-5507 vs key (859) 289-3653; showers bot blank (key: True); sites bot blank (key: 55); water bot blank (key: False)
+- Carr Creek Campground (ok (browser)): electric DIFFER bot True vs key False; sites bot blank (key: 39); water agree (True)
+- Carter Caves Campground (ok (browser)): amps bot blank (key: [20, 30, 50]); dump_station bot blank (key: True); electric bot blank (key: True); phone bot blank (key: (606) 286-4411); showers agree (True); sites bot blank (key: 128); water bot blank (key: True)
+- Columbus-Belmont Campground (ok, no campground facts even in a browser): amps bot blank (key: [50]); dump_station bot blank (key: True); electric bot blank (key: True); sewer bot blank (key: True); showers bot blank (key: True); sites bot blank (key: 35); water bot blank (key: True)
+- Ridgeline & Clifty Campgrounds (ok, no campground facts even in a browser): amps bot blank (key: [20, 30]); electric bot blank (key: False); phone bot blank (key: (800) 325-0063); sites bot blank (key: 50); water bot blank (key: True)
+- Wilderness Road Campground (ok): amps bot blank (key: [20, 30, 50]); dump_station agree (True); electric agree (True) [bot: some]; phone bot blank (key: (606) 248-2817); sewer DIFFER bot False vs key True; showers agree (True); sites bot blank (key: 151); water agree (False)
+- Dale Hollow Lake Campground (ok (browser)): amps bot blank (key: [50]); electric agree (True); sewer bot blank (key: True); sites bot blank (key: 151); water bot blank (key: True)
+- Twin Knobs Campground (ok): electric agree (True) [bot: some]; phone bot blank (key: (606) 780-7818); sewer agree (True) [bot: some]; showers agree (True); sites bot blank (key: 200); water agree (True) [bot: some]
+- Zilpo Campground (ok): electric agree (True) [bot: some]; phone bot blank (key: (606) 768-2722); sewer bot blank (key: False); showers agree (True)
+- Clear Creek Campground (ok): electric KEY WRONG (bot False, key False): left out; phone bot blank (key: (606) 784-6428); sites bot blank (key: 20); water bot blank (key: True)
+- White Sulphur Horse Camp (ok): electric KEY WRONG (bot False, key False): left out; phone bot blank (key: (606) 784-6428); water bot blank (key: True)
+- Koomer Ridge Campground (ok): electric KEY WRONG (bot False, key False): left out; phone bot blank (key: (606) 784-6428); sewer bot blank (key: False); showers agree (True); sites bot blank (key: 54); water bot blank (key: False)
+- Holly Bay Campground (ok): electric agree (True) [bot: some]; phone bot blank (key: (606) 864-4163); showers agree (True); sites bot blank (key: 94); water agree (True)
+- Grove Drive-In Campground (ok): electric agree (True) [bot: some]; phone bot blank (key: (606) 864-4163); sites bot blank (key: 44); water agree (True)
+- Bee Rock Campground (ok (browser)): electric bot blank (key: False); phone bot blank (key: (606) 864-4163); sewer bot blank (key: False); sites bot blank (key: 25); water bot blank (key: False)
+- Great Meadows Campground (ok): electric KEY WRONG (bot False, key False): left out; phone bot blank (key: (606) 376-5323); sewer bot blank (key: False); sites agree (18); water bot blank (key: False)
+- Barren Fork Horse Camp (ok): electric bot blank (key: True); phone bot blank (key: (606) 376-5323); sites agree (41); water bot blank (key: True)
+- Turkey Foot Campground (ok): electric KEY WRONG (bot False, key False): left out; phone bot blank (key: (606) 864-4163); sites bot blank (key: 15); water bot blank (key: False)
+- S-Tree Campground (ok): phone bot blank (key: (606) 864-4163); sites agree (20); water bot blank (key: True)
+- Fort Boonesborough Campground (ok (browser)): electric agree (True); phone agree ((859) 527-3454); sewer agree (True); sites agree (163) [bot: 166]; water agree (True)
+- General Burnside Island Campground (ok (browser)): electric agree (True); phone agree ((606) 561-3625); sewer bot blank (key: True); sites bot blank (key: 101); water agree (True)
+- General Butler Campground (ok (browser)): electric bot blank (key: True); sites bot blank (key: 104); water bot blank (key: True)
+- Grayson Lake Campground (ok (browser)): amps bot blank (key: [50]); electric agree (True); phone DIFFER bot (606) 474-4513 vs key (606) 474-6856; sites agree (69) [bot: 71]; water agree (True)
+- Green River Lake Campground (ok (browser)): electric bot blank (key: True); phone bot blank (key: (270) 465-8255); sites bot blank (key: 227); water bot blank (key: True)
+- Greenbo Lake Campground (ok, no campground facts in the page text: needs browser?): amps bot blank (key: [30]); electric bot blank (key: True); sewer bot blank (key: True); sites bot blank (key: 102); water bot blank (key: True)
+- Jenny Wiley Campground (ok, no campground facts in the page text: needs browser?): dump_station bot blank (key: True); electric bot blank (key: True); phone bot blank (key: (606) 889-1790); showers bot blank (key: True); sites bot blank (key: 118); water bot blank (key: True)
+- John James Audubon Campground (ok (browser)): amps bot blank (key: [20]); electric bot blank (key: True); sites bot blank (key: 83); water bot blank (key: True)
+- Kenlake Campground (ok (browser)): electric bot blank (key: True); phone bot blank (key: (270) 474-2211); sewer bot blank (key: True); sites bot blank (key: 63); water bot blank (key: True)
+- Kentucky Dam Village Campground (ok, no campground facts even in a browser): electric bot blank (key: True); sites bot blank (key: 69); water bot blank (key: True)
+- Kincaid Lake Campground (ok (browser)): electric agree (True); sites DIFFER bot 84 vs key 159
+- Lake Barkley Campground (ok (browser)): amps bot blank (key: [30]); electric agree (True); sites bot blank (key: 79); water agree (True)
+- Lake Cumberland Campground (ok (browser)): electric agree (True); phone bot blank (key: (270) 343-3111); sewer bot blank (key: True); sites bot blank (key: 87); water agree (True)
+- Lake Malone Campground (ok (browser)): amps bot blank (key: [30]); electric agree (True); sites bot blank (key: 25); water agree (True)
+- Hillman Ferry Campground (ok): amps agree ([30, 50]); electric agree (True); phone bot blank (key: (270) 924-2181); sewer agree (True); showers agree (True); sites bot blank (key: 368); water agree (True)
+- Energy Lake Campground (ok): amps DIFFER bot [30, 50] vs key [50]; electric agree (True); phone bot blank (key: (270) 924-2270); sites bot blank (key: 35)
+- Wranglers Campground (ok): amps agree ([30, 50]); electric agree (True) [bot: some]; phone bot blank (key: (270) 924-2200); sewer agree (True); showers agree (True); sites bot blank (key: 198); water agree (True)
+- Piney Campground (TN) (ok): electric agree (True); phone bot blank (key: (931) 232-5331); sewer agree (True); sites agree (384); water agree (True)
 - Fenton Self-Service Campground (ok): amps agree ([30]); electric agree (True)
-- Self-service lakeside campgrounds (10) (ok): electric DIFFER bot True vs key False; water bot blank (key: False); sewer bot blank (key: False)
-- Mammoth Cave Campground (ok, no campground facts even in a browser): sites bot blank (key: 111); electric bot blank (key: False); water bot blank (key: False); sewer bot blank (key: False); dump_station bot blank (key: True); showers bot blank (key: True); phone bot blank (key: (270) 758-2424)
-- Maple Springs Group Campground (ok (browser)): sites bot blank (key: 7); electric agree (True); sewer bot blank (key: False); dump_station bot blank (key: True); phone DIFFER bot (270) 758-2166 vs key (270) 758-2180
-- Houchin Ferry Campground (ok (browser)): sites bot blank (key: 12); electric agree (True); water bot blank (key: True); phone bot blank (key: (270) 758-2180)
-- My Old Kentucky Home Campground (ok (browser)): sites bot blank (key: 49); amps bot blank (key: [50]); electric agree (True); water agree (True); sewer bot blank (key: True); phone bot blank (key: (502) 348-3502)
-- Whittleton & Middle Fork Campgrounds (ok (browser)): sites bot blank (key: 86); amps bot blank (key: [20]); electric agree (True); water bot blank (key: True); phone bot blank (key: (606) 663-2214)
-- Nolin Lake Campground (ok (browser)): sites bot blank (key: 65); electric DIFFER bot True vs key False; showers agree (True)
-- Otter Creek ORA Campground (ok, no campground facts even in a browser): electric bot blank (key: True); water bot blank (key: True); dump_station bot blank (key: True); showers bot blank (key: True); phone bot blank (key: (270) 750-4257)
-- Paintsville Lake Campground (ok, no campground facts in the page text: needs browser?): sites bot blank (key: 42); electric bot blank (key: True); water bot blank (key: True); sewer bot blank (key: True)
-- Pennyrile Forest Campground (ok, no campground facts even in a browser): sites bot blank (key: 63); electric bot blank (key: True); water bot blank (key: True); sewer bot blank (key: True)
-- Taylorsville Lake Campground (ok (browser)): sites bot blank (key: 75); amps bot blank (key: [20]); electric bot blank (key: True); water bot blank (key: True); sewer bot blank (key: True); dump_station bot blank (key: True); showers agree (True)
-- Twin Knobs Campground (ok): sites bot blank (key: 200); electric agree (True) [bot: some]; water agree (True) [bot: some]; sewer agree (True) [bot: some]; showers agree (True); phone bot blank (key: (606) 780-7818)
-- Yatesville Lake Campground (ok (browser)): sites agree (47); electric bot blank (key: True); water bot blank (key: True)
-- Yellowbank WMA primitive campground (Main Area) (ok, no campground facts even in a browser): electric bot blank (key: False); water bot blank (key: False); sewer bot blank (key: False); phone agree ((270) 547-6856)
-- Zilpo Campground (ok): electric agree (True) [bot: some]; sewer bot blank (key: False); showers agree (True); phone bot blank (key: (606) 768-2722)
-- Kentucky Horse Park Campground (ok (browser)): sites agree (257) [bot: 260]; amps agree ([20, 30, 50]); electric agree (True) [bot: some]; water agree (True); dump_station agree (True); showers agree (True); phone agree ((859) 259-4257)
-- Levi Jackson Campground (ok): sites agree (146); amps bot blank (key: [30, 50]); electric agree (True); water agree (True); sewer bot blank (key: True); dump_station agree (True); showers agree (True); phone bot blank (key: (606) 330-2130)
-- Breaks Interstate Park Campground (ok): sites agree (138); electric agree (True) [bot: some]; water agree (True); sewer agree (True); phone bot blank (key: (276) 865-4413)
-- Kingdom Come primitive campsites (ok (browser)): electric bot blank (key: False); water bot blank (key: False); sewer bot blank (key: False)
-- Higginson-Henry WMA designated campsites (ok, no campground facts even in a browser): electric bot blank (key: False); water bot blank (key: False); sewer bot blank (key: False)
-- West Kentucky WMA designated camping site (ok, no campground facts even in a browser): electric bot blank (key: False); water bot blank (key: False); sewer bot blank (key: False)
-- Rolling Fork WMA designated camping area (ok, no campground facts even in a browser): electric bot blank (key: False); water bot blank (key: False); sewer bot blank (key: False)
+- Self-service lakeside campgrounds (10) (ok): electric DIFFER bot True vs key False; sewer bot blank (key: False); water bot blank (key: False)
+- Mammoth Cave Campground (ok, no campground facts even in a browser): dump_station bot blank (key: True); electric bot blank (key: False); phone bot blank (key: (270) 758-2424); sewer bot blank (key: False); showers bot blank (key: True); sites bot blank (key: 111); water bot blank (key: False)
+- Maple Springs Group Campground (ok (browser)): dump_station bot blank (key: True); electric agree (True); phone DIFFER bot (270) 758-2166 vs key (270) 758-2180; sewer bot blank (key: False); sites bot blank (key: 7)
+- Houchin Ferry Campground (ok (browser)): electric agree (True); phone bot blank (key: (270) 758-2180); sites bot blank (key: 12); water bot blank (key: True)
+- My Old Kentucky Home Campground (ok (browser)): amps bot blank (key: [50]); electric agree (True); phone bot blank (key: (502) 348-3502); sewer bot blank (key: True); sites bot blank (key: 49); water agree (True)
+- Whittleton & Middle Fork Campgrounds (ok (browser)): amps bot blank (key: [20]); electric agree (True); phone bot blank (key: (606) 663-2214); sites bot blank (key: 86); water bot blank (key: True)
+- Nolin Lake Campground (ok (browser)): electric DIFFER bot True vs key False; showers agree (True); sites bot blank (key: 65)
+- Otter Creek ORA Campground (ok, no campground facts even in a browser): dump_station bot blank (key: True); electric bot blank (key: True); phone bot blank (key: (270) 750-4257); showers bot blank (key: True); water bot blank (key: True)
+- Paintsville Lake Campground (ok, no campground facts in the page text: needs browser?): electric bot blank (key: True); sewer bot blank (key: True); sites bot blank (key: 42); water bot blank (key: True)
+- Pennyrile Forest Campground (ok, no campground facts even in a browser): electric bot blank (key: True); sewer bot blank (key: True); sites bot blank (key: 63); water bot blank (key: True)
+- Taylorsville Lake Campground (ok (browser)): amps bot blank (key: [20]); dump_station bot blank (key: True); electric bot blank (key: True); sewer bot blank (key: True); showers agree (True); sites bot blank (key: 75); water bot blank (key: True)
+- Twin Knobs Campground (ok): electric agree (True) [bot: some]; phone bot blank (key: (606) 780-7818); sewer agree (True) [bot: some]; showers agree (True); sites bot blank (key: 200); water agree (True) [bot: some]
+- Yatesville Lake Campground (ok (browser)): electric bot blank (key: True); sites agree (47); water bot blank (key: True)
+- Yellowbank WMA primitive campground (Main Area) (ok, no campground facts even in a browser): electric bot blank (key: False); phone agree ((270) 547-6856); sewer bot blank (key: False); water bot blank (key: False)
+- Zilpo Campground (ok): electric agree (True) [bot: some]; phone bot blank (key: (606) 768-2722); sewer bot blank (key: False); showers agree (True)
+- Kentucky Horse Park Campground (ok (browser)): amps agree ([20, 30, 50]); dump_station agree (True); electric agree (True) [bot: some]; phone agree ((859) 259-4257); showers agree (True); sites agree (257) [bot: 260]; water agree (True)
+- Levi Jackson Campground (ok): amps bot blank (key: [30, 50]); dump_station agree (True); electric agree (True); phone bot blank (key: (606) 330-2130); sewer bot blank (key: True); showers agree (True); sites agree (146); water agree (True)
+- Breaks Interstate Park Campground (ok): electric agree (True) [bot: some]; phone bot blank (key: (276) 865-4413); sewer agree (True); sites agree (138); water agree (True)
+- Kingdom Come primitive campsites (ok (browser)): electric bot blank (key: False); sewer bot blank (key: False); water bot blank (key: False)
+- Higginson-Henry WMA designated campsites (ok, no campground facts even in a browser): electric bot blank (key: False); sewer bot blank (key: False); water bot blank (key: False)
+- West Kentucky WMA designated camping site (ok, no campground facts even in a browser): electric bot blank (key: False); sewer bot blank (key: False); water bot blank (key: False)
+- Rolling Fork WMA designated camping area (ok, no campground facts even in a browser): electric bot blank (key: False); sewer bot blank (key: False); water bot blank (key: False)
 
 ## US-KY: 12 random samples (records with facts; seed = the date)
 
@@ -3259,13 +3259,13 @@ Updated 2026-11-17. Every fact in <area>.json carries its source url, read date 
 
 ## US-AK: 12 random samples (records with facts; seed = the date)
 
-- **Red Shirt Lake 1 Cabin** (AK-52c5f88396, state, status ok, 5 facts, 126 ft) · [dnr.alaska.gov](http://dnr.alaska.gov/parks/aspcabins/redshirtlakecabin1.htm)
+- **Red Shirt Lake 1 Cabin** (AK-52c5f88396, state, status ok, 5 facts) · [dnr.alaska.gov](http://dnr.alaska.gov/parks/aspcabins/redshirtlakecabin1.htm)
   - booking.how = "online: reservealaskastateparks.com" · “link “Check Availability on the Reservation System””
   - booking.url = "https://reservealaskastateparks.com/park/24/83" · “link “Check Availability on the Reservation System” -> https://reservealaskastateparks.com/park/24/83”
   - hookups.electric = "some" · “s. The 2023 -2027 DAV Camping pass is available and can be used for camping in individual electric or non-electric campsites (DOES NOT INCLU”
   - phone = "(907) 269-8400" · “E 550 W 7th Ave, Suite 1360 Anchorage, AK 99501-3557 phone: 907-269-8400 TDD: 907-269-8411 fax: 907-269-8901 FAIRBANKS 3700 Airport”
   - rules.pets = "Pets Allowed: Yes**" · “t Plane; Winter - Ski, Snowmachine* ★ Stay Limit: 5 Nights ★ Check-in/out Time: 12:00pm ★ Pets Allowed: Yes** ★ Fees: ( see fee page ) ★ Cab”
-- **James Lake Cabin** (AK-f29287632d, state, status ok, 7 facts, 223 ft) · [dnr.alaska.gov](http://dnr.alaska.gov/parks/aspcabins/jameslakecabin.htm)
+- **James Lake Cabin** (AK-f29287632d, state, status ok, 7 facts) · [dnr.alaska.gov](http://dnr.alaska.gov/parks/aspcabins/jameslakecabin.htm)
   - booking.how = "online: reservealaskastateparks.com" · “link “Check Availability on the Reservation System””
   - booking.url = "https://reservealaskastateparks.com/park/24/83" · “link “Check Availability on the Reservation System” -> https://reservealaskastateparks.com/park/24/83”
   - features = "fire ring" · “James Lake. The cabin has bunk beds, a woodstove, an outside picnic table, and an outside fire ring. No planes are allowed on James Lake. Lo”
@@ -3273,7 +3273,7 @@ Updated 2026-11-17. Every fact in <area>.json carries its source url, read date 
   - phone = "(907) 269-8400" · “E 550 W 7th Ave, Suite 1360 Anchorage, AK 99501-3557 phone: 907-269-8400 TDD: 907-269-8411 fax: 907-269-8901 FAIRBANKS 3700 Airport”
   - rules.pets = "Pets Allowed: Yes**" · “, Kayak; Winter - Ski, Snowmachine* ★ Stay Limit: 5 Nights ★ Check-in/out Time: 12:00pm ★ Pets Allowed: Yes** ★ Fees: ( see fee page ) ★ Cab”
   - sites.cabin = 4 · “m. The canoe trail involves crossing several lakes and portages between lakes for about 3-4 miles to reach the cabin and takes approximately”
-- **Kokanee Cabin** (AK-89930e501a, state, status ok, 7 facts, 884 ft) · [dnr.alaska.gov](http://dnr.alaska.gov/parks/aspcabins/kokaneecabin.htm)
+- **Kokanee Cabin** (AK-89930e501a, state, status ok, 7 facts) · [dnr.alaska.gov](http://dnr.alaska.gov/parks/aspcabins/kokaneecabin.htm)
   - booking.how = "online: reservealaskastateparks.com" · “link “Check Availability on the Reservation System””
   - booking.url = "https://reservealaskastateparks.com/park/8/57" · “link “Check Availability on the Reservation System” -> https://reservealaskastateparks.com/park/8/57”
   - hookups.electric = false · “not open to gas-powered outboard motors or float planes. Only non-motorized watercraft or electric trolling motors are permitted. ** pets mu”
@@ -3281,27 +3281,27 @@ Updated 2026-11-17. Every fact in <area>.json carries its source url, read date 
   - map.url = "https://dnr.alaska.gov/parks/maps/eklutnalaketrailguide.pdf · “link “Eklutna Lake Map and Trail Guide” -> https://dnr.alaska.gov/parks/maps/eklutnalaketrailguide.pdf”
   - phone = "(907) 269-8400" · “E 550 W 7th Ave, Suite 1360 Anchorage, AK 99501-3557 phone: 907-269-8400 TDD: 907-269-8411 fax: 907-269-8901 FAIRBANKS 3700 Airport”
   - rules.pets = "Pets Allowed: Yes**" · “ng Eklutna Lake by Snowshoe or Ski* ★ Stay Limit: 5 Nights ★ Check-in/out Time: 12:00pm ★ Pets Allowed: Yes** ★ Fees: ( see fee page ) ★ Cab”
-- **Delta** (AK-dbc82a578f, state, status ok, 6 facts, 1139 ft) · [dnr.alaska.gov](http://dnr.alaska.gov/parks/aspcabins/deltacabin.htm)
+- **Delta** (AK-dbc82a578f, state, status ok, 6 facts) · [dnr.alaska.gov](http://dnr.alaska.gov/parks/aspcabins/deltacabin.htm)
   - booking.how = "online: reservealaskastateparks.com" · “link “Check Availability on the Reservation System””
   - booking.url = "https://reservealaskastateparks.com/park/29/47" · “link “Check Availability on the Reservation System” -> https://reservealaskastateparks.com/park/29/47”
   - hookups.electric = "some" · “s. The 2023 -2027 DAV Camping pass is available and can be used for camping in individual electric or non-electric campsites (DOES NOT INCLU”
   - phone = "(907) 269-8400" · “E 550 W 7th Ave, Suite 1360 Anchorage, AK 99501-3557 phone: 907-269-8400 TDD: 907-269-8411 fax: 907-269-8901 FAIRBANKS 3700 Airport”
   - rules.pets = "Pets Allowed: Yes, always on leash" · “s: 2 ★ Site Access Method: Drive-in ★ Stay Limit: 5 Nights ★ Check-in/out Time: 12:00pm ★ Pets Allowed: Yes, always on leash ★ Fees: ( see f”
   - sites.cabin = 100 · “4"W Special Notes: * The park road is not plowed in the winter. A highway pull-off within 100 feet of the cabin is plowed. The combination t”
-- **Porcupine Glacier Cabin** (AK-8b63743e23, state, status ok, 5 facts, 56 ft) · [dnr.alaska.gov](http://dnr.alaska.gov/parks/aspcabins/porcupineglaciercabin.htm)
+- **Porcupine Glacier Cabin** (AK-8b63743e23, state, status ok, 5 facts) · [dnr.alaska.gov](http://dnr.alaska.gov/parks/aspcabins/porcupineglaciercabin.htm)
   - booking.how = "online: reservealaskastateparks.com" · “link “Check Availability on the Reservation System””
   - booking.url = "https://reservealaskastateparks.com/park/18/100" · “link “Check Availability on the Reservation System” -> https://reservealaskastateparks.com/park/18/100”
   - hookups.electric = "some" · “s. The 2023 -2027 DAV Camping pass is available and can be used for camping in individual electric or non-electric campsites (DOES NOT INCLU”
   - phone = "(907) 269-8400" · “E 550 W 7th Ave, Suite 1360 Anchorage, AK 99501-3557 phone: 907-269-8400 TDD: 907-269-8411 fax: 907-269-8901 FAIRBANKS 3700 Airport”
   - rules.pets = "Pets Allowed: Yes**" · “e Access Method: Floatplane or Boat ★ Stay Limit: 7 Nights ★ Check-in/out Time: 12:00pm ★ Pets Allowed: Yes** ★ Fees: ( see fee page ) ★ Cab”
-- **Lower Chatanika River** (AK-8c6ed0657f, state, status ok, 6 facts, 541 ft) · [dnr.alaska.gov](http://dnr.alaska.gov/parks/aspcabins/olnespondcabin.htm)
+- **Lower Chatanika River** (AK-8c6ed0657f, state, status ok, 6 facts) · [dnr.alaska.gov](http://dnr.alaska.gov/parks/aspcabins/olnespondcabin.htm)
   - booking.how = "online: reservealaskastateparks.com" · “link “Check Availability on the Reservation System””
   - booking.url = "https://reservealaskastateparks.com/park/33/78" · “link “Check Availability on the Reservation System” -> https://reservealaskastateparks.com/park/33/78”
   - hookups.electric = true · “s include a wood stove, small table, kitchen counter, sleeping platform, and is wired for electricity. Guests will need to provide their own”
   - phone = "(907) 450-5707" · “nes or RUG. To obtain one call Alyeska Pipeline Security at (907)450-5707. ** Pets must be under control at all times and you are res”
   - rules.generators = "generator" · “latform, and is wired for electricity. Guests will need to provide their own firewood and generator. The cabin is available for reservation ”
   - rules.pets = "Pets Allowed: Yes**" · “uests ★ Site Access Method: Vehicle ★ Stay Limit: 5 Nights ★ Check-in/out Time: 12:00pm ★ Pets Allowed: Yes** ★ Fees: ( see fee page ) ★ Cab”
-- **Shelter Island** (AK-5451961431, state, status ok, 7 facts, 15 ft) · [dnr.alaska.gov](http://dnr.alaska.gov/parks/aspcabins/rupeandrewscabin.htm)
+- **Shelter Island** (AK-5451961431, state, status ok, 7 facts) · [dnr.alaska.gov](http://dnr.alaska.gov/parks/aspcabins/rupeandrewscabin.htm)
   - booking.how = "online: reservealaskastateparks.com" · “link “Check Availability on the Reservation System””
   - booking.url = "https://reservealaskastateparks.com/park/36/34" · “link “Check Availability on the Reservation System” -> https://reservealaskastateparks.com/park/36/34”
   - hookups.electric = "some" · “s. The 2023 -2027 DAV Camping pass is available and can be used for camping in individual electric or non-electric campsites (DOES NOT INCLU”
@@ -3309,24 +3309,24 @@ Updated 2026-11-17. Every fact in <area>.json carries its source url, read date 
   - map.url = "https://dnr.alaska.gov/parks/aspunits/maps/channel_islands. · “link “See map of Channel Islands State Marine Park” -> https://dnr.alaska.gov/parks/aspunits/maps/channel_islands.pdf”
   - phone = "(907) 269-8400" · “E 550 W 7th Ave, Suite 1360 Anchorage, AK 99501-3557 phone: 907-269-8400 TDD: 907-269-8411 fax: 907-269-8901 FAIRBANKS 3700 Airport”
   - rules.pets = "Pets Allowed: Yes**" · “te Access Method: Boat, Float plane ★ Stay Limit: 7 Nights ★ Check-in/out Time: 12:00pm ★ Pets Allowed: Yes** ★ Fees: ( see fee page ) ★ Cab”
-- **Chena River** (AK-aa681ce941, state, status ok, 5 facts, 790 ft) · [dnr.alaska.gov](http://dnr.alaska.gov/parks/aspcabins/huntmemorialcabin.htm)
+- **Chena River** (AK-aa681ce941, state, status ok, 5 facts) · [dnr.alaska.gov](http://dnr.alaska.gov/parks/aspcabins/huntmemorialcabin.htm)
   - booking.how = "online: reservealaskastateparks.com" · “link “Check Availability on the Reservation System””
   - booking.url = "https://reservealaskastateparks.com/park/28/22" · “link “Check Availability on the Reservation System” -> https://reservealaskastateparks.com/park/28/22”
   - hookups.electric = "some" · “s. The 2023 -2027 DAV Camping pass is available and can be used for camping in individual electric or non-electric campsites (DOES NOT INCLU”
   - phone = "(907) 269-8400" · “E 550 W 7th Ave, Suite 1360 Anchorage, AK 99501-3557 phone: 907-269-8400 TDD: 907-269-8411 fax: 907-269-8901 FAIRBANKS 3700 Airport”
   - rules.pets = "Pets Allowed: Yes**" · “ite Access Method: Summer - Vehicle ★ Stay Limit: 5 Nights ★ Check-in/out Time: 12:00pm ★ Pets Allowed: Yes** ★ Fees: ( see fee page ) ★ Cab”
-- **Kachemak Bay** (AK-e06a508a1b, state, status ok, 5 facts, 0 ft) · [dnr.alaska.gov](http://dnr.alaska.gov/parks/aspcabins/seastarcovecabin.htm)
+- **Kachemak Bay** (AK-e06a508a1b, state, status ok, 5 facts) · [dnr.alaska.gov](http://dnr.alaska.gov/parks/aspcabins/seastarcovecabin.htm)
   - booking.how = "online: reservealaskastateparks.com" · “link “Check Availability on the Reservation System””
   - booking.url = "https://reservealaskastateparks.com/park/14/72" · “link “Check Availability on the Reservation System” -> https://reservealaskastateparks.com/park/14/72”
   - hookups.electric = "some" · “s. The 2023 -2027 DAV Camping pass is available and can be used for camping in individual electric or non-electric campsites (DOES NOT INCLU”
   - phone = "(907) 269-8400" · “E 550 W 7th Ave, Suite 1360 Anchorage, AK 99501-3557 phone: 907-269-8400 TDD: 907-269-8411 fax: 907-269-8901 FAIRBANKS 3700 Airport”
   - rules.pets = "Pets Allowed: Yes*" · “uests ★ Site Access Method: Boat-in ★ Stay Limit: 7 Nights ★ Check-in/out Time: 12:00pm ★ Pets Allowed: Yes* ★ Fees: ( see fee page ) ★ Cabi”
-- **Big Delta** (AK-1ffc25c3df, state, status ok, 4 facts, 992 ft) · [dnr.alaska.gov](http://dnr.alaska.gov/parks/aspcabins/ferrymanscabin.htm)
+- **Big Delta** (AK-1ffc25c3df, state, status ok, 4 facts) · [dnr.alaska.gov](http://dnr.alaska.gov/parks/aspcabins/ferrymanscabin.htm)
   - hookups.electric = true · “always on leash ★ Fees: ( see fee page ) ★ Cabin Dimensions: 12' x 14' ★ Heating Method: Electric Heater Amenities ★ Table ★ Seats ★ Broom ★”
   - phone = "(907) 269-8400" · “E 550 W 7th Ave, Suite 1360 Anchorage, AK 99501-3557 phone: 907-269-8400 TDD: 907-269-8411 fax: 907-269-8901 FAIRBANKS 3700 Airport”
   - restrooms = "yes (kind not stated)" · “house next to the Tanana River. Folks can park at the far end of the parking lot near the restroom. The cabin is a short walk from the park ”
   - rules.pets = "Pets Allowed: Yes, always on leash" · “s: 2 ★ Site Access Method: Drive-in ★ Stay Limit: 5 Nights ★ Check-in/out Time: 12:00pm ★ Pets Allowed: Yes, always on leash ★ Fees: ( see f”
-- **Nancy Lake** (AK-3967a2e07a, state, status ok, 8 facts, 193 ft) · [dnr.alaska.gov](http://dnr.alaska.gov/parks/aspcabins/lynxlakecabin1.htm)
+- **Nancy Lake** (AK-3967a2e07a, state, status ok, 8 facts) · [dnr.alaska.gov](http://dnr.alaska.gov/parks/aspcabins/lynxlakecabin1.htm)
   - booking.how = "online: reservealaskastateparks.com" · “link “Check Availability on the Reservation System””
   - booking.url = "https://reservealaskastateparks.com/park/24/83" · “link “Check Availability on the Reservation System” -> https://reservealaskastateparks.com/park/24/83”
   - hookups.electric = "some" · “s. The 2023 -2027 DAV Camping pass is available and can be used for camping in individual electric or non-electric campsites (DOES NOT INCLU”
@@ -3335,7 +3335,7 @@ Updated 2026-11-17. Every fact in <area>.json carries its source url, read date 
   - phone = "(907) 745-8950" · “he Mat-Su office at least one week prior to your arrival at (907) 745-8950. Summer access is via the canoe trail system. The canoe tra”
   - rules.pets = "Pets Allowed: Yes**" · “, Kayak; Winter - Ski, Snowmachine* ★ Stay Limit: 5 Nights ★ Check-in/out Time: 12:00pm ★ Pets Allowed: Yes** ★ Fees: ( see fee page ) ★ Cab”
   - sites.cabin = 4 · “y Lake Parkway and involves crossing several lakes and portages between lakes for about 3-4 miles to reach the cabin and takes approximately”
-- **Deep Creek Beach, Deep Creek South, Deep Creek North campgrounds** (intake-US-7197, agency (outside research camping-us-oct31), status ok, 4 facts, 21 ft) · [dnr.alaska.gov](https://dnr.alaska.gov/parks/units/campsitelist.htm)
+- **Deep Creek Beach, Deep Creek South, Deep Creek North campgrounds** (intake-US-7197, agency (outside research camping-us-oct31), status ok, 4 facts) · [dnr.alaska.gov](https://dnr.alaska.gov/parks/units/campsitelist.htm)
   - booking.how = "online: www.reserveamerica.com" · “link “YES””
   - booking.url = "https://www.reserveamerica.com/camping/chena-river-state-re · “link “YES” -> https://www.reserveamerica.com/camping/chena-river-state-recreation-site/r/campgroundDetails.do?cont”
   - hookups.electric = "some" · “s. The 2023 -2027 DAV Camping pass is available and can be used for camping in individual electric or non-electric campsites (DOES NOT INCLU”

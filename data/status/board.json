@@ -51,10 +51,10 @@
   },
   "Hard look reader": {
    "areas": "",
-   "last_run": "2026-11-16",
-   "made": " 2026-11-16; left 0; done 0; waiting on a host 0; blocked ",
+   "last_run": "2026-11-17",
+   "made": " 2026-11-17; left 0; done 0; waiting on a host 0; blocked ",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43821988163",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44041247850",
    "waiting_on": "chat 11 answers data/waiting/questions/hardlook.json"
   },
   "Intake: acres-engine.json": {
@@ -771,10 +771,10 @@
   },
   "Intake: hardlook-engine.xlsx": {
    "areas": "",
-   "last_run": "2026-11-16",
-   "made": "read by the hardlook bot (2026-11-16)",
+   "last_run": "2026-11-17",
+   "made": "read by the hardlook bot (2026-11-17)",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43812629857",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44041247850",
    "waiting_on": "the bot sends what it finds through the waiting room"
   },
   "Intake: hardlook-mapping-bundle-nov1.json": {
@@ -1210,11 +1210,11 @@
    "waiting_on": "proposals: answer YES / NO / NOT SURE in an inbox batch"
   },
   "campground info bot": {
-   "areas": "left: 26",
+   "areas": "left: 24",
    "last_run": "2026-11-17",
-   "made": "US-MO: done; {\"camps\": 188, \"needs_browser\": 0, \"needs_key\": 74, \"no_page\": 0, \"not_official\": 0, \"ok\": 97, \"other\": 1, \"resting\": 16, \"robots\": 0, \"with_booking\": 114, \"with_elevation\": 0, \"with_facts\": 97, \"with",
+   "made": "US-AK: done; {\"camps\": 368, \"kept_after_failed_read\": 2, \"needs_browser\": 1, \"needs_key\": 234, \"no_page\": 4, \"not_official\": 0, \"ok\": 118, \"other\": 11, \"resting\": 0, \"robots\": 0, \"with_booking\": 127, \"with_elevati",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44012652189",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44028192450",
    "waiting_on": "chat 8 grades the sample; Brandon GO before any card"
   },
   "closures super-bot": {
@@ -1283,17 +1283,17 @@
   },
   "scoreboard": {
    "areas": "",
-   "last_run": "2026-11-16",
+   "last_run": "2026-11-17",
    "made": "scoreboard.json + scoreboard-parks.json + scoreboard-check.md",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43839739425",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44041252025",
    "waiting_on": "nothing (facts only)"
   },
   "waiting room": {
    "last_run": "2026-11-17",
-   "made": "378 files waiting over 3 days in data/waiting/in/ (e.g. US-SD.json)",
-   "result": "red",
-   "waiting_on": "chat 11 (look at the waiting room run)"
+   "made": "heartbeat 0 h old, 449 files waiting",
+   "result": "green",
+   "waiting_on": "nothing"
   },
   "world finder v2": {
    "areas": "",
