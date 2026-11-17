@@ -70,11 +70,15 @@ with tempfile.TemporaryDirectory() as t:
     check(res['verdict'] == 'HOLD' and any(h.startswith('F-T7') and 'data/status/finds-lines-report.json' in h for h in res['why']), 'finds-lines-report.json under data/trails is held as F-T7 (not a trail line; home data/status)')
     out = quiet(W.mode_release, 'data/trails/finds-lines-report.json')
     check('refused' in out and not (R / 'data/trails/finds-lines-report.json').exists() and (R / 'data/waiting/in/data/trails/finds-lines-report.json').exists(), 'mode_release refuses the report; it is never released into data/trails, and the held copy is NOT deleted')
-    for r in ('US-9905', 'US-9906'): (R / f'data/trails/{r}.json').unlink()   # temp folder only: let resume show what it copies
+    live_9905 = (R / 'data/trails/US-9905.json').read_bytes()
+    live_9906 = (R / 'data/trails/US-9906.json').read_bytes()
     out = quiet(W.mode_resume, ['data/trails'])
-    check((R / 'data/trails/US-9905.json').exists() and not (R / 'data/trails/finds-lines-report.json').exists() and 'not taken' in out,
-          'mode_resume brings back held lines but not the held status report (the loop that kept re-holding it is broken)')
-    check((R / 'data/waiting/in/data/trails/finds-lines-report.json').exists(), 'mode_resume deletes nothing (held report still there for Brandon)')
+    check((R / 'data/trails/US-9905.json').read_bytes() == live_9905 and (R / 'data/trails/US-9906.json').read_bytes() == live_9906,
+          'mode_resume does not copy a held shorter line over the live official line (these held lines were never marked PASS)')
+    check(not (R / 'data/trails/finds-lines-report.json').exists() and 'not taken' in out,
+          'mode_resume still does not bring back the held status report (the loop that kept re-holding it is broken)')
+    check((R / 'data/waiting/in/data/trails/finds-lines-report.json').exists() and (R / 'data/waiting/in/data/trails/US-9905.json').exists(),
+          'mode_resume deletes nothing (held report and held lines still there for Brandon)')
 
 with tempfile.TemporaryDirectory() as t:   # without known/trails.json the checker behaves as before
     R = pathlib.Path(t) / 'data_repo'

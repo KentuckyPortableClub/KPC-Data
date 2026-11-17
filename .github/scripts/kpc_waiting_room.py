@@ -20,7 +20,7 @@ Use:  kpc_waiting_room.py check   [--promote]        every file under data/waiti
       kpc_waiting_room.py undo-bot <bot> [<area>]    every file of one bot (optionally one area, e.g. US-KY)
       kpc_waiting_room.py release <live path>        a person approved a held file: it goes live (previous copy kept)
 Env: DATA (KPC-Data checkout, default .) · LINKS (KPC-Links checkout, default ../links) · NET=1 (link re-tests may use the
-     network) · WAITING_ON=1 (promotion allowed; unset = report only)."""
+     network) · WAITING_ON=1 (promotion allowed; unset = report only) · WAITING_RESUME_FAILED=1 (hand the bot a held copy even when it failed its checks; the default is to start from the live file)."""
 import copy, datetime as dt, glob, json, math, os, pathlib, random, re, shutil, subprocess, sys, time, urllib.parse, urllib.request
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from kpc_json_any import append_jsonl_gz  # noqa: E402
@@ -335,24 +335,111 @@ def not_line(path):
     return (known('trails').get('not_lines') or {}).get(re.sub(r'\.gz$', '', str(path).replace('\\', '/')))
 
 
+def open_link(u, timeout=30):
+    """One GET of a kept link (tests mock this; no network in the tests)."""
+    return urllib.request.urlopen(urllib.request.Request(u, headers={'User-Agent': UA}), timeout=timeout)
+
+
+def gone_domain(err):
+    """True when the domain itself is gone (NXDOMAIN), not a temporary DNS hiccup."""
+    import socket
+    r = getattr(err, 'reason', err)
+    if isinstance(r, socket.gaierror):
+        en = r.errno if getattr(r, 'errno', None) is not None else (r.args[0] if r.args else 0)
+        if en in (getattr(socket, 'EAI_AGAIN', -3), getattr(socket, 'EAI_MEMORY', -10)):
+            return False
+        if en in (getattr(socket, 'EAI_NONAME', -2), getattr(socket, 'EAI_NODATA', -5)):
+            return True
+        msg = str(r).lower()
+        if 'temporary' in msg or 'try again' in msg:
+            return False
+        if 'name or service not known' in msg or 'nodename nor servname' in msg or 'name not resolved' in msg:
+            return True
+    msg = str(r).lower()
+    if 'temporary failure in name resolution' in msg or 'try again' in msg:
+        return False
+    if 'name or service not known' in msg or 'nodename nor servname' in msg or 'name not resolved' in msg:
+        return True
+    return False
+
+
+def timed_out(err):
+    import socket
+    r = getattr(err, 'reason', err)
+    if isinstance(err, (TimeoutError, socket.timeout)) or isinstance(r, (TimeoutError, socket.timeout)):
+        return True
+    return 'timed out' in str(err).lower() or 'timed out' in str(r).lower()
+
+
+def classify_response(status=None, err=None):
+    """-> (result, detail) with result 'ok', 'dead' (404/410/gone domain), or 'could not check' (timeout / connection / 5xx)."""
+    if err is not None and status is None:
+        status = getattr(err, 'code', None)
+    if status is not None:
+        try: status = int(status)
+        except (TypeError, ValueError): status = None
+    if status is not None:
+        if status in (404, 410): return 'dead', str(status)
+        if 500 <= status <= 599 or status == 408: return 'could not check', 'HTTP ' + str(status)
+        return 'ok', str(status)
+    if err is not None:
+        if gone_domain(err): return 'dead', 'gone domain'
+        if timed_out(err): return 'could not check', 'timeout'
+        return 'could not check', 'connection error'
+    return 'could not check', 'connection error'
+
+
+def probe_link(u, timeout=30, retries=1):
+    """One link, with one retry on a soft failure (timeout / connection / 5xx). -> (result, detail)."""
+    last = ('could not check', 'connection error')
+    for attempt in range(1 + max(0, retries)):
+        try:
+            with open_link(u, timeout=timeout) as r:
+                last = classify_response(status=getattr(r, 'status', None) or getattr(r, 'code', None))
+        except Exception as e:  # noqa: BLE001
+            last = classify_response(err=e)
+        if last[0] != 'could not check' or attempt >= retries:
+            return last
+    return last
+
+
+def live_ok_links(live):
+    """URLs in the live file that were already read OK (not a new fault from this file)."""
+    out = set()
+    if not isinstance(live, dict): return out
+    for p in (live.get('parks') or {}).values():
+        for k in ('map', 'rules'):
+            d = p.get(k) or {}
+            if (d.get('url') or '').startswith('http') and d.get('status') == 'ok':
+                out.add(d['url'])
+    return out
+
+
 def retest(urls, n=20):
-    """Re-test up to n kept links (GET, 2 s per host). -> (tested, dead [url]). No network = Unsure (hold)."""
+    """Re-test up to n kept links (GET, 2 s per host).
+    -> {'sample': [url], 'results': [{'url', 'result', 'detail'}]}. result is ok, dead (a definite
+    404/410 or a gone domain), or 'could not check' (timeout / connection / 5xx, after one retry).
+    No network = Unsure (hold)."""
     if not NET: raise Unsure('link re-test needs the network (NET=1): not run, so the file waits')
     urls = sorted(set(u for u in urls if u and u.startswith('http')))
     random.Random(str(TODAY)).shuffle(urls)
-    last, dead, tested = {}, [], 0
-    for u in urls[:n]:
-        h = u.split('/')[2]
+    sample = urls[:n]
+    last, rows = {}, []
+    for u in sample:
+        h = u.split('/')[2] if '://' in u else ''
         w = 2 - (time.time() - last.get(h, 0))
         if w > 0: time.sleep(w)
         last[h] = time.time()
-        try:
-            with urllib.request.urlopen(urllib.request.Request(u, headers={'User-Agent': UA}), timeout=30) as r: ok = r.status < 400
-        except Exception as e:  # noqa: BLE001
-            ok = getattr(e, 'code', 0) in (401, 403, 405, 429)   # alive, just not for bots
-        tested += 1
-        if not ok: dead.append(u)
-    return tested, dead
+        result, detail = probe_link(u)
+        rows.append({'url': u, 'result': result, 'detail': detail})
+    return {'sample': sample, 'results': rows}
+
+
+def docs_url(rec, kind):
+    """A stored map or rules URL, omitting a page already marked denied (not a map, and not a fault)."""
+    d = (rec or {}).get(kind) or {}
+    if d.get('kind') == 'denied page': return None
+    return d.get('url')
 
 
 def c_docs(path, new, live, ctx):
@@ -360,16 +447,33 @@ def c_docs(path, new, live, ctx):
     P = new.get('parks') or {}
     banned = re.compile(known('docs').get('banned_hosts') or r'inciweb|google\.[a-z.]+/maps|maps\.app\.goo\.gl|goo\.gl/maps|facebook\.com', re.I)
     for kind in ('map', 'rules'):
-        urls = [((r.get(kind) or {}).get('url')) for r in P.values()]
+        urls = [docs_url(r, kind) for r in P.values()]
         agency = lambda d: (d or {}).get('rules_scope') == 'agency' or 'agency-wide' in str((d or {}).get('how') or '') or 'agency-wide' in str((d or {}).get('status_note') or '')
-        shared = [((r.get(kind) or {}).get('url')) for r in P.values() if not (kind == 'rules' and agency(r.get(kind)))]   # tune Oct 29: an agency-wide rules page LABELLED so (docs v6 rule) is allowed on many parks
+        shared = [docs_url(r, kind) for r in P.values() if not (kind == 'rules' and agency(r.get(kind)))]   # tune Oct 29: an agency-wide rules page LABELLED so (docs v6 rule) is allowed on many parks
         for u, k in share(shared, len(P)): holds.append(f'F-D1 one {kind} page on {k} of {len(P)} parks: {u[:80]}')
         bad = [u for u in urls if u and banned.search(u)]
         if bad: holds.append(f'F-D2 {len(bad)} {kind} links on a banned host (fire news / map pins / social), e.g. {bad[0][:70]}')
-    kept = [(r.get(k) or {}).get('url') for r in P.values() for k in ('map', 'rules')]
+    kept = [docs_url(r, k) for r in P.values() for k in ('map', 'rules')]
     try:
-        tested, dead = retest(kept)
-        if tested and (len(dead) / tested > .03 and len(dead) >= 2): holds.append(f'F-D3 {len(dead)} of {tested} re-tested links dead, e.g. {dead[0][:70]}')
+        rt = retest(kept)
+        if ctx is not None: ctx['retest'] = rt
+        already = live_ok_links(live)
+        rows = rt.get('results') or []
+        n = len(rows)
+        dead = [row for row in rows if row.get('result') == 'dead']
+        already_dead = [row for row in dead if row.get('url') in already]
+        new_dead = [row for row in dead if row.get('url') not in already]
+        soft = [row for row in rows if row.get('result') == 'could not check']
+        ok_n = sum(1 for row in rows if row.get('result') == 'ok')
+        notes.append(
+            f"F-D3 retest {n} links: {ok_n} ok, {len(dead)} dead, {len(soft)} could not check"
+            + (f" ({len(already_dead)} dead already ok in live, not a new fault)" if already_dead else '')
+        )
+        notes.append('F-D3 links: ' + '; '.join(
+            f"{row.get('result')}" + (f" {row.get('detail')}" if row.get('detail') else '') + f" {str(row.get('url') or '')[:80]}"
+            for row in rows)[:900])
+        if n and new_dead and (len(new_dead) / n > .03 and len(new_dead) >= 2):
+            holds.append(f"F-D3 {len(new_dead)} of {n} re-tested links definitely dead (not already ok in live), e.g. {new_dead[0]['url'][:70]}")
     except Unsure as e: holds.append(f'F-4 unsure: {e}')   # keep the other reasons too
     return holds, notes
 
@@ -776,6 +880,11 @@ ROUTES = [
     # checker; index.json, layers.json, zip-*.json then fall to the 'info' rule below them (or HOLD as unknown). Default 0 = today.
     ((r'^data/(?:us|ca)-key/(?:US|CA)-[A-Z]+\.json$' if os.environ.get('WAITING_KEY_NAMES_ONLY') == '1' else r'^data/(?:us|ca)-key/[^/]+\.json$'), 'key', c_key),
     (r'^data/world-key/[A-Z]{2}\.json$', 'key', c_key),   # Oct 30 5:55 AM (chat 2; Brandon 'world boundaries a go'): the world key is held + checked like the US / Canada keys
+    # KPC owner, 2026-11-16: and its index.json, the build stamp. The us / ca rule above takes every .json of those folders, so their
+    # stamp reaches the waiting room and held_build() can name the build a YES belongs to; the world rule took country files only, so
+    # the world stamp never arrived: every world YES read 'NONE (no build stamp)', and the supersede test (which needs a held build id)
+    # could never replace a superseded world build, so held world files piled up from different builds on different rules.
+    (r'^data/world-key/index\.json$', 'key', c_key),
     (r'^data/intake/ready\.json$', 'intake', c_intake),
     (r'^data/wwff/[^/]+\.json$', 'wwff', c_wwff),   # Oct 29 10:55 PM (chat 2 8:20 PM)
     (r'^data/fers/(?:US|CA)-[A-Z]{2}\.json$', 'fers', c_fers),   # chat 8 B2: Canada too (Canada's POTA pins from data/canada.json)
@@ -858,6 +967,7 @@ def judge(path, new, live, twin=None, ctx=None):
         holds += h2
         holds, waived = apply_stamp(path, kind, holds)
         res.update(verdict='HOLD' if holds else 'PASS', why=holds, notes=res['notes'] + notes + waived)
+        if ctx.get('retest') is not None: res['retest'] = ctx['retest']
     except Unsure as e: res.update(verdict='HOLD', why=[f'F-4 unsure: {e}'])
     except Exception as e:  # noqa: BLE001  (own error = hold, fail closed)
         res.update(verdict='HOLD', why=[f'F-4 checker error: {type(e).__name__}: {str(e)[:160]}'])
@@ -894,16 +1004,65 @@ def mode_divert(paths):
     if moved: mode_check(False)
 
 
+def verdict_of(rel):
+    """Latest waiting-room verdict for this live path, or None if it was never checked."""
+    rel = str(rel).replace('\\', '/')
+    for r in reversed((load(W / 'verdicts.json', {}) or {}).get('results') or []):
+        if r.get('path') == rel:
+            return r.get('verdict')
+    return None
+
+
+def resume_failed():
+    """True when mode_resume may hand the bot a held copy that failed its checks.
+    Safer default is no: the bot starts from the live file. The owner can flip it:
+      WAITING_RESUME_FAILED=1  — old behaviour, resume HOLD files too
+      WAITING_RESUME_FAILED=0  — start from live when the held copy failed (default)
+    A file data/waiting/known/resume.json with {"resume_failed": true} also flips it;
+    the environment variable wins if both are set. Waiting for the owner's ruling."""
+    env = os.environ.get('WAITING_RESUME_FAILED')
+    if env is not None and env != '':
+        return env == '1'
+    conf = load(W / 'known' / 'resume.json', {}) or {}
+    return bool(conf.get('resume_failed'))
+
+
+def resume_from_held(rel):
+    """Whether this held file may become the bot's working copy. Key and 2-fer files
+    keep today's behaviour (another chat owns those). For every other kind, only a
+    file that passed its checks (PASS or LIVE-FILTERED) is resumed, unless the owner
+    has flipped resume_failed."""
+    rel = str(rel).replace('\\', '/')
+    kind, _ = kind_of(rel)
+    if kind in ('key', 'fers') or rel.startswith(('data/fers/', 'data/us-key/', 'data/ca-key/', 'data/world-key/')):
+        return True
+    if resume_failed():
+        return True
+    return verdict_of(rel) in ('PASS', 'LIVE-FILTERED')
+
+
 def mode_resume(paths):
-    """Before a held bot runs again: its waiting files become its working copy, so it continues from what it held (not from live)."""
-    n, skipped = 0, []
+    """Before a bot runs again: a held file that passed its checks becomes the working
+    copy, so the bot continues from that work (not from live). A held file that failed
+    its checks is left in the waiting room and is NOT copied over the live file, so
+    damage does not compound (default; WAITING_RESUME_FAILED=1 restores the old
+    behaviour). Nothing held is deleted. Key and 2-fer files keep today's behaviour."""
+    n, skipped, from_live = 0, [], []
     for pth in paths:
         for f in (W / 'in' / pth).rglob('*') if (W / 'in' / pth).exists() else []:
             if not f.is_file(): continue
             rel = f.relative_to(W / 'in')
-            if not_line(rel.as_posix()): skipped.append(rel.as_posix()); continue   # Nov 4: a held status report is not a bot's working copy
+            rel_s = rel.as_posix()
+            if not_line(rel_s): skipped.append(rel_s); continue   # Nov 4: a held status report is not a bot's working copy
+            if not resume_from_held(rel_s):
+                from_live.append(rel_s); continue
             (DATA / rel).parent.mkdir(parents=True, exist_ok=True); shutil.copy2(f, DATA / rel); n += 1
-    print(f'::notice title=Waiting room (hold)::{n} held files taken as the working copy' + (f'; not taken (not a trail line, see known/trails.json): {", ".join(skipped)}' if skipped else ''))
+    msg = f'{n} held files taken as the working copy'
+    if from_live:
+        msg += f'; started from live (held copy failed its checks, left in the waiting room): {", ".join(from_live)}'
+    if skipped:
+        msg += f'; not taken (not a trail line, see known/trails.json): {", ".join(skipped)}'
+    print(f'::notice title=Waiting room (hold)::{msg}')
 
 
 def row_map(d):
@@ -996,6 +1155,22 @@ def mode_tidy():
     return gone
 
 
+def record_verdict_change(lastv, r, checked):
+    """Append one change-log line, then remember it. If the write fails, lastv is left as it was so
+    the next run tries again (Nov 16: a PASS after an F-4 checker crash was stored in verdicts-last
+    but never reached the log, and the morning list kept showing the crash)."""
+    row = {'kind': r['kind'], 'path': r['path'], 'verdict': r['verdict'], 'why': (r.get('why') or [])[:4], 'notes': (r.get('notes') or [])[:3]}
+    sig = json.dumps(row, sort_keys=True, ensure_ascii=False)
+    if lastv.get(r['path']) == sig: return False
+    try:
+        append_jsonl_gz(W / 'verdicts.jsonl', {'date': checked, **row})
+    except Exception as e:  # noqa: BLE001
+        print(f"::notice title=Waiting room::verdict log not updated for {r.get('path')}: {type(e).__name__}: {e}")
+        return False
+    lastv[r['path']] = sig
+    return True
+
+
 def mode_check(promote):
     try: mode_tidy()
     except Exception as e: print(f'::error title=Waiting room tidy::stopped ({type(e).__name__}: {e}); nothing else changed')  # noqa: BLE001
@@ -1020,11 +1195,7 @@ def mode_check(promote):
     except Exception as e: print(f'::notice title=Waiting room::grade list skipped ({type(e).__name__}: {e})')  # noqa: BLE001
     lastv = load(W / 'verdicts-last.json', {}) or {}   # Nov 2 (storage): the log took 135,000 lines in 4 days, mostly the same PASS every 2 h
     for r in out:   # Fable note b: one line per verdict CHANGE, kept, so thresholds can be tuned from a month of data
-        row = {'kind': r['kind'], 'path': r['path'], 'verdict': r['verdict'], 'why': r['why'][:4], 'notes': r['notes'][:3]}
-        sig = json.dumps(row, sort_keys=True, ensure_ascii=False)
-        if lastv.get(r['path']) == sig: continue
-        lastv[r['path']] = sig
-        append_jsonl_gz(W / 'verdicts.jsonl', {'date': rep['checked'], **row})
+        record_verdict_change(lastv, r, rep['checked'])
     json.dump(lastv, open(W / 'verdicts-last.json', 'w'), ensure_ascii=False, separators=(',', ':'))
     json.dump({'ok': rep['checked']}, open(W / 'heartbeat.json', 'w'))
     since = load(W / 'held-since.json', {}) or {}

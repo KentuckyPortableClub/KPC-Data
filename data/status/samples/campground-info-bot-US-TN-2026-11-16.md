@@ -152,7 +152,8 @@ Source file: `data/campinfo/US-TN.json`
  "dump_station": null,
  "elevation_ft": {
   "src": "https://epqs.nationalmap.gov/v1/json?x=-85.34212&y=36.58733&units=Feet&wkid=4326",
-  "value": 694
+  "status": "host resting",
+  "value": null
  },
  "features": null,
  "fees": null,
@@ -420,7 +421,8 @@ Source file: `data/campinfo/US-TN.json`
  "dump_station": null,
  "elevation_ft": {
   "src": "https://epqs.nationalmap.gov/v1/json?x=-86.57027&y=36.24768&units=Feet&wkid=4326",
-  "value": 464
+  "status": "host resting",
+  "value": null
  },
  "features": null,
  "fees": null,
@@ -487,7 +489,8 @@ Source file: `data/campinfo/US-TN.json`
  "dump_station": null,
  "elevation_ft": {
   "src": "https://epqs.nationalmap.gov/v1/json?x=-84.1426&y=37.3012&units=Feet&wkid=4326",
-  "value": 1243
+  "status": "host resting",
+  "value": null
  },
  "features": null,
  "fees": null,
@@ -755,7 +758,8 @@ Source file: `data/campinfo/US-TN.json`
  "dump_station": null,
  "elevation_ft": {
   "src": "https://epqs.nationalmap.gov/v1/json?x=-84.63617&y=36.54691&units=Feet&wkid=4326",
-  "value": 1452
+  "status": "host resting",
+  "value": null
  },
  "features": null,
  "fees": null,

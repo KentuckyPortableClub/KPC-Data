@@ -31,6 +31,10 @@ Rules of the read (RULES FIRST: this bot decides nothing for members, so no rule
      'unsure' only when no total-looking number exists, and it always carries a cause. Pages of ANOTHER unit (a different NPS code
      or FWS refuge slug, a refuge complex) count only where the sentence names this park. Handover hints come only from the park's
      own pages and must be about the park (its name or 'the park / the refuge…'), with a year >= 2000 or a change word + a new owner.
+  R8 a number that 3 or more parks in the same state share, from the same sentence or from one page, is an agency total, not
+     each park's size (the 3-park threshold is the one already used for 'the same number from one page'). Those rows are left
+     'unsure' and the official size is cleared. Blank beats wrong. The check groups by the size and the sentence it came from,
+     regardless of URL, so a site-wide banner reused on different pages is caught.
 Manners: kpc_manners.py (robots, 2 s per host, back-off, three strikes = a day's rest); PDFs by range (first 400 KB).
 Resumable: a park checked within REFRESH_DAYS (7) is skipped; MINUTES (55) per chunk; never fails (exit 0 always).
 
@@ -766,6 +770,68 @@ def cause_of(ours, agency, park):
     return 'agency bigger: our outline may miss a tract'
 
 
+
+SHARED_SIZE_MIN = 3  # already the rule: a number 3+ parks share is an agency total, not each park's size
+
+
+def norm_size_text(of):
+    """The sentence (or the short line it was taken from) used as this park's official size, folded for matching."""
+    return ' '.join(str((of or {}).get('sent') or (of or {}).get('line') or '').lower().split())
+
+
+def shared_size_groups(parks, verdicts=('off', 'unsure')):
+    """Parks in this area file that share one official size from the same sentence, or from the same page.
+
+    Returns a list of ((kind, acres, detail), [refs]) for groups of SHARED_SIZE_MIN or more parks.
+    kind is 'sentence' or 'page'. A banner reused on different URLs is a sentence group; the older
+    same-page grouping is kept too.
+    """
+    by = {}
+    for ref, r in parks.items():
+        of = r.get('official') or {}
+        if r.get('verdict') not in verdicts or not of.get('acres'):
+            continue
+        acres = of['acres']
+        by.setdefault(('page', acres, of.get('url', '')), []).append(ref)
+        sent = norm_size_text(of)
+        if sent:
+            by.setdefault(('sentence', acres, sent), []).append(ref)
+    out = []
+    for key, refs in by.items():
+        urefs = list(dict.fromkeys(refs))
+        if len(urefs) >= SHARED_SIZE_MIN:
+            out.append((key, urefs))
+    return out
+
+
+def demote_shared_agency_totals(parks, stat=None):
+    """Leave shared agency-total sizes blank. Blank beats wrong.
+
+    When one figure or sentence supplies the size for many different parks in the state, those
+    rows become 'unsure' and the official size is cleared. The older 'same number from one page'
+    check is included; a site-wide sentence on different pages is now caught as well.
+    """
+    info = {}
+    for key, refs in shared_size_groups(parks):
+        kind, acres, _detail = key
+        how = 'from the same sentence' if kind == 'sentence' else 'from one page'
+        for ref in refs:
+            n, _how, _ac = info.get(ref, (0, '', 0))
+            # prefer the sentence wording when a park is in both kinds of group; keep the larger group size
+            if ref not in info or kind == 'sentence' or len(refs) > n:
+                info[ref] = (len(refs), how, acres)
+    for ref, (n, how, acres) in info.items():
+        r = parks[ref]
+        if r.get('verdict') == 'off' and stat is not None:
+            stat['size_off'] = stat.get('size_off', 0) - 1
+            stat['size_unsure'] = stat.get('size_unsure', 0) + 1
+        r['verdict'] = 'unsure'
+        r['pct'] = None
+        r['cause'] = f'a number {n} parks share {how} ({acres:,.0f} ac): an agency total, not this park'
+        r['official'] = None
+    return list(info)
+
+
 def run_area(area, state, web, docs_all, ky, ak, retired, bscore, news):
     f = OUT / f'{area}.json'
     D = load(f, {'area': area, 'about': 'Park truth checker: official acreage vs our outline, handover hints, second-witness score. Review lists only: nothing here changes a key or a card.', 'parks': {}})
@@ -830,17 +896,7 @@ def run_area(area, state, web, docs_all, ky, ak, retired, bscore, news):
                     D['parks'][ref].setdefault('handover', []).extend(hs)
         except Exception as e:  # noqa: BLE001
             STAT['errors'] += 1; notice(f'{area}: news read failed: {str(e)[:100]}')
-    shared_nums = {}
-    for ref, r in D['parks'].items():
-        of = r.get('official') or {}
-        if r.get('verdict') in ('off', 'unsure') and of.get('acres'): shared_nums.setdefault((of['acres'], of.get('url', '')), []).append(ref)
-    for (acres, url), refs in shared_nums.items():
-        if len(refs) < 3: continue
-        for ref in refs:   # v8 (chat 11, WV/VA): the statewide '1.4 million acres' / a system total taken as every park's size
-            r = D['parks'][ref]
-            if r.get('verdict') == 'off': STAT['size_off'] -= 1; STAT['size_unsure'] += 1
-            r['verdict'] = 'unsure'; r['pct'] = None; r['cause'] = f'a number {len(refs)} parks share from one page ({acres:,.0f} ac): an agency total, not this park'
-            r['official'] = None
+    demote_shared_agency_totals(D['parks'], STAT)   # v8 + Nov 16: same size from one page, or from the same sentence on different pages
     for ref, r in D['parks'].items():
         seen = set(); hs = []
         for h in r.get('handover') or []:
@@ -994,14 +1050,14 @@ def size_cases():
 
 
 def area_test(area, D):
-    """v8 generic gate for any area (chat 11's WV / VA / TN / IL grades): no 'off' row may use a number 3+ parks share, a mission /
+    """v8 generic gate for any area (chat 11's WV / VA / TN / IL grades): no 'off' row may use a number 3+ parks share (same sentence or same page), a mission /
     about / index page, or a part sentence; cross-state parks carry the whole-park note. Returns (PASS/FAIL, why)."""
     bad = size_cases()
     offs = [(ref, r) for ref, r in D['parks'].items() if r.get('verdict') == 'off' and r.get('official')]
-    byn = {}
-    for ref, r in offs: byn.setdefault((r['official']['acres'], r['official'].get('url')), []).append(ref)
-    for k, refs in byn.items():
-        if len(refs) >= 3: bad.append(f'{len(refs)} parks share {k[0]:,.0f} ac from {k[1][:60]}')
+    for key, refs in shared_size_groups({ref: r for ref, r in offs}, verdicts=('off',)):
+        kind, acres, detail = key
+        src = 'the same sentence' if kind == 'sentence' else (str(detail)[:60] or 'one page')
+        bad.append(f'{len(refs)} parks share {acres:,.0f} ac from {src}')
     for ref, r in offs:
         u = r['official'].get('url', '')
         if re.search(r'/mission|didyouknow|/wildlife-management-areas/?$|/state-forests/?$', u) or (SHARED.get(u, 0) >= 3): bad.append(f'{ref}: an agency-wide page {u[:60]}')

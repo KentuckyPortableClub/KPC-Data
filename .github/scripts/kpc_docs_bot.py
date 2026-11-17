@@ -872,11 +872,69 @@ def run_area(area, state, web, lists, ky):
     notice(f"{area}: {done} parks checked this chunk ({fresh} fresh, {left} left) · {D['counts']}")
 
 
+def page_key(u):
+    """The official page, with or without www / a trailing slash. The query string stays: two parks on
+    the same path with different IDs are not sharing one page."""
+    if not u: return ''
+    p = urllib.parse.urlparse(str(u).strip())
+    host = re.sub(r'^(www\d?|m)\.', '', (p.netloc or '').lower())
+    path = (p.path or '/').rstrip('/') or '/'
+    q = ('?' + p.query) if p.query else ''
+    return host + path + q
+
+
+def _how_title(how):
+    m = re.search(r"\('(.*)'\)", how or '')
+    return m.group(1) if m else ''
+
+
+def _from_park_page(how):
+    h = (how or '').lower()
+    return "a link on the park's page" in h or h.startswith('the page in a browser') or "the page's download button" in h
+
+
+def link_is_the_park(name, url, how, names=None):
+    """The destination or the link text clearly names this park (or a prior read already said it does)."""
+    if names in (True, 'file', 'link'): return True
+    blob = ' '.join(x for x in (file_words(url or ''), _how_title(how), urllib.parse.unquote(url or '').replace('-', ' ').replace('_', ' ')) if x)
+    return bool(name) and bool(names_park(name, blob))
+
+
+def shared_home_pass(D, lists_area=None):
+    """Nov 16: a link taken from an official page that 20+ parks of the area share (a site home, index, or
+    footer — not each park's own page) is not that park's rules or map, unless the destination clearly names
+    the park or it is the agency-wide rules page on file. Any status counts: a resting or unread copy is
+    still the wrong page. Blank beats wrong. Denied-page maps are left alone. Parks that each have their
+    own page and all link to the same state-wide rules page (IL / ME / MO) are not this case: existing
+    shared_pass / lists.json handling is unchanged."""
+    from collections import Counter
+    agency_rules = {(e or {}).get('rules') for e in (lists_area or {}).values()} - {None, ''}
+    ps = D.get('parks') or {}
+    pages = Counter(page_key(p.get('page')) for p in ps.values() if p.get('page'))
+    shared = {k for k, n in pages.items() if k and n >= 20}
+    if not shared: return
+    n_r = n_m = 0
+    for p in ps.values():
+        n = pages.get(page_key(p.get('page')) or '') or 0
+        if page_key(p.get('page')) not in shared: continue
+        r = p.get('rules') or {}
+        ru, how = r.get('url') or '', r.get('how') or ''
+        if ru and ru not in agency_rules and 'agency-wide' not in how and _from_park_page(how) and not link_is_the_park(p.get('n'), ru, how):
+            p['rules'] = {'url': '', 'status': f"not found (a link on a page shared by {n} parks was dropped: {ru[:90]})", 'how': how}; n_r += 1
+        m = p.get('map') or {}
+        mu, mhow = m.get('url') or '', m.get('how') or ''
+        if m.get('kind') == 'denied page': continue
+        if mu and _from_park_page(mhow) and not link_is_the_park(p.get('n'), mu, mhow, m.get('names_park')):
+            p['map'] = {'url': '', 'status': f"no map (a link on a page shared by {n} parks was dropped: {mu[:90]})", 'how': mhow}; n_m += 1
+    if n_r or n_m: notice(f"{D.get('area')}: site-wide links on a shared official page dropped: rules {n_r}, maps {n_m}")
+
+
 def shared_pass(D, lists_area):
     """Oct 28 (chat 11, chunks 1-3): ONE rules page given to 20+ parks (WV: 83 on a whitewater-commission page; FL: 53 on a shooting-
     range page) is not each park's rules unless it is the agency-wide rules page on file for that park's own agency; ONE map
     file given to 20+ parks (GA: 130 on a flip-book) is not each park's map. Those are dropped with the reason. A map that is a
-    national forest's maps page is labelled 'forest map only'."""
+    national forest's maps page is labelled 'forest map only'. Nov 16: a link on an official page shared by 20+ parks is also
+    dropped (any status), unless it names the park or is the agency-wide page on file — see shared_home_pass."""
     from collections import Counter
     agency_rules = {(e or {}).get('rules') for e in (lists_area or {}).values()} - {None, ''}
     ps = D.get('parks') or {}
@@ -895,6 +953,7 @@ def shared_pass(D, lists_area):
         elif m.get('status') == 'ok' and FORESTLVL.search(m.get('url') or ''):
             m['kind_note'] = (m.get('kind_note', '') + '; ' if m.get('kind_note') else '') + 'forest map only'; n_f += 1
     if n_r or n_m or n_f: notice(f"{D.get('area')}: shared pages dropped: rules {n_r}, maps {n_m}; forest-level maps labelled {n_f}")
+    shared_home_pass(D, lists_area)
 
 
 def ky_finder_check(D, parks, ky, web):

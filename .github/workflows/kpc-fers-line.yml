@@ -177,6 +177,7 @@ jobs:
     timeout-minutes: 355
     outputs:
       mem: ${{ steps.memstop.outputs.mem }}   # KPC owner, 2026-11-12: '1' = the memory guard stopped this job (read by 'broke')
+      receipt: ${{ steps.kept_green_4.outputs.receipt }}   # KPC owner, 2026-11-16 (item 1): 'red' = the receipt of passes 1 + 2 says not done
     steps:
       - uses: actions/checkout@v5
         with:
@@ -247,6 +248,9 @@ jobs:
           PASS=1 MINUTES=$(( M / 3 )) python3 .github/scripts/kpc_fers.py || { kpc_rc=$?; echo "::error title=kpc_fers.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           fi
           PASS=2 MINUTES=$(( M * 2 / 3 )) python3 .github/scripts/kpc_fers.py || { kpc_rc=$?; echo "::error title=kpc_fers.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          # KPC owner, 2026-11-16 (item 1, round 1): "done" comes from the receipt of the passes this step ran (red when missing or not measured)
+          RAN=2; [ "$SKIP_PASS1" = yes ] || RAN=1,2
+          if [ -f .github/scripts/kpc_fers_receipt.py ]; then python3 .github/scripts/kpc_fers_receipt.py check --dir data/fers --passes "$RAN" --allow-time-stop || { kpc_rc=$?; echo "::error title=2-fer receipt::the receipt says this run is not done (exit $kpc_rc)"; echo "receipt=red" >> "$GITHUB_OUTPUT"; echo "kpc_fers_receipt.py - the receipt says this run is not done (exit $kpc_rc)" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; exit $kpc_rc; }; fi
       - name: USGS water from the BULK FILES up front (HU4 files on USGS's Amazon storage, never the live map; HQ Oct 28 6:57 PM)
         id: kept_green_5
         continue-on-error: true
@@ -288,6 +292,13 @@ jobs:
           echo "::error title=2-fer line::the memory guard stopped the fetcher of $RUN_TAG ($STATES): no worker and no checker run; this line saves nothing and its states keep their previous files. Needs a smaller cut or more memory."
           echo "**2-fer line $RUN_TAG: stopped by the memory guard in the fetcher.** Needs a smaller cut or more memory (not retried on the same cut)." >> "$GITHUB_STEP_SUMMARY"
           exit 1
+      - name: A red receipt ends this line here (no worker and no checker run; KPC owner, 2026-11-16, item 1)
+        if: ${{ !cancelled() && steps.kept_green_4.outputs.receipt == 'red' }}
+        run: |
+          # the receipt of passes 1 + 2 says the run is not done (no receipt, a pass missing, an area not measured, store empty /
+          # missing, another rules hash). The pass step is continue-on-error, so this step ends the job red: no worker and no checker run, nothing of
+          # this line is saved and its states keep their previous files
+          echo "::error title=2-fer receipt::the receipt of passes 1 + 2 is red: this line stops here (no worker and no checker run)"; exit 1
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()
         env:
@@ -323,11 +334,12 @@ jobs:
   worker:
     needs: [preline, fetcher]
     # Nov 12: !cancelled() (was always(): a run cancelled after the fetcher still started the worker and uploaded its bundle)
-    if: ${{ needs.preline.outputs.wait != '1' && (!cancelled() && needs.preline.result == 'success' && needs.preline.outputs.go == 'yes' && inputs.stage != 'checker' && (inputs.stage == 'worker' || needs.fetcher.result == 'success')) }}
+    if: ${{ needs.preline.outputs.wait != '1' && (!cancelled() && needs.preline.result == 'success' && needs.preline.outputs.go == 'yes' && inputs.stage != 'checker' && needs.fetcher.outputs.receipt != 'red' && (inputs.stage == 'worker' || needs.fetcher.result == 'success')) }}
     runs-on: ubuntu-latest
     timeout-minutes: 355
     outputs:
       mem: ${{ steps.memstop.outputs.mem }}   # KPC owner, 2026-11-12: '1' = the memory guard stopped this job (read by 'broke')
+      receipt: ${{ steps.kept_green_8.outputs.receipt }}   # KPC owner, 2026-11-16 (item 1): 'red' = the receipt of passes 3 + 5 says not done
     steps:
       - uses: actions/checkout@v5
         with:
@@ -391,6 +403,8 @@ jobs:
           fi
           PASS=3 MINUTES=$(( M * 4 / 5 )) python3 .github/scripts/kpc_fers.py || { kpc_rc=$?; echo "::error title=kpc_fers.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           PASS=5 MINUTES=$(( M / 3 )) python3 .github/scripts/kpc_fers.py || { kpc_rc=$?; echo "::error title=kpc_fers.py::stopped with an error (exit $kpc_rc), see the log above"; echo "kpc_fers.py - stopped with an error (exit $kpc_rc), see the log above" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          # KPC owner, 2026-11-16 (item 1, round 1): "done" comes from the receipt of the passes this step ran (red when missing or not measured)
+          if [ -f .github/scripts/kpc_fers_receipt.py ]; then python3 .github/scripts/kpc_fers_receipt.py check --dir data/fers --passes "3,5" --allow-time-stop || { kpc_rc=$?; echo "::error title=2-fer receipt::the receipt says this run is not done (exit $kpc_rc)"; echo "receipt=red" >> "$GITHUB_OUTPUT"; echo "kpc_fers_receipt.py - the receipt says this run is not done (exit $kpc_rc)" | tee -a "$RUNNER_TEMP/kpc-hidden-errors.txt" >> "$RUNNER_TEMP/kpc-hidden.txt"; exit $kpc_rc; }; fi
       - name: Water report per state (tiles needed / saved / rows not checked; a 'not checked' row with every tile saved = the store was not read)
         id: kept_green_9
         continue-on-error: true
@@ -423,6 +437,13 @@ jobs:
           echo "::error title=2-fer line::the memory guard stopped the worker of $RUN_TAG ($STATES): no checker runs; this line saves nothing and its states keep their previous files. Needs a smaller cut or more memory."
           echo "**2-fer line $RUN_TAG: stopped by the memory guard in the worker.** Needs a smaller cut or more memory (not retried on the same cut)." >> "$GITHUB_STEP_SUMMARY"
           exit 1
+      - name: A red receipt ends this line here (no checker runs; KPC owner, 2026-11-16, item 1)
+        if: ${{ !cancelled() && steps.kept_green_8.outputs.receipt == 'red' }}
+        run: |
+          # the receipt of passes 3 + 5 says the run is not done (no receipt, a pass missing, an area not measured, store empty /
+          # missing, another rules hash). The pass step is continue-on-error, so this step ends the job red: no checker runs, nothing of
+          # this line is saved and its states keep their previous files
+          echo "::error title=2-fer receipt::the receipt of passes 3 + 5 is red: this line stops here (no checker runs)"; exit 1
       - name: Report hidden failures (Nov 2 review, G8)
         if: always()
         env:
@@ -458,7 +479,7 @@ jobs:
   checker:
     needs: [preline, fetcher, worker]
     # Nov 12: !cancelled() (was always(): a run cancelled after the worker still started the checker, and its Save committed)
-    if: ${{ needs.preline.outputs.wait != '1' && (!cancelled() && needs.preline.result == 'success' && needs.preline.outputs.go == 'yes' && (inputs.stage == 'checker' || needs.worker.result == 'success')) }}
+    if: ${{ needs.preline.outputs.wait != '1' && (!cancelled() && needs.preline.result == 'success' && needs.preline.outputs.go == 'yes' && needs.fetcher.outputs.receipt != 'red' && needs.worker.outputs.receipt != 'red' && (inputs.stage == 'checker' || needs.worker.result == 'success')) }}
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:
@@ -521,7 +542,7 @@ jobs:
       - name: Save (once; a failed save = a red run)
         # Nov 12 (world run cancelled and still committed, KPC-Links): was if: always(). Never on a cancel, and only after the verdict
         # (Check) finished and wrote this run's line-<tag>.json; a STOPPED / PART READY verdict is still saved (data goes to the waiting room)
-        if: ${{ !cancelled() && success() && steps.kept_green_10.outcome == 'success' && steps.kept_green_10.outputs.verdict == 'written' }}
+        if: ${{ !cancelled() && success() && needs.fetcher.outputs.receipt != 'red' && needs.worker.outputs.receipt != 'red' && steps.kept_green_10.outcome == 'success' && steps.kept_green_10.outputs.verdict == 'written' }}
         run: |
           set +e
           rm -f data/fers/.since-*

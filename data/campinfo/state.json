@@ -545,11 +545,11 @@
     "with_booking": 114,
     "with_elevation": 0,
     "with_facts": 97,
-    "with_sites": 87
+    "with_sites": 0
    },
    "left": 0,
    "status": "done",
-   "updated": "2026-11-12"
+   "updated": "2026-11-17"
   },
   "US-MS": {
    "camps": 203,
@@ -633,7 +633,7 @@
     "resting": 0,
     "robots": 0,
     "with_booking": 69,
-    "with_elevation": 92,
+    "with_elevation": 91,
     "with_facts": 13,
     "with_sites": 11
    },
@@ -942,7 +942,7 @@
     "resting": 25,
     "robots": 17,
     "with_booking": 49,
-    "with_elevation": 394,
+    "with_elevation": 372,
     "with_facts": 2,
     "with_sites": 2
    },
@@ -1098,12 +1098,12 @@
     "resting": 1,
     "robots": 29,
     "with_booking": 54,
-    "with_elevation": 100,
+    "with_elevation": 52,
     "with_facts": 2,
     "with_sites": 0
    },
-   "left": 0,
-   "status": "done",
+   "left": 2,
+   "status": "partial",
    "updated": "2026-11-16"
   },
   "US-WY": {
@@ -1154,7 +1154,7 @@
   "US-ME": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-MI": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
   "US-MN": "FCC listAsOfDates: robots.txt says no",
-  "US-MO": "FCC listAsOfDates: robots.txt says no",
+  "US-MO": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-MS": "FCC listAsOfDates: robots.txt says no",
   "US-MT": "FCC listAsOfDates: robots.txt says no",
   "US-NC": "FCC listAsOfDates: robots.txt says no",
@@ -1403,10 +1403,10 @@
    "cell": {
     "carriers": null,
     "files": [],
-    "src": null,
-    "status": "FCC listAsOfDates: robots.txt says no"
+    "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2026-06-30?category=State&subcategory=Mobile%20Broadband",
+    "status": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
    },
-   "read": "2026-11-12"
+   "read": "2026-11-17"
   },
   "US-MS": {
    "cell": {
@@ -1644,6 +1644,7 @@
   }
  },
  "hosts": {
+  "epqs.nationalmap.gov": 1794945664.950545,
   "reserve.tnstateparks.com": 1794920406.150574,
   "reserveohio.com": 1794918753.22784,
   "www.fs.usda.gov": 1794915521.5681503,
@@ -2596,35 +2597,36 @@
  },
  "last": {
   "areas": [
-   "US-ME"
+   "US-MO"
   ],
   "fcc_token": true,
   "manners": {
+   "deferred": 15,
    "errors": 0,
    "for_person_urls": [],
    "host_rule": 0,
-   "requests": 7,
-   "rested": 2,
+   "requests": 193,
+   "rested": 191,
    "robots": 0,
    "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "camps": 6,
-   "elevations": 6,
+   "camps": 190,
+   "elevations": 0,
    "errors": 0,
    "needs_browser": 0,
-   "needs_key": 4,
-   "no_page": 0,
+   "needs_key": 74,
+   "no_page": 1,
    "not_official": 0,
-   "ok": 0,
-   "pages_read": 0,
-   "resting": 2,
+   "ok": 99,
+   "pages_read": 188,
+   "resting": 1,
    "ridb_calls": 0,
    "robots": 0,
-   "skipped_fresh": 19
+   "skipped_fresh": 0
   },
-  "when": "2026-11-16"
+  "when": "2026-11-17"
  },
  "test": {
   "result": "PASS",
