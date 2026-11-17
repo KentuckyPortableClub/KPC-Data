@@ -54,15 +54,16 @@ def crons(ref=None):
     if ref:
         for n in subprocess.run(['git', 'ls-tree', '--name-only', ref, '.github/workflows/'], cwd=ROOT, capture_output=True, text=True).stdout.split():
             t = subprocess.run(['git', 'show', f'{ref}:{n}'], cwd=ROOT, capture_output=True, text=True).stdout
-            out[n] = [l.strip() for l in t.splitlines() if 'cron:' in l]
+            out[n] = [l.strip() for l in t.splitlines() if 'cron:' in l and not l.lstrip().startswith('#')]
     else:
         for p in sorted((ROOT / '.github/workflows').glob('*.y*ml')):
-            out[f'.github/workflows/{p.name}'] = [l.strip() for l in p.read_text(encoding='utf-8').splitlines() if 'cron:' in l]
+            out[f'.github/workflows/{p.name}'] = [l.strip() for l in p.read_text(encoding='utf-8').splitlines() if 'cron:' in l and not l.lstrip().startswith('#')]
     return out
 
 
 ref = next((r for r in ('origin/main', 'main') if subprocess.run(['git', 'rev-parse', '--verify', '-q', r], cwd=ROOT, capture_output=True).returncode == 0), None)
 if ref:   # Nov 17: a new workflow is allowed when it has no schedule (the by-hand trace hold); every schedule must still match main
+    # KPC owner, 2026-11-17 (tripwire bot): a commented-out cron line schedules nothing, so only live cron lines are compared
     was, now_c = crons(ref), crons()
     check(all(now_c.get(k) == v for k, v in was.items()) and all(not v for k, v in now_c.items() if k not in was),
           f'4. no schedule changed and no new scheduled workflow (against {ref})')

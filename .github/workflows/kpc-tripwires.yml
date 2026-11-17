@@ -1,0 +1,126 @@
+name: KPC tripwires T1-T5 (report only; by hand until HQ turns the schedule on)
+# KPC owner, 2026-11-17 (owner rulings D1-D11, fourth job of Handoff 3). Counts the five tripwires of every join (T1 one record one
+# park, T2 every piece connects to the pin, T3 from the key build, T4 pin in or at the edge or a person behind it, T5 size form)
+# from KPC-Links' saved outlines, POTA pins and keys (.github/scripts/kpc_tripwires.py). A REPORT: no key build, no network request
+# by the bot (it refuses every socket), nothing on the map changes. D2 is on trial: the slack numbers are first guesses, nothing binds.
+# Writes: KPC-Data branch `tripwires` (counts per area, the counts history = the meter, the rows grouped by pattern = the waiting
+# room) and, for D10, the small not-sure list data/waiting/tripwires/not-sure.json on KPC-Data main (refs + reasons; the 2-fer bot
+# reads it from its KPC-Data checkout). Never KPC-Links. No layer address in the log or the files.
+# A run is green whatever it counts; it is red only when it cannot read its inputs or a save never lands.
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'yes = count and print only; nothing saved'
+        default: 'no'
+      keys:
+        description: 'keys to count (comma list of us, ca, world)'
+        default: 'us,ca,world'
+  # OFF until HQ turns it on (owner, 2026-11-17: by hand only). To turn it on, take the '#' off the next two lines.
+  # schedule:
+  #   - cron: '47 11 * * *'   # 11:47 UTC, after the 10:41 UTC copy from KPC-Links: one count each morning
+permissions:
+  contents: write
+concurrency:
+  group: kpc-tripwires
+  cancel-in-progress: false
+jobs:
+  count:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - name: KPC-Links (read-only; keys, pins, saved outlines and the outline file reader)
+        uses: actions/checkout@v5
+        with:
+          repository: KentuckyPortableClub/KPC-Links
+          path: links
+          persist-credentials: false
+          sparse-checkout: |
+            /locations.json
+            /data/us-key/
+            /data/ca-key/
+            /data/world-key/
+            /data/outlines/
+            /.github/scripts/
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Shapely + pyproj (T2 and T4 geometry)
+        run: |
+          pip install -q shapely pyproj || { kpc_rc=$?; echo "::warning title=install::shapely / pyproj did not install (exit $kpc_rc): T2 and T4 are not counted this run"; echo "install - shapely / pyproj did not install (exit $kpc_rc)" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+      - name: Branch tripwires (made on the first run, an orphan branch)
+        run: |
+          cd kpcdata
+          git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git fetch -q origin "+refs/heads/tripwires:refs/remotes/origin/tripwires" 2>/dev/null; then
+            git worktree add -q -B tripwires ../tw origin/tripwires
+          else
+            git worktree add -q --detach ../tw && git -C ../tw checkout -q --orphan tripwires && git -C ../tw rm -rfq . 2>/dev/null; true   # ok: an empty orphan has nothing to remove
+            echo "::notice title=Tripwires::branch tripwires is new: made on this run"
+          fi
+      - name: Count (offline; report only)
+        run: |
+          DRY=""; [ "${{ inputs.dry_run }}" = yes ] && DRY=--dry-run
+          python3 kpcdata/.github/scripts/kpc_tripwires.py run --links links --out tw --keys "${{ inputs.keys || 'us,ca,world' }}" \
+            --not-sure kpcdata/data/waiting/tripwires/not-sure.json --cleared kpcdata/data/waiting/tripwires/cleared.json $DRY
+      - name: Counts to the run page (no addresses)
+        if: inputs.dry_run != 'yes'
+        run: |
+          python3 - <<'PY'
+          import json, os
+          r = json.load(open('tw/counts/latest.json', encoding='utf-8'))
+          rows = ['| key | T1 | T2 | T3 | T4 | T5 | since last run |', '|---|---|---|---|---|---|---|']
+          for k, t in r['totals'].items():
+              j = r['jump'].get(k) or {}
+              rows.append(f"| {k} | " + ' | '.join(str(t.get(x, '')) for x in ('T1', 'T2', 'T3', 'T4', 'T5')) + ' | ' + (', '.join(f'{a} {b:+d}' for a, b in j.items()) or 'no change') + ' |')
+          new = r.get('new_patterns') or {}
+          txt = '**Tripwires (report only; nothing binds)**\n\n' + '\n'.join(rows) + '\n' + (('\nNew patterns: ' + '; '.join(f"{t}: {', '.join(v[:10])}" for t, v in new.items()) + '\n') if new else '')
+          print(txt)
+          if os.environ.get('GITHUB_STEP_SUMMARY'): open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write(txt)
+          PY
+      - name: Save the counts and the waiting room (branch tripwires)
+        if: inputs.dry_run != 'yes'
+        run: |
+          cd tw && git add -A && { git diff --cached --quiet || git commit -qm "tripwires $(date -u +%F) (run ${{ github.run_id }})"; }
+          bash ../kpcdata/.github/scripts/kpc_push_retry.sh tripwires 4 "counts waiting README.md" || exit 1
+      - name: Save the not-sure list (D10; KPC-Data main, data/waiting/tripwires/not-sure.json only)
+        if: inputs.dry_run != 'yes'
+        run: |
+          cd kpcdata && git add data/waiting/tripwires/not-sure.json && { git diff --cached --quiet || git commit -qm "tripwires: not-sure list for 2-fers (run ${{ github.run_id }})"; }
+          bash .github/scripts/kpc_push_retry.sh main 4 "data/waiting/tripwires/not-sure.json" || exit 1
+      - name: Report hidden failures (Nov 2 review, G8)
+        if: always()
+        env:
+          KPC_STEPS: ${{ toJSON(steps) }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          s = json.loads(os.environ.get('KPC_STEPS') or '{}')
+          bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
+          for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
+          print(f'{len(bad)} hidden step failure(s)')
+          # Nov 4 PM fix bundle item 7: the errors a step caught itself ('|| echo ::error ...') are listed too (kpc-hidden.txt)
+          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt')
+          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
+          print(f'{len(said)} error(s) caught inside steps and kept green')
+          if said and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write(f'**Errors caught inside steps and kept green ({len(said)}):**\n' + ''.join(f'- {x}\n' for x in said[:50]))
+          if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
+          # Next round C4 (Nov 5; Brandon's yes relayed via Super): the errors a step caught itself ('|| { ...; echo ::error ... }') are listed
+          # too (kpc-hidden.txt), one 'Hidden failures' line is left for the check-up (data/status/hidden-failures.json), and a job the
+          # check-up lists as safe to fail (KPC_FAIL_SAFE=1: it starts nothing after it) goes red on a caught ERROR (not on a warning).
+          import sys
+          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt'); he = h[:-4] + '-errors.txt'
+          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
+          errs = [x.strip() for x in open(he, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(he) else []
+          if said or bad:
+              print(f"::warning title=Hidden failures::{len(errs)} error(s) and {len(said) - len(errs)} warning(s) caught inside steps, {len(bad)} step(s) failed but kept green (job {os.environ.get('GITHUB_JOB', '?')})")
+          if errs and os.environ.get('KPC_FAIL_SAFE') == '1':
+              print(f'::error title=Fail where safe::{len(errs)} error(s) were caught inside steps, so this job is red (it starts nothing after it). The repo variable KPC_HIDDEN_RED=off turns this off.')
+              sys.exit(1)
+          PY
