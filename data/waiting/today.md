@@ -2,25 +2,19 @@
 
 For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in data/waiting/approved.json; the nightly run lets it out.
 
-## Held files: 428 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
+## Held files: 429 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
 
 | since | days | file | last check | why |
 |---|---|---|---|---|
 | 2026-10-31 | 17 | data/campinfo/US-MA.json | HOLD | F-I3 the same site count on 6 camps of one agency (state: 27): copied from a shared page? |
-| 2026-10-31 | 17 | data/docs/US-ID.json | HOLD | F-D1 one rules page on 63 of 362 parks: https://idfg.idaho.gov/sites/default/files/seasons-rules-big-game-2026.pdf |
-| 2026-10-31 | 17 | data/docs/US-ME.json | HOLD | F-D1 one map page on 33 of 148 parks: https://www.maine.gov/dacf/parks/publications_maps/index.shtml; F-D1 one rules page on 48 of 148 parks: https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml; F-D3 2 of |
-| 2026-10-31 | 17 | data/docs/US-MO.json | HOLD | F-D1 one rules page on 426 of 561 parks: https://www.sos.mo.gov/adrules/csr/current/3csr/3csr.asp |
 | 2026-11-01 | 16 | data/campinfo/US-NC.json | HOLD | F-I3 the same site count on 4 camps of one agency (state: 579): copied from a shared page? |
 | 2026-11-01 | 16 | data/fers/US-IL.json | HOLD | F-2 candidates 11 -> 25 (over 30% change); F-2 15 new candidate pairs since the live file (over 10% of 11): a person looks at them first, e.g. US-0282+US-4482, US-0283+US-4130, US-0287+US-1015 |
 | 2026-11-01 | 16 | data/fers/US-NE.json | HOLD | F-2 NOT SURE 9 -> 12 (over 30% change); F-2 43 new candidate pairs since the live file (over 10% of 4): a person looks at them first, e.g. US-0443+US-5622, US-0445+US-5655, US-0675+US-10341 |
 | 2026-11-01 | 16 | data/fers/US-SD.json | HOLD | F-2 only 7 of 12 live candidate pairs are still there (under 80%): a person looks (a rule change is released by hand); F-2 3 new candidate pairs since the live file (over 10% of 12): a person looks at them first, e.g. US |
-| 2026-11-01 | 16 | data/truth/US-CT.json | HOLD | F-R2 9 OFF rows share the size 255,000.0 ac |
 | 2026-11-01 | 16 | data/truth/US-MA.json | HOLD | F-R2 6 OFF rows share the size 1,000.0 ac; F-R3 169 of 242 sized parks are OFF (over half: a reading problem?) |
 | 2026-11-01 | 16 | data/truth/US-MD.json | HOLD | F-R3 48 of 89 sized parks are OFF (over half: a reading problem?) |
 | 2026-11-01 | 16 | data/truth/US-MN.json | HOLD | F-R3 13 of 20 sized parks are OFF (over half: a reading problem?) |
-| 2026-11-01 | 16 | data/truth/US-NY.json | HOLD | F-R2 6 OFF rows share the size 46,000.0 ac |
 | 2026-11-01 | 16 | data/truth/US-OK.json | HOLD | F-R3 53 of 100 sized parks are OFF (over half: a reading problem?) |
-| 2026-11-01 | 16 | data/truth/US-TX.json | HOLD | F-R2 5 OFF rows share the size 675,000.0 ac |
 | 2026-11-02 | 15 | data/fers/US-CT.json | HOLD | F-2 candidates 26 -> 48 (over 30% change); F-2 23 new candidate pairs since the live file (over 10% of 26): a person looks at them first, e.g. US-10073+US-7533, US-11013+US-1669, US-12620+US-4561 |
 | 2026-11-02 | 15 | data/fers/US-ND.json | HOLD | F-4 data/fers/US-ND.json replaces live data/fers/US-ND.json.gz (other format) with 51 rows for 83 (over 10% fewer) |
 | 2026-11-02 | 15 | data/fers/US-NH.json | HOLD | F-4 data/fers/US-NH.json replaces live data/fers/US-NH.json.gz (other format) with 133 rows for 167 (over 10% fewer) |
@@ -61,6 +55,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-15 | 2 | data/docs/US-OR.json | HOLD | F-D3 5 of 20 re-tested links definitely dead (not already ok in live), e.g. https://www.fws.gov/refuge/siletz-bay/visit-us/rules-policies |
 | 2026-11-16 | 1 | data/docs/US-MS.json | HOLD | F-D3 2 of 20 re-tested links definitely dead (not already ok in live), e.g. https://www.nps.gov/tupe/learn/management/lawsandpolicies.htm |
 | 2026-11-17 | 0 | data/docs/US-AZ.json | HOLD | F-D3 2 of 20 re-tested links definitely dead (not already ok in live), e.g. https://www.fws.gov/refuge/bill-williams-river/visit-us/rules-policies |
+| 2026-11-17 | 0 | data/docs/US-KY.json | HOLD | F-D3 2 of 20 re-tested links definitely dead (not already ok in live), e.g. https://parks.ky.gov/park-rules |
 | 2026-11-17 | 0 | data/docs/US-NV.json | HOLD | F-D3 2 of 20 re-tested links definitely dead (not already ok in live), e.g. https://www.fs.usda.gov/recmain/alerts-notices |
 | ? | ? | data/ca-key/CA-ON.json | RELEASE |  |
 | ? | ? | data/ca-key/CA-QC.json | RELEASE |  |
@@ -134,14 +129,17 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/docs/US-DE.json | PASS |  |
 | ? | ? | data/docs/US-FL.json | PASS |  |
 | ? | ? | data/docs/US-GA.json | PASS |  |
+| ? | ? | data/docs/US-ID.json | PASS |  |
 | ? | ? | data/docs/US-IL.json | PASS |  |
 | ? | ? | data/docs/US-IN.json | PASS |  |
 | ? | ? | data/docs/US-KS.json | PASS |  |
 | ? | ? | data/docs/US-LA.json | PASS |  |
 | ? | ? | data/docs/US-MA.json | PASS |  |
 | ? | ? | data/docs/US-MD.json | PASS |  |
+| ? | ? | data/docs/US-ME.json | PASS |  |
 | ? | ? | data/docs/US-MI.json | PASS |  |
 | ? | ? | data/docs/US-MN.json | PASS |  |
+| ? | ? | data/docs/US-MO.json | PASS |  |
 | ? | ? | data/docs/US-MT.json | PASS |  |
 | ? | ? | data/docs/US-NC.json | PASS |  |
 | ? | ? | data/docs/US-ND.json | PASS |  |
@@ -254,6 +252,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/truth/US-AZ.json | PASS |  |
 | ? | ? | data/truth/US-CA.json | PASS |  |
 | ? | ? | data/truth/US-CO.json | PASS |  |
+| ? | ? | data/truth/US-CT.json | PASS |  |
 | ? | ? | data/truth/US-DC.json | PASS |  |
 | ? | ? | data/truth/US-DE.json | PASS |  |
 | ? | ? | data/truth/US-FL.json | PASS |  |
@@ -276,12 +275,14 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/truth/US-NJ.json | PASS |  |
 | ? | ? | data/truth/US-NM.json | PASS |  |
 | ? | ? | data/truth/US-NV.json | PASS |  |
+| ? | ? | data/truth/US-NY.json | PASS |  |
 | ? | ? | data/truth/US-OH.json | PASS |  |
 | ? | ? | data/truth/US-OR.json | PASS |  |
 | ? | ? | data/truth/US-PA.json | PASS |  |
 | ? | ? | data/truth/US-RI.json | PASS |  |
 | ? | ? | data/truth/US-SC.json | PASS |  |
 | ? | ? | data/truth/US-TN.json | PASS |  |
+| ? | ? | data/truth/US-TX.json | PASS |  |
 | ? | ? | data/truth/US-VA.json | PASS |  |
 | ? | ? | data/truth/US-VT.json | PASS |  |
 | ? | ? | data/truth/US-WV.json | PASS |  |
