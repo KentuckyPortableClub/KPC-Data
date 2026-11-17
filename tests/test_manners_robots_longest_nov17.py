@@ -153,7 +153,7 @@ check(body == b'' and hits.get(('denyall', '/parks/cabin.htm'), 0) == 0,
 
 # documents bot uses the same helper on parsed rules (injected; no extra network)
 B.ROBOTS.clear(); B.ROBOTS_SAID.clear(); B.ROBOTS_REFUSED.clear()
-B.ROBOTS['127.0.0.1'] = rules('User-agent: *\nAllow: /a\nDisallow: /a/b\n')
+B.ROBOTS[B.robots_rkey('http://127.0.0.1/a/page.htm')] = rules('User-agent: *\nAllow: /a\nDisallow: /a/b\n')
 check(B.robots_ok('http://127.0.0.1/a/page.htm') is True, 'documents bot allows /a/page.htm')
 check(B.robots_ok('http://127.0.0.1/a/b/secret.htm') is False, 'documents bot refuses /a/b/secret.htm')
 

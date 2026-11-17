@@ -26,7 +26,7 @@ most); a User-Agent naming the club site. Resumable: a park checked in the last 
 Env: AREAS='US-MO US-FL' (blank = the next unfinished areas in queue order) · MINUTES (default 55) · BROWSER=1 (the Chromium pass)
      · LINKS (the KPC-Links checkout, default 'links') · OUT (default data/docs) · SAMPLE=25 (Kentucky finder check size)
 """
-import io, json, os, pathlib, re, sys, time, urllib.error, urllib.parse, urllib.request
+import copy, io, json, os, pathlib, re, sys, time, urllib.error, urllib.parse, urllib.request
 import kpc_host_rules; kpc_host_rules.install()
 import kpc_manners
 
@@ -146,29 +146,68 @@ def core(x): return ' '.join(KINDW.sub(' ', low(x)).split())
 
 
 # ------------------------------------------------------------------ manners
+def robots_rkey(u):
+    """Scheme + host:port (http and https are different robots.txt files)."""
+    pu = urllib.parse.urlparse(u)
+    return f'{pu.scheme or "https"}://{pu.netloc.lower()}'
+
+
+def _load_docs_robots(u, rk):
+    """Read robots.txt for this scheme+host. 200 = its rules; 404/410 and other 4xx except
+    429 = no rules (RFC 9309); 429, 5xx, a time-out, or no connection = unreadable: nothing
+    is fetched from this host this run (not treated as permission)."""
+    pu = urllib.parse.urlparse(u)
+    ru = f'{pu.scheme or "https"}://{pu.netloc}/robots.txt'
+    try:
+        with urllib.request.urlopen(urllib.request.Request(ru, headers={'User-Agent': UA}), timeout=15) as r:
+            st, raw = r.status, r.read(kpc_manners.ROBOTS_MAX + 1)
+    except urllib.error.HTTPError as e:
+        st, raw = e.code, b''
+    except Exception as e:  # noqa: BLE001
+        ROBOTS[rk] = False
+        ROBOTS_SAID[rk] = 'robots.txt unreadable (' + str(e)[:40] + ')'
+        return
+    if st in (404, 410) or (isinstance(st, int) and 400 <= st < 500 and st != 429):
+        ROBOTS[rk] = None   # no file, or unavailable = no rules
+        ROBOTS_SAID[rk] = f'no robots.txt ({st})' if st not in (404, 410) else 'no robots.txt'
+        return
+    if st != 200:
+        ROBOTS[rk] = False
+        ROBOTS_SAID[rk] = f'robots.txt unreadable ({st})'
+        return
+    try:
+        if len(raw) > kpc_manners.ROBOTS_MAX:
+            raise ValueError('robots.txt too long')
+        txt = raw.decode('utf-8', 'replace')
+        ROBOTS[rk] = kpc_manners.parse_robots(txt)
+        ROBOTS_SAID[rk] = ' | '.join(l.strip() for l in txt.splitlines() if l.strip() and not l.startswith('#'))[:160]
+    except Exception as e:  # noqa: BLE001
+        ROBOTS[rk] = False
+        ROBOTS_SAID[rk] = 'robots.txt could not be parsed (' + str(e)[:40] + ')'
+
+
+def robots_status(u):
+    """None if this URL may be fetched; 'robots' if robots.txt disallows it;
+    'robots-unreadable' if we could not read the rules, so nothing is fetched this run."""
+    rk = robots_rkey(u)
+    if rk not in ROBOTS:
+        _load_docs_robots(u, rk)
+    rp = ROBOTS[rk]
+    if rp is False:
+        STAT['robots'] += 1; ROBOTS_REFUSED[rk] = ROBOTS_REFUSED.get(rk, 0) + 1
+        return 'robots-unreadable'
+    try:
+        ok = kpc_manners.robots_allowed(rp, UA, u)
+    except Exception:  # noqa: BLE001
+        ok = False   # rules we cannot apply = do not fetch
+    if not ok:
+        STAT['robots'] += 1; ROBOTS_REFUSED[rk] = ROBOTS_REFUSED.get(rk, 0) + 1
+        return 'robots'
+    return None
+
+
 def robots_ok(u):
-    h = host_of(u)
-    if h not in ROBOTS:
-        try:
-            ru = f'{urllib.parse.urlparse(u).scheme or "https"}://{h}/robots.txt'
-            with urllib.request.urlopen(urllib.request.Request(ru, headers={'User-Agent': UA}), timeout=15) as r:
-                raw = r.read(kpc_manners.ROBOTS_MAX + 1)
-        except Exception as e: ROBOTS[h] = None; ROBOTS_SAID[h] = 'no robots.txt (' + str(e)[:30] + ')'  # noqa: BLE001  (unreadability is #113; a fetch error still lands here)
-        else:
-            try:
-                if len(raw) > kpc_manners.ROBOTS_MAX:
-                    raise ValueError('robots.txt too long')
-                txt = raw.decode('utf-8', 'replace')
-                ROBOTS[h] = kpc_manners.parse_robots(txt)
-                ROBOTS_SAID[h] = ' | '.join(l.strip() for l in txt.splitlines() if l.strip() and not l.startswith('#'))[:160]
-            except Exception as e:  # noqa: BLE001
-                ROBOTS[h] = False
-                ROBOTS_SAID[h] = 'robots.txt could not be parsed (' + str(e)[:40] + ')'
-    rp = ROBOTS[h]
-    try: ok = kpc_manners.robots_allowed(rp, UA, u)
-    except Exception: ok = False  # noqa: BLE001  parse/match error = do not fetch
-    if not ok: STAT['robots'] += 1; ROBOTS_REFUSED[h] = ROBOTS_REFUSED.get(h, 0) + 1
-    return ok
+    return robots_status(u) is None
 
 
 def rested(h):
@@ -182,7 +221,8 @@ def get(u, rng=None, timeout=40, head=False):
     u = urllib.parse.quote(u, safe=":/?&=%#+~@,;$!*()'[]")   # chat 11: an address with spaces (University of the Cumberlands WMA) is sent escaped
     h = host_of(u)
     if rested(h): return 'rest', {}, b'', u
-    if not robots_ok(u): return 'robots', {}, b'', u
+    why = robots_status(u)
+    if why: return why, {}, b'', u
     hdr = {'User-Agent': UA, 'Accept': 'text/html,application/pdf,*/*;q=0.8', 'Accept-Language': 'en-US,en;q=0.8,fr;q=0.5'}
     if rng: hdr['Range'] = f'bytes={rng[0]}-{rng[1]}'
     for attempt in range(3):
@@ -605,7 +645,7 @@ def rules_for(fam, urls, pg_rules, lists_entry):
             out = {'url': final or u, 'how': how, 'status': 'ok'}
             if u in AGENCYWIDE or 'agency-wide' in how: out['rules_scope'] = 'agency'   # v6 (Fable): an agency-wide rules page is kept, labelled
             return out
-        if st in ('rest', 'robots'): return {'url': u, 'how': how, 'status': 'rules page not read (the site is resting: next run)' if st == 'rest' else str(st)}
+        if st in ('rest', 'robots', 'robots-unreadable'): return {'url': u, 'how': how, 'status': 'rules page not read (the site is resting: next run)' if st == 'rest' else str(st)}
     return {'url': cands[0][0] if cands else '', 'how': cands[0][1] if cands else '', 'status': 'not found' if not cands else 'did not open'}
 
 
@@ -837,6 +877,75 @@ def ky_answers():
     return {x['c']: {'off': x.get('off'), 'off2': x.get('off2'), 'web': x.get('web'), 'n': x.get('n'), 'agency': ''} for x in d.get('parks', []) if x.get('c')}
 
 
+
+def skipped_read(st):
+    """This run did not read the page: robots.txt unreadable, the host is resting, or robots.txt blocked it."""
+    s = str(st or '')
+    if not s:
+        return False
+    if s in ('rest', 'robots', 'robots-unreadable'):
+        return True
+    if s.startswith('host resting') or 'the site is resting' in s:
+        return True
+    if 'robots-unreadable' in s:
+        return True
+    if re.search(r'(?:^|[(;:] )rest https?://', s):
+        return True
+    if s.startswith('no working map link (tried:'):
+        body = s.split('tried:', 1)[-1]
+        if 'robots-unreadable' in body or re.search(r'\brobots\b', body) or re.search(r'\brest\b', body):
+            return True
+    if s.startswith('robots'):
+        return True
+    return False
+
+
+def keep_known_docs(old, new):
+    """A skipped read (robots-unreadable, rest / host resting, robots-blocked) must keep the earlier
+    map AND rules exactly as they were, the same way the campground bot's keep_known does for camps.
+    The earlier checked/ver stay so the park is tried again next run."""
+    if not old or not new:
+        return new
+    nm = new.get('map') or {}
+    nr = new.get('rules') or {}
+    map_skip = skipped_read(nm.get('status')) or any(
+        skipped_read((t or {}).get('status')) for t in (new.get('map_tried') or [])
+    )
+    rules_skip = skipped_read(nr.get('status'))
+    page_skip = False
+    for n in (new.get('notes') or []):
+        s = str(n)
+        if s.startswith('park page:') and skipped_read(s.split(':', 1)[-1].strip()):
+            page_skip = True
+            break
+    if not (map_skip or rules_skip or page_skip):
+        return new
+    kept = dict(new)
+    if 'map' in old:
+        kept['map'] = copy.deepcopy(old['map'])
+    if 'map_also' in old:
+        kept['map_also'] = copy.deepcopy(old['map_also'])
+    elif 'map_also' in kept:
+        del kept['map_also']
+    if 'map_tried' in old:
+        kept['map_tried'] = copy.deepcopy(old['map_tried'])
+    elif 'map_tried' in kept:
+        del kept['map_tried']
+    if 'rules' in old:
+        kept['rules'] = copy.deepcopy(old['rules'])
+    if 'checked' in old:
+        kept['checked'] = old['checked']
+    if 'ver' in old:
+        kept['ver'] = old['ver']
+    kept['last_read_failed'] = TODAY
+    kept['last_read_status'] = (
+        (nm.get('status') if map_skip else None)
+        or (nr.get('status') if rules_skip else None)
+        or 'skipped read'
+    )
+    return kept
+
+
 def run_area(area, state, web, lists, ky):
     f = OUT / f'{area}.json'
     D = load(f, {'area': area, 'about': 'Official map + rules page + who runs it, per park (documents bot). Nothing here reaches a card until chat 8 grades it.', 'parks': {}})
@@ -853,9 +962,8 @@ def run_area(area, state, web, lists, ky):
         S = seeds(ref, parks, web, ky if area == 'US-KY' else {})
         try:
             D['parks'][ref] = one_park(ref, S, lists, area); D['parks'][ref]['ver'] = VER
-            nm, om = D['parks'][ref].get('map') or {}, (old or {}).get('map') or {}
-            if not nm.get('url') and om.get('url') and re.search(r'(?:^|[(;:] )rest https?://', str(nm.get('status') or '')):   # tune Oct 29: kept on rest (no VER bump)
-                D['parks'][ref]['map'] = dict(om, kept=f"{TODAY}: kept the last good map: the host was resting (our strikes), not a dead link")   # tune Oct 29 (WI 294 -> 113: dnrmaps.wi.gov rested after 3 strikes)
+            D['parks'][ref] = keep_known_docs(old, D['parks'][ref])
+            if old and D['parks'][ref].get('last_read_failed') == TODAY:
                 STAT['kept_on_rest'] = STAT.get('kept_on_rest', 0) + 1
         except Exception as e:  # noqa: BLE001
             D['parks'][ref] = {'n': S['name'], 'checked': TODAY, 'map': {'url': '', 'status': 'bot error: ' + str(e)[:80]}, 'rules': None, 'notes': []}
@@ -1045,7 +1153,7 @@ def counts(D):
             else: c['date unknown'] += 1
             if m.get('names_park'): c['map names the park'] += 1
             if m.get('kind') == 'region overview': c['region overview only'] += 1
-        elif m.get('status') in ('rest', 'robots'): c['host resting / robots'] += 1
+        elif m.get('status') in ('rest', 'robots', 'robots-unreadable'): c['host resting / robots'] += 1
         else: c['no map'] += 1
         if (p.get('rules') or {}).get('status') == 'ok': c['rules ok'] += 1
         if p.get('needs_browser') and not p.get('browser_checked'): c['needs browser'] += 1
