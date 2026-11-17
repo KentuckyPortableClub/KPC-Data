@@ -62,7 +62,10 @@ def crons(ref=None):
 
 
 ref = next((r for r in ('origin/main', 'main') if subprocess.run(['git', 'rev-parse', '--verify', '-q', r], cwd=ROOT, capture_output=True).returncode == 0), None)
-if ref: check(crons(ref) == crons(), f'4. no schedule changed and no new workflow (against {ref})')
+if ref:   # Nov 17: a new workflow is allowed when it has no schedule (the by-hand trace hold); every schedule must still match main
+    was, now_c = crons(ref), crons()
+    check(all(now_c.get(k) == v for k, v in was.items()) and all(not v for k, v in now_c.items() if k not in was),
+          f'4. no schedule changed and no new scheduled workflow (against {ref})')
 # v4 (Nov 16): a saved list rewritten from POTA's all-parks export has no counts: those parks keep last week's numbers
 import gzip, os, subprocess, sys, tempfile  # noqa: E402
 with tempfile.TemporaryDirectory() as t:
