@@ -291,6 +291,15 @@
    "Notes": "computed from the official outline polygon (approx); layer https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0; read 2026-11-05"
   },
   {
+   "Park number (if matched)": "US-5748",
+   "Park name (as the agency writes it)": "Fort Abercrombie",
+   "Size": 16,
+   "Unit": "acres",
+   "Agency": "National Register of Historic Places Polygons",
+   "Source page": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?where=OBJECTID%3D400953&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1; read 2026-11-15"
+  },
+  {
    "Park number (if matched)": "CA-6251",
    "Park name (as the agency writes it)": "GRAND PARADE",
    "Size": 2,
@@ -829,15 +838,6 @@
    "Agency": "Utah Division of Wildlife Resources (AGOL owner dwrutah, Utah DNR org) (land, state GIS table)",
    "Source page": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0/query?where=OBJECTID%3D54&outFields=%2A&f=html",
    "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0; read 2026-11-02"
-  },
-  {
-   "Park number (if matched)": "US-5748",
-   "Park name (as the agency writes it)": "Fort Abercrombie",
-   "Size": 16,
-   "Unit": "acres",
-   "Agency": "National Register of Historic Places Polygons",
-   "Source page": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?where=OBJECTID%3D400953&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1; read 2026-11-15"
   },
   {
    "Park number (if matched)": "US-2213",
@@ -1585,6 +1585,24 @@
    "Agency": "Tennessee Wildlife Resources Agency (credit: TWRA) (wild, state GIS table)",
    "Source page": "https://tnmap.tn.gov/arcgis/rest/services/ENVIRONMENTAL/TWRA/MapServer/3/query?where=OBJECTID%3D29&outFields=%2A&f=html",
    "Notes": "computed from the official outline polygon (approx); layer https://tnmap.tn.gov/arcgis/rest/services/ENVIRONMENTAL/TWRA/MapServer/3; read 2026-11-15"
+  },
+  {
+   "Park number (if matched)": "US-13106",
+   "Park name (as the agency writes it)": "Penitente Canyon Recreation Area",
+   "Size": 4550,
+   "Unit": "acres",
+   "Agency": "BLM recreation management areas · official (BLM planning area)",
+   "Source page": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0/query?where=OBJECTID%3D10516&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0; read 2026-11-17"
+  },
+  {
+   "Park number (if matched)": "US-7563",
+   "Park name (as the agency writes it)": "Black River Recreation Area",
+   "Size": 1277,
+   "Unit": "acres",
+   "Agency": "BLM recreation areas",
+   "Source page": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9/query?where=OBJECTID%3D14054&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9; read 2026-11-17"
   },
   {
    "Park number (if matched)": "US-13631",
@@ -2396,10 +2414,10 @@
   },
   {
    "Host": "gis.blm.gov",
-   "Agency/area": "BLM national monuments / conservation areas",
+   "Agency/area": "BLM recreation management areas · official (BLM planning area)",
    "Kind": "GIS layer",
-   "Example URL": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0",
-   "# times used": 1,
+   "Example URL": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
+   "# times used": 3,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
    "Retry?": "NO"
