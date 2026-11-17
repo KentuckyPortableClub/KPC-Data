@@ -26,7 +26,7 @@ most); a User-Agent naming the club site. Resumable: a park checked in the last 
 Env: AREAS='US-MO US-FL' (blank = the next unfinished areas in queue order) · MINUTES (default 55) · BROWSER=1 (the Chromium pass)
      · LINKS (the KPC-Links checkout, default 'links') · OUT (default data/docs) · SAMPLE=25 (Kentucky finder check size)
 """
-import io, json, os, pathlib, re, sys, time, urllib.error, urllib.parse, urllib.request, urllib.robotparser
+import io, json, os, pathlib, re, sys, time, urllib.error, urllib.parse, urllib.request
 import kpc_host_rules; kpc_host_rules.install()
 import kpc_manners
 
@@ -149,16 +149,20 @@ def core(x): return ' '.join(KINDW.sub(' ', low(x)).split())
 def robots_ok(u):
     h = host_of(u)
     if h not in ROBOTS:
-        rp = urllib.robotparser.RobotFileParser()
         try:
             ru = f'{urllib.parse.urlparse(u).scheme or "https"}://{h}/robots.txt'
             with urllib.request.urlopen(urllib.request.Request(ru, headers={'User-Agent': UA}), timeout=15) as r: txt = r.read(30000).decode('utf-8', 'replace')
-            rp.parse(txt.splitlines()); ROBOTS[h] = rp
-            ROBOTS_SAID[h] = ' | '.join(l.strip() for l in txt.splitlines() if l.strip() and not l.startswith('#'))[:160]
-        except Exception as e: ROBOTS[h] = None; ROBOTS_SAID[h] = 'no robots.txt (' + str(e)[:30] + ')'  # noqa: BLE001  (no robots file = allowed)
+        except Exception as e: ROBOTS[h] = None; ROBOTS_SAID[h] = 'no robots.txt (' + str(e)[:30] + ')'  # noqa: BLE001  (unreadability is #113; a fetch error still lands here)
+        else:
+            try:
+                ROBOTS[h] = kpc_manners.parse_robots(txt)
+                ROBOTS_SAID[h] = ' | '.join(l.strip() for l in txt.splitlines() if l.strip() and not l.startswith('#'))[:160]
+            except Exception as e:  # noqa: BLE001
+                ROBOTS[h] = False
+                ROBOTS_SAID[h] = 'robots.txt could not be parsed (' + str(e)[:40] + ')'
     rp = ROBOTS[h]
-    try: ok = rp is None or kpc_manners.robots_allowed(rp, UA, u)
-    except Exception: ok = True  # noqa: BLE001
+    try: ok = kpc_manners.robots_allowed(rp, UA, u)
+    except Exception: ok = False  # noqa: BLE001  parse/match error = do not fetch
     if not ok: STAT['robots'] += 1; ROBOTS_REFUSED[h] = ROBOTS_REFUSED.get(h, 0) + 1
     return ok
 

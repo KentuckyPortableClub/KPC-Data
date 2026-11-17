@@ -11,7 +11,7 @@ Use:  M = Manners('KPC park truth checker', state.get('hosts'))   # a name for t
       st, headers, body, final_url = M.get(url)                   # st = int HTTP status, or 'rest' / 'robots' / 'err:...'
       state['hosts'] = M.resting()                                 # save before the run ends
 """
-import atexit, hashlib, importlib.util, json, os, re, threading, time, urllib.error, urllib.parse, urllib.request, urllib.robotparser
+import atexit, hashlib, importlib.util, json, os, re, threading, time, urllib.error, urllib.parse, urllib.request
 
 
 def _load_host_rules():
@@ -144,48 +144,138 @@ def safe_url(u):
 
 
 
-def robots_allowed(rp, useragent, url):
-    """May this user-agent fetch this URL, using RFC 9309 longest-match (Disallow wins ties)?
+class RobotsRules:
+    """Parsed robots.txt. Not a urllib.robotparser object; those internals changed in Python 3.13.18."""
 
-    urllib.robotparser.can_fetch uses the FIRST matching rule in the file, so
-    "Allow: /a" then "Disallow: /a/b" would allow /a/b/x. The longest matching
-    path wins here; if an Allow and a Disallow are the same length, Disallow
-    wins. User-agent group selection and path matching otherwise follow the
-    already-parsed robotparser entries (including the '*' group).
-    """
-    if rp is None:
-        return True
-    if rp is False:
-        return False
-    if getattr(rp, 'disallow_all', False):
-        return False
-    if getattr(rp, 'allow_all', False):
-        return True
-    parsed = urllib.parse.urlparse(urllib.parse.unquote(url))
-    path = urllib.parse.urlunparse(('', '', parsed.path, parsed.params, parsed.query, parsed.fragment))
-    path = urllib.parse.quote(path) or '/'
-    entry = None
-    for e in getattr(rp, 'entries', []) or []:
-        if e.applies_to(useragent):
-            entry = e
-            break
-    if entry is None:
-        entry = getattr(rp, 'default_entry', None)
-    if entry is None:
-        return True
-    best = None  # (length, disallow_sort, allowance)
-    for line in entry.rulelines:
-        if not line.applies_to(path):
+    def __init__(self, groups):
+        self.groups = groups  # list of {'agents', 'rules', 'delay'}
+
+    def crawl_delay(self, useragent):
+        g = _pick_robots_group(self.groups, useragent)
+        if not g or g['delay'] is None:
+            return 0.0
+        return float(g['delay'])
+
+
+def _compile_robots_pattern(pattern):
+    """Compile one Allow/Disallow path. '*' is any string; a trailing '$' means end of path. Length is the written pattern."""
+    if pattern is None:
+        pattern = ''
+    length = len(pattern)
+    end = pattern.endswith('$')
+    body = pattern[:-1] if end else pattern
+    parts = []
+    for ch in body:
+        parts.append('.*' if ch == '*' else re.escape(ch))
+    rx = '^' + ''.join(parts)
+    if end:
+        rx += '$'
+    return re.compile(rx, re.DOTALL), length
+
+
+def parse_robots(text):
+    """Parse a robots.txt body into RobotsRules. Raises on a parse error (callers must not fetch)."""
+    if isinstance(text, (bytes, bytearray)):
+        text = text.decode('utf-8', 'replace')
+    if text.startswith('\ufeff'):
+        text = text[1:]
+    groups = []
+    agents, rules, delay = [], [], None
+
+    def finish():
+        nonlocal agents, rules, delay
+        if agents:
+            groups.append({'agents': list(agents), 'rules': list(rules), 'delay': delay})
+        agents, rules, delay = [], [], None
+
+    for raw in text.splitlines():
+        line = raw.split('#', 1)[0].strip()
+        if not line:
             continue
-        # longer path wins; at the same length, Disallow (allowance False) wins
-        cand = (len(line.path), 0 if not line.allowance else 1, line.allowance)
-        if best is None or cand[0] > best[0] or (cand[0] == best[0] and cand[1] < best[1]):
-            best = cand
-    if best is None:
+        if ':' not in line:
+            continue
+        field, _, value = line.partition(':')
+        field, value = field.strip().lower(), value.strip()
+        if field == 'user-agent':
+            if rules:
+                finish()
+            if value:
+                agents.append(value.lower())
+        elif field in ('allow', 'disallow'):
+            if not agents:
+                continue
+            allow = field == 'allow'
+            path = value
+            if path == '' and not allow:
+                allow, path = True, ''   # empty Disallow = allow all
+            regex, length = _compile_robots_pattern(path)
+            rules.append((allow, regex, length))
+        elif field == 'crawl-delay':
+            if not agents:
+                continue
+            try:
+                delay = float(value)
+            except ValueError:
+                pass
+        # sitemap and other fields are ignored
+    finish()
+    return RobotsRules(groups)
+
+
+def _pick_robots_group(groups, useragent):
+    """The group for our user-agent, else the '*' group, else None."""
+    ua = (useragent or '').lower()
+    best = None  # (token length, group)
+    star = None
+    for g in groups:
+        for agent in g['agents']:
+            if agent == '*':
+                if star is None:
+                    star = g
+                continue
+            if agent and agent in ua:
+                if best is None or len(agent) > best[0]:
+                    best = (len(agent), g)
+    return best[1] if best else star
+
+
+def _robots_path(url):
+    """Path and query the rules are matched against (no scheme, host, or fragment)."""
+    p = urllib.parse.urlsplit(url)
+    path = p.path or '/'
+    if p.query:
+        path += '?' + p.query
+    return path
+
+
+def robots_allowed(rules, useragent, url):
+    """May this user-agent fetch this URL? RFC 9309 longest-match; Disallow wins ties.
+
+    rules is RobotsRules (from parse_robots), None (no file = allowed), or False (unreadable
+    or a parse error = do not fetch). A RobotFileParser or any other object is refused
+    (do not fail open). '*' and '$' wildcards are supported.
+    """
+    if rules is None:
         return True
-    return best[2]
-
-
+    if rules is False or not isinstance(rules, RobotsRules):
+        return False
+    try:
+        path = _robots_path(url)
+        group = _pick_robots_group(rules.groups, useragent)
+        if group is None:
+            return True
+        best = None  # (length, disallow_first, allow)
+        for allow, regex, length in group['rules']:
+            if regex.search(path) is None:
+                continue
+            cand = (length, 0 if not allow else 1, allow)
+            if best is None or cand[0] > best[0] or (cand[0] == best[0] and cand[1] < best[1]):
+                best = cand
+        if best is None:
+            return True
+        return best[2]
+    except Exception:
+        return False  # noqa: BLE001  parse/match error = do not fetch
 
 class Manners:
     def __init__(self, job, resting=None, gap=2.0, strikes_out=3, rest_s=86400, read_max=3_000_000):
@@ -270,7 +360,14 @@ class Manners:
                 self.for_person.append((ru, f'{why}: a person downloads what is needed from {rk}')); return
             txt = body.encode('utf-8')   # a page holding robots directives: its directives are the rules
         if st == 200:
-            rp = urllib.robotparser.RobotFileParser(); rp.parse(txt.decode('utf-8', 'replace').splitlines()); self.robots[rk] = rp
+            try:
+                self.robots[rk] = parse_robots(txt.decode('utf-8', 'replace') if isinstance(txt, (bytes, bytearray)) else txt)
+            except Exception:  # noqa: BLE001
+                self.robots[rk] = False
+                self.blocked[rk] = ('robots-unreadable', 'robots.txt could not be parsed')
+                self.stat['robots_unreadable'] = self.stat.get('robots_unreadable', 0) + 1
+                self.for_person.append((f'{pu.scheme or "https"}://{pu.netloc}/robots.txt', f'robots.txt could not be parsed: nothing fetched from {rk} this run'))
+                return
             # Nov 17: decide each URL by can_fetch on that page. "Disallow: /" plus a more specific Allow
             # (Alaska: Allow: /parks, then Disallow: /) is not a whole-site block. A path that is
             # actually disallowed is still refused in robots_ok / get, and is never fetched.
@@ -315,7 +412,7 @@ class Manners:
     def crawl_delay(self, h):
         """h = a url, or a host:port / host key of self.robots."""
         rp = self.robots.get(self.rkey(h) if '://' in str(h) else h)
-        try: d = (rp.crawl_delay(self.ua) or rp.crawl_delay('*')) if rp else None
+        try: d = rp.crawl_delay(self.ua) if rp else None
         except Exception: d = None  # noqa: BLE001
         return float(d) if d else 0.0
 
