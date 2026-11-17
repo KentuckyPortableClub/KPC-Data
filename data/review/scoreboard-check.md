@@ -10,8 +10,8 @@ A difference is not an error by itself: the keys move nightly, retired parks are
 | US-UT | missing | 151 | 194 | -43 |
 | US-UT | pin_only | 110 | 118 | -8 |
 | US-UT | line | 8 | 21 | -13 |
-| CA-ON | total | 1180 | 1158 | +22 |
-| CA-ON | with_outline | 954 | 903 | +51 |
+| CA-ON | total | 1179 | 1158 | +21 |
+| CA-ON | with_outline | 953 | 903 | +50 |
 | CA-ON | missing | 125 | 145 | -20 |
 | CA-ON | pin_only | 99 | 106 | -7 |
 | CA-ON | line | 2 | 4 | -2 |
