@@ -33,7 +33,7 @@
    "parks": 253,
    "checked": 253,
    "left": 0,
-   "updated": "2026-11-03"
+   "updated": "2026-11-17"
   },
   "US-VA": {
    "status": "done",
@@ -57,11 +57,10 @@
    "updated": "2026-11-03"
   },
   "US-AL": {
-   "status": "done",
+   "status": "failed",
    "parks": 155,
-   "checked": 155,
-   "left": 0,
-   "updated": "2026-11-03"
+   "updated": "2026-11-17",
+   "why": "maps 82 -> 57"
   },
   "US-SC": {
    "status": "done",
@@ -71,17 +70,17 @@
    "updated": "2026-11-03"
   },
   "US-MS": {
-   "status": "failed",
+   "status": "done",
    "parks": 155,
-   "updated": "2026-11-03",
-   "why": "maps 33 -> 24"
+   "checked": 155,
+   "left": 0,
+   "updated": "2026-11-17"
   },
   "US-IN": {
-   "status": "done",
+   "status": "failed",
    "parks": 229,
-   "checked": 229,
-   "left": 0,
-   "updated": "2026-11-03"
+   "updated": "2026-11-17",
+   "why": "maps 22 -> 12"
   },
   "US-IL": {
    "status": "done",
@@ -107,8 +106,8 @@
   "US-IA": {
    "status": "failed",
    "parks": 181,
-   "updated": "2026-11-03",
-   "why": "maps 82 -> 64"
+   "updated": "2026-11-17",
+   "why": "maps 82 -> 7"
   },
   "US-ND": {
    "status": "done",
@@ -150,7 +149,7 @@
    "parks": 157,
    "checked": 157,
    "left": 0,
-   "updated": "2026-11-03"
+   "updated": "2026-11-17"
   },
   "US-RI": {
    "status": "done",
@@ -160,11 +159,10 @@
    "updated": "2026-11-03"
   },
   "US-MA": {
-   "status": "done",
+   "status": "failed",
    "parks": 421,
-   "checked": 421,
-   "left": 0,
-   "updated": "2026-11-03"
+   "updated": "2026-11-17",
+   "why": "maps 116 -> 18"
   },
   "US-VT": {
    "status": "done",
@@ -223,11 +221,10 @@
    "updated": "2026-11-03"
   },
   "US-OK": {
-   "status": "done",
+   "status": "failed",
    "parks": 205,
-   "checked": 205,
-   "left": 0,
-   "updated": "2026-11-03"
+   "updated": "2026-11-17",
+   "why": "maps 97 -> 8"
   },
   "US-TX": {
    "status": "done",
@@ -719,22 +716,28 @@
  "last": {
   "when": "2026-11-17",
   "areas": [
-   "US-KY",
-   "US-ME",
-   "US-MO"
+   "US-CT",
+   "US-OK",
+   "US-IA",
+   "US-IN",
+   "US-MS",
+   "US-NC",
+   "US-AL",
+   "US-MA"
   ],
   "stat": {
-   "requests": 647,
-   "parks": 148,
-   "maps_ok": 70,
-   "maps_found": 66,
-   "dates": 0,
-   "rules": 32,
-   "browser": 77,
-   "robots": 5,
-   "strikes": 3,
-   "errors": 3,
-   "skipped_fresh": 754
+   "requests": 532,
+   "parks": 964,
+   "maps_ok": 166,
+   "maps_found": 99,
+   "dates": 13,
+   "rules": 189,
+   "browser": 101,
+   "robots": 2,
+   "strikes": 0,
+   "errors": 0,
+   "skipped_fresh": 792,
+   "kept_on_rest": 2
   }
  }
 }

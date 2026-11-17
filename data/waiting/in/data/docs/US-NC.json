@@ -810,17 +810,9 @@
    "page": "https://www.tva.com/energy/our-power-system/hydroelectric/hiwassee",
    "checked": "2026-10-29",
    "map": {
-    "url": "https://tva-azr-eastus-cdn-ep-tvawcm-prd.azureedge.net/cdn-tvawcma/docs/default-source/default-document-library/site-content/environment/recreation/pdf/hiwasseemap.pdf?sfvrsn=74649c91_0",
-    "status": "ok",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "date unknown, checked 2026-11-03",
-    "how": "the page in a browser ('Water Trail Guide')",
-    "page": "https://www.tva.com/energy/our-power-system/hydroelectric/hiwassee",
-    "posted": "Apr 06, 2020",
-    "posted_how": "posted: the server's file date",
-    "checked": "2026-11-03",
-    "via": "linked from the agency page (tva-azr-eastus-cdn-ep-tvawcm-prd.azureedge.net)"
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "",
@@ -835,8 +827,7 @@
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
-   "ver": 7,
-   "browser_checked": "2026-11-03"
+   "ver": 7
   },
   "US-10397": {
    "n": "Southern Nantahala Wilderness Area",
@@ -1186,25 +1177,11 @@
    "n": "Vance State Game Land",
    "t": "State Game Land",
    "page": "https://www.mypacer.com/parks/365319/crooked-run-wildlife-management-area-henderson",
-   "checked": "2026-10-31",
+   "checked": "2026-10-29",
    "map": {
-    "url": "https://www.ncwildlife.gov/media/903/download?attachment",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "2020-07-01",
-    "date_how": "file stamp 2020 (older than the posting 2024 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
-    "final": "https://www.ncwildlife.gov/media/903/download?attachment",
-    "posted": "Apr 18, 2024",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "NC Wildlife Resources Commission",
-    "date_given": null,
-    "page": "https://www.mypacer.com/parks/365319/crooked-run-wildlife-management-area-henderson",
-    "map_page": 1
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "",
@@ -1327,25 +1304,11 @@
    "n": "Harmon Den Wildlife Management Area",
    "t": "Wildlife Management Area",
    "page": "https://freecampsites.net/#!9170&query=sitedetails",
-   "checked": "2026-10-31",
+   "checked": "2026-10-29",
    "map": {
-    "url": "https://www.ncwildlife.gov/media/928/download?attachment",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "2025-06-26",
-    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-    "final": "https://www.ncwildlife.gov/media/928/download?attachment",
-    "posted": "Aug 19, 2025",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "NC Wildlife Resources Commission",
-    "date_given": null,
-    "page": "https://freecampsites.net/#!9170&query=sitedetails",
-    "map_page": 1
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "",
@@ -2445,7 +2408,7 @@
    ],
    "needs_browser": "host on the browser list",
    "ver": 7,
-   "browser_checked": "2026-11-02"
+   "browser_checked": "2026-11-17"
   },
   "US-2753": {
    "n": "South Mountains State Park",
@@ -3408,25 +3371,11 @@
    "n": "Three Top Mountain State Game Land",
    "t": "State Game Land",
    "page": "https://blueridgeconservancy.org/three-top-mountain-game-lands/",
-   "checked": "2026-10-31",
+   "checked": "2026-10-29",
    "map": {
-    "url": "https://www.ncwildlife.gov/media/938/download?attachment",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "2026-01-12",
-    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-    "final": "https://www.ncwildlife.gov/media/938/download?attachment",
-    "posted": "Jan 13, 2026",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "NC Wildlife Resources Commission",
-    "date_given": null,
-    "page": "https://blueridgeconservancy.org/three-top-mountain-game-lands/",
-    "map_page": 1
+    "url": "",
+    "status": "no working map link (tried: HTTP 404 https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Mountain/T)",
+    "how": "a link on the park's page ('map of the game land')"
    },
    "rules": {
     "url": "",
@@ -3479,7 +3428,8 @@
    "rules": {
     "url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "North Carolina Wildlife Resources Commission",
    "runs": [],
@@ -4112,7 +4062,7 @@
   "US-6839": {
    "n": "Fort Dobbs State Historic Site",
    "t": "State Historic Site",
-   "page": "https://historicsites.nc.gov/all-sites/fort-dobbs",
+   "page": "http://www.fortdobbs.org/visit",
    "checked": "2026-10-29",
    "map": {
     "url": "",
@@ -4127,9 +4077,7 @@
    "agency": "",
    "runs": [],
    "handover": [],
-   "notes": [
-    "2026-11-01: page http://www.fortdobbs.org/visit replaced (page fix: HTTP 500)"
-   ],
+   "notes": [],
    "ver": 7
   },
   "US-6840": {
@@ -4424,7 +4372,7 @@
   "US-6853": {
    "n": "Thomas Wolfe Memorial State Historic Site",
    "t": "State Historic Site",
-   "page": "https://historicsites.nc.gov/all-sites/thomas-wolfe-memorial",
+   "page": "http://wolfememorial.com/",
    "checked": "2026-10-29",
    "map": {
     "url": "",
@@ -4440,8 +4388,7 @@
    "runs": [],
    "handover": [],
    "notes": [
-    "park page: rest",
-    "2026-11-01: page http://wolfememorial.com/ replaced (page fix: HTTP 500)"
+    "park page: rest"
    ],
    "ver": 7
   },
@@ -4522,25 +4469,11 @@
    "n": "Yadkin River State Game Land",
    "t": "State Game Land",
    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/Alcoa.pdf",
-   "checked": "2026-10-31",
+   "checked": "2026-10-29",
    "map": {
-    "url": "https://www.ncwildlife.gov/media/905/download?attachment",
-    "status": "ok",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-31",
-    "final": "https://www.ncwildlife.gov/media/905/download?attachment",
-    "posted": "Sep 01, 2026",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "NC Wildlife Resources Commission",
-    "date_given": null,
-    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/Alcoa.pdf",
-    "map_page": 1
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "",
@@ -4579,7 +4512,8 @@
    "rules": {
     "url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "North Carolina Wildlife Resources Commission",
    "runs": [],
@@ -4611,7 +4545,8 @@
    "rules": {
     "url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "North Carolina Wildlife Resources Commission",
    "runs": [],
@@ -4643,7 +4578,8 @@
    "rules": {
     "url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "North Carolina Wildlife Resources Commission",
    "runs": [],
@@ -4675,7 +4611,8 @@
    "rules": {
     "url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "North Carolina Wildlife Resources Commission",
    "runs": [],
@@ -4687,25 +4624,11 @@
    "n": "Bladen Lakes State Game Land",
    "t": "State Game Land",
    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Coastal/Bladen-Lakes-SF.pdf",
-   "checked": "2026-10-31",
+   "checked": "2026-10-29",
    "map": {
-    "url": "https://www.ncwildlife.gov/media/816/download?attachment",
-    "status": "ok",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-31",
-    "final": "https://www.ncwildlife.gov/media/816/download?attachment",
-    "posted": "Dec 03, 2025",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "NC Wildlife Resources Commission",
-    "date_given": null,
-    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Coastal/Bladen-Lakes-SF.pdf",
-    "map_page": 1
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "",
@@ -4724,25 +4647,11 @@
    "n": "Brinkleyville State Game Land",
    "t": "State Game Land",
    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/Brinkleyville.pdf",
-   "checked": "2026-10-31",
+   "checked": "2026-10-29",
    "map": {
-    "url": "https://www.ncwildlife.gov/media/878/download?attachment",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "2023-09-08",
-    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-    "final": "https://www.ncwildlife.gov/media/878/download?attachment",
-    "posted": "Apr 18, 2024",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "NC Wildlife Resources Commission",
-    "date_given": null,
-    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/Brinkleyville.pdf",
-    "map_page": 1
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "",
@@ -4761,25 +4670,11 @@
    "n": "Buckhorn State Game Land",
    "t": "State Game Land",
    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/Buckhorn.pdf",
-   "checked": "2026-10-31",
+   "checked": "2026-10-29",
    "map": {
-    "url": "https://www.ncwildlife.gov/media/877/download?attachment",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "2020-06-29",
-    "date_how": "file stamp 2020 (older than the posting 2024 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
-    "final": "https://www.ncwildlife.gov/media/877/download?attachment",
-    "posted": "Apr 18, 2024",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "NC Wildlife Resources Commission",
-    "date_given": null,
-    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/Buckhorn.pdf",
-    "map_page": 1
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "",
@@ -4818,7 +4713,8 @@
    "rules": {
     "url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "North Carolina Wildlife Resources Commission",
    "runs": [],
@@ -4830,25 +4726,11 @@
    "n": "Buffalo Cove State Game Land",
    "t": "State Game Land",
    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Mountain/Buffalo-Cove.pdf",
-   "checked": "2026-10-31",
+   "checked": "2026-10-29",
    "map": {
-    "url": "https://www.ncwildlife.gov/media/953/download?attachment",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "2026-02-23",
-    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-    "final": "https://www.ncwildlife.gov/media/953/download?attachment",
-    "posted": "Feb 27, 2026",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "NC Wildlife Resources Commission",
-    "date_given": null,
-    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Mountain/Buffalo-Cove.pdf",
-    "map_page": 1
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "",
@@ -4886,7 +4768,8 @@
    "rules": {
     "url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "North Carolina Wildlife Resources Commission",
    "runs": [],
@@ -4898,25 +4781,11 @@
    "n": "Butner-Falls of the Neuse State Game Land",
    "t": "State Game Land",
    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/Butner-Falls-of-Neuse.pdf",
-   "checked": "2026-10-31",
+   "checked": "2026-10-29",
    "map": {
-    "url": "https://www.ncwildlife.gov/media/716/download?attachment",
-    "status": "ok",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-31",
-    "final": "https://www.ncwildlife.gov/media/716/download?attachment",
-    "posted": "Sep 10, 2026",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "NC Wildlife Resources Commission",
-    "date_given": null,
-    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/Butner-Falls-of-Neuse.pdf",
-    "map_page": 1
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "",
@@ -4954,7 +4823,8 @@
    "rules": {
     "url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "North Carolina Wildlife Resources Commission",
    "runs": [],
@@ -4986,7 +4856,8 @@
    "rules": {
     "url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "North Carolina Wildlife Resources Commission",
    "runs": [],
@@ -5018,7 +4889,8 @@
    "rules": {
     "url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "North Carolina Wildlife Resources Commission",
    "runs": [],
@@ -5030,25 +4902,11 @@
    "n": "Chatham State Game Land",
    "t": "State Game Land",
    "page": "https://www.avenzamaps.com/maps/1186083/chatham-game-land",
-   "checked": "2026-10-31",
+   "checked": "2026-10-29",
    "map": {
-    "url": "https://www.ncwildlife.gov/media/937/download?attachment",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "2025-05-06",
-    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-    "final": "https://www.ncwildlife.gov/media/937/download?attachment",
-    "posted": "May 06, 2025",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "NC Wildlife Resources Commission",
-    "date_given": null,
-    "page": "https://www.avenzamaps.com/maps/1186083/chatham-game-land",
-    "map_page": 1
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://store.avenza.com/search)",
+    "how": "a link on the park's page ('Map Store')"
    },
    "rules": {
     "url": "",
@@ -5090,7 +4948,8 @@
    "rules": {
     "url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "North Carolina Wildlife Resources Commission",
    "runs": [],
@@ -5127,25 +4986,11 @@
    "n": "Cold Mountain State Game Land",
    "t": "State Game Land",
    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Mountain/Cold-Mountain.pdf",
-   "checked": "2026-10-31",
+   "checked": "2026-10-29",
    "map": {
-    "url": "https://www.ncwildlife.gov/media/954/download?attachment",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "2025-08-13",
-    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-    "final": "https://www.ncwildlife.gov/media/954/download?attachment",
-    "posted": "Aug 19, 2025",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "NC Wildlife Resources Commission",
-    "date_given": null,
-    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Mountain/Cold-Mountain.pdf",
-    "map_page": 1
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "",
@@ -5184,7 +5029,8 @@
    "rules": {
     "url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "North Carolina Wildlife Resources Commission",
    "runs": [],
@@ -5205,7 +5051,8 @@
    "rules": {
     "url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "North Carolina Wildlife Resources Commission",
    "runs": [],
@@ -5253,7 +5100,8 @@
    "rules": {
     "url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "North Carolina Wildlife Resources Commission",
    "runs": [],
@@ -5265,25 +5113,11 @@
    "n": "Dan River State Game Land",
    "t": "State Game Land",
    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/Dan-River.pdf",
-   "checked": "2026-10-31",
+   "checked": "2026-10-29",
    "map": {
-    "url": "https://www.ncwildlife.gov/media/880/download?attachment",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "2023-09-08",
-    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-    "final": "https://www.ncwildlife.gov/media/880/download?attachment",
-    "posted": "Apr 18, 2024",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "NC Wildlife Resources Commission",
-    "date_given": 2023,
-    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/Dan-River.pdf",
-    "map_page": 1
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "",
@@ -5321,7 +5155,8 @@
    "rules": {
     "url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "North Carolina Wildlife Resources Commission",
    "runs": [],
@@ -5352,7 +5187,8 @@
    "rules": {
     "url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "North Carolina Wildlife Resources Commission",
    "runs": [],
@@ -5364,25 +5200,11 @@
    "n": "Dupont State Game Land",
    "t": "State Game Land",
    "page": "https://www.dupontforest.com/",
-   "checked": "2026-10-31",
+   "checked": "2026-10-29",
    "map": {
-    "url": "https://www.ncwildlife.gov/media/952/download?attachment",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "2025-08-12",
-    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-    "final": "https://www.ncwildlife.gov/media/952/download?attachment",
-    "posted": "Aug 19, 2025",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "NC Wildlife Resources Commission",
-    "date_given": null,
-    "page": "https://www.dupontforest.com/",
-    "map_page": 1
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "https://www.dupontforest.com/visit/know-before-you-go/",
@@ -5399,25 +5221,11 @@
    "n": "Elk Knob State Game Land",
    "t": "State Game Land",
    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Mountain/Elk-Knob.pdf",
-   "checked": "2026-10-31",
+   "checked": "2026-10-29",
    "map": {
-    "url": "https://www.ncwildlife.gov/media/950/download?attachment",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "2020-07-08",
-    "date_how": "file stamp 2020 (older than the posting 2024 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
-    "final": "https://www.ncwildlife.gov/media/950/download?attachment",
-    "posted": "Apr 19, 2024",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "NC Wildlife Resources Commission",
-    "date_given": null,
-    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Mountain/Elk-Knob.pdf",
-    "map_page": 1
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "",
@@ -5436,25 +5244,11 @@
    "n": "Embro State Game Land",
    "t": "State Game Land",
    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/Embro.pdf",
-   "checked": "2026-10-31",
+   "checked": "2026-10-29",
    "map": {
-    "url": "https://www.ncwildlife.gov/media/881/download?attachment",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "2026-05-20",
-    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-    "final": "https://www.ncwildlife.gov/media/881/download?attachment",
-    "posted": "May 22, 2026",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "NC Wildlife Resources Commission",
-    "date_given": null,
-    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/Embro.pdf",
-    "map_page": 1
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "",
@@ -5492,7 +5286,8 @@
    "rules": {
     "url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "North Carolina Wildlife Resources Commission",
    "runs": [],
@@ -5547,7 +5342,8 @@
    "rules": {
     "url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "North Carolina Wildlife Resources Commission",
    "runs": [],
@@ -5579,7 +5375,8 @@
    "rules": {
     "url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "North Carolina Wildlife Resources Commission",
    "runs": [],
@@ -5591,25 +5388,11 @@
    "n": "Harris State Game Land",
    "t": "State Game Land",
    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/Harris.pdf",
-   "checked": "2026-10-31",
+   "checked": "2026-10-29",
    "map": {
-    "url": "https://www.ncwildlife.gov/media/882/download?attachment",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "2023-12-19",
-    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-    "final": "https://www.ncwildlife.gov/media/882/download?attachment",
-    "posted": "Apr 18, 2024",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "NC Wildlife Resources Commission",
-    "date_given": null,
-    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/Harris.pdf",
-    "map_page": 1
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "",
@@ -5628,25 +5411,11 @@
    "n": "Headwaters State Game Land",
    "t": "State Game Land",
    "page": "https://www.ncforestservice.gov/headwaters/headwatersFAQ.htm",
-   "checked": "2026-10-31",
+   "checked": "2026-10-29",
    "map": {
-    "url": "https://www.ncwildlife.gov/media/949/download?attachment",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "2024-11-01",
-    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-    "final": "https://www.ncwildlife.gov/media/949/download?attachment",
-    "posted": "Nov 04, 2024",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "NC Wildlife Resources Commission",
-    "date_given": null,
-    "page": "https://www.ncforestservice.gov/headwaters/headwatersFAQ.htm",
-    "map_page": 1
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "",
@@ -5663,25 +5432,11 @@
    "n": "Hill Farm State Game Land",
    "t": "State Game Land",
    "page": "https://www.avenzamaps.com/maps/1186087/hill-farm-game-land",
-   "checked": "2026-10-31",
+   "checked": "2026-10-29",
    "map": {
-    "url": "https://www.ncwildlife.gov/media/884/download?attachment",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "2020-06-29",
-    "date_how": "file stamp 2020 (older than the posting 2024 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
-    "final": "https://www.ncwildlife.gov/media/884/download?attachment",
-    "posted": "Apr 18, 2024",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "NC Wildlife Resources Commission",
-    "date_given": null,
-    "page": "https://www.avenzamaps.com/maps/1186087/hill-farm-game-land",
-    "map_page": 1
+    "url": "",
+    "status": "no working map link (tried: opened, a page that does not name this park (a generic agency page is not its map) https://store.avenza.com/search)",
+    "how": "a link on the park's page ('Map Store')"
    },
    "rules": {
     "url": "",
@@ -5734,7 +5489,8 @@
    "rules": {
     "url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "North Carolina Wildlife Resources Commission",
    "runs": [],
@@ -5746,25 +5502,11 @@
    "n": "Hyco State Game Land",
    "t": "State Game Land",
    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/Hyco.pdf",
-   "checked": "2026-10-31",
+   "checked": "2026-10-29",
    "map": {
-    "url": "https://www.ncwildlife.gov/media/885/download?attachment",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "2025-03-14",
-    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-    "final": "https://www.ncwildlife.gov/media/885/download?attachment",
-    "posted": "Aug 19, 2025",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "NC Wildlife Resources Commission",
-    "date_given": null,
-    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/Hyco.pdf",
-    "map_page": 1
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "",
@@ -5803,7 +5545,8 @@
    "rules": {
     "url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "North Carolina Wildlife Resources Commission",
    "runs": [],
@@ -5815,25 +5558,11 @@
    "n": "Johns River State Game Land",
    "t": "State Game Land",
    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Mountain/Johns-River.pdf",
-   "checked": "2026-10-31",
+   "checked": "2026-10-29",
    "map": {
-    "url": "https://www.ncwildlife.gov/media/948/download?attachment",
-    "status": "ok",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-31",
-    "final": "https://www.ncwildlife.gov/media/948/download?attachment",
-    "posted": "Jul 22, 2026",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "NC Wildlife Resources Commission",
-    "date_given": null,
-    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Mountain/Johns-River.pdf",
-    "map_page": 1
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "",
@@ -5895,7 +5624,8 @@
    "rules": {
     "url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "North Carolina Wildlife Resources Commission",
    "runs": [],
@@ -5907,25 +5637,11 @@
    "n": "Kerr Scott State Game Land",
    "t": "State Game Land",
    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Mountain/Kerr-Scott.pdf",
-   "checked": "2026-10-31",
+   "checked": "2026-10-29",
    "map": {
-    "url": "https://www.ncwildlife.gov/media/947/download?attachment",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "2020-07-09",
-    "date_how": "file stamp 2020 (older than the posting 2024 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
-    "final": "https://www.ncwildlife.gov/media/947/download?attachment",
-    "posted": "Apr 19, 2024",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "NC Wildlife Resources Commission",
-    "date_given": null,
-    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Mountain/Kerr-Scott.pdf",
-    "map_page": 1
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "",
@@ -5964,7 +5680,8 @@
    "rules": {
     "url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "North Carolina Wildlife Resources Commission",
    "runs": [],
@@ -5999,25 +5716,11 @@
    "n": "Linwood State Game Land",
    "t": "State Game Land",
    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/Linwood.pdf",
-   "checked": "2026-10-31",
+   "checked": "2026-10-29",
    "map": {
-    "url": "https://www.ncwildlife.gov/media/887/download?attachment",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "2020-06-30",
-    "date_how": "file stamp 2020 (older than the posting 2024 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
-    "final": "https://www.ncwildlife.gov/media/887/download?attachment",
-    "posted": "Apr 18, 2024",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "NC Wildlife Resources Commission",
-    "date_given": null,
-    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/Linwood.pdf",
-    "map_page": 1
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "",
@@ -6036,25 +5739,11 @@
    "n": "Lower Fishing Creek State Game Land",
    "t": "State Game Land",
    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/Lower-Fishing-Creek.pdf",
-   "checked": "2026-10-31",
+   "checked": "2026-10-29",
    "map": {
-    "url": "https://www.ncwildlife.gov/media/889/download?attachment",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "2020-06-30",
-    "date_how": "file stamp 2020 (older than the posting 2024 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
-    "final": "https://www.ncwildlife.gov/media/889/download?attachment",
-    "posted": "Apr 18, 2024",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "NC Wildlife Resources Commission",
-    "date_given": null,
-    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/Lower-Fishing-Creek.pdf",
-    "map_page": 1
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "",
@@ -6093,7 +5782,8 @@
    "rules": {
     "url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "North Carolina Wildlife Resources Commission",
    "runs": [],
@@ -6105,25 +5795,11 @@
    "n": "Mayo State Game Land",
    "t": "State Game Land",
    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/Mayo.pdf",
-   "checked": "2026-10-31",
+   "checked": "2026-10-29",
    "map": {
-    "url": "https://www.ncwildlife.gov/media/890/download?attachment",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "2022-07-19",
-    "date_how": "file stamp 2022 (older than the posting 2024 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
-    "final": "https://www.ncwildlife.gov/media/890/download?attachment",
-    "posted": "Apr 18, 2024",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "NC Wildlife Resources Commission",
-    "date_given": null,
-    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/Mayo.pdf",
-    "map_page": 1
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "",
@@ -6161,7 +5837,8 @@
    "rules": {
     "url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "North Carolina Wildlife Resources Commission",
    "runs": [],
@@ -6204,25 +5881,11 @@
    "n": "Needmore State Game Land",
    "t": "State Game Land",
    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Mountain/Needmore.pdf",
-   "checked": "2026-10-31",
+   "checked": "2026-10-29",
    "map": {
-    "url": "https://www.ncwildlife.gov/media/942/download?attachment",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "2024-12-02",
-    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-    "final": "https://www.ncwildlife.gov/media/942/download?attachment",
-    "posted": "Dec 03, 2024",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "NC Wildlife Resources Commission",
-    "date_given": 2024,
-    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Mountain/Needmore.pdf",
-    "map_page": 1
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "",
@@ -6260,7 +5923,8 @@
    "rules": {
     "url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "North Carolina Wildlife Resources Commission",
    "runs": [],
@@ -6292,7 +5956,8 @@
    "rules": {
     "url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "North Carolina Wildlife Resources Commission",
    "runs": [],
@@ -6304,25 +5969,11 @@
    "n": "Nicholson Creek State Game Land",
    "t": "State Game Land",
    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/Nicholson-Creek.pdf",
-   "checked": "2026-10-31",
+   "checked": "2026-10-29",
    "map": {
-    "url": "https://www.ncwildlife.gov/media/891/download?attachment",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "2020-07-24",
-    "date_how": "file stamp 2020 (older than the posting 2024 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
-    "final": "https://www.ncwildlife.gov/media/891/download?attachment",
-    "posted": "Apr 18, 2024",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "NC Wildlife Resources Commission",
-    "date_given": null,
-    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/Nicholson-Creek.pdf",
-    "map_page": 1
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "",
@@ -6361,7 +6012,8 @@
    "rules": {
     "url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "North Carolina Wildlife Resources Commission",
    "runs": [],
@@ -6393,7 +6045,8 @@
    "rules": {
     "url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "North Carolina Wildlife Resources Commission",
    "runs": [],
@@ -6426,25 +6079,11 @@
    "n": "Perkins State Game Land",
    "t": "State Game Land",
    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/Perkins.pdf",
-   "checked": "2026-10-31",
+   "checked": "2026-10-29",
    "map": {
-    "url": "https://www.ncwildlife.gov/media/892/download?attachment",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "2022-01-24",
-    "date_how": "file stamp 2022 (older than the posting 2024 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
-    "final": "https://www.ncwildlife.gov/media/892/download?attachment",
-    "posted": "Apr 18, 2024",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "NC Wildlife Resources Commission",
-    "date_given": null,
-    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/Perkins.pdf",
-    "map_page": 1
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "",
@@ -6509,25 +6148,11 @@
    "n": "Pond Mountain State Game Land",
    "t": "State Game Land",
    "page": "https://blueridgeconservancy.org/pond-mountain-game-lands-1/",
-   "checked": "2026-10-31",
+   "checked": "2026-10-29",
    "map": {
-    "url": "https://www.ncwildlife.gov/media/941/download?attachment",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "2026-01-13",
-    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-    "final": "https://www.ncwildlife.gov/media/941/download?attachment",
-    "posted": "Jan 13, 2026",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "NC Wildlife Resources Commission",
-    "date_given": null,
-    "page": "https://blueridgeconservancy.org/pond-mountain-game-lands-1/",
-    "map_page": 1
+    "url": "",
+    "status": "no working map link (tried: HTTP 404 http://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Mountain/Po)",
+    "how": "a link on the park's page ('http://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Mountain/Pond-Mountai')"
    },
    "rules": {
     "url": "",
@@ -6579,7 +6204,8 @@
    "rules": {
     "url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "North Carolina Wildlife Resources Commission",
    "runs": [],
@@ -6591,25 +6217,11 @@
    "n": "R Wayne Bailey-Caswell State Game Land",
    "t": "State Game Land",
    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/R-Wayne-Bailey.pdf",
-   "checked": "2026-10-31",
+   "checked": "2026-10-29",
    "map": {
-    "url": "https://www.ncwildlife.gov/media/894/download?attachment",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "2025-04-14",
-    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-    "final": "https://www.ncwildlife.gov/media/894/download?attachment",
-    "posted": "Apr 14, 2025",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "NC Wildlife Resources Commission",
-    "date_given": null,
-    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/R-Wayne-Bailey.pdf",
-    "map_page": 1
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "",
@@ -6637,7 +6249,8 @@
    "rules": {
     "url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "North Carolina Wildlife Resources Commission",
    "runs": [],
@@ -6669,7 +6282,8 @@
    "rules": {
     "url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "North Carolina Wildlife Resources Commission",
    "runs": [],
@@ -6700,7 +6314,8 @@
    "rules": {
     "url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "North Carolina Wildlife Resources Commission",
    "runs": [],
@@ -6731,7 +6346,8 @@
    "rules": {
     "url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "North Carolina Wildlife Resources Commission",
    "runs": [],
@@ -6762,7 +6378,8 @@
    "rules": {
     "url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "North Carolina Wildlife Resources Commission",
    "runs": [],
@@ -6774,25 +6391,11 @@
    "n": "Sandhills State Game Land",
    "t": "State Game Land",
    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/Sandhills.pdf",
-   "checked": "2026-10-31",
+   "checked": "2026-10-29",
    "map": {
-    "url": "https://www.ncwildlife.gov/media/901/download?attachment",
-    "status": "ok",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-31",
-    "final": "https://www.ncwildlife.gov/media/901/download?attachment",
-    "posted": "Sep 10, 2026",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "NC Wildlife Resources Commission",
-    "date_given": null,
-    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/Sandhills.pdf",
-    "map_page": 1
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "",
@@ -6811,25 +6414,11 @@
    "n": "Sandy Creek State Game Land",
    "t": "State Game Land",
    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/Sandy-Creek.pdf",
-   "checked": "2026-10-31",
+   "checked": "2026-10-29",
    "map": {
-    "url": "https://www.ncwildlife.gov/media/896/download?attachment",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "2026-09-04",
-    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-    "final": "https://www.ncwildlife.gov/media/896/download?attachment",
-    "posted": "Sep 10, 2026",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "NC Wildlife Resources Commission",
-    "date_given": null,
-    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/Sandy-Creek.pdf",
-    "map_page": 1
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "",
@@ -6848,25 +6437,11 @@
    "n": "Sandy Mush State Game Land",
    "t": "State Game Land",
    "page": "https://www.ncwildlife.org/Portals/0/Hunting/GameLand-Plans/Sandy-Mush-GLMP.pdf",
-   "checked": "2026-10-31",
+   "checked": "2026-10-29",
    "map": {
-    "url": "https://www.ncwildlife.gov/media/939/download?attachment",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "2025-08-13",
-    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-    "final": "https://www.ncwildlife.gov/media/939/download?attachment",
-    "posted": "Aug 19, 2025",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "NC Wildlife Resources Commission",
-    "date_given": null,
-    "page": "https://www.ncwildlife.org/Portals/0/Hunting/GameLand-Plans/Sandy-Mush-GLMP.pdf",
-    "map_page": 1
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "",
@@ -6885,25 +6460,11 @@
    "n": "Second Creek State Game Land",
    "t": "State Game Land",
    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/Second-Creek.pdf",
-   "checked": "2026-10-31",
+   "checked": "2026-10-29",
    "map": {
-    "url": "https://www.ncwildlife.gov/media/897/download?attachment",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "2020-06-30",
-    "date_how": "file stamp 2020 (older than the posting 2024 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
-    "final": "https://www.ncwildlife.gov/media/897/download?attachment",
-    "posted": "Apr 18, 2024",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "NC Wildlife Resources Commission",
-    "date_given": null,
-    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/Second-Creek.pdf",
-    "map_page": 1
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "",
@@ -6922,25 +6483,11 @@
    "n": "Shocco Creek State Game Land",
    "t": "State Game Land",
    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/Shocco-Creek.pdf",
-   "checked": "2026-10-31",
+   "checked": "2026-10-29",
    "map": {
-    "url": "https://www.ncwildlife.gov/media/898/download?attachment",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "2026-08-24",
-    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-    "final": "https://www.ncwildlife.gov/media/898/download?attachment",
-    "posted": "Sep 10, 2026",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "NC Wildlife Resources Commission",
-    "date_given": null,
-    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/Shocco-Creek.pdf",
-    "map_page": 1
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "",
@@ -7002,7 +6549,8 @@
    "rules": {
     "url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "North Carolina Wildlife Resources Commission",
    "runs": [],
@@ -7034,7 +6582,8 @@
    "rules": {
     "url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "North Carolina Wildlife Resources Commission",
    "runs": [],
@@ -7066,7 +6615,8 @@
    "rules": {
     "url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "North Carolina Wildlife Resources Commission",
    "runs": [],
@@ -7078,25 +6628,11 @@
    "n": "Tar River State Game Land",
    "t": "State Game Land",
    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/Tar-River.pdf",
-   "checked": "2026-10-31",
+   "checked": "2026-10-29",
    "map": {
-    "url": "https://www.ncwildlife.gov/media/899/download?attachment",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "2022-07-21",
-    "date_how": "file stamp 2022 (older than the posting 2024 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
-    "final": "https://www.ncwildlife.gov/media/899/download?attachment",
-    "posted": "Apr 18, 2024",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "NC Wildlife Resources Commission",
-    "date_given": null,
-    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/Tar-River.pdf",
-    "map_page": 1
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "",
@@ -7135,7 +6671,8 @@
    "rules": {
     "url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "North Carolina Wildlife Resources Commission",
    "runs": [],
@@ -7147,30 +6684,17 @@
    "n": "Thurmond Chatham State Game Land",
    "t": "State Game Land",
    "page": "https://www.ncwildlife.gov/hunting/where-hunt-and-shoot/game-lands",
-   "checked": "2026-10-31",
+   "checked": "2026-10-29",
    "map": {
-    "url": "https://www.ncwildlife.gov/media/937/download?attachment",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "2025-05-06",
-    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-    "final": "https://www.ncwildlife.gov/media/937/download?attachment",
-    "posted": "May 06, 2025",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "NC Wildlife Resources Commission",
-    "date_given": null,
-    "page": "https://www.ncwildlife.gov/hunting/where-hunt-and-shoot/game-lands",
-    "map_page": 1
+    "url": "",
+    "status": "no working map link (tried: HTTP 404 https://www.ncwildlife.gov/hunting/where-hunt-and-shoot/game-lands)",
+    "how": "on file (parkinfo-web / Kentucky answer key)"
    },
    "rules": {
     "url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "North Carolina Wildlife Resources Commission",
    "runs": [],
@@ -7200,25 +6724,11 @@
    "n": "Tillery State Game Land",
    "t": "State Game Land",
    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/Tillery.pdf",
-   "checked": "2026-10-31",
+   "checked": "2026-10-29",
    "map": {
-    "url": "https://www.ncwildlife.gov/media/900/download?attachment",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "2026-05-19",
-    "date_how": "the PDF file's own stamp (may be the print date, weaker than a printed date)",
-    "final": "https://www.ncwildlife.gov/media/900/download?attachment",
-    "posted": "May 22, 2026",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "NC Wildlife Resources Commission",
-    "date_given": null,
-    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/Tillery.pdf",
-    "map_page": 1
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "",
@@ -7237,25 +6747,11 @@
    "n": "Toxaway State Game Land",
    "t": "State Game Land",
    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Mountain/Toxaway.pdf",
-   "checked": "2026-10-31",
+   "checked": "2026-10-29",
    "map": {
-    "url": "https://www.ncwildlife.gov/media/936/download?attachment",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "2021-08-19",
-    "date_how": "file stamp 2021 (older than the posting 2024 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
-    "final": "https://www.ncwildlife.gov/media/936/download?attachment",
-    "posted": "Apr 19, 2024",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "NC Wildlife Resources Commission",
-    "date_given": null,
-    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Mountain/Toxaway.pdf",
-    "map_page": 1
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "",
@@ -7274,25 +6770,11 @@
    "n": "Upper Roanoke River State Game Land",
    "t": "State Game Land",
    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/Upper-Roanoke-River.pdf",
-   "checked": "2026-10-31",
+   "checked": "2026-10-29",
    "map": {
-    "url": "https://www.ncwildlife.gov/media/904/download?attachment",
-    "status": "ok",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-31",
-    "final": "https://www.ncwildlife.gov/media/904/download?attachment",
-    "posted": "May 22, 2026",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "NC Wildlife Resources Commission",
-    "date_given": null,
-    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/Upper-Roanoke-River.pdf",
-    "map_page": 1
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "",
@@ -7311,25 +6793,11 @@
    "n": "Uwharrie State Game Land",
    "t": "State Game Land",
    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/Uwharrie.pdf",
-   "checked": "2026-10-31",
+   "checked": "2026-10-29",
    "map": {
-    "url": "https://www.ncwildlife.gov/media/902/download?attachment",
-    "status": "ok",
-    "kind": "pdf",
-    "date": null,
-    "date_how": "date unknown, checked 2026-10-31",
-    "final": "https://www.ncwildlife.gov/media/902/download?attachment",
-    "posted": "Feb 27, 2026",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "NC Wildlife Resources Commission",
-    "date_given": null,
-    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Piedmont/Uwharrie.pdf",
-    "map_page": 1
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "",
@@ -7390,7 +6858,8 @@
    "rules": {
     "url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "North Carolina Wildlife Resources Commission",
    "runs": [],
@@ -7422,7 +6891,8 @@
    "rules": {
     "url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "North Carolina Wildlife Resources Commission",
    "runs": [],
@@ -7453,7 +6923,8 @@
    "rules": {
     "url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands",
     "how": "the agency-wide rules page (chat 8 survey)",
-    "status": "did not open"
+    "status": "did not open",
+    "rules_scope": "agency"
    },
    "agency": "North Carolina Wildlife Resources Commission",
    "runs": [],
@@ -7465,25 +6936,11 @@
    "n": "William H Silver State Game Land",
    "t": "State Game Land",
    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Mountain/William-H-Silver.pdf",
-   "checked": "2026-10-31",
+   "checked": "2026-10-29",
    "map": {
-    "url": "https://www.ncwildlife.gov/media/934/download?attachment",
-    "status": "ok",
-    "kind": "pdf",
-    "date": "2021-02-24",
-    "date_how": "file stamp 2021 (older than the posting 2024 by more than a year: a re-posted old map, this map may be old; chat 8 F5)",
-    "final": "https://www.ncwildlife.gov/media/934/download?attachment",
-    "posted": "Apr 19, 2024",
-    "checked": "2026-10-31",
-    "covers": 0,
-    "names_park": true,
-    "posted_how": "posted: the server's file date",
-    "how": "Brandon's outside research Oct 31 (docs-found-us-oct31.json): link opened + names the park",
-    "via": "outside research",
-    "agency_given": "NC Wildlife Resources Commission",
-    "date_given": null,
-    "page": "https://www.ncwildlife.org/Portals/0/Hunting/Game-Land-Maps/Mountain/William-H-Silver.pdf",
-    "map_page": 1
+    "url": "",
+    "status": "no map link on file and none on the park page",
+    "how": ""
    },
    "rules": {
     "url": "",
@@ -7521,7 +6978,7 @@
    ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
    "ver": 7,
-   "browser_checked": "2026-11-02"
+   "browser_checked": "2026-11-17"
   },
   "US-8006": {
    "n": "Rachel Carson State Reserve",
@@ -7845,21 +7302,21 @@
    "ver": 7
   }
  },
- "read": "2026-11-03",
+ "read": "2026-11-17",
  "counts": {
   "parks": 253,
-  "map ok": 154,
-  "map found by the bot": 113,
-  "date on the map": 110,
-  "posted date only": 35,
+  "map ok": 112,
+  "map found by the bot": 71,
+  "date on the map": 76,
+  "posted date only": 27,
   "date unknown": 9,
-  "no map": 99,
+  "no map": 141,
   "rules ok": 55,
-  "needs browser": 0,
+  "needs browser": 1,
   "handover hints": 0,
   "runs hints": 5,
   "host resting / robots": 0,
-  "map names the park": 149,
+  "map names the park": 108,
   "region overview only": 0
  }
 }
