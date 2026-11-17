@@ -1938,6 +1938,15 @@
    "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Wild_River_Corridors_WGS84WM/MapServer/0; read 2026-11-12"
   },
   {
+   "Park number (if matched)": "US-4553",
+   "Park name (as the agency writes it)": "Río Grande del Norte National Monument",
+   "Size": 311028,
+   "Unit": "acres",
+   "Agency": "BLM national monuments / conservation areas",
+   "Source page": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0/query?where=OBJECTID%3D21349&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0; read 2026-11-17"
+  },
+  {
    "Park number (if matched)": "US-3616",
    "Park name (as the agency writes it)": "Dudley Farm Historic State Park",
    "Size": 333,
@@ -2405,6 +2414,16 @@
    "Retry?": "NO"
   },
   {
+   "Host": "gis.blm.gov",
+   "Agency/area": "BLM national monuments / conservation areas",
+   "Kind": "GIS layer",
+   "Example URL": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0",
+   "# times used": 1,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
    "Host": "dnr.geodata.md.gov",
    "Agency/area": "Maryland DNR (Maryland Natural Areas) (preserve, state GIS table)",
    "Kind": "GIS layer",
@@ -2462,16 +2481,6 @@
    "# times used": 0,
    "Status": "BLOCKED",
    "Detail": "blocked (host resting: 3 strikes)",
-   "Retry?": "YES"
-  },
-  {
-   "Host": "gis.blm.gov",
-   "Agency/area": null,
-   "Kind": "GIS layer",
-   "Example URL": null,
-   "# times used": 0,
-   "Status": "BLOCKED",
-   "Detail": "token-only (needs sign-in)",
    "Retry?": "YES"
   },
   {
