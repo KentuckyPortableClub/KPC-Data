@@ -19,7 +19,11 @@ def load(p, d=None):
 def verdict_rows():
     """One dict per line of verdicts.jsonl (or verdicts.jsonl.gz). The change log only: a line is
     written when a file's verdict changes, so a later PASS can be missing if that write did not land."""
-    return list(iter_jsonl_any(W / 'verdicts.jsonl'))
+    rows = list(iter_jsonl_any(W / 'verdicts.jsonl'))   # the history up to Nov 17 (one file)
+    for p in sorted((W / 'verdicts-log').glob('*.jsonl*')) if (W / 'verdicts-log').is_dir() else []:   # Nov 17 (storage): one small file a day since
+        try: rows += list(iter_jsonl_any(p.with_name(p.name[:-3]) if p.name.endswith('.gz') else p))
+        except (OSError, ValueError): pass
+    return rows
 
 
 def current_verdicts():

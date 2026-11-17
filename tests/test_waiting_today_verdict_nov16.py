@@ -106,7 +106,8 @@ lastv3 = {'data/wwff/D4FF.json': json.dumps({'kind': 'wwff', 'notes': [], 'path'
 wrote3 = WR3.record_verdict_change(lastv3, row, '2026-11-16T22:00Z')
 # the log should now end with PASS (plain or gz)
 from kpc_json_any import iter_jsonl_any
-log = [r for r in iter_jsonl_any(w3 / 'verdicts.jsonl') if r.get('path') == 'data/wwff/D4FF.json']
+# Nov 17 (storage): new change-log lines go to one small file a day (verdicts-log/), the old single log stays as history
+log = [r for q in [w3 / 'verdicts.jsonl'] + sorted(pathlib.Path(str(x)[:-3]) if str(x).endswith('.gz') else x for x in (w3 / 'verdicts-log').glob('*.jsonl*')) for r in iter_jsonl_any(q) if r.get('path') == 'data/wwff/D4FF.json']
 check(wrote3 is True and json.loads(lastv3['data/wwff/D4FF.json'])['verdict'] == 'PASS'
       and log and log[-1].get('verdict') == 'PASS' and log[-1].get('date') == '2026-11-16T22:00Z',
       f'a later PASS is appended to the change log and remembered ({log[-1] if log else None})')
