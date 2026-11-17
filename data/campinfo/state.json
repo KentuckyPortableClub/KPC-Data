@@ -806,6 +806,7 @@
    "checked": 199,
    "counts": {
     "camps": 199,
+    "kept_after_failed_read": 3,
     "needs_browser": 0,
     "needs_key": 84,
     "no_page": 0,
@@ -821,7 +822,7 @@
    },
    "left": 0,
    "status": "done",
-   "updated": "2026-11-10"
+   "updated": "2026-11-17"
   },
   "US-OR": {
    "camps": 504,
@@ -1173,7 +1174,7 @@
   "US-NV": "FCC listAsOfDates: robots.txt says no",
   "US-NY": "FCC listAsOfDates: robots.txt says no",
   "US-OH": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
-  "US-OK": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)",
+  "US-OK": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-OR": "FCC listAsOfDates: robots.txt says no",
   "US-PA": "FCC listAsOfDates: robots.txt says no",
   "US-RI": "FCC listAsOfDates: robots.txt says no",
@@ -1518,10 +1519,10 @@
    "cell": {
     "carriers": null,
     "files": [],
-    "src": null,
-    "status": "FCC listAsOfDates: host resting (robots.txt could not be read: next run)"
+    "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2026-06-30?category=State&subcategory=Mobile%20Broadband",
+    "status": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
    },
-   "read": "2026-11-10"
+   "read": "2026-11-17"
   },
   "US-OR": {
    "cell": {
@@ -2615,41 +2616,30 @@
  },
  "last": {
   "areas": [
-   "US-NE"
+   "US-OK"
   ],
   "fcc_token": true,
   "manners": {
    "errors": 0,
-   "for_person": 2,
-   "for_person_urls": [
-    [
-     "https://outdoornebraska.gov/parks/",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://outdoornebraska.gov/parks/",
-     "HTTP 403 twice"
-    ]
-   ],
+   "for_person_urls": [],
    "host_rule": 0,
-   "requests": 13,
-   "rested": 427,
-   "retry403": 2,
+   "requests": 73,
+   "rested": 204,
    "robots": 0,
-   "strikes": 4
+   "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "camps": 236,
+   "camps": 201,
    "elevations": 0,
    "errors": 0,
-   "needs_browser": 3,
-   "needs_key": 11,
-   "no_page": 6,
-   "not_official": 23,
-   "ok": 3,
-   "pages_read": 4,
-   "resting": 191,
+   "needs_browser": 0,
+   "needs_key": 85,
+   "no_page": 4,
+   "not_official": 70,
+   "ok": 34,
+   "pages_read": 62,
+   "resting": 3,
    "ridb_calls": 0,
    "robots": 0,
    "skipped_fresh": 0
