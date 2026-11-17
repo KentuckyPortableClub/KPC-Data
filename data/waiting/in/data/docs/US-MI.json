@@ -717,6 +717,7 @@
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
+    "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin",
     "browser: Page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigatin"
    ],
    "needs_browser": "the page refused a plain reader (HTTP 403)",
@@ -743,7 +744,7 @@
     "agency_given": "USDA Forest Service",
     "date_given": null,
     "page": "https://www.fs.usda.gov/r09/ottawa/recreation/lake-ottawa-recreation-area",
-    "kind_note": "forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only"
+    "kind_note": "forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r09/ottawa",
@@ -775,7 +776,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only"
+    "kind_note": "forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r09/hiawatha",
@@ -871,6 +872,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
@@ -992,17 +994,9 @@
    "page": "https://www.michigan.gov/dnr/managing-resources/prd/flint",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://www.michigan.gov/dnr/managing-resources/public-land/boundaries",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "the page in a browser ('Project Boundary Maps')",
-    "page": "https://www.michigan.gov/dnr/managing-resources/prd/flint",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-10-31",
-    "via": "the agency site"
+    "url": "",
+    "status": "no map (one file shared by 7 parks was dropped: https://www.michigan.gov/dnr/managing-resources/public-land/boundaries)",
+    "how": "the page in a browser ('Project Boundary Maps')"
    },
    "rules": {
     "url": "",
@@ -1082,6 +1076,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
@@ -1627,6 +1622,7 @@
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to "
    ],
    "needs_browser": "host on the browser list",
@@ -1651,6 +1647,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
@@ -1711,7 +1708,8 @@
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to "
    ],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-17"
   },
   "US-6780": {
    "n": "Schoonover Waterfowl National Wildlife Management Area",
@@ -1747,7 +1745,8 @@
    "handover": [],
    "notes": [],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-17"
   },
   "US-6796": {
    "n": "Tobico Marsh Wildlife Management Area",
@@ -1782,7 +1781,9 @@
    "agency": "",
    "runs": [],
    "handover": [],
-   "notes": [],
+   "notes": [
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to "
+   ],
    "needs_browser": "host on the browser list",
    "ver": 7
   },
@@ -5435,7 +5436,7 @@
     "posted_how": "page last updated (the page's own line, not the map's date; chat 8 F4)",
     "checked": "2026-10-31",
     "via": "the agency site",
-    "kind_note": "forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only"
+    "kind_note": "forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r09/hiawatha",
@@ -5502,7 +5503,7 @@
     "agency_given": "USDA Forest Service",
     "date_given": null,
     "page": "https://www.fs.usda.gov/r09/ottawa",
-    "kind_note": "forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only"
+    "kind_note": "forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only; forest map only"
    },
    "rules": {
     "url": "https://www.fs.usda.gov/r09/ottawa",
@@ -6241,7 +6242,8 @@
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to "
    ],
    "needs_browser": "host on the browser list",
-   "ver": 7
+   "ver": 7,
+   "browser_checked": "2026-11-17"
   },
   "US-6632": {
    "n": "Bluff Creek / US-10 / M-18 Floodings Wildlife Management Area",
@@ -9471,6 +9473,7 @@
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to "
    ],
    "needs_browser": "host on the browser list",
@@ -9546,6 +9549,7 @@
    "runs": [],
    "handover": [],
    "notes": [
+    "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
     "browser: Page.goto: Download is starting\nCall log:\n  - navigating to ",
@@ -11832,17 +11836,9 @@
    "page": "https://www.michigan.gov/dnr/managing-resources/fisheries/hatcheries/harrietta",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://www.michigan.gov/dnr/managing-resources/public-land/boundaries",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "the page in a browser ('Project Boundary Maps')",
-    "page": "https://www.michigan.gov/dnr/managing-resources/fisheries/hatcheries/harrietta",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-10-31",
-    "via": "the agency site"
+    "url": "",
+    "status": "no map (one file shared by 7 parks was dropped: https://www.michigan.gov/dnr/managing-resources/public-land/boundaries)",
+    "how": "the page in a browser ('Project Boundary Maps')"
    },
    "rules": {
     "url": "",
@@ -11863,17 +11859,9 @@
    "page": "https://www.michigan.gov/dnr/managing-resources/fisheries/hatcheries/marquette",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://www.michigan.gov/dnr/managing-resources/public-land/boundaries",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "the page in a browser ('Project Boundary Maps')",
-    "page": "https://www.michigan.gov/dnr/managing-resources/fisheries/hatcheries/marquette",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-10-31",
-    "via": "the agency site"
+    "url": "",
+    "status": "no map (one file shared by 7 parks was dropped: https://www.michigan.gov/dnr/managing-resources/public-land/boundaries)",
+    "how": "the page in a browser ('Project Boundary Maps')"
    },
    "rules": {
     "url": "",
@@ -11894,17 +11882,9 @@
    "page": "https://www.michigan.gov/dnr/managing-resources/fisheries/hatcheries/oden",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://www.michigan.gov/dnr/managing-resources/public-land/boundaries",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "the page in a browser ('Project Boundary Maps')",
-    "page": "https://www.michigan.gov/dnr/managing-resources/fisheries/hatcheries/oden",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-10-31",
-    "via": "the agency site"
+    "url": "",
+    "status": "no map (one file shared by 7 parks was dropped: https://www.michigan.gov/dnr/managing-resources/public-land/boundaries)",
+    "how": "the page in a browser ('Project Boundary Maps')"
    },
    "rules": {
     "url": "",
@@ -11925,17 +11905,9 @@
    "page": "https://www.michigan.gov/dnr/managing-resources/fisheries/hatcheries/platte",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://www.michigan.gov/dnr/managing-resources/public-land/boundaries",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "the page in a browser ('Project Boundary Maps')",
-    "page": "https://www.michigan.gov/dnr/managing-resources/fisheries/hatcheries/platte",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-10-31",
-    "via": "the agency site"
+    "url": "",
+    "status": "no map (one file shared by 7 parks was dropped: https://www.michigan.gov/dnr/managing-resources/public-land/boundaries)",
+    "how": "the page in a browser ('Project Boundary Maps')"
    },
    "rules": {
     "url": "",
@@ -11956,17 +11928,9 @@
    "page": "https://www.michigan.gov/dnr/managing-resources/fisheries/hatcheries/thompson",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://www.michigan.gov/dnr/managing-resources/public-land/boundaries",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "the page in a browser ('Project Boundary Maps')",
-    "page": "https://www.michigan.gov/dnr/managing-resources/fisheries/hatcheries/thompson",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-10-31",
-    "via": "the agency site"
+    "url": "",
+    "status": "no map (one file shared by 7 parks was dropped: https://www.michigan.gov/dnr/managing-resources/public-land/boundaries)",
+    "how": "the page in a browser ('Project Boundary Maps')"
    },
    "rules": {
     "url": "",
@@ -11987,17 +11951,9 @@
    "page": "https://www.michigan.gov/dnr/managing-resources/fisheries/hatcheries/wolf-lake",
    "checked": "2026-10-31",
    "map": {
-    "url": "https://www.michigan.gov/dnr/managing-resources/public-land/boundaries",
-    "status": "HTTP 403",
-    "kind": "",
-    "date": null,
-    "date_how": "",
-    "how": "the page in a browser ('Project Boundary Maps')",
-    "page": "https://www.michigan.gov/dnr/managing-resources/fisheries/hatcheries/wolf-lake",
-    "posted": "",
-    "posted_how": "",
-    "checked": "2026-10-31",
-    "via": "the agency site"
+    "url": "",
+    "status": "no map (one file shared by 7 parks was dropped: https://www.michigan.gov/dnr/managing-resources/public-land/boundaries)",
+    "how": "the page in a browser ('Project Boundary Maps')"
    },
    "rules": {
     "url": "",
@@ -12161,7 +12117,7 @@
    "ver": 7
   }
  },
- "read": "2026-11-03",
+ "read": "2026-11-17",
  "counts": {
   "parks": 388,
   "map ok": 207,
@@ -12171,7 +12127,7 @@
   "date unknown": 11,
   "no map": 181,
   "rules ok": 26,
-  "needs browser": 254,
+  "needs browser": 251,
   "handover hints": 0,
   "runs hints": 3,
   "host resting / robots": 0,

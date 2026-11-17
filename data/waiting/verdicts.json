@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-17T11:59Z",
+ "checked": "2026-11-17T12:17Z",
  "switched_on": false,
  "results": [
   {
@@ -451,11 +451,9 @@
   {
    "path": "data/campinfo/US-WI.json",
    "kind": "campinfo",
-   "why": [
-    "F-I6 campgrounds with source-lined facts 12 -> 4 (more than 30% lost: a blocked read emptied them?)"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD"
+   "verdict": "PASS"
   },
   {
    "path": "data/campinfo/US-WV.json",
@@ -3995,13 +3993,6 @@
    "verdict": "HOLD"
   },
   {
-   "path": "data/wwff/D4FF.json",
-   "kind": "wwff",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
    "path": "data/wwff/DLFF.json",
    "kind": "wwff",
    "why": [],
@@ -4016,35 +4007,7 @@
    "verdict": "PASS"
   },
   {
-   "path": "data/wwff/KFF.json",
-   "kind": "wwff",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
    "path": "data/wwff/OAFF.json",
-   "kind": "wwff",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/wwff/ONFF.json",
-   "kind": "wwff",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/wwff/PYFF.json",
-   "kind": "wwff",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS"
-  },
-  {
-   "path": "data/wwff/VEFF.json",
    "kind": "wwff",
    "why": [],
    "notes": [],

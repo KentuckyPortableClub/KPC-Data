@@ -12,7 +12,7 @@
    "parks": 460,
    "checked": 460,
    "left": 0,
-   "updated": "2026-11-03"
+   "updated": "2026-11-17"
   },
   "US-KY": {
    "status": "done",
@@ -26,21 +26,21 @@
    "parks": 277,
    "checked": 277,
    "left": 0,
-   "updated": "2026-11-03"
+   "updated": "2026-11-17"
   },
   "US-NC": {
    "status": "done",
    "parks": 253,
    "checked": 253,
    "left": 0,
-   "updated": "2026-11-17"
+   "updated": "2026-11-03"
   },
   "US-VA": {
    "status": "done",
    "parks": 184,
    "checked": 184,
    "left": 0,
-   "updated": "2026-11-03"
+   "updated": "2026-11-17"
   },
   "US-WV": {
    "status": "done",
@@ -51,16 +51,17 @@
   },
   "US-GA": {
    "status": "done",
-   "parks": 237,
-   "checked": 237,
+   "parks": 238,
+   "checked": 238,
    "left": 0,
-   "updated": "2026-11-03"
+   "updated": "2026-11-17"
   },
   "US-AL": {
-   "status": "failed",
+   "status": "done",
    "parks": 155,
-   "updated": "2026-11-17",
-   "why": "maps 82 -> 57"
+   "checked": 155,
+   "left": 0,
+   "updated": "2026-11-03"
   },
   "US-SC": {
    "status": "done",
@@ -70,17 +71,17 @@
    "updated": "2026-11-03"
   },
   "US-MS": {
-   "status": "done",
+   "status": "failed",
    "parks": 155,
-   "checked": 155,
-   "left": 0,
-   "updated": "2026-11-17"
+   "updated": "2026-11-03",
+   "why": "maps 33 -> 24"
   },
   "US-IN": {
-   "status": "failed",
+   "status": "done",
    "parks": 229,
-   "updated": "2026-11-17",
-   "why": "maps 22 -> 12"
+   "checked": 229,
+   "left": 0,
+   "updated": "2026-11-03"
   },
   "US-IL": {
    "status": "done",
@@ -106,8 +107,8 @@
   "US-IA": {
    "status": "failed",
    "parks": 181,
-   "updated": "2026-11-17",
-   "why": "maps 82 -> 7"
+   "updated": "2026-11-03",
+   "why": "maps 82 -> 64"
   },
   "US-ND": {
    "status": "done",
@@ -149,7 +150,7 @@
    "parks": 157,
    "checked": 157,
    "left": 0,
-   "updated": "2026-11-17"
+   "updated": "2026-11-03"
   },
   "US-RI": {
    "status": "done",
@@ -159,10 +160,11 @@
    "updated": "2026-11-03"
   },
   "US-MA": {
-   "status": "failed",
+   "status": "done",
    "parks": 421,
-   "updated": "2026-11-17",
-   "why": "maps 116 -> 18"
+   "checked": 421,
+   "left": 0,
+   "updated": "2026-11-03"
   },
   "US-VT": {
    "status": "done",
@@ -218,20 +220,21 @@
    "parks": 123,
    "checked": 123,
    "left": 0,
-   "updated": "2026-11-03"
+   "updated": "2026-11-17"
   },
   "US-OK": {
-   "status": "failed",
+   "status": "done",
    "parks": 205,
-   "updated": "2026-11-17",
-   "why": "maps 97 -> 8"
+   "checked": 205,
+   "left": 0,
+   "updated": "2026-11-03"
   },
   "US-TX": {
    "status": "done",
    "parks": 222,
    "checked": 222,
    "left": 0,
-   "updated": "2026-11-03"
+   "updated": "2026-11-17"
   },
   "US-KS": {
    "status": "done",
@@ -245,7 +248,7 @@
    "parks": 201,
    "checked": 201,
    "left": 0,
-   "updated": "2026-11-03"
+   "updated": "2026-11-17"
   },
   "US-CO": {
    "status": "done",
@@ -336,7 +339,7 @@
    "parks": 388,
    "checked": 388,
    "left": 0,
-   "updated": "2026-11-03"
+   "updated": "2026-11-17"
   },
   "US-OH": {
    "status": "done",
@@ -716,28 +719,27 @@
  "last": {
   "when": "2026-11-17",
   "areas": [
-   "US-CT",
-   "US-OK",
-   "US-IA",
-   "US-IN",
-   "US-MS",
-   "US-NC",
-   "US-AL",
-   "US-MA"
+   "US-TX",
+   "US-LA",
+   "US-MI",
+   "US-NE",
+   "US-FL",
+   "US-GA",
+   "US-TN",
+   "US-VA"
   ],
   "stat": {
-   "requests": 532,
-   "parks": 964,
-   "maps_ok": 166,
-   "maps_found": 99,
-   "dates": 13,
-   "rules": 189,
-   "browser": 101,
-   "robots": 2,
+   "requests": 39,
+   "parks": 1,
+   "maps_ok": 0,
+   "maps_found": 0,
+   "dates": 0,
+   "rules": 0,
+   "browser": 5,
+   "robots": 1,
    "strikes": 0,
    "errors": 0,
-   "skipped_fresh": 792,
-   "kept_on_rest": 2
+   "skipped_fresh": 2092
   }
  }
 }
