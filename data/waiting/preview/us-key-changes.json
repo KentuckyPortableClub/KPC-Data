@@ -1,29 +1,41 @@
 {
  "about": "us-key: the HELD build (data/waiting/in/data/us-key/) vs the LIVE key (data/us-key/). Chat 11: check the sample, then write KEY YES or KEY NO: <refs> in data/waiting/approved.json (item 'what': 'us-key', 'build': the held build id from data/waiting/in/data/us-key/index.json, 'date': 'YYYY-MM-DD' and 'time': 'h:mm AM/PM' Central; rule 22: no build field or a grade from before Nov 2 9:37 AM CST is not a release). Written by kpc_key_summary.py.",
- "made": "2026-11-18 03:22 UTC",
+ "made": "2026-11-18 06:22 UTC",
  "totals": {
-  "gained": 9,
-  "lost": 7,
-  "pieces_changed": 996,
+  "gained": 15,
+  "lost": 12,
+  "pieces_changed": 1122,
   "grade_changed": 3
  },
  "per_area": {
-  "US-CA": {
+  "US-AL": {
    "gained": 0,
-   "lost": 0,
-   "pieces_changed": 1,
+   "lost": 1,
+   "pieces_changed": 5,
+   "grade_changed": 0
+  },
+  "US-CA": {
+   "gained": 1,
+   "lost": 1,
+   "pieces_changed": 19,
    "grade_changed": 0
   },
   "US-CO": {
    "gained": 0,
    "lost": 0,
-   "pieces_changed": 41,
+   "pieces_changed": 52,
    "grade_changed": 0
   },
   "US-CT": {
    "gained": 0,
    "lost": 0,
-   "pieces_changed": 2,
+   "pieces_changed": 6,
+   "grade_changed": 0
+  },
+  "US-DC": {
+   "gained": 2,
+   "lost": 1,
+   "pieces_changed": 1,
    "grade_changed": 0
   },
   "US-FL": {
@@ -35,7 +47,7 @@
   "US-IA": {
    "gained": 0,
    "lost": 0,
-   "pieces_changed": 1,
+   "pieces_changed": 6,
    "grade_changed": 0
   },
   "US-ID": {
@@ -45,8 +57,8 @@
    "grade_changed": 0
   },
   "US-IL": {
-   "gained": 0,
-   "lost": 0,
+   "gained": 1,
+   "lost": 2,
    "pieces_changed": 4,
    "grade_changed": 0
   },
@@ -59,47 +71,47 @@
   "US-KS": {
    "gained": 0,
    "lost": 0,
-   "pieces_changed": 7,
+   "pieces_changed": 14,
    "grade_changed": 0
   },
   "US-MA": {
    "gained": 0,
    "lost": 1,
-   "pieces_changed": 372,
+   "pieces_changed": 374,
    "grade_changed": 0
   },
   "US-MD": {
    "gained": 0,
    "lost": 0,
-   "pieces_changed": 16,
+   "pieces_changed": 15,
    "grade_changed": 0
   },
   "US-ME": {
    "gained": 0,
    "lost": 0,
-   "pieces_changed": 5,
+   "pieces_changed": 15,
    "grade_changed": 0
   },
   "US-MI": {
    "gained": 4,
    "lost": 0,
-   "pieces_changed": 14,
+   "pieces_changed": 13,
    "grade_changed": 2
   },
   "US-MN": {
    "gained": 0,
    "lost": 0,
-   "pieces_changed": 4,
+   "pieces_changed": 9,
    "grade_changed": 0
   },
   "US-MO": {
    "gained": 0,
    "lost": 0,
-   "pieces_changed": 247,
+   "pieces_changed": 251,
    "grade_changed": 0
   },
   "US-MS": {
-   "gained": 0,
+   "gained": 1,
    "lost": 0,
    "pieces_changed": 1,
    "grade_changed": 0
@@ -107,19 +119,19 @@
   "US-ND": {
    "gained": 0,
    "lost": 1,
-   "pieces_changed": 1,
+   "pieces_changed": 2,
    "grade_changed": 0
   },
   "US-NE": {
    "gained": 0,
    "lost": 0,
-   "pieces_changed": 11,
+   "pieces_changed": 21,
    "grade_changed": 0
   },
   "US-NH": {
    "gained": 0,
    "lost": 0,
-   "pieces_changed": 1,
+   "pieces_changed": 11,
    "grade_changed": 0
   },
   "US-NV": {
@@ -128,10 +140,16 @@
    "pieces_changed": 2,
    "grade_changed": 1
   },
+  "US-NY": {
+   "gained": 0,
+   "lost": 0,
+   "pieces_changed": 2,
+   "grade_changed": 0
+  },
   "US-OH": {
    "gained": 0,
    "lost": 0,
-   "pieces_changed": 44,
+   "pieces_changed": 37,
    "grade_changed": 0
   },
   "US-OK": {
@@ -146,10 +164,16 @@
    "pieces_changed": 0,
    "grade_changed": 0
   },
+  "US-SC": {
+   "gained": 0,
+   "lost": 0,
+   "pieces_changed": 1,
+   "grade_changed": 0
+  },
   "US-SD": {
    "gained": 0,
    "lost": 0,
-   "pieces_changed": 14,
+   "pieces_changed": 17,
    "grade_changed": 0
   },
   "US-TN": {
@@ -159,9 +183,9 @@
    "grade_changed": 0
   },
   "US-TX": {
-   "gained": 0,
+   "gained": 1,
    "lost": 0,
-   "pieces_changed": 9,
+   "pieces_changed": 44,
    "grade_changed": 0
   },
   "US-UT": {
@@ -185,11 +209,68 @@
   "US-WV": {
    "gained": 0,
    "lost": 0,
-   "pieces_changed": 3,
+   "pieces_changed": 4,
    "grade_changed": 0
   }
  },
  "gained": [
+  {
+   "area": "US-CA",
+   "ref": "US-0915",
+   "name": "Cesar E. Chavez National Monument",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "3354",
+     "César E. Chávez National Monument",
+     2,
+     "NPS unit code CECH (POTA website nps.gov/cech)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-0915"
+  },
+  {
+   "area": "US-DC",
+   "ref": "US-0015",
+   "name": "Chesapeake and Ohio Canal National Historical Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "3192",
+     "Chesapeake and Ohio Canal National Historical Park",
+     323,
+     "NPS unit code CHOH (POTA website nps.gov/choh)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-0015"
+  },
+  {
+   "area": "US-DC",
+   "ref": "US-0657",
+   "name": "President's Park (White House) Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "3543",
+     "White House",
+     18,
+     "NPS unit code WHHO (POTA website nps.gov/whho)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-0657"
+  },
   {
    "area": "US-FL",
    "ref": "US-7879",
@@ -208,6 +289,25 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-7879"
+  },
+  {
+   "area": "US-IL",
+   "ref": "US-7917",
+   "name": "Pullman National Historical Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "3400",
+     "Pullman National Monument",
+     0,
+     "NPS unit code PULL (POTA website nps.gov/pull)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-7917"
   },
   {
    "area": "US-IN",
@@ -329,17 +429,36 @@
    "pota": "https://pota.app/#/park/US-12798"
   },
   {
+   "area": "US-MS",
+   "ref": "US-0661",
+   "name": "Gulf Islands National Seashore",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "3331",
+     "Gulf Islands National Seashore",
+     57793,
+     "NPS unit code GUIS (POTA website nps.gov/guis)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-0661"
+  },
+  {
    "area": "US-PA",
    "ref": "US-12234",
    "name": "Allegheny National Wild and Scenic River",
    "old_grade": "pin",
-   "new_grade": "approximate",
+   "new_grade": "official",
    "new_pieces": [
     [
      "fwsr1",
      "Allegheny, Pennsylvania National Wild and Scenic River",
      35107,
-     "words"
+     "name (Forest Service river: state and forest dropped)"
     ]
    ],
    "old_pieces": [],
@@ -367,6 +486,25 @@
    "pota": "https://pota.app/#/park/US-6259"
   },
   {
+   "area": "US-TX",
+   "ref": "US-0750",
+   "name": "Palo Alto Battlefield National Historic Site",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "3235",
+     "Palo Alto Battlefield National Historical Park",
+     1815,
+     "NPS unit code PAAL (POTA website nps.gov/paal)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-0750"
+  },
+  {
    "area": "US-WA",
    "ref": "US-10709",
    "name": "Klickitat National Wild and Scenic River",
@@ -388,6 +526,65 @@
  ],
  "lost": [
   {
+   "area": "US-AL",
+   "ref": "US-3679",
+   "name": "Charles D. Kelley Wildlife Management Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sgalc300",
+     "Charles D. Kelley Autauga County Wildlife Management Area",
+     10465,
+     "words"
+    ]
+   ],
+   "held_now": [
+    "check (rule R-G8): another kind of place (a county, Handoff 8 fix 3)"
+   ],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-3679"
+  },
+  {
+   "area": "US-CA",
+   "ref": "US-3581",
+   "name": "Torrey Pines Reserve State Conservation Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "183836",
+     "Torrey Pines State Reserve",
+     1442,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-3581"
+  },
+  {
+   "area": "US-DC",
+   "ref": "US-0795",
+   "name": "World War I National Memorial",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "3279",
+     "World War I Memorial",
+     2,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-0795"
+  },
+  {
    "area": "US-ID",
    "ref": "US-7816",
    "name": "Henrys Lake Airstrip State Recreation Area",
@@ -407,6 +604,56 @@
    ],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-7816"
+  },
+  {
+   "area": "US-IL",
+   "ref": "US-10786",
+   "name": "Siloam Springs Buckhorn Unit State Park",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sgila1569",
+     "Siloam Springs State Park",
+     6033,
+     "words"
+    ],
+    [
+     "70901",
+     "Siloam Springs State Park",
+     5854,
+     "words"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-10786"
+  },
+  {
+   "area": "US-IL",
+   "ref": "US-4092",
+   "name": "Salem Unit of Apple River Canyon State Park",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sgila2162",
+     "Apple River Canyon State Park",
+     2030,
+     "words"
+    ],
+    [
+     "70840",
+     "Apple River Canyon State Park",
+     1931,
+     "words"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4092"
   },
   {
    "area": "US-IN",
@@ -775,6 +1022,63 @@
    "pota": "https://pota.app/#/park/US-12789"
   },
   {
+   "area": "US-CA",
+   "ref": "US-0915",
+   "name": "Cesar E. Chavez National Monument",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "3354",
+     "César E. Chávez National Monument",
+     2,
+     "NPS unit code CECH (POTA website nps.gov/cech)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-0915"
+  },
+  {
+   "area": "US-DC",
+   "ref": "US-0015",
+   "name": "Chesapeake and Ohio Canal National Historical Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "3192",
+     "Chesapeake and Ohio Canal National Historical Park",
+     323,
+     "NPS unit code CHOH (POTA website nps.gov/choh)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-0015"
+  },
+  {
+   "area": "US-MS",
+   "ref": "US-0661",
+   "name": "Gulf Islands National Seashore",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "3331",
+     "Gulf Islands National Seashore",
+     57793,
+     "NPS unit code GUIS (POTA website nps.gov/guis)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-0661"
+  },
+  {
    "area": "US-MI",
    "ref": "US-12790",
    "name": "East Branch of the Taquamenon National Wild and Scenic River",
@@ -876,6 +1180,25 @@
    "pota": "https://pota.app/#/park/US-10345"
   },
   {
+   "area": "US-DC",
+   "ref": "US-0657",
+   "name": "President's Park (White House) Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "3543",
+     "White House",
+     18,
+     "NPS unit code WHHO (POTA website nps.gov/whho)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-0657"
+  },
+  {
    "area": "US-FL",
    "ref": "US-7879",
    "name": "Citrus Wildlife Management Area",
@@ -893,6 +1216,25 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-7879"
+  },
+  {
+   "area": "US-IL",
+   "ref": "US-7917",
+   "name": "Pullman National Historical Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "3400",
+     "Pullman National Monument",
+     0,
+     "NPS unit code PULL (POTA website nps.gov/pull)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-7917"
   },
   {
    "area": "US-IN",
@@ -918,13 +1260,13 @@
    "ref": "US-12234",
    "name": "Allegheny National Wild and Scenic River",
    "old_grade": "pin",
-   "new_grade": "approximate",
+   "new_grade": "official",
    "new_pieces": [
     [
      "fwsr1",
      "Allegheny, Pennsylvania National Wild and Scenic River",
      35107,
-     "words"
+     "name (Forest Service river: state and forest dropped)"
     ]
    ],
    "old_pieces": [],
@@ -952,6 +1294,25 @@
    "pota": "https://pota.app/#/park/US-6259"
   },
   {
+   "area": "US-TX",
+   "ref": "US-0750",
+   "name": "Palo Alto Battlefield National Historic Site",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "3235",
+     "Palo Alto Battlefield National Historical Park",
+     1815,
+     "NPS unit code PAAL (POTA website nps.gov/paal)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-0750"
+  },
+  {
    "area": "US-WA",
    "ref": "US-10709",
    "name": "Klickitat National Wild and Scenic River",
@@ -969,6 +1330,46 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-10709"
+  },
+  {
+   "area": "US-AL",
+   "ref": "US-3679",
+   "name": "Charles D. Kelley Wildlife Management Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sgalc300",
+     "Charles D. Kelley Autauga County Wildlife Management Area",
+     10465,
+     "words"
+    ]
+   ],
+   "held_now": [
+    "check (rule R-G8): another kind of place (a county, Handoff 8 fix 3)"
+   ],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-3679"
+  },
+  {
+   "area": "US-CA",
+   "ref": "US-3581",
+   "name": "Torrey Pines Reserve State Conservation Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "183836",
+     "Torrey Pines State Reserve",
+     1442,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-3581"
   },
   {
    "area": "US-ID",
@@ -1221,6 +1622,75 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-12792"
+  },
+  {
+   "area": "US-DC",
+   "ref": "US-0795",
+   "name": "World War I National Memorial",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "3279",
+     "World War I Memorial",
+     2,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-0795"
+  },
+  {
+   "area": "US-IL",
+   "ref": "US-10786",
+   "name": "Siloam Springs Buckhorn Unit State Park",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sgila1569",
+     "Siloam Springs State Park",
+     6033,
+     "words"
+    ],
+    [
+     "70901",
+     "Siloam Springs State Park",
+     5854,
+     "words"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-10786"
+  },
+  {
+   "area": "US-IL",
+   "ref": "US-4092",
+   "name": "Salem Unit of Apple River Canyon State Park",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sgila2162",
+     "Apple River Canyon State Park",
+     2030,
+     "words"
+    ],
+    [
+     "70840",
+     "Apple River Canyon State Park",
+     1931,
+     "words"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4092"
   },
   {
    "area": "US-IN",

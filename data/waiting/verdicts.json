@@ -1,62 +1,7 @@
 {
- "checked": "2026-11-18T03:22Z",
+ "checked": "2026-11-18T06:22Z",
  "switched_on": false,
  "results": [
-  {
-   "path": "data/campinfo/US-DC.json",
-   "kind": "campinfo",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS",
-   "fp": "91ede3ab8ff5d402",
-   "net": false
-  },
-  {
-   "path": "data/campinfo/US-KS.json",
-   "kind": "campinfo",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS",
-   "fp": "34b23ad998316fde",
-   "net": false
-  },
-  {
-   "path": "data/campinfo/US-LA.json",
-   "kind": "campinfo",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS",
-   "fp": "682fb01cb375ec36",
-   "net": false
-  },
-  {
-   "path": "data/campinfo/US-NJ.json",
-   "kind": "campinfo",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS",
-   "fp": "cf74699b3634488b",
-   "net": false
-  },
-  {
-   "path": "data/campinfo/US-OH.json",
-   "kind": "campinfo",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS",
-   "fp": "2e56d2880cfd2f80",
-   "net": false
-  },
   {
    "path": "data/campstate/US-AK.json",
    "kind": "campstate",
@@ -94,1863 +39,6 @@
    "net": false
   },
   {
-   "path": "data/docs/US-AK.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "HOLD",
-   "fp": "24e6cd3eba3b5dda",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-AL.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [],
-   "verdict": "HOLD",
-   "fp": "dd61266bb9719fee",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-AR.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [],
-   "verdict": "HOLD",
-   "fp": "e65a87df5d1c9284",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-AZ.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "HOLD",
-   "fp": "1cbf5ec3fc31ddd8",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-CA.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "HOLD",
-   "fp": "e1380fb45ee4c78f",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-CO.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "HOLD",
-   "fp": "c680e78bf1ad5a7f",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-CT.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [],
-   "verdict": "HOLD",
-   "fp": "7123624b908f4ce8",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-DC.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [],
-   "verdict": "HOLD",
-   "fp": "c1dcda5b40f93675",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-DE.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [],
-   "verdict": "HOLD",
-   "fp": "ca33ba029941bf3a",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-FL.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [],
-   "verdict": "HOLD",
-   "fp": "7ed1572e2964ef4c",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-GA.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [],
-   "verdict": "HOLD",
-   "fp": "aebd98a982c7fd6e",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-HI.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "HOLD",
-   "fp": "36f9110ea078457f",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-ID.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "HOLD",
-   "fp": "19ff82bcb2636985",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-IL.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [],
-   "verdict": "HOLD",
-   "fp": "ad392a878a008af7",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-IN.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [],
-   "verdict": "HOLD",
-   "fp": "beefb89aaa2beb78",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-KS.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [],
-   "verdict": "HOLD",
-   "fp": "ae95dae40cd195af",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-KY.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [],
-   "verdict": "HOLD",
-   "fp": "1a8220914d64666b",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-LA.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [],
-   "verdict": "HOLD",
-   "fp": "fdf086bacaedecc9",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-MA.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [],
-   "verdict": "HOLD",
-   "fp": "c4741d978d37c5df",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-MD.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [],
-   "verdict": "HOLD",
-   "fp": "234f1b79e58a81d4",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-ME.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [],
-   "verdict": "HOLD",
-   "fp": "24d8bdb41d9e9494",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-MI.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "HOLD",
-   "fp": "6b97751fe56189a4",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-MN.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [],
-   "verdict": "HOLD",
-   "fp": "6cf74f580faf025e",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-MO.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [],
-   "verdict": "HOLD",
-   "fp": "a28a49ed9daec08c",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-MS.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [],
-   "verdict": "HOLD",
-   "fp": "f248c000965c7529",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-MT.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "HOLD",
-   "fp": "6961edb824499f04",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-NC.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [],
-   "verdict": "HOLD",
-   "fp": "1683b7f05f71a3ea",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-ND.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [],
-   "verdict": "HOLD",
-   "fp": "0eb225bfea412000",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-NE.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [],
-   "verdict": "HOLD",
-   "fp": "01c8654f663d6c52",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-NH.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [],
-   "verdict": "HOLD",
-   "fp": "c11cce960c4838a6",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-NJ.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [],
-   "verdict": "HOLD",
-   "fp": "347cd14a567e6eb5",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-NM.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "HOLD",
-   "fp": "0626dbc28691270f",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-NV.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "HOLD",
-   "fp": "789e43687a24cacf",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-NY.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [],
-   "verdict": "HOLD",
-   "fp": "bbd9e84cd5e55089",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-OH.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "HOLD",
-   "fp": "4f64978c37a535c5",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-OK.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [],
-   "verdict": "HOLD",
-   "fp": "641cc00918c14beb",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-OR.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "HOLD",
-   "fp": "e0566c42acbd2a11",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-PA.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [],
-   "verdict": "HOLD",
-   "fp": "e0135870a2dc2d6a",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-RI.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [],
-   "verdict": "HOLD",
-   "fp": "83e2d1d622c09dc2",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-SC.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [],
-   "verdict": "HOLD",
-   "fp": "641b81c1017db60b",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-SD.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [],
-   "verdict": "HOLD",
-   "fp": "8d3262d759f7124d",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-TN.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [],
-   "verdict": "HOLD",
-   "fp": "80238500a0763cd9",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-TX.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [],
-   "verdict": "HOLD",
-   "fp": "67dc6215e6d67d0f",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-UT.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "HOLD",
-   "fp": "89c911221cf5a238",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-VA.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [],
-   "verdict": "HOLD",
-   "fp": "0a3dcae5f6920871",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-VT.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [],
-   "verdict": "HOLD",
-   "fp": "d9da7f4f058b48ac",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-WA.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "HOLD",
-   "fp": "f769cfd840cd431c",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-WI.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [],
-   "verdict": "HOLD",
-   "fp": "5ea49f9af00fc985",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-WV.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [],
-   "verdict": "HOLD",
-   "fp": "3e8f5eb02f0a67ea",
-   "net": false
-  },
-  {
-   "path": "data/docs/US-WY.json",
-   "kind": "docs",
-   "why": [
-    "F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits"
-   ],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "HOLD",
-   "fp": "82cc4c08963bb9dc",
-   "net": false
-  },
-  {
-   "path": "data/hours/US-KY.json",
-   "kind": "hours",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "7fe6ffdb1be3481f",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/AS.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "1 parks: UNTOUCHED 1"
-   ],
-   "verdict": "PASS",
-   "fp": "b841aff6d6182810",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/AT.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "7 parks: NEEDS-PERSON 7"
-   ],
-   "verdict": "PASS",
-   "fp": "c2c98ff2cd78c5c0",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/AU.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "58 parks: NEEDS-PERSON 58"
-   ],
-   "verdict": "PASS",
-   "fp": "893e9bf86e3cd7c5",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/BZ.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "5 parks: NEEDS-PERSON 5"
-   ],
-   "verdict": "PASS",
-   "fp": "adb39febeaaef04d",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/CA-AB.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "6 parks: NEEDS-PERSON 6"
-   ],
-   "verdict": "PASS",
-   "fp": "2d41b684a4f8ce7c",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/CA-BC.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "7 parks: NEEDS-PERSON 7"
-   ],
-   "verdict": "PASS",
-   "fp": "2abf5d7e7641e812",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/CA-MB.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "3 parks: NEEDS-PERSON 3"
-   ],
-   "verdict": "PASS",
-   "fp": "0ab9e8c587c6a4df",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/CA-NB.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "27 parks: NEEDS-PERSON 27"
-   ],
-   "verdict": "PASS",
-   "fp": "a81432c011f01dbc",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/CA-NL.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "1 parks: NEEDS-PERSON 1"
-   ],
-   "verdict": "PASS",
-   "fp": "0afe346b5760826d",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/CA-NS.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "2 parks: NEEDS-PERSON 2"
-   ],
-   "verdict": "PASS",
-   "fp": "abb8ebc2464456c8",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/CA-NT.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "1 parks: NEEDS-PERSON 1"
-   ],
-   "verdict": "PASS",
-   "fp": "e1c7f7a983212beb",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/CA-ON.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "7 parks: NEEDS-PERSON 7"
-   ],
-   "verdict": "PASS",
-   "fp": "8c527830bcf70b2a",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/CA-PE.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "1 parks: NEEDS-PERSON 1"
-   ],
-   "verdict": "PASS",
-   "fp": "d7e13ae21bbae498",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/CA-QC.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "8 parks: NEEDS-PERSON 5, UNTOUCHED 3"
-   ],
-   "verdict": "PASS",
-   "fp": "b395947712f2a254",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/CA-SK.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "18 parks: NEEDS-PERSON 18"
-   ],
-   "verdict": "PASS",
-   "fp": "923b5f0a4b772593",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/CA-YT.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "1 parks: NEEDS-PERSON 1"
-   ],
-   "verdict": "PASS",
-   "fp": "d0ae3dc51a3eedf5",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/CH.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "2 parks: NEEDS-PERSON 2"
-   ],
-   "verdict": "PASS",
-   "fp": "e3de97214570f295",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/CL.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "4 parks: NEEDS-PERSON 4"
-   ],
-   "verdict": "PASS",
-   "fp": "559a7fc8ca07738b",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/DE.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "677 parks: NEEDS-PERSON 677"
-   ],
-   "verdict": "PASS",
-   "fp": "a7151e9017292379",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/DO.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "5 parks: NEEDS-PERSON 5"
-   ],
-   "verdict": "PASS",
-   "fp": "bb7c02ed58db5357",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/EE.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "2 parks: NEEDS-PERSON 2"
-   ],
-   "verdict": "PASS",
-   "fp": "595c05e64f7bc17e",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/ES.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "11 parks: NEEDS-PERSON 11"
-   ],
-   "verdict": "PASS",
-   "fp": "668ed2cfeb2cbddb",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/FI.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "14 parks: NEEDS-PERSON 14"
-   ],
-   "verdict": "PASS",
-   "fp": "46a2a251c17c34c9",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/FR.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "163 parks: NEEDS-PERSON 163"
-   ],
-   "verdict": "PASS",
-   "fp": "68aca7f668d8ee27",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/GA.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "1 parks: NEEDS-PERSON 1"
-   ],
-   "verdict": "PASS",
-   "fp": "dfb838a4c5d51309",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/GB.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "23 parks: NEEDS-PERSON 23"
-   ],
-   "verdict": "PASS",
-   "fp": "b97ac04146e5e87e",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/GT.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "1 parks: NEEDS-PERSON 1"
-   ],
-   "verdict": "PASS",
-   "fp": "00e750a3bf137788",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/HU.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "2 parks: NEEDS-PERSON 2"
-   ],
-   "verdict": "PASS",
-   "fp": "5c4e1c7726219d15",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/JP.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "70 parks: NEEDS-PERSON 70"
-   ],
-   "verdict": "PASS",
-   "fp": "3e89b2e705e58024",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/KE.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "4 parks: NEEDS-PERSON 4"
-   ],
-   "verdict": "PASS",
-   "fp": "fe64288649ec1ab4",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/LK.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "2 parks: NEEDS-PERSON 2"
-   ],
-   "verdict": "PASS",
-   "fp": "92e4a995d770cf5f",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/LR.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "1 parks: NEEDS-PERSON 1"
-   ],
-   "verdict": "PASS",
-   "fp": "4fa719c73b7cdab3",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/LT.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "2 parks: NEEDS-PERSON 2"
-   ],
-   "verdict": "PASS",
-   "fp": "f835e65e6e62f82b",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/MX.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "11 parks: NEEDS-PERSON 11"
-   ],
-   "verdict": "PASS",
-   "fp": "8500b2cd8461854c",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/NC.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "3 parks: NEEDS-PERSON 3"
-   ],
-   "verdict": "PASS",
-   "fp": "056d54111b200557",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/NL.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "1 parks: NEEDS-PERSON 1"
-   ],
-   "verdict": "PASS",
-   "fp": "2b44bfd8f17a48a8",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/NO.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "1 parks: NEEDS-PERSON 1"
-   ],
-   "verdict": "PASS",
-   "fp": "2a86e41bd77a80c6",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/NZ.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "12 parks: NEEDS-PERSON 12"
-   ],
-   "verdict": "PASS",
-   "fp": "2e2a76120fe8d3fd",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/PA.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "3 parks: NEEDS-PERSON 3"
-   ],
-   "verdict": "PASS",
-   "fp": "c6f81b3363ec589b",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/PL.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "2 parks: NEEDS-PERSON 2"
-   ],
-   "verdict": "PASS",
-   "fp": "37e2d24e807d2387",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/PT.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "10 parks: NEEDS-PERSON 10"
-   ],
-   "verdict": "PASS",
-   "fp": "a0f4b320d1e7576b",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/PY.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "3 parks: NEEDS-PERSON 3"
-   ],
-   "verdict": "PASS",
-   "fp": "b8f135d59981345c",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/RO.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "6 parks: NEEDS-PERSON 6"
-   ],
-   "verdict": "PASS",
-   "fp": "597820f61acf3070",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/SE.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "10 parks: NEEDS-PERSON 9, UNTOUCHED 1"
-   ],
-   "verdict": "PASS",
-   "fp": "e0e3be88b639c332",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/SI.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "1 parks: NEEDS-PERSON 1"
-   ],
-   "verdict": "PASS",
-   "fp": "60d6a4b34c1ac8b1",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/SK.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "1 parks: NEEDS-PERSON 1"
-   ],
-   "verdict": "PASS",
-   "fp": "8e81aa50b3be6f7b",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/SV.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "1 parks: NEEDS-PERSON 1"
-   ],
-   "verdict": "PASS",
-   "fp": "d202c3f5831c607f",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/US-AK.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "5 parks: NEEDS-PERSON 1, SOLVED-JOIN 3, UNTOUCHED 1"
-   ],
-   "verdict": "PASS",
-   "fp": "5b1dd7c243ebe62a",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/US-AL.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "6 parks: NEEDS-PERSON 3, SOLVED-JOIN 2, UNTOUCHED 1"
-   ],
-   "verdict": "PASS",
-   "fp": "f058bef94b4dbf2f",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/US-AR.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "2 parks: SOLVED-JOIN 2"
-   ],
-   "verdict": "PASS",
-   "fp": "9f0237ad76d16e8d",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/US-AZ.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "1 parks: NEEDS-PERSON 1"
-   ],
-   "verdict": "PASS",
-   "fp": "7e87a2abf0eaa509",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/US-CA.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "8 parks: NEEDS-PERSON 2, SOLVED-JOIN 2, UNTOUCHED 4"
-   ],
-   "verdict": "PASS",
-   "fp": "c9e59b2aa1848183",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/US-CO.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "18 parks: NEEDS-PERSON 17, SOLVED-JOIN 1"
-   ],
-   "verdict": "PASS",
-   "fp": "2eef197c96027531",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/US-CT.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "1 parks: SOLVED-JOIN 1"
-   ],
-   "verdict": "PASS",
-   "fp": "2412d4d13cfcbe28",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/US-DC.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "1 parks: NEEDS-PERSON 1"
-   ],
-   "verdict": "PASS",
-   "fp": "3470f4b11cdec514",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/US-FL.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "4 parks: NEEDS-PERSON 3, SOLVED-JOIN 1"
-   ],
-   "verdict": "PASS",
-   "fp": "1ab4a634b5ff7552",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/US-GA.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "5 parks: NEEDS-PERSON 4, UNTOUCHED 1"
-   ],
-   "verdict": "PASS",
-   "fp": "1a8385cee5a5df0d",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/US-IA.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "1 parks: UNTOUCHED 1"
-   ],
-   "verdict": "PASS",
-   "fp": "d664d35de2990d60",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/US-ID.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "1 parks: NEEDS-PERSON 1"
-   ],
-   "verdict": "PASS",
-   "fp": "1da0bf4ea517995d",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/US-IL.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "2 parks: NEEDS-PERSON 2"
-   ],
-   "verdict": "PASS",
-   "fp": "5458e57c2a254eb8",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/US-IN.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "1 parks: NEEDS-PERSON 1"
-   ],
-   "verdict": "PASS",
-   "fp": "395805c1f2144a23",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/US-KS.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "1 parks: NEEDS-PERSON 1"
-   ],
-   "verdict": "PASS",
-   "fp": "903a4e40d4ef54f0",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/US-LA.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "1 parks: SOLVED-JOIN 1"
-   ],
-   "verdict": "PASS",
-   "fp": "5be086a51b65de22",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/US-MA.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "3 parks: NEEDS-PERSON 3"
-   ],
-   "verdict": "PASS",
-   "fp": "5a3063b8390ed2be",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/US-MD.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "2 parks: SOLVED-JOIN 2"
-   ],
-   "verdict": "PASS",
-   "fp": "2207d80fa811221d",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/US-MI.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "1 parks: NEEDS-PERSON 1"
-   ],
-   "verdict": "PASS",
-   "fp": "902627dcc8353c66",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/US-MN.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "9 parks: NEEDS-PERSON 4, SOLVED-JOIN 5"
-   ],
-   "verdict": "PASS",
-   "fp": "c38e8c3eabd686f9",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/US-NC.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "2 parks: NEEDS-PERSON 1, UNTOUCHED 1"
-   ],
-   "verdict": "PASS",
-   "fp": "2e447444a0c8d08a",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/US-ND.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "1 parks: NEEDS-PERSON 1"
-   ],
-   "verdict": "PASS",
-   "fp": "08bd2a379c6a4829",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/US-NE.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "2 parks: UNTOUCHED 2"
-   ],
-   "verdict": "PASS",
-   "fp": "8e8046f1338faaca",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/US-NH.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "8 parks: NEEDS-PERSON 3, SOLVED-JOIN 5"
-   ],
-   "verdict": "PASS",
-   "fp": "959833796f3babc9",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/US-NJ.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "1 parks: NEEDS-PERSON 1"
-   ],
-   "verdict": "PASS",
-   "fp": "70e3a2c89535aa49",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/US-NM.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "2 parks: NEEDS-PERSON 2"
-   ],
-   "verdict": "PASS",
-   "fp": "16f3f87ad6eb6318",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/US-NV.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "11 parks: NEEDS-PERSON 3, SOLVED-JOIN 8"
-   ],
-   "verdict": "PASS",
-   "fp": "2729a5894655494d",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/US-NY.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "8 parks: NEEDS-PERSON 7, SOLVED-JOIN 1"
-   ],
-   "verdict": "PASS",
-   "fp": "9df27709aae39d1a",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/US-OH.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "3 parks: NEEDS-PERSON 3"
-   ],
-   "verdict": "PASS",
-   "fp": "40860525b38dd682",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/US-OK.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "6 parks: NEEDS-PERSON 6"
-   ],
-   "verdict": "PASS",
-   "fp": "8afb129f842d2fa7",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/US-OR.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "4 parks: NEEDS-PERSON 3, SOLVED-JOIN 1"
-   ],
-   "verdict": "PASS",
-   "fp": "95af38cb11df6b5c",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/US-PA.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "1 parks: SOLVED-JOIN 1"
-   ],
-   "verdict": "PASS",
-   "fp": "b176038ad9eb72cd",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/US-RI.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "1 parks: NEEDS-PERSON 1"
-   ],
-   "verdict": "PASS",
-   "fp": "69e4299593c9e671",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/US-TN.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "3 parks: NEEDS-PERSON 3"
-   ],
-   "verdict": "PASS",
-   "fp": "83ad365d82b8d88f",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/US-TX.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "5 parks: NEEDS-PERSON 5"
-   ],
-   "verdict": "PASS",
-   "fp": "1f70d254f5471686",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/US-UT.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "15 parks: NEEDS-PERSON 4, SOLVED-JOIN 9, UNTOUCHED 2"
-   ],
-   "verdict": "PASS",
-   "fp": "576eacbb367f53e9",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/US-VA.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "5 parks: NEEDS-PERSON 5"
-   ],
-   "verdict": "PASS",
-   "fp": "2270458ca7fdd383",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/US-VT.json",
-   "kind": "pilesolver",
-   "why": [
-    "US-5538: pin 1920 m out without the POTA pin flag"
-   ],
-   "notes": [
-    "no live copy: first time this file is published",
-    "3 parks: NEEDS-PERSON 1, SOLVED-JOIN 2"
-   ],
-   "verdict": "HOLD",
-   "fp": "d06d430992cf3daa",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/US-WA.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "3 parks: NEEDS-PERSON 3"
-   ],
-   "verdict": "PASS",
-   "fp": "cc36e146ead6c292",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/US-WI.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "3 parks: NEEDS-PERSON 2, SOLVED-JOIN 1"
-   ],
-   "verdict": "PASS",
-   "fp": "2b59808e25846cc7",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/US-WV.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "3 parks: NEEDS-PERSON 2, UNTOUCHED 1"
-   ],
-   "verdict": "PASS",
-   "fp": "cd276b432e7e4826",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/US-WY.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "10 parks: NEEDS-PERSON 6, SOLVED-JOIN 4"
-   ],
-   "verdict": "PASS",
-   "fp": "98892fb0368dab78",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/UY.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "1 parks: NEEDS-PERSON 1"
-   ],
-   "verdict": "PASS",
-   "fp": "29810cbe507a738b",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/VI.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "1 parks: UNTOUCHED 1"
-   ],
-   "verdict": "PASS",
-   "fp": "e6eb2e594b9d96ba",
-   "net": false
-  },
-  {
-   "path": "data/pile-solver/ZA.json",
-   "kind": "pilesolver",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published",
-    "4 parks: NEEDS-PERSON 4"
-   ],
-   "verdict": "PASS",
-   "fp": "bfb0cb0ec89ce053",
-   "net": false
-  },
-  {
-   "path": "data/trails/CA-5993.json",
-   "kind": "trails",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS",
-   "fp": "253242e19a75c85c",
-   "net": false
-  },
-  {
-   "path": "data/trails/CA-6339.json",
-   "kind": "trails",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "526bed39fe6911a4",
-   "net": false
-  },
-  {
-   "path": "data/trails/CA-6381.json",
-   "kind": "trails",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "1de3fcd6de53c211",
-   "net": false
-  },
-  {
-   "path": "data/trails/US-10423.json",
-   "kind": "trails",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS",
-   "fp": "8b83d13dd1059dd4",
-   "net": false
-  },
-  {
-   "path": "data/trails/US-10660.json",
-   "kind": "trails",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "2551ecd97973b343",
-   "net": false
-  },
-  {
-   "path": "data/trails/US-10714.json",
-   "kind": "trails",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS",
-   "fp": "5680cde8b99ad27c",
-   "net": false
-  },
-  {
-   "path": "data/trails/US-10862.json",
-   "kind": "trails",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS",
-   "fp": "485345da352e60dc",
-   "net": false
-  },
-  {
-   "path": "data/trails/US-10880.json",
-   "kind": "trails",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS",
-   "fp": "106a4720cdd5257f",
-   "net": false
-  },
-  {
-   "path": "data/trails/US-10884.json",
-   "kind": "trails",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS",
-   "fp": "1bbefb1a33dae893",
-   "net": false
-  },
-  {
-   "path": "data/trails/US-10900.json",
-   "kind": "trails",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS",
-   "fp": "a8501eb8ffa45ac7",
-   "net": false
-  },
-  {
-   "path": "data/trails/US-10914.json",
-   "kind": "trails",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "0071be9cd5ea7712",
-   "net": false
-  },
-  {
-   "path": "data/trails/US-10915.json",
-   "kind": "trails",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "b47657d990eb2e28",
-   "net": false
-  },
-  {
-   "path": "data/trails/US-10917.json",
-   "kind": "trails",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "0df2f105d7083c3d",
-   "net": false
-  },
-  {
-   "path": "data/trails/US-10929.json",
-   "kind": "trails",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS",
-   "fp": "694eac989c3e9f4f",
-   "net": false
-  },
-  {
-   "path": "data/trails/US-13195.json",
-   "kind": "trails",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "4a98b70afb886e08",
-   "net": false
-  },
-  {
-   "path": "data/trails/US-13624.json",
-   "kind": "trails",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS",
-   "fp": "26ae278227ca8e4c",
-   "net": false
-  },
-  {
    "path": "data/trails/US-13626.json",
    "kind": "trails",
    "why": [
@@ -1959,71 +47,6 @@
    "notes": [],
    "verdict": "HOLD",
    "fp": "d769c040df064370",
-   "net": false
-  },
-  {
-   "path": "data/trails/US-4559.json",
-   "kind": "trails",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "cc0110a5ce310faf",
-   "net": false
-  },
-  {
-   "path": "data/trails/US-4564.json",
-   "kind": "trails",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "6f0e6c485efd3854",
-   "net": false
-  },
-  {
-   "path": "data/trails/US-7544.json",
-   "kind": "trails",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "e5d37b6591aecbaf",
-   "net": false
-  },
-  {
-   "path": "data/trails/US-8292.json",
-   "kind": "trails",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "0b54d6542f643b05",
-   "net": false
-  },
-  {
-   "path": "data/trails/US-8437.json",
-   "kind": "trails",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "f5cec4475ca10bbd",
-   "net": false
-  },
-  {
-   "path": "data/trails/US-8617.json",
-   "kind": "trails",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "966bb16ed3791dde",
-   "net": false
-  },
-  {
-   "path": "data/trails/US-9163.json",
-   "kind": "trails",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS",
-   "fp": "bc494753c03f6c26",
    "net": false
   },
   {
@@ -2036,15 +59,6 @@
    "notes": [],
    "verdict": "HOLD",
    "fp": "10462a8fcd444e07",
-   "net": false
-  },
-  {
-   "path": "data/trails/index-state.json",
-   "kind": "trails",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "d41194290e0fc430",
    "net": false
   },
   {
@@ -2067,180 +81,6 @@
    "notes": [],
    "verdict": "HOLD",
    "fp": "9b4bc4c82d2d62a5",
-   "net": false
-  },
-  {
-   "path": "data/truth/US-AK.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS",
-   "fp": "7f56acde220ccd44",
-   "net": false
-  },
-  {
-   "path": "data/truth/US-AL.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "79b4280f071163c7",
-   "net": false
-  },
-  {
-   "path": "data/truth/US-AR.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "f10162ffa3bfe304",
-   "net": false
-  },
-  {
-   "path": "data/truth/US-AZ.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS",
-   "fp": "e52a2d242926206b",
-   "net": false
-  },
-  {
-   "path": "data/truth/US-CA.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS",
-   "fp": "a7d2179b7ef325ad",
-   "net": false
-  },
-  {
-   "path": "data/truth/US-CO.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "062082ddae3024f9",
-   "net": false
-  },
-  {
-   "path": "data/truth/US-CT.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS",
-   "fp": "770c463da1c9cc38",
-   "net": false
-  },
-  {
-   "path": "data/truth/US-DC.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "47f85c9796b6dc77",
-   "net": false
-  },
-  {
-   "path": "data/truth/US-DE.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "127d7271cd233281",
-   "net": false
-  },
-  {
-   "path": "data/truth/US-FL.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "c6f6239e04c8850d",
-   "net": false
-  },
-  {
-   "path": "data/truth/US-GA.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "099367d6acb42162",
-   "net": false
-  },
-  {
-   "path": "data/truth/US-HI.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS",
-   "fp": "807b428fe10edb19",
-   "net": false
-  },
-  {
-   "path": "data/truth/US-ID.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS",
-   "fp": "ef38ba5c4607dea1",
-   "net": false
-  },
-  {
-   "path": "data/truth/US-IL.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "87161237f61f11b0",
-   "net": false
-  },
-  {
-   "path": "data/truth/US-IN.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "ba20813caa8a9e00",
-   "net": false
-  },
-  {
-   "path": "data/truth/US-KS.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "52336f59c8604bda",
-   "net": false
-  },
-  {
-   "path": "data/truth/US-KY.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "ceb611df53c9f031",
-   "net": false
-  },
-  {
-   "path": "data/truth/US-LA.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "e10fad7f3aa8faa0",
    "net": false
   },
   {
@@ -2271,28 +111,6 @@
    "net": false
   },
   {
-   "path": "data/truth/US-ME.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS",
-   "fp": "3997185d71feb9af",
-   "net": false
-  },
-  {
-   "path": "data/truth/US-MI.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS",
-   "fp": "da47c0a6ac573b74",
-   "net": false
-  },
-  {
    "path": "data/truth/US-MN.json",
    "kind": "truth",
    "why": [
@@ -2303,115 +121,6 @@
    ],
    "verdict": "HOLD",
    "fp": "4cebb95ba79376d2",
-   "net": false
-  },
-  {
-   "path": "data/truth/US-MO.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "b806ead6a7bbdc8c",
-   "net": false
-  },
-  {
-   "path": "data/truth/US-MS.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "0dae205d4874f87c",
-   "net": false
-  },
-  {
-   "path": "data/truth/US-MT.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS",
-   "fp": "72921d28d4bc4285",
-   "net": false
-  },
-  {
-   "path": "data/truth/US-NC.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "21859e749b5ac922",
-   "net": false
-  },
-  {
-   "path": "data/truth/US-NE.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "4a6f298858334f90",
-   "net": false
-  },
-  {
-   "path": "data/truth/US-NH.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "739483f61c66354a",
-   "net": false
-  },
-  {
-   "path": "data/truth/US-NJ.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "cbd1aa286b297cda",
-   "net": false
-  },
-  {
-   "path": "data/truth/US-NM.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS",
-   "fp": "49838bab185757ba",
-   "net": false
-  },
-  {
-   "path": "data/truth/US-NV.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS",
-   "fp": "c3f55fc56bdc8c92",
-   "net": false
-  },
-  {
-   "path": "data/truth/US-NY.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS",
-   "fp": "1e82c6314f751ab4",
-   "net": false
-  },
-  {
-   "path": "data/truth/US-OH.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS",
-   "fp": "4c8a12d4c958b66d",
    "net": false
   },
   {
@@ -2428,64 +137,6 @@
    "net": false
   },
   {
-   "path": "data/truth/US-OR.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS",
-   "fp": "3e5f2933e57d67ac",
-   "net": false
-  },
-  {
-   "path": "data/truth/US-PA.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "983fb6238d657434",
-   "net": false
-  },
-  {
-   "path": "data/truth/US-RI.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "cd2ecbd3ebc91a4e",
-   "net": false
-  },
-  {
-   "path": "data/truth/US-SC.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "160732c8628958f8",
-   "net": false
-  },
-  {
-   "path": "data/truth/US-TN.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "4f730d8877d04aa2",
-   "net": false
-  },
-  {
-   "path": "data/truth/US-TX.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS",
-   "fp": "519857329a1b8845",
-   "net": false
-  },
-  {
    "path": "data/truth/US-UT.json",
    "kind": "truth",
    "why": [
@@ -2496,24 +147,6 @@
    ],
    "verdict": "HOLD",
    "fp": "cfc5ce2d50b3f6ec",
-   "net": false
-  },
-  {
-   "path": "data/truth/US-VA.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "0b951ad0da1e26da",
-   "net": false
-  },
-  {
-   "path": "data/truth/US-VT.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "bafa8528e62ac1c1",
    "net": false
   },
   {
@@ -2531,26 +164,6 @@
    "net": false
   },
   {
-   "path": "data/truth/US-WV.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "c9bd86741adde19e",
-   "net": false
-  },
-  {
-   "path": "data/truth/US-WY.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [
-    "no live copy: first time this file is published"
-   ],
-   "verdict": "PASS",
-   "fp": "3b8cf81f9ab0720b",
-   "net": false
-  },
-  {
    "path": "data/us-key/US-AK.json",
    "kind": "key",
    "why": [],
@@ -2560,12 +173,30 @@
    "net": false
   },
   {
+   "path": "data/us-key/US-AL.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "f7346399a26f4b5a",
+   "net": false
+  },
+  {
+   "path": "data/us-key/US-AZ.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "334024d7b5934a1f",
+   "net": false
+  },
+  {
    "path": "data/us-key/US-CA.json",
    "kind": "key",
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "766f5fe0526f213f",
+   "fp": "96ba8032893d2997",
    "net": false
   },
   {
@@ -2574,7 +205,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "99e010701fa4ff51",
+   "fp": "814d86fae9ecf12d",
    "net": false
   },
   {
@@ -2583,7 +214,16 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "713f8c4f66b7195f",
+   "fp": "fab5932e725a32c7",
+   "net": false
+  },
+  {
+   "path": "data/us-key/US-DC.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "a44a00f22e790a39",
    "net": false
   },
   {
@@ -2596,12 +236,21 @@
    "net": false
   },
   {
+   "path": "data/us-key/US-HI.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "1ab14af99717f8b9",
+   "net": false
+  },
+  {
    "path": "data/us-key/US-IA.json",
    "kind": "key",
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "c05a366d42ee1306",
+   "fp": "7b34e544f490ccc3",
    "net": false
   },
   {
@@ -2619,7 +268,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "435adab9381c17f1",
+   "fp": "693035e8819ca451",
    "net": false
   },
   {
@@ -2637,7 +286,16 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "21feb6cd9a2f68f0",
+   "fp": "08f7bc1ce194c702",
+   "net": false
+  },
+  {
+   "path": "data/us-key/US-LA.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "fda3d62c7d30bc72",
    "net": false
   },
   {
@@ -2646,7 +304,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "e1a1773735ba3ae8",
+   "fp": "a47ebd02c3ef12fc",
    "net": false
   },
   {
@@ -2655,7 +313,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "1dba348da47ad026",
+   "fp": "a52ed339eaa15d68",
    "net": false
   },
   {
@@ -2664,7 +322,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "9d4e5f0deeae035b",
+   "fp": "4f417fdee726e4d8",
    "net": false
   },
   {
@@ -2673,7 +331,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "36fac518dcffefa4",
+   "fp": "f29e4b3615306a5c",
    "net": false
   },
   {
@@ -2682,7 +340,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "b308efcd03409f57",
+   "fp": "63fa8e74b898aae3",
    "net": false
   },
   {
@@ -2691,7 +349,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "0cdbd49fcdae5590",
+   "fp": "01593be457d1e10c",
    "net": false
   },
   {
@@ -2700,7 +358,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "241c552a64f3bf9b",
+   "fp": "f0d712c0db8df905",
    "net": false
   },
   {
@@ -2718,7 +376,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "e8bb1e8a806e9f00",
+   "fp": "533148cb9dde3454",
    "net": false
   },
   {
@@ -2727,7 +385,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "33690b362c91543c",
+   "fp": "0d496945cf480337",
    "net": false
   },
   {
@@ -2736,7 +394,25 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "90b5a1ba3d4fc4b8",
+   "fp": "d97b29093475ec7a",
+   "net": false
+  },
+  {
+   "path": "data/us-key/US-NJ.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "3ea0a94838d96dbc",
+   "net": false
+  },
+  {
+   "path": "data/us-key/US-NM.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "a16fff39aae02e9f",
    "net": false
   },
   {
@@ -2749,12 +425,21 @@
    "net": false
   },
   {
+   "path": "data/us-key/US-NY.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "f74d29f9860192e9",
+   "net": false
+  },
+  {
    "path": "data/us-key/US-OH.json",
    "kind": "key",
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "6aaeb0619da82b85",
+   "fp": "2d9261ea54423f81",
    "net": false
   },
   {
@@ -2772,7 +457,16 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "aff194b6564565ae",
+   "fp": "b76f1d3234407fa8",
+   "net": false
+  },
+  {
+   "path": "data/us-key/US-SC.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "7fa86b0c3b9e7e34",
    "net": false
   },
   {
@@ -2781,7 +475,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "9249dc9233e6b2fb",
+   "fp": "917906d5be16b721",
    "net": false
   },
   {
@@ -2790,7 +484,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "c950e0ab8c1244aa",
+   "fp": "bfb596dda8735b1c",
    "net": false
   },
   {
@@ -2799,7 +493,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "78edb52e453e36b3",
+   "fp": "7c3ff51d80c90774",
    "net": false
   },
   {
@@ -2826,7 +520,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "df5c2166b1264eb8",
+   "fp": "5ae5a8b76370130e",
    "net": false
   },
   {
@@ -2835,7 +529,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "bde55f5f977251f0",
+   "fp": "8984eac7f1e040af",
    "net": false
   },
   {
@@ -2844,7 +538,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "bfa3a2e6014a17d6",
+   "fp": "0d18b12e95b00cc3",
    "net": false
   },
   {
@@ -2853,7 +547,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "ec9e45418d4ab32f",
+   "fp": "43efcaa1ce2a203b",
    "net": false
   },
   {
@@ -2862,7 +556,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "e5a5a0b272571c2f",
+   "fp": "ee56594648e7bb30",
    "net": false
   },
   {
@@ -2907,17 +601,6 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "90a445280ae56276",
-   "net": false
-  },
-  {
-   "path": "data/wwff/CTFF.json",
-   "kind": "wwff",
-   "why": [
-    "F-W2 rows 702 -> 280 (under 80% of the saved list)"
-   ],
-   "notes": [],
-   "verdict": "HOLD",
-   "fp": "19af15f5bf6fde9a",
    "net": false
   }
  ]
