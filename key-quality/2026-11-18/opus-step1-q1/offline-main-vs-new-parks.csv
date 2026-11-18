@@ -11,9 +11,9 @@ US-VA,US-9902,Colonial National Parkway,219,flagged,pin,3195,,outline lost; clas
 US-IN,US-4169,Miami on Mississinewa Lake State Recreation Area,200,flagged,pin,2526,,outline lost; class flagged -> pin; hard flags SHARED -> -
 US-IN,US-4177,Dora-New Holland on Salamonie Lake State Recreation Area,166,flagged,pin,ind5037,,outline lost; class flagged -> pin; hard flags SHARED -> -
 US-IN,US-4186,Big Walnut - Tall Timbers Trail State Nature Preserve,155,flagged,pin,200769 200770 200771,,outline lost; class flagged -> pin; hard flags BIG_PIECE/SIZE_BIG -> -
-US-GA,US-7902,Walton Wildlife Management Area,150,verified,pin,195119 sggaa28 sggac763,,outline lost; class verified -> pin; VERIFIED OUTLINE LOST
-US-OR,US-5461,Tillamook State Forest,149,two,pin,241270 242102,,outline lost; class two -> pin
-US-TN,US-11858,Middle Fork Bottoms State Park,137,two,pin,255778 sgtna369 sgtnj259,,outline lost; class two -> pin
+US-GA,US-7902,Walton Wildlife Management Area,150,verified,verified,195119 sggaa28 sggac763,sggac763,records changed
+US-OR,US-5461,Tillamook State Forest,149,two,flagged,241270 242102,242102,records changed; class two -> flagged; hard flags - -> PIN_FAR
+US-TN,US-11858,Middle Fork Bottoms State Park,137,two,two,255778 sgtna369 sgtnj259,sgtna369 sgtnj259,records changed
 US-IN,US-4180,Mt Hope on Salamonie Lake State Recreation Area,135,flagged,pin,ind5037,,outline lost; class flagged -> pin; hard flags SHARED -> -
 US-IN,US-4168,Frances Slocum on Mississinewa Lake State Recreation Area,110,flagged,pin,2526,,outline lost; class flagged -> pin; hard flags SHARED -> -
 US-IA,US-5730,Blood Run State Historic Site,109,one,pin,198260,,outline lost; class one -> pin
@@ -23,10 +23,8 @@ US-IN,US-4174,Newton-Stewart on Patoka Lake State Recreation Area,104,flagged,pi
 US-WA,US-5574,Tiger Mountain State Forest,104,two,pin,271371,,outline lost; class two -> pin
 US-AL,US-3692,Heron Bay and Portersville Bay State Fish and Wildlife Area,103,one,pin,78849,,outline lost; class one -> pin
 US-VA,US-9957,Shenandoah Wilderness Area,98,flagged,pin,3474,,outline lost; class flagged -> pin; hard flags BIG_PIECE/OTHER_PARK/SHARED/SIZE_BIG -> -
-US-CA,US-3586,Verdugo Mountains State Park,92,two,pin,183914 sgcab659,,outline lost; class two -> pin
-US-WI,US-8219,Jackson Marsh State Natural Area,90,two,pin,sgwic6992 sgwif24367,,outline lost; class two -> pin
+US-CA,US-3586,Verdugo Mountains State Park,92,two,two,183914 sgcab659,sgcab659,records changed
 US-NE,US-4017,Lincoln Saline Wetland State Park,87,one,pin,215703,,outline lost; class one -> pin
-US-WI,US-4255,Lodi Marsh State Natural Area,83,two,pin,sgwic7082 sgwif23972,,outline lost; class two -> pin
 US-IN,US-4170,Hardin Ridge on Monroe Lake State Recreation Area,76,flagged,pin,2527,,outline lost; class flagged -> pin; hard flags SHARED -> -
 US-WI,US-10650,Nevin Springs State Fish and Wildlife Area,70,one,pin,272683,,outline lost; class one -> pin
 US-VT,US-5541,Calvin Coolidge State Forest,69,flagged,one,61202 61205 61207 61214 61216 61217 61220 61225 61229 61230 61231 61234,61202 61205 61207 61214 61216 61217 61220 61225 61229 61230 61231 61234,class flagged -> one; hard flags SHARED -> -
@@ -37,23 +35,21 @@ US-IN,US-4175,Tillery Hill on Patoka Lake State Recreation Area,51,flagged,pin,i
 US-VT,US-3109,Coolidge State Park,50,verified,pin,61205 61234 sgvta18,,outline lost; class verified -> pin; VERIFIED OUTLINE LOST
 US-IN,US-4173,Lick Fork on Patoka Lake State Recreation Area,49,flagged,pin,ind4773,,outline lost; class flagged -> pin; hard flags SHARED -> -
 US-PA,US-12664,Pine Creek Rail Trail State Trail,44,one,verified,250947,trl12664,records changed; class one -> verified
-US-GA,US-9793,Ball's Ferry Property Wildlife Management Area,43,two,pin,195122 sggaa195 sggac911,,outline lost; class two -> pin
-US-OR,US-12843,The North Spit BLM Recreation Management Area,42,two,pin,rst11632 rst11675 rst12338 rst12956,,outline lost; class two -> pin
-US-WI,US-8668,Waterloo Prairie State Natural Area,42,flagged,pin,72052 sgwic6734 sgwif23634,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-GA,US-9793,Ball's Ferry Property Wildlife Management Area,43,two,two,195122 sggaa195 sggac911,sggaa195 sggac911,records changed
+US-OR,US-12843,The North Spit BLM Recreation Management Area,42,two,two,rst11632 rst11675 rst12338 rst12956,rst12956,records changed
+US-WI,US-8668,Waterloo Prairie State Natural Area,42,flagged,verified,72052 sgwic6734 sgwif23634,sgwif23634,records changed; class flagged -> verified; hard flags SHARED -> -
 US-MI,US-1505,Historic Mill Discovery State Park,41,two,pin,71006,,outline lost; class two -> pin
-US-WV,US-0697,Bluestone National Wild and Scenic River,40,verified,pin,3555 wsrc22,,outline lost; class verified -> pin; VERIFIED OUTLINE LOST
 US-RI,US-10544,Jerimoth Hill State Recreation Area,39,one,pin,57110 57316,,outline lost; class one -> pin
 US-OR,US-10479,Oasis BLM Recreation Management Area,37,one,pin,rma11297 rst11297,,outline lost; class one -> pin
 US-UT,US-11761,Quail Creek Reservoir Designated Dispersed Camping Area BLM Special Recreation Management Area,36,flagged,pin,157844,,outline lost; class flagged -> pin; hard flags OTHER_PARK/SHARED -> -
 US-VT,US-3147,Thetford Hill State Park,36,flagged,pin,61435,,outline lost; class flagged -> pin; hard flags OTHER_PARK/SHARED -> -
-US-IL,US-0526,Wildcat Hollow State Nature Preserve,35,verified,pin,70754 sgila1159,,outline lost; class verified -> pin; VERIFIED OUTLINE LOST
+US-IL,US-0526,Wildcat Hollow State Nature Preserve,35,verified,verified,70754 sgila1159,sgila1159,records changed
 US-CA,US-3415,California State Railroad Museum State Park,34,flagged,pin,183878,,outline lost; class flagged -> pin; hard flags SHARED -> -
 US-WI,US-4244,Big Bay Sand Spit and Bog State Natural Area,33,flagged,pin,272294 sgwic6861 sgwif23770,,outline lost; class flagged -> pin; hard flags OTHER_PARK/SHARED -> -
 US-MI,US-6818,Mackinac Island State Harbor,31,flagged,pin,71154,,outline lost; class flagged -> pin; hard flags SHARED -> -
 US-MO,US-6529,Truman Reservoir Management Lands State Park,31,two,pin,mol967,,outline lost; class two -> pin
 US-NH,US-2644,Cardigan Mountain State Park,31,verified,pin,nhc2202,,outline lost; class verified -> pin; VERIFIED OUTLINE LOST
 US-FL,US-12128,Stormwater Treatment Area 1 East State Conservation Area,30,flagged,pin,190265,,outline lost; class flagged -> pin; hard flags SHARED -> -
-US-NM,US-0961,"Salinas Pueblo Missions, Gran Quivira Unit, National Monument",29,one,pin,3403,,outline lost; class one -> pin
 US-NY,US-8063,North-South Lake State Recreation Area,29,two,pin,237093,,outline lost; class two -> pin
 US-FL,US-12127,Stormwater Treatment Area 1 West State Conservation Area,28,flagged,pin,190265,,outline lost; class flagged -> pin; hard flags SHARED -> -
 US-KS,US-7399,Tuttle Creek Willow State Fishing Lake,28,flagged,pin,201224,,outline lost; class flagged -> pin; hard flags OTHER_PARK/SHARED -> -
@@ -61,27 +57,23 @@ US-MT,US-10529,Sundance Lodge (BLM) Recreation Site,27,two,pin,rst10995,,outline
 US-NJ,US-11992,Whiting State Conservation Area,27,verified,pin,229060,,outline lost; class verified -> pin; VERIFIED OUTLINE LOST
 US-ID,US-10657,Milner Historic Recreation Area BLM Historic Area,26,verified,pin,rst13871,,outline lost; class verified -> pin; VERIFIED OUTLINE LOST
 US-MO,US-7189,Beaver Creek State Recreation Area,26,one,pin,mol123,,outline lost; class one -> pin
-US-WI,US-4246,Whitefish Dunes State Natural Area,26,two,pin,sgwic6880 sgwif23788,,outline lost; class two -> pin
 US-IL,US-11351,Weinberg-King Spunky Bottoms Unit State Park,24,one,pin,70886,,outline lost; class one -> pin
 US-WY,US-6188,Point of Rocks Cemetery State Historic Site,24,flagged,pin,292667,,outline lost; class flagged -> pin; hard flags SHARED -> -
-US-OK,US-6365,Osage Wildlife Management Area,22,one,pin,odw75 odw76 sgokb18,,outline lost; class one -> pin
+US-OK,US-6365,Osage Wildlife Management Area,22,one,flagged,odw75 odw76 sgokb18,sgokb18,records changed; class one -> flagged; hard flags - -> PIN_FAR
 US-WI,US-12358,Pinnacle Rock State Fish and Wildlife Area,22,one,pin,272735,,outline lost; class one -> pin
-US-WI,US-4254,Chimney Rock Oak Savanna State Natural Area,22,flagged,pin,272488 sgwic7343 sgwif23733,,outline lost; class flagged -> pin; hard flags SHARED -> -
-US-OH,US-9442,Acadia Cliffs State Wildlife Area,21,verified,pin,71613 sgohb2 sgohb393 sgohb619 sgohe2 sgohe570 sgohe571 sgohf416 sgohf620 sgohf693,,outline lost; class verified -> pin; VERIFIED OUTLINE LOST
+US-WI,US-4254,Chimney Rock Oak Savanna State Natural Area,22,flagged,verified,272488 sgwic7343 sgwif23733,sgwif23733,records changed; class flagged -> verified; hard flags SHARED -> -
+US-OH,US-9442,Acadia Cliffs State Wildlife Area,21,verified,verified,71613 sgohb2 sgohb393 sgohb619 sgohe2 sgohe570 sgohe571 sgohf416 sgohf620 sgohf693,sgohb2 sgohb619 sgohe2 sgohe570 sgohe571 sgohf416 sgohf620 sgohf693,records changed
 US-MI,US-13570,Gladwin Field Trial Wildlife Management Area,20,flagged,pin,71502 mid783 sgmib88,,outline lost; class flagged -> pin; hard flags SHARED -> -
 US-MI,US-4263,Piers Gorge Unit of Menominee River State Recreation Area,20,flagged,pin,272354 mid404,,outline lost; class flagged -> pin; hard flags OTHER_PARK/SHARED -> -
 US-TN,US-12064,Henderson Swamp State Wilderness Area,20,verified,pin,255796,,outline lost; class verified -> pin; VERIFIED OUTLINE LOST
 US-WI,US-4263,Piers Gorge Unit of Menominee River State Recreation Area,20,flagged,pin,272355 sgwia713692 sgwid19793915 sgwid19793916 sgwid19793920 sgwid19793922 sgwid19793923 sgwid19810465 sgwid19810469 sgwid19810491 sgwid19810492 sgwid19810493,,outline lost; class flagged -> pin; hard flags OTHER_PARK/SHARED -> -
-US-AK,US-12708,Kenai River State Conservation Area,19,one,pin,sgakb796,,outline lost; class one -> pin
 US-HI,US-10913,Diamond Head Summit State Trail,19,flagged,pin,195365,,outline lost; class flagged -> pin; hard flags SHARED -> -
 US-MT,US-10524,Acton (BLM) Recreation Site,19,verified,pin,rst10988,,outline lost; class verified -> pin; VERIFIED OUTLINE LOST
-US-MD,US-10765,Millington Natural Area,18,two,pin,sgmdb21,,outline lost; class two -> pin
 US-UT,US-6035,Zion NPS Wilderness Area,18,flagged,pin,3485,,outline lost; class flagged -> pin; hard flags OTHER_PARK/SHARED -> -
 US-AK,US-12381,Delta BLM Wild and Scenic River,15,one,pin,rst11370,,outline lost; class one -> pin
 US-NV,US-13269,Lake Tahoe-Eastshore Dr Byway Area of Outstanding Natural Beauty,15,one,pin,230200,,outline lost; class one -> pin
 US-OR,US-9981,Molalla River Corridor BLM Recreation Management Area,15,two,pin,rst12171,,outline lost; class two -> pin
 US-UT,US-6062,Red Cliffs Dinosaur Track Site BLM Historic Area,15,flagged,pin,rma9123,,outline lost; class flagged -> pin; hard flags SHARED -> -
-US-WY,US-6157,Split Rock BLM Interpretive Site,14,flagged,pin,wsa29617,,outline lost; class flagged -> pin; hard flags PIN_FAR -> -
 US-NE,US-3489,Massie National Waterfowl Production Area,13,flagged,pin,4664,,outline lost; class flagged -> pin; hard flags SHARED -> -
 US-NH,US-13486,Bellamy River Wildlife Management Area - East Wildlife Management Area,13,two,pin,57850 sgnhb5,,outline lost; class two -> pin
 US-MI,US-4264,Quiver Falls Unit of Menominee River State Recreation Area,12,flagged,pin,272354,,outline lost; class flagged -> pin; hard flags OTHER_PARK/SHARED -> -
@@ -90,29 +82,24 @@ US-NE,US-3483,Atlanta National Waterfowl Production Area,12,two,pin,4221,,outlin
 US-NE,US-3486,Moger National Waterfowl Production Area,12,flagged,pin,4664,,outline lost; class flagged -> pin; hard flags SHARED -> -
 US-NE,US-3490,Smith Lagoon National Waterfowl Production Area,12,flagged,pin,4664,,outline lost; class flagged -> pin; hard flags SHARED -> -
 US-WI,US-4264,Quiver Falls Unit of Menominee River State Recreation Area,12,flagged,pin,272354,,outline lost; class flagged -> pin; hard flags OTHER_PARK/SHARED -> -
-US-MD,US-10763,Fishing Bay Marshes Natural Area,10,two,pin,sgmdb11 sgmdb12,,outline lost; class two -> pin
 US-NV,US-13279,Dayton State Historical Monument,9,flagged,pin,230196,,outline lost; class flagged -> pin; hard flags OTHER_PARK/SHARED -> -
 US-OR,US-10017,Quartzville Creek BLM Wild and Scenic River,9,two,pin,rst11856 rst11966,,outline lost; class two -> pin
-US-OR,US-10487,Lake Abert and Abert Rim BLM Wilderness Area,9,one,pin,wsa31224,,outline lost; class one -> pin
 US-NE,US-3484,Peterson National Waterfowl Production Area,8,two,pin,3869,,outline lost; class two -> pin
 US-NE,US-3485,Jensen Lagoon National Waterfowl Production Area,8,two,pin,3993,,outline lost; class two -> pin
 US-WA,US-12246,Pacific Lake Recreation Site - Lakeview Ranch BLM Recreation Management Area,8,two,pin,rma10677 rst10677,,outline lost; class two -> pin
-US-WA,US-13419,Chambers Lake State Fishing Lake,7,verified,pin,158258 sgwab300 sgwae52472,,outline lost; class verified -> pin; VERIFIED OUTLINE LOST
+US-WA,US-13419,Chambers Lake State Fishing Lake,7,verified,two,158258 sgwab300 sgwae52472,sgwab300 sgwae52472,records changed; class verified -> two
 US-UT,US-11169,Bridge Hollow on the Green River BLM Recreation Management Area,6,two,pin,rma10005 rst10005,,outline lost; class two -> pin
 US-UT,US-6058,Red Cliffs Archeological Site BLM Historic Area,6,flagged,pin,rma9123,,outline lost; class flagged -> pin; hard flags SHARED -> -
 US-VT,US-3131,Maidstone State Park,6,verified,pin,61334 61335 sgvta30,,outline lost; class verified -> pin; VERIFIED OUTLINE LOST
-US-MT,US-12630,Upper Missouri River BLM Wild and Scenic River,5,two,pin,sgmtd1197,,outline lost; class two -> pin
 US-UT,US-11347,Swinging Bridge Trailhead BLM Recreation Management Area,5,flagged,pin,rma13737,,outline lost; class flagged -> pin; hard flags PIN_FAR -> -
 US-WA,US-10695,Coffeepot Lake Nature Recreation Area,5,verified,pin,rma9874 rst9874,,outline lost; class verified -> pin; VERIFIED OUTLINE LOST
 US-OR,US-10021,Topsy BLM Recreation Management Area,4,verified,pin,rma11215 rst11215 rst12988,,outline lost; class verified -> pin; VERIFIED OUTLINE LOST
 US-WA,US-13397,Modrow Bridge State Recreation Site,4,two,pin,158255,,outline lost; class two -> pin
-US-WA,US-13441,Lake Desire State Fishing Lake,4,verified,pin,158261 sgwab343 sgwae52647,,outline lost; class verified -> pin; VERIFIED OUTLINE LOST
+US-WA,US-13441,Lake Desire State Fishing Lake,4,verified,two,158261 sgwab343 sgwae52647,sgwab343 sgwae52647,records changed; class verified -> two
 US-UT,US-11711,Elbow Ranch BLM Recreation Management Area,3,two,pin,263935,,outline lost; class two -> pin
 US-WA,US-13398,Beginner's Hole State Recreation Site,3,two,pin,158013,,outline lost; class two -> pin
-US-OR,US-10483,Jordan Craters Area of Environmental Concern National Nature Reserve,2,none,pin,wsa31291 wsa31325,,outline lost; class none -> pin
 US-NV,US-13178,Mt. Irish Archaeological Site Archeological Reserve,1,flagged,pin,sgnvh1238,,outline lost; class flagged -> pin; hard flags SHARED -> -
 US-OR,US-13098,Neptune South Wayside State Recreation Site,1,flagged,pin,osp46,,outline lost; class flagged -> pin; hard flags SHARED -> -
 US-OR,US-13099,Neptune North Wayside State Recreation Site,1,flagged,pin,osp46,,outline lost; class flagged -> pin; hard flags SHARED -> -
-US-UT,US-11746,Devil's Rock Garden Day Use BLM Recreation Management Area,1,none,pin,wsa30522 wsa30599,,outline lost; class none -> pin
 US-WA,US-12831,Ruby BLM Special Recreation Management Area,1,one,pin,271501,,outline lost; class one -> pin
 US-WY,US-12725,Sweetwater Rocks (Lankin Dome) State Wilderness Area,1,two,pin,rst10741,,outline lost; class two -> pin
