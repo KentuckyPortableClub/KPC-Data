@@ -1,6 +1,6 @@
-# Engine board, 2026-11-17
+# Engine board, 2026-11-18
 
-**One line:** 1251 new candidates across 1 kinds; 99038 parks with a gap; 21 hosts blocked.
+**One line:** 1262 new candidates across 1 kinds; 99038 parks with a gap; 21 hosts blocked.
 
 | kind | area | missing yesterday | missing today | found / candidate today | still missing | top why-not |
 |---|---|---|---|---|---|---|
@@ -15,7 +15,7 @@
 | outline | AQ | 77 | 77 | 0 | 77 |  |
 | outline | AR | 394 | 394 | 0 | 394 |  |
 | outline | AS | 2 | 2 | 0 | 2 |  |
-| outline | AT | 220 | 220 | 0 | 220 |  |
+| outline | AT | 220 | 221 | 0 | 221 |  |
 | outline | AU | 3138 | 3138 | 0 | 3138 |  |
 | outline | AW | 1 | 1 | 0 | 1 |  |
 | outline | AX | 5 | 5 | 0 | 5 |  |
@@ -39,19 +39,19 @@
 | outline | BV | 1 | 1 | 0 | 1 |  |
 | outline | BW | 2 | 2 | 0 | 2 |  |
 | outline | BY | 149 | 149 | 0 | 149 |  |
-| outline | BZ | 15 | 15 | 0 | 15 |  |
-| outline | CA-AB | 65 | 65 | 7 | 58 | no-layer: no official record at the pin or by name 64, UNLIKELY only (evidence, never a question): name: none word(s) in common 54, blocked (1 source could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 44 |
+| outline | BZ | 15 | 16 | 0 | 16 |  |
+| outline | CA-AB | 65 | 65 | 7 | 58 | no-layer: no official record at the pin or by name 64, UNLIKELY only (evidence, never a question): name: none word(s) in common 54, blocked (1 source could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 45 |
 | outline | CA-BC | 40 | 40 | 28 | 12 | blocked (4 sources could not be read, e.g. blocked (robots)); the sources that answered had no record 33, blocked (9 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 29, UNLIKELY only (evidence, never a question): name: none word(s) in common 20 |
 | outline | CA-MB | 94 | 94 | 6 | 88 | no-layer: no official record at the pin or by name 171, blocked (6 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 94, UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check) 12 |
-| outline | CA-NB | 237 | 237 | 28 | 209 | UNLIKELY only (evidence, never a question): name: none word(s) in common 588, None 177, UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check) 74 |
+| outline | CA-NB | 237 | 237 | 28 | 209 | UNLIKELY only (evidence, never a question): name: none word(s) in common 615, None 177, UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check) 78 |
 | outline | CA-NL | 61 | 61 | 9 | 52 | no-layer: no official record at the pin or by name 107, blocked (2 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 50, UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check) 13 |
 | outline | CA-NS | 133 | 133 | 22 | 111 | blocked (2 sources could not be read, e.g. blocked (robots)); the sources that answered had no record 131, blocked (9 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 111, no-layer: no official record at the pin or by name 67 |
 | outline | CA-NT | 50 | 50 | 7 | 43 | no-layer: no official record at the pin or by name 64, already approved 40, blocked (1 source could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 32 |
 | outline | CA-NU | 14 | 14 | 5 | 9 | no-layer: no official record at the pin or by name 24, blocked (1 source could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 18, blocked (1 source could not be read, e.g. blocked (host resting: 3 strikes)); the sources that answered had no record 6 |
-| outline | CA-ON | 236 | 236 | 66 | 170 | UNLIKELY only (evidence, never a question): name: none word(s) in common 351, UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check) 147, None 139 |
+| outline | CA-ON | 236 | 236 | 71 | 165 | UNLIKELY only (evidence, never a question): name: none word(s) in common 361, UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check) 149, None 139 |
 | outline | CA-PE | 40 | 40 | 8 | 32 | no-layer: no official record at the pin or by name 37, UNLIKELY only (evidence, never a question): name: none word(s) in common 33, blocked (2 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 21 |
-| outline | CA-QC | 400 | 400 | 137 | 263 | no-layer: no official record at the pin or by name 597, blocked (2 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 382, UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check) 165 |
-| outline | CA-SK | 95 | 95 | 8 | 87 | no-layer: no official record at the pin or by name 116, blocked (2 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 74, UNLIKELY only (evidence, never a question): name: none word(s) in common 33 |
+| outline | CA-QC | 400 | 400 | 137 | 263 | no-layer: no official record at the pin or by name 597, blocked (2 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 411, UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check) 168 |
+| outline | CA-SK | 95 | 95 | 9 | 86 | no-layer: no official record at the pin or by name 116, blocked (2 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 87, UNLIKELY only (evidence, never a question): name: none word(s) in common 35 |
 | outline | CA-YT | 88 | 88 | 2 | 86 | blocked (2 sources could not be read, e.g. blocked (robots)); the sources that answered had no record 144, blocked (3 sources could not be read, e.g. blocked (robots)); the sources that answered had no record 99, no-layer: no official record at the pin or by name 45 |
 | outline | CD | 9 | 9 | 0 | 9 |  |
 | outline | CF | 14 | 14 | 0 | 14 |  |
@@ -89,7 +89,7 @@
 | outline | FO | 3 | 3 | 0 | 3 |  |
 | outline | FR | 3470 | 3470 | 0 | 3470 |  |
 | outline | GA | 5 | 5 | 0 | 5 |  |
-| outline | GB | 3395 | 3395 | 61 | 3334 | blocked (6 sources could not be read, e.g. blocked (host resting: 3 strikes)); the sources that answered had no record 258, UNLIKELY only (evidence, never a question): name: one word(s) in common 153, blocked (31 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 148 |
+| outline | GB | 3395 | 3395 | 63 | 3332 | blocked (6 sources could not be read, e.g. blocked (host resting: 3 strikes)); the sources that answered had no record 258, UNLIKELY only (evidence, never a question): name: one word(s) in common 155, blocked (31 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 148 |
 | outline | GD | 16 | 16 | 0 | 16 |  |
 | outline | GE | 5 | 5 | 0 | 5 |  |
 | outline | GF | 35 | 35 | 0 | 35 |  |
@@ -174,7 +174,7 @@
 | outline | NG | 10 | 10 | 0 | 10 |  |
 | outline | NI | 23 | 23 | 0 | 23 |  |
 | outline | NL | 313 | 313 | 0 | 313 |  |
-| outline | NO | 377 | 377 | 0 | 377 |  |
+| outline | NO | 377 | 365 | 0 | 365 |  |
 | outline | NP | 12 | 12 | 0 | 12 |  |
 | outline | NR | 2 | 2 | 0 | 2 |  |
 | outline | NU | 2 | 2 | 0 | 2 |  |
@@ -235,14 +235,14 @@
 | outline | UA | 114 | 114 | 0 | 114 |  |
 | outline | UG | 22 | 22 | 0 | 22 |  |
 | outline | UM | 2 | 2 | 0 | 2 |  |
-| outline | US-AK | 48 | 48 | 15 | 33 | already approved 19, UNLIKELY only (evidence, never a question): name: one word(s) in common 15, UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check) 15 |
-| outline | US-AL | 25 | 25 | 13 | 12 | UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check) 25, no-layer: no official record at the pin or by name 19, blocked (20 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 5 |
+| outline | US-AK | 48 | 48 | 15 | 33 | already approved 20, blocked (22 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 19, UNLIKELY only (evidence, never a question): name: one word(s) in common 15 |
+| outline | US-AL | 25 | 25 | 13 | 12 | UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check) 25, no-layer: no official record at the pin or by name 19, blocked (20 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 7 |
 | outline | US-AR | 54 | 54 | 15 | 39 | no-layer: no official record at the pin or by name 54, UNLIKELY only (evidence, never a question): line park vs polygon record (or the other way round) 28, blocked (27 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 26 |
-| outline | US-AZ | 14 | 14 | 2 | 12 | already approved 7, UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check) 7, blocked (28 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 1 |
-| outline | US-CA | 21 | 21 | 0 | 21 | no-layer: no official record at the pin or by name 27, blocked (24 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 16, UNLIKELY only (evidence, never a question): name: none word(s) in common 9 |
-| outline | US-CO | 13 | 13 | 9 | 4 | already approved 9, blocked (21 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 6, no-layer: no official record at the pin or by name 4 |
-| outline | US-CT | 13 | 13 | 1 | 12 | no-layer: no official record at the pin or by name 24, blocked (24 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 20, already approved 7 |
-| outline | US-DC | 6 | 6 | 1 | 5 | already approved 10, None 7, no-layer: no official record at the pin or by name 5 |
+| outline | US-AZ | 14 | 14 | 2 | 12 | already approved 8, UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check) 7, blocked (28 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 1 |
+| outline | US-CA | 21 | 21 | 0 | 21 | no-layer: no official record at the pin or by name 27, blocked (24 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 20, UNLIKELY only (evidence, never a question): name: none word(s) in common 9 |
+| outline | US-CO | 13 | 13 | 9 | 4 | already approved 10, blocked (21 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 6, no-layer: no official record at the pin or by name 4 |
+| outline | US-CT | 13 | 13 | 1 | 12 | no-layer: no official record at the pin or by name 24, blocked (24 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 20, already approved 8 |
+| outline | US-DC | 6 | 6 | 1 | 5 | already approved 10, blocked (20 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 10, None 7 |
 | outline | US-DE | 7 | 7 | 16 | 0 | UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check) 6, UNLIKELY only (evidence, never a question): name: one word(s) in common 5, UNLIKELY only (evidence, never a question): other kind of place (historic_site vs state_park) 4 |
 | outline | US-FL | 30 | 30 | 41 | 0 | UNLIKELY only (evidence, never a question): name: none word(s) in common 50, UNLIKELY only (evidence, never a question): container: one record under several parks (or a management district) 11, UNLIKELY only (evidence, never a question): name: one word(s) in common 9 |
 | outline | US-GA | 18 | 18 | 2 | 16 | no-layer: no official record at the pin or by name 25, blocked (25 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 25, already approved 6 |
@@ -260,7 +260,7 @@
 | outline | US-MI | 47 | 47 | 1 | 46 | no-layer: no official record at the pin or by name 96, blocked (28 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 89, already approved 26 |
 | outline | US-MN | 21 | 21 | 37 | 0 | blocked (21 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 16, UNLIKELY only (evidence, never a question): name: none word(s) in common 7, UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check) 6 |
 | outline | US-MO | 18 | 18 | 33 | 0 | no-layer: no official record at the pin or by name 12, blocked (23 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 12, UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check) 6 |
-| outline | US-MS | 58 | 58 | 2 | 56 | no-layer: no official record at the pin or by name 88, blocked (22 sources could not be read, e.g. blocked (robots.txt not readable this run)); the sources that answered had no record 74, UNLIKELY only (evidence, never a question): name: none word(s) in common 21 |
+| outline | US-MS | 58 | 58 | 2 | 56 | no-layer: no official record at the pin or by name 88, blocked (22 sources could not be read, e.g. blocked (robots.txt not readable this run)); the sources that answered had no record 76, UNLIKELY only (evidence, never a question): name: none word(s) in common 21 |
 | outline | US-MT | 12 | 12 | 7 | 5 | no-layer: no official record at the pin or by name 16, blocked (23 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 8, already approved 7 |
 | outline | US-NC | 35 | 35 | 8 | 27 | blocked (24 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 54, no-layer: no official record at the pin or by name 37, UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check) 13 |
 | outline | US-ND | 45 | 45 | 9 | 36 | no-layer: no official record at the pin or by name 48, blocked (23 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 40, UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check) 33 |
@@ -268,7 +268,7 @@
 | outline | US-NH | 15 | 15 | 6 | 9 | UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check) 15, already approved 9, UNLIKELY only (evidence, never a question): other kind of place (state_park vs state_forest) 4 |
 | outline | US-NJ | 6 | 6 | 2 | 4 | no-layer: no official record at the pin or by name 11, blocked (23 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 9, UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check) 3 |
 | outline | US-NM | 20 | 20 | 4 | 16 | blocked (26 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 13, no-layer: no official record at the pin or by name 12, UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check) 8 |
-| outline | US-NV | 180 | 180 | 54 | 126 | UNLIKELY only (evidence, never a question): surface-manager layer: never matched against parks 156, UNLIKELY only (evidence, never a question): name: none word(s) in common 133, no-layer: no official record at the pin or by name 114 |
+| outline | US-NV | 180 | 180 | 55 | 125 | UNLIKELY only (evidence, never a question): surface-manager layer: never matched against parks 164, UNLIKELY only (evidence, never a question): name: none word(s) in common 135, no-layer: no official record at the pin or by name 114 |
 | outline | US-NY | 31 | 31 | 1 | 30 | blocked (27 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 42, no-layer: no official record at the pin or by name 40, blocked (1 source could not be read, e.g. blocked (robots)); the sources that answered had no record 15 |
 | outline | US-OH | 2 | 2 | 3 | 0 | blocked (26 sources could not be read, e.g. blocked (robots)); the sources that answered had no record 2, blocked (6 sources could not be read, e.g. blocked (robots)); the sources that answered had no record 1, no-layer: no official record at the pin or by name 1 |
 | outline | US-OK | 49 | 49 | 18 | 31 | blocked (24 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 70, no-layer: no official record at the pin or by name 63, UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check) 22 |
@@ -279,13 +279,13 @@
 | outline | US-SD | 5 | 5 | 4 | 1 | blocked (20 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 7, already approved 4, no-layer: no official record at the pin or by name 1 |
 | outline | US-TN | 20 | 20 | 8 | 12 | no-layer: no official record at the pin or by name 32, blocked (30 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 31, UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check) 4 |
 | outline | US-TX | 16 | 16 | 4 | 12 | no-layer: no official record at the pin or by name 26, blocked (26 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 13, blocked (28 sources could not be read, e.g. blocked (robots.txt not readable this run)); the sources that answered had no record 13 |
-| outline | US-UT | 304 | 304 | 67 | 237 | UNLIKELY only (evidence, never a question): surface-manager layer: never matched against parks 423, UNLIKELY only (evidence, never a question): name: none word(s) in common 133, blocked (30 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 90 |
+| outline | US-UT | 304 | 304 | 68 | 236 | UNLIKELY only (evidence, never a question): surface-manager layer: never matched against parks 426, UNLIKELY only (evidence, never a question): name: none word(s) in common 134, blocked (30 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 94 |
 | outline | US-VA | 12 | 12 | 15 | 0 | UNLIKELY only (evidence, never a question): container: one record under several parks (or a management district) 8, already approved 7, blocked (1 source could not be read, e.g. blocked (host resting: 3 strikes)); the sources that answered had no record 6 |
 | outline | US-VT | 23 | 23 | 22 | 1 | UNLIKELY only (evidence, never a question): other kind of place (state_park vs state_forest) 49, UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check) 13, UNLIKELY only (evidence, never a question): name: none word(s) in common 12 |
-| outline | US-WA | 69 | 69 | 68 | 1 | UNLIKELY only (evidence, never a question): name: none word(s) in common 49, UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check) 35, no-layer: no official record at the pin or by name 13 |
+| outline | US-WA | 69 | 69 | 68 | 1 | UNLIKELY only (evidence, never a question): name: none word(s) in common 50, UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check) 37, no-layer: no official record at the pin or by name 13 |
 | outline | US-WI | 31 | 31 | 50 | 0 | UNLIKELY only (evidence, never a question): name: none word(s) in common 30, UNLIKELY only (evidence, never a question): container under 2 parks 22, blocked (20 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 10 |
 | outline | US-WV | 9 | 9 | 0 | 9 | UNLIKELY only (evidence, never a question): name: none word(s) in common 21, UNLIKELY only (evidence, never a question): name: one word(s) in common 3, blocked (23 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 2 |
-| outline | US-WY | 102 | 102 | 5 | 97 | blocked (24 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 69, no-layer: no official record at the pin or by name 64, UNLIKELY only (evidence, never a question): name: none word(s) in common 12 |
+| outline | US-WY | 102 | 102 | 6 | 96 | blocked (24 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 70, no-layer: no official record at the pin or by name 64, UNLIKELY only (evidence, never a question): name: none word(s) in common 12 |
 | outline | UY | 84 | 84 | 0 | 84 |  |
 | outline | VC | 36 | 36 | 0 | 36 |  |
 | outline | VE | 60 | 60 | 0 | 60 |  |
@@ -304,30 +304,30 @@
 
 | kind | pass 1 | pass 2 | solved in pass 2 |
 |---|---|---|---|
-| outline | {"error": 430, "already approved": 628, "found": 287, "candidate": 1070, "evidence": 4735, "blocked": 3494, "not found": 2571, "pin only": 5} | null | - |
+| outline | {"error": 430, "already approved": 638, "found": 288, "candidate": 1080, "evidence": 4815, "blocked": 3598, "not found": 2571, "pin only": 6} | null | - |
 
 ## Blocked hosts (blocked is not "not found"; retried next night)
 
-- services1.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (943)
-- services.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (619)
-- apps.fs.usda.gov: blocked (host rule: saved copies only or never contact; on the needs-download li (372)
-- datamap.gov.wales: blocked (robots) (225)
-- services2.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (177)
-- services-eu1.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (102)
+- services.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (1040)
+- services1.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (1030)
+- datamap.gov.wales: blocked (robots) (465)
+- apps.fs.usda.gov: blocked (host rule: saved copies only or never contact; on the needs-download li (429)
+- services2.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (372)
+- services-eu1.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (237)
+- services5.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (108)
 - mapservices.nps.gov: blocked (host resting: 3 strikes) (99)
-- services5.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (73)
-- services3.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (66)
-- services7.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (52)
-- services6.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (32)
-- utility.arcgis.com: blocked (robots) (30)
-- services9.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (19)
+- services7.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (72)
+- services6.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (54)
+- services3.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (46)
+- utility.arcgis.com: blocked (robots) (29)
+- services9.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (24)
+- gis.rvca.ca: blocked (host resting: 3 strikes) (21)
+- gis.arkansas.gov: blocked (robots) (15)
 - maps.gov.bc.ca: blocked (robots) (15)
-- ndgishub.nd.gov: blocked (robots.txt not readable this run) (12)
-- arcgisserver.digital.mass.gov: blocked (robots.txt not readable this run) (11)
-- ncnhde.natureserve.org: blocked (host rule: saved copies only or never contact; on the needs-download li (9)
-- gis.arkansas.gov: blocked (robots) (9)
-- tnmap.tn.gov: blocked (host resting: 3 strikes) (4)
-- kanplan.ksdot.gov: blocked (robots) (2)
+- ncnhde.natureserve.org: blocked (host rule: saved copies only or never contact; on the needs-download li (15)
+- tnmap.tn.gov: blocked (host resting: 3 strikes) (10)
+- arcgisserver.digital.mass.gov: blocked (robots.txt not readable this run) (6)
+- : blocked (robots.txt not readable this run) (4)
 - mapservices.nps.gov: blocked (HTTP 403: server refuses this client) (2)
 - tnmap.tn.gov: blocked (HTTP 403: server refuses this client) (2)
 - services8.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (1)
