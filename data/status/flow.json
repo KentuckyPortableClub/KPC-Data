@@ -1,6 +1,6 @@
 {
  "about": "FLOW BOARD (chat 10, Nov 1 2026; Brandon 2:01 PM: 'stuff seems to get dropped a lot ... where you can see for example 900",
- "built": "2026-11-18 03:22Z",
+ "built": "2026-11-18 09:13Z",
  "stuck_days": 2,
  "piles": [
   {
@@ -49,7 +49,7 @@
    "n": 0,
    "owner": "chat 10 (the reader of that kind)",
    "note": "",
-   "date": "2026-11-17",
+   "date": "2026-11-18",
    "first_seen": "2026-11-01",
    "moved": "2026-11-02",
    "still_days": 16,
@@ -74,13 +74,13 @@
    "what": "engine finds handed to the collector (last hand-back)",
    "n": 0,
    "owner": "layer collector (every 2 h)",
-   "note": "engine results last saved 2026-11-17",
-   "date": "2026-11-17",
-   "engine_saved": "2026-11-17",
+   "note": "engine results last saved 2026-11-18",
+   "date": "2026-11-18",
+   "engine_saved": "2026-11-18",
    "first_seen": "2026-11-01",
    "moved": "2026-11-01",
    "still_days": 17,
-   "stuck": true
+   "stuck": false
   },
   {
    "id": "collector-left",
@@ -291,34 +291,6 @@
    "stuck": true
   },
   {
-   "id": "held-docs",
-   "stage": "7 waiting room",
-   "what": "HELD docs files (a check failed; data/waiting/today.md says why)",
-   "n": 50,
-   "owner": "chat 2 (fix) + chat 11",
-   "note": "US-AK, US-HI, US-OR, US-MS, US-AZ, US-NV, US-AL, US-AR, US-CA, US-CO, US-CT, US-DC, US-DE, US-FL, US-GA, US-ID, US-IL, US-IN, US-KS, US-KY, US-LA, US-MA, US-MD, …",
-   "date": "2026-11-11",
-   "since": "2026-11-11",
-   "first_seen": "2026-11-01",
-   "moved": "2026-11-11",
-   "still_days": 7,
-   "stuck": true
-  },
-  {
-   "id": "held-pile-solver",
-   "stage": "7 waiting room",
-   "what": "HELD pile-solver files (a check failed; data/waiting/today.md says why)",
-   "n": 1,
-   "owner": "chat 2 (fix) + chat 11",
-   "note": "US-VT",
-   "date": "2026-11-05",
-   "since": "2026-11-05",
-   "first_seen": "2026-11-05",
-   "moved": "2026-11-05",
-   "still_days": 13,
-   "stuck": true
-  },
-  {
    "id": "held-trails",
    "stage": "7 waiting room",
    "what": "HELD trails files (a check failed; data/waiting/today.md says why)",
@@ -347,24 +319,24 @@
    "stuck": true
   },
   {
-   "id": "held-wwff",
+   "id": "held-world-key",
    "stage": "7 waiting room",
-   "what": "HELD wwff files (a check failed; data/waiting/today.md says why)",
+   "what": "HELD world-key files (a check failed; data/waiting/today.md says why)",
    "n": 1,
    "owner": "chat 2 (fix) + chat 11",
-   "note": "CTFF",
-   "date": "2026-11-08",
-   "since": "2026-11-08",
-   "first_seen": "2026-11-08",
-   "moved": "2026-11-08",
-   "still_days": 10,
-   "stuck": true
+   "note": "ZA",
+   "date": "2026-11-18",
+   "since": "2026-11-18",
+   "first_seen": "2026-11-18",
+   "moved": "2026-11-18",
+   "still_days": 0,
+   "stuck": false
   },
   {
    "id": "grade-queue",
    "stage": "7 waiting room",
    "what": "files waiting for a grader (data/status/grade-queue.md)",
-   "n": 233,
+   "n": 85,
    "owner": "chat 11",
    "note": "",
    "date": "2026-11-18",
@@ -600,7 +572,7 @@
    "what": "key-doctor: found work",
    "n": 1,
    "owner": "chat 10",
-   "note": "NOs: 433 of 723 NOs landed; 290 missing (re-applied to overrides.fixed.json); 1291 came back in the  · chat 10 (came-back NOs / stuck areas); per-park release in release-approved",
+   "note": "NOs: 433 of 723 NOs landed; 290 missing (re-applied to overrides.fixed.json); 1282 came back in the  · chat 10 (came-back NOs / stuck areas); per-park release in release-approved",
    "date": "2026-11-18",
    "first_seen": "2026-11-02",
    "moved": "2026-11-02",
@@ -632,19 +604,6 @@
    "moved": "2026-11-05",
    "still_days": 13,
    "stuck": true
-  },
-  {
-   "id": "bot-waiting room",
-   "stage": "8 bots",
-   "what": "waiting room: RED (the bot is broken)",
-   "n": 1,
-   "owner": "chat 10",
-   "note": "205 files waiting over 3 days in data/waiting/in/ (e.g. US-VA.json) · chat 11 (look at the waiting room run)",
-   "date": "2026-11-18",
-   "first_seen": "2026-11-18",
-   "moved": "2026-11-18",
-   "still_days": 0,
-   "stuck": false
   },
   {
    "id": "bot-world finder v2",
