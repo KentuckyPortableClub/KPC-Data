@@ -2,7 +2,7 @@
 
 For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in data/waiting/approved.json; the nightly run lets it out.
 
-## Held files: 244 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
+## Held files: 110 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
 
 | since | days | file | last check | why |
 |---|---|---|---|---|
@@ -10,17 +10,60 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-01 | 17 | data/truth/US-MD.json | HOLD | F-R3 48 of 89 sized parks are OFF (over half: a reading problem?) |
 | 2026-11-01 | 17 | data/truth/US-MN.json | HOLD | F-R3 13 of 20 sized parks are OFF (over half: a reading problem?) |
 | 2026-11-01 | 17 | data/truth/US-OK.json | HOLD | F-R3 53 of 100 sized parks are OFF (over half: a reading problem?) |
-| 2026-11-05 | 13 | data/pile-solver/US-VT.json | HOLD | US-5538: pin 1920 m out without the POTA pin flag |
 | 2026-11-08 | 10 | data/trails/US-13626.json | HOLD | F-T3 length 16 -> 114 km (outside -25% / +50%) |
 | 2026-11-08 | 10 | data/trails/US-9203.json | HOLD | F-T2 points 19246 -> 1822 (under half the saved line); F-T3 length 138 -> 88 km (outside -25% / +50%) |
 | 2026-11-10 | 8 | data/truth/US-UT.json | HOLD | F-R2 6 OFF rows share the size 2,200,000.0 ac |
 | 2026-11-10 | 8 | data/truth/US-WA.json | HOLD | F-R2 5 OFF rows share the size 564.0 ac; F-R3 157 of 188 sized parks are OFF (over half: a reading problem?) |
-| 2026-11-11 | 7 | data/docs/US-AK.json | HOLD | F-D3 2 of 20 re-tested links definitely dead (not already ok in live), e.g. https://www.fws.gov/refuge/nowitna/visit-us/rules-policies |
-| 2026-11-11 | 7 | data/docs/US-HI.json | HOLD | F-D3 5 of 20 re-tested links definitely dead (not already ok in live), e.g. https://www.nps.gov/puhe/learn/management/lawsandpolicies.htm |
-| 2026-11-15 | 3 | data/docs/US-OR.json | HOLD | F-D3 5 of 20 re-tested links definitely dead (not already ok in live), e.g. https://www.fws.gov/refuge/siletz-bay/visit-us/rules-policies |
-| 2026-11-16 | 2 | data/docs/US-MS.json | HOLD | F-D3 2 of 20 re-tested links definitely dead (not already ok in live), e.g. https://www.fws.gov/refuge/coldwater_river/visit-us/rules-policies |
-| 2026-11-17 | 1 | data/docs/US-AZ.json | HOLD | F-D3 2 of 20 re-tested links definitely dead (not already ok in live), e.g. https://www.fws.gov/refuge/bill-williams-river/visit-us/rules-policies |
-| 2026-11-17 | 1 | data/docs/US-NV.json | HOLD | F-D3 2 of 20 re-tested links definitely dead (not already ok in live), e.g. https://www.fs.usda.gov/recmain/alerts-notices |
+| 2026-11-11 | 7 | data/docs/US-AK.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-11 | 7 | data/docs/US-HI.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-15 | 3 | data/docs/US-OR.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-16 | 2 | data/docs/US-MS.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-17 | 1 | data/docs/US-AZ.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-17 | 1 | data/docs/US-NV.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-18 | 0 | data/docs/US-AL.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-18 | 0 | data/docs/US-AR.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-18 | 0 | data/docs/US-CA.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-18 | 0 | data/docs/US-CO.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-18 | 0 | data/docs/US-CT.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-18 | 0 | data/docs/US-DC.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-18 | 0 | data/docs/US-DE.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-18 | 0 | data/docs/US-FL.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-18 | 0 | data/docs/US-GA.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-18 | 0 | data/docs/US-ID.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-18 | 0 | data/docs/US-IL.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-18 | 0 | data/docs/US-IN.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-18 | 0 | data/docs/US-KS.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-18 | 0 | data/docs/US-KY.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-18 | 0 | data/docs/US-LA.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-18 | 0 | data/docs/US-MA.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-18 | 0 | data/docs/US-MD.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-18 | 0 | data/docs/US-ME.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-18 | 0 | data/docs/US-MI.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-18 | 0 | data/docs/US-MN.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-18 | 0 | data/docs/US-MO.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-18 | 0 | data/docs/US-MT.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-18 | 0 | data/docs/US-NC.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-18 | 0 | data/docs/US-ND.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-18 | 0 | data/docs/US-NE.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-18 | 0 | data/docs/US-NH.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-18 | 0 | data/docs/US-NJ.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-18 | 0 | data/docs/US-NM.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-18 | 0 | data/docs/US-NY.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-18 | 0 | data/docs/US-OH.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-18 | 0 | data/docs/US-OK.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-18 | 0 | data/docs/US-PA.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-18 | 0 | data/docs/US-RI.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-18 | 0 | data/docs/US-SC.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-18 | 0 | data/docs/US-SD.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-18 | 0 | data/docs/US-TN.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-18 | 0 | data/docs/US-TX.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-18 | 0 | data/docs/US-UT.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-18 | 0 | data/docs/US-VA.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-18 | 0 | data/docs/US-VT.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-18 | 0 | data/docs/US-WA.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-18 | 0 | data/docs/US-WI.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-18 | 0 | data/docs/US-WV.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
+| 2026-11-18 | 0 | data/docs/US-WY.json | HOLD | F-4 unsure: link re-test needs the network (NET=1): not run, so the file waits |
 | ? | ? | data/campinfo/US-DC.json | PASS |  |
 | ? | ? | data/campinfo/US-KS.json | PASS |  |
 | ? | ? | data/campinfo/US-LA.json | PASS |  |
@@ -30,226 +73,49 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/campstate/US-FL.json | PASS |  |
 | ? | ? | data/campstate/US-UT.json | PASS |  |
 | ? | ? | data/campstate/US-VA.json | PASS |  |
-| ? | ? | data/docs/US-AL.json | PASS |  |
-| ? | ? | data/docs/US-AR.json | PASS |  |
-| ? | ? | data/docs/US-CA.json | PASS |  |
-| ? | ? | data/docs/US-CO.json | PASS |  |
-| ? | ? | data/docs/US-CT.json | PASS |  |
-| ? | ? | data/docs/US-DC.json | PASS |  |
-| ? | ? | data/docs/US-DE.json | PASS |  |
-| ? | ? | data/docs/US-FL.json | PASS |  |
-| ? | ? | data/docs/US-GA.json | PASS |  |
-| ? | ? | data/docs/US-ID.json | PASS |  |
-| ? | ? | data/docs/US-IL.json | PASS |  |
-| ? | ? | data/docs/US-IN.json | PASS |  |
-| ? | ? | data/docs/US-KS.json | PASS |  |
-| ? | ? | data/docs/US-KY.json | PASS |  |
-| ? | ? | data/docs/US-LA.json | PASS |  |
-| ? | ? | data/docs/US-MA.json | PASS |  |
-| ? | ? | data/docs/US-MD.json | PASS |  |
-| ? | ? | data/docs/US-ME.json | PASS |  |
-| ? | ? | data/docs/US-MI.json | PASS |  |
-| ? | ? | data/docs/US-MN.json | PASS |  |
-| ? | ? | data/docs/US-MO.json | PASS |  |
-| ? | ? | data/docs/US-MT.json | PASS |  |
-| ? | ? | data/docs/US-NC.json | PASS |  |
-| ? | ? | data/docs/US-ND.json | PASS |  |
-| ? | ? | data/docs/US-NE.json | PASS |  |
-| ? | ? | data/docs/US-NH.json | PASS |  |
-| ? | ? | data/docs/US-NJ.json | PASS |  |
-| ? | ? | data/docs/US-NM.json | PASS |  |
-| ? | ? | data/docs/US-NY.json | PASS |  |
-| ? | ? | data/docs/US-OH.json | PASS |  |
-| ? | ? | data/docs/US-OK.json | PASS |  |
-| ? | ? | data/docs/US-PA.json | PASS |  |
-| ? | ? | data/docs/US-RI.json | PASS |  |
-| ? | ? | data/docs/US-SC.json | PASS |  |
-| ? | ? | data/docs/US-SD.json | PASS |  |
-| ? | ? | data/docs/US-TN.json | PASS |  |
-| ? | ? | data/docs/US-TX.json | PASS |  |
-| ? | ? | data/docs/US-UT.json | PASS |  |
-| ? | ? | data/docs/US-VA.json | PASS |  |
-| ? | ? | data/docs/US-VT.json | PASS |  |
-| ? | ? | data/docs/US-WA.json | PASS |  |
-| ? | ? | data/docs/US-WI.json | PASS |  |
-| ? | ? | data/docs/US-WV.json | PASS |  |
-| ? | ? | data/docs/US-WY.json | PASS |  |
 | ? | ? | data/hours/US-KY.json | PASS |  |
-| ? | ? | data/pile-solver/CA-AB.json | PASS |  |
-| ? | ? | data/pile-solver/CA-BC.json | PASS |  |
-| ? | ? | data/pile-solver/CA-MB.json | PASS |  |
-| ? | ? | data/pile-solver/CA-NB.json | PASS |  |
-| ? | ? | data/pile-solver/CA-NL.json | PASS |  |
-| ? | ? | data/pile-solver/CA-NS.json | PASS |  |
-| ? | ? | data/pile-solver/CA-NT.json | PASS |  |
-| ? | ? | data/pile-solver/CA-ON.json | PASS |  |
-| ? | ? | data/pile-solver/CA-PE.json | PASS |  |
-| ? | ? | data/pile-solver/CA-QC.json | PASS |  |
-| ? | ? | data/pile-solver/CA-SK.json | PASS |  |
-| ? | ? | data/pile-solver/CA-YT.json | PASS |  |
-| ? | ? | data/pile-solver/US-AK.json | PASS |  |
-| ? | ? | data/pile-solver/US-AL.json | PASS |  |
-| ? | ? | data/pile-solver/US-AR.json | PASS |  |
-| ? | ? | data/pile-solver/US-AZ.json | PASS |  |
-| ? | ? | data/pile-solver/US-CA.json | PASS |  |
-| ? | ? | data/pile-solver/US-CO.json | PASS |  |
-| ? | ? | data/pile-solver/US-CT.json | PASS |  |
-| ? | ? | data/pile-solver/US-DC.json | PASS |  |
-| ? | ? | data/pile-solver/US-FL.json | PASS |  |
-| ? | ? | data/pile-solver/US-GA.json | PASS |  |
-| ? | ? | data/pile-solver/US-IA.json | PASS |  |
-| ? | ? | data/pile-solver/US-ID.json | PASS |  |
-| ? | ? | data/pile-solver/US-IL.json | PASS |  |
-| ? | ? | data/pile-solver/US-IN.json | PASS |  |
-| ? | ? | data/pile-solver/US-KS.json | PASS |  |
-| ? | ? | data/pile-solver/US-LA.json | PASS |  |
-| ? | ? | data/pile-solver/US-MA.json | PASS |  |
-| ? | ? | data/pile-solver/US-MD.json | PASS |  |
-| ? | ? | data/pile-solver/US-MI.json | PASS |  |
-| ? | ? | data/pile-solver/US-MN.json | PASS |  |
-| ? | ? | data/pile-solver/US-NC.json | PASS |  |
-| ? | ? | data/pile-solver/US-ND.json | PASS |  |
-| ? | ? | data/pile-solver/US-NE.json | PASS |  |
-| ? | ? | data/pile-solver/US-NH.json | PASS |  |
-| ? | ? | data/pile-solver/US-NJ.json | PASS |  |
-| ? | ? | data/pile-solver/US-NM.json | PASS |  |
-| ? | ? | data/pile-solver/US-NV.json | PASS |  |
-| ? | ? | data/pile-solver/US-NY.json | PASS |  |
-| ? | ? | data/pile-solver/US-OH.json | PASS |  |
-| ? | ? | data/pile-solver/US-OK.json | PASS |  |
-| ? | ? | data/pile-solver/US-OR.json | PASS |  |
-| ? | ? | data/pile-solver/US-PA.json | PASS |  |
-| ? | ? | data/pile-solver/US-RI.json | PASS |  |
-| ? | ? | data/pile-solver/US-TN.json | PASS |  |
-| ? | ? | data/pile-solver/US-TX.json | PASS |  |
-| ? | ? | data/pile-solver/US-UT.json | PASS |  |
-| ? | ? | data/pile-solver/US-VA.json | PASS |  |
-| ? | ? | data/pile-solver/US-WA.json | PASS |  |
-| ? | ? | data/pile-solver/US-WI.json | PASS |  |
-| ? | ? | data/pile-solver/US-WV.json | PASS |  |
-| ? | ? | data/pile-solver/US-WY.json | PASS |  |
-| ? | ? | data/trails/CA-5993.json | PASS |  |
-| ? | ? | data/trails/CA-6339.json | PASS |  |
-| ? | ? | data/trails/CA-6381.json | PASS |  |
-| ? | ? | data/trails/US-10423.json | PASS |  |
-| ? | ? | data/trails/US-10660.json | PASS |  |
-| ? | ? | data/trails/US-10714.json | PASS |  |
-| ? | ? | data/trails/US-10862.json | PASS |  |
-| ? | ? | data/trails/US-10880.json | PASS |  |
-| ? | ? | data/trails/US-10884.json | PASS |  |
-| ? | ? | data/trails/US-10900.json | PASS |  |
-| ? | ? | data/trails/US-10914.json | PASS |  |
-| ? | ? | data/trails/US-10915.json | PASS |  |
-| ? | ? | data/trails/US-10917.json | PASS |  |
-| ? | ? | data/trails/US-10929.json | PASS |  |
-| ? | ? | data/trails/US-13195.json | PASS |  |
-| ? | ? | data/trails/US-13624.json | PASS |  |
-| ? | ? | data/trails/US-4559.json | PASS |  |
-| ? | ? | data/trails/US-4564.json | PASS |  |
-| ? | ? | data/trails/US-7544.json | PASS |  |
-| ? | ? | data/trails/US-8292.json | PASS |  |
-| ? | ? | data/trails/US-8437.json | PASS |  |
-| ? | ? | data/trails/US-8617.json | PASS |  |
-| ? | ? | data/trails/US-9163.json | PASS |  |
-| ? | ? | data/truth/US-AK.json | PASS |  |
-| ? | ? | data/truth/US-AL.json | PASS |  |
-| ? | ? | data/truth/US-AR.json | PASS |  |
-| ? | ? | data/truth/US-AZ.json | PASS |  |
-| ? | ? | data/truth/US-CA.json | PASS |  |
-| ? | ? | data/truth/US-CO.json | PASS |  |
-| ? | ? | data/truth/US-CT.json | PASS |  |
-| ? | ? | data/truth/US-DC.json | PASS |  |
-| ? | ? | data/truth/US-DE.json | PASS |  |
-| ? | ? | data/truth/US-FL.json | PASS |  |
-| ? | ? | data/truth/US-GA.json | PASS |  |
-| ? | ? | data/truth/US-HI.json | PASS |  |
-| ? | ? | data/truth/US-ID.json | PASS |  |
-| ? | ? | data/truth/US-IL.json | PASS |  |
-| ? | ? | data/truth/US-IN.json | PASS |  |
-| ? | ? | data/truth/US-KS.json | PASS |  |
-| ? | ? | data/truth/US-KY.json | PASS |  |
-| ? | ? | data/truth/US-LA.json | PASS |  |
-| ? | ? | data/truth/US-ME.json | PASS |  |
-| ? | ? | data/truth/US-MI.json | PASS |  |
-| ? | ? | data/truth/US-MO.json | PASS |  |
-| ? | ? | data/truth/US-MS.json | PASS |  |
-| ? | ? | data/truth/US-MT.json | PASS |  |
-| ? | ? | data/truth/US-NC.json | PASS |  |
-| ? | ? | data/truth/US-NE.json | PASS |  |
-| ? | ? | data/truth/US-NH.json | PASS |  |
-| ? | ? | data/truth/US-NJ.json | PASS |  |
-| ? | ? | data/truth/US-NM.json | PASS |  |
-| ? | ? | data/truth/US-NV.json | PASS |  |
-| ? | ? | data/truth/US-NY.json | PASS |  |
-| ? | ? | data/truth/US-OH.json | PASS |  |
-| ? | ? | data/truth/US-OR.json | PASS |  |
-| ? | ? | data/truth/US-PA.json | PASS |  |
-| ? | ? | data/truth/US-RI.json | PASS |  |
-| ? | ? | data/truth/US-SC.json | PASS |  |
-| ? | ? | data/truth/US-TN.json | PASS |  |
-| ? | ? | data/truth/US-TX.json | PASS |  |
-| ? | ? | data/truth/US-VA.json | PASS |  |
-| ? | ? | data/truth/US-VT.json | PASS |  |
-| ? | ? | data/truth/US-WV.json | PASS |  |
-| ? | ? | data/truth/US-WY.json | PASS |  |
+| ? | ? | data/us-key/US-AK.json | RELEASE |  |
+| ? | ? | data/us-key/US-CA.json | RELEASE |  |
+| ? | ? | data/us-key/US-CO.json | RELEASE |  |
+| ? | ? | data/us-key/US-CT.json | RELEASE |  |
+| ? | ? | data/us-key/US-FL.json | RELEASE |  |
+| ? | ? | data/us-key/US-IA.json | RELEASE |  |
+| ? | ? | data/us-key/US-ID.json | RELEASE |  |
+| ? | ? | data/us-key/US-IL.json | RELEASE |  |
+| ? | ? | data/us-key/US-IN.json | PASS |  |
+| ? | ? | data/us-key/US-KS.json | RELEASE |  |
+| ? | ? | data/us-key/US-MA.json | RELEASE |  |
+| ? | ? | data/us-key/US-MD.json | RELEASE |  |
+| ? | ? | data/us-key/US-ME.json | RELEASE |  |
+| ? | ? | data/us-key/US-MI.json | RELEASE |  |
+| ? | ? | data/us-key/US-MN.json | RELEASE |  |
+| ? | ? | data/us-key/US-MO.json | RELEASE |  |
+| ? | ? | data/us-key/US-MS.json | RELEASE |  |
+| ? | ? | data/us-key/US-NC.json | RELEASE |  |
+| ? | ? | data/us-key/US-ND.json | RELEASE |  |
+| ? | ? | data/us-key/US-NE.json | RELEASE |  |
+| ? | ? | data/us-key/US-NH.json | RELEASE |  |
+| ? | ? | data/us-key/US-NV.json | RELEASE |  |
+| ? | ? | data/us-key/US-OH.json | RELEASE |  |
+| ? | ? | data/us-key/US-OK.json | RELEASE |  |
+| ? | ? | data/us-key/US-PA.json | RELEASE |  |
+| ? | ? | data/us-key/US-SD.json | RELEASE |  |
+| ? | ? | data/us-key/US-TN.json | RELEASE |  |
+| ? | ? | data/us-key/US-TX.json | RELEASE |  |
+| ? | ? | data/us-key/US-UT.json | RELEASE |  |
+| ? | ? | data/us-key/US-WA.json | RELEASE |  |
+| ? | ? | data/us-key/US-WI.json | RELEASE |  |
+| ? | ? | data/us-key/US-WV.json | RELEASE |  |
 | 2026-11-04 | 14 | data/trails/state-report.json | HOLD | F-T1 the line has no points |
 | 2026-11-08 | 10 | data/wwff/CTFF.json | HOLD | F-W2 rows 702 -> 280 (under 80% of the saved list) |
 | 2026-11-09 | 9 | data/trails/index.json | HOLD | F-T4 trail index 139 -> 101 lines (under 80% of the saved list) |
-| ? | ? | data/pile-solver/AS.json | PASS |  |
-| ? | ? | data/pile-solver/AT.json | PASS |  |
-| ? | ? | data/pile-solver/AU.json | PASS |  |
-| ? | ? | data/pile-solver/BZ.json | PASS |  |
-| ? | ? | data/pile-solver/CH.json | PASS |  |
-| ? | ? | data/pile-solver/CL.json | PASS |  |
-| ? | ? | data/pile-solver/DE.json | PASS |  |
-| ? | ? | data/pile-solver/DO.json | PASS |  |
-| ? | ? | data/pile-solver/EE.json | PASS |  |
-| ? | ? | data/pile-solver/ES.json | PASS |  |
-| ? | ? | data/pile-solver/FI.json | PASS |  |
-| ? | ? | data/pile-solver/FR.json | PASS |  |
-| ? | ? | data/pile-solver/GA.json | PASS |  |
-| ? | ? | data/pile-solver/GB.json | PASS |  |
-| ? | ? | data/pile-solver/GT.json | PASS |  |
-| ? | ? | data/pile-solver/HU.json | PASS |  |
-| ? | ? | data/pile-solver/JP.json | PASS |  |
-| ? | ? | data/pile-solver/KE.json | PASS |  |
-| ? | ? | data/pile-solver/LK.json | PASS |  |
-| ? | ? | data/pile-solver/LR.json | PASS |  |
-| ? | ? | data/pile-solver/LT.json | PASS |  |
-| ? | ? | data/pile-solver/MX.json | PASS |  |
-| ? | ? | data/pile-solver/NC.json | PASS |  |
-| ? | ? | data/pile-solver/NL.json | PASS |  |
-| ? | ? | data/pile-solver/NO.json | PASS |  |
-| ? | ? | data/pile-solver/NZ.json | PASS |  |
-| ? | ? | data/pile-solver/PA.json | PASS |  |
-| ? | ? | data/pile-solver/PL.json | PASS |  |
-| ? | ? | data/pile-solver/PT.json | PASS |  |
-| ? | ? | data/pile-solver/PY.json | PASS |  |
-| ? | ? | data/pile-solver/RO.json | PASS |  |
-| ? | ? | data/pile-solver/SE.json | PASS |  |
-| ? | ? | data/pile-solver/SI.json | PASS |  |
-| ? | ? | data/pile-solver/SK.json | PASS |  |
-| ? | ? | data/pile-solver/SV.json | PASS |  |
-| ? | ? | data/pile-solver/UY.json | PASS |  |
-| ? | ? | data/pile-solver/VI.json | PASS |  |
-| ? | ? | data/pile-solver/ZA.json | PASS |  |
-| ? | ? | data/pile-solver/answer-sheet-proposals-CA.csv | ? |  |
-| ? | ? | data/pile-solver/answer-sheet-proposals-US.csv | ? |  |
-| ? | ? | data/pile-solver/answer-sheet-proposals-world.csv | ? |  |
-| ? | ? | data/pile-solver/hand-layers-ABOUT.md | ? |  |
-| ? | ? | data/pile-solver/hand-layers-answer-sheet-proposals-CA.csv | ? |  |
-| ? | ? | data/pile-solver/hand-layers-answer-sheet-proposals-US.csv | ? |  |
-| ? | ? | data/pile-solver/hand-layers-needs-person.csv | ? |  |
-| ? | ? | data/pile-solver/hand-layers-pile.csv | ? |  |
-| ? | ? | data/pile-solver/hand-layers-solved-join.csv | ? |  |
-| ? | ? | data/pile-solver/hand-layers-untouched.csv | ? |  |
-| ? | ? | data/pile-solver/needs-person.csv | ? |  |
-| ? | ? | data/pile-solver/override-not-from-brandon.csv | ? |  |
-| ? | ? | data/pile-solver/patterns.csv | ? |  |
-| ? | ? | data/pile-solver/run-log.md | ? |  |
-| ? | ? | data/pile-solver/solved-join.csv | ? |  |
-| ? | ? | data/pile-solver/solved-pin.csv | ? |  |
-| ? | ? | data/trails/index-state.json | PASS |  |
+| ? | ? | data/us-key/changed-parks.json | RELEASE |  |
+| ? | ? | data/us-key/index.json | RELEASE |  |
+| ? | ? | data/us-key/lost-finds.json | RELEASE |  |
+| ? | ? | data/us-key/overrides-parks-01.json | PASS |  |
+| ? | ? | data/us-key/overrides-parks-02.json | PASS |  |
+| ? | ? | data/us-key/overrides.json | PASS |  |
+| ? | ? | data/world-key/AU.json | PASS |  |
 
 ## Questions waiting for an answer
 

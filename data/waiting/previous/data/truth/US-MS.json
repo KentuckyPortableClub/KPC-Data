@@ -1,0 +1,5294 @@
+{
+ "about": "Park truth checker: official acreage vs our outline, handover hints, second-witness score. Review lists only: nothing here changes a key or a card.",
+ "area": "US-MS",
+ "counts": {
+  "agree": 1,
+  "handover_hints": 4,
+  "no_page": 0,
+  "no_size": 76,
+  "off": 5,
+  "ours_unknown": 0,
+  "parks": 155,
+  "retired": 0,
+  "unsure": 7,
+  "weak": 14,
+  "with_outline": 89
+ },
+ "parks": {
+  "US-0382": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Coldwater River National Wildlife Refuge",
+   "official": null,
+   "ours": {
+    "acres": 5028,
+    "manager": "",
+    "pieces": [
+     [
+      3737,
+      "Coldwater River National Wildlife Refuge",
+      2514,
+      "name"
+     ],
+     [
+      4673,
+      "Coldwater River National Wildlife Refuge",
+      2514,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/coldwater_river/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/coldwater_river/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/coldwater/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "National Wildlife Refuge",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-0383": {
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Dahomey National Wildlife Refuge",
+   "official": null,
+   "ours": {
+    "acres": 19074,
+    "manager": "",
+    "pieces": [
+     [
+      3763,
+      "Dahomey National Wildlife Refuge",
+      9537,
+      "name"
+     ],
+     [
+      4702,
+      "Dahomey National Wildlife Refuge",
+      9537,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/Dahomey/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/policies",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 9691.0,
+     "as": "9,691 acre",
+     "clean": false,
+     "line": "itat for migratory birds and to protect wetlands, with an emphasis on waterfowl and bottomland hardwoods. The 9,691-acre refuge was purchased from The Nature Conservancy, donated by the Mississippi Department of Transportation, an",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/Dahomey/",
+     "why": "part (a lake, a purchase, a campground…)"
+    }
+   ],
+   "t": "National Wildlife Refuge",
+   "ver": 7,
+   "verdict": "unsure"
+  },
+  "US-0384": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Grand Bay National Wildlife Refuge",
+   "official": {
+    "acres": 18000.0,
+    "as": "18,000 acres",
+    "clean": false,
+    "line": "re refuge partially overlays the Grand Bay National Estuarine Research Reserve. Together, they protect nearly 18,000 acres of relatively undisturbed wildlife habitat. In addition to the wet pine savanna, other refuge habitats includ",
+    "read": "2026-10-28",
+    "url": "https://www.fws.gov/refuge/grand_bay/",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 15334,
+    "manager": "",
+    "pieces": [
+     [
+      3872,
+      "Grand Bay National Wildlife Refuge",
+      7667,
+      "name"
+     ],
+     [
+      4816,
+      "Grand Bay National Wildlife Refuge",
+      7667,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/grand_bay/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/grand-bay/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/grand/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "pct": 15,
+   "same_agency": false,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 2,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 10188.0,
+     "as": "10,188 acre",
+     "clean": true,
+     "line": "nly 3% of wet pine savanna remaining across its originally range, it is considered an endangered habitat. The 10,188 acre refuge partially overlays the Grand Bay National Estuarine Research Reserve. Together, they protect nearly 18",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/grand_bay/",
+     "why": "clean total"
+    },
+    {
+     "acres": 18000.0,
+     "as": "18,000 acres",
+     "clean": false,
+     "line": "re refuge partially overlays the Grand Bay National Estuarine Research Reserve. Together, they protect nearly 18,000 acres of relatively undisturbed wildlife habitat. In addition to the wet pine savanna, other refuge habitats includ",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/grand_bay/",
+     "why": "total-looking"
+    }
+   ],
+   "t": "National Wildlife Refuge",
+   "ver": 7,
+   "verdict": "agree"
+  },
+  "US-0385": {
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-10-28",
+   "handover": [
+    {
+     "date_hint": null,
+     "kind": "transfer",
+     "line": "National Wildlife Refuge supports hundreds of wildlife species. Before what is now refuge land was transferred to the U.S. Fish and Wildlife Service, it was used by the U.S. Army Corps of Engineers to capture sediment from the Yazoo Basin Headwater area. Today, the refu",
+     "owner_now": "U.S",
+     "src": "https://www.fws.gov/refuge/hillside/about-us",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "n": "Hillside National Wildlife Refuge",
+   "official": null,
+   "ours": {
+    "acres": 30969,
+    "manager": "",
+    "pieces": [
+     [
+      4884,
+      "Hillside National Wildlife Refuge",
+      15485,
+      "name"
+     ],
+     [
+      3938,
+      "Hillside National Wildlife Refuge",
+      15484,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": "U.S",
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/hillside/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/hillside/about-us",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/hillside/visit-us",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/hillside/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/hillside/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 15000.0,
+     "as": "15,000 acres",
+     "clean": false,
+     "line": "iting Location and Contact Information About Us Currently, Hillside National Wildlife Refuge encompasses over 15,000 acres of diverse habitat that is home for many different species of wildlife. Learn More About Us What We Do Manage",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/hillside/",
+     "why": "part (a lake, a purchase, a campground…)"
+    }
+   ],
+   "t": "National Wildlife Refuge",
+   "ver": 7,
+   "verdict": "unsure"
+  },
+  "US-0386": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Holt Collier National Wildlife Refuge",
+   "official": null,
+   "ours": {
+    "acres": 5992,
+    "manager": "",
+    "pieces": [
+     [
+      3943,
+      "Holt Collier National Wildlife Refuge",
+      1543,
+      "name"
+     ],
+     [
+      4888,
+      "Holt Collier National Wildlife Refuge",
+      1543,
+      "name"
+     ],
+     [
+      3942,
+      "Holt Collier National Wildlife Refuge",
+      1453,
+      "name"
+     ],
+     [
+      4887,
+      "Holt Collier National Wildlife Refuge",
+      1453,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/holt_collier/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/holt-collier/about-us",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/holt-collier/visit-us",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/holt-collier/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/holt/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "National Wildlife Refuge",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-0387": {
+   "cause": "our union: one of our pieces alone matches the agency (double count?)",
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Mathews Brake National Wildlife Refuge",
+   "official": {
+    "acres": 2418.0,
+    "as": "2,418 acres",
+    "clean": true,
+    "line": "uge is one of nine refuges in the Theodore Roosevelt National Wildlife Refuge Complex. The refuge encompasses 2,418 acres in west-central Mississippi. The refuge’s primary habitat feature is Mathews Brake, the largest brake in Lefl",
+    "read": "2026-10-28",
+    "url": "https://www.fws.gov/refuge/mathews-brake/about-us",
+    "why": "clean total"
+   },
+   "ours": {
+    "acres": 4722,
+    "manager": "",
+    "pieces": [
+     [
+      5041,
+      "Mathews Brake National Wildlife Refuge",
+      2363,
+      "name"
+     ],
+     [
+      4087,
+      "Mathews Brake National Wildlife Refuge",
+      2359,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/mathews_brake/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/mathews-brake/about-us",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/mathews-brake/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/mathews/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "pct": 95,
+   "same_agency": false,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 0,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 803.0,
+     "as": "803 acres",
+     "clean": false,
+     "line": "ablished in 1980 via the Migratory Bird Conservation Act. Land acquisition began with the initial purchase of 803 acres in September of that year. The refuge is located in the Yazoo River Basin on the eastern edge of the Mississi",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/mathews_brake/",
+     "why": "part (a lake, a purchase, a campground…)"
+    },
+    {
+     "acres": 2418.0,
+     "as": "2,418 acres",
+     "clean": true,
+     "line": "uge is one of nine refuges in the Theodore Roosevelt National Wildlife Refuge Complex. The refuge encompasses 2,418 acres in west-central Mississippi. The refuge’s primary habitat feature is Mathews Brake, the largest brake in Lefl",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/mathews-brake/about-us",
+     "why": "clean total"
+    }
+   ],
+   "t": "National Wildlife Refuge",
+   "ver": 7,
+   "verdict": "off"
+  },
+  "US-0388": {
+   "cause": "our union: one of our pieces alone matches the agency (double count?)",
+   "checked": "2026-10-28",
+   "handover": [
+    {
+     "date_hint": null,
+     "kind": "managed by",
+     "line": "ational wildlife refuge A national wildlife refuge is typically a contiguous area of land and water managed by the U.S. Fish and Wildlife Service for the conservation and, where appropriate, restoration of fish, wildlife and plant resources and their habitats for th",
+     "owner_now": "U.S",
+     "src": "https://www.fws.gov/refuge/mississippi-sandhill-crane/about-us",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "n": "Mississippi Sandhill Crane National Wildlife Refuge",
+   "official": {
+    "acres": 20000.0,
+    "as": "20,000 acres",
+    "clean": false,
+    "line": "s the description of 'the rarest bird in North America'. Although the refuge and I-10 were both created, only 20,000 acres of the original crane habitat exist along the gulf coast. The good news is that the refuge was created and th",
+    "read": "2026-10-28",
+    "url": "https://www.fws.gov/refuge/mississippi-sandhill-crane/about-us",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 36869,
+    "manager": "",
+    "pieces": [
+     [
+      5081,
+      "Mississippi Sandhill Crane National Wildlife Refuge",
+      18435,
+      "name"
+     ],
+     [
+      4125,
+      "Mississippi Sandhill Crane National Wildlife Refuge",
+      18434,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": "U.S",
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/mississippi_sandhill_crane/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/mississippi-sandhill-crane/about-us",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": 84,
+   "same_agency": false,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 0,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 1749.0,
+     "as": "1,749 acres",
+     "clean": false,
+     "line": ". The Mississippi Sandhill Crane Refuge was eventually established on November 25, 1975, with the purchase of 1,749 acres of land from The Nature Conservancy. The refuge was established under the authority of the Endangered Species",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/mississippi-sandhill-crane/about-us",
+     "why": "part (a lake, a purchase, a campground…)"
+    },
+    {
+     "acres": 20000.0,
+     "as": "20,000 acres",
+     "clean": false,
+     "line": "s the description of 'the rarest bird in North America'. Although the refuge and I-10 were both created, only 20,000 acres of the original crane habitat exist along the gulf coast. The good news is that the refuge was created and th",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/mississippi-sandhill-crane/about-us",
+     "why": "total-looking"
+    }
+   ],
+   "t": "National Wildlife Refuge",
+   "ver": 7,
+   "verdict": "off"
+  },
+  "US-0389": {
+   "cause": "our union: one of our pieces alone matches the agency (double count?)",
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Morgan Brake National Wildlife Refuge",
+   "official": {
+    "acres": 7400.0,
+    "as": "7,400 acres",
+    "clean": true,
+    "line": "ws Library Species Map About Us Morgan Brake National Wildlife Refuge, established in 1977, encompasses about 7,400 acres in Holmes County along the ecological border between the Mississippi alluvial plain and loessal hills in the",
+    "read": "2026-10-28",
+    "url": "https://www.fws.gov/refuge/morgan-brake/about-us",
+    "why": "clean total"
+   },
+   "ours": {
+    "acres": 15138,
+    "manager": "",
+    "pieces": [
+     [
+      4134,
+      "Morgan Brake National Wildlife Refuge",
+      7569,
+      "name"
+     ],
+     [
+      5090,
+      "Morgan Brake National Wildlife Refuge",
+      7569,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/morgan_brake/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/morgan-brake/about-us",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/morgan-brake/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/morgan/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "pct": 105,
+   "same_agency": false,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 0,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 7400.0,
+     "as": "7,400 acres",
+     "clean": true,
+     "line": "ws Library Species Map About Us Morgan Brake National Wildlife Refuge, established in 1977, encompasses about 7,400 acres in Holmes County along the ecological border between the Mississippi alluvial plain and loessal hills in the",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/morgan-brake/about-us",
+     "why": "clean total"
+    }
+   ],
+   "t": "National Wildlife Refuge",
+   "ver": 7,
+   "verdict": "off"
+  },
+  "US-0390": {
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 800 acres, no total words near it)",
+   "checked": "2026-10-28",
+   "handover": [
+    {
+     "date_hint": "2012",
+     "kind": "renamed",
+     "line": "located in three counties of Mississippi, Noxubee, Oktibbeha, and Winston. In 2012, the refuge was renamed Sam D. Hamilton Noxubee National Wildlife Refuge in honor of Sam D. Hamilton, a former director of the Fi",
+     "owner_now": null,
+     "src": "https://www.fws.gov/refuge/noxubee/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "date_hint": "2012",
+     "kind": "renamed",
+     "line": "s created from lands obtained through the 1930s Resettlement Administration. In 2012 the refuge was renamed Sam D. Hamilton Noxubee National Wildlife Refuge in honor of Sam D. Hamilton, a former director of the Fi",
+     "owner_now": null,
+     "src": "https://www.fws.gov/refuge/sam-d-hamilton-noxubee/about-us",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "n": "Noxubee National Wildlife Refuge",
+   "official": {
+    "acres": 800.0,
+    "as": "800 acres",
+    "clean": false,
+    "line": "t from the variety of habitats the refuge provides. Four green-tree reservoirs, two major lakes (Bluff Lake – 800 acres and Loakfoma Lake – 400 acres), 16 small impoundments, and assorted wetland areas provide important habitat f",
+    "read": "2026-10-28",
+    "url": "https://www.fws.gov/refuge/sam-d-hamilton-noxubee/about-us",
+    "why": "no total words near it"
+   },
+   "ours": {
+    "acres": 96660,
+    "manager": "",
+    "pieces": [
+     [
+      4292,
+      "Sam D. Hamilton Noxubee National Wildlife Refuge",
+      48330,
+      "words"
+     ],
+     [
+      5249,
+      "Sam D. Hamilton Noxubee National Wildlife Refuge",
+      48330,
+      "words"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/noxubee/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/sam-d-hamilton-noxubee/about-us",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/sam-d-hamilton-noxubee/visit-us",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/noxubee/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "pct": 11982,
+   "same_agency": false,
+   "score": 5,
+   "score_parts": {
+    "name": 1,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 800.0,
+     "as": "800 acres",
+     "clean": false,
+     "line": "t from the variety of habitats the refuge provides. Four green-tree reservoirs, two major lakes (Bluff Lake – 800 acres and Loakfoma Lake – 400 acres), 16 small impoundments, and assorted wetland areas provide important habitat f",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/sam-d-hamilton-noxubee/about-us",
+     "why": "no total words near it"
+    },
+    {
+     "acres": 400.0,
+     "as": "400 acres",
+     "clean": false,
+     "line": "the refuge provides. Four green-tree reservoirs, two major lakes (Bluff Lake – 800 acres and Loakfoma Lake – 400 acres), 16 small impoundments, and assorted wetland areas provide important habitat for the wood stork, American al",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/sam-d-hamilton-noxubee/about-us",
+     "why": "no total words near it"
+    }
+   ],
+   "t": "National Wildlife Refuge",
+   "ver": 7,
+   "verdict": "unsure"
+  },
+  "US-0391": {
+   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Panther Swamp National Wildlife Refuge",
+   "official": {
+    "acres": 40000.0,
+    "as": "40,000 acres",
+    "clean": false,
+    "line": "and Cotton's access for some amazing sites to find a variety of game species, but don't stop there! With over 40,000 acres of land, there are plenty of areas for you to find your next big buck, turkey, squirrel, and many other game",
+    "read": "2026-10-28",
+    "url": "https://www.fws.gov/refuge/panther_swamp/",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 66312,
+    "manager": "",
+    "pieces": [
+     [
+      4205,
+      "Panther Swamp National Wildlife Refuge",
+      33156,
+      "name"
+     ],
+     [
+      5160,
+      "Panther Swamp National Wildlife Refuge",
+      33156,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/panther_swamp/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/theodore-roosevelt-complex-headquarters-panther-swamp/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/panther/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "pct": 66,
+   "same_agency": false,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 0,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 40000.0,
+     "as": "40,000 acres",
+     "clean": false,
+     "line": "and Cotton's access for some amazing sites to find a variety of game species, but don't stop there! With over 40,000 acres of land, there are plenty of areas for you to find your next big buck, turkey, squirrel, and many other game",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/panther_swamp/",
+     "why": "total-looking"
+    },
+    {
+     "acres": 40000.0,
+     "as": "40,000 acres",
+     "clean": false,
+     "line": "th our natural surroundings. Panther Swamp National Wildlife Refuge will help you do just that! Covering over 40,000 acres of bottomland hardwood forests, cypress-tupelo sloughs, and meandering bayous, Panther Swamp NWR is one of th",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/panther_swamp/",
+     "why": "total-looking"
+    }
+   ],
+   "t": "National Wildlife Refuge",
+   "ver": 7,
+   "verdict": "off"
+  },
+  "US-0392": {
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "St. Catherine Creek National Wildlife Refuge",
+   "official": null,
+   "ours": {
+    "acres": 49195,
+    "manager": "",
+    "pieces": [
+     [
+      4350,
+      "St. Catherine Creek National Wildlife Refuge",
+      24909,
+      "name"
+     ],
+     [
+      5308,
+      "St. Catherine Creek National Wildlife Refuge",
+      24286,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/st_catherine_creek/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/st-catherine-creek/about-us",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/st-catherine-creek/visit-us",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/st-catherine-creek/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/st/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 1000.0,
+     "as": "1,000 acres",
+     "clean": false,
+     "line": "seasonal residents. The Sibley Impoundments are adjacent to the Swamp. These shallow water impoundments cover 1,000 acres of intensively managed habitat for waterfowl, wading birds, and shorebirds. Know Before You Go Most roads are",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/st-catherine-creek/visit-us",
+     "why": "part (a lake, a purchase, a campground…)"
+    }
+   ],
+   "t": "National Wildlife Refuge",
+   "ver": 7,
+   "verdict": "unsure"
+  },
+  "US-0393": {
+   "cause": "our union: one of our pieces alone matches the agency (double count?)",
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Tallahatchie National Wildlife Refuge",
+   "official": {
+    "acres": 4199.0,
+    "as": "4,199 acres",
+    "clean": true,
+    "line": "w Enforcement More on What We Do About Established in 1991, Tallahatchie National Wildlife Refuge consists of 4,199 acres in northern Mississippi. The land was historically cleared for agriculture, but since being acquired by the U",
+    "read": "2026-10-28",
+    "url": "https://www.fws.gov/refuge/tallahatchie/",
+    "why": "clean total"
+   },
+   "ours": {
+    "acres": 8372,
+    "manager": "",
+    "pieces": [
+     [
+      4384,
+      "Tallahatchie National Wildlife Refuge",
+      4186,
+      "name"
+     ],
+     [
+      5341,
+      "Tallahatchie National Wildlife Refuge",
+      4186,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/tallahatchie/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "robots",
+     "url": "https://doifwsnextprod.prod.acquia-sites.com/sites/default/files/2026-10/north-ms-hunt-regs-2026_web.pdf",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/tallahatchie/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "pct": 99,
+   "same_agency": false,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 0,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 4199.0,
+     "as": "4,199 acres",
+     "clean": true,
+     "line": "w Enforcement More on What We Do About Established in 1991, Tallahatchie National Wildlife Refuge consists of 4,199 acres in northern Mississippi. The land was historically cleared for agriculture, but since being acquired by the U",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/tallahatchie/",
+     "why": "clean total"
+    },
+    {
+     "acres": 1300.0,
+     "as": "1,300 acres",
+     "clean": false,
+     "line": "and was historically cleared for agriculture, but since being acquired by the U.S. Fish and Wildlife Service, 1,300 acres have been reforested with native hardwood species. Today, the refuge is a patchwork of old fields and bottoml",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/tallahatchie/",
+     "why": "no total words near it"
+    }
+   ],
+   "t": "National Wildlife Refuge",
+   "ver": 7,
+   "verdict": "off"
+  },
+  "US-0395": {
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Yazoo National Wildlife Refuge",
+   "official": null,
+   "ours": {
+    "acres": 26086,
+    "manager": "",
+    "pieces": [
+     [
+      4492,
+      "Yazoo National Wildlife Refuge",
+      13043,
+      "name"
+     ],
+     [
+      5453,
+      "Yazoo National Wildlife Refuge",
+      13043,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/yazoo/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/yazoo/about-us",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/yazoo/visit-us",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/yazoo/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/yazoo/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 2166.0,
+     "as": "2,166 acres",
+     "clean": false,
+     "line": "ty of the Migratory Bird Treaty Act and Migratory Bird Hunting Stamp Act in 1936 with the initial purchase of 2,166 acres. In March 1937, an additional 639 acres were purchased with plans to acquire a total of 20,000 acres. The ref",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/yazoo/about-us",
+     "why": "history"
+    },
+    {
+     "acres": 639.0,
+     "as": "639 acres",
+     "clean": false,
+     "line": "gratory Bird Hunting Stamp Act in 1936 with the initial purchase of 2,166 acres. In March 1937, an additional 639 acres were purchased with plans to acquire a total of 20,000 acres. The refuge remained unstaffed from 1936 until 1",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/yazoo/about-us",
+     "why": "part (a lake, a purchase, a campground…)"
+    },
+    {
+     "acres": 20000.0,
+     "as": "20,000 acres",
+     "clean": false,
+     "line": "rchase of 2,166 acres. In March 1937, an additional 639 acres were purchased with plans to acquire a total of 20,000 acres. The refuge remained unstaffed from 1936 until 1956. In 1959, the refuge office was built. The Service was gi",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/yazoo/about-us",
+     "why": "part (a lake, a purchase, a campground…)"
+    },
+    {
+     "acres": 12471.0,
+     "as": "12,471 acres",
+     "clean": false,
+     "line": "y Governor Ross R. Barnett. Various tracts were purchased from individuals and hunting clubs until a total of 12,471 acres was reached on July 30, 1969. As land acquisition progressed, habitat management was diversified for mourning",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/yazoo/about-us",
+     "why": "part (a lake, a purchase, a campground…)"
+    },
+    {
+     "acres": 470.0,
+     "as": "470 acre",
+     "clean": false,
+     "line": "resident species. A nucleus flock of wild turkeys was introduced in 1970. In 1992, the Service purchased the 470-acre Cox property bringing total refuge acreage to 12,941 acres. Other Facilities in this Complex Yazoo National W",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/yazoo/about-us",
+     "why": "part (a lake, a purchase, a campground…)"
+    },
+    {
+     "acres": 12941.0,
+     "as": "12,941 acres",
+     "clean": false,
+     "line": "introduced in 1970. In 1992, the Service purchased the 470-acre Cox property bringing total refuge acreage to 12,941 acres. Other Facilities in this Complex Yazoo National Wildlife Refuge is one of nine refuges that make up the Theo",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/yazoo/about-us",
+     "why": "part (a lake, a purchase, a campground…)"
+    },
+    {
+     "acres": 2166.0,
+     "as": "2,166 acres",
+     "clean": false,
+     "line": "ty of the Migratory Bird Treaty Act and Migratory Bird Hunting Stamp Act in 1936 with the initial purchase of 2,166 acres. In March 1937, an additional 639 acres were purchased with plans to acquire a total of 20,000 acres. The ref",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/yazoo/about-us",
+     "why": "history"
+    },
+    {
+     "acres": 639.0,
+     "as": "639 acres",
+     "clean": false,
+     "line": "gratory Bird Hunting Stamp Act in 1936 with the initial purchase of 2,166 acres. In March 1937, an additional 639 acres were purchased with plans to acquire a total of 20,000 acres. The refuge remained unstaffed from 1936 until 1",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/yazoo/about-us",
+     "why": "part (a lake, a purchase, a campground…)"
+    }
+   ],
+   "t": "National Wildlife Refuge",
+   "ver": 7,
+   "verdict": "unsure"
+  },
+  "US-0642": {
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Natchez Trace Parkway National Parkway",
+   "official": null,
+   "ours": {
+    "acres": 31527,
+    "manager": "",
+    "pieces": [
+     [
+      3552,
+      "Natchez Trace Parkway",
+      31527,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/natr/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/natr/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/natr/planyourvisit/weather.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/natr/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/natr/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/natr/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [
+    {
+     "acres": 52289.0,
+     "as": "52,289 acres",
+     "clean": false,
+     "line": "oric travel route known as the \"Natchez Trace.\" Completed in 2005, the Parkway is 444 miles in length, covers 52,289 acres, and averages 800 feet in width. Visitation statistics for the Natchez Trace Parkway , and all other National",
+     "total_like": false,
+     "url": "https://www.nps.gov/natr/learn/management/statistics.htm",
+     "why": "history"
+    }
+   ],
+   "t": "National Parkway",
+   "ver": 7,
+   "verdict": "unsure"
+  },
+  "US-0661": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Gulf Islands National Seashore",
+   "ours": null,
+   "score": null,
+   "t": "National Seashore",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-0709": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Tupelo National Battlefield",
+   "official": null,
+   "ours": {
+    "acres": 1,
+    "manager": "",
+    "pieces": [
+     [
+      3103,
+      "Tupelo National Battlefield",
+      1,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/tupe/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/tupe/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/tupe/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/tupe/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/tupe/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "National Battlefield",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-0715": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Brices Cross Roads National Battlefield",
+   "official": null,
+   "ours": {
+    "acres": 1,
+    "manager": "",
+    "pieces": [
+     [
+      3109,
+      "Brices Cross Roads National Battlefield Site",
+      1,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/brcr/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/brcr/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/brcr/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/brcr/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/brcr/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "National Battlefield",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-0722": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Shiloh National Battlefield",
+   "official": null,
+   "ours": {
+    "acres": 808,
+    "manager": "",
+    "pieces": [
+     [
+      3290,
+      "Shiloh National Military Park",
+      808,
+      "name"
+     ]
+    ],
+    "pin": "well outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/shil/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/shil/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/shil/learn/historyculture/cemetery.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/shil/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/shil/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/shil/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 3,
+   "score_parts": {
+    "name": 1,
+    "pin": 0,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "National Battlefield",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-0723": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Vicksburg National Military Park",
+   "official": null,
+   "ours": {
+    "acres": 2441,
+    "manager": "",
+    "pieces": [
+     [
+      3293,
+      "Vicksburg National Military Park",
+      2441,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/vick/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/vick/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/vick/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/vick/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/vick/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "National Military Park",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-0747": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Natchez National Historical Park",
+   "official": null,
+   "ours": {
+    "acres": 98,
+    "manager": "",
+    "pieces": [
+     [
+      3228,
+      "Natchez National Historical Park",
+      98,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/natc/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/natc/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/natc/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/natc/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/natc/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "National Historical Park",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-10297": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Old Trace Park Recreation Park",
+   "official": null,
+   "ours": {
+    "acres": 40,
+    "manager": "",
+    "pieces": [
+     [
+      84599,
+      "Old Trace Park",
+      40,
+      "reviewed"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "HTTP 404",
+     "url": "https://www.therez.ms.gov/Pages/Old-Trace-Park.aspx",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "Recreation Park",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-11880": {
+   "checked": "2026-10-28",
+   "handover": [
+    {
+     "date_hint": "1960",
+     "kind": "transfer",
+     "line": "g for its future, the Greenville Garden Club raised funding to purchase the 42—acre tract, and then donated the land to the State Park commission (now Wildlife, Fisheries, and Parks) in 1960. An original effort to repair the erosion was completed in 1968. Since 2016, heavy rainfall, wind,",
+     "owner_now": "State Park",
+     "src": "https://www.mdah.ms.gov/explore-mississippi/winterville-mounds",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "n": "Winterville Mounds State Historical Park",
+   "official": null,
+   "ours": {
+    "acres": 41,
+    "manager": "",
+    "pieces": [
+     [
+      211147,
+      "Winterville Mounds State Historic Site",
+      41,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": "State Park",
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.mdah.ms.gov/explore-mississippi/winterville-mounds",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "State Historical Park",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-11881": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Dancing Rabbit Creek Treaty State Historic Site",
+   "ours": null,
+   "score": null,
+   "t": "State Historic Site",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-11882": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Grand Village of the Natchez State Historic Site",
+   "ours": null,
+   "score": null,
+   "t": "State Historic Site",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-11883": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Emerald Mound National Historical Site",
+   "ours": null,
+   "score": null,
+   "t": "National Historical Site",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-12193": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Lake Claude Bennett State Fishing Lake",
+   "ours": null,
+   "score": null,
+   "t": "State Fishing Lake",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-12194": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Lake Lamar Bruce State Fishing Lake",
+   "ours": null,
+   "score": null,
+   "t": "State Fishing Lake",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-12195": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Elvis Presley State Fishing Lake",
+   "ours": null,
+   "score": null,
+   "t": "State Fishing Lake",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-12196": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Tippah County State Fishing Lake",
+   "ours": null,
+   "score": null,
+   "t": "State Fishing Lake",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-12197": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Lake Monroe State Fishing Lake",
+   "ours": null,
+   "score": null,
+   "t": "State Fishing Lake",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-12198": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Neshoba County State Fishing Lake",
+   "ours": null,
+   "score": null,
+   "t": "State Fishing Lake",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-12199": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Lake Tom Bailey State Fishing Lake",
+   "ours": null,
+   "score": null,
+   "t": "State Fishing Lake",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-12200": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Simpson County State Fishing Lake",
+   "ours": null,
+   "score": null,
+   "t": "State Fishing Lake",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-12201": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Prentiss Walker State Fishing Lake",
+   "ours": null,
+   "score": null,
+   "t": "State Fishing Lake",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-12202": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Lake Bogue Homa State Fishing Lake",
+   "ours": null,
+   "score": null,
+   "t": "State Fishing Lake",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-12203": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Lake Mary Crawford State Fishing Lake",
+   "ours": null,
+   "score": null,
+   "t": "State Fishing Lake",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-12204": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Calling Panther State Fishing Lake",
+   "official": null,
+   "ours": {
+    "acres": 1482,
+    "manager": "",
+    "pieces": [
+     [
+      78868,
+      "Calling Panther Lake",
+      1482,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/fishing-boating/lakes/calling-panther-lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "State Fishing Lake",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-12205": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Lake Mike Conner State Fishing Lake",
+   "ours": null,
+   "score": null,
+   "t": "State Fishing Lake",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-12206": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Lake Jeff Davis State Fishing Lake",
+   "ours": null,
+   "score": null,
+   "t": "State Fishing Lake",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-12207": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Lake Walthall State Fishing Lake",
+   "ours": null,
+   "score": null,
+   "t": "State Fishing Lake",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-12208": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Lake Perry State Fishing Lake",
+   "ours": null,
+   "score": null,
+   "t": "State Fishing Lake",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-12638": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Bobby Cleveland Park State Recreation Site",
+   "ours": null,
+   "score": null,
+   "t": "State Recreation Site",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-12639": {
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 250 acres, no total words near it)",
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Pelahatchie Shore State Recreation Area",
+   "official": {
+    "acres": 250.0,
+    "as": "250 acres",
+    "clean": false,
+    "line": "aps of permit hunt area boundaries are available online and at PRVWSD offices. Each zone is approximately 245-250 acres. * Upon receipt by PRVWSD office, each application will be given a number in the order it is processed. The r",
+    "read": "2026-10-28",
+    "url": "https://www.therez.ms.gov/parks-recreation/hunting/draw-hunt-rules",
+    "why": "no total words near it"
+   },
+   "ours": {
+    "acres": 60,
+    "manager": "",
+    "pieces": [
+     [
+      155683,
+      "Pelahatchie Recreation Area",
+      60,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.therez.ms.gov/parks-recreation/parks-rentals",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.therez.ms.gov/parks-recreation/hunting/draw-hunt-rules",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "pct": 76,
+   "same_agency": false,
+   "score": 4,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [
+    {
+     "acres": 250.0,
+     "as": "250 acres",
+     "clean": false,
+     "line": "aps of permit hunt area boundaries are available online and at PRVWSD offices. Each zone is approximately 245-250 acres. * Upon receipt by PRVWSD office, each application will be given a number in the order it is processed. The r",
+     "total_like": false,
+     "url": "https://www.therez.ms.gov/parks-recreation/hunting/draw-hunt-rules",
+     "why": "no total words near it"
+    }
+   ],
+   "t": "State Recreation Area",
+   "ver": 7,
+   "verdict": "unsure"
+  },
+  "US-2532": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Buccaneer State Park",
+   "official": null,
+   "ours": {
+    "acres": 443,
+    "manager": "",
+    "pieces": [
+     [
+      211148,
+      "Buccaneer State Park",
+      443,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/parks-destinations/state-parks/buccaneer/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-2533": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Clarkco State Park",
+   "official": null,
+   "ours": {
+    "acres": 820,
+    "manager": "",
+    "pieces": [
+     [
+      211149,
+      "Clarkco State Park",
+      820,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/parks-destinations/state-parks/clarkco",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-2534": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Florewood State Park",
+   "official": null,
+   "ours": {
+    "acres": 99,
+    "manager": "",
+    "pieces": [
+     [
+      211150,
+      "Florewood River Plantation State Park",
+      99,
+      "words"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/parks-destinations/state-parks/florewood",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 1,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-2535": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "George P Cossar State Park",
+   "official": null,
+   "ours": {
+    "acres": 531,
+    "manager": "",
+    "pieces": [
+     [
+      211151,
+      "George P. Cossar State Park",
+      531,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/parks-destinations/state-parks/george-p-cossar",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-2536": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Golden Memorial State Park",
+   "official": null,
+   "ours": {
+    "acres": 131,
+    "manager": "",
+    "pieces": [
+     [
+      211152,
+      "Golden Memorial State Park",
+      131,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/parks-destinations/state-parks/golden-memorial",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-2537": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Great River Road State Park",
+   "official": null,
+   "ours": {
+    "acres": 654,
+    "manager": "",
+    "pieces": [
+     [
+      211153,
+      "Great River Road State Park",
+      654,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/parks-destinations/state-parks/great-river-road",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-2538": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Holmes County State Park",
+   "official": null,
+   "ours": {
+    "acres": 544,
+    "manager": "",
+    "pieces": [
+     [
+      211154,
+      "Holmes County State Park",
+      544,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/parks-destinations/state-parks/holmes-county",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-2539": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Hugh White State Park",
+   "official": null,
+   "ours": {
+    "acres": 952,
+    "manager": "",
+    "pieces": [
+     [
+      211155,
+      "Hugh White State Park",
+      952,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/parks-destinations/state-parks/hugh-white",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-2540": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "John W. Kyle State Park",
+   "official": null,
+   "ours": {
+    "acres": 586,
+    "manager": "",
+    "pieces": [
+     [
+      211156,
+      "John W. Kyle State Park",
+      586,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/parks-destinations/state-parks/john-w-kyle",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-2541": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "J P Coleman State Park",
+   "official": null,
+   "ours": {
+    "acres": 1174,
+    "manager": "",
+    "pieces": [
+     [
+      1852,
+      "J.P. Coleman State Park",
+      1174,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/parks-destinations/state-parks/jp-coleman",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-2542": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Lake Lincoln State Park",
+   "official": null,
+   "ours": {
+    "acres": 377,
+    "manager": "",
+    "pieces": [
+     [
+      211157,
+      "Lake Lincoln State Park",
+      377,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/parks-destinations/state-parks/lake-lincoln",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-2543": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Lake Lowndes State Park",
+   "official": null,
+   "ours": {
+    "acres": 594,
+    "manager": "",
+    "pieces": [
+     [
+      211158,
+      "Lake Lowndes State Park",
+      594,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/parks-destinations/state-parks/lake-lowndes",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-2544": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Lefleur's Bluff State Park",
+   "official": null,
+   "ours": {
+    "acres": 491,
+    "manager": "",
+    "pieces": [
+     [
+      211159,
+      "Lefleur's Bluff State Park",
+      491,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/parks-destinations/state-parks/lefleurs-bluff",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-2545": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Legion State Park",
+   "official": null,
+   "ours": {
+    "acres": 431,
+    "manager": "",
+    "pieces": [
+     [
+      211160,
+      "Legion Lake State Park",
+      431,
+      "same name (POTA writes the kind into the name) + pin inside"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/parks-destinations/state-parks/legion",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 1,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-2546": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Leroy Percy State Park",
+   "official": null,
+   "ours": {
+    "acres": 85,
+    "manager": "",
+    "pieces": [
+     [
+      211161,
+      "Leroy Percy State Park",
+      85,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/parks-destinations/state-parks/leroy-percy",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-2547": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Natchez State Park",
+   "official": null,
+   "ours": {
+    "acres": 6853,
+    "manager": "",
+    "pieces": [
+     [
+      211162,
+      "Natchez State Park",
+      3428,
+      "name"
+     ],
+     [
+      211238,
+      "Natchez State Park",
+      3425,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/parks-destinations/state-parks/natchez",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/natc/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-2548": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Paul B. Johnson State Park",
+   "official": null,
+   "ours": {
+    "acres": 511,
+    "manager": "",
+    "pieces": [
+     [
+      211163,
+      "Paul B. Johnson State Park",
+      511,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/parks-destinations/state-parks/paul-b-johnson/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-2549": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Percy E Quin State Park",
+   "ours": null,
+   "score": null,
+   "t": "State Park",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-2550": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Roosevelt State Park",
+   "official": null,
+   "ours": {
+    "acres": 606,
+    "manager": "",
+    "pieces": [
+     [
+      211165,
+      "Roosevelt State Park",
+      606,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/parks-destinations/state-parks/roosevelt",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-2551": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Shepard State Park",
+   "official": null,
+   "ours": {
+    "acres": 414,
+    "manager": "",
+    "pieces": [
+     [
+      211166,
+      "Shepard State Park",
+      414,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/parks-destinations/state-parks/shepard",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-2552": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Tishomingo State Park",
+   "official": null,
+   "ours": {
+    "acres": 1443,
+    "manager": "",
+    "pieces": [
+     [
+      211167,
+      "Tishomingo State Park",
+      1443,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/parks-destinations/state-parks/tishomingo",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-2553": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Tombigbee State Park",
+   "official": null,
+   "ours": {
+    "acres": 525,
+    "manager": "",
+    "pieces": [
+     [
+      211168,
+      "Tombigbee State Park",
+      525,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/parks-destinations/state-parks/tombigbee",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-2554": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Trace State Park",
+   "official": null,
+   "ours": {
+    "acres": 2141,
+    "manager": "",
+    "pieces": [
+     [
+      211169,
+      "Trace State Park",
+      2141,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/parks-destinations/state-parks/trace",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-2555": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Wall Doxey State Park",
+   "official": null,
+   "ours": {
+    "acres": 850,
+    "manager": "",
+    "pieces": [
+     [
+      211170,
+      "Wall Doxey State Park",
+      850,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/parks-destinations/state-parks/wall-doxey",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-4493": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Bienville National Forest",
+   "official": null,
+   "ours": {
+    "acres": 180227,
+    "manager": "",
+    "pieces": [
+     [
+      2945,
+      "Bienville National Forest",
+      180227,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.fs.usda.gov/detail/mississippi/about-forest/districts/?cid=stelprdb5209585",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.fs.usda.gov/r08/mississippi",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "National Forest",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-4494": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "De Soto National Forest",
+   "official": null,
+   "ours": {
+    "acres": 532454,
+    "manager": "",
+    "pieces": [
+     [
+      2963,
+      "De Soto National Forest",
+      532454,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.fs.usda.gov/detail/mississippi/about-forest/districts/?cid=stelprdb5209588",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.fs.usda.gov/r08/mississippi",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "National Forest",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-4495": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Delta National Forest",
+   "official": null,
+   "ours": {
+    "acres": 61472,
+    "manager": "",
+    "pieces": [
+     [
+      2965,
+      "Delta National Forest",
+      61472,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.fs.usda.gov/detail/mississippi/about-forest/districts/?cid=stelprdb5209587",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.fs.usda.gov/r08/mississippi",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "National Forest",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-4496": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Holly Springs National Forest",
+   "official": null,
+   "ours": {
+    "acres": 156210,
+    "manager": "",
+    "pieces": [
+     [
+      2977,
+      "Holly Springs National Forest",
+      156210,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.fs.usda.gov/detail/mississippi/about-forest/districts/?cid=stelprdb5209589",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.fs.usda.gov/r08/mississippi",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "National Forest",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-4497": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Homochitto National Forest",
+   "official": null,
+   "ours": {
+    "acres": 191846,
+    "manager": "",
+    "pieces": [
+     [
+      2978,
+      "Homochitto National Forest",
+      191846,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.fs.usda.gov/detail/mississippi/about-forest/districts/?cid=stelprdb5209590",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.fs.usda.gov/r08/mississippi",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "National Forest",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-4498": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Tombigbee National Forest",
+   "official": null,
+   "ours": {
+    "acres": 67449,
+    "manager": "",
+    "pieces": [
+     [
+      3025,
+      "Tombigbee National Forest",
+      67449,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.fs.usda.gov/recarea/mississippi/recarea/?recid=28859",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "rest",
+     "url": "https://www.fs.usda.gov/r08/mississippi",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "National Forest",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-4560": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Natchez Trace Trail National Scenic Trail",
+   "official": null,
+   "ours": {
+    "acres": 31527,
+    "manager": "",
+    "pieces": [
+     [
+      3552,
+      "Natchez Trace Parkway",
+      31527,
+      "reviewed-approx"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/natt/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/natt/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/natt/learn/historyculture/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/natt/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/natt/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/natt/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "National Scenic Trail",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-7070": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "O'Keefe Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 6356,
+    "manager": "",
+    "pieces": [
+     [
+      211226,
+      "O'Keefe Wma",
+      5377,
+      "name"
+     ],
+     [
+      211204,
+      "O'Keefe Wma",
+      979,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/wildlife-hunting/wma/region/north-delta/okeefe/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-7071": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Charlie Capps Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 657,
+    "manager": "",
+    "pieces": [
+     [
+      211217,
+      "Charlie Capps",
+      418,
+      "name"
+     ],
+     [
+      211208,
+      "Charlie Capps",
+      173,
+      "name"
+     ],
+     [
+      211239,
+      "Charlie Capps",
+      66,
+      "name (designation code ignored)"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/wildlife-hunting/wma/region/north-delta/charlie-capps/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-7072": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Riverfront Wildlife Management Area",
+   "ours": null,
+   "score": null,
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-7073": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "William C. Deviney Wildlife Management Area",
+   "ours": null,
+   "score": null,
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-7074": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Stoneville Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 2634,
+    "manager": "",
+    "pieces": [
+     [
+      211197,
+      "Stoneville Wma",
+      2634,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/wildlife-hunting/wma/region/north-delta/stoneville/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-7075": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Muscadine Farms Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 762,
+    "manager": "",
+    "pieces": [
+     [
+      211225,
+      "Muscadine Farms Wma",
+      762,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/wildlife-hunting/wma/region/north-delta/muscadine-farms/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-7076": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Sky Lake Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 4307,
+    "manager": "",
+    "pieces": [
+     [
+      211231,
+      "Sky Lake Wma",
+      4229,
+      "name"
+     ],
+     [
+      211230,
+      "Sky Lake",
+      78,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/wildlife-hunting/wma/region/north-delta/sky-lake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-7077": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Leroy Percy Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 1743,
+    "manager": "",
+    "pieces": [
+     [
+      211146,
+      "Leroy Percy Wildlife Management Area",
+      1743,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/wildlife-hunting/wma/region/north-delta/leroy-percy",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-7078": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Howard Miller Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 2456,
+    "manager": "",
+    "pieces": [
+     [
+      211220,
+      "Howard Miller Wma",
+      1961,
+      "name"
+     ],
+     [
+      211211,
+      "Howard Miller Wildlife Management Area",
+      495,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/wildlife-hunting/wma/region/south-delta/howard-miller/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-7079": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Twin Oaks Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 5738,
+    "manager": "",
+    "pieces": [
+     [
+      211185,
+      "Twin Oaks Wma",
+      5083,
+      "name"
+     ],
+     [
+      211184,
+      "Twin Oaks Wildlife Management Area",
+      655,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/wildlife-hunting/wma/region/south-delta/twin-oaks",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-7080": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Sunflower Wildlife Management Area",
+   "ours": null,
+   "score": null,
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-7081": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Lake George Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 8378,
+    "manager": "",
+    "pieces": [
+     [
+      211179,
+      "Lake George Wma",
+      8378,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/wildlife-hunting/wma/region/south-delta/lake-george",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-7082": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Shipland Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 4101,
+    "manager": "",
+    "pieces": [
+     [
+      211229,
+      "Shipland Wma",
+      4101,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/wildlife-hunting/wma/region/south-delta/shipland",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-7083": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Mahannah Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 12913,
+    "manager": "",
+    "pieces": [
+     [
+      211180,
+      "Mahannah Wma",
+      11396,
+      "name"
+     ],
+     [
+      211174,
+      "Mahannah Wildlife Management Area",
+      1517,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/wildlife-hunting/wma/region/south-delta/mahannah/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-7084": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Phil Bryant Wildlife Management Area",
+   "ours": null,
+   "score": null,
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-7085": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "John W. Starr Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 8268,
+    "manager": "",
+    "pieces": [
+     [
+      211196,
+      "John W. Starr Wma",
+      8268,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/wildlife-hunting/wma/region/east-central/john-w-starr/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-7086": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Trim Cane Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 591,
+    "manager": "",
+    "pieces": [
+     [
+      211234,
+      "Trim Cane Wma",
+      591,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/wildlife-hunting/wma/region/east-central/trim-cane",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-7087": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Black Prairie Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 5744,
+    "manager": "",
+    "pieces": [
+     [
+      211214,
+      "Black Prairie Wma",
+      5437,
+      "name"
+     ],
+     [
+      211213,
+      "Black Prairie Wildlife Management Area",
+      307,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/wildlife-hunting/wma/region/east-central/black-prairie",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-7088": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Choctaw Wildlife Management Area",
+   "ours": null,
+   "score": null,
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-7089": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Yockanookany Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 2621,
+    "manager": "",
+    "pieces": [
+     [
+      211236,
+      "Yockanookany Wma",
+      2621,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/wildlife-hunting/wma/region/east-central/yockanookany",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-7090": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Nanih Waiya Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 8256,
+    "manager": "",
+    "pieces": [
+     [
+      211181,
+      "Nanih Waiya",
+      8256,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/wildlife-hunting/wma/region/east-central/nanih-waiya/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-7091": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Okatibbee Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 6660,
+    "manager": "",
+    "pieces": [
+     [
+      211182,
+      "Okatibbee Wma",
+      6660,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/wildlife-hunting/wma/region/east-central/okatibbee",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-7092": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Tuscumbia Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 2630,
+    "manager": "",
+    "pieces": [
+     [
+      211235,
+      "Tuscumbia Wma",
+      2630,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/wildlife-hunting/wma/region/northeast/tuscumbia/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-7093": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Divide Section Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 16145,
+    "manager": "",
+    "pieces": [
+     [
+      211178,
+      "Divide Section",
+      16145,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/wildlife-hunting/wma/region/northeast/divide-section",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-7094": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Hell Creek Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 2354,
+    "manager": "",
+    "pieces": [
+     [
+      211219,
+      "Hell Creek Wma",
+      2354,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/wildlife-hunting/wma/region/northeast/hell-creek",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-7095": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "John Bell Williams Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 2654,
+    "manager": "",
+    "pieces": [
+     [
+      211194,
+      "John Bell Williams Wma",
+      2654,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/wildlife-hunting/wma/region/northeast/john-bell-williams",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-7096": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Canal Section Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 29296,
+    "manager": "",
+    "pieces": [
+     [
+      211177,
+      "Canal Section Wma",
+      29203,
+      "name"
+     ],
+     [
+      211176,
+      "Canal Section Wildlife Management Area",
+      93,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/wildlife-hunting/wma/region/northeast/canal-section",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-7097": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Chickasaw Wildlife Management Area",
+   "ours": null,
+   "score": null,
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-7098": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Graham Waterfowl Wildlife Management Area",
+   "ours": null,
+   "score": null,
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-7099": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Sardis Waterfowl Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 2333,
+    "manager": "",
+    "pieces": [
+     [
+      211183,
+      "Sardis Waterfowl",
+      2333,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.mississippilandcan.org/local-resources/Sardis-Waterfowl-Wildlife-Management-Area/24719",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-7100": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Upper Sardis Wildlife Management Area",
+   "ours": null,
+   "score": null,
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-7101": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Charles Ray Nix Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 3639,
+    "manager": "",
+    "pieces": [
+     [
+      211216,
+      "Charles Ray Nix Wma",
+      3639,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/wildlife-hunting/wma/region/northwest/charles-ray-nix/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-7102": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Calhoun County Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 8776,
+    "manager": "",
+    "pieces": [
+     [
+      211186,
+      "Calhoun County Wildlife Management Area",
+      8776,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.mississippilandcan.org/local-resources/Calhoun-County-Wildlife-Management-Area/24717",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-7103": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Malmaison Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 8572,
+    "manager": "",
+    "pieces": [
+     [
+      211222,
+      "Malmaison Wma",
+      8572,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/wildlife-hunting/wma/region/northwest/malmaison/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-7104": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Chickasawhay Wildlife Management Area",
+   "ours": null,
+   "score": null,
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-7105": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Mason Creek Wildlife Management Area",
+   "ours": null,
+   "score": null,
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-7106": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Leaf River Wildlife Management Area",
+   "ours": null,
+   "score": null,
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-7107": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Theodore Mars Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 897,
+    "manager": "",
+    "pieces": [
+     [
+      211233,
+      "Theodore A. Mars, Jr. Memorial Wildlife Refuge",
+      897,
+      "reviewed"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/wildlife-hunting/wma/region/southeast/theodore-mars",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 3,
+   "score_parts": {
+    "name": 1,
+    "pin": 1,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-7108": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Pascagoula River Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 37758,
+    "manager": "",
+    "pieces": [
+     [
+      211203,
+      "Pascagoula Wma",
+      35567,
+      "name"
+     ],
+     [
+      211205,
+      "Pascagoula Wma",
+      2191,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/wildlife-hunting/wma/region/southeast/pascagoula-river/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-7109": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Old River Wildlife Management Area",
+   "ours": null,
+   "score": null,
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-7110": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Little Biloxi Wildlife Management Area",
+   "ours": null,
+   "score": null,
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-7111": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Red Creek Wildlife Management Area",
+   "ours": null,
+   "score": null,
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-7112": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Ward Bayou Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 13514,
+    "manager": "",
+    "pieces": [
+     [
+      211171,
+      "Ward Bayou Wma",
+      10734,
+      "name"
+     ],
+     [
+      211173,
+      "Ward Bayou Wma",
+      2762,
+      "name"
+     ],
+     [
+      211172,
+      "Ward Bayou Wma",
+      18,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/wildlife-hunting/wma/region/southeast/ward-bayou",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-7113": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Pearl River Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 6973,
+    "manager": "",
+    "pieces": [
+     [
+      211199,
+      "Pearl River Wma",
+      5583,
+      "name"
+     ],
+     [
+      211201,
+      "Pearl River Wma",
+      1066,
+      "name"
+     ],
+     [
+      211198,
+      "Pearl River Wildlife Management Area",
+      277,
+      "name"
+     ],
+     [
+      211200,
+      "Pearl River Wildlife Management Area",
+      47,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/wildlife-hunting/wmas/pearl-river-wma",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-7114": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Bienville Wildlife Management Area",
+   "ours": null,
+   "score": null,
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-7115": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Tallahala Wildlife Management Area",
+   "ours": null,
+   "score": null,
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-7116": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Caney Creek Wildlife Management Area",
+   "ours": null,
+   "score": null,
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-7117": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Canemount Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 3587,
+    "manager": "",
+    "pieces": [
+     [
+      211215,
+      "Canemount Wma",
+      3241,
+      "name"
+     ],
+     [
+      211202,
+      "Canemount",
+      346,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/wildlife-hunting/wma/region/southwest/canemount",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-7118": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Copiah County Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 6594,
+    "manager": "",
+    "pieces": [
+     [
+      211218,
+      "Copiah Wma",
+      6594,
+      "words"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/wildlife-hunting/wma/region/southwest/copiah-county",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-7119": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Natchez Wildlife Management Area",
+   "ours": null,
+   "score": null,
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-7120": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Caston Creek Wildlife Management Area",
+   "ours": null,
+   "score": null,
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-7121": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Sandy Creek Wildlife Management Area",
+   "ours": null,
+   "score": null,
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-7122": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Marion County Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 7362,
+    "manager": "",
+    "pieces": [
+     [
+      211223,
+      "Marion County Wma",
+      7362,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/wildlife-hunting/wma/region/southwest/marion-county",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-7123": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Wolf River Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 10303,
+    "manager": "",
+    "pieces": [
+     [
+      211195,
+      "Wolf River Wildlife Management Area",
+      10303,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "rest",
+     "url": "https://www.mdwfp.com/wildlife-hunting/wma/region/southeast/wolf-river/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "Wildlife Management Area",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-7124": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Arkabutla Lake State Recreation Area",
+   "ours": null,
+   "score": null,
+   "t": "State Recreation Area",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-7125": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Enid Lake State Recreation Area",
+   "ours": null,
+   "score": null,
+   "t": "State Recreation Area",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-7126": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Grenada Lake State Recreation Area",
+   "ours": null,
+   "score": null,
+   "t": "State Recreation Area",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-7127": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Okatibbee Lake State Recreation Area",
+   "official": null,
+   "ours": {
+    "acres": 10907,
+    "manager": "",
+    "pieces": [
+     [
+      2535,
+      "Okatibbee Recreation Area",
+      10907,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "HTTP 403",
+     "url": "https://www.sam.usace.army.mil/Missions/Civil-Works/Recreation/Okatibbee-Lake/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "robots",
+     "url": "https://unblock.federalregister.gov/",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
+   "t": "State Recreation Area",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-7128": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Sardis Lake State Recreation Area",
+   "ours": null,
+   "score": null,
+   "t": "State Recreation Area",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-7129": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Columbus Lake State Recreation Area",
+   "ours": null,
+   "score": null,
+   "t": "State Recreation Area",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-7130": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Aberdeen Lake State Recreation Area",
+   "ours": null,
+   "score": null,
+   "t": "State Recreation Area",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-7131": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Bay Springs Lake State Recreation Area",
+   "ours": null,
+   "score": null,
+   "t": "State Recreation Area",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-7132": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Jamie Whitten Historical Center State Recreation Area",
+   "ours": null,
+   "score": null,
+   "t": "State Recreation Area",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-7133": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Amory Recreation Area State Recreation Area",
+   "ours": null,
+   "score": null,
+   "t": "State Recreation Area",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-7134": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Holcut Memorial State Recreation Area",
+   "ours": null,
+   "score": null,
+   "t": "State Recreation Area",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-7629": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Davis Lake State Recreation Area",
+   "ours": null,
+   "score": null,
+   "t": "State Recreation Area",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-7630": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Chewalla Lake State Recreation Area",
+   "ours": null,
+   "score": null,
+   "t": "State Recreation Area",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-7631": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Owl Creek Mounds Archeological Reserve",
+   "ours": null,
+   "score": null,
+   "t": "Archeological Reserve",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-7632": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Pvt. John Allen National Fish Hatchery",
+   "official": null,
+   "ours": {
+    "acres": 62,
+    "manager": "",
+    "pieces": [
+     [
+      4248,
+      "Private John Allen National Fish Hatchery",
+      31,
+      "reviewed"
+     ],
+     [
+      5206,
+      "Private John Allen National Fish Hatchery",
+      31,
+      "reviewed"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/southeast/private-john-allen/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/policies",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 1,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "National Fish Hatchery",
+   "ver": 7,
+   "verdict": "no size on page"
+  },
+  "US-7633": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Turkey Fork Lake State Recreation Area",
+   "ours": null,
+   "score": null,
+   "t": "State Recreation Area",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-7634": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Ashe Lake State Recreation Area",
+   "ours": null,
+   "score": null,
+   "t": "State Recreation Area",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-7635": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Airey Lake State Recreation Area",
+   "ours": null,
+   "score": null,
+   "t": "State Recreation Area",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-8513": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Archusa Creek State Recreation Area",
+   "ours": null,
+   "score": null,
+   "t": "State Recreation Area",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-8514": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Big Creek State Recreation Area",
+   "ours": null,
+   "score": null,
+   "t": "State Recreation Area",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-8515": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Dry Creek State Recreation Area",
+   "ours": null,
+   "score": null,
+   "t": "State Recreation Area",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-8516": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Dunn's Falls State Recreation Area",
+   "ours": null,
+   "score": null,
+   "t": "State Recreation Area",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-8517": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Flint Creek State Recreation Area",
+   "ours": null,
+   "score": null,
+   "t": "State Recreation Area",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-8518": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Maynor Creek State Recreation Area",
+   "ours": null,
+   "score": null,
+   "t": "State Recreation Area",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-8519": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Turkey Creek State Recreation Area",
+   "ours": null,
+   "score": null,
+   "t": "State Recreation Area",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-9847": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Clark Creek Natural Area State Park",
+   "ours": null,
+   "score": null,
+   "t": "State Park",
+   "ver": 7,
+   "verdict": "no outline"
+  },
+  "US-9849": {
+   "checked": "2026-10-28",
+   "handover": [],
+   "n": "Deer Island Coastal Park",
+   "ours": null,
+   "score": null,
+   "t": "Coastal Park",
+   "ver": 7,
+   "verdict": "no outline"
+  }
+ },
+ "read": "2026-10-28"
+}

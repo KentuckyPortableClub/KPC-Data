@@ -3,20 +3,20 @@
  "area": "US-NJ",
  "counts": {
   "agree": 25,
-  "handover_hints": 2,
+  "handover_hints": 3,
   "no_page": 0,
   "no_size": 81,
   "off": 3,
-  "ours_unknown": 0,
+  "ours_unknown": 2,
   "parks": 134,
   "retired": 0,
   "unsure": 17,
   "weak": 3,
-  "with_outline": 126
+  "with_outline": 128
  },
  "parks": {
   "US-0180": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Twin Lights State Historic Site",
    "official": null,
@@ -58,7 +58,7 @@
    "verdict": "no size on page"
   },
   "US-0452": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Cape May National Wildlife Refuge",
    "official": null,
@@ -143,7 +143,7 @@
   },
   "US-0453": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Edwin B. Forsythe National Wildlife Refuge",
    "official": {
@@ -151,7 +151,7 @@
     "as": "48,000 acres",
     "clean": false,
     "line": "orsythe name, in honor of the late conservationist Congressman from New Jersey. The refuge protects more than 48,000 acres of southern New Jersey coastal habitats which is actively managed for migratory birds. More than 82 percent o",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "The refuge protects more than 48,000 acres of southern New Jersey coastal habitats which is actively managed for migratory birds.",
     "url": "https://www.fws.gov/refuge/edwin-b-forsythe/about-us",
     "why": "total-looking"
@@ -282,7 +282,7 @@
    "verdict": "off"
   },
   "US-0454": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Great Swamp National Wildlife Refuge",
    "official": {
@@ -290,7 +290,7 @@
     "as": "7,853 acres",
     "clean": false,
     "line": "es Square. The refuge was established by an act of Congress on November 3, 1960. Today the refuge consists of 7,853 acres of varied habitats, and the refuge has become an important resting and feeding area for more than 244 species",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Today the refuge consists of 7,853 acres of varied habitats, and the refuge has become an important resting and feeding area for more than 244 species of birds.",
     "url": "https://www.fws.gov/refuge/great_swamp/",
     "why": "part (a lake, a purchase, a campground…)"
@@ -394,7 +394,7 @@
    "verdict": "agree"
   },
   "US-0455": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Supawna Meadows National Wildlife Refuge",
    "official": {
@@ -402,7 +402,7 @@
     "as": "2,800 acre",
     "clean": false,
     "line": "ng Location and Contact Information About Us Supawna Meadows NWR is a stunning location any time of year. The 2,800-acre site is located just north of the Salem River and is part of the internationally recognized Delaware River es",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "The 2,800-acre site is located just north of the Salem River and is part of the internationally recognized Delaware River estuary.",
     "url": "https://www.fws.gov/refuge/supawna_meadows/",
     "why": "part (a lake, a purchase, a campground…)"
@@ -497,7 +497,7 @@
   },
   "US-0456": {
    "cause": "whole park compared (POTA lists it in 2 states: {'US-NY': 194, 'US-NJ': 4652})",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [
     {
      "date_hint": null,
@@ -632,7 +632,7 @@
    "verdict": "unsure"
   },
   "US-0677": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Great Egg Harbor National Wild and Scenic River",
    "official": null,
@@ -670,12 +670,12 @@
     }
    ],
    "pct": null,
-   "score": 5,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
     "size": 1,
-    "source": 0
+    "source": 2
    },
    "sizes": [],
    "t": "National Wild and Scenic River",
@@ -684,7 +684,7 @@
   },
   "US-0680": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Gateway National Recreation Area",
    "note": "whole park compared (POTA lists it in 2 states: {'US-NY': 18548, 'US-NJ': 1810})",
@@ -693,7 +693,7 @@
     "as": "27,000 acres",
     "clean": false,
     "line": "Area Search Search This Site All NPS Exiting nps.gov Cancel Gateway National Recreation Area • NY,NJ Spanning 27,000 acres from Sandy Hook in New Jersey to Breezy Point in New York City, the park is both the gateway from the ocean i",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Spanning 27,000 acres from Sandy Hook in New Jersey to Breezy Point in New York City, the park is both the gateway from the ocean into New York Harbor, and the gateway to the National Park Service for millions of visitors every year.",
     "url": "https://www.nps.gov/gate/index.htm",
     "why": "total-looking"
@@ -780,7 +780,7 @@
    "verdict": "off"
   },
   "US-0684": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Lower Delaware National Wild and Scenic River",
    "ours": null,
@@ -790,7 +790,7 @@
    "verdict": "no outline"
   },
   "US-0746": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [
     {
      "date_hint": null,
@@ -861,7 +861,7 @@
    "verdict": "no size on page"
   },
   "US-0751": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Paterson Great Falls National Historical Park",
    "official": null,
@@ -934,7 +934,7 @@
    "verdict": "no size on page"
   },
   "US-0759": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Thomas Edison National Historical Park",
    "official": null,
@@ -992,7 +992,7 @@
    "verdict": "no size on page"
   },
   "US-0886": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Maurice River National Wild and Scenic River",
    "official": null,
@@ -1030,12 +1030,12 @@
     }
    ],
    "pct": null,
-   "score": 4,
+   "score": 6,
    "score_parts": {
     "name": 1,
     "pin": 2,
     "size": 1,
-    "source": 0
+    "source": 2
    },
    "sizes": [],
    "t": "National Wild and Scenic River",
@@ -1043,7 +1043,7 @@
    "verdict": "no size on page"
   },
   "US-0888": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Musconetcong River National Wild and Scenic River",
    "official": null,
@@ -1081,12 +1081,12 @@
     }
    ],
    "pct": null,
-   "score": 5,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
     "size": 1,
-    "source": 0
+    "source": 2
    },
    "sizes": [],
    "t": "National Wild and Scenic River",
@@ -1096,6 +1096,7 @@
   "US-11337": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Hamburg Mountain Wildlife Management Area",
    "official": null,
    "ours": {
@@ -1122,7 +1123,7 @@
       "sgnjb287",
       "Hamburg Mountain Wildlife Management Area",
       5248,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "just outside",
@@ -1156,7 +1157,7 @@
    "verdict": "no size on page"
   },
   "US-11338": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Stow Creek State Park",
    "official": null,
@@ -1215,6 +1216,7 @@
   "US-11340": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Higbee Beach Wildlife Management Area",
    "official": null,
    "ours": {
@@ -1303,6 +1305,7 @@
   "US-11863": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Butterfly Bogs Wildlife Management Area",
    "official": null,
    "ours": {
@@ -1324,7 +1327,7 @@
       "sgnjb33",
       "Butterfly Bogs Wildlife Management Area",
       164,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "just outside",
@@ -1360,6 +1363,7 @@
   "US-11964": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Peaslee Wildlife Management Area",
    "official": null,
    "ours": {
@@ -1386,7 +1390,7 @@
       "sgnjb363",
       "Peaslee Wildlife Management Area",
       29097,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -1422,6 +1426,7 @@
   "US-11965": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Glassboro Wildlife Management Area",
    "official": null,
    "ours": {
@@ -1495,6 +1500,7 @@
   "US-11988": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Cohansey River Wildlife Management Area",
    "official": null,
    "ours": {
@@ -1570,6 +1576,7 @@
   "US-11989": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Great Bay Boulevard Wildlife Management Area",
    "official": null,
    "ours": {
@@ -1598,7 +1605,7 @@
       "sgnjb264",
       "Great Bay Boulevard Wildlife Management Area",
       5905,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -1633,7 +1640,7 @@
   },
   "US-11990": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Harrisonville Lake Wildlife Management Area",
    "official": null,
@@ -1666,7 +1673,7 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok",
+     "status": "rest",
      "url": "https://dep.nj.gov/njfw/harrisonville-lake-wma/",
      "why": "the park's page (data/parkinfo)"
     },
@@ -1701,7 +1708,7 @@
   },
   "US-11991": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "South Branch Wildlife Management Area",
    "official": null,
@@ -1731,7 +1738,7 @@
       "sgnjb273",
       "South Branch Wildlife Management Area",
       1794,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -1777,6 +1784,7 @@
   "US-11992": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Whiting State Conservation Area",
    "official": null,
    "ours": {
@@ -1818,6 +1826,7 @@
   "US-11993": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Clarks Pond Wildlife Management Area",
    "official": null,
    "ours": {
@@ -1846,7 +1855,7 @@
       "sgnjb266",
       "Clarks Pond Wildlife Management Area",
       324,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -1882,6 +1891,7 @@
   "US-12099": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Alexauken Creek Wildlife Management Area",
    "official": null,
    "ours": {
@@ -1910,7 +1920,7 @@
       "sgnjb6",
       "Alexauken Creek Wildlife Management Area",
       587,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "just outside",
@@ -1945,7 +1955,7 @@
   },
   "US-12100": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Amwell Lake Wildlife Management Area",
    "official": null,
@@ -1978,7 +1988,7 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "opened, not a PDF",
+     "status": "rest",
      "url": "https://dep.nj.gov/wp-content/uploads/njfw/amwell_lake_rd.pdf",
      "why": "the park's page (data/parkinfo)"
     },
@@ -2014,6 +2024,7 @@
   "US-12101": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Clinton Wildlife Management Area",
    "official": null,
    "ours": {
@@ -2040,7 +2051,7 @@
       "sgnjb41",
       "Clinton Wildlife Management Area",
       2298,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "just outside",
@@ -2075,7 +2086,7 @@
   },
   "US-12102": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Ken Lockwood Gorge Wildlife Management Area",
    "official": null,
@@ -2105,7 +2116,7 @@
       "sgnjb108",
       "Ken Lockwood Gorge Wildlife Management Area",
       549,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -2149,7 +2160,7 @@
    "verdict": "unsure"
   },
   "US-12103": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Lockatong Wildlife Management Area",
    "official": {
@@ -2157,7 +2168,7 @@
     "as": "764.56 Acres",
     "clean": false,
     "line": "Lockatong Wildlife Management Area Hunterdon County Franklin & Kingwood Townships 764.56 Acres IA National Geographic, Esri, DeLorme, HERE, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, increment",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "764.56 Acres",
     "url": "https://nj.gov/dep/fgw/pdf/wmaroadmaps/lockatong_rd.pdf",
     "why": "a map label (no sentence)"
@@ -2188,7 +2199,7 @@
       "sgnjb276",
       "Lockatong Wildlife Management Area",
       768,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "just outside",
@@ -2258,6 +2269,7 @@
   "US-12104": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Pohatcong Creek Wildlife Management Area",
    "official": null,
    "ours": {
@@ -2313,6 +2325,7 @@
   "US-12105": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Rockport Wildlife Management Area",
    "official": null,
    "ours": {
@@ -2341,7 +2354,7 @@
       "sgnjb303",
       "Rockport Wildlife Management Area",
       1424,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -2377,6 +2390,7 @@
   "US-12168": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Medford Wildlife Management Area",
    "official": null,
    "ours": {
@@ -2439,7 +2453,7 @@
   },
   "US-12644": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Berkshire Valley Wildlife Management Area",
    "official": {
@@ -2447,7 +2461,7 @@
     "as": "92 acres",
     "clean": false,
     "line": "ld be produced. Over the course of 20 years, the plan called for 4 harvests of about 23 acres, for a total of 92 acres of early successional habitat being created over time. Twenty year old stand of oak, birch and maple Click to",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "of about 23 acres, for a total of 92 acres of early successional",
     "url": "https://www.nj.gov/dep/fgw/artberkshirewma.htm",
     "why": "total-looking"
@@ -2471,7 +2485,7 @@
       "sgnjb23",
       "Berkshire Valley Wildlife Management Area",
       1941,
-      "name"
+      "reviewed"
      ],
      [
       227923,
@@ -2595,6 +2609,7 @@
   "US-12645": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Flatbrook Roy Wildlife Management Area",
    "official": null,
    "ours": {
@@ -2670,6 +2685,7 @@
   "US-13057": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Beaver Swamp Wildlife Management Area",
    "official": null,
    "ours": {
@@ -2691,7 +2707,7 @@
       "sgnjb19",
       "Beaver Swamp Wildlife Management Area",
       3055,
-      "name"
+      "reviewed"
      ],
      [
       227912,
@@ -2751,6 +2767,7 @@
   "US-13059": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Abbots Meadow Wildlife Management Area",
    "official": null,
    "ours": {
@@ -2815,6 +2832,7 @@
   "US-13060": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Elmer Lake Wildlife Management Area",
    "official": null,
    "ours": {
@@ -2843,7 +2861,7 @@
       "sgnjb62",
       "Elmer Lake Wildlife Management Area",
       408,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "just outside",
@@ -2878,7 +2896,7 @@
   },
   "US-13061": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Gum Tree Corner Wildlife Management Area",
    "official": null,
@@ -2946,7 +2964,7 @@
    "verdict": "unsure"
   },
   "US-13117": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "D.O.D. Ponds Wildlife Management Area",
    "official": {
@@ -2954,7 +2972,7 @@
     "as": "336 Acres",
     "clean": false,
     "line": "DOD Ponds Wildlife Management Area Salem County - Carney Point & Oldmans Townships 336 Acres 0 0.35 0.70.175 Miles Department of Environmental Protection New Jersey Division of Fish and Wildlife Boat Ra",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "336 Acres",
     "url": "https://www.state.nj.us/dep/fgw/pdf/wmamaps/dod_ponds.pdf",
     "why": "a map label (no sentence)"
@@ -2977,7 +2995,7 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok",
+     "status": "rest",
      "url": "https://dep.nj.gov/njfw/dod-ponds-wma/",
      "why": "the park's page (data/parkinfo)"
     },
@@ -2989,12 +3007,12 @@
    ],
    "pct": 2,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 1,
     "pin": 2,
     "size": 2,
-    "source": 1
+    "source": 2
    },
    "sizes": [
     {
@@ -3014,6 +3032,7 @@
   "US-13147": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Andalora Wildlife Management Area",
    "official": null,
    "ours": {
@@ -3071,6 +3090,7 @@
   "US-13148": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Baldwin Lake Wildlife Management Area",
    "official": null,
    "ours": {
@@ -3128,6 +3148,7 @@
   "US-13149": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Beaver Brook Wildlife Management Area",
    "official": null,
    "ours": {
@@ -3149,7 +3170,7 @@
       "sgnjb271",
       "Beaver Brook Wildlife Management Area",
       653,
-      "name"
+      "reviewed"
      ],
      [
       227900,
@@ -3191,6 +3212,7 @@
   "US-13150": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Belvidere Access Wildlife Management Area",
    "official": null,
    "ours": {
@@ -3248,6 +3270,7 @@
   "US-13254": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Van Nest Refuge Wildlife Management Area",
    "official": null,
    "ours": {
@@ -3303,7 +3326,7 @@
    "verdict": "no size on page"
   },
   "US-13255": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Hancock House Historic Site",
    "official": null,
@@ -3361,6 +3384,7 @@
   "US-13256": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Menantico Ponds Wildlife Management Area",
    "official": null,
    "ours": {
@@ -3389,7 +3413,7 @@
       "sgnjb338",
       "Menantico Ponds Wildlife Management Area",
       1815,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "just outside",
@@ -3423,7 +3447,7 @@
    "verdict": "no size on page"
   },
   "US-1607": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Allaire State Park",
    "official": null,
@@ -3453,7 +3477,7 @@
       "sgnjb311",
       "Allaire State Park",
       3439,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -3487,7 +3511,7 @@
    "verdict": "no size on page"
   },
   "US-1608": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Allamuchy Mountain State Park",
    "official": null,
@@ -3515,7 +3539,7 @@
       "sgnjb336",
       "Allamuchy Mountain State Park",
       10876,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -3551,6 +3575,7 @@
   "US-1609": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Barnegat Lighthouse State Park",
    "official": null,
    "ours": {
@@ -3602,7 +3627,7 @@
    "verdict": "no size on page"
   },
   "US-1610": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Cape May Point State Park",
    "official": null,
@@ -3666,7 +3691,7 @@
    "verdict": "no size on page"
   },
   "US-1611": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Cheesequake State Park",
    "official": null,
@@ -3760,7 +3785,7 @@
    "verdict": "no size on page"
   },
   "US-1612": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Corson's Inlet State Park",
    "official": null,
@@ -3817,7 +3842,7 @@
    "verdict": "no size on page"
   },
   "US-1613": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Delaware and Raritan Canal State Park",
    "official": null,
@@ -3881,7 +3906,7 @@
    "verdict": "no size on page"
   },
   "US-1614": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Double Trouble State Park",
    "official": null,
@@ -3909,7 +3934,7 @@
       "sgnjb324",
       "Double Trouble State Park",
       8865,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "just outside",
@@ -3943,7 +3968,7 @@
    "verdict": "no size on page"
   },
   "US-1615": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Thomas Edison Memorial State Park",
    "official": {
@@ -3951,7 +3976,7 @@
     "as": "36 acre",
     "clean": false,
     "line": "urst of invention that took place at Thomas Edison’s historic Menlo Park, and enjoy a walk through our lovely 36-acre state park, featuring a nature trail and informative kiosks. Hours & Directions Schools Scouts Visiting the M",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Learn about the burst of invention that took place at Thomas Edison’s historic Menlo Park, and enjoy a walk through our lovely 36-acre state park, featuring a nature trail and informative kiosks.",
     "url": "https://www.menloparkmuseum.org/",
     "why": "total-looking"
@@ -4017,6 +4042,7 @@
   "US-1616": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Farny State Park",
    "official": null,
    "ours": {
@@ -4079,7 +4105,7 @@
    "verdict": "no size on page"
   },
   "US-1617": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Fort Mott State Park",
    "official": null,
@@ -4107,7 +4133,7 @@
       "sgnjb69",
       "Fort Mott State Park",
       113,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -4141,7 +4167,7 @@
    "verdict": "no size on page"
   },
   "US-1618": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Hacklebarney State Park",
    "official": null,
@@ -4171,7 +4197,7 @@
       "sgnjb307",
       "Hacklebarney State Park",
       981,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -4205,7 +4231,7 @@
    "verdict": "no size on page"
   },
   "US-1619": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "High Point State Park",
    "official": null,
@@ -4311,7 +4337,7 @@
    "verdict": "no size on page"
   },
   "US-1620": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Hopatcong State Park",
    "official": null,
@@ -4334,7 +4360,7 @@
       "sgnjb289",
       "Hopatcong State Park",
       545,
-      "name"
+      "reviewed"
      ],
      [
       227181,
@@ -4386,7 +4412,7 @@
    "verdict": "no size on page"
   },
   "US-1621": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Island Beach State Park",
    "official": null,
@@ -4409,7 +4435,7 @@
       "sgnjb104",
       "Island Beach State Park",
       2513,
-      "name"
+      "reviewed"
      ],
      [
       227184,
@@ -4449,7 +4475,7 @@
    "verdict": "no size on page"
   },
   "US-1622": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Kittatinny Valley State Park",
    "official": null,
@@ -4479,7 +4505,7 @@
       "sgnjb258",
       "Kittatinny Valley State Park",
       3537,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -4513,7 +4539,7 @@
    "verdict": "no size on page"
   },
   "US-1623": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Liberty State Park",
    "official": null,
@@ -4600,7 +4626,7 @@
    "verdict": "no size on page"
   },
   "US-1624": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Long Pond Ironworks State Park",
    "official": null,
@@ -4628,7 +4654,7 @@
       "sgnjb121",
       "Long Pond Ironworks State Park",
       4812,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "just outside",
@@ -4662,7 +4688,7 @@
    "verdict": "no size on page"
   },
   "US-1625": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Monmouth Battlefield State Park",
    "official": null,
@@ -4685,7 +4711,7 @@
       "sgnjb254",
       "Monmouth Battlefield State Park",
       2465,
-      "name"
+      "reviewed"
      ],
      [
       227234,
@@ -4737,7 +4763,7 @@
    "verdict": "no size on page"
   },
   "US-1626": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Parvin State Park",
    "official": null,
@@ -4767,7 +4793,7 @@
       "sgnjb364",
       "Parvin State Park",
       1625,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -4803,6 +4829,7 @@
   "US-1627": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Pigeon Swamp State Park",
    "official": null,
    "ours": {
@@ -4829,7 +4856,7 @@
       "sgnjb255",
       "Pigeon Swamp State Park",
       1132,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -4858,7 +4885,7 @@
    "verdict": "no size on page"
   },
   "US-1628": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Princeton Battlefield State Park",
    "official": null,
@@ -4888,7 +4915,7 @@
       "sgnjb171",
       "Princeton Battlefield State Park",
       81,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -4922,7 +4949,7 @@
    "verdict": "no size on page"
   },
   "US-1629": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Rancocas State Park",
    "official": null,
@@ -4945,7 +4972,7 @@
       "sgnjb177",
       "Rancocas State Park",
       1478,
-      "name"
+      "reviewed"
      ],
      [
       227292,
@@ -4985,7 +5012,7 @@
    "verdict": "no size on page"
   },
   "US-1630": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Ringwood State Park",
    "official": null,
@@ -5008,7 +5035,7 @@
       "sgnjb184",
       "Ringwood State Park",
       3988,
-      "name"
+      "reviewed"
      ],
      [
       227299,
@@ -5048,7 +5075,7 @@
    "verdict": "no size on page"
   },
   "US-1631": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Stephens State Park",
    "official": null,
@@ -5130,7 +5157,7 @@
    "verdict": "no size on page"
   },
   "US-1632": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Swartswood State Park",
    "official": null,
@@ -5160,7 +5187,7 @@
       "sgnjb355",
       "Swartswood State Park",
       3439,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -5194,7 +5221,7 @@
    "verdict": "no size on page"
   },
   "US-1633": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Voorhees State Park",
    "official": null,
@@ -5224,7 +5251,7 @@
       "sgnjb232",
       "Voorhees State Park",
       662,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -5258,7 +5285,7 @@
    "verdict": "no size on page"
   },
   "US-1634": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Washington Crossing State Park",
    "official": null,
@@ -5286,7 +5313,7 @@
       "sgnjb367",
       "Washington Crossing State Park",
       2576,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -5320,7 +5347,7 @@
    "verdict": "no size on page"
   },
   "US-1635": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Washington Rock State Park",
    "official": null,
@@ -5343,7 +5370,7 @@
       "sgnjb269",
       "Washington Rock State Park",
       50,
-      "name"
+      "reviewed"
      ],
      [
       227410,
@@ -5383,7 +5410,7 @@
    "verdict": "no size on page"
   },
   "US-1636": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Wawayanda State Park",
    "official": null,
@@ -5411,7 +5438,7 @@
       "sgnjb239",
       "Wawayanda State Park",
       15107,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -5445,17 +5472,17 @@
    "verdict": "no size on page"
   },
   "US-3379": {
-   "cause": "whole park compared (POTA lists it in 2 states: {'US-NJ': 31074, 'US-PA': 27069})",
-   "checked": "2026-11-01",
+   "cause": "whole park compared (POTA lists it in 2 states: {'US-PA': 27069, 'US-NJ': 31074})",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Delaware Water Gap National Recreation Area",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-NJ': 31074, 'US-PA': 27069})",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-PA': 27069, 'US-NJ': 31074})",
    "official": {
     "acres": 40.0,
     "as": "40 Acres",
     "clean": false,
     "line": "dary Private roads Dingmans Bridge from Route 560 to the PA state line Sandyston Township Roads Mettler Road (40 Acres Road) from Old Mine Road to intersection with VanAuken Road. VanAuken Road to termination point State of New",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Mettler Road (40 Acres Road) from Old Mine Road to intersection with VanAuken Road.",
     "url": "https://www.nps.gov/dewa/learn/management/compendium.htm",
     "why": "no total words near it"
@@ -5478,8 +5505,8 @@
     "pin": "inside",
     "src": "USGS PAD-US",
     "states": [
-     "US-NJ",
-     "US-PA"
+     "US-PA",
+     "US-NJ"
     ],
     "unknown_pieces": 0,
     "whole_park": true
@@ -5547,27 +5574,170 @@
    "verdict": "unsure"
   },
   "US-4556": {
-   "checked": "2026-11-01",
-   "handover": [],
+   "checked": "2026-11-09",
+   "handover": [
+    {
+     "date_hint": "1937",
+     "kind": "managed by",
+     "line": "ian Mountains. Conceived in 1921, built by private citizens, and completed in 1937, today the trail is managed by the National Park Service, US Forest Service, Appalachian Trail Conservancy, numerous state agencies and thousands of volunte",
+     "owner_now": "National Park Service",
+     "src": "https://www.nps.gov/appa/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
    "n": "Appalachian Trail National Scenic Trail",
-   "ours": null,
-   "score": null,
+   "note": "whole park compared (POTA lists it in 0 states: {})",
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "acres_by_state": {},
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "states": [
+     "US-CT",
+     "US-VA",
+     "US-WV",
+     "US-MA",
+     "US-PA",
+     "US-ME",
+     "US-GA",
+     "US-TN",
+     "US-NY",
+     "US-VT",
+     "US-MD",
+     "US-NH",
+     "US-NJ",
+     "US-NC"
+    ],
+    "unknown_pieces": 1,
+    "whole_park": true
+   },
+   "owner_now": "National Park Service",
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/appa/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/appa/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/appa/planyourvisit/upload/APPA_Map.pdf",
+     "why": "official map (parkinfo-web)"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/appa/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/appa/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/appa/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
    "t": "National Scenic Trail",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "ours unknown"
   },
   "US-4582": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Washington-Rochambeau Revolutionary Route National Historic Trail",
-   "ours": null,
-   "score": null,
+   "note": "whole park compared (POTA lists it in 0 states: {})",
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "acres_by_state": {},
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "states": [
+     "US-CT",
+     "US-VA",
+     "US-MA",
+     "US-PA",
+     "US-DE",
+     "US-DC",
+     "US-NY",
+     "US-MD",
+     "US-NJ",
+     "US-RI"
+    ],
+    "unknown_pieces": 1,
+    "whole_park": true
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/waro/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/waro/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok, no readable text",
+     "url": "https://www.nps.gov/waro/planyourvisit/upload/WARO_UnigridBrochure_2024_Back-2.pdf",
+     "why": "official map (parkinfo-web)"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/waro/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/waro/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/waro/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
    "t": "National Historic Trail",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "ours unknown"
   },
   "US-4991": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Abram S. Hewitt State Forest",
    "official": null,
@@ -5590,7 +5760,7 @@
       "sgnjb3",
       "Abram S. Hewitt State Forest",
       2037,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "just outside",
@@ -5624,7 +5794,7 @@
    "verdict": "no size on page"
   },
   "US-4992": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Bass River State Forest",
    "official": null,
@@ -5728,7 +5898,7 @@
    "verdict": "no size on page"
   },
   "US-4993": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Belleplain State Forest",
    "official": null,
@@ -5756,7 +5926,7 @@
       "sgnjb352",
       "Belleplain State Forest",
       21537,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "just outside",
@@ -5790,7 +5960,7 @@
    "verdict": "no size on page"
   },
   "US-4994": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Brendan T. Byrne State Forest",
    "official": null,
@@ -5818,7 +5988,7 @@
       "sgnjb344",
       "Brendan T. Byrne State Forest",
       36869,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -5852,7 +6022,7 @@
    "verdict": "no size on page"
   },
   "US-4995": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Jenny Jump State Forest",
    "official": null,
@@ -5882,7 +6052,7 @@
       "sgnjb286",
       "Jenny Jump State Forest",
       5017,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -5916,7 +6086,7 @@
    "verdict": "no size on page"
   },
   "US-4996": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Norvin Green State Forest",
    "official": null,
@@ -5944,7 +6114,7 @@
       "sgnjb296",
       "Norvin Green State Forest",
       5459,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -5978,7 +6148,7 @@
    "verdict": "no size on page"
   },
   "US-4997": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Penn State Forest",
    "official": null,
@@ -5999,7 +6169,7 @@
       "sgnjb160",
       "Penn State Forest",
       3481,
-      "name"
+      "reviewed"
      ],
      [
       227727,
@@ -6039,7 +6209,7 @@
    "verdict": "no size on page"
   },
   "US-4998": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Ramapo Mountain State Forest",
    "official": null,
@@ -6069,7 +6239,7 @@
       "sgnjb176",
       "Ramapo Mountain State Forest",
       4100,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -6098,7 +6268,7 @@
    "verdict": "no size on page"
   },
   "US-4999": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Stokes State Forest",
    "official": null,
@@ -6204,7 +6374,7 @@
    "verdict": "no size on page"
   },
   "US-5000": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Wharton State Forest",
    "official": null,
@@ -6232,7 +6402,7 @@
       "sgnjb339",
       "Wharton State Forest",
       109656,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "just outside",
@@ -6266,7 +6436,7 @@
    "verdict": "no size on page"
   },
   "US-5001": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Worthington State Forest",
    "official": null,
@@ -6296,7 +6466,7 @@
       "sgnjb369",
       "Worthington State Forest",
       6793,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -6330,36 +6500,65 @@
    "verdict": "no size on page"
   },
   "US-6461": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Spruce Run State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 2233,
+    "acres": 2196,
     "dissolved": {
-     "after": 1599,
-     "before": 4277,
+     "after": 1856,
+     "before": 2941,
      "copies": 0,
-     "families": {
-      "padus": 263,
-      "sgnjb": 1336
-     },
-     "family_fold": 263,
-     "family_used": "sgnjb",
-     "key_union": 2233,
-     "parts": 7,
-     "records": 11,
-     "summed": 1336,
-     "tracts": 4
+     "key_union": 2196,
+     "parts": 3,
+     "records": 10,
+     "summed": 1856,
+     "tracts": 7
     },
-    "family_fold": "layers {'sgnjb': 1336, 'padus': 263}: one land in 2 layers, the sgnjb copy used (263 ac of copies not added)",
     "manager": "",
-    "note": "11 joined records = 4 tracts: 0 copies of a tract (same acres, another layer) and 7 fee tracts under a designation record folded; summed 4277 -> 1599 acres",
+    "note": "10 joined records = 7 tracts: 0 copies of a tract (same acres, another layer) and 3 fee tracts under a designation record folded; summed 2941 -> 1856 acres",
     "pieces": [
      [
-      "sgnjb205",
+      227554,
       "Spruce Run Reservoir",
-      1336,
+      1088,
+      "name"
+     ],
+     [
+      227472,
+      "Spruce Run Recreation Area",
+      397,
+      "name"
+     ],
+     [
+      227553,
+      "Spruce Run Reservoir",
+      248,
+      "name"
+     ],
+     [
+      227473,
+      "Spruce Run Recreation Area",
+      102,
+      "name"
+     ],
+     [
+      227474,
+      "Spruce Run Recreation Area",
+      19,
+      "name"
+     ],
+     [
+      216667,
+      "Spruce Run Recreation Area",
+      1,
+      "name"
+     ],
+     [
+      227475,
+      "Spruce Run Recreation Area",
+      1,
       "name"
      ]
     ],
@@ -6394,7 +6593,7 @@
    "verdict": "no size on page"
   },
   "US-6462": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Garret Mountain Reservation State Park",
    "ours": null,
@@ -6406,6 +6605,7 @@
   "US-6467": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Mad Horse Creek Wildlife Management Area",
    "official": null,
    "ours": {
@@ -6497,7 +6697,7 @@
    "verdict": "no size on page"
   },
   "US-6544": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "New Jersey Coastal State Trail",
    "ours": null,
@@ -6507,7 +6707,7 @@
    "verdict": "no outline"
   },
   "US-6609": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Pinelands Preserve National Conservation Area",
    "ours": null,
@@ -6517,7 +6717,7 @@
    "verdict": "no outline"
   },
   "US-7504": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Assunpink Wildlife Management Area",
    "official": {
@@ -6525,7 +6725,7 @@
     "as": "6393 Acres",
     "clean": false,
     "line": "life Management Area Mercer & Monmouth Counties Millstone, Roosevelt, Upper Freehold & Washington Townships 6393 Acres IA [d [d [d [d !Í ²³ IA IA IA IA IA !© Sources: Esri, HERE, Garmin, USGS, Intermap, INCREMENT P, NRCan, Esri",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "6393 Acres",
     "url": "https://www.nj.gov/dep/fgw/pdf/wmaroadmaps/assunpink_rd.pdf",
     "why": "a map label (no sentence)"
@@ -6554,7 +6754,7 @@
       "sgnjb358",
       "Assunpink Wildlife Management Area",
       6085,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -6599,55 +6799,26 @@
    "verdict": "agree"
   },
   "US-7505": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Round Valley State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 3674,
-    "dissolved": {
-     "after": 5781,
-     "before": 8001,
-     "copies": 1,
-     "families": {
-      "padus": 3992,
-      "sgnjb": 1789
-     },
-     "family_fold": 1789,
-     "family_used": "padus",
-     "key_union": 3674,
-     "parts": 0,
-     "records": 6,
-     "summed": 3992,
-     "tracts": 5
-    },
-    "family_fold": "layers {'padus': 3992, 'sgnjb': 1789}: one land in 2 layers, the padus copy used (1,789 ac of copies not added)",
+    "acres": 3401,
+    "family_fold": "layers {'sgnjb': 4009, 'padus': 1772}: one land in 2 layers, the sgnjb copy used (1,772 ac of copies not added)",
     "manager": "",
-    "note": "6 joined records = 5 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 8001 -> 5781 acres",
     "pieces": [
      [
-      227552,
+      "sgnjb189",
       "Round Valley Reservoir",
       2220,
       "name"
      ],
      [
-      227468,
+      "sgnjb188",
       "Round Valley Recreation Area",
-      1721,
-      "name"
-     ],
-     [
-      227469,
-      "Round Valley Recreation Area",
-      30,
-      "name"
-     ],
-     [
-      227470,
-      "Round Valley Recreation Area",
-      21,
-      "name"
+      1789,
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -6676,7 +6847,7 @@
    "verdict": "no size on page"
   },
   "US-7506": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Tall Pines Preserve State Conservation Area",
    "official": null,
@@ -6733,7 +6904,7 @@
    "verdict": "no size on page"
   },
   "US-7507": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Warren Grove State Recreation Area",
    "ours": null,
@@ -6744,7 +6915,7 @@
   },
   "US-8030": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Absecon Wildlife Management Area",
    "official": null,
@@ -6767,7 +6938,7 @@
       "sgnjb5",
       "Absecon Wildlife Management Area",
       3811,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -6812,7 +6983,7 @@
   },
   "US-8031": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Bear Swamp Wildlife Management Area",
    "official": null,
@@ -6910,7 +7081,7 @@
   },
   "US-8032": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Black River Wildlife Management Area",
    "official": null,
@@ -6940,7 +7111,7 @@
       "sgnjb27",
       "Black River Wildlife Management Area",
       3042,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "just outside",
@@ -6984,7 +7155,7 @@
    "verdict": "unsure"
   },
   "US-8033": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Buckshutem Wildlife Management Area",
    "official": {
@@ -6992,7 +7163,7 @@
     "as": "4,222 Acres",
     "clean": false,
     "line": "dlife Buckshutem Wildlife Management Area Cumberland County - Fairfield, Lawrence & Millville City Townships 4,222 Acres WMA Boundary IA Parking",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "4,222 Acres",
     "url": "https://www.nj.gov/dep/fgw/pdf/wmaroadmaps/buckshutem_rd.pdf",
     "why": "a map label (no sentence)"
@@ -7021,7 +7192,7 @@
       "sgnjb288",
       "Buckshutem Wildlife Management Area",
       4091,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "just outside",
@@ -7066,7 +7237,7 @@
    "verdict": "agree"
   },
   "US-8034": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Cape May Coastal Wetlands Wildlife Management Area",
    "official": {
@@ -7074,7 +7245,7 @@
     "as": "17,842 Acres",
     "clean": false,
     "line": "Cape May Coastal Wetlands Wildlife Management Area Cape May County - Dennis, Lower, Middle & Upper Townships 17,842 Acres Sources: Esri, HERE, Garmin, USGS, Intermap, INCREMENT P, NRCan, Esri Japan, METI, Esri China (Hong Kong), Es",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "17,842 Acres",
     "url": "https://www.state.nj.us/dep/fgw/pdf/wmaroadmaps/cape_may_wetlands_wildwood_rd.pdf",
     "why": "a map label (no sentence)"
@@ -7103,7 +7274,7 @@
       "sgnjb294",
       "Cape May Coastal Wetlands Wildlife Management Area",
       19045,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -7148,7 +7319,7 @@
    "verdict": "agree"
   },
   "US-8035": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Colliers Mill Wildlife Management Area",
    "official": {
@@ -7156,7 +7327,7 @@
     "as": "12,910.97 Acres",
     "clean": false,
     "line": ", NOAA, increment P Corp. Colliers Mills Wildlife Management Area Ocean County - Jackson & Plumsted Townships 12,910.97 Acres Dog Training Area (Jackson) Office Range WMA Boundary Exception 00 . 7 1 . 40.35 Miles Department of Environm",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "12,910.97 Acres",
     "url": "https://www.nj.gov/dep/fgw/pdf/wmaroadmaps/colliers_mills_rd.pdf",
     "why": "a map label (no sentence)"
@@ -7232,7 +7403,7 @@
    "verdict": "agree"
   },
   "US-8036": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Dennis Creek Wildlife Management Area",
    "official": {
@@ -7240,7 +7411,7 @@
     "as": "8,679.69 Acres",
     "clean": false,
     "line": "CO, NOAA, increment P Corp. Dennis Creek Wildlife Management Area Cape May County - Dennis & Middle Townships 8,679.69 Acres Boat Ramp IA Parking WMA Boundary 0 0.7 1.40.35 Miles Department of Environmental Protection New Jersey Divis",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "8,679.69 Acres",
     "url": "https://www.nj.gov/dep/fgw/pdf/wmaroadmaps/dennis_creek_rd.pdf",
     "why": "a map label (no sentence)"
@@ -7269,7 +7440,7 @@
       "sgnjb357",
       "Dennis Creek Wildlife Management Area",
       7667,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "just outside",
@@ -7314,7 +7485,7 @@
    "verdict": "agree"
   },
   "US-8037": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Dix Wildlife Management Area",
    "official": {
@@ -7322,7 +7493,7 @@
     "as": "5,407.79 Acres",
     "clean": false,
     "line": "TI, NRCAN, GEBCO, NOAA, increment P Corp. Dix Wildlife Management Area Cumberland County - Fairfield Township 5,407.79 Acres 0 0.8 1.60.4 Miles Parking WMA Boundary WMA Exception Department of Environmental Protection New Jersey Divis",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "5,407.79 Acres",
     "url": "https://www.nj.gov/dep/fgw/pdf/wmaroadmaps/dix_rd.pdf",
     "why": "a map label (no sentence)"
@@ -7398,7 +7569,7 @@
    "verdict": "agree"
   },
   "US-8038": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Egg Island Wildlife Management Area",
    "official": {
@@ -7406,7 +7577,7 @@
     "as": "8,991.96 Acres",
     "clean": false,
     "line": "Egg Island Wildlife Management Area Cumberland County - Downe Township 8,991.96 Acres 012 0.5 Miles Content may not reflect National Geographic's current map policy. Sources: National Geographic,",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "8,991.96 Acres",
     "url": "https://www.nj.gov/dep/fgw/pdf/wmaroadmaps/egg_island_rd.pdf",
     "why": "a map label (no sentence)"
@@ -7437,7 +7608,7 @@
       "sgnjb263",
       "Egg Island Wildlife Management Area",
       8139,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -7482,7 +7653,7 @@
    "verdict": "agree"
   },
   "US-8039": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Forked River Mt Wildlife Management Area",
    "official": {
@@ -7490,7 +7661,7 @@
     "as": "2,120.78 Acres",
     "clean": false,
     "line": "NOAA, increment P Corp. Forked River Mountain Wildlife Management Area Ocean County - Lacey & Ocean Townships 2,120.78 Acres 0 1 20.5 Miles Department of Environmental Protection New Jersey Division of Fish and Wildlife WMA Boundary",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Townships 2,120.78 Acres",
     "url": "https://www.nj.gov/dep/fgw/pdf/wmaroadmaps/forked_river_mt_rd.pdf",
     "why": "a map label (no sentence)"
@@ -7564,7 +7735,7 @@
    "verdict": "agree"
   },
   "US-8040": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Greenwood Forest Wildlife Management Area",
    "official": {
@@ -7572,7 +7743,7 @@
     "as": "32,353 Acres",
     "clean": false,
     "line": "est Wildlife Management Area Ocean County - Barnegat, Berkley, Lacey, Manchester, Ocean & Woodland Townships 32,353 Acres 0 1 2 3 40.5 Miles ± NJ Department of Environmental Protection NJ Division of Fish & Wildlife",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "32,353 Acres",
     "url": "https://www.nj.gov/dep/fgw/pdf/wmaroadmaps/greenwood_forest_rd.pdf",
     "why": "a map label (no sentence)"
@@ -7601,7 +7772,7 @@
       "sgnjb259",
       "Greenwood Forest Wildlife Management Area",
       29570,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -7647,7 +7818,7 @@
   },
   "US-8041": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Hammonton Creek Wildlife Management Area",
    "official": null,
@@ -7677,7 +7848,7 @@
       "sgnjb366",
       "Hammonton Creek Wildlife Management Area",
       6092,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "just outside",
@@ -7721,7 +7892,7 @@
    "verdict": "unsure"
   },
   "US-8042": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Heislerville Wildlife Management Area",
    "official": {
@@ -7729,7 +7900,7 @@
     "as": "7,809 Acres",
     "clean": false,
     "line": ", and the GIS User Community Heislerville Wildlife Management Area Cumberland County - Maurice River Township 7,809 Acres 0 0.8 1.6 2.4 3.20.4 Miles ± NJ Department of Environmental Protection NJ DEP Fish & Wildlife IA Parking WMA",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "7,809 Acres",
     "url": "https://www.nj.gov/dep/fgw/pdf/wmaroadmaps/heislerville_rd.pdf",
     "why": "a map label (no sentence)"
@@ -7758,7 +7929,7 @@
       "sgnjb328",
       "Heislerville Wildlife Management Area",
       7380,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -7803,7 +7974,7 @@
    "verdict": "agree"
   },
   "US-8043": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Makepeace Lake Wildlife Management Area",
    "official": {
@@ -7811,7 +7982,7 @@
     "as": "11,736 Acres",
     "clean": false,
     "line": "the GIS User Community Makepeace Lake Wildlife Management Area Atlantic County - Hamilton & Mullica Townships 11,736 Acres 0 0.8 1.6 2.4 3.20.4 Miles ± NJ Department of Environmental Protection NJ Division of Fish & Wildlife IA Par",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "11,736 Acres",
     "url": "https://www.nj.gov/dep/fgw/pdf/wmaroadmaps/makepeace_lake_rd.pdf",
     "why": "a map label (no sentence)"
@@ -7840,7 +8011,7 @@
       "sgnjb365",
       "Makepeace Lake Wildlife Management Area",
       11546,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "just outside",
@@ -7886,7 +8057,7 @@
   },
   "US-8044": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Manchester Wildlife Management Area",
    "official": null,
@@ -7909,7 +8080,7 @@
       "sgnjb249",
       "Manchester Wildlife Management Area",
       3316,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "just outside",
@@ -7954,7 +8125,7 @@
   },
   "US-8045": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Millville Wildlife Management Area",
    "official": null,
@@ -7984,7 +8155,7 @@
       "sgnjb327",
       "Millville Wildlife Management Area",
       16162,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -8030,6 +8201,7 @@
   "US-8046": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "New Sweden Wildlife Management Area",
    "official": null,
    "ours": {
@@ -8127,7 +8299,7 @@
    "verdict": "no size on page"
   },
   "US-8047": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Paulinskill Wildlife Management Area",
    "official": null,
@@ -8170,7 +8342,7 @@
      "why": "the park's page (data/parkinfo)"
     },
     {
-     "status": "opened, not a PDF",
+     "status": "rest",
      "url": "https://dep.nj.gov/wp-content/uploads/njnlt/hyper_humus.pdf",
      "why": "official map (parkinfo-web)"
     }
@@ -8191,6 +8363,7 @@
   "US-8048": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Pequest Wildlife Management Area",
    "official": null,
    "ours": {
@@ -8217,7 +8390,7 @@
       "sgnjb349",
       "Pequest Wildlife Management Area",
       5419,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -8251,7 +8424,7 @@
    "verdict": "no size on page"
   },
   "US-8049": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Rockaway River Wildlife Management Area",
    "official": {
@@ -8259,7 +8432,7 @@
     "as": "3,671.22 Acres",
     "clean": false,
     "line": "Rockaway River Wildlife Management Area Morris County - Jefferson Township 3,671.22 Acres National Geographic, Esri, DeLorme, HERE, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, increment P C",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "3,671.22 Acres",
     "url": "https://www.nj.gov/dep/fgw/pdf/wmaroadmaps/rockaway_river_rd.pdf",
     "why": "a map label (no sentence)"
@@ -8290,7 +8463,7 @@
       "sgnjb318",
       "Rockaway River Wildlife Management Area",
       3975,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "just outside",
@@ -8336,7 +8509,7 @@
   },
   "US-8050": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Salem River Wildlife Management Area",
    "official": null,
@@ -8428,7 +8601,7 @@
   },
   "US-8051": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Sparta Mountain Wildlife Management Area",
    "official": null,
@@ -8458,7 +8631,7 @@
       "sgnjb272",
       "Sparta Mountain Wildlife Management Area",
       3373,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -8503,7 +8676,7 @@
   },
   "US-8052": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Stafford Forge Wildlife Management Area",
    "official": null,
@@ -8531,7 +8704,7 @@
       "sgnjb300",
       "Stafford Forge Wildlife Management Area",
       16622,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -8575,7 +8748,7 @@
    "verdict": "unsure"
   },
   "US-8053": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Swan Bay Wildlife Management Area",
    "official": {
@@ -8583,7 +8756,7 @@
     "as": "3,946 Acres",
     "clean": false,
     "line": "e GIS User Community Swan Bay Wildlife Management Area Burlington County - Bass River & Washington Townships 3,946 Acres 0 0.4 0.8 1.2 1.60.2 Miles ± NJ Department of Environmental Protection NJ Division of Fish & Wildlife WMA Bo",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "3,946 Acres",
     "url": "https://www.nj.gov/dep/fgw/pdf/wmaroadmaps/swan_bay_rd.pdf",
     "why": "a map label (no sentence)"
@@ -8612,7 +8785,7 @@
       "sgnjb334",
       "Swan Bay Wildlife Management Area",
       4095,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -8657,7 +8830,7 @@
    "verdict": "agree"
   },
   "US-8054": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Thundergut Pond Wildlife Management Area",
    "official": {
@@ -8665,7 +8838,7 @@
     "as": "2511.17 Acres",
     "clean": false,
     "line": "Thundergut Pond Wildlife Management Area Salem County - Alloway Township 2511.17 Acres Access to Sycamore Lake prohibited Jan 1st through July 31st for protection of Endangered Species Content may",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "2511.17 Acres",
     "url": "https://www.nj.gov/dep/fgw/pdf/wmaroadmaps/thundergut_pond_rd.pdf",
     "why": "a map label (no sentence)"
@@ -8696,7 +8869,7 @@
       "sgnjb222",
       "Thundergut Pond Wildlife Management Area",
       2222,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -8741,7 +8914,7 @@
    "verdict": "agree"
   },
   "US-8055": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Tuckahoe Wildlife Management Area",
    "official": {
@@ -8749,7 +8922,7 @@
     "as": "18,659 Acres",
     "clean": false,
     "line": "rea Atlantic County - Corbin City Egg Harbor Township, Estelle Manor City; Cape May County - Upper Township 18,659 Acres ²³ Office IA Parking WMA Boundary !\\ Viewing Platform Boat Ramp[d WMA Boundary !Í Dog Training Area IA Parkin",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "18,659 Acres",
     "url": "https://www.nj.gov/dep/fgw/pdf/wmaroadmaps/tuckahoe_rd.pdf",
     "why": "a map label (no sentence)"
@@ -8778,7 +8951,7 @@
       "sgnjb371",
       "Tuckahoe Wildlife Management Area",
       20243,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -8824,7 +8997,7 @@
   },
   "US-8056": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Turkey Swamp Wildlife Management Area",
    "official": null,
@@ -8898,7 +9071,7 @@
    "verdict": "unsure"
   },
   "US-8057": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Union Lake Wildlife Management Area",
    "official": {
@@ -8906,7 +9079,7 @@
     "as": "5,268 Acres",
     "clean": false,
     "line": "ty Union Lake Wildlife Management Area Cumberland County - Vineland City; Salem County - Pittsgrove Township 5,268 Acres 0 0.9 1.8 2.7 3.60.45 Miles ± NJ Department of Environmental Protection NJ Division of Fish & Wildlife IA Pa",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "5,268 Acres",
     "url": "https://www.nj.gov/dep/fgw/pdf/wmaroadmaps/union_lake_rd.pdf",
     "why": "a map label (no sentence)"
@@ -8937,7 +9110,7 @@
       "sgnjb252",
       "Union Lake Wildlife Management Area",
       5314,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -8982,7 +9155,7 @@
    "verdict": "agree"
   },
   "US-8058": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "White Oak Branch Wildlife Management Area",
    "official": {
@@ -8990,7 +9163,7 @@
     "as": "2,909.97 Acres",
     "clean": false,
     "line": "IS User Community White Oak Branch Wildlife Management Area Gloucester County - Franklin & Monroe Townships 2,909.97 Acres 0 0.5 1 1.5 20.25 Miles ± NJ Department of Environmental Protection NJ Division of Fish & Wildlife IA Parkin",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "2,909.97 Acres",
     "url": "https://www.nj.gov/dep/fgw/pdf/wmaroadmaps/white_oak_branch_rd.pdf",
     "why": "a map label (no sentence)"
@@ -9064,7 +9237,7 @@
    "verdict": "agree"
   },
   "US-8059": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Wildcat Ridge Wildlife Management Area",
    "official": {
@@ -9072,7 +9245,7 @@
     "as": "6,318.15 Acres",
     "clean": false,
     "line": "nter IA Parking !© Range ²³ Restroom Wildcat Ridge Wildlife Management Area Morris County - Rockaway Township 6,318.15 Acres NJ Department of Environmental Protection NJ Division of Fish & Wildlife 0 0.9 1.8 2.7 3.60.45 Miles ±",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "6,318.15 Acres",
     "url": "https://www.nj.gov/dep/fgw/pdf/wmaroadmaps/wildcat_ridge_rd.pdf",
     "why": "a map label (no sentence)"
@@ -9103,7 +9276,7 @@
       "sgnjb322",
       "Wildcat Ridge Wildlife Management Area",
       6075,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -9148,7 +9321,7 @@
    "verdict": "agree"
   },
   "US-8060": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Winslow Wildlife Management Area",
    "official": {
@@ -9156,7 +9329,7 @@
     "as": "8,405.72 Acres",
     "clean": false,
     "line": "GIS User Community Winslow Wildlife Management Area Camden & Gloucester Counties; Winslow & Monroe Townships 8,405.72 Acres 0 0.75 1.5 2.25 30.375 Miles ± NJ Department of Environmental Protection NJ Division of Fish & Wildlife IA P",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "8,405.72 Acres",
     "url": "https://www.nj.gov/dep/fgw/pdf/wmaroadmaps/winslow_rd.pdf",
     "why": "a map label (no sentence)"
@@ -9185,7 +9358,7 @@
       "sgnjb359",
       "Winslow Wildlife Management Area",
       8507,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -9230,7 +9403,7 @@
    "verdict": "agree"
   },
   "US-8061": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Ellis Island National Historic Site",
    "ours": null,
@@ -9242,8 +9415,9 @@
   "US-8319": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Palisades Interstate Park",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-NY': 256, 'US-NJ': 2218})",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-NY': 577, 'US-NJ': 2218})",
    "official": {
     "acres": 2500.0,
     "as": "2,500 acres",
@@ -9255,10 +9429,10 @@
     "why": "total-looking"
    },
    "ours": {
-    "acres": 2474,
+    "acres": 2795,
     "acres_by_state": {
      "US-NJ": 2218,
-     "US-NY": 256
+     "US-NY": 577
     },
     "manager": "",
     "pieces": [
@@ -9291,7 +9465,7 @@
      "why": "official map (parkinfo-web)"
     }
    ],
-   "pct": 1,
+   "pct": 12,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -9334,5 +9508,5 @@
    "verdict": "agree"
   }
  },
- "read": "2026-11-01"
+ "read": "2026-11-09"
 }

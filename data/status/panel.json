@@ -1,12 +1,12 @@
 {
- "made": "2026-11-18 00:46 UTC",
+ "made": "2026-11-18 03:55 UTC",
  "snap": {
   "date": "2026-11-18",
   "outlines": {
    "US": {
-    "official": 11277,
+    "official": 11285,
     "pin": 1426,
-    "approximate": 415
+    "approximate": 407
    },
    "Canada": {
     "official": 4348,
@@ -14,9 +14,9 @@
     "approximate": 39
    },
    "World": {
-    "official": 28666,
+    "approx": 14513,
     "pin": 17333,
-    "approx": 14513
+    "official": 28666
    }
   },
   "questions": {
@@ -1503,10 +1503,10 @@
   },
   "closures super-bot": {
    "areas": "1 done, 0 left",
-   "last_run": "2026-11-17",
+   "last_run": "2026-11-18",
    "made": "1 areas read, 1 saved; see data/closures/review.md",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44057952719",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44229819873",
    "waiting_on": "chat 11 grades the Kentucky side-by-side; Brandon GO before any merge (CL-5)"
   },
   "hours fees permits bot": {
@@ -1520,9 +1520,9 @@
   "key-doctor": {
    "areas": "",
    "last_run": "2026-11-18",
-   "made": "NOs: 433 of 723 NOs landed; 290 missing (re-applied to overrides.fixed.json); 1291 came back in the key release: 0 parks pass, 0 held, 0 files; per-park release ON stuck: 0 area(s) stuck; see stuck-2026-11-18.md ",
+   "made": "NOs: 433 of 723 NOs landed; 290 missing (re-applied to overrides.fixed.json); 1282 came back in the key release: 9080 parks pass, 252 held, 32 files; per-park release ON stuck: 0 area(s) stuck; see stuck-2026-11-18.md ",
    "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44210244855",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44233544450",
    "waiting_on": "chat 10 (came-back NOs / stuck areas); per-park release in release-approved"
   },
   "layer intake": {
@@ -1575,7 +1575,7 @@
   },
   "waiting room": {
    "last_run": "2026-11-18",
-   "made": "205 files waiting over 3 days in data/waiting/in/ (e.g. US-VA.json)",
+   "made": "49 files waiting over 3 days in data/waiting/in/ (e.g. state-report.json)",
    "result": "red",
    "waiting_on": "chat 11 (look at the waiting room run)"
   },

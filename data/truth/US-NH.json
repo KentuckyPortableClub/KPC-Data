@@ -3,37 +3,37 @@
  "area": "US-NH",
  "counts": {
   "agree": 16,
-  "handover_hints": 4,
+  "handover_hints": 5,
   "no_page": 51,
-  "no_size": 106,
+  "no_size": 105,
   "off": 10,
-  "ours_unknown": 2,
+  "ours_unknown": 5,
   "parks": 206,
   "retired": 0,
-  "unsure": 8,
-  "weak": 2,
-  "with_outline": 193
+  "unsure": 7,
+  "weak": 3,
+  "with_outline": 194
  },
  "parks": {
   "US-0329": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Silvio O Conte National Wildlife Refuge",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-NH': 7153, 'US-VT': 27090})",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-VT': 27090, 'US-NH': 7064})",
    "official": {
     "acres": 40000.0,
     "as": "40,000 acres",
     "clean": false,
     "line": "end throughout the 7.2 million acre Connecticut River watershed. Currently, the refuge is comprised of nearly 40,000 acres within parts of the four watershed states of New Hampshire, Vermont, Massachusetts, and Connecticut. The refu",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Currently, the refuge is comprised of nearly 40,000 acres within parts of the four watershed states of New Hampshire, Vermont, Massachusetts, and Connecticut.",
     "url": "https://www.fws.gov/refuge/silvio-o-conte",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 34243,
+    "acres": 34154,
     "acres_by_state": {
-     "US-NH": 7153,
+     "US-NH": 7064,
      "US-VT": 27090
     },
     "manager": "",
@@ -42,24 +42,18 @@
       5300,
       "Silvio O. Conte National Fish And Wildlife Refuge",
       7893,
-      "words"
-     ],
-     [
-      4343,
-      "Silvio O. Conte National Fish And Wildlife Refuge",
-      7496,
       "reviewed"
      ]
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
     "states": [
-     "US-MA",
      "US-CT",
-     "US-NH",
-     "US-VT"
+     "US-MA",
+     "US-VT",
+     "US-NH"
     ],
-    "unknown_pieces": 2,
+    "unknown_pieces": 3,
     "whole_park": true
    },
    "owner_now": null,
@@ -81,7 +75,7 @@
      "why": "FWS refuge about page"
     }
    ],
-   "pct": 14,
+   "pct": 15,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -124,7 +118,7 @@
    "verdict": "agree"
   },
   "US-0448": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [
     {
      "date_hint": null,
@@ -149,7 +143,7 @@
     "as": "1,000 acres",
     "clean": false,
     "line": "along the eastern shore of New Hampshire's Great Bay in the town of Newington. The refuge protects more than 1,000 acres along the seacoast for migratory birds and other wildlife. It is one of the longest stretches of undeveloped",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "The refuge protects more than 1,000 acres along the seacoast for migratory birds and other wildlife.",
     "url": "https://www.fws.gov/refuge/great-bay",
     "why": "total-looking"
@@ -183,7 +177,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 2
+    "unknown_pieces": 4
    },
    "owner_now": "Parker River National Wildlife Refuge",
    "pages": [
@@ -219,7 +213,7 @@
   },
   "US-0449": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "John Hay National Wildlife Refuge",
    "official": {
@@ -227,7 +221,7 @@
     "as": "84 acres",
     "clean": false,
     "line": "including the family residence, a gate house, lake shore house, and garage. In 2008, the Service transferred 84 acres, including all the buildings to The Fells, a non-profit organization dedicated to preserving the Hay Family E",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "In 2008, the Service transferred 84 acres, including all the buildings to The Fells, a non-profit organization dedicated to preserving the Hay Family Estate.",
     "url": "https://www.fws.gov/refuge/john-hay",
     "why": "total-looking"
@@ -311,7 +305,7 @@
   },
   "US-0450": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Lake Umbagog National Wildlife Refuge",
    "note": "whole park compared (POTA lists it in 2 states: {'US-ME': 10636, 'US-NH': 22012})",
@@ -320,7 +314,7 @@
     "as": "7,000 acres",
     "clean": true,
     "line": "the country’s natural history. Lake Umbagog Umbagog Lake is more than 7 miles in length and covers more than 7,000 acres, making it one of the largest lakes along the New Hampshire/Maine border. It has an average depth of only 15",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Umbagog Lake is more than 7 miles in length and covers more than 7,000 acres, making it one of the largest lakes along the New Hampshire/Maine border.",
     "url": "https://www.fws.gov/refuge/umbagog/visit-us",
     "why": "clean total"
@@ -367,7 +361,7 @@
      "US-ME",
      "US-NH"
     ],
-    "unknown_pieces": 302,
+    "unknown_pieces": 453,
     "whole_park": true
    },
    "owner_now": null,
@@ -434,7 +428,7 @@
   },
   "US-0451": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [
     {
      "date_hint": null,
@@ -451,7 +445,7 @@
     "as": "1,000 acres",
     "clean": false,
     "line": "along the eastern shore of New Hampshire's Great Bay in the town of Newington. The refuge protects more than 1,000 acres along the seacoast for migratory birds and other wildlife. It is one of the longest stretches of undeveloped.",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "The refuge protects more than 1,000 acres along the seacoast for migratory birds and other wildlife.",
     "url": "https://www.fws.gov/refuge/wapack/about-us",
     "why": "total-looking"
@@ -484,7 +478,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "owner_now": "U.S",
    "pages": [
@@ -524,7 +518,7 @@
    "verdict": "off"
   },
   "US-0857": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Saint-Gaudens National Historic Site",
    "official": null,
@@ -541,7 +535,7 @@
     ],
     "pin": "inside",
     "src": "",
-    "unknown_pieces": 2
+    "unknown_pieces": 3
    },
    "owner_now": null,
    "pages": [
@@ -591,7 +585,7 @@
    "verdict": "no size on page"
   },
   "US-0885": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Lamprey National Wild and Scenic River",
    "ours": null,
@@ -602,7 +596,7 @@
   },
   "US-11037": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Bear's Den Natural Area State Park",
    "official": {
@@ -610,7 +604,7 @@
     "as": "100 acres",
     "clean": false,
     "line": "too much of a rush to stop. This day though, curiosity got the better of me. This is a state forest of almost 100 acres containing cliffs, caves, and geological potholes. The trail led up at a rather steep angle. Why does it seem",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "This is a state forest of almost 100 acres containing cliffs, caves, and geological potholes.",
     "url": "https://nhgardensolutions.wordpress.com/2012/12/15/bears-den-natural-area/",
     "why": "total-looking"
@@ -635,7 +629,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -672,6 +666,7 @@
   "US-11848": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Temple Mountain State Reservation State Natural Reserve",
    "official": null,
    "ours": {
@@ -687,7 +682,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -714,22 +709,36 @@
   "US-11849": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Wantastiquet Mt Natural Area State Natural Site",
    "official": null,
    "ours": {
-    "acres": 1026,
+    "acres": 1071,
+    "family_fold": "layers {'padus': 913, 'sgnhc': 982}: one land in 2 layers, the sgnhc copy used (913 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
-      56862,
+      "sgnhc2411",
       "Wantastiquet Mountain Natural Area",
-      913,
+      515,
+      "alias name (pin inside): Wantastiquet Mountain Natural Area"
+     ],
+     [
+      "sgnhc2627",
+      "Wantastiquet Mountain Natural Area",
+      370,
+      "alias name (pin inside): Wantastiquet Mountain Natural Area"
+     ],
+     [
+      "sgnhc2686",
+      "Wantastiquet Mountain Natural Area",
+      97,
       "alias name (pin inside): Wantastiquet Mountain Natural Area"
      ]
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -754,7 +763,7 @@
    "verdict": "no size on page"
   },
   "US-12118": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Adams Point WMA State Wildlife Area",
    "official": null,
@@ -806,7 +815,7 @@
    "verdict": "no size on page"
   },
   "US-12636": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Jenness State Beach",
    "official": null,
@@ -823,7 +832,7 @@
     ],
     "pin": "inside",
     "src": "",
-    "unknown_pieces": 2
+    "unknown_pieces": 3
    },
    "owner_now": null,
    "pages": [
@@ -847,7 +856,7 @@
    "verdict": "no size on page"
   },
   "US-12637": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Wallis Sands State Park",
    "official": null,
@@ -864,7 +873,7 @@
     ],
     "pin": "inside",
     "src": "",
-    "unknown_pieces": 7
+    "unknown_pieces": 10
    },
    "owner_now": null,
    "pages": [
@@ -890,6 +899,7 @@
   "US-13486": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Bellamy River Wildlife Management Area - East Wildlife Management Area",
    "official": null,
    "ours": {
@@ -930,7 +940,7 @@
    "verdict": "no size on page"
   },
   "US-13517": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Richard Sargent Wildlife Management Area",
    "official": null,
@@ -953,7 +963,7 @@
       "sgnhb99",
       "Richard Sargent WMA",
       368,
-      "name"
+      "reviewed"
      ],
      [
       "sgnhc2261",
@@ -964,7 +974,7 @@
     ],
     "pin": "inside",
     "src": "",
-    "unknown_pieces": 12
+    "unknown_pieces": 18
    },
    "owner_now": null,
    "pages": [
@@ -988,7 +998,7 @@
    "verdict": "no size on page"
   },
   "US-13518": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Cathedral Ledge State Park",
    "official": null,
@@ -1005,7 +1015,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -1029,7 +1039,7 @@
    "verdict": "no size on page"
   },
   "US-13529": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Currier Wildlife Management Area",
    "official": null,
@@ -1041,7 +1051,7 @@
       "sgnhb32",
       "Currier WMA",
       104,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "just outside",
@@ -1070,7 +1080,7 @@
    "verdict": "no size on page"
   },
   "US-13532": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Deer Hill Wildlife Management Area",
    "official": null,
@@ -1082,7 +1092,7 @@
       "sgnhb34",
       "Deer Hill WMA",
       333,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "just outside",
@@ -1113,6 +1123,7 @@
   "US-13541": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Magalloway Mountain Fire Tower State Preserve",
    "official": null,
    "ours": {
@@ -1121,7 +1132,7 @@
     "pieces": [],
     "pin": "inside",
     "src": "",
-    "unknown_pieces": 2
+    "unknown_pieces": 3
    },
    "owner_now": null,
    "pages": [
@@ -1145,7 +1156,7 @@
    "verdict": "no size on page"
   },
   "US-13584": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Nansen Ski Jump State Historic Site",
    "official": null,
@@ -1173,7 +1184,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -1199,6 +1210,7 @@
   "US-13585": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Theodore W. Walski State Wildlife Area",
    "official": null,
    "ours": {
@@ -1209,7 +1221,7 @@
       "sgnhb127",
       "Theodore W. Walski WMA",
       1308,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "just outside",
@@ -1238,17 +1250,41 @@
    "verdict": "no size on page"
   },
   "US-13595": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Northern Recreational State Trail",
-   "ours": null,
-   "score": null,
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nhstateparks.org/find-parks-trails/recreational-rail-trails/northern-recreational-rail-trail",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
    "t": "State Trail",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "ours unknown"
   },
   "US-13625": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Ammonoosuc State Trail",
    "ours": null,
@@ -1258,17 +1294,46 @@
    "verdict": "no outline"
   },
   "US-13626": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Sugar River State Trail",
-   "ours": null,
-   "score": null,
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nhstateparks.org/find-parks-trails/recreational-rail-trails/sugar-river-recreational-rail-trail",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nhstateparks.org/getmedia/f52684f2-1dd0-44a5-836b-c628719eaea4/Sugar-River-Recreational-Trail_map_2.pdf",
+     "why": "official map (documents bot)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
    "t": "State Trail",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "ours unknown"
   },
   "US-13627": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Brackett Brook State Wildlife Area",
    "official": {
@@ -1276,7 +1341,7 @@
     "as": "34 ac",
     "clean": false,
     "line": "nll aanndd G r e e n l a n dG r e e n l a n d S t r a t h a mS t r a t h a m WMU: L WMU: M Brackett Brook WMA 34 ac 70°52'0\"W 70°52'0\"W 70°53'0\"W 70°53'0\"W 43°4'0\"N 43°4'0\"N 43°3'0\"N 43°3'0\"N 347000 347000 348000 348000 47680",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "34 ac",
     "url": "https://nhfg.maps.arcgis.com/sharing/rest/content/items/422ca4604a4f414fb56e393bbd420f23/data",
     "why": "a map label (no sentence)"
@@ -1289,7 +1354,7 @@
       "sgnhb9",
       "Brackett Brook WMA",
       34,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "just outside",
@@ -1335,7 +1400,7 @@
   },
   "US-2641": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Ahern State Park",
    "official": null,
@@ -1345,7 +1410,7 @@
     "pieces": [],
     "pin": "just outside",
     "src": "",
-    "unknown_pieces": 2
+    "unknown_pieces": 3
    },
    "owner_now": null,
    "pages": [
@@ -1379,7 +1444,7 @@
    "verdict": "unsure"
   },
   "US-2642": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Androscoggin Wayside State Park",
    "ours": null,
@@ -1389,7 +1454,7 @@
    "verdict": "no outline"
   },
   "US-2643": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Bear Brook State Park",
    "official": {
@@ -1397,13 +1462,13 @@
     "as": "10,000 acres",
     "clean": false,
     "line": "e Park lands. Activities and amenities CHECK BEACH ADVISORIES About the Park Bear Brook State Park, with over 10,000 acres, is the largest developed state park in New Hampshire. Located in the southeast region of the state, there is",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Bear Brook State Park, with over 10,000 acres, is the largest developed state park in New Hampshire.",
     "url": "https://www.nhstateparks.org/find-parks-trails/bear-brook-state-park",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 10903,
+    "acres": 10902,
     "manager": "",
     "pieces": [
      [
@@ -1445,7 +1510,7 @@
     ],
     "pin": "inside",
     "src": "",
-    "unknown_pieces": 6
+    "unknown_pieces": 9
    },
    "owner_now": null,
    "pages": [
@@ -1480,7 +1545,7 @@
    "verdict": "agree"
   },
   "US-2644": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Cardigan Mountain State Park",
    "official": {
@@ -1488,7 +1553,7 @@
     "as": "5,655 acres",
     "clean": true,
     "line": "omfort stations are not available. Activities and amenities About the Park Cardigan Mountain State Park spans 5,655 acres and is an excellent area for hiking. A mountain road leads to trails on the west slope of Mount Cardigan as w",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Cardigan Mountain State Park spans 5,655 acres and is an excellent area for hiking.",
     "url": "https://www.nhstateparks.org/find-parks-trails/cardigan-mountain-state-park",
     "why": "clean total"
@@ -1535,7 +1600,7 @@
   },
   "US-2645": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Clough State Park",
    "official": null,
@@ -1552,7 +1617,7 @@
     ],
     "pin": "just outside",
     "src": "",
-    "unknown_pieces": 2
+    "unknown_pieces": 3
    },
    "owner_now": null,
    "pages": [
@@ -1586,7 +1651,7 @@
    "verdict": "unsure"
   },
   "US-2646": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Coleman State Park",
    "official": {
@@ -1594,7 +1659,7 @@
     "as": "2,000 acres",
     "clean": false,
     "line": "ee. My name is Dianne Mattot and I'm the park manager here at Coleman State Park. Coleman State Park is about 2,000 acres.The campground itself has 25 sites one which is a lean to. We have people that come in on ATVs we have people",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Coleman State Park is about 2,000 acres.The campground itself has 25",
     "url": "https://www.nhstateparks.org/find-parks-trails/coleman-state-park",
     "why": "part (a lake, a purchase, a campground…)"
@@ -1612,7 +1677,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 2
+    "unknown_pieces": 4
    },
    "owner_now": null,
    "pages": [
@@ -1652,7 +1717,7 @@
    "verdict": "agree"
   },
   "US-2647": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Crawford Notch State Park",
    "official": {
@@ -1660,7 +1725,7 @@
     "as": "5,775 acres",
     "clean": false,
     "line": "f-service pay station) to make payment. Activities and amenities About the Park Crawford Notch State Park has 5,775 acres providing access to numerous hiking trails, waterfalls, fishing, wildlife viewing, and spectacular mountain v",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Crawford Notch State Park has 5,775 acres providing access to numerous hiking trails, waterfalls, fishing, wildlife viewing, and spectacular mountain views.",
     "url": "https://www.nhstateparks.org/find-parks-trails/crawford-notch-state-park",
     "why": "total-looking"
@@ -1693,7 +1758,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -1734,7 +1799,7 @@
   },
   "US-2648": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Dixville Notch State Park",
    "official": {
@@ -1742,7 +1807,7 @@
     "as": "127 acres",
     "clean": true,
     "line": "while recreating in State Park lands. Activities and amenities About the Park Dixville Notch State Park spans 127 acres. Despite its small size, the park has breathtaking views along a scenic gorge and waterfalls on two mountain",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Dixville Notch State Park spans 127 acres.",
     "url": "https://www.nhstateparks.org/find-parks-trails/dixville-notch-state-park",
     "why": "clean total"
@@ -1771,7 +1836,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -1806,7 +1871,7 @@
    "verdict": "off"
   },
   "US-2649": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Echo Lake State Park",
    "official": null,
@@ -1823,7 +1888,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -1847,7 +1912,7 @@
    "verdict": "no size on page"
   },
   "US-2650": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Eisenhower Memorial Wayside State Park",
    "official": null,
@@ -1881,7 +1946,7 @@
    "verdict": "ours unknown"
   },
   "US-2651": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Ellacoya State Park",
    "official": null,
@@ -1909,7 +1974,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 6
+    "unknown_pieces": 11
    },
    "owner_now": null,
    "pages": [
@@ -1934,7 +1999,7 @@
   },
   "US-2652": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Forest Lake State Park",
    "official": {
@@ -1942,7 +2007,7 @@
     "as": "397 acres",
     "clean": true,
     "line": "H ADVISORIES Forest Lake State Park, one of the ten original state parks, was created in 1935. The park spans 397 acres and its 200-foot sandy beach lies on the shore of Forest Lake. Popular activities in the park include swimmin",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "The park spans 397 acres and its 200-foot sandy beach lies on the shore of Forest Lake.",
     "url": "https://www.nhstateparks.org/find-parks-trails/forest-lake-state-park",
     "why": "clean total"
@@ -1971,7 +2036,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 3
+    "unknown_pieces": 5
    },
    "owner_now": null,
    "pages": [
@@ -2006,7 +2071,7 @@
    "verdict": "off"
   },
   "US-2653": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Franconia Notch State Park",
    "official": null,
@@ -2038,7 +2103,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 3
+    "unknown_pieces": 6
    },
    "owner_now": null,
    "pages": [
@@ -2067,7 +2132,7 @@
    "verdict": "no size on page"
   },
   "US-2654": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Gardner Memorial Wayside State Park",
    "ours": null,
@@ -2077,7 +2142,7 @@
    "verdict": "no outline"
   },
   "US-2655": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Greenfield State Park",
    "official": {
@@ -2085,7 +2150,7 @@
     "as": "400 acre",
     "clean": false,
     "line": "Activities and amenities About the Park Greenfield State Park is located in southwestern New Hampshire. T his 400-acre park features ponds, bogs, and a forest that extends to the shore of Otter Lake. Walking paths lead to ponds",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "T his 400-acre park features ponds, bogs, and a forest that extends to the shore of Otter Lake.",
     "url": "https://www.nhstateparks.org/find-parks-trails/greenfield-state-park",
     "why": "part (a lake, a purchase, a campground…)"
@@ -2120,7 +2185,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 2
+    "unknown_pieces": 4
    },
    "owner_now": null,
    "pages": [
@@ -2155,7 +2220,7 @@
    "verdict": "agree"
   },
   "US-2656": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Hampton Beach State Park",
    "official": null,
@@ -2173,7 +2238,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 2
+    "unknown_pieces": 4
    },
    "pages": [],
    "pct": null,
@@ -2183,7 +2248,7 @@
    "verdict": "no official page on file"
   },
   "US-2657": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Jericho Mountain State Park",
    "official": null,
@@ -2200,7 +2265,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 2
+    "unknown_pieces": 4
    },
    "owner_now": null,
    "pages": [
@@ -2236,7 +2301,7 @@
   },
   "US-2658": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Kingston State Park",
    "official": {
@@ -2244,7 +2309,7 @@
     "as": "44 acre",
     "clean": true,
     "line": "ties and amenities Check Beach Advisories About the Park Located in Southeastern NH, Kingston State Park is a 44 acre park located on Kingston Pond/Great Pond. It is a quick drive from the seacoast and Boston. Kingston State Pa",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Located in Southeastern NH, Kingston State Park is a 44 acre park located on Kingston Pond/Great Pond.",
     "url": "https://www.nhstateparks.org/find-parks-trails/kingston-state-park",
     "why": "clean total"
@@ -2262,7 +2327,7 @@
     ],
     "pin": "just outside",
     "src": "",
-    "unknown_pieces": 2
+    "unknown_pieces": 3
    },
    "owner_now": null,
    "pages": [
@@ -2298,7 +2363,7 @@
   },
   "US-2659": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Lake Francis State Park",
    "official": null,
@@ -2356,7 +2421,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -2391,7 +2456,7 @@
   },
   "US-2660": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Lake Tarleton State Park",
    "official": {
@@ -2399,7 +2464,7 @@
     "as": "48 acre",
     "clean": true,
     "line": "g in State Park lands. Activities and amenities About the Park BEACH ADVISORIES Lake Tarleton State Park is a 48-acre undeveloped park and is easy to find. Lake Tarleton, at 315 acres, offers an unguarded swimming beach and opp",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Lake Tarleton State Park is a 48-acre undeveloped park and is easy to find.",
     "url": "https://www.nhstateparks.org/find-parks-trails/lake-tarleton-state-park",
     "why": "clean total"
@@ -2417,7 +2482,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -2461,7 +2526,7 @@
    "verdict": "off"
   },
   "US-2661": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Milan Hill State Park",
    "official": null,
@@ -2489,7 +2554,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -2513,7 +2578,7 @@
    "verdict": "no size on page"
   },
   "US-2662": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Miller State Park",
    "official": null,
@@ -2536,7 +2601,7 @@
     ],
     "pin": "just outside",
     "src": "",
-    "unknown_pieces": 2
+    "unknown_pieces": 3
    },
    "owner_now": null,
    "pages": [
@@ -2560,7 +2625,7 @@
    "verdict": "no size on page"
   },
   "US-2663": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Mollidgewock State Park",
    "official": null,
@@ -2570,7 +2635,7 @@
     "pieces": [],
     "pin": "just outside",
     "src": "",
-    "unknown_pieces": 2
+    "unknown_pieces": 3
    },
    "owner_now": null,
    "pages": [
@@ -2599,7 +2664,7 @@
    "verdict": "no size on page"
   },
   "US-2664": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Monadnock State Park",
    "official": null,
@@ -2609,7 +2674,7 @@
     "pieces": [],
     "pin": "inside",
     "src": "",
-    "unknown_pieces": 20
+    "unknown_pieces": 30
    },
    "owner_now": null,
    "pages": [
@@ -2638,7 +2703,7 @@
    "verdict": "no size on page"
   },
   "US-2665": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Moose Brook State Park",
    "official": null,
@@ -2661,7 +2726,7 @@
     ],
     "pin": "just outside",
     "src": "",
-    "unknown_pieces": 6
+    "unknown_pieces": 9
    },
    "owner_now": null,
    "pages": [
@@ -2686,7 +2751,7 @@
   },
   "US-2666": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Mount Sunapee State Park",
    "official": null,
@@ -2738,7 +2803,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 6
+    "unknown_pieces": 9
    },
    "owner_now": null,
    "pages": [
@@ -2772,7 +2837,7 @@
    "verdict": "unsure"
   },
   "US-2667": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Mount Washington State Park",
    "official": {
@@ -2780,7 +2845,7 @@
     "as": "52 acres",
     "clean": false,
     "line": "encouraged the state of New Hampshire to become owners of the summit. In April of 1964, the state bought the 52 acres on the summit from Dartmouth College. The state had two immediate challenges to overcome when it took over. T",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "In April of 1964, the state bought the 52 acres on the summit from Dartmouth College.",
     "url": "https://www.nhstateparks.org/find-parks-trails/mt-washington-state-park",
     "why": "total-looking"
@@ -2807,7 +2872,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -2861,7 +2926,7 @@
   },
   "US-2668": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Nansen Wayside State Park",
    "official": {
@@ -2869,7 +2934,7 @@
     "as": "14 acres",
     "clean": true,
     "line": "River and is a popular place for picnicking, fishing, and boating. A boat launch is available. The park spans 14 acres and is at the base of the 170-foot steel-framed Nansen Ski Jump. Are pets allowed at Nansen Wayside Park? Pet",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "The park spans 14 acres and is at the base of the 170-foot steel-framed Nansen Ski Jump.",
     "url": "https://www.nhstateparks.org/find-parks-trails/nansen-wayside-park",
     "why": "clean total"
@@ -2887,7 +2952,7 @@
     ],
     "pin": "inside",
     "src": "",
-    "unknown_pieces": 2
+    "unknown_pieces": 3
    },
    "owner_now": null,
    "pages": [
@@ -2922,7 +2987,7 @@
    "verdict": "off"
   },
   "US-2669": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "North Hampton State Park",
    "official": null,
@@ -2939,7 +3004,7 @@
     ],
     "pin": "just outside",
     "src": "",
-    "unknown_pieces": 2
+    "unknown_pieces": 3
    },
    "owner_now": null,
    "pages": [
@@ -2963,7 +3028,7 @@
    "verdict": "no size on page"
   },
   "US-2670": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Northwood Meadows State Park",
    "official": {
@@ -2971,7 +3036,7 @@
     "as": "674.5 acres",
     "clean": true,
     "line": "ile recreating in State Park lands Activities and amenities About the Park Northwood Meadows State Park spans 674.5 acres in a wilderness setting. This wooded park has a vast wetlands area and is excellent for nature walks and picn",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Northwood Meadows State Park spans 674.5 acres in a wilderness setting.",
     "url": "https://www.nhstateparks.org/find-parks-trails/northwood-meadows-state-park",
     "why": "clean total"
@@ -3004,7 +3069,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 2
+    "unknown_pieces": 4
    },
    "owner_now": null,
    "pages": [
@@ -3039,7 +3104,7 @@
    "verdict": "agree"
   },
   "US-2671": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Odiorne Point State Park",
    "official": null,
@@ -3074,7 +3139,7 @@
     ],
     "pin": "inside",
     "src": "",
-    "unknown_pieces": 6
+    "unknown_pieces": 9
    },
    "owner_now": null,
    "pages": [
@@ -3103,7 +3168,7 @@
    "verdict": "no size on page"
   },
   "US-2672": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Pawtuckaway State Park",
    "official": {
@@ -3111,7 +3176,7 @@
     "as": "5,500 acres",
     "clean": false,
     "line": "e Park 128 Mountain Road Nottingham, NH 03290 NHSTATEPARKS.ORG W elcome to Pawtuckaway State Park! The park’s 5,500 acres offer a variety of landscapes, with something to do and see for everyone. There are many opportunities for h",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "The park’s 5,500 acres offer a variety of landscapes, with something",
     "url": "https://www.nhstateparks.org/NHStateParks/media/NHStateParks/PDFs/Activities/hiking%20trail-maps/Pawtuckaway-Hiking-Map-2023.pdf",
     "why": "a map label (no sentence)"
@@ -3152,7 +3217,7 @@
     ],
     "pin": "inside",
     "src": "",
-    "unknown_pieces": 83
+    "unknown_pieces": 123
    },
    "owner_now": null,
    "pages": [
@@ -3192,7 +3257,7 @@
    "verdict": "agree"
   },
   "US-2673": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Pillsbury State Park",
    "official": null,
@@ -3227,7 +3292,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 18
+    "unknown_pieces": 29
    },
    "owner_now": null,
    "pages": [
@@ -3251,7 +3316,7 @@
    "verdict": "no size on page"
   },
   "US-2674": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Pisgah State Park",
    "official": {
@@ -3259,18 +3324,18 @@
     "as": "21 square miles",
     "clean": false,
     "line": "d season. Pisgah is manned by a single staff member and volunteers who take care of 55 miles or trails within 21 square miles of rugged terrain, and is open to the public year-round at no charge. The gate remains closed through mud sea",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Pisgah is manned by a single staff member and volunteers who take care of 55 miles or trails within 21 square miles of rugged terrain, and is open to the public year-round at no charge.",
     "url": "https://www.nhstateparks.org/find-parks-trails/pisgah-state-park",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 14284,
+    "acres": 14283,
     "dissolved": {
      "after": 13507,
      "before": 13862,
      "copies": 1,
-     "key_union": 14284,
+     "key_union": 14283,
      "parts": 2,
      "records": 9,
      "summed": 13507,
@@ -3318,7 +3383,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 3
+    "unknown_pieces": 5
    },
    "owner_now": null,
    "pages": [
@@ -3376,7 +3441,7 @@
    "verdict": "agree"
   },
   "US-2675": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Rhododendron State Park",
    "official": {
@@ -3384,7 +3449,7 @@
     "as": "2,723 acre",
     "clean": false,
     "line": "ough the forest adjacent to the grove. From early spring to the first frost, wildflowers bloom throughout the 2,723-acre park. The last blooms in the fall are complemented by the forest's brilliant foliage. Visitors exploring the",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "From early spring to the first frost, wildflowers bloom throughout the 2,723-acre park.",
     "url": "https://www.nhstateparks.org/find-parks-trails/rhododendron-state-park",
     "why": "total-looking"
@@ -3443,7 +3508,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 9
+    "unknown_pieces": 16
    },
    "owner_now": null,
    "pages": [
@@ -3496,7 +3561,7 @@
    "verdict": "agree"
   },
   "US-2676": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Rollins State Park",
    "official": null,
@@ -3524,7 +3589,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 2
+    "unknown_pieces": 4
    },
    "owner_now": null,
    "pages": [
@@ -3553,7 +3618,7 @@
    "verdict": "no size on page"
   },
   "US-2677": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Rye Harbor State Park",
    "official": null,
@@ -3582,7 +3647,7 @@
     ],
     "pin": "inside",
     "src": "",
-    "unknown_pieces": 6
+    "unknown_pieces": 9
    },
    "owner_now": null,
    "pages": [
@@ -3606,7 +3671,7 @@
    "verdict": "no size on page"
   },
   "US-2678": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Silver Lake State Park",
    "official": {
@@ -3614,7 +3679,7 @@
     "as": "80 acres",
     "clean": true,
     "line": "State Park lands. Activities and amenities Check Beach Advisories About the Park Silver Lake State Park spans 80 acres and its sandy 1,000-foot beach curves along 34-acre Silver Lake. Popular activities in the park include swimm",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Silver Lake State Park spans 80 acres and its sandy 1,000-foot beach curves along 34-acre Silver Lake.",
     "url": "https://www.nhstateparks.org/find-parks-trails/silver-lake-state-park",
     "why": "clean total"
@@ -3632,7 +3697,7 @@
     ],
     "pin": "inside",
     "src": "",
-    "unknown_pieces": 6
+    "unknown_pieces": 9
    },
    "owner_now": null,
    "pages": [
@@ -3676,7 +3741,7 @@
    "verdict": "agree"
   },
   "US-2679": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Umbagog Lake State Park",
    "official": null,
@@ -3729,7 +3794,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 22
+    "unknown_pieces": 37
    },
    "owner_now": null,
    "pages": [
@@ -3758,7 +3823,7 @@
    "verdict": "no size on page"
   },
   "US-2680": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Wadleigh State Park",
    "official": {
@@ -3766,7 +3831,7 @@
     "as": "50 acres",
     "clean": true,
     "line": "ne of the most beautiful swimming and picnicking spots in New Hampshire. Wadleigh State Park covers more than 50 acres on the southeastern shore of Kezar Lake. The smooth, sandy beach and crystal-clear water make this an excelle",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Wadleigh State Park covers more than 50 acres on the southeastern shore of Kezar Lake.",
     "url": "https://www.nhstateparks.org/find-parks-trails/wadleigh-state-park",
     "why": "clean total"
@@ -3784,7 +3849,7 @@
     ],
     "pin": "inside",
     "src": "",
-    "unknown_pieces": 2
+    "unknown_pieces": 3
    },
    "owner_now": null,
    "pages": [
@@ -3819,7 +3884,7 @@
    "verdict": "agree"
   },
   "US-2681": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Weeks State Park",
    "official": null,
@@ -3853,7 +3918,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 2
+    "unknown_pieces": 4
    },
    "owner_now": null,
    "pages": [
@@ -3882,7 +3947,7 @@
    "verdict": "no size on page"
   },
   "US-2682": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Wellington State Park",
    "official": null,
@@ -3921,7 +3986,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 4
+    "unknown_pieces": 8
    },
    "owner_now": null,
    "pages": [
@@ -3945,7 +4010,7 @@
    "verdict": "no size on page"
   },
   "US-2683": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Wentworth State Park",
    "official": {
@@ -3953,7 +4018,7 @@
     "as": "50 acres",
     "clean": true,
     "line": "n State Park lands. Activities and amenities Check Beach Advisories About the Park Wentworth State Park spans 50 acres and is located on the shore of scenic Wentworth Lake. Popular activities in the park include swimming, picnic",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Wentworth State Park spans 50 acres and is located on the shore of scenic Wentworth Lake.",
     "url": "https://www.nhstateparks.org/find-parks-trails/wentworth-state-park",
     "why": "clean total"
@@ -3980,7 +4045,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 2
+    "unknown_pieces": 4
    },
    "owner_now": null,
    "pages": [
@@ -4016,7 +4081,7 @@
   },
   "US-2684": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "White Lake State Park",
    "official": null,
@@ -4050,7 +4115,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -4084,7 +4149,7 @@
    "verdict": "unsure"
   },
   "US-2685": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Winslow State Park",
    "ours": null,
@@ -4094,7 +4159,7 @@
    "verdict": "no outline"
   },
   "US-4512": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "White Mountain National Forest",
    "note": "whole park compared (POTA lists it in 2 states: {'US-ME': 50268, 'US-NH': 754356})",
@@ -4106,22 +4171,22 @@
      "US-NH": 754356
     },
     "dissolved": {
-     "after": 1011878,
-     "before": 1334931,
-     "copies": 10,
+     "after": 1277213,
+     "before": 1462319,
+     "copies": 14,
      "families": {
       "padus": 754356,
-      "sgnhc": 257522
+      "sgnhc": 522857
      },
-     "family_fold": 257522,
+     "family_fold": 522857,
      "family_used": "padus",
-     "parts": 53,
-     "records": 75,
-     "tracts": 12
+     "parts": 28,
+     "records": 116,
+     "tracts": 74
     },
-    "family_fold": "layers {'padus': 754356, 'sgnhc': 257522}: one land in 2 layers, the padus copy used (257,522 ac of copies not added)",
+    "family_fold": "layers {'padus': 754356, 'sgnhc': 522857}: one land in 2 layers, the padus copy used (522,857 ac of copies not added)",
     "manager": "",
-    "note": "75 joined records = 12 tracts: 10 copies of a tract (same acres, another layer) and 53 fee tracts under a designation record folded; summed 1334931 -> 1011878 acres",
+    "note": "116 joined records = 74 tracts: 14 copies of a tract (same acres, another layer) and 28 fee tracts under a designation record folded; summed 1462319 -> 1277213 acres",
     "pieces": [
      [
       3087,
@@ -4142,7 +4207,7 @@
      "US-ME",
      "US-NH"
     ],
-    "unknown_pieces": 37,
+    "unknown_pieces": 149,
     "whole_park": true
    },
    "owner_now": null,
@@ -4173,17 +4238,95 @@
    "verdict": "no size on page"
   },
   "US-4556": {
-   "checked": "2026-11-01",
-   "handover": [],
+   "checked": "2026-11-09",
+   "handover": [
+    {
+     "date_hint": "1937",
+     "kind": "managed by",
+     "line": "ian Mountains. Conceived in 1921, built by private citizens, and completed in 1937, today the trail is managed by the National Park Service, US Forest Service, Appalachian Trail Conservancy, numerous state agencies and thousands of volunte",
+     "owner_now": "National Park Service",
+     "src": "https://www.nps.gov/appa/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
    "n": "Appalachian Trail National Scenic Trail",
-   "ours": null,
-   "score": null,
+   "note": "whole park compared (POTA lists it in 0 states: {})",
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "acres_by_state": {},
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "states": [
+     "US-CT",
+     "US-VA",
+     "US-WV",
+     "US-MA",
+     "US-PA",
+     "US-ME",
+     "US-GA",
+     "US-TN",
+     "US-NY",
+     "US-VT",
+     "US-MD",
+     "US-NH",
+     "US-NJ",
+     "US-NC"
+    ],
+    "unknown_pieces": 1,
+    "whole_park": true
+   },
+   "owner_now": "National Park Service",
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/appa/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/appa/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/appa/planyourvisit/upload/APPA_Map.pdf",
+     "why": "official map (parkinfo-web)"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/appa/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/appa/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/appa/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
    "t": "National Scenic Trail",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "ours unknown"
   },
   "US-4862": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Abbott State Forest",
    "official": null,
@@ -4200,7 +4343,7 @@
     ],
     "pin": "inside",
     "src": "",
-    "unknown_pieces": 2
+    "unknown_pieces": 3
    },
    "pages": [],
    "pct": null,
@@ -4210,7 +4353,7 @@
    "verdict": "no official page on file"
   },
   "US-4863": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Agnew State Forest",
    "official": null,
@@ -4238,7 +4381,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "pages": [],
    "pct": null,
@@ -4250,6 +4393,7 @@
   "US-4865": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Alton Bay State Forest",
    "official": null,
    "ours": {
@@ -4276,7 +4420,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -4302,6 +4446,7 @@
   "US-4866": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Ames State Forest",
    "official": null,
    "ours": {
@@ -4328,7 +4473,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 2
+    "unknown_pieces": 3
    },
    "owner_now": null,
    "pages": [
@@ -4355,6 +4500,7 @@
   "US-4867": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Ammonoosuc State Forest",
    "official": null,
    "ours": {
@@ -4381,7 +4527,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 2
+    "unknown_pieces": 3
    },
    "owner_now": null,
    "pages": [
@@ -4406,68 +4552,19 @@
    "verdict": "no size on page"
   },
   "US-4868": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Annett State Forest",
-   "official": null,
-   "ours": {
-    "acres": 1803,
-    "dissolved": {
-     "after": 1698,
-     "before": 3051,
-     "copies": 1,
-     "families": {
-      "padus": 1356,
-      "sgnhc": 342
-     },
-     "family_fold": 342,
-     "family_used": "padus",
-     "key_union": 1803,
-     "parts": 0,
-     "records": 6,
-     "summed": 1356,
-     "tracts": 5
-    },
-    "family_fold": "layers {'padus': 1356, 'sgnhc': 342}: one land in 2 layers, the padus copy used (342 ac of copies not added)",
-    "manager": "",
-    "note": "6 joined records = 5 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 3051 -> 1698 acres",
-    "pieces": [
-     [
-      56939,
-      "Annett State Forest",
-      1356,
-      "name"
-     ]
-    ],
-    "pin": "well outside",
-    "src": "USGS PAD-US",
-    "unknown_pieces": 4
-   },
-   "owner_now": null,
-   "pages": [
-    {
-     "other_unit": true,
-     "status": "rest",
-     "url": "https://www.nh.gov/nhdfl/",
-     "why": "the park's page (data/parkinfo)"
-    }
-   ],
-   "pct": null,
-   "score": 5,
-   "score_parts": {
-    "name": 2,
-    "pin": 0,
-    "size": 1,
-    "source": 2
-   },
-   "sizes": [],
+   "ours": null,
+   "score": null,
    "t": "State Forest",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "no outline"
   },
   "US-4869": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Annie Duncan State Forest",
    "official": null,
    "ours": {
@@ -4494,7 +4591,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 2
+    "unknown_pieces": 4
    },
    "owner_now": null,
    "pages": [
@@ -4521,6 +4618,7 @@
   "US-4870": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Ashenden State Forest",
    "official": null,
    "ours": {
@@ -4547,7 +4645,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 2
+    "unknown_pieces": 3
    },
    "owner_now": null,
    "pages": [
@@ -4574,6 +4672,7 @@
   "US-4871": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Ayers State Forest",
    "official": null,
    "ours": {
@@ -4600,7 +4699,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 2
+    "unknown_pieces": 4
    },
    "owner_now": null,
    "pages": [
@@ -4627,6 +4726,7 @@
   "US-4872": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Ballard State Forest",
    "official": null,
    "ours": {
@@ -4642,7 +4742,7 @@
     ],
     "pin": "inside",
     "src": "",
-    "unknown_pieces": 4
+    "unknown_pieces": 6
    },
    "owner_now": null,
    "pages": [
@@ -4669,6 +4769,7 @@
   "US-4873": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Bear Mountain State Forest",
    "official": null,
    "ours": {
@@ -4695,7 +4796,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -4722,6 +4823,7 @@
   "US-4874": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Belknap Mountain State Forest",
    "official": null,
    "ours": {
@@ -4749,7 +4851,7 @@
     ],
     "pin": "inside",
     "src": "",
-    "unknown_pieces": 4
+    "unknown_pieces": 6
    },
    "owner_now": null,
    "pages": [
@@ -4776,6 +4878,7 @@
   "US-4875": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Benton State Forest",
    "official": null,
    "ours": {
@@ -4802,7 +4905,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -4829,6 +4932,7 @@
   "US-4876": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Big Island State Forest",
    "official": null,
    "ours": {
@@ -4845,7 +4949,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 2
+    "unknown_pieces": 4
    },
    "owner_now": null,
    "pages": [
@@ -4872,6 +4976,7 @@
   "US-4877": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Black Mountain State Forest",
    "official": null,
    "ours": {
@@ -4898,7 +5003,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -4925,6 +5030,7 @@
   "US-4878": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Blair State Forest",
    "official": null,
    "ours": {
@@ -4951,7 +5057,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -4978,6 +5084,7 @@
   "US-4879": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Blue Job Mountain State Forest",
    "official": null,
    "ours": {
@@ -5010,7 +5117,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -5037,6 +5144,7 @@
   "US-4880": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Bowditch-Runnells State Forest",
    "official": null,
    "ours": {
@@ -5073,7 +5181,7 @@
     ],
     "pin": "just outside",
     "src": "",
-    "unknown_pieces": 5
+    "unknown_pieces": 7
    },
    "owner_now": null,
    "pages": [
@@ -5100,6 +5208,7 @@
   "US-4881": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Cape Horn State Forest",
    "official": null,
    "ours": {
@@ -5126,7 +5235,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 5
+    "unknown_pieces": 8
    },
    "owner_now": null,
    "pages": [
@@ -5153,6 +5262,7 @@
   "US-4882": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Carroll State Forest",
    "official": null,
    "ours": {
@@ -5179,7 +5289,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -5206,6 +5316,7 @@
   "US-4883": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Casalis State Forest",
    "official": null,
    "ours": {
@@ -5230,7 +5341,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -5255,7 +5366,7 @@
    "verdict": "no size on page"
   },
   "US-4884": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Chemung State Forest",
    "official": null,
@@ -5289,7 +5400,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 4
+    "unknown_pieces": 7
    },
    "pages": [],
    "pct": null,
@@ -5301,6 +5412,7 @@
   "US-4885": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Cilley State Forest",
    "official": null,
    "ours": {
@@ -5322,7 +5434,7 @@
     ],
     "pin": "inside",
     "src": "",
-    "unknown_pieces": 2
+    "unknown_pieces": 3
    },
    "owner_now": null,
    "pages": [
@@ -5347,88 +5459,19 @@
    "verdict": "no size on page"
   },
   "US-4886": {
-   "cause": "the agency figure may cover several states; our outline may be this state's share only",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Connecticut Lakes State Forest",
-   "note": "the agency figure may cover several states; our outline may be this state's share only",
-   "official": {
-    "acres": 146000.0,
-    "as": "146,000 acres",
-    "clean": false,
-    "line": "hire, in cooperation with Connecticut Lakes Realty Trust, provides high quality recreational opportunities on 146,000 acres of privately owned commercial forestry lands. The property is a working forest and care should be taken on th",
-    "read": "2026-11-01",
-    "sent": "The State of New Hampshire, in cooperation with Connecticut Lakes Realty Trust, provides high quality recreational opportunities on 146,000 acres of privately owned commercial forestry lands.",
-    "url": "https://www.nhstateparks.org/find-parks-trails/connecticut-lakes-headwaters-working-forest",
-    "why": "total-looking"
-   },
-   "ours": {
-    "acres": 2550,
-    "dissolved": {
-     "after": 1827,
-     "before": 3640,
-     "copies": 1,
-     "key_union": 2550,
-     "parts": 0,
-     "records": 2,
-     "summed": 1827,
-     "tracts": 1
-    },
-    "manager": "",
-    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 3640 -> 1827 acres",
-    "pieces": [
-     [
-      56956,
-      "Connecticut Lakes State Forest",
-      1827,
-      "name"
-     ]
-    ],
-    "pin": "well outside",
-    "src": "USGS PAD-US",
-    "unknown_pieces": 8
-   },
-   "owner_now": null,
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://www.nhstateparks.org/find-parks-trails/connecticut-lakes-headwaters-working-forest",
-     "why": "the park's page (data/parkinfo)"
-    },
-    {
-     "other_unit": true,
-     "status": "ok",
-     "url": "https://www.nhstateparks.org/NHStateParks/media/NHStateParks/PDFs/Parks/CT%20Lakes%20Headwaters/clhw_forest_rules_sign_18x24.pdf",
-     "why": "rules page (documents bot)"
-    }
-   ],
-   "pct": 98,
-   "same_agency": false,
-   "score": 5,
-   "score_parts": {
-    "name": 2,
-    "pin": 0,
-    "size": 1,
-    "source": 2
-   },
-   "sizes": [
-    {
-     "acres": 146000.0,
-     "as": "146,000 acres",
-     "clean": false,
-     "line": "hire, in cooperation with Connecticut Lakes Realty Trust, provides high quality recreational opportunities on 146,000 acres of privately owned commercial forestry lands. The property is a working forest and care should be taken on th",
-     "total_like": true,
-     "url": "https://www.nhstateparks.org/find-parks-trails/connecticut-lakes-headwaters-working-forest",
-     "why": "total-looking"
-    }
-   ],
+   "ours": null,
+   "score": null,
    "t": "State Forest",
    "ver": 15,
-   "verdict": "unsure"
+   "verdict": "no outline"
   },
   "US-4887": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Connecticut River State Forest",
    "official": null,
    "ours": {
@@ -5444,7 +5487,7 @@
     ],
     "pin": "inside",
     "src": "",
-    "unknown_pieces": 2
+    "unknown_pieces": 3
    },
    "owner_now": null,
    "pages": [
@@ -5471,6 +5514,7 @@
   "US-4888": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Contoocook State Forest",
    "official": null,
    "ours": {
@@ -5515,7 +5559,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 3
+    "unknown_pieces": 6
    },
    "owner_now": null,
    "pages": [
@@ -5542,15 +5586,16 @@
   "US-4889": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Conway Common Lands State Forest",
    "official": null,
    "ours": {
-    "acres": 469,
+    "acres": 539,
     "dissolved": {
      "after": 568,
      "before": 1136,
      "copies": 1,
-     "key_union": 469,
+     "key_union": 539,
      "parts": 0,
      "records": 2,
      "summed": 568,
@@ -5568,7 +5613,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -5593,7 +5638,7 @@
    "verdict": "no size on page"
   },
   "US-4891": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Craney Hill State Forest",
    "official": null,
@@ -5633,6 +5678,7 @@
   "US-4892": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Cushman State Forest",
    "official": null,
    "ours": {
@@ -5649,7 +5695,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -5676,6 +5722,7 @@
   "US-4893": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Davisville State Forest",
    "official": null,
    "ours": {
@@ -5702,7 +5749,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 4
+    "unknown_pieces": 7
    },
    "owner_now": null,
    "pages": [
@@ -5729,6 +5776,7 @@
   "US-4894": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Davis-White State Forest",
    "official": null,
    "ours": {
@@ -5753,7 +5801,7 @@
     ],
     "pin": "well outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -5780,6 +5828,7 @@
   "US-4895": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Devils Slide State Forest",
    "official": null,
    "ours": {
@@ -5804,7 +5853,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 3
+    "unknown_pieces": 5
    },
    "owner_now": null,
    "pages": [
@@ -5831,6 +5880,7 @@
   "US-4896": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "District #5 State Forest",
    "official": null,
    "ours": {
@@ -5857,7 +5907,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -5884,6 +5934,7 @@
   "US-4897": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Dodge Brook State Forest",
    "official": null,
    "ours": {
@@ -5910,7 +5961,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 2
+    "unknown_pieces": 4
    },
    "owner_now": null,
    "pages": [
@@ -5937,6 +5988,7 @@
   "US-4898": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Eaton State Forest",
    "official": null,
    "ours": {
@@ -5953,7 +6005,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -5980,6 +6032,7 @@
   "US-4899": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Fall Mountain State Forest",
    "official": null,
    "ours": {
@@ -5988,7 +6041,7 @@
     "pieces": [],
     "pin": "just outside",
     "src": "",
-    "unknown_pieces": 2
+    "unknown_pieces": 3
    },
    "owner_now": null,
    "pages": [
@@ -6015,6 +6068,7 @@
   "US-4900": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Fay State Forest",
    "official": null,
    "ours": {
@@ -6047,7 +6101,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 4
+    "unknown_pieces": 8
    },
    "owner_now": null,
    "pages": [
@@ -6074,6 +6128,7 @@
   "US-4901": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Feuer State Forest",
    "official": null,
    "ours": {
@@ -6100,7 +6155,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -6127,6 +6182,7 @@
   "US-4902": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Foster and Colburn State Forest",
    "official": null,
    "ours": {
@@ -6142,7 +6198,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 4
+    "unknown_pieces": 8
    },
    "owner_now": null,
    "pages": [
@@ -6169,6 +6225,7 @@
   "US-4903": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Fox State Forest",
    "official": null,
    "ours": {
@@ -6184,7 +6241,7 @@
     ],
     "pin": "inside",
     "src": "",
-    "unknown_pieces": 8
+    "unknown_pieces": 12
    },
    "owner_now": null,
    "pages": [
@@ -6210,6 +6267,7 @@
   "US-4904": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "George Duncan State Forest",
    "official": null,
    "ours": {
@@ -6236,7 +6294,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -6263,6 +6321,7 @@
   "US-4905": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Gile State Forest",
    "official": null,
    "ours": {
@@ -6302,7 +6361,7 @@
     ],
     "pin": "inside",
     "src": "",
-    "unknown_pieces": 8
+    "unknown_pieces": 12
    },
    "owner_now": null,
    "pages": [
@@ -6329,6 +6388,7 @@
   "US-4907": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Grant State Forest",
    "official": null,
    "ours": {
@@ -6355,7 +6415,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -6382,6 +6442,7 @@
   "US-4908": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Green Mountain State Forest",
    "official": null,
    "ours": {
@@ -6398,7 +6459,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -6425,6 +6486,7 @@
   "US-4909": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Hamel State Forest",
    "official": null,
    "ours": {
@@ -6451,7 +6513,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -6476,7 +6538,7 @@
    "verdict": "no size on page"
   },
   "US-4910": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Harriman-Chandler State Forest",
    "official": null,
@@ -6504,7 +6566,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "pages": [],
    "pct": null,
@@ -6516,6 +6578,7 @@
   "US-4911": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Haven State Forest",
    "official": null,
    "ours": {
@@ -6542,7 +6605,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -6567,7 +6630,7 @@
    "verdict": "no size on page"
   },
   "US-4912": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Hemenway State Forest",
    "official": null,
@@ -6585,7 +6648,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 8
+    "unknown_pieces": 16
    },
    "pages": [],
    "pct": null,
@@ -6595,7 +6658,7 @@
    "verdict": "no official page on file"
   },
   "US-4913": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Hodgman State Forest",
    "official": null,
@@ -6612,7 +6675,7 @@
     ],
     "pin": "just outside",
     "src": "",
-    "unknown_pieces": 2
+    "unknown_pieces": 3
    },
    "pages": [],
    "pct": null,
@@ -6622,7 +6685,7 @@
    "verdict": "no official page on file"
   },
   "US-4914": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Honey Brook State Forest",
    "official": null,
@@ -6650,7 +6713,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 7
+    "unknown_pieces": 14
    },
    "pages": [],
    "pct": null,
@@ -6662,6 +6725,7 @@
   "US-4915": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Hubbard Hill State Forest",
    "official": null,
    "ours": {
@@ -6677,7 +6741,7 @@
     ],
     "pin": "just outside",
     "src": "",
-    "unknown_pieces": 2
+    "unknown_pieces": 3
    },
    "owner_now": null,
    "pages": [
@@ -6702,7 +6766,7 @@
    "verdict": "no size on page"
   },
   "US-4916": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Huston-Morgan State Forest",
    "official": null,
@@ -6730,7 +6794,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "pages": [],
    "pct": null,
@@ -6742,6 +6806,7 @@
   "US-4917": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Hyland Hill State Forest",
    "official": null,
    "ours": {
@@ -6768,7 +6833,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -6793,7 +6858,7 @@
    "verdict": "no size on page"
   },
   "US-4918": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Kearsarge Mountain State Forest",
    "official": null,
@@ -6850,7 +6915,7 @@
    "verdict": "no official page on file"
   },
   "US-4919": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Lang Station State Forest",
    "official": null,
@@ -6885,7 +6950,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 5
+    "unknown_pieces": 10
    },
    "pages": [],
    "pct": null,
@@ -6897,6 +6962,7 @@
   "US-4920": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Lead Mine State Forest",
    "official": null,
    "ours": {
@@ -6929,7 +6995,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 2
+    "unknown_pieces": 4
    },
    "owner_now": null,
    "pages": [
@@ -6956,6 +7022,7 @@
   "US-4921": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Leighton State Forest",
    "official": null,
    "ours": {
@@ -6978,7 +7045,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 2
+    "unknown_pieces": 4
    },
    "owner_now": null,
    "pages": [
@@ -7003,7 +7070,7 @@
    "verdict": "no size on page"
   },
   "US-4922": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Litchfield State Forest",
    "official": null,
@@ -7020,7 +7087,7 @@
     ],
     "pin": "just outside",
     "src": "",
-    "unknown_pieces": 2
+    "unknown_pieces": 3
    },
    "pages": [],
    "pct": null,
@@ -7032,6 +7099,7 @@
   "US-4923": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Little Pine River State Forest",
    "official": null,
    "ours": {
@@ -7058,7 +7126,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -7083,7 +7151,7 @@
    "verdict": "no size on page"
   },
   "US-4924": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Livermore Falls State Forest",
    "official": null,
@@ -7124,7 +7192,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 10
+    "unknown_pieces": 19
    },
    "pages": [],
    "pct": null,
@@ -7136,6 +7204,7 @@
   "US-4925": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Lord Pines State Forest",
    "official": null,
    "ours": {
@@ -7162,7 +7231,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 2
+    "unknown_pieces": 4
    },
    "owner_now": null,
    "pages": [
@@ -7189,6 +7258,7 @@
   "US-4926": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Lovewell Mountain State Forest",
    "official": null,
    "ours": {
@@ -7197,7 +7267,7 @@
     "pieces": [],
     "pin": "well outside",
     "src": "",
-    "unknown_pieces": 2
+    "unknown_pieces": 3
    },
    "owner_now": null,
    "pages": [
@@ -7224,6 +7294,7 @@
   "US-4927": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Low State Forest",
    "official": null,
    "ours": {
@@ -7245,7 +7316,7 @@
     ],
     "pin": "just outside",
     "src": "",
-    "unknown_pieces": 2
+    "unknown_pieces": 3
    },
    "owner_now": null,
    "pages": [
@@ -7272,6 +7343,7 @@
   "US-4928": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Marshall State Forest",
    "official": null,
    "ours": {
@@ -7298,7 +7370,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -7323,7 +7395,7 @@
    "verdict": "no size on page"
   },
   "US-4929": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Mascoma State Forest",
    "official": null,
@@ -7351,7 +7423,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "pages": [],
    "pct": null,
@@ -7361,7 +7433,7 @@
    "verdict": "no official page on file"
   },
   "US-4930": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Mast Yard State Forest",
    "official": null,
@@ -7390,7 +7462,7 @@
     ],
     "pin": "inside",
     "src": "",
-    "unknown_pieces": 4
+    "unknown_pieces": 6
    },
    "pages": [],
    "pct": null,
@@ -7400,7 +7472,7 @@
    "verdict": "no official page on file"
   },
   "US-4931": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Max Israel State Forest",
    "ours": null,
@@ -7410,7 +7482,7 @@
    "verdict": "no outline"
   },
   "US-4932": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Meadow Pond State Forest",
    "official": null,
@@ -7428,7 +7500,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "pages": [],
    "pct": null,
@@ -7438,7 +7510,7 @@
    "verdict": "no official page on file"
   },
   "US-4933": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Merrimack River State Forest",
    "official": null,
@@ -7456,7 +7528,7 @@
     ],
     "pin": "well outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 2
+    "unknown_pieces": 4
    },
    "pages": [],
    "pct": null,
@@ -7466,7 +7538,7 @@
    "verdict": "no official page on file"
   },
   "US-4934": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Merriman State Forest",
    "official": null,
@@ -7494,7 +7566,7 @@
     ],
     "pin": "well outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "pages": [],
    "pct": null,
@@ -7505,7 +7577,7 @@
   },
   "US-4935": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [
     {
      "date_hint": null,
@@ -7522,7 +7594,7 @@
     "as": "200 acre",
     "clean": false,
     "line": "ffers views that are among the best in the southern part of the state for the effort required. It's part of a 200-acre conservation area owned and managed by the Society for the Protection of New Hampshire Forests that will fore",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "It's part of a 200-acre conservation area owned and managed by the Society for the Protection of New Hampshire Forests that will forever be protected from development.",
     "url": "https://www.forestsociety.org/property/mount-major-reservation",
     "why": "total-looking"
@@ -7540,7 +7612,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "owner_now": "Society for the Protection of New Hampshire",
    "pages": [
@@ -7584,7 +7656,7 @@
    "verdict": "off"
   },
   "US-4936": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Nash Stream Forest State Forest",
    "ours": null,
@@ -7594,7 +7666,7 @@
    "verdict": "no outline"
   },
   "US-4937": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Nottingham State Forest",
    "official": null,
@@ -7622,7 +7694,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "pages": [],
    "pct": null,
@@ -7632,7 +7704,7 @@
    "verdict": "no official page on file"
   },
   "US-4938": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Nursery State Forest",
    "official": null,
@@ -7666,7 +7738,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 4
+    "unknown_pieces": 7
    },
    "pages": [],
    "pct": null,
@@ -7676,7 +7748,7 @@
    "verdict": "no official page on file"
   },
   "US-4939": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Opechee Bay State Forest",
    "official": null,
@@ -7693,7 +7765,7 @@
     ],
     "pin": "just outside",
     "src": "",
-    "unknown_pieces": 2
+    "unknown_pieces": 3
    },
    "pages": [],
    "pct": null,
@@ -7703,7 +7775,7 @@
    "verdict": "no official page on file"
   },
   "US-4940": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Page State Forest",
    "official": null,
@@ -7731,7 +7803,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "pages": [],
    "pct": null,
@@ -7741,7 +7813,7 @@
    "verdict": "no official page on file"
   },
   "US-4941": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Page's Corner State Forest",
    "official": null,
@@ -7764,7 +7836,7 @@
     ],
     "pin": "inside",
     "src": "",
-    "unknown_pieces": 2
+    "unknown_pieces": 3
    },
    "pages": [],
    "pct": null,
@@ -7774,7 +7846,7 @@
    "verdict": "no official page on file"
   },
   "US-4942": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Paugus Bay State Forest",
    "official": null,
@@ -7792,7 +7864,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 3
+    "unknown_pieces": 5
    },
    "pages": [],
    "pct": null,
@@ -7804,6 +7876,7 @@
   "US-4943": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Percy State Forest",
    "official": null,
    "ours": {
@@ -7830,7 +7903,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -7857,6 +7930,7 @@
   "US-4944": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Pine River State Forest",
    "official": null,
    "ours": {
@@ -7907,7 +7981,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 5
+    "unknown_pieces": 8
    },
    "owner_now": null,
    "pages": [
@@ -7932,7 +8006,7 @@
    "verdict": "no size on page"
   },
   "US-4945": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Piscataquog State Forest",
    "official": null,
@@ -7967,7 +8041,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "pages": [],
    "pct": null,
@@ -7977,7 +8051,7 @@
    "verdict": "no official page on file"
   },
   "US-4946": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Powwow River State Forest",
    "official": null,
@@ -7994,7 +8068,7 @@
     ],
     "pin": "just outside",
     "src": "",
-    "unknown_pieces": 6
+    "unknown_pieces": 9
    },
    "pages": [],
    "pct": null,
@@ -8004,7 +8078,7 @@
    "verdict": "no official page on file"
   },
   "US-4947": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Prescott State Forest",
    "official": null,
@@ -8028,7 +8102,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 2
+    "unknown_pieces": 4
    },
    "pages": [],
    "pct": null,
@@ -8038,7 +8112,7 @@
    "verdict": "no official page on file"
   },
   "US-4948": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Province Road State Forest",
    "official": null,
@@ -8062,7 +8136,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 2
+    "unknown_pieces": 4
    },
    "pages": [],
    "pct": null,
@@ -8074,29 +8148,24 @@
   "US-4949": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Ragged Mountain State Forest",
    "official": null,
    "ours": {
-    "acres": 752,
+    "acres": 716,
     "dissolved": {
-     "after": 188,
-     "before": 262,
+     "after": 74,
+     "before": 148,
      "copies": 1,
-     "key_union": 752,
+     "key_union": 716,
      "parts": 0,
-     "records": 3,
-     "summed": 188,
-     "tracts": 2
+     "records": 2,
+     "summed": 74,
+     "tracts": 1
     },
     "manager": "",
-    "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 262 -> 188 acres",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 148 -> 74 acres",
     "pieces": [
-     [
-      57965,
-      "Ragged Mountain Tract",
-      114,
-      "name"
-     ],
      [
       57013,
       "Ragged Mountain State Forest",
@@ -8106,7 +8175,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 4
+    "unknown_pieces": 7
    },
    "owner_now": null,
    "pages": [
@@ -8131,7 +8200,7 @@
    "verdict": "no size on page"
   },
   "US-4950": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Reed's Ferry State Forest",
    "official": null,
@@ -8154,7 +8223,7 @@
     ],
     "pin": "just outside",
     "src": "",
-    "unknown_pieces": 4
+    "unknown_pieces": 6
    },
    "pages": [],
    "pct": null,
@@ -8164,7 +8233,7 @@
    "verdict": "no official page on file"
   },
   "US-4951": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Rock Rimmon State Forest",
    "official": null,
@@ -8187,7 +8256,7 @@
     ],
     "pin": "just outside",
     "src": "",
-    "unknown_pieces": 4
+    "unknown_pieces": 6
    },
    "pages": [],
    "pct": null,
@@ -8199,6 +8268,7 @@
   "US-4952": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Russell State Forest",
    "official": null,
    "ours": {
@@ -8249,7 +8319,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 8
+    "unknown_pieces": 16
    },
    "owner_now": null,
    "pages": [
@@ -8276,6 +8346,7 @@
   "US-4953": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Russell-Abbott State Forest",
    "official": null,
    "ours": {
@@ -8326,7 +8397,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 8
+    "unknown_pieces": 16
    },
    "owner_now": null,
    "pages": [
@@ -8351,7 +8422,7 @@
    "verdict": "no size on page"
   },
   "US-4954": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Russell-Shea State Forest",
    "official": null,
@@ -8368,7 +8439,7 @@
     ],
     "pin": "inside",
     "src": "",
-    "unknown_pieces": 2
+    "unknown_pieces": 3
    },
    "pages": [],
    "pct": null,
@@ -8380,6 +8451,7 @@
   "US-4955": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Saltmarsh Pond State Forest",
    "official": null,
    "ours": {
@@ -8395,7 +8467,7 @@
     ],
     "pin": "well outside",
     "src": "",
-    "unknown_pieces": 2
+    "unknown_pieces": 3
    },
    "owner_now": null,
    "pages": [
@@ -8419,7 +8491,7 @@
    "verdict": "no size on page"
   },
   "US-4956": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Sanborn State Forest",
    "official": null,
@@ -8447,7 +8519,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "pages": [],
    "pct": null,
@@ -8457,7 +8529,7 @@
    "verdict": "no official page on file"
   },
   "US-4957": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Scribner-Fellows State Forest",
    "official": null,
@@ -8475,7 +8547,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "pages": [],
    "pct": null,
@@ -8485,7 +8557,7 @@
    "verdict": "no official page on file"
   },
   "US-4958": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Second Presidential State Forest",
    "official": null,
@@ -8502,7 +8574,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "pages": [],
    "pct": null,
@@ -8512,7 +8584,7 @@
    "verdict": "no official page on file"
   },
   "US-4959": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Sentinel Mountain State Forest",
    "official": null,
@@ -8540,7 +8612,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "pages": [],
    "pct": null,
@@ -8550,7 +8622,7 @@
    "verdict": "no official page on file"
   },
   "US-4960": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Shadow Hill State Forest",
    "official": null,
@@ -8567,7 +8639,7 @@
     ],
     "pin": "just outside",
     "src": "",
-    "unknown_pieces": 2
+    "unknown_pieces": 3
    },
    "pages": [],
    "pct": null,
@@ -8577,7 +8649,7 @@
    "verdict": "no official page on file"
   },
   "US-4961": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Shaker State Forest",
    "official": null,
@@ -8595,7 +8667,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "pages": [],
    "pct": null,
@@ -8607,6 +8679,7 @@
   "US-4962": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Shieling State Forest",
    "official": null,
    "ours": {
@@ -8623,7 +8696,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -8650,6 +8723,7 @@
   "US-4963": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Sky Pond State Forest",
    "official": null,
    "ours": {
@@ -8674,7 +8748,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -8699,7 +8773,7 @@
    "verdict": "no size on page"
   },
   "US-4966": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Stevens Pines State Forest",
    "official": null,
@@ -8727,7 +8801,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "pages": [],
    "pct": null,
@@ -8739,6 +8813,7 @@
   "US-4967": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Strawberry Hill State Forest",
    "official": null,
    "ours": {
@@ -8754,7 +8829,7 @@
     ],
     "pin": "just outside",
     "src": "",
-    "unknown_pieces": 2
+    "unknown_pieces": 3
    },
    "owner_now": null,
    "pages": [
@@ -8779,7 +8854,7 @@
    "verdict": "no size on page"
   },
   "US-4968": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Sugar Hill State Forest",
    "official": null,
@@ -8807,7 +8882,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "pages": [],
    "pct": null,
@@ -8819,6 +8894,7 @@
   "US-4969": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Swain State Forest",
    "official": null,
    "ours": {
@@ -8843,7 +8919,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 2
+    "unknown_pieces": 4
    },
    "owner_now": null,
    "pages": [
@@ -8868,7 +8944,7 @@
    "verdict": "no size on page"
   },
   "US-4970": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Taylor State Forest",
    "official": null,
@@ -8886,7 +8962,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 4
+    "unknown_pieces": 7
    },
    "pages": [],
    "pct": null,
@@ -8896,7 +8972,7 @@
    "verdict": "no official page on file"
   },
   "US-4971": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Totten Trails State Forest",
    "official": null,
@@ -8924,7 +9000,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "pages": [],
    "pct": null,
@@ -8934,7 +9010,7 @@
    "verdict": "no official page on file"
   },
   "US-4972": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Upton Morgan State Forest",
    "official": null,
@@ -8962,7 +9038,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "pages": [],
    "pct": null,
@@ -8974,6 +9050,7 @@
   "US-4973": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Urban Forestry Center State Forest",
    "official": null,
    "ours": {
@@ -8989,7 +9066,7 @@
     ],
     "pin": "inside",
     "src": "",
-    "unknown_pieces": 4
+    "unknown_pieces": 6
    },
    "owner_now": null,
    "pages": [
@@ -9013,7 +9090,7 @@
    "verdict": "no size on page"
   },
   "US-4974": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Vienna Smith State Forest",
    "official": null,
@@ -9030,7 +9107,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "pages": [],
    "pct": null,
@@ -9040,7 +9117,7 @@
    "verdict": "no official page on file"
   },
   "US-4975": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Vincent State Forest",
    "official": null,
@@ -9058,7 +9135,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 2
+    "unknown_pieces": 4
    },
    "pages": [],
    "pct": null,
@@ -9070,6 +9147,7 @@
   "US-4976": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Wade State Forest",
    "official": null,
    "ours": {
@@ -9085,7 +9163,7 @@
     ],
     "pin": "just outside",
     "src": "",
-    "unknown_pieces": 2
+    "unknown_pieces": 3
    },
    "owner_now": null,
    "pages": [
@@ -9110,7 +9188,7 @@
    "verdict": "no size on page"
   },
   "US-4977": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Walker State Forest",
    "official": null,
@@ -9133,7 +9211,7 @@
     ],
     "pin": "just outside",
     "src": "",
-    "unknown_pieces": 4
+    "unknown_pieces": 6
    },
    "pages": [],
    "pct": null,
@@ -9145,6 +9223,7 @@
   "US-4978": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Welton Falls State Forest",
    "official": null,
    "ours": {
@@ -9169,7 +9248,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -9196,6 +9275,7 @@
   "US-4979": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "West Iron Works Road State Forest",
    "official": null,
    "ours": {
@@ -9246,7 +9326,7 @@
    "verdict": "no size on page"
   },
   "US-4980": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "White Farm State Forest",
    "ours": null,
@@ -9256,7 +9336,7 @@
    "verdict": "no outline"
   },
   "US-4981": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "William Thomas State Forest",
    "official": null,
@@ -9285,7 +9365,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 10
+    "unknown_pieces": 20
    },
    "pages": [],
    "pct": null,
@@ -9297,6 +9377,7 @@
   "US-4982": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Woodman State Forest",
    "official": null,
    "ours": {
@@ -9313,7 +9394,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -9338,7 +9419,7 @@
    "verdict": "no size on page"
   },
   "US-7870": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Daniel Webster Birthplace State Historic Site",
    "official": null,
@@ -9364,7 +9445,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "pages": [],
    "pct": null,
@@ -9374,7 +9455,7 @@
    "verdict": "no official page on file"
   },
   "US-8014": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Nashua, Squannacook, and Nissitissit National Wild and Scenic River",
    "ours": null,
@@ -9384,7 +9465,7 @@
    "verdict": "no outline"
   },
   "US-8015": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Wildcat National Wild and Scenic River",
    "official": null,
@@ -9417,7 +9498,7 @@
    "verdict": "no official page on file"
   },
   "US-8016": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Bedell Bridge State Historic Site",
    "official": null,
@@ -9434,7 +9515,7 @@
     ],
     "pin": "inside",
     "src": "",
-    "unknown_pieces": 2
+    "unknown_pieces": 3
    },
    "pages": [],
    "pct": null,
@@ -9444,7 +9525,7 @@
    "verdict": "no official page on file"
   },
   "US-8017": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Endicott Rock State Historic Site",
    "official": null,
@@ -9485,7 +9566,7 @@
    "verdict": "no size on page"
   },
   "US-8018": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Fort Constitution State Historic Site",
    "official": null,
@@ -9502,7 +9583,7 @@
     ],
     "pin": "just outside",
     "src": "",
-    "unknown_pieces": 2
+    "unknown_pieces": 3
    },
    "owner_now": null,
    "pages": [
@@ -9526,7 +9607,7 @@
    "verdict": "no size on page"
   },
   "US-8019": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Fort Stark State Historic Site",
    "official": null,
@@ -9569,6 +9650,7 @@
   "US-8020": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Franklin Pierce Homestead State Historic Site",
    "official": null,
    "ours": {
@@ -9619,7 +9701,7 @@
    "verdict": "no size on page"
   },
   "US-8021": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Gov. Wentworth State Historic Site",
    "official": null,
@@ -9671,7 +9753,7 @@
    "verdict": "no size on page"
   },
   "US-8022": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Hannah Duston State Historic Site",
    "official": null,
@@ -9694,7 +9776,7 @@
     ],
     "pin": "inside",
     "src": "",
-    "unknown_pieces": 4
+    "unknown_pieces": 6
    },
    "pages": [],
    "pct": null,
@@ -9704,7 +9786,7 @@
    "verdict": "no official page on file"
   },
   "US-8023": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Robert Frost Farm State Historic Site",
    "official": null,
@@ -9721,7 +9803,7 @@
     ],
     "pin": "just outside",
     "src": "",
-    "unknown_pieces": 6
+    "unknown_pieces": 8
    },
    "owner_now": null,
    "pages": [
@@ -9745,7 +9827,7 @@
    "verdict": "no size on page"
   },
   "US-8024": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Taylor Saw Mill State Historic Site",
    "ours": null,
@@ -9757,6 +9839,7 @@
   "US-8025": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Wentworth- Coolidge Mansion State Historic Site",
    "official": null,
    "ours": {
@@ -9778,7 +9861,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 9
+    "unknown_pieces": 13
    },
    "owner_now": null,
    "pages": [
@@ -9802,7 +9885,7 @@
    "verdict": "no size on page"
   },
   "US-8026": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [
     {
      "date_hint": "1993",
@@ -9853,7 +9936,7 @@
   },
   "US-8027": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Chesterfield Gorge State Natural Area",
    "official": null,
@@ -9863,7 +9946,7 @@
     "pieces": [],
     "pin": "just outside",
     "src": "",
-    "unknown_pieces": 2
+    "unknown_pieces": 3
    },
    "owner_now": null,
    "pages": [
@@ -9898,7 +9981,7 @@
   },
   "US-8028": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Madison Boulder State Natural Area",
    "official": null,
@@ -9916,7 +9999,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 3
+    "unknown_pieces": 5
    },
    "owner_now": null,
    "pages": [
@@ -9950,7 +10033,7 @@
    "verdict": "unsure"
   },
   "US-8029": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Sculptured Rocks State Natural Area",
    "official": {
@@ -9958,7 +10041,7 @@
     "as": "272 acres",
     "clean": true,
     "line": "ating in State Park lands. Activities and amenities About the Park Sculptured Rocks Natural Area, which spans 272 acres, is a unique example of nature's powerful yet delicate artistry. The Cockermouth River carved a narrow canyon",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Sculptured Rocks Natural Area, which spans 272 acres, is a unique example of nature's powerful yet delicate artistry.",
     "url": "https://www.nhstateparks.org/visit/state-parks/sculptured-rocks-natural-area",
     "why": "clean total"
@@ -9985,7 +10068,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -10020,7 +10103,7 @@
    "verdict": "agree"
   },
   "US-8396": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Nashua River Rail Trail State Trail",
    "note": "whole park compared (POTA lists it in 1 states: {'US-MA': 610})",
@@ -10063,5 +10146,5 @@
    "verdict": "no size on page"
   }
  },
- "read": "2026-11-01"
+ "read": "2026-11-09"
 }

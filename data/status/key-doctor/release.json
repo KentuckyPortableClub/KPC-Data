@@ -2,6 +2,1064 @@
  "switch_per_park_release": true,
  "latest_verdict": "KEY YES US-43056604383 (rules 46ef34a04ab0), Quality RELEASE-READY YES 11:18 AM CST Nov 11; standing OK to release any key once Quality signs off. Florida is complete: sgflf 79689 of 79689, sgfld 1573",
  "refs_in_key_no": [],
- "files": [],
+ "files": [
+  {
+   "file": "US-AK.json",
+   "parks": 179,
+   "pass": 171,
+   "held": 8,
+   "verdict": "LIVE-FILTERED",
+   "held_parks": {
+    "US-0144": [
+     "a person's NO came back"
+    ],
+    "US-0150": [
+     "a person's NO came back",
+     "pin well outside the joined land"
+    ],
+    "US-10281": [
+     "a person's NO came back",
+     "pin well outside the joined land"
+    ],
+    "US-11839": [
+     "a person's NO came back"
+    ],
+    "US-6332": [
+     "pin well outside the joined land"
+    ],
+    "US-7191": [
+     "pin well outside the joined land"
+    ],
+    "US-7242": [
+     "pin well outside the joined land"
+    ],
+    "US-7862": [
+     "a person's NO came back"
+    ]
+   }
+  },
+  {
+   "file": "US-CA.json",
+   "parks": 411,
+   "pass": 408,
+   "held": 3,
+   "verdict": "LIVE-FILTERED",
+   "held_parks": {
+    "US-0211": [
+     "pin well outside the joined land"
+    ],
+    "US-13087": [
+     "a person's NO came back"
+    ],
+    "US-3523": [
+     "pin well outside the joined land"
+    ]
+   }
+  },
+  {
+   "file": "US-CO.json",
+   "parks": 276,
+   "pass": 254,
+   "held": 22,
+   "verdict": "LIVE-FILTERED",
+   "held_parks": {
+    "US-0183": [
+     "a person's NO came back"
+    ],
+    "US-0185": [
+     "pin well outside the joined land"
+    ],
+    "US-0191": [
+     "pin well outside the joined land"
+    ],
+    "US-11908": [
+     "a person's NO came back"
+    ],
+    "US-11909": [
+     "a person's NO came back"
+    ],
+    "US-11915": [
+     "a person's NO came back"
+    ],
+    "US-11916": [
+     "a person's NO came back"
+    ],
+    "US-12185": [
+     "pin well outside the joined land"
+    ],
+    "US-1249": [
+     "a person's NO came back",
+     "pin well outside the joined land"
+    ],
+    "US-9594": [
+     "pin well outside the joined land"
+    ],
+    "US-9605": [
+     "pin well outside the joined land"
+    ],
+    "US-9620": [
+     "pin well outside the joined land"
+    ],
+    "US-9622": [
+     "pin well outside the joined land"
+    ],
+    "US-9631": [
+     "pin well outside the joined land"
+    ],
+    "US-9632": [
+     "pin well outside the joined land"
+    ],
+    "US-9635": [
+     "pin well outside the joined land"
+    ],
+    "US-9637": [
+     "a person's NO came back"
+    ],
+    "US-9638": [
+     "a person's NO came back",
+     "pin well outside the joined land"
+    ],
+    "US-9658": [
+     "a person's NO came back"
+    ],
+    "US-9665": [
+     "a person's NO came back"
+    ],
+    "US-9675": [
+     "a person's NO came back"
+    ],
+    "US-9678": [
+     "pin well outside the joined land"
+    ]
+   }
+  },
+  {
+   "file": "US-CT.json",
+   "parks": 157,
+   "pass": 148,
+   "held": 9,
+   "verdict": "LIVE-FILTERED",
+   "held_parks": {
+    "US-12459": [
+     "a person's NO came back"
+    ],
+    "US-1656": [
+     "a person's NO came back"
+    ],
+    "US-1660": [
+     "a person's NO came back"
+    ],
+    "US-1676": [
+     "a person's NO came back"
+    ],
+    "US-1689": [
+     "a person's NO came back"
+    ],
+    "US-1696": [
+     "a person's NO came back",
+     "pin well outside the joined land"
+    ],
+    "US-6861": [
+     "a person's NO came back"
+    ],
+    "US-7547": [
+     "a person's NO came back"
+    ],
+    "US-7548": [
+     "a person's NO came back"
+    ]
+   }
+  },
+  {
+   "file": "US-FL.json",
+   "parks": 460,
+   "pass": 451,
+   "held": 9,
+   "verdict": "LIVE-FILTERED",
+   "held_parks": {
+    "US-0007": [
+     "a person's NO came back"
+    ],
+    "US-12133": [
+     "a person's NO came back"
+    ],
+    "US-3660": [
+     "pin well outside the joined land"
+    ],
+    "US-6288": [
+     "a person's NO came back"
+    ],
+    "US-6295": [
+     "a person's NO came back"
+    ],
+    "US-6299": [
+     "a person's NO came back"
+    ],
+    "US-6318": [
+     "a person's NO came back"
+    ],
+    "US-6744": [
+     "a person's NO came back"
+    ],
+    "US-7879": [
+     "a person's NO came back"
+    ]
+   }
+  },
+  {
+   "file": "US-IA.json",
+   "parks": 181,
+   "pass": 177,
+   "held": 4,
+   "verdict": "LIVE-FILTERED",
+   "held_parks": {
+    "US-10174": [
+     "a person's NO came back"
+    ],
+    "US-2309": [
+     "a person's NO came back"
+    ],
+    "US-4236": [
+     "pin well outside the joined land"
+    ],
+    "US-5735": [
+     "a person's NO came back"
+    ]
+   }
+  },
+  {
+   "file": "US-ID.json",
+   "parks": 362,
+   "pass": 354,
+   "held": 8,
+   "verdict": "LIVE-FILTERED",
+   "held_parks": {
+    "US-10344": [
+     "a person's NO came back"
+    ],
+    "US-10347": [
+     "a person's NO came back"
+    ],
+    "US-10348": [
+     "a person's NO came back"
+    ],
+    "US-11308": [
+     "a person's NO came back"
+    ],
+    "US-12180": [
+     "a person's NO came back"
+    ],
+    "US-12298": [
+     "a person's NO came back"
+    ],
+    "US-4478": [
+     "a person's NO came back"
+    ],
+    "US-5616": [
+     "pin well outside the joined land"
+    ]
+   }
+  },
+  {
+   "file": "US-IL.json",
+   "parks": 219,
+   "pass": 212,
+   "held": 7,
+   "verdict": "LIVE-FILTERED",
+   "held_parks": {
+    "US-0990": [
+     "a person's NO came back"
+    ],
+    "US-1020": [
+     "a person's NO came back"
+    ],
+    "US-10786": [
+     "a person's NO came back"
+    ],
+    "US-13353": [
+     "a person's NO came back"
+    ],
+    "US-4092": [
+     "a person's NO came back"
+    ],
+    "US-4106": [
+     "a person's NO came back"
+    ],
+    "US-4236": [
+     "pin well outside the joined land"
+    ]
+   }
+  },
+  {
+   "file": "US-IN.json",
+   "parks": 229,
+   "pass": 219,
+   "held": 10,
+   "verdict": "LIVE-FILTERED",
+   "held_parks": {
+    "US-0782": [
+     "a person's NO came back"
+    ],
+    "US-10178": [
+     "a person's NO came back"
+    ],
+    "US-10180": [
+     "a person's NO came back"
+    ],
+    "US-10237": [
+     "pin well outside the joined land"
+    ],
+    "US-10561": [
+     "a person's NO came back"
+    ],
+    "US-12013": [
+     "a person's NO came back"
+    ],
+    "US-4168": [
+     "a person's NO came back"
+    ],
+    "US-4169": [
+     "a person's NO came back"
+    ],
+    "US-4170": [
+     "a person's NO came back"
+    ],
+    "US-4171": [
+     "a person's NO came back"
+    ]
+   }
+  },
+  {
+   "file": "US-KS.json",
+   "parks": 145,
+   "pass": 138,
+   "held": 7,
+   "verdict": "LIVE-FILTERED",
+   "held_parks": {
+    "US-12398": [
+     "a person's NO came back"
+    ],
+    "US-7394": [
+     "a person's NO came back"
+    ],
+    "US-7396": [
+     "a person's NO came back"
+    ],
+    "US-7397": [
+     "a person's NO came back"
+    ],
+    "US-7419": [
+     "a person's NO came back"
+    ],
+    "US-7425": [
+     "a person's NO came back"
+    ],
+    "US-7931": [
+     "a person's NO came back"
+    ]
+   }
+  },
+  {
+   "file": "US-MA.json",
+   "parks": 421,
+   "pass": 413,
+   "held": 8,
+   "verdict": "LIVE-FILTERED",
+   "held_parks": {
+    "US-11401": [
+     "a person's NO came back",
+     "pin well outside the joined land"
+    ],
+    "US-11473": [
+     "a person's NO came back"
+    ],
+    "US-11476": [
+     "a person's NO came back"
+    ],
+    "US-11511": [
+     "a person's NO came back"
+    ],
+    "US-11631": [
+     "pin well outside the joined land"
+    ],
+    "US-11683": [
+     "a person's NO came back"
+    ],
+    "US-8405": [
+     "a person's NO came back"
+    ],
+    "US-8433": [
+     "a person's NO came back"
+    ]
+   }
+  },
+  {
+   "file": "US-MD.json",
+   "parks": 186,
+   "pass": 174,
+   "held": 12,
+   "verdict": "LIVE-FILTERED",
+   "held_parks": {
+    "US-0654": [
+     "a person's NO came back"
+    ],
+    "US-1573": [
+     "a person's NO came back"
+    ],
+    "US-1588": [
+     "a person's NO came back"
+    ],
+    "US-1589": [
+     "a person's NO came back"
+    ],
+    "US-1595": [
+     "a person's NO came back"
+    ],
+    "US-1601": [
+     "a person's NO came back"
+    ],
+    "US-6387": [
+     "a person's NO came back"
+    ],
+    "US-7735": [
+     "a person's NO came back"
+    ],
+    "US-7749": [
+     "a person's NO came back",
+     "pin well outside the joined land"
+    ],
+    "US-7760": [
+     "pin well outside the joined land"
+    ],
+    "US-7761": [
+     "a person's NO came back"
+    ],
+    "US-7783": [
+     "a person's NO came back"
+    ]
+   }
+  },
+  {
+   "file": "US-ME.json",
+   "parks": 148,
+   "pass": 139,
+   "held": 9,
+   "verdict": "LIVE-FILTERED",
+   "held_parks": {
+    "US-2382": [
+     "a person's NO came back"
+    ],
+    "US-8442": [
+     "a person's NO came back"
+    ],
+    "US-8443": [
+     "a person's NO came back"
+    ],
+    "US-8444": [
+     "a person's NO came back"
+    ],
+    "US-8445": [
+     "a person's NO came back"
+    ],
+    "US-8457": [
+     "a person's NO came back"
+    ],
+    "US-8459": [
+     "a person's NO came back"
+    ],
+    "US-8461": [
+     "a person's NO came back"
+    ],
+    "US-9176": [
+     "a person's NO came back"
+    ]
+   }
+  },
+  {
+   "file": "US-MI.json",
+   "parks": 388,
+   "pass": 376,
+   "held": 12,
+   "verdict": "LIVE-FILTERED",
+   "held_parks": {
+    "US-10717": [
+     "pin well outside the joined land"
+    ],
+    "US-1517": [
+     "a person's NO came back"
+    ],
+    "US-4263": [
+     "a person's NO came back"
+    ],
+    "US-4264": [
+     "a person's NO came back"
+    ],
+    "US-6685": [
+     "a person's NO came back"
+    ],
+    "US-6730": [
+     "a person's NO came back"
+    ],
+    "US-6739": [
+     "a person's NO came back"
+    ],
+    "US-6759": [
+     "a person's NO came back"
+    ],
+    "US-6773": [
+     "a person's NO came back"
+    ],
+    "US-6794": [
+     "a person's NO came back"
+    ],
+    "US-6816": [
+     "a person's NO came back"
+    ],
+    "US-6818": [
+     "a person's NO came back"
+    ]
+   }
+  },
+  {
+   "file": "US-MN.json",
+   "parks": 323,
+   "pass": 312,
+   "held": 11,
+   "verdict": "LIVE-FILTERED",
+   "held_parks": {
+    "US-0361": [
+     "a person's NO came back",
+     "pin well outside the joined land"
+    ],
+    "US-10723": [
+     "a person's NO came back"
+    ],
+    "US-11023": [
+     "pin well outside the joined land"
+    ],
+    "US-12394": [
+     "a person's NO came back"
+    ],
+    "US-12395": [
+     "a person's NO came back"
+    ],
+    "US-13354": [
+     "pin well outside the joined land"
+    ],
+    "US-6465": [
+     "a person's NO came back"
+    ],
+    "US-7144": [
+     "a person's NO came back"
+    ],
+    "US-7145": [
+     "a person's NO came back"
+    ],
+    "US-9387": [
+     "pin well outside the joined land"
+    ],
+    "US-9388": [
+     "pin well outside the joined land"
+    ]
+   }
+  },
+  {
+   "file": "US-MO.json",
+   "parks": 561,
+   "pass": 549,
+   "held": 12,
+   "verdict": "LIVE-FILTERED",
+   "held_parks": {
+    "US-0831": [
+     "a person's NO came back"
+    ],
+    "US-10211": [
+     "a person's NO came back"
+    ],
+    "US-10387": [
+     "a person's NO came back"
+    ],
+    "US-11042": [
+     "a person's NO came back"
+    ],
+    "US-12406": [
+     "a person's NO came back"
+    ],
+    "US-12676": [
+     "a person's NO came back"
+    ],
+    "US-1773": [
+     "a person's NO came back"
+    ],
+    "US-6503": [
+     "a person's NO came back"
+    ],
+    "US-6514": [
+     "a person's NO came back"
+    ],
+    "US-6517": [
+     "a person's NO came back"
+    ],
+    "US-7673": [
+     "a person's NO came back"
+    ],
+    "US-7873": [
+     "a person's NO came back"
+    ]
+   }
+  },
+  {
+   "file": "US-MS.json",
+   "parks": 155,
+   "pass": 154,
+   "held": 1,
+   "verdict": "LIVE-FILTERED",
+   "held_parks": {
+    "US-12639": [
+     "a person's NO came back"
+    ]
+   }
+  },
+  {
+   "file": "US-NC.json",
+   "parks": 253,
+   "pass": 240,
+   "held": 13,
+   "verdict": "LIVE-FILTERED",
+   "held_parks": {
+    "US-12717": [
+     "a person's NO came back",
+     "pin well outside the joined land"
+    ],
+    "US-3841": [
+     "a person's NO came back"
+    ],
+    "US-3843": [
+     "a person's NO came back"
+    ],
+    "US-4856": [
+     "a person's NO came back"
+    ],
+    "US-6834": [
+     "a person's NO came back"
+    ],
+    "US-6835": [
+     "a person's NO came back"
+    ],
+    "US-6845": [
+     "a person's NO came back"
+    ],
+    "US-6848": [
+     "a person's NO came back"
+    ],
+    "US-6856": [
+     "a person's NO came back"
+    ],
+    "US-6880": [
+     "a person's NO came back"
+    ],
+    "US-6901": [
+     "a person's NO came back"
+    ],
+    "US-6928": [
+     "a person's NO came back"
+    ],
+    "US-6936": [
+     "a person's NO came back"
+    ]
+   }
+  },
+  {
+   "file": "US-ND.json",
+   "parks": 155,
+   "pass": 153,
+   "held": 2,
+   "verdict": "LIVE-FILTERED",
+   "held_parks": {
+    "US-0425": [
+     "a person's NO came back"
+    ],
+    "US-7707": [
+     "a person's NO came back",
+     "pin well outside the joined land"
+    ]
+   }
+  },
+  {
+   "file": "US-NE.json",
+   "parks": 201,
+   "pass": 195,
+   "held": 6,
+   "verdict": "LIVE-FILTERED",
+   "held_parks": {
+    "US-2608": [
+     "a person's NO came back"
+    ],
+    "US-3487": [
+     "a person's NO came back"
+    ],
+    "US-4015": [
+     "pin well outside the joined land"
+    ],
+    "US-5629": [
+     "a person's NO came back"
+    ],
+    "US-5646": [
+     "a person's NO came back"
+    ],
+    "US-5675": [
+     "a person's NO came back"
+    ]
+   }
+  },
+  {
+   "file": "US-NH.json",
+   "parks": 206,
+   "pass": 194,
+   "held": 12,
+   "verdict": "LIVE-FILTERED",
+   "held_parks": {
+    "US-2650": [
+     "a person's NO came back"
+    ],
+    "US-4868": [
+     "pin well outside the joined land"
+    ],
+    "US-4886": [
+     "pin well outside the joined land"
+    ],
+    "US-4894": [
+     "a person's NO came back",
+     "pin well outside the joined land"
+    ],
+    "US-4926": [
+     "pin well outside the joined land"
+    ],
+    "US-4933": [
+     "a person's NO came back",
+     "pin well outside the joined land"
+    ],
+    "US-4934": [
+     "a person's NO came back",
+     "pin well outside the joined land"
+    ],
+    "US-4949": [
+     "a person's NO came back"
+    ],
+    "US-4955": [
+     "a person's NO came back",
+     "pin well outside the joined land"
+    ],
+    "US-8023": [
+     "a person's NO came back"
+    ],
+    "US-8025": [
+     "a person's NO came back"
+    ],
+    "US-8396": [
+     "pin well outside the joined land"
+    ]
+   }
+  },
+  {
+   "file": "US-NV.json",
+   "parks": 367,
+   "pass": 345,
+   "held": 22,
+   "verdict": "LIVE-FILTERED",
+   "held_parks": {
+    "US-10844": [
+     "pin well outside the joined land"
+    ],
+    "US-11913": [
+     "pin well outside the joined land"
+    ],
+    "US-13018": [
+     "pin well outside the joined land"
+    ],
+    "US-13024": [
+     "pin well outside the joined land"
+    ],
+    "US-13034": [
+     "pin well outside the joined land"
+    ],
+    "US-13039": [
+     "pin well outside the joined land"
+    ],
+    "US-13048": [
+     "pin well outside the joined land"
+    ],
+    "US-13127": [
+     "a person's NO came back"
+    ],
+    "US-13128": [
+     "pin well outside the joined land"
+    ],
+    "US-13130": [
+     "pin well outside the joined land"
+    ],
+    "US-13132": [
+     "pin well outside the joined land"
+    ],
+    "US-13134": [
+     "pin well outside the joined land"
+    ],
+    "US-13135": [
+     "a person's NO came back"
+    ],
+    "US-13138": [
+     "pin well outside the joined land"
+    ],
+    "US-13145": [
+     "pin well outside the joined land"
+    ],
+    "US-13190": [
+     "a person's NO came back"
+    ],
+    "US-13194": [
+     "pin well outside the joined land"
+    ],
+    "US-13220": [
+     "a person's NO came back"
+    ],
+    "US-9246": [
+     "pin well outside the joined land"
+    ],
+    "US-9254": [
+     "a person's NO came back"
+    ],
+    "US-9273": [
+     "pin well outside the joined land"
+    ],
+    "US-9285": [
+     "a person's NO came back"
+    ]
+   }
+  },
+  {
+   "file": "US-OH.json",
+   "parks": 276,
+   "pass": 274,
+   "held": 2,
+   "verdict": "LIVE-FILTERED",
+   "held_parks": {
+    "US-9457": [
+     "a person's NO came back"
+    ],
+    "US-9470": [
+     "pin well outside the joined land"
+    ]
+   }
+  },
+  {
+   "file": "US-OK.json",
+   "parks": 205,
+   "pass": 199,
+   "held": 6,
+   "verdict": "LIVE-FILTERED",
+   "held_parks": {
+    "US-11778": [
+     "a person's NO came back"
+    ],
+    "US-12027": [
+     "pin well outside the joined land"
+    ],
+    "US-12028": [
+     "a person's NO came back",
+     "pin well outside the joined land"
+    ],
+    "US-6361": [
+     "pin well outside the joined land"
+    ],
+    "US-7682": [
+     "pin well outside the joined land"
+    ],
+    "US-8140": [
+     "pin well outside the joined land"
+    ]
+   }
+  },
+  {
+   "file": "US-PA.json",
+   "parks": 494,
+   "pass": 493,
+   "held": 1,
+   "verdict": "LIVE-FILTERED",
+   "held_parks": {
+    "US-0733": [
+     "pin well outside the joined land"
+    ]
+   }
+  },
+  {
+   "file": "US-SD.json",
+   "parks": 120,
+   "pass": 109,
+   "held": 11,
+   "verdict": "LIVE-FILTERED",
+   "held_parks": {
+    "US-10340": [
+     "a person's NO came back"
+    ],
+    "US-10375": [
+     "a person's NO came back"
+    ],
+    "US-2924": [
+     "a person's NO came back"
+    ],
+    "US-5645": [
+     "a person's NO came back"
+    ],
+    "US-7844": [
+     "a person's NO came back"
+    ],
+    "US-8159": [
+     "a person's NO came back"
+    ],
+    "US-8177": [
+     "a person's NO came back"
+    ],
+    "US-8183": [
+     "a person's NO came back"
+    ],
+    "US-8184": [
+     "a person's NO came back"
+    ],
+    "US-8189": [
+     "a person's NO came back"
+    ],
+    "US-8191": [
+     "a person's NO came back"
+    ]
+   }
+  },
+  {
+   "file": "US-TN.json",
+   "parks": 277,
+   "pass": 272,
+   "held": 5,
+   "verdict": "LIVE-FILTERED",
+   "held_parks": {
+    "US-3925": [
+     "a person's NO came back"
+    ],
+    "US-3928": [
+     "a person's NO came back"
+    ],
+    "US-6275": [
+     "pin well outside the joined land"
+    ],
+    "US-7565": [
+     "pin well outside the joined land"
+    ],
+    "US-7581": [
+     "a person's NO came back"
+    ]
+   }
+  },
+  {
+   "file": "US-TX.json",
+   "parks": 222,
+   "pass": 222,
+   "held": 0,
+   "verdict": "PASS",
+   "held_parks": {}
+  },
+  {
+   "file": "US-UT.json",
+   "parks": 694,
+   "pass": 681,
+   "held": 13,
+   "verdict": "LIVE-FILTERED",
+   "held_parks": {
+    "US-11007": [
+     "pin well outside the joined land"
+    ],
+    "US-11115": [
+     "pin well outside the joined land"
+    ],
+    "US-11748": [
+     "pin well outside the joined land"
+    ],
+    "US-4475": [
+     "pin well outside the joined land"
+    ],
+    "US-5758": [
+     "pin well outside the joined land"
+    ],
+    "US-5782": [
+     "pin well outside the joined land"
+    ],
+    "US-5789": [
+     "pin well outside the joined land"
+    ],
+    "US-5828": [
+     "pin well outside the joined land"
+    ],
+    "US-5833": [
+     "pin well outside the joined land"
+    ],
+    "US-5869": [
+     "pin well outside the joined land"
+    ],
+    "US-5897": [
+     "pin well outside the joined land"
+    ],
+    "US-6007": [
+     "pin well outside the joined land"
+    ],
+    "US-6090": [
+     "pin well outside the joined land"
+    ]
+   }
+  },
+  {
+   "file": "US-WA.json",
+   "parks": 541,
+   "pass": 541,
+   "held": 0,
+   "verdict": "PASS",
+   "held_parks": {}
+  },
+  {
+   "file": "US-WI.json",
+   "parks": 348,
+   "pass": 344,
+   "held": 4,
+   "verdict": "LIVE-FILTERED",
+   "held_parks": {
+    "US-12601": [
+     "pin well outside the joined land"
+    ],
+    "US-4263": [
+     "a person's NO came back"
+    ],
+    "US-4264": [
+     "a person's NO came back"
+    ],
+    "US-9800": [
+     "pin well outside the joined land"
+    ]
+   }
+  },
+  {
+   "file": "US-WV.json",
+   "parks": 172,
+   "pass": 169,
+   "held": 3,
+   "verdict": "LIVE-FILTERED",
+   "held_parks": {
+    "US-0015": [
+     "pin well outside the joined land"
+    ],
+    "US-7027": [
+     "pin well outside the joined land"
+    ],
+    "US-7043": [
+     "pin well outside the joined land"
+    ]
+   }
+  }
+ ],
  "note": "filtered files written to key-doctor/release/ (copy them into the release only after a test build)"
 }
