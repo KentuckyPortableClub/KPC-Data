@@ -1,0 +1,274 @@
+ref,candidate,verdict,source,note
+US-3489,A,BIGGER,packet: PAD-US record named for Clay County WPA as a whole; 7011 acres; pin inside; a single WPA unit is far smaller,county-wide record
+US-3489,B,NO,packet: Kissinger Basin WMA is a state WMA (SCA/SFW) 5.6 km from pin,different place
+US-3489,C,BIGGER,packet: PAD-US record named for Clay County WPA as a whole; 6943 acres; pin inside,county-wide record
+US-3489,D,NO,packet: Kissinger Basin WMA state land NGPC 486 acres 5.6 km from pin,different place
+US-1080,A,NO,packet: AGFC Lower Lake DeGray 344 acres 5.1 km from pin,AGFC lake record elsewhere
+US-1080,B,YES,https://pre-prod.arkansas.com/sites/default/files/2026-01/DeGray%20Lake%20Resort%20Park%20Information%20Brochure%202026.pdf,official brochure says 938 acres; record named DeGray Lake Resort State Park 970 acres pin inside
+US-1080,C,UNSURE,packet: SP designation pin inside but 1277 acres against official 938,would need the state park boundary map to see why it is 36 percent larger
+US-1080,D,NO,https://pre-prod.arkansas.com/sites/default/files/2026-01/DeGray%20Lake%20Resort%20Park%20Information%20Brochure%202026.pdf,brochure: lake is 13800 acres and separate from the 938-acre park; AGFC lake record
+US-1080,E,NO,packet: sgide Highway 7 record 40 acres 2.6 km from pin,different place
+US-1080,F,NO,packet: AGFC WMA 30857 acres is a wildlife management area not a state park,different designation
+US-1080,G,NO,packet: Iron Mountain 177 acres 2.6 km from pin,different place
+US-1080,H,YES,https://pre-prod.arkansas.com/sites/default/files/2026-01/DeGray%20Lake%20Resort%20Park%20Information%20Brochure%202026.pdf,Arkansas State Parks layer; name matches; 828 acres vs official 938; pin inside
+US-6045,A,NO,packet: SITLA state trust parcel 1161 acres 3.6 km from pin,not BLM HMA
+US-6045,B,YES,packet: BLM herd management area layer; name Swasey; park is the BLM HMA; pin inside,same designation
+US-6045,C,NO,packet: wilderness study area is a different designation on partly the same ground,different designation
+US-6045,D,NO,packet: SITLA parcel 658 acres 6.8 km from pin,different place
+US-6045,E,NO,packet: Swasey Mountain SRMA 33506 acres is a recreation area not the HMA,different designation
+US-6045,F,NO,packet: same 33506-acre SRMA shown as site polygon,different designation
+US-6045,G,BIGGER,packet: BLM Fillmore field office record 4.4M acres holds the HMA,field office
+US-11142,A,BIGGER,https://wdfw.wa.gov/places-to-go/wildlife-areas/west-foster-creek-wildlife-area-unit,unit is 1063 acres within Wells Wildlife Area; this complex record is 40934 acres
+US-11142,B,YES,https://wdfw.wa.gov/places-to-go/wildlife-areas/west-foster-creek-wildlife-area-unit,official unit 1063 acres; record West Foster Creek 1062 acres 0.01 km from pin
+US-11142,C,BIGGER,https://wdfw.wa.gov/places-to-go/wildlife-areas/west-foster-creek-wildlife-area-unit,Wells wildlife area record 11075 acres; unit is part of Wells Wildlife Area
+US-11142,D,NO,packet: Foster Creek recreation area 5 acres 10.6 km from pin,different place
+US-11142,E,YES,https://wdfw.wa.gov/places-to-go/wildlife-areas/west-foster-creek-wildlife-area-unit,WDFW layer West Foster Creek 1077 acres vs official 1063
+US-11142,F,YES,https://wdfw.wa.gov/places-to-go/wildlife-areas/west-foster-creek-wildlife-area-unit,second WDFW layer West Foster Creek 1077 acres same land
+US-11142,G,YES,https://wdfw.wa.gov/places-to-go/wildlife-areas/west-foster-creek-wildlife-area-unit,labelled Wells Wildlife Area but 1061 acres 0.02 km from pin matches the 1063-acre unit
+US-7190,A,NO,packet: Oakland Ozark Isle park 914 acres 9.8 km from pin,different place
+US-7190,B,BIGGER,packet: AGFC lake record 50304 acres covers the whole lake,lake-wide record
+US-7190,C,BIGGER,packet: USACE Bull Shoals project record 67252 acres pin inside; website is a Recreation.gov campground,project-wide record
+US-7190,D,UNSURE,packet: state park 0.61 km from pin 1671 acres,need to know which campground the Recreation.gov page 232619 is
+US-7190,E,UNSURE,packet: Bull Shoals-White River SP 698 acres 0.56 km from pin,need to know which campground the Recreation.gov page 232619 is
+US-7914,A,BIGGER,https://georgiawildlife.com/sandhills-wma-east,official East tract is 892 acres; record is 2 records 3382 acres (East plus West)
+US-7914,B,BIGGER,https://georgiawildlife.com/sandhills-wma-east,3355 acres in 2 records covers East and West tracts; East is 892
+US-7914,C,BIGGER,https://georgiawildlife.com/sandhills-wma-east,same 3355-acre two-tract record
+US-8664,A,BIGGER,packet: BLM Spokane field office 168544 acres pin inside,field office
+US-8664,B,NO,packet: Fishtrap Lake 168 acres Ecology water body 1.5 km from pin,lake not the recreation area
+US-8664,C,NO,packet: Lincoln County Lakes 1 acre 2.7 km from pin,different place
+US-8664,D,NO,packet: Fishtrap Lake 2 acres 2.7 km from pin,different place
+US-8664,E,NO,packet: Folsom Farm Interpretive Site 37 acres 3.1 km from pin,different site
+US-9907,A,NO,packet: Fort Story Military Reservation 1.1 km from pin,different place
+US-9907,B,BIGGER,packet: Seashore SP historic district 2956 acres pin inside; trail system lies within First Landing SP,historic district
+US-9907,C,BIGGER,packet: First Landing State Park 2916 acres pin inside; the trail system is part of the park,parent park
+US-9907,D,BIGGER,packet: First Landing State Park tract layer 2716 acres pin inside,parent park
+US-9907,E,NO,packet: local parks Region 4 178 acres 14 records,different place
+US-9907,F,BIGGER,packet: First Landing SP 2916 acres,parent park
+US-9907,G,UNSURE,packet: Cape Henry Trail 4 acres 0.51 km from pin,need the NRT trail list to see if it is part of this trail system
+US-9907,H,BIGGER,packet: First Landing SP 2716 acres,parent park
+US-12830,A,YES,packet: Old Ruby SP 7 acres 0.01 km from pin,name and size match the 7-acre State Parks record
+US-12830,B,NO,packet: Scotch Creek wildlife area 25930 acres 1.5 km away,different place
+US-12830,C,YES,packet: Old Ruby State Park Heritage Site 4 acres 0.02 km from pin,same site name
+US-12830,D,BIGGER,packet: BLM field office 254416 acres,field office
+US-12830,E,YES,packet: Washington State Parks layer Old Ruby 7 acres 0.01 km from pin,same site
+US-12830,F,NO,packet: Scotch Creek WDFW 36310 acres 1.5 km away,different place
+US-10475,A,YES,packet: Pats Cabin WSA 9741 acres 0.01 km from pin; website is the Pats Cabin WSA map,same land
+US-10475,B,BIGGER,packet: Bridge Creek SRMA 60988 acres pin inside,larger recreation area
+US-10475,C,BIGGER,packet: same Bridge Creek SRMA 60988 acres,larger recreation area
+US-10475,D,BIGGER,packet: BLM Prineville field office 907261 acres,field office
+US-6744,A,NO,packet: Terra Ceia Preserve State Park is a separate state park 1.6 km from pin,different place
+US-6744,B,NO,packet: Felts Audubon Preserve 28 acres 3.7 km,different place
+US-6744,C,NO,packet: Non-Project Acquisition 624 acres 2.5 km,different place
+US-6744,D,BIGGER,packet: Tampa Bay Estuarine Ecosystem 2791 acres 3 records pin inside; Frog Creek is one unit,whole project
+US-6744,E,NO,packet: Terra Ceia Preserve State Park 1.6 km from pin,different place
+US-6744,F,NO,packet: Terra Ceia 29 records 1.6 km from pin,different place
+US-6744,G,UNSURE,packet: Terra Ceia unit of the Tampa Bay project 414 acres with pin inside,need the SWFWMD boundary to tell if it holds the Frog Creek tract
+US-6744,H,YES,packet: Tampa Bay Estuarine Ecosystem - Frog Creek 120 acres 0.05 km from pin against 128 acres on the SWFWMD page,name and size match
+US-10236,A,UNSURE,packet: Lake Sylvia lake record 15 acres 0.08 km from pin; page says 18-acre lake,need official boundary of the recreation area
+US-10236,B,BIGGER,packet: Ouachita National Forest 1430575 acres,forest
+US-10236,C,BIGGER,packet: Winona WMA 123135 acres pin inside,WMA
+US-10236,D,NO,packet: Cedar Mountain WMA 4.6 km from pin,different place
+US-5685,A,BIGGER,https://secure.in.gov/dnr/state-parks/parks-lakes/cagles-mill-lake-lieber-and-cataract-falls-sra/,Cagles Mill property is 8075 acres incl 1400-acre lake; record 7976
+US-5685,B,NO,packet: Owen-Putnam State Forest is a different designation,state forest
+US-5685,C,YES,packet: record named Cagles Mill Lake / Lieber SRA 718 acres pin inside,name includes Lieber SRA
+US-5685,D,BIGGER,https://secure.in.gov/dnr/state-parks/parks-lakes/cagles-mill-lake-lieber-and-cataract-falls-sra/,Cagles Mill property is 8075 acres; record 7976
+US-11739,A,NO,packet: Utah State Parks 162 acres 3.2 km from pin,different place
+US-11739,B,BIGGER,packet: BLM Cedar City field office 2093236 acres,field office
+US-11739,C,BIGGER,packet: Three Peaks 6633 acres pin inside; RC track is a small site within,larger area
+US-11739,D,BIGGER,packet: Three Peaks SRMA 6633 acres,larger area
+US-11739,E,NO,packet: SITLA parcel 456 acres 0.86 km from pin,different place
+US-9159,A,NO,packet: Beavertail Campground 12 acres is a single campground,different site
+US-9159,B,NO,packet: state lands 21 acres 13 km from pin,different place
+US-9159,C,NO,packet: state lands 13.1 km from pin,different place
+US-9159,D,YES,packet: BLM wild and scenic river corridor layer; Deschutes River Segment E pin inside,piece of the river corridor
+US-9159,E,NO,packet: Beavertail Campground 12 acres,different site
+US-9159,F,NO,packet: Beavertail Campground 12 acres,different site
+US-9159,G,NO,packet: ODFW wildlife area 18695 acres 0.57 km from pin,different designation
+US-9159,H,BIGGER,packet: BLM Prineville field office 744205 acres,field office
+US-3483,A,BIGGER,packet: PAD-US record Phelps County WPA 4677 acres; one WPA unit is far smaller,county-wide record
+US-3483,B,BIGGER,packet: same Phelps County WPA record 4677 acres,county-wide record
+US-7180,A,UNSURE,packet: Holland Bottoms Willow Oak Forest Preserve 638 acres 1.7 km from pin,need ANHC natural area list to confirm which land is the State Natural Area
+US-7180,B,NO,packet: Lake Pickthorne 321 acres,different place
+US-7180,C,UNSURE,packet: Holland Bottoms SCA 4905 acres pin inside,need ANHC boundary to tell if the natural area is inside the WMA
+US-7180,D,UNSURE,packet: Holland Bottoms WMA 5548 acres pin inside,need ANHC boundary
+US-7180,E,UNSURE,packet: ANHC Holland Bottoms Willow Oak Forest Preserve 641 acres 1.7 km from pin,need ANHC natural area list
+US-7180,F,NO,packet: Cabot Community Pond 5 acres 5.7 km,different place
+US-7180,G,NO,packet: Raft Creek Bottoms WMA 50.8 km from pin,different place
+US-7180,H,NO,packet: Little Rock AFB Lake 4 acres 9.3 km,different place
+US-12277,A,NO,packet: Foster Creek recreation area 5 acres 10.6 km from pin,different place
+US-12277,B,YES,https://wdfw.wa.gov/places-to-go/wildlife-areas/west-foster-creek-wildlife-area-unit,unit 1063 acres; WDFW record 1077 acres
+US-12277,C,BIGGER,https://wdfw.wa.gov/places-to-go/wildlife-areas/west-foster-creek-wildlife-area-unit,Wells wildlife area record 11075 acres holds the unit
+US-12277,D,BIGGER,https://wdfw.wa.gov/places-to-go/wildlife-areas/west-foster-creek-wildlife-area-unit,Wells-Chelan-Sagebrush Flats complex 40934 acres
+US-12277,E,YES,https://wdfw.wa.gov/places-to-go/wildlife-areas/west-foster-creek-wildlife-area-unit,labelled Wells Wildlife Area but 1061 acres 0.02 km from pin matches the 1063-acre unit
+US-12277,F,YES,https://wdfw.wa.gov/places-to-go/wildlife-areas/west-foster-creek-wildlife-area-unit,WDFW credit layer West Foster Creek 1077 acres
+US-12277,G,YES,https://wdfw.wa.gov/places-to-go/wildlife-areas/west-foster-creek-wildlife-area-unit,PAD-US West Foster Creek 1062 acres vs official 1063
+US-11970,A,NO,packet: Dagmar SCA 8.0 km from pin,different place
+US-11970,B,NO,packet: Cache River NWR 5.7 km from pin,different place
+US-11970,C,NO,packet: Dagmar WMA 8.0 km from pin,different place
+US-11970,D,UNSURE,packet: AGFC Lake Greenlee 268 acres 0.03 km from pin,need AGFC lake page to see if the recreation area is the lake property
+US-9168,A,NO,packet: Wayside Park 4 acres 6.6 km from pin,different place
+US-9168,B,UNSURE,packet: AGFC Lake Jack Nolen 202 acres 0.08 km from pin,need AGFC page to see if the recreation area is the lake property
+US-9168,C,NO,packet: Fort Chaffee WMA 64964 acres,different place
+US-9168,D,NO,packet: Greenwood City Lake 4.1 km from pin,different place
+US-11812,A,BIGGER,packet: Trap Pond State Park 517 acres pin inside; fishing lake is the pond within the park,parent park
+US-11812,B,NO,packet: James Branch Nature Preserve 0.22 km from pin,different place
+US-11812,C,BIGGER,packet: Trap Pond State Park 2499 acres 6 records,parent park
+US-11812,D,BIGGER,packet: Trap Pond State Park 1936 acres 29 records,parent park
+US-11812,E,BIGGER,packet: Trap Pond State Park 2714 acres pin inside,parent park
+US-11812,F,NO,packet: James Branch Nature Preserve,different place
+US-11812,G,NO,packet: James Branch Nature Preserve,different place
+US-7524,A,UNSURE,packet: AGFC Lake Greeson 6901 acres 0.53 km from pin,need Corps NRA boundary
+US-7524,B,NO,packet: Lake Greeson WMA is a state wildlife management area 31626 acres,different designation
+US-7524,C,UNSURE,packet: Riverside 7 acres 0.01 km from pin,need to know if these small sites are part of the Corps recreation area
+US-7524,D,UNSURE,packet: Dam Area 47 acres 0.42 km from pin,need Corps recreation area list
+US-7524,E,UNSURE,packet: Beacon Hill 1 acre 0.88 km from pin,need Corps recreation area list
+US-7139,A,NO,packet: Panola Mountain SP 4.4 km from pin,different place
+US-7139,B,NO,packet: Panola Mountain SP 4.4 km from pin,different place
+US-7139,C,YES,packet: NHA layer Arabia Mountain 40197 acres pin inside; website states about 40000 acres,same heritage area
+US-7139,D,NO,packet: Panola Mountain SP 1.1 km from pin,different place
+US-2240,A,NO,packet: Milner Lake 4354 acres,different place
+US-2240,B,BIGGER,https://www.fws.gov/refuge/minidoka/about-us,park is about 30 acres; Lake Walcott reservoir record is 8263 acres
+US-2240,C,NO,packet: Walcott Island habitat area 15 acres 5.3 km,different place
+US-2240,D,NO,packet: Idaho Department of Lands endowment record,different manager
+US-2240,E,NO,https://www.fws.gov/refuge/minidoka/about-us,refuge is managed by FWS and separate from the state park
+US-12570,A,NO,packet: Fish Lake 53.6 km from pin,different place
+US-12570,B,NO,packet: Little Pend Oreille NWR is federal land 0.77 km from pin,different place
+US-12570,C,NO,packet: Lake City Lakes 26 km from pin,different place
+US-12570,D,UNSURE,packet: Starvation Lake 24 acres water body 0.14 km from pin,need DNR recreation area boundary
+US-12570,E,NO,packet: Winslow Lake 1 acre 2 km from pin,different place
+US-12570,F,BIGGER,packet: WA DNR statewide SRMA 2562869 acres,statewide record
+US-4179,A,UNSURE,packet: Salamonie Lake 702 acres 3 records 2.0 km from pin,need Indiana DNR Mt Etna boundary
+US-4179,B,BIGGER,packet: Salamonie Lake 10768 acres pin inside,whole lake property
+US-4179,C,BIGGER,packet: Salamonie Lake 10841 acres pin inside,whole lake property
+US-4179,D,BIGGER,packet: Salamonie Lake 11470 acres pin inside,whole lake property
+US-4179,E,NO,packet: Lost Bridge East SRA is a different recreation area 2.0 km from pin,different place
+US-6889,A,UNSURE,packet: Buxton Woods Coastal Reserve 1008 acres vs game land 975 acres pin inside,need the NC Wildlife game land map to see if the land is the same
+US-6889,B,NO,packet: Cape Hatteras National Seashore 1.5 km from pin,different place
+US-6889,C,NO,packet: Mountains-to-Sea Trail 190 acres,different place
+US-6889,D,NO,packet: Cape Hatteras National Seashore 1.4 km from pin,different place
+US-6077,A,NO,packet: Red Cliffs Recreation Area 873 acre campground site inside the NCA,small site
+US-6077,B,YES,packet: BLM NCA layer Red Cliffs 60801 acres pin inside,same designation
+US-6077,C,NO,packet: Red Cliffs Recreation Area 873 acres,small site
+US-6077,D,BIGGER,packet: BLM St George field office 629088 acres,field office
+US-6077,E,NO,packet: Red Cliffs Recreation Area 873 acres,small site
+US-6077,F,YES,packet: Red Cliffs SRMA 61251 acres matches the 60801-acre NCA,same land different layer
+US-6077,G,NO,packet: Quail Creek State Park 0.5 km from pin,different place
+US-6077,H,NO,packet: Quail Creek State Park 0.55 km from pin,different place
+US-2239,A,NO,packet: Idaho Department of Lands endowment lands 2437229 acres,different manager
+US-2239,B,NO,packet: Cascade Aquarium Pond 3.1 km,different place
+US-2239,C,NO,packet: Fish Lake 44 km from pin,different place
+US-2239,D,NO,packet: BLM Four Rivers field office 1.2 km from pin,different manager
+US-2239,E,BIGGER,packet: Cascade Reservoir water record 27148 acres pin inside,reservoir
+US-2239,F,BIGGER,packet: Reclamation Cascade Reservoir 14820 acres,reservoir project
+US-2239,G,NO,packet: Fish Lake Access Site 44 km,different place
+US-2239,H,NO,packet: Boise National Forest 1.3 km from pin,different manager
+US-9164,A,UNSURE,packet: Lake Conway WMA 9774 acres 0.12 km from pin,need AGFC page for the recreation area boundary
+US-9164,B,NO,packet: Bell Slough WMA different place pin inside,different place
+US-9164,C,NO,packet: Camp Robinson WMA 1.6 km,different place
+US-9164,D,NO,packet: Conway Sports Center 16.6 km,different place
+US-9164,E,NO,packet: Bell Slough 2350 acres,different place
+US-9164,F,UNSURE,packet: AGFC Lake Conway 5701 acres 0.04 km from pin,need AGFC page for the recreation area boundary
+US-7893,A,NO,packet: Phinizy Swamp WMA 9.3 km from pin,different place
+US-7893,B,YES,packet: NHA layer Augusta Canal 128 acres pin inside,same heritage area
+US-7893,C,NO,packet: Phinizy Swamp WMA 9.3 km,different place
+US-7893,D,NO,packet: Phinizy Swamp WMA 9.4 km,different place
+US-7893,E,NO,packet: Gullah Geechee corridor 139 km from pin,different area
+US-7893,F,NO,packet: South Carolina corridor is a different heritage area 7741980 acres,different area
+US-7893,G,NO,packet: Southern Campaign corridor 63.7 km,different area
+US-7439,A,BIGGER,packet: Bois D'arc SCA 5890 acres pin inside; AGFC lake is 634 acres,wildlife area holds the lake
+US-7439,B,NO,packet: First Old River Lake 7.5 km,different place
+US-7439,C,BIGGER,packet: Bois D'Arc WMA 13416 acres pin inside,wildlife area holds the lake
+US-7439,D,UNSURE,packet: AGFC Bois d Arc Lake 634 acres 0.00 km from pin,need AGFC page for the recreation area boundary
+US-7884,A,NO,packet: Kenai NWR 32.4 km,different place
+US-7884,B,NO,packet: Kenai River SRMA 54 km,different place
+US-7884,C,NO,packet: Kenai National preserve 46.9 km,different place
+US-7884,D,NO,packet: State land disposals different designation,different place
+US-7884,E,NO,packet: Chugach National Forest is a different designation,different designation
+US-7884,F,UNSURE,packet: original legislated boundary 1327681 acres pin inside,need the NPS page to see which boundary the heritage area uses
+US-7884,G,YES,packet: Forest Service layer record named Kenai Mountains-Turnagain Arm National Heritage Area 1176785 acres 0.96 km from pin,name and layer are the heritage area itself
+US-7884,H,NO,packet: municipal entitlements parcel,different place
+US-10944,A,BIGGER,packet: Rock Springs ERMA 3308154 acres,field office area
+US-10944,B,BIGGER,packet: Rock Springs ERMA 3308154 acres,field office area
+US-10944,C,BIGGER,packet: BLM Rock Springs field office 3606721 acres,field office
+US-10944,D,BIGGER,https://www.blm.gov/visit/twin-buttes-wsa,Twin Buttes is 8164 acres; record Devil's Playground-Twin Buttes is 24097 acres
+US-11322,A,BIGGER,packet: Ouachita National Forest 353453 acres,forest
+US-11322,B,NO,packet: Beech Creek Botanical Area 538 acres is a different designation 0.71 km from pin,different designation
+US-11322,C,YES,packet: Forest Service layer Beech Creek National Scenic Area 8042 acres pin inside,same area
+US-11322,D,NO,packet: Ouachita WMA is a state wildlife area 206643 acres,different designation
+US-11322,E,NO,packet: Indian Nations scenic area 17 km,different place
+US-11322,F,NO,packet: Ouachita WMA 223822 acres,different designation
+US-3852,A,NO,packet: Mountains-to-Sea Trail 190 acres,different place
+US-3852,B,YES,https://www.deq.nc.gov/about/divisions/coastal-management/nc-coastal-reserve/reserve-sites/buxton-woods-reserve,site says 1007-acre Buxton Woods reserve; record 1008 acres pin inside
+US-3852,C,NO,packet: Cape Hatteras National Seashore 0.45 km,different place
+US-3852,D,NO,packet: Cape Hatteras National Seashore 0.47 km,different place
+US-10930,A,BIGGER,packet: Rock Springs ERMA 3308154 acres,field office area
+US-10930,B,BIGGER,packet: Rock Springs ERMA 3308154 acres,field office area
+US-10930,C,BIGGER,packet: Devil's Playground-Twin Buttes WSA 24097 acres combines two WSAs,combined area
+US-10930,D,BIGGER,packet: BLM Rock Springs field office 3606721 acres,field office
+US-10890,A,NO,packet: Sinks Canyon State Park is state land not BLM,different manager
+US-10890,B,UNSURE,packet: Lander Slope ACEC 90469 acres 0.04 km from pin,need BLM Sinks Canyon RMA boundary
+US-10890,C,NO,packet: Wyoming Game and Fish record,different manager
+US-10890,D,NO,packet: Wyoming State Parks record,different manager
+US-10890,E,NO,packet: Shoshone National Forest is a different manager,different manager
+US-10890,F,NO,packet: Wyoming State Parks record,different manager
+US-10890,G,BIGGER,packet: BLM Lander field office 2388958 acres,field office
+US-13376,A,NO,packet: Winchester Reservoir 26 km from pin,different place
+US-13376,B,NO,packet: Blythe 8 acres,different place
+US-13376,C,BIGGER,packet: Columbia Basin WDFW 169605 acres,wildlife area
+US-13376,D,YES,packet: Potholes Reservoir water body 15222 acres 0.06 km from pin; the park is the reservoir,same water
+US-13376,E,BIGGER,packet: Desert SCA 62338 acres,wildlife area
+US-13376,F,NO,packet: Potholes State Park 771 acres is a different piece of land on the shore,different designation
+US-13376,G,NO,packet: Winchester Reservoir 26 km,different place
+US-13376,H,NO,packet: Potholes State Park,different designation
+US-13376,I,NO,packet: Scooteney Reservoir 35.5 km,different place
+US-13376,J,NO,packet: Winchester Reservoir 26 km,different place
+US-13376,K,UNSURE,packet: Reclamation Potholes Reservoir 19094 acres pin inside vs 15222-acre water body,need to know whether it is water only or includes shore land
+US-11213,A,UNSURE,packet: AGFC Bragg Lake 266 acres 0.02 km from pin,need AGFC page for the area boundary
+US-11213,B,NO,packet: Poison Springs Battleground State Park 3.3 km,different place
+US-11213,C,NO,packet: Poison Springs WMA 1.0 km from pin,different place
+US-11213,D,NO,packet: Poison Spring State Forest 1.1 km from pin,different place
+US-5483,A,UNSURE,packet: Lincoln Woods SP PAD-US 7 acres 0.42 km from pin,tiny piece; need park map
+US-5483,B,YES,packet: Rhode Island DEM record Lincoln Woods State Park 622 acres pin inside; website is the Lincoln Woods park page,same park
+US-5483,C,YES,packet: RI DEM Lincoln Woods State Park 622 acres pin inside,same park
+US-5483,D,NO,packet: Waskan 4 acres 0.39 km,different place
+US-5483,E,NO,packet: Waskan 4 acres,different place
+US-5483,F,NO,packet: Waskan 4 acres,different place
+US-5483,G,YES,packet: RI DEM Lincoln Woods State Park 622 acres pin inside,same park
+US-5483,H,UNSURE,packet: Lincoln Woods PAD-US 25 acres 0.35 km from pin,tiny piece; need park map
+US-2250,A,UNSURE,packet: IDFG Winchester Lake 103 acres pin inside,lake water only; need state park boundary
+US-9795,A,BIGGER,https://georgiawildlife.com/sandhills-wma-east,both Sandhills tracts together 3355 acres in 2 records; West is 2498 acres
+US-9795,B,NO,packet: Chattahoochee Fall Line WMA 3.8 km from pin,different place
+US-9795,C,UNSURE,packet: parcel 133-001 735 acres pin inside,need to know what it is
+US-9795,D,NO,packet: Chattahoochee Fall Line Almo 3.8 km from pin,different place
+US-9795,E,BIGGER,packet: Fall Line Sandhills 3382 acres 2 records vs West 2498 acres,East plus West
+US-9795,F,BIGGER,packet: Sandhills WMA 3355 acres 2 records vs West 2498 acres,East plus West
+US-6011,A,BIGGER,packet: Deep Creek 11590 acres pin inside vs wilderness 4257,larger recreation area
+US-6011,B,BIGGER,packet: Deep Creek 11590 acres,larger recreation area
+US-6011,C,YES,packet: BLM wilderness layer Deep Creek North 4257 acres pin inside; name matches,same wilderness
+US-6011,D,NO,packet: SITLA 40 acres 3.4 km,different place
+US-6011,E,BIGGER,packet: St George field office 629088 acres,field office
+US-6011,F,NO,packet: Deep Creek wilderness 4.3 km from pin is a different wilderness,different place
+US-6011,G,NO,packet: Kanab field office record 2.8 km from pin,different office
+US-7348,A,YES,packet: AGFC WMA Longview Saline Natural Area WMA 6045 acres 0.09 km from pin,name matches
+US-7348,B,NO,packet: Casey Jones WMA 46737 acres,different place
+US-7348,C,YES,packet: ANHC Longview Saline Natural Area 6033 acres same land as the WMA,same land different layer
+US-4393,A,NO,packet: herd management area is a different designation,different designation
+US-4393,B,YES,https://www.blm.gov/programs/national-conservation-lands/nevada/gold-butte,site says nearly 300000 acres; record 294913 acres pin inside
+US-4393,C,BIGGER,packet: Las Vegas field office 2378020 acres,field office
+US-4393,D,NO,packet: Gold Butte Townsite ACEC 159 acres,different designation
+US-4393,E,BIGGER,packet: Southern Nevada 2494377 acres,larger area
+US-4393,F,NO,packet: Gold Butte ACEC part B 122694 acres,different designation
+US-4393,G,YES,packet: BLM NCA layer Gold Butte 294916 acres matches the monument 294913,same land different layer
+US-4393,H,NO,packet: ACEC part B,different designation
+US-4393,I,NO,packet: herd management area 178990 acres,different designation
+US-4393,J,BIGGER,packet: Southern Nevada 2494377 acres,larger area
+US-9167,A,NO,packet: Poteau Mountain Lake 8.4 km,different place
+US-9167,B,YES,packet: AGFC Lake Hinkle 977 acres pin inside; site says 960-acre lake,lake property matches
+US-9167,C,NO,packet: Upper Jones Creek Lake 4.6 km,different place
+US-9167,D,NO,packet: Ouachita National Forest different manager,different place
+US-9167,E,NO,packet: cage project 1 acre,different place
+US-7163,A,BIGGER,packet: Cut-off Creek SCA 8318 acres 0.19 km from pin vs natural area 393 acres,wildlife area
+US-7163,B,NO,packet: Little Bayou WMA 5.3 km,different place
+US-7163,C,NO,packet: Casey Jones WMA 46737 acres,different place
+US-7163,D,BIGGER,packet: Cut-Off Creek WMA 8743 acres pin inside vs natural area 393 acres,wildlife area
+US-7163,E,YES,packet: ANHC Cut-off Creek Ravines Natural Area 393 acres pin inside; website is that natural area page,same natural area
