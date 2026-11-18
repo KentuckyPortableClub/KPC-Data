@@ -5,14 +5,14 @@
    "verdict": "FAIL",
    "bar": "Rule G: SURE only when pin inside (or <= 150 m with a name match, R-G12), names equal once kind words are stripped, kinds match, not line vs polygon, not a container, size within 1.5x or unknown; LIKELY goes to chat 11; UNLIKELY is evidence only, never a question. Whole key file: chat 11 samples 30 joins, needs 30/30. Finder: >= 95% of past YES re-found, >= 25% more parks, >= 85% YES in a sample of 40; every open park has a why-not.",
    "measured": {
-    "rows": 13758,
+    "rows": 13815,
     "parks": 4447,
     "parks_with_hit": 598,
     "SURE": 498,
-    "LIKELY": 812,
-    "UNLIKELY_evidence": 5001,
+    "LIKELY": 814,
+    "UNLIKELY_evidence": 5015,
     "strong": 282,
-    "already_approved": 660,
+    "already_approved": 661,
     "open_without_whynot": 456,
     "non_official_candidates": 1,
     "unlikely_as_questions": 0,
@@ -27,7 +27,7 @@
    "top_miss_reasons": [
     {
      "reason": "blocked: source could not be read",
-     "parks": 2657
+     "parks": 2689
     },
     {
      "reason": "not found: no-layer: no official record at the pin or by name",
@@ -35,11 +35,11 @@
     },
     {
      "reason": "evidence: UNLIKELY only : name: none word in common",
-     "parks": 2108
+     "parks": 2114
     },
     {
      "reason": "evidence: UNLIKELY only : pin not inside nor within m with a name match",
-     "parks": 1034
+     "parks": 1036
     },
     {
      "reason": "evidence: UNLIKELY only : surface-manager layer: never matched against parks",
@@ -108,19 +108,19 @@
     "the finder bars need the side-by-side run (95% re-found, +25% parks) and a 40-row sample (85% YES)"
    ],
    "details": {
-    "rows": 13758,
-    "found_or_candidate": 1284,
-    "blocked": 3783,
+    "rows": 13815,
+    "found_or_candidate": 1286,
+    "blocked": 3823,
     "hit_rate": 0.093,
     "bands": {
      "STRONG": 282,
-     "WEAK": 981,
+     "WEAK": 983,
      "CONFLICT": 21
     },
     "tiers": {
      "T-1": 88,
-     "T-2": 435,
-     "T-3": 601,
+     "T-2": 436,
+     "T-3": 602,
      "T-4": 74,
      "T-6": 86
     },
@@ -296,11 +296,11 @@
   "outline": {
    "pass1": {
     "error": 430,
-    "already approved": 660,
+    "already approved": 661,
     "found": 295,
-    "candidate": 1096,
-    "evidence": 4917,
-    "blocked": 3783,
+    "candidate": 1099,
+    "evidence": 4930,
+    "blocked": 3823,
     "not found": 2571,
     "pin only": 6
    },
