@@ -10,9 +10,9 @@
     "taken_down": 2,
     "whole": 1
    },
-   "failed": 2,
+   "failed": 6,
    "items": 73,
-   "read": "2026-11-18T15:42Z",
+   "read": "2026-11-18T21:44Z",
    "sources": 73,
    "status": "done"
   }
@@ -43,26 +43,33 @@
    }
   ],
   "manners": {
+   "dropped_queued": 3,
    "errors": 0,
-   "for_person_urls": [],
+   "for_person_urls": [
+    [
+     "https://www.fws.gov/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from www.fws.gov this run"
+    ]
+   ],
    "host_rule": 0,
    "keyed_api": 1,
-   "requests": 109,
+   "requests": 101,
    "rested": 2,
-   "robots": 0,
+   "robots": 1,
+   "robots_unreadable": 1,
    "strikes": 0
   },
   "stat": {
    "items": 0,
-   "pages": 81,
+   "pages": 76,
    "pdfs": 17,
-   "requests": 106,
-   "sentences": 363,
+   "requests": 102,
+   "sentences": 350,
    "sources_failed": 2,
    "unmatched": 118,
-   "unreadable": 208
+   "unreadable": 198
   },
-  "when": "2026-11-18T15:42Z"
+  "when": "2026-11-18T21:44Z"
  },
  "proven": "2026-10-31 (Brandon GO Oct 30 6:07 AM 'Yes': KY closures live Sat Oct 31; dry runs clean Oct 30). The 6-hour schedule runs from now; the site keeps reading the old Kentucky reader until chat 11's side-by-side PASS (CL-5).",
  "test": {
