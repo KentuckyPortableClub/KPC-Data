@@ -2,7 +2,7 @@
 
 For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in data/waiting/approved.json; the nightly run lets it out.
 
-## Held files: 85 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
+## Held files: 101 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
 
 | since | days | file | last check | why |
 |---|---|---|---|---|
@@ -15,9 +15,25 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | 2026-11-10 | 8 | data/truth/US-UT.json | HOLD | F-R2 6 OFF rows share the size 2,200,000.0 ac |
 | 2026-11-10 | 8 | data/truth/US-WA.json | HOLD | F-R2 5 OFF rows share the size 564.0 ac; F-R3 157 of 188 sized parks are OFF (over half: a reading problem?) |
 | ? | ? | data/campstate/US-AK.json | PASS |  |
+| ? | ? | data/campstate/US-AZ.json | RELEASE |  |
+| ? | ? | data/campstate/US-CO.json | RELEASE |  |
 | ? | ? | data/campstate/US-FL.json | PASS |  |
+| ? | ? | data/campstate/US-HI.json | RELEASE |  |
+| ? | ? | data/campstate/US-IA.json | RELEASE |  |
+| ? | ? | data/campstate/US-IN.json | RELEASE |  |
+| ? | ? | data/campstate/US-MN.json | RELEASE |  |
+| ? | ? | data/campstate/US-MT.json | RELEASE |  |
+| ? | ? | data/campstate/US-ND.json | PASS |  |
+| ? | ? | data/campstate/US-NH.json | RELEASE |  |
+| ? | ? | data/campstate/US-NM.json | PASS |  |
+| ? | ? | data/campstate/US-NV.json | PASS |  |
+| ? | ? | data/campstate/US-OH.json | RELEASE |  |
+| ? | ? | data/campstate/US-OR.json | RELEASE |  |
+| ? | ? | data/campstate/US-PA.json | RELEASE |  |
+| ? | ? | data/campstate/US-SD.json | RELEASE |  |
 | ? | ? | data/campstate/US-UT.json | PASS |  |
 | ? | ? | data/campstate/US-VA.json | PASS |  |
+| ? | ? | data/campstate/US-VT.json | RELEASE |  |
 | ? | ? | data/us-key/US-AK.json | RELEASE |  |
 | ? | ? | data/us-key/US-AL.json | PASS |  |
 | ? | ? | data/us-key/US-AZ.json | PASS |  |

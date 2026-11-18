@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-18T19:01Z",
+ "checked": "2026-11-18T19:26Z",
  "switched_on": false,
  "results": [
   {
@@ -9,7 +9,7 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "a29262be819449d7",
-   "net": false
+   "net": true
   },
   {
    "path": "data/campstate/US-AZ.json",
@@ -18,7 +18,7 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "ddeca96c2e109bd9",
-   "net": false
+   "net": true
   },
   {
    "path": "data/campstate/US-CO.json",
@@ -27,7 +27,7 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "406ea190ba6a3a0c",
-   "net": false
+   "net": true
   },
   {
    "path": "data/campstate/US-FL.json",
@@ -36,7 +36,7 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "e6c9c8689c524dff",
-   "net": false
+   "net": true
   },
   {
    "path": "data/campstate/US-HI.json",
@@ -45,7 +45,7 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "289845179964c2da",
-   "net": false
+   "net": true
   },
   {
    "path": "data/campstate/US-IA.json",
@@ -54,7 +54,7 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "e1a41a771c857d34",
-   "net": false
+   "net": true
   },
   {
    "path": "data/campstate/US-IN.json",
@@ -63,7 +63,7 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "53fe91987968a747",
-   "net": false
+   "net": true
   },
   {
    "path": "data/campstate/US-MN.json",
@@ -72,7 +72,7 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "211aa4b569d8fe09",
-   "net": false
+   "net": true
   },
   {
    "path": "data/campstate/US-MT.json",
@@ -81,7 +81,7 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "7034be1f9b82fae3",
-   "net": false
+   "net": true
   },
   {
    "path": "data/campstate/US-ND.json",
@@ -90,7 +90,7 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "3f593f1599729de5",
-   "net": false
+   "net": true
   },
   {
    "path": "data/campstate/US-NH.json",
@@ -99,7 +99,7 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "2c627ad5cfda6979",
-   "net": false
+   "net": true
   },
   {
    "path": "data/campstate/US-NM.json",
@@ -108,7 +108,7 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "e2895b71aec5eef5",
-   "net": false
+   "net": true
   },
   {
    "path": "data/campstate/US-NV.json",
@@ -117,7 +117,7 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "0e6c84d8aaf1e9f0",
-   "net": false
+   "net": true
   },
   {
    "path": "data/campstate/US-OH.json",
@@ -126,7 +126,7 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "97dfd77c77c8dc0a",
-   "net": false
+   "net": true
   },
   {
    "path": "data/campstate/US-OR.json",
@@ -135,7 +135,7 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "67ea92912dd2d126",
-   "net": false
+   "net": true
   },
   {
    "path": "data/campstate/US-PA.json",
@@ -144,7 +144,7 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "7cee2bd51cd34ddf",
-   "net": false
+   "net": true
   },
   {
    "path": "data/campstate/US-SD.json",
@@ -153,7 +153,7 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "5d3623eaaa74bd8e",
-   "net": false
+   "net": true
   },
   {
    "path": "data/campstate/US-UT.json",
@@ -162,7 +162,7 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "fabb7f0e4cc06461",
-   "net": false
+   "net": true
   },
   {
    "path": "data/campstate/US-VA.json",
@@ -171,7 +171,7 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "1d3bd9db974cf484",
-   "net": false
+   "net": true
   },
   {
    "path": "data/campstate/US-VT.json",
@@ -180,7 +180,7 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "5f4489b490e2ef6e",
-   "net": false
+   "net": true
   },
   {
    "path": "data/trails/US-13626.json",
@@ -329,10 +329,12 @@
    "path": "data/us-key/US-AL.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 3 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS",
    "fp": "068dd0c327104214",
-   "net": false
+   "net": true
   },
   {
    "path": "data/us-key/US-AZ.json",
@@ -341,34 +343,40 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "dd5e6c3a769ae9af",
-   "net": false
+   "net": true
   },
   {
    "path": "data/us-key/US-CA.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 18 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS",
    "fp": "5ecf7c61f6f95e71",
-   "net": false
+   "net": true
   },
   {
    "path": "data/us-key/US-CO.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 24 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS",
    "fp": "e78b5d483846c7e3",
-   "net": false
+   "net": true
   },
   {
    "path": "data/us-key/US-CT.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 5 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS",
    "fp": "5c5fb68239174d40",
-   "net": false
+   "net": true
   },
   {
    "path": "data/us-key/US-DC.json",
@@ -399,7 +407,7 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "59af0b9a2925c846",
-   "net": false
+   "net": true
   },
   {
    "path": "data/us-key/US-IA.json",
@@ -427,10 +435,12 @@
    "path": "data/us-key/US-IL.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 5 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS",
    "fp": "ed8f1337629052e1",
-   "net": false
+   "net": true
   },
   {
    "path": "data/us-key/US-IN.json",
@@ -447,10 +457,12 @@
    "path": "data/us-key/US-KS.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 13 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS",
    "fp": "ef7f388214cfea33",
-   "net": false
+   "net": true
   },
   {
    "path": "data/us-key/US-LA.json",
@@ -465,64 +477,78 @@
    "path": "data/us-key/US-MA.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 60 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS",
    "fp": "1ca6262d2327eb0b",
-   "net": false
+   "net": true
   },
   {
    "path": "data/us-key/US-MD.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 13 changed outlines read from PAD-US, 1 far from the park pin"
+   ],
    "verdict": "PASS",
    "fp": "e597249bf710889e",
-   "net": false
+   "net": true
   },
   {
    "path": "data/us-key/US-ME.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 15 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS",
    "fp": "fb090db73dacdd84",
-   "net": false
+   "net": true
   },
   {
    "path": "data/us-key/US-MI.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 7 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS",
    "fp": "371a801671e5a3d2",
-   "net": false
+   "net": true
   },
   {
    "path": "data/us-key/US-MN.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 11 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS",
    "fp": "28c84cf3e3a9bb1d",
-   "net": false
+   "net": true
   },
   {
    "path": "data/us-key/US-MO.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 60 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS",
    "fp": "eb229022f29c669b",
-   "net": false
+   "net": true
   },
   {
    "path": "data/us-key/US-MS.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 2 changed outlines read from PAD-US, 1 far from the park pin"
+   ],
    "verdict": "PASS",
    "fp": "d799a6ecd3e1422c",
-   "net": false
+   "net": true
   },
   {
    "path": "data/us-key/US-NC.json",
@@ -537,28 +563,34 @@
    "path": "data/us-key/US-ND.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 1 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS",
    "fp": "4fb34204d334315f",
-   "net": false
+   "net": true
   },
   {
    "path": "data/us-key/US-NE.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 19 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS",
    "fp": "818ae8fcfaeacf33",
-   "net": false
+   "net": true
   },
   {
    "path": "data/us-key/US-NH.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 10 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS",
    "fp": "675e56e44c479693",
-   "net": false
+   "net": true
   },
   {
    "path": "data/us-key/US-NJ.json",
@@ -576,7 +608,7 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "61d8a5708aa44d83",
-   "net": false
+   "net": true
   },
   {
    "path": "data/us-key/US-NV.json",
@@ -593,19 +625,23 @@
    "path": "data/us-key/US-NY.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 2 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS",
    "fp": "6297c4ac25c6fd45",
-   "net": false
+   "net": true
   },
   {
    "path": "data/us-key/US-OH.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 29 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS",
    "fp": "25c41124b20c941b",
-   "net": false
+   "net": true
   },
   {
    "path": "data/us-key/US-OK.json",
@@ -625,43 +661,51 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "7a6029cb8f1401e8",
-   "net": false
+   "net": true
   },
   {
    "path": "data/us-key/US-SC.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 1 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS",
    "fp": "b23b466136f5457e",
-   "net": false
+   "net": true
   },
   {
    "path": "data/us-key/US-SD.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 15 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS",
    "fp": "71e5c2ce3ec51089",
-   "net": false
+   "net": true
   },
   {
    "path": "data/us-key/US-TN.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 22 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS",
    "fp": "5bb30b9d4154a83e",
-   "net": false
+   "net": true
   },
   {
    "path": "data/us-key/US-TX.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 41 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS",
    "fp": "ae48b39fd2d9acdc",
-   "net": false
+   "net": true
   },
   {
    "path": "data/us-key/US-UT.json",
@@ -687,10 +731,12 @@
    "path": "data/us-key/US-WI.json",
    "kind": "key",
    "why": [],
-   "notes": [],
+   "notes": [
+    "F-O4 shape test: 46 changed outlines read from PAD-US, 0 far from the park pin"
+   ],
    "verdict": "PASS",
    "fp": "cdf747ded00ba169",
-   "net": false
+   "net": true
   },
   {
    "path": "data/us-key/US-WV.json",
@@ -710,7 +756,7 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "89f7872fe2eddd65",
-   "net": false
+   "net": true
   },
   {
    "path": "data/us-key/index.json",
@@ -719,7 +765,7 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "4b6c7c5c573724f4",
-   "net": false
+   "net": true
   },
   {
    "path": "data/us-key/lost-finds.json",
@@ -728,7 +774,7 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "f436d8c01c414ba5",
-   "net": false
+   "net": true
   },
   {
    "path": "data/us-key/overrides-parks-01.json",
