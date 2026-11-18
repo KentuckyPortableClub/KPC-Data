@@ -1,0 +1,74 @@
+{
+ "made": "2026-11-18",
+ "dry_run": false,
+ "list_source": "SUBSTITUTE: the public key view (KPC-Links why-not.json), not the keeper's own list",
+ "areas": [
+  "US-HI",
+  "US-MO"
+ ],
+ "parks_asked": 22,
+ "parks_tried": 22,
+ "cards_made": 22,
+ "sorts": {
+  "NEEDS PERSON": 18,
+  "NO ACTION": 4
+ },
+ "chain": {
+  "official record lead (card)": 0,
+  "stored trace held": 0,
+  "stored trace not drawn": 3,
+  "already held": 0,
+  "picture map to trace": 0,
+  "parcel input to trace": 0,
+  "finder queued": 2,
+  "finder nothing": 20,
+  "finder off": 0
+ },
+ "outlines_found": 0,
+ "outlines_held": 0,
+ "held_by_method": {},
+ "private_not_saved": 0,
+ "not_held": [],
+ "requests_made": 28,
+ "served_from_stored_copy": 7,
+ "stored_files_read_for_cards": 57,
+ "requests_planned_dry_run": 0,
+ "refused": {
+  "disallowed path": 2,
+  "robots unreadable": 4,
+  "other": 3
+ },
+ "pota_requests": 0,
+ "finder": {
+  "parks": 22,
+  "queued": 2,
+  "by_step": {
+   "stored": 4,
+   "portal": 0,
+   "agency page": 1,
+   "web search": 0
+  },
+  "nothing_found": 17,
+  "requests_made": 28,
+  "served_from_stored_copy": 4,
+  "planned_dry_run": 0,
+  "pota_requests": 0,
+  "refused": {
+   "blocked host": 0,
+   "disallowed path": 2,
+   "429 / host parked": 0,
+   "robots unreadable": 4,
+   "host caps": 0,
+   "park budget": 0,
+   "not the agency site": 0,
+   "other": 3
+  },
+  "for_person": [],
+  "web_search": "off (KPC_FINDER_SEARCH_URL not set)",
+  "made": "2026-11-18",
+  "dry_run": false
+ },
+ "minutes": 3.27,
+ "guard": "ok",
+ "writes": 1
+}
