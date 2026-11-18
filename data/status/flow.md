@@ -1,4 +1,4 @@
-# Flow board (2026-11-18 09:13Z, kpc_flow.py)
+# Flow board (2026-11-18 15:42Z, kpc_flow.py)
 Every pile of work, who it waits on and when it last moved. STUCK = work in it and no move for 2+ days. Fix the STUCK ones first.
 
 ## STUCK (36)
@@ -16,7 +16,7 @@ Every pile of work, who it waits on and when it last moved. STUCK = work in it a
 - STUCK 16 d · **1** · Cell coverage (FCC): found work · waits on **HQ** · OFF until fixed: the bot read the wrong FCC fields, so every park showed carriers 'None'. Timer turn · fix kpc_cell_bot.py carrier fields
 - STUCK 16 d · **1** · Map audit: not run for 16 days · waits on **chat 10** · exit 3 2026-11-02: time is up after 50.1 min: run again with --resume · chat 2 (worst rows = fixes) + chat 11 / 12 (questions)
 - STUCK 16 d · **1** · Tool trial: trace: not run for 16 days · waits on **chat 10** · exit 0 2026-11-02: done in 1376 s; 686 requests; 0 left · chat 11 grades tools-out/trace/ against the spec pass mark; open files only when red
-- STUCK 16 d · **1** · key-doctor: found work · waits on **chat 10** · NOs: 433 of 723 NOs landed; 290 missing (re-applied to overrides.fixed.json); 1282 came back in the  · chat 10 (came-back NOs / stuck areas); per-park release in release-approved
+- STUCK 16 d · **1** · key-doctor: found work · waits on **chat 10** · NOs: 433 of 723 NOs landed; 290 missing (re-applied to overrides.fixed.json); 1221 came back in the  · chat 10 (came-back NOs / stuck areas); per-park release in release-approved
 - STUCK 15 d · **132** · questions/map-audit.json waiting for an answer · waits on **chat 11** · KPC 10 map audit's worst outlines (50 per area): chat 2 fixes, chat 11 / 12 answer YES (ri…
 - STUCK 15 d · **1** · Engine crawler: not run for 15 days · waits on **chat 10** · 16 areas, 425 layers 2026-11-03 · the park-info engine uses them; chat 11 grades what it finds
 - STUCK 15 d · **1** · Key bots: errors and silence: RED (the bot is broken) · waits on **chat 10** · 3 key bot(s) with errors or gone silent: KPC-Data watchdog (Key bots); map audit (Save); waiting roo · HQ: open the watchdog run summary for the run links
