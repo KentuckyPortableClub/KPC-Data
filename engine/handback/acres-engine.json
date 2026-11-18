@@ -426,6 +426,15 @@
    "Notes": "computed from the official outline polygon (approx); layer https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0; read 2026-11-18"
   },
   {
+   "Park number (if matched)": "US-12678",
+   "Park name (as the agency writes it)": "Little Nelchina State Recreation Site",
+   "Size": 22,
+   "Unit": "acres",
+   "Agency": "Alaska State Parks (DNR) (park, state GIS table)",
+   "Source page": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2/query?where=OBJECTID%3D50&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2; read 2026-11-05"
+  },
+  {
    "Park number (if matched)": "CA-6251",
    "Park name (as the agency writes it)": "GRAND PARADE",
    "Size": 2,
@@ -973,15 +982,6 @@
    "Agency": "Washington State Department of Natural Resources (Non-DNR Major Public Lands parcels; MANAGER field gives WDFW / State Parks) (land, state GIS table)",
    "Source page": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1/query?where=OBJECTID%3D4052&outFields=%2A&f=html",
    "Notes": "computed from the official outline polygon (approx); layer https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1; read 2026-11-04"
-  },
-  {
-   "Park number (if matched)": "US-12678",
-   "Park name (as the agency writes it)": "Little Nelchina State Recreation Site",
-   "Size": 22,
-   "Unit": "acres",
-   "Agency": "Alaska State Parks (DNR) (park, state GIS table)",
-   "Source page": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2/query?where=OBJECTID%3D50&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2; read 2026-11-05"
   },
   {
    "Park number (if matched)": "US-7238",
@@ -2299,6 +2299,16 @@
    "Retry?": "NO"
   },
   {
+   "Host": "arcgis.dnr.alaska.gov",
+   "Agency/area": "Alaska State Parks (DNR) (park, state GIS table)",
+   "Kind": "GIS layer",
+   "Example URL": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2",
+   "# times used": 3,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
    "Host": "enterprise.firstmap.delaware.gov",
    "Agency/area": "Delaware Fish & Wildlife (DNREC) (wild, state GIS table)",
    "Kind": "GIS layer",
@@ -2394,16 +2404,6 @@
    "Kind": "GIS layer",
    "Example URL": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1",
    "# times used": 1,
-   "Status": "OK",
-   "Detail": "answered the engine (official outline layer)",
-   "Retry?": "NO"
-  },
-  {
-   "Host": "arcgis.dnr.alaska.gov",
-   "Agency/area": "Alaska State Parks (DNR) (park, state GIS table)",
-   "Kind": "GIS layer",
-   "Example URL": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2",
-   "# times used": 3,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
    "Retry?": "NO"
@@ -3160,6 +3160,16 @@
   },
   {
    "Host": "www.ncforestservice.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (robots)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "www5.agr.gc.ca",
    "Agency/area": null,
    "Kind": "GIS layer",
    "Example URL": null,
