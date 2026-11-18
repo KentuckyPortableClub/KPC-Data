@@ -26,7 +26,7 @@ check(on['workflow_run'].get('types') == ['completed'], 'GPS packs: types comple
 check('workflow_dispatch' in on, 'GPS packs: still startable by hand')
 crons = [c['cron'] for c in on['schedule']]
 check(crons == ['29 8 * * 1'], 'GPS packs: no new cron (only the Monday safety net)')
-check([c['cron'] for c in w['on']['schedule']] == ['42 */2 * * *', '13 11 * * *'], 'waiting room: crons unchanged')
+check([c['cron'] for c in w['on']['schedule']] == ['13 11 * * *'], 'waiting room: crons unchanged')
 cond = g['jobs']['run']['if']
 check("display_title == 'KPC waiting room (nightly)'" in cond and "event == 'schedule'" in cond, 'job if: only the nightly titled scheduled run')
 check("github.event_name != 'workflow_run'" in cond, 'job if: dispatch and Monday cron are not gated')

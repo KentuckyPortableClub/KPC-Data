@@ -180,7 +180,7 @@ if O is not None:
     check('Save changed only by STRICT=1, exit 1, its comment, and the schedule default mode (check, not release-approved)',
           _save_norm(srun) == norm(oS['run'])
           and {k: v for k, v in oS.items() if k != 'run'} == {k: v for k, v in S.items() if k != 'run'})
-check('waiting room: the two crons are unchanged', [c['cron'] for c in W[True]['schedule']] == ['42 */2 * * *', '13 11 * * *'])
+check('waiting room: the two crons are unchanged', [c['cron'] for c in W[True]['schedule']] == ['13 11 * * *'])
 
 
 def save(push_ok, mode=''):

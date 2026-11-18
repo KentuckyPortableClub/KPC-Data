@@ -160,7 +160,7 @@ check('it still dispatches kpc-fers-pending.yml on ref main with force=yes, only
       and D['run'].lstrip().startswith('[ -f /tmp/kpc-key-released ] || exit 0'))
 check('Save has the id kept_green_8 and runs BEFORE the dispatch', S.get('id') == 'kept_green_8' and SI < DI)
 check('triggers unchanged: the two crons and workflow_dispatch', sorted(W[True]) == ['schedule', 'workflow_dispatch']
-      and [c['cron'] for c in W[True]['schedule']] == ['42 */2 * * *', '13 11 * * *'])
+      and [c['cron'] for c in W[True]['schedule']] == ['13 11 * * *'])
 r = subprocess.run(['git', 'show', f'{BASE}:.github/workflows/{NAME}'], cwd=ROOT, capture_output=True, text=True)
 if r.returncode == 0:
     O = yaml.safe_load(r.stdout)

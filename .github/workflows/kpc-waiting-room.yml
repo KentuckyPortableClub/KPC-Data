@@ -10,7 +10,7 @@ name: KPC waiting room (by hand; nightly release-approved)
 run-name: "KPC waiting room (${{ github.event.schedule == '13 11 * * *' && 'nightly' || (github.event_name == 'schedule' && 'every 2 h') || inputs.mode || 'by hand' }})"
 on:
   schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
-    - cron: '42 */2 * * *'   # PR3 (Nov 2): back to every 2 h, as Brandon asked Oct 31 (PR2 had made it every 4 h)   # Oct 31 1:15 AM (HQ, Brandon 'no rest for the bots'): release-approved every 2 hours too, so chat 11's YES goes live the same night   # G9 Nov 2: was '43 */2 * * *' (spread the start times; now 1 min earlier)
+    # (the every-2-hours cron '42 */2 * * *' removed 17 Nov 2026, owner 7:50 PM: 'once a day'; the nightly run below checks and releases)
     - cron: '13 11 * * *'   # Oct 29 11:25 PM (chat 2 BOT D, Brandon 11:18 PM 'build it!'): nightly release-approved, after the 10:41 UTC daily copy
   workflow_dispatch:
     inputs:
