@@ -1,43 +1,7 @@
 {
- "checked": "2026-11-18T06:22Z",
+ "checked": "2026-11-18T06:34Z",
  "switched_on": false,
  "results": [
-  {
-   "path": "data/campstate/US-AK.json",
-   "kind": "campstate",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "5409c73286077bff",
-   "net": false
-  },
-  {
-   "path": "data/campstate/US-FL.json",
-   "kind": "campstate",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "aa1088c3b84b90b6",
-   "net": false
-  },
-  {
-   "path": "data/campstate/US-UT.json",
-   "kind": "campstate",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "b02a8dff80b92506",
-   "net": false
-  },
-  {
-   "path": "data/campstate/US-VA.json",
-   "kind": "campstate",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "05f71056d1d8ef2d",
-   "net": false
-  },
   {
    "path": "data/trails/US-13626.json",
    "kind": "trails",
@@ -62,6 +26,15 @@
    "net": false
   },
   {
+   "path": "data/trails/index-state.json",
+   "kind": "trails",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "4ba417fa3f9247a4",
+   "net": false
+  },
+  {
    "path": "data/trails/index.json",
    "kind": "trails",
    "why": [
@@ -80,7 +53,7 @@
    ],
    "notes": [],
    "verdict": "HOLD",
-   "fp": "9b4bc4c82d2d62a5",
+   "fp": "a30bd8f3022b92f8",
    "net": false
   },
   {
@@ -173,30 +146,12 @@
    "net": false
   },
   {
-   "path": "data/us-key/US-AL.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "f7346399a26f4b5a",
-   "net": false
-  },
-  {
-   "path": "data/us-key/US-AZ.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "334024d7b5934a1f",
-   "net": false
-  },
-  {
    "path": "data/us-key/US-CA.json",
    "kind": "key",
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "96ba8032893d2997",
+   "fp": "766f5fe0526f213f",
    "net": false
   },
   {
@@ -205,7 +160,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "814d86fae9ecf12d",
+   "fp": "99e010701fa4ff51",
    "net": false
   },
   {
@@ -214,16 +169,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "fab5932e725a32c7",
-   "net": false
-  },
-  {
-   "path": "data/us-key/US-DC.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "a44a00f22e790a39",
+   "fp": "713f8c4f66b7195f",
    "net": false
   },
   {
@@ -236,21 +182,12 @@
    "net": false
   },
   {
-   "path": "data/us-key/US-HI.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "1ab14af99717f8b9",
-   "net": false
-  },
-  {
    "path": "data/us-key/US-IA.json",
    "kind": "key",
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "7b34e544f490ccc3",
+   "fp": "c05a366d42ee1306",
    "net": false
   },
   {
@@ -268,7 +205,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "693035e8819ca451",
+   "fp": "435adab9381c17f1",
    "net": false
   },
   {
@@ -286,16 +223,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "08f7bc1ce194c702",
-   "net": false
-  },
-  {
-   "path": "data/us-key/US-LA.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "fda3d62c7d30bc72",
+   "fp": "21feb6cd9a2f68f0",
    "net": false
   },
   {
@@ -304,7 +232,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "a47ebd02c3ef12fc",
+   "fp": "e1a1773735ba3ae8",
    "net": false
   },
   {
@@ -313,7 +241,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "a52ed339eaa15d68",
+   "fp": "1dba348da47ad026",
    "net": false
   },
   {
@@ -322,7 +250,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "4f417fdee726e4d8",
+   "fp": "9d4e5f0deeae035b",
    "net": false
   },
   {
@@ -331,7 +259,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "f29e4b3615306a5c",
+   "fp": "36fac518dcffefa4",
    "net": false
   },
   {
@@ -340,7 +268,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "63fa8e74b898aae3",
+   "fp": "b308efcd03409f57",
    "net": false
   },
   {
@@ -349,7 +277,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "01593be457d1e10c",
+   "fp": "0cdbd49fcdae5590",
    "net": false
   },
   {
@@ -358,7 +286,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "f0d712c0db8df905",
+   "fp": "241c552a64f3bf9b",
    "net": false
   },
   {
@@ -376,7 +304,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "533148cb9dde3454",
+   "fp": "e8bb1e8a806e9f00",
    "net": false
   },
   {
@@ -385,7 +313,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "0d496945cf480337",
+   "fp": "33690b362c91543c",
    "net": false
   },
   {
@@ -394,25 +322,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "d97b29093475ec7a",
-   "net": false
-  },
-  {
-   "path": "data/us-key/US-NJ.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "3ea0a94838d96dbc",
-   "net": false
-  },
-  {
-   "path": "data/us-key/US-NM.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "a16fff39aae02e9f",
+   "fp": "90b5a1ba3d4fc4b8",
    "net": false
   },
   {
@@ -425,21 +335,12 @@
    "net": false
   },
   {
-   "path": "data/us-key/US-NY.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "f74d29f9860192e9",
-   "net": false
-  },
-  {
    "path": "data/us-key/US-OH.json",
    "kind": "key",
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "2d9261ea54423f81",
+   "fp": "6aaeb0619da82b85",
    "net": false
   },
   {
@@ -457,16 +358,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "b76f1d3234407fa8",
-   "net": false
-  },
-  {
-   "path": "data/us-key/US-SC.json",
-   "kind": "key",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "7fa86b0c3b9e7e34",
+   "fp": "aff194b6564565ae",
    "net": false
   },
   {
@@ -475,7 +367,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "917906d5be16b721",
+   "fp": "9249dc9233e6b2fb",
    "net": false
   },
   {
@@ -484,7 +376,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "bfb596dda8735b1c",
+   "fp": "c950e0ab8c1244aa",
    "net": false
   },
   {
@@ -493,7 +385,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "7c3ff51d80c90774",
+   "fp": "78edb52e453e36b3",
    "net": false
   },
   {
@@ -520,7 +412,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "5ae5a8b76370130e",
+   "fp": "df5c2166b1264eb8",
    "net": false
   },
   {
@@ -529,7 +421,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "8984eac7f1e040af",
+   "fp": "bde55f5f977251f0",
    "net": false
   },
   {
@@ -538,7 +430,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "0d18b12e95b00cc3",
+   "fp": "bfa3a2e6014a17d6",
    "net": false
   },
   {
@@ -547,7 +439,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "43efcaa1ce2a203b",
+   "fp": "ec9e45418d4ab32f",
    "net": false
   },
   {
@@ -556,7 +448,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "ee56594648e7bb30",
+   "fp": "e5a5a0b272571c2f",
    "net": false
   },
   {
@@ -601,6 +493,123 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "90a445280ae56276",
+   "net": false
+  },
+  {
+   "path": "data/campstate/US-AK.json",
+   "kind": "campstate",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "5409c73286077bff",
+   "net": false
+  },
+  {
+   "path": "data/campstate/US-FL.json",
+   "kind": "campstate",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "aa1088c3b84b90b6",
+   "net": false
+  },
+  {
+   "path": "data/campstate/US-UT.json",
+   "kind": "campstate",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "b02a8dff80b92506",
+   "net": false
+  },
+  {
+   "path": "data/campstate/US-VA.json",
+   "kind": "campstate",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "05f71056d1d8ef2d",
+   "net": false
+  },
+  {
+   "path": "data/us-key/US-AL.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "f7346399a26f4b5a",
+   "net": false
+  },
+  {
+   "path": "data/us-key/US-AZ.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "334024d7b5934a1f",
+   "net": false
+  },
+  {
+   "path": "data/us-key/US-DC.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "a44a00f22e790a39",
+   "net": false
+  },
+  {
+   "path": "data/us-key/US-HI.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "1ab14af99717f8b9",
+   "net": false
+  },
+  {
+   "path": "data/us-key/US-LA.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "fda3d62c7d30bc72",
+   "net": false
+  },
+  {
+   "path": "data/us-key/US-NJ.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "3ea0a94838d96dbc",
+   "net": false
+  },
+  {
+   "path": "data/us-key/US-NM.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "a16fff39aae02e9f",
+   "net": false
+  },
+  {
+   "path": "data/us-key/US-NY.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "f74d29f9860192e9",
+   "net": false
+  },
+  {
+   "path": "data/us-key/US-SC.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "7fa86b0c3b9e7e34",
    "net": false
   }
  ]
