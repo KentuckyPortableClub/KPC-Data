@@ -23,27 +23,27 @@
   "CA-YT": 6,
   "CO": 5,
   "CT": 3,
-  "DC": 2,
+  "DC": 3,
   "DE": 1,
   "FL": 14,
   "GA": 6,
   "HI": 4,
   "IA": 0,
-  "ID": 32,
-  "IL": 5,
-  "IN": 6,
+  "ID": 33,
+  "IL": 6,
+  "IN": 7,
   "KS": 5,
   "LA": 2,
-  "MA": 6,
+  "MA": 7,
   "MD": 5,
   "ME": 3,
-  "MI": 13,
+  "MI": 9,
   "MN": 2,
   "MO": 3,
   "MS": 8,
   "MT": 5,
   "NC": 14,
-  "ND": 9,
+  "ND": 10,
   "NE": 2,
   "NH": 4,
   "NJ": 0,
@@ -51,15 +51,15 @@
   "NV": 28,
   "NY": 9,
   "OH": 0,
-  "OK": 3,
+  "OK": 4,
   "OR": 25,
-  "PA": 1,
+  "PA": 0,
   "RI": 2,
   "SC": 3,
   "SD": 0,
   "TN": 4,
-  "TX": 4,
-  "UT": 37,
+  "TX": 3,
+  "UT": 38,
   "VA": 4,
   "VT": 3,
   "WA": 12,
@@ -67,7 +67,7 @@
   "WV": 0,
   "WY": 18
  },
- "made": "2026-11-17",
+ "made": "2026-11-18",
  "parks": {
   "CA-0049": {
    "acts": 19,
@@ -6214,7 +6214,7 @@
    "st": "ME"
   },
   "US-0374": {
-   "acts": 0,
+   "acts": 121,
    "leads": [
     {
      "acres": 10926.0,
@@ -6238,7 +6238,7 @@
    "st": "MO"
   },
   "US-0400": {
-   "acts": 0,
+   "acts": 6,
    "leads": [
     {
      "acres": 3394.0,
@@ -6270,7 +6270,7 @@
    "st": "MT"
   },
   "US-0405": {
-   "acts": 0,
+   "acts": 12,
    "leads": [
     {
      "acres": 18814.12962741,
@@ -6284,6 +6284,30 @@
    "n": "CSKT Bison Range Protected Area",
    "site": false,
    "st": "MT"
+  },
+  "US-0437": {
+   "acts": 10,
+   "leads": [
+    {
+     "acres": 1630.0,
+     "id": "4371",
+     "km": 0.67,
+     "layer": "SULLYS HILL NATIONAL GAME PRESERVE",
+     "name": "Sullys Hill National Game Preserve",
+     "why": "shares game"
+    },
+    {
+     "acres": 1630.0,
+     "id": "5429",
+     "km": 0.67,
+     "layer": "White Horse Hill National Game Preserve",
+     "name": "White Horse Hill National Game Preserve",
+     "why": "shares game, horse, white"
+    }
+   ],
+   "n": "White Horse Hill Game Preserve",
+   "site": false,
+   "st": "ND"
   },
   "US-0655": {
    "acts": 717,
@@ -6301,29 +6325,29 @@
    "site": false,
    "st": "DC"
   },
-  "US-0750": {
-   "acts": 0,
+  "US-0795": {
+   "acts": 43,
    "leads": [
     {
-     "acres": 3414.0,
-     "id": "sgtxd11826",
+     "acres": 2.0,
+     "id": "3279",
      "km": 0.0,
-     "layer": "Texas Parks and Wildlife (public conservation lands) (land, state GIS table)",
-     "name": "Palo Alto Battlefield National Historical Park",
-     "why": "shares alto, battlefield, palo"
+     "layer": "NPS",
+     "name": "World War I Memorial",
+     "why": "shares war, world"
     },
     {
-     "acres": 1815.0,
-     "id": "3235",
-     "km": 0.63,
+     "acres": 9.0,
+     "id": "3280",
+     "km": 0.88,
      "layer": "NPS",
-     "name": "Palo Alto Battlefield National Historical Park",
-     "why": "shares alto, battlefield, palo"
+     "name": "World War II Memorial",
+     "why": "shares war, world"
     }
    ],
-   "n": "Palo Alto Battlefield National Historic Site",
+   "n": "World War I National Memorial",
    "site": false,
-   "st": "TX"
+   "st": "DC"
   },
   "US-0878": {
    "acts": 0,
@@ -6414,7 +6438,7 @@
    "st": "CA"
   },
   "US-0885": {
-   "acts": 0,
+   "acts": 30,
    "leads": [
     {
      "acres": 0.0,
@@ -6525,24 +6549,8 @@
    "site": false,
    "st": "FL"
   },
-  "US-0915": {
-   "acts": 43,
-   "leads": [
-    {
-     "acres": 2.0,
-     "id": "3354",
-     "km": 0.32,
-     "layer": "NPS",
-     "name": "César E. Chávez National Monument",
-     "why": "same kind of place (nps)"
-    }
-   ],
-   "n": "Cesar E. Chavez National Monument",
-   "site": false,
-   "st": "CA"
-  },
   "US-10025": {
-   "acts": 0,
+   "acts": 4,
    "leads": [
     {
      "acres": 9821.43531,
@@ -6582,7 +6590,7 @@
    "st": "OR"
   },
   "US-10055": {
-   "acts": 0,
+   "acts": 30,
    "leads": [
     {
      "acres": 8061.92508251,
@@ -6646,7 +6654,7 @@
    "st": "ID"
   },
   "US-10184": {
-   "acts": 0,
+   "acts": 27,
    "leads": [
     {
      "acres": 210.0,
@@ -6662,7 +6670,7 @@
    "st": "WI"
   },
   "US-10192": {
-   "acts": 0,
+   "acts": 33,
    "leads": [
     {
      "acres": 39.75338771,
@@ -6702,7 +6710,7 @@
    "st": "WI"
   },
   "US-10194": {
-   "acts": 0,
+   "acts": 26,
    "leads": [
     {
      "acres": 148.0,
@@ -6718,7 +6726,7 @@
    "st": "WI"
   },
   "US-10195": {
-   "acts": 0,
+   "acts": 29,
    "leads": [
     {
      "acres": 77.0,
@@ -6734,7 +6742,7 @@
    "st": "WI"
   },
   "US-10198": {
-   "acts": 0,
+   "acts": 43,
    "leads": [
     {
      "acres": 37.4217363,
@@ -6774,7 +6782,7 @@
    "st": "WI"
   },
   "US-10249": {
-   "acts": 0,
+   "acts": 47,
    "leads": [
     {
      "acres": 245.64559292,
@@ -6814,7 +6822,7 @@
    "st": "OR"
   },
   "US-10251": {
-   "acts": 0,
+   "acts": 25,
    "leads": [
     {
      "acres": 5158.686,
@@ -6846,7 +6854,7 @@
    "st": "OR"
   },
   "US-10263": {
-   "acts": 0,
+   "acts": 30,
    "leads": [
     {
      "acres": 9.0,
@@ -6870,7 +6878,7 @@
    "st": "NC"
   },
   "US-10275": {
-   "acts": 0,
+   "acts": 39,
    "leads": [
     {
      "acres": 275.0,
@@ -6886,7 +6894,7 @@
    "st": "TX"
   },
   "US-10276": {
-   "acts": 0,
+   "acts": 181,
    "leads": [
     {
      "acres": 295.0,
@@ -6910,7 +6918,7 @@
    "st": "TX"
   },
   "US-10388": {
-   "acts": 0,
+   "acts": 22,
    "leads": [
     {
      "acres": 9.0,
@@ -6934,7 +6942,7 @@
    "st": "NC"
   },
   "US-10389": {
-   "acts": 0,
+   "acts": 303,
    "leads": [
     {
      "acres": 6400.5,
@@ -6966,7 +6974,7 @@
    "st": "NC"
   },
   "US-10399": {
-   "acts": 0,
+   "acts": 109,
    "leads": [
     {
      "acres": 1085.85,
@@ -7086,7 +7094,7 @@
    "st": "AK"
   },
   "US-10471": {
-   "acts": 0,
+   "acts": 9,
    "leads": [
     {
      "acres": 0.0,
@@ -7102,7 +7110,7 @@
    "st": "OR"
   },
   "US-10476": {
-   "acts": 0,
+   "acts": 2,
    "leads": [
     {
      "acres": 0.0,
@@ -7142,7 +7150,7 @@
    "st": "OR"
   },
   "US-10488": {
-   "acts": 0,
+   "acts": 8,
    "leads": [
     {
      "acres": 2.50464346,
@@ -7174,7 +7182,7 @@
    "st": "OR"
   },
   "US-10511": {
-   "acts": 0,
+   "acts": 182,
    "leads": [
     {
      "acres": 1195.5513349550645,
@@ -7214,7 +7222,7 @@
    "st": "NC"
   },
   "US-10527": {
-   "acts": 0,
+   "acts": 1,
    "leads": [
     {
      "acres": 109.47408585,
@@ -7246,7 +7254,7 @@
    "st": "MT"
   },
   "US-10547": {
-   "acts": 0,
+   "acts": 115,
    "leads": [
     {
      "acres": 15.89540065,
@@ -7286,7 +7294,7 @@
    "st": "RI"
   },
   "US-10644": {
-   "acts": 0,
+   "acts": 24,
    "leads": [
     {
      "acres": 19.79562964,
@@ -7325,48 +7333,8 @@
    "site": false,
    "st": "WI"
   },
-  "US-10709": {
-   "acts": 0,
-   "leads": [
-    {
-     "acres": 4814.831,
-     "id": "fwsr35",
-     "km": 0.0,
-     "layer": "Forest Service Wild and Scenic River corridor (official boundary)",
-     "name": "Klickitat, Washington National Wild and Scenic River",
-     "why": "shares klickitat"
-    },
-    {
-     "acres": 13679.0,
-     "id": "271381",
-     "km": 0.0,
-     "layer": "Unknown",
-     "name": "Klickitat Wildlife Area Complex",
-     "why": "shares klickitat"
-    },
-    {
-     "acres": 0.0,
-     "id": "sgwab168",
-     "km": 0.01,
-     "layer": "Washington Department of Fish and Wildlife (wild, state GIS table)",
-     "name": "Klickitat",
-     "why": "shares klickitat"
-    },
-    {
-     "acres": 0.0,
-     "id": "sgwag168",
-     "km": 0.01,
-     "layer": "Washington Dept. of Fish and Wildlife (credit: WDFW) (wild, state GIS table)",
-     "name": "Klickitat",
-     "why": "shares klickitat"
-    }
-   ],
-   "n": "Klickitat National Wild and Scenic River",
-   "site": false,
-   "st": "WA"
-  },
   "US-10744": {
-   "acts": 0,
+   "acts": 3,
    "leads": [
     {
      "acres": 16863.33338316,
@@ -7382,7 +7350,7 @@
    "st": "OR"
   },
   "US-10748": {
-   "acts": 0,
+   "acts": 4,
    "leads": [
     {
      "acres": 496134.79234058,
@@ -7412,6 +7380,38 @@
    "n": "South Steens BLM Herd Management Area",
    "site": false,
    "st": "OR"
+  },
+  "US-10786": {
+   "acts": 45,
+   "leads": [
+    {
+     "acres": 5854.0,
+     "id": "70901",
+     "km": 0.0,
+     "layer": "Illinois Department of Natural Resources",
+     "name": "Siloam Springs State Park",
+     "why": "shares siloam"
+    },
+    {
+     "acres": 6033.1,
+     "id": "sgila1569",
+     "km": 0.0,
+     "layer": "Illinois Department of Natural Resources (preserve, state GIS table)",
+     "name": "Siloam Springs State Park",
+     "why": "shares siloam"
+    },
+    {
+     "acres": 10193.9610753008,
+     "id": "sgild301",
+     "km": 0.0,
+     "layer": "IDNR Properties (wild, state GIS table)",
+     "name": "Siloam Springs",
+     "why": "shares siloam"
+    }
+   ],
+   "n": "Siloam Springs Buckhorn Unit State Park",
+   "site": false,
+   "st": "IL"
   },
   "US-10787": {
    "acts": 17,
@@ -7502,7 +7502,7 @@
    "st": "WY"
   },
   "US-10844": {
-   "acts": 0,
+   "acts": 2,
    "leads": [
     {
      "acres": 322004.26580333,
@@ -7518,7 +7518,7 @@
    "st": "NV"
   },
   "US-10862": {
-   "acts": 0,
+   "acts": 5,
    "leads": [
     {
      "acres": 211694.9032282,
@@ -7542,7 +7542,7 @@
    "st": "WY"
   },
   "US-10863": {
-   "acts": 0,
+   "acts": 10,
    "leads": [
     {
      "acres": 7189.43088048,
@@ -7566,7 +7566,7 @@
    "st": "WY"
   },
   "US-10883": {
-   "acts": 0,
+   "acts": 9,
    "leads": [
     {
      "acres": 1837.0,
@@ -7686,7 +7686,7 @@
    "st": "UT"
   },
   "US-10976": {
-   "acts": 0,
+   "acts": 1,
    "leads": [
     {
      "acres": 37249.0,
@@ -7742,7 +7742,7 @@
    "st": "AZ"
   },
   "US-11090": {
-   "acts": 0,
+   "acts": 10,
    "leads": [
     {
      "acres": 0.497806384928366,
@@ -7782,7 +7782,7 @@
    "st": "UT"
   },
   "US-11095": {
-   "acts": 0,
+   "acts": 8,
    "leads": [
     {
      "acres": 0.0,
@@ -7806,7 +7806,7 @@
    "st": "UT"
   },
   "US-11113": {
-   "acts": 0,
+   "acts": 2,
    "leads": [
     {
      "acres": 0.0,
@@ -7822,7 +7822,7 @@
    "st": "UT"
   },
   "US-11117": {
-   "acts": 0,
+   "acts": 1,
    "leads": [
     {
      "acres": 0.0,
@@ -7854,7 +7854,7 @@
    "st": "AR"
   },
   "US-11179": {
-   "acts": 0,
+   "acts": 16,
    "leads": [
     {
      "acres": 8.772935820092988,
@@ -7870,7 +7870,7 @@
    "st": "UT"
   },
   "US-11186": {
-   "acts": 0,
+   "acts": 2,
    "leads": [
     {
      "acres": 2287.28329578621,
@@ -7894,7 +7894,7 @@
    "st": "UT"
   },
   "US-11193": {
-   "acts": 0,
+   "acts": 2,
    "leads": [
     {
      "acres": 6987.582112,
@@ -8302,7 +8302,7 @@
    "st": "CA"
   },
   "US-11650": {
-   "acts": 0,
+   "acts": 3,
    "leads": [
     {
      "acres": 15542.0,
@@ -8318,7 +8318,7 @@
    "st": "UT"
   },
   "US-11668": {
-   "acts": 0,
+   "acts": 2,
    "leads": [
     {
      "acres": 7066.612822,
@@ -8334,7 +8334,7 @@
    "st": "UT"
   },
   "US-11669": {
-   "acts": 0,
+   "acts": 15,
    "leads": [
     {
      "acres": 26616.854,
@@ -8350,7 +8350,7 @@
    "st": "OK"
   },
   "US-11671": {
-   "acts": 0,
+   "acts": 7,
    "leads": [
     {
      "acres": 30287.83181071,
@@ -8389,6 +8389,30 @@
    "site": true,
    "st": "OK"
   },
+  "US-11714": {
+   "acts": 5,
+   "leads": [
+    {
+     "acres": 3824.0,
+     "id": "4199",
+     "km": 0.0,
+     "layer": "OZARK PLATEAU NATIONAL WILDLIFE REFUGE",
+     "name": "Ozark Plateau National Wildlife Refuge",
+     "why": "shares ozark, plateau"
+    },
+    {
+     "acres": 4338.0,
+     "id": "5154",
+     "km": 0.0,
+     "layer": "Ozark Plateau National Wildlife Refuge",
+     "name": "Ozark Plateau National Wildlife Refuge",
+     "why": "shares ozark, plateau"
+    }
+   ],
+   "n": "Ozark Plateau National Wildlife Management Area",
+   "site": false,
+   "st": "OK"
+  },
   "US-11732": {
    "acts": 0,
    "leads": [
@@ -8406,7 +8430,7 @@
    "st": "UT"
   },
   "US-11751": {
-   "acts": 0,
+   "acts": 1,
    "leads": [
     {
      "acres": 0.0,
@@ -8470,7 +8494,7 @@
    "st": "AK"
   },
   "US-11822": {
-   "acts": 0,
+   "acts": 42,
    "leads": [
     {
      "acres": 57752.935,
@@ -8566,7 +8590,7 @@
    "st": "AK"
   },
   "US-11859": {
-   "acts": 0,
+   "acts": 17,
    "leads": [
     {
      "acres": 1095525.0,
@@ -8750,7 +8774,7 @@
    "st": "IN"
   },
   "US-12082": {
-   "acts": 0,
+   "acts": 14,
    "leads": [
     {
      "acres": 0.0,
@@ -8766,7 +8790,7 @@
    "st": "OR"
   },
   "US-12084": {
-   "acts": 0,
+   "acts": 113,
    "leads": [
     {
      "acres": 7991.0,
@@ -8918,7 +8942,7 @@
    "st": "FL"
   },
   "US-12150": {
-   "acts": 0,
+   "acts": 7,
    "leads": [
     {
      "acres": 24258.66119121,
@@ -9181,30 +9205,6 @@
    "site": true,
    "st": "ID"
   },
-  "US-12234": {
-   "acts": 0,
-   "leads": [
-    {
-     "acres": 35106.918,
-     "id": "fwsr1",
-     "km": 0.0,
-     "layer": "Forest Service Wild and Scenic River corridor (official boundary)",
-     "name": "Allegheny, Pennsylvania National Wild and Scenic River",
-     "why": "shares allegheny"
-    },
-    {
-     "acres": 514091.0,
-     "id": "3034",
-     "km": 0.43,
-     "layer": "Forest Service Region 09 Eastern",
-     "name": "Allegheny National Forest",
-     "why": "shares allegheny"
-    }
-   ],
-   "n": "Allegheny National Wild and Scenic River",
-   "site": false,
-   "st": "PA"
-  },
   "US-12289": {
    "acts": 9,
    "leads": [
@@ -9238,7 +9238,7 @@
    "st": "ID"
   },
   "US-12316": {
-   "acts": 0,
+   "acts": 6,
    "leads": [
     {
      "acres": 0.0,
@@ -9253,8 +9253,24 @@
    "site": true,
    "st": "WA"
   },
+  "US-12318": {
+   "acts": 31,
+   "leads": [
+    {
+     "acres": 69.0,
+     "id": "271347",
+     "km": 0.39,
+     "layer": "Unknown",
+     "name": "Dishman Hills Natural Resources Conservation Area",
+     "why": "shares dishman"
+    }
+   ],
+   "n": "Dishman Hills State Conservation Area",
+   "site": false,
+   "st": "WA"
+  },
   "US-12348": {
-   "acts": 0,
+   "acts": 4,
    "leads": [
     {
      "acres": 3115.96554186,
@@ -9278,7 +9294,7 @@
    "st": "OR"
   },
   "US-12371": {
-   "acts": 0,
+   "acts": 108,
    "leads": [
     {
      "acres": 262.05,
@@ -9334,7 +9350,7 @@
    "st": "MN"
   },
   "US-12403": {
-   "acts": 0,
+   "acts": 4,
    "leads": [
     {
      "acres": 41205.0,
@@ -9390,7 +9406,7 @@
    "st": "AL"
   },
   "US-12414": {
-   "acts": 0,
+   "acts": 133,
    "leads": [
     {
      "acres": 475.79,
@@ -9406,7 +9422,7 @@
    "st": "NC"
   },
   "US-12426": {
-   "acts": 0,
+   "acts": 16,
    "leads": [
     {
      "acres": 0.0,
@@ -9430,7 +9446,7 @@
    "st": "WA"
   },
   "US-12471": {
-   "acts": 0,
+   "acts": 2,
    "leads": [
     {
      "acres": 1.10388668,
@@ -9470,7 +9486,7 @@
    "st": "OR"
   },
   "US-12475": {
-   "acts": 0,
+   "acts": 1,
    "leads": [
     {
      "acres": 15.59884155,
@@ -9526,7 +9542,7 @@
    "st": "IL"
   },
   "US-12662": {
-   "acts": 0,
+   "acts": 31,
    "leads": [
     {
      "acres": 14357.304749300558,
@@ -9550,7 +9566,7 @@
    "st": "NC"
   },
   "US-12737": {
-   "acts": 0,
+   "acts": 14,
    "leads": [
     {
      "acres": 156.79232136,
@@ -9597,88 +9613,8 @@
    "site": false,
    "st": "MI"
   },
-  "US-12789": {
-   "acts": 13,
-   "leads": [
-    {
-     "acres": 1254.186,
-     "id": "fwsr5",
-     "km": 0.0,
-     "layer": "Forest Service Wild and Scenic River corridor (official boundary)",
-     "name": "Carp, Michigan National Wild and Scenic River",
-     "why": "shares carp"
-    }
-   ],
-   "n": "Carp National Wild and Scenic River",
-   "site": false,
-   "st": "MI"
-  },
-  "US-12790": {
-   "acts": 5,
-   "leads": [
-    {
-     "acres": 2500.877,
-     "id": "fwsr8",
-     "km": 0.0,
-     "layer": "Forest Service Wild and Scenic River corridor (official boundary)",
-     "name": "East Branch Tahquamenon, Michigan National Wild and Scenic River",
-     "why": "shares branch"
-    }
-   ],
-   "n": "East Branch of the Taquamenon National Wild and Scenic River",
-   "site": false,
-   "st": "MI"
-  },
-  "US-12792": {
-   "acts": 18,
-   "leads": [
-    {
-     "acres": 8918.737,
-     "id": "fwsr44",
-     "km": 0.0,
-     "layer": "Forest Service Wild and Scenic River corridor (official boundary)",
-     "name": "Manistee, Michigan National Wild and Scenic River",
-     "why": "shares manistee"
-    },
-    {
-     "acres": 538905.0,
-     "id": "3060",
-     "km": 0.0,
-     "layer": "Forest Service Region 09 Eastern",
-     "name": "Manistee National Forest",
-     "why": "shares manistee"
-    }
-   ],
-   "n": "Manistee National Wild and Scenic River",
-   "site": false,
-   "st": "MI"
-  },
-  "US-12798": {
-   "acts": 6,
-   "leads": [
-    {
-     "acres": 3532.369,
-     "id": "fwsr61",
-     "km": 0.0,
-     "layer": "Forest Service Wild and Scenic River corridor (official boundary)",
-     "name": "Sturgeon, Michigan (Hiawatha NF) National Wild and Scenic River",
-     "why": "shares sturgeon"
-    },
-    {
-     "acres": 899303.0,
-     "id": "3052",
-     "km": 0.0,
-     "layer": "Forest Service Region 09 Eastern",
-     "name": "Hiawatha National Forest",
-     "why": "shares hiawatha"
-    }
-   ],
-   "n": "Sturgeon (Hiawatha) National Wild and Scenic River",
-   "site": false,
-   "st": "MI"
-  },
   "US-12827": {
-   "acts": 0,
+   "acts": 4,
    "leads": [
     {
      "acres": 10.0,
@@ -9718,7 +9654,7 @@
    "st": "MT"
   },
   "US-12841": {
-   "acts": 0,
+   "acts": 2,
    "leads": [
     {
      "acres": 2.61261912,
@@ -9758,7 +9694,7 @@
    "st": "OR"
   },
   "US-12925": {
-   "acts": 0,
+   "acts": 1,
    "leads": [
     {
      "acres": 18.0,
@@ -9830,7 +9766,7 @@
    "st": "CA"
   },
   "US-12978": {
-   "acts": 0,
+   "acts": 4,
    "leads": [
     {
      "acres": 1681108.0,
@@ -9846,7 +9782,7 @@
    "st": "OR"
   },
   "US-12981": {
-   "acts": 0,
+   "acts": 6,
    "leads": [
     {
      "acres": 2.17361853,
@@ -9886,7 +9822,7 @@
    "st": "OR"
   },
   "US-12986": {
-   "acts": 0,
+   "acts": 4,
    "leads": [
     {
      "acres": 10.574343583832544,
@@ -9910,7 +9846,7 @@
    "st": "OR"
   },
   "US-12988": {
-   "acts": 0,
+   "acts": 1,
    "leads": [
     {
      "acres": 0.0,
@@ -9934,7 +9870,7 @@
    "st": "OR"
   },
   "US-12993": {
-   "acts": 0,
+   "acts": 1,
    "leads": [
     {
      "acres": 3860.36,
@@ -9950,7 +9886,7 @@
    "st": "OR"
   },
   "US-12995": {
-   "acts": 0,
+   "acts": 3,
    "leads": [
     {
      "acres": 0.0,
@@ -9966,7 +9902,7 @@
    "st": "OR"
   },
   "US-13013": {
-   "acts": 0,
+   "acts": 9,
    "leads": [
     {
      "acres": 6605.17711166,
@@ -9990,7 +9926,7 @@
    "st": "NV"
   },
   "US-13023": {
-   "acts": 0,
+   "acts": 5,
    "leads": [
     {
      "acres": 1568.0,
@@ -10022,7 +9958,7 @@
    "st": "NV"
   },
   "US-13029": {
-   "acts": 0,
+   "acts": 4,
    "leads": [
     {
      "acres": 516.0,
@@ -10110,7 +10046,7 @@
    "st": "NV"
   },
   "US-13044": {
-   "acts": 0,
+   "acts": 1,
    "leads": [
     {
      "acres": 119262.30942353,
@@ -10134,7 +10070,7 @@
    "st": "NV"
   },
   "US-13070": {
-   "acts": 0,
+   "acts": 2,
    "leads": [
     {
      "acres": 10732.0,
@@ -10174,7 +10110,7 @@
    "st": "AL"
   },
   "US-13119": {
-   "acts": 0,
+   "acts": 3,
    "leads": [
     {
      "acres": 24059.41159765,
@@ -10198,7 +10134,7 @@
    "st": "NV"
   },
   "US-13129": {
-   "acts": 0,
+   "acts": 3,
    "leads": [
     {
      "acres": 9686.61091796,
@@ -10254,7 +10190,7 @@
    "st": "MI"
   },
   "US-13186": {
-   "acts": 0,
+   "acts": 4,
    "leads": [
     {
      "acres": 1095525.0,
@@ -10270,7 +10206,7 @@
    "st": "NM"
   },
   "US-13228": {
-   "acts": 0,
+   "acts": 13,
    "leads": [
     {
      "acres": 0.0,
@@ -10350,7 +10286,7 @@
    "st": "MA"
   },
   "US-13239": {
-   "acts": 0,
+   "acts": 4,
    "leads": [
     {
      "acres": 16717.0,
@@ -10382,7 +10318,7 @@
    "st": "NV"
   },
   "US-13241": {
-   "acts": 0,
+   "acts": 6,
    "leads": [
     {
      "acres": 563038.767544,
@@ -10414,7 +10350,7 @@
    "st": "NV"
   },
   "US-13248": {
-   "acts": 0,
+   "acts": 1,
    "leads": [
     {
      "acres": 39950.0,
@@ -10446,7 +10382,7 @@
    "st": "NV"
   },
   "US-13275": {
-   "acts": 0,
+   "acts": 7,
    "leads": [
     {
      "acres": 5.74800315,
@@ -10470,7 +10406,7 @@
    "st": "NV"
   },
   "US-13287": {
-   "acts": 0,
+   "acts": 4,
    "leads": [
     {
      "acres": 1.67290764,
@@ -10494,7 +10430,7 @@
    "st": "NV"
   },
   "US-13289": {
-   "acts": 0,
+   "acts": 3,
    "leads": [
     {
      "acres": 46.58926725,
@@ -10590,7 +10526,7 @@
    "st": "ID"
   },
   "US-13301": {
-   "acts": 0,
+   "acts": 2,
    "leads": [
     {
      "acres": 2494377.07378994,
@@ -10614,7 +10550,7 @@
    "st": "NV"
   },
   "US-13319": {
-   "acts": 0,
+   "acts": 6,
    "leads": [
     {
      "acres": 15.41822271,
@@ -10630,7 +10566,7 @@
    "st": "NV"
   },
   "US-13326": {
-   "acts": 0,
+   "acts": 6,
    "leads": [
     {
      "acres": 185843.93125798,
@@ -10646,7 +10582,7 @@
    "st": "NV"
   },
   "US-13370": {
-   "acts": 0,
+   "acts": 5,
    "leads": [
     {
      "acres": 2494377.07378994,
@@ -10670,7 +10606,7 @@
    "st": "NV"
   },
   "US-13395": {
-   "acts": 0,
+   "acts": 2,
    "leads": [
     {
      "acres": 0.0,
@@ -10686,7 +10622,7 @@
    "st": "WA"
   },
   "US-13399": {
-   "acts": 0,
+   "acts": 2,
    "leads": [
     {
      "acres": 0.0,
@@ -10702,7 +10638,7 @@
    "st": "WA"
   },
   "US-13415": {
-   "acts": 0,
+   "acts": 3,
    "leads": [
     {
      "acres": 2494377.07378994,
@@ -10734,7 +10670,7 @@
    "st": "NV"
   },
   "US-13454": {
-   "acts": 0,
+   "acts": 8,
    "leads": [
     {
      "acres": 40.59374685,
@@ -10774,7 +10710,7 @@
    "st": "KS"
   },
   "US-13470": {
-   "acts": 0,
+   "acts": 3,
    "leads": [
     {
      "acres": 28889.1493536,
@@ -10846,7 +10782,7 @@
    "st": "AL"
   },
   "US-13481": {
-   "acts": 0,
+   "acts": 4,
    "leads": [
     {
      "acres": 13392.5632432,
@@ -10870,7 +10806,7 @@
    "st": "NV"
   },
   "US-13482": {
-   "acts": 0,
+   "acts": 14,
    "leads": [
     {
      "acres": 340.61440242,
@@ -10910,7 +10846,7 @@
    "st": "NV"
   },
   "US-13484": {
-   "acts": 0,
+   "acts": 10,
    "leads": [
     {
      "acres": 235.67289156,
@@ -11046,7 +10982,7 @@
    "st": "ID"
   },
   "US-13592": {
-   "acts": 0,
+   "acts": 2,
    "leads": [
     {
      "acres": 18458.903882001545,
@@ -11118,7 +11054,7 @@
    "st": "WA"
   },
   "US-2151": {
-   "acts": 0,
+   "acts": 34,
    "leads": [
     {
      "acres": 227.78092590169763,
@@ -11318,7 +11254,7 @@
    "st": "MA"
   },
   "US-2545": {
-   "acts": 0,
+   "acts": 33,
    "leads": [
     {
      "acres": 431.0,
@@ -11334,7 +11270,7 @@
    "st": "MS"
   },
   "US-2638": {
-   "acts": 0,
+   "acts": 46,
    "leads": [
     {
      "acres": 557.8145439,
@@ -11374,7 +11310,7 @@
    "st": "NV"
   },
   "US-2805": {
-   "acts": 0,
+   "acts": 68,
    "leads": [
     {
      "acres": 0.0,
@@ -11398,7 +11334,7 @@
    "st": "OK"
   },
   "US-3118": {
-   "acts": 0,
+   "acts": 18,
    "leads": [
     {
      "acres": 296.0,
@@ -11438,7 +11374,7 @@
    "st": "VT"
   },
   "US-3121": {
-   "acts": 0,
+   "acts": 30,
    "leads": [
     {
      "acres": 17.0,
@@ -11470,7 +11406,7 @@
    "st": "VT"
   },
   "US-3385": {
-   "acts": 0,
+   "acts": 68,
    "leads": [
     {
      "acres": 113207.878,
@@ -11533,6 +11469,38 @@
    "site": false,
    "st": "CA"
   },
+  "US-3581": {
+   "acts": 261,
+   "leads": [
+    {
+     "acres": 1442.0,
+     "id": "183836",
+     "km": 0.0,
+     "layer": "California Department of Parks and Recreation",
+     "name": "Torrey Pines State Reserve",
+     "why": "shares pines, torrey"
+    },
+    {
+     "acres": 1466.88630778,
+     "id": "sgcab653",
+     "km": 0.0,
+     "layer": "California State Parks (park, state GIS table)",
+     "name": "Torrey Pines SNR",
+     "why": "shares pines, torrey"
+    },
+    {
+     "acres": 67.29670511,
+     "id": "sgcab652",
+     "km": 0.59,
+     "layer": "California State Parks (park, state GIS table)",
+     "name": "Torrey Pines SB",
+     "why": "shares pines, torrey"
+    }
+   ],
+   "n": "Torrey Pines Reserve State Conservation Area",
+   "site": false,
+   "st": "CA"
+  },
   "US-3703": {
    "acts": 90,
    "leads": [
@@ -11558,7 +11526,7 @@
    "st": "AL"
   },
   "US-3851": {
-   "acts": 0,
+   "acts": 117,
    "leads": [
     {
      "acres": 263.1,
@@ -11590,7 +11558,7 @@
    "st": "NC"
   },
   "US-3854": {
-   "acts": 0,
+   "acts": 154,
    "leads": [
     {
      "acres": 9.66,
@@ -11630,7 +11598,7 @@
    "st": "NC"
   },
   "US-3857": {
-   "acts": 0,
+   "acts": 103,
    "leads": [
     {
      "acres": 711.87,
@@ -11654,7 +11622,7 @@
    "st": "NC"
   },
   "US-3950": {
-   "acts": 0,
+   "acts": 15,
    "leads": [
     {
      "acres": 652.0,
@@ -11694,7 +11662,7 @@
    "st": "TN"
   },
   "US-4011": {
-   "acts": 0,
+   "acts": 1535,
    "leads": [
     {
      "acres": 1196.0,
@@ -11710,7 +11678,7 @@
    "st": "NE"
   },
   "US-4028": {
-   "acts": 0,
+   "acts": 32,
    "leads": [
     {
      "acres": 158.0,
@@ -11724,6 +11692,38 @@
    "n": "Prairie Lake State Recreation Area",
    "site": false,
    "st": "NE"
+  },
+  "US-4092": {
+   "acts": 31,
+   "leads": [
+    {
+     "acres": 1931.0,
+     "id": "70840",
+     "km": 0.0,
+     "layer": "Illinois Department of Natural Resources",
+     "name": "Apple River Canyon State Park",
+     "why": "shares apple"
+    },
+    {
+     "acres": 2029.9,
+     "id": "sgila2162",
+     "km": 0.0,
+     "layer": "Illinois Department of Natural Resources (preserve, state GIS table)",
+     "name": "Apple River Canyon State Park",
+     "why": "shares apple"
+    },
+    {
+     "acres": 4068.2589214126083,
+     "id": "sgild368",
+     "km": 0.0,
+     "layer": "IDNR Properties (wild, state GIS table)",
+     "name": "Apple River Canyon",
+     "why": "shares apple"
+    }
+   ],
+   "n": "Salem Unit of Apple River Canyon State Park",
+   "site": false,
+   "st": "IL"
   },
   "US-4153": {
    "acts": 81,
@@ -11797,6 +11797,46 @@
    "site": false,
    "st": "IN"
   },
+  "US-4182": {
+   "acts": 165,
+   "leads": [
+    {
+     "acres": 183.0,
+     "id": "201125",
+     "km": 0.0,
+     "layer": "Indiana DNR, State Parks and Reservoirs Division",
+     "name": "Trine State Recreation Area",
+     "why": "shares trine"
+    },
+    {
+     "acres": 185.0,
+     "id": "sgina5390",
+     "km": 0.0,
+     "layer": "Indiana DNR (land, state GIS table)",
+     "name": "Trine State Recreation Area",
+     "why": "shares trine"
+    },
+    {
+     "acres": 185.0,
+     "id": "sginc5390",
+     "km": 0.0,
+     "layer": "Indiana DNR + INHD (all managed lands) (land, state GIS table)",
+     "name": "Trine State Recreation Area",
+     "why": "shares trine"
+    },
+    {
+     "acres": 939.0,
+     "id": "201110",
+     "km": 0.64,
+     "layer": "Indiana DNR, State Parks and Reservoirs Division",
+     "name": "Pokagon State Park",
+     "why": "shares pokagon"
+    }
+   ],
+   "n": "Trine at Pokagon State Recreation Area",
+   "site": false,
+   "st": "IN"
+  },
   "US-4188": {
    "acts": 79,
    "leads": [
@@ -11830,7 +11870,7 @@
    "st": "IN"
   },
   "US-4242": {
-   "acts": 0,
+   "acts": 107,
    "leads": [
     {
      "acres": 6084.0,
@@ -11846,7 +11886,7 @@
    "st": "WI"
   },
   "US-4262": {
-   "acts": 0,
+   "acts": 14,
    "leads": [
     {
      "acres": 42.61186587,
@@ -11886,7 +11926,7 @@
    "st": "WI"
   },
   "US-4342": {
-   "acts": 0,
+   "acts": 38,
    "leads": [
     {
      "acres": 34.35805542,
@@ -11958,7 +11998,7 @@
    "st": "CO"
   },
   "US-4438": {
-   "acts": 0,
+   "acts": 54,
    "leads": [
     {
      "acres": 3468.0,
@@ -12062,7 +12102,7 @@
    "st": "MI"
   },
   "US-4886": {
-   "acts": 0,
+   "acts": 11,
    "leads": [
     {
      "acres": 0.0,
@@ -12094,7 +12134,7 @@
    "st": "NH"
   },
   "US-5197": {
-   "acts": 0,
+   "acts": 4,
    "leads": [
     {
      "acres": 5263.51057797,
@@ -12118,7 +12158,7 @@
    "st": "NY"
   },
   "US-5564": {
-   "acts": 0,
+   "acts": 82,
    "leads": [
     {
      "acres": 8.0,
@@ -12158,7 +12198,7 @@
    "st": "VT"
   },
   "US-5571": {
-   "acts": 0,
+   "acts": 4,
    "leads": [
     {
      "acres": 24721.0,
@@ -12174,7 +12214,7 @@
    "st": "WA"
   },
   "US-5572": {
-   "acts": 0,
+   "acts": 31,
    "leads": [
     {
      "acres": 631799.0,
@@ -12190,7 +12230,7 @@
    "st": "WA"
   },
   "US-5573": {
-   "acts": 0,
+   "acts": 62,
    "leads": [
     {
      "acres": 0.0,
@@ -12286,7 +12326,7 @@
    "st": "IN"
   },
   "US-5715": {
-   "acts": 0,
+   "acts": 12,
    "leads": [
     {
      "acres": 452.70599365,
@@ -12310,7 +12350,7 @@
    "st": "MO"
   },
   "US-5741": {
-   "acts": 0,
+   "acts": 4,
    "leads": [
     {
      "acres": 5719.19082545,
@@ -12334,7 +12374,7 @@
    "st": "ND"
   },
   "US-5742": {
-   "acts": 0,
+   "acts": 5,
    "leads": [
     {
      "acres": 1561.26031909,
@@ -12358,7 +12398,7 @@
    "st": "ND"
   },
   "US-5743": {
-   "acts": 0,
+   "acts": 4,
    "leads": [
     {
      "acres": 14517.0,
@@ -12374,7 +12414,7 @@
    "st": "ND"
   },
   "US-5744": {
-   "acts": 0,
+   "acts": 9,
    "leads": [
     {
      "acres": 399.4125252,
@@ -12398,7 +12438,7 @@
    "st": "ND"
   },
   "US-5745": {
-   "acts": 0,
+   "acts": 50,
    "leads": [
     {
      "acres": 12.05901431,
@@ -12422,7 +12462,7 @@
    "st": "ND"
   },
   "US-5746": {
-   "acts": 0,
+   "acts": 16,
    "leads": [
     {
      "acres": 14517.0,
@@ -12454,7 +12494,7 @@
    "st": "ND"
   },
   "US-5754": {
-   "acts": 0,
+   "acts": 16,
    "leads": [
     {
      "acres": 0.9,
@@ -12494,7 +12534,7 @@
    "st": "UT"
   },
   "US-5761": {
-   "acts": 0,
+   "acts": 17,
    "leads": [
     {
      "acres": 18182.0,
@@ -12509,8 +12549,48 @@
    "site": false,
    "st": "UT"
   },
+  "US-5779": {
+   "acts": 35,
+   "leads": [
+    {
+     "acres": 12649.0,
+     "id": "264240",
+     "km": 0.0,
+     "layer": "Utah State Department of State Parks",
+     "name": "Willard Bay State Park",
+     "why": "shares willard"
+    },
+    {
+     "acres": 0.0,
+     "id": "sguta96",
+     "km": 0.0,
+     "layer": "Utah State Parks (park, state GIS table)",
+     "name": "Willard Bay",
+     "why": "shares willard"
+    },
+    {
+     "acres": 0.0,
+     "id": "sgutf47",
+     "km": 0.0,
+     "layer": "state_park_boundaries_dissolved (park, state GIS table)",
+     "name": "Willard Bay",
+     "why": "shares willard"
+    },
+    {
+     "acres": 13441.253895983546,
+     "id": "utw261",
+     "km": 0.44,
+     "layer": "Utah DWR public access properties",
+     "name": "Willard Spur WMA",
+     "why": "shares spur, willard"
+    }
+   ],
+   "n": "Willard Spur State Waterfowl Management Area",
+   "site": false,
+   "st": "UT"
+  },
   "US-5797": {
-   "acts": 0,
+   "acts": 4,
    "leads": [
     {
      "acres": 63982.23549206,
@@ -12534,7 +12614,7 @@
    "st": "UT"
   },
   "US-5814": {
-   "acts": 0,
+   "acts": 6,
    "leads": [
     {
      "acres": 0.0,
@@ -12550,7 +12630,7 @@
    "st": "UT"
   },
   "US-5819": {
-   "acts": 0,
+   "acts": 13,
    "leads": [
     {
      "acres": 299971.3506674,
@@ -12574,7 +12654,7 @@
    "st": "UT"
   },
   "US-5852": {
-   "acts": 0,
+   "acts": 3,
    "leads": [
     {
      "acres": 0.0,
@@ -12590,7 +12670,7 @@
    "st": "UT"
   },
   "US-5866": {
-   "acts": 0,
+   "acts": 14,
    "leads": [
     {
      "acres": 15152.080413,
@@ -12630,7 +12710,7 @@
    "st": "UT"
   },
   "US-5873": {
-   "acts": 0,
+   "acts": 9,
    "leads": [
     {
      "acres": 10.87608812,
@@ -12678,7 +12758,7 @@
    "st": "UT"
   },
   "US-5881": {
-   "acts": 0,
+   "acts": 5,
    "leads": [
     {
      "acres": 0.0,
@@ -12694,7 +12774,7 @@
    "st": "UT"
   },
   "US-5895": {
-   "acts": 0,
+   "acts": 9,
    "leads": [
     {
      "acres": 4.07762558,
@@ -12734,7 +12814,7 @@
    "st": "UT"
   },
   "US-5958": {
-   "acts": 0,
+   "acts": 10,
    "leads": [
     {
      "acres": 0.0,
@@ -12750,7 +12830,7 @@
    "st": "UT"
   },
   "US-5981": {
-   "acts": 0,
+   "acts": 19,
    "leads": [
     {
      "acres": 22356.82419876,
@@ -12774,7 +12854,7 @@
    "st": "UT"
   },
   "US-5992": {
-   "acts": 0,
+   "acts": 5,
    "leads": [
     {
      "acres": 2999.889,
@@ -12790,7 +12870,7 @@
    "st": "UT"
   },
   "US-5997": {
-   "acts": 0,
+   "acts": 32,
    "leads": [
     {
      "acres": 764.856244,
@@ -12806,7 +12886,7 @@
    "st": "UT"
   },
   "US-6012": {
-   "acts": 0,
+   "acts": 1,
    "leads": [
     {
      "acres": 37249.0,
@@ -12838,7 +12918,7 @@
    "st": "UT"
   },
   "US-6048": {
-   "acts": 0,
+   "acts": 2,
    "leads": [
     {
      "acres": 0.0,
@@ -12854,7 +12934,7 @@
    "st": "UT"
   },
   "US-6078": {
-   "acts": 0,
+   "acts": 19,
    "leads": [
     {
      "acres": 4286.052075,
@@ -12870,7 +12950,7 @@
    "st": "UT"
   },
   "US-6080": {
-   "acts": 0,
+   "acts": 3,
    "leads": [
     {
      "acres": 151620.063,
@@ -12886,7 +12966,7 @@
    "st": "UT"
   },
   "US-6084": {
-   "acts": 0,
+   "acts": 47,
    "leads": [
     {
      "acres": 1663.955225,
@@ -12902,7 +12982,7 @@
    "st": "UT"
   },
   "US-6119": {
-   "acts": 0,
+   "acts": 11,
    "leads": [
     {
      "acres": 1.8347500395969156,
@@ -12918,7 +12998,7 @@
    "st": "WY"
   },
   "US-6131": {
-   "acts": 0,
+   "acts": 19,
    "leads": [
     {
      "acres": 3.3,
@@ -12934,7 +13014,7 @@
    "st": "WY"
   },
   "US-6155": {
-   "acts": 0,
+   "acts": 4,
    "leads": [
     {
      "acres": 269.74697689,
@@ -12950,7 +13030,7 @@
    "st": "WY"
   },
   "US-6169": {
-   "acts": 0,
+   "acts": 18,
    "leads": [
     {
      "acres": 36089.884287024666,
@@ -12974,7 +13054,7 @@
    "st": "WY"
   },
   "US-6181": {
-   "acts": 0,
+   "acts": 8,
    "leads": [
     {
      "acres": 740356.0,
@@ -12990,7 +13070,7 @@
    "st": "WY"
   },
   "US-6184": {
-   "acts": 0,
+   "acts": 6,
    "leads": [
     {
      "acres": 1344.2068384,
@@ -13006,7 +13086,7 @@
    "st": "WY"
   },
   "US-6185": {
-   "acts": 0,
+   "acts": 4,
    "leads": [
     {
      "acres": 53773.37755489,
@@ -13022,7 +13102,7 @@
    "st": "WY"
   },
   "US-6186": {
-   "acts": 0,
+   "acts": 12,
    "leads": [
     {
      "acres": 158544.59168519,
@@ -13038,7 +13118,7 @@
    "st": "WY"
   },
   "US-6187": {
-   "acts": 0,
+   "acts": 10,
    "leads": [
     {
      "acres": 158544.59168519,
@@ -13054,7 +13134,7 @@
    "st": "WY"
   },
   "US-6190": {
-   "acts": 0,
+   "acts": 4,
    "leads": [
     {
      "acres": 823.67002397,
@@ -13078,7 +13158,7 @@
    "st": "WY"
   },
   "US-6193": {
-   "acts": 0,
+   "acts": 7,
    "leads": [
     {
      "acres": 53773.37755489,
@@ -13094,7 +13174,7 @@
    "st": "WY"
   },
   "US-6199": {
-   "acts": 0,
+   "acts": 6,
    "leads": [
     {
      "acres": 21.63968468,
@@ -13110,7 +13190,7 @@
    "st": "WY"
   },
   "US-6212": {
-   "acts": 0,
+   "acts": 8,
    "leads": [
     {
      "acres": 5682.4,
@@ -13142,7 +13222,7 @@
    "st": "WY"
   },
   "US-6232": {
-   "acts": 0,
+   "acts": 20,
    "leads": [
     {
      "acres": 0.9871526334436823,
@@ -13166,7 +13246,7 @@
    "st": "WY"
   },
   "US-6237": {
-   "acts": 0,
+   "acts": 30,
    "leads": [
     {
      "acres": 4061.0,
@@ -13182,7 +13262,7 @@
    "st": "TN"
   },
   "US-6273": {
-   "acts": 0,
+   "acts": 33,
    "leads": [
     {
      "acres": 20.0,
@@ -13342,7 +13422,7 @@
    "st": "MN"
   },
   "US-6473": {
-   "acts": 0,
+   "acts": 12,
    "leads": [
     {
      "acres": 11467.0,
@@ -13382,7 +13462,7 @@
    "st": "WA"
   },
   "US-6538": {
-   "acts": 0,
+   "acts": 209,
    "leads": [
     {
      "acres": 295.0,
@@ -13422,7 +13502,7 @@
    "st": "CT"
   },
   "US-6882": {
-   "acts": 0,
+   "acts": 85,
    "leads": [
     {
      "acres": 33671.709213321694,
@@ -13462,7 +13542,7 @@
    "st": "NC"
   },
   "US-6910": {
-   "acts": 0,
+   "acts": 28,
    "leads": [
     {
      "acres": 5089.0,
@@ -13502,7 +13582,7 @@
    "st": "NC"
   },
   "US-6963": {
-   "acts": 0,
+   "acts": 38,
    "leads": [
     {
      "acres": 170.12658479050813,
@@ -13566,7 +13646,7 @@
    "st": "IN"
   },
   "US-6980": {
-   "acts": 0,
+   "acts": 399,
    "leads": [
     {
      "acres": 4809.0,
@@ -13590,7 +13670,7 @@
    "st": "RI"
   },
   "US-7072": {
-   "acts": 0,
+   "acts": 5,
    "leads": [
     {
      "acres": 1144.77408831,
@@ -13606,7 +13686,7 @@
    "st": "MS"
   },
   "US-7098": {
-   "acts": 0,
+   "acts": 17,
    "leads": [
     {
      "acres": 36406.35880465,
@@ -13622,7 +13702,7 @@
    "st": "MS"
   },
   "US-7119": {
-   "acts": 0,
+   "acts": 39,
    "leads": [
     {
      "acres": 3396.22338243,
@@ -13654,7 +13734,7 @@
    "st": "MS"
   },
   "US-7124": {
-   "acts": 0,
+   "acts": 178,
    "leads": [
     {
      "acres": 0.0,
@@ -13694,7 +13774,7 @@
    "st": "MS"
   },
   "US-7126": {
-   "acts": 0,
+   "acts": 41,
    "leads": [
     {
      "acres": 0.0,
@@ -13734,7 +13814,7 @@
    "st": "MS"
   },
   "US-7128": {
-   "acts": 0,
+   "acts": 39,
    "leads": [
     {
      "acres": 0.0,
@@ -13750,7 +13830,7 @@
    "st": "MS"
   },
   "US-7131": {
-   "acts": 0,
+   "acts": 34,
    "leads": [
     {
      "acres": 0.0,
@@ -14174,7 +14254,7 @@
    "st": "CT"
   },
   "US-7543": {
-   "acts": 0,
+   "acts": 29,
    "leads": [
     {
      "acres": 1624.72037929,
@@ -14214,7 +14294,7 @@
    "st": "NM"
   },
   "US-7565": {
-   "acts": 0,
+   "acts": 93,
    "leads": [
     {
      "acres": 3217.015865564568,
@@ -14317,6 +14397,22 @@
    "site": false,
    "st": "MD"
   },
+  "US-7816": {
+   "acts": 32,
+   "leads": [
+    {
+     "acres": 35870.36098927,
+     "id": "sgakh1203",
+     "km": 0.0,
+     "layer": "BLM Areas of Critical Environmental Concern (national, 1,120) (land, state GIS table)",
+     "name": "Henrys Lake",
+     "why": "shares henrys"
+    }
+   ],
+   "n": "Henrys Lake Airstrip State Recreation Area",
+   "site": true,
+   "st": "ID"
+  },
   "US-7821": {
    "acts": 18,
    "leads": [
@@ -14381,48 +14477,8 @@
    "site": false,
    "st": "GA"
   },
-  "US-7917": {
-   "acts": 142,
-   "leads": [
-    {
-     "acres": 0.0,
-     "id": "sgilc6264",
-     "km": 0.05,
-     "layer": "Illinois Nature Preserves Commission / IDNR protected lands (Chicago Wilderness, Holman) (preserve, state GIS table)",
-     "name": "Pullman",
-     "why": "shares pullman"
-    },
-    {
-     "acres": 1.0,
-     "id": "159969",
-     "km": 0.08,
-     "layer": "National Park Service",
-     "name": "Pullman National Monument",
-     "why": "shares pullman"
-    },
-    {
-     "acres": 12.8,
-     "id": "sgila1508",
-     "km": 0.17,
-     "layer": "Illinois Department of Natural Resources (preserve, state GIS table)",
-     "name": "Pullman Factory State Historic Site",
-     "why": "shares pullman"
-    },
-    {
-     "acres": 0.0,
-     "id": "sgilc8673",
-     "km": 0.17,
-     "layer": "Illinois Nature Preserves Commission / IDNR protected lands (Chicago Wilderness, Holman) (preserve, state GIS table)",
-     "name": "Pullman Factory State Historic Site",
-     "why": "shares pullman"
-    }
-   ],
-   "n": "Pullman National Historical Park",
-   "site": false,
-   "st": "IL"
-  },
   "US-8014": {
-   "acts": 0,
+   "acts": 166,
    "leads": [
     {
      "acres": 0.0,
@@ -14462,7 +14518,7 @@
    "st": "NH"
   },
   "US-8015": {
-   "acts": 0,
+   "acts": 9,
    "leads": [
     {
      "acres": 1350.693,
@@ -14502,7 +14558,7 @@
    "st": "NH"
   },
   "US-8064": {
-   "acts": 0,
+   "acts": 20,
    "leads": [
     {
      "acres": 275.85885509,
@@ -14518,7 +14574,7 @@
    "st": "NY"
   },
   "US-8083": {
-   "acts": 0,
+   "acts": 146,
    "leads": [
     {
      "acres": 18548.0,
@@ -14534,7 +14590,7 @@
    "st": "NY"
   },
   "US-8084": {
-   "acts": 0,
+   "acts": 51,
    "leads": [
     {
      "acres": 18548.0,
@@ -14550,7 +14606,7 @@
    "st": "NY"
   },
   "US-8088": {
-   "acts": 0,
+   "acts": 294,
    "leads": [
     {
      "acres": 18548.0,
@@ -14566,7 +14622,7 @@
    "st": "NY"
   },
   "US-8089": {
-   "acts": 0,
+   "acts": 156,
    "leads": [
     {
      "acres": 18548.0,
@@ -14582,7 +14638,7 @@
    "st": "NY"
   },
   "US-8090": {
-   "acts": 0,
+   "acts": 34,
    "leads": [
     {
      "acres": 18548.0,
@@ -14598,7 +14654,7 @@
    "st": "NY"
   },
   "US-8103": {
-   "acts": 0,
+   "acts": 12,
    "leads": [
     {
      "acres": 1234.0,
@@ -14638,7 +14694,7 @@
    "st": "NY"
   },
   "US-8203": {
-   "acts": 0,
+   "acts": 134,
    "leads": [
     {
      "acres": 0.0,
@@ -14662,7 +14718,7 @@
    "st": "VA"
   },
   "US-8204": {
-   "acts": 0,
+   "acts": 198,
    "leads": [
     {
      "acres": 0.0,
@@ -14789,6 +14845,46 @@
    "site": false,
    "st": "MA"
   },
+  "US-8393": {
+   "acts": 152,
+   "leads": [
+    {
+     "acres": 24.51202851,
+     "id": "sgmaa686267",
+     "km": 0.06,
+     "layer": "MassGIS / Executive Office of Energy and Environmental Affai (land, state GIS table)",
+     "name": "Stodder's Neck",
+     "why": "shares neck, stodders"
+    },
+    {
+     "acres": 24.51202851,
+     "id": "sgmad1352754",
+     "km": 0.06,
+     "layer": "MassGIS / Massachusetts EEA (Protected and Recreational OpenSpace) (land, state GIS table)",
+     "name": "Stodder's Neck",
+     "why": "shares neck, stodders"
+    },
+    {
+     "acres": 0.0,
+     "id": "sgmab372",
+     "km": 0.06,
+     "layer": "Massachusetts DCR (DCRStateParks account, mass-eoeea org) (land, state GIS table)",
+     "name": "Stodder's Neck",
+     "why": "shares neck, stodders"
+    },
+    {
+     "acres": 0.45730564,
+     "id": "sgmaa686415",
+     "km": 0.29,
+     "layer": "MassGIS / Executive Office of Energy and Environmental Affai (land, state GIS table)",
+     "name": "Stodder's Neck",
+     "why": "shares neck, stodders"
+    }
+   ],
+   "n": "Stodder's Neck & Abigail Adams State Park",
+   "site": false,
+   "st": "MA"
+  },
   "US-8434": {
    "acts": 3,
    "leads": [
@@ -14814,7 +14910,7 @@
    "st": "ME"
   },
   "US-8540": {
-   "acts": 0,
+   "acts": 9,
    "leads": [
     {
      "acres": 0.0,
@@ -14830,7 +14926,7 @@
    "st": "ND"
   },
   "US-8550": {
-   "acts": 0,
+   "acts": 12,
    "leads": [
     {
      "acres": 0.0,
@@ -14846,7 +14942,7 @@
    "st": "ND"
   },
   "US-8557": {
-   "acts": 0,
+   "acts": 47,
    "leads": [
     {
      "acres": 4.0,
@@ -15102,7 +15198,7 @@
    "st": "FL"
   },
   "US-9156": {
-   "acts": 0,
+   "acts": 18,
    "leads": [
     {
      "acres": 2606.1853968,
@@ -15118,7 +15214,7 @@
    "st": "OR"
   },
   "US-9158": {
-   "acts": 0,
+   "acts": 14,
    "leads": [
     {
      "acres": 51281.55057684,
@@ -15230,7 +15326,7 @@
    "st": "AR"
   },
   "US-9227": {
-   "acts": 0,
+   "acts": 55,
    "leads": [
     {
      "acres": 0.0,
@@ -15246,7 +15342,7 @@
    "st": "SC"
   },
   "US-9229": {
-   "acts": 0,
+   "acts": 28,
    "leads": [
     {
      "acres": 0.0,
@@ -15350,7 +15446,7 @@
    "st": "CO"
   },
   "US-9759": {
-   "acts": 0,
+   "acts": 75,
    "leads": [
     {
      "acres": 165.0,
@@ -15366,7 +15462,7 @@
    "st": "SC"
   },
   "US-9897": {
-   "acts": 0,
+   "acts": 58,
    "leads": [
     {
      "acres": 1484.73,
@@ -15406,7 +15502,7 @@
    "st": "VA"
   },
   "US-9900": {
-   "acts": 0,
+   "acts": 65,
    "leads": [
     {
      "acres": 0.0,
@@ -15422,7 +15518,7 @@
    "st": "VA"
   },
   "US-9984": {
-   "acts": 0,
+   "acts": 113,
    "leads": [
     {
      "acres": 0.0,
@@ -15446,7 +15542,7 @@
    "st": "OR"
   },
   "US-9986": {
-   "acts": 0,
+   "acts": 97,
    "leads": [
     {
      "acres": 6.0,
@@ -15473,8 +15569,8 @@
  "skipped": [],
  "totals": {
   "canada": 265,
-  "name_word": 484,
-  "parks": 635,
-  "us": 371
+  "name_word": 487,
+  "parks": 637,
+  "us": 373
  }
 }
