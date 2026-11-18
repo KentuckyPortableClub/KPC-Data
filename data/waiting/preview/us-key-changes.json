@@ -1,23 +1,191 @@
 {
  "about": "us-key: the HELD build (data/waiting/in/data/us-key/) vs the LIVE key (data/us-key/). Chat 11: check the sample, then write KEY YES or KEY NO: <refs> in data/waiting/approved.json (item 'what': 'us-key', 'build': the held build id from data/waiting/in/data/us-key/index.json, 'date': 'YYYY-MM-DD' and 'time': 'h:mm AM/PM' Central; rule 22: no build field or a grade from before Nov 2 9:37 AM CST is not a release). Written by kpc_key_summary.py.",
- "made": "2026-11-17 22:18 UTC",
+ "made": "2026-11-18 03:22 UTC",
  "totals": {
-  "gained": 2,
-  "lost": 0,
-  "pieces_changed": 0,
-  "grade_changed": 0
+  "gained": 9,
+  "lost": 7,
+  "pieces_changed": 996,
+  "grade_changed": 3
  },
  "per_area": {
+  "US-CA": {
+   "gained": 0,
+   "lost": 0,
+   "pieces_changed": 1,
+   "grade_changed": 0
+  },
+  "US-CO": {
+   "gained": 0,
+   "lost": 0,
+   "pieces_changed": 41,
+   "grade_changed": 0
+  },
+  "US-CT": {
+   "gained": 0,
+   "lost": 0,
+   "pieces_changed": 2,
+   "grade_changed": 0
+  },
   "US-FL": {
+   "gained": 1,
+   "lost": 0,
+   "pieces_changed": 59,
+   "grade_changed": 0
+  },
+  "US-IA": {
+   "gained": 0,
+   "lost": 0,
+   "pieces_changed": 1,
+   "grade_changed": 0
+  },
+  "US-ID": {
+   "gained": 0,
+   "lost": 1,
+   "pieces_changed": 1,
+   "grade_changed": 0
+  },
+  "US-IL": {
+   "gained": 0,
+   "lost": 0,
+   "pieces_changed": 4,
+   "grade_changed": 0
+  },
+  "US-IN": {
+   "gained": 1,
+   "lost": 1,
+   "pieces_changed": 24,
+   "grade_changed": 0
+  },
+  "US-KS": {
+   "gained": 0,
+   "lost": 0,
+   "pieces_changed": 7,
+   "grade_changed": 0
+  },
+  "US-MA": {
+   "gained": 0,
+   "lost": 1,
+   "pieces_changed": 372,
+   "grade_changed": 0
+  },
+  "US-MD": {
+   "gained": 0,
+   "lost": 0,
+   "pieces_changed": 16,
+   "grade_changed": 0
+  },
+  "US-ME": {
+   "gained": 0,
+   "lost": 0,
+   "pieces_changed": 5,
+   "grade_changed": 0
+  },
+  "US-MI": {
+   "gained": 4,
+   "lost": 0,
+   "pieces_changed": 14,
+   "grade_changed": 2
+  },
+  "US-MN": {
+   "gained": 0,
+   "lost": 0,
+   "pieces_changed": 4,
+   "grade_changed": 0
+  },
+  "US-MO": {
+   "gained": 0,
+   "lost": 0,
+   "pieces_changed": 247,
+   "grade_changed": 0
+  },
+  "US-MS": {
+   "gained": 0,
+   "lost": 0,
+   "pieces_changed": 1,
+   "grade_changed": 0
+  },
+  "US-ND": {
+   "gained": 0,
+   "lost": 1,
+   "pieces_changed": 1,
+   "grade_changed": 0
+  },
+  "US-NE": {
+   "gained": 0,
+   "lost": 0,
+   "pieces_changed": 11,
+   "grade_changed": 0
+  },
+  "US-NH": {
+   "gained": 0,
+   "lost": 0,
+   "pieces_changed": 1,
+   "grade_changed": 0
+  },
+  "US-NV": {
+   "gained": 0,
+   "lost": 0,
+   "pieces_changed": 2,
+   "grade_changed": 1
+  },
+  "US-OH": {
+   "gained": 0,
+   "lost": 0,
+   "pieces_changed": 44,
+   "grade_changed": 0
+  },
+  "US-OK": {
+   "gained": 0,
+   "lost": 1,
+   "pieces_changed": 7,
+   "grade_changed": 0
+  },
+  "US-PA": {
    "gained": 1,
    "lost": 0,
    "pieces_changed": 0,
    "grade_changed": 0
   },
-  "US-IN": {
+  "US-SD": {
+   "gained": 0,
+   "lost": 0,
+   "pieces_changed": 14,
+   "grade_changed": 0
+  },
+  "US-TN": {
    "gained": 1,
    "lost": 0,
-   "pieces_changed": 0,
+   "pieces_changed": 28,
+   "grade_changed": 0
+  },
+  "US-TX": {
+   "gained": 0,
+   "lost": 0,
+   "pieces_changed": 9,
+   "grade_changed": 0
+  },
+  "US-UT": {
+   "gained": 0,
+   "lost": 1,
+   "pieces_changed": 1,
+   "grade_changed": 0
+  },
+  "US-WA": {
+   "gained": 1,
+   "lost": 1,
+   "pieces_changed": 3,
+   "grade_changed": 0
+  },
+  "US-WI": {
+   "gained": 0,
+   "lost": 0,
+   "pieces_changed": 73,
+   "grade_changed": 0
+  },
+  "US-WV": {
+   "gained": 0,
+   "lost": 0,
+   "pieces_changed": 3,
    "grade_changed": 0
   }
  },
@@ -59,11 +227,654 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-10180"
+  },
+  {
+   "area": "US-MI",
+   "ref": "US-12789",
+   "name": "Carp National Wild and Scenic River",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "fwsr179",
+     "Carp, Michigan National Wild and Scenic River",
+     2531,
+     "name (Forest Service river: state and forest dropped)"
+    ],
+    [
+     "fwsr94",
+     "Carp, Michigan National Wild and Scenic River",
+     2229,
+     "name (Forest Service river: state and forest dropped)"
+    ],
+    [
+     "fwsr5",
+     "Carp, Michigan National Wild and Scenic River",
+     1254,
+     "name (Forest Service river: state and forest dropped)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-12789"
+  },
+  {
+   "area": "US-MI",
+   "ref": "US-12790",
+   "name": "East Branch of the Taquamenon National Wild and Scenic River",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "fwsr8",
+     "East Branch Tahquamenon, Michigan National Wild and Scenic River",
+     2501,
+     "name (Forest Service river: state and forest dropped)"
+    ],
+    [
+     "fwsr187",
+     "East Branch Tahquamenon, Michigan National Wild and Scenic River",
+     491,
+     "name (Forest Service river: state and forest dropped)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-12790"
+  },
+  {
+   "area": "US-MI",
+   "ref": "US-12792",
+   "name": "Manistee National Wild and Scenic River",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "fwsr44",
+     "Manistee, Michigan National Wild and Scenic River",
+     8919,
+     "name (Forest Service river: state and forest dropped)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12792"
+  },
+  {
+   "area": "US-MI",
+   "ref": "US-12798",
+   "name": "Sturgeon (Hiawatha) National Wild and Scenic River",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "fwsr163",
+     "Sturgeon, Michigan (Hiawatha NF) National Wild and Scenic River",
+     4860,
+     "name (Forest Service river: state and forest dropped)"
+    ],
+    [
+     "fwsr61",
+     "Sturgeon, Michigan (Hiawatha NF) National Wild and Scenic River",
+     3532,
+     "name (Forest Service river: state and forest dropped)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12798"
+  },
+  {
+   "area": "US-PA",
+   "ref": "US-12234",
+   "name": "Allegheny National Wild and Scenic River",
+   "old_grade": "pin",
+   "new_grade": "approximate",
+   "new_pieces": [
+    [
+     "fwsr1",
+     "Allegheny, Pennsylvania National Wild and Scenic River",
+     35107,
+     "words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12234"
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-6259",
+   "name": "Ozone Falls State Natural Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "255603",
+     "Ozone Falls (Cumberland Trail)",
+     45,
+     "name (second name field)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-6259"
+  },
+  {
+   "area": "US-WA",
+   "ref": "US-10709",
+   "name": "Klickitat National Wild and Scenic River",
+   "old_grade": "pin",
+   "new_grade": "approximate",
+   "new_pieces": [
+    [
+     "fwsr35",
+     "Klickitat, Washington National Wild and Scenic River",
+     4815,
+     "words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-10709"
   }
  ],
- "lost": [],
- "grade_changed": [],
+ "lost": [
+  {
+   "area": "US-ID",
+   "ref": "US-7816",
+   "name": "Henrys Lake Airstrip State Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "199732",
+     "Henrys Lake State Park",
+     607,
+     "words"
+    ]
+   ],
+   "held_now": [
+    "held (rule G-1): a similar-name piece more than 2 km from the pin and "
+   ],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-7816"
+  },
+  {
+   "area": "US-IN",
+   "ref": "US-4182",
+   "name": "Trine at Pokagon State Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sgina4850",
+     "Pokagon State Park",
+     975,
+     "words"
+    ],
+    [
+     "sginc4850",
+     "Pokagon State Park",
+     975,
+     "words"
+    ],
+    [
+     "201110",
+     "Pokagon State Park",
+     939,
+     "words"
+    ],
+    [
+     "sgina4851",
+     "Pokagon State Park",
+     258,
+     "words"
+    ],
+    [
+     "sginc4851",
+     "Pokagon State Park",
+     258,
+     "words"
+    ]
+   ],
+   "held_now": [
+    "held (rule G-1): a similar-name piece more than 2 km from the pin and ",
+    "held (rule G-1): a similar-name piece more than 2 km from the pin and ",
+    "held (rule G-1): a similar-name piece more than 2 km from the pin and "
+   ],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4182"
+  },
+  {
+   "area": "US-MA",
+   "ref": "US-8393",
+   "name": "Stodder's Neck & Abigail Adams State Park",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "59334",
+     "Abigail Adams State Park",
+     5,
+     "words"
+    ],
+    [
+     "59335",
+     "Abigail Adams State Park",
+     5,
+     "words"
+    ],
+    [
+     "sgmaa665637",
+     "Abigail Adams State Park",
+     5,
+     "words"
+    ],
+    [
+     "sgmaa671813",
+     "Abigail Adams State Park",
+     5,
+     "words"
+    ],
+    [
+     "59336",
+     "Abigail Adams State Park",
+     1,
+     "words"
+    ],
+    [
+     "sgmaa697518",
+     "Abigail Adams State Park",
+     1,
+     "words"
+    ],
+    [
+     "sgmab1",
+     "Abigail Adams State Park",
+     0,
+     "words"
+    ]
+   ],
+   "held_now": [
+    "held (rule G-1): a similar-name piece more than 2 km from the pin and ",
+    "held (rule G-1): a similar-name piece more than 2 km from the pin and ",
+    "held (rule G-1): a similar-name piece more than 2 km from the pin and "
+   ],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-8393"
+  },
+  {
+   "area": "US-ND",
+   "ref": "US-0437",
+   "name": "White Horse Hill Game Preserve",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "5429",
+     "White Horse Hill National Game Preserve",
+     1630,
+     "words"
+    ]
+   ],
+   "held_now": [
+    "held (rule G-1): a similar-name piece more than 2 km from the pin and "
+   ],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-0437"
+  },
+  {
+   "area": "US-OK",
+   "ref": "US-11714",
+   "name": "Ozark Plateau National Wildlife Management Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "odw79",
+     "Ozark Plateau Wildlife Management Area",
+     2088,
+     "words"
+    ],
+    [
+     "sgokc79",
+     "Ozark Plateau",
+     2088,
+     "words"
+    ],
+    [
+     "sgokb28",
+     "Ozark Plateau Wildlife Management Area",
+     0,
+     "words"
+    ],
+    [
+     "sgokb31",
+     "Ozark Plateau Wildlife Management Area",
+     0,
+     "words"
+    ],
+    [
+     "sgokb32",
+     "Ozark Plateau Wildlife Management Area",
+     0,
+     "words"
+    ]
+   ],
+   "held_now": [
+    "held (rule G-1): a similar-name piece more than 2 km from the pin and ",
+    "held (rule G-1): a similar-name piece more than 2 km from the pin and ",
+    "held (rule G-1): a similar-name piece more than 2 km from the pin and "
+   ],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11714"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-5779",
+   "name": "Willard Spur State Waterfowl Management Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "utw261",
+     "Willard Spur WMA",
+     13441,
+     "words"
+    ],
+    [
+     "sgutb261",
+     "Willard Spur WMA",
+     0,
+     "words"
+    ]
+   ],
+   "held_now": [
+    "held (rule G-1): a similar-name piece more than 2 km from the pin and ",
+    "held (rule G-1): a similar-name piece more than 2 km from the pin and "
+   ],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-5779"
+  },
+  {
+   "area": "US-WA",
+   "ref": "US-12318",
+   "name": "Dishman Hills State Conservation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "271347",
+     "Dishman Hills Natural Resources Conservation Area",
+     69,
+     "words"
+    ]
+   ],
+   "held_now": [
+    "held (rule G-1): a similar-name piece more than 2 km from the pin and "
+   ],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12318"
+  }
+ ],
+ "grade_changed": [
+  {
+   "area": "US-MI",
+   "ref": "US-12793",
+   "name": "Ontonagon National Wild and Scenic River",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "fwsr49",
+     "Ontonagon, Michigan National Wild and Scenic River",
+     24717,
+     "name (Forest Service river: state and forest dropped)"
+    ],
+    [
+     "fwsr233",
+     "Ontonagon, Michigan National Wild and Scenic River",
+     12179,
+     "name (Forest Service river: state and forest dropped)"
+    ],
+    [
+     "fwsr139",
+     "Ontonagon, Michigan National Wild and Scenic River",
+     9229,
+     "name (Forest Service river: state and forest dropped)"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "fwsr49",
+     "Ontonagon, Michigan National Wild and Scenic River",
+     24717,
+     "words"
+    ],
+    [
+     "fwsr139",
+     "Ontonagon, Michigan National Wild and Scenic River",
+     9229,
+     "words"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12793"
+  },
+  {
+   "area": "US-MI",
+   "ref": "US-12799",
+   "name": "Sturgeon (Ottawa) National Wild and Scenic River",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "fwsr250",
+     "Sturgeon, Michigan (Ottawa NF) National Wild and Scenic River",
+     5573,
+     "name (Forest Service river: state and forest dropped)"
+    ],
+    [
+     "fwsr164",
+     "Sturgeon, Michigan (Ottawa NF) National Wild and Scenic River",
+     1621,
+     "name (Forest Service river: state and forest dropped)"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "fwsr250",
+     "Sturgeon, Michigan (Ottawa NF) National Wild and Scenic River",
+     5573,
+     "words"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12799"
+  },
+  {
+   "area": "US-NV",
+   "ref": "US-10345",
+   "name": "Carson Lake and Pasture Wildlife Management Area",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgnva16",
+     "Carson Lake WMA",
+     0,
+     "words"
+    ],
+    [
+     "sgnvj1",
+     "Carson Lake Pasture",
+     0,
+     "name"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "sgnva16",
+     "Carson Lake WMA",
+     0,
+     "words"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-10345"
+  }
+ ],
  "sample": [
+  {
+   "area": "US-MI",
+   "ref": "US-12789",
+   "name": "Carp National Wild and Scenic River",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "fwsr179",
+     "Carp, Michigan National Wild and Scenic River",
+     2531,
+     "name (Forest Service river: state and forest dropped)"
+    ],
+    [
+     "fwsr94",
+     "Carp, Michigan National Wild and Scenic River",
+     2229,
+     "name (Forest Service river: state and forest dropped)"
+    ],
+    [
+     "fwsr5",
+     "Carp, Michigan National Wild and Scenic River",
+     1254,
+     "name (Forest Service river: state and forest dropped)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-12789"
+  },
+  {
+   "area": "US-MI",
+   "ref": "US-12790",
+   "name": "East Branch of the Taquamenon National Wild and Scenic River",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "fwsr8",
+     "East Branch Tahquamenon, Michigan National Wild and Scenic River",
+     2501,
+     "name (Forest Service river: state and forest dropped)"
+    ],
+    [
+     "fwsr187",
+     "East Branch Tahquamenon, Michigan National Wild and Scenic River",
+     491,
+     "name (Forest Service river: state and forest dropped)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-12790"
+  },
+  {
+   "area": "US-MI",
+   "ref": "US-12793",
+   "name": "Ontonagon National Wild and Scenic River",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "fwsr49",
+     "Ontonagon, Michigan National Wild and Scenic River",
+     24717,
+     "name (Forest Service river: state and forest dropped)"
+    ],
+    [
+     "fwsr233",
+     "Ontonagon, Michigan National Wild and Scenic River",
+     12179,
+     "name (Forest Service river: state and forest dropped)"
+    ],
+    [
+     "fwsr139",
+     "Ontonagon, Michigan National Wild and Scenic River",
+     9229,
+     "name (Forest Service river: state and forest dropped)"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "fwsr49",
+     "Ontonagon, Michigan National Wild and Scenic River",
+     24717,
+     "words"
+    ],
+    [
+     "fwsr139",
+     "Ontonagon, Michigan National Wild and Scenic River",
+     9229,
+     "words"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12793"
+  },
+  {
+   "area": "US-NV",
+   "ref": "US-10345",
+   "name": "Carson Lake and Pasture Wildlife Management Area",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgnva16",
+     "Carson Lake WMA",
+     0,
+     "words"
+    ],
+    [
+     "sgnvj1",
+     "Carson Lake Pasture",
+     0,
+     "name"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "sgnva16",
+     "Carson Lake WMA",
+     0,
+     "words"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-10345"
+  },
   {
    "area": "US-FL",
    "ref": "US-7879",
@@ -101,6 +912,383 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-10180"
+  },
+  {
+   "area": "US-PA",
+   "ref": "US-12234",
+   "name": "Allegheny National Wild and Scenic River",
+   "old_grade": "pin",
+   "new_grade": "approximate",
+   "new_pieces": [
+    [
+     "fwsr1",
+     "Allegheny, Pennsylvania National Wild and Scenic River",
+     35107,
+     "words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12234"
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-6259",
+   "name": "Ozone Falls State Natural Area",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "255603",
+     "Ozone Falls (Cumberland Trail)",
+     45,
+     "name (second name field)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-6259"
+  },
+  {
+   "area": "US-WA",
+   "ref": "US-10709",
+   "name": "Klickitat National Wild and Scenic River",
+   "old_grade": "pin",
+   "new_grade": "approximate",
+   "new_pieces": [
+    [
+     "fwsr35",
+     "Klickitat, Washington National Wild and Scenic River",
+     4815,
+     "words"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-10709"
+  },
+  {
+   "area": "US-ID",
+   "ref": "US-7816",
+   "name": "Henrys Lake Airstrip State Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "199732",
+     "Henrys Lake State Park",
+     607,
+     "words"
+    ]
+   ],
+   "held_now": [
+    "held (rule G-1): a similar-name piece more than 2 km from the pin and "
+   ],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-7816"
+  },
+  {
+   "area": "US-MA",
+   "ref": "US-8393",
+   "name": "Stodder's Neck & Abigail Adams State Park",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "59334",
+     "Abigail Adams State Park",
+     5,
+     "words"
+    ],
+    [
+     "59335",
+     "Abigail Adams State Park",
+     5,
+     "words"
+    ],
+    [
+     "sgmaa665637",
+     "Abigail Adams State Park",
+     5,
+     "words"
+    ],
+    [
+     "sgmaa671813",
+     "Abigail Adams State Park",
+     5,
+     "words"
+    ],
+    [
+     "59336",
+     "Abigail Adams State Park",
+     1,
+     "words"
+    ],
+    [
+     "sgmaa697518",
+     "Abigail Adams State Park",
+     1,
+     "words"
+    ],
+    [
+     "sgmab1",
+     "Abigail Adams State Park",
+     0,
+     "words"
+    ]
+   ],
+   "held_now": [
+    "held (rule G-1): a similar-name piece more than 2 km from the pin and ",
+    "held (rule G-1): a similar-name piece more than 2 km from the pin and ",
+    "held (rule G-1): a similar-name piece more than 2 km from the pin and "
+   ],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-8393"
+  },
+  {
+   "area": "US-ND",
+   "ref": "US-0437",
+   "name": "White Horse Hill Game Preserve",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "5429",
+     "White Horse Hill National Game Preserve",
+     1630,
+     "words"
+    ]
+   ],
+   "held_now": [
+    "held (rule G-1): a similar-name piece more than 2 km from the pin and "
+   ],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-0437"
+  },
+  {
+   "area": "US-OK",
+   "ref": "US-11714",
+   "name": "Ozark Plateau National Wildlife Management Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "odw79",
+     "Ozark Plateau Wildlife Management Area",
+     2088,
+     "words"
+    ],
+    [
+     "sgokc79",
+     "Ozark Plateau",
+     2088,
+     "words"
+    ],
+    [
+     "sgokb28",
+     "Ozark Plateau Wildlife Management Area",
+     0,
+     "words"
+    ],
+    [
+     "sgokb31",
+     "Ozark Plateau Wildlife Management Area",
+     0,
+     "words"
+    ],
+    [
+     "sgokb32",
+     "Ozark Plateau Wildlife Management Area",
+     0,
+     "words"
+    ]
+   ],
+   "held_now": [
+    "held (rule G-1): a similar-name piece more than 2 km from the pin and ",
+    "held (rule G-1): a similar-name piece more than 2 km from the pin and ",
+    "held (rule G-1): a similar-name piece more than 2 km from the pin and "
+   ],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11714"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-5779",
+   "name": "Willard Spur State Waterfowl Management Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "utw261",
+     "Willard Spur WMA",
+     13441,
+     "words"
+    ],
+    [
+     "sgutb261",
+     "Willard Spur WMA",
+     0,
+     "words"
+    ]
+   ],
+   "held_now": [
+    "held (rule G-1): a similar-name piece more than 2 km from the pin and ",
+    "held (rule G-1): a similar-name piece more than 2 km from the pin and "
+   ],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-5779"
+  },
+  {
+   "area": "US-MI",
+   "ref": "US-12798",
+   "name": "Sturgeon (Hiawatha) National Wild and Scenic River",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "fwsr163",
+     "Sturgeon, Michigan (Hiawatha NF) National Wild and Scenic River",
+     4860,
+     "name (Forest Service river: state and forest dropped)"
+    ],
+    [
+     "fwsr61",
+     "Sturgeon, Michigan (Hiawatha NF) National Wild and Scenic River",
+     3532,
+     "name (Forest Service river: state and forest dropped)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12798"
+  },
+  {
+   "area": "US-MI",
+   "ref": "US-12799",
+   "name": "Sturgeon (Ottawa) National Wild and Scenic River",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "fwsr250",
+     "Sturgeon, Michigan (Ottawa NF) National Wild and Scenic River",
+     5573,
+     "name (Forest Service river: state and forest dropped)"
+    ],
+    [
+     "fwsr164",
+     "Sturgeon, Michigan (Ottawa NF) National Wild and Scenic River",
+     1621,
+     "name (Forest Service river: state and forest dropped)"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "fwsr250",
+     "Sturgeon, Michigan (Ottawa NF) National Wild and Scenic River",
+     5573,
+     "words"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12799"
+  },
+  {
+   "area": "US-MI",
+   "ref": "US-12792",
+   "name": "Manistee National Wild and Scenic River",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "fwsr44",
+     "Manistee, Michigan National Wild and Scenic River",
+     8919,
+     "name (Forest Service river: state and forest dropped)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12792"
+  },
+  {
+   "area": "US-IN",
+   "ref": "US-4182",
+   "name": "Trine at Pokagon State Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sgina4850",
+     "Pokagon State Park",
+     975,
+     "words"
+    ],
+    [
+     "sginc4850",
+     "Pokagon State Park",
+     975,
+     "words"
+    ],
+    [
+     "201110",
+     "Pokagon State Park",
+     939,
+     "words"
+    ],
+    [
+     "sgina4851",
+     "Pokagon State Park",
+     258,
+     "words"
+    ],
+    [
+     "sginc4851",
+     "Pokagon State Park",
+     258,
+     "words"
+    ]
+   ],
+   "held_now": [
+    "held (rule G-1): a similar-name piece more than 2 km from the pin and ",
+    "held (rule G-1): a similar-name piece more than 2 km from the pin and ",
+    "held (rule G-1): a similar-name piece more than 2 km from the pin and "
+   ],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4182"
+  },
+  {
+   "area": "US-WA",
+   "ref": "US-12318",
+   "name": "Dishman Hills State Conservation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "271347",
+     "Dishman Hills Natural Resources Conservation Area",
+     69,
+     "words"
+    ]
+   ],
+   "held_now": [
+    "held (rule G-1): a similar-name piece more than 2 km from the pin and "
+   ],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12318"
   }
  ]
 }
