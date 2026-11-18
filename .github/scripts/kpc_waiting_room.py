@@ -1423,6 +1423,8 @@ def refuse_fers_promote(rel, src=None, new=None, live=None):
     """Nov 13: a hidden 2-fer file must never replace live with 0 pairs, and world 2-fers are never public.
     Returns a reason to refuse, or ''."""
     rel = str(rel).replace('\\', '/')
+    if 'fers' not in pathlib.PurePosixPath(rel).parts[:-1]:   # Nov 17: only the 2-fer folder (data/fers/); camp, docs, truth and campinfo files are also named US-XX.json and were refused as 2-fers with 0 pairs
+        return ''
     name = pathlib.Path(rel).name
     if name.endswith('.gz'):
         name = name[:-3]
