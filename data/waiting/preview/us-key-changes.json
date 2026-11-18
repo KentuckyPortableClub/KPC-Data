@@ -1,23 +1,23 @@
 {
  "about": "us-key: the HELD build (data/waiting/in/data/us-key/) vs the LIVE key (data/us-key/). Chat 11: check the sample, then write KEY YES or KEY NO: <refs> in data/waiting/approved.json (item 'what': 'us-key', 'build': the held build id from data/waiting/in/data/us-key/index.json, 'date': 'YYYY-MM-DD' and 'time': 'h:mm AM/PM' Central; rule 22: no build field or a grade from before Nov 2 9:37 AM CST is not a release). Written by kpc_key_summary.py.",
- "made": "2026-11-18 09:03 UTC",
+ "made": "2026-11-18 12:42 UTC",
  "totals": {
   "gained": 15,
-  "lost": 12,
-  "pieces_changed": 1122,
-  "grade_changed": 3
+  "lost": 11,
+  "pieces_changed": 1141,
+  "grade_changed": 4
  },
  "per_area": {
   "US-AL": {
    "gained": 0,
-   "lost": 1,
-   "pieces_changed": 5,
+   "lost": 0,
+   "pieces_changed": 6,
    "grade_changed": 0
   },
   "US-CA": {
    "gained": 1,
    "lost": 1,
-   "pieces_changed": 19,
+   "pieces_changed": 18,
    "grade_changed": 0
   },
   "US-CO": {
@@ -29,7 +29,7 @@
   "US-CT": {
    "gained": 0,
    "lost": 0,
-   "pieces_changed": 6,
+   "pieces_changed": 9,
    "grade_changed": 0
   },
   "US-DC": {
@@ -42,6 +42,12 @@
    "gained": 1,
    "lost": 0,
    "pieces_changed": 59,
+   "grade_changed": 0
+  },
+  "US-HI": {
+   "gained": 0,
+   "lost": 0,
+   "pieces_changed": 1,
    "grade_changed": 0
   },
   "US-IA": {
@@ -95,19 +101,19 @@
   "US-MI": {
    "gained": 4,
    "lost": 0,
-   "pieces_changed": 13,
-   "grade_changed": 2
+   "pieces_changed": 18,
+   "grade_changed": 3
   },
   "US-MN": {
    "gained": 0,
    "lost": 0,
-   "pieces_changed": 9,
+   "pieces_changed": 15,
    "grade_changed": 0
   },
   "US-MO": {
    "gained": 0,
    "lost": 0,
-   "pieces_changed": 251,
+   "pieces_changed": 252,
    "grade_changed": 0
   },
   "US-MS": {
@@ -131,7 +137,7 @@
   "US-NH": {
    "gained": 0,
    "lost": 0,
-   "pieces_changed": 11,
+   "pieces_changed": 12,
    "grade_changed": 0
   },
   "US-NV": {
@@ -143,13 +149,13 @@
   "US-NY": {
    "gained": 0,
    "lost": 0,
-   "pieces_changed": 2,
+   "pieces_changed": 5,
    "grade_changed": 0
   },
   "US-OH": {
    "gained": 0,
    "lost": 0,
-   "pieces_changed": 37,
+   "pieces_changed": 36,
    "grade_changed": 0
   },
   "US-OK": {
@@ -525,27 +531,6 @@
   }
  ],
  "lost": [
-  {
-   "area": "US-AL",
-   "ref": "US-3679",
-   "name": "Charles D. Kelley Wildlife Management Area",
-   "old_grade": "approximate",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "sgalc300",
-     "Charles D. Kelley Autauga County Wildlife Management Area",
-     10465,
-     "words"
-    ]
-   ],
-   "held_now": [
-    "check (rule R-G8): another kind of place (a county, Handoff 8 fix 3)"
-   ],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-3679"
-  },
   {
    "area": "US-CA",
    "ref": "US-3581",
@@ -957,6 +942,32 @@
    "pota": "https://pota.app/#/park/US-12799"
   },
   {
+   "area": "US-MI",
+   "ref": "US-1502",
+   "name": "Hart-Montague Trail State Park",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl1502",
+     "Hart-Montague Trail State Park",
+     0,
+     "official trail line (Michigan Department of Natural Resource"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "71288",
+     "Hart-Montague Bicycle Trail Park",
+     3973,
+     "words"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-1502"
+  },
+  {
    "area": "US-NV",
    "ref": "US-10345",
    "name": "Carson Lake and Pasture Wildlife Management Area",
@@ -1332,27 +1343,6 @@
    "pota": "https://pota.app/#/park/US-10709"
   },
   {
-   "area": "US-AL",
-   "ref": "US-3679",
-   "name": "Charles D. Kelley Wildlife Management Area",
-   "old_grade": "approximate",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "sgalc300",
-     "Charles D. Kelley Autauga County Wildlife Management Area",
-     10465,
-     "words"
-    ]
-   ],
-   "held_now": [
-    "check (rule R-G8): another kind of place (a county, Handoff 8 fix 3)"
-   ],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-3679"
-  },
-  {
    "area": "US-CA",
    "ref": "US-3581",
    "name": "Torrey Pines Reserve State Conservation Area",
@@ -1622,6 +1612,32 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-12792"
+  },
+  {
+   "area": "US-MI",
+   "ref": "US-1502",
+   "name": "Hart-Montague Trail State Park",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl1502",
+     "Hart-Montague Trail State Park",
+     0,
+     "official trail line (Michigan Department of Natural Resource"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "71288",
+     "Hart-Montague Bicycle Trail Park",
+     3973,
+     "words"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-1502"
   },
   {
    "area": "US-DC",
