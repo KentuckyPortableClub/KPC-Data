@@ -1,6 +1,6 @@
 {
  "about": "FLOW BOARD (chat 10, Nov 1 2026; Brandon 2:01 PM: 'stuff seems to get dropped a lot ... where you can see for example 900",
- "built": "2026-11-18 15:42Z",
+ "built": "2026-11-18 21:38Z",
  "stuck_days": 2,
  "piles": [
   {
@@ -336,7 +336,7 @@
    "id": "grade-queue",
    "stage": "7 waiting room",
    "what": "files waiting for a grader (data/status/grade-queue.md)",
-   "n": 85,
+   "n": 101,
    "owner": "chat 11",
    "note": "",
    "date": "2026-11-18",
@@ -604,6 +604,19 @@
    "moved": "2026-11-05",
    "still_days": 13,
    "stuck": true
+  },
+  {
+   "id": "bot-waiting room",
+   "stage": "8 bots",
+   "what": "waiting room: RED (the bot is broken)",
+   "n": 1,
+   "owner": "chat 10",
+   "note": "8 files waiting over 3 days in data/waiting/in/ (e.g. US-9203.json) · chat 11 (look at the waiting room run)",
+   "date": "2026-11-18",
+   "first_seen": "2026-11-18",
+   "moved": "2026-11-18",
+   "still_days": 0,
+   "stuck": false
   },
   {
    "id": "bot-world finder v2",

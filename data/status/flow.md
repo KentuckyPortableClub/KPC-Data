@@ -1,4 +1,4 @@
-# Flow board (2026-11-18 15:42Z, kpc_flow.py)
+# Flow board (2026-11-18 21:38Z, kpc_flow.py)
 Every pile of work, who it waits on and when it last moved. STUCK = work in it and no move for 2+ days. Fix the STUCK ones first.
 
 ## STUCK (36)
@@ -66,6 +66,7 @@ Every pile of work, who it waits on and when it last moved. STUCK = work in it a
 - STUCK 1 · world harvester: not run for 12 days · since 2026-11-06
 - STUCK 1 · outside-KY trial (hours / closures, saved only): not run for 10 days · since 2026-11-08
 - STUCK 1 · Website copy (site branch): RED (the bot is broken) · since 2026-11-15
+- 1 · waiting room: RED (the bot is broken) · since 2026-11-18
 ### chat 11
 - STUCK 6 · HELD truth files (a check failed; data/waiting/today.md says why) · since 2026-11-01
 - STUCK 1 · 2-fer checker: found work · since 2026-11-01
@@ -81,7 +82,7 @@ Every pile of work, who it waits on and when it last moved. STUCK = work in it a
 - STUCK 168 · questions/parked.json waiting for an answer · since 2026-11-05
 - STUCK 37 · questions/world-finder.json waiting for an answer · since 2026-11-05
 - 1 · HELD world-key files (a check failed; data/waiting/today.md says why) · since 2026-11-18
-- 85 · files waiting for a grader (data/status/grade-queue.md) · since 2026-11-18
+- 101 · files waiting for a grader (data/status/grade-queue.md) · since 2026-11-18
 ### bots
 - STUCK 1 · Storage keeper (weekly): found work · since 2026-11-01
 - STUCK 1 · Cell coverage (FCC): found work · since 2026-11-02
@@ -117,7 +118,7 @@ Every pile of work, who it waits on and when it last moved. STUCK = work in it a
 | 7 waiting room | HELD trails files (a check failed; data/waiting/today.md says why) | 4 | chat 2 (fix) + chat 11 | 2026-11-04 **STUCK** |
 | 7 waiting room | HELD truth files (a check failed; data/waiting/today.md says why) | 6 | chat 2 (fix) + chat 11 | 2026-11-01 **STUCK** |
 | 7 waiting room | HELD world-key files (a check failed; data/waiting/today.md says why) | 1 | chat 2 (fix) + chat 11 | 2026-11-18 |
-| 7 waiting room | files waiting for a grader (data/status/grade-queue.md) | 85 | chat 11 | 2026-11-18 |
+| 7 waiting room | files waiting for a grader (data/status/grade-queue.md) | 101 | chat 11 | 2026-11-18 |
 | 8 bots | 2-fer checker: found work | 1 | chat 2 + chat 11 | 2026-11-01 **STUCK** |
 | 8 bots | Cell coverage (FCC): found work | 1 | HQ | 2026-11-02 **STUCK** |
 | 8 bots | Engine crawler: not run for 15 days | 1 | chat 10 | 2026-11-03 **STUCK** |
@@ -138,5 +139,6 @@ Every pile of work, who it waits on and when it last moved. STUCK = work in it a
 | 8 bots | key-doctor: found work | 1 | chat 10 | 2026-11-02 **STUCK** |
 | 8 bots | outside-KY trial (hours / closures, saved only): not run for 10 days | 1 | chat 10 | 2026-11-08 **STUCK** |
 | 8 bots | park detective: not run for 13 days | 1 | chat 10 | 2026-11-05 **STUCK** |
+| 8 bots | waiting room: RED (the bot is broken) | 1 | chat 10 | 2026-11-18 |
 | 8 bots | world finder v2: not run for 13 days | 1 | chat 10 | 2026-11-05 **STUCK** |
 | 8 bots | world harvester: not run for 12 days | 1 | chat 10 | 2026-11-06 **STUCK** |
