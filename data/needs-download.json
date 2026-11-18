@@ -10548,6 +10548,24 @@
    "status": "open",
    "url": "https://utility.arcgis.com/usrsvcs/servers/4787d99dcb1f4728b33f89a9eb9ae03e/rest/services/OpenData/SouthDakota_ParksAndRecreationAreas/FeatureServer/0",
    "who": "person",
+   "why": "KPC park-info engine: robots.txt does not allow it (a 403 counts as no)"
+  },
+  {
+   "added": "2026-11-18",
+   "area": "",
+   "check": "",
+   "expected": null,
+   "have": null,
+   "host": "utility.arcgis.com",
+   "id": "|sgsdb",
+   "layer": "sgsdb",
+   "note": "",
+   "page": "https://utility.arcgis.com/usrsvcs/servers/0a01764b6c3b4d13b9af23df1610214b/rest/services/OpenData/SouthDakota_GFPManagedLands/FeatureServer/0",
+   "source": "KPC park-info engine",
+   "src": "",
+   "status": "open",
+   "url": "https://utility.arcgis.com/usrsvcs/servers/0a01764b6c3b4d13b9af23df1610214b/rest/services/OpenData/SouthDakota_GFPManagedLands/FeatureServer/0",
+   "who": "person",
    "why": "KPC park-info engine: robots.txt answered with a web page, not a robots file (the answer came from another site (https://www.arcgis.com/index.html): not read as \"no rules\"): not read as \"no rules\""
   },
   {
