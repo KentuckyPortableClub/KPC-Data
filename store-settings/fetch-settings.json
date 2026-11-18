@@ -1,0 +1,9 @@
+{
+  "_read_me": "Limits for 2-FETCH-ALL.bat. You may change them (lower is kinder to the servers). Values below the floors are ignored: at least 2 s between requests to one host (10 s for apps.fs.usda.gov), and robots.txt Crawl-delay and Retry-After always win when they ask for more. robots_html_200_means_no_rules (true / false; anything else = false): true = a robots.txt address that answers HTTP 200 with a web page holding NO robots line (no User-agent / Allow / Disallow / Sitemap / Crawl-delay line), from the site's own /robots.txt and not a login or captcha page, is read as \"no rules\" (RFC 9309: only parseable lines are rules); false = such a host is BLOCKED (hand download), as in 3.6.1. 5xx, 429, no answer and redirects to a login are never \"no rules\".",
+  "per_host_per_hour": 200,
+  "per_host_per_day": 1500,
+  "min_seconds_between_requests": 2.0,
+  "failures_before_parking_host": 3,
+  "warn_if_host_needs_more_than": 3000,
+  "robots_html_200_means_no_rules": true
+}
