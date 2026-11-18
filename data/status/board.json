@@ -12,9 +12,9 @@
   "2-fer gate (areas ready / waiting)": {
    "areas": "",
    "last_run": "2026-11-18",
-   "made": "1068 audit rows not clean in 43 areas; waiting for audit 66",
+   "made": "1068 audit rows not clean in 43 areas; waiting for audit 66 (a key build is saving: nothing started)",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44210690510",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44229723335",
    "waiting_on": "chat 11 / 12 (audit answers), chat 2 (fixes)"
   },
   "Cell coverage (FCC)": {
@@ -1084,9 +1084,9 @@
   "Skipped-run watchdog": {
    "areas": "",
    "last_run": "2026-11-18",
-   "made": "2026-11-18 00:48 UTC: 1 skipped run(s) started again: kpc-copy-from-links.yml (missed Nov 18 00:11 UTC)",
+   "made": "2026-11-18 03:21 UTC: 3 skipped run(s) started again: kpc-closures.yml (missed Nov 18 01:38 UTC); kpc-copy-from-links.yml (missed Nov 18 02:11 UTC); kpc-flow.yml (missed Nov 18 01:46 UTC)",
    "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44210690510",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44229723335",
    "waiting_on": "nobody (it restarts them itself)"
   },
   "Storage keeper (weekly)": {
@@ -1196,9 +1196,9 @@
   "Website copy (site branch)": {
    "areas": "",
    "last_run": "2026-11-18",
-   "made": "site is 76 min behind main (5 commits, 108 website files): started the copy bot (kpc-pages-sync) once",
+   "made": "site is 90 min behind main (1 commits, 3 website files): started the copy bot (kpc-pages-sync) once",
    "result": "red",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44210690510",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44229723335",
    "waiting_on": "HQ: look at kpc-pages-sync.yml runs"
   },
   "answer-sheet-check": {
@@ -1291,7 +1291,7 @@
   },
   "waiting room": {
    "last_run": "2026-11-18",
-   "made": "heartbeat 2 h old, 244 files waiting",
+   "made": "heartbeat 3 h old, 249 files waiting",
    "result": "green",
    "waiting_on": "nothing"
   },
