@@ -25,7 +25,7 @@ os.environ['FULL'] = 'none'; check(not any(x['full'] for x in A.plan('areas')), 
 os.environ['FULL'] = ''; check(all(x['full'] == '' for x in A.plan('na world')), 'na / world runs: never a round-robin full')
 w = yaml.safe_load(open(HERE / '.github/workflows/kpc-fers.yml'))
 on = w.get('on') or w.get(True)
-check([c['cron'] for c in on.get('schedule') or []] == ['23 8 5 * *'], 'exactly one cron, monthly')
+check([c['cron'] for c in on.get('schedule') or []] == [], 'no cron: by hand only (owner 17 Nov 7:29 PM: only as needed; was one monthly cron)')
 txt = (HERE / '.github/workflows/kpc-fers.yml').read_text()
 check("KPC_FERS_FULL: ${{ matrix.r.full }}" in txt and 'KPC_FERS_LIVE_DIR: cache/fers' in txt, 'the job passes its full flag and the saved-live folder')
 check("REGION: ${{ inputs.region || 'areas' }}" in txt and "PASS: ${{ inputs.pass || 'all' }}" in txt, 'the monthly run = pass all on every area')

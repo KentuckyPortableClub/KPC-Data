@@ -4,8 +4,8 @@ name: KPC 2-fer small batches (hidden)
 # waiting parks gets ONE line run with 'parks' = only the pairs touching them (minutes, from the saved copies), 3 areas at most
 # at once; never while the full queue (kpc-fers-lines) is running. Its checker writes a 'grade me' line for chat 8 as usual.
 on:
-  schedule:   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
-    - cron: '23 10 * * *'
+  # (no schedule since 17 Nov):   # Nov 2: schedule re-registered after the history restart (GitHub ran no Data schedule since 8:26 AM CST)
+    # (schedule removed: was cron '23 10 * * *')   # OFF 17 Nov 2026 (owner 7:29 PM: 'tame them down ... only as needed'): public 2-fer runs wait for the key rebuild; by hand
   # Oct 29 11:30 PM: after a key release the waiting room (chat 10, BOT D) dispatches this workflow itself (force=yes)
   workflow_dispatch:
     inputs:

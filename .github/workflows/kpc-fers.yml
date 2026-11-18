@@ -18,8 +18,8 @@ name: KPC 2-fer bot (hidden)
 # record ids, POTA entry, or a declared rule change in KPC-Links .github/fers-rule-scope.json) are tested again. Each run also
 # rebuilds the due areas in full, round-robin (one full rebuild per area per full_cycle_days = 90, Brandon confirmed t918u).
 on:
-  schedule:
-    - cron: '23 8 5 * *'   # monthly, the 5th, 2:23 AM CST (after the monthly US key on the 1st and Canada key on the 2nd)
+  # (no schedule since 17 Nov):
+    # (schedule removed: was cron '23 8 5 * *')   # monthly   # OFF 17 Nov 2026 (owner 7:29 PM: 'tame them down ... only as needed'): public 2-fer runs wait for the key rebuild; by hand ·, the 5th, 2:23 AM CST (after the monthly US key on the 1st and Canada key on the 2nd)
   workflow_dispatch:
     inputs:
       pass:

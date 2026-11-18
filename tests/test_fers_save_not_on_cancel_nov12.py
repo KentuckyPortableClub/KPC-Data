@@ -180,8 +180,8 @@ for f in sorted(WF.glob('*.yml')):
     try: yaml.safe_load(f.read_text(encoding='utf-8'))
     except Exception as e: bad.append(f'{f.name}: {e}')  # noqa: BLE001
 check('every workflow parses with PyYAML', not bad)
-check('kpc-fers.yml: triggers unchanged (one monthly cron + dispatch)',
-      sorted(D['kpc-fers.yml'][True]) == ['schedule', 'workflow_dispatch'] and [c['cron'] for c in D['kpc-fers.yml'][True]['schedule']] == ['23 8 5 * *'])
+check('kpc-fers.yml: triggers: dispatch only (owner 17 Nov 7:29 PM: the monthly cron is off, by hand only)',
+      sorted(D['kpc-fers.yml'][True]) == ['workflow_dispatch'])
 check('kpc-fers-line.yml: triggers unchanged (dispatch + workflow_call, no schedule)', sorted(D['kpc-fers-line.yml'][True]) == ['workflow_call', 'workflow_dispatch'])
 check('kpc-fers-lines.yml: triggers unchanged (dispatch only, no schedule)', sorted(D['kpc-fers-lines.yml'][True]) == ['workflow_dispatch'])
 

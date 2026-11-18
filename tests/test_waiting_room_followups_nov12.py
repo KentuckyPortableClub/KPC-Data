@@ -87,8 +87,7 @@ check('pending: that look comes FIRST: before the full-queue look, the inline Py
       -1 < first < min(x for x in (run.find('kpc-fers-lines.yml'), run.find("python3 - <<'PY'"), run.find('gh workflow run'), run.find("'gh', 'workflow'"), run.find('git push')) if x > -1))
 check('pending: the job token is gh\'s token and the workflow may read Actions runs (actions: read or write)',
       J.get('env', {}).get('GH_TOKEN') == '${{ github.token }}' and (P.get('permissions') or {}).get('actions') in ('read', 'write'))
-check('pending: the triggers are unchanged (cron 23 10 * * * + workflow_dispatch force)', [c['cron'] for c in P[True]['schedule']] == ['23 10 * * *']
-      and sorted(P[True]) == ['schedule', 'workflow_dispatch'])
+check('pending: dispatch only (owner 17 Nov 7:29 PM: its daily cron is off, by hand only)', sorted(P[True]) == ['workflow_dispatch'])
 r = same_but('kpc-fers-pending.yml', P, 'look', PI)
 if r is None: print(f'INFO {BASE} not in this clone: the compare with main is skipped')
 else: check(f'pending: every other step, the job, triggers, permissions and concurrency are the same as on main ({BASE})', r)
