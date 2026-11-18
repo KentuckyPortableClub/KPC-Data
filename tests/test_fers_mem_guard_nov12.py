@@ -145,8 +145,8 @@ for f in sorted(WF.glob('*.yml')):
                 starts.append((f.name, jn, s.get('name'), s.get('shell')))
 check(len(starts) == 3 and all(sh == GUARD_SHELL for *_, sh in starts), f'every step that starts kpc_fers.py runs under the guard ({[(a, b, c[:20]) for a, b, c, _ in starts]})')
 crons = {f.name: [c.get('cron') for c in (load(f.name).get('on') or {}).get('schedule') or []] for f in sorted(WF.glob('kpc-fers*.yml'))}
-check({k: v for k, v in crons.items() if v} == {'kpc-fers.yml': ['23 8 5 * *'], 'kpc-fers-pending.yml': ['23 10 * * *'], 'kpc-fers-check.yml': ['9 4 * * 0']},
-      'no cron added or changed in the 2-fer workflows (the three existing lines only)')
+check({k: v for k, v in crons.items() if v} == {'kpc-fers-check.yml': ['9 4 1 * *']},
+      'the 2-fer crons are the owner\'s 17 Nov ones: only the monthly report-only check (the line runs are by hand)')
 L = load('kpc-fers-line.yml')
 for jn in ('fetcher', 'worker'):
     names = [s.get('name') or '' for s in L['jobs'][jn]['steps']]
