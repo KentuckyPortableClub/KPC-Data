@@ -1,0 +1,25 @@
+name: probe spot relay (one-off, deleted after)
+on:
+  push:
+    branches: [probe-relay]
+permissions: {}
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - name: ask the relay 5 times, 20 s apart
+        continue-on-error: true
+        run: |
+          for i in 1 2 3 4 5; do
+            h=$(curl -s -m 20 -D - -o body.json https://kpc-spots.kentuckyportableclub.workers.dev/spots || true)
+            st=$(echo "$h" | head -1 | tr -d '\r')
+            age=$(echo "$h" | grep -i '^x-kpc-spot-age:' | tr -d '\r' | cut -d' ' -f2)
+            cf=$(echo "$h" | grep -i '^cf-cache-status:' | tr -d '\r' | cut -d' ' -f2)
+            up=$(echo "$h" | grep -i '^age:' | tr -d '\r' | cut -d' ' -f2)
+            ray=$(echo "$h" | grep -i '^cf-ray:' | tr -d '\r' | cut -d' ' -f2)
+            md=$(md5sum body.json | cut -c1-8); n=$(python3 -c "import json;print(len(json.load(open('body.json'))))" 2>/dev/null || echo '?')
+            echo "::notice title=relay $i::$st | x-kpc-spot-age=$age | cf-cache-status=$cf | age=$up | body=$md spots=$n | cf-ray=$ray"
+            [ $i -lt 5 ] && sleep 20
+          done
+          true
