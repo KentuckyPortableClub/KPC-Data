@@ -207,7 +207,7 @@
    "Unit": "acres",
    "Agency": "Arkansas State Parks (park, state GIS table)",
    "Source page": "https://gis.ardot.gov/hosting/rest/services/Hosted/StateParks/FeatureServer/0/query?where=OBJECTID%3D54&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://gis.ardot.gov/hosting/rest/services/Hosted/StateParks/FeatureServer/0; read 2026-11-13"
+   "Notes": "computed from the official outline polygon (approx); layer https://gis.ardot.gov/hosting/rest/services/Hosted/StateParks/FeatureServer/0; read 2026-11-18"
   },
   {
    "Park number (if matched)": "US-7980",
@@ -316,6 +316,15 @@
    "Agency": "US Fish and Wildlife Service",
    "Source page": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?where=OBJECTID%3D4297&outFields=%2A&f=html",
    "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "US-11955",
+   "Park name (as the agency writes it)": "Genoa National Fish Hatchery",
+   "Size": 160,
+   "Unit": "acres",
+   "Agency": "US Fish and Wildlife Service",
+   "Source page": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWS_NWRS_HQ_PublicHuntUnits_view/FeatureServer/0/query?where=OBJECTID%3D1602&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWS_NWRS_HQ_PublicHuntUnits_view/FeatureServer/0; read 2026-11-02"
   },
   {
    "Park number (if matched)": "CA-6251",
@@ -694,15 +703,6 @@
    "Agency": "Kentucky Heritage Land Conservation Fund",
    "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Heritage_Land_Conservation_Fund_WGS84WM/MapServer/0/query?where=OBJECTID%3D92&outFields=%2A&f=html",
    "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Heritage_Land_Conservation_Fund_WGS84WM/MapServer/0; read 2026-11-13"
-  },
-  {
-   "Park number (if matched)": "US-11955",
-   "Park name (as the agency writes it)": "Genoa National Fish Hatchery",
-   "Size": 160,
-   "Unit": "acres",
-   "Agency": "US Fish and Wildlife Service",
-   "Source page": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWS_NWRS_HQ_PublicHuntUnits_view/FeatureServer/0/query?where=OBJECTID%3D1602&outFields=%2A&f=html",
-   "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWS_NWRS_HQ_PublicHuntUnits_view/FeatureServer/0; read 2026-11-02"
   },
   {
    "Park number (if matched)": "US-2218",
