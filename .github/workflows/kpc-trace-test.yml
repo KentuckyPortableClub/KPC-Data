@@ -1,0 +1,150 @@
+name: KPC tracer TEST MODE (T1, by hand only) - blind accuracy test on known parks, throwaway branch trace-test
+# Opus 19 Nov 2026 (key-quality.md section 16 T1 + section 19 item 6; Fable's YES with conditions; Brandon 19 Nov 4:49 AM: "get them
+# ready to run"). The tracer's TEST SWITCH: off unless started by hand, no schedule, starts no other run, never red (no emails).
+# - reads a FIXED list (tools-out key-quality/2026-11-19/t1/t1-list.json: a seeded draw of 60 fact-verified parks of the published
+#   US key, 20 small / 20 middle / 20 large, walked in order), and skips the "park already has official records" check;
+# - the PDF finder (find only, kpc_manners, the store's caps) + the existing save-map rule save the maps into a THROWAWAY folder;
+# - the first 10 small / 10 middle / 10 large with a saved official map page are traced, BLIND (the picture map + the pin; the
+#   official outline and every acres field are kept from the tracer: no acres file, sizes stripped from its input);
+# - a SEPARATE measuring step (kpc_trace_measure.py) reads the official outlines (KPC-Links data/outlines) only after the tracer.
+# Writes ONLY to the orphan branch trace-test (maps, traces, logs) and the report to tools-out key-quality/2026-11-19/t1/. Never
+# picture-maps, the traces hold branch, the waiting room or a key; no comments. Delete branch trace-test once Fable has the report.
+on:
+  workflow_dispatch:
+    inputs:
+      per_class:
+        description: 'parks per size class to trace (spec: 10)'
+        default: '10'
+permissions:
+  contents: write
+concurrency:
+  group: kpc-trace-test
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          path: kpcdata
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: The list, the store's manners settings, empty work folders
+        id: prep
+        continue-on-error: true
+        run: |
+          cd kpcdata
+          git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for b in tools-out intake-files; do git fetch -q --depth 1 origin "+refs/heads/$b:refs/remotes/origin/$b" || { echo "::warning title=T1::branch $b not read"; echo "T1 - branch $b not read" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; done
+          mkdir -p ../work/pm/maps ../work/pm/rows ../work/queue ../work/lookup/requests ../work/traced ../work/report
+          git show origin/tools-out:key-quality/2026-11-19/t1/t1-list.json > ../work/t1-list.json
+          for f in fetch-settings.json extra-blocked-hosts.txt robots-disallowed-layers.csv; do git show "origin/intake-files:store-settings/$f" > "../work/$f" 2>/dev/null || rm -f "../work/$f"; done
+          python3 - <<'PY'
+          import json
+          L = json.load(open('../work/t1-list.json'))
+          # the finder gets name, area, website, agency host: never the size class or the outline acres
+          json.dump([{k: p[k] for k in ('ref', 'name', 'area', 'website', 'agency') if p.get(k)} for p in L['parks']], open('../work/finder-parks.json', 'w'), indent=1)
+          print(f"::notice title=T1 list::{len(L['parks'])} parks, seed {L['seed']}")
+          PY
+          ls ../work
+      - name: PDF finder on the list (find only; no official-records check)
+        id: finder
+        continue-on-error: true
+        run: |
+          cd kpcdata
+          S=""; for f in fetch-settings.json:--settings extra-blocked-hosts.txt:--blocked robots-disallowed-layers.csv:--disallowed; do n=${f%%:*}; o=${f##*:}; [ -s "../work/$n" ] && S="$S $o ../work/$n"; done
+          python3 .github/scripts/kpc_pdf_finder.py find --parks ../work/finder-parks.json $S --docs-dir data/docs --queue-dir ../work/queue --max-parks 60
+      - name: Save the found maps (the existing save-map rule) into the throwaway folder
+        id: save
+        continue-on-error: true
+        run: |
+          sudo apt-get install -y -qq poppler-utils >/dev/null 2>&1 || { echo "::warning title=install::poppler-utils did not install"; echo "install - poppler-utils did not install" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          pip install -q pillow numpy pypdf 2>&1 | tail -1
+          cp work/queue/save-map/*.json work/lookup/requests/ 2>/dev/null || echo "::notice title=T1::the finder queued no map"
+          cd work/lookup
+          for r in requests/*.json; do [ -f "$r" ] || continue; LOOKUP_ROOT=. PIC_ROOT=../pm python3 ../../kpcdata/.github/scripts/kpc_lookup.py run "$r" || true; done   # ok: one map never stops the batch
+          PIC_ROOT=../pm python3 ../../kpcdata/.github/scripts/kpc_lookup.py map-index
+      - name: Pick in list order (first N per size class with a saved map page) and blind the tracer input
+        id: pick
+        continue-on-error: true
+        run: |
+          cd kpcdata
+          python3 .github/scripts/kpc_trace_measure.py pick --list ../work/t1-list.json --index ../work/pm/index.json --finder-log ../work/queue/parks-log.json --out ../work/picked.json --per-class "${{ inputs.per_class || '10' }}"
+          # the prep reads no acres: no data/acres.json, KPC_TRACE_ACRES_FILE points at nothing; then every size field is stripped
+          mv data/acres.json /tmp/acres.json.hidden 2>/dev/null || true   # ok: main may not hold the file
+          KPC_TRACE_ACRES_FILE=/nonexistent python3 .github/scripts/kpc_picture_prep.py ../work/pm /nonexistent-links
+          python3 .github/scripts/kpc_trace_measure.py blind ../work/pm/index.json
+      - name: Trace, blind (the picture map + the pin only)
+        id: trace
+        continue-on-error: true
+        env:
+          KPC_CONTACT: 'https://github.com/KentuckyPortableClub (Kentucky Portable Club ham radio club)'
+          KPC_TRACE_MAX_PX: '4000'
+          KPC_TRACE_ACRES_FILE: '/nonexistent'
+        run: |
+          cd kpcdata
+          pip install -q -r .github/scripts/draft/requirements.txt pypdf 2>&1 | tail -1
+          python3 .github/scripts/draft/kpc_trace_picture.py --selftest > ../work/report/selftest.txt 2>&1 || { tail -20 ../work/report/selftest.txt; echo "::warning title=T1::the tracer's offline checks failed: no trace"; exit 0; }
+          python3 .github/scripts/draft/kpc_picture_geo.py ../work/pm /tmp/kpc-pdf || { echo "::warning title=T1::picture geo stopped (see the log)"; echo "T1 - picture geo stopped (see the log)" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          python3 .github/scripts/draft/kpc_trace_picture.py --all --base ../work/pm --out ../work/traced --out-unofficial ../work/traced_unofficial --time-budget-min 55 > ../work/report/trace-log.txt 2>&1 || true   # ok: exit 3 = time ran out; the report says what happened
+          tail -15 ../work/report/trace-log.txt
+      - name: Measure against the official outlines (read only now, after the tracer)
+        id: measure
+        continue-on-error: true
+        run: |
+          rm -rf links && git clone -q --depth 1 --filter=blob:none --no-checkout https://github.com/KentuckyPortableClub/KPC-Links links \
+            && git -C links sparse-checkout set --no-cone /data/outlines/ && git -C links checkout -q
+          cd kpcdata
+          python3 .github/scripts/kpc_trace_measure.py --list ../work/t1-list.json --picked ../work/picked.json --traced ../work/traced --unofficial ../work/traced_unofficial --outlines ../links/data/outlines --out ../work/report
+          cat ../work/report/t1-summary.md >> "$GITHUB_STEP_SUMMARY" 2>/dev/null || true   # ok: the summary is a convenience
+      - name: Save - the report to tools-out, the work to the throwaway branch trace-test
+        id: savebr
+        continue-on-error: true
+        run: |
+          cd kpcdata
+          KPC_PUSH_RETRY=$PWD/.github/scripts/kpc_push_retry.sh
+          cp ../work/picked.json ../work/queue/receipt.json ../work/queue/parks-log.json ../work/report/ 2>/dev/null || true   # ok: a missing part is said in the summary
+          git worktree add -q -B tools-out ../out origin/tools-out && mkdir -p ../out/key-quality/2026-11-19/t1/run-${{ github.run_id }} \
+            && cp ../work/report/* ../out/key-quality/2026-11-19/t1/run-${{ github.run_id }}/ 2>/dev/null
+          ( cd ../out && find key-quality/2026-11-19/t1 -size +5M -delete; git add -A key-quality/2026-11-19/t1 && git commit -qm "T1 tracer test report (run ${{ github.run_id }})" && bash "$KPC_PUSH_RETRY" tools-out 4 "key-quality" ) || { echo "::warning title=T1::report not saved to tools-out (it is in this run's summary)"; echo "T1 - report not saved to tools-out (it is in this run's summary)" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          rm -rf ../tt && mkdir ../tt && cd ../tt && git init -q && git checkout -q --orphan trace-test
+          git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          cp -r ../work/pm ../work/traced ../work/traced_unofficial ../work/queue ../work/report . 2>/dev/null || true   # ok: a missing folder = that step made nothing
+          find . -path ./.git -prune -o -type f -size +20M -print -delete
+          printf '# trace-test (THROWAWAY, T1 test mode, run %s)\nMaps here are TEST MATERIAL ONLY (most of these parks have GIS). Delete this branch once Fable has the report (tools-out key-quality/2026-11-19/t1/).\n' "${{ github.run_id }}" > README.md
+          git add -A && git commit -qm "T1 test material (run ${{ github.run_id }})" \
+            && git push -q --force "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" trace-test || { echo "::warning title=T1::branch trace-test not saved"; echo "T1 - branch trace-test not saved" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+      - name: Report hidden failures (Nov 2 review, G8)
+        if: always()
+        env:
+          KPC_STEPS: ${{ toJSON(steps) }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          s = json.loads(os.environ.get('KPC_STEPS') or '{}')
+          bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
+          for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
+          print(f'{len(bad)} hidden step failure(s)')
+          # Nov 4 PM fix bundle item 7: the errors a step caught itself ('|| echo ::error ...') are listed too (kpc-hidden.txt)
+          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt')
+          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
+          print(f'{len(said)} error(s) caught inside steps and kept green')
+          if said and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write(f'**Errors caught inside steps and kept green ({len(said)}):**\n' + ''.join(f'- {x}\n' for x in said[:50]))
+          if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
+          # Next round C4 (Nov 5; Brandon's yes relayed via Super): the errors a step caught itself ('|| { ...; echo ::error ... }') are listed
+          # too (kpc-hidden.txt), one 'Hidden failures' line is left for the check-up (data/status/hidden-failures.json), and a job the
+          # check-up lists as safe to fail (KPC_FAIL_SAFE=1: it starts nothing after it) goes red on a caught ERROR (not on a warning).
+          import sys
+          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt'); he = h[:-4] + '-errors.txt'
+          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
+          errs = [x.strip() for x in open(he, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(he) else []
+          if said or bad:
+              print(f"::warning title=Hidden failures::{len(errs)} error(s) and {len(said) - len(errs)} warning(s) caught inside steps, {len(bad)} step(s) failed but kept green (job {os.environ.get('GITHUB_JOB', '?')})")
+          if errs and os.environ.get('KPC_FAIL_SAFE') == '1':
+              print(f'::error title=Fail where safe::{len(errs)} error(s) were caught inside steps, so this job is red (it starts nothing after it). The repo variable KPC_HIDDEN_RED=off turns this off.')
+              sys.exit(1)
+          PY
