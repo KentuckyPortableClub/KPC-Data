@@ -12,9 +12,9 @@
   "2-fer gate (areas ready / waiting)": {
    "areas": "",
    "last_run": "2026-11-19",
-   "made": "1068 audit rows not clean in 43 areas; waiting for audit 24, waiting for key 42 (a key build is saving: nothing started)",
+   "made": "1068 audit rows not clean in 43 areas; waiting for audit 23, waiting for key 43 (a key build is saving: nothing started)",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44593097411",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44621154814",
    "waiting_on": "chat 11 / 12 (audit answers), chat 2 (fixes)"
   },
   "Cell coverage (FCC)": {
@@ -1020,9 +1020,9 @@
   "Key bots: errors and silence": {
    "areas": "",
    "last_run": "2026-11-19",
-   "made": "4 key bot(s) with errors or gone silent: Europe weather warnings (silent: no finished run in 46 h (expected every 14 h or less); KPC-Data watchdog (Key bots); copy from KPC-Links (run failure); waiting room (silent: no finished run in 6 h (expected every 6 h or less))",
+   "made": "4 key bot(s) with errors or gone silent: Europe weather warnings (silent: no finished run in 48 h (expected every 14 h or less); KPC-Data watchdog (Key bots); copy from KPC-Links (run failure); waiting room (kpc_engine.py)",
    "result": "red",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44593097411",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44621154814",
    "waiting_on": "HQ: open the watchdog run summary for the run links"
   },
   "Layer collector": {
@@ -1084,9 +1084,9 @@
   "Skipped-run watchdog": {
    "areas": "",
    "last_run": "2026-11-19",
-   "made": "2026-11-19 18:57 UTC: 1 skipped run(s) started again: kpc-copy-from-links.yml (missed Nov 19 18:11 UTC)",
-   "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44593097411",
+   "made": "nothing skipped",
+   "result": "green",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44621154814",
    "waiting_on": "nobody (it restarts them itself)"
   },
   "Storage keeper (weekly)": {
@@ -1198,7 +1198,7 @@
    "last_run": "2026-11-19",
    "made": "site is under 60 min behind main: the copy bot will catch up",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44593097411",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44621154814",
    "waiting_on": "nobody (the watchdog restarts the copy bot itself)"
   },
   "answer-sheet-check": {
@@ -1236,9 +1236,9 @@
   "key-doctor": {
    "areas": "",
    "last_run": "2026-11-19",
-   "made": "NOs: 433 of 723 NOs landed; 290 missing (re-applied to overrides.fixed.json); 1221 came back in the key release: 10854 parks pass, 289 held, 41 files; per-park release ON stuck: 0 area(s) stuck; see stuck-2026-11-19.md ",
+   "made": "NOs: 433 of 723 NOs landed; 290 missing (re-applied to overrides.fixed.json); 1202 came back in the key release: 11395 parks pass, 297 held, 43 files; per-park release ON stuck: 0 area(s) stuck; see stuck-2026-11-19.md ",
    "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44524639420",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44598683748",
    "waiting_on": "chat 10 (came-back NOs / stuck areas); per-park release in release-approved"
   },
   "layer intake": {
@@ -1291,7 +1291,7 @@
   },
   "waiting room": {
    "last_run": "2026-11-19",
-   "made": "heartbeat 0 h old, 102 files waiting",
+   "made": "heartbeat 0 h old, 103 files waiting",
    "result": "green",
    "waiting_on": "nothing"
   },
