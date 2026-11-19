@@ -1,6 +1,6 @@
 # KPC hand-off 07: REVIEW THE WHOLE MAP PIPELINE (layers, store room, keys, matching, 2-fers, helper bots)
 
-From: Kentucky Portable Club (owner Brandon White, KZ4CP), written by the club's reviewer (Fable), 19 Nov 2026, 4:15 PM CST.
+From: Kentucky Portable Club (owner Brandon White, KZ4CP), written by the club's reviewer (Fable), 19 Nov 2026, 4:15 PM CST (C2 added 4:35 PM).
 For: an outside reviewer. **You read and you report. You change nothing, start nothing, merge nothing.**
 
 How to read the dates in this file: **[19 Nov]** = checked by the reviewer today in the code or data. **[18 Nov]** /
@@ -122,8 +122,10 @@ Numbers:
 - Saved answers **[18 Nov]**: 5,038 parks have one; 3,307 carry the same bulk-import reason. The owner: "My hand check
   answers were not mine and not trustworthy." 610 parks' outlines rest on a saved answer alone.
 - 19 Nov: 13 states were held; Idaho and Oregon were saved at 11:16 AM; the other 11 (AK AR DE FL GA MT NC RI UT VA WY)
-  were released by one run started 2:54 PM, 50 parks named, every one by a planned rule. A "US answer key" save reached
-  main at 3:52 PM (`6e110a6`). **Nobody has read that run yet [19 Nov].**
+  were let through by one run started 2:54 PM, 50 parks named, every one by a planned rule. The key was saved to main
+  at 3:52 PM (`6e110a6`). Read at 4 PM: no state held, the 50 named parks are exactly the 50 that lost an outline; the
+  run still ended red on the outline master check (408 problems; 412 on the runs before it). **That is the KEY on main.
+  It is not the map people see: read C2.**
 
 Known issues:
 - **The name rule makes almost the whole key and has never been graded on a random sample.** The bar the owner set on
@@ -143,6 +145,30 @@ Known issues:
 - **The 18 Nov grade went wrong in ways worth knowing** (`key-quality.md` section 0): it was circular (rules graded
   against the answers the key obeys), a grader judged the raw file and not the built key, a false finding was told to
   the owner and corrected the same day, a number went out without its range.
+
+### C2. From the saved key to the map people see (found 19 Nov, 4:30 PM)
+
+- The public pages never read a working file. They read `data/released/` only, through `data/released/RELEASED.json`
+  ("written only by kpc_release.py, the by-hand Release workflow"). A US park is drawn from the released copy of
+  `data/outlines/US-XX.geojson.gz` (one outline per park), with the released copy of its key.
+- The Release (`.github/workflows/kpc-release.yml`): by hand only, only the owner's login may start it, one area at a
+  time, from a commit on main, and only for an area that is green, "no worse than live", and has a RELEASE-READY: YES
+  in a Quality verdicts file (`data/status/quality/verdicts.json`, which is not on main today).
+- **State [19 Nov, checked]: the last US Release was 11 Nov 22:10 UTC; Canada and Kentucky 12 Nov. Nothing since.** The
+  working outline files (`data/outlines/US-XX`) were also last written on 11 Nov: since store mode (15 Nov) the key run
+  skips its outline step. So every key change of 12 to 19 Nov is in the working key only.
+- What that looks like: Seven Sisters (US-12918) is on the public map with the 1,554-acre wildlife area records; today's
+  key gives it the 8-acre fishing access site. Flathead and Custer Gallatin are on the map with the state's copy;
+  today's key has the Forest Service records. Laurel (US-12938) is approximate, 1,093 acres, on the map; official,
+  1,378 acres, in the key. Montana: 50 of 254 parks differ between the map and today's key; Delaware: 29 of 89.
+
+Known issues:
+- **"Released" has meant two things.** All day on 19 Nov the notes said a state was "released" when the drop guard let
+  its key be saved. The reviewer wrote "all 11 released" and "wrong land on today's map: 9 to 0" without checking what
+  the map reads. The map did not change.
+- **Two steps have no owner and no trigger**: writing outline files that agree with the saved key (in store mode), and
+  the by-hand Release with its verdict file. The chat that used to write the verdicts ("Quality") is retired.
+- A Release today would pair today's key with 11 Nov outlines. The red master check may be counting exactly that.
 
 ### D. 2-fers
 
@@ -210,21 +236,23 @@ reader's "0 wrong" rests on 26 facts.
 
 ## 5. What does not work well, worst first (the reviewer's own ranking: argue with it)
 
-1. No real error rate exists for the key: the name rule is ungraded on a random sample, and size is known for 4%.
-2. Layers: missing, short and blocked ones, with no gate that says "this state is ready to build".
-3. Status lives in hand-written notes that go stale within hours; chats then plan on a stale note. The notes are huge
+1. **The map people see is eight days behind the key, and nobody was watching the gap** (C2). A week of fixes, the
+   known wrong outlines included, is not on the public map, and the word "released" hid it.
+2. No real error rate exists for the key: the name rule is ungraded on a random sample, and size is known for 4%.
+3. Layers: missing, short and blocked ones, with no gate that says "this state is ready to build".
+4. Status lives in hand-written notes that go stale within hours; chats then plan on a stale note. The notes are huge
    (`mapping.md` 446 KB, `key-quality.md` 150 KB, `new-chat-starters.md` 128 KB) and cost usage every time one is opened.
-4. Work is passed between many chats and agents; each pass re-derives context. A promise can be DONE in the ledger and
+5. Work is passed between many chats and agents; each pass re-derives context. A promise can be DONE in the ledger and
    "not built" in the note.
-5. The 2-fer side: all data old, one huge file, rules as switches each runner must remember, runs parked.
-6. The store: licence backlog on one PC; the push check blocks finished work; memory kills.
-7. Rebuild cost: 50 states for any rule edit; red-by-design scheduled runs that send email.
-8. Repo size **[17 Nov]**: KPC-Data 1.4 GB on GitHub (its line is 400 MB), KPC-Links about 800 MB (line 650). Bots
+6. The 2-fer side: all data old, one huge file, rules as switches each runner must remember, runs parked.
+7. The store: licence backlog on one PC; the push check blocks finished work; memory kills.
+8. Rebuild cost: 50 states for any rule edit; red-by-design scheduled runs that send email.
+9. Repo size **[17 Nov]**: KPC-Data 1.4 GB on GitHub (its line is 400 MB), KPC-Links about 800 MB (line 650). Bots
    save every few minutes (about 137 commits a day) and rewrite big files; the waiting room alone wrote 161 MB in 119
    commits; 26,117 small files; 2.2 GB of workflow artifacts; 38 and 72 branches. A seven-step fix list was written on
    17 Nov; we do not know how much was done.
-9. Canada, Kentucky and the world are outside every grade.
-10. The waiting room has no owner since the numbered chats were retired.
+10. Canada, Kentucky and the world are outside every grade.
+11. The waiting room has no owner since the numbered chats were retired.
 
 ## 6. Usage and cost
 
@@ -277,6 +305,9 @@ reader's "0 wrong" rests on 26 facts.
 10. Where is usage wasted: Actions minutes, repeat rebuilds, commits, files a chat must read to start work?
 11. What should be a bot that is a chat's job now, and what is a bot's job now that needs a person?
 12. If you had two weeks: your order of work, and what you would stop doing.
+13. From a saved key to the public map: list every step and guard and who may run each. What would let a key reach
+    the map without its outlines, or outlines without their key? How should the club see, every day, how far the
+    public map is behind the key?
 
 ## 9. What to send back
 
