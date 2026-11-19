@@ -1,0 +1,19 @@
+#278 round 3 (3dd62f44, US rules ee2b6f1e9673), Fable's own builds, 19 Nov. main (7c6e01e1bc2b) against main + the PR's five files,
+same saved shapes (boundary-cache: AK 11 Nov, CO / ID 12 Nov), same KPC-Data overlay, KPC_KEY_REMATCH_IDS=1 (what the key run sets for a
+scope with saved_ids), GEO_CACHE_MODE=only.
+
+Notices (PR side):
+AK  R-PP1a, a person's question: US-0069 Wrangell-St. Elias National Preserve
+AK  R-PP1: 6 record(s) to check: US-0003 Aniakchak NM, US-0026 Gates of the Arctic N Preserve, US-0029 Glacier Bay NP, US-0044 Katmai N Preserve,
+    US-0048 Lake Clark N Preserve, US-0902 Aniakchak N Preserve
+CO  R-PP1: 2 record(s) to check: US-0033 Great Sand Dunes N Preserve, US-8295 Great Sand Dunes NP        (no R-PP1a line)
+ID  R-PP1a, a person's question: US-0665 Craters of the Moon National Preserve
+
+Keys, main -> PR:
+AK 179 parks, outlines 135 -> 135, 3 parks change: US-0026 loses 3301 (945,247 ac), US-0044 loses 3304 (328,054), US-0048 loses 3305 (1,249,676);
+   each keeps its park record. US-0069 keeps 3480 + 3314.
+CO 276 parks, outlines 266 -> 266, 0 parks change (US-0033 = 3446, US-8295 = 3303).
+ID 362 parks, outlines 228 -> 228, 0 parks change (US-0665 keeps 3299 + 3358).
+
+WITHOUT KPC_KEY_REMATCH_IDS (what kpc-key-measure.yml runs) the same notices print but 0 parks change in all three states: saved ids are
+carried through a rules change. A measure run shows a rule's notices only; it cannot show what a rule does to parks that are joined already.

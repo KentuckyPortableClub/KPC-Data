@@ -1,0 +1,23 @@
+Named-parks drop guard (#281), dress rehearsal by Fable, 19 Nov. Tree = main (59662b1 + notes) with run 44528656941's would-be key files of
+the 13 held states (release key-held, 14:03 UTC) and every outline file re-saved with the save's own rule (134 outlines left out, 50 states).
+KPC_DROP_PCT=0 KPC_DROP_MIN=0, no KPC_DROP_OK.
+
+(a) reviewed guard, list = lost.json + grade-drops.json, 13 states: ALL 13 let through, 0 failed (37 saved states untouched). rc 0
+    AK 2, AR 13, DE 1, FL 3, GA 4, ID 5, MT 6, NC 2, OR 11, RI 2, UT 10, VA 4, WY 6 parks named.
+(b) guard as first written, list = lost.json: HELD ID (US-7816), MT (US-7816), UT (US-5779): old outlines of pin parks that the save
+    leaves out on purpose. A yes for those three states would not have got through. Fixed (pin_drops / not_in_key_drops subtracted).
+    It also let six official -> approximate parks through unseen. Fixed (a lost official grade must be named).
+(c) reviewed guard, list = lost.json only: HELD ID (US-11530), MT (US-11215 US-12630 US-4502), VA (US-9899 US-9937): the grade drops.
+(d) reviewed guard, US-5461 off Oregon's list, Wyoming not listed: HELD OR (names US-5461); WY held by the old limit-0 rule.
+(e) no list: the reviewed guard and main's guard hold the same 13 states with the same counts.
+The guard's own count of lost outlines equals lost.json in all 13 states (63 = 63).
+
+REPLAY OF THE REAL EVENT (added 11:35 AM). Run US-44567326912 (bot queue start, 16:32 UTC; its states: the 13 held + NH NJ TN WA) saved
+Idaho and Oregon to main (commit 00d65a98) without the owner's yes. Tree = main just before that save; files = what the run built
+(ID NH NJ OR TN WA from 00d65a98, the 11 held from release key-held 17:16 UTC).
+main's guard:      11 held (AK AR DE FL GA MT NC RI UT VA WY). ID official 174 -> 174, OR 344 -> 345: "no drop". This is what happened.
+reviewed guard:    13 held. ID: US-11530 (grade), US-2239, US-2240, US-2250. OR: US-10017 US-10479 US-10483 US-10487 US-13098 US-13099
+                   US-5461 (Tillamook SF) US-9159 US-9981. MT also on STOP.
+Cause: the count rule is net. Evidence batch 01 (#277) gave back Milner (ID), Topsy and Bear Gulch (OR); Nez Perce NHP is new in OR.
+With Flathead fixed (#284) Montana's count would read 242 -> 242 and main's guard would have saved Montana too (Custer Gallatin cut to a third).
+Full list for the other 12 + Montana on STOP: 12 let through, Montana held.
