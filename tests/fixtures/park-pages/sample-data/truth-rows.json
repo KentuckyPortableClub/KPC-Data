@@ -1,0 +1,1676 @@
+{
+ "US-0003": {
+  "checked": "2026-11-10",
+  "handover": [
+   {
+    "date_hint": null,
+    "kind": "managed by",
+    "line": "tastrophic change and the resilience of life. Management : Aniakchak National Monument and Preserve is managed by National Park Service staff to preserve unimpaired its natural and cultural resources and values for the enjoyment, education, and inspiration of this and",
+    "owner_now": "National Park Service",
+    "src": "https://www.nps.gov/ania/learn/index.htm",
+    "why": "about / history page of the park's site"
+   }
+  ],
+  "n": "Aniakchak National Preserve",
+  "official": null,
+  "ours": {
+   "acres": 596234,
+   "manager": "",
+   "pieces": [
+    [
+     3294,
+     "Aniakchak National Preserve",
+     458884,
+     "name"
+    ],
+    [
+     3337,
+     "Aniakchak National Monument",
+     137350,
+     "name"
+    ]
+   ],
+   "pin": "inside",
+   "src": "USGS PAD-US",
+   "unknown_pieces": 0
+  },
+  "owner_now": "National Park Service",
+  "pages": [
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/ania/index.htm",
+    "why": "the park's page (data/parkinfo)"
+   },
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/ania/learn/index.htm",
+    "why": "about / history page of the park's site"
+   },
+   {
+    "status": "HTTP 404",
+    "url": "https://www.nps.gov/ania/learn/management/statistics.htm",
+    "why": "NPS park statistics page"
+   },
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/ania/learn/news/newsreleases.htm",
+    "why": "NPS news releases"
+   }
+  ],
+  "pct": null,
+  "score": 7,
+  "score_parts": {
+   "name": 2,
+   "pin": 2,
+   "size": 1,
+   "source": 2
+  },
+  "sizes": [],
+  "t": "National Preserve",
+  "ver": 15,
+  "verdict": "no size on page"
+ },
+ "US-0022": {
+  "checked": "2026-11-10",
+  "handover": [],
+  "n": "Denali National Park",
+  "official": {
+   "acres": 4740091.0,
+   "as": "4,740,091 acres",
+   "clean": false,
+   "line": "med Denali National Park and Preserve, park roughly tripled in size. Learn more about park history Size Park: 4,740,091 acres (including 2,146,270 acres of Federally-designated Wilderness ) Preserve: 1,334,118 acres Total area: 6,075,0",
+   "read": "2026-11-10",
+   "sent": "Park: 4,740,091 acres (including 2,146,270 acres of Federally-designated Wilderness )",
+   "url": "https://www.nps.gov/dena/learn/management/statistics.htm",
+   "why": "total-looking"
+  },
+  "ours": {
+   "acres": 4680746,
+   "manager": "",
+   "pieces": [
+    [
+     3435,
+     "Denali National Park",
+     4680746,
+     "name"
+    ]
+   ],
+   "pin": "inside",
+   "src": "USGS PAD-US",
+   "unknown_pieces": 0
+  },
+  "owner_now": null,
+  "pages": [
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/dena/index.htm",
+    "why": "the park's page (data/parkinfo)"
+   },
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/dena/learn/index.htm",
+    "why": "about / history page of the park's site"
+   },
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/dena/planyourvisit/photography.htm",
+    "why": "about / history page of the park's site"
+   },
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/dena/learn/management/statistics.htm",
+    "why": "NPS park statistics page"
+   },
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/dena/learn/news/newsreleases.htm",
+    "why": "NPS news releases"
+   }
+  ],
+  "pct": 1,
+  "same_agency": false,
+  "score": 7,
+  "score_parts": {
+   "name": 2,
+   "pin": 2,
+   "size": 2,
+   "source": 1
+  },
+  "sizes": [
+   {
+    "acres": 2146000.0,
+    "as": "2,146,000 acres",
+    "clean": false,
+    "line": "& Numbers Quick history February 26, 1917 - Established (as \"Mount McKinley National Park\"). Park was around 2,146,000 acres at that time. 1976 - Designated an International Biosphere Reserve December 2, 1980 - Renamed Denali National",
+    "total_like": false,
+    "url": "https://www.nps.gov/dena/learn/management/statistics.htm",
+    "why": "no total words near it"
+   },
+   {
+    "acres": 4740091.0,
+    "as": "4,740,091 acres",
+    "clean": false,
+    "line": "med Denali National Park and Preserve, park roughly tripled in size. Learn more about park history Size Park: 4,740,091 acres (including 2,146,270 acres of Federally-designated Wilderness ) Preserve: 1,334,118 acres Total area: 6,075,0",
+    "total_like": true,
+    "url": "https://www.nps.gov/dena/learn/management/statistics.htm",
+    "why": "total-looking"
+   },
+   {
+    "acres": 2146270.0,
+    "as": "2,146,270 acres",
+    "clean": false,
+    "line": "d Preserve, park roughly tripled in size. Learn more about park history Size Park: 4,740,091 acres (including 2,146,270 acres of Federally-designated Wilderness ) Preserve: 1,334,118 acres Total area: 6,075,030 acres (9,492 square mile",
+    "total_like": true,
+    "url": "https://www.nps.gov/dena/learn/management/statistics.htm",
+    "why": "total-looking"
+   },
+   {
+    "acres": 1334118.0,
+    "as": "1,334,118 acres",
+    "clean": false,
+    "line": "history Size Park: 4,740,091 acres (including 2,146,270 acres of Federally-designated Wilderness ) Preserve: 1,334,118 acres Total area: 6,075,030 acres (9,492 square miles) Perimeter: 606 miles Comparison: New Hampshire is 9,351 squa",
+    "total_like": true,
+    "url": "https://www.nps.gov/dena/learn/management/statistics.htm",
+    "why": "total-looking"
+   },
+   {
+    "acres": 6075030.0,
+    "as": "6,075,030 acres",
+    "clean": true,
+    "line": "1 acres (including 2,146,270 acres of Federally-designated Wilderness ) Preserve: 1,334,118 acres Total area: 6,075,030 acres (9,492 square miles) Perimeter: 606 miles Comparison: New Hampshire is 9,351 square miles in area, Massachuse",
+    "total_like": true,
+    "url": "https://www.nps.gov/dena/learn/management/statistics.htm",
+    "why": "clean total"
+   },
+   {
+    "acres": 6074880.0,
+    "as": "9,492 square miles",
+    "clean": false,
+    "line": "g 2,146,270 acres of Federally-designated Wilderness ) Preserve: 1,334,118 acres Total area: 6,075,030 acres (9,492 square miles) Perimeter: 606 miles Comparison: New Hampshire is 9,351 square miles in area, Massachusetts is 10,555 square",
+    "total_like": true,
+    "url": "https://www.nps.gov/dena/learn/management/statistics.htm",
+    "why": "total-looking"
+   },
+   {
+    "acres": 5984640.0,
+    "as": "9,351 square miles",
+    "clean": false,
+    "line": ",118 acres Total area: 6,075,030 acres (9,492 square miles) Perimeter: 606 miles Comparison: New Hampshire is 9,351 square miles in area, Massachusetts is 10,555 square miles. Staffing 129 permanent employees 135 seasonal employees 24 int",
+    "total_like": true,
+    "url": "https://www.nps.gov/dena/learn/management/statistics.htm",
+    "why": "total-looking"
+   },
+   {
+    "acres": 6755200.0,
+    "as": "10,555 square miles",
+    "clean": false,
+    "line": "square miles) Perimeter: 606 miles Comparison: New Hampshire is 9,351 square miles in area, Massachusetts is 10,555 square miles. Staffing 129 permanent employees 135 seasonal employees 24 interns 272 volunteers Infrastructure 3 RV/tent c",
+    "total_like": true,
+    "url": "https://www.nps.gov/dena/learn/management/statistics.htm",
+    "why": "total-looking"
+   }
+  ],
+  "t": "National Park",
+  "ver": 15,
+  "verdict": "agree"
+ },
+ "US-0026": {
+  "checked": "2026-11-10",
+  "handover": [],
+  "n": "Gates of the Arctic National Park",
+  "official": null,
+  "ours": {
+   "acres": 8224560,
+   "manager": "",
+   "pieces": [
+    [
+     3439,
+     "Gates of the Arctic National Park",
+     7279313,
+     "name"
+    ],
+    [
+     3301,
+     "Gates of the Arctic National Preserve",
+     945247,
+     "name"
+    ]
+   ],
+   "pin": "just outside",
+   "src": "USGS PAD-US",
+   "unknown_pieces": 0
+  },
+  "owner_now": null,
+  "pages": [
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/gaar/index.htm",
+    "why": "the park's page (data/parkinfo)"
+   },
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/gaar/learn/index.htm",
+    "why": "about / history page of the park's site"
+   },
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/gaar/learn/historyculture/stories.htm",
+    "why": "about / history page of the park's site"
+   },
+   {
+    "status": "HTTP 404",
+    "url": "https://www.nps.gov/gaar/learn/management/statistics.htm",
+    "why": "NPS park statistics page"
+   },
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/gaar/learn/news/newsreleases.htm",
+    "why": "NPS news releases"
+   }
+  ],
+  "pct": null,
+  "score": 6,
+  "score_parts": {
+   "name": 2,
+   "pin": 1,
+   "size": 1,
+   "source": 2
+  },
+  "sizes": [],
+  "t": "National Park",
+  "ver": 15,
+  "verdict": "no size on page"
+ },
+ "US-0029": {
+  "checked": "2026-11-10",
+  "handover": [],
+  "n": "Glacier Bay National Preserve",
+  "official": {
+   "acres": 3300000.0,
+   "as": "3.3 million acres",
+   "clean": false,
+   "line": "Search Search This Site All NPS Exiting nps.gov Cancel Glacier Bay National Park & Preserve \u2022 Alaska Covering 3.3 million acres of rugged mountains, dynamic glaciers, temperate rainforest, wild coastlines and deep sheltered fjords, Glaci",
+   "read": "2026-11-10",
+   "sent": "Covering 3.3 million acres of rugged mountains, dynamic glaciers, temperate rainforest, wild coastlines and deep sheltered fjords, Glacier Bay National Park and Preserve is known as Homeland to the Huna and Yakutat Ling\u00edt, and is a highlight of Alaska's Inside Passage.",
+   "url": "https://www.nps.gov/glba/index.htm",
+   "why": "total-looking"
+  },
+  "ours": {
+   "acres": 3283379,
+   "manager": "",
+   "pieces": [
+    [
+     3441,
+     "Glacier Bay National Park",
+     3225719,
+     "name"
+    ],
+    [
+     3302,
+     "Glacier Bay National Preserve",
+     57660,
+     "name"
+    ]
+   ],
+   "pin": "inside",
+   "src": "USGS PAD-US",
+   "unknown_pieces": 0
+  },
+  "owner_now": null,
+  "pages": [
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/glba/index.htm",
+    "why": "the park's page (data/parkinfo)"
+   },
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/glba/learn/management/statistics.htm",
+    "why": "NPS park statistics page"
+   },
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/glba/learn/news/newsreleases.htm",
+    "why": "NPS news releases"
+   }
+  ],
+  "pct": 1,
+  "same_agency": false,
+  "score": 8,
+  "score_parts": {
+   "name": 2,
+   "pin": 2,
+   "size": 2,
+   "source": 2
+  },
+  "sizes": [
+   {
+    "acres": 3300000.0,
+    "as": "3.3 million acres",
+    "clean": false,
+    "line": "Search Search This Site All NPS Exiting nps.gov Cancel Glacier Bay National Park & Preserve \u2022 Alaska Covering 3.3 million acres of rugged mountains, dynamic glaciers, temperate rainforest, wild coastlines and deep sheltered fjords, Glaci",
+    "total_like": true,
+    "url": "https://www.nps.gov/glba/index.htm",
+    "why": "total-looking"
+   }
+  ],
+  "t": "National Preserve",
+  "ver": 15,
+  "verdict": "agree"
+ },
+ "US-0044": {
+  "checked": "2026-11-10",
+  "handover": [
+   {
+    "date_hint": null,
+    "kind": "managed by",
+    "line": "Ranger Program : Level up in this program designed for young adults and adults. Management : Katmai is managed by National Park Service staff to preserve unimpaired its natural and cultural resources and values for the enjoyment, education, and inspiration of this and",
+    "owner_now": "National Park Service",
+    "src": "https://www.nps.gov/katm/learn/index.htm",
+    "why": "about / history page of the park's site"
+   },
+   {
+    "date_hint": null,
+    "kind": "managed by",
+    "line": "lcanoes, fierce weather, and a changing climate. Science and Research : Research conducted on lands managed by the National Park Service is valuable to park managers, educators, and the larger scientific community. Explore this link to read about the work of scient",
+    "owner_now": "National Park Service",
+    "src": "https://www.nps.gov/katm/learn/index.htm",
+    "why": "about / history page of the park's site"
+   }
+  ],
+  "n": "Katmai National Park",
+  "official": null,
+  "ours": {
+   "acres": 3952224,
+   "manager": "",
+   "pieces": [
+    [
+     3457,
+     "Katmai National Park",
+     3624170,
+     "name"
+    ],
+    [
+     3304,
+     "Katmai National Preserve",
+     328054,
+     "name"
+    ]
+   ],
+   "pin": "inside",
+   "src": "USGS PAD-US",
+   "unknown_pieces": 0
+  },
+  "owner_now": "National Park Service",
+  "pages": [
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/katm/index.htm",
+    "why": "the park's page (data/parkinfo)"
+   },
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/katm/learn/index.htm",
+    "why": "about / history page of the park's site"
+   },
+   {
+    "status": "HTTP 404",
+    "url": "https://www.nps.gov/katm/learn/management/statistics.htm",
+    "why": "NPS park statistics page"
+   },
+   {
+    "status": "HTTP 404",
+    "url": "https://www.nps.gov/katm/learn/news/newsreleases.htm",
+    "why": "NPS news releases"
+   }
+  ],
+  "pct": null,
+  "score": 7,
+  "score_parts": {
+   "name": 2,
+   "pin": 2,
+   "size": 1,
+   "source": 2
+  },
+  "sizes": [],
+  "t": "National Park",
+  "ver": 15,
+  "verdict": "no size on page"
+ },
+ "US-0048": {
+  "cause": "no total-looking sentence: numbers found were parts or other units",
+  "checked": "2026-11-10",
+  "handover": [],
+  "n": "Lake Clark National Park",
+  "official": null,
+  "ours": {
+   "acres": 3737532,
+   "manager": "",
+   "pieces": [
+    [
+     3461,
+     "Lake Clark National Park",
+     2487856,
+     "name"
+    ],
+    [
+     3305,
+     "Lake Clark National Preserve",
+     1249676,
+     "name"
+    ]
+   ],
+   "pin": "inside",
+   "src": "USGS PAD-US",
+   "unknown_pieces": 0
+  },
+  "owner_now": null,
+  "pages": [
+   {
+    "other_unit": true,
+    "status": "ok",
+    "url": "https://www.nps.gov/lacl/index.htm",
+    "why": "the park's page (data/parkinfo)"
+   },
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/lacl/learn/index.htm",
+    "why": "about / history page of the park's site"
+   }
+  ],
+  "pct": null,
+  "score": 7,
+  "score_parts": {
+   "name": 2,
+   "pin": 2,
+   "size": 1,
+   "source": 2
+  },
+  "sizes": [
+   {
+    "acres": 800000.0,
+    "as": "1,250 square miles",
+    "clean": false,
+    "line": "systems in the Chigmit and Neacola Mountains. NPS Photo / Paige Spencer Perenial snow and glacial ice covers ~1,250 square miles, or 20% of Lake Clark National Park and Preserve. NPS Photo / Chuck Lindsay Bear viewing is a popular activit",
+    "total_like": false,
+    "url": "https://www.nps.gov/lacl/index.htm",
+    "why": "another park / unit named in the sentence"
+   },
+   {
+    "acres": 4000000.0,
+    "as": "4 million acres",
+    "clean": false,
+    "line": "Park & Preserve Contact Us Learn About the Park There's plenty to discover about a park that encompasses over 4 million acres. Learn something new today by exploring the pages in this section of Lake Clark's website. Nature Explore the",
+    "total_like": false,
+    "url": "https://www.nps.gov/lacl/learn/index.htm",
+    "why": "a page of another unit; the sentence does not name this park"
+   }
+  ],
+  "t": "National Park",
+  "ver": 15,
+  "verdict": "unsure"
+ },
+ "US-0069": {
+  "cause": "no total-looking sentence: numbers found were parts or other units",
+  "checked": "2026-11-10",
+  "handover": [],
+  "n": "Wrangell-St. Elias National Park",
+  "official": null,
+  "ours": {
+   "acres": 12284251,
+   "manager": "",
+   "pieces": [
+    [
+     3480,
+     "Wrangell-St. Elias National Park",
+     7950157,
+     "name"
+    ],
+    [
+     3314,
+     "Wrangell-St. Elias National Preserve",
+     4334094,
+     "name"
+    ]
+   ],
+   "pin": "inside",
+   "src": "USGS PAD-US",
+   "unknown_pieces": 0
+  },
+  "owner_now": null,
+  "pages": [
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/wrst/index.htm",
+    "why": "the park's page (data/parkinfo)"
+   },
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/wrst/learn/index.htm",
+    "why": "about / history page of the park's site"
+   },
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/wrst/learn/management/statistics.htm",
+    "why": "NPS park statistics page"
+   },
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/wrst/learn/news/newsreleases.htm",
+    "why": "NPS news releases"
+   }
+  ],
+  "pct": null,
+  "score": 7,
+  "score_parts": {
+   "name": 2,
+   "pin": 2,
+   "size": 1,
+   "source": 2
+  },
+  "sizes": [
+   {
+    "acres": 13200000.0,
+    "as": "13.2 million acres",
+    "clean": false,
+    "line": "\u2022 Alaska Wrangell-St. Elias is a vast national park that rises from the ocean all the way up to 18,008 ft. At 13.2 million acres, the park is the same size as Yellowstone National Park, Yosemite National Park, and Switzerland combined! Wi",
+    "total_like": false,
+    "url": "https://www.nps.gov/wrst/index.htm",
+    "why": "another park / unit named in the sentence"
+   }
+  ],
+  "t": "National Park",
+  "ver": 15,
+  "verdict": "unsure"
+ },
+ "US-0878": {
+  "checked": "2026-11-10",
+  "handover": [],
+  "n": "Aniakchak National Wild and Scenic River",
+  "ours": null,
+  "score": null,
+  "t": "National Wild and Scenic River",
+  "ver": 15,
+  "verdict": "no outline"
+ },
+ "US-0902": {
+  "checked": "2026-11-10",
+  "handover": [
+   {
+    "date_hint": null,
+    "kind": "managed by",
+    "line": "tastrophic change and the resilience of life. Management : Aniakchak National Monument and Preserve is managed by National Park Service staff to preserve unimpaired its natural and cultural resources and values for the enjoyment, education, and inspiration of this and",
+    "owner_now": "National Park Service",
+    "src": "https://www.nps.gov/ania/learn/index.htm",
+    "why": "about / history page of the park's site"
+   }
+  ],
+  "n": "Aniakchak National Monument",
+  "official": null,
+  "ours": {
+   "acres": 596234,
+   "manager": "",
+   "pieces": [
+    [
+     3294,
+     "Aniakchak National Preserve",
+     458884,
+     "name"
+    ],
+    [
+     3337,
+     "Aniakchak National Monument",
+     137350,
+     "name"
+    ]
+   ],
+   "pin": "inside",
+   "src": "USGS PAD-US",
+   "unknown_pieces": 0
+  },
+  "owner_now": "National Park Service",
+  "pages": [
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/ania/index.htm",
+    "why": "the park's page (data/parkinfo)"
+   },
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/ania/learn/index.htm",
+    "why": "about / history page of the park's site"
+   },
+   {
+    "status": "HTTP 404",
+    "url": "https://www.nps.gov/ania/learn/management/statistics.htm",
+    "why": "NPS park statistics page"
+   },
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/ania/learn/news/newsreleases.htm",
+    "why": "NPS news releases"
+   }
+  ],
+  "pct": null,
+  "score": 7,
+  "score_parts": {
+   "name": 2,
+   "pin": 2,
+   "size": 1,
+   "source": 2
+  },
+  "sizes": [],
+  "t": "National Monument",
+  "ver": 15,
+  "verdict": "no size on page"
+ },
+ "US-12607": {
+  "checked": "2026-11-10",
+  "handover": [],
+  "n": "Glacier Bay National Park",
+  "official": {
+   "acres": 3300000.0,
+   "as": "3.3 million acres",
+   "clean": false,
+   "line": "Search Search This Site All NPS Exiting nps.gov Cancel Glacier Bay National Park & Preserve \u2022 Alaska Covering 3.3 million acres of rugged mountains, dynamic glaciers, temperate rainforest, wild coastlines and deep sheltered fjords, Glaci",
+   "read": "2026-11-10",
+   "sent": "Covering 3.3 million acres of rugged mountains, dynamic glaciers, temperate rainforest, wild coastlines and deep sheltered fjords, Glacier Bay National Park and Preserve is known as Homeland to the Huna and Yakutat Ling\u00edt, and is a highlight of Alaska's Inside Passage.",
+   "url": "https://www.nps.gov/glba/index.htm",
+   "why": "total-looking"
+  },
+  "ours": {
+   "acres": 3225719,
+   "manager": "",
+   "pieces": [
+    [
+     3441,
+     "Glacier Bay National Park",
+     3225719,
+     "name"
+    ]
+   ],
+   "pin": "inside",
+   "src": "USGS PAD-US",
+   "unknown_pieces": 0
+  },
+  "owner_now": null,
+  "pages": [
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/glba/index.htm",
+    "why": "the park's page (data/parkinfo)"
+   },
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/glba/learn/management/statistics.htm",
+    "why": "NPS park statistics page"
+   },
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/glba/learn/news/newsreleases.htm",
+    "why": "NPS news releases"
+   }
+  ],
+  "pct": 2,
+  "same_agency": false,
+  "score": 7,
+  "score_parts": {
+   "name": 2,
+   "pin": 2,
+   "size": 2,
+   "source": 1
+  },
+  "sizes": [
+   {
+    "acres": 3300000.0,
+    "as": "3.3 million acres",
+    "clean": false,
+    "line": "Search Search This Site All NPS Exiting nps.gov Cancel Glacier Bay National Park & Preserve \u2022 Alaska Covering 3.3 million acres of rugged mountains, dynamic glaciers, temperate rainforest, wild coastlines and deep sheltered fjords, Glaci",
+    "total_like": true,
+    "url": "https://www.nps.gov/glba/index.htm",
+    "why": "total-looking"
+   }
+  ],
+  "t": "National Park",
+  "ver": 15,
+  "verdict": "agree"
+ },
+ "US-1035": {
+  "checked": "2026-11-15",
+  "handover": [],
+  "n": "Buck's Pocket State Park",
+  "official": null,
+  "ours": {
+   "acres": 0,
+   "manager": "",
+   "pieces": [],
+   "pin": "inside",
+   "src": "",
+   "unknown_pieces": 1
+  },
+  "owner_now": null,
+  "pages": [
+   {
+    "status": "ok",
+    "url": "https://www.alapark.com/parks/bucks-pocket-state-park",
+    "why": "the park's page (data/parkinfo)"
+   },
+   {
+    "status": "ok",
+    "url": "https://www.alapark.com/parks/bucks-pocket-state-park/friends-park",
+    "why": "about / history page of the park's site"
+   },
+   {
+    "other_unit": true,
+    "status": "HTTP 403",
+    "url": "https://www.alapark.com/rules-and-regulations",
+    "why": "rules page (documents bot)"
+   }
+  ],
+  "pct": null,
+  "score": 7,
+  "score_parts": {
+   "name": 2,
+   "pin": 2,
+   "size": 1,
+   "source": 2
+  },
+  "sizes": [],
+  "t": "State Park",
+  "ver": 15,
+  "verdict": "ours unknown"
+ },
+ "US-1092": {
+  "checked": "2026-11-09",
+  "handover": [],
+  "n": "Lake Fort Smith State Park",
+  "official": null,
+  "ours": {
+   "acres": 764,
+   "manager": "",
+   "pieces": [],
+   "pin": "just outside",
+   "src": "water outline only",
+   "unknown_pieces": 2
+  },
+  "owner_now": null,
+  "pages": [
+   {
+    "status": "ok",
+    "url": "https://www.arkansasstateparks.com/parks/lake-fort-smith-state-park",
+    "why": "the park's page (data/parkinfo)"
+   }
+  ],
+  "pct": null,
+  "score": 6,
+  "score_parts": {
+   "name": 2,
+   "pin": 1,
+   "size": 1,
+   "source": 2
+  },
+  "sizes": [],
+  "t": "State Park",
+  "ver": 15,
+  "verdict": "no size on page"
+ },
+ "US-0033": {
+  "checked": "2026-11-09",
+  "handover": [],
+  "n": "Great Sand Dunes National Park",
+  "official": null,
+  "ours": {
+   "acres": 146604,
+   "manager": "",
+   "pieces": [
+    [
+     3446,
+     "Great Sand Dunes National Park",
+     104902,
+     "name"
+    ],
+    [
+     3303,
+     "Great Sand Dunes National Preserve",
+     41702,
+     "name"
+    ]
+   ],
+   "pin": "inside",
+   "src": "USGS PAD-US",
+   "unknown_pieces": 0
+  },
+  "owner_now": null,
+  "pages": [
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/grsa/index.htm",
+    "why": "the park's page (data/parkinfo)"
+   },
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/grsa/learn/index.htm",
+    "why": "about / history page of the park's site"
+   },
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/grsa/learn/historyculture/index.htm",
+    "why": "about / history page of the park's site"
+   },
+   {
+    "status": "HTTP 404",
+    "url": "https://www.nps.gov/grsa/learn/management/statistics.htm",
+    "why": "NPS park statistics page"
+   },
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/grsa/learn/news/newsreleases.htm",
+    "why": "NPS news releases"
+   }
+  ],
+  "pct": null,
+  "score": 7,
+  "score_parts": {
+   "name": 2,
+   "pin": 2,
+   "size": 1,
+   "source": 2
+  },
+  "sizes": [],
+  "t": "National Park",
+  "ver": 15,
+  "verdict": "no size on page"
+ },
+ "US-8295": {
+  "checked": "2026-11-09",
+  "handover": [],
+  "n": "Great Sand Dunes National Preserve",
+  "official": null,
+  "ours": {
+   "acres": 146604,
+   "manager": "",
+   "pieces": [
+    [
+     3446,
+     "Great Sand Dunes National Park",
+     104902,
+     "name"
+    ],
+    [
+     3303,
+     "Great Sand Dunes National Preserve",
+     41702,
+     "name"
+    ]
+   ],
+   "pin": "inside",
+   "src": "USGS PAD-US",
+   "unknown_pieces": 0
+  },
+  "owner_now": null,
+  "pages": [
+   {
+    "status": "HTTP 403",
+    "url": "https://www.colorado.com/articles/national-park-profile-great-sand-dunes-national-park-preserve",
+    "why": "the park's page (data/parkinfo)"
+   }
+  ],
+  "pct": null,
+  "score": 7,
+  "score_parts": {
+   "name": 2,
+   "pin": 2,
+   "size": 1,
+   "source": 2
+  },
+  "sizes": [],
+  "t": "National Preserve",
+  "ver": 15,
+  "verdict": "no size on page"
+ },
+ "US-1656": {
+  "checked": "2026-11-17",
+  "handover": [],
+  "n": "Chatfield Hollow State Park",
+  "official": null,
+  "ours": {
+   "acres": 975,
+   "manager": "",
+   "pieces": [
+    [
+     54376,
+     "Chatfield Hollow State Park (Old Forest Management Area)",
+     156,
+     "name"
+    ],
+    [
+     52323,
+     "Chatfield Hollow State Park (Old Forest Management Area",
+     13,
+     "name"
+    ]
+   ],
+   "pin": "inside",
+   "src": "USGS PAD-US",
+   "unknown_pieces": 1
+  },
+  "owner_now": null,
+  "pages": [
+   {
+    "status": "ok",
+    "url": "https://portal.ct.gov/DEEP/State-Parks/Parks/Chatfield-Hollow-State-Park",
+    "why": "the park's page (data/parkinfo)"
+   },
+   {
+    "status": "ok",
+    "url": "https://portal.ct.gov/DEEP/Fishing/General-Information/Trout-Parks",
+    "why": "about / history page of the park's site"
+   }
+  ],
+  "pct": null,
+  "score": 7,
+  "score_parts": {
+   "name": 2,
+   "pin": 2,
+   "size": 1,
+   "source": 2
+  },
+  "sizes": [],
+  "t": "State Park",
+  "ver": 15,
+  "verdict": "no size on page"
+ },
+ "US-10682": {
+  "checked": "2026-11-01",
+  "handover": [],
+  "last_read_failed": "2026-11-09",
+  "n": "McGinnis Pond State Fishing Lake",
+  "official": null,
+  "ours": {
+   "acres": 142,
+   "manager": "",
+   "pieces": [
+    [
+     76226,
+     "Mcginnis Pond",
+     142,
+     "name"
+    ]
+   ],
+   "pin": "just outside",
+   "src": "USGS PAD-US",
+   "unknown_pieces": 3
+  },
+  "owner_now": null,
+  "pages": [
+   {
+    "status": "ok (browser)",
+    "url": "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=McGinnis-Pond",
+    "why": "the park's page (data/parkinfo)"
+   }
+  ],
+  "pct": null,
+  "score": 7,
+  "score_parts": {
+   "name": 2,
+   "pin": 2,
+   "size": 1,
+   "source": 2
+  },
+  "sizes": [],
+  "t": "State Fishing Lake",
+  "ver": 15,
+  "verdict": "no size on page"
+ },
+ "US-12938": {
+  "checked": "2026-11-01",
+  "handover": [],
+  "last_read_failed": "2026-11-09",
+  "n": "Laurel Industrial Forest Land State Wildlife Area",
+  "official": null,
+  "ours": {
+   "acres": 554,
+   "manager": "",
+   "pieces": [
+    [
+     "sgdec38",
+     "Industrial Forest Lands - Laurel Complex",
+     462,
+     "words"
+    ],
+    [
+     "sgdec69",
+     "Industrial Forest Lands - Laurel Complex",
+     359,
+     "words"
+    ],
+    [
+     "sgdec21",
+     "Industrial Forest Lands - Laurel Complex",
+     272,
+     "words"
+    ]
+   ],
+   "pin": "just outside",
+   "src": "",
+   "unknown_pieces": 0
+  },
+  "owner_now": null,
+  "pages": [
+   {
+    "status": "ok, no readable text",
+    "url": "https://documents.dnrec.delaware.gov/fw/Wildlife-Areas/Industrial-Laurel-Overview.pdf",
+    "why": "the park's page (data/parkinfo)"
+   }
+  ],
+  "pct": null,
+  "score": 5,
+  "score_parts": {
+   "name": 1,
+   "pin": 2,
+   "size": 1,
+   "source": 1
+  },
+  "sizes": [],
+  "t": "State Wildlife Area",
+  "ver": 15,
+  "verdict": "no size on page"
+ },
+ "US-5722": {
+  "checked": "2026-11-01",
+  "handover": [],
+  "last_read_failed": "2026-11-09",
+  "n": "McGinnis Pond State Wildlife Area",
+  "official": null,
+  "ours": {
+   "acres": 142,
+   "family_fold": "layers {'padus': 142, 'sgdec': 108}: one land in 2 layers, the padus copy used (108 ac of copies not added)",
+   "manager": "",
+   "pieces": [
+    [
+     76226,
+     "Mcginnis Pond",
+     142,
+     "name"
+    ]
+   ],
+   "pin": "inside",
+   "src": "USGS PAD-US",
+   "unknown_pieces": 3
+  },
+  "owner_now": null,
+  "pages": [
+   {
+    "status": "ok, no readable text",
+    "url": "https://documents.dnrec.delaware.gov/fw/Wildlife-Areas/McGinnis-Pond-Overview.pdf",
+    "why": "the park's page (data/parkinfo)"
+   }
+  ],
+  "pct": null,
+  "score": 7,
+  "score_parts": {
+   "name": 2,
+   "pin": 2,
+   "size": 1,
+   "source": 2
+  },
+  "sizes": [],
+  "t": "State Wildlife Area",
+  "ver": 15,
+  "verdict": "no size on page"
+ },
+ "US-0665": {
+  "checked": "2026-11-09",
+  "handover": [],
+  "n": "Craters of the Moon National Monument",
+  "official": null,
+  "ours": {
+   "acres": 466077,
+   "manager": "",
+   "pieces": [
+    [
+     3299,
+     "Craters of the Moon National Preserve",
+     411913,
+     "name"
+    ],
+    [
+     3358,
+     "Craters of the Moon National Monument",
+     54164,
+     "name"
+    ]
+   ],
+   "pin": "just outside",
+   "src": "USGS PAD-US",
+   "unknown_pieces": 0
+  },
+  "owner_now": null,
+  "pages": [
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/crmo/index.htm",
+    "why": "the park's page (data/parkinfo)"
+   },
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/crmo/learn/index.htm",
+    "why": "about / history page of the park's site"
+   },
+   {
+    "status": "HTTP 404",
+    "url": "https://www.nps.gov/crmo/learn/management/statistics.htm",
+    "why": "NPS park statistics page"
+   },
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/crmo/learn/news/newsreleases.htm",
+    "why": "NPS news releases"
+   }
+  ],
+  "pct": null,
+  "score": 6,
+  "score_parts": {
+   "name": 2,
+   "pin": 1,
+   "size": 1,
+   "source": 2
+  },
+  "sizes": [],
+  "t": "National Monument",
+  "ver": 15,
+  "verdict": "no size on page"
+ },
+ "US-11524": {
+  "checked": "2026-11-09",
+  "handover": [],
+  "n": "Deep Creek Reservoir State Fishing Lake",
+  "official": null,
+  "ours": {
+   "acres": 163,
+   "manager": "",
+   "pieces": [
+    [
+     "sgidb1938031",
+     "Deep Creek Reservoir",
+     163,
+     "name \u00b7 water outline only"
+    ]
+   ],
+   "pin": "inside",
+   "src": "water outline only",
+   "unknown_pieces": 0
+  },
+  "owner_now": null,
+  "pages": [
+   {
+    "other_unit": true,
+    "status": "deferred",
+    "url": "https://www.idfg.idaho.gov",
+    "why": "the park's page (data/parkinfo)"
+   }
+  ],
+  "pct": null,
+  "score": 7,
+  "score_parts": {
+   "name": 2,
+   "pin": 2,
+   "size": 1,
+   "source": 2
+  },
+  "sizes": [],
+  "t": "State Fishing Lake",
+  "ver": 15,
+  "verdict": "no size on page"
+ },
+ "US-3673": {
+  "cause": "agency bigger: our outline may miss a tract",
+  "checked": "2026-11-09",
+  "handover": [],
+  "n": "Tallgrass Prairie Preserve National Conservation Area",
+  "official": {
+   "acres": 11000.0,
+   "as": "11,000 acres",
+   "clean": false,
+   "line": "n the spring and early summer NPS Contact Us Begin Your Tallgrass Prairie Visit Today The preserve has nearly 11,000 acres to be explored. Take a tour of the historic buildings, go on a hike, or use our cell phone tour. Podcasts Che",
+   "read": "2026-11-09",
+   "sent": "The preserve has nearly 11,000 acres to be explored.",
+   "url": "https://www.nps.gov/tapr/index.htm",
+   "why": "total-looking"
+  },
+  "ours": {
+   "acres": 33,
+   "manager": "",
+   "pieces": [
+    [
+     3311,
+     "Tallgrass Prairie National Preserve",
+     33,
+     "name"
+    ]
+   ],
+   "pin": "just outside",
+   "src": "USGS PAD-US",
+   "unknown_pieces": 0
+  },
+  "owner_now": null,
+  "pages": [
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/tapr/index.htm",
+    "why": "the park's page (data/parkinfo)"
+   },
+   {
+    "other_unit": true,
+    "status": "ok",
+    "url": "https://www.nps.gov/tapr/learn/management/lawsandpolicies.htm",
+    "why": "rules page (documents bot)"
+   },
+   {
+    "status": "HTTP 404",
+    "url": "https://www.nps.gov/tapr/learn/management/statistics.htm",
+    "why": "NPS park statistics page"
+   },
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/tapr/learn/news/newsreleases.htm",
+    "why": "NPS news releases"
+   }
+  ],
+  "pct": 100,
+  "same_agency": false,
+  "score": 3,
+  "score_parts": {
+   "name": 2,
+   "pin": 1,
+   "size": 0,
+   "source": 0
+  },
+  "sizes": [
+   {
+    "acres": 11000.0,
+    "as": "11,000 acres",
+    "clean": false,
+    "line": "n the spring and early summer NPS Contact Us Begin Your Tallgrass Prairie Visit Today The preserve has nearly 11,000 acres to be explored. Take a tour of the historic buildings, go on a hike, or use our cell phone tour. Podcasts Che",
+    "total_like": true,
+    "url": "https://www.nps.gov/tapr/index.htm",
+    "why": "total-looking"
+   }
+  ],
+  "t": "National Conservation Area",
+  "ver": 15,
+  "verdict": "off"
+ },
+ "US-0040": {
+  "checked": "2026-11-09",
+  "handover": [],
+  "n": "Jean Lafitte National Historical Park",
+  "official": null,
+  "ours": {
+   "acres": 16609,
+   "manager": "",
+   "pieces": [
+    [
+     3213,
+     "Jean Lafitte National Historical Park and Preserve",
+     16609,
+     "name"
+    ]
+   ],
+   "pin": "inside",
+   "src": "USGS PAD-US",
+   "unknown_pieces": 0
+  },
+  "owner_now": null,
+  "pages": [
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/jela/index.htm",
+    "why": "the park's page (data/parkinfo)"
+   },
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/jela/learn/index.htm",
+    "why": "about / history page of the park's site"
+   },
+   {
+    "other_unit": true,
+    "status": "ok",
+    "url": "https://www.nps.gov/jela/learn/management/lawsandpolicies.htm",
+    "why": "rules page (documents bot)"
+   },
+   {
+    "status": "HTTP 404",
+    "url": "https://www.nps.gov/jela/learn/management/statistics.htm",
+    "why": "NPS park statistics page"
+   },
+   {
+    "status": "HTTP 404",
+    "url": "https://www.nps.gov/jela/learn/news/newsreleases.htm",
+    "why": "NPS news releases"
+   }
+  ],
+  "pct": null,
+  "score": 6,
+  "score_parts": {
+   "name": 2,
+   "pin": 2,
+   "size": 1,
+   "source": 1
+  },
+  "sizes": [],
+  "t": "National Historical Park",
+  "ver": 15,
+  "verdict": "no size on page"
+ },
+ "US-4501": {
+  "cause": "whole park compared (POTA lists it in 1 states: {'US-MT': 3333102})",
+  "checked": "2026-11-09",
+  "handover": [],
+  "n": "Custer Gallatin National Forest",
+  "note": "whole park compared (POTA lists it in 1 states: {'US-MT': 3333102})",
+  "official": null,
+  "ours": {
+   "acres": 3333102,
+   "acres_by_state": {
+    "US-MT": 3333102
+   },
+   "family_fold": "layers {'sgmtd': 3333102, 'padus': 1115748}: one land in 2 layers, the sgmtd copy used (1,115,748 ac of copies not added)",
+   "manager": "",
+   "pieces": [
+    [
+     "sgmtd1213",
+     "Custer Gallatin National Forest",
+     3333102,
+     "name"
+    ]
+   ],
+   "pin": "inside",
+   "src": "USGS PAD-US",
+   "states": [
+    "US-SD",
+    "US-MT"
+   ],
+   "unknown_pieces": 0,
+   "whole_park": true
+  },
+  "owner_now": null,
+  "pages": [
+   {
+    "status": "ok",
+    "url": "https://www.fs.usda.gov/main/custergallatin/home",
+    "why": "the park's page (data/parkinfo)"
+   }
+  ],
+  "pct": null,
+  "score": 7,
+  "score_parts": {
+   "name": 2,
+   "pin": 2,
+   "size": 1,
+   "source": 2
+  },
+  "sizes": [
+   {
+    "acres": 120.0,
+    "as": "120 acre",
+    "clean": false,
+    "line": "k Center Listed on the National Historic Register Constructed as the Meyers Creek Ranger Station in 1906, the 120-acre Meyers Creek Work Center complex on the Beartooth Ranger District of the Custer\u2026 Little Bear Whitebark Pine S",
+    "total_like": false,
+    "url": "https://www.fs.usda.gov/main/custergallatin/home",
+    "why": "history"
+   }
+  ],
+  "t": "National Forest",
+  "ver": 15,
+  "verdict": "unsure"
+ },
+ "US-4502": {
+  "checked": "2026-11-09",
+  "handover": [],
+  "n": "Flathead National Forest",
+  "official": null,
+  "ours": {
+   "acres": 2649452,
+   "manager": "",
+   "pieces": [
+    [
+     "sgmtd744",
+     "Flathead National Forest",
+     2649452,
+     "name"
+    ]
+   ],
+   "pin": "just outside",
+   "src": "",
+   "unknown_pieces": 0
+  },
+  "owner_now": null,
+  "pages": [
+   {
+    "status": "ok",
+    "url": "https://www.fs.usda.gov/flathead",
+    "why": "the park's page (data/parkinfo)"
+   }
+  ],
+  "pct": null,
+  "score": 6,
+  "score_parts": {
+   "name": 2,
+   "pin": 1,
+   "size": 1,
+   "source": 2
+  },
+  "sizes": [],
+  "t": "National Forest",
+  "ver": 15,
+  "verdict": "no size on page"
+ },
+ "US-12717": {
+  "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 28,000 acres, no total words near it)",
+  "checked": "2026-11-08",
+  "handover": [],
+  "n": "Deep River State Trail",
+  "official": {
+   "acres": 28000.0,
+   "as": "28,000 acres",
+   "clean": false,
+   "line": "aters for present and future generations. PLC connects people with nature. Since 1990, PLC has protected over 28,000 acres of land, completing over 200 land protection projects. North Carolina's Piedmont is a special place, with its",
+   "read": "2026-11-08",
+   "sent": "Since 1990, PLC has protected over 28,000 acres of land, completing over 200 land protection projects.",
+   "url": "https://trails.nc.gov/state-trails/deep-river-state-trail",
+   "why": "no total words near it"
+  },
+  "ours": {
+   "acres": 1424,
+   "manager": "",
+   "pieces": [
+    [
+     "sgnca3303",
+     "Deep River State Trail",
+     2433,
+     "same full name, far from the pin (G-1: the record names the "
+    ],
+    [
+     "sgnca3304",
+     "Deep River State Trail",
+     26,
+     "reviewed"
+    ]
+   ],
+   "pin": "well outside",
+   "src": "",
+   "unknown_pieces": 0
+  },
+  "owner_now": null,
+  "pages": [
+   {
+    "status": "ok",
+    "url": "https://trails.nc.gov/state-trails/deep-river-state-trail",
+    "why": "the park's page (data/parkinfo)"
+   }
+  ],
+  "pct": 95,
+  "same_agency": false,
+  "score": 5,
+  "score_parts": {
+   "name": 2,
+   "pin": 0,
+   "size": 1,
+   "source": 2
+  },
+  "sizes": [
+   {
+    "acres": 28000.0,
+    "as": "28,000 acres",
+    "clean": false,
+    "line": "aters for present and future generations. PLC connects people with nature. Since 1990, PLC has protected over 28,000 acres of land, completing over 200 land protection projects. North Carolina's Piedmont is a special place, with its",
+    "total_like": false,
+    "url": "https://trails.nc.gov/state-trails/deep-river-state-trail",
+    "why": "no total words near it"
+   }
+  ],
+  "t": "State Trail",
+  "ver": 15,
+  "verdict": "unsure"
+ },
+ "US-0953": {
+  "checked": "2026-11-09",
+  "handover": [],
+  "n": "Oregon Caves National Monument",
+  "official": null,
+  "ours": {
+   "acres": 4531,
+   "manager": "",
+   "pieces": [
+    [
+     3395,
+     "Oregon Caves National Monument and Preserve",
+     4531,
+     "words"
+    ]
+   ],
+   "pin": "inside",
+   "src": "USGS PAD-US",
+   "unknown_pieces": 0
+  },
+  "owner_now": null,
+  "pages": [
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/orca/index.htm",
+    "why": "the park's page (data/parkinfo)"
+   },
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/orca/learn/index.htm",
+    "why": "about / history page of the park's site"
+   },
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/orca/learn/historyculture/index.htm",
+    "why": "about / history page of the park's site"
+   },
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/orca/learn/management/statistics.htm",
+    "why": "NPS park statistics page"
+   },
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/orca/learn/news/newsreleases.htm",
+    "why": "NPS news releases"
+   }
+  ],
+  "pct": null,
+  "score": 5,
+  "score_parts": {
+   "name": 1,
+   "pin": 2,
+   "size": 1,
+   "source": 1
+  },
+  "sizes": [],
+  "t": "National Monument",
+  "ver": 15,
+  "verdict": "no size on page"
+ },
+ "US-0696": {
+  "cause": "agency bigger: our outline may miss a tract",
+  "checked": "2026-11-08",
+  "handover": [],
+  "n": "New River Gorge National Park",
+  "official": {
+   "acres": 70000.0,
+   "as": "70,000 acres",
+   "clean": true,
+   "line": "rd through deep canyons, the New River is among the oldest rivers on the continent. The park encompasses over 70,000 acres of land along the New River, is rich in cultural and natural history, and offers an abundance of scenic and r",
+   "read": "2026-11-08",
+   "sent": "The park encompasses over 70,000 acres of land along the New River, is rich in cultural and natural history, and offers an abundance of scenic and recreational opportunities.",
+   "url": "https://www.nps.gov/neri/index.htm",
+   "why": "clean total"
+  },
+  "ours": {
+   "acres": 52890,
+   "manager": "",
+   "pieces": [
+    [
+     3309,
+     "New River Gorge National Park and Preserve",
+     52890,
+     "name"
+    ]
+   ],
+   "pin": "just outside",
+   "src": "USGS PAD-US",
+   "unknown_pieces": 0
+  },
+  "owner_now": null,
+  "pages": [
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/neri/index.htm",
+    "why": "the park's page (data/parkinfo)"
+   },
+   {
+    "other_unit": true,
+    "status": "ok",
+    "url": "https://www.nps.gov/neri/learn/management/lawsandpolicies.htm",
+    "why": "rules page (documents bot)"
+   },
+   {
+    "status": "HTTP 404",
+    "url": "https://www.nps.gov/neri/learn/management/statistics.htm",
+    "why": "NPS park statistics page"
+   },
+   {
+    "status": "ok",
+    "url": "https://www.nps.gov/neri/learn/news/newsreleases.htm",
+    "why": "NPS news releases"
+   }
+  ],
+  "pct": 24,
+  "same_agency": false,
+  "score": 4,
+  "score_parts": {
+   "name": 2,
+   "pin": 1,
+   "size": 0,
+   "source": 1
+  },
+  "sizes": [
+   {
+    "acres": 70000.0,
+    "as": "70,000 acres",
+    "clean": true,
+    "line": "rd through deep canyons, the New River is among the oldest rivers on the continent. The park encompasses over 70,000 acres of land along the New River, is rich in cultural and natural history, and offers an abundance of scenic and r",
+    "total_like": true,
+    "url": "https://www.nps.gov/neri/index.htm",
+    "why": "clean total"
+   }
+  ],
+  "t": "National Park",
+  "ver": 15,
+  "verdict": "off"
+ }
+}

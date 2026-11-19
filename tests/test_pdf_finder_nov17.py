@@ -212,10 +212,22 @@ src = (S / 'kpc_pdf_finder.py').read_text(encoding='utf-8')
 check('9. the finder never parses robots.txt itself (no robotparser, no parse_robots) and goes through kpc_manners.Manners',
       'robotparser' not in src and 'parse_robots' not in src and 'kpc_manners.Manners(' in src and 'urlopen' not in src)
 try:
-    d = subprocess.run(['git', 'diff', '--name-only', 'origin/main', '--', '.github/scripts/kpc_manners.py', '.github/scripts/kpc_host_rules.py'],
-                       cwd=ROOT, capture_output=True, text=True, timeout=60)
-    if d.returncode == 0: check(f'9. kpc_manners.py and kpc_host_rules.py unchanged against main ({d.stdout.strip() or "no diff"})', not d.stdout.strip())
-    else: print('NOTE: no origin/main here; the manners files are compared in the PR')
+    host = subprocess.run(['git', 'diff', 'origin/main', '--', '.github/scripts/kpc_host_rules.py'],
+                          cwd=ROOT, capture_output=True, text=True, timeout=60)
+    man = subprocess.run(['git', 'diff', 'origin/main', '--', '.github/scripts/kpc_manners.py'],
+                         cwd=ROOT, capture_output=True, text=True, timeout=60)
+    if host.returncode != 0 or man.returncode != 0:
+        print('NOTE: no origin/main here; the manners files are compared in the PR')
+    else:
+        added = [ln[1:] for ln in man.stdout.splitlines() if ln.startswith('+') and not ln.startswith('+++')]
+        removed = [ln[1:] for ln in man.stdout.splitlines() if ln.startswith('-') and not ln.startswith('---') and ln[1:].strip()]
+        new_defs = {ln.strip() for ln in added if ln.startswith('def ')}
+        # Hand-off 05 adds browser_picture beside browser_text. That is the one difference this file may have.
+        picture_only = (not man.stdout.strip()) or (
+            not removed and new_defs <= {'def browser_picture(u, M, out_path, timeout_ms=30000):', 'def _picture_fit(blob):'}
+            and 'def browser_picture(' in man.stdout)
+        check('9. host rules unchanged, and manners is unchanged except the picture reader next to browser_text',
+              not host.stdout.strip() and picture_only)
 except Exception as e:  # noqa: BLE001
     print(f'NOTE: git not available ({e})')
 
