@@ -1,0 +1,470 @@
+{
+ "about": "Rows of KPC-Data data/parkinfo/<area>.json for the test parks: [name, website, type, access..., access..., lat, lon, ...]. POTA name / link / type / pin as stored; the bot never asks api.pota.app.",
+ "parks": {
+  "US-0003": {
+   "area": "US-AK",
+   "row": [
+    "Aniakchak National Preserve",
+    "https://www.nps.gov/ania/index.htm",
+    "National Preserve",
+    "Campground,Other",
+    "Seaplane/Airtaxi",
+    56.8075,
+    -157.83,
+    0,
+    0,
+    0
+   ]
+  },
+  "US-0022": {
+   "area": "US-AK",
+   "row": [
+    "Denali National Park",
+    "https://www.nps.gov/dena/index.htm",
+    "National Park",
+    "Automobile,Campground,Pedestrian",
+    "Automobile",
+    63.7364,
+    -148.896,
+    86,
+    107,
+    2946
+   ]
+  },
+  "US-0026": {
+   "area": "US-AK",
+   "row": [
+    "Gates of the Arctic National Park",
+    "https://www.nps.gov/gaar/index.htm",
+    "National Park",
+    "Campground,Shelter",
+    "Boat,Seaplane/Airtaxi",
+    68.1358,
+    -151.764,
+    1,
+    2,
+    21
+   ]
+  },
+  "US-0029": {
+   "area": "US-AK",
+   "row": [
+    "Glacier Bay National Preserve",
+    "https://www.nps.gov/glba/index.htm",
+    "National Preserve",
+    "Cabin,Campground,Other,Shelter",
+    "Boat,Seaplane/Airtaxi",
+    59.1288,
+    -138.577,
+    4,
+    6,
+    86
+   ]
+  },
+  "US-0044": {
+   "area": "US-AK",
+   "row": [
+    "Katmai National Park",
+    "https://www.nps.gov/katm/index.htm",
+    "National Park",
+    "Cabin,Campground,Shelter",
+    "Boat,Seaplane/Airtaxi",
+    58.5572,
+    -155.778,
+    8,
+    10,
+    116
+   ]
+  },
+  "US-0048": {
+   "area": "US-AK",
+   "row": [
+    "Lake Clark National Park",
+    "https://www.nps.gov/lacl/index.htm",
+    "National Park",
+    "Cabin,Campground,Other,Shelter",
+    "Boat,Seaplane/Airtaxi",
+    60.6626,
+    -154.049,
+    4,
+    5,
+    71
+   ]
+  },
+  "US-0069": {
+   "area": "US-AK",
+   "row": [
+    "Wrangell-St. Elias National Park",
+    "https://www.nps.gov/wrst/index.htm",
+    "National Park",
+    "Automobile,Cabin,Campground,Pedestrian,Shelter",
+    "Automobile,Foot,Seaplane/Airtaxi",
+    61.5124,
+    -142.835,
+    41,
+    48,
+    1308
+   ]
+  },
+  "US-0878": {
+   "area": "US-AK",
+   "row": [
+    "Aniakchak National Wild and Scenic River",
+    "https://www.nps.gov/ania/index.htm https://www.rivers.gov/rivers/aniakchak.php",
+    "National Wild and Scenic River",
+    "Other,Pedestrian",
+    "Boat,Foot,Seaplane/Airtaxi",
+    56.8076,
+    -157.83,
+    0,
+    0,
+    0
+   ]
+  },
+  "US-0902": {
+   "area": "US-AK",
+   "row": [
+    "Aniakchak National Monument",
+    "https://www.nps.gov/ania/index.htm",
+    "National Monument",
+    "Other,Pedestrian",
+    "Boat,Foot,Seaplane/Airtaxi",
+    56.9392,
+    -158.099,
+    0,
+    0,
+    0
+   ]
+  },
+  "US-12607": {
+   "area": "US-AK",
+   "row": [
+    "Glacier Bay National Park",
+    "https://www.nps.gov/glba/index.htm",
+    "National Park",
+    "Cabin,Campground,Other",
+    "Boat",
+    58.4558,
+    -135.869,
+    8,
+    8,
+    175
+   ]
+  },
+  "US-1035": {
+   "area": "US-AL",
+   "row": [
+    "Buck's Pocket State Park",
+    "https://www.alapark.com/parks/bucks-pocket-state-park",
+    "State Park",
+    "Automobile,Campground,Pedestrian,Shelter",
+    "Automobile,Foot",
+    34.4735,
+    -86.053,
+    225,
+    229,
+    10275
+   ]
+  },
+  "US-1092": {
+   "area": "US-AR",
+   "row": [
+    "Lake Fort Smith State Park",
+    "https://www.arkansasstateparks.com/parks/lake-fort-smith-state-park",
+    "State Park",
+    "Automobile,Cabin,Campground,Pedestrian,Shelter",
+    "Automobile",
+    35.6954,
+    -94.1188,
+    97,
+    102,
+    4962
+   ]
+  },
+  "US-0033": {
+   "area": "US-CO",
+   "row": [
+    "Great Sand Dunes National Park",
+    "https://www.nps.gov/grsa/index.htm",
+    "National Park",
+    "Automobile,Other,Pedestrian",
+    "Automobile",
+    37.7942,
+    -105.581,
+    99,
+    105,
+    3268
+   ]
+  },
+  "US-8295": {
+   "area": "US-CO",
+   "row": [
+    "Great Sand Dunes National Preserve",
+    "https://www.colorado.com/articles/national-park-profile-great-sand-dunes-national-park-preserve",
+    "National Preserve",
+    "Automobile,Campground,Other,Pedestrian,Shelter",
+    "Automobile",
+    37.7335,
+    -105.512,
+    25,
+    28,
+    600
+   ]
+  },
+  "US-1656": {
+   "area": "US-CT",
+   "row": [
+    "Chatfield Hollow State Park",
+    "https://portal.ct.gov/DEEP/State-Parks/Parks/Chatfield-Hollow-State-Park",
+    "State Park",
+    "Automobile,Pedestrian",
+    "Automobile,Foot",
+    41.3659,
+    -72.5859,
+    73,
+    76,
+    2641
+   ]
+  },
+  "US-10682": {
+   "area": "US-DE",
+   "row": [
+    "McGinnis Pond State Fishing Lake",
+    "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=McGinnis-Pond",
+    "State Fishing Lake",
+    "Other",
+    "Boat",
+    39.0361,
+    -75.5111,
+    27,
+    27,
+    1129
+   ]
+  },
+  "US-12938": {
+   "area": "US-DE",
+   "row": [
+    "Laurel Industrial Forest Land State Wildlife Area",
+    "https://documents.dnrec.delaware.gov/fw/Wildlife-Areas/Industrial-Laurel-Overview.pdf",
+    "State Wildlife Area",
+    "Automobile,Pedestrian",
+    "Automobile,Foot",
+    38.4617,
+    -75.5079,
+    19,
+    21,
+    1382
+   ]
+  },
+  "US-5722": {
+   "area": "US-DE",
+   "row": [
+    "McGinnis Pond State Wildlife Area",
+    "https://documents.dnrec.delaware.gov/fw/Wildlife-Areas/McGinnis-Pond-Overview.pdf",
+    "State Wildlife Area",
+    "Automobile,Pedestrian",
+    "Automobile,Foot",
+    39.0342,
+    -75.5156,
+    61,
+    61,
+    2398
+   ]
+  },
+  "US-0665": {
+   "area": "US-ID",
+   "row": [
+    "Craters of the Moon National Monument",
+    "https://www.nps.gov/crmo/index.htm",
+    "National Monument",
+    "Automobile,Campground,Pedestrian,Shelter",
+    "Automobile,Foot,Other,Seaplane/Airtaxi",
+    43.1036,
+    -113.646,
+    78,
+    82,
+    2295
+   ]
+  },
+  "US-11524": {
+   "area": "US-ID",
+   "row": [
+    "Deep Creek Reservoir State Fishing Lake",
+    "https://www.idfg.idaho.gov",
+    "State Fishing Lake",
+    "Automobile,Pedestrian",
+    "Automobile,Foot,Other",
+    42.2087,
+    -112.171,
+    9,
+    10,
+    234
+   ]
+  },
+  "US-3673": {
+   "area": "US-KS",
+   "row": [
+    "Tallgrass Prairie Preserve National Conservation Area",
+    "https://www.nps.gov/tapr/index.htm",
+    "National Conservation Area",
+    "Automobile,Pedestrian",
+    "Automobile,Foot",
+    38.4465,
+    -96.5774,
+    77,
+    79,
+    2426
+   ]
+  },
+  "US-0040": {
+   "area": "US-LA",
+   "row": [
+    "Jean Lafitte National Historical Park",
+    "https://www.nps.gov/jela/index.htm",
+    "National Historical Park",
+    "Automobile,Pedestrian",
+    "Automobile,Foot",
+    29.8116,
+    -90.1413,
+    175,
+    182,
+    8807
+   ]
+  },
+  "US-4501": {
+   "area": "US-MT",
+   "row": [
+    "Custer Gallatin National Forest",
+    "https://www.fs.usda.gov/main/custergallatin/home",
+    "National Forest",
+    "Automobile,Cabin,Campground,Pedestrian,Shelter",
+    "Automobile,Foot",
+    45.5048,
+    -105.997,
+    285,
+    342,
+    11531
+   ]
+  },
+  "US-4502": {
+   "area": "US-MT",
+   "row": [
+    "Flathead National Forest",
+    "https://www.fs.usda.gov/flathead",
+    "National Forest",
+    "Automobile,Campground,Pedestrian,Shelter",
+    "Automobile,Boat,Foot",
+    48.2373,
+    -114.351,
+    190,
+    204,
+    8280
+   ]
+  },
+  "US-12717": {
+   "area": "US-NC",
+   "row": [
+    "Deep River State Trail",
+    "https://trails.nc.gov/state-trails/deep-river-state-trail",
+    "State Trail",
+    "Other,Pedestrian",
+    "Boat,Foot",
+    35.8,
+    -79.7763,
+    94,
+    95,
+    4229
+   ]
+  },
+  "US-0953": {
+   "area": "US-OR",
+   "row": [
+    "Oregon Caves National Monument",
+    "https://www.nps.gov/orca/index.htm",
+    "National Monument",
+    "Automobile,Campground,Pedestrian",
+    "Automobile,Foot",
+    42.0983,
+    -123.409,
+    10,
+    10,
+    236
+   ]
+  },
+  "US-6058": {
+   "area": "US-UT",
+   "row": [
+    "Red Cliffs Archeological Site BLM Historic Area",
+    "https://www.blm.gov/visit/red-cliffs-archeological-site",
+    "BLM Historic Area",
+    "Automobile,Other",
+    "Automobile,Other",
+    37.2234,
+    -113.4,
+    6,
+    6,
+    248
+   ]
+  },
+  "US-6062": {
+   "area": "US-UT",
+   "row": [
+    "Red Cliffs Dinosaur Track Site BLM Historic Area",
+    "https://www.blm.gov/visit/red-cliffs-dinosaur-track-site",
+    "BLM Historic Area",
+    "Automobile,Other",
+    "Automobile,Other",
+    37.2251,
+    -113.405,
+    15,
+    18,
+    332
+   ]
+  },
+  "US-6063": {
+   "area": "US-UT",
+   "row": [
+    "Red Cliffs BLM Recreation Management Area",
+    "https://www.blm.gov/visit/red-cliffs-recreation-area",
+    "BLM Recreation Management Area",
+    "Automobile,Campground,Other,Pedestrian,Shelter",
+    "Automobile,Foot,Other",
+    37.224,
+    -113.405,
+    60,
+    65,
+    2540
+   ]
+  },
+  "US-6077": {
+   "area": "US-UT",
+   "row": [
+    "Red Cliffs BLM National Conservation Area",
+    "https://www.blm.gov/visit/red-cliffs-national-conservation-area",
+    "BLM National Conservation Area",
+    "Automobile,Campground,Other,Pedestrian",
+    "Automobile,Foot,Other",
+    37.2075,
+    -113.398,
+    129,
+    140,
+    4037
+   ]
+  },
+  "US-0696": {
+   "area": "US-WV",
+   "row": [
+    "New River Gorge National Park",
+    "https://www.nps.gov/neri/index.htm",
+    "National Park",
+    "Automobile,Cabin,Campground,Pedestrian,Shelter",
+    "Automobile,Boat,Foot",
+    38.0705,
+    -81.0761,
+    244,
+    261,
+    6745
+   ]
+  }
+ }
+}
