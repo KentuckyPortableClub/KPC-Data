@@ -162,6 +162,10 @@ check('key-quality/review-packets/' in text and 'tools-out' in text, 'the packet
 check(text.count('persist-credentials: false') >= 4, 'the KPC-Links checkouts do not keep a token')
 check("repository: KentuckyPortableClub/KPC-Links" in text, 'the two trees are KPC-Links, read only')
 check((doc.get('permissions') or {}).get('contents') == 'read' and 'actions' not in (doc.get('permissions') or {}), 'the workflow itself can only read')
+check('actions:' not in text, 'no job asks for an actions permission')
+build_steps = doc['jobs']['build']['steps']
+key_step = next(s for s in build_steps if 'kpc_us_key.py' in (s.get('run') or ''))
+check('GH_TOKEN' not in (key_step.get('env') or {}) and 'env -u GH_TOKEN -u GITHUB_TOKEN' in key_step['run'], 'the build drops the token before the pull request code runs')
 check((doc['jobs']['save'].get('permissions') or {}).get('contents') == 'write', 'only the save job is allowed to write')
 check(all((job.get('permissions') or {}).get('contents') != 'write' for name, job in doc['jobs'].items() if name != 'save'), 'no scoring job can write the repo')
 for name, job in (doc.get('jobs') or {}).items():

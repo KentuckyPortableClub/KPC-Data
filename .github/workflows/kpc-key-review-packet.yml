@@ -25,8 +25,7 @@ on:
         required: false
         default: ''
         type: string
-# Read only, except the save job. Uploading a run file needs actions: write, so only the
-# jobs that upload one set that. The save job is the only one that can write the repo.
+# Read only, except the save job, which is the only one that can write the repo.
 permissions:
   contents: read
 concurrency:
@@ -221,9 +220,6 @@ jobs:
     if: needs.scope.outputs.go == 'yes'
     runs-on: ubuntu-latest
     timeout-minutes: 140
-    permissions:
-      contents: read
-      actions: write
     strategy:
       fail-fast: false
       matrix:
@@ -255,6 +251,21 @@ jobs:
         continue-on-error: true
         with:
           python-version: '3.12'
+      - name: Saved shapes for this state
+        id: shapes
+        continue-on-error: true
+        env:
+          STATE: ${{ matrix.state }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          warn() { echo "::warning title=${1}::${2}"; echo "$1 - $2" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          case "$STATE" in
+            [A-Z][A-Z]) ;;
+            *) warn "Shapes" "the state is not a two-letter code"; exit 1;;
+          esac
+          mkdir -p "$GITHUB_WORKSPACE/shapes"
+          gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p "US-${STATE}.json.gz" -p "hand-US-${STATE}.*" -D "$GITHUB_WORKSPACE/shapes" || { warn "Shapes" "saved shapes for ${STATE} could not be downloaded"; exit 1; }
+          if [ ! -s "$GITHUB_WORKSPACE/shapes/US-${STATE}.json.gz" ]; then warn "Shapes" "US-${STATE}.json.gz is missing"; exit 1; fi
       - name: Build this state, old and new side by side
         id: build
         continue-on-error: true
@@ -262,7 +273,6 @@ jobs:
         env:
           STATE: ${{ matrix.state }}
           BUILD_DATE: ${{ needs.scope.outputs.build_date }}
-          GH_TOKEN: ${{ github.token }}
         run: |
           warn() { echo "::warning title=${1}::${2}"; echo "$1 - $2" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           case "$STATE" in
@@ -275,9 +285,8 @@ jobs:
           esac
           SHAPE="$GITHUB_WORKSPACE/shapes"
           WORK="$GITHUB_WORKSPACE/work"
-          mkdir -p "$SHAPE" "$WORK/pack"
+          mkdir -p "$WORK/pack"
           printf '%s\n' "{\"state\":\"${STATE}\",\"result\":\"running\"}" > "$WORK/pack/status.json"
-          gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p "US-${STATE}.json.gz" -p "hand-US-${STATE}.*" -D "$SHAPE" || { warn "Shapes" "saved shapes for ${STATE} could not be downloaded"; exit 1; }
           if [ ! -s "$SHAPE/US-${STATE}.json.gz" ]; then warn "Shapes" "US-${STATE}.json.gz is missing"; exit 1; fi
           ( cd "$GITHUB_WORKSPACE/old" && bash .github/scripts/kpc_overlay.sh "$GITHUB_WORKSPACE/kpcdata" ) || { warn "Park data" "the old tree could not take the park data"; exit 1; }
           ( cd "$GITHUB_WORKSPACE/new" && bash .github/scripts/kpc_overlay.sh "$GITHUB_WORKSPACE/kpcdata" ) || { warn "Park data" "the new tree could not take the park data"; exit 1; }
@@ -286,7 +295,7 @@ jobs:
             (
               cd "$tree" || { echo 97 > "$codefile"; exit 0; }
               unset KPC_NO_ALL_PATHS KPC_NO_BY_NAME KPC_ID_JOIN_NAME KPC_REFOUND_NEAR KPC_SELF_CHECKS KPC_CONF_SORT KPC_PADUS_DEDUPE KPC_PIECE_NAME KPC_NO_OFFICE_JOIN KPC_SAVED_ID_LAND KPC_ONE_RECORD_ONE_PARK KPC_NO_LEASE_BY_NAME KPC_LAKE_ONLY_IF_LAKE KPC_DESIGNATION_SPLIT KPC_NPS_UNIT_CODE KPC_FS_RIVER_NAMES KPC_G8_OTHER_PLACE KPC_MEASURED_ACRES KPC_CA_NONE_KEPT KPC_CA_SAVED_ID_LAND KPC_JP_A10_NAMES KPC_MK_LAYER_93 KPC_AGENCY_TIE KPC_STATE_COPY KPC_WORLD_NEAR_NAME KPC_APPROX_PIN KPC_PRESERVE_APART FINISH_ONLY SHADOW NAME_JOIN KPC_KEY_ONLY_PARKS KPC_KEY_ONLY_STATES KPC_REFILL_ONLY KPC_LAYER_IN KPC_LAYER_OUT KPC_REFILL_FORCE ANSWER_SHEET_FILE ANSWER_SHEET_CHECK
-              timeout 100m env \
+              timeout 100m env -u GH_TOKEN -u GITHUB_TOKEN \
                 KPC_KEY_REMATCH_IDS=1 \
                 KPC_KEY_OFFLINE=1 \
                 KPC_MASTER_OWNS=1 \
@@ -372,9 +381,6 @@ jobs:
     if: ${{ !cancelled() && needs.scope.outputs.go == 'yes' }}
     runs-on: ubuntu-latest
     timeout-minutes: 180
-    permissions:
-      contents: read
-      actions: write
     steps:
       - uses: actions/checkout@v5
         continue-on-error: true
@@ -544,7 +550,6 @@ jobs:
     timeout-minutes: 20
     permissions:
       contents: write
-      actions: read
     steps:
       - uses: actions/checkout@v5
         continue-on-error: true
