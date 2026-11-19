@@ -762,6 +762,86 @@ def browser_text(u, M, timeout_ms=30000):
         return ''
 
 
+def browser_picture(u, M, out_path, timeout_ms=30000):
+    """R-PR13 (19 Nov). One JPEG of the map part of a page the site already let us read.
+    The checks are the same as browser_text and they run in the same order: BROWSER=1,
+    the host is not resting, robots.txt allows it, Crawl-delay, the slow-host budget, then the pace.
+    Long side at most 1600 px, quality about 70, at most 250 KB. Returns '' when there is no
+    browser, the site said no, or the picture could not be taken. Nothing is read off the picture."""
+    import os, time as _t
+    if os.environ.get('BROWSER') != '1':
+        return ''
+    h = M.host(u)
+    if M.dead.get(h, 0) > _t.time() or not M.robots_ok(u):
+        return ''
+    cd = M.crawl_delay(u)
+    if cd > MAX_CRAWL_DELAY:
+        M.for_person.append((safe_url(u), f'Crawl-delay {cd:g} s: browser picture skipped'))
+        return ''
+    if not M._budget(h, cd >= SLOW_DELAY):
+        return ''
+    try:
+        if 'pw' not in _BROWSER:
+            from playwright.sync_api import sync_playwright
+            _BROWSER['pw'] = sync_playwright().start()
+            _BROWSER['b'] = _BROWSER['pw'].chromium.launch()
+            _BROWSER['ctx'] = _BROWSER['b'].new_context(user_agent=M.ua)
+        M._pace(h, cd)
+        M.stat['browser_picture'] = M.stat.get('browser_picture', 0) + 1
+        pg = _BROWSER['ctx'].new_page()
+        try:
+            pg.goto(u, timeout=timeout_ms, wait_until='domcontentloaded')
+            try:
+                pg.wait_for_load_state('networkidle', timeout=12000)
+            except Exception:
+                pass  # noqa: BLE001
+            pg.wait_for_timeout(1500)
+            shot = None
+            for sel in ('[class*=map i]', 'iframe[src*=arcgis]', 'iframe[src*=maps]', '.esri-view', 'img[alt*=map i]'):
+                loc = pg.locator(sel)
+                try:
+                    if loc.count():
+                        shot = loc.first.screenshot(type='jpeg', quality=70)
+                        break
+                except Exception:
+                    continue  # noqa: BLE001
+            if shot is None:
+                shot = pg.screenshot(type='jpeg', quality=70, full_page=False)
+        finally:
+            pg.close()
+        shot = _picture_fit(shot)
+        if not shot or len(shot) > 250_000:
+            return ''
+        os.makedirs(os.path.dirname(out_path) or '.', exist_ok=True)
+        with open(out_path, 'wb') as f:
+            f.write(shot)
+        return out_path
+    except Exception as e:  # noqa: BLE001
+        if not _BROWSER.get('pic_warned'):
+            _BROWSER['pic_warned'] = True
+            print('::notice title=Browser picture::' + f'{type(e).__name__}: {str(e)[:300]}'.replace('\n', ' '), flush=True)
+        return ''
+
+
+def _picture_fit(blob):
+    """Long side at most 1600 px. Pillow when it is installed; otherwise the JPEG as taken, if it is small enough."""
+    try:
+        import io
+        from PIL import Image
+        im = Image.open(io.BytesIO(blob))
+        im = im.convert('RGB')
+        w, h = im.size
+        long = max(w, h)
+        if long > 1600:
+            scale = 1600 / float(long)
+            im = im.resize((max(1, int(w * scale)), max(1, int(h * scale))))
+        buf = io.BytesIO()
+        im.save(buf, format='JPEG', quality=70)
+        return buf.getvalue()
+    except Exception:
+        return blob  # noqa: BLE001
+
+
 def pdf_text(body, pages=2):
     """Text of the first pages of a (possibly partial) PDF: pypdf when installed, else the literal strings in the stream."""
     txt = ''
