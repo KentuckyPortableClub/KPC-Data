@@ -1,77 +1,77 @@
-# Spot check: all kinds (20 random rows of 15109)
+# Spot check: all kinds (20 random rows of 15157)
 
 For chat 11: open each link and say YES / NO. The engine decides nothing.
 
-## CA-5664 Massie Hills Management Area (CA-ON)
-- status: candidate
-- tier: T-3
-- band: WEAK
-- record_name: Massie Hills
-- url: https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3?f=html
-- record_link: https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3/query?where=OBJECTID%3D1053&outFields=%2A&f=html
-- source_url: https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3/query?geometry=-80.8101%2C44.5076&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 2
-- why: same land also in CA-ON-ca-admin 'Grey Sauble Conservation Authority': merged, counted once; record 'Massie Hills' (PACK-CA-ON-land-405); pin 2 m from the edge; about 231.8 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: likely
-- answer: 
-
-## US-4854 DuPont State Recreational Forest State Forest (US-NC)
+## US-11215 Bear Paw Battlefield National Monument (US-MT)
 - status: found
 - tier: T-2
 - band: STRONG
-- record_name: Dupont State Forest
-- url: https://ncnhde.natureserve.org/arcgis/rest/services/NC_Public/Managed_Areas/MapServer/0?f=html
-- record_link: https://ncnhde.natureserve.org/arcgis/rest/services/NC_Public/Managed_Areas/MapServer/0/query?where=OBJECTID%3D3364&outFields=%2A&f=html
-- source_url: https://ncnhde.natureserve.org/arcgis/rest/services/NC_Public/Managed_Areas/MapServer/0/query?geometry=-82.6025%2C35.1903&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_name: Bear Paw Battlefield
+- url: https://gisservice.mt.gov/ArcGIS/rest/services/msdi_administrative_boundaries_map_v1/MapServer/70?f=html
+- record_link: https://gisservice.mt.gov/ArcGIS/rest/services/msdi_administrative_boundaries_map_v1/MapServer/70/query?where=OBJECTID%3D209&outFields=%2A&f=html
+- source_url: https://gisservice.mt.gov/ArcGIS/rest/services/msdi_administrative_boundaries_map_v1/MapServer/70/query?geometry=-109.213%2C48.3775&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: same land also in PACK-US-NC-preserve-289 'Dupont State Forest Dedicated Nature Preserve', PACK-US-NC-preserve-289 'NC Land and Water Fund Project', PACK-US-NC-preserve-289 'NC Division of Mitigation Services Easement': merged, counted once; record 'Dupont State Forest' (PACK-US-NC-preserve-289); pin inside; about 12468.6 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
+- why: same land also in US-NPS-boundary 'Nez Perce National Historical Park': merged, counted once; record 'Bear Paw Battlefield' (Q-1306); pin inside; about 1064.8 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
 - answer: 
 
-## US-13644 Cedar Rock Wildlife Management Area (US-MN)
+## US-3643 Orman House State Park (US-FL)
 - status: found
 - tier: T-2
 - band: STRONG
-- record_name: Cedar Rock WMA
+- record_name: Orman House Historic State Park
+- url: https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0?f=html
+- record_link: https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0/query?where=OBJECTID%3D7&outFields=%2A&f=html
+- source_url: https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0/query?geometry=-84.991%2C29.7312&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 0
+- why: record 'Orman House Historic State Park' (PACK-US-FL-park-241); pin inside; about 9.0 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
+- answer: 
+
+## US-13631 Winter Wildlife Management Area (US-MN)
+- status: found
+- tier: T-2
+- band: STRONG
+- record_name: Winter WMA
 - url: https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0?f=html
-- record_link: https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D5086&outFields=%2A&f=html
-- source_url: https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?geometry=-95.1649%2C44.6084&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_link: https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D5456&outFields=%2A&f=html
+- source_url: https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?geometry=-96.384%2C44.1451&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: record 'Cedar Rock WMA' (PACK-US-MN-forest-27); pin inside; about 653.2 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
+- why: record 'Winter WMA' (PACK-US-MN-forest-27); pin inside; about 544.1 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
 - answer: 
 
-## CA-5663 Hepworth Management Area (CA-ON)
-- status: candidate
-- tier: T-3
-- band: WEAK
-- record_name: Hepworth
-- url: https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3?f=html
-- record_link: https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3/query?where=OBJECTID%3D1056&outFields=%2A&f=html
-- source_url: https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3/query?geometry=-81.1159%2C44.6283&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 19
-- why: same land also in CA-ON-ca-admin 'Grey Sauble Conservation Authority': merged, counted once; record 'Hepworth' (PACK-CA-ON-land-405); pin 19 m from the edge; about 93.6 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: likely
-- answer: 
-
-## US-6409 Waimea State Recreation Area (US-HI)
-- status: candidate
-- tier: T-3
-- band: WEAK
-- record_name: WAIMEA STATE RECREATION PIER
-- url: https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16?f=html
-- record_link: https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16/query?where=OBJECTID%3D49&outFields=%2A&f=html
-- source_url: https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16/query?geometry=-159.67%2C21.9548&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 32
-- why: same land also in PACK-US-HI-wildlife-252 'WAIMEA STATE RECREATION PIER': merged, counted once; record 'WAIMEA STATE RECREATION PIER' (PACK-US-HI-park-251); pin 32 m from the edge; about 1.2 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
-- answer: 
-
-## CA-4912 Lévis Forts National Historic Site (CA-QC)
-- status: candidate
+## US-0054 Nez Perce National Historical Park (US-MT)
+- status: found
 - tier: T-1
-- band: CONFLICT
-- record_name: Lévis Forts National Historic Site
-- url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4?f=html
-- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D1851&outFields=%2A&f=html
-- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-71.158%2C46.815&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- band: STRONG
+- record_name: Nez Perce National Historical Park
+- url: https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2?f=html
+- record_link: https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2/query?where=OBJECTID%3D1187&outFields=%2A&f=html
+- source_url: https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2/query?geometry=-116.824%2C46.447&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: record 'Lévis Forts National Historic Site' (PACK-CA-NB-land-73); pin inside; about 11.5 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: likely
+- why: record 'Nez Perce National Historical Park' (US-NPS-boundary); pin inside; about 4225.8 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
+- answer: 
+
+## US-7966 Bad Branch State Nature Preserve (US-KY)
+- status: found
+- tier: T-1
+- band: STRONG
+- record_name: Bad Branch State Nature Preserve
+- url: https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0?f=html
+- record_link: https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0/query?where=OBJECTID%3D1&outFields=%2A&f=html
+- source_url: https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0/query?geometry=-82.7719%2C37.0676&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 0
+- why: record 'Bad Branch State Nature Preserve' (US-KY-snp); pin inside; about 2830.2 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
+- answer: 
+
+## CA-4868 Fort Wellington National Historic Site (CA-ON)
+- status: candidate
+- tier: T-2
+- band: CONFLICT
+- record_name: Fort Wellington NHS - Lots 13 to 28, CLSR 56466
+- url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4?f=html
+- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D1791&outFields=%2A&f=html
+- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-75.5105%2C44.7126&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 0
+- why: record 'Fort Wellington NHS - Lots 13 to 28, CLSR 56466' (PACK-CA-NB-land-73); pin inside; about 5.7 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
 ## US-5573 Teanaway State Forest (US-WA)
@@ -98,52 +98,52 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: same land also in PACK-US-NV-land-305 'City of Sparks': merged, counted once; record 'City of Sparks' (PACK-US-NV-land-303); pin 2 m from the edge; about 3.0 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: likely
 - answer: 
 
-## US-5748 Fort Abercrombie State Historic Site (US-ND)
+## US-3790 Fort Heiman National Battlefield (US-KY)
+- status: candidate
+- tier: T-2
+- band: WEAK
+- record_name: Fort Donelson National Battlefield (Fort Heiman Unit)
+- url: https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Heritage_Land_Conservation_Fund_WGS84WM/MapServer/0?f=html
+- record_link: https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Heritage_Land_Conservation_Fund_WGS84WM/MapServer/0/query?where=OBJECTID%3D203&outFields=%2A&f=html
+- source_url: https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Heritage_Land_Conservation_Fund_WGS84WM/MapServer/0/query?geometry=-88.0562%2C36.5016&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 0
+- why: record 'Fort Donelson National Battlefield (Fort Heiman Unit)' (US-KY-heritage-land); pin inside; about 0.8 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- answer: 
+
+## US-6468 Iron Range OHV State Recreation Area (US-MN)
+- status: candidate
+- tier: T-3
+- band: WEAK
+- record_name: Iron Range Off-Highway Vehicle
+- url: https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0?f=html
+- record_link: https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D4192&outFields=%2A&f=html
+- source_url: https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?geometry=-92.4434%2C47.4825&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 0
+- why: record 'Iron Range Off-Highway Vehicle' (PACK-US-MN-forest-27); pin inside; about 3531.3 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- answer: 
+
+## CA-5258 Killarney Lake Park Recreation Park (CA-NB)
 - status: found
 - tier: T-2
 - band: STRONG
-- record_name: Fort Abercrombie
-- url: https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1?f=html
-- record_link: https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?where=OBJECTID%3D400953&outFields=%2A&f=html
-- source_url: https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?geometry=-96.72%2C46.4457&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_name: Killarney Lake Park
+- url: https://services2.arcgis.com/iLWAxhpxafhOza2U/arcgis/rest/services/Parks_Public_View/FeatureServer/0?f=html
+- record_link: https://services2.arcgis.com/iLWAxhpxafhOza2U/arcgis/rest/services/Parks_Public_View/FeatureServer/0/query?where=OBJECTID%3D105&outFields=%2A&f=html
+- source_url: https://services2.arcgis.com/iLWAxhpxafhOza2U/arcgis/rest/services/Parks_Public_View/FeatureServer/0/query?geometry=-66.6301%2C46.0165&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: record 'Fort Abercrombie' (PACK-US-AK-land-41); pin inside; about 16.3 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
+- why: record 'Killarney Lake Park' (PACK-CA-NB-preserve-78); pin inside; about 573.6 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
 - answer: 
 
-## US-13287 Pershing County State Historical Monument (US-NV)
+## CA-4918 Pointe-au-Père Lighthouse National Historic Site (CA-QC)
 - status: candidate
-- tier: T-4
+- tier: T-3
 - band: WEAK
-- record_name: Pershing County Park
-- url: https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0?f=html
-- record_link: https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0/query?where=OBJECTID%3D259&outFields=%2A&f=html
-- source_url: https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0/query?geometry=-118.477%2C40.1803&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 91
-- why: same land also in PACK-US-NV-land-305 'Pershing County Park': merged, counted once; record 'Pershing County Park' (PACK-US-NV-land-303); pin 91 m from the edge; about 1.7 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: weak
-- answer: 
-
-## CA-4339 Pontoon Lake Territorial Park (CA-NT)
-- status: candidate
-- tier: T-6
-- band: WEAK
-- record_name: Pontoon Lake
-- url: https://www.apps.geomatics.gov.nt.ca/arcgis/rest/services/GNWT/PlanningCadastre_LCC/MapServer/16?f=html
-- record_link: https://www.apps.geomatics.gov.nt.ca/arcgis/rest/services/GNWT/PlanningCadastre_LCC/MapServer/16/query?where=OBJECTID%3D31512&outFields=%2A&f=html
-- source_url: https://www.apps.geomatics.gov.nt.ca/arcgis/rest/services/GNWT/PlanningCadastre_LCC/MapServer/16/query?geometry=-114.026%2C62.5531&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 6
-- why: record 'Pontoon Lake' (PACK-CA-NT-park-85); pin 6 m from the edge; about 5.0 acres; Rule G: LIKELY (names overlap); size unknown; confidence: weak
-- answer: 
-
-## CA-4803 Riding Mountain Park East Gate Registration Complex National Historic Site (CA-MB)
-- status: candidate
-- tier: T-4
-- band: WEAK
-- record_name: Riding Mountain Park East Gate Registration Complex
+- record_name: Pointe-au-Père Lighthouse
 - url: https://services.arcgis.com/As5CFN3ThbQpy8Ph/ArcGIS/rest/services/ParksCanadaRevised/FeatureServer/0?f=html
-- record_link: https://services.arcgis.com/As5CFN3ThbQpy8Ph/ArcGIS/rest/services/ParksCanadaRevised/FeatureServer/0/query?where=OBJECTID%3D132&outFields=%2A&f=html
-- source_url: https://services.arcgis.com/As5CFN3ThbQpy8Ph/ArcGIS/rest/services/ParksCanadaRevised/FeatureServer/0/query?geometry=-99.5556%2C50.6832&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 15
-- why: record 'Riding Mountain Park East Gate Registration Complex' (Q-1371); pin 15 m from the edge; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: weak
+- record_link: https://services.arcgis.com/As5CFN3ThbQpy8Ph/ArcGIS/rest/services/ParksCanadaRevised/FeatureServer/0/query?where=OBJECTID%3D120&outFields=%2A&f=html
+- source_url: https://services.arcgis.com/As5CFN3ThbQpy8Ph/ArcGIS/rest/services/ParksCanadaRevised/FeatureServer/0/query?geometry=-68.4695%2C48.5165&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 114
+- why: record 'Pointe-au-Père Lighthouse' (Q-1371); pin 114 m from the edge; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: likely
 - answer: 
 
 ## US-13275 Pioneer Memorial Park State Historical Monument (US-NV)
@@ -170,28 +170,28 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: record 'Lower Goose Creek Reservoir' (PACK-US-ID-land-258); pin inside; about 1006.6 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
-## US-0684 Lower Delaware National Wild and Scenic River (US-NJ)
+## US-1083 Hampson Museum State Park (US-AR)
 - status: candidate
 - tier: T-3
 - band: WEAK
-- record_name: Delaware Wild and Scenic River
-- url: https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/WildScenicRiverBoundaries/FeatureServer/0?f=html
-- record_link: https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/WildScenicRiverBoundaries/FeatureServer/0/query?where=OBJECTID%3D20&outFields=%2A&f=html
-- source_url: https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/WildScenicRiverBoundaries/FeatureServer/0/query?geometry=-74.872%2C40.297&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 0
-- why: record 'Delaware Wild and Scenic River' (PACK-US-land-386); pin inside; about 21307.8 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- record_name: Hampson Archeological Museum State Park
+- url: https://gis.ardot.gov/hosting/rest/services/Hosted/StateParks/FeatureServer/0?f=html
+- record_link: https://gis.ardot.gov/hosting/rest/services/Hosted/StateParks/FeatureServer/0/query?where=OBJECTID%3D24&outFields=%2A&f=html
+- source_url: https://gis.ardot.gov/hosting/rest/services/Hosted/StateParks/FeatureServer/0/query?geometry=-90.0407%2C35.5707&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 76
+- why: record 'Hampson Archeological Museum State Park' (PACK-US-AR-park-221); pin 76 m from the edge; about 3.3 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
-## CA-1596 Hog's Back Conservation Reserve (CA-ON)
+## US-11027 Big Canoe Creek Nature Reserve (US-AL)
 - status: candidate
-- tier: T-3
-- band: CONFLICT
-- record_name: Hog's Back Park
-- url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4?f=html
-- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D926&outFields=%2A&f=html
-- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-75.695%2C45.3717&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 10
-- why: same land also in CA-ON-ca-admin 'Rideau Valley Conservation Authority': merged, counted once; record 'Hog's Back Park' (PACK-CA-NB-land-73); pin 10 m from the edge; about 57.5 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: likely
+- tier: T-4
+- band: WEAK
+- record_name: Big Canoe Creek
+- url: https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0?f=html
+- record_link: https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0/query?where=OBJECTID%3D181&outFields=%2A&f=html
+- source_url: https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0/query?geometry=-86.48%2C33.794&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 52
+- why: record 'Big Canoe Creek' (PACK-US-AL-preserve-217); pin 52 m from the edge; about 383.7 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: weak
 - answer: 
 
 ## CA-4960 Parc Michel-Chartrand Regional Park (CA-QC)
@@ -218,27 +218,27 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: same land also in US-FWS-approved 'BEAR RIVER WATERSHED CONSERVATION AREA', US-FWS-approved 'BEAR RIVER WATERSHED CONSERVATION AREA': merged, counted once; record 'Daniels Reservoir' (PACK-US-ID-land-258); pin inside; about 361.6 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
-## US-10345 Carson Lake and Pasture Wildlife Management Area (US-NV)
+## CA-0986 Parc Frédéric-Back Regional Park (CA-QC)
 - status: candidate
-- tier: T-3
-- band: WEAK
-- record_name: Carson Lake WMA
-- url: https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/Wildlife_Management_Areas/FeatureServer/0?f=html
-- record_link: https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/Wildlife_Management_Areas/FeatureServer/0/query?where=OBJECTID%3D16&outFields=%2A&f=html
-- source_url: https://services.arcgis.com/RyxlXSfFi87rAosq/arcgis/rest/services/Wildlife_Management_Areas/FeatureServer/0/query?geometry=-118.688%2C39.3569&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- tier: T-2
+- band: CONFLICT
+- record_name: Frédéric-Back - Complexe de Soccer
+- url: https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0?f=html
+- record_link: https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0/query?where=OBJECTID%3D1779&outFields=%2A&f=html
+- source_url: https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0/query?geometry=-73.6379%2C45.5623&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: same land also in Q-1473 'Carson City District', Q-1474 'Carson City District', Q-1472 '': merged, counted once; record 'Carson Lake WMA' (PACK-US-NV-wildlife-302); pin inside; about 30112.0 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- why: record 'Frédéric-Back - Complexe de Soccer' (Q-1819); pin inside; about 9.2 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
-## US-4162 Mounds on Brookville Lake State Recreation Area (US-IN)
+## CA-3688 Mount Douglas Park (CA-BC)
 - status: candidate
 - tier: T-3
 - band: WEAK
-- record_name: Brookville Lake
-- url: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0?f=html
-- record_link: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?where=OBJECTID%3D3170&outFields=%2A&f=html
-- source_url: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?geometry=-84.9633%2C39.4949&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 0
-- why: same land also in PACK-US-IN-land-387 'Brookville Lake': merged, counted once; record 'Brookville Lake' (PACK-US-IN-land-191); pin inside; about 2734.6 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- record_name: Pkols (Mount Douglas Park)
+- url: https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39?f=html
+- record_link: https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?where=OBJECTID%3D3575957&outFields=%2A&f=html
+- source_url: https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_basemapping/MapServer/39/query?geometry=-123.338%2C48.4909&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 4
+- why: record 'Pkols (Mount Douglas Park)' (PACK-CA-BC-park-420); pin 4 m from the edge; about 455.0 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 

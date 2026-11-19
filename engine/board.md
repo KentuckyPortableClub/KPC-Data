@@ -1,6 +1,6 @@
 # Engine board, 2026-11-19
 
-**One line:** 1377 new candidates across 1 kinds; 99046 parks with a gap; 20 hosts blocked.
+**One line:** 1390 new candidates across 1 kinds; 99046 parks with a gap; 21 hosts blocked.
 
 | kind | area | missing yesterday | missing today | found / candidate today | still missing | top why-not |
 |---|---|---|---|---|---|---|
@@ -89,7 +89,7 @@
 | outline | FO | 3 | 3 | 0 | 3 |  |
 | outline | FR | 3470 | 3470 | 0 | 3470 |  |
 | outline | GA | 5 | 5 | 0 | 5 |  |
-| outline | GB | 3395 | 3395 | 75 | 3320 | blocked (36 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 326, blocked (6 sources could not be read, e.g. blocked (host resting: 3 strikes)); the sources that answered had no record 258, UNLIKELY only (evidence, never a question): name: one word(s) in common 200 |
+| outline | GB | 3395 | 3395 | 75 | 3320 | blocked (36 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 339, blocked (6 sources could not be read, e.g. blocked (host resting: 3 strikes)); the sources that answered had no record 258, UNLIKELY only (evidence, never a question): name: one word(s) in common 203 |
 | outline | GD | 16 | 16 | 0 | 16 |  |
 | outline | GE | 5 | 5 | 0 | 5 |  |
 | outline | GF | 35 | 35 | 0 | 35 |  |
@@ -272,7 +272,7 @@
 | outline | US-NY | 31 | 31 | 1 | 30 | blocked (27 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 70, no-layer: no official record at the pin or by name 40, blocked (1 source could not be read, e.g. blocked (robots)); the sources that answered had no record 15 |
 | outline | US-OH | 2 | 2 | 4 | 0 | blocked (26 sources could not be read, e.g. blocked (robots)); the sources that answered had no record 3, blocked (6 sources could not be read, e.g. blocked (robots)); the sources that answered had no record 1, no-layer: no official record at the pin or by name 1 |
 | outline | US-OK | 49 | 49 | 18 | 31 | blocked (24 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 79, no-layer: no official record at the pin or by name 63, UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check) 25 |
-| outline | US-OR | 96 | 96 | 34 | 62 | no-layer: no official record at the pin or by name 49, blocked (29 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 45, UNLIKELY only (evidence, never a question): surface-manager layer: never matched against parks 29 |
+| outline | US-OR | 96 | 96 | 47 | 49 | no-layer: no official record at the pin or by name 49, blocked (29 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 45, UNLIKELY only (evidence, never a question): surface-manager layer: never matched against parks 35 |
 | outline | US-PA | 8 | 8 | 5 | 3 | already approved 11, no-layer: no official record at the pin or by name 8, UNLIKELY only (evidence, never a question): other kind of place (wild_river vs trail) 8 |
 | outline | US-RI | 4 | 4 | 9 | 0 | UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check) 5, UNLIKELY only (evidence, never a question): name: none word(s) in common 3 |
 | outline | US-SC | 8 | 8 | 0 | 8 | no-layer: no official record at the pin or by name 15, blocked (25 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 13, UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check) 4 |
@@ -304,32 +304,33 @@
 
 | kind | pass 1 | pass 2 | solved in pass 2 |
 |---|---|---|---|
-| outline | {"error": 430, "already approved": 689, "found": 314, "candidate": 1173, "evidence": 5413, "blocked": 4513, "not found": 2571, "pin only": 6} | null | - |
+| outline | {"error": 430, "already approved": 691, "found": 314, "candidate": 1186, "evidence": 5433, "blocked": 4526, "not found": 2571, "pin only": 6} | null | - |
 
 ## Blocked hosts (blocked is not "not found"; retried next night)
 
-- services.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (631)
-- services1.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (375)
-- apps.fs.usda.gov: blocked (host rule: saved copies only or never contact; on the needs-download li (274)
-- datamap.gov.wales: blocked (robots) (226)
-- services2.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (154)
+- services.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (780)
+- services1.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (457)
+- apps.fs.usda.gov: blocked (host rule: saved copies only or never contact; on the needs-download li (390)
+- datamap.gov.wales: blocked (robots) (235)
+- services2.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (143)
 - mapservices.nps.gov: blocked (host resting: 3 strikes) (123)
-- services-eu1.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (102)
-- services5.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (50)
-- services7.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (48)
-- services3.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (40)
+- services-eu1.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (108)
+- services5.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (48)
+- services7.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (43)
+- services9.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (35)
 - ncnhde.natureserve.org: blocked (host rule: saved copies only or never contact; on the needs-download li (24)
 - tnmap.tn.gov: blocked (host resting: 3 strikes) (22)
-- services9.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (21)
 - maps.gov.bc.ca: blocked (robots) (21)
-- services6.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (17)
+- services6.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (18)
 - gis.arkansas.gov: blocked (robots) (12)
 - utility.arcgis.com: blocked (robots) (6)
 - arcgisserver.digital.mass.gov: blocked (robots.txt not readable this run) (6)
 - mapservices.gov.yk.ca: blocked (robots) (6)
+- services3.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (3)
 - mapservices.nps.gov: blocked (HTTP 403: server refuses this client) (2)
 - tnmap.tn.gov: blocked (HTTP 403: server refuses this client) (2)
 - services8.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (1)
+- www.blm.gov: blocked (HTTP 403: server refuses this client) (1)
 
 ## Rules for this run
 
