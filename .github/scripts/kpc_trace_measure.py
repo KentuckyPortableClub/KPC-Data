@@ -135,8 +135,13 @@ def measure(trace_geom, official_geom):
     rt, ro = raster(T, box, nx, ny), raster(O, box, nx, ny)
     inter = len(rt & ro)
     ta = sum(ring_area(p[0]) - sum(ring_area(r) for r in p[1:]) for p in T); oa = sum(ring_area(p[0]) - sum(ring_area(r) for r in p[1:]) for p in O)
-    d = line_distances(T, O)
-    res = {'traced_acres': round(ta / SQM_PER_ACRE, 1), 'official_acres': round(oa / SQM_PER_ACRE, 1),
+    # Fable's review 19 Nov (US-11892: 98.8% covered yet 2,759 ft 'off'): the LINE is the trace's OUTSIDE rings against the official
+    # outline; holes inside a trace (label and lake cut-outs) are counted and measured apart, they are a defect of their own
+    d = line_distances([[poly[0]] for poly in T], O)
+    dh = line_distances([[r] for poly in T for r in poly[1:]], O)
+    res = {'trace_parts': len(T), 'trace_holes': sum(len(poly) - 1 for poly in T), 'official_parts': len(O),
+           'holes_line_mid_ft': round(pct(dh, 0.5) * FT_PER_M) if dh else None,
+           'traced_acres': round(ta / SQM_PER_ACRE, 1), 'official_acres': round(oa / SQM_PER_ACRE, 1),
            'ratio': round(ta / oa, 3) if oa else None,
            'covered': round(inter / len(ro), 3) if ro else None, 'outside': round((len(rt) - inter) / len(rt), 3) if rt else None,
            'line_mid_ft': round(pct(d, 0.5) * FT_PER_M) if d else None, 'line_worst10_ft': round(pct(d, 0.9) * FT_PER_M) if d else None,
@@ -262,7 +267,8 @@ def main(argv):
         if not g and rr and 'boundary' in str(rr.get('why') or '').lower(): m['failure'] = f"the map had no boundary the tracer could read ({str(rr.get('why'))[:160]})"
         rows.append({'order': p.get('order'), 'ref': ref, 'area': p.get('area'), 'name': p.get('name'), 'size': p.get('size'), 'agency': p.get('agency'),
                      'tracer_status': rr.get('status', ''), 'kept_by_tracer': where == pathlib.Path(a.traced).name,
-                     **{k: m.get(k) for k in ('traced_acres', 'official_acres', 'ratio', 'covered', 'outside', 'line_mid_ft', 'line_worst10_ft', 'cell_m')},
+                     **{k: m.get(k) for k in ('traced_acres', 'official_acres', 'ratio', 'covered', 'outside', 'line_mid_ft', 'line_worst10_ft',
+                                              'trace_parts', 'trace_holes', 'holes_line_mid_ft', 'official_parts', 'cell_m')},
                      'grade': grade(m), 'failure': m.get('failure', '')})
     keys = list(rows[0]) if rows else ['ref']
     with open(out / 't1-parks.csv', 'w', newline='', encoding='utf-8') as f:
@@ -315,6 +321,11 @@ def _selftest():
     holed = {'type': 'Polygon', 'coordinates': [sq(-85, 37, 0.01)['coordinates'][0], [[-84.9975, 37.0025], [-84.9925, 37.0025], [-84.9925, 37.0075], [-84.9975, 37.0075], [-84.9975, 37.0025]]]}
     m = measure(sq(-85, 37, 0.01), holed)
     chk(1.3 < m['ratio'] < 1.36 and 0.22 < m['outside'] < 0.28, f'a hole in the official outline counts as outside {m["ratio"]} {m["outside"]}')
+    cheese = {'type': 'Polygon', 'coordinates': [sq(-85, 37, 0.01)['coordinates'][0]] + [[[x, y], [x + 0.0004, y], [x + 0.0004, y + 0.0004], [x, y + 0.0004], [x, y]]
+                                                                                    for x in (-84.997, -84.995, -84.993) for y in (37.003, 37.005, 37.007)]}
+    m = measure(cheese, sq(-85, 37, 0.01))
+    chk(m['line_mid_ft'] == 0 and m['trace_holes'] == 9 and m['holes_line_mid_ft'] > 500 and m['covered'] > 0.97,
+        f"a right outline with 9 holes inside: the line is 0 ft off, the holes are counted apart ({m['trace_holes']} holes, {m['holes_line_mid_ft']} ft inside)")
     chk(measure(None, sq(-85, 37, 0.01)).get('failure') == 'no trace', 'no trace: a failure')
     import tempfile
     with tempfile.TemporaryDirectory() as td:

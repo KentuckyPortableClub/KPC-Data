@@ -15,6 +15,9 @@ on:
       per_class:
         description: 'parks per size class to trace (spec: 10)'
         default: '10'
+      list:
+        description: 'the fixed list on tools-out key-quality/2026-11-19/t1/ (t1-list.json = run 1; t1-list-2.json = parks with a stored official map link)'
+        default: 't1-list.json'
 permissions:
   contents: write
 concurrency:
@@ -39,7 +42,7 @@ jobs:
           git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           for b in tools-out intake-files; do git fetch -q --depth 1 origin "+refs/heads/$b:refs/remotes/origin/$b" || { echo "::warning title=T1::branch $b not read"; echo "T1 - branch $b not read" >> "$RUNNER_TEMP/kpc-hidden.txt"; }; done
           mkdir -p ../work/pm/maps ../work/pm/rows ../work/queue ../work/lookup/requests ../work/traced ../work/report
-          git show origin/tools-out:key-quality/2026-11-19/t1/t1-list.json > ../work/t1-list.json
+          git show "origin/tools-out:key-quality/2026-11-19/t1/${{ inputs.list || 't1-list.json' }}" > ../work/t1-list.json
           for f in fetch-settings.json extra-blocked-hosts.txt robots-disallowed-layers.csv; do git show "origin/intake-files:store-settings/$f" > "../work/$f" 2>/dev/null || rm -f "../work/$f"; done
           python3 - <<'PY'
           import json
@@ -55,7 +58,7 @@ jobs:
         run: |
           cd kpcdata
           S=""; for f in fetch-settings.json:--settings extra-blocked-hosts.txt:--blocked robots-disallowed-layers.csv:--disallowed; do n=${f%%:*}; o=${f##*:}; [ -s "../work/$n" ] && S="$S $o ../work/$n"; done
-          python3 .github/scripts/kpc_pdf_finder.py find --parks ../work/finder-parks.json $S --docs-dir data/docs --queue-dir ../work/queue --max-parks 60
+          python3 .github/scripts/kpc_pdf_finder.py find --parks ../work/finder-parks.json $S --docs-dir data/docs --queue-dir ../work/queue --max-parks 400
       - name: Save the found maps (the existing save-map rule) into the throwaway folder
         id: save
         continue-on-error: true
@@ -106,13 +109,14 @@ jobs:
           cd kpcdata
           KPC_PUSH_RETRY=$PWD/.github/scripts/kpc_push_retry.sh
           cp ../work/picked.json ../work/queue/receipt.json ../work/queue/parks-log.json ../work/report/ 2>/dev/null || true   # ok: a missing part is said in the summary
+          cp ../work/traced/report.csv ../work/report/tracer-report.csv 2>/dev/null || true   # ok: no trace = no tracer report (Fable 19 Nov: every gate's input, acres_known must be empty)
           git worktree add -q -B tools-out ../out origin/tools-out && mkdir -p ../out/key-quality/2026-11-19/t1/run-${{ github.run_id }} \
             && cp ../work/report/* ../out/key-quality/2026-11-19/t1/run-${{ github.run_id }}/ 2>/dev/null
           ( cd ../out && find key-quality/2026-11-19/t1 -size +5M -delete; git add -A key-quality/2026-11-19/t1 && git commit -qm "T1 tracer test report (run ${{ github.run_id }})" && bash "$KPC_PUSH_RETRY" tools-out 4 "key-quality" ) || { echo "::warning title=T1::report not saved to tools-out (it is in this run's summary)"; echo "T1 - report not saved to tools-out (it is in this run's summary)" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           rm -rf ../tt && mkdir ../tt && cd ../tt && git init -q && git checkout -q --orphan trace-test
           git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           cp -r ../work/pm ../work/traced ../work/traced_unofficial ../work/queue ../work/report . 2>/dev/null || true   # ok: a missing folder = that step made nothing
-          find . -path ./.git -prune -o -type f -size +20M -print -delete
+          find . -type f -size +20M -not -path './.git/*' -delete   # Fable 19 Nov: GNU find refuses -prune with -delete (run 44530520714 lost its branch here)
           printf '# trace-test (THROWAWAY, T1 test mode, run %s)\nMaps here are TEST MATERIAL ONLY (most of these parks have GIS). Delete this branch once Fable has the report (tools-out key-quality/2026-11-19/t1/).\n' "${{ github.run_id }}" > README.md
           git add -A && git commit -qm "T1 test material (run ${{ github.run_id }})" \
             && git push -q --force "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" trace-test || { echo "::warning title=T1::branch trace-test not saved"; echo "T1 - branch trace-test not saved" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
