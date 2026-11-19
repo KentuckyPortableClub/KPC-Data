@@ -110,8 +110,9 @@ jobs:
           KPC_PUSH_RETRY=$PWD/.github/scripts/kpc_push_retry.sh
           cp ../work/picked.json ../work/queue/receipt.json ../work/queue/parks-log.json ../work/report/ 2>/dev/null || true   # ok: a missing part is said in the summary
           cp ../work/traced/report.csv ../work/report/tracer-report.csv 2>/dev/null || true   # ok: no trace = no tracer report (Fable 19 Nov: every gate's input, acres_known must be empty)
-          git worktree add -q -B tools-out ../out origin/tools-out && mkdir -p ../out/key-quality/2026-11-19/t1/run-${{ github.run_id }} \
-            && cp ../work/report/* ../out/key-quality/2026-11-19/t1/run-${{ github.run_id }}/ 2>/dev/null
+          mkdir -p ../work/report/traces; cp ../work/traced/US-*.json ../work/report/traces/ 2>/dev/null || true   # ok: no drawn trace = nothing to copy (Fable 19 Nov: the small trace files also go to tools-out, so a failed branch save cannot lose them again)
+          { git worktree add -q -B tools-out ../out origin/tools-out && mkdir -p ../out/key-quality/2026-11-19/t1/run-${{ github.run_id }} \
+            && cp -r ../work/report/. ../out/key-quality/2026-11-19/t1/run-${{ github.run_id }}/; } || { echo "::warning title=T1::the report folder was not copied to tools-out"; echo "T1 - the report folder was not copied to tools-out" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           ( cd ../out && find key-quality/2026-11-19/t1 -size +5M -delete; git add -A key-quality/2026-11-19/t1 && git commit -qm "T1 tracer test report (run ${{ github.run_id }})" && bash "$KPC_PUSH_RETRY" tools-out 4 "key-quality" ) || { echo "::warning title=T1::report not saved to tools-out (it is in this run's summary)"; echo "T1 - report not saved to tools-out (it is in this run's summary)" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           rm -rf ../tt && mkdir ../tt && cd ../tt && git init -q && git checkout -q --orphan trace-test
           git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
