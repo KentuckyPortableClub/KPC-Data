@@ -1236,9 +1236,9 @@
   "key-doctor": {
    "areas": "",
    "last_run": "2026-11-19",
-   "made": "NOs: 433 of 723 NOs landed; 290 missing (re-applied to overrides.fixed.json); 1221 came back in the key release: 10854 parks pass, 289 held, 41 files; per-park release ON stuck: 0 area(s) stuck; see stuck-2026-11-19.md ",
+   "made": "NOs: 433 of 723 NOs landed; 290 missing (re-applied to overrides.fixed.json); 1202 came back in the key release: 11395 parks pass, 297 held, 43 files; per-park release ON stuck: 0 area(s) stuck; see stuck-2026-11-19.md ",
    "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44524639420",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44598683748",
    "waiting_on": "chat 10 (came-back NOs / stuck areas); per-park release in release-approved"
   },
   "layer intake": {
@@ -1291,9 +1291,9 @@
   },
   "waiting room": {
    "last_run": "2026-11-19",
-   "made": "heartbeat 0 h old, 103 files waiting",
-   "result": "green",
-   "waiting_on": "nothing"
+   "made": "9 files waiting over 3 days in data/waiting/in/ (e.g. US-MA.json)",
+   "result": "red",
+   "waiting_on": "chat 11 (look at the waiting room run)"
   },
   "world finder v2": {
    "areas": "",

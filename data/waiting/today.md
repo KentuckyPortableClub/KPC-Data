@@ -2,7 +2,7 @@
 
 For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in data/waiting/approved.json; the nightly run lets it out.
 
-## Held files: 101 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
+## Held files: 103 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
 
 | since | days | file | last check | why |
 |---|---|---|---|---|
@@ -60,18 +60,20 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/us-key/US-ND.json | PASS |  |
 | ? | ? | data/us-key/US-NE.json | PASS |  |
 | ? | ? | data/us-key/US-NH.json | PASS |  |
-| ? | ? | data/us-key/US-NJ.json | RELEASE |  |
+| ? | ? | data/us-key/US-NJ.json | PASS |  |
 | ? | ? | data/us-key/US-NM.json | RELEASE |  |
 | ? | ? | data/us-key/US-NV.json | PASS |  |
 | ? | ? | data/us-key/US-NY.json | PASS |  |
 | ? | ? | data/us-key/US-OH.json | PASS |  |
 | ? | ? | data/us-key/US-OK.json | PASS |  |
+| ? | ? | data/us-key/US-OR.json | PASS |  |
 | ? | ? | data/us-key/US-PA.json | RELEASE |  |
 | ? | ? | data/us-key/US-SC.json | PASS |  |
 | ? | ? | data/us-key/US-SD.json | PASS |  |
 | ? | ? | data/us-key/US-TN.json | PASS |  |
 | ? | ? | data/us-key/US-TX.json | PASS |  |
 | ? | ? | data/us-key/US-UT.json | RELEASE |  |
+| ? | ? | data/us-key/US-VT.json | RELEASE |  |
 | ? | ? | data/us-key/US-WA.json | PASS |  |
 | ? | ? | data/us-key/US-WI.json | PASS |  |
 | ? | ? | data/us-key/US-WV.json | PASS |  |
