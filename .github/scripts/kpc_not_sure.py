@@ -68,6 +68,9 @@ QUESTION_CODES = {
     'REFUSED', 'SCRIPT_BUILT', 'NO_PAGE', 'CLOSED_OR_MOVED_WORDS',
 }
 READER = 'park page reader'
+# Who may close a row. A bot is allowed only when its name is listed here. Empty until a reviewed rule says so.
+SETTLE_KINDS = ('person', 'reviewer', 'bot')
+BOTS_MAY_SETTLE = ()
 
 
 def _blank():
@@ -233,15 +236,25 @@ class NotSure:
         self._write_area(area, rows)
         return row
 
-    def settle(self, ref, code, by, how, link='', today=''):
-        """Close a row with who and how. The story stays. The page reader does not call this."""
+    def settle(self, ref, code, by, how, link='', today='', kind=''):
+        """Close a row only with who and how, and only for a person, the reviewer, or a named bot.
+        The page reader is refused by name. The story stays."""
+        who = str(by or '').strip()
+        why = str(how or '').strip()
+        settler = str(kind or '').strip()
+        if not who or not why or settler not in SETTLE_KINDS:
+            return None
+        if 'park page reader' in who.lower():
+            return None
+        if settler == 'bot' and who not in BOTS_MAY_SETTLE:
+            return None
         found = self._find(ref, code)
         if not found:
             return None
         area, rows, row = found
         row['status'] = 'settled'
-        row['settled'] = {'by': str(by or '')[:120], 'date': str(today or '')[:20],
-                          'how': str(how or '')[:300], 'link': str(link or '')[:300]}
+        row['settled'] = {'by': who[:120], 'date': str(today or '')[:20],
+                          'how': why[:300], 'link': str(link or '')[:300], 'kind': settler}
         if today:
             row['last_seen'] = today
         self._write_area(area, rows)
@@ -446,7 +459,11 @@ def selftest():
         check('a class row is never handed to a bot', all(r['ref'] != '(class)' for r in a.open_rows()))
         a.tried('US-1', 'NAME_DIFFERS', 'park page reader', 'read', 'the page says One', today='2026-11-20')
         a.tried('US-2', 'INSIDE_BIGGER_UNIT', 'park page reader', 'read', 'inside the big unit', today='2026-11-20')
-        a.settle('US-2', 'INSIDE_BIGGER_UNIT', 'a reviewer', 'the page quote settled it', 'https://example.gov/p', today='2026-11-20')
+        a.settle('US-2', 'INSIDE_BIGGER_UNIT', 'a reviewer', 'the page quote settled it', 'https://example.gov/p', today='2026-11-20', kind='reviewer')
+        check('settle refuses an empty who', a.settle('US-1', 'NAME_DIFFERS', '', 'a reason', kind='person') is None)
+        check('settle refuses an empty how', a.settle('US-1', 'NAME_DIFFERS', 'Ada', '', kind='person') is None)
+        check('settle refuses the page reader by name', a.settle('US-1', 'NAME_DIFFERS', 'park page reader', 'saw the page', kind='person') is None)
+        check('settle refuses a bot that is not on the list', a.settle('US-1', 'NAME_DIFFERS', 'some bot', 'its rule', kind='bot') is None)
         us1 = next(r for r in a._load_area('US-UT') if r['ref'] == 'US-1')
         us2 = next(r for r in a._load_area('US-UT') if r['ref'] == 'US-2')
         check('tried and settle keep the story',

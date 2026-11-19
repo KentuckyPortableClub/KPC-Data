@@ -293,6 +293,7 @@ def render_summary(facts_by_area, order, state, today, requests):
     lines = [f'Park page reader, {today}.',
              f'Asked {asked}. Read {read}. Kept {unchanged} unchanged. {left} parks are left. The next run continues.',
              f'Requests this run: {requests}.',
+             'Pictures: ' + str(sum(1 for f in by_ref.values() if f.get('picture'))) + '.',
              'Pages: ' + ', '.join(f'{k} {n}' for k, n in sorted(kinds.items())) + '.',
              'Questions: ' + (', '.join(f'{k} {n}' for k, n in sorted(qcount.items())) or 'none') + '.',
              'Look at these first:']

@@ -806,7 +806,7 @@ def browser_picture(u, M, out_path, timeout_ms=30000):
                 except Exception:
                     continue  # noqa: BLE001
             if shot is None:
-                shot = pg.screenshot(type='jpeg', quality=70, full_page=False)
+                return ''
         finally:
             pg.close()
         shot = _picture_fit(shot)

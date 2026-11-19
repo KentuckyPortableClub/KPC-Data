@@ -60,7 +60,7 @@ with tempfile.TemporaryDirectory() as td:
     a.tried('US-10', 'NAME_DIFFERS', 'park page reader', 'page silent', '', today='2026-11-20')
     kept = next(r for r in a._load_area('US-KY') if r['ref'] == 'US-10')
     check('tried keeps every note', len(kept['tried']) == 2 and kept['tried'][0]['quote'] == 'Page name.')
-    a.settle('US-11', 'MANY_TRACTS', 'a reviewer', 'the map named the tracts', '', today='2026-11-20')
+    a.settle('US-11', 'MANY_TRACTS', 'a reviewer', 'the map named the tracts', '', today='2026-11-20', kind='reviewer')
     settled = next(r for r in a._load_area('US-KY') if r['ref'] == 'US-11')
     check('settle keeps the row and does not delete it', settled['status'] == 'settled' and settled['why'] == 'tracts')
     lines = ns.summary(today='2026-11-19', qsos={'US-6063': 2540})

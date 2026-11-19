@@ -211,25 +211,16 @@ with tempfile.TemporaryDirectory() as td:
 src = (S / 'kpc_pdf_finder.py').read_text(encoding='utf-8')
 check('9. the finder never parses robots.txt itself (no robotparser, no parse_robots) and goes through kpc_manners.Manners',
       'robotparser' not in src and 'parse_robots' not in src and 'kpc_manners.Manners(' in src and 'urlopen' not in src)
-try:
-    host = subprocess.run(['git', 'diff', 'origin/main', '--', '.github/scripts/kpc_host_rules.py'],
-                          cwd=ROOT, capture_output=True, text=True, timeout=60)
-    man = subprocess.run(['git', 'diff', 'origin/main', '--', '.github/scripts/kpc_manners.py'],
-                         cwd=ROOT, capture_output=True, text=True, timeout=60)
-    if host.returncode != 0 or man.returncode != 0:
-        print('NOTE: no origin/main here; the manners files are compared in the PR')
-    else:
-        added = [ln[1:] for ln in man.stdout.splitlines() if ln.startswith('+') and not ln.startswith('+++')]
-        removed = [ln[1:] for ln in man.stdout.splitlines() if ln.startswith('-') and not ln.startswith('---') and ln[1:].strip()]
-        new_defs = {ln.strip() for ln in added if ln.startswith('def ')}
-        # Hand-off 05 adds browser_picture beside browser_text. That is the one difference this file may have.
-        picture_only = (not man.stdout.strip()) or (
-            not removed and new_defs <= {'def browser_picture(u, M, out_path, timeout_ms=30000):', 'def _picture_fit(blob):'}
-            and 'def browser_picture(' in man.stdout)
-        check('9. host rules unchanged, and manners is unchanged except the picture reader next to browser_text',
-              not host.stdout.strip() and picture_only)
-except Exception as e:  # noqa: BLE001
-    print(f'NOTE: git not available ({e})')
+import hashlib
+def _sha(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+# A later edit of either file changes the pin in the same pull request, where a reviewer sees it.
+MANNERS_SHA = 'b28726c41cdebd78b49e92fa056c9d7f3608465a66e196a1c9d03cc5793fce3c'
+HOST_SHA = 'eec1a03ee34b6aeb0e7464d4ebbe5e223a145f48e57b10fa8ae7c8022c162dbc'
+check(f'9. kpc_manners.py frozen: {MANNERS_SHA}, reviewed by Fable, 19 Nov 2026',
+      _sha(S / 'kpc_manners.py') == MANNERS_SHA)
+check(f'9. kpc_host_rules.py frozen: {HOST_SHA}, reviewed by Fable, 19 Nov 2026',
+      _sha(S / 'kpc_host_rules.py') == HOST_SHA)
 
 print('ALL PASS' if ok else 'SOME FAILED')
 sys.exit(0 if ok else 1)

@@ -634,22 +634,61 @@ def cmd_read(args):
                              max_requests=args.max_requests, max_per_park=args.max_per_park, max_parks=args.max_parks,
                              on_park=None if args.quiet else on_park, refresh_days=args.refresh_days, deadline=deadline)
     _finish(args, facts, order, lists, state, state_path, today, reqs, old_facts)
-    if os.environ.get('BROWSER') == '1' and args.out and isinstance(getter, LiveGetter):
-        from kpc_manners import browser_picture
-        pic = pathlib.Path(args.out) / 'pictures'
-        for parks in facts.values():
-            for ref, fact in parks.items():
-                if fact.get('unchanged') or not fact.get('questions'):
-                    continue
-                if (fact.get('page') or {}).get('kind') in ('refused', 'robots', 'none', 'dead'):
-                    continue
-                url = (fact.get('asked') or {}).get('url')
-                if url:
-                    browser_picture(url, getter.M, str(pic / f'{ref}.jpg'))
+    reqs = _note_pictures(args, facts, getter, reqs, deadline, today)
+    if args.out:
+        lines = W.render_summary(facts, order, state, today, reqs)
+        pathlib.Path(args.out, 'summary.md').write_text('\n'.join(lines) + '\n', encoding='utf-8')
+        run_path = pathlib.Path(args.out) / 'run.json'
+        run = load_json(run_path, {})
+        run['requests'] = reqs
+        save_json(run_path, run)
     if not args.quiet:
         left = len(state.get('left') or [])
         print(f'Done. {reqs} request(s). {left} parks are left. The next run continues. Facts are in {args.out or "(not saved)"}.')
     return 0
+
+
+def picture_wanted(fact, no_outline=False):
+    """R-PR13: a picture only when a real question is still open, or the park has no official outline.
+    Information-only codes (a shared page, both parts numbered) are not a question."""
+    kind = (fact.get('page') or {}).get('kind') or ''
+    if fact.get('unchanged') or kind in ('refused', 'robots', 'none', 'dead'):
+        return False
+    real = [q for q in (fact.get('questions') or []) if q.get('for') != 'information']
+    if real:
+        return True
+    return bool(no_outline)
+
+
+def _note_pictures(args, facts, getter, reqs, deadline, today):
+    """One picture per park, each counted against the same request budget and the same deadline."""
+    if os.environ.get('BROWSER') != '1' or not args.out or not isinstance(getter, LiveGetter):
+        return reqs
+    from kpc_manners import browser_picture
+    left = args.max_requests - reqs
+    pin = set()
+    if getattr(args, 'links', ''):
+        for ref, row in W.load_keys(args.links).items():
+            if str((row or {}).get('g') or '') == 'pin':
+                pin.add(ref)
+    folder = pathlib.Path(args.out) / 'pictures'
+    for parks in facts.values():
+        for ref, fact in parks.items():
+            if left <= 0 or (deadline is not None and time.time() >= deadline):
+                return reqs
+            if not picture_wanted(fact, no_outline=ref in pin):
+                continue
+            url = (fact.get('asked') or {}).get('url')
+            if not url:
+                continue
+            left -= 1
+            reqs += 1
+            saved = browser_picture(url, getter.M, str(folder / f'{ref}.jpg'))
+            if saved:
+                fact['picture'] = {'file': f'pictures/{ref}.jpg', 'date': today,
+                                   'note': 'picture for a reviewer, not a source'}
+    write_facts(args.out, facts)
+    return reqs
 
 
 def cmd_report(args):
@@ -697,7 +736,7 @@ def cmd_intake(args):
     rows = []
     if answers:
         rows = P.apply_person(facts, answers, today=today)
-        P.drop_pictures(args.out, [p.get('ref') for p in (answers.get('parks') or []) if isinstance(p, dict)])
+        P.drop_pictures(args.out, [p.get('ref') for p in (answers.get('parks') or []) if isinstance(p, dict)], facts)
     write_facts(args.out, facts)
     if rows:
         P.write_disagreements(pathlib.Path(args.out) / 'disagreements.csv', rows)

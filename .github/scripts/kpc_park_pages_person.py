@@ -286,15 +286,27 @@ def load_answers_or_zip(path):
     return None, doc
 
 
-def drop_pictures(out_dir, refs):
+def drop_pictures(out_dir, refs, facts_by_area=None):
+    """Delete a reviewer's picture once a person has answered, including a path noted on the fact."""
     pic = pathlib.Path(out_dir) / 'pictures'
-    if not pic.is_dir():
-        return
-    for ref in refs:
-        for ext in ('.jpg', '.jpeg'):
-            f = pic / f'{ref}{ext}'
-            if f.is_file():
-                f.unlink()
+    refs = {r for r in refs if r}
+    if pic.is_dir():
+        for ref in refs:
+            for ext in ('.jpg', '.jpeg'):
+                f = pic / f'{ref}{ext}'
+                if f.is_file():
+                    f.unlink()
+    for parks in (facts_by_area or {}).values():
+        for ref, fact in parks.items():
+            if ref not in refs:
+                continue
+            rec = fact.get('picture') or {}
+            rel = rec.get('file') if isinstance(rec, dict) else rec
+            if rel:
+                f = pathlib.Path(out_dir) / str(rel)
+                if f.is_file():
+                    f.unlink()
+            fact.pop('picture', None)
 
 
 def say_extras():

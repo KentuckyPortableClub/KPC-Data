@@ -328,6 +328,14 @@ try:
 finally:
     shutil.rmtree(work, ignore_errors=True)
 
+# --- review: a picture is not taken for an information-only question ---
+import kpc_park_pages as PP
+info = {'questions': [{'code': 'SHARED_PAGE', 'for': 'information'}, {'code': 'COMBINED_BOTH_NUMBERED', 'for': 'information'}], 'page': {'kind': 'html'}}
+real = {'questions': [{'code': 'INSIDE_BIGGER_UNIT', 'for': 'reviewer'}], 'page': {'kind': 'html'}}
+check('a picture is not taken for information-only questions', PP.picture_wanted(info) is False and PP.picture_wanted(real) is True)
+check('a picture is still taken when the park has no official outline', PP.picture_wanted(info, no_outline=True) is True)
+check('a picture is not a shot of the whole window', 'full_page' not in (S / 'kpc_manners.py').read_text(encoding='utf-8').split('def browser_picture', 1)[1].split('def _picture_fit', 1)[0])
+
 # --- part 2: the by-hand workflow ---
 import yaml
 WF = (ROOT / '.github/workflows/kpc-park-pages.yml').read_text(encoding='utf-8')
