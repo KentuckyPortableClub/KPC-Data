@@ -1,4 +1,4 @@
-# Review packet bot, PART 2: go-ahead and five additions (Kentucky Portable Club, 19 Nov 2026, 11:40 AM CST)
+# Review packet bot, PART 2: go-ahead and five additions (Kentucky Portable Club, 19 Nov 2026, 11:40 AM CST; test inputs corrected 11:45 AM)
 
 **Part 1 is accepted.** Run 44564132024 on KPC-Data (pull request 278, new `ac2ab4c8`, old `8140d35e`, states AK ID CO) wrote
 `key-quality/review-packets/pr-278-ac2ab4c/` and it matches the hand figures on every row. Thank you. Build Part 2 now, as the
@@ -30,8 +30,10 @@ in the packet when a park was skipped; never guess a number.
    match a row: list it when the NEW union is under 0.8 x the agency's acres. A name that does not match exactly is left out, not
    guessed.
 
-**Known answers to test against** (OLD = KPC-Links `8140d35`, NEW = main `d5ae6ad3` + the `key-held` asset as it is today, the 13
-held states AK AR DE FL GA ID MT NC OR RI UT VA WY; the hand lists are on `tools-out` `key-quality/2026-11-19/fable-sitting-3/`;
+**Known answers to test against** (OLD = KPC-Links `data/us-key` at `8140d35`; NEW = KPC-Links `data/us-key` at `d5ae6ad3` with the
+held files of US key run 44528656941 laid over it. The release asset `key-held.tar.gz` was REPLACED by a later run at 11:16 AM on
+19 Nov, so use the saved copy on `tools-out`: `key-quality/2026-11-19/factcheck-run-44528656941/key-held-run-44528656941.tar.gz`.
+The 13 held states are AK AR DE FL GA ID MT NC OR RI UT VA WY; the hand lists are on `tools-out` `key-quality/2026-11-19/fable-sitting-3/`;
 they were measured on a grid, so allow 2%):
 - Shrinks: 60 parks in the 13 held states (AK 4, AR 10, DE 2, FL 8, ID 8, MT 15, OR 5, UT 3, VA 4, WY 1), among them MT US-0070
   2,187,128 -> 160,257; MT US-4501 3,399,571 -> 1,143,001; AR US-1091 35,540 -> 218. File `held-states-every-changed-park.csv`.
