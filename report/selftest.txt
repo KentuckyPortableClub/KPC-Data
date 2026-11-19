@@ -1,0 +1,22 @@
+14:28:02    tigerweb.geo.census.gov/robots.txt answered 401: treated as Disallow: / (STOP); nothing is read from this host
+14:28:02    tigerweb.geo.census.gov/robots.txt answered 403: treated as Disallow: / (STOP); nothing is read from this host
+14:28:02    tigerweb.geo.census.gov/robots.txt answered 500: treated as Disallow: / (STOP); nothing is read from this host
+14:28:02    tigerweb.geo.census.gov/robots.txt answered 429: treated as Disallow: / (STOP); nothing is read from this host
+14:28:02    tigerweb.geo.census.gov/robots.txt answered err:ConnectionError: treated as Disallow: / (STOP); nothing is read from this host
+14:28:02    tigerweb.geo.census.gov/robots.txt answered redirect to www.example.com: treated as Disallow: / (STOP); nothing is read from this host
+PASS true transform: most basemap line samples sit on picture lines (share 1.00, base 0.06, z 48.0, n 150)
+PASS rotated decoys score far lower (best decoy z 7.4 vs true 48.0)
+PASS a transform 70 m off (14 px) loses most of the evidence (z 20.1)
+PASS a 15% scale error loses most of the evidence (z 8.9)
+PASS no samples -> no evidence
+PASS lines entirely outside the picture -> no evidence
+PASS fewer than MIN_SAMPLES thinned samples -> z 0 (no claim)
+PASS a picture with no lines -> no evidence (base 0)
+PASS clip_lines keeps only the in-box run of a long line and drops a line outside the box
+PASS an excluded legend box removes its lines from the evidence
+PASS the thinned sample count is capped at 150, so z is bounded (about 48 at most; the tracer weights it 0.25): [150, 104, 86]
+PASS deterministic: the same inputs give the same score
+ALL PASS
+14:28:02    basemap from cache (partial: water skipped when it was fetched)
+14:28:02    basemap from cache (partial: water skipped when it was fetched)
+PASS
