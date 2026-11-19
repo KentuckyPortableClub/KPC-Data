@@ -8,14 +8,14 @@ The engine decides nothing; this is its self-check against the bar.
 
 **Bar:** Rule G: SURE only when pin inside (or <= 150 m with a name match, R-G12), names equal once kind words are stripped, kinds match, not line vs polygon, not a container, size within 1.5x or unknown; LIKELY goes to chat 11; UNLIKELY is evidence only, never a question. Whole key file: chat 11 samples 30 joins, needs 30/30. Finder: >= 95% of past YES re-found, >= 25% more parks, >= 85% YES in a sample of 40; every open park has a why-not.
 
-**Measured:** rows 14922, parks 4550, parks_with_hit 603, SURE 517, LIKELY 870, UNLIKELY_evidence 5413, strong 297, already_approved 686, open_without_whynot 456, non_official_candidates 1, unlikely_as_questions 0, strong_but_not_sure 0, questions_beyond_150m 0, size_way_off_questions 0
+**Measured:** rows 15016, parks 4581, parks_with_hit 603, SURE 518, LIKELY 873, UNLIKELY_evidence 5452, strong 298, already_approved 688, open_without_whynot 456, non_official_candidates 1, unlikely_as_questions 0, strong_but_not_sure 0, questions_beyond_150m 0, size_way_off_questions 0
 
 **Top reasons for misses:**
-- blocked: source could not be read (3221)
+- blocked: source could not be read (3270)
 - not found: no-layer: no official record at the pin or by name (2571)
-- evidence: UNLIKELY only : name: none word in common (2235)
-- evidence: UNLIKELY only : pin not inside nor within m with a name match (1068)
-- evidence: UNLIKELY only : surface-manager layer: never matched against parks (891)
+- evidence: UNLIKELY only : name: none word in common (2254)
+- evidence: UNLIKELY only : pin not inside nor within m with a name match (1069)
+- evidence: UNLIKELY only : surface-manager layer: never matched against parks (896)
 
 **Why it fails:**
 - open parks without a why-not: 456
