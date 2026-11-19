@@ -29,3 +29,13 @@ job 1 official sources (99 rows + 2 plants), job 2 second look 02 (Tillamook SF,
 Moon, Longview Saline x2, Osage WMA US-6365, Acadia Cliffs US-9442, Diamond HMA US-10844 + 1 plant), job 3 the busiest 100
 pin-only parks (+ 2 plants; #277's 13 parks left out), job 4 POTA's own pages for the R-PP1 five (+ 1 plant). The answer key is
 `kit-keys/` here: NEVER give it to the agent. One agent is one grader: nothing becomes a saved answer from one pass alone.
+
+## Fable's corrections, 19 Nov 8:20 AM CST
+- "the keeper's 75 PC rows are not on that list yet" is WRONG for 31 of the 34 layers: they are on data/needs-download.json already.
+- What the 487 PC rows are: 75 keeper rows (34 layers, one row per state) + 412 rows of the needs-download list, 405 of them added
+  by the park-info engine on 11-12 Nov with no state. 410 distinct layers on 20 hosts that bots may not contact. Only 118 of the
+  410 feed a park in the US key; 123 of the open rows repeat a layer whose state row is already DONE (downloaded 10-11 Nov).
+  None is needed for the key release: the key already joins these records; the shortage is in the private outline store.
+- NO hand download is uploaded before the release is signed off: a hand file on boundary-cache is merged by the next US key run
+  and would change the shapes between the fact check and the release.
+- The agent's answers: `answers-pass1/` (READ-FIRST.md there).
