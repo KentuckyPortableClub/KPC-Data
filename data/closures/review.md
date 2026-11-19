@@ -1,6 +1,6 @@
-# Closures super-bot: review (2026-11-18; RULE SHEET D; compared quietly, nothing on cards until GO)
+# Closures super-bot: review (2026-11-19; RULE SHEET D; compared quietly, nothing on cards until GO)
 
-Run: 2026-11-18T21:44Z · requests 102 · pages 76 · PDFs 17 · sentences read 350 · unmatched 118 · look-alikes skipped 198 · sources failed 2
+Run: 2026-11-19T03:49Z · requests 106 · pages 81 · PDFs 17 · sentences read 363 · unmatched 118 · look-alikes skipped 208 · sources failed 2
 
 ## Kentucky gate: **FAIL** — 20 of 27 of Kentucky's own reader's items found here on the same park (74%); 54 only here
 
@@ -9,12 +9,12 @@ Run: 2026-11-18T21:44Z · requests 102 · pages 76 · PDFs 17 · sentences read 
 - US-KY fs-gwj: rest (host resting after an earlier strike; last items kept) (https://www.fs.usda.gov/alerts/gwj/alerts-notices)
 - US-KY ky-fs-dbnf: rest (host resting after an earlier strike; last items kept) (https://www.fs.usda.gov/alerts/dbnf/alerts-notices)
 
-## US-KY (done, read 2026-11-18T21:44)
+## US-KY (done, read 2026-11-19T03:49)
 whole 1 · part 0 · hunt 0 · seasonal 0 · note 70 · taken_down 2 · 0 banners
 
 Sources that failed (last items kept): ky-fs-dbnf (rest (host resting after an earlier strike; last items kept)); fs-gwj (rest (host resting after an earlier strike; last items kept))
 
-Skipped quietly (a secret is missing): fws-clarks-river (robots-unreadable (read again next run; last items); fws-reelfoot (robots-unreadable (read again next run; last items); fws-ohio-river-islands (robots-unreadable (read again next run; last items); fws-green-river (robots-unreadable (read again next run; last items)
+Dropped as another state's place (multi-state forest): 2 notices
 
 Unmatched (two parks or none; for chat 11 to judge):
 - 1. Cave Run Lake [ky-fw-quota] · nearest park name: Mammoth Cave National Park (US-0050)
