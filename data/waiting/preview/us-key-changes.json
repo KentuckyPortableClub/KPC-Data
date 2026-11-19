@@ -1,11 +1,11 @@
 {
  "about": "us-key: the HELD build (data/waiting/in/data/us-key/) vs the LIVE key (data/us-key/). Chat 11: check the sample, then write KEY YES or KEY NO: <refs> in data/waiting/approved.json (item 'what': 'us-key', 'build': the held build id from data/waiting/in/data/us-key/index.json, 'date': 'YYYY-MM-DD' and 'time': 'h:mm AM/PM' Central; rule 22: no build field or a grade from before Nov 2 9:37 AM CST is not a release). Written by kpc_key_summary.py.",
- "made": "2026-11-19 16:33 UTC",
+ "made": "2026-11-19 18:58 UTC",
  "totals": {
-  "gained": 15,
-  "lost": 74,
-  "pieces_changed": 1221,
-  "grade_changed": 19
+  "gained": 16,
+  "lost": 80,
+  "pieces_changed": 1274,
+  "grade_changed": 27
  },
  "per_area": {
   "US-AL": {
@@ -58,9 +58,9 @@
   },
   "US-ID": {
    "gained": 0,
-   "lost": 1,
-   "pieces_changed": 1,
-   "grade_changed": 0
+   "lost": 4,
+   "pieces_changed": 23,
+   "grade_changed": 3
   },
   "US-IL": {
    "gained": 1,
@@ -136,15 +136,15 @@
   },
   "US-NH": {
    "gained": 0,
-   "lost": 2,
-   "pieces_changed": 12,
-   "grade_changed": 0
+   "lost": 1,
+   "pieces_changed": 13,
+   "grade_changed": 1
   },
   "US-NJ": {
    "gained": 0,
-   "lost": 1,
-   "pieces_changed": 0,
-   "grade_changed": 0
+   "lost": 0,
+   "pieces_changed": 1,
+   "grade_changed": 1
   },
   "US-NM": {
    "gained": 0,
@@ -176,6 +176,12 @@
    "pieces_changed": 8,
    "grade_changed": 1
   },
+  "US-OR": {
+   "gained": 1,
+   "lost": 9,
+   "pieces_changed": 25,
+   "grade_changed": 1
+  },
   "US-PA": {
    "gained": 1,
    "lost": 0,
@@ -196,9 +202,9 @@
   },
   "US-TN": {
    "gained": 1,
-   "lost": 1,
-   "pieces_changed": 30,
-   "grade_changed": 2
+   "lost": 0,
+   "pieces_changed": 31,
+   "grade_changed": 3
   },
   "US-TX": {
    "gained": 1,
@@ -220,9 +226,9 @@
   },
   "US-WA": {
    "gained": 1,
-   "lost": 12,
-   "pieces_changed": 42,
-   "grade_changed": 4
+   "lost": 9,
+   "pieces_changed": 45,
+   "grade_changed": 5
   },
   "US-WI": {
    "gained": 0,
@@ -472,6 +478,25 @@
    "pota": "https://pota.app/#/park/US-0661"
   },
   {
+   "area": "US-OR",
+   "ref": "US-0054",
+   "name": "Nez Perce National Historical Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "3232",
+     "Nez Perce National Historical Park",
+     8,
+     "NPS unit code NEPE (POTA website nps.gov/nepe)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-0054"
+  },
+  {
    "area": "US-PA",
    "ref": "US-12234",
    "name": "Allegheny National Wild and Scenic River",
@@ -687,6 +712,69 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-5730"
+  },
+  {
+   "area": "US-ID",
+   "ref": "US-2239",
+   "name": "Lake Cascade State Park",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sgidb1939824",
+     "Cascade Reservoir",
+     27148,
+     "name · water outline only"
+    ],
+    [
+     "2309",
+     "Cascade Reservoir",
+     14820,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-2239"
+  },
+  {
+   "area": "US-ID",
+   "ref": "US-2240",
+   "name": "Lake Walcott State Park",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sgidb1937524",
+     "Lake Walcott",
+     8263,
+     "name · water outline only"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-2240"
+  },
+  {
+   "area": "US-ID",
+   "ref": "US-2250",
+   "name": "Winchester Lake State Park",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sgidb1936754",
+     "Winchester Lake",
+     103,
+     "name · water outline only"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-2250"
   },
   {
    "area": "US-ID",
@@ -1585,44 +1673,6 @@
    "pota": "https://pota.app/#/park/US-13486"
   },
   {
-   "area": "US-NH",
-   "ref": "US-2644",
-   "name": "Cardigan Mountain State Park",
-   "old_grade": "approximate",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "nhc2202",
-     "Cardigan Mountain State Forest",
-     0,
-     "reviewed-approx"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-2644"
-  },
-  {
-   "area": "US-NJ",
-   "ref": "US-11992",
-   "name": "Whiting State Conservation Area",
-   "old_grade": "approximate",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "229060",
-     "Whiting Wildlife Management Area",
-     1188,
-     "reviewed-approx"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-11992"
-  },
-  {
    "area": "US-NV",
    "ref": "US-13178",
    "name": "Mt. Irish Archaeological Site Archeological Reserve",
@@ -1746,23 +1796,199 @@
    "pota": "https://pota.app/#/park/US-11714"
   },
   {
-   "area": "US-TN",
-   "ref": "US-12064",
-   "name": "Henderson Swamp State Wilderness Area",
+   "area": "US-OR",
+   "ref": "US-10017",
+   "name": "Quartzville Creek BLM Wild and Scenic River",
    "old_grade": "approximate",
    "new_grade": "pin",
    "new_pieces": [],
    "old_pieces": [
     [
-     "255796",
-     "Henderson Swamp Public Hunting Area",
-     24,
+     "rst11966",
+     "Quartzville Creek and Yellowstone Trail",
+     1758,
+     "reviewed-approx"
+    ],
+    [
+     "rst11856",
+     "Quartzville Creek and Yellowstone Trail",
+     540,
      "reviewed-approx"
     ]
    ],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-12064"
+   "pota": "https://pota.app/#/park/US-10017"
+  },
+  {
+   "area": "US-OR",
+   "ref": "US-10479",
+   "name": "Oasis BLM Recreation Management Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "rma11297",
+     "Oasis Campground",
+     3,
+     "reviewed-approx"
+    ],
+    [
+     "rst11297",
+     "Oasis Campground",
+     3,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-10479"
+  },
+  {
+   "area": "US-OR",
+   "ref": "US-10483",
+   "name": "Jordan Craters Area of Environmental Concern National Nature Reserve",
+   "old_grade": "pin",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "wsa31291",
+     "Jordan Craters WSA",
+     0,
+     "reviewed-approx"
+    ],
+    [
+     "wsa31325",
+     "Jordan Craters WSA",
+     0,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-10483"
+  },
+  {
+   "area": "US-OR",
+   "ref": "US-10487",
+   "name": "Lake Abert and Abert Rim BLM Wilderness Area",
+   "old_grade": "pin",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "wsa31224",
+     "Abert Rim WSA",
+     0,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-10487"
+  },
+  {
+   "area": "US-OR",
+   "ref": "US-13098",
+   "name": "Neptune South Wayside State Recreation Site",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "osp46",
+     "Neptune",
+     361,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-13098"
+  },
+  {
+   "area": "US-OR",
+   "ref": "US-13099",
+   "name": "Neptune North Wayside State Recreation Site",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "osp46",
+     "Neptune",
+     361,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-13099"
+  },
+  {
+   "area": "US-OR",
+   "ref": "US-5461",
+   "name": "Tillamook State Forest",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "241270",
+     "Forest Development Fund (Board Of Forestry)",
+     627317,
+     "reviewed-approx"
+    ],
+    [
+     "242102",
+     "Tillamook State Forest",
+     21,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-5461"
+  },
+  {
+   "area": "US-OR",
+   "ref": "US-9159",
+   "name": "Lower Deschutes National Wild and Scenic River",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sgord5150",
+     "Lower Deschutes",
+     21,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-9159"
+  },
+  {
+   "area": "US-OR",
+   "ref": "US-9981",
+   "name": "Molalla River Corridor BLM Recreation Management Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "rst12171",
+     "Table Rock Fork-Molalla River",
+     17769,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-9981"
   },
   {
    "area": "US-UT",
@@ -1875,62 +2101,6 @@
   },
   {
    "area": "US-WA",
-   "ref": "US-10695",
-   "name": "Coffeepot Lake Nature Recreation Area",
-   "old_grade": "approximate",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "rma9874",
-     "Coffeepot Lake Public Fishing Access",
-     6,
-     "reviewed-approx"
-    ],
-    [
-     "rst9874",
-     "Coffeepot Lake Public Fishing Access",
-     6,
-     "reviewed-approx"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-10695"
-  },
-  {
-   "area": "US-WA",
-   "ref": "US-11142",
-   "name": "West Foster Creek Wildlife Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "158410",
-     "West Foster Creek",
-     1062,
-     "name"
-    ],
-    [
-     "sgwab1473",
-     "West Foster Creek",
-     0,
-     "name"
-    ],
-    [
-     "sgwaf1473",
-     "West Foster Creek",
-     0,
-     "name"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-11142"
-  },
-  {
-   "area": "US-WA",
    "ref": "US-12246",
    "name": "Pacific Lake Recreation Site - Lakeview Ranch BLM Recreation Management Area",
    "old_grade": "approximate",
@@ -1953,37 +2123,6 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-12246"
-  },
-  {
-   "area": "US-WA",
-   "ref": "US-12277",
-   "name": "West Foster Creek Wildlife Area State Fish and Wildlife Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "158410",
-     "West Foster Creek",
-     1062,
-     "name"
-    ],
-    [
-     "sgwab1473",
-     "West Foster Creek",
-     0,
-     "name"
-    ],
-    [
-     "sgwaf1473",
-     "West Foster Creek",
-     0,
-     "name"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-12277"
   },
   {
    "area": "US-WA",
@@ -2367,6 +2506,114 @@
    "pota": "https://pota.app/#/park/US-3586"
   },
   {
+   "area": "US-ID",
+   "ref": "US-0890",
+   "name": "Salmon National Wild and Scenic River",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "fwsr72",
+     "Salmon, Idaho National Wild and Scenic River",
+     14955,
+     "name (Forest Service river: state and forest dropped)"
+    ],
+    [
+     "fwsr246",
+     "Salmon, Idaho National Wild and Scenic River",
+     13189,
+     "name (Forest Service river: state and forest dropped)"
+    ],
+    [
+     "fwsr245",
+     "Salmon, Idaho National Wild and Scenic River",
+     12481,
+     "name (Forest Service river: state and forest dropped)"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "fwsr246",
+     "Salmon, Idaho National Wild and Scenic River",
+     13189,
+     "words"
+    ],
+    [
+     "fwsr245",
+     "Salmon, Idaho National Wild and Scenic River",
+     12481,
+     "words"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-0890"
+  },
+  {
+   "area": "US-ID",
+   "ref": "US-10657",
+   "name": "Milner Historic Recreation Area BLM Historic Area",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "rst13871",
+     "Milner",
+     2069,
+     "reviewed"
+    ],
+    [
+     "sgakg13871",
+     "Milner",
+     2069,
+     "reviewed"
+    ],
+    [
+     "sgidc825",
+     "Milner",
+     2069,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "rst13871",
+     "Milner",
+     2069,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-10657"
+  },
+  {
+   "area": "US-ID",
+   "ref": "US-11530",
+   "name": "Hells Canyon Reservoir State Fishing Lake",
+   "old_grade": "official",
+   "new_grade": "approximate",
+   "new_pieces": [
+    [
+     "sgidb1937484",
+     "Hells Canyon Reservoir",
+     2465,
+     "name · water outline only"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "sgidb1937484",
+     "Hells Canyon Reservoir",
+     2465,
+     "name · water outline only"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11530"
+  },
+  {
    "area": "US-IL",
    "ref": "US-0526",
    "name": "Wildcat Hollow State Nature Preserve",
@@ -2525,6 +2772,106 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-4560"
+  },
+  {
+   "area": "US-NH",
+   "ref": "US-2644",
+   "name": "Cardigan Mountain State Park",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgnhc832",
+     "Cardigan Mountain State Forest",
+     4690,
+     "reviewed"
+    ],
+    [
+     "sgnhc692",
+     "Cardigan Mountain State Forest",
+     729,
+     "reviewed"
+    ],
+    [
+     "sgnhc770",
+     "Cardigan Mountain State Forest",
+     52,
+     "reviewed"
+    ],
+    [
+     "sgnhc750",
+     "Cardigan Mountain State Forest",
+     40,
+     "reviewed"
+    ],
+    [
+     "nhc2202",
+     "Cardigan Mountain State Forest",
+     0,
+     "reviewed"
+    ],
+    [
+     "sgnha2200",
+     "Cardigan Mountain State Forest",
+     0,
+     "reviewed"
+    ],
+    [
+     "sgnha2201",
+     "Cardigan Mountain State Forest",
+     0,
+     "reviewed"
+    ],
+    [
+     "sgnha2202",
+     "Cardigan Mountain State Forest",
+     0,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "nhc2202",
+     "Cardigan Mountain State Forest",
+     0,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-2644"
+  },
+  {
+   "area": "US-NJ",
+   "ref": "US-11992",
+   "name": "Whiting State Conservation Area",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgnjb244",
+     "Whiting Wildlife Management Area",
+     1193,
+     "reviewed"
+    ],
+    [
+     "229060",
+     "Whiting Wildlife Management Area",
+     1188,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "229060",
+     "Whiting Wildlife Management Area",
+     1188,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11992"
   },
   {
    "area": "US-NV",
@@ -2707,6 +3054,74 @@
    "pota": "https://pota.app/#/park/US-6365"
   },
   {
+   "area": "US-OR",
+   "ref": "US-10021",
+   "name": "Topsy BLM Recreation Management Area",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "rst12988",
+     "Topsy Recreation Site",
+     14,
+     "reviewed"
+    ],
+    [
+     "sgakg12988",
+     "Topsy Recreation Site",
+     14,
+     "reviewed"
+    ],
+    [
+     "sgorf185",
+     "Topsy Recreation Site",
+     14,
+     "reviewed"
+    ],
+    [
+     "rma11215",
+     "Topsy Campground",
+     6,
+     "reviewed"
+    ],
+    [
+     "rst11215",
+     "Topsy Campground",
+     6,
+     "reviewed"
+    ],
+    [
+     "sgakg11215",
+     "Topsy Campground",
+     6,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "rst12988",
+     "Topsy Recreation Site",
+     14,
+     "reviewed-approx"
+    ],
+    [
+     "rma11215",
+     "Topsy Campground",
+     6,
+     "reviewed-approx"
+    ],
+    [
+     "rst11215",
+     "Topsy Campground",
+     6,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-10021"
+  },
+  {
    "area": "US-PA",
    "ref": "US-12664",
    "name": "Pine Creek Rail Trail State Trail",
@@ -2778,6 +3193,50 @@
   },
   {
    "area": "US-TN",
+   "ref": "US-12064",
+   "name": "Henderson Swamp State Wilderness Area",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgtnc409",
+     "Henderson Swamp PHA",
+     29,
+     "reviewed"
+    ],
+    [
+     "sgtne21",
+     "Henderson Swamp PHA",
+     29,
+     "reviewed"
+    ],
+    [
+     "255796",
+     "Henderson Swamp Public Hunting Area",
+     24,
+     "reviewed"
+    ],
+    [
+     "sgtni29",
+     "Henderson Swamp",
+     24,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "255796",
+     "Henderson Swamp Public Hunting Area",
+     24,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12064"
+  },
+  {
+   "area": "US-TN",
    "ref": "US-4560",
    "name": "Natchez Trace Trail National Scenic Trail",
    "old_grade": "approximate",
@@ -2801,6 +3260,50 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-4560"
+  },
+  {
+   "area": "US-WA",
+   "ref": "US-10695",
+   "name": "Coffeepot Lake Nature Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "rma9874",
+     "Coffeepot Lake Public Fishing Access",
+     6,
+     "reviewed"
+    ],
+    [
+     "rst9874",
+     "Coffeepot Lake Public Fishing Access",
+     6,
+     "reviewed"
+    ],
+    [
+     "sgakg9874",
+     "Coffeepot Lake Public Fishing Access",
+     6,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "rma9874",
+     "Coffeepot Lake Public Fishing Access",
+     6,
+     "reviewed-approx"
+    ],
+    [
+     "rst9874",
+     "Coffeepot Lake Public Fishing Access",
+     6,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-10695"
   },
   {
    "area": "US-WA",
@@ -3267,6 +3770,25 @@
    "pota": "https://pota.app/#/park/US-0661"
   },
   {
+   "area": "US-OR",
+   "ref": "US-0054",
+   "name": "Nez Perce National Historical Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "3232",
+     "Nez Perce National Historical Park",
+     8,
+     "NPS unit code NEPE (POTA website nps.gov/nepe)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-0054"
+  },
+  {
    "area": "US-WI",
    "ref": "US-4254",
    "name": "Chimney Rock Oak Savanna State Natural Area",
@@ -3474,6 +3996,31 @@
    "pota": "https://pota.app/#/park/US-13570"
   },
   {
+   "area": "US-OR",
+   "ref": "US-10483",
+   "name": "Jordan Craters Area of Environmental Concern National Nature Reserve",
+   "old_grade": "pin",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "wsa31291",
+     "Jordan Craters WSA",
+     0,
+     "reviewed-approx"
+    ],
+    [
+     "wsa31325",
+     "Jordan Craters WSA",
+     0,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-10483"
+  },
+  {
    "area": "US-VT",
    "ref": "US-3131",
    "name": "Maidstone State Park",
@@ -3505,35 +4052,228 @@
    "pota": "https://pota.app/#/park/US-3131"
   },
   {
-   "area": "US-WI",
-   "ref": "US-4244",
-   "name": "Big Bay Sand Spit and Bog State Natural Area",
+   "area": "US-NH",
+   "ref": "US-2644",
+   "name": "Cardigan Mountain State Park",
    "old_grade": "approximate",
-   "new_grade": "pin",
-   "new_pieces": [],
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgnhc832",
+     "Cardigan Mountain State Forest",
+     4690,
+     "reviewed"
+    ],
+    [
+     "sgnhc692",
+     "Cardigan Mountain State Forest",
+     729,
+     "reviewed"
+    ],
+    [
+     "sgnhc770",
+     "Cardigan Mountain State Forest",
+     52,
+     "reviewed"
+    ],
+    [
+     "sgnhc750",
+     "Cardigan Mountain State Forest",
+     40,
+     "reviewed"
+    ],
+    [
+     "nhc2202",
+     "Cardigan Mountain State Forest",
+     0,
+     "reviewed"
+    ],
+    [
+     "sgnha2200",
+     "Cardigan Mountain State Forest",
+     0,
+     "reviewed"
+    ],
+    [
+     "sgnha2201",
+     "Cardigan Mountain State Forest",
+     0,
+     "reviewed"
+    ],
+    [
+     "sgnha2202",
+     "Cardigan Mountain State Forest",
+     0,
+     "reviewed"
+    ]
+   ],
    "old_pieces": [
     [
-     "272294",
-     "Big Bay State Park",
-     2514,
-     "reviewed-approx"
-    ],
-    [
-     "sgwic6861",
-     "Big Bay Sand Spit and Bog",
-     963,
-     "reviewed-approx"
-    ],
-    [
-     "sgwif23770",
-     "Big Bay Sand Spit and Bog",
-     963,
+     "nhc2202",
+     "Cardigan Mountain State Forest",
+     0,
      "reviewed-approx"
     ]
    ],
    "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-4244"
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-2644"
+  },
+  {
+   "area": "US-OR",
+   "ref": "US-10021",
+   "name": "Topsy BLM Recreation Management Area",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "rst12988",
+     "Topsy Recreation Site",
+     14,
+     "reviewed"
+    ],
+    [
+     "sgakg12988",
+     "Topsy Recreation Site",
+     14,
+     "reviewed"
+    ],
+    [
+     "sgorf185",
+     "Topsy Recreation Site",
+     14,
+     "reviewed"
+    ],
+    [
+     "rma11215",
+     "Topsy Campground",
+     6,
+     "reviewed"
+    ],
+    [
+     "rst11215",
+     "Topsy Campground",
+     6,
+     "reviewed"
+    ],
+    [
+     "sgakg11215",
+     "Topsy Campground",
+     6,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "rst12988",
+     "Topsy Recreation Site",
+     14,
+     "reviewed-approx"
+    ],
+    [
+     "rma11215",
+     "Topsy Campground",
+     6,
+     "reviewed-approx"
+    ],
+    [
+     "rst11215",
+     "Topsy Campground",
+     6,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-10021"
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-12064",
+   "name": "Henderson Swamp State Wilderness Area",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgtnc409",
+     "Henderson Swamp PHA",
+     29,
+     "reviewed"
+    ],
+    [
+     "sgtne21",
+     "Henderson Swamp PHA",
+     29,
+     "reviewed"
+    ],
+    [
+     "255796",
+     "Henderson Swamp Public Hunting Area",
+     24,
+     "reviewed"
+    ],
+    [
+     "sgtni29",
+     "Henderson Swamp",
+     24,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "255796",
+     "Henderson Swamp Public Hunting Area",
+     24,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12064"
+  },
+  {
+   "area": "US-ID",
+   "ref": "US-0890",
+   "name": "Salmon National Wild and Scenic River",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "fwsr72",
+     "Salmon, Idaho National Wild and Scenic River",
+     14955,
+     "name (Forest Service river: state and forest dropped)"
+    ],
+    [
+     "fwsr246",
+     "Salmon, Idaho National Wild and Scenic River",
+     13189,
+     "name (Forest Service river: state and forest dropped)"
+    ],
+    [
+     "fwsr245",
+     "Salmon, Idaho National Wild and Scenic River",
+     12481,
+     "name (Forest Service river: state and forest dropped)"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "fwsr246",
+     "Salmon, Idaho National Wild and Scenic River",
+     13189,
+     "words"
+    ],
+    [
+     "fwsr245",
+     "Salmon, Idaho National Wild and Scenic River",
+     12481,
+     "words"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-0890"
   },
   {
    "area": "US-MI",
@@ -3581,65 +4321,79 @@
   },
   {
    "area": "US-WA",
-   "ref": "US-12245",
-   "name": "Twin Lakes BLM Recreation Management Area",
-   "old_grade": "official",
-   "new_grade": "approximate",
+   "ref": "US-10695",
+   "name": "Coffeepot Lake Nature Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "official",
    "new_pieces": [
     [
-     "rma11311",
-     "Twin Lakes Recreation Site",
-     8,
-     "words"
+     "rma9874",
+     "Coffeepot Lake Public Fishing Access",
+     6,
+     "reviewed"
     ],
     [
-     "rst11311",
-     "Twin Lakes Recreation Site",
-     8,
-     "words"
+     "rst9874",
+     "Coffeepot Lake Public Fishing Access",
+     6,
+     "reviewed"
     ],
     [
-     "sgakg11311",
-     "Twin Lakes Recreation Site",
-     8,
-     "words"
+     "sgakg9874",
+     "Coffeepot Lake Public Fishing Access",
+     6,
+     "reviewed"
     ]
    ],
    "old_pieces": [
     [
-     "rma11311",
-     "Twin Lakes Recreation Site",
-     8,
-     "words"
+     "rma9874",
+     "Coffeepot Lake Public Fishing Access",
+     6,
+     "reviewed-approx"
     ],
     [
-     "rst11311",
-     "Twin Lakes Recreation Site",
-     8,
-     "words"
-    ],
-    [
-     "sgakg11311",
-     "Twin Lakes Recreation Site",
-     8,
-     "words"
-    ],
-    [
-     "sgwae24273",
-     "Twin Lakes",
-     0,
-     "name · water outline only"
-    ],
-    [
-     "sgwae56106",
-     "Twin Lakes",
-     0,
-     "name · water outline only"
+     "rst9874",
+     "Coffeepot Lake Public Fishing Access",
+     6,
+     "reviewed-approx"
     ]
    ],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-12245"
+   "pota": "https://pota.app/#/park/US-10695"
+  },
+  {
+   "area": "US-NJ",
+   "ref": "US-11992",
+   "name": "Whiting State Conservation Area",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgnjb244",
+     "Whiting Wildlife Management Area",
+     1193,
+     "reviewed"
+    ],
+    [
+     "229060",
+     "Whiting Wildlife Management Area",
+     1188,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "229060",
+     "Whiting Wildlife Management Area",
+     1188,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11992"
   },
   {
    "area": "US-NV",
@@ -3672,50 +4426,6 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-10345"
-  },
-  {
-   "area": "US-TN",
-   "ref": "US-11858",
-   "name": "Middle Fork Bottoms State Park",
-   "old_grade": "approximate",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "sgtna369",
-     "Middle Fork Bottoms State Park",
-     0,
-     "name"
-    ],
-    [
-     "sgtnj259",
-     "Middle Fork Bottoms State Park",
-     0,
-     "name"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "255778",
-     "Middle Fork Forked Deer Refuge",
-     416,
-     "reviewed-approx"
-    ],
-    [
-     "sgtna369",
-     "Middle Fork Bottoms State Park",
-     0,
-     "name"
-    ],
-    [
-     "sgtnj259",
-     "Middle Fork Bottoms State Park",
-     0,
-     "name"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-11858"
   },
   {
    "area": "US-DC",
@@ -3856,146 +4566,6 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-4560"
-  },
-  {
-   "area": "US-CA",
-   "ref": "US-3586",
-   "name": "Verdugo Mountains State Park",
-   "old_grade": "approximate",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "sgcab659",
-     "Verdugo Mountains",
-     252,
-     "name"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "sgcab659",
-     "Verdugo Mountains",
-     252,
-     "name"
-    ],
-    [
-     "183914",
-     "Verdugo Mountains Park Property",
-     252,
-     "reviewed-approx"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-3586"
-  },
-  {
-   "area": "US-MS",
-   "ref": "US-4560",
-   "name": "Natchez Trace Trail National Scenic Trail",
-   "old_grade": "approximate",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl4560",
-     "Natchez Trace National Scenic Trail",
-     0,
-     "official trail line (National Park Service): the park is the"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "3552",
-     "Natchez Trace Parkway",
-     31527,
-     "reviewed-approx"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-4560"
-  },
-  {
-   "area": "US-OK",
-   "ref": "US-6365",
-   "name": "Osage Wildlife Management Area",
-   "old_grade": "approximate",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "sgokb18",
-     "Osage Wildlife Management Area - Western Wall Unit",
-     0,
-     "name"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "odw76",
-     "Osage Wildlife Management Area - Western Wall",
-     7317,
-     "reviewed-approx"
-    ],
-    [
-     "odw75",
-     "Osage Wildlife Management Area - Rock Creek",
-     3729,
-     "reviewed-approx"
-    ],
-    [
-     "sgokb18",
-     "Osage Wildlife Management Area - Western Wall Unit",
-     0,
-     "name"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-6365"
-  },
-  {
-   "area": "US-CO",
-   "ref": "US-1208",
-   "name": "Arkansas River Headwaters Recreation Park",
-   "old_grade": "approximate",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "cow29",
-     "Arkansas Headwaters RA - BLM Site",
-     1529,
-     "reviewed-approx"
-    ],
-    [
-     "184168",
-     "Arkansas Headwaters",
-     1286,
-     "reviewed-approx"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-1208"
-  },
-  {
-   "area": "US-HI",
-   "ref": "US-10913",
-   "name": "Diamond Head Summit State Trail",
-   "old_grade": "approximate",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "195365",
-     "Diamond Head State Monument",
-     503,
-     "reviewed-approx"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-10913"
   }
  ]
 }

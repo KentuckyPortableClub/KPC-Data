@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-19T16:33Z",
+ "checked": "2026-11-19T18:58Z",
  "switched_on": false,
  "results": [
   {
@@ -416,12 +416,10 @@
    "path": "data/us-key/US-ID.json",
    "kind": "key",
    "why": [],
-   "notes": [
-    "F-O4 shape test: 1 changed outlines read from PAD-US, 0 far from the park pin"
-   ],
+   "notes": [],
    "verdict": "PASS",
-   "fp": "9cb26d0e5a116c00",
-   "net": true
+   "fp": "a2e859284adc8ce3",
+   "net": false
   },
   {
    "path": "data/us-key/US-IL.json",
@@ -563,7 +561,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "8695b51c3662abbc",
+   "fp": "c9082bf0edae2450",
    "net": false
   },
   {
@@ -572,7 +570,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "143eccb2ba27e5ef",
+   "fp": "0bfc920ea3586753",
    "net": false
   },
   {
@@ -621,6 +619,15 @@
    "net": false
   },
   {
+   "path": "data/us-key/US-OR.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "18e1d06edee95ea7",
+   "net": false
+  },
+  {
    "path": "data/us-key/US-PA.json",
    "kind": "key",
    "why": [],
@@ -657,7 +664,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "f0507e1da2ed2a11",
+   "fp": "3eb4842c39d93a25",
    "net": false
   },
   {
@@ -695,7 +702,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "84ad1b7e5ea63bf2",
+   "fp": "d251a27570d8f55d",
    "net": false
   },
   {
@@ -724,7 +731,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "2a1c4a26b50558ad",
+   "fp": "22b4a2ae52042dec",
    "net": false
   },
   {
@@ -733,7 +740,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "51b23c5af6005412",
+   "fp": "5b7fd6c4f44d7c03",
    "net": false
   },
   {
@@ -742,7 +749,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "48d5bd42fb87320a",
+   "fp": "c31edcad30e23253",
    "net": false
   },
   {
@@ -754,7 +761,7 @@
     "override set read whole: 5042 parks in 3 file(s) (live: 5038 parks); this part goes live with data/us-key/overrides.json"
    ],
    "verdict": "PASS",
-   "fp": "b1a08783deb4ef06",
+   "fp": "9881f674327abd7c",
    "net": false
   },
   {
@@ -777,7 +784,7 @@
     "override set read whole: 5042 parks in 3 file(s) (live: 5038 parks)"
    ],
    "verdict": "PASS",
-   "fp": "3b89b9999bc202f0",
+   "fp": "90efce1d082253ef",
    "net": false
   },
   {
