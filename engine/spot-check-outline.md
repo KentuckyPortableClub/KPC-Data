@@ -1,4 +1,4 @@
-# Spot check: outline (20 random rows of 14494)
+# Spot check: outline (20 random rows of 14536)
 
 For chat 11: open each link and say YES / NO. The engine decides nothing.
 
@@ -62,16 +62,16 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: same land also in US-BLM-sma 'Bureau of Land Management': merged, counted once; record 'Notch Peak' (PACK-US-land-385); pin inside; about 51434.9 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
-## CA-4865 Fort Malden National Historic Site (CA-ON)
+## US-0042 Fort Gaines National Historic Site (US-AL)
 - status: found
-- tier: T-1
+- tier: T-2
 - band: STRONG
-- record_name: Fort Malden National Historic Site
-- url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4?f=html
-- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D2355&outFields=%2A&f=html
-- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-83.1126%2C42.108&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_name: Fort Gaines
+- url: https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1?f=html
+- record_link: https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?where=OBJECTID%3D379681&outFields=%2A&f=html
+- source_url: https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?geometry=-88.0756%2C30.2483&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: record 'Fort Malden National Historic Site' (PACK-CA-NB-land-73); pin inside; about 13.0 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
+- why: record 'Fort Gaines' (Q-1678); pin inside; about 31.5 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
 - answer: 
 
 ## US-5573 Teanaway State Forest (US-WA)
@@ -122,28 +122,28 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: same land also in PACK-US-WA-wildlife-368 'Klickitat', PACK-US-WA-wildlife-369 'Klickitat', WB-US-475 'Klickitat': merged, counted once; record 'Klickitat' (PACK-US-WA-wildlife-364); pin inside; about 27794.0 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
-## US-5541 Calvin Coolidge State Forest (US-VT)
+## US-3128 Lake Shaftsbury State Park (US-VT)
 - status: candidate
 - tier: T-3
 - band: WEAK
-- record_name: Coolidge State Forest
+- record_name: Shaftsbury State Park
 - url: https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38?f=html
-- record_link: https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38/query?where=OBJECTID%3D18&outFields=%2A&f=html
-- source_url: https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38/query?geometry=-72.8052%2C43.6093&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_link: https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38/query?where=OBJECTID%3D455&outFields=%2A&f=html
+- source_url: https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38/query?geometry=-73.1791%2C43.0224&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: record 'Coolidge State Forest' (PACK-US-VT-preserve-362); pin inside; about 23600.0 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- why: record 'Shaftsbury State Park' (PACK-US-VT-preserve-362); pin inside; about 104.9 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
-## CA-4339 Pontoon Lake Territorial Park (CA-NT)
+## CA-4322 Cameron River Crossing Territorial Park (CA-NT)
 - status: candidate
 - tier: T-6
 - band: WEAK
-- record_name: Pontoon Lake
+- record_name: Cameron River Crossing
 - url: https://www.apps.geomatics.gov.nt.ca/arcgis/rest/services/GNWT/PlanningCadastre_LCC/MapServer/16?f=html
-- record_link: https://www.apps.geomatics.gov.nt.ca/arcgis/rest/services/GNWT/PlanningCadastre_LCC/MapServer/16/query?where=OBJECTID%3D31512&outFields=%2A&f=html
-- source_url: https://www.apps.geomatics.gov.nt.ca/arcgis/rest/services/GNWT/PlanningCadastre_LCC/MapServer/16/query?geometry=-114.026%2C62.5531&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 6
-- why: record 'Pontoon Lake' (PACK-CA-NT-park-85); pin 6 m from the edge; about 5.0 acres; Rule G: LIKELY (names overlap); size unknown; confidence: weak
+- record_link: https://www.apps.geomatics.gov.nt.ca/arcgis/rest/services/GNWT/PlanningCadastre_LCC/MapServer/16/query?where=OBJECTID%3D31503&outFields=%2A&f=html
+- source_url: https://www.apps.geomatics.gov.nt.ca/arcgis/rest/services/GNWT/PlanningCadastre_LCC/MapServer/16/query?geometry=-113.549%2C62.4924&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 13
+- why: record 'Cameron River Crossing' (PACK-CA-NT-park-85); pin 13 m from the edge; about 108.6 acres; Rule G: LIKELY (names overlap); size unknown; confidence: weak
 - answer: 
 
 ## US-13275 Pioneer Memorial Park State Historical Monument (US-NV)
@@ -230,15 +230,15 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: record 'Dudley Farm Historic State Park' (PACK-US-FL-park-241); pin inside; about 333.3 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
 - answer: 
 
-## US-8263 Treaty Line State Conservation Area (US-MO)
+## US-7519 Bridger State Conservation Area (US-MO)
 - status: candidate
 - tier: T-2
 - band: WEAK
-- record_name: Treaty Line Prairie CA
+- record_name: Bridger (Jim) Urban CA
 - url: https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5?f=html
-- record_link: https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5/query?where=OBJECTID%3D666&outFields=%2A&f=html
-- source_url: https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5/query?geometry=-94.2153%2C37.4694&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_link: https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5/query?where=OBJECTID%3D467&outFields=%2A&f=html
+- source_url: https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/FeatureServer/5/query?geometry=-94.2862%2C38.9662&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: record 'Treaty Line Prairie CA' (PACK-US-MO-land-283); pin inside; about 167.3 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- why: record 'Bridger (Jim) Urban CA' (PACK-US-MO-land-283); pin inside; about 320.2 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 

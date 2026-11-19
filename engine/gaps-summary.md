@@ -1,6 +1,6 @@
 # Missing list (gaps)
 
-Built 2026-11-18 from the club files (read-only).
+Built 2026-11-19 from the club files (read-only).
 
 | area | kind | parks | missing | solved since last night |
 |---|---|---|---|---|
