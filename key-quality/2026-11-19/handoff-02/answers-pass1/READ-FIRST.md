@@ -11,8 +11,9 @@ ONE grader. Nothing here is a saved answer, a gold park or a new layer until a s
   the whole unit boundary is in the NPS "Administrative Boundaries" layer. Longview Saline NA + WMA: same land per ANHC / AGFC
   pages. Tillamook SF: 359,817 ac, Oregon Dept of Forestry "StateForests_OwnershipManagedLands" (a person's download).
 - Job 3 (100 busiest pin-only parks): an official GIS layer named for 47, a picture map only for 7, nothing for 38, 10 open.
-- `human-downloads-hand-off-02.csv`: the agent's own list of 49 files a person must fetch. 41 are already on the PC helper's list
-  (KPC-Data data/needs-download.json), 31 of them with a DONE row (the saved copy already holds the layer); 8 are new (ODNR Lands
+- `human-downloads-hand-off-02.csv`: the agent's own list of 49 files a person must fetch. 41 match a layer on KPC-Data data/needs-download.json,
+  31 of them with a DONE state row (the saved copy already holds the layer). CORRECTION (tested 19 Nov): the PC helper cannot use
+  the open rows (they have no state); `kpc_pc_helper.py --list` shows 0 layers today. See key-quality.md section 19 item 16; 8 are new (ODNR Lands
   zip, TVA recreation, Pinelands, NCWRC fishing areas, State-Owned Land, ODF state forests, California state parks, WV WMAs).
 - The agent's own rule notes (NOTES file, "Rule issues"): two HEAD requests to a host after its robots.txt said no (nothing used);
   POTA's API read for job 4 only. For HQ to read.

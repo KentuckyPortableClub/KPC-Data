@@ -39,3 +39,5 @@ pin-only parks (+ 2 plants; #277's 13 parks left out), job 4 POTA's own pages fo
 - NO hand download is uploaded before the release is signed off: a hand file on boundary-cache is merged by the next US key run
   and would change the shapes between the fact check and the release.
 - The agent's answers: `answers-pass1/` (READ-FIRST.md there).
+- CORRECTION (tested 19 Nov 8:35 AM): being on data/needs-download.json is NOT being in the PC helper. The 406 open rows have no
+  state, so `kpc_pc_helper.py --list` shows 0 layers. What must happen first: key-quality.md section 19 item 16.
