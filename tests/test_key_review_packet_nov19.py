@@ -143,6 +143,66 @@ with tempfile.TemporaryDirectory() as td:
     text2 = mod.write_packet(root / 'packet2', ['AA'], root / 'builds', None, None, same_gold, same_gold, {'pr': '9', 'head': 'abcdef1234567890', 'old': '1234567890abcdef'})
     check('are the same on both sides' in text2, 'matching gold score lines are the same even when a detail line differs')
 
+# --- a key run: lost outlines, shrinks, and new land (no network) ---
+assert mod.outline_cause(['held: far away', 'check (Q1): pin only']) == 'Q1'
+assert mod.outline_cause(['check (D4): only a lake']) == 'NONE'
+assert mod.outline_cause(['check (contest): shared']) == 'contest'
+assert mod.outline_cause(['held (D3): a heritage area']) == 'D3'
+lost = mod.lost_outlines(
+    {'parks': {'US-1': {'n': 'Sample Lost', 'm': [[9, 'Old piece', 40, 'name']]},
+               'US-2': {'n': 'Kept', 'm': [[8, 'Kept', 5, 'name']]}}},
+    {'parks': {'US-1': {'n': 'Sample Lost', 'm': [], 'c': [[9, 'Old piece', 40, 'check (Q1): pin only'], [9, 'Old piece', 40, 'check (Q1): pin only']]},
+               'US-2': {'n': 'Kept', 'm': [[8, 'Kept', 5, 'name']]}}})
+check(len(lost) == 1 and lost[0]['cause'] == 'Q1' and lost[0]['why'].count('pin only') == 1, 'a lost outline keeps its cause once')
+check(mod.states_for_run('KY ID', ['US-AK.json'])['states'] == ['ID'], 'a key run leaves KY out of a typed list')
+check(mod.states_for_run('', ['US-MT.json', 'US-KY.json', 'readme.txt'])['states'] == ['MT'], 'a key run reads state names from the key folder')
+try:
+    import gzip as _gzip
+    import importlib as _importlib
+    _importlib.import_module('shapely')
+    _have_shapely = True
+except ImportError:
+    _have_shapely = False
+if _have_shapely:
+    def _square(lon, lat, dlon, dlat):
+        return [[lon, lat], [lon + dlon, lat], [lon + dlon, lat + dlat], [lon, lat + dlat], [lon, lat]]
+    with tempfile.TemporaryDirectory() as td:
+        root = pathlib.Path(td)
+        old_dir, new_dir, cache = root / 'old', root / 'new', root / 'cache'
+        for folder in (old_dir, new_dir, cache): folder.mkdir()
+        shapes = {'recs': [
+            {'OBJECTID': '1', '_r': [_square(-100.0, 40.0, 0.10, 0.10)]},
+            {'OBJECTID': '2', '_r': [_square(-100.0, 40.0, 0.02, 0.02)]},
+            {'OBJECTID': '3', '_r': [_square(-99.5, 40.5, 0.05, 0.05)]},
+        ]}
+        with _gzip.open(cache / 'US-ZZ.json.gz', 'wt', encoding='utf-8') as fh:
+            json.dump(shapes, fh)
+        old_key = {'parks': {
+            'US-1': {'n': 'Shrinking Sample', 'm': [[1, 'Big piece', 100, 'name'], [2, 'Small piece', 4, 'name']]},
+            'US-2': {'n': 'Lost Sample', 'm': [[1, 'Big piece', 100, 'name']]},
+        }}
+        new_key = {'parks': {
+            'US-1': {'n': 'Shrinking Sample', 'm': [[2, 'Small piece', 4, 'name']],
+                     'c': [[1, 'Big piece', 100, 'check (D4): the lake is not the park']]},
+            'US-2': {'n': 'Lost Sample', 'm': [], 'c': [[1, 'Big piece', 100, 'check (Q1): pin only']]},
+            'US-3': {'n': 'New Sample', 'm': [[3, 'Added piece', 20, 'name']]},
+        }}
+        (old_dir / 'US-ZZ.json').write_text(json.dumps(old_key), encoding='utf-8')
+        (new_dir / 'US-ZZ.json').write_text(json.dumps(new_key), encoding='utf-8')
+        packet = root / 'packet'
+        result = mod.compare_run(old_dir, new_dir, ['ZZ'], cache, '', 30)
+        mod.write_run_packet(packet, ['ZZ'], result, {'old': 'a' * 40, 'head': 'b' * 40, 'key_held': {'created_at': '2026-11-19T17:16:27Z', 'size': 10}})
+        check(len(result['shrinks']) == 1 and result['shrinks'][0]['ref'] == 'US-1', 'a park that keeps a small piece of a large outline is a shrink')
+        check(result['shrinks'][0]['new acres'] <= 0.8 * result['shrinks'][0]['old acres'], 'the shrink is at least a fifth of the land')
+        check(len(result['lost']) == 1 and result['lost'][0]['cause'] == 'Q1', 'the key run records a lost outline and its cause')
+        added = [row for row in result['new_land'] if row['ref'] == 'US-3']
+        check(len(added) == 1 and added[0]['new outline'] == 'yes' and added[0]['acres added'] >= 100, 'a park that gains an outline of 100 acres or more is new land')
+        check((packet / 'shrinks.csv').is_file() and (packet / 'lost-outlines.csv').is_file() and (packet / 'inputs.json').is_file(), 'a key run writes the packet files')
+        saved = json.loads((packet / 'inputs.json').read_text(encoding='utf-8'))
+        check(saved['mode'] == 'run' and saved['run_date'] == '2026-11-19' and saved['key_held']['created_at'].startswith('2026-11-19'), 'the held-key date is recorded from created_at')
+else:
+    check(True, 'shapely is not installed here, so the made-up acre check was not run')
+
 # --- the script's own check, the way the workflow runs it ---
 ran = subprocess.run([sys.executable, '-B', str(SCRIPT), '--selftest'], capture_output=True, text=True)
 check(ran.returncode == 0 and 'selftest: ok' in ran.stdout, 'the script selftest passes with no network')
@@ -192,6 +252,15 @@ check('shapely' in packet_run and 'kpc_key_factcheck.py' in packet_run and 'kpc_
 check('kpc_push_retry.sh' not in packet_run and 'kpc_us_key.py' not in save_run and 'kpc_key_factcheck.py' not in save_run, 'the save job runs no key code')
 check('kpc_push_retry.sh' in save_run and 'key-quality/review-packets' in save_run, 'the save uses the retry helper and only the packet folder')
 check('created_at' in packet_run, 'shape dates are read from the release field created_at')
+inputs_on = (on.get('workflow_dispatch') or {}).get('inputs') or {}
+check((inputs_on.get('mode') or {}).get('default') == 'pr' and 'run' in ((inputs_on.get('mode') or {}).get('options') or []), 'a key run is a choice and a pull request stays the default')
+check("needs.scope.outputs.mode != 'run'" in text, 'a key run does not build any state')
+check('key-held.tar.gz' in text and 'key-quality/review-packets/run-' in text, 'a key run reads the held file and saves under run-<date>')
+run_step = next(s for s in doc['jobs']['packet']['steps'] if s.get('id') == 'runmode')
+check('GH_TOKEN' not in (run_step.get('env') or {}) and 'env -u GH_TOKEN -u GITHUB_TOKEN' in run_step['run'], 'the key run drops the token before pull-request code runs')
+held_step = next(s for s in doc['jobs']['packet']['steps'] if 'key-held' in (s.get('run') or ''))
+check((held_step.get('env') or {}).get('GH_TOKEN') == '${{ github.token }}', 'the held-key download is signed in')
+check("kpc_key_review_packet.py\" run" in run_step['run'] or "kpc_key_review_packet.py' run" in run_step['run'] or 'kpc_key_review_packet.py" run' in run_step['run'], 'the key run uses the same script')
 dates = mod._shape_index([{'name': 'US-AA.json.gz', 'created_at': '2026-11-02T00:00:00Z', 'size': 3}])
 check(dates['US-AA.json.gz']['date'].startswith('2026-11-02'), 'the packet records created_at')
 
