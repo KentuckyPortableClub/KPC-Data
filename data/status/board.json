@@ -12,9 +12,9 @@
   "2-fer gate (areas ready / waiting)": {
    "areas": "",
    "last_run": "2026-11-19",
-   "made": "1068 audit rows not clean in 43 areas; waiting for audit 25, waiting for key 41 (a key build is saving: nothing started)",
+   "made": "1068 audit rows not clean in 43 areas; waiting for audit 25, waiting for key 41",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44536939338",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44566924467",
    "waiting_on": "chat 11 / 12 (audit answers), chat 2 (fixes)"
   },
   "Cell coverage (FCC)": {
@@ -1020,9 +1020,9 @@
   "Key bots: errors and silence": {
    "areas": "",
    "last_run": "2026-11-19",
-   "made": "5 key bot(s) with errors or gone silent: Europe weather warnings (silent: no finished run in 40 h (expected every 14 h or less); KPC-Data watchdog (Key bots); POTA spots to Discord (silent: no finished run in 4 h (expected every 3 h or less)); copy from KPC-Links (run failure); waiting room (kpc_eng",
+   "made": "6 key bot(s) with errors or gone silent: Europe weather warnings (silent: no finished run in 43 h (expected every 14 h or less); KPC-Data watchdog (Key bots); POTA spots to Discord (silent: no finished run in 3 h (expected every 3 h or less)); activation / CW boards (silent: no finished run in 3 h (",
    "result": "red",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44536939338",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44566924467",
    "waiting_on": "HQ: open the watchdog run summary for the run links"
   },
   "Layer collector": {
@@ -1084,9 +1084,9 @@
   "Skipped-run watchdog": {
    "areas": "",
    "last_run": "2026-11-19",
-   "made": "nothing skipped",
-   "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44536939338",
+   "made": "2026-11-19 16:31 UTC: 4 skipped run(s) started again: kpc-closures.yml (missed Nov 19 13:38 UTC); kpc-copy-from-links.yml (missed Nov 19 15:11 UTC); kpc-flow.yml (missed Nov 19 13:46 UTC); kpc-youtube-comments.yml (missed Nov 19 13:36 UTC, NOT restarted: its next scheduled run catches up)",
+   "result": "amber",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44566924467",
    "waiting_on": "nobody (it restarts them itself)"
   },
   "Storage keeper (weekly)": {
@@ -1196,9 +1196,9 @@
   "Website copy (site branch)": {
    "areas": "",
    "last_run": "2026-11-19",
-   "made": "site trails main only by bot files (.github/.claude): nothing to publish",
+   "made": "site = main: the website has the newest data",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44536939338",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44566924467",
    "waiting_on": "nobody (the watchdog restarts the copy bot itself)"
   },
   "answer-sheet-check": {
