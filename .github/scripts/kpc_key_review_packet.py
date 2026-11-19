@@ -384,7 +384,7 @@ def _shape_index(assets):
         if not isinstance(item, dict): continue
         name = str(item.get('name') or '')
         if re.fullmatch(r'US-[A-Z]{2}\.json\.gz', name) or name.startswith('hand-US-'):
-            out[name] = {'date': item.get('createdAt') or item.get('updatedAt') or '', 'size': item.get('size')}
+            out[name] = {'date': item.get('created_at') or item.get('createdAt') or item.get('updated_at') or item.get('updatedAt') or '', 'size': item.get('size')}
     return out
 
 

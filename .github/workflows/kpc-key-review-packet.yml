@@ -25,9 +25,10 @@ on:
         required: false
         default: ''
         type: string
+# Read only, except the save job. Uploading a run file needs actions: write, so only the
+# jobs that upload one set that. The save job is the only one that can write the repo.
 permissions:
-  contents: write
-  actions: write
+  contents: read
 concurrency:
   group: kpc-key-review-packet
   cancel-in-progress: false
@@ -68,16 +69,20 @@ jobs:
           PR_IN: ${{ inputs.pr }}
           HEAD_IN: ${{ inputs.head }}
           BASE_IN: ${{ inputs.base }}
+          GH_TOKEN: ${{ github.token }}
         run: |
           warn() { echo "::warning title=${1}::${2}"; echo "$1 - $2" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           case "$PR_IN" in
             ''|*[!0-9]*) warn "Pull request" "the pull request number is not a number"; exit 1;;
           esac
           is_sha() { printf '%s' "$1" | grep -Eq '^[0-9a-fA-F]{40}$'; }
+          pr_json=$(gh api "repos/KentuckyPortableClub/KPC-Links/pulls/${PR_IN}") || { warn "Pull request" "that pull request could not be read"; exit 1; }
+          repo=$(printf '%s' "$pr_json" | python3 -c 'import json,sys; d=json.load(sys.stdin); r=(d.get("head") or {}).get("repo") or {}; print(r.get("full_name") or "")')
+          if [ "$repo" != "KentuckyPortableClub/KPC-Links" ]; then warn "Pull request" "that pull request is not from KentuckyPortableClub/KPC-Links"; exit 1; fi
           head="$HEAD_IN"
           base="$BASE_IN"
           if [ -z "$head" ]; then
-            head=$(gh api "repos/KentuckyPortableClub/KPC-Links/pulls/${PR_IN}" --jq .head.sha) || { warn "Pull request" "that pull request could not be read"; exit 1; }
+            head=$(printf '%s' "$pr_json" | python3 -c 'import json,sys; print(json.load(sys.stdin)["head"]["sha"])') || { warn "Pull request" "the new commit could not be read"; exit 1; }
           fi
           is_sha "$head" || { warn "Commit" "the new commit is not a 40-character id"; exit 1; }
           if [ -z "$base" ]; then
@@ -98,7 +103,6 @@ jobs:
         continue-on-error: true
         id: oldtree
         if: steps.ids.outcome == 'success'
-        continue-on-error: true
         with:
           repository: KentuckyPortableClub/KPC-Links
           ref: ${{ steps.ids.outputs.old_sha }}
@@ -111,7 +115,6 @@ jobs:
         continue-on-error: true
         id: newtree
         if: steps.ids.outcome == 'success'
-        continue-on-error: true
         with:
           repository: KentuckyPortableClub/KPC-Links
           ref: ${{ steps.ids.outputs.new_sha }}
@@ -128,6 +131,7 @@ jobs:
           STATES_IN: ${{ inputs.states }}
           OLD_SHA: ${{ steps.ids.outputs.old_sha }}
           NEW_SHA: ${{ steps.ids.outputs.new_sha }}
+          GH_TOKEN: ${{ github.token }}
         run: |
           warn() { echo "::warning title=${1}::${2}"; echo "$1 - $2" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           grab() {
@@ -217,6 +221,9 @@ jobs:
     if: needs.scope.outputs.go == 'yes'
     runs-on: ubuntu-latest
     timeout-minutes: 140
+    permissions:
+      contents: read
+      actions: write
     strategy:
       fail-fast: false
       matrix:
@@ -255,6 +262,7 @@ jobs:
         env:
           STATE: ${{ matrix.state }}
           BUILD_DATE: ${{ needs.scope.outputs.build_date }}
+          GH_TOKEN: ${{ github.token }}
         run: |
           warn() { echo "::warning title=${1}::${2}"; echo "$1 - $2" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           case "$STATE" in
@@ -364,11 +372,15 @@ jobs:
     if: ${{ !cancelled() && needs.scope.outputs.go == 'yes' }}
     runs-on: ubuntu-latest
     timeout-minutes: 180
+    permissions:
+      contents: read
+      actions: write
     steps:
       - uses: actions/checkout@v5
         continue-on-error: true
         with:
           path: kpcdata
+          persist-credentials: false
           fetch-depth: 1
       - uses: actions/checkout@v5
         continue-on-error: true
@@ -409,11 +421,13 @@ jobs:
       - name: Saved shapes, the gold file, and the fact check library
         id: inputs
         continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           warn() { echo "::warning title=${1}::${2}"; echo "$1 - $2" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           mkdir -p "$GITHUB_WORKSPACE/work/shapes"
           gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'US-*.json.gz' -p 'hand-US-*' -D "$GITHUB_WORKSPACE/work/shapes" || warn "Shapes" "the saved shapes could not be downloaded"
-          gh api repos/KentuckyPortableClub/KPC-Links/releases/tags/boundary-cache --jq '[.assets[] | {name,createdAt,size}]' > "$GITHUB_WORKSPACE/work/assets.json" || warn "Shapes" "the shape dates could not be read"
+          gh api repos/KentuckyPortableClub/KPC-Links/releases/tags/boundary-cache --jq '[.assets[] | {name,created_at,size}]' > "$GITHUB_WORKSPACE/work/assets.json" || warn "Shapes" "the shape dates could not be read"
           git -C "$GITHUB_WORKSPACE/kpcdata" fetch -q --depth 1 origin "+refs/heads/tools-out:refs/remotes/origin/tools-out" || warn "Gold file" "the tools-out branch could not be read"
           git -C "$GITHUB_WORKSPACE/kpcdata" show "origin/tools-out:key-quality/gold-us.json" > "$GITHUB_WORKSPACE/work/gold-us.json" || warn "Gold file" "the gold file could not be read"
           python3 -m pip install -q shapely || warn "Shapely" "shapely did not install; the fact check still runs"
@@ -484,6 +498,66 @@ jobs:
             --meta "$WORK/meta.json" --assets "$WORK/assets.json" \
             || { warn "Packet" "the packet was not written"; exit 1; }
           if [ -s "$WORK/packet/summary.md" ]; then cat "$WORK/packet/summary.md" >> "$GITHUB_STEP_SUMMARY"; fi
+      - name: Keep the packet for the save
+        if: always()
+        continue-on-error: true
+        uses: actions/upload-artifact@v4
+        with:
+          name: review-packet
+          path: work/packet
+          if-no-files-found: warn
+          retention-days: 7
+      - name: Report hidden failures (Nov 2 review, G8)
+        if: always()
+        env:
+          KPC_STEPS: ${{ toJSON(steps) }}
+        run: |
+          python3 - <<'PY'
+          import json, os, sys
+          s = json.loads(os.environ.get('KPC_STEPS') or '{}')
+          bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
+          for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
+          print(f'{len(bad)} hidden step failure(s)')
+          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt')
+          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
+          print(f'{len(said)} error(s) caught inside steps and kept green')
+          if said and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8').write(f'**Errors caught inside steps and kept green ({len(said)}):**\n' + ''.join(f'- {x}\n' for x in said[:50]))
+          if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
+          # The errors a step caught itself are listed too, and one Hidden failures line is left for the check-up.
+          # A job marked safe to fail (KPC_FAIL_SAFE=1, it starts nothing after it) goes red on a caught error.
+          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt'); he = h[:-4] + '-errors.txt'
+          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
+          errs = [x.strip() for x in open(he, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(he) else []
+          if said or bad:
+              print(f"::warning title=Hidden failures::{len(errs)} error(s) and {len(said) - len(errs)} warning(s) caught inside steps, {len(bad)} step(s) failed but kept green (job {os.environ.get('GITHUB_JOB', '?')})")
+          if errs and os.environ.get('KPC_FAIL_SAFE') == '1':
+              print(f'::error title=Fail where safe::{len(errs)} error(s) were caught inside steps, so this job is red (it starts nothing after it). The repo variable KPC_HIDDEN_RED=off turns this off.')
+              sys.exit(1)
+          PY
+
+  save:
+    needs: [scope, packet]
+    if: ${{ !cancelled() && needs.scope.outputs.go == 'yes' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - uses: actions/checkout@v5
+        continue-on-error: true
+        with:
+          path: kpcdata
+          fetch-depth: 1
+      - name: The packet from the scoring job
+        id: get
+        continue-on-error: true
+        uses: actions/download-artifact@v4
+        with:
+          name: review-packet
+          path: packet
       - name: Save the packet on tools-out
         id: save
         continue-on-error: true
@@ -492,7 +566,7 @@ jobs:
           PRN: ${{ needs.scope.outputs.pr }}
         run: |
           warn() { echo "::warning title=${1}::${2}"; echo "$1 - $2" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
-          if [ ! -s "$GITHUB_WORKSPACE/work/packet/summary.md" ]; then warn "Save" "there is no packet to save"; exit 1; fi
+          if [ ! -s "$GITHUB_WORKSPACE/packet/summary.md" ]; then warn "Save" "there is no packet to save"; exit 1; fi
           cd "$GITHUB_WORKSPACE/kpcdata"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -502,7 +576,7 @@ jobs:
           dest="key-quality/review-packets/pr-${PRN}-${short}"
           git worktree add -q -B tools-out "$GITHUB_WORKSPACE/out" origin/tools-out || { warn "Save" "could not open the tools-out work tree"; exit 1; }
           mkdir -p "$GITHUB_WORKSPACE/out/${dest}"
-          cp -a "$GITHUB_WORKSPACE/work/packet/." "$GITHUB_WORKSPACE/out/${dest}/"
+          cp -a "$GITHUB_WORKSPACE/packet/." "$GITHUB_WORKSPACE/out/${dest}/"
           cd "$GITHUB_WORKSPACE/out"
           git add -A -- key-quality/review-packets
           if git diff --cached --quiet; then

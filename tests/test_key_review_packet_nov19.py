@@ -161,20 +161,53 @@ check('--show-sealed' not in text, 'the sealed gold half is never opened')
 check('key-quality/review-packets/' in text and 'tools-out' in text, 'the packet goes to tools-out under the review-packets folder')
 check(text.count('persist-credentials: false') >= 4, 'the KPC-Links checkouts do not keep a token')
 check("repository: KentuckyPortableClub/KPC-Links" in text, 'the two trees are KPC-Links, read only')
+check((doc.get('permissions') or {}).get('contents') == 'read' and 'actions' not in (doc.get('permissions') or {}), 'the workflow itself can only read')
+check((doc['jobs']['save'].get('permissions') or {}).get('contents') == 'write', 'only the save job is allowed to write')
+check(all((job.get('permissions') or {}).get('contents') != 'write' for name, job in doc['jobs'].items() if name != 'save'), 'no scoring job can write the repo')
 for name, job in (doc.get('jobs') or {}).items():
     steps = job.get('steps') or []
     g8 = [s for s in steps if 'hidden failures' in str(s.get('name') or '').lower()]
     check(bool(g8) and g8[-1].get('if') == 'always()' and steps[-1] is g8[-1] and 'kpc-hidden.txt' in (g8[-1].get('run') or ''), f'{name}: the hidden-failure report is the last step')
     if name == 'build':
         check((job.get('strategy') or {}).get('fail-fast') is False, 'one state failing does not cancel the others')
+    for st in steps:
+        run = st.get('run') or ''
+        if re.search(r'(^|\n)\s*gh ', run) or ' gh ' in run:
+            check((st.get('env') or {}).get('GH_TOKEN') == '${{ github.token }}', f'{name}: a step that calls gh is signed in')
+ids_run = '\n'.join((s.get('run') or '') for s in doc['jobs']['scope']['steps'])
+check('head.repo' in ids_run or 'full_name' in ids_run, 'a pull request from outside KPC-Links is refused')
+check('KentuckyPortableClub/KPC-Links' in ids_run, 'the allowed pull request home is named')
 build_run = '\n'.join((s.get('run') or '') for s in doc['jobs']['build']['steps'])
 for key, value in mod.FIXED_BUILD_ENV.items():
     check(f'{key}={value}' in build_run or f'{key}: {value}' in build_run or f"{key}={value}" in text, f'the build fixes {key}')
 check('KPC_PRESERVE_APART' in build_run and 'unset' in build_run, 'a switch in the runner environment cannot override the two trees')
 check('pip install' not in build_run and 'shapely' not in build_run, 'the builds do not install shapely')
 packet_run = '\n'.join((s.get('run') or '') for s in doc['jobs']['packet']['steps'])
+save_run = '\n'.join((s.get('run') or '') for s in doc['jobs']['save']['steps'])
 check('shapely' in packet_run and 'kpc_key_factcheck.py' in packet_run and 'kpc_key_grade.py' in packet_run, 'the fact check and the gold score run from the new tree')
-check('kpc_push_retry.sh' in packet_run and 'key-quality/review-packets' in packet_run, 'the save uses the retry helper and only the packet folder')
+check('kpc_push_retry.sh' not in packet_run and 'kpc_us_key.py' not in save_run and 'kpc_key_factcheck.py' not in save_run, 'the save job runs no key code')
+check('kpc_push_retry.sh' in save_run and 'key-quality/review-packets' in save_run, 'the save uses the retry helper and only the packet folder')
+check('created_at' in packet_run, 'shape dates are read from the release field created_at')
+dates = mod._shape_index([{'name': 'US-AA.json.gz', 'created_at': '2026-11-02T00:00:00Z', 'size': 3}])
+check(dates['US-AA.json.gz']['date'].startswith('2026-11-02'), 'the packet records created_at')
+
+class StrictLoader(yaml.SafeLoader):
+    pass
+def _strict_map(loader, node, deep=False):
+    seen = {}
+    for key_node, value_node in node.value:
+        key = loader.construct_object(key_node, deep=deep)
+        if key in seen:
+            raise yaml.constructor.ConstructorError(None, None, f'repeated key {key!r}', key_node.start_mark)
+        seen[key] = loader.construct_object(value_node, deep=deep)
+    return seen
+StrictLoader.add_constructor(yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG, _strict_map)
+try:
+    yaml.load(text, Loader=StrictLoader)
+    strict_ok, strict_why = True, ''
+except yaml.constructor.ConstructorError as err:
+    strict_ok, strict_why = False, str(err).splitlines()[0]
+check(strict_ok, 'the workflow has no repeated key' + (f' ({strict_why})' if strict_why else ''))
 
 print('ALL PASS' if ok else 'SOME FAILED')
 sys.exit(0 if ok else 1)
