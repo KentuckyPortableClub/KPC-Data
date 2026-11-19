@@ -1,9 +1,8 @@
-# Flow board (2026-11-19 03:49Z, kpc_flow.py)
+# Flow board (2026-11-19 09:31Z, kpc_flow.py)
 Every pile of work, who it waits on and when it last moved. STUCK = work in it and no move for 2+ days. Fix the STUCK ones first.
 
-## STUCK (37)
+## STUCK (36)
 - STUCK 20 d · **1** · hours fees permits bot: not run for 20 days · waits on **chat 10** · US-KY: done; {"fees": 8, "hours": 41, "hours_lines": 77, "no_page": 0, "nothing": 144, "parks": 193, · chat 8 grades the sample; Brandon GO before any card
-- STUCK 18 d · **0** · engine finds handed to the collector (last hand-back) · waits on **layer collector (every 2 h)** · engine results last saved 2026-11-18
 - STUCK 18 d · **146** · questions/not-sure-for-chat9.json waiting for an answer · waits on **chat 9**
 - STUCK 18 d · **6** · HELD truth files (a check failed; data/waiting/today.md says why) · waits on **chat 2 (fix) + chat 11** · US-MA, US-MD, US-MN, US-OK, US-UT, US-WA
 - STUCK 18 d · **1** · 2-fer checker: found work · waits on **chat 2 + chat 11** · weekly re-test of live 2-fers · chat 2 rechecks + chat 11 grades 857 SHRUNK / GONE / MOVED rows (data/fers-check/alerts.md
@@ -98,7 +97,7 @@ Every pile of work, who it waits on and when it last moved. STUCK = work in it a
 | 1 finders | engine crawler layers (US + Canada) the engine tries at the pins | 516 | park-info engine (every run) | 2026-11-03 |
 | 2 outside files | files on branch intake-files no reader has taken yet | 0 | chat 10 (the reader of that kind) | 2026-11-02 |
 | 3 layer list | layers in the list the intake bot has not checked yet | 312 | intake bot (daily, 40 a night) | 2026-11-12 **STUCK** |
-| 4 engine | engine finds handed to the collector (last hand-back) | 0 | layer collector (every 2 h) | 2026-11-01 **STUCK** |
+| 4 engine | engine finds handed to the collector (last hand-back) | 0 | layer collector (every 2 h) | 2026-11-01 |
 | 5 collector | outside-research layer x park pairs not pin-tested yet | 0 | layer collector (every 2 h) | 2026-11-01 |
 | 6 questions | questions/aliases-nov1.json waiting for an answer | 2 | chat 11 | 2026-11-02 **STUCK** |
 | 6 questions | questions/aliases-nov2.json waiting for an answer | 28 | chat 11 | 2026-11-02 **STUCK** |
