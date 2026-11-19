@@ -44,7 +44,7 @@ python3 .github/scripts/kpc_park_pages.py read --data data --out park-pages --li
 python3 .github/scripts/kpc_park_pages.py report --out park-pages
 ```
 
-On the owner's PC, `pc-kit` writes a small zip (the scripts, the rows for the named areas, the state file). `tools/park-pages-pc/` has the two launchers. `person-page` writes one phone page for parks the bot could not read. `intake` folds a PC zip or `person-answers.json` back in. A person's answer wins for that fact. The bot's answer is kept as `bot_saw`. `kits` is a later part.
+On the owner's PC, `pc-kit` writes a small zip (the scripts, the rows for the named areas, the state file). `tools/park-pages-pc/` has the two launchers. `person-page` writes one phone page for parks the bot could not read. `intake` folds a PC zip or `person-answers.json` back in. A person's answer wins for that fact. The bot's answer is kept as `bot_saw`. `kits` writes two blind passes. The answer key goes to `kit-keys/` and is not inside either pass. `score` compares the two passes and the plants.
 
 The by-hand workflow is `.github/workflows/kpc-park-pages.yml`. It starts only when someone runs it. The schedule line is written and commented out. The read job holds no token. The save job is the only one that can write. It checks out `main` and copies the folder onto `tools-out`. It does not run this reader.
 

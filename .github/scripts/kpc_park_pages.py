@@ -718,6 +718,37 @@ def cmd_pc_kit(args):
     return 0
 
 
+def cmd_kits(args):
+    import kpc_park_pages_kits as K
+    if not args.out:
+        print('Say --out, the kits folder.')
+        return 0
+    facts = W.load_facts(args.data) if args.data and (pathlib.Path(args.data) / 'facts').is_dir() else W.load_facts(args.out)
+    # facts usually live in --data when that folder is a run folder, else --from
+    if getattr(args, 'from_dir', ''):
+        facts = W.load_facts(args.from_dir)
+    keys = args.keys or str(pathlib.Path(args.out).resolve().parent / 'kit-keys')
+    if pathlib.Path(keys).resolve() == pathlib.Path(args.out).resolve() or str(pathlib.Path(keys).resolve()).startswith(str(pathlib.Path(args.out).resolve()) + '/'):
+        print('The answer key is not put in the kit.')
+        return 0
+    info = K.make_kits(facts, args.out, keys, n=args.n or 40, seed=args.seed or 1, known_path=args.known or '')
+    if not args.quiet:
+        print(f"Two kits in {args.out}. {info['plants']} plants. The key is not in the kit.")
+    return 0
+
+
+def cmd_score(args):
+    import kpc_park_pages_kits as K
+    if not args.pass1 or not args.pass2 or not args.keys:
+        print('Score needs --pass1, --pass2, and --keys.')
+        return 0
+    res = K.score(args.pass1, args.pass2, args.keys)
+    print(f"Agreed: {res['agreed']}")
+    print(f"Differ: {res['differ']}")
+    print(f"Plants: {res['plant_hits']} of {res['plants']} match the key on both passes")
+    return 0
+
+
 def cmd_later(name):
     print(f'{name} is not in this part of the reader. Nothing was changed.')
     return 0
@@ -854,6 +885,13 @@ def main(argv=None):
     p.add_argument('--not-sure', default='')
     p.add_argument('--html', default='')
     p.add_argument('--pc', action='store_true')
+    p.add_argument('--n', type=int, default=40)
+    p.add_argument('--seed', type=int, default=1)
+    p.add_argument('--keys', default='')
+    p.add_argument('--known', default='')
+    p.add_argument('--from', dest='from_dir', default='')
+    p.add_argument('--pass1', default='')
+    p.add_argument('--pass2', default='')
     p.add_argument('--quiet', action='store_true')
     p.add_argument('--selftest', action='store_true')
     p.add_argument('file', nargs='?')
@@ -891,8 +929,10 @@ def _dispatch(args):
         return cmd_intake(args)
     if args.command == 'pc-kit':
         return cmd_pc_kit(args)
-    if args.command in ('kits', 'score'):
-        return cmd_later(args.command)
+    if args.command == 'kits':
+        return cmd_kits(args)
+    if args.command == 'score':
+        return cmd_score(args)
     p.print_help()
     return 2
 
