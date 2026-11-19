@@ -9,3 +9,16 @@
 - The tracer never sees `outline_acres` or the official outline (no acres file; sizes stripped from its input). The measuring
   script `kpc_trace_measure.py` reads KPC-Links data/outlines only after the tracer is done.
 - The maps and traces sit on the THROWAWAY branch `trace-test` (test material only): delete it once Fable has the report.
+
+## Fable's read of run 44530520714 (19 Nov 7:40 AM CST): NOT ENOUGH to rule R-G9 on; run 2 needed
+- 60 walked, the finder queued 27 map PDFs (45%), 13 had a usable map page (22%): 0 small, 9 middle, 4 large. The spec asks 10 / 10 / 10.
+- 5 drawn, all 5 GOOD by area (traced / official 0.97-1.10, covered 0.92-0.99, outside 0.03-0.10). 8 refused by the tracer's own
+  checks (5 NO FIT, 2 NO LINE, 1 clipped at the sheet edge): a refusal is a pin, not a wrong line. 0 WRONG LAND of 5 drawn = 0-43%.
+- US-11892 (Colorado): 98.8% covered, yet the line reads 2,759 ft off. Both cannot be true of a clean outline; most likely holes
+  inside the trace were measured as line. The measuring script now measures the OUTSIDE rings and counts holes apart.
+- The throwaway branch was never written (the save step stopped: GNU find refuses -prune with -delete), so the 13 maps and the 5
+  traces are gone and nothing can be looked at. Fixed in kpc-trace-test.yml; the tracer's own report.csv is saved with the report now.
+- The tracer ran blind: 0 size fields in its input, no acres file; its only map sources are roads, water and survey lines.
+- `t1-list-2.json` (75 parks, 25 per size class, 11-14 map hosts per class): the same seed, drawn from fact-verified parks that
+  already have a stored official map PDF link, so the walk can fill 10 / 10 / 10 without a crawl. Run 2 = ONE run by hand with
+  input list = t1-list-2.json, on Brandon's go. Fable writes the R-G9 sheet from run 2's report.
