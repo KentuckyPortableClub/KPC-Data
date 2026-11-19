@@ -100498,6 +100498,1142 @@
    "pass": 1
   },
   {
+   "ref": "US-10524",
+   "area": "US-MT",
+   "park": "Acton (BLM) Recreation Site",
+   "agency_group": "blm.gov",
+   "kind": "outline",
+   "date": "2026-11-19",
+   "status": "candidate",
+   "st": "US-MT",
+   "url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0?f=html",
+   "service_url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
+   "name_field": "FET_NAME",
+   "agency": "BLM recreation management areas · official (BLM planning area)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 10988,
+   "record_name": "Acton Recreation Area",
+   "layer": "PACK-US-land-208",
+   "record_link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0/query?where=OBJECTID%3D10988&outFields=%2A&f=html",
+   "where": "OBJECTID=10988",
+   "pin_m": 0,
+   "acres_approx": 3697.8,
+   "grade": "official",
+   "envelope": [
+    -108.67417,
+    45.99785,
+    -108.6127,
+    46.0599
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Acton Recreation Area",
+     "layer": "PACK-US-AK-land-214",
+     "tier": "T-3",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0/query?geometry=-108.664%2C46.045&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-19",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Acton Recreation Area' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-MT-park-286",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-MT-wildlife-287",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-MT-land-288",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-MN-wildlife-29",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-214",
+      "gave": "hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-215",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "error (HTTP 200)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "NAME SOLVED: agency calls it Acton Recreation Area",
+    "why_this_record": "same land also in PACK-US-AK-land-214 'Acton Recreation Area': merged, counted once; record 'Acton Recreation Area' (PACK-US-land-208); pin inside; about 3697.8 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "check the kind of place and the size"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-10528",
+   "area": "US-MT",
+   "park": "Shepherd Ah Nei BLM Special Recreation Management Area",
+   "agency_group": "blm.gov",
+   "kind": "outline",
+   "date": "2026-11-19",
+   "status": "candidate",
+   "st": "US-MT",
+   "url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0?f=html",
+   "service_url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
+   "name_field": "FET_NAME",
+   "agency": "BLM recreation management areas · official (BLM planning area)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-6",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 10990,
+   "record_name": "Shepherd Recreation Area",
+   "layer": "PACK-US-land-208",
+   "record_link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0/query?where=OBJECTID%3D10990&outFields=%2A&f=html",
+   "where": "OBJECTID=10990",
+   "pin_m": 0,
+   "acres_approx": 4679.6,
+   "grade": "official",
+   "envelope": [
+    -108.32227,
+    46.03057,
+    -108.26729,
+    46.08853
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Shepherd Recreation Area",
+     "layer": "PACK-US-AK-land-214",
+     "tier": "T-6",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0/query?geometry=-108.284%2C46.0343&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-19",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-6 WEAK: 'Shepherd Recreation Area' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-MT-park-286",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-MT-wildlife-287",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-MT-land-288",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-MN-wildlife-29",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-214",
+      "gave": "hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-215",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "error (HTTP 200)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "https://www.blm.gov/visit/shepherd-ah-nei-srma",
+      "gave": "page read (fetch); 0 file candidates"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for US-MT in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official source was blocked (blocked is not not-found; retry first)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "same land also in PACK-US-AK-land-214 'Shepherd Recreation Area': merged, counted once; record 'Shepherd Recreation Area' (PACK-US-land-208); pin inside; about 4679.6 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-10529",
+   "area": "US-MT",
+   "park": "Sundance Lodge (BLM) Recreation Site",
+   "agency_group": "blm.gov",
+   "kind": "outline",
+   "date": "2026-11-19",
+   "status": "candidate",
+   "st": "US-MT",
+   "url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0?f=html",
+   "service_url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
+   "name_field": "FET_NAME",
+   "agency": "BLM recreation management areas · official (BLM planning area)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-6",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 10995,
+   "record_name": "Sundance Recreation Area",
+   "layer": "PACK-US-land-208",
+   "record_link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0/query?where=OBJECTID%3D10995&outFields=%2A&f=html",
+   "where": "OBJECTID=10995",
+   "pin_m": 0,
+   "acres_approx": 391.0,
+   "grade": "official",
+   "envelope": [
+    -108.75101,
+    45.63741,
+    -108.71687,
+    45.65022
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Sundance Recreation Area",
+     "layer": "PACK-US-AK-land-214",
+     "tier": "T-6",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0/query?geometry=-108.73%2C45.6481&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-19",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-6 WEAK: 'Sundance Recreation Area' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-MT-park-286",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-MT-wildlife-287",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-MT-land-288",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-MN-wildlife-29",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "no hit (0 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "hit (1 at pin, 2 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-214",
+      "gave": "hit (1 at pin, 2 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-215",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-boundary",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "error (HTTP 200)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "L1 agency servers",
+      "gave": "none known for this agency (agencies.json)"
+     },
+     {
+      "source": "https://www.blm.gov/visit/sundance-lodge-rec-area",
+      "gave": "page read (fetch); 0 file candidates"
+     },
+     {
+      "source": "L5 parcels",
+      "gave": "no official parcel layer for US-MT in the registry yet (kpc_parcels county finder not wired)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official source was blocked (blocked is not not-found; retry first)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "same land also in PACK-US-AK-land-214 'Sundance Recreation Area': merged, counted once; record 'Sundance Recreation Area' (PACK-US-land-208); pin inside; about 391.0 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "weak",
+     "double_check": "name or pin only: read the agency map"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-4553",
+   "area": "US-NM",
+   "park": "Rio Grande del Norte National Monument",
+   "agency_group": "blm.gov",
+   "kind": "outline",
+   "date": "2026-11-19",
+   "status": "found",
+   "st": "US-NM",
+   "url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0?f=html",
+   "service_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0",
+   "name_field": "NCA_NAME",
+   "agency": "BLM national monuments / conservation areas",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-1",
+   "band": "STRONG",
+   "step": "L0",
+   "record": 21349,
+   "record_name": "Río Grande del Norte National Monument",
+   "layer": "PACK-US-land-200",
+   "record_link": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0/query?where=OBJECTID%3D21349&outFields=%2A&f=html",
+   "where": "OBJECTID=21349",
+   "pin_m": 0,
+   "acres_approx": 311028.5,
+   "grade": "official",
+   "envelope": [
+    -106.14664,
+    36.28476,
+    -105.60822,
+    36.9962
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0/query?geometry=-105.641%2C36.7663&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-19",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped",
+   "size_band": "unknown",
+   "why": "T-1 STRONG: 'Río Grande del Norte National Monument' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-NM-trail-53",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-NM-wildlife-300",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-NM-park-301",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-AZ-land-2",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-AR-trail-3",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-NV-trail-9",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Río Grande del Norte National Monument' (PACK-US-land-200); pin inside; about 311028.5 acres; Rule G: SURE (names equal once kind words are stripped); size unknown",
+    "confidence": {
+     "level": "sure",
+     "double_check": "name + pin inside; check the size against the agency page"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-7563",
+   "area": "US-NM",
+   "park": "Black River Recreation Site",
+   "agency_group": "blm.gov",
+   "kind": "outline",
+   "date": "2026-11-19",
+   "status": "found",
+   "st": "US-NM",
+   "url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9?f=html",
+   "service_url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9",
+   "name_field": "FET_NAME",
+   "agency": "BLM recreation areas",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-2",
+   "band": "STRONG",
+   "step": "L0",
+   "record": 14054,
+   "record_name": "Black River Recreation Area",
+   "layer": "PACK-US-land-207",
+   "record_link": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9/query?where=OBJECTID%3D14054&outFields=%2A&f=html",
+   "where": "OBJECTID=14054",
+   "pin_m": 0,
+   "acres_approx": 1276.6,
+   "grade": "official",
+   "envelope": [
+    -104.48609,
+    32.05739,
+    -104.45619,
+    32.10797
+   ],
+   "rule": null,
+   "others": [],
+   "source_url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9/query?geometry=-104.469%2C32.096&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-19",
+   "rule_g": "SURE",
+   "rule_g_why": "names equal once kind words are stripped",
+   "size_band": "unknown",
+   "why": "T-2 STRONG: 'Black River Recreation Area' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-NM-trail-53",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-NM-wildlife-300",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-NM-park-301",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-AZ-land-2",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-AR-trail-3",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-NV-trail-9",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 4 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 3 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 2 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "",
+    "why_this_record": "record 'Black River Recreation Area' (PACK-US-land-207); pin inside; about 1276.6 acres; Rule G: SURE (names equal once kind words are stripped); size unknown",
+    "confidence": {
+     "level": "sure",
+     "double_check": "name + pin inside; check the size against the agency page"
+    }
+   },
+   "pass": 1
+  },
+  {
+   "ref": "US-10021",
+   "area": "US-OR",
+   "park": "Topsy BLM Recreation Management Area",
+   "agency_group": "blm.gov",
+   "kind": "outline",
+   "date": "2026-11-19",
+   "status": "candidate",
+   "st": "US-OR",
+   "url": "https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0?f=html",
+   "service_url": "https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0",
+   "name_field": "PARK_NAME",
+   "agency": "State of Oregon (Oregon parklands) (park, state GIS table)",
+   "licence": "see the publisher",
+   "answer": "",
+   "checked_by": "",
+   "tier": "T-3",
+   "band": "WEAK",
+   "step": "L0",
+   "record": 23848,
+   "record_name": "Topsy",
+   "layer": "PACK-US-OR-park-322",
+   "record_link": "https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0/query?where=OBJECTID%3D23848&outFields=%2A&f=html",
+   "where": "OBJECTID=23848",
+   "pin_m": 0,
+   "acres_approx": 13.1,
+   "grade": "official",
+   "envelope": [
+    -122.04425,
+    42.12298,
+    -122.04151,
+    42.12573
+   ],
+   "rule": null,
+   "others": [
+    {
+     "record_name": "Topsy Campground",
+     "layer": "PACK-US-land-207",
+     "tier": "T-3",
+     "pin_m": null
+    },
+    {
+     "record_name": "Topsy Campground",
+     "layer": "PACK-US-land-208",
+     "tier": "T-3",
+     "pin_m": null
+    },
+    {
+     "record_name": "Topsy Campground",
+     "layer": "PACK-US-AK-land-214",
+     "tier": "T-3",
+     "pin_m": null
+    },
+    {
+     "record_name": "BLM",
+     "layer": "US-BLM-sma",
+     "tier": "T-3",
+     "pin_m": null
+    }
+   ],
+   "source_url": "https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0/query?geometry=-122.042%2C42.1236&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "read_date": "2026-11-19",
+   "rule_g": "LIKELY",
+   "rule_g_why": "names overlap",
+   "size_band": "unknown",
+   "why": "T-3 WEAK: 'Topsy' at the POTA pin",
+   "notes": {
+    "where_looked": [
+     {
+      "source": "PACK-US-OR-land-206",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-OR-park-319",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-OR-wildlife-320",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-OR-land-321",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-OR-park-322",
+      "gave": "hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-OR-land-323",
+      "gave": "hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "WB-US-499",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-AR-trail-0",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-AR-trail-3",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-NV-trail-9",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-AZ-trail-22",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-MI-land-26",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-AZ-land-44",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-NV-land-45",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "US-USFS-ownership",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-grassland",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-interest",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-nwrs",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-huntunits",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-PADUS-fee",
+      "gave": "skipped: WDPA / Protected Planet copy (layer description / licence / fields): never a source"
+     },
+     {
+      "source": "PACK-US-land-183",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-187",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-188",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-189",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-200",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-207",
+      "gave": "hit (1 at pin, 1 by name)"
+     },
+     {
+      "source": "PACK-US-land-208",
+      "gave": "hit (2 at pin, 2 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-214",
+      "gave": "hit (2 at pin, 2 by name)"
+     },
+     {
+      "source": "PACK-US-AK-land-215",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-383",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-384",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "PACK-US-land-385",
+      "gave": "no hit (0 at pin, 0 by name)"
+     },
+     {
+      "source": "PACK-US-land-386",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-NPS-tracts",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-BLM-sma",
+      "gave": "hit (1 at pin, 0 by name)"
+     },
+     {
+      "source": "WB-US-481",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-482",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-483",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-484",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-485",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-486",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WB-US-503",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-USFS-admin",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "US-FWS-approved",
+      "gave": "blocked (blocked (host rule: saved copies only or never contact; on the needs-download li)"
+     },
+     {
+      "source": "WDPA (last resort)",
+      "gave": "not asked: an official layer has a record for this park (W-10)"
+     }
+    ],
+    "solved": "NAME SOLVED: agency calls it Topsy",
+    "why_this_record": "record 'Topsy' (PACK-US-OR-park-322); pin inside; about 13.1 acres; Rule G: LIKELY (names overlap); size unknown",
+    "confidence": {
+     "level": "likely",
+     "double_check": "other names at the pin: topsy campground; check the kind of place and the size"
+    }
+   },
+   "pass": 1
+  },
+  {
    "ref": "US-13259",
    "area": "US-NV",
    "park": "Great Basin Highway Scenic Byway Scenic Site",
