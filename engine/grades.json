@@ -5,8 +5,8 @@
    "verdict": "FAIL",
    "bar": "Rule G: SURE only when pin inside (or <= 150 m with a name match, R-G12), names equal once kind words are stripped, kinds match, not line vs polygon, not a container, size within 1.5x or unknown; LIKELY goes to chat 11; UNLIKELY is evidence only, never a question. Whole key file: chat 11 samples 30 joins, needs 30/30. Finder: >= 95% of past YES re-found, >= 25% more parks, >= 85% YES in a sample of 40; every open park has a why-not.",
    "measured": {
-    "rows": 15227,
-    "parks": 4783,
+    "rows": 15244,
+    "parks": 4800,
     "parks_with_hit": 629,
     "SURE": 521,
     "LIKELY": 901,
@@ -27,7 +27,7 @@
    "top_miss_reasons": [
     {
      "reason": "blocked: source could not be read",
-     "parks": 3365
+     "parks": 3382
     },
     {
      "reason": "not found: no-layer: no official record at the pin or by name",
@@ -108,9 +108,9 @@
     "the finder bars need the side-by-side run (95% re-found, +25% parks) and a 40-row sample (85% YES)"
    ],
    "details": {
-    "rows": 15227,
+    "rows": 15244,
     "found_or_candidate": 1396,
-    "blocked": 4576,
+    "blocked": 4593,
     "hit_rate": 0.092,
     "bands": {
      "STRONG": 301,
@@ -300,7 +300,7 @@
     "found": 314,
     "candidate": 1192,
     "evidence": 5441,
-    "blocked": 4576,
+    "blocked": 4593,
     "not found": 2571,
     "pin only": 6
    },
