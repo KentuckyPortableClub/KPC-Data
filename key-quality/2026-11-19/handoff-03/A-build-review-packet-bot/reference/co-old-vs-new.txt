@@ -1,0 +1,7 @@
+Colorado, main's rules 7c6e01e1bc2b against PR 278, both re-matched from the published file: 276 parks, joined records differ on 0: []
+US-0033 Great Sand Dunes National Park | joined old [(3446, 'Great Sand Dunes National Park', 104902)] | joined new [(3446, 'Great Sand Dunes National Park', 104902)]
+   check list old: [(3303, 'Great Sand Dunes National Preserve', "check (NPS unit code GRSA): this record is US-8295's own unit; the name decides inside a shared unit")]
+   check list new: [(3303, 'Great Sand Dunes National Preserve', "check (R-PP1): a preserve is its own park to POTA; this park number's name does not name the preserve")]
+US-8295 Great Sand Dunes National Preserve | joined old [(3303, 'Great Sand Dunes National Preserve', 41702)] | joined new [(3303, 'Great Sand Dunes National Preserve', 41702)]
+   check list old: [(3446, 'Great Sand Dunes National Park', "check (NPS unit code GRSA): this record is US-0033's own unit; the name decides inside a shared unit")]
+   check list new: [(3446, 'Great Sand Dunes National Park', "check (R-PP1): a preserve is its own park to POTA; this park number's name does not name the preserve")]
