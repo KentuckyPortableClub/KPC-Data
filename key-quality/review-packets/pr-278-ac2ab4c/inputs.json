@@ -1,0 +1,469 @@
+{
+ "about": "Frozen inputs for this review packet. Both sides used the same park data, the same saved shapes, and the same build date.",
+ "pr": "278",
+ "head": "ac2ab4c80723ae3ebf19261339c339b3da6f849c",
+ "old": "8140d35e14923e7fa17cc25254c854d78e3a86c2",
+ "data_commit": "59465a7c5d52d7e8e0ed002aab8dac6556da081a",
+ "build_date": "2026-11-19",
+ "states": [
+  "AK",
+  "ID",
+  "CO"
+ ],
+ "states_from": "input",
+ "entries": [
+  "2026-11-19-r-pp1-park-preserve"
+ ],
+ "fixed_build_settings": {
+  "KPC_KEY_REMATCH_IDS": "1",
+  "KPC_KEY_OFFLINE": "1",
+  "KPC_MASTER_OWNS": "1",
+  "GEO_CACHE_MODE": "only",
+  "GEO_DETAIL": "0.001",
+  "GEO_PAGE": "200",
+  "KPC_ANSWER_SHEET": "off",
+  "PYTHONHASHSEED": "0",
+  "PYTHONDONTWRITEBYTECODE": "1",
+  "MINUTES": "600"
+ },
+ "shapes": {
+  "hand-US-AK.sgide.geojson.gz": {
+   "date": "2026-11-11T14:20:05Z",
+   "size": 1942
+  },
+  "hand-US-AL.sgide.geojson.gz": {
+   "date": "2026-11-11T14:20:05Z",
+   "size": 34495
+  },
+  "hand-US-AR.sgide.geojson.gz": {
+   "date": "2026-11-11T14:20:05Z",
+   "size": 73966
+  },
+  "hand-US-CA.sgide.geojson.gz": {
+   "date": "2026-11-11T14:20:05Z",
+   "size": 15199
+  },
+  "hand-US-CO.sgcoc.geojson.gz": {
+   "date": "2026-11-10T18:58:40Z",
+   "size": 289181
+  },
+  "hand-US-CO.sgide.geojson.gz": {
+   "date": "2026-11-11T14:20:05Z",
+   "size": 2836
+  },
+  "hand-US-DC.dcnps.geojson.gz": {
+   "date": "2026-11-11T14:20:06Z",
+   "size": 62163
+  },
+  "hand-US-DC.dcparks.geojson.gz": {
+   "date": "2026-11-11T14:20:06Z",
+   "size": 38158
+  },
+  "hand-US-FL.sgflb.geojson.gz": {
+   "date": "2026-11-11T11:39:52Z",
+   "size": 143228
+  },
+  "hand-US-FL.sgfld.geojson.gz": {
+   "date": "2026-11-11T14:13:32Z",
+   "size": 221884
+  },
+  "hand-US-FL.sgfle.geojson.gz": {
+   "date": "2026-11-11T10:31:47Z",
+   "size": 105244
+  },
+  "hand-US-FL.sgflf.geojson.gz": {
+   "date": "2026-11-11T14:13:32Z",
+   "size": 5207769
+  },
+  "hand-US-FL.sgide.geojson.gz": {
+   "date": "2026-11-11T14:20:06Z",
+   "size": 4645
+  },
+  "hand-US-GA.sggaf.geojson.gz": {
+   "date": "2026-11-11T14:20:06Z",
+   "size": 277369
+  },
+  "hand-US-GA.sgide.geojson.gz": {
+   "date": "2026-11-11T14:20:07Z",
+   "size": 113450
+  },
+  "hand-US-IA.sgide.geojson.gz": {
+   "date": "2026-11-11T14:20:07Z",
+   "size": 19606
+  },
+  "hand-US-IL.sgide.geojson.gz": {
+   "date": "2026-11-11T11:39:53Z",
+   "size": 23282
+  },
+  "hand-US-IL.sgilc.geojson.gz": {
+   "date": "2026-11-11T11:39:52Z",
+   "size": 1084374
+  },
+  "hand-US-IN.sgide.geojson.gz": {
+   "date": "2026-11-11T11:39:53Z",
+   "size": 13078
+  },
+  "hand-US-KS.sgide.geojson.gz": {
+   "date": "2026-11-11T11:39:53Z",
+   "size": 35431
+  },
+  "hand-US-LA.sgide.geojson.gz": {
+   "date": "2026-11-11T14:20:07Z",
+   "size": 14034
+  },
+  "hand-US-MD.sgide.geojson.gz": {
+   "date": "2026-11-11T14:20:08Z",
+   "size": 2100
+  },
+  "hand-US-ME.sgmec.geojson.gz": {
+   "date": "2026-11-11T11:39:52Z",
+   "size": 57844
+  },
+  "hand-US-MI.dnrsf.geojson.gz": {
+   "date": "2026-11-11T14:20:08Z",
+   "size": 527824
+  },
+  "hand-US-MI.sgide.geojson.gz": {
+   "date": "2026-11-11T14:20:08Z",
+   "size": 1705
+  },
+  "hand-US-MN.sgide.geojson.gz": {
+   "date": "2026-11-11T14:20:08Z",
+   "size": 6048
+  },
+  "hand-US-MO.sgide.geojson.gz": {
+   "date": "2026-11-11T14:20:08Z",
+   "size": 72535
+  },
+  "hand-US-MS.sgide.geojson.gz": {
+   "date": "2026-11-11T11:39:55Z",
+   "size": 26840
+  },
+  "hand-US-MS.usaceproj.geojson.gz": {
+   "date": "2026-11-11T14:20:09Z",
+   "size": 19612
+  },
+  "hand-US-MT.sgide.geojson.gz": {
+   "date": "2026-11-11T14:20:09Z",
+   "size": 12444
+  },
+  "hand-US-NC.sgide.geojson.gz": {
+   "date": "2026-11-11T14:20:09Z",
+   "size": 91363
+  },
+  "hand-US-ND.sgide.geojson.gz": {
+   "date": "2026-11-11T11:39:53Z",
+   "size": 11980
+  },
+  "hand-US-NE.sgide.geojson.gz": {
+   "date": "2026-11-11T14:20:09Z",
+   "size": 7901
+  },
+  "hand-US-NV.nvusnvfish.geojson.gz": {
+   "date": "2026-11-10T18:58:40Z",
+   "size": 846
+  },
+  "hand-US-NV.sgide.geojson.gz": {
+   "date": "2026-11-11T14:20:10Z",
+   "size": 6197
+  },
+  "hand-US-NV.sgnvj.geojson.gz": {
+   "date": "2026-11-10T18:58:40Z",
+   "size": 11731
+  },
+  "hand-US-NY.sgide.geojson.gz": {
+   "date": "2026-11-11T14:20:10Z",
+   "size": 10528
+  },
+  "hand-US-NY.sgnyc.geojson.gz": {
+   "date": "2026-11-11T11:39:52Z",
+   "size": 6842
+  },
+  "hand-US-NY.sgnyd.geojson.gz": {
+   "date": "2026-11-11T11:39:52Z",
+   "size": 8107
+  },
+  "hand-US-OH.sgide.geojson.gz": {
+   "date": "2026-11-11T11:39:54Z",
+   "size": 25801
+  },
+  "hand-US-OK.sgide.geojson.gz": {
+   "date": "2026-11-11T11:39:54Z",
+   "size": 74604
+  },
+  "hand-US-OR.sgide.geojson.gz": {
+   "date": "2026-11-11T11:39:54Z",
+   "size": 19077
+  },
+  "hand-US-PA.sgide.geojson.gz": {
+   "date": "2026-11-11T14:20:10Z",
+   "size": 22427
+  },
+  "hand-US-SC.sgide.geojson.gz": {
+   "date": "2026-11-11T14:20:10Z",
+   "size": 64424
+  },
+  "hand-US-SD.sgide.geojson.gz": {
+   "date": "2026-11-11T11:39:54Z",
+   "size": 10250
+  },
+  "hand-US-TN.sgide.geojson.gz": {
+   "date": "2026-11-11T11:39:54Z",
+   "size": 32695
+  },
+  "hand-US-TX.sgide.geojson.gz": {
+   "date": "2026-11-11T11:39:55Z",
+   "size": 160128
+  },
+  "hand-US-VA.sgide.geojson.gz": {
+   "date": "2026-11-11T14:20:10Z",
+   "size": 33956
+  },
+  "hand-US-WA.sgide.geojson.gz": {
+   "date": "2026-11-11T11:39:55Z",
+   "size": 31764
+  },
+  "hand-US-WI.sgide.geojson.gz": {
+   "date": "2026-11-11T14:20:11Z",
+   "size": 2890
+  },
+  "hand-US-WV.sgide.geojson.gz": {
+   "date": "2026-11-11T11:39:55Z",
+   "size": 28892
+  },
+  "hand-US-WY.wyuswyhatc.geojson.gz": {
+   "date": "2026-11-10T18:58:40Z",
+   "size": 1686
+  },
+  "hand-US-WY.wyuswyrive.geojson.gz": {
+   "date": "2026-11-10T18:58:41Z",
+   "size": 15156
+  },
+  "US-AK.json.gz": {
+   "date": "2026-11-11T05:21:10Z",
+   "size": 7689171
+  },
+  "US-AL.json.gz": {
+   "date": "2026-11-11T05:57:04Z",
+   "size": 380713
+  },
+  "US-AR.json.gz": {
+   "date": "2026-11-11T05:57:04Z",
+   "size": 633618
+  },
+  "US-AZ.json.gz": {
+   "date": "2026-11-12T20:46:38Z",
+   "size": 1016585
+  },
+  "US-CA.json.gz": {
+   "date": "2026-11-12T20:46:38Z",
+   "size": 3949783
+  },
+  "US-CO.json.gz": {
+   "date": "2026-11-12T20:43:24Z",
+   "size": 2361116
+  },
+  "US-CT.json.gz": {
+   "date": "2026-11-10T21:13:30Z",
+   "size": 1005809
+  },
+  "US-DC.json.gz": {
+   "date": "2026-11-05T08:46:58Z",
+   "size": 35505
+  },
+  "US-DE.json.gz": {
+   "date": "2026-11-11T05:21:10Z",
+   "size": 282420
+  },
+  "US-FL.json.gz": {
+   "date": "2026-11-11T16:49:07Z",
+   "size": 6349568
+  },
+  "US-GA.json.gz": {
+   "date": "2026-11-05T08:46:59Z",
+   "size": 517101
+  },
+  "US-HI.json.gz": {
+   "date": "2026-11-11T05:23:28Z",
+   "size": 235090
+  },
+  "US-IA.json.gz": {
+   "date": "2026-11-12T21:28:48Z",
+   "size": 917036
+  },
+  "US-ID.json.gz": {
+   "date": "2026-11-12T20:46:38Z",
+   "size": 3092399
+  },
+  "US-IL.json.gz": {
+   "date": "2026-11-17T17:10:31Z",
+   "size": 1774126
+  },
+  "US-IN.json.gz": {
+   "date": "2026-11-17T17:10:31Z",
+   "size": 363832
+  },
+  "US-KS.json.gz": {
+   "date": "2026-11-11T13:05:55Z",
+   "size": 205658
+  },
+  "US-LA.json.gz": {
+   "date": "2026-11-05T08:47:00Z",
+   "size": 344075
+  },
+  "US-MA.json.gz": {
+   "date": "2026-11-11T05:21:10Z",
+   "size": 6729048
+  },
+  "US-MD.json.gz": {
+   "date": "2026-11-12T21:28:48Z",
+   "size": 521289
+  },
+  "US-ME.json.gz": {
+   "date": "2026-11-11T13:05:55Z",
+   "size": 737740
+  },
+  "US-MI.json.gz": {
+   "date": "2026-11-10T17:09:08Z",
+   "size": 831247
+  },
+  "US-MN.json.gz": {
+   "date": "2026-11-12T20:46:38Z",
+   "size": 3097197
+  },
+  "US-MO.json.gz": {
+   "date": "2026-11-12T20:46:38Z",
+   "size": 1083029
+  },
+  "US-MS.json.gz": {
+   "date": "2026-11-11T13:10:56Z",
+   "size": 361464
+  },
+  "US-MT.json.gz": {
+   "date": "2026-11-12T20:46:39Z",
+   "size": 2858978
+  },
+  "US-NC.json.gz": {
+   "date": "2026-11-10T19:50:26Z",
+   "size": 2585792
+  },
+  "US-ND.json.gz": {
+   "date": "2026-11-11T13:05:55Z",
+   "size": 487363
+  },
+  "US-NE.json.gz": {
+   "date": "2026-11-11T05:23:29Z",
+   "size": 298185
+  },
+  "US-NH.json.gz": {
+   "date": "2026-11-12T20:43:24Z",
+   "size": 2363111
+  },
+  "US-NJ.json.gz": {
+   "date": "2026-11-11T05:23:29Z",
+   "size": 826890
+  },
+  "US-NM.json.gz": {
+   "date": "2026-11-12T21:28:48Z",
+   "size": 1525255
+  },
+  "US-NV.json.gz": {
+   "date": "2026-11-12T21:28:48Z",
+   "size": 1768783
+  },
+  "US-NY.json.gz": {
+   "date": "2026-11-11T13:05:55Z",
+   "size": 1135007
+  },
+  "US-OH.json.gz": {
+   "date": "2026-11-12T20:43:24Z",
+   "size": 855273
+  },
+  "US-OK.json.gz": {
+   "date": "2026-11-11T13:05:56Z",
+   "size": 539327
+  },
+  "US-OR.json.gz": {
+   "date": "2026-11-12T21:28:48Z",
+   "size": 3184154
+  },
+  "US-PA.json.gz": {
+   "date": "2026-11-11T05:21:12Z",
+   "size": 941987
+  },
+  "US-RI.json.gz": {
+   "date": "2026-11-11T05:23:29Z",
+   "size": 301164
+  },
+  "US-SC.json.gz": {
+   "date": "2026-11-05T08:47:05Z",
+   "size": 580357
+  },
+  "US-SD.json.gz": {
+   "date": "2026-11-11T13:05:56Z",
+   "size": 772608
+  },
+  "US-TN.json.gz": {
+   "date": "2026-11-18T01:20:01Z",
+   "size": 1205614
+  },
+  "US-TX.json.gz": {
+   "date": "2026-11-12T20:46:39Z",
+   "size": 1653586
+  },
+  "US-UT.json.gz": {
+   "date": "2026-11-12T21:28:49Z",
+   "size": 1543923
+  },
+  "US-VA.json.gz": {
+   "date": "2026-11-11T05:21:12Z",
+   "size": 2050133
+  },
+  "US-VT.json.gz": {
+   "date": "2026-11-12T20:43:24Z",
+   "size": 249333
+  },
+  "US-WA.json.gz": {
+   "date": "2026-11-12T21:28:49Z",
+   "size": 2121206
+  },
+  "US-WI.json.gz": {
+   "date": "2026-11-11T05:23:30Z",
+   "size": 4348838
+  },
+  "US-WV.json.gz": {
+   "date": "2026-11-11T13:10:57Z",
+   "size": 337843
+  },
+  "US-WY.json.gz": {
+   "date": "2026-11-12T20:43:25Z",
+   "size": 2742425
+  }
+ },
+ "gold_file": "key-quality/gold-us.json",
+ "gold_commit": "a9538aea28b9d30fa3a430a1b59ce06d2c34529b",
+ "states_ran": {
+  "AK": {
+   "result": "ok",
+   "parks_changed": 4,
+   "notices_only_new": 1,
+   "verified_outlines_lost": 0,
+   "verified_got_worse": 0
+  },
+  "ID": {
+   "result": "ok",
+   "parks_changed": 1,
+   "notices_only_new": 1,
+   "verified_outlines_lost": 0,
+   "verified_got_worse": 1
+  },
+  "CO": {
+   "result": "ok",
+   "parks_changed": 0,
+   "notices_only_new": 1,
+   "verified_outlines_lost": 0,
+   "verified_got_worse": 0
+  }
+ },
+ "note": "Shapely is for the fact check step. The two builds do not install it, so a build cannot change its answers by finding that library."
+}
