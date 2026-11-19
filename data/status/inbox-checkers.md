@@ -369,16 +369,15 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM BOT closures super-bot (2026-11-17): FAILED its gate: US-KY — 20 of 27 of Kentucky's own reader's items found here on the same park (74%); 54 only here · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44184503775)
 - FROM BOT closures super-bot (2026-11-18): FAILED its gate: US-KY — 20 of 27 of Kentucky's own reader's items found here on the same park (74%); 54 only here · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44229819873)
 - FROM BOT kpc_state_trails (2026-11-18): grade me: HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY CANADA AL AK AZ AR CA CO CT DE DC FL GA data/trails/ — 310 state trail lines; 220 drawn, 58 reused · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44234018694)
-- FROM WAITING ROOM (held since 2026-11-08, 10 days): trails data/trails/US-13626.json held: F-T3 length 16 -> 114 km (outside -25% / +50%)
-- FROM WAITING ROOM (held since 2026-11-08, 10 days): trails data/trails/US-9203.json held: F-T2 points 19246 -> 1822 (under half the saved line) · F-T3 length 138 -> 88 km (outside -25% / +50%)
-- FROM WAITING ROOM (held since 2026-11-09, 9 days): trails data/trails/index.json held: F-T4 trail index 139 -> 101 lines (under 80% of the saved list)
-- FROM WAITING ROOM (held since 2026-11-04, 14 days): trails data/trails/state-report.json held: F-T1 the line has no points
-- FROM WAITING ROOM (held since 2026-11-01, 17 days): truth data/truth/US-MA.json held: F-R2 6 OFF rows share the size 1,000.0 ac · F-R3 169 of 242 sized parks are OFF (over half: a reading problem?)
-- FROM WAITING ROOM (held since 2026-11-01, 17 days): truth data/truth/US-MD.json held: F-R3 48 of 89 sized parks are OFF (over half: a reading problem?)
-- FROM WAITING ROOM (held since 2026-11-01, 17 days): truth data/truth/US-MN.json held: F-R3 13 of 20 sized parks are OFF (over half: a reading problem?)
-- FROM WAITING ROOM (held since 2026-11-01, 17 days): truth data/truth/US-OK.json held: F-R3 53 of 100 sized parks are OFF (over half: a reading problem?)
-- FROM WAITING ROOM (held since 2026-11-10, 8 days): truth data/truth/US-UT.json held: F-R2 6 OFF rows share the size 2,200,000.0 ac
-- FROM WAITING ROOM (held since 2026-11-10, 8 days): truth data/truth/US-WA.json held: F-R2 5 OFF rows share the size 564.0 ac · F-R3 157 of 188 sized parks are OFF (over half: a reading problem?)
-- FROM WAITING ROOM (held since 2026-11-18): key data/world-key/ZA.json held: F-O2 4 of 76 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks?
-- FROM WAITING ROOM HEALTH (2026-11-18): RED: 8 files waiting over 3 days in data/waiting/in/ (e.g. US-9203.json)
 - FROM BOT closures super-bot (2026-11-19): FAILED its gate: US-KY — 20 of 27 of Kentucky's own reader's items found here on the same park (74%); 54 only here · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44453953656)
+- FROM WAITING ROOM (held since 2026-11-08, 11 days): trails data/trails/US-13626.json held: F-T3 length 16 -> 114 km (outside -25% / +50%)
+- FROM WAITING ROOM (held since 2026-11-08, 11 days): trails data/trails/US-9203.json held: F-T2 points 19246 -> 1822 (under half the saved line) · F-T3 length 138 -> 88 km (outside -25% / +50%)
+- FROM WAITING ROOM (held since 2026-11-09, 10 days): trails data/trails/index.json held: F-T4 trail index 139 -> 101 lines (under 80% of the saved list)
+- FROM WAITING ROOM (held since 2026-11-04, 15 days): trails data/trails/state-report.json held: F-T1 the line has no points
+- FROM WAITING ROOM (held since 2026-11-01, 18 days): truth data/truth/US-MA.json held: F-R2 6 OFF rows share the size 1,000.0 ac · F-R3 169 of 242 sized parks are OFF (over half: a reading problem?)
+- FROM WAITING ROOM (held since 2026-11-01, 18 days): truth data/truth/US-MD.json held: F-R3 48 of 89 sized parks are OFF (over half: a reading problem?)
+- FROM WAITING ROOM (held since 2026-11-01, 18 days): truth data/truth/US-MN.json held: F-R3 13 of 20 sized parks are OFF (over half: a reading problem?)
+- FROM WAITING ROOM (held since 2026-11-01, 18 days): truth data/truth/US-OK.json held: F-R3 53 of 100 sized parks are OFF (over half: a reading problem?)
+- FROM WAITING ROOM (held since 2026-11-10, 9 days): truth data/truth/US-UT.json held: F-R2 6 OFF rows share the size 2,200,000.0 ac
+- FROM WAITING ROOM (held since 2026-11-10, 9 days): truth data/truth/US-WA.json held: F-R2 5 OFF rows share the size 564.0 ac · F-R3 157 of 188 sized parks are OFF (over half: a reading problem?)
+- FROM WAITING ROOM (held since 2026-11-18, 1 days): key data/world-key/ZA.json held: F-O2 4 of 76 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks?
