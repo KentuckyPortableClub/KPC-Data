@@ -668,6 +668,56 @@ def cmd_report(args):
     return 0
 
 
+def cmd_person_page(args):
+    import kpc_park_pages_person as P
+    facts = W.load_facts(args.out) if args.out else {}
+    html = P.person_page(P.cards_from_facts(facts))
+    dest = pathlib.Path(args.html or (str(pathlib.Path(args.out) / 'for-a-person.html') if args.out else 'for-a-person.html'))
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    dest.write_text(html, encoding='utf-8')
+    if not args.quiet:
+        print(f'The person page is {dest}. It does not use the network.')
+    return 0
+
+
+def cmd_intake(args):
+    import kpc_park_pages_person as P
+    if not args.file:
+        print('Say which file to fold in.')
+        return 0
+    if not args.out:
+        print('Say --out, the folder that holds the facts.')
+        return 0
+    incoming, answers = P.load_answers_or_zip(args.file)
+    facts = W.load_facts(args.out)
+    today = args.today or datetime.date.today().isoformat()
+    if incoming:
+        for area, parks in incoming.items():
+            facts.setdefault(area, {}).update(parks)
+    rows = []
+    if answers:
+        rows = P.apply_person(facts, answers, today=today)
+        P.drop_pictures(args.out, [p.get('ref') for p in (answers.get('parks') or []) if isinstance(p, dict)])
+    write_facts(args.out, facts)
+    if rows:
+        P.write_disagreements(pathlib.Path(args.out) / 'disagreements.csv', rows)
+    if not args.quiet:
+        print(f'Folded in {args.file}. {len(rows)} disagreement(s).')
+    return 0
+
+
+def cmd_pc_kit(args):
+    import kpc_park_pages_person as P
+    if not args.out:
+        print('Say --out, the zip to write.')
+        return 0
+    areas = args.areas.split() if args.areas else []
+    P.build_pc_kit(args.data, areas, args.out, state_path=args.state)
+    if not args.quiet:
+        print(f'The PC kit is {args.out}. Send it to the PC. It has no secrets.')
+    return 0
+
+
 def cmd_later(name):
     print(f'{name} is not in this part of the reader. Nothing was changed.')
     return 0
@@ -802,9 +852,31 @@ def main(argv=None):
     p.add_argument('--lists', default='')
     p.add_argument('--lists-done', default='')
     p.add_argument('--not-sure', default='')
+    p.add_argument('--html', default='')
+    p.add_argument('--pc', action='store_true')
     p.add_argument('--quiet', action='store_true')
     p.add_argument('--selftest', action='store_true')
+    p.add_argument('file', nargs='?')
     args = p.parse_args(argv)
+    if args.pc:
+        say_pc_extras()
+    try:
+        return _dispatch(args)
+    except Exception:
+        if not args.pc:
+            raise
+        import traceback
+        pathlib.Path('run-log.txt').write_text(traceback.format_exc(), encoding='utf-8')
+        print('Something went wrong. The details are in run-log.txt.')
+        return 0
+
+
+def say_pc_extras():
+    import kpc_park_pages_person as P
+    P.say_extras()
+
+
+def _dispatch(args):
     if args.selftest or args.command == '--selftest':
         return selftest()
     if args.command == 'read':
@@ -813,7 +885,13 @@ def main(argv=None):
         return cmd_worklist(args)
     if args.command == 'report':
         return cmd_report(args)
-    if args.command in ('person-page', 'intake', 'kits', 'pc-kit', 'score'):
+    if args.command == 'person-page':
+        return cmd_person_page(args)
+    if args.command == 'intake':
+        return cmd_intake(args)
+    if args.command == 'pc-kit':
+        return cmd_pc_kit(args)
+    if args.command in ('kits', 'score'):
         return cmd_later(args.command)
     p.print_help()
     return 2
