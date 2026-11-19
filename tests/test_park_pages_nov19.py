@@ -5,7 +5,7 @@ Every reading rule has a plain case, a trap, and a silent case. Every known answ
 marked must comes out of its fixture. The reader makes no request here.
 Prints PASS / FAIL lines and ends ALL PASS or SOME FAILED.
 """
-import datetime, json, os, pathlib, shutil, socket, subprocess, sys, tempfile
+import datetime, json, os, pathlib, re, shutil, socket, subprocess, sys, tempfile
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 FX = ROOT / 'tests/fixtures/park-pages'
@@ -327,6 +327,63 @@ try:
 
 finally:
     shutil.rmtree(work, ignore_errors=True)
+
+# --- part 2: the by-hand workflow ---
+import yaml
+WF = (ROOT / '.github/workflows/kpc-park-pages.yml').read_text(encoding='utf-8')
+
+class StrictLoader(yaml.SafeLoader):
+    pass
+
+def _strict_map(loader, node, deep=False):
+    seen = {}
+    for key_node, value_node in node.value:
+        key = loader.construct_object(key_node, deep=deep)
+        if key in seen:
+            raise yaml.constructor.ConstructorError(None, None, f'repeated key {key!r}', key_node.start_mark)
+        seen[key] = loader.construct_object(value_node, deep=deep)
+    return seen
+
+StrictLoader.add_constructor(yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG, _strict_map)
+try:
+    doc = yaml.load(WF, Loader=StrictLoader)
+    check('the workflow loads and has no key twice', isinstance(doc, dict))
+except yaml.constructor.ConstructorError as err:
+    doc = {}
+    check('the workflow loads and has no key twice', False)
+    print('   ' + str(err).splitlines()[0])
+
+on = doc.get(True) or doc.get('on') or {}
+check('the workflow starts by hand only', list(on) == ['workflow_dispatch'])
+check('the schedule line is present and commented out', "switched on only with the owner's GO" in WF and 'schedule' not in on)
+check('concurrency does not cancel a running read', (doc.get('concurrency') or {}).get('group') == 'kpc-park-pages'
+      and (doc.get('concurrency') or {}).get('cancel-in-progress') is False)
+check('the workflow itself can only read', (doc.get('permissions') or {}).get('contents') == 'read' and 'actions' not in (doc.get('permissions') or {}))
+check('no job asks for an actions permission', 'actions:' not in WF)
+jobs = doc.get('jobs') or {}
+check('only the save job may write', (jobs.get('save', {}).get('permissions') or {}).get('contents') == 'write'
+      and all((job.get('permissions') or {}).get('contents') != 'write' for name, job in jobs.items() if name != 'save'))
+save_runs = '\n'.join((s.get('run') or '') for s in (jobs.get('save', {}).get('steps') or []))
+check('the save job checks out main and runs none of the reader',
+      any((s.get('with') or {}).get('ref') == 'main' for s in jobs.get('save', {}).get('steps') or [])
+      and 'kpc_park_pages.py' not in save_runs)
+for name, job in jobs.items():
+    steps = job.get('steps') or []
+    hidden = [s for s in steps if 'hidden failures' in str(s.get('name') or '').lower()]
+    check(f'{name}: hidden failures is the last step', bool(hidden) and steps[-1] is hidden[-1] and hidden[-1].get('if') == 'always()')
+    for st in steps:
+        run = st.get('run') or ''
+        env = st.get('env') or {}
+        calls_gh = bool(re.search(r'(^|\n)\s*gh ', run)) or (' gh ' in f' {run} ')
+        has_token = 'GH_TOKEN' in env or 'GITHUB_TOKEN' in env
+        if calls_gh:
+            check(f'{name}: a gh step has its token', has_token and env.get('GH_TOKEN') == '${{ github.token }}')
+        else:
+            check(f"{name}: step {st.get('id') or st.get('name')} holds no token", not has_token)
+        if name == 'read' and 'kpc_park_pages.py' in run:
+            check('the reader step holds no token', 'GH_TOKEN' not in env and 'persist-credentials: false' in WF)
+check('the read checkout does not keep a write credential',
+      any((s.get('with') or {}).get('persist-credentials') is False for s in jobs.get('read', {}).get('steps') or []))
 
 print('ALL PASS' if ok else 'SOME FAILED')
 sys.exit(0 if ok else 1)

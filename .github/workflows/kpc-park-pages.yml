@@ -1,0 +1,220 @@
+name: KPC park page reader (by hand only)
+# Started by hand. It reads park pages through kpc_manners and writes a folder a chat can fetch later.
+# It starts no other workflow, opens no issue, writes no comment, and sends nothing.
+# The schedule stays off until the owner says GO.
+on:
+  workflow_dispatch:
+    inputs:
+      areas:
+        description: 'areas, for example US-UT US-AK. Blank continues the list'
+        required: false
+        default: ''
+        type: string
+      max_requests:
+        description: 'stop after this many requests'
+        required: false
+        default: '1500'
+        type: string
+      refs_file:
+        description: 'a JSON list of park numbers to read first, a path in this repo'
+        required: false
+        default: ''
+        type: string
+      browser:
+        description: '1 takes one map picture per open question. Off unless this is 1'
+        required: false
+        default: '0'
+        type: string
+  # schedule:                 # switched on only with the owner's GO
+  #   - cron: '0 12 * * 1'
+permissions:
+  contents: read
+concurrency:
+  group: kpc-park-pages
+  cancel-in-progress: false
+jobs:
+  read:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v5
+        id: checkout
+        continue-on-error: true
+        with:
+          path: kpcdata
+          persist-credentials: false
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        id: python
+        continue-on-error: true
+        with:
+          python-version: '3.12'
+      - name: Lists other tools dropped, and the answers already written
+        id: lists
+        continue-on-error: true
+        run: |
+          warn() { echo "::warning title=${1}::${2}"; echo "$1 - $2" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          cd kpcdata
+          mkdir -p ../work/lists ../work/lists-done ../work/out/not-sure
+          git fetch -q --depth 1 origin "+refs/heads/intake-files:refs/remotes/origin/intake-files" || warn "Lists" "intake-files was not read"
+          git archive origin/intake-files park-pages/lists 2>/dev/null | tar -x -C ../work --strip-components=2 || warn "Lists" "no park-pages/lists on intake-files"
+          git fetch -q --depth 1 origin "+refs/heads/tools-out:refs/remotes/origin/tools-out" || warn "Lists" "tools-out was not read"
+          git archive origin/tools-out park-pages/lists-done 2>/dev/null | tar -x -C ../work --strip-components=2 || true
+          git archive origin/tools-out not-sure 2>/dev/null | tar -x -C ../work/out || true
+      - name: Read the pages
+        id: read
+        continue-on-error: true
+        env:
+          AREAS: ${{ inputs.areas }}
+          MAX_REQUESTS: ${{ inputs.max_requests }}
+          REFS_FILE: ${{ inputs.refs_file }}
+          BROWSER: ${{ inputs.browser }}
+        run: |
+          unset GH_TOKEN GITHUB_TOKEN
+          warn() { echo "::warning title=${1}::${2}"; echo "$1 - $2" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          cd kpcdata
+          case "$MAX_REQUESTS" in
+            ''|*[!0-9]*) MAX_REQUESTS=1500;;
+          esac
+          case "$BROWSER" in
+            1) export BROWSER=1;;
+            *) unset BROWSER;;
+          esac
+          REFS=""
+          case "$REFS_FILE" in
+            *..*|/*|*[!A-Za-z0-9._/-]*) warn "List" "the refs file path is not a plain path"; REFS_FILE="";;
+          esac
+          if [ -n "$REFS_FILE" ] && [ -f "$REFS_FILE" ]; then REFS="--refs-file $REFS_FILE"; fi
+          python3 .github/scripts/kpc_park_pages.py read --data data --out ../work/out --state ../work/out/state.json \
+            --areas "$AREAS" --max-requests "$MAX_REQUESTS" --max-minutes 50 \
+            --lists ../work/lists --lists-done ../work/lists-done --not-sure ../work/out/not-sure $REFS \
+            || warn "Read" "the reader did not finish"
+          python3 .github/scripts/kpc_park_pages.py report --out ../work/out || warn "Report" "the summary was not written"
+      - name: Upload the folder a chat fetches later
+        id: upload
+        continue-on-error: true
+        uses: actions/upload-artifact@v4
+        with:
+          name: park-pages
+          path: work/out
+          if-no-files-found: warn
+      - name: Report hidden failures (Nov 2 review, G8)
+        id: hidden
+        if: always()
+        continue-on-error: true
+        env:
+          KPC_STEPS: ${{ toJSON(steps) }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          s = json.loads(os.environ.get('KPC_STEPS') or '{}')
+          bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
+          for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
+          print(f'{len(bad)} hidden step failure(s)')
+          # Nov 4 PM fix bundle item 7: the errors a step caught itself ('|| echo ::error ...') are listed too (kpc-hidden.txt)
+          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt')
+          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
+          print(f'{len(said)} error(s) caught inside steps and kept green')
+          if said and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write(f'**Errors caught inside steps and kept green ({len(said)}):**\n' + ''.join(f'- {x}\n' for x in said[:50]))
+          if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
+          # Next round C4 (Nov 5; Brandon's yes relayed via Super): the errors a step caught itself ('|| { ...; echo ::error ... }') are listed
+          # too (kpc-hidden.txt), one 'Hidden failures' line is left for the check-up (data/status/hidden-failures.json), and a job the
+          # check-up lists as safe to fail (KPC_FAIL_SAFE=1: it starts nothing after it) goes red on a caught ERROR (not on a warning).
+          import sys
+          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt'); he = h[:-4] + '-errors.txt'
+          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
+          errs = [x.strip() for x in open(he, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(he) else []
+          if said or bad:
+              print(f"::warning title=Hidden failures::{len(errs)} error(s) and {len(said) - len(errs)} warning(s) caught inside steps, {len(bad)} step(s) failed but kept green (job {os.environ.get('GITHUB_JOB', '?')})")
+          if errs and os.environ.get('KPC_FAIL_SAFE') == '1':
+              print(f'::error title=Fail where safe::{len(errs)} error(s) were caught inside steps, so this job is red (it starts nothing after it). The repo variable KPC_HIDDEN_RED=off turns this off.')
+              sys.exit(1)
+          PY
+  save:
+    needs: read
+    if: ${{ !cancelled() }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v5
+        id: main
+        continue-on-error: true
+        with:
+          ref: main
+          path: kpcdata
+          fetch-depth: 1
+      - name: The folder from the read job
+        id: get
+        continue-on-error: true
+        uses: actions/download-artifact@v4
+        with:
+          name: park-pages
+          path: packet
+      - name: Save the folder on tools-out
+        id: save
+        continue-on-error: true
+        run: |
+          warn() { echo "::warning title=${1}::${2}"; echo "$1 - $2" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          if [ ! -s "$GITHUB_WORKSPACE/packet/summary.md" ]; then warn "Save" "there is no summary to save"; exit 1; fi
+          rm -rf "$GITHUB_WORKSPACE/packet/pictures"
+          find "$GITHUB_WORKSPACE/packet" -type f -size +2M -delete
+          cd "$GITHUB_WORKSPACE/kpcdata"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          KPC_PUSH_RETRY="$PWD/.github/scripts/kpc_push_retry.sh"
+          git fetch -q --depth 1 origin "+refs/heads/tools-out:refs/remotes/origin/tools-out" || { warn "Save" "tools-out was not read"; exit 1; }
+          git worktree add -q -B tools-out "$GITHUB_WORKSPACE/out" origin/tools-out || { warn "Save" "could not open tools-out"; exit 1; }
+          mkdir -p "$GITHUB_WORKSPACE/out/park-pages"
+          cp -a "$GITHUB_WORKSPACE/packet/." "$GITHUB_WORKSPACE/out/park-pages/"
+          rm -rf "$GITHUB_WORKSPACE/out/park-pages/pictures"
+          cd "$GITHUB_WORKSPACE/out"
+          if [ -d park-pages/not-sure ]; then
+            rm -rf not-sure
+            mv park-pages/not-sure not-sure
+          fi
+          git add -A -- park-pages not-sure
+          if git diff --cached --quiet; then
+            echo "nothing new to save"
+          else
+            git commit -qm "park page reader"
+            bash "$KPC_PUSH_RETRY" tools-out 4 "park-pages not-sure" || { warn "Save" "the folder was not saved to tools-out"; exit 1; }
+          fi
+          echo "saved park-pages/ and not-sure/"
+      - name: Report hidden failures (Nov 2 review, G8)
+        id: hidden
+        if: always()
+        continue-on-error: true
+        env:
+          KPC_STEPS: ${{ toJSON(steps) }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          s = json.loads(os.environ.get('KPC_STEPS') or '{}')
+          bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
+          for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
+          print(f'{len(bad)} hidden step failure(s)')
+          # Nov 4 PM fix bundle item 7: the errors a step caught itself ('|| echo ::error ...') are listed too (kpc-hidden.txt)
+          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt')
+          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
+          print(f'{len(said)} error(s) caught inside steps and kept green')
+          if said and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write(f'**Errors caught inside steps and kept green ({len(said)}):**\n' + ''.join(f'- {x}\n' for x in said[:50]))
+          if bad and os.environ.get('GITHUB_STEP_SUMMARY'):
+              open(os.environ['GITHUB_STEP_SUMMARY'], 'a').write('**Steps that failed but were kept green:** ' + ', '.join(bad) + '\n')
+          # Next round C4 (Nov 5; Brandon's yes relayed via Super): the errors a step caught itself ('|| { ...; echo ::error ... }') are listed
+          # too (kpc-hidden.txt), one 'Hidden failures' line is left for the check-up (data/status/hidden-failures.json), and a job the
+          # check-up lists as safe to fail (KPC_FAIL_SAFE=1: it starts nothing after it) goes red on a caught ERROR (not on a warning).
+          import sys
+          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt'); he = h[:-4] + '-errors.txt'
+          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
+          errs = [x.strip() for x in open(he, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(he) else []
+          if said or bad:
+              print(f"::warning title=Hidden failures::{len(errs)} error(s) and {len(said) - len(errs)} warning(s) caught inside steps, {len(bad)} step(s) failed but kept green (job {os.environ.get('GITHUB_JOB', '?')})")
+          if errs and os.environ.get('KPC_FAIL_SAFE') == '1':
+              print(f'::error title=Fail where safe::{len(errs)} error(s) were caught inside steps, so this job is red (it starts nothing after it). The repo variable KPC_HIDDEN_RED=off turns this off.')
+              sys.exit(1)
+          PY

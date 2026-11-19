@@ -10,6 +10,8 @@ filled in by the later parts; until then they say so and do no work.
 import argparse, datetime, json, os, pathlib, sys, time, urllib.parse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import kpc_park_pages_rules as R  # noqa: E402
+import kpc_park_pages_work as W  # noqa: E402
+import kpc_not_sure as NS  # noqa: E402
 from kpc_manners import Manners, next_run, robots_block  # noqa: E402
 
 JOB = 'KPC park page reader'
@@ -239,8 +241,11 @@ def _family_names_all(text, refs, area_parks):
 
 
 def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_only=None,
-               max_requests=1500, max_per_park=R.MAX_PER_PARK, max_parks=None, on_park=None):
-    """Read every chosen park. Saves nothing itself. Returns {area: {ref: fact}} and the request count."""
+               max_requests=1500, max_per_park=R.MAX_PER_PARK, max_parks=None, on_park=None,
+               refresh_days=W.REFRESH_DAYS, deadline=None):
+    """Read every chosen park. Saves nothing itself. Returns {area: {ref: fact}} and the request count.
+    refs, when given, is the worklist order across areas. A fresh fingerprint is not fetched again.
+    A page older than refresh_days is fetched; the same fingerprint is not parsed again."""
     state.setdefault('hosts', {})
     state.setdefault('refused', {})
     state.setdefault('dead', {})
@@ -252,7 +257,10 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
     cache = {}  # norm url -> fetched page dict
 
     def budget_left():
-        return requests < max_requests
+        return requests < max_requests and (deadline is None or time.time() < deadline)
+
+    def time_up():
+        return deadline is not None and time.time() >= deadline
 
     def fetch(url, rng=None):
         nonlocal requests
@@ -295,115 +303,147 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
         cache[key] = page
         return page
 
+    groups = {}
     for area, parks in areas.items():
         if areas_only and area not in areas_only:
             continue
         chosen = {ref: choose_link(ref, row, web, docs)[0] for ref, row in parks.items()}
-        groups = _shared_map(chosen)
-        order = list(parks)
-        if refs:
-            order = [r for r in refs if r in parks] + [r for r in order if r not in refs]
+        groups[area] = _shared_map(chosen)
         out.setdefault(area, {})
-        for ref in order:
-            if max_parks is not None and done >= max_parks:
-                return out, requests
-            if refs and ref not in refs:
+    if refs:
+        loc = {}
+        for area, parks in areas.items():
+            if areas_only and area not in areas_only:
                 continue
-            row = parks[ref]
-            url, src, others = choose_link(ref, row, web, docs)
-            if on_park:
-                on_park(done + 1, ref)
-            # a finished park with the same fingerprint is not read again
-            prev = (state.get('read') or {}).get(ref)
-            if prev and prev.get('url') == url and prev.get('fingerprint') and url:
-                # still need the stored fact; the caller keeps the old file. Mark unchanged.
-                out[area][ref] = {'ref': ref, 'unchanged': True, 'page': {'fingerprint': prev.get('fingerprint'),
-                                 'kind': prev.get('kind'), 'read': today}, 'questions': []}
-                # The caller merges the old fact. We do not fetch.
-                done += 1
-                continue
-            pota = {'name': row['name'], 'type': row['type'], 'pin': [row['lat'], row['lon']],
-                    'link': url, 'qsos': row['qsos']}
-            asked = {'url': url, 'from': src, 'others_noted': others}
-            if not url:
-                fact = R.build_facts(ref, area, pota, parks, asked, [{'kind': 'none', 'status': None, 'text': '',
-                                      'final': '', 'links': [], 'fingerprint': ''}], today, [], 'unknown',
-                                     'no page on file', read_blocks=False)
-                fact['page']['kind'] = 'none'
-                fact['questions'] = R.questions_for(fact)
-                out[area][ref] = fact
-                state['read'][ref] = {'url': '', 'fingerprint': '', 'date': today, 'kind': 'none'}
-                done += 1
-                continue
-            if R.is_agency_home(url):
-                fact = R.build_facts(ref, area, pota, parks, asked, [{'kind': 'none', 'status': 'not-asked', 'text': '',
-                                      'final': url, 'links': [], 'fingerprint': '', 'family': R.family_of(url)}],
-                                     today, [], 'agency-home', 'the address has no path: it is the agency front page',
-                                     read_blocks=False)
-                fact['page']['kind'] = 'none'
-                fact['page']['requests'] = 0
-                fact['questions'] = R.questions_for(fact)
-                fact['sizes'] = []
-                out[area][ref] = fact
-                state['read'][ref] = {'url': url, 'fingerprint': '', 'date': today, 'kind': 'none'}
-                done += 1
-                continue
-            if not budget_left():
-                return out, requests
-            main = fetch(url)
-            if main is None:
-                return out, requests
-            pages = [main]
-            used = 1
-            kind = main.get('kind')
-            text = main.get('text') or ''
-            mates = [r for r in groups.get(norm_url(url), []) if r != ref]
-            own_is, own_why = _own_is(url, groups.get(norm_url(url), [ref]), parks, text, row['name'])
-            read_blocks = own_is not in ('agency-home', 'list') and kind not in ('refused', 'resting', 'dead', 'script-built')
-            fam = main.get('family') or {}
-            # one facts page, one directions page, one map. Never past max_per_park.
-            if read_blocks and used < max_per_park and budget_left():
-                extra = _extra_urls(url, main, fam)
-                for eu, role in extra:
-                    if used >= max_per_park or not budget_left():
-                        break
-                    if role == 'map':
-                        got = fetch(eu, rng=(0, R.PDF_FIRST - 1))
-                    else:
-                        got = fetch(eu)
-                    used += 1
-                    if got is None:
-                        break
-                    if got.get('kind') in ('html', 'pdf') and (got.get('text') or '').strip():
-                        got = dict(got)
-                        got['role'] = role
-                        pages.append(got)
-                    elif role == 'facts' and got.get('kind') == 'dead':
-                        continue
-            if kind in ('refused', 'resting', 'dead', 'script-built'):
-                read_blocks = False
-            fact = R.build_facts(ref, area, pota, parks, asked, pages, today, mates, own_is, own_why, read_blocks=read_blocks)
-            fact['page']['requests'] = used if main.get('skipped') != 'refused' else 0
-            fact['page']['kind'] = kind if kind != 'html' or not main.get('pdf') else 'pdf'
-            if main.get('kind') == 'pdf':
-                fact['page']['kind'] = 'pdf'
-            # a list page: nothing was read
-            if own_is == 'list':
-                fact['sizes'] = []
-                fact['inside_of'] = []
-                fact['location'] = R._blank_location()
-                fact['name']['best'] = None
-                fact['questions'] = R.questions_for(fact)
-            fact['questions'] = R.questions_for(fact)
-            drafts = R.evidence_drafts(fact)
-            fact['evidence_draft'] = drafts[0] if drafts else None
-            fact['evidence_drafts'] = drafts
-            out[area][ref] = fact
-            state['read'][ref] = {'url': url, 'fingerprint': main.get('fingerprint') or '', 'date': today,
-                                  'kind': fact['page']['kind'], 'final': main.get('final')}
-            if main.get('fingerprint'):
-                state['fingerprints'][norm_url(url)] = main.get('fingerprint')
+            for ref in parks:
+                loc[ref] = area
+        sequence = [(loc[r], r) for r in refs if r in loc]
+    else:
+        sequence = [(area, ref) for area, parks in areas.items()
+                    if not (areas_only and area not in areas_only) for ref in parks]
+
+    def stop(reason, index):
+        state['stopped'] = reason
+        state['left'] = [r for _, r in sequence[index:]]
+        return out, requests
+
+    for index, (area, ref) in enumerate(sequence):
+        parks = areas[area]
+        if max_parks is not None and done >= max_parks:
+            return stop('parks', index)
+        row = parks[ref]
+        url, src, others = choose_link(ref, row, web, docs)
+        if on_park:
+            on_park(done + 1, ref)
+        # A page read inside the refresh window is not fetched again. The caller keeps the old fact.
+        prev = (state.get('read') or {}).get(ref) or {}
+        age = W.age_days(prev.get('date'), today) if prev.get('date') else None
+        fresh = bool(url and prev.get('fingerprint') and prev.get('url') == url and (age is None or age < refresh_days))
+        if fresh:
+            out[area][ref] = {'ref': ref, 'unchanged': True, 'page': {'fingerprint': prev.get('fingerprint'),
+                             'kind': prev.get('kind'), 'read': today, 'seen': today}, 'questions': []}
+            prev = dict(prev)
+            prev['date'] = today
+            state['read'][ref] = prev
             done += 1
+            continue
+        pota = {'name': row['name'], 'type': row['type'], 'pin': [row['lat'], row['lon']],
+                'link': url, 'qsos': row['qsos']}
+        asked = {'url': url, 'from': src, 'others_noted': others}
+        if not url:
+            fact = R.build_facts(ref, area, pota, parks, asked, [{'kind': 'none', 'status': None, 'text': '',
+                                  'final': '', 'links': [], 'fingerprint': ''}], today, [], 'unknown',
+                                 'no page on file', read_blocks=False)
+            fact['page']['kind'] = 'none'
+            fact['questions'] = R.questions_for(fact)
+            out[area][ref] = fact
+            state['read'][ref] = {'url': '', 'fingerprint': '', 'date': today, 'kind': 'none'}
+            done += 1
+            continue
+        if R.is_agency_home(url):
+            fact = R.build_facts(ref, area, pota, parks, asked, [{'kind': 'none', 'status': 'not-asked', 'text': '',
+                                  'final': url, 'links': [], 'fingerprint': '', 'family': R.family_of(url)}],
+                                 today, [], 'agency-home', 'the address has no path: it is the agency front page',
+                                 read_blocks=False)
+            fact['page']['kind'] = 'none'
+            fact['page']['requests'] = 0
+            fact['questions'] = R.questions_for(fact)
+            fact['sizes'] = []
+            out[area][ref] = fact
+            state['read'][ref] = {'url': url, 'fingerprint': '', 'date': today, 'kind': 'none'}
+            done += 1
+            continue
+        if time_up():
+            return stop('minutes', index)
+        if not budget_left():
+            return stop('requests', index)
+        main = fetch(url)
+        if main is None:
+            return stop('minutes' if time_up() else 'requests', index)
+        if prev.get('fingerprint') and prev.get('url') == url and prev.get('fingerprint') == main.get('fingerprint'):
+            # same text: keep the old facts, no new question
+            out[area][ref] = {'ref': ref, 'unchanged': True, 'page': {'fingerprint': main.get('fingerprint'),
+                             'kind': prev.get('kind') or main.get('kind'), 'read': today, 'seen': today}, 'questions': []}
+            kept = dict(prev)
+            kept['date'] = today
+            kept['fingerprint'] = main.get('fingerprint')
+            state['read'][ref] = kept
+            state['fingerprints'][norm_url(url)] = main.get('fingerprint')
+            done += 1
+            continue
+        pages = [main]
+        used = 1
+        kind = main.get('kind')
+        text = main.get('text') or ''
+        mates = [r for r in (groups.get(area) or {}).get(norm_url(url), []) if r != ref]
+        own_is, own_why = _own_is(url, (groups.get(area) or {}).get(norm_url(url), [ref]), parks, text, row['name'])
+        read_blocks = own_is not in ('agency-home', 'list') and kind not in ('refused', 'resting', 'dead', 'script-built')
+        fam = main.get('family') or {}
+        # one facts page, one directions page, one map. Never past max_per_park.
+        if read_blocks and used < max_per_park and budget_left():
+            extra = _extra_urls(url, main, fam)
+            for eu, role in extra:
+                if used >= max_per_park or not budget_left():
+                    break
+                if role == 'map':
+                    got = fetch(eu, rng=(0, R.PDF_FIRST - 1))
+                else:
+                    got = fetch(eu)
+                used += 1
+                if got is None:
+                    break
+                if got.get('kind') in ('html', 'pdf') and (got.get('text') or '').strip():
+                    got = dict(got)
+                    got['role'] = role
+                    pages.append(got)
+                elif role == 'facts' and got.get('kind') == 'dead':
+                    continue
+        if kind in ('refused', 'resting', 'dead', 'script-built'):
+            read_blocks = False
+        fact = R.build_facts(ref, area, pota, parks, asked, pages, today, mates, own_is, own_why, read_blocks=read_blocks)
+        fact['page']['requests'] = used if main.get('skipped') != 'refused' else 0
+        fact['page']['kind'] = kind if kind != 'html' or not main.get('pdf') else 'pdf'
+        if main.get('kind') == 'pdf':
+            fact['page']['kind'] = 'pdf'
+        # a list page: nothing was read
+        if own_is == 'list':
+            fact['sizes'] = []
+            fact['inside_of'] = []
+            fact['location'] = R._blank_location()
+            fact['name']['best'] = None
+            fact['questions'] = R.questions_for(fact)
+        fact['questions'] = R.questions_for(fact)
+        drafts = R.evidence_drafts(fact)
+        fact['evidence_draft'] = drafts[0] if drafts else None
+        fact['evidence_drafts'] = drafts
+        out[area][ref] = fact
+        state['read'][ref] = {'url': url, 'fingerprint': main.get('fingerprint') or '', 'date': today,
+                              'kind': fact['page']['kind'], 'final': main.get('final')}
+        if main.get('fingerprint'):
+            state['fingerprints'][norm_url(url)] = main.get('fingerprint')
+        done += 1
+    state['left'] = []
+    state['stopped'] = ''
     if isinstance(getter, LiveGetter):
         state['hosts'] = getter.resting()
     return out, requests
@@ -476,48 +516,124 @@ def merge_unchanged(out_dir, facts_by_area):
                 parks[ref] = kept
 
 
-def cmd_read(args):
+def _refs_from_args(args):
+    refs = []
+    if getattr(args, 'refs', ''):
+        refs.extend(r.strip() for r in args.refs.split(',') if r.strip())
+    if getattr(args, 'refs_file', ''):
+        doc = load_json(args.refs_file, [])
+        if isinstance(doc, dict):
+            doc = doc.get('parks') or doc.get('refs') or []
+        for r in doc:
+            ref = r if isinstance(r, str) else (r.get('ref') if isinstance(r, dict) else '')
+            if isinstance(ref, str) and ref and ref not in refs:
+                refs.append(ref)
+    return refs
+
+
+def _prepare(args):
     areas, web, docs, truth = load_data(args.data)
+    today = args.today or datetime.date.today().isoformat()
+    state_path = args.state or (str(pathlib.Path(args.out) / 'state.json') if args.out else '')
+    state = load_json(state_path, {}) if state_path and pathlib.Path(state_path).is_file() else {}
+    areas_only = set(args.areas.split()) if args.areas else None
+    known = {ref for parks in areas.values() for ref in parks}
+    done_dir = str(pathlib.Path(args.out) / 'lists-done') if args.out else (args.lists_done or '')
+    lists = W.load_lists(args.lists, known, done_dir or args.lists_done)
+    keys = W.load_keys(args.links) if args.links else {}
+    refs = _refs_from_args(args)
+    ns_rows = []
+    if getattr(args, 'not_sure', ''):
+        ns_rows = NS.NotSure(args.not_sure).open_rows(wants=['page facts', 'official size', 'map'])
+
+    def choose(ref, row):
+        return choose_link(ref, row, web, docs)[0]
+
+    order = W.build_worklist(areas, choose, keys, lists, refs, state, today, areas_only=areas_only,
+                             refresh_days=args.refresh_days, not_sure=ns_rows)
+    return areas, web, docs, truth, state, state_path, today, areas_only, lists, order
+
+
+def _finish(args, facts, order, lists, state, state_path, today, requests, old_facts):
+    if not args.out:
+        return
+    root = pathlib.Path(args.out)
+    changes = []
+    for area, parks in facts.items():
+        for ref, fact in parks.items():
+            changes.extend(W.change_rows(ref, (old_facts.get(area) or {}).get(ref), fact, today))
+    merge_unchanged(args.out, facts)
+    write_facts(args.out, facts)
+    seen = {i['ref'] for i in order}
+    full = list(order) + [{'ref': ref, 'area': area, 'tier': 9, 'why': ''}
+                          for area, parks in facts.items() for ref in parks if ref not in seen]
+    W.write_tables(args.out, facts, full, lists, today)
+    W.append_changes(root / 'changes.csv', changes)
+    lines = W.render_summary(facts, order, state, today, requests)
+    (root / 'summary.md').write_text('\n'.join(lines) + '\n', encoding='utf-8')
+    save_json(root / 'worklist.json', {'date': today, 'order': order})
+    save_json(root / 'run.json', {'reader': R.READER, 'date': today, 'requests': requests,
+              'parks': sum(len(v) for v in facts.values()), 'left': len(state.get('left') or []),
+              'stopped': state.get('stopped') or ''})
+    if state_path:
+        save_json(state_path, state)
+    if getattr(args, 'not_sure', ''):
+        ns = NS.NotSure(args.not_sure)
+        NS.note_from_reader(ns, facts, today)
+        qsos = {}
+        root = load_data(args.data)[0] if args.data else {}
+        for parks in root.values():
+            for ref, row in parks.items():
+                qsos[ref] = row.get('qsos') or 0
+        ns.summary(today=today, qsos=qsos)
+
+
+def cmd_worklist(args):
+    areas, web, docs, truth, state, state_path, today, areas_only, lists, order = _prepare(args)
+    if args.out:
+        save_json(pathlib.Path(args.out) / 'worklist.json', {'date': today, 'order': order})
+    if not args.quiet:
+        print(f'Worklist: {len(order)} parks. Lists: {len(lists)}.')
+        for row in order[:20]:
+            print(f"{row['tier']} {row['ref']} {row['why']}")
+        if len(order) > 20:
+            print(f'... {len(order) - 20} more')
+    return 0
+
+
+def cmd_read(args):
+    areas, web, docs, truth, state, state_path, today, areas_only, lists, order = _prepare(args)
     if not areas:
         print('No stored parks. Nothing was read.')
         return 0
-    state = load_json(args.state, {}) if args.state and pathlib.Path(args.state).is_file() else {}
-    today = args.today or datetime.date.today().isoformat()
     if args.fixtures:
-        manifest = load_json(args.fixtures, {})
-        getter = FixtureGetter(manifest, pathlib.Path(args.fixtures).parent)
+        getter = FixtureGetter(load_json(args.fixtures, {}), pathlib.Path(args.fixtures).parent)
     elif os.environ.get('KPC_NO_NET') == '1':
         print('No fixtures and the network is closed. Nothing was read.')
         return 0
     else:
         getter = LiveGetter(state)
-    refs = None
-    if args.refs:
-        refs = [r.strip() for r in args.refs.split(',') if r.strip()]
-    if args.refs_file:
-        doc = load_json(args.refs_file, [])
-        if isinstance(doc, dict):
-            doc = doc.get('parks') or doc.get('refs') or []
-        refs = [r if isinstance(r, str) else r.get('ref') for r in doc]
-    areas_only = set(args.areas.split()) if args.areas else None
-    total = sum(len(v) for k, v in areas.items() if not areas_only or k in areas_only)
-    n = {'i': 0}
+    # A plain --refs still limits the read, in the worklist's order. With no worklist hits, read nothing new.
+    use_list = bool(args.lists or args.links or args.refs or args.refs_file or args.areas or getattr(args, 'not_sure', ''))
+    refs = [row['ref'] for row in order] if use_list else None
+    if refs is not None and not refs:
+        if not args.quiet:
+            print('The worklist is empty. Nothing was read.')
+        if args.out:
+            _finish(args, {}, order, lists, state, state_path, today, 0, {})
+        return 0
+    total = len(refs) if refs is not None else sum(len(v) for k, v in areas.items() if not areas_only or k in areas_only)
+    old_facts = W.load_facts(args.out) if args.out else {}
 
     def on_park(i, ref):
-        n['i'] = i
         if not args.quiet:
             print(f'Reading {i} of {total} parks ({ref}).')
 
+    deadline = time.time() + args.max_minutes * 60 if args.max_minutes else None
     facts, reqs = read_parks(areas, web, docs, truth, getter, state, today, refs=refs, areas_only=areas_only,
                              max_requests=args.max_requests, max_per_park=args.max_per_park, max_parks=args.max_parks,
-                             on_park=None if args.quiet else on_park)
-    if args.out:
-        merge_unchanged(args.out, facts)
-        write_facts(args.out, facts)
-        save_json(pathlib.Path(args.out) / 'run.json', {'reader': R.READER, 'date': today, 'requests': reqs,
-                  'parks': sum(len(v) for v in facts.values())})
-    if args.state:
-        save_json(args.state, state)
+                             on_park=None if args.quiet else on_park, refresh_days=args.refresh_days, deadline=deadline)
+    _finish(args, facts, order, lists, state, state_path, today, reqs, old_facts)
     if os.environ.get('BROWSER') == '1' and args.out and isinstance(getter, LiveGetter):
         from kpc_manners import browser_picture
         pic = pathlib.Path(args.out) / 'pictures'
@@ -531,7 +647,24 @@ def cmd_read(args):
                 if url:
                     browser_picture(url, getter.M, str(pic / f'{ref}.jpg'))
     if not args.quiet:
-        print(f'Done. {reqs} request(s). Facts are in {args.out or "(not saved)"}.')
+        left = len(state.get('left') or [])
+        print(f'Done. {reqs} request(s). {left} parks are left. The next run continues. Facts are in {args.out or "(not saved)"}.')
+    return 0
+
+
+def cmd_report(args):
+    if not args.out:
+        print('A report needs --out, the folder a run already wrote.')
+        return 0
+    facts = W.load_facts(args.out)
+    today = args.today or datetime.date.today().isoformat()
+    order = (load_json(pathlib.Path(args.out) / 'worklist.json', {}) or {}).get('order') or []
+    state = load_json(pathlib.Path(args.out) / 'state.json', {})
+    run = load_json(pathlib.Path(args.out) / 'run.json', {})
+    lines = W.render_summary(facts, order, state, today, run.get('requests') or 0)
+    pathlib.Path(args.out, 'summary.md').write_text('\n'.join(lines) + '\n', encoding='utf-8')
+    if not args.quiet:
+        print('\n'.join(lines))
     return 0
 
 
@@ -625,6 +758,26 @@ def selftest():
         facts2, reqs2 = read_parks(areas, web, docs, truth, getter2, state, '2026-11-20', refs=['US-9'])
         check('a refused host is not asked the next day', reqs2 == 0 and getter2.calls == [])
 
+    # worklist: list drop first, then approximate, then pin with a page, then never-read by qsos, then old
+    areas = {'US-UT': {
+        'US-A': {'name': 'A', 'website': 'https://www.nps.gov/a', 'type': 'National Park', 'qsos': 1, 'lat': 37, 'lon': -113},
+        'US-B': {'name': 'B', 'website': 'https://www.nps.gov/b', 'type': 'National Park', 'qsos': 9, 'lat': 37, 'lon': -113},
+        'US-C': {'name': 'C', 'website': '', 'type': 'State Park', 'qsos': 50, 'lat': 37, 'lon': -113},
+        'US-D': {'name': 'D', 'website': 'https://www.nps.gov/d', 'type': 'National Park', 'qsos': 3, 'lat': 37, 'lon': -113},
+        'US-E': {'name': 'E', 'website': 'https://www.nps.gov/e', 'type': 'National Park', 'qsos': 80, 'lat': 37, 'lon': -113},
+    }}
+    keys = {'US-A': {'g': 'approximate', 'c': []}, 'US-B': {'g': 'pin', 'c': []}, 'US-D': {'g': 'official', 'c': []}}
+    lists = [{'name': 'keeper-2026-11-19.json', 'made_by': 'keeper', 'date': '2026-11-19', 'why': 'two records',
+              'done': False, 'parks': [{'ref': 'US-D', 'why': 'name matches two records', 'want': ['sizes']}]}]
+    state = {'read': {'US-E': {'date': '2026-10-01', 'url': 'https://www.nps.gov/e', 'fingerprint': 'abc'}}}
+    order = W.build_worklist(areas, lambda ref, row: row.get('website') or '', keys, lists, ['US-C'], state, '2026-11-19')
+    check('worklist order is list, refs file, approximate, pin, never read, then old',
+          [r['ref'] for r in order] == ['US-D', 'US-C', 'US-A', 'US-B', 'US-E'] and [r['tier'] for r in order] == [1, 1, 2, 3, 5])
+    lines = W.render_summary({'US-UT': {'US-D': {'ref': 'US-D', 'unchanged': False, 'page': {'kind': 'html'},
+                                                 'questions': [{'code': 'COMBINED_UNIT', 'plain': 'The page calls this one.'}]}}},
+                             order, {'refused': {}, 'left': ['US-E'], 'stopped': ''}, '2026-11-19', 4)
+    check('the summary fits on one phone screen', 1 <= len(lines) <= 40 and any('US-D' in ln for ln in lines))
+
     print('SELFTEST PASS' if ok else 'SELFTEST FAIL')
     return 0 if ok else 1
 
@@ -641,8 +794,14 @@ def main(argv=None):
     p.add_argument('--refs-file', default='')
     p.add_argument('--today', default='')
     p.add_argument('--max-requests', type=int, default=1500)
+    p.add_argument('--max-minutes', type=int, default=50)
     p.add_argument('--max-per-park', type=int, default=R.MAX_PER_PARK)
     p.add_argument('--max-parks', type=int, default=None)
+    p.add_argument('--refresh-days', type=int, default=W.REFRESH_DAYS)
+    p.add_argument('--links', default='')
+    p.add_argument('--lists', default='')
+    p.add_argument('--lists-done', default='')
+    p.add_argument('--not-sure', default='')
     p.add_argument('--quiet', action='store_true')
     p.add_argument('--selftest', action='store_true')
     args = p.parse_args(argv)
@@ -650,7 +809,11 @@ def main(argv=None):
         return selftest()
     if args.command == 'read':
         return cmd_read(args)
-    if args.command in ('worklist', 'report', 'person-page', 'intake', 'kits', 'pc-kit', 'score'):
+    if args.command == 'worklist':
+        return cmd_worklist(args)
+    if args.command == 'report':
+        return cmd_report(args)
+    if args.command in ('person-page', 'intake', 'kits', 'pc-kit', 'score'):
         return cmd_later(args.command)
     p.print_help()
     return 2

@@ -36,7 +36,82 @@ Read stored parks into a folder. With `--fixtures` the pages come from a manifes
 python3 .github/scripts/kpc_park_pages.py read --data data --out park-pages --state park-pages/state.json --areas "US-UT"
 ```
 
-`worklist`, `report`, `person-page`, `intake`, `kits`, and `pc-kit` are later parts. Until those parts land, each of them prints one line and changes nothing.
+Worklist and report:
+
+```
+python3 .github/scripts/kpc_park_pages.py worklist --data data --links /path/to/KPC-Links --lists lists/ --not-sure not-sure --out park-pages
+python3 .github/scripts/kpc_park_pages.py read --data data --out park-pages --lists lists/ --not-sure not-sure --fixtures tests/fixtures/park-pages/manifest.json
+python3 .github/scripts/kpc_park_pages.py report --out park-pages
+```
+
+`person-page`, `intake`, `kits`, and `pc-kit` are later parts. Until those parts land, each of them prints one line and changes nothing.
+
+The by-hand workflow is `.github/workflows/kpc-park-pages.yml`. It starts only when someone runs it. The schedule line is written and commented out. The read job holds no token. The save job is the only one that can write. It checks out `main` and copies the folder onto `tools-out`. It does not run this reader.
+
+## List drops
+
+Any club tool may leave a JSON file in `park-pages/lists/` on the `intake-files` branch. The reader takes those parks first, after the not-sure rows. Unknown keys are ignored. A park number must exist. A file with more than 5,000 rows is skipped. A list that already has an answer for every park is not read again.
+
+```json
+{
+  "made_by": "keeper",
+  "date": "2026-11-19",
+  "why": "the name matches two records",
+  "parks": [
+    {"ref": "US-6063", "why": "name matches two records", "want": ["inside_of", "sizes"]}
+  ]
+}
+```
+
+## The not-sure list
+
+The shared list is `kpc_not_sure.py`. It lives on `tools-out` under `not-sure/`, one file per area. This reader does not push that branch. The save job copies the folder there when the club runs the workflow.
+
+One row is one park and one doubt:
+
+```json
+{
+  "ref": "US-6063",
+  "area": "US-UT",
+  "name": "Red Cliffs BLM Recreation Management Area",
+  "code": "INSIDE_BIGGER_UNIT",
+  "how_sure": "unsure",
+  "shows_now": "html",
+  "why": "The page says this place is within 'Red Cliffs National Conservation Area'.",
+  "wants": ["page facts"],
+  "found_by": "park page reader",
+  "first_seen": "2026-11-19",
+  "last_seen": "2026-11-19",
+  "evidence": {"source": "https://www.blm.gov/visit/red-cliffs-recreation-area", "saw": "within the Red Cliffs National Conservation Area", "date": "2026-11-19"},
+  "tried": [],
+  "status": "open",
+  "settled": {"by": "", "date": "", "how": "", "link": ""}
+}
+```
+
+A second example, a group rather than one park. No bot works a class row:
+
+```json
+{
+  "ref": "(class)",
+  "area": "US",
+  "name": "every outline that did not change in this release",
+  "code": "NOT_SAMPLED",
+  "how_sure": "unchecked",
+  "shows_now": "outline",
+  "why": "only changes were checked; the 1-in-100 bar needs a random sample",
+  "wants": ["random sample"],
+  "found_by": "release call",
+  "first_seen": "2026-11-19",
+  "last_seen": "2026-11-19",
+  "evidence": {"source": "", "saw": "", "date": ""},
+  "tried": [],
+  "status": "open",
+  "settled": {"by": "", "date": "", "how": "", "link": ""}
+}
+```
+
+`how_sure` is one of: wrong likely, unsure, incomplete, unchecked, fairly sure. `status` is one of: open, parked, settled, gone. `wants` uses only: page facts, official size, map, official layer, far-join evidence, a person, the owner, random sample. Codes are the ones in `not-sure/README.md`. The page reader may add a row and a tried note. It does not settle a row.
 
 ## How to read the output
 
