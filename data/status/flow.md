@@ -1,4 +1,4 @@
-# Flow board (2026-11-19 09:31Z, kpc_flow.py)
+# Flow board (2026-11-19 16:33Z, kpc_flow.py)
 Every pile of work, who it waits on and when it last moved. STUCK = work in it and no move for 2+ days. Fix the STUCK ones first.
 
 ## STUCK (36)
