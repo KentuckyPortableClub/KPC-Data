@@ -1,77 +1,77 @@
-# Spot check: all kinds (20 random rows of 15016)
+# Spot check: all kinds (20 random rows of 15070)
 
 For chat 11: open each link and say YES / NO. The engine decides nothing.
 
-## US-11700 Wolsfeld Woods SNA State Sanctuary (US-MN)
-- status: candidate
-- tier: T-6
-- band: WEAK
-- record_name: Wolsfeld Woods
-- url: https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0?f=html
-- record_link: https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D4431&outFields=%2A&f=html
-- source_url: https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?geometry=-93.5741%2C44.9997&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 25
-- why: same land also in PACK-US-MN-preserve-278 'Wolsfeld Woods': merged, counted once; record 'Wolsfeld Woods' (PACK-US-MN-forest-27); pin 25 m from the edge; about 221.5 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: weak
-- answer: 
-
-## US-13241 Lake Mead Fish Hatchery State Fish Hatchery (US-NV)
-- status: candidate
-- tier: T-6
-- band: WEAK
-- record_name: Lake Mead National Recreation Area
-- url: https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORP_Recreation_Areas/FeatureServer/0?f=html
-- record_link: https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORP_Recreation_Areas/FeatureServer/0/query?geometry=-114.808%2C36.0696&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- source_url: https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORP_Recreation_Areas/FeatureServer/0/query?geometry=-114.808%2C36.0696&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 0
-- why: record 'Lake Mead National Recreation Area' (PACK-US-NV-land-305); pin inside; about 563050.1 acres; Rule G: LIKELY (names overlap); size unknown; confidence: weak
-- answer: 
-
-## US-12938 Laurel Industrial Forest Land State Wildlife Area (US-DE)
-- status: candidate
-- tier: T-4
-- band: WEAK
-- record_name: Industrial Forest Lands - Laurel Complex
-- url: https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17?f=html
-- record_link: https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17/query?where=OBJECTID%3D69&outFields=%2A&f=html
-- source_url: https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17/query?geometry=-75.5079%2C38.4617&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 0
-- why: same land also in PACK-US-DE-land-236 'Industrial Forest Lands', PACK-US-DE-land-240 'Industrial Forest Lands': merged, counted once; record 'Industrial Forest Lands - Laurel Complex' (PACK-US-DE-wildlife-238); pin inside; about 359.2 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: weak
-- answer: 
-
-## US-11699 Savage FEN SNA State Sanctuary (US-MN)
-- status: candidate
-- tier: T-6
-- band: WEAK
-- record_name: Savage Fen
-- url: https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0?f=html
-- record_link: https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D4419&outFields=%2A&f=html
-- source_url: https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?geometry=-93.3726%2C44.7718&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 6
-- why: same land also in PACK-US-MN-preserve-278 'Savage Fen': merged, counted once; record 'Savage Fen' (PACK-US-MN-forest-27); pin 6 m from the edge; about 289.9 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: weak
-- answer: 
-
-## US-12988 North Nehalem State Fish Hatchery (US-OR)
-- status: candidate
-- tier: T-4
-- band: WEAK
-- record_name: North Fork Nehalem Park
-- url: https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0?f=html
-- record_link: https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0/query?where=OBJECTID%3D2418&outFields=%2A&f=html
-- source_url: https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0/query?geometry=-123.772%2C45.8123&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 0
-- why: record 'North Fork Nehalem Park' (PACK-US-OR-park-322); pin inside; about 2.8 acres; Rule G: LIKELY (names overlap); size unknown; confidence: weak
-- answer: 
-
-## CA-4814 Monument-Lefebvre National Historic Site (CA-NB)
+## US-6035 Zion NPS Wilderness Area (US-UT)
 - status: candidate
 - tier: T-3
 - band: WEAK
-- record_name: Monument-Lefebvre NHS - PID 00823161
-- url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4?f=html
-- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D3978&outFields=%2A&f=html
-- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-64.567%2C45.9792&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 46
-- why: same land also in PACK-CA-NB-park-427 '': merged, counted once; record 'Monument-Lefebvre NHS - PID 00823161' (PACK-CA-NB-land-73); pin 46 m from the edge; about 0.9 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- record_name: ZION
+- url: https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/1?f=html
+- record_link: https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/1/query?where=OBJECTID%3D230143&outFields=%2A&f=html
+- source_url: https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/1/query?geometry=-113.203%2C37.434&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 0
+- why: same land also in US-NPS-boundary 'Zion National Park': merged, counted once; record 'ZION' (US-NPS-tracts); pin inside; about 32589.5 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- answer: 
+
+## CA-1708 Whitefish River Sandy Till Conservation Reserve (CA-ON)
+- status: candidate
+- tier: T-3
+- band: WEAK
+- record_name: WHITEFISH RIVER CONSERVATION RESERVE
+- url: https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/2?f=html
+- record_link: https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/2/query?where=OBJECTID%3D11233&outFields=%2A&f=html
+- source_url: https://ws.lioservices.lrc.gov.on.ca/arcgis1071a/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/2/query?geometry=-80.8927%2C48.0587&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 0
+- why: same land also in PACK-CA-ON-park-435 'WHITEFISH RIVER CONSERVATION RESERVE': merged, counted once; record 'WHITEFISH RIVER CONSERVATION RESERVE' (CA-ON-cr); pin inside; about 9467.8 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- answer: 
+
+## US-13650 Darwin S. Meyers Wildlife Management Area (US-MN)
+- status: found
+- tier: T-2
+- band: STRONG
+- record_name: Darwin S. Myers WMA
+- url: https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0?f=html
+- record_link: https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D5368&outFields=%2A&f=html
+- source_url: https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?geometry=-92.2233%2C47.6364&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 0
+- why: record 'Darwin S. Myers WMA' (PACK-US-MN-forest-27); pin inside; about 746.3 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
+- answer: 
+
+## CA-0515 Parc de la Chute-Montmorency Provincial Park (CA-QC)
+- status: candidate
+- tier: T-2
+- band: WEAK
+- record_name: Site patrimonial de la Chute-Montmorency
+- url: https://www.donneesquebec.ca/recherche/dataset/578d182d-4897-4c11-aa7f-ee0cfed222a0/resource/5abd7e57-bfeb-49ba-a76c-93d961ae0633/download/sites_classes_pg.geojson
+- record_link: https://www.donneesquebec.ca/recherche/dataset/578d182d-4897-4c11-aa7f-ee0cfed222a0/resource/5abd7e57-bfeb-49ba-a76c-93d961ae0633/download/sites_classes_pg.geojson
+- source_url: https://www.donneesquebec.ca/recherche/dataset/578d182d-4897-4c11-aa7f-ee0cfed222a0/resource/5abd7e57-bfeb-49ba-a76c-93d961ae0633/download/sites_classes_pg.geojson
+- pin_m: 0
+- why: record 'Site patrimonial de la Chute-Montmorency' (PACK-CA-QC-land-392); pin inside; about 355.9 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- answer: 
+
+## US-12147 Jensen Hills OHV Area BLM Recreation Management Area (US-UT)
+- status: candidate
+- tier: T-3
+- band: WEAK
+- record_name: Jensen Hills
+- url: https://gis.blm.gov/natl/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0?f=html
+- record_link: https://gis.blm.gov/natl/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0/query?where=OBJECTID%3D9912&outFields=%2A&f=html
+- source_url: https://gis.blm.gov/natl/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0/query?geometry=-109.393%2C40.4046&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 0
+- why: same land also in PACK-US-UT-park-8 'Jensen Hills', PACK-US-land-207 'Jensen Hills', PACK-US-land-208 'Jensen Hills': merged, counted once; record 'Jensen Hills' (PACK-US-UT-park-7); pin inside; about 930.2 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- answer: 
+
+## CA-4842 Marconi National Historic Site (CA-NS)
+- status: candidate
+- tier: T-3
+- band: WEAK
+- record_name: Marconi Wireless Station
+- url: https://novarocmaps.novascotia.ca/arcgis/rest/services/NovaRoc/MapServer/29?f=html
+- record_link: https://novarocmaps.novascotia.ca/arcgis/rest/services/NovaRoc/MapServer/29/query?where=OBJECTID%3D26&outFields=%2A&f=html
+- source_url: https://novarocmaps.novascotia.ca/arcgis/rest/services/NovaRoc/MapServer/29/query?geometry=-59.9528%2C46.211&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 8
+- why: record 'Marconi Wireless Station' (PACK-CA-NS-land-66); pin 8 m from the edge; about 4.1 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
 ## US-5573 Teanaway State Forest (US-WA)
@@ -98,52 +98,52 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: same land also in PACK-US-NV-land-305 'City of Sparks': merged, counted once; record 'City of Sparks' (PACK-US-NV-land-303); pin 2 m from the edge; about 3.0 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: likely
 - answer: 
 
-## US-13175 Copper Basin BLM Recreation Management Area (US-NV)
-- status: candidate
-- tier: T-3
-- band: WEAK
-- record_name: Copper Basin Community Recreation Area 
-- url: https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9?f=html
-- record_link: https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9/query?where=OBJECTID%3D10001&outFields=%2A&f=html
-- source_url: https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9/query?geometry=-116.988%2C40.6112&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+## CA-0831 Inuujarvik Territorial Park (CA-NU)
+- status: found
+- tier: T-2
+- band: STRONG
+- record_name: Inuujaarvik Territorial Park
+- url: https://services.aadnc-aandc.gc.ca/arcgis/rest/services/nms20/nms/MapServer/21?f=html
+- record_link: https://services.aadnc-aandc.gc.ca/arcgis/rest/services/nms20/nms/MapServer/21/query?where=OBJECTID%3D648&outFields=%2A&f=html
+- source_url: https://services.aadnc-aandc.gc.ca/arcgis/rest/services/nms20/nms/MapServer/21/query?geometry=-96.0506%2C64.317&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: same land also in PACK-US-land-208 'Copper Basin Community Recreation Area ', PACK-US-AK-land-214 'Copper Basin Community Recreation Area ', US-BLM-sma 'Bureau of Land Management': merged, counted once; record 'Copper Basin Community Recreation Area ' (PACK-US-land-207); pin inside; about 580.6 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- why: record 'Inuujaarvik Territorial Park' (PACK-CA-NU-park-389); pin inside; about 2.8 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
 - answer: 
 
-## US-8668 Waterloo Prairie State Natural Area (US-WI)
+## US-11956 Pine River State Fish and Wildlife Area (US-WI)
 - status: candidate
-- tier: T-3
+- tier: T-4
 - band: WEAK
-- record_name: Waterloo Prairie
-- url: https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/ER_DNR_NA_StateNaturalAreas_WTM/MapServer/2?f=html
-- record_link: https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/ER_DNR_NA_StateNaturalAreas_WTM/MapServer/2/query?where=OBJECTID%3D23634&outFields=%2A&f=html
-- source_url: https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/ER_DNR_NA_StateNaturalAreas_WTM/MapServer/2/query?geometry=-88.9401%2C43.163&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_name: Pine River System Fishery Area
+- url: https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0?f=html
+- record_link: https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0/query?where=OBJECTID%3D712693&outFields=%2A&f=html
+- source_url: https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0/query?geometry=-89.2269%2C44.2047&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: same land also in PACK-US-WI-preserve-372 'Waterloo Prairie': merged, counted once; record 'Waterloo Prairie' (PACK-US-WI-preserve-59); pin 0 m from the edge; about 220.8 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: likely
+- why: same land also in PACK-US-WI-land-373 'Pine River System Fishery Area': merged, counted once; record 'Pine River System Fishery Area' (PACK-US-WI-land-370); pin inside; about 2077.4 acres; Rule G: LIKELY (names overlap); size unknown; confidence: weak
 - answer: 
 
-## US-4168 Frances Slocum on Mississinewa Lake State Recreation Area (US-IN)
+## US-12016 Round Lake State Nature Preserve (US-IN)
 - status: candidate
-- tier: T-3
+- tier: T-2
 - band: WEAK
-- record_name: Mississinewa Lake
+- record_name: Round Lake Wetland Nature Preserve
 - url: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0?f=html
-- record_link: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?where=OBJECTID%3D4563&outFields=%2A&f=html
-- source_url: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?geometry=-85.923%2C40.7126&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_link: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?where=OBJECTID%3D5016&outFields=%2A&f=html
+- source_url: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?geometry=-86.6656%2C41.2362&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: same land also in PACK-US-IN-land-387 'Mississinewa Lake': merged, counted once; record 'Mississinewa Lake' (PACK-US-IN-land-191); pin inside; about 13068.9 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- why: record 'Round Lake Wetland Nature Preserve' (PACK-US-IN-land-191); pin inside; about 138.0 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
-## CA-1020 RécréoParc de Sainte-Catherine Regional Park (CA-QC)
-- status: candidate
-- tier: T-3
-- band: WEAK
-- record_name: Sainte-Catherine
+## CA-4891 Ardgowan National Historic Site (CA-PE)
+- status: found
+- tier: T-2
+- band: STRONG
+- record_name: Lieu historique national Ardgowan
 - url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4?f=html
-- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D1986&outFields=%2A&f=html
-- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-73.5755%2C45.4092&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D529&outFields=%2A&f=html
+- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-63.1275%2C46.2521&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: record 'Sainte-Catherine' (PACK-CA-NB-land-73); pin inside; about 4395.3 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- why: record 'Lieu historique national Ardgowan' (Q-1781); pin inside; about 3.7 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
 - answer: 
 
 ## US-13275 Pioneer Memorial Park State Historical Monument (US-NV)
@@ -170,28 +170,28 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: record 'Lower Goose Creek Reservoir' (PACK-US-ID-land-258); pin inside; about 1006.6 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
-## CA-5663 Hepworth Management Area (CA-ON)
-- status: candidate
-- tier: T-3
-- band: WEAK
-- record_name: Hepworth
-- url: https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3?f=html
-- record_link: https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3/query?where=OBJECTID%3D1056&outFields=%2A&f=html
-- source_url: https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3/query?geometry=-81.1159%2C44.6283&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 19
-- why: same land also in CA-ON-ca-admin 'Grey Sauble Conservation Authority': merged, counted once; record 'Hepworth' (PACK-CA-ON-land-405); pin 19 m from the edge; about 93.6 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: likely
+## CA-6251 Grand Parade National Heritage Site (CA-NS)
+- status: found
+- tier: T-2
+- band: STRONG
+- record_name: GRAND PARADE
+- url: https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/HRM_Parks_2/FeatureServer/0?f=html
+- record_link: https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/HRM_Parks_2/FeatureServer/0/query?where=OBJECTID%3D88&outFields=%2A&f=html
+- source_url: https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/HRM_Parks_2/FeatureServer/0/query?geometry=-63.575%2C44.6482&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 0
+- why: record 'GRAND PARADE' (PACK-CA-NS-park-82); pin inside; about 1.8 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
 - answer: 
 
-## US-11793 Revis Spring Hill Prairie State Nature Preserve (US-IL)
+## US-8550 Missouri-Yellowstone Confluence Interpretive Center State Historic Site (US-ND)
 - status: candidate
 - tier: T-3
 - band: WEAK
-- record_name: Revis Hill Prairie
-- url: https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11?f=html
-- record_link: https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11/query?where=OBJECTID%3D215&outFields=%2A&f=html
-- source_url: https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11/query?geometry=-89.8533%2C40.1524&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_name: SW of Williston at confluence of Yellowstone and Missouri Rivers
+- url: https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1?f=html
+- record_link: https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?where=OBJECTID%3D400132&outFields=%2A&f=html
+- source_url: https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?geometry=-103.989%2C47.9851&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: record 'Revis Hill Prairie' (PACK-US-IL-wildlife-14); pin inside; about 421.4 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
+- why: record 'SW of Williston at confluence of Yellowstone and Missouri Rivers' (PACK-US-AK-land-41); pin inside; about 636.1 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
 ## CA-4960 Parc Michel-Chartrand Regional Park (CA-QC)
@@ -218,27 +218,27 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: same land also in US-FWS-approved 'BEAR RIVER WATERSHED CONSERVATION AREA', US-FWS-approved 'BEAR RIVER WATERSHED CONSERVATION AREA': merged, counted once; record 'Daniels Reservoir' (PACK-US-ID-land-258); pin inside; about 361.6 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
-## US-0512 John Heinz National Wildlife Refuge (US-PA)
-- status: candidate
-- tier: T-2
-- band: WEAK
-- record_name: JOHN HEINZ NATIONAL WILDLIFE REFUGE AT TINICUM
-- url: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0?f=html
-- record_link: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?where=OBJECTID%3D425&outFields=%2A&f=html
-- source_url: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?geometry=-75.2575%2C39.8929&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 0
-- why: record 'JOHN HEINZ NATIONAL WILDLIFE REFUGE AT TINICUM' (US-FWS-interest); pin inside; about 1010.1 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
-- answer: 
-
-## US-13395 County Line State Recreation Site (US-WA)
+## US-0329 Silvio O Conte National Wildlife Refuge (US-MA)
 - status: found
 - tier: T-2
 - band: STRONG
-- record_name: County Line
-- url: https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0?f=html
-- record_link: https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0/query?geometry=-122.255%2C45.618&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- source_url: https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0/query?geometry=-122.255%2C45.618&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_name: SILVIO O. CONTE NATIONAL FISH AND WILDLIFE REFUGE
+- url: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0?f=html
+- record_link: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?where=OBJECTID%3D675&outFields=%2A&f=html
+- source_url: https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?geometry=-71.7018%2C44.7678&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: record 'County Line' (PACK-US-WA-wildlife-364); pin inside; about 5.0 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
+- why: record 'SILVIO O. CONTE NATIONAL FISH AND WILDLIFE REFUGE' (US-FWS-interest); pin inside; about 26815.6 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
+- answer: 
+
+## US-4182 Trine at Pokagon State Recreation Area (US-IN)
+- status: candidate
+- tier: T-3
+- band: WEAK
+- record_name: Trine State Recreation Area
+- url: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0?f=html
+- record_link: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?where=OBJECTID%3D5390&outFields=%2A&f=html
+- source_url: https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?geometry=-84.9979%2C41.7082&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 0
+- why: same land also in PACK-US-IN-land-387 'Trine State Recreation Area': merged, counted once; record 'Trine State Recreation Area' (PACK-US-IN-land-191); pin inside; about 184.5 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
