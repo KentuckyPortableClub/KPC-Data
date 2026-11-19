@@ -6,3 +6,4 @@ and Texas rebuilt with 7e6a52dd. Same recipe and inputs as step 1.
 Two "old" keys: step1-vs-new = the step-1 key (#270 at 1a64bb63: this change alone); published-vs-new = the published key.
 LIMIT: no shapely in this box: size flags / size witness of the new side not usable (see ../opus-step1-q1/README.md).
 Round 3 (19 Nov 1 AM): Fable's round-2 fix on #270 (keep-last-good never brings an approximate row back); OR, UT, WY rebuilt; files above replaced.
+Round 4 (19 Nov, Fable's last look): rule (b) taken out; AR, MT, WA rebuilt with e44a1ad7; files above replaced.
