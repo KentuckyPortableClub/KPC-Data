@@ -1002,6 +1002,15 @@
    "Notes": "computed from the official outline polygon (approx); layer https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2; read 2026-11-05"
   },
   {
+   "Park number (if matched)": "US-10695",
+   "Park name (as the agency writes it)": "Coffeepot Lake",
+   "Size": 307,
+   "Unit": "acres",
+   "Agency": "Washington State Department of Natural Resources (Non-DNR Major Public Lands parcels; MANAGER field gives WDFW / State Parks) (land, state GIS table)",
+   "Source page": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1/query?where=OBJECTID%3D1505&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1; read 2026-11-19"
+  },
+  {
    "Park number (if matched)": "US-7893",
    "Park name (as the agency writes it)": "Augusta Canal National Heritage Area",
    "Size": 133,
@@ -2403,7 +2412,7 @@
    "Agency/area": "Washington State Department of Natural Resources (Non-DNR Major Public Lands parcels; MANAGER field gives WDFW / State Parks) (land, state GIS table)",
    "Kind": "GIS layer",
    "Example URL": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1",
-   "# times used": 1,
+   "# times used": 2,
    "Status": "OK",
    "Detail": "answered the engine (official outline layer)",
    "Retry?": "NO"
