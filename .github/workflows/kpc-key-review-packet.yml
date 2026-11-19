@@ -1,27 +1,39 @@
 name: KPC key review packet (by hand only)
-# Compares a KPC-Links pull request's key build with the shared starting point and writes one folder
-# on the tools-out branch: key-quality/review-packets/pr-<number>-<first 7 of the new commit>/.
-# Started by hand. No timer. It starts nothing else, posts nothing, and writes no other branch.
+# Two uses, both started by hand. No timer. It starts nothing else, posts nothing, and writes no other branch.
+# pr: compare a KPC-Links pull request's key build with the shared starting point. Folder
+#     key-quality/review-packets/pr-<number>-<first 7 of the new commit>/.
+# run: after a full US key run, compare that run with the published key. No builds. The new side is
+#     data/us-key at the published commit, with the key-held release file laid over the states the run held back.
+#     Folder key-quality/review-packets/run-<date>/.
 # A failed step is caught and the run stays green. The last step of every job reports those catches.
 on:
   workflow_dispatch:
     inputs:
+      mode:
+        description: 'pr compares one pull request and builds its states; run compares a full key run with the published key and does not build'
+        required: false
+        default: pr
+        type: choice
+        options:
+          - pr
+          - run
       pr:
-        description: 'KPC-Links pull request number'
-        required: true
+        description: 'KPC-Links pull request number; leave blank for a key run'
+        required: false
+        default: ''
         type: string
       head:
-        description: 'new commit (40 characters) that overrides the pull request head; leave blank to use the pull request'
+        description: 'new commit (40 characters). For a pull request this overrides the head. For a key run this overrides the published key; leave blank to use the default branch'
         required: false
         default: ''
         type: string
       base:
-        description: 'old commit (40 characters) that overrides the shared starting point; leave blank to use the merge base with the pull request base branch'
+        description: 'old commit (40 characters). For a pull request this overrides the shared starting point. For a key run this is the published key the run is compared with, and it is required'
         required: false
         default: ''
         type: string
       states:
-        description: 'states to build, for example AK ID; leave blank to use the new scope entries'
+        description: 'states, for example AK ID; leave blank to use the new scope entries, or every state on a key run'
         required: false
         default: ''
         type: string
@@ -37,6 +49,7 @@ jobs:
     timeout-minutes: 20
     outputs:
       go: ${{ steps.out.outputs.go }}
+      mode: ${{ steps.out.outputs.mode }}
       states: ${{ steps.out.outputs.states }}
       entries: ${{ steps.out.outputs.entries }}
       states_from: ${{ steps.out.outputs.states_from }}
@@ -65,16 +78,36 @@ jobs:
         if: steps.selftest.outcome == 'success'
         continue-on-error: true
         env:
+          MODE: ${{ inputs.mode }}
           PR_IN: ${{ inputs.pr }}
           HEAD_IN: ${{ inputs.head }}
           BASE_IN: ${{ inputs.base }}
           GH_TOKEN: ${{ github.token }}
         run: |
           warn() { echo "::warning title=${1}::${2}"; echo "$1 - $2" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          is_sha() { printf '%s' "$1" | grep -Eq '^[0-9a-fA-F]{40}$'; }
+          if [ "${MODE:-pr}" = run ]; then
+            is_sha "$BASE_IN" || { warn "Commit" "a key run needs the published key commit, 40 characters, in the old commit box"; exit 1; }
+            new="$HEAD_IN"
+            if [ -z "$new" ]; then
+              branch=$(gh api repos/KentuckyPortableClub/KPC-Links --jq .default_branch) || { warn "Commit" "the published key branch could not be read"; exit 1; }
+              case "$branch" in
+                *[!A-Za-z0-9._/-]*) warn "Commit" "the published key branch name is not a plain name"; exit 1;;
+              esac
+              enc=$(python3 -c 'import urllib.parse,sys; print(urllib.parse.quote(sys.argv[1], safe=""))' "$branch")
+              new=$(gh api "repos/KentuckyPortableClub/KPC-Links/commits/${enc}" --jq .sha) || { warn "Commit" "the published key commit could not be read"; exit 1; }
+            fi
+            is_sha "$new" || { warn "Commit" "the new commit is not a 40-character id"; exit 1; }
+            echo "new_sha=$new" >> "$GITHUB_OUTPUT"
+            echo "old_sha=$BASE_IN" >> "$GITHUB_OUTPUT"
+            echo "pr=" >> "$GITHUB_OUTPUT"
+            echo "New commit $new"
+            echo "Old commit $BASE_IN"
+            exit 0
+          fi
           case "$PR_IN" in
             ''|*[!0-9]*) warn "Pull request" "the pull request number is not a number"; exit 1;;
           esac
-          is_sha() { printf '%s' "$1" | grep -Eq '^[0-9a-fA-F]{40}$'; }
           pr_json=$(gh api "repos/KentuckyPortableClub/KPC-Links/pulls/${PR_IN}") || { warn "Pull request" "that pull request could not be read"; exit 1; }
           repo=$(printf '%s' "$pr_json" | python3 -c 'import json,sys; d=json.load(sys.stdin); r=(d.get("head") or {}).get("repo") or {}; print(r.get("full_name") or "")')
           if [ "$repo" != "KentuckyPortableClub/KPC-Links" ]; then warn "Pull request" "that pull request is not from KentuckyPortableClub/KPC-Links"; exit 1; fi
@@ -127,12 +160,20 @@ jobs:
         if: steps.ids.outcome == 'success'
         continue-on-error: true
         env:
+          MODE: ${{ inputs.mode }}
           STATES_IN: ${{ inputs.states }}
           OLD_SHA: ${{ steps.ids.outputs.old_sha }}
           NEW_SHA: ${{ steps.ids.outputs.new_sha }}
           GH_TOKEN: ${{ github.token }}
         run: |
           warn() { echo "::warning title=${1}::${2}"; echo "$1 - $2" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          if [ "${MODE:-pr}" = run ]; then
+            gh api "repos/KentuckyPortableClub/KPC-Links/contents/data/us-key?ref=${NEW_SHA}" --jq '.[].name' > "$RUNNER_TEMP/key-names.txt" || { warn "States" "the key folder could not be listed"; exit 1; }
+            python3 kpcdata/.github/scripts/kpc_key_review_packet.py states --names "$RUNNER_TEMP/key-names.txt" --states "$STATES_IN" --json-out "$RUNNER_TEMP/scope.json"
+            rc=$?
+            if [ "$rc" != 0 ] && [ "$rc" != 2 ]; then warn "States" "the state list could not be read"; exit 1; fi
+            exit 0
+          fi
           grab() {
             dest="$1"; tree="$2"; sha="$3"
             if [ -s "$tree/.github/us-key-rule-scope.json" ]; then cp "$tree/.github/us-key-rule-scope.json" "$dest"; return 0; fi
@@ -149,6 +190,7 @@ jobs:
         if: always()
         continue-on-error: true
         env:
+          MODE: ${{ inputs.mode }}
           NEW_SHA: ${{ steps.ids.outputs.new_sha }}
           OLD_SHA: ${{ steps.ids.outputs.old_sha }}
           PRN: ${{ steps.ids.outputs.pr }}
@@ -156,6 +198,8 @@ jobs:
           python3 - <<'PY'
           import datetime, json, os, pathlib
           rt = pathlib.Path(os.environ.get('RUNNER_TEMP') or '/tmp')
+          mode = os.environ.get('MODE') or 'pr'
+          if mode not in ('pr', 'run'): mode = 'pr'
           go, states, entries, states_from, message, notes = 'no', '[]', '[]', '', '', []
           scope = rt / 'scope.json'
           if scope.is_file():
@@ -168,18 +212,23 @@ jobs:
               message = d.get('message') or ''
               notes = d.get('notes') or []
           new, old, pr = (os.environ.get(k) or '' for k in ('NEW_SHA', 'OLD_SHA', 'PRN'))
-          if go == 'yes' and (len(new) != 40 or len(old) != 40 or not pr.isdigit()):
+          if go == 'yes' and (len(new) != 40 or len(old) != 40):
               go = 'no'
               message = message or 'the two commits were not both read'
+          if go == 'yes' and mode != 'run' and not str(pr).isdigit():
+              go = 'no'
+              message = message or 'the pull request number was not read'
           build_date = datetime.datetime.now(datetime.timezone.utc).date().isoformat()
-          lines = [f'go={go}', f'new_sha={new}', f'old_sha={old}', f'pr={pr}', f'states_from={states_from}', f'build_date={build_date}']
+          lines = [f'go={go}', f'mode={mode}', f'new_sha={new}', f'old_sha={old}', f'pr={pr}', f'states_from={states_from}', f'build_date={build_date}']
           for name, value in (('states', states), ('entries', entries)):
               lines += [f'{name}<<EOF', value, 'EOF']
           with open(os.environ['GITHUB_OUTPUT'], 'a', encoding='utf-8') as fh:
               fh.write('\n'.join(lines) + '\n')
           text = message
           if notes: text = (text + '\n' if text else '') + '\n'.join(notes)
-          if go == 'yes': text = (text + '\n' if text else '') + 'States to build: ' + ' '.join(json.loads(states))
+          if go == 'yes':
+              label = 'States to compare: ' if mode == 'run' else 'States to build: '
+              text = (text + '\n' if text else '') + label + ' '.join(json.loads(states))
           summary = os.environ.get('GITHUB_STEP_SUMMARY')
           if summary and text: open(summary, 'a', encoding='utf-8').write(text + '\n')
           if message: print(message)
@@ -217,7 +266,7 @@ jobs:
 
   build:
     needs: scope
-    if: needs.scope.outputs.go == 'yes'
+    if: needs.scope.outputs.go == 'yes' && needs.scope.outputs.mode != 'run'
     runs-on: ubuntu-latest
     timeout-minutes: 140
     strategy:
@@ -418,6 +467,7 @@ jobs:
           python-version: '3.12'
       - name: Gather the state builds
         id: gather
+        if: needs.scope.outputs.mode != 'run'
         continue-on-error: true
         uses: actions/download-artifact@v4
         with:
@@ -428,17 +478,24 @@ jobs:
         id: inputs
         continue-on-error: true
         env:
+          MODE: ${{ needs.scope.outputs.mode }}
           GH_TOKEN: ${{ github.token }}
         run: |
           warn() { echo "::warning title=${1}::${2}"; echo "$1 - $2" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           mkdir -p "$GITHUB_WORKSPACE/work/shapes"
           gh release download boundary-cache -R KentuckyPortableClub/KPC-Links -p 'US-*.json.gz' -p 'hand-US-*' -D "$GITHUB_WORKSPACE/work/shapes" || warn "Shapes" "the saved shapes could not be downloaded"
           gh api repos/KentuckyPortableClub/KPC-Links/releases/tags/boundary-cache --jq '[.assets[] | {name,created_at,size}]' > "$GITHUB_WORKSPACE/work/assets.json" || warn "Shapes" "the shape dates could not be read"
+          if [ "${MODE:-pr}" = run ]; then
+            mkdir -p "$GITHUB_WORKSPACE/work/held"
+            gh release download key-held -R KentuckyPortableClub/KPC-Links -p 'key-held.tar.gz' -D "$GITHUB_WORKSPACE/work/held" || warn "Held key" "the held key could not be downloaded"
+            gh api repos/KentuckyPortableClub/KPC-Links/releases/tags/key-held --jq '{tag:.tag_name, assets:[.assets[] | {name,created_at,size}]}' > "$GITHUB_WORKSPACE/work/held-release.json" || warn "Held key" "the held key date could not be read"
+          fi
           git -C "$GITHUB_WORKSPACE/kpcdata" fetch -q --depth 1 origin "+refs/heads/tools-out:refs/remotes/origin/tools-out" || warn "Gold file" "the tools-out branch could not be read"
           git -C "$GITHUB_WORKSPACE/kpcdata" show "origin/tools-out:key-quality/gold-us.json" > "$GITHUB_WORKSPACE/work/gold-us.json" || warn "Gold file" "the gold file could not be read"
           python3 -m pip install -q shapely || warn "Shapely" "shapely did not install; the fact check still runs"
       - name: Fact check, gold score, and the packet
         id: packet
+        if: needs.scope.outputs.mode != 'run'
         continue-on-error: true
         env:
           STATES_JSON: ${{ needs.scope.outputs.states }}
@@ -504,6 +561,77 @@ jobs:
             --meta "$WORK/meta.json" --assets "$WORK/assets.json" \
             || { warn "Packet" "the packet was not written"; exit 1; }
           if [ -s "$WORK/packet/summary.md" ]; then cat "$WORK/packet/summary.md" >> "$GITHUB_STEP_SUMMARY"; fi
+      - name: Compare the key run, no build
+        id: runmode
+        if: needs.scope.outputs.mode == 'run'
+        continue-on-error: true
+        env:
+          STATES_JSON: ${{ needs.scope.outputs.states }}
+          STATES_FROM: ${{ needs.scope.outputs.states_from }}
+          HEAD: ${{ needs.scope.outputs.new_sha }}
+          OLD: ${{ needs.scope.outputs.old_sha }}
+          BUILD_DATE: ${{ needs.scope.outputs.build_date }}
+        run: |
+          warn() { echo "::warning title=${1}::${2}"; echo "$1 - $2" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          WORK="$GITHUB_WORKSPACE/work"
+          mkdir -p "$WORK/old-keys" "$WORK/new-keys" "$WORK/fc-old" "$WORK/fc-new" "$WORK/gold-old" "$WORK/gold-new" "$WORK/packet"
+          if [ -d "$GITHUB_WORKSPACE/old/data/us-key" ]; then cp -a "$GITHUB_WORKSPACE/old/data/us-key/." "$WORK/old-keys/"; else warn "Keys" "the old key folder was not checked out"; fi
+          if [ -d "$GITHUB_WORKSPACE/new/data/us-key" ]; then cp -a "$GITHUB_WORKSPACE/new/data/us-key/." "$WORK/new-keys/"; else warn "Keys" "the new key folder was not checked out"; fi
+          if [ -s "$WORK/held/key-held.tar.gz" ]; then
+            tar -xzf "$WORK/held/key-held.tar.gz" -C "$WORK/new-keys" || warn "Held key" "the held key could not be laid over the published key"
+          else
+            warn "Held key" "the key-held file was not downloaded, so the new side is the published key only"
+          fi
+          states_text=$(python3 -c 'import json,os; print(" ".join(json.loads(os.environ.get("STATES_JSON") or "[]")))')
+          python3 - <<'PY'
+          import json, os, pathlib, subprocess
+          work = pathlib.Path(os.environ['GITHUB_WORKSPACE']) / 'work'
+          held = {}
+          rel = work / 'held-release.json'
+          if rel.is_file():
+              try: doc = json.loads(rel.read_text(encoding='utf-8'))
+              except ValueError: doc = {}
+              for item in doc.get('assets') or []:
+                  if item.get('name') == 'key-held.tar.gz':
+                      held = {'tag': doc.get('tag') or 'key-held', 'name': 'key-held.tar.gz', 'created_at': item.get('created_at') or '', 'size': item.get('size')}
+          meta = {'mode': 'run', 'head': os.environ.get('HEAD') or '', 'old': os.environ.get('OLD') or '',
+                  'build_date': os.environ.get('BUILD_DATE') or '', 'states_from': os.environ.get('STATES_FROM') or '', 'key_held': held}
+          def git(*args):
+              r = subprocess.run(['git', '-C', os.environ['GITHUB_WORKSPACE'] + '/kpcdata', *args], capture_output=True, text=True)
+              return r.stdout.strip() if r.returncode == 0 else ''
+          meta['data_commit'] = git('rev-parse', 'HEAD')
+          (work / 'meta.json').write_text(json.dumps(meta, indent=1) + '\n', encoding='utf-8')
+          PY
+          # The comparison is written before the fact check, so a slow fact check cannot drop it.
+          python3 "$GITHUB_WORKSPACE/kpcdata/.github/scripts/kpc_key_review_packet.py" run \
+            --old "$WORK/old-keys" --new "$WORK/new-keys" --cache "$WORK/shapes" \
+            --parkinfo "$GITHUB_WORKSPACE/kpcdata/data/parkinfo" \
+            --out "$WORK/packet" --states "$states_text" \
+            --meta "$WORK/meta.json" --assets "$WORK/assets.json" \
+            || { warn "Packet" "the packet was not written"; exit 1; }
+          areas=""
+          for st in $states_text; do areas="$areas US-${st}"; done
+          fact_ok=no
+          if [ -n "$areas" ] && ls "$WORK/shapes"/US-*.json.gz >/dev/null 2>&1 && [ -f "$GITHUB_WORKSPACE/new/.github/scripts/kpc_key_factcheck.py" ]; then
+            timeout 45m env -u GH_TOKEN -u GITHUB_TOKEN python3 "$GITHUB_WORKSPACE/new/.github/scripts/kpc_key_factcheck.py" run --keys "$WORK/old-keys" --cache "$WORK/shapes" --parkinfo "$GITHUB_WORKSPACE/kpcdata/data/parkinfo" --truth "$GITHUB_WORKSPACE/kpcdata/data/truth" --areas "$areas" --out "$WORK/fc-old" || warn "Fact check" "the old fact check did not finish"
+            timeout 45m env -u GH_TOKEN -u GITHUB_TOKEN python3 "$GITHUB_WORKSPACE/new/.github/scripts/kpc_key_factcheck.py" run --keys "$WORK/new-keys" --cache "$WORK/shapes" --parkinfo "$GITHUB_WORKSPACE/kpcdata/data/parkinfo" --truth "$GITHUB_WORKSPACE/kpcdata/data/truth" --areas "$areas" --out "$WORK/fc-new" || warn "Fact check" "the new fact check did not finish"
+            if [ -s "$WORK/gold-us.json" ] && [ -f "$GITHUB_WORKSPACE/new/.github/scripts/kpc_key_grade.py" ]; then
+              timeout 20m env -u GH_TOKEN -u GITHUB_TOKEN python3 "$GITHUB_WORKSPACE/new/.github/scripts/kpc_key_grade.py" gold --gold "$WORK/gold-us.json" --keys "$WORK/old-keys" --cache "$WORK/shapes" --parkinfo "$GITHUB_WORKSPACE/kpcdata/data/parkinfo" --out "$WORK/gold-old" || warn "Gold score" "the old gold score did not finish"
+              timeout 20m env -u GH_TOKEN -u GITHUB_TOKEN python3 "$GITHUB_WORKSPACE/new/.github/scripts/kpc_key_grade.py" gold --gold "$WORK/gold-us.json" --keys "$WORK/new-keys" --cache "$WORK/shapes" --parkinfo "$GITHUB_WORKSPACE/kpcdata/data/parkinfo" --out "$WORK/gold-new" || warn "Gold score" "the new gold score did not finish"
+            fi
+            if [ -s "$WORK/fc-old/factcheck-summary.txt" ] || [ -s "$WORK/gold-old/gold-score.txt" ]; then fact_ok=yes; fi
+          fi
+          if [ "$fact_ok" = yes ]; then
+            python3 "$GITHUB_WORKSPACE/kpcdata/.github/scripts/kpc_key_review_packet.py" run \
+              --old "$WORK/old-keys" --new "$WORK/new-keys" --cache "$WORK/shapes" \
+              --parkinfo "$GITHUB_WORKSPACE/kpcdata/data/parkinfo" \
+              --out "$WORK/packet" --states "$states_text" \
+              --fact-old "$WORK/fc-old" --fact-new "$WORK/fc-new" \
+              --gold-old "$WORK/gold-old/gold-score.txt" --gold-new "$WORK/gold-new/gold-score.txt" \
+              --meta "$WORK/meta.json" --assets "$WORK/assets.json" \
+              || warn "Packet" "the packet could not be written again after the fact check"
+          fi
+          if [ -s "$WORK/packet/summary.md" ]; then cat "$WORK/packet/summary.md" >> "$GITHUB_STEP_SUMMARY"; fi
       - name: Keep the packet for the save
         if: always()
         continue-on-error: true
@@ -567,6 +695,7 @@ jobs:
         id: save
         continue-on-error: true
         env:
+          MODE: ${{ needs.scope.outputs.mode }}
           HEAD: ${{ needs.scope.outputs.new_sha }}
           PRN: ${{ needs.scope.outputs.pr }}
         run: |
@@ -577,8 +706,19 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           KPC_PUSH_RETRY="$PWD/.github/scripts/kpc_push_retry.sh"
           git fetch -q --depth 1 origin "+refs/heads/tools-out:refs/remotes/origin/tools-out" || { warn "Save" "the tools-out branch could not be read"; exit 1; }
-          short=$(printf '%s' "$HEAD" | cut -c1-7)
-          dest="key-quality/review-packets/pr-${PRN}-${short}"
+          if [ "${MODE:-pr}" = run ]; then
+            day=$(python3 -c 'import json,pathlib,sys; p=pathlib.Path(sys.argv[1]); d=json.loads(p.read_text(encoding="utf-8")) if p.is_file() else {}; print(d.get("run_date") or "")' "$GITHUB_WORKSPACE/packet/inputs.json")
+            case "$day" in
+              [0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]) ;;
+              *) day=$(date -u +%Y-%m-%d);;
+            esac
+            dest="key-quality/review-packets/run-${day}"
+            msg="key review packet for the US key run ${day}"
+          else
+            short=$(printf '%s' "$HEAD" | cut -c1-7)
+            dest="key-quality/review-packets/pr-${PRN}-${short}"
+            msg="key review packet for KPC-Links pull request ${PRN}"
+          fi
           git worktree add -q -B tools-out "$GITHUB_WORKSPACE/out" origin/tools-out || { warn "Save" "could not open the tools-out work tree"; exit 1; }
           mkdir -p "$GITHUB_WORKSPACE/out/${dest}"
           cp -a "$GITHUB_WORKSPACE/packet/." "$GITHUB_WORKSPACE/out/${dest}/"
@@ -587,7 +727,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "nothing new to save"
           else
-            git commit -qm "key review packet for KPC-Links pull request ${PRN}"
+            git commit -qm "$msg"
             bash "$KPC_PUSH_RETRY" tools-out 4 "key-quality/review-packets" || { warn "Save" "the packet was not saved to tools-out"; exit 1; }
           fi
           echo "packet folder: ${dest}"
