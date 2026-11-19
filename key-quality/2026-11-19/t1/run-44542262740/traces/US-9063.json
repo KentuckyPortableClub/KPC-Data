@@ -1,0 +1,169 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "ref": "US-9063",
+    "name": "Cross Lake Islands Wildlife Management Area",
+    "agency": "dec.ny.gov",
+    "grade": "approximate (picture map)",
+    "status": "DRAWN",
+    "source_type": "official",
+    "match_score": 0.0,
+    "decoy_score": 0.0,
+    "fit_m": 0.3,
+    "fit_loo_m": null,
+    "n_points": 0,
+    "method": "boundary by Lab k-means (cluster0 Lab=(209,111,156), filled, ~27 ac, contains the pin, 1 shape(s) in this colour); placed by GeoPDF (ISO 32000 /GPTS); Douglas-Peucker 3 m",
+    "model": "GeoPDF",
+    "source_url": "https://dec.ny.gov/sites/default/files/mapcrosslakeisl.pdf",
+    "page": 1,
+    "basemap_sources": [
+     "GeoPDF (ISO 32000 /GPTS)"
+    ],
+    "date": "2026-11-19",
+    "area_acres": 27.2,
+    "flags": [
+     "boundary colour chosen at the POTA pin (1 of 1 shapes in that colour are at the pin)",
+     "placed by the map's own coordinates (GeoPDF (ISO 32000 /GPTS)), no basemap matching"
+    ],
+    "use_for_2fer": false,
+    "official": false,
+    "control_points": [],
+    "tool": "kpc_trace_picture.py 0.3.0"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -76.459097,
+       43.1120667
+      ],
+      [
+       -76.4593553,
+       43.1124292
+      ],
+      [
+       -76.460282,
+       43.1128106
+      ],
+      [
+       -76.4612734,
+       43.1132872
+      ],
+      [
+       -76.4619714,
+       43.1135023
+      ],
+      [
+       -76.4621619,
+       43.1136371
+      ],
+      [
+       -76.4625626,
+       43.1136868
+      ],
+      [
+       -76.4629484,
+       43.1138967
+      ],
+      [
+       -76.4633203,
+       43.1137867
+      ],
+      [
+       -76.4637075,
+       43.1137954
+      ],
+      [
+       -76.4639218,
+       43.1133536
+      ],
+      [
+       -76.4641784,
+       43.113117
+      ],
+      [
+       -76.464183,
+       43.1125223
+      ],
+      [
+       -76.4643938,
+       43.1119341
+      ],
+      [
+       -76.4643284,
+       43.1118114
+      ],
+      [
+       -76.4643504,
+       43.1116831
+      ],
+      [
+       -76.4645518,
+       43.1114929
+      ],
+      [
+       -76.4647291,
+       43.1108091
+      ],
+      [
+       -76.4648565,
+       43.1106519
+      ],
+      [
+       -76.4647477,
+       43.110539
+      ],
+      [
+       -76.464745,
+       43.1104247
+      ],
+      [
+       -76.464435,
+       43.1102503
+      ],
+      [
+       -76.4635512,
+       43.1103624
+      ],
+      [
+       -76.4630629,
+       43.1105654
+      ],
+      [
+       -76.4626715,
+       43.1106482
+      ],
+      [
+       -76.4614205,
+       43.1110669
+      ],
+      [
+       -76.460428,
+       43.1113313
+      ],
+      [
+       -76.4601638,
+       43.1115131
+      ],
+      [
+       -76.4596231,
+       43.1116116
+      ],
+      [
+       -76.4592475,
+       43.1118314
+      ],
+      [
+       -76.459097,
+       43.1120667
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}
