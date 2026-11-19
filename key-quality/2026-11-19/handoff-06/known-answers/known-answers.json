@@ -1,0 +1,221 @@
+{
+ "about": "Hand-off 06 known answers. 'must' rows are acceptance checks; 'info' rows are context. Made by the club's reviewer on 19 Nov 2026 from KPC-Links main 5e84846 with the real code (known-answers/grid_band.py, the Handoff 9 fixture, the key index). Check each against the code before you rely on it.",
+ "baseline": {
+  "links_main": "5e84846",
+  "fers_rules_hash": "0637d083bd98",
+  "handoff9_test": "tests/test_fers_handoff9_nov17.py ends ALL PASS (Python 3.13.18, numpy 2.5.3, opencv 5.0.0)",
+  "note": "work on a full checkout: without .github/key-rules-version.json the hash reads 5e61f29b2e67, which is wrong"
+ },
+ "rows": [
+  {
+   "id": "KA-01",
+   "rule": "R-2F3",
+   "level": "must",
+   "what": "the band is one grid cell, read from CELL, not a typed number",
+   "expect": "at pass 3 (5 m grid) near_line() answers for |width - 22.86| <= 5 and |width - 45.72| <= 5, area rows only; there is no setting that takes a number of metres"
+  },
+  {
+   "id": "KA-02",
+   "rule": "R-2F3",
+   "level": "must",
+   "what": "made-up squares, true overlap 16 to 22 m (under the 25-yard floor), 4 angles x 4 offsets each (grid-readings.csv)",
+   "expect": "every spot the grid finds reads 23 to 27 m and is NOT SURE near the 25-yard line; none is shown as very tight"
+  },
+  {
+   "id": "KA-03",
+   "rule": "R-2F3",
+   "level": "must",
+   "what": "true overlap 8 to 15 m",
+   "expect": "found in 0 of 16 placements at every width: no row at all"
+  },
+  {
+   "id": "KA-04",
+   "rule": "R-2F3",
+   "level": "must",
+   "what": "true overlap 42 to 49 m (either side of the 50-yard line)",
+   "expect": "every reading on the wrong side of 45.72 m (42-45 m read as 49; 46-49 m read as 45) is NOT SURE near the 50-yard line"
+  },
+  {
+   "id": "KA-05",
+   "rule": "R-2F3",
+   "level": "must",
+   "what": "true overlap 30, 31, 32 m",
+   "expect": "reads 31 to 37 m: very tight, NOT not-sure (outside one cell of both lines)"
+  },
+  {
+   "id": "KA-06",
+   "rule": "R-2F3",
+   "level": "must",
+   "what": "tests/fixtures/fers-wl3-near-line-rows.csv, water-only rows left out",
+   "expect": "226 of 226 rows at the 25-yard line and 154 of 159 at the 50-yard line are NOT SURE (380); with the rule off, 0"
+  },
+  {
+   "id": "KA-07",
+   "rule": "R-2F3",
+   "level": "must",
+   "what": "a river or trail row, and an area row 200 m wide",
+   "expect": "never touched by the band"
+  },
+  {
+   "id": "KA-08",
+   "rule": "R-2F2",
+   "level": "must",
+   "what": "two made-up overlapping parks named 'Grand Canyon National Park' and 'Kaibab National Forest'; 'Olympic National Park' and 'Olympic National Forest'",
+   "expect": "decided like any pair (candidate / very tight by width); the words 'two agencies' maps disagree' appear nowhere in the code"
+  },
+  {
+   "id": "KA-09",
+   "rule": "R-2F4",
+   "level": "must",
+   "what": "data/us-key/index.json gets a new 'build' and 'built' while no area was rebuilt (the real case of 19 Nov: build US-44600381160, areas_reused 39, areas_rebuilt 0)",
+   "expect": "a stamped row whose two parks are unchanged is still copied forward"
+  },
+  {
+   "id": "KA-10",
+   "rule": "R-2F4",
+   "level": "must",
+   "what": "a row with no made_on stamp, through EVERY copy path",
+   "expect": "never copied; listed in the private folder with the reason; counted in the report; nothing written that says 'not a 2-fer'"
+  },
+  {
+   "id": "KA-11",
+   "rule": "R-2F4",
+   "level": "must",
+   "what": "one park's key entry changes (a record joined or dropped, or its grade)",
+   "expect": "that park's stamped rows are not copied; a stamped row of another pair in the same area still is"
+  },
+  {
+   "id": "KA-12",
+   "rule": "R-2F4",
+   "level": "must",
+   "what": "the key file cannot be read, or the park is missing from it",
+   "expect": "not copied, with that reason (fail closed)"
+  },
+  {
+   "id": "KA-13",
+   "rule": "R-2F5",
+   "level": "must",
+   "what": "a 30 m patch 44 m from a listed spot of the same pair, not touching it (both with shapes), store run",
+   "expect": "its own row, marked fine_only (the Handoff 9 test said NOT its own row under the 100 m rule: that check flips)"
+  },
+  {
+   "id": "KA-14",
+   "rule": "R-2F5",
+   "level": "must",
+   "what": "a patch that touches a listed spot; a 15 m patch; a listed row with no shape",
+   "expect": "no new row in each case; listed in the private folder with the reason"
+  },
+  {
+   "id": "KA-15",
+   "rule": "R-2F5",
+   "level": "must",
+   "what": "the code",
+   "expect": "no FINE_GAP_M, no KPC_FERS_FINE_100M, no distance in metres between spots anywhere in the rule"
+  },
+  {
+   "id": "KA-16",
+   "rule": "R-2F6",
+   "level": "must",
+   "what": "a stamped row of a park the run withholds, copied forward",
+   "expect": "no 'shape', no 'lines'; refs, kind, status, center and size kept; the note is exactly: Possible 2-fer. We are missing an official boundary here: check both official boundary maps before you count it."
+  },
+  {
+   "id": "KA-17",
+   "rule": "R-2F6",
+   "level": "must",
+   "what": "an UNSTAMPED row of a withheld park",
+   "expect": "dropped like every old row (owner: 'Drop until re-checked'); nothing replaces it"
+  },
+  {
+   "id": "KA-18",
+   "rule": "R-2F6",
+   "level": "must",
+   "what": "the written public file",
+   "expect": "holds no coordinate list from the withheld park's row; the write guard, the redaction and the exit-89 refusals are byte for byte main's code"
+  },
+  {
+   "id": "KA-19",
+   "rule": "R-2F7",
+   "level": "must",
+   "what": ".github/fers-rule-scope.json",
+   "expect": "2026-11-17-d10-tripwire-not-sure approved with the owner's 19 Nov words; 2026-11-17-thin-shelf kept and marked NOT APPROVED: replaced by the new entry; no THIN_SHELF, no KPC_FERS_SHELF_MIN in the code"
+  },
+  {
+   "id": "KA-20",
+   "rule": "R-2F7",
+   "level": "must",
+   "what": "a public-shelf area whose coverage block says 5 of 50 parks on the shelf",
+   "expect": "the store run reads it (it is not left on the old path) and the report says '5 of 50 parks on the shelf; 2-fers are measured only between those'"
+  },
+  {
+   "id": "KA-21",
+   "rule": "R-2F1",
+   "level": "must",
+   "what": "a US park whose every record is from a compilation / register / water layer, a Michigan project line or the Mississippi general-area file",
+   "expect": "its pairs are approximate with SUMMARY_NOTE; a park with one record of its agency's own land is not"
+  },
+  {
+   "id": "KA-22",
+   "rule": "R-2F1",
+   "level": "must",
+   "what": "a park the key grades approximate",
+   "expect": "its pairs are approximate 2-fers (say which line does it today, or fix it)"
+  },
+  {
+   "id": "KA-23",
+   "rule": "switch file",
+   "level": "must",
+   "what": ".github/fers-switches.json missing, broken, or lacking a setting the code asks for",
+   "expect": "the bot stops with exit 4 and one plain line; it never runs with every rule off"
+  },
+  {
+   "id": "KA-24",
+   "rule": "switch file",
+   "level": "must",
+   "what": "an environment variable set against the file",
+   "expect": "the variable wins, the receipt records the value and 'env', and the run prints one notice"
+  },
+  {
+   "id": "KA-25",
+   "rule": "part 2",
+   "level": "must",
+   "what": "a one-character change inside area_spots() with no new scope entry",
+   "expect": "the math guard test FAILS; with a scope entry that is not 'none' and the fixture updated, it passes"
+  },
+  {
+   "id": "KA-26",
+   "rule": "part 2",
+   "level": "must",
+   "what": "the suite run from the checkout root",
+   "expect": "git status is clean afterwards; data/status/test_fers_final_redact_nov17.json is gone from the repo"
+  },
+  {
+   "id": "KA-27",
+   "rule": "part 3",
+   "level": "must",
+   "what": "not-sure-rows-<tag>.json",
+   "expect": "two runs on the same inputs write the same bytes; no withheld park in it; one row per park per doubt"
+  },
+  {
+   "id": "KA-28",
+   "rule": "R-2F1",
+   "level": "info",
+   "what": "the 17 Nov count of summary-map-only parks",
+   "expect": "74 (before the 19 Nov rebuild). Recount; do not test against 74"
+  },
+  {
+   "id": "KA-29",
+   "rule": "R-2F5",
+   "level": "info",
+   "what": "the 17 Nov review's count of passing fine-grid spots that were not counted",
+   "expect": "20,749. Not re-measured by the reviewer; do not test against it"
+  },
+  {
+   "id": "KA-30",
+   "rule": "R-2F4",
+   "level": "info",
+   "what": "the 17 Nov count of public files older than the Oct 29-30 key rebuild",
+   "expect": "42 files, 1,849 shown rows (from kpc_fers_age.py's own note). Under R-2F4 every row that exists today is old-system data"
+  }
+ ]
+}
