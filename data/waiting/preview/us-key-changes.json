@@ -1,29 +1,29 @@
 {
  "about": "us-key: the HELD build (data/waiting/in/data/us-key/) vs the LIVE key (data/us-key/). Chat 11: check the sample, then write KEY YES or KEY NO: <refs> in data/waiting/approved.json (item 'what': 'us-key', 'build': the held build id from data/waiting/in/data/us-key/index.json, 'date': 'YYYY-MM-DD' and 'time': 'h:mm AM/PM' Central; rule 22: no build field or a grade from before Nov 2 9:37 AM CST is not a release). Written by kpc_key_summary.py.",
- "made": "2026-11-19 12:32 UTC",
+ "made": "2026-11-19 16:33 UTC",
  "totals": {
   "gained": 15,
-  "lost": 11,
-  "pieces_changed": 1141,
-  "grade_changed": 4
+  "lost": 74,
+  "pieces_changed": 1221,
+  "grade_changed": 19
  },
  "per_area": {
   "US-AL": {
    "gained": 0,
-   "lost": 0,
-   "pieces_changed": 6,
-   "grade_changed": 0
+   "lost": 1,
+   "pieces_changed": 7,
+   "grade_changed": 1
   },
   "US-CA": {
    "gained": 1,
-   "lost": 1,
-   "pieces_changed": 18,
-   "grade_changed": 0
+   "lost": 2,
+   "pieces_changed": 23,
+   "grade_changed": 1
   },
   "US-CO": {
    "gained": 0,
-   "lost": 0,
-   "pieces_changed": 52,
+   "lost": 1,
+   "pieces_changed": 53,
    "grade_changed": 0
   },
   "US-CT": {
@@ -46,13 +46,13 @@
   },
   "US-HI": {
    "gained": 0,
-   "lost": 0,
+   "lost": 1,
    "pieces_changed": 1,
    "grade_changed": 0
   },
   "US-IA": {
    "gained": 0,
-   "lost": 0,
+   "lost": 1,
    "pieces_changed": 6,
    "grade_changed": 0
   },
@@ -64,19 +64,19 @@
   },
   "US-IL": {
    "gained": 1,
-   "lost": 2,
-   "pieces_changed": 4,
-   "grade_changed": 0
+   "lost": 3,
+   "pieces_changed": 5,
+   "grade_changed": 1
   },
   "US-IN": {
    "gained": 1,
-   "lost": 1,
-   "pieces_changed": 24,
+   "lost": 16,
+   "pieces_changed": 26,
    "grade_changed": 0
   },
   "US-KS": {
    "gained": 0,
-   "lost": 0,
+   "lost": 1,
    "pieces_changed": 14,
    "grade_changed": 0
   },
@@ -100,7 +100,7 @@
   },
   "US-MI": {
    "gained": 4,
-   "lost": 0,
+   "lost": 5,
    "pieces_changed": 18,
    "grade_changed": 3
   },
@@ -112,15 +112,15 @@
   },
   "US-MO": {
    "gained": 0,
-   "lost": 0,
+   "lost": 2,
    "pieces_changed": 252,
    "grade_changed": 0
   },
   "US-MS": {
    "gained": 1,
    "lost": 0,
-   "pieces_changed": 1,
-   "grade_changed": 0
+   "pieces_changed": 2,
+   "grade_changed": 1
   },
   "US-ND": {
    "gained": 0,
@@ -130,45 +130,57 @@
   },
   "US-NE": {
    "gained": 0,
-   "lost": 0,
+   "lost": 7,
    "pieces_changed": 21,
    "grade_changed": 0
   },
   "US-NH": {
    "gained": 0,
-   "lost": 0,
+   "lost": 2,
    "pieces_changed": 12,
+   "grade_changed": 0
+  },
+  "US-NJ": {
+   "gained": 0,
+   "lost": 1,
+   "pieces_changed": 0,
+   "grade_changed": 0
+  },
+  "US-NM": {
+   "gained": 0,
+   "lost": 0,
+   "pieces_changed": 1,
    "grade_changed": 0
   },
   "US-NV": {
    "gained": 0,
-   "lost": 0,
-   "pieces_changed": 2,
+   "lost": 3,
+   "pieces_changed": 24,
    "grade_changed": 1
   },
   "US-NY": {
    "gained": 0,
-   "lost": 0,
+   "lost": 1,
    "pieces_changed": 5,
    "grade_changed": 0
   },
   "US-OH": {
    "gained": 0,
    "lost": 0,
-   "pieces_changed": 36,
-   "grade_changed": 0
+   "pieces_changed": 37,
+   "grade_changed": 1
   },
   "US-OK": {
    "gained": 0,
    "lost": 1,
-   "pieces_changed": 7,
-   "grade_changed": 0
+   "pieces_changed": 8,
+   "grade_changed": 1
   },
   "US-PA": {
    "gained": 1,
    "lost": 0,
-   "pieces_changed": 0,
-   "grade_changed": 0
+   "pieces_changed": 1,
+   "grade_changed": 1
   },
   "US-SC": {
    "gained": 0,
@@ -184,9 +196,9 @@
   },
   "US-TN": {
    "gained": 1,
-   "lost": 0,
-   "pieces_changed": 28,
-   "grade_changed": 0
+   "lost": 1,
+   "pieces_changed": 30,
+   "grade_changed": 2
   },
   "US-TX": {
    "gained": 1,
@@ -200,17 +212,23 @@
    "pieces_changed": 1,
    "grade_changed": 0
   },
+  "US-VT": {
+   "gained": 0,
+   "lost": 3,
+   "pieces_changed": 0,
+   "grade_changed": 0
+  },
   "US-WA": {
    "gained": 1,
-   "lost": 1,
-   "pieces_changed": 3,
-   "grade_changed": 0
+   "lost": 12,
+   "pieces_changed": 42,
+   "grade_changed": 4
   },
   "US-WI": {
    "gained": 0,
-   "lost": 0,
-   "pieces_changed": 73,
-   "grade_changed": 0
+   "lost": 5,
+   "pieces_changed": 75,
+   "grade_changed": 2
   },
   "US-WV": {
    "gained": 0,
@@ -515,13 +533,13 @@
    "ref": "US-10709",
    "name": "Klickitat National Wild and Scenic River",
    "old_grade": "pin",
-   "new_grade": "approximate",
+   "new_grade": "official",
    "new_pieces": [
     [
      "fwsr35",
      "Klickitat, Washington National Wild and Scenic River",
      4815,
-     "words"
+     "name (Forest Service river: state and forest dropped)"
     ]
    ],
    "old_pieces": [],
@@ -531,6 +549,44 @@
   }
  ],
  "lost": [
+  {
+   "area": "US-AL",
+   "ref": "US-3692",
+   "name": "Heron Bay and Portersville Bay State Fish and Wildlife Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "78849",
+     "The Heron Bay Wetlands Tract",
+     463,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-3692"
+  },
+  {
+   "area": "US-CA",
+   "ref": "US-3415",
+   "name": "California State Railroad Museum State Park",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "183878",
+     "Old Sacramento State Historic Park",
+     15,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-3415"
+  },
   {
    "area": "US-CA",
    "ref": "US-3581",
@@ -551,6 +607,31 @@
    "pota": "https://pota.app/#/park/US-3581"
   },
   {
+   "area": "US-CO",
+   "ref": "US-1208",
+   "name": "Arkansas River Headwaters Recreation Park",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "cow29",
+     "Arkansas Headwaters RA - BLM Site",
+     1529,
+     "reviewed-approx"
+    ],
+    [
+     "184168",
+     "Arkansas Headwaters",
+     1286,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-1208"
+  },
+  {
    "area": "US-DC",
    "ref": "US-0795",
    "name": "World War I National Memorial",
@@ -568,6 +649,44 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-0795"
+  },
+  {
+   "area": "US-HI",
+   "ref": "US-10913",
+   "name": "Diamond Head Summit State Trail",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "195365",
+     "Diamond Head State Monument",
+     503,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-10913"
+  },
+  {
+   "area": "US-IA",
+   "ref": "US-5730",
+   "name": "Blood Run State Historic Site",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "198260",
+     "Blood Run/Rock Island National Landmark",
+     167,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-5730"
   },
   {
    "area": "US-ID",
@@ -617,6 +736,25 @@
   },
   {
    "area": "US-IL",
+   "ref": "US-11351",
+   "name": "Weinberg-King Spunky Bottoms Unit State Park",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "70886",
+     "Weinberg-King State Fish and Wildlife Area",
+     862,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11351"
+  },
+  {
+   "area": "US-IL",
    "ref": "US-4092",
    "name": "Salem Unit of Apple River Canyon State Park",
    "old_grade": "approximate",
@@ -639,6 +777,326 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-4092"
+  },
+  {
+   "area": "US-IN",
+   "ref": "US-10237",
+   "name": "Mongoquinong State Nature Preserve",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "200897",
+     "Mongoquinong Nature Preserve Sawmill Fen",
+     38,
+     "reviewed-approx"
+    ],
+    [
+     "200896",
+     "Mongoquinong Nature Preserve Buckbean Fen",
+     37,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-10237"
+  },
+  {
+   "area": "US-IN",
+   "ref": "US-10561",
+   "name": "Indiana War Memorial Plaza National Historical Site",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "157431",
+     "Indiana War Memorial",
+     5,
+     "reviewed-approx"
+    ],
+    [
+     "200686",
+     "Veteran's Memorial Plaza",
+     5,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-10561"
+  },
+  {
+   "area": "US-IN",
+   "ref": "US-4162",
+   "name": "Mounds on Brookville Lake State Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "ind3169",
+     "Brookville Lake",
+     13201,
+     "reviewed-approx"
+    ],
+    [
+     "sgina3169",
+     "Brookville Lake",
+     13201,
+     "reviewed-approx"
+    ],
+    [
+     "sginc3169",
+     "Brookville Lake",
+     13201,
+     "reviewed-approx"
+    ],
+    [
+     "ind3170",
+     "Brookville Lake",
+     2734,
+     "reviewed-approx"
+    ],
+    [
+     "sgina3170",
+     "Brookville Lake",
+     2734,
+     "reviewed-approx"
+    ],
+    [
+     "sginc3170",
+     "Brookville Lake",
+     2734,
+     "reviewed-approx"
+    ],
+    [
+     "ind3171",
+     "Brookville Lake",
+     663,
+     "reviewed-approx"
+    ],
+    [
+     "sgina3171",
+     "Brookville Lake",
+     663,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4162"
+  },
+  {
+   "area": "US-IN",
+   "ref": "US-4168",
+   "name": "Frances Slocum on Mississinewa Lake State Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "2526",
+     "Mississinewa Recreation Area",
+     15067,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4168"
+  },
+  {
+   "area": "US-IN",
+   "ref": "US-4169",
+   "name": "Miami on Mississinewa Lake State Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "2526",
+     "Mississinewa Recreation Area",
+     15067,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4169"
+  },
+  {
+   "area": "US-IN",
+   "ref": "US-4170",
+   "name": "Hardin Ridge on Monroe Lake State Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "2527",
+     "Monroe Recreation Area",
+     25720,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4170"
+  },
+  {
+   "area": "US-IN",
+   "ref": "US-4171",
+   "name": "Paynetown on Monroe Lake State Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "2527",
+     "Monroe Recreation Area",
+     25720,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4171"
+  },
+  {
+   "area": "US-IN",
+   "ref": "US-4172",
+   "name": "Jackson on Patoka Lake State Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "ind4773",
+     "Patoka Lake",
+     26122,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4172"
+  },
+  {
+   "area": "US-IN",
+   "ref": "US-4173",
+   "name": "Lick Fork on Patoka Lake State Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "ind4773",
+     "Patoka Lake",
+     26122,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4173"
+  },
+  {
+   "area": "US-IN",
+   "ref": "US-4174",
+   "name": "Newton-Stewart on Patoka Lake State Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "ind4773",
+     "Patoka Lake",
+     26122,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4174"
+  },
+  {
+   "area": "US-IN",
+   "ref": "US-4175",
+   "name": "Tillery Hill on Patoka Lake State Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "ind4773",
+     "Patoka Lake",
+     26122,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4175"
+  },
+  {
+   "area": "US-IN",
+   "ref": "US-4177",
+   "name": "Dora-New Holland on Salamonie Lake State Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "ind5037",
+     "Salamonie Lake",
+     10768,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4177"
+  },
+  {
+   "area": "US-IN",
+   "ref": "US-4179",
+   "name": "Mt Etna on Salamonie Lake State Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "ind5037",
+     "Salamonie Lake",
+     10768,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4179"
+  },
+  {
+   "area": "US-IN",
+   "ref": "US-4180",
+   "name": "Mt Hope on Salamonie Lake State Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "ind5037",
+     "Salamonie Lake",
+     10768,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4180"
   },
   {
    "area": "US-IN",
@@ -686,6 +1144,56 @@
    ],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-4182"
+  },
+  {
+   "area": "US-IN",
+   "ref": "US-4186",
+   "name": "Big Walnut - Tall Timbers Trail State Nature Preserve",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "200769",
+     "Big Walnut Addition Nature Preserve",
+     739,
+     "reviewed-approx"
+    ],
+    [
+     "200770",
+     "Big Walnut Natural Area",
+     389,
+     "reviewed-approx"
+    ],
+    [
+     "200771",
+     "Big Walnut Nature Preserve - Tract 1",
+     286,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4186"
+  },
+  {
+   "area": "US-KS",
+   "ref": "US-7399",
+   "name": "Tuttle Creek Willow State Fishing Lake",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "201224",
+     "Tuttle Creek State Parks",
+     1082,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-7399"
   },
   {
    "area": "US-MA",
@@ -747,6 +1255,157 @@
    "pota": "https://pota.app/#/park/US-8393"
   },
   {
+   "area": "US-MI",
+   "ref": "US-13570",
+   "name": "Gladwin Field Trial Wildlife Management Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "71502",
+     "Gladwin Game Unit and Field Trial Area of State Forest",
+     4754,
+     "reviewed-approx"
+    ],
+    [
+     "sgmib88",
+     "Gladwin State Game Area",
+     1354,
+     "reviewed-approx"
+    ],
+    [
+     "mid783",
+     "Gladwin State Game Area",
+     159,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-13570"
+  },
+  {
+   "area": "US-MI",
+   "ref": "US-1505",
+   "name": "Historic Mill Discovery State Park",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "71006",
+     "Old Mill Historic Park",
+     574,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-1505"
+  },
+  {
+   "area": "US-MI",
+   "ref": "US-4263",
+   "name": "Piers Gorge Unit of Menominee River State Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "mid404",
+     "Menominee River State Recreation Area",
+     530,
+     "reviewed-approx"
+    ],
+    [
+     "272354",
+     "Menominee River State Recreation Area",
+     1,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4263"
+  },
+  {
+   "area": "US-MI",
+   "ref": "US-4264",
+   "name": "Quiver Falls Unit of Menominee River State Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "272354",
+     "Menominee River State Recreation Area",
+     1,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4264"
+  },
+  {
+   "area": "US-MI",
+   "ref": "US-6818",
+   "name": "Mackinac Island State Harbor",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "71154",
+     "Mackinac State Park",
+     1840,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-6818"
+  },
+  {
+   "area": "US-MO",
+   "ref": "US-6529",
+   "name": "Truman Reservoir Management Lands State Park",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "mol967",
+     "Truman Reservoir ML (Deepwater Creek)",
+     0,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-6529"
+  },
+  {
+   "area": "US-MO",
+   "ref": "US-7189",
+   "name": "Beaver Creek State Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "mol123",
+     "USACE (Bull Shoals Lake, Beaver Creek PA)",
+     0,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-7189"
+  },
+  {
    "area": "US-ND",
    "ref": "US-0437",
    "name": "White Horse Hill Game Preserve",
@@ -766,6 +1425,278 @@
    ],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-0437"
+  },
+  {
+   "area": "US-NE",
+   "ref": "US-3483",
+   "name": "Atlanta National Waterfowl Production Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "4221",
+     "Phelps County Waterfowl Production Area",
+     4677,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-3483"
+  },
+  {
+   "area": "US-NE",
+   "ref": "US-3484",
+   "name": "Peterson National Waterfowl Production Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "3869",
+     "Gosper County Waterfowl Production Area",
+     1451,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-3484"
+  },
+  {
+   "area": "US-NE",
+   "ref": "US-3485",
+   "name": "Jensen Lagoon National Waterfowl Production Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "3993",
+     "Kearney County Waterfowl Production Area",
+     2891,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-3485"
+  },
+  {
+   "area": "US-NE",
+   "ref": "US-3486",
+   "name": "Moger National Waterfowl Production Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "4664",
+     "Clay County Waterfowl Production Area Of Ne",
+     7011,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-3486"
+  },
+  {
+   "area": "US-NE",
+   "ref": "US-3489",
+   "name": "Massie National Waterfowl Production Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "4664",
+     "Clay County Waterfowl Production Area Of Ne",
+     7011,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-3489"
+  },
+  {
+   "area": "US-NE",
+   "ref": "US-3490",
+   "name": "Smith Lagoon National Waterfowl Production Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "4664",
+     "Clay County Waterfowl Production Area Of Ne",
+     7011,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-3490"
+  },
+  {
+   "area": "US-NE",
+   "ref": "US-4017",
+   "name": "Lincoln Saline Wetland State Park",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "215703",
+     "Lincoln Saline Wetlands Nature Center",
+     93,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4017"
+  },
+  {
+   "area": "US-NH",
+   "ref": "US-13486",
+   "name": "Bellamy River Wildlife Management Area - East Wildlife Management Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "57850",
+     "Bellamy River Wildlife Management Area - West - Lot 2",
+     34,
+     "reviewed-approx"
+    ],
+    [
+     "sgnhb5",
+     "Bellamy River WMA - East",
+     21,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-13486"
+  },
+  {
+   "area": "US-NH",
+   "ref": "US-2644",
+   "name": "Cardigan Mountain State Park",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "nhc2202",
+     "Cardigan Mountain State Forest",
+     0,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-2644"
+  },
+  {
+   "area": "US-NJ",
+   "ref": "US-11992",
+   "name": "Whiting State Conservation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "229060",
+     "Whiting Wildlife Management Area",
+     1188,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11992"
+  },
+  {
+   "area": "US-NV",
+   "ref": "US-13178",
+   "name": "Mt. Irish Archaeological Site Archeological Reserve",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sgnvh1238",
+     "Mount Irish",
+     15075,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-13178"
+  },
+  {
+   "area": "US-NV",
+   "ref": "US-13269",
+   "name": "Lake Tahoe-Eastshore Dr Byway Area of Outstanding Natural Beauty",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "230200",
+     "Lake Tahoe Nevada State Park",
+     557,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-13269"
+  },
+  {
+   "area": "US-NV",
+   "ref": "US-13279",
+   "name": "Dayton State Historical Monument",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "230196",
+     "Dayton State Park",
+     128,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-13279"
+  },
+  {
+   "area": "US-NY",
+   "ref": "US-8063",
+   "name": "North-South Lake State Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "237093",
+     "North/South Lake Campground",
+     1108,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-8063"
   },
   {
    "area": "US-OK",
@@ -815,6 +1746,25 @@
    "pota": "https://pota.app/#/park/US-11714"
   },
   {
+   "area": "US-TN",
+   "ref": "US-12064",
+   "name": "Henderson Swamp State Wilderness Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "255796",
+     "Henderson Swamp Public Hunting Area",
+     24,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12064"
+  },
+  {
    "area": "US-UT",
    "ref": "US-5779",
    "name": "Willard Spur State Waterfowl Management Area",
@@ -843,6 +1793,199 @@
    "pota": "https://pota.app/#/park/US-5779"
   },
   {
+   "area": "US-VT",
+   "ref": "US-3109",
+   "name": "Coolidge State Park",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sgvta18",
+     "Coolidge State Forest",
+     23596,
+     "reviewed-approx"
+    ],
+    [
+     "61205",
+     "Coolidge State Forest",
+     4237,
+     "reviewed-approx"
+    ],
+    [
+     "61234",
+     "Coolidge State Forest",
+     1550,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-3109"
+  },
+  {
+   "area": "US-VT",
+   "ref": "US-3131",
+   "name": "Maidstone State Park",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sgvta30",
+     "Maidstone State Forest",
+     442,
+     "reviewed-approx"
+    ],
+    [
+     "61335",
+     "Maidstone State Forest",
+     294,
+     "reviewed-approx"
+    ],
+    [
+     "61334",
+     "Maidstone State Forest",
+     119,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-3131"
+  },
+  {
+   "area": "US-VT",
+   "ref": "US-3147",
+   "name": "Thetford Hill State Park",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "61435",
+     "Thetford Hill State Forest",
+     259,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-3147"
+  },
+  {
+   "area": "US-WA",
+   "ref": "US-10695",
+   "name": "Coffeepot Lake Nature Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "rma9874",
+     "Coffeepot Lake Public Fishing Access",
+     6,
+     "reviewed-approx"
+    ],
+    [
+     "rst9874",
+     "Coffeepot Lake Public Fishing Access",
+     6,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-10695"
+  },
+  {
+   "area": "US-WA",
+   "ref": "US-11142",
+   "name": "West Foster Creek Wildlife Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "158410",
+     "West Foster Creek",
+     1062,
+     "name"
+    ],
+    [
+     "sgwab1473",
+     "West Foster Creek",
+     0,
+     "name"
+    ],
+    [
+     "sgwaf1473",
+     "West Foster Creek",
+     0,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11142"
+  },
+  {
+   "area": "US-WA",
+   "ref": "US-12246",
+   "name": "Pacific Lake Recreation Site - Lakeview Ranch BLM Recreation Management Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "rma10677",
+     "Pacific Lake",
+     37,
+     "reviewed-approx"
+    ],
+    [
+     "rst10677",
+     "Pacific Lake",
+     37,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12246"
+  },
+  {
+   "area": "US-WA",
+   "ref": "US-12277",
+   "name": "West Foster Creek Wildlife Area State Fish and Wildlife Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "158410",
+     "West Foster Creek",
+     1062,
+     "name"
+    ],
+    [
+     "sgwab1473",
+     "West Foster Creek",
+     0,
+     "name"
+    ],
+    [
+     "sgwaf1473",
+     "West Foster Creek",
+     0,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12277"
+  },
+  {
    "area": "US-WA",
    "ref": "US-12318",
    "name": "Dishman Hills State Conservation Area",
@@ -862,9 +2005,399 @@
    ],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-12318"
+  },
+  {
+   "area": "US-WA",
+   "ref": "US-12570",
+   "name": "Starvation Lake State Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sgwae32088",
+     "Starvation Lake",
+     0,
+     "name · water outline only"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12570"
+  },
+  {
+   "area": "US-WA",
+   "ref": "US-12831",
+   "name": "Ruby BLM Special Recreation Management Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "271501",
+     "Old Ruby",
+     7,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12831"
+  },
+  {
+   "area": "US-WA",
+   "ref": "US-13376",
+   "name": "Potholes Reservoir State Fishing Lake",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "2341",
+     "Potholes Reservoir",
+     19094,
+     "name"
+    ],
+    [
+     "sgwaa147",
+     "Potholes",
+     773,
+     "name"
+    ],
+    [
+     "271518",
+     "Potholes",
+     771,
+     "name"
+    ],
+    [
+     "sgwae10603",
+     "Potholes Reservoir",
+     0,
+     "name · water outline only"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-13376"
+  },
+  {
+   "area": "US-WA",
+   "ref": "US-13397",
+   "name": "Modrow Bridge State Recreation Site",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "158255",
+     "Modrow Bridge Water Access Site",
+     1,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-13397"
+  },
+  {
+   "area": "US-WA",
+   "ref": "US-13398",
+   "name": "Beginner's Hole State Recreation Site",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "158013",
+     "Beginners Hole Water Access Site",
+     1,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-13398"
+  },
+  {
+   "area": "US-WA",
+   "ref": "US-5574",
+   "name": "Tiger Mountain State Forest",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "271371",
+     "West Tiger Mountain Natural Resources Conservation Area",
+     3880,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-5574"
+  },
+  {
+   "area": "US-WA",
+   "ref": "US-8664",
+   "name": "Fishtrap National Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sgwae30756",
+     "Fishtrap Lake",
+     0,
+     "name · water outline only"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-8664"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-10650",
+   "name": "Nevin Springs State Fish and Wildlife Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "272683",
+     "Nevin Hatchery",
+     331,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-10650"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-12358",
+   "name": "Pinnacle Rock State Fish and Wildlife Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "272735",
+     "Pinnacle Rock Rearing Station",
+     55,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12358"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-4244",
+   "name": "Big Bay Sand Spit and Bog State Natural Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "272294",
+     "Big Bay State Park",
+     2514,
+     "reviewed-approx"
+    ],
+    [
+     "sgwic6861",
+     "Big Bay Sand Spit and Bog",
+     963,
+     "reviewed-approx"
+    ],
+    [
+     "sgwif23770",
+     "Big Bay Sand Spit and Bog",
+     963,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-4244"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-4263",
+   "name": "Piers Gorge Unit of Menominee River State Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "272355",
+     "Menominee River State Recreation Area",
+     4785,
+     "reviewed-approx"
+    ],
+    [
+     "sgwia713692",
+     "Menominee River State Recreation Area",
+     4782,
+     "reviewed-approx"
+    ],
+    [
+     "sgwid19810492",
+     "Menominee River State Recreation Area",
+     75,
+     "reviewed-approx"
+    ],
+    [
+     "sgwid19793916",
+     "Menominee River State Recreation Area",
+     69,
+     "reviewed-approx"
+    ],
+    [
+     "sgwid19793920",
+     "Menominee River State Recreation Area",
+     68,
+     "reviewed-approx"
+    ],
+    [
+     "sgwid19793923",
+     "Menominee River State Recreation Area",
+     68,
+     "reviewed-approx"
+    ],
+    [
+     "sgwid19810465",
+     "Menominee River State Recreation Area",
+     67,
+     "reviewed-approx"
+    ],
+    [
+     "sgwid19793915",
+     "Menominee River State Recreation Area",
+     66,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4263"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-4264",
+   "name": "Quiver Falls Unit of Menominee River State Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "272354",
+     "Menominee River State Recreation Area",
+     1,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4264"
   }
  ],
  "grade_changed": [
+  {
+   "area": "US-AL",
+   "ref": "US-4560",
+   "name": "Natchez Trace Trail National Scenic Trail",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4560",
+     "Natchez Trace National Scenic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "3552",
+     "Natchez Trace Parkway",
+     31527,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4560"
+  },
+  {
+   "area": "US-CA",
+   "ref": "US-3586",
+   "name": "Verdugo Mountains State Park",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgcab659",
+     "Verdugo Mountains",
+     252,
+     "name"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "sgcab659",
+     "Verdugo Mountains",
+     252,
+     "name"
+    ],
+    [
+     "183914",
+     "Verdugo Mountains Park Property",
+     252,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-3586"
+  },
+  {
+   "area": "US-IL",
+   "ref": "US-0526",
+   "name": "Wildcat Hollow State Nature Preserve",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgila1159",
+     "Wildcat Hollow State Habitat Area",
+     748,
+     "name"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "sgila1159",
+     "Wildcat Hollow State Habitat Area",
+     748,
+     "name"
+    ],
+    [
+     "70754",
+     "Wildcat Hollow State Habitat Area",
+     748,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-0526"
+  },
   {
    "area": "US-MI",
    "ref": "US-12793",
@@ -968,6 +2501,32 @@
    "pota": "https://pota.app/#/park/US-1502"
   },
   {
+   "area": "US-MS",
+   "ref": "US-4560",
+   "name": "Natchez Trace Trail National Scenic Trail",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4560",
+     "Natchez Trace National Scenic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "3552",
+     "Natchez Trace Parkway",
+     31527,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4560"
+  },
+  {
    "area": "US-NV",
    "ref": "US-10345",
    "name": "Carson Lake and Pasture Wildlife Management Area",
@@ -998,9 +2557,627 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-10345"
+  },
+  {
+   "area": "US-OH",
+   "ref": "US-9442",
+   "name": "Acadia Cliffs State Wildlife Area",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgohe570",
+     "ACADIA CLIFFS",
+     163,
+     "name"
+    ],
+    [
+     "sgohf620",
+     "Acadia Cliffs DNP",
+     163,
+     "name"
+    ],
+    [
+     "sgohb619",
+     "ACADIA CLIFFS (AcdClffsNP)",
+     108,
+     "name"
+    ],
+    [
+     "sgohe571",
+     "ACADIA CLIFFS",
+     108,
+     "name"
+    ],
+    [
+     "sgohf693",
+     "Acadia Cliffs DNP",
+     108,
+     "name"
+    ],
+    [
+     "sgohb2",
+     "ACADIA CLIFFS (AcdClffsWA)",
+     4,
+     "name"
+    ],
+    [
+     "sgohe2",
+     "ACADIA CLIFFS",
+     4,
+     "name"
+    ],
+    [
+     "sgohf416",
+     "Acadia Cliffs DNP",
+     4,
+     "name"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "71613",
+     "Acadia Cliffs Dedicated Nature Preserve",
+     271,
+     "reviewed-approx"
+    ],
+    [
+     "sgohb393",
+     "ACADIA CLIFFS (AcdClffsWA)",
+     163,
+     "reviewed-approx"
+    ],
+    [
+     "sgohe570",
+     "ACADIA CLIFFS",
+     163,
+     "name"
+    ],
+    [
+     "sgohf620",
+     "Acadia Cliffs DNP",
+     163,
+     "name"
+    ],
+    [
+     "sgohb619",
+     "ACADIA CLIFFS (AcdClffsNP)",
+     108,
+     "name"
+    ],
+    [
+     "sgohe571",
+     "ACADIA CLIFFS",
+     108,
+     "name"
+    ],
+    [
+     "sgohf693",
+     "Acadia Cliffs DNP",
+     108,
+     "name"
+    ],
+    [
+     "sgohb2",
+     "ACADIA CLIFFS (AcdClffsWA)",
+     4,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-9442"
+  },
+  {
+   "area": "US-OK",
+   "ref": "US-6365",
+   "name": "Osage Wildlife Management Area",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgokb18",
+     "Osage Wildlife Management Area - Western Wall Unit",
+     0,
+     "name"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "odw76",
+     "Osage Wildlife Management Area - Western Wall",
+     7317,
+     "reviewed-approx"
+    ],
+    [
+     "odw75",
+     "Osage Wildlife Management Area - Rock Creek",
+     3729,
+     "reviewed-approx"
+    ],
+    [
+     "sgokb18",
+     "Osage Wildlife Management Area - Western Wall Unit",
+     0,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-6365"
+  },
+  {
+   "area": "US-PA",
+   "ref": "US-12664",
+   "name": "Pine Creek Rail Trail State Trail",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl12664",
+     "Pine Creek Rail Trail State Trail",
+     0,
+     "official trail line (DCNR, birds, Pennsylvania Game Commissi"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "250947",
+     "Pine Creek Gorge",
+     11578,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12664"
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-11858",
+   "name": "Middle Fork Bottoms State Park",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgtna369",
+     "Middle Fork Bottoms State Park",
+     0,
+     "name"
+    ],
+    [
+     "sgtnj259",
+     "Middle Fork Bottoms State Park",
+     0,
+     "name"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "255778",
+     "Middle Fork Forked Deer Refuge",
+     416,
+     "reviewed-approx"
+    ],
+    [
+     "sgtna369",
+     "Middle Fork Bottoms State Park",
+     0,
+     "name"
+    ],
+    [
+     "sgtnj259",
+     "Middle Fork Bottoms State Park",
+     0,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11858"
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-4560",
+   "name": "Natchez Trace Trail National Scenic Trail",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl4560",
+     "Natchez Trace National Scenic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "3552",
+     "Natchez Trace Parkway",
+     31527,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-4560"
+  },
+  {
+   "area": "US-WA",
+   "ref": "US-12245",
+   "name": "Twin Lakes BLM Recreation Management Area",
+   "old_grade": "official",
+   "new_grade": "approximate",
+   "new_pieces": [
+    [
+     "rma11311",
+     "Twin Lakes Recreation Site",
+     8,
+     "words"
+    ],
+    [
+     "rst11311",
+     "Twin Lakes Recreation Site",
+     8,
+     "words"
+    ],
+    [
+     "sgakg11311",
+     "Twin Lakes Recreation Site",
+     8,
+     "words"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "rma11311",
+     "Twin Lakes Recreation Site",
+     8,
+     "words"
+    ],
+    [
+     "rst11311",
+     "Twin Lakes Recreation Site",
+     8,
+     "words"
+    ],
+    [
+     "sgakg11311",
+     "Twin Lakes Recreation Site",
+     8,
+     "words"
+    ],
+    [
+     "sgwae24273",
+     "Twin Lakes",
+     0,
+     "name · water outline only"
+    ],
+    [
+     "sgwae56106",
+     "Twin Lakes",
+     0,
+     "name · water outline only"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12245"
+  },
+  {
+   "area": "US-WA",
+   "ref": "US-12343",
+   "name": "White Salmon National Wild and Scenic River",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "fwsr171",
+     "White Salmon, Washington National Wild and Scenic River",
+     4088,
+     "name (Forest Service river: state and forest dropped)"
+    ],
+    [
+     "fwsr257",
+     "White Salmon, Washington National Wild and Scenic River",
+     2419,
+     "name (Forest Service river: state and forest dropped)"
+    ],
+    [
+     "fwsr173",
+     "White Salmon, Washington National Wild and Scenic River",
+     1931,
+     "name (Forest Service river: state and forest dropped)"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "fwsr173",
+     "White Salmon, Washington National Wild and Scenic River",
+     1931,
+     "words"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12343"
+  },
+  {
+   "area": "US-WA",
+   "ref": "US-13419",
+   "name": "Chambers Lake State Fishing Lake",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgwae52472",
+     "Chambers Lake",
+     0,
+     "name · water outline only"
+    ],
+    [
+     "sgwab300",
+     "Chambers Lake",
+     0,
+     "name"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "158258",
+     "Chambers Lake Trailhead Park",
+     2,
+     "reviewed-approx"
+    ],
+    [
+     "sgwae52472",
+     "Chambers Lake",
+     0,
+     "name · water outline only"
+    ],
+    [
+     "sgwab300",
+     "Chambers Lake",
+     0,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-13419"
+  },
+  {
+   "area": "US-WA",
+   "ref": "US-13441",
+   "name": "Lake Desire State Fishing Lake",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgwae52647",
+     "Lake Desire",
+     0,
+     "name · water outline only"
+    ],
+    [
+     "sgwab343",
+     "Lake Desire",
+     0,
+     "name"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "158261",
+     "Lake Desire Public Access Area",
+     1,
+     "reviewed-approx"
+    ],
+    [
+     "sgwae52647",
+     "Lake Desire",
+     0,
+     "name · water outline only"
+    ],
+    [
+     "sgwab343",
+     "Lake Desire",
+     0,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-13441"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-4254",
+   "name": "Chimney Rock Oak Savanna State Natural Area",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgwif23733",
+     "Chimney Rock Oak Savanna",
+     30,
+     "name"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "272488",
+     "Chimney Rock Wildlife Area",
+     627,
+     "reviewed-approx"
+    ],
+    [
+     "sgwic7343",
+     "Chimney Rock Oak Savanna",
+     30,
+     "reviewed-approx"
+    ],
+    [
+     "sgwif23733",
+     "Chimney Rock Oak Savanna",
+     30,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-4254"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-8668",
+   "name": "Waterloo Prairie State Natural Area",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgwif23634",
+     "Waterloo Prairie",
+     221,
+     "name"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "72052",
+     "Waterloo Wildlife Area",
+     4186,
+     "reviewed-approx"
+    ],
+    [
+     "sgwic6734",
+     "Waterloo Prairie",
+     221,
+     "reviewed-approx"
+    ],
+    [
+     "sgwif23634",
+     "Waterloo Prairie",
+     221,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-8668"
   }
  ],
  "sample": [
+  {
+   "area": "US-OH",
+   "ref": "US-9442",
+   "name": "Acadia Cliffs State Wildlife Area",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgohe570",
+     "ACADIA CLIFFS",
+     163,
+     "name"
+    ],
+    [
+     "sgohf620",
+     "Acadia Cliffs DNP",
+     163,
+     "name"
+    ],
+    [
+     "sgohb619",
+     "ACADIA CLIFFS (AcdClffsNP)",
+     108,
+     "name"
+    ],
+    [
+     "sgohe571",
+     "ACADIA CLIFFS",
+     108,
+     "name"
+    ],
+    [
+     "sgohf693",
+     "Acadia Cliffs DNP",
+     108,
+     "name"
+    ],
+    [
+     "sgohb2",
+     "ACADIA CLIFFS (AcdClffsWA)",
+     4,
+     "name"
+    ],
+    [
+     "sgohe2",
+     "ACADIA CLIFFS",
+     4,
+     "name"
+    ],
+    [
+     "sgohf416",
+     "Acadia Cliffs DNP",
+     4,
+     "name"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "71613",
+     "Acadia Cliffs Dedicated Nature Preserve",
+     271,
+     "reviewed-approx"
+    ],
+    [
+     "sgohb393",
+     "ACADIA CLIFFS (AcdClffsWA)",
+     163,
+     "reviewed-approx"
+    ],
+    [
+     "sgohe570",
+     "ACADIA CLIFFS",
+     163,
+     "name"
+    ],
+    [
+     "sgohf620",
+     "Acadia Cliffs DNP",
+     163,
+     "name"
+    ],
+    [
+     "sgohb619",
+     "ACADIA CLIFFS (AcdClffsNP)",
+     108,
+     "name"
+    ],
+    [
+     "sgohe571",
+     "ACADIA CLIFFS",
+     108,
+     "name"
+    ],
+    [
+     "sgohf693",
+     "Acadia Cliffs DNP",
+     108,
+     "name"
+    ],
+    [
+     "sgohb2",
+     "ACADIA CLIFFS (AcdClffsWA)",
+     4,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-9442"
+  },
   {
    "area": "US-MI",
    "ref": "US-12789",
@@ -1090,6 +3267,119 @@
    "pota": "https://pota.app/#/park/US-0661"
   },
   {
+   "area": "US-WI",
+   "ref": "US-4254",
+   "name": "Chimney Rock Oak Savanna State Natural Area",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgwif23733",
+     "Chimney Rock Oak Savanna",
+     30,
+     "name"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "272488",
+     "Chimney Rock Wildlife Area",
+     627,
+     "reviewed-approx"
+    ],
+    [
+     "sgwic7343",
+     "Chimney Rock Oak Savanna",
+     30,
+     "reviewed-approx"
+    ],
+    [
+     "sgwif23733",
+     "Chimney Rock Oak Savanna",
+     30,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-4254"
+  },
+  {
+   "area": "US-NH",
+   "ref": "US-13486",
+   "name": "Bellamy River Wildlife Management Area - East Wildlife Management Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "57850",
+     "Bellamy River Wildlife Management Area - West - Lot 2",
+     34,
+     "reviewed-approx"
+    ],
+    [
+     "sgnhb5",
+     "Bellamy River WMA - East",
+     21,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-13486"
+  },
+  {
+   "area": "US-NV",
+   "ref": "US-13178",
+   "name": "Mt. Irish Archaeological Site Archeological Reserve",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sgnvh1238",
+     "Mount Irish",
+     15075,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-13178"
+  },
+  {
+   "area": "US-VT",
+   "ref": "US-3109",
+   "name": "Coolidge State Park",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sgvta18",
+     "Coolidge State Forest",
+     23596,
+     "reviewed-approx"
+    ],
+    [
+     "61205",
+     "Coolidge State Forest",
+     4237,
+     "reviewed-approx"
+    ],
+    [
+     "61234",
+     "Coolidge State Forest",
+     1550,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-3109"
+  },
+  {
    "area": "US-MI",
    "ref": "US-12790",
    "name": "East Branch of the Taquamenon National Wild and Scenic River",
@@ -1113,6 +3403,137 @@
    "held_now": [],
    "by_answer": true,
    "pota": "https://pota.app/#/park/US-12790"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-8668",
+   "name": "Waterloo Prairie State Natural Area",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgwif23634",
+     "Waterloo Prairie",
+     221,
+     "name"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "72052",
+     "Waterloo Wildlife Area",
+     4186,
+     "reviewed-approx"
+    ],
+    [
+     "sgwic6734",
+     "Waterloo Prairie",
+     221,
+     "reviewed-approx"
+    ],
+    [
+     "sgwif23634",
+     "Waterloo Prairie",
+     221,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-8668"
+  },
+  {
+   "area": "US-MI",
+   "ref": "US-13570",
+   "name": "Gladwin Field Trial Wildlife Management Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "71502",
+     "Gladwin Game Unit and Field Trial Area of State Forest",
+     4754,
+     "reviewed-approx"
+    ],
+    [
+     "sgmib88",
+     "Gladwin State Game Area",
+     1354,
+     "reviewed-approx"
+    ],
+    [
+     "mid783",
+     "Gladwin State Game Area",
+     159,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-13570"
+  },
+  {
+   "area": "US-VT",
+   "ref": "US-3131",
+   "name": "Maidstone State Park",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sgvta30",
+     "Maidstone State Forest",
+     442,
+     "reviewed-approx"
+    ],
+    [
+     "61335",
+     "Maidstone State Forest",
+     294,
+     "reviewed-approx"
+    ],
+    [
+     "61334",
+     "Maidstone State Forest",
+     119,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-3131"
+  },
+  {
+   "area": "US-WI",
+   "ref": "US-4244",
+   "name": "Big Bay Sand Spit and Bog State Natural Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "272294",
+     "Big Bay State Park",
+     2514,
+     "reviewed-approx"
+    ],
+    [
+     "sgwic6861",
+     "Big Bay Sand Spit and Bog",
+     963,
+     "reviewed-approx"
+    ],
+    [
+     "sgwif23770",
+     "Big Bay Sand Spit and Bog",
+     963,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-4244"
   },
   {
    "area": "US-MI",
@@ -1159,6 +3580,68 @@
    "pota": "https://pota.app/#/park/US-12793"
   },
   {
+   "area": "US-WA",
+   "ref": "US-12245",
+   "name": "Twin Lakes BLM Recreation Management Area",
+   "old_grade": "official",
+   "new_grade": "approximate",
+   "new_pieces": [
+    [
+     "rma11311",
+     "Twin Lakes Recreation Site",
+     8,
+     "words"
+    ],
+    [
+     "rst11311",
+     "Twin Lakes Recreation Site",
+     8,
+     "words"
+    ],
+    [
+     "sgakg11311",
+     "Twin Lakes Recreation Site",
+     8,
+     "words"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "rma11311",
+     "Twin Lakes Recreation Site",
+     8,
+     "words"
+    ],
+    [
+     "rst11311",
+     "Twin Lakes Recreation Site",
+     8,
+     "words"
+    ],
+    [
+     "sgakg11311",
+     "Twin Lakes Recreation Site",
+     8,
+     "words"
+    ],
+    [
+     "sgwae24273",
+     "Twin Lakes",
+     0,
+     "name · water outline only"
+    ],
+    [
+     "sgwae56106",
+     "Twin Lakes",
+     0,
+     "name · water outline only"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12245"
+  },
+  {
    "area": "US-NV",
    "ref": "US-10345",
    "name": "Carson Lake and Pasture Wildlife Management Area",
@@ -1189,6 +3672,50 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-10345"
+  },
+  {
+   "area": "US-TN",
+   "ref": "US-11858",
+   "name": "Middle Fork Bottoms State Park",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgtna369",
+     "Middle Fork Bottoms State Park",
+     0,
+     "name"
+    ],
+    [
+     "sgtnj259",
+     "Middle Fork Bottoms State Park",
+     0,
+     "name"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "255778",
+     "Middle Fork Forked Deer Refuge",
+     416,
+     "reviewed-approx"
+    ],
+    [
+     "sgtna369",
+     "Middle Fork Bottoms State Park",
+     0,
+     "name"
+    ],
+    [
+     "sgtnj259",
+     "Middle Fork Bottoms State Park",
+     0,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11858"
   },
   {
    "area": "US-DC",
@@ -1286,25 +3813,6 @@
    "pota": "https://pota.app/#/park/US-12234"
   },
   {
-   "area": "US-TN",
-   "ref": "US-6259",
-   "name": "Ozone Falls State Natural Area",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "255603",
-     "Ozone Falls (Cumberland Trail)",
-     45,
-     "name (second name field)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-6259"
-  },
-  {
    "area": "US-TX",
    "ref": "US-0750",
    "name": "Palo Alto Battlefield National Historic Site",
@@ -1324,457 +3832,170 @@
    "pota": "https://pota.app/#/park/US-0750"
   },
   {
-   "area": "US-WA",
-   "ref": "US-10709",
-   "name": "Klickitat National Wild and Scenic River",
-   "old_grade": "pin",
-   "new_grade": "approximate",
+   "area": "US-AL",
+   "ref": "US-4560",
+   "name": "Natchez Trace Trail National Scenic Trail",
+   "old_grade": "approximate",
+   "new_grade": "official",
    "new_pieces": [
     [
-     "fwsr35",
-     "Klickitat, Washington National Wild and Scenic River",
-     4815,
-     "words"
+     "trl4560",
+     "Natchez Trace National Scenic Trail",
+     0,
+     "official trail line (National Park Service): the park is the"
     ]
    ],
-   "old_pieces": [],
+   "old_pieces": [
+    [
+     "3552",
+     "Natchez Trace Parkway",
+     31527,
+     "reviewed-approx"
+    ]
+   ],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-10709"
+   "pota": "https://pota.app/#/park/US-4560"
   },
   {
    "area": "US-CA",
-   "ref": "US-3581",
-   "name": "Torrey Pines Reserve State Conservation Area",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
+   "ref": "US-3586",
+   "name": "Verdugo Mountains State Park",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgcab659",
+     "Verdugo Mountains",
+     252,
+     "name"
+    ]
+   ],
    "old_pieces": [
     [
-     "183836",
-     "Torrey Pines State Reserve",
-     1442,
+     "sgcab659",
+     "Verdugo Mountains",
+     252,
      "name"
+    ],
+    [
+     "183914",
+     "Verdugo Mountains Park Property",
+     252,
+     "reviewed-approx"
     ]
    ],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-3581"
+   "pota": "https://pota.app/#/park/US-3586"
   },
   {
-   "area": "US-ID",
-   "ref": "US-7816",
-   "name": "Henrys Lake Airstrip State Recreation Area",
+   "area": "US-MS",
+   "ref": "US-4560",
+   "name": "Natchez Trace Trail National Scenic Trail",
    "old_grade": "approximate",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
+   "new_grade": "official",
+   "new_pieces": [
     [
-     "199732",
-     "Henrys Lake State Park",
-     607,
-     "words"
-    ]
-   ],
-   "held_now": [
-    "held (rule G-1): a similar-name piece more than 2 km from the pin and "
-   ],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-7816"
-  },
-  {
-   "area": "US-MA",
-   "ref": "US-8393",
-   "name": "Stodder's Neck & Abigail Adams State Park",
-   "old_grade": "approximate",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "59334",
-     "Abigail Adams State Park",
-     5,
-     "words"
-    ],
-    [
-     "59335",
-     "Abigail Adams State Park",
-     5,
-     "words"
-    ],
-    [
-     "sgmaa665637",
-     "Abigail Adams State Park",
-     5,
-     "words"
-    ],
-    [
-     "sgmaa671813",
-     "Abigail Adams State Park",
-     5,
-     "words"
-    ],
-    [
-     "59336",
-     "Abigail Adams State Park",
-     1,
-     "words"
-    ],
-    [
-     "sgmaa697518",
-     "Abigail Adams State Park",
-     1,
-     "words"
-    ],
-    [
-     "sgmab1",
-     "Abigail Adams State Park",
+     "trl4560",
+     "Natchez Trace National Scenic Trail",
      0,
-     "words"
+     "official trail line (National Park Service): the park is the"
     ]
    ],
-   "held_now": [
-    "held (rule G-1): a similar-name piece more than 2 km from the pin and ",
-    "held (rule G-1): a similar-name piece more than 2 km from the pin and ",
-    "held (rule G-1): a similar-name piece more than 2 km from the pin and "
-   ],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-8393"
-  },
-  {
-   "area": "US-ND",
-   "ref": "US-0437",
-   "name": "White Horse Hill Game Preserve",
-   "old_grade": "approximate",
-   "new_grade": "pin",
-   "new_pieces": [],
    "old_pieces": [
     [
-     "5429",
-     "White Horse Hill National Game Preserve",
-     1630,
-     "words"
+     "3552",
+     "Natchez Trace Parkway",
+     31527,
+     "reviewed-approx"
     ]
    ],
-   "held_now": [
-    "held (rule G-1): a similar-name piece more than 2 km from the pin and "
-   ],
+   "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-0437"
+   "pota": "https://pota.app/#/park/US-4560"
   },
   {
    "area": "US-OK",
-   "ref": "US-11714",
-   "name": "Ozark Plateau National Wildlife Management Area",
-   "old_grade": "approximate",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "odw79",
-     "Ozark Plateau Wildlife Management Area",
-     2088,
-     "words"
-    ],
-    [
-     "sgokc79",
-     "Ozark Plateau",
-     2088,
-     "words"
-    ],
-    [
-     "sgokb28",
-     "Ozark Plateau Wildlife Management Area",
-     0,
-     "words"
-    ],
-    [
-     "sgokb31",
-     "Ozark Plateau Wildlife Management Area",
-     0,
-     "words"
-    ],
-    [
-     "sgokb32",
-     "Ozark Plateau Wildlife Management Area",
-     0,
-     "words"
-    ]
-   ],
-   "held_now": [
-    "held (rule G-1): a similar-name piece more than 2 km from the pin and ",
-    "held (rule G-1): a similar-name piece more than 2 km from the pin and ",
-    "held (rule G-1): a similar-name piece more than 2 km from the pin and "
-   ],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-11714"
-  },
-  {
-   "area": "US-UT",
-   "ref": "US-5779",
-   "name": "Willard Spur State Waterfowl Management Area",
-   "old_grade": "approximate",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "utw261",
-     "Willard Spur WMA",
-     13441,
-     "words"
-    ],
-    [
-     "sgutb261",
-     "Willard Spur WMA",
-     0,
-     "words"
-    ]
-   ],
-   "held_now": [
-    "held (rule G-1): a similar-name piece more than 2 km from the pin and ",
-    "held (rule G-1): a similar-name piece more than 2 km from the pin and "
-   ],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-5779"
-  },
-  {
-   "area": "US-MI",
-   "ref": "US-12798",
-   "name": "Sturgeon (Hiawatha) National Wild and Scenic River",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "fwsr163",
-     "Sturgeon, Michigan (Hiawatha NF) National Wild and Scenic River",
-     4860,
-     "name (Forest Service river: state and forest dropped)"
-    ],
-    [
-     "fwsr61",
-     "Sturgeon, Michigan (Hiawatha NF) National Wild and Scenic River",
-     3532,
-     "name (Forest Service river: state and forest dropped)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-12798"
-  },
-  {
-   "area": "US-MI",
-   "ref": "US-12799",
-   "name": "Sturgeon (Ottawa) National Wild and Scenic River",
+   "ref": "US-6365",
+   "name": "Osage Wildlife Management Area",
    "old_grade": "approximate",
    "new_grade": "official",
    "new_pieces": [
     [
-     "fwsr250",
-     "Sturgeon, Michigan (Ottawa NF) National Wild and Scenic River",
-     5573,
-     "name (Forest Service river: state and forest dropped)"
+     "sgokb18",
+     "Osage Wildlife Management Area - Western Wall Unit",
+     0,
+     "name"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "odw76",
+     "Osage Wildlife Management Area - Western Wall",
+     7317,
+     "reviewed-approx"
     ],
     [
-     "fwsr164",
-     "Sturgeon, Michigan (Ottawa NF) National Wild and Scenic River",
-     1621,
-     "name (Forest Service river: state and forest dropped)"
-    ]
-   ],
-   "old_pieces": [
+     "odw75",
+     "Osage Wildlife Management Area - Rock Creek",
+     3729,
+     "reviewed-approx"
+    ],
     [
-     "fwsr250",
-     "Sturgeon, Michigan (Ottawa NF) National Wild and Scenic River",
-     5573,
-     "words"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-12799"
-  },
-  {
-   "area": "US-MI",
-   "ref": "US-12792",
-   "name": "Manistee National Wild and Scenic River",
-   "old_grade": "pin",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "fwsr44",
-     "Manistee, Michigan National Wild and Scenic River",
-     8919,
-     "name (Forest Service river: state and forest dropped)"
-    ]
-   ],
-   "old_pieces": [],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-12792"
-  },
-  {
-   "area": "US-MI",
-   "ref": "US-1502",
-   "name": "Hart-Montague Trail State Park",
-   "old_grade": "approximate",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl1502",
-     "Hart-Montague Trail State Park",
+     "sgokb18",
+     "Osage Wildlife Management Area - Western Wall Unit",
      0,
-     "official trail line (Michigan Department of Natural Resource"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "71288",
-     "Hart-Montague Bicycle Trail Park",
-     3973,
-     "words"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-1502"
-  },
-  {
-   "area": "US-DC",
-   "ref": "US-0795",
-   "name": "World War I National Memorial",
-   "old_grade": "official",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "3279",
-     "World War I Memorial",
-     2,
      "name"
     ]
    ],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-0795"
+   "pota": "https://pota.app/#/park/US-6365"
   },
   {
-   "area": "US-IL",
-   "ref": "US-10786",
-   "name": "Siloam Springs Buckhorn Unit State Park",
+   "area": "US-CO",
+   "ref": "US-1208",
+   "name": "Arkansas River Headwaters Recreation Park",
    "old_grade": "approximate",
    "new_grade": "pin",
    "new_pieces": [],
    "old_pieces": [
     [
-     "sgila1569",
-     "Siloam Springs State Park",
-     6033,
-     "words"
+     "cow29",
+     "Arkansas Headwaters RA - BLM Site",
+     1529,
+     "reviewed-approx"
     ],
     [
-     "70901",
-     "Siloam Springs State Park",
-     5854,
-     "words"
+     "184168",
+     "Arkansas Headwaters",
+     1286,
+     "reviewed-approx"
     ]
    ],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-10786"
+   "pota": "https://pota.app/#/park/US-1208"
   },
   {
-   "area": "US-IL",
-   "ref": "US-4092",
-   "name": "Salem Unit of Apple River Canyon State Park",
+   "area": "US-HI",
+   "ref": "US-10913",
+   "name": "Diamond Head Summit State Trail",
    "old_grade": "approximate",
    "new_grade": "pin",
    "new_pieces": [],
    "old_pieces": [
     [
-     "sgila2162",
-     "Apple River Canyon State Park",
-     2030,
-     "words"
-    ],
-    [
-     "70840",
-     "Apple River Canyon State Park",
-     1931,
-     "words"
+     "195365",
+     "Diamond Head State Monument",
+     503,
+     "reviewed-approx"
     ]
    ],
    "held_now": [],
    "by_answer": false,
-   "pota": "https://pota.app/#/park/US-4092"
-  },
-  {
-   "area": "US-IN",
-   "ref": "US-4182",
-   "name": "Trine at Pokagon State Recreation Area",
-   "old_grade": "approximate",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "sgina4850",
-     "Pokagon State Park",
-     975,
-     "words"
-    ],
-    [
-     "sginc4850",
-     "Pokagon State Park",
-     975,
-     "words"
-    ],
-    [
-     "201110",
-     "Pokagon State Park",
-     939,
-     "words"
-    ],
-    [
-     "sgina4851",
-     "Pokagon State Park",
-     258,
-     "words"
-    ],
-    [
-     "sginc4851",
-     "Pokagon State Park",
-     258,
-     "words"
-    ]
-   ],
-   "held_now": [
-    "held (rule G-1): a similar-name piece more than 2 km from the pin and ",
-    "held (rule G-1): a similar-name piece more than 2 km from the pin and ",
-    "held (rule G-1): a similar-name piece more than 2 km from the pin and "
-   ],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-4182"
-  },
-  {
-   "area": "US-WA",
-   "ref": "US-12318",
-   "name": "Dishman Hills State Conservation Area",
-   "old_grade": "approximate",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "271347",
-     "Dishman Hills Natural Resources Conservation Area",
-     69,
-     "words"
-    ]
-   ],
-   "held_now": [
-    "held (rule G-1): a similar-name piece more than 2 km from the pin and "
-   ],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-12318"
+   "pota": "https://pota.app/#/park/US-10913"
   }
  ]
 }
