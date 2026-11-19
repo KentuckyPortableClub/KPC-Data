@@ -1,0 +1,435 @@
+{
+ "graders": {
+  "agent": {
+   "answers": 194,
+   "plants": 1,
+   "plants_right": 1,
+   "plants_unsure": 0,
+   "counts": true,
+   "missed": [],
+   "unsure": 24,
+   "with_a_page": 107,
+   "decided": 170
+  }
+ },
+ "parks": {
+  "US-0022": {
+   "area": "US-AK",
+   "name": "Denali National Park",
+   "stratum": "plant:strong",
+   "plant": true,
+   "outcome": "WRONG LAND",
+   "letters": [
+    "A"
+   ],
+   "graded": "single",
+   "verdicts": {
+    "A": "NO",
+    "B": "NO",
+    "C": "NO",
+    "D": "YES",
+    "E": "NO",
+    "F": "NO",
+    "G": "NO"
+   },
+   "class": "verified",
+   "flags": [],
+   "weakest": "name",
+   "act": 86
+  },
+  "US-7293": {
+   "area": "US-AR",
+   "name": "Hobbs State Park Wildlife Management Area",
+   "stratum": "second-look",
+   "plant": false,
+   "outcome": "MISSING PIECES",
+   "letters": [
+    "E"
+   ],
+   "graded": "single",
+   "verdicts": {
+    "A": "NO",
+    "B": "YES",
+    "C": "NO",
+    "D": "YES",
+    "E": "YES",
+    "F": "NO"
+   },
+   "class": "flagged",
+   "flags": [
+    "SIZE_BIG",
+    "SHARED"
+   ],
+   "weakest": "name",
+   "act": 65
+  },
+  "US-1085": {
+   "area": "US-AR",
+   "stratum": "second-look",
+   "sealed": true
+  },
+  "US-9167": {
+   "area": "US-AR",
+   "name": "Lake Hinkle State Recreation Area",
+   "stratum": "second-look",
+   "plant": false,
+   "outcome": "RIGHT",
+   "letters": [],
+   "graded": "single",
+   "verdicts": {
+    "A": "NO",
+    "B": "NO",
+    "C": "NO",
+    "D": "UNSURE",
+    "E": "YES"
+   },
+   "class": "two",
+   "flags": [],
+   "weakest": "name",
+   "act": 14
+  },
+  "US-1915": {
+   "area": "US-FL",
+   "stratum": "second-look",
+   "sealed": true
+  },
+  "US-8371": {
+   "area": "US-FL",
+   "stratum": "second-look",
+   "sealed": true
+  },
+  "US-12127": {
+   "area": "US-FL",
+   "name": "Stormwater Treatment Area 1 West State Conservation Area",
+   "stratum": "plant:hard",
+   "plant": true,
+   "outcome": "UNSURE",
+   "letters": [],
+   "graded": "single",
+   "verdicts": {
+    "A": "BIGGER",
+    "B": "NO",
+    "C": "UNSURE",
+    "D": "UNSURE",
+    "E": "UNSURE",
+    "F": "NO",
+    "G": "UNSURE",
+    "H": "UNSURE"
+   },
+   "class": "pin",
+   "flags": [],
+   "weakest": null,
+   "act": 28
+  },
+  "US-10657": {
+   "area": "US-ID",
+   "name": "Milner Historic Recreation Area BLM Historic Area",
+   "stratum": "second-look",
+   "plant": false,
+   "outcome": "MISSING PIECES",
+   "letters": [
+    "A",
+    "G"
+   ],
+   "graded": "single",
+   "verdicts": {
+    "A": "YES",
+    "B": "NO",
+    "C": "NO",
+    "D": "YES",
+    "E": "BIGGER",
+    "F": "NO",
+    "G": "YES"
+   },
+   "class": "verified",
+   "flags": [],
+   "weakest": "reviewed-approx",
+   "act": 26
+  },
+  "US-12646": {
+   "area": "US-MT",
+   "name": "Seven Sisters Wildlife Management Area",
+   "stratum": "second-look",
+   "plant": false,
+   "outcome": "RIGHT (part unsure)",
+   "letters": [
+    "C",
+    "I"
+   ],
+   "graded": "single",
+   "verdicts": {
+    "A": "BIGGER",
+    "B": "YES",
+    "C": "UNSURE",
+    "D": "NO",
+    "E": "NO",
+    "F": "YES",
+    "G": "NO",
+    "H": "YES",
+    "I": "UNSURE",
+    "J": "NO",
+    "K": "BIGGER",
+    "L": "NO"
+   },
+   "class": "flagged",
+   "flags": [
+    "SHARED"
+   ],
+   "weakest": "name",
+   "act": 4
+  },
+  "US-10524": {
+   "area": "US-MT",
+   "name": "Acton (BLM) Recreation Site",
+   "stratum": "second-look",
+   "plant": false,
+   "outcome": "MISSING PIECES",
+   "letters": [
+    "D"
+   ],
+   "graded": "single",
+   "verdicts": {
+    "A": "BIGGER",
+    "B": "YES",
+    "C": "NO",
+    "D": "YES"
+   },
+   "class": "verified",
+   "flags": [],
+   "weakest": "reviewed-approx",
+   "act": 19
+  },
+  "US-12918": {
+   "area": "US-MT",
+   "name": "Seven Sisters State Fish and Wildlife Area",
+   "stratum": "second-look",
+   "plant": false,
+   "outcome": "WRONG LAND",
+   "letters": [
+    "F",
+    "G",
+    "I"
+   ],
+   "graded": "single",
+   "verdicts": {
+    "A": "BIGGER",
+    "B": "YES",
+    "C": "YES",
+    "D": "NO",
+    "E": "BIGGER",
+    "F": "NO",
+    "G": "NO",
+    "H": "YES",
+    "I": "NO",
+    "J": "NO"
+   },
+   "class": "flagged",
+   "flags": [
+    "SHARED"
+   ],
+   "weakest": "name",
+   "act": 4
+  },
+  "US-2644": {
+   "area": "US-NH",
+   "name": "Cardigan Mountain State Park",
+   "stratum": "second-look",
+   "plant": false,
+   "outcome": "MISSING PIECES",
+   "letters": [
+    "B",
+    "E",
+    "G"
+   ],
+   "graded": "single",
+   "verdicts": {
+    "A": "NO",
+    "B": "YES",
+    "C": "UNSURE",
+    "D": "NO",
+    "E": "YES",
+    "F": "YES",
+    "G": "YES",
+    "H": "NO"
+   },
+   "class": "verified",
+   "flags": [
+    "DESIG"
+   ],
+   "weakest": "reviewed-approx",
+   "act": 31
+  },
+  "US-11992": {
+   "area": "US-NJ",
+   "stratum": "second-look",
+   "sealed": true
+  },
+  "US-10844": {
+   "area": "US-NV",
+   "stratum": "second-look",
+   "sealed": true
+  },
+  "US-13126": {
+   "area": "US-NV",
+   "stratum": "second-look",
+   "sealed": true
+  },
+  "US-9442": {
+   "area": "US-OH",
+   "name": "Acadia Cliffs State Wildlife Area",
+   "stratum": "second-look",
+   "plant": false,
+   "outcome": "MISSING PIECES",
+   "letters": [
+    "H",
+    "I"
+   ],
+   "graded": "single",
+   "verdicts": {
+    "A": "NO",
+    "B": "NO",
+    "C": "YES",
+    "D": "NO",
+    "E": "YES",
+    "F": "YES",
+    "G": "YES",
+    "H": "YES",
+    "I": "YES"
+   },
+   "class": "verified",
+   "flags": [],
+   "weakest": "name",
+   "act": 21
+  },
+  "US-6365": {
+   "area": "US-OK",
+   "stratum": "second-look",
+   "sealed": true
+  },
+  "US-13075": {
+   "area": "US-OR",
+   "stratum": "second-look",
+   "sealed": true
+  },
+  "US-5461": {
+   "area": "US-OR",
+   "name": "Tillamook State Forest",
+   "stratum": "second-look",
+   "plant": false,
+   "outcome": "TOO BIG",
+   "letters": [
+    "D"
+   ],
+   "graded": "single",
+   "verdicts": {
+    "A": "UNSURE",
+    "B": "YES",
+    "C": "YES",
+    "D": "BIGGER",
+    "E": "NO",
+    "F": "UNSURE",
+    "G": "NO",
+    "H": "NO",
+    "I": "YES"
+   },
+   "class": "two",
+   "flags": [],
+   "weakest": "reviewed-approx",
+   "act": 149
+  },
+  "US-10021": {
+   "area": "US-OR",
+   "stratum": "second-look",
+   "sealed": true
+  },
+  "US-12064": {
+   "area": "US-TN",
+   "name": "Henderson Swamp State Wilderness Area",
+   "stratum": "second-look",
+   "plant": false,
+   "outcome": "MISSING PIECES",
+   "letters": [
+    "A",
+    "C",
+    "E"
+   ],
+   "graded": "single",
+   "verdicts": {
+    "A": "YES",
+    "B": "NO",
+    "C": "YES",
+    "D": "YES",
+    "E": "YES"
+   },
+   "class": "verified",
+   "flags": [
+    "DESIG"
+   ],
+   "weakest": "reviewed-approx",
+   "act": 20
+  },
+  "US-3109": {
+   "area": "US-VT",
+   "stratum": "second-look",
+   "sealed": true
+  },
+  "US-3131": {
+   "area": "US-VT",
+   "stratum": "second-look",
+   "sealed": true
+  },
+  "US-12413": {
+   "area": "US-WA",
+   "name": "Spokane Plains Battlefield State Heritage Area",
+   "stratum": "second-look",
+   "plant": false,
+   "outcome": "RIGHT",
+   "letters": [],
+   "graded": "single",
+   "verdicts": {
+    "A": "YES",
+    "B": "NO",
+    "C": "NO",
+    "D": "YES",
+    "E": "YES",
+    "F": "NO",
+    "G": "NO",
+    "H": "NO",
+    "I": "NO",
+    "J": "NO"
+   },
+   "class": "two",
+   "flags": [],
+   "weakest": "name",
+   "act": 28
+  },
+  "US-10695": {
+   "area": "US-WA",
+   "stratum": "second-look",
+   "sealed": true
+  }
+ },
+ "disputes": [],
+ "rates": {
+  "ALL": {
+   "parks": 23,
+   "decided": 22,
+   "unsure": 1,
+   "disputed": 0,
+   "wrong_land": "2 of 22 = 9.1% (range 1.1-29.2%, at most 25.9%)",
+   "too_big": "2 of 22 = 9.1% (range 1.1-29.2%, at most 25.9%)",
+   "missing_pieces": "13 of 22 = 59.1% (range 36.4-79.3%, at most 76.7%)",
+   "right": "5 of 22 = 22.7% (range 7.8-45.4%, at most 42.0%)"
+  },
+  "second-look": {
+   "parks": 23,
+   "decided": 22,
+   "unsure": 1,
+   "disputed": 0,
+   "wrong_land": "2 of 22 = 9.1% (range 1.1-29.2%, at most 25.9%)",
+   "too_big": "2 of 22 = 9.1% (range 1.1-29.2%, at most 25.9%)",
+   "missing_pieces": "13 of 22 = 59.1% (range 36.4-79.3%, at most 76.7%)",
+   "right": "5 of 22 = 22.7% (range 7.8-45.4%, at most 42.0%)"
+  }
+ }
+}
