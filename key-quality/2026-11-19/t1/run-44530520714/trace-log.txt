@@ -1,0 +1,80 @@
+13:20:23 matcher inputs: band_junctions on, box_mask on, dark_ring on
+13:20:23 official acres filled in for 0 map row(s) from /nonexistent
+13:20:23 == US-10208
+13:20:30    picture junction candidates: 26 (from 6382 LSD segments)
+13:20:31    TIGER primary roads: 0
+13:20:32    TIGER secondary roads: 5
+13:20:34    TIGER local roads: 256
+13:20:35    hydro.nationalmap.gov/robots.txt answered 403: treated as Disallow: / (STOP); nothing is read from this host
+13:20:35    water source skipped (robots): robots: hydro.nationalmap.gov robots.txt does not allow /arcgis/rest/services/nhd/MapServer/6/query (robots.txt answered 403); not read, no other path tried
+13:20:35    NHD flowlines: 0
+13:20:37    TIGERweb linear hydrography: 51
+13:20:38    TIGERweb areal hydrography: 6
+13:20:44    BLM PLSS sections: 61
+13:20:44    basemap control-point candidates: 189 (US Census TIGERweb Transportation (roads); US Census TIGERweb hydrography (water lines, shores); BLM CadNSDI PLSS sections)
+13:20:52    -> NO FIT fit_m=40.2 n=7 decoy=6 (score 6.4) | leave-one-out RMS 85.6 m is not under 50 m; match not better than chance (6 points, score 5.6 vs 6 points, score 6.4 on a rotated decoy basemap) (29s)
+13:20:52 == US-10223
+13:20:54    -> NEEDS A PERSON fit_m=0.0 n=0 decoy= | clipped: 3% of the outline runs along the picture edge; the park continues off this sheet (1s)
+13:20:54 == US-10309
+13:21:00    picture junction candidates: 16 (from 8013 LSD segments)
+13:21:01    TIGER primary roads: 0
+13:21:02    TIGER secondary roads: 0
+13:21:03    TIGER local roads: 148
+13:21:03    water source skipped (robots): robots: hydro.nationalmap.gov robots.txt does not allow /arcgis/rest/services/nhd/MapServer/6/query (robots.txt answered 403); not read, no other path tried
+13:21:03    NHD flowlines: 0
+13:21:05    TIGERweb linear hydrography: 66
+13:21:06    TIGERweb areal hydrography: 230
+13:21:09    BLM PLSS sections: 55
+13:21:10    basemap control-point candidates: 133 (US Census TIGERweb Transportation (roads); US Census TIGERweb hydrography (water lines, shores); BLM CadNSDI PLSS sections)
+13:21:16    -> NO FIT fit_m=8.4 n=4 decoy=4 (score 4.7) | leave-one-out RMS 124.2 m is not under 50 m; match not better than chance (4 points, score 4.0 vs 4 points, score 4.7 on a rotated decoy basemap); the basemap's roads and water do not sit on the picture's lines (line z 0.9, 15% on a line; need z >= 2) (23s)
+13:21:16 == US-11073
+13:21:22    picture junction candidates: 4 (from 3986 LSD segments)
+13:21:22    TIGER primary roads: 0
+13:21:23    TIGER secondary roads: 10
+13:21:24    TIGER local roads: 107
+13:21:24    water source skipped (robots): robots: hydro.nationalmap.gov robots.txt does not allow /arcgis/rest/services/nhd/MapServer/6/query (robots.txt answered 403); not read, no other path tried
+13:21:24    NHD flowlines: 0
+13:21:27    TIGERweb linear hydrography: 132
+13:21:28    TIGERweb areal hydrography: 101
+13:21:31    BLM PLSS sections: 38
+13:21:32    basemap control-point candidates: 158 (US Census TIGERweb Transportation (roads); US Census TIGERweb hydrography (water lines, shores); BLM CadNSDI PLSS sections)
+13:21:40    -> NO FIT fit_m=20.9 n=3 decoy=3 (score 3.7) | leave-one-out RMS 72.9 m is not under 50 m; match not better than chance (3 points, score 3.5 vs 3 points, score 3.7 on a rotated decoy basemap) (24s)
+13:21:40 == US-11771
+13:21:46    picture junction candidates: 20 (from 2814 LSD segments)
+13:21:46    TIGER primary roads: 0
+13:21:47    TIGER secondary roads: 11
+13:21:48    TIGER local roads: 157
+13:21:48    water source skipped (robots): robots: hydro.nationalmap.gov robots.txt does not allow /arcgis/rest/services/nhd/MapServer/6/query (robots.txt answered 403); not read, no other path tried
+13:21:48    NHD flowlines: 0
+13:21:50    TIGERweb linear hydrography: 42
+13:21:51    TIGERweb areal hydrography: 7
+13:21:55    BLM PLSS sections: 55
+13:21:55    basemap control-point candidates: 117 (US Census TIGERweb Transportation (roads); US Census TIGERweb hydrography (water lines, shores); BLM CadNSDI PLSS sections)
+13:22:01    -> NO FIT fit_m=9.9 n=5 decoy=5 (score 5.2) | leave-one-out RMS 76.9 m is not under 50 m; match not better than chance (5 points, score 4.6 vs 5 points, score 5.2 on a rotated decoy basemap); the basemap's roads and water do not sit on the picture's lines (line z 1.0, 11% on a line; need z >= 2) (21s)
+13:22:01 == US-11892
+13:22:02    -> DRAWN fit_m=1.3 n=0 decoy= | placed by the map's own georeference (residual 1.3 m, 1.84 m/px); checked: pin on page, scale plausible, size within the limit for the park type; boundary colour chosen at the POTA pin (1 of 1 shapes in that colour are at the pin); placed by the map's own coordinates (GeoPDF (ISO 32000 /GPTS)), no basemap matching (1s)
+13:22:02 == US-12581
+13:22:03    -> DRAWN fit_m=0.9 n=0 decoy= | placed by the map's own georeference (residual 0.9 m, 1.67 m/px); checked: pin on page, scale plausible, size within the limit for the park type; boundary colour chosen at the POTA pin (1 of 1 shapes in that colour are at the pin); placed by the map's own coordinates (GeoPDF (ISO 32000 /GPTS)), no basemap matching; traced outline self-intersected; repaired with make_valid (1s)
+13:22:03 == US-3477
+13:22:12    picture junction candidates: 15 (from 9693 LSD segments)
+13:22:12    TIGER primary roads: 6
+13:22:13    TIGER secondary roads: 29
+13:22:14    TIGER local roads: 1589
+13:22:14    water source skipped (robots): robots: hydro.nationalmap.gov robots.txt does not allow /arcgis/rest/services/nhd/MapServer/6/query (robots.txt answered 403); not read, no other path tried
+13:22:14    NHD flowlines: 0
+13:22:16    TIGERweb linear hydrography: 4
+13:22:17    TIGERweb areal hydrography: 20
+13:22:21    BLM PLSS sections: 11
+13:22:21    basemap control-point candidates: 202 (US Census TIGERweb Transportation (roads); US Census TIGERweb hydrography (water lines, shores); BLM CadNSDI PLSS sections)
+13:22:29    -> NO FIT fit_m=11.6 n=5 decoy=5 (score 4.9) | leave-one-out RMS 67.5 m is not under 50 m; match not better than chance (5 points, score 4.9 vs 5 points, score 4.9 on a rotated decoy basemap); the basemap's roads and water do not sit on the picture's lines (line z 1.5, 15% on a line; need z >= 2) (26s)
+13:22:29 == US-5171
+13:22:30    -> DRAWN fit_m=1.7 n=0 decoy= | placed by the map's own georeference (residual 1.7 m, 2.12 m/px); checked: pin on page, scale plausible, size within the limit for the park type; boundary colour chosen at the POTA pin (1 of 3 shapes in that colour are at the pin); placed by the map's own coordinates (GeoPDF (ISO 32000 /GPTS)), no basemap matching; picture shows 3 shapes in the boundary colour; kept 1 (containing the POTA pin); 2 more shape(s) in the park colour at 502-1169 m not joined; they may be other units of this park or a neighbouring park: check by hand (1s)
+13:22:30 == US-5341
+13:22:32    -> DRAWN fit_m=0.6 n=0 decoy= | placed by the map's own georeference (residual 0.6 m, 1.40 m/px); checked: pin on page, scale plausible, size within the limit for the park type; boundary colour chosen at the POTA pin (1 of 1 shapes in that colour are at the pin); placed by the map's own coordinates (GeoPDF (ISO 32000 /GPTS)), no basemap matching (2s)
+13:22:32 == US-8076
+13:22:34    -> NO LINE fit_m= n=0 decoy= | no closed shape in any colour contains or runs within 200 m of the POTA pin on this page (pin at 1245, 1996 px); the colour may need boundary_rgb in index.json (3s)
+13:22:34 == US-8626
+13:22:36    -> DRAWN fit_m=2.3 n=0 decoy= | placed by the map's own georeference (residual 2.3 m, 2.51 m/px); checked: pin on page, scale plausible, size within the limit for the park type; boundary colour chosen at the POTA pin (1 of 1 shapes in that colour are at the pin); placed by the map's own coordinates (GeoPDF (ISO 32000 /GPTS)), no basemap matching (2s)
+13:22:36 == US-8715
+13:22:37    -> NO LINE fit_m= n=0 decoy= | no closed boundary colour / route line found on the picture (try boundary_rgb in index.json) (1s)
+13:22:37 done 13 map(s), 38 web request(s); reports: ../work/traced/report.csv
