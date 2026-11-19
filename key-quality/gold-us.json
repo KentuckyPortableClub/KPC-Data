@@ -90,82 +90,10 @@
 "US-0657": {
 "area": "US-DC",
 "name": "President's Park (White House) Park",
-"graded": "double",
-"date": "2026-11-18",
+"graded": "single",
+"date": "2026-11-19",
 "half": "TUNE",
 "cands": [
-{
-"family": "padus",
-"name": "Anniversary Park",
-"acres": 0,
-"recs": [
-[
-"156617",
-"Anniversary Park",
-0
-]
-],
-"n_recs": 1,
-"verdict": "NO",
-"sources": [
-"packet: other site / park, small or 0.14-3 km away",
-"packet: Anniversary Park 1.1 km"
-]
-},
-{
-"family": "padus",
-"name": "Small Park Rhode Island Ave. And U St., Nw",
-"acres": 0,
-"recs": [
-[
-"5998",
-"Small Park Rhode Island Ave. And U St., Nw",
-0
-]
-],
-"n_recs": 1,
-"verdict": "NO",
-"sources": [
-"packet: other site / park, small or 0.14-3 km away",
-"packet: small park 3.3 km"
-]
-},
-{
-"family": "padus",
-"name": "Pennsylvania Avenue National Historic Site / PAAV",
-"acres": 18,
-"recs": [
-[
-"3162",
-"Pennsylvania Avenue National Historic Site",
-18
-]
-],
-"n_recs": 1,
-"verdict": "NO",
-"sources": [
-"packet: other site / park, small or 0.14-3 km away",
-"packet: Pennsylvania Avenue NHS separate NPS unit 0.14 km"
-]
-},
-{
-"family": "padus",
-"name": "World War I Memorial / WWIM",
-"acres": 2,
-"recs": [
-[
-"3279",
-"World War I Memorial",
-2
-]
-],
-"n_recs": 1,
-"verdict": "NO",
-"sources": [
-"packet: other site / park, small or 0.14-3 km away",
-"packet: WWI Memorial 0.16 km"
-]
-},
 {
 "family": "padus",
 "name": "National Capital Parks / NACA",
@@ -180,44 +108,7 @@
 "n_recs": 1,
 "verdict": "BIGGER",
 "sources": [
-"packet: National Capital Parks 3,908 acres, pin inside",
-"packet: National Capital Parks 3908 ac pin inside"
-]
-},
-{
-"family": "padus",
-"name": "Kogan Plaza - Veteran's Memorial Park - Monroe Court",
-"acres": 2,
-"recs": [
-[
-"156619",
-"Kogan Plaza - Veteran's Memorial Park - Monroe Court",
-2
-]
-],
-"n_recs": 1,
-"verdict": "NO",
-"sources": [
-"packet: other site / park, small or 0.14-3 km away",
-"packet: Kogan Plaza 1.1 km"
-]
-},
-{
-"family": "padus",
-"name": "Chesapeake and Ohio Canal National Historical Park / CHOH",
-"acres": 323,
-"recs": [
-[
-"3192",
-"Chesapeake and Ohio Canal National Historical Park",
-323
-]
-],
-"n_recs": 1,
-"verdict": "NO",
-"sources": [
-"packet: other site / park, small or 0.14-3 km away",
-"packet: C&O Canal 2.2 km"
+"https://www.nps.gov/whho/planyourvisit/explore-president-s-park.htm"
 ]
 },
 {
@@ -234,8 +125,58 @@
 "n_recs": 1,
 "verdict": "YES",
 "sources": [
-"packet: White House unit NPS 18 acres, 0.13 km from pin",
-"https://home.nps.gov/whho/planyourvisit/explore-president-s-park.htm"
+"https://www.nps.gov/whho/planyourvisit/explore-president-s-park.htm"
+]
+},
+{
+"family": "padus",
+"name": "World War I Memorial / WWIM",
+"acres": 2,
+"recs": [
+[
+"3279",
+"World War I Memorial",
+2
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"https://www.nps.gov/whho/planyourvisit/explore-president-s-park.htm"
+]
+},
+{
+"family": "padus",
+"name": "Pennsylvania Avenue National Historic Site / PAAV",
+"acres": 18,
+"recs": [
+[
+"3162",
+"Pennsylvania Avenue National Historic Site",
+18
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"https://www.nps.gov/whho/planyourvisit/explore-president-s-park.htm"
+]
+},
+{
+"family": "dcnps",
+"name": "President's Park, White House Ground, Exec. Office, Treasury Bldg.",
+"acres": 83,
+"recs": [
+[
+"dcnps293",
+"President's Park, White House Ground, Exec. Office, Treasury Bldg.",
+83
+]
+],
+"n_recs": 1,
+"verdict": "YES",
+"sources": [
+"https://www.nps.gov/whho/planyourvisit/explore-president-s-park.htm"
 ]
 }
 ]
@@ -9156,12 +9097,2568 @@
 ]
 }
 ]
+},
+"US-0022": {
+"area": "US-AK",
+"name": "Denali National Park",
+"graded": "single",
+"date": "2026-11-19",
+"half": "TUNE",
+"cands": [
+{
+"family": "padus",
+"name": "Denali National Preserve / DENA",
+"acres": 1311169,
+"recs": [
+[
+"3300",
+"Denali National Preserve",
+1311169
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"https://www.nps.gov/dena/learn/management/statistics.htm"
+]
+},
+{
+"family": "sgakg",
+"name": "Denali Highway SRMA",
+"acres": 557672,
+"recs": [
+[
+"sgakg11428",
+"Denali Highway SRMA",
+557672
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"https://www.nps.gov/dena/learn/management/statistics.htm"
+]
+},
+{
+"family": "padus",
+"name": "Denali National Park / DENA",
+"acres": 4680746,
+"recs": [
+[
+"3435",
+"Denali National Park",
+4680746
+]
+],
+"n_recs": 1,
+"verdict": "YES",
+"sources": [
+"https://www.nps.gov/dena/learn/management/statistics.htm"
+]
+},
+{
+"family": "padus",
+"name": "State Tentatively Approved (tad)",
+"acres": 43045454,
+"recs": [
+[
+"165918",
+"State Tentatively Approved (tad)",
+43045454
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"https://www.nps.gov/dena/learn/management/statistics.htm"
+]
+},
+{
+"family": "padus",
+"name": "State Land Disposals - Municipal Purposes",
+"acres": 676504,
+"recs": [
+[
+"165867",
+"State Land Disposals - Municipal Purposes",
+676504
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"https://www.nps.gov/dena/learn/management/statistics.htm"
+]
+},
+{
+"family": "rst",
+"name": "Denali Highway SRMA",
+"acres": 557672,
+"recs": [
+[
+"rst11428",
+"Denali Highway SRMA",
+557672
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"https://www.nps.gov/dena/learn/management/statistics.htm"
+]
+},
+{
+"family": "padus",
+"name": "State Land Disposals - Other Than Municipal",
+"acres": 1172504,
+"recs": [
+[
+"165868",
+"State Land Disposals - Other Than Municipal",
+1165571
+],
+[
+"165871",
+"State Land Disposals - Other Than Municipal",
+6933
+]
+],
+"n_recs": 2,
+"verdict": "NO",
+"sources": [
+"https://www.nps.gov/dena/learn/management/statistics.htm"
+]
+}
+]
+},
+"US-7293": {
+"area": "US-AR",
+"name": "Hobbs State Park Wildlife Management Area",
+"graded": "double",
+"date": "2026-11-19",
+"half": "TUNE",
+"cands": [
+{
+"family": "padus",
+"name": "Hobbs State Park / Conservation Management Area",
+"acres": 12157,
+"recs": [
+[
+"166869",
+"Hobbs State Park / Conservation Management Area",
+12157
+]
+],
+"n_recs": 1,
+"verdict": "YES",
+"sources": [
+"https://www.agfc.com/en/zone-map/710/",
+"https://www.agfc.com/en/zone-map/710/"
+]
+},
+{
+"family": "arw",
+"name": "Kirk Dupps Beaver Lake WMA",
+"acres": 38789,
+"recs": [
+[
+"arw1783",
+"Kirk Dupps Beaver Lake WMA",
+0
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"https://www.agfc.com/en/zone-map/710/",
+"https://www.agfc.com/en/zone-map/710/"
+]
+},
+{
+"family": "sgarc",
+"name": "Beaver Lake",
+"acres": 27759,
+"recs": [
+[
+"sgarc130",
+"Beaver Lake",
+0
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"https://www.agfc.com/en/zone-map/710/",
+"https://www.agfc.com/en/zone-map/710/"
+]
+},
+{
+"family": "sgarb",
+"name": "Hobbs State Park-Conservation Area",
+"acres": 12178,
+"recs": [
+[
+"sgarb7",
+"Hobbs State Park-Conservation Area",
+12178
+]
+],
+"n_recs": 1,
+"verdict": "YES",
+"sources": [
+"https://www.agfc.com/en/zone-map/710/",
+"https://www.agfc.com/en/zone-map/710/"
+]
+},
+{
+"family": "arw",
+"name": "Hobbs State Park Conservation Area WMA",
+"acres": 12063,
+"recs": [
+[
+"arw1722",
+"Hobbs State Park Conservation Area WMA",
+0
+]
+],
+"n_recs": 1,
+"verdict": "YES",
+"sources": [
+"https://www.agfc.com/en/zone-map/710/",
+"https://www.agfc.com/en/zone-map/710/"
+]
+},
+{
+"family": "padus",
+"name": "Beaver Recreation Area / BEAVER",
+"acres": 38135,
+"recs": [
+[
+"2491",
+"Beaver Recreation Area",
+38135
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"packet: USACE Beaver recreation area, pin outside",
+"https://www.agfc.com/en/zone-map/710/"
+]
+}
+]
+},
+"US-1085": {
+"area": "US-AR",
+"name": "Hobbs State Park",
+"graded": "double",
+"date": "2026-11-19",
+"half": "TUNE",
+"cands": [
+{
+"family": "sgarc",
+"name": "Beaver Lake",
+"acres": 27759,
+"recs": [
+[
+"sgarc130",
+"Beaver Lake",
+0
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"https://www.agfc.com/en/zone-map/710/",
+"https://www.agfc.com/en/zone-map/710/"
+]
+},
+{
+"family": "sgarb",
+"name": "Hobbs State Park-Conservation Area",
+"acres": 12178,
+"recs": [
+[
+"sgarb7",
+"Hobbs State Park-Conservation Area",
+12178
+]
+],
+"n_recs": 1,
+"verdict": "YES",
+"sources": [
+"https://www.arkansasstateparks.com/parks/hobbs-state-park-conservation-area",
+"https://www.arkansasstateparks.com/parks/hobbs-state-park-conservation-area"
+]
+},
+{
+"family": "padus",
+"name": "Beaver Recreation Area / BEAVER",
+"acres": 38135,
+"recs": [
+[
+"2491",
+"Beaver Recreation Area",
+38135
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"packet: USACE Beaver recreation area, pin outside (1.8 km)",
+"https://www.agfc.com/en/zone-map/710/"
+]
+},
+{
+"family": "arw",
+"name": "Hobbs State Park Conservation Area WMA",
+"acres": 12063,
+"recs": [
+[
+"arw1722",
+"Hobbs State Park Conservation Area WMA",
+0
+]
+],
+"n_recs": 1,
+"verdict": "YES",
+"sources": [
+"https://www.agfc.com/en/zone-map/710/",
+"https://www.arkansasstateparks.com/parks/hobbs-state-park-conservation-area"
+]
+},
+{
+"family": "padus",
+"name": "Hobbs State Park / Conservation Management Area",
+"acres": 12157,
+"recs": [
+[
+"166869",
+"Hobbs State Park / Conservation Management Area",
+12157
+]
+],
+"n_recs": 1,
+"verdict": "YES",
+"sources": [
+"https://www.arkansasstateparks.com/parks/hobbs-state-park-conservation-area",
+"https://www.arkansasstateparks.com/parks/hobbs-state-park-conservation-area"
+]
+},
+{
+"family": "arw",
+"name": "Kirk Dupps Beaver Lake WMA",
+"acres": 38789,
+"recs": [
+[
+"arw1783",
+"Kirk Dupps Beaver Lake WMA",
+0
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"https://www.agfc.com/en/zone-map/710/",
+"https://www.agfc.com/en/zone-map/710/"
+]
+}
+]
+},
+"US-10657": {
+"area": "US-ID",
+"name": "Milner Historic Recreation Area BLM Historic Area",
+"graded": "double",
+"date": "2026-11-19",
+"half": "TUNE",
+"cands": [
+{
+"family": "padus",
+"name": "Shoshone Field Office / Bureau of Land Management",
+"acres": 1723598,
+"recs": [
+[
+"1948",
+"Shoshone Field Office",
+1723598
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"https://www.blm.gov/visit/milner-historic-recreation-area",
+"https://www.blm.gov/press-release/blm-opens-new-boat-ramp-milner-historic-recreation-area"
+]
+},
+{
+"family": "padus",
+"name": "Burley Field Office / Bureau of Land Management",
+"acres": 834935,
+"recs": [
+[
+"1927",
+"Burley Field Office",
+834935
+]
+],
+"n_recs": 1,
+"verdict": "BIGGER",
+"sources": [
+"https://www.blm.gov/visit/milner-historic-recreation-area",
+"https://www.blm.gov/press-release/blm-opens-new-boat-ramp-milner-historic-recreation-area"
+]
+},
+{
+"family": "sgakg",
+"name": "Milner",
+"acres": 2069,
+"recs": [
+[
+"sgakg13871",
+"Milner",
+2069
+]
+],
+"n_recs": 1,
+"verdict": "YES",
+"sources": [
+"https://www.blm.gov/sites/blm.gov/files/BFO%20Business%20Plan%20June%202020.pdf",
+"https://www.blm.gov/press-release/blm-opens-new-boat-ramp-milner-historic-recreation-area"
+]
+},
+{
+"family": "sgidc",
+"name": "Milner",
+"acres": 2069,
+"recs": [
+[
+"sgidc825",
+"Milner",
+2069
+]
+],
+"n_recs": 1,
+"verdict": "YES",
+"sources": [
+"https://www.blm.gov/sites/blm.gov/files/BFO%20Business%20Plan%20June%202020.pdf",
+"https://www.blm.gov/press-release/blm-opens-new-boat-ramp-milner-historic-recreation-area"
+]
+},
+{
+"family": "sgidb",
+"name": "Milner Lake",
+"acres": 4354,
+"recs": [
+[
+"sgidb1935410",
+"Milner Lake",
+4354
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"https://www.blm.gov/visit/milner-historic-recreation-area",
+"https://www.blm.gov/press-release/blm-opens-new-boat-ramp-milner-historic-recreation-area"
+]
+},
+{
+"family": "rst",
+"name": "Milner",
+"acres": 2069,
+"recs": [
+[
+"rst13871",
+"Milner",
+2069
+]
+],
+"n_recs": 1,
+"verdict": "YES",
+"sources": [
+"https://www.blm.gov/sites/blm.gov/files/BFO%20Business%20Plan%20June%202020.pdf",
+"https://www.blm.gov/press-release/blm-opens-new-boat-ramp-milner-historic-recreation-area"
+]
+},
+{
+"family": "padus",
+"name": "Idaho Department of Lands",
+"acres": 2322873,
+"recs": [
+[
+"199286",
+"Idaho Department of Lands",
+33427
+],
+[
+"199294",
+"Idaho Department of Lands",
+1289
+],
+[
+"199295",
+"Idaho Department of Lands",
+58529
+],
+[
+"199300",
+"Idaho Department of Lands",
+1982653
+],
+[
+"199302",
+"Idaho Department of Lands",
+89675
+],
+[
+"199308",
+"Idaho Department of Lands",
+165
+],
+[
+"199309",
+"Idaho Department of Lands",
+53342
+],
+[
+"199291",
+"Idaho Department of Lands",
+74992
+],
+[
+"199298",
+"Idaho Department of Lands",
+28801
+]
+],
+"n_recs": 9,
+"verdict": "NO",
+"sources": [
+"packet: Idaho Department of Lands, manager SDOL, 5.0 km from pin",
+"https://www.blm.gov/press-release/blm-opens-new-boat-ramp-milner-historic-recreation-area"
+]
+}
+]
+},
+"US-12918": {
+"area": "US-MT",
+"name": "Seven Sisters State Fish and Wildlife Area",
+"graded": "double",
+"date": "2026-11-19",
+"half": "TUNE",
+"cands": [
+{
+"family": "padus",
+"name": "Miles City Field Office / Bureau of Land Management",
+"acres": 2757930,
+"recs": [
+[
+"1967",
+"Miles City Field Office",
+2757930
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"packet: BLM field office PUB land, pin outside (1.0 km)",
+"https://myfwp.mt.gov/fishMT/fas/39754581"
+]
+},
+{
+"family": "rst",
+"name": "Lewis and Clark Trail",
+"acres": 240750,
+"recs": [
+[
+"rst10985",
+"Lewis and Clark Trail",
+240750
+]
+],
+"n_recs": 1,
+"verdict": "BIGGER",
+"sources": [
+"packet: pin inside + 240,750 ac vs 7.8 ac official (https://myfwp.mt.gov/fishMT/fas/39754581)",
+"https://myfwp.mt.gov/fishMT/fas/39754581"
+]
+},
+{
+"family": "sgmtd",
+"name": "Seven Sisters Fishing Access Site",
+"acres": 8,
+"recs": [
+[
+"sgmtd654",
+"Seven Sisters Fishing Access Site",
+8
+]
+],
+"n_recs": 1,
+"verdict": "YES",
+"sources": [
+"https://myfwp.mt.gov/fishMT/fas/39754581",
+"https://myfwp.mt.gov/fishMT/fas/39754581"
+]
+},
+{
+"family": "padus",
+"name": "Seven Sisters Wildlife Management Area",
+"acres": 1556,
+"recs": [
+[
+"211769",
+"Seven Sisters Wildlife Management Area",
+1556
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754345",
+"https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754345"
+]
+},
+{
+"family": "sgmtb",
+"name": "Seven Sisters",
+"acres": 1554,
+"recs": [
+[
+"sgmtb8672",
+"Seven Sisters",
+1554
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754345",
+"https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754345"
+]
+},
+{
+"family": "padus",
+"name": "Seven Sisters Wildlife Management Area 5 / Seven Sisters WMA 5",
+"acres": 269,
+"recs": [
+[
+"78878",
+"Seven Sisters Wildlife Management Area 5",
+269
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"https://myfwp.mt.gov/fishMT/fas/39754581",
+"https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754345"
+]
+},
+{
+"family": "sgakg",
+"name": "Lewis and Clark Trail",
+"acres": 240750,
+"recs": [
+[
+"sgakg10985",
+"Lewis and Clark Trail",
+240750
+]
+],
+"n_recs": 1,
+"verdict": "BIGGER",
+"sources": [
+"packet: pin inside + 240,750 ac vs 7.8 ac official",
+"https://myfwp.mt.gov/fishMT/fas/39754581"
+]
+},
+{
+"family": "padus",
+"name": "Seven Sisters Wildlife Management Area 4 / Seven Sisters WMA 4",
+"acres": 711,
+"recs": [
+[
+"78877",
+"Seven Sisters Wildlife Management Area 4",
+711
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"https://myfwp.mt.gov/fishMT/fas/39754581",
+"https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754345"
+]
+},
+{
+"family": "padus",
+"name": "Seven Sisters Fishing Access Site",
+"acres": 8,
+"recs": [
+[
+"211792",
+"Seven Sisters Fishing Access Site",
+8
+]
+],
+"n_recs": 1,
+"verdict": "YES",
+"sources": [
+"https://myfwp.mt.gov/fishMT/fas/39754581",
+"https://myfwp.mt.gov/fishMT/fas/39754581"
+]
+},
+{
+"family": "sgmtc",
+"name": "Seven Sisters",
+"acres": 8,
+"recs": [
+[
+"sgmtc41272",
+"Seven Sisters",
+8
+]
+],
+"n_recs": 1,
+"verdict": "YES",
+"sources": [
+"https://myfwp.mt.gov/fishMT/fas/39754581",
+"https://myfwp.mt.gov/fishMT/fas/39754581"
+]
+}
+]
+},
+"US-10524": {
+"area": "US-MT",
+"name": "Acton (BLM) Recreation Site",
+"graded": "double",
+"date": "2026-11-19",
+"half": "TUNE",
+"cands": [
+{
+"family": "sgakg",
+"name": "Acton Recreation Area",
+"acres": 3698,
+"recs": [
+[
+"sgakg10988",
+"Acton Recreation Area",
+3698
+]
+],
+"n_recs": 1,
+"verdict": "YES",
+"sources": [
+"https://www.blm.gov/visit/acton-recreation-area",
+"https://www.blm.gov/visit/acton-recreation-area"
+]
+},
+{
+"family": "padus",
+"name": "Billings Field Office / Bureau of Land Management",
+"acres": 429680,
+"recs": [
+[
+"1956",
+"Billings Field Office",
+429680
+]
+],
+"n_recs": 1,
+"verdict": "BIGGER",
+"sources": [
+"https://www.blm.gov/visit/acton-recreation-area",
+"https://www.blm.gov/visit/acton-recreation-area"
+]
+},
+{
+"family": "rst",
+"name": "Acton Recreation Area",
+"acres": 3698,
+"recs": [
+[
+"rst10988",
+"Acton Recreation Area",
+3698
+]
+],
+"n_recs": 1,
+"verdict": "YES",
+"sources": [
+"https://www.blm.gov/visit/acton-recreation-area",
+"https://www.blm.gov/visit/acton-recreation-area"
+]
+},
+{
+"family": "padus",
+"name": "Montana State Trust Lands",
+"acres": 5186683,
+"recs": [
+[
+"211296",
+"Montana State Trust Lands",
+5186683
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"packet: Montana State Trust Lands, 2.5 km",
+"https://www.blm.gov/visit/acton-recreation-area"
+]
+}
+]
+},
+"US-3486": {
+"area": "US-NE",
+"name": "Moger National Waterfowl Production Area",
+"graded": "single",
+"date": "2026-11-19",
+"half": "TUNE",
+"cands": [
+{
+"family": "sgneb",
+"name": "Greenhead WMA",
+"acres": 60,
+"recs": [
+[
+"sgneb128",
+"Greenhead WMA",
+60
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"https://www.govinfo.gov/content/pkg/GOVPUB-I49-PURL-gpo2861/pdf/GOVPUB-I49-PURL-gpo2861.pdf"
+]
+},
+{
+"family": "padus",
+"name": "Greenhead Wildlife Management Area / Greenhead WMA",
+"acres": 60,
+"recs": [
+[
+"216192",
+"Greenhead Wildlife Management Area",
+60
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"https://www.govinfo.gov/content/pkg/GOVPUB-I49-PURL-gpo2861/pdf/GOVPUB-I49-PURL-gpo2861.pdf"
+]
+},
+{
+"family": "sgnea",
+"name": "DU Verona Complex (#06)",
+"acres": 200,
+"recs": [
+[
+"sgnea56",
+"DU Verona Complex (#06)",
+200
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"https://www.govinfo.gov/content/pkg/GOVPUB-I49-PURL-gpo2861/pdf/GOVPUB-I49-PURL-gpo2861.pdf"
+]
+},
+{
+"family": "padus",
+"name": "Clay County Waterfowl Production Area Of Ne",
+"acres": 7011,
+"recs": [
+[
+"4664",
+"Clay County Waterfowl Production Area Of Ne",
+7011
+]
+],
+"n_recs": 1,
+"verdict": "BIGGER",
+"sources": [
+"https://www.govinfo.gov/content/pkg/GOVPUB-I49-PURL-gpo2861/pdf/GOVPUB-I49-PURL-gpo2861.pdf"
+]
+}
+]
+},
+"US-10844": {
+"area": "US-NV",
+"name": "Diamond BLM Herd Management Area",
+"graded": "double",
+"date": "2026-11-19",
+"half": "TUNE",
+"cands": [
+{
+"family": "padus",
+"name": "Mount Lewis Field Office / Bureau of Land Management",
+"acres": 4383120,
+"recs": [
+[
+"2029",
+"Mount Lewis Field Office",
+4383120
+]
+],
+"n_recs": 1,
+"verdict": "BIGGER",
+"sources": [
+"https://www.blm.gov/press-release/bureau-land-management-begin-2020-diamond-complex-wild-horse-gather",
+"https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/diamond-hma"
+]
+},
+{
+"family": "hab",
+"name": "Buck-Bald",
+"acres": 322004,
+"recs": [
+[
+"hab279",
+"Buck-Bald",
+322004
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"packet: BLM herd AREA layer, Buck-Bald",
+"https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/diamond-hma"
+]
+},
+{
+"family": "padus",
+"name": "Bristlecone Field Office / Bureau of Land Management",
+"acres": 5647647,
+"recs": [
+[
+"2012",
+"Bristlecone Field Office",
+5647647
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/diamond-hma",
+"https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/diamond-hma"
+]
+},
+{
+"family": "sgnvi",
+"name": "Diamond",
+"acres": 166305,
+"recs": [
+[
+"sgnvi432",
+"Diamond",
+166305
+]
+],
+"n_recs": 1,
+"verdict": "YES",
+"sources": [
+"https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/diamond-hma",
+"https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/diamond-hma"
+]
+},
+{
+"family": "sgnvi",
+"name": "Diamond Hills South",
+"acres": 19345,
+"recs": [
+[
+"sgnvi488",
+"Diamond Hills South",
+19345
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"https://www.blm.gov/press-release/bureau-land-management-begin-2020-diamond-complex-wild-horse-gather",
+"https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/diamond-hills-south"
+]
+},
+{
+"family": "hma",
+"name": "Diamond",
+"acres": 166305,
+"recs": [
+[
+"hma28",
+"Diamond",
+166305
+]
+],
+"n_recs": 1,
+"verdict": "YES",
+"sources": [
+"https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/diamond-hma",
+"https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/diamond-hma"
+]
+},
+{
+"family": "hma",
+"name": "Diamond Hills North",
+"acres": 71852,
+"recs": [
+[
+"hma151",
+"Diamond Hills North",
+71852
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"https://www.blm.gov/press-release/bureau-land-management-begin-2020-diamond-complex-wild-horse-gather",
+"https://www.blm.gov/press-release/bureau-land-management-concluded-2020-diamond-complex-wild-horse-gather"
+]
+},
+{
+"family": "hma",
+"name": "Diamond Hills South",
+"acres": 19345,
+"recs": [
+[
+"hma6",
+"Diamond Hills South",
+19345
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"https://www.blm.gov/press-release/bureau-land-management-begin-2020-diamond-complex-wild-horse-gather",
+"https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/diamond-hills-south"
+]
+}
+]
+},
+"US-13126": {
+"area": "US-NV",
+"name": "Diamond Complex BLM Herd Management Area",
+"graded": "double",
+"date": "2026-11-19",
+"half": "TUNE",
+"cands": [
+{
+"family": "sgnvi",
+"name": "Diamond",
+"acres": 166305,
+"recs": [
+[
+"sgnvi432",
+"Diamond",
+166305
+]
+],
+"n_recs": 1,
+"verdict": "YES",
+"sources": [
+"https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/diamond-hma",
+"https://www.blm.gov/press-release/bureau-land-management-concluded-2020-diamond-complex-wild-horse-gather"
+]
+},
+{
+"family": "sgnvb",
+"name": "Big Ball Park",
+"acres": 7,
+"recs": [
+[
+"sgnvb233",
+"Big Ball Park",
+7
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"packet: Big Ball Park, 7 ac, 5.4 km from pin",
+"https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/diamond-hma"
+]
+},
+{
+"family": "hma",
+"name": "Diamond Hills South",
+"acres": 19345,
+"recs": [
+[
+"hma6",
+"Diamond Hills South",
+19345
+]
+],
+"n_recs": 1,
+"verdict": "YES",
+"sources": [
+"https://www.blm.gov/press-release/bureau-land-management-begin-2020-diamond-complex-wild-horse-gather",
+"https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/diamond-hills-south"
+]
+},
+{
+"family": "hma",
+"name": "Diamond",
+"acres": 166305,
+"recs": [
+[
+"hma28",
+"Diamond",
+166305
+]
+],
+"n_recs": 1,
+"verdict": "YES",
+"sources": [
+"https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/diamond-hma",
+"https://www.blm.gov/press-release/bureau-land-management-concluded-2020-diamond-complex-wild-horse-gather"
+]
+},
+{
+"family": "sgnvi",
+"name": "Diamond Hills South",
+"acres": 19345,
+"recs": [
+[
+"sgnvi488",
+"Diamond Hills South",
+19345
+]
+],
+"n_recs": 1,
+"verdict": "YES",
+"sources": [
+"https://www.blm.gov/press-release/bureau-land-management-begin-2020-diamond-complex-wild-horse-gather",
+"https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/diamond-hills-south"
+]
+},
+{
+"family": "padus",
+"name": "Mount Lewis Field Office / Bureau of Land Management",
+"acres": 4383120,
+"recs": [
+[
+"2029",
+"Mount Lewis Field Office",
+4383120
+]
+],
+"n_recs": 1,
+"verdict": "BIGGER",
+"sources": [
+"https://www.blm.gov/press-release/bureau-land-management-begin-2020-diamond-complex-wild-horse-gather",
+"https://www.blm.gov/press-release/bureau-land-management-concluded-2020-diamond-complex-wild-horse-gather"
+]
+},
+{
+"family": "sgnvd",
+"name": "Big Ball Park",
+"acres": 7,
+"recs": [
+[
+"sgnvd233",
+"Big Ball Park",
+7
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"packet: Big Ball Park, 7 ac, 5.4 km from pin",
+"https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/diamond-hma"
+]
+}
+]
+},
+"US-9442": {
+"area": "US-OH",
+"name": "Acadia Cliffs State Wildlife Area",
+"graded": "double",
+"date": "2026-11-19",
+"half": "TUNE",
+"cands": [
+{
+"family": "sgohf",
+"name": "Ladd Natural Bridge DNP",
+"acres": 35,
+"recs": [
+[
+"sgohf316",
+"Ladd Natural Bridge DNP",
+35
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"packet: Ladd Natural Bridge DNP, 2.0 km",
+"https://dam.assets.ohio.gov/image/upload/ohiodnr.gov/documents/wildlife/wildlife-area-maps/acadiacliffs.pdf"
+]
+},
+{
+"family": "sgohf",
+"name": "Acadia Cliffs DNP",
+"acres": 275,
+"recs": [
+[
+"sgohf620",
+"Acadia Cliffs DNP",
+163
+],
+[
+"sgohf693",
+"Acadia Cliffs DNP",
+108
+],
+[
+"sgohf416",
+"Acadia Cliffs DNP",
+4
+]
+],
+"n_recs": 3,
+"verdict": "YES",
+"sources": [
+"https://dam.assets.ohio.gov/image/upload/ohiodnr.gov/documents/wildlife/wildlife-area-maps/acadiacliffs.pdf",
+"https://dam.assets.ohio.gov/image/upload/ohiodnr.gov/documents/wildlife/wildlife-area-maps/acadiacliffs.pdf"
+]
+},
+{
+"family": "sgohb",
+"name": "AcdClffsNP / ACADIA CLIFFS",
+"acres": 108,
+"recs": [
+[
+"sgohb619",
+"AcdClffsNP",
+108
+]
+],
+"n_recs": 1,
+"verdict": "YES",
+"sources": [
+"https://ohiodnr.gov/go-and-do/plan-a-visit/find-a-property/acadia-cliffs-state-nature-preserve",
+"https://ohiodnr.gov/go-and-do/plan-a-visit/find-a-property/acadia-cliffs-state-nature-preserve"
+]
+},
+{
+"family": "padus",
+"name": "Acadia Cliffs Dedicated Nature Preserve / Acadia Cliffs DNP",
+"acres": 275,
+"recs": [
+[
+"71613",
+"Acadia Cliffs Dedicated Nature Preserve",
+271
+],
+[
+"71678",
+"Acadia Cliffs Dedicated Nature Preserve",
+4
+]
+],
+"n_recs": 2,
+"verdict": "YES",
+"sources": [
+"https://ohiodnr.gov/go-and-do/plan-a-visit/find-a-property/acadia-cliffs-state-nature-preserve",
+"https://dam.assets.ohio.gov/image/upload/ohiodnr.gov/documents/wildlife/wildlife-area-maps/acadiacliffs.pdf"
+]
+},
+{
+"family": "sgohb",
+"name": "AcdClffsWA / ACADIA CLIFFS",
+"acres": 163,
+"recs": [
+[
+"sgohb393",
+"AcdClffsWA",
+163
+]
+],
+"n_recs": 1,
+"verdict": "YES",
+"sources": [
+"https://dam.assets.ohio.gov/image/upload/ohiodnr.gov/documents/wildlife/wildlife-area-maps/acadiacliffs.pdf",
+"https://dam.assets.ohio.gov/image/upload/ohiodnr.gov/documents/wildlife/wildlife-area-maps/acadiacliffs.pdf"
+]
+},
+{
+"family": "sgohe",
+"name": "ACADIA CLIFFS",
+"acres": 275,
+"recs": [
+[
+"sgohe570",
+"ACADIA CLIFFS",
+163
+],
+[
+"sgohe571",
+"ACADIA CLIFFS",
+108
+],
+[
+"sgohe2",
+"ACADIA CLIFFS",
+4
+]
+],
+"n_recs": 3,
+"verdict": "YES",
+"sources": [
+"https://dam.assets.ohio.gov/image/upload/ohiodnr.gov/documents/wildlife/wildlife-area-maps/acadiacliffs.pdf",
+"https://dam.assets.ohio.gov/image/upload/ohiodnr.gov/documents/wildlife/wildlife-area-maps/acadiacliffs.pdf"
+]
+},
+{
+"family": "sgohb",
+"name": "AcdClffsWA / ACADIA CLIFFS",
+"acres": 4,
+"recs": [
+[
+"sgohb2",
+"AcdClffsWA",
+4
+]
+],
+"n_recs": 1,
+"verdict": "YES",
+"sources": [
+"https://dam.assets.ohio.gov/image/upload/ohiodnr.gov/documents/wildlife/wildlife-area-maps/acadiacliffs.pdf",
+"https://dam.assets.ohio.gov/image/upload/ohiodnr.gov/documents/wildlife/wildlife-area-maps/acadiacliffs.pdf"
+]
+},
+{
+"family": "sgohe",
+"name": "LADD NATURAL BRIDGE",
+"acres": 35,
+"recs": [
+[
+"sgohe609",
+"LADD NATURAL BRIDGE",
+35
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"packet: Ladd Natural Bridge, 2.0 km",
+"https://dam.assets.ohio.gov/image/upload/ohiodnr.gov/documents/wildlife/wildlife-area-maps/acadiacliffs.pdf"
+]
+},
+{
+"family": "sgohd",
+"name": "LdNtrlBdgNP / LADD NATURAL BRIDGE",
+"acres": 93,
+"recs": [
+[
+"sgohd421",
+"LdNtrlBdgNP",
+93
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"packet: Ladd Natural Bridge NP, 2.0 km",
+"https://dam.assets.ohio.gov/image/upload/ohiodnr.gov/documents/wildlife/wildlife-area-maps/acadiacliffs.pdf"
+]
+}
+]
+},
+"US-6365": {
+"area": "US-OK",
+"name": "Osage Wildlife Management Area",
+"graded": "double",
+"date": "2026-11-19",
+"half": "TUNE",
+"cands": [
+{
+"family": "odw",
+"name": "Osage Wildlife Management Area - Western Wall",
+"acres": 7317,
+"recs": [
+[
+"odw76",
+"Osage Wildlife Management Area - Western Wall",
+7317
+]
+],
+"n_recs": 1,
+"verdict": "YES",
+"sources": [
+"https://www.wildlifedepartment.com/hunting/wma/northeast/osage-wma-western-wall-unit",
+"https://www.wildlifedepartment.com/hunting/wma/northeast/osage"
+]
+},
+{
+"family": "sgokb",
+"name": "Osage Wildlife Managment Area - Rock Creek Unit",
+"acres": 3758,
+"recs": [
+[
+"sgokb20",
+"Osage Wildlife Managment Area - Rock Creek Unit",
+0
+]
+],
+"n_recs": 1,
+"verdict": "YES",
+"sources": [
+"https://www.wildlifedepartment.com/hunting/wma/northeast/osage-wma-western-wall-unit",
+"https://www.wildlifedepartment.com/hunting/wma/northeast/osage"
+]
+},
+{
+"family": "sgokc",
+"name": "Osage - Rock Creek",
+"acres": 3729,
+"recs": [
+[
+"sgokc75",
+"Osage - Rock Creek",
+3729
+]
+],
+"n_recs": 1,
+"verdict": "YES",
+"sources": [
+"https://www.wildlifedepartment.com/hunting/wma/northeast/osage-wma-western-wall-unit",
+"https://www.wildlifedepartment.com/hunting/wma/northeast/osage"
+]
+},
+{
+"family": "sgokb",
+"name": "Osage Wildlife Management Area - Western Wall Unit",
+"acres": 5883,
+"recs": [
+[
+"sgokb18",
+"Osage Wildlife Management Area - Western Wall Unit",
+0
+]
+],
+"n_recs": 1,
+"verdict": "YES",
+"sources": [
+"https://www.wildlifedepartment.com/hunting/wma/northeast/osage-wma-western-wall-unit",
+"https://www.wildlifedepartment.com/hunting/wma/northeast/osage"
+]
+},
+{
+"family": "odw",
+"name": "Osage Wildlife Management Area - Rock Creek",
+"acres": 3729,
+"recs": [
+[
+"odw75",
+"Osage Wildlife Management Area - Rock Creek",
+3729
+]
+],
+"n_recs": 1,
+"verdict": "YES",
+"sources": [
+"https://www.wildlifedepartment.com/hunting/wma/northeast/osage-wma-western-wall-unit",
+"https://www.wildlifedepartment.com/hunting/wma/northeast/osage"
+]
+},
+{
+"family": "odw",
+"name": "Hulah Wildlife Management Area",
+"acres": 19178,
+"recs": [
+[
+"odw44",
+"Hulah Wildlife Management Area",
+19178
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"packet: Hulah WMA, 19,178 ac, 8.1 km from pin",
+"https://www.wildlifedepartment.com/hunting/wma/northeast/osage"
+]
+},
+{
+"family": "sgokc",
+"name": "Hulah",
+"acres": 19178,
+"recs": [
+[
+"sgokc44",
+"Hulah",
+19178
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"packet: Hulah, 8.1 km from pin",
+"https://www.wildlifedepartment.com/hunting/wma/northeast/osage"
+]
+},
+{
+"family": "sgokb",
+"name": "Hulah Wildlife Management Area",
+"acres": 19794,
+"recs": [
+[
+"sgokb13",
+"Hulah Wildlife Management Area",
+0
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"packet: Hulah WMA, 8.1 km from pin",
+"https://www.wildlifedepartment.com/hunting/wma/northeast/osage"
+]
+}
+]
+},
+"US-13075": {
+"area": "US-OR",
+"name": "Bear Gulch BLM Wilderness Area",
+"graded": "double",
+"date": "2026-11-19",
+"half": "TUNE",
+"cands": [
+{
+"family": "sgakh",
+"name": "Bear Gulch",
+"acres": 350,
+"recs": [
+[
+"sgakh1841",
+"Bear Gulch",
+350
+]
+],
+"n_recs": 1,
+"verdict": "YES",
+"sources": [
+"https://www.arcgis.com/sharing/rest/content/items/67aeb3a17adf458f96d7aaca8d3e0e2d?f=json",
+"https://www.govinfo.gov/content/pkg/FR-1995-06-05/html/95-13579.htm"
+]
+},
+{
+"family": "osp",
+"name": "Canyon Creek Forest",
+"acres": 80,
+"recs": [
+[
+"osp22",
+"Canyon Creek Forest",
+80
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"packet: Oregon State Parks, 80 ac, 0.36 km",
+"https://www.govinfo.gov/content/pkg/FR-1995-06-05/html/95-13579.htm"
+]
+},
+{
+"family": "sgorg",
+"name": "Long Gulch",
+"acres": 723,
+"recs": [
+[
+"sgorg481",
+"Long Gulch",
+302
+],
+[
+"sgorg422",
+"Long Gulch",
+420
+]
+],
+"n_recs": 2,
+"verdict": "NO",
+"sources": [
+"packet: Long Gulch, 53.6 km",
+"https://www.govinfo.gov/content/pkg/FR-1995-06-05/html/95-13579.htm"
+]
+},
+{
+"family": "padus",
+"name": "Roseburg District South River Field Office / Bureau of Land Management",
+"acres": 185021,
+"recs": [
+[
+"2077",
+"Roseburg District South River Field Office",
+185021
+]
+],
+"n_recs": 1,
+"verdict": "BIGGER",
+"sources": [
+"packet: Roseburg South River FO, pin outside (0.01 km)",
+"https://www.govinfo.gov/content/pkg/FR-1995-06-05/html/95-13579.htm"
+]
+},
+{
+"family": "sgora",
+"name": "Canyon Creek Forest",
+"acres": 80,
+"recs": [
+[
+"sgora22",
+"Canyon Creek Forest",
+80
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"packet: OPRD, 80 ac, 0.36 km",
+"https://www.govinfo.gov/content/pkg/FR-1995-06-05/html/95-13579.htm"
+]
+}
+]
+},
+"US-12064": {
+"area": "US-TN",
+"name": "Henderson Swamp State Wilderness Area",
+"graded": "double",
+"date": "2026-11-19",
+"half": "TUNE",
+"cands": [
+{
+"family": "sgtne",
+"name": "Henderson Swamp PHA",
+"acres": 29,
+"recs": [
+[
+"sgtne21",
+"Henderson Swamp PHA",
+29
+]
+],
+"n_recs": 1,
+"verdict": "YES",
+"sources": [
+"https://www.tn.gov/twra/wildlife-management-areas/east-tennessee-r4/henderson-swamp-pha.html",
+"https://www.tn.gov/twra/wildlife-management-areas/east-tennessee-r4/henderson-swamp-pha.html"
+]
+},
+{
+"family": "sgtnc",
+"name": "Henderson Swamp PHA",
+"acres": 29,
+"recs": [
+[
+"sgtnc409",
+"Henderson Swamp PHA",
+29
+]
+],
+"n_recs": 1,
+"verdict": "YES",
+"sources": [
+"https://www.tn.gov/twra/wildlife-management-areas/east-tennessee-r4/henderson-swamp-pha.html",
+"https://www.tn.gov/twra/wildlife-management-areas/east-tennessee-r4/henderson-swamp-pha.html"
+]
+},
+{
+"family": "padus",
+"name": "Chester",
+"acres": 0,
+"recs": [
+[
+"255570",
+"Chester",
+0
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"packet: Chester, SHCA, 9.6 km",
+"https://www.tn.gov/twra/wildlife-management-areas/east-tennessee-r4/henderson-swamp-pha.html"
+]
+},
+{
+"family": "padus",
+"name": "Henderson Swamp Public Hunting Area",
+"acres": 24,
+"recs": [
+[
+"255796",
+"Henderson Swamp Public Hunting Area",
+24
+]
+],
+"n_recs": 1,
+"verdict": "YES",
+"sources": [
+"https://www.tn.gov/twra/wildlife-management-areas/east-tennessee-r4/henderson-swamp-pha.html",
+"https://www.tn.gov/twra/wildlife-management-areas/east-tennessee-r4/henderson-swamp-pha.html"
+]
+},
+{
+"family": "sgtni",
+"name": "Henderson Swamp",
+"acres": 24,
+"recs": [
+[
+"sgtni29",
+"Henderson Swamp",
+24
+]
+],
+"n_recs": 1,
+"verdict": "YES",
+"sources": [
+"https://www.tn.gov/twra/wildlife-management-areas/east-tennessee-r4/henderson-swamp-pha.html",
+"https://www.tn.gov/twra/wildlife-management-areas/east-tennessee-r4/henderson-swamp-pha.html"
+]
+}
+]
+},
+"US-3109": {
+"area": "US-VT",
+"name": "Coolidge State Park",
+"graded": "double",
+"date": "2026-11-19",
+"half": "TUNE",
+"cands": [
+{
+"family": "padus",
+"name": "Arthur Davis Wildlife Management Area / Arthur Davis WMA",
+"acres": 7956,
+"recs": [
+[
+"58227",
+"Arthur Davis Wildlife Management Area",
+152
+],
+[
+"58225",
+"Arthur Davis Wildlife Management Area",
+7562
+],
+[
+"58222",
+"Arthur Davis Wildlife Management Area",
+57
+],
+[
+"58224",
+"Arthur Davis Wildlife Management Area",
+146
+],
+[
+"58223",
+"Arthur Davis Wildlife Management Area",
+39
+]
+],
+"n_recs": 5,
+"verdict": "NO",
+"sources": [
+"packet: Arthur Davis WMA, 7,956 ac, 2.1 km from pin",
+"https://vtstateparks.com/coolidge.html"
+]
+},
+{
+"family": "padus",
+"name": "President Calvin Coolidge State Historic Site",
+"acres": 452,
+"recs": [
+[
+"61466",
+"President Calvin Coolidge State Historic Site",
+405
+],
+[
+"52106",
+"President Calvin Coolidge State Historic Site",
+47
+]
+],
+"n_recs": 2,
+"verdict": "NO",
+"sources": [
+"https://www.vtstateparks.com/parks/coolidge",
+"https://vtstateparks.com/coolidge.html"
+]
+},
+{
+"family": "padus",
+"name": "Coolidge State Forest",
+"acres": 10789,
+"recs": [
+[
+"61207",
+"Coolidge State Forest",
+1095
+],
+[
+"61212",
+"Coolidge State Forest",
+179
+],
+[
+"61223",
+"Coolidge State Forest",
+30
+],
+[
+"61221",
+"Coolidge State Forest",
+110
+],
+[
+"61231",
+"Coolidge State Forest",
+636
+],
+[
+"61206",
+"Coolidge State Forest",
+0
+],
+[
+"61227",
+"Coolidge State Forest",
+1
+],
+[
+"61228",
+"Coolidge State Forest",
+107
+],
+[
+"61232",
+"Coolidge State Forest",
+64
+],
+[
+"61211",
+"Coolidge State Forest",
+510
+],
+[
+"61208",
+"Coolidge State Forest",
+564
+],
+[
+"61210",
+"Coolidge State Forest",
+206
+],
+[
+"61201",
+"Coolidge State Forest",
+116
+],
+[
+"61226",
+"Coolidge State Forest",
+40
+],
+[
+"61200",
+"Coolidge State Forest",
+106
+],
+[
+"61213",
+"Coolidge State Forest",
+154
+],
+[
+"61216",
+"Coolidge State Forest",
+191
+],
+[
+"61215",
+"Coolidge State Forest",
+0
+],
+[
+"61203",
+"Coolidge State Forest",
+143
+],
+[
+"61225",
+"Coolidge State Forest",
+609
+],
+[
+"61222",
+"Coolidge State Forest",
+84
+],
+[
+"61209",
+"Coolidge State Forest",
+37
+],
+[
+"61204",
+"Coolidge State Forest",
+121
+],
+[
+"61229",
+"Coolidge State Forest",
+373
+],
+[
+"61230",
+"Coolidge State Forest",
+1218
+],
+[
+"61220",
+"Coolidge State Forest",
+192
+],
+[
+"61217",
+"Coolidge State Forest",
+363
+],
+[
+"61214",
+"Coolidge State Forest",
+2821
+],
+[
+"61233",
+"Coolidge State Forest",
+92
+],
+[
+"61202",
+"Coolidge State Forest",
+370
+],
+[
+"61219",
+"Coolidge State Forest",
+34
+],
+[
+"61218",
+"Coolidge State Forest",
+184
+],
+[
+"61224",
+"Coolidge State Forest",
+39
+]
+],
+"n_recs": 33,
+"verdict": "NO",
+"sources": [
+"https://www.vtstateparks.com/parks/coolidge",
+""
+]
+},
+{
+"family": "sgvta",
+"name": "Coolidge State Forest",
+"acres": 23596,
+"recs": [
+[
+"sgvta18",
+"Coolidge State Forest",
+23596
+]
+],
+"n_recs": 1,
+"verdict": "BIGGER",
+"sources": [
+"https://www.vtstateparks.com/parks/coolidge",
+"https://vtstateparks.com/coolidge.html"
+]
+},
+{
+"family": "sgvta",
+"name": "Coolidge State Forest",
+"acres": 231,
+"recs": [
+[
+"sgvta17",
+"Coolidge State Forest",
+231
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"https://www.vtstateparks.com/parks/coolidge",
+""
+]
+},
+{
+"family": "sgvta",
+"name": "Meadows End",
+"acres": 1806,
+"recs": [
+[
+"sgvta487",
+"Meadows End",
+1806
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"packet: Meadows End, 1,806 ac, 3.3 km from pin",
+"https://vtstateparks.com/coolidge.html"
+]
+},
+{
+"family": "sgvta",
+"name": "Arthur Davis WMA",
+"acres": 7951,
+"recs": [
+[
+"sgvta280",
+"Arthur Davis WMA",
+7951
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"packet: Arthur Davis WMA, 2.1 km from pin",
+"https://vtstateparks.com/coolidge.html"
+]
+},
+{
+"family": "padus",
+"name": "Coolidge State Forest",
+"acres": 5787,
+"recs": [
+[
+"61205",
+"Coolidge State Forest",
+4237
+],
+[
+"61234",
+"Coolidge State Forest",
+1550
+]
+],
+"n_recs": 2,
+"verdict": "BIGGER",
+"sources": [
+"https://www.vtstateparks.com/parks/coolidge",
+"https://vtstateparks.com/coolidge.html"
+]
+}
+]
+},
+"US-12413": {
+"area": "US-WA",
+"name": "Spokane Plains Battlefield State Heritage Area",
+"graded": "double",
+"date": "2026-11-19",
+"half": "TUNE",
+"cands": [
+{
+"family": "sgwad",
+"name": "Spokane Plains Battlefield State Park Heritage Site",
+"acres": 1,
+"recs": [
+[
+"sgwad4289",
+"Spokane Plains Battlefield State Park Heritage Site",
+0
+]
+],
+"n_recs": 1,
+"verdict": "YES",
+"sources": [
+"https://properties.historicspokane.org/property/?PropertyID=1985",
+"https://properties.historicspokane.org/_pdf/properties/property-1985.pdf"
+]
+},
+{
+"family": "sgwad",
+"name": "Spokane Falls Community College",
+"acres": 143,
+"recs": [
+[
+"sgwad4487",
+"Spokane Falls Community College",
+0
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"packet: community college, 13.6 km",
+"https://properties.historicspokane.org/_pdf/properties/property-1985.pdf"
+]
+},
+{
+"family": "sgwad",
+"name": "Spokane School District #81",
+"acres": 349,
+"recs": [
+[
+"sgwad5124",
+"Spokane School District #81",
+0
+],
+[
+"sgwad4100",
+"Spokane School District #81",
+0
+],
+[
+"sgwad4098",
+"Spokane School District #81",
+0
+],
+[
+"sgwad5376",
+"Spokane School District #81",
+0
+],
+[
+"sgwad6290",
+"Spokane School District #81",
+0
+],
+[
+"sgwad5059",
+"Spokane School District #81",
+0
+],
+[
+"sgwad5377",
+"Spokane School District #81",
+0
+],
+[
+"sgwad5131",
+"Spokane School District #81",
+0
+],
+[
+"sgwad5062",
+"Spokane School District #81",
+0
+],
+[
+"sgwad5118",
+"Spokane School District #81",
+0
+],
+[
+"sgwad5133",
+"Spokane School District #81",
+0
+],
+[
+"sgwad4615",
+"Spokane School District #81",
+0
+],
+[
+"sgwad4616",
+"Spokane School District #81",
+0
+],
+[
+"sgwad5373",
+"Spokane School District #81",
+0
+],
+[
+"sgwad6251",
+"Spokane School District #81",
+0
+],
+[
+"sgwad4614",
+"Spokane School District #81",
+0
+],
+[
+"sgwad5130",
+"Spokane School District #81",
+0
+],
+[
+"sgwad5221",
+"Spokane School District #81",
+0
+],
+[
+"sgwad4103",
+"Spokane School District #81",
+0
+],
+[
+"sgwad4482",
+"Spokane School District #81",
+0
+],
+[
+"sgwad4101",
+"Spokane School District #81",
+0
+],
+[
+"sgwad4481",
+"Spokane School District #81",
+0
+],
+[
+"sgwad4102",
+"Spokane School District #81",
+0
+],
+[
+"sgwad4480",
+"Spokane School District #81",
+0
+],
+[
+"sgwad4105",
+"Spokane School District #81",
+0
+],
+[
+"sgwad4107",
+"Spokane School District #81",
+0
+],
+[
+"sgwad4143",
+"Spokane School District #81",
+0
+],
+[
+"sgwad4142",
+"Spokane School District #81",
+0
+]
+],
+"n_recs": 28,
+"verdict": "NO",
+"sources": [
+"packet: school district, 15 km",
+"https://properties.historicspokane.org/_pdf/properties/property-1985.pdf"
+]
+},
+{
+"family": "padus",
+"name": "Unknown Park",
+"acres": 49,
+"recs": [
+[
+"79648",
+"Unknown Park",
+49
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"packet: MIL, OTHF, 0.44 km",
+"https://properties.historicspokane.org/_pdf/properties/property-1985.pdf"
+]
+},
+{
+"family": "padus",
+"name": "Unknown Volleyball",
+"acres": 0,
+"recs": [
+[
+"79649",
+"Unknown Volleyball",
+0
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"packet: designation MIL, manager OTHF, 1.1 km",
+"https://properties.historicspokane.org/_pdf/properties/property-1985.pdf"
+]
+},
+{
+"family": "sgwaa",
+"name": "Spokane Plains Battlefield",
+"acres": 1,
+"recs": [
+[
+"sgwaa174",
+"Spokane Plains Battlefield",
+1
+]
+],
+"n_recs": 1,
+"verdict": "YES",
+"sources": [
+"https://properties.historicspokane.org/property/?PropertyID=1985",
+"https://properties.historicspokane.org/_pdf/properties/property-1985.pdf"
+]
+},
+{
+"family": "padus",
+"name": "Heritage Park",
+"acres": 7,
+"recs": [
+[
+"79645",
+"Heritage Park",
+7
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"packet: MIL, OTHF, 0.68 km",
+"https://properties.historicspokane.org/_pdf/properties/property-1985.pdf"
+]
+},
+{
+"family": "padus",
+"name": "Memorial Park",
+"acres": 7,
+"recs": [
+[
+"79646",
+"Memorial Park",
+7
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"packet: MIL, OTHF, 0.45 km",
+"https://properties.historicspokane.org/_pdf/properties/property-1985.pdf"
+]
+},
+{
+"family": "sgwad",
+"name": "Spokane County Lakes",
+"acres": 2,
+"recs": [
+[
+"sgwad6382",
+"Spokane County Lakes",
+0
+],
+[
+"sgwad6525",
+"Spokane County Lakes",
+0
+]
+],
+"n_recs": 2,
+"verdict": "NO",
+"sources": [
+"packet: Spokane County Lakes, 7.9 km",
+"https://properties.historicspokane.org/_pdf/properties/property-1985.pdf"
+]
+},
+{
+"family": "padus",
+"name": "Spokane Plains Battlefield",
+"acres": 1,
+"recs": [
+[
+"271397",
+"Spokane Plains Battlefield",
+1
+]
+],
+"n_recs": 1,
+"verdict": "YES",
+"sources": [
+"https://properties.historicspokane.org/property/?PropertyID=1985",
+"https://properties.historicspokane.org/_pdf/properties/property-1985.pdf"
+]
+}
+]
+},
+"US-10695": {
+"area": "US-WA",
+"name": "Coffeepot Lake Nature Recreation Area",
+"graded": "double",
+"date": "2026-11-19",
+"half": "TUNE",
+"cands": [
+{
+"family": "sgakg",
+"name": "Coffeepot Lake Public Fishing Access",
+"acres": 6,
+"recs": [
+[
+"sgakg9874",
+"Coffeepot Lake Public Fishing Access",
+6
+]
+],
+"n_recs": 1,
+"verdict": "YES",
+"sources": [
+"https://www.blm.gov/visit/coffeepot-lake-recreation-site",
+"https://www.blm.gov/visit/coffeepot-lake-recreation-site"
+]
+},
+{
+"family": "padus",
+"name": "Spokane Border Field Office / Bureau of Land Management",
+"acres": 168544,
+"recs": [
+[
+"2080",
+"Spokane Border Field Office",
+168544
+]
+],
+"n_recs": 1,
+"verdict": "BIGGER",
+"sources": [
+"https://www.blm.gov/visit/coffeepot-lake-recreation-site",
+"https://www.blm.gov/visit/coffeepot-lake-recreation-site"
+]
+},
+{
+"family": "rst",
+"name": "Coffeepot Lake Public Fishing Access",
+"acres": 6,
+"recs": [
+[
+"rst9874",
+"Coffeepot Lake Public Fishing Access",
+6
+]
+],
+"n_recs": 1,
+"verdict": "YES",
+"sources": [
+"https://www.blm.gov/visit/coffeepot-lake-recreation-site",
+"https://www.blm.gov/visit/coffeepot-lake-recreation-site"
+]
+},
+{
+"family": "sgwae",
+"name": "Coffeepot Lake",
+"acres": 291,
+"recs": [
+[
+"sgwae34723",
+"Coffeepot Lake",
+0
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"https://www.blm.gov/visit/coffeepot-lake-recreation-site",
+"https://www.blm.gov/visit/coffeepot-lake-recreation-site"
+]
+},
+{
+"family": "sgwae",
+"name": "Rock Lake",
+"acres": 10,
+"recs": [
+[
+"sgwae35629",
+"Rock Lake",
+0
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"packet: Rock Lake waterbody, 2.9 km",
+"https://www.blm.gov/sites/default/files/documents/files/orwa-CoffeepotLake-map.pdf"
+]
+},
+{
+"family": "rma",
+"name": "Coffeepot Lake Public Fishing Access",
+"acres": 6,
+"recs": [
+[
+"rma9874",
+"Coffeepot Lake Public Fishing Access",
+6
+]
+],
+"n_recs": 1,
+"verdict": "YES",
+"sources": [
+"https://www.blm.gov/visit/coffeepot-lake-recreation-site",
+"https://www.blm.gov/visit/coffeepot-lake-recreation-site"
+]
+},
+{
+"family": "sgwae",
+"name": "Fish Lake",
+"acres": 0,
+"recs": [
+[
+"sgwae21568",
+"Fish Lake",
+0
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"packet: Fish Lake, 55.6 km",
+"https://www.blm.gov/sites/default/files/documents/files/orwa-CoffeepotLake-map.pdf"
+]
+},
+{
+"family": "padus",
+"name": "Washington State Department of Natural Resources (WADNR) State Resource Management Area",
+"acres": 2562869,
+"recs": [
+[
+"271374",
+"Washington State Department of Natural Resources (WADNR) State Resource Management Area",
+2562869
+]
+],
+"n_recs": 1,
+"verdict": "NO",
+"sources": [
+"packet: WADNR SRMA, manager SDNR, pin outside (0.79 km)",
+"https://www.blm.gov/sites/default/files/documents/files/orwa-CoffeepotLake-map.pdf"
+]
+}
+]
 }
 },
 "log": [
 "2026-11-18: 38 park(s) added or refreshed",
 "2026-11-18: pilot (Fable): every finding of the pilot was read to test the tools, so 5 sealed finding(s) are TUNE: US-2786, US-4153, US-6359, US-7075, US-9268",
 "2026-11-18: 24 park(s) added or refreshed",
-"2026-11-18: held-states packet (the 44 outlines the would-be key lost): every outcome was read by Fable, so all of them are TUNE (10 moved)"
+"2026-11-18: held-states packet (the 44 outlines the would-be key lost): every outcome was read by Fable, so all of them are TUNE (10 moved)",
+"2026-11-19: 17 park(s) added or refreshed",
+"2026-11-19: Fable: 14 second-look park(s) where two outside-agent passes agree were added as TUNE ONLY (problem parks the rule writers have read; most are saved answers now, so they can never count as SEALED): US-10524, US-10657, US-10695, US-10844, US-1085, US-12064, US-12413, US-12918, US-13075, US-13126, US-3109, US-6365, US-7293, US-9442"
 ]
 }
