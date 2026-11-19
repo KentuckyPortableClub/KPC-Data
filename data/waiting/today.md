@@ -1,4 +1,4 @@
-# Waiting room: morning list (2026-11-18)
+# Waiting room: morning list (2026-11-19)
 
 For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in data/waiting/approved.json; the nightly run lets it out.
 
@@ -6,14 +6,14 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 
 | since | days | file | last check | why |
 |---|---|---|---|---|
-| 2026-11-01 | 17 | data/truth/US-MA.json | HOLD | F-R2 6 OFF rows share the size 1,000.0 ac; F-R3 169 of 242 sized parks are OFF (over half: a reading problem?) |
-| 2026-11-01 | 17 | data/truth/US-MD.json | HOLD | F-R3 48 of 89 sized parks are OFF (over half: a reading problem?) |
-| 2026-11-01 | 17 | data/truth/US-MN.json | HOLD | F-R3 13 of 20 sized parks are OFF (over half: a reading problem?) |
-| 2026-11-01 | 17 | data/truth/US-OK.json | HOLD | F-R3 53 of 100 sized parks are OFF (over half: a reading problem?) |
-| 2026-11-08 | 10 | data/trails/US-13626.json | HOLD | F-T3 length 16 -> 114 km (outside -25% / +50%) |
-| 2026-11-08 | 10 | data/trails/US-9203.json | HOLD | F-T2 points 19246 -> 1822 (under half the saved line); F-T3 length 138 -> 88 km (outside -25% / +50%) |
-| 2026-11-10 | 8 | data/truth/US-UT.json | HOLD | F-R2 6 OFF rows share the size 2,200,000.0 ac |
-| 2026-11-10 | 8 | data/truth/US-WA.json | HOLD | F-R2 5 OFF rows share the size 564.0 ac; F-R3 157 of 188 sized parks are OFF (over half: a reading problem?) |
+| 2026-11-01 | 18 | data/truth/US-MA.json | HOLD | F-R2 6 OFF rows share the size 1,000.0 ac; F-R3 169 of 242 sized parks are OFF (over half: a reading problem?) |
+| 2026-11-01 | 18 | data/truth/US-MD.json | HOLD | F-R3 48 of 89 sized parks are OFF (over half: a reading problem?) |
+| 2026-11-01 | 18 | data/truth/US-MN.json | HOLD | F-R3 13 of 20 sized parks are OFF (over half: a reading problem?) |
+| 2026-11-01 | 18 | data/truth/US-OK.json | HOLD | F-R3 53 of 100 sized parks are OFF (over half: a reading problem?) |
+| 2026-11-08 | 11 | data/trails/US-13626.json | HOLD | F-T3 length 16 -> 114 km (outside -25% / +50%) |
+| 2026-11-08 | 11 | data/trails/US-9203.json | HOLD | F-T2 points 19246 -> 1822 (under half the saved line); F-T3 length 138 -> 88 km (outside -25% / +50%) |
+| 2026-11-10 | 9 | data/truth/US-UT.json | HOLD | F-R2 6 OFF rows share the size 2,200,000.0 ac |
+| 2026-11-10 | 9 | data/truth/US-WA.json | HOLD | F-R2 5 OFF rows share the size 564.0 ac; F-R3 157 of 188 sized parks are OFF (over half: a reading problem?) |
 | ? | ? | data/campstate/US-AK.json | PASS |  |
 | ? | ? | data/campstate/US-AZ.json | RELEASE |  |
 | ? | ? | data/campstate/US-CO.json | RELEASE |  |
@@ -75,9 +75,9 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/us-key/US-WA.json | PASS |  |
 | ? | ? | data/us-key/US-WI.json | PASS |  |
 | ? | ? | data/us-key/US-WV.json | PASS |  |
-| 2026-11-04 | 14 | data/trails/state-report.json | HOLD | F-T1 the line has no points |
-| 2026-11-09 | 9 | data/trails/index.json | HOLD | F-T4 trail index 139 -> 101 lines (under 80% of the saved list) |
-| 2026-11-18 | 0 | data/world-key/ZA.json | HOLD | F-O2 4 of 76 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks? |
+| 2026-11-04 | 15 | data/trails/state-report.json | HOLD | F-T1 the line has no points |
+| 2026-11-09 | 10 | data/trails/index.json | HOLD | F-T4 trail index 139 -> 101 lines (under 80% of the saved list) |
+| 2026-11-18 | 1 | data/world-key/ZA.json | HOLD | F-O2 4 of 76 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks? |
 | ? | ? | data/trails/index-state.json | RELEASE |  |
 | ? | ? | data/us-key/changed-parks.json | RELEASE |  |
 | ? | ? | data/us-key/index.json | RELEASE |  |
