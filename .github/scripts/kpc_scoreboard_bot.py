@@ -137,6 +137,10 @@ def load(p, dflt=None):
 
 def save(p, obj):
     p = pathlib.Path(p); p.parent.mkdir(parents=True, exist_ok=True)
+    try:   # Nov 19 (storage): a night where only the date stamp moved is not saved again (3 MB a night for nothing)
+        was = json.load(open(p, encoding='utf-8'))
+        if isinstance(was, dict) and isinstance(obj, dict) and {k: v for k, v in was.items() if k not in ('generated', 'built')} == {k: v for k, v in obj.items() if k not in ('generated', 'built')}: return
+    except (OSError, ValueError): pass
     with open(p, 'w', encoding='utf-8') as f: json.dump(obj, f, ensure_ascii=False, separators=(',', ':'))
 
 

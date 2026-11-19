@@ -6,7 +6,7 @@ ready.json). A plain file is still read when no .gz sibling exists, so a checkou
 been compressed keeps working. Writers of those files use save_json_gz / append_jsonl_gz /
 save_text_gz and drop the plain copy.
 """
-import glob, gzip, json, pathlib
+import glob, gzip, json, pathlib, zlib
 
 
 def _pair(path):
@@ -69,12 +69,26 @@ def glob_json_any(pattern):
     return [found[k] for k in sorted(found)]
 
 
+def _write_gz_if_changed(gz, raw):
+    """Nov 19 (storage): write gz only when what is inside changed. Two Python versions write a
+    different gzip header byte (the 'OS' byte: ff / 03), so the same 30 MB of questions was saved
+    again as a 'new' 1.3 MB file by whichever bot ran next, several times a day. A file that does
+    not read is written fresh. -> True when written."""
+    try:
+        if gz.is_file() and gzip.decompress(gz.read_bytes()) == raw:
+            return False
+    except (OSError, EOFError, ValueError, zlib.error):
+        pass
+    gz.write_bytes(gzip.compress(raw, compresslevel=9, mtime=0))
+    return True
+
+
 def save_json_gz(path, obj, end='', **kwargs):
     """Write obj as gzip JSON at path+'.gz' and remove the plain file."""
     plain, gz = _pair(path)
     gz.parent.mkdir(parents=True, exist_ok=True)
     raw = (json.dumps(obj, **kwargs) + end).encode('utf-8')
-    gz.write_bytes(gzip.compress(raw, compresslevel=9, mtime=0))
+    _write_gz_if_changed(gz, raw)
     if plain.exists() and plain.resolve() != gz.resolve():
         plain.unlink()
     return gz
@@ -85,7 +99,7 @@ def save_text_gz(path, text):
     plain, gz = _pair(path)
     gz.parent.mkdir(parents=True, exist_ok=True)
     raw = text.encode('utf-8') if isinstance(text, str) else text
-    gz.write_bytes(gzip.compress(raw, compresslevel=9, mtime=0))
+    _write_gz_if_changed(gz, raw)
     if plain.exists() and plain.resolve() != gz.resolve():
         plain.unlink()
     return gz
