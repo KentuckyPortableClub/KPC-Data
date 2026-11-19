@@ -15,6 +15,7 @@ agency's own park page, its "Maps" or "GIS data" section; (3) only then a genera
 that manages the land, or the state GIS office for it. NOT official: PAD-US, OpenStreetMap, Google, Wikipedia, protectedplanet /
 WDPA, tourism and hobby sites.
 
+**ArcGIS is NOT off limits (the owner, 19 Nov 9:07 AM: "check robot.txt and see what allows them and dont").** robots.txt is the ONLY test: an agency's own ArcGIS Server (`.../arcgis/rest/services/...`), ArcGIS Hub / open-data sites and www.arcgis.com item pages are fine wherever their robots.txt allows. Nobody in the club has banned a host.
 **Manners:** read each site's robots.txt first and obey it, redirects included; at least 2 seconds between requests to one site;
 contact nobody. If robots.txt forbids a host (services*.arcgis.com does), do not open the layer: cite its catalog entry
 (www.arcgis.com item page: owner account, date, licence) and write YES in `needs_a_human_download`.
