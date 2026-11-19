@@ -14,7 +14,7 @@
    "last_run": "2026-11-19",
    "made": "1068 audit rows not clean in 43 areas; waiting for audit 25, waiting for key 41",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44432894625",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44439572463",
    "waiting_on": "chat 11 / 12 (audit answers), chat 2 (fixes)"
   },
   "Cell coverage (FCC)": {
@@ -1020,9 +1020,9 @@
   "Key bots: errors and silence": {
    "areas": "",
    "last_run": "2026-11-19",
-   "made": "2 key bot(s) with errors or gone silent: Europe weather warnings (silent: no finished run in 28 h (expected every 14 h or less); KPC-Data watchdog (Key bots)",
+   "made": "3 key bot(s) with errors or gone silent: Europe weather warnings (silent: no finished run in 28 h (expected every 14 h or less); KPC-Data watchdog (Key bots); waiting room (silent: no finished run in 6 h (expected every 6 h or less))",
    "result": "red",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44432894625",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44439572463",
    "waiting_on": "HQ: open the watchdog run summary for the run links"
   },
   "Layer collector": {
@@ -1084,9 +1084,9 @@
   "Skipped-run watchdog": {
    "areas": "",
    "last_run": "2026-11-19",
-   "made": "2026-11-19 00:56 UTC: 1 skipped run(s) started again: kpc-copy-from-links.yml (missed Nov 19 00:11 UTC)",
-   "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44432894625",
+   "made": "nothing skipped",
+   "result": "green",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44439572463",
    "waiting_on": "nobody (it restarts them itself)"
   },
   "Storage keeper (weekly)": {
@@ -1198,7 +1198,7 @@
    "last_run": "2026-11-19",
    "made": "site = main: the website has the newest data",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44432894625",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44439572463",
    "waiting_on": "nobody (the watchdog restarts the copy bot itself)"
   },
   "answer-sheet-check": {
