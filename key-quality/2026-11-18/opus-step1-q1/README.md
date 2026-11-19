@@ -8,3 +8,4 @@ are the old files. Two "old" keys:
 LIMIT: this box has no shapely: an offline key has no union acreage, so SIZE_BIG / BIG_PIECE / the size witness of the new side
 are not usable. Use outlines, records, SHARED, OTHER_PARK, PIN_FAR (tools: main's kpc_key_factcheck.py / kpc_key_grade.py,
 SEALED as numbers only). The published key's own fact check: ../fable-review-270-271/.
+Round 3 (19 Nov 1 AM): Fable's round-2 fix on #270 (keep-last-good never brings an approximate row back); OR, UT, WY rebuilt; files above replaced.
