@@ -1,0 +1,87 @@
+{
+ "area": "US",
+ "rows": [
+  {
+   "area": "US",
+   "code": "NOT_SAMPLED",
+   "evidence": {
+    "date": "2026-11-19",
+    "saw": "",
+    "source": ""
+   },
+   "first_seen": "2026-11-19",
+   "found_by": "Fable, release call",
+   "how_sure": "unchecked",
+   "last_seen": "2026-11-19",
+   "name": "every outline that did NOT change in this release",
+   "ref": "(class)",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "outline",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "random sample"
+   ],
+   "why": "only changes were checked; the 1-in-100 bar needs a random sample"
+  },
+  {
+   "area": "US",
+   "code": "OUTLINE_SOURCE_UNCLEAR",
+   "evidence": {
+    "date": "2026-11-19",
+    "saw": "",
+    "source": ""
+   },
+   "first_seen": "2026-11-19",
+   "found_by": "hand-off 04 job E",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-19",
+   "name": "13 of the 25 busiest new pins",
+   "ref": "(class)",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "pin",
+   "status": "open",
+   "tried": [],
+   "wants": [],
+   "why": "two passes did not agree where the official outline lives or on its acres"
+  },
+  {
+   "area": "US",
+   "code": "PIN_OUTSIDE_LAND",
+   "evidence": {
+    "date": "2026-11-19",
+    "saw": "",
+    "source": ""
+   },
+   "first_seen": "2026-11-19",
+   "found_by": "key run boundary check",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-19",
+   "name": "2,296 joined parks whose pin is outside their land (19.7%; Arkansas 98 of 256)",
+   "ref": "(class)",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "outline",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "a pin outside the land is not proof of wrong land (pins are only references), but nobody has sorted these"
+  }
+ ]
+}
