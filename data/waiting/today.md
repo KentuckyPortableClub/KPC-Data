@@ -1,47 +1,51 @@
-# Waiting room: morning list (2026-11-19)
+# Waiting room: morning list (2026-11-20)
 
 For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in data/waiting/approved.json; the nightly run lets it out.
 
-## Held files: 103 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
+## Held files: 115 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
 
 | since | days | file | last check | why |
 |---|---|---|---|---|
-| 2026-11-01 | 18 | data/truth/US-MA.json | HOLD | F-R2 6 OFF rows share the size 1,000.0 ac; F-R3 169 of 242 sized parks are OFF (over half: a reading problem?) |
-| 2026-11-01 | 18 | data/truth/US-MD.json | HOLD | F-R3 48 of 89 sized parks are OFF (over half: a reading problem?) |
-| 2026-11-01 | 18 | data/truth/US-MN.json | HOLD | F-R3 13 of 20 sized parks are OFF (over half: a reading problem?) |
-| 2026-11-01 | 18 | data/truth/US-OK.json | HOLD | F-R3 53 of 100 sized parks are OFF (over half: a reading problem?) |
-| 2026-11-08 | 11 | data/trails/US-13626.json | HOLD | F-T3 length 16 -> 114 km (outside -25% / +50%) |
-| 2026-11-08 | 11 | data/trails/US-9203.json | HOLD | F-T2 points 19246 -> 1822 (under half the saved line); F-T3 length 138 -> 88 km (outside -25% / +50%) |
-| 2026-11-10 | 9 | data/truth/US-UT.json | HOLD | F-R2 6 OFF rows share the size 2,200,000.0 ac |
-| 2026-11-10 | 9 | data/truth/US-WA.json | HOLD | F-R2 5 OFF rows share the size 564.0 ac; F-R3 157 of 188 sized parks are OFF (over half: a reading problem?) |
+| 2026-11-01 | 19 | data/truth/US-MA.json | HOLD | F-R2 6 OFF rows share the size 1,000.0 ac; F-R3 169 of 242 sized parks are OFF (over half: a reading problem?) |
+| 2026-11-01 | 19 | data/truth/US-MD.json | HOLD | F-R3 48 of 89 sized parks are OFF (over half: a reading problem?) |
+| 2026-11-01 | 19 | data/truth/US-MN.json | HOLD | F-R3 13 of 20 sized parks are OFF (over half: a reading problem?) |
+| 2026-11-01 | 19 | data/truth/US-OK.json | HOLD | F-R3 53 of 100 sized parks are OFF (over half: a reading problem?) |
+| 2026-11-08 | 12 | data/trails/US-13626.json | HOLD | F-T3 length 16 -> 114 km (outside -25% / +50%) |
+| 2026-11-08 | 12 | data/trails/US-9203.json | HOLD | F-T2 points 19246 -> 1822 (under half the saved line); F-T3 length 138 -> 88 km (outside -25% / +50%) |
+| 2026-11-10 | 10 | data/truth/US-UT.json | HOLD | F-R2 6 OFF rows share the size 2,200,000.0 ac |
+| 2026-11-10 | 10 | data/truth/US-WA.json | HOLD | F-R2 5 OFF rows share the size 564.0 ac; F-R3 157 of 188 sized parks are OFF (over half: a reading problem?) |
+| ? | ? | data/ca-key/CA-ON.json | PASS |  |
 | ? | ? | data/campstate/US-AK.json | PASS |  |
-| ? | ? | data/campstate/US-AZ.json | RELEASE |  |
-| ? | ? | data/campstate/US-CO.json | RELEASE |  |
+| ? | ? | data/campstate/US-AZ.json | PASS |  |
+| ? | ? | data/campstate/US-CO.json | PASS |  |
 | ? | ? | data/campstate/US-FL.json | PASS |  |
-| ? | ? | data/campstate/US-HI.json | RELEASE |  |
-| ? | ? | data/campstate/US-IA.json | RELEASE |  |
-| ? | ? | data/campstate/US-IN.json | RELEASE |  |
-| ? | ? | data/campstate/US-MN.json | RELEASE |  |
-| ? | ? | data/campstate/US-MT.json | RELEASE |  |
+| ? | ? | data/campstate/US-HI.json | PASS |  |
+| ? | ? | data/campstate/US-IA.json | PASS |  |
+| ? | ? | data/campstate/US-IN.json | PASS |  |
+| ? | ? | data/campstate/US-MN.json | PASS |  |
+| ? | ? | data/campstate/US-MT.json | PASS |  |
 | ? | ? | data/campstate/US-ND.json | PASS |  |
-| ? | ? | data/campstate/US-NH.json | RELEASE |  |
+| ? | ? | data/campstate/US-NH.json | PASS |  |
 | ? | ? | data/campstate/US-NM.json | PASS |  |
 | ? | ? | data/campstate/US-NV.json | PASS |  |
-| ? | ? | data/campstate/US-OH.json | RELEASE |  |
-| ? | ? | data/campstate/US-OR.json | RELEASE |  |
-| ? | ? | data/campstate/US-PA.json | RELEASE |  |
-| ? | ? | data/campstate/US-SD.json | RELEASE |  |
+| ? | ? | data/campstate/US-OH.json | PASS |  |
+| ? | ? | data/campstate/US-OR.json | PASS |  |
+| ? | ? | data/campstate/US-PA.json | PASS |  |
+| ? | ? | data/campstate/US-SD.json | PASS |  |
 | ? | ? | data/campstate/US-UT.json | PASS |  |
 | ? | ? | data/campstate/US-VA.json | PASS |  |
-| ? | ? | data/campstate/US-VT.json | RELEASE |  |
-| ? | ? | data/us-key/US-AK.json | RELEASE |  |
+| ? | ? | data/campstate/US-VT.json | PASS |  |
+| ? | ? | data/us-key/US-AK.json | PASS |  |
 | ? | ? | data/us-key/US-AL.json | PASS |  |
+| ? | ? | data/us-key/US-AR.json | PASS |  |
 | ? | ? | data/us-key/US-AZ.json | PASS |  |
 | ? | ? | data/us-key/US-CA.json | PASS |  |
 | ? | ? | data/us-key/US-CO.json | PASS |  |
 | ? | ? | data/us-key/US-CT.json | PASS |  |
 | ? | ? | data/us-key/US-DC.json | PASS |  |
+| ? | ? | data/us-key/US-DE.json | PASS |  |
 | ? | ? | data/us-key/US-FL.json | PASS |  |
+| ? | ? | data/us-key/US-GA.json | PASS |  |
 | ? | ? | data/us-key/US-HI.json | RELEASE |  |
 | ? | ? | data/us-key/US-IA.json | PASS |  |
 | ? | ? | data/us-key/US-ID.json | PASS |  |
@@ -56,7 +60,8 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/us-key/US-MN.json | PASS |  |
 | ? | ? | data/us-key/US-MO.json | PASS |  |
 | ? | ? | data/us-key/US-MS.json | PASS |  |
-| ? | ? | data/us-key/US-NC.json | RELEASE |  |
+| ? | ? | data/us-key/US-MT.json | PASS |  |
+| ? | ? | data/us-key/US-NC.json | PASS |  |
 | ? | ? | data/us-key/US-ND.json | PASS |  |
 | ? | ? | data/us-key/US-NE.json | PASS |  |
 | ? | ? | data/us-key/US-NH.json | PASS |  |
@@ -68,18 +73,25 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/us-key/US-OK.json | PASS |  |
 | ? | ? | data/us-key/US-OR.json | PASS |  |
 | ? | ? | data/us-key/US-PA.json | RELEASE |  |
+| ? | ? | data/us-key/US-RI.json | RELEASE |  |
 | ? | ? | data/us-key/US-SC.json | PASS |  |
 | ? | ? | data/us-key/US-SD.json | PASS |  |
 | ? | ? | data/us-key/US-TN.json | PASS |  |
 | ? | ? | data/us-key/US-TX.json | PASS |  |
-| ? | ? | data/us-key/US-UT.json | RELEASE |  |
+| ? | ? | data/us-key/US-UT.json | PASS |  |
+| ? | ? | data/us-key/US-VA.json | PASS |  |
 | ? | ? | data/us-key/US-VT.json | RELEASE |  |
 | ? | ? | data/us-key/US-WA.json | PASS |  |
 | ? | ? | data/us-key/US-WI.json | PASS |  |
 | ? | ? | data/us-key/US-WV.json | PASS |  |
-| 2026-11-04 | 15 | data/trails/state-report.json | HOLD | F-T1 the line has no points |
-| 2026-11-09 | 10 | data/trails/index.json | HOLD | F-T4 trail index 139 -> 101 lines (under 80% of the saved list) |
-| 2026-11-18 | 1 | data/world-key/ZA.json | HOLD | F-O2 4 of 76 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks? |
+| ? | ? | data/us-key/US-WY.json | RELEASE |  |
+| 2026-11-04 | 16 | data/trails/state-report.json | HOLD | F-T1 the line has no points |
+| 2026-11-09 | 11 | data/trails/index.json | HOLD | F-T4 trail index 139 -> 101 lines (under 80% of the saved list) |
+| 2026-11-18 | 2 | data/world-key/ZA.json | HOLD | F-O2 4 of 76 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks? |
+| 2026-11-20 | 0 | data/acres.json | HOLD | 430 rows without acres or a source (e.g. US-0042) |
+| ? | ? | data/ca-key/index.json | RELEASE |  |
+| ? | ? | data/ca-key/refs.json | RELEASE |  |
+| ? | ? | data/ca-key/why-not.json | RELEASE |  |
 | ? | ? | data/trails/index-state.json | RELEASE |  |
 | ? | ? | data/us-key/changed-parks.json | RELEASE |  |
 | ? | ? | data/us-key/index.json | RELEASE |  |
