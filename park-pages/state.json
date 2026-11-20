@@ -1,28 +1,24 @@
 {
  "hosts": {
-  "www.fs.usda.gov": 1795226064.1291213,
-  "parks.ky.gov": 1795226098.4009078
+  "www.fs.usda.gov": 1795231584.0821478
  },
  "refused": {
-  "doifwsnextprod.prod.acquia-sites.com": "2026-11-20"
+  "doifwsnextprod.prod.acquia-sites.com": "2026-11-20",
+  "cms.nps.gov": "2026-11-20"
  },
  "dead": {
-  "https://www.nps.gov/trte/learn/management/statistics.htm": "2026-11-20",
   "https://www.nps.gov/lecl/learn/management/statistics.htm": "2026-11-20",
-  "https://www.nps.gov/cuga/learn/management/statistics.htm": "2026-11-20",
-  "https://www.nps.gov/cane/learn/management/statistics.htm": "2026-11-20",
-  "https://www.nps.gov/abli/learn/management/statistics.htm": "2026-11-20",
-  "https://www.nps.gov/misp/learn/management/statistics.htm": "2026-11-20",
-  "https://www.fws.gov/refuge/green-river/visit-us/locations/green-river-national-wildlife-refuge": "2026-11-20"
+  "https://www.nps.gov/iafl/learn/management/statistics.htm": "2026-11-20",
+  "https://www.nps.gov/yell/learn/management/statistics.htm": "2026-11-20",
+  "https://www.blm.gov/visit/acton": "2026-11-20",
+  "https://www.nps.gov/grko/learn/management/statistics.htm": "2026-11-20",
+  "https://www.nps.gov/biho/learn/management/statistics.htm": "2026-11-20",
+  "https://www.nps.gov/fous/learn/management/statistics.htm": "2026-11-20",
+  "https://www.fws.gov/refuge/National_Bison_Range/Contact.html": "2026-11-20",
+  "https://www.fws.gov/mountain-prairie/refuges/mdl.php": "2026-11-20",
+  "https://fwp.mt.gov/hell-creek": "2026-11-20"
  },
  "read": {
-  "US-3791": {
-   "url": "https://www.nps.gov/trte/index.htm",
-   "fingerprint": "c1d34cce2a39",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://www.nps.gov/trte/index.htm"
-  },
   "US-4572": {
    "url": "https://www.nps.gov/lecl/index.htm",
    "fingerprint": "6dbbab9c7ee3",
@@ -30,1463 +26,1994 @@
    "kind": "html",
    "final": "https://www.nps.gov/lecl/index.htm"
   },
-  "US-4526": {
-   "url": "https://www.fs.usda.gov/gwj",
+  "US-0054": {
+   "url": "https://www.nps.gov/nepe/index.htm",
+   "fingerprint": "037a6cd1b9fa",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.nps.gov/nepe/index.htm"
+  },
+  "US-10529": {
+   "url": "https://www.blm.gov/visit/sundance-lodge-rec-area",
+   "fingerprint": "21909c0c7672",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/sundance-lodge-rec-area"
+  },
+  "US-10528": {
+   "url": "https://www.blm.gov/visit/shepherd-ah-nei-srma",
+   "fingerprint": "b52ec70c5201",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/shepherd-ah-nei-srma"
+  },
+  "US-2559": {
+   "url": "https://fwp.mt.gov/stateparks/beaverhead-rock",
+   "fingerprint": "777e3e894f76",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://fwp.mt.gov/stateparks/beaverhead-rock"
+  },
+  "US-3424": {
+   "url": "https://www.nps.gov/iafl/index.htm",
+   "fingerprint": "89f3a146dd0c",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.nps.gov/iafl/index.htm"
+  },
+  "US-4558": {
+   "url": "https://www.fs.usda.gov/managing-land/trails/cdt",
+   "fingerprint": "d3d2bc8c91fc",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.fs.usda.gov/trails/continental-divide-nst"
+  },
+  "US-4504": {
+   "url": "https://www.fs.usda.gov/hlcnf/",
    "fingerprint": "e3b0c44298fc",
    "date": "2026-11-20",
    "kind": "resting",
-   "final": "https://www.fs.usda.gov/gwj"
+   "final": "https://www.fs.usda.gov/hlcnf/"
   },
-  "US-4484": {
-   "url": "https://www.fs.usda.gov/dbnf/",
+  "US-0070": {
+   "url": "https://www.nps.gov/yell/index.htm",
+   "fingerprint": "fa3b70d539f9",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.nps.gov/yell/index.htm"
+  },
+  "US-4563": {
+   "url": "https://www.fs.usda.gov/trails/pacific-northwest-nst",
    "fingerprint": "e3b0c44298fc",
    "date": "2026-11-20",
    "kind": "resting",
-   "final": "https://www.fs.usda.gov/dbnf/"
+   "final": "https://www.fs.usda.gov/trails/pacific-northwest-nst"
   },
-  "US-3792": {
-   "url": "https://landbetweenthelakes.us/",
-   "fingerprint": "",
-   "date": "2026-11-20",
-   "kind": "none"
-  },
-  "US-0050": {
-   "url": "https://www.nps.gov/maca/index.htm",
-   "fingerprint": "d4bd083df32a",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://www.nps.gov/maca/index.htm"
-  },
-  "US-1260": {
-   "url": "https://parks.ky.gov/henderson/parks/historic/john-james-audubon-state-park",
+  "US-4501": {
+   "url": "https://www.fs.usda.gov/main/custergallatin/home",
    "fingerprint": "e3b0c44298fc",
    "date": "2026-11-20",
    "kind": "resting",
-   "final": "https://parks.ky.gov/henderson/parks/historic/john-james-audubon-state-park"
+   "final": "https://www.fs.usda.gov/main/custergallatin/home"
   },
-  "US-3787": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition",
-   "fingerprint": "279af6a620f0",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
-  },
-  "US-3779": {
-   "url": "https://parks.ky.gov/union/parks/historic/big-bone-lick-state-historic-site",
+  "US-4574": {
+   "url": "https://www.fs.usda.gov/npnht/",
    "fingerprint": "e3b0c44298fc",
    "date": "2026-11-20",
    "kind": "resting",
-   "final": "https://parks.ky.gov/union/parks/historic/big-bone-lick-state-historic-site"
+   "final": "https://www.fs.usda.gov/npnht/"
   },
-  "US-1254": {
-   "url": "https://parks.ky.gov/louisville/parks/recreation/ep-tom-sawyer-state-park",
+  "US-2589": {
+   "url": "https://fwp.mt.gov/stateparks/missouri-headwaters/",
+   "fingerprint": "3ae75043433e",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://fwp.mt.gov/stateparks/missouri-headwaters/"
+  },
+  "US-4475": {
+   "url": "https://www.fs.usda.gov/ctnf",
    "fingerprint": "e3b0c44298fc",
    "date": "2026-11-20",
    "kind": "resting",
-   "final": "https://parks.ky.gov/louisville/parks/recreation/ep-tom-sawyer-state-park"
+   "final": "https://www.fs.usda.gov/ctnf"
   },
-  "US-0686": {
-   "url": "https://www.nps.gov/biso/index.htm",
-   "fingerprint": "4dd235adfa0e",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://www.nps.gov/biso/index.htm"
-  },
-  "US-9756": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9717",
-   "fingerprint": "279af6a620f0",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
-  },
-  "US-1273": {
-   "url": "https://parks.ky.gov/lucas/parks/resort/barren-river-lake-state-resort-park",
+  "US-4500": {
+   "url": "https://www.fs.usda.gov/r01/bitterroot",
    "fingerprint": "e3b0c44298fc",
    "date": "2026-11-20",
    "kind": "resting",
-   "final": "https://parks.ky.gov/lucas/parks/resort/barren-river-lake-state-resort-park"
+   "final": "https://www.fs.usda.gov/r01/bitterroot"
   },
-  "US-1256": {
-   "url": "https://parks.ky.gov/richmond/parks/historic/fort-boonesborough-state-park",
+  "US-4499": {
+   "url": "https://www.fs.usda.gov/bdnf",
    "fingerprint": "e3b0c44298fc",
    "date": "2026-11-20",
    "kind": "resting",
-   "final": "https://parks.ky.gov/richmond/parks/historic/fort-boonesborough-state-park"
+   "final": "https://www.fs.usda.gov/bdnf"
   },
-  "US-1271": {
-   "url": "https://parks.ky.gov/mount-eden/parks/recreation/taylorsville-lake-state-park",
+  "US-4502": {
+   "url": "https://www.fs.usda.gov/flathead",
    "fingerprint": "e3b0c44298fc",
    "date": "2026-11-20",
    "kind": "resting",
-   "final": "https://parks.ky.gov/mount-eden/parks/recreation/taylorsville-lake-state-park"
+   "final": "https://www.fs.usda.gov/flathead"
   },
-  "US-1261": {
-   "url": "https://parks.ky.gov/falmouth/parks/recreation/kincaid-lake-state-park",
+  "US-4477": {
+   "url": "https://www.fs.usda.gov/r01/idahopanhandle",
    "fingerprint": "e3b0c44298fc",
    "date": "2026-11-20",
    "kind": "resting",
-   "final": "https://parks.ky.gov/falmouth/parks/recreation/kincaid-lake-state-park"
+   "final": "https://www.fs.usda.gov/r01/idahopanhandle"
   },
-  "US-3786": {
-   "url": "https://parks.ky.gov/lexington/parks/historic/waveland-state-historic-site",
+  "US-4507": {
+   "url": "https://www.fs.usda.gov/lolo",
    "fingerprint": "e3b0c44298fc",
    "date": "2026-11-20",
    "kind": "resting",
-   "final": "https://parks.ky.gov/lexington/parks/historic/waveland-state-historic-site"
+   "final": "https://www.fs.usda.gov/lolo"
   },
-  "US-10105": {
-   "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Green-River-Wild-River.aspx",
-   "fingerprint": "7ccea5b260b8",
+  "US-0028": {
+   "url": "https://www.nps.gov/glac/index.htm",
+   "fingerprint": "7c2bc4818fc3",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Green-River-Wild-River.aspx"
+   "final": "https://www.nps.gov/glac/index.htm"
   },
-  "US-10173": {
-   "url": "https://www.kyhorsepark.com/",
-   "fingerprint": "",
-   "date": "2026-11-20",
-   "kind": "none"
-  },
-  "US-7956": {
-   "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Beargrass-Creek.aspx",
-   "fingerprint": "816684005016",
+  "US-2598": {
+   "url": "https://fwp.mt.gov/stateparks/spring-meadow-state-park",
+   "fingerprint": "1ba01acae91a",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Beargrass-Creek.aspx"
+   "final": "https://fwp.mt.gov/stateparks/spring-meadow-state-park"
   },
-  "US-1279": {
-   "url": "https://parks.ky.gov/carrollton/parks/historic/general-butler-state-resort-park",
+  "US-2563": {
+   "url": "https://fwp.mt.gov/brush-lake",
+   "fingerprint": "ad745b3b1c79",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://fwp.mt.gov/brush-lake"
+  },
+  "US-2581": {
+   "url": "https://fwp.mt.gov/stateparks/lewis-and-clark-caverns",
+   "fingerprint": "495ce6de80f5",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://fwp.mt.gov/stateparks/lewis-and-clark-caverns"
+  },
+  "US-2605": {
+   "url": "https://fwp.mt.gov/stateparks/whitefish-lake",
+   "fingerprint": "b919bd21b80b",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://fwp.mt.gov/stateparks/whitefish-lake"
+  },
+  "US-2578": {
+   "url": "https://fwp.mt.gov/stateparks/lake-elmo",
+   "fingerprint": "8d6698e5bf6a",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://fwp.mt.gov/stateparks/lake-elmo"
+  },
+  "US-2585": {
+   "url": "https://fwp.mt.gov/stateparks/madison-buffalo-jump",
+   "fingerprint": "68093bb45145",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://fwp.mt.gov/stateparks/madison-buffalo-jump"
+  },
+  "US-2562": {
+   "url": "https://fwp.mt.gov/black-sandy",
+   "fingerprint": "c9368419259b",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://fwp.mt.gov/black-sandy"
+  },
+  "US-4505": {
+   "url": "https://www.fs.usda.gov/r01/kootenai/about-area/about-forest",
    "fingerprint": "e3b0c44298fc",
    "date": "2026-11-20",
    "kind": "resting",
-   "final": "https://parks.ky.gov/carrollton/parks/historic/general-butler-state-resort-park"
+   "final": "https://www.fs.usda.gov/r01/kootenai/about-area/about-forest"
   },
-  "US-8144": {
-   "url": "https://fw.ky.gov/Pages/Otter-Creek-Outdoor-Recreation-Area.aspx",
-   "fingerprint": "3807138828f8",
+  "US-2574": {
+   "url": "https://fwp.mt.gov/stateparks/giant-springs/",
+   "fingerprint": "aed7b0cf8073",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://fw.ky.gov/Pages/Otter-Creek-Outdoor-Recreation-Area.aspx"
+   "final": "https://fwp.mt.gov/stateparks/giant-springs/"
   },
-  "US-1283": {
-   "url": "https://parks.ky.gov/gilbertsville/parks/resort/kentucky-dam-village-state-resort-park",
+  "US-2570": {
+   "url": "https://fwp.mt.gov/first-peoples-buffalo-jump",
+   "fingerprint": "c718c1b9c7af",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://fwp.mt.gov/first-peoples-buffalo-jump"
+  },
+  "US-2602": {
+   "url": "https://fwp.mt.gov/stateparks/travelers-rest/",
+   "fingerprint": "8255da044e7e",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://fwp.mt.gov/stateparks/travelers-rest/"
+  },
+  "US-2600": {
+   "url": "https://fwp.mt.gov/stateparks/tongue-river-reservoir/",
+   "fingerprint": "c1184eb2b480",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://fwp.mt.gov/stateparks/tongue-river-reservoir/"
+  },
+  "US-2576": {
+   "url": "https://fwp.mt.gov/stateparks/greycliff-prairie-dog-town",
+   "fingerprint": "3b73ff7c080a",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://fwp.mt.gov/stateparks/greycliff-prairie-dog-town"
+  },
+  "US-2573": {
+   "url": "https://fwp.mt.gov/stateparks/frenchtown-pond",
+   "fingerprint": "719877e4c401",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://fwp.mt.gov/stateparks/frenchtown-pond"
+  },
+  "US-10526": {
+   "url": "https://www.blm.gov/visit/devils-elbow-campground",
+   "fingerprint": "d0693f05de6d",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/devils-elbow-campground"
+  },
+  "US-11146": {
+   "url": "https://fwp.mt.gov/stateparks/somers-beach",
+   "fingerprint": "e08c66d5488c",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://fwp.mt.gov/stateparks/somers-beach"
+  },
+  "US-0947": {
+   "url": "https://www.nps.gov/libi/index.htm",
+   "fingerprint": "ca195f6e1b59",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.nps.gov/libi/index.htm"
+  },
+  "US-0402": {
+   "url": "https://www.fws.gov/refuge/lee_metcalf/",
+   "fingerprint": "aeb9df7925f7",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.fws.gov/refuge/lee-metcalf"
+  },
+  "US-3387": {
+   "url": "https://fwp.mt.gov/stateparks/thompson-chain-of-lakes",
+   "fingerprint": "d98c0d8ee709",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://fwp.mt.gov/stateparks/thompson-chain-of-lakes"
+  },
+  "US-11242": {
+   "url": "https://www.blm.gov/maps/georeferenced-PDFs/montana-dakotas",
+   "fingerprint": "bf697adebb74",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/maps/georeferenced-PDFs/montana-dakotas"
+  },
+  "US-4844": {
+   "url": "https://archive.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html",
+   "fingerprint": "660fbd576fd9",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://mca.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html"
+  },
+  "US-2566": {
+   "url": "https://fwp.mt.gov/stateparks/cooney",
+   "fingerprint": "5f418429e9e4",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://fwp.mt.gov/stateparks/cooney"
+  },
+  "US-0399": {
+   "url": "https://www.fws.gov/refuge/charles_m_russell/",
+   "fingerprint": "9bd8f07095fd",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.fws.gov/locations/charles-m-russell-national-wildlife-refuge"
+  },
+  "US-0674": {
+   "url": "https://www.nps.gov/bica/index.htm",
+   "fingerprint": "005a7ed15330",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.nps.gov/bica/index.htm"
+  },
+  "US-2567": {
+   "url": "https://fwp.mt.gov/stateparks/council-grove",
+   "fingerprint": "807bac038084",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://fwp.mt.gov/stateparks/council-grove"
+  },
+  "US-2594": {
+   "url": "https://fwp.mt.gov/stateparks/rosebud-battlefield/",
+   "fingerprint": "3f3690cb9386",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://fwp.mt.gov/stateparks/rosebud-battlefield/"
+  },
+  "US-10175": {
+   "url": "https://fwp.mt.gov/stateparks/milltown",
+   "fingerprint": "bb4effdb3288",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://fwp.mt.gov/stateparks/milltown"
+  },
+  "US-2580": {
+   "url": "https://fwp.mt.gov/les-mason",
+   "fingerprint": "63432c508a0a",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://fwp.mt.gov/les-mason"
+  },
+  "US-2586": {
+   "url": "https://fwp.mt.gov/stateparks/makoshika",
+   "fingerprint": "f8af412051bb",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://fwp.mt.gov/stateparks/makoshika"
+  },
+  "US-7994": {
+   "url": "https://www.fs.usda.gov/recarea/nezperceclearwater/recarea/?recid=16474",
    "fingerprint": "e3b0c44298fc",
    "date": "2026-11-20",
    "kind": "resting",
-   "final": "https://parks.ky.gov/gilbertsville/parks/resort/kentucky-dam-village-state-resort-park"
+   "final": "https://www.fs.usda.gov/recarea/nezperceclearwater/recarea/?recid=16474"
   },
-  "US-3836": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9202",
-   "fingerprint": "279af6a620f0",
+  "US-2583": {
+   "url": "https://fwp.mt.gov/stateparks/lone-pine/",
+   "fingerprint": "d46e378e6bbd",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
+   "final": "https://fwp.mt.gov/stateparks/lone-pine/"
   },
-  "US-1267": {
-   "url": "https://parks.ky.gov/bardstown/parks/historic/my-old-kentucky-home-state-park",
+  "US-2556": {
+   "url": "https://fwp.mt.gov/stateparks/ackley-lake-state-park",
+   "fingerprint": "9cd563e0e8a4",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://fwp.mt.gov/stateparks/ackley-lake-state-park"
+  },
+  "US-2572": {
+   "url": "https://fwp.mt.gov/stateparks/fort-owen",
+   "fingerprint": "6a54411ca0c9",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://fwp.mt.gov/stateparks/fort-owen"
+  },
+  "US-2604": {
+   "url": "https://fwp.mt.gov/west-shore",
+   "fingerprint": "687394949ad7",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://fwp.mt.gov/west-shore"
+  },
+  "US-2588": {
+   "url": "https://fwp.mt.gov/stateparks/medicine-rocks/",
+   "fingerprint": "472372405057",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://fwp.mt.gov/stateparks/medicine-rocks/"
+  },
+  "US-4548": {
+   "url": "https://www.blm.gov/visit/pompeys-pillar-national-monument",
+   "fingerprint": "ed899571ded8",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/pompeys-pillar-national-monument"
+  },
+  "US-6442": {
+   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634",
+   "fingerprint": "342444155f69",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+  },
+  "US-0883": {
+   "url": "https://www.fs.usda.gov/r01/flathead/recreation/wild-scenic-rivers",
    "fingerprint": "e3b0c44298fc",
    "date": "2026-11-20",
    "kind": "resting",
-   "final": "https://parks.ky.gov/bardstown/parks/historic/my-old-kentucky-home-state-park"
+   "final": "https://www.fs.usda.gov/r01/flathead/recreation/wild-scenic-rivers"
   },
-  "US-7954": {
-   "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Blackacre.aspx",
-   "fingerprint": "7c8a154b5748",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Blackacre.aspx"
-  },
-  "US-11181": {
-   "url": "https://www.fs.usda.gov/wildflowers/regions/southern/SheltoweeTrace/index.shtml",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://www.fs.usda.gov/wildflowers/regions/southern/SheltoweeTrace/index.shtml"
-  },
-  "US-10170": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9116",
-   "fingerprint": "279af6a620f0",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
-  },
-  "US-3825": {
-   "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=15",
-   "fingerprint": "5389e39b2c93",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=15"
-  },
-  "US-0019": {
-   "url": "https://www.nps.gov/cuga/index.htm",
-   "fingerprint": "c9b2af88e69f",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://www.nps.gov/cuga/index.htm"
-  },
-  "US-1282": {
-   "url": "https://parks.ky.gov/hardin/parks/resort/kenlake-state-resort-park",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://parks.ky.gov/hardin/parks/resort/kenlake-state-resort-park"
-  },
-  "US-1284": {
-   "url": "https://parks.ky.gov/cadiz/parks/resort/lake-barkley-state-resort-park",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://parks.ky.gov/cadiz/parks/resort/lake-barkley-state-resort-park"
-  },
-  "US-7965": {
-   "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Brigadoon.aspx",
-   "fingerprint": "599d549bf356",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Brigadoon.aspx"
-  },
-  "US-3805": {
-   "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=153",
-   "fingerprint": "5389e39b2c93",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=15"
-  },
-  "US-7953": {
-   "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Metropolis-Lake.aspx",
-   "fingerprint": "1f377d3deff5",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Metropolis-Lake.aspx"
-  },
-  "US-1281": {
-   "url": "https://parks.ky.gov/prestonsburg/parks/resort/jenny-wiley-state-resort-park",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://parks.ky.gov/prestonsburg/parks/resort/jenny-wiley-state-resort-park"
-  },
-  "US-1286": {
-   "url": "https://parks.ky.gov/slade/parks/resort/natural-bridge-state-resort-park",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://parks.ky.gov/slade/parks/resort/natural-bridge-state-resort-park"
-  },
-  "US-1255": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=25",
-   "fingerprint": "279af6a620f0",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
-  },
-  "US-1274": {
-   "url": "https://parks.ky.gov/carlisle/parks/historic/blue-licks-battlefield-state-resort-park",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://parks.ky.gov/carlisle/parks/historic/blue-licks-battlefield-state-resort-park"
-  },
-  "US-1270": {
-   "url": "https://parks.ky.gov/staffordsville/parks/recreation/paintsville-lake-state-park",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://parks.ky.gov/staffordsville/parks/recreation/paintsville-lake-state-park"
-  },
-  "US-1257": {
-   "url": "https://parks.ky.gov/burnside/parks/recreation/general-burnside-island-state-park",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://parks.ky.gov/burnside/parks/recreation/general-burnside-island-state-park"
-  },
-  "US-3783": {
-   "url": "https://parks.ky.gov/fairview/parks/historic/jefferson-davis-state-historic-site",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://parks.ky.gov/fairview/parks/historic/jefferson-davis-state-historic-site"
-  },
-  "US-3813": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9201",
-   "fingerprint": "279af6a620f0",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
-  },
-  "US-1276": {
-   "url": "https://parks.ky.gov/olive-hill/parks/resort/carter-caves-state-resort-park",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://parks.ky.gov/olive-hill/parks/resort/carter-caves-state-resort-park"
-  },
-  "US-3810": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=149",
-   "fingerprint": "279af6a620f0",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
-  },
-  "US-1277": {
-   "url": "https://parks.ky.gov/corbin/parks/resort/cumberland-falls-state-resort-park",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://parks.ky.gov/corbin/parks/resort/cumberland-falls-state-resort-park"
-  },
-  "US-3781": {
-   "url": "https://www.breakspark.com/",
-   "fingerprint": "",
-   "date": "2026-11-20",
-   "kind": "none"
-  },
-  "US-7950": {
-   "url": "https://www.nps.gov/cane/index.htm",
-   "fingerprint": "6efa83cdbe87",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://www.nps.gov/cane/index.htm"
-  },
-  "US-0703": {
-   "url": "https://www.nps.gov/fodo/index.htm",
-   "fingerprint": "207db3980080",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://www.nps.gov/fodo/index.htm"
-  },
-  "US-10139": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9078",
-   "fingerprint": "279af6a620f0",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
-  },
-  "US-7951": {
-   "url": "https://eec.ky.gov/Natural-Resources/Forestry/ky-state-forests/Pages/Green-River-State-Forest.aspx",
-   "fingerprint": "978c79e5aaa0",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://eec.ky.gov/Natural-Resources/Forestry/ky-state-forests/Pages/Green-River-State-Forest.aspx"
-  },
-  "US-10158": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=36",
-   "fingerprint": "279af6a620f0",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
-  },
-  "US-10102": {
-   "url": "https://parks.ky.gov/whitesburg/parks/recreation/pine-mountain-state-scenic-trail",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://parks.ky.gov/whitesburg/parks/recreation/pine-mountain-state-scenic-trail"
-  },
-  "US-3812": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=154",
-   "fingerprint": "279af6a620f0",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
-  },
-  "US-3785": {
-   "url": "https://parks.ky.gov/perryville/parks/historic/perryville-battlefield-state-historic-site",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://parks.ky.gov/perryville/parks/historic/perryville-battlefield-state-historic-site"
-  },
-  "US-4690": {
-   "url": "https://eec.ky.gov/Natural-Resources/Forestry/ky-state-forests/Pages/Knobs-State-Forest-and-Wildlife-Management-Area.aspx",
-   "fingerprint": "448d25169aae",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://eec.ky.gov/Natural-Resources/Forestry/ky-state-forests/Pages/Knobs-State-Forest-and-Wildlife-Management-Area.aspx"
-  },
-  "US-3826": {
-   "url": "https://fw.ky.gov/More/Documents/MullinsWMA_ALL.pdf",
-   "fingerprint": "72b2602d5a9a",
-   "date": "2026-11-20",
-   "kind": "pdf",
-   "final": "https://fw.ky.gov/More/Documents/MullinsWMA_ALL.pdf"
-  },
-  "US-0724": {
-   "url": "https://www.nps.gov/abli/index.htm",
-   "fingerprint": "10c4cdfdeff9",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://www.nps.gov/abli/index.htm"
-  },
-  "US-1251": {
-   "url": "https://parks.ky.gov/sassafras/parks/recreation/carr-creek-state-park",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://parks.ky.gov/sassafras/parks/recreation/carr-creek-state-park"
-  },
-  "US-1264": {
-   "url": "https://levijacksonpark.com/",
-   "fingerprint": "",
-   "date": "2026-11-20",
-   "kind": "none"
-  },
-  "US-3789": {
-   "url": "https://parks.ky.gov/groups/find_locations/central-region/william-whitley-house-historic-site",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://parks.ky.gov/groups/find_locations/central-region/william-whitley-house-historic-site"
-  },
-  "US-1252": {
-   "url": "https://parks.ky.gov/columbus/parks/historic/columbus-belmont-state-park",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://parks.ky.gov/columbus/parks/historic/columbus-belmont-state-park"
-  },
-  "US-1266": {
-   "url": "https://parks.ky.gov/eddyville/parks/recreation/mineral-mound-state-park",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://parks.ky.gov/eddyville/parks/recreation/mineral-mound-state-park"
-  },
-  "US-10124": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=155",
-   "fingerprint": "279af6a620f0",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
-  },
-  "US-1263": {
-   "url": "https://parks.ky.gov/dunmor/parks/recreation/lake-malone-state-park",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://parks.ky.gov/dunmor/parks/recreation/lake-malone-state-park"
-  },
-  "US-3830": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=230",
-   "fingerprint": "279af6a620f0",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
-  },
-  "US-3828": {
-   "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=229",
-   "fingerprint": "5389e39b2c93",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=15"
-  },
-  "US-10172": {
-   "url": "https://fw.ky.gov/Education/Pages/Salato-Wildlife-Education-Center.aspx",
-   "fingerprint": "b0d7b6e597c7",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://fw.ky.gov/Education/Pages/Salato-Wildlife-Education-Center.aspx"
-  },
-  "US-7963": {
-   "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Pilot-Knob.aspx",
-   "fingerprint": "d25525bc1198",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Pilot-Knob.aspx"
-  },
-  "US-1285": {
-   "url": "https://parks.ky.gov/jamestown/parks/resort/lake-cumberland-state-resort-park",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://parks.ky.gov/jamestown/parks/resort/lake-cumberland-state-resort-park"
-  },
-  "US-1259": {
-   "url": "https://parks.ky.gov/campbellsville/parks/recreation/green-river-lake-state-park",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://parks.ky.gov/campbellsville/parks/recreation/green-river-lake-state-park"
-  },
-  "US-0608": {
-   "url": "https://www.fws.gov/refuge/ohio_river_islands/",
-   "fingerprint": "1e0a6e53f393",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://www.fws.gov/refuge/ohio-river-islands"
-  },
-  "US-1280": {
-   "url": "https://parks.ky.gov/ashland/parks/historic/greenbo-lake-state-resort-park",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://parks.ky.gov/ashland/parks/historic/greenbo-lake-state-resort-park"
-  },
-  "US-1287": {
-   "url": "https://parks.ky.gov/dawson-springs/parks/resort/pennyrile-forest-state-resort-park",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://parks.ky.gov/dawson-springs/parks/resort/pennyrile-forest-state-resort-park"
-  },
-  "US-4692": {
-   "url": "https://parks.ky.gov/dawson-springs/parks/resort/pennyrile-forest-state-resort-park",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://parks.ky.gov/dawson-springs/parks/resort/pennyrile-forest-state-resort-park"
-  },
-  "US-10137": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9709",
-   "fingerprint": "279af6a620f0",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
-  },
-  "US-7952": {
-   "url": "https://fw.ky.gov/More/Documents/MarrowboneStateForestandWMA_ALL.pdf",
-   "fingerprint": "4d9fc5a64917",
-   "date": "2026-11-20",
-   "kind": "pdf",
-   "final": "https://fw.ky.gov/More/Documents/MarrowboneStateForestandWMA_ALL.pdf"
-  },
-  "US-0295": {
-   "url": "https://www.fws.gov/refuge/clarks-river",
-   "fingerprint": "b90ee0ec899b",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://www.fws.gov/locations/clarks-river-national-wildlife-refuge"
-  },
-  "US-1258": {
-   "url": "https://parks.ky.gov/olive-hill/parks/recreation/grayson-lake-state-park",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://parks.ky.gov/olive-hill/parks/recreation/grayson-lake-state-park"
-  },
-  "US-3821": {
-   "url": "https://fw.ky.gov/More/Documents/L.B.DavisonWMA_ALL.pdf",
-   "fingerprint": "c4520ee479c7",
-   "date": "2026-11-20",
-   "kind": "pdf",
-   "final": "https://fw.ky.gov/More/Documents/L.B.DavisonWMA_ALL.pdf"
-  },
-  "US-3790": {
-   "url": "https://www.nps.gov/fodo/planyourvisit/maps.htm",
-   "fingerprint": "4b94ef3abf18",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://www.nps.gov/fodo/planyourvisit/maps.htm"
-  },
-  "US-1289": {
-   "url": "https://parks.ky.gov/falls-rough/parks/resort/rough-river-dam-state-resort-park",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://parks.ky.gov/falls-rough/parks/resort/rough-river-dam-state-resort-park"
-  },
-  "US-7957": {
-   "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Vernon-Douglas.aspx",
-   "fingerprint": "8ddf20ca3d16",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Vernon-Douglas.aspx"
-  },
-  "US-10146": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=37",
-   "fingerprint": "279af6a620f0",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
-  },
-  "US-1272": {
-   "url": "https://parks.ky.gov/louisa/parks/recreation/yatesville-lake-state-park",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://parks.ky.gov/louisa/parks/recreation/yatesville-lake-state-park"
-  },
-  "US-3801": {
-   "url": "https://www.fs.usda.gov/recarea/dbnf/recarea/?recid=39460",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://www.fs.usda.gov/recarea/dbnf/recarea/?recid=39460"
-  },
-  "US-3784": {
-   "url": "https://parks.ky.gov/tompkinsville/parks/historic/old-mulkey-meetinghouse-state-historic-site",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://parks.ky.gov/tompkinsville/parks/historic/old-mulkey-meetinghouse-state-historic-site"
-  },
-  "US-3815": {
-   "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=132",
-   "fingerprint": "5389e39b2c93",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=15"
-  },
-  "US-1269": {
-   "url": "https://parks.ky.gov/harrodsburg/parks/historic/old-fort-harrod-state-park",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://parks.ky.gov/harrodsburg/parks/historic/old-fort-harrod-state-park"
-  },
-  "US-3802": {
-   "url": "https://bggreensource.org/buckley/",
-   "fingerprint": "51935044adf1",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://bggreensource.org/buckley/"
-  },
-  "US-1268": {
-   "url": "https://parks.ky.gov/mammoth-cave/parks/recreation/nolin-lake-state-park",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://parks.ky.gov/mammoth-cave/parks/recreation/nolin-lake-state-park"
-  },
-  "US-3817": {
-   "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=238",
-   "fingerprint": "5389e39b2c93",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=15"
-  },
-  "US-4687": {
-   "url": "https://fw.ky.gov/More/Documents/DeweyLakeWMA-ALL.pdf",
-   "fingerprint": "8729f580cf1f",
-   "date": "2026-11-20",
-   "kind": "pdf",
-   "final": "https://fw.ky.gov/More/Documents/DeweyLakeWMA-ALL.pdf"
-  },
-  "US-3782": {
-   "url": "https://parks.ky.gov/barbourville/parks/historic/dr-thomas-walker-state-historic-site",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://parks.ky.gov/barbourville/parks/historic/dr-thomas-walker-state-historic-site"
-  },
-  "US-10128": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9715",
-   "fingerprint": "279af6a620f0",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
-  },
-  "US-4693": {
-   "url": "https://eec.ky.gov/Natural-Resources/Forestry/ky-state-forests/Pages/Tygarts-State-Forest.aspx",
-   "fingerprint": "5ab4b9fc2935",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://eec.ky.gov/Natural-Resources/Forestry/ky-state-forests/Pages/Tygarts-State-Forest.aspx"
-  },
-  "US-1278": {
-   "url": "https://parks.ky.gov/burkesville/parks/resort/dale-hollow-lake-state-resort-park",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://parks.ky.gov/burkesville/parks/resort/dale-hollow-lake-state-resort-park"
-  },
-  "US-7967": {
-   "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Blanton-Forest.aspx",
-   "fingerprint": "01d1e2a39f52",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Blanton-Forest.aspx"
-  },
-  "US-1253": {
-   "url": "https://parks.ky.gov/swamp-branch/parks/recreation/dawkins-line-rail-trail",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://parks.ky.gov/swamp-branch/parks/recreation/dawkins-line-rail-trail"
-  },
-  "US-7960": {
-   "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Crooked-Creek.aspx",
-   "fingerprint": "b785a1f2dd0c",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Crooked-Creek.aspx"
-  },
-  "US-7958": {
-   "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Tom-Dorman.aspx",
-   "fingerprint": "a7c7d8874e22",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Tom-Dorman.aspx"
-  },
-  "US-3814": {
-   "url": "https://fw.ky.gov/More/Documents/Hensley-PineMountainWMA_ALL.pdf",
-   "fingerprint": "1c22b5ef5fba",
-   "date": "2026-11-20",
-   "kind": "pdf",
-   "final": "https://fw.ky.gov/More/Documents/Hensley-PineMountainWMA_ALL.pdf"
-  },
-  "US-3804": {
-   "url": "https://fw.ky.gov/More/Documents/CranksCreekWMA_ALL.pdf",
-   "fingerprint": "4f1d6c0f80eb",
-   "date": "2026-11-20",
-   "kind": "pdf",
-   "final": "https://fw.ky.gov/More/Documents/CranksCreekWMA_ALL.pdf"
-  },
-  "US-7959": {
-   "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Quiet-Trails.aspx",
-   "fingerprint": "ae4128e8c77a",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Quiet-Trails.aspx"
-  },
-  "US-7708": {
-   "url": "https://www.nps.gov/misp/index.htm",
-   "fingerprint": "4e774266aea5",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://www.nps.gov/misp/index.htm"
-  },
-  "US-3809": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=34",
-   "fingerprint": "279af6a620f0",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
-  },
-  "US-0538": {
-   "url": "https://www.fws.gov/refuge/reelfoot/",
-   "fingerprint": "a7697b99545f",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://www.fws.gov/locations/reelfoot-national-wildlife-refuge"
-  },
-  "US-3835": {
-   "url": "https://fw.ky.gov/More/Documents/TwinEagleWMA_ALL.pdf",
-   "fingerprint": "33b623bc9787",
-   "date": "2026-11-20",
-   "kind": "pdf",
-   "final": "https://fw.ky.gov/More/Documents/TwinEagleWMA_ALL.pdf"
-  },
-  "US-7966": {
-   "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Bad-Branch.aspx",
-   "fingerprint": "4082f1d5258a",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Bad-Branch.aspx"
-  },
-  "US-1288": {
-   "url": "https://parks.ky.gov/pineville/parks/resort/pine-mountain-state-resort-park",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://parks.ky.gov/pineville/parks/resort/pine-mountain-state-resort-park"
-  },
-  "US-3819": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=21",
-   "fingerprint": "279af6a620f0",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
-  },
-  "US-10166": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9232",
-   "fingerprint": "279af6a620f0",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
-  },
-  "US-10167": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9613",
-   "fingerprint": "279af6a620f0",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
-  },
-  "US-7890": {
-   "url": "https://parks.ky.gov/junction-city/parks/historic/isaac-shelby-cemetery-state-historic-site",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://parks.ky.gov/junction-city/parks/historic/isaac-shelby-cemetery-state-historic-site"
-  },
-  "US-1265": {
-   "url": "https://parks.ky.gov/springfield/parks/historic/lincoln-homestead-state-park",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://parks.ky.gov/springfield/parks/historic/lincoln-homestead-state-park"
-  },
-  "US-3797": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=222",
-   "fingerprint": "279af6a620f0",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
-  },
-  "US-3837": {
-   "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=137",
-   "fingerprint": "5389e39b2c93",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=15"
-  },
-  "US-1262": {
-   "url": "https://parks.ky.gov/cumberland/parks/recreation/kingdom-come-state-park",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://parks.ky.gov/cumberland/parks/recreation/kingdom-come-state-park"
-  },
-  "US-10161": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9219",
-   "fingerprint": "279af6a620f0",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
-  },
-  "US-10131": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9713",
-   "fingerprint": "279af6a620f0",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
-  },
-  "US-10168": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9707",
-   "fingerprint": "279af6a620f0",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
-  },
-  "US-10098": {
-   "url": "https://www.fws.gov/refuge/green-river/visit-us/locations/green-river-national-wildlife-refuge",
+  "US-10524": {
+   "url": "https://www.blm.gov/visit/acton",
    "fingerprint": "e3b0c44298fc",
    "date": "2026-11-20",
    "kind": "dead",
-   "final": "https://www.fws.gov/refuge/green-river/visit-us/locations/green-river-national-wildlife-refuge"
+   "final": "https://www.blm.gov/visit/acton"
   },
-  "US-7961": {
-   "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Jesse-Stuart.aspx",
-   "fingerprint": "3b287f0ccb1a",
+  "US-2560": {
+   "url": "https://fwp.mt.gov/stateparks/beavertail-hill",
+   "fingerprint": "93e242627f53",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Jesse-Stuart.aspx"
+   "final": "https://fwp.mt.gov/stateparks/beavertail-hill"
   },
-  "US-3823": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9117",
-   "fingerprint": "279af6a620f0",
+  "US-0829": {
+   "url": "https://www.nps.gov/grko/index.htm",
+   "fingerprint": "f51105d35dbc",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
+   "final": "https://www.nps.gov/grko/index.htm"
   },
-  "US-10160": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9217",
-   "fingerprint": "279af6a620f0",
+  "US-2601": {
+   "url": "https://fwp.mt.gov/stateparks/tower-rock",
+   "fingerprint": "d4714fb790db",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
+   "final": "https://fwp.mt.gov/stateparks/tower-rock"
   },
-  "US-10121": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=38",
-   "fingerprint": "279af6a620f0",
+  "US-2591": {
+   "url": "https://fwp.mt.gov/stateparks/pictograph-cave",
+   "fingerprint": "aa8c4a541e66",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
+   "final": "https://fwp.mt.gov/stateparks/pictograph-cave"
   },
-  "US-3799": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=18",
-   "fingerprint": "279af6a620f0",
+  "US-4549": {
+   "url": "https://www.blm.gov/programs/national-conservation-lands/montana-dakotas/upper-missouri-river-breaks",
+   "fingerprint": "44852b14a20a",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
+   "final": "https://www.blm.gov/programs/national-conservation-lands/montana-dakotas/upper-missouri-river-breaks"
   },
-  "US-10106": {
-   "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Rockcastle-River-Wild-River.aspx",
-   "fingerprint": "7825b3a223fb",
+  "US-12879": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39754115",
+   "fingerprint": "f4560f96dda3",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Rockcastle-River-Wild-River.aspx"
+   "final": "https://myfwp.mt.gov/fishMT/fas/39754115"
   },
-  "US-10112": {
-   "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Bad-Branch-Wild-River.aspx",
-   "fingerprint": "8fdd036162c6",
+  "US-0396": {
+   "url": "https://www.fws.gov/refuge/benton_lake/",
+   "fingerprint": "7107212c151f",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Bad-Branch-Wild-River.aspx"
+   "final": "https://www.fws.gov/locations/benton-lake-national-wildlife-refuge"
   },
-  "US-10159": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=35",
-   "fingerprint": "279af6a620f0",
+  "US-12653": {
+   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754191",
+   "fingerprint": "342444155f69",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
+   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
   },
-  "US-3831": {
-   "url": "https://fw.ky.gov/More/Documents/SouthShoreWMA_ALL.pdf",
-   "fingerprint": "065ee0dcd33e",
+  "US-2557": {
+   "url": "https://fwp.mt.gov/stateparks/anaconda-smoke-stack",
+   "fingerprint": "eac4427f4451",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://fwp.mt.gov/stateparks/anaconda-smoke-stack"
+  },
+  "US-2565": {
+   "url": "https://fwp.mt.gov/stateparks/clarks-lookout/",
+   "fingerprint": "32df6ec60b01",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://fwp.mt.gov/stateparks/clarks-lookout/"
+  },
+  "US-12648": {
+   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753388",
+   "fingerprint": "342444155f69",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+  },
+  "US-12910": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753440",
+   "fingerprint": "d7690f75ebf5",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://myfwp.mt.gov/fishMT/fas/39753440"
+  },
+  "US-12654": {
+   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754079",
+   "fingerprint": "342444155f69",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+  },
+  "US-12915": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39754195",
+   "fingerprint": "39f41b78c775",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://myfwp.mt.gov/fishMT/fas/39754195"
+  },
+  "US-0701": {
+   "url": "https://www.nps.gov/biho/index.htm",
+   "fingerprint": "737ba1784fde",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.nps.gov/biho/index.htm"
+  },
+  "US-0407": {
+   "url": "https://www.fws.gov/refuge/red_rock_lakes/",
+   "fingerprint": "089a2737edbe",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.fws.gov/locations/red-rock-lakes-national-wildlife-refuge"
+  },
+  "US-2558": {
+   "url": "https://fwp.mt.gov/stateparks/bannack-state-park",
+   "fingerprint": "e7c609ac8881",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://fwp.mt.gov/stateparks/bannack-state-park"
+  },
+  "US-12826": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39754193",
+   "fingerprint": "69ba5de5657b",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://myfwp.mt.gov/fishMT/fas/39754193"
+  },
+  "US-2564": {
+   "url": "https://fwp.mt.gov/stateparks/chief-plenty-coups/",
+   "fingerprint": "abffd0c60e8c",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://fwp.mt.gov/stateparks/chief-plenty-coups/"
+  },
+  "US-12937": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753472",
+   "fingerprint": "2587d597d184",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://myfwp.mt.gov/fishMT/fas/39753472"
+  },
+  "US-12878": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39754135",
+   "fingerprint": "01d1fca717ea",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://myfwp.mt.gov/fishMT/fas/39754135"
+  },
+  "US-0823": {
+   "url": "https://www.nps.gov/fous/index.htm",
+   "fingerprint": "5eaade2af68f",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.nps.gov/fous/index.htm"
+  },
+  "US-6443": {
+   "url": "https://www.blm.gov/visit/lowry-bridge",
+   "fingerprint": "b0b7a587ded8",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/lowry-bridge"
+  },
+  "US-2603": {
+   "url": "https://fwp.mt.gov/wayfarers",
+   "fingerprint": "026a3d3c6475",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://fwp.mt.gov/wayfarers"
+  },
+  "US-7990": {
+   "url": "https://www.blm.gov/visit/lee-metcalf-wilderness",
+   "fingerprint": "324eb29acd38",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/lee-metcalf-wilderness"
+  },
+  "US-12877": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753468",
+   "fingerprint": "5acb251ef219",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://myfwp.mt.gov/fishMT/fas/39753468"
+  },
+  "US-2592": {
+   "url": "https://fwp.mt.gov/stateparks/pirogue-island",
+   "fingerprint": "58d07c68bb93",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://fwp.mt.gov/stateparks/pirogue-island"
+  },
+  "US-4848": {
+   "url": "https://archive.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html",
+   "fingerprint": "660fbd576fd9",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://mca.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html"
+  },
+  "US-2596": {
+   "url": "https://fwp.mt.gov/stateparks/sluice-boxes/",
+   "fingerprint": "612a7738e22c",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://fwp.mt.gov/stateparks/sluice-boxes/"
+  },
+  "US-11217": {
+   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753798",
+   "fingerprint": "342444155f69",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+  },
+  "US-2582": {
+   "url": "https://fwp.mt.gov/logan",
+   "fingerprint": "5bb5f87a01b8",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://fwp.mt.gov/logan"
+  },
+  "US-2597": {
+   "url": "https://fwp.mt.gov/smith-river",
+   "fingerprint": "7d331e8c5ef5",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://fwp.mt.gov/smith-river"
+  },
+  "US-12940": {
+   "url": "https://www.fws.gov/fish-hatchery/creston",
+   "fingerprint": "c7ac26999c88",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.fws.gov/locations/creston-national-fish-hatchery"
+  },
+  "US-2593": {
+   "url": "https://fwp.mt.gov/placid-lake",
+   "fingerprint": "cbce187fc360",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://fwp.mt.gov/placid-lake"
+  },
+  "US-0403": {
+   "url": "https://www.fws.gov/refuge/lost_trail/",
+   "fingerprint": "f2bbeaa2fdfc",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.fws.gov/refuge/lost-trail"
+  },
+  "US-4845": {
+   "url": "https://archive.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html",
+   "fingerprint": "660fbd576fd9",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://mca.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html"
+  },
+  "US-10525": {
+   "url": "https://www.blm.gov/visit/coal-banks-landing",
+   "fingerprint": "61237cfd38fe",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/coal-banks-landing"
+  },
+  "US-2561": {
+   "url": "https://fwp.mt.gov/big-arm",
+   "fingerprint": "79234d189c2a",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://fwp.mt.gov/big-arm"
+  },
+  "US-2590": {
+   "url": "https://fwp.mt.gov/stateparks/painted-rocks",
+   "fingerprint": "3cb62041e590",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://fwp.mt.gov/stateparks/painted-rocks"
+  },
+  "US-11215": {
+   "url": "https://www.nps.gov/nepe/planyourvisit/visit-bear-paw-battlefield.htm",
+   "fingerprint": "88343cbc6c0c",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.nps.gov/nepe/planyourvisit/visit-bear-paw-battlefield.htm"
+  },
+  "US-2579": {
+   "url": "https://fwp.mt.gov/lake-mary-ronan",
+   "fingerprint": "111edab382b0",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://fwp.mt.gov/lake-mary-ronan"
+  },
+  "US-2584": {
+   "url": "https://fwp.mt.gov/stateparks/lost-creek",
+   "fingerprint": "74f4230886c6",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://fwp.mt.gov/stateparks/lost-creek"
+  },
+  "US-2607": {
+   "url": "https://fwp.mt.gov/yellow-bay",
+   "fingerprint": "17228d50522f",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://fwp.mt.gov/yellow-bay"
+  },
+  "US-12882": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39754161",
+   "fingerprint": "ed12af46c318",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://myfwp.mt.gov/fishMT/fas/39754161"
+  },
+  "US-12630": {
+   "url": "https://www.blm.gov/sites/blm.gov/files/documents/files/Boaters%20Guide%202017%20508%20COMPL.pdf",
+   "fingerprint": "0c15dd756aad",
    "date": "2026-11-20",
    "kind": "pdf",
-   "final": "https://fw.ky.gov/More/Documents/SouthShoreWMA_ALL.pdf"
+   "final": "https://www.blm.gov/sites/blm.gov/files/documents/files/Boaters%20Guide%202017%20508%20COMPL.pdf"
   },
-  "US-3800": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9004",
-   "fingerprint": "279af6a620f0",
+  "US-12631": {
+   "url": "https://www.blm.gov/programs/national-conservation-lands/montana-dakotas/terry-badlands-wsa",
+   "fingerprint": "04e925976824",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
+   "final": "https://www.blm.gov/programs/national-conservation-lands/montana-dakotas/terry-badlands-wsa"
   },
-  "US-10099": {
-   "url": "https://www.fws.gov/fish-hatchery/wolf-creek/map",
-   "fingerprint": "973aa87df3e0",
+  "US-2599": {
+   "url": "https://fwp.mt.gov/thompson-falls",
+   "fingerprint": "5bdb84fc167d",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://www.fws.gov/fish-hatchery/wolf-creek/map"
+   "final": "https://fwp.mt.gov/thompson-falls"
   },
-  "US-10140": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=227",
-   "fingerprint": "279af6a620f0",
+  "US-8002": {
+   "url": "https://www.fws.gov/refuge/ninepipe/",
+   "fingerprint": "05f0430ff7e6",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
+   "final": "https://www.fws.gov/locations/ninepipe-national-wildlife-refuge"
   },
-  "US-3829": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=171",
-   "fingerprint": "279af6a620f0",
+  "US-12929": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39754103",
+   "fingerprint": "24916556cdbd",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
+   "final": "https://myfwp.mt.gov/fishMT/fas/39754103"
   },
-  "US-10171": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9094",
-   "fingerprint": "279af6a620f0",
+  "US-2571": {
+   "url": "https://fwp.mt.gov/stateparks/fish-creek",
+   "fingerprint": "d3d7826bdb9c",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
+   "final": "https://fwp.mt.gov/stateparks/fish-creek"
   },
-  "US-3839": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=23",
-   "fingerprint": "279af6a620f0",
+  "US-12903": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39754245",
+   "fingerprint": "dcaeba9db6aa",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
+   "final": "https://myfwp.mt.gov/fishMT/fas/39754245"
   },
-  "US-1275": {
-   "url": "https://parks.ky.gov/buckhorn/parks/resort/buckhorn-lake-state-resort-park",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://parks.ky.gov/buckhorn/parks/resort/buckhorn-lake-state-resort-park"
-  },
-  "US-3840": {
-   "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=192",
-   "fingerprint": "5389e39b2c93",
+  "US-12888": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753564",
+   "fingerprint": "91eca92240bb",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=15"
+   "final": "https://myfwp.mt.gov/fishMT/fas/39753564"
   },
-  "US-3833": {
-   "url": "https://fw.ky.gov/More/Documents/TN_SullivanWMA_All.pdf",
-   "fingerprint": "952f5637dbd6",
-   "date": "2026-11-20",
-   "kind": "pdf",
-   "final": "https://fw.ky.gov/More/Documents/TN_SullivanWMA_All.pdf"
-  },
-  "US-3827": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=176",
-   "fingerprint": "279af6a620f0",
+  "US-0398": {
+   "url": "https://www.fws.gov/refuge/bowdoin/",
+   "fingerprint": "caa6336cd4ce",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
+   "final": "https://www.fws.gov/refuge/bowdoin"
   },
-  "US-3795": {
-   "url": "https://fw.ky.gov/More/Documents/BeechyCreekWMA-ALL.pdf",
-   "fingerprint": "65cbe90946b1",
-   "date": "2026-11-20",
-   "kind": "pdf",
-   "final": "https://fw.ky.gov/More/Documents/BeechyCreekWMA-ALL.pdf"
-  },
-  "US-3788": {
-   "url": "https://parks.ky.gov/wickliffe/parks/historic/wickliffe-mounds-state-historic-site",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://parks.ky.gov/wickliffe/parks/historic/wickliffe-mounds-state-historic-site"
-  },
-  "US-10155": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9105",
-   "fingerprint": "279af6a620f0",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
-  },
-  "US-3807": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition",
-   "fingerprint": "279af6a620f0",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
-  },
-  "US-3806": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=148#:~:text=The%20WMA%20consists%20of%20two,KY%20206%2FKY%2076%20intersection",
-   "fingerprint": "279af6a620f0",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
-  },
-  "US-12083": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9727",
-   "fingerprint": "279af6a620f0",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
-  },
-  "US-3820": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=169",
-   "fingerprint": "279af6a620f0",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
-  },
-  "US-7955": {
-   "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Six-Mile-Island.aspx",
-   "fingerprint": "092455dafac6",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Six-Mile-Island.aspx"
-  },
-  "US-3811": {
-   "url": "https://fw.ky.gov/More/Documents/EdMabry-LaurelGorgeWMA_ALL.pdf",
-   "fingerprint": "c72564261890",
-   "date": "2026-11-20",
-   "kind": "pdf",
-   "final": "https://fw.ky.gov/More/Documents/EdMabry-LaurelGorgeWMA_ALL.pdf"
-  },
-  "US-3816": {
-   "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=14",
-   "fingerprint": "5389e39b2c93",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=15"
-  },
-  "US-3796": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9203",
-   "fingerprint": "279af6a620f0",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
-  },
-  "US-3822": {
-   "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=9011",
-   "fingerprint": "5389e39b2c93",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=15"
-  },
-  "US-3824": {
-   "url": "https://fw.ky.gov/More/Documents/MarionCountyWMAandSF_ALL.pdf",
-   "fingerprint": "ea9fbdbdf321",
-   "date": "2026-11-20",
-   "kind": "pdf",
-   "final": "https://fw.ky.gov/More/Documents/MarionCountyWMAandSF_ALL.pdf"
-  },
-  "US-10103": {
-   "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Cumberland-River-Wild-River.aspx",
-   "fingerprint": "890328272e05",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Cumberland-River-Wild-River.aspx"
-  },
-  "US-3818": {
-   "url": "https://fw.ky.gov/More/Documents/Jones-KeeneyWMA_All.pdf",
-   "fingerprint": "7013f85d4e21",
-   "date": "2026-11-20",
-   "kind": "pdf",
-   "final": "https://fw.ky.gov/More/Documents/Jones-KeeneyWMA_All.pdf"
-  },
-  "US-3793": {
-   "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=224",
-   "fingerprint": "5389e39b2c93",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=15"
-  },
-  "US-3834": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=128",
-   "fingerprint": "279af6a620f0",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
-  },
-  "US-3803": {
-   "url": "https://fw.ky.gov/More/Documents/CoilEstateWMA_ALL.pdf",
-   "fingerprint": "06db4ea4bae9",
-   "date": "2026-11-20",
-   "kind": "pdf",
-   "final": "https://fw.ky.gov/More/Documents/CoilEstateWMA_ALL.pdf"
-  },
-  "US-4689": {
-   "url": "https://eec.ky.gov/Natural-Resources/Forestry/ky-state-forests/Pages/Kentucky-Ridge-State-Forest.aspx",
-   "fingerprint": "4100d4944d27",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://eec.ky.gov/Natural-Resources/Forestry/ky-state-forests/Pages/Kentucky-Ridge-State-Forest.aspx"
-  },
-  "US-10104": {
-   "url": "https://www.fs.usda.gov/recarea/dbnf/recreation/recarea/?recid=39548",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://www.fs.usda.gov/recarea/dbnf/recreation/recarea/?recid=39548"
-  },
-  "US-12972": {
-   "url": "https://opengisdata.ky.gov/datasets/ky-knp-state-nature-preserves/explore?location=38.354945%2C-83.108279%2C14.97",
-   "fingerprint": "778e23183aef",
+  "US-12891": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753566",
+   "fingerprint": "489be32987e6",
    "date": "2026-11-20",
    "kind": "script-built",
-   "final": "https://opengisdata.ky.gov/datasets/ky-knp-state-nature-preserves/explore?location=38.354945%2C-83.108279%2C14.97"
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
   },
-  "US-3838": {
-   "url": "https://fw.ky.gov/More/Documents/WinfordWMA_ALL.pdf",
-   "fingerprint": "75f45236bf9d",
-   "date": "2026-11-20",
-   "kind": "pdf",
-   "final": "https://fw.ky.gov/More/Documents/WinfordWMA_ALL.pdf"
-  },
-  "US-3808": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=40",
-   "fingerprint": "279af6a620f0",
+  "US-12650": {
+   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754067",
+   "fingerprint": "342444155f69",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
+   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
   },
-  "US-10162": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9705",
-   "fingerprint": "279af6a620f0",
+  "US-12861": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753422",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-2587": {
+   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754646",
+   "fingerprint": "342444155f69",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
+   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
   },
-  "US-3794": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=39",
-   "fingerprint": "279af6a620f0",
+  "US-12701": {
+   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754073",
+   "fingerprint": "342444155f69",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
+   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
   },
-  "US-10153": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9609",
-   "fingerprint": "279af6a620f0",
+  "US-10521": {
+   "url": "https://www.blm.gov/visit/garnet-ghost-town",
+   "fingerprint": "5bef9ddab09d",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
+   "final": "https://www.blm.gov/visit/garnet-ghost-town"
   },
-  "US-12971": {
-   "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Carter-Caves.aspx",
-   "fingerprint": "d9771a84baef",
+  "US-0405": {
+   "url": "https://www.fws.gov/refuge/National_Bison_Range/Contact.html",
+   "fingerprint": "e3b0c44298fc",
+   "date": "2026-11-20",
+   "kind": "dead",
+   "final": "https://www.fws.gov/refuge/National_Bison_Range/Contact.html"
+  },
+  "US-0400": {
+   "url": "https://www.fws.gov/refuges/profiles/recEdMore.cfm?ID=61522",
+   "fingerprint": "b76888b3f858",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Carter-Caves.aspx"
+   "final": "https://www.fws.gov/activities?ID=61522"
   },
-  "US-4688": {
-   "url": "https://eec.ky.gov/Natural-Resources/Forestry/ky-state-forests/Pages/Kentenia-State-Forest.aspx",
-   "fingerprint": "7426df6805da",
+  "US-12823": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39754401",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-11218": {
+   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753884",
+   "fingerprint": "342444155f69",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://eec.ky.gov/Natural-Resources/Forestry/ky-state-forests/Pages/Kentenia-State-Forest.aspx"
+   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
   },
-  "US-3832": {
-   "url": "https://fw.ky.gov/More/Documents/StoneMountainWMAandStateNaturalArea_ALL.pdf",
-   "fingerprint": "2cdf019a1ed6",
-   "date": "2026-11-20",
-   "kind": "pdf",
-   "final": "https://fw.ky.gov/More/Documents/StoneMountainWMAandStateNaturalArea_ALL.pdf"
-  },
-  "US-10107": {
-   "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Big-South-Fork-Wild-River.aspx",
-   "fingerprint": "2910575ba90d",
+  "US-12872": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753842",
+   "fingerprint": "e59cc710179d",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Big-South-Fork-Wild-River.aspx"
+   "final": "https://myfwp.mt.gov/fishMT/fas/39753842"
   },
-  "US-7968": {
-   "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/E.-Lucy-Braun.aspx",
-   "fingerprint": "d27c21f4b283",
+  "US-12856": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39754247",
+   "fingerprint": "00c26f30b78a",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/E.-Lucy-Braun.aspx"
+   "final": "https://myfwp.mt.gov/fishMT/fas/39754247"
   },
-  "US-10141": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=186",
-   "fingerprint": "279af6a620f0",
+  "US-7998": {
+   "url": "https://www.fws.gov/refuge/hailstone/",
+   "fingerprint": "e2c2eb9d5169",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
+   "final": "https://www.fws.gov/refuge/hailstone"
   },
-  "US-7970": {
-   "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Sinking-Creek.aspx",
-   "fingerprint": "fd084a3bf3ac",
+  "US-2568": {
+   "url": "https://fwp.mt.gov/stateparks/elkhorn",
+   "fingerprint": "bd33792de954",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Sinking-Creek.aspx"
+   "final": "https://fwp.mt.gov/stateparks/elkhorn"
   },
-  "US-13598": {
-   "url": "https://app.fw.ky.gov/fisheries/waterbody.aspx?_gl=1*1t9o0o0*_gcl_au*NjY1MDM1MjA4LjE3OTIwMzAyMTA.*_ga*MTA0NzM0NDY5Ny4xNzAzNzAzNDg2*_ga_8HE11T193X*czE3OTIwMjkwNzgkbzIzJGcxJHQxNzkyMDMwMjYwJGo0OCRsMCRoMA",
-   "fingerprint": "2fdc19e29005",
+  "US-11221": {
+   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754097",
+   "fingerprint": "342444155f69",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://app.fw.ky.gov/fisheries/waterbody.aspx?_gl=1*1t9o0o0*_gcl_au*NjY1MDM1MjA4LjE3OTIwMzAyMTA.*_ga*MTA0NzM0NDY5Ny4xNzAzNzAzNDg2*_ga_8HE11T193X*czE3OTIwMjkwNzgkbzIzJGcxJHQxNzkyMDMwMjYwJGo0OCRsMCRoMA"
+   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
   },
-  "US-7964": {
-   "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Dr.-William-H.-Martin-WWCA.aspx",
-   "fingerprint": "b0093505140c",
+  "US-8001": {
+   "url": "https://www.fws.gov/mountain-prairie/refuges/mdl.php",
+   "fingerprint": "e3b0c44298fc",
+   "date": "2026-11-20",
+   "kind": "dead",
+   "final": "https://www.fws.gov/mountain-prairie/refuges/mdl.php"
+  },
+  "US-2569": {
+   "url": "https://fwp.mt.gov/finley-point",
+   "fingerprint": "fee3b7c34b4e",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Dr.-William-H.-Martin-WWCA.aspx"
+   "final": "https://fwp.mt.gov/finley-point"
   },
-  "US-10145": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9224",
-   "fingerprint": "279af6a620f0",
+  "US-2595": {
+   "url": "https://fwp.mt.gov/salmon-lake",
+   "fingerprint": "fa377addea6f",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
+   "final": "https://fwp.mt.gov/salmon-lake"
   },
-  "US-10157": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9208",
-   "fingerprint": "279af6a620f0",
+  "US-2577": {
+   "url": "https://fwp.mt.gov/hell-creek",
+   "fingerprint": "e3b0c44298fc",
+   "date": "2026-11-20",
+   "kind": "dead",
+   "final": "https://fwp.mt.gov/hell-creek"
+  },
+  "US-12927": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39754387",
+   "fingerprint": "83eac3cff58a",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
+   "final": "https://myfwp.mt.gov/fishMT/fas/39754387"
   },
-  "US-3798": {
-   "url": "https://fw.ky.gov/More/Documents/BuckCreekWMA_All.pdf",
-   "fingerprint": "a32bdbd11ce4",
-   "date": "2026-11-20",
-   "kind": "pdf",
-   "final": "https://fw.ky.gov/More/Documents/BuckCreekWMA_All.pdf"
-  },
-  "US-12752": {
-   "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Rush-Island-Bottoms.aspx",
-   "fingerprint": "44cbb30c95d0",
+  "US-0409": {
+   "url": "https://www.fws.gov/refuge/war_horse/",
+   "fingerprint": "98b9c4867ba2",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Rush-Island-Bottoms.aspx"
+   "final": "https://www.fws.gov/refuge/war-horse"
   },
-  "US-11274": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9721",
-   "fingerprint": "279af6a620f0",
+  "US-12875": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39754577",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12924": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753874",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12914": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753872",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-10176": {
+   "url": "https://fwp.mt.gov/stateparks/granite-ghost-town/",
+   "fingerprint": "10b6217b1877",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
+   "final": "https://fwp.mt.gov/stateparks/granite-ghost-town/"
   },
-  "US-10111": {
-   "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Rock-Creek-Wild-River.aspx",
-   "fingerprint": "042b56fc8394",
+  "US-0404": {
+   "url": "https://www.fws.gov/refuge/medicine_lake/",
+   "fingerprint": "f5435ac7b7e9",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Rock-Creek-Wild-River.aspx"
+   "final": "https://www.fws.gov/refuge/medicine-lake"
   },
-  "US-10164": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=170",
-   "fingerprint": "279af6a620f0",
+  "US-12652": {
+   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753945",
+   "fingerprint": "342444155f69",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
+   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
   },
-  "US-13599": {
-   "url": "https://app.fw.ky.gov/fisheries/waterbody.aspx?_gl=1*1t9o0o0*_gcl_au*NjY1MDM1MjA4LjE3OTIwMzAyMTA.*_ga*MTA0NzM0NDY5Ny4xNzAzNzAzNDg2*_ga_8HE11T193X*czE3OTIwMjkwNzgkbzIzJGcxJHQxNzkyMDMwMjYwJGo0OCRsMCRoMA",
-   "fingerprint": "2fdc19e29005",
+  "US-12656": {
+   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753947",
+   "fingerprint": "342444155f69",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://app.fw.ky.gov/fisheries/waterbody.aspx?_gl=1*1t9o0o0*_gcl_au*NjY1MDM1MjA4LjE3OTIwMzAyMTA.*_ga*MTA0NzM0NDY5Ny4xNzAzNzAzNDg2*_ga_8HE11T193X*czE3OTIwMjkwNzgkbzIzJGcxJHQxNzkyMDMwMjYwJGo0OCRsMCRoMA"
+   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
   },
-  "US-12974": {
-   "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=9006",
-   "fingerprint": "5389e39b2c93",
+  "US-6209": {
+   "url": "https://www.fs.usda.gov/visit/destination/absaroka-beartooth-wilderness",
+   "fingerprint": "e3b0c44298fc",
+   "date": "2026-11-20",
+   "kind": "resting",
+   "final": "https://www.fs.usda.gov/visit/destination/absaroka-beartooth-wilderness"
+  },
+  "US-12651": {
+   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754071",
+   "fingerprint": "342444155f69",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=15"
+   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
   },
-  "US-12079": {
-   "url": "https://fw.ky.gov/more/documents/LittleSextonsCreekWMAALL.pdf",
-   "fingerprint": "8629eb464692",
+  "US-12860": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753414",
+   "fingerprint": "489be32987e6",
    "date": "2026-11-20",
-   "kind": "pdf",
-   "final": "https://fw.ky.gov/more/documents/LittleSextonsCreekWMAALL.pdf"
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
   },
-  "US-13600": {
-   "url": "https://app.fw.ky.gov/fisheries/waterbody.aspx?_gl=1*1t9o0o0*_gcl_au*NjY1MDM1MjA4LjE3OTIwMzAyMTA.*_ga*MTA0NzM0NDY5Ny4xNzAzNzAzNDg2*_ga_8HE11T193X*czE3OTIwMjkwNzgkbzIzJGcxJHQxNzkyMDMwMjYwJGo0OCRsMCRoMA",
-   "fingerprint": "2fdc19e29005",
+  "US-12889": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753424",
+   "fingerprint": "489be32987e6",
    "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://app.fw.ky.gov/fisheries/waterbody.aspx?_gl=1*1t9o0o0*_gcl_au*NjY1MDM1MjA4LjE3OTIwMzAyMTA.*_ga*MTA0NzM0NDY5Ny4xNzAzNzAzNDg2*_ga_8HE11T193X*czE3OTIwMjkwNzgkbzIzJGcxJHQxNzkyMDMwMjYwJGo0OCRsMCRoMA"
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
   },
-  "US-7962": {
-   "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Burnett-WWCA.aspx#:~:text=The%20Little%20South%20Fork%20of,and%20as%20natural%20as%20possible",
-   "fingerprint": "27d82c482689",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Burnett-WWCA.aspx#:~:text=The%20Little%20South%20Fork%20of,and%20as%20natural%20as%20possible"
-  },
-  "US-13606": {
-   "url": "https://app.fw.ky.gov/fisheries/waterbody.aspx?_gl=1*1t9o0o0*_gcl_au*NjY1MDM1MjA4LjE3OTIwMzAyMTA.*_ga*MTA0NzM0NDY5Ny4xNzAzNzAzNDg2*_ga_8HE11T193X*czE3OTIwMjkwNzgkbzIzJGcxJHQxNzkyMDMwMjYwJGo0OCRsMCRoMA",
-   "fingerprint": "2fdc19e29005",
+  "US-8004": {
+   "url": "https://www.fws.gov/refuge/swan_river/",
+   "fingerprint": "76fbcc2eaee8",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://app.fw.ky.gov/fisheries/waterbody.aspx?_gl=1*1t9o0o0*_gcl_au*NjY1MDM1MjA4LjE3OTIwMzAyMTA.*_ga*MTA0NzM0NDY5Ny4xNzAzNzAzNDg2*_ga_8HE11T193X*czE3OTIwMjkwNzgkbzIzJGcxJHQxNzkyMDMwMjYwJGo0OCRsMCRoMA"
+   "final": "https://www.fws.gov/locations/swan-river-national-wildlife-refuge"
   },
-  "US-13607": {
-   "url": "https://app.fw.ky.gov/fisheries/waterbody.aspx?_gl=1*1t9o0o0*_gcl_au*NjY1MDM1MjA4LjE3OTIwMzAyMTA.*_ga*MTA0NzM0NDY5Ny4xNzAzNzAzNDg2*_ga_8HE11T193X*czE3OTIwMjkwNzgkbzIzJGcxJHQxNzkyMDMwMjYwJGo0OCRsMCRoMA",
-   "fingerprint": "2fdc19e29005",
+  "US-12913": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39754423",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12849": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753684",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-8003": {
+   "url": "https://www.fws.gov/refuge/pablo/",
+   "fingerprint": "20d5c3ad5bca",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://app.fw.ky.gov/fisheries/waterbody.aspx?_gl=1*1t9o0o0*_gcl_au*NjY1MDM1MjA4LjE3OTIwMzAyMTA.*_ga*MTA0NzM0NDY5Ny4xNzAzNzAzNDg2*_ga_8HE11T193X*czE3OTIwMjkwNzgkbzIzJGcxJHQxNzkyMDMwMjYwJGo0OCRsMCRoMA"
+   "final": "https://www.fws.gov/locations/pablo-national-wildlife-refuge"
   },
-  "US-10138": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9711",
-   "fingerprint": "279af6a620f0",
+  "US-12852": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39754131",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12867": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39754407",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12880": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753406",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12931": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753404",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-0401": {
+   "url": "https://www.fws.gov/refuge/lake_mason/",
+   "fingerprint": "f871748aa95e",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
+   "final": "https://www.fws.gov/refuge/lake-mason"
   },
-  "US-13601": {
-   "url": "https://app.fw.ky.gov/fisheries/waterbody.aspx?_gl=1*1t9o0o0*_gcl_au*NjY1MDM1MjA4LjE3OTIwMzAyMTA.*_ga*MTA0NzM0NDY5Ny4xNzAzNzAzNDg2*_ga_8HE11T193X*czE3OTIwMjkwNzgkbzIzJGcxJHQxNzkyMDMwMjYwJGo0OCRsMCRoMA",
-   "fingerprint": "2fdc19e29005",
+  "US-12824": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753826",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12919": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39754621",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-6441": {
+   "url": "https://www.blm.gov/visit/ear-mountain",
+   "fingerprint": "f52b28b62393",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://app.fw.ky.gov/fisheries/waterbody.aspx?_gl=1*1t9o0o0*_gcl_au*NjY1MDM1MjA4LjE3OTIwMzAyMTA.*_ga*MTA0NzM0NDY5Ny4xNzAzNzAzNDg2*_ga_8HE11T193X*czE3OTIwMjkwNzgkbzIzJGcxJHQxNzkyMDMwMjYwJGo0OCRsMCRoMA"
+   "final": "https://www.blm.gov/visit/ear-mountain"
   },
-  "US-10148": {
-   "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=146",
-   "fingerprint": "279af6a620f0",
+  "US-7999": {
+   "url": "https://www.fws.gov/refuge/hewitt_lake/",
+   "fingerprint": "e8c35fa12ec3",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032#:~:text=Dix%20River%20WMA%20is%20located,are%20in%20an%20open%20condition"
+   "final": "https://www.fws.gov/refuge/hewitt-lake"
+  },
+  "US-4849": {
+   "url": "https://archive.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html",
+   "fingerprint": "660fbd576fd9",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://mca.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html"
+  },
+  "US-12646": {
+   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754345",
+   "fingerprint": "342444155f69",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+  },
+  "US-12918": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39754581",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12876": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753844",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12916": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753438",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12864": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753534",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12923": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39754543",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12862": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39754263",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-10696": {
+   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753622",
+   "fingerprint": "342444155f69",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+  },
+  "US-4850": {
+   "url": "https://archive.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html",
+   "fingerprint": "660fbd576fd9",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://mca.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html"
+  },
+  "US-12821": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753804",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12909": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753714",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12633": {
+   "url": "https://www.blm.gov/programs/national-conservation-lands/montana-dakotas/sleeping-giant-sheep-creek",
+   "fingerprint": "80c44165415c",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/national-conservation-lands/montana-dakotas/sleeping-giant-sheep-creek"
+  },
+  "US-12658": {
+   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753632",
+   "fingerprint": "342444155f69",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+  },
+  "US-12893": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753678",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12883": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753848",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-7996": {
+   "url": "https://www.fws.gov/refuge/black_coulee/",
+   "fingerprint": "f0840c5803d6",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.fws.gov/refuge/black-coulee"
+  },
+  "US-12900": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39754461",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12885": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39754381",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12657": {
+   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753612",
+   "fingerprint": "342444155f69",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+  },
+  "US-12874": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753546",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12850": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753836",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12854": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753840",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12904": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753854",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12905": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753866",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-11216": {
+   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753636",
+   "fingerprint": "342444155f69",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+  },
+  "US-12896": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39754181",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12819": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39754321",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12894": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39754181",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12851": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753838",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12897": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753864",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-4851": {
+   "url": "https://archive.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html",
+   "fingerprint": "660fbd576fd9",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://mca.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html"
+  },
+  "US-12895": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753694",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12865": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753674",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12847": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753828",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12866": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39754383",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12857": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753704",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12899": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39754391",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12930": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753456",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12827": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753504",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12917": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753808",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12887": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753710",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12920": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39754405",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12698": {
+   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754089",
+   "fingerprint": "342444155f69",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+  },
+  "US-12634": {
+   "url": "https://www.blm.gov/programs/national-conservation-lands/montana-dakotas/axolotl-lakes-wsa",
+   "fingerprint": "54e906610053",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/national-conservation-lands/montana-dakotas/axolotl-lakes-wsa"
+  },
+  "US-12892": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753862",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12647": {
+   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754347",
+   "fingerprint": "342444155f69",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+  },
+  "US-12936": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753728",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12869": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39754155",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12886": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39754499",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12906": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753672",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12908": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753750",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12932": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753858",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12649": {
+   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754295",
+   "fingerprint": "342444155f69",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+  },
+  "US-12898": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753712",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12695": {
+   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754601",
+   "fingerprint": "342444155f69",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+  },
+  "US-12696": {
+   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754700",
+   "fingerprint": "342444155f69",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+  },
+  "US-12921": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753720",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-2606": {
+   "url": "https://fwp.mt.gov/wild-horse-island",
+   "fingerprint": "52461bef8db7",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://fwp.mt.gov/wild-horse-island"
+  },
+  "US-11219": {
+   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753949",
+   "fingerprint": "342444155f69",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+  },
+  "US-12868": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753538",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12935": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753628",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12333": {
+   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753943",
+   "fingerprint": "342444155f69",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+  },
+  "US-12871": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39754159",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12853": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39754449",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12655": {
+   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754674",
+   "fingerprint": "342444155f69",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+  },
+  "US-12934": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753880",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12712": {
+   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753370",
+   "fingerprint": "342444155f69",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+  },
+  "US-12334": {
+   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753927",
+   "fingerprint": "342444155f69",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+  },
+  "US-12700": {
+   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753941",
+   "fingerprint": "342444155f69",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+  },
+  "US-12863": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753706",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12926": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753572",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12818": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753642",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12922": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753722",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12632": {
+   "url": "https://www.blm.gov/programs/national-conservation-lands/montana-dakotas/sleeping-giant-sheep-creek",
+   "fingerprint": "80c44165415c",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/national-conservation-lands/montana-dakotas/sleeping-giant-sheep-creek"
+  },
+  "US-12884": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753850",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-10527": {
+   "url": "https://www.blm.gov/visit/judith-landing",
+   "fingerprint": "44b8d5d448a2",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/judith-landing"
+  },
+  "US-0408": {
+   "url": "https://www.fws.gov/refuge/ul_bend/",
+   "fingerprint": "c6e64bebfd61",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.fws.gov/locations/ul-bend-national-wildlife-refuge"
+  },
+  "US-12820": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39754101",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12825": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753810",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-4846": {
+   "url": "https://archive.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html",
+   "fingerprint": "660fbd576fd9",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://mca.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html"
+  },
+  "US-12911": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39754125",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12635": {
+   "url": "https://www.blm.gov/programs/national-conservation-lands/montana-dakotas/humbug-spires-wsa",
+   "fingerprint": "a170fcf6bcbf",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/national-conservation-lands/montana-dakotas/humbug-spires-wsa"
+  },
+  "US-12907": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753624",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12925": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753904",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12901": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753690",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12928": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753876",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12890": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753860",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12697": {
+   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754077",
+   "fingerprint": "342444155f69",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+  },
+  "US-12822": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753822",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12699": {
+   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754628",
+   "fingerprint": "342444155f69",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+  },
+  "US-12702": {
+   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754676",
+   "fingerprint": "342444155f69",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+  },
+  "US-12855": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39754309",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12873": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39754325",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12933": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39753878",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12912": {
+   "url": "https://myfwp.mt.gov/fishMT/fas/39754327",
+   "fingerprint": "489be32987e6",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+  },
+  "US-12941": {
+   "url": "https://fwp.mt.gov/stateparks/judith-landing",
+   "fingerprint": "01746eb60190",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://fwp.mt.gov/stateparks/judith-landing"
   }
  },
  "fingerprints": {
-  "nps.gov/trte/index.htm": "c1d34cce2a39",
   "nps.gov/lecl/index.htm": "6dbbab9c7ee3",
-  "fs.usda.gov/gwj": "e3b0c44298fc",
-  "fs.usda.gov/dbnf": "e3b0c44298fc",
-  "nps.gov/maca/index.htm": "d4bd083df32a",
-  "parks.ky.gov/henderson/parks/historic/john-james-audubon-state-park": "e3b0c44298fc",
-  "app.fw.ky.gov/Public_Lands_Search/detail.aspx": "279af6a620f0",
-  "parks.ky.gov/union/parks/historic/big-bone-lick-state-historic-site": "e3b0c44298fc",
-  "parks.ky.gov/louisville/parks/recreation/ep-tom-sawyer-state-park": "e3b0c44298fc",
-  "nps.gov/biso/index.htm": "4dd235adfa0e",
-  "parks.ky.gov/lucas/parks/resort/barren-river-lake-state-resort-park": "e3b0c44298fc",
-  "parks.ky.gov/richmond/parks/historic/fort-boonesborough-state-park": "e3b0c44298fc",
-  "parks.ky.gov/mount-eden/parks/recreation/taylorsville-lake-state-park": "e3b0c44298fc",
-  "parks.ky.gov/falmouth/parks/recreation/kincaid-lake-state-park": "e3b0c44298fc",
-  "parks.ky.gov/lexington/parks/historic/waveland-state-historic-site": "e3b0c44298fc",
-  "eec.ky.gov/Nature-Preserves/Locations/Pages/Green-River-Wild-River.aspx": "7ccea5b260b8",
-  "eec.ky.gov/Nature-Preserves/Locations/Pages/Beargrass-Creek.aspx": "816684005016",
-  "parks.ky.gov/carrollton/parks/historic/general-butler-state-resort-park": "e3b0c44298fc",
-  "fw.ky.gov/Pages/Otter-Creek-Outdoor-Recreation-Area.aspx": "3807138828f8",
-  "parks.ky.gov/gilbertsville/parks/resort/kentucky-dam-village-state-resort-park": "e3b0c44298fc",
-  "parks.ky.gov/bardstown/parks/historic/my-old-kentucky-home-state-park": "e3b0c44298fc",
-  "eec.ky.gov/Nature-Preserves/Locations/Pages/Blackacre.aspx": "7c8a154b5748",
-  "fs.usda.gov/wildflowers/regions/southern/SheltoweeTrace/index.shtml": "e3b0c44298fc",
-  "app.fw.ky.gov/public_lands_search/detail.aspx": "5389e39b2c93",
-  "nps.gov/cuga/index.htm": "c9b2af88e69f",
-  "parks.ky.gov/hardin/parks/resort/kenlake-state-resort-park": "e3b0c44298fc",
-  "parks.ky.gov/cadiz/parks/resort/lake-barkley-state-resort-park": "e3b0c44298fc",
-  "eec.ky.gov/Nature-Preserves/Locations/Pages/Brigadoon.aspx": "599d549bf356",
-  "eec.ky.gov/Nature-Preserves/Locations/Pages/Metropolis-Lake.aspx": "1f377d3deff5",
-  "parks.ky.gov/prestonsburg/parks/resort/jenny-wiley-state-resort-park": "e3b0c44298fc",
-  "parks.ky.gov/slade/parks/resort/natural-bridge-state-resort-park": "e3b0c44298fc",
-  "parks.ky.gov/carlisle/parks/historic/blue-licks-battlefield-state-resort-park": "e3b0c44298fc",
-  "parks.ky.gov/staffordsville/parks/recreation/paintsville-lake-state-park": "e3b0c44298fc",
-  "parks.ky.gov/burnside/parks/recreation/general-burnside-island-state-park": "e3b0c44298fc",
-  "parks.ky.gov/fairview/parks/historic/jefferson-davis-state-historic-site": "e3b0c44298fc",
-  "parks.ky.gov/olive-hill/parks/resort/carter-caves-state-resort-park": "e3b0c44298fc",
-  "parks.ky.gov/corbin/parks/resort/cumberland-falls-state-resort-park": "e3b0c44298fc",
-  "nps.gov/cane/index.htm": "6efa83cdbe87",
-  "nps.gov/fodo/index.htm": "207db3980080",
-  "eec.ky.gov/Natural-Resources/Forestry/ky-state-forests/Pages/Green-River-State-Forest.aspx": "978c79e5aaa0",
-  "parks.ky.gov/whitesburg/parks/recreation/pine-mountain-state-scenic-trail": "e3b0c44298fc",
-  "parks.ky.gov/perryville/parks/historic/perryville-battlefield-state-historic-site": "e3b0c44298fc",
-  "eec.ky.gov/Natural-Resources/Forestry/ky-state-forests/Pages/Knobs-State-Forest-and-Wildlife-Management-Area.aspx": "448d25169aae",
-  "fw.ky.gov/More/Documents/MullinsWMA_ALL.pdf": "72b2602d5a9a",
-  "nps.gov/abli/index.htm": "10c4cdfdeff9",
-  "parks.ky.gov/sassafras/parks/recreation/carr-creek-state-park": "e3b0c44298fc",
-  "parks.ky.gov/groups/find_locations/central-region/william-whitley-house-historic-site": "e3b0c44298fc",
-  "parks.ky.gov/columbus/parks/historic/columbus-belmont-state-park": "e3b0c44298fc",
-  "parks.ky.gov/eddyville/parks/recreation/mineral-mound-state-park": "e3b0c44298fc",
-  "parks.ky.gov/dunmor/parks/recreation/lake-malone-state-park": "e3b0c44298fc",
-  "fw.ky.gov/Education/Pages/Salato-Wildlife-Education-Center.aspx": "b0d7b6e597c7",
-  "eec.ky.gov/Nature-Preserves/Locations/Pages/Pilot-Knob.aspx": "d25525bc1198",
-  "parks.ky.gov/jamestown/parks/resort/lake-cumberland-state-resort-park": "e3b0c44298fc",
-  "parks.ky.gov/campbellsville/parks/recreation/green-river-lake-state-park": "e3b0c44298fc",
-  "fws.gov/refuge/ohio_river_islands": "1e0a6e53f393",
-  "parks.ky.gov/ashland/parks/historic/greenbo-lake-state-resort-park": "e3b0c44298fc",
-  "parks.ky.gov/dawson-springs/parks/resort/pennyrile-forest-state-resort-park": "e3b0c44298fc",
-  "fw.ky.gov/More/Documents/MarrowboneStateForestandWMA_ALL.pdf": "4d9fc5a64917",
-  "fws.gov/refuge/clarks-river": "b90ee0ec899b",
-  "parks.ky.gov/olive-hill/parks/recreation/grayson-lake-state-park": "e3b0c44298fc",
-  "fw.ky.gov/More/Documents/L.B.DavisonWMA_ALL.pdf": "c4520ee479c7",
-  "nps.gov/fodo/planyourvisit/maps.htm": "4b94ef3abf18",
-  "parks.ky.gov/falls-rough/parks/resort/rough-river-dam-state-resort-park": "e3b0c44298fc",
-  "eec.ky.gov/Nature-Preserves/Locations/Pages/Vernon-Douglas.aspx": "8ddf20ca3d16",
-  "parks.ky.gov/louisa/parks/recreation/yatesville-lake-state-park": "e3b0c44298fc",
-  "fs.usda.gov/recarea/dbnf/recarea": "e3b0c44298fc",
-  "parks.ky.gov/tompkinsville/parks/historic/old-mulkey-meetinghouse-state-historic-site": "e3b0c44298fc",
-  "parks.ky.gov/harrodsburg/parks/historic/old-fort-harrod-state-park": "e3b0c44298fc",
-  "bggreensource.org/buckley": "51935044adf1",
-  "parks.ky.gov/mammoth-cave/parks/recreation/nolin-lake-state-park": "e3b0c44298fc",
-  "fw.ky.gov/More/Documents/DeweyLakeWMA-ALL.pdf": "8729f580cf1f",
-  "parks.ky.gov/barbourville/parks/historic/dr-thomas-walker-state-historic-site": "e3b0c44298fc",
-  "eec.ky.gov/Natural-Resources/Forestry/ky-state-forests/Pages/Tygarts-State-Forest.aspx": "5ab4b9fc2935",
-  "parks.ky.gov/burkesville/parks/resort/dale-hollow-lake-state-resort-park": "e3b0c44298fc",
-  "eec.ky.gov/Nature-Preserves/Locations/Pages/Blanton-Forest.aspx": "01d1e2a39f52",
-  "parks.ky.gov/swamp-branch/parks/recreation/dawkins-line-rail-trail": "e3b0c44298fc",
-  "eec.ky.gov/Nature-Preserves/Locations/Pages/Crooked-Creek.aspx": "b785a1f2dd0c",
-  "eec.ky.gov/Nature-Preserves/Locations/Pages/Tom-Dorman.aspx": "a7c7d8874e22",
-  "fw.ky.gov/More/Documents/Hensley-PineMountainWMA_ALL.pdf": "1c22b5ef5fba",
-  "fw.ky.gov/More/Documents/CranksCreekWMA_ALL.pdf": "4f1d6c0f80eb",
-  "eec.ky.gov/Nature-Preserves/Locations/Pages/Quiet-Trails.aspx": "ae4128e8c77a",
-  "nps.gov/misp/index.htm": "4e774266aea5",
-  "fws.gov/refuge/reelfoot": "a7697b99545f",
-  "fw.ky.gov/More/Documents/TwinEagleWMA_ALL.pdf": "33b623bc9787",
-  "eec.ky.gov/Nature-Preserves/Locations/Pages/Bad-Branch.aspx": "4082f1d5258a",
-  "parks.ky.gov/pineville/parks/resort/pine-mountain-state-resort-park": "e3b0c44298fc",
-  "parks.ky.gov/junction-city/parks/historic/isaac-shelby-cemetery-state-historic-site": "e3b0c44298fc",
-  "parks.ky.gov/springfield/parks/historic/lincoln-homestead-state-park": "e3b0c44298fc",
-  "parks.ky.gov/cumberland/parks/recreation/kingdom-come-state-park": "e3b0c44298fc",
-  "fws.gov/refuge/green-river/visit-us/locations/green-river-national-wildlife-refuge": "e3b0c44298fc",
-  "eec.ky.gov/Nature-Preserves/Locations/Pages/Jesse-Stuart.aspx": "3b287f0ccb1a",
-  "eec.ky.gov/Nature-Preserves/Locations/Pages/Rockcastle-River-Wild-River.aspx": "7825b3a223fb",
-  "eec.ky.gov/Nature-Preserves/Locations/Pages/Bad-Branch-Wild-River.aspx": "8fdd036162c6",
-  "fw.ky.gov/More/Documents/SouthShoreWMA_ALL.pdf": "065ee0dcd33e",
-  "fws.gov/fish-hatchery/wolf-creek/map": "973aa87df3e0",
-  "parks.ky.gov/buckhorn/parks/resort/buckhorn-lake-state-resort-park": "e3b0c44298fc",
-  "fw.ky.gov/More/Documents/TN_SullivanWMA_All.pdf": "952f5637dbd6",
-  "fw.ky.gov/More/Documents/BeechyCreekWMA-ALL.pdf": "65cbe90946b1",
-  "parks.ky.gov/wickliffe/parks/historic/wickliffe-mounds-state-historic-site": "e3b0c44298fc",
-  "eec.ky.gov/Nature-Preserves/Locations/Pages/Six-Mile-Island.aspx": "092455dafac6",
-  "fw.ky.gov/More/Documents/EdMabry-LaurelGorgeWMA_ALL.pdf": "c72564261890",
-  "fw.ky.gov/More/Documents/MarionCountyWMAandSF_ALL.pdf": "ea9fbdbdf321",
-  "eec.ky.gov/Nature-Preserves/Locations/Pages/Cumberland-River-Wild-River.aspx": "890328272e05",
-  "fw.ky.gov/More/Documents/Jones-KeeneyWMA_All.pdf": "7013f85d4e21",
-  "fw.ky.gov/More/Documents/CoilEstateWMA_ALL.pdf": "06db4ea4bae9",
-  "eec.ky.gov/Natural-Resources/Forestry/ky-state-forests/Pages/Kentucky-Ridge-State-Forest.aspx": "4100d4944d27",
-  "fs.usda.gov/recarea/dbnf/recreation/recarea": "e3b0c44298fc",
-  "opengisdata.ky.gov/datasets/ky-knp-state-nature-preserves/explore": "778e23183aef",
-  "fw.ky.gov/More/Documents/WinfordWMA_ALL.pdf": "75f45236bf9d",
-  "eec.ky.gov/Nature-Preserves/Locations/Pages/Carter-Caves.aspx": "d9771a84baef",
-  "eec.ky.gov/Natural-Resources/Forestry/ky-state-forests/Pages/Kentenia-State-Forest.aspx": "7426df6805da",
-  "fw.ky.gov/More/Documents/StoneMountainWMAandStateNaturalArea_ALL.pdf": "2cdf019a1ed6",
-  "eec.ky.gov/Nature-Preserves/Locations/Pages/Big-South-Fork-Wild-River.aspx": "2910575ba90d",
-  "eec.ky.gov/Nature-Preserves/Locations/Pages/E.-Lucy-Braun.aspx": "d27c21f4b283",
-  "eec.ky.gov/Nature-Preserves/Locations/Pages/Sinking-Creek.aspx": "fd084a3bf3ac",
-  "app.fw.ky.gov/fisheries/waterbody.aspx": "2fdc19e29005",
-  "eec.ky.gov/Nature-Preserves/Locations/Pages/Dr.-William-H.-Martin-WWCA.aspx": "b0093505140c",
-  "fw.ky.gov/More/Documents/BuckCreekWMA_All.pdf": "a32bdbd11ce4",
-  "eec.ky.gov/Nature-Preserves/Locations/Pages/Rush-Island-Bottoms.aspx": "44cbb30c95d0",
-  "eec.ky.gov/Nature-Preserves/Locations/Pages/Rock-Creek-Wild-River.aspx": "042b56fc8394",
-  "fw.ky.gov/more/documents/LittleSextonsCreekWMAALL.pdf": "8629eb464692",
-  "eec.ky.gov/Nature-Preserves/Locations/Pages/Burnett-WWCA.aspx": "27d82c482689"
+  "nps.gov/nepe/index.htm": "037a6cd1b9fa",
+  "blm.gov/visit/sundance-lodge-rec-area": "21909c0c7672",
+  "blm.gov/visit/shepherd-ah-nei-srma": "b52ec70c5201",
+  "fwp.mt.gov/stateparks/beaverhead-rock": "777e3e894f76",
+  "nps.gov/iafl/index.htm": "89f3a146dd0c",
+  "fs.usda.gov/managing-land/trails/cdt": "d3d2bc8c91fc",
+  "fs.usda.gov/hlcnf": "e3b0c44298fc",
+  "nps.gov/yell/index.htm": "fa3b70d539f9",
+  "fs.usda.gov/trails/pacific-northwest-nst": "e3b0c44298fc",
+  "fs.usda.gov/main/custergallatin/home": "e3b0c44298fc",
+  "fs.usda.gov/npnht": "e3b0c44298fc",
+  "fwp.mt.gov/stateparks/missouri-headwaters": "3ae75043433e",
+  "fs.usda.gov/ctnf": "e3b0c44298fc",
+  "fs.usda.gov/r01/bitterroot": "e3b0c44298fc",
+  "fs.usda.gov/bdnf": "e3b0c44298fc",
+  "fs.usda.gov/flathead": "e3b0c44298fc",
+  "fs.usda.gov/r01/idahopanhandle": "e3b0c44298fc",
+  "fs.usda.gov/lolo": "e3b0c44298fc",
+  "nps.gov/glac/index.htm": "7c2bc4818fc3",
+  "fwp.mt.gov/stateparks/spring-meadow-state-park": "1ba01acae91a",
+  "fwp.mt.gov/brush-lake": "ad745b3b1c79",
+  "fwp.mt.gov/stateparks/lewis-and-clark-caverns": "495ce6de80f5",
+  "fwp.mt.gov/stateparks/whitefish-lake": "b919bd21b80b",
+  "fwp.mt.gov/stateparks/lake-elmo": "8d6698e5bf6a",
+  "fwp.mt.gov/stateparks/madison-buffalo-jump": "68093bb45145",
+  "fwp.mt.gov/black-sandy": "c9368419259b",
+  "fs.usda.gov/r01/kootenai/about-area/about-forest": "e3b0c44298fc",
+  "fwp.mt.gov/stateparks/giant-springs": "aed7b0cf8073",
+  "fwp.mt.gov/first-peoples-buffalo-jump": "c718c1b9c7af",
+  "fwp.mt.gov/stateparks/travelers-rest": "8255da044e7e",
+  "fwp.mt.gov/stateparks/tongue-river-reservoir": "c1184eb2b480",
+  "fwp.mt.gov/stateparks/greycliff-prairie-dog-town": "3b73ff7c080a",
+  "fwp.mt.gov/stateparks/frenchtown-pond": "719877e4c401",
+  "blm.gov/visit/devils-elbow-campground": "d0693f05de6d",
+  "fwp.mt.gov/stateparks/somers-beach": "e08c66d5488c",
+  "nps.gov/libi/index.htm": "ca195f6e1b59",
+  "fws.gov/refuge/lee_metcalf": "aeb9df7925f7",
+  "fwp.mt.gov/stateparks/thompson-chain-of-lakes": "d98c0d8ee709",
+  "blm.gov/maps/georeferenced-PDFs/montana-dakotas": "bf697adebb74",
+  "archive.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html": "660fbd576fd9",
+  "fwp.mt.gov/stateparks/cooney": "5f418429e9e4",
+  "fws.gov/refuge/charles_m_russell": "9bd8f07095fd",
+  "nps.gov/bica/index.htm": "005a7ed15330",
+  "fwp.mt.gov/stateparks/council-grove": "807bac038084",
+  "fwp.mt.gov/stateparks/rosebud-battlefield": "3f3690cb9386",
+  "fwp.mt.gov/stateparks/milltown": "bb4effdb3288",
+  "fwp.mt.gov/les-mason": "63432c508a0a",
+  "fwp.mt.gov/stateparks/makoshika": "f8af412051bb",
+  "fs.usda.gov/recarea/nezperceclearwater/recarea": "e3b0c44298fc",
+  "fwp.mt.gov/stateparks/lone-pine": "d46e378e6bbd",
+  "fwp.mt.gov/stateparks/ackley-lake-state-park": "9cd563e0e8a4",
+  "fwp.mt.gov/stateparks/fort-owen": "6a54411ca0c9",
+  "fwp.mt.gov/west-shore": "687394949ad7",
+  "fwp.mt.gov/stateparks/medicine-rocks": "472372405057",
+  "blm.gov/visit/pompeys-pillar-national-monument": "ed899571ded8",
+  "myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action": "342444155f69",
+  "fs.usda.gov/r01/flathead/recreation/wild-scenic-rivers": "e3b0c44298fc",
+  "blm.gov/visit/acton": "e3b0c44298fc",
+  "fwp.mt.gov/stateparks/beavertail-hill": "93e242627f53",
+  "nps.gov/grko/index.htm": "f51105d35dbc",
+  "fwp.mt.gov/stateparks/tower-rock": "d4714fb790db",
+  "fwp.mt.gov/stateparks/pictograph-cave": "aa8c4a541e66",
+  "blm.gov/programs/national-conservation-lands/montana-dakotas/upper-missouri-river-breaks": "44852b14a20a",
+  "myfwp.mt.gov/fishMT/fas/39754115": "f4560f96dda3",
+  "fws.gov/refuge/benton_lake": "7107212c151f",
+  "fwp.mt.gov/stateparks/anaconda-smoke-stack": "eac4427f4451",
+  "fwp.mt.gov/stateparks/clarks-lookout": "32df6ec60b01",
+  "myfwp.mt.gov/fishMT/fas/39753440": "d7690f75ebf5",
+  "myfwp.mt.gov/fishMT/fas/39754195": "39f41b78c775",
+  "nps.gov/biho/index.htm": "737ba1784fde",
+  "fws.gov/refuge/red_rock_lakes": "089a2737edbe",
+  "fwp.mt.gov/stateparks/bannack-state-park": "e7c609ac8881",
+  "myfwp.mt.gov/fishMT/fas/39754193": "69ba5de5657b",
+  "fwp.mt.gov/stateparks/chief-plenty-coups": "abffd0c60e8c",
+  "myfwp.mt.gov/fishMT/fas/39753472": "2587d597d184",
+  "myfwp.mt.gov/fishMT/fas/39754135": "01d1fca717ea",
+  "nps.gov/fous/index.htm": "5eaade2af68f",
+  "blm.gov/visit/lowry-bridge": "b0b7a587ded8",
+  "fwp.mt.gov/wayfarers": "026a3d3c6475",
+  "blm.gov/visit/lee-metcalf-wilderness": "324eb29acd38",
+  "myfwp.mt.gov/fishMT/fas/39753468": "5acb251ef219",
+  "fwp.mt.gov/stateparks/pirogue-island": "58d07c68bb93",
+  "fwp.mt.gov/stateparks/sluice-boxes": "612a7738e22c",
+  "fwp.mt.gov/logan": "5bb5f87a01b8",
+  "fwp.mt.gov/smith-river": "7d331e8c5ef5",
+  "fws.gov/fish-hatchery/creston": "c7ac26999c88",
+  "fwp.mt.gov/placid-lake": "cbce187fc360",
+  "fws.gov/refuge/lost_trail": "f2bbeaa2fdfc",
+  "blm.gov/visit/coal-banks-landing": "61237cfd38fe",
+  "fwp.mt.gov/big-arm": "79234d189c2a",
+  "fwp.mt.gov/stateparks/painted-rocks": "3cb62041e590",
+  "nps.gov/nepe/planyourvisit/visit-bear-paw-battlefield.htm": "88343cbc6c0c",
+  "fwp.mt.gov/lake-mary-ronan": "111edab382b0",
+  "fwp.mt.gov/stateparks/lost-creek": "74f4230886c6",
+  "fwp.mt.gov/yellow-bay": "17228d50522f",
+  "myfwp.mt.gov/fishMT/fas/39754161": "ed12af46c318",
+  "blm.gov/sites/blm.gov/files/documents/files/Boaters%20Guide%202017%20508%20COMPL.pdf": "0c15dd756aad",
+  "blm.gov/programs/national-conservation-lands/montana-dakotas/terry-badlands-wsa": "04e925976824",
+  "fwp.mt.gov/thompson-falls": "5bdb84fc167d",
+  "fws.gov/refuge/ninepipe": "05f0430ff7e6",
+  "myfwp.mt.gov/fishMT/fas/39754103": "24916556cdbd",
+  "fwp.mt.gov/stateparks/fish-creek": "d3d7826bdb9c",
+  "myfwp.mt.gov/fishMT/fas/39754245": "dcaeba9db6aa",
+  "myfwp.mt.gov/fishMT/fas/39753564": "91eca92240bb",
+  "fws.gov/refuge/bowdoin": "caa6336cd4ce",
+  "myfwp.mt.gov/fishMT/fas/39753566": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753422": "489be32987e6",
+  "blm.gov/visit/garnet-ghost-town": "5bef9ddab09d",
+  "fws.gov/refuge/National_Bison_Range/Contact.html": "e3b0c44298fc",
+  "fws.gov/refuges/profiles/recEdMore.cfm": "b76888b3f858",
+  "myfwp.mt.gov/fishMT/fas/39754401": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753842": "e59cc710179d",
+  "myfwp.mt.gov/fishMT/fas/39754247": "00c26f30b78a",
+  "fws.gov/refuge/hailstone": "e2c2eb9d5169",
+  "fwp.mt.gov/stateparks/elkhorn": "bd33792de954",
+  "fws.gov/mountain-prairie/refuges/mdl.php": "e3b0c44298fc",
+  "fwp.mt.gov/finley-point": "fee3b7c34b4e",
+  "fwp.mt.gov/salmon-lake": "fa377addea6f",
+  "fwp.mt.gov/hell-creek": "e3b0c44298fc",
+  "myfwp.mt.gov/fishMT/fas/39754387": "83eac3cff58a",
+  "fws.gov/refuge/war_horse": "98b9c4867ba2",
+  "myfwp.mt.gov/fishMT/fas/39754577": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753874": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753872": "489be32987e6",
+  "fwp.mt.gov/stateparks/granite-ghost-town": "10b6217b1877",
+  "fws.gov/refuge/medicine_lake": "f5435ac7b7e9",
+  "fs.usda.gov/visit/destination/absaroka-beartooth-wilderness": "e3b0c44298fc",
+  "myfwp.mt.gov/fishMT/fas/39753414": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753424": "489be32987e6",
+  "fws.gov/refuge/swan_river": "76fbcc2eaee8",
+  "myfwp.mt.gov/fishMT/fas/39754423": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753684": "489be32987e6",
+  "fws.gov/refuge/pablo": "20d5c3ad5bca",
+  "myfwp.mt.gov/fishMT/fas/39754131": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39754407": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753406": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753404": "489be32987e6",
+  "fws.gov/refuge/lake_mason": "f871748aa95e",
+  "myfwp.mt.gov/fishMT/fas/39753826": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39754621": "489be32987e6",
+  "blm.gov/visit/ear-mountain": "f52b28b62393",
+  "fws.gov/refuge/hewitt_lake": "e8c35fa12ec3",
+  "myfwp.mt.gov/fishMT/fas/39754581": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753844": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753438": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753534": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39754543": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39754263": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753804": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753714": "489be32987e6",
+  "blm.gov/programs/national-conservation-lands/montana-dakotas/sleeping-giant-sheep-creek": "80c44165415c",
+  "myfwp.mt.gov/fishMT/fas/39753678": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753848": "489be32987e6",
+  "fws.gov/refuge/black_coulee": "f0840c5803d6",
+  "myfwp.mt.gov/fishMT/fas/39754461": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39754381": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753546": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753836": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753840": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753854": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753866": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39754181": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39754321": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753838": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753864": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753694": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753674": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753828": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39754383": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753704": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39754391": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753456": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753504": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753808": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753710": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39754405": "489be32987e6",
+  "blm.gov/programs/national-conservation-lands/montana-dakotas/axolotl-lakes-wsa": "54e906610053",
+  "myfwp.mt.gov/fishMT/fas/39753862": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753728": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39754155": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39754499": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753672": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753750": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753858": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753712": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753720": "489be32987e6",
+  "fwp.mt.gov/wild-horse-island": "52461bef8db7",
+  "myfwp.mt.gov/fishMT/fas/39753538": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753628": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39754159": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39754449": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753880": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753706": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753572": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753642": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753722": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753850": "489be32987e6",
+  "blm.gov/visit/judith-landing": "44b8d5d448a2",
+  "fws.gov/refuge/ul_bend": "c6e64bebfd61",
+  "myfwp.mt.gov/fishMT/fas/39754101": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753810": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39754125": "489be32987e6",
+  "blm.gov/programs/national-conservation-lands/montana-dakotas/humbug-spires-wsa": "a170fcf6bcbf",
+  "myfwp.mt.gov/fishMT/fas/39753624": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753904": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753690": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753876": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753860": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753822": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39754309": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39754325": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39753878": "489be32987e6",
+  "myfwp.mt.gov/fishMT/fas/39754327": "489be32987e6",
+  "fwp.mt.gov/stateparks/judith-landing": "01746eb60190"
  },
  "errors": {},
  "left": [],

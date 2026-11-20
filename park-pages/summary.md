@@ -1,24 +1,24 @@
 Park page reader, 2026-11-20.
-Asked 193. Read 193. Kept 0 unchanged. 0 parks are left. The next run continues.
-Requests this run: 139.
+Asked 254. Read 254. Kept 0 unchanged. 0 parks are left. The next run continues.
+Requests this run: 292.
 Pictures: 0.
-Pages: dead 1, html 116, none 4, pdf 18, resting 53, script-built 1.
-Questions: AGENCY_HOME_ONLY 73, CLOSED_OR_MOVED_WORDS 5, DESIGNATION_DIFFERS 6, MANY_TRACTS 1, NAME_DIFFERS 58, OFFICE_ADDRESS_ONLY 3, SCRIPT_BUILT 1, SHARED_PAGE 2, UNOFFICIAL_HOST 1.
+Pages: dead 4, html 154, pdf 1, resting 14, script-built 81.
+Questions: AGENCY_HOME_ONLY 32, CLOSED_OR_MOVED_WORDS 5, INSIDE_BIGGER_UNIT 4, LINK_MOVED 7, MANY_TRACTS 3, NAME_DIFFERS 98, OFFICE_ADDRESS_ONLY 25, SCRIPT_BUILT 81, SHARED_PAGE 11.
 Look at these first:
-US-3791 POTA: 'Trail of Tears National Historic Trail'. Page: 'Trail Of Tears National Historic Trail • AL,AR,GA,IL,KY,MO,NC,OK,TN'.
 US-4572 POTA: 'Lewis and Clark National Historic Trail'. Page: 'Lewis & Clark National Historic Trail • IA,ID,IL,IN,KS,KY,MO,MT,NE,ND,OH,OR,PA,SD,WA,WV'.
-US-3792 POTA's link is the agency's front page, not this park's page. Nothing was read from it.
-US-0050 The only address on the page is the office, not the park.
-US-3787 POTA's link is a list of parks, not this park's page. Nothing was read from it.
-US-0686 POTA: 'Big South Fork National Recreation Area'. Page: 'Big South Fork National River & Recreation Area • KY,TN'.
-US-9756 POTA's link is a list of parks, not this park's page. Nothing was read from it.
-US-10105 POTA: 'The Green National Wild and Scenic River'. Page: 'Green River Wild River'.
-US-10173 POTA's link is the agency's front page, not this park's page. Nothing was read from it.
-US-7956 POTA: 'Beargrass Creek State Nature Preserve'. Page: 'Beargrass Creek State Nature Preserve'.
-US-8144 POTA: 'Otter Creek State Recreation Area'. Page: 'Otter Creek Outdoor Recreation Area'.
-US-8144 transferred to Meade County Fiscal Court
-US-3836 POTA's link is a list of parks, not this park's page. Nothing was read from it.
-US-7954 POTA: 'Blackacre State Nature Preserve'. Page: 'Blackacre State Nature Preserve'.
-US-10170 POTA's link is a list of parks, not this park's page. Nothing was read from it.
-Hosts that refused: doifwsnextprod.prod.acquia-sites.com.
+US-0054 POTA: 'Nez Perce National Historical Park'. Page: 'Nez Perce National Historical Park • ID,MT,OR,WA'.
+US-10529 POTA: 'Sundance Lodge (BLM) Recreation Site'. Page: 'Sundance Lodge Rec. Area'.
+US-10529 The only address on the page is the Billings Field Office, not the park.
+US-10528 POTA: 'Shepherd Ah Nei BLM Special Recreation Management Area'. Page: 'Shepherd Ah Nei SRMA'.
+US-10528 The only address on the page is the Billings Field Office, not the park.
+US-2559 POTA: 'Beaverhead Rock State Park'. Page: 'STATE PARKS MENU'.
+US-3424 POTA: 'Ice Age Floods National Geologic Trail'. Page: 'Ice Age Floods National Geologic Trail • WA,OR,ID,MT'.
+US-0070 POTA: 'Yellowstone National Park'. Page: 'Yellowstone National Park • ID,MT,WY'.
+US-0070 The only address on the page is the office, not the park.
+US-2589 POTA: 'Missouri Headwaters State Park'. Page: 'STATE PARKS MENU'.
+US-0028 The only address on the page is the office, not the park.
+US-2598 POTA: 'Spring Meadow Lake State Park'. Page: 'STATE PARKS MENU'.
+US-2563 POTA: 'Brush Lake State Park'. Page: 'Brush Lake State Park'.
+US-2581 POTA: 'Lewis and Clark Caverns State Park'. Page: 'STATE PARKS MENU'.
+Hosts that refused: cms.nps.gov, doifwsnextprod.prod.acquia-sites.com.
 Files: facts/, questions.csv, for-a-person.csv, evidence-drafts/, changes.csv, lists-done/, summary.md, run.json, state.json.

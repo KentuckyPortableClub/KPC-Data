@@ -1,7 +1,7 @@
 Not sure list, 2026-11-20.
-Open rows: wrong likely 21, unsure 208, incomplete 4, unchecked 0, fairly sure 4.
+Open rows: wrong likely 21, unsure 474, incomplete 4, unchecked 0, fairly sure 4.
 Closed since last time: 0.
-No bot can help: 98. Those wait on a person or the owner.
+No bot can help: 211. Those wait on a person or the owner.
 Wrong likely, busiest first:
 US-1091 Lake Dardanelle State Park. an old NO keeps record 166846 (216 ac) off the park; two outside passes say that record IS the park
 US-6744 Terra Ceia Preserve Frog Creek State Conservation Area. two graders say record fnl2929 (120 ac) is the park; today's map had it on wrong land

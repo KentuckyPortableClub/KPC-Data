@@ -3,6 +3,62 @@
  "rows": [
   {
    "area": "US-MT",
+   "code": "OFFICE_ADDRESS_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "PO Box 128 West Glacier, MT 59936 Phone: 406-888-7800",
+    "source": "https://www.nps.gov/glac/index.htm"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Glacier National Park",
+   "ref": "US-0028",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "The only address on the page is the office, not the park."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Nez Perce National Historical Park (U.S. National Park Service)",
+    "source": "https://www.nps.gov/nepe/index.htm"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Nez Perce National Historical Park",
+   "ref": "US-0054",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Nez Perce National Historical Park'. Page: 'Nez Perce National Historical Park • ID,MT,OR,WA'."
+  },
+  {
+   "area": "US-MT",
    "code": "UNCHECKED_NEW_LAND",
    "evidence": {
     "date": "2026-11-19",
@@ -12,7 +68,7 @@
    "first_seen": "2026-11-19",
    "found_by": "Fable, sitting 3",
    "how_sure": "unsure",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "name": "Nez Perce National Historical Park (Montana piece)",
    "ref": "US-0054",
    "settled": {
@@ -23,11 +79,581 @@
    },
    "shows_now": "outline 196 ac, new",
    "status": "open",
-   "tried": [],
+   "tried": [
+    {
+     "by": "park page reader",
+     "date": "2026-11-20",
+     "quote": "Nez Perce National Historical Park (U.S. National Park Service)",
+     "result": "read"
+    }
+   ],
    "wants": [
     "page facts"
    ],
    "why": "new 196-ac piece in Montana (likely the Bear Paw unit); the pin is in another state"
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Yellowstone National Park (U.S. National Park Service)",
+    "source": "https://www.nps.gov/yell/index.htm"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Yellowstone National Park",
+   "ref": "US-0070",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Yellowstone National Park'. Page: 'Yellowstone National Park • ID,MT,WY'."
+  },
+  {
+   "area": "US-MT",
+   "code": "OFFICE_ADDRESS_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "PO Box 168 Yellowstone National Park, WY 82190-0168 Phone: 307-344-7381",
+    "source": "https://www.nps.gov/yell/index.htm"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Yellowstone National Park",
+   "ref": "US-0070",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "The only address on the page is the office, not the park."
+  },
+  {
+   "area": "US-MT",
+   "code": "INSIDE_BIGGER_UNIT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "The refuge is managed within the Western Montana National Wildlife Refuge Complex, focusing on restoring wetland health and preserving native prairie landscapes.",
+    "source": "https://www.fws.gov/locations/benton-lake-national-wildlife-refuge"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Benton Lake National Wildlife Refuge",
+   "ref": "US-0396",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "The page says this place is within 'Western Montana National Wildlife Refuge'."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Outdoor Recreation | U.S. Fish & Wildlife Service",
+    "source": "https://www.fws.gov/activities?ID=61522"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Halfbreed Lake National Wildlife Refuge",
+   "ref": "US-0400",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Halfbreed Lake National Wildlife Refuge'. Page: 'Outdoor Recreation'."
+  },
+  {
+   "area": "US-MT",
+   "code": "MANY_TRACTS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Willow Creek Unit, North Unit, Lake Unit",
+    "source": "https://www.fws.gov/refuge/lake-mason"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Lake Mason National Wildlife Refuge",
+   "ref": "US-0401",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "map",
+    "page facts"
+   ],
+   "why": "3 named tracts: Willow Creek Unit, North Unit, Lake Unit."
+  },
+  {
+   "area": "US-MT",
+   "code": "MANY_TRACTS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Sandhills Unit, The Sandhills Unit",
+    "source": "https://www.fws.gov/refuge/medicine-lake"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Medicine Lake National Wildlife Refuge",
+   "ref": "US-0404",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "map",
+    "page facts"
+   ],
+   "why": "2 named tracts: Sandhills Unit, The Sandhills Unit."
+  },
+  {
+   "area": "US-MT",
+   "code": "OFFICE_ADDRESS_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "P.O. Box 110 Airport Road Lewistown, Montana 59457",
+    "source": "https://www.fws.gov/locations/ul-bend-national-wildlife-refuge"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "UL Bend National Wildlife Refuge",
+   "ref": "US-0408",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "The only address on the page is the office, not the park."
+  },
+  {
+   "area": "US-MT",
+   "code": "MANY_TRACTS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "War Horse Unit, Wild Horse Unit, Yellow Water Unit, The War Horse Unit, Willow Creek Unit",
+    "source": "https://www.fws.gov/refuge/war-horse"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "War Horse National Wildlife Refuge",
+   "ref": "US-0409",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "map",
+    "page facts"
+   ],
+   "why": "5 named tracts: War Horse Unit, Wild Horse Unit, Yellow Water Unit, The War Horse Unit, Willow Creek Unit."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Bighorn Canyon National Recreation Area (U.S. National Park Service)",
+    "source": "https://www.nps.gov/bica/index.htm"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Bighorn Canyon National Recreation Area",
+   "ref": "US-0674",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Bighorn Canyon National Recreation Area'. Page: 'Bighorn Canyon National Recreation Area • MT,WY'."
+  },
+  {
+   "area": "US-MT",
+   "code": "OFFICE_ADDRESS_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "P.O. Box 237 16425 Highway 43 West Wisdom, MT 59761 Phone: 406-689-3155",
+    "source": "https://www.nps.gov/biho/index.htm"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Big Hole National Battlefield",
+   "ref": "US-0701",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "The only address on the page is the office, not the park."
+  },
+  {
+   "area": "US-MT",
+   "code": "CLOSED_OR_MOVED_WORDS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "donated to and used for interpretation and educational programming at Fort Union",
+    "source": "https://www.nps.gov/fous/index.htm"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Fort Union Trading Post National Historic Site",
+   "ref": "US-0823",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "donated to and used for interpretation and educational programming at Fort Union"
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Fort Union Trading Post National Historic Site (U.S. National Park Service)",
+    "source": "https://www.nps.gov/fous/index.htm"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Fort Union Trading Post National Historic Site",
+   "ref": "US-0823",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Fort Union Trading Post National Historic Site'. Page: 'Fort Union Trading Post National Historic Site • MT,ND'."
+  },
+  {
+   "area": "US-MT",
+   "code": "OFFICE_ADDRESS_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Little Bighorn Battlefield National Monument P.O. Box 39 Crow Agency, MT 59022-0039 Phone: 406-924-9167",
+    "source": "https://www.nps.gov/libi/index.htm"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Little Bighorn Battlefield National Monument",
+   "ref": "US-0947",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "The only address on the page is the office, not the park."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Milltown State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/stateparks/milltown"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Milltown State Park",
+   "ref": "US-10175",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Milltown State Park'. Page: 'STATE PARKS MENU'."
+  },
+  {
+   "area": "US-MT",
+   "code": "OFFICE_ADDRESS_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "FWP Region 2 Headquarters 3201 Spurgin Rd Missoula, MT 59804 Phone: 406-542-5561 Email: Ryan.Schreiner@mt.gov",
+    "source": "https://fwp.mt.gov/stateparks/milltown"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Milltown State Park",
+   "ref": "US-10175",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "The only address on the page is the office, not the park."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Granite Ghost Town State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/stateparks/granite-ghost-town/"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Granite Ghost Town State Park",
+   "ref": "US-10176",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Granite Ghost Town State Park'. Page: 'STATE PARKS MENU'."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Garnet Ghost Town - Montana | Bureau of Land Management",
+    "source": "https://www.blm.gov/visit/garnet-ghost-town"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Garnet Ghost Town BLM Historic Preservation Site",
+   "ref": "US-10521",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Garnet Ghost Town BLM Historic Preservation Site'. Page: 'Garnet Ghost Town'."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Coal Banks Landing - Montana | Bureau of Land Management",
+    "source": "https://www.blm.gov/visit/coal-banks-landing"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Coal Banks Landing (BLM) Recreation Site",
+   "ref": "US-10525",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Coal Banks Landing (BLM) Recreation Site'. Page: 'Coal Banks Landing'."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Devil&#039;s Elbow Campground - Montana | Bureau of Land Management",
+    "source": "https://www.blm.gov/visit/devils-elbow-campground"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Devils Elbow (BLM) Recreation Site",
+   "ref": "US-10526",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Devils Elbow (BLM) Recreation Site'. Page: 'Devil&#039;s Elbow Campground'."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Judith Landing - Montana | Bureau of Land Management",
+    "source": "https://www.blm.gov/visit/judith-landing"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Judith Landing (BLM) Recreation Site",
+   "ref": "US-10527",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Judith Landing (BLM) Recreation Site'. Page: 'Judith Landing'."
   },
   {
    "area": "US-MT",
@@ -40,7 +666,7 @@
    "first_seen": "2026-11-19",
    "found_by": "key run 44600381160 + drop guard",
    "how_sure": "unsure",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "name": "Shepherd Ah Nei BLM Special Recreation Management Area",
    "ref": "US-10528",
    "settled": {
@@ -51,12 +677,75 @@
    },
    "shows_now": "pin",
    "status": "open",
-   "tried": [],
+   "tried": [
+    {
+     "by": "park page reader",
+     "date": "2026-11-20",
+     "quote": "Shepherd Ah Nei SRMA - Montana | Bureau of Land Management",
+     "result": "read"
+    }
+   ],
    "wants": [
     "page facts",
     "official size"
    ],
    "why": "the old outline was a saved guess nobody verified, so it is a pin until a person or the page reader confirms it"
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Shepherd Ah Nei SRMA - Montana | Bureau of Land Management",
+    "source": "https://www.blm.gov/visit/shepherd-ah-nei-srma"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Shepherd Ah Nei BLM Special Recreation Management Area",
+   "ref": "US-10528",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Shepherd Ah Nei BLM Special Recreation Management Area'. Page: 'Shepherd Ah Nei SRMA'."
+  },
+  {
+   "area": "US-MT",
+   "code": "OFFICE_ADDRESS_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Billings Field Office 5001 Southgate Drive Billings Montana 59101",
+    "source": "https://www.blm.gov/visit/shepherd-ah-nei-srma"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Shepherd Ah Nei BLM Special Recreation Management Area",
+   "ref": "US-10528",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "The only address on the page is the Billings Field Office, not the park."
   },
   {
    "area": "US-MT",
@@ -69,7 +758,7 @@
    "first_seen": "2026-11-19",
    "found_by": "key run 44600381160 + drop guard",
    "how_sure": "unsure",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "name": "Sundance Lodge (BLM) Recreation Site",
    "ref": "US-10529",
    "settled": {
@@ -80,12 +769,187 @@
    },
    "shows_now": "pin",
    "status": "open",
-   "tried": [],
+   "tried": [
+    {
+     "by": "park page reader",
+     "date": "2026-11-20",
+     "quote": "Sundance Lodge Rec. Area - Montana | Bureau of Land Management",
+     "result": "read"
+    }
+   ],
    "wants": [
     "page facts",
     "official size"
    ],
    "why": "the old outline was a saved guess nobody verified, so it is a pin until a person or the page reader confirms it"
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Sundance Lodge Rec. Area - Montana | Bureau of Land Management",
+    "source": "https://www.blm.gov/visit/sundance-lodge-rec-area"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Sundance Lodge (BLM) Recreation Site",
+   "ref": "US-10529",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Sundance Lodge (BLM) Recreation Site'. Page: 'Sundance Lodge Rec. Area'."
+  },
+  {
+   "area": "US-MT",
+   "code": "OFFICE_ADDRESS_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Billings Field Office 5001 Southgate Drive Billings Montana 59101 Geographic Coordinates 45.64972 , -108.72983",
+    "source": "https://www.blm.gov/visit/sundance-lodge-rec-area"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Sundance Lodge (BLM) Recreation Site",
+   "ref": "US-10529",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "The only address on the page is the Billings Field Office, not the park."
+  },
+  {
+   "area": "US-MT",
+   "code": "AGENCY_HOME_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753622",
+    "source": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Beartooth Wildlife Management Area",
+   "ref": "US-10696",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "POTA's link is a list of parks, not this park's page. Nothing was read from it."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Somers Beach State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/stateparks/somers-beach"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Somers Beach State Park",
+   "ref": "US-11146",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Somers Beach State Park'. Page: 'STATE PARKS MENU'."
+  },
+  {
+   "area": "US-MT",
+   "code": "OFFICE_ADDRESS_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "FWP Region 1 Headquarters 490 North Meridian Road Kalispell, MT 59901 Phone: 406-751-5423 Email: tpowell@mt.gov",
+    "source": "https://fwp.mt.gov/stateparks/somers-beach"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Somers Beach State Park",
+   "ref": "US-11146",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "The only address on the page is the office, not the park."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Visit Bear Paw Battlefield - Nez Perce National Historical Park (U.S. National Park Service)",
+    "source": "https://www.nps.gov/nepe/planyourvisit/visit-bear-paw-battlefield.htm"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Bear Paw Battlefield National Monument",
+   "ref": "US-11215",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Bear Paw Battlefield National Monument'. Page: 'Visit Bear Paw Battlefield'."
   },
   {
    "area": "US-MT",
@@ -98,7 +962,7 @@
    "first_seen": "2026-11-19",
    "found_by": "key run 44600381160 + drop guard",
    "how_sure": "unsure",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "name": "Bear Paw Battlefield National Monument",
    "ref": "US-11215",
    "settled": {
@@ -109,11 +973,270 @@
    },
    "shows_now": "outline, labelled approximate",
    "status": "open",
-   "tried": [],
+   "tried": [
+    {
+     "by": "park page reader",
+     "date": "2026-11-20",
+     "quote": "Visit Bear Paw Battlefield - Nez Perce National Historical Park (U.S. National Park Service)",
+     "result": "read"
+    }
+   ],
    "wants": [
     "official layer"
    ],
    "why": "the only record is a state layer's copy of a federal unit, not the agency's own"
+  },
+  {
+   "area": "US-MT",
+   "code": "AGENCY_HOME_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753636",
+    "source": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Big Springs Trout State Fish Hatchery",
+   "ref": "US-11216",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "POTA's link is a list of parks, not this park's page. Nothing was read from it."
+  },
+  {
+   "area": "US-MT",
+   "code": "AGENCY_HOME_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753798",
+    "source": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Bluewater Springs Trout State Fish Hatchery",
+   "ref": "US-11217",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "POTA's link is a list of parks, not this park's page. Nothing was read from it."
+  },
+  {
+   "area": "US-MT",
+   "code": "AGENCY_HOME_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753884",
+    "source": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Fort Peck State Fish Hatchery",
+   "ref": "US-11218",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "POTA's link is a list of parks, not this park's page. Nothing was read from it."
+  },
+  {
+   "area": "US-MT",
+   "code": "AGENCY_HOME_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753949",
+    "source": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Jacko River Trout State Fish Hatchery",
+   "ref": "US-11219",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "POTA's link is a list of parks, not this park's page. Nothing was read from it."
+  },
+  {
+   "area": "US-MT",
+   "code": "AGENCY_HOME_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754097",
+    "source": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Washoe Park Trout State Fish Hatchery",
+   "ref": "US-11221",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "POTA's link is a list of parks, not this park's page. Nothing was read from it."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Montana-Dakotas Georeferenced PDF Maps | Bureau of Land Management",
+    "source": "https://www.blm.gov/maps/georeferenced-PDFs/montana-dakotas"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Scratchgravel Hills BLM Recreation Management Area",
+   "ref": "US-11242",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Scratchgravel Hills BLM Recreation Management Area'. Page: 'Montana-Dakotas Georeferenced PDF Maps'."
+  },
+  {
+   "area": "US-MT",
+   "code": "AGENCY_HOME_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753943",
+    "source": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Kootenai Falls Wildlife Management Area",
+   "ref": "US-12333",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "POTA's link is a list of parks, not this park's page. Nothing was read from it."
+  },
+  {
+   "area": "US-MT",
+   "code": "AGENCY_HOME_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753927",
+    "source": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Mount Silcox Wildlife Management Area",
+   "ref": "US-12334",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "POTA's link is a list of parks, not this park's page. Nothing was read from it."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "�f��6iL\u0017M|Y^N�1�,2���",
+    "source": "https://www.blm.gov/sites/blm.gov/files/documents/files/Boaters%20Guide%202017%20508%20COMPL.pdf"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Upper Missouri River BLM Wild and Scenic River",
+   "ref": "US-12630",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "pdf",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Upper Missouri River BLM Wild and Scenic River'. Page: '�f��6iL\u0017M|Y^N�1�,2���'."
   },
   {
    "area": "US-MT",
@@ -126,7 +1249,7 @@
    "first_seen": "2026-11-19",
    "found_by": "key run 44600381160 + drop guard",
    "how_sure": "unsure",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "name": "Upper Missouri River BLM Wild and Scenic River",
    "ref": "US-12630",
    "settled": {
@@ -137,11 +1260,2930 @@
    },
    "shows_now": "outline, labelled approximate",
    "status": "open",
-   "tried": [],
+   "tried": [
+    {
+     "by": "park page reader",
+     "date": "2026-11-20",
+     "quote": "�f��6iL\u0017M|Y^N�1�,2���",
+     "result": "read"
+    }
+   ],
    "wants": [
     "official layer"
    ],
    "why": "the only record is a state layer's copy of a federal unit, not the agency's own"
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Terry Badlands WSA | Bureau of Land Management",
+    "source": "https://www.blm.gov/programs/national-conservation-lands/montana-dakotas/terry-badlands-wsa"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Terry Badlands BLM Wilderness Area",
+   "ref": "US-12631",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Terry Badlands BLM Wilderness Area'. Page: 'Terry Badlands'."
+  },
+  {
+   "area": "US-MT",
+   "code": "SHARED_PAGE",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "2 parks of the area list this page",
+    "source": "https://www.blm.gov/programs/national-conservation-lands/montana-dakotas/sleeping-giant-sheep-creek"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Sleeping Giant BLM Wilderness Area",
+   "ref": "US-12632",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "2 parks use this page: US-12632, US-12633."
+  },
+  {
+   "area": "US-MT",
+   "code": "SHARED_PAGE",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "2 parks of the area list this page",
+    "source": "https://www.blm.gov/programs/national-conservation-lands/montana-dakotas/sleeping-giant-sheep-creek"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Sheep Creek BLM Wilderness Area",
+   "ref": "US-12633",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "2 parks use this page: US-12633, US-12632."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Programs: National Conservation Lands: Montana Dakotas: Axolotl Lakes WSA | Bureau of Land Management",
+    "source": "https://www.blm.gov/programs/national-conservation-lands/montana-dakotas/axolotl-lakes-wsa"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Axolotl Lakes BLM Wilderness Area",
+   "ref": "US-12634",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Axolotl Lakes BLM Wilderness Area'. Page: 'Axolotl Lakes WSA'."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Programs: National Conservation Lands: Montana-Dakotas: Humbug Spires WSA | Bureau of Land Management",
+    "source": "https://www.blm.gov/programs/national-conservation-lands/montana-dakotas/humbug-spires-wsa"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Humbug Spires BLM Wilderness Area",
+   "ref": "US-12635",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Humbug Spires BLM Wilderness Area'. Page: 'Humbug Spires Wilderness Study Area'."
+  },
+  {
+   "area": "US-MT",
+   "code": "AGENCY_HOME_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754345",
+    "source": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Seven Sisters Wildlife Management Area",
+   "ref": "US-12646",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "POTA's link is a list of parks, not this park's page. Nothing was read from it."
+  },
+  {
+   "area": "US-MT",
+   "code": "AGENCY_HOME_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754347",
+    "source": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Elk Island Wildlife Management Area",
+   "ref": "US-12647",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "POTA's link is a list of parks, not this park's page. Nothing was read from it."
+  },
+  {
+   "area": "US-MT",
+   "code": "AGENCY_HOME_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753388",
+    "source": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Canyon Ferry Wildlife Management Area",
+   "ref": "US-12648",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "POTA's link is a list of parks, not this park's page. Nothing was read from it."
+  },
+  {
+   "area": "US-MT",
+   "code": "AGENCY_HOME_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754295",
+    "source": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Fresno Reservoir Wildlife Management Area",
+   "ref": "US-12649",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "POTA's link is a list of parks, not this park's page. Nothing was read from it."
+  },
+  {
+   "area": "US-MT",
+   "code": "AGENCY_HOME_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754067",
+    "source": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Warm Springs Wildlife Management Area",
+   "ref": "US-12650",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "POTA's link is a list of parks, not this park's page. Nothing was read from it."
+  },
+  {
+   "area": "US-MT",
+   "code": "AGENCY_HOME_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754071",
+    "source": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Nevada Lake Wildlife Management Area",
+   "ref": "US-12651",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "POTA's link is a list of parks, not this park's page. Nothing was read from it."
+  },
+  {
+   "area": "US-MT",
+   "code": "AGENCY_HOME_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753945",
+    "source": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Kootenai West Wildlife Management Area",
+   "ref": "US-12652",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "POTA's link is a list of parks, not this park's page. Nothing was read from it."
+  },
+  {
+   "area": "US-MT",
+   "code": "AGENCY_HOME_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754191",
+    "source": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Aunt Molly Wildlife Management Area",
+   "ref": "US-12653",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "POTA's link is a list of parks, not this park's page. Nothing was read from it."
+  },
+  {
+   "area": "US-MT",
+   "code": "AGENCY_HOME_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754079",
+    "source": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Blackfoot-Clearwater Wildlife Management Area",
+   "ref": "US-12654",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "POTA's link is a list of parks, not this park's page. Nothing was read from it."
+  },
+  {
+   "area": "US-MT",
+   "code": "AGENCY_HOME_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754674",
+    "source": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Marshall Creek Wildlife Management Area",
+   "ref": "US-12655",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "POTA's link is a list of parks, not this park's page. Nothing was read from it."
+  },
+  {
+   "area": "US-MT",
+   "code": "AGENCY_HOME_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753947",
+    "source": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Kootenai Woods Ranch Wildlife Management Area",
+   "ref": "US-12656",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "POTA's link is a list of parks, not this park's page. Nothing was read from it."
+  },
+  {
+   "area": "US-MT",
+   "code": "AGENCY_HOME_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753612",
+    "source": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Sun River Wildlife Management Area",
+   "ref": "US-12657",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "POTA's link is a list of parks, not this park's page. Nothing was read from it."
+  },
+  {
+   "area": "US-MT",
+   "code": "AGENCY_HOME_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753632",
+    "source": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Blackleaf Wildlife Management Area",
+   "ref": "US-12658",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "POTA's link is a list of parks, not this park's page. Nothing was read from it."
+  },
+  {
+   "area": "US-MT",
+   "code": "AGENCY_HOME_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754601",
+    "source": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Bull River Wildlife Management Area",
+   "ref": "US-12695",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "POTA's link is a list of parks, not this park's page. Nothing was read from it."
+  },
+  {
+   "area": "US-MT",
+   "code": "AGENCY_HOME_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754700",
+    "source": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Bighorn Viewing Wildlife Management Area",
+   "ref": "US-12696",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "POTA's link is a list of parks, not this park's page. Nothing was read from it."
+  },
+  {
+   "area": "US-MT",
+   "code": "AGENCY_HOME_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754077",
+    "source": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Mount Jumbo Wildlife Management Area",
+   "ref": "US-12697",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "POTA's link is a list of parks, not this park's page. Nothing was read from it."
+  },
+  {
+   "area": "US-MT",
+   "code": "AGENCY_HOME_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754089",
+    "source": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Calf Creek Wildlife Management Area",
+   "ref": "US-12698",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "POTA's link is a list of parks, not this park's page. Nothing was read from it."
+  },
+  {
+   "area": "US-MT",
+   "code": "AGENCY_HOME_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754628",
+    "source": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "North Swan Valley Wildlife Management Area",
+   "ref": "US-12699",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "POTA's link is a list of parks, not this park's page. Nothing was read from it."
+  },
+  {
+   "area": "US-MT",
+   "code": "AGENCY_HOME_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753941",
+    "source": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Roundhorn Wildlife Management Area",
+   "ref": "US-12700",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "POTA's link is a list of parks, not this park's page. Nothing was read from it."
+  },
+  {
+   "area": "US-MT",
+   "code": "AGENCY_HOME_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754073",
+    "source": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Threemile Wildlife Management Area",
+   "ref": "US-12701",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "POTA's link is a list of parks, not this park's page. Nothing was read from it."
+  },
+  {
+   "area": "US-MT",
+   "code": "AGENCY_HOME_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754676",
+    "source": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "MT Fish Creek Wildlife Management Area",
+   "ref": "US-12702",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "POTA's link is a list of parks, not this park's page. Nothing was read from it."
+  },
+  {
+   "area": "US-MT",
+   "code": "AGENCY_HOME_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753370",
+    "source": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Canyon Creek Wildlife Management Area",
+   "ref": "US-12712",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "POTA's link is a list of parks, not this park's page. Nothing was read from it."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753642",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Arod Lake State Fish and Wildlife Area",
+   "ref": "US-12818",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39754321",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Bearpaw Lake State Fish and Wildlife Area",
+   "ref": "US-12819",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39754101",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Big Pine State Fish and Wildlife Area",
+   "ref": "US-12820",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753804",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Big Rock State Fish and Wildlife Area",
+   "ref": "US-12821",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753822",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Big Horn State Fish and Wildlife Area",
+   "ref": "US-12822",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39754401",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Bonfield State Fish and Wildlife Area",
+   "ref": "US-12823",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753826",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Boulder Forks State Fish and Wildlife Area",
+   "ref": "US-12824",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753810",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Bratten State Fish and Wildlife Area",
+   "ref": "US-12825",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "FISHMT :: FAS Detail",
+    "source": "https://myfwp.mt.gov/fishMT/fas/39754193"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Brown's Lake State Fish and Wildlife Area",
+   "ref": "US-12826",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Brown's Lake State Fish and Wildlife Area'. Page: 'FISH, WILDLIFE & PARKS'."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753504",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Brownes Lake State Fish and Wildlife Area",
+   "ref": "US-12827",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753828",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Buffalo Jump State Fish and Wildlife Area",
+   "ref": "US-12847",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753684",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Bynum Reservoir State Fish and Wildlife Area",
+   "ref": "US-12849",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753836",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Captain Clark State Fish and Wildlife Area",
+   "ref": "US-12850",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753838",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Castle Rock State Fish and Wildlife Area",
+   "ref": "US-12851",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39754131",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Chief Looking Glass State Fish and Wildlife Area",
+   "ref": "US-12852",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39754449",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Clearwater Crossing State Fish and Wildlife Area",
+   "ref": "US-12853",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753840",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Cliff Swallow State Fish and Wildlife Area",
+   "ref": "US-12854",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39754309",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Cole Ponds State Fish and Wildlife Area",
+   "ref": "US-12855",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "FISHMT :: FAS Detail",
+    "source": "https://myfwp.mt.gov/fishMT/fas/39754247"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Corrick’s River Bend State Fish and Wildlife Area",
+   "ref": "US-12856",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Corrick’s River Bend State Fish and Wildlife Area'. Page: 'FISH, WILDLIFE & PARKS'."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753704",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Craig State Fish and Wildlife Area",
+   "ref": "US-12857",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753414",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Dailey Lake State Fish and Wildlife Area",
+   "ref": "US-12860",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753422",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Dan Bailey State Fish and Wildlife Area",
+   "ref": "US-12861",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39754263",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Deadman's Basin State Fish and Wildlife Area",
+   "ref": "US-12862",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753706",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Dearborn State Fish and Wildlife Area",
+   "ref": "US-12863",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753534",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Ennis State Fish and Wildlife Area",
+   "ref": "US-12864",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753674",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Eureka Reservoir State Fish and Wildlife Area",
+   "ref": "US-12865",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39754383",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Fallon Bridge State Fish and Wildlife Area",
+   "ref": "US-12866",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39754407",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Far West State Fish and Wildlife Area",
+   "ref": "US-12867",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753538",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Fishtrap Creek State Fish and Wildlife Area",
+   "ref": "US-12868",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39754155",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Forest Grove State Fish and Wildlife Area",
+   "ref": "US-12869",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39754159",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Forks State Fish and Wildlife Area",
+   "ref": "US-12871",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "FISHMT :: FAS Detail",
+    "source": "https://myfwp.mt.gov/fishMT/fas/39753842"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "General Custer State Fish and Wildlife Area",
+   "ref": "US-12872",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'General Custer State Fish and Wildlife Area'. Page: 'FISH, WILDLIFE & PARKS'."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39754325",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Glasgow Base Pond State Fish and Wildlife Area",
+   "ref": "US-12873",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753546",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Glen State Fish and Wildlife Area",
+   "ref": "US-12874",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39754577",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Grant Marsh State Fish and Wildlife Area",
+   "ref": "US-12875",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753844",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Grey Bear State Fish and Wildlife Area",
+   "ref": "US-12876",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "FISHMT :: FAS Detail",
+    "source": "https://myfwp.mt.gov/fishMT/fas/39753468"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Grey Cliff State Fish and Wildlife Area",
+   "ref": "US-12877",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Grey Cliff State Fish and Wildlife Area'. Page: 'FISH, WILDLIFE & PARKS'."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "FISHMT :: FAS Detail",
+    "source": "https://myfwp.mt.gov/fishMT/fas/39754135"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Hannon Memorial State Fish and Wildlife Area",
+   "ref": "US-12878",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Hannon Memorial State Fish and Wildlife Area'. Page: 'FISH, WILDLIFE & PARKS'."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "FISHMT :: FAS Detail",
+    "source": "https://myfwp.mt.gov/fishMT/fas/39754115"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Harper Lake State Fish and Wildlife Area",
+   "ref": "US-12879",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Harper Lake State Fish and Wildlife Area'. Page: 'FISH, WILDLIFE & PARKS'."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753406",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Harrison Lake State Fish and Wildlife Area",
+   "ref": "US-12880",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "FISHMT :: FAS Detail",
+    "source": "https://myfwp.mt.gov/fishMT/fas/39754161"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Harry Morgan State Fish and Wildlife Area",
+   "ref": "US-12882",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Harry Morgan State Fish and Wildlife Area'. Page: 'FISH, WILDLIFE & PARKS'."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753848",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Horsethief Station State Fish and Wildlife Area",
+   "ref": "US-12883",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753850",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Indian Fort State Fish and Wildlife Area",
+   "ref": "US-12884",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39754381",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Intake Dam State Fish and Wildlife Area",
+   "ref": "US-12885",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39754499",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Island Lake State Fish and Wildlife Area",
+   "ref": "US-12886",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753710",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Lichen Cliff State Fish and Wildlife Area",
+   "ref": "US-12887",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "FISHMT :: FAS Detail",
+    "source": "https://myfwp.mt.gov/fishMT/fas/39753564"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Loch Leven State Fish and Wildlife Area",
+   "ref": "US-12888",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Loch Leven State Fish and Wildlife Area'. Page: 'FISH, WILDLIFE & PARKS'."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753424",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Maidenrock State Fish and Wildlife Area",
+   "ref": "US-12889",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753860",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Mallard's Landing State Fish and Wildlife Area",
+   "ref": "US-12890",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753566",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Mallard's Rest State Fish and Wildlife Area",
+   "ref": "US-12891",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753862",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Manuel Lisa State Fish and Wildlife Area",
+   "ref": "US-12892",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753678",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Martinsdale Reservoir State Fish and Wildlife Area",
+   "ref": "US-12893",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39754181",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Meadow Lake State Fish and Wildlife Area",
+   "ref": "US-12894",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SHARED_PAGE",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "2 parks of the area list this page",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Meadow Lake State Fish and Wildlife Area",
+   "ref": "US-12894",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "2 parks use this page: US-12894, US-12896."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753694",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Mid Canon State Fish and Wildlife Area",
+   "ref": "US-12895",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39754181",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Monture Creek State Fish and Wildlife Area",
+   "ref": "US-12896",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SHARED_PAGE",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "2 parks of the area list this page",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Monture Creek State Fish and Wildlife Area",
+   "ref": "US-12896",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "2 parks use this page: US-12896, US-12894."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753864",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Moraine State Fish and Wildlife Area",
+   "ref": "US-12897",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753712",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Mountain Palace State Fish and Wildlife Area",
+   "ref": "US-12898",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39754391",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Myers Bridge State Fish and Wildlife Area",
+   "ref": "US-12899",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39754461",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Newlan Creek Reservoir State Fish and Wildlife Area",
+   "ref": "US-12900",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753690",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Nilan Reservoir State Fish and Wildlife Area",
+   "ref": "US-12901",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "FISHMT :: FAS Detail",
+    "source": "https://myfwp.mt.gov/fishMT/fas/39754245"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Ninemile Prairie State Fish and Wildlife Area",
+   "ref": "US-12903",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Ninemile Prairie State Fish and Wildlife Area'. Page: 'FISH, WILDLIFE & PARKS'."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753854",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Otter Creek State Fish and Wildlife Area",
+   "ref": "US-12904",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753866",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Pelican State Fish and Wildlife Area",
+   "ref": "US-12905",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753672",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Pelican Point State Fish and Wildlife Area",
+   "ref": "US-12906",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753624",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Pishkin Reservoir State Fish and Wildlife Area",
+   "ref": "US-12907",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753750",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Prewitt Creek State Fish and Wildlife Area",
+   "ref": "US-12908",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753714",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Prickly Pear State Fish and Wildlife Area",
+   "ref": "US-12909",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "FISHMT :: FAS Detail",
+    "source": "https://myfwp.mt.gov/fishMT/fas/39753440"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Raynold's Pass State Fish and Wildlife Area",
+   "ref": "US-12910",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Raynold's Pass State Fish and Wildlife Area'. Page: 'FISH, WILDLIFE & PARKS'."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39754125",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "River Junction State Fish and Wildlife Area",
+   "ref": "US-12911",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39754327",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Rock Creek State Fish and Wildlife Area",
+   "ref": "US-12912",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39754423",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Rosebud East State Fish and Wildlife Area",
+   "ref": "US-12913",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753872",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Rosebud Isle State Fish and Wildlife Area",
+   "ref": "US-12914",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "FISHMT :: FAS Detail",
+    "source": "https://myfwp.mt.gov/fishMT/fas/39754195"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Russell Gates Memorial State Fish and Wildlife Area",
+   "ref": "US-12915",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Russell Gates Memorial State Fish and Wildlife Area'. Page: 'FISH, WILDLIFE & PARKS'."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753438",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Salmon Fly State Fish and Wildlife Area",
+   "ref": "US-12916",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753808",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Selkirk State Fish and Wildlife Area",
+   "ref": "US-12917",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
   },
   {
    "area": "US-MT",
@@ -154,7 +4196,7 @@
    "first_seen": "2026-11-19",
    "found_by": "Fable, batch 03c",
    "how_sure": "fairly sure",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "name": "Seven Sisters State Fish and Wildlife Area",
    "ref": "US-12918",
    "settled": {
@@ -165,9 +4207,744 @@
    },
    "shows_now": "outline 8 ac (was 1,554)",
    "status": "open",
-   "tried": [],
+   "tried": [
+    {
+     "by": "park page reader",
+     "date": "2026-11-20",
+     "quote": "https://myfwp.mt.gov/fishMT/fas/39754581",
+     "result": "script-built"
+    }
+   ],
    "wants": [],
    "why": "moved off the wildlife area onto the fishing access site today; read it in the release packet"
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39754581",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Seven Sisters State Fish and Wildlife Area",
+   "ref": "US-12918",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39754621",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Snowden Bridge State Fish and Wildlife Area",
+   "ref": "US-12919",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39754405",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "South Sandstone State Fish and Wildlife Area",
+   "ref": "US-12920",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753720",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Spite Hill State Fish and Wildlife Area",
+   "ref": "US-12921",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753722",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Stickney Creek State Fish and Wildlife Area",
+   "ref": "US-12922",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39754543",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Stuart Mill Bay State Fish and Wildlife Area",
+   "ref": "US-12923",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753874",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Swinging Bridge State Fish and Wildlife Area",
+   "ref": "US-12924",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753904",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Thoreau State Beach",
+   "ref": "US-12925",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753572",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Tony Schonen State Beach",
+   "ref": "US-12926",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "FISHMT :: FAS Detail",
+    "source": "https://myfwp.mt.gov/fishMT/fas/39754387"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Twelve Mile Dam State Fish and Wildlife Area",
+   "ref": "US-12927",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Twelve Mile Dam State Fish and Wildlife Area'. Page: 'FISH, WILDLIFE & PARKS'."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753876",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Two Leggins State Fish and Wildlife Area",
+   "ref": "US-12928",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "FISHMT :: FAS Detail",
+    "source": "https://myfwp.mt.gov/fishMT/fas/39754103"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Upsata Lake State Fish and Wildlife Area",
+   "ref": "US-12929",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Upsata Lake State Fish and Wildlife Area'. Page: 'FISH, WILDLIFE & PARKS'."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753456",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Valley Garden State Fish and Wildlife Area",
+   "ref": "US-12930",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753404",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Varney Bridge State Fish and Wildlife Area",
+   "ref": "US-12931",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753858",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Voyagers Rest State Fish and Wildlife Area",
+   "ref": "US-12932",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753878",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Water Birch State Fish and Wildlife Area",
+   "ref": "US-12933",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753880",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Whitebird State Fish and Wildlife Area",
+   "ref": "US-12934",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753628",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Willow Creek Reservoir State Fish and Wildlife Area",
+   "ref": "US-12935",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "SCRIPT_BUILT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fishMT/fas/39753728",
+    "source": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Wolf Creek Bridge State Fish and Wildlife Area",
+   "ref": "US-12936",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "script-built",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "The page builds itself in the browser. For a person or a browser run."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "FISHMT :: FAS Detail",
+    "source": "https://myfwp.mt.gov/fishMT/fas/39753472"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "York's Islands State Fish and Wildlife Area",
+   "ref": "US-12937",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'York's Islands State Fish and Wildlife Area'. Page: 'FISH, WILDLIFE & PARKS'."
+  },
+  {
+   "area": "US-MT",
+   "code": "CLOSED_OR_MOVED_WORDS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "renamed it Fort Clagett",
+    "source": "https://fwp.mt.gov/stateparks/judith-landing"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Judith Landing State Park",
+   "ref": "US-12941",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "renamed it Fort Clagett"
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Judith Landing State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/stateparks/judith-landing"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Judith Landing State Park",
+   "ref": "US-12941",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Judith Landing State Park'. Page: 'STATE PARKS MENU'."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Ackley Lake State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/stateparks/ackley-lake-state-park"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Ackley Lake State Park",
+   "ref": "US-2556",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Ackley Lake State Park'. Page: 'STATE PARKS MENU'."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Anaconda Smoke Stack State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/stateparks/anaconda-smoke-stack"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Anaconda Smelter Stack State Park",
+   "ref": "US-2557",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Anaconda Smelter Stack State Park'. Page: 'STATE PARKS MENU'."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Bannack State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/stateparks/bannack-state-park"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Bannack State Park",
+   "ref": "US-2558",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Bannack State Park'. Page: 'STATE PARKS MENU'."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Beaverhead Rock State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/stateparks/beaverhead-rock"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Beaverhead Rock State Park",
+   "ref": "US-2559",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Beaverhead Rock State Park'. Page: 'STATE PARKS MENU'."
   },
   {
    "area": "US-MT",
@@ -180,7 +4957,7 @@
    "first_seen": "2026-11-19",
    "found_by": "hand-off 04 job F",
    "how_sure": "fairly sure",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "name": "Beaverhead Rock State Park",
    "ref": "US-2559",
    "settled": {
@@ -191,11 +4968,2734 @@
    },
    "shows_now": "outline 84 ac",
    "status": "open",
-   "tried": [],
+   "tried": [
+    {
+     "by": "park page reader",
+     "date": "2026-11-20",
+     "quote": "Beaverhead Rock State Park | Montana FWP",
+     "result": "read"
+    }
+   ],
    "wants": [
     "official size"
    ],
    "why": "only one outside pass found the official figure (82 ac)"
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Beavertail Hill State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/stateparks/beavertail-hill"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Beavertail Hill State Park",
+   "ref": "US-2560",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Beavertail Hill State Park'. Page: 'STATE PARKS MENU'."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Big Arm | Montana FWP",
+    "source": "https://fwp.mt.gov/big-arm"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Big Arm State Park",
+   "ref": "US-2561",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Big Arm State Park'. Page: 'Big Arm'."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Black Sandy State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/black-sandy"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Black Sandy State Park",
+   "ref": "US-2562",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Black Sandy State Park'. Page: 'Black Sandy State Park'."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Brush Lake State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/brush-lake"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Brush Lake State Park",
+   "ref": "US-2563",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Brush Lake State Park'. Page: 'Brush Lake State Park'."
+  },
+  {
+   "area": "US-MT",
+   "code": "CLOSED_OR_MOVED_WORDS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "deeded to him through the federal Indian Allotment Act",
+    "source": "https://fwp.mt.gov/stateparks/chief-plenty-coups/"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Chief Plenty Coups State Park",
+   "ref": "US-2564",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "deeded to him through the federal Indian Allotment Act"
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Chief Plenty Coups State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/stateparks/chief-plenty-coups/"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Chief Plenty Coups State Park",
+   "ref": "US-2564",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Chief Plenty Coups State Park'. Page: 'STATE PARKS MENU'."
+  },
+  {
+   "area": "US-MT",
+   "code": "OFFICE_ADDRESS_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Chief Plenty Coups State Park PO Box 100 1 Edgar/Pryor Road Pryor, MT 59066 Phone: 406-252-1289",
+    "source": "https://fwp.mt.gov/stateparks/chief-plenty-coups/"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Chief Plenty Coups State Park",
+   "ref": "US-2564",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "The only address on the page is the office, not the park."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Clark&apos;s Lookout State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/stateparks/clarks-lookout/"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Clarks Lookout State Park",
+   "ref": "US-2565",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Clarks Lookout State Park'. Page: 'STATE PARKS MENU'."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Cooney State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/stateparks/cooney"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Cooney Reservoir State Park",
+   "ref": "US-2566",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Cooney Reservoir State Park'. Page: 'STATE PARKS MENU'."
+  },
+  {
+   "area": "US-MT",
+   "code": "CLOSED_OR_MOVED_WORDS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "ceded ownership of most their aboriginal territories – more than 20 million acres -- to the United States, setting aside the Flathead Reservation, but reserved the perpetual right to use ceded la",
+    "source": "https://fwp.mt.gov/stateparks/council-grove"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Council Grove State Park",
+   "ref": "US-2567",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "ceded ownership of most their aboriginal territories – more than 20 million acres -- to the United States, setting aside the Flathead Reservation, but reserved the perpetual right to use ceded la"
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Council Grove State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/stateparks/council-grove"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Council Grove State Park",
+   "ref": "US-2567",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Council Grove State Park'. Page: 'STATE PARKS MENU'."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Elkhorn State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/stateparks/elkhorn"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Elkhorn State Park",
+   "ref": "US-2568",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Elkhorn State Park'. Page: 'STATE PARKS MENU'."
+  },
+  {
+   "area": "US-MT",
+   "code": "OFFICE_ADDRESS_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "FWP Region 3 Headquarters 1400 South 19th Avenue Bozeman, MT 59718 Phone: (406) 577-7894 Email: mark.filonczuk@mt.gov",
+    "source": "https://fwp.mt.gov/stateparks/elkhorn"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Elkhorn State Park",
+   "ref": "US-2568",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "The only address on the page is the office, not the park."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Finley Point | Montana FWP",
+    "source": "https://fwp.mt.gov/finley-point"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Finley Point State Park",
+   "ref": "US-2569",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Finley Point State Park'. Page: 'Finley Point'."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "First Peoples Buffalo Jump | Montana FWP",
+    "source": "https://fwp.mt.gov/first-peoples-buffalo-jump"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "First Peoples Buffalo Jump State Park",
+   "ref": "US-2570",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'First Peoples Buffalo Jump State Park'. Page: 'First Peoples Buffalo Jump'."
+  },
+  {
+   "area": "US-MT",
+   "code": "OFFICE_ADDRESS_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "First Peoples Buffalo Jump State Park PO Box 109 Ulm, MT 59485 Phone: 406-866-2217 Email: ccarlson-thompson@mt.gov",
+    "source": "https://fwp.mt.gov/first-peoples-buffalo-jump"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "First Peoples Buffalo Jump State Park",
+   "ref": "US-2570",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "The only address on the page is the office, not the park."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Fish Creek State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/stateparks/fish-creek"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Fish Creek State Park",
+   "ref": "US-2571",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Fish Creek State Park'. Page: 'STATE PARKS MENU'."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Fort Owen State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/stateparks/fort-owen"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Fort Owen State Park",
+   "ref": "US-2572",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Fort Owen State Park'. Page: 'STATE PARKS MENU'."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Frenchtown Pond State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/stateparks/frenchtown-pond"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Frenchtown Pond State Park",
+   "ref": "US-2573",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Frenchtown Pond State Park'. Page: 'STATE PARKS MENU'."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Giant Springs State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/stateparks/giant-springs/"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Giant Springs State Park",
+   "ref": "US-2574",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Giant Springs State Park'. Page: 'STATE PARKS MENU'."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Greycliff Prairie Dog Town State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/stateparks/greycliff-prairie-dog-town"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Grey Cliff Prairie Dog State Park",
+   "ref": "US-2576",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Grey Cliff Prairie Dog State Park'. Page: 'STATE PARKS MENU'."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Lake Elmo State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/stateparks/lake-elmo"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Lake Elmo State Park",
+   "ref": "US-2578",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Lake Elmo State Park'. Page: 'STATE PARKS MENU'."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Lake Mary Ronan State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/lake-mary-ronan"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Lake Mary Ronan State Park",
+   "ref": "US-2579",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Lake Mary Ronan State Park'. Page: 'Lake Mary Ronan State Park'."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Les Mason State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/les-mason"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Les Mason State Park",
+   "ref": "US-2580",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Les Mason State Park'. Page: 'Les Mason State Park'."
+  },
+  {
+   "area": "US-MT",
+   "code": "OFFICE_ADDRESS_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "c/o FWP Region 1 Headquarters 490 North Meridian Rd Kalispell, MT 59901 Phone: 406-752-5501 Email: dbennetts@mt.gov",
+    "source": "https://fwp.mt.gov/les-mason"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Les Mason State Park",
+   "ref": "US-2580",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "The only address on the page is the office, not the park."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Lewis & Clark Caverns State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/stateparks/lewis-and-clark-caverns"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Lewis and Clark Caverns State Park",
+   "ref": "US-2581",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Lewis and Clark Caverns State Park'. Page: 'STATE PARKS MENU'."
+  },
+  {
+   "area": "US-MT",
+   "code": "OFFICE_ADDRESS_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Lewis & Clark Caverns State Park PO Box 489 Whitehall, MT 59759 Phone: 406-287-3541 Email: Lewis&ClarkCavernsStatePark@mt.gov",
+    "source": "https://fwp.mt.gov/stateparks/lewis-and-clark-caverns"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Lewis and Clark Caverns State Park",
+   "ref": "US-2581",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "The only address on the page is the office, not the park."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Logan State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/logan"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Logan State Park",
+   "ref": "US-2582",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Logan State Park'. Page: 'Logan State Park'."
+  },
+  {
+   "area": "US-MT",
+   "code": "OFFICE_ADDRESS_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "c/o FWP Region 1 Headquarters 490 North Meridian Rd Kalispell, MT 59901 Phone: April 15 - Oct 15: 406-293-7190",
+    "source": "https://fwp.mt.gov/logan"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Logan State Park",
+   "ref": "US-2582",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "The only address on the page is the office, not the park."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Lone Pine State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/stateparks/lone-pine/"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Lone Pine State Park",
+   "ref": "US-2583",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Lone Pine State Park'. Page: 'STATE PARKS MENU'."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Lost Creek State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/stateparks/lost-creek"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Lost Creek State Park",
+   "ref": "US-2584",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Lost Creek State Park'. Page: 'STATE PARKS MENU'."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Madison Buffalo Jump State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/stateparks/madison-buffalo-jump"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Madison Buffalo Jump State Park",
+   "ref": "US-2585",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Madison Buffalo Jump State Park'. Page: 'STATE PARKS MENU'."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Makoshika State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/stateparks/makoshika"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Makoshika State Park",
+   "ref": "US-2586",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Makoshika State Park'. Page: 'STATE PARKS MENU'."
+  },
+  {
+   "area": "US-MT",
+   "code": "AGENCY_HOME_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754646",
+    "source": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Marias River Wildlife Management Area",
+   "ref": "US-2587",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "POTA's link is a list of parks, not this park's page. Nothing was read from it."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Medicine Rocks State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/stateparks/medicine-rocks/"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Medicine Rocks State Park",
+   "ref": "US-2588",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Medicine Rocks State Park'. Page: 'STATE PARKS MENU'."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Missouri Headwaters State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/stateparks/missouri-headwaters/"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Missouri Headwaters State Park",
+   "ref": "US-2589",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Missouri Headwaters State Park'. Page: 'STATE PARKS MENU'."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Painted Rocks State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/stateparks/painted-rocks"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Painted Rocks State Park",
+   "ref": "US-2590",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Painted Rocks State Park'. Page: 'STATE PARKS MENU'."
+  },
+  {
+   "area": "US-MT",
+   "code": "CLOSED_OR_MOVED_WORDS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "gift shop, bathrooms, a meeting room, and friendly staff to answer your questions. The park is 23 acres in size and is approximately 3,500 feet in elevation",
+    "source": "https://fwp.mt.gov/stateparks/pictograph-cave"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Pictograph Cave State Park",
+   "ref": "US-2591",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "gift shop, bathrooms, a meeting room, and friendly staff to answer your questions. The park is 23 acres in size and is approximately 3,500 feet in elevation"
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Pictograph Cave State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/stateparks/pictograph-cave"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Pictograph Cave State Park",
+   "ref": "US-2591",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Pictograph Cave State Park'. Page: 'STATE PARKS MENU'."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Pirogue Island State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/stateparks/pirogue-island"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Pirogue Island State Park",
+   "ref": "US-2592",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Pirogue Island State Park'. Page: 'STATE PARKS MENU'."
+  },
+  {
+   "area": "US-MT",
+   "code": "OFFICE_ADDRESS_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Pirogue Island State Park 352 I-94 Business Loop PO Box 1630 Miles City, MT 5930 Phone: 406-234-0919 Email: garrett.jericoff@mt.gov What About Bats?",
+    "source": "https://fwp.mt.gov/stateparks/pirogue-island"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Pirogue Island State Park",
+   "ref": "US-2592",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "The only address on the page is the office, not the park."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Placid Lake State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/placid-lake"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Placid Lake State Park",
+   "ref": "US-2593",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Placid Lake State Park'. Page: 'Placid Lake State Park'."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Rosebud Battlefield State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/stateparks/rosebud-battlefield/"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Rosebud Battlefield State Park",
+   "ref": "US-2594",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Rosebud Battlefield State Park'. Page: 'STATE PARKS MENU'."
+  },
+  {
+   "area": "US-MT",
+   "code": "OFFICE_ADDRESS_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "c/o Tongue River Reservoir PO Box 8 Decker, MT 59025 Phone: 406-757-2298 Email: raymond.schell@mt.gov",
+    "source": "https://fwp.mt.gov/stateparks/rosebud-battlefield/"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Rosebud Battlefield State Park",
+   "ref": "US-2594",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "The only address on the page is the office, not the park."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Salmon Lake State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/salmon-lake"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Salmon Lake State Park",
+   "ref": "US-2595",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Salmon Lake State Park'. Page: 'Salmon Lake State Park'."
+  },
+  {
+   "area": "US-MT",
+   "code": "OFFICE_ADDRESS_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "c/o FWP Region 2 Headquarters 3201 Spurgin Rd Missoula, MT 59804 Phone: May 1 - Sept 30: Direct line to the park",
+    "source": "https://fwp.mt.gov/salmon-lake"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Salmon Lake State Park",
+   "ref": "US-2595",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "The only address on the page is the office, not the park."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Sluice Boxes State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/stateparks/sluice-boxes/"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Sluice Boxes State Park",
+   "ref": "US-2596",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Sluice Boxes State Park'. Page: 'STATE PARKS MENU'."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Smith River State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/smith-river"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Smith River State Park",
+   "ref": "US-2597",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Smith River State Park'. Page: 'Smith River State Park'."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Spring Meadow Lake State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/stateparks/spring-meadow-state-park"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Spring Meadow Lake State Park",
+   "ref": "US-2598",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Spring Meadow Lake State Park'. Page: 'STATE PARKS MENU'."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Thompson Falls State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/thompson-falls"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Thompson Falls State Park",
+   "ref": "US-2599",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Thompson Falls State Park'. Page: 'Thompson Falls State Park'."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Tongue River Reservoir State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/stateparks/tongue-river-reservoir/"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Tongue River Reservoir State Park",
+   "ref": "US-2600",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Tongue River Reservoir State Park'. Page: 'STATE PARKS MENU'."
+  },
+  {
+   "area": "US-MT",
+   "code": "OFFICE_ADDRESS_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Tongue River Reservoir State Park PO Box 8 Decker, MT 59025 Phone: 406-757-2298 Email: raymond.schell@mt.gov",
+    "source": "https://fwp.mt.gov/stateparks/tongue-river-reservoir/"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Tongue River Reservoir State Park",
+   "ref": "US-2600",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "The only address on the page is the office, not the park."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Tower Rock State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/stateparks/tower-rock"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Tower Rock State Park",
+   "ref": "US-2601",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Tower Rock State Park'. Page: 'STATE PARKS MENU'."
+  },
+  {
+   "area": "US-MT",
+   "code": "OFFICE_ADDRESS_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "c/o First Peoples Buffalo Jump State Park PO Box 109 Ulm, MT 59485 Phone: 406-866-2217 c/o First Peoples Buffalo Jump State Park Email: ccarlson-thompson@mt.gov",
+    "source": "https://fwp.mt.gov/stateparks/tower-rock"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Tower Rock State Park",
+   "ref": "US-2601",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "The only address on the page is the office, not the park."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Travelers&apos; Rest State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/stateparks/travelers-rest/"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Travelers' Rest State Park",
+   "ref": "US-2602",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Travelers' Rest State Park'. Page: 'STATE PARKS MENU'."
+  },
+  {
+   "area": "US-MT",
+   "code": "OFFICE_ADDRESS_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Travelers' Rest State Park PO Box 995 Lolo, MT 59847 Phone: 406-273-4253 Email: jessica.martin@mt.gov",
+    "source": "https://fwp.mt.gov/stateparks/travelers-rest/"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Travelers' Rest State Park",
+   "ref": "US-2602",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "The only address on the page is the office, not the park."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Wayfarers | Montana FWP",
+    "source": "https://fwp.mt.gov/wayfarers"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Wayfarers State Park",
+   "ref": "US-2603",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Wayfarers State Park'. Page: 'Wayfarers | Montana FWP'."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "West Shore | Montana FWP",
+    "source": "https://fwp.mt.gov/west-shore"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "West Shore State Park",
+   "ref": "US-2604",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'West Shore State Park'. Page: 'West Shore'."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Whitefish Lake State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/stateparks/whitefish-lake"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Whitefish Lake State Park",
+   "ref": "US-2605",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Whitefish Lake State Park'. Page: 'STATE PARKS MENU'."
+  },
+  {
+   "area": "US-MT",
+   "code": "OFFICE_ADDRESS_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "c/o FWP Region 1 Headquarters 490 North Meridian Rd Kalispell, MT 59901 Phone: April 15-Oct. 15: 406-862-3991",
+    "source": "https://fwp.mt.gov/stateparks/whitefish-lake"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Whitefish Lake State Park",
+   "ref": "US-2605",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "The only address on the page is the office, not the park."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Wild Horse Island | Montana FWP",
+    "source": "https://fwp.mt.gov/wild-horse-island"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Wild Horse Island State Park",
+   "ref": "US-2606",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Wild Horse Island State Park'. Page: 'Wild Horse Island'."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Yellow Bay | Montana FWP",
+    "source": "https://fwp.mt.gov/yellow-bay"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Yellow Bay State Park",
+   "ref": "US-2607",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Yellow Bay State Park'. Page: 'Yellow Bay'."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Thompson Chain Of Lakes State Park | Montana FWP",
+    "source": "https://fwp.mt.gov/stateparks/thompson-chain-of-lakes"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Thompson Chain of Lakes State Park",
+   "ref": "US-3387",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Thompson Chain of Lakes State Park'. Page: 'STATE PARKS MENU'."
+  },
+  {
+   "area": "US-MT",
+   "code": "OFFICE_ADDRESS_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "c/o FWP Region 1 Headquarters 490 N Meridian Rd Kalispell, MT 59901 Phone: Lower Thompson Lake",
+    "source": "https://fwp.mt.gov/stateparks/thompson-chain-of-lakes"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Thompson Chain of Lakes State Park",
+   "ref": "US-3387",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "The only address on the page is the office, not the park."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Ice Age Floods National Geologic Trail (U.S. National Park Service)",
+    "source": "https://www.nps.gov/iafl/index.htm"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Ice Age Floods National Geologic Trail",
+   "ref": "US-3424",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Ice Age Floods National Geologic Trail'. Page: 'Ice Age Floods National Geologic Trail • WA,OR,ID,MT'."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Pompeys Pillar National Monument and Visitor Center - Montana | Bureau of Land Management",
+    "source": "https://www.blm.gov/visit/pompeys-pillar-national-monument"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Pompeys Pillar National Monument",
+   "ref": "US-4548",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Pompeys Pillar National Monument'. Page: 'Pompeys Pillar National Monument and Visitor Center'."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Lewis & Clark National Historic Trail (U.S. National Park Service)",
+    "source": "https://www.nps.gov/lecl/index.htm"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Lewis and Clark National Historic Trail",
+   "ref": "US-4572",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Lewis and Clark National Historic Trail'. Page: 'Lewis & Clark National Historic Trail • IA,ID,IL,IN,KS,KY,MO,MT,NE,ND,OH,OR,PA,SD,WA,WV'."
+  },
+  {
+   "area": "US-MT",
+   "code": "LINK_MOVED",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://mca.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html",
+    "source": "https://mca.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Clearwater State Forest",
+   "ref": "US-4844",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "The link now lands on mca.legmt.gov."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "77-5-102. Designation of state forests, MCA",
+    "source": "https://mca.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Clearwater State Forest",
+   "ref": "US-4844",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Clearwater State Forest'. Page: 'Montana Code Annotated 2025'."
+  },
+  {
+   "area": "US-MT",
+   "code": "SHARED_PAGE",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "7 parks of the area list this page",
+    "source": "https://mca.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Clearwater State Forest",
+   "ref": "US-4844",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "7 parks use this page: US-4844, US-4845, US-4846, US-4848, US-4849, US-4850, US-4851."
+  },
+  {
+   "area": "US-MT",
+   "code": "LINK_MOVED",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://mca.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html",
+    "source": "https://mca.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Coal Creek State Forest",
+   "ref": "US-4845",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "The link now lands on mca.legmt.gov."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "77-5-102. Designation of state forests, MCA",
+    "source": "https://mca.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Coal Creek State Forest",
+   "ref": "US-4845",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Coal Creek State Forest'. Page: 'Montana Code Annotated 2025'."
+  },
+  {
+   "area": "US-MT",
+   "code": "SHARED_PAGE",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "7 parks of the area list this page",
+    "source": "https://mca.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Coal Creek State Forest",
+   "ref": "US-4845",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "7 parks use this page: US-4845, US-4844, US-4846, US-4848, US-4849, US-4850, US-4851."
+  },
+  {
+   "area": "US-MT",
+   "code": "LINK_MOVED",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://mca.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html",
+    "source": "https://mca.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Lincoln State Forest",
+   "ref": "US-4846",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "The link now lands on mca.legmt.gov."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "77-5-102. Designation of state forests, MCA",
+    "source": "https://mca.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Lincoln State Forest",
+   "ref": "US-4846",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Lincoln State Forest'. Page: 'Montana Code Annotated 2025'."
+  },
+  {
+   "area": "US-MT",
+   "code": "SHARED_PAGE",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "7 parks of the area list this page",
+    "source": "https://mca.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Lincoln State Forest",
+   "ref": "US-4846",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "7 parks use this page: US-4846, US-4844, US-4845, US-4848, US-4849, US-4850, US-4851."
+  },
+  {
+   "area": "US-MT",
+   "code": "LINK_MOVED",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://mca.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html",
+    "source": "https://mca.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Stillwater State Forest",
+   "ref": "US-4848",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "The link now lands on mca.legmt.gov."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "77-5-102. Designation of state forests, MCA",
+    "source": "https://mca.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Stillwater State Forest",
+   "ref": "US-4848",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Stillwater State Forest'. Page: 'Montana Code Annotated 2025'."
+  },
+  {
+   "area": "US-MT",
+   "code": "SHARED_PAGE",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "7 parks of the area list this page",
+    "source": "https://mca.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Stillwater State Forest",
+   "ref": "US-4848",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "7 parks use this page: US-4848, US-4844, US-4845, US-4846, US-4849, US-4850, US-4851."
+  },
+  {
+   "area": "US-MT",
+   "code": "LINK_MOVED",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://mca.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html",
+    "source": "https://mca.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Sula State Forest",
+   "ref": "US-4849",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "The link now lands on mca.legmt.gov."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "77-5-102. Designation of state forests, MCA",
+    "source": "https://mca.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Sula State Forest",
+   "ref": "US-4849",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Sula State Forest'. Page: 'Montana Code Annotated 2025'."
+  },
+  {
+   "area": "US-MT",
+   "code": "SHARED_PAGE",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "7 parks of the area list this page",
+    "source": "https://mca.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Sula State Forest",
+   "ref": "US-4849",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "7 parks use this page: US-4849, US-4844, US-4845, US-4846, US-4848, US-4850, US-4851."
+  },
+  {
+   "area": "US-MT",
+   "code": "LINK_MOVED",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://mca.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html",
+    "source": "https://mca.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Swan River State Forest",
+   "ref": "US-4850",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "The link now lands on mca.legmt.gov."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "77-5-102. Designation of state forests, MCA",
+    "source": "https://mca.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Swan River State Forest",
+   "ref": "US-4850",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Swan River State Forest'. Page: 'Montana Code Annotated 2025'."
+  },
+  {
+   "area": "US-MT",
+   "code": "SHARED_PAGE",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "7 parks of the area list this page",
+    "source": "https://mca.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Swan River State Forest",
+   "ref": "US-4850",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "7 parks use this page: US-4850, US-4844, US-4845, US-4846, US-4848, US-4849, US-4851."
+  },
+  {
+   "area": "US-MT",
+   "code": "LINK_MOVED",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://mca.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html",
+    "source": "https://mca.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Thompson River State Forest",
+   "ref": "US-4851",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "The link now lands on mca.legmt.gov."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "77-5-102. Designation of state forests, MCA",
+    "source": "https://mca.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Thompson River State Forest",
+   "ref": "US-4851",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Thompson River State Forest'. Page: 'Montana Code Annotated 2025'."
+  },
+  {
+   "area": "US-MT",
+   "code": "SHARED_PAGE",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "7 parks of the area list this page",
+    "source": "https://mca.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Thompson River State Forest",
+   "ref": "US-4851",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "7 parks use this page: US-4851, US-4844, US-4845, US-4846, US-4848, US-4849, US-4850."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Ear Mountain - Montana | Bureau of Land Management",
+    "source": "https://www.blm.gov/visit/ear-mountain"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Ear Mountain Wildlife Management Area",
+   "ref": "US-6441",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Ear Mountain Wildlife Management Area'. Page: 'Ear Mountain'."
+  },
+  {
+   "area": "US-MT",
+   "code": "OFFICE_ADDRESS_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Central Montana District Office Lewistown Field Office 920 NE Main St. Lewistown Montana 59457",
+    "source": "https://www.blm.gov/visit/ear-mountain"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Ear Mountain Wildlife Management Area",
+   "ref": "US-6441",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "The only address on the page is the Central Montana District Office Lewistown Field Office, not the park."
+  },
+  {
+   "area": "US-MT",
+   "code": "AGENCY_HOME_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634",
+    "source": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Freezeout Lake Wildlife Management Area",
+   "ref": "US-6442",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "a person"
+   ],
+   "why": "POTA's link is a list of parks, not this park's page. Nothing was read from it."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Lowry Bridge - Montana | Bureau of Land Management",
+    "source": "https://www.blm.gov/visit/lowry-bridge"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Lowry Bridge State Recreation Area",
+   "ref": "US-6443",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Lowry Bridge State Recreation Area'. Page: 'Lowry Bridge'."
+  },
+  {
+   "area": "US-MT",
+   "code": "NAME_DIFFERS",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Lee Metcalf Wilderness - Montana | Bureau of Land Management",
+    "source": "https://www.blm.gov/visit/lee-metcalf-wilderness"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Lee Metcalf BLM Wilderness Area",
+   "ref": "US-7990",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "POTA: 'Lee Metcalf BLM Wilderness Area'. Page: 'Lee Metcalf Wilderness'."
+  },
+  {
+   "area": "US-MT",
+   "code": "OFFICE_ADDRESS_ONLY",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Dillon Field Office 1005 Selway Drive Dillon Montana 59725",
+    "source": "https://www.blm.gov/visit/lee-metcalf-wilderness"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Lee Metcalf BLM Wilderness Area",
+   "ref": "US-7990",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "The only address on the page is the Dillon Field Office, not the park."
+  },
+  {
+   "area": "US-MT",
+   "code": "INSIDE_BIGGER_UNIT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "Established in 1921 on Tribal Trust lands, the refuge centers on the Ninepipe Reservoir and is managed as part of the Western Montana National Wildlife Refuge Complex.",
+    "source": "https://www.fws.gov/locations/ninepipe-national-wildlife-refuge"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Ninepipe National Wildlife Refuge",
+   "ref": "US-8002",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "The page says this place is within 'Western Montana National Wildlife Refuge'."
+  },
+  {
+   "area": "US-MT",
+   "code": "INSIDE_BIGGER_UNIT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "It is managed as part of the Western Montana National Wildlife Refuge Complex in cooperation with the Flathead Irrigation Project and the Confederated Salish and Kootenai Tribes.",
+    "source": "https://www.fws.gov/locations/pablo-national-wildlife-refuge"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Pablo National Wildlife Refuge",
+   "ref": "US-8003",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "The page says this place is within 'Western Montana National Wildlife Refuge'."
+  },
+  {
+   "area": "US-MT",
+   "code": "INSIDE_BIGGER_UNIT",
+   "evidence": {
+    "date": "2026-11-20",
+    "saw": "The refuge is managed as part of the Western Montana National Wildlife Refuge Complex by the Northwest Montana District.",
+    "source": "https://www.fws.gov/locations/swan-river-national-wildlife-refuge"
+   },
+   "first_seen": "2026-11-20",
+   "found_by": "park page reader",
+   "how_sure": "unsure",
+   "last_seen": "2026-11-20",
+   "name": "Swan River National Wildlife Refuge",
+   "ref": "US-8004",
+   "settled": {
+    "by": "",
+    "date": "",
+    "how": "",
+    "link": ""
+   },
+   "shows_now": "html",
+   "status": "open",
+   "tried": [],
+   "wants": [
+    "page facts"
+   ],
+   "why": "The page says this place is within 'Western Montana National Wildlife Refuge'."
   }
  ]
 }
