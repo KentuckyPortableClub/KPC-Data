@@ -1,2021 +1,2901 @@
 {
  "hosts": {
-  "www.fs.usda.gov": 1795231584.0821478
+  "www.fs.usda.gov": 1795274241.545044
  },
  "refused": {
+  "www.nevadawilderness.org": "2026-11-20",
   "doifwsnextprod.prod.acquia-sites.com": "2026-11-20",
-  "cms.nps.gov": "2026-11-20"
+  "www.ndow.org": "2026-11-20",
+  "www.outdoorsy.com": "2026-11-20"
  },
  "dead": {
-  "https://www.nps.gov/lecl/learn/management/statistics.htm": "2026-11-20",
-  "https://www.nps.gov/iafl/learn/management/statistics.htm": "2026-11-20",
-  "https://www.nps.gov/yell/learn/management/statistics.htm": "2026-11-20",
-  "https://www.blm.gov/visit/acton": "2026-11-20",
-  "https://www.nps.gov/grko/learn/management/statistics.htm": "2026-11-20",
-  "https://www.nps.gov/biho/learn/management/statistics.htm": "2026-11-20",
-  "https://www.nps.gov/fous/learn/management/statistics.htm": "2026-11-20",
-  "https://www.fws.gov/refuge/National_Bison_Range/Contact.html": "2026-11-20",
-  "https://www.fws.gov/mountain-prairie/refuges/mdl.php": "2026-11-20",
-  "https://fwp.mt.gov/hell-creek": "2026-11-20"
+  "https://www.nps.gov/olsp/learn/management/statistics.htm": "2026-11-20",
+  "https://www.nps.gov/cali/learn/management/statistics.htm": "2026-11-20",
+  "https://www.nps.gov/poex/learn/management/statistics.htm": "2026-11-20",
+  "https://www.nps.gov/lake/learn/management/statistics.htm": "2026-11-20",
+  "https://www.nps.gov/deva/learn/management/statistics.htm": "2026-11-20",
+  "https://www.nps.gov/tusk/learn/management/statistics.htm": "2026-11-20"
  },
  "read": {
-  "US-4572": {
-   "url": "https://www.nps.gov/lecl/index.htm",
-   "fingerprint": "6dbbab9c7ee3",
+  "US-4575": {
+   "url": "https://www.nps.gov/olsp/index.htm",
+   "fingerprint": "79cac124a795",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://www.nps.gov/lecl/index.htm"
+   "final": "https://www.nps.gov/olsp/index.htm"
   },
-  "US-0054": {
-   "url": "https://www.nps.gov/nepe/index.htm",
-   "fingerprint": "037a6cd1b9fa",
+  "US-4566": {
+   "url": "https://www.nps.gov/cali/index.htm",
+   "fingerprint": "0da4a664d7ff",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://www.nps.gov/nepe/index.htm"
+   "final": "https://www.nps.gov/cali/index.htm"
   },
-  "US-10529": {
-   "url": "https://www.blm.gov/visit/sundance-lodge-rec-area",
-   "fingerprint": "21909c0c7672",
+  "US-4578": {
+   "url": "https://www.nps.gov/poex/index.htm",
+   "fingerprint": "006a36cdded2",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://www.blm.gov/visit/sundance-lodge-rec-area"
+   "final": "https://www.nps.gov/poex/index.htm"
   },
-  "US-10528": {
-   "url": "https://www.blm.gov/visit/shepherd-ah-nei-srma",
-   "fingerprint": "b52ec70c5201",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://www.blm.gov/visit/shepherd-ah-nei-srma"
-  },
-  "US-2559": {
-   "url": "https://fwp.mt.gov/stateparks/beaverhead-rock",
-   "fingerprint": "777e3e894f76",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://fwp.mt.gov/stateparks/beaverhead-rock"
-  },
-  "US-3424": {
-   "url": "https://www.nps.gov/iafl/index.htm",
-   "fingerprint": "89f3a146dd0c",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://www.nps.gov/iafl/index.htm"
-  },
-  "US-4558": {
-   "url": "https://www.fs.usda.gov/managing-land/trails/cdt",
-   "fingerprint": "d3d2bc8c91fc",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://www.fs.usda.gov/trails/continental-divide-nst"
-  },
-  "US-4504": {
-   "url": "https://www.fs.usda.gov/hlcnf/",
+  "US-4391": {
+   "url": "https://www.fs.usda.gov/htnf/",
    "fingerprint": "e3b0c44298fc",
    "date": "2026-11-20",
    "kind": "resting",
-   "final": "https://www.fs.usda.gov/hlcnf/"
+   "final": "https://www.fs.usda.gov/htnf/"
   },
-  "US-0070": {
-   "url": "https://www.nps.gov/yell/index.htm",
-   "fingerprint": "fa3b70d539f9",
+  "US-9265": {
+   "url": "https://www.nevadawilderness.org/mormon_mountains_wilderness",
+   "fingerprint": "e3b0c44298fc",
+   "date": "2026-11-20",
+   "kind": "refused",
+   "final": "https://www.nevadawilderness.org/mormon_mountains_wilderness"
+  },
+  "US-0676": {
+   "url": "https://www.nps.gov/lake/index.htm",
+   "fingerprint": "a396b1f42f87",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://www.nps.gov/yell/index.htm"
+   "final": "https://www.nps.gov/lake/index.htm"
   },
-  "US-4563": {
-   "url": "https://www.fs.usda.gov/trails/pacific-northwest-nst",
+  "US-0021": {
+   "url": "https://www.nps.gov/deva/index.htm",
+   "fingerprint": "cbd2aff49f6a",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.nps.gov/deva/index.htm"
+  },
+  "US-2635": {
+   "url": "http://parks.nv.gov/parks/spring-mountain-ranch",
+   "fingerprint": "2b30a33c40ef",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://parks.nv.gov/parks/spring-mountain-ranch"
+  },
+  "US-7494": {
+   "url": "https://www.redrockcanyonlv.org/",
+   "fingerprint": "",
+   "date": "2026-11-20",
+   "kind": "none"
+  },
+  "US-2640": {
+   "url": "http://parks.nv.gov/parks/washoe-lake",
+   "fingerprint": "6a0fcba5dd7f",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://parks.nv.gov/parks/washoe-lake"
+  },
+  "US-8303": {
+   "url": "https://www.blm.gov/programs/national-conservation-lands/nevada/sloan-canyon-nca",
+   "fingerprint": "229ef8973c23",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/national-conservation-lands/nevada/sloan-canyon-nca"
+  },
+  "US-2637": {
+   "url": "http://parks.nv.gov/parks/valley-of-fire",
+   "fingerprint": "4881bb0c4e2d",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://parks.nv.gov/parks/valley-of-fire"
+  },
+  "US-0465": {
+   "url": "https://www.fws.gov/refuge/desert/",
+   "fingerprint": "926937f0ed2b",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.fws.gov/refuge/desert"
+  },
+  "US-0974": {
+   "url": "https://www.nps.gov/tusk/index.htm",
+   "fingerprint": "745411ec10f9",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.nps.gov/tusk/index.htm"
+  },
+  "US-4458": {
+   "url": "https://www.fs.usda.gov/recmain/ltbmu/recreation",
    "fingerprint": "e3b0c44298fc",
    "date": "2026-11-20",
    "kind": "resting",
-   "final": "https://www.fs.usda.gov/trails/pacific-northwest-nst"
+   "final": "https://www.fs.usda.gov/recmain/ltbmu/recreation"
   },
-  "US-4501": {
-   "url": "https://www.fs.usda.gov/main/custergallatin/home",
-   "fingerprint": "e3b0c44298fc",
+  "US-2631": {
+   "url": "http://parks.nv.gov/parks/fort-churchill",
+   "fingerprint": "2f8effdaf324",
    "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://www.fs.usda.gov/main/custergallatin/home"
-  },
-  "US-4574": {
-   "url": "https://www.fs.usda.gov/npnht/",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://www.fs.usda.gov/npnht/"
-  },
-  "US-2589": {
-   "url": "https://fwp.mt.gov/stateparks/missouri-headwaters/",
-   "fingerprint": "3ae75043433e",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://fwp.mt.gov/stateparks/missouri-headwaters/"
-  },
-  "US-4475": {
-   "url": "https://www.fs.usda.gov/ctnf",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://www.fs.usda.gov/ctnf"
-  },
-  "US-4500": {
-   "url": "https://www.fs.usda.gov/r01/bitterroot",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://www.fs.usda.gov/r01/bitterroot"
-  },
-  "US-4499": {
-   "url": "https://www.fs.usda.gov/bdnf",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://www.fs.usda.gov/bdnf"
-  },
-  "US-4502": {
-   "url": "https://www.fs.usda.gov/flathead",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://www.fs.usda.gov/flathead"
-  },
-  "US-4477": {
-   "url": "https://www.fs.usda.gov/r01/idahopanhandle",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://www.fs.usda.gov/r01/idahopanhandle"
-  },
-  "US-4507": {
-   "url": "https://www.fs.usda.gov/lolo",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://www.fs.usda.gov/lolo"
-  },
-  "US-0028": {
-   "url": "https://www.nps.gov/glac/index.htm",
-   "fingerprint": "7c2bc4818fc3",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://www.nps.gov/glac/index.htm"
-  },
-  "US-2598": {
-   "url": "https://fwp.mt.gov/stateparks/spring-meadow-state-park",
-   "fingerprint": "1ba01acae91a",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://fwp.mt.gov/stateparks/spring-meadow-state-park"
-  },
-  "US-2563": {
-   "url": "https://fwp.mt.gov/brush-lake",
-   "fingerprint": "ad745b3b1c79",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://fwp.mt.gov/brush-lake"
-  },
-  "US-2581": {
-   "url": "https://fwp.mt.gov/stateparks/lewis-and-clark-caverns",
-   "fingerprint": "495ce6de80f5",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://fwp.mt.gov/stateparks/lewis-and-clark-caverns"
-  },
-  "US-2605": {
-   "url": "https://fwp.mt.gov/stateparks/whitefish-lake",
-   "fingerprint": "b919bd21b80b",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://fwp.mt.gov/stateparks/whitefish-lake"
-  },
-  "US-2578": {
-   "url": "https://fwp.mt.gov/stateparks/lake-elmo",
-   "fingerprint": "8d6698e5bf6a",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://fwp.mt.gov/stateparks/lake-elmo"
-  },
-  "US-2585": {
-   "url": "https://fwp.mt.gov/stateparks/madison-buffalo-jump",
-   "fingerprint": "68093bb45145",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://fwp.mt.gov/stateparks/madison-buffalo-jump"
-  },
-  "US-2562": {
-   "url": "https://fwp.mt.gov/black-sandy",
-   "fingerprint": "c9368419259b",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://fwp.mt.gov/black-sandy"
-  },
-  "US-4505": {
-   "url": "https://www.fs.usda.gov/r01/kootenai/about-area/about-forest",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://www.fs.usda.gov/r01/kootenai/about-area/about-forest"
-  },
-  "US-2574": {
-   "url": "https://fwp.mt.gov/stateparks/giant-springs/",
-   "fingerprint": "aed7b0cf8073",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://fwp.mt.gov/stateparks/giant-springs/"
-  },
-  "US-2570": {
-   "url": "https://fwp.mt.gov/first-peoples-buffalo-jump",
-   "fingerprint": "c718c1b9c7af",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://fwp.mt.gov/first-peoples-buffalo-jump"
-  },
-  "US-2602": {
-   "url": "https://fwp.mt.gov/stateparks/travelers-rest/",
-   "fingerprint": "8255da044e7e",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://fwp.mt.gov/stateparks/travelers-rest/"
-  },
-  "US-2600": {
-   "url": "https://fwp.mt.gov/stateparks/tongue-river-reservoir/",
-   "fingerprint": "c1184eb2b480",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://fwp.mt.gov/stateparks/tongue-river-reservoir/"
-  },
-  "US-2576": {
-   "url": "https://fwp.mt.gov/stateparks/greycliff-prairie-dog-town",
-   "fingerprint": "3b73ff7c080a",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://fwp.mt.gov/stateparks/greycliff-prairie-dog-town"
-  },
-  "US-2573": {
-   "url": "https://fwp.mt.gov/stateparks/frenchtown-pond",
-   "fingerprint": "719877e4c401",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://fwp.mt.gov/stateparks/frenchtown-pond"
-  },
-  "US-10526": {
-   "url": "https://www.blm.gov/visit/devils-elbow-campground",
-   "fingerprint": "d0693f05de6d",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://www.blm.gov/visit/devils-elbow-campground"
-  },
-  "US-11146": {
-   "url": "https://fwp.mt.gov/stateparks/somers-beach",
-   "fingerprint": "e08c66d5488c",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://fwp.mt.gov/stateparks/somers-beach"
-  },
-  "US-0947": {
-   "url": "https://www.nps.gov/libi/index.htm",
-   "fingerprint": "ca195f6e1b59",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://www.nps.gov/libi/index.htm"
-  },
-  "US-0402": {
-   "url": "https://www.fws.gov/refuge/lee_metcalf/",
-   "fingerprint": "aeb9df7925f7",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://www.fws.gov/refuge/lee-metcalf"
-  },
-  "US-3387": {
-   "url": "https://fwp.mt.gov/stateparks/thompson-chain-of-lakes",
-   "fingerprint": "d98c0d8ee709",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://fwp.mt.gov/stateparks/thompson-chain-of-lakes"
-  },
-  "US-11242": {
-   "url": "https://www.blm.gov/maps/georeferenced-PDFs/montana-dakotas",
-   "fingerprint": "bf697adebb74",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://www.blm.gov/maps/georeferenced-PDFs/montana-dakotas"
-  },
-  "US-4844": {
-   "url": "https://archive.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html",
-   "fingerprint": "660fbd576fd9",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://mca.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html"
-  },
-  "US-2566": {
-   "url": "https://fwp.mt.gov/stateparks/cooney",
-   "fingerprint": "5f418429e9e4",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://fwp.mt.gov/stateparks/cooney"
-  },
-  "US-0399": {
-   "url": "https://www.fws.gov/refuge/charles_m_russell/",
-   "fingerprint": "9bd8f07095fd",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://www.fws.gov/locations/charles-m-russell-national-wildlife-refuge"
-  },
-  "US-0674": {
-   "url": "https://www.nps.gov/bica/index.htm",
-   "fingerprint": "005a7ed15330",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://www.nps.gov/bica/index.htm"
-  },
-  "US-2567": {
-   "url": "https://fwp.mt.gov/stateparks/council-grove",
-   "fingerprint": "807bac038084",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://fwp.mt.gov/stateparks/council-grove"
-  },
-  "US-2594": {
-   "url": "https://fwp.mt.gov/stateparks/rosebud-battlefield/",
-   "fingerprint": "3f3690cb9386",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://fwp.mt.gov/stateparks/rosebud-battlefield/"
-  },
-  "US-10175": {
-   "url": "https://fwp.mt.gov/stateparks/milltown",
-   "fingerprint": "bb4effdb3288",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://fwp.mt.gov/stateparks/milltown"
-  },
-  "US-2580": {
-   "url": "https://fwp.mt.gov/les-mason",
-   "fingerprint": "63432c508a0a",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://fwp.mt.gov/les-mason"
-  },
-  "US-2586": {
-   "url": "https://fwp.mt.gov/stateparks/makoshika",
-   "fingerprint": "f8af412051bb",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://fwp.mt.gov/stateparks/makoshika"
-  },
-  "US-7994": {
-   "url": "https://www.fs.usda.gov/recarea/nezperceclearwater/recarea/?recid=16474",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://www.fs.usda.gov/recarea/nezperceclearwater/recarea/?recid=16474"
-  },
-  "US-2583": {
-   "url": "https://fwp.mt.gov/stateparks/lone-pine/",
-   "fingerprint": "d46e378e6bbd",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://fwp.mt.gov/stateparks/lone-pine/"
-  },
-  "US-2556": {
-   "url": "https://fwp.mt.gov/stateparks/ackley-lake-state-park",
-   "fingerprint": "9cd563e0e8a4",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://fwp.mt.gov/stateparks/ackley-lake-state-park"
-  },
-  "US-2572": {
-   "url": "https://fwp.mt.gov/stateparks/fort-owen",
-   "fingerprint": "6a54411ca0c9",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://fwp.mt.gov/stateparks/fort-owen"
-  },
-  "US-2604": {
-   "url": "https://fwp.mt.gov/west-shore",
-   "fingerprint": "687394949ad7",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://fwp.mt.gov/west-shore"
-  },
-  "US-2588": {
-   "url": "https://fwp.mt.gov/stateparks/medicine-rocks/",
-   "fingerprint": "472372405057",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://fwp.mt.gov/stateparks/medicine-rocks/"
-  },
-  "US-4548": {
-   "url": "https://www.blm.gov/visit/pompeys-pillar-national-monument",
-   "fingerprint": "ed899571ded8",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://www.blm.gov/visit/pompeys-pillar-national-monument"
-  },
-  "US-6442": {
-   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634",
-   "fingerprint": "342444155f69",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
-  },
-  "US-0883": {
-   "url": "https://www.fs.usda.gov/r01/flathead/recreation/wild-scenic-rivers",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "resting",
-   "final": "https://www.fs.usda.gov/r01/flathead/recreation/wild-scenic-rivers"
-  },
-  "US-10524": {
-   "url": "https://www.blm.gov/visit/acton",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "dead",
-   "final": "https://www.blm.gov/visit/acton"
-  },
-  "US-2560": {
-   "url": "https://fwp.mt.gov/stateparks/beavertail-hill",
-   "fingerprint": "93e242627f53",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://fwp.mt.gov/stateparks/beavertail-hill"
-  },
-  "US-0829": {
-   "url": "https://www.nps.gov/grko/index.htm",
-   "fingerprint": "f51105d35dbc",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://www.nps.gov/grko/index.htm"
-  },
-  "US-2601": {
-   "url": "https://fwp.mt.gov/stateparks/tower-rock",
-   "fingerprint": "d4714fb790db",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://fwp.mt.gov/stateparks/tower-rock"
-  },
-  "US-2591": {
-   "url": "https://fwp.mt.gov/stateparks/pictograph-cave",
-   "fingerprint": "aa8c4a541e66",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://fwp.mt.gov/stateparks/pictograph-cave"
-  },
-  "US-4549": {
-   "url": "https://www.blm.gov/programs/national-conservation-lands/montana-dakotas/upper-missouri-river-breaks",
-   "fingerprint": "44852b14a20a",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://www.blm.gov/programs/national-conservation-lands/montana-dakotas/upper-missouri-river-breaks"
-  },
-  "US-12879": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39754115",
-   "fingerprint": "f4560f96dda3",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://myfwp.mt.gov/fishMT/fas/39754115"
-  },
-  "US-0396": {
-   "url": "https://www.fws.gov/refuge/benton_lake/",
-   "fingerprint": "7107212c151f",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://www.fws.gov/locations/benton-lake-national-wildlife-refuge"
-  },
-  "US-12653": {
-   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754191",
-   "fingerprint": "342444155f69",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
-  },
-  "US-2557": {
-   "url": "https://fwp.mt.gov/stateparks/anaconda-smoke-stack",
-   "fingerprint": "eac4427f4451",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://fwp.mt.gov/stateparks/anaconda-smoke-stack"
-  },
-  "US-2565": {
-   "url": "https://fwp.mt.gov/stateparks/clarks-lookout/",
-   "fingerprint": "32df6ec60b01",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://fwp.mt.gov/stateparks/clarks-lookout/"
-  },
-  "US-12648": {
-   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753388",
-   "fingerprint": "342444155f69",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
-  },
-  "US-12910": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753440",
-   "fingerprint": "d7690f75ebf5",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://myfwp.mt.gov/fishMT/fas/39753440"
-  },
-  "US-12654": {
-   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754079",
-   "fingerprint": "342444155f69",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
-  },
-  "US-12915": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39754195",
-   "fingerprint": "39f41b78c775",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://myfwp.mt.gov/fishMT/fas/39754195"
-  },
-  "US-0701": {
-   "url": "https://www.nps.gov/biho/index.htm",
-   "fingerprint": "737ba1784fde",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://www.nps.gov/biho/index.htm"
-  },
-  "US-0407": {
-   "url": "https://www.fws.gov/refuge/red_rock_lakes/",
-   "fingerprint": "089a2737edbe",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://www.fws.gov/locations/red-rock-lakes-national-wildlife-refuge"
-  },
-  "US-2558": {
-   "url": "https://fwp.mt.gov/stateparks/bannack-state-park",
-   "fingerprint": "e7c609ac8881",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://fwp.mt.gov/stateparks/bannack-state-park"
-  },
-  "US-12826": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39754193",
-   "fingerprint": "69ba5de5657b",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://myfwp.mt.gov/fishMT/fas/39754193"
-  },
-  "US-2564": {
-   "url": "https://fwp.mt.gov/stateparks/chief-plenty-coups/",
-   "fingerprint": "abffd0c60e8c",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://fwp.mt.gov/stateparks/chief-plenty-coups/"
-  },
-  "US-12937": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753472",
-   "fingerprint": "2587d597d184",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://myfwp.mt.gov/fishMT/fas/39753472"
-  },
-  "US-12878": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39754135",
-   "fingerprint": "01d1fca717ea",
-   "date": "2026-11-20",
    "kind": "html",
-   "final": "https://myfwp.mt.gov/fishMT/fas/39754135"
+   "final": "https://parks.nv.gov/parks/fort-churchill"
   },
-  "US-0823": {
-   "url": "https://www.nps.gov/fous/index.htm",
-   "fingerprint": "5eaade2af68f",
+  "US-4437": {
+   "url": "http://parks.nv.gov/parks/big-bend-of-the-colorado",
+   "fingerprint": "bd0b4cf373c1",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://www.nps.gov/fous/index.htm"
+   "final": "https://parks.nv.gov/parks/big-bend-of-the-colorado"
   },
-  "US-6443": {
-   "url": "https://www.blm.gov/visit/lowry-bridge",
-   "fingerprint": "b0b7a587ded8",
+  "US-2629": {
+   "url": "http://parks.nv.gov/parks/dayton",
+   "fingerprint": "e8b87fd17f22",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://www.blm.gov/visit/lowry-bridge"
+   "final": "https://parks.nv.gov/parks/dayton"
   },
-  "US-2603": {
-   "url": "https://fwp.mt.gov/wayfarers",
-   "fingerprint": "026a3d3c6475",
+  "US-9284": {
+   "url": "https://www.nevadawilderness.org/south_pahroc_range_wilderness",
+   "fingerprint": "",
    "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://fwp.mt.gov/wayfarers"
-  },
-  "US-7990": {
-   "url": "https://www.blm.gov/visit/lee-metcalf-wilderness",
-   "fingerprint": "324eb29acd38",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://www.blm.gov/visit/lee-metcalf-wilderness"
-  },
-  "US-12877": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753468",
-   "fingerprint": "5acb251ef219",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://myfwp.mt.gov/fishMT/fas/39753468"
-  },
-  "US-2592": {
-   "url": "https://fwp.mt.gov/stateparks/pirogue-island",
-   "fingerprint": "58d07c68bb93",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://fwp.mt.gov/stateparks/pirogue-island"
-  },
-  "US-4848": {
-   "url": "https://archive.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html",
-   "fingerprint": "660fbd576fd9",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://mca.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html"
-  },
-  "US-2596": {
-   "url": "https://fwp.mt.gov/stateparks/sluice-boxes/",
-   "fingerprint": "612a7738e22c",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://fwp.mt.gov/stateparks/sluice-boxes/"
-  },
-  "US-11217": {
-   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753798",
-   "fingerprint": "342444155f69",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
-  },
-  "US-2582": {
-   "url": "https://fwp.mt.gov/logan",
-   "fingerprint": "5bb5f87a01b8",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://fwp.mt.gov/logan"
-  },
-  "US-2597": {
-   "url": "https://fwp.mt.gov/smith-river",
-   "fingerprint": "7d331e8c5ef5",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://fwp.mt.gov/smith-river"
-  },
-  "US-12940": {
-   "url": "https://www.fws.gov/fish-hatchery/creston",
-   "fingerprint": "c7ac26999c88",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://www.fws.gov/locations/creston-national-fish-hatchery"
+   "kind": "refused",
+   "final": "https://www.nevadawilderness.org/south_pahroc_range_wilderness"
   },
-  "US-2593": {
-   "url": "https://fwp.mt.gov/placid-lake",
-   "fingerprint": "cbce187fc360",
+  "US-2634": {
+   "url": "http://parks.nv.gov/parks/mormon-station",
+   "fingerprint": "e2d21b3dca1d",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://fwp.mt.gov/placid-lake"
+   "final": "https://parks.nv.gov/parks/mormon-station"
   },
-  "US-0403": {
-   "url": "https://www.fws.gov/refuge/lost_trail/",
-   "fingerprint": "f2bbeaa2fdfc",
+  "US-4442": {
+   "url": "https://www.blm.gov/visit/walker-lake-recreation-area",
+   "fingerprint": "0e2505ed3bc0",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://www.fws.gov/refuge/lost-trail"
+   "final": "https://www.blm.gov/visit/walker-lake-recreation-area"
   },
-  "US-4845": {
-   "url": "https://archive.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html",
-   "fingerprint": "660fbd576fd9",
+  "US-4441": {
+   "url": "http://parks.nv.gov/parks/lahontan",
+   "fingerprint": "9d57dd553192",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://mca.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html"
+   "final": "https://parks.nv.gov/parks/lahontan"
   },
-  "US-10525": {
-   "url": "https://www.blm.gov/visit/coal-banks-landing",
-   "fingerprint": "61237cfd38fe",
+  "US-0032": {
+   "url": "https://www.nps.gov/grba/index.htm",
+   "fingerprint": "384a5a5fe3b5",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://www.blm.gov/visit/coal-banks-landing"
+   "final": "https://www.nps.gov/grba/index.htm"
   },
-  "US-2561": {
-   "url": "https://fwp.mt.gov/big-arm",
-   "fingerprint": "79234d189c2a",
+  "US-9285": {
+   "url": "https://www.blm.gov/avi-kwa-ame-national-monument",
+   "fingerprint": "98a20a8f4215",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://fwp.mt.gov/big-arm"
+   "final": "https://www.blm.gov/avi-kwa-ame-national-monument"
   },
-  "US-2590": {
-   "url": "https://fwp.mt.gov/stateparks/painted-rocks",
-   "fingerprint": "3cb62041e590",
+  "US-3389": {
+   "url": "http://parks.nv.gov/parks/lake-tahoe-nevada-state-park-1",
+   "fingerprint": "22c633534163",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://fwp.mt.gov/stateparks/painted-rocks"
+   "final": "https://parks.nv.gov/parks/spooner-lake"
   },
-  "US-11215": {
-   "url": "https://www.nps.gov/nepe/planyourvisit/visit-bear-paw-battlefield.htm",
-   "fingerprint": "88343cbc6c0c",
+  "US-11050": {
+   "url": "https://parks.nv.gov/parks/ice-age-fossils",
+   "fingerprint": "fb25e8adf404",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://www.nps.gov/nepe/planyourvisit/visit-bear-paw-battlefield.htm"
+   "final": "https://parks.nv.gov/parks/ice-age-fossils"
   },
-  "US-2579": {
-   "url": "https://fwp.mt.gov/lake-mary-ronan",
-   "fingerprint": "111edab382b0",
+  "US-4443": {
+   "url": "http://parks.nv.gov/parks/old-las-vegas-mormon-fort",
+   "fingerprint": "48942b13ed74",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://fwp.mt.gov/lake-mary-ronan"
+   "final": "https://parks.nv.gov/parks/old-las-vegas-mormon-fort"
   },
-  "US-2584": {
-   "url": "https://fwp.mt.gov/stateparks/lost-creek",
-   "fingerprint": "74f4230886c6",
+  "US-9239": {
+   "url": "https://www.blm.gov/programs/national-conservation-lands/nevada/black-rock-desert-high-rock-canyon-emigrant-trails-nca",
+   "fingerprint": "b36030135d81",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://fwp.mt.gov/stateparks/lost-creek"
+   "final": "https://www.blm.gov/programs/national-conservation-lands/nevada/black-rock-desert-high-rock-canyon-emigrant-trails-nca"
   },
-  "US-2607": {
-   "url": "https://fwp.mt.gov/yellow-bay",
-   "fingerprint": "17228d50522f",
+  "US-13113": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/wheeler-pass",
+   "fingerprint": "28910682faea",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://fwp.mt.gov/yellow-bay"
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/wheeler-pass"
   },
-  "US-12882": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39754161",
-   "fingerprint": "ed12af46c318",
+  "US-13112": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/johnnie-hma",
+   "fingerprint": "65d25e9711df",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://myfwp.mt.gov/fishMT/fas/39754161"
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/johnnie-hma"
   },
-  "US-12630": {
-   "url": "https://www.blm.gov/sites/blm.gov/files/documents/files/Boaters%20Guide%202017%20508%20COMPL.pdf",
-   "fingerprint": "0c15dd756aad",
+  "US-9288": {
+   "url": "https://www.blm.gov/sites/blm.gov/files/uploads/Programs_NationalConservationLands_WildernessAreas_NV_Wee%20Thump%20Joshua%20Tree%20Wilderness%20Fact%20Sheet%20Web%20Opt.pdf",
+   "fingerprint": "d14bfbe8cf1f",
    "date": "2026-11-20",
    "kind": "pdf",
-   "final": "https://www.blm.gov/sites/blm.gov/files/documents/files/Boaters%20Guide%202017%20508%20COMPL.pdf"
+   "final": "https://www.blm.gov/sites/blm.gov/files/uploads/Programs_NationalConservationLands_WildernessAreas_NV_Wee%20Thump%20Joshua%20Tree%20Wilderness%20Fact%20Sheet%20Web%20Opt.pdf"
   },
-  "US-12631": {
-   "url": "https://www.blm.gov/programs/national-conservation-lands/montana-dakotas/terry-badlands-wsa",
-   "fingerprint": "04e925976824",
+  "US-4445": {
+   "url": "http://parks.nv.gov/parks/south-fork",
+   "fingerprint": "33a5b38a3bc8",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://www.blm.gov/programs/national-conservation-lands/montana-dakotas/terry-badlands-wsa"
+   "final": "https://parks.nv.gov/parks/south-fork"
   },
-  "US-2599": {
-   "url": "https://fwp.mt.gov/thompson-falls",
-   "fingerprint": "5bdb84fc167d",
+  "US-9266": {
+   "url": "https://www.blm.gov/sites/blm.gov/files/uploads/Programs_NationalConservationLands_WildernessAreas_NV_Mt.%20Charleston%20Wilderness%20Fact%20Sheet%20Web%20Opt.pdf",
+   "fingerprint": "88319ad23309",
+   "date": "2026-11-20",
+   "kind": "pdf",
+   "final": "https://www.blm.gov/sites/blm.gov/files/uploads/Programs_NationalConservationLands_WildernessAreas_NV_Mt.%20Charleston%20Wilderness%20Fact%20Sheet%20Web%20Opt.pdf"
+  },
+  "US-9278": {
+   "url": "https://www.blm.gov/sites/blm.gov/files/uploads/Programs_NationalConservationLands_WildernessAreas_NV_Rainbow%20Mountain%20Wilderness%20Fact%20Sheet%20Web%20Opt.pdf",
+   "fingerprint": "c8b6ccb6e7c0",
+   "date": "2026-11-20",
+   "kind": "pdf",
+   "final": "https://www.blm.gov/sites/blm.gov/files/uploads/Programs_NationalConservationLands_WildernessAreas_NV_Rainbow%20Mountain%20Wilderness%20Fact%20Sheet%20Web%20Opt.pdf"
+  },
+  "US-9261": {
+   "url": "https://www.blm.gov/sites/blm.gov/files/uploads/Programs_NationalConservationLands_WildernessAreas_NV_La%20Madre%20Mountain%20Wilderness%20Fact%20Sheet%20Web%20Opt.pdf",
+   "fingerprint": "c91dda3432d4",
+   "date": "2026-11-20",
+   "kind": "pdf",
+   "final": "https://www.blm.gov/sites/blm.gov/files/uploads/Programs_NationalConservationLands_WildernessAreas_NV_La%20Madre%20Mountain%20Wilderness%20Fact%20Sheet%20Web%20Opt.pdf"
+  },
+  "US-0470": {
+   "url": "https://www.fws.gov/refuge/sheldon/",
+   "fingerprint": "ee2817ee3450",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://fwp.mt.gov/thompson-falls"
+   "final": "https://www.fws.gov/refuge/sheldon"
   },
-  "US-8002": {
-   "url": "https://www.fws.gov/refuge/ninepipe/",
-   "fingerprint": "05f0430ff7e6",
+  "US-4438": {
+   "url": "http://parks.nv.gov/parks/buckland-station",
+   "fingerprint": "2f8effdaf324",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://www.fws.gov/locations/ninepipe-national-wildlife-refuge"
+   "final": "https://parks.nv.gov/parks/fort-churchill"
   },
-  "US-12929": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39754103",
-   "fingerprint": "24916556cdbd",
+  "US-7495": {
+   "url": "https://www.nvtrailfinder.com/trails/trail/mason-valley-wildlife-management-area",
+   "fingerprint": "e27dda8d26c4",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://myfwp.mt.gov/fishMT/fas/39754103"
+   "final": "https://www.nvtrailfinder.com/trails/trail/mason-valley-wildlife-management-area"
   },
-  "US-2571": {
-   "url": "https://fwp.mt.gov/stateparks/fish-creek",
-   "fingerprint": "d3d7826bdb9c",
+  "US-0468": {
+   "url": "https://www.fws.gov/refuge/pahranagat/",
+   "fingerprint": "5ece70be1f6e",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://fwp.mt.gov/stateparks/fish-creek"
+   "final": "https://www.fws.gov/locations/pahranagat-national-wildlife-refuge"
   },
-  "US-12903": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39754245",
-   "fingerprint": "dcaeba9db6aa",
+  "US-4444": {
+   "url": "http://parks.nv.gov/parks/rye-patch",
+   "fingerprint": "269173e0bd9c",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://myfwp.mt.gov/fishMT/fas/39754245"
+   "final": "https://parks.nv.gov/parks/rye-patch"
   },
-  "US-12888": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753564",
-   "fingerprint": "91eca92240bb",
+  "US-13262": {
+   "url": "https://en.wikipedia.org/wiki/List_of_Nevada_Scenic_Byways",
+   "fingerprint": "5fc4fcf739db",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://myfwp.mt.gov/fishMT/fas/39753564"
+   "final": "https://en.wikipedia.org/wiki/List_of_Nevada_Scenic_Byways"
   },
-  "US-0398": {
-   "url": "https://www.fws.gov/refuge/bowdoin/",
-   "fingerprint": "caa6336cd4ce",
+  "US-12817": {
+   "url": "https://www.blm.gov/visit/moon-rocks-ohv-area",
+   "fingerprint": "bd43925cc78e",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://www.fws.gov/refuge/bowdoin"
+   "final": "https://www.blm.gov/visit/moon-rocks-ohv-area"
   },
-  "US-12891": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753566",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12650": {
-   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754067",
-   "fingerprint": "342444155f69",
+  "US-0471": {
+   "url": "https://www.fws.gov/refuge/stillwater/",
+   "fingerprint": "300f1f486868",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   "final": "https://www.fws.gov/locations/stillwater-national-wildlife-refuge"
   },
-  "US-12861": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753422",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-2587": {
-   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754646",
-   "fingerprint": "342444155f69",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
-  },
-  "US-12701": {
-   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754073",
-   "fingerprint": "342444155f69",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
-  },
-  "US-10521": {
-   "url": "https://www.blm.gov/visit/garnet-ghost-town",
-   "fingerprint": "5bef9ddab09d",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://www.blm.gov/visit/garnet-ghost-town"
-  },
-  "US-0405": {
-   "url": "https://www.fws.gov/refuge/National_Bison_Range/Contact.html",
+  "US-13064": {
+   "url": "https://www.ndow.org/your-public-land/",
    "fingerprint": "e3b0c44298fc",
    "date": "2026-11-20",
-   "kind": "dead",
-   "final": "https://www.fws.gov/refuge/National_Bison_Range/Contact.html"
+   "kind": "refused",
+   "final": "https://www.ndow.org/your-public-land/"
   },
-  "US-0400": {
-   "url": "https://www.fws.gov/refuges/profiles/recEdMore.cfm?ID=61522",
-   "fingerprint": "b76888b3f858",
+  "US-0464": {
+   "url": "https://www.fws.gov/refuge/ash_meadows/",
+   "fingerprint": "91bfe5209bd2",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://www.fws.gov/activities?ID=61522"
+   "final": "https://www.fws.gov/locations/ash-meadows-national-wildlife-refuge"
   },
-  "US-12823": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39754401",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-11218": {
-   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753884",
-   "fingerprint": "342444155f69",
+  "US-2633": {
+   "url": "http://parks.nv.gov/parks/lake-tahoe-nevada-state-park",
+   "fingerprint": "cc16f5cace86",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   "final": "https://parks.nv.gov/parks/lake-tahoe-nevada-state-park"
   },
-  "US-12872": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753842",
-   "fingerprint": "e59cc710179d",
+  "US-2630": {
+   "url": "http://parks.nv.gov/parks/echo-canyon",
+   "fingerprint": "48fa540d7c6b",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://myfwp.mt.gov/fishMT/fas/39753842"
+   "final": "https://parks.nv.gov/parks/echo-canyon"
   },
-  "US-12856": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39754247",
-   "fingerprint": "00c26f30b78a",
+  "US-2627": {
+   "url": "http://parks.nv.gov/parks/cathedral-gorge",
+   "fingerprint": "8dc20e671a76",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://myfwp.mt.gov/fishMT/fas/39754247"
+   "final": "https://parks.nv.gov/parks/cathedral-gorge"
   },
-  "US-7998": {
-   "url": "https://www.fws.gov/refuge/hailstone/",
-   "fingerprint": "e2c2eb9d5169",
+  "US-13265": {
+   "url": "https://en.wikipedia.org/wiki/List_of_Nevada_Scenic_Byways",
+   "fingerprint": "5fc4fcf739db",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://www.fws.gov/refuge/hailstone"
+   "final": "https://en.wikipedia.org/wiki/List_of_Nevada_Scenic_Byways"
   },
-  "US-2568": {
-   "url": "https://fwp.mt.gov/stateparks/elkhorn",
-   "fingerprint": "bd33792de954",
+  "US-9682": {
+   "url": "https://parks.nv.gov/parks/walker-river",
+   "fingerprint": "f6c4c03a4e57",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://fwp.mt.gov/stateparks/elkhorn"
+   "final": "https://parks.nv.gov/parks/walker-river"
   },
-  "US-11221": {
-   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754097",
-   "fingerprint": "342444155f69",
+  "US-9247": {
+   "url": "https://www.blm.gov/sites/blm.gov/files/uploads/Programs_NationalConservationLands_WildernessAreas_NV_Eldorado%20Wilderness%20Fact%20Sheet%20Web%20Opt.pdf",
+   "fingerprint": "1037c071be85",
+   "date": "2026-11-20",
+   "kind": "pdf",
+   "final": "https://www.blm.gov/sites/blm.gov/files/uploads/Programs_NationalConservationLands_WildernessAreas_NV_Eldorado%20Wilderness%20Fact%20Sheet%20Web%20Opt.pdf"
+  },
+  "US-8311": {
+   "url": "https://stateparks.com/humboldt_state_wildlife_management_area_in_nevada.html",
+   "fingerprint": "9ba8f6f17549",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   "final": "https://stateparks.com/humboldt_state_wildlife_management_area_in_nevada.html"
   },
-  "US-8001": {
-   "url": "https://www.fws.gov/mountain-prairie/refuges/mdl.php",
-   "fingerprint": "e3b0c44298fc",
-   "date": "2026-11-20",
-   "kind": "dead",
-   "final": "https://www.fws.gov/mountain-prairie/refuges/mdl.php"
-  },
-  "US-2569": {
-   "url": "https://fwp.mt.gov/finley-point",
-   "fingerprint": "fee3b7c34b4e",
+  "US-2638": {
+   "url": "http://parks.nv.gov/parks/lake-tahoe-nevada-state-park-3",
+   "fingerprint": "7103a1bcb6eb",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://fwp.mt.gov/finley-point"
+   "final": "https://parks.nv.gov/parks/lake-tahoe-nevada-state-park-3"
   },
-  "US-2595": {
-   "url": "https://fwp.mt.gov/salmon-lake",
-   "fingerprint": "fa377addea6f",
+  "US-13278": {
+   "url": "https://www.destination4x4.com/the-camel-corps-nevada-state-historic-marker-104/",
+   "fingerprint": "63611217ff08",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://fwp.mt.gov/salmon-lake"
+   "final": "https://www.destination4x4.com/the-camel-corps-nevada-state-historic-marker-104/"
   },
-  "US-2577": {
-   "url": "https://fwp.mt.gov/hell-creek",
-   "fingerprint": "e3b0c44298fc",
+  "US-9271": {
+   "url": "https://www.blm.gov/sites/blm.gov/files/uploads/Programs_NationalConservationLands_WildernessAreas_NV_Muddy%20Mountains%20Wilderness%20Fact%20Sheet%20Web%20Opt.pdf",
+   "fingerprint": "c56943edad1d",
    "date": "2026-11-20",
-   "kind": "dead",
-   "final": "https://fwp.mt.gov/hell-creek"
+   "kind": "pdf",
+   "final": "https://www.blm.gov/sites/blm.gov/files/uploads/Programs_NationalConservationLands_WildernessAreas_NV_Muddy%20Mountains%20Wilderness%20Fact%20Sheet%20Web%20Opt.pdf"
   },
-  "US-12927": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39754387",
-   "fingerprint": "83eac3cff58a",
-   "date": "2026-11-20",
-   "kind": "html",
-   "final": "https://myfwp.mt.gov/fishMT/fas/39754387"
-  },
-  "US-0409": {
-   "url": "https://www.fws.gov/refuge/war_horse/",
-   "fingerprint": "98b9c4867ba2",
+  "US-4446": {
+   "url": "http://parks.nv.gov/parks/wild-horse",
+   "fingerprint": "326ca0a8c4b3",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://www.fws.gov/refuge/war-horse"
+   "final": "https://parks.nv.gov/parks/wild-horse"
   },
-  "US-12875": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39754577",
-   "fingerprint": "489be32987e6",
+  "US-9274": {
+   "url": "https://www.blm.gov/sites/blm.gov/files/uploads/Programs_NationalConservationLands_WildernessAreas_NV_North%20McCullough%20Wilderness%20Fact%20Sheet%20Web%20Opt.pdf",
+   "fingerprint": "7ab39743bee0",
    "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   "kind": "pdf",
+   "final": "https://www.blm.gov/sites/blm.gov/files/uploads/Programs_NationalConservationLands_WildernessAreas_NV_North%20McCullough%20Wilderness%20Fact%20Sheet%20Web%20Opt.pdf"
   },
-  "US-12924": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753874",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12914": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753872",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-10176": {
-   "url": "https://fwp.mt.gov/stateparks/granite-ghost-town/",
-   "fingerprint": "10b6217b1877",
+  "US-2628": {
+   "url": "http://parks.nv.gov/parks/cave-lake",
+   "fingerprint": "cbda63d145d0",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://fwp.mt.gov/stateparks/granite-ghost-town/"
+   "final": "https://parks.nv.gov/parks/cave-lake"
   },
-  "US-0404": {
-   "url": "https://www.fws.gov/refuge/medicine_lake/",
-   "fingerprint": "f5435ac7b7e9",
+  "US-0467": {
+   "url": "https://www.fws.gov/refuge/moapa_valley/",
+   "fingerprint": "f6a6d8730591",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://www.fws.gov/refuge/medicine-lake"
+   "final": "https://www.fws.gov/locations/moapa-valley-national-wildlife-refuge"
   },
-  "US-12652": {
-   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753945",
-   "fingerprint": "342444155f69",
+  "US-4440": {
+   "url": "http://parks.nv.gov/parks/elgin-schoolhouse",
+   "fingerprint": "09e369e9f480",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   "final": "https://parks.nv.gov/parks/elgin-schoolhouse"
   },
-  "US-12656": {
-   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753947",
-   "fingerprint": "342444155f69",
+  "US-13251": {
+   "url": "https://www.nps.gov/places/virginia-city-historic-district.htm",
+   "fingerprint": "95ac0502ff07",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   "final": "https://www.nps.gov/places/virginia-city-historic-district.htm"
   },
-  "US-6209": {
-   "url": "https://www.fs.usda.gov/visit/destination/absaroka-beartooth-wilderness",
+  "US-3592": {
+   "url": "https://travelnevada.com/wildlife/key-pittman-wildlife-management-area/",
+   "fingerprint": "a1ab5c98af43",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://travelnevada.com/wildlife/key-pittman-wildlife-management-area/"
+  },
+  "US-13114": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/rock-creek-hma",
+   "fingerprint": "3d8878782ac1",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/rock-creek-hma"
+  },
+  "US-13286": {
+   "url": "https://www.destination4x4.com/mineral-county-nevada-state-historic-marker-16/",
+   "fingerprint": "e7935f1746d8",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.destination4x4.com/mineral-county-nevada-state-historic-marker-16/"
+  },
+  "US-10345": {
+   "url": "https://www.ndow.org/your-public-land/",
+   "fingerprint": "",
+   "date": "2026-11-20",
+   "kind": "refused",
+   "final": "https://www.ndow.org/your-public-land/"
+  },
+  "US-2639": {
+   "url": "http://parks.nv.gov/parks/ward-charcoal-ovens",
+   "fingerprint": "86157eb3840b",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://parks.nv.gov/parks/ward-charcoal-ovens"
+  },
+  "US-2632": {
+   "url": "http://parks.nv.gov/parks/kershaw-ryan",
+   "fingerprint": "7a06f2d44ac4",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://parks.nv.gov/parks/kershaw-ryan"
+  },
+  "US-13164": {
+   "url": "https://www.blm.gov/visit/nellis-dunes",
+   "fingerprint": "dd3cde21ac56",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/nellis-dunes"
+  },
+  "US-13369": {
+   "url": "https://www.destination4x4.com/potosi-nevada-state-historic-marker-115/",
+   "fingerprint": "9e8223f747db",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.destination4x4.com/potosi-nevada-state-historic-marker-115/"
+  },
+  "US-13047": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/pine-nut",
+   "fingerprint": "01ce9b41ad8f",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/pine-nut"
+  },
+  "US-12595": {
+   "url": "https://www.ndow.org/wp-content/uploads/2022/01/33874-NDOW-Steptoe-Valley-WMA-Brochure-PROOF.pdf",
+   "fingerprint": "",
+   "date": "2026-11-20",
+   "kind": "refused",
+   "final": "https://www.ndow.org/wp-content/uploads/2022/01/33874-NDOW-Steptoe-Valley-WMA-Brochure-PROOF.pdf"
+  },
+  "US-12373": {
+   "url": "https://parks.nv.gov/parks/lake-tahoe-nevada-state-park",
+   "fingerprint": "cc16f5cace86",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://parks.nv.gov/parks/lake-tahoe-nevada-state-park"
+  },
+  "US-12973": {
+   "url": "https://www.ndow.org/your-public-land/#:~:text=FORT%20CHURCHILL%20COOPERATIVE%20WMA%20(MASON",
+   "fingerprint": "",
+   "date": "2026-11-20",
+   "kind": "refused",
+   "final": "https://www.ndow.org/your-public-land/#:~:text=FORT%20CHURCHILL%20COOPERATIVE%20WMA%20(MASON"
+  },
+  "US-0466": {
+   "url": "https://www.fws.gov/refuge/fallon/",
+   "fingerprint": "c32abed56aa5",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.fws.gov/locations/fallon-national-wildlife-refuge"
+  },
+  "US-11770": {
+   "url": "https://www.blm.gov/visit/sacramento-pass-recreation-area",
+   "fingerprint": "1b2ffbf9e190",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/sacramento-pass-recreation-area"
+  },
+  "US-13195": {
+   "url": "https://www.blm.gov/visit/jumbo-grade",
+   "fingerprint": "29cd7df2e449",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/jumbo-grade"
+  },
+  "US-3573": {
+   "url": "https://travelnevada.com/wildlife/wayne-e-kirch-wildlife-management-area/",
+   "fingerprint": "908ee67c68ce",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://travelnevada.com/wildlife/wayne-e-kirch-wildlife-management-area/"
+  },
+  "US-13474": {
+   "url": "https://southwestexplorers.com/kyle-kiel-ranch/",
+   "fingerprint": "0b5d5f211e9c",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/kyle-kiel-ranch/"
+  },
+  "US-10833": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/hickison-summit",
+   "fingerprint": "e75345eccc4e",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/hickison-summit"
+  },
+  "US-9283": {
+   "url": "http://www.sangres.com/nevada/blm/south-mccullough.htm#.YgRifOrMKUk",
    "fingerprint": "e3b0c44298fc",
    "date": "2026-11-20",
    "kind": "resting",
-   "final": "https://www.fs.usda.gov/visit/destination/absaroka-beartooth-wilderness"
+   "final": "http://www.sangres.com/nevada/blm/south-mccullough.htm#.YgRifOrMKUk"
   },
-  "US-12651": {
-   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754071",
-   "fingerprint": "342444155f69",
+  "US-12816": {
+   "url": "https://www.blm.gov/visit/sand-mountain-recreation-area#:~:text=The%204%2C795%20acre%20Sand%20Mountain,the%20top%20of%20the%20dune",
+   "fingerprint": "8ad9d1717e8c",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   "final": "https://www.blm.gov/visit/sand-mountain-recreation-area#:~:text=The%204%2C795%20acre%20Sand%20Mountain,the%20top%20of%20the%20dune"
   },
-  "US-12860": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753414",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12889": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753424",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-8004": {
-   "url": "https://www.fws.gov/refuge/swan_river/",
-   "fingerprint": "76fbcc2eaee8",
+  "US-13482": {
+   "url": "https://southwestexplorers.com/galena-creek-fish-hatchery/",
+   "fingerprint": "a8cd262f0731",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://www.fws.gov/locations/swan-river-national-wildlife-refuge"
+   "final": "https://southwestexplorers.com/galena-creek-fish-hatchery/"
   },
-  "US-12913": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39754423",
-   "fingerprint": "489be32987e6",
+  "US-13249": {
+   "url": "https://nnry.com/",
+   "fingerprint": "",
    "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   "kind": "none"
   },
-  "US-12849": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753684",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-8003": {
-   "url": "https://www.fws.gov/refuge/pablo/",
-   "fingerprint": "20d5c3ad5bca",
+  "US-13026": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/eagle-hma",
+   "fingerprint": "6cd0286ca2eb",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://www.fws.gov/locations/pablo-national-wildlife-refuge"
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/eagle-hma"
   },
-  "US-12852": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39754131",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12867": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39754407",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12880": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753406",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12931": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753404",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-0401": {
-   "url": "https://www.fws.gov/refuge/lake_mason/",
-   "fingerprint": "f871748aa95e",
+  "US-4392": {
+   "url": "https://www.blm.gov/programs/national-conservation-lands/nevada/basin-and-range-national-monument",
+   "fingerprint": "8defbe6a81bc",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://www.fws.gov/refuge/lake-mason"
+   "final": "https://www.blm.gov/programs/national-conservation-lands/nevada/basin-and-range-national-monument"
   },
-  "US-12824": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753826",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12919": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39754621",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-6441": {
-   "url": "https://www.blm.gov/visit/ear-mountain",
-   "fingerprint": "f52b28b62393",
+  "US-13519": {
+   "url": "https://www.shortfield.com/listing/stevens-crosby-nv/",
+   "fingerprint": "da313370c3ec",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://www.blm.gov/visit/ear-mountain"
+   "final": "https://www.shortfield.com/listing/stevens-crosby-nv/"
   },
-  "US-7999": {
-   "url": "https://www.fws.gov/refuge/hewitt_lake/",
-   "fingerprint": "e8c35fa12ec3",
+  "US-13269": {
+   "url": "https://en.wikipedia.org/wiki/List_of_Nevada_Scenic_Byways",
+   "fingerprint": "5fc4fcf739db",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://www.fws.gov/refuge/hewitt-lake"
+   "final": "https://en.wikipedia.org/wiki/List_of_Nevada_Scenic_Byways"
   },
-  "US-4849": {
-   "url": "https://archive.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html",
-   "fingerprint": "660fbd576fd9",
+  "US-9258": {
+   "url": "https://www.blm.gov/sites/blm.gov/files/uploads/Programs_NationalConservationLands_WildernessAreas_NV_Ireteba%20Peaks%20Wilderness%20Fact%20Sheet%20Web%20Opt.pdf",
+   "fingerprint": "126400803ecf",
+   "date": "2026-11-20",
+   "kind": "pdf",
+   "final": "https://www.blm.gov/sites/blm.gov/files/uploads/Programs_NationalConservationLands_WildernessAreas_NV_Ireteba%20Peaks%20Wilderness%20Fact%20Sheet%20Web%20Opt.pdf"
+  },
+  "US-13484": {
+   "url": "https://shpo.nv.gov/uploads/documents/NV_Clark_County_Boulder_City_Navy_Hangar_Final_2026-05-28.pdf",
+   "fingerprint": "468ac7b901cc",
+   "date": "2026-11-20",
+   "kind": "pdf",
+   "final": "https://shpo.nv.gov/uploads/documents/NV_Clark_County_Boulder_City_Navy_Hangar_Final_2026-05-28.pdf"
+  },
+  "US-9241": {
+   "url": "https://d3n8a8pro7vhmx.cloudfront.net/nevadawilderness/legacy_url/730/map_Bristlecone_w_factsheet.pdf?1366666679",
+   "fingerprint": "41242d02f7ad",
+   "date": "2026-11-20",
+   "kind": "pdf",
+   "final": "https://d3n8a8pro7vhmx.cloudfront.net/nevadawilderness/legacy_url/730/map_Bristlecone_w_factsheet.pdf?1366666679"
+  },
+  "US-13058": {
+   "url": "https://www.blm.gov/visit/wilson-canyon",
+   "fingerprint": "190dc676bfb1",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://mca.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html"
+   "final": "https://www.blm.gov/visit/wilson-canyon"
   },
-  "US-12646": {
-   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754345",
-   "fingerprint": "342444155f69",
+  "US-12372": {
+   "url": "https://parks.nv.gov/parks/lake-tahoe-nevada-state-park-2",
+   "fingerprint": "89c45c491158",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   "final": "https://parks.nv.gov/parks/lake-tahoe-nevada-state-park-2"
   },
-  "US-12918": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39754581",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12876": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753844",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12916": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753438",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12864": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753534",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12923": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39754543",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12862": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39754263",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-10696": {
-   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753622",
-   "fingerprint": "342444155f69",
+  "US-13525": {
+   "url": "https://skyvector.com/airport/0L9/Echo-Bay-Airport",
+   "fingerprint": "1463d3e45f70",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   "final": "https://skyvector.com/airport/0L9/Echo-Bay-Airport"
   },
-  "US-4850": {
-   "url": "https://archive.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html",
-   "fingerprint": "660fbd576fd9",
+  "US-13163": {
+   "url": "https://www.blm.gov/visit/dispersed-jeanroach-dry-lakes",
+   "fingerprint": "80964c4c0a63",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://mca.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html"
+   "final": "https://www.blm.gov/visit/dispersed-jeanroach-dry-lakes"
   },
-  "US-12821": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753804",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12909": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753714",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12633": {
-   "url": "https://www.blm.gov/programs/national-conservation-lands/montana-dakotas/sleeping-giant-sheep-creek",
-   "fingerprint": "80c44165415c",
+  "US-13259": {
+   "url": "https://en.wikipedia.org/wiki/List_of_Nevada_Scenic_Byways",
+   "fingerprint": "5fc4fcf739db",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://www.blm.gov/programs/national-conservation-lands/montana-dakotas/sleeping-giant-sheep-creek"
+   "final": "https://en.wikipedia.org/wiki/List_of_Nevada_Scenic_Byways"
   },
-  "US-12658": {
-   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753632",
-   "fingerprint": "342444155f69",
+  "US-13228": {
+   "url": "https://www.blm.gov/visit/zold-red-spring-picnic-area",
+   "fingerprint": "2a093f0130a7",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   "final": "https://www.blm.gov/visit/zold-red-spring-picnic-area"
   },
-  "US-12893": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753678",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12883": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753848",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-7996": {
-   "url": "https://www.fws.gov/refuge/black_coulee/",
-   "fingerprint": "f0840c5803d6",
+  "US-13511": {
+   "url": "https://www.shortfield.com/listing/bonnie-claire-nv/",
+   "fingerprint": "efe0d61d631e",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://www.fws.gov/refuge/black-coulee"
+   "final": "https://www.shortfield.com/listing/bonnie-claire-nv/"
   },
-  "US-12900": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39754461",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12885": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39754381",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12657": {
-   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753612",
-   "fingerprint": "342444155f69",
+  "US-13454": {
+   "url": "https://southwestexplorers.com/steamboat-springs-nevada/",
+   "fingerprint": "de481ce9d68e",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   "final": "https://southwestexplorers.com/steamboat-springs-nevada/"
   },
-  "US-12874": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753546",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12850": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753836",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12854": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753840",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12904": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753854",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12905": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753866",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-11216": {
-   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753636",
-   "fingerprint": "342444155f69",
+  "US-13035": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/granite-range",
+   "fingerprint": "1706880ccf5e",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/granite-range"
   },
-  "US-12896": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39754181",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12819": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39754321",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12894": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39754181",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12851": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753838",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12897": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753864",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-4851": {
-   "url": "https://archive.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html",
-   "fingerprint": "660fbd576fd9",
+  "US-13029": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/flanigan-hma",
+   "fingerprint": "2330aea5f3af",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://mca.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html"
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/flanigan-hma"
   },
-  "US-12895": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753694",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12865": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753674",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12847": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753828",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12866": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39754383",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12857": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753704",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12899": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39754391",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12930": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753456",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12827": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753504",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12917": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753808",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12887": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753710",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12920": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39754405",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12698": {
-   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754089",
-   "fingerprint": "342444155f69",
+  "US-13283": {
+   "url": "https://www.destination4x4.com/nevada-4x4-trails/nevada-state-historic-markers/",
+   "fingerprint": "4d88b6a5ade7",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   "final": "https://www.destination4x4.com/nevada-4x4-trails/nevada-state-historic-markers/"
   },
-  "US-12634": {
-   "url": "https://www.blm.gov/programs/national-conservation-lands/montana-dakotas/axolotl-lakes-wsa",
-   "fingerprint": "54e906610053",
+  "US-13370": {
+   "url": "https://www.destination4x4.com/searchlight-nevada-clark-county-nevada/",
+   "fingerprint": "949653d2a94a",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://www.blm.gov/programs/national-conservation-lands/montana-dakotas/axolotl-lakes-wsa"
+   "final": "https://www.destination4x4.com/searchlight-nevada-clark-county-nevada/"
   },
-  "US-12892": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753862",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12647": {
-   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754347",
-   "fingerprint": "342444155f69",
+  "US-13050": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/silver-king-hma",
+   "fingerprint": "67db33c76e9e",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/silver-king-hma"
   },
-  "US-12936": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753728",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12869": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39754155",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12886": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39754499",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12906": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753672",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12908": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753750",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12932": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753858",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12649": {
-   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754295",
-   "fingerprint": "342444155f69",
+  "US-13260": {
+   "url": "https://en.wikipedia.org/wiki/List_of_Nevada_Scenic_Byways",
+   "fingerprint": "5fc4fcf739db",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   "final": "https://en.wikipedia.org/wiki/List_of_Nevada_Scenic_Byways"
   },
-  "US-12898": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753712",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12695": {
-   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754601",
-   "fingerprint": "342444155f69",
+  "US-13405": {
+   "url": "https://southwestexplorers.com/kingsbury-grade/",
+   "fingerprint": "472b70d7f4d3",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   "final": "https://southwestexplorers.com/kingsbury-grade/"
   },
-  "US-12696": {
-   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754700",
-   "fingerprint": "342444155f69",
+  "US-13013": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/dogskin",
+   "fingerprint": "a951b4fe8c45",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/dogskin"
   },
-  "US-12921": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753720",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-2606": {
-   "url": "https://fwp.mt.gov/wild-horse-island",
-   "fingerprint": "52461bef8db7",
+  "US-13279": {
+   "url": "https://en.wikipedia.org/wiki/List_of_Nevada_historical_markers",
+   "fingerprint": "7fd624e16326",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://fwp.mt.gov/wild-horse-island"
+   "final": "https://en.wikipedia.org/wiki/List_of_Nevada_historical_markers"
   },
-  "US-11219": {
-   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753949",
-   "fingerprint": "342444155f69",
+  "US-13307": {
+   "url": "https://www.fs.usda.gov/r05/laketahoebasin/recreation/mt-rose-wilderness",
+   "fingerprint": "e3b0c44298fc",
+   "date": "2026-11-20",
+   "kind": "resting",
+   "final": "https://www.fs.usda.gov/r05/laketahoebasin/recreation/mt-rose-wilderness"
+  },
+  "US-2626": {
+   "url": "http://parks.nv.gov/parks/berlin-ichthyosaur",
+   "fingerprint": "fcdc2bdbab0c",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   "final": "https://parks.nv.gov/parks/berlin-ichthyosaur"
   },
-  "US-12868": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753538",
-   "fingerprint": "489be32987e6",
+  "US-9268": {
+   "url": "https://www.nevadawilderness.org/mount_irish_wilderness",
+   "fingerprint": "",
    "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   "kind": "refused",
+   "final": "https://www.nevadawilderness.org/mount_irish_wilderness"
   },
-  "US-12935": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753628",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12333": {
-   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753943",
-   "fingerprint": "342444155f69",
+  "US-13118": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/bullfrog-hma",
+   "fingerprint": "29f43ad2b540",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/bullfrog-hma"
   },
-  "US-12871": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39754159",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12853": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39754449",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12655": {
-   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754674",
-   "fingerprint": "342444155f69",
+  "US-13177": {
+   "url": "https://www.blm.gov/visit/rhyolite-historic-area",
+   "fingerprint": "9688c7671771",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   "final": "https://www.blm.gov/visit/rhyolite-historic-area"
   },
-  "US-12934": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753880",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12712": {
-   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753370",
-   "fingerprint": "342444155f69",
+  "US-13130": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/lava-beds-hma",
+   "fingerprint": "19efab38f5bc",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/lava-beds-hma"
   },
-  "US-12334": {
-   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753927",
-   "fingerprint": "342444155f69",
+  "US-13275": {
+   "url": "https://www.destination4x4.com/nevada-4x4-trails/nevada-state-historic-markers/",
+   "fingerprint": "4d88b6a5ade7",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   "final": "https://www.destination4x4.com/nevada-4x4-trails/nevada-state-historic-markers/"
   },
-  "US-12700": {
-   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753941",
-   "fingerprint": "342444155f69",
+  "US-13284": {
+   "url": "https://visitcarsoncity.com/attractions/kit-carson-trail/",
+   "fingerprint": "e0bf01bde0ba",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   "final": "https://visitcarsoncity.com/attractions/kit-carson-trail/"
   },
-  "US-12863": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753706",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12926": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753572",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12818": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753642",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12922": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753722",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12632": {
-   "url": "https://www.blm.gov/programs/national-conservation-lands/montana-dakotas/sleeping-giant-sheep-creek",
-   "fingerprint": "80c44165415c",
+  "US-13266": {
+   "url": "https://en.wikipedia.org/wiki/List_of_Nevada_Scenic_Byways",
+   "fingerprint": "5fc4fcf739db",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://www.blm.gov/programs/national-conservation-lands/montana-dakotas/sleeping-giant-sheep-creek"
+   "final": "https://en.wikipedia.org/wiki/List_of_Nevada_Scenic_Byways"
   },
-  "US-12884": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753850",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-10527": {
-   "url": "https://www.blm.gov/visit/judith-landing",
-   "fingerprint": "44b8d5d448a2",
+  "US-13040": {
+   "url": "https://www.blm.gov/visit/grimes-pointhidden-cave-archaeological-site",
+   "fingerprint": "415c21f4a27d",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://www.blm.gov/visit/judith-landing"
+   "final": "https://www.blm.gov/visit/grimes-pointhidden-cave-archaeological-site"
   },
-  "US-0408": {
-   "url": "https://www.fws.gov/refuge/ul_bend/",
-   "fingerprint": "c6e64bebfd61",
+  "US-13319": {
+   "url": "https://southwestexplorers.com/truckee-river-west/",
+   "fingerprint": "e031f3aed1df",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://www.fws.gov/locations/ul-bend-national-wildlife-refuge"
+   "final": "https://southwestexplorers.com/truckee-river-west/"
   },
-  "US-12820": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39754101",
-   "fingerprint": "489be32987e6",
+  "US-9267": {
+   "url": "https://www.nevadawilderness.org/mount_grafton_wilderness",
+   "fingerprint": "",
    "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   "kind": "refused",
+   "final": "https://www.nevadawilderness.org/mount_grafton_wilderness"
   },
-  "US-12825": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753810",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-4846": {
-   "url": "https://archive.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html",
-   "fingerprint": "660fbd576fd9",
+  "US-10466": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/blue-wing-mountains",
+   "fingerprint": "280b84d2bdf0",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://mca.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html"
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/blue-wing-mountains"
   },
-  "US-12911": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39754125",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12635": {
-   "url": "https://www.blm.gov/programs/national-conservation-lands/montana-dakotas/humbug-spires-wsa",
-   "fingerprint": "a170fcf6bcbf",
+  "US-13014": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/granite-peak",
+   "fingerprint": "a1b917389dca",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://www.blm.gov/programs/national-conservation-lands/montana-dakotas/humbug-spires-wsa"
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/granite-peak"
   },
-  "US-12907": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753624",
-   "fingerprint": "489be32987e6",
+  "US-9245": {
+   "url": "https://www.nevadawilderness.org/delamar_mountains_wilderness",
+   "fingerprint": "",
    "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
+   "kind": "refused",
+   "final": "https://www.nevadawilderness.org/delamar_mountains_wilderness"
   },
-  "US-12925": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753904",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12901": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753690",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12928": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753876",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12890": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753860",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12697": {
-   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754077",
-   "fingerprint": "342444155f69",
+  "US-13187": {
+   "url": "https://www.blm.gov/visit/winnemucca-sand-dunes",
+   "fingerprint": "4fbac1df1c3f",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   "final": "https://www.blm.gov/visit/winnemucca-sand-dunes"
   },
-  "US-12822": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753822",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12699": {
-   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754628",
-   "fingerprint": "342444155f69",
+  "US-13192": {
+   "url": "https://www.blm.gov/visit/chief-mountain-west",
+   "fingerprint": "0ce5587904bb",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   "final": "https://www.blm.gov/visit/chief-mountain-west"
   },
-  "US-12702": {
-   "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754676",
-   "fingerprint": "342444155f69",
+  "US-13010": {
+   "url": "https://www.blm.gov/visit/dry-valley-highway-vehicle-area",
+   "fingerprint": "a3103af23b1c",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753634"
+   "final": "https://www.blm.gov/visit/dry-valley-highway-vehicle-area"
   },
-  "US-12855": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39754309",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12873": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39754325",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12933": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39753878",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12912": {
-   "url": "https://myfwp.mt.gov/fishMT/fas/39754327",
-   "fingerprint": "489be32987e6",
-   "date": "2026-11-20",
-   "kind": "script-built",
-   "final": "https://myfwp.mt.gov/fishMT/resourceBusy"
-  },
-  "US-12941": {
-   "url": "https://fwp.mt.gov/stateparks/judith-landing",
-   "fingerprint": "01746eb60190",
+  "US-13214": {
+   "url": "https://www.blm.gov/visit/logandale-trails",
+   "fingerprint": "0866fdf4dc70",
    "date": "2026-11-20",
    "kind": "html",
-   "final": "https://fwp.mt.gov/stateparks/judith-landing"
+   "final": "https://www.blm.gov/visit/logandale-trails"
+  },
+  "US-13183": {
+   "url": "https://www.blm.gov/visit/walking-box-ranch",
+   "fingerprint": "44938f721c0f",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/walking-box-ranch"
+  },
+  "US-2636": {
+   "url": "http://parks.nv.gov/parks/spring-valley",
+   "fingerprint": "23793743bf63",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://parks.nv.gov/parks/spring-valley"
+  },
+  "US-13475": {
+   "url": "https://southwestexplorers.com/mount-rose-weather-observatory/",
+   "fingerprint": "23f0c0479874",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/mount-rose-weather-observatory/"
+  },
+  "US-13062": {
+   "url": "https://ndor.nv.gov/",
+   "fingerprint": "",
+   "date": "2026-11-20",
+   "kind": "none"
+  },
+  "US-13241": {
+   "url": "https://publicworks.nv.gov/uploadedFiles/publicworksnvgov/content/Documents/FCA_Reports/9897%20Lake%20Mead%20Fish%20Hatchery%20FCA%20Report.pdf",
+   "fingerprint": "975fa3a535b6",
+   "date": "2026-11-20",
+   "kind": "pdf",
+   "final": "https://publicworks.nv.gov/uploadedFiles/publicworksnvgov/content/Documents/FCA_Reports/9897%20Lake%20Mead%20Fish%20Hatchery%20FCA%20Report.pdf"
+  },
+  "US-13152": {
+   "url": "https://www.blm.gov/visit/mill-creek-recreation-area",
+   "fingerprint": "68d17c29afa9",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/mill-creek-recreation-area"
+  },
+  "US-13238": {
+   "url": "https://www.fws.gov/fish-hatchery/lahontan",
+   "fingerprint": "d783f17e7de1",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.fws.gov/locations/lahontan-national-fish-hatchery"
+  },
+  "US-13226": {
+   "url": "https://www.blm.gov/visit/ward-mountain-recreation-area",
+   "fingerprint": "801007a5a09a",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/ward-mountain-recreation-area"
+  },
+  "US-13368": {
+   "url": "https://southwestexplorers.com/franktown-nevada/",
+   "fingerprint": "b97f2b8df515",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/franktown-nevada/"
+  },
+  "US-9264": {
+   "url": "https://www.nevadawilderness.org/meadow_valley_range_wilderness",
+   "fingerprint": "",
+   "date": "2026-11-20",
+   "kind": "refused",
+   "final": "https://www.nevadawilderness.org/meadow_valley_range_wilderness"
+  },
+  "US-13139": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/muddy-mountains",
+   "fingerprint": "0f55d50a88d9",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/muddy-mountains"
+  },
+  "US-13323": {
+   "url": "https://www.destination4x4.com/savage-mansion-nshm-87/",
+   "fingerprint": "bb5ace8831d2",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.destination4x4.com/savage-mansion-nshm-87/"
+  },
+  "US-13448": {
+   "url": "https://southwestexplorers.com/chief-tecopa-peacemaker-of-the-paiutes/",
+   "fingerprint": "509aba056811",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/chief-tecopa-peacemaker-of-the-paiutes/"
+  },
+  "US-13022": {
+   "url": "https://www.ndow.org/your-public-land/",
+   "fingerprint": "",
+   "date": "2026-11-20",
+   "kind": "refused",
+   "final": "https://www.ndow.org/your-public-land/"
+  },
+  "US-13023": {
+   "url": "https://www.mypacer.com/parks/363518/artesia-lake-state-wildlife-management-area-yerington",
+   "fingerprint": "0626e17eff64",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.mypacer.com/parks/363518/artesia-lake-state-wildlife-management-area-yerington"
+  },
+  "US-13222": {
+   "url": "https://www.blm.gov/visit/shooting-gallery",
+   "fingerprint": "36375710168b",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/shooting-gallery"
+  },
+  "US-13521": {
+   "url": "https://skyvector.com/airport/N59/Rosaschi-Air-Park-Airport",
+   "fingerprint": "5e3905206d1c",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://skyvector.com/airport/N59/Rosaschi-Air-Park-Airport"
+  },
+  "US-11913": {
+   "url": "https://www.nevadawilderness.org/bad_lands_wilderness_study_area",
+   "fingerprint": "",
+   "date": "2026-11-20",
+   "kind": "refused",
+   "final": "https://www.nevadawilderness.org/bad_lands_wilderness_study_area"
+  },
+  "US-10834": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/sand-springs",
+   "fingerprint": "a6bae29fed33",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/sand-springs"
+  },
+  "US-13365": {
+   "url": "https://southwestexplorers.com/the-camel-corps/",
+   "fingerprint": "61e41bb4e28c",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/the-camel-corps/"
+  },
+  "US-10851": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/south-stillwater",
+   "fingerprint": "303451d1d42c",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/south-stillwater"
+  },
+  "US-13194": {
+   "url": "https://www.blm.gov/visit/egan-crest-trailhead",
+   "fingerprint": "57e339d4eccb",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/egan-crest-trailhead"
+  },
+  "US-13303": {
+   "url": "https://southwestexplorers.com/derby-diversion-dam/",
+   "fingerprint": "561a705beac4",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/derby-diversion-dam/"
+  },
+  "US-13031": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/garfield-flat",
+   "fingerprint": "613f7f6c1ad7",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/garfield-flat"
+  },
+  "US-13326": {
+   "url": "https://southwestexplorers.com/delamar-nevada-ghost-town-guide/",
+   "fingerprint": "b3b21192b803",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/delamar-nevada-ghost-town-guide/"
+  },
+  "US-13288": {
+   "url": "https://www.destination4x4.com/columbus-nevada-state-historic-marker-20/",
+   "fingerprint": "cfb077a80659",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.destination4x4.com/columbus-nevada-state-historic-marker-20/"
+  },
+  "US-13291": {
+   "url": "https://en.wikipedia.org/wiki/List_of_Nevada_historical_markers",
+   "fingerprint": "7fd624e16326",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://en.wikipedia.org/wiki/List_of_Nevada_historical_markers"
+  },
+  "US-13189": {
+   "url": "https://www.blm.gov/visit/oak-springs-trilobite-site",
+   "fingerprint": "a66854c6f630",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/oak-springs-trilobite-site"
+  },
+  "US-13406": {
+   "url": "https://southwestexplorers.com/luther-canyon-fay-canyon/",
+   "fingerprint": "95f6864d69a6",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/luther-canyon-fay-canyon/"
+  },
+  "US-13123": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/bald-mountain",
+   "fingerprint": "e08a5203d333",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/bald-mountain"
+  },
+  "US-13478": {
+   "url": "https://southwestexplorers.com/union-pacific-depot-1923/",
+   "fingerprint": "7c8d8a1d142b",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/union-pacific-depot-1923/"
+  },
+  "US-13308": {
+   "url": "https://www.destination4x4.com/old-boundary-nevadas-southern-boundary-1861-1867-57/",
+   "fingerprint": "1a44c0d8070f",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.destination4x4.com/old-boundary-nevadas-southern-boundary-1861-1867-57/"
+  },
+  "US-13274": {
+   "url": "https://www.destination4x4.com/nevada-4x4-trails/nevada-state-historic-markers/",
+   "fingerprint": "4d88b6a5ade7",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.destination4x4.com/nevada-4x4-trails/nevada-state-historic-markers/"
+  },
+  "US-13239": {
+   "url": "https://www.ndow.org/waters/mason-valley-hatchery-outponds/",
+   "fingerprint": "",
+   "date": "2026-11-20",
+   "kind": "refused",
+   "final": "https://www.ndow.org/waters/mason-valley-hatchery-outponds/"
+  },
+  "US-13034": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/goshute",
+   "fingerprint": "453ba8ceba80",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/goshute"
+  },
+  "US-13413": {
+   "url": "https://southwestexplorers.com/dayton-chinatown/",
+   "fingerprint": "20f1e99f731a",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/dayton-chinatown/"
+  },
+  "US-13453": {
+   "url": "https://southwestexplorers.com/original-homesite-of-a-las-vegas-pioneer-pop-squires-1865-1958/",
+   "fingerprint": "af659e350463",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/original-homesite-of-a-las-vegas-pioneer-pop-squires-1865-1958/"
+  },
+  "US-13215": {
+   "url": "https://www.blm.gov/visit/mathews-canyon-dam",
+   "fingerprint": "4ed83326735b",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/mathews-canyon-dam"
+  },
+  "US-13465": {
+   "url": "https://southwestexplorers.com/jackrabbit-nevada/",
+   "fingerprint": "dcc6f3cf00a7",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/jackrabbit-nevada/"
+  },
+  "US-13299": {
+   "url": "https://southwestexplorers.com/moapa-valley/",
+   "fingerprint": "a98f9878e366",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/moapa-valley/"
+  },
+  "US-9281": {
+   "url": "https://www.nevadawilderness.org/south_egan_range_wilderness",
+   "fingerprint": "",
+   "date": "2026-11-20",
+   "kind": "refused",
+   "final": "https://www.nevadawilderness.org/south_egan_range_wilderness"
+  },
+  "US-13206": {
+   "url": "https://www.blm.gov/visit/barnes-canyon-trailhead",
+   "fingerprint": "f9625e141d22",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/barnes-canyon-trailhead"
+  },
+  "US-13217": {
+   "url": "https://www.blm.gov/visit/panaca-charcoal-kilns",
+   "fingerprint": "767e1cda8cc5",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/panaca-charcoal-kilns"
+  },
+  "US-13196": {
+   "url": "https://www.blm.gov/visit/stampede",
+   "fingerprint": "3b61097b6c6f",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/stampede"
+  },
+  "US-13199": {
+   "url": "https://www.blm.gov/visit/bloody-shins-trail-system",
+   "fingerprint": "384e8bcf1c6f",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/bloody-shins-trail-system"
+  },
+  "US-13263": {
+   "url": "https://en.wikipedia.org/wiki/List_of_Nevada_Scenic_Byways",
+   "fingerprint": "5fc4fcf739db",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://en.wikipedia.org/wiki/List_of_Nevada_Scenic_Byways"
+  },
+  "US-13276": {
+   "url": "https://www.destination4x4.com/nevada-4x4-trails/nevada-state-historic-markers/",
+   "fingerprint": "4d88b6a5ade7",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.destination4x4.com/nevada-4x4-trails/nevada-state-historic-markers/"
+  },
+  "US-13324": {
+   "url": "https://southwestexplorers.com/sparks-nevada/",
+   "fingerprint": "66e70dbc2d0b",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/sparks-nevada/"
+  },
+  "US-9254": {
+   "url": "https://www.blm.gov/visit/high-rock-canyon",
+   "fingerprint": "ab9345b340db",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/high-rock-canyon"
+  },
+  "US-13476": {
+   "url": "https://southwestexplorers.com/stonehouse-nevada/",
+   "fingerprint": "10626893ad02",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/stonehouse-nevada/"
+  },
+  "US-13122": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/horse-mountain",
+   "fingerprint": "69c49b79bba5",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/horse-mountain"
+  },
+  "US-0469": {
+   "url": "https://www.fws.gov/refuge/Ruby_Lake/",
+   "fingerprint": "7106dc0cd5b2",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.fws.gov/locations/ruby-lake-national-wildlife-refuge"
+  },
+  "US-13285": {
+   "url": "https://www.destination4x4.com/tonopah-nevada-state-historic-marker-15/",
+   "fingerprint": "3c993cca8e32",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.destination4x4.com/tonopah-nevada-state-historic-marker-15/"
+  },
+  "US-13300": {
+   "url": "https://southwestexplorers.com/powell-of-the-colorado/",
+   "fingerprint": "761d85c201f4",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/powell-of-the-colorado/"
+  },
+  "US-13180": {
+   "url": "https://www.blm.gov/visit/lovelock-cave-historic-site",
+   "fingerprint": "76c3d01eaa7d",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/lovelock-cave-historic-site"
+  },
+  "US-13452": {
+   "url": "https://southwestexplorers.com/von-schmidt-state-boundry-monument/",
+   "fingerprint": "264a2fbcdc67",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/von-schmidt-state-boundry-monument/"
+  },
+  "US-13281": {
+   "url": "https://www.destination4x4.com/nevada-4x4-trails/nevada-state-historic-markers/",
+   "fingerprint": "4d88b6a5ade7",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.destination4x4.com/nevada-4x4-trails/nevada-state-historic-markers/"
+  },
+  "US-13155": {
+   "url": "https://www.blm.gov/visit/baker-archaeological-viewing-site",
+   "fingerprint": "581efd178853",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/baker-archaeological-viewing-site"
+  },
+  "US-13320": {
+   "url": "https://southwestexplorers.com/truckee-river-east/",
+   "fingerprint": "a2960548787c",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/truckee-river-east/"
+  },
+  "US-13447": {
+   "url": "https://southwestexplorers.com/glendale-school-1864-1958-oldest-remaining-school-building-in-nevada/",
+   "fingerprint": "1cd51b5f3e64",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/glendale-school-1864-1958-oldest-remaining-school-building-in-nevada/"
+  },
+  "US-13481": {
+   "url": "https://southwestexplorers.com/spooner-summit/",
+   "fingerprint": "ed806e2dc219",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/spooner-summit/"
+  },
+  "US-9262": {
+   "url": "https://www.blm.gov/sites/blm.gov/files/uploads/Lime%20Canyon%20Wilderness%20Fact%20Sheet%20Web%20Opt.pdf",
+   "fingerprint": "3020d85fd52e",
+   "date": "2026-11-20",
+   "kind": "pdf",
+   "final": "https://www.blm.gov/sites/blm.gov/files/uploads/Lime%20Canyon%20Wilderness%20Fact%20Sheet%20Web%20Opt.pdf"
+  },
+  "US-13129": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/lahontan-hma",
+   "fingerprint": "e985cfcd4b00",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/lahontan-hma"
+  },
+  "US-13301": {
+   "url": "https://www.destination4x4.com/pueblo-grande-de-nevada/",
+   "fingerprint": "e0e9634c5c85",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.destination4x4.com/pueblo-grande-de-nevada/"
+  },
+  "US-13367": {
+   "url": "https://southwestexplorers.com/wabuska-nevada/",
+   "fingerprint": "2059e4c436ee",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/wabuska-nevada/"
+  },
+  "US-9238": {
+   "url": "https://www.blm.gov/visit/big-rocks-north",
+   "fingerprint": "15c376066ba0",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/big-rocks-north"
+  },
+  "US-13115": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/gold-butte-hma",
+   "fingerprint": "130d9930cfcf",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/gold-butte-hma"
+  },
+  "US-13464": {
+   "url": "https://southwestexplorers.com/bullionville-nevada/",
+   "fingerprint": "82861561768b",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/bullionville-nevada/"
+  },
+  "US-9276": {
+   "url": "https://www.thearmchairexplorer.com/nevada/parsnip-peak-wilderness.php",
+   "fingerprint": "70dd0c2c6f36",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.thearmchairexplorer.com/nevada/parsnip-peak-wilderness.php"
+  },
+  "US-13223": {
+   "url": "https://www.blm.gov/visit/south-fork-canyon-special-recreation-management-area",
+   "fingerprint": "1058057e77be",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/south-fork-canyon-special-recreation-management-area"
+  },
+  "US-13220": {
+   "url": "https://www.blm.gov/visit/salmon-falls-creek-0",
+   "fingerprint": "686d4a2ed893",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/salmon-falls-creek-0"
+  },
+  "US-13468": {
+   "url": "https://southwestexplorers.com/chollar-mine/",
+   "fingerprint": "b3fd8b04df37",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/chollar-mine/"
+  },
+  "US-13025": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/clan-alpine",
+   "fingerprint": "5e084e2c9f30",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/clan-alpine"
+  },
+  "US-13188": {
+   "url": "https://www.blm.gov/visit/garnet-hill",
+   "fingerprint": "be7737cc7a7e",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/garnet-hill"
+  },
+  "US-13467": {
+   "url": "https://southwestexplorers.com/hiko-nevada/",
+   "fingerprint": "077c63e0911b",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/hiko-nevada/"
+  },
+  "US-10469": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/mcgee-mountain",
+   "fingerprint": "0090099dde8d",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/mcgee-mountain"
+  },
+  "US-13277": {
+   "url": "https://www.destination4x4.com/nevada-4x4-trails/nevada-state-historic-markers/",
+   "fingerprint": "4d88b6a5ade7",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.destination4x4.com/nevada-4x4-trails/nevada-state-historic-markers/"
+  },
+  "US-13451": {
+   "url": "https://southwestexplorers.com/panaca-ward-chapel/",
+   "fingerprint": "ab2e7a8fd2a0",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/panaca-ward-chapel/"
+  },
+  "US-9249": {
+   "url": "https://www.nevadawilderness.org/fortification_range_wilderness",
+   "fingerprint": "",
+   "date": "2026-11-20",
+   "kind": "refused",
+   "final": "https://www.nevadawilderness.org/fortification_range_wilderness"
+  },
+  "US-13264": {
+   "url": "https://en.wikipedia.org/wiki/List_of_Nevada_Scenic_Byways",
+   "fingerprint": "5fc4fcf739db",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://en.wikipedia.org/wiki/List_of_Nevada_Scenic_Byways"
+  },
+  "US-2625": {
+   "url": "http://parks.nv.gov/parks/beaver-dam",
+   "fingerprint": "6c34ad368542",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://parks.nv.gov/parks/beaver-dam"
+  },
+  "US-13287": {
+   "url": "https://www.destination4x4.com/pershing-county-nevada-state-historic-marker-17/",
+   "fingerprint": "1aa7889f3bb5",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.destination4x4.com/pershing-county-nevada-state-historic-marker-17/"
+  },
+  "US-13410": {
+   "url": "https://southwestexplorers.com/fort-mcdermitt-nevada/",
+   "fingerprint": "b5ca07fc6d28",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/fort-mcdermitt-nevada/"
+  },
+  "US-13019": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/buffalo-hills",
+   "fingerprint": "3bc0fa80b739",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/buffalo-hills"
+  },
+  "US-13305": {
+   "url": "https://southwestexplorers.com/carlin-canyon/",
+   "fingerprint": "6f87fa2619e3",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/carlin-canyon/"
+  },
+  "US-13306": {
+   "url": "https://southwestexplorers.com/reno-nevada/",
+   "fingerprint": "fa6fc1b270d1",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/reno-nevada/"
+  },
+  "US-10844": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/diamond-hma",
+   "fingerprint": "ecaeb8034746",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/diamond-hma"
+  },
+  "US-13407": {
+   "url": "https://southwestexplorers.com/courthouse-site-1865-1907/",
+   "fingerprint": "1dd8f1de47cd",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/courthouse-site-1865-1907/"
+  },
+  "US-9235": {
+   "url": "https://www.blm.gov/visit/arrow-canyon-wilderness",
+   "fingerprint": "e416caab8ed0",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/arrow-canyon-wilderness"
+  },
+  "US-9289": {
+   "url": "https://www.nevadawilderness.org/weepah_spring_wilderness",
+   "fingerprint": "",
+   "date": "2026-11-20",
+   "kind": "refused",
+   "final": "https://www.nevadawilderness.org/weepah_spring_wilderness"
+  },
+  "US-13289": {
+   "url": "https://www.destination4x4.com/the-humboldt-canal-nevada-state-historic-marker-21/",
+   "fingerprint": "0f6c6131dd75",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.destination4x4.com/the-humboldt-canal-nevada-state-historic-marker-21/"
+  },
+  "US-13173": {
+   "url": "https://www.blm.gov/visit/wilson-reservoir-recreation-management-area",
+   "fingerprint": "1e03c7087f68",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/wilson-reservoir-recreation-management-area"
+  },
+  "US-13469": {
+   "url": "https://southwestexplorers.com/old-geiger-grade-in-canyon-below/",
+   "fingerprint": "f6314f779a8c",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/old-geiger-grade-in-canyon-below/"
+  },
+  "US-9292": {
+   "url": "https://www.nevadawilderness.org/worthington_mountains_wilderness",
+   "fingerprint": "",
+   "date": "2026-11-20",
+   "kind": "refused",
+   "final": "https://www.nevadawilderness.org/worthington_mountains_wilderness"
+  },
+  "US-13018": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/black-rock",
+   "fingerprint": "c487fb8a8e12",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/black-rock"
+  },
+  "US-13154": {
+   "url": "https://www.blm.gov/visit/illipah-reservoir-recreation-area",
+   "fingerprint": "1a8effc687e2",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/illipah-reservoir-recreation-area"
+  },
+  "US-13267": {
+   "url": "https://en.wikipedia.org/wiki/List_of_Nevada_Scenic_Byways",
+   "fingerprint": "5fc4fcf739db",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://en.wikipedia.org/wiki/List_of_Nevada_Scenic_Byways"
+  },
+  "US-13268": {
+   "url": "https://en.wikipedia.org/wiki/List_of_Nevada_Scenic_Byways",
+   "fingerprint": "5fc4fcf739db",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://en.wikipedia.org/wiki/List_of_Nevada_Scenic_Byways"
+  },
+  "US-13466": {
+   "url": "https://southwestexplorers.com/crystal-springs-nevada/",
+   "fingerprint": "746b5d7004b5",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/crystal-springs-nevada/"
+  },
+  "US-13165": {
+   "url": "https://www.blm.gov/visit/big-dune-0",
+   "fingerprint": "219bb3ee7c15",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/big-dune-0"
+  },
+  "US-13520": {
+   "url": "https://www.shortfield.com/listing/denio-junction-nv/",
+   "fingerprint": "ba8d1702018a",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.shortfield.com/listing/denio-junction-nv/"
+  },
+  "US-13225": {
+   "url": "https://www.blm.gov/visit/stevens-camp-recreation-area",
+   "fingerprint": "cd809c3bb6f8",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/stevens-camp-recreation-area"
+  },
+  "US-13363": {
+   "url": "https://southwestexplorers.com/panaca-mercantile-store/",
+   "fingerprint": "da35c40fa7af",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/panaca-mercantile-store/"
+  },
+  "US-13248": {
+   "url": "https://en.wikipedia.org/wiki/Fort_Ruby",
+   "fingerprint": "115baf31e4ce",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://en.wikipedia.org/wiki/Fort_Ruby"
+  },
+  "US-13507": {
+   "url": "https://www.shortfield.com/listing/sail-park-nv/",
+   "fingerprint": "f4defc50a3a5",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.shortfield.com/listing/sail-park-nv/"
+  },
+  "US-13209": {
+   "url": "https://www.blm.gov/visit/goldfield",
+   "fingerprint": "eebfa033d3de",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/goldfield"
+  },
+  "US-13218": {
+   "url": "https://www.blm.gov/visit/pine-canyon-dam",
+   "fingerprint": "bede0752dcc9",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/pine-canyon-dam"
+  },
+  "US-13282": {
+   "url": "https://www.destination4x4.com/eureka-nevada-nevada-state-historic-marker-11/",
+   "fingerprint": "b3ac2ceb4cb3",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.destination4x4.com/eureka-nevada-nevada-state-historic-marker-11/"
+  },
+  "US-13230": {
+   "url": "https://www.hmdb.org/m.asp?m=62121",
+   "fingerprint": "eb2ab9433826",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.hmdb.org/m.asp?m=62121"
+  },
+  "US-13261": {
+   "url": "https://en.wikipedia.org/wiki/List_of_Nevada_Scenic_Byways",
+   "fingerprint": "5fc4fcf739db",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://en.wikipedia.org/wiki/List_of_Nevada_Scenic_Byways"
+  },
+  "US-13322": {
+   "url": "https://southwestexplorers.com/grand-army-of-the-republic-memorial-tree/",
+   "fingerprint": "351aae6b0aab",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/grand-army-of-the-republic-memorial-tree/"
+  },
+  "US-9237": {
+   "url": "https://www.blm.gov/sites/blm.gov/files/documents/files/nevada_beckypeak_wildernessmapfactsheet.pdf",
+   "fingerprint": "032aa443ad82",
+   "date": "2026-11-20",
+   "kind": "pdf",
+   "final": "https://www.blm.gov/sites/blm.gov/files/documents/files/nevada_beckypeak_wildernessmapfactsheet.pdf"
+  },
+  "US-13120": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/saulsbury-hma",
+   "fingerprint": "74d0d08389a0",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/saulsbury-hma"
+  },
+  "US-13415": {
+   "url": "https://southwestexplorers.com/nevada-test-site/",
+   "fingerprint": "9987117210c0",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/nevada-test-site/"
+  },
+  "US-13304": {
+   "url": "https://www.destination4x4.com/fort-halleck-military-reservation-nevada-state-historic-marker-47/",
+   "fingerprint": "6995b5ca057b",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.destination4x4.com/fort-halleck-military-reservation-nevada-state-historic-marker-47/"
+  },
+  "US-13523": {
+   "url": "https://skyvector.com/airport/N15/Kingston-Airport",
+   "fingerprint": "8cc5ffc49ac7",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://skyvector.com/airport/N15/Kingston-Airport"
+  },
+  "US-13137": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/montgomery-pass",
+   "fingerprint": "dccd94470982",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/montgomery-pass"
+  },
+  "US-13470": {
+   "url": "https://southwestexplorers.com/lahontan-dam/",
+   "fingerprint": "be09084c03da",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/lahontan-dam/"
+  },
+  "US-9236": {
+   "url": "https://www.nevadawilderness.org/Bald_Mountain_Wilderness_trails",
+   "fingerprint": "",
+   "date": "2026-11-20",
+   "kind": "refused",
+   "final": "https://www.nevadawilderness.org/Bald_Mountain_Wilderness_trails"
+  },
+  "US-9286": {
+   "url": "https://www.fs.usda.gov/detail/htnf/home/?cid=stelprdb5239033",
+   "fingerprint": "e3b0c44298fc",
+   "date": "2026-11-20",
+   "kind": "resting",
+   "final": "https://www.fs.usda.gov/detail/htnf/home/?cid=stelprdb5239033"
+  },
+  "US-13053": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/stone-cabin",
+   "fingerprint": "2f7c35c99906",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/stone-cabin"
+  },
+  "US-13138": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/wassuk",
+   "fingerprint": "96918c34977c",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/wassuk"
+  },
+  "US-9273": {
+   "url": "https://www.nevadawilderness.org/north_jackson_mountains_wilderness",
+   "fingerprint": "",
+   "date": "2026-11-20",
+   "kind": "refused",
+   "final": "https://www.nevadawilderness.org/north_jackson_mountains_wilderness"
+  },
+  "US-13140": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/north-monitor",
+   "fingerprint": "4c21beefeddd",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/north-monitor"
+  },
+  "US-13412": {
+   "url": "https://southwestexplorers.com/silver-peak-nevada/",
+   "fingerprint": "e2bd66b1b7ed",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/silver-peak-nevada/"
+  },
+  "US-13124": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/calico-mountains",
+   "fingerprint": "29a7d261ad28",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/calico-mountains"
+  },
+  "US-13252": {
+   "url": "https://en.wikipedia.org/wiki/Stokes_Castle",
+   "fingerprint": "0919f170e655",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://en.wikipedia.org/wiki/Stokes_Castle"
+  },
+  "US-13119": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/stonewall",
+   "fingerprint": "407556a4a188",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/stonewall"
+  },
+  "US-13125": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/desatoya",
+   "fingerprint": "6b0d363438ca",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/desatoya"
+  },
+  "US-13128": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/jackson-mountains",
+   "fingerprint": "f6980413670d",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/jackson-mountains"
+  },
+  "US-13302": {
+   "url": "https://southwestexplorers.com/big-smoky-valley/",
+   "fingerprint": "87909bc35fde",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/big-smoky-valley/"
+  },
+  "US-9248": {
+   "url": "https://www.nevadawilderness.org/far_south_egans_wilderness",
+   "fingerprint": "",
+   "date": "2026-11-20",
+   "kind": "refused",
+   "final": "https://www.nevadawilderness.org/far_south_egans_wilderness"
+  },
+  "US-13450": {
+   "url": "https://southwestexplorers.com/hazen-nevada/",
+   "fingerprint": "45d278b8a58a",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/hazen-nevada/"
+  },
+  "US-13496": {
+   "url": "https://www.shortfield.com/listing/ione-nv/",
+   "fingerprint": "556b6a9843a4",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.shortfield.com/listing/ione-nv/"
+  },
+  "US-13522": {
+   "url": "https://skyvector.com/airport/N58/Samsarg-Field-Airport",
+   "fingerprint": "2235a0ce19f3",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://skyvector.com/airport/N58/Samsarg-Field-Airport"
+  },
+  "US-13032": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/gold-mountain",
+   "fingerprint": "e62ef743001e",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/gold-mountain"
+  },
+  "US-13197": {
+   "url": "https://westernmininghistory.com/towns/nevada/ophir/",
+   "fingerprint": "52a9bdbfd891",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://westernmininghistory.com/towns/nevada/ophir/"
+  },
+  "US-13505": {
+   "url": "https://www.shortfield.com/listing/split-second-decision-nv/",
+   "fingerprint": "ce650f24951a",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.shortfield.com/listing/split-second-decision-nv/"
+  },
+  "US-13506": {
+   "url": "https://www.shortfield.com/listing/split-second-decision-ii-nv/",
+   "fingerprint": "0ee306016e00",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.shortfield.com/listing/split-second-decision-ii-nv/"
+  },
+  "US-9287": {
+   "url": "https://www.nevadawilderness.org/tunnel_spring_wilderness",
+   "fingerprint": "",
+   "date": "2026-11-20",
+   "kind": "refused",
+   "final": "https://www.nevadawilderness.org/tunnel_spring_wilderness"
+  },
+  "US-13009": {
+   "url": "https://www.ndow.org/nevadawildlifediscoverytrail/argenta-wildlife-management-area/",
+   "fingerprint": "",
+   "date": "2026-11-20",
+   "kind": "refused",
+   "final": "https://www.ndow.org/nevadawildlifediscoverytrail/argenta-wildlife-management-area/"
+  },
+  "US-13052": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/spruce-pequop",
+   "fingerprint": "9106354d80df",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/spruce-pequop"
+  },
+  "US-13178": {
+   "url": "https://www.blm.gov/visit/mt-irish-archaeological-site",
+   "fingerprint": "ec441074502f",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/mt-irish-archaeological-site"
+  },
+  "US-9252": {
+   "url": "https://www.nevadawilderness.org/government_peak_wilderness",
+   "fingerprint": "",
+   "date": "2026-11-20",
+   "kind": "refused",
+   "final": "https://www.nevadawilderness.org/government_peak_wilderness"
+  },
+  "US-9282": {
+   "url": "https://www.blm.gov/visit/south-jackson-mountains-wilderness",
+   "fingerprint": "d4029cd403a6",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/south-jackson-mountains-wilderness"
+  },
+  "US-13027": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/fish-creek-hma",
+   "fingerprint": "ff074115c4b4",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/fish-creek-hma"
+  },
+  "US-13033": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/goldfield-hma",
+   "fingerprint": "8300c5bd77f4",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/goldfield-hma"
+  },
+  "US-9275": {
+   "url": "https://www.nevadawilderness.org/pahute_peak_wilderness",
+   "fingerprint": "",
+   "date": "2026-11-20",
+   "kind": "refused",
+   "final": "https://www.nevadawilderness.org/pahute_peak_wilderness"
+  },
+  "US-13055": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/triple-b-hma",
+   "fingerprint": "e2f362fa3e8c",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/triple-b-hma"
+  },
+  "US-13056": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/whistler",
+   "fingerprint": "95c804cf977a",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/whistler"
+  },
+  "US-13290": {
+   "url": "https://en.wikipedia.org/wiki/Lahontan_Valley#Forty_Mile_Desert",
+   "fingerprint": "a87062fc5fd8",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://en.wikipedia.org/wiki/Lahontan_Valley#Forty_Mile_Desert"
+  },
+  "US-13408": {
+   "url": "https://southwestexplorers.com/toquima-cave/",
+   "fingerprint": "4f581666c918",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/toquima-cave/"
+  },
+  "US-13414": {
+   "url": "https://southwestexplorers.com/button-point-nevada/",
+   "fingerprint": "033b9e5b8ab7",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/button-point-nevada/"
+  },
+  "US-13208": {
+   "url": "https://www.blm.gov/visit/crescent-sand-dunes",
+   "fingerprint": "045cd18effe0",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/crescent-sand-dunes"
+  },
+  "US-13240": {
+   "url": "https://www.stateparks.com/gallagher_state_fish_hatchery_in_nevada.html",
+   "fingerprint": "8dd19d578b24",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.stateparks.com/gallagher_state_fish_hatchery_in_nevada.html"
+  },
+  "US-9257": {
+   "url": "https://www.nevadawilderness.org/highland_ridge_wilderness_summary",
+   "fingerprint": "",
+   "date": "2026-11-20",
+   "kind": "refused",
+   "final": "https://www.nevadawilderness.org/highland_ridge_wilderness_summary"
+  },
+  "US-13054": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/reveille-hma",
+   "fingerprint": "7783f999aa3a",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/reveille-hma"
+  },
+  "US-13480": {
+   "url": "https://www.destination4x4.com/the-eureka-mining-district-producing-ore-since-1864/",
+   "fingerprint": "aeee268a501f",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.destination4x4.com/the-eureka-mining-district-producing-ore-since-1864/"
+  },
+  "US-9260": {
+   "url": "https://www.blm.gov/sites/blm.gov/files/uploads/Programs_NationalConservationLands_WildernessAreas_NV_Jumbo%20Springs%20Wilderness%20Fact%20Sheet%20Web%20Opt.pdf",
+   "fingerprint": "5b1e2256fbfe",
+   "date": "2026-11-20",
+   "kind": "pdf",
+   "final": "https://www.blm.gov/sites/blm.gov/files/uploads/Programs_NationalConservationLands_WildernessAreas_NV_Jumbo%20Springs%20Wilderness%20Fact%20Sheet%20Web%20Opt.pdf"
+  },
+  "US-9269": {
+   "url": "https://wilderness.net/visit-wilderness/?ID=395",
+   "fingerprint": "b5ff42e52ca1",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://wilderness.net/visit-wilderness/?ID=395"
+  },
+  "US-13042": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/montezuma-peak",
+   "fingerprint": "95959bd1c6e9",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/montezuma-peak"
+  },
+  "US-13049": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/shawave",
+   "fingerprint": "03634ff652c3",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/shawave"
+  },
+  "US-13321": {
+   "url": "https://www.destination4x4.com/palisade-nevada-eureka-county-ghost-town/",
+   "fingerprint": "ef1f0144c9d3",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.destination4x4.com/palisade-nevada-eureka-county-ghost-town/"
+  },
+  "US-13497": {
+   "url": "https://www.shortfield.com/listing/middlegate-station-nv/",
+   "fingerprint": "4368ca5bb6cb",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.shortfield.com/listing/middlegate-station-nv/"
+  },
+  "US-13250": {
+   "url": "https://en.wikipedia.org/wiki/Leonard_Rockshelter",
+   "fingerprint": "4e74f54dbbaa",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://en.wikipedia.org/wiki/Leonard_Rockshelter"
+  },
+  "US-13479": {
+   "url": "https://southwestexplorers.com/diamondfield-jack-davis/",
+   "fingerprint": "83866a92fbf5",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/diamondfield-jack-davis/"
+  },
+  "US-13175": {
+   "url": "https://www.blm.gov/visit/copper-basin-mtn-bike-trail",
+   "fingerprint": "b05e721474bc",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/copper-basin-mtn-bike-trail"
+  },
+  "US-13292": {
+   "url": "https://en.wikipedia.org/wiki/List_of_Nevada_historical_markers",
+   "fingerprint": "7fd624e16326",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://en.wikipedia.org/wiki/List_of_Nevada_historical_markers"
+  },
+  "US-13024": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/callaghan",
+   "fingerprint": "68e42f52047d",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/callaghan"
+  },
+  "US-13219": {
+   "url": "https://www.blm.gov/visit/railroad-valley-wildlife-management-area",
+   "fingerprint": "37d7560c6cb6",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/railroad-valley-wildlife-management-area"
+  },
+  "US-13028": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/fish-lake-valley-hma",
+   "fingerprint": "c76f3cc3ec87",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/fish-lake-valley-hma"
+  },
+  "US-13135": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/seven-troughs",
+   "fingerprint": "5d57718499cd",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/seven-troughs"
+  },
+  "US-13153": {
+   "url": "https://www.blm.gov/press-release/porter-springs-recreation-area-grand-opening",
+   "fingerprint": "1c53b3558613",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/press-release/porter-springs-recreation-area-grand-opening"
+  },
+  "US-13325": {
+   "url": "https://southwestexplorers.com/paradise-valley-nevada/",
+   "fingerprint": "7bbad8937119",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/paradise-valley-nevada/"
+  },
+  "US-13366": {
+   "url": "https://southwestexplorers.com/edwards-creek-valley/",
+   "fingerprint": "9b020677c909",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/edwards-creek-valley/"
+  },
+  "US-13508": {
+   "url": "https://www.shortfield.com/listing/stink-bug-nv/",
+   "fingerprint": "32939f0e5b9d",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.shortfield.com/listing/stink-bug-nv/"
+  },
+  "US-13510": {
+   "url": "https://www.shortfield.com/listing/easy-money-nv/",
+   "fingerprint": "a171c7be0c0e",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.shortfield.com/listing/easy-money-nv/"
+  },
+  "US-13144": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/tobin-range",
+   "fingerprint": "a8346882c980",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/tobin-range"
+  },
+  "US-13145": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/warm-springs",
+   "fingerprint": "ee87f6eb5186",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/warm-springs"
+  },
+  "US-13449": {
+   "url": "https://southwestexplorers.com/the-surveyors/",
+   "fingerprint": "25d074568cc0",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/the-surveyors/"
+  },
+  "US-13142": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/south-shoshone",
+   "fingerprint": "e0f6f1e9ce00",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/south-shoshone"
+  },
+  "US-13151": {
+   "url": "https://www.blm.gov/visit/shoshone-ohv-trail-system",
+   "fingerprint": "7a08e3b85260",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/shoshone-ohv-trail-system"
+  },
+  "US-9244": {
+   "url": "https://www.fs.usda.gov/detailfull/htnf/home/?cid=stelprdb5238541&width=",
+   "fingerprint": "e3b0c44298fc",
+   "date": "2026-11-20",
+   "kind": "resting",
+   "final": "https://www.fs.usda.gov/detailfull/htnf/home/?cid=stelprdb5238541&width="
+  },
+  "US-13216": {
+   "url": "https://www.blm.gov/visit/meadow-valley-campground",
+   "fingerprint": "1841544aee2b",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/meadow-valley-campground"
+  },
+  "US-13227": {
+   "url": "https://www.blm.gov/visit/white-river-narrows",
+   "fingerprint": "8e92533fe85d",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/white-river-narrows"
+  },
+  "US-13411": {
+   "url": "https://southwestexplorers.com/unionville-nevada/",
+   "fingerprint": "a67fedee2044",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://southwestexplorers.com/unionville-nevada/"
+  },
+  "US-13524": {
+   "url": "https://skyvector.com/airport/9U7/Currant-Ranch-Airport",
+   "fingerprint": "b7246028b8ea",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://skyvector.com/airport/9U7/Currant-Ranch-Airport"
+  },
+  "US-9251": {
+   "url": "https://www.blm.gov/programs/national-conservation-lands/nevada/goshute-peak-wsa",
+   "fingerprint": "a0ef7bcaec5a",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/national-conservation-lands/nevada/goshute-peak-wsa"
+  },
+  "US-13193": {
+   "url": "https://www.blm.gov/visit/clayton-valley-sand-dunes",
+   "fingerprint": "23eddf775251",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/clayton-valley-sand-dunes"
+  },
+  "US-9246": {
+   "url": "https://www.blm.gov/visit/east-fork-high-rock-canyon-wilderness",
+   "fingerprint": "5436bd8d49fc",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/east-fork-high-rock-canyon-wilderness"
+  },
+  "US-13017": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/augusta",
+   "fingerprint": "a83bb8c42462",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/augusta"
+  },
+  "US-13046": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/paymaster",
+   "fingerprint": "6a97d7412cdd",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/paymaster"
+  },
+  "US-13051": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/silver-peak",
+   "fingerprint": "4e478762b2c4",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/silver-peak"
+  },
+  "US-13126": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/diamond-hma",
+   "fingerprint": "ecaeb8034746",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/diamond-hma"
+  },
+  "US-13280": {
+   "url": "https://www.destination4x4.com/nevada-4x4-trails/nevada-state-historic-markers/",
+   "fingerprint": "4d88b6a5ade7",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.destination4x4.com/nevada-4x4-trails/nevada-state-historic-markers/"
+  },
+  "US-13509": {
+   "url": "https://www.shortfield.com/listing/three-shot-gun-shells-nv/",
+   "fingerprint": "40141987a3be",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.shortfield.com/listing/three-shot-gun-shells-nv/"
+  },
+  "US-13579": {
+   "url": "https://stripscout.app/strip/7b471d7b-e839-4a41-9169-f4b6d0858e96",
+   "fingerprint": "6a852062521c",
+   "date": "2026-11-20",
+   "kind": "script-built",
+   "final": "https://stripscout.app/strip/7b471d7b-e839-4a41-9169-f4b6d0858e96"
+  },
+  "US-9242": {
+   "url": "https://www.nevadawilderness.org/calico_mountains_wilderness_summary",
+   "fingerprint": "",
+   "date": "2026-11-20",
+   "kind": "refused",
+   "final": "https://www.nevadawilderness.org/calico_mountains_wilderness_summary"
+  },
+  "US-13012": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/antelope-valley",
+   "fingerprint": "88ad12e740cc",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/antelope-valley"
+  },
+  "US-13036": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/hot-creek",
+   "fingerprint": "5440ffcf280d",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/hot-creek"
+  },
+  "US-13044": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/palmetto",
+   "fingerprint": "d6a0a48befc4",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/palmetto"
+  },
+  "US-13121": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/pilot-mountain",
+   "fingerprint": "54c697d6972a",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/pilot-mountain"
+  },
+  "US-13136": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/marietta",
+   "fingerprint": "b7feed9246b5",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/marietta"
+  },
+  "US-13162": {
+   "url": "https://www.blm.gov/visit/hickison-petroglyph-recreation-area",
+   "fingerprint": "b07db8e5c957",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/hickison-petroglyph-recreation-area"
+  },
+  "US-13200": {
+   "url": "https://www.blm.gov/visit/lunar-crater",
+   "fingerprint": "81cc0737a897",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/lunar-crater"
+  },
+  "US-13210": {
+   "url": "https://www.blm.gov/visit/goshute-canyon-and-goshute-cave",
+   "fingerprint": "997edfa507d5",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/goshute-canyon-and-goshute-cave"
+  },
+  "US-13494": {
+   "url": "https://www.shortfield.com/listing/lida-nv/",
+   "fingerprint": "7c2454bc1ee2",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.shortfield.com/listing/lida-nv/"
+  },
+  "US-13504": {
+   "url": "https://www.shortfield.com/listing/far-east-nv/",
+   "fingerprint": "c7d2c1f786ff",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.shortfield.com/listing/far-east-nv/"
+  },
+  "US-9255": {
+   "url": "https://www.outdoorsy.com/guide/high-rock-lake-wilderness",
+   "fingerprint": "e3b0c44298fc",
+   "date": "2026-11-20",
+   "kind": "refused",
+   "final": "https://www.outdoorsy.com/guide/high-rock-lake-wilderness"
+  },
+  "US-9263": {
+   "url": "https://www.blm.gov/visit/high-rock-canyon",
+   "fingerprint": "ab9345b340db",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/high-rock-canyon"
+  },
+  "US-9291": {
+   "url": "https://www.blm.gov/visit/white-rock-range-wsa",
+   "fingerprint": "91559eef1c49",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/white-rock-range-wsa"
+  },
+  "US-13015": {
+   "url": "https://www.ndow.org/nevadawildlifediscoverytrail/bruneau-river-wma-nh/",
+   "fingerprint": "",
+   "date": "2026-11-20",
+   "kind": "refused",
+   "final": "https://www.ndow.org/nevadawildlifediscoverytrail/bruneau-river-wma-nh/"
+  },
+  "US-13020": {
+   "url": "https://www.nevadawilderness.org/poodle_mountain_wilderness_study_area",
+   "fingerprint": "",
+   "date": "2026-11-20",
+   "kind": "refused",
+   "final": "https://www.nevadawilderness.org/poodle_mountain_wilderness_study_area"
+  },
+  "US-13030": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/fox-lake-range",
+   "fingerprint": "71eaface20fe",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/fox-lake-range"
+  },
+  "US-13037": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/kamma-mountains",
+   "fingerprint": "9968fc449343",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/kamma-mountains"
+  },
+  "US-13038": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/owyhee",
+   "fingerprint": "9d062f30a6fd",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/owyhee"
+  },
+  "US-13039": {
+   "url": "https://www.blm.gov/programs/national-conservation-lands/oregon-washington/owyhee-river-canyon-wsa",
+   "fingerprint": "c22773918f98",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/national-conservation-lands/oregon-washington/owyhee-river-canyon-wsa"
+  },
+  "US-13041": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/maverick",
+   "fingerprint": "531327c65f58",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/maverick"
+  },
+  "US-13043": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/new-pass",
+   "fingerprint": "e3486283bd1e",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/new-pass"
+  },
+  "US-13045": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/pancake-hma",
+   "fingerprint": "b40f3145aaa9",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/pancake-hma"
+  },
+  "US-13048": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/rocky-hills-hma",
+   "fingerprint": "94f49b5edbda",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/rocky-hills-hma"
+  },
+  "US-13127": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/fort-sage-hma",
+   "fingerprint": "33be37c894bd",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/fort-sage-hma"
+  },
+  "US-13131": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/little-fish",
+   "fingerprint": "d0fd387013ab",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/little-fish"
+  },
+  "US-13132": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/seven-mile",
+   "fingerprint": "5cee626f25b3",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/seven-mile"
+  },
+  "US-13133": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/little-humboldt",
+   "fingerprint": "31eba67583c1",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/little-humboldt"
+  },
+  "US-13134": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/rock-creek-hma",
+   "fingerprint": "3d8878782ac1",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/rock-creek-hma"
+  },
+  "US-13141": {
+   "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/roberts-mountain",
+   "fingerprint": "ca8f5eeaf9b6",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/roberts-mountain"
+  },
+  "US-13181": {
+   "url": "https://www.blm.gov/visit/pine-forest-recreation-area",
+   "fingerprint": "a4002b6b40ab",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/pine-forest-recreation-area"
+  },
+  "US-13190": {
+   "url": "https://www.blm.gov/visit/zuninojiggs-reservoir-recreation-area",
+   "fingerprint": "51326d5d0f75",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/zuninojiggs-reservoir-recreation-area"
+  },
+  "US-13191": {
+   "url": "https://www.blm.gov/visit/tabor-creek-campground",
+   "fingerprint": "c29876ce85db",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/tabor-creek-campground"
+  },
+  "US-13207": {
+   "url": "https://www.blm.gov/visit/blue-mass-scenic-area",
+   "fingerprint": "45ef4ce8ef65",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/blue-mass-scenic-area"
+  },
+  "US-13211": {
+   "url": "https://www.blm.gov/visit/lahontan-cutthroat-natural-area",
+   "fingerprint": "17b392ed13a3",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/lahontan-cutthroat-natural-area"
+  },
+  "US-13224": {
+   "url": "https://www.blm.gov/visit/south-fork-owyhee-river-recreation-area",
+   "fingerprint": "7e2387275fe4",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/visit/south-fork-owyhee-river-recreation-area"
+  },
+  "US-13242": {
+   "url": "https://www.nps.gov/grba/learn/nature/spring-creek-rearing-station.htm",
+   "fingerprint": "7eba7db6e8b7",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.nps.gov/grba/learn/nature/spring-creek-rearing-station.htm"
+  },
+  "US-13409": {
+   "url": "https://www.destination4x4.com/belmont-nevada-nye-county-ghost-town/",
+   "fingerprint": "7c1d32002360",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.destination4x4.com/belmont-nevada-nye-county-ghost-town/"
+  },
+  "US-13463": {
+   "url": "https://www.destination4x4.com/wonder-nevada-churchill-county-ghosttown/",
+   "fingerprint": "a6dabcd93f7d",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.destination4x4.com/wonder-nevada-churchill-county-ghosttown/"
+  },
+  "US-13477": {
+   "url": "https://www.destination4x4.com/dinner-station-nshm-nevada-state-historic-marker/",
+   "fingerprint": "5dcb3ca80933",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.destination4x4.com/dinner-station-nshm-nevada-state-historic-marker/"
+  },
+  "US-13526": {
+   "url": "https://skyvector.com/airport/01U/Duckwater-Airport",
+   "fingerprint": "b0940ab7744a",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://skyvector.com/airport/01U/Duckwater-Airport"
+  },
+  "US-13580": {
+   "url": "https://www.blm.gov/programs/recreation/recreation-activities/nevada",
+   "fingerprint": "e51bbf0bf721",
+   "date": "2026-11-20",
+   "kind": "html",
+   "final": "https://www.blm.gov/programs/recreation/recreation-activities/nevada"
+  },
+  "US-9272": {
+   "url": "https://www.nevadawilderness.org/north_black_rock_range_wilderness",
+   "fingerprint": "",
+   "date": "2026-11-20",
+   "kind": "refused",
+   "final": "https://www.nevadawilderness.org/north_black_rock_range_wilderness"
   }
  },
  "fingerprints": {
-  "nps.gov/lecl/index.htm": "6dbbab9c7ee3",
-  "nps.gov/nepe/index.htm": "037a6cd1b9fa",
-  "blm.gov/visit/sundance-lodge-rec-area": "21909c0c7672",
-  "blm.gov/visit/shepherd-ah-nei-srma": "b52ec70c5201",
-  "fwp.mt.gov/stateparks/beaverhead-rock": "777e3e894f76",
-  "nps.gov/iafl/index.htm": "89f3a146dd0c",
-  "fs.usda.gov/managing-land/trails/cdt": "d3d2bc8c91fc",
-  "fs.usda.gov/hlcnf": "e3b0c44298fc",
-  "nps.gov/yell/index.htm": "fa3b70d539f9",
-  "fs.usda.gov/trails/pacific-northwest-nst": "e3b0c44298fc",
-  "fs.usda.gov/main/custergallatin/home": "e3b0c44298fc",
-  "fs.usda.gov/npnht": "e3b0c44298fc",
-  "fwp.mt.gov/stateparks/missouri-headwaters": "3ae75043433e",
-  "fs.usda.gov/ctnf": "e3b0c44298fc",
-  "fs.usda.gov/r01/bitterroot": "e3b0c44298fc",
-  "fs.usda.gov/bdnf": "e3b0c44298fc",
-  "fs.usda.gov/flathead": "e3b0c44298fc",
-  "fs.usda.gov/r01/idahopanhandle": "e3b0c44298fc",
-  "fs.usda.gov/lolo": "e3b0c44298fc",
-  "nps.gov/glac/index.htm": "7c2bc4818fc3",
-  "fwp.mt.gov/stateparks/spring-meadow-state-park": "1ba01acae91a",
-  "fwp.mt.gov/brush-lake": "ad745b3b1c79",
-  "fwp.mt.gov/stateparks/lewis-and-clark-caverns": "495ce6de80f5",
-  "fwp.mt.gov/stateparks/whitefish-lake": "b919bd21b80b",
-  "fwp.mt.gov/stateparks/lake-elmo": "8d6698e5bf6a",
-  "fwp.mt.gov/stateparks/madison-buffalo-jump": "68093bb45145",
-  "fwp.mt.gov/black-sandy": "c9368419259b",
-  "fs.usda.gov/r01/kootenai/about-area/about-forest": "e3b0c44298fc",
-  "fwp.mt.gov/stateparks/giant-springs": "aed7b0cf8073",
-  "fwp.mt.gov/first-peoples-buffalo-jump": "c718c1b9c7af",
-  "fwp.mt.gov/stateparks/travelers-rest": "8255da044e7e",
-  "fwp.mt.gov/stateparks/tongue-river-reservoir": "c1184eb2b480",
-  "fwp.mt.gov/stateparks/greycliff-prairie-dog-town": "3b73ff7c080a",
-  "fwp.mt.gov/stateparks/frenchtown-pond": "719877e4c401",
-  "blm.gov/visit/devils-elbow-campground": "d0693f05de6d",
-  "fwp.mt.gov/stateparks/somers-beach": "e08c66d5488c",
-  "nps.gov/libi/index.htm": "ca195f6e1b59",
-  "fws.gov/refuge/lee_metcalf": "aeb9df7925f7",
-  "fwp.mt.gov/stateparks/thompson-chain-of-lakes": "d98c0d8ee709",
-  "blm.gov/maps/georeferenced-PDFs/montana-dakotas": "bf697adebb74",
-  "archive.legmt.gov/bills/mca/title_0770/chapter_0050/part_0010/section_0020/0770-0050-0010-0020.html": "660fbd576fd9",
-  "fwp.mt.gov/stateparks/cooney": "5f418429e9e4",
-  "fws.gov/refuge/charles_m_russell": "9bd8f07095fd",
-  "nps.gov/bica/index.htm": "005a7ed15330",
-  "fwp.mt.gov/stateparks/council-grove": "807bac038084",
-  "fwp.mt.gov/stateparks/rosebud-battlefield": "3f3690cb9386",
-  "fwp.mt.gov/stateparks/milltown": "bb4effdb3288",
-  "fwp.mt.gov/les-mason": "63432c508a0a",
-  "fwp.mt.gov/stateparks/makoshika": "f8af412051bb",
-  "fs.usda.gov/recarea/nezperceclearwater/recarea": "e3b0c44298fc",
-  "fwp.mt.gov/stateparks/lone-pine": "d46e378e6bbd",
-  "fwp.mt.gov/stateparks/ackley-lake-state-park": "9cd563e0e8a4",
-  "fwp.mt.gov/stateparks/fort-owen": "6a54411ca0c9",
-  "fwp.mt.gov/west-shore": "687394949ad7",
-  "fwp.mt.gov/stateparks/medicine-rocks": "472372405057",
-  "blm.gov/visit/pompeys-pillar-national-monument": "ed899571ded8",
-  "myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action": "342444155f69",
-  "fs.usda.gov/r01/flathead/recreation/wild-scenic-rivers": "e3b0c44298fc",
-  "blm.gov/visit/acton": "e3b0c44298fc",
-  "fwp.mt.gov/stateparks/beavertail-hill": "93e242627f53",
-  "nps.gov/grko/index.htm": "f51105d35dbc",
-  "fwp.mt.gov/stateparks/tower-rock": "d4714fb790db",
-  "fwp.mt.gov/stateparks/pictograph-cave": "aa8c4a541e66",
-  "blm.gov/programs/national-conservation-lands/montana-dakotas/upper-missouri-river-breaks": "44852b14a20a",
-  "myfwp.mt.gov/fishMT/fas/39754115": "f4560f96dda3",
-  "fws.gov/refuge/benton_lake": "7107212c151f",
-  "fwp.mt.gov/stateparks/anaconda-smoke-stack": "eac4427f4451",
-  "fwp.mt.gov/stateparks/clarks-lookout": "32df6ec60b01",
-  "myfwp.mt.gov/fishMT/fas/39753440": "d7690f75ebf5",
-  "myfwp.mt.gov/fishMT/fas/39754195": "39f41b78c775",
-  "nps.gov/biho/index.htm": "737ba1784fde",
-  "fws.gov/refuge/red_rock_lakes": "089a2737edbe",
-  "fwp.mt.gov/stateparks/bannack-state-park": "e7c609ac8881",
-  "myfwp.mt.gov/fishMT/fas/39754193": "69ba5de5657b",
-  "fwp.mt.gov/stateparks/chief-plenty-coups": "abffd0c60e8c",
-  "myfwp.mt.gov/fishMT/fas/39753472": "2587d597d184",
-  "myfwp.mt.gov/fishMT/fas/39754135": "01d1fca717ea",
-  "nps.gov/fous/index.htm": "5eaade2af68f",
-  "blm.gov/visit/lowry-bridge": "b0b7a587ded8",
-  "fwp.mt.gov/wayfarers": "026a3d3c6475",
-  "blm.gov/visit/lee-metcalf-wilderness": "324eb29acd38",
-  "myfwp.mt.gov/fishMT/fas/39753468": "5acb251ef219",
-  "fwp.mt.gov/stateparks/pirogue-island": "58d07c68bb93",
-  "fwp.mt.gov/stateparks/sluice-boxes": "612a7738e22c",
-  "fwp.mt.gov/logan": "5bb5f87a01b8",
-  "fwp.mt.gov/smith-river": "7d331e8c5ef5",
-  "fws.gov/fish-hatchery/creston": "c7ac26999c88",
-  "fwp.mt.gov/placid-lake": "cbce187fc360",
-  "fws.gov/refuge/lost_trail": "f2bbeaa2fdfc",
-  "blm.gov/visit/coal-banks-landing": "61237cfd38fe",
-  "fwp.mt.gov/big-arm": "79234d189c2a",
-  "fwp.mt.gov/stateparks/painted-rocks": "3cb62041e590",
-  "nps.gov/nepe/planyourvisit/visit-bear-paw-battlefield.htm": "88343cbc6c0c",
-  "fwp.mt.gov/lake-mary-ronan": "111edab382b0",
-  "fwp.mt.gov/stateparks/lost-creek": "74f4230886c6",
-  "fwp.mt.gov/yellow-bay": "17228d50522f",
-  "myfwp.mt.gov/fishMT/fas/39754161": "ed12af46c318",
-  "blm.gov/sites/blm.gov/files/documents/files/Boaters%20Guide%202017%20508%20COMPL.pdf": "0c15dd756aad",
-  "blm.gov/programs/national-conservation-lands/montana-dakotas/terry-badlands-wsa": "04e925976824",
-  "fwp.mt.gov/thompson-falls": "5bdb84fc167d",
-  "fws.gov/refuge/ninepipe": "05f0430ff7e6",
-  "myfwp.mt.gov/fishMT/fas/39754103": "24916556cdbd",
-  "fwp.mt.gov/stateparks/fish-creek": "d3d7826bdb9c",
-  "myfwp.mt.gov/fishMT/fas/39754245": "dcaeba9db6aa",
-  "myfwp.mt.gov/fishMT/fas/39753564": "91eca92240bb",
-  "fws.gov/refuge/bowdoin": "caa6336cd4ce",
-  "myfwp.mt.gov/fishMT/fas/39753566": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753422": "489be32987e6",
-  "blm.gov/visit/garnet-ghost-town": "5bef9ddab09d",
-  "fws.gov/refuge/National_Bison_Range/Contact.html": "e3b0c44298fc",
-  "fws.gov/refuges/profiles/recEdMore.cfm": "b76888b3f858",
-  "myfwp.mt.gov/fishMT/fas/39754401": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753842": "e59cc710179d",
-  "myfwp.mt.gov/fishMT/fas/39754247": "00c26f30b78a",
-  "fws.gov/refuge/hailstone": "e2c2eb9d5169",
-  "fwp.mt.gov/stateparks/elkhorn": "bd33792de954",
-  "fws.gov/mountain-prairie/refuges/mdl.php": "e3b0c44298fc",
-  "fwp.mt.gov/finley-point": "fee3b7c34b4e",
-  "fwp.mt.gov/salmon-lake": "fa377addea6f",
-  "fwp.mt.gov/hell-creek": "e3b0c44298fc",
-  "myfwp.mt.gov/fishMT/fas/39754387": "83eac3cff58a",
-  "fws.gov/refuge/war_horse": "98b9c4867ba2",
-  "myfwp.mt.gov/fishMT/fas/39754577": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753874": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753872": "489be32987e6",
-  "fwp.mt.gov/stateparks/granite-ghost-town": "10b6217b1877",
-  "fws.gov/refuge/medicine_lake": "f5435ac7b7e9",
-  "fs.usda.gov/visit/destination/absaroka-beartooth-wilderness": "e3b0c44298fc",
-  "myfwp.mt.gov/fishMT/fas/39753414": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753424": "489be32987e6",
-  "fws.gov/refuge/swan_river": "76fbcc2eaee8",
-  "myfwp.mt.gov/fishMT/fas/39754423": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753684": "489be32987e6",
-  "fws.gov/refuge/pablo": "20d5c3ad5bca",
-  "myfwp.mt.gov/fishMT/fas/39754131": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39754407": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753406": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753404": "489be32987e6",
-  "fws.gov/refuge/lake_mason": "f871748aa95e",
-  "myfwp.mt.gov/fishMT/fas/39753826": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39754621": "489be32987e6",
-  "blm.gov/visit/ear-mountain": "f52b28b62393",
-  "fws.gov/refuge/hewitt_lake": "e8c35fa12ec3",
-  "myfwp.mt.gov/fishMT/fas/39754581": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753844": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753438": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753534": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39754543": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39754263": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753804": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753714": "489be32987e6",
-  "blm.gov/programs/national-conservation-lands/montana-dakotas/sleeping-giant-sheep-creek": "80c44165415c",
-  "myfwp.mt.gov/fishMT/fas/39753678": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753848": "489be32987e6",
-  "fws.gov/refuge/black_coulee": "f0840c5803d6",
-  "myfwp.mt.gov/fishMT/fas/39754461": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39754381": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753546": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753836": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753840": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753854": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753866": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39754181": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39754321": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753838": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753864": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753694": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753674": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753828": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39754383": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753704": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39754391": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753456": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753504": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753808": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753710": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39754405": "489be32987e6",
-  "blm.gov/programs/national-conservation-lands/montana-dakotas/axolotl-lakes-wsa": "54e906610053",
-  "myfwp.mt.gov/fishMT/fas/39753862": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753728": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39754155": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39754499": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753672": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753750": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753858": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753712": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753720": "489be32987e6",
-  "fwp.mt.gov/wild-horse-island": "52461bef8db7",
-  "myfwp.mt.gov/fishMT/fas/39753538": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753628": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39754159": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39754449": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753880": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753706": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753572": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753642": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753722": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753850": "489be32987e6",
-  "blm.gov/visit/judith-landing": "44b8d5d448a2",
-  "fws.gov/refuge/ul_bend": "c6e64bebfd61",
-  "myfwp.mt.gov/fishMT/fas/39754101": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753810": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39754125": "489be32987e6",
-  "blm.gov/programs/national-conservation-lands/montana-dakotas/humbug-spires-wsa": "a170fcf6bcbf",
-  "myfwp.mt.gov/fishMT/fas/39753624": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753904": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753690": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753876": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753860": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753822": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39754309": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39754325": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39753878": "489be32987e6",
-  "myfwp.mt.gov/fishMT/fas/39754327": "489be32987e6",
-  "fwp.mt.gov/stateparks/judith-landing": "01746eb60190"
+  "nps.gov/olsp/index.htm": "79cac124a795",
+  "nps.gov/cali/index.htm": "0da4a664d7ff",
+  "nps.gov/poex/index.htm": "006a36cdded2",
+  "fs.usda.gov/htnf": "e3b0c44298fc",
+  "nevadawilderness.org/mormon_mountains_wilderness": "e3b0c44298fc",
+  "nps.gov/lake/index.htm": "a396b1f42f87",
+  "nps.gov/deva/index.htm": "cbd2aff49f6a",
+  "parks.nv.gov/parks/spring-mountain-ranch": "2b30a33c40ef",
+  "parks.nv.gov/parks/washoe-lake": "6a0fcba5dd7f",
+  "blm.gov/programs/national-conservation-lands/nevada/sloan-canyon-nca": "229ef8973c23",
+  "parks.nv.gov/parks/valley-of-fire": "4881bb0c4e2d",
+  "fws.gov/refuge/desert": "926937f0ed2b",
+  "nps.gov/tusk/index.htm": "745411ec10f9",
+  "fs.usda.gov/recmain/ltbmu/recreation": "e3b0c44298fc",
+  "parks.nv.gov/parks/fort-churchill": "2f8effdaf324",
+  "parks.nv.gov/parks/big-bend-of-the-colorado": "bd0b4cf373c1",
+  "parks.nv.gov/parks/dayton": "e8b87fd17f22",
+  "parks.nv.gov/parks/mormon-station": "e2d21b3dca1d",
+  "blm.gov/visit/walker-lake-recreation-area": "0e2505ed3bc0",
+  "parks.nv.gov/parks/lahontan": "9d57dd553192",
+  "nps.gov/grba/index.htm": "384a5a5fe3b5",
+  "blm.gov/avi-kwa-ame-national-monument": "98a20a8f4215",
+  "parks.nv.gov/parks/lake-tahoe-nevada-state-park-1": "22c633534163",
+  "parks.nv.gov/parks/ice-age-fossils": "fb25e8adf404",
+  "parks.nv.gov/parks/old-las-vegas-mormon-fort": "48942b13ed74",
+  "blm.gov/programs/national-conservation-lands/nevada/black-rock-desert-high-rock-canyon-emigrant-trails-nca": "b36030135d81",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/wheeler-pass": "28910682faea",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/johnnie-hma": "65d25e9711df",
+  "blm.gov/sites/blm.gov/files/uploads/Programs_NationalConservationLands_WildernessAreas_NV_Wee%20Thump%20Joshua%20Tree%20Wilderness%20Fact%20Sheet%20Web%20Opt.pdf": "d14bfbe8cf1f",
+  "parks.nv.gov/parks/south-fork": "33a5b38a3bc8",
+  "blm.gov/sites/blm.gov/files/uploads/Programs_NationalConservationLands_WildernessAreas_NV_Mt.%20Charleston%20Wilderness%20Fact%20Sheet%20Web%20Opt.pdf": "88319ad23309",
+  "blm.gov/sites/blm.gov/files/uploads/Programs_NationalConservationLands_WildernessAreas_NV_Rainbow%20Mountain%20Wilderness%20Fact%20Sheet%20Web%20Opt.pdf": "c8b6ccb6e7c0",
+  "blm.gov/sites/blm.gov/files/uploads/Programs_NationalConservationLands_WildernessAreas_NV_La%20Madre%20Mountain%20Wilderness%20Fact%20Sheet%20Web%20Opt.pdf": "c91dda3432d4",
+  "fws.gov/refuge/sheldon": "ee2817ee3450",
+  "parks.nv.gov/parks/buckland-station": "2f8effdaf324",
+  "nvtrailfinder.com/trails/trail/mason-valley-wildlife-management-area": "e27dda8d26c4",
+  "fws.gov/refuge/pahranagat": "5ece70be1f6e",
+  "parks.nv.gov/parks/rye-patch": "269173e0bd9c",
+  "en.wikipedia.org/wiki/List_of_Nevada_Scenic_Byways": "5fc4fcf739db",
+  "blm.gov/visit/moon-rocks-ohv-area": "bd43925cc78e",
+  "fws.gov/refuge/stillwater": "300f1f486868",
+  "ndow.org/your-public-land": "e3b0c44298fc",
+  "fws.gov/refuge/ash_meadows": "91bfe5209bd2",
+  "parks.nv.gov/parks/lake-tahoe-nevada-state-park": "cc16f5cace86",
+  "parks.nv.gov/parks/echo-canyon": "48fa540d7c6b",
+  "parks.nv.gov/parks/cathedral-gorge": "8dc20e671a76",
+  "parks.nv.gov/parks/walker-river": "f6c4c03a4e57",
+  "blm.gov/sites/blm.gov/files/uploads/Programs_NationalConservationLands_WildernessAreas_NV_Eldorado%20Wilderness%20Fact%20Sheet%20Web%20Opt.pdf": "1037c071be85",
+  "stateparks.com/humboldt_state_wildlife_management_area_in_nevada.html": "9ba8f6f17549",
+  "parks.nv.gov/parks/lake-tahoe-nevada-state-park-3": "7103a1bcb6eb",
+  "destination4x4.com/the-camel-corps-nevada-state-historic-marker-104": "63611217ff08",
+  "blm.gov/sites/blm.gov/files/uploads/Programs_NationalConservationLands_WildernessAreas_NV_Muddy%20Mountains%20Wilderness%20Fact%20Sheet%20Web%20Opt.pdf": "c56943edad1d",
+  "parks.nv.gov/parks/wild-horse": "326ca0a8c4b3",
+  "blm.gov/sites/blm.gov/files/uploads/Programs_NationalConservationLands_WildernessAreas_NV_North%20McCullough%20Wilderness%20Fact%20Sheet%20Web%20Opt.pdf": "7ab39743bee0",
+  "parks.nv.gov/parks/cave-lake": "cbda63d145d0",
+  "fws.gov/refuge/moapa_valley": "f6a6d8730591",
+  "parks.nv.gov/parks/elgin-schoolhouse": "09e369e9f480",
+  "nps.gov/places/virginia-city-historic-district.htm": "95ac0502ff07",
+  "travelnevada.com/wildlife/key-pittman-wildlife-management-area": "a1ab5c98af43",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/rock-creek-hma": "3d8878782ac1",
+  "destination4x4.com/mineral-county-nevada-state-historic-marker-16": "e7935f1746d8",
+  "parks.nv.gov/parks/ward-charcoal-ovens": "86157eb3840b",
+  "parks.nv.gov/parks/kershaw-ryan": "7a06f2d44ac4",
+  "blm.gov/visit/nellis-dunes": "dd3cde21ac56",
+  "destination4x4.com/potosi-nevada-state-historic-marker-115": "9e8223f747db",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/pine-nut": "01ce9b41ad8f",
+  "fws.gov/refuge/fallon": "c32abed56aa5",
+  "blm.gov/visit/sacramento-pass-recreation-area": "1b2ffbf9e190",
+  "blm.gov/visit/jumbo-grade": "29cd7df2e449",
+  "travelnevada.com/wildlife/wayne-e-kirch-wildlife-management-area": "908ee67c68ce",
+  "southwestexplorers.com/kyle-kiel-ranch": "0b5d5f211e9c",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/hickison-summit": "e75345eccc4e",
+  "sangres.com/nevada/blm/south-mccullough.htm": "e3b0c44298fc",
+  "blm.gov/visit/sand-mountain-recreation-area": "8ad9d1717e8c",
+  "southwestexplorers.com/galena-creek-fish-hatchery": "a8cd262f0731",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/eagle-hma": "6cd0286ca2eb",
+  "blm.gov/programs/national-conservation-lands/nevada/basin-and-range-national-monument": "8defbe6a81bc",
+  "shortfield.com/listing/stevens-crosby-nv": "da313370c3ec",
+  "blm.gov/sites/blm.gov/files/uploads/Programs_NationalConservationLands_WildernessAreas_NV_Ireteba%20Peaks%20Wilderness%20Fact%20Sheet%20Web%20Opt.pdf": "126400803ecf",
+  "shpo.nv.gov/uploads/documents/NV_Clark_County_Boulder_City_Navy_Hangar_Final_2026-05-28.pdf": "468ac7b901cc",
+  "d3n8a8pro7vhmx.cloudfront.net/nevadawilderness/legacy_url/730/map_Bristlecone_w_factsheet.pdf": "41242d02f7ad",
+  "blm.gov/visit/wilson-canyon": "190dc676bfb1",
+  "parks.nv.gov/parks/lake-tahoe-nevada-state-park-2": "89c45c491158",
+  "skyvector.com/airport/0L9/Echo-Bay-Airport": "1463d3e45f70",
+  "blm.gov/visit/dispersed-jeanroach-dry-lakes": "80964c4c0a63",
+  "blm.gov/visit/zold-red-spring-picnic-area": "2a093f0130a7",
+  "shortfield.com/listing/bonnie-claire-nv": "efe0d61d631e",
+  "southwestexplorers.com/steamboat-springs-nevada": "de481ce9d68e",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/granite-range": "1706880ccf5e",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/flanigan-hma": "2330aea5f3af",
+  "destination4x4.com/nevada-4x4-trails/nevada-state-historic-markers": "4d88b6a5ade7",
+  "destination4x4.com/searchlight-nevada-clark-county-nevada": "949653d2a94a",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/silver-king-hma": "67db33c76e9e",
+  "southwestexplorers.com/kingsbury-grade": "472b70d7f4d3",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/dogskin": "a951b4fe8c45",
+  "en.wikipedia.org/wiki/List_of_Nevada_historical_markers": "7fd624e16326",
+  "fs.usda.gov/r05/laketahoebasin/recreation/mt-rose-wilderness": "e3b0c44298fc",
+  "parks.nv.gov/parks/berlin-ichthyosaur": "fcdc2bdbab0c",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/bullfrog-hma": "29f43ad2b540",
+  "blm.gov/visit/rhyolite-historic-area": "9688c7671771",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/lava-beds-hma": "19efab38f5bc",
+  "visitcarsoncity.com/attractions/kit-carson-trail": "e0bf01bde0ba",
+  "blm.gov/visit/grimes-pointhidden-cave-archaeological-site": "415c21f4a27d",
+  "southwestexplorers.com/truckee-river-west": "e031f3aed1df",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/blue-wing-mountains": "280b84d2bdf0",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/granite-peak": "a1b917389dca",
+  "blm.gov/visit/winnemucca-sand-dunes": "4fbac1df1c3f",
+  "blm.gov/visit/chief-mountain-west": "0ce5587904bb",
+  "blm.gov/visit/dry-valley-highway-vehicle-area": "a3103af23b1c",
+  "blm.gov/visit/logandale-trails": "0866fdf4dc70",
+  "blm.gov/visit/walking-box-ranch": "44938f721c0f",
+  "parks.nv.gov/parks/spring-valley": "23793743bf63",
+  "southwestexplorers.com/mount-rose-weather-observatory": "23f0c0479874",
+  "publicworks.nv.gov/uploadedFiles/publicworksnvgov/content/Documents/FCA_Reports/9897%20Lake%20Mead%20Fish%20Hatchery%20FCA%20Report.pdf": "975fa3a535b6",
+  "blm.gov/visit/mill-creek-recreation-area": "68d17c29afa9",
+  "fws.gov/fish-hatchery/lahontan": "d783f17e7de1",
+  "blm.gov/visit/ward-mountain-recreation-area": "801007a5a09a",
+  "southwestexplorers.com/franktown-nevada": "b97f2b8df515",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/muddy-mountains": "0f55d50a88d9",
+  "destination4x4.com/savage-mansion-nshm-87": "bb5ace8831d2",
+  "southwestexplorers.com/chief-tecopa-peacemaker-of-the-paiutes": "509aba056811",
+  "mypacer.com/parks/363518/artesia-lake-state-wildlife-management-area-yerington": "0626e17eff64",
+  "blm.gov/visit/shooting-gallery": "36375710168b",
+  "skyvector.com/airport/N59/Rosaschi-Air-Park-Airport": "5e3905206d1c",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/sand-springs": "a6bae29fed33",
+  "southwestexplorers.com/the-camel-corps": "61e41bb4e28c",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/south-stillwater": "303451d1d42c",
+  "blm.gov/visit/egan-crest-trailhead": "57e339d4eccb",
+  "southwestexplorers.com/derby-diversion-dam": "561a705beac4",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/garfield-flat": "613f7f6c1ad7",
+  "southwestexplorers.com/delamar-nevada-ghost-town-guide": "b3b21192b803",
+  "destination4x4.com/columbus-nevada-state-historic-marker-20": "cfb077a80659",
+  "blm.gov/visit/oak-springs-trilobite-site": "a66854c6f630",
+  "southwestexplorers.com/luther-canyon-fay-canyon": "95f6864d69a6",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/bald-mountain": "e08a5203d333",
+  "southwestexplorers.com/union-pacific-depot-1923": "7c8d8a1d142b",
+  "destination4x4.com/old-boundary-nevadas-southern-boundary-1861-1867-57": "1a44c0d8070f",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/goshute": "453ba8ceba80",
+  "southwestexplorers.com/dayton-chinatown": "20f1e99f731a",
+  "southwestexplorers.com/original-homesite-of-a-las-vegas-pioneer-pop-squires-1865-1958": "af659e350463",
+  "blm.gov/visit/mathews-canyon-dam": "4ed83326735b",
+  "southwestexplorers.com/jackrabbit-nevada": "dcc6f3cf00a7",
+  "southwestexplorers.com/moapa-valley": "a98f9878e366",
+  "blm.gov/visit/barnes-canyon-trailhead": "f9625e141d22",
+  "blm.gov/visit/panaca-charcoal-kilns": "767e1cda8cc5",
+  "blm.gov/visit/stampede": "3b61097b6c6f",
+  "blm.gov/visit/bloody-shins-trail-system": "384e8bcf1c6f",
+  "southwestexplorers.com/sparks-nevada": "66e70dbc2d0b",
+  "blm.gov/visit/high-rock-canyon": "ab9345b340db",
+  "southwestexplorers.com/stonehouse-nevada": "10626893ad02",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/horse-mountain": "69c49b79bba5",
+  "fws.gov/refuge/Ruby_Lake": "7106dc0cd5b2",
+  "destination4x4.com/tonopah-nevada-state-historic-marker-15": "3c993cca8e32",
+  "southwestexplorers.com/powell-of-the-colorado": "761d85c201f4",
+  "blm.gov/visit/lovelock-cave-historic-site": "76c3d01eaa7d",
+  "southwestexplorers.com/von-schmidt-state-boundry-monument": "264a2fbcdc67",
+  "blm.gov/visit/baker-archaeological-viewing-site": "581efd178853",
+  "southwestexplorers.com/truckee-river-east": "a2960548787c",
+  "southwestexplorers.com/glendale-school-1864-1958-oldest-remaining-school-building-in-nevada": "1cd51b5f3e64",
+  "southwestexplorers.com/spooner-summit": "ed806e2dc219",
+  "blm.gov/sites/blm.gov/files/uploads/Lime%20Canyon%20Wilderness%20Fact%20Sheet%20Web%20Opt.pdf": "3020d85fd52e",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/lahontan-hma": "e985cfcd4b00",
+  "destination4x4.com/pueblo-grande-de-nevada": "e0e9634c5c85",
+  "southwestexplorers.com/wabuska-nevada": "2059e4c436ee",
+  "blm.gov/visit/big-rocks-north": "15c376066ba0",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/gold-butte-hma": "130d9930cfcf",
+  "southwestexplorers.com/bullionville-nevada": "82861561768b",
+  "thearmchairexplorer.com/nevada/parsnip-peak-wilderness.php": "70dd0c2c6f36",
+  "blm.gov/visit/south-fork-canyon-special-recreation-management-area": "1058057e77be",
+  "blm.gov/visit/salmon-falls-creek-0": "686d4a2ed893",
+  "southwestexplorers.com/chollar-mine": "b3fd8b04df37",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/clan-alpine": "5e084e2c9f30",
+  "blm.gov/visit/garnet-hill": "be7737cc7a7e",
+  "southwestexplorers.com/hiko-nevada": "077c63e0911b",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/mcgee-mountain": "0090099dde8d",
+  "southwestexplorers.com/panaca-ward-chapel": "ab2e7a8fd2a0",
+  "parks.nv.gov/parks/beaver-dam": "6c34ad368542",
+  "destination4x4.com/pershing-county-nevada-state-historic-marker-17": "1aa7889f3bb5",
+  "southwestexplorers.com/fort-mcdermitt-nevada": "b5ca07fc6d28",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/buffalo-hills": "3bc0fa80b739",
+  "southwestexplorers.com/carlin-canyon": "6f87fa2619e3",
+  "southwestexplorers.com/reno-nevada": "fa6fc1b270d1",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/diamond-hma": "ecaeb8034746",
+  "southwestexplorers.com/courthouse-site-1865-1907": "1dd8f1de47cd",
+  "blm.gov/visit/arrow-canyon-wilderness": "e416caab8ed0",
+  "destination4x4.com/the-humboldt-canal-nevada-state-historic-marker-21": "0f6c6131dd75",
+  "blm.gov/visit/wilson-reservoir-recreation-management-area": "1e03c7087f68",
+  "southwestexplorers.com/old-geiger-grade-in-canyon-below": "f6314f779a8c",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/black-rock": "c487fb8a8e12",
+  "blm.gov/visit/illipah-reservoir-recreation-area": "1a8effc687e2",
+  "southwestexplorers.com/crystal-springs-nevada": "746b5d7004b5",
+  "blm.gov/visit/big-dune-0": "219bb3ee7c15",
+  "shortfield.com/listing/denio-junction-nv": "ba8d1702018a",
+  "blm.gov/visit/stevens-camp-recreation-area": "cd809c3bb6f8",
+  "southwestexplorers.com/panaca-mercantile-store": "da35c40fa7af",
+  "en.wikipedia.org/wiki/Fort_Ruby": "115baf31e4ce",
+  "shortfield.com/listing/sail-park-nv": "f4defc50a3a5",
+  "blm.gov/visit/goldfield": "eebfa033d3de",
+  "blm.gov/visit/pine-canyon-dam": "bede0752dcc9",
+  "destination4x4.com/eureka-nevada-nevada-state-historic-marker-11": "b3ac2ceb4cb3",
+  "hmdb.org/m.asp": "eb2ab9433826",
+  "southwestexplorers.com/grand-army-of-the-republic-memorial-tree": "351aae6b0aab",
+  "blm.gov/sites/blm.gov/files/documents/files/nevada_beckypeak_wildernessmapfactsheet.pdf": "032aa443ad82",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/saulsbury-hma": "74d0d08389a0",
+  "southwestexplorers.com/nevada-test-site": "9987117210c0",
+  "destination4x4.com/fort-halleck-military-reservation-nevada-state-historic-marker-47": "6995b5ca057b",
+  "skyvector.com/airport/N15/Kingston-Airport": "8cc5ffc49ac7",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/montgomery-pass": "dccd94470982",
+  "southwestexplorers.com/lahontan-dam": "be09084c03da",
+  "fs.usda.gov/detail/htnf/home": "e3b0c44298fc",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/stone-cabin": "2f7c35c99906",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/wassuk": "96918c34977c",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/north-monitor": "4c21beefeddd",
+  "southwestexplorers.com/silver-peak-nevada": "e2bd66b1b7ed",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/calico-mountains": "29a7d261ad28",
+  "en.wikipedia.org/wiki/Stokes_Castle": "0919f170e655",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/stonewall": "407556a4a188",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/desatoya": "6b0d363438ca",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/jackson-mountains": "f6980413670d",
+  "southwestexplorers.com/big-smoky-valley": "87909bc35fde",
+  "southwestexplorers.com/hazen-nevada": "45d278b8a58a",
+  "shortfield.com/listing/ione-nv": "556b6a9843a4",
+  "skyvector.com/airport/N58/Samsarg-Field-Airport": "2235a0ce19f3",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/gold-mountain": "e62ef743001e",
+  "westernmininghistory.com/towns/nevada/ophir": "52a9bdbfd891",
+  "shortfield.com/listing/split-second-decision-nv": "ce650f24951a",
+  "shortfield.com/listing/split-second-decision-ii-nv": "0ee306016e00",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/spruce-pequop": "9106354d80df",
+  "blm.gov/visit/mt-irish-archaeological-site": "ec441074502f",
+  "blm.gov/visit/south-jackson-mountains-wilderness": "d4029cd403a6",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/fish-creek-hma": "ff074115c4b4",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/goldfield-hma": "8300c5bd77f4",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/triple-b-hma": "e2f362fa3e8c",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/whistler": "95c804cf977a",
+  "en.wikipedia.org/wiki/Lahontan_Valley": "a87062fc5fd8",
+  "southwestexplorers.com/toquima-cave": "4f581666c918",
+  "southwestexplorers.com/button-point-nevada": "033b9e5b8ab7",
+  "blm.gov/visit/crescent-sand-dunes": "045cd18effe0",
+  "stateparks.com/gallagher_state_fish_hatchery_in_nevada.html": "8dd19d578b24",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/reveille-hma": "7783f999aa3a",
+  "destination4x4.com/the-eureka-mining-district-producing-ore-since-1864": "aeee268a501f",
+  "blm.gov/sites/blm.gov/files/uploads/Programs_NationalConservationLands_WildernessAreas_NV_Jumbo%20Springs%20Wilderness%20Fact%20Sheet%20Web%20Opt.pdf": "5b1e2256fbfe",
+  "wilderness.net/visit-wilderness": "b5ff42e52ca1",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/montezuma-peak": "95959bd1c6e9",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/shawave": "03634ff652c3",
+  "destination4x4.com/palisade-nevada-eureka-county-ghost-town": "ef1f0144c9d3",
+  "shortfield.com/listing/middlegate-station-nv": "4368ca5bb6cb",
+  "en.wikipedia.org/wiki/Leonard_Rockshelter": "4e74f54dbbaa",
+  "southwestexplorers.com/diamondfield-jack-davis": "83866a92fbf5",
+  "blm.gov/visit/copper-basin-mtn-bike-trail": "b05e721474bc",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/callaghan": "68e42f52047d",
+  "blm.gov/visit/railroad-valley-wildlife-management-area": "37d7560c6cb6",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/fish-lake-valley-hma": "c76f3cc3ec87",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/seven-troughs": "5d57718499cd",
+  "blm.gov/press-release/porter-springs-recreation-area-grand-opening": "1c53b3558613",
+  "southwestexplorers.com/paradise-valley-nevada": "7bbad8937119",
+  "southwestexplorers.com/edwards-creek-valley": "9b020677c909",
+  "shortfield.com/listing/stink-bug-nv": "32939f0e5b9d",
+  "shortfield.com/listing/easy-money-nv": "a171c7be0c0e",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/tobin-range": "a8346882c980",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/warm-springs": "ee87f6eb5186",
+  "southwestexplorers.com/the-surveyors": "25d074568cc0",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/south-shoshone": "e0f6f1e9ce00",
+  "blm.gov/visit/shoshone-ohv-trail-system": "7a08e3b85260",
+  "fs.usda.gov/detailfull/htnf/home": "e3b0c44298fc",
+  "blm.gov/visit/meadow-valley-campground": "1841544aee2b",
+  "blm.gov/visit/white-river-narrows": "8e92533fe85d",
+  "southwestexplorers.com/unionville-nevada": "a67fedee2044",
+  "skyvector.com/airport/9U7/Currant-Ranch-Airport": "b7246028b8ea",
+  "blm.gov/programs/national-conservation-lands/nevada/goshute-peak-wsa": "a0ef7bcaec5a",
+  "blm.gov/visit/clayton-valley-sand-dunes": "23eddf775251",
+  "blm.gov/visit/east-fork-high-rock-canyon-wilderness": "5436bd8d49fc",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/augusta": "a83bb8c42462",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/paymaster": "6a97d7412cdd",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/silver-peak": "4e478762b2c4",
+  "shortfield.com/listing/three-shot-gun-shells-nv": "40141987a3be",
+  "stripscout.app/strip/7b471d7b-e839-4a41-9169-f4b6d0858e96": "6a852062521c",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/antelope-valley": "88ad12e740cc",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/hot-creek": "5440ffcf280d",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/palmetto": "d6a0a48befc4",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/pilot-mountain": "54c697d6972a",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/marietta": "b7feed9246b5",
+  "blm.gov/visit/hickison-petroglyph-recreation-area": "b07db8e5c957",
+  "blm.gov/visit/lunar-crater": "81cc0737a897",
+  "blm.gov/visit/goshute-canyon-and-goshute-cave": "997edfa507d5",
+  "shortfield.com/listing/lida-nv": "7c2454bc1ee2",
+  "shortfield.com/listing/far-east-nv": "c7d2c1f786ff",
+  "outdoorsy.com/guide/high-rock-lake-wilderness": "e3b0c44298fc",
+  "blm.gov/visit/white-rock-range-wsa": "91559eef1c49",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/fox-lake-range": "71eaface20fe",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/kamma-mountains": "9968fc449343",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/owyhee": "9d062f30a6fd",
+  "blm.gov/programs/national-conservation-lands/oregon-washington/owyhee-river-canyon-wsa": "c22773918f98",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/maverick": "531327c65f58",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/new-pass": "e3486283bd1e",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/pancake-hma": "b40f3145aaa9",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/rocky-hills-hma": "94f49b5edbda",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/fort-sage-hma": "33be37c894bd",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/little-fish": "d0fd387013ab",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/seven-mile": "5cee626f25b3",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/little-humboldt": "31eba67583c1",
+  "blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/nevada/roberts-mountain": "ca8f5eeaf9b6",
+  "blm.gov/visit/pine-forest-recreation-area": "a4002b6b40ab",
+  "blm.gov/visit/zuninojiggs-reservoir-recreation-area": "51326d5d0f75",
+  "blm.gov/visit/tabor-creek-campground": "c29876ce85db",
+  "blm.gov/visit/blue-mass-scenic-area": "45ef4ce8ef65",
+  "blm.gov/visit/lahontan-cutthroat-natural-area": "17b392ed13a3",
+  "blm.gov/visit/south-fork-owyhee-river-recreation-area": "7e2387275fe4",
+  "nps.gov/grba/learn/nature/spring-creek-rearing-station.htm": "7eba7db6e8b7",
+  "destination4x4.com/belmont-nevada-nye-county-ghost-town": "7c1d32002360",
+  "destination4x4.com/wonder-nevada-churchill-county-ghosttown": "a6dabcd93f7d",
+  "destination4x4.com/dinner-station-nshm-nevada-state-historic-marker": "5dcb3ca80933",
+  "skyvector.com/airport/01U/Duckwater-Airport": "b0940ab7744a",
+  "blm.gov/programs/recreation/recreation-activities/nevada": "e51bbf0bf721"
  },
- "errors": {},
+ "errors": {
+  "US-4393": "InvalidURL: URL can't contain control characters. '/sites/blm.gov/files/Nevada-Gold Butte-EA NV-052-2006-433 Maps.pdf' (found at least ' ')"
+ },
  "left": [],
  "stopped": ""
 }

@@ -1,24 +1,25 @@
 Park page reader, 2026-11-20.
-Asked 254. Read 254. Kept 0 unchanged. 0 parks are left. The next run continues.
-Requests this run: 292.
+Asked 366. Read 366. Kept 0 unchanged. 0 parks are left. The next run continues.
+Requests this run: 384.
 Pictures: 0.
-Pages: dead 4, html 154, pdf 1, resting 14, script-built 81.
-Questions: AGENCY_HOME_ONLY 32, CLOSED_OR_MOVED_WORDS 5, INSIDE_BIGGER_UNIT 4, LINK_MOVED 7, MANY_TRACTS 3, NAME_DIFFERS 98, OFFICE_ADDRESS_ONLY 25, SCRIPT_BUILT 81, SHARED_PAGE 11.
+Pages: html 312, none 3, pdf 14, refused 30, resting 6, script-built 1.
+Questions: AGENCY_HOME_ONLY 3, CLOSED_OR_MOVED_WORDS 14, INSIDE_BIGGER_UNIT 3, NAME_DIFFERS 280, OFFICE_ADDRESS_ONLY 31, REFUSED 30, SCRIPT_BUILT 1, SHARED_PAGE 8, UNOFFICIAL_HOST 155.
+Skipped on a reader error: 1 (read again next run): US-4393 InvalidURL: URL can't contain control characters. '/sites/blm.gov/files/Nevada-G.
 Look at these first:
-US-4572 POTA: 'Lewis and Clark National Historic Trail'. Page: 'Lewis & Clark National Historic Trail • IA,ID,IL,IN,KS,KY,MO,MT,NE,ND,OH,OR,PA,SD,WA,WV'.
-US-0054 POTA: 'Nez Perce National Historical Park'. Page: 'Nez Perce National Historical Park • ID,MT,OR,WA'.
-US-10529 POTA: 'Sundance Lodge (BLM) Recreation Site'. Page: 'Sundance Lodge Rec. Area'.
-US-10529 The only address on the page is the Billings Field Office, not the park.
-US-10528 POTA: 'Shepherd Ah Nei BLM Special Recreation Management Area'. Page: 'Shepherd Ah Nei SRMA'.
-US-10528 The only address on the page is the Billings Field Office, not the park.
-US-2559 POTA: 'Beaverhead Rock State Park'. Page: 'STATE PARKS MENU'.
-US-3424 POTA: 'Ice Age Floods National Geologic Trail'. Page: 'Ice Age Floods National Geologic Trail • WA,OR,ID,MT'.
-US-0070 POTA: 'Yellowstone National Park'. Page: 'Yellowstone National Park • ID,MT,WY'.
-US-0070 The only address on the page is the office, not the park.
-US-2589 POTA: 'Missouri Headwaters State Park'. Page: 'STATE PARKS MENU'.
-US-0028 The only address on the page is the office, not the park.
-US-2598 POTA: 'Spring Meadow Lake State Park'. Page: 'STATE PARKS MENU'.
-US-2563 POTA: 'Brush Lake State Park'. Page: 'Brush Lake State Park'.
-US-2581 POTA: 'Lewis and Clark Caverns State Park'. Page: 'STATE PARKS MENU'.
-Hosts that refused: cms.nps.gov, doifwsnextprod.prod.acquia-sites.com.
+US-4575 POTA: 'Old Spanish National Historic Trail'. Page: 'Old Spanish National Historic Trail • AZ,CA,CO,NV,NM,UT'.
+US-4566 POTA: 'California National Historic Trail'. Page: 'California National Historic Trail • CA,CO,ID,KS,MO,NE,NV,OR,UT,WY'.
+US-4578 POTA: 'Pony Express National Historic Trail'. Page: 'Pony Express National Historic Trail • CA,CO,KS,MO,NE,NV,UT,WY'.
+US-9265 The link is not an agency page (www.nevadawilderness.org). Facts from it are marked unofficial.
+US-9265 The site does not take automated visitors. For a person.
+US-0676 POTA: 'Lake Mead National Recreation Area'. Page: 'Lake Mead National Recreation Area • AZ,NV'.
+US-0021 POTA: 'Death Valley National Park'. Page: 'Death Valley National Park • CA,NV'.
+US-0021 The only address on the page is the office, not the park.
+US-7494 POTA's link is the agency's front page, not this park's page. Nothing was read from it.
+US-9284 The link is not an agency page (www.nevadawilderness.org). Facts from it are marked unofficial.
+US-9284 The site does not take automated visitors. For a person.
+US-2634 sold at high prices and Beatie accumulated more than 100 horses from the traveling emigrants. Beatie sold the incomplete trading post and traveled back to Salt Lake City in September of 1850
+US-4442 POTA: 'Walker Lake State Recreation Area'. Page: 'Walker Lake Recreation Area'.
+US-4442 The only address on the page is the Carson City District Office, not the park.
+US-9285 POTA: 'Avi Kwa Ame (Spirit Mountain) National Monument'. Page: 'Avi Kwa Ame National Monument'.
+Hosts that refused: doifwsnextprod.prod.acquia-sites.com, www.ndow.org, www.nevadawilderness.org, www.outdoorsy.com.
 Files: facts/, questions.csv, for-a-person.csv, evidence-drafts/, changes.csv, lists-done/, summary.md, run.json, state.json.
