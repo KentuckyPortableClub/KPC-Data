@@ -366,6 +366,8 @@ def _retry_now(status):
     item stays done."""
     if "not found (columns: name, size, unit)" in str(status or ''):
         return True   # a PDF list refused only because the research named a spreadsheet column (fixed the same night)
+    if re.search(r"failed: size column '.*' not found", str(status or '')):
+        return True   # 20 Nov 2026 fix 1: the research's size-column note is now read as column names
     if 'pypdf is not installed' not in str(status or ''):
         return False
     try:
@@ -642,14 +644,56 @@ def _cell_matches(cell, col):
     return bool(k) and (c == k or (len(k) >= 4 and k in c))
 
 
+def size_col_names(spec):
+    """20 Nov 2026: the research's size column is often a note, not a bare name: 'O_AREA_HA (Official Area (ha))',
+    'RPT_AC (reported acres); CALC_AC (GIS acres)', 'Acreage (also Acres_GIS)', 'p_csize (calculated) / p_rsize
+    (reported)'. Returns the column names in the research's own order (the first one named is tried first), the
+    '(also ...)' names last. A bare name comes back as it is."""
+    if not spec or not isinstance(spec, str):
+        return []
+    s = spec.strip()
+    if not re.search(r'[();/,]', s):
+        return [s]
+    also = []
+    for grp in re.findall(r'\(\s*also\s+([^()]*)\)', s, re.I):
+        also += [a.strip() for a in re.split(r',|;|\bor\b|\band\b', grp) if a.strip()]
+    t = s
+    while re.search(r'\([^()]*\)', t):          # drop the notes in brackets, inner ones first
+        t = re.sub(r'\([^()]*\)', ' ', t)
+    out = []
+    for part in re.split(r';|\s/\s|,', t) + also:
+        part = re.sub(r'\s+', ' ', part).strip(' .:')
+        if part and part not in out:
+            out.append(part)
+    return out or [s]
+
+
+def size_col_tries(spec):
+    """What to look for, in order: the note exactly as written first (so a list that read before reads the same),
+    then the names inside it."""
+    out = [spec] if spec else []
+    for n in size_col_names(spec):
+        if n not in out:
+            out.append(n)
+    return out
+
+
+def size_col_not_official(spec):
+    """True when every column the research names is the drawn shape's area (Shape__Area, SHAPE.AREA): that is a
+    map figure, not an official size, so the list is skipped instead of failing."""
+    names = size_col_names(spec)
+    return bool(names) and all(BAD_SIZE_HEADER.search(n) for n in names)
+
+
 def table_to_records(rows, cfg):
     """Find the header row (first 40 rows), then make dicts. Rows that repeat the header are skipped."""
     rows = [[('' if c is None else str(c)).strip() for c in r] for r in rows]
     hi, want = None, cfg.get('size_col')
+    wants = size_col_tries(want)
     for i, r in enumerate(rows[:40]):
         if len([c for c in r if c]) < 2:
             continue
-        if want and any(_cell_matches(c, want) for c in r):
+        if want and any(_cell_matches(c, w) for c in r for w in wants):
             hi = i
             break
         if not want and any(SIZE_HEADER.search(c) and not BAD_SIZE_HEADER.search(c) and parse_size(c)[0] is None
@@ -906,7 +950,7 @@ def bytes_to_records(data, fmt, cfg):
             if not recs:
                 continue
             hdr = list(recs[0].keys())
-            ok = any(_cell_matches(h, cfg['size_col']) for h in hdr) if cfg.get('size_col') else \
+            ok = any(_cell_matches(h, w) for h in hdr for w in size_col_tries(cfg['size_col'])) if cfg.get('size_col') else \
                 any(SIZE_HEADER.search(h) and not BAD_SIZE_HEADER.search(h) for h in hdr)
             if ok and (best is None or len(recs) > len(best)):
                 best = recs
@@ -1330,6 +1374,8 @@ def row_to_cfg(r):
         cfg['skip'] = 'page only, no list to read (research says so)'
     elif not url:
         cfg['skip'] = 'no list url in the research row'
+    elif size_col_not_official(cfg['size_col']):
+        cfg['skip'] = 'no official size column (the research names only the drawn shape area)'
     return cfg
 
 
@@ -1353,13 +1399,26 @@ TOTAL_ROW = re.compile(r'^(grand )?(sub)?totals?\b|^all (parks|areas|units)$', r
 
 def resolve(headers, want, auto=None):
     if want:
+        # 20 Nov 2026: last test = the name without a 1-2 letter prefix ('p_csize' -> 'csize'; NH's server
+        # answers with the short names even when the query asks for the long ones)
+        short = re.sub(r'^[a-z]{1,2}_', '', str(want), flags=re.I)
         for test in (lambda h: str(h).lower() == str(want).lower(), lambda h: nkey(h) == nkey(want),
-                     lambda h: len(nkey(want)) >= 3 and nkey(want) in nkey(h)):
+                     lambda h: len(nkey(want)) >= 3 and nkey(want) in nkey(h),
+                     lambda h: short != str(want) and len(nkey(short)) >= 4 and nkey(h) == nkey(short)):
             for h in headers:
                 if test(h):
                     return h
         return None
     return auto(headers) if auto else None
+
+
+def resolve_size(headers, spec):
+    """The first of the research's size columns that the list has (research order)."""
+    for w in size_col_tries(spec):
+        h = resolve(headers, w)
+        if h is not None:
+            return h
+    return None
 
 
 def auto_name(headers):
@@ -1402,7 +1461,7 @@ def extract_rows(recs, cfg):
     if cfg.get('_pdf'):   # 19 Nov 2026: a PDF list's rows are always name / size / unit (read_pdf_records); the research's
         cfg = dict(cfg, name_col=None, size_col=None)   # spreadsheet column names (e.g. 'TOTAL ACRES') do not apply to them
     name_h = resolve(headers, cfg.get('name_col'), auto_name)
-    size_h = resolve(headers, cfg.get('size_col'), auto_size)
+    size_h = resolve_size(headers, cfg['size_col']) if cfg.get('size_col') else auto_size(headers)
     if cfg.get('size_col') and size_h is None:
         raise FetchError(f"size column '{cfg['size_col']}' not found (columns: {cols_txt})")
     if size_h is None:
@@ -1925,6 +1984,38 @@ def selftest(update=False):
     check(len(cf) == 2 and len(hd) == 2 and {h['_agency'] for h in hd} == {'KDFWR'}, 'dict-of-dicts research shape')
     check({c['area'] for c in cf} == {'US-KY'} and any(c['size_col'] == 'ACRES' for c in cf), 'research field aliases')
     check(next(c for c in cf if c['agency'] == 'KDFWR')['kind'] == 'wma', 'kind word in "type" is a kind, not a format')
+    # --- 20 Nov 2026 fix 1: the research's size column is a note, not a bare name (31 lists failed on this in the
+    # Nov 20 run). Real notes and real column lists from that run.
+    for spec, hdrs, want in (
+            ('O_AREA_HA (Official Area (ha))', ['NAME_E', 'NAME_F', 'IUCN_CAT', 'O_AREA_HA', 'ZONE_ID'], 'O_AREA_HA'),
+            ('RPT_AC (reported acres); CALC_AC (GIS acres)', ['PARCEL_NAME', 'CALC_AC', 'RPT_AC'], 'RPT_AC'),
+            ('Acreage (also Acres_GIS)', ['Area_Name', 'Acreage', 'Acres_GIS'], 'Acreage'),
+            ('Acreage (also Acres_GIS)', ['Area_Name', 'Acres_GIS'], 'Acres_GIS'),
+            ('Acres (GIS); DeedAcres', ['NAME', 'Acres', 'DeedAcres'], 'Acres'),
+            ('ReportedAcres (also GIS_PropertyAcres)', ['PropertyName', 'GIS_PropertyAcres', 'ReportedAcres'],
+             'ReportedAcres'),
+            ('ACRES (also State_Plane_Acres)', ['WMA_NAME', 'HECTARES', 'ACRES', 'State_Plane_Acres'], 'ACRES'),
+            ('GISACRES (also LISTED_AC)', ['ANRUnit', 'LISTED_AC', 'GISACRES'], 'GISACRES'),
+            ('totalacre (also gisacre, tractacre)', ['name', 'gisacre', 'tractacre'], 'gisacre'),
+            ('p_csize (calculated) / p_rsize (reported)', ['name', 'pptype', 'csize', 'rsize'], 'csize'),
+            ('ACRES', ['NAME', 'ACRES'], 'ACRES')):
+        got = resolve_size(hdrs, spec)
+        check(got == want, f'size column note {spec!r} -> {got!r}, want {want!r}')
+    try:
+        rr, cc = extract_rows([{'NAME_E': 'Elk Island', 'O_AREA_HA': '19400'}],
+                              {'size_col': 'O_AREA_HA (Official Area (ha))', 'unit': 'ha'})
+        check(cc['size'] == 'O_AREA_HA' and rr[0]['value'] == 19400 and rr[0]['unit'] == 'ha',
+              'size column note read end to end (hectares kept)')
+    except FetchError as e:
+        check(False, f'size column note read end to end: {e}')
+    for spec in ('Shape__Area (no official acres field)', 'SHAPE.AREA (Web Mercator m², NOT true area)',
+                 'Shape__Area (sq ft, WA State Plane South EPSG:2927; ÷43,560 = acres)'):
+        check(size_col_not_official(spec), f'shape area only -> skipped, not failed: {spec!r}')
+    for spec in ('ACRES', 'Acreage (also Acres_GIS)', 'O_AREA_HA (Official Area (ha))'):
+        check(not size_col_not_official(spec), f'{spec!r} is an official size column')
+    check(_retry_now("failed: size column 'Acreage (also Acres_GIS)' not found (columns: OBJECTID, Acreage)") and
+          not _retry_now('failed: HTTP 405') and not _retry_now('read OK (arcgis)'),
+          'fix 1: lists that failed on a size-column note are read again on --resume, nothing else')
     # --- polite fetcher with a fake clock
     clock, waits, calls = [0.0], [], []
 
