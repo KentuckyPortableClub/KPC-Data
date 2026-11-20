@@ -1,0 +1,122 @@
+{
+"DE-0282": {
+"park": "Forstenrieder State Forest Park",
+"layer": "https://services2.arcgis.com/jUpNdisbWqRpMo35/ArcGIS/rest/services/Schutzgebiete/FeatureServer/0",
+"record": null,
+"name_field": "NAME",
+"record_name": "LSG Forstenrieder Park einschließlich Forst Kasten und Fürstenrieder Wald",
+"kind": "forest",
+"answer": "YES",
+"checked_by": "chat 11 (Oct 31)",
+"from_file": "layers.json",
+"key_now": "missing"
+},
+"DE-0667": {
+"park": "Die Leucht State Forest Park",
+"layer": "https://services2.arcgis.com/jUpNdisbWqRpMo35/ArcGIS/rest/services/Schutzgebiete/FeatureServer/0",
+"record": null,
+"name_field": "NAME",
+"record_name": "LSG-Die Leucht",
+"kind": "forest",
+"answer": "YES",
+"checked_by": "chat 11 (Oct 31)",
+"from_file": "layers.json",
+"key_now": "missing"
+},
+"DE-0773": {
+"park": "Auesee Wesel National Recreation Area",
+"layer": "https://services2.arcgis.com/jUpNdisbWqRpMo35/ArcGIS/rest/services/Schutzgebiete/FeatureServer/0",
+"record": null,
+"name_field": "NAME",
+"record_name": "LSG-Auesee",
+"kind": "park",
+"answer": "YES",
+"checked_by": "chat 11 (Oct 31)",
+"from_file": "layers.json",
+"key_now": "missing"
+},
+"DE-0430": {
+"park": "Freilinger See National Recreation Area",
+"layer": "https://services2.arcgis.com/jUpNdisbWqRpMo35/ArcGIS/rest/services/Schutzgebiete/FeatureServer/0",
+"record": null,
+"name_field": "NAME",
+"record_name": "LSG-Freilinger See",
+"kind": "park",
+"answer": "YES",
+"checked_by": "chat 11 (Oct 31)",
+"from_file": "layers.json",
+"key_now": "missing"
+},
+"DE-1132": {
+"park": "Hildesheimer Wallanlagen Historic Site",
+"layer": "https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/CDDA_Dyna_WM/MapServer/4",
+"record": 121872,
+"name_field": "siteName",
+"record_name": "Wallanlagen",
+"kind": "land",
+"answer": "YES",
+"checked_by": "chat 11 (Oct 31)",
+"from_file": "layers.json",
+"key_now": "padus"
+},
+"DE-0165": {
+"park": "Greifensteine Nature Reserve",
+"layer": "https://luis.sachsen.de/arcgis/rest/services/natur/schutzgebiete/FeatureServer/2",
+"record": 94,
+"name_field": "NAME",
+"record_name": "Greifensteine",
+"kind": "preserve",
+"answer": "YES",
+"checked_by": "chat 11 (Nov 1, by layer)",
+"from_file": "layers.json",
+"key_now": "padus"
+},
+"DE-1019": {
+"park": "Argen National Nature Reserve",
+"layer": "https://rips-gdi.lubw.baden-wuerttemberg.de/arcgis/rest/services/wfs/Naturschutzgebiet/MapServer/0",
+"record": 907859,
+"name_field": "OBJEKT",
+"record_name": "Argen",
+"kind": "preserve",
+"answer": "YES",
+"checked_by": "chat 11 (Nov 1, by layer)",
+"from_file": "layers.json",
+"key_now": "padus"
+},
+"DE-0296": {
+"park": "Simssee Südufer Nature Reserve",
+"layer": "https://raw.githubusercontent.com/KentuckyPortableClub/KPC-Data/intake-files/file-DE-de-naturschutzgebiet-de-naturschutzgebiet.geojson.gz",
+"record": 71,
+"name_field": "name",
+"record_name": "Südufer des Simssees",
+"kind": "preserve",
+"answer": "YES",
+"checked_by": "auto (AUTO-1C, trusted collector)",
+"from_file": "layers.json",
+"key_now": "missing"
+},
+"DE-0395": {
+"park": "Eversten Holz Recreation Site",
+"layer": "https://geodienste.bfn.de/ogc/wfs/schutzgebiet?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=bfn_sch_Schutzgebiet:Landschaftsschutzgebiete",
+"record": "ni_LSG OL-S 00026",
+"name_field": "NAME",
+"record_name": "Eversten Holz",
+"kind": "park",
+"answer": "YES",
+"checked_by": "auto (AUTO-1C, trusted collector)",
+"from_file": "layers.json",
+"key_now": "missing"
+},
+"DE-0407": {
+"park": "Riesewohld Provincial Park Reserve",
+"layer": "https://geodienste.bfn.de/ogc/wfs/schutzgebiet?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature&TYPENAMES=bfn_sch_Schutzgebiet:Landschaftsschutzgebiete",
+"record": "sh_51-HEI-42",
+"name_field": "NAME",
+"record_name": "Riesewohld",
+"kind": "park",
+"answer": "YES",
+"checked_by": "auto (AUTO-1C, trusted collector)",
+"from_file": "layers.json",
+"key_now": "missing"
+}
+}

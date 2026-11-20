@@ -1,0 +1,62 @@
+{
+"US-7529": {
+"park": "Beckley Iron Furnace State Park",
+"layer": "",
+"record": "alias:Beckley Furnace Industrial Monument",
+"name_field": null,
+"record_name": "Beckley Furnace Industrial Monument",
+"kind": "alias",
+"answer": "YES",
+"checked_by": "chat 11 (Oct 31)",
+"from_file": "aliases-oct31.json",
+"key_now": "missing"
+},
+"US-0881": {
+"park": "Eightmile National Wild and Scenic River",
+"layer": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_WildScenicRiverSegments_01/MapServer/0",
+"record": 535,
+"name_field": "wsr_river_name",
+"record_name": "Eightmile Wild and Scenic River",
+"kind": "land",
+"answer": "YES",
+"checked_by": "chat 11 (Oct 31)",
+"from_file": "layers.json",
+"key_now": "line"
+},
+"US-0882": {
+"park": "Farmington National Wild and Scenic River",
+"layer": "trails/US-0882.json",
+"record": "trl:US-0882",
+"name_field": "",
+"record_name": "Farmington National Wild and Scenic River",
+"kind": "map accuracy",
+"answer": "YES (chat 11, Nov 2): KEEP. Name and kind match; the pin is within normal distan",
+"checked_by": "chat 11",
+"from_file": "map-audit.json",
+"key_now": "line"
+},
+"US-1668": {
+"park": "Gardner Lake State Park",
+"layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+"record": "padus#51835",
+"name_field": "",
+"record_name": "Gardner Lake",
+"kind": "map accuracy",
+"answer": "YES (chat 11, Nov 2, pattern SPILL; 10 sampled): KEEP the outline. The record is",
+"checked_by": "chat 11",
+"from_file": "map-audit.json",
+"key_now": "padus"
+},
+"US-1686": {
+"park": "Kent Falls State Park",
+"layer": "https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0",
+"record": "padus#52600",
+"name_field": "",
+"record_name": "Kent Falls State Park",
+"kind": "map accuracy",
+"answer": "YES (chat 11, Nov 2, pattern SPILL; 10 sampled): KEEP the outline. The record is",
+"checked_by": "chat 11",
+"from_file": "map-audit.json",
+"key_now": "padus"
+}
+}
