@@ -148,6 +148,11 @@ check('a row whose numbers do not add up to its size is not read (Bon Secour wit
 check('... and its block then misses the printed total, so the table does not add up', not info2['adds_up'] and [b['where'] for b in info2['blocks_bad']] == ['US-AL'])
 check('... and every unit printed in several places says so (no size from a table that does not add up)',
       [r for r in recs2 if '_part' in r] and all(note(r, 'why') for r in recs2 if '_part' in r))
+check('the only slack in a sum is rounding: 11 printed numbers may be 6 cents from their total, not 7; a 12-row block 7 cents, not 8',
+      A.pdf_adds_up('7,700.88', '7,700.94', 11) and not A.pdf_adds_up('7,700.88', '7,700.95', 11)
+      and A.pdf_adds_up('73,262.98', '73,263.05', 12) and not A.pdf_adds_up('73,262.98', '73,263.06', 12))
+_, info_r = A.read_pdf_table(pages(change=('0.00 575.00 7,700.88', '0.00 575.00 7,701.88')), cfg())
+check('a row one acre out is not read (Bon Secour printed as 7,701.88)', info_r['not_adding_up'] == 1 and not info_r['adds_up'])
 recs3, info3 = A.read_pdf_table(pages(drop=R['Wisconsin'][0]), cfg())
 check("a lost part is caught: without Wisconsin's row the Wisconsin block misses its total",
       not info3['adds_up'] and [b['where'] for b in info3['blocks_bad']] == ['US-WI']

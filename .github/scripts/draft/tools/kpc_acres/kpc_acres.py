@@ -734,7 +734,8 @@ def parse_pdf_line(line, pos=None):
 #   1. only pages that carry the table title are read;
 #   2. a row is a name followed by cells; every cell is a number, a $ amount or a short note mark, else not read;
 #   3. the size is the number the research row names (pdf_column: a position, or "last");
-#   4. pdf_sum_check: the size must equal the sum of the row's other acre numbers (to the cent), else not read;
+#   4. pdf_sum_check: the size must equal the sum of the row's other acre numbers, else not read (the only slack is
+#      rounding: half a cent for each printed number, so a row of 11 numbers may be 6 cents out, never a dollar);
 #   5. a state name alone on a line heads the rows under it; a "... Total" row closes them, and the rows read
 #      since the last total must add up to it;
 #   6. a name with a "(n)" note is one unit the list prints in several places (FWS: "(1) Also in Georgia"): it
@@ -749,7 +750,7 @@ PDF_PART = re.compile(r'\s*\((\d{1,3})\)\s*(\*?)$')                      # "Eufa
 PDF_SUMMARY = re.compile(r'\s*\*{2,}$')                                  # "FSA Interest AL ***"
 PDF_CONT = re.compile(r"\s*\((?:continued|cont\.?|con't\.?)\)\s*$", re.I)
 PDF_TOTAL_NAME = re.compile(r'\b(?:sub)?totals?\b', re.I)
-PDF_CENTS = decimal.Decimal('0.05')
+PDF_HALF_CENT = decimal.Decimal('0.005')
 _PDF_TEXT = {}
 
 
@@ -759,6 +760,12 @@ def _yes(v):
 
 def _dec(t):
     return decimal.Decimal(str(t).replace(',', ''))
+
+
+def pdf_adds_up(total, parts_sum, n):
+    """Do n printed numbers add up to the printed total?  Each printed number is its true value rounded to the cent, so
+    the sum of n of them can sit at most half a cent times (n + 1) from the printed total.  Anything further is a misread."""
+    return abs(_dec(total) - _dec(parts_sum)) <= PDF_HALF_CENT * (n + 1) + PDF_HALF_CENT
 
 
 def pdf_pos(cfg):
@@ -844,7 +851,7 @@ def read_pdf_table(pages, cfg):
         got = sum((r['dec'] for r in block), decimal.Decimal(0))
         units = sum(1 for r in block if not r['summary'] and not r['star'])
         where = state or label
-        if tot is not None and block and abs(got - tot) <= PDF_CENTS:
+        if tot is not None and block and pdf_adds_up(tot, got, len(block)):
             info['blocks_ok'] += 1
             if cnt is not None and cnt != units:
                 info['count_notes'].append(f'{where}: the list counts {cnt} units, {units} read')
@@ -914,7 +921,7 @@ def read_pdf_table(pages, cfg):
             dec = _dec(nums[j])
             if add_up:
                 others = sum((_dec(n) for k, n in enumerate(nums) if k != j), decimal.Decimal(0))
-                if len(nums) < 3 or abs(others - dec) > PDF_CENTS:
+                if len(nums) < 3 or not pdf_adds_up(dec, others, len(nums) - 1):
                     miss('not_adding_up', line, 'the row does not add up to its size')
                     continue
             key = (state, name.lower(), part, tuple(nums))
@@ -2065,7 +2072,7 @@ def write_outputs(out, results, parks, meta, answer=None):
             for b in t['blocks_bad'][:12]:
                 L.append(f'    - {b["where"]}: {b["rows"]} rows add to {b["rows_add_to"]}, the list says '
                          f'{b["list_total"] if b["list_total"] is not None else "nothing (no total row seen)"}')
-            if g and g.get('list_total') is not None and abs(_dec(g['list_total']) - _dec(g['rows_add_to'])) <= PDF_CENTS:
+            if g and g.get('list_total') is not None and pdf_adds_up(g['list_total'], g['rows_add_to'], t['rows'] + t['summary_rows']):
                 L.append(f'  - the list\'s grand total agrees: {g.get("list_units") if g.get("list_units") is not None else "?"} '
                          f'units, {g["list_total"]} acres')
             elif g:
