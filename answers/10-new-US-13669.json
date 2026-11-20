@@ -1,0 +1,38 @@
+{
+ "request": "requests/10-new-US-13669.json",
+ "id": "10-new-US-13669",
+ "chat": 10,
+ "kind": "page",
+ "report": "new park US-13669 Clear Creek Greenway BLM Recreation Management Area: its POTA record (website + agency) for the Fable book row",
+ "asked": {
+  "chat": 10,
+  "kind": "page",
+  "urls": [
+   "https://api.pota.app/park/US-13669"
+  ],
+  "report": "new park US-13669 Clear Creek Greenway BLM Recreation Management Area: its POTA record (website + agency) for the Fable book row"
+ },
+ "answered": "2026-11-20 12:18Z",
+ "results": [
+  {
+   "url": "https://api.pota.app/park/US-13669",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-13669",
+   "title": "",
+   "text": "{\"parkId\": 150657, \"reference\": \"US-13669\", \"name\": \"Clear Creek Greenway\", \"latitude\": 40.4938, \"longitude\": -122.467, \"grid4\": \"CN80\", \"grid6\": \"CN80sl\", \"parktypeId\": 224, \"active\": 1, \"parkComments\": \"\", \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile,Foot\", \"activationMethods\": \"Automobile,Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://www.blm.gov/visit/clear-creek-greenway\", \"createdByAdmin\": \"Tracy Lenocker\", \"parktypeDesc\": \"BLM Recreation Management Area\", \"locationDesc\": \"US-CA\", \"locationName\": \"California\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"uniqueHunters\": 0}",
+   "links": [],
+   "read_by": "headless browser"
+  }
+ ],
+ "seconds": 10,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "host_rule": 0,
+  "for_person_urls": []
+ },
+ "short": "1 result(s), 1 read OK, 0 screenshot(s)"
+}
