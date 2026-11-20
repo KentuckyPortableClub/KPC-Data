@@ -393,5 +393,23 @@ for name, job in jobs.items():
 check('the read checkout does not keep a write credential',
       any((s.get('with') or {}).get('persist-credentials') is False for s in jobs.get('read', {}).get('steps') or []))
 
+# --- 19 Nov (Opus, key-quality.md 19 item 43): the three reading faults of the line read ---
+i, m = R.inside_units('The Gauley River flows within the New River Gorge National Park before it joins the New River.',
+                      'Summersville Lake Wildlife Management Area')
+i2, m2 = R.inside_units('Nearby, Babcock State Park is part of the Monongahela National Forest scenic loop.', 'Hawks Nest State Park')
+check('fault A: a sentence about a river or a neighbour park is not inside_of (it goes to maybe_inside)',
+      i == [] and i2 == [] and m and m2 and all(x['why'] == 'the sentence is not about this park' for x in m + m2))
+i3, _ = R.inside_units('Red Cliffs Recreation Area lies within the Red Cliffs National Conservation Area.', 'Red Cliffs Recreation Area')
+check('fault A: the park named as the subject still counts', [x['unit'] for x in i3] == ['Red Cliffs National Conservation Area'])
+i4, m4 = R.inside_units('Recreation sites within the Red Cliffs National Conservation Area include Babylon Arch.',
+                        'Red Cliffs National Conservation Area')
+own = {'US-1': {'name': 'Red Cliffs National Conservation Area', 'type': 'National Conservation Area'}}
+check('fault B: a park is never inside itself, and its own number is never the unit',
+      i4 == [] and m4 == [] and R.match_unit_ref(own, 'Red Cliffs National Conservation Area', 'National Conservation Area', exclude='US-1') is None)
+ky = R.address_facts('https://maps.example.gov/viewer?center=-84.5,37.8')['coords']
+ak = R.address_facts('https://maps.example.gov/viewer?center=-150.2,61.2')['coords']
+check('fault C: center=<lon>,<lat> is read longitude first, east of -90 too (R-PR9)',
+      [(c['lat'], c['lon']) for c in ky] == [(37.8, -84.5)] and [(c['lat'], c['lon']) for c in ak] == [(61.2, -150.2)])
+
 print('ALL PASS' if ok else 'SOME FAILED')
 sys.exit(0 if ok else 1)
