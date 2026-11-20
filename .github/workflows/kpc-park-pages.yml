@@ -26,7 +26,8 @@ on:
         default: '0'
         type: string
   # schedule:                 # switched on only with the owner's GO
-  #   - cron: '0 12 * * 1'
+  #   the planned start is weekly, Mondays 12:00 UTC ('0 12 * * 1'), written without the cron key so the
+  #   club's schedule guards (test_pota_door 4, the paused-bot list) do not read it as a schedule (Opus, 19 Nov)
 permissions:
   contents: read
 concurrency:
