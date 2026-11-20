@@ -1,12 +1,13 @@
 name: KPC park facts (one file from the acreage bot, the page reader and the link IDs)
-# The owner, 20 Nov 2026 2:47-2:49 PM: "build it to where it makes one file ... tie everything together that needs to be and have the
-# master file built for the keys to read". NO TIMER: it runs only right after the page reader or the tool trial (acreage bot) finish,
-# or by hand. It downloads nothing and contacts no website: it reads files already saved (data/parkinfo on main, acres/ and
-# park-pages/facts/ on tools-out), runs kpc_link_ids (web addresses only) and kpc_park_facts, and saves ONE file on main:
-#   data/park-facts.json.gz   one row per US / Canadian park: official size, page facts, link facts, each with its source and date
+# NO TIMER: it runs only right after the page reader or the tool trial (acreage bot) finish, or by hand. It downloads
+# nothing from any agency and opens no website: it reads files already saved (data/parkinfo on main, acres/ and
+# park-pages/facts/ on tools-out, the keeper's sizes when they exist), the key's joined layers (KPC-Links, public,
+# read-only) for the size witness, runs kpc_link_ids (web addresses only) and kpc_park_facts, and saves ONE file on main:
+#   data/park-facts.json.gz   one row per US / Canadian park: official size (with its witness), page facts, link facts
 #   data/park-facts-summary.txt
-# It COLLECTS, it does not DECIDE: no key, outline, 2-fer or release is built or changed here. The keys read the file (KPC-Links
-# kpc_park_facts_read.py) only where the owner's reviewed rules say so.
+# It COLLECTS, it does not DECIDE: no key, outline, 2-fer or release is built or changed here.
+# STRICT (20 Nov 2026): no step is allowed to fail quietly. A missing input or an error holds the run (red) and nothing is
+# saved: a missing file never means "no rule". Only the save job may write to the repository.
 on:
   workflow_run:
     workflows:
@@ -15,74 +16,84 @@ on:
     types: [completed]
   workflow_dispatch:
 permissions:
-  contents: write
+  contents: read
 concurrency:
   group: kpc-park-facts
   cancel-in-progress: false
 jobs:
-  facts:
+  build:
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    permissions:
+      contents: read
     steps:
       - uses: actions/checkout@v5
-        id: checkout
-        continue-on-error: true
         with:
           ref: main
           path: kpcdata
           fetch-depth: 1
       - uses: actions/setup-python@v5
-        id: python
-        continue-on-error: true
         with:
           python-version: '3.12'
-      - name: Build the one file from the saved bot files
-        id: build
-        continue-on-error: true
+      - name: Read the saved files (a missing one holds the run)
         run: |
-          warn() { echo "::warning title=${1}::${2}"; echo "$1 - $2" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
+          set -euo pipefail
+          W="$RUNNER_TEMP/pf"; mkdir -p "$W/pages" "$W/out" "$W/links"
+          cd kpcdata
+          git fetch -q --depth 1 origin "+refs/heads/tools-out:refs/remotes/origin/tools-out"
+          git show origin/tools-out:acres/acres.json > "$W/acres.json"
+          git archive origin/tools-out park-pages/facts | tar -x -C "$W/pages" --strip-components=2
+          ls "$W"/pages/*.json > /dev/null
+          if [ -f data/keeper-sizes/latest.json ]; then cp data/keeper-sizes/latest.json "$W/keeper-sizes.json"; fi
+          cd "$W"
+          GIT_TERMINAL_PROMPT=0 git -c credential.helper= clone -q --depth 1 --filter=blob:none --no-checkout https://github.com/KentuckyPortableClub/KPC-Links links
+          git -C links sparse-checkout set --no-cone 'data/us-key/US-*.json' data/us-key/layers.json 'data/ca-key/CA-*.json'
+          git -C links checkout -q
+          ls links/data/us-key/US-*.json links/data/us-key/layers.json > /dev/null
+      - name: Build the one file
+        run: |
+          set -euo pipefail
+          W="$RUNNER_TEMP/pf"
           cd kpcdata
           T=.github/scripts/draft/tools
-          W="$RUNNER_TEMP/pf"; mkdir -p "$W/pages" "$W/out" "$W/links"
-          git fetch -q --depth 1 origin "+refs/heads/tools-out:refs/remotes/origin/tools-out" || warn "Read" "tools-out was not read"
-          git show origin/tools-out:acres/acres.json > "$W/acres.json" 2>/dev/null || { warn "Read" "no acres/acres.json on tools-out"; rm -f "$W/acres.json"; }
-          git archive origin/tools-out park-pages/facts 2>/dev/null | tar -x -C "$W/pages" --strip-components=2 || warn "Read" "no park-pages/facts on tools-out"
-          python3 $T/kpc_link_ids/kpc_link_ids.py --parkinfo data/parkinfo --areas "US CA" --out "$W/links" || warn "Link IDs" "the link tool stopped"
-          L=$(ls "$W"/links/*/link-ids.csv 2>/dev/null | tail -1)
-          A=""; [ -s "$W/acres.json" ] && A="--acres $W/acres.json"
-          python3 $T/kpc_park_facts/kpc_park_facts.py --parkinfo data/parkinfo $A --pages "$W/pages" ${L:+--links "$L"} --out "$W/out" \
-            || { warn "Park facts" "the one file was not made"; exit 1; }
-          gzip -9 -n -c "$W/out/park-facts.json" > data/park-facts.json.gz
-          cp "$W/out/summary.txt" data/park-facts-summary.txt
-          S=$(stat -c %s data/park-facts.json.gz)
-          if [ "$S" -gt 2000000 ]; then warn "Size" "park-facts.json.gz is $S bytes (over 2 MB): not saved to main, ask the owner"; git checkout -q -- data 2>/dev/null; rm -f data/park-facts.json.gz; exit 1; fi
-          echo "::notice title=Park facts::$(sed -n 3,6p data/park-facts-summary.txt | tr '\n' ' ' | cut -c1-300)"
+          python3 $T/kpc_link_ids/kpc_link_ids.py --parkinfo data/parkinfo --areas "US CA" --out "$W/links-out"
+          L=$(ls "$W"/links-out/*/link-ids.csv | tail -1)
+          K=""; [ -f "$W/keeper-sizes.json" ] && K="--keeper-sizes $W/keeper-sizes.json"
+          python3 $T/kpc_park_facts/kpc_park_facts.py --parkinfo data/parkinfo --acres "$W/acres.json" $K --pages "$W/pages" \
+            --links "$L" --key "$W/links/data/us-key" --key "$W/links/data/ca-key" --layers "$W/links/data/us-key/layers.json" --out "$W/out"
+          mkdir -p "$W/save"
+          gzip -9 -n -c "$W/out/park-facts.json" > "$W/save/park-facts.json.gz"
+          cp "$W/out/summary.txt" "$W/save/park-facts-summary.txt"
+          S=$(stat -c %s "$W/save/park-facts.json.gz")
+          if [ "$S" -gt 2000000 ]; then echo "::error title=Size::park-facts.json.gz is $S bytes (over 2 MB): not saved, ask the owner"; exit 1; fi
+          echo "::notice title=Park facts::$(sed -n 3,6p "$W/save/park-facts-summary.txt" | tr '\n' ' ' | cut -c1-300)"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: park-facts
+          path: ${{ runner.temp }}/pf/save/
+          retention-days: 3
+          if-no-files-found: error
+  save:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+          fetch-depth: 1
+      - uses: actions/download-artifact@v4
+        with:
+          name: park-facts
+          path: data/
       - name: Save the one file on main
-        id: save
-        if: ${{ steps.build.outcome == 'success' }}
-        continue-on-error: true
         run: |
-          warn() { echo "::warning title=${1}::${2}"; echo "$1 - $2" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
-          cd kpcdata
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/park-facts.json.gz data/park-facts-summary.txt
           if git diff --cached --quiet; then echo "nothing new"; exit 0; fi
           git commit -qm "park facts: one file from the acreage bot, the page reader and the link IDs"
-          bash .github/scripts/kpc_push_retry.sh main 4 "data/park-facts.json.gz data/park-facts-summary.txt" || warn "Save" "the file was not saved to main"
-      - name: Report hidden failures
-        if: always()
-        continue-on-error: true
-        env:
-          KPC_STEPS: ${{ toJSON(steps) }}
-        run: |
-          python3 - <<'PY'
-          import json, os
-          s = json.loads(os.environ.get('KPC_STEPS') or '{}')
-          bad = [k for k, v in s.items() if v.get('outcome') == 'failure' and v.get('conclusion') == 'success']
-          for k in bad: print(f'::error title=Step failed (kept green)::step {k} failed; continue-on-error kept the job green. See its log.')
-          h = os.path.join(os.environ.get('RUNNER_TEMP') or '/tmp', 'kpc-hidden.txt')
-          said = [x.strip() for x in open(h, encoding='utf-8', errors='replace') if x.strip()] if os.path.exists(h) else []
-          if said or bad:
-              print(f"::warning title=Hidden failures::{len(said)} caught inside steps, {len(bad)} step(s) failed but kept green")
-          PY
+          bash .github/scripts/kpc_push_retry.sh main 4 "data/park-facts.json.gz data/park-facts-summary.txt"
