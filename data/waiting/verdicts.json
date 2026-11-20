@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-20T12:15Z",
+ "checked": "2026-11-20T15:17Z",
  "switched_on": false,
  "results": [
   {
@@ -55,182 +55,222 @@
   {
    "path": "data/campstate/US-AK.json",
    "kind": "campstate",
-   "why": [],
+   "why": [
+    "F-4 unsure: no state outline for AK (KPC-Links kpc-us-states.json)"
+   ],
    "notes": [],
-   "verdict": "PASS",
+   "verdict": "HOLD",
    "fp": "a29262be819449d7",
-   "net": true
+   "net": false
   },
   {
    "path": "data/campstate/US-AZ.json",
    "kind": "campstate",
-   "why": [],
+   "why": [
+    "F-4 unsure: no state outline for AZ (KPC-Links kpc-us-states.json)"
+   ],
    "notes": [],
-   "verdict": "PASS",
+   "verdict": "HOLD",
    "fp": "ddeca96c2e109bd9",
-   "net": true
+   "net": false
   },
   {
    "path": "data/campstate/US-CO.json",
    "kind": "campstate",
-   "why": [],
+   "why": [
+    "F-4 unsure: no state outline for CO (KPC-Links kpc-us-states.json)"
+   ],
    "notes": [],
-   "verdict": "PASS",
+   "verdict": "HOLD",
    "fp": "406ea190ba6a3a0c",
-   "net": true
+   "net": false
   },
   {
    "path": "data/campstate/US-FL.json",
    "kind": "campstate",
-   "why": [],
+   "why": [
+    "F-4 unsure: no state outline for FL (KPC-Links kpc-us-states.json)"
+   ],
    "notes": [],
-   "verdict": "PASS",
+   "verdict": "HOLD",
    "fp": "e6c9c8689c524dff",
-   "net": true
+   "net": false
   },
   {
    "path": "data/campstate/US-HI.json",
    "kind": "campstate",
-   "why": [],
+   "why": [
+    "F-4 unsure: no state outline for HI (KPC-Links kpc-us-states.json)"
+   ],
    "notes": [],
-   "verdict": "PASS",
+   "verdict": "HOLD",
    "fp": "289845179964c2da",
-   "net": true
+   "net": false
   },
   {
    "path": "data/campstate/US-IA.json",
    "kind": "campstate",
-   "why": [],
+   "why": [
+    "F-4 unsure: no state outline for IA (KPC-Links kpc-us-states.json)"
+   ],
    "notes": [],
-   "verdict": "PASS",
+   "verdict": "HOLD",
    "fp": "e1a41a771c857d34",
-   "net": true
+   "net": false
   },
   {
    "path": "data/campstate/US-IN.json",
    "kind": "campstate",
-   "why": [],
+   "why": [
+    "F-4 unsure: no state outline for IN (KPC-Links kpc-us-states.json)"
+   ],
    "notes": [],
-   "verdict": "PASS",
+   "verdict": "HOLD",
    "fp": "53fe91987968a747",
-   "net": true
+   "net": false
   },
   {
    "path": "data/campstate/US-MN.json",
    "kind": "campstate",
-   "why": [],
+   "why": [
+    "F-4 unsure: no state outline for MN (KPC-Links kpc-us-states.json)"
+   ],
    "notes": [],
-   "verdict": "PASS",
+   "verdict": "HOLD",
    "fp": "211aa4b569d8fe09",
-   "net": true
+   "net": false
   },
   {
    "path": "data/campstate/US-MT.json",
    "kind": "campstate",
-   "why": [],
+   "why": [
+    "F-4 unsure: no state outline for MT (KPC-Links kpc-us-states.json)"
+   ],
    "notes": [],
-   "verdict": "PASS",
+   "verdict": "HOLD",
    "fp": "7034be1f9b82fae3",
-   "net": true
+   "net": false
   },
   {
    "path": "data/campstate/US-ND.json",
    "kind": "campstate",
-   "why": [],
+   "why": [
+    "F-4 unsure: no state outline for ND (KPC-Links kpc-us-states.json)"
+   ],
    "notes": [],
-   "verdict": "PASS",
+   "verdict": "HOLD",
    "fp": "3f593f1599729de5",
-   "net": true
+   "net": false
   },
   {
    "path": "data/campstate/US-NH.json",
    "kind": "campstate",
-   "why": [],
+   "why": [
+    "F-4 unsure: no state outline for NH (KPC-Links kpc-us-states.json)"
+   ],
    "notes": [],
-   "verdict": "PASS",
+   "verdict": "HOLD",
    "fp": "2c627ad5cfda6979",
-   "net": true
+   "net": false
   },
   {
    "path": "data/campstate/US-NM.json",
    "kind": "campstate",
-   "why": [],
+   "why": [
+    "F-4 unsure: no state outline for NM (KPC-Links kpc-us-states.json)"
+   ],
    "notes": [],
-   "verdict": "PASS",
+   "verdict": "HOLD",
    "fp": "e2895b71aec5eef5",
-   "net": true
+   "net": false
   },
   {
    "path": "data/campstate/US-NV.json",
    "kind": "campstate",
-   "why": [],
+   "why": [
+    "F-4 unsure: no state outline for NV (KPC-Links kpc-us-states.json)"
+   ],
    "notes": [],
-   "verdict": "PASS",
+   "verdict": "HOLD",
    "fp": "0e6c84d8aaf1e9f0",
-   "net": true
+   "net": false
   },
   {
    "path": "data/campstate/US-OH.json",
    "kind": "campstate",
-   "why": [],
+   "why": [
+    "F-4 unsure: no state outline for OH (KPC-Links kpc-us-states.json)"
+   ],
    "notes": [],
-   "verdict": "PASS",
+   "verdict": "HOLD",
    "fp": "97dfd77c77c8dc0a",
-   "net": true
+   "net": false
   },
   {
    "path": "data/campstate/US-OR.json",
    "kind": "campstate",
-   "why": [],
+   "why": [
+    "F-4 unsure: no state outline for OR (KPC-Links kpc-us-states.json)"
+   ],
    "notes": [],
-   "verdict": "PASS",
+   "verdict": "HOLD",
    "fp": "67ea92912dd2d126",
-   "net": true
+   "net": false
   },
   {
    "path": "data/campstate/US-PA.json",
    "kind": "campstate",
-   "why": [],
+   "why": [
+    "F-4 unsure: no state outline for PA (KPC-Links kpc-us-states.json)"
+   ],
    "notes": [],
-   "verdict": "PASS",
+   "verdict": "HOLD",
    "fp": "7cee2bd51cd34ddf",
-   "net": true
+   "net": false
   },
   {
    "path": "data/campstate/US-SD.json",
    "kind": "campstate",
-   "why": [],
+   "why": [
+    "F-4 unsure: no state outline for SD (KPC-Links kpc-us-states.json)"
+   ],
    "notes": [],
-   "verdict": "PASS",
+   "verdict": "HOLD",
    "fp": "5d3623eaaa74bd8e",
-   "net": true
+   "net": false
   },
   {
    "path": "data/campstate/US-UT.json",
    "kind": "campstate",
-   "why": [],
+   "why": [
+    "F-4 unsure: no state outline for UT (KPC-Links kpc-us-states.json)"
+   ],
    "notes": [],
-   "verdict": "PASS",
+   "verdict": "HOLD",
    "fp": "fabb7f0e4cc06461",
-   "net": true
+   "net": false
   },
   {
    "path": "data/campstate/US-VA.json",
    "kind": "campstate",
-   "why": [],
+   "why": [
+    "F-4 unsure: no state outline for VA (KPC-Links kpc-us-states.json)"
+   ],
    "notes": [],
-   "verdict": "PASS",
+   "verdict": "HOLD",
    "fp": "1d3bd9db974cf484",
-   "net": true
+   "net": false
   },
   {
    "path": "data/campstate/US-VT.json",
    "kind": "campstate",
-   "why": [],
+   "why": [
+    "F-4 unsure: no state outline for VT (KPC-Links kpc-us-states.json)"
+   ],
    "notes": [],
-   "verdict": "PASS",
+   "verdict": "HOLD",
    "fp": "5f4489b490e2ef6e",
-   "net": true
+   "net": false
   },
   {
    "path": "data/trails/US-13626.json",
