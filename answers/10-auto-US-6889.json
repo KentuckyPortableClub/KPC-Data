@@ -1,0 +1,40 @@
+{
+ "request": "requests/10-auto-US-6889.json",
+ "id": "10-auto-US-6889",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "US-6889",
+  "name": "Buxton Woods State Game Land",
+  "agency": "North Carolina Wildlife Resources Commission",
+  "url": "https://www.ncwildlife.gov/media/817/download?attachment",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-20 12:20Z",
+ "results": [
+  {
+   "url": "https://www.ncwildlife.gov/media/817/download?attachment",
+   "map_url": "https://www.ncwildlife.gov/media/817/download?attachment",
+   "saved": [
+    "maps/US-6889_buxton-woods-state-game-land.jpg"
+   ],
+   "bytes": 207205,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 6,
+ "manners": {
+  "requests": 2,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "host_rule": 0,
+  "for_person_urls": []
+ },
+ "short": "1 result(s), 1 read OK"
+}
