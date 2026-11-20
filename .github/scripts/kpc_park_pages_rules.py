@@ -412,13 +412,28 @@ def _unescape(s):
     return s
 
 
+def is_menu_chrome(s):
+    """A site or section menu (for example 'STATE PARKS MENU') is not a park name."""
+    t = re.sub(r'\s+', ' ', str(s or '')).strip().strip('|-•').strip()
+    if not t:
+        return False
+    return t.upper() == 'MENU' or 'MENU' in t.upper().split()
+
+
 def _heading_and_title(html, text):
     title = heading = og = jname = ''
     if html and '<title' in html.lower():
         m = re.search(r'<title[^>]*>(.*?)</title>', html, re.I | re.S)
         title = _unescape(' '.join(re.sub(r'<[^>]+>', ' ', m.group(1)).split())) if m else ''
-        m = re.search(r'<h1[^>]*>(.*?)</h1>', html, re.I | re.S)
-        heading = _unescape(' '.join(re.sub(r'<[^>]+>', ' ', m.group(1)).split())) if m else ''
+        title = cut_tail(title)
+        if is_menu_chrome(title):
+            title = ''
+        for lv, inner in re.findall(r'<h([1-3])[^>]*>(.*?)</h\1>', html, re.I | re.S):
+            cand = _unescape(' '.join(re.sub(r'<[^>]+>', ' ', inner).split()))
+            cand = cut_tail(cand)
+            if cand and not is_menu_chrome(cand):
+                heading = cand
+                break
         m = re.search(r'property=["\']og:title["\'][^>]*content=["\']([^"\']+)', html, re.I)
         if not m:
             m = re.search(r'content=["\']([^"\']+)["\'][^>]*property=["\']og:title["\']', html, re.I)
@@ -437,6 +452,8 @@ def _heading_and_title(html, text):
         for line in (text or '').splitlines():
             line = line.strip()
             if not line or line.lower().startswith('skip to'):
+                continue
+            if is_menu_chrome(cut_tail(line)) or is_menu_chrome(line):
                 continue
             if '|' in line or '•' in line:
                 title = title or line
@@ -463,11 +480,21 @@ def strip_chrome(s):
 
 def best_name_of(title, heading, og, jname):
     """R-PR2. Heading first. Site tails are cut. Heading and title that disagree: best is null."""
+    if is_menu_chrome(title or ''):
+        title = ''
+    if is_menu_chrome(heading or ''):
+        heading = ''
+    if is_menu_chrome(og or ''):
+        og = ''
     raw_title = title or og or ''
     h = strip_chrome(heading or '')
     t = strip_chrome(raw_title)
     o = strip_chrome(og or '')
     j = strip_chrome(jname or '')
+    if is_menu_chrome(h):
+        h = ''
+    if is_menu_chrome(t):
+        t = ''
     # keep a heading that still names a place; a bare 'Welcome' is not a name
     if h and not (kinds_in(h) or len(h.split()) >= 2):
         h = ''

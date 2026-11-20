@@ -368,12 +368,17 @@ jobs:
     env:
       GH_TOKEN: ${{ github.token }}
     steps:
+      - uses: actions/checkout@v5
+        with:
+          sparse-checkout: |
+            .github/scripts/kpc_start_fers_chain.py
+          sparse-checkout-cone-mode: false
       - name: Start the 2-fer chain after this copy
         run: |
-          if gh api -X POST "repos/${{ github.repository }}/actions/workflows/kpc-fers-chain.yml/dispatches" -f ref=main; then
-            echo "::notice title=2-fer chain::started after this copy (${{ github.event_name }}${{ inputs.as_schedule && format(', as the missed {0} run', inputs.as_schedule) || '' }})"
+          # Nov 20: a disabled chain (the owner's stop) is a notice, not a failed copy. The script never re-enables it.
+          if python3 .github/scripts/kpc_start_fers_chain.py --repo "${{ github.repository }}" --ref main; then
+            true
           else
-            echo "::error title=2-fer chain::could not start the 2-fer chain (exit $?); start kpc-fers-chain.yml by hand"
             echo "**Step B3:** the 2-fer chain could NOT be started after this copy; start kpc-fers-chain.yml by hand" >> "$GITHUB_STEP_SUMMARY"
             exit 1
           fi
