@@ -1,4 +1,4 @@
-# Spot check: all kinds (20 random rows of 15376)
+# Spot check: all kinds (20 random rows of 15401)
 
 For chat 11: open each link and say YES / NO. The engine decides nothing.
 
@@ -122,28 +122,28 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: record 'Bohemian WMA' (PACK-US-MN-forest-27); pin inside; about 664.5 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
 - answer: 
 
-## CA-6146 Valleyview Trail Network National Recreation Trail (CA-SK)
+## CA-4893 Green Gables Heritage Place (L.M. Montgomery's Cavendish NHS) National Historic Site (CA-PE)
 - status: candidate
 - tier: T-6
 - band: WEAK
-- record_name: Valleyview Trail - Easy Loop
-- url: https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/Trails_Sentiers_TIMS_SGIS_ln_vw/FeatureServer/0?f=html
-- record_link: https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/Trails_Sentiers_TIMS_SGIS_ln_vw/FeatureServer/0/query?where=OBJECTID%3D611&outFields=%2A&f=html
-- source_url: https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/Trails_Sentiers_TIMS_SGIS_ln_vw/FeatureServer/0/query?geometry=-106.719%2C53.7105&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 17
-- why: record 'Valleyview Trail - Easy Loop' (PACK-CA-SK-trail-74); pin 17 m from the edge; Rule G: LIKELY (names overlap); size unknown; confidence: weak
+- record_name: Cavendish
+- url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4?f=html
+- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D565&outFields=%2A&f=html
+- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-63.3824%2C46.4905&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 0
+- why: record 'Cavendish' (Q-1781); pin inside; about 4037.8 acres; Rule G: LIKELY (names overlap); size unknown; confidence: weak
 - answer: 
 
-## US-0042 Fort Gaines National Historic Site (US-AL)
-- status: found
+## GB-4496 Central Park (GB)
+- status: candidate
 - tier: T-2
-- band: STRONG
-- record_name: Fort Gaines
-- url: https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1?f=html
-- record_link: https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?where=OBJECTID%3D379681&outFields=%2A&f=html
-- source_url: https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?geometry=-88.0756%2C30.2483&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- band: WEAK
+- record_name: Central Sanday
+- url: https://ogc.nature.scot/geoserver/protectedareas/wfs?service=WFS&request=DescribeFeatureType&version=2.0.0&typeNames=protectedareas%3Asssi
+- record_link: https://ogc.nature.scot/geoserver/protectedareas/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=protectedareas%3Asssi&count=25&filter=%3Cfes%3AFilter%20xmlns%3Afes%3D%22http%3A%2F%2Fwww.opengis.net%2Ffes%2F2.0%22%3E%3Cfes%3APropertyIsLike%20wildCard%3D%22%2A%22%20singleChar%3D%22.%22%20escapeChar%3D%22%21%22%20matchCase%3D%22false%22%3E%3Cfes%3AValueReference%3ENAME%3C%2Ffes%3AValueReference%3E%3Cfes%3ALiteral%3E%2Acentral%2A%3C%2Ffes%3ALiteral%3E%3C%2Ffes%3APropertyIsLike%3E%3C%2Ffes%3AFilter%3E
+- source_url: https://ogc.nature.scot/geoserver/protectedareas/wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=protectedareas%3Asssi&count=25&filter=%3Cfes%3AFilter%20xmlns%3Afes%3D%22http%3A%2F%2Fwww.opengis.net%2Ffes%2F2.0%22%3E%3Cfes%3APropertyIsLike%20wildCard%3D%22%2A%22%20singleChar%3D%22.%22%20escapeChar%3D%22%21%22%20matchCase%3D%22false%22%3E%3Cfes%3AValueReference%3ENAME%3C%2Ffes%3AValueReference%3E%3Cfes%3ALiteral%3E%2Acentral%2A%3C%2Ffes%3ALiteral%3E%3C%2Ffes%3APropertyIsLike%3E%3C%2Ffes%3AFilter%3E
 - pin_m: 0
-- why: record 'Fort Gaines' (Q-1678); pin inside; about 31.5 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
+- why: record 'Central Sanday' (GB-SCT-sssi); pin inside; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
 ## US-13275 Pioneer Memorial Park State Historical Monument (US-NV)
@@ -230,15 +230,15 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: record 'Louis S. St. Laurent' (Q-1371); pin 25 m from the edge; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: likely
 - answer: 
 
-## CA-6564 Blanche Provincial Park (CA-NS)
-- status: found
+## CA-6560 Kingsburg Beach Provincial Park (CA-NS)
+- status: candidate
 - tier: T-1
-- band: STRONG
-- record_name: Blanche Provincial Park
+- band: WEAK
+- record_name: Kingsburg Beach Provincial Park
 - url: https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0?f=html
-- record_link: https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0/query?where=OBJECTID%3D104&outFields=%2A&f=html
-- source_url: https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0/query?geometry=-65.4183%2C43.5272&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_link: https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0/query?where=OBJECTID%3D136&outFields=%2A&f=html
+- source_url: https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0/query?geometry=-64.2585%2C44.2745&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: record 'Blanche Provincial Park' (PACK-CA-NS-park-80); pin inside; about 62.9 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
+- why: record 'Kingsburg Beach Provincial Park' (PACK-CA-NS-park-80); pin inside; about 2.7 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: likely
 - answer: 
 
