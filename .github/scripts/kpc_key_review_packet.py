@@ -497,7 +497,7 @@ def write_packet(out_dir, states, builds=None, fact_old=None, fact_new=None, gol
     gold_old_text = _read(gold_old)
     gold_new_text = _read(gold_new)
     if not gold_old_text and not gold_new_text:
-        gold_sentence = 'Gold score: not run.'
+        gold_sentence = 'Gold score: not here. The gold set is private since 19 Nov; it is scored in KPC-Store with KPC-Links main\'s grader.'
     elif not gold_old_text or not gold_new_text:
         gold_sentence = 'Gold score: one side did not finish. Read the gold file that is here.'
     elif _gold_head(gold_old_text) == _gold_head(gold_new_text):
@@ -1315,7 +1315,7 @@ def write_run_packet(out_dir, states, result, meta=None, assets=None, gold_old=N
     gold_old_text = _read(gold_old)
     gold_new_text = _read(gold_new)
     if not gold_old_text and not gold_new_text:
-        gold_sentence = 'Gold score: not run.'
+        gold_sentence = 'Gold score: not here. The gold set is private since 19 Nov; it is scored in KPC-Store with KPC-Links main\'s grader.'
     elif not gold_old_text or not gold_new_text:
         gold_sentence = 'Gold score: one side did not finish. Read the gold file that is here.'
     elif _gold_head(gold_old_text) == _gold_head(gold_new_text):
