@@ -22,8 +22,12 @@ check('B3 chain job: every event type, but only when the copy succeeded AND copi
 check('B3 copy job exposes the keys it copied', 'keys' in (b3['jobs']['copy'].get('outputs') or {}), True)
 check('the post-line workflow does not listen to the chain', ch['name'] in (pl['on'].get('workflow_run') or {}).get('workflows', []), False)
 run = '\n'.join(s.get('run', '') for s in j.get('steps', []))
-check('B3 chain job dispatches kpc-fers-chain.yml and fails visibly when it cannot',
-      ('workflows/kpc-fers-chain.yml/dispatches' in run, 'GITHUB_STEP_SUMMARY' in run, 'exit 1' in run), (True, True, True))
+script = (R / '.github/scripts/kpc_start_fers_chain.py').read_text(encoding='utf-8')
+check('B3 chain job starts kpc-fers-chain.yml through kpc_start_fers_chain.py',
+      'kpc_start_fers_chain.py' in run and 'kpc-fers-chain.yml' in script and '/dispatches' in script, True)
+check('B3 still writes a step summary and exits 1 when the start script fails (a disabled chain is a notice inside the script)',
+      ('GITHUB_STEP_SUMMARY' in run, 'exit 1' in run), (True, True))
+check('the start script never re-enables the chain', 'enabled: true' not in script and 'kpc-fers-chain.yml' in script, True)
 check('B3 permissions allow the dispatch', b3['permissions'].get('actions'), 'write')
 check('chain permissions allow the post-line dispatch', ch['permissions'].get('actions'), 'write')
 p = ch['jobs'].get('postline') or {}
