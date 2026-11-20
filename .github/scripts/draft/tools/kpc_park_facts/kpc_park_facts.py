@@ -141,10 +141,43 @@ def witness(ref, row, key_layers):
 
 def tag_sizes(sizes, key_layers):
     for ref, r in sizes.items():
-        t, why = witness(ref, r, key_layers)
+        if r.get('from') == 'keeper' and r.get('witness') in WITNESS_TAGS:   # the keeper's own tag wins
+            t, why = r['witness'], r.get('witness_why') or 'tagged by the keeper'
+        else:
+            t, why = witness(ref, r, key_layers)
         r['witness'], r['witness_why'] = t, why
         r['witness_counts'] = t in WITNESS_PROOF
     return sizes
+
+
+def read_keeper_sizes(path):
+    """The keeper's saved official sizes -> {ref: size fact}. Only the keeper fetches from agency servers, so its sizes come
+    first; the acreage bot's fill only the parks the keeper has none for. Expected shape (the same as acres.json):
+    {ref: {acres, source_url, read_date, agency?, record_name?, how?, witness?}} or {'parks': {...}}. A missing file = {}."""
+    if not path or not os.path.exists(path):
+        return {}, None
+    with open(path, encoding='utf-8') as f:
+        d = json.load(f)
+    d = d.get('parks', d) if isinstance(d, dict) else {}
+    out = {}
+    for ref, r in d.items():
+        if not REF.match(str(ref)) or not isinstance(r, dict) or r.get('acres') is None:
+            continue
+        out[ref] = {'acres': r.get('acres'), 'value_given': r.get('value_given'), 'unit_given': r.get('unit_given'),
+                    'agency': r.get('agency'), 'record_name': r.get('record_name'), 'how': r.get('how'),
+                    'flags': r.get('flags') or [], 'source_url': r.get('source_url'), 'read_date': r.get('read_date'),
+                    'other_sources': 0, 'witness': r.get('witness') if r.get('witness') in WITNESS_TAGS else None}
+    return out, os.path.basename(path)
+
+
+def merge_sizes(keeper, acres):
+    """Keeper first, the acreage bot as the fallback. Each row says which one it came from ('from')."""
+    out = {}
+    for ref, r in acres.items():
+        out[ref] = dict(r, **{'from': 'acreage bot'})
+    for ref, r in keeper.items():
+        out[ref] = dict(r, **{'from': 'keeper'})
+    return out
 
 
 def _first(xs, n):
@@ -259,7 +292,9 @@ def run(a):
     parks = read_parkinfo(a.parkinfo)
     if not parks:
         raise SystemExit(f'STOP: no US or Canadian parks read from {a.parkinfo}')
-    sizes, sname = read_acres(a.acres)
+    asizes, sname = read_acres(a.acres)
+    ksizes, kname = read_keeper_sizes(getattr(a, 'keeper_sizes', None))
+    sizes = merge_sizes(ksizes, asizes)
     pages, pareas = read_pages(a.pages)
     links, lname = read_links(a.links)
     key_layers = read_key_layers(a.key, a.layers) if a.key else None
@@ -267,11 +302,14 @@ def run(a):
     rows, c = combine(parks, sizes, pages, links)
     for r in sizes.values():
         c['size witness: ' + r['witness']] += 1
+        c['size from: ' + r['from']] += 1
     made = a.today or datetime.date.today().isoformat()
     doc = {'made': made, 'tool': VERSION,
            'note': 'Facts collected by three bots, side by side. Nothing here ties a park to land; each source is one '
                    'agreement at most, and the size-witness rules decide what counts.',
-           'sources': {'size': {'bot': 'acreage bot (kpc_acres)', 'file': sname, 'parks': len(sizes)},
+           'sources': {'size': {'bot': 'the keeper first, the acreage bot (kpc_acres) as the fallback',
+                                'keeper_file': kname, 'keeper_parks': len(ksizes), 'file': sname, 'parks': len(asizes),
+                                'used': len(sizes)},
                        'page': {'bot': 'park page reader (kpc-park-pages)', 'areas_read': pareas, 'parks': len(pages)},
                        'link': {'bot': 'link IDs (kpc_link_ids)', 'file': lname, 'parks': len(links)},
                        'parks_list': {'from': 'data/parkinfo (POTA)', 'parks': len(parks)}},
@@ -284,7 +322,7 @@ def run(a):
     os.replace(tmp, path)
     lines = [f'Park facts, {made} ({VERSION})', '',
              f'{len(parks):,} US and Canadian parks on the POTA list.',
-             f'  official size (acreage bot): {len(sizes):,} parks',
+             f'  official size: {len(sizes):,} parks ({len(ksizes):,} from the keeper, {len(sizes) - len(ksizes):,} from the acreage bot)',
              f'  own web page read (page reader): {len(pages):,} parks in {", ".join(pareas) or "no state yet"}',
              f'  web link facts (link IDs): {len(links):,} parks', '']
     lines += [f'  {v:>7,}  {k}' for k, v in sorted(c.items())]
@@ -387,6 +425,7 @@ def main(argv=None):
     ap.add_argument('--pages', help="the page reader's facts folder (park-pages/facts)")
     ap.add_argument('--links', help="kpc_link_ids' link-ids.csv")
     ap.add_argument('--key', action='append', help="KPC-Links data/us-key (and data/ca-key): the key's joined layers, for the size witness")
+    ap.add_argument('--keeper-sizes', dest='keeper_sizes', help="the keeper's saved official sizes (taken before the acreage bot's)")
     ap.add_argument('--layers', help='KPC-Links data/us-key/layers.json (each state layer\'s address)')
     ap.add_argument('--out', default='park-facts', help='output folder (default ./park-facts)')
     ap.add_argument('--today', help=argparse.SUPPRESS)
