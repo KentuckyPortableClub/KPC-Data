@@ -211,13 +211,16 @@ with tempfile.TemporaryDirectory() as td:
 src = (S / 'kpc_pdf_finder.py').read_text(encoding='utf-8')
 check('9. the finder never parses robots.txt itself (no robotparser, no parse_robots) and goes through kpc_manners.Manners',
       'robotparser' not in src and 'parse_robots' not in src and 'kpc_manners.Manners(' in src and 'urlopen' not in src)
-try:
-    d = subprocess.run(['git', 'diff', '--name-only', 'origin/main', '--', '.github/scripts/kpc_manners.py', '.github/scripts/kpc_host_rules.py'],
-                       cwd=ROOT, capture_output=True, text=True, timeout=60)
-    if d.returncode == 0: check(f'9. kpc_manners.py and kpc_host_rules.py unchanged against main ({d.stdout.strip() or "no diff"})', not d.stdout.strip())
-    else: print('NOTE: no origin/main here; the manners files are compared in the PR')
-except Exception as e:  # noqa: BLE001
-    print(f'NOTE: git not available ({e})')
+import hashlib
+def _sha(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+# A later edit of either file changes the pin in the same pull request, where a reviewer sees it.
+MANNERS_SHA = 'b28726c41cdebd78b49e92fa056c9d7f3608465a66e196a1c9d03cc5793fce3c'
+HOST_SHA = 'eec1a03ee34b6aeb0e7464d4ebbe5e223a145f48e57b10fa8ae7c8022c162dbc'
+check(f'9. kpc_manners.py frozen: {MANNERS_SHA}, reviewed by Fable, 19 Nov 2026',
+      _sha(S / 'kpc_manners.py') == MANNERS_SHA)
+check(f'9. kpc_host_rules.py frozen: {HOST_SHA}, reviewed by Fable, 19 Nov 2026',
+      _sha(S / 'kpc_host_rules.py') == HOST_SHA)
 
 print('ALL PASS' if ok else 'SOME FAILED')
 sys.exit(0 if ok else 1)
