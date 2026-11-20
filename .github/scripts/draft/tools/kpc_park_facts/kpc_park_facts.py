@@ -18,7 +18,7 @@ Nothing is downloaded and no input file is changed. Standard library only.
 """
 import argparse, collections, csv, datetime, glob, json, os, re, sys, tempfile
 
-VERSION = 'kpc_park_facts 1 (2026-11-20)'
+VERSION = 'kpc_park_facts 2 (2026-11-20)'
 REF = re.compile(r'^[A-Z0-9]{1,4}-\d{4,5}$')
 AREA = re.compile(r'^(US|CA)-[A-Z]{2}$')
 
@@ -66,6 +66,85 @@ def read_acres(path):
                     'flags': r.get('flags') or [], 'source_url': r.get('source_url'), 'read_date': r.get('read_date'),
                     'other_sources': len(r.get('other_sources') or [])}
     return out, os.path.basename(path)
+
+
+# ------------------------------------------------------------------ size witness -------------------------------------
+# Where an official size came from, so the key's matching knows whether it can count as a second, independent agreement.
+#   same_record      read from a map layer the key already joined this park to (the record the name picked): never proof
+#   other_layer      read from a different map layer than the ones the key joined: not proof (another layer is not a witness)
+#   agency_document  read from the agency's own published list (spreadsheet, PDF, CSV, web table): proof
+#   hand_copy        typed in by a person from the agency's figure: proof
+#   unknown          can't tell (no address, or the key has no joined layer for the park to compare with)
+WITNESS_TAGS = ('same_record', 'other_layer', 'agency_document', 'hand_copy', 'unknown')
+WITNESS_PROOF = ('agency_document', 'hand_copy')
+# the key's national layers (KPC-Links kpc_us_key.py Q and FWS); the state layers come from data/us-key/layers.json
+NATIONAL_LAYERS = {'PAD-US': 'https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query',
+                   'fws': 'https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query'}
+MAP_LAYER = re.compile(r'/(?:feature|map)server/\d+', re.I)
+LAYER_EXPORT = re.compile(r'/api/download/v\d+/items/|/sharing/rest/content/items/|hub\.arcgis\.com/|/datasets/', re.I)
+DOC_EXT = re.compile(r'\.(?:pdf|xlsx?|csv|txt|docx?)(?:$|[?#])', re.I)
+
+
+def norm_layer(url):
+    """A map layer address without the scheme, 'www.', the query and a trailing /query: 'host/path/featureserver/2'."""
+    u = re.sub(r'^[a-z]+://', '', str(url or '').strip().lower()).split('?')[0].split('#')[0].rstrip('/')
+    u = re.sub(r'^www\.', '', u)
+    u = re.sub(r'/query$', '', u)
+    m = MAP_LAYER.search(u)
+    return u[:m.end()] if m else u
+
+
+def read_key_layers(key_dirs, layers_path=None):
+    """KPC-Links' saved keys -> {ref: set of normalised layer addresses the key joined the park to}. A park the key has with
+    no joined layer gets an empty set. layers.json gives each state layer's address; NATIONAL_LAYERS the two national ones."""
+    ids = {k: norm_layer(v) for k, v in NATIONAL_LAYERS.items()}
+    if layers_path and os.path.exists(layers_path):
+        with open(layers_path, encoding='utf-8') as f:
+            for lid, v in (json.load(f) or {}).items():
+                if isinstance(v, list) and v and isinstance(v[0], str):
+                    ids[lid] = norm_layer(v[0])
+    out = {}
+    for d in key_dirs or []:
+        for path in sorted(glob.glob(os.path.join(d, '*.json'))):
+            if not AREA.match(os.path.basename(path)[:-5]):
+                continue
+            with open(path, encoding='utf-8') as f:
+                doc = json.load(f)
+            for ref, p in ((doc.get('parks') if isinstance(doc.get('parks'), dict) else doc) or {}).items():
+                if REF.match(str(ref)) and isinstance(p, dict):
+                    out[ref] = {ids.get(s) or ids.get(re.sub(r'\s.*$', '', str(s)), '') for s in p.get('src') or []} - {''}
+    return out
+
+
+def witness(ref, row, key_layers):
+    """(tag, why) for one official size. key_layers = read_key_layers(...) or None when the key was not read."""
+    how = str(row.get('how') or '').lower()
+    url = str(row.get('source_url') or '').strip()
+    if how.startswith('hand copy') or row.get('witness') == 'hand_copy':
+        return 'hand_copy', 'typed in by a person from the agency figure'
+    if not re.match(r'^https?://', url, re.I):
+        return 'unknown', 'no web address for the size'
+    if LAYER_EXPORT.search(url):
+        return 'unknown', "a map layer's table downloaded from an open-data site: can't tell which layer it is"
+    if MAP_LAYER.search(url) or re.search(r'\.zip(?:$|[?#])', url, re.I):
+        if key_layers is None:
+            return 'unknown', 'a map layer, and the key was not read to compare'
+        if not key_layers.get(ref):
+            return 'unknown', 'a map layer, and the key has no joined layer for this park'
+        if norm_layer(url) in key_layers[ref]:
+            return 'same_record', 'a map layer the key already joined this park to'
+        return 'other_layer', 'a map layer the key did not join this park to'
+    if DOC_EXT.search(url):
+        return 'agency_document', "the agency's own published list"
+    return 'unknown', 'not sure what the address is'
+
+
+def tag_sizes(sizes, key_layers):
+    for ref, r in sizes.items():
+        t, why = witness(ref, r, key_layers)
+        r['witness'], r['witness_why'] = t, why
+        r['witness_counts'] = t in WITNESS_PROOF
+    return sizes
 
 
 def _first(xs, n):
@@ -183,7 +262,11 @@ def run(a):
     sizes, sname = read_acres(a.acres)
     pages, pareas = read_pages(a.pages)
     links, lname = read_links(a.links)
+    key_layers = read_key_layers(a.key, a.layers) if a.key else None
+    tag_sizes(sizes, key_layers)
     rows, c = combine(parks, sizes, pages, links)
+    for r in sizes.values():
+        c['size witness: ' + r['witness']] += 1
     made = a.today or datetime.date.today().isoformat()
     doc = {'made': made, 'tool': VERSION,
            'note': 'Facts collected by three bots, side by side. Nothing here ties a park to land; each source is one '
@@ -262,7 +345,7 @@ def selftest():
             w.writerow(['US-9003', 'US-ZZ', 'Trail', '', '', '', 'no link', '', '', '', '', '', '', '', '', '', '', ''])
         ns = argparse.Namespace(parkinfo=os.path.join(t, 'parkinfo'), acres=os.path.join(t, 'acres.json'),
                                 pages=os.path.join(t, 'pages'), links=os.path.join(t, 'link-ids.csv'),
-                                out=os.path.join(t, 'out'), today='2026-11-20')
+                                out=os.path.join(t, 'out'), today='2026-11-20', key=None, layers=None)
         before = {n: open(os.path.join(t, n), 'rb').read() for n in ('acres.json', 'link-ids.csv')}
         path = run(ns)
         doc = json.load(open(path, encoding='utf-8'))
@@ -289,7 +372,7 @@ def selftest():
         check('no input file changed', {n: open(os.path.join(t, n), 'rb').read() for n in before} == before, True)
         check('the file says it collects and does not decide', 'Nothing here ties a park to land' in doc['note'], True)
         empty = argparse.Namespace(parkinfo=os.path.join(t, 'parkinfo'), acres=None, pages=None, links=None,
-                                   out=os.path.join(t, 'out2'), today='2026-11-20')
+                                   out=os.path.join(t, 'out2'), today='2026-11-20', key=None, layers=None)
         d2 = json.load(open(run(empty), encoding='utf-8'))
         check('runs with only the parks list (a bot file missing is not an error)', d2['counts'].get('facts from 0 bot(s)'), 4)
     say('')
@@ -303,6 +386,8 @@ def main(argv=None):
     ap.add_argument('--acres', help="the acreage bot's acres.json")
     ap.add_argument('--pages', help="the page reader's facts folder (park-pages/facts)")
     ap.add_argument('--links', help="kpc_link_ids' link-ids.csv")
+    ap.add_argument('--key', action='append', help="KPC-Links data/us-key (and data/ca-key): the key's joined layers, for the size witness")
+    ap.add_argument('--layers', help='KPC-Links data/us-key/layers.json (each state layer\'s address)')
     ap.add_argument('--out', default='park-facts', help='output folder (default ./park-facts)')
     ap.add_argument('--today', help=argparse.SUPPRESS)
     ap.add_argument('--selftest', action='store_true')
