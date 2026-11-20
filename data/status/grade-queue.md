@@ -1,4 +1,4 @@
-# Waiting for a grader (2026-11-20 03:27Z, written by the waiting room)
+# Waiting for a grader (2026-11-20 03:36Z, written by the waiting room)
 Rows the same as the live (already graded) copy keep their old YES: check only the NEW + CHANGED rows listed. Held = a check failed: fix first.
 
 - **data/trails/index-state.json** (trails, PASS; grader chat 11): 0 new, 7 changed, 3 gone, 303 same (carried); check: |||US-10914, |||US-10915, |||US-10917, |||US-10660, |||US-8437, |||US-8292, |||US-13195
