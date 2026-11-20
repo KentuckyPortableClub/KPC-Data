@@ -1,4 +1,4 @@
-# Spot check: outline (20 random rows of 15260)
+# Spot check: outline (20 random rows of 15279)
 
 For chat 11: open each link and say YES / NO. The engine decides nothing.
 
