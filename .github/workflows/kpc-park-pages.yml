@@ -1,7 +1,9 @@
-name: KPC park page reader (by hand only)
-# Started by hand. It reads park pages through kpc_manners and writes a folder a chat can fetch later.
+name: KPC park page reader (walks the US, one state per run)
+# It reads park pages through kpc_manners and saves the folder on tools-out (park-pages/).
 # It starts no other workflow, opens no issue, writes no comment, and sends nothing.
-# The schedule stays off until the owner says GO.
+# The owner's GO, 20 Nov 2026 9:13 AM: "set it to walk every US state by itself, one state per run, slowly, results to tools-out. No chat
+# should have to feed it." A timed run (or a hand run with areas blank) picks its own state: the state the last run left unfinished, else
+# the next state (A to Z) with no facts on tools-out yet. When every state has facts it reads nothing and says so.
 on:
   workflow_dispatch:
     inputs:
@@ -25,9 +27,8 @@ on:
         required: false
         default: '0'
         type: string
-  # schedule:                 # switched on only with the owner's GO
-  #   the planned start is weekly, Mondays 12:00 UTC ('0 12 * * 1'), written without the cron key so the
-  #   club's schedule guards (test_pota_door 4, the paused-bot list) do not read it as a schedule (Opus, 19 Nov)
+  schedule:                   # the owner's GO, 20 Nov 2026 9:13 AM: one state per run, every 3 hours
+    - cron: '23 */3 * * *'
 permissions:
   contents: read
 concurrency:
@@ -37,6 +38,8 @@ jobs:
   read:
     runs-on: ubuntu-latest
     timeout-minutes: 60
+    outputs:
+      areas: ${{ steps.pick.outputs.areas }}
     steps:
       - uses: actions/checkout@v5
         id: checkout
@@ -62,11 +65,51 @@ jobs:
           git fetch -q --depth 1 origin "+refs/heads/tools-out:refs/remotes/origin/tools-out" || warn "Lists" "tools-out was not read"
           git archive origin/tools-out park-pages/lists-done 2>/dev/null | tar -x -C ../work --strip-components=2 || true
           git archive origin/tools-out not-sure 2>/dev/null | tar -x -C ../work/out || true
-      - name: Read the pages
-        id: read
+      - name: Pick the state (a timed run, or areas blank)
+        id: pick
         continue-on-error: true
         env:
-          AREAS: ${{ inputs.areas }}
+          ASKED: ${{ inputs.areas }}
+        run: |
+          cd kpcdata
+          python3 - <<'PY'
+          import json, os, pathlib, subprocess
+          asked = (os.environ.get('ASKED') or '').strip()
+          def show(path):
+              r = subprocess.run(['git', 'show', f'origin/tools-out:{path}'], capture_output=True, text=True)
+              return r.stdout if r.returncode == 0 else ''
+          def ls(path):
+              r = subprocess.run(['git', 'ls-tree', '--name-only', f'origin/tools-out:{path}'], capture_output=True, text=True)
+              return set(r.stdout.split()) if r.returncode == 0 else set()
+          out, why = asked, 'asked by hand'
+          if not asked:
+              areas = sorted(f.name[:-5] for f in pathlib.Path('data/parkinfo').glob('US-*.json'))
+              done = {n[:-5] for n in ls('park-pages/facts') if n.endswith('.json')}
+              try: state = json.loads(show('park-pages/state.json') or '{}')
+              except ValueError: state = {}
+              left = set(state.get('left') or [])
+              unfinished = ''
+              if left:
+                  for a in areas:
+                      try: parks = json.loads(pathlib.Path(f'data/parkinfo/{a}.json').read_text(encoding='utf-8')).get('parks') or {}
+                      except (OSError, ValueError): continue
+                      if left & set(parks): unfinished = a; break
+              todo = [a for a in areas if a not in done]
+              out = unfinished or (todo[0] if todo else '')
+              why = f'{out}: left unfinished by the last run' if unfinished else (f'{out}: the next state with no facts ({len(todo)} left)' if out else 'every state has facts: nothing to read')
+              if out:   # carry the reader's place and fingerprints, so a page already read is not fetched again
+                  pathlib.Path('../work/out').mkdir(parents=True, exist_ok=True)
+                  if state: pathlib.Path('../work/out/state.json').write_text(json.dumps(state), encoding='utf-8')
+          print(f'::notice title=Page reader walk::{why}')
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as fh: fh.write(f'areas={out}\n')
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as fh: fh.write(f'**State this run:** {why}\n')
+          PY
+      - name: Read the pages
+        id: read
+        if: ${{ steps.pick.outputs.areas != '' }}
+        continue-on-error: true
+        env:
+          AREAS: ${{ steps.pick.outputs.areas }}
           MAX_REQUESTS: ${{ inputs.max_requests }}
           REFS_FILE: ${{ inputs.refs_file }}
           BROWSER: ${{ inputs.browser }}
@@ -135,7 +178,7 @@ jobs:
           PY
   save:
     needs: read
-    if: ${{ !cancelled() }}
+    if: ${{ !cancelled() && needs.read.outputs.areas != '' }}
     runs-on: ubuntu-latest
     timeout-minutes: 20
     permissions:

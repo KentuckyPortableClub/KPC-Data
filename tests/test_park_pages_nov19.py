@@ -362,8 +362,16 @@ except yaml.constructor.ConstructorError as err:
     print('   ' + str(err).splitlines()[0])
 
 on = doc.get(True) or doc.get('on') or {}
-check('the workflow starts by hand only', list(on) == ['workflow_dispatch'])
-check('the schedule line is present and commented out', "switched on only with the owner's GO" in WF and 'schedule' not in on)
+# 20 Nov 2026 (Opus): the owner's GO (9:13 AM) to walk every US state by itself, one state per run, results to tools-out
+check('the workflow starts by hand or on its one timer', sorted(on) == ['schedule', 'workflow_dispatch'] and len(on['schedule']) == 1
+      and "the owner's GO, 20 Nov 2026 9:13 AM" in WF)
+_steps = (doc.get('jobs') or {}).get('read', {}).get('steps') or []
+_ids = [st.get('id') for st in _steps]
+check('a timed run picks its own state before it reads, and reads only that state',
+      'pick' in _ids and 'read' in _ids and _ids.index('pick') < _ids.index('read')
+      and (_steps[_ids.index('read')].get('env') or {}).get('AREAS') == '${{ steps.pick.outputs.areas }}'
+      and _steps[_ids.index('read')].get('if') == "${{ steps.pick.outputs.areas != '' }}")
+check('nothing to read = nothing saved', "needs.read.outputs.areas != ''" in str(((doc.get('jobs') or {}).get('save') or {}).get('if')))
 check('concurrency does not cancel a running read', (doc.get('concurrency') or {}).get('group') == 'kpc-park-pages'
       and (doc.get('concurrency') or {}).get('cancel-in-progress') is False)
 check('the workflow itself can only read', (doc.get('permissions') or {}).get('contents') == 'read' and 'actions' not in (doc.get('permissions') or {}))
