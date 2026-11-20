@@ -495,8 +495,10 @@ jobs:
             gh release download key-held -R KentuckyPortableClub/KPC-Links -p 'key-held.tar.gz' -D "$GITHUB_WORKSPACE/work/held" || warn "Held key" "the held key could not be downloaded"
             gh api repos/KentuckyPortableClub/KPC-Links/releases/tags/key-held --jq '{tag:.tag_name, assets:[.assets[] | {name,created_at,size}]}' > "$GITHUB_WORKSPACE/work/held-release.json" || warn "Held key" "the held key date could not be read"
           fi
-          git -C "$GITHUB_WORKSPACE/kpcdata" fetch -q --depth 1 origin "+refs/heads/tools-out:refs/remotes/origin/tools-out" || warn "Gold file" "the tools-out branch could not be read"
-          git -C "$GITHUB_WORKSPACE/kpcdata" show "origin/tools-out:key-quality/gold-us.json" > "$GITHUB_WORKSPACE/work/gold-us.json" || warn "Gold file" "the gold file could not be read"
+          # 19 Nov (revision 3.1 S1): the gold set is private now (KPC-Store key-quality/). This public bot never reads it: a pull
+          # request's own grader must not score against gold, and a public log or packet must not show it. Gold is scored in
+          # KPC-Store ("KPC gold score (private, by hand)") with KPC-Links main's grader. The gold steps below find no file and skip.
+          echo "::notice title=Gold::not scored here: the gold set is private (KPC-Store, scored with KPC-Links main's grader)"
           python3 -m pip install -q shapely || warn "Shapely" "shapely did not install; the fact check still runs"
       - name: Fact check, gold score, and the packet
         id: packet
@@ -548,7 +550,7 @@ jobs:
               'build_date': os.environ.get('BUILD_DATE') or '',
               'entries': json.loads(os.environ.get('ENTRIES_JSON') or '[]'),
               'states_from': os.environ.get('STATES_FROM') or '',
-              'gold_file': 'key-quality/gold-us.json',
+              'gold_file': 'private (KPC-Store key-quality/gold-us.json): not read by this bot',
               'gold_commit': '',
           }
           import subprocess
