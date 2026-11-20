@@ -1,6 +1,6 @@
 {
  "about": "FLOW BOARD (chat 10, Nov 1 2026; Brandon 2:01 PM: 'stuff seems to get dropped a lot ... where you can see for example 900",
- "built": "2026-11-19 16:33Z",
+ "built": "2026-11-19 21:50Z",
  "stuck_days": 2,
  "piles": [
   {
@@ -336,13 +336,13 @@
    "id": "grade-queue",
    "stage": "7 waiting room",
    "what": "files waiting for a grader (data/status/grade-queue.md)",
-   "n": 101,
+   "n": 103,
    "owner": "chat 11",
    "note": "",
    "date": "2026-11-19",
    "first_seen": "2026-11-01",
-   "moved": "2026-11-18",
-   "still_days": 1,
+   "moved": "2026-11-19",
+   "still_days": 0,
    "stuck": false
   },
   {
@@ -572,7 +572,7 @@
    "what": "key-doctor: found work",
    "n": 1,
    "owner": "chat 10",
-   "note": "NOs: 433 of 723 NOs landed; 290 missing (re-applied to overrides.fixed.json); 1221 came back in the  · chat 10 (came-back NOs / stuck areas); per-park release in release-approved",
+   "note": "NOs: 433 of 723 NOs landed; 290 missing (re-applied to overrides.fixed.json); 1202 came back in the  · chat 10 (came-back NOs / stuck areas); per-park release in release-approved",
    "date": "2026-11-19",
    "first_seen": "2026-11-02",
    "moved": "2026-11-02",
@@ -604,6 +604,19 @@
    "moved": "2026-11-05",
    "still_days": 14,
    "stuck": true
+  },
+  {
+   "id": "bot-waiting room",
+   "stage": "8 bots",
+   "what": "waiting room: RED (the bot is broken)",
+   "n": 1,
+   "owner": "chat 10",
+   "note": "9 files waiting over 3 days in data/waiting/in/ (e.g. US-MA.json) · chat 11 (look at the waiting room run)",
+   "date": "2026-11-19",
+   "first_seen": "2026-11-19",
+   "moved": "2026-11-19",
+   "still_days": 0,
+   "stuck": false
   },
   {
    "id": "bot-world finder v2",

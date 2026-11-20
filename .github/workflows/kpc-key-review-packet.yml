@@ -37,6 +37,11 @@ on:
         required: false
         default: ''
         type: string
+      folder:
+        description: 'key run only: the tools-out folder under key-quality/ (for example 2026-11-19/public-vs-working); blank = review-packets/run-<date>'
+        required: false
+        default: ''
+        type: string
 # Read only, except the save job, which is the only one that can write the repo.
 permissions:
   contents: read
@@ -577,8 +582,36 @@ jobs:
           mkdir -p "$WORK/old-keys" "$WORK/new-keys" "$WORK/fc-old" "$WORK/fc-new" "$WORK/gold-old" "$WORK/gold-new" "$WORK/packet"
           if [ -d "$GITHUB_WORKSPACE/old/data/us-key" ]; then cp -a "$GITHUB_WORKSPACE/old/data/us-key/." "$WORK/old-keys/"; else warn "Keys" "the old key folder was not checked out"; fi
           if [ -d "$GITHUB_WORKSPACE/new/data/us-key" ]; then cp -a "$GITHUB_WORKSPACE/new/data/us-key/." "$WORK/new-keys/"; else warn "Keys" "the new key folder was not checked out"; fi
-          if [ -s "$WORK/held/key-held.tar.gz" ]; then
+          # 19 Nov (Opus, key-quality.md 19 item 41): the key-held file is replaced only by a run that holds a state, so after a run
+          # that held none it is an OLDER run's would-be files (run-2026-11-19 laid the 20:25 UTC files over the 21:52 key). It is laid
+          # over only when it was written in the run that made the new side's key: at most 20 minutes before the index 'built' stamp.
+          python3 - "$WORK/held-release.json" "$WORK/new-keys/index.json" "$WORK/held/decision.json" <<'PY'
+          import datetime, json, pathlib, sys
+          def load(p):
+              try: return json.loads(pathlib.Path(p).read_text(encoding='utf-8'))
+              except (OSError, ValueError): return {}
+          rel, idx = load(sys.argv[1]), load(sys.argv[2])
+          made = next((a.get('created_at') or '' for a in rel.get('assets') or [] if a.get('name') == 'key-held.tar.gz'), '')
+          built = str(idx.get('built') or '')
+          out = {'laid': False, 'held_created_at': made, 'key_built': built, 'key_build': idx.get('build') or ''}
+          try:
+              t_held = datetime.datetime.strptime(made[:19], '%Y-%m-%dT%H:%M:%S')
+              t_key = datetime.datetime.strptime(built[:16], '%Y-%m-%d %H:%M')
+              gap = (t_key - t_held).total_seconds() / 60
+              out['minutes_before_key'] = round(gap, 1)
+              out['laid'] = -2 <= gap <= 20
+              out['why'] = ('written in the run that made this key' if out['laid'] else
+                            f'written {round(gap)} minutes before this key was built: another run\'s held files, not laid over')
+          except ValueError:
+              out['why'] = 'the held file date or the key build time could not be read: not laid over'
+          pathlib.Path(sys.argv[3]).write_text(json.dumps(out, indent=1) + '\n', encoding='utf-8')
+          print(out['why'])
+          PY
+          laid=$(python3 -c 'import json,sys; print("1" if json.load(open(sys.argv[1])).get("laid") else "0")' "$WORK/held/decision.json" 2>/dev/null || echo 0)
+          if [ -s "$WORK/held/key-held.tar.gz" ] && [ "$laid" = 1 ]; then
             tar -xzf "$WORK/held/key-held.tar.gz" -C "$WORK/new-keys" || warn "Held key" "the held key could not be laid over the published key"
+          elif [ -s "$WORK/held/key-held.tar.gz" ]; then
+            echo "::notice title=Held key::$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1])).get("why"))' "$WORK/held/decision.json" 2>/dev/null): the new side is the published key only"
           else
             warn "Held key" "the key-held file was not downloaded, so the new side is the published key only"
           fi
@@ -594,6 +627,11 @@ jobs:
               for item in doc.get('assets') or []:
                   if item.get('name') == 'key-held.tar.gz':
                       held = {'tag': doc.get('tag') or 'key-held', 'name': 'key-held.tar.gz', 'created_at': item.get('created_at') or '', 'size': item.get('size')}
+          dec = work / 'held' / 'decision.json'
+          if held and dec.is_file():
+              try: d = json.loads(dec.read_text(encoding='utf-8'))
+              except ValueError: d = {}
+              held['laid'] = bool(d.get('laid')); held['why'] = d.get('why') or ''
           meta = {'mode': 'run', 'head': os.environ.get('HEAD') or '', 'old': os.environ.get('OLD') or '',
                   'build_date': os.environ.get('BUILD_DATE') or '', 'states_from': os.environ.get('STATES_FROM') or '', 'key_held': held}
           def git(*args):
@@ -698,6 +736,7 @@ jobs:
           MODE: ${{ needs.scope.outputs.mode }}
           HEAD: ${{ needs.scope.outputs.new_sha }}
           PRN: ${{ needs.scope.outputs.pr }}
+          FOLDER: ${{ inputs.folder }}
         run: |
           warn() { echo "::warning title=${1}::${2}"; echo "$1 - $2" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           if [ ! -s "$GITHUB_WORKSPACE/packet/summary.md" ]; then warn "Save" "there is no packet to save"; exit 1; fi
@@ -714,6 +753,11 @@ jobs:
             esac
             dest="key-quality/review-packets/run-${day}"
             msg="key review packet for the US key run ${day}"
+            # 19 Nov (item 41 d): a named folder, letters / digits / - / _, at most three parts joined by /, never '..'
+            if [ -n "$FOLDER" ]; then
+              if printf '%s' "$FOLDER" | grep -Eq '^[A-Za-z0-9_-]+(/[A-Za-z0-9_-]+){0,2}$'; then dest="key-quality/${FOLDER}"; msg="key review packet ${FOLDER}"
+              else warn "Save" "the folder name '${FOLDER}' is not allowed: saved under ${dest}"; fi
+            fi
           else
             short=$(printf '%s' "$HEAD" | cut -c1-7)
             dest="key-quality/review-packets/pr-${PRN}-${short}"

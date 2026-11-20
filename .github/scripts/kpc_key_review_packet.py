@@ -1256,7 +1256,11 @@ def write_run_packet(out_dir, states, result, meta=None, assets=None, gold_old=N
     intro = ['# Review packet for a US key run', '']
     if run_date: intro.append(f'The held key file is dated {run_date}.')
     if head or old_sha:
-        intro.append(f"New side: the published key at commit {head[:12] or '?'}, with the held states from the key-held file laid over it. Old side: the published key at commit {old_sha[:12] or '?'}.")
+        held_meta = meta.get('key_held') if isinstance(meta.get('key_held'), dict) else {}
+        if held_meta.get('laid') is False:   # 19 Nov (item 41): an older run's held file is not laid over the key
+            intro.append(f"New side: the published key at commit {head[:12] or '?'}. The key-held file was NOT laid over it ({held_meta.get('why') or 'another run'}). Old side: the published key at commit {old_sha[:12] or '?'}.")
+        else:
+            intro.append(f"New side: the published key at commit {head[:12] or '?'}, with the held states from the key-held file laid over it. Old side: the published key at commit {old_sha[:12] or '?'}.")
     elif states:
         intro.append('States: ' + ' '.join(states) + '.')
     intro.append('This report only compares. It does not change a park. No state was built.')
@@ -1355,7 +1359,8 @@ def write_run_packet(out_dir, states, result, meta=None, assets=None, gold_old=N
         'about': 'A full US key run compared with the published key. No state was built. The new side is the published key with the key-held file laid over the states that run held back.',
         'mode': 'run', 'old': old_sha, 'head': head, 'run_date': run_date,
         'key_held': {'tag': held.get('tag') or 'key-held', 'name': held.get('name') or 'key-held.tar.gz',
-                     'created_at': held.get('created_at') or held_at, 'size': held.get('size')},
+                     'created_at': held.get('created_at') or held_at, 'size': held.get('size'),
+                     'laid': held.get('laid', True), 'why': held.get('why') or ''},
         'states': states, 'states_from': meta.get('states_from') or '', 'data_commit': meta.get('data_commit') or '',
         'seconds_per_state': meta.get('seconds_per_state') or SECONDS_PER_STATE,
         'shapes': _shape_index(assets if isinstance(assets, list) else None),
