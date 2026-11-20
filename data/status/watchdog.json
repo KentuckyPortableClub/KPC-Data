@@ -1,10 +1,5 @@
 {
  "restarted": {
-  "kpc-closures.yml|2026-11-13T01:38:00+00:00": "2026-11-13T02:29+00:00 started",
-  "kpc-copy-from-links.yml|2026-11-13T01:40:00+00:00": "2026-11-13T02:29+00:00 started",
-  "kpc-eu-alerts.yml|2026-11-13T00:40:00+00:00": "2026-11-13T02:29+00:00 started",
-  "kpc-flow.yml|2026-11-13T01:46:00+00:00": "2026-11-13T02:29+00:00 started",
-  "kpc-waiting-room.yml|2026-11-13T00:42:00+00:00": "2026-11-13T02:29+00:00 started",
   "kpc-convert-layers.yml|2026-11-13T03:53:00+00:00": "2026-11-13T05:01+00:00 started",
   "kpc-copy-from-links.yml|2026-11-13T04:11:00+00:00": "2026-11-13T05:01+00:00 started",
   "kpc-engine.yml|2026-11-13T04:08:00+00:00": "2026-11-13T05:01+00:00 started",
@@ -237,10 +232,13 @@
   "kpc-youtube-comments.yml|2026-11-19T13:36:00+00:00": "2026-11-19T16:31+00:00 skipped (not restarted)",
   "kpc-copy-from-links.yml|2026-11-19T18:11:00+00:00": "2026-11-19T18:57+00:00 started",
   "kpc-copy-from-links.yml|2026-11-20T00:11:00+00:00": "2026-11-20T00:41+00:00 started",
-  "kpc-copy-from-links.yml|2026-11-20T01:11:00+00:00": "2026-11-20T01:44+00:00 started"
+  "kpc-copy-from-links.yml|2026-11-20T01:11:00+00:00": "2026-11-20T01:44+00:00 started",
+  "kpc-closures.yml|2026-11-20T01:38:00+00:00": "2026-11-20T03:42+00:00 started",
+  "kpc-flow.yml|2026-11-20T01:46:00+00:00": "2026-11-20T03:42+00:00 started"
  },
- "last": "2026-11-20T01:44+00:00",
+ "last": "2026-11-20T03:42+00:00",
  "last_restarted": [
-  "kpc-copy-from-links.yml (missed Nov 20 01:11 UTC)"
+  "kpc-closures.yml (missed Nov 20 01:38 UTC)",
+  "kpc-flow.yml (missed Nov 20 01:46 UTC)"
  ]
 }
