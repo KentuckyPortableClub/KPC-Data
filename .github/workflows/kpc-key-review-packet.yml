@@ -767,12 +767,13 @@ jobs:
           mkdir -p "$GITHUB_WORKSPACE/out/${dest}"
           cp -a "$GITHUB_WORKSPACE/packet/." "$GITHUB_WORKSPACE/out/${dest}/"
           cd "$GITHUB_WORKSPACE/out"
-          git add -A -- key-quality/review-packets
+          # 19 Nov (Opus): add the packet's own folder; a named folder (input `folder`) is outside review-packets/
+          git add -A -- "$dest"
           if git diff --cached --quiet; then
             echo "nothing new to save"
           else
             git commit -qm "$msg"
-            bash "$KPC_PUSH_RETRY" tools-out 4 "key-quality/review-packets" || { warn "Save" "the packet was not saved to tools-out"; exit 1; }
+            bash "$KPC_PUSH_RETRY" tools-out 4 "$dest" || { warn "Save" "the packet was not saved to tools-out"; exit 1; }
           fi
           echo "packet folder: ${dest}"
       - name: Report hidden failures (Nov 2 review, G8)
