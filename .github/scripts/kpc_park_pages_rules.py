@@ -383,11 +383,12 @@ def address_facts(url, park_name='', pin=None):
             lat, lon = webmercator(a, b)
             add(lat, lon, 'unknown', 'map-link center (Web Mercator)')
         else:
-            # center=<lon>,<lat> when both look like degrees and the first is outside latitude, else lat,lon
-            if a is not None and b is not None and abs(a) > 90 and abs(b) <= 90:
-                add(b, a, 'unknown', 'map-link center')
-            else:
+            # R-PR9: center=<lon>,<lat> (longitude first, as in an ArcGIS marker). 19 Nov (item 43 fault C): the old test turned
+            # every point east of -90 around. Only a second number that cannot be a latitude means the page wrote lat,lon.
+            if a is not None and b is not None and abs(b) > 90 and abs(a) <= 90:
                 add(a, b, 'unknown', 'map-link center')
+            else:
+                add(b, a, 'unknown', 'map-link center')
     for m in re.finditer(r'@(-?\d+(?:\.\d+)?),(-?\d+(?:\.\d+)?),\d+(?:\.\d+)?z', raw):
         add(_num(m.group(1)), _num(m.group(2)), 'unknown', 'map-link @')
     q = urllib.parse.parse_qs(urllib.parse.urlparse(raw).query)
@@ -517,6 +518,25 @@ def _sentence(text, start):
     return ' '.join((left + right).split())
 
 
+SELF_LEAD = re.compile(r"^\s*(?:[A-Z][a-z]+,\s*)?(?:this|it|we|our|here)\b", re.I)
+SELF_THIS = re.compile(r"\bthis\s+[\w-]+", re.I)
+SELF_THE = re.compile(r"^\s*(?:[A-Z][a-z]+,\s*)?the\s+(?:park|area|site|refuge|preserve|property|unit|reserve|monument|place|"
+                      r"sanctuary|recreation area|wildlife area|management area)\b", re.I)
+
+
+def _about_this_place(words, park_name):
+    """R-PR4: do these words (the start of the sentence) say the subject is this park?"""
+    w = ' '.join(str(words or '').split())
+    if not w:
+        return False
+    core = name_core(park_name)
+    if core and all(t in name_core(w).split() for t in core.split()):
+        return True
+    if SELF_LEAD.search(w) or SELF_THE.search(w) and len(w.split()) <= 8:
+        return True
+    return bool(SELF_THIS.search(w)) and len(w.split()) <= 10
+
+
 def inside_units(text, park_name):
     """R-PR4. A sentence about THIS place. A trail, a rule line, history, and plain geography do not count."""
     found, maybe = [], []
@@ -534,6 +554,24 @@ def inside_units(text, park_name):
         if BAD_SUBJECT.search(left):
             maybe.append({'unit': name, 'quote': clip(sent), 'why': 'the subject is a trail, campground, or visitor place'})
             continue
+        # 19 Nov (Opus, item 43 fault B): a park is never inside itself. Same core and a kind the park's own name has = this park.
+        if park_name and name_core(name) and name_core(name) == name_core(park_name):
+            own_kinds = {k.lower() for k in kinds_in(park_name)}
+            if own_kinds & {k.lower() for k in kinds_in(name)}:
+                continue
+            if not own_kinds:
+                maybe.append({'unit': name, 'quote': clip(sent), 'why': 'the unit may be this park itself'})
+                continue
+        # 19 Nov (Opus, item 43 fault A): R-PR4 counts a sentence about THIS place only. The words before the unit must name
+        # this park (its core), or say 'this ...', 'it', 'we', 'our', or 'the park / area / site ...'. A river, a neighbour
+        # park or another subject goes to maybe_inside for a person.
+        # the subject is what stands before the FIRST 'within the / part of the ...' of the sentence (two units share it)
+        first = INSIDE_RX.search(sent)
+        lead = sent[:first.start()] if first else left
+        rest = sent[first.end():] if first else sent[len(left) + len(name):]
+        if not _about_this_place(lead, park_name) and not (not lead.strip(' ,') and _about_this_place(rest.lstrip(' ,'), park_name)):
+            maybe.append({'unit': name, 'quote': clip(sent), 'why': 'the sentence is not about this park'})
+            continue
         # the name must end in a kind (the regex already requires it)
         if not kind:
             maybe.append({'unit': name, 'quote': clip(sent), 'why': 'no kind word'})
@@ -549,12 +587,14 @@ def inside_units(text, park_name):
     return units, [m for m in maybe if m.get('why') != 'no kind word']
 
 
-def match_unit_ref(area_parks, unit, kind):
+def match_unit_ref(area_parks, unit, kind, exclude=None):
     core = name_core(unit)
     if not core:
         return None
     hits = []
     for r, row in area_parks.items():
+        if exclude and r == exclude:   # 19 Nov (item 43 fault B): never the park's own number
+            continue
         if name_core(row.get('name')) != core:
             continue
         if kind and kind_matches_type(kind, row.get('type')):
@@ -1104,7 +1144,7 @@ def build_facts(ref, area, pota, area_parks, asked, pages, today, shared_with, o
     if read_blocks and main_text and not unofficial:
         inside, maybe = inside_units(main_text, pota.get('name'))
         for row in inside:
-            row['pota_ref'] = match_unit_ref(area_parks, row['unit'], row.get('kind'))
+            row['pota_ref'] = match_unit_ref(area_parks, row['unit'], row.get('kind'), exclude=ref)
         sizes = []
         for p in pages:
             if p.get('kind') == 'script-built':
