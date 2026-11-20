@@ -1,16 +1,16 @@
 # Closures super-bot: review (2026-11-20; RULE SHEET D; compared quietly, nothing on cards until GO)
 
-Run: 2026-11-20T16:23Z · requests 106 · pages 81 · PDFs 17 · sentences read 362 · unmatched 118 · look-alikes skipped 208 · sources failed 2
+Run: 2026-11-20T21:30Z · requests 106 · pages 81 · PDFs 17 · sentences read 362 · unmatched 118 · look-alikes skipped 208 · sources failed 2
 
-## Kentucky gate: **FAIL** — 20 of 27 of Kentucky's own reader's items found here on the same park (74%); 54 only here
+## Kentucky gate: **FAIL** — 19 of 26 of Kentucky's own reader's items found here on the same park (73%); 54 only here
 
 ## Sources that failed this run
 
 - US-KY fs-gwj: rest (host resting after an earlier strike; last items kept) (https://www.fs.usda.gov/alerts/gwj/alerts-notices)
 - US-KY ky-fs-dbnf: rest (host resting after an earlier strike; last items kept) (https://www.fs.usda.gov/alerts/dbnf/alerts-notices)
 
-## US-KY (done, read 2026-11-20T16:23)
-whole 1 · part 0 · hunt 0 · seasonal 0 · note 70 · taken_down 2 · 0 banners
+## US-KY (done, read 2026-11-20T21:30)
+whole 1 · part 0 · hunt 0 · seasonal 0 · note 69 · taken_down 3 · 0 banners
 
 Sources that failed (last items kept): ky-fs-dbnf (rest (host resting after an earlier strike; last items kept)); fs-gwj (rest (host resting after an earlier strike; last items kept))
 
@@ -48,7 +48,7 @@ Unmatched (two parks or none; for chat 11 to judge):
 - Exceptions: [ky-fw-public-land] · no park name shares a word
 - GRAYSON LAKE WMA - Carter & Elliott counties [ky-fw-public-land] · nearest park name: Grayson Lake State Park (US-1258)
 
-### Side-by-side vs Kentucky's own reader (kpc_park_alerts.py + hc-): matched 20 · only here 54 · only there 7
+### Side-by-side vs Kentucky's own reader (kpc_park_alerts.py + hc-): matched 19 · only here 54 · only there 7
 
 - ONLY THERE: US-4687 hc-US-4687-2026-11-07: Kentucky Fish & Wildlife: Nov 7–8: closed to everyone except drawn hunters (and one helper each) for
 - ONLY THERE: US-3834 hc-US-3834-2026-11-07: Kentucky Fish & Wildlife: Nov 7–8: closed to everyone except drawn hunters (and one helper each) for
