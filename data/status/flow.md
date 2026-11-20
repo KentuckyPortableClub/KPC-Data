@@ -1,9 +1,8 @@
-# Flow board (2026-11-20 03:43Z, kpc_flow.py)
+# Flow board (2026-11-20 09:13Z, kpc_flow.py)
 Every pile of work, who it waits on and when it last moved. STUCK = work in it and no move for 2+ days. Fix the STUCK ones first.
 
-## STUCK (39)
+## STUCK (38)
 - STUCK 21 d · **1** · hours fees permits bot: not run for 21 days · waits on **chat 10** · US-KY: done; {"fees": 8, "hours": 41, "hours_lines": 77, "no_page": 0, "nothing": 144, "parks": 193, · chat 8 grades the sample; Brandon GO before any card
-- STUCK 19 d · **0** · engine finds handed to the collector (last hand-back) · waits on **layer collector (every 2 h)** · engine results last saved 2026-11-19
 - STUCK 19 d · **146** · questions/not-sure-for-chat9.json waiting for an answer · waits on **chat 9**
 - STUCK 19 d · **6** · HELD truth files (a check failed; data/waiting/today.md says why) · waits on **chat 2 (fix) + chat 11** · US-MA, US-MD, US-MN, US-OK, US-UT, US-WA
 - STUCK 19 d · **1** · 2-fer checker: found work · waits on **chat 2 + chat 11** · weekly re-test of live 2-fers · chat 2 rechecks + chat 11 grades 857 SHRUNK / GONE / MOVED rows (data/fers-check/alerts.md
@@ -48,7 +47,6 @@ Every pile of work, who it waits on and when it last moved. STUCK = work in it a
 - STUCK 1 · 2-fer checker: found work · since 2026-11-01
 - STUCK 4 · HELD trails files (a check failed; data/waiting/today.md says why) · since 2026-11-04
 - STUCK 1 · HELD world-key files (a check failed; data/waiting/today.md says why) · since 2026-11-18
-- 20 · HELD campstate files (a check failed; data/waiting/today.md says why) · since 2026-11-20
 - 1 · HELD data/acres.json files (a check failed; data/waiting/today.md says why) · since 2026-11-20
 ### chat 3
 - STUCK 1 · T5 site checker: found work · since 2026-11-01
@@ -87,7 +85,6 @@ Every pile of work, who it waits on and when it last moved. STUCK = work in it a
 - STUCK 168 · questions/parked.json waiting for an answer · since 2026-11-05
 - STUCK 37 · questions/world-finder.json waiting for an answer · since 2026-11-05
 - STUCK 1 · HELD world-key files (a check failed; data/waiting/today.md says why) · since 2026-11-18
-- 20 · HELD campstate files (a check failed; data/waiting/today.md says why) · since 2026-11-20
 - 1 · HELD data/acres.json files (a check failed; data/waiting/today.md says why) · since 2026-11-20
 - 111 · files waiting for a grader (data/status/grade-queue.md) · since 2026-11-20
 ### bots
@@ -105,7 +102,7 @@ Every pile of work, who it waits on and when it last moved. STUCK = work in it a
 | 1 finders | engine crawler layers (US + Canada) the engine tries at the pins | 516 | park-info engine (every run) | 2026-11-03 |
 | 2 outside files | files on branch intake-files no reader has taken yet | 0 | chat 10 (the reader of that kind) | 2026-11-02 |
 | 3 layer list | layers in the list the intake bot has not checked yet | 312 | intake bot (daily, 40 a night) | 2026-11-12 **STUCK** |
-| 4 engine | engine finds handed to the collector (last hand-back) | 0 | layer collector (every 2 h) | 2026-11-01 **STUCK** |
+| 4 engine | engine finds handed to the collector (last hand-back) | 0 | layer collector (every 2 h) | 2026-11-01 |
 | 5 collector | outside-research layer x park pairs not pin-tested yet | 0 | layer collector (every 2 h) | 2026-11-01 |
 | 6 questions | questions/aliases-nov1.json waiting for an answer | 2 | chat 11 | 2026-11-02 **STUCK** |
 | 6 questions | questions/aliases-nov2.json waiting for an answer | 28 | chat 11 | 2026-11-02 **STUCK** |
@@ -122,7 +119,6 @@ Every pile of work, who it waits on and when it last moved. STUCK = work in it a
 | 6 questions | questions/outside-intake-nov5.json waiting for an answer | 402 | chat 11 | 2026-11-05 **STUCK** |
 | 6 questions | questions/parked.json waiting for an answer | 168 | chat 11 | 2026-11-05 **STUCK** |
 | 6 questions | questions/world-finder.json waiting for an answer | 37 | chat 11 | 2026-11-05 **STUCK** |
-| 7 waiting room | HELD campstate files (a check failed; data/waiting/today.md says why) | 20 | chat 2 (fix) + chat 11 | 2026-11-20 |
 | 7 waiting room | HELD data/acres.json files (a check failed; data/waiting/today.md says why) | 1 | chat 2 (fix) + chat 11 | 2026-11-20 |
 | 7 waiting room | HELD trails files (a check failed; data/waiting/today.md says why) | 4 | chat 2 (fix) + chat 11 | 2026-11-04 **STUCK** |
 | 7 waiting room | HELD truth files (a check failed; data/waiting/today.md says why) | 6 | chat 2 (fix) + chat 11 | 2026-11-01 **STUCK** |
