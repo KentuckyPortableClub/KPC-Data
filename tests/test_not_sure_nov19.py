@@ -105,5 +105,15 @@ with tempfile.TemporaryDirectory() as td:
     check('not-sure rows come first, wrong likely before unsure, and a class row is skipped',
           [r['ref'] for r in order[:3]] == ['US-2', 'US-1', 'US-3'] and order[0]['tier'] == 0 and order[2]['tier'] == 1)
 
+# 19 Nov (Opus): KPC-Data run 44647016424 stopped at the start: the flat seed list sat beside the area files and was read as one
+import json as _json, tempfile as _tf, pathlib as _pl
+_d = _pl.Path(_tf.mkdtemp())
+(_d / 'not-sure-parks.json').write_text(_json.dumps([{'ref': 'US-1', 'area': 'US-KY', 'code': 'NAME_DIFFERS', 'how_sure': 'unsure',
+                                                      'wants': 'page facts', 'status': 'open', 'date': '2026-11-19'}]), encoding='utf-8')
+_n = NS.NotSure(_d)
+check('a flat seed list beside the area files is not read as an area (no crash)', _n.open_rows(wants=['page facts']) == [] and 'not-sure-parks' not in _n.areas())
+check('import_seed splits the flat seed into area files the reader can open',
+      _n.import_seed(_d / 'not-sure-parks.json', today='2026-11-19') == 1 and [r['ref'] for r in _n.open_rows(wants=['page facts'])] == ['US-1'])
+
 print('ALL PASS' if ok else 'SOME FAILED')
 sys.exit(0 if ok else 1)

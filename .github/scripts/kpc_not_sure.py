@@ -68,6 +68,7 @@ QUESTION_CODES = {
     'REFUSED', 'SCRIPT_BUILT', 'NO_PAGE', 'CLOSED_OR_MOVED_WORDS',
 }
 READER = 'park page reader'
+SEED_NAME = 'not-sure-parks.json'   # the flat seed list Fable started on 19 Nov; import_seed splits it into area files
 # Who may close a row. A bot is allowed only when its name is listed here. Empty until a reviewed rule says so.
 SETTLE_KINDS = ('person', 'reviewer', 'bot')
 BOTS_MAY_SETTLE = ()
@@ -121,6 +122,8 @@ class NotSure:
             doc = json.loads(path.read_text(encoding='utf-8'))
         except (OSError, json.JSONDecodeError):
             return []
+        if not isinstance(doc, dict):   # 19 Nov (Opus): the flat seed (not-sure-parks.json, a list) is not an area file
+            return []
         return list(doc.get('rows') or [])
 
     def _write_area(self, area, rows):
@@ -132,7 +135,7 @@ class NotSure:
         return path
 
     def areas(self):
-        return sorted(p.stem for p in self.root.glob('*.json') if p.name != 'last-summary.json')
+        return sorted(p.stem for p in self.root.glob('*.json') if p.name not in ('last-summary.json', SEED_NAME))
 
     def all_rows(self):
         rows = []
