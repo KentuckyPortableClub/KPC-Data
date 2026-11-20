@@ -1,22 +1,62 @@
 {
  "about": "ca-key: the HELD build (data/waiting/in/data/ca-key/) vs the LIVE key (data/ca-key/). Chat 11: check the sample, then write KEY YES or KEY NO: <refs> in data/waiting/approved.json (item 'what': 'ca-key', 'build': the held build id from data/waiting/in/data/ca-key/index.json, 'date': 'YYYY-MM-DD' and 'time': 'h:mm AM/PM' Central; rule 22: no build field or a grade from before Nov 2 9:37 AM CST is not a release). Written by kpc_key_summary.py.",
- "made": "2026-11-17 22:18 UTC",
+ "made": "2026-11-20 11:47 UTC",
  "totals": {
-  "gained": 0,
+  "gained": 1,
   "lost": 0,
   "pieces_changed": 2,
   "grade_changed": 0
  },
  "per_area": {
   "CA-ON": {
-   "gained": 0,
+   "gained": 1,
    "lost": 0,
    "pieces_changed": 2,
    "grade_changed": 0
   }
  },
- "gained": [],
+ "gained": [
+  {
+   "area": "CA-ON",
+   "ref": "CA-5506",
+   "name": "Nine Mile Portage Heritage Trail Recreation Site",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl5506",
+     "Nine Mile Portage Heritage Trail Recreation Site",
+     0,
+     "official trail line (Ontario Ministry of Natural Resources ("
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CA-5506"
+  }
+ ],
  "lost": [],
  "grade_changed": [],
- "sample": []
+ "sample": [
+  {
+   "area": "CA-ON",
+   "ref": "CA-5506",
+   "name": "Nine Mile Portage Heritage Trail Recreation Site",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl5506",
+     "Nine Mile Portage Heritage Trail Recreation Site",
+     0,
+     "official trail line (Ontario Ministry of Natural Resources ("
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/CA-5506"
+  }
+ ]
 }

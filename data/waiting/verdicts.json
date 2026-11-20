@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-20T09:07Z",
+ "checked": "2026-11-20T11:47Z",
  "switched_on": false,
  "results": [
   {
@@ -14,6 +14,42 @@
    ],
    "verdict": "HOLD",
    "fp": "35ad66e681cc4d0c",
+   "net": false
+  },
+  {
+   "path": "data/ca-key/CA-ON.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "b5c24033dc3961c7",
+   "net": false
+  },
+  {
+   "path": "data/ca-key/index.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "715b9103f9e816b2",
+   "net": false
+  },
+  {
+   "path": "data/ca-key/refs.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "c566fb6b56f8c083",
+   "net": false
+  },
+  {
+   "path": "data/ca-key/why-not.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "4a34103fd0854629",
    "net": false
   },
   {
