@@ -15,7 +15,7 @@ state), and writes one club file:
 
 Python 3.12, standard library only (pypdf optional, for PDF tables).  python kpc_acres.py --selftest
 """
-import argparse, csv, datetime, hashlib, html.parser, io, json, math, os, re, shutil, sys, tempfile
+import argparse, csv, datetime, decimal, hashlib, html.parser, io, json, math, os, re, shutil, sys, tempfile
 import time, unicodedata, urllib.error, urllib.parse, urllib.request, urllib.robotparser, zipfile
 import xml.etree.ElementTree as ET
 import importlib.util as _ilu, os as _os   # noqa: E402  (owner rule, 2026-11-10: the club's one host check, before any request)
@@ -724,11 +724,279 @@ def parse_pdf_line(line, pos=None):
     return None
 
 
+# ----------------------------------------------------------------------------------------------------------
+# PDF table mode (20 Nov 2026).  Some agencies publish ONE PDF that holds many tables, with many numbers on a row
+# (the Fish and Wildlife Service's yearly lands report: 10 tables, 13 cells a row, dollar amounts and note
+# letters among them, one refuge printed under each state it lies in).  A column number alone cannot read that:
+# the 19 Nov run read 16 "rows" out of it, all of them footnotes and total lines.  So the research row names the
+# table (pdf_table = the title printed on each of its pages) and everything kept is checked against the list's
+# own arithmetic.  Nothing is guessed: a line that does not pass is counted and shown, never used.
+#   1. only pages that carry the table title are read;
+#   2. a row is a name followed by cells; every cell is a number, a $ amount or a short note mark, else not read;
+#   3. the size is the number the research row names (pdf_column: a position, or "last");
+#   4. pdf_sum_check: the size must equal the sum of the row's other acre numbers (to the cent), else not read;
+#   5. a state name alone on a line heads the rows under it; a "... Total" row closes them, and the rows read
+#      since the last total must add up to it;
+#   6. a name with a "(n)" note is one unit the list prints in several places (FWS: "(1) Also in Georgia"): it
+#      gets a size only when two or more of its rows were read AND every block of the table added up (so no
+#      part can be missing) AND its parts point to one park (settle_parts);
+#   7. a name marked ** or *** is a summary row: it counts toward its block's total and is never a unit.
+# ----------------------------------------------------------------------------------------------------------
+PDF_NUM = re.compile(r'^\d[\d,]*(?:\.\d+)?$')
+PDF_MONEY = re.compile(r'^\$\d[\d,]*(?:\.\d+)?$')
+PDF_NOTE = re.compile(r'^(?:[A-Z]{1,3}(?:,[A-Z]{1,3})*|/[a-z]{1,2}/)$')   # E   T   AF,N   CG   /a/
+PDF_PART = re.compile(r'\s*\((\d{1,3})\)\s*(\*?)$')                      # "Eufaula (5)*"
+PDF_SUMMARY = re.compile(r'\s*\*{2,}$')                                  # "FSA Interest AL ***"
+PDF_CONT = re.compile(r"\s*\((?:continued|cont\.?|con't\.?)\)\s*$", re.I)
+PDF_TOTAL_NAME = re.compile(r'\b(?:sub)?totals?\b', re.I)
+PDF_CENTS = decimal.Decimal('0.05')
+_PDF_TEXT = {}
+
+
+def _yes(v):
+    return v is True or str('' if v is None else v).strip().lower() in ('1', 'y', 'yes', 'true', 'on')
+
+
+def _dec(t):
+    return decimal.Decimal(str(t).replace(',', ''))
+
+
+def pdf_pos(cfg):
+    """The research row's pdf_column for a PDF table: 'last', a position among the row's acre numbers (1 = first), or None."""
+    v = str(cfg.get('pdf_column') or '').strip().lower()
+    if v in ('last', 'total', '-1'):
+        return 'last'
+    return int(v) if v.isdigit() and int(v) > 0 else None
+
+
+def pdf_heading(line):
+    """'Alabama' / 'Arizona (Continued)' -> 'US-AL' / 'US-AZ'.  Full state or province names only: a stray two-letter
+    line ('OR' out of a broken 'AGREEMENT OR LEASE' header) must never move the rows under it to Oregon."""
+    t = strip_accents(PDF_CONT.sub('', str(line))).strip().lower()
+    if len(t) > 2 and t in _NAME2US:
+        return 'US-' + _NAME2US[t]
+    if len(t) > 2 and t in _NAME2CA:
+        return 'CA-' + _NAME2CA[t]
+    return None
+
+
+def split_pdf_row(line):
+    """'Wheeler 0.00 125.68 $149,700 0.00 8,322.98 T 25,674.62 307.38 0.00 0.00 $0 0.00 0.00 34,430.66'
+    -> ('Wheeler', ['0.00', '125.68', '0.00', '8,322.98', ...]): the name and the acre numbers; $ amounts and note
+    marks are passed over.  None when the line has no number cell or a cell is anything else."""
+    toks = re.sub(r'\s+', ' ', str(line)).strip().split(' ')
+    first = next((k for k, t in enumerate(toks) if PDF_NUM.match(t) or PDF_MONEY.match(t)), None)
+    if first is None:
+        return None
+    nums = []
+    for t in toks[first:]:
+        if PDF_NUM.match(t):
+            nums.append(t)
+        elif not (PDF_MONEY.match(t) or PDF_NOTE.match(t)):
+            return None
+    return ' '.join(toks[:first]).strip(), nums
+
+
+def pdf_page_texts(data):
+    """The text of every page, read once per file (the same PDF is often listed once per state)."""
+    import pypdf
+    key = hashlib.sha1(data).hexdigest()
+    if key not in _PDF_TEXT:
+        while len(_PDF_TEXT) >= 3:
+            _PDF_TEXT.pop(next(iter(_PDF_TEXT)))
+        _PDF_TEXT[key] = [(p.extract_text() or '') for p in pypdf.PdfReader(io.BytesIO(data)).pages]
+    return _PDF_TEXT[key]
+
+
+def read_pdf_table(pages, cfg):
+    """pages: the text of each PDF page.  -> (records, info).  records: {'name', 'size', 'unit', 'state', '_part'};
+    info: what was read, what was not, and whether the table added up to its own totals (rules 1-7 above)."""
+    want = re.sub(r'\s+', '', str(cfg.get('pdf_table') or '')).lower()
+    pos, add_up = pdf_pos(cfg), _yes(cfg.get('pdf_sum'))
+    info = {'title': str(cfg.get('pdf_table') or '').strip(), 'pages': 0, 'rows': 0, 'summary_rows': 0, 'not_read': 0,
+            'not_adding_up': 0, 'duplicates': 0, 'blocks_ok': 0, 'blocks_bad': [], 'count_notes': [], 'samples': []}
+    rows, block, seen = [], [], set()
+    state = prev = None
+
+    def miss(kind, line, why):
+        info[kind] += 1
+        if len(info['samples']) < 12:
+            info['samples'].append(f'{why}: {line[:160]}')
+
+    def chosen(nums):
+        if pos == 'last':
+            return len(nums) - 1 if nums else None
+        if isinstance(pos, int):
+            return pos - 1 if pos <= len(nums) else None
+        return 0 if len(nums) == 1 else None
+
+    def count_off(nums):
+        """'State Total: 11 0.00 14,771.27 ...': a leading whole number before decimal acres is the unit count."""
+        if len(nums) >= 2 and re.fullmatch(r'\d{1,5}', nums[0]) and any('.' in n for n in nums[1:]):
+            return int(nums[0]), nums[1:]
+        return None, nums
+
+    def close(nums, label):
+        nonlocal block, state
+        cnt, nums = count_off(nums)
+        j = chosen(nums)
+        tot = _dec(nums[j]) if j is not None else None
+        got = sum((r['dec'] for r in block), decimal.Decimal(0))
+        units = sum(1 for r in block if not r['summary'] and not r['star'])
+        where = state or label
+        if tot is not None and block and abs(got - tot) <= PDF_CENTS:
+            info['blocks_ok'] += 1
+            if cnt is not None and cnt != units:
+                info['count_notes'].append(f'{where}: the list counts {cnt} units, {units} read')
+        elif tot is None or block or tot > 0:
+            info['blocks_bad'].append({'where': where, 'list_total': None if tot is None else str(tot),
+                                       'rows_add_to': str(got), 'rows': len(block)})
+        block, state = [], None
+
+    for text in pages:
+        if not want or want not in re.sub(r'\s+', '', text).lower():
+            continue
+        info['pages'] += 1
+        prev = None
+        for raw in text.splitlines():
+            line = re.sub(r'\s+', ' ', raw).strip()
+            if not line:
+                continue
+            if not re.search(r'\d', line):
+                st = pdf_heading(line)
+                if st:
+                    if block and st != state:   # a new state while rows are still open: their total row was not seen
+                        info['blocks_bad'].append({'where': state or '?', 'list_total': None, 'rows': len(block),
+                                                   'rows_add_to': str(sum((r['dec'] for r in block), decimal.Decimal(0)))})
+                        block = []
+                    state = st
+                prev = line
+                continue
+            got = split_pdf_row(line)
+            if got is None:
+                if re.search(r'[A-Za-z]{3}', line) and re.search(r'\d[\d,]*\.\d', line):
+                    miss('not_read', line, 'a cell is not a number')   # looks like a table row; plain footnotes are not counted
+                prev = None
+                continue
+            name, nums = got
+            if not name:   # numbers only: a page number, or a row whose long name was printed on the line above
+                if len(nums) >= 3 and prev and not pdf_heading(prev):
+                    name = prev
+                else:
+                    if len(nums) >= 3:
+                        miss('not_read', line, 'numbers with no name')
+                    prev = None
+                    continue
+            prev = None
+            if PDF_TOTAL_NAME.search(name):
+                if re.match(r'\s*grand\b', name, re.I):
+                    cnt, gn = count_off(nums)
+                    j = chosen(gn)
+                    info['grand'] = {'list_total': str(_dec(gn[j])) if j is not None else None, 'list_units': cnt,
+                                     'rows_add_to': str(sum((r['dec'] for r in rows), decimal.Decimal(0)))}
+                else:
+                    close(nums, name)
+                continue
+            summary, part, star = bool(PDF_SUMMARY.search(name)), None, False
+            if summary:
+                name = PDF_SUMMARY.sub('', name).strip()
+            else:
+                m = PDF_PART.search(name)
+                if m:
+                    part, star, name = m.group(1), bool(m.group(2)), name[:m.start()].strip()
+            if not re.search(r'[A-Za-z]{2}', name) or name.endswith('*'):
+                miss('not_read', line, 'name not clear')
+                continue
+            j = chosen(nums)
+            if j is None:
+                miss('not_read', line, 'no column named for a row with several numbers')
+                continue
+            dec = _dec(nums[j])
+            if add_up:
+                others = sum((_dec(n) for k, n in enumerate(nums) if k != j), decimal.Decimal(0))
+                if len(nums) < 3 or abs(others - dec) > PDF_CENTS:
+                    miss('not_adding_up', line, 'the row does not add up to its size')
+                    continue
+            key = (state, name.lower(), part, tuple(nums))
+            if key in seen:   # the same row printed twice (a page break): one unit, counted once
+                info['duplicates'] += 1
+                continue
+            seen.add(key)
+            row = {'name': name, 'size': nums[j], 'dec': dec, 'state': state, 'part': part, 'star': star,
+                   'summary': summary}
+            block.append(row)
+            rows.append(row)
+    if block:
+        info['blocks_bad'].append({'where': state or '?', 'list_total': None, 'rows': len(block),
+                                   'rows_add_to': str(sum((r['dec'] for r in block), decimal.Decimal(0)))})
+    units = [r for r in rows if not r['summary']]
+    info['rows'], info['summary_rows'] = len(units), len(rows) - len(units)
+    info['adds_up'] = bool(info['blocks_ok']) and not info['blocks_bad']
+    groups = {}
+    for r in units:
+        if r['part']:
+            groups.setdefault(r['name'].lower(), []).append(r)
+    info['units_in_several_places'] = sum(1 for g in groups.values() if len(g) > 1)
+    info['units'] = len(units) - sum(len(g) - 1 for g in groups.values())
+    info['no_state'] = sum(1 for r in units if not r['state'])
+    area = cfg.get('area') if cfg.get('area') and not str(cfg.get('area')).endswith('*') else None
+    recs = []
+    for r in units:
+        g = groups.get(r['name'].lower()) if r['part'] else None
+        if area and r['state'] != area and not (g and any(x['state'] == area for x in g)):
+            continue   # a research row for one state takes that state's rows, and every part of the units it shares
+        rec = {'name': r['name'], 'size': r['size'], 'unit': '', 'state': r['state'] or ''}
+        if g:
+            why = None
+            if len(g) < 2:
+                why = 'only one of its rows was read'
+            elif not info['adds_up']:
+                why = 'the table did not add up to its own totals, so a part may be missing'
+            rec['_part'] = {'unit': r['name'].lower(), 'note': f'({r["part"]}){"*" if r["star"] else ""}', 'of': len(g),
+                            'why': why}
+        recs.append(rec)
+    return recs, info
+
+
+def pdf_table_status(t):
+    bad = t.get('blocks_bad') or []
+    s = (f'read OK (pdf table "{t["title"]}": {t["pages"]} pages, {t["rows"]} rows read, '
+         f'{t["not_read"]} lines not read, {t["not_adding_up"]} rows not adding up; ')
+    if t.get('adds_up'):
+        s += f'all {t["blocks_ok"]} blocks add up to the list\'s own totals'
+    elif bad:
+        s += (f'{len(bad)} of {t["blocks_ok"] + len(bad)} blocks DO NOT add up to the list\'s own totals ('
+              + ', '.join(str(b['where']) for b in bad[:6]) + ('...' if len(bad) > 6 else '')
+              + '): units printed in several places get no size')
+    else:
+        s += 'no total row found to check the rows against: units printed in several places get no size'
+    s += f'; {t.get("units_in_several_places", 0)} units printed in several places'
+    if t.get('no_state'):
+        s += f'; {t["no_state"]} rows under no state the tool knows'
+    return s + ')'
+
+
+def _reread_table(status, cfg):
+    """20 Nov 2026: a PDF list whose research row now names its table (pdf_table) and that was last read the old way
+    ('read OK (pdf); N PDF lines skipped as unsure') is read again on --resume.  Read once as a table, it stays done."""
+    return bool(cfg and cfg.get('pdf_table')) and str(status or '').startswith('read OK (pdf)')
+
+
 def read_pdf_records(data, cfg):
     try:
         import pypdf  # optional
     except ImportError:
         raise SkipItem('PDF table skipped: pypdf is not installed (pip install pypdf)')
+    if cfg.get('pdf_table'):
+        recs, info = read_pdf_table(pdf_page_texts(data), cfg)
+        cfg['_pdf'], cfg['_pdf_table'] = True, info
+        if not info['pages']:
+            raise FetchError(f'pdf table: no page carries the title "{info["title"]}"')
+        if not recs:
+            raise FetchError(f'pdf table "{info["title"]}": {info["pages"]} pages, no row read for '
+                             f'{cfg.get("area") or "any state"} ({info["not_read"]} lines not read, '
+                             f'{info["not_adding_up"]} rows not adding up)')
+        return recs
     reader = pypdf.PdfReader(io.BytesIO(data))
     recs, unsure = [], 0
     pos = cfg.get('pdf_column')
@@ -1317,6 +1585,8 @@ def row_to_cfg(r):
            'sheet': pick(r, 'sheet', 'sheet_name', 'tab'), 'table_index': pick(r, 'table_index', 'table_no'),
            'layer': pick(r, 'layer', 'layer_id'), 'where': pick(r, 'where', 'filter'),
            'resource': pick(r, 'resource', 'resource_id'), 'pdf_column': pick(r, 'pdf_column', 'pdf_size_position'),
+           'pdf_table': pick(r, 'pdf_table', 'pdf_table_title', want=str),   # 20 Nov 2026: PDF table mode (read_pdf_table)
+           'pdf_sum': pick(r, 'pdf_sum_check', 'pdf_sum', 'pdf_row_adds_up'),
            'list_name': list_name}
     if status is True:
         st = 'found'
@@ -1432,8 +1702,9 @@ def extract_rows(recs, cfg):
         if lat is None or lon is None or not (-90 <= lat <= 90 and -180 <= lon <= 180):
             lat = lon = None
         row_unit = u_in or cfg.get('unit') or norm_unit(r.get('unit')) or unit  # a unit written in the size text wins
-        text = ' | '.join(str(v) for v in r.values() if v not in (None, ''))
+        text = ' | '.join(str(v) for k, v in r.items() if v not in (None, '') and not (cfg.get('_pdf') and str(k).startswith('_')))
         out.append({'i': i, 'name': name, 'value': val, 'size_text': '' if raw is None else str(raw),
+                    'part': r.get('_part') if cfg.get('_pdf_table') else None,
                     'unit': row_unit, 'ids': [str(r.get(h)) for h in id_hs if r.get(h) not in (None, '')],
                     'county': (str(r.get(county_h)).strip() if county_h and r.get(county_h) else None),
                     'lat': lat, 'lon': lon, 'state': (r.get(state_h) if state_h else None), 'text': text})
@@ -1552,12 +1823,61 @@ def run_list_item(cfg, fetcher, matcher, read_date, areas):
         res['status'] = f'failed: {type(e).__name__}: {e}'[:300]
         return res
     res['status'] = f'read OK ({fmt})'
-    if cfg.get('_pdf_unsure'):
+    if cfg.get('_pdf_table'):
+        res['status'] = pdf_table_status(cfg['_pdf_table'])
+        res['pdf_table'] = cfg['_pdf_table']
+    elif cfg.get('_pdf_unsure'):
         res['status'] += f'; {cfg["_pdf_unsure"]} PDF lines skipped as unsure'
     res['columns'] = cols
     for row in rows:
         process_row(res, row, cfg.get('area'), cfg.get('kind'), res['source_url'], matcher, areas, None)
+    if cfg.get('_pdf_table'):
+        settle_parts(res, rows, res['source_url'])
     return res
+
+
+def settle_parts(res, rows, src):
+    """PDF table mode, rule 6: a unit the list prints in several places (one refuge under each state it lies in).
+    Its rows are parts of ONE unit.  When the table added up and the parts point to one park, every part goes to
+    that park (merge() adds them: the unit's whole size).  Otherwise no part is used and the reason is written down."""
+    groups, text = {}, {r['i']: r['size_text'] for r in rows}
+    for row in rows:
+        if row.get('part'):
+            groups.setdefault(row['part']['unit'], []).append(row)
+    for grp in groups.values():
+        idx = {r['i'] for r in grp}
+        ms = [m for m in res['matches'] if m['row'] in idx]
+        refs = sorted({m['ref'] for m in ms})
+        note, why = grp[0]['part']['note'], grp[0]['part'].get('why')
+        if not why and len(refs) > 1:
+            why = 'its parts matched different parks (' + ', '.join(refs) + ')'
+        if why:
+            res['matches'] = [m for m in res['matches'] if m['row'] not in idx]
+            for m in ms:
+                res['unmatched'].append({'agency': res['agency'], 'row_name': m['row_name'], 'size': text.get(m['row'], ''),
+                                         'unit': m['unit'] or '', 'source_url': src or '', 'row': m['row'],
+                                         'read_date': res['read_date'], 'area': res.get('area') or '',
+                                         'why': f'the list prints this unit in several places {note} and {why}: '
+                                                f'size not complete, not used (would be {m["ref"]})'})
+            continue
+        if len(refs) != 1:
+            continue   # no part matched a park: each row stays unmatched with its own reason
+        ref, have = refs[0], {m['row'] for m in ms}
+        told = {u.get('row') for u in res['unmatched']} & idx
+        res['unmatched'] = [u for u in res['unmatched'] if u.get('row') not in (idx - have)]
+        for r in grp:
+            label = f'{r["name"]} ({r.get("state") or "another place"} part)'
+            for m in ms:
+                if m['row'] == r['i']:
+                    m['row_name'] = label
+            if r['i'] not in have and r['value'] is not None and r['unit']:
+                if r['i'] not in told and res['skipped_rows'] > 0:   # a part in a state outside this run: it is read after all
+                    res['skipped_rows'] -= 1
+                    res['rows_read'] += 1
+                res['matches'].append({'ref': ref, 'row': r['i'], 'row_name': label, 'acres': to_acres(r['value'], r['unit']),
+                                       'value': r['value'], 'unit': r['unit'], 'rule': 'name+kind', 'how_text': None,
+                                       'why': f'part of the same unit: the list prints it in {len(grp)} places {note}',
+                                       'source_url': src or ''})
 
 
 def process_row(res, row, area, default_kind, src, matcher, areas, how_text):
@@ -1578,7 +1898,7 @@ def process_row(res, row, area, default_kind, src, matcher, areas, how_text):
     def um(why):
         res['unmatched'].append({'agency': res['agency'], 'row_name': row['name'], 'size': row['size_text'],
                                  'unit': row['unit'] or '', 'why': why, 'source_url': src or '',
-                                 'read_date': res['read_date'], 'area': area or ''})
+                                 'read_date': res['read_date'], 'area': area or '', 'row': row['i']})
     if row['value'] is None:
         return um('no size value')
     if not row['unit']:
@@ -1727,6 +2047,34 @@ def write_outputs(out, results, parks, meta, answer=None):
         L.append(f'- {res["area"] or "?"} | {res["agency"]} | {res["status"]} | rows read {res["rows_read"]}, '
                  f'matched {matched_rows}, unmatched {len(res["unmatched"])}, flagged {nflag}'
                  + (f' | {res["source_url"]}' if res.get('source_url') else ''))
+    tabs = {}
+    for res in results:
+        if res.get('pdf_table'):
+            tabs.setdefault((res.get('source_url') or '', res['pdf_table'].get('title')), res['pdf_table'])
+    if tabs:
+        L += ['', '## PDF tables (each checked against the list\'s own totals)', '']
+        for (url, title), t in tabs.items():
+            g = t.get('grand') or {}
+            L.append(f'- "{title}" | {url}')
+            L.append(f'  - {t["pages"]} pages; {t["units"]} units in {t["rows"]} rows ({t.get("units_in_several_places", 0)} units printed '
+                     f'in several places); {t["summary_rows"]} summary rows; {t["not_read"]} lines not read; '
+                     f'{t["not_adding_up"]} rows not adding up; {t["duplicates"]} rows printed twice; '
+                     f'{t.get("no_state", 0)} rows under no state the tool knows')
+            L.append(f'  - blocks that add up to the list\'s own total row: {t["blocks_ok"]}; that do not: {len(t["blocks_bad"])}'
+                     + ('' if t.get('adds_up') else ' - **units printed in several places get no size from this table**'))
+            for b in t['blocks_bad'][:12]:
+                L.append(f'    - {b["where"]}: {b["rows"]} rows add to {b["rows_add_to"]}, the list says '
+                         f'{b["list_total"] if b["list_total"] is not None else "nothing (no total row seen)"}')
+            if g and g.get('list_total') is not None and abs(_dec(g['list_total']) - _dec(g['rows_add_to'])) <= PDF_CENTS:
+                L.append(f'  - the list\'s grand total agrees: {g.get("list_units") if g.get("list_units") is not None else "?"} '
+                         f'units, {g["list_total"]} acres')
+            elif g:
+                L.append(f'  - the grand total line was not checked: it reads {g.get("list_total")} and the rows add to '
+                         f'{g.get("rows_add_to")} (a long total line is often split over two lines; the block totals above are the check)')
+            for c in t.get('count_notes', [])[:8]:
+                L.append(f'  - unit count: {c}')
+            for x in t.get('samples', [])[:8]:
+                L.append(f'  - not read: {x}')
     wma_sp = 0
     for ref, e in final.items():
         pk = parks.p.get(ref, {}).get('kind')
@@ -1836,7 +2184,8 @@ def run(args, transport=None, sleep=time.sleep, gap=2.0):
     timed_out = False
     for n, it in enumerate(queue):
         fp = os.path.join(adir, it['key'] + '.json')
-        if it['key'] in state['done'] and os.path.exists(fp) and not _retry_now(state['done'][it['key']]):
+        if it['key'] in state['done'] and os.path.exists(fp) and not _retry_now(state['done'][it['key']]) \
+                and not _reread_table(state['done'][it['key']], it.get('cfg')):
             continue
         if time.monotonic() > deadline:
             timed_out = True
