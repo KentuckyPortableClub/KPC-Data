@@ -1,6 +1,6 @@
 # Engine board, 2026-11-20
 
-**One line:** 1404 new candidates across 1 kinds; 98886 parks with a gap; 20 hosts blocked.
+**One line:** 1406 new candidates across 1 kinds; 98886 parks with a gap; 20 hosts blocked.
 
 | kind | area | missing yesterday | missing today | found / candidate today | still missing | top why-not |
 |---|---|---|---|---|---|---|
@@ -89,7 +89,7 @@
 | outline | FO | 3 | 3 | 0 | 3 |  |
 | outline | FR | 3470 | 3470 | 0 | 3470 |  |
 | outline | GA | 5 | 5 | 0 | 5 |  |
-| outline | GB | 3394 | 3394 | 83 | 3311 | blocked (36 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 494, blocked (6 sources could not be read, e.g. blocked (host resting: 3 strikes)); the sources that answered had no record 258, UNLIKELY only (evidence, never a question): name: one word(s) in common 227 |
+| outline | GB | 3394 | 3394 | 85 | 3309 | blocked (36 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 504, blocked (6 sources could not be read, e.g. blocked (host resting: 3 strikes)); the sources that answered had no record 258, UNLIKELY only (evidence, never a question): name: one word(s) in common 229 |
 | outline | GD | 16 | 16 | 0 | 16 |  |
 | outline | GE | 5 | 5 | 0 | 5 |  |
 | outline | GF | 35 | 35 | 0 | 35 |  |
@@ -304,22 +304,22 @@
 
 | kind | pass 1 | pass 2 | solved in pass 2 |
 |---|---|---|---|
-| outline | {"error": 430, "already approved": 701, "found": 316, "candidate": 1198, "evidence": 5501, "blocked": 4694, "not found": 2571, "pin only": 6} | null | - |
+| outline | {"error": 430, "already approved": 704, "found": 316, "candidate": 1200, "evidence": 5504, "blocked": 4704, "not found": 2571, "pin only": 6} | null | - |
 
 ## Blocked hosts (blocked is not "not found"; retried next night)
 
-- services.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (514)
-- datamap.gov.wales: blocked (robots) (215)
-- services2.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (141)
+- services.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (504)
+- datamap.gov.wales: blocked (robots) (216)
+- services2.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (140)
 - apps.fs.usda.gov: blocked (host rule: saved copies only or never contact; on the needs-download li (132)
 - mapservices.nps.gov: blocked (host resting: 3 strikes) (123)
-- services1.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (109)
-- services-eu1.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (105)
+- services1.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (108)
+- services-eu1.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (101)
 - services5.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (48)
 - ncnhde.natureserve.org: blocked (host rule: saved copies only or never contact; on the needs-download li (24)
 - tnmap.tn.gov: blocked (host resting: 3 strikes) (22)
 - maps.gov.bc.ca: blocked (robots) (21)
-- services6.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (18)
+- services6.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (17)
 - gis.arkansas.gov: blocked (robots) (12)
 - services7.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (12)
 - utility.arcgis.com: blocked (robots) (6)
