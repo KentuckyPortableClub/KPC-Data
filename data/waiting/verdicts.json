@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-19T21:30Z",
+ "checked": "2026-11-20T00:42Z",
  "switched_on": false,
  "results": [
   {
@@ -322,8 +322,8 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "18692f9c4e75a1ec",
-   "net": true
+   "fp": "7b1d29df0fb053f4",
+   "net": false
   },
   {
    "path": "data/us-key/US-AL.json",
@@ -332,6 +332,15 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "219e6dadc01eb853",
+   "net": false
+  },
+  {
+   "path": "data/us-key/US-AR.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "d7d87057e92dc26a",
    "net": false
   },
   {
@@ -384,15 +393,31 @@
    "net": true
   },
   {
+   "path": "data/us-key/US-DE.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "f7a691828ed84fbd",
+   "net": false
+  },
+  {
    "path": "data/us-key/US-FL.json",
    "kind": "key",
    "why": [],
-   "notes": [
-    "F-O4 shape test: 57 changed outlines read from PAD-US, 1 far from the park pin"
-   ],
+   "notes": [],
    "verdict": "PASS",
-   "fp": "5ce41c4cfc08cccd",
-   "net": true
+   "fp": "3d46a30fdd088b10",
+   "net": false
+  },
+  {
+   "path": "data/us-key/US-GA.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "685dc748d30dfb47",
+   "net": false
   },
   {
    "path": "data/us-key/US-HI.json",
@@ -533,13 +558,22 @@
    "net": true
   },
   {
+   "path": "data/us-key/US-MT.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "de328304e7f3e67e",
+   "net": false
+  },
+  {
    "path": "data/us-key/US-NC.json",
    "kind": "key",
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "3181dec74d9f3049",
-   "net": true
+   "fp": "4532e3fec8a0bb8d",
+   "net": false
   },
   {
    "path": "data/us-key/US-ND.json",
@@ -651,6 +685,15 @@
    "net": true
   },
   {
+   "path": "data/us-key/US-RI.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "0256b3525bb08e71",
+   "net": false
+  },
+  {
    "path": "data/us-key/US-SC.json",
    "kind": "key",
    "why": [],
@@ -700,8 +743,17 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "1c80eed1280b62e2",
-   "net": true
+   "fp": "942b9d9b1ccd1095",
+   "net": false
+  },
+  {
+   "path": "data/us-key/US-VA.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "523c59c0f59c2d0e",
+   "net": false
   },
   {
    "path": "data/us-key/US-VT.json",
@@ -744,12 +796,21 @@
    "net": true
   },
   {
+   "path": "data/us-key/US-WY.json",
+   "kind": "key",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "45132c7afe217e22",
+   "net": false
+  },
+  {
    "path": "data/us-key/changed-parks.json",
    "kind": "key",
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "0a8645965909365b",
+   "fp": "74cfe8f5c7fb0504",
    "net": false
   },
   {
@@ -758,7 +819,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "ced775d2debfd931",
+   "fp": "64ffbc804b6263b5",
    "net": false
   },
   {
@@ -767,7 +828,7 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "571e92196b4c9961",
+   "fp": "d9524725da3c0a8d",
    "net": false
   },
   {

@@ -1,17 +1,29 @@
 {
  "about": "us-key: the HELD build (data/waiting/in/data/us-key/) vs the LIVE key (data/us-key/). Chat 11: check the sample, then write KEY YES or KEY NO: <refs> in data/waiting/approved.json (item 'what': 'us-key', 'build': the held build id from data/waiting/in/data/us-key/index.json, 'date': 'YYYY-MM-DD' and 'time': 'h:mm AM/PM' Central; rule 22: no build field or a grade from before Nov 2 9:37 AM CST is not a release). Written by kpc_key_summary.py.",
- "made": "2026-11-19 21:30 UTC",
+ "made": "2026-11-20 00:42 UTC",
  "totals": {
-  "gained": 16,
-  "lost": 80,
-  "pieces_changed": 1274,
-  "grade_changed": 27
+  "gained": 17,
+  "lost": 126,
+  "pieces_changed": 1460,
+  "grade_changed": 36
  },
  "per_area": {
+  "US-AK": {
+   "gained": 0,
+   "lost": 2,
+   "pieces_changed": 5,
+   "grade_changed": 0
+  },
   "US-AL": {
    "gained": 0,
    "lost": 1,
    "pieces_changed": 7,
+   "grade_changed": 1
+  },
+  "US-AR": {
+   "gained": 0,
+   "lost": 12,
+   "pieces_changed": 20,
    "grade_changed": 1
   },
   "US-CA": {
@@ -38,11 +50,23 @@
    "pieces_changed": 1,
    "grade_changed": 0
   },
+  "US-DE": {
+   "gained": 0,
+   "lost": 1,
+   "pieces_changed": 28,
+   "grade_changed": 1
+  },
   "US-FL": {
    "gained": 1,
-   "lost": 0,
-   "pieces_changed": 59,
+   "lost": 3,
+   "pieces_changed": 73,
    "grade_changed": 0
+  },
+  "US-GA": {
+   "gained": 0,
+   "lost": 4,
+   "pieces_changed": 5,
+   "grade_changed": 1
   },
   "US-HI": {
    "gained": 0,
@@ -122,6 +146,18 @@
    "pieces_changed": 2,
    "grade_changed": 1
   },
+  "US-MT": {
+   "gained": 1,
+   "lost": 2,
+   "pieces_changed": 45,
+   "grade_changed": 3
+  },
+  "US-NC": {
+   "gained": 0,
+   "lost": 2,
+   "pieces_changed": 3,
+   "grade_changed": 0
+  },
   "US-ND": {
    "gained": 0,
    "lost": 1,
@@ -188,6 +224,12 @@
    "pieces_changed": 1,
    "grade_changed": 1
   },
+  "US-RI": {
+   "gained": 0,
+   "lost": 2,
+   "pieces_changed": 0,
+   "grade_changed": 0
+  },
   "US-SC": {
    "gained": 0,
    "lost": 0,
@@ -214,9 +256,15 @@
   },
   "US-UT": {
    "gained": 0,
-   "lost": 1,
-   "pieces_changed": 1,
+   "lost": 11,
+   "pieces_changed": 16,
    "grade_changed": 0
+  },
+  "US-VA": {
+   "gained": 0,
+   "lost": 2,
+   "pieces_changed": 50,
+   "grade_changed": 3
   },
   "US-VT": {
    "gained": 0,
@@ -240,6 +288,12 @@
    "gained": 0,
    "lost": 0,
    "pieces_changed": 4,
+   "grade_changed": 0
+  },
+  "US-WY": {
+   "gained": 0,
+   "lost": 6,
+   "pieces_changed": 1,
    "grade_changed": 0
   }
  },
@@ -478,6 +532,25 @@
    "pota": "https://pota.app/#/park/US-0661"
   },
   {
+   "area": "US-MT",
+   "ref": "US-0054",
+   "name": "Nez Perce National Historical Park",
+   "old_grade": "pin",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "3231",
+     "Nez Perce National Historical Park",
+     195,
+     "NPS unit code NEPE (POTA website nps.gov/nepe)"
+    ]
+   ],
+   "old_pieces": [],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-0054"
+  },
+  {
    "area": "US-OR",
    "ref": "US-0054",
    "name": "Nez Perce National Historical Park",
@@ -575,6 +648,44 @@
  ],
  "lost": [
   {
+   "area": "US-AK",
+   "ref": "US-12381",
+   "name": "Delta BLM Wild and Scenic River",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "rst11370",
+     "Delta River SRMA",
+     43744,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12381"
+  },
+  {
+   "area": "US-AK",
+   "ref": "US-7884",
+   "name": "Kenai Mountains-Turnagain Arm National Heritage Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "fsod168",
+     "Kenai Mountains-Turnagain Arm National Heritage Area",
+     1176785,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-7884"
+  },
+  {
    "area": "US-AL",
    "ref": "US-3692",
    "name": "Heron Bay and Portersville Bay State Fish and Wildlife Area",
@@ -592,6 +703,234 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-3692"
+  },
+  {
+   "area": "US-AR",
+   "ref": "US-10236",
+   "name": "Lake Sylvia State Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sgarc128",
+     "Lake Sylvia",
+     0,
+     "name · water outline only"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-10236"
+  },
+  {
+   "area": "US-AR",
+   "ref": "US-1080",
+   "name": "DeGray Lake Resort State Park",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sgarc64",
+     "DeGray Lake",
+     0,
+     "name · water outline only"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-1080"
+  },
+  {
+   "area": "US-AR",
+   "ref": "US-11213",
+   "name": "Bragg Lake State Fish and Wildlife Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sgarc370",
+     "Bragg Lake",
+     0,
+     "name · water outline only"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11213"
+  },
+  {
+   "area": "US-AR",
+   "ref": "US-11970",
+   "name": "Greenlee Lake Recreation Area State Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sgarc280",
+     "Lake Greenlee",
+     0,
+     "name · water outline only"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11970"
+  },
+  {
+   "area": "US-AR",
+   "ref": "US-7163",
+   "name": "Cutoff Creek State Natural Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "166784",
+     "Cut-off Creek",
+     8318,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-7163"
+  },
+  {
+   "area": "US-AR",
+   "ref": "US-7180",
+   "name": "Holland Bottoms State Natural Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "166798",
+     "Holland Bottoms",
+     4905,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-7180"
+  },
+  {
+   "area": "US-AR",
+   "ref": "US-7190",
+   "name": "Bull Shoals Lake State Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sgarc122",
+     "Bull Shoals Lake",
+     0,
+     "name · water outline only"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-7190"
+  },
+  {
+   "area": "US-AR",
+   "ref": "US-7348",
+   "name": "Longview Saline Wildlife Management Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "arw1766",
+     "Longview Saline Natural Area WMA",
+     0,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-7348"
+  },
+  {
+   "area": "US-AR",
+   "ref": "US-7439",
+   "name": "Bois D'Arc Lake State Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sgarc285",
+     "Bois d' Arc Lake",
+     0,
+     "name · water outline only"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-7439"
+  },
+  {
+   "area": "US-AR",
+   "ref": "US-7524",
+   "name": "Lake Greeson National Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sgarc80",
+     "Lake Greeson",
+     0,
+     "name · water outline only"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-7524"
+  },
+  {
+   "area": "US-AR",
+   "ref": "US-9164",
+   "name": "Lake Conway State Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sgarc53",
+     "Lake Conway",
+     0,
+     "name · water outline only"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-9164"
+  },
+  {
+   "area": "US-AR",
+   "ref": "US-9168",
+   "name": "Lake Jack Nolen State Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sgarc258",
+     "Lake Jack Nolen",
+     0,
+     "name · water outline only"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-9168"
   },
   {
    "area": "US-CA",
@@ -674,6 +1013,194 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-0795"
+  },
+  {
+   "area": "US-DE",
+   "ref": "US-11812",
+   "name": "Trap Pond State Fishing Lake",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sgdea380",
+     "Trap Pond State Park",
+     517,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11812"
+  },
+  {
+   "area": "US-FL",
+   "ref": "US-12127",
+   "name": "Stormwater Treatment Area 1 West State Conservation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "190265",
+     "Stormwater Treatment Areas",
+     47574,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12127"
+  },
+  {
+   "area": "US-FL",
+   "ref": "US-12128",
+   "name": "Stormwater Treatment Area 1 East State Conservation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "190265",
+     "Stormwater Treatment Areas",
+     47574,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12128"
+  },
+  {
+   "area": "US-FL",
+   "ref": "US-6744",
+   "name": "Terra Ceia Preserve Frog Creek State Conservation Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sgfla42",
+     "Terra Ceia Preserve State Park",
+     1948,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-6744"
+  },
+  {
+   "area": "US-GA",
+   "ref": "US-7139",
+   "name": "Arabia Mountain National Heritage Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sggae49",
+     "Arabia Mountain National Heritage Area",
+     0,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-7139"
+  },
+  {
+   "area": "US-GA",
+   "ref": "US-7893",
+   "name": "Augusta Canal National Heritage Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sggae1",
+     "Augusta Canal National Heritage Area",
+     0,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-7893"
+  },
+  {
+   "area": "US-GA",
+   "ref": "US-7914",
+   "name": "Sandhills East Wildlife Management Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sggaa90",
+     "SANDHILLS WMA",
+     2484,
+     "name"
+    ],
+    [
+     "sggac821",
+     "SANDHILLS WMA",
+     2484,
+     "name"
+    ],
+    [
+     "sggaa34",
+     "SANDHILLS WMA",
+     872,
+     "name"
+    ],
+    [
+     "sggac768",
+     "SANDHILLS WMA",
+     872,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-7914"
+  },
+  {
+   "area": "US-GA",
+   "ref": "US-9795",
+   "name": "Sandhills West Wildlife Management Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sggaa90",
+     "SANDHILLS WMA",
+     2484,
+     "name"
+    ],
+    [
+     "sggac821",
+     "SANDHILLS WMA",
+     2484,
+     "name"
+    ],
+    [
+     "sggaa34",
+     "SANDHILLS WMA",
+     872,
+     "name"
+    ],
+    [
+     "sggac768",
+     "SANDHILLS WMA",
+     872,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-9795"
   },
   {
    "area": "US-HI",
@@ -1494,6 +2021,82 @@
    "pota": "https://pota.app/#/park/US-7189"
   },
   {
+   "area": "US-MT",
+   "ref": "US-10528",
+   "name": "Shepherd Ah Nei BLM Special Recreation Management Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "rst10990",
+     "Shepherd Recreation Area",
+     4680,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-10528"
+  },
+  {
+   "area": "US-MT",
+   "ref": "US-10529",
+   "name": "Sundance Lodge (BLM) Recreation Site",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "rst10995",
+     "Sundance Recreation Area",
+     391,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-10529"
+  },
+  {
+   "area": "US-NC",
+   "ref": "US-3843",
+   "name": "Haw River at Iron Ore Access Belt State Park",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "214838",
+     "Haw River State Park",
+     1481,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-3843"
+  },
+  {
+   "area": "US-NC",
+   "ref": "US-6889",
+   "name": "Buxton Woods State Game Land",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "214543",
+     "Buxton Woods Coastal Reserve",
+     1008,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-6889"
+  },
+  {
    "area": "US-ND",
    "ref": "US-0437",
    "name": "White Horse Hill Game Preserve",
@@ -1991,6 +2594,176 @@
    "pota": "https://pota.app/#/park/US-9981"
   },
   {
+   "area": "US-RI",
+   "ref": "US-10544",
+   "name": "Jerimoth Hill State Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "57110",
+     "Jerimoth Hill - Brown U / Jerimoth Hill",
+     6,
+     "reviewed-approx"
+    ],
+    [
+     "57316",
+     "Mosley/Jerimoth Hill",
+     5,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-10544"
+  },
+  {
+   "area": "US-RI",
+   "ref": "US-5483",
+   "name": "Lincoln Woods State Forest",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "57179",
+     "Lincoln Woods",
+     25,
+     "name (designation code ignored)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-5483"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-11169",
+   "name": "Bridge Hollow on the Green River BLM Recreation Management Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "rma10005",
+     "Bridge Hollow Campground",
+     6,
+     "reviewed-approx"
+    ],
+    [
+     "rst10005",
+     "Bridge Hollow Campground",
+     6,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11169"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-11347",
+   "name": "Swinging Bridge Trailhead BLM Recreation Management Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "rma13737",
+     "Swinging Bridge South Campground",
+     6,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11347"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-11711",
+   "name": "Elbow Ranch BLM Recreation Management Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "263935",
+     "Elbow Ranch State Wildlife Area",
+     3730,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11711"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-11739",
+   "name": "Three Peaks RC Track BLM Special Recreation Management Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "rst9179",
+     "Three Peaks",
+     6633,
+     "words"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11739"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-11746",
+   "name": "Devil's Rock Garden Day Use BLM Recreation Management Area",
+   "old_grade": "pin",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "wsa30522",
+     "Devils Garden ISA",
+     0,
+     "reviewed-approx"
+    ],
+    [
+     "wsa30599",
+     "Devils Garden ISA",
+     0,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11746"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-11761",
+   "name": "Quail Creek Reservoir Designated Dispersed Camping Area BLM Special Recreation Management Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "157844",
+     "Quail Creek State Park",
+     869,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-11761"
+  },
+  {
    "area": "US-UT",
    "ref": "US-5779",
    "name": "Willard Spur State Waterfowl Management Area",
@@ -2017,6 +2790,122 @@
    ],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-5779"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-6035",
+   "name": "Zion NPS Wilderness Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "3485",
+     "Zion National Park",
+     145304,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-6035"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-6045",
+   "name": "Swasey Mountain BLM Herd Management Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sgakg9696",
+     "Swasey Mountain",
+     33506,
+     "name"
+    ]
+   ],
+   "held_now": [
+    "check (rule R-G8): bigger than the park's own record"
+   ],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-6045"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-6058",
+   "name": "Red Cliffs Archeological Site BLM Historic Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "rma9123",
+     "Red Cliffs Recreation Area",
+     873,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-6058"
+  },
+  {
+   "area": "US-UT",
+   "ref": "US-6062",
+   "name": "Red Cliffs Dinosaur Track Site BLM Historic Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "rma9123",
+     "Red Cliffs Recreation Area",
+     873,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-6062"
+  },
+  {
+   "area": "US-VA",
+   "ref": "US-9902",
+   "name": "Colonial National Parkway",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "3195",
+     "Colonial National Historical Park",
+     7881,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-9902"
+  },
+  {
+   "area": "US-VA",
+   "ref": "US-9957",
+   "name": "Shenandoah Wilderness Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "3474",
+     "Shenandoah National Park",
+     195790,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-9957"
   },
   {
    "area": "US-VT",
@@ -2444,6 +3333,120 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-4264"
+  },
+  {
+   "area": "US-WY",
+   "ref": "US-10890",
+   "name": "Sinks Canyon BLM Recreation Management Area",
+   "old_grade": "official",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "292692",
+     "Sinks Canyon",
+     79,
+     "name (designation code ignored)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-10890"
+  },
+  {
+   "area": "US-WY",
+   "ref": "US-10930",
+   "name": "Devil's Playground BLM WSA Wilderness Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "wsa1089",
+     "Devil's Playground-Twin Buttes",
+     0,
+     "words"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-10930"
+  },
+  {
+   "area": "US-WY",
+   "ref": "US-10944",
+   "name": "Twin Buttes BLM WSA Wilderness Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "wsa1089",
+     "Devil's Playground-Twin Buttes",
+     0,
+     "words"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-10944"
+  },
+  {
+   "area": "US-WY",
+   "ref": "US-12725",
+   "name": "Sweetwater Rocks (Lankin Dome) State Wilderness Area",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "rst10741",
+     "Sweetwater Rocks Undeveloped SRMA",
+     41761,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12725"
+  },
+  {
+   "area": "US-WY",
+   "ref": "US-6157",
+   "name": "Split Rock BLM Interpretive Site",
+   "old_grade": "pin",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "wsa29617",
+     "Split Rock",
+     0,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-6157"
+  },
+  {
+   "area": "US-WY",
+   "ref": "US-6188",
+   "name": "Point of Rocks Cemetery State Historic Site",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "292667",
+     "Point of Rocks Stage Station",
+     1,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-6188"
   }
  ],
  "grade_changed": [
@@ -2472,6 +3475,32 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-4560"
+  },
+  {
+   "area": "US-AR",
+   "ref": "US-9167",
+   "name": "Lake Hinkle State Recreation Area",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgarc50",
+     "Lake Hinkle",
+     0,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "sgarc50",
+     "Lake Hinkle",
+     0,
+     "name · water outline only"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-9167"
   },
   {
    "area": "US-CA",
@@ -2504,6 +3533,100 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-3586"
+  },
+  {
+   "area": "US-DE",
+   "ref": "US-12938",
+   "name": "Laurel Industrial Forest Land State Wildlife Area",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgdec38",
+     "Industrial Forest Lands - Laurel Complex",
+     462,
+     "reviewed"
+    ],
+    [
+     "sgdec69",
+     "Industrial Forest Lands - Laurel Complex",
+     359,
+     "reviewed"
+    ],
+    [
+     "sgdec25",
+     "Industrial Forest Lands - Laurel Complex",
+     285,
+     "reviewed"
+    ],
+    [
+     "sgdec21",
+     "Industrial Forest Lands - Laurel Complex",
+     272,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "sgdec38",
+     "Industrial Forest Lands - Laurel Complex",
+     462,
+     "words"
+    ],
+    [
+     "sgdec69",
+     "Industrial Forest Lands - Laurel Complex",
+     359,
+     "words"
+    ],
+    [
+     "sgdec21",
+     "Industrial Forest Lands - Laurel Complex",
+     272,
+     "words"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12938"
+  },
+  {
+   "area": "US-GA",
+   "ref": "US-7902",
+   "name": "Walton Wildlife Management Area",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sggac763",
+     "WALTON WMA",
+     246,
+     "name"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "195119",
+     "Walton Public Dove Field & Hatchery",
+     248,
+     "reviewed-approx"
+    ],
+    [
+     "sggaa28",
+     "WALTON WMA",
+     246,
+     "reviewed-approx"
+    ],
+    [
+     "sggac763",
+     "WALTON WMA",
+     246,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-7902"
   },
   {
    "area": "US-ID",
@@ -2772,6 +3895,90 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-4560"
+  },
+  {
+   "area": "US-MT",
+   "ref": "US-10524",
+   "name": "Acton (BLM) Recreation Site",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "rst10988",
+     "Acton Recreation Area",
+     3698,
+     "reviewed"
+    ],
+    [
+     "sgakg10988",
+     "Acton Recreation Area",
+     3698,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "rst10988",
+     "Acton Recreation Area",
+     3698,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-10524"
+  },
+  {
+   "area": "US-MT",
+   "ref": "US-11215",
+   "name": "Bear Paw Battlefield National Monument",
+   "old_grade": "official",
+   "new_grade": "approximate",
+   "new_pieces": [
+    [
+     "sgmtd209",
+     "Bear Paw Battlefield",
+     1064,
+     "name"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "sgmtd209",
+     "Bear Paw Battlefield",
+     1064,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-11215"
+  },
+  {
+   "area": "US-MT",
+   "ref": "US-12630",
+   "name": "Upper Missouri River BLM Wild and Scenic River",
+   "old_grade": "official",
+   "new_grade": "approximate",
+   "new_pieces": [
+    [
+     "sgmtd1197",
+     "Upper Missouri National Wild & Scenic River",
+     12167,
+     "name"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "sgmtd1197",
+     "Upper Missouri National Wild & Scenic River",
+     12167,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12630"
   },
   {
    "area": "US-NH",
@@ -3262,6 +4469,84 @@
    "pota": "https://pota.app/#/park/US-4560"
   },
   {
+   "area": "US-VA",
+   "ref": "US-9899",
+   "name": "Fort Hunt National Historical Site",
+   "old_grade": "official",
+   "new_grade": "approximate",
+   "new_pieces": [
+    [
+     "sgvae488032",
+     "Fort Hunt",
+     19,
+     "name"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "sgvae488032",
+     "Fort Hunt",
+     19,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-9899"
+  },
+  {
+   "area": "US-VA",
+   "ref": "US-9907",
+   "name": "First Landing National Recreation Trail",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "trl9907",
+     "First Landing National Recreation Trail",
+     0,
+     "official trail line (USGS National Digital Trails (VA DCR) ("
+    ]
+   ],
+   "old_pieces": [
+    [
+     "54565",
+     "First Landing State Park",
+     2916,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-9907"
+  },
+  {
+   "area": "US-VA",
+   "ref": "US-9937",
+   "name": "Meadowood BLM Special Recreation Management Area",
+   "old_grade": "official",
+   "new_grade": "approximate",
+   "new_pieces": [
+    [
+     "sgvae491120",
+     "Meadowood Farm",
+     751,
+     "name + Recreation.gov point inside (G-1, id 4112)"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "sgvae491120",
+     "Meadowood Farm",
+     751,
+     "name + Recreation.gov point inside (G-1, id 4112)"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-9937"
+  },
+  {
    "area": "US-WA",
    "ref": "US-10695",
    "name": "Coffeepot Lake Nature Recreation Area",
@@ -3713,6 +4998,38 @@
    "pota": "https://pota.app/#/park/US-12789"
   },
   {
+   "area": "US-MT",
+   "ref": "US-10524",
+   "name": "Acton (BLM) Recreation Site",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "rst10988",
+     "Acton Recreation Area",
+     3698,
+     "reviewed"
+    ],
+    [
+     "sgakg10988",
+     "Acton Recreation Area",
+     3698,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "rst10988",
+     "Acton Recreation Area",
+     3698,
+     "reviewed-approx"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-10524"
+  },
+  {
    "area": "US-CA",
    "ref": "US-0915",
    "name": "Cesar E. Chavez National Monument",
@@ -3789,6 +5106,44 @@
    "pota": "https://pota.app/#/park/US-0054"
   },
   {
+   "area": "US-GA",
+   "ref": "US-7902",
+   "name": "Walton Wildlife Management Area",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sggac763",
+     "WALTON WMA",
+     246,
+     "name"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "195119",
+     "Walton Public Dove Field & Hatchery",
+     248,
+     "reviewed-approx"
+    ],
+    [
+     "sggaa28",
+     "WALTON WMA",
+     246,
+     "reviewed-approx"
+    ],
+    [
+     "sggac763",
+     "WALTON WMA",
+     246,
+     "name"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-7902"
+  },
+  {
    "area": "US-WI",
    "ref": "US-4254",
    "name": "Chimney Rock Oak Savanna State Natural Area",
@@ -3825,6 +5180,25 @@
    "held_now": [],
    "by_answer": true,
    "pota": "https://pota.app/#/park/US-4254"
+  },
+  {
+   "area": "US-AR",
+   "ref": "US-1080",
+   "name": "DeGray Lake Resort State Park",
+   "old_grade": "approximate",
+   "new_grade": "pin",
+   "new_pieces": [],
+   "old_pieces": [
+    [
+     "sgarc64",
+     "DeGray Lake",
+     0,
+     "name · water outline only"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": true,
+   "pota": "https://pota.app/#/park/US-1080"
   },
   {
    "area": "US-NH",
@@ -3927,129 +5301,23 @@
    "pota": "https://pota.app/#/park/US-12790"
   },
   {
-   "area": "US-WI",
-   "ref": "US-8668",
-   "name": "Waterloo Prairie State Natural Area",
-   "old_grade": "approximate",
+   "area": "US-MT",
+   "ref": "US-0054",
+   "name": "Nez Perce National Historical Park",
+   "old_grade": "pin",
    "new_grade": "official",
    "new_pieces": [
     [
-     "sgwif23634",
-     "Waterloo Prairie",
-     221,
-     "name"
+     "3231",
+     "Nez Perce National Historical Park",
+     195,
+     "NPS unit code NEPE (POTA website nps.gov/nepe)"
     ]
    ],
-   "old_pieces": [
-    [
-     "72052",
-     "Waterloo Wildlife Area",
-     4186,
-     "reviewed-approx"
-    ],
-    [
-     "sgwic6734",
-     "Waterloo Prairie",
-     221,
-     "reviewed-approx"
-    ],
-    [
-     "sgwif23634",
-     "Waterloo Prairie",
-     221,
-     "name"
-    ]
-   ],
+   "old_pieces": [],
    "held_now": [],
    "by_answer": true,
-   "pota": "https://pota.app/#/park/US-8668"
-  },
-  {
-   "area": "US-MI",
-   "ref": "US-13570",
-   "name": "Gladwin Field Trial Wildlife Management Area",
-   "old_grade": "approximate",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "71502",
-     "Gladwin Game Unit and Field Trial Area of State Forest",
-     4754,
-     "reviewed-approx"
-    ],
-    [
-     "sgmib88",
-     "Gladwin State Game Area",
-     1354,
-     "reviewed-approx"
-    ],
-    [
-     "mid783",
-     "Gladwin State Game Area",
-     159,
-     "reviewed-approx"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-13570"
-  },
-  {
-   "area": "US-OR",
-   "ref": "US-10483",
-   "name": "Jordan Craters Area of Environmental Concern National Nature Reserve",
-   "old_grade": "pin",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "wsa31291",
-     "Jordan Craters WSA",
-     0,
-     "reviewed-approx"
-    ],
-    [
-     "wsa31325",
-     "Jordan Craters WSA",
-     0,
-     "reviewed-approx"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-10483"
-  },
-  {
-   "area": "US-VT",
-   "ref": "US-3131",
-   "name": "Maidstone State Park",
-   "old_grade": "approximate",
-   "new_grade": "pin",
-   "new_pieces": [],
-   "old_pieces": [
-    [
-     "sgvta30",
-     "Maidstone State Forest",
-     442,
-     "reviewed-approx"
-    ],
-    [
-     "61335",
-     "Maidstone State Forest",
-     294,
-     "reviewed-approx"
-    ],
-    [
-     "61334",
-     "Maidstone State Forest",
-     119,
-     "reviewed-approx"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": true,
-   "pota": "https://pota.app/#/park/US-3131"
+   "pota": "https://pota.app/#/park/US-0054"
   },
   {
    "area": "US-NH",
@@ -4186,6 +5454,62 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-10021"
+  },
+  {
+   "area": "US-DE",
+   "ref": "US-12938",
+   "name": "Laurel Industrial Forest Land State Wildlife Area",
+   "old_grade": "approximate",
+   "new_grade": "official",
+   "new_pieces": [
+    [
+     "sgdec38",
+     "Industrial Forest Lands - Laurel Complex",
+     462,
+     "reviewed"
+    ],
+    [
+     "sgdec69",
+     "Industrial Forest Lands - Laurel Complex",
+     359,
+     "reviewed"
+    ],
+    [
+     "sgdec25",
+     "Industrial Forest Lands - Laurel Complex",
+     285,
+     "reviewed"
+    ],
+    [
+     "sgdec21",
+     "Industrial Forest Lands - Laurel Complex",
+     272,
+     "reviewed"
+    ]
+   ],
+   "old_pieces": [
+    [
+     "sgdec38",
+     "Industrial Forest Lands - Laurel Complex",
+     462,
+     "words"
+    ],
+    [
+     "sgdec69",
+     "Industrial Forest Lands - Laurel Complex",
+     359,
+     "words"
+    ],
+    [
+     "sgdec21",
+     "Industrial Forest Lands - Laurel Complex",
+     272,
+     "words"
+    ]
+   ],
+   "held_now": [],
+   "by_answer": false,
+   "pota": "https://pota.app/#/park/US-12938"
   },
   {
    "area": "US-TN",
@@ -4540,32 +5864,6 @@
    "held_now": [],
    "by_answer": false,
    "pota": "https://pota.app/#/park/US-0750"
-  },
-  {
-   "area": "US-AL",
-   "ref": "US-4560",
-   "name": "Natchez Trace Trail National Scenic Trail",
-   "old_grade": "approximate",
-   "new_grade": "official",
-   "new_pieces": [
-    [
-     "trl4560",
-     "Natchez Trace National Scenic Trail",
-     0,
-     "official trail line (National Park Service): the park is the"
-    ]
-   ],
-   "old_pieces": [
-    [
-     "3552",
-     "Natchez Trace Parkway",
-     31527,
-     "reviewed-approx"
-    ]
-   ],
-   "held_now": [],
-   "by_answer": false,
-   "pota": "https://pota.app/#/park/US-4560"
   }
  ]
 }
