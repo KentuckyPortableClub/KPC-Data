@@ -295,8 +295,11 @@ def render_summary(facts_by_area, order, state, today, requests):
              f'Requests this run: {requests}.',
              'Pictures: ' + str(sum(1 for f in by_ref.values() if f.get('picture'))) + '.',
              'Pages: ' + ', '.join(f'{k} {n}' for k, n in sorted(kinds.items())) + '.',
-             'Questions: ' + (', '.join(f'{k} {n}' for k, n in sorted(qcount.items())) or 'none') + '.',
-             'Look at these first:']
+             'Questions: ' + (', '.join(f'{k} {n}' for k, n in sorted(qcount.items())) or 'none') + '.']
+    errs = state.get('errors') or {}
+    if errs:  # 19 Nov 8 PM: parks the reader stopped on are named, never silent; they are read again next run
+        lines.append(f'Skipped on a reader error: {len(errs)} (read again next run): ' + '; '.join(f'{r} {e[:80]}' for r, e in sorted(errs.items())[:5]) + '.')
+    lines.append('Look at these first:')
     shown = 0
     for item in order or []:
         fact = by_ref.get(item['ref'])

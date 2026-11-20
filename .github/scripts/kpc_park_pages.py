@@ -7,7 +7,7 @@ Every request goes through kpc_manners.Manners. This file does not fetch on its 
 Part 1 of the hand-off is `read` and `--selftest`. Later commands are named here and
 filled in by the later parts; until then they say so and do no work.
 """
-import argparse, datetime, json, os, pathlib, sys, time, urllib.parse
+import argparse, datetime, json, os, pathlib, re, sys, time, urllib.parse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import kpc_park_pages_rules as R  # noqa: E402
 import kpc_park_pages_work as W  # noqa: E402
@@ -284,6 +284,7 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
     state.setdefault('dead', {})
     state.setdefault('read', {})
     state.setdefault('fingerprints', {})
+    state['errors'] = {}  # this run's skipped parks only
     out = {}
     requests = 0
     done = 0
@@ -424,56 +425,63 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
             state['fingerprints'][norm_url(url)] = main.get('fingerprint')
             done += 1
             continue
-        pages = [main]
-        used = 1
-        kind = main.get('kind')
-        text = main.get('text') or ''
-        mates = [r for r in (groups.get(area) or {}).get(norm_url(url), []) if r != ref]
-        own_is, own_why = _own_is(url, (groups.get(area) or {}).get(norm_url(url), [ref]), parks, text, row['name'])
-        read_blocks = own_is not in ('agency-home', 'list') and kind not in ('refused', 'resting', 'dead', 'script-built')
-        fam = main.get('family') or {}
-        # one facts page, one directions page, one map. Never past max_per_park.
-        if read_blocks and used < max_per_park and budget_left():
-            extra = _extra_urls(url, main, fam)
-            for eu, role in extra:
-                if used >= max_per_park or not budget_left():
-                    break
-                if role == 'map':
-                    got = fetch(eu, rng=(0, R.PDF_FIRST - 1))
-                else:
-                    got = fetch(eu)
-                used += 1
-                if got is None:
-                    break
-                if got.get('kind') in ('html', 'pdf') and (got.get('text') or '').strip():
-                    got = dict(got)
-                    got['role'] = role
-                    pages.append(got)
-                elif role == 'facts' and got.get('kind') == 'dead':
-                    continue
-        if kind in ('refused', 'resting', 'dead', 'script-built'):
-            read_blocks = False
-        fact = R.build_facts(ref, area, pota, parks, asked, pages, today, mates, own_is, own_why, read_blocks=read_blocks)
-        fact['page']['requests'] = used if main.get('skipped') != 'refused' else 0
-        fact['page']['kind'] = kind if kind != 'html' or not main.get('pdf') else 'pdf'
-        if main.get('kind') == 'pdf':
-            fact['page']['kind'] = 'pdf'
-        # a list page: nothing was read
-        if own_is == 'list':
-            fact['sizes'] = []
-            fact['inside_of'] = []
-            fact['location'] = R._blank_location()
-            fact['name']['best'] = None
+        try:
+            pages = [main]
+            used = 1
+            kind = main.get('kind')
+            text = main.get('text') or ''
+            mates = [r for r in (groups.get(area) or {}).get(norm_url(url), []) if r != ref]
+            own_is, own_why = _own_is(url, (groups.get(area) or {}).get(norm_url(url), [ref]), parks, text, row['name'])
+            read_blocks = own_is not in ('agency-home', 'list') and kind not in ('refused', 'resting', 'dead', 'script-built')
+            fam = main.get('family') or {}
+            # one facts page, one directions page, one map. Never past max_per_park.
+            if read_blocks and used < max_per_park and budget_left():
+                extra = _extra_urls(url, main, fam)
+                for eu, role in extra:
+                    if used >= max_per_park or not budget_left():
+                        break
+                    if role == 'map':
+                        got = fetch(eu, rng=(0, R.PDF_FIRST - 1))
+                    else:
+                        got = fetch(eu)
+                    used += 1
+                    if got is None:
+                        break
+                    if got.get('kind') in ('html', 'pdf') and (got.get('text') or '').strip():
+                        got = dict(got)
+                        got['role'] = role
+                        pages.append(got)
+                    elif role == 'facts' and got.get('kind') == 'dead':
+                        continue
+            if kind in ('refused', 'resting', 'dead', 'script-built'):
+                read_blocks = False
+            fact = R.build_facts(ref, area, pota, parks, asked, pages, today, mates, own_is, own_why, read_blocks=read_blocks)
+            fact['page']['requests'] = used if main.get('skipped') != 'refused' else 0
+            fact['page']['kind'] = kind if kind != 'html' or not main.get('pdf') else 'pdf'
+            if main.get('kind') == 'pdf':
+                fact['page']['kind'] = 'pdf'
+            # a list page: nothing was read
+            if own_is == 'list':
+                fact['sizes'] = []
+                fact['inside_of'] = []
+                fact['location'] = R._blank_location()
+                fact['name']['best'] = None
+                fact['questions'] = R.questions_for(fact)
             fact['questions'] = R.questions_for(fact)
-        fact['questions'] = R.questions_for(fact)
-        drafts = R.evidence_drafts(fact)
-        fact['evidence_draft'] = drafts[0] if drafts else None
-        fact['evidence_drafts'] = drafts
-        out[area][ref] = fact
-        state['read'][ref] = {'url': url, 'fingerprint': main.get('fingerprint') or '', 'date': today,
-                              'kind': fact['page']['kind'], 'final': main.get('final')}
-        if main.get('fingerprint'):
-            state['fingerprints'][norm_url(url)] = main.get('fingerprint')
+            drafts = R.evidence_drafts(fact)
+            fact['evidence_draft'] = drafts[0] if drafts else None
+            fact['evidence_drafts'] = drafts
+            out[area][ref] = fact
+            state['read'][ref] = {'url': url, 'fingerprint': main.get('fingerprint') or '', 'date': today,
+                                  'kind': fact['page']['kind'], 'final': main.get('final')}
+            if main.get('fingerprint'):
+                state['fingerprints'][norm_url(url)] = main.get('fingerprint')
+        except Exception as err:  # noqa: BLE001  19 Nov 8 PM: one bad page never stops the other parks
+            # nothing is saved for this park, so the next run reads it again; the run says which park and why
+            out[area].pop(ref, None)
+            state.setdefault('errors', {})[ref] = f'{type(err).__name__}: {err}'[:300]
+            print(f'::warning title=Reader skipped a park::{ref}: {type(err).__name__}: {err}'[:400], flush=True)
+            continue
         done += 1
     state['left'] = []
     state['stopped'] = ''
@@ -494,8 +502,7 @@ def _extra_urls(url, main, fam):
         # Both are listed; the caller fetches the next only while the previous facts page was dead. Handled below.
         out = [(R.nps_facts_urls(fam['code'])[0], 'facts')]
     elif fid == 'fws' and (fam or {}).get('code'):
-        origin = urllib.parse.urlunsplit(urllib.parse.urlparse(url)._replace(path='', query='', fragment=''))
-        # origin with scheme and host
+        # origin with scheme and host (19 Nov 8 PM: the urlunsplit line here took urlparse's six parts and stopped the run)
         p = urllib.parse.urlparse(url)
         origin = f'{p.scheme}://{p.netloc}'
         facts = R.fws_facts_urls(origin, fam['code'])

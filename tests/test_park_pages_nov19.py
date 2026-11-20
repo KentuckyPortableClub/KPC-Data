@@ -425,5 +425,53 @@ check('Kentucky comes from the saved POTA list when parkinfo has no US-KY file',
       set(_areas) == {'US-TN', 'US-KY'} and _areas['US-KY']['US-1234']['type'] == 'State Park' and _areas['US-KY']['US-1234']['qsos'] == 900
       and _areas['US-KY']['US-1234']['website'] == 'https://parks.ky.gov/x')
 
+# --- 19 Nov 8 PM (Opus): run 44654168919 stopped on park 1 of 193 with NameError 're' in _extra_urls ---
+_ex = PP._extra_urls('https://parks.ky.gov/x', {'text': 'Welcome to the park.', 'links': [('https://parks.ky.gov/x/directions', 'Directions')]}, None)
+check('a page with no directions section gets its Directions link (the path that stopped the Kentucky run)',
+      ('https://parks.ky.gov/x/directions', 'directions') in _ex)
+import ast as _ast, builtins as _bi
+
+
+def _unbound(path):
+    t = _ast.parse(path.read_text(encoding='utf-8'))
+    seen = set(dir(_bi)) | {'__file__'}
+    for n in _ast.walk(t):
+        if isinstance(n, (_ast.Import, _ast.ImportFrom)):
+            seen.update((a.asname or a.name).split('.')[0] for a in n.names)
+        elif isinstance(n, (_ast.FunctionDef, _ast.AsyncFunctionDef, _ast.ClassDef)):
+            seen.add(n.name)
+        elif isinstance(n, _ast.arg):
+            seen.add(n.arg)
+        elif isinstance(n, _ast.Name) and not isinstance(n.ctx, _ast.Load):
+            seen.add(n.id)
+        elif isinstance(n, _ast.ExceptHandler) and n.name:
+            seen.add(n.name)
+        elif isinstance(n, (_ast.Global, _ast.Nonlocal)):
+            seen.update(n.names)
+    return sorted({n.id for n in _ast.walk(t) if isinstance(n, _ast.Name) and isinstance(n.ctx, _ast.Load) and n.id not in seen})
+
+
+_bad = {f.name: _unbound(f) for f in sorted(S.glob('kpc_park_pages*.py')) + [S / 'kpc_not_sure.py', S / 'kpc_manners.py']}
+check('every reader file uses only names it imports or defines: ' + (', '.join(f'{k}: {v}' for k, v in _bad.items() if v) or 'none missing'),
+      not any(_bad.values()))
+
+_fw = PP._extra_urls('https://www.fws.gov/refuge/clarks-river', {'text': 'Directions: take KY 58.', 'links': []}, {'id': 'fws', 'code': 'clarks-river'})
+check('a refuge page gets its about-us facts page (the urlunsplit line that would have stopped the run is gone)',
+      _fw == [('https://www.fws.gov/refuge/clarks-river/about-us', 'facts')])
+_orig = PP._extra_urls
+PP._extra_urls = lambda *a, **k: (_ for _ in ()).throw(ValueError('test: a page the reader cannot handle'))
+try:
+    _g = PP.FixtureGetter({'pages': {'https://parks.ky.gov/a': {'body': '<html><body><h1>Alpha State Park</h1>' + 'Alpha State Park is a park. ' * 40 + '</body></html>'}}}, FX)
+    _ar = {'US-KY': {'US-9001': {'name': 'Alpha State Park', 'type': 'State Park', 'website': 'https://parks.ky.gov/a', 'lat': 37.0, 'lon': -85.0, 'qsos': 1},
+                     'US-9002': {'name': 'Beta State Park', 'type': 'State Park', 'website': '', 'lat': 37.1, 'lon': -85.1, 'qsos': 1}}}
+    _st = {}
+    _o, _ = PP.read_parks(_ar, {}, {}, {}, _g, _st, '2026-11-19')
+    check('one park the reader cannot handle is skipped and named; the next park is still read; the skipped one is read again next run',
+          'US-9001' not in _o['US-KY'] and 'US-9002' in _o['US-KY'] and 'US-9001' in _st['errors'] and 'US-9001' not in _st['read'])
+    import kpc_park_pages_work as _W
+    check('the summary names the skipped park', any('Skipped on a reader error: 1' in x and 'US-9001' in x for x in _W.render_summary(_o, [], _st, '2026-11-19', 0)))
+finally:
+    PP._extra_urls = _orig
+
 print('ALL PASS' if ok else 'SOME FAILED')
 sys.exit(0 if ok else 1)
