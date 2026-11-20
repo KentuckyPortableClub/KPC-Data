@@ -1,0 +1,22 @@
+Park facts, 2026-11-20 (kpc_park_facts 1 (2026-11-20))
+
+18,768 US and Canadian parks on the POTA list.
+  official size (acreage bot): 1,788 parks
+  own web page read (page reader): 812 parks in US-KY, US-MT, US-NV
+  web link facts (link IDs): 18,768 parks
+
+   16,570  facts from 1 bot(s)
+    2,345  facts from 2 bot(s)
+       36  facts from 3 bot(s)
+       36  official size AND a page size
+       76  page gives coordinates
+      274  page states a size
+      183  park taken from the page reader's POTA copy (not in data/parkinfo)
+   18,951  parks
+    2,781  with a usable link id
+   18,768  with link
+      812  with page
+    1,788  with size
+
+One file: park-facts.json, one row per park. Each fact keeps its source and date.
+It collects, it does not decide: nothing here ties a park to land or changes a key.
