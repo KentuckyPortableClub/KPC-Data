@@ -362,7 +362,10 @@ class FetchError(Exception):
 
 def _retry_now(status):
     """19 Nov 2026 (owner: "Fix it and use the bots"): a work item that failed only because pypdf was missing is read again on
-    --resume once pypdf can be imported; every other finished item stays done."""
+    --resume once pypdf can be imported, and so is a PDF list refused only for its research column name; every other finished
+    item stays done."""
+    if "not found (columns: name, size, unit)" in str(status or ''):
+        return True   # a PDF list refused only because the research named a spreadsheet column (fixed the same night)
     if 'pypdf is not installed' not in str(status or ''):
         return False
     try:
@@ -740,6 +743,7 @@ def read_pdf_records(data, cfg):
             else:
                 unsure += 1
     cfg['_pdf_unsure'] = unsure
+    cfg['_pdf'] = True
     return recs
 
 
@@ -1395,6 +1399,8 @@ def extract_rows(recs, cfg):
             if k not in headers:
                 headers.append(k)
     cols_txt = ', '.join(map(str, headers[:25]))
+    if cfg.get('_pdf'):   # 19 Nov 2026: a PDF list's rows are always name / size / unit (read_pdf_records); the research's
+        cfg = dict(cfg, name_col=None, size_col=None)   # spreadsheet column names (e.g. 'TOTAL ACRES') do not apply to them
     name_h = resolve(headers, cfg.get('name_col'), auto_name)
     size_h = resolve(headers, cfg.get('size_col'), auto_size)
     if cfg.get('size_col') and size_h is None:
