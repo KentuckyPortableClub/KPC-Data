@@ -1,7 +1,7 @@
 {
  "about": "Official PICTURE maps (no coordinates) for parks with no GIS outline; boundary page only, small JPEG. Deleted when the park gets an OFFICIAL outline. Never traced (G-ID3; R-G9 decides later).",
- "built": "2026-11-20 11:47Z",
- "count": 326,
+ "built": "2026-11-20 12:16Z",
+ "count": 327,
  "maps": [
   {
    "ref": "AU-0181",
@@ -5120,6 +5120,35 @@
    "date": "2026-11-03",
    "chat": 10,
    "request": "10-auto-US-9037"
+  },
+  {
+   "ref": "US-9899",
+   "name": "Fort Hunt National Historical Site",
+   "agency": "National Park Service",
+   "source_url": "https://www.nps.gov/gwmp/planyourvisit/upload/Fort-Hunt-Park-map-508-2021.pdf",
+   "asked_url": "https://www.nps.gov/gwmp/planyourvisit/upload/Fort-Hunt-Park-map-508-2021.pdf",
+   "page": [
+    1
+   ],
+   "files": [
+    "maps/US-9899_fort-hunt-national-historical-si.jpg"
+   ],
+   "date": "2026-11-20",
+   "chat": 10,
+   "request": "10-auto-US-9899",
+   "page_pick": {
+    "today": 1,
+    "pages": 1,
+    "looked": 1,
+    "scores": {
+     "1": 1.44
+    },
+    "kept": 1,
+    "map_page_found": false,
+    "score": 1.44,
+    "how": "no map page found",
+    "why": "no page has GeoPDF coordinates or a map's words (at most 250 words, 2+ map words)"
+   }
   },
   {
    "ref": "US-9935",
