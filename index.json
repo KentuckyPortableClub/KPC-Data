@@ -1,7 +1,7 @@
 {
  "about": "Official PICTURE maps (no coordinates) for parks with no GIS outline; boundary page only, small JPEG. Deleted when the park gets an OFFICIAL outline. Never traced (G-ID3; R-G9 decides later).",
  "built": "2026-11-20 12:16Z",
- "count": 327,
+ "count": 328,
  "maps": [
   {
    "ref": "AU-0181",
@@ -5120,6 +5120,35 @@
    "date": "2026-11-03",
    "chat": 10,
    "request": "10-auto-US-9037"
+  },
+  {
+   "ref": "US-9795",
+   "name": "Sandhills West Wildlife Management Area",
+   "agency": "Georgia DNR",
+   "source_url": "https://georgiawildlife.com:443/sites/default/files/wrd/pdf/maps/SandhillsWestMap.pdf",
+   "asked_url": "https://georgiawildlife.com:443/sites/default/files/wrd/pdf/maps/SandhillsWestMap.pdf",
+   "page": [
+    1
+   ],
+   "files": [
+    "maps/US-9795_sandhills-west-wildlife-manageme.jpg"
+   ],
+   "date": "2026-11-20",
+   "chat": 10,
+   "request": "10-auto-US-9795",
+   "page_pick": {
+    "today": 1,
+    "pages": 1,
+    "looked": 1,
+    "scores": {
+     "1": 9.89
+    },
+    "kept": 1,
+    "map_page_found": true,
+    "score": 9.89,
+    "why": "GeoPDF coordinates; 5 map words in 60 words; picture: photo 0.87, flat 0.01, graphic 0.06",
+    "how": "the map page"
+   }
   },
   {
    "ref": "US-9899",
