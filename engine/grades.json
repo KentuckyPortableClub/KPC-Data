@@ -5,14 +5,14 @@
    "verdict": "FAIL",
    "bar": "Rule G: SURE only when pin inside (or <= 150 m with a name match, R-G12), names equal once kind words are stripped, kinds match, not line vs polygon, not a container, size within 1.5x or unknown; LIKELY goes to chat 11; UNLIKELY is evidence only, never a question. Whole key file: chat 11 samples 30 joins, needs 30/30. Finder: >= 95% of past YES re-found, >= 25% more parks, >= 85% YES in a sample of 40; every open park has a why-not.",
    "measured": {
-    "rows": 15279,
-    "parks": 4835,
-    "parks_with_hit": 629,
+    "rows": 15296,
+    "parks": 4852,
+    "parks_with_hit": 630,
     "SURE": 521,
-    "LIKELY": 901,
-    "UNLIKELY_evidence": 5536,
+    "LIKELY": 902,
+    "UNLIKELY_evidence": 5539,
     "strong": 301,
-    "already_approved": 697,
+    "already_approved": 698,
     "open_without_whynot": 456,
     "non_official_candidates": 1,
     "unlikely_as_questions": 0,
@@ -27,7 +27,7 @@
    "top_miss_reasons": [
     {
      "reason": "blocked: source could not be read",
-     "parks": 3409
+     "parks": 3421
     },
     {
      "reason": "not found: no-layer: no official record at the pin or by name",
@@ -108,18 +108,18 @@
     "the finder bars need the side-by-side run (95% re-found, +25% parks) and a 40-row sample (85% YES)"
    ],
    "details": {
-    "rows": 15279,
-    "found_or_candidate": 1396,
-    "blocked": 4620,
+    "rows": 15296,
+    "found_or_candidate": 1397,
+    "blocked": 4632,
     "hit_rate": 0.091,
     "bands": {
      "STRONG": 301,
-     "WEAK": 1074,
+     "WEAK": 1075,
      "CONFLICT": 21
     },
     "tiers": {
      "T-1": 90,
-     "T-2": 470,
+     "T-2": 471,
      "T-3": 662,
      "T-4": 78,
      "T-6": 96
@@ -296,11 +296,11 @@
   "outline": {
    "pass1": {
     "error": 430,
-    "already approved": 697,
+    "already approved": 698,
     "found": 314,
-    "candidate": 1192,
-    "evidence": 5449,
-    "blocked": 4620,
+    "candidate": 1193,
+    "evidence": 5452,
+    "blocked": 4632,
     "not found": 2571,
     "pin only": 6
    },
