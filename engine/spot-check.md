@@ -1,4 +1,4 @@
-# Spot check: all kinds (20 random rows of 15401)
+# Spot check: all kinds (20 random rows of 15417)
 
 For chat 11: open each link and say YES / NO. The engine decides nothing.
 
@@ -122,16 +122,16 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: record 'Bohemian WMA' (PACK-US-MN-forest-27); pin inside; about 664.5 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
 - answer: 
 
-## CA-4893 Green Gables Heritage Place (L.M. Montgomery's Cavendish NHS) National Historic Site (CA-PE)
+## CA-4823 Red Bay National Historic Site (CA-NL)
 - status: candidate
-- tier: T-6
+- tier: T-3
 - band: WEAK
-- record_name: Cavendish
+- record_name: Red Bay NHS - Visitor Centre
 - url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4?f=html
-- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D565&outFields=%2A&f=html
-- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-63.3824%2C46.4905&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 0
-- why: record 'Cavendish' (Q-1781); pin inside; about 4037.8 acres; Rule G: LIKELY (names overlap); size unknown; confidence: weak
+- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D3200&outFields=%2A&f=html
+- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-56.4285%2C51.7307&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 44
+- why: record 'Red Bay NHS - Visitor Centre' (PACK-CA-NB-land-73); pin 44 m from the edge; about 6.0 acres; Rule G: LIKELY (names overlap); size unknown; confidence: likely
 - answer: 
 
 ## GB-4496 Central Park (GB)
@@ -230,15 +230,15 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: record 'Louis S. St. Laurent' (Q-1371); pin 25 m from the edge; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: likely
 - answer: 
 
-## CA-6560 Kingsburg Beach Provincial Park (CA-NS)
+## CA-6557 Louis Head Provincial Park (CA-NS)
 - status: candidate
-- tier: T-1
+- tier: T-3
 - band: WEAK
-- record_name: Kingsburg Beach Provincial Park
+- record_name: Louis Head Provincial Park
 - url: https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0?f=html
-- record_link: https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0/query?where=OBJECTID%3D136&outFields=%2A&f=html
-- source_url: https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0/query?geometry=-64.2585%2C44.2745&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- pin_m: 0
-- why: record 'Kingsburg Beach Provincial Park' (PACK-CA-NS-park-80); pin inside; about 2.7 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: likely
+- record_link: https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0/query?where=OBJECTID%3D40&outFields=%2A&f=html
+- source_url: https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0/query?geometry=-65.0149%2C43.7565&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 6
+- why: same land also in PACK-CA-NS-park-81 'Louis Head Provincial Park': merged, counted once; record 'Louis Head Provincial Park' (PACK-CA-NS-park-80); pin 6 m from the edge; about 16.9 acres; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: likely
 - answer: 
 

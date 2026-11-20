@@ -5,12 +5,12 @@
    "verdict": "FAIL",
    "bar": "Rule G: SURE only when pin inside (or <= 150 m with a name match, R-G12), names equal once kind words are stripped, kinds match, not line vs polygon, not a container, size within 1.5x or unknown; LIKELY goes to chat 11; UNLIKELY is evidence only, never a question. Whole key file: chat 11 samples 30 joins, needs 30/30. Finder: >= 95% of past YES re-found, >= 25% more parks, >= 85% YES in a sample of 40; every open park has a why-not.",
    "measured": {
-    "rows": 15401,
-    "parks": 4957,
-    "parks_with_hit": 635,
+    "rows": 15417,
+    "parks": 4973,
+    "parks_with_hit": 637,
     "SURE": 523,
-    "LIKELY": 905,
-    "UNLIKELY_evidence": 5586,
+    "LIKELY": 907,
+    "UNLIKELY_evidence": 5588,
     "strong": 303,
     "already_approved": 701,
     "open_without_whynot": 456,
@@ -27,7 +27,7 @@
    "top_miss_reasons": [
     {
      "reason": "blocked: source could not be read",
-     "parks": 3471
+     "parks": 3483
     },
     {
      "reason": "not found: no-layer: no official record at the pin or by name",
@@ -108,18 +108,18 @@
     "the finder bars need the side-by-side run (95% re-found, +25% parks) and a 40-row sample (85% YES)"
    ],
    "details": {
-    "rows": 15401,
-    "found_or_candidate": 1402,
-    "blocked": 4682,
+    "rows": 15417,
+    "found_or_candidate": 1404,
+    "blocked": 4694,
     "hit_rate": 0.091,
     "bands": {
      "STRONG": 303,
-     "WEAK": 1078,
+     "WEAK": 1080,
      "CONFLICT": 21
     },
     "tiers": {
      "T-1": 90,
-     "T-2": 475,
+     "T-2": 477,
      "T-3": 663,
      "T-4": 78,
      "T-6": 96
@@ -298,9 +298,9 @@
     "error": 430,
     "already approved": 701,
     "found": 316,
-    "candidate": 1196,
-    "evidence": 5499,
-    "blocked": 4682,
+    "candidate": 1198,
+    "evidence": 5501,
+    "blocked": 4694,
     "not found": 2571,
     "pin only": 6
    },
