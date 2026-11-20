@@ -370,6 +370,8 @@ def _retry_now(status):
         return True   # 20 Nov 2026 fix 1: the research's size-column note is now read as column names
     if 'failed: no name column found' in str(status or ''):
         return True   # 20 Nov 2026 fix 2: the name column can now come from the research's query fields
+    if "no item named 'xl/workbook.xml'" in str(status or ''):
+        return True   # 20 Nov 2026 fix 3: a zipped shapefile's table is now read
     if 'pypdf is not installed' not in str(status or ''):
         return False
     try:
@@ -549,6 +551,73 @@ def read_csv_rows(data):
     except csv.Error:
         dialect = csv.excel
     return list(csv.reader(io.StringIO(text), dialect))
+
+
+def read_dbf_rows(data, encoding=None):
+    """Tiny stdlib dBase (.dbf) reader: a shapefile's attribute table -> [header] + rows of strings.
+    Deleted records are left out. Text is read with the .cpg's code page when given, else UTF-8, else Latin-1."""
+    if len(data) < 33:
+        raise FetchError('the .dbf table is empty')
+    n = int.from_bytes(data[4:8], 'little')
+    hlen = int.from_bytes(data[8:10], 'little')
+    rlen = int.from_bytes(data[10:12], 'little')
+    fields, off = [], 32
+    while off + 32 <= hlen and data[off] != 0x0D:
+        d = data[off:off + 32]
+        fields.append((d[:11].split(b'\0')[0].decode('ascii', 'replace').strip(), chr(d[11]), d[16]))
+        off += 32
+    if not fields or rlen < 1:
+        raise FetchError('the .dbf table has no columns')
+
+    def txt(b):
+        for enc in ([encoding] if encoding else []) + ['utf-8', 'latin-1']:
+            try:
+                return b.decode(enc)
+            except (UnicodeDecodeError, LookupError):
+                continue
+        return b.decode('latin-1')
+    rows = [[f[0] for f in fields]]
+    for i in range(n):
+        rec = data[hlen + i * rlen: hlen + (i + 1) * rlen]
+        if len(rec) < rlen:
+            break
+        if rec[:1] == b'*':
+            continue
+        pos, row = 1, []
+        for _name, _typ, ln in fields:
+            row.append(txt(rec[pos:pos + ln]).strip())
+            pos += ln
+        rows.append(row)
+    return rows
+
+
+CPG_CODEPAGES = {'ansi 1252': 'cp1252', '1252': 'cp1252', 'utf-8': 'utf-8', 'utf8': 'utf-8', '65001': 'utf-8',
+                 'iso 88591': 'latin-1', '88591': 'latin-1'}
+
+
+def read_zip_rows(data, cfg):
+    """20 Nov 2026: a .zip that is not a spreadsheet (Hawaii, Texas, Virginia DCR send zipped shapefiles): read the
+    table inside it: the biggest .dbf (a shapefile's attribute table), else a .csv, else an .xlsx."""
+    z = zipfile.ZipFile(io.BytesIO(data))
+    names = [i for i in z.infolist() if not i.is_dir() and '__MACOSX' not in i.filename]
+
+    def biggest(ext):
+        c = [i for i in names if i.filename.lower().endswith(ext)]
+        return max(c, key=lambda i: i.file_size) if c else None
+    dbf = biggest('.dbf')
+    if dbf:
+        enc, cpg = None, dbf.filename[:-4] + '.cpg'
+        if cpg in z.namelist():
+            raw = z.read(cpg).decode('ascii', 'ignore').strip().lower()
+            enc = CPG_CODEPAGES.get(re.sub(r'[^a-z0-9 ]', '', raw).strip(), raw or None)
+        return table_to_records(read_dbf_rows(z.read(dbf), enc), cfg)
+    csvf = biggest('.csv')
+    if csvf:
+        return table_to_records(read_csv_rows(z.read(csvf)), cfg)
+    xl = biggest('.xlsx')
+    if xl:
+        return table_to_records(read_xlsx_rows(z.read(xl), cfg.get('sheet')), cfg)
+    raise FetchError('the .zip holds no table to read (.dbf / .csv / .xlsx)')
 
 
 def read_xlsx_rows(data, sheet=None):
@@ -938,6 +1007,11 @@ def bytes_to_records(data, fmt, cfg):
     if fmt == 'xlsx':
         if not data.startswith(b'PK'):
             raise FetchError('old .xls (not .xlsx) is not supported; it needs a CSV/XLSX copy')
+        try:
+            if 'xl/workbook.xml' not in zipfile.ZipFile(io.BytesIO(data)).namelist():
+                return read_zip_rows(data, cfg)
+        except zipfile.BadZipFile:
+            raise FetchError('the file starts like a zip but is not a readable zip')
         return table_to_records(read_xlsx_rows(data, cfg.get('sheet')), cfg)
     if fmt == 'html':
         tables = read_html_tables(data)
@@ -2064,6 +2138,41 @@ def selftest(update=False):
         check('no name column' in str(e), f'no word field in the query: {e}')
     check(_retry_now('failed: no name column found (columns: OBJECTID, GML_HAB, ACRES)'),
           'fix 2: lists that failed on the name column are read again on --resume')
+    # --- 20 Nov 2026 fix 3: a zipped shapefile is not a spreadsheet (Hawaii, Texas, Virginia DCR failed with
+    # "There is no item named 'xl/workbook.xml'"): read its .dbf table. The test builds a tiny shapefile zip.
+    def mk_dbf(cols, rows, deleted=()):
+        flds = b''.join(c.encode().ljust(11, b'\0') + b'C' + b'\0' * 4 + bytes([w, 0]) + b'\0' * 14 for c, w in cols)
+        hlen, rlen = 32 + len(flds) + 1, 1 + sum(w for _c, w in cols)
+        head = bytes([3, 126, 11, 20]) + len(rows).to_bytes(4, 'little') + hlen.to_bytes(2, 'little') + \
+            rlen.to_bytes(2, 'little') + b'\0' * 20
+        body = b''.join((b'*' if i in deleted else b' ') + b''.join(str(v).encode('cp1252').ljust(w)[:w]
+                        for v, (_c, w) in zip(r, cols)) for i, r in enumerate(rows))
+        return head + flds + b'\r' + body + b'\x1a'
+    zb = io.BytesIO()
+    with zipfile.ZipFile(zb, 'w') as zf:
+        zf.writestr('parks_state.shp', b'\0' * 100)
+        zf.writestr('parks_state.dbf', mk_dbf([('NAME', 30), ('GIS_Acre', 12)],
+                                              [['Kōke\'e State Park'.replace('ō', 'o'), '4345.2'],
+                                               ['Old Park', '1'], ['Wailua River State Park', '1093.4']],
+                                              deleted={1}))
+        zf.writestr('parks_state.cpg', 'ANSI 1252')
+    try:
+        zr = bytes_to_records(zb.getvalue(), 'xlsx', {'size_col': 'GIS_Acre'})
+        rr, cc = extract_rows(zr, {'size_col': 'GIS_Acre', 'unit': 'acres'})
+        check([r['name'] for r in rr] == ["Koke'e State Park", 'Wailua River State Park'] and
+              rr[1]['value'] == 1093.4 and cc['size'] == 'GIS_Acre', f'zipped shapefile .dbf read: {zr}')
+    except Exception as e:
+        check(False, f'zipped shapefile .dbf read: {type(e).__name__}: {e}')
+    zb2 = io.BytesIO()
+    with zipfile.ZipFile(zb2, 'w') as zf:
+        zf.writestr('readme.txt', 'nothing here')
+    try:
+        bytes_to_records(zb2.getvalue(), 'xlsx', {})
+        check(False, 'a zip with no table should fail plainly')
+    except FetchError as e:
+        check('no table' in str(e), f'a zip with no table: {e}')
+    check(_retry_now('failed: KeyError: "There is no item named \'xl/workbook.xml\' in the archive"'),
+          'fix 3: lists that failed as a zipped shapefile are read again on --resume')
     # --- polite fetcher with a fake clock
     clock, waits, calls = [0.0], [], []
 
