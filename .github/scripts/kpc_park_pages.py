@@ -39,6 +39,31 @@ def park_row(row):
             'lat': row[5], 'lon': row[6], 'qsos': row[9] or 0}
 
 
+KY_FROM_SAVED = ('US-KY',)
+
+
+def _saved_area(root, area):
+    """POTA's saved park list for one area, as parkinfo rows. Type from data/docs when that has the park."""
+    import gzip
+    f = root / 'pota' / 'saved' / 'parks' / f'{area}.json.gz'
+    if not f.is_file():
+        return {}
+    try:
+        doc = json.loads(gzip.open(f).read().decode('utf-8'))
+    except (OSError, ValueError):
+        return {}
+    kinds = {ref: (row or {}).get('t') or '' for ref, row in ((load_json(root / 'docs' / f'{area}.json', {}) or {}).get('parks') or {}).items()}
+    parks = {}
+    for row in doc.get('data') or []:
+        ref = row.get('reference')
+        if not ref:
+            continue
+        parks[ref] = park_row([row.get('name'), row.get('website'), kinds.get(ref, ''), None, None, row.get('latitude'),
+                               row.get('longitude'), row.get('activations'), row.get('attempts'), row.get('qsos')])
+        parks[ref]['area'] = area
+    return parks
+
+
 def load_data(data):
     root = pathlib.Path(data)
     areas = {}
@@ -51,6 +76,14 @@ def load_data(data):
         for ref, row in (doc.get('parks') or {}).items():
             parks[ref] = park_row(row)
             parks[ref]['area'] = area
+        if parks:
+            areas[area] = parks
+    # 19 Nov (Opus): data/parkinfo leaves Kentucky out on purpose (its own bots keep KY), so the first by-hand Kentucky run read
+    # nothing. Kentucky comes from POTA's saved list (data/pota/saved/parks/US-KY.json.gz), its type from data/docs/US-KY.json.
+    for area in KY_FROM_SAVED:
+        if area in areas:
+            continue
+        parks = _saved_area(root, area)
         if parks:
             areas[area] = parks
     web = load_json(root / 'parkinfo-web.json', {})

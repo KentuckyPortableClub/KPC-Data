@@ -411,5 +411,19 @@ ak = R.address_facts('https://maps.example.gov/viewer?center=-150.2,61.2')['coor
 check('fault C: center=<lon>,<lat> is read longitude first, east of -90 too (R-PR9)',
       [(c['lat'], c['lon']) for c in ky] == [(37.8, -84.5)] and [(c['lat'], c['lon']) for c in ak] == [(61.2, -150.2)])
 
+# --- 19 Nov (Opus): Kentucky is not in data/parkinfo; the reader takes it from POTA's saved list ---
+import gzip as _gz, json as _js, tempfile as _tf
+_r = pathlib.Path(_tf.mkdtemp())
+(_r / 'parkinfo').mkdir(); (_r / 'pota/saved/parks').mkdir(parents=True); (_r / 'docs').mkdir()
+(_r / 'parkinfo/US-TN.json').write_text(_js.dumps({'parks': {'US-0019': ['Cumberland Gap', 'https://x.gov', 'NHP', None, None, 36.6, -83.6, 212, 217, 7738]}}))
+with _gz.open(_r / 'pota/saved/parks/US-KY.json.gz', 'wt') as _f:
+    _js.dump({'count': 1, 'data': [{'reference': 'US-1234', 'name': 'Sample Lake State Park', 'website': 'https://parks.ky.gov/x',
+                                    'latitude': 37.1, 'longitude': -85.2, 'activations': 40, 'attempts': 41, 'qsos': 900}]}, _f)
+(_r / 'docs/US-KY.json').write_text(_js.dumps({'parks': {'US-1234': {'n': 'Sample Lake State Park', 't': 'State Park'}}}))
+_areas = PP.load_data(_r)[0]
+check('Kentucky comes from the saved POTA list when parkinfo has no US-KY file',
+      set(_areas) == {'US-TN', 'US-KY'} and _areas['US-KY']['US-1234']['type'] == 'State Park' and _areas['US-KY']['US-1234']['qsos'] == 900
+      and _areas['US-KY']['US-1234']['website'] == 'https://parks.ky.gov/x')
+
 print('ALL PASS' if ok else 'SOME FAILED')
 sys.exit(0 if ok else 1)
