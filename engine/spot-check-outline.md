@@ -1,4 +1,4 @@
-# Spot check: outline (20 random rows of 15358)
+# Spot check: outline (20 random rows of 15376)
 
 For chat 11: open each link and say YES / NO. The engine decides nothing.
 
@@ -122,29 +122,28 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: record 'Bohemian WMA' (PACK-US-MN-forest-27); pin inside; about 664.5 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
 - answer: 
 
-## CA-4549 Grand Codroy Estuary Ramsar Site (CA-NL)
+## CA-6146 Valleyview Trail Network National Recreation Trail (CA-SK)
 - status: candidate
-- tier: T-2
+- tier: T-6
 - band: WEAK
-- record_name: Grand Codroy Estuary
-- url: https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1?f=html
-- record_link: https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1/query?where=OBJECTID%3D428604&outFields=%2A&f=html
-- source_url: https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1/query?geometry=-59.3389%2C47.8375&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- label: WDPA (last resort)
-- pin_m: 0
-- why: record 'Grand Codroy Estuary' (WDPA-last-resort-WDPA_v0); pin inside; about 1879.8 acres; Rule G: LIKELY (names equal once kind words are stripped; WDPA (last resort): never SURE); size unknown; confidence: weak
+- record_name: Valleyview Trail - Easy Loop
+- url: https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/Trails_Sentiers_TIMS_SGIS_ln_vw/FeatureServer/0?f=html
+- record_link: https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/Trails_Sentiers_TIMS_SGIS_ln_vw/FeatureServer/0/query?where=OBJECTID%3D611&outFields=%2A&f=html
+- source_url: https://services2.arcgis.com/wCOMu5IS7YdSyPNx/arcgis/rest/services/Trails_Sentiers_TIMS_SGIS_ln_vw/FeatureServer/0/query?geometry=-106.719%2C53.7105&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- pin_m: 17
+- why: record 'Valleyview Trail - Easy Loop' (PACK-CA-SK-trail-74); pin 17 m from the edge; Rule G: LIKELY (names overlap); size unknown; confidence: weak
 - answer: 
 
-## CA-4887 Sir John Johnson House National Historic Site (CA-ON)
+## US-0042 Fort Gaines National Historic Site (US-AL)
 - status: found
-- tier: T-1
+- tier: T-2
 - band: STRONG
-- record_name: Sir John Johnson House National Historic Site
-- url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4?f=html
-- record_link: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D4694&outFields=%2A&f=html
-- source_url: https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?geometry=-74.579%2C45.1449&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
+- record_name: Fort Gaines
+- url: https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1?f=html
+- record_link: https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?where=OBJECTID%3D379681&outFields=%2A&f=html
+- source_url: https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?geometry=-88.0756%2C30.2483&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: record 'Sir John Johnson House National Historic Site' (PACK-CA-NB-land-73); pin inside; about 8.5 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
+- why: record 'Fort Gaines' (Q-1678); pin inside; about 31.5 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
 - answer: 
 
 ## US-13275 Pioneer Memorial Park State Historical Monument (US-NV)
@@ -231,16 +230,15 @@ For chat 11: open each link and say YES / NO. The engine decides nothing.
 - why: record 'Louis S. St. Laurent' (Q-1371); pin 25 m from the edge; Rule G: SURE (names equal once kind words are stripped (R-G12: pin within 150 m)); size unknown; confidence: likely
 - answer: 
 
-## US-5805 Shash Jáa BLM Special Recreation Management Area (US-UT)
-- status: candidate
-- tier: T-3
-- band: WEAK
-- record_name: Bears Ears National Monument - Shash Jáa Unit
-- url: https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1?f=html
-- record_link: https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1/query?where=OBJECTID%3D507006&outFields=%2A&f=html
-- source_url: https://services5.arcgis.com/Mj0hjvkNtV7NRhA7/arcgis/rest/services/WDPA_v0/FeatureServer/1/query?geometry=-109.633%2C37.524&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
-- label: WDPA (last resort)
+## CA-6564 Blanche Provincial Park (CA-NS)
+- status: found
+- tier: T-1
+- band: STRONG
+- record_name: Blanche Provincial Park
+- url: https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0?f=html
+- record_link: https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0/query?where=OBJECTID%3D104&outFields=%2A&f=html
+- source_url: https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0/query?geometry=-65.4183%2C43.5272&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json
 - pin_m: 0
-- why: record 'Bears Ears National Monument - Shash Jáa Unit' (WDPA-last-resort-WDPA_v0); pin inside; about 142410.0 acres; Rule G: LIKELY (names overlap); size unknown; confidence: weak
+- why: record 'Blanche Provincial Park' (PACK-CA-NS-park-80); pin inside; about 62.9 acres; Rule G: SURE (names equal once kind words are stripped); size unknown; confidence: sure
 - answer: 
 

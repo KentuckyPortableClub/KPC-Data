@@ -228,6 +228,16 @@
    "url": "https://ogc.nature.scot/geoserver/protectedareas/wfs?service=WFS&request=DescribeFeatureType&version=2.0.0&typeNames=protectedareas%3Asssi",
    "agency": "NatureScot",
    "status": "POSSIBLE MATCH (engine 2026-11-20)"
+  },
+  "GB-4609": {
+   "url": "https://ogc.nature.scot/geoserver/wfs?service=WFS&request=DescribeFeatureType&version=2.0.0&typeNames=scottishforestry%3ANational_Forest_Estate_Ownership_Scotland",
+   "agency": "Forestry and Land Scotland - National Forest Estate Ownership Scotland (scottishforestry: on NatureScot geoserver)",
+   "status": "FOUND (engine 2026-11-20)"
+  },
+  "GB-6950": {
+   "url": "https://ogc.nature.scot/geoserver/protectedareas/wfs?service=WFS&request=DescribeFeatureType&version=2.0.0&typeNames=protectedareas%3Asssi",
+   "agency": "NatureScot",
+   "status": "FOUND (engine 2026-11-20)"
   }
  }
 }
