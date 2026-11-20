@@ -360,6 +360,18 @@ class FetchError(Exception):
     pass
 
 
+def _retry_now(status):
+    """19 Nov 2026 (owner: "Fix it and use the bots"): a work item that failed only because pypdf was missing is read again on
+    --resume once pypdf can be imported; every other finished item stays done."""
+    if 'pypdf is not installed' not in str(status or ''):
+        return False
+    try:
+        import pypdf  # noqa: F401
+        return True
+    except ImportError:
+        return False
+
+
 class SkipItem(Exception):
     pass
 
@@ -1818,7 +1830,7 @@ def run(args, transport=None, sleep=time.sleep, gap=2.0):
     timed_out = False
     for n, it in enumerate(queue):
         fp = os.path.join(adir, it['key'] + '.json')
-        if it['key'] in state['done'] and os.path.exists(fp):
+        if it['key'] in state['done'] and os.path.exists(fp) and not _retry_now(state['done'][it['key']]):
             continue
         if time.monotonic() > deadline:
             timed_out = True
