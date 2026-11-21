@@ -570,23 +570,28 @@ class Manners:
             return path.lower(), p.query
         return pq(a) == pq(b)
 
-    def _try_https_when_http_unreadable(self, u, rng, timeout, head, accept):
+    def _try_https_when_http_unreadable(self, u, rng, timeout, head, accept, deadline=None, max_time=None):
         """If http robots.txt is unreadable, try the https form when those rules allow the page
         and the https response is the same page. Never fetches a disallowed https URL."""
         hu = self.https_form(u)
         if not hu:
             return None
-        st, hd, body, final = self.get(hu, rng=rng, timeout=timeout, head=head, accept=accept)
+        st, hd, body, final = self.get(hu, rng=rng, timeout=timeout, head=head, accept=accept,
+                                       deadline=deadline, max_time=max_time)
         if self.same_https_page(u, st, body, final, head=head):
             self.stat['https_upgrade'] = self.stat.get('https_upgrade', 0) + 1
             return st, hd, body, final
         return None
 
 
-    def get(self, u, rng=None, timeout=40, head=False, accept='text/html,application/pdf,application/json,*/*;q=0.8'):
+    def get(self, u, rng=None, timeout=40, head=False, accept='text/html,application/pdf,application/json,*/*;q=0.8',
+             deadline=None, max_time=None):
         """Polite GET. Returns (status, headers dict, body bytes, final url). rng=(a,b) reads only those bytes.
         status = int HTTP status, or 'rest' / 'robots' / 'robots-unreadable' / 'deferred' / 'crawl-delay' / 'err:...' (next_run() tells which mean
-        'try again next run')."""
+        'try again next run').
+        deadline is a unix time; max_time is seconds from now. When either is set, the download's
+        wall-clock time is capped (a slow trickle cannot run on past the cap). With both left off,
+        the idle socket timeout is the only limit, as before."""
         h = self.host(u)
         hok, hwhy = HR.host_ok(u)
         if not hok:   # Nov 10: the ONE pre-request check (kpc_host_rules.py), before rest / robots / pacing / cache: no request of any kind
@@ -598,7 +603,7 @@ class Manners:
             # addendum (Quality's api.pota.app slip, Nov 3): once robots.txt said no to the site or could not be read, a request
             # already queued for that host is dropped here, before any pacing or network
             if bl[0] == 'robots-unreadable':
-                up = self._try_https_when_http_unreadable(u, rng, timeout, head, accept)
+                up = self._try_https_when_http_unreadable(u, rng, timeout, head, accept, deadline=deadline, max_time=max_time)
                 if up is not None:
                     return up
             self.stat['dropped_queued'] = self.stat.get('dropped_queued', 0) + 1; self.dropped.append((safe_url(u), bl[0]))
@@ -610,7 +615,7 @@ class Manners:
             if st == 'robots':
                 self.need(u, 'robots', 'robots.txt does not allow it (a 403 counts as no)')
                 return st, {}, b'', u
-            up = self._try_https_when_http_unreadable(u, rng, timeout, head, accept)
+            up = self._try_https_when_http_unreadable(u, rng, timeout, head, accept, deadline=deadline, max_time=max_time)
             if up is not None:
                 return up
             return st, {}, b'', u
@@ -629,13 +634,26 @@ class Manners:
         tried403 = False
         hdr = {'User-Agent': self.ua, 'Accept': accept, 'Accept-Language': 'en-US,en;q=0.8,fr;q=0.5'}
         if rng: hdr['Range'] = f'bytes={rng[0]}-{rng[1]}'
+        end = None
+        if max_time is not None:
+            end = time.time() + float(max_time)
+        if deadline is not None:
+            end = float(deadline) if end is None else min(end, float(deadline))
         for attempt in range(3):
+            if end is not None and time.time() >= end:
+                return 'err:deadline', {}, b'', u
             if not self._budget(h, slow): return 'deferred', {}, b'', u
             self._pace(h, cd, self.strike.get(h, 0))
             try:
+                sock_timeout = timeout if end is None else max(0.01, min(float(timeout), end - time.time()))
                 req = urllib.request.Request(u, headers=hdr, method='HEAD' if head else 'GET')
-                with urllib.request.urlopen(req, timeout=timeout) as r:
-                    body = b'' if head else r.read(self.read_max)
+                with urllib.request.urlopen(req, timeout=sock_timeout) as r:
+                    if head:
+                        body = b''
+                    elif end is None:
+                        body = r.read(self.read_max)
+                    else:
+                        body = read_capped(r, self.read_max, end)
                     hd = {k.lower(): v for k, v in r.headers.items()}
                     if cacheable and r.status == 200: self._cache_write(ck, r.status, hd, body, r.geturl())
                     return r.status, hd, body, r.geturl()
@@ -658,12 +676,19 @@ class Manners:
                     self.strike[h] = self.strike.get(h, 0) + 1; self.stat['strikes'] += 1
                     if self.strike[h] >= self.strikes_out: self.dead[h] = time.time() + self.rest_s; return 'rest', {}, b'', u
                     time.sleep(min(max(ra, 20 * (attempt + 1)), max(120, cd))); continue
-                if e.code == 416 and rng: return self.get(u, None, timeout, head, accept)
+                if e.code == 416 and rng: return self.get(u, None, timeout, head, accept, deadline=deadline, max_time=max_time)
                 return e.code, ehd, b'', u
             except HostRuleRefused as e:   # a redirect hop the host rules refuse: no request to it, no strike, never retried
                 self.stat['host_rule'] += 1; self.need(u, 'host-rule', str(e.reason))
                 return 'host-rule', {}, b'', u
-            except (urllib.error.URLError, TimeoutError, OSError, ValueError) as e:
+            except TimeoutError as e:
+                if str(e) == 'deadline' or (end is not None and time.time() >= end):
+                    return 'err:deadline', {}, b'', u
+                self.strike[h] = self.strike.get(h, 0) + 1; self.stat['strikes'] += 1; self.stat['errors'] += 1
+                if self.strike[h] >= self.strikes_out: self.dead[h] = time.time() + self.rest_s; return 'rest', {}, b'', u
+                if attempt == 2: return 'err:' + str(e)[:60], {}, b'', u
+                time.sleep(10 * (attempt + 1))
+            except (urllib.error.URLError, OSError, ValueError) as e:
                 self.strike[h] = self.strike.get(h, 0) + 1; self.stat['strikes'] += 1; self.stat['errors'] += 1
                 if self.strike[h] >= self.strikes_out: self.dead[h] = time.time() + self.rest_s; return 'rest', {}, b'', u
                 if attempt == 2: return 'err:' + str(e)[:60], {}, b'', u
@@ -728,6 +753,30 @@ def looks_binary(txt):
 
 
 _BROWSER = {}
+
+
+
+def read_capped(fp, limit, deadline):
+    """Read at most `limit` bytes from fp, stopping at unix time `deadline`.
+
+    urllib's timeout only applies while the site is silent, so a slow trickle
+    of a large file can run for many minutes. This checks the clock after each
+    chunk and raises TimeoutError('deadline') when time is up. A partial body
+    is not returned: the caller treats it as a failed read and keeps earlier
+    data exactly.
+    """
+    chunks = []
+    n = 0
+    while n < limit:
+        if deadline is not None and time.time() >= deadline:
+            raise TimeoutError('deadline')
+        want = limit - n if limit - n < 65536 else 65536
+        chunk = fp.read(want)
+        if not chunk:
+            break
+        chunks.append(chunk)
+        n += len(chunk)
+    return b''.join(chunks)
 
 
 def browser_text(u, M, timeout_ms=30000):
