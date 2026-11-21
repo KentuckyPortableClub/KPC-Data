@@ -520,6 +520,7 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
                 fact['inside_of'] = []
                 fact['location'] = R._blank_location()
                 fact['name']['best'] = None
+                fact['confirm'] = R.confirm_block(fact, url, main.get('final') or '', '')
                 fact['questions'] = R.questions_for(fact)
             fact['questions'] = R.questions_for(fact)
             drafts = R.evidence_drafts(fact)
@@ -674,6 +675,32 @@ def pick_walk_area(areas, done, state, area_refs=None):
     return out, why, state
 
 
+CONFIRM_FIELDS = ('agency_id', 'size', 'manager', 'address', 'coords', 'map_link')
+
+
+def confirm_counts(facts_by_area):
+    """Public counts only: per state and per agency web host, how many parks have each confirming fact (and how many unclear)."""
+    by_state, by_agency = {}, {}
+    for area, parks in facts_by_area.items():
+        for ref, fact in parks.items():
+            c = (fact or {}).get('confirm')
+            if not isinstance(c, dict):
+                continue
+            host = R.base_host((fact.get('page') or {}).get('final_host') or (fact.get('page') or {}).get('host') or '') or '(no host)'
+            for bucket, key in ((by_state, area), (by_agency, host)):
+                row = bucket.setdefault(key, {'parks': 0})
+                row['parks'] += 1
+                for k in CONFIRM_FIELDS:
+                    v = c.get(k)
+                    if isinstance(v, dict) and v.get('unclear'):
+                        row[k + ' unclear'] = row.get(k + ' unclear', 0) + 1
+                    elif v:
+                        row[k] = row.get(k, 0) + 1
+    return {'about': 'Confirming facts the page reader found, counted by state and by agency web host. Counts only.',
+            'confirm': R.CONFIRM, 'by_state': dict(sorted(by_state.items())),
+            'by_agency': dict(sorted(by_agency.items(), key=lambda kv: -kv[1]['parks']))}
+
+
 def write_facts(out_dir, facts_by_area):
     root = pathlib.Path(out_dir)
     for area, parks in facts_by_area.items():
@@ -749,6 +776,7 @@ def _finish(args, facts, order, lists, state, state_path, today, requests, old_f
     full = list(order) + [{'ref': ref, 'area': area, 'tier': 9, 'why': ''}
                           for area, parks in facts.items() for ref in parks if ref not in seen]
     W.write_tables(args.out, facts, full, lists, today)
+    save_json(root / 'confirm-counts.json', confirm_counts(facts))
     W.append_changes(root / 'changes.csv', changes)
     lines = W.render_summary(facts, order, state, today, requests)
     (root / 'summary.md').write_text('\n'.join(lines) + '\n', encoding='utf-8')

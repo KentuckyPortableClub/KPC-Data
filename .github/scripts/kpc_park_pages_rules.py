@@ -13,6 +13,7 @@ from kpc_docs_bot import gov_of, map_score, host_of, base_host, via_of  # noqa: 
 from kpc_manners import page_text, links_in, pdf_text, next_run, robots_block  # noqa: E402
 
 READER = 'v1'
+CONFIRM = 'confirm 2026-11-21'
 QUOTE_MAX = 200
 REFRESH_DAYS = 30
 REFUSAL_DAYS = 30
@@ -1176,7 +1177,10 @@ def build_facts(ref, area, pota, area_parks, asked, pages, today, shared_with, o
         for p in pages:
             if p.get('kind') == 'script-built':
                 continue
-            sizes.extend(sizes_labelled(p.get('text') or '', pota.get('name') or name.get('best') or '', pota.get('type') or ''))
+            src = p.get('final') or p.get('url') or ''
+            for row in sizes_labelled(p.get('text') or '', pota.get('name') or name.get('best') or '', pota.get('type') or ''):
+                row['source_url'] = src if src and not is_wdpa(src) else ''   # the page the figure came from (21 Nov)
+                sizes.append(row)
         sizes = _dedupe_sizes(sizes)
     elif read_blocks and unofficial and name.get('best'):
         pass
@@ -1216,6 +1220,7 @@ def build_facts(ref, area, pota, area_parks, asked, pages, today, shared_with, o
         'unofficial': unofficial,
     }
     fact['name']['vs_pota'] = name.get('vs_pota')
+    fact['confirm'] = confirm_block(fact, asked.get('url') or '', main.get('final') or '', main_text if read_blocks else '')
     fact['questions'] = questions_for(fact)
     drafts = evidence_drafts(fact)
     fact['evidence_draft'] = drafts[0] if drafts else None
@@ -1350,3 +1355,148 @@ def _maps(main, pota, pages):
 
 def park_radius_note():
     return 'radius from a clean total size only; no size means no PIN_FAR question'
+
+
+# ---------------------------------------------------------------------------------------------------------------------
+# Confirming facts (21 Nov 2026, KPC owner): what confirms a park by more than its name, each with a short quote or its
+# address, or silence. Nothing here guesses: an id comes only from a known agency address rule (the link bot's rules) or a
+# labelled line on the page; a size only from a clean total with the page it came from; a manager only from the agency's
+# own host or a "managed by" sentence that is not site chrome. WDPA is never read.
+WDPA_RX = re.compile(r'protectedplanet|wdpa', re.I)
+PAGE_ID_RX = re.compile(r'(?m)^[ \t]*(?P<label>(?:park|unit|site|property|area|facility|reserve|refuge|wma|forest)\s+'
+                        r'(?:id|code|number|no\.?|#))[ \t]*[:#][ \t]*(?P<value>[A-Z0-9][A-Z0-9-]{1,14})[ \t]*$', re.I)
+ADDR_ORDER = {'park': 0, 'visitor-centre': 1, 'office': 2, 'mailing': 3, 'unknown': 4}
+_LI = None
+
+
+def is_wdpa(url):
+    return bool(WDPA_RX.search(str(url or '')))
+
+
+def _link_rules():
+    """The link bot's address rules (draft/tools/kpc_link_ids): the one place that knows which address part is an agency id."""
+    global _LI
+    if _LI is None:
+        here = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'draft', 'tools', 'kpc_link_ids')
+        if here not in sys.path:
+            sys.path.insert(0, here)
+        try:
+            import kpc_link_ids as LI
+            _LI = LI
+        except ImportError:
+            _LI = False
+    return _LI or None
+
+
+def id_from_address(url):
+    """(id kind, value) from a known agency's page address, or None. Never a guess (no rule, no id)."""
+    LI = _link_rules()
+    if not LI or not url or is_wdpa(url):
+        return None
+    pu, host, segs = LI.split_link(url)
+    if not pu:
+        return None
+    got = LI.id_rules(host, pu, segs)
+    return (got[0], str(got[1]).strip()) if got and str(got[1] or '').strip() else None
+
+
+def ids_on_page(text):
+    """[(label, value, quote)] for labelled id lines ('Park ID: 1234'), one per line. Free text is never read as an id."""
+    out = []
+    for m in PAGE_ID_RX.finditer(text or ''):
+        v = m.group('value').strip()
+        if not re.search(r'\d', v) and len(v) < 3:
+            continue
+        out.append((' '.join(m.group('label').split()).lower(), v.upper(), clip(m.group(0).strip(), 80)))
+    return out
+
+
+def confirm_agency_id(asked_url, final_url, text):
+    """The agency's park id: from the official address (asked or final), or a labelled line on the page. Two different ids,
+    or an address id the page contradicts, are UNCLEAR and no value is kept."""
+    seen = []
+    for u in (asked_url, final_url):
+        got = id_from_address(u)
+        if got and got not in [(k, v) for k, v, _f, _q in seen]:
+            seen.append((got[0], got[1], 'address', u))
+    page = ids_on_page(text)
+    vals = {(k, v) for k, v, _f, _q in seen}
+    if len({v for _k, v in vals}) > 1:
+        return {'unclear': 'the address and where it led give two different ids'}
+    if seen:
+        kind, val, _f, url = seen[0]
+        for label, pv, quote in page:
+            if pv.lstrip('0') != val.upper().lstrip('0') and re.search(r'\d', pv) and re.search(r'\d', val):
+                return {'unclear': 'the page states another id than its address', 'quote': quote}
+        both = any(pv.lstrip('0') == val.upper().lstrip('0') for _l, pv, _q in page)
+        return {'kind': kind, 'value': val, 'from': 'address and page' if both else 'address', 'url': url}
+    if page:
+        if len({pv for _l, pv, _q in page}) > 1:
+            return {'unclear': 'the page states two different ids'}
+        label, pv, quote = page[0]
+        return {'kind': f'page label: {label}', 'value': pv, 'from': 'page', 'quote': quote}
+    return None
+
+
+def confirm_size(sizes):
+    """One clean total size that names the page it came from, or None. Two different clean totals: no size (unclear)."""
+    clean = [s for s in sizes or [] if s.get('total') and s.get('clean') and s.get('source_url') and not is_wdpa(s['source_url'])]
+    if not clean:
+        return None
+    acres = {round(float(s['acres']), 1) for s in clean}
+    if len(acres) > 1 and (max(acres) - min(acres)) > max(0.6, 0.005 * max(acres)):
+        return {'unclear': 'the page gives two different total sizes'}
+    s = clean[0]
+    return {'acres': s['acres'], 'as': s.get('as') or '', 'quote': s.get('quote') or s.get('line') or '', 'source_url': s['source_url'],
+            'label': s.get('label') or ''}
+
+
+def confirm_manager(mgr):
+    """The managing agency: the agency's own host, or a 'managed by' sentence that is not site chrome."""
+    if not mgr:
+        return None
+    if mgr.get('agency'):
+        return {'agency': mgr['agency'], 'from': 'the agency\'s own web host', 'quote': mgr.get('quote') or ''}
+    q, office = mgr.get('quote') or '', mgr.get('office') or ''
+    if q and not is_menu_chrome(q) and not is_menu_chrome(office) and len(office) <= 80:
+        return {'agency': office, 'from': 'a managed-by sentence', 'quote': q}
+    return None
+
+
+def confirm_place(loc):
+    """The best address (park first, then visitor centre, office, mailing) and the best point (a park point, not far from
+    POTA's pin; else a visitor centre). An unknown-role point is not kept."""
+    addrs = sorted(loc.get('addresses') or [], key=lambda a: ADDR_ORDER.get(a.get('role'), 9))
+    addr = {'text': addrs[0]['text'], 'role': addrs[0]['role']} if addrs and addrs[0].get('text') else None
+    pts = [c for c in loc.get('coords') or [] if c.get('role') in ('park', 'visitor-centre') and not c.get('pin_far')]
+    pts.sort(key=lambda c: (c.get('role') != 'park',))
+    pt = None
+    if pts:
+        c = pts[0]
+        pt = {'lat': c['lat'], 'lon': c['lon'], 'role': c['role'], 'from': c.get('from') or '', 'km_from_pin': c.get('km_from_pin')}
+    return addr, pt
+
+
+def confirm_map_link(maps):
+    """The official map: a map link that names the park, on an agency host, never a WDPA site. A file before a web map."""
+    rows = [m for m in maps or [] if m.get('names_park') and official_host(m.get('url') or '') and not is_wdpa(m.get('url'))]
+    rows.sort(key=lambda m: ({'pdf': 0, 'gis': 1, 'image': 2}.get(m.get('kind'), 3),))
+    if not rows:
+        return None
+    m = rows[0]
+    return {'url': m['url'], 'kind': m.get('kind') or '', 'text': clip(m.get('text') or '', 80)}
+
+
+def confirm_block(fact, asked_url, final_url, main_text):
+    """fact['confirm']: the confirming facts, each silent (None) when the page does not state it plainly."""
+    if fact.get('unofficial'):
+        return {'agency_id': None, 'size': None, 'manager': None, 'address': None, 'coords': None, 'map_link': None}
+    addr, pt = confirm_place(fact.get('location') or {})
+    own = (fact.get('own_page') or {}).get('is') == 'own'
+    shared = {'unclear': 'the page is not this park\'s own (shared or a list)'}
+    # an id, a size, a point or a map on a page several parks share may be a sibling's: kept only on the park's own page
+    return {'agency_id': confirm_agency_id(asked_url, final_url, main_text) if own else (shared if id_from_address(asked_url) else None),
+            'size': confirm_size(fact.get('sizes')) if own else None,
+            'manager': confirm_manager(fact.get('manager')),
+            'address': addr, 'coords': pt if own else None,
+            'map_link': confirm_map_link(fact.get('maps')) if own else None}
