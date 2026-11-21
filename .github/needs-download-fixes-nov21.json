@@ -1,0 +1,42 @@
+{
+ "about": "Status fixes for data/needs-download.json (KPC owner, 2026-11-21). Applied with: python3 .github/scripts/kpc_needs_download.py merge .github/needs-download-fixes-nov21.json . Each row closes an open row whose layer is already on the box (a hand file on the KPC-Links boundary-cache release); nothing is downloaded. The Ohio ODNR and Yukon rows stay open: no saved 14 Nov file is on boundary-cache or intake-files. The owner's PC holds the 14 Nov saves (store tool have/hand-nov14: ODNR_Lands for the six sgoh layers, two Yukon parks files); the rows close once those are uploaded to intake-files.",
+ "format": 1,
+ "rows": [
+  {
+   "added": "2026-11-21",
+   "area": "W-PF",
+   "check": "person",
+   "expected": null,
+   "have": null,
+   "host": "services.arcgis.com",
+   "id": "W-PF|h210",
+   "layer": "h210",
+   "note": "already on the box: boundary-cache hand-W-PF.h210.geojson.gz (saved 11 Nov); needs the merge into the key, not a download",
+   "page": "https://www.tefenua.data.gov.pf/datasets/ef2bdc8e55f049318a3888f8134349b0_0/about",
+   "source": "needs-download fixes (21 Nov)",
+   "src": "h210",
+   "status": "done",
+   "url": "https://services.arcgis.com/L4H4rU26VyhEF588/arcgis/rest/services/PGEM_Aires_marines_prot%C3%A9g%C3%A9es_(TeFenua)/FeatureServer/0",
+   "who": "person",
+   "why": "an official download exists for a layer a bot may not read (saved copies only)"
+  },
+  {
+   "added": "2026-11-21",
+   "area": "",
+   "check": "",
+   "expected": null,
+   "have": null,
+   "host": "services.arcgis.com",
+   "id": "|sgilc",
+   "layer": "sgilc",
+   "note": "already on the box: boundary-cache hand-US-IL.sgilc.geojson.gz (saved 11 Nov); needs the merge into the key, not a download",
+   "page": "https://hub.arcgis.com/search?q=HolmanConservationPropertiesUpdate%207%2018",
+   "source": "needs-download fixes (21 Nov)",
+   "src": "",
+   "status": "done",
+   "url": "https://services.arcgis.com/b9DHj1BjfdLLFv11/arcgis/rest/services/HolmanConservationPropertiesUpdate_7_18/FeatureServer/2",
+   "who": "person",
+   "why": "KPC park-info engine: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included) (services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included): a person downloads it in a browser)"
+  }
+ ]
+}
