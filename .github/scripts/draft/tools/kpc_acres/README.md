@@ -43,7 +43,7 @@ For those the research row names the table (`pdf_table`), and the tool keeps onl
 1. only pages that carry the table title are read;
 2. a row is a name followed by cells; every cell is a number, a `$` amount or a short note mark, otherwise the line is not read;
 3. the size is the number `pdf_column` names (`last` = the row's last acre number);
-4. with `pdf_sum_check`, the size must equal the sum of the row's other acre numbers (to the cent), otherwise the row is not read;
+4. with `pdf_sum_check`, the size must equal the sum of the row's other acre numbers, otherwise the row is not read (the only slack is rounding: half a cent for each printed number);
 5. a state name alone on a line heads the rows under it; a "... Total" row closes them, and the rows read must add up to it;
 6. a name with a `(n)` note is one unit printed in several places (FWS: "(1) Also in Georgia"). Its rows are added and given to
    one park only when two or more of them were read, every block of the table added up (so no part can be missing) and the
