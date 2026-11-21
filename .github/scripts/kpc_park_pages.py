@@ -12,6 +12,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import kpc_park_pages_rules as R  # noqa: E402
 import kpc_park_pages_work as W  # noqa: E402
 import kpc_not_sure as NS  # noqa: E402
+REPO_ROOT = pathlib.Path(__file__).resolve().parents[2]
 from kpc_manners import Manners, next_run, robots_block  # noqa: E402
 
 JOB = 'KPC park page reader'
@@ -857,8 +858,11 @@ def _prepare(args):
     def choose(ref, row):
         return choose_link(ref, row, web, docs)[0]
 
+    priority = W.private_refs(getattr(args, 'priority_file', ''), REPO_ROOT)   # 21 Nov: the likely-mismatch list (private)
+    confirmed = W.private_refs(getattr(args, 'confirmed_file', ''), REPO_ROOT)   # parks confirmed by their agency id (private)
     order = W.build_worklist(areas, choose, keys, lists, refs, state, today, areas_only=areas_only,
-                             refresh_days=args.refresh_days, not_sure=ns_rows)
+                             refresh_days=args.refresh_days, not_sure=ns_rows, priority=priority, confirmed=confirmed,
+                             confirmed_refresh_days=getattr(args, 'confirmed_refresh_days', W.CONFIRMED_REFRESH_DAYS))
     return areas, web, docs, truth, state, state_path, today, areas_only, lists, order
 
 
@@ -880,7 +884,7 @@ def _finish(args, facts, order, lists, state, state_path, today, requests, old_f
     W.append_changes(root / 'changes.csv', changes)
     lines = W.render_summary(facts, order, state, today, requests)
     (root / 'summary.md').write_text('\n'.join(lines) + '\n', encoding='utf-8')
-    save_json(root / 'worklist.json', {'date': today, 'order': order})
+    save_json(root / 'worklist.json', W.public_order(order, today))   # 21 Nov: private-list parks are counted, not named
     save_json(root / 'run.json', {'reader': R.READER, 'date': today, 'requests': requests,
               'parks': sum(len(v) for v in facts.values()), 'left': len(state.get('left') or []),
               'stopped': state.get('stopped') or ''})
@@ -900,10 +904,10 @@ def _finish(args, facts, order, lists, state, state_path, today, requests, old_f
 def cmd_worklist(args):
     areas, web, docs, truth, state, state_path, today, areas_only, lists, order = _prepare(args)
     if args.out:
-        save_json(pathlib.Path(args.out) / 'worklist.json', {'date': today, 'order': order})
+        save_json(pathlib.Path(args.out) / 'worklist.json', W.public_order(order, today))
     if not args.quiet:
         print(f'Worklist: {len(order)} parks. Lists: {len(lists)}.')
-        for row in order[:20]:
+        for row in W.public_order(order)['order'][:20]:
             print(f"{row['tier']} {row['ref']} {row['why']}")
         if len(order) > 20:
             print(f'... {len(order) - 20} more')
@@ -1270,6 +1274,9 @@ def main(argv=None):
     p.add_argument('--lists', default='')
     p.add_argument('--lists-done', default='')
     p.add_argument('--not-sure', default='')
+    p.add_argument('--priority-file', default='', help='PRIVATE list of parks to read first (the likely mismatches); never a repo file')
+    p.add_argument('--confirmed-file', default='', help='PRIVATE list of parks confirmed by agency id: read last, then yearly')
+    p.add_argument('--confirmed-refresh-days', type=int, default=W.CONFIRMED_REFRESH_DAYS)
     p.add_argument('--html', default='')
     p.add_argument('--pc', action='store_true')
     p.add_argument('--n', type=int, default=40)
