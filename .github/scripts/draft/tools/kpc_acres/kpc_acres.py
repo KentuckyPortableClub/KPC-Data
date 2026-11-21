@@ -368,6 +368,8 @@ def _retry_now(status):
         return True   # a PDF list refused only because the research named a spreadsheet column (fixed the same night)
     if re.search(r"failed: size column '.*' not found", str(status or '')):
         return True   # 20 Nov 2026 fix 1: the research's size-column note is now read as column names
+    if 'failed: no name column found' in str(status or ''):
+        return True   # 20 Nov 2026 fix 2: the name column can now come from the research's query fields
     if 'pypdf is not installed' not in str(status or ''):
         return False
     try:
@@ -1433,6 +1435,25 @@ def auto_name(headers):
     return None
 
 
+def name_from_query(url, headers, recs, skip=()):
+    """20 Nov 2026: when no column is called a name (NC 'GML_HAB', Utah 'label_state'), take the first field the
+    research's own query asked for (outFields=...) that holds words: researchers list the name field first.
+    Size, id, date and 'skip' columns are passed over."""
+    q = urllib.parse.parse_qs(urllib.parse.urlsplit(url or '').query)
+    fields = [f.strip() for v in q.get('outFields', q.get('outfields', [])) for f in v.split(',') if f.strip()]
+    for f in fields:
+        if f == '*':
+            continue
+        h = resolve(headers, f)
+        if h is None or h in skip or SIZE_HEADER.search(str(h)) or ID_HDR.search(str(h)) or ID_BAD.search(str(h)) \
+                or re.search(r'date|year|edit|type|desig|own|county|region|status', str(h), re.I):
+            continue
+        vals = [r.get(h) for r in recs[:50] if r.get(h) not in (None, '')]
+        if vals and sum(1 for v in vals if isinstance(v, str) and re.search(r'[A-Za-z]{3}', v)) >= 0.8 * len(vals):
+            return h
+    return None
+
+
 def auto_size(headers):
     for pat in (r'gis_?acres|^acres$|total_?acres|acreage|acres', r'hectare|(^|_)ha$|area_?ha|^ha$',
                 r'km2|sq_?km|km²', r'sq_?mi|square_?mi', r'^size$|^area$|size|area'):
@@ -1466,6 +1487,8 @@ def extract_rows(recs, cfg):
         raise FetchError(f"size column '{cfg['size_col']}' not found (columns: {cols_txt})")
     if size_h is None:
         raise FetchError(f'no size column found (columns: {cols_txt})')
+    if name_h is None and not cfg.get('name_col'):
+        name_h = name_from_query(cfg.get('url'), headers, recs, skip=(size_h,))
     if name_h is None:
         raise FetchError(f'no name column found (columns: {cols_txt})')
     unit = cfg.get('unit') or norm_unit(size_h)
@@ -2016,6 +2039,31 @@ def selftest(update=False):
     check(_retry_now("failed: size column 'Acreage (also Acres_GIS)' not found (columns: OBJECTID, Acreage)") and
           not _retry_now('failed: HTTP 405') and not _retry_now('read OK (arcgis)'),
           'fix 1: lists that failed on a size-column note are read again on --resume, nothing else')
+    # --- 20 Nov 2026 fix 2: no column called a name -> the first word field the research's query asked for
+    # (NC Wildlife game lands and both Utah lists failed 'no name column found'). Real columns from the Nov 20 run.
+    for url, recs, want in (
+            ('https://x.example/FeatureServer/22/query?where=1%3D1&outFields=GML_HAB,GML_TRACT,GML_TYPE,GML_OWN,ACRES,'
+             'COUNTY&returnGeometry=false&f=json',
+             [{'OBJECTID': 1, 'GML_HAB': 'Uwharrie', 'GML_TYPE': 'Game Land', 'GML_TRACT': 'T1', 'ACRES': 50000.0,
+               'COUNTY': 'Montgomery', 'Shape__Area': 1.0}], 'GML_HAB'),
+            ('https://x.example/MapServer/3/query?where=agency%3D%27DNR%27&outFields=label_state%2Cdesig%2Cgis_acres%2C'
+             'edit_date&returnGeometry=false&f=json',
+             [{'OBJECTID': 1, 'owner': 'State', 'agency': 'DNR', 'desig': 'State Park', 'edit_date': 1700000000,
+               'gis_acres': 2600.5, 'label_federal': '', 'label_state': 'Dead Horse Point State Park',
+               'county': 'San Juan'}], 'label_state')):
+        try:
+            rr, cc = extract_rows(recs, {'url': url, 'size_col': 'gis_acres' if 'gis_acres' in recs[0] else 'ACRES'})
+            check(cc['name'] == want and rr[0]['name'], f'name from the query fields -> {cc["name"]!r}, want {want!r}')
+        except FetchError as e:
+            check(False, f'name from the query fields ({want}): {e}')
+    try:
+        extract_rows([{'OBJECTID': 1, 'CODE': 7, 'ACRES': 5}],
+                     {'url': 'https://x.example/query?outFields=CODE,ACRES', 'size_col': 'ACRES'})
+        check(False, 'no word field in the query -> still "no name column found"')
+    except FetchError as e:
+        check('no name column' in str(e), f'no word field in the query: {e}')
+    check(_retry_now('failed: no name column found (columns: OBJECTID, GML_HAB, ACRES)'),
+          'fix 2: lists that failed on the name column are read again on --resume')
     # --- polite fetcher with a fake clock
     clock, waits, calls = [0.0], [], []
 
