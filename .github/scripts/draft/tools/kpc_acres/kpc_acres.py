@@ -366,6 +366,18 @@ def _retry_now(status):
     item stays done."""
     if "not found (columns: name, size, unit)" in str(status or ''):
         return True   # a PDF list refused only because the research named a spreadsheet column (fixed the same night)
+    if re.search(r"failed: size column '.*' not found", str(status or '')):
+        return True   # 20 Nov 2026 fix 1: the research's size-column note is now read as column names
+    if 'failed: no name column found' in str(status or ''):
+        return True   # 20 Nov 2026 fix 2: the name column can now come from the research's query fields
+    if "no item named 'xl/workbook.xml'" in str(status or ''):
+        return True   # 20 Nov 2026 fix 3: a zipped shapefile's table is now read
+    if 'cryptography' in str(status or '') and 'required for AES' in str(status or ''):
+        try:   # 20 Nov 2026 fix 4: an AES-locked PDF list is read again once cryptography can be imported
+            import cryptography  # noqa: F401
+            return True
+        except ImportError:
+            return False
     if 'pypdf is not installed' not in str(status or ''):
         return False
     try:
@@ -547,6 +559,73 @@ def read_csv_rows(data):
     return list(csv.reader(io.StringIO(text), dialect))
 
 
+def read_dbf_rows(data, encoding=None):
+    """Tiny stdlib dBase (.dbf) reader: a shapefile's attribute table -> [header] + rows of strings.
+    Deleted records are left out. Text is read with the .cpg's code page when given, else UTF-8, else Latin-1."""
+    if len(data) < 33:
+        raise FetchError('the .dbf table is empty')
+    n = int.from_bytes(data[4:8], 'little')
+    hlen = int.from_bytes(data[8:10], 'little')
+    rlen = int.from_bytes(data[10:12], 'little')
+    fields, off = [], 32
+    while off + 32 <= hlen and data[off] != 0x0D:
+        d = data[off:off + 32]
+        fields.append((d[:11].split(b'\0')[0].decode('ascii', 'replace').strip(), chr(d[11]), d[16]))
+        off += 32
+    if not fields or rlen < 1:
+        raise FetchError('the .dbf table has no columns')
+
+    def txt(b):
+        for enc in ([encoding] if encoding else []) + ['utf-8', 'latin-1']:
+            try:
+                return b.decode(enc)
+            except (UnicodeDecodeError, LookupError):
+                continue
+        return b.decode('latin-1')
+    rows = [[f[0] for f in fields]]
+    for i in range(n):
+        rec = data[hlen + i * rlen: hlen + (i + 1) * rlen]
+        if len(rec) < rlen:
+            break
+        if rec[:1] == b'*':
+            continue
+        pos, row = 1, []
+        for _name, _typ, ln in fields:
+            row.append(txt(rec[pos:pos + ln]).strip())
+            pos += ln
+        rows.append(row)
+    return rows
+
+
+CPG_CODEPAGES = {'ansi 1252': 'cp1252', '1252': 'cp1252', 'utf-8': 'utf-8', 'utf8': 'utf-8', '65001': 'utf-8',
+                 'iso 88591': 'latin-1', '88591': 'latin-1'}
+
+
+def read_zip_rows(data, cfg):
+    """20 Nov 2026: a .zip that is not a spreadsheet (Hawaii, Texas, Virginia DCR send zipped shapefiles): read the
+    table inside it: the biggest .dbf (a shapefile's attribute table), else a .csv, else an .xlsx."""
+    z = zipfile.ZipFile(io.BytesIO(data))
+    names = [i for i in z.infolist() if not i.is_dir() and '__MACOSX' not in i.filename]
+
+    def biggest(ext):
+        c = [i for i in names if i.filename.lower().endswith(ext)]
+        return max(c, key=lambda i: i.file_size) if c else None
+    dbf = biggest('.dbf')
+    if dbf:
+        enc, cpg = None, dbf.filename[:-4] + '.cpg'
+        if cpg in z.namelist():
+            raw = z.read(cpg).decode('ascii', 'ignore').strip().lower()
+            enc = CPG_CODEPAGES.get(re.sub(r'[^a-z0-9 ]', '', raw).strip(), raw or None)
+        return table_to_records(read_dbf_rows(z.read(dbf), enc), cfg)
+    csvf = biggest('.csv')
+    if csvf:
+        return table_to_records(read_csv_rows(z.read(csvf)), cfg)
+    xl = biggest('.xlsx')
+    if xl:
+        return table_to_records(read_xlsx_rows(z.read(xl), cfg.get('sheet')), cfg)
+    raise FetchError('the .zip holds no table to read (.dbf / .csv / .xlsx)')
+
+
 def read_xlsx_rows(data, sheet=None):
     """Tiny stdlib XLSX reader: first sheet (or the named / numbered one) -> list of rows of strings."""
     z = zipfile.ZipFile(io.BytesIO(data))
@@ -642,14 +721,56 @@ def _cell_matches(cell, col):
     return bool(k) and (c == k or (len(k) >= 4 and k in c))
 
 
+def size_col_names(spec):
+    """20 Nov 2026: the research's size column is often a note, not a bare name: 'O_AREA_HA (Official Area (ha))',
+    'RPT_AC (reported acres); CALC_AC (GIS acres)', 'Acreage (also Acres_GIS)', 'p_csize (calculated) / p_rsize
+    (reported)'. Returns the column names in the research's own order (the first one named is tried first), the
+    '(also ...)' names last. A bare name comes back as it is."""
+    if not spec or not isinstance(spec, str):
+        return []
+    s = spec.strip()
+    if not re.search(r'[();/,]', s):
+        return [s]
+    also = []
+    for grp in re.findall(r'\(\s*also\s+([^()]*)\)', s, re.I):
+        also += [a.strip() for a in re.split(r',|;|\bor\b|\band\b', grp) if a.strip()]
+    t = s
+    while re.search(r'\([^()]*\)', t):          # drop the notes in brackets, inner ones first
+        t = re.sub(r'\([^()]*\)', ' ', t)
+    out = []
+    for part in re.split(r';|\s/\s|,', t) + also:
+        part = re.sub(r'\s+', ' ', part).strip(' .:')
+        if part and part not in out:
+            out.append(part)
+    return out or [s]
+
+
+def size_col_tries(spec):
+    """What to look for, in order: the note exactly as written first (so a list that read before reads the same),
+    then the names inside it."""
+    out = [spec] if spec else []
+    for n in size_col_names(spec):
+        if n not in out:
+            out.append(n)
+    return out
+
+
+def size_col_not_official(spec):
+    """True when every column the research names is the drawn shape's area (Shape__Area, SHAPE.AREA): that is a
+    map figure, not an official size, so the list is skipped instead of failing."""
+    names = size_col_names(spec)
+    return bool(names) and all(BAD_SIZE_HEADER.search(n) for n in names)
+
+
 def table_to_records(rows, cfg):
     """Find the header row (first 40 rows), then make dicts. Rows that repeat the header are skipped."""
     rows = [[('' if c is None else str(c)).strip() for c in r] for r in rows]
     hi, want = None, cfg.get('size_col')
+    wants = size_col_tries(want)
     for i, r in enumerate(rows[:40]):
         if len([c for c in r if c]) < 2:
             continue
-        if want and any(_cell_matches(c, want) for c in r):
+        if want and any(_cell_matches(c, w) for c in r for w in wants):
             hi = i
             break
         if not want and any(SIZE_HEADER.search(c) and not BAD_SIZE_HEADER.search(c) and parse_size(c)[0] is None
@@ -892,6 +1013,11 @@ def bytes_to_records(data, fmt, cfg):
     if fmt == 'xlsx':
         if not data.startswith(b'PK'):
             raise FetchError('old .xls (not .xlsx) is not supported; it needs a CSV/XLSX copy')
+        try:
+            if 'xl/workbook.xml' not in zipfile.ZipFile(io.BytesIO(data)).namelist():
+                return read_zip_rows(data, cfg)
+        except zipfile.BadZipFile:
+            raise FetchError('the file starts like a zip but is not a readable zip')
         return table_to_records(read_xlsx_rows(data, cfg.get('sheet')), cfg)
     if fmt == 'html':
         tables = read_html_tables(data)
@@ -906,7 +1032,7 @@ def bytes_to_records(data, fmt, cfg):
             if not recs:
                 continue
             hdr = list(recs[0].keys())
-            ok = any(_cell_matches(h, cfg['size_col']) for h in hdr) if cfg.get('size_col') else \
+            ok = any(_cell_matches(h, w) for h in hdr for w in size_col_tries(cfg['size_col'])) if cfg.get('size_col') else \
                 any(SIZE_HEADER.search(h) and not BAD_SIZE_HEADER.search(h) for h in hdr)
             if ok and (best is None or len(recs) > len(best)):
                 best = recs
@@ -1330,6 +1456,8 @@ def row_to_cfg(r):
         cfg['skip'] = 'page only, no list to read (research says so)'
     elif not url:
         cfg['skip'] = 'no list url in the research row'
+    elif size_col_not_official(cfg['size_col']):
+        cfg['skip'] = 'no official size column (the research names only the drawn shape area)'
     return cfg
 
 
@@ -1353,13 +1481,26 @@ TOTAL_ROW = re.compile(r'^(grand )?(sub)?totals?\b|^all (parks|areas|units)$', r
 
 def resolve(headers, want, auto=None):
     if want:
+        # 20 Nov 2026: last test = the name without a 1-2 letter prefix ('p_csize' -> 'csize'; NH's server
+        # answers with the short names even when the query asks for the long ones)
+        short = re.sub(r'^[a-z]{1,2}_', '', str(want), flags=re.I)
         for test in (lambda h: str(h).lower() == str(want).lower(), lambda h: nkey(h) == nkey(want),
-                     lambda h: len(nkey(want)) >= 3 and nkey(want) in nkey(h)):
+                     lambda h: len(nkey(want)) >= 3 and nkey(want) in nkey(h),
+                     lambda h: short != str(want) and len(nkey(short)) >= 4 and nkey(h) == nkey(short)):
             for h in headers:
                 if test(h):
                     return h
         return None
     return auto(headers) if auto else None
+
+
+def resolve_size(headers, spec):
+    """The first of the research's size columns that the list has (research order)."""
+    for w in size_col_tries(spec):
+        h = resolve(headers, w)
+        if h is not None:
+            return h
+    return None
 
 
 def auto_name(headers):
@@ -1370,6 +1511,25 @@ def auto_name(headers):
     for h in headers:
         if 'name' in str(h).lower() and not re.search(r'county|agency|owner|manag|state|city|contact|file|field|layer',
                                                       str(h), re.I):
+            return h
+    return None
+
+
+def name_from_query(url, headers, recs, skip=()):
+    """20 Nov 2026: when no column is called a name (NC 'GML_HAB', Utah 'label_state'), take the first field the
+    research's own query asked for (outFields=...) that holds words: researchers list the name field first.
+    Size, id, date and 'skip' columns are passed over."""
+    q = urllib.parse.parse_qs(urllib.parse.urlsplit(url or '').query)
+    fields = [f.strip() for v in q.get('outFields', q.get('outfields', [])) for f in v.split(',') if f.strip()]
+    for f in fields:
+        if f == '*':
+            continue
+        h = resolve(headers, f)
+        if h is None or h in skip or SIZE_HEADER.search(str(h)) or ID_HDR.search(str(h)) or ID_BAD.search(str(h)) \
+                or re.search(r'date|year|edit|type|desig|own|county|region|status', str(h), re.I):
+            continue
+        vals = [r.get(h) for r in recs[:50] if r.get(h) not in (None, '')]
+        if vals and sum(1 for v in vals if isinstance(v, str) and re.search(r'[A-Za-z]{3}', v)) >= 0.8 * len(vals):
             return h
     return None
 
@@ -1402,11 +1562,13 @@ def extract_rows(recs, cfg):
     if cfg.get('_pdf'):   # 19 Nov 2026: a PDF list's rows are always name / size / unit (read_pdf_records); the research's
         cfg = dict(cfg, name_col=None, size_col=None)   # spreadsheet column names (e.g. 'TOTAL ACRES') do not apply to them
     name_h = resolve(headers, cfg.get('name_col'), auto_name)
-    size_h = resolve(headers, cfg.get('size_col'), auto_size)
+    size_h = resolve_size(headers, cfg['size_col']) if cfg.get('size_col') else auto_size(headers)
     if cfg.get('size_col') and size_h is None:
         raise FetchError(f"size column '{cfg['size_col']}' not found (columns: {cols_txt})")
     if size_h is None:
         raise FetchError(f'no size column found (columns: {cols_txt})')
+    if name_h is None and not cfg.get('name_col'):
+        name_h = name_from_query(cfg.get('url'), headers, recs, skip=(size_h,))
     if name_h is None:
         raise FetchError(f'no name column found (columns: {cols_txt})')
     unit = cfg.get('unit') or norm_unit(size_h)
@@ -1925,6 +2087,98 @@ def selftest(update=False):
     check(len(cf) == 2 and len(hd) == 2 and {h['_agency'] for h in hd} == {'KDFWR'}, 'dict-of-dicts research shape')
     check({c['area'] for c in cf} == {'US-KY'} and any(c['size_col'] == 'ACRES' for c in cf), 'research field aliases')
     check(next(c for c in cf if c['agency'] == 'KDFWR')['kind'] == 'wma', 'kind word in "type" is a kind, not a format')
+    # --- 20 Nov 2026 fix 1: the research's size column is a note, not a bare name (31 lists failed on this in the
+    # Nov 20 run). Real notes and real column lists from that run.
+    for spec, hdrs, want in (
+            ('O_AREA_HA (Official Area (ha))', ['NAME_E', 'NAME_F', 'IUCN_CAT', 'O_AREA_HA', 'ZONE_ID'], 'O_AREA_HA'),
+            ('RPT_AC (reported acres); CALC_AC (GIS acres)', ['PARCEL_NAME', 'CALC_AC', 'RPT_AC'], 'RPT_AC'),
+            ('Acreage (also Acres_GIS)', ['Area_Name', 'Acreage', 'Acres_GIS'], 'Acreage'),
+            ('Acreage (also Acres_GIS)', ['Area_Name', 'Acres_GIS'], 'Acres_GIS'),
+            ('Acres (GIS); DeedAcres', ['NAME', 'Acres', 'DeedAcres'], 'Acres'),
+            ('ReportedAcres (also GIS_PropertyAcres)', ['PropertyName', 'GIS_PropertyAcres', 'ReportedAcres'],
+             'ReportedAcres'),
+            ('ACRES (also State_Plane_Acres)', ['WMA_NAME', 'HECTARES', 'ACRES', 'State_Plane_Acres'], 'ACRES'),
+            ('GISACRES (also LISTED_AC)', ['ANRUnit', 'LISTED_AC', 'GISACRES'], 'GISACRES'),
+            ('totalacre (also gisacre, tractacre)', ['name', 'gisacre', 'tractacre'], 'gisacre'),
+            ('p_csize (calculated) / p_rsize (reported)', ['name', 'pptype', 'csize', 'rsize'], 'csize'),
+            ('ACRES', ['NAME', 'ACRES'], 'ACRES')):
+        got = resolve_size(hdrs, spec)
+        check(got == want, f'size column note {spec!r} -> {got!r}, want {want!r}')
+    try:
+        rr, cc = extract_rows([{'NAME_E': 'Elk Island', 'O_AREA_HA': '19400'}],
+                              {'size_col': 'O_AREA_HA (Official Area (ha))', 'unit': 'ha'})
+        check(cc['size'] == 'O_AREA_HA' and rr[0]['value'] == 19400 and rr[0]['unit'] == 'ha',
+              'size column note read end to end (hectares kept)')
+    except FetchError as e:
+        check(False, f'size column note read end to end: {e}')
+    for spec in ('Shape__Area (no official acres field)', 'SHAPE.AREA (Web Mercator m², NOT true area)',
+                 'Shape__Area (sq ft, WA State Plane South EPSG:2927; ÷43,560 = acres)'):
+        check(size_col_not_official(spec), f'shape area only -> skipped, not failed: {spec!r}')
+    for spec in ('ACRES', 'Acreage (also Acres_GIS)', 'O_AREA_HA (Official Area (ha))'):
+        check(not size_col_not_official(spec), f'{spec!r} is an official size column')
+    check(_retry_now("failed: size column 'Acreage (also Acres_GIS)' not found (columns: OBJECTID, Acreage)") and
+          not _retry_now('failed: HTTP 405') and not _retry_now('read OK (arcgis)'),
+          'fix 1: lists that failed on a size-column note are read again on --resume, nothing else')
+    # --- 20 Nov 2026 fix 2: no column called a name -> the first word field the research's query asked for
+    # (NC Wildlife game lands and both Utah lists failed 'no name column found'). Real columns from the Nov 20 run.
+    for url, recs, want in (
+            ('https://x.example/FeatureServer/22/query?where=1%3D1&outFields=GML_HAB,GML_TRACT,GML_TYPE,GML_OWN,ACRES,'
+             'COUNTY&returnGeometry=false&f=json',
+             [{'OBJECTID': 1, 'GML_HAB': 'Uwharrie', 'GML_TYPE': 'Game Land', 'GML_TRACT': 'T1', 'ACRES': 50000.0,
+               'COUNTY': 'Montgomery', 'Shape__Area': 1.0}], 'GML_HAB'),
+            ('https://x.example/MapServer/3/query?where=agency%3D%27DNR%27&outFields=label_state%2Cdesig%2Cgis_acres%2C'
+             'edit_date&returnGeometry=false&f=json',
+             [{'OBJECTID': 1, 'owner': 'State', 'agency': 'DNR', 'desig': 'State Park', 'edit_date': 1700000000,
+               'gis_acres': 2600.5, 'label_federal': '', 'label_state': 'Dead Horse Point State Park',
+               'county': 'San Juan'}], 'label_state')):
+        try:
+            rr, cc = extract_rows(recs, {'url': url, 'size_col': 'gis_acres' if 'gis_acres' in recs[0] else 'ACRES'})
+            check(cc['name'] == want and rr[0]['name'], f'name from the query fields -> {cc["name"]!r}, want {want!r}')
+        except FetchError as e:
+            check(False, f'name from the query fields ({want}): {e}')
+    try:
+        extract_rows([{'OBJECTID': 1, 'CODE': 7, 'ACRES': 5}],
+                     {'url': 'https://x.example/query?outFields=CODE,ACRES', 'size_col': 'ACRES'})
+        check(False, 'no word field in the query -> still "no name column found"')
+    except FetchError as e:
+        check('no name column' in str(e), f'no word field in the query: {e}')
+    check(_retry_now('failed: no name column found (columns: OBJECTID, GML_HAB, ACRES)'),
+          'fix 2: lists that failed on the name column are read again on --resume')
+    # --- 20 Nov 2026 fix 3: a zipped shapefile is not a spreadsheet (Hawaii, Texas, Virginia DCR failed with
+    # "There is no item named 'xl/workbook.xml'"): read its .dbf table. The test builds a tiny shapefile zip.
+    def mk_dbf(cols, rows, deleted=()):
+        flds = b''.join(c.encode().ljust(11, b'\0') + b'C' + b'\0' * 4 + bytes([w, 0]) + b'\0' * 14 for c, w in cols)
+        hlen, rlen = 32 + len(flds) + 1, 1 + sum(w for _c, w in cols)
+        head = bytes([3, 126, 11, 20]) + len(rows).to_bytes(4, 'little') + hlen.to_bytes(2, 'little') + \
+            rlen.to_bytes(2, 'little') + b'\0' * 20
+        body = b''.join((b'*' if i in deleted else b' ') + b''.join(str(v).encode('cp1252').ljust(w)[:w]
+                        for v, (_c, w) in zip(r, cols)) for i, r in enumerate(rows))
+        return head + flds + b'\r' + body + b'\x1a'
+    zb = io.BytesIO()
+    with zipfile.ZipFile(zb, 'w') as zf:
+        zf.writestr('parks_state.shp', b'\0' * 100)
+        zf.writestr('parks_state.dbf', mk_dbf([('NAME', 30), ('GIS_Acre', 12)],
+                                              [['Kōke\'e State Park'.replace('ō', 'o'), '4345.2'],
+                                               ['Old Park', '1'], ['Wailua River State Park', '1093.4']],
+                                              deleted={1}))
+        zf.writestr('parks_state.cpg', 'ANSI 1252')
+    try:
+        zr = bytes_to_records(zb.getvalue(), 'xlsx', {'size_col': 'GIS_Acre'})
+        rr, cc = extract_rows(zr, {'size_col': 'GIS_Acre', 'unit': 'acres'})
+        check([r['name'] for r in rr] == ["Koke'e State Park", 'Wailua River State Park'] and
+              rr[1]['value'] == 1093.4 and cc['size'] == 'GIS_Acre', f'zipped shapefile .dbf read: {zr}')
+    except Exception as e:
+        check(False, f'zipped shapefile .dbf read: {type(e).__name__}: {e}')
+    zb2 = io.BytesIO()
+    with zipfile.ZipFile(zb2, 'w') as zf:
+        zf.writestr('readme.txt', 'nothing here')
+    try:
+        bytes_to_records(zb2.getvalue(), 'xlsx', {})
+        check(False, 'a zip with no table should fail plainly')
+    except FetchError as e:
+        check('no table' in str(e), f'a zip with no table: {e}')
+    check(_retry_now('failed: KeyError: "There is no item named \'xl/workbook.xml\' in the archive"'),
+          'fix 3: lists that failed as a zipped shapefile are read again on --resume')
     # --- polite fetcher with a fake clock
     clock, waits, calls = [0.0], [], []
 
@@ -2065,6 +2319,25 @@ def selftest(update=False):
             check(any(r['name'] == 'Blanton Forest' and r['size'] == '3,124' for r in recs), 'PDF table read with pypdf')
             check(not any(r['name'].startswith('Bad Branch') for r in recs), 'unsure PDF row skipped')
             pdf_note = 'PDF file read with pypdf'
+            # 20 Nov 2026 fix 4: an AES-locked PDF with no password to open it (Arizona's audit report) needs the
+            # cryptography package (now in requirements.txt). The test locks the same fixture with AES-256.
+            try:
+                import cryptography  # noqa: F401
+                w = pypdf.PdfWriter(clone_from=os.path.join(fx, 'preserves.pdf'))
+                w.encrypt(user_password='', owner_password='kpc-selftest', algorithm='AES-256')
+                lb = io.BytesIO()
+                w.write(lb)
+                recs = read_pdf_records(lb.getvalue(), {})
+                check(any(r['name'] == 'Blanton Forest' and r['size'] == '3,124' for r in recs),
+                      'fix 4: AES-locked PDF read with cryptography')
+                pdf_note += '; AES-locked PDF read with cryptography'
+                check(_retry_now('failed: DependencyError: cryptography>=3.1 is required for AES algorithm'),
+                      'fix 4: the AES-locked PDF list is read again on --resume')
+            except ImportError:
+                pdf_note += '; cryptography not installed: AES-locked PDF test skipped'
+            check(any(ln.split('#')[0].strip().startswith('cryptography')
+                      for ln in open(os.path.join(HERE, 'requirements.txt'), encoding='utf-8')),
+                  'fix 4: requirements.txt installs cryptography')
         except ImportError:
             pdf_note = 'pypdf not installed: PDF file test skipped, line parser tested'
     finally:
