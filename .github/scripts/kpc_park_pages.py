@@ -12,7 +12,9 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import kpc_park_pages_rules as R  # noqa: E402
 import kpc_park_pages_work as W  # noqa: E402
 import kpc_not_sure as NS  # noqa: E402
-REPO_ROOT = pathlib.Path(__file__).resolve().parents[2]
+_HERE = pathlib.Path(__file__).resolve()
+# The repo root only when this file sits in the repo's .github/scripts; a PC kit (scripts/ in a plain folder) has none (21 Nov)
+REPO_ROOT = _HERE.parents[2] if (_HERE.parent.name, _HERE.parent.parent.name) == ('scripts', '.github') else None
 from kpc_manners import Manners, next_run, robots_block  # noqa: E402
 
 JOB = 'KPC park page reader'
@@ -354,7 +356,7 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
     def save_progress(index):
         if not out_dir:
             return
-        state['left'] = [r for _, r in sequence[index + 1:]]
+        state['left'] = sorted(r for _, r in sequence[index + 1:])   # 21 Nov: sorted, so a saved state never shows the private read order
         _write_progress(out_dir, out, state, state_path)
 
     def fetch(url, rng=None):
@@ -426,7 +428,7 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
 
     def stop(reason, index):
         state['stopped'] = reason
-        state['left'] = [r for _, r in sequence[index:]]
+        state['left'] = sorted(r for _, r in sequence[index:])   # sorted: the private read order is never saved
         if reason == 'minutes' and index < len(sequence):
             area_now = sequence[index][0]
             c = dict(state.get('cutoff') or {})
@@ -932,7 +934,8 @@ def cmd_read(args):
     else:
         getter = LiveGetter(state)
     # A plain --refs still limits the read, in the worklist's order. With no worklist hits, read nothing new.
-    use_list = bool(args.lists or args.links or args.refs or args.refs_file or args.areas or getattr(args, 'not_sure', ''))
+    use_list = bool(args.lists or args.links or args.refs or args.refs_file or args.areas or getattr(args, 'not_sure', '')
+                    or getattr(args, 'priority_file', '') or getattr(args, 'confirmed_file', ''))   # 21 Nov: a PC run with only the private lists
     refs = [row['ref'] for row in order] if use_list else None
     if refs is not None and not refs:
         if not args.quiet:
