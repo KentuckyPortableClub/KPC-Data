@@ -5,14 +5,14 @@
    "verdict": "FAIL",
    "bar": "Rule G: SURE only when pin inside (or <= 150 m with a name match, R-G12), names equal once kind words are stripped, kinds match, not line vs polygon, not a container, size within 1.5x or unknown; LIKELY goes to chat 11; UNLIKELY is evidence only, never a question. Whole key file: chat 11 samples 30 joins, needs 30/30. Finder: >= 95% of past YES re-found, >= 25% more parks, >= 85% YES in a sample of 40; every open park has a why-not.",
    "measured": {
-    "rows": 15469,
-    "parks": 5015,
+    "rows": 15488,
+    "parks": 5034,
     "parks_with_hit": 641,
     "SURE": 524,
     "LIKELY": 913,
-    "UNLIKELY_evidence": 5608,
+    "UNLIKELY_evidence": 5614,
     "strong": 304,
-    "already_approved": 705,
+    "already_approved": 706,
     "open_without_whynot": 456,
     "non_official_candidates": 1,
     "unlikely_as_questions": 0,
@@ -27,7 +27,7 @@
    "top_miss_reasons": [
     {
      "reason": "blocked: source could not be read",
-     "parks": 3504
+     "parks": 3516
     },
     {
      "reason": "not found: no-layer: no official record at the pin or by name",
@@ -35,7 +35,7 @@
     },
     {
      "reason": "evidence: UNLIKELY only : name: none word in common",
-     "parks": 2288
+     "parks": 2289
     },
     {
      "reason": "evidence: UNLIKELY only : pin not inside nor within m with a name match",
@@ -108,9 +108,9 @@
     "the finder bars need the side-by-side run (95% re-found, +25% parks) and a 40-row sample (85% YES)"
    ],
    "details": {
-    "rows": 15469,
+    "rows": 15488,
     "found_or_candidate": 1411,
-    "blocked": 4715,
+    "blocked": 4727,
     "hit_rate": 0.091,
     "bands": {
      "STRONG": 304,
@@ -296,11 +296,11 @@
   "outline": {
    "pass1": {
     "error": 430,
-    "already approved": 705,
+    "already approved": 706,
     "found": 317,
     "candidate": 1204,
-    "evidence": 5521,
-    "blocked": 4715,
+    "evidence": 5527,
+    "blocked": 4727,
     "not found": 2571,
     "pin only": 6
    },
