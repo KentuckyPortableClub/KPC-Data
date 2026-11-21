@@ -16,6 +16,7 @@ from kpc_manners import Manners, next_run, robots_block  # noqa: E402
 
 JOB = 'KPC park page reader'
 GET_MAX_SECONDS = 90  # wall-clock cap on one download; a slow trickle cannot run past this
+KEEP_ON_SKIP = ('refused', 'resting', 'script-built')   # a read that says nothing new keeps the earlier facts (21 Nov)
 
 
 def load_json(path, default):
@@ -177,6 +178,33 @@ class FixtureGetter:
         return rec.get('status', 200), headers, body, rec.get('final') or url
 
 
+class KeeperCopyGetter:
+    """21 Nov: read the keeper's saved copy of a page first (the same manifest format as the fixtures: pages {url: {file,
+    status, type, final}}). A page the keeper holds is never asked of the agency again. A page it does not hold goes to
+    the live getter (kpc_manners, robots.txt by our own parser, deadline and max_time), or, with no live getter, is a miss."""
+
+    def __init__(self, manifest, root, live=None):
+        self.copy = FixtureGetter(manifest, root)
+        self.live = live
+        self.calls = []
+        self.from_copy = 0
+
+    def links_for(self, url):
+        return self.copy.links_for(url) if self.copy._rec(url) is not None else []
+
+    def get(self, url, rng=None, deadline=None, max_time=None):
+        self.calls.append(url)
+        if self.copy._rec(url) is not None:
+            self.from_copy += 1
+            return self.copy.get(url, rng=rng)
+        if self.live is None:
+            return 'not-in-copy', {}, b'', url
+        return self.live.get(url, rng=rng, deadline=deadline, max_time=max_time)
+
+    def resting(self):
+        return self.live.resting() if self.live is not None and hasattr(self.live, 'resting') else {}
+
+
 class LiveGetter:
     def __init__(self, state):
         resting = state.get('hosts') if isinstance(state.get('hosts'), dict) else None
@@ -333,6 +361,10 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
         if not url or not budget_left():
             return None
         host = R.host_of(url)
+        if R.is_wdpa(url):
+            # never WDPA (21 Nov): not asked, not counted as a request
+            return {'url': url, 'final': url, 'status': 'refused', 'kind': 'refused', 'text': '', 'links': [],
+                    'fingerprint': '', 'html': '', 'title': '', 'heading': '', 'skipped': 'wdpa'}
         if host and _refused_until(state, host, today):
             return {'url': url, 'final': url, 'status': 'refused', 'kind': 'refused', 'text': '', 'links': [],
                     'fingerprint': '', 'html': '', 'title': '', 'heading': '', 'skipped': 'refused'}
@@ -465,6 +497,17 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
         main = fetch(url)
         if main is None or is_deadline(main):
             return stop('minutes' if (time_up() or is_deadline(main)) else 'requests', index)
+        if main.get('kind') in KEEP_ON_SKIP and prev.get('date'):
+            # 21 Nov: a refused, robots-blocked, resting or script-built read says nothing new about the park. The facts
+            # read before stay exactly as they were (merge_unchanged keeps the bytes), and the park is asked again next run.
+            skipped = R.build_facts(ref, area, pota, parks, asked, [main], today, [], 'unknown', 'the read was skipped',
+                                    read_blocks=False)
+            skipped['page']['kind'] = main.get('kind')
+            out[area][ref] = {'ref': ref, 'unchanged': True, 'keep_exact': True, 'fallback': skipped,
+                              'page': {'kind': main.get('kind'), 'read': today}, 'questions': []}
+            done += 1
+            save_progress(index)
+            continue
         if prev.get('fingerprint') and prev.get('url') == url and prev.get('fingerprint') == main.get('fingerprint'):
             # same text: keep the old facts, no new question
             out[area][ref] = {'ref': ref, 'unchanged': True, 'page': {'fingerprint': main.get('fingerprint'),
@@ -548,7 +591,7 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
         for a in finished:
             c.pop(a, None)
         state['cutoff'] = c
-    if isinstance(getter, LiveGetter):
+    if isinstance(getter, LiveGetter) or (isinstance(getter, KeeperCopyGetter) and getter.live is not None):
         state['hosts'] = getter.resting()
     return out, requests
 
@@ -768,6 +811,10 @@ def merge_unchanged(out_dir, facts_by_area):
         path = root / 'facts' / f'{area}.json'
         old = load_json(path, {}).get('parks') or {}
         for ref, fact in list(parks.items()):
+            if fact.get('keep_exact'):
+                # a skipped read: the earlier fact, byte for byte; with no earlier fact, the skipped one
+                parks[ref] = old[ref] if ref in old else fact.get('fallback') or {'ref': ref}
+                continue
             if fact.get('unchanged') and ref in old:
                 kept = old[ref]
                 page = dict(kept.get('page') or {})
@@ -868,8 +915,13 @@ def cmd_read(args):
     if not areas:
         print('No stored parks. Nothing was read.')
         return 0
+    keeper = getattr(args, 'keeper_copies', '') or ''
     if args.fixtures:
         getter = FixtureGetter(load_json(args.fixtures, {}), pathlib.Path(args.fixtures).parent)
+    elif keeper:
+        man = pathlib.Path(keeper) / 'manifest.json' if pathlib.Path(keeper).is_dir() else pathlib.Path(keeper)
+        live = None if os.environ.get('KPC_NO_NET') == '1' else LiveGetter(state)
+        getter = KeeperCopyGetter(load_json(man, {}), man.parent, live)
     elif os.environ.get('KPC_NO_NET') == '1':
         print('No fixtures and the network is closed. Nothing was read.')
         return 0
@@ -1201,6 +1253,7 @@ def main(argv=None):
     p.add_argument('--out', default='')
     p.add_argument('--state', default='')
     p.add_argument('--fixtures', default='')
+    p.add_argument('--keeper-copies', default='', help="the keeper's saved page copies (a manifest.json like the fixtures'); read first")
     p.add_argument('--coverage', default='', help='coverage-order: the pota-agencies-by-area CSV')
     p.add_argument('--areas', default='')
     p.add_argument('--refs', default='')
