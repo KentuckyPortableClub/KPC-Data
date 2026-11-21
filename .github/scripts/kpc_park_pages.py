@@ -15,6 +15,7 @@ import kpc_not_sure as NS  # noqa: E402
 from kpc_manners import Manners, next_run, robots_block  # noqa: E402
 
 JOB = 'KPC park page reader'
+GET_MAX_SECONDS = 90  # wall-clock cap on one download; a slow trickle cannot run past this
 
 
 def load_json(path, default):
@@ -24,10 +25,18 @@ def load_json(path, default):
         return default
 
 
-def save_json(path, obj):
+def save_json(path, obj, only_if_changed=False):
     p = pathlib.Path(path)
+    text = json.dumps(obj, ensure_ascii=False, indent=1) + '\n'
+    if only_if_changed and p.is_file():
+        try:
+            if p.read_text(encoding='utf-8') == text:
+                return False
+        except OSError:
+            pass
     p.parent.mkdir(parents=True, exist_ok=True)
-    p.write_text(json.dumps(obj, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
+    p.write_text(text, encoding='utf-8')
+    return True
 
 
 def park_row(row):
@@ -147,7 +156,7 @@ class FixtureGetter:
                     return v
         return rec
 
-    def get(self, url, rng=None):
+    def get(self, url, rng=None, deadline=None, max_time=None):
         self.calls.append(url)
         rec = self._rec(url)
         if rec is None:
@@ -174,9 +183,9 @@ class LiveGetter:
         self.M = Manners(JOB, resting)
         self.calls = []
 
-    def get(self, url, rng=None):
+    def get(self, url, rng=None, deadline=None, max_time=None):
         self.calls.append(url)
-        return self.M.get(url, rng=rng)
+        return self.M.get(url, rng=rng, deadline=deadline, max_time=max_time)
 
     def resting(self):
         return self.M.resting()
@@ -275,10 +284,13 @@ def _family_names_all(text, refs, area_parks):
 
 def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_only=None,
                max_requests=1500, max_per_park=R.MAX_PER_PARK, max_parks=None, on_park=None,
-               refresh_days=W.REFRESH_DAYS, deadline=None):
-    """Read every chosen park. Saves nothing itself. Returns {area: {ref: fact}} and the request count.
+               refresh_days=W.REFRESH_DAYS, deadline=None, out_dir=None, state_path=None,
+               get_max_seconds=GET_MAX_SECONDS, quiet=False, started=None):
+    """Read every chosen park. Returns {area: {ref: fact}} and the request count.
     refs, when given, is the worklist order across areas. A fresh fingerprint is not fetched again.
-    A page older than refresh_days is fetched; the same fingerprint is not parsed again."""
+    A page older than refresh_days is fetched; the same fingerprint is not parsed again.
+    When out_dir is set, facts and state are written after every park (only if they changed),
+    so a run that is cut off keeps what it already read."""
     state.setdefault('hosts', {})
     state.setdefault('refused', {})
     state.setdefault('dead', {})
@@ -289,12 +301,32 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
     requests = 0
     done = 0
     cache = {}  # norm url -> fetched page dict
+    started = time.time() if started is None else started
 
     def budget_left():
         return requests < max_requests and (deadline is None or time.time() < deadline)
 
     def time_up():
         return deadline is not None and time.time() >= deadline
+
+    def is_deadline(page):
+        st = (page or {}).get('status')
+        return st == 'err:deadline' or (isinstance(st, str) and str(st).startswith('err:deadline'))
+
+    def progress(area, count, note=''):
+        if quiet:
+            return
+        elapsed = int(time.time() - started)
+        line = f'{area}  {count} park(s)  {elapsed // 60} min {elapsed % 60}s'
+        if note:
+            line += f'  {note}'
+        print(line, flush=True)
+
+    def save_progress(index):
+        if not out_dir:
+            return
+        state['left'] = [r for _, r in sequence[index + 1:]]
+        _write_progress(out_dir, out, state, state_path)
 
     def fetch(url, rng=None):
         nonlocal requests
@@ -308,7 +340,10 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
         if key in cache:
             return cache[key]
         requests += 1
-        st, headers, body, final = getter.get(url, rng=rng)
+        try:
+            st, headers, body, final = getter.get(url, rng=rng, deadline=deadline, max_time=get_max_seconds)
+        except TypeError:
+            st, headers, body, final = getter.get(url, rng=rng)
         extra = getter.links_for(url) if hasattr(getter, 'links_for') else []
         vis = R.visible_of(body, headers, final or url, extra)
         kind = _kind_of_status(st, vis.get('text'), final or url, is_pdf=bool(vis.get('pdf')))
@@ -359,6 +394,18 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
     def stop(reason, index):
         state['stopped'] = reason
         state['left'] = [r for _, r in sequence[index:]]
+        if reason == 'minutes' and index < len(sequence):
+            area_now = sequence[index][0]
+            c = dict(state.get('cutoff') or {})
+            c[area_now] = c.get(area_now, 0) + 1
+            state['cutoff'] = c
+            if c[area_now] >= 2:
+                stuck = list(state.get('stuck') or [])
+                if area_now not in stuck:
+                    stuck.append(area_now)
+                state['stuck'] = stuck
+        if out_dir:
+            _write_progress(out_dir, out, state, state_path)
         return out, requests
 
     for index, (area, ref) in enumerate(sequence):
@@ -367,6 +414,7 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
             return stop('parks', index)
         row = parks[ref]
         url, src, others = choose_link(ref, row, web, docs)
+        progress(area, done, 'reading')
         if on_park:
             on_park(done + 1, ref)
         # A page read inside the refresh window is not fetched again. The caller keeps the old fact.
@@ -380,6 +428,7 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
             prev['date'] = today
             state['read'][ref] = prev
             done += 1
+            save_progress(index)
             continue
         pota = {'name': row['name'], 'type': row['type'], 'pin': [row['lat'], row['lon']],
                 'link': url, 'qsos': row['qsos']}
@@ -393,6 +442,7 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
             out[area][ref] = fact
             state['read'][ref] = {'url': '', 'fingerprint': '', 'date': today, 'kind': 'none'}
             done += 1
+            save_progress(index)
             continue
         if R.is_agency_home(url):
             fact = R.build_facts(ref, area, pota, parks, asked, [{'kind': 'none', 'status': 'not-asked', 'text': '',
@@ -406,14 +456,15 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
             out[area][ref] = fact
             state['read'][ref] = {'url': url, 'fingerprint': '', 'date': today, 'kind': 'none'}
             done += 1
+            save_progress(index)
             continue
         if time_up():
             return stop('minutes', index)
         if not budget_left():
             return stop('requests', index)
         main = fetch(url)
-        if main is None:
-            return stop('minutes' if time_up() else 'requests', index)
+        if main is None or is_deadline(main):
+            return stop('minutes' if (time_up() or is_deadline(main)) else 'requests', index)
         if prev.get('fingerprint') and prev.get('url') == url and prev.get('fingerprint') == main.get('fingerprint'):
             # same text: keep the old facts, no new question
             out[area][ref] = {'ref': ref, 'unchanged': True, 'page': {'fingerprint': main.get('fingerprint'),
@@ -424,6 +475,7 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
             state['read'][ref] = kept
             state['fingerprints'][norm_url(url)] = main.get('fingerprint')
             done += 1
+            save_progress(index)
             continue
         try:
             pages = [main]
@@ -445,7 +497,9 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
                     else:
                         got = fetch(eu)
                     used += 1
-                    if got is None:
+                    if got is None or is_deadline(got):
+                        if time_up() or is_deadline(got):
+                            return stop('minutes', index)
                         break
                     if got.get('kind') in ('html', 'pdf') and (got.get('text') or '').strip():
                         got = dict(got)
@@ -481,10 +535,18 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
             out[area].pop(ref, None)
             state.setdefault('errors', {})[ref] = f'{type(err).__name__}: {err}'[:300]
             print(f'::warning title=Reader skipped a park::{ref}: {type(err).__name__}: {err}'[:400], flush=True)
+            save_progress(index)
             continue
         done += 1
+        save_progress(index)
     state['left'] = []
     state['stopped'] = ''
+    finished = {a for a, _ in sequence}
+    if finished and state.get('cutoff'):
+        c = dict(state['cutoff'])
+        for a in finished:
+            c.pop(a, None)
+        state['cutoff'] = c
     if isinstance(getter, LiveGetter):
         state['hosts'] = getter.resting()
     return out, requests
@@ -534,10 +596,89 @@ def _extra_urls(url, main, fam):
     return out
 
 
+def _write_progress(out_dir, facts_by_area, state, state_path):
+    """Write facts and state after a park. Only rewrite a file when its contents changed."""
+    if not out_dir:
+        return
+    merge_unchanged(out_dir, facts_by_area)
+    root = pathlib.Path(out_dir)
+    for area, parks in facts_by_area.items():
+        save_json(root / 'facts' / f'{area}.json',
+                  {'area': area, 'reader': R.READER, 'parks': parks}, only_if_changed=True)
+    if state_path:
+        save_json(state_path, state, only_if_changed=True)
+
+
+def pick_walk_area(areas, done, state, area_refs=None):
+    """Choose the next US area for a timed walk.
+
+    areas: sorted area codes. done: area codes that already have a facts file.
+    state: the reader's state (left, stopped, cutoff, stuck, run, run_area).
+    area_refs: {area: set(park refs)} so leftover refs can be placed in an area.
+    Returns (area, why, state). After two cut-off runs on the same state, that
+    state is skipped and named in why for a person.
+    """
+    state = dict(state or {})
+    cutoff = dict(state.get('cutoff') or {})
+    stuck = [a for a in (state.get('stuck') or []) if a]
+    areas = list(areas or [])
+    done = set(done or [])
+    area_refs = area_refs or {}
+
+    left = set(state.get('left') or [])
+    unfinished = ''
+    if left:
+        for a in areas:
+            refs = set(area_refs.get(a) or [])
+            if refs and (left & refs):
+                unfinished = a
+                break
+        if not unfinished:
+            run_area = state.get('run_area') or ''
+            if run_area in areas:
+                unfinished = run_area
+
+    if unfinished and state.get('run') == 'in-progress':
+        cutoff[unfinished] = cutoff.get(unfinished, 0) + 1
+        state['cutoff'] = cutoff
+        state['run'] = 'killed'
+        if cutoff[unfinished] >= 2 and unfinished not in stuck:
+            stuck.append(unfinished)
+            state['stuck'] = stuck
+
+    def next_todo(skip=()):
+        skip = set(skip) | set(stuck)
+        return [a for a in areas if a not in done and a not in skip]
+
+    if unfinished and cutoff.get(unfinished, 0) >= 2:
+        if unfinished not in stuck:
+            stuck.append(unfinished)
+            state['stuck'] = stuck
+        todo = next_todo(skip={unfinished})
+        out = todo[0] if todo else ''
+        why = f'{unfinished}: skipped after two cut-off runs; a person should look at it'
+        why += f'. Next: {out}' if out else '. No other state is left to read'
+        return out, why, state
+
+    if unfinished:
+        return unfinished, f'{unfinished}: left unfinished by the last run', state
+
+    todo = next_todo()
+    out = todo[0] if todo else ''
+    if out:
+        why = f'{out}: the next state with no facts ({len(todo)} left)'
+    else:
+        why = 'every state has facts: nothing to read'
+        if stuck:
+            why += f'. Stuck, for a person: {", ".join(stuck)}'
+    return out, why, state
+
+
 def write_facts(out_dir, facts_by_area):
     root = pathlib.Path(out_dir)
     for area, parks in facts_by_area.items():
-        save_json(root / 'facts' / f'{area}.json', {'area': area, 'reader': R.READER, 'parks': parks})
+        save_json(root / 'facts' / f'{area}.json', {'area': area, 'reader': R.READER, 'parks': parks},
+                  only_if_changed=True)
 
 
 def merge_unchanged(out_dir, facts_by_area):
@@ -664,15 +805,34 @@ def cmd_read(args):
         return 0
     total = len(refs) if refs is not None else sum(len(v) for k, v in areas.items() if not areas_only or k in areas_only)
     old_facts = W.load_facts(args.out) if args.out else {}
+    run_area = ''
+    if areas_only:
+        run_area = sorted(areas_only)[0]
+    elif order:
+        run_area = order[0].get('area') or ''
+    state['run'] = 'in-progress'
+    if run_area:
+        state['run_area'] = run_area
+    if state_path:
+        save_json(state_path, state)
 
     def on_park(i, ref):
         if not args.quiet:
-            print(f'Reading {i} of {total} parks ({ref}).')
+            print(f'Reading {i} of {total} parks ({ref}).', flush=True)
 
     deadline = time.time() + args.max_minutes * 60 if args.max_minutes else None
+    get_max = getattr(args, 'max_get_seconds', None)
+    if get_max is None:
+        get_max = GET_MAX_SECONDS
     facts, reqs = read_parks(areas, web, docs, truth, getter, state, today, refs=refs, areas_only=areas_only,
                              max_requests=args.max_requests, max_per_park=args.max_per_park, max_parks=args.max_parks,
-                             on_park=None if args.quiet else on_park, refresh_days=args.refresh_days, deadline=deadline)
+                             on_park=None if args.quiet else on_park, refresh_days=args.refresh_days, deadline=deadline,
+                             out_dir=args.out or None, state_path=state_path or None,
+                             get_max_seconds=get_max, quiet=bool(args.quiet))
+    if not state.get('stopped'):
+        state['run'] = 'done'
+    else:
+        state['run'] = 'stopped'
     _finish(args, facts, order, lists, state, state_path, today, reqs, old_facts)
     reqs = _note_pictures(args, facts, getter, reqs, deadline, today)
     if args.out:
@@ -955,6 +1115,8 @@ def main(argv=None):
     p.add_argument('--today', default='')
     p.add_argument('--max-requests', type=int, default=1500)
     p.add_argument('--max-minutes', type=int, default=50)
+    p.add_argument('--max-get-seconds', type=int, default=GET_MAX_SECONDS,
+                   help='wall-clock cap on one download, in seconds')
     p.add_argument('--max-per-park', type=int, default=R.MAX_PER_PARK)
     p.add_argument('--max-parks', type=int, default=None)
     p.add_argument('--refresh-days', type=int, default=W.REFRESH_DAYS)

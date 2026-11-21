@@ -73,7 +73,7 @@ jobs:
         run: |
           cd kpcdata
           python3 - <<'PY'
-          import json, os, pathlib, subprocess
+          import json, os, pathlib, subprocess, sys
           asked = (os.environ.get('ASKED') or '').strip()
           def show(path):
               r = subprocess.run(['git', 'show', f'origin/tools-out:{path}'], capture_output=True, text=True)
@@ -83,23 +83,23 @@ jobs:
               return set(r.stdout.split()) if r.returncode == 0 else set()
           out, why = asked, 'asked by hand'
           if not asked:
+              sys.path.insert(0, '.github/scripts')
+              import kpc_park_pages as PP
               areas = sorted(f.name[:-5] for f in pathlib.Path('data/parkinfo').glob('US-*.json'))
               done = {n[:-5] for n in ls('park-pages/facts') if n.endswith('.json')}
               try: state = json.loads(show('park-pages/state.json') or '{}')
               except ValueError: state = {}
-              left = set(state.get('left') or [])
-              unfinished = ''
-              if left:
-                  for a in areas:
-                      try: parks = json.loads(pathlib.Path(f'data/parkinfo/{a}.json').read_text(encoding='utf-8')).get('parks') or {}
-                      except (OSError, ValueError): continue
-                      if left & set(parks): unfinished = a; break
-              todo = [a for a in areas if a not in done]
-              out = unfinished or (todo[0] if todo else '')
-              why = f'{out}: left unfinished by the last run' if unfinished else (f'{out}: the next state with no facts ({len(todo)} left)' if out else 'every state has facts: nothing to read')
+              area_refs = {}
+              for a in areas:
+                  try:
+                      parks = json.loads(pathlib.Path(f'data/parkinfo/{a}.json').read_text(encoding='utf-8')).get('parks') or {}
+                  except (OSError, ValueError):
+                      parks = {}
+                  area_refs[a] = set(parks)
+              out, why, state = PP.pick_walk_area(areas, done, state, area_refs)
               if out:   # carry the reader's place and fingerprints, so a page already read is not fetched again
                   pathlib.Path('../work/out').mkdir(parents=True, exist_ok=True)
-                  if state: pathlib.Path('../work/out/state.json').write_text(json.dumps(state), encoding='utf-8')
+                  if state: pathlib.Path('../work/out/state.json').write_text(json.dumps(state, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
           print(f'::notice title=Page reader walk::{why}')
           with open(os.environ['GITHUB_OUTPUT'], 'a') as fh: fh.write(f'areas={out}\n')
           with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as fh: fh.write(f'**State this run:** {why}\n')
@@ -107,6 +107,7 @@ jobs:
       - name: Read the pages
         id: read
         if: ${{ steps.pick.outputs.areas != '' }}
+        timeout-minutes: 52
         continue-on-error: true
         env:
           AREAS: ${{ steps.pick.outputs.areas }}
