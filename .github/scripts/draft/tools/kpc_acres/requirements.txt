@@ -2,3 +2,4 @@
 # Optional: lets the tool read agency lists published as PDF tables. Without it, PDF lists are
 # reported as "skipped: pypdf not installed" and the run goes on.
 pypdf==5.1.0   # on since 19 Nov 2026 (owner: "Fix it and use the bots"): 52 agency PDF lists were skipped without it
+cryptography==44.0.0   # 20 Nov 2026: pypdf needs it to open AES-locked PDFs (Arizona's state parks list failed without it)

@@ -372,6 +372,12 @@ def _retry_now(status):
         return True   # 20 Nov 2026 fix 2: the name column can now come from the research's query fields
     if "no item named 'xl/workbook.xml'" in str(status or ''):
         return True   # 20 Nov 2026 fix 3: a zipped shapefile's table is now read
+    if 'cryptography' in str(status or '') and 'required for AES' in str(status or ''):
+        try:   # 20 Nov 2026 fix 4: an AES-locked PDF list is read again once cryptography can be imported
+            import cryptography  # noqa: F401
+            return True
+        except ImportError:
+            return False
     if 'pypdf is not installed' not in str(status or ''):
         return False
     try:
@@ -2313,6 +2319,25 @@ def selftest(update=False):
             check(any(r['name'] == 'Blanton Forest' and r['size'] == '3,124' for r in recs), 'PDF table read with pypdf')
             check(not any(r['name'].startswith('Bad Branch') for r in recs), 'unsure PDF row skipped')
             pdf_note = 'PDF file read with pypdf'
+            # 20 Nov 2026 fix 4: an AES-locked PDF with no password to open it (Arizona's audit report) needs the
+            # cryptography package (now in requirements.txt). The test locks the same fixture with AES-256.
+            try:
+                import cryptography  # noqa: F401
+                w = pypdf.PdfWriter(clone_from=os.path.join(fx, 'preserves.pdf'))
+                w.encrypt(user_password='', owner_password='kpc-selftest', algorithm='AES-256')
+                lb = io.BytesIO()
+                w.write(lb)
+                recs = read_pdf_records(lb.getvalue(), {})
+                check(any(r['name'] == 'Blanton Forest' and r['size'] == '3,124' for r in recs),
+                      'fix 4: AES-locked PDF read with cryptography')
+                pdf_note += '; AES-locked PDF read with cryptography'
+                check(_retry_now('failed: DependencyError: cryptography>=3.1 is required for AES algorithm'),
+                      'fix 4: the AES-locked PDF list is read again on --resume')
+            except ImportError:
+                pdf_note += '; cryptography not installed: AES-locked PDF test skipped'
+            check(any(ln.split('#')[0].strip().startswith('cryptography')
+                      for ln in open(os.path.join(HERE, 'requirements.txt'), encoding='utf-8')),
+                  'fix 4: requirements.txt installs cryptography')
         except ImportError:
             pdf_note = 'pypdf not installed: PDF file test skipped, line parser tested'
     finally:
