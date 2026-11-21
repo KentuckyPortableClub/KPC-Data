@@ -1,0 +1,148 @@
+{
+ "about": "Agency park lists for kpc_agency_lists.py (the keeper calls it). One official list per agency, giving its website id and its map id. Every agency stays OFF (enabled false) until a person has filled in and checked the official source_url, the licence or terms, and robots.txt. Never a WDPA source. Where the map record already carries the website address (NY DEC, CA State Parks, MT FWP, MN DNR forests, some NPS layers), no list is needed: those ties live in KPC-Links .github/link-id-ties.json instead.",
+ "fields": {
+  "agency": "short name; the file is agency-crosswalk/<slug>.json",
+  "link_kind": "the id kind the park's POTA link carries (as kpc_match_checks ID_KINDS names it)",
+  "source_url": "https address of the official list",
+  "licence": "the licence or terms, in a few words, as the agency states it",
+  "terms_url": "where that licence or terms is written",
+  "format": "csv | json-rows | arcgis-json",
+  "web_id": "{column, regex?}: the column with the website id (regex group 1 when the column holds a page address)",
+  "map": "{layer, field, value}: the map layer and field the id is on, and the list column holding that id",
+  "checked": "who checked source, licence and robots.txt, and when"
+ },
+ "agencies": [
+  {
+   "enabled": false,
+   "agency": "Parks Canada",
+   "status": "no official list found (checked 20-21 Nov): the find-a-location table gives names and places only, no map id; the DFHD ids are designations, not land",
+   "link_kind": "",
+   "source_url": "",
+   "licence": "",
+   "terms_url": "",
+   "format": "",
+   "web_id": {},
+   "map": {}
+  },
+  {
+   "enabled": false,
+   "agency": "OR State Parks",
+   "status": "not looked for yet: the map records carry no web address with this id",
+   "link_kind": "OR State Parks park id",
+   "source_url": "",
+   "licence": "",
+   "terms_url": "",
+   "format": "",
+   "web_id": {},
+   "map": {}
+  },
+  {
+   "enabled": false,
+   "agency": "Parks Canada (Canada's Historic Places)",
+   "status": "not looked for yet: the map records carry no web address with this id",
+   "link_kind": "Canada's Historic Places id",
+   "source_url": "",
+   "licence": "",
+   "terms_url": "",
+   "format": "",
+   "web_id": {},
+   "map": {}
+  },
+  {
+   "enabled": false,
+   "agency": "MI DNR",
+   "status": "not looked for yet: the map records carry no web address with this id",
+   "link_kind": "MI DNR parks and trails id",
+   "source_url": "",
+   "licence": "",
+   "terms_url": "",
+   "format": "",
+   "web_id": {},
+   "map": {}
+  },
+  {
+   "enabled": false,
+   "agency": "AR Game and Fish",
+   "status": "not looked for yet: the map records carry no web address with this id",
+   "link_kind": "AR Game and Fish map id",
+   "source_url": "",
+   "licence": "",
+   "terms_url": "",
+   "format": "",
+   "web_id": {},
+   "map": {}
+  },
+  {
+   "enabled": false,
+   "agency": "NY State Parks",
+   "status": "not looked for yet: the map records carry no web address with this id",
+   "link_kind": "NY State Parks number",
+   "source_url": "",
+   "licence": "",
+   "terms_url": "",
+   "format": "",
+   "web_id": {},
+   "map": {}
+  },
+  {
+   "enabled": false,
+   "agency": "US Forest Service",
+   "status": "not looked for yet: the map records carry no web address with this id",
+   "link_kind": "US Forest Service rec area id",
+   "source_url": "",
+   "licence": "",
+   "terms_url": "",
+   "format": "",
+   "web_id": {},
+   "map": {}
+  },
+  {
+   "enabled": false,
+   "agency": "TX Parks and Wildlife",
+   "status": "not looked for yet: the map records carry no web address with this id",
+   "link_kind": "TX Parks and Wildlife WMA id",
+   "source_url": "",
+   "licence": "",
+   "terms_url": "",
+   "format": "",
+   "web_id": {},
+   "map": {}
+  },
+  {
+   "enabled": false,
+   "agency": "SC DNR",
+   "status": "not looked for yet: the map records carry no web address with this id",
+   "link_kind": "SC DNR managed land id",
+   "source_url": "",
+   "licence": "",
+   "terms_url": "",
+   "format": "",
+   "web_id": {},
+   "map": {}
+  },
+  {
+   "enabled": false,
+   "agency": "ME Parks",
+   "status": "not looked for yet: the map records carry no web address with this id",
+   "link_kind": "ME parks id",
+   "source_url": "",
+   "licence": "",
+   "terms_url": "",
+   "format": "",
+   "web_id": {},
+   "map": {}
+  },
+  {
+   "enabled": false,
+   "agency": "Sepaq",
+   "status": "not looked for yet: the map records carry no web address with this id",
+   "link_kind": "Sepaq park code",
+   "source_url": "",
+   "licence": "",
+   "terms_url": "",
+   "format": "",
+   "web_id": {},
+   "map": {}
+  }
+ ]
+}

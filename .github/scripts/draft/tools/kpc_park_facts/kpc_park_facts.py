@@ -18,7 +18,7 @@ Nothing is downloaded and no input file is changed. Standard library only.
 """
 import argparse, collections, csv, datetime, glob, json, os, re, sys, tempfile
 
-VERSION = 'kpc_park_facts 2 (2026-11-20)'
+VERSION = 'kpc_park_facts 3 (2026-11-21)'
 REF = re.compile(r'^[A-Z0-9]{1,4}-\d{4,5}$')
 AREA = re.compile(r'^(US|CA)-[A-Z]{2}$')
 
@@ -239,6 +239,54 @@ def read_links(path):
     return out, os.path.basename(path)
 
 
+def read_crosswalk(folder):
+    """The keeper's agency park lists (kpc_agency_lists.py): agency-crosswalk/<agency>.json, each
+    {agency, link_kind, source{url, licence, date}, rows[{web_id, map_layer, map_field, map_id}]} -> ({(link kind, web id): tie}, summary).
+    A web id two agencies' files map to different map ids is left out (no tie). Never WDPA. A missing folder = no ties."""
+    ties, clash, files = {}, set(), []
+    if not folder or not os.path.isdir(folder):
+        return {}, files
+    for path in sorted(glob.glob(os.path.join(folder, '*.json'))):
+        try:
+            with open(path, encoding='utf-8') as f:
+                d = json.load(f)
+        except (OSError, ValueError):
+            files.append({'file': os.path.basename(path), 'rows': 0, 'note': 'could not be read: not used'})
+            continue
+        kind = str(d.get('link_kind') or '').strip().lower()
+        src = d.get('source') or {}
+        n = 0
+        for r in d.get('rows') or []:
+            wid, mid = str(r.get('web_id') or '').strip().upper(), str(r.get('map_id') or '').strip()
+            lay, fld = str(r.get('map_layer') or ''), str(r.get('map_field') or '')
+            if not kind or not wid or not mid or re.search(r'wdpa|protectedplanet', lay + fld + mid, re.I):
+                continue
+            tie = {'agency': d.get('agency'), 'map_layer': lay, 'map_field': fld, 'map_id': mid,
+                   'source_url': src.get('url'), 'source_date': src.get('date')}
+            k = (kind, wid)
+            if k in ties and (ties[k]['map_layer'], ties[k]['map_id']) != (lay, mid):
+                clash.add(k)
+            ties.setdefault(k, tie)
+            n += 1
+        files.append({'file': os.path.basename(path), 'agency': d.get('agency'), 'rows': n,
+                      'source_url': src.get('url'), 'licence': src.get('licence'), 'source_date': src.get('date')})
+    for k in clash:
+        ties.pop(k, None)
+    return ties, files
+
+
+def add_map_ties(links, ties):
+    """A usable link id that an agency list maps to a map id gets link['map_tie'] (the keys treat it like a direct id tie)."""
+    n = 0
+    for r in links.values():
+        if not r.get('usable'):
+            continue
+        t = ties.get((str(r.get('id_kind') or '').strip().lower(), str(r.get('id_value') or '').strip().upper()))
+        if t:
+            r['map_tie'] = dict(t); n += 1
+    return n
+
+
 def _int(v):
     try:
         return int(str(v).strip())
@@ -297,6 +345,8 @@ def run(a):
     sizes = merge_sizes(ksizes, asizes)
     pages, pareas = read_pages(a.pages)
     links, lname = read_links(a.links)
+    ties, xfiles = read_crosswalk(getattr(a, 'crosswalk', None))
+    tied = add_map_ties(links, ties)
     key_layers = read_key_layers(a.key, a.layers) if a.key else None
     tag_sizes(sizes, key_layers)
     rows, c = combine(parks, sizes, pages, links)
@@ -312,6 +362,8 @@ def run(a):
                                 'used': len(sizes)},
                        'page': {'bot': 'park page reader (kpc-park-pages)', 'areas_read': pareas, 'parks': len(pages)},
                        'link': {'bot': 'link IDs (kpc_link_ids)', 'file': lname, 'parks': len(links)},
+                       'crosswalk': {'from': 'agency park lists (the keeper, kpc_agency_lists)', 'files': xfiles,
+                                     'parks_tied': tied},
                        'parks_list': {'from': 'data/parkinfo (POTA)', 'parks': len(parks)}},
            'counts': dict(sorted(c.items())), 'parks': rows}
     os.makedirs(a.out, exist_ok=True)
@@ -426,6 +478,7 @@ def main(argv=None):
     ap.add_argument('--links', help="kpc_link_ids' link-ids.csv")
     ap.add_argument('--key', action='append', help="KPC-Links data/us-key (and data/ca-key): the key's joined layers, for the size witness")
     ap.add_argument('--keeper-sizes', dest='keeper_sizes', help="the keeper's saved official sizes (taken before the acreage bot's)")
+    ap.add_argument('--crosswalk', help="the keeper's agency park lists folder (agency-crosswalk/*.json)")
     ap.add_argument('--layers', help='KPC-Links data/us-key/layers.json (each state layer\'s address)')
     ap.add_argument('--out', default='park-facts', help='output folder (default ./park-facts)')
     ap.add_argument('--today', help=argparse.SUPPRESS)

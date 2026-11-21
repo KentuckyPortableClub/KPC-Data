@@ -45,6 +45,7 @@ jobs:
           git archive origin/tools-out park-pages/facts | tar -x -C "$W/pages" --strip-components=2
           ls "$W"/pages/*.json > /dev/null
           if [ -f data/keeper-sizes/latest.json ]; then cp data/keeper-sizes/latest.json "$W/keeper-sizes.json"; fi
+          if ls data/agency-crosswalk/*.json > /dev/null 2>&1; then mkdir -p "$W/crosswalk"; cp data/agency-crosswalk/*.json "$W/crosswalk/"; fi
           cd "$W"
           GIT_TERMINAL_PROMPT=0 git -c credential.helper= clone -q --depth 1 --filter=blob:none --no-checkout https://github.com/KentuckyPortableClub/KPC-Links links
           git -C links sparse-checkout set --no-cone 'data/us-key/US-*.json' data/us-key/layers.json 'data/ca-key/CA-*.json'
@@ -59,7 +60,8 @@ jobs:
           python3 $T/kpc_link_ids/kpc_link_ids.py --parkinfo data/parkinfo --areas "US CA" --out "$W/links-out"
           L=$(ls "$W"/links-out/*/link-ids.csv | tail -1)
           K=""; [ -f "$W/keeper-sizes.json" ] && K="--keeper-sizes $W/keeper-sizes.json"
-          python3 $T/kpc_park_facts/kpc_park_facts.py --parkinfo data/parkinfo --acres "$W/acres.json" $K --pages "$W/pages" \
+          X=""; [ -d "$W/crosswalk" ] && X="--crosswalk $W/crosswalk"
+          python3 $T/kpc_park_facts/kpc_park_facts.py --parkinfo data/parkinfo --acres "$W/acres.json" $K $X --pages "$W/pages" \
             --links "$L" --key "$W/links/data/us-key" --key "$W/links/data/ca-key" --layers "$W/links/data/us-key/layers.json" --out "$W/out"
           mkdir -p "$W/save"
           gzip -9 -n -c "$W/out/park-facts.json" > "$W/save/park-facts.json.gz"
