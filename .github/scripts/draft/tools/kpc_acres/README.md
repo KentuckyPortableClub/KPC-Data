@@ -34,6 +34,25 @@ list of rows, `{"agencies": [...]}`, or a dict of `{agency name: row}`.
 - status: `status result found list_status finding outcome` ("no list" / "page only" are skipped and reported)
 - kind of place: `park_kind place_kind default_kind kind_of_place designation park_type list_kind`
 - hand-copied sizes (top level or inside a row): `hand hand_sizes hand_copies manual manual_sizes sizes acres_not_downloadable not_downloadable copied hand_rows`; each row uses `park/name/site/...`, `acres/size/value/hectares/km2/sq_mi`, `unit`, `ref`, `page`.
+- a PDF list: `pdf_column` (which number on a line is the size: a position, 1 = first), and for a PDF that holds many tables `pdf_table` (the title printed on each page of the one table to read), `pdf_column` = `last` or a position, `pdf_sum_check` = `yes`.
+
+**PDF table mode (20 Nov 2026).** A PDF line is read on its own only when it is one name and one number. Some official
+lists are one PDF holding many tables with many numbers a row (the Fish and Wildlife Service's yearly lands report: ten
+tables, 13 cells a row, dollar amounts and note letters among them, a refuge printed once under each state it lies in).
+For those the research row names the table (`pdf_table`), and the tool keeps only what the list's own arithmetic confirms:
+1. only pages that carry the table title are read;
+2. a row is a name followed by cells; every cell is a number, a `$` amount or a short note mark, otherwise the line is not read;
+3. the size is the number `pdf_column` names (`last` = the row's last acre number);
+4. with `pdf_sum_check`, the size must equal the sum of the row's other acre numbers, otherwise the row is not read (the only slack is rounding: half a cent for each printed number);
+5. a state name alone on a line heads the rows under it; a "... Total" row closes them, and the rows read must add up to it;
+6. a name with a `(n)` note is one unit printed in several places (FWS: "(1) Also in Georgia"). Its rows are added and given to
+   one park only when two or more of them were read, every block of the table added up (so no part can be missing) and the
+   parts point to one park. Otherwise it gets no size and `unmatched.csv` says why;
+7. a name marked `**` or `***` is a summary row: it counts toward its block's total and is never a unit.
+Lines not read are counted, never guessed; `report.md` shows each table once (pages, rows, units, blocks that add up, the
+first lines not read). A list last read the old way is read again once, on `--resume`, when its research row names a table.
+The Fish and Wildlife rows need: `PDF table` = `Table 3. National Wildlife Refuges`, `PDF column` = `last`,
+`PDF sum check` = `yes`, `Park kind` = `national wildlife refuge`.
 
 List formats: CSV, XLSX, HTML tables, ArcGIS REST layers (paged), Socrata, CKAN, JSON/GeoJSON, PDF (optional).
 Banned hosts (OSM, Google except storage.googleapis.com, WDPA/Protected Planet, AllTrails, Gaia, Strava,
