@@ -22,7 +22,7 @@ that is off.
 """
 import argparse, csv, datetime, io, json, os, re, sys, tempfile, time
 
-VERSION = 'kpc_agency_lists 2026-11-21a'
+VERSION = 'kpc_agency_lists 2026-11-21b'
 WDPA = re.compile(r'wdpa|protectedplanet', re.I)
 FORMATS = ('csv', 'json-rows', 'arcgis-json')
 
@@ -57,6 +57,19 @@ def problems(a):
         out.append('a WDPA source, layer or field: never used')
     if a.get('source_url') and not re.match(r'^https://', a['source_url']):
         out.append('the source is not an https address')
+    if a.get('licence_ok') is not True:
+        out.append('the licence is not checked as allowing our use (licence_ok)')
+    if not str(a.get('robots') or '').lower().startswith('allowed'):
+        out.append('robots.txt is not read as allowing the path (robots)')
+    if a.get('source_url'):
+        try:
+            sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+            import kpc_host_rules
+            hok, why = kpc_host_rules.host_ok(a['source_url'])
+        except Exception as e:  # no host rules = fail closed
+            hok, why = False, f'host rules not readable ({type(e).__name__})'
+        if not hok:
+            out.append(why)
     return out
 
 
@@ -171,7 +184,8 @@ def selftest():
         if not cond:
             bad.append(what)
     base = {'enabled': True, 'agency': 'Invented Parks', 'link_kind': 'ZZ page number', 'source_url': 'https://lists.invented.example/parks.csv',
-            'licence': 'public domain (invented)', 'terms_url': 'https://lists.invented.example/terms', 'format': 'csv',
+            'licence': 'public domain (invented)', 'licence_ok': True, 'robots': 'allowed (read 2026-11-21)',
+            'terms_url': 'https://lists.invented.example/terms', 'format': 'csv',
             'web_id': {'column': 'Web page', 'regex': r'invented\.example/park/(\d+)'}, 'map': {'layer': 'sgzza', 'field': 'UNIT_NO', 'value': 'Unit'}}
     csv_body = ('Name,Web page,Unit\nA,https://invented.example/park/101,U-1\nB,https://invented.example/park/102,U-2\n'
                 'C,,U-3\nD,https://invented.example/park/104,\nE,https://invented.example/park/105,U-5\nE2,https://invented.example/park/105,U-6\n').encode()
@@ -198,6 +212,14 @@ def selftest():
         check('an agency that is off is not read at all', not g.calls and 'off in the config' in rep['Invented Parks'])
         rep, g = go([dict(base, licence='')], {})
         check('no licence: not read', not g.calls and 'no licence' in rep['Invented Parks'])
+        rep, g = go([dict(base, licence_ok=False)], {})
+        check('licence not checked as allowing our use: not read', not g.calls and 'licence_ok' in rep['Invented Parks'])
+        rep, g = go([dict(base, robots='disallowed for AI crawlers')], {})
+        check('robots.txt not read as allowing the path: not read', not g.calls and 'robots' in rep['Invented Parks'])
+        for u in ('https://services5.arcgis.com/x/ArcGIS/rest/services/L/FeatureServer/0/query', 'https://apps.fs.usda.gov/arcx/rest/services/x/MapServer/0/query',
+                  'https://ncnhde.natureserve.org/list.csv'):
+            rep, g = go([dict(base, source_url=u)], {})
+            check(f'a saved-copies-only or never-contact host is never read ({u.split("/")[2]})', not g.calls and rep['Invented Parks'] != 'read')
         wd = dict(base, agency='Invented WDPA', map={'layer': 'wdpa', 'field': 'WDPA_PID', 'value': 'Unit'})
         rep, g = go([wd], {base['source_url']: (200, {}, csv_body, base['source_url'])})
         check('a WDPA layer or field is refused, never read', not g.calls and 'WDPA' in rep['Invented WDPA'])
