@@ -610,7 +610,7 @@ def _write_progress(out_dir, facts_by_area, state, state_path):
         save_json(state_path, state, only_if_changed=True)
 
 
-def pick_walk_area(areas, done, state, area_refs=None):
+def pick_walk_area(areas, done, state, area_refs=None, rank=None):
     """Choose the next US area for a timed walk.
 
     areas: sorted area codes. done: area codes that already have a facts file.
@@ -623,6 +623,9 @@ def pick_walk_area(areas, done, state, area_refs=None):
     cutoff = dict(state.get('cutoff') or {})
     stuck = [a for a in (state.get('stuck') or []) if a]
     areas = list(areas or [])
+    if rank:   # 21 Nov: the coverage ranking (biggest agencies first); areas it does not name keep their order after it
+        pos = {a: i for i, a in enumerate(rank)}
+        areas = sorted(areas, key=lambda a: (pos.get(a, len(pos)), areas.index(a)))
     done = set(done or [])
     area_refs = area_refs or {}
 
@@ -667,12 +670,62 @@ def pick_walk_area(areas, done, state, area_refs=None):
     todo = next_todo()
     out = todo[0] if todo else ''
     if out:
-        why = f'{out}: the next state with no facts ({len(todo)} left)'
+        why = f'{out}: the next state with no facts ({len(todo)} left)' + (' (coverage ranking: biggest agencies first)' if rank else '')
     else:
         why = 'every state has facts: nothing to read'
         if stuck:
             why += f'. Stuck, for a person: {", ".join(stuck)}'
     return out, why, state
+
+
+ORDER_FILE = pathlib.Path(__file__).resolve().parents[1] / 'park-pages-order.json'
+
+
+def coverage_order(csv_path):
+    """The walk order from the coverage list (area, agency_web_domain, pota_parks ...; biggest rows first): each area at the
+    place of its biggest agency row that has a web link. '(no web link)' rows have nothing to read and do not rank."""
+    import csv
+    with open(csv_path, encoding='utf-8-sig', newline='') as f:
+        rows = list(csv.DictReader(f))
+    def n(r):
+        try:
+            return int(str(r.get('pota_parks') or '0').strip())
+        except ValueError:
+            return 0
+    rows = [r for r in rows if (r.get('agency_web_domain') or '').strip() and 'no web link' not in r['agency_web_domain']]
+    rows.sort(key=lambda r: -n(r))
+    order, top = [], {}
+    for r in rows:
+        a, d = (r.get('area') or '').strip(), r['agency_web_domain'].strip()
+        if not a:
+            continue
+        if a not in order:
+            order.append(a)
+        top.setdefault(a, [])
+        if len(top[a]) < 3:
+            top[a].append([d, n(r)])
+    # areas whose rows are all '(no web link)' in the coverage list come after, biggest first: POTA's own list may still
+    # hold a link for some of their parks, and the reader reads those
+    with open(csv_path, encoding='utf-8-sig', newline='') as f:
+        allrows = list(csv.DictReader(f))
+    tot = {}
+    for r in allrows:
+        a = (r.get('area') or '').strip()
+        if a:
+            tot[a] = tot.get(a, 0) + n(r)
+    after = sorted((a for a in tot if a not in order), key=lambda a: -tot[a])
+    return {'about': 'Page reader walk order: each area ranked by its biggest agency with a web link (coverage list), then the '
+                     'areas the list shows with no web link, biggest first. Made by kpc_park_pages.py coverage-order; counts '
+                     'and web domains only.',
+            'source': os.path.basename(csv_path), 'areas': order + after, 'ranked_by_agency': len(order),
+            'top_agencies': top}
+
+
+def walk_rank(path=None):
+    """The ranked area list, or [] when the order file is missing or unreadable (the walk then keeps its old order)."""
+    doc = load_json(path or ORDER_FILE, {})
+    areas = doc.get('areas') if isinstance(doc, dict) else None
+    return [a for a in areas if isinstance(a, str)] if isinstance(areas, list) else []
 
 
 CONFIRM_FIELDS = ('agency_id', 'size', 'manager', 'address', 'coords', 'map_link')
@@ -919,6 +972,17 @@ def _note_pictures(args, facts, getter, reqs, deadline, today):
     return reqs
 
 
+def cmd_coverage_order(args):
+    if not args.coverage:
+        print('coverage-order needs --coverage <pota-agencies-by-area CSV>')
+        return 2
+    doc = coverage_order(args.coverage)
+    out = pathlib.Path(args.out) if args.out else ORDER_FILE
+    save_json(out, doc)
+    print(f"{len(doc['areas'])} areas ranked; wrote {out}")
+    return 0
+
+
 def cmd_report(args):
     if not args.out:
         print('A report needs --out, the folder a run already wrote.')
@@ -1137,6 +1201,7 @@ def main(argv=None):
     p.add_argument('--out', default='')
     p.add_argument('--state', default='')
     p.add_argument('--fixtures', default='')
+    p.add_argument('--coverage', default='', help='coverage-order: the pota-agencies-by-area CSV')
     p.add_argument('--areas', default='')
     p.add_argument('--refs', default='')
     p.add_argument('--refs-file', default='')
@@ -1202,6 +1267,8 @@ def _dispatch(args):
         return cmd_kits(args)
     if args.command == 'score':
         return cmd_score(args)
+    if args.command == 'coverage-order':
+        return cmd_coverage_order(args)
     p.print_help()
     return 2
 

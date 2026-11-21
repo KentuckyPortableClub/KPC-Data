@@ -96,7 +96,8 @@ jobs:
                   except (OSError, ValueError):
                       parks = {}
                   area_refs[a] = set(parks)
-              out, why, state = PP.pick_walk_area(areas, done, state, area_refs)
+              # 21 Nov: the next state follows the coverage ranking (.github/park-pages-order.json), biggest agencies first
+              out, why, state = PP.pick_walk_area(areas, done, state, area_refs, rank=PP.walk_rank())
               if out:   # carry the reader's place and fingerprints, so a page already read is not fetched again
                   pathlib.Path('../work/out').mkdir(parents=True, exist_ok=True)
                   if state: pathlib.Path('../work/out/state.json').write_text(json.dumps(state, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
