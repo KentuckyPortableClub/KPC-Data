@@ -1,19 +1,19 @@
-# Waiting room: morning list (2026-11-20)
+# Waiting room: morning list (2026-11-21)
 
 For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in data/waiting/approved.json; the nightly run lets it out.
 
-## Held files: 115 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
+## Held files: 117 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
 
 | since | days | file | last check | why |
 |---|---|---|---|---|
-| 2026-11-01 | 19 | data/truth/US-MA.json | HOLD | F-R2 6 OFF rows share the size 1,000.0 ac; F-R3 169 of 242 sized parks are OFF (over half: a reading problem?) |
-| 2026-11-01 | 19 | data/truth/US-MD.json | HOLD | F-R3 48 of 89 sized parks are OFF (over half: a reading problem?) |
-| 2026-11-01 | 19 | data/truth/US-MN.json | HOLD | F-R3 13 of 20 sized parks are OFF (over half: a reading problem?) |
-| 2026-11-01 | 19 | data/truth/US-OK.json | HOLD | F-R3 53 of 100 sized parks are OFF (over half: a reading problem?) |
-| 2026-11-08 | 12 | data/trails/US-13626.json | HOLD | F-T3 length 16 -> 114 km (outside -25% / +50%) |
-| 2026-11-08 | 12 | data/trails/US-9203.json | HOLD | F-T2 points 19246 -> 1822 (under half the saved line); F-T3 length 138 -> 88 km (outside -25% / +50%) |
-| 2026-11-10 | 10 | data/truth/US-UT.json | HOLD | F-R2 6 OFF rows share the size 2,200,000.0 ac |
-| 2026-11-10 | 10 | data/truth/US-WA.json | HOLD | F-R2 5 OFF rows share the size 564.0 ac; F-R3 157 of 188 sized parks are OFF (over half: a reading problem?) |
+| 2026-11-01 | 20 | data/truth/US-MA.json | HOLD | F-R2 6 OFF rows share the size 1,000.0 ac; F-R3 169 of 242 sized parks are OFF (over half: a reading problem?) |
+| 2026-11-01 | 20 | data/truth/US-MD.json | HOLD | F-R3 48 of 89 sized parks are OFF (over half: a reading problem?) |
+| 2026-11-01 | 20 | data/truth/US-MN.json | HOLD | F-R3 13 of 20 sized parks are OFF (over half: a reading problem?) |
+| 2026-11-01 | 20 | data/truth/US-OK.json | HOLD | F-R3 53 of 100 sized parks are OFF (over half: a reading problem?) |
+| 2026-11-08 | 13 | data/trails/US-13626.json | HOLD | F-T3 length 16 -> 114 km (outside -25% / +50%) |
+| 2026-11-08 | 13 | data/trails/US-9203.json | HOLD | F-T2 points 19246 -> 1822 (under half the saved line); F-T3 length 138 -> 88 km (outside -25% / +50%) |
+| 2026-11-10 | 11 | data/truth/US-UT.json | HOLD | F-R2 6 OFF rows share the size 2,200,000.0 ac |
+| 2026-11-10 | 11 | data/truth/US-WA.json | HOLD | F-R2 5 OFF rows share the size 564.0 ac; F-R3 157 of 188 sized parks are OFF (over half: a reading problem?) |
 | ? | ? | data/ca-key/CA-ON.json | PASS |  |
 | ? | ? | data/campstate/US-AK.json | PASS |  |
 | ? | ? | data/campstate/US-AZ.json | PASS |  |
@@ -85,14 +85,15 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/us-key/US-WI.json | PASS |  |
 | ? | ? | data/us-key/US-WV.json | PASS |  |
 | ? | ? | data/us-key/US-WY.json | RELEASE |  |
-| 2026-11-04 | 16 | data/trails/state-report.json | HOLD | F-T1 the line has no points |
-| 2026-11-09 | 11 | data/trails/index.json | HOLD | F-T4 trail index 139 -> 101 lines (under 80% of the saved list) |
-| 2026-11-18 | 2 | data/world-key/ZA.json | HOLD | F-O2 4 of 76 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks? |
-| 2026-11-20 | 0 | data/acres.json | HOLD | 430 rows without acres or a source (e.g. US-0042) |
+| 2026-11-04 | 17 | data/trails/state-report.json | HOLD | F-T1 the line has no points |
+| 2026-11-09 | 12 | data/trails/index.json | HOLD | F-T4 trail index 139 -> 101 lines (under 80% of the saved list) |
+| 2026-11-18 | 3 | data/world-key/ZA.json | HOLD | F-O2 4 of 76 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks? |
+| 2026-11-20 | 1 | data/acres.json | HOLD | 430 rows without acres or a source (e.g. US-0042) |
 | ? | ? | data/ca-key/index.json | RELEASE |  |
 | ? | ? | data/ca-key/refs.json | RELEASE |  |
 | ? | ? | data/ca-key/why-not.json | RELEASE |  |
 | ? | ? | data/trails/index-state.json | RELEASE |  |
+| ? | ? | data/us-key/area-tables.json | PASS |  |
 | ? | ? | data/us-key/changed-parks.json | RELEASE |  |
 | ? | ? | data/us-key/index.json | RELEASE |  |
 | ? | ? | data/us-key/lost-finds.json | RELEASE |  |
@@ -121,6 +122,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/world-key/PR.json | PASS |  |
 | ? | ? | data/world-key/PY.json | PASS |  |
 | ? | ? | data/world-key/VI.json | PASS |  |
+| ? | ? | data/world-key/index.json | PASS |  |
 
 ## Questions waiting for an answer
 
