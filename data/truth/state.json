@@ -918,20 +918,20 @@
     "agree": 8,
     "handover_hints": 4,
     "no_page": 2,
-    "no_size": 238,
+    "no_size": 237,
     "not_read": 0,
     "off": 5,
     "ours_unknown": 6,
     "parks": 277,
     "retired": 0,
-    "unsure": 1,
+    "unsure": 2,
     "weak": 12,
     "with_outline": 263
    },
    "left": 0,
    "parks": 277,
-   "status": "queued",
-   "updated": "2026-11-15"
+   "status": "done",
+   "updated": "2026-11-22"
   },
   "US-TX": {
    "checked": 222,
@@ -1097,48 +1097,51 @@
    "updated": "2026-11-09"
   }
  },
- "hosts": {},
+ "hosts": {
+  "tnstateparks.com": 1795430345.0894592,
+  "www.tn.gov": 1795430274.359603
+ },
  "last": {
   "areas": [
-   "US-KY"
+   "US-TN"
   ],
   "manners": {
-   "browser": 2,
-   "errors": 0,
+   "errors": 2,
+   "for_person": 3,
    "for_person_urls": [
     [
-     "https://legacy.fws.gov/robots.txt",
-     "robots.txt answered 503: nothing fetched from legacy.fws.gov this run"
+     "https://tnstateparks.com/parks/info/middle-fork-bottoms",
+     "HTTP 403 twice"
     ],
     [
-     "https://www.kyhorsepark.com/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from www.kyhorsepark.com this run"
+     "https://tnstateparks.com/parks/north-chickamauga",
+     "HTTP 403 twice"
     ],
     [
-     "https://whitehall.eku.edu/robots.txt",
-     "robots.txt answered with a web page, not a robots file (the answer came from another site (https://visitrichmondky.com/listing/white-hall-state-historic-house/): not read as \"no rules\"): not read as \"no rules\": a person downloads what is needed from whitehall.eku.edu"
+     "https://www.murfreesborotn.gov/187/Murfree-Spring-Wetlands",
+     "HTTP 403 twice"
     ]
    ],
-   "host_rule": 50,
-   "requests": 579,
-   "rested": 0,
-   "robots": 3,
-   "robots_unreadable": 2,
-   "strikes": 0
+   "host_rule": 0,
+   "requests": 14,
+   "rested": 390,
+   "retry403": 4,
+   "robots": 0,
+   "strikes": 9
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 5,
-   "no_size": 67,
-   "ours_unknown": 1,
-   "pages_read": 345,
-   "parks": 192,
+   "handover_hints": 4,
+   "no_size": 226,
+   "ours_unknown": 2,
+   "pages_read": 2,
+   "parks": 230,
    "retired": 0,
-   "size_agree": 110,
-   "size_off": 6,
-   "size_unsure": 8,
-   "skipped_fresh": 1,
-   "with_outline": 192
+   "size_agree": 0,
+   "size_off": 0,
+   "size_unsure": 1,
+   "skipped_fresh": 47,
+   "with_outline": 229
   },
   "when": "2026-11-22"
  },

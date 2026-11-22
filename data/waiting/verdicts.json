@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-22T10:36Z",
+ "checked": "2026-11-22T10:42Z",
  "switched_on": false,
  "results": [
   {
@@ -346,6 +346,15 @@
    ],
    "verdict": "HOLD",
    "fp": "78db457b3aa01ddb",
+   "net": true
+  },
+  {
+   "path": "data/truth/US-TN.json",
+   "kind": "truth",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "399d43db5a5de58b",
    "net": true
   },
   {
@@ -1251,7 +1260,7 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "aae779974838865b",
-   "net": false
+   "net": true
   },
   {
    "path": "data/wwff/PYFF.json",
@@ -1260,7 +1269,7 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "1561165fa08fb687",
-   "net": false
+   "net": true
   },
   {
    "path": "data/wwff/S5FF.json",
@@ -1269,7 +1278,7 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "bd0bb2b2fd67f385",
-   "net": false
+   "net": true
   },
   {
    "path": "data/wwff/SMFF.json",
@@ -1278,7 +1287,7 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "1636e50dc009c221",
-   "net": false
+   "net": true
   },
   {
    "path": "data/wwff/VEFF.json",
@@ -1287,7 +1296,7 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "175a2e45b5ded59b",
-   "net": false
+   "net": true
   },
   {
    "path": "data/wwff/VKFF.json",
@@ -1296,7 +1305,7 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "4d9e3b52ead4a881",
-   "net": false
+   "net": true
   }
  ]
 }

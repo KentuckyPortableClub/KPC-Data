@@ -5,7 +5,7 @@ Updated 2026-11-22. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 | area | parks | with outline | agree | OFF (>15%) | unsure | no size | ours unknown | handover hints | retired | weak (≤4) |
 |---|---|---|---|---|---|---|---|---|---|---|
 | US-KY | 193 | 193 | 110 | **6** | 8 | 68 | 1 | 5 | 0 | 28 |
-| US-TN | 277 | 263 | 8 | **5** | 1 | 238 | 6 | 4 | 0 | 12 |
+| US-TN | 277 | 263 | 8 | **5** | 2 | 237 | 6 | 4 | 0 | 12 |
 | US-NC | 253 | 225 | 31 | **15** | 27 | 146 | 5 | 20 | 0 | 8 |
 | US-VA | 184 | 177 | 50 | **25** | 54 | 27 | 21 | 17 | 0 | 20 |
 | US-WV | 172 | 165 | 20 | **11** | 101 | 28 | 5 | 1 | 0 | 5 |
@@ -108,6 +108,7 @@ Updated 2026-11-22. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 **Unsure (no clean total found; the nearest number is only a guess):**
 
 - US-0642 Natchez Trace Parkway National Parkway: ours 98,699 ac · cause: whole park compared (POTA lists it in 3 states: {'US-TN': 31527, 'US-AL': 35645, 'US-MS': 31527})
+- US-10621 McGlothlin-Largen Wildlife Management Area: ours 115 ac · cause: no total-looking sentence: numbers found were parts or other units
 
 **Handover / closure hints (a person decides; nothing applied):**
 
