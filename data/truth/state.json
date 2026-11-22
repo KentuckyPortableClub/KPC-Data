@@ -1100,22 +1100,23 @@
   "US-WY": {
    "checked": 294,
    "counts": {
-    "agree": 47,
+    "agree": 54,
     "handover_hints": 0,
     "no_page": 0,
-    "no_size": 75,
-    "off": 24,
+    "no_size": 74,
+    "not_read": 0,
+    "off": 13,
     "ours_unknown": 35,
     "parks": 294,
     "retired": 0,
-    "unsure": 33,
-    "weak": 25,
-    "with_outline": 214
+    "unsure": 37,
+    "weak": 19,
+    "with_outline": 213
    },
    "left": 0,
    "parks": 294,
-   "status": "queued",
-   "updated": "2026-11-09"
+   "status": "done",
+   "updated": "2026-11-22"
   }
  },
  "hosts": {
@@ -1130,6 +1131,7 @@
   "www.arcgis.com": 1795452861.2430022,
   "www.destateparks.com": 1795455489.8469434,
   "www.floridastateparks.org": 1795436850.291285,
+  "www.fortwiki.com": 1795464069.5987945,
   "www.ksoutdoors.gov": 1795458975.8759665,
   "www.lastateparks.com": 1795457598.9076748,
   "www.maine.gov": 1795453469.8895013,
@@ -1144,38 +1146,31 @@
  },
  "last": {
   "areas": [
-   "US-CO"
+   "US-WY"
   ],
   "manners": {
-   "browser": 5,
+   "browser": 36,
    "errors": 0,
-   "for_person": 1,
-   "for_person_urls": [
-    [
-     "https://www.colorado.com/articles/national-park-profile-great-sand-dunes-national-park-preserve",
-     "HTTP 403 twice"
-    ]
-   ],
-   "host_rule": 14,
-   "requests": 248,
-   "rested": 117,
-   "retry403": 1,
-   "robots": 1,
-   "strikes": 5
+   "for_person_urls": [],
+   "host_rule": 20,
+   "requests": 345,
+   "rested": 0,
+   "robots": 0,
+   "strikes": 3
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 5,
-   "no_size": 144,
-   "ours_unknown": 15,
-   "pages_read": 175,
-   "parks": 276,
+   "handover_hints": 0,
+   "no_size": 74,
+   "ours_unknown": 35,
+   "pages_read": 256,
+   "parks": 294,
    "retired": 0,
-   "size_agree": 59,
-   "size_off": 11,
+   "size_agree": 54,
+   "size_off": 13,
    "size_unsure": 37,
    "skipped_fresh": 0,
-   "with_outline": 266
+   "with_outline": 213
   },
   "when": "2026-11-22"
  },
