@@ -19,6 +19,7 @@ from kpc_manners import Manners, next_run, robots_block  # noqa: E402
 
 JOB = 'KPC park page reader'
 GET_MAX_SECONDS = 90  # wall-clock cap on one download; a slow trickle cannot run past this
+SAVE_EVERY_SECONDS = 30         # 22 Nov: how often the facts and state are written during a walk (also on stop, error and end)
 KEEP_ON_SKIP = ('refused', 'resting', 'script-built')   # a read that says nothing new keeps the earlier facts (21 Nov)
 
 
@@ -397,10 +398,19 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
             line += f'  {note}'
         print(line, flush=True)
 
-    def save_progress(index):
+    saved_at = [0.0]
+
+    def save_progress(index, force=False):
         if not out_dir:
             return
         state['left'] = sorted(r for _, r in sequence[index + 1:])   # 21 Nov: sorted, so a saved state never shows the private read order
+        # 22 Nov (owner 5:12 PM "speed up going through the done looked parks"): each save re-reads and rewrites every touched
+        # area's facts file (Canada's is 19 MB) and the 5 MB state; after EVERY park that made a run crawl through parks it only
+        # skips. Now at most every SAVE_EVERY_SECONDS, plus a save on any stop, any reader error and at the end of the walk.
+        now = time.monotonic()
+        if not force and now - saved_at[0] < SAVE_EVERY_SECONDS:
+            return
+        saved_at[0] = now
         _write_progress(out_dir, out, state, state_path)
 
     def fetch(url, rng=None):
@@ -641,12 +651,14 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
             out[area].pop(ref, None)
             state.setdefault('errors', {})[ref] = f'{type(err).__name__}: {err}'[:300]
             print(f'::warning title=Reader skipped a park::{ref}: {type(err).__name__}: {err}'[:400], flush=True)
-            save_progress(index)
+            save_progress(index, force=True)
             continue
         done += 1
         save_progress(index)
     state['left'] = []
     state['stopped'] = ''
+    if out_dir:
+        _write_progress(out_dir, out, state, state_path)   # the end of the walk: always saved (save_progress may have waited)
     finished = {a for a, _ in sequence}
     if finished and state.get('cutoff'):
         c = dict(state['cutoff'])
