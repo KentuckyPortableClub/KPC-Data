@@ -3,9 +3,10 @@
 
 No network. A list is JSON only: unknown keys are ignored, and nothing in a list is run.
 """
-import csv, datetime, json, pathlib
+import csv, datetime, io, json, pathlib
 
 REFRESH_DAYS = 30
+CONFIRMED_REFRESH_DAYS = 365   # 21 Nov: a park already confirmed by its agency id is re-read once a year (an agency may change its page)
 LIST_MAX = 5000
 SUMMARY_LINES = 40
 PERSON_KINDS = {'refused', 'robots', 'script-built', 'none', 'dead'}
@@ -81,8 +82,13 @@ def _read(path):
         return {}
 
 
-def build_worklist(areas, choose, keys, lists, refs, state, today, areas_only=None, refresh_days=REFRESH_DAYS, not_sure=None):
-    """Best first, each park once. choose(ref, row) -> url or ''."""
+def build_worklist(areas, choose, keys, lists, refs, state, today, areas_only=None, refresh_days=REFRESH_DAYS, not_sure=None,
+                   priority=None, confirmed=None, confirmed_refresh_days=CONFIRMED_REFRESH_DAYS):
+    """Best first, each park once. choose(ref, row) -> url or ''.
+    21 Nov: priority = parks from a PRIVATE list (the likely mismatches: their pin lies outside their record) go first, before
+    everything else; their reason is never written (the worklist file only says "priority list"). confirmed = parks already
+    confirmed by their agency id: they leave the ordinary tiers and come LAST, read once if never read, then again only after
+    confirmed_refresh_days (a yearly re-read). A not-sure row or a dropped list that names a confirmed park still wins."""
     known = {}
     for area, parks in areas.items():
         if areas_only and area not in areas_only:
@@ -114,6 +120,11 @@ def build_worklist(areas, choose, keys, lists, refs, state, today, areas_only=No
         qsos = (known.get(ref) or (None, {}))[1].get('qsos') or 0
         return (best, -qsos, ref)
 
+    pri = [r for r in (priority or []) if isinstance(r, str)]
+    for ref in pri:
+        add(ref, 0, 'priority list')
+    conf = {r for r in (confirmed or []) if isinstance(r, str)}
+
     for ref in sorted(grouped, key=ns_key):
         why = (grouped[ref][0].get('why') or 'not sure')[:80]
         add(ref, 0, f'not sure: {why}')
@@ -127,10 +138,16 @@ def build_worklist(areas, choose, keys, lists, refs, state, today, areas_only=No
         if isinstance(ref, str):
             add(ref, 1, 'refs file')
 
-    tier2, tier3, tier4, tier5 = [], [], [], []
+    tier2, tier3, tier4, tier5, tier6 = [], [], [], [], []
     read = state.get('read') or {}
     for ref, (area, row) in known.items():
         if ref in used:
+            continue
+        if ref in conf:   # 21 Nov: confirmed by its agency id: last, and only when never read or a year old
+            when_c = (read.get(ref) or {}).get('date') or ''
+            age_c = age_days(when_c, today) if when_c else None
+            if not when_c or (age_c is not None and age_c >= confirmed_refresh_days):
+                tier6.append(ref)
             continue
         key = keys.get(ref) or {}
         grade = str(key.get('g') or '')
@@ -157,7 +174,61 @@ def build_worklist(areas, choose, keys, lists, refs, state, today, areas_only=No
         add(ref, 4, 'never read')
     for ref in sorted(tier5, key=by_old):
         add(ref, 5, f'older than {refresh_days} days')
+    for ref in sorted(tier6, key=by_old):
+        add(ref, 6, f'confirmed by id: read once, then every {confirmed_refresh_days} days')
     return order
+
+
+PRIVATE_TIERS = {'priority list': 'priority list', 'confirmed by id': 'confirmed by id'}
+
+
+def public_order(order, today=''):
+    """The worklist as it may be written to a public file: parks from the PRIVATE lists (the priority list, the confirmed-by-id
+    list) are left out and only counted."""
+    rows, counts = [], {}
+    for o in order or []:
+        w = str(o.get('why') or '')
+        key = 'priority list' if w == 'priority list' else 'confirmed by id' if w.startswith('confirmed by id') else ''
+        if key:
+            counts[key] = counts.get(key, 0) + 1
+        else:
+            rows.append(o)
+    return {'date': today, 'order': rows, 'private_list_parks': counts}
+
+
+class PrivateFileError(ValueError):
+    pass
+
+
+def private_refs(path, repo_root=None):
+    """Park refs from a PRIVATE file (CSV with a 'park' or 'ref' column, a JSON list, or {"parks": [...]}). The file must live
+    OUTSIDE any git working tree (it names parks; a repo file is refused). '' -> []."""
+    if not path:
+        return []
+    p = pathlib.Path(path).resolve()
+    roots = [pathlib.Path(repo_root).resolve()] if repo_root else []
+    roots += [d for d in [p.parent, *p.parents] if (d / '.git').exists()]
+    for r in roots:
+        try:
+            p.relative_to(r)
+        except ValueError:
+            continue
+        raise PrivateFileError(f'{p.name}: a private park list must not live inside a git repository ({r.name}); keep it on the PC')
+    text = p.read_text(encoding='utf-8-sig')
+    if text.lstrip().startswith(('[', '{')):
+        d = json.loads(text)
+        d = d.get('parks', []) if isinstance(d, dict) else d
+        return [str(x.get('ref') or x.get('park') if isinstance(x, dict) else x).strip() for x in d if x]
+    rows = csv.DictReader(io.StringIO(text))
+    col = next((c for c in (rows.fieldnames or []) if str(c).strip().lower() in ('park', 'ref')), None)
+    if not col:
+        raise PrivateFileError(f'{p.name}: no "park" or "ref" column')
+    out, seen = [], set()
+    for r in rows:
+        v = str(r.get(col) or '').strip()
+        if v and v not in seen:
+            seen.add(v); out.append(v)
+    return out
 
 
 def track(fact):

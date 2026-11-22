@@ -75,6 +75,8 @@ class SeqGetter:
     def get(self, url, rng=None, deadline=None, max_time=None):
         self.calls.append({'url': url, 'deadline': deadline, 'max_time': max_time})
         if self.deadline_on is not None and len(self.calls) >= self.deadline_on:
+            if deadline is not None:   # 21 Nov: the run's deadline is really reached before the getter says so
+                time.sleep(max(0, deadline - time.time()))
             return 'err:deadline', {}, b'', url
         if self.delay:
             # honour a deadline mid-download
@@ -108,7 +110,7 @@ def test_mid_download_deadline():
     getter = SeqGetter(deadline_on=2)  # first park ok, second download hits the cap
     state = {}
     facts, reqs = PP.read_parks(areas, web, docs, truth, getter, state, '2026-11-21',
-                                refs=['US-A1', 'US-A2'], deadline=time.time() + 30)
+                                refs=['US-A1', 'US-A2'], deadline=time.time() + 0.3)
     check('a mid-download deadline keeps the parks already read',
           'US-A1' in (facts.get('US-AK') or {}) and 'US-A2' not in (facts.get('US-AK') or {}))
     check('a mid-download deadline stops the run as minutes',

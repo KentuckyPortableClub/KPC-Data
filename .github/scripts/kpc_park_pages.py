@@ -12,10 +12,14 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import kpc_park_pages_rules as R  # noqa: E402
 import kpc_park_pages_work as W  # noqa: E402
 import kpc_not_sure as NS  # noqa: E402
+_HERE = pathlib.Path(__file__).resolve()
+# The repo root only when this file sits in the repo's .github/scripts; a PC kit (scripts/ in a plain folder) has none (21 Nov)
+REPO_ROOT = _HERE.parents[2] if (_HERE.parent.name, _HERE.parent.parent.name) == ('scripts', '.github') else None
 from kpc_manners import Manners, next_run, robots_block  # noqa: E402
 
 JOB = 'KPC park page reader'
 GET_MAX_SECONDS = 90  # wall-clock cap on one download; a slow trickle cannot run past this
+KEEP_ON_SKIP = ('refused', 'resting', 'script-built')   # a read that says nothing new keeps the earlier facts (21 Nov)
 
 
 def load_json(path, default):
@@ -177,6 +181,38 @@ class FixtureGetter:
         return rec.get('status', 200), headers, body, rec.get('final') or url
 
 
+class KeeperCopyGetter:
+    """21 Nov: read the keeper's saved copy of a page first (the same manifest format as the fixtures: pages {url: {file,
+    status, type, final}}). A page the keeper holds is never asked of the agency again. A page it does not hold goes to
+    the live getter (kpc_manners, robots.txt by our own parser, deadline and max_time), or, with no live getter, is a miss."""
+
+    def __init__(self, manifest, root, live=None):
+        self.copy = FixtureGetter(manifest, root)
+        self.live = live
+        self.calls = []
+        self.from_copy = 0
+
+    def links_for(self, url):
+        return self.copy.links_for(url) if self.copy._rec(url) is not None else []
+
+    def get(self, url, rng=None, deadline=None, max_time=None):
+        self.calls.append(url)
+        if self.copy._rec(url) is not None:
+            self.from_copy += 1
+            return self.copy.get(url, rng=rng)
+        if self.live is None:
+            return 'not-in-copy', {}, b'', url
+        return self.live.get(url, rng=rng, deadline=deadline, max_time=max_time)
+
+    def resting(self):
+        return self.live.resting() if self.live is not None and hasattr(self.live, 'resting') else {}
+
+
+def request_url(url):
+    """The address as it is sent: spaces, control and non-ASCII characters escaped; an address already escaped is unchanged."""
+    return urllib.parse.quote(url or '', safe="%:/?#[]@!$&'()*+,;=~")
+
+
 class LiveGetter:
     def __init__(self, state):
         resting = state.get('hosts') if isinstance(state.get('hosts'), dict) else None
@@ -185,7 +221,9 @@ class LiveGetter:
 
     def get(self, url, rng=None, deadline=None, max_time=None):
         self.calls.append(url)
-        return self.M.get(url, rng=rng, deadline=deadline, max_time=max_time)
+        # 21 Nov: a link with a space or other unsafe character ('...query=38.2, -106.7') is sent escaped; unescaped,
+        # urllib raised InvalidURL and the park was skipped on every run
+        return self.M.get(request_url(url), rng=rng, deadline=deadline, max_time=max_time)
 
     def resting(self):
         return self.M.resting()
@@ -310,8 +348,11 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
         return deadline is not None and time.time() >= deadline
 
     def is_deadline(page):
+        # 21 Nov: 'err:deadline' comes back both when the run's time is up and when ONE download passed its own cap
+        # (get_max_seconds). Only the first ends the run; a download cut at its cap is one slow page (read as resting).
         st = (page or {}).get('status')
-        return st == 'err:deadline' or (isinstance(st, str) and str(st).startswith('err:deadline'))
+        hit = st == 'err:deadline' or (isinstance(st, str) and str(st).startswith('err:deadline'))
+        return hit and time_up()
 
     def progress(area, count, note=''):
         if quiet:
@@ -325,7 +366,7 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
     def save_progress(index):
         if not out_dir:
             return
-        state['left'] = [r for _, r in sequence[index + 1:]]
+        state['left'] = sorted(r for _, r in sequence[index + 1:])   # 21 Nov: sorted, so a saved state never shows the private read order
         _write_progress(out_dir, out, state, state_path)
 
     def fetch(url, rng=None):
@@ -333,6 +374,10 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
         if not url or not budget_left():
             return None
         host = R.host_of(url)
+        if R.is_wdpa(url):
+            # never WDPA (21 Nov): not asked, not counted as a request
+            return {'url': url, 'final': url, 'status': 'refused', 'kind': 'refused', 'text': '', 'links': [],
+                    'fingerprint': '', 'html': '', 'title': '', 'heading': '', 'skipped': 'wdpa'}
         if host and _refused_until(state, host, today):
             return {'url': url, 'final': url, 'status': 'refused', 'kind': 'refused', 'text': '', 'links': [],
                     'fingerprint': '', 'html': '', 'title': '', 'heading': '', 'skipped': 'refused'}
@@ -393,7 +438,7 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
 
     def stop(reason, index):
         state['stopped'] = reason
-        state['left'] = [r for _, r in sequence[index:]]
+        state['left'] = sorted(r for _, r in sequence[index:])   # sorted: the private read order is never saved
         if reason == 'minutes' and index < len(sequence):
             area_now = sequence[index][0]
             c = dict(state.get('cutoff') or {})
@@ -465,6 +510,17 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
         main = fetch(url)
         if main is None or is_deadline(main):
             return stop('minutes' if (time_up() or is_deadline(main)) else 'requests', index)
+        if main.get('kind') in KEEP_ON_SKIP and prev.get('date'):
+            # 21 Nov: a refused, robots-blocked, resting or script-built read says nothing new about the park. The facts
+            # read before stay exactly as they were (merge_unchanged keeps the bytes), and the park is asked again next run.
+            skipped = R.build_facts(ref, area, pota, parks, asked, [main], today, [], 'unknown', 'the read was skipped',
+                                    read_blocks=False)
+            skipped['page']['kind'] = main.get('kind')
+            out[area][ref] = {'ref': ref, 'unchanged': True, 'keep_exact': True, 'fallback': skipped,
+                              'page': {'kind': main.get('kind'), 'read': today}, 'questions': []}
+            done += 1
+            save_progress(index)
+            continue
         if prev.get('fingerprint') and prev.get('url') == url and prev.get('fingerprint') == main.get('fingerprint'):
             # same text: keep the old facts, no new question
             out[area][ref] = {'ref': ref, 'unchanged': True, 'page': {'fingerprint': main.get('fingerprint'),
@@ -520,6 +576,7 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
                 fact['inside_of'] = []
                 fact['location'] = R._blank_location()
                 fact['name']['best'] = None
+                fact['confirm'] = R.confirm_block(fact, url, main.get('final') or '', '')
                 fact['questions'] = R.questions_for(fact)
             fact['questions'] = R.questions_for(fact)
             drafts = R.evidence_drafts(fact)
@@ -547,7 +604,7 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
         for a in finished:
             c.pop(a, None)
         state['cutoff'] = c
-    if isinstance(getter, LiveGetter):
+    if isinstance(getter, LiveGetter) or (isinstance(getter, KeeperCopyGetter) and getter.live is not None):
         state['hosts'] = getter.resting()
     return out, requests
 
@@ -603,13 +660,13 @@ def _write_progress(out_dir, facts_by_area, state, state_path):
     merge_unchanged(out_dir, facts_by_area)
     root = pathlib.Path(out_dir)
     for area, parks in facts_by_area.items():
-        save_json(root / 'facts' / f'{area}.json',
-                  {'area': area, 'reader': R.READER, 'parks': parks}, only_if_changed=True)
+        path = root / 'facts' / f'{area}.json'
+        save_json(path, {'area': area, 'reader': R.READER, 'parks': area_parks_to_save(path, parks)}, only_if_changed=True)
     if state_path:
         save_json(state_path, state, only_if_changed=True)
 
 
-def pick_walk_area(areas, done, state, area_refs=None):
+def pick_walk_area(areas, done, state, area_refs=None, rank=None):
     """Choose the next US area for a timed walk.
 
     areas: sorted area codes. done: area codes that already have a facts file.
@@ -622,6 +679,9 @@ def pick_walk_area(areas, done, state, area_refs=None):
     cutoff = dict(state.get('cutoff') or {})
     stuck = [a for a in (state.get('stuck') or []) if a]
     areas = list(areas or [])
+    if rank:   # 21 Nov: the coverage ranking (biggest agencies first); areas it does not name keep their order after it
+        pos = {a: i for i, a in enumerate(rank)}
+        areas = sorted(areas, key=lambda a: (pos.get(a, len(pos)), areas.index(a)))
     done = set(done or [])
     area_refs = area_refs or {}
 
@@ -666,7 +726,7 @@ def pick_walk_area(areas, done, state, area_refs=None):
     todo = next_todo()
     out = todo[0] if todo else ''
     if out:
-        why = f'{out}: the next state with no facts ({len(todo)} left)'
+        why = f'{out}: the next state with no facts ({len(todo)} left)' + (' (coverage ranking: biggest agencies first)' if rank else '')
     else:
         why = 'every state has facts: nothing to read'
         if stuck:
@@ -674,10 +734,97 @@ def pick_walk_area(areas, done, state, area_refs=None):
     return out, why, state
 
 
+ORDER_FILE = pathlib.Path(__file__).resolve().parents[1] / 'park-pages-order.json'
+
+
+def coverage_order(csv_path):
+    """The walk order from the coverage list (area, agency_web_domain, pota_parks ...; biggest rows first): each area at the
+    place of its biggest agency row that has a web link. '(no web link)' rows have nothing to read and do not rank."""
+    import csv
+    with open(csv_path, encoding='utf-8-sig', newline='') as f:
+        rows = list(csv.DictReader(f))
+    def n(r):
+        try:
+            return int(str(r.get('pota_parks') or '0').strip())
+        except ValueError:
+            return 0
+    rows = [r for r in rows if (r.get('agency_web_domain') or '').strip() and 'no web link' not in r['agency_web_domain']]
+    rows.sort(key=lambda r: -n(r))
+    order, top = [], {}
+    for r in rows:
+        a, d = (r.get('area') or '').strip(), r['agency_web_domain'].strip()
+        if not a:
+            continue
+        if a not in order:
+            order.append(a)
+        top.setdefault(a, [])
+        if len(top[a]) < 3:
+            top[a].append([d, n(r)])
+    # areas whose rows are all '(no web link)' in the coverage list come after, biggest first: POTA's own list may still
+    # hold a link for some of their parks, and the reader reads those
+    with open(csv_path, encoding='utf-8-sig', newline='') as f:
+        allrows = list(csv.DictReader(f))
+    tot = {}
+    for r in allrows:
+        a = (r.get('area') or '').strip()
+        if a:
+            tot[a] = tot.get(a, 0) + n(r)
+    after = sorted((a for a in tot if a not in order), key=lambda a: -tot[a])
+    return {'about': 'Page reader walk order: each area ranked by its biggest agency with a web link (coverage list), then the '
+                     'areas the list shows with no web link, biggest first. Made by kpc_park_pages.py coverage-order; counts '
+                     'and web domains only.',
+            'source': os.path.basename(csv_path), 'areas': order + after, 'ranked_by_agency': len(order),
+            'top_agencies': top}
+
+
+def walk_rank(path=None):
+    """The ranked area list, or [] when the order file is missing or unreadable (the walk then keeps its old order)."""
+    doc = load_json(path or ORDER_FILE, {})
+    areas = doc.get('areas') if isinstance(doc, dict) else None
+    return [a for a in areas if isinstance(a, str)] if isinstance(areas, list) else []
+
+
+CONFIRM_FIELDS = ('agency_id', 'size', 'manager', 'address', 'coords', 'map_link')
+
+
+def confirm_counts(facts_by_area):
+    """Public counts only: per state and per agency web host, how many parks have each confirming fact (and how many unclear)."""
+    by_state, by_agency = {}, {}
+    for area, parks in facts_by_area.items():
+        for ref, fact in parks.items():
+            c = (fact or {}).get('confirm')
+            if not isinstance(c, dict):
+                continue
+            host = R.base_host((fact.get('page') or {}).get('final_host') or (fact.get('page') or {}).get('host') or '') or '(no host)'
+            for bucket, key in ((by_state, area), (by_agency, host)):
+                row = bucket.setdefault(key, {'parks': 0})
+                row['parks'] += 1
+                for k in CONFIRM_FIELDS:
+                    v = c.get(k)
+                    if isinstance(v, dict) and v.get('unclear'):
+                        row[k + ' unclear'] = row.get(k + ' unclear', 0) + 1
+                    elif v:
+                        row[k] = row.get(k, 0) + 1
+    return {'about': 'Confirming facts the page reader found, counted by state and by agency web host. Counts only.',
+            'confirm': R.CONFIRM, 'by_state': dict(sorted(by_state.items())),
+            'by_agency': dict(sorted(by_agency.items(), key=lambda kv: -kv[1]['parks']))}
+
+
+def area_parks_to_save(path, parks):
+    """21 Nov: the parks to write for one area: every park already in the file, with this run's parks over them. Before, the
+    file was replaced by this run's parks alone, so a run that stopped part way (or saved after each park) wiped the facts of
+    every park it had not reached yet, and a park re-read as unchanged lost its full fact (only a stub was left)."""
+    old = load_json(path, {}).get('parks') or {}
+    keep = dict(old)
+    keep.update(parks)
+    return keep
+
+
 def write_facts(out_dir, facts_by_area):
     root = pathlib.Path(out_dir)
     for area, parks in facts_by_area.items():
-        save_json(root / 'facts' / f'{area}.json', {'area': area, 'reader': R.READER, 'parks': parks},
+        path = root / 'facts' / f'{area}.json'
+        save_json(path, {'area': area, 'reader': R.READER, 'parks': area_parks_to_save(path, parks)},
                   only_if_changed=True)
 
 
@@ -688,6 +835,10 @@ def merge_unchanged(out_dir, facts_by_area):
         path = root / 'facts' / f'{area}.json'
         old = load_json(path, {}).get('parks') or {}
         for ref, fact in list(parks.items()):
+            if fact.get('keep_exact'):
+                # a skipped read: the earlier fact, byte for byte; with no earlier fact, the skipped one
+                parks[ref] = old[ref] if ref in old else fact.get('fallback') or {'ref': ref}
+                continue
             if fact.get('unchanged') and ref in old:
                 kept = old[ref]
                 page = dict(kept.get('page') or {})
@@ -730,8 +881,11 @@ def _prepare(args):
     def choose(ref, row):
         return choose_link(ref, row, web, docs)[0]
 
+    priority = W.private_refs(getattr(args, 'priority_file', ''), REPO_ROOT)   # 21 Nov: the likely-mismatch list (private)
+    confirmed = W.private_refs(getattr(args, 'confirmed_file', ''), REPO_ROOT)   # parks confirmed by their agency id (private)
     order = W.build_worklist(areas, choose, keys, lists, refs, state, today, areas_only=areas_only,
-                             refresh_days=args.refresh_days, not_sure=ns_rows)
+                             refresh_days=args.refresh_days, not_sure=ns_rows, priority=priority, confirmed=confirmed,
+                             confirmed_refresh_days=getattr(args, 'confirmed_refresh_days', W.CONFIRMED_REFRESH_DAYS))
     return areas, web, docs, truth, state, state_path, today, areas_only, lists, order
 
 
@@ -749,10 +903,11 @@ def _finish(args, facts, order, lists, state, state_path, today, requests, old_f
     full = list(order) + [{'ref': ref, 'area': area, 'tier': 9, 'why': ''}
                           for area, parks in facts.items() for ref in parks if ref not in seen]
     W.write_tables(args.out, facts, full, lists, today)
+    save_json(root / 'confirm-counts.json', confirm_counts(facts))
     W.append_changes(root / 'changes.csv', changes)
     lines = W.render_summary(facts, order, state, today, requests)
     (root / 'summary.md').write_text('\n'.join(lines) + '\n', encoding='utf-8')
-    save_json(root / 'worklist.json', {'date': today, 'order': order})
+    save_json(root / 'worklist.json', W.public_order(order, today))   # 21 Nov: private-list parks are counted, not named
     save_json(root / 'run.json', {'reader': R.READER, 'date': today, 'requests': requests,
               'parks': sum(len(v) for v in facts.values()), 'left': len(state.get('left') or []),
               'stopped': state.get('stopped') or ''})
@@ -772,10 +927,10 @@ def _finish(args, facts, order, lists, state, state_path, today, requests, old_f
 def cmd_worklist(args):
     areas, web, docs, truth, state, state_path, today, areas_only, lists, order = _prepare(args)
     if args.out:
-        save_json(pathlib.Path(args.out) / 'worklist.json', {'date': today, 'order': order})
+        save_json(pathlib.Path(args.out) / 'worklist.json', W.public_order(order, today))
     if not args.quiet:
         print(f'Worklist: {len(order)} parks. Lists: {len(lists)}.')
-        for row in order[:20]:
+        for row in W.public_order(order)['order'][:20]:
             print(f"{row['tier']} {row['ref']} {row['why']}")
         if len(order) > 20:
             print(f'... {len(order) - 20} more')
@@ -787,15 +942,21 @@ def cmd_read(args):
     if not areas:
         print('No stored parks. Nothing was read.')
         return 0
+    keeper = getattr(args, 'keeper_copies', '') or ''
     if args.fixtures:
         getter = FixtureGetter(load_json(args.fixtures, {}), pathlib.Path(args.fixtures).parent)
+    elif keeper:
+        man = pathlib.Path(keeper) / 'manifest.json' if pathlib.Path(keeper).is_dir() else pathlib.Path(keeper)
+        live = None if os.environ.get('KPC_NO_NET') == '1' else LiveGetter(state)
+        getter = KeeperCopyGetter(load_json(man, {}), man.parent, live)
     elif os.environ.get('KPC_NO_NET') == '1':
         print('No fixtures and the network is closed. Nothing was read.')
         return 0
     else:
         getter = LiveGetter(state)
     # A plain --refs still limits the read, in the worklist's order. With no worklist hits, read nothing new.
-    use_list = bool(args.lists or args.links or args.refs or args.refs_file or args.areas or getattr(args, 'not_sure', ''))
+    use_list = bool(args.lists or args.links or args.refs or args.refs_file or args.areas or getattr(args, 'not_sure', '')
+                    or getattr(args, 'priority_file', '') or getattr(args, 'confirmed_file', ''))   # 21 Nov: a PC run with only the private lists
     refs = [row['ref'] for row in order] if use_list else None
     if refs is not None and not refs:
         if not args.quiet:
@@ -816,9 +977,18 @@ def cmd_read(args):
     if state_path:
         save_json(state_path, state)
 
+    # 21 Nov: the count is the park's place on this run's list, which starts at 1 every run. Parks read before (inside the
+    # refresh window) are passed over in a moment, so say so first: '1130 of 15000' looked like the reader had started over.
+    seen = state.get('read') or {}
+    listed = refs if refs is not None else [r for k, v in areas.items() if not areas_only or k in areas_only for r in v]
+    before = sum(1 for r in listed if r in seen)
+    if not args.quiet:
+        print(f'The list has {total:,} parks. {before:,} of them were read before: they are passed over in a moment unless their '
+              f'page is due again, so the count runs fast through them. The others are read now.', flush=True)
+
     def on_park(i, ref):
         if not args.quiet:
-            print(f'Reading {i} of {total} parks ({ref}).', flush=True)
+            print(f'Park {i:,} of {total:,} on the list ({ref}){"  (read before)" if ref in seen else ""}.', flush=True)
 
     deadline = time.time() + args.max_minutes * 60 if args.max_minutes else None
     get_max = getattr(args, 'max_get_seconds', None)
@@ -889,6 +1059,17 @@ def _note_pictures(args, facts, getter, reqs, deadline, today):
                                    'note': 'picture for a reviewer, not a source'}
     write_facts(args.out, facts)
     return reqs
+
+
+def cmd_coverage_order(args):
+    if not args.coverage:
+        print('coverage-order needs --coverage <pota-agencies-by-area CSV>')
+        return 2
+    doc = coverage_order(args.coverage)
+    out = pathlib.Path(args.out) if args.out else ORDER_FILE
+    save_json(out, doc)
+    print(f"{len(doc['areas'])} areas ranked; wrote {out}")
+    return 0
 
 
 def cmd_report(args):
@@ -1109,6 +1290,8 @@ def main(argv=None):
     p.add_argument('--out', default='')
     p.add_argument('--state', default='')
     p.add_argument('--fixtures', default='')
+    p.add_argument('--keeper-copies', default='', help="the keeper's saved page copies (a manifest.json like the fixtures'); read first")
+    p.add_argument('--coverage', default='', help='coverage-order: the pota-agencies-by-area CSV')
     p.add_argument('--areas', default='')
     p.add_argument('--refs', default='')
     p.add_argument('--refs-file', default='')
@@ -1124,6 +1307,9 @@ def main(argv=None):
     p.add_argument('--lists', default='')
     p.add_argument('--lists-done', default='')
     p.add_argument('--not-sure', default='')
+    p.add_argument('--priority-file', default='', help='PRIVATE list of parks to read first (the likely mismatches); never a repo file')
+    p.add_argument('--confirmed-file', default='', help='PRIVATE list of parks confirmed by agency id: read last, then yearly')
+    p.add_argument('--confirmed-refresh-days', type=int, default=W.CONFIRMED_REFRESH_DAYS)
     p.add_argument('--html', default='')
     p.add_argument('--pc', action='store_true')
     p.add_argument('--n', type=int, default=40)
@@ -1174,6 +1360,8 @@ def _dispatch(args):
         return cmd_kits(args)
     if args.command == 'score':
         return cmd_score(args)
+    if args.command == 'coverage-order':
+        return cmd_coverage_order(args)
     p.print_help()
     return 2
 

@@ -6,13 +6,14 @@ map-link score come from the truth checker and the documents bot. This file adds
 only what those readers do not say: labels, combined names, addresses, and the
 questions.
 """
-import hashlib, json, math, os, re, sys
+import hashlib, json, math, os, re, sys, zlib
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import kpc_truth_bot as TB  # noqa: E402
 from kpc_docs_bot import gov_of, map_score, host_of, base_host, via_of  # noqa: E402
-from kpc_manners import page_text, links_in, pdf_text, next_run, robots_block  # noqa: E402
+from kpc_manners import page_text, links_in, pdf_text, next_run, robots_block, looks_binary  # noqa: E402
 
 READER = 'v1'
+CONFIRM = 'confirm 2026-11-21'
 QUOTE_MAX = 200
 REFRESH_DAYS = 30
 REFUSAL_DAYS = 30
@@ -238,11 +239,73 @@ def cut_tail(s):
     return TAILS.sub('', str(s or '')).strip(' \t-•|')
 
 
+# 21 Nov (owner, 8:17 PM: "If they look like official websites ... fix it so it will read it"): the agencies' own web sites that
+# are not on a .gov / .gc.ca / canada.ca address. Each is the managing body itself (a government, its crown corporation, a
+# statutory conservation authority or a city), or the land trust that owns the place. A host matches itself and its subdomains.
+# Never here: Wikipedia, map and trail sites (mapcarta, AllTrails, Avenza), plain arcgis.com, WDPA / Protected Planet,
+# directories (stateparks.com), clubs and other non-profits that do not own or run the park.
+OFFICIAL_SITES = {
+    # Canada: provinces and territories, their park agencies and crown corporations
+    'bcparks.ca': 'British Columbia', 'gov.bc.ca': 'British Columbia', 'sitesandtrailsbc.ca': 'British Columbia',
+    'albertaparks.ca': 'Alberta', 'alberta.ca': 'Alberta', 'tourismsaskatchewan.com': 'Saskatchewan', 'saskparks.com': 'Saskatchewan',
+    'gov.sk.ca': 'Saskatchewan', 'gov.mb.ca': 'Manitoba', 'manitoba.ca': 'Manitoba', 'ontarioparks.com': 'Ontario',
+    'ontarioparks.ca': 'Ontario', 'ontario.ca': 'Ontario', 'gouv.qc.ca': 'Quebec', 'sepaq.com': 'Quebec',
+    'gnb.ca': 'New Brunswick', 'nbparks.ca': 'New Brunswick', 'tourismnewbrunswick.ca': 'New Brunswick',
+    'novascotia.ca': 'Nova Scotia', 'novascotia.com': 'Nova Scotia', 'princeedwardisland.ca': 'Prince Edward Island',
+    'gov.pe.ca': 'Prince Edward Island', 'tourismpei.com': 'Prince Edward Island', 'gov.nl.ca': 'Newfoundland and Labrador',
+    'parksnl.ca': 'Newfoundland and Labrador', 'yukon.ca': 'Yukon', 'yukonhistoricplaces.ca': 'Yukon',
+    'nwtparks.ca': 'Northwest Territories', 'gov.nt.ca': 'Northwest Territories', 'nunavutparks.com': 'Nunavut',
+    'gov.nu.ca': 'Nunavut', 'nunavikparks.ca': 'Nunavik (Kativik Regional Government)',
+    # Canada: national programs run by Parks Canada with the provinces
+    'historicplaces.ca': 'Canada (Canadian Register of Historic Places)', 'chrs.ca': 'Canada (Canadian Heritage Rivers System)',
+    # Canada: Ontario conservation authorities (public bodies under the Conservation Authorities Act)
+    'trca.ca': 'Ontario CA', 'grandriver.ca': 'Ontario CA', 'conservationhamilton.ca': 'Ontario CA', 'greysauble.on.ca': 'Ontario CA',
+    'npca.ca': 'Ontario CA', 'saugeenconservation.ca': 'Ontario CA', 'thamesriver.on.ca': 'Ontario CA', 'quinteconservation.ca': 'Ontario CA',
+    'nvca.on.ca': 'Ontario CA', 'cvc.ca': 'Ontario CA', 'grca.on.ca': 'Ontario CA', 'rvca.ca': 'Ontario CA', 'cloca.com': 'Ontario CA',
+    'essexregionconservation.ca': 'Ontario CA', 'conservationhalton.ca': 'Ontario CA', 'lprca.on.ca': 'Ontario CA',
+    'lsrca.on.ca': 'Ontario CA', 'scrca.on.ca': 'Ontario CA', 'otonabeeconservation.com': 'Ontario CA',
+    'kettlecreekconservation.on.ca': 'Ontario CA', 'catfishcreek.ca': 'Ontario CA', 'cataraquiconservation.ca': 'Ontario CA',
+    'mtmconservation.org': 'Ontario CA',
+    # Canada: cities and regional districts that run their own parks
+    'metrovancouver.org': 'Metro Vancouver', 'crd.bc.ca': 'Capital Regional District', 'fvrd.ca': 'Fraser Valley Regional District',
+    'vancouver.ca': 'Vancouver', 'surrey.ca': 'Surrey', 'burnaby.ca': 'Burnaby', 'coquitlam.ca': 'Coquitlam',
+    'portcoquitlam.ca': 'Port Coquitlam', 'westvancouver.ca': 'West Vancouver', 'nvrc.ca': 'North Vancouver', 'tol.ca': 'Langley Township',
+    'kelowna.ca': 'Kelowna', 'calgary.ca': 'Calgary', 'winnipeg.ca': 'Winnipeg', 'toronto.ca': 'Toronto', 'montreal.ca': 'Montreal',
+    'pointe-claire.ca': 'Pointe-Claire', 'vsj.ca': 'Saint-Jerome', 'ville.saguenay.ca': 'Saguenay', 'saint-hippolyte.ca': 'Saint-Hippolyte',
+    'saintjohn.ca': 'Saint John', 'oromocto.ca': 'Oromocto', 'quispamsis.ca': 'Quispamsis', 'sussex.ca': 'Sussex',
+    'townofhudsonbay.com': 'Hudson Bay',
+    # United States: state agencies on .com / .org addresses
+    'georgiawildlife.com': 'Georgia', 'gastateparks.org': 'Georgia', 'gatrees.org': 'Georgia', 'agfc.com': 'Arkansas',
+    'arkansasstateparks.com': 'Arkansas', 'arkansasheritage.com': 'Arkansas', 'arkansas.com': 'Arkansas',
+    'wildlifedepartment.com': 'Oklahoma', 'travelok.com': 'Oklahoma', 'okhistory.org': 'Oklahoma', 'mdwfp.com': 'Mississippi',
+    'ksoutdoors.com': 'Kansas', 'kshs.org': 'Kansas', 'mysuwanneeriver.com': 'Florida', 'nwfwater.com': 'Florida',
+    'tnstateparks.com': 'Tennessee', 'nhstateparks.org': 'New Hampshire', 'michigandnr.com': 'Michigan',
+    'vtstateparks.com': 'Vermont', 'southcarolinaparks.com': 'South Carolina', 'ncwildlife.org': 'North Carolina',
+    'ncesf.org': 'North Carolina', 'myodfw.com': 'Oregon', 'state.nj.us': 'New Jersey', 'lastateparks.com': 'Louisiana',
+    'azstateparks.com': 'Arizona', 'azgfd.com': 'Arizona', 'huntillinois.org': 'Illinois', 'alapark.com': 'Alabama',
+    'outdooralabama.com': 'Alabama', 'alabamaforeverwild.com': 'Alabama', 'destateparks.com': 'Delaware',
+    'indianamuseum.org': 'Indiana', 'ndow.org': 'Nevada', 'nmhistoricsites.org': 'New Mexico', 'riparks.com': 'Rhode Island',
+    'ag.ndsu.edu': 'North Dakota (Forest Service)', 'tva.com': 'Tennessee Valley Authority',
+    # Land trusts that own and run the place
+    'natureconservancy.ca': 'land trust (owner)', 'naturetrust.nb.ca': 'land trust (owner)', 'islandnaturetrust.ca': 'land trust (owner)',
+    'nature.org': 'land trust (owner)', 'triangleland.org': 'land trust (owner)',
+}
+
+
+def official_site(h):
+    """Who runs a host on OFFICIAL_SITES ('' when it is not there). A host matches itself and its subdomains."""
+    b = base_host((h or '').lower().rstrip('.'))
+    for site, who in OFFICIAL_SITES.items():
+        if b == site or b.endswith('.' + site):
+            return who
+    return ''
+
+
 def official_host(url):
     h = host_of(url or '')
     if not h:
         return False
-    if gov_of(h):
+    if gov_of(h) or official_site(h):
         return True
     b = base_host(h)
     return b.endswith('.gov') or b.endswith('.mil') or b.endswith('.gc.ca') or '.gov.' in b
@@ -1079,9 +1142,73 @@ def evidence_drafts(fact):
     return rows
 
 
+CHARSET_META = re.compile(rb'<meta[^>]{0,200}?charset\s*=\s*["\']?\s*([A-Za-z0-9_.:-]{2,40})', re.I)
+
+
+def decode_body(body, headers=None):
+    """21 Nov: a page's bytes as text in ITS character set: the Content-Type header's charset, else a <meta charset> near
+    the top, else UTF-8 when the bytes are valid UTF-8, else Windows-1252 (the usual one for older French and English
+    government pages). Before, every page was read as UTF-8, so 'Réserve écologique' on a Latin-1 page came out as
+    'R?serve ?cologique' and its name never matched."""
+    if isinstance(body, str):
+        return body
+    body = body or b''
+    ctype = ''
+    if isinstance(headers, dict):
+        ctype = str(headers.get('content-type') or headers.get('Content-Type') or '')
+    m = re.search(r'charset\s*=\s*["\']?([A-Za-z0-9_.:-]+)', ctype, re.I)
+    names = [m.group(1)] if m else []
+    mm = CHARSET_META.search(body[:4096])
+    if mm:
+        names.append(mm.group(1).decode('ascii', 'replace'))
+    for cs in names:
+        try:
+            return body.decode(cs.strip().lower().replace('latin-1', 'latin_1'))
+        except (LookupError, UnicodeDecodeError):
+            continue
+    try:
+        return body.decode('utf-8')
+    except UnicodeDecodeError:
+        return body.decode('cp1252', 'replace')
+
+
+UNPACK_MAX = 20_000_000   # bytes: an unpacked page is never allowed to grow past this
+
+
+def undo_compression(body, headers=None):
+    """21 Nov: some servers send a page gzip- or deflate-packed although the reader never asks for it (southcarolinaparks.com
+    did), and the packed bytes were read as text: the park's 'name' came out as gibberish. -> (bytes, note). A gzip page is
+    known by its header or its first two bytes; deflate by its header. Brotli / zstd cannot be unpacked with Python alone:
+    the page gives no text (note says why) instead of gibberish. A page cut off by the size cap unpacks as far as it goes."""
+    if not isinstance(body, (bytes, bytearray)) or not body:
+        return body, ''
+    enc = ''
+    if isinstance(headers, dict):
+        enc = str(headers.get('content-encoding') or headers.get('Content-Encoding') or '').lower()
+    body = bytes(body)
+    tries = []
+    if body[:2] == b'\x1f\x8b' or 'gzip' in enc:
+        tries = [16 + zlib.MAX_WBITS]
+    elif 'deflate' in enc:
+        tries = [zlib.MAX_WBITS, -zlib.MAX_WBITS]
+    elif enc and enc not in ('identity', 'none'):
+        return b'', f'the page was sent {enc}-packed and cannot be unpacked here'
+    for wb in tries:
+        try:
+            return zlib.decompressobj(wb).decompress(body, UNPACK_MAX), ''
+        except zlib.error:
+            continue
+    if tries and body[:2] == b'\x1f\x8b':
+        return b'', 'the page was sent packed and could not be unpacked'
+    return body, ''
+
+
 def visible_of(body, headers, url, extra_links=None):
     """Turn a fetched body into text, a title, and links. HTML, plain text, or a PDF."""
-    raw = body if isinstance(body, str) else (body or b'').decode('utf-8', 'replace')
+    body, packed = undo_compression(body, headers)
+    if packed:
+        return {'text': '', 'html': '', 'title': '', 'heading': '', 'links': list(extra_links or []), 'pdf': False, 'note': packed}
+    raw = decode_body(body, headers)
     ctype = ''
     if isinstance(headers, dict):
         ctype = str(headers.get('content-type') or headers.get('Content-Type') or '')
@@ -1089,8 +1216,8 @@ def visible_of(body, headers, url, extra_links=None):
     is_pdf = 'pdf' in ctype.lower() or urllib_path(url).lower().endswith('.pdf')
     if is_pdf:
         text = pdf_text(body if isinstance(body, (bytes, bytearray)) else raw.encode('utf-8', 'replace'), pages=2)
-        if not text.strip():
-            text = raw
+        if not text.strip() and not looks_binary(raw[:4000]):
+            text = raw      # 21 Nov: only a PDF address that answered with plain text; a PDF's own packed bytes are never read as its words
         return {'text': text, 'html': '', 'title': '', 'heading': '', 'links': links, 'pdf': True}
     if raw.lstrip().startswith('<') or '<html' in raw[:500].lower() or '<title' in raw[:800].lower():
         text = page_text(raw)
@@ -1176,7 +1303,10 @@ def build_facts(ref, area, pota, area_parks, asked, pages, today, shared_with, o
         for p in pages:
             if p.get('kind') == 'script-built':
                 continue
-            sizes.extend(sizes_labelled(p.get('text') or '', pota.get('name') or name.get('best') or '', pota.get('type') or ''))
+            src = p.get('final') or p.get('url') or ''
+            for row in sizes_labelled(p.get('text') or '', pota.get('name') or name.get('best') or '', pota.get('type') or ''):
+                row['source_url'] = src if src and not is_wdpa(src) else ''   # the page the figure came from (21 Nov)
+                sizes.append(row)
         sizes = _dedupe_sizes(sizes)
     elif read_blocks and unofficial and name.get('best'):
         pass
@@ -1216,6 +1346,7 @@ def build_facts(ref, area, pota, area_parks, asked, pages, today, shared_with, o
         'unofficial': unofficial,
     }
     fact['name']['vs_pota'] = name.get('vs_pota')
+    fact['confirm'] = confirm_block(fact, asked.get('url') or '', main.get('final') or '', main_text if read_blocks else '')
     fact['questions'] = questions_for(fact)
     drafts = evidence_drafts(fact)
     fact['evidence_draft'] = drafts[0] if drafts else None
@@ -1350,3 +1481,148 @@ def _maps(main, pota, pages):
 
 def park_radius_note():
     return 'radius from a clean total size only; no size means no PIN_FAR question'
+
+
+# ---------------------------------------------------------------------------------------------------------------------
+# Confirming facts (21 Nov 2026, KPC owner): what confirms a park by more than its name, each with a short quote or its
+# address, or silence. Nothing here guesses: an id comes only from a known agency address rule (the link bot's rules) or a
+# labelled line on the page; a size only from a clean total with the page it came from; a manager only from the agency's
+# own host or a "managed by" sentence that is not site chrome. WDPA is never read.
+WDPA_RX = re.compile(r'protectedplanet|wdpa', re.I)
+PAGE_ID_RX = re.compile(r'(?m)^[ \t]*(?P<label>(?:park|unit|site|property|area|facility|reserve|refuge|wma|forest)\s+'
+                        r'(?:id|code|number|no\.?|#))[ \t]*[:#][ \t]*(?P<value>[A-Z0-9][A-Z0-9-]{1,14})[ \t]*$', re.I)
+ADDR_ORDER = {'park': 0, 'visitor-centre': 1, 'office': 2, 'mailing': 3, 'unknown': 4}
+_LI = None
+
+
+def is_wdpa(url):
+    return bool(WDPA_RX.search(str(url or '')))
+
+
+def _link_rules():
+    """The link bot's address rules (draft/tools/kpc_link_ids): the one place that knows which address part is an agency id."""
+    global _LI
+    if _LI is None:
+        here = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'draft', 'tools', 'kpc_link_ids')
+        if here not in sys.path:
+            sys.path.insert(0, here)
+        try:
+            import kpc_link_ids as LI
+            _LI = LI
+        except ImportError:
+            _LI = False
+    return _LI or None
+
+
+def id_from_address(url):
+    """(id kind, value) from a known agency's page address, or None. Never a guess (no rule, no id)."""
+    LI = _link_rules()
+    if not LI or not url or is_wdpa(url):
+        return None
+    pu, host, segs = LI.split_link(url)
+    if not pu:
+        return None
+    got = LI.id_rules(host, pu, segs)
+    return (got[0], str(got[1]).strip()) if got and str(got[1] or '').strip() else None
+
+
+def ids_on_page(text):
+    """[(label, value, quote)] for labelled id lines ('Park ID: 1234'), one per line. Free text is never read as an id."""
+    out = []
+    for m in PAGE_ID_RX.finditer(text or ''):
+        v = m.group('value').strip()
+        if not re.search(r'\d', v) and len(v) < 3:
+            continue
+        out.append((' '.join(m.group('label').split()).lower(), v.upper(), clip(m.group(0).strip(), 80)))
+    return out
+
+
+def confirm_agency_id(asked_url, final_url, text):
+    """The agency's park id: from the official address (asked or final), or a labelled line on the page. Two different ids,
+    or an address id the page contradicts, are UNCLEAR and no value is kept."""
+    seen = []
+    for u in (asked_url, final_url):
+        got = id_from_address(u)
+        if got and got not in [(k, v) for k, v, _f, _q in seen]:
+            seen.append((got[0], got[1], 'address', u))
+    page = ids_on_page(text)
+    vals = {(k, v) for k, v, _f, _q in seen}
+    if len({v for _k, v in vals}) > 1:
+        return {'unclear': 'the address and where it led give two different ids'}
+    if seen:
+        kind, val, _f, url = seen[0]
+        for label, pv, quote in page:
+            if pv.lstrip('0') != val.upper().lstrip('0') and re.search(r'\d', pv) and re.search(r'\d', val):
+                return {'unclear': 'the page states another id than its address', 'quote': quote}
+        both = any(pv.lstrip('0') == val.upper().lstrip('0') for _l, pv, _q in page)
+        return {'kind': kind, 'value': val, 'from': 'address and page' if both else 'address', 'url': url}
+    if page:
+        if len({pv for _l, pv, _q in page}) > 1:
+            return {'unclear': 'the page states two different ids'}
+        label, pv, quote = page[0]
+        return {'kind': f'page label: {label}', 'value': pv, 'from': 'page', 'quote': quote}
+    return None
+
+
+def confirm_size(sizes):
+    """One clean total size that names the page it came from, or None. Two different clean totals: no size (unclear)."""
+    clean = [s for s in sizes or [] if s.get('total') and s.get('clean') and s.get('source_url') and not is_wdpa(s['source_url'])]
+    if not clean:
+        return None
+    acres = {round(float(s['acres']), 1) for s in clean}
+    if len(acres) > 1 and (max(acres) - min(acres)) > max(0.6, 0.005 * max(acres)):
+        return {'unclear': 'the page gives two different total sizes'}
+    s = clean[0]
+    return {'acres': s['acres'], 'as': s.get('as') or '', 'quote': s.get('quote') or s.get('line') or '', 'source_url': s['source_url'],
+            'label': s.get('label') or ''}
+
+
+def confirm_manager(mgr):
+    """The managing agency: the agency's own host, or a 'managed by' sentence that is not site chrome."""
+    if not mgr:
+        return None
+    if mgr.get('agency'):
+        return {'agency': mgr['agency'], 'from': 'the agency\'s own web host', 'quote': mgr.get('quote') or ''}
+    q, office = mgr.get('quote') or '', mgr.get('office') or ''
+    if q and not is_menu_chrome(q) and not is_menu_chrome(office) and len(office) <= 80:
+        return {'agency': office, 'from': 'a managed-by sentence', 'quote': q}
+    return None
+
+
+def confirm_place(loc):
+    """The best address (park first, then visitor centre, office, mailing) and the best point (a park point, not far from
+    POTA's pin; else a visitor centre). An unknown-role point is not kept."""
+    addrs = sorted(loc.get('addresses') or [], key=lambda a: ADDR_ORDER.get(a.get('role'), 9))
+    addr = {'text': addrs[0]['text'], 'role': addrs[0]['role']} if addrs and addrs[0].get('text') else None
+    pts = [c for c in loc.get('coords') or [] if c.get('role') in ('park', 'visitor-centre') and not c.get('pin_far')]
+    pts.sort(key=lambda c: (c.get('role') != 'park',))
+    pt = None
+    if pts:
+        c = pts[0]
+        pt = {'lat': c['lat'], 'lon': c['lon'], 'role': c['role'], 'from': c.get('from') or '', 'km_from_pin': c.get('km_from_pin')}
+    return addr, pt
+
+
+def confirm_map_link(maps):
+    """The official map: a map link that names the park, on an agency host, never a WDPA site. A file before a web map."""
+    rows = [m for m in maps or [] if m.get('names_park') and official_host(m.get('url') or '') and not is_wdpa(m.get('url'))]
+    rows.sort(key=lambda m: ({'pdf': 0, 'gis': 1, 'image': 2}.get(m.get('kind'), 3),))
+    if not rows:
+        return None
+    m = rows[0]
+    return {'url': m['url'], 'kind': m.get('kind') or '', 'text': clip(m.get('text') or '', 80)}
+
+
+def confirm_block(fact, asked_url, final_url, main_text):
+    """fact['confirm']: the confirming facts, each silent (None) when the page does not state it plainly."""
+    if fact.get('unofficial'):
+        return {'agency_id': None, 'size': None, 'manager': None, 'address': None, 'coords': None, 'map_link': None}
+    addr, pt = confirm_place(fact.get('location') or {})
+    own = (fact.get('own_page') or {}).get('is') == 'own'
+    shared = {'unclear': 'the page is not this park\'s own (shared or a list)'}
+    # an id, a size, a point or a map on a page several parks share may be a sibling's: kept only on the park's own page
+    return {'agency_id': confirm_agency_id(asked_url, final_url, main_text) if own else (shared if id_from_address(asked_url) else None),
+            'size': confirm_size(fact.get('sizes')) if own else None,
+            'manager': confirm_manager(fact.get('manager')),
+            'address': addr, 'coords': pt if own else None,
+            'map_link': confirm_map_link(fact.get('maps')) if own else None}
