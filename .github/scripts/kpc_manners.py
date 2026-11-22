@@ -811,6 +811,49 @@ def browser_text(u, M, timeout_ms=30000):
         return ''
 
 
+def browser_html(u, M, timeout_ms=30000):
+    """22 Nov: the page as the browser built it (HTML after its scripts ran), for the park page reader, so a page that builds
+    itself is read like any other page (title, heading, links, words). The same checks as browser_text, in the same order:
+    BROWSER=1, the host is not resting, robots.txt allows it, Crawl-delay, the slow-host budget, then the pace.
+    Returns '' when there is no browser, the site said no, or the page did not open."""
+    import os, time as _t
+    if os.environ.get('BROWSER') != '1':
+        return ''
+    h = M.host(u)
+    if M.dead.get(h, 0) > _t.time() or not M.robots_ok(u):
+        return ''
+    cd = M.crawl_delay(u)
+    if cd > MAX_CRAWL_DELAY:
+        M.for_person.append((safe_url(u), f'Crawl-delay {cd:g} s: browser read skipped'))
+        return ''
+    if not M._budget(h, cd >= SLOW_DELAY):
+        return ''
+    try:
+        if 'pw' not in _BROWSER:
+            from playwright.sync_api import sync_playwright
+            _BROWSER['pw'] = sync_playwright().start()
+            _BROWSER['b'] = _BROWSER['pw'].chromium.launch()
+            _BROWSER['ctx'] = _BROWSER['b'].new_context(user_agent=M.ua)
+        M._pace(h, cd)
+        M.stat['browser'] = M.stat.get('browser', 0) + 1
+        pg = _BROWSER['ctx'].new_page()
+        try:
+            pg.goto(u, timeout=timeout_ms, wait_until='domcontentloaded')
+            try:
+                pg.wait_for_load_state('networkidle', timeout=12000)
+            except Exception:
+                pass  # noqa: BLE001  (busy pages never go idle: read what is there)
+            pg.wait_for_timeout(1500)
+            return (pg.content() or '')[:600000]
+        finally:
+            pg.close()
+    except Exception as e:  # noqa: BLE001  (no Playwright here, or the page failed): say so ONCE, never silently
+        if not _BROWSER.get('warned'):
+            _BROWSER['warned'] = True
+            print('::notice title=Browser read::' + f'{type(e).__name__}: {str(e)[:300]}'.replace('\n', ' '), flush=True)
+        return ''
+
+
 def browser_picture(u, M, out_path, timeout_ms=30000):
     """R-PR13 (19 Nov). One JPEG of the map part of a page the site already let us read.
     The checks are the same as browser_text and they run in the same order: BROWSER=1,
