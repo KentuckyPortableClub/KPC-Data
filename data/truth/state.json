@@ -1058,12 +1058,12 @@
   "US-WV": {
    "checked": 172,
    "counts": {
-    "agree": 20,
+    "agree": 24,
     "handover_hints": 1,
     "no_page": 0,
     "no_size": 28,
     "not_read": 0,
-    "off": 11,
+    "off": 7,
     "ours_unknown": 5,
     "parks": 172,
     "retired": 0,
@@ -1073,8 +1073,8 @@
    },
    "left": 0,
    "parks": 172,
-   "status": "queued",
-   "updated": "2026-11-15"
+   "status": "done",
+   "updated": "2026-11-22"
   },
   "US-WY": {
    "checked": 294,
@@ -1103,37 +1103,31 @@
  },
  "last": {
   "areas": [
-   "US-VA"
+   "US-WV"
   ],
   "manners": {
-   "browser": 10,
+   "browser": 2,
    "errors": 0,
-   "for_person_urls": [
-    [
-     "https://www.virginiastateparks.gov/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from www.virginiastateparks.gov this run"
-    ]
-   ],
-   "host_rule": 30,
-   "requests": 548,
+   "for_person_urls": [],
+   "host_rule": 2,
+   "requests": 480,
    "rested": 0,
-   "robots": 38,
-   "robots_unreadable": 1,
+   "robots": 0,
    "strikes": 0
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 15,
-   "no_size": 27,
-   "ours_unknown": 21,
-   "pages_read": 381,
-   "parks": 184,
+   "handover_hints": 1,
+   "no_size": 28,
+   "ours_unknown": 5,
+   "pages_read": 422,
+   "parks": 172,
    "retired": 0,
-   "size_agree": 70,
-   "size_off": 12,
-   "size_unsure": 47,
+   "size_agree": 24,
+   "size_off": 7,
+   "size_unsure": 101,
    "skipped_fresh": 0,
-   "with_outline": 177
+   "with_outline": 165
   },
   "when": "2026-11-22"
  },
@@ -1190,7 +1184,7 @@
   },
   "https://wvdnr.gov/news/": {
    "links": 166,
-   "read": "2026-11-15",
+   "read": "2026-11-22",
    "status": "ok"
   },
   "https://www.dcr.virginia.gov/news": {
