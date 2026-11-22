@@ -370,7 +370,7 @@ Source file: `data/truth/US-ID.json`
  "handover": [],
  "last_read_failed": "2026-11-22",
  "n": "Selway-Bitterroot Wilderness Area",
- "note": "whole park compared (POTA lists it in 2 states: {'US-ID': 1348689, 'US-MT': 1348689})",
+ "note": "whole park compared (POTA lists it in 2 states: {'US-MT': 1348689, 'US-ID': 1348689})",
  "official": {
   "acres": 206053.0,
   "as": "206,053 acres",
@@ -399,8 +399,8 @@ Source file: `data/truth/US-ID.json`
   "pin": "inside",
   "src": "",
   "states": [
-   "US-ID",
-   "US-MT"
+   "US-MT",
+   "US-ID"
   ],
   "unknown_pieces": 0,
   "whole_park": true

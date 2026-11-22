@@ -332,22 +332,23 @@
   "US-ID": {
    "checked": 362,
    "counts": {
-    "agree": 2,
+    "agree": 3,
     "handover_hints": 2,
     "no_page": 3,
-    "no_size": 146,
+    "no_size": 124,
+    "not_read": 0,
     "off": 6,
     "ours_unknown": 18,
     "parks": 362,
     "retired": 0,
-    "unsure": 52,
-    "weak": 16,
-    "with_outline": 227
+    "unsure": 77,
+    "weak": 18,
+    "with_outline": 232
    },
    "left": 0,
    "parks": 362,
-   "status": "queued",
-   "updated": "2026-11-09"
+   "status": "done",
+   "updated": "2026-11-22"
   },
   "US-IL": {
    "checked": 219,
@@ -1130,6 +1131,7 @@
   "www.alapark.com": 1795435195.785201,
   "www.arcgis.com": 1795452861.2430022,
   "www.destateparks.com": 1795473760.9565387,
+  "www.fhwa.dot.gov": 1795476591.1508057,
   "www.floridastateparks.org": 1795436850.291285,
   "www.ksoutdoors.gov": 1795475132.007652,
   "www.lastateparks.com": 1795474392.932798,
@@ -1144,37 +1146,76 @@
  },
  "last": {
   "areas": [
-   "US-WY"
+   "US-ID"
   ],
   "manners": {
+   "browser": 1,
+   "dropped_queued": 69,
    "errors": 0,
-   "for_person": 1,
+   "for_person": 2,
    "for_person_urls": [
     [
-     "http://www.fortwiki.com/Fort_Bonneville_(1)",
+     "https://www.wildhorsesonline.blm.gov/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from www.wildhorsesonline.blm.gov this run"
+    ],
+    [
+     "https://www.fhwa.dot.gov",
      "HTTP 403 twice"
+    ],
+    [
+     "https://www.fhwa.dot.gov",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://www.parksandrecreation.idaho.gov/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from www.parksandrecreation.idaho.gov this run"
+    ],
+    [
+     "https://www.idfg.id.gov/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from www.idfg.id.gov this run"
+    ],
+    [
+     "https://www.idfg.idaho.gov/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from www.idfg.idaho.gov this run"
+    ],
+    [
+     "https://www.dfg.idaho.gov/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from www.dfg.idaho.gov this run"
+    ],
+    [
+     "https://www.idfg.idaho.goc/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from www.idfg.idaho.goc this run"
+    ],
+    [
+     "https://www.idfg.idah.gov/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from www.idfg.idah.gov this run"
+    ],
+    [
+     "https://idt.idaho.gov/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from idt.idaho.gov this run"
     ]
    ],
-   "host_rule": 20,
-   "requests": 37,
-   "rested": 0,
-   "retry403": 1,
-   "robots": 0,
-   "strikes": 2
+   "host_rule": 3,
+   "requests": 20,
+   "rested": 2,
+   "retry403": 2,
+   "robots": 8,
+   "robots_unreadable": 8,
+   "strikes": 4
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 0,
-   "no_size": 15,
-   "ours_unknown": 0,
-   "pages_read": 2,
-   "parks": 30,
+   "handover_hints": 2,
+   "no_size": 77,
+   "ours_unknown": 4,
+   "pages_read": 1,
+   "parks": 85,
    "retired": 0,
-   "size_agree": 3,
-   "size_off": 3,
-   "size_unsure": 9,
-   "skipped_fresh": 264,
-   "with_outline": 30
+   "size_agree": 0,
+   "size_off": 1,
+   "size_unsure": 3,
+   "skipped_fresh": 277,
+   "with_outline": 85
   },
   "when": "2026-11-22"
  },
