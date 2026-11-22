@@ -434,22 +434,23 @@
   "US-LA": {
    "checked": 123,
    "counts": {
-    "agree": 9,
-    "handover_hints": 5,
+    "agree": 8,
+    "handover_hints": 4,
     "no_page": 0,
-    "no_size": 93,
-    "off": 7,
+    "no_size": 97,
+    "not_read": 0,
+    "off": 3,
     "ours_unknown": 1,
     "parks": 123,
     "retired": 0,
-    "unsure": 6,
-    "weak": 3,
+    "unsure": 7,
+    "weak": 2,
     "with_outline": 116
    },
    "left": 0,
    "parks": 123,
-   "status": "queued",
-   "updated": "2026-11-09"
+   "status": "done",
+   "updated": "2026-11-22"
   },
   "US-MA": {
    "checked": 421,
@@ -1122,6 +1123,7 @@
   "www.arcgis.com": 1795452861.2430022,
   "www.destateparks.com": 1795473760.9565387,
   "www.floridastateparks.org": 1795436850.291285,
+  "www.lastateparks.com": 1795474392.932798,
   "www.maine.gov": 1795472706.0380914,
   "www.michigan.gov": 1795441493.2175202,
   "www.nh.gov": 1795453077.0507972,
@@ -1133,41 +1135,41 @@
  },
  "last": {
   "areas": [
-   "US-AR"
+   "US-LA"
   ],
   "manners": {
-   "dropped_queued": 2,
    "errors": 0,
+   "for_person": 2,
    "for_person_urls": [
     [
-     "https://intranet.agfc.com/robots.txt",
-     "robots.txt answered with a web page, not a robots file (the answer came from another site (https://accounts.google.com/v3/signin/identifier?continue=https://sites.google.com/agfc.ar.gov/thehub/home&followup=http): not read as \"no rules\"): not read as \"no rules\": a person downloads what is needed from intranet.agfc.com"
+     "https://www.lastateparks.com/historic-sites/centenary-state-historic-site",
+     "HTTP 403 twice"
     ],
     [
-     "https://www.agfc/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from www.agfc this run"
+     "https://www.lastateparks.com/historic-sites/fort-jesup-state-historic-site",
+     "HTTP 403 twice"
     ]
    ],
    "host_rule": 0,
-   "requests": 28,
-   "rested": 0,
-   "robots": 2,
-   "robots_unreadable": 1,
-   "strikes": 0
+   "requests": 70,
+   "rested": 24,
+   "retry403": 2,
+   "robots": 0,
+   "strikes": 4
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 11,
-   "no_size": 15,
-   "ours_unknown": 10,
-   "pages_read": 5,
-   "parks": 25,
+   "handover_hints": 4,
+   "no_size": 90,
+   "ours_unknown": 0,
+   "pages_read": 0,
+   "parks": 90,
    "retired": 0,
    "size_agree": 0,
    "size_off": 0,
    "size_unsure": 0,
-   "skipped_fresh": 281,
-   "with_outline": 25
+   "skipped_fresh": 33,
+   "with_outline": 90
   },
   "when": "2026-11-22"
  },
