@@ -1,8 +1,5 @@
 {
  "restarted": {
-  "kpc-copy-from-links.yml|2026-11-15T13:11:00+00:00": "2026-11-15T13:44+00:00 started",
-  "kpc-eu-alerts.yml|2026-11-15T12:40:00+00:00": "2026-11-15T13:44+00:00 started",
-  "kpc-waiting-room.yml|2026-11-15T12:42:00+00:00": "2026-11-15T13:44+00:00 started",
   "kpc-closures.yml|2026-11-15T13:38:00+00:00": "2026-11-15T16:21+00:00 started",
   "kpc-copy-from-links.yml|2026-11-15T15:11:00+00:00": "2026-11-15T16:21+00:00 started",
   "kpc-flow.yml|2026-11-15T13:46:00+00:00": "2026-11-15T16:21+00:00 started",
@@ -197,12 +194,17 @@
   "kpc-wwff-dir.yml|2026-11-22T09:24:00+00:00": "2026-11-22T10:15+00:00 started",
   "kpc-copy-from-links.yml|2026-11-22T12:11:00+00:00": "2026-11-22T12:46+00:00 started",
   "kpc-lookup-tidy.yml|2026-11-22T11:24:00+00:00": "2026-11-22T12:46+00:00 started",
-  "kpc-waiting-room.yml|2026-11-22T11:13:00+00:00": "2026-11-22T12:46+00:00 started"
+  "kpc-waiting-room.yml|2026-11-22T11:13:00+00:00": "2026-11-22T12:46+00:00 started",
+  "kpc-closures.yml|2026-11-22T13:38:00+00:00": "2026-11-22T14:22+00:00 started",
+  "kpc-copy-from-links.yml|2026-11-22T13:11:00+00:00": "2026-11-22T14:22+00:00 started",
+  "kpc-park-pages.yml|2026-11-22T12:23:00+00:00": "2026-11-22T14:22+00:00 started",
+  "kpc-youtube-comments.yml|2026-11-22T13:36:00+00:00": "2026-11-22T14:22+00:00 skipped (not restarted)"
  },
- "last": "2026-11-22T12:46+00:00",
+ "last": "2026-11-22T14:22+00:00",
  "last_restarted": [
-  "kpc-copy-from-links.yml (missed Nov 22 12:11 UTC)",
-  "kpc-lookup-tidy.yml (missed Nov 22 11:24 UTC)",
-  "kpc-waiting-room.yml (missed Nov 22 11:13 UTC)"
+  "kpc-closures.yml (missed Nov 22 13:38 UTC)",
+  "kpc-copy-from-links.yml (missed Nov 22 13:11 UTC)",
+  "kpc-park-pages.yml (missed Nov 22 12:23 UTC)",
+  "kpc-youtube-comments.yml (missed Nov 22 13:36 UTC, NOT restarted: its next scheduled run catches up)"
  ]
 }
