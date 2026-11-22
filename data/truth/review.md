@@ -39,7 +39,7 @@ Updated 2026-11-22. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 | US-OK | 205 | 160 | 69 | **34** | 18 | 25 | 13 | 9 | 0 | 8 |
 | US-TX | 222 | 207 | 49 | **15** | 32 | 86 | 6 | 10 | 0 | 4 |
 | US-KS | 145 | 125 | 3 | **2** | 2 | 105 | 10 | 1 | 0 | 7 |
-| US-NE | 201 | 183 | 4 | **4** | 4 | 159 | 6 | 2 | 0 | 14 |
+| US-NE | 201 | 187 | 4 | **4** | 3 | 160 | 7 | 3 | 0 | 13 |
 | US-CO | 276 | 266 | 46 | **17** | 42 | 145 | 15 | 6 | 0 | 10 |
 | US-WY | 294 | 214 | 47 | **24** | 33 | 75 | 35 | 0 | 0 | 25 |
 | US-ID | 362 | 227 | 2 | **6** | 52 | 146 | 18 | 2 | 0 | 16 |
@@ -2110,19 +2110,19 @@ Last · [www.nps.gov](https://www.nps.gov/pipe/learn/index.htm)
 - US-3372 Samuel R McKelvie National Forest: ours 115,772 ac vs agency 1,335 acres (= 1,335 ac; 8572% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/nebraska/recarea/?recid=30324) · “Located on the Wall Ranger District of Buffalo Gap National Grassland, the Baja OHV Area covers approximately 1,335 acres and is open to motorized cross-country”
 - US-7478 Oglala National Grassland: ours 94,527 ac vs agency 1,335 acres (= 1,335 ac; 6981% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/nebraska/recarea/?recid=30328) · “Located on the Wall Ranger District of Buffalo Gap National Grassland, the Baja OHV Area covers approximately 1,335 acres and is open to motorized cross-country”
 - US-4017 Lincoln Saline Wetland State Park: ours 93 ac vs agency 1,110 acres (= 1,110 ac; 92% off) · cause: agency bigger: our outline may miss a tract · [www.lincoln.ne.gov](https://www.lincoln.ne.gov/City/Departments/Parks-and-Recreation/Parks-Facilities/Saline-Wetlands) · “an economic screening analysis on its potential impacts. The revised critical habitat designation consist of 1,110 acres. It is smaller than the previous design”
-- US-3487 DeSoto (NE) National Wildlife Refuge: ours 4,047 ac vs agency 8,365 acres (= 8,365 ac; 52% off) · cause: agency bigger: our outline may miss a tract · [www.fws.gov](https://www.fws.gov/refuge/desoto/) · “o National Wildlife Refuge is located along the Missouri River and borders both Iowa and Nebraska. Within its 8,365 acres lies DeSoto Lake, an oxbow lake that u”
+- US-3487 DeSoto (NE) National Wildlife Refuge: ours 4,357 ac vs agency 8,365 acres (= 8,365 ac; 48% off) · cause: agency bigger: our outline may miss a tract · [www.fws.gov](https://www.fws.gov/refuge/desoto/) · “o National Wildlife Refuge is located along the Missouri River and borders both Iowa and Nebraska. Within its 8,365 acres lies DeSoto Lake, an oxbow lake that u”
 
 **Unsure (no clean total found; the nearest number is only a guess):**
 
-- US-0441 Boyer Chute National Wildlife Refuge: ours 3,070 ac · cause: the agency figure may cover several states; our outline may be this state's share only · [www.fws.gov](https://www.fws.gov/refuge/boyer-chute/about-us)
-- US-0445 North Platte National Wildlife Refuge: ours 2,441 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 91 acres, no total words near it) · [www.fws.gov](https://www.fws.gov/locations/north-platte-national-wildlife-refuge/rules-and-policies)
-- US-3377 Schilling Wildlife Management Area: ours 1,377 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-0445 North Platte National Wildlife Refuge: ours 2,916 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 91 acres, no total words near it) · [www.fws.gov](https://www.fws.gov/locations/north-platte-national-wildlife-refuge/rules-and-policies)
+- US-3377 Schilling Wildlife Management Area: ours 1,808 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-3491 Lake Wanahoo State Recreation Area: ours 1,067 ac · cause: no total-looking sentence: numbers found were parts or other units
 
 **Handover / closure hints (a person decides; nothing applied):**
 
-- US-0441 Boyer Chute National Wildlife Refuge · managed by: “ist releasing a banded mallard. The National Wildlife Refuge System is a series of lands and waters owned and managed by the U.S. Fish and Wildlife Service. Wildlife conservation is at the heart of th” · owner now: U.S · [www.fws.gov](https://www.fws.gov/refuge/boyer_chute/)
+- US-0441 Boyer Chute National Wildlife Refuge · managed by: “place to stop to get orientated to the refuge and to pick up a brochure for your visit. Boyer Chute is managed by nearby DeSoto National Wildlife Refuge, and any questions regarding your visit to Boye” · owner now: DeSoto National Wildlife Refuge · [www.fws.gov](https://www.fws.gov/refuge/boyer_chute/)
 - US-3371 Nebraska National Forest · managed by: “asslands and Midewin National Tallgrass Prairie. These public lands are restored prairie landscapes managed by the Forest Service to conserve their natural beauty, ecological diversity, and sustainabl” · owner now: Forest Service · [www.fs.usda.gov](https://www.fs.usda.gov/detail/nebraska)
+- US-3487 DeSoto (NE) National Wildlife Refuge · managed by: “es. Management and Conservation The National Wildlife Refuge System is a series of lands and waters owned and managed by the U.S. Fish and Wildlife Service. Wildlife conservation is at the heart of th” · owner now: U.S · [www.fws.gov](https://www.fws.gov/refuge/desoto/)
 
 ## US-CO
 
