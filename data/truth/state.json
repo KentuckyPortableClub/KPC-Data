@@ -713,7 +713,7 @@
    },
    "left": 0,
    "parks": 134,
-   "status": "queued",
+   "status": "done",
    "updated": "2026-11-22"
   },
   "US-NM": {
@@ -1109,6 +1109,7 @@
   }
  },
  "hosts": {
+  "dep.nj.gov": 1795471462.1561859,
   "tnstateparks.com": 1795430345.0894592,
   "www.alapark.com": 1795435195.785201,
   "www.arcgis.com": 1795452861.2430022,
@@ -1123,30 +1124,41 @@
  },
  "last": {
   "areas": [
-   "US-NY"
+   "US-NJ"
   ],
   "manners": {
    "errors": 0,
-   "for_person_urls": [],
+   "for_person": 2,
+   "for_person_urls": [
+    [
+     "https://dep.nj.gov/wp-content/uploads/njfw/peaslee.pdf",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://dep.nj.gov/wp-content/uploads/njfw/alexauken_creek_rd.pdf",
+     "HTTP 403 twice"
+    ]
+   ],
    "host_rule": 0,
-   "requests": 0,
-   "rested": 0,
+   "requests": 43,
+   "rested": 3,
+   "retry403": 2,
    "robots": 0,
-   "strikes": 0
+   "strikes": 4
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 17,
-   "no_size": 0,
+   "handover_hints": 2,
+   "no_size": 15,
    "ours_unknown": 0,
-   "pages_read": 0,
-   "parks": 0,
+   "pages_read": 23,
+   "parks": 16,
    "retired": 0,
    "size_agree": 0,
-   "size_off": 0,
+   "size_off": 1,
    "size_unsure": 0,
-   "skipped_fresh": 851,
-   "with_outline": 0
+   "skipped_fresh": 118,
+   "with_outline": 16
   },
   "when": "2026-11-22"
  },
