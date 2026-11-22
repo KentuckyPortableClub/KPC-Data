@@ -131,8 +131,11 @@ jobs:
             *..*|/*|*[!A-Za-z0-9._/-]*) warn "List" "the refs file path is not a plain path"; REFS_FILE="";;
           esac
           if [ -n "$REFS_FILE" ] && [ -f "$REFS_FILE" ]; then REFS="--refs-file $REFS_FILE"; fi
-          python3 .github/scripts/kpc_park_pages.py read --data data --out ../work/out --state ../work/out/state.json \
-            --areas "$AREAS" --max-requests "$MAX_REQUESTS" --max-minutes 50 \
+          # 22 Nov: the step is cut at 52 minutes; a reader still working then left no summary, the save refused, and the walk
+          # started the same state again every run (stuck on US-AK from 20 Nov). Now the reader stops by itself at 40 minutes, is
+          # stopped for sure at 44 (each park is already saved), and the report always has time to run.
+          timeout -s TERM 44m python3 .github/scripts/kpc_park_pages.py read --data data --out ../work/out --state ../work/out/state.json \
+            --areas "$AREAS" --max-requests "$MAX_REQUESTS" --max-minutes 40 \
             --lists ../work/lists --lists-done ../work/lists-done --not-sure ../work/out/not-sure $REFS \
             || warn "Read" "the reader did not finish"
           python3 .github/scripts/kpc_park_pages.py report --out ../work/out || warn "Report" "the summary was not written"
