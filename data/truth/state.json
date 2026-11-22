@@ -692,7 +692,7 @@
    },
    "left": 0,
    "parks": 206,
-   "status": "queued",
+   "status": "done",
    "updated": "2026-11-22"
   },
   "US-NJ": {
@@ -1124,30 +1124,31 @@
  },
  "last": {
   "areas": [
-   "US-VT"
+   "US-NH"
   ],
   "manners": {
+   "browser": 5,
    "errors": 0,
    "for_person_urls": [],
    "host_rule": 0,
-   "requests": 4,
-   "rested": 0,
-   "robots": 0,
+   "requests": 16,
+   "rested": 61,
+   "robots": 3,
    "strikes": 0
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 11,
-   "no_size": 2,
+   "handover_hints": 5,
+   "no_size": 71,
    "ours_unknown": 0,
-   "pages_read": 0,
-   "parks": 2,
+   "pages_read": 5,
+   "parks": 71,
    "retired": 0,
    "size_agree": 0,
    "size_off": 0,
    "size_unsure": 0,
-   "skipped_fresh": 107,
-   "with_outline": 2
+   "skipped_fresh": 135,
+   "with_outline": 71
   },
   "when": "2026-11-22"
  },
