@@ -322,7 +322,7 @@
    },
    "left": 0,
    "parks": 181,
-   "status": "queued",
+   "status": "done",
    "updated": "2026-11-22"
   },
   "US-ID": {
@@ -1123,30 +1123,47 @@
  },
  "last": {
   "areas": [
-   "US-MN"
+   "US-IA"
   ],
   "manners": {
+   "browser": 2,
    "errors": 0,
-   "for_person_urls": [],
+   "for_person": 1,
+   "for_person_urls": [
+    [
+     "https://iowaculture.gov/robots.txt",
+     "robots.txt answered with a web page, not a robots file (the answer came from another site (https://opportunityiowa.gov/community/arts-culture): not read as \"no rules\"): not read as \"no rules\": a person downloads what is needed from iowaculture.gov"
+    ],
+    [
+     "https://beacon.schneidercorp.com/Application.aspx?AppID=86&LayerID=841&PageTypeID=1&PageID=1483&KeyValue=0504201001",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://www.cgcounty.org/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from www.cgcounty.org this run"
+    ]
+   ],
    "host_rule": 0,
-   "requests": 0,
-   "rested": 0,
-   "robots": 0,
-   "strikes": 0
+   "requests": 10,
+   "rested": 51,
+   "retry403": 1,
+   "robots": 2,
+   "robots_unreadable": 1,
+   "strikes": 2
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 5,
-   "no_size": 0,
+   "handover_hints": 3,
+   "no_size": 56,
    "ours_unknown": 0,
-   "pages_read": 0,
-   "parks": 0,
+   "pages_read": 2,
+   "parks": 56,
    "retired": 0,
    "size_agree": 0,
    "size_off": 0,
    "size_unsure": 0,
-   "skipped_fresh": 323,
-   "with_outline": 0
+   "skipped_fresh": 125,
+   "with_outline": 56
   },
   "when": "2026-11-22"
  },
