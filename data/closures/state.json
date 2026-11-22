@@ -4,15 +4,15 @@
   "US-KY": {
    "counts": {
     "hunt": 0,
-    "note": 69,
+    "note": 68,
     "part": 0,
     "seasonal": 0,
-    "taken_down": 3,
+    "taken_down": 4,
     "whole": 1
    },
    "failed": 2,
    "items": 73,
-   "read": "2026-11-22T02:37Z",
+   "read": "2026-11-22T08:45Z",
    "sources": 73,
    "status": "done"
   }
@@ -62,11 +62,11 @@
    "unmatched": 118,
    "unreadable": 208
   },
-  "when": "2026-11-22T02:37Z"
+  "when": "2026-11-22T08:45Z"
  },
  "proven": "2026-10-31 (Brandon GO Oct 30 6:07 AM 'Yes': KY closures live Sat Oct 31; dry runs clean Oct 30). The 6-hour schedule runs from now; the site keeps reading the old Kentucky reader until chat 11's side-by-side PASS (CL-5).",
  "test": {
-  "matched": 19,
+  "matched": 18,
   "only_here": 54,
   "only_there": [
    "hc-US-4687-2026-11-07",
@@ -74,12 +74,13 @@
    "hc-US-3831-2026-11-15",
    "hc-US-3820-2026-11-07",
    "hc-US-3806-2026-11-07",
+   "hc-US-3805-2026-11-14",
    "hc-US-3794-2026-11-07",
    "hc-US-3793-2026-11-07"
   ],
   "own": 26,
   "result": "FAIL",
   "when": "2026-11-22",
-  "why": "19 of 26 of Kentucky's own reader's items found here on the same park (73%); 54 only here"
+  "why": "18 of 26 of Kentucky's own reader's items found here on the same park (69%); 54 only here"
  }
 }
