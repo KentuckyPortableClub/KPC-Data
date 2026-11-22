@@ -806,22 +806,23 @@
   "US-OK": {
    "checked": 205,
    "counts": {
-    "agree": 47,
-    "handover_hints": 10,
+    "agree": 69,
+    "handover_hints": 9,
     "no_page": 0,
-    "no_size": 23,
-    "off": 53,
-    "ours_unknown": 8,
+    "no_size": 25,
+    "not_read": 1,
+    "off": 34,
+    "ours_unknown": 13,
     "parks": 205,
     "retired": 0,
-    "unsure": 22,
-    "weak": 10,
-    "with_outline": 154
+    "unsure": 18,
+    "weak": 8,
+    "with_outline": 160
    },
    "left": 0,
    "parks": 205,
-   "status": "queued",
-   "updated": "2026-11-09"
+   "status": "done",
+   "updated": "2026-11-22"
   },
   "US-OR": {
    "checked": 440,
@@ -1135,41 +1136,30 @@
  },
  "last": {
   "areas": [
-   "US-LA"
+   "US-OK"
   ],
   "manners": {
    "errors": 0,
-   "for_person": 2,
-   "for_person_urls": [
-    [
-     "https://www.lastateparks.com/historic-sites/centenary-state-historic-site",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://www.lastateparks.com/historic-sites/fort-jesup-state-historic-site",
-     "HTTP 403 twice"
-    ]
-   ],
+   "for_person_urls": [],
    "host_rule": 0,
-   "requests": 70,
-   "rested": 24,
-   "retry403": 2,
+   "requests": 0,
+   "rested": 0,
    "robots": 0,
-   "strikes": 4
+   "strikes": 0
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 4,
-   "no_size": 90,
+   "handover_hints": 9,
+   "no_size": 0,
    "ours_unknown": 0,
    "pages_read": 0,
-   "parks": 90,
+   "parks": 0,
    "retired": 0,
    "size_agree": 0,
    "size_off": 0,
    "size_unsure": 0,
-   "skipped_fresh": 33,
-   "with_outline": 90
+   "skipped_fresh": 205,
+   "with_outline": 0
   },
   "when": "2026-11-22"
  },
