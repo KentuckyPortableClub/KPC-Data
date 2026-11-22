@@ -79,6 +79,18 @@ DATE_BEFORE = re.compile(r'(?:\b(?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|
 # 'two lakes of 40 and 60 acres' / '21.2 and 13.8 acre lakes': one candidate with the SUM; the parts are not totals
 PNUM = r'\d[\d,]*(?:\.\d+)?'
 SUMRX = re.compile(r'(?<![\d.,])((?:' + PNUM + r'(?:\s*-?\s*acres?)?\s*,\s*)*' + PNUM + r'(?:\s*-?\s*acres?)?\s*(?:and|&)\s*' + PNUM + r')\s*-?\s*acres?\b', re.I)
+
+# 21 Nov: PNUM eats commas too, so on a long run of digits and commas ('1,2,3,4,...', a data blob in a page) SUMRX could split
+# the run in 2**n ways: one page hung the page reader for 20 minutes. SUMRX now scans a copy where a run holding 6 or more commas
+# has its commas swapped for ';' (same length, so every position is the same). No size is written that way ('1,234,567,890'
+# has 3), so every real sentence reads exactly as before.
+DIGIT_RUN = re.compile(r'(?<![\d,])\d[\d,]*')   # one maximal run (nothing after it, so it never backtracks)
+LONG_RUN_COMMAS = 6
+
+
+def sum_scan_text(text):
+    """The text SUMRX scans: long digit-and-comma runs have their commas swapped for ';' (positions unchanged)."""
+    return DIGIT_RUN.sub(lambda m: m.group(0).replace(',', ';') if m.group(0).count(',') >= LONG_RUN_COMMAS else m.group(0), text)
 TOTALWORD = re.compile(r'encompass|cover|consist|compris|total|spans|protects|includes|spread over|acre (?:park|area|refuge|forest|preserve|reserve|site|tract|property|wma|wildlife|recreation|lake|monument|seashore|lakeshore)|'
                        r'(?:park|area|refuge|forest|preserve|reserve|site|tract|property|monument|seashore|lakeshore|wma|lands?) (?:of|is|has|contains|covers|totals?|encompasses|includes) ', re.I)
 # V4 fix 3: HISTORY / marketing words always win (a land grant, a deed, 'of wilderness'); PART words lose to a CLEAN total sentence
@@ -196,7 +208,7 @@ def sizes_in(text, name, other_unit=False, is_pdf=False):
     def strip_name(x): return nrx.sub(' ', x) if nrx else x
     year_now = int(TODAY[:4])
     sums = []   # fix 1b: 'two lakes of 40 and 60 acres' -> one candidate with the sum; the parts are marked not-total
-    for m in SUMRX.finditer(text):
+    for m in SUMRX.finditer(sum_scan_text(text)):   # 21 Nov: never the raw text (see DIGIT_RUN)
         parts = [float(x.replace(',', '')) for x in re.findall(PNUM, m.group(1))]
         if len(parts) < 2 or any(p <= 0 for p in parts) or sum(parts) > 50_000_000: continue
         sent = sentence_at(text, m.start(), m.end()); line = ' '.join(text[max(0, m.start() - 110):m.end() + 110].split())
