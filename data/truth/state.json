@@ -897,7 +897,7 @@
    },
    "left": 0,
    "parks": 167,
-   "status": "queued",
+   "status": "done",
    "updated": "2026-11-22"
   },
   "US-SD": {
@@ -1123,31 +1123,47 @@
  },
  "last": {
   "areas": [
-   "US-AL"
+   "US-SC"
   ],
   "manners": {
-   "browser": 21,
+   "browser": 6,
+   "deferred": 14,
+   "dropped_queued": 1,
    "errors": 0,
-   "for_person_urls": [],
+   "for_person_urls": [
+    [
+     "http://www.wildlifesouth.com/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from www.wildlifesouth.com this run"
+    ],
+    [
+     "https://www.yorkcountygov.com/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from www.yorkcountygov.com this run"
+    ],
+    [
+     "https://palmettoconservation.org/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from palmettoconservation.org this run"
+    ]
+   ],
    "host_rule": 0,
-   "requests": 51,
-   "rested": 42,
-   "robots": 0,
+   "requests": 17,
+   "rested": 0,
+   "robots": 3,
+   "robots_unreadable": 3,
    "strikes": 0
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 4,
-   "no_size": 38,
-   "ours_unknown": 2,
-   "pages_read": 23,
-   "parks": 42,
+   "handover_hints": 3,
+   "no_size": 22,
+   "ours_unknown": 1,
+   "pages_read": 6,
+   "parks": 23,
    "retired": 0,
    "size_agree": 0,
    "size_off": 0,
-   "size_unsure": 2,
-   "skipped_fresh": 113,
-   "with_outline": 42
+   "size_unsure": 0,
+   "skipped_fresh": 144,
+   "with_outline": 23
   },
   "when": "2026-11-22"
  },
