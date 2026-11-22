@@ -2,16 +2,16 @@
  "about": "Park truth checker: official acreage vs our outline, handover hints, second-witness score. Review lists only: nothing here changes a key or a card.",
  "area": "US-CO",
  "counts": {
-  "agree": 59,
-  "handover_hints": 5,
+  "agree": 94,
+  "handover_hints": 8,
   "no_page": 1,
-  "no_size": 143,
+  "no_size": 92,
   "not_read": 0,
-  "off": 11,
+  "off": 16,
   "ours_unknown": 15,
   "parks": 276,
   "retired": 0,
-  "unsure": 37,
+  "unsure": 48,
   "weak": 10,
   "with_outline": 266
  },
@@ -8485,11 +8485,19 @@
    "verdict": "agree"
   },
   "US-12354": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Red Lion State Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 1297.0,
+    "as": "1297 acres",
+    "clean": false,
+    "line": "d check current hunting, fishing and land use regulations when planning to visit a State Wildlife Area. Acres 1297 acres. Elevation min. 3,637 ft - max 3,768 ft GMU 90, 92 Hunting Opportunities Deer, Dove, Pheasant, Rabbit Fishing",
+    "read": "2026-11-22",
+    "sent": "1297 acres.",
+    "url": "https://cpw.state.co.us/state-wildlife-areas/red-lion-swa",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 1487,
     "family_fold": "layers {'padus': 1295, 'sgcoa': 1117}: one land in 2 layers, the padus copy used (1,117 ac of copies not added)",
@@ -8509,30 +8517,49 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/state-wildlife-areas/red-lion-swa",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 15,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 1297.0,
+     "as": "1297 acres",
+     "clean": false,
+     "line": "d check current hunting, fishing and land use regulations when planning to visit a State Wildlife Area. Acres 1297 acres. Elevation min. 3,637 ft - max 3,768 ft GMU 90, 92 Hunting Opportunities Deer, Dove, Pheasant, Rabbit Fishing",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/state-wildlife-areas/red-lion-swa",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Wildlife Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-12355": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Jumbo Reservoir State Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 1703.0,
+    "as": "1703 acres",
+    "clean": false,
+    "line": ". Water levels at the boat ramp are low, please use caution. Larger boats may have trouble launching. . Acres 1703 acres. Elevation min. 3,703 ft - max 3,752 ft GMU 90 Hunting Opportunities Deer, Dove, Pheasant, Rabbit, Waterfowl",
+    "read": "2026-11-22",
+    "sent": "1703 acres.",
+    "url": "https://cpw.state.co.us/state-wildlife-areas/jumbo-julesburg-reservoir-swa",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 1737,
     "family_fold": "layers {'sgcoa': 1737, 'padus': 273}: one land in 2 layers, the sgcoa copy used (273 ac of copies not added)",
@@ -8552,30 +8579,50 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/state-wildlife-areas/jumbo-julesburg-reservoir-swa",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 2,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
-    "pin": 1,
-    "size": 1,
+    "pin": 2,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 1703.0,
+     "as": "1703 acres",
+     "clean": false,
+     "line": ". Water levels at the boat ramp are low, please use caution. Larger boats may have trouble launching. . Acres 1703 acres. Elevation min. 3,703 ft - max 3,752 ft GMU 90 Hunting Opportunities Deer, Dove, Pheasant, Rabbit, Waterfowl",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/state-wildlife-areas/jumbo-julesburg-reservoir-swa",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Wildlife Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-1236": {
-   "checked": "2026-11-09",
+   "cause": "our union: one of our pieces alone matches the agency (double count?)",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Rifle Falls State Park",
-   "official": null,
+   "official": {
+    "acres": 48.0,
+    "as": "48 acres",
+    "clean": false,
+    "line": ", \"touchThreshold\" : 5, \"useCSS\" : true, \"useTransform\" : true, \"centerPadding\":\"0px\", \"infinite\" : false }'> 48 acres 3 60-foot waterfalls 12 picnic sites 20 campsites Accessing the Park Directions Directions From 1-70 Take I-7",
+    "read": "2026-11-22",
+    "sent": "48 acres",
+    "url": "https://cpw.state.co.us/placestogo/parks/RifleFalls",
+    "why": "total-looking"
+   },
    "ours": {
     "acres": 587,
     "dissolved": {
@@ -8617,30 +8664,49 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/placestogo/parks/RifleFalls",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 1123,
+   "same_agency": false,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 0,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 48.0,
+     "as": "48 acres",
+     "clean": false,
+     "line": ", \"touchThreshold\" : 5, \"useCSS\" : true, \"useTransform\" : true, \"centerPadding\":\"0px\", \"infinite\" : false }'> 48 acres 3 60-foot waterfalls 12 picnic sites 20 campsites Accessing the Park Directions Directions From 1-70 Take I-7",
+     "total_like": true,
+     "url": "https://cpw.state.co.us/placestogo/parks/RifleFalls",
+     "why": "total-looking"
+    }
+   ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "off"
   },
   "US-1237": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Rifle Gap State Park",
-   "official": null,
+   "official": {
+    "acres": 1341.0,
+    "as": "1,341 acres",
+    "clean": false,
+    "line": ", \"touchThreshold\" : 5, \"useCSS\" : true, \"useTransform\" : true, \"centerPadding\":\"0px\", \"infinite\" : false }'> 1,341 acres 14 picnic sites 360 acre reservoir 90 campsites Accessing the Park Directions Directions From 1-70 Take I-70",
+    "read": "2026-11-22",
+    "sent": "1,341 acres",
+    "url": "https://cpw.state.co.us/placestogo/parks/RifleGap",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 1343,
     "dissolved": {
@@ -8668,30 +8734,67 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/placestogo/parks/RifleGap",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 0,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 360.0,
+     "as": "360 acre",
+     "clean": false,
+     "line": "le Gap State Park reservoir Welcome to Rifle Gap State Park The clean, clear waters of Rifle Gap State Park’s 360-acre reservoir provide some of the best boating, fishing, swimming, water skiing and windsurfing in Colorado. The",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/placestogo/parks/RifleGap",
+     "why": "part (a lake, a purchase, a campground…)"
+    },
+    {
+     "acres": 1341.0,
+     "as": "1,341 acres",
+     "clean": false,
+     "line": ", \"touchThreshold\" : 5, \"useCSS\" : true, \"useTransform\" : true, \"centerPadding\":\"0px\", \"infinite\" : false }'> 1,341 acres 14 picnic sites 360 acre reservoir 90 campsites Accessing the Park Directions Directions From 1-70 Take I-70",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/placestogo/parks/RifleGap",
+     "why": "no total words near it"
+    },
+    {
+     "acres": 360.0,
+     "as": "360 acre",
+     "clean": false,
+     "line": "CSS\" : true, \"useTransform\" : true, \"centerPadding\":\"0px\", \"infinite\" : false }'> 1,341 acres 14 picnic sites 360 acre reservoir 90 campsites Accessing the Park Directions Directions From 1-70 Take I-70 to the Rifle exit (90), t",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/placestogo/parks/RifleGap",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-1238": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Roxborough State Park",
-   "official": null,
+   "official": {
+    "acres": 3299.0,
+    "as": "3,299 acres",
+    "clean": true,
+    "line": "y 15, 1987: Roxborough State Park opens to the public. Roxborough State Park has grown to its current size of 3,299 acres thanks to the collaborative efforts of citizens and partnering agencies maintaining its status as a spectacul",
+    "read": "2026-11-22",
+    "sent": "Roxborough State Park has grown to its current size of 3,299 acres thanks to the collaborative efforts of citizens and partnering agencies maintaining its status as a spectacular natural area.",
+    "url": "https://cpw.state.co.us/placestogo/parks/Roxborough",
+    "why": "clean total"
+   },
    "ours": {
     "acres": 3350,
     "dissolved": {
@@ -8725,30 +8828,86 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/placestogo/parks/Roxborough",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 2,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 3413.0,
+     "as": "3,413 acres",
+     "clean": false,
+     "line": "​​​​​​Just a short drive southwest of Denver, Roxborough State Park is a popular urban getaway. With close to 3,413 acres, the park is filled with dramatic red rock formations, distinct plant communities and a variety of wildlife r",
+     "total_like": true,
+     "url": "https://cpw.state.co.us/placestogo/parks/Roxborough",
+     "why": "total-looking"
+    },
+    {
+     "acres": 3413.0,
+     "as": "3,413 acres",
+     "clean": false,
+     "line": ", \"touchThreshold\" : 5, \"useCSS\" : true, \"useTransform\" : true, \"centerPadding\":\"0px\", \"infinite\" : false }'> 3,413 acres 145 species of birds 8 picnic sites 15 miles of trails Accessing the Park Directions Directions From Denver H",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/placestogo/parks/Roxborough",
+     "why": "no total words near it"
+    },
+    {
+     "acres": 500.0,
+     "as": "500 acres",
+     "clean": false,
+     "line": "around the Fountain Valley Trail! View & Register View All Events History 1975: Colorado State Parks acquires 500 acres of Roxborough property, establishing Roxborough State Park. 1979: Roxborough attains state natural area statu",
+     "total_like": true,
+     "url": "https://cpw.state.co.us/placestogo/parks/Roxborough",
+     "why": "total-looking"
+    },
+    {
+     "acres": 1499.0,
+     "as": "1,499 acres",
+     "clean": false,
+     "line": "l Landmark. 1983: Roxborough is designated as a National Archaeological District. 1984: Roxborough expands to 1,499 acres. May 15, 1987: Roxborough State Park opens to the public. Roxborough State Park has grown to its current size",
+     "total_like": true,
+     "url": "https://cpw.state.co.us/placestogo/parks/Roxborough",
+     "why": "total-looking"
+    },
+    {
+     "acres": 3299.0,
+     "as": "3,299 acres",
+     "clean": true,
+     "line": "y 15, 1987: Roxborough State Park opens to the public. Roxborough State Park has grown to its current size of 3,299 acres thanks to the collaborative efforts of citizens and partnering agencies maintaining its status as a spectacul",
+     "total_like": true,
+     "url": "https://cpw.state.co.us/placestogo/parks/Roxborough",
+     "why": "clean total"
+    }
+   ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-1239": {
-   "checked": "2026-11-09",
+   "cause": "our union: one of our pieces alone matches the agency (double count?)",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "San Luis Lakes State Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 3317.0,
+    "as": "3317 acres",
+    "clean": false,
+    "line": "amping area San Luis Lakes State Wildlife Area (SWA)—picnic area Colorado Fishing Atlas Open in new tab Acres 3317 acres. Elevation min. 7,521 ft - max 7,570 ft GMU 82 Hunting Opportunities Big game, Dove, Waterfowl Fishing Opport",
+    "read": "2026-11-22",
+    "sent": "3317 acres.",
+    "url": "https://cpw.state.co.us/swa/San%20Luis%20Lakes%20SWA",
+    "why": "total-looking"
+   },
    "ours": {
     "acres": 4600,
     "dissolved": {
@@ -8789,30 +8948,49 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/swa/San%20Luis%20Lakes%20SWA",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 39,
+   "same_agency": false,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 0,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 3317.0,
+     "as": "3317 acres",
+     "clean": false,
+     "line": "amping area San Luis Lakes State Wildlife Area (SWA)—picnic area Colorado Fishing Atlas Open in new tab Acres 3317 acres. Elevation min. 7,521 ft - max 7,570 ft GMU 82 Hunting Opportunities Big game, Dove, Waterfowl Fishing Opport",
+     "total_like": true,
+     "url": "https://cpw.state.co.us/swa/San%20Luis%20Lakes%20SWA",
+     "why": "total-looking"
+    }
+   ],
    "t": "State Wildlife Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "off"
   },
   "US-1240": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Spinney Mountain State Park",
-   "official": null,
+   "official": {
+    "acres": 6080.0,
+    "as": "6,080 acres",
+    "clean": false,
+    "line": ", \"touchThreshold\" : 5, \"useCSS\" : true, \"useTransform\" : true, \"centerPadding\":\"0px\", \"infinite\" : false }'> 6,080 acres 220 species of birds 21 picnic sites 2,444 surface-acre reservoir Accessing the Park Directions Directions Fr",
+    "read": "2026-11-22",
+    "sent": "6,080 acres",
+    "url": "https://cpw.state.co.us/placestogo/parks/SpinneyMountain",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 6130,
     "family_fold": "layers {'sgcob': 6130, 'padus': 400}: one land in 2 layers, the sgcob copy used (400 ac of copies not added)",
@@ -8832,30 +9010,59 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/placestogo/parks/SpinneyMountain",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 1,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 6080.0,
+     "as": "6,080 acres",
+     "clean": false,
+     "line": ", \"touchThreshold\" : 5, \"useCSS\" : true, \"useTransform\" : true, \"centerPadding\":\"0px\", \"infinite\" : false }'> 6,080 acres 220 species of birds 21 picnic sites 2,444 surface-acre reservoir Accessing the Park Directions Directions Fr",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/placestogo/parks/SpinneyMountain",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-1241": {
-   "checked": "2026-11-09",
-   "handover": [],
-   "last_read_failed": "2026-11-22",
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 689 acres, no total words near it)",
+   "checked": "2026-11-22",
+   "handover": [
+    {
+     "date_hint": "1962",
+     "kind": "transfer",
+     "line": "nd the Department of Transportation no longer needed the gravel pit. In 1962, the gravel ponds were turned over to the State Parks Department for a state recreation area. The Parks Department turned the 50 acres of land and 80 acres of water into a recreation area name",
+     "owner_now": "State Parks Department for",
+     "src": "https://cpw.state.co.us/placestogo/parks/StVrain",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
    "n": "St. Vrain State Park",
-   "official": null,
+   "official": {
+    "acres": 689.0,
+    "as": "689 acres",
+    "clean": false,
+    "line": ", \"touchThreshold\" : 5, \"useCSS\" : true, \"useTransform\" : true, \"centerPadding\":\"0px\", \"infinite\" : false }'> 689 acres of land 228 acres of water 87 campsites 20 picnic sites 7 miles of trails Accessing the Park Directions Direc",
+    "read": "2026-11-22",
+    "sent": "689 acres of land",
+    "url": "https://cpw.state.co.us/placestogo/parks/StVrain",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 878,
     "dissolved": {
@@ -8887,38 +9094,120 @@
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
-   "owner_now": null,
+   "owner_now": "State Parks Department for",
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/placestogo/parks/StVrain",
      "why": "the park's page (data/parkinfo)"
     },
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/sites/default/files/dam/c2osani8ac/st.pdf",
      "why": "official map (parkinfo-web)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 27,
+   "same_agency": false,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 689.0,
+     "as": "689 acres",
+     "clean": false,
+     "line": "eaceful and simple outdoor getaway. Formerly named Barbour Ponds, this nature and people-friendly park offers 689 acres of land and 228 acres of water among several ponds. There’s something for every kind of nature lover, whether",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/placestogo/parks/StVrain",
+     "why": "part (a lake, a purchase, a campground…)"
+    },
+    {
+     "acres": 228.0,
+     "as": "228 acres",
+     "clean": false,
+     "line": "door getaway. Formerly named Barbour Ponds, this nature and people-friendly park offers 689 acres of land and 228 acres of water among several ponds. There’s something for every kind of nature lover, whether you're an angler, cam",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/placestogo/parks/StVrain",
+     "why": "no total words near it"
+    },
+    {
+     "acres": 689.0,
+     "as": "689 acres",
+     "clean": false,
+     "line": ", \"touchThreshold\" : 5, \"useCSS\" : true, \"useTransform\" : true, \"centerPadding\":\"0px\", \"infinite\" : false }'> 689 acres of land 228 acres of water 87 campsites 20 picnic sites 7 miles of trails Accessing the Park Directions Direc",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/placestogo/parks/StVrain",
+     "why": "no total words near it"
+    },
+    {
+     "acres": 228.0,
+     "as": "228 acres",
+     "clean": false,
+     "line": ": 5, \"useCSS\" : true, \"useTransform\" : true, \"centerPadding\":\"0px\", \"infinite\" : false }'> 689 acres of land 228 acres of water 87 campsites 20 picnic sites 7 miles of trails Accessing the Park Directions Directions From I-25 Ex",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/placestogo/parks/StVrain",
+     "why": "no total words near it"
+    },
+    {
+     "acres": 50.0,
+     "as": "50 acres",
+     "clean": false,
+     "line": "s were turned over to the State Parks Department for a state recreation area. The Parks Department turned the 50 acres of land and 80 acres of water into a recreation area named for Roy N. Barbour, an area resident and avid cons",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/placestogo/parks/StVrain",
+     "why": "no total words near it"
+    },
+    {
+     "acres": 80.0,
+     "as": "80 acres",
+     "clean": false,
+     "line": "the State Parks Department for a state recreation area. The Parks Department turned the 50 acres of land and 80 acres of water into a recreation area named for Roy N. Barbour, an area resident and avid conservationist. Barbour",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/placestogo/parks/StVrain",
+     "why": "no total words near it"
+    },
+    {
+     "acres": 228.0,
+     "as": "228 acres",
+     "clean": false,
+     "line": "rth I-25 between Denver and Ft. Collins at Highway 119, St. Vrain State Park [formerly Barbour Ponds], with 228 acres of water and 689 acres of recreational land, is a great place for fishermen, campers, photographers, birder",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/sites/default/files/dam/c2osani8ac/st.pdf",
+     "why": "a map label (no sentence)"
+    },
+    {
+     "acres": 689.0,
+     "as": "689 acres",
+     "clean": false,
+     "line": "and Ft. Collins at Highway 119, St. Vrain State Park [formerly Barbour Ponds], with 228 acres of water and 689 acres of recreational land, is a great place for fishermen, campers, photographers, birders, and anyone who loves",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/sites/default/files/dam/c2osani8ac/st.pdf",
+     "why": "a map label (no sentence)"
+    }
+   ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-1242": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Stagecoach State Park",
-   "official": null,
+   "official": {
+    "acres": 1630.0,
+    "as": "1,630 acres",
+    "clean": false,
+    "line": ", \"touchThreshold\" : 5, \"useCSS\" : true, \"useTransform\" : true, \"centerPadding\":\"0px\", \"infinite\" : false }'> 1,630 acres 92 campsites 50 picnic sites 8 miles of trails Accessing the Park Directions Directions From I-70 - Take the",
+    "read": "2026-11-22",
+    "sent": "1,630 acres",
+    "url": "https://cpw.state.co.us/placestogo/parks/Stagecoach",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 1391,
     "dissolved": {
@@ -8946,30 +9235,58 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/placestogo/parks/Stagecoach",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 15,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 820.0,
+     "as": "820 acre",
+     "clean": false,
+     "line": "ear Steamboat Springs, Stagecoach State Park offers a captivating backdrop for recreation. With its expansive 820-acre reservoir offering renowned lake and river fishing, the park is a year-round destination. It serves as an ide",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/placestogo/parks/Stagecoach",
+     "why": "part (a lake, a purchase, a campground…)"
+    },
+    {
+     "acres": 1630.0,
+     "as": "1,630 acres",
+     "clean": false,
+     "line": ", \"touchThreshold\" : 5, \"useCSS\" : true, \"useTransform\" : true, \"centerPadding\":\"0px\", \"infinite\" : false }'> 1,630 acres 92 campsites 50 picnic sites 8 miles of trails Accessing the Park Directions Directions From I-70 - Take the",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/placestogo/parks/Stagecoach",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-1243": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "State Forest State Park",
-   "official": null,
+   "official": {
+    "acres": 70932.0,
+    "as": "70,932 acres",
+    "clean": false,
+    "line": "​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​In the ultimate rugged Colorado, State Forest State Park offers visitors 70,932 acres of forest, jagged peaks, alpine lakes, wildlife and miles of trails. With so much space and natural diversity",
+    "read": "2026-11-22",
+    "sent": "​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​In the ultimate rugged Colorado, State Forest State Park offers visitors 70,932 acres of forest, jagged peaks, alpine lakes, wildlife and miles of trails.",
+    "url": "https://cpw.state.co.us/placestogo/parks/StateForest",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 71228,
     "dissolved": {
@@ -8997,30 +9314,85 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/placestogo/parks/StateForest",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 0,
+   "same_agency": false,
+   "score": 7,
    "score_parts": {
     "name": 1,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 70932.0,
+     "as": "70,932 acres",
+     "clean": false,
+     "line": "​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​In the ultimate rugged Colorado, State Forest State Park offers visitors 70,932 acres of forest, jagged peaks, alpine lakes, wildlife and miles of trails. With so much space and natural diversity",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/placestogo/parks/StateForest",
+     "why": "no total words near it"
+    },
+    {
+     "acres": 70932.0,
+     "as": "70,932 acres",
+     "clean": false,
+     "line": ", \"touchThreshold\" : 5, \"useCSS\" : true, \"useTransform\" : true, \"centerPadding\":\"0px\", \"infinite\" : false }'> 70,932 acres 228 campsites 14 picnic sites 136 miles of trails Accessing the Park Directions Directions From Denver Take I",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/placestogo/parks/StateForest",
+     "why": "no total words near it"
+    },
+    {
+     "acres": 16000.0,
+     "as": "25 square miles",
+     "clean": false,
+     "line": "dunes. Both East and North sand dunes are part of a larger, mostly dormant dune system spanning approximately 25 square miles. The park's climate mirrors high Rocky Mountain valleys, featuring abundant sunshine, low humidity, low preci",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/placestogo/parks/StateForest",
+     "why": "no total words near it"
+    },
+    {
+     "acres": 52000.0,
+     "as": "52,000 acres",
+     "clean": false,
+     "line": "e from the Ruby Jewel hike. Habitats and Plants Habitats and Plants at This Park Coniferous trees cover about 52,000 acres of State Forest. Those trees include mostly lodgepole pine, followed by Engelmann spruce, sub-alpine fir, Dou",
+     "total_like": true,
+     "url": "https://cpw.state.co.us/placestogo/parks/StateForest",
+     "why": "total-looking"
+    }
+   ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-1244": {
-   "checked": "2026-11-09",
-   "handover": [],
-   "last_read_failed": "2026-11-22",
+   "checked": "2026-11-22",
+   "handover": [
+    {
+     "date_hint": "2014",
+     "kind": "transfer",
+     "line": "e for drama in 1945. In November 2014, former Colorado State Senator and Representative Allen Dines donated 80 acres and his family vacation home to Colorado Parks and Wildlife. It was the last private property surrounded by the park. This acquisition allowed for rerouting of the Staunton Ranch trai",
+     "owner_now": "Colorado Parks and Wildlife",
+     "src": "https://cpw.state.co.us/placestogo/parks/Staunton",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
    "n": "Staunton State Park",
-   "official": null,
+   "official": {
+    "acres": 3988.0,
+    "as": "3,988 acres",
+    "clean": false,
+    "line": ", \"touchThreshold\" : 5, \"useCSS\" : true, \"useTransform\" : true, \"centerPadding\":\"0px\", \"infinite\" : false }'> 3,988 acres 25 campsites 25 picnic sites 37 miles of trails Accessing the Park Directions Directions From Denver Take US",
+    "read": "2026-11-22",
+    "sent": "3,988 acres",
+    "url": "https://cpw.state.co.us/placestogo/parks/Staunton",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 4071,
     "family_fold": "layers {'sgcob': 3953, 'padus': 4071}: one land in 2 layers, the padus copy used (3,953 ac of copies not added)",
@@ -9079,33 +9451,88 @@
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
-   "owner_now": null,
+   "owner_now": "Colorado Parks and Wildlife",
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/placestogo/parks/Staunton",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 2,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
-    "pin": 1,
-    "size": 1,
+    "pin": 2,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 3988.0,
+     "as": "3,988 acres",
+     "clean": false,
+     "line": ", \"touchThreshold\" : 5, \"useCSS\" : true, \"useTransform\" : true, \"centerPadding\":\"0px\", \"infinite\" : false }'> 3,988 acres 25 campsites 25 picnic sites 37 miles of trails Accessing the Park Directions Directions From Denver Take US",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/placestogo/parks/Staunton",
+     "why": "no total words near it"
+    },
+    {
+     "acres": 3828.0,
+     "as": "3,828 acres",
+     "clean": false,
+     "line": "of Staunton was donated in 1986 by Frances Hornbrook Staunton. What we know today as the park’s approximately 3,828 acres are made up of parcels of land acquired over the years. The properties that make up the park are rich in huma",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/placestogo/parks/Staunton",
+     "why": "part (a lake, a purchase, a campground…)"
+    },
+    {
+     "acres": 1720.0,
+     "as": "1,720 acre",
+     "clean": false,
+     "line": "century sawmill in the northern part of the site A sportsman's club on the western side of the site The first 1,720-acre parcel was donated to Colorado Parks and Wildlife in 1986 by Frances Hornbrook Staunton, daughter of Drs. Rac",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/placestogo/parks/Staunton",
+     "why": "history"
+    },
+    {
+     "acres": 3828.0,
+     "as": "3,828 acres",
+     "clean": false,
+     "line": "key parcel, called the Chase property, was added to the park to reach its current land base of approximately 3,828 acres. This parcel was once owned by Mary Coyle Chase, a Denver native, journalist and playwright best known for he",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/placestogo/parks/Staunton",
+     "why": "no total words near it"
+    },
+    {
+     "acres": 80.0,
+     "as": "80 acres",
+     "clean": false,
+     "line": "ize for drama in 1945. In November 2014, former Colorado State Senator and Representative Allen Dines donated 80 acres and his family vacation home to Colorado Parks and Wildlife. It was the last private property surrounded by t",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/placestogo/parks/Staunton",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-1245": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Steamboat Lake State Park",
-   "official": null,
+   "official": {
+    "acres": 2820.0,
+    "as": "2,820 acres",
+    "clean": false,
+    "line": ", \"touchThreshold\" : 5, \"useCSS\" : true, \"useTransform\" : true, \"centerPadding\":\"0px\", \"infinite\" : false }'> 2,820 acres 196 campsites 25 picnic sites 35.6 miles of trails Accessing the Park Directions Directions From Steamboat Sp",
+    "read": "2026-11-22",
+    "sent": "2,820 acres",
+    "url": "https://cpw.state.co.us/placestogo/parks/SteamboatLake",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 2824,
     "dissolved": {
@@ -9139,28 +9566,47 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/placestogo/parks/SteamboatLake",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 0,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 2820.0,
+     "as": "2,820 acres",
+     "clean": false,
+     "line": ", \"touchThreshold\" : 5, \"useCSS\" : true, \"useTransform\" : true, \"centerPadding\":\"0px\", \"infinite\" : false }'> 2,820 acres 196 campsites 25 picnic sites 35.6 miles of trails Accessing the Park Directions Directions From Steamboat Sp",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/placestogo/parks/SteamboatLake",
+     "why": "no total words near it"
+    },
+    {
+     "acres": 1100.0,
+     "as": "1,100 acres",
+     "clean": false,
+     "line": "thorized Sales Agent Nature and Wildlife At Steamboat Lake State Park, you'll find a large reservoir spanning 1,100 acres, nestled at an elevation of 8,000 feet in the Willow Creek Valley of the Park Range. Keep an eye out for fami",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/placestogo/parks/SteamboatLake",
+     "why": "part (a lake, a purchase, a campground…)"
+    }
+   ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-12455": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Mt. Shavano State Fish Hatchery",
    "official": null,
    "ours": {
@@ -9181,7 +9627,7 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/hatchery/mt-shavano",
      "why": "the park's page (data/parkinfo)"
     }
@@ -9200,11 +9646,19 @@
    "verdict": "no size on page"
   },
   "US-12456": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Stalker Lake State Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 75.0,
+    "as": "75 acres",
+    "clean": false,
+    "line": "d check current hunting, fishing and land use regulations when planning to visit a State Wildlife Area. Acres 75 acres. Elevation min. 3,548 ft - max 3,614 ft GMU 98 Hunting Opportunities Dove, Waterfowl Fishing Opportunities Wa",
+    "read": "2026-11-22",
+    "sent": "75 acres.",
+    "url": "https://cpw.state.co.us/state-wildlife-areas/stalker-lake-swa",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 71,
     "dissolved": {
@@ -9234,30 +9688,59 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/state-wildlife-areas/stalker-lake-swa",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 5,
+   "same_agency": false,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 75.0,
+     "as": "75 acres",
+     "clean": false,
+     "line": "d check current hunting, fishing and land use regulations when planning to visit a State Wildlife Area. Acres 75 acres. Elevation min. 3,548 ft - max 3,614 ft GMU 98 Hunting Opportunities Dove, Waterfowl Fishing Opportunities Wa",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/state-wildlife-areas/stalker-lake-swa",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Wildlife Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-1246": {
-   "checked": "2026-11-09",
-   "handover": [],
-   "last_read_failed": "2026-11-22",
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 314 acres, no total words near it)",
+   "checked": "2026-11-22",
+   "handover": [
+    {
+     "date_hint": "1960",
+     "kind": "transfer",
+     "line": "om the Utah line east to McClure Pass. In August 1960, the newly appointed Parks Board received the transfer of Sweitzer Lake from the Game and Fish Department to the newly formed Colorado State Parks and Recreation. Since 1972, the area, with its 137-surface-acre lake and 211 land acres, has been m",
+     "owner_now": "Game and Fish Department",
+     "src": "https://cpw.state.co.us/placestogo/parks/SweitzerLake",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
    "n": "Sweitzer Lake State Park",
-   "official": null,
+   "official": {
+    "acres": 314.0,
+    "as": "314 acres",
+    "clean": false,
+    "line": ", \"touchThreshold\" : 5, \"useCSS\" : true, \"useTransform\" : true, \"centerPadding\":\"0px\", \"infinite\" : false }'> 314 acres 137 surface-acre reservoir 32 picnic sites 3 miles of trails Accessing the Park Directions Directions From De",
+    "read": "2026-11-22",
+    "sent": "314 acres",
+    "url": "https://cpw.state.co.us/placestogo/parks/SweitzerLake",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 597,
     "dissolved": {
@@ -9284,15 +9767,16 @@
     "src": "USGS PAD-US",
     "unknown_pieces": 3
    },
-   "owner_now": null,
+   "owner_now": "Game and Fish Department",
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/placestogo/parks/SweitzerLake",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
+   "pct": 90,
+   "same_agency": false,
    "score": 7,
    "score_parts": {
     "name": 2,
@@ -9300,17 +9784,36 @@
     "size": 1,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 314.0,
+     "as": "314 acres",
+     "clean": false,
+     "line": ", \"touchThreshold\" : 5, \"useCSS\" : true, \"useTransform\" : true, \"centerPadding\":\"0px\", \"infinite\" : false }'> 314 acres 137 surface-acre reservoir 32 picnic sites 3 miles of trails Accessing the Park Directions Directions From De",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/placestogo/parks/SweitzerLake",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-1247": {
-   "checked": "2026-11-09",
+   "cause": "agency bigger: our outline may miss a tract",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Sylvan Lake State Park",
-   "official": null,
+   "official": {
+    "acres": 1550.0,
+    "as": "1,550 acres",
+    "clean": false,
+    "line": ", \"touchThreshold\" : 5, \"useCSS\" : true, \"useTransform\" : true, \"centerPadding\":\"0px\", \"infinite\" : false }'> 1,550 acres 30 picnic sites 42 acre lake 7.8 miles of trails Accessing the Park Directions Directions From I-70 Take I-70",
+    "read": "2026-11-22",
+    "sent": "1,550 acres",
+    "url": "https://cpw.state.co.us/placestogo/parks/SylvanLake",
+    "why": "total-looking"
+   },
    "ours": {
     "acres": 1170,
     "family_fold": "layers {'sgcob': 1170, 'padus': 1146}: one land in 2 layers, the sgcob copy used (1,146 ac of copies not added)",
@@ -9330,30 +9833,85 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/placestogo/parks/SylvanLake",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
+   "pct": 25,
+   "same_agency": false,
    "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 1,
-    "size": 1,
+    "pin": 2,
+    "size": 0,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 1550.0,
+     "as": "1,550 acres",
+     "clean": false,
+     "line": ", \"touchThreshold\" : 5, \"useCSS\" : true, \"useTransform\" : true, \"centerPadding\":\"0px\", \"infinite\" : false }'> 1,550 acres 30 picnic sites 42 acre lake 7.8 miles of trails Accessing the Park Directions Directions From I-70 Take I-70",
+     "total_like": true,
+     "url": "https://cpw.state.co.us/placestogo/parks/SylvanLake",
+     "why": "total-looking"
+    },
+    {
+     "acres": 42.0,
+     "as": "42 acre",
+     "clean": false,
+     "line": "CSS\" : true, \"useTransform\" : true, \"centerPadding\":\"0px\", \"infinite\" : false }'> 1,550 acres 30 picnic sites 42 acre lake 7.8 miles of trails Accessing the Park Directions Directions From I-70 Take I-70 to Eagle (exit 147). Tu",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/placestogo/parks/SylvanLake",
+     "why": "part (a lake, a purchase, a campground…)"
+    },
+    {
+     "acres": 155.0,
+     "as": "155 acres",
+     "clean": false,
+     "line": "economic force in the valley. 1962: The State of Colorado purchased the Sylvan Lake property, which included 155 acres around Sylvan Lake, from an IRS auction. The property was initially developed and managed by the Parks sectio",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/placestogo/parks/SylvanLake",
+     "why": "part (a lake, a purchase, a campground…)"
+    },
+    {
+     "acres": 120.0,
+     "as": "120 acres",
+     "clean": false,
+     "line": "ush Creek from the State Land Board and constructed rental cabins at the lake. 2002: State Parks gained about 120 acres at the inlet of Sylvan Lake through a land exchange with the Forest Service, and the Visitor Center was const",
+     "total_like": true,
+     "url": "https://cpw.state.co.us/placestogo/parks/SylvanLake",
+     "why": "total-looking"
+    },
+    {
+     "acres": 42.0,
+     "as": "42 acre",
+     "clean": false,
+     "line": "ws visitors looking for outdoor alpine recreation in a picturesque setting. The park’s key features include a 42-acre mountain lake, which is stocked with trout and is popular with anglers. Additionally, the campground at Sylva",
+     "total_like": true,
+     "url": "https://cpw.state.co.us/placestogo/parks/SylvanLake",
+     "why": "total-looking"
+    }
+   ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "off"
   },
   "US-1248": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Trinidad Lake State Park",
-   "official": null,
+   "official": {
+    "acres": 2960.0,
+    "as": "2,960 acres",
+    "clean": false,
+    "line": ", \"touchThreshold\" : 5, \"useCSS\" : true, \"useTransform\" : true, \"centerPadding\":\"0px\", \"infinite\" : false }'> 2,960 acres 73 campsites 46 picnic sites 10.3 miles of trails Accessing the Park Directions Directions From I-25 Follow I",
+    "read": "2026-11-22",
+    "sent": "2,960 acres",
+    "url": "https://cpw.state.co.us/placestogo/parks/TrinidadLake",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 3223,
     "dissolved": {
@@ -9381,30 +9939,49 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/placestogo/parks/TrinidadLake",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 9,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 2960.0,
+     "as": "2,960 acres",
+     "clean": false,
+     "line": ", \"touchThreshold\" : 5, \"useCSS\" : true, \"useTransform\" : true, \"centerPadding\":\"0px\", \"infinite\" : false }'> 2,960 acres 73 campsites 46 picnic sites 10.3 miles of trails Accessing the Park Directions Directions From I-25 Follow I",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/placestogo/parks/TrinidadLake",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-1249": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Vega State Park",
-   "official": null,
+   "official": {
+    "acres": 1823.0,
+    "as": "1,823 acres",
+    "clean": false,
+    "line": ", \"touchThreshold\" : 5, \"useCSS\" : true, \"useTransform\" : true, \"centerPadding\":\"0px\", \"infinite\" : false }'> 1,823 acres 109 campsites 27 picnic sites 7 miles of trail Accessing the Park Directions Directions From Grand Junction F",
+    "read": "2026-11-22",
+    "sent": "1,823 acres",
+    "url": "https://cpw.state.co.us/placestogo/parks/Vega",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 1841,
     "dissolved": {
@@ -9432,30 +10009,58 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/placestogo/parks/Vega",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 5,
+   "pct": 1,
+   "same_agency": false,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 0,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 1823.0,
+     "as": "1,823 acres",
+     "clean": false,
+     "line": ", \"touchThreshold\" : 5, \"useCSS\" : true, \"useTransform\" : true, \"centerPadding\":\"0px\", \"infinite\" : false }'> 1,823 acres 109 campsites 27 picnic sites 7 miles of trail Accessing the Park Directions Directions From Grand Junction F",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/placestogo/parks/Vega",
+     "why": "no total words near it"
+    },
+    {
+     "acres": 925.0,
+     "as": "925 acres",
+     "clean": false,
+     "line": "rks and Outdoor Recreation to have the area managed as a state recreation area. In addition to the reservoir, 925 acres of upland are now managed by Colorado Parks and Wildlife, providing recreational activities, open space and w",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/placestogo/parks/Vega",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-1250": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Yampa River State Park",
-   "official": null,
+   "official": {
+    "acres": 163.0,
+    "as": "163 acres",
+    "clean": false,
+    "line": "rk segments spanning 134 miles along the Yampa River, there is something for everyone. Explore River Sections 163 acres 60 campsites 1.5 miles of trails 134 miles of river Accessing the Park Directions Directions Park Office 6185",
+    "read": "2026-11-22",
+    "sent": "163 acres",
+    "url": "https://cpw.state.co.us/placestogo/parks/YampaRiver",
+    "why": "total-looking"
+   },
    "ours": {
     "acres": 168,
     "dissolved": {
@@ -9490,30 +10095,50 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/placestogo/parks/YampaRiver",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 3,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 163.0,
+     "as": "163 acres",
+     "clean": false,
+     "line": "rk segments spanning 134 miles along the Yampa River, there is something for everyone. Explore River Sections 163 acres 60 campsites 1.5 miles of trails 134 miles of river Accessing the Park Directions Directions Park Office 6185",
+     "total_like": true,
+     "url": "https://cpw.state.co.us/placestogo/parks/YampaRiver",
+     "why": "total-looking"
+    }
+   ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-12585": {
-   "checked": "2026-11-09",
+   "cause": "agency bigger: our outline may miss a tract",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Elliot State Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 2576.0,
+    "as": "2576 acres",
+    "clean": false,
+    "line": "d to utilize scouting opportunities to determine if a specific property has adequate waterfowl habitat. Acres 2576 acres. Elevation min. 4,103 ft - max 4,145 ft GMU 95, 96 Hunting Opportunities Bobwhite quail, Deer, Dove, Pheasant",
+    "read": "2026-11-22",
+    "sent": "2576 acres.",
+    "url": "https://cpw.state.co.us/state-wildlife-areas/elliott-swa",
+    "why": "total-looking"
+   },
    "ours": {
     "acres": 67,
     "manager": "",
@@ -9532,30 +10157,49 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/state-wildlife-areas/elliott-swa",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 97,
+   "same_agency": false,
+   "score": 5,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 1,
+    "size": 0,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 2576.0,
+     "as": "2576 acres",
+     "clean": false,
+     "line": "d to utilize scouting opportunities to determine if a specific property has adequate waterfowl habitat. Acres 2576 acres. Elevation min. 4,103 ft - max 4,145 ft GMU 95, 96 Hunting Opportunities Bobwhite quail, Deer, Dove, Pheasant",
+     "total_like": true,
+     "url": "https://cpw.state.co.us/state-wildlife-areas/elliott-swa",
+     "why": "total-looking"
+    }
+   ],
    "t": "State Wildlife Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "off"
   },
   "US-12586": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Jean K Tool State Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 903.0,
+    "as": "903 acres",
+    "clean": false,
+    "line": "e regulations when planning to visit a State Wildlife Area. This SWA was formerly known as Dodd Bridge. Acres 903 acres. Elevation min. 4,208 ft - max 4,267 ft GMU 96 Hunting Opportunities Bobwhite quail, Deer, Dove, Turkey, Wate",
+    "read": "2026-11-22",
+    "sent": "903 acres.",
+    "url": "https://cpw.state.co.us/state-wildlife-areas/jean-k-tool-swa",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 782,
     "dissolved": {
@@ -9583,30 +10227,49 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/state-wildlife-areas/jean-k-tool-swa",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 13,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
-    "pin": 1,
-    "size": 1,
+    "pin": 2,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 903.0,
+     "as": "903 acres",
+     "clean": false,
+     "line": "e regulations when planning to visit a State Wildlife Area. This SWA was formerly known as Dodd Bridge. Acres 903 acres. Elevation min. 4,208 ft - max 4,267 ft GMU 96 Hunting Opportunities Bobwhite quail, Deer, Dove, Turkey, Wate",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/state-wildlife-areas/jean-k-tool-swa",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Wildlife Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-12587": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Andrick Ponds State Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 711.0,
+    "as": "711 acres",
+    "clean": false,
+    "line": "chThreshold\" : 5, \"useCSS\" : true, \"useTransform\" : true, \"centerPadding\":\"0px\", \"infinite\" : false }'> Acres 711 acres. Elevation 4462 ft GMU 95 Hunting Opportunities Dove, Turkey, Waterfowl Activities Hunting, Nature Viewing Re",
+    "read": "2026-11-22",
+    "sent": "711 acres.",
+    "url": "https://cpw.state.co.us/state-wildlife-areas/andrick-ponds-swa",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 711,
     "dissolved": {
@@ -9634,30 +10297,49 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/state-wildlife-areas/andrick-ponds-swa",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 0,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 711.0,
+     "as": "711 acres",
+     "clean": false,
+     "line": "chThreshold\" : 5, \"useCSS\" : true, \"useTransform\" : true, \"centerPadding\":\"0px\", \"infinite\" : false }'> Acres 711 acres. Elevation 4462 ft GMU 95 Hunting Opportunities Dove, Turkey, Waterfowl Activities Hunting, Nature Viewing Re",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/state-wildlife-areas/andrick-ponds-swa",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Wildlife Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-12588": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Russell Lakes State Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 4739.0,
+    "as": "4739 acres",
+    "clean": false,
+    "line": "chThreshold\" : 5, \"useCSS\" : true, \"useTransform\" : true, \"centerPadding\":\"0px\", \"infinite\" : false }'> Acres 4739 acres. Elevation min. 7,563 ft - max 7,586 ft GMU 682 Hunting Opportunities Dove, Rabbit, Waterfowl Activities Hunt",
+    "read": "2026-11-22",
+    "sent": "4739 acres.",
+    "url": "https://cpw.state.co.us/state-wildlife-areas/russell-lakes-swa",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 4573,
     "dissolved": {
@@ -9692,30 +10374,49 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/state-wildlife-areas/russell-lakes-swa",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 4,
+   "same_agency": false,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 4739.0,
+     "as": "4739 acres",
+     "clean": false,
+     "line": "chThreshold\" : 5, \"useCSS\" : true, \"useTransform\" : true, \"centerPadding\":\"0px\", \"infinite\" : false }'> Acres 4739 acres. Elevation min. 7,563 ft - max 7,586 ft GMU 682 Hunting Opportunities Dove, Rabbit, Waterfowl Activities Hunt",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/state-wildlife-areas/russell-lakes-swa",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Wildlife Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-12682": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Gunnison State Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 2800.0,
+    "as": "2800 acres",
+    "clean": false,
+    "line": "Intosh Mountain. West Antelope Creek bisects that parcel. All three parcels are surrounded by BLM land. Acres 2800 acres. Elevation min. 7,521 ft - max 9,836 ft GMU 54 Hunting Opportunities Deer, Dusky (blue) grouse, Elk, Rabbit F",
+    "read": "2026-11-22",
+    "sent": "2800 acres.",
+    "url": "https://cpw.state.co.us/state-wildlife-areas/gunnison-swa",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 3155,
     "dissolved": {
@@ -9757,30 +10458,50 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/state-wildlife-areas/gunnison-swa",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 13,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 2800.0,
+     "as": "2800 acres",
+     "clean": false,
+     "line": "Intosh Mountain. West Antelope Creek bisects that parcel. All three parcels are surrounded by BLM land. Acres 2800 acres. Elevation min. 7,521 ft - max 9,836 ft GMU 54 Hunting Opportunities Deer, Dusky (blue) grouse, Elk, Rabbit F",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/state-wildlife-areas/gunnison-swa",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Wildlife Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-12683": {
-   "checked": "2026-11-09",
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 81 acres, no total words near it)",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Gunnison River State Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 81.0,
+    "as": "81 acres",
+    "clean": false,
+    "line": "d check current hunting, fishing and land use regulations when planning to visit a State Wildlife Area. Acres 81 acres. Elevation Approx. 7,700 ft. above sea level GMU 54 Hunting Opportunities Waterfowl Fishing Opportunities Col",
+    "read": "2026-11-22",
+    "sent": "81 acres.",
+    "url": "https://cpw.state.co.us/state-wildlife-areas/gunnison-river-swa-van-tuyl-redden",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 3160,
     "dissolved": {
@@ -9828,12 +10549,13 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/state-wildlife-areas/gunnison-river-swa-van-tuyl-redden",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
+   "pct": 3801,
+   "same_agency": false,
    "score": 7,
    "score_parts": {
     "name": 2,
@@ -9841,17 +10563,35 @@
     "size": 1,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 81.0,
+     "as": "81 acres",
+     "clean": false,
+     "line": "d check current hunting, fishing and land use regulations when planning to visit a State Wildlife Area. Acres 81 acres. Elevation Approx. 7,700 ft. above sea level GMU 54 Hunting Opportunities Waterfowl Fishing Opportunities Col",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/state-wildlife-areas/gunnison-river-swa-van-tuyl-redden",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Wildlife Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-12707": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Pastorius Reservoir State Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 83.0,
+    "as": "83 acres",
+    "clean": false,
+    "line": "h of 15 feet. The dam is located on the south end. Water level fluctuates during the irrigation season. Acres 83 acres. Elevation min. 6845 ft - max 6891 ft GMU 75 Hunting Opportunities Waterfowl Fishing Opportunities Coldwater",
+    "read": "2026-11-22",
+    "sent": "83 acres.",
+    "url": "https://cpw.state.co.us/state-wildlife-areas/pastorius-reservoir-swa",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 78,
     "dissolved": {
@@ -9879,30 +10619,49 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/state-wildlife-areas/pastorius-reservoir-swa",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 6,
+   "same_agency": false,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 83.0,
+     "as": "83 acres",
+     "clean": false,
+     "line": "h of 15 feet. The dam is located on the south end. Water level fluctuates during the irrigation season. Acres 83 acres. Elevation min. 6845 ft - max 6891 ft GMU 75 Hunting Opportunities Waterfowl Fishing Opportunities Coldwater",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/state-wildlife-areas/pastorius-reservoir-swa",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Wildlife Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-12755": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Sandsage State Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 287.0,
+    "as": "287 acres",
+    "clean": false,
+    "line": "d check current hunting, fishing and land use regulations when planning to visit a State Wildlife Area. Acres 287 acres. Elevation min. 3,617 ft - max 3,726 ft GMU 101 Hunting Opportunities Deer, Dove, Pheasant, Quail, Rabbit, Sq",
+    "read": "2026-11-22",
+    "sent": "287 acres.",
+    "url": "https://cpw.state.co.us/state-wildlife-areas/sandsage-swa",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 307,
     "family_fold": "layers {'padus': 307, 'sgcoa': 289}: one land in 2 layers, the padus copy used (289 ac of copies not added)",
@@ -9922,30 +10681,49 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/state-wildlife-areas/sandsage-swa",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 7,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
-    "pin": 1,
-    "size": 1,
+    "pin": 2,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 287.0,
+     "as": "287 acres",
+     "clean": false,
+     "line": "d check current hunting, fishing and land use regulations when planning to visit a State Wildlife Area. Acres 287 acres. Elevation min. 3,617 ft - max 3,726 ft GMU 101 Hunting Opportunities Deer, Dove, Pheasant, Quail, Rabbit, Sq",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/state-wildlife-areas/sandsage-swa",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Wildlife Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-12756": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Mountain Home Reservoir State Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 1061.0,
+    "as": "1061 acres",
+    "clean": false,
+    "line": "er with trout. Camping and restrooms are available. Reservoir is open to ice fishing during the winter. Acres 1061 acres. Elevation min. 8,144 ft - max 8,364 ft GMU 83 Hunting Opportunities No hunting opportunities available Fishi",
+    "read": "2026-11-22",
+    "sent": "1061 acres.",
+    "url": "https://cpw.state.co.us/state-wildlife-areas/mountain-home-reservoir-swa",
+    "why": "total-looking"
+   },
    "ours": {
     "acres": 1061,
     "dissolved": {
@@ -9973,30 +10751,49 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/state-wildlife-areas/mountain-home-reservoir-swa",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 0,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
-    "pin": 1,
-    "size": 1,
+    "pin": 2,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 1061.0,
+     "as": "1061 acres",
+     "clean": false,
+     "line": "er with trout. Camping and restrooms are available. Reservoir is open to ice fishing during the winter. Acres 1061 acres. Elevation min. 8,144 ft - max 8,364 ft GMU 83 Hunting Opportunities No hunting opportunities available Fishi",
+     "total_like": true,
+     "url": "https://cpw.state.co.us/state-wildlife-areas/mountain-home-reservoir-swa",
+     "why": "total-looking"
+    }
+   ],
    "t": "State Wildlife Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-12757": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Hot Creek State Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 9485.0,
+    "as": "9485 acres",
+    "clean": false,
+    "line": "e animals. Hot Creek State Wildlife Area adjoins 8,000 acres of state trust properties open to hunting. Acres 9485 acres. Elevation min. 7,950 ft - max 9,462 ft GMU 81 Hunting Opportunities Black bear, Deer, Dove, Elk, Mountain li",
+    "read": "2026-11-22",
+    "sent": "9485 acres.",
+    "url": "https://cpw.state.co.us/state-wildlife-areas/hot-creek-swa",
+    "why": "part (a lake, a purchase, a campground…)"
+   },
    "ours": {
     "acres": 9513,
     "family_fold": "layers {'sgcoa': 9513, 'padus': 3281}: one land in 2 layers, the sgcoa copy used (3,281 ac of copies not added)",
@@ -10022,30 +10819,59 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/state-wildlife-areas/hot-creek-swa",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 0,
+   "same_agency": false,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 8000.0,
+     "as": "8,000 acres",
+     "clean": false,
+     "line": "n use the area, although there is no hunting allowed for these animals. Hot Creek State Wildlife Area adjoins 8,000 acres of state trust properties open to hunting. Acres 9485 acres. Elevation min. 7,950 ft - max 9,462 ft GMU 81 Hu",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/state-wildlife-areas/hot-creek-swa",
+     "why": "part (a lake, a purchase, a campground…)"
+    },
+    {
+     "acres": 9485.0,
+     "as": "9485 acres",
+     "clean": false,
+     "line": "e animals. Hot Creek State Wildlife Area adjoins 8,000 acres of state trust properties open to hunting. Acres 9485 acres. Elevation min. 7,950 ft - max 9,462 ft GMU 81 Hunting Opportunities Black bear, Deer, Dove, Elk, Mountain li",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/state-wildlife-areas/hot-creek-swa",
+     "why": "part (a lake, a purchase, a campground…)"
+    }
+   ],
    "t": "State Wildlife Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-12758": {
-   "checked": "2026-11-09",
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 2808 acres, no total words near it)",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "La Jara Creek State Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 2808.0,
+    "as": "2808 acres",
+    "clean": false,
+    "line": "d check current hunting, fishing and land use regulations when planning to visit a State Wildlife Area. Acres 2808 acres. Elevation 8164 ft GMU 81 Hunting Opportunities Bear, Deer, Dove, Elk, Mountain lion, Rabbit Fishing Opportun",
+    "read": "2026-11-22",
+    "sent": "2808 acres.",
+    "url": "https://cpw.state.co.us/state-wildlife-areas/la-jara-creek-swa",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 839,
     "dissolved": {
@@ -10075,12 +10901,13 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/state-wildlife-areas/la-jara-creek-swa",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
+   "pct": 70,
+   "same_agency": false,
    "score": 6,
    "score_parts": {
     "name": 2,
@@ -10088,17 +10915,35 @@
     "size": 1,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 2808.0,
+     "as": "2808 acres",
+     "clean": false,
+     "line": "d check current hunting, fishing and land use regulations when planning to visit a State Wildlife Area. Acres 2808 acres. Elevation 8164 ft GMU 81 Hunting Opportunities Bear, Deer, Dove, Elk, Mountain lion, Rabbit Fishing Opportun",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/state-wildlife-areas/la-jara-creek-swa",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Wildlife Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-12759": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Sego Springs State Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 640.0,
+    "as": "640 acres",
+    "clean": false,
+    "line": "d check current hunting, fishing and land use regulations when planning to visit a State Wildlife Area. Acres 640 acres. Elevation min. 7,619 ft - max 7,881 ft GMU 81 Hunting Opportunities Dove, Rabbit, Waterfowl Fishing Opportun",
+    "read": "2026-11-22",
+    "sent": "640 acres.",
+    "url": "https://cpw.state.co.us/state-wildlife-areas/sego-springs-swa",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 642,
     "dissolved": {
@@ -10126,30 +10971,50 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/state-wildlife-areas/sego-springs-swa",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 0,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 640.0,
+     "as": "640 acres",
+     "clean": false,
+     "line": "d check current hunting, fishing and land use regulations when planning to visit a State Wildlife Area. Acres 640 acres. Elevation min. 7,619 ft - max 7,881 ft GMU 81 Hunting Opportunities Dove, Rabbit, Waterfowl Fishing Opportun",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/state-wildlife-areas/sego-springs-swa",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Wildlife Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-13084": {
-   "checked": "2026-11-09",
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 2100 acres, no total words near it)",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Ralston Creek State Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 2100.0,
+    "as": "2100 acres",
+    "clean": false,
+    "line": "d check current hunting, fishing and land use regulations when planning to visit a State Wildlife Area. Acres 2100 acres. Elevation min. 7,468 ft - max 9,784 ft GMU 38 Hunting Opportunities Big game, Furbearer, Waterfowl Activitie",
+    "read": "2026-11-22",
+    "sent": "2100 acres.",
+    "url": "https://cpw.state.co.us/state-wildlife-areas/ralston-creek-swa",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 3329,
     "dissolved": {
@@ -10179,23 +11044,34 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/state-wildlife-areas/ralston-creek-swa",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 59,
+   "same_agency": false,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 2100.0,
+     "as": "2100 acres",
+     "clean": false,
+     "line": "d check current hunting, fishing and land use regulations when planning to visit a State Wildlife Area. Acres 2100 acres. Elevation min. 7,468 ft - max 9,784 ft GMU 38 Hunting Opportunities Big game, Furbearer, Waterfowl Activitie",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/state-wildlife-areas/ralston-creek-swa",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Wildlife Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-13106": {
    "checked": "2026-11-09",
@@ -10240,11 +11116,20 @@
    "verdict": "no size on page"
   },
   "US-13108": {
-   "checked": "2026-11-09",
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 383 acres, no total words near it)",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Rio Blanco Lake State Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 383.0,
+    "as": "383 acres",
+    "clean": false,
+    "line": "d check current hunting, fishing and land use regulations when planning to visit a State Wildlife Area. Acres 383 acres. Elevation min. 5,720 ft - max 5,782 ft GMU 11, 22 Hunting Opportunities Rabbit, Waterfowl Fishing Opportunit",
+    "read": "2026-11-22",
+    "sent": "383 acres.",
+    "url": "https://cpw.state.co.us/state-wildlife-areas/rio-blanco-lake-swa",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 1207,
     "family_fold": "layers {'sgcoa': 1207, 'padus': 1193}: one land in 2 layers, the sgcoa copy used (1,193 ac of copies not added)",
@@ -10264,30 +11149,49 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/state-wildlife-areas/rio-blanco-lake-swa",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 215,
+   "same_agency": false,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 383.0,
+     "as": "383 acres",
+     "clean": false,
+     "line": "d check current hunting, fishing and land use regulations when planning to visit a State Wildlife Area. Acres 383 acres. Elevation min. 5,720 ft - max 5,782 ft GMU 11, 22 Hunting Opportunities Rabbit, Waterfowl Fishing Opportunit",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/state-wildlife-areas/rio-blanco-lake-swa",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Wildlife Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-13109": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Narraguinnep Reservoir State Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 764.0,
+    "as": "764 acres",
+    "clean": false,
+    "line": "chThreshold\" : 5, \"useCSS\" : true, \"useTransform\" : true, \"centerPadding\":\"0px\", \"infinite\" : false }'> Acres 764 acres. Elevation min. 6,681 ft - max 6,743 ft GMU 711 Hunting Opportunities Waterfowl Fishing Opportunities Coldwat",
+    "read": "2026-11-22",
+    "sent": "764 acres.",
+    "url": "https://cpw.state.co.us/state-wildlife-areas/narraguinnep-reservoir-swa",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 764,
     "dissolved": {
@@ -10322,30 +11226,49 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/state-wildlife-areas/narraguinnep-reservoir-swa",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 0,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
-    "pin": 1,
-    "size": 1,
+    "pin": 2,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 764.0,
+     "as": "764 acres",
+     "clean": false,
+     "line": "chThreshold\" : 5, \"useCSS\" : true, \"useTransform\" : true, \"centerPadding\":\"0px\", \"infinite\" : false }'> Acres 764 acres. Elevation min. 6,681 ft - max 6,743 ft GMU 711 Hunting Opportunities Waterfowl Fishing Opportunities Coldwat",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/state-wildlife-areas/narraguinnep-reservoir-swa",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Wildlife Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-13110": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Skaguay Reservoir State Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 715.0,
+    "as": "715 acres",
+    "clean": false,
+    "line": "chThreshold\" : 5, \"useCSS\" : true, \"useTransform\" : true, \"centerPadding\":\"0px\", \"infinite\" : false }'> Acres 715 acres. Elevation min. 8,383 ft - max 9,344 ft GMU 59 Hunting Opportunities No hunting opportunities available Fishi",
+    "read": "2026-11-22",
+    "sent": "715 acres.",
+    "url": "https://cpw.state.co.us/state-wildlife-areas/skaguay-reservoir-swa",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 716,
     "dissolved": {
@@ -10373,30 +11296,49 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/state-wildlife-areas/skaguay-reservoir-swa",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 0,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
-    "pin": 1,
-    "size": 1,
+    "pin": 2,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 715.0,
+     "as": "715 acres",
+     "clean": false,
+     "line": "chThreshold\" : 5, \"useCSS\" : true, \"useTransform\" : true, \"centerPadding\":\"0px\", \"infinite\" : false }'> Acres 715 acres. Elevation min. 8,383 ft - max 9,344 ft GMU 59 Hunting Opportunities No hunting opportunities available Fishi",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/state-wildlife-areas/skaguay-reservoir-swa",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Wildlife Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-13111": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Lake Beckwith State Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 66.0,
+    "as": "66 acres",
+    "clean": false,
+    "line": "d check current hunting, fishing and land use regulations when planning to visit a State Wildlife Area. Acres 66 acres. Elevation min. 6,077 ft - max 6,084 ft GMU 84 Hunting Opportunities No hunting opportunities available Fishi",
+    "read": "2026-11-22",
+    "sent": "66 acres.",
+    "url": "https://cpw.state.co.us/state-wildlife-areas/lake-beckwith-swa",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 60,
     "dissolved": {
@@ -10426,30 +11368,50 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/state-wildlife-areas/lake-beckwith-swa",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 9,
+   "same_agency": false,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 66.0,
+     "as": "66 acres",
+     "clean": false,
+     "line": "d check current hunting, fishing and land use regulations when planning to visit a State Wildlife Area. Acres 66 acres. Elevation min. 6,077 ft - max 6,084 ft GMU 84 Hunting Opportunities No hunting opportunities available Fishi",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/state-wildlife-areas/lake-beckwith-swa",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Wildlife Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-13568": {
-   "checked": "2026-11-09",
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 3 acres, a tiny number without size wording)",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Creede State Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 3.0,
+    "as": "3 acres",
+    "clean": false,
+    "line": "d check current hunting, fishing and land use regulations when planning to visit a State Wildlife Area. Acres 3 acres. Elevation Approx. 8,700 ft GMU 76 Hunting Opportunities No hunting opportunities available Fishing Opportuni",
+    "read": "2026-11-22",
+    "sent": "3 acres.",
+    "url": "https://cpw.state.co.us/state-wildlife-areas/creede-swa",
+    "why": "a tiny number without size wording"
+   },
    "ours": {
     "acres": 29,
     "family_fold": "layers {'padus': 16, 'sgcoa': 10}: one land in 2 layers, the padus copy used (10 ac of copies not added)",
@@ -10469,30 +11431,49 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/state-wildlife-areas/creede-swa",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 867,
+   "same_agency": false,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 3.0,
+     "as": "3 acres",
+     "clean": false,
+     "line": "d check current hunting, fishing and land use regulations when planning to visit a State Wildlife Area. Acres 3 acres. Elevation Approx. 8,700 ft GMU 76 Hunting Opportunities No hunting opportunities available Fishing Opportuni",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/state-wildlife-areas/creede-swa",
+     "why": "a tiny number without size wording"
+    }
+   ],
    "t": "State Wildlife Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-13569": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Perins Peak State Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 7720.0,
+    "as": "7720 acres",
+    "clean": false,
+    "line": ", \"useCSS\" : true, \"useTransform\" : true, \"centerPadding\":\"0px\", \"infinite\" : false }'> Perins Peak SWA Acres 7720 acres. Elevation min. 6,848 ft - max 9,062 ft GMU 74 Hunting Opportunities Bear, Deer, Dusky (blue) grouse, Elk, Ra",
+    "read": "2026-11-22",
+    "sent": "7720 acres.",
+    "url": "https://cpw.state.co.us/state-wildlife-areas/perins-peak-swa",
+    "why": "total-looking"
+   },
    "ours": {
     "acres": 7729,
     "dissolved": {
@@ -10534,30 +11515,49 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/state-wildlife-areas/perins-peak-swa",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 0,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 7720.0,
+     "as": "7720 acres",
+     "clean": false,
+     "line": ", \"useCSS\" : true, \"useTransform\" : true, \"centerPadding\":\"0px\", \"infinite\" : false }'> Perins Peak SWA Acres 7720 acres. Elevation min. 6,848 ft - max 9,062 ft GMU 74 Hunting Opportunities Bear, Deer, Dusky (blue) grouse, Elk, Ra",
+     "total_like": true,
+     "url": "https://cpw.state.co.us/state-wildlife-areas/perins-peak-swa",
+     "why": "total-looking"
+    }
+   ],
    "t": "State Wildlife Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-13573": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Shriver-Wright State Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 120.0,
+    "as": "120 acres",
+    "clean": false,
+    "line": "chThreshold\" : 5, \"useCSS\" : true, \"useTransform\" : true, \"centerPadding\":\"0px\", \"infinite\" : false }'> Acres 120 acres. Elevation Approx. 7,600 above sea level GMU 791 Hunting Opportunities Deer, Dove, Rabbit, Waterfowl Fishing",
+    "read": "2026-11-22",
+    "sent": "120 acres.",
+    "url": "https://cpw.state.co.us/state-wildlife-areas/shriver-wright-swa",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 113,
     "dissolved": {
@@ -10585,30 +11585,50 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/state-wildlife-areas/shriver-wright-swa",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 6,
+   "same_agency": false,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 120.0,
+     "as": "120 acres",
+     "clean": false,
+     "line": "chThreshold\" : 5, \"useCSS\" : true, \"useTransform\" : true, \"centerPadding\":\"0px\", \"infinite\" : false }'> Acres 120 acres. Elevation Approx. 7,600 above sea level GMU 791 Hunting Opportunities Deer, Dove, Rabbit, Waterfowl Fishing",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/state-wildlife-areas/shriver-wright-swa",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Wildlife Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-13574": {
-   "checked": "2026-11-09",
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 64 acres, no total words near it)",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Home Lake State Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 64.0,
+    "as": "64 acres",
+    "clean": false,
+    "line": "chThreshold\" : 5, \"useCSS\" : true, \"useTransform\" : true, \"centerPadding\":\"0px\", \"infinite\" : false }'> Acres 64 acres. Elevation min. 7,612 ft - max 7,635 ft GMU 791 Hunting Opportunities No hunting opportunities available Fish",
+    "read": "2026-11-22",
+    "sent": "64 acres.",
+    "url": "https://cpw.state.co.us/state-wildlife-areas/home-lake-swa",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 324,
     "family_fold": "layers {'padus': 324, 'sgcoa': 64}: one land in 2 layers, the padus copy used (64 ac of copies not added)",
@@ -10634,12 +11654,13 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/state-wildlife-areas/home-lake-swa",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
+   "pct": 406,
+   "same_agency": false,
    "score": 7,
    "score_parts": {
     "name": 2,
@@ -10647,17 +11668,36 @@
     "size": 1,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 64.0,
+     "as": "64 acres",
+     "clean": false,
+     "line": "chThreshold\" : 5, \"useCSS\" : true, \"useTransform\" : true, \"centerPadding\":\"0px\", \"infinite\" : false }'> Acres 64 acres. Elevation min. 7,612 ft - max 7,635 ft GMU 791 Hunting Opportunities No hunting opportunities available Fish",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/state-wildlife-areas/home-lake-swa",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Wildlife Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-13575": {
-   "checked": "2026-11-09",
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 935 acres, no total words near it)",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Rio Grande State Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 935.0,
+    "as": "935 acres",
+    "clean": false,
+    "line": "chThreshold\" : 5, \"useCSS\" : true, \"useTransform\" : true, \"centerPadding\":\"0px\", \"infinite\" : false }'> Acres 935 acres. Elevation Approx. 7,593 to 7,626 feet above sea level GMU 791 Hunting Opportunities Deer, Dove, Rabbit, Wate",
+    "read": "2026-11-22",
+    "sent": "935 acres.",
+    "url": "https://cpw.state.co.us/state-wildlife-areas/rio-grande-swa",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 1087,
     "family_fold": "layers {'sgcoa': 1087, 'padus': 940}: one land in 2 layers, the sgcoa copy used (940 ac of copies not added)",
@@ -10677,23 +11717,34 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/state-wildlife-areas/rio-grande-swa",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 16,
+   "same_agency": false,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 935.0,
+     "as": "935 acres",
+     "clean": false,
+     "line": "chThreshold\" : 5, \"useCSS\" : true, \"useTransform\" : true, \"centerPadding\":\"0px\", \"infinite\" : false }'> Acres 935 acres. Elevation Approx. 7,593 to 7,626 feet above sea level GMU 791 Hunting Opportunities Deer, Dove, Rabbit, Wate",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/state-wildlife-areas/rio-grande-swa",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Wildlife Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-4397": {
    "checked": "2026-11-22",
@@ -10915,7 +11966,7 @@
    "handover": [],
    "last_read_failed": "2026-11-22",
    "n": "Medicine Bow - Routt National Forest",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-CO': 1255233, 'US-WY': 1084397})",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-WY': 1084397, 'US-CO': 1255233})",
    "official": {
     "acres": 2900000.0,
     "as": "2.9 million acres",
@@ -10956,8 +12007,8 @@
     "pin": "inside",
     "src": "USGS PAD-US",
     "states": [
-     "US-CO",
-     "US-WY"
+     "US-WY",
+     "US-CO"
     ],
     "unknown_pieces": 0,
     "whole_park": true
@@ -11944,7 +12995,7 @@
    "handover": [],
    "last_read_failed": "2026-11-22",
    "n": "Black Ridge Canyons Wilderness Area",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-CO': 76193, 'US-UT': 74949})",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-UT': 74949, 'US-CO': 76193})",
    "official": null,
    "ours": {
     "acres": 151142,
@@ -11957,8 +13008,8 @@
     "pin": "inside",
     "src": "",
     "states": [
-     "US-CO",
-     "US-UT"
+     "US-UT",
+     "US-CO"
     ],
     "unknown_pieces": 5,
     "whole_park": true
@@ -12143,11 +13194,19 @@
    "verdict": "off"
   },
   "US-7845": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Fisher's Peak State Park",
-   "official": null,
+   "official": {
+    "acres": 19200.0,
+    "as": "19,200 acre",
+    "clean": false,
+    "line": "ic status it has held through many generations of residents and travelers. At this time, a small piece of the 19,200-acre park is open to the public. This includes a gateway to over 25 miles of trails open for hiking and biking. Op",
+    "read": "2026-11-22",
+    "sent": "At this time, a small piece of the 19,200-acre park is open to the public.",
+    "url": "https://cpw.state.co.us/placestogo/parks/FishersPeak",
+    "why": "total-looking"
+   },
    "ours": {
     "acres": 19253,
     "dissolved": {
@@ -12175,23 +13234,43 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/placestogo/parks/FishersPeak",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 5,
+   "pct": 0,
+   "same_agency": false,
+   "score": 6,
    "score_parts": {
     "name": 1,
     "pin": 1,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 19200.0,
+     "as": "19,200 acre",
+     "clean": false,
+     "line": "ic status it has held through many generations of residents and travelers. At this time, a small piece of the 19,200-acre park is open to the public. This includes a gateway to over 25 miles of trails open for hiking and biking. Op",
+     "total_like": true,
+     "url": "https://cpw.state.co.us/placestogo/parks/FishersPeak",
+     "why": "total-looking"
+    },
+    {
+     "acres": 19295.0,
+     "as": "19,295 acres",
+     "clean": false,
+     "line": ", \"touchThreshold\" : 5, \"useCSS\" : true, \"useTransform\" : true, \"centerPadding\":\"0px\", \"infinite\" : false }'> 19,295 acres 174+ species of birds 1 drive-in picnic area 25 miles of trails Accessing the Park Directions Directions From",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/placestogo/parks/FishersPeak",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-8295": {
    "checked": "2026-11-09",
@@ -13033,11 +14112,19 @@
    "verdict": "no size on page"
   },
   "US-9602": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Adams State Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 650.0,
+    "as": "650 acres",
+    "clean": false,
+    "line": "d check current hunting, fishing and land use regulations when planning to visit a State Wildlife Area. Acres 650 acres. Elevation min. 7,252 ft - max 8,485 ft GMU 15 Hunting Opportunities Deer, Dusky (blue) grouse, Elk Activitie",
+    "read": "2026-11-22",
+    "sent": "650 acres.",
+    "url": "https://cpw.state.co.us/state-wildlife-areas/adams-swa",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 650,
     "dissolved": {
@@ -13065,23 +14152,34 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/state-wildlife-areas/adams-swa",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 0,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 650.0,
+     "as": "650 acres",
+     "clean": false,
+     "line": "d check current hunting, fishing and land use regulations when planning to visit a State Wildlife Area. Acres 650 acres. Elevation min. 7,252 ft - max 8,485 ft GMU 15 Hunting Opportunities Deer, Dusky (blue) grouse, Elk Activitie",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/state-wildlife-areas/adams-swa",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Wildlife Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-9603": {
    "checked": "2026-11-09",
@@ -13318,11 +14416,20 @@
    "verdict": "no size on page"
   },
   "US-9609": {
-   "checked": "2026-11-09",
+   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Basalt State Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 2577.0,
+    "as": "2577 acres",
+    "clean": false,
+    "line": "fe Area. Shooting Range Find out more about the Basalt SWA Shooting Range. View the Shooting Range Page Acres 2577 acres. Elevation min. 6,514 ft - max 8,777ft GMU 47, 444 Hunting Opportunities Bighorn, Deer, Dusky (blue) grouse,",
+    "read": "2026-11-22",
+    "sent": "2577 acres.",
+    "url": "https://cpw.state.co.us/state-wildlife-areas/basalt-swa",
+    "why": "total-looking"
+   },
    "ours": {
     "acres": 4802,
     "dissolved": {
@@ -13356,23 +14463,34 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/state-wildlife-areas/basalt-swa",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 86,
+   "same_agency": false,
+   "score": 5,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 1,
+    "size": 0,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 2577.0,
+     "as": "2577 acres",
+     "clean": false,
+     "line": "fe Area. Shooting Range Find out more about the Basalt SWA Shooting Range. View the Shooting Range Page Acres 2577 acres. Elevation min. 6,514 ft - max 8,777ft GMU 47, 444 Hunting Opportunities Bighorn, Deer, Dusky (blue) grouse,",
+     "total_like": true,
+     "url": "https://cpw.state.co.us/state-wildlife-areas/basalt-swa",
+     "why": "total-looking"
+    }
+   ],
    "t": "State Wildlife Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "off"
   },
   "US-9610": {
    "checked": "2026-11-09",
@@ -13539,11 +14657,19 @@
    "verdict": "no size on page"
   },
   "US-9613": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Bergen Peak State Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 1093.0,
+    "as": "1093 acres",
+    "clean": false,
+    "line": "d check current hunting, fishing and land use regulations when planning to visit a State Wildlife Area. Acres 1093 acres. Elevation min. 7,845 ft - max 9,689 ft GMU 39 Hunting Opportunities Deer, Dusky (blue) grouse, Elk, Squirrel",
+    "read": "2026-11-22",
+    "sent": "1093 acres.",
+    "url": "https://cpw.state.co.us/state-wildlife-areas/bergen-peak-swa",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 1093,
     "dissolved": {
@@ -13571,23 +14697,34 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/state-wildlife-areas/bergen-peak-swa",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 0,
+   "same_agency": false,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 1093.0,
+     "as": "1093 acres",
+     "clean": false,
+     "line": "d check current hunting, fishing and land use regulations when planning to visit a State Wildlife Area. Acres 1093 acres. Elevation min. 7,845 ft - max 9,689 ft GMU 39 Hunting Opportunities Deer, Dusky (blue) grouse, Elk, Squirrel",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/state-wildlife-areas/bergen-peak-swa",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Wildlife Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-9614": {
    "checked": "2026-11-09",
@@ -14453,11 +15590,20 @@
    "verdict": "no size on page"
   },
   "US-9630": {
-   "checked": "2026-11-09",
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 500 acres, no total words near it)",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Clear Creek Reservoir State Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 500.0,
+    "as": "500 acres",
+    "clean": false,
+    "line": "nd use regulations when planning to visit a State Wildlife Area. Colorado Fishing Atlas Open in new tab Acres 500 acres. Elevation min. 8,800 ft - max 9,023 ft GMU 48, 481 Hunting Opportunities Deer, Elk, Waterfowl Fishing Opport",
+    "read": "2026-11-22",
+    "sent": "500 acres.",
+    "url": "https://cpw.state.co.us/swa/Clear%20Creek%20Reservior%20SWA",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 684,
     "dissolved": {
@@ -14485,12 +15631,13 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/swa/Clear%20Creek%20Reservior%20SWA",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
+   "pct": 37,
+   "same_agency": false,
    "score": 6,
    "score_parts": {
     "name": 2,
@@ -14498,10 +15645,20 @@
     "size": 1,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 500.0,
+     "as": "500 acres",
+     "clean": false,
+     "line": "nd use regulations when planning to visit a State Wildlife Area. Colorado Fishing Atlas Open in new tab Acres 500 acres. Elevation min. 8,800 ft - max 9,023 ft GMU 48, 481 Hunting Opportunities Deer, Elk, Waterfowl Fishing Opport",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/swa/Clear%20Creek%20Reservior%20SWA",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Wildlife Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-9631": {
    "checked": "2026-11-09",
@@ -14555,11 +15712,19 @@
    "verdict": "no size on page"
   },
   "US-9632": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Cochetopa State Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 6712.0,
+    "as": "6712 acres",
+    "clean": false,
+    "line": "d check current hunting, fishing and land use regulations when planning to visit a State Wildlife Area. Acres 6712 acres. Elevation min. 8,909 ft - max 9,475 ft GMU 67 Hunting Opportunities Deer, Elk, Pronghorn, Rabbit, Waterfowl",
+    "read": "2026-11-22",
+    "sent": "6712 acres.",
+    "url": "https://cpw.state.co.us/state-wildlife-areas/cochetopa-swa",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 6712,
     "dissolved": {
@@ -14587,23 +15752,34 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/state-wildlife-areas/cochetopa-swa",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 5,
+   "pct": 0,
+   "same_agency": false,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 0,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 6712.0,
+     "as": "6712 acres",
+     "clean": false,
+     "line": "d check current hunting, fishing and land use regulations when planning to visit a State Wildlife Area. Acres 6712 acres. Elevation min. 8,909 ft - max 9,475 ft GMU 67 Hunting Opportunities Deer, Elk, Pronghorn, Rabbit, Waterfowl",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/state-wildlife-areas/cochetopa-swa",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Wildlife Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-9633": {
    "checked": "2026-11-09",
@@ -15118,11 +16294,19 @@
    "verdict": "no size on page"
   },
   "US-9643": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Dome Lakes State Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 420.0,
+    "as": "420 acres",
+    "clean": false,
+    "line": "planning to visit a State Wildlife Area. Vegetation is made up of sagebrush, rabbitbrush, and grasses. Acres 420 acres. Elevation min. 9,075 ft - max 9,512 ft GMU 67 Hunting Opportunities Waterfowl Fishing Opportunities Coldwate",
+    "read": "2026-11-22",
+    "sent": "420 acres.",
+    "url": "https://cpw.state.co.us/state-wildlife-areas/dome-lakes-swa",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 420,
     "family_fold": "layers {'sgcoa': 420, 'padus': 276}: one land in 2 layers, the sgcoa copy used (276 ac of copies not added)",
@@ -15142,23 +16326,34 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/state-wildlife-areas/dome-lakes-swa",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 0,
+   "same_agency": false,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 420.0,
+     "as": "420 acres",
+     "clean": false,
+     "line": "planning to visit a State Wildlife Area. Vegetation is made up of sagebrush, rabbitbrush, and grasses. Acres 420 acres. Elevation min. 9,075 ft - max 9,512 ft GMU 67 Hunting Opportunities Waterfowl Fishing Opportunities Coldwate",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/state-wildlife-areas/dome-lakes-swa",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Wildlife Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-9644": {
    "checked": "2026-11-09",
@@ -15531,11 +16726,20 @@
    "verdict": "no size on page"
   },
   "US-9651": {
-   "checked": "2026-11-09",
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 69 acres, no total words near it)",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Frenchman Creek State Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 69.0,
+    "as": "69 acres",
+    "clean": false,
+    "line": "d check current hunting, fishing and land use regulations when planning to visit a State Wildlife Area. Acres 69 acres. Elevation min. 3,804 ft - max 3,847 ft GMU 98 Hunting Opportunities Deer, Dove, Pheasant, Rabbit Activities",
+    "read": "2026-11-22",
+    "sent": "69 acres.",
+    "url": "https://cpw.state.co.us/state-wildlife-areas/frenchman-creek-swa",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 89,
     "family_fold": "layers {'padus': 71, 'sgcoa': 68}: one land in 2 layers, the padus copy used (68 ac of copies not added)",
@@ -15555,12 +16759,13 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/state-wildlife-areas/frenchman-creek-swa",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
+   "pct": 29,
+   "same_agency": false,
    "score": 6,
    "score_parts": {
     "name": 2,
@@ -15568,10 +16773,20 @@
     "size": 1,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 69.0,
+     "as": "69 acres",
+     "clean": false,
+     "line": "d check current hunting, fishing and land use regulations when planning to visit a State Wildlife Area. Acres 69 acres. Elevation min. 3,804 ft - max 3,847 ft GMU 98 Hunting Opportunities Deer, Dove, Pheasant, Rabbit Activities",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/state-wildlife-areas/frenchman-creek-swa",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Wildlife Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-9652": {
    "checked": "2026-11-22",
@@ -15731,11 +16946,19 @@
    "verdict": "no size on page"
   },
   "US-9656": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Holyoke State Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 80.0,
+    "as": "80 acres",
+    "clean": false,
+    "line": "d check current hunting, fishing and land use regulations when planning to visit a State Wildlife Area. Acres 80 acres. Elevation min. 3,804 ft - max 3,831 ft GMU 98 Hunting Opportunities Deer, Dove, Pheasant, Rabbit Activities",
+    "read": "2026-11-22",
+    "sent": "80 acres.",
+    "url": "https://cpw.state.co.us/state-wildlife-areas/holyoke-swa",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 82,
     "dissolved": {
@@ -15763,23 +16986,34 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/state-wildlife-areas/holyoke-swa",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 2,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 80.0,
+     "as": "80 acres",
+     "clean": false,
+     "line": "d check current hunting, fishing and land use regulations when planning to visit a State Wildlife Area. Acres 80 acres. Elevation min. 3,804 ft - max 3,831 ft GMU 98 Hunting Opportunities Deer, Dove, Pheasant, Rabbit Activities",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/state-wildlife-areas/holyoke-swa",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Wildlife Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-9657": {
    "checked": "2026-11-09",
@@ -15830,11 +17064,19 @@
    "verdict": "no size on page"
   },
   "US-9658": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Hot Sulfur Springs State Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 2160.0,
+    "as": "2160 acres",
+    "clean": false,
+    "line": "Canyon Shooting Range Find out more about the Byers Canyon Shooting Range. View the Shooting Range Page Acres 2160 acres. Elevation Approx. 7,700 ft. above sea levelApprox. 7500 ft. above sea levelApprox. 7,800 ft above sea levelm",
+    "read": "2026-11-22",
+    "sent": "2160 acres.",
+    "url": "https://cpw.state.co.us/state-wildlife-areas/hot-sulphur-springs-swa",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 2151,
     "manager": "",
@@ -15859,23 +17101,34 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/state-wildlife-areas/hot-sulphur-springs-swa",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 5,
+   "pct": 0,
+   "same_agency": false,
+   "score": 6,
    "score_parts": {
     "name": 1,
     "pin": 1,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 2160.0,
+     "as": "2160 acres",
+     "clean": false,
+     "line": "Canyon Shooting Range Find out more about the Byers Canyon Shooting Range. View the Shooting Range Page Acres 2160 acres. Elevation Approx. 7,700 ft. above sea levelApprox. 7500 ft. above sea levelApprox. 7,800 ft above sea levelm",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/state-wildlife-areas/hot-sulphur-springs-swa",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Wildlife Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-9659": {
    "checked": "2026-11-09",
@@ -16160,11 +17413,19 @@
    "verdict": "no size on page"
   },
   "US-9666": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Rosemont State Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 357.0,
+    "as": "357 acres",
+    "clean": false,
+    "line": "d check current hunting, fishing and land use regulations when planning to visit a State Wildlife Area. Acres 357 acres. Elevation min. 9,571 ft - max 10,076 ft GMU 59 Hunting Opportunities No hunting opportunities available Fish",
+    "read": "2026-11-22",
+    "sent": "357 acres.",
+    "url": "https://cpw.state.co.us/state-wildlife-areas/rosemont-reservoir-swa",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 356,
     "dissolved": {
@@ -16192,23 +17453,34 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://cpw.state.co.us/state-wildlife-areas/rosemont-reservoir-swa",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 0,
+   "same_agency": false,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 357.0,
+     "as": "357 acres",
+     "clean": false,
+     "line": "d check current hunting, fishing and land use regulations when planning to visit a State Wildlife Area. Acres 357 acres. Elevation min. 9,571 ft - max 10,076 ft GMU 59 Hunting Opportunities No hunting opportunities available Fish",
+     "total_like": false,
+     "url": "https://cpw.state.co.us/state-wildlife-areas/rosemont-reservoir-swa",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Wildlife Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-9667": {
    "checked": "2026-11-09",

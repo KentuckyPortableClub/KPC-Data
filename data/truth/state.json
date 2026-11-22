@@ -165,22 +165,23 @@
   "US-CO": {
    "checked": 276,
    "counts": {
-    "agree": 46,
-    "handover_hints": 6,
+    "agree": 94,
+    "handover_hints": 8,
     "no_page": 1,
-    "no_size": 145,
-    "off": 17,
+    "no_size": 92,
+    "not_read": 0,
+    "off": 16,
     "ours_unknown": 15,
     "parks": 276,
     "retired": 0,
-    "unsure": 42,
+    "unsure": 48,
     "weak": 10,
     "with_outline": 266
    },
    "left": 0,
    "parks": 276,
-   "status": "queued",
-   "updated": "2026-11-09"
+   "status": "done",
+   "updated": "2026-11-22"
   },
   "US-CT": {
    "checked": 157,
@@ -1142,45 +1143,37 @@
  },
  "last": {
   "areas": [
-   "US-NE"
+   "US-CO"
   ],
   "manners": {
    "errors": 0,
-   "for_person": 3,
+   "for_person": 1,
    "for_person_urls": [
     [
-     "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://visitnebraska.com/papillion/walnut-creek-lake-and-recreation-area",
+     "https://www.colorado.com/articles/national-park-profile-great-sand-dunes-national-park-preserve",
      "HTTP 403 twice"
     ]
    ],
-   "host_rule": 3,
-   "requests": 48,
-   "rested": 120,
-   "retry403": 3,
-   "robots": 0,
-   "strikes": 6
+   "host_rule": 14,
+   "requests": 152,
+   "rested": 0,
+   "retry403": 1,
+   "robots": 1,
+   "strikes": 3
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 3,
-   "no_size": 156,
+   "handover_hints": 8,
+   "no_size": 79,
    "ours_unknown": 0,
-   "pages_read": 0,
-   "parks": 158,
+   "pages_read": 54,
+   "parks": 144,
    "retired": 0,
-   "size_agree": 0,
-   "size_off": 2,
-   "size_unsure": 0,
-   "skipped_fresh": 43,
-   "with_outline": 158
+   "size_agree": 39,
+   "size_off": 10,
+   "size_unsure": 16,
+   "skipped_fresh": 132,
+   "with_outline": 144
   },
   "when": "2026-11-22"
  },

@@ -45,11 +45,19 @@ Source file: `data/truth/US-CO.json`
 ## US-1243 State Forest State Park
 ```json
 {
- "checked": "2026-11-09",
+ "checked": "2026-11-22",
  "handover": [],
- "last_read_failed": "2026-11-22",
  "n": "State Forest State Park",
- "official": null,
+ "official": {
+  "acres": 70932.0,
+  "as": "70,932 acres",
+  "clean": false,
+  "line": "​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​In the ultimate rugged Colorado, State Forest State Park offers visitors 70,932 acres of forest, jagged peaks, alpine lakes, wildlife and miles of trails. With so much space and natural diversity",
+  "read": "2026-11-22",
+  "sent": "​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​In the ultimate rugged Colorado, State Forest State Park offers visitors 70,932 acres of forest, jagged peaks, alpine lakes, wildlife and miles of trails.",
+  "url": "https://cpw.state.co.us/placestogo/parks/StateForest",
+  "why": "no total words near it"
+ },
  "ours": {
   "acres": 71228,
   "dissolved": {
@@ -75,21 +83,30 @@ Source file: `data/truth/US-CO.json`
   "unknown_pieces": 2
  },
  "owner_now": null,
- "pct": null,
- "score": 6,
+ "pct": 0,
+ "same_agency": false,
+ "score": 7,
  "t": "State Park",
- "verdict": "no size on page"
+ "verdict": "agree"
 }
 ```
 
 ## US-12456 Stalker Lake State Wildlife Area
 ```json
 {
- "checked": "2026-11-09",
+ "checked": "2026-11-22",
  "handover": [],
- "last_read_failed": "2026-11-22",
  "n": "Stalker Lake State Wildlife Area",
- "official": null,
+ "official": {
+  "acres": 75.0,
+  "as": "75 acres",
+  "clean": false,
+  "line": "d check current hunting, fishing and land use regulations when planning to visit a State Wildlife Area. Acres 75 acres. Elevation min. 3,548 ft - max 3,614 ft GMU 98 Hunting Opportunities Dove, Waterfowl Fishing Opportunities Wa",
+  "read": "2026-11-22",
+  "sent": "75 acres.",
+  "url": "https://cpw.state.co.us/state-wildlife-areas/stalker-lake-swa",
+  "why": "no total words near it"
+ },
  "ours": {
   "acres": 71,
   "dissolved": {
@@ -117,10 +134,11 @@ Source file: `data/truth/US-CO.json`
   "unknown_pieces": 2
  },
  "owner_now": null,
- "pct": null,
- "score": 6,
+ "pct": 5,
+ "same_agency": false,
+ "score": 7,
  "t": "State Wildlife Area",
- "verdict": "no size on page"
+ "verdict": "agree"
 }
 ```
 
