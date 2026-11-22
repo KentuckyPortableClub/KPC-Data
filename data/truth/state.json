@@ -774,7 +774,7 @@
    },
    "left": 0,
    "parks": 851,
-   "status": "queued",
+   "status": "done",
    "updated": "2026-11-22"
   },
   "US-OH": {
@@ -1123,49 +1123,30 @@
  },
  "last": {
   "areas": [
-   "US-PA"
+   "US-NY"
   ],
   "manners": {
-   "crawl_delay_skip": 2,
-   "dropped_queued": 453,
    "errors": 0,
-   "for_person_urls": [
-    [
-     "https://carnegiemnh.org/visit-powdermill/",
-     "Crawl-delay 600 s is over 120 s: not read"
-    ],
-    [
-     "https://carnegiemnh.org/visitor-policies/",
-     "Crawl-delay 600 s is over 120 s: not read"
-    ],
-    [
-     "https://www.dcnr.pa.gov/robots.txt",
-     "robots.txt answered with a web page, not a robots file (the answer came from another site (https://www.pa.gov/search): not read as \"no rules\"): not read as \"no rules\": a person downloads what is needed from www.dcnr.pa.gov"
-    ],
-    [
-     "https://www.pgc.pa.gov/robots.txt",
-     "robots.txt answered with a web page, not a robots file (the answer came from another site (https://www.pa.gov/search): not read as \"no rules\"): not read as \"no rules\": a person downloads what is needed from www.pgc.pa.gov"
-    ]
-   ],
+   "for_person_urls": [],
    "host_rule": 0,
-   "requests": 3,
+   "requests": 0,
    "rested": 0,
-   "robots": 2,
+   "robots": 0,
    "strikes": 0
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 7,
-   "no_size": 21,
-   "ours_unknown": 1,
+   "handover_hints": 17,
+   "no_size": 0,
+   "ours_unknown": 0,
    "pages_read": 0,
-   "parks": 456,
+   "parks": 0,
    "retired": 0,
-   "size_agree": 91,
-   "size_off": 18,
-   "size_unsure": 325,
-   "skipped_fresh": 38,
-   "with_outline": 456
+   "size_agree": 0,
+   "size_off": 0,
+   "size_unsure": 0,
+   "skipped_fresh": 851,
+   "with_outline": 0
   },
   "when": "2026-11-22"
  },
