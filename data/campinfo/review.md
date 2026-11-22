@@ -41,7 +41,7 @@ Updated 2026-11-22. Every fact in <area>.json carries its source url, read date 
 | US-TX | 483 | 2 | 120 | 1 | 0 | 0 | 329 | 0 | 31 | 0 | 34 | 0 |
 | US-KS | 117 | 0 | 52 | 0 | 65 | 0 | 0 | 0 | 0 | 0 | 63 | 0 |
 | US-NE | 232 | 3 | 11 | 2 | 0 | 185 | 6 | 23 | 2 | 0 | 74 | 0 |
-| US-CO | 653 | 183 | 337 | 15 | 0 | 110 | 0 | 0 | 8 | 2 | 316 | 0 |
+| US-CO | 757 | 275 | 337 | 0 | 0 | 13 | 93 | 1 | 38 | 1 | 319 | 11 |
 | US-WY | 301 | 5 | 162 | 2 | 0 | 0 | 79 | 0 | 53 | 0 | 41 | 0 |
 | US-ID | 450 | 27 | 311 | 33 | 0 | 0 | 0 | 35 | 44 | 5 | 100 | 2 |
 | US-MT | 389 | 30 | 311 | 0 | 0 | 4 | 0 | 0 | 44 | 0 | 78 | 0 |
@@ -60,14 +60,13 @@ Updated 2026-11-22. Every fact in <area>.json carries its source url, read date 
 ## Needs a secret / not built yet
 
 - RIDB_API_KEY is not set in KPC-Data: every federal (Recreation.gov) row has status "needs RIDB_API_KEY secret in KPC-Data". Free key: ridb.recreation.gov, Profile. Add it under Settings -> Secrets and variables -> Actions.
-- Cell coverage (one status per area; cell = null on every record until the point lookup exists): US-AK FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-AL FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-AR FCC listAsOfDates: robots.txt says no; US-AZ FCC listAsOfDates: robots.txt says no; US-CA FCC listAsOfDates: robots.txt says no; US-CO FCC listAsOfDates: robots.txt says no; US-CT FCC listAsOfDates: robots.txt says no; US-DC FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)
+- Cell coverage (one status per area; cell = null on every record until the point lookup exists): US-AK FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-AL FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-AR FCC listAsOfDates: robots.txt says no; US-AZ FCC listAsOfDates: robots.txt says no; US-CA FCC listAsOfDates: robots.txt says no; US-CO FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built); US-CT FCC listAsOfDates: robots.txt says no; US-DC FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)
 
 ## Hosts that need a browser (403), say no in robots.txt, or are resting
 
 - outdoornebraska.gov: 187 campgrounds · host resting
-- cpw.state.co.us: 164 campgrounds · host resting
 - reservemn.usedirect.com: 94 campgrounds · robots.txt says no
-- www.fs.usda.gov: 64 campgrounds · host resting
+- www.fs.usda.gov: 77 campgrounds · host resting
 - reserve.floridastateparks.org: 55 campgrounds · robots.txt says no
 - dnr.wisconsin.gov: 48 campgrounds · host resting
 - gfp.sd.gov: 34 campgrounds · host resting
@@ -2107,62 +2106,57 @@ Updated 2026-11-22. Every fact in <area>.json carries its source url, read date 
 
 ## US-CO: 12 random samples (records with facts; seed = the date)
 
-- **Campsite(s) 432-439** (US-1243:30, state, status ok, 4 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
+- **Campsite(s) 410-414** (US-1243:25, state, status ok, 4 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
   - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
   - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
   - restrooms = "some" · “Parks also feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting sp”
   - showers = true · “feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting spaces. Find ”
-- **Camping** (US-1236:2, state, status ok, 4 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
+- **Hawsapple** (US-1233:2, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
+  - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
+  - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
+  - hookups.electric = true · “rist attraction since 1884. In 1910, the town of Rifle built one of Colorado’s first hydroelectric plants here, reshaping the creek’s single”
+- **Red Tail Pond** (US-1241:5, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
+  - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
+  - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
+  - hookups.electric = true · “rist attraction since 1884. In 1910, the town of Rifle built one of Colorado’s first hydroelectric plants here, reshaping the creek’s single”
+- **Holbrook Reservoir SWA camping** (intake-US-9655, agency (outside research camping-us-oct31), status ok, no campground facts even in a browser, 6 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-wildlife-areas/holbrook-reservoir-swa)
+  - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
+  - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
+  - map.date_how = "PDF, no date in the link" · “link “Download Map””
+  - map.url = "https://cpw.state.co.us/sites/default/files/dam/0huzt768fo/ · “link “Download Map” -> https://cpw.state.co.us/sites/default/files/dam/0huzt768fo/holbrookreservoirswa_geo.pdf”
+  - phone = "(719) 336-6600" · “g Camping Guides Available Contact: Area CPW Office: Lamar, 719-336-6600. An image is coming soon. Holbrook Reservoir SWA Otero Coun”
+  - phone_hint = "(719) 336-6600" · “es & Amenities: Hunting Fishing Camping Guides Available Contact: Area CPW Office: Lamar, 719-336-6600. An image is coming soon. Holbrook Re”
+- **Campsite(s) 224** (US-1243:78, state, status ok, 4 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
   - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
   - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
   - restrooms = "some" · “Parks also feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting sp”
   - showers = true · “feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting spaces. Find ”
-- **Campsite(s) 403** (US-1243:23, state, status ok, 4 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
+- **Elk Run** (US-1247:2, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
+  - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
+  - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
+  - hookups.electric = true · “rist attraction since 1884. In 1910, the town of Rifle built one of Colorado’s first hydroelectric plants here, reshaping the creek’s single”
+- **Aspen Grove** (US-1249:2, state, status ok, 4 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
   - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
   - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
   - restrooms = "some" · “Parks also feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting sp”
   - showers = true · “feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting spaces. Find ”
-- **Campsite(s) 220** (US-1243:80, state, status ok, 4 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
+- **Coot Pond** (US-1241:8, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
   - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
   - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
-  - restrooms = "some" · “Parks also feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting sp”
-  - showers = true · “feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting spaces. Find ”
-- **Cabin 4** (US-1249:8, state, status ok, 4 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
+  - hookups.electric = true · “rist attraction since 1884. In 1910, the town of Rifle built one of Colorado’s first hydroelectric plants here, reshaping the creek’s single”
+- **Tiffany Cabin 31** (US-1231:8, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
   - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
   - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
-  - restrooms = "some" · “Parks also feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting sp”
-  - showers = true · “feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting spaces. Find ”
-- **Campsite(s) 214** (US-1243:82, state, status ok, 4 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
+  - hookups.electric = true · “rist attraction since 1884. In 1910, the town of Rifle built one of Colorado’s first hydroelectric plants here, reshaping the creek’s single”
+- **Yurt 24** (US-1229:4, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
   - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
   - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
-  - restrooms = "some" · “Parks also feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting sp”
-  - showers = true · “feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting spaces. Find ”
-- **222 T** (US-1243:72, state, status ok, 4 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
+  - hookups.electric = true · “rist attraction since 1884. In 1910, the town of Rifle built one of Colorado’s first hydroelectric plants here, reshaping the creek’s single”
+- **Gobbler Grove** (US-1214:3, state, status ok, 3 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
   - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
   - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
-  - restrooms = "some" · “Parks also feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting sp”
-  - showers = true · “feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting spaces. Find ”
-- **Campsite(s) 235** (US-1243:62, state, status ok, 4 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
-  - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
-  - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
-  - restrooms = "some" · “Parks also feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting sp”
-  - showers = true · “feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting spaces. Find ”
-- **Campsite(s) 209** (US-1243:44, state, status ok, 4 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
-  - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
-  - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
-  - restrooms = "some" · “Parks also feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting sp”
-  - showers = true · “feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting spaces. Find ”
-- **Campsite(s) 246** (US-1243:51, state, status ok, 4 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
-  - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
-  - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
-  - restrooms = "some" · “Parks also feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting sp”
-  - showers = true · “feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting spaces. Find ”
-- **Campsite(s) 226** (US-1243:70, state, status ok, 4 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
-  - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
-  - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
-  - restrooms = "some" · “Parks also feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting sp”
-  - showers = true · “feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting spaces. Find ”
-- **Campsite(s) 248** (US-1243:53, state, status ok, 4 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
+  - hookups.electric = true · “rist attraction since 1884. In 1910, the town of Rifle built one of Colorado’s first hydroelectric plants here, reshaping the creek’s single”
+- **Campsite(s) 415** (US-1243:27, state, status ok, 4 facts) · [cpw.state.co.us](https://cpw.state.co.us/state-parks)
   - booking.how = "online: www.cpwshop.com" · “link “Make a Reservation””
   - booking.url = "https://www.cpwshop.com/campinghome.page" · “link “Make a Reservation” -> https://www.cpwshop.com/campinghome.page”
   - restrooms = "some" · “Parks also feature accessible facilities such as fishing piers, campsites, cabins, yurts, restrooms, showers, visitor centers and meeting sp”
