@@ -1,4 +1,4 @@
-# Waiting for a grader (2026-11-22 08:44Z, written by the waiting room)
+# Waiting for a grader (2026-11-22 10:16Z, written by the waiting room)
 Rows the same as the live (already graded) copy keep their old YES: check only the NEW + CHANGED rows listed. Held = a check failed: fix first.
 
 - **data/ca-key/CA-ON.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build CA-44729612014): 0 new, 3 changed, 1 gone, 1176 same (carried); check: CA-4865, CA-4890, CA-5506
@@ -106,6 +106,12 @@ Rows the same as the live (already graded) copy keep their old YES: check only t
 - **data/world-key/PY.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build W-44085508762): 0 new, 1 changed, 0 gone, 38 same (carried); check: PY-0014
 - **data/world-key/VI.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build W-44085508762): 0 new, 2 changed, 0 gone, 13 same (carried); check: VI-0002, VI-0004
 - **data/world-key/index.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build W-44085508762): 0 new, 29 changed, 0 gone, 54 same (carried); check: AS, AT, BE, BS, BW, BZ, CH, DK, EE, ES, FI, GB, GL, HR, HU, IE, IT, LT, LU, LV, MP, NL, NO, PL, RO ...
+- **data/wwff/PAFF.json** (wwff, PASS; grader chat 11): 0 new, 5 changed, 0 gone, 283 same (carried); check: PAFF-0003, PAFF-0015, PAFF-0019, PAFF-0079, PAFF-0104
+- **data/wwff/PYFF.json** (wwff, PASS; grader chat 11): 1 new, 0 changed, 0 gone, 1207 same (carried); check: PYFF-1208
+- **data/wwff/S5FF.json** (wwff, PASS; grader chat 11): 0 new, 3 changed, 0 gone, 415 same (carried); check: S5FF-0238, S5FF-0248, S5FF-0256
+- **data/wwff/SMFF.json** (wwff, PASS; grader chat 11): 0 new, 73 changed, 0 gone, 9456 same (carried); check: SMFF-0623, SMFF-2539, SMFF-2638, SMFF-3304, SMFF-3340, SMFF-3762, SMFF-3896, SMFF-5456, SMFF-6476, SMFF-6540, SMFF-6541, SMFF-6542, SMFF-6543, SMFF-6546, SMFF-6548, SMFF-6697, SMFF-6698, SMFF-6757, SMFF-6981, SMFF-6982, SMFF-6984, SMFF-6986, SMFF-6987, SMFF-6989, SMFF-7228 ...
+- **data/wwff/VEFF.json** (wwff, PASS; grader chat 11): 0 new, 4 changed, 0 gone, 5260 same (carried); check: VEFF-2551, VEFF-2787, VEFF-2794, VEFF-2795
+- **data/wwff/VKFF.json** (wwff, PASS; grader chat 11): 493 new, 0 changed, 0 gone, 6356 same (carried); check: VKFF-6431, VKFF-6432, VKFF-6433, VKFF-6434, VKFF-6435, VKFF-6436, VKFF-6437, VKFF-6438, VKFF-6439, VKFF-6440, VKFF-6441, VKFF-6442, VKFF-6443, VKFF-6444, VKFF-6445, VKFF-6446, VKFF-6447, VKFF-6448, VKFF-6449, VKFF-6450, VKFF-6451, VKFF-6452, VKFF-6453, VKFF-6454, VKFF-6455 ...
 - **data/acres.json** (acres, HOLD; grader chat 11): new file (no live copy), no rows to list; why held: 430 rows without acres or a source (e.g. US-0042)
 - **data/trails/US-13626.json** (trails, HOLD; grader chat 11): whole file changed, no rows to list: look at the whole file; why held: F-T3 length 16 -> 114 km (outside -25% / +50%)
 - **data/trails/US-9203.json** (trails, HOLD; grader chat 11): whole file changed, no rows to list: look at the whole file; why held: F-T2 points 19246 -> 1822 (under half the saved line); F-T3 length 138 -> 88 km (outside -25% / +50%)
