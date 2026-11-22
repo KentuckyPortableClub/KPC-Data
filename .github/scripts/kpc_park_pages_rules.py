@@ -1080,9 +1080,39 @@ def evidence_drafts(fact):
     return rows
 
 
+CHARSET_META = re.compile(rb'<meta[^>]{0,200}?charset\s*=\s*["\']?\s*([A-Za-z0-9_.:-]{2,40})', re.I)
+
+
+def decode_body(body, headers=None):
+    """21 Nov: a page's bytes as text in ITS character set: the Content-Type header's charset, else a <meta charset> near
+    the top, else UTF-8 when the bytes are valid UTF-8, else Windows-1252 (the usual one for older French and English
+    government pages). Before, every page was read as UTF-8, so 'Réserve écologique' on a Latin-1 page came out as
+    'R?serve ?cologique' and its name never matched."""
+    if isinstance(body, str):
+        return body
+    body = body or b''
+    ctype = ''
+    if isinstance(headers, dict):
+        ctype = str(headers.get('content-type') or headers.get('Content-Type') or '')
+    m = re.search(r'charset\s*=\s*["\']?([A-Za-z0-9_.:-]+)', ctype, re.I)
+    names = [m.group(1)] if m else []
+    mm = CHARSET_META.search(body[:4096])
+    if mm:
+        names.append(mm.group(1).decode('ascii', 'replace'))
+    for cs in names:
+        try:
+            return body.decode(cs.strip().lower().replace('latin-1', 'latin_1'))
+        except (LookupError, UnicodeDecodeError):
+            continue
+    try:
+        return body.decode('utf-8')
+    except UnicodeDecodeError:
+        return body.decode('cp1252', 'replace')
+
+
 def visible_of(body, headers, url, extra_links=None):
     """Turn a fetched body into text, a title, and links. HTML, plain text, or a PDF."""
-    raw = body if isinstance(body, str) else (body or b'').decode('utf-8', 'replace')
+    raw = decode_body(body, headers)
     ctype = ''
     if isinstance(headers, dict):
         ctype = str(headers.get('content-type') or headers.get('Content-Type') or '')
