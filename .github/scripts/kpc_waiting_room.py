@@ -1444,6 +1444,28 @@ def refuse_fers_promote(rel, src=None, new=None, live=None):
     return ''
 
 
+
+def _is_key_path(rel):
+    """F23: the big key files (US / Canada / world keys) are written only when the content changes."""
+    s = str(rel).replace('\\', '/')
+    return s.startswith(('data/us-key/', 'data/ca-key/', 'data/world-key/'))
+
+
+def _key_unchanged(live, rel, content=None, raw=None):
+    try:
+        if content is None and raw is not None:
+            return live.read_bytes() == pathlib.Path(raw).read_bytes()
+        if content is None:
+            return False
+        body = json.dumps(content, indent=1, ensure_ascii=False).encode('utf-8')
+        if str(rel).endswith('.gz'):
+            import gzip
+            return gzip.decompress(live.read_bytes()) == body
+        return live.read_bytes() == body
+    except Exception:
+        return False
+
+
 def promote_file(rel, content=None, raw=None):
     """Fable c: the file goes live EXACTLY as the bot wrote it (its own bytes: indent, gzip), so git sees only real changes. Only a
     closures file with rows taken out is rewritten (indented, like the bot writes it). Nov 12: a split override set goes live as ONE
@@ -1464,9 +1486,12 @@ def promote_file(rel, content=None, raw=None):
                 content, raw = merged, None
         except Exception as e:  # noqa: BLE001  (a broken file is promoted as before; the check is reported, never blocks)
             print(f'::warning title=Overrides kept::check skipped for {rel}: {e}')
+    _tw = DATA / (str(rel)[:-3] if str(rel).endswith('.gz') else str(rel) + '.gz')   # Nov 1 (storage, 1 MB gzip): the other name goes, so x.json + x.json.gz are never both live
+    # F23: a us/ca/world key already on disk with the same content is left alone (no rewrite, no undo rotation).
+    if _is_key_path(rel) and live.exists() and not _tw.exists() and _key_unchanged(live, rel, content, raw):
+        return
     if live.exists(): keep_generation(rel)
     live.parent.mkdir(parents=True, exist_ok=True)
-    _tw = DATA / (str(rel)[:-3] if str(rel).endswith('.gz') else str(rel) + '.gz')   # Nov 1 (storage, 1 MB gzip): the other name goes, so x.json + x.json.gz are never both live
     if _tw.exists():
         try: keep_generation(str(_tw.relative_to(DATA)))
         except Exception: pass  # noqa: BLE001
