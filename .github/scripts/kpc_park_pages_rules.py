@@ -6,11 +6,11 @@ map-link score come from the truth checker and the documents bot. This file adds
 only what those readers do not say: labels, combined names, addresses, and the
 questions.
 """
-import hashlib, json, math, os, re, sys
+import hashlib, json, math, os, re, sys, zlib
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import kpc_truth_bot as TB  # noqa: E402
 from kpc_docs_bot import gov_of, map_score, host_of, base_host, via_of  # noqa: E402
-from kpc_manners import page_text, links_in, pdf_text, next_run, robots_block  # noqa: E402
+from kpc_manners import page_text, links_in, pdf_text, next_run, robots_block, looks_binary  # noqa: E402
 
 READER = 'v1'
 CONFIRM = 'confirm 2026-11-21'
@@ -1172,8 +1172,42 @@ def decode_body(body, headers=None):
         return body.decode('cp1252', 'replace')
 
 
+UNPACK_MAX = 20_000_000   # bytes: an unpacked page is never allowed to grow past this
+
+
+def undo_compression(body, headers=None):
+    """21 Nov: some servers send a page gzip- or deflate-packed although the reader never asks for it (southcarolinaparks.com
+    did), and the packed bytes were read as text: the park's 'name' came out as gibberish. -> (bytes, note). A gzip page is
+    known by its header or its first two bytes; deflate by its header. Brotli / zstd cannot be unpacked with Python alone:
+    the page gives no text (note says why) instead of gibberish. A page cut off by the size cap unpacks as far as it goes."""
+    if not isinstance(body, (bytes, bytearray)) or not body:
+        return body, ''
+    enc = ''
+    if isinstance(headers, dict):
+        enc = str(headers.get('content-encoding') or headers.get('Content-Encoding') or '').lower()
+    body = bytes(body)
+    tries = []
+    if body[:2] == b'\x1f\x8b' or 'gzip' in enc:
+        tries = [16 + zlib.MAX_WBITS]
+    elif 'deflate' in enc:
+        tries = [zlib.MAX_WBITS, -zlib.MAX_WBITS]
+    elif enc and enc not in ('identity', 'none'):
+        return b'', f'the page was sent {enc}-packed and cannot be unpacked here'
+    for wb in tries:
+        try:
+            return zlib.decompressobj(wb).decompress(body, UNPACK_MAX), ''
+        except zlib.error:
+            continue
+    if tries and body[:2] == b'\x1f\x8b':
+        return b'', 'the page was sent packed and could not be unpacked'
+    return body, ''
+
+
 def visible_of(body, headers, url, extra_links=None):
     """Turn a fetched body into text, a title, and links. HTML, plain text, or a PDF."""
+    body, packed = undo_compression(body, headers)
+    if packed:
+        return {'text': '', 'html': '', 'title': '', 'heading': '', 'links': list(extra_links or []), 'pdf': False, 'note': packed}
     raw = decode_body(body, headers)
     ctype = ''
     if isinstance(headers, dict):
@@ -1182,8 +1216,8 @@ def visible_of(body, headers, url, extra_links=None):
     is_pdf = 'pdf' in ctype.lower() or urllib_path(url).lower().endswith('.pdf')
     if is_pdf:
         text = pdf_text(body if isinstance(body, (bytes, bytearray)) else raw.encode('utf-8', 'replace'), pages=2)
-        if not text.strip():
-            text = raw
+        if not text.strip() and not looks_binary(raw[:4000]):
+            text = raw      # 21 Nov: only a PDF address that answered with plain text; a PDF's own packed bytes are never read as its words
         return {'text': text, 'html': '', 'title': '', 'heading': '', 'links': links, 'pdf': True}
     if raw.lstrip().startswith('<') or '<html' in raw[:500].lower() or '<title' in raw[:800].lower():
         text = page_text(raw)
