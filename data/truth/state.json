@@ -104,22 +104,23 @@
   "US-AR": {
    "checked": 306,
    "counts": {
-    "agree": 37,
-    "handover_hints": 12,
+    "agree": 42,
+    "handover_hints": 11,
     "no_page": 17,
     "no_size": 71,
-    "off": 18,
-    "ours_unknown": 80,
+    "not_read": 0,
+    "off": 12,
+    "ours_unknown": 81,
     "parks": 306,
     "retired": 0,
     "unsure": 41,
-    "weak": 20,
+    "weak": 18,
     "with_outline": 268
    },
    "left": 0,
    "parks": 306,
-   "status": "queued",
-   "updated": "2026-11-09"
+   "status": "done",
+   "updated": "2026-11-22"
   },
   "US-AZ": {
    "checked": 123,
@@ -1131,37 +1132,50 @@
  },
  "last": {
   "areas": [
-   "US-DC"
+   "US-AR"
   ],
   "manners": {
-   "browser": 11,
-   "errors": 0,
+   "browser": 4,
+   "dropped_queued": 3,
+   "errors": 1,
    "for_person_urls": [
     [
-     "https://www.usna.usda.gov/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from www.usna.usda.gov this run"
+     "https://nsbfoundation.com/robots.txt",
+     "robots.txt answered 202: nothing fetched from nsbfoundation.com this run"
+    ],
+    [
+     "https://intranet.agfc.com/robots.txt",
+     "robots.txt answered with a web page, not a robots file (the answer came from another site (https://accounts.google.com/v3/signin/identifier?continue=https://sites.google.com/agfc.ar.gov/thehub/home&followup=http): not read as \"no rules\"): not read as \"no rules\": a person downloads what is needed from intranet.agfc.com"
+    ],
+    [
+     "https://www.agfc/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from www.agfc this run"
+    ],
+    [
+     "https://www.camdenexpedition.org/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from www.camdenexpedition.org this run"
     ]
    ],
-   "host_rule": 0,
-   "requests": 143,
+   "host_rule": 3,
+   "requests": 439,
    "rested": 0,
-   "robots": 1,
-   "robots_unreadable": 1,
-   "strikes": 0
+   "robots": 5,
+   "robots_unreadable": 3,
+   "strikes": 1
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 1,
-   "no_size": 16,
-   "ours_unknown": 10,
-   "pages_read": 109,
-   "parks": 35,
+   "handover_hints": 11,
+   "no_size": 92,
+   "ours_unknown": 81,
+   "pages_read": 361,
+   "parks": 306,
    "retired": 0,
-   "size_agree": 1,
-   "size_off": 1,
-   "size_unsure": 1,
+   "size_agree": 42,
+   "size_off": 12,
+   "size_unsure": 41,
    "skipped_fresh": 0,
-   "with_outline": 29
+   "with_outline": 268
   },
   "when": "2026-11-22"
  },

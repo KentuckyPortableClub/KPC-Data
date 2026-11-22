@@ -1,4 +1,4 @@
-# Waiting for a grader (2026-11-22 18:00Z, written by the waiting room)
+# Waiting for a grader (2026-11-22 18:07Z, written by the waiting room)
 Rows the same as the live (already graded) copy keep their old YES: check only the NEW + CHANGED rows listed. Held = a check failed: fix first.
 
 - **data/ca-key/CA-ON.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build CA-44729612014): 0 new, 3 changed, 1 gone, 1176 same (carried); check: CA-4865, CA-4890, CA-5506
@@ -29,6 +29,7 @@ Rows the same as the live (already graded) copy keep their old YES: check only t
 - **data/campstate/US-VT.json** (campstate, PASS; grader chat 11): 0 new, 0 changed, 0 gone, 147 same (carried)
 - **data/trails/index-state.json** (trails, PASS; grader chat 11): 0 new, 7 changed, 3 gone, 303 same (carried); check: |||US-10914, |||US-10915, |||US-10917, |||US-10660, |||US-8437, |||US-8292, |||US-13195
 - **data/truth/US-AL.json** (truth, PASS; grader chat 11): 0 new, 46 changed, 0 gone, 109 same (carried); check: US-1037, US-1038, US-1039, US-10396, US-1040, US-1041, US-1042, US-1043, US-1044, US-1045, US-1046, US-1047, US-1048, US-1049, US-1050, US-1051, US-13003, US-13004, US-13005, US-3600, US-3676, US-3677, US-3678, US-3683, US-3690 ...
+- **data/truth/US-AR.json** (truth, PASS; grader chat 11): 0 new, 306 changed, 0 gone, 0 same (carried); check: US-0038, US-0162, US-0163, US-0164, US-0165, US-0166, US-0168, US-0169, US-0170, US-0171, US-0637, US-0646, US-0721, US-0768, US-0822, US-0842, US-0854, US-10236, US-10257, US-10258, US-10303, US-10332, US-10333, US-10424, US-10425 ...
 - **data/truth/US-CT.json** (truth, PASS; grader chat 11): 0 new, 0 changed, 0 gone, 157 same (carried)
 - **data/truth/US-DC.json** (truth, PASS; grader chat 11): 0 new, 35 changed, 0 gone, 0 same (carried); check: US-0015, US-0653, US-0654, US-0655, US-0656, US-0657, US-0670, US-0776, US-0780, US-0783, US-0784, US-0785, US-0791, US-0792, US-0793, US-0794, US-0795, US-0796, US-0805, US-0814, US-0825, US-0848, US-0853, US-13543, US-13597 ...
 - **data/truth/US-DE.json** (truth, PASS; grader chat 11): 0 new, 89 changed, 0 gone, 0 same (carried); check: US-0229, US-0230, US-0733, US-0898, US-10531, US-10659, US-10667, US-10668, US-10669, US-10670, US-10671, US-10672, US-10673, US-10674, US-10675, US-10676, US-10677, US-10678, US-10679, US-10680, US-10681, US-10682, US-10683, US-10684, US-10685 ...
