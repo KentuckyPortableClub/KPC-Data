@@ -1,10 +1,11 @@
-# Waiting for a grader (2026-11-22 15:41Z, written by the waiting room)
+# Waiting for a grader (2026-11-22 15:54Z, written by the waiting room)
 Rows the same as the live (already graded) copy keep their old YES: check only the NEW + CHANGED rows listed. Held = a check failed: fix first.
 
 - **data/ca-key/CA-ON.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build CA-44729612014): 0 new, 3 changed, 1 gone, 1176 same (carried); check: CA-4865, CA-4890, CA-5506
 - **data/ca-key/index.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build CA-44729612014): 0 new, 15 changed, 0 gone, 0 same (carried); check: AB, BC, MB, NB, NL, NS, NT, NU, ON, PE, QC, SI, SK, SP, YT
 - **data/ca-key/refs.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build CA-44729612014): whole file changed, no rows to list: look at the whole file
 - **data/ca-key/why-not.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build CA-44729612014): 0 new, 0 changed, 1 gone, 1496 same (carried)
+- **data/campinfo/US-GA.json** (campinfo, PASS; grader chat 11): 2 new, 69 changed, 0 gone, 136 same (carried); check: GA-b77667aa26, GA-bec2bacf14, 10003508, 10004589, 10004592, 10004594, 10004596, 10004598, 10004600, 10004604, 10009939, 10075391, 10107305, 10107310, 10150477, 10150481, 10150485, 10156125, 10176084, 10218892, 10235928, 10249178, 10296890, 10299353, 10303081 ...
 - **data/campinfo/US-WV.json** (campinfo, PASS; grader chat 11): 0 new, 50 changed, 0 gone, 51 same (carried); check: 10086085, 10122583, 10158455, 10158515, 10161357, 10234906, 232006, 232007, 232008, 232009, 232019, 232095, 232162, 232331, 232424, 233422, 233443, 233493, 233604, 233678, 233725, 233990, 234132, 239752, 239756 ...
 - **data/campstate/US-AK.json** (campstate, PASS; grader chat 11): 34 new, 0 changed, 26 gone, 45 same (carried); check: AK-2d3744960d, AK-b32212e8ed, AK-4584f65948, AK-f83d48a603, AK-77b9942dc6, AK-4873639044, AK-dbf8562e93, AK-9fc5090cd6, AK-e680aaa94d, AK-ef221f2231, AK-39c2dfd761, AK-fdb068f37a, AK-ff4830cde6, AK-d9f456b6ac, AK-0c590d3287, AK-818844dcf8, AK-ddcbcf8519, AK-853f60dc8a, AK-12b9680d63, AK-f1c1d5bab5, AK-105bb1ed24, AK-40e02eb334, AK-f84b20cc7f, AK-f9febf9f78, AK-79a5e4df5d ...
 - **data/campstate/US-AZ.json** (campstate, PASS; grader chat 11): 0 new, 1 changed, 0 gone, 102 same (carried); check: AZ-3b3d128f9d

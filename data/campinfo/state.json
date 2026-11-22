@@ -225,26 +225,27 @@
    "updated": "2026-11-11"
   },
   "US-GA": {
-   "camps": 212,
-   "checked": 205,
+   "camps": 214,
+   "checked": 207,
    "counts": {
-    "camps": 205,
+    "camps": 207,
+    "kept_after_failed_read": 1,
     "needs_browser": 4,
     "needs_key": 64,
-    "no_page": 0,
+    "no_page": 2,
     "not_official": 8,
     "ok": 61,
     "other": 67,
     "resting": 1,
     "robots": 0,
     "with_booking": 131,
-    "with_elevation": 0,
+    "with_elevation": 66,
     "with_facts": 121,
     "with_sites": 8
    },
-   "left": 2,
-   "status": "partial",
-   "updated": "2026-11-12"
+   "left": 0,
+   "status": "done",
+   "updated": "2026-11-22"
   },
   "US-HI": {
    "camps": 22,
@@ -1151,7 +1152,7 @@
   "US-DC": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-DE": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-FL": "FCC listAsOfDates: robots.txt says no",
-  "US-GA": "FCC listAsOfDates: robots.txt says no",
+  "US-GA": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
   "US-HI": "FCC listAsOfDates: robots.txt says no",
   "US-IA": "FCC listAsOfDates: robots.txt says no",
   "US-ID": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
@@ -1288,10 +1289,10 @@
    "cell": {
     "carriers": null,
     "files": [],
-    "src": null,
-    "status": "FCC listAsOfDates: robots.txt says no"
+    "src": "https://broadbandmap.fcc.gov/api/public/map/downloads/listAvailabilityData/2026-06-30?category=State&subcategory=Mobile%20Broadband",
+    "status": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)"
    },
-   "read": "2026-11-12"
+   "read": "2026-11-22"
   },
   "US-HI": {
    "cell": {
@@ -2610,33 +2611,33 @@
  },
  "last": {
   "areas": [
-   "US-WV"
+   "US-GA"
   ],
   "fcc_token": true,
   "manners": {
-   "errors": 3,
+   "errors": 0,
    "for_person_urls": [],
    "host_rule": 0,
-   "requests": 62,
-   "rested": 0,
+   "requests": 79,
+   "rested": 1,
    "robots": 0,
-   "strikes": 4
+   "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "camps": 50,
-   "elevations": 50,
+   "camps": 69,
+   "elevations": 69,
    "errors": 0,
    "needs_browser": 0,
-   "needs_key": 49,
-   "no_page": 0,
+   "needs_key": 66,
+   "no_page": 2,
    "not_official": 0,
    "ok": 0,
    "pages_read": 0,
    "resting": 1,
    "ridb_calls": 0,
    "robots": 0,
-   "skipped_fresh": 55
+   "skipped_fresh": 145
   },
   "when": "2026-11-22"
  },
