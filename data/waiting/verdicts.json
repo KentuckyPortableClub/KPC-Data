@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-22T20:39Z",
+ "checked": "2026-11-22T20:43Z",
  "switched_on": false,
  "results": [
   {
@@ -50,6 +50,15 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "4a34103fd0854629",
+   "net": true
+  },
+  {
+   "path": "data/campinfo/US-CO.json",
+   "kind": "campinfo",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "f97846728d16d04f",
    "net": true
   },
   {
@@ -314,12 +323,48 @@
    "net": true
   },
   {
+   "path": "data/truth/US-AR.json",
+   "kind": "truth",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "7ef09ad561c4e08b",
+   "net": true
+  },
+  {
+   "path": "data/truth/US-CO.json",
+   "kind": "truth",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "09cfd764049fd4dd",
+   "net": true
+  },
+  {
    "path": "data/truth/US-CT.json",
    "kind": "truth",
    "why": [],
    "notes": [],
    "verdict": "PASS",
    "fp": "8a522a7baead8660",
+   "net": true
+  },
+  {
+   "path": "data/truth/US-DC.json",
+   "kind": "truth",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "3fd157816f7e44c7",
+   "net": true
+  },
+  {
+   "path": "data/truth/US-DE.json",
+   "kind": "truth",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "475c846291989e98",
    "net": true
   },
   {
@@ -350,6 +395,15 @@
    "net": true
   },
   {
+   "path": "data/truth/US-ID.json",
+   "kind": "truth",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "2a96fe7e413327b3",
+   "net": true
+  },
+  {
    "path": "data/truth/US-IL.json",
    "kind": "truth",
    "why": [],
@@ -368,12 +422,30 @@
    "net": true
   },
   {
+   "path": "data/truth/US-KS.json",
+   "kind": "truth",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "9e1af1de6715d3e8",
+   "net": true
+  },
+  {
    "path": "data/truth/US-KY.json",
    "kind": "truth",
    "why": [],
    "notes": [],
    "verdict": "PASS",
    "fp": "68514b54675f37ab",
+   "net": true
+  },
+  {
+   "path": "data/truth/US-LA.json",
+   "kind": "truth",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "228da4221700d32f",
    "net": true
   },
   {
@@ -390,14 +462,21 @@
   {
    "path": "data/truth/US-MD.json",
    "kind": "truth",
-   "why": [
-    "F-R3 48 of 89 sized parks are OFF (over half: a reading problem?)"
-   ],
+   "why": [],
    "notes": [
     "no live copy: first time this file is published"
    ],
-   "verdict": "HOLD",
-   "fp": "c54819e4f16ee58a",
+   "verdict": "PASS",
+   "fp": "b6a00b8aa0ab7a1d",
+   "net": true
+  },
+  {
+   "path": "data/truth/US-ME.json",
+   "kind": "truth",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "0257c73c80a7306b",
    "net": true
   },
   {
@@ -430,6 +509,15 @@
    "net": true
   },
   {
+   "path": "data/truth/US-MT.json",
+   "kind": "truth",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "2ab502b7009ef990",
+   "net": true
+  },
+  {
    "path": "data/truth/US-NC.json",
    "kind": "truth",
    "why": [],
@@ -445,6 +533,15 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "34d0c6205a844394",
+   "net": true
+  },
+  {
+   "path": "data/truth/US-NE.json",
+   "kind": "truth",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "67c451a76b5d0e01",
    "net": true
   },
   {
@@ -477,14 +574,12 @@
   {
    "path": "data/truth/US-OK.json",
    "kind": "truth",
-   "why": [
-    "F-R3 53 of 100 sized parks are OFF (over half: a reading problem?)"
-   ],
+   "why": [],
    "notes": [
     "no live copy: first time this file is published"
    ],
-   "verdict": "HOLD",
-   "fp": "78db457b3aa01ddb",
+   "verdict": "PASS",
+   "fp": "a7f4495b3d0f8399",
    "net": true
   },
   {
@@ -530,6 +625,15 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "399d43db5a5de58b",
+   "net": true
+  },
+  {
+   "path": "data/truth/US-TX.json",
+   "kind": "truth",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "844907189aff7b56",
    "net": true
   },
   {
@@ -593,6 +697,15 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "1194f11672d6b212",
+   "net": true
+  },
+  {
+   "path": "data/truth/US-WY.json",
+   "kind": "truth",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "5a13f66aabb7900e",
    "net": true
   },
   {
@@ -1518,123 +1631,6 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "4d9e3b52ead4a881",
-   "net": true
-  },
-  {
-   "path": "data/campinfo/US-CO.json",
-   "kind": "campinfo",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "f97846728d16d04f",
-   "net": true
-  },
-  {
-   "path": "data/truth/US-AR.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "7ef09ad561c4e08b",
-   "net": true
-  },
-  {
-   "path": "data/truth/US-CO.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "09cfd764049fd4dd",
-   "net": true
-  },
-  {
-   "path": "data/truth/US-DC.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "3fd157816f7e44c7",
-   "net": true
-  },
-  {
-   "path": "data/truth/US-DE.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "475c846291989e98",
-   "net": true
-  },
-  {
-   "path": "data/truth/US-ID.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "2a96fe7e413327b3",
-   "net": true
-  },
-  {
-   "path": "data/truth/US-KS.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "9e1af1de6715d3e8",
-   "net": true
-  },
-  {
-   "path": "data/truth/US-LA.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "228da4221700d32f",
-   "net": true
-  },
-  {
-   "path": "data/truth/US-ME.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "0257c73c80a7306b",
-   "net": true
-  },
-  {
-   "path": "data/truth/US-MT.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "2ab502b7009ef990",
-   "net": true
-  },
-  {
-   "path": "data/truth/US-NE.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "67c451a76b5d0e01",
-   "net": true
-  },
-  {
-   "path": "data/truth/US-TX.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "844907189aff7b56",
-   "net": true
-  },
-  {
-   "path": "data/truth/US-WY.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "5a13f66aabb7900e",
    "net": true
   }
  ]

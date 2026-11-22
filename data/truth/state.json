@@ -939,7 +939,7 @@
    },
    "left": 0,
    "parks": 277,
-   "status": "queued",
+   "status": "done",
    "updated": "2026-11-22"
   },
   "US-TX": {
@@ -1123,36 +1123,37 @@
  },
  "last": {
   "areas": [
-   "US-KY"
+   "US-TN"
   ],
   "manners": {
-   "browser": 1,
    "errors": 0,
+   "for_person": 1,
    "for_person_urls": [
     [
-     "https://whitehall.eku.edu/robots.txt",
-     "robots.txt answered with a web page, not a robots file (the answer came from another site (https://visitrichmondky.com/listing/white-hall-state-historic-house/): not read as \"no rules\"): not read as \"no rules\": a person downloads what is needed from whitehall.eku.edu"
+     "https://www.murfreesborotn.gov/187/Murfree-Spring-Wetlands",
+     "HTTP 403 twice"
     ]
    ],
-   "host_rule": 3,
-   "requests": 22,
-   "rested": 0,
-   "robots": 1,
-   "strikes": 0
+   "host_rule": 0,
+   "requests": 3,
+   "rested": 392,
+   "retry403": 1,
+   "robots": 0,
+   "strikes": 2
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 5,
-   "no_size": 7,
-   "ours_unknown": 0,
-   "pages_read": 6,
-   "parks": 9,
+   "handover_hints": 4,
+   "no_size": 226,
+   "ours_unknown": 2,
+   "pages_read": 0,
+   "parks": 228,
    "retired": 0,
    "size_agree": 0,
-   "size_off": 1,
-   "size_unsure": 1,
-   "skipped_fresh": 184,
-   "with_outline": 9
+   "size_off": 0,
+   "size_unsure": 0,
+   "skipped_fresh": 49,
+   "with_outline": 228
   },
   "when": "2026-11-22"
  },
