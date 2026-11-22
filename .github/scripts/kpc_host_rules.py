@@ -10,6 +10,9 @@ kpc_master.live_ok. It is asked BEFORE robots.txt and before every request, so a
   * fail closed: an address with no host, or not plain http(s), is refused; the host compared is the one really dialled
     (no port, no user@, no trailing dot, percent-escapes decoded).
 www.arcgis.com, hub.arcgis.com and agency servers are not caught (they follow robots.txt; hub portals wait 60 s).
+22 Nov 2026 (owner: "We can read arcgis"): inside the store KEEPER's own jobs only (KPC_KEEPER_HOST_RULES=owner-2026-11-15, set by
+KPC-Store), services*.arcgis.com and apps.fs.usda.gov may be read, as the owner ruled on 15 Nov for the keeper: slowly, robots.txt
+first. The never-contact hosts stay never-contact, and hosts added through KPC_SAVED_ONLY_HOSTS stay saved-copies only.
 Standard library only, no state.
 """
 import os, re, urllib.error, urllib.parse, urllib.request
@@ -42,14 +45,28 @@ def _scheme_ok(url):
 def is_arcgis_services_host(host): return bool(ARCGIS_SERVICES_HOST_RE.match(str(host or '').lower()))
 
 
+KEEPER_ENV = 'KPC_KEEPER_HOST_RULES'
+KEEPER_RULING = 'owner-2026-11-15'   # the owner's 15 Nov ruling: the KEEPER may read arcgis.com and Forest Service sites (slow, robots.txt wins)
+KEEPER_HOSTS = {'apps.fs.usda.gov'}
+
+
+def keeper_run():
+    """True only inside the store keeper's own jobs (KPC-Store sets KPC_KEEPER_HOST_RULES=owner-2026-11-15). No KPC-Data workflow sets
+    it (tests/test_keeper_host_rules_nov22.py), so every KPC-Data bot keeps the saved-copies-only rule."""
+    return os.environ.get(KEEPER_ENV) == KEEPER_RULING
+
+
 def host_ok(url):
     """(ok, why). ok=False means NO request of any kind to this url, robots.txt included."""
     host, path = parts(url)
     if not host or not _scheme_ok(url): return False, f'{str(url)[:80]}: no plain http(s) host (fail closed)'
     for h, p in NEVER_CONTACT:
         if host == h and path.lower().startswith(p.lower()): return False, f'never contact {h}{p}'
-    if is_arcgis_services_host(host): return False, f'{host}: services*.arcgis.com, saved copies only (no live read, robots.txt included)'
-    if host in saved_only_hosts(): return False, f'{host}: saved copies only, no live read'
+    keeper = keeper_run()   # 22 Nov (owner: "We can read arcgis"): the keeper reads these hosts politely; robots.txt still decides
+    if is_arcgis_services_host(host) and not keeper: return False, f'{host}: services*.arcgis.com, saved copies only (no live read, robots.txt included)'
+    extra = {h.strip().lower().rstrip('.') for h in (os.environ.get('KPC_SAVED_ONLY_HOSTS') or '').split(',') if h.strip()}
+    if host in saved_only_hosts() and not (keeper and host not in extra and (is_arcgis_services_host(host) or host in KEEPER_HOSTS)):
+        return False, f'{host}: saved copies only, no live read'
     return True, ''
 
 
