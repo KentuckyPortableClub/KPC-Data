@@ -1038,22 +1038,23 @@
   "US-WI": {
    "checked": 348,
    "counts": {
-    "agree": 128,
-    "handover_hints": 17,
+    "agree": 162,
+    "handover_hints": 13,
     "no_page": 0,
-    "no_size": 96,
-    "off": 71,
-    "ours_unknown": 0,
+    "no_size": 98,
+    "not_read": 0,
+    "off": 42,
+    "ours_unknown": 3,
     "parks": 348,
     "retired": 0,
-    "unsure": 38,
-    "weak": 10,
-    "with_outline": 333
+    "unsure": 29,
+    "weak": 18,
+    "with_outline": 334
    },
    "left": 0,
    "parks": 348,
-   "status": "queued",
-   "updated": "2026-11-08"
+   "status": "done",
+   "updated": "2026-11-22"
   },
   "US-WV": {
    "checked": 172,
@@ -1101,6 +1102,7 @@
   "tnstateparks.com": 1795430345.0894592,
   "www.alapark.com": 1795435195.785201,
   "www.floridastateparks.org": 1795436850.291285,
+  "www.michigan.gov": 1795441493.2175202,
   "www.nwk.usace.army.mil": 1795439994.9606252,
   "www.sam.usace.army.mil": 1795434819.4882402,
   "www.swfwmd.state.fl.us": 1795437100.4632494,
@@ -1109,51 +1111,42 @@
  },
  "last": {
   "areas": [
-   "US-MO"
+   "US-WI"
   ],
   "manners": {
-   "browser": 2,
-   "deferred": 863,
+   "browser": 1,
    "errors": 0,
-   "for_person": 4,
+   "for_person": 2,
    "for_person_urls": [
     [
-     "http://www.nwk.usace.army.mil/Portals/29/docs/lakesites/truman/Truman-LakeMap.pdf",
+     "https://www.michigan.gov/recsearch/parks/Menominee",
      "HTTP 403 twice"
     ],
     [
-     "http://www.nwk.usace.army.mil/Portals/29/docs/lakesites/longbranch/longbranch-LakeMap.pdf",
-     "HTTP 403 twice"
-    ],
-    [
-     "http://www.mvs.usace.army.mil/Portals/54/docs/recreation/marktwain/maps/MTL_Map_MTL_Overall_Map.pdf",
-     "HTTP 403 twice"
-    ],
-    [
-     "http://www.swl.usace.army.mil/Portals/50/docs/tablerocklake/TABLE%20ROCK%20MAP%203-05.pdf",
+     "https://www.michigan.gov/recsearch/-/media/Project/Websites/recsearch/documents/MapsI-N/Menominee_River_map.pdf?rev=e7a2c8b757ea48cda44dc3dc461e0b1c&hash=F7B187F79AE5406D1BA0AA2EA351BB4F",
      "HTTP 403 twice"
     ]
    ],
    "host_rule": 1,
-   "requests": 737,
-   "rested": 1,
-   "retry403": 4,
-   "robots": 1,
-   "strikes": 8
+   "requests": 420,
+   "rested": 0,
+   "retry403": 2,
+   "robots": 0,
+   "strikes": 4
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 1,
-   "no_size": 510,
-   "ours_unknown": 17,
-   "pages_read": 564,
-   "parks": 559,
+   "handover_hints": 13,
+   "no_size": 98,
+   "ours_unknown": 3,
+   "pages_read": 384,
+   "parks": 348,
    "retired": 0,
-   "size_agree": 17,
-   "size_off": 0,
-   "size_unsure": 7,
-   "skipped_fresh": 2,
-   "with_outline": 551
+   "size_agree": 162,
+   "size_off": 42,
+   "size_unsure": 29,
+   "skipped_fresh": 0,
+   "with_outline": 334
   },
   "when": "2026-11-22"
  },
