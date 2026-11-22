@@ -98,8 +98,8 @@
    },
    "left": 0,
    "parks": 155,
-   "status": "queued",
-   "updated": "2026-11-15"
+   "status": "done",
+   "updated": "2026-11-22"
   },
   "US-AR": {
    "checked": 306,
@@ -1099,59 +1099,57 @@
  },
  "hosts": {
   "tnstateparks.com": 1795430345.0894592,
+  "www.alapark.com": 1795435195.785201,
   "www.sam.usace.army.mil": 1795434819.4882402,
-  "www.tn.gov": 1795430274.359603
+  "www.tn.gov": 1795430274.359603,
+  "www.tva.com": 1795435277.2104304
  },
  "last": {
   "areas": [
-   "US-GA"
+   "US-AL"
   ],
   "manners": {
-   "browser": 3,
+   "browser": 21,
    "errors": 0,
-   "for_person": 5,
+   "for_person": 4,
    "for_person_urls": [
     [
-     "https://www.exploregeorgia.org/sites/default/files/listing_documents/Doerun-PP-Bog-wma-map.pdf",
+     "https://www.alapark.com/rules-and-regulations",
      "HTTP 403 twice"
     ],
     [
-     "http://www.sam.usace.army.mil/Portals/46/docs/recreation/OP-WP/Docs/WestPointHuntingMap2012%5B1%5D.pdf",
+     "https://www.alapark.com/rules-and-regulations",
      "HTTP 403 twice"
     ],
     [
-     "http://www.sam.usace.army.mil/Portals/46/docs/recreation/WFG/docs/Lake.pdf",
+     "https://www.tva.com/energy/our-power-system/hydroelectric/little-bear-creek",
      "HTTP 403 twice"
     ],
     [
-     "https://www.gwcca.org/centennial-olympic-park",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://georgiawildlife.com/news",
+     "https://www.tva.com/energy/our-power-system/hydroelectric/Cedar-Creek",
      "HTTP 403 twice"
     ]
    ],
-   "host_rule": 2,
-   "requests": 536,
-   "rested": 0,
-   "retry403": 5,
+   "host_rule": 0,
+   "requests": 66,
+   "rested": 41,
+   "retry403": 4,
    "robots": 0,
-   "strikes": 10
+   "strikes": 8
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 10,
-   "no_size": 25,
-   "ours_unknown": 4,
-   "pages_read": 368,
-   "parks": 237,
+   "handover_hints": 4,
+   "no_size": 39,
+   "ours_unknown": 2,
+   "pages_read": 26,
+   "parks": 46,
    "retired": 0,
-   "size_agree": 125,
-   "size_off": 46,
-   "size_unsure": 27,
-   "skipped_fresh": 1,
-   "with_outline": 227
+   "size_agree": 0,
+   "size_off": 0,
+   "size_unsure": 4,
+   "skipped_fresh": 109,
+   "with_outline": 45
   },
   "when": "2026-11-22"
  },

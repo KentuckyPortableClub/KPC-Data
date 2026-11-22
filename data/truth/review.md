@@ -476,8 +476,8 @@ Updated 2026-11-22. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 - US-0642 Natchez Trace Parkway National Parkway: ours 98,699 ac · cause: whole park compared (POTA lists it in 3 states: {'US-TN': 31527, 'US-AL': 35645, 'US-MS': 31527})
 - US-0719 Horseshoe Bend National Military Park: ours 2,079 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 23,000,000 acres, a statewide / agency-wide total (over a million acres) on a park that is not a big federal unit) · [www.nps.gov](https://www.nps.gov/hobe/index.htm)
 - US-1037 Cheaha Resort State Park: ours 3,610 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 2,799 acres, no total words near it) · [www.alapark.com](https://www.alapark.com/parks/cheaha-state-park)
-- US-1038 Chewacla State Park: ours 292 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-1039 De Soto State Park: ours 1,299 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-1038 Chewacla State Park: ours 611 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-1039 De Soto State Park: ours 0 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-1040 Lake Jackson RV Park at Florala State Park: ours 65 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-12969 Marion County State Public Fishing Lake: ours 49 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-13311 TVA Upper Bear Creek Dam Resource Management Area: ours 3,216 ac · cause: no total-looking sentence: numbers found were parts or other units
