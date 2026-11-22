@@ -42,7 +42,7 @@ Updated 2026-11-22. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 | US-NE | 201 | 187 | 4 | **4** | 3 | 160 | 7 | 3 | 0 | 13 |
 | US-CO | 276 | 266 | 59 | **11** | 37 | 143 | 15 | 5 | 0 | 10 |
 | US-WY | 294 | 213 | 54 | **13** | 37 | 74 | 35 | 0 | 0 | 19 |
-| US-ID | 362 | 227 | 2 | **6** | 52 | 146 | 18 | 2 | 0 | 16 |
+| US-ID | 362 | 232 | 3 | **6** | 77 | 124 | 18 | 2 | 0 | 18 |
 | US-MT | 254 | 245 | 36 | **36** | 28 | 137 | 7 | 6 | 0 | 6 |
 | US-NV | 367 | 194 | 63 | **20** | 21 | 52 | 36 | 8 | 0 | 12 |
 | US-AZ | 123 | 109 | 15 | **4** | 5 | 62 | 23 | 13 | 0 | 7 |
@@ -2253,11 +2253,11 @@ Last · [www.nps.gov](https://www.nps.gov/pipe/learn/index.htm)
 
 ## US-ID
 
-**Agree:** 2 parks: 0 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 2 agree (second agency).
+**Agree:** 3 parks: 0 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 3 agree (second agency).
 
 **Size more than 15% off (our outline vs the agency):**
 
-- US-4477 Idaho Panhandle National Forest: ours 2,146,967 ac vs agency 725,000 acres (= 725,000 ac; 196% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [www.fs.usda.gov](https://www.fs.usda.gov/r01/idahopanhandle/about-area) · “Ranger District is at the southern end of the Idaho Panhandle National Forests and consists of approximately 725,000 acres with backcountry and mixed ownerships”
+- US-4477 Idaho Panhandle National Forest: ours 3,570,325 ac vs agency 725,000 acres (= 725,000 ac; 392% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [www.fs.usda.gov](https://www.fs.usda.gov/r01/idahopanhandle/about-area) · “Ranger District is at the southern end of the Idaho Panhandle National Forests and consists of approximately 725,000 acres with backcountry and mixed ownerships”
 - US-4500 Bitterroot National Forest: ours 2,130,738 ac vs agency 743,000 acres (= 743,000 ac; 187% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.fs.usda.gov](https://www.fs.usda.gov/r01/bitterroot/about-area) · “y skiing; snowboarding and snowmobiling to name a few. Forty-seven percent of the Bitterroot National Forest (743,000 acres) is comprised of portions of the Ana”
 - US-4563 Pacific Northwest National Scenic Trail: ours 2,018 ac vs agency 530,000 acre (= 530,000 ac; 100% off) · cause: agency bigger: our outline may miss a tract · [www.fs.usda.gov](https://www.fs.usda.gov/trails/pacific-northwest-nst/about-trail) · “0 miles of the Pacific Northwest Trail is located in designated Wilderness areas, including a traverse of the 530,000-acre Pasayten Wilderness. The Pacific Nort”
 - US-0054 Nez Perce National Historical Park: ours 1,507 ac vs agency 4564.93 acres (= 4,564 ac; 67% off) · cause: agency bigger: our outline may miss a tract · [www.nps.gov](https://www.nps.gov/nepe/learn/management/statistics.htm) · “erce culture and history. Basic Park Statistics Interior Region(s): Columbia-Pacific Northwest Region 9 Size: 4564.93 acres Staffing: 21 permanent and 1 tempora”
@@ -2266,58 +2266,67 @@ Last · [www.nps.gov](https://www.nps.gov/pipe/learn/index.htm)
 
 **Unsure (no clean total found; the nearest number is only a guess):**
 
-- US-0274 Bear Lake National Wildlife Refuge: ours 18,310 ac · cause: a number 5 parks share from one page (60,000 ac): an agency total, not this park
-- US-0275 Camas National Wildlife Refuge: ours 11,421 ac · cause: a number 5 parks share from one page (60,000 ac): an agency total, not this park
-- US-0276 Deer Flat National Wildlife Refuge: ours 887 ac · cause: a number 5 parks share from one page (60,000 ac): an agency total, not this park
-- US-0277 Grays Lake National Wildlife Refuge: ours 25,039 ac · cause: a number 3 parks share from one page (60,000 ac): an agency total, not this park
-- US-0278 Kootenai National Wildlife Refuge: ours 2,766 ac · cause: a number 5 parks share from one page (60,000 ac): an agency total, not this park
-- US-0279 Minidoka National Wildlife Refuge: ours 1,985 ac · cause: a number 5 parks share from one page (60,000 ac): an agency total, not this park
-- US-10334 Big Jacks Creek Wilderness Area (BLM( Wilderness Area: ours 55,171 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-10339 Owyhee River Wilderness Area (BLM) Wilderness Area: ours 444,948 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-10383 Jim McClure-Jerry Peak Wilderness Wilderness Area: ours 120,974 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 38 million acres, no total words near it) · [www.blm.gov](https://www.blm.gov/programs/national-conservation-lands/about)
-- US-10445 Dworshak National Fish Hatchery: ours 26 ac · cause: a number 3 parks share from one page (60,000 ac): an agency total, not this park
-- US-10446 Kooskia National Fish Hatchery: ours 59 ac · cause: a number 3 parks share from one page (60,000 ac): an agency total, not this park
-- US-10530 Coeur d'Alene Parkway State Park: ours 10 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 28 Acres, no total words near it) · [www.parksandrecreation.idaho.gov](https://www.parksandrecreation.idaho.gov)
-- US-10657 Milner Historic Recreation Area BLM Historic Area: ours 2,069 ac · cause: a number 14 parks share from one page (26,900,000 ac): an agency total, not this park
-- US-11239 Chilly Slough Wetland Conservation Area BLM Interpretive Site: ours 637 ac · cause: a number 14 parks share from one page (26,900,000 ac): an agency total, not this park
-- US-11250 Thorn Creek Reservoir BLM Recreation Management Area: ours 117 ac · cause: a number 14 parks share from one page (26,900,000 ac): an agency total, not this park
-- US-11251 Magic Reservoir BLM Recreation Management Area: ours 21,285 ac · cause: a number 14 parks share from one page (26,900,000 ac): an agency total, not this park
-- US-11253 Fish Creek Reservoir BLM Recreation Management Area: ours 349 ac · cause: a number 14 parks share from one page (26,900,000 ac): an agency total, not this park
-- US-11259 Silver City Recreation Area BLM Recreation Management Area: ours 3,945 ac · cause: a number 14 parks share from one page (26,900,000 ac): an agency total, not this park
-- US-11282 Summit Creek Recreation Area BLM Recreation Management Area: ours 116 ac · cause: a number 14 parks share from one page (26,900,000 ac): an agency total, not this park
-- US-11310 Goodenough Creek Recreation Site BLM Recreation Management Area: ours 295 ac · cause: a number 14 parks share from one page (26,900,000 ac): an agency total, not this park
-- US-11328 Huckleberry Recreation Site BLM Recreation Management Area: ours 85 ac · cause: a number 14 parks share from one page (26,900,000 ac): an agency total, not this park
-- US-11330 Killarney Lake Recreation Site BLM Recreation Management Area: ours 3,868 ac · cause: a number 14 parks share from one page (26,900,000 ac): an agency total, not this park
-- US-11341 Little Wood Reservoir BLM Recreation Management Area: ours 523 ac · cause: a number 14 parks share from one page (26,900,000 ac): an agency total, not this park
-- US-12159 Payette River System BLM Special Recreation Management Area: ours 9,317 ac · cause: a number 14 parks share from one page (26,900,000 ac): an agency total, not this park
-- US-12180 Owyhee Front BLM Recreation Management Area: ours 283,335 ac · cause: a number 14 parks share from one page (26,900,000 ac): an agency total, not this park
-- US-12298 Gamlin Lake Recreation Site BLM Recreation Management Area: ours 218 ac · cause: a number 14 parks share from one page (26,900,000 ac): an agency total, not this park
-- US-2228 Bear Lake State Park: ours 69,478 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-2229 Bruneau Dunes State Park: ours 163 ac · cause: a number 18 parks share from one page (28 ac): an agency total, not this park
-- US-2231 Old Mission State Park: ours 47 ac · cause: a number 18 parks share from one page (28 ac): an agency total, not this park
-- US-2233 Eagle Island State Park: ours 265 ac · cause: a number 18 parks share from one page (28 ac): an agency total, not this park
-- US-2234 Farragut State Park: ours 1,914 ac · cause: a number 18 parks share from one page (28 ac): an agency total, not this park
-- US-2235 Harriman State Park: ours 8,570 ac · cause: a number 18 parks share from one page (28 ac): an agency total, not this park
-- US-2236 Hells Gate State Park: ours 680 ac · cause: a number 18 parks share from one page (28 ac): an agency total, not this park
-- US-2237 Henrys Lake State Park: ours 35,870 ac · cause: a number 18 parks share from one page (28 ac): an agency total, not this park
-- US-2239 Lake Cascade State Park: ours 29,297 ac · cause: a number 18 parks share from one page (28 ac): an agency total, not this park
-- US-2241 Land of the Yankee Fork State Park: ours 470 ac · cause: a number 18 parks share from one page (28 ac): an agency total, not this park
-- US-2242 Lucky Peak State Park: ours 2,931 ac · cause: a number 18 parks share from one page (28 ac): an agency total, not this park
-- US-2243 Massacre Rocks State Park: ours 129 ac · cause: a number 18 parks share from one page (28 ac): an agency total, not this park
-- US-2244 Mary M. McCroskey State Park: ours 5,373 ac · cause: a number 18 parks share from one page (28 ac): an agency total, not this park
-- US-2245 Ponderosa State Park: ours 1,061 ac · cause: a number 18 parks share from one page (28 ac): an agency total, not this park
+- US-0274 Bear Lake National Wildlife Refuge: ours 18,310 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-0275 Camas National Wildlife Refuge: ours 10,797 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-0276 Deer Flat National Wildlife Refuge: ours 1,149 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-0277 Grays Lake National Wildlife Refuge: ours 26,648 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-0278 Kootenai National Wildlife Refuge: ours 2,766 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-0279 Minidoka National Wildlife Refuge: ours 2,852 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-10334 Big Jacks Creek Wilderness Area (BLM( Wilderness Area: ours 56,288 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-10339 Owyhee River Wilderness Area (BLM) Wilderness Area: ours 454,942 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-10383 Jim McClure-Jerry Peak Wilderness Wilderness Area: ours 119,603 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 38 million acres, no total words near it) · [www.blm.gov](https://www.blm.gov/programs/national-conservation-lands/about)
+- US-10445 Dworshak National Fish Hatchery: ours 26 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-10446 Kooskia National Fish Hatchery: ours 134 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-10530 Coeur d'Alene Parkway State Park: ours 10 ac · cause: a number 19 parks share from the same sentence (28 ac): an agency total, not this park
+- US-10657 Milner Historic Recreation Area BLM Historic Area: ours 2,069 ac · cause: a number 17 parks share from the same sentence (26,900,000 ac): an agency total, not this park
+- US-11239 Chilly Slough Wetland Conservation Area BLM Interpretive Site: ours 909 ac · cause: a number 17 parks share from the same sentence (26,900,000 ac): an agency total, not this park
+- US-11249 Salmon Falls Creek Reservoir State Fishing Lake: ours 52,132 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-11250 Thorn Creek Reservoir BLM Recreation Management Area: ours 117 ac · cause: a number 17 parks share from the same sentence (26,900,000 ac): an agency total, not this park
+- US-11251 Magic Reservoir BLM Recreation Management Area: ours 21,285 ac · cause: a number 17 parks share from the same sentence (26,900,000 ac): an agency total, not this park
+- US-11253 Fish Creek Reservoir BLM Recreation Management Area: ours 349 ac · cause: a number 17 parks share from the same sentence (26,900,000 ac): an agency total, not this park
+- US-11259 Silver City Recreation Area BLM Recreation Management Area: ours 2,624 ac · cause: a number 17 parks share from the same sentence (26,900,000 ac): an agency total, not this park
+- US-11282 Summit Creek Recreation Area BLM Recreation Management Area: ours 116 ac · cause: a number 17 parks share from the same sentence (26,900,000 ac): an agency total, not this park
+- US-11308 Blackfoot Reservoir Recreation Site BLM Recreation Management Area: ours 41,391 ac · cause: a number 17 parks share from the same sentence (26,900,000 ac): an agency total, not this park
+- US-11310 Goodenough Creek Recreation Site BLM Recreation Management Area: ours 280 ac · cause: a number 17 parks share from the same sentence (26,900,000 ac): an agency total, not this park
+- US-11316 Pipeline Recreation Site BLM Recreation Management Area: ours 18 ac · cause: a number 17 parks share from the same sentence (26,900,000 ac): an agency total, not this park
+- US-11328 Huckleberry Recreation Site BLM Recreation Management Area: ours 142 ac · cause: a number 17 parks share from the same sentence (26,900,000 ac): an agency total, not this park
+- US-11330 Killarney Lake Recreation Site BLM Recreation Management Area: ours 3,868 ac · cause: a number 17 parks share from the same sentence (26,900,000 ac): an agency total, not this park
+- US-11341 Little Wood Reservoir BLM Recreation Management Area: ours 637 ac · cause: a number 17 parks share from the same sentence (26,900,000 ac): an agency total, not this park
+- US-12159 Payette River System BLM Special Recreation Management Area: ours 9,317 ac · cause: a number 17 parks share from the same sentence (26,900,000 ac): an agency total, not this park
+- US-12180 Owyhee Front BLM Recreation Management Area: ours 283,335 ac · cause: a number 17 parks share from the same sentence (26,900,000 ac): an agency total, not this park
+- US-12298 Gamlin Lake Recreation Site BLM Recreation Management Area: ours 419 ac · cause: a number 17 parks share from the same sentence (26,900,000 ac): an agency total, not this park
+- US-2228 Bear Lake State Park: ours 70,443 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-2229 Bruneau Dunes State Park: ours 163 ac · cause: a number 19 parks share from the same sentence (28 ac): an agency total, not this park
+- US-2231 Old Mission State Park: ours 47 ac · cause: a number 19 parks share from the same sentence (28 ac): an agency total, not this park
+- US-2233 Eagle Island State Park: ours 542 ac · cause: a number 19 parks share from the same sentence (28 ac): an agency total, not this park
+- US-2234 Farragut State Park: ours 2,520 ac · cause: a number 19 parks share from the same sentence (28 ac): an agency total, not this park
+- US-2235 Harriman State Park: ours 11,236 ac · cause: a number 19 parks share from the same sentence (28 ac): an agency total, not this park
+- US-2236 Hells Gate State Park: ours 1,141 ac · cause: a number 19 parks share from the same sentence (28 ac): an agency total, not this park
+- US-2237 Henrys Lake State Park: ours 35,870 ac · cause: a number 19 parks share from the same sentence (28 ac): an agency total, not this park
+- US-2238 Heyburn State Park: ours 8,094 ac · cause: a number 19 parks share from the same sentence (28 ac): an agency total, not this park
+- US-2239 Lake Cascade State Park: ours 27,148 ac · cause: a number 19 parks share from one page (28 ac): an agency total, not this park
+- US-2241 Land of the Yankee Fork State Park: ours 574 ac · cause: a number 19 parks share from the same sentence (28 ac): an agency total, not this park
+- US-2242 Lucky Peak State Park: ours 2,841 ac · cause: a number 19 parks share from the same sentence (28 ac): an agency total, not this park
+- US-2243 Massacre Rocks State Park: ours 129 ac · cause: a number 19 parks share from the same sentence (28 ac): an agency total, not this park
+- US-2244 Mary M. McCroskey State Park: ours 4,760 ac · cause: a number 19 parks share from the same sentence (28 ac): an agency total, not this park
+- US-2245 Ponderosa State Park: ours 1,470 ac · cause: a number 19 parks share from the same sentence (28 ac): an agency total, not this park
 - US-2246 Priest Lake State Park: ours 24,086 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 755 acres, no total words near it) · [parksandrecreation.idaho.gov](https://parksandrecreation.idaho.gov/state-park/priest-lake-state-park/)
-- US-2247 Round Lake State Park: ours 101 ac · cause: a number 18 parks share from one page (28 ac): an agency total, not this park
-- US-2248 Thousand Springs State Park: ours 982 ac · cause: a number 18 parks share from one page (28 ac): an agency total, not this park
-- US-2249 Three Island Crossing State Park: ours 182 ac · cause: a number 18 parks share from one page (28 ac): an agency total, not this park
-- US-2250 Winchester Lake State Park: ours 103 ac · cause: a number 18 parks share from one page (28 ac): an agency total, not this park
-- US-4398 Uinta-Wasatch-Cache National Forest: ours 436,739 ac · cause: whole park compared (POTA lists it in 2 states: {'US-ID': 24, 'US-UT': 436715}) · [www.fs.usda.gov](https://www.fs.usda.gov/r04/uinta-wasatch-cache)
-- US-4475 Caribou-Targhee National Forest: ours 2,845,837 ac · cause: whole park compared (POTA lists it in 2 states: {'US-WY': 302612, 'US-ID': 2543225}) · [www.fs.usda.gov](https://www.fs.usda.gov/ctnf)
-- US-7361 Hells Canyon National Recreation Area: ours 1,323,106 ac · cause: whole park compared (POTA lists it in 2 states: {'US-ID': 661553, 'US-OR': 661553})
-- US-7363 Morley Nelson Snake River Birds of Prey National Conservation Area: ours 598,310 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 26.9 million acres, a statewide / agency-wide total (over a million acres) on a park that is not a big federal unit) · [blm.gov](https://blm.gov)
-- US-7365 St. Anthony Sand Dunes National Recreation Area: ours 49,115 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-7366 Trail of the Coeur d'Alene's State Trail: ours 787 ac · cause: a number 18 parks share from one page (28 ac): an agency total, not this park
-- US-7994 Selway-Bitterroot Wilderness Area: ours 2,697,378 ac · cause: whole park compared (POTA lists it in 2 states: {'US-ID': 1348689, 'US-MT': 1348689}) · [www.fs.usda.gov](https://www.fs.usda.gov/recarea/nezperceclearwater/recarea/?recid=16474)
+- US-2247 Round Lake State Park: ours 188 ac · cause: a number 19 parks share from the same sentence (28 ac): an agency total, not this park
+- US-2248 Thousand Springs State Park: ours 1,525 ac · cause: a number 19 parks share from the same sentence (28 ac): an agency total, not this park
+- US-2249 Three Island Crossing State Park: ours 182 ac · cause: a number 19 parks share from the same sentence (28 ac): an agency total, not this park
+- US-2250 Winchester Lake State Park: ours 103 ac · cause: a number 19 parks share from the same sentence (28 ac): an agency total, not this park
+- US-4398 Uinta-Wasatch-Cache National Forest: ours 436,739 ac · cause: whole park compared (POTA lists it in 2 states: {'US-UT': 436715, 'US-ID': 24}) · [www.fs.usda.gov](https://www.fs.usda.gov/r04/uinta-wasatch-cache)
+- US-4475 Caribou-Targhee National Forest: ours 3,752,665 ac · cause: whole park compared (POTA lists it in 2 states: {'US-WY': 302612, 'US-ID': 2543225}) · [www.fs.usda.gov](https://www.fs.usda.gov/ctnf)
+- US-5590 Big Cottonwood Wildlife Management Area: ours 1,444 ac · cause: a number 21 parks share from the same sentence (85,000 ac): an agency total, not this park
+- US-5591 Billingsley Creek Wildlife Management Area: ours 277 ac · cause: a number 21 parks share from the same sentence (85,000 ac): an agency total, not this park
+- US-5593 Boise River Wildlife Management Area: ours 40,630 ac · cause: a number 21 parks share from the same sentence (85,000 ac): an agency total, not this park
+- US-5594 Boundary Creek Wildlife Management Area: ours 2,052 ac · cause: a number 21 parks share from the same sentence (85,000 ac): an agency total, not this park
+- US-5595 Camas Prairie Centennial Marsh Wildlife Management Area: ours 6,158 ac · cause: a number 21 parks share from the same sentence (85,000 ac): an agency total, not this park
+- US-5596 Carey Lake Wildlife Management Area: ours 897 ac · cause: a number 21 parks share from the same sentence (85,000 ac): an agency total, not this park
+- US-5598 Cecil D. Andrus Wildlife Management Area: ours 24,150 ac · cause: a number 21 parks share from the same sentence (85,000 ac): an agency total, not this park
+- US-5599 CJ Strike Wildlife Management Area: ours 39,903 ac · cause: a number 21 parks share from the same sentence (85,000 ac): an agency total, not this park
+- US-5600 Coeur d'Alene River Wildlife Management Area: ours 10,429 ac · cause: a number 21 parks share from the same sentence (85,000 ac): an agency total, not this park
+- … 17 more in US-ID.json
 
 **Handover / closure hints (a person decides; nothing applied):**
 
