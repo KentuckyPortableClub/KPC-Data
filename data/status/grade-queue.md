@@ -1,4 +1,4 @@
-# Waiting for a grader (2026-11-22 20:43Z, written by the waiting room)
+# Waiting for a grader (2026-11-22 20:47Z, written by the waiting room)
 Rows the same as the live (already graded) copy keep their old YES: check only the NEW + CHANGED rows listed. Held = a check failed: fix first.
 
 - **data/ca-key/CA-ON.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build CA-44729612014): 0 new, 3 changed, 1 gone, 1176 same (carried); check: CA-4865, CA-4890, CA-5506
