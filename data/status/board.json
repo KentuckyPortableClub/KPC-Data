@@ -1124,9 +1124,9 @@
   "Tool trial: audit": {
    "areas": "",
    "last_run": "2026-11-22",
-   "made": "exit 0 2026-11-22: done in 8.6 min: ../out/audit/summary.md, worst.csv, questions.json",
+   "made": "exit 0 2026-11-22: done in 0.0 min: ../out/audit/summary.md, worst.csv, questions.json",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45002033997",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45028150242",
    "waiting_on": "chat 11 grades tools-out/audit/ against the spec pass mark; open files only when red"
   },
   "Tool trial: inspire": {
@@ -1140,9 +1140,9 @@
   "Tool trial: missedfers": {
    "areas": "",
    "last_run": "2026-11-22",
-   "made": "exit 0 2026-11-22: 2026-11-22T08:25:12 exit 0",
+   "made": "exit 0 2026-11-22: 2026-11-22T13:36:41 exit 0",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45002033997",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45028150242",
    "waiting_on": "chat 11 grades tools-out/missedfers/ against the spec pass mark; open files only when red"
   },
   "Tool trial: parcels": {
@@ -1171,10 +1171,10 @@
   },
   "Tool trial: sitemaps": {
    "areas": "",
-   "last_run": "2026-11-15",
-   "made": "exit 0 2026-11-15:   api.pota.app/robots.txt answered 403: treated as Disallow: / (STOP); nothing is read from this host",
+   "last_run": "2026-11-22",
+   "made": "exit 0 2026-11-22:   api.pota.app/robots.txt answered 403: treated as Disallow: / (STOP); nothing is read from this host",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/43693738508",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45028150242",
    "waiting_on": "chat 11 grades tools-out/sitemaps/ against the spec pass mark; open files only when red"
   },
   "Tool trial: trace": {
@@ -1299,7 +1299,7 @@
   },
   "waiting room": {
    "last_run": "2026-11-22",
-   "made": "heartbeat 0 h old, 135 files waiting",
+   "made": "heartbeat 0 h old, 136 files waiting",
    "result": "green",
    "waiting_on": "nothing"
   },
