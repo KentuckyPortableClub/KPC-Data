@@ -451,22 +451,23 @@
   "US-MA": {
    "checked": 421,
    "counts": {
-    "agree": 73,
+    "agree": 138,
     "handover_hints": 3,
     "no_page": 0,
-    "no_size": 122,
-    "off": 169,
-    "ours_unknown": 9,
+    "no_size": 102,
+    "not_read": 21,
+    "off": 115,
+    "ours_unknown": 8,
     "parks": 421,
     "retired": 0,
-    "unsure": 37,
-    "weak": 7,
-    "with_outline": 410
+    "unsure": 27,
+    "weak": 10,
+    "with_outline": 411
    },
    "left": 0,
    "parks": 421,
-   "status": "queued",
-   "updated": "2026-11-09"
+   "status": "done",
+   "updated": "2026-11-22"
   },
   "US-MD": {
    "checked": 186,
@@ -1118,30 +1119,49 @@
  },
  "last": {
   "areas": [
-   "US-RI"
+   "US-MA"
   ],
   "manners": {
+   "browser": 8,
+   "crawl_delay_skip": 1,
+   "dropped_queued": 18,
    "errors": 0,
-   "for_person_urls": [],
+   "for_person": 1,
+   "for_person_urls": [
+    [
+     "http://www.nae.usace.army.mil/Portals/74/docs/Recreation/WHD/WHDProjectMap.pdf",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://parks.ny.gov/sites/default/files/TaconicCopakeFallsAreaTrailMapNorth.pdf",
+     "Crawl-delay 300 s is over 120 s: not read"
+    ],
+    [
+     "https://www.mass-trails.org/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from www.mass-trails.org this run"
+    ]
+   ],
    "host_rule": 0,
-   "requests": 158,
+   "requests": 569,
    "rested": 0,
-   "robots": 10,
-   "strikes": 0
+   "retry403": 1,
+   "robots": 1,
+   "robots_unreadable": 1,
+   "strikes": 2
   },
   "stat": {
    "errors": 0,
    "handover_hints": 3,
-   "no_size": 35,
-   "ours_unknown": 1,
-   "pages_read": 93,
-   "parks": 61,
+   "no_size": 123,
+   "ours_unknown": 8,
+   "pages_read": 521,
+   "parks": 421,
    "retired": 0,
-   "size_agree": 8,
-   "size_off": 0,
-   "size_unsure": 14,
+   "size_agree": 138,
+   "size_off": 115,
+   "size_unsure": 27,
    "skipped_fresh": 0,
-   "with_outline": 58
+   "with_outline": 411
   },
   "when": "2026-11-22"
  },

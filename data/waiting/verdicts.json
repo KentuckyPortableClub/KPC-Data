@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-22T16:21Z",
+ "checked": "2026-11-22T16:42Z",
  "switched_on": false,
  "results": [
   {
@@ -379,15 +379,12 @@
   {
    "path": "data/truth/US-MA.json",
    "kind": "truth",
-   "why": [
-    "F-R2 6 OFF rows share the size 1,000.0 ac",
-    "F-R3 169 of 242 sized parks are OFF (over half: a reading problem?)"
-   ],
+   "why": [],
    "notes": [
     "no live copy: first time this file is published"
    ],
-   "verdict": "HOLD",
-   "fp": "bd26285392deef09",
+   "verdict": "PASS",
+   "fp": "cb1462c2a40ce8ba",
    "net": true
   },
   {
