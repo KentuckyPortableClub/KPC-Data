@@ -492,22 +492,23 @@
   "US-ME": {
    "checked": 148,
    "counts": {
-    "agree": 17,
-    "handover_hints": 10,
+    "agree": 21,
+    "handover_hints": 9,
     "no_page": 3,
-    "no_size": 92,
-    "off": 16,
+    "no_size": 94,
+    "not_read": 0,
+    "off": 12,
     "ours_unknown": 4,
     "parks": 148,
     "retired": 0,
-    "unsure": 7,
-    "weak": 6,
+    "unsure": 5,
+    "weak": 4,
     "with_outline": 141
    },
    "left": 0,
    "parks": 148,
-   "status": "queued",
-   "updated": "2026-11-09"
+   "status": "done",
+   "updated": "2026-11-22"
   },
   "US-MI": {
    "checked": 388,
@@ -1109,10 +1110,12 @@
   }
  },
  "hosts": {
+  "maine.gov": 1795453861.5372512,
   "tnstateparks.com": 1795430345.0894592,
   "www.alapark.com": 1795435195.785201,
   "www.arcgis.com": 1795452861.2430022,
   "www.floridastateparks.org": 1795436850.291285,
+  "www.maine.gov": 1795453469.8895013,
   "www.michigan.gov": 1795441493.2175202,
   "www.nh.gov": 1795453077.0507972,
   "www.nwk.usace.army.mil": 1795439994.9606252,
@@ -1123,20 +1126,23 @@
  },
  "last": {
   "areas": [
-   "US-NH"
+   "US-ME"
   ],
   "manners": {
-   "browser": 8,
-   "dropped_queued": 2,
+   "browser": 28,
    "errors": 0,
-   "for_person": 4,
+   "for_person": 5,
    "for_person_urls": [
     [
-     "https://www.arcgis.com/itemdata/92d347a7683b26a11dab76ccf9a5cac2/58b36e66aa2a40669f43f3771f0514a3/BELLAMYRIVERWMAEAST.pdf",
+     "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
      "HTTP 403 twice"
     ],
     [
-     "https://www.arcgis.com/itemdata/92d347a7683b26a11dab76ccf9a5cac2/422ca4604a4f414fb56e393bbd420f23/BRACKETTBROOKWMA.pdf?response-cache-control=max-age%3D0%2C+s-maxage%3D600%2C+v%3D1762188798000&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECcaCXVzLWVhc3QtMSJHM",
+     "https://www.maine.gov/dacf/parks/park_passes_fees_rules/index.shtml",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://maine.gov/ifw/fish-wildlife/wildlife/lands/wildlife-management-areas/kmz/RWaldoTyler_WeskeagMarsh_WMA.kmz",
      "HTTP 403 twice"
     ],
     [
@@ -1144,35 +1150,35 @@
      "robots.txt answered 202: nothing fetched from trailsnh.com this run"
     ],
     [
-     "https://www.nh.gov/nhdfl/",
+     "https://www.mindat.org/feature-4960774.html",
      "HTTP 403 twice"
     ],
     [
-     "https://www.nh.gov/nhdfl/",
+     "https://maine.gov/ifw/fish-wildlife/wildlife/lands/wildlife-management-areas/kmz/BogBrookWMA.kmz",
      "HTTP 403 twice"
     ]
    ],
    "host_rule": 1,
-   "requests": 151,
-   "rested": 58,
-   "retry403": 4,
+   "requests": 214,
+   "rested": 72,
+   "retry403": 5,
    "robots": 1,
    "robots_unreadable": 1,
-   "strikes": 8
+   "strikes": 10
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 5,
-   "no_size": 155,
-   "ours_unknown": 5,
-   "pages_read": 105,
-   "parks": 206,
+   "handover_hints": 9,
+   "no_size": 99,
+   "ours_unknown": 4,
+   "pages_read": 142,
+   "parks": 148,
    "retired": 0,
-   "size_agree": 17,
-   "size_off": 9,
-   "size_unsure": 7,
+   "size_agree": 21,
+   "size_off": 12,
+   "size_unsure": 5,
    "skipped_fresh": 0,
-   "with_outline": 193
+   "with_outline": 141
   },
   "when": "2026-11-22"
  },
