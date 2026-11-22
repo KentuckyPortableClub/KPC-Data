@@ -102,7 +102,7 @@ Source file: `data/truth/US-MT.json`
 ```json
 {
  "cause": "our union: one of our pieces alone matches the agency (double count?)",
- "checked": "2026-11-09",
+ "checked": "2026-11-22",
  "handover": [],
  "n": "Lee Metcalf BLM Wilderness Area",
  "official": {
@@ -110,7 +110,7 @@ Source file: `data/truth/US-MT.json`
   "as": "6,347 acre",
   "clean": false,
   "line": "nits of the Lee Metcalf Wilderness. The Bear Trap is the first wilderness areas to be managed by the BLM. The 6,347-acre area offers beautiful wilderness scenery plus exciting whitewater rafting featuring the famous Class IV - V K",
-  "read": "2026-11-09",
+  "read": "2026-11-22",
   "sent": "The 6,347-acre area offers beautiful wilderness scenery plus exciting whitewater rafting featuring the famous Class IV - V Kitchen Sink rapid.",
   "url": "https://www.blm.gov/visit/lee-metcalf-wilderness",
   "why": "total-looking"

@@ -2,16 +2,16 @@
  "about": "Park truth checker: official acreage vs our outline, handover hints, second-witness score. Review lists only: nothing here changes a key or a card.",
  "area": "US-MT",
  "counts": {
-  "agree": 49,
+  "agree": 55,
   "handover_hints": 6,
-  "no_page": 1,
-  "no_size": 137,
-  "not_read": 0,
-  "off": 26,
+  "no_page": 0,
+  "no_size": 122,
+  "not_read": 1,
+  "off": 28,
   "ours_unknown": 7,
   "parks": 254,
   "retired": 0,
-  "unsure": 25,
+  "unsure": 32,
   "weak": 7,
   "with_outline": 246
  },
@@ -3323,11 +3323,21 @@
    "verdict": "no size on page"
   },
   "US-12648": {
-   "checked": "2026-11-09",
+   "cause": "the agency figure may cover several states; our outline may be this state's share only",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Canyon Ferry Wildlife Management Area",
-   "official": null,
+   "note": "the agency figure may cover several states; our outline may be this state's share only",
+   "official": {
+    "acres": 5920.0,
+    "as": "5,920 acres",
+    "clean": true,
+    "line": "of those resources. Description The Canyon Ferry Wildlife Management Area (CFWMA) encompassing approximately 5,920 acres is located just north of Townsend in Broadwater County, MT where the Missouri River dumps into Canyon Ferry R",
+    "read": "2026-11-22",
+    "sent": "The Canyon Ferry Wildlife Management Area (CFWMA) encompassing approximately 5,920 acres is located just north of Townsend in Broadwater County, MT where the Missouri River dumps into Canyon Ferry Reservoir.",
+    "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753388",
+    "why": "clean total"
+   },
    "ours": {
     "acres": 29659,
     "dissolved": {
@@ -3361,12 +3371,13 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok (browser)",
+     "status": "ok",
      "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753388",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
+   "pct": 401,
+   "same_agency": false,
    "score": 7,
    "score_parts": {
     "name": 2,
@@ -3374,17 +3385,45 @@
     "size": 1,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 5920.0,
+     "as": "5,920 acres",
+     "clean": true,
+     "line": "of those resources. Description The Canyon Ferry Wildlife Management Area (CFWMA) encompassing approximately 5,920 acres is located just north of Townsend in Broadwater County, MT where the Missouri River dumps into Canyon Ferry R",
+     "total_like": true,
+     "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753388",
+     "why": "clean total"
+    }
+   ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-12649": {
-   "checked": "2026-11-09",
-   "handover": [],
-   "last_read_failed": "2026-11-22",
+   "cause": "our union: one of our pieces alone matches the agency (double count?)",
+   "checked": "2026-11-22",
+   "handover": [
+    {
+     "date_hint": null,
+     "kind": "managed by",
+     "line": "oir Wildlife Management Area (WMA) is located on Bureau of Reclamation property in Hill County, but is managed by Montana Fish, Wildlife & Parks (MFWP) through a long-term management agreement. The WMA is managed to conserve a",
+     "owner_now": "Montana Fish",
+     "src": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754295",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
    "n": "Fresno Reservoir Wildlife Management Area",
-   "official": null,
+   "official": {
+    "acres": 2742.4,
+    "as": "2,742.4 acres",
+    "clean": true,
+    "line": "through the area. Primarily walk-in hunting. Location Region 6 Latitude/Longitude: 48.73703 -110.13867 Size: 2,742.4 acres Elevation: 2,581 ft Open: Jan 1 to Dec 31 Directions: Take Highway 2 West from Havre approximately 21 miles,",
+    "read": "2026-11-22",
+    "sent": "2,742.4 acres",
+    "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754295",
+    "why": "clean total"
+   },
    "ours": {
     "acres": 15818,
     "dissolved": {
@@ -3415,33 +3454,62 @@
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
-   "owner_now": null,
+   "owner_now": "Montana Fish",
    "pages": [
     {
-     "status": "ok (browser)",
+     "status": "ok",
      "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754295",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 477,
+   "same_agency": false,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 0,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 2742.4,
+     "as": "2,742.4 acres",
+     "clean": true,
+     "line": "through the area. Primarily walk-in hunting. Location Region 6 Latitude/Longitude: 48.73703 -110.13867 Size: 2,742.4 acres Elevation: 2,581 ft Open: Jan 1 to Dec 31 Directions: Take Highway 2 West from Havre approximately 21 miles,",
+     "total_like": true,
+     "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754295",
+     "why": "clean total"
+    },
+    {
+     "acres": 2742.4,
+     "as": "2,742.4 acres",
+     "clean": false,
+     "line": "trail through the area. Primarily walk-in hunting. Location Region 6 Latitude/Longitude: 48.73703 -110.13867 Size: 2,742.4 acres Elevation: 2,581 ft Open: Jan 1 to Dec 31 Directions: Take Highway 2 West from Havre approximately 21 miles,",
+     "total_like": false,
+     "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754295",
+     "why": "no total words near it"
+    }
+   ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "off"
   },
   "US-12650": {
-   "checked": "2026-11-09",
+   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Warm Springs Wildlife Management Area",
-   "official": null,
+   "official": {
+    "acres": 1337.7,
+    "as": "1,337.7 acres",
+    "clean": true,
+    "line": "erved throught the year. Please refer to map. Location Region 2 Latitude/Longitude: 46.16815 -112.78755 Size: 1,337.7 acres Elevation: 4,844 ft Open: Jan 1 to Dec 31 Directions: While driving on Interstate 90, take exit 201. Turn rig",
+    "read": "2026-11-22",
+    "sent": "1,337.7 acres",
+    "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754067",
+    "why": "clean total"
+   },
    "ours": {
     "acres": 4184,
     "dissolved": {
@@ -3469,30 +3537,58 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok (browser)",
+     "status": "ok",
      "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754067",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 213,
+   "same_agency": false,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 0,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 1337.7,
+     "as": "1,337.7 acres",
+     "clean": true,
+     "line": "erved throught the year. Please refer to map. Location Region 2 Latitude/Longitude: 46.16815 -112.78755 Size: 1,337.7 acres Elevation: 4,844 ft Open: Jan 1 to Dec 31 Directions: While driving on Interstate 90, take exit 201. Turn rig",
+     "total_like": true,
+     "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754067",
+     "why": "clean total"
+    },
+    {
+     "acres": 1337.7,
+     "as": "1,337.7 acres",
+     "clean": false,
+     "line": "be observed throught the year. Please refer to map. Location Region 2 Latitude/Longitude: 46.16815 -112.78755 Size: 1,337.7 acres Elevation: 4,844 ft Open: Jan 1 to Dec 31 Directions: While driving on Interstate 90, take exit 201. Turn rig",
+     "total_like": false,
+     "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754067",
+     "why": "no total words near it"
+    }
+   ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "off"
   },
   "US-12651": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Nevada Lake Wildlife Management Area",
-   "official": null,
+   "official": {
+    "acres": 1522.8,
+    "as": "1,522.8 acres",
+    "clean": true,
+    "line": "December 1st. No motorized vehicles allowed. Location Region 2 Latitude/Longitude: 46.81279 -112.79947 Size: 1,522.8 acres Elevation: 5,230 ft Open: May 15 to Dec 1 Directions: North of Highway 141 and the Nevada Lake Reservoir betw",
+    "read": "2026-11-22",
+    "sent": "1,522.8 acres",
+    "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754071",
+    "why": "clean total"
+   },
    "ours": {
     "acres": 1525,
     "dissolved": {
@@ -3520,28 +3616,47 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok (browser)",
+     "status": "ok",
      "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754071",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 0,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 1522.8,
+     "as": "1,522.8 acres",
+     "clean": true,
+     "line": "December 1st. No motorized vehicles allowed. Location Region 2 Latitude/Longitude: 46.81279 -112.79947 Size: 1,522.8 acres Elevation: 5,230 ft Open: May 15 to Dec 1 Directions: North of Highway 141 and the Nevada Lake Reservoir betw",
+     "total_like": true,
+     "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754071",
+     "why": "clean total"
+    },
+    {
+     "acres": 1522.8,
+     "as": "1,522.8 acres",
+     "clean": false,
+     "line": "hrough December 1st. No motorized vehicles allowed. Location Region 2 Latitude/Longitude: 46.81279 -112.79947 Size: 1,522.8 acres Elevation: 5,230 ft Open: May 15 to Dec 1 Directions: North of Highway 141 and the Nevada Lake Reservoir betw",
+     "total_like": false,
+     "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754071",
+     "why": "no total words near it"
+    }
+   ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-12652": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Kootenai West Wildlife Management Area",
    "official": null,
    "ours": {
@@ -3571,16 +3686,16 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok (browser)",
+     "status": "ok",
      "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753945",
      "why": "the park's page (data/parkinfo)"
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -3590,11 +3705,19 @@
    "verdict": "no size on page"
   },
   "US-12653": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Aunt Molly Wildlife Management Area",
-   "official": null,
+   "official": {
+    "acres": 1182.6,
+    "as": "1,182.6 acres",
+    "clean": true,
+    "line": "ch. Hunting is walk-in only from parking area. Location Region 2 Latitude/Longitude: 46.91633 -113.0124 Size: 1,182.6 acres Elevation: 4,271 ft Open: Jan 1 to Dec 31 Directions: Blackfoot River, Browns Lake - From Missoula, the WMA i",
+    "read": "2026-11-22",
+    "sent": "1,182.6 acres",
+    "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754191",
+    "why": "clean total"
+   },
    "ours": {
     "acres": 1184,
     "dissolved": {
@@ -3622,28 +3745,47 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok (browser)",
+     "status": "ok",
      "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754191",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 0,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 1182.6,
+     "as": "1,182.6 acres",
+     "clean": true,
+     "line": "ch. Hunting is walk-in only from parking area. Location Region 2 Latitude/Longitude: 46.91633 -113.0124 Size: 1,182.6 acres Elevation: 4,271 ft Open: Jan 1 to Dec 31 Directions: Blackfoot River, Browns Lake - From Missoula, the WMA i",
+     "total_like": true,
+     "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754191",
+     "why": "clean total"
+    },
+    {
+     "acres": 1182.6,
+     "as": "1,182.6 acres",
+     "clean": false,
+     "line": "n launch. Hunting is walk-in only from parking area. Location Region 2 Latitude/Longitude: 46.91633 -113.0124 Size: 1,182.6 acres Elevation: 4,271 ft Open: Jan 1 to Dec 31 Directions: Blackfoot River, Browns Lake - From Missoula, the WMA i",
+     "total_like": true,
+     "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754191",
+     "why": "total-looking"
+    }
+   ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-12654": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Blackfoot-Clearwater Wildlife Management Area",
    "official": null,
    "ours": {
@@ -3665,7 +3807,7 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok (browser)",
+     "status": "ok",
      "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754079",
      "why": "the park's page (data/parkinfo)"
     }
@@ -3684,11 +3826,19 @@
    "verdict": "no size on page"
   },
   "US-12655": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Marshall Creek Wildlife Management Area",
-   "official": null,
+   "official": {
+    "acres": 24798.1,
+    "as": "24,798.1 acres",
+    "clean": true,
+    "line": "e permits are available by calling 542-5500). Location Region 2 Latitude/Longitude: 47.24446 -113.57587 Size: 24,798.1 acres Elevation: 4,244 ft Open: Jan 1 to Dec 31 Directions: Located in Missoula county, about 6 miles NW of Seeley",
+    "read": "2026-11-22",
+    "sent": "24,798.1 acres",
+    "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754674",
+    "why": "clean total"
+   },
    "ours": {
     "acres": 24672,
     "dissolved": {
@@ -3724,30 +3874,58 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok (browser)",
+     "status": "ok",
      "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754674",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 1,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 24798.1,
+     "as": "24,798.1 acres",
+     "clean": true,
+     "line": "e permits are available by calling 542-5500). Location Region 2 Latitude/Longitude: 47.24446 -113.57587 Size: 24,798.1 acres Elevation: 4,244 ft Open: Jan 1 to Dec 31 Directions: Located in Missoula county, about 6 miles NW of Seeley",
+     "total_like": true,
+     "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754674",
+     "why": "clean total"
+    },
+    {
+     "acres": 24798.1,
+     "as": "24,798.1 acres",
+     "clean": false,
+     "line": "ial-use permits are available by calling 542-5500). Location Region 2 Latitude/Longitude: 47.24446 -113.57587 Size: 24,798.1 acres Elevation: 4,244 ft Open: Jan 1 to Dec 31 Directions: Located in Missoula county, about 6 miles NW of Seeley",
+     "total_like": false,
+     "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39754674",
+     "why": "no total words near it"
+    }
+   ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-12656": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Kootenai Woods Ranch Wildlife Management Area",
-   "official": null,
+   "official": {
+    "acres": 1484.1,
+    "as": "1,484.1 acres",
+    "clean": true,
+    "line": "horse only. Several roads traverse the area. Location Region 1 Latitude/Longitude: 48.98282 -115.03592 Size: 1,484.1 acres Elevation: 3,616 ft Open: May 15 to Nov 30 Directions: From Eureka Montana, head north on US- 93 for approxim",
+    "read": "2026-11-22",
+    "sent": "1,484.1 acres",
+    "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753947",
+    "why": "clean total"
+   },
    "ours": {
     "acres": 1484,
     "dissolved": {
@@ -3775,30 +3953,58 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok (browser)",
+     "status": "ok",
      "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753947",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 0,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 1484.1,
+     "as": "1,484.1 acres",
+     "clean": true,
+     "line": "horse only. Several roads traverse the area. Location Region 1 Latitude/Longitude: 48.98282 -115.03592 Size: 1,484.1 acres Elevation: 3,616 ft Open: May 15 to Nov 30 Directions: From Eureka Montana, head north on US- 93 for approxim",
+     "total_like": true,
+     "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753947",
+     "why": "clean total"
+    },
+    {
+     "acres": 1484.1,
+     "as": "1,484.1 acres",
+     "clean": false,
+     "line": "oot or horse only. Several roads traverse the area. Location Region 1 Latitude/Longitude: 48.98282 -115.03592 Size: 1,484.1 acres Elevation: 3,616 ft Open: May 15 to Nov 30 Directions: From Eureka Montana, head north on US- 93 for approxim",
+     "total_like": false,
+     "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753947",
+     "why": "no total words near it"
+    }
+   ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-12657": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Sun River Wildlife Management Area",
-   "official": null,
+   "official": {
+    "acres": 19744.6,
+    "as": "19,744.6 acres",
+    "clean": true,
+    "line": "agement Restriction Commercial use prohibited Location Region 4 Latitude/Longitude: 47.58335 -112.64218 Size: 19,744.6 acres Elevation: 4,962 ft Open: May 15 to Dec 1 Directions: In northern Lewis and Clark County, approximately 9 mil",
+    "read": "2026-11-22",
+    "sent": "19,744.6 acres",
+    "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753612",
+    "why": "clean total"
+   },
    "ours": {
     "acres": 19767,
     "dissolved": {
@@ -3826,23 +4032,43 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok (browser)",
+     "status": "ok",
      "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753612",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 0,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 19744.6,
+     "as": "19,744.6 acres",
+     "clean": true,
+     "line": "agement Restriction Commercial use prohibited Location Region 4 Latitude/Longitude: 47.58335 -112.64218 Size: 19,744.6 acres Elevation: 4,962 ft Open: May 15 to Dec 1 Directions: In northern Lewis and Clark County, approximately 9 mil",
+     "total_like": true,
+     "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753612",
+     "why": "clean total"
+    },
+    {
+     "acres": 19744.6,
+     "as": "19,744.6 acres",
+     "clean": false,
+     "line": "ns Management Restriction Commercial use prohibited Location Region 4 Latitude/Longitude: 47.58335 -112.64218 Size: 19,744.6 acres Elevation: 4,962 ft Open: May 15 to Dec 1 Directions: In northern Lewis and Clark County, approximately 9 mil",
+     "total_like": false,
+     "url": "https://myfwp.mt.gov/fwpPub/landsMgmt/siteDetail.action?lmsId=39753612",
+     "why": "no total words near it"
+    }
+   ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-12658": {
    "checked": "2026-11-09",
@@ -5299,11 +5525,20 @@
    "verdict": "off"
   },
   "US-12849": {
-   "checked": "2026-11-09",
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 74 aC, no total words near it)",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Bynum Reservoir State Fish and Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 74.0,
+    "as": "74 aC",
+    "clean": false,
+    "line": "jiG/YzXSzPj6cf3kX1uf1X/8ABPT/AJMr+HP/AGCV/wDQmr+Z/wD4OLv+TlvCf/YJf+a1+E+H/wDyUlb/ALe/Nn6NxN/yKqfyP1A/Zo17TrL9l74aC+vTLGnhPTT5R52f6Mma82/ak+OdnL+zl8RLCLRbyK1uPDl/DBeNb4UlrdwOa/e1J2sj82cEtWfNv/Btv/yNnxD/AOvSP/0Ja/Zb/gr5/wAo/vH",
+    "read": "2026-11-22",
+    "sent": "tZBEZEjVXyxG54hkIRhu2CR6vhvkNTCUJYvFU179nSl5HFxXmUK9RUKMn7uk0f1I+DfBHhP4NeBJbC3sdK8OWVw7Ty2unWaWys5ABYqgALEKoz6ADtX4If8FnddstasvhiLFkeGM6kMq2Tz9m6/lX6jiG/YzXSzPj6cf3kX1uf1X/8ABPT/AJMr+HP/AGCV/wDQmr+Z/wD4OLv+TlvCf/YJf+a1+E+H/wDyUlb/ALe/Nn6NxN/yKqfyP1A/Zo17TrL9l74aC+vTLGnhPTT5R52f6Mma82/ak+OdnL+zl8RLC",
+    "url": "https://myfwp.mt.gov/fishMT/fas/39753684",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 287,
     "dissolved": {
@@ -5331,30 +5566,113 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok (browser)",
+     "status": "ok",
      "url": "https://myfwp.mt.gov/fishMT/fas/39753684",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 288,
+   "same_agency": false,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 8.0,
+     "as": "8 AC",
+     "clean": false,
+     "line": "frsxlDAHOa+ZfGXgptRnJcAryykdjXbh6ns5XOStHnVjyu68MrZkgw7geOnSsKbR7eYMXiBbryOa9WNVy2OGVPl3RhXHgzTrtDmAqTzw3Q1y9/8AC+CTJjyo966IV5RephOip7GFL8JS52qwY9cZzVGT4Z3NrIFxk+1dCxSZg8K1qjGu/BrQodykkdPSuel0ZQTv+QDk7u1axqcxnOny7mCbdWUMkW5",
+     "total_like": false,
+     "url": "https://myfwp.mt.gov/fishMT/fas/39753684",
+     "why": "no total words near it"
+    },
+    {
+     "acres": 29.0,
+     "as": "29 Ac",
+     "clean": false,
+     "line": "Yr3pNye5Ksa0niINGEDIQM4XOAD9Kbba6IncOI2JGCyLt/CktC0aX9uq+7fJtDDCjPQVINSXYxMw2jsc5obZSjcq/2t3MiqpGf8mpRqiCTcZFJ29Ac/8A6qlopKwkGoiZiRIgxk4YZzTROsqEglgaQmkTbEl8tQVVwuCT71C9ou8low6hcgg96aYrFUxKFJIxiqq2SXLkkkgD161SBitp4kCIhyuTkE9",
+     "total_like": false,
+     "url": "https://myfwp.mt.gov/fishMT/fas/39753684",
+     "why": "no total words near it"
+    },
+    {
+     "acres": 8.0,
+     "as": "8 AC",
+     "clean": false,
+     "line": "TS11nTLRAY4kjG70xk9Bmvkv4l/tXRfGbxjFo/gPwhBpVvDE0kcCOMyEDqcelK7vYLJO56B8FfB/ir4n+EprvUbu2a2QskjLhPK55571xmiL4f8AC/iueCw0u78V3FlL88nlNIoJPP1qktdBXuT+Pf2gPDkPjXzI9OudJmSLbJbC1OIyevI4Fee+HfjdbeKLfVriLR/7XsVj2WKzLtCyA9TVOMmCskd",
+     "total_like": false,
+     "url": "https://myfwp.mt.gov/fishMT/fas/39753684",
+     "why": "no total words near it"
+    },
+    {
+     "acres": 1.0,
+     "as": "1 AC",
+     "clean": false,
+     "line": "QRF1HLEdBWePhfdkqXChOn3sAV8J7M/RVUNL/AIRmTyzHDOUYHBxyOKqwfD7UNRugHkMgB+UkYzUqm2JTS3PQNN+ElxDAZZMORngHr+FQaX8HF1AC/lfytpI8ndVqi0J1LnI+J/h61xdqLa0W5K/KZCMbKv6N8IvPh8uY4bI3YHShUmLnLbfCmG31rZGCqBcBietS3fwbt5XdpmBU8nNWqdg5yS0+El",
+     "total_like": false,
+     "url": "https://myfwp.mt.gov/fishMT/fas/39753684",
+     "why": "a tiny number without size wording"
+    },
+    {
+     "acres": 3.0,
+     "as": "3 AC",
+     "clean": false,
+     "line": "0966uy1CXRrreke9fXZ0A70mxI9IsfGNneQjzomklDfwR8Yrp38VxpEvlwlh/d4GBRqU0jJm10ySHEKgdQrH+tYk0/nOrt5IDfQ4ptiSs9CG6S3AC+bBGirjhcc1nwavp+nzcRxTuchi54H0FEWDIrjxbb20bFWRWJxjpmqUPiuOXcWYLu4PtVN2J5TNuNVs45Rvm+Yk8AdqG8QW0MbRpJK4Y9SegpX",
+     "total_like": false,
+     "url": "https://myfwp.mt.gov/fishMT/fas/39753684",
+     "why": "a tiny number without size wording"
+    },
+    {
+     "acres": 3.0,
+     "as": "3 aC",
+     "clean": false,
+     "line": "i0tjJk8JRw3LRmQSHOfkIIJq5Y6HDYndJcxK2SfkB6Ukwsx8zxeWzIUB7lh+tYOn3cWn30gLMHYZOVOMfWncZsf8JPZvE8UaNKSAWZo8bT6A1i3aC+gI81Yju6gDOKdxuzGf2fY27OTLk9AWGM1AYbMpuSTeM4bI6E9qES0Y2uRwLHuVTjAAJ7ViaHocniTUvs8MTSPtLHjoAMk1M5cquCXQqXF3btI",
+     "total_like": false,
+     "url": "https://myfwp.mt.gov/fishMT/fas/39753684",
+     "why": "a tiny number without size wording"
+    },
+    {
+     "acres": 74.0,
+     "as": "74 aC",
+     "clean": false,
+     "line": "jiG/YzXSzPj6cf3kX1uf1X/8ABPT/AJMr+HP/AGCV/wDQmr+Z/wD4OLv+TlvCf/YJf+a1+E+H/wDyUlb/ALe/Nn6NxN/yKqfyP1A/Zo17TrL9l74aC+vTLGnhPTT5R52f6Mma82/ak+OdnL+zl8RLCLRbyK1uPDl/DBeNb4UlrdwOa/e1J2sj82cEtWfNv/Btv/yNnxD/AOvSP/0Ja/Zb/gr5/wAo/vH",
+     "total_like": false,
+     "url": "https://myfwp.mt.gov/fishMT/fas/39753684",
+     "why": "no total words near it"
+    },
+    {
+     "acres": 8.0,
+     "as": "8 ac",
+     "clean": false,
+     "line": "gfKo7de5rkPiNplpfa08tvA9vBPh7dGHKr/WmpNSHbqZng34q698OZbuz0+9kjUZUorZ4Ne1fs1395rf7Q/hPXNXuDLbw3xMzyNgRjHp6VU0o+8ac/N7p/She/t6+ANKsdQDhneNCsIjlGJCPbtUXw2+NfhzWNOh1W+1SCFpMsy+YMkHsPwqYVDqVKyVjxL9pX9p7TfFkUOkeFr4w27NsnWM8sOnatG",
+     "total_like": false,
+     "url": "https://myfwp.mt.gov/fishMT/fas/39753684",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Fish and Wildlife Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-12850": {
-   "checked": "2026-11-09",
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 469 ac, no total words near it)",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Captain Clark State Fish and Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 469.0,
+    "as": "469 ac",
+    "clean": false,
+    "line": "yCeHB6FR0rthBODk2dUGprU6PT9L/tW0MblVLo08B/9CZV9Perlii6DFDBFfLK0ciykRyYVc/eB9OKZo3h6+0DxFZ3twv9oXM6mBTGhKJD/FkZ469ac/hQaTHdiW0jlmTMiyY27ee/f8a5G1ubNW0RmzeINP0a/FnZKbi1tjLO11CzFoi5+6O3rxj611t1aeHoP7MuJft80tupe3eLEv2csMnA/vVxt14",
+    "read": "2026-11-22",
+    "sent": "2ZPDLFK8JwVLq2QcDp9PWsOdS2Raqcq0N/y50mEK397aToxwJV37SfXPAptxrd5KZreWeNpIkDfaYbRPujvg9TVDxjr83hPQ7TxFd3DXc2pXQhe1ZgAXHTI7D8ayvAFrrXiuG81rVLaaO2RjHBaspjyCeHB6FR0rthBODk2dUGprU6PT9L/tW0MblVLo08B/9CZV9Perlii6DFDBFfLK0ciykRyYVc/eB9OKZo3h6+0DxFZ3twv9oXM6mBTGhKJD/FkZ469ac/hQaTHdiW0jlmTMiyY27ee/f8a5G1ubNW0R",
+    "url": "https://myfwp.mt.gov/fishMT/fas/39753836",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 150,
     "dissolved": {
@@ -5382,30 +5700,112 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok (browser)",
+     "status": "ok",
      "url": "https://myfwp.mt.gov/fishMT/fas/39753836",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 68,
+   "same_agency": false,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 9.0,
+     "as": "9 Ac",
+     "clean": false,
+     "line": "+NICTHvzTs5B9eKiyB0yKfkA8EkY9KTGh/OR6elSKd3QVCQCB3pwbAzU2uh3sx4xzkH2oYBVJyBTQefXmlbOPxxU2ZSY5Rn6UmCOtJnBwMnjpS9Ac/N7UNWFdMQcL1oI9TikOCD1/CgYHB5x3FO4NDgSP8A61Gc89+9NZsnjI/ClyFJJHU5AxSAenJwelI3GDx16ZpuaMgEjOKLFJjt+OKjLH1PFHU9",
+     "total_like": false,
+     "url": "https://myfwp.mt.gov/fishMT/fas/39753836",
+     "why": "no total words near it"
+    },
+    {
+     "acres": 2.0,
+     "as": "2 aC",
+     "clean": false,
+     "line": "NDgD6U3dg/SkJGaAHl8f8A1hTWfPtSAAfT2oyKADB75/GjHvQXApjSYzQA/OKRpgtRO+71/CoznPP4UASGYk/4U3zScjvTDyKbnc31qrATeaeO2aC+enNRBcDpz70v0496LASqc/WlJyKjB5GMk08MCORj61IDwOeeaD144plOGAeaAAIWGOwp6x+9IAD0PNPVgozmgBPKIJpuwrxjpUvmjHQn6U0y4",
+     "total_like": false,
+     "url": "https://myfwp.mt.gov/fishMT/fas/39753836",
+     "why": "a tiny number without size wording"
+    },
+    {
+     "acres": 3.0,
+     "as": "3 ac",
+     "clean": false,
+     "line": "qTr2zTEKSOw4Hekz+tGOKM8dKBhmkz7EfhRk56UnTr1pCAnB6/jTdw57n0FLk4HFJgiqEFNbJAOOadjqBSMCPpTuKzIyf0600rnqOfapCu4fUU3ac/WqTAjwM9M54JFIeWx2qTbgnPFIV5Geo6U72ER556HFIQCOue3FP2k/SkI7YH8qe4kMIycEfhQe/FPC4xz0o25HI5pARjnHtSlc4z0p+w57fjS",
+     "total_like": false,
+     "url": "https://myfwp.mt.gov/fishMT/fas/39753836",
+     "why": "a tiny number without size wording"
+    },
+    {
+     "acres": 56.0,
+     "as": "56 Ac",
+     "clean": false,
+     "line": "fxoODzSN1AByAPSp0ew9RSPlI700sGyPbvSZBOAcnpSPnkdqqy6iuIzEHpn8KeSXHTp7U1RjPzHOO9L/EQegHak2mOzQBMHA6DrgUoOT0OMdaC56Ac+ppoY9qSv1DRbDlPA9aXOAc9fWjd8woByTQwQ7aTn8DxTWHGQMHNAOAT39qUkFeM1OxejELYbrwOOlAxjrz2pm7BBB6/nQCR6VdtCLispOaQps",
+     "total_like": false,
+     "url": "https://myfwp.mt.gov/fishMT/fas/39753836",
+     "why": "no total words near it"
+    },
+    {
+     "acres": 43.0,
+     "as": "43 Ac",
+     "clean": false,
+     "line": "v/wCqs+48F3Fw/mR3GQeCnetFViClFnPNYmKBXGDnByOcU2QsigAlj64rqG8JzJAgUqyIvPzcj8O5q63gzCQfvElVMjIGM0e1h1Y9DkQpito5l43Ac/WmLclbRZVyG38EH0612c/hJTZLajKTIQCaj/4RAW9nFCuHKPuYgY3DvxSjOPRiumc3ZSLJFIm0+dOfTAHrim3NuEMSk7xuAK/jXfaX4ft97AQ",
+     "total_like": false,
+     "url": "https://myfwp.mt.gov/fishMT/fas/39753836",
+     "why": "no total words near it"
+    },
+    {
+     "acres": 8.0,
+     "as": "8 ac",
+     "clean": false,
+     "line": "S29wqKzvKx7huhFUlS5tbya4Mk2JiAkUhBVfcAdKuDULhFHmQssOfvNxz9P60uoeSM648NxXk4Zprm3ctuLQyEZ9sdMfStVNL8sqpdm2fKoZcD8ac+p28ihfK3SHoS2B78CrVuHlgKAmRFGSrHPFVfuR1PGfF19Na21tZ2LusGMMcY809xj0HT8KradHewwxXt0be1RspEAd0hx1O3t7E/hXR6tpqWd",
+     "total_like": false,
+     "url": "https://myfwp.mt.gov/fishMT/fas/39753836",
+     "why": "no total words near it"
+    },
+    {
+     "acres": 6.0,
+     "as": "6 Ac",
+     "clean": false,
+     "line": "B+8eeRTJ70Cy3vxKmRnHAGeKy7yeV4F8lfmfDvg+h5+gxUxuXKVmUY4ik73EzhY0BAx69ua0YfNV7CZo8ebEZSx5KHOD+NPF0kumTp/BdfusY+6Ac/icjvSTTPfW1iUX93AHg3Djcc5yf1q/ee5EtFcauJZEJGEDBj789M9auM/7ychGOR+7HTnPP4e9Vfs222SQMc7vu9j6VY0otJ53mMPMAx+ORmp",
+     "total_like": false,
+     "url": "https://myfwp.mt.gov/fishMT/fas/39753836",
+     "why": "no total words near it"
+    },
+    {
+     "acres": 10.0,
+     "as": "10 AC",
+     "clean": false,
+     "line": "SQm6/sovAyFl3txlsKeB+laK6a91NceZ8ombdskbGxgOOT0qS/jK2MUzDzLjCgxRtwvOOT+tctquqXEl/PBD86xkKQTgE9+vauaTu7I3WhduLa10AC/eeO8mQkAxncFJ6Csa28V33iHxPaC9uJLiUycFzgKAOABwABUg1V3lSJ2BSbiVE6Y6UmneFjY+Io3iy8RJXdnOz3q43XxE8z2RbvYLiQRchiNy",
+     "total_like": false,
+     "url": "https://myfwp.mt.gov/fishMT/fas/39753836",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Fish and Wildlife Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-12851": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Castle Rock State Fish and Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 80.6,
+    "as": "80.6 acres",
+    "clean": true,
+    "line": "ewalk to latrine. Location Region 5 Waterbody: Stillwater River Latitude/Longitude: 45.47303 -109.74104 Size: 80.6 acres Elevation: 4,681 ft Open: Jan 1 to Dec 31 Directions: 15 miles west of Absarokee on Hwy 420. Location Map Con",
+    "read": "2026-11-22",
+    "sent": "80.6 acres",
+    "url": "https://myfwp.mt.gov/fishMT/fas/39753838",
+    "why": "clean total"
+   },
    "ours": {
     "acres": 81,
     "dissolved": {
@@ -5433,30 +5833,59 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok (browser)",
+     "status": "ok",
      "url": "https://myfwp.mt.gov/fishMT/fas/39753838",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 0,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 80.6,
+     "as": "80.6 acres",
+     "clean": true,
+     "line": "ewalk to latrine. Location Region 5 Waterbody: Stillwater River Latitude/Longitude: 45.47303 -109.74104 Size: 80.6 acres Elevation: 4,681 ft Open: Jan 1 to Dec 31 Directions: 15 miles west of Absarokee on Hwy 420. Location Map Con",
+     "total_like": true,
+     "url": "https://myfwp.mt.gov/fishMT/fas/39753838",
+     "why": "clean total"
+    },
+    {
+     "acres": 80.6,
+     "as": "80.6 acres",
+     "clean": false,
+     "line": "nd sidewalk to latrine. Location Region 5 Waterbody: Stillwater River Latitude/Longitude: 45.47303 -109.74104 Size: 80.6 acres Elevation: 4,681 ft Open: Jan 1 to Dec 31 Directions: 15 miles west of Absarokee on Hwy 420. Location Map Con",
+     "total_like": false,
+     "url": "https://myfwp.mt.gov/fishMT/fas/39753838",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Fish and Wildlife Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-12852": {
-   "checked": "2026-11-09",
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 9 Ac, no total words near it)",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Chief Looking Glass State Fish and Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 9.0,
+    "as": "9 Ac",
+    "clean": false,
+    "line": "rsXKxMT5kqrnb26VoX0Npp+s6QsMsd6Lbc97DfIWtpYSeCnQkHOSvqOtYVjq1jpcU0lwZGDxumyMZJJGBx+tZlnYalrt7aWt68kcrR+YiSPkyR9Ac+grku+hT1R1Gh+ILuPxPq0HhXV4NO+zXjT2k5h+Qq45WNSOBwRj061g+Kr3Utd1KTU9W1Fr+4uhskmWJU3AcDA6YqxBM3hnV4b7SijNASirNDm",
+    "read": "2026-11-22",
+    "sent": "f8IHq8WktNb3k8OJxf2RBhkiPIU+p/lTNVUTarZzKqokscUiEAbGBHzN+efxrr/jb4Db4e63p1lJfPqc0gw/m8uihflUnGMAEH6VyN9ZWWm3Vqbe7S6tpYVMzpkCCf8A55HPAOOeKirFx16iLejBTqrsXKxMT5kqrnb26VoX0Npp+s6QsMsd6Lbc97DfIWtpYSeCnQkHOSvqOtYVjq1jpcU0lwZGDxumyMZJJGBx+tZlnYalrt7aWt68kcrR+YiSPkyR9Ac+grku+hT1R1Gh+ILuPxPq0HhXV4NO+zXjT2k5",
+    "url": "https://myfwp.mt.gov/fishMT/fas/39754131",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 12,
     "dissolved": {
@@ -5486,12 +5915,13 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok (browser)",
+     "status": "ok",
      "url": "https://myfwp.mt.gov/fishMT/fas/39754131",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
+   "pct": 33,
+   "same_agency": false,
    "score": 7,
    "score_parts": {
     "name": 2,
@@ -5499,17 +5929,54 @@
     "size": 1,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 7.0,
+     "as": "7 aC",
+     "clean": false,
+     "line": "lCFwMcj36A9vWvR/C3iW08S6RbWk9x5t66HzU2kHg9T9RitakrPlXQaVjy3UtQbwb4d1c6fIb+xuYUska6lG6IgkFQvXG1s9TgCu/+Hui2eneF7aC/jgvJwDIkjgSeYmBgqT/LrXKftAeDpdSt4dQRnjtI1UOIVGQ6t8pJ7DB/TFSQfEK10HUItEaGCK1ns0QRghFjkPXJGQuM5INY8zsO1zvX8K6Wb",
+     "total_like": false,
+     "url": "https://myfwp.mt.gov/fishMT/fas/39754131",
+     "why": "no total words near it"
+    },
+    {
+     "acres": 4.0,
+     "as": "4 aC",
+     "clean": false,
+     "line": "nnOfcGoNB1fX/Fup6itsh0XRbi7SQ6dAf3lscYzG2OncgY6108zl7sNhcrvaKNrUNN0HSLrULfxnqv+kvEximBIk384DbeBjA/lXmPgNlimSaO4aC/nkIiubeTyyM5ABPT/ADivbdc+HejQWEUVsDqt1Pxcz6hGMxD3Jx71w/iL4NXnhDw/b67pk0Gp6PPKA6xRHMGDnI9eRjmiKV9QW+rNxPAMGr29",
+     "total_like": false,
+     "url": "https://myfwp.mt.gov/fishMT/fas/39754131",
+     "why": "a tiny number without size wording"
+    },
+    {
+     "acres": 9.0,
+     "as": "9 Ac",
+     "clean": false,
+     "line": "rsXKxMT5kqrnb26VoX0Npp+s6QsMsd6Lbc97DfIWtpYSeCnQkHOSvqOtYVjq1jpcU0lwZGDxumyMZJJGBx+tZlnYalrt7aWt68kcrR+YiSPkyR9Ac+grku+hT1R1Gh+ILuPxPq0HhXV4NO+zXjT2k5h+Qq45WNSOBwRj061g+Kr3Utd1KTU9W1Fr+4uhskmWJU3AcDA6YqxBM3hnV4b7SijNASirNDm",
+     "total_like": false,
+     "url": "https://myfwp.mt.gov/fishMT/fas/39754131",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Fish and Wildlife Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-12853": {
-   "checked": "2026-11-09",
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 9 Km2, no total words near it)",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Clearwater Crossing State Fish and Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 2223.9,
+    "as": "9 Km2",
+    "clean": false,
+    "line": "jOaVeT60gEJwOnFIODjv8ASl44xzz0pPz4oAcGIHByfcUYyc469sUn6YpyAnHOaQxV4HuOKliGOehHf3pgQ+hFSJGAT3pFImQZHFPxtP6UkUZA9Km2+vasmzRIjxwCelA46daeajJGfYUIYpOTUbfhx608nr2qNyOmOetNCZE/c4/GoW7jsakc9qjZuDyPrWhmyF1OCcUwjn6VMxBBGee9RDAH+FO4hh",
+    "read": "2026-11-22",
+    "sent": "/wDrUeUcAdadySv5YYnPQ0hTGOPpxVnZxkkE+1NCHP3SaLhYgKZ/zijGAQe3NTFDk8U0jHb86dxWI9oIIxz70mAM85/Cn457j3puOmKNgsMPAHr9KdnHHahgRTc4BOcdM0xDsZB7e9DZwcDJAoLEkAjOaVeT60gEJwOnFIODjv8ASl44xzz0pPz4oAcGIHByfcUYyc469sUn6YpyAnHOaQxV4HuOKliGOehHf3pgQ+hFSJGAT3pFImQZHFPxtP6UkUZA9Km2+vasmzRIjxwCelA46daeajJGfYUIYpOTUbfh",
+    "url": "https://myfwp.mt.gov/fishMT/fas/39754449",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 17,
     "dissolved": {
@@ -5539,12 +6006,13 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok (browser)",
+     "status": "ok",
      "url": "https://myfwp.mt.gov/fishMT/fas/39754449",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
+   "pct": 99,
+   "same_agency": false,
    "score": 7,
    "score_parts": {
     "name": 2,
@@ -5552,17 +6020,71 @@
     "size": 1,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 2223.9,
+     "as": "9 Km2",
+     "clean": false,
+     "line": "jOaVeT60gEJwOnFIODjv8ASl44xzz0pPz4oAcGIHByfcUYyc469sUn6YpyAnHOaQxV4HuOKliGOehHf3pgQ+hFSJGAT3pFImQZHFPxtP6UkUZA9Km2+vasmzRIjxwCelA46daeajJGfYUIYpOTUbfhx608nr2qNyOmOetNCZE/c4/GoW7jsakc9qjZuDyPrWhmyF1OCcUwjn6VMxBBGee9RDAH+FO4hh",
+     "total_like": false,
+     "url": "https://myfwp.mt.gov/fishMT/fas/39754449",
+     "why": "no total words near it"
+    },
+    {
+     "acres": 8.0,
+     "as": "8 AC",
+     "clean": false,
+     "line": "3Bx2XPrWt4eeANYaZfyIjQ3M9n5TcMVYZBx9ayfGltOz6fpc7tcXNpeh4nj/ANcsAB3E9iBxW6mnoyeXU7XxJCyeHLxo8Jd2kKI4U9QMEZ/Cuf8AC+uXc/iLTJrqQmExNGwJBRSwypB+lbd/fi/8I6xeWqrO5jEMiM3YDGT+BzXJ3kMdp4Tnks3UXVsqWw+UfMWAzj14PBqIpOViup6oF2jpkdQfUUK",
+     "total_like": false,
+     "url": "https://myfwp.mt.gov/fishMT/fas/39754449",
+     "why": "no total words near it"
+    },
+    {
+     "acres": 8.0,
+     "as": "8 AC",
+     "clean": false,
+     "line": "NpKsp8u40yNEYLk/eUDDc819f/tKw2nhf4OeItGWG6nnfSUbS9StuVMTfPJHI2drKpyQwz17V8K+FrYT6RZMUxEqKMgZI4GcCvNppOp5FJ3bO/8AC/h+TxDrdnA2snWnv50j3vuL7QRlQvcn2r9JvDXiOy0+10fwlJpd1FpFrDDYIUhdI5bo8L5jYGwdTjOeM1+f37PaC1+MvhqWCCe8Fvdi6eGCIvK",
+     "total_like": false,
+     "url": "https://myfwp.mt.gov/fishMT/fas/39754449",
+     "why": "no total words near it"
+    },
+    {
+     "acres": 4.0,
+     "as": "4 AC",
+     "clean": false,
+     "line": "J/h9aveG4IbjWrO5vFk+wpIFnaIZYIepHqazbwI9qpBInLd/SpIJbuGwCG4eODdkpXJOKvoS7G14suNOl1WWLSVeSzUnZLKuGYds1mXFsktrCk4AC/cI9Kl03UPJmW5jI3RnIJGcHtUeoazLf3zNMUclsnYoX+VczvsJu56B8O/F+q+GvCXiPTbeWFbHUyFlWQ5OQAOB9B9K4VpFS7zLHlUOBnnIrS8",
+     "total_like": false,
+     "url": "https://myfwp.mt.gov/fishMT/fas/39754449",
+     "why": "a tiny number without size wording"
+    },
+    {
+     "acres": 2.0,
+     "as": "2 aC",
+     "clean": false,
+     "line": "emF/emGTt3NAEu8ijfxUPmikMnXj8KAJ/Mx1o83GP6VXLgnr9KNwPT86ALImyaPOFViwNLnj+lAFnzRj1+tKZR0zzVTJFKW96ALIcetG8YquJO2aC/FAFjcBxRkGq4fnOaPM7daAJiR+JoODURf2o35bvQBLgA0hxzTQ4FIDnrj3oAeVBxR5Yo/izmnbc57/WgBmwdaDGMHk0/aT2+tATpxQBFsHvkU",
+     "total_like": false,
+     "url": "https://myfwp.mt.gov/fishMT/fas/39754449",
+     "why": "a tiny number without size wording"
+    }
+   ],
    "t": "State Fish and Wildlife Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-12854": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Cliff Swallow State Fish and Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 160.0,
+    "as": "160 acres",
+    "clean": true,
+    "line": "fishing platform. Location Region 5 Waterbody: Stillwater River Latitude/Longitude: 45.51492 -109.63208 Size: 160 acres Elevation: 4,392 ft Open: Jan 1 to Dec 31 Directions: 9 miles west of Absarokee on Hwy 420. Location Map Cont",
+    "read": "2026-11-22",
+    "sent": "160 acres",
+    "url": "https://myfwp.mt.gov/fishMT/fas/39753840",
+    "why": "clean total"
+   },
    "ours": {
     "acres": 160,
     "dissolved": {
@@ -5590,30 +6112,59 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok (browser)",
+     "status": "ok",
      "url": "https://myfwp.mt.gov/fishMT/fas/39753840",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 0,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 160.0,
+     "as": "160 acres",
+     "clean": true,
+     "line": "fishing platform. Location Region 5 Waterbody: Stillwater River Latitude/Longitude: 45.51492 -109.63208 Size: 160 acres Elevation: 4,392 ft Open: Jan 1 to Dec 31 Directions: 9 miles west of Absarokee on Hwy 420. Location Map Cont",
+     "total_like": true,
+     "url": "https://myfwp.mt.gov/fishMT/fas/39753840",
+     "why": "clean total"
+    },
+    {
+     "acres": 160.0,
+     "as": "160 acres",
+     "clean": false,
+     "line": "mp to fishing platform. Location Region 5 Waterbody: Stillwater River Latitude/Longitude: 45.51492 -109.63208 Size: 160 acres Elevation: 4,392 ft Open: Jan 1 to Dec 31 Directions: 9 miles west of Absarokee on Hwy 420. Location Map Cont",
+     "total_like": true,
+     "url": "https://myfwp.mt.gov/fishMT/fas/39753840",
+     "why": "total-looking"
+    }
+   ],
    "t": "State Fish and Wildlife Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-12855": {
-   "checked": "2026-11-09",
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 82 Ac, no total words near it)",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Cole Ponds State Fish and Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 82.0,
+    "as": "82 Ac",
+    "clean": false,
+    "line": "rijjj2pM8gUu3kce1IQvBH4Ug9fzpdo57d6YPbkUAPz1HfFIq4GST9KdSfd6mmMGxkDr2NHQlf8A69J+vP8Ak0MpwOPemA4+nekOcnHXoRS5oz82Ac+vFIA53e3ejbgfjQPTFA5oAD+dNwVPrT/X1pKAEzyRRwfwzS9e2Oe1L6YxQAnbHX60igjjtSn6fWmqepPTNADlGM/nR60ccDPNJwrYz/n0oAOB",
+    "read": "2026-11-22",
+    "sent": "obBx2NJ/FQLYdt56dqTovpk8UH35HSgjp1xTGJjsePelX0PI7c0bh0P0peOgPOMUAJ/FSnIHXBpAegApeDyfp9KADqo5yRSYOcYA70bsHGBS7vlz6GgBcYxjk9KMYb1/rTd/zZPAxTuM/T9KBiZJHPrijjj2pM8gUu3kce1IQvBH4Ug9fzpdo57d6YPbkUAPz1HfFIq4GST9KdSfd6mmMGxkDr2NHQlf8A69J+vP8Ak0MpwOPemA4+nekOcnHXoRS5oz82Ac+vFIA53e3ejbgfjQPTFA5oAD+dNwVPrT/X1p",
+    "url": "https://myfwp.mt.gov/fishMT/fas/39754309",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 130,
     "dissolved": {
@@ -5643,12 +6194,13 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok (browser)",
+     "status": "ok",
      "url": "https://myfwp.mt.gov/fishMT/fas/39754309",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
+   "pct": 59,
+   "same_agency": false,
    "score": 7,
    "score_parts": {
     "name": 2,
@@ -5656,17 +6208,99 @@
     "size": 1,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 50.0,
+     "as": "50 AC",
+     "clean": false,
+     "line": "1NJz9O9Ko+b685o9R7ZoGJgseB9aTaacB6Ghh+dAeYKuPrQ3IH+elIv3up4NDYx60wQbjuP60bT6/X/AApM/hTt3y460g0E/i98UY9aOKFAHIH50AC+3Wl4xjJz6UY6g9R0pNp6mgEO7YpMYXGeRR04NISaC7hzu+gyaXtwcUm40bj2FBKsHSkbBYdu1BboaXqSRQAir8w44pWPBoOQCR09qQA+nbNA9",
+     "total_like": false,
+     "url": "https://myfwp.mt.gov/fishMT/fas/39754309",
+     "why": "no total words near it"
+    },
+    {
+     "acres": 4.0,
+     "as": "4 Ac",
+     "clean": false,
+     "line": "lVfx9KfQYMpPfFIMg8/jTic+5zijhjj0pCt1E520vKjk/pSc5PHGO9KvAxnPamPoNXPQjilxk+g60be4604e9Al6CYo4OB0pefpTW646npnFIY4Ac+uKDj0pAu3PPOKOenfvQAnG0gE8UvH5UKMcfjzR0B/WmIMDp39qU/L0NIB6H6UmDSEDZ4/WlXv6d6QrRt9DigXUUt+eKPc5o6LnvSZ7e2aZWoC",
+     "total_like": false,
+     "url": "https://myfwp.mt.gov/fishMT/fas/39754309",
+     "why": "a tiny number without size wording"
+    },
+    {
+     "acres": 3.0,
+     "as": "3 ac",
+     "clean": false,
+     "line": "aDuU+v4UAJu96F7gil2/KCOtLkHP5UBvsCknJ7dqac9TS4+XAPekP6/wCeaYgXpnr6Uu0lcdCetDKMjjHejd0P+cUAIvHP4Uo+9/PNKeBjHHQU3ac/TigY4Ehh3HakYEfnSZzg9DS7gMY/GkAZAXHXj6Ui/K3NG3nPvSlTuPagBDwMk/8A1qXhe3GeKTpnIzkUZO4YHFAC4+YDoOtIRx6HvzSt7daTO",
+     "total_like": false,
+     "url": "https://myfwp.mt.gov/fishMT/fas/39754309",
+     "why": "a tiny number without size wording"
+    },
+    {
+     "acres": 82.0,
+     "as": "82 Ac",
+     "clean": false,
+     "line": "rijjj2pM8gUu3kce1IQvBH4Ug9fzpdo57d6YPbkUAPz1HfFIq4GST9KdSfd6mmMGxkDr2NHQlf8A69J+vP8Ak0MpwOPemA4+nekOcnHXoRS5oz82Ac+vFIA53e3ejbgfjQPTFA5oAD+dNwVPrT/X1pKAEzyRRwfwzS9e2Oe1L6YxQAnbHX60igjjtSn6fWmqepPTNADlGM/nR60ccDPNJwrYz/n0oAOB",
+     "total_like": false,
+     "url": "https://myfwp.mt.gov/fishMT/fas/39754309",
+     "why": "no total words near it"
+    },
+    {
+     "acres": 50.0,
+     "as": "50 AC",
+     "clean": false,
+     "line": "jdzyOeg4oEDcj9TRyuO9OppyM56YxQAnO0EUDPBp23getHHp70AG2jdt/D2pOecDApfw4oBDBjjt6072o49vxo/i4H0oExOODjvRyD70vXij7v50AC/r3pB8nJ6dqXOevSkYkN0x2pDQvrihj/KkAK8ZwM0NnHtmmIOPoaGUY/Glo5pCG4Pbp1oXqO+e9G7a23qSOaXI4yenSgq4oXHNNK+1O560Bs59",
+     "total_like": false,
+     "url": "https://myfwp.mt.gov/fishMT/fas/39754309",
+     "why": "no total words near it"
+    },
+    {
+     "acres": 1.0,
+     "as": "1 AC",
+     "clean": false,
+     "line": "5pCD7tNb160845H40bT07UFCfdzxQvTHemn+vrS8UwFxj3oz+fSkUmgsfpQA7OKTPAo5bqOKTBzQA5gaacigNznrxQSTigBeT1PNGz3pD2pfU+1AC/dxSbuv8sU7gj8KTdt9qQaicHvS/Nz2oHc0D73pQAnI9zQc9O9DL/ntSr6flTAQ54opcdqTB3e1ACkEdaFzuJ7UcmlyeR7UAL6YpD+tH3lyKOR",
+     "total_like": false,
+     "url": "https://myfwp.mt.gov/fishMT/fas/39754309",
+     "why": "a tiny number without size wording"
+    },
+    {
+     "acres": 9.0,
+     "as": "9 AC",
+     "clean": false,
+     "line": "o7mgUlMBcnvkGgUnp3pf4aQBS03nJ9qdu9uaYCsvrx6c0368UpyO/FHVun1pIAHFLytIOvHNJ9MimAu49CKOlL6dxSd+OnSgYUY4oHPHSjGOAe9AC/dNLxzjJpvqaXJ6elAhMEdad6c5HQ0buopeR7+1IBNuMgDPP407HXIx+GKbtPWkwW6n2oAVs4zn26UKeCOvtQD1FLu9B26UAA+U4xS9eD9elGC",
+     "total_like": false,
+     "url": "https://myfwp.mt.gov/fishMT/fas/39754309",
+     "why": "no total words near it"
+    },
+    {
+     "acres": 7.0,
+     "as": "7 aC",
+     "clean": false,
+     "line": "pwhXnLAcAj64rhI9R8eeG/id4P8Z/D2zTU/FWmu0UFiy71li2MrxSrlcoUJ5yMexr0fxBo9td+B0uzOIJ0uozDOeQp3YORnkYJFYbW2tfB34va7aC/+zatockd5ZXUQ3Bi0XC46FTz94dzSloy6lONWDpt7ln9qf8Aa0uvjl+z7o0up6Inhrxna6sba602OXzotoBXdnAIHXg5IIAyea+afCvi7TfC/",
+     "total_like": false,
+     "url": "https://myfwp.mt.gov/fishMT/fas/39754309",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Fish and Wildlife Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-12856": {
-   "checked": "2026-11-09",
+   "cause": "agency bigger: our outline may miss a tract",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Corrick’s River Bend State Fish and Wildlife Area",
-   "official": null,
+   "official": {
+    "acres": 31.9,
+    "as": "31.9 acres",
+    "clean": true,
+    "line": "River Previous Next Location Region 2 Waterbody: Blackfoot River Latitude/Longitude: 46.95138 -113.5385 Size: 31.9 acres Elevation: 3,582 ft Open: Jan 1 to Dec 31 Directions: 25.5 miles east of Bonner on Hwy 200, turn west (just b",
+    "read": "2026-11-22",
+    "sent": "31.9 acres",
+    "url": "https://myfwp.mt.gov/fishMT/fas/39754247",
+    "why": "clean total"
+   },
    "ours": {
     "acres": 26,
     "dissolved": {
@@ -5696,28 +6330,47 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok (browser)",
+     "status": "ok",
      "url": "https://myfwp.mt.gov/fishMT/fas/39754247",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 18,
+   "same_agency": false,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 0,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 31.9,
+     "as": "31.9 acres",
+     "clean": true,
+     "line": "River Previous Next Location Region 2 Waterbody: Blackfoot River Latitude/Longitude: 46.95138 -113.5385 Size: 31.9 acres Elevation: 3,582 ft Open: Jan 1 to Dec 31 Directions: 25.5 miles east of Bonner on Hwy 200, turn west (just b",
+     "total_like": true,
+     "url": "https://myfwp.mt.gov/fishMT/fas/39754247",
+     "why": "clean total"
+    },
+    {
+     "acres": 31.9,
+     "as": "31.9 acres",
+     "clean": false,
+     "line": "kfoot River Previous Next Location Region 2 Waterbody: Blackfoot River Latitude/Longitude: 46.95138 -113.5385 Size: 31.9 acres Elevation: 3,582 ft Open: Jan 1 to Dec 31 Directions: 25.5 miles east of Bonner on Hwy 200, turn west (just b",
+     "total_like": true,
+     "url": "https://myfwp.mt.gov/fishMT/fas/39754247",
+     "why": "total-looking"
+    }
+   ],
    "t": "State Fish and Wildlife Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "off"
   },
   "US-12857": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Craig State Fish and Wildlife Area",
    "official": null,
    "ours": {
@@ -5749,16 +6402,16 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok (browser)",
+     "status": "ok",
      "url": "https://myfwp.mt.gov/fishMT/fas/39753704",
      "why": "the park's page (data/parkinfo)"
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -5768,9 +6421,8 @@
    "verdict": "no size on page"
   },
   "US-12860": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Dailey Lake State Fish and Wildlife Area",
    "official": null,
    "ours": {
@@ -5809,7 +6461,7 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok (browser)",
+     "status": "ok",
      "url": "https://myfwp.mt.gov/fishMT/fas/39753414",
      "why": "the park's page (data/parkinfo)"
     }
@@ -13496,7 +14148,7 @@
    "handover": [],
    "last_read_failed": "2026-11-22",
    "n": "Caribou-Targhee National Forest",
-   "note": "whole park compared (POTA lists it in 4 states: {'US-UT': 302276, 'US-WY': 302612, 'US-ID': 2845501, 'US-MT': 302276})",
+   "note": "whole park compared (POTA lists it in 4 states: {'US-UT': 302276, 'US-MT': 302276, 'US-ID': 2845501, 'US-WY': 302612})",
    "ours": {
     "acres": 3752665,
     "acres_by_state": {
@@ -13524,9 +14176,9 @@
     "src": "USGS PAD-US",
     "states": [
      "US-UT",
-     "US-WY",
+     "US-MT",
      "US-ID",
-     "US-MT"
+     "US-WY"
     ],
     "unknown_pieces": 0,
     "whole_park": true
@@ -13804,8 +14456,8 @@
     "pin": "inside",
     "src": "USGS PAD-US",
     "states": [
-     "US-SD",
-     "US-MT"
+     "US-MT",
+     "US-SD"
     ],
     "unknown_pieces": 0,
     "whole_park": true
@@ -15331,7 +15983,7 @@
    "handover": [],
    "last_read_failed": "2026-11-22",
    "n": "Absaroka-Beartooth Wilderness Area",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-WY': 941247, 'US-MT': 941247})",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-MT': 941247, 'US-WY': 941247})",
    "official": null,
    "ours": {
     "acres": 1882494,
@@ -15360,8 +16012,8 @@
     "pin": "inside",
     "src": "",
     "states": [
-     "US-WY",
-     "US-MT"
+     "US-MT",
+     "US-WY"
     ],
     "unknown_pieces": 0,
     "whole_park": true
@@ -15568,7 +16220,7 @@
   },
   "US-7990": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lee Metcalf BLM Wilderness Area",
    "official": {
@@ -15576,7 +16228,7 @@
     "as": "6,347 acre",
     "clean": false,
     "line": "nits of the Lee Metcalf Wilderness. The Bear Trap is the first wilderness areas to be managed by the BLM. The 6,347-acre area offers beautiful wilderness scenery plus exciting whitewater rafting featuring the famous Class IV - V K",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The 6,347-acre area offers beautiful wilderness scenery plus exciting whitewater rafting featuring the famous Class IV - V Kitchen Sink rapid.",
     "url": "https://www.blm.gov/visit/lee-metcalf-wilderness",
     "why": "total-looking"
@@ -15638,8 +16290,9 @@
    "cause": "whole park compared (POTA lists it in 2 states: {'US-ID': 1348689, 'US-MT': 1348689})",
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Selway-Bitterroot Wilderness Area",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-ID': 1348689, 'US-MT': 1348689})",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-MT': 1348689, 'US-ID': 1348689})",
    "official": {
     "acres": 206053.0,
     "as": "206,053 acres",
@@ -15677,8 +16330,8 @@
     "pin": "inside",
     "src": "",
     "states": [
-     "US-ID",
-     "US-MT"
+     "US-MT",
+     "US-ID"
     ],
     "unknown_pieces": 0,
     "whole_park": true
@@ -15717,7 +16370,7 @@
   },
   "US-7996": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Black Coulee National Wildlife Refuge",
    "official": null,
@@ -15805,7 +16458,7 @@
   },
   "US-7998": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Hailstone National Wildlife Refuge",
    "official": {
@@ -15813,13 +16466,13 @@
     "as": "160 acre",
     "clean": true,
     "line": "Contact Us Visit Us Activities Rules & Policies Library Map About Us Hailstone National Wildlife Refuge is a 160-acre Refuge located in Stillwater County roughly 5-miles east of Rapelje, Montana. Surrounded on three sides by th",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Hailstone National Wildlife Refuge is a 160-acre Refuge located in Stillwater County roughly 5-miles east of Rapelje, Montana.",
     "url": "https://www.fws.gov/refuge/hailstone/about-us",
     "why": "clean total"
    },
    "ours": {
-    "acres": 983,
+    "acres": 895,
     "family_fold": "layers {'sgmtd': 895, 'padus': 312}: one land in 2 layers, the sgmtd copy used (312 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -15852,7 +16505,7 @@
      "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
     }
    ],
-   "pct": 514,
+   "pct": 459,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -15941,7 +16594,7 @@
   },
   "US-7999": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Hewitt Lake National Wildlife Refuge",
    "official": null,
@@ -15965,7 +16618,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -15998,10 +16651,10 @@
     }
    ],
    "pct": null,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -16048,7 +16701,8 @@
    "verdict": "unsure"
   },
   "US-8001": {
-   "checked": "2026-11-09",
+   "cause": "no page could be read: HTTP 404",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lamesteer National Wildlife Refuge",
    "official": null,
@@ -16067,35 +16721,40 @@
     "src": "",
     "unknown_pieces": 0
    },
-   "pages": [],
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/mountain-prairie/refuges/mdl.php",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
    "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
    "sizes": [],
    "t": "National Wildlife Refuge",
    "ver": 15,
-   "verdict": "no official page on file"
+   "verdict": "not read"
   },
   "US-8002": {
-   "checked": "2026-11-09",
-   "handover": [
-    {
-     "date_hint": null,
-     "kind": "managed by",
-     "line": "urces in the Ninepipe Reservoir. Other Facilities in this Complex Ninepipe National Wildlife Refuge is managed by the Northwest Montana Wetland Management District as part of the Western Montana National Wildlife Refuge Complex. A Complex is an administrative grouping of tw",
-     "owner_now": "Northwest Montana Wetland Management District",
-     "src": "https://www.fws.gov/refuge/ninepipe/about-us",
-     "why": "about / history page of the park's site"
-    }
-   ],
+   "checked": "2026-11-22",
+   "handover": [],
    "n": "Ninepipe National Wildlife Refuge",
    "official": {
     "acres": 2062.0,
     "as": "2,062 acres",
     "clean": false,
-    "line": "efuge at its center, a circle of protected habitat for wildlife spreads into the Mission Valley. The Refuge’s 2,062 acres is surrounded by 3,420 acres of Montana State Wildlife Management Areas, approximately 3,000 acres of Confede",
-    "read": "2026-11-09",
-    "sent": "The Refuge’s 2,062 acres is surrounded by 3,420 acres of Montana State Wildlife Management Areas, approximately 3,000 acres of Confederated Salish and Kootenai Tribal lands, 3,160 acres of Federal Waterfowl Production Areas and 6,400 acres of Fish and Wildlife Service conservation ea",
-    "url": "https://www.fws.gov/refuge/ninepipe/about-us",
-    "why": "total-looking"
+    "line": "udy of natural resources. Projects & Research Our Species About Ninepipe National Wildlife Refuge consists of 2,062 acres of protected habitat at the center of the Mission Valley, surrounded by thousands of additional acres of stat",
+    "read": "2026-11-22",
+    "sent": "Ninepipe National Wildlife Refuge consists of 2,062 acres of protected habitat at the center of the Mission Valley, surrounded by thousands of additional acres of state and tribal conservation lands.",
+    "url": "https://www.fws.gov/refuge/ninepipe/",
+    "why": "part (a lake, a purchase, a campground…)"
    },
    "ours": {
     "acres": 2085,
@@ -16112,7 +16771,7 @@
     "src": "",
     "unknown_pieces": 0
    },
-   "owner_now": "Northwest Montana Wetland Management District",
+   "owner_now": null,
    "pages": [
     {
      "status": "ok",
@@ -16120,9 +16779,14 @@
      "why": "the park's page (data/parkinfo)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/ninepipe/about-us",
-     "why": "about / history page of the park's site"
+     "why": "FWS refuge about page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/ninepipe",
+     "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
     }
    ],
    "pct": 1,
@@ -16139,46 +16803,19 @@
      "acres": 2062.0,
      "as": "2,062 acres",
      "clean": false,
-     "line": "efuge at its center, a circle of protected habitat for wildlife spreads into the Mission Valley. The Refuge’s 2,062 acres is surrounded by 3,420 acres of Montana State Wildlife Management Areas, approximately 3,000 acres of Confede",
-     "total_like": true,
-     "url": "https://www.fws.gov/refuge/ninepipe/about-us",
-     "why": "total-looking"
+     "line": "udy of natural resources. Projects & Research Our Species About Ninepipe National Wildlife Refuge consists of 2,062 acres of protected habitat at the center of the Mission Valley, surrounded by thousands of additional acres of stat",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/ninepipe/",
+     "why": "part (a lake, a purchase, a campground…)"
     },
     {
-     "acres": 3420.0,
-     "as": "3,420 acres",
+     "acres": 2062.0,
+     "as": "2,062 acres",
      "clean": false,
-     "line": "of protected habitat for wildlife spreads into the Mission Valley. The Refuge’s 2,062 acres is surrounded by 3,420 acres of Montana State Wildlife Management Areas, approximately 3,000 acres of Confederated Salish and Kootenai Tri",
+     "line": "udy of natural resources. Projects & Research Our Species About Ninepipe National Wildlife Refuge consists of 2,062 acres of protected habitat at the center of the Mission Valley, surrounded by thousands of additional acres of stat",
      "total_like": false,
-     "url": "https://www.fws.gov/refuge/ninepipe/about-us",
-     "why": "no total words near it"
-    },
-    {
-     "acres": 3000.0,
-     "as": "3,000 acres",
-     "clean": false,
-     "line": "e Refuge’s 2,062 acres is surrounded by 3,420 acres of Montana State Wildlife Management Areas, approximately 3,000 acres of Confederated Salish and Kootenai Tribal lands, 3,160 acres of Federal Waterfowl Production Areas and 6,400",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/ninepipe/about-us",
-     "why": "no total words near it"
-    },
-    {
-     "acres": 3160.0,
-     "as": "3,160 acres",
-     "clean": false,
-     "line": "State Wildlife Management Areas, approximately 3,000 acres of Confederated Salish and Kootenai Tribal lands, 3,160 acres of Federal Waterfowl Production Areas and 6,400 acres of Fish and Wildlife Service conservation easements tha",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/ninepipe/about-us",
-     "why": "no total words near it"
-    },
-    {
-     "acres": 6400.0,
-     "as": "6,400 acres",
-     "clean": false,
-     "line": "acres of Confederated Salish and Kootenai Tribal lands, 3,160 acres of Federal Waterfowl Production Areas and 6,400 acres of Fish and Wildlife Service conservation easements that prevent housing development and wetland drainage. Ou",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/ninepipe/about-us",
-     "why": "no total words near it"
+     "url": "https://www.fws.gov/refuge/ninepipe",
+     "why": "part (a lake, a purchase, a campground…)"
     }
    ],
    "t": "National Wildlife Refuge",
@@ -16186,19 +16823,10 @@
    "verdict": "agree"
   },
   "US-8003": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Pablo National Wildlife Refuge",
-   "official": {
-    "acres": 2542.0,
-    "as": "2,542 acres",
-    "clean": false,
-    "line": "e lands that surround it. Visit Us Consisting mainly of open water (the reservoir takes up 1,850 acres of the 2,542 acres of the refuge), visitors are restricted to the east and north edges of Pablo National Wildlife Refuge. Please",
-    "read": "2026-11-09",
-    "sent": "Consisting mainly of open water (the reservoir takes up 1,850 acres of the 2,542 acres of the refuge), visitors are restricted to the east and north edges of Pablo National Wildlife Refuge.",
-    "url": "https://www.fws.gov/refuge/pablo/",
-    "why": "part (a lake, a purchase, a campground…)"
-   },
+   "official": null,
    "ours": {
     "acres": 2471,
     "manager": "",
@@ -16222,17 +16850,7 @@
      "why": "the park's page (data/parkinfo)"
     },
     {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/pablo/about-us",
-     "why": "about / history page of the park's site"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/pablo/visit-us",
-     "why": "about / history page of the park's site"
-    },
-    {
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/pablo/about-us",
      "why": "FWS refuge about page"
     },
@@ -16242,91 +16860,42 @@
      "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
     }
    ],
-   "pct": 3,
-   "same_agency": false,
-   "score": 7,
+   "pct": null,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 1,
     "source": 1
    },
-   "sizes": [
-    {
-     "acres": 1850.0,
-     "as": "1,850 acres",
-     "clean": false,
-     "line": "is as complex as the lands that surround it. Visit Us Consisting mainly of open water (the reservoir takes up 1,850 acres of the 2,542 acres of the refuge), visitors are restricted to the east and north edges of Pablo National Wild",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/pablo/",
-     "why": "part (a lake, a purchase, a campground…)"
-    },
-    {
-     "acres": 2542.0,
-     "as": "2,542 acres",
-     "clean": false,
-     "line": "e lands that surround it. Visit Us Consisting mainly of open water (the reservoir takes up 1,850 acres of the 2,542 acres of the refuge), visitors are restricted to the east and north edges of Pablo National Wildlife Refuge. Please",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/pablo/",
-     "why": "part (a lake, a purchase, a campground…)"
-    },
-    {
-     "acres": 1850.0,
-     "as": "1,850 acres",
-     "clean": false,
-     "line": "is as complex as the lands that surround it. Visit Us Consisting mainly of open water (the reservoir takes up 1,850 acres of the 2,542 acres of the refuge), visitors are restricted to the east and north edges of Pablo National Wild",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/pablo",
-     "why": "part (a lake, a purchase, a campground…)"
-    },
-    {
-     "acres": 2542.0,
-     "as": "2,542 acres",
-     "clean": false,
-     "line": "e lands that surround it. Visit Us Consisting mainly of open water (the reservoir takes up 1,850 acres of the 2,542 acres of the refuge), visitors are restricted to the east and north edges of Pablo National Wildlife Refuge. Please",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/pablo",
-     "why": "part (a lake, a purchase, a campground…)"
-    }
-   ],
+   "sizes": [],
    "t": "National Wildlife Refuge",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "no size on page"
   },
   "US-8004": {
-   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-09",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
      "kind": "managed by",
-     "line": "plex About the Western Montana National Wildlife Refuge Complex Swan River National Wildlife Refuge is managed by the Northwest Montana Wetland Management District as part of the Western Montana National Wildlife Refuge Complex. A Complex is an administrative grouping of tw",
-     "owner_now": "Northwest Montana Wetland Management District",
-     "src": "https://www.fws.gov/refuge/swan-river/about-us",
-     "why": "about / history page of the park's site"
+     "line": "ig Fork, MT 59911 406-750-8242 53775 MT Hwy 212 Charlo, MT 59824 jacob_hourt@fws.gov Swan River NWR is managed by the Northwest Montana District located at: 53775 MT Hwy 212 Charlo, MT 59824 Plan Your Visit Get Involved Services About Swan River National",
+     "owner_now": "Northwest Montana District",
+     "src": "https://www.fws.gov/refuge/swan_river/",
+     "why": "the park's page (data/parkinfo)"
     }
    ],
    "n": "Swan River National Wildlife Refuge",
-   "official": {
-    "acres": 1568.0,
-    "as": "1,568 acres",
-    "clean": false,
-    "line": "served. The refuge was established under the authority of the Migratory Bird Conservation Act. It consists of 1,568 acres, with an additional 210-acre Forest Service in-holding that is managed under a Memorandum of Understanding. T",
-    "read": "2026-11-09",
-    "sent": "It consists of 1,568 acres, with an additional 210-acre Forest Service in-holding that is managed under a Memorandum of Understanding.",
-    "url": "https://www.fws.gov/refuge/swan-river/about-us",
-    "why": "total-looking"
-   },
+   "official": null,
    "ours": {
-    "acres": 2178,
+    "acres": 1933,
     "dissolved": {
      "after": 1933,
      "before": 5797,
      "copies": 2,
-     "key_union": 2178,
      "parts": 0,
      "records": 3,
-     "summed": 1933,
      "tracts": 1
     },
     "manager": "",
@@ -16343,7 +16912,7 @@
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
-   "owner_now": "Northwest Montana Wetland Management District",
+   "owner_now": "Northwest Montana District",
    "pages": [
     {
      "status": "ok",
@@ -16351,18 +16920,22 @@
      "why": "the park's page (data/parkinfo)"
     },
     {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/swan-river/about-us",
-     "why": "about / history page of the park's site"
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/swan/about-us",
+     "why": "FWS refuge about page"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/swan",
+     "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
     }
    ],
-   "pct": 39,
-   "same_agency": false,
-   "score": 6,
+   "pct": null,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 1,
     "source": 2
    },
    "sizes": [
@@ -16370,42 +16943,15 @@
      "acres": 1568.0,
      "as": "1,568 acre",
      "clean": false,
-     "line": "acquired by the U.S. Fish and Wildlife Service in 1973 to be managed for the benefit of migratory birds. This 1,568-acre Refuge is part of the Northwest Montana Wetland Management District and is administered by the Refuge staff i",
+     "line": "contacting the Refuge Manager. Our Services About Established in 1973 for the benefit of migratory birds, the 1,568-acre Swan River National Wildlife Refuge is situated in northwest Montana between the Swan and Mission Mountains.",
      "total_like": false,
      "url": "https://www.fws.gov/refuge/swan_river/",
-     "why": "part (a lake, a purchase, a campground…)"
-    },
-    {
-     "acres": 1254.0,
-     "as": "1,254 acres",
-     "clean": false,
-     "line": "Us Visit Us Activities Locations Trails Rules & Policies Get Involved News Species Map About Us Approximately 1,254 acres of the Refuge consists of wetland/grassland habitat. Dense stands of reed canary grass are mixed with native",
-     "total_like": true,
-     "url": "https://www.fws.gov/refuge/swan-river/about-us",
-     "why": "total-looking"
-    },
-    {
-     "acres": 1568.0,
-     "as": "1,568 acres",
-     "clean": false,
-     "line": "served. The refuge was established under the authority of the Migratory Bird Conservation Act. It consists of 1,568 acres, with an additional 210-acre Forest Service in-holding that is managed under a Memorandum of Understanding. T",
-     "total_like": true,
-     "url": "https://www.fws.gov/refuge/swan-river/about-us",
-     "why": "total-looking"
-    },
-    {
-     "acres": 210.0,
-     "as": "210 acre",
-     "clean": false,
-     "line": "ed under the authority of the Migratory Bird Conservation Act. It consists of 1,568 acres, with an additional 210-acre Forest Service in-holding that is managed under a Memorandum of Understanding. The refuge boundary lies withi",
-     "total_like": true,
-     "url": "https://www.fws.gov/refuge/swan-river/about-us",
-     "why": "total-looking"
+     "why": "history"
     }
    ],
    "t": "National Wildlife Refuge",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "unsure"
   }
  },
  "read": "2026-11-22"
