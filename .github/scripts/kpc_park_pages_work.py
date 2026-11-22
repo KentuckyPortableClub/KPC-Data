@@ -6,6 +6,7 @@ No network. A list is JSON only: unknown keys are ignored, and nothing in a list
 import csv, datetime, io, json, pathlib
 
 REFRESH_DAYS = 30
+RESTING_RETRY_DAYS = 1         # 22 Nov: a page that answered 'resting' (busy, a server error, an empty answer) is tried again the next day
 CONFIRMED_REFRESH_DAYS = 365   # 21 Nov: a park already confirmed by its agency id is re-read once a year (an agency may change its page)
 LIST_MAX = 5000
 SUMMARY_LINES = 40
@@ -138,7 +139,7 @@ def build_worklist(areas, choose, keys, lists, refs, state, today, areas_only=No
         if isinstance(ref, str):
             add(ref, 1, 'refs file')
 
-    tier2, tier3, tier4, tier5, tier6 = [], [], [], [], []
+    tier2, tier3, tier4, tier4r, tier5, tier6 = [], [], [], [], [], []
     read = state.get('read') or {}
     for ref, (area, row) in known.items():
         if ref in used:
@@ -162,6 +163,8 @@ def build_worklist(areas, choose, keys, lists, refs, state, today, areas_only=No
             tier3.append(ref)
         elif not when:
             tier4.append(ref)
+        elif prev.get('kind') == 'resting' and age is not None and age >= RESTING_RETRY_DAYS:
+            tier4r.append(ref)   # 22 Nov: 'resting' means try later, not "read": it does not wait refresh_days
         elif age is not None and age >= refresh_days:
             tier5.append(ref)
     by_busy = lambda r: (-(known[r][1].get('qsos') or 0), r)
@@ -172,6 +175,8 @@ def build_worklist(areas, choose, keys, lists, refs, state, today, areas_only=No
         add(ref, 3, 'pin, and a page is on file')
     for ref in sorted(tier4, key=by_busy):
         add(ref, 4, 'never read')
+    for ref in sorted(tier4r, key=by_old):
+        add(ref, 4, 'resting last time: tried again')
     for ref in sorted(tier5, key=by_old):
         add(ref, 5, f'older than {refresh_days} days')
     for ref in sorted(tier6, key=by_old):
