@@ -294,7 +294,7 @@ Source file: `data/truth/US-WY.json`
  "handover": [],
  "last_read_failed": "2026-11-22",
  "n": "Medicine Bow - Routt National Forest",
- "note": "whole park compared (POTA lists it in 2 states: {'US-CO': 1255233, 'US-WY': 1084397})",
+ "note": "whole park compared (POTA lists it in 2 states: {'US-WY': 1084397, 'US-CO': 1255233})",
  "official": {
   "acres": 2900000.0,
   "as": "2.9 million acres",
@@ -329,8 +329,8 @@ Source file: `data/truth/US-WY.json`
   "pin": "inside",
   "src": "USGS PAD-US",
   "states": [
-   "US-CO",
-   "US-WY"
+   "US-WY",
+   "US-CO"
   ],
   "unknown_pieces": 0,
   "whole_park": true
