@@ -581,13 +581,13 @@
     "parks": 155,
     "retired": 0,
     "unsure": 12,
-    "weak": 11,
+    "weak": 12,
     "with_outline": 99
    },
    "left": 0,
    "parks": 155,
-   "status": "queued",
-   "updated": "2026-11-15"
+   "status": "done",
+   "updated": "2026-11-22"
   },
   "US-MT": {
    "checked": 254,
@@ -1108,51 +1108,31 @@
  },
  "last": {
   "areas": [
-   "US-FL"
+   "US-MS"
   ],
   "manners": {
-   "browser": 1,
-   "deferred": 41,
+   "browser": 3,
    "errors": 0,
-   "for_person": 4,
-   "for_person_urls": [
-    [
-     "https://www.floridastateparks.org/parks-and-trails/little-talbot-island-state-park",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://www.floridastateparks.org/learn/rules-regulations",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://www.swfwmd.state.fl.us/recreation/myakka-river-flatford-swamp",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://www.swfwmd.state.fl.us/recreation/deep-creek-preserve",
-     "HTTP 403 twice"
-    ]
-   ],
+   "for_person_urls": [],
    "host_rule": 0,
-   "requests": 87,
-   "rested": 366,
-   "retry403": 4,
-   "robots": 38,
-   "strikes": 8
+   "requests": 120,
+   "rested": 1,
+   "robots": 1,
+   "strikes": 0
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 12,
-   "no_size": 220,
-   "ours_unknown": 1,
-   "pages_read": 61,
-   "parks": 290,
+   "handover_hints": 3,
+   "no_size": 75,
+   "ours_unknown": 0,
+   "pages_read": 34,
+   "parks": 79,
    "retired": 0,
-   "size_agree": 40,
-   "size_off": 18,
-   "size_unsure": 9,
-   "skipped_fresh": 170,
-   "with_outline": 288
+   "size_agree": 0,
+   "size_off": 1,
+   "size_unsure": 2,
+   "skipped_fresh": 76,
+   "with_outline": 78
   },
   "when": "2026-11-22"
  },
