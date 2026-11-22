@@ -266,23 +266,23 @@
   "US-GA": {
    "checked": 238,
    "counts": {
-    "agree": 104,
-    "handover_hints": 11,
+    "agree": 125,
+    "handover_hints": 10,
     "no_page": 0,
-    "no_size": 22,
+    "no_size": 24,
     "not_read": 0,
-    "off": 64,
+    "off": 46,
     "ours_unknown": 4,
     "parks": 238,
     "retired": 0,
-    "unsure": 30,
-    "weak": 7,
-    "with_outline": 225
+    "unsure": 27,
+    "weak": 5,
+    "with_outline": 227
    },
    "left": 0,
    "parks": 238,
-   "status": "queued",
-   "updated": "2026-11-15"
+   "status": "done",
+   "updated": "2026-11-22"
   },
   "US-HI": {
    "checked": 102,
@@ -1099,35 +1099,59 @@
  },
  "hosts": {
   "tnstateparks.com": 1795430345.0894592,
+  "www.sam.usace.army.mil": 1795434819.4882402,
   "www.tn.gov": 1795430274.359603
  },
  "last": {
   "areas": [
-   "US-WV"
+   "US-GA"
   ],
   "manners": {
-   "browser": 2,
+   "browser": 3,
    "errors": 0,
-   "for_person_urls": [],
+   "for_person": 5,
+   "for_person_urls": [
+    [
+     "https://www.exploregeorgia.org/sites/default/files/listing_documents/Doerun-PP-Bog-wma-map.pdf",
+     "HTTP 403 twice"
+    ],
+    [
+     "http://www.sam.usace.army.mil/Portals/46/docs/recreation/OP-WP/Docs/WestPointHuntingMap2012%5B1%5D.pdf",
+     "HTTP 403 twice"
+    ],
+    [
+     "http://www.sam.usace.army.mil/Portals/46/docs/recreation/WFG/docs/Lake.pdf",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://www.gwcca.org/centennial-olympic-park",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://georgiawildlife.com/news",
+     "HTTP 403 twice"
+    ]
+   ],
    "host_rule": 2,
-   "requests": 480,
+   "requests": 536,
    "rested": 0,
+   "retry403": 5,
    "robots": 0,
-   "strikes": 0
+   "strikes": 10
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 1,
-   "no_size": 28,
-   "ours_unknown": 5,
-   "pages_read": 422,
-   "parks": 172,
+   "handover_hints": 10,
+   "no_size": 25,
+   "ours_unknown": 4,
+   "pages_read": 368,
+   "parks": 237,
    "retired": 0,
-   "size_agree": 24,
-   "size_off": 7,
-   "size_unsure": 101,
-   "skipped_fresh": 0,
-   "with_outline": 165
+   "size_agree": 125,
+   "size_off": 46,
+   "size_unsure": 27,
+   "skipped_fresh": 1,
+   "with_outline": 227
   },
   "when": "2026-11-22"
  },
@@ -1149,7 +1173,7 @@
   },
   "https://georgiawildlife.com/news": {
    "links": 0,
-   "read": "2026-11-15",
+   "read": "2026-11-22",
    "status": "HTTP 403"
   },
   "https://kentuckytourism.com/industry/news": {
