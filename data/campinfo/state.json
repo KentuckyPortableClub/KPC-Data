@@ -118,6 +118,7 @@
    "checked": 757,
    "counts": {
     "camps": 757,
+    "kept_after_failed_read": 13,
     "needs_browser": 0,
     "needs_key": 337,
     "no_page": 93,
@@ -127,11 +128,11 @@
     "resting": 13,
     "robots": 0,
     "with_booking": 319,
-    "with_elevation": 11,
+    "with_elevation": 3,
     "with_facts": 298,
     "with_sites": 1
    },
-   "left": 6,
+   "left": 1,
    "status": "partial",
    "updated": "2026-11-22"
   },
@@ -2616,36 +2617,28 @@
   "fcc_token": true,
   "manners": {
    "errors": 0,
-   "for_person": 1,
-   "for_person_urls": [
-    [
-     "https://www.blm.gov/visit/search-details/10216501/1",
-     "HTTP 403 twice"
-    ]
-   ],
+   "for_person_urls": [],
    "host_rule": 0,
-   "requests": 265,
-   "rested": 676,
-   "retry403": 1,
+   "requests": 2,
+   "rested": 378,
    "robots": 0,
-   "strikes": 7
+   "strikes": 0
   },
   "ridb_key": false,
   "stat": {
-   "browser": 30,
-   "camps": 674,
-   "elevations": 10,
+   "camps": 365,
+   "elevations": 0,
    "errors": 0,
-   "needs_browser": 28,
-   "needs_key": 347,
-   "no_page": 105,
-   "not_official": 1,
-   "ok": 209,
-   "pages_read": 210,
+   "needs_browser": 0,
+   "needs_key": 350,
+   "no_page": 1,
+   "not_official": 0,
+   "ok": 1,
+   "pages_read": 1,
    "resting": 13,
    "ridb_calls": 0,
    "robots": 0,
-   "skipped_fresh": 108
+   "skipped_fresh": 417
   },
   "when": "2026-11-22"
  },

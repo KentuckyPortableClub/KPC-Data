@@ -1084,7 +1084,8 @@
    "dump_station": null,
    "elevation_ft": {
     "src": "https://epqs.nationalmap.gov/v1/json?x=-106.85563&y=38.6553&units=Feet&wkid=4326",
-    "value": 8014
+    "status": "host resting",
+    "value": null
    },
    "facts_src": {},
    "features": null,
@@ -1149,7 +1150,8 @@
    "dump_station": null,
    "elevation_ft": {
     "src": "https://epqs.nationalmap.gov/v1/json?x=-106.22043&y=38.58447&units=Feet&wkid=4326",
-    "value": 9172
+    "status": "host resting",
+    "value": null
    },
    "facts_src": {},
    "features": null,
@@ -4146,6 +4148,10 @@
     "sewer": null,
     "water": null
    },
+   "ids": [
+    "10165505",
+    "244872"
+   ],
    "kind": "c",
    "lat": 38.61181,
    "list": "campfed",
@@ -5536,6 +5542,10 @@
     "sewer": null,
     "water": null
    },
+   "ids": [
+    "10165701",
+    "235761"
+   ],
    "kind": "c",
    "lat": 37.4624,
    "list": "campfed",
@@ -6332,6 +6342,10 @@
     "sewer": null,
     "water": null
    },
+   "ids": [
+    "10199750",
+    "247548"
+   ],
    "kind": "c",
    "lat": 40.72719,
    "list": "campfed",
@@ -6398,6 +6412,10 @@
     "sewer": null,
     "water": null
    },
+   "ids": [
+    "10199771",
+    "251551"
+   ],
    "kind": "c",
    "lat": 40.44639,
    "list": "campfed",
@@ -6662,6 +6680,10 @@
     "sewer": null,
     "water": null
    },
+   "ids": [
+    "10311428",
+    "241260"
+   ],
    "kind": "c",
    "lat": 39.86427,
    "list": "campfed",
@@ -8300,7 +8322,8 @@
    "dump_station": null,
    "elevation_ft": {
     "src": "https://epqs.nationalmap.gov/v1/json?x=-106.22&y=38.58278&units=Feet&wkid=4326",
-    "value": 9138
+    "status": "host resting",
+    "value": null
    },
    "facts_src": {},
    "features": null,
@@ -11269,7 +11292,8 @@
    "dump_station": null,
    "elevation_ft": {
     "src": "https://epqs.nationalmap.gov/v1/json?x=-107.66167&y=38.0225&units=Feet&wkid=4326",
-    "value": 8447
+    "status": "host resting",
+    "value": null
    },
    "facts_src": {},
    "features": null,
@@ -16746,7 +16770,8 @@
    "dump_station": null,
    "elevation_ft": {
     "src": "https://epqs.nationalmap.gov/v1/json?x=-105.56333&y=38.07889&units=Feet&wkid=4326",
-    "value": 9029
+    "status": "host resting",
+    "value": null
    },
    "facts_src": {},
    "features": null,
@@ -17537,7 +17562,8 @@
    "dump_station": null,
    "elevation_ft": {
     "src": "https://epqs.nationalmap.gov/v1/json?x=-105.34916&y=40.68971&units=Feet&wkid=4326",
-    "value": 5834
+    "status": "host resting",
+    "value": null
    },
    "facts_src": {},
    "features": null,
@@ -18592,7 +18618,8 @@
    "dump_station": null,
    "elevation_ft": {
     "src": "https://epqs.nationalmap.gov/v1/json?x=-106.64667&y=37.70444&units=Feet&wkid=4326",
-    "value": 8385
+    "status": "host resting",
+    "value": null
    },
    "facts_src": {},
    "features": null,
@@ -21177,10 +21204,6 @@
     "sewer": null,
     "water": null
    },
-   "ids": [
-    "261713",
-    "CO-17c6f17da5"
-   ],
    "kind": "c",
    "lat": 37.84181,
    "list": "campfed",
@@ -21195,7 +21218,7 @@
    },
    "name": "Penitente Canyon Campground",
    "official_page": "https://www.recreation.gov/camping/campgrounds/261713",
-   "park": "US-13106",
+   "park": "",
    "phone": null,
    "phone_hint": null,
    "reservable": null,
@@ -22093,7 +22116,8 @@
    "dump_station": null,
    "elevation_ft": {
     "src": "https://epqs.nationalmap.gov/v1/json?x=-107.38515&y=38.22608&units=Feet&wkid=4326",
-    "value": 9607
+    "status": "host resting",
+    "value": null
    },
    "facts_src": {},
    "features": null,
@@ -50656,6 +50680,10 @@
     "sewer": null,
     "water": null
    },
+   "ids": [
+    "US-1248:3",
+    "US-1248:5"
+   ],
    "kind": "c",
    "lat": 37.14169,
    "list": "campstate-manual",
@@ -52563,6 +52591,8 @@
     "water": null
    },
    "kind": "c",
+   "last_read_failed": "2026-11-22",
+   "last_read_status": "host resting",
    "lat": 40.0801,
    "list": "outside research (camping, in the park)",
    "lodging_booking": {
@@ -53145,6 +53175,8 @@
     "water": null
    },
    "kind": "c",
+   "last_read_failed": "2026-11-22",
+   "last_read_status": "host resting",
    "lat": 39.2833,
    "list": "outside research (camping, in the park)",
    "lodging_booking": {
@@ -53217,6 +53249,8 @@
     "water": null
    },
    "kind": "c",
+   "last_read_failed": "2026-11-22",
+   "last_read_status": "host resting",
    "lat": 39.8792,
    "list": "outside research (camping, in the park)",
    "lodging_booking": {
@@ -53289,6 +53323,8 @@
     "water": null
    },
    "kind": "c",
+   "last_read_failed": "2026-11-22",
+   "last_read_status": "host resting",
    "lat": 39.0668,
    "list": "outside research (camping, in the park)",
    "lodging_booking": {
@@ -53361,6 +53397,8 @@
     "water": null
    },
    "kind": "c",
+   "last_read_failed": "2026-11-22",
+   "last_read_status": "host resting",
    "lat": 38.6327,
    "list": "outside research (camping, in the park)",
    "lodging_booking": {
@@ -53433,6 +53471,8 @@
     "water": null
    },
    "kind": "c",
+   "last_read_failed": "2026-11-22",
+   "last_read_status": "host resting",
    "lat": 38.7005,
    "list": "outside research (camping, in the park)",
    "lodging_booking": {
@@ -53505,6 +53545,8 @@
     "water": null
    },
    "kind": "c",
+   "last_read_failed": "2026-11-22",
+   "last_read_status": "host resting",
    "lat": 37.7934,
    "list": "outside research (camping, in the park)",
    "lodging_booking": {
@@ -53577,6 +53619,8 @@
     "water": null
    },
    "kind": "c",
+   "last_read_failed": "2026-11-22",
+   "last_read_status": "host resting",
    "lat": 40.709,
    "list": "outside research (camping, in the park)",
    "lodging_booking": {
@@ -53649,6 +53693,8 @@
     "water": null
    },
    "kind": "c",
+   "last_read_failed": "2026-11-22",
+   "last_read_status": "host resting",
    "lat": 38.0439,
    "list": "outside research (camping, in the park)",
    "lodging_booking": {
@@ -53721,6 +53767,8 @@
     "water": null
    },
    "kind": "c",
+   "last_read_failed": "2026-11-22",
+   "last_read_status": "host resting",
    "lat": 37.5439,
    "list": "outside research (camping, in the park)",
    "lodging_booking": {
@@ -53793,6 +53841,8 @@
     "water": null
    },
    "kind": "c",
+   "last_read_failed": "2026-11-22",
+   "last_read_status": "host resting",
    "lat": 38.272,
    "list": "outside research (camping, in the park)",
    "lodging_booking": {
@@ -53865,6 +53915,8 @@
     "water": null
    },
    "kind": "c",
+   "last_read_failed": "2026-11-22",
+   "last_read_status": "host resting",
    "lat": 39.5053,
    "list": "outside research (camping, in the park)",
    "lodging_booking": {
@@ -54487,6 +54539,8 @@
     "water": null
    },
    "kind": "c",
+   "last_read_failed": "2026-11-22",
+   "last_read_status": "host resting",
    "lat": 40.1114,
    "list": "outside research (camping, nearby only)",
    "lodging_booking": {
@@ -56100,6 +56154,7 @@
  "cell_status": "FCC as of 2026-06-30: 0 mobile coverage files for the state (point lookup = step 2, not built)",
  "counts": {
   "camps": 757,
+  "kept_after_failed_read": 13,
   "needs_browser": 0,
   "needs_key": 337,
   "no_page": 93,
@@ -56109,10 +56164,10 @@
   "resting": 13,
   "robots": 0,
   "with_booking": 319,
-  "with_elevation": 11,
+  "with_elevation": 3,
   "with_facts": 298,
   "with_sites": 1
  },
- "merged": 19,
+ "merged": 15,
  "read": "2026-11-22"
 }
