@@ -118,7 +118,10 @@ def audit_clean(data, passed=None):
     A = load(data / 'data/status/audited.json', {}) or {}
     Q = (load(data / 'data/waiting/questions/map-audit.json', {}) or {}).get('questions') or []
     down = {}
-    for r in (load(data / 'data/waiting/questions/map-audit-auto.json', {}) or {}).get('rows') or []:
+    auto, why = G.auto_rows(data / 'data/waiting/questions/map-audit-auto.json')
+    if why:   # 22 Nov (owner): a missing or unreadable bot list stops every area (the world pass-through too), with the reason
+        return {x: f'stopped: {why}' for v in R.values() for x in v.split()}
+    for r in auto:
         if str(r.get('auto') or '').startswith('source down'): down[r.get('area')] = down.get(r.get('area'), 0) + 1
     bad = {}
     areas = {x for v in R.values() for x in v.split()}

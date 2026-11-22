@@ -38,6 +38,20 @@ def load(p, d):
 
 
 AUTOQ = pathlib.Path('data/waiting/questions/map-audit-auto.json')
+
+
+def auto_rows(path=None):
+    """22 Nov (owner): the map audit's bot list (map-audit-auto.json, or its .gz). -> (rows, '') or (None, why). A list that is
+    missing or cannot be read STOPS the 2-fer gate and the chain plan with a plain message: it never counts as "nothing down"."""
+    p = pathlib.Path(path or AUTOQ)
+    gz = p.with_name(p.name + '.gz')
+    if not p.exists() and not gz.exists():
+        return None, f'{p.as_posix()} is missing (the map audit has not saved its bot list)'
+    try: d = load_json_any(p)
+    except Exception as e: return None, f'{p.as_posix()} cannot be read ({type(e).__name__})'  # noqa: BLE001
+    if not isinstance(d, dict) or not isinstance(d.get('rows', []), list):
+        return None, f'{p.as_posix()} is not a list of rows'
+    return d.get('rows') or [], ''
 HEALTH = {'SELF-INTERSECTION', 'TINY HOLES', 'SLIVERS', 'INVALID'}
 
 
@@ -171,7 +185,9 @@ def gate():
         if na or npat: print(f'::notice title=Map audit pile::{na} rows to the bots\' list, {npat} answered by a pattern; {QQ["open"]} open for a person', flush=True)
     Q = QQ.get('questions') or []
     down = {}   # Nov 2 (Quality 2b): rows moved to the bots' list because the source was down were never checked: they keep the area waiting
-    for r in (load(AUTOQ, {}) or {}).get('rows') or []:
+    auto, stop_why = auto_rows()
+    if stop_why: print(f'::notice title=2-fer gate STOPPED::{stop_why}: no 2-fer run is started until it is saved', flush=True)
+    for r in auto or []:
         if str(r.get('auto') or '').startswith('source down'): down[r.get('area')] = down.get(r.get('area'), 0) + 1
     R = load(READY, {}) or {}
     st = R.setdefault('areas', {})
@@ -186,7 +202,8 @@ def gate():
         by_pattern = sum(1 for r in mine if clean_answer(r.get('answer')) and not row_clean(r))
         no_rows = sum(1 for r in mine if r.get('answer') and not clean_answer(r.get('answer')))
         aud = A.get(a) if isinstance(A.get(a), dict) else None   # a bare date = a stamp from before the Nov 2 fixes: not trusted
-        if held: s = 'waiting for key'
+        if stop_why: s = f'stopped: {stop_why}'
+        elif held: s = 'waiting for key'
         elif not aud: s = 'waiting for audit'
         elif open_rows or down.get(a): s = f'waiting for audit answers ({open_rows} open' + (f', {no_rows} answered NO or not sure' if no_rows else '') + (f', {by_pattern} answered only by a pattern' if by_pattern else '') + (f', {down[a]} source down' if down.get(a) else '') + ')'
         else: s = 'ready for 2-fers'

@@ -125,6 +125,7 @@ def repo(t, kind='us-key', short='us', rules=True, post=True, arrived=True, read
     rows = [{'area': a, 'ref': f'{a}-1', 'record': 'x', 'answer': 'YES', 'checked_by': 'chat 2'} for a in ready]
     for a, ans in (dirty or {}).items(): rows.append({'area': a, 'ref': f'{a}-2', 'record': 'y', **({'answer': ans} if ans else {})})
     w(D / 'data/waiting/questions/map-audit.json', {'questions': rows})
+    w(D / 'data/waiting/questions/map-audit-auto.json', {'rows': []})   # 22 Nov: the bot list must exist (an empty one = nothing down)
     if verdict: w(Lk / f'data/status/key-check/verdicts/{bid}.json', {'verdict': verdict, 'by': by})
     return D, Lk
 

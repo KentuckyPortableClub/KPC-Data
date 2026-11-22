@@ -193,6 +193,7 @@ def gate_on_case(rows, stamps, us_stamps=True):
         aud = {c: {'rows': 0, 'built': 'x'} for c in allc if (c[:2] in ('US', 'CA') and us_stamps)}
         aud.update({c: {'rows': 0, 'built': 'x'} for c in stamps})
         w(D / 'data/status/audited.json', aud); w(D / 'data/waiting/questions/map-audit.json', {'questions': rows})
+        w(D / 'data/waiting/questions/map-audit-auto.json', {'rows': []})   # 22 Nov: the bot list must exist (an empty one = nothing down)
         buf = io.StringIO()
         with contextlib.redirect_stdout(buf): r2, s2, _ = plan(D, Lk, gate='on', now=NOW + 8 * 3600)
         return [x['tag'] for x in r2], s2, buf.getvalue()
@@ -208,6 +209,7 @@ tg, s2, out = gate_on_case([CLEAN(c) for c in allw], allw)
 check('worldwest' in tg and 'worldwest: no world audit rows' not in out, 'all world rows clean and audited: planned, gate applied (not passed through)')
 with tempfile.TemporaryDirectory() as t:   # a US / CA area with no audit rows and the gate ON: still waits (the pass-through is world only)
     D, Lk = fixture(t, {**READY_US_CA, **READY_W})
+    w(D / 'data/waiting/questions/map-audit-auto.json', {'rows': []})   # 22 Nov: the bot list must exist (an empty one = nothing down)
     r, s, n = plan(D, Lk, gate='on')
     wt = {**s['us-key']['waiting'], **s['ca-key'].get('waiting', {})}
     check(not r and tags_us_ca and all('map audit not clean' in wt.get(x, '') and 'not audited' in wt.get(x, '') for x in tags_us_ca if x in wt) and 'southeast' in wt,
