@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-22T15:26Z",
+ "checked": "2026-11-22T15:41Z",
  "switched_on": false,
  "results": [
   {
@@ -50,6 +50,15 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "4a34103fd0854629",
+   "net": true
+  },
+  {
+   "path": "data/campinfo/US-WV.json",
+   "kind": "campinfo",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "29d25479f54bfec2",
    "net": true
   },
   {
@@ -1211,11 +1220,13 @@
   {
    "path": "data/world-key/GB.json",
    "kind": "key",
-   "why": [],
+   "why": [
+    "F-O3 retired parks still outlined: GB-3369"
+   ],
    "notes": [
     "F-O4 shape test: 60 changed outlines read from PAD-US, 0 far from the park pin"
    ],
-   "verdict": "PASS",
+   "verdict": "HOLD",
    "fp": "0f79ee6480dbecfb",
    "net": true
   },
