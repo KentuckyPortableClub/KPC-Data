@@ -977,9 +977,18 @@ def cmd_read(args):
     if state_path:
         save_json(state_path, state)
 
+    # 21 Nov: the count is the park's place on this run's list, which starts at 1 every run. Parks read before (inside the
+    # refresh window) are passed over in a moment, so say so first: '1130 of 15000' looked like the reader had started over.
+    seen = state.get('read') or {}
+    listed = refs if refs is not None else [r for k, v in areas.items() if not areas_only or k in areas_only for r in v]
+    before = sum(1 for r in listed if r in seen)
+    if not args.quiet:
+        print(f'The list has {total:,} parks. {before:,} of them were read before: they are passed over in a moment unless their '
+              f'page is due again, so the count runs fast through them. The others are read now.', flush=True)
+
     def on_park(i, ref):
         if not args.quiet:
-            print(f'Reading {i} of {total} parks ({ref}).', flush=True)
+            print(f'Park {i:,} of {total:,} on the list ({ref}){"  (read before)" if ref in seen else ""}.', flush=True)
 
     deadline = time.time() + args.max_minutes * 60 if args.max_minutes else None
     get_max = getattr(args, 'max_get_seconds', None)
