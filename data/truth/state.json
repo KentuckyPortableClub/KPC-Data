@@ -199,8 +199,8 @@
    },
    "left": 0,
    "parks": 157,
-   "status": "queued",
-   "updated": "2026-11-17"
+   "status": "done",
+   "updated": "2026-11-22"
   },
   "US-DC": {
    "checked": 35,
@@ -1117,38 +1117,30 @@
  },
  "last": {
   "areas": [
-   "US-NJ"
+   "US-CT"
   ],
   "manners": {
-   "browser": 64,
-   "dropped_queued": 1,
    "errors": 0,
-   "for_person_urls": [
-    [
-     "https://www.njpalisades.org/robots.txt",
-     "robots.txt answered 202: nothing fetched from www.njpalisades.org this run"
-    ]
-   ],
+   "for_person_urls": [],
    "host_rule": 0,
-   "requests": 408,
+   "requests": 0,
    "rested": 0,
-   "robots": 1,
-   "robots_unreadable": 1,
+   "robots": 0,
    "strikes": 0
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 2,
-   "no_size": 84,
-   "ours_unknown": 2,
-   "pages_read": 226,
-   "parks": 134,
+   "handover_hints": 3,
+   "no_size": 0,
+   "ours_unknown": 0,
+   "pages_read": 0,
+   "parks": 0,
    "retired": 0,
-   "size_agree": 35,
-   "size_off": 4,
-   "size_unsure": 5,
-   "skipped_fresh": 0,
-   "with_outline": 130
+   "size_agree": 0,
+   "size_off": 0,
+   "size_unsure": 0,
+   "skipped_fresh": 157,
+   "with_outline": 0
   },
   "when": "2026-11-22"
  },
