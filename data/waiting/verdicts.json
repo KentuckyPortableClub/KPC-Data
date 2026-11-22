@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-22T17:14Z",
+ "checked": "2026-11-22T17:29Z",
  "switched_on": false,
  "results": [
   {
@@ -390,14 +390,12 @@
   {
    "path": "data/truth/US-MD.json",
    "kind": "truth",
-   "why": [
-    "F-R3 48 of 89 sized parks are OFF (over half: a reading problem?)"
-   ],
+   "why": [],
    "notes": [
     "no live copy: first time this file is published"
    ],
-   "verdict": "HOLD",
-   "fp": "c54819e4f16ee58a",
+   "verdict": "PASS",
+   "fp": "b6a00b8aa0ab7a1d",
    "net": true
   },
   {

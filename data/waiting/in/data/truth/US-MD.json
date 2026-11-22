@@ -2,24 +2,25 @@
  "about": "Park truth checker: official acreage vs our outline, handover hints, second-witness score. Review lists only: nothing here changes a key or a card.",
  "area": "US-MD",
  "counts": {
-  "agree": 41,
+  "agree": 63,
   "handover_hints": 18,
   "no_page": 0,
-  "no_size": 33,
-  "off": 48,
-  "ours_unknown": 24,
+  "no_size": 32,
+  "not_read": 1,
+  "off": 33,
+  "ours_unknown": 25,
   "parks": 186,
   "retired": 0,
-  "unsure": 30,
-  "weak": 15,
-  "with_outline": 176
+  "unsure": 24,
+  "weak": 11,
+  "with_outline": 178
  },
  "parks": {
   "US-0015": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Chesapeake and Ohio Canal National Historical Park",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-WV': 118, 'US-MD': 13211})",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-MD': 13211, 'US-WV': 118})",
    "official": null,
    "ours": {
     "acres": 13329,
@@ -39,9 +40,9 @@
     "pin": "just outside",
     "src": "USGS PAD-US",
     "states": [
+     "US-MD",
      "US-WV",
-     "US-DC",
-     "US-MD"
+     "US-DC"
     ],
     "unknown_pieces": 0,
     "whole_park": true
@@ -94,17 +95,17 @@
    "verdict": "no size on page"
   },
   "US-0331": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Blackwater National Wildlife Refuge",
    "official": {
     "acres": 32000.0,
     "as": "32,000 acres",
     "clean": false,
-    "line": "3 as a waterfowl sanctuary for birds migrating along the Atlantic Flyway, and currently encompasses more than 32,000 acres. Blackwater NWR is home to an incredible amount of plant and animal diversity in its three major habitats – f",
-    "read": "2026-11-09",
-    "sent": "Blackwater National Wildlife Refuge (NWR) was established in 1933 as a waterfowl sanctuary for birds migrating along the Atlantic Flyway, and currently encompasses more than 32,000 acres.",
-    "url": "https://www.fws.gov/refuge/blackwater/about-us",
+    "line": "National Wildlife Refuge was established in 1933 as a waterfowl sanctuary and currently encompasses more than 32,000 acres. It contains one-third of Maryland&#x27;s tidal wetlands, providing storm protection and critical habitat for",
+    "read": "2026-11-22",
+    "sent": "Blackwater National Wildlife Refuge was established in 1933 as a waterfowl sanctuary and currently encompasses more than 32,000 acres.",
+    "url": "https://www.fws.gov/refuge/blackwater",
     "why": "history"
    },
    "ours": {
@@ -139,23 +140,13 @@
      "why": "the park's page (data/parkinfo)"
     },
     {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/blackwater/about-us",
-     "why": "about / history page of the park's site"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/blackwater/visit-us",
-     "why": "about / history page of the park's site"
-    },
-    {
      "other_unit": true,
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/blackwater/visit-us/rules-policies",
      "why": "rules page (documents bot)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/blackwater/about-us",
      "why": "FWS refuge about page"
     }
@@ -174,54 +165,9 @@
      "acres": 20000.0,
      "as": "20,000 acres",
      "clean": false,
-     "line": "ng Waterfowl Weekly waterfowl surveys have commenced and can be found on our Birding Page! Visit Us With over 20,000 acres open for public recreation, you can experience the refuge year round in a variety of ways! Over 5 miles of hi",
+     "line": "osed periodically during deer hunts. For a full listing, please see this document . Plan Your Visit With over 20,000 acres open for public recreation, you can experience the refuge year round in a variety of ways! From 5 miles of hi",
      "total_like": false,
      "url": "https://www.fws.gov/refuge/blackwater",
-     "why": "no total words near it"
-    },
-    {
-     "acres": 15000.0,
-     "as": "15,000 acres",
-     "clean": false,
-     "line": "uthern Dorchester County are perfect for picturesque rides for cyclists of all abilities. In addition, nearly 15,000 acres are open for deer hunting from September through January, with opportunities for waterfowl and spring turkey",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/blackwater",
-     "why": "no total words near it"
-    },
-    {
-     "acres": 32000.0,
-     "as": "32,000 acres",
-     "clean": false,
-     "line": "3 as a waterfowl sanctuary for birds migrating along the Atlantic Flyway, and currently encompasses more than 32,000 acres. Blackwater NWR is home to an incredible amount of plant and animal diversity in its three major habitats – f",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/blackwater/about-us",
-     "why": "history"
-    },
-    {
-     "acres": 8241.0,
-     "as": "8,241 acres",
-     "clean": false,
-     "line": "owl in the Chesapeake Bay area, Blackwater NWR was officially established on January 23, 1933, when the first 8,241 acres were acquired from Delmarvia Fur Farms. The Civilian Conservation Corps, a work program that stemmed from the",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/blackwater/about-us",
-     "why": "history"
-    },
-    {
-     "acres": 4500.0,
-     "as": "4,500 acre",
-     "clean": false,
-     "line": "tional Wildlife Refuge Cambridge, MD Martin National Wildlife Refuge The Martin National Wildlife Refuge is a 4,500-acre wetland, covering the northern half of Smith Island in the Chesapeake Bay. National Wildlife Refuge Cambridge",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/blackwater/about-us",
-     "why": "another park / unit named in the sentence"
-    },
-    {
-     "acres": 20000.0,
-     "as": "20,000 acres",
-     "clean": false,
-     "line": "also closed periodically during deer hunts. For a full listing, please see this document . Visit Us With over 20,000 acres open for public recreation, you can experience the refuge year round in a variety of ways! From 5 miles of hi",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/blackwater/visit-us",
      "why": "no total words near it"
     },
     {
@@ -230,17 +176,17 @@
      "clean": false,
      "line": "n a variety of ways! From 5 miles of hiking to 17 miles of paddling, we have a variety of experiences. Nearly 15,000 acres are open for deer hunting from September through January. If you prefer to travel by car, we have 3.6 mile wi",
      "total_like": false,
-     "url": "https://www.fws.gov/refuge/blackwater/visit-us",
+     "url": "https://www.fws.gov/refuge/blackwater",
      "why": "no total words near it"
     },
     {
-     "acres": 20000.0,
-     "as": "20,000 acres",
+     "acres": 32000.0,
+     "as": "32,000 acres",
      "clean": false,
-     "line": "valid for entrance) Supports art and environmental education programs for students $5.00 Activities With over 20,000 acres open for public recreation, you can experience the refuge year round in a variety of ways! From 5 miles of hi",
+     "line": "National Wildlife Refuge was established in 1933 as a waterfowl sanctuary and currently encompasses more than 32,000 acres. It contains one-third of Maryland&#x27;s tidal wetlands, providing storm protection and critical habitat for",
      "total_like": false,
-     "url": "https://www.fws.gov/refuge/blackwater/visit-us",
-     "why": "no total words near it"
+     "url": "https://www.fws.gov/refuge/blackwater",
+     "why": "history"
     }
    ],
    "t": "National Wildlife Refuge",
@@ -248,30 +194,27 @@
    "verdict": "agree"
   },
   "US-0332": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Eastern Neck National Wildlife Refuge",
    "official": {
     "acres": 2285.0,
     "as": "2,285 acre",
-    "clean": true,
-    "line": "earn More About Visiting Location and Contact Information About Us Eastern Neck National Wildlife Refuge is a 2,285 acre island providing habitat for thousands of wintering waterfowl, including the tundra swan. Swans feed off of g",
-    "read": "2026-11-09",
-    "sent": "Eastern Neck National Wildlife Refuge is a 2,285 acre island providing habitat for thousands of wintering waterfowl, including the tundra swan.",
+    "clean": false,
+    "line": "e, located at the mouth of the Chester River in Kent County, Maryland, was established in December 1962. This 2,285-acre island refuge is a major feeding and resting place for migratory and wintering waterfowl on Maryland’s famed",
+    "read": "2026-11-22",
+    "sent": "This 2,285-acre island refuge is a major feeding and resting place for migratory and wintering waterfowl on Maryland’s famed Eastern Shore.",
     "url": "https://www.fws.gov/refuge/eastern-neck",
-    "why": "clean total"
+    "why": "total-looking"
    },
    "ours": {
-    "acres": 1839,
+    "acres": 2094,
     "dissolved": {
      "after": 2094,
      "before": 4188,
      "copies": 1,
-     "key_union": 1839,
      "parts": 0,
      "records": 2,
-     "summed": 2094,
      "tracts": 1
     },
     "manager": "",
@@ -297,82 +240,71 @@
     },
     {
      "other_unit": true,
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/eastern-neck/visit-us/rules-policies",
      "why": "rules page (documents bot)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/eastern-neck/about-us",
      "why": "FWS refuge about page"
     }
    ],
-   "pct": 20,
+   "pct": 8,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
     {
      "acres": 2285.0,
      "as": "2,285 acre",
-     "clean": true,
-     "line": "earn More About Visiting Location and Contact Information About Us Eastern Neck National Wildlife Refuge is a 2,285 acre island providing habitat for thousands of wintering waterfowl, including the tundra swan. Swans feed off of g",
+     "clean": false,
+     "line": "e, located at the mouth of the Chester River in Kent County, Maryland, was established in December 1962. This 2,285-acre island refuge is a major feeding and resting place for migratory and wintering waterfowl on Maryland’s famed",
      "total_like": true,
      "url": "https://www.fws.gov/refuge/eastern-neck",
-     "why": "clean total"
-    },
-    {
-     "acres": 2285.0,
-     "as": "2,285 acres",
-     "clean": false,
-     "line": "Policies Events News Library Species Map About Us Eastern Neck National Wildlife Refuge (NWR) is an island of 2,285 acres located at the confluence of the Chester River and the Chesapeake Bay in Kent County, Maryland. Native Americ",
-     "total_like": true,
-     "url": "https://www.fws.gov/refuge/eastern-neck/about-us",
      "why": "total-looking"
     },
     {
-     "acres": 4500.0,
-     "as": "4,500 acre",
-     "clean": false,
-     "line": "tional Wildlife Refuge Cambridge, MD Martin National Wildlife Refuge The Martin National Wildlife Refuge is a 4,500-acre wetland, covering the northern half of Smith Island in the Chesapeake Bay. National Wildlife Refuge Cambridge",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/eastern-neck/about-us",
-     "why": "another park / unit named in the sentence"
+     "acres": 2285.0,
+     "as": "2,285 acre",
+     "clean": true,
+     "line": "Cygnus columbianus columbianus Canvasback Aythya valisineria About Eastern Neck National Wildlife Refuge is a 2,285-acre island sanctuary located at the confluence of the Chester River and the Chesapeake Bay in Kent County, Maryla",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/eastern-neck",
+     "why": "clean total"
     }
    ],
    "t": "National Wildlife Refuge",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-0333": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Martin National Wildlife Refuge",
    "official": {
-    "acres": 4500.0,
-    "as": "4,500 acre",
-    "clean": true,
-    "line": "cts & Research Contact Us Visit Us Rules & Policies News Species Map The Martin National Wildlife Refuge is a 4,500-acre wetland, covering the northern half of Smith Island in the Chesapeake Bay. Visit Us Martin National Wildlife",
-    "read": "2026-11-09",
-    "sent": "The Martin National Wildlife Refuge is a 4,500-acre wetland, covering the northern half of Smith Island in the Chesapeake Bay.",
+    "acres": 4548.0,
+    "as": "4,548 acres",
+    "clean": false,
+    "line": "ch About Martin National Wildlife Refuge was established in 1954 through a 2,569-acre donation and now covers 4,548 acres, encompassing the northern half of Smith Island and Watts Island. The refuge provides vital tidal marsh habit",
+    "read": "2026-11-22",
+    "sent": "Martin National Wildlife Refuge was established in 1954 through a 2,569-acre donation and now covers 4,548 acres, encompassing the northern half of Smith Island and Watts Island.",
     "url": "https://www.fws.gov/refuge/martin",
-    "why": "clean total"
+    "why": "history"
    },
    "ours": {
-    "acres": 4464,
+    "acres": 4166,
     "dissolved": {
      "after": 4166,
      "before": 8331,
      "copies": 1,
-     "key_union": 4464,
      "parts": 0,
      "records": 2,
-     "summed": 4166,
      "tracts": 1
     },
     "manager": "",
@@ -398,17 +330,17 @@
     },
     {
      "other_unit": true,
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/martin/visit-us/rules-policies",
      "why": "rules page (documents bot)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/martin/about-us",
      "why": "FWS refuge about page"
     }
    ],
-   "pct": 1,
+   "pct": 8,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -419,19 +351,10 @@
    },
    "sizes": [
     {
-     "acres": 4500.0,
-     "as": "4,500 acre",
-     "clean": true,
-     "line": "cts & Research Contact Us Visit Us Rules & Policies News Species Map The Martin National Wildlife Refuge is a 4,500-acre wetland, covering the northern half of Smith Island in the Chesapeake Bay. Visit Us Martin National Wildlife",
-     "total_like": true,
-     "url": "https://www.fws.gov/refuge/martin",
-     "why": "clean total"
-    },
-    {
      "acres": 2569.0,
      "as": "2,569 acre",
      "clean": false,
-     "line": "nter. Learn More About Visiting Location and Contact Information About Us First established in 1954 through a 2,569 acre donation by the late Glenn L. Martin, the Martin National Wildlife Refuge now covers 4,548 acres, including t",
+     "line": "aritimus Services Projects & Research About Martin National Wildlife Refuge was established in 1954 through a 2,569-acre donation and now covers 4,548 acres, encompassing the northern half of Smith Island and Watts Island. The ref",
      "total_like": false,
      "url": "https://www.fws.gov/refuge/martin",
      "why": "history"
@@ -439,47 +362,11 @@
     {
      "acres": 4548.0,
      "as": "4,548 acres",
-     "clean": true,
-     "line": "954 through a 2,569 acre donation by the late Glenn L. Martin, the Martin National Wildlife Refuge now covers 4,548 acres, including the northern half of Smith Island, 11 miles west of Crisfield, Maryland, and Watts Island, located",
-     "total_like": true,
+     "clean": false,
+     "line": "ch About Martin National Wildlife Refuge was established in 1954 through a 2,569-acre donation and now covers 4,548 acres, encompassing the northern half of Smith Island and Watts Island. The refuge provides vital tidal marsh habit",
+     "total_like": false,
      "url": "https://www.fws.gov/refuge/martin",
-     "why": "clean total"
-    },
-    {
-     "acres": 2569.0,
-     "as": "2,569 acre",
-     "clean": false,
-     "line": "& Research Contact Us Visit Us Rules & Policies News Species Map About Us First established in 1954 through a 2,569 acre donation by the late Glenn L. Martin, the Martin National Wildlife Refuge now covers 4,548 acres, including t",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/martin/about-us",
      "why": "history"
-    },
-    {
-     "acres": 4548.0,
-     "as": "4,548 acres",
-     "clean": true,
-     "line": "954 through a 2,569 acre donation by the late Glenn L. Martin, the Martin National Wildlife Refuge now covers 4,548 acres, including the northern half of Smith Island, 11 miles west of Crisfield, Maryland, and Watts Island, located",
-     "total_like": true,
-     "url": "https://www.fws.gov/refuge/martin/about-us",
-     "why": "clean total"
-    },
-    {
-     "acres": 2569.0,
-     "as": "2,569 acres",
-     "clean": false,
-     "line": "the winter and crabs in the summer. Martin NWR was established in 1954 when the late Glenn L. Martin donated 2,569 acres to the U.S. Fish and Wildlife Service. Since then, through donation and purchase, the size of the refuge has",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/martin/about-us",
-     "why": "part (a lake, a purchase, a campground…)"
-    },
-    {
-     "acres": 4548.0,
-     "as": "4,548 acres",
-     "clean": false,
-     "line": "Fish and Wildlife Service. Since then, through donation and purchase, the size of the refuge has increased to 4,548 acres. The tidal marsh, creeks and coves, and vegetated ridges of the refuge form an important stopover and winteri",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/martin/about-us",
-     "why": "part (a lake, a purchase, a campground…)"
     }
    ],
    "t": "National Wildlife Refuge",
@@ -487,7 +374,7 @@
    "verdict": "agree"
   },
   "US-0334": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Patuxent National Wildlife Refuge",
    "official": {
@@ -495,7 +382,7 @@
     "as": "13,000 acres",
     "clean": false,
     "line": "uge/ Created to conserve and protect wildlife and wildlands through research, Patuxent Research Refuge offers 13,000 acres of tranquil forest, meadow and wetlands amid a densely populated urban area. Countless birds, mammals, pollin",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Created to conserve and protect wildlife and wildlands through research, Patuxent Research Refuge offers 13,000 acres of tranquil forest, meadow and wetlands amid a densely populated urban area.",
     "url": "https://www.fws.gov/refuge/patuxent/",
     "why": "part (a lake, a purchase, a campground…)"
@@ -610,22 +497,22 @@
    "verdict": "agree"
   },
   "US-0335": {
-   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 13,000 acres, no total words near it)",
-   "checked": "2026-11-09",
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 11 acres, no total words near it)",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Susquehanna National Wildlife Refuge",
    "official": {
-    "acres": 13000.0,
-    "as": "13,000 acres",
+    "acres": 11.0,
+    "as": "11 acres",
     "clean": false,
-    "line": "ans.” —Refuge Improvement Act; Public Law 105-57 Our History In the early 1940's, the Battery Island and over 13,000 acres of water were closed to hunting migratory waterfowl by presidential order and designated as the Susquehanna N",
-    "read": "2026-11-09",
-    "sent": "In the early 1940's, the Battery Island and over 13,000 acres of water were closed to hunting migratory waterfowl by presidential order and designated as the Susquehanna National Wildlife Refuge.",
-    "url": "https://www.fws.gov/refuge/susquehanna/about-us",
+    "line": "changes and Hurricane Agnes. Recently, the U.S. Army Corps of Engineers restored the island to approximately 11 acres of habitat using clean dredged material to support black ducks and other waterbirds. Our History Susquehanna",
+    "read": "2026-11-22",
+    "sent": "Army Corps of Engineers restored the island to approximately 11 acres of habitat using clean dredged material to support black ducks and other waterbirds.",
+    "url": "https://www.fws.gov/refuge/susquehanna",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 3019,
+    "acres": 2678,
     "manager": "",
     "pieces": [
      [
@@ -647,7 +534,7 @@
       "name (designation code ignored)"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 3
    },
@@ -659,99 +546,35 @@
      "why": "the park's page (data/parkinfo)"
     },
     {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/susquehanna/about-us",
-     "why": "about / history page of the park's site"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/susquehanna/visit-us",
-     "why": "about / history page of the park's site"
-    },
-    {
      "other_unit": true,
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/susquehanna/visit-us/rules-policies",
      "why": "rules page (documents bot)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/susquehanna/about-us",
      "why": "FWS refuge about page"
     }
    ],
-   "pct": 77,
+   "pct": 24245,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
    "sizes": [
     {
-     "acres": 13000.0,
-     "as": "13,000 acres",
-     "clean": false,
-     "line": "ans.” —Refuge Improvement Act; Public Law 105-57 Our History In the early 1940's, the Battery Island and over 13,000 acres of water were closed to hunting migratory waterfowl by presidential order and designated as the Susquehanna N",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/susquehanna/about-us",
-     "why": "no total words near it"
-    },
-    {
      "acres": 11.0,
      "as": "11 acres",
      "clean": false,
-     "line": "been built up using 200,000 cubic yards of clean dredged material which is being used to create approximately 11 acres of upland habitat in a horseshoe shape around and including the existing island. Other Facilities in this Com",
+     "line": "changes and Hurricane Agnes. Recently, the U.S. Army Corps of Engineers restored the island to approximately 11 acres of habitat using clean dredged material to support black ducks and other waterbirds. Our History Susquehanna",
      "total_like": false,
-     "url": "https://www.fws.gov/refuge/susquehanna/about-us",
-     "why": "part (a lake, a purchase, a campground…)"
-    },
-    {
-     "acres": 4500.0,
-     "as": "4,500 acre",
-     "clean": false,
-     "line": "tional Wildlife Refuge Cambridge, MD Martin National Wildlife Refuge The Martin National Wildlife Refuge is a 4,500-acre wetland, covering the northern half of Smith Island in the Chesapeake Bay. National Wildlife Refuge Cambridge",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/susquehanna/about-us",
-     "why": "another park / unit named in the sentence"
-    },
-    {
-     "acres": 4500.0,
-     "as": "4,500 acre",
-     "clean": false,
-     "line": "tional Wildlife Refuge Cambridge, MD Martin National Wildlife Refuge The Martin National Wildlife Refuge is a 4,500-acre wetland, covering the northern half of Smith Island in the Chesapeake Bay. National Wildlife Refuge Cambridge",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/susquehanna/visit-us",
-     "why": "another park / unit named in the sentence"
-    },
-    {
-     "acres": 13000.0,
-     "as": "13,000 acres",
-     "clean": false,
-     "line": "ans.” —Refuge Improvement Act; Public Law 105-57 Our History In the early 1940's, the Battery Island and over 13,000 acres of water were closed to hunting migratory waterfowl by presidential order and designated as the Susquehanna N",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/susquehanna/about-us",
+     "url": "https://www.fws.gov/refuge/susquehanna",
      "why": "no total words near it"
-    },
-    {
-     "acres": 11.0,
-     "as": "11 acres",
-     "clean": false,
-     "line": "been built up using 200,000 cubic yards of clean dredged material which is being used to create approximately 11 acres of upland habitat in a horseshoe shape around and including the existing island. Other Facilities in this Com",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/susquehanna/about-us",
-     "why": "part (a lake, a purchase, a campground…)"
-    },
-    {
-     "acres": 4500.0,
-     "as": "4,500 acre",
-     "clean": false,
-     "line": "tional Wildlife Refuge Cambridge, MD Martin National Wildlife Refuge The Martin National Wildlife Refuge is a 4,500-acre wetland, covering the northern half of Smith Island in the Chesapeake Bay. National Wildlife Refuge Cambridge",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/susquehanna/about-us",
-     "why": "another park / unit named in the sentence"
     }
    ],
    "t": "National Wildlife Refuge",
@@ -760,16 +583,16 @@
   },
   "US-0654": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "National Capital Parks - East Park",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-DC': 3908, 'US-MD': 1935})",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-MD': 1935, 'US-DC': 3908})",
    "official": {
     "acres": 8000.0,
     "as": "8,000 acres",
     "clean": false,
     "line": "tional Capital Parks-East District of Columbia National Capital Parks — East invites you to explore more than 8,000 acres of scenic parkland, historic landmarks, and vibrant community spaces across Washington, D.C. and Maryland. Fr",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "National Capital Parks — East invites you to explore more than 8,000 acres of scenic parkland, historic landmarks, and vibrant community spaces across Washington, D.C.",
     "url": "https://www.nps.gov/nace/index.htm",
     "why": "total-looking"
@@ -792,8 +615,8 @@
     "pin": "just outside",
     "src": "USGS PAD-US",
     "states": [
-     "US-DC",
-     "US-MD"
+     "US-MD",
+     "US-DC"
     ],
     "unknown_pieces": 0,
     "whole_park": true
@@ -853,7 +676,7 @@
    "verdict": "off"
   },
   "US-0666": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Catoctin Mountain Park",
    "official": null,
@@ -920,7 +743,7 @@
    "verdict": "no size on page"
   },
   "US-0667": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Fort Washington Park",
    "official": null,
@@ -935,7 +758,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -974,10 +797,10 @@
     }
    ],
    "pct": null,
-   "score": 4,
+   "score": 5,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 0
    },
@@ -987,7 +810,7 @@
    "verdict": "no size on page"
   },
   "US-0668": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Greenbelt Park",
    "official": null,
@@ -1049,7 +872,7 @@
    "verdict": "no size on page"
   },
   "US-0669": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
@@ -1063,7 +886,7 @@
    "n": "Piscataway Park",
    "official": null,
    "ours": {
-    "acres": 1319,
+    "acres": 1951,
     "manager": "",
     "pieces": [
      [
@@ -1079,7 +902,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -1113,10 +936,10 @@
     }
    ],
    "pct": null,
-   "score": 4,
+   "score": 5,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 0
    },
@@ -1126,17 +949,17 @@
    "verdict": "no size on page"
   },
   "US-0670": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "George Washington Memorial Parkway",
-   "note": "whole park compared (POTA lists it in 3 states: {'US-VA': 7103, 'US-DC': 126, 'US-MD': 2052})",
+   "note": "whole park compared (POTA lists it in 3 states: {'US-VA': 5234, 'US-MD': 2379, 'US-DC': 121})",
    "official": null,
    "ours": {
-    "acres": 9281,
+    "acres": 7734,
     "acres_by_state": {
-     "US-DC": 126,
-     "US-MD": 2052,
-     "US-VA": 7103
+     "US-DC": 121,
+     "US-MD": 2379,
+     "US-VA": 5234
     },
     "manager": "",
     "pieces": [
@@ -1157,8 +980,8 @@
     "src": "USGS PAD-US",
     "states": [
      "US-VA",
-     "US-DC",
-     "US-MD"
+     "US-MD",
+     "US-DC"
     ],
     "unknown_pieces": 0,
     "whole_park": true
@@ -1197,16 +1020,16 @@
    "verdict": "no size on page"
   },
   "US-0671": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Assateague Island National Seashore",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-VA': 21703, 'US-MD': 26977})",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-VA': 21537, 'US-MD': 26977})",
    "official": null,
    "ours": {
-    "acres": 48680,
+    "acres": 48514,
     "acres_by_state": {
      "US-MD": 26977,
-     "US-VA": 21703
+     "US-VA": 21537
     },
     "manager": "",
     "pieces": [
@@ -1269,7 +1092,7 @@
    "verdict": "no size on page"
   },
   "US-0700": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Antietam National Battlefield",
    "official": null,
@@ -1337,7 +1160,7 @@
   },
   "US-0705": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Monocacy National Battlefield",
    "official": {
@@ -1345,7 +1168,7 @@
     "as": "1,649 acres",
     "clean": false,
     "line": "ened to public 2007: Visitor Center moved to current location 2025: Visitor Center museum renovated Park Size 1,649 acres Visitation 2025: 116,902 2024: 116,520 2023: 132,098 2022: 127,111 2021: 137,300 2020: 155,116 2019: 144,969",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "1,649 acres",
     "url": "https://www.nps.gov/mono/learn/management/statistics.htm",
     "why": "total-looking"
@@ -1361,7 +1184,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -1401,10 +1224,10 @@
    ],
    "pct": 19,
    "same_agency": false,
-   "score": 4,
+   "score": 5,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 0,
     "source": 1
    },
@@ -1424,16 +1247,16 @@
    "verdict": "off"
   },
   "US-0735": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Harpers Ferry National Historical Park",
-   "note": "whole park compared (POTA lists it in 3 states: {'US-VA': 735, 'US-WV': 2184, 'US-MD': 798})",
+   "note": "whole park compared (POTA lists it in 3 states: {'US-VA': 488, 'US-MD': 798, 'US-WV': 2184})",
    "official": null,
    "ours": {
-    "acres": 3717,
+    "acres": 3470,
     "acres_by_state": {
      "US-MD": 798,
-     "US-VA": 735,
+     "US-VA": 488,
      "US-WV": 2184
     },
     "manager": "",
@@ -1449,8 +1272,8 @@
     "src": "USGS PAD-US",
     "states": [
      "US-VA",
-     "US-WV",
-     "US-MD"
+     "US-MD",
+     "US-WV"
     ],
     "unknown_pieces": 0,
     "whole_park": true
@@ -1503,12 +1326,12 @@
    "verdict": "no size on page"
   },
   "US-0736": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Harriet Tubman Underground Railroad National Historical Park",
    "official": null,
    "ours": {
-    "acres": 479,
+    "acres": 811,
     "manager": "",
     "pieces": [
      [
@@ -1569,12 +1392,12 @@
     }
    ],
    "pct": null,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 2,
     "size": 1,
-    "source": 2
+    "source": 1
    },
    "sizes": [],
    "t": "National Historical Park",
@@ -1582,7 +1405,7 @@
    "verdict": "no size on page"
   },
   "US-0808": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Clara Barton National Historic Site",
    "official": null,
@@ -1597,7 +1420,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -1636,10 +1459,10 @@
     }
    ],
    "pct": null,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 1
    },
@@ -1650,7 +1473,7 @@
   },
   "US-0830": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Hampton National Historic Site",
    "official": null,
@@ -1731,7 +1554,7 @@
    "verdict": "unsure"
   },
   "US-0867": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Thomas Stone National Historic Site",
    "official": null,
@@ -1746,7 +1569,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -1780,10 +1603,10 @@
     }
    ],
    "pct": null,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 1
    },
@@ -1793,7 +1616,7 @@
    "verdict": "no size on page"
   },
   "US-0928": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Fort McHenry National Monument",
    "official": null,
@@ -1855,7 +1678,7 @@
    "verdict": "no size on page"
   },
   "US-10732": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Hickory Point Cypress Swamp Natural Area",
    "official": {
@@ -1863,7 +1686,7 @@
     "as": "2,000 acres",
     "clean": true,
     "line": "cess to the oak-pine and oak-heath forests found in the uplands. Hickory Point Cypress Swamp encompasses over 2,000 acres which are owned and managed by the State of Maryland. Much of the biological diversity at this site can be at",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Hickory Point Cypress Swamp encompasses over 2,000 acres which are owned and managed by the State of Maryland.",
     "url": "https://dnr.maryland.gov/wildlife/Pages/NaturalAreas/Eastern/Hickory-Point.aspx",
     "why": "clean total"
@@ -1872,7 +1695,7 @@
     "acres": 0,
     "manager": "",
     "pieces": [],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "",
     "unknown_pieces": 1
    },
@@ -1886,10 +1709,10 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 6,
+   "score": 5,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 1
    },
@@ -1909,7 +1732,7 @@
    "verdict": "ours unknown"
   },
   "US-10751": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Idylwild Natural Area",
    "official": {
@@ -1917,7 +1740,7 @@
     "as": "1,500 acre",
     "clean": true,
     "line": "lmarva Peninsula. A mixture of pines, oaks and heath shrubs can be found in the dry, sandy soils. This nearly 1,500 acre tract is part of the Idylwild Wildlife Management Area and is managed by the Maryland Department of Natural R",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "This nearly 1,500 acre tract is part of the Idylwild Wildlife Management Area and is managed by the Maryland Department of Natural Resources Wildlife and Heritage Service.",
     "url": "https://dnr.maryland.gov/wildlife/Pages/NaturalAreas/Eastern/Idylwild.aspx",
     "why": "clean total"
@@ -1963,7 +1786,7 @@
    "verdict": "ours unknown"
   },
   "US-10756": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Skimmer Island Natural Area",
    "official": null,
@@ -1997,7 +1820,7 @@
    "verdict": "ours unknown"
   },
   "US-10758": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "North End Natural Area",
    "official": null,
@@ -2031,7 +1854,7 @@
    "verdict": "ours unknown"
   },
   "US-10759": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
@@ -2074,7 +1897,7 @@
    "verdict": "ours unknown"
   },
   "US-10762": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Furnace Natural Area",
    "official": {
@@ -2082,7 +1905,7 @@
     "as": "230 acre",
     "clean": false,
     "line": "marva Peninsula. Many dunes retain the crescent or parabolic shapes that serve as clues to their origin. This 230 acre Natural Area is owned by the State of Maryland and is managed as a component of the Pocomoke State Forest. Tr",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "This 230 acre Natural Area is owned by the State of Maryland and is managed as a component of the Pocomoke State Forest.",
     "url": "https://dnr.maryland.gov/wildlife/Pages/NaturalAreas/Eastern/Furnace.aspx",
     "why": "another park / unit named in the sentence"
@@ -2128,12 +1951,12 @@
    "verdict": "ours unknown"
   },
   "US-10763": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Fishing Bay Marshes Natural Area",
    "official": null,
    "ours": {
-    "acres": 16703,
+    "acres": 17206,
     "manager": "",
     "pieces": [],
     "pin": "inside",
@@ -2162,7 +1985,7 @@
    "verdict": "no size on page"
   },
   "US-10764": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Andover Flatwoods Natural Area",
    "official": null,
@@ -2196,7 +2019,7 @@
    "verdict": "ours unknown"
   },
   "US-10765": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Millington Natural Area",
    "official": null,
@@ -2231,7 +2054,7 @@
   },
   "US-10766": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 2,000 acres, no total words near it)",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Swallow Falls Natural Area",
    "official": {
@@ -2239,13 +2062,13 @@
     "as": "2,000 acres",
     "clean": false,
     "line": "logged or significantly disturbed by people since the 1700s. Of the 2.7 million acres of forest in Maryland, 2,000 acres are officially designated as old growth and 1.8% of that is hemlock forest. This park shelters the same preci",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "acres of forest in Maryland, 2,000 acres are officially designated as old growth",
     "url": "https://dnr.maryland.gov/wildlife/Pages/NaturalAreas/Western/Swallow-Falls.aspx",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 322,
+    "acres": 598,
     "manager": "",
     "pieces": [
      [
@@ -2267,14 +2090,14 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 84,
+   "pct": 70,
    "same_agency": false,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 2,
     "size": 1,
-    "source": 2
+    "source": 1
    },
    "sizes": [
     {
@@ -2310,7 +2133,7 @@
    "verdict": "unsure"
   },
   "US-10767": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lostland Run Natural Area",
    "official": null,
@@ -2344,7 +2167,7 @@
    "verdict": "ours unknown"
   },
   "US-10768": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "South Savage Mountain Natural Area",
    "official": {
@@ -2352,7 +2175,7 @@
     "as": "2,000 acres",
     "clean": true,
     "line": "tive aquatic species, including fish such as brook trout. South Savage Mountain Natural Area encompasses over 2,000 acres and provides habitat for more than a dozen rare plants and animals. It is contained within Savage River State",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "South Savage Mountain Natural Area encompasses over 2,000 acres and provides habitat for more than a dozen rare plants and animals.",
     "url": "https://dnr.maryland.gov/wildlife/Pages/NaturalAreas/Western/South-Savage-Mountain.aspx",
     "why": "clean total"
@@ -2407,7 +2230,7 @@
    "verdict": "ours unknown"
   },
   "US-10769": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
@@ -2424,7 +2247,7 @@
     "as": "1,400 acres",
     "clean": false,
     "line": "eam. The intact forested watershed harbors these species and many more. Monroe Run Natural Area contains over 1,400 acres of forest within Savage River State Forest, the largest state forest in Maryland. Savage River State Forest i",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Monroe Run Natural Area contains over 1,400 acres of forest within Savage River State Forest, the largest state forest in Maryland.",
     "url": "https://dnr.maryland.gov/wildlife/Pages/NaturalAreas/Western/Monroe-Run.aspx",
     "why": "total-looking"
@@ -2470,7 +2293,7 @@
    "verdict": "ours unknown"
   },
   "US-10770": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
@@ -2513,7 +2336,7 @@
    "verdict": "ours unknown"
   },
   "US-10771": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Cat Rock and Bob's Hill Natural Area",
    "official": null,
@@ -2547,7 +2370,7 @@
    "verdict": "ours unknown"
   },
   "US-10773": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Masemore Hemlock Ravines Natural Area",
    "official": {
@@ -2555,7 +2378,7 @@
     "as": "215 acres",
     "clean": false,
     "line": "er than 20 stands of eastern hemlock have been documented in the Piedmont portion of Maryland, totaling about 215 acres. While many of these stands are now isolated, it is believed that they were once part of a widespread forest",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Fewer than 20 stands of eastern hemlock have been documented in the Piedmont portion of Maryland, totaling about 215 acres.",
     "url": "https://dnr.maryland.gov/wildlife/Pages/NaturalAreas/Central/Masemore-Hemlock-Ravines.aspx",
     "why": "history"
@@ -2564,7 +2387,7 @@
     "acres": 0,
     "manager": "",
     "pieces": [],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 1
    },
@@ -2578,10 +2401,10 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 1
    },
@@ -2601,8 +2424,7 @@
    "verdict": "ours unknown"
   },
   "US-10774": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
@@ -2619,16 +2441,16 @@
     "as": "500 acres",
     "clean": true,
     "line": "and oak can be found in Prince George's and Anne Arundel Counties. Plum Creek Natural Area encompasses nearly 500 acres and lies within Elk Neck State Forest, managed by the Maryland Forest Service. Seasonal Pools Vernal pools ar",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Plum Creek Natural Area encompasses nearly 500 acres and lies within Elk Neck State Forest, managed by the Maryland Forest Service.",
     "url": "https://dnr.maryland.gov/wildlife/Pages/NaturalAreas/Central/Plum-Creek.aspx",
     "why": "clean total"
    },
    "ours": {
-    "acres": 101,
+    "acres": 460,
     "manager": "",
     "pieces": [],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 2
    },
@@ -2640,13 +2462,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 80,
+   "pct": 8,
    "same_agency": false,
-   "score": 4,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
-    "size": 0,
+    "pin": 2,
+    "size": 2,
     "source": 1
    },
    "sizes": [
@@ -2671,10 +2493,10 @@
    ],
    "t": "Natural Area",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-10775": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Black Marsh Natural Area",
    "official": null,
@@ -2709,7 +2531,7 @@
   },
   "US-10779": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
@@ -2726,13 +2548,13 @@
     "as": "1,300 acres",
     "clean": false,
     "line": "leaves and seeds, and may have spread the species for their use. Mattawoman Creek Natural Area includes over 1,300 acres in northwestern Charles County. This area is one of Maryland's most significant natural resource areas, and t",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Mattawoman Creek Natural Area includes over 1,300 acres in northwestern Charles County.",
     "url": "https://dnr.maryland.gov/wildlife/Pages/NaturalAreas/Southern/Mattawoman-Creek.aspx",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 1980,
+    "acres": 2872,
     "manager": "",
     "pieces": [
      [
@@ -2772,7 +2594,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 52,
+   "pct": 121,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -2797,7 +2619,7 @@
    "verdict": "off"
   },
   "US-10780": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Allens Fresh Natural Area",
    "official": {
@@ -2805,7 +2627,7 @@
     "as": "250 acres",
     "clean": true,
     "line": "he sandy, tidal mudflats and rare plants are threatened by excessive runoff. Allens Fresh comprises more than 250 acres owned by the State and managed by the Maryland Park Service. Rarity Refuge Long's bittercress is a small plan",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Allens Fresh comprises more than 250 acres owned by the State and managed by the Maryland Park Service.",
     "url": "https://dnr.maryland.gov/wildlife/Pages/NaturalAreas/Southern/Allens-Fresh.aspx",
     "why": "clean total"
@@ -2852,7 +2674,7 @@
   },
   "US-10781": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Calvert Cliffs Natural Area",
    "official": null,
@@ -2886,12 +2708,12 @@
     }
    ],
    "pct": null,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 2,
     "size": 1,
-    "source": 2
+    "source": 1
    },
    "sizes": [
     {
@@ -2928,7 +2750,7 @@
   },
   "US-10784": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Deep Creek Lake Natural Resource Management Area",
    "official": {
@@ -2936,13 +2758,13 @@
     "as": "64.7 square miles",
     "clean": false,
     "line": "with a storage volume of approximately 106,000 acre-ft. at the 2,462 elevation level. The lake’s drainage is 64.7 square miles. Currently the water withdrawal from the lake is permitted for the Deep Creek power station and other limited",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The lake’s drainage is 64.7 square miles.",
     "url": "https://dnr.maryland.gov/publiclands/Pages/western/deepcreeknrma.aspx",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 5722,
+    "acres": 4963,
     "manager": "",
     "pieces": [
      [
@@ -2981,7 +2803,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 86,
+   "pct": 88,
    "same_agency": false,
    "score": 4,
    "score_parts": {
@@ -3069,7 +2891,7 @@
    "verdict": "off"
   },
   "US-11231": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Sideling Hill Creek State Park",
    "ours": null,
@@ -3079,8 +2901,7 @@
    "verdict": "no outline"
   },
   "US-13377": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Freedman's State Park",
    "official": {
@@ -3088,16 +2909,16 @@
     "as": "1,000 acre",
     "clean": true,
     "line": "e Visitor Center: Open by Appointment Only . ​ Section3 Lt_Inner_Content Welcome! ​​​​​​​​​​​​​​​ ​​​ ​​A new 1,000-acre park, Freedman’s State Park tells the story of a​n African American family that overcame enslavement to becom",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "​​A new 1,000-acre park, Freedman’s State Park tells the story of a​n African American family that overcame enslavement to become a prosperous and influential family in northern Montgomery County.",
     "url": "https://dnr.maryland.gov/publiclands/Pages/central/Freedmans.aspx",
     "why": "clean total"
    },
    "ours": {
-    "acres": 256,
+    "acres": 1015,
     "manager": "",
     "pieces": [],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 2
    },
@@ -3109,13 +2930,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 74,
+   "pct": 2,
    "same_agency": false,
-   "score": 5,
+   "score": 8,
    "score_parts": {
     "name": 2,
-    "pin": 1,
-    "size": 0,
+    "pin": 2,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -3140,10 +2961,10 @@
    ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-13564": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Savage Highlands State Park",
    "ours": null,
@@ -3153,7 +2974,8 @@
    "verdict": "no outline"
   },
   "US-1559": {
-   "checked": "2026-11-09",
+   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
@@ -3170,13 +2992,13 @@
     "as": "450 acre",
     "clean": false,
     "line": "21811 email: [email protected] ​ ​​​ Hunting Assateague State Park Hunting ​ Archery-only hunting for deer in 450-acre designated hunting area with a limit of 10 hunters per day (plus one disabled hunter) with daily sign-in requ",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Archery-only hunting for deer in 450-acre designated hunting area with a limit of 10 hunters per day (plus one disabled hunter) with daily sign-in required.",
     "url": "https://dnr.maryland.gov/publiclands/pages/eastern/assateague.aspx",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 477,
+    "acres": 912,
     "manager": "",
     "pieces": [
      [
@@ -3186,7 +3008,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
@@ -3198,13 +3020,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 6,
+   "pct": 103,
    "same_agency": false,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 1,
-    "size": 2,
+    "pin": 2,
+    "size": 0,
     "source": 2
    },
    "sizes": [
@@ -3220,15 +3042,15 @@
    ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "off"
   },
   "US-1560": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Big Run State Park",
    "official": null,
    "ours": {
-    "acres": 114,
+    "acres": 186,
     "manager": "",
     "pieces": [
      [
@@ -3265,7 +3087,7 @@
   },
   "US-1561": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bill Burton Fishing Pier State Park",
    "official": {
@@ -3273,16 +3095,16 @@
     "as": "25 acres",
     "clean": true,
     "line": "albot Trails & Shoreline: Sunrise-sunset daily. Bill Burton Fishing Pier State Park consists of approximately 25 acres of park property, split between Talbot County and Dorchester County, on either side of the Choptank River. Th",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Bill Burton Fishing Pier State Park consists of approximately 25 acres of park property, split between Talbot County and Dorchester County, on either side of the Choptank River.",
     "url": "https://dnr.maryland.gov/publiclands/pages/eastern/choptankpier.aspx",
     "why": "clean total"
    },
    "ours": {
-    "acres": 29,
+    "acres": 34,
     "manager": "",
     "pieces": [],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 7
    },
@@ -3294,12 +3116,12 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 16,
+   "pct": 36,
    "same_agency": false,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 0,
     "source": 2
    },
@@ -3320,7 +3142,7 @@
   },
   "US-1562": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Calvert Cliffs State Park",
    "official": {
@@ -3328,7 +3150,7 @@
     "as": "550 acres",
     "clean": false,
     "line": "or more information. Hunting Calvert Cliffs State Park Hunting Regulations ​ Click here for map Approximately 550 acres are open on Calvert Cliffs State Park for public hunting, subject to restrictions. H​​unting is allowed for a",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Approximately 550 acres are open on Calvert Cliffs State Park for public hunting, subject to restrictions.",
     "url": "https://dnr.maryland.gov/publiclands/pages/southern/calvertcliffs.aspx",
     "why": "total-looking"
@@ -3424,12 +3246,12 @@
   },
   "US-1563": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Casselman River Bridge State Park",
    "official": null,
    "ours": {
-    "acres": 1,
+    "acres": 2,
     "manager": "",
     "pieces": [
      [
@@ -3480,7 +3302,8 @@
    "verdict": "unsure"
   },
   "US-1564": {
-   "checked": "2026-11-09",
+   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
@@ -3497,13 +3320,13 @@
     "as": "600 acre",
     "clean": false,
     "line": "-use park that boasts a waterfront on the beautiful Port Tobacco River, a tributary of the Potomac River. The 600-acre Chapel Point State Park is located in southern Charles County, about 5 miles south of LaPlata on Chapel Point",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The 600-acre Chapel Point State Park is located in southern Charles County, about 5 miles south of LaPlata on Chapel Point Road.",
     "url": "https://dnr.maryland.gov/publiclands/pages/southern/chapelpoint.aspx",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 627,
+    "acres": 877,
     "manager": "",
     "pieces": [
      [
@@ -3525,13 +3348,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 4,
+   "pct": 46,
    "same_agency": false,
-   "score": 8,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 0,
     "source": 2
    },
    "sizes": [
@@ -3556,16 +3379,16 @@
    ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "off"
   },
   "US-1565": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Chapman State Park",
    "official": null,
    "ours": {
-    "acres": 1769,
+    "acres": 2202,
     "manager": "",
     "pieces": [
      [
@@ -3623,7 +3446,7 @@
   },
   "US-1566": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 4,400 acre, no total words near it)",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Cunningham Falls State Park",
    "official": {
@@ -3631,13 +3454,13 @@
     "as": "4,400 acre",
     "clean": false,
     "line": "time. No other facility use service charges will be waived. ​​​ Hunting Policy: General hunting permitted in 4,400 acre designated hunting area Nighttime furbearer hunting by permit only Hunting permitted Monday-Saturday Hunt fro",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "General hunting permitted in 4,400 acre designated hunting area",
     "url": "https://dnr.maryland.gov/publiclands/pages/western/cunningham.aspx",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 6389,
+    "acres": 6411,
     "manager": "",
     "pieces": [
      [
@@ -3669,7 +3492,7 @@
      "why": "about / history page of the park's site"
     }
    ],
-   "pct": 45,
+   "pct": 46,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -3703,16 +3526,24 @@
    "verdict": "unsure"
   },
   "US-1567": {
-   "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Dans Mountain State Park",
-   "official": null,
+   "official": {
+    "acres": 481.0,
+    "as": "481 acre",
+    "clean": false,
+    "line": "in Lonaconing, Maryland, Dans Mountain State Park is the perfect place to cool down on a hot summer day. The 481-acre park features a fully accessible swimming pool, four large group pavilions, a recycled-tire playground and a",
+    "read": "2026-11-22",
+    "sent": "The 481-acre park features a fully accessible swimming pool, four large group pavilions, a recycled-tire playground and a peaceful pond for fishing.",
+    "url": "https://dnr.maryland.gov/publiclands/pages/western/dansmountain.aspx",
+    "why": "part (a lake, a purchase, a campground…)"
+   },
    "ours": {
-    "acres": 334,
+    "acres": 497,
     "manager": "",
     "pieces": [],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 2
    },
@@ -3729,12 +3560,13 @@
      "why": "about / history page of the park's site"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 3,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
-    "pin": 1,
-    "size": 1,
+    "pin": 2,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -3750,11 +3582,11 @@
    ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "unsure"
+   "verdict": "agree"
   },
   "US-1568": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Deep Creek Lake State Park",
    "official": {
@@ -3762,13 +3594,13 @@
     "as": "3,900 acre",
     "clean": true,
     "line": ". The park encompasses over 1,800 acres and adjoins Deep Creek Lake Natural Resources Management Area and its 3,900-acre man-made lake. Deep Creek Lake State Park lies just west of the Allegheny Front on a large plateau known as t",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The park encompasses over 1,800 acres and adjoins Deep Creek Lake Natural Resources Management Area and its 3,900-acre man-made lake.",
     "url": "https://dnr.maryland.gov/publiclands/pages/western/deepcreek.aspx",
     "why": "clean total"
    },
    "ours": {
-    "acres": 6539,
+    "acres": 6123,
     "manager": "",
     "pieces": [
      [
@@ -3813,7 +3645,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 68,
+   "pct": 57,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -3875,7 +3707,7 @@
   },
   "US-1569": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Elk Neck State Park",
    "official": {
@@ -3883,13 +3715,13 @@
     "as": "2,370 acres",
     "clean": false,
     "line": "l County on a peninsula, formed by the Chesapeake Bay on the west and the Elk River on the east. The park has 2,370 acres of land with varied landscapes that include marshlands, heavily wooded areas, white clay cliffs and sandy sho",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The park has 2,370 acres of land with varied landscapes that include marshlands, heavily wooded areas, white clay cliffs and sandy shorelines.",
     "url": "https://dnr.maryland.gov/publiclands/pages/central/elkneck.aspx",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 5651,
+    "acres": 6198,
     "manager": "",
     "pieces": [
      [
@@ -3928,7 +3760,7 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 138,
+   "pct": 162,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -3954,12 +3786,12 @@
   },
   "US-1570": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Fort Frederick State Park",
    "official": null,
    "ours": {
-    "acres": 638,
+    "acres": 766,
     "manager": "",
     "pieces": [
      [
@@ -4010,7 +3842,7 @@
    "verdict": "unsure"
   },
   "US-1572": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Franklin Point State Park",
    "official": {
@@ -4018,16 +3850,16 @@
     "as": "477 acre",
     "clean": false,
     "line": ": Dent Road Entrance 38.813919, -76.512214 Hours: Sunrise to Sunset​ Franklin Point State Park is a beautiful 477 acre peninsula nestled among the Chesapeake Bay, Deep Creek and Flag Pond, in scenic southern Anne Arundel County.",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Franklin Point State Park is a beautiful 477 acre peninsula nestled among the Chesapeake Bay, Deep Creek and Flag Pond, in scenic southern Anne Arundel County.",
     "url": "http://dnr.maryland.gov/publiclands/pages/southern/franklinpoint.aspx",
     "why": "part (a lake, a purchase, a campground…)"
    },
    "ours": {
-    "acres": 411,
+    "acres": 504,
     "manager": "",
     "pieces": [],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "",
     "unknown_pieces": 4
    },
@@ -4039,12 +3871,12 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 14,
+   "pct": 6,
    "same_agency": false,
-   "score": 8,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 2,
     "source": 2
    },
@@ -4064,12 +3896,12 @@
    "verdict": "agree"
   },
   "US-1573": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Gambrill State Park",
    "official": null,
    "ours": {
-    "acres": 906,
+    "acres": 1227,
     "manager": "",
     "pieces": [
      [
@@ -4079,7 +3911,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 4
    },
@@ -4097,10 +3929,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -4111,7 +3943,7 @@
   },
   "US-1574": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 100 acres, no total words near it)",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Gathland State Park",
    "official": {
@@ -4119,13 +3951,13 @@
     "as": "100 acres",
     "clean": false,
     "line": "visiting the South Mountain region, specifically Crampton’s Gap, he fell in love with the area and purchased 100 acres of the mountainous land. For the next 20 years, Gath designed and built a total of 10 structures on the summe",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "While visiting the South Mountain region, specifically Crampton’s Gap, he fell in love with the area and purchased 100 acres of the mountainous land.",
     "url": "https://dnr.maryland.gov/publiclands/Pages/western/Gathland/History-Gathland.aspx",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 200,
+    "acres": 152,
     "manager": "",
     "pieces": [
      [
@@ -4164,7 +3996,7 @@
      "why": "about / history page of the park's site"
     }
    ],
-   "pct": 100,
+   "pct": 52,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -4190,7 +4022,7 @@
   },
   "US-1575": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 11,000 acres, no total words near it)",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Greenbrier State Park",
    "official": {
@@ -4198,13 +4030,13 @@
     "as": "11,000 acres",
     "clean": false,
     "line": "nteer at the South Mountain Recreation Area, you are about to assume an important role in the preservation of 11,000 acres of public land, two national historic monuments, Maryland’s first State Battlefield and one of Maryland’s mos",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "As a volunteer at the South Mountain Recreation Area, you are about to assume an important role in the preservation of 11,000 acres of public land, two national historic monuments, Maryland’s first State Battlefield and one of Maryland’s most popular multi-use recreation parks.",
     "url": "https://dnr.maryland.gov/publiclands/pages/western/greenbrier.aspx",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 1195,
+    "acres": 1372,
     "manager": "",
     "pieces": [
      [
@@ -4238,7 +4070,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 89,
+   "pct": 88,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -4299,8 +4131,7 @@
    "verdict": "unsure"
   },
   "US-1576": {
-   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Greenwell State Park",
    "official": {
@@ -4308,13 +4139,13 @@
     "as": "596 acre",
     "clean": true,
     "line": "87 Hours: May through September 7:00 a.m. to sunset October through April 8:00 a.m. to sunset​ Greenwell is a 596-acre state park located on the Patuxent River in St. Mary's County, Maryland. In 1971, John Phillip Greenwell, Jr.",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Greenwell is a 596-acre state park located on the Patuxent River in St.",
     "url": "https://dnr.maryland.gov/publiclands/pages/southern/greenwell.aspx",
     "why": "clean total"
    },
    "ours": {
-    "acres": 702,
+    "acres": 635,
     "manager": "",
     "pieces": [
      [
@@ -4336,13 +4167,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 18,
+   "pct": 7,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -4376,10 +4207,10 @@
    ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-1577": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Gunpowder Falls State Park",
    "official": {
@@ -4387,7 +4218,7 @@
     "as": "18,000 acres",
     "clean": false,
     "line": "e Gunpowder Falls, Gunpowder Falls Sta​te Park is​ now one of Maryland’​s largest state parks. Cover​ing over 18,000 acres in Harford and Baltimore Counties, G​unpowder’s narrow corridors host a varied topography, ranging from tidal",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Cover​ing over 18,000 acres in Harford and Baltimore Counties, G​unpowder’s narrow corridors host a varied topography, ranging from tidal wetlands to steep and rugged slopes.",
     "url": "https://dnr.maryland.gov/publiclands/pages/central/gunpowder.aspx",
     "why": "total-looking"
@@ -4538,8 +4369,8 @@
    "verdict": "agree"
   },
   "US-1578": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-09",
+   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Hart-Miller Island State Park",
    "official": {
@@ -4547,13 +4378,13 @@
     "as": "1,100 acre",
     "clean": true,
     "line": "mber 30th Camping Available May 1st - September 30th Accessible only by personal boat Hart-Miller Island is a 1,100-acre island located in Baltimore County on the Chesapeake Bay near the mouth of Middle River and is a must see for",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Hart-Miller Island is a 1,100-acre island located in Baltimore County on the Chesapeake Bay near the mouth of Middle River and is a must see for those who want to get away from it all.",
     "url": "https://dnr.maryland.gov/publiclands/pages/central/hartmiller.aspx",
     "why": "clean total"
    },
    "ours": {
-    "acres": 608,
+    "acres": 1307,
     "manager": "",
     "pieces": [
      [
@@ -4575,7 +4406,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 45,
+   "pct": 19,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -4601,7 +4432,7 @@
   },
   "US-1579": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Herrington Manor State Park",
    "official": {
@@ -4609,13 +4440,13 @@
     "as": "365 acre",
     "clean": false,
     "line": "​ Herrington Manor Cross Country Ski Report ​ ​ Herrington Manor was designated as a state park in 1964. The 365-acre park, located within Garrett State Forest , offers swimming, canoeing, kayaking, biking, picnicking, hiking,",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The 365-acre park, located within",
     "url": "https://dnr.maryland.gov/publiclands/pages/western/herrington.aspx",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 256,
+    "acres": 286,
     "manager": "",
     "pieces": [
      [
@@ -4637,7 +4468,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 30,
+   "pct": 22,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -4671,21 +4502,22 @@
    "verdict": "off"
   },
   "US-1580": {
-   "checked": "2026-11-09",
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 2,900 acre, no total words near it)",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Janes Island State Park",
    "official": {
     "acres": 2900.0,
-    "as": "2,900 acres",
+    "as": "2,900 acre",
     "clean": false,
-    "line": "areas, pavilions, and the boat ramp and marina. The island portion of the park – Janes Island – includes over 2,900 acres of saltmarsh, over 30 miles of water trails and miles of isolated pristine beaches. Although people have harv",
-    "read": "2026-11-09",
-    "sent": "The island portion of the park – Janes Island – includes over 2,900 acres of saltmarsh, over 30 miles of water trails and miles of isolated pristine beaches.",
+    "line": "quires you to be in the park before or after the posted hours. Hunting Policy: Waterfowl hunting permitted in 2,900 acre designated hunting area. All other hunting is prohibited, including hunting of all kinds on the mainland port",
+    "read": "2026-11-22",
+    "sent": "Waterfowl hunting permitted in 2,900 acre designated hunting area.",
     "url": "https://dnr.maryland.gov/publiclands/pages/eastern/janesisland.aspx",
-    "why": "part (a lake, a purchase, a campground…)"
+    "why": "no total words near it"
    },
    "ours": {
-    "acres": 2483,
+    "acres": 3387,
     "manager": "",
     "pieces": [
      [
@@ -4719,13 +4551,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 14,
+   "pct": 17,
    "same_agency": false,
-   "score": 8,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 1,
     "source": 2
    },
    "sizes": [
@@ -4750,10 +4582,10 @@
    ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "unsure"
   },
   "US-1581": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Jonas Green State Park",
    "official": null,
@@ -4794,15 +4626,15 @@
    "verdict": "no size on page"
   },
   "US-1582": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Martinak State Park",
    "official": null,
    "ours": {
-    "acres": 99,
+    "acres": 146,
     "manager": "",
     "pieces": [],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 4
    },
@@ -4815,10 +4647,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -4828,17 +4660,17 @@
    "verdict": "no size on page"
   },
   "US-1583": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Matthew Henson State Park",
    "official": null,
    "ours": {
-    "acres": 158,
+    "acres": 188,
     "dissolved": {
      "after": 61,
      "before": 122,
      "copies": 0,
-     "key_union": 158,
+     "key_union": 188,
      "parts": 2,
      "records": 3,
      "summed": 61,
@@ -4854,7 +4686,7 @@
       "words"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
@@ -4867,10 +4699,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -4880,12 +4712,12 @@
    "verdict": "no size on page"
   },
   "US-1584": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "New Germany State Park",
    "official": null,
    "ours": {
-    "acres": 538,
+    "acres": 676,
     "manager": "",
     "pieces": [
      [
@@ -4933,8 +4765,7 @@
    "verdict": "no size on page"
   },
   "US-1585": {
-   "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Newtowne Neck State Park",
    "official": {
@@ -4942,13 +4773,13 @@
     "as": "794 acre",
     "clean": true,
     "line": "er through April 8:00 a.m. to sunset ​ Closed on Christmas Day ​ About the Park Newtowne Neck State Park is a 794-acre peninsula surrounded by Breton Bay, St. Clements Bay and the Potomac River. It has seven miles of ecologicall",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Newtowne Neck State Park is a 794-acre peninsula surrounded by Breton Bay, St.",
     "url": "https://dnr.maryland.gov/publiclands/pages/southern/newtowne.aspx",
     "why": "clean total"
    },
    "ours": {
-    "acres": 511,
+    "acres": 839,
     "manager": "",
     "pieces": [
      [
@@ -4976,13 +4807,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 36,
+   "pct": 6,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -4998,25 +4829,24 @@
    ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-1586": {
-   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "North Point State Park",
    "official": {
-    "acres": 300.0,
-    "as": "300 acres",
+    "acres": 1310.0,
+    "as": "1,310 acre",
     "clean": false,
-    "line": "North Point Road in Sparrows Point, Maryland in Baltimore County. The hunting area encompasses approximately 300 acres. Seasons Open North Point State Park is open for deer archery hunting only. Be sure to consult your Maryland",
-    "read": "2026-11-09",
-    "sent": "The hunting area encompasses approximately 300 acres.",
+    "line": "Point is located in Baltimore County on the shores of the Chesapeake Bay and is rich in natural beauty. This 1,310 acre park in Edgemere was once the site of the Bay Shore Amusement Park, a popular destination for summer visitors",
+    "read": "2026-11-22",
+    "sent": "This 1,310 acre park in Edgemere was once the site of the Bay Shore Amusement Park, a popular destination for summer visitors from 1906 to 194​7.",
     "url": "https://dnr.maryland.gov/publiclands/pages/central/northpoint.aspx",
-    "why": "total-looking"
+    "why": "history"
    },
    "ours": {
-    "acres": 1679,
+    "acres": 1361,
     "manager": "",
     "pieces": [
      [
@@ -5050,13 +4880,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 460,
+   "pct": 4,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -5108,11 +4938,10 @@
    ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-1587": {
-   "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Palmer State Park",
    "official": {
@@ -5120,13 +4949,13 @@
     "as": "555 acre",
     "clean": false,
     "line": "der an unbroken canopy of second-growth and riparian forests, two miles of scenic Deer Creek runs through the 555-acre Palmer State Park. Historic sites can be found along the creek banks and native flora and fauna thrive in the",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Under an unbroken canopy of second-growth and riparian forests, two miles of scenic Deer Creek runs through the 555-acre Palmer State Park.",
     "url": "https://dnr.maryland.gov/publiclands/pages/central/palmer.aspx",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 664,
+    "acres": 608,
     "manager": "",
     "pieces": [
      [
@@ -5154,13 +4983,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 20,
+   "pct": 10,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -5176,11 +5005,10 @@
    ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-1588": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Patapsco Valley State Park",
    "official": {
@@ -5188,13 +5016,13 @@
     "as": "16,043 acres",
     "clean": true,
     "line": "nner_Content Welcome!​ Patapsco Valley State Park extends along 32 ​miles of the Patapsco River, encompassing 16,043 acres and eight developed recreational areas. Recreational opportunities include hiking, fishing, camping, canoeing",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Patapsco Valley State Park extends along 32 ​miles of the Patapsco River, encompassing 16,043 acres and eight developed recreational areas.",
     "url": "https://dnr.maryland.gov/publiclands/pages/central/patapsco.aspx",
     "why": "clean total"
    },
    "ours": {
-    "acres": 11306,
+    "acres": 14225,
     "manager": "",
     "pieces": [
      [
@@ -5228,13 +5056,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 30,
+   "pct": 11,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -5268,10 +5096,10 @@
    ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-1589": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Patuxent River State Park",
    "official": {
@@ -5279,13 +5107,13 @@
     "as": "6,700 acres",
     "clean": true,
     "line": "d in Howard and Montgomery counties, along the upper 12 miles of the Patuxent River, the park is comprised of 6,700 acres of natural areas and farmlands. A portion of the park is a state wildlands area . Recreational use is primari",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Located in Howard and Montgomery counties, along the upper 12 miles of the Patuxent River, the park is comprised of 6,700 acres of natural areas and farmlands.",
     "url": "https://dnr.maryland.gov/publiclands/pages/central/patuxentriver.aspx",
     "why": "clean total"
    },
    "ours": {
-    "acres": 5823,
+    "acres": 5767,
     "manager": "",
     "pieces": [
      [
@@ -5318,7 +5146,7 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 13,
+   "pct": 14,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -5344,7 +5172,7 @@
   },
   "US-1590": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 240 acre, no total words near it)",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
@@ -5361,13 +5189,13 @@
     "as": "240 acre",
     "clean": false,
     "line": "he Causeway area. ​ Hunting ​​Archery-only hunting for deer permitted during the early muzzleloader season in 240 acre Jacobs tract designated hunting area with daily sign-in required. Waterfowl hunting at designated blind sites",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "​​Archery-only hunting for deer permitted during the early muzzleloader season in 240 acre Jacobs tract designated hunting area with daily sign-in required.",
     "url": "https://dnr.maryland.gov/publiclands/pages/southern/pointlookout.aspx",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 1350,
+    "acres": 1065,
     "manager": "",
     "pieces": [
      [
@@ -5405,7 +5233,7 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 462,
+   "pct": 344,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -5431,7 +5259,7 @@
   },
   "US-1591": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
@@ -5448,7 +5276,7 @@
     "as": "548 acres",
     "clean": false,
     "line": "rles County Recreation and Parks for operation as a County Park with boat launching facilities. An additional 548 acres is managed by the Bureau of Land Management as the Douglas Point Special Recreation Management Area. Click He",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "An additional 548 acres is managed by the Bureau of Land Management as the Douglas Point Special Recreation Management Area.",
     "url": "https://dnr.maryland.gov/wildlife/Pages/publiclands/southern/nanjemoy.aspx",
     "why": "total-looking"
@@ -5517,12 +5345,12 @@
   },
   "US-1592": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Rocks State Park",
    "official": null,
    "ours": {
-    "acres": 1317,
+    "acres": 1077,
     "manager": "",
     "pieces": [
      [
@@ -5574,7 +5402,7 @@
    "verdict": "unsure"
   },
   "US-1593": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Rocky Gap State Park",
    "official": {
@@ -5582,13 +5410,13 @@
     "as": "3,000 acres",
     "clean": false,
     "line": "nt Welcome​! Rocky Gap State Park is located in Western Maryland’s Allegany County. The park encompasses over 3,000 acres of public land for visitors to enjoy. Rugged mountains surround the park. The 243-acre Lake Habeeb is known f",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The park encompasses over 3,000 acres of public land for visitors to enjoy.",
     "url": "https://dnr.maryland.gov/publiclands/pages/western/rockygap.aspx",
     "why": "part (a lake, a purchase, a campground…)"
    },
    "ours": {
-    "acres": 2681,
+    "acres": 2868,
     "manager": "",
     "pieces": [
      [
@@ -5610,7 +5438,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 11,
+   "pct": 4,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -5698,12 +5526,12 @@
    "verdict": "agree"
   },
   "US-1594": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Rosaryville State Park",
    "official": null,
    "ours": {
-    "acres": 1037,
+    "acres": 1215,
     "manager": "",
     "pieces": [
      [
@@ -5746,7 +5574,7 @@
   },
   "US-1595": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Sandy Point State Park",
    "official": {
@@ -5754,13 +5582,13 @@
     "as": "215 acres",
     "clean": true,
     "line": "Environmental Study Area Corcoran Woods The Corcoran Environmental Study Area or “Corcoran Woods” consists of 215 acres of forested land located on the northwest portion of Sandy Point State Park. Corcoran Woods is administered b",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The Corcoran Environmental Study Area or “Corcoran Woods” consists of 215 acres of forested land located on the northwest portion of Sandy Point State Park.",
     "url": "https://dnr.maryland.gov/publiclands/pages/southern/sandypoint.aspx",
-    "why": "clean total; the agency's pages disagree: another of its pages says 685 acres (that one matches our outline)"
+    "why": "clean total"
    },
    "ours": {
-    "acres": 681,
+    "acres": 1129,
     "manager": "",
     "pieces": [
      [
@@ -5782,7 +5610,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 217,
+   "pct": 425,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -5820,15 +5648,6 @@
      "why": "total-looking"
     },
     {
-     "acres": 293.0,
-     "as": "293 acres",
-     "clean": false,
-     "line": "cess. A reservation is required to visit the property. This includes both hunting and scouting. Approximately 293 acres are open for hunting at Holly Beach Farm NRMA. Deer, squirrel, rabbit, dove, woodcock, and waterfowl hunting",
-     "total_like": false,
-     "url": "https://dnr.maryland.gov/publiclands/pages/southern/sandypoint.aspx",
-     "why": "part (a lake, a purchase, a campground…)"
-    },
-    {
      "acres": 215.0,
      "as": "215 acres",
      "clean": true,
@@ -5861,7 +5680,7 @@
    "verdict": "off"
   },
   "US-1596": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Seneca Creek State Park",
    "official": {
@@ -5869,13 +5688,13 @@
     "as": "6,300 acres",
     "clean": true,
     "line": "-October 10 a.m. to Sunset, November-February ​ ​​ Section3 Lt_Inner_Content Welcome!​ The park, comprised of 6,300 acres, extends along 14 scenic miles of Seneca Creek, as it winds its way to the Potomac River. The Clopper Day-Use",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The park, comprised of 6,300 acres, extends along 14 scenic miles of Seneca Creek, as it winds its way to the Potomac River.",
     "url": "https://dnr.maryland.gov/publiclands/pages/central/seneca.aspx",
     "why": "clean total"
    },
    "ours": {
-    "acres": 5808,
+    "acres": 6396,
     "manager": "",
     "pieces": [
      [
@@ -5909,7 +5728,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 8,
+   "pct": 2,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -5997,7 +5816,8 @@
    "verdict": "agree"
   },
   "US-1597": {
-   "checked": "2026-11-09",
+   "cause": "our union: one of our pieces alone matches the agency (double count?)",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Smallwood State Park",
    "official": {
@@ -6005,13 +5825,13 @@
     "as": "628 acre",
     "clean": true,
     "line": "allwood, a native of Charles County and the highest-ranked Marylander in the American Revolutionary War, is a 628-acre park offering a variety of outdoor activities. The park features a marina, boat ramps, picnic areas, camping",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Smallwood State Park, named after General William Smallwood, a native of Charles County and the highest-ranked Marylander in the American Revolutionary War, is a 628-acre park offering a variety of outdoor activities.",
     "url": "https://dnr.maryland.gov/publiclands/pages/southern/smallwood.aspx",
     "why": "clean total"
    },
    "ours": {
-    "acres": 539,
+    "acres": 949,
     "manager": "",
     "pieces": [
      [
@@ -6039,13 +5859,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 14,
+   "pct": 51,
    "same_agency": false,
-   "score": 8,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 0,
     "source": 2
    },
    "sizes": [
@@ -6070,20 +5890,20 @@
    ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "off"
   },
   "US-1598": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "South Mountain State Park",
    "official": null,
    "ours": {
-    "acres": 10655,
+    "acres": 10421,
     "dissolved": {
      "after": 9409,
      "before": 18768,
      "copies": 0,
-     "key_union": 10655,
+     "key_union": 10421,
      "parts": 11,
      "records": 15,
      "summed": 9409,
@@ -6149,12 +5969,12 @@
   },
   "US-1599": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "St. Clements Island State Park",
    "official": null,
    "ours": {
-    "acres": 44,
+    "acres": 49,
     "manager": "",
     "pieces": [
      [
@@ -6201,7 +6021,7 @@
   },
   "US-1600": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "St. Mary's River State Park",
    "official": {
@@ -6209,13 +6029,13 @@
     "as": "2,200 acres",
     "clean": false,
     "line": "ree entry through the automated gate system located at the Lake Area of the park. Site 2 covers approximately 2,200 acres and is primarily undeveloped. It is a wildlands area and a managed hunting area. Parking is permitted in desi",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Site 2 covers approximately 2,200 acres and is primarily undeveloped.",
     "url": "https://dnr.maryland.gov/publiclands/pages/southern/stmarysriver.aspx",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 3651,
+    "acres": 3504,
     "manager": "",
     "pieces": [
      [
@@ -6243,7 +6063,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 66,
+   "pct": 59,
    "same_agency": false,
    "score": 5,
    "score_parts": {
@@ -6277,7 +6097,7 @@
    "verdict": "off"
   },
   "US-1601": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Susquehanna State Park",
    "official": {
@@ -6285,13 +6105,13 @@
     "as": "2,753 acres",
     "clean": false,
     "line": "rks began acquiring land for Susquehanna State Park in the early 1960s, and since then, the park has grown to 2,753 acres. In addition to being a popular destination for hikers, sightseers and anglers, it plays a key role in conser",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The Maryland Department of Forests and Parks began acquiring land for Susquehanna State Park in the early 1960s, and since then, the park has grown to 2,753 acres.",
     "url": "https://dnr.maryland.gov/publiclands/Pages/central/Susquehanna/History-Susquehanna.aspx",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 3018,
+    "acres": 2677,
     "manager": "",
     "pieces": [
      [
@@ -6323,7 +6143,7 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 10,
+   "pct": 3,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -6357,12 +6177,12 @@
    "verdict": "agree"
   },
   "US-1602": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Swallow Falls State Park",
    "official": null,
    "ours": {
-    "acres": 209,
+    "acres": 399,
     "manager": "",
     "pieces": [
      [
@@ -6372,7 +6192,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
@@ -6385,10 +6205,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -6399,12 +6219,12 @@
   },
   "US-1603": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Tuckahoe State Park",
    "official": null,
    "ours": {
-    "acres": 4888,
+    "acres": 4155,
     "manager": "",
     "pieces": [
      [
@@ -6474,7 +6294,8 @@
    "verdict": "unsure"
   },
   "US-1604": {
-   "checked": "2026-11-09",
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 100 acres, no total words near it)",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": "1934",
@@ -6491,13 +6312,13 @@
     "as": "100 acres",
     "clean": false,
     "line": "visiting the South Mountain region, specifically Crampton’s Gap, he fell in love with the area and purchased 100 acres of the mountainous land. For the next 20 years, Gath designed and built a total of 10 structures on the summe",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "While visiting the South Mountain region, specifically Crampton’s Gap, he fell in love with the area and purchased 100 acres of the mountainous land.",
     "url": "https://dnr.maryland.gov/publiclands/Pages/western/Gathland/History-Gathland.aspx",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 111,
+    "acres": 177,
     "manager": "",
     "pieces": [
      [
@@ -6541,13 +6362,13 @@
      "why": "about / history page of the park's site"
     }
    ],
-   "pct": 11,
+   "pct": 77,
    "same_agency": false,
-   "score": 8,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 1,
     "source": 2
    },
    "sizes": [
@@ -6563,11 +6384,10 @@
    ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "unsure"
   },
   "US-1606": {
-   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Wye Oak State Park",
    "official": {
@@ -6575,13 +6395,13 @@
     "as": "29 acres",
     "clean": true,
     "line": "Address: 14214 Old Wye Mills Road Wye Mills MD 21679​ Hours: Sunrise to Sunset Wye Oak State Park consists of 29 acres, much ​ of which protects the stream valley behind the park from development. This park was designed to prote",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Wye Oak State Park consists of 29 acres, much",
     "url": "https://dnr.maryland.gov/publiclands/pages/eastern/wyeoak.aspx",
     "why": "clean total"
    },
    "ours": {
-    "acres": 34,
+    "acres": 33,
     "manager": "",
     "pieces": [
      [
@@ -6591,7 +6411,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
@@ -6603,13 +6423,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 17,
+   "pct": 14,
    "same_agency": false,
-   "score": 5,
+   "score": 8,
    "score_parts": {
     "name": 2,
-    "pin": 1,
-    "size": 0,
+    "pin": 2,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -6625,10 +6445,10 @@
    ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-4365": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "North Point Battlefield State Park",
    "official": null,
@@ -6674,7 +6494,7 @@
    "verdict": "no size on page"
   },
   "US-4556": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": "1937",
@@ -6696,20 +6516,20 @@
     "pin": "inside",
     "src": "",
     "states": [
-     "US-CT",
-     "US-VA",
-     "US-WV",
-     "US-MA",
-     "US-PA",
-     "US-ME",
-     "US-GA",
-     "US-TN",
-     "US-NY",
      "US-VT",
+     "US-VA",
+     "US-ME",
+     "US-MA",
      "US-MD",
-     "US-NH",
+     "US-PA",
+     "US-NY",
+     "US-NC",
      "US-NJ",
-     "US-NC"
+     "US-CT",
+     "US-TN",
+     "US-WV",
+     "US-NH",
+     "US-GA"
     ],
     "unknown_pieces": 1,
     "whole_park": true
@@ -6762,7 +6582,7 @@
    "verdict": "ours unknown"
   },
   "US-4564": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Potomac Heritage Trail National Scenic Trail",
    "note": "whole park compared (POTA lists it in 0 states: {})",
@@ -6776,9 +6596,9 @@
     "src": "",
     "states": [
      "US-VA",
+     "US-MD",
      "US-PA",
-     "US-DC",
-     "US-MD"
+     "US-DC"
     ],
     "unknown_pieces": 1,
     "whole_park": true
@@ -6826,7 +6646,7 @@
    "verdict": "ours unknown"
   },
   "US-4567": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Captain John Smith Chesapeake National Historic Trail",
    "note": "whole park compared (POTA lists it in 0 states: {})",
@@ -6840,11 +6660,11 @@
     "src": "",
     "states": [
      "US-VA",
-     "US-PA",
      "US-DE",
-     "US-DC",
+     "US-MD",
+     "US-PA",
      "US-NY",
-     "US-MD"
+     "US-DC"
     ],
     "unknown_pieces": 1,
     "whole_park": true
@@ -6892,7 +6712,7 @@
    "verdict": "ours unknown"
   },
   "US-4581": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Star-Spangled Banner National Historic Trail",
    "note": "whole park compared (POTA lists it in 0 states: {})",
@@ -6906,8 +6726,8 @@
     "src": "",
     "states": [
      "US-VA",
-     "US-DC",
-     "US-MD"
+     "US-MD",
+     "US-DC"
     ],
     "unknown_pieces": 1,
     "whole_park": true
@@ -6965,7 +6785,7 @@
    "verdict": "ours unknown"
   },
   "US-4582": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Washington-Rochambeau Revolutionary Route National Historic Trail",
    "note": "whole park compared (POTA lists it in 0 states: {})",
@@ -6978,16 +6798,16 @@
     "pin": "inside",
     "src": "",
     "states": [
-     "US-CT",
      "US-VA",
-     "US-MA",
-     "US-PA",
      "US-DE",
-     "US-DC",
-     "US-NY",
+     "US-MA",
      "US-MD",
+     "US-PA",
+     "US-NY",
      "US-NJ",
-     "US-RI"
+     "US-RI",
+     "US-CT",
+     "US-DC"
     ],
     "unknown_pieces": 1,
     "whole_park": true
@@ -7040,7 +6860,7 @@
    "verdict": "ours unknown"
   },
   "US-4763": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Cedarville State Forest",
    "official": null,
@@ -7088,7 +6908,7 @@
   },
   "US-4764": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Elk Neck State Forest",
    "official": {
@@ -7096,13 +6916,13 @@
     "as": "3,571 acres",
     "clean": true,
     "line": "g, and Permits Shooting Range Complex Forest Management​ Overview​ Elk Neck State Forest covers approximately 3,571 acres in central Cecil County. The forest is made up of four separate tracts and is open for hiking, horseback ridi",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Elk Neck State Forest covers approximately 3,571 acres in central Cecil County.",
     "url": "https://dnr.maryland.gov/forests/pages/publiclands/central_elkneckforest.aspx",
     "why": "clean total"
    },
    "ours": {
-    "acres": 5651,
+    "acres": 6198,
     "manager": "",
     "pieces": [
      [
@@ -7136,7 +6956,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 58,
+   "pct": 74,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -7162,7 +6982,7 @@
   },
   "US-4765": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Garrett State Forest",
    "official": {
@@ -7170,13 +6990,13 @@
     "as": "19,000 acres",
     "clean": true,
     "line": ", Trapping, and Permits ​Fore​st M​anage​ment ​ ​ Overview​ Potomac-Garrett State Forest covers approximately 19,000 acres in southwestern Garrett County. The Garrett brothers' 1906 donation of ​ 1,977 acres established the original",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Potomac-Garrett State Forest covers approximately 19,000 acres in southwestern Garrett County.",
     "url": "https://dnr.maryland.gov/forests/pages/publiclands/western_potomacgarrettforest.aspx",
     "why": "clean total"
    },
    "ours": {
-    "acres": 8325,
+    "acres": 7545,
     "manager": "",
     "pieces": [
      [
@@ -7228,7 +7048,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 56,
+   "pct": 60,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -7271,7 +7091,7 @@
    "verdict": "off"
   },
   "US-4766": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Green Ridge State Forest",
    "official": {
@@ -7279,18 +7099,18 @@
     "as": "49,012 acres",
     "clean": false,
     "line": "es. ​​ Trail Map ​ Rec​reation and Trails Hunting, Trapping, and Permits ​Fore​st M​anag​ement ​ ​Overview At 49,012 acres, Green Ridge is the largest contiguous block of public land in Maryland and the only state forest in the Ridg",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "At 49,012 acres, Green Ridge is the largest contiguous block of public land in Maryland and the only state forest in the Ridge and Valley physiographic province.",
     "url": "https://dnr.maryland.gov/forests/pages/publiclands/western_greenridgeforest.aspx",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 50746,
+    "acres": 50805,
     "dissolved": {
      "after": 44938,
      "before": 49490,
      "copies": 0,
-     "key_union": 50746,
+     "key_union": 50805,
      "parts": 8,
      "records": 14,
      "summed": 44938,
@@ -7374,7 +7194,7 @@
   },
   "US-4767": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
@@ -7391,23 +7211,14 @@
     "as": "18,000 acres",
     "clean": true,
     "line": "l Road Snow Hill, MD 21863 Office Hours: 8 a.m. to 4:30 p.m. The Pocomoke State Forest (PSF) consists of over 18,000 acres of forested land with the vast majority of it located in Worcester County between Snow Hill and Pocomoke City",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The Pocomoke State Forest (PSF) consists of over 18,000 acres of forested land with the vast majority of it located in Worcester County between Snow Hill and Pocomoke City, with small parcels located in Wicomico and Somerset Counties.",
     "url": "https://dnr.maryland.gov/forests/pages/publiclands/eastern_pocomokeforest.aspx",
     "why": "clean total"
    },
    "ours": {
-    "acres": 6122,
-    "dissolved": {
-     "after": 6122,
-     "before": 7981,
-     "copies": 0,
-     "parts": 5,
-     "records": 9,
-     "tracts": 4
-    },
+    "acres": 6815,
     "manager": "",
-    "note": "9 joined records = 4 tracts: 0 copies of a tract (same acres, another layer) and 5 fee tracts under a designation record folded; summed 7981 -> 6122 acres",
     "pieces": [
      [
       9284,
@@ -7422,15 +7233,21 @@
       "words"
      ],
      [
-      56811,
+      9291,
       "Pocomoke River State Forest",
-      57,
+      599,
+      "reviewed"
+     ],
+     [
+      9283,
+      "Pocomoke River State Forest",
+      95,
       "words"
      ],
      [
-      9288,
+      56811,
       "Pocomoke River State Forest",
-      1,
+      57,
       "words"
      ]
     ],
@@ -7446,7 +7263,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 66,
+   "pct": 62,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -7472,7 +7289,7 @@
   },
   "US-4768": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Potomac State Forest",
    "official": {
@@ -7480,13 +7297,13 @@
     "as": "19,000 acres",
     "clean": true,
     "line": ", Trapping, and Permits ​Fore​st M​anage​ment ​ ​ Overview​ Potomac-Garrett State Forest covers approximately 19,000 acres in southwestern Garrett County. The Garrett brothers' 1906 donation of ​ 1,977 acres established the original",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Potomac-Garrett State Forest covers approximately 19,000 acres in southwestern Garrett County.",
     "url": "https://dnr.maryland.gov/forests/pages/publiclands/western_potomacgarrettforest.aspx",
     "why": "clean total"
    },
    "ours": {
-    "acres": 13359,
+    "acres": 11419,
     "manager": "",
     "pieces": [
      [
@@ -7514,7 +7331,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 30,
+   "pct": 40,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -7557,7 +7374,7 @@
    "verdict": "off"
   },
   "US-4769": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Salem State Forest",
    "official": {
@@ -7565,13 +7382,13 @@
     "as": "902 acres",
     "clean": false,
     "line": "he management of the property with other disciplines in the Department of Natural Resources. This property is 902 acres and is entirely wooded with opportunities for hiking, mountain biking and equestrian use. The Salem State For",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "This property is 902 acres and is entirely wooded with opportunities for hiking, mountain biking and equestrian use.",
     "url": "https://dnr.maryland.gov/forests/pages/publiclands/southern_salemforest.aspx",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 814,
+    "acres": 920,
     "manager": "",
     "pieces": [
      [
@@ -7593,7 +7410,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 10,
+   "pct": 2,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -7645,7 +7462,7 @@
    "verdict": "agree"
   },
   "US-4770": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Savage River State Forest",
    "official": {
@@ -7653,7 +7470,7 @@
     "as": "55,185 acres",
     "clean": true,
     "line": "unting, Trapping, and Permits ​Fore​st M​anagement ​ ​Overview Savage River State Forest covers approximately 55,185 acres in the northeastern quadrant of Garrett County. It is a second-growth mixed hardwood forest dominated by oak",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Savage River State Forest covers approximately 55,185 acres in the northeastern quadrant of Garrett County.",
     "url": "https://dnr.maryland.gov/forests/pages/publiclands/western_savageriverforest.aspx",
     "why": "clean total"
@@ -7775,7 +7592,7 @@
    "verdict": "agree"
   },
   "US-4771": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "St. Inigoes State Forest",
    "official": {
@@ -7783,13 +7600,13 @@
     "as": "938 acres",
     "clean": false,
     "line": "d DNR Forest Service Box 1509 Carter Building Leonardtown, MD 20650​ St. Inigoes State Forest is comprised of 938 acres located on a peninsula between St. Mary’s River and Smith Creek bordering the Potomac River. There are 324 ac",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Inigoes State Forest is comprised of 938 acres located on a peninsula between St.",
     "url": "https://dnr.maryland.gov/forests/Pages/publiclands/southern_stinigoesforest.aspx",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 875,
+    "acres": 932,
     "manager": "",
     "pieces": [
      [
@@ -7811,7 +7628,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 7,
+   "pct": 1,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -7855,7 +7672,7 @@
   },
   "US-6382": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Harriet Tubman Underground Railroad State Park",
    "official": {
@@ -7863,13 +7680,13 @@
     "as": "17 acre",
     "clean": false,
     "line": "closed on Thanksgiving Day and Christmas Day​ ​ Email the Park​ ​ ​ Section3 Lt_Inner_Content ​Welcome!​ The 17-acre Harriet Tubman Underground Railroad State Park and Visitor Center invites visitors to experience Tubman’s wor",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The 17-acre Harriet Tubman Underground Railroad State Park and Visitor Center invites visitors to experience Tubman’s world through exhibits that are informative and emotive, providing an in depth understanding of Tubman’s early years spent in Maryland's Choptank River r",
     "url": "https://dnr.maryland.gov/publiclands/pages/eastern/tubman.aspx",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 481,
+    "acres": 811,
     "manager": "",
     "pieces": [
      [
@@ -7908,7 +7725,7 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 2729,
+   "pct": 4671,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -7933,12 +7750,12 @@
    "verdict": "off"
   },
   "US-6383": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Matapeake State Park",
    "official": null,
    "ours": {
-    "acres": 24,
+    "acres": 25,
     "manager": "",
     "pieces": [
      [
@@ -7954,7 +7771,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
@@ -7967,10 +7784,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -7980,12 +7797,12 @@
    "verdict": "no size on page"
   },
   "US-6384": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Pocomoke River State Park",
    "official": null,
    "ours": {
-    "acres": 18601,
+    "acres": 20441,
     "manager": "",
     "pieces": [
      [
@@ -8033,22 +7850,21 @@
    "verdict": "no size on page"
   },
   "US-6385": {
-   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bohemia River State Park",
    "official": {
-    "acres": 225.0,
-    "as": "225 acres",
+    "acres": 460.0,
+    "as": "460 acres",
     "clean": false,
-    "line": "the Town of Chesapeake City, for the future development of a state park. The property includes approximately 225 acres of upland and hydric forest, 60 acres set aside for planned conservation and 29 acres for planned habitat res",
-    "read": "2026-11-09",
-    "sent": "The property includes approximately 225 acres of upland and hydric forest, 60 acres set aside for planned conservation and 29 acres for planned habitat restoration.",
+    "line": "letters ​ ​ ​Background: ​In the summer of 2017 the Department of Natural Resources completed the purchase of 460 acres in southern Cecil County, outside the Town of Chesapeake City, for the future development of a state park. Th",
+    "read": "2026-11-22",
+    "sent": "​In the summer of 2017 the Department of Natural Resources completed the purchase of 460 acres in southern Cecil County, outside the Town of Chesapeake City, for the future development of a state park.",
     "url": "https://dnr.maryland.gov/publiclands/Pages/central/Bohemia.aspx",
-    "why": "total-looking"
+    "why": "no total words near it"
    },
    "ours": {
-    "acres": 370,
+    "acres": 471,
     "manager": "",
     "pieces": [
      [
@@ -8058,7 +7874,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
@@ -8076,13 +7892,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 64,
+   "pct": 2,
    "same_agency": false,
-   "score": 5,
+   "score": 8,
    "score_parts": {
     "name": 2,
-    "pin": 1,
-    "size": 0,
+    "pin": 2,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -8161,28 +7977,27 @@
    ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-6387": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Fair Hill State Natural Area",
    "official": {
-    "acres": 5656.0,
-    "as": "5,656 acre",
-    "clean": true,
-    "line": "est​​ ​ ​ Turf track training schedule is coming soon! ​ ​ Section3 Lt_Inner_Content Welcome!​ Fair Hill is a 5,656 acre Natural Resources Management Area, where multiple management practices are employed for the maximum use and p",
-    "read": "2026-11-09",
-    "sent": "Fair Hill is a 5,656 acre Natural Resources Management Area, where multiple management practices are employed for the maximum use and protection of Maryland's natural resources.",
+    "acres": 5600.0,
+    "as": "5,600 acre",
+    "clean": false,
+    "line": "nd Navigation Drills and Orienteering Competitions have all been able to find a place within Fair Hill NRMA's 5,600-acre landscape of rolling hills and woodlands. We invite you to explore Fair Hill NRMA as a potential venue to hos",
+    "read": "2026-11-22",
+    "sent": "Equestrian Endurance Rides, Paperchases, and Carriage Driving Clinics and Competitions in addition to Dog Tracking Competitions and SAR Trainings, Land Navigation Drills and Orienteering Competitions have all been able to find a place within Fair Hill NRMA's 5,600-acre landscape of rolling hills and",
     "url": "https://dnr.maryland.gov/publiclands/Pages/central/fairhill.aspx",
-    "why": "clean total"
+    "why": "total-looking"
    },
    "ours": {
-    "acres": 4143,
+    "acres": 5596,
     "manager": "",
     "pieces": [],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 2
    },
@@ -8200,13 +8015,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 27,
+   "pct": 0,
    "same_agency": false,
-   "score": 5,
+   "score": 8,
    "score_parts": {
     "name": 2,
-    "pin": 1,
-    "size": 0,
+    "pin": 2,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -8231,10 +8046,10 @@
    ],
    "t": "State Natural Area",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-6388": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Helen Avalynne Tawes Garden State Park",
    "ours": null,
@@ -8244,7 +8059,7 @@
    "verdict": "no outline"
   },
   "US-6389": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Jefferson Patterson Park and Museum State Park",
    "ours": null,
@@ -8255,12 +8070,12 @@
   },
   "US-6390": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "South Mountain State Battlefield State Park",
    "official": null,
    "ours": {
-    "acres": 116,
+    "acres": 161,
     "manager": "",
     "pieces": [
      [
@@ -8323,7 +8138,7 @@
    "verdict": "unsure"
   },
   "US-6391": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Merkle Wildlife Sanctuary State Natural Area",
    "official": {
@@ -8331,13 +8146,13 @@
     "as": "1,900 acres",
     "clean": false,
     "line": "he state. With the acquisition of adjoining tracts, the Natural Resource Management Area now encompasses over 1,900 acres. The geese arrive in mid-October and stay until late February or early March. About 100 geese stay year round",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "With the acquisition of adjoining tracts, the Natural Resource Management Area now encompasses over 1,900 acres.",
     "url": "https://dnr.maryland.gov/publiclands/Pages/southern/Merkle/History-Merkle.aspx",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 2043,
+    "acres": 1677,
     "manager": "",
     "pieces": [
      [
@@ -8364,7 +8179,7 @@
      "why": "about / history page of the park's site"
     }
    ],
-   "pct": 8,
+   "pct": 12,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -8398,7 +8213,7 @@
    "verdict": "agree"
   },
   "US-6392": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Monocacy River Natural Resources Management Area State Natural Area",
    "official": {
@@ -8406,13 +8221,13 @@
     "as": "1,800 acres",
     "clean": true,
     "line": "Located in Frederick County, near Dickerson, Monocacy River Natural Resources Management Area is comprised of 1,800 acres of natural areas and farmlands along the Monocacy River. Recreational use is primarily hunting, fishing, hiki",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Located in Frederick County, near Dickerson, Monocacy River Natural Resources Management Area is comprised of 1,800 acres of natural areas and farmlands along the Monocacy River.",
     "url": "https://dnr.maryland.gov/publiclands/Pages/western/monocacy.aspx",
     "why": "clean total"
    },
    "ours": {
-    "acres": 1530,
+    "acres": 2037,
     "manager": "",
     "pieces": [],
     "pin": "inside",
@@ -8427,7 +8242,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 15,
+   "pct": 13,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -8445,24 +8260,6 @@
      "total_like": true,
      "url": "https://dnr.maryland.gov/publiclands/Pages/western/monocacy.aspx",
      "why": "clean total"
-    },
-    {
-     "acres": 103.3,
-     "as": "103.27 acres",
-     "clean": false,
-     "line": "interested in farming at Monocacy? See the list below for agricultural lands out for bid: Henderson property (103.27 acres) Rock Hall Chadwick property (43.59 acres) If you’d like to submit a bid for leasing one of the above agricul",
-     "total_like": true,
-     "url": "https://dnr.maryland.gov/publiclands/Pages/western/monocacy.aspx",
-     "why": "total-looking"
-    },
-    {
-     "acres": 43.6,
-     "as": "43.59 acres",
-     "clean": false,
-     "line": "list below for agricultural lands out for bid: Henderson property (103.27 acres) Rock Hall Chadwick property (43.59 acres) If you’d like to submit a bid for leasing one of the above agricultural properties, please fill out the hype",
-     "total_like": true,
-     "url": "https://dnr.maryland.gov/publiclands/Pages/western/monocacy.aspx",
-     "why": "total-looking"
     }
    ],
    "t": "State Natural Area",
@@ -8470,7 +8267,7 @@
    "verdict": "agree"
   },
   "US-6393": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Morgan Run State Natural Area",
    "official": {
@@ -8478,13 +8275,13 @@
     "as": "2,000 acres",
     "clean": true,
     "line": "and events. Located in Carroll County, the Morgan Run Natural Environment Area is comprised of approximately 2,000 acres of natural area. Hiking and equestrian trails are popular. The Morgan Run is a catch and release trout stream",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Located in Carroll County, the Morgan Run Natural Environment Area is comprised of approximately 2,000 acres of natural area.",
     "url": "https://dnr.maryland.gov/publiclands/pages/central/morganrun.aspx",
     "why": "clean total"
    },
    "ours": {
-    "acres": 2045,
+    "acres": 1917,
     "manager": "",
     "pieces": [
      [
@@ -8512,7 +8309,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
@@ -8529,12 +8326,12 @@
      "why": "official map (parkinfo-web)"
     }
    ],
-   "pct": 2,
+   "pct": 4,
    "same_agency": false,
-   "score": 7,
+   "score": 8,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 2,
     "source": 2
    },
@@ -8554,7 +8351,7 @@
    "verdict": "agree"
   },
   "US-6394": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": "2017",
@@ -8568,7 +8365,7 @@
    "n": "Sang Run State Park",
    "official": null,
    "ours": {
-    "acres": 161,
+    "acres": 228,
     "manager": "",
     "pieces": [
      [
@@ -8604,7 +8401,7 @@
    "verdict": "no size on page"
   },
   "US-6395": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
@@ -8618,7 +8415,7 @@
    "n": "Sassafras Natural Resources Management Area State Natural Area",
    "official": null,
    "ours": {
-    "acres": 1197,
+    "acres": 1194,
     "manager": "",
     "pieces": [
      [
@@ -8660,8 +8457,7 @@
    "verdict": "no size on page"
   },
   "US-6396": {
-   "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Soldier's Delight Natural Area",
    "official": {
@@ -8669,13 +8465,13 @@
     "as": "2,000 acres",
     "clean": false,
     "line": "led and stunted oaks which dotted the landscape.\" Today, this ecosystem in Maryland has been reduced to about 2,000 acres, almost all of which occurs in Soldiers Delight Natural Environment Area, managed by the Maryland Department",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Tree species were present, but they were often \"gnarled and stunted oaks which dotted the landscape.\" Today, this ecosystem in Maryland has been reduced to about 2,000 acres, almost all of which occurs in Soldiers Delight Natural Environment Area, managed by the Maryland Department of Natural Resour",
     "url": "https://dnr.maryland.gov/wildlife/Pages/NaturalAreas/Central/Soldiers-Delight.aspx",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 2605,
+    "acres": 2046,
     "manager": "",
     "pieces": [
      [
@@ -8721,13 +8517,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 30,
+   "pct": 2,
    "same_agency": false,
-   "score": 5,
+   "score": 7,
    "score_parts": {
     "name": 1,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -8761,10 +8557,10 @@
    ],
    "t": "Natural Area",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-6397": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Wolf Den Run State Park",
    "official": {
@@ -8772,7 +8568,7 @@
     "as": "2039 acre",
     "clean": true,
     "line": "address: ​ c/o Herrington Manor State Park 222 Herrington Lane Oakland, MD 21550 Wolf Den Run State Park is a 2039 acre multi-use park that offers opportunities for hiking, biking, fishing, birdwatching, hunting, and ORV riding.",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Wolf Den Run State Park is a 2039 acre multi-use park that offers opportunities for hiking, biking, fishing, birdwatching, hunting, and ORV riding.",
     "url": "https://dnr.maryland.gov/publiclands/pages/western/wolf-den-run.aspx",
     "why": "clean total"
@@ -8834,7 +8630,7 @@
    "verdict": "agree"
   },
   "US-6398": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Woodmont State Natural Area",
    "official": {
@@ -8842,7 +8638,7 @@
     "as": "3,425 acre",
     "clean": false,
     "line": "761 Woodmont Rd. Hancock, MD 21750​ Calendar of Events ​ ​ Formerly the Woodmont Rod & Gun Club property, the 3,425-acre Woodmont Natural Resource Management Area near Hancock offers opportunities for hiking, hunting, mountain bik",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Formerly the Woodmont Rod & Gun Club property, the 3,425-acre Woodmont Natural Resource Management Area near Hancock offers opportunities for hiking, hunting, mountain biking, bird watching, and horseback riding.",
     "url": "https://dnr.maryland.gov/publiclands/pages/western/woodmont.aspx",
     "why": "total-looking"
@@ -8913,7 +8709,7 @@
    "verdict": "agree"
   },
   "US-6399": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Wye Island State Conservation Area",
    "official": {
@@ -8921,7 +8717,7 @@
     "as": "2,800 acres",
     "clean": false,
     "line": "ed in the ​tidal recesses of the Chesapeake Bay between the Wye River and the Wye East River. Of Wye Island's 2,800 acres, 2,450 are managed by the Maryland Park Service for resource management, recreation and agriculture. A major",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Of Wye Island's 2,800 acres, 2,450 are managed by the Maryland Park Service for resource management, recreation and agriculture.",
     "url": "https://dnr.maryland.gov/publiclands/pages/eastern/wyeisland.aspx",
     "why": "total-looking"
@@ -8980,12 +8776,12 @@
    "verdict": "agree"
   },
   "US-6400": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Youghiogheny Wild River State Natural Area",
    "official": null,
    "ours": {
-    "acres": 4633,
+    "acres": 4315,
     "manager": "",
     "pieces": [
      [
@@ -9044,8 +8840,7 @@
    "verdict": "no size on page"
   },
   "US-7724": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
@@ -9062,13 +8857,13 @@
     "as": "180 acre",
     "clean": false,
     "line": "was deeded to the Department of Natural Resources by the estate of Mildred M. Tarkington in January 2005. The 180-acre tract is dedicated to wildlife conservation. ​ ​ Click Here for Map​ ​ ​ Management Avondale WMA is managed b",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The 180-acre tract is dedicated to wildlife conservation.",
     "url": "https://dnr.maryland.gov/wildlife/pages/publiclands/central/avondale.aspx",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 136,
+    "acres": 184,
     "manager": "",
     "pieces": [
      [
@@ -9090,13 +8885,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 24,
+   "pct": 2,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -9112,27 +8907,27 @@
    ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-7725": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Browns Branch Wildlife Management Area",
    "official": {
-    "acres": 682.0,
-    "as": "682 acre",
-    "clean": true,
-    "line": "h hunting and other wildlife-dependent recreation. Browns Branch WMA consists of 1,172 acres which includes a 682 acre agriculture lease. The remaining acreage mainly consists of deciduous forest land, with several small freshwa",
-    "read": "2026-11-09",
-    "sent": "Browns Branch WMA consists of 1,172 acres which includes a 682 acre agriculture lease.",
+    "acres": 1172.0,
+    "as": "1,172 acre",
+    "clean": false,
+    "line": "_Content ​ The former Ben-Lee property was acquired by the Department of Natural Resources in March 2019. The 1,172 acre tract is dedicated to wildlife conservation. Click Here for Map​ Management Browns Branch WMA is managed by t",
+    "read": "2026-11-22",
+    "sent": "The 1,172 acre tract is dedicated to wildlife conservation.",
     "url": "https://dnr.maryland.gov/wildlife/Pages/publiclands/eastern/BrownsBranch.aspx",
-    "why": "clean total"
+    "why": "total-looking"
    },
    "ours": {
-    "acres": 741,
+    "acres": 1184,
     "manager": "",
     "pieces": [],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 2
    },
@@ -9144,12 +8939,12 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 9,
+   "pct": 1,
    "same_agency": false,
-   "score": 7,
+   "score": 8,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 2,
     "source": 2
    },
@@ -9187,7 +8982,7 @@
    "verdict": "agree"
   },
   "US-7726": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
@@ -9204,13 +8999,13 @@
     "as": "190 acres",
     "clean": true,
     "line": "c enjoyment of the State’s wildlife resources through hunting and other wildlife-dependent recreation. Of the 190 acres, Earleville WMA consists roughly of 50 acres in warm season grasses with the remaining acreage being forested",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Of the 190 acres, Earleville WMA consists roughly of 50 acres in warm season grasses with the remaining acreage being forested.",
     "url": "https://dnr.maryland.gov/wildlife/Pages/publiclands/central/earleville.aspx",
     "why": "clean total"
    },
    "ours": {
-    "acres": 185,
+    "acres": 195,
     "manager": "",
     "pieces": [
      [
@@ -9266,8 +9061,8 @@
    "verdict": "agree"
   },
   "US-7727": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-09",
+   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Grove Farm Wildlife Management Area",
    "official": {
@@ -9275,13 +9070,13 @@
     "as": "988 acre",
     "clean": false,
     "line": "cated just west of Cecilton, Maryland, was acquired by the Department of Natural Resources in March 2008. The 988-acre tract is dedicated to wildlife conservation​​. Click Here for Map Management Grove Farm WMA is managed by the",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The 988-acre tract is dedicated to wildlife conservation​​.",
     "url": "https://dnr.maryland.gov/wildlife/pages/publiclands/central/grovefarm.aspx",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 807,
+    "acres": 1218,
     "manager": "",
     "pieces": [
      [
@@ -9309,7 +9104,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 18,
+   "pct": 23,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -9379,13 +9174,21 @@
    "verdict": "off"
   },
   "US-7728": {
-   "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Gwynnbrook Wildlife Management Area",
-   "official": null,
+   "official": {
+    "acres": 88.0,
+    "as": "88 acre",
+    "clean": false,
+    "line": "s located on Gwynnbrook Avenue, just off Owings Mills Boulevard in Owings Mills. Originally a game farm, this 88 acre tract was purchased by the State in 1919, making it the oldest wildlife management area in Maryland. Click He",
+    "read": "2026-11-22",
+    "sent": "Originally a game farm, this 88 acre tract was purchased by the State in 1919, making it the oldest wildlife management area in Maryland.",
+    "url": "https://dnr.maryland.gov/wildlife/Pages/publiclands/central/gwynnbrook.aspx",
+    "why": "history"
+   },
    "ours": {
-    "acres": 51,
+    "acres": 87,
     "manager": "",
     "pieces": [
      [
@@ -9407,12 +9210,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 1,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -9428,16 +9232,24 @@
    ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "unsure"
+   "verdict": "agree"
   },
   "US-7729": {
-   "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Hugg-Thomas Wildlife Management Area",
-   "official": null,
+   "official": {
+    "acres": 275.0,
+    "as": "275 acres",
+    "clean": false,
+    "line": "ate of Admiral Jacob Hugg, a founder of the town of Sykesville in Carroll County, Hugg-Thomas WMA consists of 275 acres in two separate parcels of land separated by Forsythe Road. On the parcel north of Forsythe Road you can visi",
+    "read": "2026-11-22",
+    "sent": "Once the family estate of Admiral Jacob Hugg, a founder of the town of Sykesville in Carroll County, Hugg-Thomas WMA consists of 275 acres in two separate parcels of land separated by Forsythe Road.",
+    "url": "https://dnr.maryland.gov/wildlife/Pages/publiclands/central/huggthomas.aspx",
+    "why": "history"
+   },
    "ours": {
-    "acres": 226,
+    "acres": 265,
     "manager": "",
     "pieces": [
      [
@@ -9465,12 +9277,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 4,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -9486,11 +9299,11 @@
    ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "unsure"
+   "verdict": "agree"
   },
   "US-7730": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 175 acres, no total words near it)",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "McKee-Breshers Wildlife Management Area",
    "official": {
@@ -9498,13 +9311,13 @@
     "as": "175 acres",
     "clean": false,
     "line": "nclude, but are not limited to, millet, sorghum, buckwheat, sunflower, winter wheat, or clover. Approximately 175 acres are in an agricultural lease. Eighteen acres are included in an ongoing Woodcock Habitat Restoration Project.",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Approximately 175 acres are in an agricultural lease.",
     "url": "https://dnr.maryland.gov/wildlife/pages/publiclands/central/mckeebeshers.aspx",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 1597,
+    "acres": 1971,
     "manager": "",
     "pieces": [
      [
@@ -9526,7 +9339,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 813,
+   "pct": 1026,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -9569,7 +9382,7 @@
    "verdict": "unsure"
   },
   "US-7731": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Millington Wildlife Management Area",
    "official": {
@@ -9577,13 +9390,13 @@
     "as": "4,000 acre",
     "clean": false,
     "line": "red species, providing hunting and outdoor recreation, and demonstrating wildlife management techniques. This 4,000 acre parcel is located in eastern Kent County and consists of hardwood forests with some pine stands, various type",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "This 4,000 acre parcel is located in eastern Kent County and consists of hardwood forests with some pine stands, various types of wetlands, fallow managed fields, meadow plantings, and open agricultural fields.",
     "url": "https://dnr.maryland.gov/wildlife/pages/publiclands/eastern/millington.aspx",
     "why": "part (a lake, a purchase, a campground…)"
    },
    "ours": {
-    "acres": 3566,
+    "acres": 3891,
     "manager": "",
     "pieces": [
      [
@@ -9611,7 +9424,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 11,
+   "pct": 3,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -9636,22 +9449,21 @@
    "verdict": "agree"
   },
   "US-7732": {
-   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 100 acres, no total words near it)",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Old Bohemia Wildlife Management Area",
    "official": {
-    "acres": 100.0,
-    "as": "100 acres",
+    "acres": 1044.0,
+    "as": "1,044 acre",
     "clean": false,
-    "line": "and forest wildlife species including white-tailed deer, wild turkeys, squirrels, and rabbits. Approximately 100 acres are managed as early successional habitat to provide habitat for many game and non-game species. Fields of wa",
-    "read": "2026-11-09",
-    "sent": "Approximately 100 acres are managed as early successional habitat to provide habitat for many game and non-game species.",
+    "line": "ess Contact the Wildlife & Heritage Service​ ​​​​​​​ ​ Old Bohemia Wildlife Management Area Main_Content This 1,044 acre site, located in the southeastern portion of Cecil County, north of Warwick, Maryland, consists primarily of",
+    "read": "2026-11-22",
+    "sent": "This 1,044 acre site, located in the southeastern portion of Cecil County, north of Warwick, Maryland, consists primarily of agricultural fields, with the remaining acreage a mix of forest and non-tidal wetlands.",
     "url": "https://dnr.maryland.gov/wildlife/pages/publiclands/central/oldbohemia.aspx",
-    "why": "no total words near it"
+    "why": "part (a lake, a purchase, a campground…)"
    },
    "ours": {
-    "acres": 796,
+    "acres": 1004,
     "manager": "",
     "pieces": [
      [
@@ -9661,7 +9473,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 1
    },
@@ -9673,13 +9485,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 696,
+   "pct": 4,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
-    "pin": 1,
-    "size": 1,
+    "pin": 2,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -9704,16 +9516,24 @@
    ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "unsure"
+   "verdict": "agree"
   },
   "US-7733": {
-   "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Strider Wildlife Management Area",
-   "official": null,
+   "official": {
+    "acres": 267.0,
+    "as": "267 acre",
+    "clean": false,
+    "line": "is part of an expansive greenway in Montgomery County that stretches from Damascus to the Potomac River. The 267 acre tract of mixed hardwoods and Virginia pine was dedicated to wildlife conservation in 1949. Click Here for Map",
+    "read": "2026-11-22",
+    "sent": "The 267 acre tract of mixed hardwoods and Virginia pine was dedicated to wildlife conservation in 1949.",
+    "url": "https://dnr.maryland.gov/wildlife/pages/publiclands/central/strider.aspx",
+    "why": "history"
+   },
    "ours": {
-    "acres": 179,
+    "acres": 249,
     "manager": "",
     "pieces": [],
     "pin": "inside",
@@ -9728,12 +9548,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 7,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -9749,21 +9570,29 @@
    ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "unsure"
+   "verdict": "agree"
   },
   "US-7735": {
-   "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Cedar Island Wildlife Management Area",
-   "official": null,
+   "official": {
+    "acres": 3000.0,
+    "as": "3,000 acres",
+    "clean": false,
+    "line": "r Access Contact the Wildlife & Heritage Service​ ​​​​​​​ Cedar Island WMA Main_Content Because of its nearly 3,000 acres of tidal marsh, ponds and creeks, black ducks flock to the island located in Tangier Sound near the town of C",
+    "read": "2026-11-22",
+    "sent": "Because of its nearly 3,000 acres of tidal marsh, ponds and creeks, black ducks flock to the island located in Tangier Sound near the town of Crisfield.",
+    "url": "https://dnr.maryland.gov/wildlife/pages/publiclands/eastern/cedarisland.aspx",
+    "why": "part (a lake, a purchase, a campground…)"
+   },
    "ours": {
-    "acres": 2219,
+    "acres": 2820,
     "dissolved": {
      "after": 1084,
      "before": 1086,
      "copies": 0,
-     "key_union": 2219,
+     "key_union": 2820,
      "parts": 2,
      "records": 6,
      "summed": 1084,
@@ -9814,12 +9643,13 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 6,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -9844,10 +9674,10 @@
    ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "unsure"
+   "verdict": "agree"
   },
   "US-7736": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Deal Island Wildlife Management Area",
    "official": {
@@ -9855,13 +9685,13 @@
     "as": "13,000 acre",
     "clean": false,
     "line": "t Expanses of tidal marsh, frequently broken by open water, characterize most of the habitat of this WMA. The 13,000 acre property also contains forested wetlands and a​ 2,800-acre man-made pond or \"impoundment.\" The ​water insects",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The 13,000 acre property also contains forested wetlands and a​ 2,800-acre man-made pond or \"impoundment.\" The ​water insects and crustaceans, as well as the abundance of wigeongrass, horned pondweed and other favorite waterfowl foods makes Deal Island one of the best places",
     "url": "https://dnr.maryland.gov/wildlife/pages/publiclands/eastern/dealisland.aspx",
     "why": "part (a lake, a purchase, a campground…)"
    },
    "ours": {
-    "acres": 12273,
+    "acres": 13618,
     "manager": "",
     "pieces": [
      [
@@ -9913,7 +9743,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 6,
+   "pct": 5,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -9983,12 +9813,12 @@
    "verdict": "agree"
   },
   "US-7737": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "E.A. Vaughn Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 2319,
+    "acres": 2771,
     "manager": "",
     "pieces": [
      [
@@ -10030,7 +9860,7 @@
    "verdict": "no size on page"
   },
   "US-7738": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Ellis Bay Wildlife Management Area",
    "official": {
@@ -10038,13 +9868,13 @@
     "as": "3,200 acre",
     "clean": true,
     "line": "life & Heritage Service​ ​​​​​​​ Ellis Bay WMA Main_Content Mostly marsh and forested wetland, Ellis Bay is a 3,200-acre wet wonderland. It is perfect habitat for ducks and wading birds, like herons and egrets. White-tailed deer a",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Mostly marsh and forested wetland, Ellis Bay is a 3,200-acre wet wonderland.",
     "url": "https://dnr.maryland.gov/wildlife/pages/publiclands/eastern/ellisbay.aspx",
     "why": "clean total"
    },
    "ours": {
-    "acres": 2730,
+    "acres": 3061,
     "manager": "",
     "pieces": [
      [
@@ -10078,7 +9908,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 15,
+   "pct": 4,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -10104,7 +9934,7 @@
   },
   "US-7739": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Fairmount Wildlife Management Area",
    "official": {
@@ -10112,7 +9942,7 @@
     "as": "4,000 acres",
     "clean": false,
     "line": "otograph of Ruddy Duck Courtesy of John White Typical of river habitat on the Chesapeake Bay, Fairmount WMA's 4,000 acres are mostly marshlands. It is located between the Manokin and Annemessex Rivers in Somerset County. Forested w",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Typical of river habitat on the Chesapeake Bay, Fairmount WMA's 4,000 acres are mostly marshlands.",
     "url": "https://dnr.maryland.gov/wildlife/pages/publiclands/eastern/fairmount.aspx",
     "why": "total-looking"
@@ -10128,7 +9958,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
@@ -10142,10 +9972,10 @@
    ],
    "pct": 23,
    "same_agency": false,
-   "score": 6,
+   "score": 5,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 0,
     "source": 2
    },
@@ -10174,7 +10004,7 @@
    "verdict": "off"
   },
   "US-7740": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Fishing Bay Wildlife Management Area",
    "official": {
@@ -10182,18 +10012,18 @@
     "as": "29,000 acres",
     "clean": false,
     "line": "sabled Hunter Access Contact the Wildlife & Heritage Service​ ​​​​​​​ Fishing Bay WMA Main_Content With about 29,000 acres, Fishing Bay WMA is the the state's largest wildlife management area and largest parcel of publicly owned tid",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "With about 29,000 acres, Fishing Bay WMA is the the state's largest wildlife management area and largest parcel of publicly owned tidal wetlands in Maryland.",
     "url": "https://dnr.maryland.gov/wildlife/Pages/publiclands/eastern/fishingbay.aspx",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 29444,
+    "acres": 30902,
     "dissolved": {
      "after": 35037,
      "before": 40611,
      "copies": 0,
-     "key_union": 29444,
+     "key_union": 30902,
      "parts": 6,
      "records": 10,
      "summed": 35037,
@@ -10239,7 +10069,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 2,
+   "pct": 7,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -10264,7 +10094,7 @@
    "verdict": "agree"
   },
   "US-7741": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Idylwild Wildlife Management Area",
    "official": {
@@ -10272,13 +10102,13 @@
     "as": "3,800 acre",
     "clean": false,
     "line": ", which winds through the quaint turn- of-the-century town of Federalsburg, forms the western boundary of the 3,800-acre Idylwild WMA in southeastern Caroline County. The area is a mix of agricultural fields, upland forests and bo",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The scenic Marshyhope Creek, which winds through the quaint turn- of-the-century town of Federalsburg, forms the western boundary of the 3,800-acre Idylwild WMA in southeastern Caroline County.",
     "url": "https://dnr.maryland.gov/wildlife/Pages/publiclands/eastern/idylwild.aspx",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 3870,
+    "acres": 3649,
     "manager": "",
     "pieces": [
      [
@@ -10300,7 +10130,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 2,
+   "pct": 4,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -10325,7 +10155,8 @@
    "verdict": "agree"
   },
   "US-7742": {
-   "checked": "2026-11-09",
+   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Isle of Wight Wildlife Management Area",
    "official": {
@@ -10333,13 +10164,13 @@
     "as": "200 acres",
     "clean": false,
     "line": "island, located in one of Maryland's most beautiful coastal bays, is dedicated to wildlife conservation. Its 200 acres of marsh and forests attract waterfowl and marsh birds. Located in Assawoman Bay, Isle of Wight is sheltered",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Its 200 acres of marsh and forests attract waterfowl and marsh birds.",
     "url": "https://dnr.maryland.gov/wildlife/pages/publiclands/eastern/isleofwight.aspx",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 179,
+    "acres": 284,
     "manager": "",
     "pieces": [
      [
@@ -10366,13 +10197,13 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 10,
+   "pct": 42,
    "same_agency": false,
-   "score": 8,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 0,
     "source": 2
    },
    "sizes": [
@@ -10397,16 +10228,24 @@
    ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "off"
   },
   "US-7743": {
-   "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Johnson Wildlife Management Area",
-   "official": null,
+   "official": {
+    "acres": 153.0,
+    "as": "153 acres",
+    "clean": false,
+    "line": "nizing the growing need to conserve natural resources. Originally called Johnson Schoolhouse Game Refuge, its 153 acres were used to raise game animals for release into the wild. In 2017, additional parcels of land purchased from",
+    "read": "2026-11-22",
+    "sent": "Originally called Johnson Schoolhouse Game Refuge, its 153 acres were used to raise game animals for release into the wild.",
+    "url": "https://dnr.maryland.gov/wildlife/pages/publiclands/eastern/johnson.aspx",
+    "why": "history"
+   },
    "ours": {
-    "acres": 77,
+    "acres": 141,
     "manager": "",
     "pieces": [
      [
@@ -10416,7 +10255,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 1
    },
@@ -10433,12 +10272,13 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 8,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
-    "pin": 1,
-    "size": 1,
+    "pin": 2,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -10481,11 +10321,11 @@
    ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "unsure"
+   "verdict": "agree"
   },
   "US-7744": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "LeCompte Wildlife Management Area",
    "official": {
@@ -10493,7 +10333,7 @@
     "as": "485 acres",
     "clean": false,
     "line": "ed species in 1967, the Delmarva fox squirrel has been steadily increasing in numbers in Maryland. LeCompte's 485 acres of mature oak and loblolly pine forests were set aside to provide a refuge for this native squirrel. From the",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "LeCompte's 485 acres of mature oak and loblolly pine forests were set aside to provide a refuge for this native squirrel.",
     "url": "https://dnr.maryland.gov/wildlife/Pages/publiclands/eastern/lecompte.aspx",
     "why": "total-looking"
@@ -10564,8 +10404,7 @@
    "verdict": "off"
   },
   "US-7745": {
-   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Linkwood Wildlife Management Area",
    "official": {
@@ -10573,13 +10412,13 @@
     "as": "313 acres",
     "clean": false,
     "line": "m and loblolly pine. Located in Dorchester County, it's just shooting distance from the town of Linkwood. Its 313 acres include some of the most significant forests in the county and support a wide range of forest animals. What T",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Its 313 acres include some of the most significant forests in the county and support a wide range of forest animals.",
     "url": "https://dnr.maryland.gov/wildlife/Pages/publiclands/eastern/linkwood.aspx",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 535,
+    "acres": 302,
     "manager": "",
     "pieces": [
      [
@@ -10601,13 +10440,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 71,
+   "pct": 4,
    "same_agency": false,
-   "score": 5,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -10623,16 +10462,16 @@
    ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-7746": {
-   "checked": "2026-11-01",
+   "cause": "no page could be read: HTTP 404",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-09",
    "n": "Maryland Marine Properties Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 678,
+    "acres": 1014,
     "manager": "",
     "pieces": [
      [
@@ -10665,11 +10504,11 @@
    "sizes": [],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "not read"
   },
   "US-7748": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Nanticoke River Wildlife Management Area",
    "official": {
@@ -10677,13 +10516,13 @@
     "as": "530,000 acres",
     "clean": true,
     "line": "nticoke River is one of the largest rivers on the Delmarva Peninsula, supported by a watershed that is nearly 530,000 acres in size, and draining into the Chesapeake Bay. In 1993, the Nature Conservancy, the Conservation Fund and the",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The Nanticoke River is one of the largest rivers on the Delmarva Peninsula, supported by a watershed that is nearly 530,000 acres in size, and draining into the Chesapeake Bay.",
     "url": "https://dnr.maryland.gov/wildlife/pages/publiclands/eastern/nanticoke.aspx",
     "why": "clean total"
    },
    "ours": {
-    "acres": 1257,
+    "acres": 2195,
     "manager": "",
     "pieces": [
      [
@@ -10778,8 +10617,7 @@
    "verdict": "off"
   },
   "US-7749": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Pocomoke Sound Wildlife Management Area",
    "official": {
@@ -10787,13 +10625,13 @@
     "as": "900 acres",
     "clean": false,
     "line": "tact the Wildlife & Heritage Service​ ​​​​​​​ ​ Pocomoke Sound WMA Main_Content Pocomoke Sound WMA, with over 900 acres of marsh and tidal mud flats, is located in southern Somerset County. The property provides excellent habitat",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Pocomoke Sound WMA, with over 900 acres of marsh and tidal mud flats, is located in southern Somerset County.",
     "url": "https://dnr.maryland.gov/wildlife/Pages/publiclands/eastern/pocomokesound.aspx",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 322,
+    "acres": 902,
     "manager": "",
     "pieces": [],
     "pin": "well outside",
@@ -10808,13 +10646,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 64,
+   "pct": 0,
    "same_agency": false,
-   "score": 4,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 0,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -10830,11 +10668,10 @@
    ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-7750": {
-   "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "South Marsh Island Wildlife Management Area",
    "official": {
@@ -10842,13 +10679,13 @@
     "as": "3,000 acre",
     "clean": true,
     "line": "ervice​ ​​​​​​​ ​ South Marsh Island WMA Main_Content On South Marsh Island, the emphasis is on \"marsh.\" This 3,000 acre island, located within the Chesapeake Bay, is entirely comprised of marshlands, punctuated by ponds and creek",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "On South Marsh Island, the emphasis is on \"marsh.\" This 3,000 acre island, located within the Chesapeake Bay, is entirely comprised of marshlands, punctuated by ponds and creeks.",
     "url": "https://dnr.maryland.gov/wildlife/pages/publiclands/eastern/southmarsh.aspx",
     "why": "clean total"
    },
    "ours": {
-    "acres": 2082,
+    "acres": 3073,
     "manager": "",
     "pieces": [
      [
@@ -10870,7 +10707,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 1
    },
@@ -10887,13 +10724,13 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 31,
+   "pct": 2,
    "same_agency": false,
-   "score": 5,
+   "score": 8,
    "score_parts": {
     "name": 2,
-    "pin": 1,
-    "size": 0,
+    "pin": 2,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -10918,10 +10755,11 @@
    ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-7751": {
-   "checked": "2026-11-09",
+   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Tar Bay Wildlife Management Area",
    "official": {
@@ -10929,13 +10767,13 @@
     "as": "12 acre",
     "clean": false,
     "line": "read about the Barren Island Construction Update, which includes marked safety zones and barge locations.​​ A 12-acre marsh island off the northeast end of Barren Island between Tar Bay and the Chesapeake Bay. Tar Bay WMA is a",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "A 12-acre marsh island off the northeast end of Barren Island between Tar Bay and the Chesapeake Bay.",
     "url": "https://dnr.maryland.gov/wildlife/pages/publiclands/eastern/tarbay.aspx",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 11,
+    "acres": 16,
     "manager": "",
     "pieces": [
      [
@@ -10957,13 +10795,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 8,
+   "pct": 33,
    "same_agency": false,
-   "score": 7,
+   "score": 5,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 2,
+    "size": 0,
     "source": 2
    },
    "sizes": [
@@ -10979,11 +10817,10 @@
    ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "off"
   },
   "US-7752": {
-   "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Taylors Island Wildlife Management Area",
    "official": {
@@ -10991,13 +10828,13 @@
     "as": "1,120 acres",
     "clean": true,
     "line": "nd in western Dorchester County is a classic illustration of Chesapeake Bay tidal marsh habitat. Encompassing 1,120 acres, Taylors Island WMA is a mix of marsh, forests and fallow fields. What To See Wildlife associated with the ma",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Encompassing 1,120 acres, Taylors Island WMA is a mix of marsh, forests and fallow fields.",
     "url": "https://dnr.maryland.gov/wildlife/pages/publiclands/eastern/taylorsisland.aspx",
     "why": "clean total"
    },
    "ours": {
-    "acres": 916,
+    "acres": 1135,
     "manager": "",
     "pieces": [
      [
@@ -11025,13 +10862,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 18,
+   "pct": 1,
    "same_agency": false,
-   "score": 5,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -11047,11 +10884,11 @@
    ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-7753": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Wellington Wildlife Management Area",
    "official": {
@@ -11059,13 +10896,13 @@
     "as": "400 acre",
     "clean": false,
     "line": "Access Contact the Wildlife & Heritage Service​ ​​​​​​​ Wellington WMA Main_Content Predominantly forest, the 400 acre Wellington WMA is located in eastern Somerset County. Wellington WMA is part of one of the largest forested t",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Predominantly forest, the 400 acre Wellington WMA is located in eastern Somerset County.",
     "url": "https://dnr.maryland.gov/wildlife/pages/publiclands/eastern/wellington.aspx",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 537,
+    "acres": 628,
     "manager": "",
     "pieces": [
      [
@@ -11087,7 +10924,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 34,
+   "pct": 57,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -11112,8 +10949,7 @@
    "verdict": "off"
   },
   "US-7754": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bowen Wildlife Management Area",
    "official": {
@@ -11121,13 +10957,13 @@
     "as": "313 acres",
     "clean": false,
     "line": "c enjoyment of the State’s wildlife resources through hunting and other wildlife-dependent recreation. Of the 313 acres, 90 percent of the area is tidal marsh which is a stopover point for migrating and wintering waterfowl. Black",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Of the 313 acres, 90 percent of the area is tidal marsh which is a stopover point for migrating and wintering waterfowl.",
     "url": "https://dnr.maryland.gov/wildlife/Pages/publiclands/southern/bowen.aspx",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 255,
+    "acres": 321,
     "manager": "",
     "pieces": [
      [
@@ -11154,13 +10990,13 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 19,
+   "pct": 3,
    "same_agency": false,
-   "score": 5,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -11176,10 +11012,10 @@
    ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-7755": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Cedar Point Wildlife Management Area",
    "official": {
@@ -11187,7 +11023,7 @@
     "as": "1914 acre",
     "clean": false,
     "line": "lds Disabled Hunter Access Contact the Wildlife & Heritage Service​ ​​​​​​​ Cedar Point WMA Main_Content This 1914-acre site situated on a peninsula between Nanjemoy Creek and the Potomac River, in southwestern Charles County con",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "This 1914-acre site situated on a peninsula between Nanjemoy Creek and the Potomac River, in southwestern Charles County consists of a mix of forested and upland habitats as well as tidal marsh, non-tidal ponds and wetlands, and agricultural fields.",
     "url": "https://dnr.maryland.gov/wildlife/pages/publiclands/southern/cedarpoint.aspx",
     "why": "part (a lake, a purchase, a campground…)"
@@ -11241,7 +11077,7 @@
   },
   "US-7756": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Cheltenham Wildlife Management Area",
    "official": {
@@ -11249,13 +11085,13 @@
     "as": "80 acre",
     "clean": false,
     "line": "ham WMA public archery range will be closed on June 28, 2025 for a Southern Maryland Archery Club event. This 80-acre area is owned by the Maryland Department of Natural Resources and the Maryland Department of Juvenile Service",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "This 80-acre area is owned by the Maryland Department of Natural Resources and the Maryland Department of Juvenile Services.",
     "url": "https://dnr.maryland.gov/wildlife/Pages/publiclands/southern/cheltenham.aspx",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 7,
+    "acres": 9,
     "manager": "",
     "pieces": [
      [
@@ -11277,7 +11113,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 91,
+   "pct": 89,
    "same_agency": false,
    "score": 5,
    "score_parts": {
@@ -11302,8 +11138,7 @@
    "verdict": "off"
   },
   "US-7757": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Chicamuxen Wildlife Management Area",
    "official": {
@@ -11311,13 +11146,13 @@
     "as": "382 acre",
     "clean": true,
     "line": "elds Disabled Hunter Access Contact the Wildlife & Heritage Service​ ​​​​​​​ Chicamuxen WMA Main_Content This 382-acre site situated along the Chicamuxen Creek, a Potomac River tributary, in western Charles County consists of pr",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "This 382-acre site situated along the Chicamuxen Creek, a Potomac River tributary, in western Charles County consists of prime marshlands as well as uplands, rolling forested habitats, and agricultural fields.",
     "url": "https://dnr.maryland.gov/wildlife/pages/publiclands/southern/chicamuxen.aspx",
     "why": "clean total"
    },
    "ours": {
-    "acres": 171,
+    "acres": 382,
     "manager": "",
     "pieces": [
      [
@@ -11344,13 +11179,13 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 55,
+   "pct": 0,
    "same_agency": false,
-   "score": 5,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -11366,10 +11201,10 @@
    ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-7758": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Myrtle Grove Wildlife Management Area",
    "official": {
@@ -11377,13 +11212,13 @@
     "as": "5,190 acres",
     "clean": false,
     "line": "in the central portion of the property. Since that time, many additional acquisitions have grown this WMA to 5,190 acres, making it the largest Wildlife Management Area in the Southern Region. ​​​Myrtle Grove WMA is home to the My",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Since that time, many additional acquisitions have grown this WMA to 5,190 acres, making it the largest Wildlife Management Area in the Southern Region.",
     "url": "https://dnr.maryland.gov/wildlife/Pages/publiclands/southern/myrtlegrove.aspx",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 5231,
+    "acres": 5176,
     "manager": "",
     "pieces": [
      [
@@ -11417,7 +11252,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
@@ -11429,12 +11264,12 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 1,
+   "pct": 0,
    "same_agency": false,
-   "score": 7,
+   "score": 8,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 2,
     "source": 2
    },
@@ -11482,7 +11317,7 @@
   },
   "US-7760": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Nanjemoy Creek Wildlife Management Area",
    "official": {
@@ -11490,18 +11325,18 @@
     "as": "230 acre",
     "clean": true,
     "line": "cess Contact the Wildlife & Heritage Service​ ​​​​​​​ Nanjemoy Creek WMA Main_Content Nanjemoy Creek WMA is a 230-acre site situated along the western branch of Nanjemoy Creek in southern Charles County. The property is entirely",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Nanjemoy Creek WMA is a 230-acre site situated along the western branch of Nanjemoy Creek in southern Charles County.",
     "url": "https://dnr.maryland.gov/wildlife/Pages/publiclands/southern/Nanjemoy-Creek-WMA.aspx",
     "why": "clean total"
    },
    "ours": {
-    "acres": 1125,
+    "acres": 276,
     "manager": "",
     "pieces": [],
     "pin": "well outside",
     "src": "",
-    "unknown_pieces": 5
+    "unknown_pieces": 4
    },
    "owner_now": null,
    "pages": [
@@ -11511,7 +11346,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 389,
+   "pct": 20,
    "same_agency": false,
    "score": 4,
    "score_parts": {
@@ -11545,7 +11380,7 @@
    "verdict": "off"
   },
   "US-7761": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
@@ -11558,17 +11393,17 @@
    ],
    "n": "Parker's Creek Wildlife Management Area",
    "official": {
-    "acres": 1400.0,
-    "as": "1,400 acres",
+    "acres": 1877.0,
+    "as": "1,877 acres",
     "clean": false,
-    "line": "protected land owned by the Department of Natural Resources (1,877 acres), the American Chestnut Land Trust (1,400 acres), and other various preserved properties and easements (374 acres). Collectively, these parcels protect over",
-    "read": "2026-11-09",
+    "line": ". Parker’s Creek WMA is situated in a complex of protected land owned by the Department of Natural Resources (1,877 acres), the American Chestnut Land Trust (1,400 acres), and other various preserved properties and easements (374 a",
+    "read": "2026-11-22",
     "sent": "Parker’s Creek WMA is situated in a complex of protected land owned by the Department of Natural Resources (1,877 acres), the American Chestnut Land Trust (1,400 acres), and other various preserved properties and easements (374 acres).",
     "url": "https://dnr.maryland.gov/wildlife/pages/publiclands/southern/parkers-creek.aspx",
     "why": "part (a lake, a purchase, a campground…)"
    },
    "ours": {
-    "acres": 1369,
+    "acres": 1912,
     "manager": "",
     "pieces": [
      [
@@ -11675,15 +11510,15 @@
    "verdict": "agree"
   },
   "US-7762": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Popes Creek Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 293,
+    "acres": 507,
     "manager": "",
     "pieces": [],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 2
    },
@@ -11696,10 +11531,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -11709,21 +11544,13 @@
    "verdict": "no size on page"
   },
   "US-7763": {
-   "checked": "2026-11-09",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Riverside Wildlife Management Area",
-   "official": {
-    "acres": 680.0,
-    "as": "680 acre",
-    "clean": false,
-    "line": "ields Disabled Hunter Access Contact the Wildlife & Heritage Service​ ​​​​​​​ Riverside WMA Main_Content This 680-acre site situated on the Potomac River in southwestern Charles County consists of a mix of mature forested and re",
-    "read": "2026-11-09",
-    "sent": "This 680-acre site situated on the Potomac River in southwestern Charles County consists of a mix of mature forested and reforested habitats as well as tidal marsh, non-tidal ponds and wetlands.",
-    "url": "https://dnr.maryland.gov/wildlife/pages/publiclands/southern/riverside.aspx",
-    "why": "part (a lake, a purchase, a campground…)"
-   },
+   "official": null,
    "ours": {
-    "acres": 778,
+    "acres": 1117,
     "manager": "",
     "pieces": [
      [
@@ -11750,13 +11577,12 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 14,
-   "same_agency": false,
-   "score": 8,
+   "pct": null,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 1,
     "source": 2
    },
    "sizes": [
@@ -11772,16 +11598,24 @@
    ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "unsure"
   },
   "US-7764": {
-   "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Belle Grove Wildlife Management Area",
-   "official": null,
+   "official": {
+    "acres": 356.0,
+    "as": "356 acre",
+    "clean": false,
+    "line": "yer WMA, game birds were raised in hopes that surplus populations would spread to adjacent lands. ​Today this 356-acre tract is no longer a game bird farm. Forests and fields abound with wildlife, providing natural beauty and re",
+    "read": "2026-11-22",
+    "sent": "​Today this 356-acre tract is no longer a game bird farm.",
+    "url": "https://dnr.maryland.gov/wildlife/Pages/publiclands/western/bellegrove.aspx",
+    "why": "part (a lake, a purchase, a campground…)"
+   },
    "ours": {
-    "acres": 294,
+    "acres": 337,
     "manager": "",
     "pieces": [
      [
@@ -11791,7 +11625,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 1
    },
@@ -11808,12 +11642,13 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 5,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
-    "pin": 1,
-    "size": 1,
+    "pin": 2,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -11838,10 +11673,10 @@
    ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "unsure"
+   "verdict": "agree"
   },
   "US-7765": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Billmeyer Wildlife Management Area",
    "official": {
@@ -11849,13 +11684,13 @@
     "as": "758 acre",
     "clean": false,
     "line": "spread to adjacent lands. Nearby, the Bellgrove WMA was used exclusively for raising wild turkeys. Today this 758-acre tract in Allegany County is no longer a game bird farm. Forests and fields abound with wildlife, providing na",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Today this 758-acre tract in Allegany County is no longer a game bird farm.",
     "url": "https://dnr.maryland.gov/wildlife/Pages/publiclands/western/billmeyer.aspx",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 812,
+    "acres": 758,
     "manager": "",
     "pieces": [
      [
@@ -11883,7 +11718,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 7,
+   "pct": 0,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -11917,8 +11752,7 @@
    "verdict": "agree"
   },
   "US-7766": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Cunningham Swamp Wildlife Management Area",
    "official": {
@@ -11926,13 +11760,13 @@
     "as": "328 acre",
     "clean": true,
     "line": "​ ​​​​​​​ ​ Cunningham Swamp WMA Main_Content Cunningham Swamp WMA is located in Central Garrett County. This 328 acre tract encompasses the majority of Cunningham Swamp, a rich wetland with exceptional habitat for wetland and b",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "This 328 acre tract encompasses the majority of Cunningham Swamp, a rich wetland with exceptional habitat for wetland and bog related species.",
     "url": "https://dnr.maryland.gov/wildlife/pages/publiclands/western/cunninghamswamp.aspx",
     "why": "clean total"
    },
    "ours": {
-    "acres": 229,
+    "acres": 308,
     "manager": "",
     "pieces": [
      [
@@ -11942,7 +11776,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
@@ -11954,13 +11788,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 30,
+   "pct": 6,
    "same_agency": false,
-   "score": 5,
+   "score": 8,
    "score_parts": {
     "name": 2,
-    "pin": 1,
-    "size": 0,
+    "pin": 2,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -11976,11 +11810,10 @@
    ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-7767": {
-   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Dans Mountain Wildlife Management Area",
    "official": {
@@ -11988,13 +11821,13 @@
     "as": "9,925 acre",
     "clean": false,
     "line": "breathtaking view of the North Branch of the Potomac River and its forested valley. Approximately 98% of this 9,925-acre tract is dominated by mixed oak forest in various age classes. Dan's Mountain WMA RxBurn Unit 2 This story ma",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Approximately 98% of this 9,925-acre tract is dominated by mixed oak forest in various age classes.",
     "url": "https://dnr.maryland.gov/wildlife/Pages/publiclands/western/danswma.aspx",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 11567,
+    "acres": 11007,
     "manager": "",
     "pieces": [
      [
@@ -12004,7 +11837,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 3
    },
@@ -12016,13 +11849,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 17,
+   "pct": 11,
    "same_agency": false,
-   "score": 5,
+   "score": 8,
    "score_parts": {
     "name": 2,
-    "pin": 1,
-    "size": 0,
+    "pin": 2,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -12038,20 +11871,62 @@
    ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-7768": {
-   "checked": "2026-11-09",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Frederick City Watershed Cooperative Wildlife Management Area",
-   "ours": null,
-   "score": null,
+   "official": null,
+   "ours": {
+    "acres": 5186,
+    "manager": "",
+    "pieces": [
+     [
+      16458,
+      "Frederick Municipal Forest",
+      5186,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dnr.maryland.gov/wildlife/pages/publiclands/western/fcw_cwma.aspx",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [
+    {
+     "acres": 7000.0,
+     "as": "7,000 acres",
+     "clean": false,
+     "line": "ick City Watershed CWMA Main_Content Frederick City Cooperative Wildlife Management Area (CWMA) contains over 7,000 acres of forest land in western Frederick County. The area is popular with deer, squirrel, grouse and turkey hunter",
+     "total_like": false,
+     "url": "https://dnr.maryland.gov/wildlife/pages/publiclands/western/fcw_cwma.aspx",
+     "why": "part (a lake, a purchase, a campground…)"
+    }
+   ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "unsure"
   },
   "US-7769": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Heaters Island Wildlife Management Area",
    "ours": null,
@@ -12061,7 +11936,7 @@
    "verdict": "no outline"
   },
   "US-7770": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Indian Springs Wildlife Management Area",
    "official": {
@@ -12069,7 +11944,7 @@
     "as": "6,400 acre",
     "clean": true,
     "line": "e Wildlife & Heritage Service​ ​​​​​​​ Indian Springs WMA Main_Content ​ ​ ​​ ​ ​ ​ ​ Indian Springs WMA is a 6,400-acre tract in Washington County near the town of Clear Spring. Pictured above is Blair's Valley Lake, a popular fi",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Indian Springs WMA is a 6,400-acre tract in Washington County near the town of Clear Spring.",
     "url": "https://dnr.maryland.gov/wildlife/Pages/publiclands/western/indiansprings.aspx",
     "why": "clean total"
@@ -12141,12 +12016,12 @@
   },
   "US-7771": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Mt. Nebo Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 2036,
+    "acres": 1887,
     "manager": "",
     "pieces": [
      [
@@ -12197,13 +12072,21 @@
    "verdict": "unsure"
   },
   "US-7772": {
-   "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Prathers Neck Wildlife Management Area",
-   "official": null,
+   "official": {
+    "acres": 215.0,
+    "as": "215 acre",
+    "clean": false,
+    "line": "d-growth forests provide important habitat for many rare, threatened, or endangered species. What To See This 215-acre property is dominated by a mixture of oak/poplar forest habitat, with several old fields in early stages of s",
+    "read": "2026-11-22",
+    "sent": "This 215-acre property is dominated by a mixture of oak/poplar forest habitat, with several old fields in early stages of succession.",
+    "url": "https://dnr.maryland.gov/wildlife/pages/publiclands/western/prathersneck.aspx",
+    "why": "part (a lake, a purchase, a campground…)"
+   },
    "ours": {
-    "acres": 126,
+    "acres": 215,
     "manager": "",
     "pieces": [
      [
@@ -12213,7 +12096,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 1
    },
@@ -12225,12 +12108,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 0,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
-    "pin": 1,
-    "size": 1,
+    "pin": 2,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -12246,19 +12130,19 @@
    ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "unsure"
+   "verdict": "agree"
   },
   "US-7773": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Ridenour Swamp Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 47,
+    "acres": 80,
     "manager": "",
     "pieces": [],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 2
    },
@@ -12271,10 +12155,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -12294,23 +12178,21 @@
    "verdict": "unsure"
   },
   "US-7774": {
-   "cause": "the agency figure may cover several states; our outline may be this state's share only",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Sideling Hill Wildlife Management Area",
-   "note": "the agency figure may cover several states; our outline may be this state's share only",
    "official": {
     "acres": 3100.0,
     "as": "3,100 acre",
     "clean": false,
     "line": "ng the State and Federally Endangered plant, Harperella ( Ptilimnium nodosum) pictured here. What To See This 3,100-acre tract of mixed mixed oak forest with scattered stands of Virginia Pine is a must for outdoor enthusiasts who",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "This 3,100-acre tract of mixed mixed oak forest with scattered stands of Virginia Pine is a must for outdoor enthusiasts who love mountain scenery and wildlife.",
     "url": "https://dnr.maryland.gov/wildlife/pages/publiclands/western/sidelinghill.aspx",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 3915,
+    "acres": 3444,
     "manager": "",
     "pieces": [
      [
@@ -12326,7 +12208,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 1
    },
@@ -12338,13 +12220,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 26,
+   "pct": 11,
    "same_agency": false,
    "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 2,
-    "size": 1,
+    "pin": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -12360,10 +12242,10 @@
    ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "unsure"
+   "verdict": "agree"
   },
   "US-7775": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Warrior Mountain Wildlife Management Area",
    "official": {
@@ -12371,7 +12253,7 @@
     "as": "5,204 acres",
     "clean": false,
     "line": "​​​​​​​ Warrior Mountain WMA Main_Content Remotely located in central Allegany County, Warrior Mountain WMA's 5,204 acres of forest blanket the ridge and stream valley topography which is typically found in Western Maryland. At the",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Remotely located in central Allegany County, Warrior Mountain WMA's 5,204 acres of forest blanket the ridge and stream valley topography which is typically found in Western Maryland.",
     "url": "https://dnr.maryland.gov/wildlife/Pages/publiclands/western/warriormountain.aspx",
     "why": "total-looking"
@@ -12442,7 +12324,7 @@
    "verdict": "agree"
   },
   "US-7776": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Oxon Cove Park & Farm National Historical Park",
    "ours": null,
@@ -12453,12 +12335,12 @@
   },
   "US-7777": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Dierssen Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 67,
+    "acres": 76,
     "manager": "",
     "pieces": [],
     "pin": "inside",
@@ -12498,7 +12380,7 @@
   },
   "US-7778": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Islands of the Potomac Wildlife Management Area",
    "official": {
@@ -12506,13 +12388,13 @@
     "as": "275 acres",
     "clean": false,
     "line": "erson, MD, about one mile north of Whites Ferry. It was purchased by the Maryland DNR in 2015. This island is 275 acres and is just down river from Oxley Island. The Islands of the Potomac WMA is only accessible by water. See Mar",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "This island is 275 acres and is just down river from Oxley Island.",
     "url": "https://dnr.maryland.gov/wildlife/pages/publiclands/central/islandsofthepotomac.aspx",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 801,
+    "acres": 1059,
     "manager": "",
     "pieces": [
      [
@@ -12558,7 +12440,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 191,
+   "pct": 285,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -12602,7 +12484,7 @@
   },
   "US-7779": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Pocomoke River Wildlife Management Area",
    "official": {
@@ -12610,18 +12492,18 @@
     "as": "1,016 acre",
     "clean": true,
     "line": "SOURCES WILDLIFE & HERITAGE SERVICE --> Left_Content Pocomoke River WMA Main_Content The Pocomoke River WMA's 1,016-acre tract is a mixture of agricultural fields, woodlands, and wetlands located within the Great Cypress Swamp in",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The Pocomoke River WMA's 1,016-acre tract is a mixture of agricultural fields, woodlands, and wetlands located within the Great Cypress Swamp in south central Worcester County.",
     "url": "https://dnr.maryland.gov/wildlife/pages/publiclands/eastern/pocomokeriverwma.aspx",
     "why": "clean total"
    },
    "ours": {
-    "acres": 19298,
+    "acres": 21363,
     "dissolved": {
      "after": 13645,
      "before": 14543,
      "copies": 1,
-     "key_union": 19298,
+     "key_union": 21363,
      "parts": 0,
      "records": 4,
      "summed": 13645,
@@ -12666,7 +12548,7 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 1799,
+   "pct": 2003,
    "same_agency": false,
    "score": 5,
    "score_parts": {
@@ -12701,12 +12583,12 @@
   },
   "US-7780": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Sinepuxent Bay Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 59,
+    "acres": 62,
     "manager": "",
     "pieces": [
      [
@@ -12722,7 +12604,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
@@ -12735,10 +12617,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -12758,7 +12640,8 @@
    "verdict": "unsure"
   },
   "US-7781": {
-   "checked": "2026-11-09",
+   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Wetipquin Wildlife Management Area",
    "official": {
@@ -12766,13 +12649,13 @@
     "as": "100 acre",
     "clean": false,
     "line": "e Fields Disabled Hunter Access Contact the Wildlife & Heritage Service​ ​​​​​​​ Wetipquin WMA Main_Content A 100-acre pocket of mixed hardwoods and loblolly pine forest in southwestern Wicomico County, the Wetipquin WMA came to",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "A 100-acre pocket of mixed hardwoods and loblolly pine forest in southwestern Wicomico County, the Wetipquin WMA came to be under state ownership in 1991.",
     "url": "https://dnr.maryland.gov/wildlife/pages/publiclands/eastern/wetipquin.aspx",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 101,
+    "acres": 214,
     "manager": "",
     "pieces": [
      [
@@ -12794,13 +12677,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 1,
+   "pct": 114,
    "same_agency": false,
-   "score": 8,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 0,
     "source": 2
    },
    "sizes": [
@@ -12816,10 +12699,10 @@
    ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "off"
   },
   "US-7782": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Ben Doane Parcel of Nanjemoy Wildlife Management Area",
    "ours": null,
@@ -12829,7 +12712,7 @@
    "verdict": "no outline"
   },
   "US-7783": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Gravel Hill Swamp Wildlife Management Area",
    "official": {
@@ -12837,7 +12720,7 @@
     "as": "68 acres",
     "clean": false,
     "line": "WILDLIFE & HERITAGE SERVICE --> Left_Content Gravel Hill Swamp Wildlife Management Area Main_Content At only 68 acres in size, this relatively small wildlife management area is big in species diversity and richness. Located in",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "At only 68 acres in size, this relatively small wildlife management area is big in species diversity and richness.",
     "url": "https://dnr.maryland.gov/wildlife/pages/publiclands/western/gravelhillswamp.aspx",
     "why": "total-looking"
@@ -12846,7 +12729,7 @@
     "acres": 0,
     "manager": "",
     "pieces": [],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "",
     "unknown_pieces": 1
    },
@@ -12860,10 +12743,10 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -12883,7 +12766,7 @@
    "verdict": "ours unknown"
   },
   "US-7973": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Baltimore-Washington National Parkway",
    "official": null,
@@ -12938,17 +12821,82 @@
    "verdict": "ours unknown"
   },
   "US-7974": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Harmony Hall National Heritage Site",
-   "ours": null,
-   "score": null,
+   "official": {
+    "acres": 62.5,
+    "as": "62.5 acre",
+    "clean": false,
+    "line": "te All NPS Exiting nps.gov Cancel Harmony Hall Maryland The 18th century Harmony Hall mansion is located on a 62.5-acre open pasture land estate along the Potomac River. This estate was purchased by the National Park Service in 1",
+    "read": "2026-11-22",
+    "sent": "The 18th century Harmony Hall mansion is located on a 62.5-acre open pasture land estate along the Potomac River.",
+    "url": "https://www.nps.gov/haha/index.htm",
+    "why": "another park / unit named in the sentence"
+   },
+   "ours": {
+    "acres": 0,
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/haha/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/haha/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/haha/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/haha/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/haha/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "same_agency": false,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [
+    {
+     "acres": 62.5,
+     "as": "62.5 acre",
+     "clean": false,
+     "line": "te All NPS Exiting nps.gov Cancel Harmony Hall Maryland The 18th century Harmony Hall mansion is located on a 62.5-acre open pasture land estate along the Potomac River. This estate was purchased by the National Park Service in 1",
+     "total_like": false,
+     "url": "https://www.nps.gov/haha/index.htm",
+     "why": "another park / unit named in the sentence"
+    }
+   ],
    "t": "National Heritage Site",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "ours unknown"
   },
   "US-7975": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Glen Echo National Heritage Site",
    "ours": null,
@@ -12958,7 +12906,7 @@
    "verdict": "no outline"
   },
   "US-9901": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Civil War Defenses of Washington National Historic Trail",
    "note": "whole park compared (POTA lists it in 0 states: {})",
@@ -12967,7 +12915,7 @@
     "as": "130 acres",
     "clean": false,
     "line": "y. Places to visit Today 18 fort sites are administered by the National Park Service located on approximately 130 acres. The Battle of Fort Stevens Join us each July for the annual commemoration of the Battle of Fort Stevens and",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Today 18 fort sites are administered by the National Park Service located on approximately 130 acres.",
     "url": "https://www.nps.gov/cwdw/index.htm",
     "why": "no total words near it"
@@ -12981,8 +12929,8 @@
     "src": "",
     "states": [
      "US-VA",
-     "US-DC",
-     "US-MD"
+     "US-MD",
+     "US-DC"
     ],
     "unknown_pieces": 1,
     "whole_park": true
@@ -13037,5 +12985,5 @@
    "verdict": "ours unknown"
   }
  },
- "read": "2026-11-09"
+ "read": "2026-11-22"
 }
