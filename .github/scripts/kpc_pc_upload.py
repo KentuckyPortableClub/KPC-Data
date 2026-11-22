@@ -114,6 +114,11 @@ def read_pack(pack, parkinfo='data/parkinfo'):
         else:
             if not isinstance(d, dict) or not isinstance(d.get('rows'), list) or not d.get('agency'):
                 probs.append(f'{n}: not a crosswalk file'); continue
+            # 22 Nov review M5: the agency-list checks run here too, so one refused crosswalk refuses the WHOLE pack (it used to be
+            # skipped quietly at merge while the rest of the pack was saved)
+            try: _doc, _why = crosswalk_doc(d, made)
+            except Exception as e: _doc, _why = None, [f'the agency-list checks stopped ({type(e).__name__})']  # noqa: BLE001
+            if not _doc: probs.append(f'{n}: refused by the agency-list checks ({"; ".join(map(str, _why))[:200]})'); continue
             xw[n[10:-5]] = d
     if probs: return None, probs
     return {'made': made, 'manifest': man, 'pages': pages, 'crosswalk': xw}, []
