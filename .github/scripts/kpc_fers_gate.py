@@ -49,7 +49,7 @@ def auto_rows(path=None):
         return None, f'{p.as_posix()} is missing (the map audit has not saved its bot list)'
     try: d = load_json_any(p)
     except Exception as e: return None, f'{p.as_posix()} cannot be read ({type(e).__name__})'  # noqa: BLE001
-    if not isinstance(d, dict) or not isinstance(d.get('rows', []), list):
+    if not isinstance(d, dict) or not isinstance(d.get('rows'), list):   # 22 Nov review M4: {} or rows under another key is not a list
         return None, f'{p.as_posix()} is not a list of rows'
     return d.get('rows') or [], ''
 HEALTH = {'SELF-INTERSECTION', 'TINY HOLES', 'SLIVERS', 'INVALID'}

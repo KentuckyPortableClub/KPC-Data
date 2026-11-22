@@ -263,10 +263,23 @@ def selftest():
         check('robots.txt has an explicit Disallow: not read', not g.calls and 'Disallow' in rep['Invented Parks'])
         rep, g = go([dict(base, robots='loaded but could not be parsed')], {})
         check('robots.txt loaded but could not be parsed: not read', not g.calls and 'could not be parsed' in rep['Invented Parks'])
-        for u in ('https://services5.arcgis.com/x/ArcGIS/rest/services/L/FeatureServer/0/query', 'https://apps.fs.usda.gov/arcx/rest/services/x/MapServer/0/query',
-                  'https://ncnhde.natureserve.org/list.csv'):
-            rep, g = go([dict(base, source_url=u)], {})
-            check(f'a saved-copies-only or never-contact host is never read ({u.split("/")[2]})', not g.calls and rep['Invented Parks'] != 'read')
+        # 22 Nov review N15: outside the store keeper (no KPC_KEEPER_HOST_RULES) these hosts are never read; inside the keeper's own
+        # jobs ArcGIS and Forest Service hosts may be read (robots.txt still decides) and a never-contact host never is
+        _keeper = os.environ.pop('KPC_KEEPER_HOST_RULES', None)
+        try:
+            for u in ('https://services5.arcgis.com/x/ArcGIS/rest/services/L/FeatureServer/0/query', 'https://apps.fs.usda.gov/arcx/rest/services/x/MapServer/0/query',
+                      'https://ncnhde.natureserve.org/list.csv'):
+                rep, g = go([dict(base, source_url=u)], {})
+                check(f'a saved-copies-only or never-contact host is never read ({u.split("/")[2]})', not g.calls and rep['Invented Parks'] != 'read')
+            os.environ['KPC_KEEPER_HOST_RULES'] = 'owner-2026-11-15'
+            for u in ('https://services5.arcgis.com/x/ArcGIS/rest/services/L/FeatureServer/0/query', 'https://apps.fs.usda.gov/arcx/rest/services/x/MapServer/0/query'):
+                rep, g = go([dict(base, agency='Invented Keeper', source_url=u)], {u: (200, {}, csv_body, u)})   # its own file: the earlier one stays
+                check(f'inside the store keeper an ArcGIS / Forest Service host may be read ({u.split("/")[2]})', bool(g.calls))
+            rep, g = go([dict(base, agency='Invented Keeper', source_url='https://ncnhde.natureserve.org/list.csv')], {})
+            check('inside the store keeper a never-contact host is still never read', not g.calls and rep['Invented Keeper'] != 'read')
+        finally:
+            os.environ.pop('KPC_KEEPER_HOST_RULES', None)
+            if _keeper is not None: os.environ['KPC_KEEPER_HOST_RULES'] = _keeper
         wd = dict(base, agency='Invented WDPA', map={'layer': 'wdpa', 'field': 'WDPA_PID', 'value': 'Unit'})
         rep, g = go([wd], {base['source_url']: (200, {}, csv_body, base['source_url'])})
         check('a WDPA layer or field is refused, never read', not g.calls and 'WDPA' in rep['Invented WDPA'])

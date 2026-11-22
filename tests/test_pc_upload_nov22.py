@@ -131,6 +131,12 @@ with tempfile.TemporaryDirectory() as td:
     (t / 'gh-xw' / 'zz-parks.json').unlink()
     U.main(['merge', '--pack', str(pb), '--parkinfo', str(t / 'pi'), '--pages', str(t / 'gh-pages'), '--crosswalk', str(t / 'gh-xw')])
     check('merge: an agency the agency-list checks refuse (not https) is not written', not (t / 'gh-xw' / 'zz-parks.json').exists())
+    # 22 Nov review M5: the check step runs the agency-list checks too, so that one refused crosswalk refuses the WHOLE pack
+    P3, pr3 = U.read_pack(pb, t / 'pi')
+    check('check: a pack with one crosswalk the agency-list checks refuse is refused whole, with the reason',
+          P3 is None and any('refused by the agency-list checks' in x for x in pr3))
+    rc = U.main(['merge', '--pack', str(pb), '--parkinfo', str(t / 'pi'), '--pages', str(t / 'gh-pages2'), '--crosswalk', str(t / 'gh-xw2')])
+    check('merge: that pack keeps nothing at all (exit 1, not even its good area pages)', rc == 1 and not (t / 'gh-pages2').exists() and not (t / 'gh-xw2').exists())
 
 print('ALL PASS' if ok else 'SOME FAILED')
 sys.exit(0 if ok else 1)

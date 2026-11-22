@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """KPC BOT MANNERS (Fable, chat 10 'bot workshop', Oct 28 2026). ONE small module every workshop bot imports, so the house
 rules are written once: the host rules first (kpc_host_rules.py, Nov 10: never-contact hosts, every services*.arcgis.com host
-and the saved-copy-only list get no request of any kind, robots.txt included), robots.txt obeyed with NO exemption (the old ArcGIS
+except inside the store keeper's own jobs (22 Nov: KPC_KEEPER_HOST_RULES), and the saved-copy-only list get no request of any kind,
+robots.txt included), robots.txt obeyed with NO exemption (the old ArcGIS
 REST exemption is gone, Nov 10; Nov 15: robots.txt read by the store engine 3.6.2 rule, the same everywhere: 401 / 403 and any other
 4xx but 429 = "unavailable" = no rules, a web page with no robots line from the site's own address = no rules), 1 request / 2 s per host, back-off on 429 / 5xx, three strikes
 = that host rests a day (remembered across runs in the bot's state file), range reads for PDFs, a User-Agent that names the club
