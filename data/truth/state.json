@@ -394,21 +394,22 @@
    "checked": 145,
    "counts": {
     "agree": 3,
-    "handover_hints": 0,
+    "handover_hints": 1,
     "no_page": 0,
     "no_size": 105,
-    "off": 3,
-    "ours_unknown": 9,
+    "not_read": 0,
+    "off": 2,
+    "ours_unknown": 10,
     "parks": 145,
     "retired": 0,
-    "unsure": 1,
+    "unsure": 2,
     "weak": 7,
-    "with_outline": 124
+    "with_outline": 125
    },
    "left": 0,
    "parks": 145,
-   "status": "queued",
-   "updated": "2026-11-09"
+   "status": "done",
+   "updated": "2026-11-22"
   },
   "US-KY": {
    "checked": 193,
@@ -1118,12 +1119,15 @@
  "hosts": {
   "dep.nj.gov": 1795471462.1561859,
   "destateparks.com": 1795473632.1745288,
+  "ksoutdoors.com": 1795475203.699929,
+  "ksoutdoors.gov": 1795475234.4505506,
   "maine.gov": 1795472930.2139065,
   "tnstateparks.com": 1795430345.0894592,
   "www.alapark.com": 1795435195.785201,
   "www.arcgis.com": 1795452861.2430022,
   "www.destateparks.com": 1795473760.9565387,
   "www.floridastateparks.org": 1795436850.291285,
+  "www.ksoutdoors.gov": 1795475132.007652,
   "www.lastateparks.com": 1795474392.932798,
   "www.maine.gov": 1795472706.0380914,
   "www.michigan.gov": 1795441493.2175202,
@@ -1136,30 +1140,57 @@
  },
  "last": {
   "areas": [
-   "US-TX"
+   "US-KS"
   ],
   "manners": {
    "errors": 0,
-   "for_person_urls": [],
+   "for_person": 6,
+   "for_person_urls": [
+    [
+     "https://www.ksoutdoors.gov/about-kdwp/where-we-work/nature-centers/olathe-prairie-center",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://ksoutdoors.gov/KDWP-Info/Locations/Wildlife-Areas/Public-Wildlife-Areas-in-Southwest-Kansas/Texas-Lake",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/cedar-bluff",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://ksoutdoors.com/KDWP-Info/Locations/State-Fishing-Lakes/Northeast-Region/Atchison",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Northeast-Region/Brown-State-Fishing-Lake",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://ksoutdoors.gov/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Northwest-Region/Logan-State-Fishing-Lake",
+     "HTTP 403 twice"
+    ]
+   ],
    "host_rule": 0,
-   "requests": 0,
-   "rested": 0,
+   "requests": 15,
+   "rested": 115,
+   "retry403": 6,
    "robots": 0,
-   "strikes": 0
+   "strikes": 12
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 10,
-   "no_size": 0,
-   "ours_unknown": 0,
+   "handover_hints": 1,
+   "no_size": 103,
+   "ours_unknown": 3,
    "pages_read": 0,
-   "parks": 0,
+   "parks": 106,
    "retired": 0,
    "size_agree": 0,
    "size_off": 0,
    "size_unsure": 0,
-   "skipped_fresh": 222,
-   "with_outline": 0
+   "skipped_fresh": 39,
+   "with_outline": 106
   },
   "when": "2026-11-22"
  },
