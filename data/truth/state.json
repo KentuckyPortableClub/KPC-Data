@@ -665,21 +665,22 @@
    "checked": 201,
    "counts": {
     "agree": 4,
-    "handover_hints": 2,
+    "handover_hints": 3,
     "no_page": 3,
-    "no_size": 159,
+    "no_size": 160,
+    "not_read": 0,
     "off": 4,
-    "ours_unknown": 6,
+    "ours_unknown": 7,
     "parks": 201,
     "retired": 0,
-    "unsure": 4,
-    "weak": 14,
-    "with_outline": 183
+    "unsure": 3,
+    "weak": 13,
+    "with_outline": 187
    },
    "left": 0,
    "parks": 201,
-   "status": "queued",
-   "updated": "2026-11-09"
+   "status": "done",
+   "updated": "2026-11-22"
   },
   "US-NH": {
    "checked": 206,
@@ -1122,6 +1123,7 @@
   "ksoutdoors.com": 1795475203.699929,
   "ksoutdoors.gov": 1795475234.4505506,
   "maine.gov": 1795472930.2139065,
+  "outdoornebraska.gov": 1795475473.5628872,
   "tnstateparks.com": 1795430345.0894592,
   "www.alapark.com": 1795435195.785201,
   "www.arcgis.com": 1795452861.2430022,
@@ -1140,57 +1142,45 @@
  },
  "last": {
   "areas": [
-   "US-KS"
+   "US-NE"
   ],
   "manners": {
    "errors": 0,
-   "for_person": 6,
+   "for_person": 3,
    "for_person_urls": [
     [
-     "https://www.ksoutdoors.gov/about-kdwp/where-we-work/nature-centers/olathe-prairie-center",
+     "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
      "HTTP 403 twice"
     ],
     [
-     "https://ksoutdoors.gov/KDWP-Info/Locations/Wildlife-Areas/Public-Wildlife-Areas-in-Southwest-Kansas/Texas-Lake",
+     "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
      "HTTP 403 twice"
     ],
     [
-     "https://www.ksoutdoors.gov/about-kdwp/where-we-work/state-parks/cedar-bluff",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://ksoutdoors.com/KDWP-Info/Locations/State-Fishing-Lakes/Northeast-Region/Atchison",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Northeast-Region/Brown-State-Fishing-Lake",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://ksoutdoors.gov/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Northwest-Region/Logan-State-Fishing-Lake",
+     "https://visitnebraska.com/papillion/walnut-creek-lake-and-recreation-area",
      "HTTP 403 twice"
     ]
    ],
-   "host_rule": 0,
-   "requests": 15,
-   "rested": 115,
-   "retry403": 6,
+   "host_rule": 3,
+   "requests": 48,
+   "rested": 120,
+   "retry403": 3,
    "robots": 0,
-   "strikes": 12
+   "strikes": 6
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 1,
-   "no_size": 103,
-   "ours_unknown": 3,
+   "handover_hints": 3,
+   "no_size": 156,
+   "ours_unknown": 0,
    "pages_read": 0,
-   "parks": 106,
+   "parks": 158,
    "retired": 0,
    "size_agree": 0,
-   "size_off": 0,
+   "size_off": 2,
    "size_unsure": 0,
-   "skipped_fresh": 39,
-   "with_outline": 106
+   "skipped_fresh": 43,
+   "with_outline": 158
   },
   "when": "2026-11-22"
  },
