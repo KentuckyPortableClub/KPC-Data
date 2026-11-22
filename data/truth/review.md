@@ -16,7 +16,7 @@ Updated 2026-11-22. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 | US-MS | 155 | 99 | 6 | **2** | 12 | 69 | 0 | 3 | 0 | 12 |
 | US-IN | 229 | 217 | 106 | **33** | 32 | 41 | 5 | 17 | 0 | 9 |
 | US-IL | 219 | 213 | 93 | **30** | 41 | 42 | 6 | 12 | 0 | 5 |
-| US-MO | 561 | 554 | 16 | **2** | 8 | 512 | 16 | 2 | 0 | 39 |
+| US-MO | 561 | 553 | 17 | **0** | 7 | 512 | 17 | 1 | 0 | 35 |
 | US-WI | 348 | 333 | 128 | **71** | 38 | 96 | 0 | 17 | 0 | 10 |
 | US-MN | 319 | 295 | 7 | **13** | 12 | 263 | 0 | 8 | 0 | 10 |
 | US-IA | 181 | 177 | 20 | **13** | 16 | 128 | 0 | 7 | 0 | 2 |
@@ -869,28 +869,21 @@ You · [www.fws.gov](https://www.fws.gov/refuge/chassahowitzka/about-us)
 
 ## US-MO
 
-**Agree:** 16 parks: 0 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 16 agree (second agency).
+**Agree:** 17 parks: 0 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 17 agree (second agency).
 
-**Size more than 15% off (our outline vs the agency):**
-
-- US-0376 Great River National Wildlife Refuge: ours 11,765 ac vs agency 2,009 acres (= 2,009 ac; 486% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.fws.gov](https://www.fws.gov/refuge/great-river/about-us) · “n - 1,710 acres in Pike County, IL Cherry Box Division - 298 acres in Shelby County, MO Fox Island Division - 2,009 acres in Clark County, MO Canton Division - ”
-- US-10135 Blue Spring Branch State Conservation Area: ours 459 ac vs agency 551 acre (= 551 ac; 17% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [mdc.mo.gov](https://mdc.mo.gov/discover-nature/places/blue-spring-branch-conservation-area) · “lue Spring Branch Conservation Area Media Area Map 1.33 MB Area Brochure 146.35 KB Blue Spring Branch CA is a 551-acre area that consists of open fields and for”
 
 **Unsure (no clean total found; the nearest number is only a guess):**
 
 - US-0831 Harry S. Truman Family Farm National Historic Site: ours 14 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-0936 George Washington Carver National Monument: ours 241 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-10116 Kings Prairie Access State Conservation Area: ours 185 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 70 acres, no total words near it) · [mdc.mo.gov](https://mdc.mo.gov/discover-nature/places/kings-prairie-access)
 - US-11015 Harry S Truman Home National Historical Site: ours 14 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-1758 Finger Lakes State Park: ours 1,059 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 10 acre, no total words near it) · [mostateparks.com](https://mostateparks.com/page/finger-lakes-state-park/road-riding-rules-finger-lakes)
 - US-1791 Van Meter State Park: ours 1,124 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 18 acre, no total words near it) · [mostateparks.com](https://mostateparks.com/park/annie-and-abel-van-meter-state-park)
-- US-1793 Wallace State Park: ours 404 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-1795 Watkins Mill State Park: ours 1,130 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-1793 Wallace State Park: ours 488 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-1795 Watkins Mill State Park: ours 1,531 ac · cause: no total-looking sentence: numbers found were parts or other units
 
 **Handover / closure hints (a person decides; nothing applied):**
 
-- US-0377 Mingo National Wildlife Refuge · managed by: “Learn More About Us What We Do The National Wildlife Refuge System is a series of lands and waters owned and managed by the U.S. Fish and Wildlife Service. Wildlife conservation is at the heart of the” · owner now: U.S · [www.fws.gov](https://www.fws.gov/refuge/mingo/)
-- US-0377 Mingo National Wildlife Refuge · managed by: “ss areas can be part of national wildlife refuges, national parks, national forests or public lands managed by the Bureau of Land Management. Learn more about wilderness area within the refuge is esta” · owner now: U.S · [www.fws.gov](https://www.fws.gov/refuge/mingo/about-us)
 - US-11133 Lamberson Memorial State Conservation Area · transfer: “Texas County on the Texas/Wright County line, approximately 19 miles west of Houston. The area was donated to the Conservation Department in 2018 by Mr. Carson Lamberson. The area is contained in one ” · owner now: Conservation Department · [mdc.mo.gov](https://mdc.mo.gov/discover-nature/places/lamberson-memorial-conservation-area)
 
 ## US-WI

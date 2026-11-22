@@ -550,23 +550,23 @@
   "US-MO": {
    "checked": 561,
    "counts": {
-    "agree": 16,
-    "handover_hints": 2,
+    "agree": 17,
+    "handover_hints": 1,
     "no_page": 0,
     "no_size": 512,
     "not_read": 0,
-    "off": 2,
-    "ours_unknown": 16,
+    "off": 0,
+    "ours_unknown": 17,
     "parks": 561,
     "retired": 0,
-    "unsure": 8,
-    "weak": 39,
-    "with_outline": 554
+    "unsure": 7,
+    "weak": 35,
+    "with_outline": 553
    },
    "left": 0,
    "parks": 561,
-   "status": "queued",
-   "updated": "2026-11-15"
+   "status": "done",
+   "updated": "2026-11-22"
   },
   "US-MS": {
    "checked": 155,
@@ -1101,6 +1101,7 @@
   "tnstateparks.com": 1795430345.0894592,
   "www.alapark.com": 1795435195.785201,
   "www.floridastateparks.org": 1795436850.291285,
+  "www.nwk.usace.army.mil": 1795439994.9606252,
   "www.sam.usace.army.mil": 1795434819.4882402,
   "www.swfwmd.state.fl.us": 1795437100.4632494,
   "www.tn.gov": 1795430274.359603,
@@ -1108,30 +1109,51 @@
  },
  "last": {
   "areas": [
-   "US-IL"
+   "US-MO"
   ],
   "manners": {
+   "browser": 2,
+   "deferred": 863,
    "errors": 0,
-   "for_person_urls": [],
-   "host_rule": 2,
-   "requests": 604,
-   "rested": 0,
-   "robots": 0,
-   "strikes": 0
+   "for_person": 4,
+   "for_person_urls": [
+    [
+     "http://www.nwk.usace.army.mil/Portals/29/docs/lakesites/truman/Truman-LakeMap.pdf",
+     "HTTP 403 twice"
+    ],
+    [
+     "http://www.nwk.usace.army.mil/Portals/29/docs/lakesites/longbranch/longbranch-LakeMap.pdf",
+     "HTTP 403 twice"
+    ],
+    [
+     "http://www.mvs.usace.army.mil/Portals/54/docs/recreation/marktwain/maps/MTL_Map_MTL_Overall_Map.pdf",
+     "HTTP 403 twice"
+    ],
+    [
+     "http://www.swl.usace.army.mil/Portals/50/docs/tablerocklake/TABLE%20ROCK%20MAP%203-05.pdf",
+     "HTTP 403 twice"
+    ]
+   ],
+   "host_rule": 1,
+   "requests": 737,
+   "rested": 1,
+   "retry403": 4,
+   "robots": 1,
+   "strikes": 8
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 12,
-   "no_size": 43,
-   "ours_unknown": 6,
-   "pages_read": 516,
-   "parks": 219,
+   "handover_hints": 1,
+   "no_size": 510,
+   "ours_unknown": 17,
+   "pages_read": 564,
+   "parks": 559,
    "retired": 0,
-   "size_agree": 93,
-   "size_off": 30,
-   "size_unsure": 41,
-   "skipped_fresh": 0,
-   "with_outline": 213
+   "size_agree": 17,
+   "size_off": 0,
+   "size_unsure": 7,
+   "skipped_fresh": 2,
+   "with_outline": 551
   },
   "when": "2026-11-22"
  },
