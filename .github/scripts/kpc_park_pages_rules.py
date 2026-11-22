@@ -239,11 +239,73 @@ def cut_tail(s):
     return TAILS.sub('', str(s or '')).strip(' \t-•|')
 
 
+# 21 Nov (owner, 8:17 PM: "If they look like official websites ... fix it so it will read it"): the agencies' own web sites that
+# are not on a .gov / .gc.ca / canada.ca address. Each is the managing body itself (a government, its crown corporation, a
+# statutory conservation authority or a city), or the land trust that owns the place. A host matches itself and its subdomains.
+# Never here: Wikipedia, map and trail sites (mapcarta, AllTrails, Avenza), plain arcgis.com, WDPA / Protected Planet,
+# directories (stateparks.com), clubs and other non-profits that do not own or run the park.
+OFFICIAL_SITES = {
+    # Canada: provinces and territories, their park agencies and crown corporations
+    'bcparks.ca': 'British Columbia', 'gov.bc.ca': 'British Columbia', 'sitesandtrailsbc.ca': 'British Columbia',
+    'albertaparks.ca': 'Alberta', 'alberta.ca': 'Alberta', 'tourismsaskatchewan.com': 'Saskatchewan', 'saskparks.com': 'Saskatchewan',
+    'gov.sk.ca': 'Saskatchewan', 'gov.mb.ca': 'Manitoba', 'manitoba.ca': 'Manitoba', 'ontarioparks.com': 'Ontario',
+    'ontarioparks.ca': 'Ontario', 'ontario.ca': 'Ontario', 'gouv.qc.ca': 'Quebec', 'sepaq.com': 'Quebec',
+    'gnb.ca': 'New Brunswick', 'nbparks.ca': 'New Brunswick', 'tourismnewbrunswick.ca': 'New Brunswick',
+    'novascotia.ca': 'Nova Scotia', 'novascotia.com': 'Nova Scotia', 'princeedwardisland.ca': 'Prince Edward Island',
+    'gov.pe.ca': 'Prince Edward Island', 'tourismpei.com': 'Prince Edward Island', 'gov.nl.ca': 'Newfoundland and Labrador',
+    'parksnl.ca': 'Newfoundland and Labrador', 'yukon.ca': 'Yukon', 'yukonhistoricplaces.ca': 'Yukon',
+    'nwtparks.ca': 'Northwest Territories', 'gov.nt.ca': 'Northwest Territories', 'nunavutparks.com': 'Nunavut',
+    'gov.nu.ca': 'Nunavut', 'nunavikparks.ca': 'Nunavik (Kativik Regional Government)',
+    # Canada: national programs run by Parks Canada with the provinces
+    'historicplaces.ca': 'Canada (Canadian Register of Historic Places)', 'chrs.ca': 'Canada (Canadian Heritage Rivers System)',
+    # Canada: Ontario conservation authorities (public bodies under the Conservation Authorities Act)
+    'trca.ca': 'Ontario CA', 'grandriver.ca': 'Ontario CA', 'conservationhamilton.ca': 'Ontario CA', 'greysauble.on.ca': 'Ontario CA',
+    'npca.ca': 'Ontario CA', 'saugeenconservation.ca': 'Ontario CA', 'thamesriver.on.ca': 'Ontario CA', 'quinteconservation.ca': 'Ontario CA',
+    'nvca.on.ca': 'Ontario CA', 'cvc.ca': 'Ontario CA', 'grca.on.ca': 'Ontario CA', 'rvca.ca': 'Ontario CA', 'cloca.com': 'Ontario CA',
+    'essexregionconservation.ca': 'Ontario CA', 'conservationhalton.ca': 'Ontario CA', 'lprca.on.ca': 'Ontario CA',
+    'lsrca.on.ca': 'Ontario CA', 'scrca.on.ca': 'Ontario CA', 'otonabeeconservation.com': 'Ontario CA',
+    'kettlecreekconservation.on.ca': 'Ontario CA', 'catfishcreek.ca': 'Ontario CA', 'cataraquiconservation.ca': 'Ontario CA',
+    'mtmconservation.org': 'Ontario CA',
+    # Canada: cities and regional districts that run their own parks
+    'metrovancouver.org': 'Metro Vancouver', 'crd.bc.ca': 'Capital Regional District', 'fvrd.ca': 'Fraser Valley Regional District',
+    'vancouver.ca': 'Vancouver', 'surrey.ca': 'Surrey', 'burnaby.ca': 'Burnaby', 'coquitlam.ca': 'Coquitlam',
+    'portcoquitlam.ca': 'Port Coquitlam', 'westvancouver.ca': 'West Vancouver', 'nvrc.ca': 'North Vancouver', 'tol.ca': 'Langley Township',
+    'kelowna.ca': 'Kelowna', 'calgary.ca': 'Calgary', 'winnipeg.ca': 'Winnipeg', 'toronto.ca': 'Toronto', 'montreal.ca': 'Montreal',
+    'pointe-claire.ca': 'Pointe-Claire', 'vsj.ca': 'Saint-Jerome', 'ville.saguenay.ca': 'Saguenay', 'saint-hippolyte.ca': 'Saint-Hippolyte',
+    'saintjohn.ca': 'Saint John', 'oromocto.ca': 'Oromocto', 'quispamsis.ca': 'Quispamsis', 'sussex.ca': 'Sussex',
+    'townofhudsonbay.com': 'Hudson Bay',
+    # United States: state agencies on .com / .org addresses
+    'georgiawildlife.com': 'Georgia', 'gastateparks.org': 'Georgia', 'gatrees.org': 'Georgia', 'agfc.com': 'Arkansas',
+    'arkansasstateparks.com': 'Arkansas', 'arkansasheritage.com': 'Arkansas', 'arkansas.com': 'Arkansas',
+    'wildlifedepartment.com': 'Oklahoma', 'travelok.com': 'Oklahoma', 'okhistory.org': 'Oklahoma', 'mdwfp.com': 'Mississippi',
+    'ksoutdoors.com': 'Kansas', 'kshs.org': 'Kansas', 'mysuwanneeriver.com': 'Florida', 'nwfwater.com': 'Florida',
+    'tnstateparks.com': 'Tennessee', 'nhstateparks.org': 'New Hampshire', 'michigandnr.com': 'Michigan',
+    'vtstateparks.com': 'Vermont', 'southcarolinaparks.com': 'South Carolina', 'ncwildlife.org': 'North Carolina',
+    'ncesf.org': 'North Carolina', 'myodfw.com': 'Oregon', 'state.nj.us': 'New Jersey', 'lastateparks.com': 'Louisiana',
+    'azstateparks.com': 'Arizona', 'azgfd.com': 'Arizona', 'huntillinois.org': 'Illinois', 'alapark.com': 'Alabama',
+    'outdooralabama.com': 'Alabama', 'alabamaforeverwild.com': 'Alabama', 'destateparks.com': 'Delaware',
+    'indianamuseum.org': 'Indiana', 'ndow.org': 'Nevada', 'nmhistoricsites.org': 'New Mexico', 'riparks.com': 'Rhode Island',
+    'ag.ndsu.edu': 'North Dakota (Forest Service)', 'tva.com': 'Tennessee Valley Authority',
+    # Land trusts that own and run the place
+    'natureconservancy.ca': 'land trust (owner)', 'naturetrust.nb.ca': 'land trust (owner)', 'islandnaturetrust.ca': 'land trust (owner)',
+    'nature.org': 'land trust (owner)', 'triangleland.org': 'land trust (owner)',
+}
+
+
+def official_site(h):
+    """Who runs a host on OFFICIAL_SITES ('' when it is not there). A host matches itself and its subdomains."""
+    b = base_host((h or '').lower().rstrip('.'))
+    for site, who in OFFICIAL_SITES.items():
+        if b == site or b.endswith('.' + site):
+            return who
+    return ''
+
+
 def official_host(url):
     h = host_of(url or '')
     if not h:
         return False
-    if gov_of(h):
+    if gov_of(h) or official_site(h):
         return True
     b = base_host(h)
     return b.endswith('.gov') or b.endswith('.mil') or b.endswith('.gc.ca') or '.gov.' in b
