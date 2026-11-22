@@ -1,0 +1,38 @@
+{
+ "request": "requests/10-new-US-13668.json",
+ "id": "10-new-US-13668",
+ "chat": 10,
+ "kind": "page",
+ "report": "new park US-13668 Quanduck Brook Wildlife Management Area: its POTA record (website + agency) for the Fable book row",
+ "asked": {
+  "chat": 10,
+  "kind": "page",
+  "urls": [
+   "https://api.pota.app/park/US-13668"
+  ],
+  "report": "new park US-13668 Quanduck Brook Wildlife Management Area: its POTA record (website + agency) for the Fable book row"
+ },
+ "answered": "2026-11-20 12:17Z",
+ "results": [
+  {
+   "url": "https://api.pota.app/park/US-13668",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-13668",
+   "title": "",
+   "text": "{\"parkId\": 150656, \"reference\": \"US-13668\", \"name\": \"Quanduck Brook\", \"latitude\": 41.8324, \"longitude\": -71.811, \"grid4\": \"FN41\", \"grid6\": \"FN41ct\", \"parktypeId\": 123, \"active\": 1, \"parkComments\": \"Opened 11/16/2026. Hunting in the WMA. Obey all postings. Check both deep maps for parking and locations not to park. Park lot 711 Bailey Hill Road, Killingly.\", \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile,Foot\", \"activationMethods\": \"Automobile,Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://portal.ct.gov/deep/wildlife/wildlife-mangement-areas/quanduck-brook-wma?fbclid=IwY2xjawVoajZleHRuA2FlbQIxMABwZG9mAWJyaWQRMWk0MWZnOFVEdVJpNWxJR3BzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEfCr9cKSqVkzJL26oF48ynukB47gNq-y8hdE4BH_N-qXUovfslMRSnkO89tLI_ae\", \"createdByAdmin\": \"Steven Veci\", \"parktypeDesc\": \"Wildlife Management Area\", \"locationDesc\": \"US-CT\", \"locationName\": \"Connecticut\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"KC3CIL\", \"firstActivationDate\": \"2026-11-18\", \"firstHunter\": \"KO4TUP\", \"firstHuntDate\": \"2026-11-18\", \"uniqueHunters\": 51}",
+   "links": [],
+   "read_by": "headless browser"
+  }
+ ],
+ "seconds": 4,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "host_rule": 0,
+  "for_person_urls": []
+ },
+ "short": "1 result(s), 1 read OK, 0 screenshot(s)"
+}

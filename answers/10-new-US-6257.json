@@ -1,0 +1,38 @@
+{
+ "request": "requests/10-new-US-6257.json",
+ "id": "10-new-US-6257",
+ "chat": 10,
+ "kind": "page",
+ "report": "new park US-6257 Natural Bridge State Natural Area: its POTA record (website + agency) for the Fable book row",
+ "asked": {
+  "chat": 10,
+  "kind": "page",
+  "urls": [
+   "https://api.pota.app/park/US-6257"
+  ],
+  "report": "new park US-6257 Natural Bridge State Natural Area: its POTA record (website + agency) for the Fable book row"
+ },
+ "answered": "2026-11-22 12:53Z",
+ "results": [
+  {
+   "url": "https://api.pota.app/park/US-6257",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-6257",
+   "title": "",
+   "text": "{\"parkId\": 56013, \"reference\": \"US-6257\", \"name\": \"Natural Bridge\", \"latitude\": 35.1538, \"longitude\": -85.9222, \"grid4\": \"EM75\", \"grid6\": \"EM75ad\", \"parktypeId\": 97, \"active\": 1, \"parkComments\": null, \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile,Foot\", \"activationMethods\": \"Automobile,Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://www.tn.gov/environment/program-areas/na-natural-areas/natural-areas-east-region/east-region-/na-na-natural-bridge.html\", \"createdByAdmin\": \"directUpload\", \"parktypeDesc\": \"State Natural Area\", \"locationDesc\": \"US-TN\", \"locationName\": \"Tennessee\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"N4MTE\", \"firstActivationDate\": \"2020-02-15\", \"firstHunter\": \"N5HA\", \"firstHuntDate\": \"2020-02-15\", \"uniqueHunters\": 526}",
+   "links": [],
+   "read_by": "headless browser"
+  }
+ ],
+ "seconds": 5,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "host_rule": 0,
+  "for_person_urls": []
+ },
+ "short": "1 result(s), 1 read OK, 0 screenshot(s)"
+}

@@ -1,0 +1,38 @@
+{
+ "request": "requests/10-new-US-13670.json",
+ "id": "10-new-US-13670",
+ "chat": 10,
+ "kind": "page",
+ "report": "new park US-13670 Rock Creek Recreation Site: its POTA record (website + agency) for the Fable book row",
+ "asked": {
+  "chat": 10,
+  "kind": "page",
+  "urls": [
+   "https://api.pota.app/park/US-13670"
+  ],
+  "report": "new park US-13670 Rock Creek Recreation Site: its POTA record (website + agency) for the Fable book row"
+ },
+ "answered": "2026-11-22 12:52Z",
+ "results": [
+  {
+   "url": "https://api.pota.app/park/US-13670",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-13670",
+   "title": "",
+   "text": "{\"parkId\": 150670, \"reference\": \"US-13670\", \"name\": \"Rock Creek\", \"latitude\": 36.1373, \"longitude\": -82.3537, \"grid4\": \"EM86\", \"grid6\": \"EM86td\", \"parktypeId\": 173, \"active\": 1, \"parkComments\": \"\", \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile,Foot\", \"activationMethods\": \"Automobile,Campground,Pedestrian,Shelter\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://www.fs.usda.gov/mapfinder/\", \"createdByAdmin\": \"TOM SUGGS\", \"parktypeDesc\": \"Recreation Site\", \"locationDesc\": \"US-TN\", \"locationName\": \"Tennessee\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"W4BGA\", \"firstActivationDate\": \"2026-11-19\", \"firstHunter\": \"W9AV\", \"firstHuntDate\": \"2026-11-19\", \"uniqueHunters\": 7}",
+   "links": [],
+   "read_by": "headless browser"
+  }
+ ],
+ "seconds": 5,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "host_rule": 0,
+  "for_person_urls": []
+ },
+ "short": "1 result(s), 1 read OK, 0 screenshot(s)"
+}

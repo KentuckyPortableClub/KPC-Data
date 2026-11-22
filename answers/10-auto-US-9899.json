@@ -1,0 +1,40 @@
+{
+ "request": "requests/10-auto-US-9899.json",
+ "id": "10-auto-US-9899",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "US-9899",
+  "name": "Fort Hunt National Historical Site",
+  "agency": "National Park Service",
+  "url": "https://www.nps.gov/gwmp/planyourvisit/upload/Fort-Hunt-Park-map-508-2021.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-20 12:16Z",
+ "results": [
+  {
+   "url": "https://www.nps.gov/gwmp/planyourvisit/upload/Fort-Hunt-Park-map-508-2021.pdf",
+   "map_url": "https://www.nps.gov/gwmp/planyourvisit/upload/Fort-Hunt-Park-map-508-2021.pdf",
+   "saved": [
+    "maps/US-9899_fort-hunt-national-historical-si.jpg"
+   ],
+   "bytes": 162773,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 4,
+ "manners": {
+  "requests": 2,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "host_rule": 0,
+  "for_person_urls": []
+ },
+ "short": "1 result(s), 1 read OK"
+}

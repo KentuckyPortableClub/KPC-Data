@@ -1,0 +1,38 @@
+{
+ "request": "requests/10-new-US-13667.json",
+ "id": "10-new-US-13667",
+ "chat": 10,
+ "kind": "page",
+ "report": "new park US-13667 Wild Rivers BLM Recreation Management Area: its POTA record (website + agency) for the Fable book row",
+ "asked": {
+  "chat": 10,
+  "kind": "page",
+  "urls": [
+   "https://api.pota.app/park/US-13667"
+  ],
+  "report": "new park US-13667 Wild Rivers BLM Recreation Management Area: its POTA record (website + agency) for the Fable book row"
+ },
+ "answered": "2026-11-20 12:16Z",
+ "results": [
+  {
+   "url": "https://api.pota.app/park/US-13667",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-13667",
+   "title": "",
+   "text": "{\"parkId\": 150654, \"reference\": \"US-13667\", \"name\": \"Wild Rivers\", \"latitude\": 36.6804, \"longitude\": -105.673, \"grid4\": \"DM76\", \"grid6\": \"DM76dq\", \"parktypeId\": 224, \"active\": 1, \"parkComments\": \"Day use with camping at select areas, Check website for other areas to activate. Located within the Rio Grande Del Norte National Monument US-4553\", \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile,Foot\", \"activationMethods\": \"Automobile,Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://www.blm.gov/visit/wild-rivers-recreation-area\", \"createdByAdmin\": \"Wayne Fussell\", \"parktypeDesc\": \"BLM Recreation Management Area\", \"locationDesc\": \"US-NM\", \"locationName\": \"New Mexico\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"N7MEB\", \"firstActivationDate\": \"2025-09-06\", \"firstHunter\": \"N9SAB\", \"firstHuntDate\": \"2025-09-06\", \"uniqueHunters\": 250}",
+   "links": [],
+   "read_by": "headless browser"
+  }
+ ],
+ "seconds": 3,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "host_rule": 0,
+  "for_person_urls": []
+ },
+ "short": "1 result(s), 1 read OK, 0 screenshot(s)"
+}

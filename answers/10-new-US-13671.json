@@ -1,0 +1,38 @@
+{
+ "request": "requests/10-new-US-13671.json",
+ "id": "10-new-US-13671",
+ "chat": 10,
+ "kind": "page",
+ "report": "new park US-13671 Capulin Springs National Recreation Area: its POTA record (website + agency) for the Fable book row",
+ "asked": {
+  "chat": 10,
+  "kind": "page",
+  "urls": [
+   "https://api.pota.app/park/US-13671"
+  ],
+  "report": "new park US-13671 Capulin Springs National Recreation Area: its POTA record (website + agency) for the Fable book row"
+ },
+ "answered": "2026-11-22 12:52Z",
+ "results": [
+  {
+   "url": "https://api.pota.app/park/US-13671",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-13671",
+   "title": "",
+   "text": "{\"parkId\": 150673, \"reference\": \"US-13671\", \"name\": \"Capulin Springs\", \"latitude\": 35.2163, \"longitude\": -106.416, \"grid4\": \"DM65\", \"grid6\": \"DM65tf\", \"parktypeId\": 46, \"active\": 1, \"parkComments\": \"Open year round unless winter weather conditions are present. Reservations for the pavilion are available May 15 - October 15.\\nLocated within US-4514, Cibola National Forest\\n\", \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile,Foot\", \"activationMethods\": \"Automobile,Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://www.fs.usda.gov/r03/cibola/recreation/capulin-spring-picnic-site\", \"createdByAdmin\": \"Wayne Fussell\", \"parktypeDesc\": \"National Recreation Area\", \"locationDesc\": \"US-NM\", \"locationName\": \"New Mexico\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"KE5YYC\", \"firstActivationDate\": \"2026-11-20\", \"firstHunter\": \"K8IKO\", \"firstHuntDate\": \"2026-11-20\", \"uniqueHunters\": 189}",
+   "links": [],
+   "read_by": "headless browser"
+  }
+ ],
+ "seconds": 7,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "host_rule": 0,
+  "for_person_urls": []
+ },
+ "short": "1 result(s), 1 read OK, 0 screenshot(s)"
+}

@@ -1,0 +1,38 @@
+{
+ "request": "requests/10-new-US-6274.json",
+ "id": "10-new-US-6274",
+ "chat": 10,
+ "kind": "page",
+ "report": "new park US-6274 Virgin Falls State Natural Area: its POTA record (website + agency) for the Fable book row",
+ "asked": {
+  "chat": 10,
+  "kind": "page",
+  "urls": [
+   "https://api.pota.app/park/US-6274"
+  ],
+  "report": "new park US-6274 Virgin Falls State Natural Area: its POTA record (website + agency) for the Fable book row"
+ },
+ "answered": "2026-11-22 12:53Z",
+ "results": [
+  {
+   "url": "https://api.pota.app/park/US-6274",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-6274",
+   "title": "",
+   "text": "{\"parkId\": 56030, \"reference\": \"US-6274\", \"name\": \"Virgin Falls\", \"latitude\": 35.854, \"longitude\": -85.2822, \"grid4\": \"EM75\", \"grid6\": \"EM75iu\", \"parktypeId\": 97, \"active\": 1, \"parkComments\": null, \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile,Foot\", \"activationMethods\": \"Automobile,Campground,Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://www.tn.gov/environment/program-areas/na-natural-areas/natural-areas-middle-region/middle-region/na-na-virgin-falls.html\", \"createdByAdmin\": \"directUpload\", \"parktypeDesc\": \"State Natural Area\", \"locationDesc\": \"US-TN\", \"locationName\": \"Tennessee\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"N4MTE\", \"firstActivationDate\": \"2020-02-29\", \"firstHunter\": \"W0JD\", \"firstHuntDate\": \"2020-02-29\", \"uniqueHunters\": 432}",
+   "links": [],
+   "read_by": "headless browser"
+  }
+ ],
+ "seconds": 4,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "host_rule": 0,
+  "for_person_urls": []
+ },
+ "short": "1 result(s), 1 read OK, 0 screenshot(s)"
+}

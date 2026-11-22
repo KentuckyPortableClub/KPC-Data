@@ -1,0 +1,38 @@
+{
+ "request": "requests/10-new-US-6253.json",
+ "id": "10-new-US-6253",
+ "chat": 10,
+ "kind": "page",
+ "report": "new park US-6253 Lost Creek State Natural Area: its POTA record (website + agency) for the Fable book row",
+ "asked": {
+  "chat": 10,
+  "kind": "page",
+  "urls": [
+   "https://api.pota.app/park/US-6253"
+  ],
+  "report": "new park US-6253 Lost Creek State Natural Area: its POTA record (website + agency) for the Fable book row"
+ },
+ "answered": "2026-11-22 12:52Z",
+ "results": [
+  {
+   "url": "https://api.pota.app/park/US-6253",
+   "status": 200,
+   "final_url": "https://api.pota.app/park/US-6253",
+   "title": "",
+   "text": "{\"parkId\": 56009, \"reference\": \"US-6253\", \"name\": \"Lost Creek\", \"latitude\": 35.8403, \"longitude\": -85.3606, \"grid4\": \"EM75\", \"grid6\": \"EM75hu\", \"parktypeId\": 97, \"active\": 1, \"parkComments\": null, \"accessibility\": null, \"sensitivity\": null, \"accessMethods\": \"Automobile,Foot\", \"activationMethods\": \"Automobile,Pedestrian\", \"agencies\": null, \"agencyURLs\": null, \"parkURLs\": null, \"website\": \"https://www.tn.gov/environment/program-areas/na-natural-areas/natural-areas-east-region/east-region-/na-na-lost-creek.html\", \"createdByAdmin\": \"directUpload\", \"parktypeDesc\": \"State Natural Area\", \"locationDesc\": \"US-TN\", \"locationName\": \"Tennessee\", \"entityId\": 291, \"entityName\": \"United States of America\", \"referencePrefix\": \"US\", \"entityDeleted\": 0, \"firstActivator\": \"N4MTE\", \"firstActivationDate\": \"2020-02-29\", \"firstHunter\": \"NA1KW\", \"firstHuntDate\": \"2020-02-29\", \"uniqueHunters\": 115}",
+   "links": [],
+   "read_by": "headless browser"
+  }
+ ],
+ "seconds": 4,
+ "manners": {
+  "requests": 1,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "host_rule": 0,
+  "for_person_urls": []
+ },
+ "short": "1 result(s), 1 read OK, 0 screenshot(s)"
+}

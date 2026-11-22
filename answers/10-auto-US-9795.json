@@ -1,0 +1,40 @@
+{
+ "request": "requests/10-auto-US-9795.json",
+ "id": "10-auto-US-9795",
+ "chat": 10,
+ "kind": "save-map",
+ "report": "AUTO-3: documents-bot map for a park with no official outline",
+ "asked": {
+  "chat": 10,
+  "kind": "save-map",
+  "ref": "US-9795",
+  "name": "Sandhills West Wildlife Management Area",
+  "agency": "Georgia DNR",
+  "url": "https://georgiawildlife.com:443/sites/default/files/wrd/pdf/maps/SandhillsWestMap.pdf",
+  "pages": 1,
+  "report": "AUTO-3: documents-bot map for a park with no official outline"
+ },
+ "answered": "2026-11-20 12:16Z",
+ "results": [
+  {
+   "url": "https://georgiawildlife.com:443/sites/default/files/wrd/pdf/maps/SandhillsWestMap.pdf",
+   "map_url": "https://georgiawildlife.com:443/sites/default/files/wrd/pdf/maps/SandhillsWestMap.pdf",
+   "saved": [
+    "maps/US-9795_sandhills-west-wildlife-manageme.jpg"
+   ],
+   "bytes": 673119,
+   "branch": "picture-maps"
+  }
+ ],
+ "seconds": 6,
+ "manners": {
+  "requests": 2,
+  "robots": 0,
+  "strikes": 0,
+  "errors": 0,
+  "rested": 0,
+  "host_rule": 0,
+  "for_person_urls": []
+ },
+ "short": "1 result(s), 1 read OK"
+}
