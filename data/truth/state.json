@@ -750,22 +750,23 @@
   "US-NV": {
    "checked": 367,
    "counts": {
-    "agree": 63,
+    "agree": 69,
     "handover_hints": 8,
     "no_page": 2,
-    "no_size": 52,
-    "off": 20,
-    "ours_unknown": 36,
+    "no_size": 51,
+    "not_read": 0,
+    "off": 18,
+    "ours_unknown": 37,
     "parks": 367,
     "retired": 0,
     "unsure": 21,
-    "weak": 12,
-    "with_outline": 194
+    "weak": 13,
+    "with_outline": 198
    },
    "left": 0,
    "parks": 367,
-   "status": "queued",
-   "updated": "2026-11-09"
+   "status": "done",
+   "updated": "2026-11-22"
   },
   "US-NY": {
    "checked": 851,
@@ -1138,6 +1139,7 @@
   "www.lastateparks.com": 1795474392.932798,
   "www.maine.gov": 1795472706.0380914,
   "www.michigan.gov": 1795441493.2175202,
+  "www.nevadawilderness.org": 1795477861.382596,
   "www.nh.gov": 1795453077.0507972,
   "www.nwk.usace.army.mil": 1795439994.9606252,
   "www.sam.usace.army.mil": 1795434819.4882402,
@@ -1147,31 +1149,52 @@
  },
  "last": {
   "areas": [
-   "US-MT"
+   "US-NV"
   ],
   "manners": {
-   "browser": 83,
+   "browser": 2,
+   "dropped_queued": 1,
    "errors": 0,
-   "for_person_urls": [],
-   "host_rule": 7,
-   "requests": 226,
-   "rested": 0,
-   "robots": 0,
-   "strikes": 0
+   "for_person": 3,
+   "for_person_urls": [
+    [
+     "https://www.nevadawilderness.org/bad_lands_wilderness_study_area",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://www.nevadawilderness.org/Bald_Mountain_Wilderness_trails",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://www.outdoorsy.com/guide/high-rock-lake-wilderness",
+     "HTTP 403 twice"
+    ],
+    [
+     "http://www.sangres.com/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from www.sangres.com this run"
+    ]
+   ],
+   "host_rule": 4,
+   "requests": 250,
+   "rested": 18,
+   "retry403": 3,
+   "robots": 8,
+   "robots_unreadable": 1,
+   "strikes": 6
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 6,
-   "no_size": 95,
-   "ours_unknown": 1,
-   "pages_read": 119,
-   "parks": 122,
+   "handover_hints": 8,
+   "no_size": 53,
+   "ours_unknown": 37,
+   "pages_read": 198,
+   "parks": 367,
    "retired": 0,
-   "size_agree": 9,
-   "size_off": 5,
-   "size_unsure": 12,
-   "skipped_fresh": 132,
-   "with_outline": 122
+   "size_agree": 69,
+   "size_off": 18,
+   "size_unsure": 21,
+   "skipped_fresh": 0,
+   "with_outline": 198
   },
   "when": "2026-11-22"
  },
