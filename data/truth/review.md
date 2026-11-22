@@ -1,10 +1,10 @@
 # Park truth checker: review (review lists only; nothing here changes a key or a card)
 
-Updated 2026-11-17. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + source agreement; weakest first in checklist-<area>.csv.
+Updated 2026-11-22. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + source agreement; weakest first in checklist-<area>.csv.
 
 | area | parks | with outline | agree | OFF (>15%) | unsure | no size | ours unknown | handover hints | retired | weak (≤4) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| US-KY | 193 | 193 | 111 | **5** | 8 | 68 | 1 | 5 | 0 | 29 |
+| US-KY | 193 | 193 | 110 | **6** | 8 | 68 | 1 | 5 | 0 | 28 |
 | US-TN | 277 | 263 | 8 | **5** | 1 | 238 | 6 | 4 | 0 | 12 |
 | US-NC | 253 | 225 | 31 | **15** | 27 | 146 | 5 | 20 | 0 | 8 |
 | US-VA | 184 | 177 | 50 | **25** | 54 | 27 | 21 | 17 | 0 | 20 |
@@ -61,7 +61,7 @@ Updated 2026-11-17. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 
 ## US-KY
 
-**Agree:** 111 parks: 106 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 5 agree (second agency).
+**Agree:** 110 parks: 105 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 5 agree (second agency).
 
 **Size more than 15% off (our outline vs the agency):**
 
@@ -70,10 +70,11 @@ Updated 2026-11-17. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 - US-0703 Fort Donelson National Battlefield: ours 1,295 ac vs agency 1007 acres (= 1,007 ac; 29% off) · cause: boundary vs owned: our line may be the authorized boundary, the agency counts owned land (rule 1: use owned land) · stale: agency figure is 'as of 2010' · [www.nps.gov](https://www.nps.gov/fodo/learn/management/statistics.htm) · “Site All NPS Exiting nps.gov Cancel Fort Donelson National Battlefield Contact Us Park Statistics Park Size: 1007 acres (as of 2010) Annual Visitation: Total Vi”
 - US-4689 Kentucky Ridge State Forest: ours 11,734 ac vs agency 15,251 acres (= 15,251 ac; 23% off) · cause: agency bigger: our outline may miss a tract · [eec.ky.gov](https://eec.ky.gov/Natural-Resources/Forestry/ky-state-forests/Pages/Kentucky-Ridge-State-Forest.aspx) · “cky Ridge State Forest Main Content ​​​​Kentucky Ridge State Forest ​​Kentucky Ridge State Forest consists of 15,251 acres and was acquired by lease in 1930, as”
 - US-1264 Levi Jackson Wilderness Road State Park: ours 722 ac vs agency 896 acres (= 896 ac; 19% off) · cause: agency bigger: our outline may miss a tract · [levijacksonpark.com](https://levijacksonpark.com/history/) · “erness Road Park is a city park located just south of London, Kentucky in Laurel County. The park encompasses 896 acres and includes a section of the Wilderness”
+- US-13599 Kingfisher Lakes State Fishing Lake: ours 41 ac vs agency 21.2 + 13.8 acres (= 35 ac; 17% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [app.fw.ky.gov](https://app.fw.ky.gov/fisheries/waterbodydetail.aspx?wid=40) · “CLOSE Kingfisher Lakes 1-foot contours in Google maps! Kingfisher Lakes Fish attractors in Google maps! Note: 21.2 and 13.8 acre lakes Special Boating Regulatio”
 
 **Unsure (no clean total found; the nearest number is only a guess):**
 
-- US-0019 Cumberland Gap National Historical Park: ours 24,225 ac · cause: whole park compared (POTA lists it in 2 states: {'US-VA': 9293, 'US-TN': 5365})
+- US-0019 Cumberland Gap National Historical Park: ours 24,225 ac · cause: whole park compared (POTA lists it in 2 states: {'US-VA': 7614, 'US-TN': 5365})
 - US-10098 Green River National Wildlife Refuge: ours 2,186 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-10104 Red River National Wild and Scenic River: ours 1,049 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 708,000 acres, no total words near it) · [www.fs.usda.gov](https://www.fs.usda.gov/r08/danielboone)
 - US-10107 Big South Fork National Wild and Scenic River: ours 2,487 ac · cause: no total-looking sentence: numbers found were parts or other units

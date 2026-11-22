@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-22T10:16Z",
+ "checked": "2026-11-22T10:36Z",
  "switched_on": false,
  "results": [
   {
@@ -284,6 +284,15 @@
    "notes": [],
    "verdict": "HOLD",
    "fp": "a30bd8f3022b92f8",
+   "net": true
+  },
+  {
+   "path": "data/truth/US-KY.json",
+   "kind": "truth",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "68514b54675f37ab",
    "net": true
   },
   {
@@ -971,7 +980,7 @@
    ],
    "verdict": "PASS",
    "fp": "4b2faa4c8b2d9af7",
-   "net": false
+   "net": true
   },
   {
    "path": "data/world-key/AE.json",
