@@ -1020,9 +1020,9 @@
   "Key bots: errors and silence": {
    "areas": "",
    "last_run": "2026-11-22",
-   "made": "3 key bot(s) with errors or gone silent: Europe weather warnings (silent: no finished run in 115 h (expected every 14 h or les); KPC-Data watchdog (Key bots); flow board (silent: no finished run in 56 h (expected every 26 h or less)",
+   "made": "3 key bot(s) with errors or gone silent: Europe weather warnings (silent: no finished run in 117 h (expected every 14 h or les); KPC-Data watchdog (Key bots); flow board (silent: no finished run in 57 h (expected every 26 h or less)",
    "result": "red",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45045599909",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45052487996",
    "waiting_on": "HQ: open the watchdog run summary for the run links"
   },
   "Layer collector": {
@@ -1084,17 +1084,17 @@
   "Skipped-run watchdog": {
    "areas": "",
    "last_run": "2026-11-22",
-   "made": "2026-11-22 16:46 UTC: 2 skipped run(s) started again: kpc-copy-from-links.yml (missed Nov 22 16:11 UTC); kpc-park-pages.yml (missed Nov 22 15:23 UTC)",
-   "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45045599909",
+   "made": "nothing skipped",
+   "result": "green",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45052487996",
    "waiting_on": "nobody (it restarts them itself)"
   },
   "Storage keeper (weekly)": {
    "areas": "",
    "last_run": "2026-11-22",
-   "made": "STORAGE WARNING: KPC-Links 812 MB (line 650); KPC-Data 1565 MB (line 400) / KPC-Links 812 MB, KPC-Data 1565 MB, branch lookup 0 MB, branch picture-maps 96 MB, artifacts MB (this repo) 1512 MB",
+   "made": "STORAGE WARNING: KPC-Links 813 MB (line 650); KPC-Data 1586 MB (line 400) / KPC-Links 813 MB, KPC-Data 1586 MB, branch lookup 0 MB, branch picture-maps 96 MB, artifacts MB (this repo) 2571 MB",
    "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45011531448",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45047250123",
    "waiting_on": "HQ: over the line = decide (squash / move files); the keeper never rewrites main"
   },
   "T1 map-match": {
@@ -1206,7 +1206,7 @@
    "last_run": "2026-11-22",
    "made": "site is under 60 min behind main: the copy bot will catch up",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45045599909",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45052487996",
    "waiting_on": "nobody (the watchdog restarts the copy bot itself)"
   },
   "answer-sheet-check": {
@@ -1282,9 +1282,9 @@
    "waiting_on": "chat 8 grades the sample; chat 2 reads the name-mismatch list; nothing goes in a key by itself"
   },
   "park truth checker": {
-   "areas": "left: 40",
+   "areas": "left: 34",
    "last_run": "2026-11-22",
-   "made": "US-MA: done; {\"agree\": 138, \"handover_hints\": 3, \"no_page\": 0, \"no_size\": 102, \"not_read\": 21, \"off\": 115, \"ours_unknown\": 8, \"parks\": 421, \"retired\": 0, \"unsure\": 27, \"weak\": 10, \"with_outline\": 411}",
+   "made": "US-DC: done; {\"agree\": 1, \"handover_hints\": 1, \"no_page\": 0, \"no_size\": 16, \"not_read\": 0, \"off\": 1, \"ours_unknown\": 10, \"parks\": 35, \"retired\": 0, \"unsure\": 1, \"weak\": 8, \"with_outline\": 29}",
    "result": "green",
    "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45038319666",
    "waiting_on": "chat 8 grades the sample; Brandon GO before any card"
@@ -1299,7 +1299,7 @@
   },
   "waiting room": {
    "last_run": "2026-11-22",
-   "made": "heartbeat 0 h old, 147 files waiting",
+   "made": "heartbeat 0 h old, 152 files waiting",
    "result": "green",
    "waiting_on": "nothing"
   },
