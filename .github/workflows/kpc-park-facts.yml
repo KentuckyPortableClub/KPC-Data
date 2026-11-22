@@ -1,5 +1,5 @@
 name: KPC park facts (one file from the acreage bot, the page reader and the link IDs)
-# NO TIMER: it runs only right after the page reader or the tool trial (acreage bot) finish, or by hand. It downloads
+# NO TIMER: it runs only right after the page reader, the tool trial (acreage bot) or the PC upload pack (22 Nov) finish, or by hand. It downloads
 # nothing from any agency and opens no website: it reads files already saved (data/parkinfo on main, acres/ and
 # park-pages/facts/ on tools-out, the keeper's sizes when they exist), the key's joined layers (KPC-Links, public,
 # read-only) for the size witness, runs kpc_link_ids (web addresses only) and kpc_park_facts, and saves ONE file on main:
@@ -13,6 +13,7 @@ on:
     workflows:
       - "KPC park page reader (walks the US, one state per run)"
       - "KPC tool trial (outside tools' real-world test from GitHub) - outputs on tools-out"
+      - "KPC PC upload pack (by hand)"
     types: [completed]
   workflow_dispatch:
 permissions:

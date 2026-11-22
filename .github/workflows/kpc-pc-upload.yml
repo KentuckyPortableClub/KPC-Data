@@ -1,0 +1,86 @@
+name: KPC PC upload pack (by hand)
+# BY HAND ONLY (owner, 22 Nov 2026), no timer. The owner carries a pack made on his PC (kpc_upload_pack.py) up to the
+# intake-files branch as pc-upload/<pack>.zip, then starts this with that name. It downloads nothing and opens no website.
+#   check: the whole pack is refused on any problem (kpc_pc_upload.py check): nothing is kept.
+#   save:  keeper-first, every park already there kept as it is: new parks' page facts into tools-out park-pages/facts/,
+#          agencies with no keeper file into data/agency-crosswalk/ on main. Counts only in the report.
+# The park facts file is rebuilt by "KPC park facts", which runs after this one.
+on:
+  workflow_dispatch:
+    inputs:
+      pack:
+        description: 'The pack on the intake-files branch, e.g. pc-upload/kpc-upload-pack-2026-11-22-0130.zip'
+        required: true
+permissions:
+  contents: read
+concurrency:
+  group: kpc-pc-upload
+  cancel-in-progress: false
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check the pack (refused whole on any problem)
+        env:
+          PACK: ${{ inputs.pack }}
+        run: |
+          set -euo pipefail
+          if ! printf '%s' "$PACK" | grep -Eq '^pc-upload/[A-Za-z0-9._-]+\.zip$'; then
+            echo "::error title=PC upload pack::the name must look like pc-upload/<file>.zip"; exit 1
+          fi
+          git fetch -q --depth 1 origin "+refs/heads/intake-files:refs/remotes/origin/intake-files"
+          git show "origin/intake-files:$PACK" > "$RUNNER_TEMP/pack.zip"
+          python3 .github/scripts/kpc_pc_upload.py check --pack "$RUNNER_TEMP/pack.zip" --parkinfo data/parkinfo --report "$RUNNER_TEMP/report.md"
+          cat "$RUNNER_TEMP/report.md" >> "$GITHUB_STEP_SUMMARY"
+  save:
+    needs: check
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Merge keeper-first and save
+        env:
+          PACK: ${{ inputs.pack }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch -q --depth 1 origin "+refs/heads/intake-files:refs/remotes/origin/intake-files" "+refs/heads/tools-out:refs/remotes/origin/tools-out"
+          git show "origin/intake-files:$PACK" > "$RUNNER_TEMP/pack.zip"
+          TO="$RUNNER_TEMP/tools-out"
+          git worktree add -q -B tools-out "$TO" origin/tools-out
+          mkdir -p "$TO/park-pages/facts" data/agency-crosswalk
+          python3 .github/scripts/kpc_pc_upload.py merge --pack "$RUNNER_TEMP/pack.zip" --parkinfo data/parkinfo \
+            --pages "$TO/park-pages/facts" --crosswalk data/agency-crosswalk --report "$RUNNER_TEMP/report.md"
+          cat "$RUNNER_TEMP/report.md" >> "$GITHUB_STEP_SUMMARY"
+          (
+            cd "$TO"
+            git add park-pages/facts
+            if git diff --cached --quiet; then echo "page facts: nothing new"; else
+              git commit -qm "PC upload pack: page facts of parks only the PC had (keeper-first)"
+              bash "$GITHUB_WORKSPACE/.github/scripts/kpc_push_retry.sh" tools-out 4 "park-pages/facts"
+            fi
+          )
+          git add data/agency-crosswalk
+          if git diff --cached --quiet; then echo "crosswalk: nothing new"; else
+            git commit -qm "PC upload pack: agency crosswalk files the keeper has none of"
+            bash .github/scripts/kpc_push_retry.sh main 4 "data/agency-crosswalk"
+          fi
