@@ -660,8 +660,8 @@ def _write_progress(out_dir, facts_by_area, state, state_path):
     merge_unchanged(out_dir, facts_by_area)
     root = pathlib.Path(out_dir)
     for area, parks in facts_by_area.items():
-        save_json(root / 'facts' / f'{area}.json',
-                  {'area': area, 'reader': R.READER, 'parks': parks}, only_if_changed=True)
+        path = root / 'facts' / f'{area}.json'
+        save_json(path, {'area': area, 'reader': R.READER, 'parks': area_parks_to_save(path, parks)}, only_if_changed=True)
     if state_path:
         save_json(state_path, state, only_if_changed=True)
 
@@ -810,10 +810,21 @@ def confirm_counts(facts_by_area):
             'by_agency': dict(sorted(by_agency.items(), key=lambda kv: -kv[1]['parks']))}
 
 
+def area_parks_to_save(path, parks):
+    """21 Nov: the parks to write for one area: every park already in the file, with this run's parks over them. Before, the
+    file was replaced by this run's parks alone, so a run that stopped part way (or saved after each park) wiped the facts of
+    every park it had not reached yet, and a park re-read as unchanged lost its full fact (only a stub was left)."""
+    old = load_json(path, {}).get('parks') or {}
+    keep = dict(old)
+    keep.update(parks)
+    return keep
+
+
 def write_facts(out_dir, facts_by_area):
     root = pathlib.Path(out_dir)
     for area, parks in facts_by_area.items():
-        save_json(root / 'facts' / f'{area}.json', {'area': area, 'reader': R.READER, 'parks': parks},
+        path = root / 'facts' / f'{area}.json'
+        save_json(path, {'area': area, 'reader': R.READER, 'parks': area_parks_to_save(path, parks)},
                   only_if_changed=True)
 
 
