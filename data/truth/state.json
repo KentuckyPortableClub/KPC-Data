@@ -472,22 +472,23 @@
   "US-MD": {
    "checked": 186,
    "counts": {
-    "agree": 41,
+    "agree": 63,
     "handover_hints": 18,
     "no_page": 0,
-    "no_size": 33,
-    "off": 48,
-    "ours_unknown": 24,
+    "no_size": 32,
+    "not_read": 1,
+    "off": 33,
+    "ours_unknown": 25,
     "parks": 186,
     "retired": 0,
-    "unsure": 30,
-    "weak": 15,
-    "with_outline": 176
+    "unsure": 24,
+    "weak": 11,
+    "with_outline": 178
    },
    "left": 0,
    "parks": 186,
-   "status": "queued",
-   "updated": "2026-11-09"
+   "status": "done",
+   "updated": "2026-11-22"
   },
   "US-ME": {
    "checked": 148,
@@ -1127,54 +1128,30 @@
  },
  "last": {
   "areas": [
-   "US-ME"
+   "US-MD"
   ],
   "manners": {
-   "browser": 25,
    "errors": 0,
-   "for_person": 5,
-   "for_person_urls": [
-    [
-     "https://www.maine.gov/dacf/parksearch/PropertyGuides/PDF_GUIDE/shackfordheadguide.pdf",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://www.maine.gov/dacf/parks/discover_history_explore_nature/history/bible_point/history.shtml",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://maine.gov/ifw/fish-wildlife/wildlife/lands/wildlife-management-areas/kmz/RWaldoTyler_WeskeagMarsh_WMA.kmz",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://www.mindat.org/feature-4960774.html",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://maine.gov/ifw/fish-wildlife/wildlife/lands/wildlife-management-areas/kmz/BogBrookWMA.kmz",
-     "HTTP 403 twice"
-    ]
-   ],
+   "for_person_urls": [],
    "host_rule": 0,
-   "requests": 71,
-   "rested": 17,
-   "retry403": 5,
-   "robots": 1,
-   "strikes": 10
+   "requests": 0,
+   "rested": 0,
+   "robots": 0,
+   "strikes": 0
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 9,
-   "no_size": 49,
-   "ours_unknown": 2,
-   "pages_read": 25,
-   "parks": 51,
+   "handover_hints": 18,
+   "no_size": 0,
+   "ours_unknown": 0,
+   "pages_read": 0,
+   "parks": 0,
    "retired": 0,
    "size_agree": 0,
    "size_off": 0,
    "size_unsure": 0,
-   "skipped_fresh": 97,
-   "with_outline": 51
+   "skipped_fresh": 186,
+   "with_outline": 0
   },
   "when": "2026-11-22"
  },
