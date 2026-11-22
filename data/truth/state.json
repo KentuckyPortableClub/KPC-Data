@@ -677,22 +677,23 @@
   "US-NH": {
    "checked": 206,
    "counts": {
-    "agree": 16,
+    "agree": 17,
     "handover_hints": 5,
-    "no_page": 51,
+    "no_page": 50,
     "no_size": 105,
-    "off": 10,
+    "not_read": 0,
+    "off": 9,
     "ours_unknown": 5,
     "parks": 206,
     "retired": 0,
     "unsure": 7,
     "weak": 3,
-    "with_outline": 194
+    "with_outline": 193
    },
    "left": 0,
    "parks": 206,
-   "status": "queued",
-   "updated": "2026-11-09"
+   "status": "done",
+   "updated": "2026-11-22"
   },
   "US-NJ": {
    "checked": 134,
@@ -1110,8 +1111,10 @@
  "hosts": {
   "tnstateparks.com": 1795430345.0894592,
   "www.alapark.com": 1795435195.785201,
+  "www.arcgis.com": 1795452861.2430022,
   "www.floridastateparks.org": 1795436850.291285,
   "www.michigan.gov": 1795441493.2175202,
+  "www.nh.gov": 1795453077.0507972,
   "www.nwk.usace.army.mil": 1795439994.9606252,
   "www.sam.usace.army.mil": 1795434819.4882402,
   "www.swfwmd.state.fl.us": 1795437100.4632494,
@@ -1120,38 +1123,56 @@
  },
  "last": {
   "areas": [
-   "US-VT"
+   "US-NH"
   ],
   "manners": {
-   "browser": 1,
+   "browser": 8,
+   "dropped_queued": 2,
    "errors": 0,
-   "for_person": 1,
+   "for_person": 4,
    "for_person_urls": [
     [
-     "http://www.nae.usace.army.mil/Portals/74/docs/Recreation/TSL/TSLTrailMap.pdf",
+     "https://www.arcgis.com/itemdata/92d347a7683b26a11dab76ccf9a5cac2/58b36e66aa2a40669f43f3771f0514a3/BELLAMYRIVERWMAEAST.pdf",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://www.arcgis.com/itemdata/92d347a7683b26a11dab76ccf9a5cac2/422ca4604a4f414fb56e393bbd420f23/BRACKETTBROOKWMA.pdf?response-cache-control=max-age%3D0%2C+s-maxage%3D600%2C+v%3D1762188798000&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECcaCXVzLWVhc3QtMSJHM",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://trailsnh.com/robots.txt",
+     "robots.txt answered 202: nothing fetched from trailsnh.com this run"
+    ],
+    [
+     "https://www.nh.gov/nhdfl/",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://www.nh.gov/nhdfl/",
      "HTTP 403 twice"
     ]
    ],
    "host_rule": 1,
-   "requests": 197,
-   "rested": 0,
-   "retry403": 1,
-   "robots": 0,
-   "strikes": 2
+   "requests": 151,
+   "rested": 58,
+   "retry403": 4,
+   "robots": 1,
+   "robots_unreadable": 1,
+   "strikes": 8
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 11,
-   "no_size": 12,
-   "ours_unknown": 2,
-   "pages_read": 150,
-   "parks": 109,
+   "handover_hints": 5,
+   "no_size": 155,
+   "ours_unknown": 5,
+   "pages_read": 105,
+   "parks": 206,
    "retired": 0,
-   "size_agree": 63,
-   "size_off": 13,
-   "size_unsure": 4,
+   "size_agree": 17,
+   "size_off": 9,
+   "size_unsure": 7,
    "skipped_fresh": 0,
-   "with_outline": 94
+   "with_outline": 193
   },
   "when": "2026-11-22"
  },

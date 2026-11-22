@@ -29,7 +29,7 @@ Updated 2026-11-22. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 | US-RI | 61 | 58 | 8 | **0** | 14 | 34 | 1 | 3 | 0 | 8 |
 | US-MA | 421 | 411 | 138 | **115** | 27 | 102 | 8 | 3 | 0 | 10 |
 | US-VT | 109 | 94 | 63 | **13** | 4 | 12 | 2 | 11 | 0 | 2 |
-| US-NH | 206 | 194 | 16 | **10** | 7 | 105 | 5 | 5 | 0 | 3 |
+| US-NH | 206 | 193 | 17 | **9** | 7 | 105 | 5 | 5 | 0 | 3 |
 | US-ME | 148 | 141 | 17 | **16** | 7 | 92 | 4 | 10 | 0 | 6 |
 | US-MD | 186 | 176 | 41 | **48** | 30 | 33 | 24 | 18 | 0 | 15 |
 | US-DE | 89 | 85 | 2 | **1** | 2 | 66 | 12 | 2 | 0 | 4 |
@@ -1644,30 +1644,29 @@ Last · [www.nps.gov](https://www.nps.gov/pipe/learn/index.htm)
 
 ## US-NH
 
-**Agree:** 16 parks: 0 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 16 agree (second agency).
+**Agree:** 17 parks: 0 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 17 agree (second agency).
 
 **Size more than 15% off (our outline vs the agency):**
 
-- US-0450 Lake Umbagog National Wildlife Refuge: ours 32,648 ac vs agency 7,000 acres (= 7,000 ac; 366% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.fws.gov](https://www.fws.gov/refuge/umbagog/visit-us) · “the country’s natural history. Lake Umbagog Umbagog Lake is more than 7 miles in length and covers more than 7,000 acres, making it one of the largest lakes alo”
+- US-0450 Lake Umbagog National Wildlife Refuge: ours 44,490 ac vs agency 7,000 acres (= 7,000 ac; 536% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.fws.gov](https://www.fws.gov/refuge/umbagog/visit-us) · “the country’s natural history. Lake Umbagog Umbagog Lake is more than 7 miles in length and covers more than 7,000 acres, making it one of the largest lakes alo”
+- US-0329 Silvio O Conte National Wildlife Refuge: ours 58,662 ac vs agency 26,600 acres (= 26,600 ac; 121% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.fws.gov](https://www.fws.gov/refuge/silvio-o-conte) · “ntact station is located in Brunswick (about 10 miles east of Island Pond). Refuge lands consist of more than 26,600 acres of conifer and deciduous forest inter”
 - US-0451 Wapack National Wildlife Refuge: ours 1,702 ac vs agency 1,000 acres (= 1,000 ac; 70% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.fws.gov](https://www.fws.gov/refuge/wapack/about-us) · “along the eastern shore of New Hampshire's Great Bay in the town of Newington. The refuge protects more than 1,000 acres along the seacoast for migratory birds ”
-- US-2648 Dixville Notch State Park: ours 204 ac vs agency 127 acres (= 127 ac; 61% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.nhstateparks.org](https://www.nhstateparks.org/find-parks-trails/dixville-notch-state-park) · “while recreating in State Park lands. Activities and amenities About the Park Dixville Notch State Park spans 127 acres. Despite its small size, the park has br”
-- US-2652 Forest Lake State Park: ours 154 ac vs agency 397 acres (= 397 ac; 61% off) · cause: agency bigger: our outline may miss a tract · [www.nhstateparks.org](https://www.nhstateparks.org/find-parks-trails/forest-lake-state-park) · “H ADVISORIES Forest Lake State Park, one of the ten original state parks, was created in 1935. The park spans 397 acres and its 200-foot sandy beach lies on the”
-- US-4935 Mount Major State Forest: ours 84 ac vs agency 200 acre (= 200 ac; 58% off) · cause: agency bigger: our outline may miss a tract · [www.forestsociety.org](https://www.forestsociety.org/property/mount-major-reservation) · “ffers views that are among the best in the southern part of the state for the effort required. It's part of a 200-acre conservation area owned and managed by th”
-- US-0449 John Hay National Wildlife Refuge: ours 112 ac vs agency 84 acres (= 84 ac; 33% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.fws.gov](https://www.fws.gov/refuge/john-hay) · “including the family residence, a gate house, lake shore house, and garage. In 2008, the Service transferred 84 acres, including all the buildings to The Fells,”
-- US-11037 Bear's Den Natural Area State Park: ours 68 ac vs agency 100 acres (= 100 ac; 32% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [nhgardensolutions.wordpress.com](https://nhgardensolutions.wordpress.com/2012/12/15/bears-den-natural-area/) · “too much of a rush to stop. This day though, curiosity got the better of me. This is a state forest of almost 100 acres containing cliffs, caves, and geological”
-- US-2668 Nansen Wayside State Park: ours 11 ac vs agency 14 acres (= 14 ac; 21% off) · cause: agency bigger: our outline may miss a tract · [www.nhstateparks.org](https://www.nhstateparks.org/find-parks-trails/nansen-wayside-park) · “River and is a popular place for picnicking, fishing, and boating. A boat launch is available. The park spans 14 acres and is at the base of the 170-foot steel-”
-- US-2658 Kingston State Park: ours 36 ac vs agency 44 acre (= 44 ac; 18% off) · cause: agency bigger: our outline may miss a tract · [www.nhstateparks.org](https://www.nhstateparks.org/find-parks-trails/kingston-state-park) · “ties and amenities Check Beach Advisories About the Park Located in Southeastern NH, Kingston State Park is a 44 acre park located on Kingston Pond/Great Pond. ”
-- US-2660 Lake Tarleton State Park: ours 40 ac vs agency 48 acre (= 48 ac; 17% off) · cause: agency bigger: our outline may miss a tract · [www.nhstateparks.org](https://www.nhstateparks.org/find-parks-trails/lake-tarleton-state-park) · “g in State Park lands. Activities and amenities About the Park BEACH ADVISORIES Lake Tarleton State Park is a 48-acre undeveloped park and is easy to find. Lake”
+- US-4935 Mount Major State Forest: ours 89 ac vs agency 200 acre (= 200 ac; 56% off) · cause: agency bigger: our outline may miss a tract · [www.forestsociety.org](https://www.forestsociety.org/property/mount-major-reservation) · “ffers views that are among the best in the southern part of the state for the effort required. It's part of a 200-acre conservation area owned and managed by th”
+- US-2668 Nansen Wayside State Park: ours 8 ac vs agency 14 acres (= 14 ac; 43% off) · cause: agency bigger: our outline may miss a tract · [www.nhstateparks.org](https://www.nhstateparks.org/find-parks-trails/nansen-wayside-park) · “River and is a popular place for picnicking, fishing, and boating. A boat launch is available. The park spans 14 acres and is at the base of the 170-foot steel-”
+- US-2678 Silver Lake State Park: ours 108 ac vs agency 80 acres (= 80 ac; 35% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.nhstateparks.org](https://www.nhstateparks.org/find-parks-trails/silver-lake-state-park) · “State Park lands. Activities and amenities Check Beach Advisories About the Park Silver Lake State Park spans 80 acres and its sandy 1,000-foot beach curves alo”
+- US-2680 Wadleigh State Park: ours 39 ac vs agency 50 acres (= 50 ac; 22% off) · cause: agency bigger: our outline may miss a tract · [www.nhstateparks.org](https://www.nhstateparks.org/find-parks-trails/wadleigh-state-park) · “ne of the most beautiful swimming and picnicking spots in New Hampshire. Wadleigh State Park covers more than 50 acres on the southeastern shore of Kezar Lake. ”
+- US-2683 Wentworth State Park: ours 59 ac vs agency 50 acres (= 50 ac; 18% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.nhstateparks.org](https://www.nhstateparks.org/find-parks-trails/wentworth-state-park) · “n State Park lands. Activities and amenities Check Beach Advisories About the Park Wentworth State Park spans 50 acres and is located on the shore of scenic Wen”
+- US-11037 Bear's Den Natural Area State Park: ours 117 ac vs agency 100 acres (= 100 ac; 17% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [nhgardensolutions.wordpress.com](https://nhgardensolutions.wordpress.com/2012/12/15/bears-den-natural-area/) · “too much of a rush to stop. This day though, curiosity got the better of me. This is a state forest of almost 100 acres containing cliffs, caves, and geological”
 
 **Unsure (no clean total found; the nearest number is only a guess):**
 
-- US-2641 Ahern State Park: ours 94 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-2645 Clough State Park: ours 61 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-2659 Lake Francis State Park: ours 3,303 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-2666 Mount Sunapee State Park: ours 3,082 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-2684 White Lake State Park: ours 749 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-8027 Chesterfield Gorge State Natural Area: ours 7 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-8028 Madison Boulder State Natural Area: ours 185 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-2641 Ahern State Park: ours 136 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-2645 Clough State Park: ours 101 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-2646 Coleman State Park: ours 1,539 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-2659 Lake Francis State Park: ours 2,819 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-2666 Mount Sunapee State Park: ours 3,050 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-2684 White Lake State Park: ours 895 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-8028 Madison Boulder State Natural Area: ours 234 ac · cause: no total-looking sentence: numbers found were parts or other units
 
 **Handover / closure hints (a person decides; nothing applied):**
 
