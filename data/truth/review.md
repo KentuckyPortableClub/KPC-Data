@@ -38,7 +38,7 @@ Updated 2026-11-22. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 | US-LA | 123 | 116 | 8 | **3** | 7 | 97 | 1 | 4 | 0 | 2 |
 | US-OK | 205 | 160 | 69 | **34** | 18 | 25 | 13 | 9 | 0 | 8 |
 | US-TX | 222 | 207 | 49 | **15** | 32 | 86 | 6 | 10 | 0 | 4 |
-| US-KS | 145 | 124 | 3 | **3** | 1 | 105 | 9 | 0 | 0 | 7 |
+| US-KS | 145 | 125 | 3 | **2** | 2 | 105 | 10 | 1 | 0 | 7 |
 | US-NE | 201 | 183 | 4 | **4** | 4 | 159 | 6 | 2 | 0 | 14 |
 | US-CO | 276 | 266 | 46 | **17** | 42 | 145 | 15 | 6 | 0 | 10 |
 | US-WY | 294 | 214 | 47 | **24** | 33 | 75 | 35 | 0 | 0 | 25 |
@@ -2089,13 +2089,17 @@ Last · [www.nps.gov](https://www.nps.gov/pipe/learn/index.htm)
 
 **Size more than 15% off (our outline vs the agency):**
 
-- US-0291 Flint Hills National Wildlife Refuge: ours 20,191 ac vs agency 614.7 acres (= 614 ac; 3185% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.fws.gov](https://www.fws.gov/refuge/flint_hills/) · “e in Coffey and Lyon Counties, Kansas has a Cooperative Agricultural Agreement opportunity for the farming of 614.7 acres on the Refuge starting in March 2027 a”
 - US-0292 Kirwin National Wildlife Refuge: ours 10,778 ac vs agency 5,000 acres (= 5,000 ac; 116% off) · cause: boundary vs owned: our line may be the authorized boundary, the agency counts owned land (rule 1: use owned land) · [www.fws.gov](https://www.fws.gov/refuge/kirwin) · “ar-round activity at Kirwin NWR, especially in spring and early summer. Kirwin Reservoir covers approximately 5,000 acres, although water levels can vary consid”
 - US-3673 Tallgrass Prairie Preserve National Conservation Area: ours 33 ac vs agency 11,000 acres (= 11,000 ac; 100% off) · cause: agency bigger: our outline may miss a tract · [www.nps.gov](https://www.nps.gov/tapr/index.htm) · “n the spring and early summer NPS Contact Us Begin Your Tallgrass Prairie Visit Today The preserve has nearly 11,000 acres to be explored. Take a tour of the hi”
 
 **Unsure (no clean total found; the nearest number is only a guess):**
 
+- US-7477 Cimarron National Grassland: ours 108,598 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-9188 Shawnee Indian Mission State Historic Site: ours 11 ac · cause: no total-looking sentence: numbers found were parts or other units
+
+**Handover / closure hints (a person decides; nothing applied):**
+
+- US-0291 Flint Hills National Wildlife Refuge · managed by: “U.S. Army Corps of Engineers still owns the land but the land and waters within the refuge boundary are managed by U.S. Fish and Wildlife Service. Get involved About Established in 1966 as an “overlay” · owner now: U.S · [www.fws.gov](https://www.fws.gov/refuge/flint_hills/)
 
 ## US-NE
 
