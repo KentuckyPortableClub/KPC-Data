@@ -434,22 +434,23 @@
   "US-LA": {
    "checked": 123,
    "counts": {
-    "agree": 9,
-    "handover_hints": 5,
+    "agree": 8,
+    "handover_hints": 4,
     "no_page": 0,
-    "no_size": 93,
-    "off": 7,
+    "no_size": 97,
+    "not_read": 0,
+    "off": 3,
     "ours_unknown": 1,
     "parks": 123,
     "retired": 0,
-    "unsure": 6,
-    "weak": 3,
+    "unsure": 7,
+    "weak": 2,
     "with_outline": 116
    },
    "left": 0,
    "parks": 123,
-   "status": "queued",
-   "updated": "2026-11-09"
+   "status": "done",
+   "updated": "2026-11-22"
   },
   "US-MA": {
    "checked": 421,
@@ -1121,6 +1122,7 @@
   "www.arcgis.com": 1795452861.2430022,
   "www.destateparks.com": 1795455489.8469434,
   "www.floridastateparks.org": 1795436850.291285,
+  "www.lastateparks.com": 1795457598.9076748,
   "www.maine.gov": 1795453469.8895013,
   "www.michigan.gov": 1795441493.2175202,
   "www.nh.gov": 1795453077.0507972,
@@ -1128,54 +1130,54 @@
   "www.sam.usace.army.mil": 1795434819.4882402,
   "www.swfwmd.state.fl.us": 1795437100.4632494,
   "www.tn.gov": 1795430274.359603,
-  "www.tva.com": 1795435277.2104304
+  "www.tva.com": 1795435277.2104304,
+  "www.wlf.louisiana.gov": 1795457528.7992923
  },
  "last": {
   "areas": [
-   "US-AR"
+   "US-LA"
   ],
   "manners": {
-   "browser": 4,
-   "dropped_queued": 3,
-   "errors": 1,
+   "errors": 0,
+   "for_person": 4,
    "for_person_urls": [
     [
-     "https://nsbfoundation.com/robots.txt",
-     "robots.txt answered 202: nothing fetched from nsbfoundation.com this run"
+     "https://www.wlf.louisiana.gov/page/queen-bess-island",
+     "HTTP 403 twice"
     ],
     [
-     "https://intranet.agfc.com/robots.txt",
-     "robots.txt answered with a web page, not a robots file (the answer came from another site (https://accounts.google.com/v3/signin/identifier?continue=https://sites.google.com/agfc.ar.gov/thehub/home&followup=http): not read as \"no rules\"): not read as \"no rules\": a person downloads what is needed from intranet.agfc.com"
+     "https://www.wlf.louisiana.gov/page/state-wildlife-refuge",
+     "HTTP 403 twice"
     ],
     [
-     "https://www.agfc/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from www.agfc this run"
+     "https://www.lastateparks.com/historic-sites/centenary-state-historic-site",
+     "HTTP 403 twice"
     ],
     [
-     "https://www.camdenexpedition.org/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from www.camdenexpedition.org this run"
+     "https://www.lastateparks.com/historic-sites/fort-jesup-state-historic-site",
+     "HTTP 403 twice"
     ]
    ],
-   "host_rule": 3,
-   "requests": 439,
-   "rested": 0,
-   "robots": 5,
-   "robots_unreadable": 3,
-   "strikes": 1
+   "host_rule": 1,
+   "requests": 105,
+   "rested": 86,
+   "retry403": 4,
+   "robots": 0,
+   "strikes": 8
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 11,
-   "no_size": 92,
-   "ours_unknown": 81,
-   "pages_read": 361,
-   "parks": 306,
+   "handover_hints": 4,
+   "no_size": 97,
+   "ours_unknown": 1,
+   "pages_read": 72,
+   "parks": 123,
    "retired": 0,
-   "size_agree": 42,
-   "size_off": 12,
-   "size_unsure": 41,
+   "size_agree": 8,
+   "size_off": 3,
+   "size_unsure": 7,
    "skipped_fresh": 0,
-   "with_outline": 268
+   "with_outline": 116
   },
   "when": "2026-11-22"
  },

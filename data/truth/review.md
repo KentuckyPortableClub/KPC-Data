@@ -35,7 +35,7 @@ Updated 2026-11-22. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 | US-DE | 89 | 85 | 2 | **1** | 2 | 66 | 12 | 0 | 0 | 4 |
 | US-DC | 35 | 29 | 1 | **1** | 1 | 16 | 10 | 1 | 0 | 8 |
 | US-AR | 306 | 268 | 42 | **12** | 41 | 71 | 81 | 11 | 0 | 18 |
-| US-LA | 123 | 116 | 9 | **7** | 6 | 93 | 1 | 5 | 0 | 3 |
+| US-LA | 123 | 116 | 8 | **3** | 7 | 97 | 1 | 4 | 0 | 2 |
 | US-OK | 205 | 154 | 47 | **53** | 22 | 23 | 8 | 10 | 0 | 10 |
 | US-TX | 222 | 207 | 49 | **15** | 32 | 86 | 6 | 10 | 0 | 4 |
 | US-KS | 145 | 124 | 3 | **3** | 1 | 105 | 9 | 0 | 0 | 7 |
@@ -1912,34 +1912,30 @@ Last · [www.nps.gov](https://www.nps.gov/pipe/learn/index.htm)
 
 ## US-LA
 
-**Agree:** 9 parks: 0 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 9 agree (second agency).
+**Agree:** 8 parks: 0 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 8 agree (second agency).
 
 **Size more than 15% off (our outline vs the agency):**
 
-- US-0299 Bayou Teche National Wildlife Refuge: ours 11,627 ac vs agency 3,619 acres (= 3,619 ac; 221% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.fws.gov](https://www.fws.gov/refuge/bayou-teche) · “Mississippi River. The refuge consists of *seven, non-contiguous management units, ranging in size from 81 to 3,619 acres. The refuge’s primary objective is to ”
-- US-0308 Delta National Wildlife Refuge: ours 50,260 ac vs agency 18,000 acres (= 18,000 ac; 179% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.fws.gov](https://www.fws.gov/refuge/delta/visit-us) · “e is a natural treasure on the northshore of Lake Pontchartrain north of New Orleans, LA. The refuge has over 18,000 acres of freshwater and brackish marsh, bal”
-- US-0315 Red River National Wildlife Refuge: ours 12,182 ac vs agency 50,000 acres (= 50,000 ac; 76% off) · cause: agency bigger: our outline may miss a tract · [www.fws.gov](https://www.fws.gov/refuge/red-river/about-us) · “in August 2002 consisting of 1,377 acres. According to legislation, the refuge shall consist of approximately 50,000 acres of Federal lands and waters along tha”
-- US-0304 Cameron Prairie National Wildlife Refuge: ours 25,904 ac vs agency 14,927 acres (= 14,927 ac; 74% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.fws.gov](https://www.fws.gov/refuge/cameron-prairie) · “it, administratively transferred to Cameron Prairie National Wildlife Refuge from Sabine in 2001, consists of 14,927 acres of brackish to intermediate marsh. Th”
-- US-0303 Breton National Wildlife Refuge: ours 7,164 ac vs agency 18,000 acres (= 18,000 ac; 60% off) · cause: agency bigger: our outline may miss a tract · [www.fws.gov](https://www.fws.gov/refuge/breton/visit-us) · “e is a natural treasure on the northshore of Lake Pontchartrain north of New Orleans, LA. The refuge has over 18,000 acres of freshwater and brackish marsh, bal”
-- US-0302 Bogue Chitto National Wildlife Refuge: ours 26,866 ac vs agency 18,000 acres (= 18,000 ac; 49% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.fws.gov](https://www.fws.gov/refuge/bogue-chitto/about-us) · “e is a natural treasure on the northshore of Lake Pontchartrain north of New Orleans, LA. The refuge has over 18,000 acres of freshwater and brackish marsh, bal”
-- US-0305 Cat Island National Wildlife Refuge: ours 10,817 ac vs agency 18,000 acres (= 18,000 ac; 40% off) · cause: agency bigger: our outline may miss a tract · [www.fws.gov](https://www.fws.gov/refuge/cat-island/about-us) · “e is a natural treasure on the northshore of Lake Pontchartrain north of New Orleans, LA. The refuge has over 18,000 acres of freshwater and brackish marsh, bal”
+- US-0299 Bayou Teche National Wildlife Refuge: ours 11,763 ac vs agency 3,619 acres (= 3,619 ac; 225% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.fws.gov](https://www.fws.gov/refuge/bayou-teche) · “Mississippi River. The refuge consists of *seven, non-contiguous management units, ranging in size from 81 to 3,619 acres. The refuge’s primary objective is to ”
+- US-0315 Red River National Wildlife Refuge: ours 15,107 ac vs agency 50,000 acres (= 50,000 ac; 70% off) · cause: agency bigger: our outline may miss a tract · [www.fws.gov](https://www.fws.gov/refuge/red-river) · “and conserve native plant and animal communities within the Red River basin. It aims to eventually encompass 50,000 acres of federal lands and waters along a 12”
+- US-0304 Cameron Prairie National Wildlife Refuge: ours 24,392 ac vs agency 14,927 acres (= 14,927 ac; 63% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.fws.gov](https://www.fws.gov/refuge/cameron-prairie) · “it, administratively transferred to Cameron Prairie National Wildlife Refuge from Sabine in 2001, consists of 14,927 acres of brackish to intermediate marsh. Th”
 
 **Unsure (no clean total found; the nearest number is only a guess):**
 
-- US-0298 Bayou Sauvage National Wildlife Refuge: ours 27,901 ac · cause: the agency figure may cover several states; our outline may be this state's share only · [www.fws.gov](https://www.fws.gov/refuge/bayou-sauvage-urban/about-us)
-- US-0301 Black Bayou Lake National Wildlife Refuge: ours 2,977 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-0306 Catahoula National Wildlife Refuge: ours 60,775 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-0309 Grand Cote National Wildlife Refuge: ours 5,927 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 25,000 acres, no total words near it) · [www.fws.gov](https://www.fws.gov/refuge/grand-cote/about-us)
+- US-0298 Bayou Sauvage National Wildlife Refuge: ours 27,437 ac · cause: the agency figure may cover several states; our outline may be this state's share only · [www.fws.gov](https://www.fws.gov/refuge/bayou-sauvage-urban/about-us)
+- US-0301 Black Bayou Lake National Wildlife Refuge: ours 3,644 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-0302 Bogue Chitto National Wildlife Refuge: ours 29,114 ac · cause: a number 4 parks share from the same sentence (18,000 ac): an agency total, not this park
+- US-0303 Breton National Wildlife Refuge: ours 12,093 ac · cause: a number 4 parks share from the same sentence (18,000 ac): an agency total, not this park
+- US-0305 Cat Island National Wildlife Refuge: ours 10,817 ac · cause: a number 4 parks share from the same sentence (18,000 ac): an agency total, not this park
+- US-0308 Delta National Wildlife Refuge: ours 50,260 ac · cause: a number 4 parks share from the same sentence (18,000 ac): an agency total, not this park
 - US-0316 Sabine National Wildlife Refuge: ours 123,815 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 184,000 acres, no total words near it) · [www.fws.gov](https://www.fws.gov/refuge/sabine/about-us)
-- US-0319 Upper Ouachita National Wildlife Refuge: ours 54,556 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 26,130 acres, no total words near it) · [www.fws.gov](https://www.fws.gov/refuge/upper-ouachita/about-us)
 
 **Handover / closure hints (a person decides; nothing applied):**
 
 - US-0297 Bayou Cocodrie National Wildlife Refuge · managed by: “Lower Mississippi River Valley. It is part of a network of over 550 refuges throughout the country managed by the U.S. Fish and Wildlife Service for wildlife and people to enjoy. Other Facilities in t” · owner now: U.S · [www.fws.gov](https://www.fws.gov/refuge/bayou-cocodrie/about-us)
 - US-0304 Cameron Prairie National Wildlife Refuge · transfer: “at, was established in 1937 as part of Sabine National Wildlife Refuge. This unit, administratively transferred to Cameron Prairie National Wildlife Refuge from Sabine in 2001, consists of 14,927 acre” · owner now: Cameron Prairie National Wildlife Refuge · [www.fws.gov](https://www.fws.gov/refuge/cameron-prairie)
-- US-0307 D'Arbonne National Wildlife Refuge · managed by: “ational wildlife refuge A national wildlife refuge is typically a contiguous area of land and water managed by the U.S. Fish and Wildlife Service for the conservation and, where appropriate, restorati” · owner now: U.S · [www.fws.gov](https://www.fws.gov/refuge/darbonne/about-us)
+- US-0315 Red River National Wildlife Refuge · managed by: “can help answer questions you may have about the refuge. The visitor center also has a nature store operated by the Friends of Red River Refuge open only when volunteers are available to staff it. The” · owner now: Friends of Red River Refuge · [www.fws.gov](https://www.fws.gov/refuge/red-river)
 - US-0316 Sabine National Wildlife Refuge · managed by: “, Sabine National Wildlife Refuge is one of over 560 refuges in the National Wildlife Refuge System administered by the U.S. Fish and Wildlife Service. PDF Aug 12, 2018 Name Sabine National Wildlife R” · owner now: U.S · [www.fws.gov](https://www.fws.gov/refuge/sabine/visit-us)
-- US-0319 Upper Ouachita National Wildlife Refuge · transfer: “16,191 acres, was purchased from one landowner in parcels from 1997-1999. Plum Creek Timber Company sold 4,939 acres to the Service on the western edge of the refuge from 1999 to 2004 and the Barrs an” · owner now: Service · [www.fws.gov](https://www.fws.gov/refuge/upper-ouachita/about-us)
 
 ## US-TX
 
