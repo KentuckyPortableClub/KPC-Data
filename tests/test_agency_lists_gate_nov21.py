@@ -58,7 +58,8 @@ check('robots.txt loaded but could not be parsed: refused',
 
 cfg = json.load(open(ROOT / '.github/agency-lists.json', encoding='utf-8'))
 ags = cfg['agencies']
-check('no agency is switched on', all(not a.get('enabled') for a in ags))
+check('only the three agencies whose lists tie are on (owner, 22 Nov: agency data needs no approval)',
+      {a['agency'] for a in ags if a.get('enabled')} == {'Florida DEP Division of Recreation and Parks (State Parks)', 'Manitoba Parks', 'Washington State Parks'})
 n403 = sum(1 for a in ags if '403' in (a.get('robots') or '') and 'no rules' in (a.get('robots') or ''))
 check('the 403 robots rows all say no rules (10)', n403 == 10)
 check('no row still says unknown (robots.txt returned 403)',

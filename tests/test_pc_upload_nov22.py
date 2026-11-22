@@ -43,8 +43,10 @@ def setup(t):
     w(t / 'facts' / 'US-ZZ.json', {'area': 'US-ZZ', 'reader': 'v1', 'parks': {r: fact(r) for r in ('US-9001', 'US-9002', 'US-9003')}})
     w(t / 'facts' / 'US-YY.json', {'area': 'US-YY', 'reader': 'v1', 'parks': {'US-9101': fact('US-9101')}})
     w(t / 'prop.json', {'agencies': [{'agency': 'ZZ Parks', 'link_kind': 'zz park id', 'source_url': SRC, 'licence': 'Public domain',
+                                     'status': 'proposal: row tie 3 same / 0 different (invented)',
                                      'web_id': {'column': 'PARKNUM', 'regex': ''}, 'map': {'layer': 'sgzza', 'field': 'UNIT_NO', 'value': 'UNIT'}},
                                     {'agency': 'XX Lands', 'link_kind': 'xx id', 'source_url': 'https://xx.example.gov/list',
+                                     'status': 'proposal: row tie 1 same / 0 different (invented)',
                                      'web_id': {'column': 'ID'}, 'map': {'layer': 'sgxxa', 'field': 'F', 'value': 'G'}}]})
     rows = [{'PARKNUM': '501', 'UNIT': 'A1'}, {'PARKNUM': '502', 'UNIT': 'A2'}, {'PARKNUM': '503', 'UNIT': 'A3'}, {'PARKNUM': '503', 'UNIT': 'A9'}]
     (t / 'lists').mkdir(exist_ok=True)

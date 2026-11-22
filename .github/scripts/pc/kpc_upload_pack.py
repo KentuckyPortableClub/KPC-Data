@@ -8,11 +8,13 @@ internet, nothing is uploaded. It reads:
   KPC-ID-crosswalk\\agency-fields-out\\<newest>\\proposed-agency-lists.json   the proposed web id / map id columns per agency
   the store tool's results\\agency-lists\\<agency>.json.gz      each agency's own list (rows), read once by its A step
   KPC-ID-crosswalk\\crosswalk-out\\<newest>\\link-ids.csv          the link id kind of each agency's parks (link_kind)
-  upload-approved-agencies.txt                                 the agencies YOU allow (one name per line; empty = none)
+  upload-approved-agencies.txt                                 optional: only these agencies (owner, 22 Nov: agency data needs no
+                                                               approval, so with no names EVERY agency whose columns tie is packed)
 and writes SEND-BACK\\kpc-upload-pack-<date>-<time>.zip:
   manifest.json            counts only
   pages\\<area>.json        each area's page facts, as the PC reader wrote them (no other file of the reader)
-  crosswalk\\<agency>.json  for each agency YOU allowed: its proposed columns and, from its list, ONLY those two columns
+  crosswalk\\<agency>.json  for each agency whose proposed columns TIE on the rows (at least 80% of the rows give the same park,
+                            the PC's agency field check): those columns and, from its list, ONLY those two columns
 Never packed: anything in PRIVATE, the store, the cache, a list of an agency you did not allow, WDPA, and the page facts of an
 area the reader has not finished (every park of the area must have a fact): which parks were read first would show the
 private likely-mismatch list. GitHub's reader
@@ -47,9 +49,12 @@ def newest(folder, pattern):
 
 
 def approved_agencies(path):
+    """22 Nov (owner: agency data needs no approval): no file, or a file with no names, = every proposal is packed (None). A file
+    with names = only those (a way to leave an agency out)."""
     try: lines = pathlib.Path(path).read_text(encoding='utf-8-sig').splitlines()
-    except OSError: return []
-    return [l.strip() for l in lines if l.strip() and not l.lstrip().startswith('#')]
+    except OSError: return None
+    names = [l.strip() for l in lines if l.strip() and not l.lstrip().startswith('#')]
+    return names or None
 
 
 def link_kinds(link_ids_csv):
@@ -119,7 +124,7 @@ def make_pack(out_dir, pages_dir, proposals, lists_dir, link_ids, approved, now=
             counts['areas left out: not every park read yet (packed once the area is finished)'] += 1; continue
         members[f'pages/{f.stem}.json'] = json.dumps(d, ensure_ascii=False).encode('utf-8')
         pages[f.stem] = len(d['parks'])
-    ok_names = set(approved)
+    ok_names = None if approved is None else set(approved)   # None = every proposal (owner, 22 Nov: agency data needs no approval)
     props = []
     if proposals and pathlib.Path(proposals).is_file():
         try: props = json.loads(pathlib.Path(proposals).read_text(encoding='utf-8')).get('agencies') or []
@@ -128,13 +133,17 @@ def make_pack(out_dir, pages_dir, proposals, lists_dir, link_ids, approved, now=
     xw = {}
     for e in props:
         ag = str(e.get('agency') or '')
-        if ag not in ok_names: counts['proposed agencies you have not allowed (not packed)'] += 1; continue
+        if ok_names is not None and ag not in ok_names: counts['proposed agencies listed as not allowed (not packed)'] += 1; continue
         w, m = e.get('web_id') or {}, e.get('map') or {}
         if not w.get('column') or not all(m.get(k) for k in ('layer', 'field', 'value')):
             counts['allowed agencies left out: no web id or map id column proposed'] += 1; why.append(f'{ag}: no web id or map id column'); continue
-        if w.get('from_address') and not w.get('regex'):
-            counts['allowed agencies left out: the web id is inside a page address (a regex is needed)'] += 1; why.append(f'{ag}: needs web_id.regex'); continue
-        lk = str(e.get('link_kind') or '').strip().lower() or kinds.get(ag, '')
+        tm = re.search(r'row tie (\d+) same / (\d+) different', str(e.get('status') or ''))
+        same, diff = (int(tm.group(1)), int(tm.group(2))) if tm else (0, 0)
+        if not same or same < 0.8 * (same + diff):
+            counts['agencies left out: their two columns do not tie on the rows (under 80% the same park)'] += 1; why.append(f'{ag}: columns do not tie'); continue
+        lk = str(e.get('link_kind') or '').strip().lower()
+        if not lk and w.get('from_address') and not w.get('regex'): lk = 'page address'   # 22 Nov: the column holds the park's page address
+        lk = lk or kinds.get(ag, '')
         if not lk: counts['allowed agencies left out: no link kind known'] += 1; why.append(f'{ag}: no link kind'); continue
         if WDPA.search(json.dumps(e)): counts['allowed agencies left out: WDPA'] += 1; continue
         rows, complete, read_on = list_rows(lists_dir, ag, e)
@@ -178,8 +187,11 @@ def selftest():
         (t / 'PRIVATE' / 'priority-parks.csv').write_text('park\nUS-9001\n')
         (t / 'prop.json').write_text(json.dumps({'agencies': [
             {'agency': 'ZZ Parks', 'source_url': 'https://gis.zz.example.gov/arcgis/rest/services/P/FeatureServer/0', 'web_id': {'column': 'PARKNUM'},
-             'map': {'layer': 'sgzza', 'field': 'UNIT_NO', 'value': 'UNIT'}},
-            {'agency': 'YY Lands', 'source_url': 'https://yy.example.gov/x', 'web_id': {'column': 'ID'}, 'map': {'layer': 'sgyya', 'field': 'F', 'value': 'G'}}]}))
+             'map': {'layer': 'sgzza', 'field': 'UNIT_NO', 'value': 'UNIT'}, 'status': 'off: fields PROPOSED (row tie 9 same / 0 different)'},
+            {'agency': 'YY Lands', 'source_url': 'https://yy.example.gov/x', 'web_id': {'column': 'ID'}, 'map': {'layer': 'sgyya', 'field': 'F', 'value': 'G'},
+             'status': 'off: fields PROPOSED (row tie 9 same / 0 different)'},
+            {'agency': 'XX Untied', 'source_url': 'https://xx.example.gov/x', 'web_id': {'column': 'ID'}, 'map': {'layer': 'sgxxa', 'field': 'F', 'value': 'G'},
+             'status': 'off: fields PROPOSED (row tie 1 same / 5 different)'}]}))
         (t / 'lists' / 'zz-parks.json.gz').write_bytes(gzip.compress(json.dumps({'agency': 'ZZ Parks', 'layers': [
             {'url': 'u', 'complete': True, 'rows': [{'PARKNUM': '501', 'UNIT': 'A1', 'SECRET': 'not packed'}, {'PARKNUM': '', 'UNIT': 'A2'}]}]}).encode()))
         (t / 'link-ids.csv').write_text('park,agency,id kind,usable as a link id\nUS-9001,ZZ Parks,ZZ Park Id,yes\n')
@@ -199,6 +211,11 @@ def selftest():
         check('the manifest holds counts only (no park number)', 'US-9001' not in json.dumps(man) and man['pages'] == {'US-ZZ': 1})
         zp2, c2, why2 = make_pack(t / 'out2', t / 'nothing', t / 'prop.json', t / 'lists', t / 'link-ids.csv', [])
         check('no page facts and no allowed agency: no pack', zp2 is None)
+        zp3, c3, _ = make_pack(t / 'out3', t / 'facts', t / 'prop.json', t / 'lists', t / 'link-ids.csv', None, parkinfo=t / 'pi')
+        n3 = zipfile.ZipFile(zp3).namelist()
+        check('no approval list (owner, 22 Nov): every agency whose columns tie is packed, an agency whose columns do not tie is not',
+              'crosswalk/zz-parks.json' in n3 and 'crosswalk/xx-untied.json' not in n3
+              and c3['agencies left out: their two columns do not tie on the rows (under 80% the same park)'] == 1)
     print('ALL PASS' if ok else 'SOME FAILED')
     return 0 if ok else 1
 
@@ -218,8 +235,8 @@ def main(argv=None):
     say(f'{VERSION}  Python {sys.version.split()[0]}')
     ap_ = pathlib.Path(a.approved)
     if not ap_.exists():
-        ap_.write_text('# One agency name per line, exactly as in proposed-agency-lists.json. Only these agencies\' web id -> map id\n'
-                       '# crosswalk goes in the upload pack. Empty = none (the page facts are packed anyway).\n', encoding='utf-8')
+        ap_.write_text('# Owner, 22 Nov: agency data needs no approval, so EVERY agency whose proposed columns tie is packed.\n'
+                       '# To leave agencies out, list here only the ones to pack (one name per line, as in proposed-agency-lists.json).\n', encoding='utf-8')
     prop = a.proposals or str((newest(XWALK / 'agency-fields-out', '*/proposed-agency-lists.json') or ''))
     links = a.link_ids or str((newest(XWALK / 'crosswalk-out', '*/link-ids.csv') or ''))
     zp, c, why = make_pack(a.out, a.pages, prop, a.lists, links, approved_agencies(ap_), parkinfo=a.parkinfo)

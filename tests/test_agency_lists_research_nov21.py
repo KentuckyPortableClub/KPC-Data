@@ -23,9 +23,10 @@ def check(msg, cond):
 cfg = json.load(open(ROOT / '.github/agency-lists.json', encoding='utf-8'))
 ags = cfg['agencies']
 check('the research table is in the config (at least 90 agencies)', len(ags) >= 90)
-check('no agency is switched on', all(a.get('enabled') is False for a in ags))
-check('every agency has a one-line reason starting "off:"',
-      all(str(a.get('status', '')).startswith('off: ') and '\n' not in a['status'] and len(a['status']) > 10 for a in ags))
+check('only the three agencies whose lists tie are on (owner, 22 Nov: agency data needs no approval)',
+      {a['agency'] for a in ags if a.get('enabled') is True} == {'Florida DEP Division of Recreation and Parks (State Parks)', 'Manitoba Parks', 'Washington State Parks'} and all(a.get('enabled') in (True, False) for a in ags))
+check('every agency has a one-line reason starting "off:" (or "on (owner, 22 Nov" for the three)',
+      all(str(a.get('status', '')).startswith('on (owner, 22 Nov 2026' if a.get('enabled') else 'off: ') and '\n' not in a['status'] and len(a['status']) > 10 for a in ags))
 check('every agency names when and how it was checked', all('2026-11-21' in str(a.get('checked', '')) for a in ags))
 check('agency names are unique (one crosswalk file each)', len({AL.slug(a['agency']) for a in ags}) == len(ags))
 for k in ('Parks Canada', 'OR State Parks', "Parks Canada (Canada's Historic Places)", 'MI DNR', 'AR Game and Fish', 'NY State Parks',
@@ -39,7 +40,8 @@ check('an agency with no official list has no source', all(a['source_url'] == ''
 check('no entry names a WDPA source', not AL.WDPA.search(json.dumps(ags)))
 import kpc_host_rules as HR  # noqa: E402
 blocked = [a for a in ags if a['source_url'] and not HR.host_ok(a['source_url'])[0]]
-check('every source on a saved-copies-only host says so in its reason', blocked and all('saved copies only' in a['status'] for a in blocked))
+check('every source on a saved-copies-only host says so in its reason, or is an owner-switched-on list read by the keeper only',
+      blocked and all('saved copies only' in a['status'] or (a.get('enabled') and a['status'].startswith('on (owner, ') and 'store keeper only' in a['status']) for a in blocked))
 
 good = {'enabled': True, 'agency': 'Invented', 'link_kind': 'ZZ page number', 'source_url': 'https://lists.invented.example/l.csv',
         'licence': 'public domain (invented)', 'licence_ok': True, 'robots': 'allowed (read 2026-11-21)',

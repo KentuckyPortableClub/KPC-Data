@@ -24,7 +24,8 @@ check('the agency lists self-test passes (skips keep the earlier file, never WDP
       r.returncode == 0 and 'SELF-TEST PASSED' in r.stdout)
 
 cfg = json.load(open(ROOT / '.github/agency-lists.json', encoding='utf-8'))
-check('no agency is switched on in the shipped config', all(not a.get('enabled') for a in cfg['agencies']))
+check('only the three agencies whose lists tie are on (owner, 22 Nov: agency data needs no approval)',
+      {a['agency'] for a in cfg['agencies'] if a.get('enabled')} == {'Florida DEP Division of Recreation and Parks (State Parks)', 'Manitoba Parks', 'Washington State Parks'})
 check('an agency that is on but has no licence may still be read (licence is not a gate)', 'no licence' not in ' '.join(AL.problems(
     {'enabled': True, 'agency': 'X', 'link_kind': 'k', 'source_url': 'https://x.example/l.csv', 'licence': '', 'terms_url': 'https://x.example/t',
      'robots': 'unreadable (403) = no rules',
