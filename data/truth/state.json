@@ -226,9 +226,10 @@
    "checked": 89,
    "counts": {
     "agree": 2,
-    "handover_hints": 2,
+    "handover_hints": 0,
     "no_page": 0,
     "no_size": 66,
+    "not_read": 0,
     "off": 1,
     "ours_unknown": 12,
     "parks": 89,
@@ -239,8 +240,8 @@
    },
    "left": 0,
    "parks": 89,
-   "status": "queued",
-   "updated": "2026-11-09"
+   "status": "done",
+   "updated": "2026-11-22"
   },
   "US-FL": {
    "checked": 460,
@@ -1111,10 +1112,12 @@
   }
  },
  "hosts": {
+  "destateparks.com": 1795455317.1322887,
   "maine.gov": 1795453861.5372512,
   "tnstateparks.com": 1795430345.0894592,
   "www.alapark.com": 1795435195.785201,
   "www.arcgis.com": 1795452861.2430022,
+  "www.destateparks.com": 1795455489.8469434,
   "www.floridastateparks.org": 1795436850.291285,
   "www.maine.gov": 1795453469.8895013,
   "www.michigan.gov": 1795441493.2175202,
@@ -1127,31 +1130,56 @@
  },
  "last": {
   "areas": [
-   "US-MD"
+   "US-DE"
   ],
   "manners": {
-   "browser": 13,
+   "browser": 30,
+   "dropped_queued": 1,
    "errors": 0,
-   "for_person_urls": [],
+   "for_person": 4,
+   "for_person_urls": [
+    [
+     "https://destateparks.com/FieldsStreams/Alapocas",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://destateparks.com/Bellevue",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://www.nrtdatabase.org/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from www.nrtdatabase.org this run"
+    ],
+    [
+     "https://www.destateparks.com/port-penn/",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://www.destateparks.com/wp-content/uploads/2024/08/maps_Cape_Beach_Plum.pdf",
+     "HTTP 403 twice"
+    ]
+   ],
    "host_rule": 0,
-   "requests": 367,
-   "rested": 0,
-   "robots": 0,
-   "strikes": 0
+   "requests": 136,
+   "rested": 17,
+   "retry403": 4,
+   "robots": 1,
+   "robots_unreadable": 1,
+   "strikes": 8
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 18,
-   "no_size": 33,
-   "ours_unknown": 25,
-   "pages_read": 301,
-   "parks": 186,
+   "handover_hints": 0,
+   "no_size": 68,
+   "ours_unknown": 12,
+   "pages_read": 80,
+   "parks": 89,
    "retired": 0,
-   "size_agree": 63,
-   "size_off": 33,
-   "size_unsure": 24,
+   "size_agree": 2,
+   "size_off": 1,
+   "size_unsure": 2,
    "skipped_fresh": 0,
-   "with_outline": 178
+   "with_outline": 85
   },
   "when": "2026-11-22"
  },

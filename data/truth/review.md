@@ -32,7 +32,7 @@ Updated 2026-11-22. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 | US-NH | 206 | 193 | 17 | **9** | 7 | 105 | 5 | 5 | 0 | 3 |
 | US-ME | 148 | 141 | 21 | **12** | 5 | 94 | 4 | 9 | 0 | 4 |
 | US-MD | 186 | 178 | 63 | **33** | 24 | 32 | 25 | 18 | 0 | 11 |
-| US-DE | 89 | 85 | 2 | **1** | 2 | 66 | 12 | 2 | 0 | 4 |
+| US-DE | 89 | 85 | 2 | **1** | 2 | 66 | 12 | 0 | 0 | 4 |
 | US-DC | 35 | 29 | 1 | **1** | 1 | 16 | 10 | 1 | 0 | 15 |
 | US-AR | 306 | 268 | 37 | **18** | 41 | 71 | 80 | 12 | 0 | 20 |
 | US-LA | 123 | 116 | 9 | **7** | 6 | 93 | 1 | 5 | 0 | 3 |
@@ -1810,17 +1810,12 @@ Last · [www.nps.gov](https://www.nps.gov/pipe/learn/index.htm)
 
 **Size more than 15% off (our outline vs the agency):**
 
-- US-10531 Fork Branch State Nature Preserve: ours 363 ac vs agency 236 acres (= 236 ac; 54% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [dnrec.delaware.gov](https://dnrec.delaware.gov/parks/planning/fork-branch-preserve/) · “Nature Preserve, in Dover. Contact Us Benjamin Schlusser Manager, Office of Nature Preserves 302-739-9039 At 236 acres, the Anne McClements Woods Tract of the F”
+- US-10531 Fork Branch State Nature Preserve: ours 397 ac vs agency 236 acres (= 236 ac; 68% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [dnrec.delaware.gov](https://dnrec.delaware.gov/parks/planning/fork-branch-preserve/) · “Nature Preserve, in Dover. Contact Us Benjamin Schlusser Manager, Office of Nature Preserves 302-739-9039 At 236 acres, the Anne McClements Woods Tract of the F”
 
 **Unsure (no clean total found; the nearest number is only a guess):**
 
-- US-10659 Augustine State Beach: ours 2,273 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 68,000 acres, no total words near it) · [dnrec.delaware.gov](https://dnrec.delaware.gov/fish-wildlife/wildlife-areas/)
-- US-9891 Blackbird Creek National Reserve: ours 817 ac · cause: no total-looking sentence: numbers found were parts or other units
-
-**Handover / closure hints (a person decides; nothing applied):**
-
-- US-0229 Bombay Hook National Wildlife Refuge · managed by: “view nature films, information on things to do and places to see, and the Friends Nature gift shop (operated by the Friends of Bombay Hook National Wildlife Refuge). The visitor center is handicapped ” · owner now: Friends of Bombay Hook National Wildlife Refuge · [www.fws.gov](https://www.fws.gov/refuge/bombay-hook/visit-us)
-- US-0230 Prime Hook National Wildlife Refuge · managed by: “ys, information on things to do and places to see on the refuge, and the Hooked on Nature Gift Shop operated by the Friends of Prime Hook National Wildlife Refuge. The refuge does not charge an entran” · owner now: Friends of Prime Hook National Wildlife Refuge · [www.fws.gov](https://www.fws.gov/refuge/prime-hook/visit-us)
+- US-10659 Augustine State Beach: ours 3,259 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 68,000 acres, no total words near it) · [dnrec.delaware.gov](https://dnrec.delaware.gov/fish-wildlife/wildlife-areas/)
+- US-9891 Blackbird Creek National Reserve: ours 618 ac · cause: no total-looking sentence: numbers found were parts or other units
 
 ## US-DC
 
