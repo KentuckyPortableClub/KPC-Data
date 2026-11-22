@@ -1006,22 +1006,23 @@
   "US-VT": {
    "checked": 109,
    "counts": {
-    "agree": 35,
+    "agree": 63,
     "handover_hints": 11,
     "no_page": 0,
     "no_size": 12,
-    "off": 32,
+    "not_read": 0,
+    "off": 13,
     "ours_unknown": 2,
     "parks": 109,
     "retired": 0,
-    "unsure": 12,
-    "weak": 6,
-    "with_outline": 93
+    "unsure": 4,
+    "weak": 2,
+    "with_outline": 94
    },
    "left": 0,
    "parks": 109,
-   "status": "queued",
-   "updated": "2026-11-09"
+   "status": "done",
+   "updated": "2026-11-22"
   },
   "US-WA": {
    "checked": 536,
@@ -1119,49 +1120,38 @@
  },
  "last": {
   "areas": [
-   "US-MA"
+   "US-VT"
   ],
   "manners": {
-   "browser": 8,
-   "crawl_delay_skip": 1,
-   "dropped_queued": 18,
+   "browser": 1,
    "errors": 0,
    "for_person": 1,
    "for_person_urls": [
     [
-     "http://www.nae.usace.army.mil/Portals/74/docs/Recreation/WHD/WHDProjectMap.pdf",
+     "http://www.nae.usace.army.mil/Portals/74/docs/Recreation/TSL/TSLTrailMap.pdf",
      "HTTP 403 twice"
-    ],
-    [
-     "https://parks.ny.gov/sites/default/files/TaconicCopakeFallsAreaTrailMapNorth.pdf",
-     "Crawl-delay 300 s is over 120 s: not read"
-    ],
-    [
-     "https://www.mass-trails.org/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from www.mass-trails.org this run"
     ]
    ],
-   "host_rule": 0,
-   "requests": 569,
+   "host_rule": 1,
+   "requests": 197,
    "rested": 0,
    "retry403": 1,
-   "robots": 1,
-   "robots_unreadable": 1,
+   "robots": 0,
    "strikes": 2
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 3,
-   "no_size": 123,
-   "ours_unknown": 8,
-   "pages_read": 521,
-   "parks": 421,
+   "handover_hints": 11,
+   "no_size": 12,
+   "ours_unknown": 2,
+   "pages_read": 150,
+   "parks": 109,
    "retired": 0,
-   "size_agree": 138,
-   "size_off": 115,
-   "size_unsure": 27,
+   "size_agree": 63,
+   "size_off": 13,
+   "size_unsure": 4,
    "skipped_fresh": 0,
-   "with_outline": 411
+   "with_outline": 94
   },
   "when": "2026-11-22"
  },
