@@ -12,7 +12,7 @@ Updated 2026-11-22. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 | US-GA | 238 | 227 | 125 | **46** | 27 | 24 | 4 | 10 | 0 | 5 |
 | US-AL | 155 | 134 | 31 | **10** | 23 | 58 | 6 | 4 | 0 | 5 |
 | US-SC | 167 | 162 | 26 | **9** | 13 | 108 | 2 | 3 | 0 | 4 |
-| US-FL | 460 | 437 | 85 | **34** | 36 | 279 | 2 | 12 | 0 | 8 |
+| US-FL | 460 | 437 | 85 | **34** | 37 | 278 | 3 | 12 | 0 | 9 |
 | US-MS | 155 | 99 | 6 | **2** | 12 | 69 | 0 | 3 | 0 | 11 |
 | US-IN | 229 | 217 | 106 | **33** | 32 | 41 | 4 | 17 | 0 | 9 |
 | US-IL | 219 | 211 | 68 | **42** | 56 | 36 | 8 | 15 | 0 | 6 |
@@ -620,6 +620,7 @@ Updated 2026-11-22. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 - US-8685 Holton Creek State Conservation Area: ours 2,534 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 3.89 acres, a tiny number without size wording) · [map.mysuwanneeriver.com](https://map.mysuwanneeriver.com/tracts/holton-creek/)
 - US-8703 Steinhatchee Falls State Conservation Area: ours 1,752 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 3.24 acres, a tiny number without size wording) · [map.mysuwanneeriver.com](https://map.mysuwanneeriver.com/tracts/steinhatchee-falls/)
 - US-8716 Woods Ferry State Conservation Area: ours 2,852 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 4.79 acres, a tiny number without size wording) · [map.mysuwanneeriver.com](https://map.mysuwanneeriver.com/tracts/woods-ferry-243/)
+- US-8720 Frog Pond State Conservation Area: ours 11,291 ac · cause: no total-looking sentence: numbers found were parts or other units
 
 **Handover / closure hints (a person decides; nothing applied):**
 

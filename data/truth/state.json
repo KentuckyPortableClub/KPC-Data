@@ -248,20 +248,20 @@
     "agree": 85,
     "handover_hints": 12,
     "no_page": 0,
-    "no_size": 279,
+    "no_size": 278,
     "not_read": 0,
     "off": 34,
-    "ours_unknown": 2,
+    "ours_unknown": 3,
     "parks": 460,
     "retired": 0,
-    "unsure": 36,
-    "weak": 8,
+    "unsure": 37,
+    "weak": 9,
     "with_outline": 437
    },
    "left": 0,
    "parks": 460,
-   "status": "queued",
-   "updated": "2026-11-15"
+   "status": "done",
+   "updated": "2026-11-22"
   },
   "US-GA": {
    "checked": 238,
@@ -1100,57 +1100,59 @@
  "hosts": {
   "tnstateparks.com": 1795430345.0894592,
   "www.alapark.com": 1795435195.785201,
+  "www.floridastateparks.org": 1795436850.291285,
   "www.sam.usace.army.mil": 1795434819.4882402,
+  "www.swfwmd.state.fl.us": 1795437100.4632494,
   "www.tn.gov": 1795430274.359603,
   "www.tva.com": 1795435277.2104304
  },
  "last": {
   "areas": [
-   "US-SC"
+   "US-FL"
   ],
   "manners": {
-   "browser": 7,
-   "deferred": 14,
-   "dropped_queued": 43,
+   "browser": 1,
+   "deferred": 41,
    "errors": 0,
+   "for_person": 4,
    "for_person_urls": [
     [
-     "https://www2.dnr.sc.gov/robots.txt",
-     "robots.txt answered 500: nothing fetched from www2.dnr.sc.gov this run"
+     "https://www.floridastateparks.org/parks-and-trails/little-talbot-island-state-park",
+     "HTTP 403 twice"
     ],
     [
-     "http://www.wildlifesouth.com/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from www.wildlifesouth.com this run"
+     "https://www.floridastateparks.org/learn/rules-regulations",
+     "HTTP 403 twice"
     ],
     [
-     "https://www.yorkcountygov.com/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from www.yorkcountygov.com this run"
+     "https://www.swfwmd.state.fl.us/recreation/myakka-river-flatford-swamp",
+     "HTTP 403 twice"
     ],
     [
-     "https://palmettoconservation.org/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from palmettoconservation.org this run"
+     "https://www.swfwmd.state.fl.us/recreation/deep-creek-preserve",
+     "HTTP 403 twice"
     ]
    ],
-   "host_rule": 2,
-   "requests": 244,
-   "rested": 0,
-   "robots": 5,
-   "robots_unreadable": 4,
-   "strikes": 0
+   "host_rule": 0,
+   "requests": 87,
+   "rested": 366,
+   "retry403": 4,
+   "robots": 38,
+   "strikes": 8
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 3,
-   "no_size": 112,
-   "ours_unknown": 2,
-   "pages_read": 194,
-   "parks": 167,
+   "handover_hints": 12,
+   "no_size": 220,
+   "ours_unknown": 1,
+   "pages_read": 61,
+   "parks": 290,
    "retired": 0,
-   "size_agree": 26,
-   "size_off": 9,
-   "size_unsure": 13,
-   "skipped_fresh": 0,
-   "with_outline": 162
+   "size_agree": 40,
+   "size_off": 18,
+   "size_unsure": 9,
+   "skipped_fresh": 170,
+   "with_outline": 288
   },
   "when": "2026-11-22"
  },
