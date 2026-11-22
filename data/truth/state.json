@@ -98,7 +98,7 @@
    },
    "left": 0,
    "parks": 155,
-   "status": "queued",
+   "status": "done",
    "updated": "2026-11-22"
   },
   "US-AR": {
@@ -1123,38 +1123,31 @@
  },
  "last": {
   "areas": [
-   "US-GA"
+   "US-AL"
   ],
   "manners": {
-   "browser": 1,
+   "browser": 21,
    "errors": 0,
-   "for_person": 1,
-   "for_person_urls": [
-    [
-     "https://www.gwcca.org/centennial-olympic-park",
-     "HTTP 403 twice"
-    ]
-   ],
+   "for_person_urls": [],
    "host_rule": 0,
-   "requests": 6,
-   "rested": 0,
-   "retry403": 1,
+   "requests": 51,
+   "rested": 42,
    "robots": 0,
-   "strikes": 2
+   "strikes": 0
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 10,
-   "no_size": 2,
-   "ours_unknown": 0,
-   "pages_read": 1,
-   "parks": 2,
+   "handover_hints": 4,
+   "no_size": 38,
+   "ours_unknown": 2,
+   "pages_read": 23,
+   "parks": 42,
    "retired": 0,
    "size_agree": 0,
    "size_off": 0,
-   "size_unsure": 0,
-   "skipped_fresh": 236,
-   "with_outline": 2
+   "size_unsure": 2,
+   "skipped_fresh": 113,
+   "with_outline": 42
   },
   "when": "2026-11-22"
  },
