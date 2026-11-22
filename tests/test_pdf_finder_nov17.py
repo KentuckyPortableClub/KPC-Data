@@ -215,9 +215,9 @@ import hashlib
 def _sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 # A later edit of either file changes the pin in the same pull request, where a reviewer sees it.
-MANNERS_SHA = 'd9254273ef8cfd6f596cfe91bb14d1d2836e1ef8627ae8c490b98e184e37c63f'
+MANNERS_SHA = '70090b44d78f94a73c2165f20a7effd3b4f291bd0507c1a1b4e7a181b9a58d0f'
 HOST_SHA = 'ec7efc5feec25676f89a656106278930d27d33c8467b4b3bd185739ca4818eec'
-check(f'9. kpc_manners.py frozen: {MANNERS_SHA}, pin updated 22 Nov 2026',
+check(f'9. kpc_manners.py frozen: {MANNERS_SHA}, pin updated 22 Nov 2026 (header comment, review N15)',
       _sha(S / 'kpc_manners.py') == MANNERS_SHA)
 check(f'9. kpc_host_rules.py frozen: {HOST_SHA}, pin updated 22 Nov 2026 (the keeper reads arcgis, owner)',
       _sha(S / 'kpc_host_rules.py') == HOST_SHA)
