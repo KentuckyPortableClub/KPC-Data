@@ -39,7 +39,9 @@ def save_json(path, obj, only_if_changed=False):
         except OSError:
             pass
     p.parent.mkdir(parents=True, exist_ok=True)
-    p.write_text(text, encoding='utf-8')
+    tmp = p.with_name(p.name + '.tmp')   # 22 Nov: written whole, then put in place: a reader stopped mid-write never leaves half a file
+    tmp.write_text(text, encoding='utf-8')
+    os.replace(tmp, p)
     return True
 
 
