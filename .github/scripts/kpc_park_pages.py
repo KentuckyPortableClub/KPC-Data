@@ -204,6 +204,9 @@ class KeeperCopyGetter:
             return 'not-in-copy', {}, b'', url
         return self.live.get(url, rng=rng, deadline=deadline, max_time=max_time)
 
+    def browser_html(self, url):
+        return self.live.browser_html(url) if self.live is not None and hasattr(self.live, 'browser_html') else ''
+
     def resting(self):
         return self.live.resting() if self.live is not None and hasattr(self.live, 'resting') else {}
 
@@ -225,11 +228,32 @@ class LiveGetter:
         # urllib raised InvalidURL and the park was skipped on every run
         return self.M.get(request_url(url), rng=rng, deadline=deadline, max_time=max_time)
 
+    def browser_html(self, url):
+        """22 Nov: a page that builds itself, opened in the browser (BROWSER=1 and Playwright installed), same manners."""
+        if os.environ.get('BROWSER') != '1':
+            return ''
+        from kpc_manners import browser_html
+        return browser_html(request_url(url), self.M)
+
     def resting(self):
         return self.M.resting()
 
 
+REFUSALS_FOR_HOST = 3   # 21 Nov: a site is passed over only after this many DIFFERENT pages refused us (401 / 403 / a wall)
+
+
+def _refusal_rule(state):
+    """21 Nov: one refused page used to put its whole site aside for 30 days without asking again (751 'refused' parks on the
+    PC, about 25 really asked). A state saved under the old rule forgets those one-page refusals once, so each site is asked
+    again, politely; every refusal is still honoured for its own page."""
+    if state.get('refusal_rule') != REFUSALS_FOR_HOST:
+        state['refused'] = {}
+        state['refusal_pages'] = {}
+        state['refusal_rule'] = REFUSALS_FOR_HOST
+
+
 def _refused_until(state, host, today):
+    _refusal_rule(state)
     when = (state.get('refused') or {}).get(host)
     if not when:
         return False
@@ -241,8 +265,16 @@ def _refused_until(state, host, today):
     return (now - day).days < R.REFUSAL_DAYS
 
 
-def _remember_refusal(state, host, today):
-    state.setdefault('refused', {})[host] = today
+def _remember_refusal(state, host, today, url=''):
+    """A refused page is counted for its site; the site is put aside once REFUSALS_FOR_HOST different pages refused."""
+    _refusal_rule(state)
+    pages = state.setdefault('refusal_pages', {}).setdefault(host, [])
+    u = norm_url(url) if url else ''
+    if u and u not in pages:
+        pages.append(u)
+        del pages[:-REFUSALS_FOR_HOST]
+    if not url or len(pages) >= REFUSALS_FOR_HOST:
+        state.setdefault('refused', {})[host] = today
 
 
 def _kind_of_status(st, body_text, url, is_pdf=False):
@@ -392,8 +424,21 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
         extra = getter.links_for(url) if hasattr(getter, 'links_for') else []
         vis = R.visible_of(body, headers, final or url, extra)
         kind = _kind_of_status(st, vis.get('text'), final or url, is_pdf=bool(vis.get('pdf')))
-        if kind == 'refused':
-            _remember_refusal(state, R.host_of(final or url) or host, today)
+        browsed = False
+        if kind == 'script-built' and not rng and hasattr(getter, 'browser_html') and budget_left():
+            # 22 Nov: a page that builds itself is opened once in the browser (same manners, counted as a request) and read
+            # like any other page; when the browser is off, missing, refused or the page is still empty, it stays for a person
+            requests += 1
+            built = getter.browser_html(final or url) or ''
+            if built:
+                vis2 = R.visible_of(built.encode('utf-8'), {'content-type': 'text/html; charset=utf-8'}, final or url, extra)
+                text2 = (vis2.get('text') or '').strip()
+                if len(text2) >= 400 and not R.WALL.search(text2):
+                    vis, kind, browsed = vis2, 'html', True
+        if kind == 'refused' and not (isinstance(st, str) and robots_block(st)):
+            # 21 Nov: robots.txt is read for each address (its rules are per path), so a robots 'no' is never remembered for the
+            # whole site; a 401 / 403 / wall counts towards putting the site aside (REFUSALS_FOR_HOST different pages)
+            _remember_refusal(state, R.host_of(final or url) or host, today, final or url)
         if kind == 'dead':
             prev = (state.get('dead') or {}).get(url)
             twice = False
@@ -414,6 +459,8 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
                 'og': vis.get('og') or '', 'jsonld': vis.get('jsonld') or '', 'links': vis.get('links') or [],
                 'fingerprint': R.fp_of(vis.get('text') or ''), 'dead_twice': vis_dead, 'family': R.family_of(final or url),
                 'thin': len((vis.get('text') or '').strip()) < 400}
+        if browsed:
+            page['browser'] = True
         cache[key] = page
         return page
 
@@ -1254,7 +1301,9 @@ def selftest():
         getter = FixtureGetter(manifest, t)
         state = {}
         facts, reqs = read_parks(areas, web, docs, truth, getter, state, '2026-11-19', refs=['US-9'])
-        check('a 403 is refused and remembered', facts['US-DE']['US-9']['page']['kind'] == 'refused' and 'documents.example.gov' in state['refused'])
+        check('a 403 is refused and counted for its site (put aside after 3 different pages, 21 Nov)',
+              facts['US-DE']['US-9']['page']['kind'] == 'refused' and 'documents.example.gov' not in state['refused']
+              and len(state['refusal_pages']['documents.example.gov']) == 1)
         getter2 = FixtureGetter(manifest, t)
         facts2, reqs2 = read_parks(areas, web, docs, truth, getter2, state, '2026-11-20', refs=['US-9'])
         check('a refused host is not asked the next day', reqs2 == 0 and getter2.calls == [])

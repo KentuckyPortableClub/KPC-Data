@@ -1387,12 +1387,15 @@ def _page_block(main, asked, today):
     asked_h = host_of(asked.get('url') or '')
     final_h = host_of(final)
     kind = main.get('kind') or 'none'
-    return {'final_url': final, 'status': main.get('status'), 'kind': kind, 'read': today, 'by': 'bot',
+    out = {'final_url': final, 'status': main.get('status'), 'kind': kind, 'read': today, 'by': 'bot',
             'fingerprint': main.get('fingerprint') or '', 'host': final_h, 'family': (main.get('family') or {}).get('id') if isinstance(main.get('family'), dict) else main.get('family') or '',
             'nps_code': (main.get('family') or {}).get('code') if isinstance(main.get('family'), dict) else '',
             'moved': bool(asked_h and final_h and base_host(asked_h) != base_host(final_h)),
             'final_host': final_h, 'dead_twice': bool(main.get('dead_twice')),
             'requests': main.get('requests') or 0}
+    if main.get('browser'):
+        out['browser'] = True   # 22 Nov: the page built itself and was read after the browser ran its scripts
+    return out
 
 
 def _location(main, pages, pota, area, pin):
