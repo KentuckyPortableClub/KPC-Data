@@ -26,7 +26,7 @@ Updated 2026-11-22. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 | US-NY | 851 | 830 | 54 | **24** | 53 | 563 | 15 | 17 | 0 | 8 |
 | US-NJ | 134 | 130 | 35 | **4** | 5 | 83 | 2 | 2 | 0 | 2 |
 | US-CT | 157 | 150 | 60 | **12** | 34 | 39 | 4 | 3 | 0 | 3 |
-| US-RI | 61 | 58 | 1 | **3** | 9 | 41 | 2 | 2 | 0 | 13 |
+| US-RI | 61 | 58 | 8 | **0** | 14 | 34 | 1 | 3 | 0 | 8 |
 | US-MA | 421 | 410 | 73 | **169** | 37 | 122 | 9 | 3 | 0 | 7 |
 | US-VT | 109 | 93 | 35 | **32** | 12 | 12 | 2 | 11 | 0 | 6 |
 | US-NH | 206 | 194 | 16 | **10** | 7 | 105 | 5 | 5 | 0 | 3 |
@@ -1468,30 +1468,32 @@ Last · [www.nps.gov](https://www.nps.gov/pipe/learn/index.htm)
 
 ## US-RI
 
-**Agree:** 1 parks: 0 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 1 agree (second agency).
+**Agree:** 8 parks: 0 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 8 agree (second agency).
 
-**Size more than 15% off (our outline vs the agency):**
-
-- US-2880 Snake Den State Park: ours 478 ac vs agency 1,000 acre (= 1,000 ac; 52% off) · cause: agency bigger: our outline may miss a tract · [riparks.ri.gov](https://riparks.ri.gov/other-state-lands/snake-dendame-farm) · “griculture & Forest Environment) Snake Den State Park is located along Route 6 in Johnston, Rhode Island. The 1,000-acre undeveloped property boasts self-guided”
-- US-0514 John H. Chafee National Wildlife Refuge: ours 334 ac vs agency 550 acre (= 550 ac; 39% off) · cause: agency bigger: our outline may miss a tract · [www.fws.gov](https://www.fws.gov/refuge/john-h-chafee/about-us) · “tory waterfowl that rely on it, including the largest population of black ducks in Rhode Island. In fact, the 550-acre refuge was established specifically to pr”
-- US-0513 Block Island National Wildlife Refuge: ours 183 ac vs agency 134 acres (= 134 ac; 37% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [www.fws.gov](https://www.fws.gov/refuge/block-island/about-us) · “blished in 1973 with the transfer of 28 acres from the U.S. Coast Guard, and has grown to its current size of 134 acres today. Block Island National Wildlife Re”
 
 **Unsure (no clean total found; the nearest number is only a guess):**
 
-- US-0515 Ninigret National Wildlife Refuge: ours 575 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-0517 Trustom Pond National Wildlife Refuge: ours 598 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 52 acre, no total words near it) · [www.fws.gov](https://www.fws.gov/refuge/trustom-pond/about-us)
-- US-10541 Gull Cove State Recreation Area: ours 4 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 33 acres, no total words near it) · [dem.ri.gov](https://dem.ri.gov/natural-resources-bureau/fish-wildlife/freshwater-fishing/public-boat-launching-sites#salt)
-- US-10542 Camp Cronin State Recreation Area: ours 14 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 33 acres, no total words near it) · [dem.ri.gov](https://dem.ri.gov/natural-resources-bureau/fish-wildlife/freshwater-fishing/public-boat-launching-sites#salt)
+- US-0513 Block Island National Wildlife Refuge: ours 219 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-0517 Trustom Pond National Wildlife Refuge: ours 663 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-10541 Gull Cove State Recreation Area: ours 3 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 33 acres, no total words near it) · [dem.ri.gov](https://dem.ri.gov/natural-resources-bureau/fish-wildlife/freshwater-fishing/public-boat-launching-sites#salt)
+- US-10542 Camp Cronin State Recreation Area: ours 26 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 33 acres, no total words near it) · [dem.ri.gov](https://dem.ri.gov/natural-resources-bureau/fish-wildlife/freshwater-fishing/public-boat-launching-sites#salt)
 - US-10546 Eight Rod Farm Wildlife Management Area: ours 81 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-10548 Barber Pond State Recreation Area: ours 1 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 38 acres, no total words near it) · [dem.ri.gov](https://dem.ri.gov/natural-resources-bureau/fish-wildlife/freshwater-fishing/public-boat-launching-sites#salt)
+- US-2869 Blackstone River State Park: ours 344 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-2870 Brenton Point State Park: ours 161 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-5483 Lincoln Woods State Forest: ours 25 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-6986 Simmons Mill Wildlife Management Area: ours 11 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-7508 Pulaski State Park: ours 160 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 13 acre, no total words near it) · [riparks.ri.gov](https://riparks.ri.gov/parks/pulaski-state-park)
+- US-6979 Arcadia Management Area: ours 16,246 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-6986 Simmons Mill Wildlife Management Area: ours 34 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-7508 Pulaski State Park: ours 343 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 13 acre, no total words near it) · [riparks.ri.gov](https://riparks.ri.gov/parks/pulaski-state-park)
+- US-7718 East Matunuck State Beach: ours 51 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-7722 Scarborough North State Beach: ours 8 ac · cause: no total-looking sentence: numbers found were parts or other units
 
 **Handover / closure hints (a person decides; nothing applied):**
 
-- US-0513 Block Island National Wildlife Refuge · transfer: “le to appreciate the natural environment of the island. The refuge was established in 1973 with the transfer of 28 acres from the U.S. Coast Guard, and has grown to its current size of 134 acres today” · owner now: U.S · [www.fws.gov](https://www.fws.gov/refuge/block-island/about-us)
-- US-0516 Sachuest Point National Wildlife Refuge · managed by: “oint National Wildlife Refuge! This refuge is one of five National Wildlife Refuges in Rhode Island managed by the U.S. Fish and Wildlife Service. There are over 570 National Wildlife Refuges in the U” · owner now: U.S · [www.fws.gov](https://www.fws.gov/refuge/sachuest-point/about-us)
+- US-0516 Sachuest Point National Wildlife Refuge · managed by: “Rhode Island. About Sachuest Point National Wildlife Refuge is one of five refuges in Rhode Island managed by the U.S. Fish and Wildlife Service to protect coastal habitats. The refuge is specifically” · owner now: U.S · [www.fws.gov](https://www.fws.gov/refuge/sachuest-point)
+- US-2874 Fort Adams State Park · transfer: “tional panoramic view of both Newport Harbor and the East Passage of Narragansett Bay. Before being deeded to the State of Rhode Island in 1965, Fort Adams had served the U.S. Navy for ten years and t” · owner now: State of Rhode Island · [riparks.ri.gov](https://riparks.ri.gov/parks/fort-adams-state-park)
+- US-2874 Fort Adams State Park · transfer: “f the activity requires a Special Use Permit . History Of Fort Adams State Park (1965) Before being deeded to the State of Rhode Island in 1965, Fort Adams had served the U.S. Navy for ten years and t” · owner now: State of Rhode Island · [riparks.ri.gov](https://riparks.ri.gov/parks/fort-adams-state-park)
+- US-7721 Salty Brine State Beach · transfer: “currents . History of Salty Brine State Beach Galilee State Beach, now Salty Brine State Beach, was turned over to the state Division of Parks and Recreation by the Division of Harbors and Rivers in 1” · owner now: Division of Harbors and Rivers · [riparks.ri.gov](https://riparks.ri.gov/beaches/salty-brine-state-beach)
 
 ## US-VT
 
