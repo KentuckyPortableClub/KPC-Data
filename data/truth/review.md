@@ -24,7 +24,7 @@ Updated 2026-11-22. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 | US-SD | 120 | 118 | 11 | **1** | 50 | 48 | 6 | 4 | 0 | 5 |
 | US-PA | 494 | 489 | 95 | **18** | 328 | 38 | 9 | 7 | 0 | 8 |
 | US-NY | 851 | 830 | 54 | **24** | 53 | 563 | 15 | 17 | 0 | 8 |
-| US-NJ | 134 | 128 | 25 | **3** | 17 | 81 | 2 | 3 | 0 | 3 |
+| US-NJ | 134 | 130 | 35 | **4** | 5 | 83 | 2 | 2 | 0 | 2 |
 | US-CT | 157 | 150 | 60 | **12** | 34 | 39 | 4 | 3 | 0 | 3 |
 | US-RI | 61 | 58 | 1 | **3** | 9 | 41 | 2 | 2 | 0 | 13 |
 | US-MA | 421 | 410 | 73 | **169** | 37 | 122 | 9 | 3 | 0 | 7 |
@@ -1381,37 +1381,25 @@ Last · [www.nps.gov](https://www.nps.gov/pipe/learn/index.htm)
 
 ## US-NJ
 
-**Agree:** 25 parks: 0 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 25 agree (second agency).
+**Agree:** 35 parks: 0 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 35 agree (second agency).
 
 **Size more than 15% off (our outline vs the agency):**
 
-- US-12644 Berkshire Valley Wildlife Management Area: ours 1,464 ac vs agency 92 acres (= 92 ac; 1491% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.nj.gov](https://www.nj.gov/dep/fgw/artberkshirewma.htm) · “ld be produced. Over the course of 20 years, the plan called for 4 harvests of about 23 acres, for a total of 92 acres of early successional habitat being creat”
-- US-0453 Edwin B. Forsythe National Wildlife Refuge: ours 87,467 ac vs agency 48,000 acres (= 48,000 ac; 82% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [www.fws.gov](https://www.fws.gov/refuge/edwin-b-forsythe/about-us) · “orsythe name, in honor of the late conservationist Congressman from New Jersey. The refuge protects more than 48,000 acres of southern New Jersey coastal habita”
-- US-0680 Gateway National Recreation Area: ours 20,358 ac vs agency 27,000 acres (= 27,000 ac; 25% off) · cause: agency bigger: our outline may miss a tract · [www.nps.gov](https://www.nps.gov/gate/index.htm) · “Area Search Search This Site All NPS Exiting nps.gov Cancel Gateway National Recreation Area • NY,NJ Spanning 27,000 acres from Sandy Hook in New Jersey to Bree”
+- US-12644 Berkshire Valley Wildlife Management Area: ours 1,999 ac vs agency 92 acres (= 92 ac; 2073% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.nj.gov](https://www.nj.gov/dep/fgw/artberkshirewma.htm) · “ld be produced. Over the course of 20 years, the plan called for 4 harvests of about 23 acres, for a total of 92 acres of early successional habitat being creat”
+- US-8319 Palisades Interstate Park: ours 5,373 ac vs agency 2,500 acres (= 2,500 ac; 115% off) · cause: ? · [www.njpalisades.org](https://www.njpalisades.org/) · “Hallowe'en Hike Sunday November 1 | Alpine Picnic Area Welcome to the Palisades Interstate Park in New Jersey 2,500 acres of forested land within 12 miles of Hu”
+- US-0453 Edwin B. Forsythe National Wildlife Refuge: ours 87,467 ac vs agency 48,000 acres (= 48,000 ac; 82% off) · cause: our union: one of our pieces alone matches the agency (double count?) · [www.fws.gov](https://www.fws.gov/refuge/edwin_b_forsythe/) · “set Detailed hours 800 Great Creek Road Oceanville, NJ 08231-0072 Plan Your Visit The Refuge encompasses over 48,000 acres of New Jersey coastal habitat, and sp”
+- US-0680 Gateway National Recreation Area: ours 22,168 ac vs agency 27,000 acres (= 27,000 ac; 18% off) · cause: agency bigger: our outline may miss a tract · [www.nps.gov](https://www.nps.gov/gate/index.htm) · “Area Search Search This Site All NPS Exiting nps.gov Cancel Gateway National Recreation Area • NY,NJ Spanning 27,000 acres from Sandy Hook in New Jersey to Bree”
 
 **Unsure (no clean total found; the nearest number is only a guess):**
 
-- US-0456 Wallkill River National Wildlife Refuge: ours 4,846 ac · cause: whole park compared (POTA lists it in 2 states: {'US-NY': 194, 'US-NJ': 4652})
-- US-11990 Harrisonville Lake Wildlife Management Area: ours 176 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-11991 South Branch Wildlife Management Area: ours 1,484 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-12100 Amwell Lake Wildlife Management Area: ours 27 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-12102 Ken Lockwood Gorge Wildlife Management Area: ours 678 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-13061 Gum Tree Corner Wildlife Management Area: ours 946 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-11990 Harrisonville Lake Wildlife Management Area: ours 223 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-12100 Amwell Lake Wildlife Management Area: ours 15 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-3379 Delaware Water Gap National Recreation Area: ours 58,143 ac · cause: whole park compared (POTA lists it in 2 states: {'US-PA': 27069, 'US-NJ': 31074}) · [www.nps.gov](https://www.nps.gov/dewa/learn/management/compendium.htm)
-- US-8030 Absecon Wildlife Management Area: ours 2,835 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-8031 Bear Swamp Wildlife Management Area: ours 3,433 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-8032 Black River Wildlife Management Area: ours 2,554 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-8041 Hammonton Creek Wildlife Management Area: ours 4,737 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-8044 Manchester Wildlife Management Area: ours 2,465 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-8045 Millville Wildlife Management Area: ours 13,755 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-8050 Salem River Wildlife Management Area: ours 2,451 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-8051 Sparta Mountain Wildlife Management Area: ours 4,058 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-8050 Salem River Wildlife Management Area: ours 2,735 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-8052 Stafford Forge Wildlife Management Area: ours 16,622 ac · cause: no total-looking sentence: numbers found were parts or other units
-- US-8056 Turkey Swamp Wildlife Management Area: ours 3,168 ac · cause: no total-looking sentence: numbers found were parts or other units
 
 **Handover / closure hints (a person decides; nothing applied):**
 
-- US-0456 Wallkill River National Wildlife Refuge · managed by: “tate forests, the management priority at national wildlife refuges is "Wildlife First." These lands are managed by the U.S. Fish and Wildlife Service, which is the only agency of the U.S. Government w” · owner now: U.S · [www.fws.gov](https://www.fws.gov/refuge/wallkill-river/visit-us)
 - US-0746 Morristown National Historical Park · managed by: “mprovements, get links to detailed policies and regulations, and more. Bookstore The park bookstore is operated by Eastern National, a non-profit cooperating association which operates stores at over ” · owner now: Eastern National · [www.nps.gov](https://www.nps.gov/morr/learn/index.htm)
 - US-4556 Appalachian Trail National Scenic Trail · managed by: “ian Mountains. Conceived in 1921, built by private citizens, and completed in 1937, today the trail is managed by the National Park Service, US Forest Service, Appalachian Trail Conservancy, numerous ” · owner now: National Park Service · [www.nps.gov](https://www.nps.gov/appa/index.htm)
 
