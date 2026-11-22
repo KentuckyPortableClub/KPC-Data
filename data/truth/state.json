@@ -492,22 +492,23 @@
   "US-ME": {
    "checked": 148,
    "counts": {
-    "agree": 17,
-    "handover_hints": 10,
+    "agree": 21,
+    "handover_hints": 9,
     "no_page": 3,
-    "no_size": 92,
-    "off": 16,
+    "no_size": 94,
+    "not_read": 0,
+    "off": 12,
     "ours_unknown": 4,
     "parks": 148,
     "retired": 0,
-    "unsure": 7,
-    "weak": 6,
+    "unsure": 5,
+    "weak": 4,
     "with_outline": 141
    },
    "left": 0,
    "parks": 148,
-   "status": "queued",
-   "updated": "2026-11-09"
+   "status": "done",
+   "updated": "2026-11-22"
   },
   "US-MI": {
    "checked": 388,
@@ -1110,10 +1111,12 @@
  },
  "hosts": {
   "dep.nj.gov": 1795471462.1561859,
+  "maine.gov": 1795472930.2139065,
   "tnstateparks.com": 1795430345.0894592,
   "www.alapark.com": 1795435195.785201,
   "www.arcgis.com": 1795452861.2430022,
   "www.floridastateparks.org": 1795436850.291285,
+  "www.maine.gov": 1795472706.0380914,
   "www.michigan.gov": 1795441493.2175202,
   "www.nh.gov": 1795453077.0507972,
   "www.nwk.usace.army.mil": 1795439994.9606252,
@@ -1124,31 +1127,54 @@
  },
  "last": {
   "areas": [
-   "US-NH"
+   "US-ME"
   ],
   "manners": {
-   "browser": 5,
+   "browser": 25,
    "errors": 0,
-   "for_person_urls": [],
+   "for_person": 5,
+   "for_person_urls": [
+    [
+     "https://www.maine.gov/dacf/parksearch/PropertyGuides/PDF_GUIDE/shackfordheadguide.pdf",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://www.maine.gov/dacf/parks/discover_history_explore_nature/history/bible_point/history.shtml",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://maine.gov/ifw/fish-wildlife/wildlife/lands/wildlife-management-areas/kmz/RWaldoTyler_WeskeagMarsh_WMA.kmz",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://www.mindat.org/feature-4960774.html",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://maine.gov/ifw/fish-wildlife/wildlife/lands/wildlife-management-areas/kmz/BogBrookWMA.kmz",
+     "HTTP 403 twice"
+    ]
+   ],
    "host_rule": 0,
-   "requests": 16,
-   "rested": 61,
-   "robots": 3,
-   "strikes": 0
+   "requests": 71,
+   "rested": 17,
+   "retry403": 5,
+   "robots": 1,
+   "strikes": 10
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 5,
-   "no_size": 71,
-   "ours_unknown": 0,
-   "pages_read": 5,
-   "parks": 71,
+   "handover_hints": 9,
+   "no_size": 49,
+   "ours_unknown": 2,
+   "pages_read": 25,
+   "parks": 51,
    "retired": 0,
    "size_agree": 0,
    "size_off": 0,
    "size_unsure": 0,
-   "skipped_fresh": 135,
-   "with_outline": 71
+   "skipped_fresh": 97,
+   "with_outline": 51
   },
   "when": "2026-11-22"
  },
