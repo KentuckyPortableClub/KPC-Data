@@ -57,6 +57,13 @@ st, _ = gate_case('broken')
 check('gate: an unreadable bot list stops too, saying it cannot be read', all(v['status'].startswith('stopped:') and 'cannot be read' in v['status'] for v in st.values()))
 st, _ = gate_case({'rows': 'x'})
 check('gate: a bot list that is not a list of rows stops too', all(v['status'].startswith('stopped:') for v in st.values()))
+# 22 Nov review M4: a file that is {} (or keeps its list under another key) is a wrong shape, never "nothing wrong"
+for bad_shape in ({}, {'items': []}):
+    st, _ = gate_case(bad_shape)
+    check(f'gate: a bot list of the wrong shape {bad_shape} stops every area', all(v['status'].startswith('stopped:') and 'not a list of rows' in v['status'] for v in st.values()))
+with tempfile.TemporaryDirectory() as t:
+    w(pathlib.Path(t) / 'a.json', {}); r_, why_ = G.auto_rows(pathlib.Path(t) / 'a.json')
+    check('auto_rows on {} returns no rows and a reason (it used to return ([], ""))', r_ is None and 'not a list of rows' in why_)
 st, _ = gate_case({'rows': []})
 check('gate: an empty bot list is fine (the clean areas are ready)', st['US-ZZ']['status'].startswith('ready for 2-fers'))
 
