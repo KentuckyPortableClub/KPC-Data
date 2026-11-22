@@ -806,22 +806,23 @@
   "US-OK": {
    "checked": 205,
    "counts": {
-    "agree": 47,
-    "handover_hints": 10,
+    "agree": 69,
+    "handover_hints": 9,
     "no_page": 0,
-    "no_size": 23,
-    "off": 53,
-    "ours_unknown": 8,
+    "no_size": 25,
+    "not_read": 1,
+    "off": 34,
+    "ours_unknown": 13,
     "parks": 205,
     "retired": 0,
-    "unsure": 22,
-    "weak": 10,
-    "with_outline": 154
+    "unsure": 18,
+    "weak": 8,
+    "with_outline": 160
    },
    "left": 0,
    "parks": 205,
-   "status": "queued",
-   "updated": "2026-11-09"
+   "status": "done",
+   "updated": "2026-11-22"
   },
   "US-OR": {
    "checked": 440,
@@ -1135,49 +1136,38 @@
  },
  "last": {
   "areas": [
-   "US-LA"
+   "US-OK"
   ],
   "manners": {
+   "browser": 3,
    "errors": 0,
-   "for_person": 4,
+   "for_person": 1,
    "for_person_urls": [
     [
-     "https://www.wlf.louisiana.gov/page/queen-bess-island",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://www.wlf.louisiana.gov/page/state-wildlife-refuge",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://www.lastateparks.com/historic-sites/centenary-state-historic-site",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://www.lastateparks.com/historic-sites/fort-jesup-state-historic-site",
+     "http://www.swt.usace.army.mil/Portals/41/docs/lakes/texoma/TexWebR.pdf",
      "HTTP 403 twice"
     ]
    ],
-   "host_rule": 1,
-   "requests": 105,
-   "rested": 86,
-   "retry403": 4,
+   "host_rule": 4,
+   "requests": 335,
+   "rested": 0,
+   "retry403": 1,
    "robots": 0,
-   "strikes": 8
+   "strikes": 2
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 4,
-   "no_size": 97,
-   "ours_unknown": 1,
-   "pages_read": 72,
-   "parks": 123,
+   "handover_hints": 9,
+   "no_size": 26,
+   "ours_unknown": 13,
+   "pages_read": 293,
+   "parks": 205,
    "retired": 0,
-   "size_agree": 8,
-   "size_off": 3,
-   "size_unsure": 7,
+   "size_agree": 69,
+   "size_off": 34,
+   "size_unsure": 18,
    "skipped_fresh": 0,
-   "with_outline": 116
+   "with_outline": 160
   },
   "when": "2026-11-22"
  },
