@@ -208,6 +208,11 @@ class KeeperCopyGetter:
         return self.live.resting() if self.live is not None and hasattr(self.live, 'resting') else {}
 
 
+def request_url(url):
+    """The address as it is sent: spaces, control and non-ASCII characters escaped; an address already escaped is unchanged."""
+    return urllib.parse.quote(url or '', safe="%:/?#[]@!$&'()*+,;=~")
+
+
 class LiveGetter:
     def __init__(self, state):
         resting = state.get('hosts') if isinstance(state.get('hosts'), dict) else None
@@ -216,7 +221,9 @@ class LiveGetter:
 
     def get(self, url, rng=None, deadline=None, max_time=None):
         self.calls.append(url)
-        return self.M.get(url, rng=rng, deadline=deadline, max_time=max_time)
+        # 21 Nov: a link with a space or other unsafe character ('...query=38.2, -106.7') is sent escaped; unescaped,
+        # urllib raised InvalidURL and the park was skipped on every run
+        return self.M.get(request_url(url), rng=rng, deadline=deadline, max_time=max_time)
 
     def resting(self):
         return self.M.resting()
@@ -341,8 +348,11 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
         return deadline is not None and time.time() >= deadline
 
     def is_deadline(page):
+        # 21 Nov: 'err:deadline' comes back both when the run's time is up and when ONE download passed its own cap
+        # (get_max_seconds). Only the first ends the run; a download cut at its cap is one slow page (read as resting).
         st = (page or {}).get('status')
-        return st == 'err:deadline' or (isinstance(st, str) and str(st).startswith('err:deadline'))
+        hit = st == 'err:deadline' or (isinstance(st, str) and str(st).startswith('err:deadline'))
+        return hit and time_up()
 
     def progress(area, count, note=''):
         if quiet:

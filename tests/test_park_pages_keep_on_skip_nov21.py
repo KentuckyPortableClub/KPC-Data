@@ -3,7 +3,7 @@
 parser, via kpc_manners) decides before any page is asked; WDPA is never asked; the keeper's saved copy is read first.
 Offline: invented parks, fixtures and a local 127.0.0.1 server only. Prints PASS / FAIL and ends ALL PASS or SOME FAILED.
 """
-import http.server, json, os, pathlib, shutil, sys, tempfile, threading
+import http.server, json, os, pathlib, shutil, sys, tempfile, threading, time
 
 CACHE = tempfile.mkdtemp(prefix='kpc-pp-skip-')
 os.environ['KPC_MANNERS_CACHE'] = CACHE
@@ -158,12 +158,14 @@ with tempfile.TemporaryDirectory() as td:
         def get(self, url, rng=None, deadline=None, max_time=None):
             self.calls.append(url)
             if url.endswith('/b'):
+                if deadline is not None:   # 21 Nov: the run's own deadline is really reached (a download's cap alone no longer stops a run)
+                    time.sleep(max(0, deadline - time.time()))
                 return 'err:deadline', {}, b'', url
             return 200, {'content-type': 'text/html'}, TEXT.encode(), url
     out = t / 'out'
     state = {}
     facts, _r = PP.read_parks(areas, web, docs, truth, Cut(None), state, '2026-11-19', out_dir=str(out),
-                              state_path=str(out / 'state.json'), quiet=True)
+                              state_path=str(out / 'state.json'), quiet=True, deadline=time.time() + 0.5)
     saved = json.loads((out / 'facts' / 'US-ZZ.json').read_text())['parks']
     check('a park cut off mid-read is not saved; the park read before it is',
           'US-9001' in saved and 'US-9002' not in saved and state.get('stopped') == 'minutes')
