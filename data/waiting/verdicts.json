@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-22T12:46Z",
+ "checked": "2026-11-22T12:50Z",
  "switched_on": false,
  "results": [
   {
@@ -311,15 +311,6 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "ab9800dc9a9c6503",
-   "net": true
-  },
-  {
-   "path": "data/truth/US-IN.json",
-   "kind": "truth",
-   "why": [],
-   "notes": [],
-   "verdict": "PASS",
-   "fp": "66b6124965b6cf85",
    "net": true
   },
   {
@@ -1386,6 +1377,15 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "4d9e3b52ead4a881",
+   "net": true
+  },
+  {
+   "path": "data/truth/US-IN.json",
+   "kind": "truth",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "66b6124965b6cf85",
    "net": true
   }
  ]
