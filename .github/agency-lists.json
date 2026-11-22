@@ -1,5 +1,5 @@
 {
- "about": "Agency park lists for kpc_agency_lists.py (the keeper calls it). One official list per agency, giving its website id and its map id. Every agency stays OFF (enabled false) until a person has filled in and checked the official source_url, the licence or terms, and robots.txt. Never a WDPA source. Where the map record already carries the website address (NY DEC, CA State Parks, MT FWP, MN DNR forests, some NPS layers), no list is needed: those ties live in KPC-Links .github/link-id-ties.json instead. 21 Nov: every agency of the owner's research table is listed with what was found; each stays off with its reason. To switch one on, a person also sets format, web_id and map from fields confirmed on the list, licence_ok true (the licence text read and it allows our use) and robots starting \"allowed\" (robots.txt read for the list path).",
+ "about": "Agency park lists for kpc_agency_lists.py (the keeper calls it). One official list per agency, giving its website id and its map id. Every agency stays OFF (enabled false) until a person has filled in the official source_url, format, web_id and map, and robots.txt does not have an explicit Disallow for our path or user-agent. A licence or terms is recorded when known, but is not a gate for private matching-only use (the lists stay private, used only for matching). Never a WDPA source. Where the map record already carries the website address (NY DEC, CA State Parks, MT FWP, MN DNR forests, some NPS layers), no list is needed: those ties live in KPC-Links .github/link-id-ties.json instead. 21 Nov: every agency of the owner's research table is listed with what was found; each stays off with its reason. To switch one on, a person also sets format, web_id and map from fields confirmed on the list. robots.txt blocks only on an explicit Disallow, or a file that loaded but could not be parsed; a 403, 404 or empty robots.txt is no rules (OK). The keeper still reads robots.txt live before every fetch.",
  "fields": {
   "agency": "short name; the file is agency-crosswalk/<slug>.json",
   "link_kind": "the id kind the park's POTA link carries (as kpc_match_checks ID_KINDS names it)",
@@ -10,8 +10,8 @@
   "web_id": "{column, regex?}: the column with the website id (regex group 1 when the column holds a page address)",
   "map": "{layer, field, value}: the map layer and field the id is on, and the list column holding that id",
   "checked": "who checked source, licence and robots.txt, and when",
-  "licence_ok": "true only when the licence text was read and allows our use; the reader refuses an agency without it",
-  "robots": "what robots.txt says for the list path; the reader refuses an agency unless it starts \"allowed\" (the keeper still reads robots.txt live before every fetch)",
+  "licence_ok": "true only when the licence text was read and allows our use; recorded, not a gate for private matching-only use",
+  "robots": "what robots.txt says for the list path. The reader blocks only on an explicit Disallow for our path or user-agent, or a file that loaded but could not be parsed. A 403, 404 or empty robots.txt is no rules (OK). The keeper still reads robots.txt live before every fetch",
   "fields_seen": "research notes on the id fields (not read by the reader)",
   "status": "one line: why the agency is off, or that it is on"
  },
@@ -239,7 +239,7 @@
   {
    "enabled": false,
    "agency": "Massachusetts (MassWildlife / DCR / EEA)",
-   "status": "off: robots.txt not read as allowing the path; licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
    "link_kind": "",
    "source_url": "https://www.mass.gov/info-details/massgis-data-protected-and-recreational-openspace",
    "licence": "not confirmed (layer \"under development\"; attributes \"may be incomplete\")",
@@ -339,7 +339,7 @@
   {
    "enabled": false,
    "agency": "Manitoba Parks",
-   "status": "off: its host is saved copies only, never read live; robots.txt not read as allowing the path; licence not confirmed as allowing our use (research table, 21 Nov)",
+   "status": "off: its host is saved copies only, never read live; licence not confirmed as allowing our use (research table, 21 Nov)",
    "link_kind": "",
    "source_url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer",
    "licence": "not confirmed (earlier search named Open Government Licence - Manitoba; not re-confirmed)",
@@ -399,7 +399,7 @@
   {
    "enabled": false,
    "agency": "Colorado Parks and Wildlife",
-   "status": "off: its host is saved copies only, never read live; robots.txt not read as allowing the path; licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "status": "off: its host is saved copies only, never read live; licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
    "link_kind": "",
    "source_url": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/ArcGIS/rest/services/CPWAdminData/FeatureServer/5",
    "licence": "Distribution/use inquiries go to CPW GIS Unit Supervisor (layer licenseInfo)",
@@ -779,7 +779,7 @@
   {
    "enabled": false,
    "agency": "North Dakota Parks and Recreation Department",
-   "status": "off: its host is saved copies only, never read live; robots.txt not read as allowing the path; licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "status": "off: its host is saved copies only, never read live; licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
    "link_kind": "",
    "source_url": "https://services1.arcgis.com/GOcSXpzwBHyk2nog/ArcGIS/rest/services/NDGISHUB_State_Parks/FeatureServer",
    "licence": "",
@@ -839,7 +839,7 @@
   {
    "enabled": false,
    "agency": "Washington State Parks",
-   "status": "off: its host is saved copies only, never read live; robots.txt not read as allowing the path; licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "status": "off: its host is saved copies only, never read live; licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
    "link_kind": "",
    "source_url": "https://services5.arcgis.com/4LKAHwqnBooVDUlX/ArcGIS/rest/services/ParkBoundaries/FeatureServer",
    "licence": "",
@@ -859,7 +859,7 @@
   {
    "enabled": false,
    "agency": "Pennsylvania DCNR (State Parks and State Forests)",
-   "status": "off: robots.txt not read as allowing the path; licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
    "link_kind": "",
    "source_url": "https://conservationexplorer.dcnr.pa.gov/arcgis/rest/services/PA_Public/State_Parks/MapServer",
    "licence": "",
@@ -919,13 +919,13 @@
   {
    "enabled": false,
    "agency": "US Forest Service",
-   "status": "off: its host is saved copies only, never read live; robots.txt not read as allowing the path; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "status": "off: its host is saved copies only, never read live; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
    "link_kind": "US Forest Service rec area id",
    "source_url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0",
    "licence": "CC BY 4.0 (data.gov record: \"license\": \"https://creativecommons.org/licenses/by/4.0/\")",
    "licence_ok": true,
    "terms_url": "https://creativecommons.org/licenses/by/4.0/",
-   "robots": "unknown (robots.txt returned 403)",
+   "robots": "unreadable (403) = no rules",
    "format": "",
    "web_id": {},
    "map": {},
@@ -999,13 +999,13 @@
   {
    "enabled": false,
    "agency": "TX Parks and Wildlife",
-   "status": "off: its host is saved copies only, never read live; robots.txt not read as allowing the path; licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "status": "off: its host is saved copies only, never read live; licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
    "link_kind": "TX Parks and Wildlife WMA id",
    "source_url": "https://services1.arcgis.com/1mtXwieMId59thmg/ArcGIS/rest/services/WMA_Boundaries_4PublicDistribution/FeatureServer",
    "licence": "not confirmed. Disclaimer \"make no warranty as to its accuracy\"",
    "licence_ok": false,
    "terms_url": "",
-   "robots": "unknown (robots.txt returned 403)",
+   "robots": "unreadable (403) = no rules",
    "format": "",
    "web_id": {},
    "map": {},
@@ -1259,7 +1259,7 @@
   {
    "enabled": false,
    "agency": "North Carolina Wildlife Resources Commission",
-   "status": "off: robots.txt not read as allowing the path; licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
    "link_kind": "",
    "source_url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands-maps",
    "licence": "",
@@ -1319,7 +1319,7 @@
   {
    "enabled": false,
    "agency": "Oklahoma Department of Wildlife Conservation (WMAs)",
-   "status": "off: robots.txt not read as allowing the path; licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
    "link_kind": "",
    "source_url": "https://www.wildlifedepartment.com/hunting/wma",
    "licence": "",
@@ -1359,7 +1359,7 @@
   {
    "enabled": false,
    "agency": "Suwannee River Water Management District (SRWMD)",
-   "status": "off: robots.txt not read as allowing the path; licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
    "link_kind": "",
    "source_url": "https://mysuwanneeriver.com/154/GIS-Data",
    "licence": "",
@@ -1539,7 +1539,7 @@
   {
    "enabled": false,
    "agency": "St. Johns River Water Management District (SJRWMD)",
-   "status": "off: robots.txt not read as allowing the path; licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
    "link_kind": "",
    "source_url": "https://www.sjrwmd.com/?p=7111",
    "licence": "SJRWMD: information \"provided as is\" (FGDL metadata)",
@@ -1579,7 +1579,7 @@
   {
    "enabled": false,
    "agency": "Florida Forest Service / FDACS (State Forests)",
-   "status": "off: its host is saved copies only, never read live; robots.txt not read as allowing the path; licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "status": "off: its host is saved copies only, never read live; licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
    "link_kind": "",
    "source_url": "https://services1.arcgis.com/T0NPfOCJr9tmBN93/ArcGIS/rest/services/FloridaStateForests/FeatureServer",
    "licence": "FGDL: data provided \"as is\" (university host)",
@@ -1679,7 +1679,7 @@
   {
    "enabled": false,
    "agency": "Northwest Florida Water Management District (NWFWMD)",
-   "status": "off: robots.txt not read as allowing the path; licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
    "link_kind": "",
    "source_url": "https://nwfwater.com/Lands",
    "licence": "",
@@ -1699,7 +1699,7 @@
   {
    "enabled": false,
    "agency": "Wyoming Game and Fish (WHMAs)",
-   "status": "off: robots.txt not read as allowing the path; licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
    "link_kind": "",
    "source_url": "https://wgfd.wyo.gov/geospatial-data",
    "licence": "WGFD says files are not legal documents - not a licence",
@@ -1739,7 +1739,7 @@
   {
    "enabled": false,
    "agency": "Nevada Department of Wildlife (WMAs)",
-   "status": "off: its host is saved copies only, never read live; robots.txt not read as allowing the path; licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "status": "off: its host is saved copies only, never read live; licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
    "link_kind": "",
    "source_url": "https://services.arcgis.com/RyxlXSfFi87rAosq/ArcGIS/rest/services/Wildlife_Management_Area_Polygon_Features/FeatureServer",
    "licence": "",
@@ -1779,7 +1779,7 @@
   {
    "enabled": false,
    "agency": "USACE (recreation/reservoir boundaries)",
-   "status": "off: robots.txt not read as allowing the path; licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
    "link_kind": "",
    "source_url": "https://ags03.sec.usace.army.mil/server/rest/services/Hosted/RecreationSite_Status_gdb/FeatureServer",
    "licence": "Reservoir layer on HIFLD: public domain (Access: none)",
@@ -1839,7 +1839,7 @@
   {
    "enabled": false,
    "agency": "Maine Dept of Inland Fisheries and Wildlife (WMAs)",
-   "status": "off: robots.txt not read as allowing the path; licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
    "link_kind": "",
    "source_url": "https://www.maine.gov/geolib/catalog",
    "licence": "",
@@ -1879,7 +1879,7 @@
   {
    "enabled": false,
    "agency": "USFWS (National Wildlife Refuge System boundaries)",
-   "status": "off: its host is saved copies only, never read live; robots.txt not read as allowing the path; licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "status": "off: its host is saved copies only, never read live; licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
    "link_kind": "",
    "source_url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer",
    "licence": "No licence line read",
@@ -1899,7 +1899,7 @@
   {
    "enabled": false,
    "agency": "Tennessee Division of Forestry (State Forests)",
-   "status": "off: robots.txt not read as allowing the path; licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
    "link_kind": "",
    "source_url": "https://tnmap.tn.gov/arcgis/rest/services/ENVIRONMENTAL/PUBLIC_LANDS/MapServer",
    "licence": "",

@@ -9,10 +9,11 @@ The keys then treat a web id that maps through this file the same as a direct id
 KPC-Links kpc_match_checks reads it). It never decides a join itself.
 
 It is a tool the KEEPER calls (only the keeper fetches from agency servers). Every agency is OFF in .github/agency-lists.json
-until a person has filled in and checked its official source, licence or terms, and robots.txt; nothing is read for an agency
-that is off.
-  - robots.txt: read and parsed by our own parser (kpc_manners.parse_robots, never urllib.robotparser); a parse error, an
-    unreadable file or a Disallow = not fetched.
+until a person has filled in its official source, format, and id fields; nothing is read for an agency that is off. A licence or
+terms is recorded when known, but is not a gate for private matching-only use (the lists stay private, used only for matching).
+  - robots.txt: the config blocks only on an explicit Disallow for our path or user-agent, or a robots.txt that loaded but could
+    not be parsed. A 403, 404 or empty robots.txt is no rules, so the fetch may go ahead. The keeper still reads robots.txt live
+    before each fetch (kpc_manners.parse_robots, never urllib.robotparser internals).
   - the list itself: kpc_manners.Manners.get(url, deadline=..., max_time=...), one request per agency per run.
   - a read that is skipped (robots, unreadable, resting, a time limit, a bad answer) KEEPS the earlier file exactly as it was.
   - never WDPA: an agency whose source, layer or field is a WDPA one is refused, and a WDPA value is never written.
@@ -22,7 +23,7 @@ that is off.
 """
 import argparse, csv, datetime, io, json, os, re, sys, tempfile, time
 
-VERSION = 'kpc_agency_lists 2026-11-21b'
+VERSION = 'kpc_agency_lists 2026-11-21c'
 WDPA = re.compile(r'wdpa|protectedplanet', re.I)
 FORMATS = ('csv', 'json-rows', 'arcgis-json')
 
@@ -35,12 +36,31 @@ def slug(s):
     return re.sub(r'[^a-z0-9]+', '-', str(s or '').lower()).strip('-') or 'agency'
 
 
+def robots_problem(status):
+    """Why the recorded robots.txt reading blocks a fetch, or None (no block).
+
+    Blocks only on an explicit Disallow for our path or user-agent, or a robots.txt that loaded but
+    could not be parsed. A 403, 404 or empty robots.txt is no rules (OK). The keeper still reads
+    robots.txt live before each fetch.
+    """
+    s = str(status or '').strip()
+    low = s.lower()
+    if re.search(r'could not be parsed|could not parse|cannot be parsed|can not be parsed|parse error|unparseable|not a robots file', low):
+        if not re.search(r'\b(403|404)\b', low) and 'no rules' not in low and 'empty' not in low:
+            return 'robots.txt loaded but could not be parsed (robots)'
+    # "disallowed for AI crawlers" is a block. Mentions of other paths (" /api/ disallowed") are not.
+    if re.match(r'disallowed\b', low) or re.search(r'disallowed for (ai |our |the list|this path|the path|claude)', low):
+        return 'robots.txt has an explicit Disallow for our path or user-agent (robots)'
+    return None
+
+
 def problems(a):
-    """Why an agency entry may not be read ([] = it may). Off, or anything missing, or any WDPA trace = not read."""
+    """Why an agency entry may not be read ([] = it may). Off, or anything missing, or any WDPA trace = not read.
+    A licence or terms is not a gate for private matching-only use."""
     out = []
     if not a.get('enabled'):
         out.append('off in the config')
-    for k in ('agency', 'link_kind', 'source_url', 'licence', 'terms_url', 'format', 'web_id', 'map'):
+    for k in ('agency', 'link_kind', 'source_url', 'format', 'web_id', 'map'):
         if not a.get(k):
             out.append(f'no {k}')
     if a.get('format') and a['format'] not in FORMATS:
@@ -57,10 +77,9 @@ def problems(a):
         out.append('a WDPA source, layer or field: never used')
     if a.get('source_url') and not re.match(r'^https://', a['source_url']):
         out.append('the source is not an https address')
-    if a.get('licence_ok') is not True:
-        out.append('the licence is not checked as allowing our use (licence_ok)')
-    if not str(a.get('robots') or '').lower().startswith('allowed'):
-        out.append('robots.txt is not read as allowing the path (robots)')
+    rp = robots_problem(a.get('robots'))
+    if rp:
+        out.append(rp)
     if a.get('source_url'):
         try:
             sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -154,8 +173,8 @@ def run(config_path, out_dir, minutes=10, getter=None, today=None):
             report[name] = 'read, but no row gave both ids: the earlier file is kept as it was'
             continue
         doc = {'agency': name, 'link_kind': a['link_kind'], 'made_by': VERSION,
-               'source': {'url': a['source_url'], 'final_url': final or a['source_url'], 'licence': a['licence'],
-                          'terms_url': a['terms_url'], 'date': today},
+               'source': {'url': a['source_url'], 'final_url': final or a['source_url'], 'licence': a.get('licence') or '',
+                          'terms_url': a.get('terms_url') or '', 'date': today},
                'rows': xw, 'left_out_not_one_to_one': clashes}
         write_file(path, doc)
         report[name] = f'written: {len(xw)} web ids' + (f' ({clashes} left out: two map ids)' if clashes else '')
@@ -210,12 +229,17 @@ def selftest():
         check('an answer that does not parse keeps the earlier file', open(os.path.join(out, 'invented-parks.json'), 'rb').read() == before)
         rep, g = go([dict(base, enabled=False)], {})
         check('an agency that is off is not read at all', not g.calls and 'off in the config' in rep['Invented Parks'])
-        rep, g = go([dict(base, licence='')], {})
-        check('no licence: not read', not g.calls and 'no licence' in rep['Invented Parks'])
-        rep, g = go([dict(base, licence_ok=False)], {})
-        check('licence not checked as allowing our use: not read', not g.calls and 'licence_ok' in rep['Invented Parks'])
+        ans = {base['source_url']: (200, {}, csv_body, base['source_url'])}
+        rep, g = go([dict(base, licence='', licence_ok=False)], ans)
+        check('no licence / licence_ok false: still read (licence is not a gate for private matching)', g.calls and 'written' in rep['Invented Parks'])
+        for robots in ('unreadable (403) = no rules', 'unknown (robots.txt returned 403)',
+                       'not checked (404 = no rules)', 'not checked (robots.txt is empty)', ''):
+            rep, g = go([dict(base, robots=robots)], ans)
+            check(f'robots {robots or "(blank)"}: still read (403/404/empty = no rules)', g.calls and 'written' in rep['Invented Parks'])
         rep, g = go([dict(base, robots='disallowed for AI crawlers')], {})
-        check('robots.txt not read as allowing the path: not read', not g.calls and 'robots' in rep['Invented Parks'])
+        check('robots.txt has an explicit Disallow: not read', not g.calls and 'Disallow' in rep['Invented Parks'])
+        rep, g = go([dict(base, robots='loaded but could not be parsed')], {})
+        check('robots.txt loaded but could not be parsed: not read', not g.calls and 'could not be parsed' in rep['Invented Parks'])
         for u in ('https://services5.arcgis.com/x/ArcGIS/rest/services/L/FeatureServer/0/query', 'https://apps.fs.usda.gov/arcx/rest/services/x/MapServer/0/query',
                   'https://ncnhde.natureserve.org/list.csv'):
             rep, g = go([dict(base, source_url=u)], {})
@@ -233,7 +257,7 @@ def selftest():
         go([arc], {base['source_url']: (200, {}, js, base['source_url'])})
         check('an ArcGIS answer is read the same way', json.load(open(os.path.join(out, 'invented-arc.json')))['rows'][0]['map_id'] == 'A7')
     cfg = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'agency-lists.json'), encoding='utf-8'))
-    check('the shipped config has every agency OFF until a person checks its source, licence and robots.txt',
+    check('the shipped config has every agency OFF until a person switches one on',
           all(not a.get('enabled') for a in cfg.get('agencies') or []))
     say('')
     say('SELF-TEST PASSED' if not bad else f'SELF-TEST FAILED: {len(bad)}: ' + '; '.join(bad))

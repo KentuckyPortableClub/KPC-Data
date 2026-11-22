@@ -25,8 +25,9 @@ check('the agency lists self-test passes (skips keep the earlier file, never WDP
 
 cfg = json.load(open(ROOT / '.github/agency-lists.json', encoding='utf-8'))
 check('no agency is switched on in the shipped config', all(not a.get('enabled') for a in cfg['agencies']))
-check('an agency that is on but has no licence is refused', 'no licence' in ' '.join(AL.problems(
+check('an agency that is on but has no licence may still be read (licence is not a gate)', 'no licence' not in ' '.join(AL.problems(
     {'enabled': True, 'agency': 'X', 'link_kind': 'k', 'source_url': 'https://x.example/l.csv', 'licence': '', 'terms_url': 'https://x.example/t',
+     'robots': 'unreadable (403) = no rules',
      'format': 'csv', 'web_id': {'column': 'a'}, 'map': {'layer': 'l', 'field': 'f', 'value': 'v'}})))
 
 with tempfile.TemporaryDirectory() as t:

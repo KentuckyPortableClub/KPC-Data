@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Agency park lists from the owner's research table, 21 Nov 2026 (job D).
-Every agency of the table is in the config, each OFF with a one-line reason; the reader refuses an agency whose licence is not
-checked as allowing our use, whose robots.txt reading is not 'allowed', or whose host is saved-copies-only or never-contact.
+Every agency of the table is in the config, each OFF with a one-line reason; a licence is not a gate for private matching-only
+use; robots.txt blocks only on an explicit Disallow or a file that loaded but could not be parsed (a 403, 404 or empty file is
+no rules); a saved-copies-only or never-contact host is still refused.
 Offline, invented hosts. Prints PASS / FAIL lines and ends ALL PASS or SOME FAILED.
 """
 import json, pathlib, subprocess, sys
@@ -31,7 +32,7 @@ for k in ('Parks Canada', 'OR State Parks', "Parks Canada (Canada's Historic Pla
           'US Forest Service', 'TX Parks and Wildlife', 'SC DNR', 'ME Parks', 'Sepaq'):
     check(f'the earlier entry "{k}" is kept with its link kind', any(a['agency'] == k and (a['link_kind'] or k == 'Parks Canada') for a in ags))
 sk = [a for a in ags if a['agency'].startswith('Saskatchewan')]
-check('Saskatchewan stays off: robots.txt disallows AI crawlers', sk and 'AI crawlers' in sk[0]['status'] and not sk[0]['robots'].startswith('allowed'))
+check('Saskatchewan stays off; AI-only robots rules are recorded, not applied', sk and not sk[0].get('enabled') and 'not applied' in sk[0]['robots'] and 'AI' in sk[0]['robots'] and not sk[0]['robots'].startswith('allowed'))
 check('every source is an https address or empty', all(not a['source_url'] or a['source_url'].startswith('https://') for a in ags))
 check('licence_ok is true only where the licence text was read (4 agencies)', sum(1 for a in ags if a.get('licence_ok') is True) == 4)
 check('an agency with no official list has no source', all(a['source_url'] == '' for a in ags if 'no official list' in a['status']))
@@ -44,10 +45,10 @@ good = {'enabled': True, 'agency': 'Invented', 'link_kind': 'ZZ page number', 's
         'licence': 'public domain (invented)', 'licence_ok': True, 'robots': 'allowed (read 2026-11-21)',
         'terms_url': 'https://lists.invented.example/t', 'format': 'csv', 'web_id': {'column': 'a'}, 'map': {'layer': 'l', 'field': 'f', 'value': 'v'}}
 check('a fully checked invented agency may be read', AL.problems(good) == [])
-check('licence not checked as allowing our use: refused', any('licence_ok' in w for w in AL.problems(dict(good, licence_ok=False))))
-check('no licence_ok at all: refused', any('licence_ok' in w for w in AL.problems({k: v for k, v in good.items() if k != 'licence_ok'})))
-check('robots.txt not read as allowing: refused', any('robots' in w for w in AL.problems(dict(good, robots='unknown (403)'))))
-check('robots.txt disallows AI crawlers: refused', any('robots' in w for w in AL.problems(dict(good, robots='disallowed for AI crawlers'))))
+check('licence not checked as allowing our use: still allowed (licence is not a gate)', not any('licence' in w.lower() for w in AL.problems(dict(good, licence_ok=False))))
+check('no licence_ok at all: still allowed (licence is not a gate)', not any('licence' in w.lower() for w in AL.problems({k: v for k, v in good.items() if k != 'licence_ok'})))
+check('robots.txt 403 unreadable = no rules: still allowed', AL.problems(dict(good, robots='unreadable (403) = no rules')) == [])
+check('robots.txt disallows AI crawlers: refused', any('Disallow' in w or 'robots' in w for w in AL.problems(dict(good, robots='disallowed for AI crawlers'))))
 for u in ('https://services5.arcgis.com/x/ArcGIS/rest/services/L/FeatureServer/0', 'https://services.arcgis.com/x/arcgis/rest/services/L/FeatureServer/0',
           'https://apps.fs.usda.gov/arcx/rest/services/EDW/x/MapServer/0', 'https://ncnhde.natureserve.org/l.csv'):
     check(f'host {u.split("/")[2]} is never read', AL.problems(dict(good, source_url=u)) != [])
