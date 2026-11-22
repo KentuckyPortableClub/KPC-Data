@@ -18,7 +18,7 @@ Nothing is downloaded and no input file is changed. Standard library only.
 """
 import argparse, collections, csv, datetime, glob, json, os, re, sys, tempfile
 
-VERSION = 'kpc_park_facts 3 (2026-11-21)'
+VERSION = 'kpc_park_facts 4 (2026-11-22)'
 REF = re.compile(r'^[A-Z0-9]{1,4}-\d{4,5}$')
 AREA = re.compile(r'^(US|CA)-[A-Z]{2}$')
 
@@ -214,6 +214,13 @@ def read_pages(folder):
                 'manager': man.get('agency'),
                 'status_words': {k: v for k, v in st.items() if v},
                 'questions': sorted({q.get('code') for q in p.get('questions') or [] if q.get('code')}),
+                # 22 Nov 2026 (owner 3:55 PM, plan P3-P5): what the keys may weigh for matching. Only the reader's SURE parent unit
+                # (inside_of), never maybe_inside; tract names as written; map links with their kind (never opened here)
+                'parts': [str(x)[:80] for x in _first(p.get('parts'), 12) if str(x).strip()],
+                'inside_of': [{'unit': str(u.get('unit') or '')[:100], 'kind': str(u.get('kind') or '')[:40], 'pota_ref': u.get('pota_ref')}
+                              for u in _first(p.get('inside_of'), 3) if isinstance(u, dict) and str(u.get('unit') or '').strip()],
+                'maps': [{'url': str(m.get('url') or '')[:300], 'kind': m.get('kind'), 'names_park': bool(m.get('names_park'))}
+                         for m in _first(p.get('maps'), 6) if isinstance(m, dict) and str(m.get('url') or '').startswith('https://')],
             }
     return out, areas
 
@@ -421,7 +428,10 @@ def selftest():
             'location': {'coords': [{'lat': 37.5, 'lon': -85.1, 'km_from_pin': 0.1, 'from': 'map-link q'}],
                          'addresses': [{'text': '1 Lake Rd', 'role': 'park'}]},
             'manager': {'agency': 'Invented Parks'}, 'status_words': {'closed': None},
-            'questions': [{'code': 'NAME_DIFFERS'}, {'code': 'NAME_DIFFERS'}]},
+            'questions': [{'code': 'NAME_DIFFERS'}, {'code': 'NAME_DIFFERS'}],
+            'parts': ['North Unit', 'South Unit', ''], 'inside_of': [{'unit': 'Invented State Forest', 'kind': 'State Forest', 'quote': 'q'}],
+            'maybe_inside': [{'unit': 'Not Sure Forest'}],
+            'maps': [{'url': 'https://maps.example.gov/arcgis/x', 'kind': 'web-map', 'names_park': True}, {'url': 'http://plain.example/x.pdf', 'kind': 'pdf'}]},
             'US-9010': {'pota': {'name': 'Invented Kentucky Park', 'type': 'State Park', 'pin': [37.0, -86.0]},
                         'page': {'read': '2026-11-20'}, 'own_page': {'is': 'own'}}}},
                   open(os.path.join(t, 'pages', 'US-ZZ.json'), 'w'))
@@ -454,6 +464,9 @@ def selftest():
               (1180.0, False))
         check('page questions listed once each', P['US-9001']['page']['questions'], ['NAME_DIFFERS'])
         check('empty status words dropped', P['US-9001']['page']['status_words'], {})
+        check('tracts, the sure parent unit and https map links are kept; maybe_inside is not (22 Nov)',
+              (P['US-9001']['page']['parts'], [u['unit'] for u in P['US-9001']['page']['inside_of']], [m['url'] for m in P['US-9001']['page']['maps']]),
+              (['North Unit', 'South Unit'], ['Invented State Forest'], ['https://maps.example.gov/arcgis/x']))
         check('link id kept and marked usable', (P['US-9002']['link']['id_value'], P['US-9002']['link']['usable']), ('77', True))
         check('a park with no facts still has its row', P['US-9003']['facts_from'], ['link'])
         check('a size for a park not on the list is kept and marked', (P['US-9009'].get('not_on_list'), P['US-9009']['facts_from']),
