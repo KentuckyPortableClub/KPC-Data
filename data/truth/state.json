@@ -307,22 +307,23 @@
   "US-IA": {
    "checked": 181,
    "counts": {
-    "agree": 20,
-    "handover_hints": 7,
+    "agree": 19,
+    "handover_hints": 3,
     "no_page": 0,
     "no_size": 128,
+    "not_read": 0,
     "off": 13,
-    "ours_unknown": 0,
+    "ours_unknown": 3,
     "parks": 181,
     "retired": 0,
     "unsure": 16,
-    "weak": 2,
-    "with_outline": 177
+    "weak": 4,
+    "with_outline": 179
    },
    "left": 0,
    "parks": 181,
-   "status": "queued",
-   "updated": "2026-11-08"
+   "status": "done",
+   "updated": "2026-11-22"
   },
   "US-ID": {
    "checked": 362,
@@ -1112,30 +1113,47 @@
  },
  "last": {
   "areas": [
-   "US-MN"
+   "US-IA"
   ],
   "manners": {
+   "browser": 53,
    "errors": 0,
-   "for_person_urls": [],
-   "host_rule": 3,
-   "requests": 293,
+   "for_person": 1,
+   "for_person_urls": [
+    [
+     "https://iowaculture.gov/robots.txt",
+     "robots.txt answered with a web page, not a robots file (the answer came from another site (https://opportunityiowa.gov/community/arts-culture): not read as \"no rules\"): not read as \"no rules\": a person downloads what is needed from iowaculture.gov"
+    ],
+    [
+     "https://beacon.schneidercorp.com/Application.aspx?AppID=86&LayerID=841&PageTypeID=1&PageID=1483&KeyValue=0504201001",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://www.cgcounty.org/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from www.cgcounty.org this run"
+    ]
+   ],
+   "host_rule": 0,
+   "requests": 379,
    "rested": 0,
-   "robots": 118,
-   "strikes": 0
+   "retry403": 1,
+   "robots": 2,
+   "robots_unreadable": 1,
+   "strikes": 2
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 5,
-   "no_size": 263,
-   "ours_unknown": 20,
-   "pages_read": 237,
-   "parks": 323,
+   "handover_hints": 3,
+   "no_size": 128,
+   "ours_unknown": 3,
+   "pages_read": 277,
+   "parks": 181,
    "retired": 0,
-   "size_agree": 6,
-   "size_off": 2,
-   "size_unsure": 21,
+   "size_agree": 19,
+   "size_off": 13,
+   "size_unsure": 16,
    "skipped_fresh": 0,
-   "with_outline": 312
+   "with_outline": 179
   },
   "when": "2026-11-22"
  },
