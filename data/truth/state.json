@@ -977,23 +977,23 @@
   "US-VA": {
    "checked": 184,
    "counts": {
-    "agree": 50,
-    "handover_hints": 17,
+    "agree": 70,
+    "handover_hints": 15,
     "no_page": 0,
     "no_size": 27,
     "not_read": 0,
-    "off": 25,
+    "off": 12,
     "ours_unknown": 21,
     "parks": 184,
     "retired": 0,
-    "unsure": 54,
+    "unsure": 47,
     "weak": 20,
     "with_outline": 177
    },
    "left": 0,
    "parks": 184,
-   "status": "queued",
-   "updated": "2026-11-15"
+   "status": "done",
+   "updated": "2026-11-22"
   },
   "US-VT": {
    "checked": 109,
@@ -1103,57 +1103,44 @@
  },
  "last": {
   "areas": [
-   "US-NC"
+   "US-VA"
   ],
   "manners": {
-   "browser": 3,
-   "dropped_queued": 8,
+   "browser": 10,
    "errors": 0,
    "for_person_urls": [
     [
-     "https://www.triangleland.org/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from www.triangleland.org this run"
-    ],
-    [
-     "https://www.ncforestservice.gov/robots.txt",
-     "robots.txt answered with a web page, not a robots file (the answer came from another site (https://www.ncagr.gov/divisions/nc-forest-service): not read as \"no rules\"): not read as \"no rules\": a person downloads what is needed from www.ncforestservice.gov"
-    ],
-    [
-     "https://www.ncesf.org/robots.txt",
-     "robots.txt answered with a web page, not a robots file (the answer came from another site (https://www.ncagr.gov/divisions/nc-forest-service/state-forests/educational-state-forests): not read as \"no rules\"): not read as \"no rules\": a person downloads what is needed from www.ncesf.org"
-    ],
-    [
-     "https://www.dupontstaterecreationalforest.com/robots.txt",
-     "robots.txt answered with a web page, not a robots file (the answer came from another site (https://www.ncagr.gov/divisions/nc-forest-service/state-forests/dupont-state-recreational-forest): not read as \"no rules\"): not read as \"no rules\": a person downloads what is needed from www.dupontstaterecreationalforest.com"
+     "https://www.virginiastateparks.gov/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from www.virginiastateparks.gov this run"
     ]
    ],
-   "host_rule": 10,
-   "requests": 483,
+   "host_rule": 30,
+   "requests": 548,
    "rested": 0,
-   "robots": 4,
+   "robots": 38,
    "robots_unreadable": 1,
    "strikes": 0
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 20,
-   "no_size": 149,
-   "ours_unknown": 5,
-   "pages_read": 312,
-   "parks": 253,
+   "handover_hints": 15,
+   "no_size": 27,
+   "ours_unknown": 21,
+   "pages_read": 381,
+   "parks": 184,
    "retired": 0,
-   "size_agree": 43,
-   "size_off": 7,
-   "size_unsure": 23,
+   "size_agree": 70,
+   "size_off": 12,
+   "size_unsure": 47,
    "skipped_fresh": 0,
-   "with_outline": 227
+   "with_outline": 177
   },
   "when": "2026-11-22"
  },
  "news": {
   "https://dwr.virginia.gov/news/": {
    "links": 0,
-   "read": "2026-11-15",
+   "read": "2026-11-22",
    "status": "HTTP 404"
   },
   "https://fw.ky.gov/News/Pages/All-News.aspx": {
@@ -1208,7 +1195,7 @@
   },
   "https://www.dcr.virginia.gov/news": {
    "links": 0,
-   "read": "2026-11-15",
+   "read": "2026-11-22",
    "status": "HTTP 404"
   },
   "https://www.floridastateparks.org/news": {
