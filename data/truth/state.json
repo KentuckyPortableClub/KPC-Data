@@ -165,22 +165,23 @@
   "US-CO": {
    "checked": 276,
    "counts": {
-    "agree": 46,
-    "handover_hints": 6,
+    "agree": 59,
+    "handover_hints": 5,
     "no_page": 1,
-    "no_size": 145,
-    "off": 17,
+    "no_size": 143,
+    "not_read": 0,
+    "off": 11,
     "ours_unknown": 15,
     "parks": 276,
     "retired": 0,
-    "unsure": 42,
+    "unsure": 37,
     "weak": 10,
     "with_outline": 266
    },
    "left": 0,
    "parks": 276,
-   "status": "queued",
-   "updated": "2026-11-09"
+   "status": "done",
+   "updated": "2026-11-22"
   },
   "US-CT": {
    "checked": 157,
@@ -1118,6 +1119,7 @@
   }
  },
  "hosts": {
+  "cpw.state.co.us": 1795460696.3696904,
   "destateparks.com": 1795455317.1322887,
   "ksoutdoors.com": 1795459121.699887,
   "ksoutdoors.gov": 1795459152.4507322,
@@ -1142,46 +1144,38 @@
  },
  "last": {
   "areas": [
-   "US-NE"
+   "US-CO"
   ],
   "manners": {
-   "browser": 6,
+   "browser": 5,
    "errors": 0,
-   "for_person": 3,
+   "for_person": 1,
    "for_person_urls": [
     [
-     "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://outdoornebraska.gov/conservation/land-management/wildlife-management-areas/",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://visitnebraska.com/papillion/walnut-creek-lake-and-recreation-area",
+     "https://www.colorado.com/articles/national-park-profile-great-sand-dunes-national-park-preserve",
      "HTTP 403 twice"
     ]
    ],
-   "host_rule": 3,
-   "requests": 140,
-   "rested": 120,
-   "retry403": 3,
-   "robots": 0,
-   "strikes": 6
+   "host_rule": 14,
+   "requests": 248,
+   "rested": 117,
+   "retry403": 1,
+   "robots": 1,
+   "strikes": 5
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 3,
-   "no_size": 169,
-   "ours_unknown": 7,
-   "pages_read": 58,
-   "parks": 201,
+   "handover_hints": 5,
+   "no_size": 144,
+   "ours_unknown": 15,
+   "pages_read": 175,
+   "parks": 276,
    "retired": 0,
-   "size_agree": 4,
-   "size_off": 4,
-   "size_unsure": 3,
+   "size_agree": 59,
+   "size_off": 11,
+   "size_unsure": 37,
    "skipped_fresh": 0,
-   "with_outline": 187
+   "with_outline": 266
   },
   "when": "2026-11-22"
  },
