@@ -612,23 +612,23 @@
   "US-NC": {
    "checked": 253,
    "counts": {
-    "agree": 31,
+    "agree": 43,
     "handover_hints": 20,
     "no_page": 1,
-    "no_size": 146,
+    "no_size": 147,
     "not_read": 0,
-    "off": 15,
+    "off": 7,
     "ours_unknown": 5,
     "parks": 253,
     "retired": 0,
-    "unsure": 27,
+    "unsure": 23,
     "weak": 8,
-    "with_outline": 225
+    "with_outline": 227
    },
    "left": 0,
    "parks": 253,
-   "status": "queued",
-   "updated": "2026-11-15"
+   "status": "done",
+   "updated": "2026-11-22"
   },
   "US-ND": {
    "checked": 155,
@@ -1103,45 +1103,50 @@
  },
  "last": {
   "areas": [
-   "US-TN"
+   "US-NC"
   ],
   "manners": {
-   "errors": 2,
-   "for_person": 3,
+   "browser": 3,
+   "dropped_queued": 8,
+   "errors": 0,
    "for_person_urls": [
     [
-     "https://tnstateparks.com/parks/info/middle-fork-bottoms",
-     "HTTP 403 twice"
+     "https://www.triangleland.org/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from www.triangleland.org this run"
     ],
     [
-     "https://tnstateparks.com/parks/north-chickamauga",
-     "HTTP 403 twice"
+     "https://www.ncforestservice.gov/robots.txt",
+     "robots.txt answered with a web page, not a robots file (the answer came from another site (https://www.ncagr.gov/divisions/nc-forest-service): not read as \"no rules\"): not read as \"no rules\": a person downloads what is needed from www.ncforestservice.gov"
     ],
     [
-     "https://www.murfreesborotn.gov/187/Murfree-Spring-Wetlands",
-     "HTTP 403 twice"
+     "https://www.ncesf.org/robots.txt",
+     "robots.txt answered with a web page, not a robots file (the answer came from another site (https://www.ncagr.gov/divisions/nc-forest-service/state-forests/educational-state-forests): not read as \"no rules\"): not read as \"no rules\": a person downloads what is needed from www.ncesf.org"
+    ],
+    [
+     "https://www.dupontstaterecreationalforest.com/robots.txt",
+     "robots.txt answered with a web page, not a robots file (the answer came from another site (https://www.ncagr.gov/divisions/nc-forest-service/state-forests/dupont-state-recreational-forest): not read as \"no rules\"): not read as \"no rules\": a person downloads what is needed from www.dupontstaterecreationalforest.com"
     ]
    ],
-   "host_rule": 0,
-   "requests": 14,
-   "rested": 390,
-   "retry403": 4,
-   "robots": 0,
-   "strikes": 9
+   "host_rule": 10,
+   "requests": 483,
+   "rested": 0,
+   "robots": 4,
+   "robots_unreadable": 1,
+   "strikes": 0
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 4,
-   "no_size": 226,
-   "ours_unknown": 2,
-   "pages_read": 2,
-   "parks": 230,
+   "handover_hints": 20,
+   "no_size": 149,
+   "ours_unknown": 5,
+   "pages_read": 312,
+   "parks": 253,
    "retired": 0,
-   "size_agree": 0,
-   "size_off": 0,
-   "size_unsure": 1,
-   "skipped_fresh": 47,
-   "with_outline": 229
+   "size_agree": 43,
+   "size_off": 7,
+   "size_unsure": 23,
+   "skipped_fresh": 0,
+   "with_outline": 227
   },
   "when": "2026-11-22"
  },
@@ -1218,7 +1223,7 @@
   },
   "https://www.ncparks.gov/news": {
    "links": 139,
-   "read": "2026-11-15",
+   "read": "2026-11-22",
    "status": "ok"
   },
   "https://www.ontarioparks.ca/parksblog/": {
