@@ -2275,7 +2275,61 @@ def write_outputs(out, results, parks, meta, answer=None):
 # ----------------------------------------------------------------------------------------------------------
 # Main run
 # ----------------------------------------------------------------------------------------------------------
-def build_queue(cfgs, hand, areas_filter):
+class PrivateFileError(ValueError):
+    pass
+
+
+def private_park_rows(path):
+    """21 Nov: (ref, area) rows from a PRIVATE park list: a CSV with a 'park' (or 'ref') column and maybe 'area', or a JSON list.
+    The file names parks, so it must live OUTSIDE any git working tree; a file inside one is refused. '' -> []."""
+    if not path:
+        return []
+    p = os.path.realpath(path)
+    d = os.path.dirname(p)
+    while True:
+        if os.path.exists(os.path.join(d, '.git')):
+            raise PrivateFileError(f'{os.path.basename(p)}: a private park list must not live inside a git repository; keep it on the PC')
+        up = os.path.dirname(d)
+        if up == d:
+            break
+        d = up
+    with open(p, encoding='utf-8-sig') as f:
+        text = f.read()
+    if text.lstrip().startswith(('[', '{')):
+        doc = json.loads(text)
+        doc = doc.get('parks', []) if isinstance(doc, dict) else doc
+        return [((x.get('ref') or x.get('park')) if isinstance(x, dict) else x, (x.get('area') if isinstance(x, dict) else '') or '')
+                for x in doc if x]
+    rd = csv.DictReader(io.StringIO(text))
+    cols = {str(c).strip().lower(): c for c in (rd.fieldnames or [])}
+    col = cols.get('park') or cols.get('ref')
+    if not col:
+        raise PrivateFileError(f'{os.path.basename(p)}: no "park" or "ref" column')
+    out, seen = [], set()
+    for r in rd:
+        ref = str(r.get(col) or '').strip()
+        if ref and ref not in seen:
+            seen.add(ref)
+            out.append((ref, str(r.get(cols.get('area', '')) or '').strip() if 'area' in cols else ''))
+    return out
+
+
+def area_weights(parks, priority_rows, confirmed_rows):
+    """21 Nov: per area, (likely-mismatch parks, parks NOT confirmed by their agency id). Counts only."""
+    pri, conf, tot = {}, {}, {}
+    for ref, p in parks.p.items():
+        tot[p['area']] = tot.get(p['area'], 0) + 1
+    for rows, into in ((priority_rows, pri), (confirmed_rows, conf)):
+        for ref, ar in rows or []:
+            ar = norm_area(ar) if ar else ((parks.p.get(norm_ref(ref) or ref) or {}).get('area'))
+            if ar:
+                into[ar] = into.get(ar, 0) + 1
+    return {a: (pri.get(a, 0), max(0, tot.get(a, 0) - conf.get(a, 0))) for a in set(tot) | set(pri)}
+
+
+def build_queue(cfgs, hand, areas_filter, weights=None, explicit=False):
+    """weights (21 Nov): {area: (likely-mismatch parks, parks not confirmed by id)}. Within each region the lists of the areas with
+    the most likely mismatches come first, then the most unconfirmed parks; an --areas list given by a person keeps its order."""
     items = [{'kind': 'list', 'key': item_key('list', c['agency'], c['area'], c.get('url')), 'area': c['area'],
               'cfg': c, 'agency': c['agency']} for c in cfgs]
     groups = {}
@@ -2294,9 +2348,12 @@ def build_queue(cfgs, hand, areas_filter):
         return a in areas_filter
     items = [it for it in items if in_areas(it['area'])]
 
+    w = weights or {}
+
     def order(it):
         a = it['area'] or ''
-        return (rank(a) if a else (4, 0), 0 if a.startswith('US') else 1 if a.startswith('CA') else 2,
+        pri, unv = (0, 0) if explicit else w.get(a, (0, 0))
+        return (rank(a) if a else (4, 0), 0 if a.startswith('US') else 1 if a.startswith('CA') else 2, -pri, -unv,
                 areas_filter.index(a) if a in areas_filter else 9999, a, 0 if it['kind'] == 'list' else 1,
                 it['agency'])
     items.sort(key=order)
@@ -2340,7 +2397,17 @@ def run(args, transport=None, sleep=time.sleep, gap=2.0):
         areas = [a for a in all_areas if a.startswith('US-') and not a.endswith('*')] + \
                 [a for a in all_areas if a.startswith('CA-') and not a.endswith('*')]
         areas_label = 'all US, then all Canada'
-    queue = build_queue(cfgs, hand, areas)
+    try:
+        pri_rows = private_park_rows(getattr(args, 'priority_file', None) or '')
+        conf_rows = private_park_rows(getattr(args, 'confirmed_file', None) or '')
+    except (PrivateFileError, OSError, ValueError) as e:
+        print(f'error: {e}', file=sys.stderr)
+        return EXIT_BAD_INPUT
+    weights = area_weights(parks, pri_rows, conf_rows) if (pri_rows or conf_rows) else None
+    if weights and not args.quiet:
+        print(f'work order: {len(pri_rows)} likely-mismatch parks and {len(conf_rows)} id-confirmed parks (private lists) '
+              f'rank the areas; counts only', flush=True)
+    queue = build_queue(cfgs, hand, areas, weights=weights, explicit=bool(args.areas))
     if args.limit:
         queue = queue[:int(args.limit)]
     fetcher = Fetcher(transport=transport, cache_dir=args.cache or os.path.join(work, 'cache'), gap=gap, sleep=sleep,
@@ -2723,6 +2790,8 @@ def main(argv=None):
     ap.add_argument('--answer-key', help='optional ky-answer-key.json: report the agreement within 10%%')
     ap.add_argument('--offline', action='store_true', help='cache only, no network')
     ap.add_argument('--no-county-check', action='store_true', help='skip the Census county lookup (rule c)')
+    ap.add_argument('--priority-file', help='PRIVATE list of likely-mismatch parks (outside any repo): their areas go first')
+    ap.add_argument('--confirmed-file', help='PRIVATE list of parks confirmed by agency id (outside any repo): their areas count less')
     ap.add_argument('--quiet', action='store_true')
     ap.add_argument('--selftest', action='store_true')
     ap.add_argument('--update-expected', action='store_true', help=argparse.SUPPRESS)
