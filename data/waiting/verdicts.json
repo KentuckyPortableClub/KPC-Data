@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-22T18:32Z",
+ "checked": "2026-11-22T18:33Z",
  "switched_on": false,
  "results": [
   {
@@ -520,14 +520,12 @@
   {
    "path": "data/truth/US-OK.json",
    "kind": "truth",
-   "why": [
-    "F-R3 53 of 100 sized parks are OFF (over half: a reading problem?)"
-   ],
+   "why": [],
    "notes": [
     "no live copy: first time this file is published"
    ],
-   "verdict": "HOLD",
-   "fp": "78db457b3aa01ddb",
+   "verdict": "PASS",
+   "fp": "a7f4495b3d0f8399",
    "net": true
   },
   {
@@ -573,6 +571,15 @@
    "notes": [],
    "verdict": "PASS",
    "fp": "399d43db5a5de58b",
+   "net": true
+  },
+  {
+   "path": "data/truth/US-TX.json",
+   "kind": "truth",
+   "why": [],
+   "notes": [],
+   "verdict": "PASS",
+   "fp": "844907189aff7b56",
    "net": true
   },
   {
