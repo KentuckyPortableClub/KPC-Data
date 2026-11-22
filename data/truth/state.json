@@ -347,23 +347,23 @@
   "US-IL": {
    "checked": 219,
    "counts": {
-    "agree": 68,
-    "handover_hints": 15,
+    "agree": 93,
+    "handover_hints": 12,
     "no_page": 1,
-    "no_size": 36,
+    "no_size": 42,
     "not_read": 0,
-    "off": 42,
-    "ours_unknown": 8,
+    "off": 30,
+    "ours_unknown": 6,
     "parks": 219,
     "retired": 0,
-    "unsure": 56,
-    "weak": 6,
-    "with_outline": 211
+    "unsure": 41,
+    "weak": 5,
+    "with_outline": 213
    },
    "left": 0,
    "parks": 219,
-   "status": "queued",
-   "updated": "2026-11-15"
+   "status": "done",
+   "updated": "2026-11-22"
   },
   "US-IN": {
    "checked": 229,
@@ -1108,38 +1108,30 @@
  },
  "last": {
   "areas": [
-   "US-IN"
+   "US-IL"
   ],
   "manners": {
-   "browser": 8,
-   "dropped_queued": 1,
    "errors": 0,
-   "for_person_urls": [
-    [
-     "https://arcg.is/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from arcg.is this run"
-    ]
-   ],
-   "host_rule": 0,
-   "requests": 42,
+   "for_person_urls": [],
+   "host_rule": 2,
+   "requests": 604,
    "rested": 0,
-   "robots": 1,
-   "robots_unreadable": 1,
+   "robots": 0,
    "strikes": 0
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 17,
-   "no_size": 10,
-   "ours_unknown": 1,
-   "pages_read": 26,
-   "parks": 13,
+   "handover_hints": 12,
+   "no_size": 43,
+   "ours_unknown": 6,
+   "pages_read": 516,
+   "parks": 219,
    "retired": 0,
-   "size_agree": 0,
-   "size_off": 1,
-   "size_unsure": 1,
-   "skipped_fresh": 216,
-   "with_outline": 13
+   "size_agree": 93,
+   "size_off": 30,
+   "size_unsure": 41,
+   "skipped_fresh": 0,
+   "with_outline": 213
   },
   "when": "2026-11-22"
  },
