@@ -568,7 +568,7 @@
    },
    "left": 0,
    "parks": 561,
-   "status": "queued",
+   "status": "done",
    "updated": "2026-11-22"
   },
   "US-MS": {
@@ -1123,30 +1123,38 @@
  },
  "last": {
   "areas": [
-   "US-IL"
+   "US-MO"
   ],
   "manners": {
+   "deferred": 16,
    "errors": 0,
-   "for_person_urls": [],
+   "for_person": 1,
+   "for_person_urls": [
+    [
+     "http://www.swl.usace.army.mil/Portals/50/docs/tablerocklake/TABLE%20ROCK%20MAP%203-05.pdf",
+     "HTTP 403 twice"
+    ]
+   ],
    "host_rule": 0,
-   "requests": 0,
+   "requests": 83,
    "rested": 0,
+   "retry403": 1,
    "robots": 0,
-   "strikes": 0
+   "strikes": 2
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 12,
-   "no_size": 0,
-   "ours_unknown": 0,
-   "pages_read": 0,
-   "parks": 0,
+   "handover_hints": 1,
+   "no_size": 37,
+   "ours_unknown": 3,
+   "pages_read": 4,
+   "parks": 44,
    "retired": 0,
-   "size_agree": 0,
+   "size_agree": 4,
    "size_off": 0,
    "size_unsure": 0,
-   "skipped_fresh": 219,
-   "with_outline": 0
+   "skipped_fresh": 517,
+   "with_outline": 44
   },
   "when": "2026-11-22"
  },
