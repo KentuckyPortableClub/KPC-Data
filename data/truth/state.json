@@ -528,24 +528,25 @@
    "updated": "2026-11-10"
   },
   "US-MN": {
-   "checked": 319,
+   "checked": 323,
    "counts": {
-    "agree": 7,
-    "handover_hints": 8,
+    "agree": 6,
+    "handover_hints": 5,
     "no_page": 0,
-    "no_size": 263,
-    "off": 13,
-    "ours_unknown": 0,
-    "parks": 319,
+    "no_size": 145,
+    "not_read": 118,
+    "off": 2,
+    "ours_unknown": 20,
+    "parks": 323,
     "retired": 0,
-    "unsure": 12,
-    "weak": 10,
-    "with_outline": 295
+    "unsure": 21,
+    "weak": 24,
+    "with_outline": 312
    },
    "left": 0,
-   "parks": 319,
-   "status": "queued",
-   "updated": "2026-11-08"
+   "parks": 323,
+   "status": "done",
+   "updated": "2026-11-22"
   },
   "US-MO": {
    "checked": 561,
@@ -1111,42 +1112,30 @@
  },
  "last": {
   "areas": [
-   "US-WI"
+   "US-MN"
   ],
   "manners": {
-   "browser": 1,
    "errors": 0,
-   "for_person": 2,
-   "for_person_urls": [
-    [
-     "https://www.michigan.gov/recsearch/parks/Menominee",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://www.michigan.gov/recsearch/-/media/Project/Websites/recsearch/documents/MapsI-N/Menominee_River_map.pdf?rev=e7a2c8b757ea48cda44dc3dc461e0b1c&hash=F7B187F79AE5406D1BA0AA2EA351BB4F",
-     "HTTP 403 twice"
-    ]
-   ],
-   "host_rule": 1,
-   "requests": 420,
+   "for_person_urls": [],
+   "host_rule": 3,
+   "requests": 293,
    "rested": 0,
-   "retry403": 2,
-   "robots": 0,
-   "strikes": 4
+   "robots": 118,
+   "strikes": 0
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 13,
-   "no_size": 98,
-   "ours_unknown": 3,
-   "pages_read": 384,
-   "parks": 348,
+   "handover_hints": 5,
+   "no_size": 263,
+   "ours_unknown": 20,
+   "pages_read": 237,
+   "parks": 323,
    "retired": 0,
-   "size_agree": 162,
-   "size_off": 42,
-   "size_unsure": 29,
+   "size_agree": 6,
+   "size_off": 2,
+   "size_unsure": 21,
    "skipped_fresh": 0,
-   "with_outline": 334
+   "with_outline": 312
   },
   "when": "2026-11-22"
  },

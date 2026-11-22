@@ -18,7 +18,7 @@ Updated 2026-11-22. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 | US-IL | 219 | 213 | 93 | **30** | 41 | 42 | 6 | 12 | 0 | 5 |
 | US-MO | 561 | 553 | 17 | **0** | 7 | 512 | 17 | 1 | 0 | 35 |
 | US-WI | 348 | 334 | 162 | **42** | 29 | 98 | 3 | 13 | 0 | 18 |
-| US-MN | 319 | 295 | 7 | **13** | 12 | 263 | 0 | 8 | 0 | 10 |
+| US-MN | 323 | 312 | 6 | **2** | 21 | 145 | 20 | 5 | 0 | 24 |
 | US-IA | 181 | 177 | 20 | **13** | 16 | 128 | 0 | 7 | 0 | 2 |
 | US-ND | 155 | 110 | 11 | **8** | 9 | 80 | 0 | 7 | 0 | 6 |
 | US-SD | 120 | 116 | 13 | **3** | 49 | 46 | 4 | 3 | 0 | 6 |
@@ -983,6 +983,48 @@ You · [www.fws.gov](https://www.fws.gov/refuge/chassahowitzka/about-us)
 - US-8363 Gibraltar Rock State Natural Area · transfer: “ermals formed by the warm cliff face. Gibraltar Rock was originally owned by Columbia County, which transferred ownership to the DNR in 2007. It was designated a State Natural Area in 1969. Very few S” · owner now: DNR · [dnr.wisconsin.gov](https://dnr.wisconsin.gov/topic/statenaturalareas/GibraltarRock)
 - US-8363 Gibraltar Rock State Natural Area · managed by: “igrating raptors, which catch thermals formed by the warm cliff face. Gibraltar Rock was originally owned by Columbia County, which transferred ownership to the DNR in 2007. It was designated a State ” · owner now: DNR · [dnr.wisconsin.gov](https://dnr.wisconsin.gov/topic/statenaturalareas/GibraltarRock)
 - US-9864 Rome Pond State Wildlife Area · managed by: “Jefferson County Parks property on the north side of Rome Pond Wildlife Area. It is not managed or maintained by DNR. Parking lot - yes, currently there are 6 lots. Campground and size - none. Trails,” · owner now: DNR · [dnr.wisconsin.gov](https://dnr.wisconsin.gov/topic/Lands/WildlifeAreas/rome.html)
+
+## US-MN
+
+**Agree:** 6 parks: 0 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 6 agree (second agency).
+
+**Size more than 15% off (our outline vs the agency):**
+
+- US-0369 Rydell National Wildlife Refuge: ours 2,040 ac vs agency 17 acre (= 17 ac; 11900% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.fws.gov](https://www.fws.gov/refuge/rydell) · “refuge protects diverse habitats including the most westerly maple-basswood forests in Minnesota and a unique 17-acre bog that supports carnivorous plants. Visi”
+- US-6465 Greenleaf State Recreation Area: ours 479 ac vs agency 385 acre (= 385 ac; 24% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.dnr.state.mn.us](https://www.dnr.state.mn.us/state_parks/greenleaf_lake/index.html) · “af Lake State Recreation Area Download map | Download geoPDF map | ( What is a geoPDF? ) PAT Social Media The 385-acre Greenleaf Lake State Recreation Area (SRA”
+
+**Unsure (no clean total found; the nearest number is only a guess):**
+
+- US-0067 Voyageurs National Park: ours 130,153 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-0356 Big Stone Wetland Management District: ours 3,318 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-0358 Detroit Lakes Wetland Management District: ours 38,741 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 3,200 acres, no total words near it) · [www.fws.gov](https://www.fws.gov/refuge/detroit-lakes-wetland-management-district)
+- US-0359 Fergus Falls Wetland Management District: ours 36,578 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-0360 Glacial Ridge National Wildlife Refuge: ours 23,249 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 20,000 acres, no total words near it) · [www.fws.gov](https://www.fws.gov/refuge/glacial-ridge)
+- US-0362 Litchfield Wetland Management District: ours 27,957 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-0366 Morris Wetland Management District: ours 43,142 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-0367 Northern Tallgrass Prairie National Wildlife Refuge: ours 17,053 ac · cause: whole park compared (POTA lists it in 1 states: {'US-MN': 17053})
+- US-0368 Rice Lake National Wildlife Refuge: ours 18,073 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-0373 Windom Wetland Management District: ours 14,174 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-10278 Inspiration Peak State Wayside State Natural Site: ours 82 ac · cause: a number 7 parks share from the same sentence (26 ac): an agency total, not this park
+- US-12388 Caribou Falls Unique Area: ours 444 ac · cause: a number 7 parks share from the same sentence (26 ac): an agency total, not this park
+- US-12389 Devils Track Falls Unique Area: ours 240 ac · cause: a number 7 parks share from the same sentence (26 ac): an agency total, not this park
+- US-12390 Flood Bay Unique Area: ours 93 ac · cause: a number 7 parks share from the same sentence (26 ac): an agency total, not this park
+- US-12392 Joseph R. Brown Unique Area: ours 50 ac · cause: a number 7 parks share from the same sentence (26 ac): an agency total, not this park
+- US-12393 Kodonce River Unique Area: ours 141 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-12394 Ray Berglund Unique Area: ours 103 ac · cause: a number 7 parks share from the same sentence (26 ac): an agency total, not this park
+- US-12395 St. Croix Boom Site Unique Area: ours 91 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-12396 Sam Brown Memorial Unique Area: ours 43 ac · cause: a number 7 parks share from the same sentence (26 ac): an agency total, not this park
+- US-4236 Upper Mississippi River National Wildlife Refuge: ours 196,139 ac · cause: whole park compared (POTA lists it in 4 states: {'US-WI': 74135, 'US-IA': 59625, 'US-IL': 21280, 'US-MN': 41099})
+- US-4491 Superior National Forest: ours 2,093,610 ac · cause: no total-looking sentence: numbers found were parts or other units (nearest number found: 432 square miles, no total words near it) · [www.fs.usda.gov](https://www.fs.usda.gov/r09/superior)
+
+**Handover / closure hints (a person decides; nothing applied):**
+
+- US-0357 Crane Meadows National Wildlife Refuge · managed by: “About Getting Involved Services The National Wildlife Refuge System is a series of lands and waters owned and managed by the U.S. Fish and Wildlife Service. Wildlife conservation is at the heart of th” · owner now: U.S · [www.fws.gov](https://www.fws.gov/refuge/crane-meadows)
+- US-0360 Glacial Ridge National Wildlife Refuge · managed by: “10 miles east of Crookston and is 6 miles west of Mentor along U.S. Highway 2. Glacial Ridge Refuge is managed by staff at nearby Rydell National Wildlife Refuge where visitors will find a visitor cen” · owner now: Rydell National Wildlife Refuge · [www.fws.gov](https://www.fws.gov/refuge/glacial-ridge)
+- US-0368 Rice Lake National Wildlife Refuge · managed by: “About Getting Involved Services The National Wildlife Refuge System is a series of lands and waters owned and managed by the U.S. Fish and Wildlife Service. Wildlife conservation is at the heart of th” · owner now: U.S · [www.fws.gov](https://www.fws.gov/refuge/rice-lake)
+- US-0370 Sherburne National Wildlife Refuge · managed by: “rn How to Get Involved Services The National Wildlife Refuge System is a series of lands and waters owned and managed by the U.S. Fish and Wildlife Service. Wildlife conservation is at the heart of th” · owner now: U.S · [www.fws.gov](https://www.fws.gov/refuge/sherburne)
+- US-0957 Pipestone National Monument · managed by: “nument Kids & Youth Kids & Youth Programs Management Management of the Monument Bookstore Bookstore operated by Pipestone Indian Shrine Association Last updated: June 5, 2019 Park footer Contact Info ” · owner now: Pipestone Indian Shrine Association
+Last · [www.nps.gov](https://www.nps.gov/pipe/learn/index.htm)
 
 ## US-IA
 
