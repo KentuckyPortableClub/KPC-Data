@@ -106,17 +106,40 @@ def rows_of(body, fmt):
     return [r.get('attributes', r) if isinstance(r, dict) else {} for r in d]
 
 
+PAGE_ADDRESS = 'page address'
+
+
+def page_address(link):
+    """22 Nov 2026: the page address id, cleaned exactly as KPC-Data draft/tools/kpc_link_ids.page_address cleans the park's POTA
+    link (no scheme, no 'www.', lower case, no trailing slash, no query, no #part), so the two sides meet."""
+    import urllib.parse as _u
+    t = str(link or '').strip().split()[0] if str(link or '').strip() else ''
+    if not t: return ''
+    if not re.match(r'[a-z][a-z0-9+.-]*://', t, re.I): t = 'http://' + t
+    try: pu = _u.urlsplit(t)
+    except ValueError: return ''
+    if pu.scheme.lower() not in ('http', 'https'): return ''
+    host = (pu.hostname or '').lower().rstrip('.')
+    if host.startswith('www.'): host = host[4:]
+    path = '/'.join(x for x in _u.unquote(pu.path or '').lower().split('/') if x)
+    if '.' not in host or not path: return ''
+    return f'{host}/{path}'
+
+
 def crosswalk_rows(rows, a):
     """[{'web_id','map_layer','map_field','map_id'}] from the list rows. A web id may come from a column directly, or from a
     page address in that column through web_id.regex (group 1). A row with no web id or no map id is left out; a web id that
     two rows give two different map ids is left out too (not one-to-one: no tie)."""
     w, m = a['web_id'], a['map']
-    rx = re.compile(w['regex'], re.I) if w.get('regex') else None
+    pa = str(a.get('link_kind') or '').strip().lower() == PAGE_ADDRESS   # 22 Nov: the web id IS the cleaned page address
+    rx = re.compile(w['regex'], re.I) if w.get('regex') and not pa else None
     seen, clash = {}, set()
     for r in rows:
         raw = str(r.get(w['column']) or '').strip()
         mid = str(r.get(m['value']) or '').strip()
-        if rx:
+        if pa:
+            raw = page_address(raw)
+        elif rx:
             mm = rx.search(raw)
             raw = mm.group(1) if mm else ''
         if not raw or not mid or WDPA.search(mid):
@@ -257,8 +280,8 @@ def selftest():
         go([arc], {base['source_url']: (200, {}, js, base['source_url'])})
         check('an ArcGIS answer is read the same way', json.load(open(os.path.join(out, 'invented-arc.json')))['rows'][0]['map_id'] == 'A7')
     cfg = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'agency-lists.json'), encoding='utf-8'))
-    check('the shipped config has every agency OFF until a person switches one on',
-          all(not a.get('enabled') for a in cfg.get('agencies') or []))
+    check('the shipped config has an agency ON only when its status records the owner switching it on',
+          all(not a.get('enabled') or str(a.get('status') or '').startswith('on (owner, ') for a in cfg.get('agencies') or []))
     say('')
     say('SELF-TEST PASSED' if not bad else f'SELF-TEST FAILED: {len(bad)}: ' + '; '.join(bad))
     return 0 if not bad else 1

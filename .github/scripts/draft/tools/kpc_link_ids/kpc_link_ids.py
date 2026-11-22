@@ -208,6 +208,27 @@ def full_name(text):
     return ' '.join(out)
 
 
+PAGE_ADDRESS = 'page address'
+
+
+def page_address(link):
+    """22 Nov 2026 (owner's GO): the park's own page address as an id, cleaned the same way on both sides (here and in KPC-Data
+    kpc_agency_lists.page_address): no scheme, no 'www.', the host in lower case, the path in lower case with no trailing slash,
+    no query and no #part. '' when the link is not an http(s) address with a host and a path."""
+    import urllib.parse as _u
+    t = str(link or '').strip().split()[0] if str(link or '').strip() else ''
+    if not t: return ''
+    if not re.match(r'[a-z][a-z0-9+.-]*://', t, re.I): t = 'http://' + t
+    try: pu = _u.urlsplit(t)
+    except ValueError: return ''
+    if pu.scheme.lower() not in ('http', 'https'): return ''
+    host = (pu.hostname or '').lower().rstrip('.')
+    if host.startswith('www.'): host = host[4:]
+    path = '/'.join(x for x in _u.unquote(pu.path or '').lower().split('/') if x)
+    if '.' not in host or not path: return ''
+    return f'{host}/{path}'
+
+
 def split_link(link):
     u = str(link or '').strip()
     if not u: return None, '', []
@@ -275,6 +296,12 @@ def read_link(link, park_name='', pota_type='', area='', areas=()):
     elif not pu.query and (not segs or all(EXT.sub('', s).lower() in GENERIC for s in segs)): r['page'] = 'home page'
     elif DOC.search(last): r['page'] = 'document'
     else: r['page'] = 'own page' if (r['id_grade'] == 'known' or r['name_match'] in ('strong', 'part')) else 'page not confirmed'
+    # 22 Nov 2026 (owner's GO): the park's own page on an agency or government site, with no id a rule knows, is identified by its
+    # page address. It ties a park to a map record ONLY through an agency's own list (KPC-Data kpc_agency_lists, link kind
+    # 'page address'); with no list it does nothing in the keys (kpc_match_checks: no record carries this kind).
+    if r['page'] == 'own page' and r['id_grade'] != 'known' and r['site'] in ('agency (known)', 'government site'):
+        pa = page_address(link)
+        if pa: r['id_kind'], r['id_value'], r['id_grade'] = PAGE_ADDRESS, pa.upper(), 'known'
     return r
 
 
@@ -460,7 +487,13 @@ def selftest():
     check('Parks Canada DFHD id', L('https://www.pc.gc.ca/apps/dfhd/page_nhs_eng.aspx?id=99999')['id_kind'], 'Parks Canada DFHD id (nhs)')
     check('Forest Service recid', L('https://www.fs.usda.gov/recarea/zzzz/recarea/?recid=99999')['id_value'], '99999')
     r = L('https://tpwd.texas.gov/state-parks/invented-creek', 'Invented Creek State Park', 'State Park', 'US-TX')
-    check('no id, but the address names the park: own page, strong', (r['id_kind'], r['web_name'], r['name_match'], r['page'], r['kind_check']), ('', 'invented creek', 'strong', 'own page', 'agrees'))
+    check('no id rule, but the address names the park: own page, strong, identified by its page address (22 Nov)',
+          (r['id_kind'], r['id_value'], r['web_name'], r['name_match'], r['page'], r['kind_check']),
+          ('page address', 'TPWD.TEXAS.GOV/STATE-PARKS/INVENTED-CREEK', 'invented creek', 'strong', 'own page', 'agrees'))
+    check('the page address is cleaned the same way as the agency list cleans it (scheme, www, case, slash, query)',
+          L('http://WWW.TPWD.texas.gov/State-Parks/Invented-Creek/?utm=x#map', 'Invented Creek State Park', 'State Park', 'US-TX')['id_value'],
+          'TPWD.TEXAS.GOV/STATE-PARKS/INVENTED-CREEK')
+    check('a page that is not confirmed as the park\'s own gets no page address', L('https://www.blm.gov/visit/some-other-place', 'Invented Canyon')['id_kind'], '')
     r = L('https://dnr.wisconsin.gov/topic/Lands/WildlifeAreas/inventedmarsh.html', 'Invented Marsh State Wildlife Area', 'State Wildlife Area', 'US-WI')
     check('a run-together address still matches the name', (r['name_match'], r['web_kind']), ('strong', 'wildlife area'))
     r = L('https://www.tn.gov/twra/wildlife-management-areas/middle-tennessee-r2/invented-lake-wma.html', 'Invented Lake State Park', 'State Park', 'US-TN')
@@ -474,7 +507,8 @@ def selftest():
     check('a PDF is a document', L('https://wvdnr.gov/wp-content/uploads/2022/11/InventedWMA_11x17.pdf', 'Invented WMA')['page'], 'document')
     check('a page that neither names the park nor holds a known id is not confirmed', L('https://www.blm.gov/visit/some-other-place', 'Invented Canyon')['page'], 'page not confirmed')
     check('an unknown government site: id is only a guess', (lambda x: (x['site'], x['id_grade'], x['id_value']))(L('https://parks.example.gov/unit?id=12345', 'Invented Park')), ('government site', 'guess', '12345'))
-    check('a year in the address is not an id', L('https://parks.example.gov/2023/invented-park', 'Invented Park')['id_value'], '')
+    check('a year in the address is not an id (the own page is identified by its address instead)',
+          (lambda x: (x['id_kind'], x['id_value']))(L('https://parks.example.gov/2023/invented-park', 'Invented Park')), ('page address', 'PARKS.EXAMPLE.GOV/2023/INVENTED-PARK'))
     check('no link, bad link', (L('')['page'], L('not a link at all')['page']), ('no link', 'bad link'))
     check('two links pasted in one cell: the first one counts', L('https://www.nps.gov/zzqq/index.htm https://www.rivers.gov/rivers/x.php')['id_value'], 'ZZQQ')
     check('short forms are spelled out for an exact comparison', full_name('The Invented Lake WMA'), 'invented lake wildlife management area')

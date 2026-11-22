@@ -337,18 +337,25 @@
    "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
   },
   {
-   "enabled": false,
+   "enabled": true,
    "agency": "Manitoba Parks",
-   "status": "off: its host is saved copies only, never read live; licence not confirmed as allowing our use (research table, 21 Nov)",
-   "link_kind": "",
-   "source_url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer",
+   "status": "on (owner, 22 Nov 2026 2:28 AM: 'if it is agency data not sure i need to approve any of that'; GO 2:57 AM): the agency's own list ties its page address column to its map id on the rows (46 same / 0 different, kpc_agency_fields 2026-11-21b on the owner's PC); read by the store keeper only, robots.txt first",
+   "link_kind": "page address",
+   "source_url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer/0/query?where=1%3D1&outFields=URL%2CD_OF_S&returnGeometry=false&f=json",
    "licence": "not confirmed (earlier search named Open Government Licence - Manitoba; not re-confirmed)",
    "licence_ok": false,
    "terms_url": "https://www.gov.mb.ca/sd/parks",
    "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21, second pass: unreadable (403), no rules)",
-   "format": "",
-   "web_id": {},
-   "map": {},
+   "format": "arcgis-json",
+   "web_id": {
+    "column": "URL",
+    "regex": ""
+   },
+   "map": {
+    "layer": "Manitoba Par",
+    "field": "D_OF_S",
+    "value": "D_OF_S"
+   },
    "fields_seen": {
     "web_id": "NAME_E (park name); URL field listed in metadata",
     "map_id": "NAME_E; TYPE_E"
@@ -657,18 +664,25 @@
    "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
   },
   {
-   "enabled": false,
+   "enabled": true,
    "agency": "Florida DEP Division of Recreation and Parks (State Parks)",
-   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
-   "link_kind": "",
-   "source_url": "https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0",
+   "status": "on (owner, 22 Nov 2026 2:28 AM: 'if it is agency data not sure i need to approve any of that'; GO 2:57 AM): the agency's own list ties its page address column to its map id on the rows (138 same / 0 different, kpc_agency_fields 2026-11-21b on the owner's PC); read by the store keeper only, robots.txt first",
+   "link_kind": "page address",
+   "source_url": "https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0/query?where=1%3D1&outFields=URL%2CUNIT_ID&returnGeometry=false&f=json",
    "licence": "FGDL notes: acknowledge originator when using; licenseInfo blank on service",
    "licence_ok": false,
    "terms_url": "https://floridadep.gov/Parks/Park-Mapping-Databases",
    "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (404 = no rules))",
-   "format": "",
-   "web_id": {},
-   "map": {},
+   "format": "arcgis-json",
+   "web_id": {
+    "column": "URL",
+    "regex": ""
+   },
+   "map": {
+    "layer": "sgfla",
+    "field": "UNIT_ID",
+    "value": "UNIT_ID"
+   },
    "fields_seen": {
     "web_id": "SITE_NAME (display field)",
     "map_id": "not confirmed"
@@ -837,18 +851,25 @@
    "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
   },
   {
-   "enabled": false,
+   "enabled": true,
    "agency": "Washington State Parks",
-   "status": "off: its host is saved copies only, never read live; licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
-   "link_kind": "",
-   "source_url": "https://services5.arcgis.com/4LKAHwqnBooVDUlX/ArcGIS/rest/services/ParkBoundaries/FeatureServer",
+   "status": "on (owner, 22 Nov 2026 2:28 AM: 'if it is agency data not sure i need to approve any of that'; GO 2:57 AM): the agency's own list ties its page address column to its map id on the rows (15 same / 0 different, kpc_agency_fields 2026-11-21b on the owner's PC); read by the store keeper only, robots.txt first",
+   "link_kind": "page address",
+   "source_url": "https://services5.arcgis.com/4LKAHwqnBooVDUlX/ArcGIS/rest/services/ParkBoundaries/FeatureServer/2/query?where=1%3D1&outFields=WebPage%2CParkCode&returnGeometry=false&f=json",
    "licence": "",
    "licence_ok": false,
    "terms_url": "",
    "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21, second pass: unreadable (403), no rules)",
-   "format": "",
-   "web_id": {},
-   "map": {},
+   "format": "arcgis-json",
+   "web_id": {
+    "column": "WebPage",
+    "regex": ""
+   },
+   "map": {
+    "layer": "sgwaa",
+    "field": "ParkCode",
+    "value": "ParkCode"
+   },
    "fields_seen": {
     "web_id": "parks.wa.gov park page; not confirmed",
     "map_id": "not confirmed (display field ParkName; no ID field confirmed)"

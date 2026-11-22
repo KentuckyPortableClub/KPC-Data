@@ -126,7 +126,8 @@ def crosswalk_doc(d, made):
     entry = {'enabled': True, 'agency': d.get('agency'), 'link_kind': str(d.get('link_kind') or '').strip().lower(),
              'source_url': src.get('url') or '', 'format': 'json-rows', 'web_id': d.get('web_id') or {}, 'map': d.get('map') or {},
              'licence': src.get('licence') or '', 'terms_url': src.get('terms_url') or ''}
-    why = AL.problems(entry)
+    # the 'saved copies only' host rule is a FETCH rule; the pack's rows were read by the PC (store rules) and nothing is fetched here
+    why = [w for w in AL.problems(entry) if 'saved copies only' not in w]
     if why: return None, why
     w, m = entry['web_id'], entry['map']
     rows = [{w['column']: r.get('web'), m['value']: r.get('map')} for r in d['rows'] if isinstance(r, dict)]
