@@ -18,7 +18,7 @@ Nothing is downloaded and no input file is changed. Standard library only.
 """
 import argparse, collections, csv, datetime, glob, json, os, re, sys, tempfile
 
-VERSION = 'kpc_park_facts 1 (2026-11-20)'
+VERSION = 'kpc_park_facts 3 (2026-11-21)'
 REF = re.compile(r'^[A-Z0-9]{1,4}-\d{4,5}$')
 AREA = re.compile(r'^(US|CA)-[A-Z]{2}$')
 
@@ -66,6 +66,118 @@ def read_acres(path):
                     'flags': r.get('flags') or [], 'source_url': r.get('source_url'), 'read_date': r.get('read_date'),
                     'other_sources': len(r.get('other_sources') or [])}
     return out, os.path.basename(path)
+
+
+# ------------------------------------------------------------------ size witness -------------------------------------
+# Where an official size came from, so the key's matching knows whether it can count as a second, independent agreement.
+#   same_record      read from a map layer the key already joined this park to (the record the name picked): never proof
+#   other_layer      read from a different map layer than the ones the key joined: not proof (another layer is not a witness)
+#   agency_document  read from the agency's own published list (spreadsheet, PDF, CSV, web table): proof
+#   hand_copy        typed in by a person from the agency's figure: proof
+#   unknown          can't tell (no address, or the key has no joined layer for the park to compare with)
+WITNESS_TAGS = ('same_record', 'other_layer', 'agency_document', 'hand_copy', 'unknown')
+WITNESS_PROOF = ('agency_document', 'hand_copy')
+# the key's national layers (KPC-Links kpc_us_key.py Q and FWS); the state layers come from data/us-key/layers.json
+NATIONAL_LAYERS = {'PAD-US': 'https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query',
+                   'fws': 'https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query'}
+MAP_LAYER = re.compile(r'/(?:feature|map)server/\d+', re.I)
+LAYER_EXPORT = re.compile(r'/api/download/v\d+/items/|/sharing/rest/content/items/|hub\.arcgis\.com/|/datasets/', re.I)
+DOC_EXT = re.compile(r'\.(?:pdf|xlsx?|csv|txt|docx?)(?:$|[?#])', re.I)
+
+
+def norm_layer(url):
+    """A map layer address without the scheme, 'www.', the query and a trailing /query: 'host/path/featureserver/2'."""
+    u = re.sub(r'^[a-z]+://', '', str(url or '').strip().lower()).split('?')[0].split('#')[0].rstrip('/')
+    u = re.sub(r'^www\.', '', u)
+    u = re.sub(r'/query$', '', u)
+    m = MAP_LAYER.search(u)
+    return u[:m.end()] if m else u
+
+
+def read_key_layers(key_dirs, layers_path=None):
+    """KPC-Links' saved keys -> {ref: set of normalised layer addresses the key joined the park to}. A park the key has with
+    no joined layer gets an empty set. layers.json gives each state layer's address; NATIONAL_LAYERS the two national ones."""
+    ids = {k: norm_layer(v) for k, v in NATIONAL_LAYERS.items()}
+    if layers_path and os.path.exists(layers_path):
+        with open(layers_path, encoding='utf-8') as f:
+            for lid, v in (json.load(f) or {}).items():
+                if isinstance(v, list) and v and isinstance(v[0], str):
+                    ids[lid] = norm_layer(v[0])
+    out = {}
+    for d in key_dirs or []:
+        for path in sorted(glob.glob(os.path.join(d, '*.json'))):
+            if not AREA.match(os.path.basename(path)[:-5]):
+                continue
+            with open(path, encoding='utf-8') as f:
+                doc = json.load(f)
+            for ref, p in ((doc.get('parks') if isinstance(doc.get('parks'), dict) else doc) or {}).items():
+                if REF.match(str(ref)) and isinstance(p, dict):
+                    out[ref] = {ids.get(s) or ids.get(re.sub(r'\s.*$', '', str(s)), '') for s in p.get('src') or []} - {''}
+    return out
+
+
+def witness(ref, row, key_layers):
+    """(tag, why) for one official size. key_layers = read_key_layers(...) or None when the key was not read."""
+    how = str(row.get('how') or '').lower()
+    url = str(row.get('source_url') or '').strip()
+    if how.startswith('hand copy') or row.get('witness') == 'hand_copy':
+        return 'hand_copy', 'typed in by a person from the agency figure'
+    if not re.match(r'^https?://', url, re.I):
+        return 'unknown', 'no web address for the size'
+    if LAYER_EXPORT.search(url):
+        return 'unknown', "a map layer's table downloaded from an open-data site: can't tell which layer it is"
+    if MAP_LAYER.search(url) or re.search(r'\.zip(?:$|[?#])', url, re.I):
+        if key_layers is None:
+            return 'unknown', 'a map layer, and the key was not read to compare'
+        if not key_layers.get(ref):
+            return 'unknown', 'a map layer, and the key has no joined layer for this park'
+        if norm_layer(url) in key_layers[ref]:
+            return 'same_record', 'a map layer the key already joined this park to'
+        return 'other_layer', 'a map layer the key did not join this park to'
+    if DOC_EXT.search(url):
+        return 'agency_document', "the agency's own published list"
+    return 'unknown', 'not sure what the address is'
+
+
+def tag_sizes(sizes, key_layers):
+    for ref, r in sizes.items():
+        if r.get('from') == 'keeper' and r.get('witness') in WITNESS_TAGS:   # the keeper's own tag wins
+            t, why = r['witness'], r.get('witness_why') or 'tagged by the keeper'
+        else:
+            t, why = witness(ref, r, key_layers)
+        r['witness'], r['witness_why'] = t, why
+        r['witness_counts'] = t in WITNESS_PROOF
+    return sizes
+
+
+def read_keeper_sizes(path):
+    """The keeper's saved official sizes -> {ref: size fact}. Only the keeper fetches from agency servers, so its sizes come
+    first; the acreage bot's fill only the parks the keeper has none for. Expected shape (the same as acres.json):
+    {ref: {acres, source_url, read_date, agency?, record_name?, how?, witness?}} or {'parks': {...}}. A missing file = {}."""
+    if not path or not os.path.exists(path):
+        return {}, None
+    with open(path, encoding='utf-8') as f:
+        d = json.load(f)
+    d = d.get('parks', d) if isinstance(d, dict) else {}
+    out = {}
+    for ref, r in d.items():
+        if not REF.match(str(ref)) or not isinstance(r, dict) or r.get('acres') is None:
+            continue
+        out[ref] = {'acres': r.get('acres'), 'value_given': r.get('value_given'), 'unit_given': r.get('unit_given'),
+                    'agency': r.get('agency'), 'record_name': r.get('record_name'), 'how': r.get('how'),
+                    'flags': r.get('flags') or [], 'source_url': r.get('source_url'), 'read_date': r.get('read_date'),
+                    'other_sources': 0, 'witness': r.get('witness') if r.get('witness') in WITNESS_TAGS else None}
+    return out, os.path.basename(path)
+
+
+def merge_sizes(keeper, acres):
+    """Keeper first, the acreage bot as the fallback. Each row says which one it came from ('from')."""
+    out = {}
+    for ref, r in acres.items():
+        out[ref] = dict(r, **{'from': 'acreage bot'})
+    for ref, r in keeper.items():
+        out[ref] = dict(r, **{'from': 'keeper'})
+    return out
 
 
 def _first(xs, n):
@@ -127,6 +239,54 @@ def read_links(path):
     return out, os.path.basename(path)
 
 
+def read_crosswalk(folder):
+    """The keeper's agency park lists (kpc_agency_lists.py): agency-crosswalk/<agency>.json, each
+    {agency, link_kind, source{url, licence, date}, rows[{web_id, map_layer, map_field, map_id}]} -> ({(link kind, web id): tie}, summary).
+    A web id two agencies' files map to different map ids is left out (no tie). Never WDPA. A missing folder = no ties."""
+    ties, clash, files = {}, set(), []
+    if not folder or not os.path.isdir(folder):
+        return {}, files
+    for path in sorted(glob.glob(os.path.join(folder, '*.json'))):
+        try:
+            with open(path, encoding='utf-8') as f:
+                d = json.load(f)
+        except (OSError, ValueError):
+            files.append({'file': os.path.basename(path), 'rows': 0, 'note': 'could not be read: not used'})
+            continue
+        kind = str(d.get('link_kind') or '').strip().lower()
+        src = d.get('source') or {}
+        n = 0
+        for r in d.get('rows') or []:
+            wid, mid = str(r.get('web_id') or '').strip().upper(), str(r.get('map_id') or '').strip()
+            lay, fld = str(r.get('map_layer') or ''), str(r.get('map_field') or '')
+            if not kind or not wid or not mid or re.search(r'wdpa|protectedplanet', lay + fld + mid, re.I):
+                continue
+            tie = {'agency': d.get('agency'), 'map_layer': lay, 'map_field': fld, 'map_id': mid,
+                   'source_url': src.get('url'), 'source_date': src.get('date')}
+            k = (kind, wid)
+            if k in ties and (ties[k]['map_layer'], ties[k]['map_id']) != (lay, mid):
+                clash.add(k)
+            ties.setdefault(k, tie)
+            n += 1
+        files.append({'file': os.path.basename(path), 'agency': d.get('agency'), 'rows': n,
+                      'source_url': src.get('url'), 'licence': src.get('licence'), 'source_date': src.get('date')})
+    for k in clash:
+        ties.pop(k, None)
+    return ties, files
+
+
+def add_map_ties(links, ties):
+    """A usable link id that an agency list maps to a map id gets link['map_tie'] (the keys treat it like a direct id tie)."""
+    n = 0
+    for r in links.values():
+        if not r.get('usable'):
+            continue
+        t = ties.get((str(r.get('id_kind') or '').strip().lower(), str(r.get('id_value') or '').strip().upper()))
+        if t:
+            r['map_tie'] = dict(t); n += 1
+    return n
+
+
 def _int(v):
     try:
         return int(str(v).strip())
@@ -180,17 +340,30 @@ def run(a):
     parks = read_parkinfo(a.parkinfo)
     if not parks:
         raise SystemExit(f'STOP: no US or Canadian parks read from {a.parkinfo}')
-    sizes, sname = read_acres(a.acres)
+    asizes, sname = read_acres(a.acres)
+    ksizes, kname = read_keeper_sizes(getattr(a, 'keeper_sizes', None))
+    sizes = merge_sizes(ksizes, asizes)
     pages, pareas = read_pages(a.pages)
     links, lname = read_links(a.links)
+    ties, xfiles = read_crosswalk(getattr(a, 'crosswalk', None))
+    tied = add_map_ties(links, ties)
+    key_layers = read_key_layers(a.key, a.layers) if a.key else None
+    tag_sizes(sizes, key_layers)
     rows, c = combine(parks, sizes, pages, links)
+    for r in sizes.values():
+        c['size witness: ' + r['witness']] += 1
+        c['size from: ' + r['from']] += 1
     made = a.today or datetime.date.today().isoformat()
     doc = {'made': made, 'tool': VERSION,
            'note': 'Facts collected by three bots, side by side. Nothing here ties a park to land; each source is one '
                    'agreement at most, and the size-witness rules decide what counts.',
-           'sources': {'size': {'bot': 'acreage bot (kpc_acres)', 'file': sname, 'parks': len(sizes)},
+           'sources': {'size': {'bot': 'the keeper first, the acreage bot (kpc_acres) as the fallback',
+                                'keeper_file': kname, 'keeper_parks': len(ksizes), 'file': sname, 'parks': len(asizes),
+                                'used': len(sizes)},
                        'page': {'bot': 'park page reader (kpc-park-pages)', 'areas_read': pareas, 'parks': len(pages)},
                        'link': {'bot': 'link IDs (kpc_link_ids)', 'file': lname, 'parks': len(links)},
+                       'crosswalk': {'from': 'agency park lists (the keeper, kpc_agency_lists)', 'files': xfiles,
+                                     'parks_tied': tied},
                        'parks_list': {'from': 'data/parkinfo (POTA)', 'parks': len(parks)}},
            'counts': dict(sorted(c.items())), 'parks': rows}
     os.makedirs(a.out, exist_ok=True)
@@ -201,7 +374,7 @@ def run(a):
     os.replace(tmp, path)
     lines = [f'Park facts, {made} ({VERSION})', '',
              f'{len(parks):,} US and Canadian parks on the POTA list.',
-             f'  official size (acreage bot): {len(sizes):,} parks',
+             f'  official size: {len(sizes):,} parks ({len(ksizes):,} from the keeper, {len(sizes) - len(ksizes):,} from the acreage bot)',
              f'  own web page read (page reader): {len(pages):,} parks in {", ".join(pareas) or "no state yet"}',
              f'  web link facts (link IDs): {len(links):,} parks', '']
     lines += [f'  {v:>7,}  {k}' for k, v in sorted(c.items())]
@@ -262,7 +435,7 @@ def selftest():
             w.writerow(['US-9003', 'US-ZZ', 'Trail', '', '', '', 'no link', '', '', '', '', '', '', '', '', '', '', ''])
         ns = argparse.Namespace(parkinfo=os.path.join(t, 'parkinfo'), acres=os.path.join(t, 'acres.json'),
                                 pages=os.path.join(t, 'pages'), links=os.path.join(t, 'link-ids.csv'),
-                                out=os.path.join(t, 'out'), today='2026-11-20')
+                                out=os.path.join(t, 'out'), today='2026-11-20', key=None, layers=None)
         before = {n: open(os.path.join(t, n), 'rb').read() for n in ('acres.json', 'link-ids.csv')}
         path = run(ns)
         doc = json.load(open(path, encoding='utf-8'))
@@ -289,7 +462,7 @@ def selftest():
         check('no input file changed', {n: open(os.path.join(t, n), 'rb').read() for n in before} == before, True)
         check('the file says it collects and does not decide', 'Nothing here ties a park to land' in doc['note'], True)
         empty = argparse.Namespace(parkinfo=os.path.join(t, 'parkinfo'), acres=None, pages=None, links=None,
-                                   out=os.path.join(t, 'out2'), today='2026-11-20')
+                                   out=os.path.join(t, 'out2'), today='2026-11-20', key=None, layers=None)
         d2 = json.load(open(run(empty), encoding='utf-8'))
         check('runs with only the parks list (a bot file missing is not an error)', d2['counts'].get('facts from 0 bot(s)'), 4)
     say('')
@@ -303,6 +476,10 @@ def main(argv=None):
     ap.add_argument('--acres', help="the acreage bot's acres.json")
     ap.add_argument('--pages', help="the page reader's facts folder (park-pages/facts)")
     ap.add_argument('--links', help="kpc_link_ids' link-ids.csv")
+    ap.add_argument('--key', action='append', help="KPC-Links data/us-key (and data/ca-key): the key's joined layers, for the size witness")
+    ap.add_argument('--keeper-sizes', dest='keeper_sizes', help="the keeper's saved official sizes (taken before the acreage bot's)")
+    ap.add_argument('--crosswalk', help="the keeper's agency park lists folder (agency-crosswalk/*.json)")
+    ap.add_argument('--layers', help='KPC-Links data/us-key/layers.json (each state layer\'s address)')
     ap.add_argument('--out', default='park-facts', help='output folder (default ./park-facts)')
     ap.add_argument('--today', help=argparse.SUPPRESS)
     ap.add_argument('--selftest', action='store_true')

@@ -1,0 +1,1960 @@
+{
+ "about": "Agency park lists for kpc_agency_lists.py (the keeper calls it). One official list per agency, giving its website id and its map id. Every agency stays OFF (enabled false) until a person has filled in the official source_url, format, web_id and map, and robots.txt does not have an explicit Disallow for our path or user-agent. A licence or terms is recorded when known, but is not a gate for private matching-only use (the lists stay private, used only for matching). Never a WDPA source. Where the map record already carries the website address (NY DEC, CA State Parks, MT FWP, MN DNR forests, some NPS layers), no list is needed: those ties live in KPC-Links .github/link-id-ties.json instead. 21 Nov: every agency of the owner's research table is listed with what was found; each stays off with its reason. To switch one on, a person also sets format, web_id and map from fields confirmed on the list. robots.txt blocks only on an explicit Disallow, or a file that loaded but could not be parsed; a 403, 404 or empty robots.txt is no rules (OK). The keeper still reads robots.txt live before every fetch.",
+ "fields": {
+  "agency": "short name; the file is agency-crosswalk/<slug>.json",
+  "link_kind": "the id kind the park's POTA link carries (as kpc_match_checks ID_KINDS names it)",
+  "source_url": "https address of the official list",
+  "licence": "the licence or terms, in a few words, as the agency states it",
+  "terms_url": "where that licence or terms is written",
+  "format": "csv | json-rows | arcgis-json",
+  "web_id": "{column, regex?}: the column with the website id (regex group 1 when the column holds a page address)",
+  "map": "{layer, field, value}: the map layer and field the id is on, and the list column holding that id",
+  "checked": "who checked source, licence and robots.txt, and when",
+  "licence_ok": "true only when the licence text was read and allows our use; recorded, not a gate for private matching-only use",
+  "robots": "what robots.txt says for the list path. The reader blocks only on an explicit Disallow for our path or user-agent, or a file that loaded but could not be parsed. A 403, 404 or empty robots.txt is no rules (OK). The keeper still reads robots.txt live before every fetch",
+  "fields_seen": "research notes on the id fields (not read by the reader)",
+  "status": "one line: why the agency is off, or that it is on"
+ },
+ "agencies": [
+  {
+   "enabled": false,
+   "agency": "BC Parks (British Columbia)",
+   "status": "off: the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://catalogue.data.gov.bc.ca/dataset/bc-parks-ecological-reserves-and-protected-areas",
+   "licence": "Open Government Licence - BC. pub.data.gov.bc.ca readme: datasets linked from the catalogue \"are available according to the Open Government License - BC(OGL)\"",
+   "licence_ok": true,
+   "terms_url": "https://www2.gov.bc.ca/gov/content?id=A519A56BC2BF44E4A008B33FCF527F61",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes for dataset pages; /api/, /client-api/, /organization/ etc disallowed; Crawl-Delay 10)",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "URL slug in the file (bcparks.ca/<slug>/). API field holding the slug or ORCS number: not confirmed (API docs not read).",
+    "map_id": "ORCS_PRIMARY / ORCS_SECONDARY, PROTECTED_LANDS_CODE, PROTECTED_LANDS_NAME, FEATURE_CODE (seen on a BC government Geocortex layer for protected lands; same key set expected on TA_PARK_ECORES_PA_SVW but not confirmed). ORCS number is the likely join key to the web page - not confirmed."
+   },
+   "pota_parks_in_research": "1016",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "BLM (Bureau of Land Management)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/0",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (404 = no rules))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "WEB_LINK (field present on production polygon layer BLM_Natl_Recs_poly/MapServer/0 and areas layer BLM_Natl_Recreation/MapServer/9; contents not read, so match to blm.gov/visit slug not confirmed)",
+    "map_id": "RecAreaID (int, \"Rec Site ID\") on RIDB points layer; polygon/area layers have no RecAreaID in the fields seen, only FET_NAME, ADM_UNIT_CD, ADMIN_ST, GIS_ACRES, DESCRIPTION, WEB_LINK. Join polygons to RIDB by name or WEB_LINK, not by ID."
+   },
+   "pota_parks_in_research": "729",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Parks Canada",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://parks.canada.ca/culture/adpf-dfhd",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (404 = no rules))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "DFHD numeric id in the URL (page_nhs_eng.aspx?id=N) for national historic sites; national parks use parks.canada.ca/pn-np/<prov>/<slug>",
+    "map_id": "not confirmed. No Parks Canada boundary layer carrying the DFHD id found this pass."
+   },
+   "pota_parks_in_research": "634",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Ontario Parks (MECP)",
+   "status": "off: the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://data.ontario.ca/en/dataset/provincial-park-regulated",
+   "licence": "Open Government Licence - Ontario (data.ontario.ca resource page)",
+   "licence_ok": true,
+   "terms_url": "https://www.ontario.ca/page/open-government-licence-ontario",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes for dataset pages; /api/ disallowed; Crawl-Delay 10)",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "URL slug in the file (ontarioparks.com/park/<slug>). Field with slug: not confirmed.",
+    "map_id": "not confirmed (park id field not read). OGF_ID seen on a different LIO layer, not this one."
+   },
+   "pota_parks_in_research": "618",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "New Brunswick (provincial parks, GeoNB)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://snb.ca/geonb1/e/DC/ProParks.asp",
+   "licence": "Open Government Licence (GeoNB catalogue); restriction on use: Unrestricted",
+   "licence_ok": false,
+   "terms_url": "https://www.gnb.ca/en/campaign/geonb/open-government-license.html",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (www.snb.ca/robots.txt returns 404 = no rules))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "not confirmed",
+    "map_id": "not confirmed"
+   },
+   "pota_parks_in_research": "548",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "NYS DEC (State Forests, WMAs)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://gisservices.dec.ny.gov/arcgis/rest/services/reference/MapServer/2",
+   "licence": "not confirmed (DEC metadata calls the dataset \"a work in progress\")",
+   "licence_ok": false,
+   "terms_url": "",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (404 = no rules))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "POTA file has NO web link for NY. DEC pages live at dec.ny.gov/lands/<n>.html. A URL column on the DEC Lands data is described on the OpenStreetMap wiki (third party) - not confirmed on the official layer.",
+    "map_id": "not confirmed. DEC Lands display field CATEGORY; WMA layer display field WMA."
+   },
+   "pota_parks_in_research": "536",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Nova Scotia (provincial parks)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://novascotia.ca/nse/protectedareas/consult/areas.aspx",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "https://novascotia.ca",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes: robots.txt disallows only unrelated paths; /nse/protectedareas not disallowed)",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "bracketed number on the HTML list (field name not confirmed)",
+    "map_id": "not confirmed (no park polygon layer found)"
+   },
+   "pota_parks_in_research": "489",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "BLM Recreation Management Areas (SRMA/ERMA)",
+   "status": "off: licence not confirmed as allowing our use (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9",
+   "licence": "Data.gov record for the CA layer lists licence http://www.usa.gov/publicdomain/label/1.0/ (CA layer only)",
+   "licence_ok": false,
+   "terms_url": "https://www.blm.gov/about/data",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (gis.blm.gov robots.txt returns 404 = no rules; checked in browser 2026-11-21))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "FET_NAME (national layer); RMA_Name (CA layer, display field); WEB_LINK on national polygon layers (contents not read)",
+    "map_id": "CA layer fields: RMA_Name, RMA_DSG (SRMA/ERMA), ADM_UNIT_CD, ADMIN_ST; national layer: FET_NAME, ADM_UNIT_CD, ADMIN_ST"
+   },
+   "pota_parks_in_research": "418",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Saskatchewan Parks (PPID)",
+   "status": "off: robots.txt disallows AI crawlers (ClaudeBot) and says ai-train=no: by hand only; licence not confirmed as allowing our use (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://gis.saskatchewan.ca/arcgis/rest/services/ParksAsLegislated/FeatureServer/4",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "https://geohub.saskatchewan.ca",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21, second pass: yes for a non-AI program (Allow: / for general crawlers). AI-only restrictions recorded, not applied: ClaudeBot, anthropic-ai, Claude-Web and other AI crawlers disallowed; Content-Signal ai-train=no, use=reference. Do not use the data for AI training or AI tools.)",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "PPID (unique park ID) on same layer; no web-page ID confirmed",
+    "map_id": "PPID (layer 4); other fields PARKNM, PARKTYPE"
+   },
+   "pota_parks_in_research": "411",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Alberta Parks (Environment and Protected Areas)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://geospatial.alberta.ca/titan/rest/services/boundary/parks_protected_areas_alberta/FeatureServer/0",
+   "licence": "Alberta open licence on Open Alberta record - licence line not read",
+   "licence_ok": false,
+   "terms_url": "https://open.alberta.ca/opendata/gda-6b96341f-2e19-4885-98af-66d12ed4f8dd",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (404 = no rules))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "albertaparks.ca park page (URL slug) - no ID in file",
+    "map_id": "not confirmed (layer 0 of boundary/parks_protected_areas_alberta)"
+   },
+   "pota_parks_in_research": "at least 389",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Missouri Department of Conservation (MDC)",
+   "status": "off: licence not confirmed as allowing our use (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://gisblue.mdc.mo.gov/arcgis/rest/services/Discover_Nature/MDC_Administrative_Areas/MapServer/5",
+   "licence": "not confirmed. Metadata use limitation: \"no warranty, expressed or implied, is made by the department\"",
+   "licence_ok": false,
+   "terms_url": "",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (404 = no rules))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "Layer itself carries link fields: Sum_Link, Map_Link, Brochure_Link (names seen; contents not read). POTA file has no Missouri web links.",
+    "map_id": "Area_ID and Conservation_Area_Number (integers); names Area_Name / OFF_Name."
+   },
+   "pota_parks_in_research": "385",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Massachusetts (MassWildlife / DCR / EEA)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://www.mass.gov/info-details/massgis-data-protected-and-recreational-openspace",
+   "licence": "not confirmed (layer \"under development\"; attributes \"may be incomplete\")",
+   "licence_ok": false,
+   "terms_url": "",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21, second pass: yes for data pages (fully read: disallows /media/*, /node/*, /taxonomy/term/*, /doc/courts-dwnld-*, search/admin; SemrushBot blocked) - check MassGIS download URLs are not under /media/)",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "URL slug in the file (mass.gov/info-details/<slug>-wma). No field holding it seen.",
+    "map_id": "OS_ID (MassGIS asks to quote OS_ID for corrections); SITE_NAME display field. Field list of the official layer not read - OS_ID presence on the service not confirmed."
+   },
+   "pota_parks_in_research": "365",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Wisconsin DNR",
+   "status": "off: licence not confirmed as allowing our use (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://dnrmaps.wi.gov/arcgis2/rest/services/PR_Recreation/PR_WSPS_Property_Info_WTM_Ext/MapServer",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (404 = no rules))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "link-to-property-info field (name not read)",
+    "map_id": "PROP_CODE (integer; 801 distinct values) with PROP_NAME and PROP_NAME_CODE; confirmed from the DNR Managed Lands by Parcel file you supplied"
+   },
+   "pota_parks_in_research": "at least 348",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "National Park Service (NPS)",
+   "status": "off: no list needed: the web id is the 4-letter unit code and the NPS boundary layer carries it as UNIT_CODE, so the tie belongs in KPC-Links link-id-ties.json; its host is saved copies only, never read live (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer",
+   "licence": "Public domain label: data.gov record for NPS unit boundaries lists license http://www.usa.gov/publicdomain/label/1.0/",
+   "licence_ok": false,
+   "terms_url": "",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21, second pass: unreadable (403), no rules)",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "4-letter unit code in the URL path (nps.gov/<code>/) - from the file's examples",
+    "map_id": "UNIT_CODE (string, length 4; confirmed on NPS Boundaries layer)"
+   },
+   "pota_parks_in_research": "333",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "MI DNR",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "MI DNR parks and trails id",
+   "source_url": "https://gis-michigan.opendata.arcgis.com",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes for dataset pages (Crawl-delay 60; same ArcGIS Hub rules))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "Most file links are PDF maps (SGA/SWGA map PDFs), not page IDs. Park-page field not confirmed.",
+    "map_id": "not confirmed (State Park Boundaries hub item not opened)"
+   },
+   "pota_parks_in_research": "330",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Pennsylvania Game Commission",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://www.pasda.psu.edu/uci/DataSummary.aspx?dataset=86",
+   "licence": "not confirmed (licenseInfo blank on PASDA item; a copy on gis.srbc.gov carries a \"Public Use\" notice)",
+   "licence_ok": false,
+   "terms_url": "",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (404 = no rules))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "POTA file has no Pennsylvania web links. PGC page field: not confirmed.",
+    "map_id": "not confirmed. Display field NAME; Game Land number field not confirmed."
+   },
+   "pota_parks_in_research": "308",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Manitoba Parks",
+   "status": "off: its host is saved copies only, never read live; licence not confirmed as allowing our use (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Parks/FeatureServer",
+   "licence": "not confirmed (earlier search named Open Government Licence - Manitoba; not re-confirmed)",
+   "licence_ok": false,
+   "terms_url": "https://www.gov.mb.ca/sd/parks",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21, second pass: unreadable (403), no rules)",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "NAME_E (park name); URL field listed in metadata",
+    "map_id": "NAME_E; TYPE_E"
+   },
+   "pota_parks_in_research": "308",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Minnesota DNR",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://gisdata.mn.gov/dataset/bdry-dnr-lrs-prk",
+   "licence": "not confirmed (parks dataset metadata: \"dsAccessConst None\")",
+   "licence_ok": false,
+   "terms_url": "",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes for dataset pages (redirects to gis.data.mn.gov; robots there: Crawl-delay 60; disallows /sites/ /admin/ /sessions/ /groups/ /people/ /workspace/))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "Not confirmed. All 295 rows may point at one generic page (the example is the waysides index).",
+    "map_id": "not confirmed"
+   },
+   "pota_parks_in_research": "295",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Quebec - Ministere de l'Environnement (Registre des aires protegees)",
+   "status": "off: the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://www.donneesquebec.ca/recherche/dataset/aires-protegees-au-quebec",
+   "licence": "Licence Attribution (CC-BY 4.0)",
+   "licence_ok": true,
+   "terms_url": "https://www.donneesquebec.ca/recherche/dataset/aires-protegees-au-quebec",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (robots.txt is empty))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "environnement.gouv.qc.ca register PDF pages (one per designation); not confirmed",
+    "map_id": "not confirmed (field description provided in metadata for the zipped file, not read)"
+   },
+   "pota_parks_in_research": "at least 283",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Colorado Parks and Wildlife",
+   "status": "off: its host is saved copies only, never read live; licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/ArcGIS/rest/services/CPWAdminData/FeatureServer/5",
+   "licence": "Distribution/use inquiries go to CPW GIS Unit Supervisor (layer licenseInfo)",
+   "licence_ok": false,
+   "terms_url": "https://cpw.state.co.us/maps-and-gis",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21, second pass: unreadable (403), no rules)",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "PropName (display field on state basemap copy)",
+    "map_id": "not confirmed"
+   },
+   "pota_parks_in_research": "276",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Ohio DNR",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://gis2.ohiodnr.gov/arcgis/rest/services/OIT_Services/ODNR_Basemap_Streets_103_2/MapServer/6",
+   "licence": "Data publication rights reserved by ODNR (seen on a county mirror record) - not an open licence",
+   "licence_ok": false,
+   "terms_url": "",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (404 = no rules))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "not confirmed",
+    "map_id": "not confirmed (ODNR_Lands, layer 6)"
+   },
+   "pota_parks_in_research": "at least 276",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "California State Parks",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://gis.parks.ca.gov/server/rest/services/EnterpriseGIS/CSPBoundaries_Portal/FeatureServer/0",
+   "licence": "Related State Parks public-data record lists licence \"http://www.opendefinition.org/licenses/cc-by\" (CC BY). Park Boundaries record itself says \"License: See this page\". Boundaries are \"for reference and not for official or legal property boundary determination\"",
+   "licence_ok": false,
+   "terms_url": "",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (404 = no rules))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "Page number in URL (parks.ca.gov/?page_id=N or /pages/N/...) - field in the layer: not confirmed",
+    "map_id": "ENTITY_ID (int), UNIT_NAME, SUBTYPE (CSPBoundaries layer). Match of ENTITY_ID to the web page number: not confirmed."
+   },
+   "pota_parks_in_research": "255",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "U.S. Fish and Wildlife Service (FWS)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://catalog.data.gov/dataset/fws-national-realty-boundaries",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (no Disallow rules; Crawl-Delay 10))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "fws.gov/refuge/<slug> in the file. 'link' (Web Link, 96 chars) field seen on a state-hosted copy of the layer - not confirmed on the official one.",
+    "map_id": "ORGNAME / ORGCODE / CMPXNAME seen on copies and mirrors; official field list not read. ORGCODE is the likely stable key."
+   },
+   "pota_parks_in_research": "247",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Georgia DNR",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://georgiawildlife.com/land",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "https://georgiawildlife.com",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes: disallows only /core/ /profiles/ /admin/ /search/ /user/ etc; /land not disallowed)",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "not confirmed",
+    "map_id": "not confirmed"
+   },
+   "pota_parks_in_research": "238",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Indiana DNR",
+   "status": "off: licence not confirmed as allowing our use (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
+   "licence": "Data made available \"as is\" (INHDC metadata); no open licence confirmed",
+   "licence_ok": false,
+   "terms_url": "https://www.in.gov/dnr",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (no robots.txt; URL redirects to portal home))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "unitname, subunit (fields seen)",
+    "map_id": "manager (DNR STATE PARKS / FORESTRY / FISH AND WILDLIFE); unitname"
+   },
+   "pota_parks_in_research": "229",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Illinois DNR",
+   "status": "off: no official list found (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "https://dnr.illinois.gov",
+   "robots": "not checked",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "n/a",
+    "map_id": "n/a"
+   },
+   "pota_parks_in_research": "219",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "NY State Parks",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "NY State Parks number",
+   "source_url": "https://data.ny.gov/d/9uuk-x7vh",
+   "licence": "Facility Points: \"License not specified\" (data.gov); boundary layer: \"Credit must be given when using the data\"",
+   "licence_ok": false,
+   "terms_url": "",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes for dataset pages (Socrata; Crawl-delay 1; disallows filtered /browse? URLs; list truncated at 500 chars))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "not confirmed",
+    "map_id": "not confirmed"
+   },
+   "pota_parks_in_research": "200",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Maryland DNR",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://catalog.data.gov/dataset/dnr-owned-lands-and-conservation-easements",
+   "licence": "OSM wiki says Maryland DNR park boundary data was relicensed public domain (secondary source)",
+   "licence_ok": false,
+   "terms_url": "https://opendata.maryland.gov",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (no Disallow rules; Crawl-Delay 10))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "not confirmed",
+    "map_id": "not confirmed"
+   },
+   "pota_parks_in_research": "186",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Washington WDFW",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/WildlifeAreas/MapServer",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (404 = no rules))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "not confirmed",
+    "map_id": "not confirmed (WildlifeAreas layer 1 = wildlife area management boundaries)"
+   },
+   "pota_parks_in_research": "at least 183",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Iowa DNR",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://programs.iowadnr.gov/geospatial/rest/services/Recreation/State_Parks/MapServer/10",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "https://data.iowa.gov",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (404 = no rules))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "NameUnit (display field)",
+    "map_id": "not confirmed"
+   },
+   "pota_parks_in_research": "181",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Alaska DNR Division of Parks and Outdoor Recreation",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/FeatureServer/2",
+   "licence": "Use constraint: sources must be indicated; do not misrepresent data (metadata on amerigeoss mirror; DNR page itself not read)",
+   "licence_ok": false,
+   "terms_url": "https://dnr.alaska.gov",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (404 = no rules))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "not confirmed",
+    "map_id": "not confirmed (layer: ASP Park Boundary; display field NAME seen)"
+   },
+   "pota_parks_in_research": "179",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Montana FWP",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://fwp-gis.mt.gov/arcgis/rest/services/fwplnd/fwpLands/MapServer",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (404 = no rules))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "not confirmed",
+    "map_id": "not confirmed (fwpLands: fishing access sites, FAS boundaries, WMA locations, WMA boundaries, state parks)"
+   },
+   "pota_parks_in_research": "at least 176",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Florida DEP Division of Recreation and Parks (State Parks)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0",
+   "licence": "FGDL notes: acknowledge originator when using; licenseInfo blank on service",
+   "licence_ok": false,
+   "terms_url": "https://floridadep.gov/Parks/Park-Mapping-Databases",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (404 = no rules))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "SITE_NAME (display field)",
+    "map_id": "not confirmed"
+   },
+   "pota_parks_in_research": "175",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "New Hampshire DNCR (State Parks and Forests)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://nhgeodata.unh.edu/nhgeodata/rest/services/EC/Conservation/MapServer",
+   "licence": "none stated (licenseInfo field blank on the service)",
+   "licence_ok": false,
+   "terms_url": "",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (404 = no rules))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "not confirmed",
+    "map_id": "not confirmed (EC_Conservation layer)"
+   },
+   "pota_parks_in_research": "at least 175",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "West Virginia DNR (State Parks, WMAs, State Forests)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://gis.transportation.wv.gov/arcgis/rest/services/Boundaries/FeatureServer",
+   "licence": "licenseInfo empty on layer 10",
+   "licence_ok": false,
+   "terms_url": "",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (404 = no rules))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "not confirmed",
+    "map_id": "not confirmed (layer 6 WMAs, layer 10 State Parks; state forests layer sourced from WV DNR hosted layer)"
+   },
+   "pota_parks_in_research": "172",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Nebraska Game and Parks Commission",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://data-outdoornebraska.opendata.arcgis.com/",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes for dataset pages (Crawl-delay 60; same ArcGIS Hub rules))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "not confirmed",
+    "map_id": "not confirmed"
+   },
+   "pota_parks_in_research": "at least 168",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Connecticut DEEP (State Parks, Forests, WMAs)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://ct-deep-gis-open-data-website-ctdeep.hub.arcgis.com/datasets/CTDEEP::deep-property-3",
+   "licence": "Creative Commons Attribution (cc-by) per data.gov harvest of data.ct.gov",
+   "licence_ok": false,
+   "terms_url": "https://portal.ct.gov/deep",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes for dataset pages (Crawl-delay 60; same ArcGIS Hub rules))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "AGNCYFN_CD codeset (DEEP facility ID) per metadata; field confirmed by metadata only",
+    "map_id": "not confirmed"
+   },
+   "pota_parks_in_research": "157",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "North Dakota Game and Fish Department (WMAs)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://gis.dmr.nd.gov/dmrpublicservices/rest/services/OilGasPublicMapDataVectorTiles/Wildlife_Management_Areas/FeatureServer/0",
+   "licence": "CC BY 4.0 for related ND Game and Fish layer (waterfowl rest areas) on gishubdata.nd.gov; WMA layer licence not read",
+   "licence_ok": false,
+   "terms_url": "https://gf.nd.gov/node/478",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (404 = no rules))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "UNIT_NAME (display field)",
+    "map_id": "not confirmed"
+   },
+   "pota_parks_in_research": "155",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "North Dakota Parks and Recreation Department",
+   "status": "off: its host is saved copies only, never read live; licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://services1.arcgis.com/GOcSXpzwBHyk2nog/ArcGIS/rest/services/NDGISHUB_State_Parks/FeatureServer",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "https://gf.nd.gov/node/478",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21, second pass: unreadable (403), no rules)",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "not confirmed",
+    "map_id": "not confirmed"
+   },
+   "pota_parks_in_research": "155",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Mississippi DWFP (WMAs and State Parks)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://maris.mississippi.edu/HTML/DATA/data_Cultural/StateParks.html",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "https://www.mdwfp.com/wildlife-hunting/gis-program/",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (404 = no rules))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "not confirmed",
+    "map_id": "not confirmed"
+   },
+   "pota_parks_in_research": "155",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Alabama DCNR (State Parks, WMAs, Fishing Lakes)",
+   "status": "off: no official list found (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "https://outdooralabama.com/public-lands",
+   "robots": "not checked",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "n/a",
+    "map_id": "n/a"
+   },
+   "pota_parks_in_research": "155",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Washington State Parks",
+   "status": "off: its host is saved copies only, never read live; licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://services5.arcgis.com/4LKAHwqnBooVDUlX/ArcGIS/rest/services/ParkBoundaries/FeatureServer",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21, second pass: unreadable (403), no rules)",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "parks.wa.gov park page; not confirmed",
+    "map_id": "not confirmed (display field ParkName; no ID field confirmed)"
+   },
+   "pota_parks_in_research": "at least 150",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Pennsylvania DCNR (State Parks and State Forests)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://conservationexplorer.dcnr.pa.gov/arcgis/rest/services/PA_Public/State_Parks/MapServer",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21, second pass: yes for a non-AI program (Crawl-delay 10; only admin/system paths disallowed for general crawlers). AI-only restriction recorded, not applied: anthropic-ai, Claude-Web, GPTBot, CCbot, Google-Extended etc. disallowed site-wide. Do not use the data for AI tools.)",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "not confirmed",
+    "map_id": "not confirmed (display field StParkName; no ID field confirmed)"
+   },
+   "pota_parks_in_research": "at least 150",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Kansas Dept of Wildlife and Parks",
+   "status": "off: no official list found (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "",
+   "licence": "KDWP/KBS lake layer: \"You may use these data freely. Please acknowledge\" (lakes layer only)",
+   "licence_ok": false,
+   "terms_url": "https://ksoutdoors.gov",
+   "robots": "not checked",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "n/a",
+    "map_id": "n/a"
+   },
+   "pota_parks_in_research": "145",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "OR State Parks",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "OR State Parks park id",
+   "source_url": "https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/MapServer/0",
+   "licence": "not confirmed. Sibling OPRD layer on data.gov: \"License not specified\"",
+   "licence_ok": false,
+   "terms_url": "",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (404 = no rules))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "not confirmed",
+    "map_id": "Oregon_Parklands: PARK_ID, PARK_NAME. Access Points: PARK_HUB_ID, NAME. Which matches the OPRD page: not confirmed."
+   },
+   "pota_parks_in_research": "140",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "US Forest Service",
+   "status": "off: its host is saved copies only, never read live; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "US Forest Service rec area id",
+   "source_url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0",
+   "licence": "CC BY 4.0 (data.gov record: \"license\": \"https://creativecommons.org/licenses/by/4.0/\")",
+   "licence_ok": true,
+   "terms_url": "https://creativecommons.org/licenses/by/4.0/",
+   "robots": "unreadable (403) = no rules",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "fs.usda.gov/<forest code>/ or recarea ?recid=N in the file",
+    "map_id": "RecAreaID (RIDB) / USFS rec-area id - not confirmed. Many POTA USFS rows are whole national forests/wilderness/trails, not rec areas."
+   },
+   "pota_parks_in_research": "140",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "AR Game and Fish",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "AR Game and Fish map id",
+   "source_url": "https://gis.arkansas.gov/product/wildlife-management-area-boundary-polygon/",
+   "licence": "not confirmed. Metadata: \"For Reference Purposes Only\"",
+   "licence_ok": false,
+   "terms_url": "",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes for dataset pages (redirects to geodata.gis.arkansas.gov; Crawl-delay 60; disallows /sites/ /admin/ /sessions/ /groups/ /people/ /workspace/))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "agfc.com/en/zone-map/<n>/ - numeric zone-map id in the URL",
+    "map_id": "not confirmed (wma / fname seen on a mirror only)"
+   },
+   "pota_parks_in_research": "137",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "New Jersey DEP (State Parks, Forests, WMAs)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://mapsdep.nj.gov/arcgis/rest/services/Features/Land/MapServer",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "https://www.nj.gov/dep/gis",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (404 = no rules))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "STATCODE / PAMS_PIN_OLD / NAME_LABEL seen on layer 78 (Open Space)",
+    "map_id": "not confirmed"
+   },
+   "pota_parks_in_research": "134",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Newfoundland and Labrador Parks (provincial parks and reserves)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://www.gov.nl.ca/eccc/natural-areas/gis-data/",
+   "licence": "Open Government Licence for Newfoundland and Labrador (named on parksnl.ca; text not read)",
+   "licence_ok": false,
+   "terms_url": "https://www.parksnl.ca/?p=19",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes: disallows only unrelated paths (/wp-content/, /fisheries/ subpaths etc); no park-data paths)",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "not confirmed",
+    "map_id": "not confirmed"
+   },
+   "pota_parks_in_research": "134",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "TX Parks and Wildlife",
+   "status": "off: its host is saved copies only, never read live; licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "TX Parks and Wildlife WMA id",
+   "source_url": "https://services1.arcgis.com/1mtXwieMId59thmg/ArcGIS/rest/services/WMA_Boundaries_4PublicDistribution/FeatureServer",
+   "licence": "not confirmed. Disclaimer \"make no warranty as to its accuracy\"",
+   "licence_ok": false,
+   "terms_url": "",
+   "robots": "unreadable (403) = no rules",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "tpwd.texas.gov/state-parks/<slug> in the 7 linked rows; no WMA links in the file",
+    "map_id": "not confirmed"
+   },
+   "pota_parks_in_research": "125",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "New Mexico State Parks (EMNRD)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://gstore.unm.edu/apps/rgis/datasets/057d2f19-4ec6-47d5-82a4-f03309ef94fb/metadata/ISO-19115:2003.html",
+   "licence": "No access restraints; not to be used to define legal boundaries (2009 metadata)",
+   "licence_ok": false,
+   "terms_url": "https://rgis.unm.edu",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (404 = no rules))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "not confirmed",
+    "map_id": "not confirmed"
+   },
+   "pota_parks_in_research": "124",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "New Mexico Dept of Game and Fish (WMAs)",
+   "status": "off: no official list found (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "https://www.wildlife.state.nm.us/conservation/state-game-commission-lands",
+   "robots": "not checked",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "n/a",
+    "map_id": "n/a"
+   },
+   "pota_parks_in_research": "124",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Louisiana Dept of Wildlife and Fisheries (WMAs)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://wlf.louisiana.gov/wma",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "https://wlf.louisiana.gov",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (redirects to www.wlf.louisiana.gov; \"Disallow:\" empty = all allowed))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "not confirmed",
+    "map_id": "not confirmed"
+   },
+   "pota_parks_in_research": "123",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "South Dakota Game, Fish and Parks",
+   "status": "off: no official list found (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "https://gfp.sd.gov/alternative-maps/",
+   "robots": "not checked",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "n/a",
+    "map_id": "n/a"
+   },
+   "pota_parks_in_research": "120",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Arizona State Parks / Arizona Game and Fish",
+   "status": "off: no official list found (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "https://www.azgfd.com",
+   "robots": "not checked",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "n/a",
+    "map_id": "n/a"
+   },
+   "pota_parks_in_research": "119",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Parks Canada (Canada's Historic Places)",
+   "status": "off: no official list found (research table, 21 Nov)",
+   "link_kind": "Canada's Historic Places id",
+   "source_url": "",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "",
+   "robots": "not checked",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "Place id in the URL: historicplaces.ca/en/rep-reg/place-lieu.aspx?id=N",
+    "map_id": "not confirmed - no official boundary list found"
+   },
+   "pota_parks_in_research": "112",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Yukon Parks (territorial parks, protected areas)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://open.yukon.ca/data/park-and-protected-areas-1m",
+   "licence": "Open Government Licence - Yukon",
+   "licence_ok": false,
+   "terms_url": "https://open.yukon.ca",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes for dataset pages; /api/ disallowed; Crawl-Delay 10)",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "not confirmed",
+    "map_id": "not confirmed"
+   },
+   "pota_parks_in_research": "112",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Idaho Fish and Game WMAs",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://gis.idfg.idaho.gov/server/rest/services/Access/MapServer/2",
+   "licence": "CC-BY Idaho Fish and Game (layer copyright text)",
+   "licence_ok": false,
+   "terms_url": "https://idfg.idaho.gov/data/gis",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (404 = no rules))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "Name (display field); web ID not confirmed",
+    "map_id": "Name (display field); no numeric ID confirmed"
+   },
+   "pota_parks_in_research": "111",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Tennessee TDEC (State Parks and Natural Areas)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://tnmap.tn.gov/arcgis/rest/services/ENVIRONMENTAL/PUBLIC_LANDS/MapServer",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes: disallows /esn/ /tdoc/ /tfacts/ /tfactsupdate/ /proxy/ only)",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "not confirmed",
+    "map_id": "not confirmed (PUBLIC_LANDS, TDEC layer)"
+   },
+   "pota_parks_in_research": "at least 111",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Vermont ANR (FPR state parks/forests; Fish and Wildlife WMAs)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://anrmaps.vermont.gov/arcgis/rest/services/Open_Data/OPENDATA_ANR_CADASTRAL_SP_NOCACHE_v2/MapServer/38",
+   "licence": "CC BY-SA 4.0 (data.gov harvest)",
+   "licence_ok": false,
+   "terms_url": "https://geodata.vermont.gov",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (404 = no rules))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "ANRUnit (coded value); ANRUnitType",
+    "map_id": "not confirmed"
+   },
+   "pota_parks_in_research": "109",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Hawaii DLNR (State Parks, Forest Reserves)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "https://planning.hawaii.gov/gis",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (404 = no rules))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "NAME (display field)",
+    "map_id": "not confirmed"
+   },
+   "pota_parks_in_research": "103",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Tennessee TWRA (WMAs)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://tnmap.tn.gov/ArcGIS/rest/services/ENVIRONMENTAL/TWRA/MapServer",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes: disallows /esn/ /tdoc/ /tfacts/ /tfactsupdate/ /proxy/ only)",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "not confirmed",
+    "map_id": "not confirmed (TWRA service, WMA layer)"
+   },
+   "pota_parks_in_research": "at least 101",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "North Carolina Wildlife Resources Commission",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://www.ncwildlife.gov/hunting/where-hunt-shoot/game-lands-maps",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21, second pass: yes (fully read: only Drupal system/admin/search/user paths disallowed))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "not confirmed",
+    "map_id": "not confirmed"
+   },
+   "pota_parks_in_research": "at least 93",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "SC DNR",
+   "status": "off: no official list found (research table, 21 Nov)",
+   "link_kind": "SC DNR managed land id",
+   "source_url": "",
+   "licence": "not confirmed. DNR says GIS data is \"available free of charge to the public\"",
+   "licence_ok": false,
+   "terms_url": "https://www.dnr.sc.gov/gis.html",
+   "robots": "not checked",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "POTA file has no SC web links",
+    "map_id": "not confirmed"
+   },
+   "pota_parks_in_research": "89",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Delaware DNREC (State Parks, Wildlife Areas)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Society/DE_State_Lands/FeatureServer/0",
+   "licence": "Disclaimer only (FirstMap licenseInfo); no open licence confirmed",
+   "licence_ok": false,
+   "terms_url": "https://firstmap.delaware.gov",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (404 = no rules))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "not confirmed (USE coded domain seen)",
+    "map_id": "not confirmed"
+   },
+   "pota_parks_in_research": "89",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Oklahoma Department of Wildlife Conservation (WMAs)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://www.wildlifedepartment.com/hunting/wma",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21, second pass: yes (fully read: only Drupal system/admin/search/user paths disallowed))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "not confirmed",
+    "map_id": "no downloadable official boundary list found"
+   },
+   "pota_parks_in_research": "at least 79",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "BLM Herd Management Areas (wild horse and burro)",
+   "status": "off: licence not confirmed as allowing our use (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://gis.blm.gov/arcgis/rest/services/range/BLM_Natl_WHB/MapServer/0",
+   "licence": "Nevada layer copyright text: reference and acknowledge BLM in derived products; no other licence line read",
+   "licence_ok": false,
+   "terms_url": "https://www.blm.gov/about/data",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (gis.blm.gov robots.txt returns 404 = no rules; checked in browser 2026-11-21))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "HMA_NAME (display field); no URL field seen",
+    "map_id": "HMA_ID (string, length 6) on the AZ layer; HMA_NAME and ADM_UNIT_CD on NV, NM, CA layers; national layer ID field not read"
+   },
+   "pota_parks_in_research": "74",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Suwannee River Water Management District (SRWMD)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://mysuwanneeriver.com/154/GIS-Data",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "https://mysuwanneeriver.com",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21, second pass: yes for /154/GIS-Data; Crawl-delay 10; ClaudeBot and other AI crawlers share the same path rules (admin, search, map.aspx, calendar, bids, faq, rss) not a full block; map.aspx disallowed)",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "not confirmed",
+    "map_id": "not confirmed"
+   },
+   "pota_parks_in_research": "72",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Northwest Territories (ENR territorial parks)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://www.apps.geomatics.gov.nt.ca/arcgis/rest/services/GNWT/Environment_LCC/MapServer/204",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "https://www.geomatics.gov.nt.ca",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (404 = no rules))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "not confirmed",
+    "map_id": "not confirmed"
+   },
+   "pota_parks_in_research": "68",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Utah Division of Wildlife Resources (WMAs)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://wildlife.utah.gov/wmas",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes: Joomla rules disallow /api/ and system folders; no park-data path)",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "wildlife.utah.gov/wmas page; not confirmed",
+    "map_id": "no downloadable official WMA layer found"
+   },
+   "pota_parks_in_research": "at least 65",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Rhode Island DEM (State Parks, Management Areas)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://risegis.ri.gov/hosting/rest/services/DEM_Outdoor_Recreation_v3/MapServer/21",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "https://dem.ri.gov",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (404 = no rules))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "DEM_ID (string 16), DEM_DIV",
+    "map_id": "not confirmed"
+   },
+   "pota_parks_in_research": "61",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Prince Edward Island (provincial parks, WMAs)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://gis.princeedwardisland.ca/server/rest/services/GeoLincData/GeoLinc_Wildlife_Management_Area/MapServer",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "https://www.princeedwardisland.ca",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (404 = no rules))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "not confirmed",
+    "map_id": "not confirmed"
+   },
+   "pota_parks_in_research": "54",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Florida FWC (Wildlife Management Areas)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://gis.myfwc.com/mapping/rest/services/Open_Data/Wildlife_Management_Areas_Florida/MapServer/1",
+   "licence": "Older metadata: \"in the public domain\"; attribute FWC as source",
+   "licence_ok": false,
+   "terms_url": "https://myfwc.com",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (404 = no rules))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "NAME (display field); FWC_REGION, MGT_TYPE in older shapefile docs",
+    "map_id": "not confirmed"
+   },
+   "pota_parks_in_research": "53",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "ME Parks",
+   "status": "off: no official list found (research table, 21 Nov)",
+   "link_kind": "ME parks id",
+   "source_url": "",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "",
+   "robots": "not checked",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "URL is a parksearch query page, not a per-park id",
+    "map_id": "not confirmed"
+   },
+   "pota_parks_in_research": "48",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Nunavut Parks and Special Places",
+   "status": "off: no official list found (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "https://gov.nu.ca/node/710",
+   "robots": "not checked",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "n/a",
+    "map_id": "n/a"
+   },
+   "pota_parks_in_research": "48",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Oklahoma Tourism and Recreation (State Parks)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://data.ok.gov/dataset/oklahoma-state-parks",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes for dataset pages; disallows /api/, /datastore/, /dataset/activity/ etc (list truncated at 700 chars, no park path seen))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "not confirmed (list of parks and addresses)",
+    "map_id": "none - no boundary layer, address list only"
+   },
+   "pota_parks_in_research": "at least 39",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "St. Johns River Water Management District (SJRWMD)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://www.sjrwmd.com/?p=7111",
+   "licence": "SJRWMD: information \"provided as is\" (FGDL metadata)",
+   "licence_ok": false,
+   "terms_url": "https://www.sjrwmd.com",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21, second pass: yes (fully read: only WordPress admin, /static/, /orientation/, /governingboard/ disallowed; aws.sjrwmd.com and static.sjrwmd.com hosts excluded))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "not confirmed",
+    "map_id": "not confirmed"
+   },
+   "pota_parks_in_research": "37",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "District of Columbia DPR and NPS in DC",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Recreation_WebMercator/MapServer/9",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "https://opendata.dc.gov",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (404 = no rules))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "not confirmed",
+    "map_id": "not confirmed"
+   },
+   "pota_parks_in_research": "35",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Florida Forest Service / FDACS (State Forests)",
+   "status": "off: its host is saved copies only, never read live; licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://services1.arcgis.com/T0NPfOCJr9tmBN93/ArcGIS/rest/services/FloridaStateForests/FeatureServer",
+   "licence": "FGDL: data provided \"as is\" (university host)",
+   "licence_ok": false,
+   "terms_url": "https://www.fdacs.gov/Forest-Wildlife/Florida-Forest-Service",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21, second pass: unreadable (403), no rules)",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "DOF_NAME (display field on FGDL layer)",
+    "map_id": "not confirmed"
+   },
+   "pota_parks_in_research": "35",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Sepaq",
+   "status": "off: no official list found (research table, 21 Nov)",
+   "link_kind": "Sepaq park code",
+   "source_url": "",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "",
+   "robots": "not checked",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "sepaq.com/pq/<code>/ path - park code in URL; from file example",
+    "map_id": "not confirmed"
+   },
+   "pota_parks_in_research": "33",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Idaho Parks and Recreation",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://idpr-data-idaho.hub.arcgis.com",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "https://parksandrecreation.idaho.gov",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes for dataset pages (Crawl-delay 60; disallows /sites/ /admin/ /sessions/ /groups/ /people/ /workspace/))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "not confirmed",
+    "map_id": "not confirmed"
+   },
+   "pota_parks_in_research": "28",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Southwest Florida Water Management District (SWFWMD)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://www25.swfwmd.state.fl.us/arcgis12/rest/services/OpenData/LandResources/FeatureServer/2",
+   "licence": "licenseInfo blank on service; \"All data are intended for resource management use\" disclaimer",
+   "licence_ok": false,
+   "terms_url": "https://www.swfwmd.state.fl.us",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (robots.txt returns 404 = no rules; checked in browser 2026-11-21))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "not confirmed",
+    "map_id": "PROJECTNAME (display field on Acquired District Lands layer); no stable ID confirmed"
+   },
+   "pota_parks_in_research": "21",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "South Florida Water Management District (SFWMD)",
+   "status": "off: no official list found (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "https://www.sfwmd.gov",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21, second pass: yes (www.sfwmd.gov robots.txt fully read, no relevant disallow) but no official park list found)",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "n/a",
+    "map_id": "n/a"
+   },
+   "pota_parks_in_research": "20",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Northwest Florida Water Management District (NWFWMD)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://nwfwater.com/Lands",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "https://nwfwater.com",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21, second pass: yes (fully read: only /wp-admin/ disallowed))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "not confirmed",
+    "map_id": "not confirmed"
+   },
+   "pota_parks_in_research": "9",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Wyoming Game and Fish (WHMAs)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://wgfd.wyo.gov/geospatial-data",
+   "licence": "WGFD says files are not legal documents - not a licence",
+   "licence_ok": false,
+   "terms_url": "https://wgfd.wyo.gov/geospatial-data",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21, second pass: yes (fully read: only Drupal system/admin paths and /search disallowed))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "not confirmed",
+    "map_id": "not confirmed"
+   },
+   "pota_parks_in_research": "not split",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Nevada Division of State Parks",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/NDSP_State_Park_Bondaries/FeatureServer",
+   "licence": "layer says it is for illustrative purposes only - not a licence; the separate SCORP recreation layer states CC0 1.0 Universal",
+   "licence_ok": false,
+   "terms_url": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/info/iteminfo",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (404 = no rules))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "not confirmed",
+    "map_id": "not confirmed (NDSP_State_Park_Bondaries layer 1)"
+   },
+   "pota_parks_in_research": "not split",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Nevada Department of Wildlife (WMAs)",
+   "status": "off: its host is saved copies only, never read live; licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://services.arcgis.com/RyxlXSfFi87rAosq/ArcGIS/rest/services/Wildlife_Management_Area_Polygon_Features/FeatureServer",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21, second pass: unreadable (403), no rules)",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "not confirmed",
+    "map_id": "not confirmed"
+   },
+   "pota_parks_in_research": "not split",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Virginia DWR (Wildlife Management Areas)",
+   "status": "off: licence not confirmed as allowing our use (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://services.dwr.virginia.gov/arcgis/rest/services/HUB_Layers/DWR_WMA_Boundaries/FeatureServer/0",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (404 = no rules))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "URL (layer field)",
+    "map_id": "WMA_NAME and Number (layer 0, DWR_WMA_Boundaries)"
+   },
+   "pota_parks_in_research": "not split",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "USACE (recreation/reservoir boundaries)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://ags03.sec.usace.army.mil/server/rest/services/Hosted/RecreationSite_Status_gdb/FeatureServer",
+   "licence": "Reservoir layer on HIFLD: public domain (Access: none)",
+   "licence_ok": false,
+   "terms_url": "https://corpslakes.erdc.dren.mil",
+   "robots": "unknown (browser refused to load the host twice)",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "not confirmed",
+    "map_id": "not confirmed"
+   },
+   "pota_parks_in_research": "0",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Utah Division of State Parks",
+   "status": "off: no official list found (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "https://gis.utah.gov/data/recreation/",
+   "robots": "not checked",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "n/a",
+    "map_id": "n/a"
+   },
+   "pota_parks_in_research": "0",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "North Carolina Division of Parks and Recreation",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://xfer.services.ncdot.gov/gisdot/Metadata/Atlas/Places%20of%20Interest%20Poly.pdf",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "https://www.dncr.nc.gov",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (404 = no rules))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "not confirmed",
+    "map_id": "not confirmed"
+   },
+   "pota_parks_in_research": "0",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Maine Dept of Inland Fisheries and Wildlife (WMAs)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://www.maine.gov/geolib/catalog",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "https://www.maine.gov/ifw",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21, second pass: yes (fully read: /geolib and /ifw not disallowed; /ifwns/ and many /search/node paths are))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "not confirmed",
+    "map_id": "not confirmed"
+   },
+   "pota_parks_in_research": "0",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Wyoming State Parks, Historic Sites and Trails",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://gis.deq.wyo.gov/arcgis/rest/services/WYSPHST_pts/MapServer",
+   "licence": "licenseInfo: \"None at this time\"",
+   "licence_ok": false,
+   "terms_url": "https://wyoparks.wyo.gov",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (404 = no rules))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "not confirmed",
+    "map_id": "not confirmed"
+   },
+   "pota_parks_in_research": "0",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "USFWS (National Wildlife Refuge System boundaries)",
+   "status": "off: its host is saved copies only, never read live; licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer",
+   "licence": "No licence line read",
+   "licence_ok": false,
+   "terms_url": "https://www.fws.gov/service/national-wildlife-refuge-system-gis-data-and-mapping-tools",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21, second pass: unreadable (403), no rules)",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "CMPXNAME (display field)",
+    "map_id": "not confirmed"
+   },
+   "pota_parks_in_research": "0",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Tennessee Division of Forestry (State Forests)",
+   "status": "off: licence not confirmed as allowing our use; the web id field and the map id field are not both confirmed on the list (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://tnmap.tn.gov/arcgis/rest/services/ENVIRONMENTAL/PUBLIC_LANDS/MapServer",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "https://www.tn.gov/agriculture/forests/state-forests.html",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21, second pass: yes: disallows /esn/ /tdoc/ /tfacts/ /tfactsupdate/ /proxy/ only)",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "not confirmed",
+    "map_id": "not confirmed"
+   },
+   "pota_parks_in_research": "0",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "Oklahoma other agencies (Forestry Services, others)",
+   "status": "off: no official list found (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "",
+   "licence": "",
+   "licence_ok": false,
+   "terms_url": "https://oklahoma.gov",
+   "robots": "not checked",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "n/a",
+    "map_id": "n/a"
+   },
+   "pota_parks_in_research": "0",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  },
+  {
+   "enabled": false,
+   "agency": "BLM NLCS Wilderness and Wilderness Study Areas",
+   "status": "off: licence not confirmed as allowing our use (research table, 21 Nov)",
+   "link_kind": "",
+   "source_url": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_WLD_WSA/MapServer",
+   "licence": "Data.gov record for the WSA layer: licence field begins http://www.usa.gov (rest truncated, likely the public domain label); service item info: \"This data may be updated by the BLM without notification\"",
+   "licence_ok": false,
+   "terms_url": "https://www.blm.gov/about/data",
+   "robots": "not checked for the exact list path (owner read the host in the browser, 2026-11-21: yes (gis.blm.gov robots.txt returns 404 = no rules; checked in browser 2026-11-21))",
+   "format": "",
+   "web_id": {},
+   "map": {},
+   "fields_seen": {
+    "web_id": "NLCS_NAME (display field)",
+    "map_id": "CASEFILE_NO and DESIG_DATE seen on the Hub copy; NLCS_NAME on production; no stable ID confirmed"
+   },
+   "pota_parks_in_research": "0",
+   "checked": "owner's research table, 2026-11-21 (fields and licences as read there; nothing read by a bot)"
+  }
+ ]
+}

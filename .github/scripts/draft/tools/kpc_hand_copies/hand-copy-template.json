@@ -1,0 +1,7 @@
+{
+ "about": "One line per hand-copied size, for the acreage bot's research file (a list under a key named hand_copies). Every line MUST carry agency and source_url: the page the number was copied from. A line without them is listed by kpc_hand_copies.py --lines and never counts in the key's size check. Copy the number exactly as the agency writes it; give the unit the agency gives.",
+ "hand_copies": [
+  {"park_name": "Invented Lake State Park", "size": 1234, "unit": "acres", "agency": "ZZ State Parks",
+   "source_url": "https://agency.invented.example/parks/invented-lake", "park_number": "", "copied_by": "chat or person", "copied_on": "2026-11-21"}
+ ]
+}
