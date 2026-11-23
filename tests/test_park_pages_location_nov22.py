@@ -57,6 +57,19 @@ check('a "Directions:" line is directions',
 check('still silent: a page with no way to get there has no directions',
       R.directions_of('Welcome to the park. We have trails and picnic tables.') is None)
 
+# 22 Nov 9 PM (owner: "dont think it is doing the best job"): Canada and escaped page code
+check('a Canadian address with a province and postal code is found and cut at the postal code',
+      addr('c/o Test Falls Provincial Park PO Box 252 4853 Highway 11/17 Testfalls, ON P0T 1W0 Phone 807-555-0100') == ['4853 Highway 11/17 Testfalls, ON P0T 1W0'])
+check('a concession road address is found', addr('Physical Address: 4998 Concession Road 7 Testton, ON L9R 1W1') == ['4998 Concession Road 7 Testton, ON L9R 1W1'])
+check('a French address is found', addr('1234, chemin du Lac-Test, Saint-Test (Québec) J0T 1A0') == ['1234, chemin du Lac-Test, Saint-Test (Québec) J0T 1A0'])
+check('an address inside escaped page code is read clean',
+      addr('Test Landmark &lt;p&gt; &lt;strong&gt;Mailing:&lt;/strong&gt; PO Box 103&lt;br&gt; Testbay, NL A0K 4H0') == ['PO Box 103, Testbay, NL A0K 4H0'])
+check('a plain Box address with a full province name is found', addr('Box 130, Testville, Saskatchewan S0K 2B0') == ['Box 130, Testville, Saskatchewan S0K 2B0'])
+d = R.directions_of('Le parc est situé à 30 km de Testville par la route 132.') or {}
+check('French directions in kilometres name the road and the town', d.get('roads') == ['route 132'] and d.get('towns') == ['Testville'])
+d = R.directions_of('Located 30 km north of Testtown on Highway 3.') or {}
+check('"located 30 km north of" counts as directions', d.get('roads') == ['Highway 3'] and d.get('towns') == ['Testtown'])
+
 tool = ROOT / '.github' / 'scripts' / 'pc' / 'kpc_reread_location.py'
 r = subprocess.run([sys.executable, '-I', str(tool), '--selftest'], capture_output=True, text=True)
 check('the PC tool marks only own pages with no address, point or directions for reading again, once',

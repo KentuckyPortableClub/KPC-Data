@@ -77,6 +77,8 @@ WILD_AFTER = re.compile(r'acres of (?:[\w-]+\s+){0,3}wilderness', re.I)
 STREET_WORD = re.compile(r'\b(?:Rd|Road|Dr|Drive|St|Street|Ave|Avenue|Blvd|Boulevard|Hwy|Highway|'
                          r'Lane|Ln|Way|Pike|Loop|Parkway|Pkwy|Circle|Ct|Court)\.?\b')
 ZIP_RX = re.compile(r'\b(\d{5})(?:-\d{4})?\b')
+# 22 Nov 2026 (owner: 'dont think it is doing the best job'): a Canadian postal code ends an address the same way a ZIP does
+POSTAL_RX = re.compile(r'\b[ABCEGHJ-NPRSTVXY]\d[ABCEGHJ-NPRSTV-Z][ -]?\d[ABCEGHJ-NPRSTV-Z]\d\b')
 PO_RX = re.compile(r'\bP\.?\s*O\.?\s*Box\s+\d+\b', re.I)
 OFFICE_WORD = re.compile(r'field office|district office|ranger district|headquarters|supervisor.?s office|'
                          r'\bmailing\b|p\.?\s*o\.?\s*box', re.I)
@@ -90,32 +92,42 @@ STREET_WORDS2 = (r'(?:Road|Rd|Drive|Dr|Street|St|Avenue|Ave|Av|Boulevard|Blvd|Hi
                  r'Byway|Path|Row|Square|Sq|Crossing|Xing|Bypass|Byp|Cove|Hollow|Holw|Ridge|Point|Pt|Landing|Plaza|Alley|Spur|Grade|Bend)')
 NUM_ROAD = (r'(?:(?:County|State|US|U\.S\.|Interstate|Forest|National Forest|Farm to Market|Ranch to Market|Forest Service|FS|Old|'
             r'State Highway|State Route|State Road|Township|Parish|Provincial)\s+)?(?:Road|Rd|Route|Rte|Highway|Hwy|Hwy\.|Rt|'
-            r'CR|SR|FM|RM|RR|FR|FSR|KY|US|Trunk Highway|TH|Hwy\s+No\.?)\s*-?\s*\d{1,5}[A-Z]?')
+            r'CR|SR|FM|RM|RR|FR|FSR|KY|US|Trunk Highway|TH|Hwy\s+No\.?)\s*-?\s*\d{1,5}[A-Z]?(?:/\d{1,5})?')
 _ST2 = r'(?:A[LKZR]|C[AOT]|D[EC]|FL|GA|HI|I[DLNA]|K[SY]|LA|M[EDAINSOT]|N[EVHJMYCD]|O[HKR]|PA|RI|S[CD]|T[NX]|UT|V[TA]|W[AVIY]|PR|VI|GU)'
 _STN = r'(?:Alabama|Alaska|Arizona|Arkansas|California|Colorado|Connecticut|Delaware|Florida|Georgia|Hawaii|Idaho|Illinois|' \
        r'Indiana|Iowa|Kansas|Kentucky|Louisiana|Maine|Maryland|Massachusetts|Michigan|Minnesota|Mississippi|Missouri|Montana|' \
        r'Nebraska|Nevada|New Hampshire|New Jersey|New Mexico|New York|North Carolina|North Dakota|Ohio|Oklahoma|Oregon|' \
        r'Pennsylvania|Rhode Island|South Carolina|South Dakota|Tennessee|Texas|Utah|Vermont|Virginia|Washington|West Virginia|' \
        r'Wisconsin|Wyoming|District of Columbia|Puerto Rico)'
+_PROV = r'(?:AB|BC|MB|NB|NL|NS|NT|NU|ON|PE|QC|SK|YT|Alberta|British Columbia|Manitoba|New Brunswick|Newfoundland(?: and Labrador)?|' \
+        r'Nova Scotia|Northwest Territories|Nunavut|Ontario|Prince Edward Island|Qu[eé]bec|Saskatchewan|Yukon)'
+_PC = r'[ABCEGHJ-NPRSTVXY]\d[ABCEGHJ-NPRSTV-Z][ -]?\d[ABCEGHJ-NPRSTV-Z]\d'
 _DIRW = r'(?:[NSEW]{1,2}\.?|North|South|East|West|Northeast|Northwest|Southeast|Southwest)'
 _TOWN = r"(?:[A-Z][A-Za-z.'’-]+\s+){0,3}[A-Z][A-Za-z.'’-]+"
 _SEP = r'(?:\s*[,|•·]\s*|\s+-\s+|\s+)'
 ADDR_RX = re.compile(
     r'\b\d{1,6}[A-Z]?(?:-\d{1,5})?\s+(?:' + _DIRW + r'\s+)?'
-    r'(?:' + NUM_ROAD + r'|(?:[A-Z0-9][\w.\'’-]*\s+){0,5}' + STREET_WORDS2 + r'\b\.?)'
+    r'(?:(?:[A-Z][\w.\'’-]*\s+){0,3}' + NUM_ROAD + r'|(?:[A-Z0-9][\w.\'’-]*\s+){0,5}' + STREET_WORDS2 + r'\b\.?)'
     r'(?:\s+' + _DIRW + r'(?![a-z]))?(?:\s*,?\s*(?:Suite|Ste\.?|Unit|Bldg\.?|Building|#)\s*[\w-]+)?'
-    + _SEP + _TOWN + r',?\s+(?:' + _ST2 + r'|' + _STN + r')\.?,?\s+\d{5}(?:-\d{4})?\b')
-PO_ADDR_RX = re.compile(r'\bP\.?\s*O\.?\s*Box\s+\d+' + _SEP + _TOWN + r',?\s+(?:' + _ST2 + r'|' + _STN + r')\.?,?\s+\d{5}(?:-\d{4})?\b', re.I)
+    + _SEP + _TOWN + r',?\s+\(?(?:(?:' + _ST2 + r'|' + _STN + r')\.?,?\s+\d{5}(?:-\d{4})?|(?:' + _PROV + r')\)?\.?,?\s+' + _PC + r')\b')
+PO_ADDR_RX = re.compile(r'\b(?:P\.?\s*O\.?\s*Box|Box|C\.?\s*P\.?|Case postale)\s+\d+' + _SEP + _TOWN + r',?\s+\(?(?:(?:' + _ST2 + r'|' + _STN
+                        + r')\.?,?\s+\d{5}(?:-\d{4})?|(?:' + _PROV + r')\)?\.?,?\s+' + _PC + r')\b', re.I)
+# French street forms: '1234, chemin du Lac, Saint-Test (Québec) J0T 1A0'
+FR_ADDR_RX = re.compile(r'\b\d{1,6}(?:-\d{1,5})?,?\s+(?:rue|chemin|ch\.|route|rang|boulevard|boul\.|avenue|av\.|autoroute|montée|côte|place|'
+                        r'promenade)\s+[^,\n]{2,60},\s*' + _TOWN + r'\s*,?\s*\(?(?:Qu[eé]bec|QC|Ontario|ON|Nouveau-Brunswick|NB)\)?\.?,?\s+' + _PC + r'\b', re.I)
 ADDR_BEFORE = re.compile(r'(visitor cent(?:er|re)|park address|physical address|street address|park office|'
                          r'headquarters|field office|district office|ranger station|mailing|entrance|located at|address)\W*$', re.I)
 # directions: these headings, a 'Directions:' line, or a sentence that says how to get there
 DIR_HEADS = {'directions', 'getting here', 'getting there', 'how to get there', 'how to get here', 'driving directions',
              'location', 'location and directions', 'directions and parking', 'access', 'access and parking', 'find it',
-             'how to find it', 'travel directions', 'directions to the park', 'getting to the park', 'parking and access'}
+             'how to find it', 'travel directions', 'directions to the park', 'getting to the park', 'parking and access',
+             # 22 Nov: Canada (French and English)
+             "comment s'y rendre", "pour s'y rendre", 'itinéraire', 'accès', 'accès et stationnement', 'location and directions',
+             'how to get here', 'getting here and parking'}
 DIR_LINE = re.compile(r'(?im)^[ \t]*(?:directions|driving directions|getting there|how to get there|location|access|find it)'
                       r'[ \t]*:[ \t]*(\S.{15,})$')
 DIR_SENT = re.compile(r'(?i)(?:\bfind it\b|\blocated\s+(?:about\s+|approximately\s+|just\s+)?(?:\d+(?:\.\d+)?|one|two|three|four|'
-                      r'five|six|seven|eight|nine|ten|a half)\s+(?:-\s*)?miles?\b|\bfrom\s+(?:I-\d|US|U\.S\.|Interstate|Highway|Hwy|'
+                      r'five|six|seven|eight|nine|ten|a half)\s+(?:-\s*)?(?:miles?|km|kilomet(?:er|re)s?)\b|\bà\s+(?:environ\s+)?\d+\s*km\b|\bfrom\s+(?:I-\d|US|U\.S\.|Interstate|Highway|Hwy|'
                       r'State Route|Route|SR|CR|County Road|the (?:town|city|village) of)|\b(?:take|follow|travel|drive|go|turn)\s+'
                       r'(?:north|south|east|west|left|right|I-\d|US|Highway|Hwy|Route|State|County|exit)\b|\bparking (?:area|lot)s? '
                       r'(?:is|are) (?:located )?(?:on|off|at|along)\b)')
@@ -125,6 +137,7 @@ ROAD_RX = [
                r'Trunk Highway)\s+[A-Z0-9]{1,5}\b'),
     re.compile(r'\b(?:Highway|Hwy|Route|Rte|County Road|CR|SR|FM|RM|FR|FSR|Co\.? Rd\.?)\s+[A-Z]?\d{0,5}[A-Z]?\b(?<=[0-9A-Z])'),
     re.compile(r'\b\d{1,4}(?:st|nd|rd|th)\s+(?:Ave|Avenue|St|Street|Rd|Road|Lane|Ln|Trail)\b'),
+    re.compile(r'(?i)\b(?:route|autoroute)\s+\d{1,4}\b'),   # 22 Nov: Canada ('par la route 132', 'Autoroute 20')
     re.compile(r'\bI-\d{1,3}\b'),
     re.compile(r'\bexit\s+\d+\b', re.I),
     re.compile(r'\b(?:US|UT|SR|[A-Z]{2})-\d{1,4}\b'),
@@ -135,6 +148,7 @@ TOWN_RX = re.compile(r'\b(?:from|toward|to)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)')
 # 22 Nov: 'north of Lake Geneva', 'near Deer Park', 'State Highway 46 (Deer Park)'
 NEAR_TOWN = re.compile(r'\b(?:(?:north|south|east|west|northeast|northwest|southeast|southwest)\s+of|near|outside(?:\s+of)?)\s+'
                        r'([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)')
+FR_TOWN = re.compile(r"\b(?:km|kilomètres?)\s+(?:au\s+(?:nord|sud|est|ouest)\s+)?(?:de|d')\s*([A-Z][\w'-]+(?:-[A-Z][\w'-]+)*)")
 PAREN_TOWN = re.compile(r'\d[A-Z]?\s*\(([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)\)')
 SLASH_TOWN = re.compile(r'\b[A-Z]{2}-\d+/([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)')
 TOWN_SKIP = {'North', 'South', 'East', 'West', 'The', 'Exit', 'Highway', 'Old', 'Main', 'National', 'State', 'Interstate', 'County', 'US'}
@@ -849,12 +863,16 @@ def _section(text, names):
 
 def addresses_in(text):
     """R-PR7. A street or a P.O. box. The role comes from the heading and the words, never from a geocoder."""
+    import html as _html
+    if '&lt;' in (text or '') or '&amp;' in (text or ''):
+        text = re.sub(r'<(?:br|p|/p|div|/div|li)\b[^>]*>', '\n', _html.unescape(text), flags=re.I)   # 22 Nov: escaped page code
+        text = re.sub(r'<[^>]+>', ' ', text)
     out = []
     block = _section(text, {'addresses', 'address', 'mailing address', 'location'})
     chunks = [('addresses', block)] if block else []
     # 22 Nov: addresses anywhere on the page (one line or split over lines), cut at the ZIP; the words just before say whose
     flat = re.sub(r'[ \t]*\n[ \t]*', ' \n ', text or '')
-    for rx in (ADDR_RX, PO_ADDR_RX):
+    for rx in (ADDR_RX, PO_ADDR_RX, FR_ADDR_RX):
         for m in rx.finditer(flat.replace(' \n ', ', ')):
             chunks.append(('line', m.group(0), flat.replace(' \n ', ', ')[max(0, m.start() - 60):m.start()]))
     seen = set()
@@ -863,17 +881,20 @@ def addresses_in(text):
         if not chunk:
             continue
         role, why = _addr_role(before + ' ' + chunk if how == 'line' else chunk, how)
+        import html as _html
+        chunk = re.sub(r'<[^>]+>', ' ', _html.unescape(chunk))       # 22 Nov: text that still carries escaped page code
         text_one = ' '.join(chunk.split())
         if how == 'addresses':
             # the address heading's block: keep the address itself, cut at its ZIP (22 Nov)
             one = ' '.join(chunk.replace('\n', ', ').split())
-            got = ADDR_RX.search(one) or PO_ADDR_RX.search(one)
+            got = ADDR_RX.search(one) or PO_ADDR_RX.search(one) or FR_ADDR_RX.search(one)
             text_one = got.group(0) if got else (_tight_address(chunk) or text_one)[:180]
         text_one = _cut_at_zip(text_one)
         key = norm_written(text_one)[:80]
-        if key in seen or not (ZIP_RX.search(text_one) or PO_RX.search(text_one)):
+        if key in seen or not (ZIP_RX.search(text_one) or PO_RX.search(text_one) or POSTAL_RX.search(text_one)):
             continue
-        if not (STREET_WORD.search(text_one) or PO_RX.search(text_one) or ADDR_RX.search(text_one)):
+        if not (STREET_WORD.search(text_one) or PO_RX.search(text_one) or ADDR_RX.search(text_one) or FR_ADDR_RX.search(text_one)
+                or PO_ADDR_RX.search(text_one)):
             continue
         seen.add(key)
         out.append({'text': clip(text_one, 160), 'role': role, 'why': why})
@@ -881,10 +902,13 @@ def addresses_in(text):
 
 
 def _cut_at_zip(t):
-    """An address ends at its ZIP: a phone, an email or 'link to this page' after it is cut off (22 Nov)."""
+    """An address ends at its ZIP (or Canadian postal code): a phone, an email or 'link to this page' after it is cut off (22 Nov)."""
     m = None
-    for m in ZIP_RX.finditer(t or ''):
+    for m in list(ZIP_RX.finditer(t or '')) + list(POSTAL_RX.finditer(t or '')):
         pass
+    ends = [x.end() for x in list(ZIP_RX.finditer(t or '')) + list(POSTAL_RX.finditer(t or ''))]
+    if ends:
+        return t[:max(ends)].strip(' ,;|')
     return (t[:m.end()] if m else t).strip(' ,;|')
 
 
@@ -987,7 +1011,7 @@ def directions_of(text):
     bare = re.compile(r'(?i)^(?:(?:state|county|us|old)\s+)?(?:highway|hwy|road|route|street|avenue|drive|lane|boulevard|parkway)$')
     roads = [r for r in roads if not bare.match(r) and not any(r != o and re.search(r'\b' + re.escape(r) + r'$', o) for o in roads)]
     towns, seen_t = [], set()
-    for rx in (TOWN_RX, SLASH_TOWN, NEAR_TOWN, PAREN_TOWN):
+    for rx in (TOWN_RX, SLASH_TOWN, NEAR_TOWN, PAREN_TOWN, FR_TOWN):
         for m in rx.finditer(block):
             town = m.group(1).strip()
             if town.split()[0] in TOWN_SKIP or town.split()[-1] in ('County', 'Parish', 'Road', 'Highway', 'Avenue', 'Street'):
