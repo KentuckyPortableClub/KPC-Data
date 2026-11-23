@@ -1,0 +1,203 @@
+#!/usr/bin/env python3
+"""kpc_geocode_addresses.py (22 Nov 2026, owner 10:26 PM: "run the address through a script one time and convert it into some
+format the matching tool could use"): turns the US street addresses the page reader found into map points, ONE time, and writes
+them into the reader's facts as page points, so the key's match checks use them exactly like a map point printed on the page.
+
+How: the US Census Bureau's free address lookup (geocoding.geo.census.gov, batch: up to 10,000 addresses in one request, no
+key). robots.txt is read first, through kpc_manners, and wins. Only street addresses with a US state and ZIP are sent (a P.O. box
+has no place on the ground and is never sent). Each address is asked once: out\\geocoded.json keeps every answer, and a later run
+asks only for new addresses. A point is kept only within 300 km of POTA's pin (the reader's own point_ok rule) and carries the
+address's role (park, visitor centre, office, mailing, unknown); the match checks never use an office or mailing point.
+Canadian addresses are not sent (no free batch lookup); Canada's pages mostly print their map points already.
+Counts only, never a park name.
+  python kpc_geocode_addresses.py --out out --scripts scripts        (--selftest)"""
+import argparse, csv, datetime, io, json, os, pathlib, re, sys, tempfile, uuid
+
+URL = 'https://geocoding.geo.census.gov/geocoder/locations/addressbatch'
+BATCH = 9000
+STATES = ('AL AK AZ AR CA CO CT DE DC FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA '
+          'RI SC SD TN TX UT VT VA WA WV WI WY PR VI GU').split()
+NAMES = {'alabama': 'AL', 'alaska': 'AK', 'arizona': 'AZ', 'arkansas': 'AR', 'california': 'CA', 'colorado': 'CO',
+         'connecticut': 'CT', 'delaware': 'DE', 'district of columbia': 'DC', 'florida': 'FL', 'georgia': 'GA', 'hawaii': 'HI',
+         'idaho': 'ID', 'illinois': 'IL', 'indiana': 'IN', 'iowa': 'IA', 'kansas': 'KS', 'kentucky': 'KY', 'louisiana': 'LA',
+         'maine': 'ME', 'maryland': 'MD', 'massachusetts': 'MA', 'michigan': 'MI', 'minnesota': 'MN', 'mississippi': 'MS',
+         'missouri': 'MO', 'montana': 'MT', 'nebraska': 'NE', 'nevada': 'NV', 'new hampshire': 'NH', 'new jersey': 'NJ',
+         'new mexico': 'NM', 'new york': 'NY', 'north carolina': 'NC', 'north dakota': 'ND', 'ohio': 'OH', 'oklahoma': 'OK',
+         'oregon': 'OR', 'pennsylvania': 'PA', 'rhode island': 'RI', 'south carolina': 'SC', 'south dakota': 'SD',
+         'tennessee': 'TN', 'texas': 'TX', 'utah': 'UT', 'vermont': 'VT', 'virginia': 'VA', 'washington': 'WA',
+         'west virginia': 'WV', 'wisconsin': 'WI', 'wyoming': 'WY', 'puerto rico': 'PR'}
+TAIL = re.compile(r'^(?P<head>.+?)[,\s]+(?P<state>' + '|'.join(STATES) + '|' + '|'.join(sorted(NAMES, key=len, reverse=True)) +
+                  r')\.?,?\s+(?P<zip>\d{5})(?:-\d{4})?\s*$', re.I)
+STREET_END = re.compile(r'(?i)^(?P<street>.*?\b(?:road|rd|drive|dr|street|st|avenue|ave|boulevard|blvd|highway|hwy|lane|ln|way|pike|'
+                        r'loop|parkway|pkwy|circle|cir|court|ct|trail|trl|route|rte|place|pl|terrace|ter|run|turnpike|tpke|byway|path|'
+                        r'row|square|sq|crossing|bypass|cove|hollow|ridge|point|landing|plaza|spur|bend|grade)\.?(?:\s+\d{1,5}[a-z]?)?'
+                        r'(?:\s+(?:[NSEW]{1,2}|north|south|east|west))?)\s+(?P<city>[A-Z][\w.\'-]+(?:\s+[A-Z][\w.\'-]+){0,3})$')
+
+
+def split_address(text):
+    """'1217 Test Lake Road Testden, IN 47106' -> (street, city, state, zip), or None when it is not a US street address."""
+    t = ' '.join(str(text or '').replace('\n', ', ').split())
+    if re.search(r'(?i)\b(?:p\.?\s*o\.?\s*box|box\s+\d)', t):
+        return None                                  # a mailbox has no place on the ground
+    m = TAIL.match(t)
+    if not m:
+        return None
+    st = m.group('state')
+    st = NAMES.get(st.lower(), st.upper())
+    head = m.group('head').strip(' ,')
+    if ',' in head:
+        street, city = head.rsplit(',', 1)
+    else:
+        s2 = STREET_END.match(head)
+        if not s2:
+            return None
+        street, city = s2.group('street'), s2.group('city')
+    street, city = street.strip(' ,'), city.strip(' ,')
+    if not re.match(r'^\d', street) or not city:
+        return None
+    return street, city, st, m.group('zip')
+
+
+def post_batch(rows, timeout=600):
+    """rows = [(id, street, city, state, zip)] -> {id: (lat, lon, match type)} from the Census batch lookup."""
+    import urllib.request
+    buf = io.StringIO()
+    w = csv.writer(buf)
+    for r in rows: w.writerow(r)
+    b = '----KPC' + uuid.uuid4().hex
+    body = (f'--{b}\r\nContent-Disposition: form-data; name="benchmark"\r\n\r\nPublic_AR_Current\r\n'
+            f'--{b}\r\nContent-Disposition: form-data; name="addressFile"; filename="kpc.csv"\r\nContent-Type: text/csv\r\n\r\n'
+            ).encode() + buf.getvalue().encode('utf-8') + f'\r\n--{b}--\r\n'.encode()
+    req = urllib.request.Request(URL, data=body, method='POST', headers={
+        'Content-Type': f'multipart/form-data; boundary={b}',
+        'User-Agent': 'KPC bot: address points (https://kentuckyportableclub.github.io/KPC-Links/; ham radio club; one batch request)'})
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        text = r.read().decode('utf-8', 'replace')
+    return parse_answer(text)
+
+
+def parse_answer(text):
+    out = {}
+    for row in csv.reader(io.StringIO(text)):
+        if len(row) < 6 or row[2].strip().lower() != 'match':
+            continue
+        try:
+            lon, lat = (float(x) for x in row[5].split(','))
+        except ValueError:
+            continue
+        out[row[0]] = (round(lat, 6), round(lon, 6), row[3].strip())
+    return out
+
+
+def robots_allow(scripts):
+    """kpc_manners decides (robots.txt + the host rules). False = nothing is sent this run."""
+    sys.path.insert(0, str(pathlib.Path(scripts).resolve()))
+    from kpc_manners import Manners
+    return Manners('KPC address points').robots_ok(URL)
+
+
+def run(out, scripts, today=None, poster=post_batch, allow=robots_allow):
+    sys.path.insert(0, str(pathlib.Path(scripts).resolve()))
+    import kpc_park_pages_rules as R
+    today = today or datetime.date.today().isoformat()
+    out = pathlib.Path(out)
+    gp = out / 'geocoded.json'
+    known = json.loads(gp.read_text(encoding='utf-8')) if gp.is_file() else {}   # address text -> [lat, lon, type] or [] (no match)
+    files = {f: json.loads(f.read_text(encoding='utf-8')) for f in sorted((out / 'facts').glob('*.json'))}
+    want, sent_ids = {}, {}
+    for f, d in files.items():
+        for ref, fact in (d.get('parks') or {}).items():
+            if not isinstance(fact, dict) or fact.get('unofficial') or (fact.get('own_page') or {}).get('is') != 'own':
+                continue
+            for a in (fact.get('location') or {}).get('addresses') or []:
+                if a.get('role') in ('office', 'mailing'):
+                    continue                          # never a matching point anyway
+                parts = split_address(a.get('text'))
+                if parts and a['text'] not in known:
+                    want.setdefault(a['text'], parts)
+    asked = 0
+    if want:
+        if not allow(scripts):
+            print('The Census address lookup is not allowed right now (robots.txt or the host rules): nothing sent.', flush=True)
+        else:
+            items = list(want.items())
+            for i in range(0, len(items), BATCH):
+                chunk = items[i:i + BATCH]
+                ids = {str(n): t for n, (t, _) in enumerate(chunk)}
+                got = poster([(n, *p) for n, (_, p) in zip(ids, chunk)])
+                asked += 1
+                for n, t in ids.items():
+                    known[t] = list(got[n]) if n in got else []
+                gp.write_text(json.dumps(known, indent=0, sort_keys=True), encoding='utf-8')
+    added = parks = 0
+    for f, d in files.items():
+        for ref, fact in (d.get('parks') or {}).items():
+            if not isinstance(fact, dict) or (fact.get('own_page') or {}).get('is') != 'own':
+                continue
+            loc = fact.setdefault('location', {})
+            pin = (fact.get('pota') or {}).get('pin') or [None, None]
+            have = {(round(c.get('lat', 0), 4), round(c.get('lon', 0), 4)) for c in loc.get('coords') or [] if isinstance(c, dict)}
+            got_one = False
+            for a in loc.get('addresses') or []:
+                g = known.get(a.get('text'))
+                if not g or a.get('role') in ('office', 'mailing'):
+                    continue
+                lat, lon = g[0], g[1]
+                if not R.point_ok(lat, lon, fact.get('area') or '', pin) or (round(lat, 4), round(lon, 4)) in have:
+                    continue
+                km = R.haversine_km((lat, lon), (pin[0], pin[1])) if pin and pin[0] is not None else None
+                loc.setdefault('coords', []).append({'lat': lat, 'lon': lon, 'from': 'address (US Census lookup)', 'role': a.get('role') or 'unknown',
+                                                     'label': '', 'km_from_pin': round(km, 2) if km is not None else None, 'address': a.get('text')})
+                have.add((round(lat, 4), round(lon, 4))); added += 1; got_one = True
+            if got_one:
+                parks += 1
+                fact.setdefault('page', {})['read'] = max(str((fact.get('page') or {}).get('read') or ''), today)
+    for f, d in files.items():
+        tmp = f.with_name(f.name + '.tmp'); tmp.write_text(json.dumps(d, ensure_ascii=False), encoding='utf-8'); tmp.replace(f)
+    matched = sum(1 for v in known.values() if v)
+    print(f'Addresses turned into map points: {matched} of {len(known)} looked up ({len(want)} new this run, {asked} request(s)); '
+          f'{added} map point(s) added to {parks} park(s).', flush=True)
+    return 0
+
+
+def selftest():
+    here = pathlib.Path(__file__).resolve().parent
+    scripts = next((p for p in (here.parent, here.parent / 'page-reader' / 'scripts') if (p / 'kpc_park_pages_rules.py').is_file()), here.parent)
+    ok = (split_address('1217 Test Lake Road Testden, IN 47106') == ('1217 Test Lake Road', 'Testden', 'IN', '47106')
+          and split_address('17515 Highway 177, Fargo, GA 31631') == ('17515 Highway 177', 'Fargo', 'GA', '31631')
+          and split_address('2680 Test Trace Parkway, Testtown, Mississippi 38804') == ('2680 Test Trace Parkway', 'Testtown', 'MS', '38804')
+          and split_address('PO Box 12, Test Park, TX 79000') is None and split_address('4853 Highway 11 Testfalls, ON P0T 1W0') is None)
+    calls = []
+
+    def fake(rows):
+        calls.append(len(rows))
+        return {r[0]: (37.501, -85.001, 'Exact') for r in rows if 'Lake' in r[1]}
+
+    with tempfile.TemporaryDirectory() as t:
+        o = pathlib.Path(t); (o / 'facts').mkdir()
+        own = {'is': 'own'}
+        parks = {'K4-0001': {'area': 'US-KY', 'own_page': own, 'pota': {'pin': [37.5, -85.0]}, 'page': {'read': '2026-11-01'},
+                             'location': {'addresses': [{'text': '1217 Test Lake Road Testden, KY 40000', 'role': 'park'}]}},
+                 'K4-0002': {'area': 'US-KY', 'own_page': own, 'pota': {'pin': [37.5, -85.0]},
+                             'location': {'addresses': [{'text': '9 Far Road Testville, KY 40001', 'role': 'unknown'},
+                                                        {'text': 'PO Box 3, Testville, KY 40001', 'role': 'mailing'}]}},
+                 'K4-0003': {'area': 'US-KY', 'own_page': {'is': 'list'}, 'pota': {'pin': [37.5, -85.0]},
+                             'location': {'addresses': [{'text': '1 Test Lake Way Testo, KY 40002', 'role': 'park'}]}}}
+        (o / 'facts' / 'US-KY.json').write_text(json.dumps({'parks': parks}), encoding='utf-8')
+        run(o, scripts, '2026-11-22', poster=fake, allow=lambda s: True)
+        d = json.loads((o / 'facts' / 'US-KY.json').read_text(encoding='utf-8'))['parks']
+        c = (d['K4-0001']['location'].get('coords') or [{}])[0]
+        ok = ok and c.get('lat') == 37.501 and c.get('role') == 'park' and 'Census' in c.get('from', '') and d['K4-0001']['page']['read'] == '2026-11-22'
+        ok = ok and not d['K4-0002']['location'].get('coords') and not d['K4-0003']['location'].get('coords') and calls == [2]
+        run(o, scripts, '2026-11-23', poster=fake, allow=lambda s: True)           # a second run asks nothing again, adds nothing twice
+        d2 = json.loads((o / 'facts' / 'US-KY.json').read_text(encoding='utf-8'))['parks']
+        ok = ok and calls == [2] and len(d2['K4-0001']['location']['coords']) == 1
+    print('selftest', 'ALL PASS' if ok else 'FAIL')
+    return 0 if ok else 1
+
+
+if __name__ == '__main__':
+    ap = argparse.ArgumentParser()
+    ap.add_argument('--out', default='out'); ap.add_argument('--scripts', default='scripts'); ap.add_argument('--selftest', action='store_true')
+    a = ap.parse_args()
+    sys.exit(selftest() if a.selftest else run(a.out, a.scripts))
