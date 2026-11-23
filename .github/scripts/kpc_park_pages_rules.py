@@ -124,7 +124,11 @@ DIR_HEADS = {'directions', 'getting here', 'getting there', 'how to get there', 
              'how to find it', 'travel directions', 'directions to the park', 'getting to the park', 'parking and access',
              # 22 Nov: Canada (French and English)
              "comment s'y rendre", "pour s'y rendre", 'itinéraire', 'accès', 'accès et stationnement', 'location and directions',
-             'how to get here', 'getting here and parking'}
+             'how to get here', 'getting here and parking',
+             # 23 Nov: seen on the real pages (Manitoba 'Park Directions')
+             'park directions', 'driving directions to the park', 'how to find us', 'find us', 'finding the park', 'how to get to the park',
+             'location & directions', 'directions & map', 'directions and map', 'map and directions', 'maps and directions',
+             'directions & parking', 'getting to the area', 'where is it', 'how to find it'}
 DIR_LINE = re.compile(r'(?im)^[ \t]*(?:directions|driving directions|getting there|how to get there|location|access|find it)'
                       r'[ \t]*:[ \t]*(\S.{15,})$')
 DIR_LABEL_NEXT = re.compile(r'(?im)\b(?:driving\s+)?directions\s*:\s*\|?\s*\n((?:[ \t]*[-•]?[ \t]*\S.*\n?){1,4})')
@@ -143,12 +147,13 @@ ROAD_RX = [
     re.compile(r'\b(?:US|SR|SH|CR|FM)\s+\d{1,4}[A-Z]?\b'),   # 'US 2', 'SR 20' (no hyphen)
     re.compile(r'\b(?:(?:State|IL|Illinois|Indiana|Ohio|Iowa|Missouri|Kentucky|[A-Z]{2})\s+)?(?:Rt|Rte|Route)\.?\s+\d{1,4}[A-Z]?\b'),   # 'State Rt 26', 'Illinois Route 154'
     re.compile(r'\bI-\d{1,3}\b'),
+    re.compile(r'\b(?:PTH|PR|Hwy\.?|ON|QC|AB|BC|SK|MB|NS|NB|M|K|WIS)[ -]\d{1,4}[A-Z]?\b'),   # 23 Nov: 'PTH 5', 'PR 366' (Manitoba), 'ON-26', 'M-28'
     re.compile(r'\bexit\s+\d+\b', re.I),
     re.compile(r'\b(?:US|UT|SR|[A-Z]{2})-\d{1,4}\b'),
     re.compile(r'\bOld\s+Highway\s+\d+\b'),
     re.compile(r'\b(?:[A-Z][\w\'.-]+\s+){0,5}(?:Road|Street|Highway|Avenue|Drive|Lane|Boulevard|Parkway)\b'),
 ]
-TOWN_RX = re.compile(r'\b(?:from|toward|to)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)')
+TOWN_RX = re.compile(r'\b(?:from|toward|to|[Ll]eaving|[Dd]eparting)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)')
 # 22 Nov: 'north of Lake Geneva', 'near Deer Park', 'State Highway 46 (Deer Park)'
 NEAR_TOWN = re.compile(r'\b(?:(?:north|south|east|west|northeast|northwest|southeast|southwest)\s+of|near|outside(?:\s+of)?)\s+'
                        r'([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)')
@@ -703,7 +708,7 @@ def name_agreeing(name, pota_name):
     pages said the name differs. The name is looked for in the heading, the title and the best name, whole and in their
     parts (split at | – — - :: •). -> (the part that agrees, 'same' | 'same-core') or (None, None)."""
     seen = []
-    for s in ((name or {}).get('heading'), (name or {}).get('title'), (name or {}).get('best')):
+    for s in [(name or {}).get('heading'), (name or {}).get('title'), (name or {}).get('best')] + list((name or {}).get('headings') or []):
         if not s:
             continue
         s = str(s)
@@ -1068,7 +1073,7 @@ def directions_block(text):
         if block and not _menu_like(block):
             return block
     sents = []
-    for m in DIR_SENT.finditer(text or ''):
+    for m in list(DIR_SENT.finditer(text or '')) + list(OFFSET_RX.finditer(text or '')) + list(FR_OFFSET_RX.finditer(text or '')):
         sent = _sentence(text, m.start())
         if sent and sent not in sents and len(sent) < 500:
             sents.append(sent)
@@ -1173,6 +1178,252 @@ def manager_of(text, host):
     return {'agency': agency, 'office': office, 'quote': quote}
 
 
+# ---------------------------------------------------------------------------------------------------------------------
+# 23 Nov 2026 (owner: "get information off the websites to help confirm and match parks, using real names, addresses and
+# directions and maps"). The real pages were opened first (Wisconsin DNR, Ontario Parks, WDFW, Washington parks, Indiana,
+# Saskatchewan, Manitoba, Arkansas, Illinois). 2,718 of 8,747 own pages gave no address, point or directions, because the
+# page wrote them in ways the finders did not know:
+#   a point in the page's own data (data-lat / data-lng, "latitude":"50.65" in a script), or alone on a line
+#   ('47.733289, -122.256337', 'Center: 47.777189, -117.100543');
+#   an address under an 'Address:' label on separate lines with no street word ('2355 E. 75 S.' / 'Albion, IN 46701';
+#   '1331 ON-26' / 'Minesing, ON' / 'L9X 0G1'), also under 'Mailing Address/Physical Address:';
+#   directions under 'Park Directions', or one sentence ('Find it 2 miles east of Shiocton on Highway 54');
+#   the county ('is in northcentral Outagamie County', 'County: Spokane').
+# Nothing here guesses: a point is kept only when the page gives ONE such point (several different ones = a map of many
+# places or a site template, as on Illinois DNR where every page carries the same park's point: none is taken).
+DATA_LAT = re.compile(r'data-(?:[a-z]+-)*lat(?:itude)?\s*=\s*["\'](-?\d{1,2}\.\d{3,})["\']', re.I)
+DATA_LON = re.compile(r'data-(?:[a-z]+-)*(?:lng|lon|long|longitude)\s*=\s*["\'](-?\d{1,3}\.\d{3,})["\']', re.I)
+KEY_LAT = re.compile(r'(?<![A-Za-z_])\\{0,3}["\']?(?:latitude|lat)\\{0,3}["\']?\s*[:=]\s*\\{0,3}["\']?(-?\d{1,2}\.\d{3,})', re.I)
+KEY_LON = re.compile(r'(?<![A-Za-z_])\\{0,3}["\']?(?:longitude|lng|lon|long)\\{0,3}["\']?\s*[:=]\s*\\{0,3}["\']?(-?\d{1,3}\.\d{3,})', re.I)
+PAIR_LINE = re.compile(r'(?im)^[ \t]*(?P<label>[A-Za-z][A-Za-z /()&.-]{0,40}?)?[ \t]*[:=]?[ \t]*(?P<lat>-?\d{1,2}\.\d{4,8})[ \t]*°?[ \t]*(?P<ns>[NS])?'
+                       r'[ \t]*[,;/][ \t]*(?P<lon>-?\d{1,3}\.\d{4,8})[ \t]*°?[ \t]*(?P<ew>[EW])?[ \t]*$')
+EXTENT_RX = re.compile(r'[?&#](?:extent|bbox)=(-?\d{1,3}\.\d+),(-?\d{1,2}\.\d+),(-?\d{1,3}\.\d+),(-?\d{1,2}\.\d+)', re.I)
+
+
+def _one_point(pairs):
+    """The single point a list of (lat, lon) agrees on (all within about 300 m), else None: several different points are
+    a map of many places or a site template, never this park's own point."""
+    pts = []
+    for a, b in pairs:
+        a, b = _num(a), _num(b)
+        if a is None or b is None or (a == 0 and b == 0) or not (-90 <= a <= 90 and -180 <= b <= 180):
+            continue
+        pts.append((a, b))
+    if not pts:
+        return None
+    la, lo = pts[0]
+    if any(abs(a - la) > 0.003 or abs(b - lo) > 0.004 for a, b in pts):
+        return None
+    return la, lo
+
+
+def page_data_points(html):
+    """[(lat, lon, where)] from the page's own data: data-lat / data-lng on a tag, and "latitude" / "longitude" keys in a
+    script (either order, plain or backslash-quoted). One point per kind, and only when the page gives one."""
+    out = []
+    h = html or ''
+    if not h:
+        return out
+    pairs = []
+    for m in DATA_LAT.finditer(h):
+        n = DATA_LON.search(h, max(0, m.start() - 200), m.end() + 200)
+        if n:
+            pairs.append((m.group(1), n.group(1)))
+    one = _one_point(pairs)
+    if one:
+        out.append((one[0], one[1], 'page data (data-lat)'))
+    pairs = []
+    for m in KEY_LAT.finditer(h):
+        after = KEY_LON.search(h, m.end(), m.end() + 160)
+        before = None
+        for b in KEY_LON.finditer(h, max(0, m.start() - 160), m.start()):
+            before = b
+        n = after or before
+        if n:
+            pairs.append((m.group(1), n.group(1)))
+    one = _one_point(pairs)
+    if one:
+        out.append((one[0], one[1], 'page data (latitude / longitude)'))
+    return out
+
+
+def pair_lines(text):
+    """[(lat, lon, role)] for a decimal pair alone on its line, with or without a short label ('Center: 47.777189,
+    -117.100543'). At most 3 different ones; more is a table of many places and none is taken."""
+    rows = []
+    for m in PAIR_LINE.finditer(text or ''):
+        try:
+            lat, lon = float(m.group('lat')), float(m.group('lon'))
+        except ValueError:
+            continue
+        if (m.group('ns') or '').upper() == 'S': lat = -abs(lat)
+        if (m.group('ew') or '').upper() == 'W': lon = -abs(lon)
+        label = (m.group('label') or '').lower()
+        role = ('office' if re.search(r'office|headquarter', label) else 'parking' if 'parking' in label
+                else 'park' if re.search(r'coordinat|gps|lat|location|park|entrance', label) else 'unknown')
+        if (lat, lon) not in [(a, b) for a, b, _ in rows]:
+            rows.append((lat, lon, role))
+    return rows if len(rows) <= 3 else []
+
+
+ADDR_LABEL = re.compile(r'(?i)^[ \t]*(?P<label>(?:[a-z\']+[ \t]*(?:/|&|and|or)?[ \t]*){0,4}(?:address|adresse)(?:[ \t]*/[ \t]*[a-z ]{3,20}address)?'
+                        r'(?:[ \t]+(?:civique|postale|municipale))?)[ \t]*:?[ \t]*(?P<rest>\S.*)?$')
+_CITY_END = re.compile(r',?\s+\(?(?:(?:' + _ST2 + r'|' + _STN + r')\.?,?\s+\d{5}(?:-\d{4})?|(?:' + _PROV + r')\)?\.?(?:,?\s+' + _PC + r')?)\s*$')
+
+
+def labelled_addresses(text):
+    """Addresses under an address label, split over lines, with or without a street word ('Address:' / '2355 E. 75 S.' /
+    'Albion, IN 46701'; 'Mailing Address/Physical Address:' / '1331 ON-26' / 'Minesing, ON' / 'L9X 0G1'). The address
+    starts with a house number (or a P.O. box) and ends at its ZIP or postal code. -> [{'text', 'role', 'why'}]"""
+    out, lines = [], [ln.strip() for ln in (text or '').splitlines()]
+    for i, ln in enumerate(lines):
+        m = ADDR_LABEL.match(ln)
+        if not m or len(ln) > 120:
+            continue
+        label = (m.group('label') or '').lower()
+        if re.search(r'\b(e-?mail|email|web|ip|url|courriel)\b', label):
+            continue
+        rows = [m.group('rest').strip()] if m.group('rest') else []
+        for nxt in lines[i + 1:i + 6]:
+            if len(rows) >= 4 or (rows and (ZIP_RX.search(rows[-1]) or POSTAL_RX.search(rows[-1]))):
+                break
+            if not nxt:
+                if rows: break
+                continue
+            if len(nxt) > 70 or ADDR_LABEL.match(nxt) or re.search(r'(?i)^(phone|tel|t[ée]l[ée]phone|fax|email|e-mail|hours|link to)\b', nxt):
+                break
+            rows.append(nxt)
+        if not rows:
+            continue
+        one = _cut_at_zip(', '.join(r.strip(' ,') for r in rows if r.strip(' ,')))
+        if not (re.match(r'\d{1,6}[A-Za-z]?\b', one) or PO_RX.match(one)) or not (ZIP_RX.search(one[6:]) or POSTAL_RX.search(one)):
+            continue
+        if not (_CITY_END.search(one) or POSTAL_RX.search(one)) or len(one) > 140:
+            continue
+        if PO_RX.search(one):
+            role, why = 'mailing', 'a P.O. box'
+        elif re.search(r'physical|street|civic|civique|park address|location|entrance|site|gate', label):
+            role, why = 'park', 'the label says physical, street, park or location address'
+        elif 'mailing' in label or 'postale' in label:
+            role, why = 'mailing', 'the label says mailing'
+        elif re.search(r'office|headquarter|contact', label):
+            role, why = 'office', 'the label names an office'
+        elif 'visitor' in label:
+            role, why = 'visitor-centre', 'the label says visitor center'
+        else:
+            role, why = 'unknown', 'under an address label'
+        out.append({'text': clip(one, 160), 'role': role, 'why': why})
+    return out
+
+
+_NUMW = (r'(?:\d+(?:\.\d+)?|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|fifteen|twenty|thirty|a half|half a|a|an)')
+_COMPASS = r'(?:north[- ]?east|north[- ]?west|south[- ]?east|south[- ]?west|north|south|east|west)'
+OFFSET_RX = re.compile(r'(?i:\b(' + _NUMW + r')\s*(?:-\s*)?(miles?|mi\.?|km|kilomet(?:er|re)s?)\s+(' + _COMPASS + r')\s+of\s+'
+                       r'(?:the\s+(?:town|city|village|community)\s+of\s+|downtown\s+)?)'
+                       r"([A-Z][a-z][A-Za-z.'’]*(?:[ -][A-Z][a-z][A-Za-z.'’]*){0,2})")
+FR_OFFSET_RX = re.compile(r"(?i:\b(\d+(?:[.,]\d+)?)\s*(km|kilom[èe]tres?)\s+au\s+(nord-est|nord-ouest|sud-est|sud-ouest|nord|sud|est|ouest)\s+(?:de\s+la\s+ville\s+de\s+|de\s+|d['’]))"
+                          r"([A-Z][\w'’]*(?:-[A-Z][\w'’]*)*)")
+_NUM_OF = {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5, 'six': 6, 'seven': 7, 'eight': 8, 'nine': 9, 'ten': 10, 'eleven': 11,
+           'twelve': 12, 'fifteen': 15, 'twenty': 20, 'thirty': 30, 'a half': 0.5, 'half a': 0.5, 'a': 1, 'an': 1}
+_DIR_OF = {'north': 'N', 'south': 'S', 'east': 'E', 'west': 'W', 'northeast': 'NE', 'northwest': 'NW', 'southeast': 'SE', 'southwest': 'SW',
+           'nord': 'N', 'sud': 'S', 'est': 'E', 'ouest': 'W', 'nordest': 'NE', 'nordouest': 'NW', 'sudest': 'SE', 'sudouest': 'SW'}
+
+
+def offsets_in(text):
+    """'2 miles east of Shiocton', '24 km north of Winnipeg', 'Twelve miles northeast of Spokane': how far and which way
+    from a named town. -> [{'km', 'dir', 'of', 'quote'}], at most 3. The town is only named here; turning it into a
+    point is the converter's job (a gazetteer), and it is always marked approximate."""
+    out, seen = [], set()
+    for rx in (OFFSET_RX, FR_OFFSET_RX):
+        for m in rx.finditer(text or ''):
+            n = m.group(1).lower().replace(',', '.')
+            try:
+                dist = float(n)
+            except ValueError:
+                dist = _NUM_OF.get(' '.join(n.split()))
+            town = m.group(4).strip(" .'’-")
+            if dist is None or not (0 < dist <= 150) or len(town) < 3:
+                continue
+            if town.split()[0] in TOWN_SKIP or town.split()[-1] in ('County', 'Parish', 'Road', 'Highway', 'Avenue', 'Street', 'Lake', 'River'):
+                continue
+            unit = m.group(2).lower()
+            km_ = dist * (1.609344 if unit.startswith('mi') else 1.0)
+            d = _DIR_OF.get(re.sub(r'[^a-z]', '', m.group(3).lower()))
+            key = (town.lower(), d)
+            if not d or key in seen:
+                continue
+            seen.add(key)
+            out.append({'km': round(km_, 1), 'dir': d, 'of': town, 'quote': clip(_sentence(text, m.start()), 200)})
+            if len(out) >= 3:
+                return out
+    return out
+
+
+COUNTY_LABEL = re.compile(r"(?im)^[ \t]*(?:count(?:y|ies)|parish(?:es)?|comt[ée])[ \t]*:[ \t]*([A-Z][A-Za-z .'’&,-]{2,70})$")
+_CDIR = (r'(?:(?:north|south|east|west|central|northern|southern|eastern|western|northeast(?:ern)?|northwest(?:ern)?|southeast(?:ern)?|'
+         r'southwest(?:ern)?|north[- ]?central|south[- ]?central|east[- ]?central|west[- ]?central|upper|lower)\s+)?')
+COUNTY_IN = re.compile(r"\b(?i:in|within|of)\s+(?i:the\s+)?(?i:" + _CDIR + r")([A-Z][a-z]+(?:[ -][A-Z][a-z]+)?)"
+                       r"(?:(?:,\s*|\s+and\s+|\s*&\s*)(?i:" + _CDIR + r")([A-Z][a-z]+(?:[ -][A-Z][a-z]+)?))?"
+                       r"(?:(?:,\s*|,?\s+and\s+)(?i:" + _CDIR + r")([A-Z][a-z]+(?:[ -][A-Z][a-z]+)?))?"
+                       r"\s+(?:[Cc]ount(?:y|ies)|[Pp]arish(?:es)?)\b(?!\s+(?:State|Park|Forest|Road|Highway|Hwy|Wildlife|Conservation|"
+                       r"Fairgrounds|Line|Courthouse|Regional|Route|Trail|Lake|Natural|Recreation|Preserve|Game|Fish))")
+COUNTY_SKIP = {'The', 'This', 'That', 'Each', 'Our', 'Your', 'Any', 'Every', 'Another', 'Which', 'Both', 'Several', 'Many', 'Some', 'Adjacent',
+               'Neighboring', 'Surrounding', 'Same', 'Other', 'All', 'Two', 'Three', 'Four', 'Five', 'Rural'}
+
+
+def counties_of(text):
+    """The counties (or parishes) the page says the place is in: a 'County:' line, or 'in northcentral Outagamie County',
+    'in northern Lonoke and southern White counties'. At most 4 names; a park, road or forest named after a county is not one."""
+    out = []
+    def add(name):
+        name = ' '.join(str(name or '').split()).strip(" .,'’-")
+        name = re.sub(r'(?i)\s+(?:county|parish)$', '', name)
+        if name and name.split()[0] not in COUNTY_SKIP and name not in out and len(name) <= 40:
+            out.append(name)
+    for m in COUNTY_LABEL.finditer(text or ''):
+        for part in re.split(r'\s*(?:,|&|\band\b|/)\s*', m.group(1)):
+            if re.fullmatch(r"[A-Z][A-Za-z.'’-]+(?: [A-Z][A-Za-z.'’-]+){0,2}(?: (?:County|Parish))?", part.strip()):
+                add(part)
+    for m in COUNTY_IN.finditer(text or ''):
+        for g in m.groups():
+            if g: add(g)
+    return out[:4]
+
+
+def headings_of(html):
+    """Every h1 / h2 of the page (at most 12): a site that opens with its department's name ('Environment and Climate
+    Change') carries the park's own name in a later heading."""
+    out = []
+    for _lv, inner in re.findall(r'<h([12])[^>]*>(.*?)</h\1>', html or '', re.I | re.S):
+        cand = cut_tail(_unescape(' '.join(re.sub(r'<[^>]+>', ' ', inner).split())))
+        if cand and len(cand) <= 120 and cand not in out:
+            out.append(cand)
+        if len(out) >= 12:
+            break
+    return out
+
+
+MAP_ADDR_RX = re.compile(r'[?&](?:daddr|destination|q|query|address)=([^&#]{8,160})', re.I)
+
+
+def map_link_address(url):
+    """The address a Google / Bing / Apple map link drives to (daddr=, destination=, q=): a house number, a town and a ZIP
+    or postal code. A link that carries a point or only a name gives none."""
+    u = str(url or '')
+    if not re.search(r'(?i)maps\.google|google\.[a-z.]+/maps|maps\.apple|bing\.com/maps|goo\.gl/maps', u):
+        return ''
+    m = MAP_ADDR_RX.search(u)
+    if not m:
+        return ''
+    import urllib.parse as _up
+    a = ' '.join(_up.unquote_plus(m.group(1)).replace('+', ' ').split()).strip(' ,')
+    if not re.match(r'\d{1,6}[A-Za-z]?\s+\S', a) or not (ZIP_RX.search(a[6:]) or POSTAL_RX.search(a)):
+        return ''
+    # 'street+Town+ST+ZIP' has lost its commas: put one before the state
+    a = re.sub(r'\s+(' + _ST2 + r')\s+(\d{5}(?:-\d{4})?)$', r', \1 \2', a) if ',' not in a else a
+    return clip(_cut_at_zip(a), 160)
+
+
 def html_coords(html, text):
     """JSON-LD geo, meta tags, then a labelled line. Map-link points are added by the caller."""
     out = []
@@ -1206,6 +1457,8 @@ def html_coords(html, text):
         if icbm and ',' in icbm.group(1):
             a, b = icbm.group(1).split(',', 1)
             add(a, b, 'meta ICBM')
+    for la, lo, where in page_data_points(html):      # 23 Nov: the page's own data
+        add(la, lo, where)
     for m in re.finditer(r'(Geographic Coordinates|GPS|Lat\s*/\s*Long)\s*[:\s]+(-?\d{1,3}\.\d+)\s*[,/]\s*(-?\d{1,3}\.\d+)',
                          text or '', re.I):
         add(m.group(2), m.group(3), 'labelled line', 'park')
@@ -1229,6 +1482,10 @@ def html_coords(html, text):
         if (m.group('ns') or 'N').upper() == 'S' or m.group('lat').startswith('-'): lat = -lat
         if (m.group('ew') or '').upper() == 'W' or m.group('lon').startswith('-'): lon = -lon
         add(lat, lon, 'labelled line', 'unknown')
+    have = {(round(c['lat'], 4), round(c['lon'], 4)) for c in out}
+    for la, lo, role in pair_lines(text):                 # 23 Nov: a decimal pair alone on its line
+        if (round(la, 4), round(lo, 4)) not in have:
+            add(la, lo, 'pair on a line', role)
     return out
 
 
@@ -1474,7 +1731,7 @@ def visible_of(body, headers, url, extra_links=None):
         links = links_in(raw, url) + [lk for lk in links if lk[0] not in {u for u, _ in links_in(raw, url)}]
         title, heading, og, jname = _heading_and_title(raw, text)
         return {'text': text, 'html': raw, 'title': title, 'heading': heading, 'og': og, 'jsonld': jname,
-                'links': links, 'pdf': False}
+                'links': links, 'pdf': False, 'headings': headings_of(raw)}
     # plain text the owner saved, or a fixture. A bare URL line is a link; the line above is its text.
     lines = raw.splitlines()
     for i, line in enumerate(lines):
@@ -1488,7 +1745,7 @@ def visible_of(body, headers, url, extra_links=None):
 
 
 def _blank_location():
-    return {'coords': [], 'dropped_points': 0, 'addresses': [], 'directions': None, 'state_words': []}
+    return {'coords': [], 'dropped_points': 0, 'addresses': [], 'directions': None, 'state_words': [], 'offsets': [], 'counties': []}
 
 
 def build_facts(ref, area, pota, area_parks, asked, pages, today, shared_with, own_is, own_why, read_blocks=True):
@@ -1527,6 +1784,8 @@ def build_facts(ref, area, pota, area_parks, asked, pages, today, shared_with, o
         text = ''
     name['vs_pota'] = compare_names(name.get('best'), pota.get('name')) if name.get('best') else ('differs' if name.get('disagree') else None)
     if name['vs_pota'] not in ('same', 'same-core'):
+        if read_blocks and not shared_with:
+            name['headings'] = list(main.get('headings') or [])   # 23 Nov: a later heading can carry the park's name
         part, v = name_agreeing(name, pota.get('name'))
         if part:
             name.update({'best': part, 'vs_pota': v, 'disagree': False})
@@ -1663,13 +1922,29 @@ def _location(main, pages, pota, area, pin):
             for c in got['coords']:
                 c['link_text'] = link_text
                 coords.append(c)
+    # 23 Nov: a map link's own window (extent=west,south,east,north): its middle, when the window is small (under ~12 km)
+    for p in pages:
+        for url, link_text in p.get('links') or []:
+            m = EXTENT_RX.search(str(url or ''))
+            if m:
+                w, s_, e, n = (float(m.group(i)) for i in (1, 2, 3, 4))
+                if abs(e - w) < 0.15 and abs(n - s_) < 0.11 and (w, s_) != (e, n):
+                    coords.append({'lat': round((s_ + n) / 2, 6), 'lon': round((w + e) / 2, 6), 'from': 'map link window', 'role': 'unknown',
+                                   'label': '', 'link_text': link_text})
     dropped = 0
     kept = []
+    seen_pts = set()
     office_zone = _section(text, {'addresses', 'address', 'contact us', 'contact', 'mailing address'})
     for c in coords:
+        if not point_ok(c['lat'], c['lon'], area, pin) and c['lon'] > 0 and area_code(area) in BOX and point_ok(c['lat'], -c['lon'], area, pin):
+            c['lon'] = -c['lon']      # 23 Nov: a western longitude written without its minus sign
         if not point_ok(c['lat'], c['lon'], area, pin):
             dropped += 1
             continue
+        k4 = (round(c['lat'], 4), round(c['lon'], 4))
+        if k4 in seen_pts:
+            continue
+        seen_pts.add(k4)
         role = c.get('role') or 'unknown'
         src = (c.get('from') or '') + ' ' + (c.get('link_text') or '')
         if re.search(r'office|headquarters|visitor cent', src, re.I):
@@ -1691,7 +1966,23 @@ def _location(main, pages, pota, area, pin):
     loc['coords'] = kept[:8]
     loc['dropped_points'] = dropped
     loc['addresses'] = addresses_in(text)
+    # 23 Nov: addresses under an address label (split lines, no street word), then the address a map link drives to
+    have = {norm_written(a.get('text'))[:60] for a in loc['addresses']}
+    extra = labelled_addresses(text)
+    for p in pages:
+        for url, _t in p.get('links') or []:
+            a = map_link_address(url)
+            if a:
+                extra.append({'text': a, 'role': 'unknown', 'why': "the page's map link drives to this address"})
+    for a in extra:
+        k = norm_written(a.get('text'))[:60]
+        if k and k not in have and not any(k[:25] == h[:25] for h in have):
+            have.add(k)
+            loc['addresses'].append(a)
+    loc['addresses'] = loc['addresses'][:6]
     loc['directions'] = directions_of(text)
+    loc['offsets'] = offsets_in(text)
+    loc['counties'] = counties_of(text)
     states = []
     for m in re.finditer(r'\b(' + '|'.join(STATE_NAME) + r')\b', text, re.I):
         name = m.group(1).title()

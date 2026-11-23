@@ -214,6 +214,56 @@ class KeeperCopyGetter:
         return self.live.resting() if self.live is not None and hasattr(self.live, 'resting') else {}
 
 
+class PageKeeper:
+    """23 Nov 2026 (owner: "stop rerun and rerun"): every page the reader fetches is kept on the PC, packed, next to the facts
+    (a pages-kept folder beside out: <2 letters>/<name>.gz and one manifest.json in the keeper-copy format). A later fix to what the reader
+    takes from a page is then run over the kept pages (read --reextract): no site is asked again. Keeping never stops a
+    run: any disk error is counted and passed over. Nothing kept is ever uploaded (the upload pack takes the facts only)."""
+    MAX_BYTES = 3_000_000
+
+    def __init__(self, folder, today):
+        self.root = pathlib.Path(folder)
+        self.today = today
+        self.man_path = self.root / 'manifest.json'
+        self.man = load_json(self.man_path, {}) or {}
+        self.man.setdefault('pages', {})
+        self.kept = self.errors = self.unsaved = 0
+
+    def keep(self, url, final, status, headers, body, ref='', built=False):
+        try:
+            if status != 200 or not isinstance(body, (bytes, bytearray)) or not body or len(body) > self.MAX_BYTES:
+                return
+            import gzip, hashlib
+            ctype = ''
+            if isinstance(headers, dict):
+                ctype = str(headers.get('content-type') or headers.get('Content-Type') or '')
+            name = hashlib.sha1(norm_url(url).encode('utf-8')).hexdigest()[:20]
+            rel = f'{name[:2]}/{name}.gz'
+            path = self.root / rel
+            path.parent.mkdir(parents=True, exist_ok=True)
+            raw = bytes(body)
+            path.write_bytes(raw if raw[:2] == b'\x1f\x8b' else gzip.compress(raw, 6))
+            rec = {'file': rel, 'status': 200, 'type': ctype or 'text/html', 'final': final or url, 'date': self.today}
+            if ref: rec['ref'] = ref
+            if built: rec['built'] = True
+            self.man['pages'][url] = rec
+            self.kept += 1
+            self.unsaved += 1
+            if self.unsaved >= 40:
+                self.save()
+        except OSError:
+            self.errors += 1
+
+    def save(self):
+        try:
+            if self.unsaved:
+                self.root.mkdir(parents=True, exist_ok=True)
+                save_json(self.man_path, self.man)
+                self.unsaved = 0
+        except OSError:
+            self.errors += 1
+
+
 def request_url(url):
     """The address as it is sent: spaces, control and non-ASCII characters escaped; an address already escaped is unchanged."""
     return urllib.parse.quote(url or '', safe="%:/?#[]@!$&'()*+,;=~")
@@ -419,7 +469,7 @@ def _list_row(text, ref, refs_here, area_parks):
 def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_only=None,
                max_requests=1500, max_per_park=R.MAX_PER_PARK, max_parks=None, on_park=None,
                refresh_days=W.REFRESH_DAYS, deadline=None, out_dir=None, state_path=None,
-               get_max_seconds=GET_MAX_SECONDS, quiet=False, started=None):
+               get_max_seconds=GET_MAX_SECONDS, quiet=False, started=None, keeper=None, reextract=False):
     """Read every chosen park. Returns {area: {ref: fact}} and the request count.
     refs, when given, is the worklist order across areas. A fresh fingerprint is not fetched again.
     A page older than refresh_days is fetched; the same fingerprint is not parsed again.
@@ -435,6 +485,7 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
     requests = 0
     done = 0
     cache = {}  # norm url -> fetched page dict
+    cur = {}    # the park being read (for the page keeper)
     started = time.time() if started is None else started
 
     def budget_left():
@@ -494,6 +545,9 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
             st, headers, body, final = getter.get(url, rng=rng, deadline=deadline, max_time=get_max_seconds)
         except TypeError:
             st, headers, body, final = getter.get(url, rng=rng)
+        from_copy = isinstance(getter, KeeperCopyGetter) and getter.copy._rec(url) is not None
+        if keeper is not None and not rng and not from_copy:
+            keeper.keep(url, final or url, st, headers, body, ref=cur.get('ref') or '')   # 23 Nov: the page is kept for later fixes
         extra = getter.links_for(url) if hasattr(getter, 'links_for') else []
         vis = R.visible_of(body, headers, final or url, extra)
         kind = _kind_of_status(st, vis.get('text'), final or url, is_pdf=bool(vis.get('pdf')))
@@ -508,7 +562,10 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
                 text2 = (vis2.get('text') or '').strip()
                 if len(text2) >= 400 and not R.WALL.search(text2):
                     vis, kind, browsed = vis2, 'html', True
-        if kind == 'refused' and not (isinstance(st, str) and robots_block(st)):
+                    if keeper is not None:
+                        keeper.keep(url, final or url, 200, {'content-type': 'text/html; charset=utf-8'}, built.encode('utf-8'),
+                                    ref=cur.get('ref') or '', built=True)
+        if kind == 'refused' and not from_copy and not (isinstance(st, str) and robots_block(st)):
             # 21 Nov: robots.txt is read for each address (its rules are per path), so a robots 'no' is never remembered for the
             # whole site; a 401 / 403 / wall counts towards putting the site aside (REFUSALS_FOR_HOST different pages)
             _remember_refusal(state, R.host_of(final or url) or host, today, final or url)
@@ -530,10 +587,13 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
         page = {'url': url, 'final': final or url, 'status': st, 'kind': kind, 'text': vis.get('text') or '',
                 'html': vis.get('html') or '', 'title': vis.get('title') or '', 'heading': vis.get('heading') or '',
                 'og': vis.get('og') or '', 'jsonld': vis.get('jsonld') or '', 'links': vis.get('links') or [],
+                'headings': vis.get('headings') or [],
                 'fingerprint': R.fp_of(vis.get('text') or ''), 'dead_twice': vis_dead, 'family': R.family_of(final or url),
                 'thin': len((vis.get('text') or '').strip()) < 400}
         if browsed:
             page['browser'] = True
+        if from_copy:
+            page['kept_date'] = (getter.copy._rec(url) or {}).get('date') or ''
         cache[key] = page
         return page
 
@@ -557,6 +617,8 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
                     if not (areas_only and area not in areas_only) for ref in parks]
 
     def stop(reason, index):
+        if keeper is not None:
+            keeper.save()
         state['stopped'] = reason
         state['left'] = sorted(r for _, r in sequence[index:])   # sorted: the private read order is never saved
         if reason == 'minutes' and index < len(sequence):
@@ -578,6 +640,7 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
         if max_parks is not None and done >= max_parks:
             return stop('parks', index)
         row = parks[ref]
+        cur['ref'] = ref
         url, src, others = choose_link(ref, row, web, docs)
         progress(area, done, 'reading')
         if on_park:
@@ -588,6 +651,8 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
         fresh = bool(url and prev.get('fingerprint') and prev.get('url') == url and (age is None or age < refresh_days))
         if len((groups.get(area) or {}).get(norm_url(url), [ref])) >= 2 and prev.get('list_rule') != LIST_RULE:
             fresh = False   # 23 Nov: read before shared pages were followed to the park's own link
+        if reextract:
+            fresh = False   # 23 Nov: reading the kept pages again with today's finders
         if fresh:
             out[area][ref] = {'ref': ref, 'unchanged': True, 'page': {'fingerprint': prev.get('fingerprint'),
                              'kind': prev.get('kind'), 'read': today, 'seen': today}, 'questions': []}
@@ -643,7 +708,7 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
             done += 1
             save_progress(index)
             continue
-        if (prev.get('fingerprint') and prev.get('url') == url and prev.get('fingerprint') == main.get('fingerprint')
+        if (not reextract and prev.get('fingerprint') and prev.get('url') == url and prev.get('fingerprint') == main.get('fingerprint')
                 and (len((groups.get(area) or {}).get(norm_url(url), [ref])) < 2 or prev.get('list_rule') == LIST_RULE)):
             # same text: keep the old facts, no new question
             out[area][ref] = {'ref': ref, 'unchanged': True, 'page': {'fingerprint': main.get('fingerprint'),
@@ -728,11 +793,15 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
             fact['evidence_draft'] = drafts[0] if drafts else None
             fact['evidence_drafts'] = drafts
             out[area][ref] = fact
+            when = today
+            if reextract and main.get('kept_date'):
+                when = main['kept_date']          # the day the page was really read
+                fact['page']['read'] = when
             if followed:
                 fact['asked']['followed'] = followed
             if listed_row:
                 fact['asked']['row'] = R.clip(listed_row)
-            state['read'][ref] = {'url': url, 'fingerprint': main.get('fingerprint') or '', 'date': today,
+            state['read'][ref] = {'url': url, 'fingerprint': main.get('fingerprint') or '', 'date': when,
                                   'kind': fact['page']['kind'], 'final': main.get('final')}
             if len(refs_here) >= 2:
                 state['read'][ref]['list_rule'] = LIST_RULE
@@ -751,6 +820,8 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
         save_progress(index)
     state['left'] = []
     state['stopped'] = ''
+    if keeper is not None:
+        keeper.save()
     if out_dir:
         _write_progress(out_dir, out, state, state_path)   # the end of the walk: always saved (save_progress may have waited)
     finished = {a for a, _ in sequence}
@@ -1098,7 +1169,22 @@ def cmd_read(args):
         print('No stored parks. Nothing was read.')
         return 0
     keeper = getattr(args, 'keeper_copies', '') or ''
-    if args.fixtures:
+    keep_arg = getattr(args, 'keep_pages', '') or ''
+    reextract = bool(getattr(args, 'reextract', False))
+    # beside the out folder, never inside it: the PC run file zips everything under out
+    kept_dir = keep_arg if keep_arg and keep_arg != 'off' else (str(pathlib.Path(args.out).resolve().parent / 'pages-kept') if args.out else '')
+    if reextract:
+        # 23 Nov: only the kept pages, never a site. Every park whose page is kept is read again; the others are not touched.
+        man = pathlib.Path(kept_dir) / 'manifest.json'
+        if not kept_dir or not man.is_file():
+            print('No pages are kept yet (the reader keeps them from its next run on). Nothing was read again.')
+            return 0
+        getter = KeeperCopyGetter(load_json(man, {}), man.parent, None)
+        order = [{'ref': ref, 'area': area, 'tier': 0, 'why': 'kept page read again'} for area, parks in sorted(areas.items())
+                 if not areas_only or area in areas_only for ref, row in sorted(parks.items())
+                 if getter.copy._rec(choose_link(ref, row, web, docs)[0] or '') is not None]
+        args.max_requests = max(args.max_requests, 10 * len(order) + 10)
+    elif args.fixtures:
         getter = FixtureGetter(load_json(args.fixtures, {}), pathlib.Path(args.fixtures).parent)
     elif keeper:
         man = pathlib.Path(keeper) / 'manifest.json' if pathlib.Path(keeper).is_dir() else pathlib.Path(keeper)
@@ -1110,7 +1196,7 @@ def cmd_read(args):
     else:
         getter = LiveGetter(state)
     # A plain --refs still limits the read, in the worklist's order. With no worklist hits, read nothing new.
-    use_list = bool(args.lists or args.links or args.refs or args.refs_file or args.areas or getattr(args, 'not_sure', '')
+    use_list = reextract or bool(args.lists or args.links or args.refs or args.refs_file or args.areas or getattr(args, 'not_sure', '')
                     or getattr(args, 'priority_file', '') or getattr(args, 'confirmed_file', ''))   # 21 Nov: a PC run with only the private lists
     refs = [row['ref'] for row in order] if use_list else None
     if refs is not None and not refs:
@@ -1153,7 +1239,10 @@ def cmd_read(args):
                              max_requests=args.max_requests, max_per_park=args.max_per_park, max_parks=args.max_parks,
                              on_park=None if args.quiet else on_park, refresh_days=args.refresh_days, deadline=deadline,
                              out_dir=args.out or None, state_path=state_path or None,
-                             get_max_seconds=get_max, quiet=bool(args.quiet))
+                             get_max_seconds=get_max, quiet=bool(args.quiet), reextract=reextract,
+                             keeper=(PageKeeper(kept_dir, today) if kept_dir and not reextract and keep_arg != 'off'
+                                     and (keep_arg or isinstance(getter, LiveGetter)
+                                          or (isinstance(getter, KeeperCopyGetter) and getter.live is not None)) else None))
     if not state.get('stopped'):
         state['run'] = 'done'
     else:
@@ -1448,6 +1537,9 @@ def main(argv=None):
     p.add_argument('--state', default='')
     p.add_argument('--fixtures', default='')
     p.add_argument('--keeper-copies', default='', help="the keeper's saved page copies (a manifest.json like the fixtures'); read first")
+    p.add_argument('--keep-pages', default='', help="23 Nov: keep every fetched page, packed, in this folder (default: pages-kept beside <out> on "
+                                                    "a live run; 'off' keeps none)")
+    p.add_argument('--reextract', action='store_true', help='23 Nov: read the KEPT pages again with today\'s finders. No site is asked.')
     p.add_argument('--coverage', default='', help='coverage-order: the pota-agencies-by-area CSV')
     p.add_argument('--areas', default='')
     p.add_argument('--refs', default='')
