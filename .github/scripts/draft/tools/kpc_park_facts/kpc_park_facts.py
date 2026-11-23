@@ -18,7 +18,7 @@ Nothing is downloaded and no input file is changed. Standard library only.
 """
 import argparse, collections, csv, datetime, glob, json, os, re, sys, tempfile
 
-VERSION = 'kpc_park_facts 4 (2026-11-22)'
+VERSION = 'kpc_park_facts 5 (2026-11-22)'
 REF = re.compile(r'^[A-Z0-9]{1,4}-\d{4,5}$')
 AREA = re.compile(r'^(US|CA)-[A-Z]{2}$')
 
@@ -208,8 +208,15 @@ def read_pages(folder):
                 'name_vs_pota': nm.get('vs_pota'), 'name_on_page': (nm.get('heading') or nm.get('title') or '')[:120],
                 'sizes': [{'acres': s.get('acres'), 'as': s.get('as'), 'total': s.get('total'), 'clean': s.get('clean')}
                           for s in _first(p.get('sizes'), 3)],
-                'coords': [{'lat': c.get('lat'), 'lon': c.get('lon'), 'km_from_pin': c.get('km_from_pin'), 'from': c.get('from')}
-                           for c in _first(loc.get('coords'), 3)],
+                # 22 Nov (owner: "address and directions would help matching"): each page point with its role (park, visitor
+                # centre, office, unknown) and the roads and towns the page's directions name
+                'coords': [{'lat': c.get('lat'), 'lon': c.get('lon'), 'km_from_pin': c.get('km_from_pin'), 'from': c.get('from'),
+                            'role': c.get('role') or 'unknown'}
+                           for c in _first(loc.get('coords'), 3) if isinstance(c, dict) and c.get('lat') is not None],
+                'directions': ({'roads': [str(r)[:60] for r in _first((loc.get('directions') or {}).get('roads'), 6)],
+                                'towns': [str(t)[:40] for t in _first((loc.get('directions') or {}).get('towns'), 4)]}
+                               if isinstance(loc.get('directions'), dict) and ((loc.get('directions') or {}).get('roads')
+                                                                               or (loc.get('directions') or {}).get('towns')) else None),
                 'addresses': [{'text': a.get('text'), 'role': a.get('role')} for a in _first(loc.get('addresses'), 2)],
                 'manager': man.get('agency'),
                 'status_words': {k: v for k, v in st.items() if v},
@@ -338,6 +345,10 @@ def combine(parks, sizes, pages, links):
             c['page states a size'] += 1
         if pg.get('coords'):
             c['page gives coordinates'] += 1
+        if pg.get('addresses'):
+            c['page gives an address'] += 1
+        if pg.get('directions'):
+            c['page gives directions (roads or towns)'] += 1
         if ref in sizes and pg.get('sizes'):
             c['official size AND a page size'] += 1
     return rows, c
@@ -426,7 +437,8 @@ def selftest():
             'own_page': {'is': 'own'}, 'name': {'vs_pota': 'same', 'heading': 'Invented Lake State Park'},
             'sizes': [{'acres': 1180.0, 'as': '1,180 acres', 'total': True, 'clean': True, 'quote': 'x' * 300}],
             'location': {'coords': [{'lat': 37.5, 'lon': -85.1, 'km_from_pin': 0.1, 'from': 'map-link q'}],
-                         'addresses': [{'text': '1 Lake Rd', 'role': 'park'}]},
+                         'addresses': [{'text': '1 Lake Rd', 'role': 'park'}],
+                         'directions': {'sent': 'From Testville take Highway 99', 'roads': ['Highway 99'], 'towns': ['Testville']}},
             'manager': {'agency': 'Invented Parks'}, 'status_words': {'closed': None},
             'questions': [{'code': 'NAME_DIFFERS'}, {'code': 'NAME_DIFFERS'}],
             'parts': ['North Unit', 'South Unit', ''], 'inside_of': [{'unit': 'Invented State Forest', 'kind': 'State Forest', 'quote': 'q'}],
@@ -467,6 +479,9 @@ def selftest():
         check('tracts, the sure parent unit and https map links are kept; maybe_inside is not (22 Nov)',
               (P['US-9001']['page']['parts'], [u['unit'] for u in P['US-9001']['page']['inside_of']], [m['url'] for m in P['US-9001']['page']['maps']]),
               (['North Unit', 'South Unit'], ['Invented State Forest'], ['https://maps.example.gov/arcgis/x']))
+        check("page points keep their role, and the directions' roads and towns are kept (22 Nov)",
+              (P['US-9001']['page']['coords'][0]['role'], P['US-9001']['page']['directions']),
+              ('unknown', {'roads': ['Highway 99'], 'towns': ['Testville']}))
         check('link id kept and marked usable', (P['US-9002']['link']['id_value'], P['US-9002']['link']['usable']), ('77', True))
         check('a park with no facts still has its row', P['US-9003']['facts_from'], ['link'])
         check('a size for a park not on the list is kept and marked', (P['US-9009'].get('not_on_list'), P['US-9009']['facts_from']),
