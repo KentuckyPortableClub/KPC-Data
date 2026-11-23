@@ -63,6 +63,15 @@ with tempfile.TemporaryDirectory() as td:
           all(st_a2['read'][r]['date'] == '2026-11-01' for r in REFS))
     facts_a = json.loads((a / 'facts' / 'US-ZZ.json').read_text())['parks']
     check('a skipped fresh park keeps its full facts', all('confirm' in facts_a[r] for r in REFS))
+    # a stub saved before the fix counts as no facts: the park is read again
+    fa = json.loads((a / 'facts' / 'US-ZZ.json').read_text())
+    fa['parks']['US-C1'] = {'ref': 'US-C1', 'unchanged': True, 'page': {'read': '2026-11-02'}}
+    (a / 'facts' / 'US-ZZ.json').write_text(json.dumps(fa))
+    g3 = Getter()
+    PP.read_parks(areas, web, {}, {}, g3, json.loads((a / 'state.json').read_text()), '2026-11-11', refs=REFS, out_dir=str(a),
+                  state_path=str(a / 'state.json'))
+    fa2 = json.loads((a / 'facts' / 'US-ZZ.json').read_text())['parks']
+    check('an old empty stub is read again and replaced by full facts', len(g3.calls) == 1 and 'confirm' in fa2['US-C1'])
     # merge_unchanged never leaves a stub
     parks = {'US-X9': {'ref': 'US-X9', 'unchanged': True, 'page': {'read': '2026-11-10'}}}
     PP.merge_unchanged(str(b), {'US-ZZ': parks})

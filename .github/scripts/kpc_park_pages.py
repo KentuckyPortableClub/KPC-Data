@@ -556,7 +556,9 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
         if not out_dir:
             return True
         if area not in _old:
-            _old[area] = set(load_json(pathlib.Path(out_dir) / 'facts' / f'{area}.json', {}).get('parks') or {})
+            _ps = load_json(pathlib.Path(out_dir) / 'facts' / f'{area}.json', {}).get('parks') or {}
+            # an empty stub saved before this fix is not facts: that park is read again
+            _old[area] = {r for r, f in _ps.items() if not (isinstance(f, dict) and f.get('unchanged'))}
         return ref in _old[area]
 
     def save_progress(index, force=False):
