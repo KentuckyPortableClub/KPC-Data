@@ -18,7 +18,7 @@ Nothing is downloaded and no input file is changed. Standard library only.
 """
 import argparse, collections, csv, datetime, glob, json, os, re, sys, tempfile
 
-VERSION = 'kpc_park_facts 5 (2026-11-22)'
+VERSION = 'kpc_park_facts 6 (2026-11-22)'
 REF = re.compile(r'^[A-Z0-9]{1,4}-\d{4,5}$')
 AREA = re.compile(r'^(US|CA)-[A-Z]{2}$')
 
@@ -184,6 +184,28 @@ def _first(xs, n):
     return list(xs or [])[:n]
 
 
+_R = [None]
+
+
+def _agree(nm, pota_name):
+    """The reader's own name check (kpc_park_pages_rules.name_agreeing) on the saved heading and title; (None, None) when the
+    reader's rules are not at hand or nothing agrees."""
+    if _R[0] is None:
+        try:
+            here = os.path.dirname(os.path.abspath(__file__))
+            sys.path.insert(0, os.path.normpath(os.path.join(here, '..', '..', '..')))
+            import kpc_park_pages_rules as R
+            _R[0] = R
+        except Exception:  # noqa: BLE001
+            _R[0] = False
+    if not _R[0] or not isinstance(nm, dict):
+        return None, None
+    try:
+        return _R[0].name_agreeing(nm, pota_name)
+    except Exception:  # noqa: BLE001
+        return None, None
+
+
 def read_pages(folder):
     """park-pages/facts/<area>.json -> {ref: page fact}. Only the facts a later rule may weigh; quotes are kept short."""
     out, areas = {}, []
@@ -205,7 +227,10 @@ def read_pages(folder):
                 'read': pg.get('read'), 'url': pg.get('final_url') or (p.get('asked') or {}).get('url'), 'status': pg.get('status'),
                 'kind': pg.get('kind'), 'host': pg.get('final_host') or pg.get('host'), 'nps_code': pg.get('nps_code'),
                 'own_page': own.get('is'), 'unofficial': bool(p.get('unofficial')),
-                'name_vs_pota': nm.get('vs_pota'), 'name_on_page': (nm.get('heading') or nm.get('title') or '')[:120],
+                # 22 Nov 2026 (owner: "not doing a good job of confirming park names"): a heading that was site chrome hid the
+                # name; the part of the heading / title that agrees with POTA's name is used when there is one
+                'name_vs_pota': _agree(nm, pota.get('name'))[1] or nm.get('vs_pota'),
+                'name_on_page': (_agree(nm, pota.get('name'))[0] or nm.get('heading') or nm.get('title') or '')[:120],
                 'sizes': [{'acres': s.get('acres'), 'as': s.get('as'), 'total': s.get('total'), 'clean': s.get('clean')}
                           for s in _first(p.get('sizes'), 3)],
                 # 22 Nov (owner: "address and directions would help matching"): each page point with its role (park, visitor
