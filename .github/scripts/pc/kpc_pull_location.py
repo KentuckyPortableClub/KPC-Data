@@ -65,7 +65,7 @@ def pull_one(R, M, fact):
     return loc, addr, pt, 'read'
 
 
-def run(out, scripts, workers=8, max_minutes=180, today=None, manners=None, again=False):
+def run(out, scripts, workers=8, max_minutes=180, today=None, manners=None, again=False, canada=False):
     sys.path.insert(0, str(pathlib.Path(scripts).resolve()))
     import kpc_park_pages_rules as R
     if manners is None:
@@ -81,6 +81,8 @@ def run(out, scripts, workers=8, max_minutes=180, today=None, manners=None, agai
         for ref, fact in (d.get('parks') or {}).items():
             if not wants_place(fact):
                 continue
+            if canada and not (str(fact.get('area') or '').startswith('CA-') and not (fact.get('location') or {}).get('addresses')):
+                continue          # --canada (22 Nov 10:39 PM): only Canadian parks still without an address (the finder now knows Canada)
             if ref in done and not (again and not str(done[ref]).endswith('again')):
                 continue          # --again (22 Nov, after the finders learnt Canada): a park still without a place is read once more
             host = R.host_of((fact.get('page') or {}).get('final_url') or '') or '?'
@@ -193,6 +195,7 @@ if __name__ == '__main__':
     ap.add_argument('--out', default='out'); ap.add_argument('--scripts', default='scripts')
     ap.add_argument('--workers', type=int, default=8); ap.add_argument('--max-minutes', type=float, default=180)
     ap.add_argument('--again', action='store_true', help='read once more the parks still without an address, point or directions')
+    ap.add_argument('--canada', action='store_true', help='only Canadian parks still without an address')
     ap.add_argument('--selftest', action='store_true')
     a = ap.parse_args()
-    sys.exit(selftest() if a.selftest else run(a.out, a.scripts, a.workers, a.max_minutes, again=a.again))
+    sys.exit(selftest() if a.selftest else run(a.out, a.scripts, a.workers, a.max_minutes, again=a.again, canada=a.canada))
