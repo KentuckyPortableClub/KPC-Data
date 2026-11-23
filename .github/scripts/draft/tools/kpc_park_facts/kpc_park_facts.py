@@ -18,7 +18,7 @@ Nothing is downloaded and no input file is changed. Standard library only.
 """
 import argparse, collections, csv, datetime, glob, json, os, re, sys, tempfile
 
-VERSION = 'kpc_park_facts 9 (2026-11-23)'
+VERSION = 'kpc_park_facts 10 (2026-11-23)'
 REF = re.compile(r'^[A-Z0-9]{1,4}-\d{4,5}$')
 AREA = re.compile(r'^(US|CA)-[A-Z]{2}$')
 
@@ -266,6 +266,10 @@ def read_pages(folder):
                 'offsets': [{'km': o.get('km'), 'dir': o.get('dir'), 'of': str(o.get('of') or '')[:40]}
                             for o in _first(loc.get('offsets'), 3) if isinstance(o, dict) and o.get('of')],
                 'counties': [str(x)[:40] for x in _first(loc.get('counties'), 4) if str(x).strip()],
+                # 23 Nov 5:24 AM (owner: "I dont want key bots to do internet stuff"): the named county's middle point and size,
+                # looked up on the PC by the converter; the key only reads it
+                'county_areas': [{'name': str(c.get('name') or '')[:40], 'lat': c.get('lat'), 'lon': c.get('lon'), 'radius_km': c.get('radius_km')}
+                                 for c in _first(loc.get('county_areas'), 4) if isinstance(c, dict) and c.get('lat') is not None and c.get('radius_km')],
                 'near': [{'lat': n.get('lat'), 'lon': n.get('lon'), 'within_km': n.get('within_km'), 'from': str(n.get('from') or '')[:60]}
                          for n in _first(loc.get('near'), 3) if isinstance(n, dict) and n.get('lat') is not None],
                 'manager': man.get('agency'),
@@ -499,6 +503,8 @@ def combine(parks, sizes, pages, links):
             c['page says how far and which way from a town'] += 1
         if pg.get('counties'):
             c['page names its county'] += 1
+        if pg.get('county_areas'):
+            c["page's county has its middle point and size"] += 1
         if pg.get('near'):
             c['approximate point from the page directions'] += 1
         if pg.get('name_vs_pota') in ('same', 'same-core'):

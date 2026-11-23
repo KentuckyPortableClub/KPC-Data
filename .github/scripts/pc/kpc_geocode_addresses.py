@@ -279,6 +279,105 @@ def ca_places_live(M, town):
     return out
 
 
+# 23 Nov 2026 5:24 AM (owner: "I dont want key bots to do internet stuff"): COUNTY AREAS, made HERE on the PC so that no key
+# bot ever asks a website. A page that names its county ('is in northcentral Outagamie County') gets that county's middle
+# point and size from the Census Bureau's Gazetteer county files, one small text file per state, read live that morning
+# (www2.census.gov/geo/docs/maps-data/data/gazetteer/2024_Gazetteer/2024_gaz_counties_<state number>.txt; columns by name:
+# NAME, ALAND, AWATER, INTPTLAT, INTPTLONG). It is saved with the page facts (location.county_areas: name, lat, lon,
+# radius_km = the radius of a circle of the county's size). The key only reads that saved figure. US only.
+COUNTY_URL = 'https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2024_Gazetteer/2024_gaz_counties_%s.txt'
+COUNTY_KIND = re.compile(r'\s+(city and borough|census area|municipality|borough|county|parish|municipio|city)\s*$', re.I)
+
+
+def parse_counties(text):
+    """A Census Gazetteer county file -> {county name (normalised, 'County' / 'Parish' left off): [lat, lon, radius_km]}."""
+    import math
+    lines = [ln for ln in str(text or '').splitlines() if ln.strip()]
+    if not lines:
+        return {}
+    sep = '|' if '|' in lines[0] else '\t'
+    head = [h.strip().upper() for h in lines[0].split(sep)]
+    try:
+        ni, la, lo, al = head.index('NAME'), head.index('INTPTLAT'), head.index('INTPTLONG'), head.index('ALAND')
+    except ValueError:
+        return {}
+    aw = head.index('AWATER') if 'AWATER' in head else None
+    out = {}
+    for ln in lines[1:]:
+        c = ln.split(sep)
+        if len(c) <= max(ni, la, lo, al):
+            continue
+        try:
+            area = float(c[al].strip()) + (float(c[aw].strip()) if aw is not None and len(c) > aw and c[aw].strip() else 0.0)
+            row = [round(float(c[la].strip()), 5), round(float(c[lo].strip()), 5), round(math.sqrt(max(area, 1.0) / math.pi) / 1000.0, 1)]
+        except ValueError:
+            continue
+        k = norm_town(COUNTY_KIND.sub('', c[ni].strip()))
+        if k:
+            out[k] = row
+    return out
+
+
+def us_counties_live(M, st):
+    url = COUNTY_URL % FIPS[st]
+    if not M.robots_ok(url):
+        return None
+    code, _h, body, _f = M.get(url)
+    if code != 200 or not body:
+        return None
+    return body.decode('utf-8', 'replace') if isinstance(body, bytes) else str(body)
+
+
+def county_areas(files, out, scripts, manners=_ca_manners, us_counties=us_counties_live):
+    """Fill location.county_areas for every US park whose own page (or own list row) names its county.
+    -> (parks given a county area, county files fetched)."""
+    cache = pathlib.Path(out) / 'towns'
+    M, tables, looked, parks = None, {}, 0, 0
+
+    def table(st):
+        nonlocal M, looked
+        if st in tables:
+            return tables[st]
+        f = cache / f'us-counties-{st}.json'
+        if f.is_file():
+            tables[st] = json.loads(f.read_text(encoding='utf-8'))
+            return tables[st]
+        tables[st] = {}
+        if M is None:
+            M = (manners(scripts) if manners else None) or False
+        if st in FIPS and M:
+            text = us_counties(M, st)
+            looked += 1
+            got = parse_counties(text) if text else {}
+            if got:
+                cache.mkdir(parents=True, exist_ok=True)
+                f.write_text(json.dumps(got), encoding='utf-8')
+                tables[st] = got
+        return tables[st]
+
+    for f, d in files.items():
+        for ref, fact in (d.get('parks') or {}).items():
+            if not isinstance(fact, dict) or fact.get('unofficial') or (fact.get('own_page') or {}).get('is') not in ('own', 'list-row'):
+                continue
+            loc = fact.get('location') or {}
+            area = str(fact.get('area') or '')
+            names = [str(x) for x in (loc.get('counties') or []) if str(x).strip()]
+            if not names or not area.startswith('US-'):
+                continue
+            t = table(area[3:])
+            rows = []
+            for nm in names[:4]:
+                r = t.get(norm_town(COUNTY_KIND.sub('', nm)))
+                if r:
+                    rows.append({'name': nm[:40], 'lat': r[0], 'lon': r[1], 'radius_km': r[2]})
+            if rows != (loc.get('county_areas') or []):
+                loc['county_areas'] = rows
+                fact['location'] = loc
+            if rows:
+                parks += 1
+    return parks, looked
+
+
 def town_points(files, out, scripts, manners=_ca_manners, us_places=us_places_live, ca_places=ca_places_live):
     """Fill location.near from location.offsets for every park's own page (or its own list row). -> (points, parks, looked up)."""
     cache = pathlib.Path(out) / 'towns'
@@ -392,7 +491,8 @@ def town_points(files, out, scripts, manners=_ca_manners, us_places=us_places_li
     return points, parks, looked
 
 
-def run(out, scripts, today=None, poster=post_batch, allow=robots_allow, ca_manners=_ca_manners, ca_lookup=canada_lookup, towns=town_points):
+def run(out, scripts, today=None, poster=post_batch, allow=robots_allow, ca_manners=_ca_manners, ca_lookup=canada_lookup, towns=town_points,
+        counties=county_areas):
     sys.path.insert(0, str(pathlib.Path(scripts).resolve()))
     import kpc_park_pages_rules as R
     today = today or datetime.date.today().isoformat()
@@ -484,6 +584,12 @@ def run(out, scripts, today=None, poster=post_batch, allow=robots_allow, ca_mann
             town_line = f' Town points (approximate, from "so far from a town"): {tp} for {tk} park(s), {tl} town list request(s).'
         except Exception as e:  # noqa: BLE001  (never holds up the address points)
             town_line = f' Town points: not made this run ({type(e).__name__}: {str(e)[:80]}).'
+    if counties:
+        try:
+            cp, cl = counties(files, out, scripts)
+            town_line += f' County areas (for the county a page names): {cp} park(s), {cl} county list request(s).'
+        except Exception as e:  # noqa: BLE001  (never holds up the address points)
+            town_line += f' County areas: not made this run ({type(e).__name__}: {str(e)[:80]}).'
     for f, d in files.items():
         tmp = f.with_name(f.name + '.tmp'); tmp.write_text(json.dumps(d, ensure_ascii=False), encoding='utf-8'); tmp.replace(f)
     matched = sum(1 for v in known.values() if v)
