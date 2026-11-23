@@ -36,5 +36,13 @@ with tempfile.TemporaryDirectory() as td:
     check('an area whose two-state park was saved under the other area is packed', 'pages/US-YY.json' in names)
     check('the area holding that park is packed too', 'pages/US-ZZ.json' in names)
     check('an area with a park read nowhere is still left out', 'pages/US-XX.json' not in names)
+import gzip  # noqa: E402
+with tempfile.TemporaryDirectory() as td:
+    t = pathlib.Path(td)
+    (t / 'data' / 'parkinfo').mkdir(parents=True); (t / 'data' / 'pota' / 'saved' / 'parks').mkdir(parents=True)
+    (t / 'data' / 'pota' / 'saved' / 'parks' / 'US-KK.json.gz').write_bytes(gzip.compress(json.dumps({'data': [{'reference': 'US-9301'}, {'reference': 'US-9302'}]}).encode()))
+    w(t / 'facts' / 'US-KK.json', {'area': 'US-KK', 'parks': {'US-9301': fact('US-9301', 'US-KK'), 'US-9302': fact('US-9302', 'US-KK')}})
+    zp, c, why = K.make_pack(t / 'out', t / 'facts', '', '', '', None, parkinfo=t / 'data' / 'parkinfo', now=datetime.datetime(2026, 11, 22, 18, 50))
+    check('an area kept out of parkinfo (Kentucky) is checked against POTA\'s saved list and packed', zp and 'pages/US-KK.json' in zipfile.ZipFile(zp).namelist())
 print('ALL PASS' if ok else 'SOME FAILED')
 sys.exit(0 if ok else 1)
