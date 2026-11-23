@@ -207,6 +207,8 @@ class Fetcher:
             return None
         key = P.norm_url(url)
         if key in self.cache:
+            if (self.cache[key] or {}).get('kind') in ('resting', 'refused'):
+                self.busy += 1     # the same busy site, for this park too
             return self.cache[key]
         if R.is_wdpa(url):
             return None
