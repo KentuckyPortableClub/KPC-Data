@@ -81,7 +81,50 @@ PO_RX = re.compile(r'\bP\.?\s*O\.?\s*Box\s+\d+\b', re.I)
 OFFICE_WORD = re.compile(r'field office|district office|ranger district|headquarters|supervisor.?s office|'
                          r'\bmailing\b|p\.?\s*o\.?\s*box', re.I)
 PARK_ADDR = re.compile(r'park address|physical address|\bentrance\b|visitor cent(?:er|re)|\blocation\b', re.I)
+# 22 Nov 2026 (owner: "the address and directions seem very low"): the finders below replace the two short one-line
+# patterns. An address is a house number, a street (any common street word, or a numbered road such as County Road 275,
+# Highway 177, FM 1431), a town, a state (two letters or the full name) and a ZIP, on one line or split over lines.
+# Whatever follows the ZIP (phone, email, "link to this page") is cut off. Still never geocoded.
+STREET_WORDS2 = (r'(?:Road|Rd|Drive|Dr|Street|St|Avenue|Ave|Av|Boulevard|Blvd|Highway|Hwy|Lane|Ln|Way|Pike|Loop|Parkway|Pkwy|'
+                 r'Circle|Cir|Court|Ct|Trail|Trl|Route|Rte|Place|Pl|Terrace|Ter|Run|Turnpike|Tpke|Expressway|Expy|Freeway|Fwy|'
+                 r'Byway|Path|Row|Square|Sq|Crossing|Xing|Bypass|Byp|Cove|Hollow|Holw|Ridge|Point|Pt|Landing|Plaza|Alley|Spur|Grade|Bend)')
+NUM_ROAD = (r'(?:(?:County|State|US|U\.S\.|Interstate|Forest|National Forest|Farm to Market|Ranch to Market|Forest Service|FS|Old|'
+            r'State Highway|State Route|State Road|Township|Parish|Provincial)\s+)?(?:Road|Rd|Route|Rte|Highway|Hwy|Hwy\.|Rt|'
+            r'CR|SR|FM|RM|RR|FR|FSR|KY|US|Trunk Highway|TH|Hwy\s+No\.?)\s*-?\s*\d{1,5}[A-Z]?')
+_ST2 = r'(?:A[LKZR]|C[AOT]|D[EC]|FL|GA|HI|I[DLNA]|K[SY]|LA|M[EDAINSOT]|N[EVHJMYCD]|O[HKR]|PA|RI|S[CD]|T[NX]|UT|V[TA]|W[AVIY]|PR|VI|GU)'
+_STN = r'(?:Alabama|Alaska|Arizona|Arkansas|California|Colorado|Connecticut|Delaware|Florida|Georgia|Hawaii|Idaho|Illinois|' \
+       r'Indiana|Iowa|Kansas|Kentucky|Louisiana|Maine|Maryland|Massachusetts|Michigan|Minnesota|Mississippi|Missouri|Montana|' \
+       r'Nebraska|Nevada|New Hampshire|New Jersey|New Mexico|New York|North Carolina|North Dakota|Ohio|Oklahoma|Oregon|' \
+       r'Pennsylvania|Rhode Island|South Carolina|South Dakota|Tennessee|Texas|Utah|Vermont|Virginia|Washington|West Virginia|' \
+       r'Wisconsin|Wyoming|District of Columbia|Puerto Rico)'
+_DIRW = r'(?:[NSEW]{1,2}\.?|North|South|East|West|Northeast|Northwest|Southeast|Southwest)'
+_TOWN = r"(?:[A-Z][A-Za-z.'’-]+\s+){0,3}[A-Z][A-Za-z.'’-]+"
+_SEP = r'(?:\s*[,|•·]\s*|\s+-\s+|\s+)'
+ADDR_RX = re.compile(
+    r'\b\d{1,6}[A-Z]?(?:-\d{1,5})?\s+(?:' + _DIRW + r'\s+)?'
+    r'(?:' + NUM_ROAD + r'|(?:[A-Z0-9][\w.\'’-]*\s+){0,5}' + STREET_WORDS2 + r'\b\.?)'
+    r'(?:\s+' + _DIRW + r'(?![a-z]))?(?:\s*,?\s*(?:Suite|Ste\.?|Unit|Bldg\.?|Building|#)\s*[\w-]+)?'
+    + _SEP + _TOWN + r',?\s+(?:' + _ST2 + r'|' + _STN + r')\.?,?\s+\d{5}(?:-\d{4})?\b')
+PO_ADDR_RX = re.compile(r'\bP\.?\s*O\.?\s*Box\s+\d+' + _SEP + _TOWN + r',?\s+(?:' + _ST2 + r'|' + _STN + r')\.?,?\s+\d{5}(?:-\d{4})?\b', re.I)
+ADDR_BEFORE = re.compile(r'(visitor cent(?:er|re)|park address|physical address|street address|park office|'
+                         r'headquarters|field office|district office|ranger station|mailing|entrance|located at|address)\W*$', re.I)
+# directions: these headings, a 'Directions:' line, or a sentence that says how to get there
+DIR_HEADS = {'directions', 'getting here', 'getting there', 'how to get there', 'how to get here', 'driving directions',
+             'location', 'location and directions', 'directions and parking', 'access', 'access and parking', 'find it',
+             'how to find it', 'travel directions', 'directions to the park', 'getting to the park', 'parking and access'}
+DIR_LINE = re.compile(r'(?im)^[ \t]*(?:directions|driving directions|getting there|how to get there|location|access|find it)'
+                      r'[ \t]*:[ \t]*(\S.{15,})$')
+DIR_SENT = re.compile(r'(?i)(?:\bfind it\b|\blocated\s+(?:about\s+|approximately\s+|just\s+)?(?:\d+(?:\.\d+)?|one|two|three|four|'
+                      r'five|six|seven|eight|nine|ten|a half)\s+(?:-\s*)?miles?\b|\bfrom\s+(?:I-\d|US|U\.S\.|Interstate|Highway|Hwy|'
+                      r'State Route|Route|SR|CR|County Road|the (?:town|city|village) of)|\b(?:take|follow|travel|drive|go|turn)\s+'
+                      r'(?:north|south|east|west|left|right|I-\d|US|Highway|Hwy|Route|State|County|exit)\b|\bparking (?:area|lot)s? '
+                      r'(?:is|are) (?:located )?(?:on|off|at|along)\b)')
 ROAD_RX = [
+    # 22 Nov: numbered and lettered roads ('State Highway 46', 'County Road H', 'Highway V', 'FM 1431', '222nd Ave')
+    re.compile(r'\b(?:State|County|US|U\.S\.|Interstate|Forest Service|Farm to Market|Ranch to Market)\s+(?:Highway|Hwy|Road|Rd|Route|Rte|'
+               r'Trunk Highway)\s+[A-Z0-9]{1,5}\b'),
+    re.compile(r'\b(?:Highway|Hwy|Route|Rte|County Road|CR|SR|FM|RM|FR|FSR|Co\.? Rd\.?)\s+[A-Z]?\d{0,5}[A-Z]?\b(?<=[0-9A-Z])'),
+    re.compile(r'\b\d{1,4}(?:st|nd|rd|th)\s+(?:Ave|Avenue|St|Street|Rd|Road|Lane|Ln|Trail)\b'),
     re.compile(r'\bI-\d{1,3}\b'),
     re.compile(r'\bexit\s+\d+\b', re.I),
     re.compile(r'\b(?:US|UT|SR|[A-Z]{2})-\d{1,4}\b'),
@@ -89,8 +132,12 @@ ROAD_RX = [
     re.compile(r'\b(?:[A-Z][\w\'.-]+\s+){0,5}(?:Road|Street|Highway|Avenue|Drive|Lane|Boulevard|Parkway)\b'),
 ]
 TOWN_RX = re.compile(r'\b(?:from|toward|to)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)')
+# 22 Nov: 'north of Lake Geneva', 'near Deer Park', 'State Highway 46 (Deer Park)'
+NEAR_TOWN = re.compile(r'\b(?:(?:north|south|east|west|northeast|northwest|southeast|southwest)\s+of|near|outside(?:\s+of)?)\s+'
+                       r'([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)')
+PAREN_TOWN = re.compile(r'\d[A-Z]?\s*\(([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)\)')
 SLASH_TOWN = re.compile(r'\b[A-Z]{2}-\d+/([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)')
-TOWN_SKIP = {'North', 'South', 'East', 'West', 'The', 'Exit', 'Highway', 'Old', 'Main', 'National', 'State'}
+TOWN_SKIP = {'North', 'South', 'East', 'West', 'The', 'Exit', 'Highway', 'Old', 'Main', 'National', 'State', 'Interstate', 'County', 'US'}
 TRACT_RX = re.compile(
     r"\b([A-Z][\w'’.-]*(?:\s+(?!Tract\b|Unit\b|Section\b|Block\b|Division\b|Parcel\b|Corner\b)"
     r"[A-Z][\w'’.-]*){0,4})\s+(Tract|Unit|Section|Block|Division|Parcel|Corner)\b")
@@ -99,6 +146,9 @@ TRACT_SKIP = re.compile(r'\b(nearby|attraction|legend|formerly|once|historic reg
 WALL = re.compile(r'are you human|sign in to continue|log ?in required|captcha|access denied|just a moment', re.I)
 HEADS = {'addresses', 'address', 'directions', 'contact us', 'contact', 'fees', 'getting here',
          'how to get there', 'driving directions', 'mailing address', 'location'}
+HEADS |= {'getting there', 'how to get here', 'location and directions', 'directions and parking', 'access and parking',
+          'find it', 'how to find it', 'travel directions', 'directions to the park', 'getting to the park', 'parking and access',
+          'hours', 'fees and passes', 'amenities', 'activities', 'rules', 'regulations', 'contact information', 'phone'}
 
 # Approximate state and province boxes. KPC-Data has no stored area-box table.
 # A point is kept when it sits in this box or within 300 km of POTA's pin.
@@ -802,30 +852,40 @@ def addresses_in(text):
     out = []
     block = _section(text, {'addresses', 'address', 'mailing address', 'location'})
     chunks = [('addresses', block)] if block else []
-    # a one-line office address with no heading
-    for m in re.finditer(r'.{0,80}(?:P\.?\s*O\.?\s*Box\s+\d+).{0,80}\d{5}', text or '', re.I):
-        chunks.append(('line', m.group(0)))
-    for m in re.finditer(r'.{0,60}\d{1,6}\s+[A-Z][\w.\'-]+(?:\s+[A-Z0-9][\w.\'-]+){0,5}\s+'
-                         r'(?:Ave|Avenue|St|Street|Rd|Road|Dr|Drive|Blvd|Hwy|Highway|Way|Lane)\.?'
-                         r'\s+[A-Z][\w.\'-]+(?:\s+[A-Z][\w.\'-]+){0,2},?\s+[A-Z]{2}\s+\d{5}', text or ''):
-        chunks.append(('line', m.group(0)))
+    # 22 Nov: addresses anywhere on the page (one line or split over lines), cut at the ZIP; the words just before say whose
+    flat = re.sub(r'[ \t]*\n[ \t]*', ' \n ', text or '')
+    for rx in (ADDR_RX, PO_ADDR_RX):
+        for m in rx.finditer(flat.replace(' \n ', ', ')):
+            chunks.append(('line', m.group(0), flat.replace(' \n ', ', ')[max(0, m.start() - 60):m.start()]))
     seen = set()
-    for how, chunk in chunks:
+    for row in chunks:
+        how, chunk, before = (row + ('',))[:3]
         if not chunk:
             continue
-        role, why = _addr_role(chunk, how)
+        role, why = _addr_role(before + ' ' + chunk if how == 'line' else chunk, how)
         text_one = ' '.join(chunk.split())
-        # prefer a short address, not the whole directions
-        if len(text_one) > 180 and how == 'addresses':
-            text_one = _tight_address(chunk) or text_one[:180]
+        if how == 'addresses':
+            # the address heading's block: keep the address itself, cut at its ZIP (22 Nov)
+            one = ' '.join(chunk.replace('\n', ', ').split())
+            got = ADDR_RX.search(one) or PO_ADDR_RX.search(one)
+            text_one = got.group(0) if got else (_tight_address(chunk) or text_one)[:180]
+        text_one = _cut_at_zip(text_one)
         key = norm_written(text_one)[:80]
         if key in seen or not (ZIP_RX.search(text_one) or PO_RX.search(text_one)):
             continue
-        if not (STREET_WORD.search(text_one) or PO_RX.search(text_one)):
+        if not (STREET_WORD.search(text_one) or PO_RX.search(text_one) or ADDR_RX.search(text_one)):
             continue
         seen.add(key)
         out.append({'text': clip(text_one, 160), 'role': role, 'why': why})
     return out[:6]
+
+
+def _cut_at_zip(t):
+    """An address ends at its ZIP: a phone, an email or 'link to this page' after it is cut off (22 Nov)."""
+    m = None
+    for m in ZIP_RX.finditer(t or ''):
+        pass
+    return (t[:m.end()] if m else t).strip(' ,;|')
 
 
 def _tight_address(block):
@@ -854,11 +914,59 @@ def _addr_role(blob, how):
     return 'unknown', "a street and a ZIP, with no office or park word"
 
 
+def _sections_all(text, names):
+    """Every block under one of these headings (a page can carry a menu item of the same name first)."""
+    lines, out, buf, take = (text or '').splitlines(), [], [], False
+    for line in lines:
+        key = line.strip().lower().rstrip(':')
+        if key in names or key in HEADS:
+            if take and buf:
+                out.append('\n'.join(buf).strip())
+            buf, take = [], key in names
+            continue
+        if take:
+            buf.append(line)
+    if take and buf:
+        out.append('\n'.join(buf).strip())
+    return [b for b in out if b]
+
+
+def _menu_like(block):
+    """A run of short menu words (Hours, Fees, Reservations...) with no road and no distance is not directions."""
+    rows = [ln.strip() for ln in (block or '').splitlines() if ln.strip()]
+    if not rows:
+        return True
+    short = sum(1 for ln in rows if len(ln.split()) <= 3)
+    has_way = any(rx.search(block) for rx in ROAD_RX) or re.search(r'\bmiles?\b|\bexit\b|\bturn\b', block, re.I)
+    return (short >= 0.6 * len(rows) and not has_way) or not re.search(r'[a-z]{3,}', block)
+
+
+def directions_block(text):
+    """22 Nov: the page's directions. First a directions heading's block that is not a menu, else a 'Directions:' line,
+    else the sentences that say how to get there ('Find it from Highway 46...', 'Located 2 miles north of...')."""
+    for block in _sections_all(text, DIR_HEADS):
+        rows = [ln for ln in block.splitlines() if len(ln.split()) > 3]
+        block = '\n'.join(rows) if rows else block
+        if not _menu_like(block):
+            return block
+    m = DIR_LINE.search(text or '')
+    if m and not _menu_like(m.group(1)):
+        return m.group(1)
+    sents = []
+    for m in DIR_SENT.finditer(text or ''):
+        sent = _sentence(text, m.start())
+        if sent and sent not in sents and len(sent) < 500:
+            sents.append(sent)
+        if len(sents) >= 3:
+            break
+    return ' '.join(sents)
+
+
 def directions_of(text):
-    block = _section(text, {'directions', 'getting here', 'how to get there', 'driving directions'})
+    block = directions_block(text)
     if not block:
         return None
-    sent = clip(block, 400)
+    sent = clip(' '.join(block.split()), 400)
     roads, seen = [], set()
     for rx in ROAD_RX:
         for m in rx.finditer(block):
@@ -875,11 +983,14 @@ def directions_of(text):
                 continue
             seen.add(k)
             roads.append(name)
+    # 22 Nov: a bare road word ('State Highway') or a road inside a longer one ('Highway 46' in 'State Highway 46') is dropped
+    bare = re.compile(r'(?i)^(?:(?:state|county|us|old)\s+)?(?:highway|hwy|road|route|street|avenue|drive|lane|boulevard|parkway)$')
+    roads = [r for r in roads if not bare.match(r) and not any(r != o and re.search(r'\b' + re.escape(r) + r'$', o) for o in roads)]
     towns, seen_t = [], set()
-    for rx in (TOWN_RX, SLASH_TOWN):
+    for rx in (TOWN_RX, SLASH_TOWN, NEAR_TOWN, PAREN_TOWN):
         for m in rx.finditer(block):
             town = m.group(1).strip()
-            if town.split()[0] in TOWN_SKIP:
+            if town.split()[0] in TOWN_SKIP or town.split()[-1] in ('County', 'Parish', 'Road', 'Highway', 'Avenue', 'Street'):
                 continue
             if town.lower() in seen_t:
                 continue
