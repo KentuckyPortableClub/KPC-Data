@@ -11,10 +11,10 @@
   },
   "2-fer gate (areas ready / waiting)": {
    "areas": "",
-   "last_run": "2026-11-22",
+   "last_run": "2026-11-23",
    "made": "1068 audit rows not clean in 43 areas; waiting for audit 15, waiting for key 51",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45001955078",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45099645674",
    "waiting_on": "chat 11 / 12 (audit answers), chat 2 (fixes)"
   },
   "Cell coverage (FCC)": {
@@ -1019,10 +1019,10 @@
   },
   "Key bots: errors and silence": {
    "areas": "",
-   "last_run": "2026-11-22",
-   "made": "3 key bot(s) with errors or gone silent: Europe weather warnings (silent: no finished run in 122 h (expected every 14 h or les); KPC-Data watchdog (Key bots); flow board (silent: no finished run in 63 h (expected every 26 h or less)",
+   "last_run": "2026-11-23",
+   "made": "4 key bot(s) with errors or gone silent: Europe weather warnings (silent: no finished run in 125 h (expected every 14 h or les); KPC-Data watchdog (Key bots); flow board (silent: no finished run in 65 h (expected every 26 h or less); waiting room (silent: no finished run in 8 h (expected every 6 h o",
    "result": "red",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45084962093",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45099645674",
    "waiting_on": "HQ: open the watchdog run summary for the run links"
   },
   "Layer collector": {
@@ -1083,10 +1083,10 @@
   },
   "Skipped-run watchdog": {
    "areas": "",
-   "last_run": "2026-11-22",
-   "made": "2026-11-22 23:46 UTC: 2 skipped run(s) started again: kpc-copy-from-links.yml (missed Nov 22 23:11 UTC); kpc-park-pages.yml (missed Nov 22 21:23 UTC)",
+   "last_run": "2026-11-23",
+   "made": "2026-11-23 02:21 UTC: 2 skipped run(s) started again: kpc-closures.yml (missed Nov 23 01:38 UTC); kpc-copy-from-links.yml (missed Nov 23 01:40 UTC)",
    "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45084962093",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45099645674",
    "waiting_on": "nobody (it restarts them itself)"
   },
   "Storage keeper (weekly)": {
@@ -1203,10 +1203,10 @@
   },
   "Website copy (site branch)": {
    "areas": "",
-   "last_run": "2026-11-22",
-   "made": "site is under 60 min behind main: the copy bot will catch up",
+   "last_run": "2026-11-23",
+   "made": "site = main: the website has the newest data",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45084962093",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45099645674",
    "waiting_on": "nobody (the watchdog restarts the copy bot itself)"
   },
   "answer-sheet-check": {
@@ -1282,9 +1282,9 @@
    "waiting_on": "chat 8 grades the sample; chat 2 reads the name-mismatch list; nothing goes in a key by itself"
   },
   "park truth checker": {
-   "areas": "left: 24",
-   "last_run": "2026-11-22",
-   "made": "US-MT: done; {\"agree\": 55, \"handover_hints\": 6, \"no_page\": 0, \"no_size\": 122, \"not_read\": 1, \"off\": 28, \"ours_unknown\": 7, \"parks\": 254, \"retired\": 0, \"unsure\": 32, \"weak\": 7, \"with_outline\": 246}",
+   "areas": "left: 19",
+   "last_run": "2026-11-23",
+   "made": "US-WA: partial; {\"agree\": 46, \"handover_hints\": 9, \"no_page\": 0, \"no_size\": 46, \"not_read\": 10, \"off\": 69, \"ours_unknown\": 10, \"parks\": 299, \"retired\": 0, \"unsure\": 93, \"weak\": 12, \"with_outline\": 274}",
    "result": "green",
    "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45047915571",
    "waiting_on": "chat 8 grades the sample; Brandon GO before any card"
@@ -1298,8 +1298,8 @@
    "waiting_on": "nothing (facts only)"
   },
   "waiting room": {
-   "last_run": "2026-11-22",
-   "made": "heartbeat 0 h old, 162 files waiting",
+   "last_run": "2026-11-23",
+   "made": "heartbeat 0 h old, 167 files waiting",
    "result": "green",
    "waiting_on": "nothing"
   },
@@ -1320,5 +1320,5 @@
    "waiting_on": "chat 8 grades the leads"
   }
  },
- "updated": "2026-11-22"
+ "updated": "2026-11-23"
 }
