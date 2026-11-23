@@ -1,6 +1,6 @@
 # Engine board, 2026-11-23
 
-**One line:** 1422 new candidates across 1 kinds; 98206 parks with a gap; 15 hosts blocked.
+**One line:** 1421 new candidates across 1 kinds; 98206 parks with a gap; 15 hosts blocked.
 
 | kind | area | missing yesterday | missing today | found / candidate today | still missing | top why-not |
 |---|---|---|---|---|---|---|
@@ -50,7 +50,7 @@
 | outline | CA-NU | 14 | 14 | 5 | 9 | no-layer: no official record at the pin or by name 24, blocked (1 source could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 20, blocked (1 source could not be read, e.g. blocked (host resting: 3 strikes)); the sources that answered had no record 6 |
 | outline | CA-ON | 236 | 236 | 72 | 164 | UNLIKELY only (evidence, never a question): name: none word(s) in common 379, UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check) 160, None 139 |
 | outline | CA-PE | 40 | 40 | 8 | 32 | no-layer: no official record at the pin or by name 37, UNLIKELY only (evidence, never a question): name: none word(s) in common 35, blocked (2 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 26 |
-| outline | CA-QC | 400 | 400 | 140 | 260 | no-layer: no official record at the pin or by name 597, blocked (2 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 520, UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check) 176 |
+| outline | CA-QC | 400 | 400 | 139 | 261 | no-layer: no official record at the pin or by name 597, blocked (2 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 520, UNLIKELY only (evidence, never a question): pin not inside nor within 150 m with a name match (distance check) 176 |
 | outline | CA-SK | 95 | 95 | 9 | 86 | no-layer: no official record at the pin or by name 116, blocked (2 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 99, UNLIKELY only (evidence, never a question): name: none word(s) in common 35 |
 | outline | CA-YT | 88 | 88 | 2 | 86 | blocked (2 sources could not be read, e.g. blocked (robots)); the sources that answered had no record 144, blocked (3 sources could not be read, e.g. blocked (robots)); the sources that answered had no record 112, no-layer: no official record at the pin or by name 45 |
 | outline | CD | 9 | 9 | 0 | 9 |  |
@@ -89,7 +89,7 @@
 | outline | FO | 3 | 3 | 0 | 3 |  |
 | outline | FR | 3455 | 3455 | 0 | 3455 |  |
 | outline | GA | 5 | 5 | 0 | 5 |  |
-| outline | GB | 3393 | 3393 | 104 | 3289 | blocked (36 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 607, blocked (6 sources could not be read, e.g. blocked (host resting: 3 strikes)); the sources that answered had no record 258, UNLIKELY only (evidence, never a question): name: one word(s) in common 253 |
+| outline | GB | 3393 | 3393 | 104 | 3289 | blocked (36 sources could not be read, e.g. blocked (host rule: saved copies only or never contact; on t); the sources that answered had no record 647, blocked (6 sources could not be read, e.g. blocked (host resting: 3 strikes)); the sources that answered had no record 258, UNLIKELY only (evidence, never a question): name: one word(s) in common 256 |
 | outline | GD | 16 | 16 | 0 | 16 |  |
 | outline | GE | 5 | 5 | 0 | 5 |  |
 | outline | GF | 35 | 35 | 0 | 35 |  |
@@ -304,19 +304,19 @@
 
 | kind | pass 1 | pass 2 | solved in pass 2 |
 |---|---|---|---|
-| outline | {"error": 430, "already approved": 711, "found": 318, "candidate": 1217, "evidence": 5586, "blocked": 4866, "not found": 2571, "pin only": 6} | null | - |
+| outline | {"error": 430, "already approved": 712, "found": 318, "candidate": 1219, "evidence": 5593, "blocked": 4919, "not found": 2571, "pin only": 6} | null | - |
 
 ## Blocked hosts (blocked is not "not found"; retried next night)
 
-- services.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (414)
-- datamap.gov.wales: blocked (robots) (264)
-- services-eu1.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (119)
-- services2.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (92)
+- services.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (364)
+- datamap.gov.wales: blocked (robots) (226)
+- services-eu1.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (96)
+- services2.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (80)
 - mapservices.nps.gov: blocked (host resting: 3 strikes) (67)
-- services1.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (51)
+- services1.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (44)
 - apps.fs.usda.gov: blocked (host rule: saved copies only or never contact; on the needs-download li (30)
 - services5.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (27)
-- services6.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (20)
+- services6.arcgis.com: blocked (host rule: saved copies only or never contact; on the needs-download li (16)
 - maps.gov.bc.ca: blocked (robots) (12)
 - utility.arcgis.com: blocked (robots) (6)
 - ncnhde.natureserve.org: blocked (host rule: saved copies only or never contact; on the needs-download li (6)
