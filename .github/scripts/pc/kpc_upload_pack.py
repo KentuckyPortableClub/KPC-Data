@@ -111,6 +111,11 @@ def make_pack(out_dir, pages_dir, proposals, lists_dir, link_ids, approved, now=
     counts, why = collections.Counter(), []
     members = {}
     pages = {}
+    # 22 Nov: a park POTA lists in two or more areas is saved once, in one area's file; it counts as read for every area
+    read_any = set()
+    for f in sorted(pathlib.Path(pages_dir).glob('*.json')) if pages_dir and pathlib.Path(pages_dir).is_dir() else []:
+        try: read_any |= set((json.loads(f.read_text(encoding='utf-8')).get('parks') or {}))
+        except (OSError, ValueError, AttributeError): pass
     for f in sorted(pathlib.Path(pages_dir).glob('*.json')) if pages_dir and pathlib.Path(pages_dir).is_dir() else []:
         if not AREA_RX.match(f.stem): counts['page files skipped (not an area name)'] += 1; continue
         try: d = json.loads(f.read_text(encoding='utf-8'))
@@ -120,7 +125,7 @@ def make_pack(out_dir, pages_dir, proposals, lists_dir, link_ids, approved, now=
             d, nb = blank_wdpa(d); counts['WDPA addresses blanked (a POTA link to WDPA: never read, never sent)'] += nb
         want = area_refs(parkinfo, f.stem)
         if want is None: counts['areas left out: no POTA list on this PC to show the area is read whole'] += 1; continue
-        if not want or not want <= set(d['parks']):
+        if not want or not want <= (set(d['parks']) | read_any):
             counts['areas left out: not every park read yet (packed once the area is finished)'] += 1; continue
         members[f'pages/{f.stem}.json'] = json.dumps(d, ensure_ascii=False).encode('utf-8')
         pages[f.stem] = len(d['parks'])
