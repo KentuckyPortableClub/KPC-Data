@@ -418,6 +418,9 @@ OFFICIAL_SITES = {
     # Land trusts that own and run the place
     'natureconservancy.ca': 'land trust (owner)', 'naturetrust.nb.ca': 'land trust (owner)', 'islandnaturetrust.ca': 'land trust (owner)',
     'nature.org': 'land trust (owner)', 'triangleland.org': 'land trust (owner)',
+    # 23 Nov 5:43 PM (owner 'Yes', audit 2 SHOULD 1): CTParks.com is Connecticut State Parks' official site (Governor's
+    # announcement, 20 Sep 2023; DEEP runs the parks). portal.ct.gov park pages send readers on to it.
+    'ctparks.com': 'Connecticut',
 }
 
 
@@ -933,8 +936,23 @@ def _restore_truth(desig, cores):
     TB.OTHER_CORES.update(cores)
 
 
+# 23 Nov (owner 'Yes', audit 2 MUST 4): metric pages write '23 540 hectares' (a space as the thousands mark) and '45,6 km2'
+# (a comma as the decimal mark). The size reader took '23 540' as 540. The page's numbers are put in one form first. A plain
+# space joins digits only right before a metric unit, so 'Route 9 100 acres' stays 100.
+METRIC_DEC = re.compile(r'(?<![\d.,])(\d+),(\d{1,2})(?=\s*(?:ha\b|hectares?\b|km\s*²|km2\b|square\s+kilomet))', re.I)
+SPACE_THOU = re.compile(r'(?<![\d.,])(\d{1,3})((?:[ \u00a0\u202f]\d{3})+)(?=(?:\.\d+)?\s*(?:ha\b|hectares?\b|km\s*²|km2\b|square\s+kilomet))', re.I)
+THIN_THOU = re.compile(r'(?<![\d.,])(\d{1,3})((?:[\u00a0\u202f]\d{3})+)(?![\d])')
+
+
+def metric_numbers(text):
+    t = METRIC_DEC.sub(r'\1.\2', text or '')
+    t = THIN_THOU.sub(lambda m: m.group(1) + re.sub(r'[\u00a0\u202f]', ',', m.group(2)), t)
+    return SPACE_THOU.sub(lambda m: m.group(1) + m.group(2).replace(' ', ','), t)
+
+
 def sizes_labelled(text, name, pota_type):
     """R-PR5. sizes_in, plus the label on a labelled line, plus round words kept as said."""
+    text = metric_numbers(text)
     old_d, old_c = dict(TB.DESIG), set(TB.OTHER_CORES)
     national = bool(re.search(r'\bnational\b', pota_type or '', re.I))
     state = bool(re.search(r'\bstate\b', pota_type or '', re.I)) and not national

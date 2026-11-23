@@ -65,6 +65,10 @@ jobs:
           git fetch -q --depth 1 origin "+refs/heads/tools-out:refs/remotes/origin/tools-out" || warn "Lists" "tools-out was not read"
           git archive origin/tools-out park-pages/lists-done 2>/dev/null | tar -x -C ../work --strip-components=2 || true
           git archive origin/tools-out not-sure 2>/dev/null | tar -x -C ../work/out || true
+          # 23 Nov (owner 'Yes', audit 2 MUST 2): the facts saved so far come in first, so a run that reaches part of a state
+          # adds to its facts file instead of replacing it with only the parks it read
+          mkdir -p ../work/out/facts
+          git archive origin/tools-out park-pages/facts 2>/dev/null | tar -x -C ../work/out --strip-components=1 || warn "Facts" "the facts saved so far were not read"
       - name: Pick the state (a timed run, or areas blank)
         id: pick
         continue-on-error: true
@@ -210,7 +214,8 @@ jobs:
           warn() { echo "::warning title=${1}::${2}"; echo "$1 - $2" >> "$RUNNER_TEMP/kpc-hidden.txt"; }
           if [ ! -s "$GITHUB_WORKSPACE/packet/summary.md" ]; then warn "Save" "there is no summary to save"; exit 1; fi
           rm -rf "$GITHUB_WORKSPACE/packet/pictures"
-          find "$GITHUB_WORKSPACE/packet" -type f -size +2M -delete
+          # 23 Nov (owner 'Yes', audit 2 MUST 3): the facts files and state.json are always kept (PA, WA and Canada are over 2 MB)
+          find "$GITHUB_WORKSPACE/packet" -type f -size +2M -not -path '*/facts/*' -not -name state.json -delete
           cd "$GITHUB_WORKSPACE/kpcdata"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

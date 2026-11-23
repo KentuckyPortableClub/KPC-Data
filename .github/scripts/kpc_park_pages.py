@@ -548,6 +548,16 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
         print(line, flush=True)
 
     saved_at = [0.0]
+    # 23 Nov (owner 'Yes', audit 2 MUST 1): a park counts as read recently only when its facts are really in the out folder.
+    # Before, a skipped park got today's date (so its 30-day clock never ran out) and, with no earlier fact, an empty stub.
+    _old = {}
+
+    def has_old(area, ref):
+        if not out_dir:
+            return True
+        if area not in _old:
+            _old[area] = set(load_json(pathlib.Path(out_dir) / 'facts' / f'{area}.json', {}).get('parks') or {})
+        return ref in _old[area]
 
     def save_progress(index, force=False):
         if not out_dir:
@@ -687,7 +697,8 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
         # A page read inside the refresh window is not fetched again. The caller keeps the old fact.
         prev = (state.get('read') or {}).get(ref) or {}
         age = W.age_days(prev.get('date'), today) if prev.get('date') else None
-        fresh = bool(url and prev.get('fingerprint') and prev.get('url') == url and (age is None or age < refresh_days))
+        fresh = bool(url and prev.get('fingerprint') and prev.get('url') == url and age is not None and age < refresh_days
+                     and has_old(area, ref))
         if len((groups.get(area) or {}).get(norm_url(url), [ref])) >= 2 and prev.get('list_rule') != LIST_RULE:
             fresh = False   # 23 Nov: read before shared pages were followed to the park's own link
         if reextract:
@@ -697,10 +708,7 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
         if fresh:
             out[area][ref] = {'ref': ref, 'unchanged': True, 'page': {'fingerprint': prev.get('fingerprint'),
                              'kind': prev.get('kind'), 'read': today, 'seen': today}, 'questions': []}
-            prev = dict(prev)
-            prev['date'] = today
-            state['read'][ref] = prev
-            done += 1
+            done += 1   # the read date stays the day of the real read (audit 2 MUST 1)
             save_progress(index)
             continue
         pota = {'name': row['name'], 'type': row['type'], 'pin': [row['lat'], row['lon']],
@@ -750,6 +758,7 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
             save_progress(index)
             continue
         if (not reextract and prev.get('fingerprint') and prev.get('url') == url and prev.get('fingerprint') == main.get('fingerprint')
+                and has_old(area, ref)
                 and (len((groups.get(area) or {}).get(norm_url(url), [ref])) < 2 or prev.get('list_rule') == LIST_RULE)):
             # same text: keep the old facts, no new question
             out[area][ref] = {'ref': ref, 'unchanged': True, 'page': {'fingerprint': main.get('fingerprint'),
@@ -1113,6 +1122,9 @@ def merge_unchanged(out_dir, facts_by_area):
             if fact.get('keep_exact'):
                 # a skipped read: the earlier fact, byte for byte; with no earlier fact, the skipped one
                 parks[ref] = old[ref] if ref in old else fact.get('fallback') or {'ref': ref}
+                continue
+            if fact.get('unchanged') and ref not in old:
+                parks.pop(ref, None)   # audit 2 MUST 1: never an empty stub in place of the facts
                 continue
             if fact.get('unchanged') and ref in old:
                 kept = old[ref]
