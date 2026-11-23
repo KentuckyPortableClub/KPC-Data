@@ -1,17 +1,17 @@
-# Waiting room: morning list (2026-11-22)
+# Waiting room: morning list (2026-11-23)
 
 For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in data/waiting/approved.json; the nightly run lets it out.
 
-## Held files: 154 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
+## Held files: 167 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
 
 | since | days | file | last check | why |
 |---|---|---|---|---|
-| 2026-11-01 | 21 | data/truth/US-OK.json | HOLD | F-R3 53 of 100 sized parks are OFF (over half: a reading problem?) |
-| 2026-11-08 | 14 | data/trails/US-13626.json | HOLD | F-T3 length 16 -> 114 km (outside -25% / +50%) |
-| 2026-11-08 | 14 | data/trails/US-9203.json | HOLD | F-T2 points 19246 -> 1822 (under half the saved line); F-T3 length 138 -> 88 km (outside -25% / +50%) |
-| 2026-11-10 | 12 | data/truth/US-UT.json | HOLD | F-R2 6 OFF rows share the size 2,200,000.0 ac |
-| 2026-11-10 | 12 | data/truth/US-WA.json | HOLD | F-R2 5 OFF rows share the size 564.0 ac; F-R3 157 of 188 sized parks are OFF (over half: a reading problem?) |
+| 2026-11-08 | 15 | data/trails/US-13626.json | HOLD | F-T3 length 16 -> 114 km (outside -25% / +50%) |
+| 2026-11-08 | 15 | data/trails/US-9203.json | HOLD | F-T2 points 19246 -> 1822 (under half the saved line); F-T3 length 138 -> 88 km (outside -25% / +50%) |
+| 2026-11-10 | 13 | data/truth/US-UT.json | HOLD | F-R2 6 OFF rows share the size 2,200,000.0 ac |
+| 2026-11-10 | 13 | data/truth/US-WA.json | HOLD | F-R2 5 OFF rows share the size 564.0 ac; F-R3 69 of 115 sized parks are OFF (over half: a reading problem?) |
 | ? | ? | data/ca-key/CA-ON.json | PASS |  |
+| ? | ? | data/campinfo/US-CO.json | PASS |  |
 | ? | ? | data/campinfo/US-GA.json | PASS |  |
 | ? | ? | data/campinfo/US-WV.json | PASS |  |
 | ? | ? | data/campstate/US-AK.json | PASS |  |
@@ -36,14 +36,19 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/campstate/US-VT.json | PASS |  |
 | ? | ? | data/truth/US-AL.json | RELEASE |  |
 | ? | ? | data/truth/US-AR.json | RELEASE |  |
+| ? | ? | data/truth/US-AZ.json | PASS |  |
+| ? | ? | data/truth/US-CA.json | PASS |  |
+| ? | ? | data/truth/US-CO.json | RELEASE |  |
 | ? | ? | data/truth/US-CT.json | PASS |  |
 | ? | ? | data/truth/US-DC.json | RELEASE |  |
 | ? | ? | data/truth/US-DE.json | RELEASE |  |
 | ? | ? | data/truth/US-FL.json | RELEASE |  |
 | ? | ? | data/truth/US-GA.json | RELEASE |  |
 | ? | ? | data/truth/US-IA.json | PASS |  |
+| ? | ? | data/truth/US-ID.json | PASS |  |
 | ? | ? | data/truth/US-IL.json | RELEASE |  |
 | ? | ? | data/truth/US-IN.json | RELEASE |  |
+| ? | ? | data/truth/US-KS.json | RELEASE |  |
 | ? | ? | data/truth/US-KY.json | RELEASE |  |
 | ? | ? | data/truth/US-LA.json | RELEASE |  |
 | ? | ? | data/truth/US-MA.json | PASS |  |
@@ -52,20 +57,28 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/truth/US-MN.json | PASS |  |
 | ? | ? | data/truth/US-MO.json | RELEASE |  |
 | ? | ? | data/truth/US-MS.json | RELEASE |  |
+| ? | ? | data/truth/US-MT.json | PASS |  |
 | ? | ? | data/truth/US-NC.json | RELEASE |  |
 | ? | ? | data/truth/US-ND.json | PASS |  |
+| ? | ? | data/truth/US-NE.json | RELEASE |  |
 | ? | ? | data/truth/US-NH.json | RELEASE |  |
 | ? | ? | data/truth/US-NJ.json | RELEASE |  |
+| ? | ? | data/truth/US-NM.json | PASS |  |
+| ? | ? | data/truth/US-NV.json | PASS |  |
 | ? | ? | data/truth/US-NY.json | PASS |  |
+| ? | ? | data/truth/US-OK.json | PASS |  |
+| ? | ? | data/truth/US-OR.json | PASS |  |
 | ? | ? | data/truth/US-PA.json | RELEASE |  |
 | ? | ? | data/truth/US-RI.json | RELEASE |  |
 | ? | ? | data/truth/US-SC.json | RELEASE |  |
 | ? | ? | data/truth/US-SD.json | PASS |  |
 | ? | ? | data/truth/US-TN.json | RELEASE |  |
+| ? | ? | data/truth/US-TX.json | PASS |  |
 | ? | ? | data/truth/US-VA.json | RELEASE |  |
 | ? | ? | data/truth/US-VT.json | RELEASE |  |
 | ? | ? | data/truth/US-WI.json | PASS |  |
 | ? | ? | data/truth/US-WV.json | RELEASE |  |
+| ? | ? | data/truth/US-WY.json | PASS |  |
 | ? | ? | data/us-key/US-AK.json | PASS |  |
 | ? | ? | data/us-key/US-AL.json | PASS |  |
 | ? | ? | data/us-key/US-AR.json | PASS |  |
@@ -116,15 +129,15 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/us-key/US-WI.json | PASS |  |
 | ? | ? | data/us-key/US-WV.json | PASS |  |
 | ? | ? | data/us-key/US-WY.json | RELEASE |  |
-| 2026-11-04 | 18 | data/trails/state-report.json | HOLD | F-T1 the line has no points |
-| 2026-11-09 | 13 | data/trails/index.json | HOLD | F-T4 trail index 139 -> 101 lines (under 80% of the saved list) |
-| 2026-11-18 | 4 | data/world-key/ZA.json | HOLD | F-O2 4 of 76 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks? |
-| 2026-11-20 | 2 | data/acres.json | HOLD | 430 rows without acres or a source (e.g. US-0042) |
-| 2026-11-22 | 0 | data/world-key/GB.json | HOLD | F-O3 retired parks still outlined: GB-3369 |
+| 2026-11-04 | 19 | data/trails/state-report.json | HOLD | F-T1 the line has no points |
+| 2026-11-18 | 5 | data/world-key/ZA.json | HOLD | F-O2 4 of 76 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks? |
+| 2026-11-20 | 3 | data/acres.json | HOLD | 430 rows without acres or a source (e.g. US-0042) |
+| 2026-11-22 | 1 | data/world-key/GB.json | HOLD | F-O3 retired parks still outlined: GB-3369 |
 | ? | ? | data/ca-key/index.json | RELEASE |  |
 | ? | ? | data/ca-key/refs.json | RELEASE |  |
 | ? | ? | data/ca-key/why-not.json | RELEASE |  |
 | ? | ? | data/trails/index-state.json | RELEASE |  |
+| ? | ? | data/trails/index.json | PASS |  |
 | ? | ? | data/us-key/area-tables.json | PASS |  |
 | ? | ? | data/us-key/changed-parks.json | RELEASE |  |
 | ? | ? | data/us-key/index.json | RELEASE |  |
