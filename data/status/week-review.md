@@ -24,6 +24,7 @@ For the weekly review (Fable, Nov 6). Made nightly by kpc_week_numbers.py; snaps
 - **nearmiss-nov2** (45 rows): LIKELY open 17, SURE open 28
 - **no-recheck** (13 rows): - NOT SURE 1, - YES 2, LIKELY NO 1, LIKELY NOT SURE 6, LIKELY YES 1, SURE YES 2
 - **not-sure-for-chat9** (146 rows): - open 146
+- **official-links** (0 rows): 
 - **outside-intake-nov5** (402 rows): - open 402
 - **parked** (0 rows): 
 - **pin-typos** (0 rows): 
