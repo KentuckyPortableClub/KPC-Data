@@ -438,4 +438,3 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-11-10, 13 days): truth data/truth/US-WA.json held: F-R2 5 OFF rows share the size 564.0 ac · F-R3 69 of 115 sized parks are OFF (over half: a reading problem?)
 - FROM WAITING ROOM (held since 2026-11-22, 1 days): key data/world-key/GB.json held: F-O3 retired parks still outlined: GB-3369
 - FROM WAITING ROOM (held since 2026-11-18, 5 days): key data/world-key/ZA.json held: F-O2 4 of 76 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks?
-- FROM WAITING ROOM HEALTH (2026-11-23): RED: 105 files waiting over 3 days in data/waiting/in/ (e.g. acres.json)
