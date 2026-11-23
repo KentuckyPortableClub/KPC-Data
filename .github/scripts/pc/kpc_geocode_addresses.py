@@ -153,13 +153,21 @@ def run(out, scripts, today=None, poster=post_batch, allow=robots_allow, ca_mann
     known = json.loads(gp.read_text(encoding='utf-8')) if gp.is_file() else {}   # address text -> [lat, lon, type] or [] (no match)
     files = {f: json.loads(f.read_text(encoding='utf-8')) for f in sorted((out / 'facts').glob('*.json'))}
     want, sent_ids, want_ca = {}, {}, set()
+    # 22 Nov 11 PM (owner: "look at American parks"): an address printed on two or more parks' pages is an office the parks
+    # share (WDFW's area manager, Washington State Parks' managing park), not where either park is: it is never used
+    shared = {}
+    for f, d in files.items():
+        for ref, fact in (d.get('parks') or {}).items():
+            for a in ((fact or {}).get('location') or {}).get('addresses') or []:
+                shared.setdefault(a.get('text'), set()).add(ref)
+    shared = {t for t, refs in shared.items() if len(refs) >= 2}
     for f, d in files.items():
         for ref, fact in (d.get('parks') or {}).items():
             if not isinstance(fact, dict) or fact.get('unofficial') or (fact.get('own_page') or {}).get('is') != 'own':
                 continue
             for a in (fact.get('location') or {}).get('addresses') or []:
-                if a.get('role') in ('office', 'mailing'):
-                    continue                          # never a matching point anyway
+                if a.get('role') in ('office', 'mailing') or a.get('text') in shared:
+                    continue                          # never a matching point anyway (an office, a mailbox, or shared by parks)
                 parts = split_address(a.get('text'))
                 if parts and a['text'] not in known:
                     want.setdefault(a['text'], parts)
@@ -207,7 +215,7 @@ def run(out, scripts, today=None, poster=post_batch, allow=robots_allow, ca_mann
             got_one = False
             for a in loc.get('addresses') or []:
                 g = known.get(a.get('text'))
-                if not g or a.get('role') in ('office', 'mailing'):
+                if not g or a.get('role') in ('office', 'mailing') or a.get('text') in shared:
                     continue
                 lat, lon = g[0], g[1]
                 if not R.point_ok(lat, lon, fact.get('area') or '', pin) or (round(lat, 4), round(lon, 4)) in have:
@@ -259,12 +267,16 @@ def selftest():
         parks['K4-0004'] = {'area': 'CA-ON', 'own_page': own, 'pota': {'pin': [45.4, -75.7]},
                             'location': {'addresses': [{'text': '4998 Concession Test Road 7 Testton, ON K1A 0B1', 'role': 'park'},
                                                        {'text': 'PO Box 252, Testfalls, ON P0T 1W0', 'role': 'mailing'}]}}
+        for r_ in ('K4-0005', 'K4-0006'):
+            parks[r_] = {'area': 'US-KY', 'own_page': own, 'pota': {'pin': [37.5, -85.0]},
+                         'location': {'addresses': [{'text': '50 Shared Lake Road Testvale, KY 40003', 'role': 'unknown'}]}}
         (o / 'facts' / 'US-KY.json').write_text(json.dumps({'parks': parks}), encoding='utf-8')
         run(o, scripts, '2026-11-22', poster=fake, allow=lambda s: True, ca_manners=lambda s: FakeCA(), ca_lookup=fake_ca)
         d = json.loads((o / 'facts' / 'US-KY.json').read_text(encoding='utf-8'))['parks']
         c = (d['K4-0001']['location'].get('coords') or [{}])[0]
         ok = ok and c.get('lat') == 37.501 and c.get('role') == 'park' and 'Census' in c.get('from', '') and d['K4-0001']['page']['read'] == '2026-11-22'
         ok = ok and not d['K4-0002']['location'].get('coords') and not d['K4-0003']['location'].get('coords') and calls == [2]
+        ok = ok and not d['K4-0005']['location'].get('coords') and not d['K4-0006']['location'].get('coords')
         c4 = (d['K4-0004']['location'].get('coords') or [{}])[0]
         ok = ok and c4.get('lat') == 45.401 and 'Canada' in c4.get('from', '') and ca_calls == ['4998 Concession Test Road 7 Testton, ON K1A 0B1']
         run(o, scripts, '2026-11-23', poster=fake, allow=lambda s: True, ca_manners=lambda s: FakeCA(), ca_lookup=fake_ca)  # nothing asked again
