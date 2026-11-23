@@ -65,7 +65,7 @@ def pull_one(R, M, fact):
     return loc, addr, pt, 'read'
 
 
-def run(out, scripts, workers=8, max_minutes=180, today=None, manners=None):
+def run(out, scripts, workers=8, max_minutes=180, today=None, manners=None, again=False):
     sys.path.insert(0, str(pathlib.Path(scripts).resolve()))
     import kpc_park_pages_rules as R
     if manners is None:
@@ -79,8 +79,10 @@ def run(out, scripts, workers=8, max_minutes=180, today=None, manners=None):
     todo = {}
     for f, d in files.items():
         for ref, fact in (d.get('parks') or {}).items():
-            if ref in done or not wants_place(fact):
+            if not wants_place(fact):
                 continue
+            if ref in done and not (again and not str(done[ref]).endswith('again')):
+                continue          # --again (22 Nov, after the finders learnt Canada): a park still without a place is read once more
             host = R.host_of((fact.get('page') or {}).get('final_url') or '') or '?'
             todo.setdefault(host, []).append((f, ref))
     total = sum(len(v) for v in todo.values())
@@ -117,14 +119,14 @@ def run(out, scripts, workers=8, max_minutes=180, today=None, manners=None):
                         continue
                     old = fact.get('location') or {}
                     for k in ('addresses', 'coords', 'directions'):
-                        if loc.get(k) and not old.get(k): old[k] = loc[k]
+                        if loc.get(k) and (not old.get(k) or k == 'addresses'): old[k] = loc[k]   # a new address read replaces an old junk one
                     fact['location'] = old
                     conf = fact.setdefault('confirm', {})
                     if addr and not conf.get('address'): conf['address'] = addr
                     if pt and not conf.get('coords') and (fact.get('own_page') or {}).get('is') == 'own': conf['coords'] = pt
                     fact.setdefault('page', {})['read'] = today          # a newer read: the upload keeps it
                     fact['location_pulled'] = today
-                    done[ref] = today
+                    done[ref] = today + (' again' if again else '')
                     counts['read'] += 1
                     counts['address'] += bool(old.get('addresses'))
                     counts['point'] += bool(old.get('coords'))
@@ -190,6 +192,7 @@ if __name__ == '__main__':
     ap = argparse.ArgumentParser()
     ap.add_argument('--out', default='out'); ap.add_argument('--scripts', default='scripts')
     ap.add_argument('--workers', type=int, default=8); ap.add_argument('--max-minutes', type=float, default=180)
+    ap.add_argument('--again', action='store_true', help='read once more the parks still without an address, point or directions')
     ap.add_argument('--selftest', action='store_true')
     a = ap.parse_args()
-    sys.exit(selftest() if a.selftest else run(a.out, a.scripts, a.workers, a.max_minutes))
+    sys.exit(selftest() if a.selftest else run(a.out, a.scripts, a.workers, a.max_minutes, again=a.again))
