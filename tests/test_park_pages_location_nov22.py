@@ -70,6 +70,12 @@ check('French directions in kilometres name the road and the town', d.get('roads
 d = R.directions_of('Located 30 km north of Testtown on Highway 3.') or {}
 check('"located 30 km north of" counts as directions', d.get('roads') == ['Highway 3'] and d.get('towns') == ['Testtown'])
 
+# 22 Nov 11 PM (owner: "have you even look at the weblinks"): a point printed as two labelled lines
+pts = [(round(c['lat'], 4), round(c['lon'], 4)) for c in R.html_coords('', 'Location Info\nLatitude: 51.8027° N\nLongitude: -106.4602° W')]
+check('a point printed as Latitude / Longitude lines (with N and W) is read', pts == [(51.8027, -106.4602)])
+pts = [(round(c['lat'], 4), round(c['lon'], 4)) for c in R.html_coords('', 'Lat: 44.5012, Long: 80.2010 W')]
+check('Lat / Long with a W letter gives a west (negative) longitude', pts == [(44.5012, -80.201)])
+
 tool = ROOT / '.github' / 'scripts' / 'pc' / 'kpc_reread_location.py'
 r = subprocess.run([sys.executable, '-I', str(tool), '--selftest'], capture_output=True, text=True)
 check('the PC tool marks only own pages with no address, point or directions for reading again, once',

@@ -1118,7 +1118,21 @@ def html_coords(html, text):
     for m in re.finditer(r'(Geographic Coordinates|GPS|Lat\s*/\s*Long)\s*[:\s]+(-?\d{1,3}\.\d+)\s*[,/]\s*(-?\d{1,3}\.\d+)',
                          text or '', re.I):
         add(m.group(2), m.group(3), 'labelled line', 'park')
+    # 22 Nov 2026 (owner: "have you even look at the weblinks"): Tourism Saskatchewan and others print the point as two
+    # labelled lines, 'Latitude: 51.8027° N' then 'Longitude: -106.4602° W'; a W or S letter makes the number negative
+    for m in LATLON_LINES.finditer(text or ''):
+        try:
+            lat, lon = abs(float(m.group('lat'))), abs(float(m.group('lon')))
+        except ValueError:
+            continue
+        if (m.group('ns') or 'N').upper() == 'S' or m.group('lat').startswith('-'): lat = -lat
+        if (m.group('ew') or '').upper() == 'W' or m.group('lon').startswith('-'): lon = -lon
+        add(lat, lon, 'labelled line', 'unknown')
     return out
+
+
+LATLON_LINES = re.compile(r'(?i)\blat(?:itude)?\s*[:=]\s*(?P<lat>-?\d{1,2}\.\d{3,})\s*°?\s*(?P<ns>[NS])?\b[^\n\d-]{0,40}?\n?[^\n\d-]{0,20}?'
+                          r'\b(?:lon(?:g(?:itude)?)?|lng)\s*[:=]\s*(?P<lon>-?\d{1,3}\.\d{3,})\s*°?\s*(?P<ew>[EW])?\b')
 
 
 def classify_link(url, text, park_name, agency_host):
