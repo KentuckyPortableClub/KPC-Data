@@ -1020,9 +1020,9 @@
   "Key bots: errors and silence": {
    "areas": "",
    "last_run": "2026-11-23",
-   "made": "4 key bot(s) with errors or gone silent: Europe weather warnings (silent: no finished run in 142 h (expected every 14 h or les); KPC-Data watchdog (Key bots); flow board (silent: no finished run in 82 h (expected every 26 h or less); waiting room (silent: no finished run in 7 h (expected every 6 h o",
+   "made": "4 key bot(s) with errors or gone silent: Europe weather warnings (silent: no finished run in 143 h (expected every 14 h or les); KPC-Data watchdog (Key bots); flow board (silent: no finished run in 83 h (expected every 26 h or less); waiting room (silent: no finished run in 8 h (expected every 6 h o",
    "result": "red",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45248799182",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45259828793",
    "waiting_on": "HQ: open the watchdog run summary for the run links"
   },
   "Layer collector": {
@@ -1084,9 +1084,9 @@
   "Skipped-run watchdog": {
    "areas": "",
    "last_run": "2026-11-23",
-   "made": "2026-11-23 19:26 UTC: 2 skipped run(s) started again: kpc-copy-from-links.yml (missed Nov 23 18:11 UTC); kpc-park-pages.yml (missed Nov 23 18:23 UTC)",
-   "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45248799182",
+   "made": "nothing skipped",
+   "result": "green",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45259828793",
    "waiting_on": "nobody (it restarts them itself)"
   },
   "Storage keeper (weekly)": {
@@ -1204,9 +1204,9 @@
   "Website copy (site branch)": {
    "areas": "",
    "last_run": "2026-11-23",
-   "made": "site = main: the website has the newest data",
+   "made": "site is under 60 min behind main: the copy bot will catch up",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45248799182",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45259828793",
    "waiting_on": "nobody (the watchdog restarts the copy bot itself)"
   },
   "answer-sheet-check": {
