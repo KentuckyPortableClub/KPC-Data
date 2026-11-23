@@ -33,7 +33,8 @@ import kpc_park_pages as P
 import kpc_park_pages_rules as R
 import kpc_park_pages_work as W
 
-FIND_RULE = 'L 2026-11-23c'   # b (9:20 AM, the owner's NH trial): kept-page links only from the area's own sites
+FIND_RULE = 'L 2026-11-23c'   # c also: a site that says no (robots.txt / 403) is counted apart from a busy one, rests 30 days
+                              # b (9:20 AM, the owner's NH trial): kept-page links only from the area's own sites
                               # c (afternoon, the first full run found little): the agency's own park LIST pages, reached from
                               # its front page (two steps down at most), are a place to look too (L-list); all parks looked again
 POINT_KM = 5.0
@@ -207,7 +208,8 @@ class Fetcher:
         self.max_requests, self.deadline, self.get_max = max_requests, deadline, get_max_seconds
         self.requests = 0
         self.cache = {}
-        self.busy = 0     # answers that say nothing about the page (busy, refused, not asked): the park is tried again next run
+        self.busy = 0     # answers that say nothing about the page (busy, resting, not asked): the park is tried again next run
+        self.said_no = 0  # the site says no to the reader (robots.txt, 401/403, a bot wall): NOT busy, it rests 30 days like any miss
         self.lists = {}   # site -> its park list pages, read one time for every park of that site (L-list)
 
     def time_up(self):
@@ -221,14 +223,17 @@ class Fetcher:
             return None
         key = P.norm_url(url)
         if key in self.cache:
-            if (self.cache[key] or {}).get('kind') in ('resting', 'refused'):
+            k = (self.cache[key] or {}).get('kind')
+            if k == 'resting':
                 self.busy += 1     # the same busy site, for this park too
+            elif k == 'refused':
+                self.said_no += 1  # the same site that says no, for this park too
             return self.cache[key]
         if R.is_wdpa(url):
             return None
         host = R.host_of(url)
         if host and P._refused_until(self.state, host, self.today):
-            self.busy += 1
+            self.said_no += 1
             page = {'url': url, 'final': url, 'status': 'refused', 'kind': 'refused', 'text': '', 'links': []}
             self.cache[key] = page
             return page
@@ -256,8 +261,10 @@ class Fetcher:
                 'family': R.family_of(final or url), 'thin': len((vis.get('text') or '').strip()) < 400}
         if from_copy:
             page['kept_date'] = (self.getter.copy._rec(url) or {}).get('date') or ''
-        if kind in ('resting', 'refused'):
+        if kind == 'resting':
             self.busy += 1
+        elif kind == 'refused':
+            self.said_no += 1
         self.cache[key] = page
         return page
 
@@ -496,7 +503,7 @@ def find_links(areas, facts_by_area, getter, state, today, first=(), areas_only=
             print(f'Looking for the own page of park {i + 1:,} of {len(todo):,} ({ref}, {why}).', flush=True)
         best = ('no', 'nothing on the agency sites named this park', None, '', '')
         reads = 0
-        busy0 = F.busy
+        busy0, no0 = F.busy, F.said_no
         for how, url in candidates_for(ref, row, fact, why, F, kept or {}, sisters.get((area, row.get('type') or '')), sites.get(area) or set()):
             if reads >= READS_PER_PARK:
                 break
@@ -514,7 +521,9 @@ def find_links(areas, facts_by_area, getter, state, today, first=(), areas_only=
         level, reason, built, how, url = best
         busy = F.busy > busy0
         if level == 'no' and busy:
-            reason = 'a site was busy, refused or not asked this run: looked for again next run'
+            reason = 'a site was busy or not asked this run: looked for again next run'
+        elif level == 'no' and F.said_no > no0:
+            reason = "the agency site says no to our reader (robots.txt or it refuses us): robots.txt always wins, a person's link is needed"
         found = {'url': url if level != 'no' else '', 'how': how, 'level': level, 'why': reason, 'for': why,
                  'date': today, 'rule': FIND_RULE, 'was': (fact.get('asked') or {}).get('url') or ''}
         if level == 'sure' and built:
@@ -557,7 +566,8 @@ def summary_lines(rows, requests, state):
              f"  sure (taken as the park's page): {c['sure']:,}",
              f'  unsure (listed for a person):     {c["unsure"]:,}',
              f'  not found:                        {c["no"]:,}',
-             f'    of them, a site was busy or not asked (looked for again next run): {sum(1 for r in rows if "busy" in r["reason"]):,}']
+             f'    of them, a site was busy or not asked (looked for again next run): {sum(1 for r in rows if "busy" in r["reason"]):,}',
+             f'    of them, the agency site says no to our reader (robots.txt / refused; never forced): {sum(1 for r in rows if "says no" in r["reason"]):,}']
     if state.get('find_stopped'):
         lines.append(f"  stopped ({state['find_stopped']}); {state.get('find_left', 0):,} parks are left for the next run.")
     for k in sorted(k for k in c if ' by ' in k or k.startswith('for ')):

@@ -19,7 +19,8 @@ def check(msg, cond):
 
 
 H = 'https://parks.zz.invented.gov'
-H2 = 'https://dnr.zz.invented.gov'          # a site whose park pages carry NUMBERS in their addresses (L-list)
+H2 = 'https://dnr.zz.invented.gov'
+H3 = 'https://game.zz.invented.gov'         # a site that refuses the reader (403): 'says no', never 'busy'          # a site whose park pages carry NUMBERS in their addresses (L-list)
 LIST = H + '/parks/'
 WORDS = 'Words about the place, its trails and its lake. ' * 12
 PIN = (47.0, -101.0)
@@ -46,6 +47,7 @@ PARKS = {   # ref: (name, POTA link, type)
     'US-9611': ('Cedar Point State Park', H + '/parks/cedar-point', 'State Park'),              #     ... that other park
     'US-9612': ('Willow Fen Wildlife Area', H2, 'Wildlife Management Area'),                    # (j) L-list: front page -> list -> page = SURE
     'US-9613': ('Gull Rock Wildlife Area', H2, 'Wildlife Management Area'),                     # (k) named only off the site: not found
+    'US-9614': ('Slate Hill Game Land', H3, 'State Game Land'),                                 # (l) the site says no (403): not busy
 }
 FX = {
     PARKS['US-9601'][1]: page('Birch Bay State Park', NEAR),
@@ -81,10 +83,11 @@ FX = {
 
 
 def setup(t):
+    FX3 = {H3: 403, H3 + '/': 403}
     data = t / 'data' / 'parkinfo'; data.mkdir(parents=True)
     (data / 'US-ZZ.json').write_text(json.dumps({'parks': {r: [n, u, k, '', '', PIN[0], PIN[1], 0, 0, 1] for r, (n, u, k) in PARKS.items()}}),
                                      encoding='utf-8')
-    (t / 'fx.json').write_text(json.dumps({'pages': {u: {'status': 200, 'body': b} for u, b in FX.items()}}), encoding='utf-8')
+    (t / 'fx.json').write_text(json.dumps({'pages': dict({u: {'status': 200, 'body': b} for u, b in FX.items()}, **{u: {'status': c, 'body': 'Forbidden'} for u, c in FX3.items()})}), encoding='utf-8')
     (t / 'table.json').write_text(json.dumps({'hosts': {'zz.invented.gov': {'_parks': 4}}}), encoding='utf-8')
 
 
@@ -131,6 +134,8 @@ with tempfile.TemporaryDirectory() as d:
     check('the summary counts sure / unsure / not found', 'sure (taken' in summ and 'US-ZZ:' in summ)
     st = json.loads((t / 'out/state.json').read_text())
     check('state remembers what was found', st['found']['US-9603']['level'] == 'sure' and st['found']['US-9606']['level'] == 'no')
+    check('a site that says no rests 30 days (not looked for again next run, robots.txt / refusal wins)',
+          st['found']['US-9614']['date'] == '2026-11-23')
     # the reader's next run: the found page is the park's page; the dead link is not asked again
     r = run(t, 'read')
     facts = json.loads((t / 'out/facts/US-ZZ.json').read_text())['parks']
