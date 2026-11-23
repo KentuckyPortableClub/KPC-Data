@@ -12,6 +12,9 @@ Where it looks, cheapest first (every candidate is then READ and judged; nothing
   home    the agency front page POTA gave: the one link there naming the park
   sister  the agency's park list its sister parks (same area, same kind) have their own pages under: the one link naming the
           park, then the address the sisters' pattern gives (/parks/<park-name>); one or two requests per AGENCY, reused
+  list    (L-list, 23 Nov c) the agency's own park LIST pages, reached from its front page by their words (parks, find a park,
+          A-Z, wildlife areas, historic sites ...; same site only, two steps down at most, 8 pages per site, read one time per
+          site): the one link there naming the park. For sites whose park pages carry numbers, not names, in their addresses.
 SURE (rule L1) = an official site, one park per page (no other park of the area uses or found the page), the page's own name is
 the park's ('same' or 'same-core', never another kind of place), no other park of the area carries that name, AND a second
 witness: a point on the page within 5 km of POTA's pin, or the page sits in the agency park list its sister parks use on a host
@@ -30,13 +33,23 @@ import kpc_park_pages as P
 import kpc_park_pages_rules as R
 import kpc_park_pages_work as W
 
-FIND_RULE = 'L 2026-11-23b'   # b (9:20 AM, the owner's NH trial): kept-page links only from the area's own sites
+FIND_RULE = 'L 2026-11-23c'   # b (9:20 AM, the owner's NH trial): kept-page links only from the area's own sites
+                              # c (afternoon, the first full run found little): the agency's own park LIST pages, reached from
+                              # its front page (two steps down at most), are a place to look too (L-list); all parks looked again
 POINT_KM = 5.0
 WALK_UP = 3
 READS_PER_PARK = 4
 RETRY_DAYS = 30
 GOOD_ROLES = {'park', 'visitor-centre', 'unknown'}
-HOW_ORDER = ('kept', 'up', 'home', 'sister', 'pattern')
+HOW_ORDER = ('kept', 'up', 'home', 'sister', 'pattern', 'list')
+LIST_FIRST = 4      # list pages taken from the front page
+LIST_SECOND = 2     # ... and from each of those, one step further down
+LIST_PAGES = 8      # list pages read per site at most (one time, for every park that site has)
+LIST_WORDS = re.compile(r"(?<![a-z])(parks?|parcs?|find a park|all parks|a ?- ?z|a to z|locations?|places|destinations?|"
+                        r"areas?|sites?|lieux|lands?|forests?|for[eê]ts?|refuges?|preserves?|reserves?|r[ée]serves?|wildlife|"
+                        r"wmas?|recreation|directory|properties|historic|nature)(?![a-z])", re.I)
+LIST_NOT = re.compile(r"(log ?in|sign ?in|news|event|calendar|contact|jobs?|careers?|about|donat|shop|store|licen[cs]e|"
+                      r"permit|reserv(e|ation)s? (a|your)|book|search|privacy|accessib|\.(pdf|jpe?g|png|zip|docx?)$)", re.I)
 
 
 # ---------------------------------------------------------------- which parks
@@ -195,6 +208,7 @@ class Fetcher:
         self.requests = 0
         self.cache = {}
         self.busy = 0     # answers that say nothing about the page (busy, refused, not asked): the park is tried again next run
+        self.lists = {}   # site -> its park list pages, read one time for every park of that site (L-list)
 
     def time_up(self):
         return self.deadline is not None and time.time() >= self.deadline
@@ -289,6 +303,70 @@ def judge(ref, area, row, area_parks, page, claimed, today, how, sisters=(), tab
     return 'unsure', f'own name ({vs}), but no second witness (no point on the page, not on a sister-park list of a known agency site)', fact
 
 
+# ---------------------------------------------------------------- the agency's own park lists (L-list)
+def list_links(page, home):
+    """The links of a page that lead to a park LIST on the same site, best first (most list words)."""
+    base = R.base_host(R.host_of(home))
+    seen, out = set(), []
+    for link, words in (page or {}).get('links') or []:
+        if not link or not str(link).startswith(('http://', 'https://')) or R.base_host(R.host_of(link)) != base:
+            continue
+        path = urllib.parse.unquote(urllib.parse.urlparse(link).path or '')
+        text = ' '.join(str(words or '').split())
+        if LIST_NOT.search(text) or LIST_NOT.search(path) or R.is_agency_home(link):
+            continue
+        score = len(LIST_WORDS.findall(text)) + len(LIST_WORDS.findall(path.replace('-', ' ').replace('_', ' ')))
+        n = P.norm_url(link)
+        if score and n not in seen and n != P.norm_url(home):
+            seen.add(n)
+            out.append((-score, len(text), link))
+    return [u for *_k, u in sorted(out)]
+
+
+def list_pages(F, home):
+    """The park list pages of the site `home` is the front page of: the front page's list links (LIST_FIRST), then one step
+    further down (LIST_SECOND each), LIST_PAGES at most; read ONE time per site and kept for every park of that site."""
+    if F is None or not home:
+        return []
+    p = urllib.parse.urlparse(home)
+    if not p.netloc:
+        return []
+    root = f'{p.scheme or "https"}://{p.netloc.lower()}/'
+    key = R.base_host(R.host_of(root))
+    if key in F.lists:
+        return F.lists[key]
+    got, asked = [], set()
+    front = F.get(root)
+    if front is None:
+        return []          # the run's budget is spent: not kept, the next park (or run) tries again
+    first = list_links(front, root)[:LIST_FIRST] if front.get('kind') == 'html' else []
+    for u in first:
+        if len(asked) >= LIST_PAGES:
+            break
+        asked.add(P.norm_url(u))
+        pg = F.get(u)
+        if pg is None:
+            return got
+        if pg.get('kind') == 'html':
+            got.append(pg)
+    for pg in list(got):
+        for u in list_links(pg, root)[:LIST_SECOND]:
+            if len(asked) >= LIST_PAGES:
+                break
+            if P.norm_url(u) in asked:
+                continue
+            asked.add(P.norm_url(u))
+            p2 = F.get(u)
+            if p2 is None:
+                return got
+            if p2.get('kind') == 'html':
+                got.append(p2)
+    if front.get('kind') == 'html':
+        got.insert(0, front)
+    F.lists[key] = got
+    return got
+
+
 # ---------------------------------------------------------------- the walk
 def area_sites(facts_by_area):
     """area -> the hosts (www. left off) the area's own parks' pages and links use: a kept page's link is a candidate only on
@@ -354,6 +432,24 @@ def candidates_for(ref, row, fact, why, F, kept, sisters, sites=None):
             s = slug_forms(name).get(pat)
             if s and fresh(origin + folder + s):
                 yield 'pattern', origin + folder + s
+    # L-list: the agency's own park lists, from its front page (the front page POTA gave, the dead link's site, the sisters' site)
+    homes = []
+    if why == 'agency home only' and asked:
+        homes.append(asked)
+    if why == 'dead link' and asked:
+        homes.append(asked)
+    for origin, _folder, _n, _pat in sisters or ():
+        homes.append(origin + '/')
+    done = set()
+    for home in homes:
+        h = R.base_host(R.host_of(home) or '')
+        if not h or h in done or (sites is not None and sites and h not in sites and why != 'agency home only'):
+            continue
+        done.add(h)
+        for pg in list_pages(F, home):
+            pick = P._park_link(pg.get('links'), name, pg.get('final') or pg.get('url'))
+            if pick and R.base_host(R.host_of(pick)) == h and fresh(pick):
+                yield 'list', pick
 
 
 def find_links(areas, facts_by_area, getter, state, today, first=(), areas_only=None, again=False, kept=None,

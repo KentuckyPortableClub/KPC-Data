@@ -19,6 +19,7 @@ def check(msg, cond):
 
 
 H = 'https://parks.zz.invented.gov'
+H2 = 'https://dnr.zz.invented.gov'          # a site whose park pages carry NUMBERS in their addresses (L-list)
 LIST = H + '/parks/'
 WORDS = 'Words about the place, its trails and its lake. ' * 12
 PIN = (47.0, -101.0)
@@ -43,6 +44,8 @@ PARKS = {   # ref: (name, POTA link, type)
     'US-9609': ('Fox Den State Park', '', 'State Park'),                                        # (i) the page's point is 40 km off: UNSURE
     'US-9610': ('Cedar Point State Park', '', 'State Park'),                                    # (e) the page is another park's link: UNSURE
     'US-9611': ('Cedar Point State Park', H + '/parks/cedar-point', 'State Park'),              #     ... that other park
+    'US-9612': ('Willow Fen Wildlife Area', H2, 'Wildlife Management Area'),                    # (j) L-list: front page -> list -> page = SURE
+    'US-9613': ('Gull Rock Wildlife Area', H2, 'Wildlife Management Area'),                     # (k) named only off the site: not found
 }
 FX = {
     PARKS['US-9601'][1]: page('Birch Bay State Park', NEAR),
@@ -64,6 +67,16 @@ FX = {
     H: ('<html><head><title>Invented Parks</title></head><body><h1>Welcome</h1><p>' + WORDS + '</p>'
         f'<a href="{H}/parks/lone-pine">Lone Pine State Park</a></body></html>'),
     H + '/parks/lone-pine': page('Lone Pine State Park', NEAR),
+    H2: ('<html><head><title>Invented DNR</title></head><body><h1>Welcome</h1><p>' + WORDS + '</p>'
+         f'<a href="{H2}/news">News about wildlife areas</a><a href="{H2}/places">Places to go</a>'
+         f'<a href="https://tourism.zz.invented.com/areas">All wildlife areas</a></body></html>'),
+    H2 + '/places': ('<html><head><title>Places to go</title></head><body><h1>Places</h1><p>' + WORDS + '</p>'
+                     f'<a href="{H2}/wildlife-areas">Wildlife areas A-Z</a></body></html>'),
+    H2 + '/wildlife-areas': ('<html><head><title>Wildlife areas</title></head><body><h1>Wildlife areas A-Z</h1><p>' + WORDS + '</p>'
+                             f'<a href="{H2}/area.cfm?id=12">Willow Fen Wildlife Area</a>'
+                             f'<a href="https://tourism.zz.invented.com/gull-rock">Gull Rock Wildlife Area</a></body></html>'),
+    H2 + '/area.cfm?id=12': page('Willow Fen Wildlife Area', NEAR),
+    H2 + '/news': page('Gull Rock Wildlife Area', NEAR),
 }
 
 
@@ -180,6 +193,8 @@ with tempfile.TemporaryDirectory() as d:
                                           on_save=lambda r, w: calls.append(len(r)), save_every=0)
     check('progress is saved while it walks (a window closed part way keeps what was found)', len(calls) >= len(rows) - 1 > 0)
     check('it asks each agency list once, however many parks use it', getter.calls.count(LIST) <= 1)
+    check('L-list: a site\'s park lists are read one time for all its parks, never its News page',
+          getter.calls.count(H2 + '/wildlife-areas') <= 1 and H2 + '/news' not in getter.calls)
     st = {}
     busy = P.KeeperCopyGetter({}, t, None)      # every answer 'not in the copy': the sites said nothing
     rows, written, reqs = FIND.find_links(areas, facts, busy, st, '2026-11-23', quiet=True, web=web, docs=docs)
