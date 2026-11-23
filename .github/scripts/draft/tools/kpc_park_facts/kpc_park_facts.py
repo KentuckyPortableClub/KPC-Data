@@ -18,7 +18,7 @@ Nothing is downloaded and no input file is changed. Standard library only.
 """
 import argparse, collections, csv, datetime, glob, json, os, re, sys, tempfile
 
-VERSION = 'kpc_park_facts 6 (2026-11-22)'
+VERSION = 'kpc_park_facts 7 (2026-11-23)'
 REF = re.compile(r'^[A-Z0-9]{1,4}-\d{4,5}$')
 AREA = re.compile(r'^(US|CA)-[A-Z]{2}$')
 
@@ -243,6 +243,14 @@ def read_pages(folder):
                                if isinstance(loc.get('directions'), dict) and ((loc.get('directions') or {}).get('roads')
                                                                                or (loc.get('directions') or {}).get('towns')) else None),
                 'addresses': [{'text': a.get('text'), 'role': a.get('role')} for a in _first(loc.get('addresses'), 2)],
+                # 23 Nov 2026 (owner: "using real names, addresses and directions"): how far and which way from a named town
+                # ('2 miles east of Shiocton'), the counties the page names, and the approximate points the converter made
+                # from them. 'near' is never a page point: it is approximate, and no key reads it as a point.
+                'offsets': [{'km': o.get('km'), 'dir': o.get('dir'), 'of': str(o.get('of') or '')[:40]}
+                            for o in _first(loc.get('offsets'), 3) if isinstance(o, dict) and o.get('of')],
+                'counties': [str(x)[:40] for x in _first(loc.get('counties'), 4) if str(x).strip()],
+                'near': [{'lat': n.get('lat'), 'lon': n.get('lon'), 'within_km': n.get('within_km'), 'from': str(n.get('from') or '')[:60]}
+                         for n in _first(loc.get('near'), 3) if isinstance(n, dict) and n.get('lat') is not None],
                 'manager': man.get('agency'),
                 'status_words': {k: v for k, v in st.items() if v},
                 'questions': sorted({q.get('code') for q in p.get('questions') or [] if q.get('code')}),
@@ -254,7 +262,43 @@ def read_pages(folder):
                 'maps': [{'url': str(m.get('url') or '')[:300], 'kind': m.get('kind'), 'names_park': bool(m.get('names_park'))}
                          for m in _first(p.get('maps'), 6) if isinstance(m, dict) and str(m.get('url') or '').startswith('https://')],
             }
+    SHARED_POINTS[0] = drop_shared_points(out)
     return out, areas
+
+
+SHARED_POINT_PARKS = 3   # the same point on this many parks' pages of one site = the site's own furniture, never a park's point
+SHARED_POINTS = [0]
+
+
+def drop_shared_points(pages):
+    """23 Nov 2026: a point that 3 or more parks' pages of ONE site carry (a template's default map, the agency's office,
+    as on Illinois DNR where every park page holds the same park's point) is taken out of all of them. A point that
+    came from the park's own address is left to the converter's own shared-address rule. -> how many were taken out."""
+    seen = {}
+    for ref, f in pages.items():
+        for c in f.get('coords') or []:
+            if str(c.get('from') or '').startswith('address'):
+                continue
+            try:
+                k = (f.get('host') or '', round(float(c['lat']), 3), round(float(c['lon']), 3))
+            except (TypeError, ValueError, KeyError):
+                continue
+            seen.setdefault(k, set()).add(ref)
+    bad = {k for k, refs in seen.items() if len(refs) >= SHARED_POINT_PARKS}
+    n = 0
+    for ref, f in pages.items():
+        keep = []
+        for c in f.get('coords') or []:
+            try:
+                k = (f.get('host') or '', round(float(c['lat']), 3), round(float(c['lon']), 3))
+            except (TypeError, ValueError, KeyError):
+                k = None
+            if k in bad and not str(c.get('from') or '').startswith('address'):
+                n += 1
+                continue
+            keep.append(c)
+        f['coords'] = keep
+    return n
 
 
 def read_links(path):
@@ -374,8 +418,18 @@ def combine(parks, sizes, pages, links):
             c['page gives an address'] += 1
         if pg.get('directions'):
             c['page gives directions (roads or towns)'] += 1
+        if pg.get('offsets'):
+            c['page says how far and which way from a town'] += 1
+        if pg.get('counties'):
+            c['page names its county'] += 1
+        if pg.get('near'):
+            c['approximate point from the page directions'] += 1
+        if pg.get('name_vs_pota') in ('same', 'same-core'):
+            c["page carries the park's own name"] += 1
         if ref in sizes and pg.get('sizes'):
             c['official size AND a page size'] += 1
+    if SHARED_POINTS[0]:
+        c["points taken out: the same point on 3 or more parks' pages of one site"] = SHARED_POINTS[0]
     return rows, c
 
 
