@@ -1020,9 +1020,9 @@
   "Key bots: errors and silence": {
    "areas": "",
    "last_run": "2026-11-23",
-   "made": "4 key bot(s) with errors or gone silent: Europe weather warnings (silent: no finished run in 137 h (expected every 14 h or les); KPC-Data watchdog (Key bots); flow board (silent: no finished run in 77 h (expected every 26 h or less); waiting room (kpc_engine.py)",
+   "made": "3 key bot(s) with errors or gone silent: Europe weather warnings (silent: no finished run in 140 h (expected every 14 h or les); KPC-Data watchdog (Key bots); flow board (silent: no finished run in 80 h (expected every 26 h or less)",
    "result": "red",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45192056174",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45220811298",
    "waiting_on": "HQ: open the watchdog run summary for the run links"
   },
   "Layer collector": {
@@ -1084,9 +1084,9 @@
   "Skipped-run watchdog": {
    "areas": "",
    "last_run": "2026-11-23",
-   "made": "2026-11-23 14:15 UTC: 3 skipped run(s) started again: kpc-closures.yml (missed Nov 23 13:38 UTC); kpc-copy-from-links.yml (missed Nov 23 13:11 UTC); kpc-youtube-comments.yml (missed Nov 23 13:36 UTC, NOT restarted: its next scheduled run catches up)",
+   "made": "2026-11-23 16:49 UTC: 2 skipped run(s) started again: kpc-copy-from-links.yml (missed Nov 23 16:11 UTC); kpc-park-pages.yml (missed Nov 23 15:23 UTC)",
    "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45192056174",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45220811298",
    "waiting_on": "nobody (it restarts them itself)"
   },
   "Storage keeper (weekly)": {
@@ -1204,10 +1204,10 @@
   "Website copy (site branch)": {
    "areas": "",
    "last_run": "2026-11-23",
-   "made": "site is under 60 min behind main: the copy bot will catch up",
-   "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45192056174",
-   "waiting_on": "nobody (the watchdog restarts the copy bot itself)"
+   "made": "site is 138 min behind main (4 commits, 2 website files): the copy bot did not catch up, so the watchdog published site itself (kpc_site_publish.sh)",
+   "result": "red",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45220811298",
+   "waiting_on": "HQ: look at kpc-pages-sync.yml runs"
   },
   "answer-sheet-check": {
    "areas": "",
@@ -1226,11 +1226,11 @@
    "waiting_on": "chat 8 grades the sample; Brandon GO before any card"
   },
   "closures super-bot": {
-   "areas": "1 done, 0 left",
+   "areas": "0 done, 0 left",
    "last_run": "2026-11-23",
-   "made": "1 areas read, 1 saved; see data/closures/review.md",
+   "made": "0 areas read, 0 saved; see data/closures/review.md",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45099712952",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45192190857",
    "waiting_on": "chat 11 grades the Kentucky side-by-side; Brandon GO before any merge (CL-5)"
   },
   "hours fees permits bot": {
