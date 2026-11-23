@@ -9,9 +9,10 @@ here runs on its own, downloads anything or opens a website.
          records, licence internals, withheld marks); no WDPA field or word; a pages file must hold EVERY park of its area on the
          POTA list (data/parkinfo/<area>.json), so the order the PC read parks in can never show the private likely-mismatch
          list; a crosswalk file must pass the same checks as an agency list (kpc_agency_lists.problems, host rules included).
-  merge  After a clean check, keeper-first, keeping every park already there:
-           park-pages/facts/<area>.json (tools-out): every park already in the file is kept exactly as it is; a park only the PC
-             has is added, marked "from_pc_upload": <date>.
+  merge  After a clean check:
+           park-pages/facts/<area>.json (tools-out): a park already in the file is kept unless the PC's read of it is better (it
+             read the real page where the one on file got nothing or a garbled name) or as good and newer (better_read; owner
+             22 Nov); a park only the PC has is added. A park taken from the PC is marked "from_pc_upload": <date>.
            data/agency-crosswalk/<agency>.json (main): a file the keeper made is kept; else the PC's crosswalk is written, built
              by kpc_agency_lists.crosswalk_rows (a web id that maps to two map ids is left out), marked made_by "PC upload".
          The report holds counts only.
@@ -163,8 +164,35 @@ def write_json(path, doc):
     os.replace(tmp, path)
 
 
+REAL_PAGE = ('html', 'pdf')
+
+
+def _garbled(t):
+    t = str(t or '')
+    return len(t) >= 4 and sum(1 for ch in t if ord(ch) > 127 or ch == '\ufffd' or (ord(ch) < 32 and ch not in '\t\n')) / len(t) > 0.25
+
+
+def read_strength(fact):
+    """2 = the park's page was really read (html or pdf) and its name is clean; 1 = a read that got nothing (busy, refused, dead,
+    a page that builds itself) or a garbled name; 0 = no read."""
+    pg, nm = (fact or {}).get('page') or {}, (fact or {}).get('name') or {}
+    kind = pg.get('kind')
+    if not kind: return 0
+    name = nm.get('heading') or nm.get('title') if isinstance(nm, dict) else nm
+    return 2 if kind in REAL_PAGE and not _garbled(name) else 1
+
+
+def better_read(old, new):
+    """22 Nov (owner 7:10 PM "Yeah"): the PC's read wins unless it is weaker than the one on file (it came back busy, refused,
+    dead or garbled where the old one read the real page); equally strong = the newer read wins (the later 'read' date, a tie
+    goes to the PC). -> True when the new read should replace the old."""
+    so, sn = read_strength(old), read_strength(new)
+    if sn != so: return sn > so
+    return str(((new or {}).get('page') or {}).get('read') or '') >= str(((old or {}).get('page') or {}).get('read') or '')
+
+
 def merge(P, pages_dir, xw_dir):
-    """Keeper-first; every park already in a facts file is kept as it is. -> counts"""
+    """Every park on file is kept unless the PC's read of it is better or, as good and newer (better_read). -> counts"""
     c = collections.Counter()
     for area, d in sorted(P['pages'].items()):
         f = pathlib.Path(pages_dir) / f'{area}.json'
@@ -173,12 +201,17 @@ def merge(P, pages_dir, xw_dir):
         parks = dict((old or {}).get('parks') or {})
         added = 0
         for ref, v in d['parks'].items():
-            if ref in parks: c['parks already in the facts (kept as they were)'] += 1; continue
+            if ref in parks:
+                if {k: x for k, x in parks[ref].items() if k != 'from_pc_upload'} == v: c['parks already holding this PC read'] += 1; continue
+                if not better_read(parks[ref], v): c['parks on file kept (their read is better or newer)'] += 1; continue
+                c['parks on file replaced by a better or newer PC read'] += 1
+            else:
+                c['parks added from the PC'] += 1
             parks[ref] = dict(v, from_pc_upload=P['made']); added += 1
         if not added: c['areas with nothing new'] += 1; continue
         doc = dict(old or {'area': area, 'reader': d.get('reader') or 'v1'}); doc['parks'] = dict(sorted(parks.items()))
         write_json(f, doc)
-        c['parks added from the PC'] += added; c['areas written'] += 1
+        c['areas written'] += 1
     for sl, d in sorted(P['crosswalk'].items()):
         f = pathlib.Path(xw_dir) / f'{sl}.json'
         if f.is_file():
