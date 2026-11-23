@@ -101,7 +101,12 @@ def area_refs(parkinfo_dir, area):
     """The POTA list's parks of one area (page-reader\\data\\parkinfo\\<area>.json), or None when it is not on this PC."""
     f = pathlib.Path(parkinfo_dir or '') / f'{area}.json'
     try: d = json.loads(f.read_text(encoding='utf-8'))
-    except (OSError, ValueError): return None
+    except (OSError, ValueError):
+        # 22 Nov: Kentucky is not in parkinfo; the reader takes it from POTA's saved list (page-reader\data\pota\saved\parks)
+        g = pathlib.Path(parkinfo_dir or '').parent / 'pota' / 'saved' / 'parks' / f'{area}.json.gz'
+        try: rows = json.loads(gzip.decompress(g.read_bytes()).decode('utf-8')).get('data') or []
+        except (OSError, ValueError, EOFError, AttributeError): return None
+        return {r.get('reference') for r in rows if isinstance(r, dict) and r.get('reference')} or None
     return set((d.get('parks') if isinstance(d, dict) else None) or {})
 
 
