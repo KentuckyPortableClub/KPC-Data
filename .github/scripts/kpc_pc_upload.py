@@ -33,7 +33,9 @@ WDPA_RX = re.compile(r'wdpa|protected ?planet|unep[\s-]?wcmc|\bwdpaid\b', re.I)
 STORE_ONLY = {'rings', 'geometry', 'coordinates', 'records', 'attributes', 'attrs', 'private_reason', 'publish_why', 'publish_basis',
               'publish_basis_detail', 'publishable', 'licence_class', 'terms_text_sha256', 'terms_text_file', 'withheld', 'held_reason',
               'store_record', 'kpcstore', 'source_detail', 'sha256'}
-PRIVATE_RX = re.compile(r'PRIVATE-|priority-parks|confirmed-parks|do-not-share', re.I)
+# 22 Nov: 'PRIVATE-' only in capitals (the PC's private files are named PRIVATE-...); a park page about the 'Private John Allen'
+# fish hatchery (private-john-allen) is not a private file
+PRIVATE_RX = re.compile(r'PRIVATE-|(?i:priority-parks|confirmed-parks|do-not-share)')
 
 
 def walk(o, path=''):
@@ -69,6 +71,14 @@ def parkinfo_refs(parkinfo, area):
                 d = json.loads(raw)
             except (OSError, ValueError, EOFError): return None
             return set((d.get('parks') if isinstance(d, dict) else None) or {})
+    # 22 Nov: Kentucky is not in data/parkinfo (its own bots keep it); its parks come from POTA's saved list, as the reader does
+    g = pathlib.Path(parkinfo).parent / 'pota' / 'saved' / 'parks' / f'{area}.json.gz'
+    if g.is_file():
+        try:
+            import gzip
+            rows = json.loads(gzip.decompress(g.read_bytes())).get('data') or []
+            return {r.get('reference') for r in rows if isinstance(r, dict) and r.get('reference')} or None
+        except (OSError, ValueError, EOFError, AttributeError): return None
     return None
 
 
@@ -97,6 +107,8 @@ def read_pack(pack, parkinfo='data/parkinfo'):
     made = str(man.get('made') or '')[:10]
     if not re.fullmatch(r'\d{4}-\d{2}-\d{2}', made): probs.append('manifest.json has no date')
     pages, xw = {}, {}
+    # 22 Nov: a park POTA lists in two areas is saved once, under one area; it counts as read for every area of the pack
+    read_any = {r for n, d in docs.items() if n.startswith('pages/') and isinstance(d, dict) and isinstance(d.get('parks'), dict) for r in d['parks']}
     for n, d in sorted(docs.items()):
         probs += field_problems(n, d)
         if n.startswith('pages/'):
@@ -108,7 +120,7 @@ def read_pack(pack, parkinfo='data/parkinfo'):
                 probs.append(f'{n}: a park entry that is not a park reference with its facts'); continue
             want = parkinfo_refs(parkinfo, area)
             if want is None: probs.append(f'{n}: no POTA list for {area} here, so it cannot be shown to be read whole'); continue
-            if not want or not want <= refs:
+            if not want or not want <= (refs | read_any):
                 probs.append(f'{n}: not every park of {area} is in it (an area is taken only when read whole)'); continue
             pages[area] = d
         else:
