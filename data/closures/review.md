@@ -1,16 +1,16 @@
 # Closures super-bot: review (2026-11-23; RULE SHEET D; compared quietly, nothing on cards until GO)
 
-Run: 2026-11-23T02:22Z · requests 106 · pages 81 · PDFs 17 · sentences read 362 · unmatched 118 · look-alikes skipped 208 · sources failed 2
+Run: 2026-11-23T09:44Z · requests 106 · pages 81 · PDFs 17 · sentences read 362 · unmatched 118 · look-alikes skipped 208 · sources failed 2
 
-## Kentucky gate: **FAIL** — 18 of 26 of Kentucky's own reader's items found here on the same park (69%); 54 only here
+## Kentucky gate: **FAIL** — 17 of 26 of Kentucky's own reader's items found here on the same park (65%); 52 only here
 
 ## Sources that failed this run
 
 - US-KY fs-gwj: rest (host resting after an earlier strike; last items kept) (https://www.fs.usda.gov/alerts/gwj/alerts-notices)
 - US-KY ky-fs-dbnf: rest (host resting after an earlier strike; last items kept) (https://www.fs.usda.gov/alerts/dbnf/alerts-notices)
 
-## US-KY (done, read 2026-11-23T02:22)
-whole 1 · part 0 · hunt 0 · seasonal 0 · note 68 · taken_down 4 · 0 banners
+## US-KY (done, read 2026-11-23T09:44)
+whole 1 · part 0 · hunt 0 · seasonal 0 · note 65 · taken_down 7 · 0 banners
 
 Sources that failed (last items kept): ky-fs-dbnf (rest (host resting after an earlier strike; last items kept)); fs-gwj (rest (host resting after an earlier strike; last items kept))
 
@@ -48,7 +48,7 @@ Unmatched (two parks or none; for chat 11 to judge):
 - Exceptions: [ky-fw-public-land] · no park name shares a word
 - GRAYSON LAKE WMA - Carter & Elliott counties [ky-fw-public-land] · nearest park name: Grayson Lake State Park (US-1258)
 
-### Side-by-side vs Kentucky's own reader (kpc_park_alerts.py + hc-): matched 18 · only here 54 · only there 8
+### Side-by-side vs Kentucky's own reader (kpc_park_alerts.py + hc-): matched 17 · only here 52 · only there 9
 
 - ONLY THERE: US-4687 hc-US-4687-2026-11-07: Kentucky Fish & Wildlife: Nov 7–8: closed to everyone except drawn hunters (and one helper each) for
 - ONLY THERE: US-3834 hc-US-3834-2026-11-07: Kentucky Fish & Wildlife: Nov 7–8: closed to everyone except drawn hunters (and one helper each) for
@@ -58,6 +58,7 @@ Unmatched (two parks or none; for chat 11 to judge):
 - ONLY THERE: US-3805 hc-US-3805-2026-11-14: Kentucky Fish & Wildlife: Nov 14–21: huntable portion closed to all access except drawn quota hunter
 - ONLY THERE: US-3794 hc-US-3794-2026-11-07: Kentucky Fish & Wildlife: Nov 7–8: closed to everyone except drawn hunters (and one helper each) for
 - ONLY THERE: US-3793 hc-US-3793-2026-11-07: Kentucky Fish & Wildlife: Nov 7–8: closed to everyone except drawn hunters (and one helper each) for
+- ONLY THERE: US-1255 hc-US-1255-2026-11-21: Kentucky Fish & Wildlife: Nov 21–22: closed to everyone except drawn hunters (and one helper each) f
 - ONLY HERE: US-0019 [note] "The Pinnacle restrooms are closed, but portable restrooms are available for use instead"
 - ONLY HERE: US-0050 [note] "Elevator for Accessible Tour Out of Service."
 - ONLY HERE: US-0050 [note] "The Green River Ferry has temporarily suspended operation due to low water levels."
@@ -78,11 +79,11 @@ Unmatched (two parks or none; for chat 11 to judge):
 - ONLY HERE: US-1273 [note] "Barren River State Resort Park lodge is closed through spring of 2027."
 - ONLY HERE: US-1275 [note] "Buckhorn Lake Dam Ramp Access closed until Feb. 2027"
 - ONLY HERE: US-1277 [note] "Cumberland Falls State Resort Park lodge is closed through Spring/Summer of 2027 for renovation (ca
-- ONLY HERE: US-1278 [note] "Parts of the park may be closed during the quota hunt Nov. 20-22."
 - ONLY HERE: US-1278 [note] "Parts of the park may be closed during the quota hunt Dec. 4-6 (youth only)."
 - ONLY HERE: US-1280 [note] "Parts of the park may be closed during the quota hunt Dec. 17-20."
 - ONLY HERE: US-1281 [note] "Jenny Wiley State Resort Park lodge is closed for critical structural integrity renovations."
-- ONLY HERE: US-1282 [note] "Parts of the park may be closed during the quota hunt Nov. 19-22 (archery/crossbow)."
+- ONLY HERE: US-1282 [note] "Parts of the park may be closed during the quota hunt Dec. 3-6."
+- ONLY HERE: US-1284 [note] "Parts of the park may be closed during the quota hunt Jan. 5-6."
 
 - US-0019 · ℹ️ Note: "The Pinnacle restrooms are closed, but portable restrooms are available for use instead" (National Park Service)
 - US-0050 · ℹ️ Note: "Elevator for Accessible Tour Out of Service." (National Park Service)
