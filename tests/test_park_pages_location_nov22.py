@@ -90,6 +90,9 @@ check('"State Rt 26" is a road', 'State Rt 26' in d.get('roads', []))
 check("an area manager's contact address is an office, not the park",
       [a['role'] for a in R.addresses_in('Contact\nTest Person\nWildlife Area Manager\n360-555-0100\n4686 Test Road\nTestville, WA 98520')] == ['office'])
 
+pts = [(round(c['lat'], 4), round(c['lon'], 4)) for c in R.html_coords('', 'GPS Coordinates N 31.865407, W -82.086694')]
+check('"GPS Coordinates N 31.86, W -82.08" (Georgia) is read, west negative', pts == [(31.8654, -82.0867)])
+
 tool = ROOT / '.github' / 'scripts' / 'pc' / 'kpc_reread_location.py'
 r = subprocess.run([sys.executable, '-I', str(tool), '--selftest'], capture_output=True, text=True)
 check('the PC tool marks only own pages with no address, point or directions for reading again, once',
