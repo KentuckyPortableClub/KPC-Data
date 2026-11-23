@@ -836,22 +836,23 @@
   "US-OR": {
    "checked": 440,
    "counts": {
-    "agree": 51,
-    "handover_hints": 28,
+    "agree": 59,
+    "handover_hints": 26,
     "no_page": 2,
-    "no_size": 229,
-    "off": 30,
-    "ours_unknown": 26,
+    "no_size": 231,
+    "not_read": 0,
+    "off": 21,
+    "ours_unknown": 27,
     "parks": 440,
     "retired": 0,
-    "unsure": 46,
+    "unsure": 45,
     "weak": 19,
-    "with_outline": 384
+    "with_outline": 388
    },
    "left": 0,
    "parks": 440,
-   "status": "queued",
-   "updated": "2026-11-09"
+   "status": "done",
+   "updated": "2026-11-23"
   },
   "US-PA": {
    "checked": 494,
@@ -1157,56 +1158,39 @@
  },
  "last": {
   "areas": [
-   "US-CA"
+   "US-OR"
   ],
   "manners": {
-   "browser": 6,
-   "dropped_queued": 4,
-   "errors": 3,
-   "for_person": 3,
+   "browser": 23,
+   "deferred": 1,
+   "dropped_queued": 2,
+   "errors": 0,
    "for_person_urls": [
     [
-     "http://parks.ca.gov/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from parks.ca.gov this run"
-    ],
-    [
-     "https://files.santaclaracounty.gov/migrated/MartialCottleGuideMap.pdf",
-     "HTTP 403 twice"
-    ],
-    [
-     "http://dbw.parks.ca.gov/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from dbw.parks.ca.gov this run"
-    ],
-    [
-     "https://www.fire.ca.gov/what-we-do/natural-resource-management/demonstration-state-forests/boggs-demonstration-state-forest",
-     "HTTP 403 twice"
-    ],
-    [
-     "https://www.fire.ca.gov/what-we-do/natural-resource-management/demonstration-state-forests/jackson-demonstration-state-forest",
-     "HTTP 403 twice"
+     "https://arcg.is/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from arcg.is this run"
     ]
    ],
-   "host_rule": 21,
-   "requests": 821,
-   "rested": 28,
-   "retry403": 3,
-   "robots": 2,
-   "robots_unreadable": 2,
-   "strikes": 9
+   "host_rule": 13,
+   "requests": 376,
+   "rested": 120,
+   "robots": 4,
+   "robots_unreadable": 1,
+   "strikes": 0
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 40,
-   "no_size": 188,
-   "ours_unknown": 12,
-   "pages_read": 621,
-   "parks": 411,
+   "handover_hints": 26,
+   "no_size": 236,
+   "ours_unknown": 27,
+   "pages_read": 292,
+   "parks": 440,
    "retired": 0,
-   "size_agree": 106,
-   "size_off": 20,
-   "size_unsure": 67,
+   "size_agree": 59,
+   "size_off": 21,
+   "size_unsure": 45,
    "skipped_fresh": 0,
-   "with_outline": 393
+   "with_outline": 388
   },
   "when": "2026-11-23"
  },
