@@ -143,7 +143,7 @@ with tempfile.TemporaryDirectory() as d:
     r2 = run(t, 'find-links', '--agency-table', str(t / 'table.json'))
     rows2 = json.loads((t / 'out/found-links.json').read_text())['rows']
     check('a second run the same day looks at nobody again (30 days)', 'parks looked at' in (t / 'out/found-links-summary.txt').read_text()
-          and (t / 'out/found-links-summary.txt').read_text().startswith('Own-page finder (L 2026-11-23): 0 parks'))
+          and (t / 'out/found-links-summary.txt').read_text().startswith(f'Own-page finder ({FIND.FIND_RULE}): 0 parks'))
     check('the list keeps every row', len(rows2) == len(rows))
     sys.path.insert(0, str(ROOT / '.github/scripts/draft/tools/kpc_park_facts'))
     import kpc_park_facts as PF
@@ -188,6 +188,14 @@ with tempfile.TemporaryDirectory() as d:
           rows and all(r['level'] == 'no' for r in rows) and {'US-9603', 'US-9604', 'US-9608'} <= again
           and all('busy' in r['reason'] for r in rows if r['ref'] in again))
     check('a park with nowhere to look rests 30 days as before', 'US-9606' not in again and st['found']['US-9606']['date'] == '2026-11-23')
+
+# 9:20 AM (the owner's NH trial): a kept page's link on ANOTHER state's site is never offered, however well the name fits
+kept = {FIND.R.name_core('Heron Marsh State Park'): {'https://fw.ky.invented.gov/heron-marsh', H + '/parks/heron-marsh'}}
+got = list(FIND.candidates_for('US-9603', {'name': 'Heron Marsh State Park'}, {}, 'no link', None, kept, [], {'parks.zz.invented.gov'}))
+check("a kept link only from the area's own sites (another state's page is not offered)", got == [('kept', H + '/parks/heron-marsh')])
+st0 = {'found': {'US-9606': {'level': 'no', 'date': '2026-11-23', 'rule': 'L 2026-11-23'}}}
+fx = {'US-ZZ': {'US-9606': {'asked': {'url': ''}, 'page': {'kind': 'none'}, 'questions': [{'code': 'NO_PAGE'}]}}}
+check('a park looked for under the older rule is looked for again', [r for _a, r, _w in FIND.worklist(fx, st0, '2026-11-23')] == ['US-9606'])
 
 # no outside site in the rule: a tourism page never counts (official list only)
 check('(d) a tourism site is not official', not FIND.R.official_host('https://www.visitzz.com/heron-marsh'))

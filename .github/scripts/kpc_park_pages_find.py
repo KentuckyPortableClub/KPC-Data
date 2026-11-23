@@ -30,7 +30,7 @@ import kpc_park_pages as P
 import kpc_park_pages_rules as R
 import kpc_park_pages_work as W
 
-FIND_RULE = 'L 2026-11-23'
+FIND_RULE = 'L 2026-11-23b'   # b (9:20 AM, the owner's NH trial): kept-page links only from the area's own sites
 POINT_KM = 5.0
 WALK_UP = 3
 READS_PER_PARK = 4
@@ -72,8 +72,8 @@ def worklist(facts_by_area, state, today, first=(), areas_only=None, again=False
             if not why:
                 continue
             t = tried.get(ref) or {}
-            if not again and t.get('date') and W.age_days(t['date'], today) < RETRY_DAYS:
-                continue
+            if not again and t.get('date') and t.get('rule') == FIND_RULE and W.age_days(t['date'], today) < RETRY_DAYS:
+                continue      # a park looked for under an older rule is looked for again
             rows.append((area, ref, why))
     rank = {r: i for i, r in enumerate(first or ())}
     kind = {'no link': 0, 'dead link': 1, 'agency home only': 2}
@@ -290,7 +290,21 @@ def judge(ref, area, row, area_parks, page, claimed, today, how, sisters=(), tab
 
 
 # ---------------------------------------------------------------- the walk
-def candidates_for(ref, row, fact, why, F, kept, sisters):
+def area_sites(facts_by_area):
+    """area -> the hosts (www. left off) the area's own parks' pages and links use: a kept page's link is a candidate only on
+    one of these (9:20 AM trial: 'Taylor State Forest' was offered a city park in British Columbia by name alone)."""
+    out = collections.defaultdict(set)
+    for area, parks in facts_by_area.items():
+        for fact in parks.values():
+            if not isinstance(fact, dict):
+                continue
+            for u in ((fact.get('page') or {}).get('final_url'), (fact.get('asked') or {}).get('url')):
+                if u and R.official_host(u):
+                    out[area].add(R.base_host(R.host_of(u)))
+    return out
+
+
+def candidates_for(ref, row, fact, why, F, kept, sisters, sites=None):
     """Yield (how, url) in order, asking each site as little as it can."""
     name = row.get('name') or ''
     core = R.name_core(name)
@@ -304,6 +318,8 @@ def candidates_for(ref, row, fact, why, F, kept, sisters):
         return True
 
     for u in sorted(kept.get(core) or ()) if core else ():
+        if sites is not None and R.base_host(R.host_of(u)) not in sites:
+            continue          # a link on another state's or country's site is never this park's page
         if fresh(u):
             yield 'kept', u
     asked = ((fact or {}).get('asked') or {}).get('url') or ''
@@ -348,6 +364,7 @@ def find_links(areas, facts_by_area, getter, state, today, first=(), areas_only=
     web, docs = web or {}, docs or {}
     F = Fetcher(getter, state, today, keeper, max_requests, deadline, get_max_seconds)
     sisters = sister_sites(facts_by_area, areas)
+    sites = area_sites(facts_by_area)
     claimed = {}
     for area, parks in areas.items():
         for r, row in parks.items():
@@ -384,7 +401,7 @@ def find_links(areas, facts_by_area, getter, state, today, first=(), areas_only=
         best = ('no', 'nothing on the agency sites named this park', None, '', '')
         reads = 0
         busy0 = F.busy
-        for how, url in candidates_for(ref, row, fact, why, F, kept or {}, sisters.get((area, row.get('type') or ''))):
+        for how, url in candidates_for(ref, row, fact, why, F, kept or {}, sisters.get((area, row.get('type') or '')), sites.get(area) or set()):
             if reads >= READS_PER_PARK:
                 break
             page = F.get(url)
