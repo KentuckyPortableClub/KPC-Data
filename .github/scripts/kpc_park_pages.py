@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Park page reader (hand-off 05). It reports. It never decides.
 
-Commands: read, worklist, report, person-page, intake, kits, pc-kit, --selftest.
+Commands: read, find-links, worklist, report, person-page, intake, kits, pc-kit, --selftest.
 Every request goes through kpc_manners.Manners. This file does not fetch on its own.
 
 Part 1 of the hand-off is `read` and `--selftest`. Later commands are named here and
@@ -117,8 +117,16 @@ def load_data(data):
     return areas, web, docs, truth
 
 
+FOUND_BY = 'bot: page reader'
+
+
 def choose_link(ref, row, web, docs):
-    """POTA's link (first official host), else web, else the docs page. Other addresses are counted, not opened."""
+    """POTA's link (first official host), else web, else the docs page. Other addresses are counted, not opened.
+    23 Nov (rule sheet L): a page the own-page finder found SURE for a park whose POTA link was dead or only the agency's
+    front page ('web_by' starts 'bot: page reader') is read in its place."""
+    w = web.get(ref) or {}
+    if isinstance(w, dict) and w.get('web') and str(w.get('web_by') or '').startswith(FOUND_BY):
+        return w['web'], 'found', 0
     urls = R.split_urls(row.get('website'))
     official = [u for u in urls if R.official_host(u)]
     if official:
@@ -799,6 +807,13 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
                 fact['page']['read'] = when
             if followed:
                 fact['asked']['followed'] = followed
+            if src == 'found':
+                # 23 Nov (rule sheet L): the page the own-page finder found; its note travels with every later read
+                fd = (state.get('found') or {}).get(ref)
+                if isinstance(fd, dict) and fd.get('level') == 'sure':
+                    fact['found'] = {k: fd.get(k) for k in ('url', 'how', 'level', 'why', 'for', 'date', 'rule', 'was') if k in fd}
+                    if fd.get('was'):
+                        fact['asked']['was'] = fd['was']
             if listed_row:
                 fact['asked']['row'] = R.clip(listed_row)
             state['read'][ref] = {'url': url, 'fingerprint': main.get('fingerprint') or '', 'date': when,
@@ -1074,6 +1089,19 @@ def merge_unchanged(out_dir, facts_by_area):
                 parks[ref] = kept
 
 
+def add_found(web, state):
+    """23 Nov (rule sheet L): the pages this PC's own-page finder found SURE are read as the parks' pages, until the
+    official-links bot carries them in parkinfo-web.json. A person's own value is never covered."""
+    for ref, t in (state.get('found') or {}).items():
+        if not isinstance(t, dict) or t.get('level') != 'sure' or not t.get('url'):
+            continue
+        e = web.get(ref) if isinstance(web.get(ref), dict) else {}
+        if e.get('web') and not str(e.get('web_by') or '').startswith('bot:'):
+            continue
+        web[ref] = dict(e, web=t['url'], web_by=f"{FOUND_BY} (this PC, {t.get('date') or ''})")
+    return web
+
+
 def _refs_from_args(args):
     refs = []
     if getattr(args, 'refs', ''):
@@ -1094,6 +1122,7 @@ def _prepare(args):
     today = args.today or datetime.date.today().isoformat()
     state_path = args.state or (str(pathlib.Path(args.out) / 'state.json') if args.out else '')
     state = load_json(state_path, {}) if state_path and pathlib.Path(state_path).is_file() else {}
+    add_found(web, state)
     areas_only = set(args.areas.split()) if args.areas else None
     known = {ref for parks in areas.values() for ref in parks}
     done_dir = str(pathlib.Path(args.out) / 'lists-done') if args.out else (args.lists_done or '')
@@ -1568,6 +1597,8 @@ def main(argv=None):
     p.add_argument('--from', dest='from_dir', default='')
     p.add_argument('--pass1', default='')
     p.add_argument('--pass2', default='')
+    p.add_argument('--agency-table', default='', help="find-links: KPC-Links' .github/key-agency-table.json (hosts the reviewed joins tie to land managers)")
+    p.add_argument('--again', action='store_true', help='find-links: look again for parks tried in the last 30 days')
     p.add_argument('--quiet', action='store_true')
     p.add_argument('--selftest', action='store_true')
     p.add_argument('file', nargs='?')
@@ -1611,6 +1642,9 @@ def _dispatch(args):
         return cmd_score(args)
     if args.command == 'coverage-order':
         return cmd_coverage_order(args)
+    if args.command == 'find-links':
+        import kpc_park_pages_find as FIND
+        return FIND.cmd_find_links(args)
     p.print_help()
     return 2
 

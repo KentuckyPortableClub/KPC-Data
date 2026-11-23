@@ -284,6 +284,13 @@ def read_pages(folder):
                 'maps': [{'url': str(m.get('url') or '')[:300], 'kind': m.get('kind'), 'names_park': bool(m.get('names_park'))}
                          for m in _first(p.get('maps'), 6) if isinstance(m, dict) and str(m.get('url') or '').startswith('https://')],
             }
+            # 23 Nov 2026 (rule sheet L, the own-page finder): the park's OWN page found on its agency's site when POTA lists no
+            # link, a dead one or the agency's front page. 'sure' = read as the park's page above; 'unsure' = for a person only
+            fd = p.get('found') if isinstance(p.get('found'), dict) else None
+            if fd and fd.get('level') in ('sure', 'unsure', 'no'):
+                out[ref]['found'] = {'url': str(fd.get('url') or '')[:300], 'level': fd.get('level'), 'how': str(fd.get('how') or '')[:20],
+                                     'why': str(fd.get('why') or '')[:160], 'for': str(fd.get('for') or '')[:30], 'date': fd.get('date'),
+                                     'was': str(fd.get('was') or ((p.get('asked') or {}).get('was')) or '')[:300]}
     SHARED_POINTS[0] = drop_shared_points(out)
     SHARED_MAP_NAMES[0] = drop_shared_map_names(out)
     return out, areas
@@ -509,6 +516,8 @@ def combine(parks, sizes, pages, links):
             c['approximate point from the page directions'] += 1
         if pg.get('name_vs_pota') in ('same', 'same-core'):
             c["page carries the park's own name"] += 1
+        if (pg.get('found') or {}).get('level'):
+            c[f"own page looked for on the agency site: {pg['found']['level']}"] += 1
         if ref in sizes and pg.get('sizes'):
             c['official size AND a page size'] += 1
     if SHARED_POINTS[0]:

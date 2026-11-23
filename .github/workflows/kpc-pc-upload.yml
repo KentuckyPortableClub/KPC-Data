@@ -67,20 +67,22 @@ jobs:
           git show "origin/intake-files:$PACK" > "$RUNNER_TEMP/pack.zip"
           TO="$RUNNER_TEMP/tools-out"
           git worktree add -q -B tools-out "$TO" origin/tools-out
-          mkdir -p "$TO/park-pages/facts" data/agency-crosswalk
+          mkdir -p "$TO/park-pages/facts" "$TO/official-links" data/agency-crosswalk
           python3 .github/scripts/kpc_pc_upload.py merge --pack "$RUNNER_TEMP/pack.zip" --parkinfo data/parkinfo \
-            --pages "$TO/park-pages/facts" --crosswalk data/agency-crosswalk --report "$RUNNER_TEMP/report.md"
+            --pages "$TO/park-pages/facts" --crosswalk data/agency-crosswalk --report "$RUNNER_TEMP/report.md" \
+            --found "$TO/official-links" --questions data/waiting/questions/official-links.json.gz
           cat "$RUNNER_TEMP/report.md" >> "$GITHUB_STEP_SUMMARY"
           (
             cd "$TO"
-            git add park-pages/facts
+            git add park-pages/facts official-links
             if git diff --cached --quiet; then echo "page facts: nothing new"; else
-              git commit -qm "PC upload pack: page facts (the better or newer read of each park)"
-              bash "$GITHUB_WORKSPACE/.github/scripts/kpc_push_retry.sh" tools-out 4 "park-pages/facts"
+              git commit -qm "PC upload pack: page facts (the better or newer read of each park) and the own-page finder's list"
+              bash "$GITHUB_WORKSPACE/.github/scripts/kpc_push_retry.sh" tools-out 4 "park-pages/facts official-links"
             fi
           )
           git add data/agency-crosswalk
-          if git diff --cached --quiet; then echo "crosswalk: nothing new"; else
-            git commit -qm "PC upload pack: agency crosswalk files the keeper has none of"
-            bash .github/scripts/kpc_push_retry.sh main 4 "data/agency-crosswalk"
+          [ -f data/waiting/questions/official-links.json.gz ] && git add data/waiting/questions/official-links.json.gz
+          if git diff --cached --quiet; then echo "crosswalk and questions: nothing new"; else
+            git commit -qm "PC upload pack: agency crosswalk files the keeper has none of; own-page finds for a person"
+            bash .github/scripts/kpc_push_retry.sh main 4 "data/agency-crosswalk data/waiting/questions/official-links.json.gz"
           fi
