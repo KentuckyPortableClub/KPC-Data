@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """22 Nov 2026 (owner): the PC upload pack. The PC packer (.github/scripts/pc/kpc_upload_pack.py) makes it; GitHub's reader
 (kpc_pc_upload.py) refuses it WHOLE on any problem (a file that does not belong, a store-only field, a WDPA word, a private
-file named, an area not read whole, a bad manifest) and otherwise merges keeper-first: every park already in a facts file is
+file named, an area not read whole, a bad manifest) and otherwise merges: a park already in a facts file is kept unless the PC's read is better or as good and newer; before 22 Nov every park already in a facts file was
 kept as it was, a park only the PC has is added and marked; a keeper's crosswalk file is kept, an agency with none gets the
 PC's, built by kpc_agency_lists' own checks and builder. Offline, invented parks and agencies only.
 Prints PASS / FAIL and ends ALL PASS or SOME FAILED."""
@@ -110,7 +110,9 @@ with tempfile.TemporaryDirectory() as td:
     rc = U.main(['merge', '--pack', str(zp), '--parkinfo', str(t / 'pi'), '--pages', str(t / 'gh-pages'), '--crosswalk', str(t / 'gh-xw'),
                  '--report', str(t / 'report.md')])
     after = json.loads(gp.read_text())
-    check('merge: a park already in the facts is kept exactly as it was', after['parks']['US-9001'] == keep)
+    # 22 Nov (owner 7:10 PM): the PC's read wins when it is as good and newer (here: both read the page, the PC's on 21 Nov)
+    check("merge: a park on file is replaced by the PC's newer read of the same strength", after['parks']['US-9001'] != keep
+          and after['parks']['US-9001'].get('from_pc_upload') == '2026-11-22')
     check('merge: a park only GitHub had is kept', 'US-9999' in after['parks'])
     check('merge: the parks only the PC had are added, marked with the pack date',
           all(after['parks'][r].get('from_pc_upload') == '2026-11-22' for r in ('US-9002', 'US-9003')))
