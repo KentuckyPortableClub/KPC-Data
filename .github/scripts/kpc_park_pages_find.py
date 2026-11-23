@@ -12,6 +12,10 @@ Where it looks, cheapest first (every candidate is then READ and judged; nothing
   home    the agency front page POTA gave: the one link there naming the park
   sister  the agency's park list its sister parks (same area, same kind) have their own pages under: the one link naming the
           park, then the address the sisters' pattern gives (/parks/<park-name>); one or two requests per AGENCY, reused
+  sitemap (L-sitemap, 23 Nov d) the site's own sitemap (robots.txt's Sitemap lines, else /sitemap.xml; 6 files at most, read
+          one time per site): the addresses whose last part carries every word of the park's name core, 2 at most
+  moved   (L-moved, 23 Nov d) a link on an agency site that MOVED (MOVED_SITES: NY DEC, Michigan DNR) and could not be read is
+          a dead link; the old site is not asked, the new one is (its lists and its sitemap)
   list    (L-list, 23 Nov c) the agency's own park LIST pages, reached from its front page by their words (parks, find a park,
           A-Z, wildlife areas, historic sites ...; same site only, two steps down at most, 8 pages per site, read one time per
           site): the one link there naming the park. For sites whose park pages carry numbers, not names, in their addresses.
@@ -33,7 +37,9 @@ import kpc_park_pages as P
 import kpc_park_pages_rules as R
 import kpc_park_pages_work as W
 
-FIND_RULE = 'L 2026-11-23c'   # c also: a site that says no (robots.txt / 403) is counted apart from a busy one, rests 30 days
+FIND_RULE = 'L 2026-11-23d'   # d (job 10, owner 1:03 PM "10 and 11 dont stop till you are done"): moved agency sites (L-moved)
+                              # and the agency site's own sitemap (L-sitemap); all not-found parks looked again
+                              # c also: a site that says no (robots.txt / 403) is counted apart from a busy one, rests 30 days
                               # b (9:20 AM, the owner's NH trial): kept-page links only from the area's own sites
                               # c (afternoon, the first full run found little): the agency's own park LIST pages, reached from
                               # its front page (two steps down at most), are a place to look too (L-list); all parks looked again
@@ -42,7 +48,14 @@ WALK_UP = 3
 READS_PER_PARK = 4
 RETRY_DAYS = 30
 GOOD_ROLES = {'park', 'visitor-centre', 'unknown'}
-HOW_ORDER = ('kept', 'up', 'home', 'sister', 'pattern', 'list')
+HOW_ORDER = ('kept', 'up', 'home', 'sister', 'pattern', 'list', 'sitemap')
+SITEMAP_FILES = 6   # sitemap files read per site at most (the robots.txt list or /sitemap.xml, then its parts)
+SITEMAP_PICKS = 2   # addresses taken from a sitemap per park at most
+# L-moved (23 Nov, job 10): an agency site that MOVED. The old host no longer serves its park pages to the reader (New York DEC's old
+# www.dec.ny.gov: robots.txt never answers on any run, 567 parks; Michigan DNR's old www2.dnr.state.mi.us: 403 or resting, the
+# DNR's pages now live on michigan.gov/dnr). A POTA link there that could not be read is a DEAD link, looked for on the new site.
+MOVED_SITES = {'www.dec.ny.gov': 'dec.ny.gov', 'dec.state.ny.us': 'dec.ny.gov', 'www.dec.state.ny.us': 'dec.ny.gov',
+               'www2.dnr.state.mi.us': 'www.michigan.gov', 'www.dnr.state.mi.us': 'www.michigan.gov'}
 LIST_FIRST = 4      # list pages taken from the front page
 LIST_SECOND = 2     # ... and from each of those, one step further down
 LIST_PAGES = 8      # list pages read per site at most (one time, for every park that site has)
@@ -54,6 +67,13 @@ LIST_NOT = re.compile(r"(log ?in|sign ?in|news|event|calendar|contact|jobs?|care
 
 
 # ---------------------------------------------------------------- which parks
+def moved_to(url):
+    """L-moved: the front page of the site an agency site moved to, or ''."""
+    h = (urllib.parse.urlparse(url or '').netloc or '').lower().split(':')[0]
+    new = MOVED_SITES.get(h)
+    return f'https://{new}/' if new else ''
+
+
 def why_needed(fact):
     """'no link' | 'dead link' | 'agency home only' | '' for a reader fact."""
     if not isinstance(fact, dict) or fact.get('unchanged'):
@@ -63,6 +83,8 @@ def why_needed(fact):
     pg = fact.get('page') or {}
     asked = fact.get('asked') or {}
     own = (fact.get('own_page') or {}).get('is')
+    if pg.get('kind') in ('resting', 'refused', 'dead', 'none') and moved_to(asked.get('url') or pg.get('final_url') or ''):
+        return 'dead link'        # L-moved: the agency's old site, which no longer serves the page
     codes = {q.get('code') for q in fact.get('questions') or [] if isinstance(q, dict)}
     if own == 'agency-home' or 'AGENCY_HOME_ONLY' in codes:
         return 'agency home only'
@@ -134,6 +156,8 @@ def sister_sites(facts_by_area, areas):
             url = (fact.get('page') or {}).get('final_url') or (fact.get('asked') or {}).get('url') or ''
             if not url or not R.official_host(url) or R.is_agency_home(url):
                 continue
+            if (fact.get('page') or {}).get('kind') in ('resting', 'refused', 'dead', 'none') or moved_to(url):
+                continue      # a page never read (or on a site that moved) teaches no folder
             origin, folder = parent_of(url)
             if not folder:
                 continue
@@ -178,7 +202,7 @@ def on_agency_table(url, hosts):
 def kept_index(manifest_path):
     """name core -> {url}: every link on a kept official page, by the core of its words. Nothing is asked of any site."""
     idx = collections.defaultdict(set)
-    man = P.load_json(manifest_path, {}) or {}
+    man = P.kept_manifest(manifest_path)
     root = pathlib.Path(manifest_path).parent
     for url, rec in (man.get('pages') or {}).items():
         if not isinstance(rec, dict) or 'html' not in str(rec.get('type') or 'text/html') or not R.official_host(url):
@@ -211,6 +235,40 @@ class Fetcher:
         self.busy = 0     # answers that say nothing about the page (busy, resting, not asked): the park is tried again next run
         self.said_no = 0  # the site says no to the reader (robots.txt, 401/403, a bot wall): NOT busy, it rests 30 days like any miss
         self.lists = {}   # site -> its park list pages, read one time for every park of that site (L-list)
+        self.sitemaps = {}   # site -> the addresses its own sitemap lists, read one time for every park of that site (L-sitemap)
+
+    def get_raw(self, url):
+        """A file that is not a web page (robots.txt, a sitemap): the same manners, budget and refusals as get(); not kept.
+        -> body bytes, b'' when the site answered no or nothing, None when the run's budget is spent."""
+        if not url or not url.startswith(('http://', 'https://')):
+            return b''
+        host = R.host_of(url)
+        if host and P._refused_until(self.state, host, self.today):
+            self.said_no += 1
+            return b''
+        from_copy = isinstance(self.getter, P.KeeperCopyGetter) and self.getter.copy._rec(url) is not None
+        if not from_copy and not self.left():
+            self.busy += 1
+            return None
+        if not from_copy:
+            self.requests += 1
+        try:
+            st, _h, body, _f = self.getter.get(url, deadline=self.deadline, max_time=self.get_max)
+        except TypeError:
+            st, _h, body, _f = self.getter.get(url)
+        if st != 200:
+            if st in (401, 403) or (isinstance(st, str) and P.robots_block(st) and not P.next_run(st)):
+                self.said_no += 1      # the site says no
+            elif isinstance(st, str) and (P.next_run(st) or st.startswith('err')) or (isinstance(st, int) and st >= 500):
+                self.busy += 1         # busy or resting: the park is looked for again next run
+            return b''
+        body = body or b''
+        if body[:2] == b'\x1f\x8b':
+            try:
+                body = gzip.decompress(body)
+            except OSError:
+                return b''
+        return body
 
     def time_up(self):
         return self.deadline is not None and time.time() >= self.deadline
@@ -374,6 +432,61 @@ def list_pages(F, home):
     return got
 
 
+# ---------------------------------------------------------------- the agency site's own sitemap (L-sitemap)
+SITEMAP_LOC = re.compile(rb'<loc>\s*([^<\s]+)\s*</loc>', re.I)
+SITEMAP_PART = re.compile(r'(place|park|land|area|forest|wildlife|page|node|content|site|location|destination|recreat)', re.I)
+
+
+def sitemap_urls(F, home):
+    """Every address the site's own sitemap lists (robots.txt 'Sitemap:' lines on the same site, else /sitemap.xml; a sitemap
+    index is followed into its parts, the park-like ones first, SITEMAP_FILES files at most), read ONE time per site."""
+    if F is None or not home:
+        return []
+    p = urllib.parse.urlparse(home)
+    if not p.netloc:
+        return []
+    root = f'{p.scheme or "https"}://{p.netloc.lower()}/'
+    key = R.base_host(R.host_of(root))
+    if key in F.sitemaps:
+        return F.sitemaps[key]
+    robots = F.get_raw(root + 'robots.txt')
+    if robots is None:
+        return []
+    todo = [m.group(1).strip() for m in re.finditer(r'(?im)^\s*sitemap\s*:\s*(\S+)', robots.decode('utf-8', 'replace'))]
+    todo = [u for u in todo if R.base_host(R.host_of(u)) == key] or [root + 'sitemap.xml']
+    urls, done = [], 0
+    while todo and done < SITEMAP_FILES:
+        u = todo.pop(0)
+        body = F.get_raw(u)
+        done += 1
+        if body is None:
+            return urls
+        locs = [m.group(1).decode('utf-8', 'replace').replace('&amp;', '&') for m in SITEMAP_LOC.finditer(body)]
+        if b'<sitemapindex' in body[:2000].lower():
+            parts = [x for x in locs if R.base_host(R.host_of(x)) == key]
+            todo += sorted(parts, key=lambda x: (0 if SITEMAP_PART.search(x.rsplit('/', 1)[-1]) else 1, len(x)))
+            continue
+        urls += [x for x in locs if R.base_host(R.host_of(x)) == key]
+    F.sitemaps[key] = urls
+    return urls
+
+
+def sitemap_picks(urls, name):
+    """The sitemap addresses whose LAST part carries every word of the park's name core (in any order), fewest extra words
+    first; SITEMAP_PICKS at most. A core of one short word gives none (too loose)."""
+    core = R.name_core(name).split()
+    if not core or (len(core) == 1 and len(core[0]) < 5):
+        return []
+    want, out = set(core), []
+    for u in urls:
+        last = urllib.parse.unquote(urllib.parse.urlparse(u).path.rstrip('/').rsplit('/', 1)[-1]).lower()
+        last = re.sub(r'\.(html?|aspx?|php|cfm)$', '', last)
+        words = set(re.findall(r'[a-z0-9]+', last.replace("'", '')))
+        if want <= words and not R.is_agency_home(u):
+            out.append((len(words - want), len(u), u))
+    return [u for *_k, u in sorted(out)[:SITEMAP_PICKS]]
+
+
 # ---------------------------------------------------------------- the walk
 def area_sites(facts_by_area):
     """area -> the hosts (www. left off) the area's own parks' pages and links use: a kept page's link is a candidate only on
@@ -408,7 +521,8 @@ def candidates_for(ref, row, fact, why, F, kept, sisters, sites=None):
         if fresh(u):
             yield 'kept', u
     asked = ((fact or {}).get('asked') or {}).get('url') or ''
-    if why == 'dead link' and asked:
+    moved = moved_to(asked)
+    if why == 'dead link' and asked and not moved:      # L-moved: the old site is not asked at all
         url = asked
         for _ in range(WALK_UP):
             origin, folder = parent_of(url)
@@ -441,22 +555,26 @@ def candidates_for(ref, row, fact, why, F, kept, sisters, sites=None):
                 yield 'pattern', origin + folder + s
     # L-list: the agency's own park lists, from its front page (the front page POTA gave, the dead link's site, the sisters' site)
     homes = []
-    if why == 'agency home only' and asked:
-        homes.append(asked)
-    if why == 'dead link' and asked:
+    if moved:
+        homes.append(moved)
+    elif why in ('agency home only', 'dead link') and asked:
         homes.append(asked)
     for origin, _folder, _n, _pat in sisters or ():
         homes.append(origin + '/')
     done = set()
     for home in homes:
         h = R.base_host(R.host_of(home) or '')
-        if not h or h in done or (sites is not None and sites and h not in sites and why != 'agency home only'):
+        if not h or h in done or (sites is not None and sites and h not in sites and why != 'agency home only' and home != moved):
             continue
         done.add(h)
         for pg in list_pages(F, home):
             pick = P._park_link(pg.get('links'), name, pg.get('final') or pg.get('url'))
             if pick and R.base_host(R.host_of(pick)) == h and fresh(pick):
                 yield 'list', pick
+        # L-sitemap: the site's own sitemap, the addresses that carry the park's name
+        for pick in sitemap_picks(sitemap_urls(F, home), name):
+            if fresh(pick):
+                yield 'sitemap', pick
 
 
 def find_links(areas, facts_by_area, getter, state, today, first=(), areas_only=None, again=False, kept=None,
@@ -608,7 +726,7 @@ def cmd_find_links(args):
         keeper = None
     else:
         live = None if os.environ.get('KPC_NO_NET') == '1' else P.LiveGetter(state)
-        getter = P.KeeperCopyGetter(P.load_json(man, {}) if man.is_file() else {}, man.parent, live)
+        getter = P.KeeperCopyGetter(P.kept_manifest(man) if man.is_file() else {}, man.parent, live)
         keeper = P.PageKeeper(kept_dir, today) if keep_arg != 'off' and live is not None else None
     if not args.quiet:
         print(f'Own-page finder: kept pages give {sum(len(v) for v in kept.values()):,} named links; '

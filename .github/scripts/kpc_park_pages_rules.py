@@ -454,6 +454,9 @@ def split_urls(field):
     return out
 
 
+HOME_QUERY_OK = re.compile(r'^(utm_\w+|fbclid|gclid|msclkid|_ga|_gl|lang|language|locale|hl)$', re.I)
+
+
 def is_agency_home(url):
     try:
         import urllib.parse
@@ -461,7 +464,11 @@ def is_agency_home(url):
     except Exception:
         return False
     path = (p.path or '').rstrip('/').lower()
-    return path in ('', '/index.html', '/index.htm', '/home')
+    if path not in ('', '/index.html', '/index.htm', '/home'):
+        return False
+    # 23 Nov (job 10): '/?page_id=623' (California State Parks: 253 parks) is a numbered page, not the front page
+    q = [k for k, _v in urllib.parse.parse_qsl(p.query or '', keep_blank_values=True) if not HOME_QUERY_OK.match(k)]
+    return not q
 
 
 def script_shell(url):

@@ -16,6 +16,14 @@ _HERE = pathlib.Path(__file__).resolve()
 # The repo root only when this file sits in the repo's .github/scripts; a PC kit (scripts/ in a plain folder) has none (21 Nov)
 REPO_ROOT = _HERE.parents[2] if (_HERE.parent.name, _HERE.parent.parent.name) == ('scripts', '.github') else None
 from kpc_manners import Manners, next_run, robots_block  # noqa: E402
+import kpc_manners as _KM  # noqa: E402
+# 23 Nov (job 10, owner 1:03 PM): the PC's slow-sites step (2g) may wait longer between pages of a site whose robots.txt asks
+# for a long Crawl-delay, never cutting it short: it sets KPC_MAX_CRAWL_DELAY (900 s at most) for that one run, which reads only
+# the parks waiting on such sites. The nightly walk keeps kpc_manners' own 120 s (kpc_manners.py itself is frozen, N15).
+try:
+    _KM.MAX_CRAWL_DELAY = max(_KM.MAX_CRAWL_DELAY, min(900.0, float(os.environ.get('KPC_MAX_CRAWL_DELAY') or 0)))
+except ValueError:
+    pass
 
 JOB = 'KPC park page reader'
 GET_MAX_SECONDS = 90  # wall-clock cap on one download; a slow trickle cannot run past this
@@ -142,13 +150,34 @@ def choose_link(ref, row, web, docs):
     return '', 'none', 0
 
 
+# 23 Nov (job 10): the address KEY keeps the query that names the page. Before, '?parkId=98' and '?page_id=623' were dropped, so
+# every park page of a site that numbers its pages fell into ONE key: one page fetched for all of them (Oregon State Parks 162
+# parks, California State Parks 253, Parks Canada historic sites 385, Minnesota DNR 233 ... about 2,000 parks), each called a
+# page 'shared' by many parks, and the kept copies written over each other. Tracking and language bits are still left off.
+URL_KEY_RULE = W.URL_KEY_RULE
+TRACKING_Q = re.compile(r'^(utm_\w+|fbclid|gclid|msclkid|mc_[ce]id|_ga|_gl|sessionid|jsessionid|phpsessid|cfid|cftoken|lang|language|locale|hl)$', re.I)
+
+
 def norm_url(url):
     p = urllib.parse.urlparse(url or '')
     host = (p.netloc or '').lower()
     if host.startswith('www.'):
         host = host[4:]
     path = (p.path or '').rstrip('/')
-    return host + path
+    q = sorted((k.lower(), v) for k, v in urllib.parse.parse_qsl(p.query or '', keep_blank_values=True) if not TRACKING_Q.match(k))
+    return host + path + ('?' + urllib.parse.urlencode(q) if q else '')
+
+
+def kept_manifest(path):
+    """The kept pages' manifest, less the copies saved under the OLD address key (a numbered page saved before 23 Nov 'q1'
+    shares its file with every other page of that site: its content is not this page's)."""
+    man = load_json(path, {}) or {}
+    pages = man.get('pages') or {}
+    stale = [u for u, rec in pages.items() if '?' in str(u) and (rec or {}).get('kr') != URL_KEY_RULE]
+    for u in stale:
+        pages.pop(u, None)
+    man['pages'] = pages
+    return man
 
 
 class FixtureGetter:
@@ -251,7 +280,7 @@ class PageKeeper:
             path.parent.mkdir(parents=True, exist_ok=True)
             raw = bytes(body)
             path.write_bytes(raw if raw[:2] == b'\x1f\x8b' else gzip.compress(raw, 6))
-            rec = {'file': rel, 'status': 200, 'type': ctype or 'text/html', 'final': final or url, 'date': self.today}
+            rec = {'file': rel, 'status': 200, 'type': ctype or 'text/html', 'final': final or url, 'date': self.today, 'kr': URL_KEY_RULE}
             if ref: rec['ref'] = ref
             if built: rec['built'] = True
             self.man['pages'][url] = rec
@@ -661,6 +690,8 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
             fresh = False   # 23 Nov: read before shared pages were followed to the park's own link
         if reextract:
             fresh = False   # 23 Nov: reading the kept pages again with today's finders
+        if url and '?' in url and prev.get('key_rule') != URL_KEY_RULE:
+            fresh = False   # 23 Nov 'q1': a numbered page read under the old address key was another park's page
         if fresh:
             out[area][ref] = {'ref': ref, 'unchanged': True, 'page': {'fingerprint': prev.get('fingerprint'),
                              'kind': prev.get('kind'), 'read': today, 'seen': today}, 'questions': []}
@@ -724,6 +755,7 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
             kept = dict(prev)
             kept['date'] = today
             kept['fingerprint'] = main.get('fingerprint')
+            kept['key_rule'] = URL_KEY_RULE
             state['read'][ref] = kept
             state['fingerprints'][norm_url(url)] = main.get('fingerprint')
             done += 1
@@ -817,7 +849,7 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
             if listed_row:
                 fact['asked']['row'] = R.clip(listed_row)
             state['read'][ref] = {'url': url, 'fingerprint': main.get('fingerprint') or '', 'date': when,
-                                  'kind': fact['page']['kind'], 'final': main.get('final')}
+                                  'kind': fact['page']['kind'], 'final': main.get('final'), 'key_rule': URL_KEY_RULE}
             if len(refs_here) >= 2:
                 state['read'][ref]['list_rule'] = LIST_RULE
             if followed:
@@ -1208,7 +1240,7 @@ def cmd_read(args):
         if not kept_dir or not man.is_file():
             print('No pages are kept yet (the reader keeps them from its next run on). Nothing was read again.')
             return 0
-        getter = KeeperCopyGetter(load_json(man, {}), man.parent, None)
+        getter = KeeperCopyGetter(kept_manifest(man), man.parent, None)
         order = [{'ref': ref, 'area': area, 'tier': 0, 'why': 'kept page read again'} for area, parks in sorted(areas.items())
                  if not areas_only or area in areas_only for ref, row in sorted(parks.items())
                  if getter.copy._rec(choose_link(ref, row, web, docs)[0] or '') is not None]

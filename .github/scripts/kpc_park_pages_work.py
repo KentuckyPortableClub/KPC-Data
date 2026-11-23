@@ -6,6 +6,7 @@ No network. A list is JSON only: unknown keys are ignored, and nothing in a list
 import csv, datetime, io, json, pathlib
 
 REFRESH_DAYS = 30
+URL_KEY_RULE = 'q1'            # 23 Nov (job 10): the address key keeps the page number ('?parkId=98'): a numbered page read before is read again
 LIST_RULE = 1                  # 23 Nov: a page many parks share is followed to each park's own link (or its row is read)
 RESTING_RETRY_DAYS = 1         # 22 Nov: a page that answered 'resting' (busy, a server error, an empty answer) is tried again the next day
 CONFIRMED_REFRESH_DAYS = 365   # 21 Nov: a park already confirmed by its agency id is re-read once a year (an agency may change its page)
@@ -140,7 +141,7 @@ def build_worklist(areas, choose, keys, lists, refs, state, today, areas_only=No
         if isinstance(ref, str):
             add(ref, 1, 'refs file')
 
-    tier2, tier3, tier4, tier4r, tier4l, tier5, tier6 = [], [], [], [], [], [], []
+    tier2, tier3, tier4, tier4r, tier4l, tier5, tier6, tier4q = [], [], [], [], [], [], [], []
     read = state.get('read') or {}
     # 23 Nov: how many parks share each page. A park on a shared page read before LIST_RULE is read once more.
     _n = lambda u: (u or '').split('#')[0].rstrip('/').lower()
@@ -155,8 +156,11 @@ def build_worklist(areas, choose, keys, lists, refs, state, today, areas_only=No
         if ref in conf:   # 21 Nov: confirmed by its agency id: last, and only when never read or a year old
             when_c = (read.get(ref) or {}).get('date') or ''
             age_c = age_days(when_c, today) if when_c else None
+            url_c = choose(ref, row) or ''
             if not when_c or (age_c is not None and age_c >= confirmed_refresh_days):
                 tier6.append(ref)
+            elif '?' in url_c and (read.get(ref) or {}).get('key_rule') != URL_KEY_RULE:
+                tier4q.append(ref)
             continue
         key = keys.get(ref) or {}
         grade = str(key.get('g') or '')
@@ -171,6 +175,8 @@ def build_worklist(areas, choose, keys, lists, refs, state, today, areas_only=No
             tier3.append(ref)
         elif not when:
             tier4.append(ref)
+        elif '?' in url and prev.get('key_rule') != URL_KEY_RULE:
+            tier4q.append(ref)   # 23 Nov 'q1': read under the old address key, which gave every numbered page of a site one page
         elif sharing.get(_n(url), 0) >= 2 and prev.get('list_rule') != LIST_RULE:
             tier4l.append(ref)   # 23 Nov: read before shared pages were followed to the park's own link
         elif prev.get('kind') == 'resting' and age is not None and age >= RESTING_RETRY_DAYS:
@@ -189,6 +195,8 @@ def build_worklist(areas, choose, keys, lists, refs, state, today, areas_only=No
         add(ref, 4, 'resting last time: tried again')
     for ref in sorted(tier4l, key=by_busy):
         add(ref, 4, 'shared page: now read on its own link')
+    for ref in sorted(tier4q, key=by_busy):
+        add(ref, 4, 'numbered page: read again on its own address (23 Nov key fix)')
     for ref in sorted(tier5, key=by_old):
         add(ref, 5, f'older than {refresh_days} days')
     for ref in sorted(tier6, key=by_old):
