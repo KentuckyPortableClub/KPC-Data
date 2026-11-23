@@ -6,7 +6,7 @@ No network. A list is JSON only: unknown keys are ignored, and nothing in a list
 import csv, datetime, io, json, pathlib
 
 REFRESH_DAYS = 30
-URL_KEY_RULE = 'q1'            # 23 Nov (job 10): the address key keeps the page number ('?parkId=98'): a numbered page read before is read again
+URL_KEY_RULE = 'q2'            # 23 Nov (job 10): the address key keeps the page number ('?parkId=98'): a numbered page read before is read again. q2 (2:50 PM): the Parks Canada name and Minnesota's script pages fixed too: the ~300 numbered pages read this afternoon are read once more
 LIST_RULE = 1                  # 23 Nov: a page many parks share is followed to each park's own link (or its row is read)
 RESTING_RETRY_DAYS = 1         # 22 Nov: a page that answered 'resting' (busy, a server error, an empty answer) is tried again the next day
 CONFIRMED_REFRESH_DAYS = 365   # 21 Nov: a park already confirmed by its agency id is re-read once a year (an agency may change its page)

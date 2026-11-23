@@ -308,8 +308,13 @@ def compare_names(best, pota_name):
     return 'differs'
 
 
+AGENCY_PREFIX = re.compile(r'^\s*(?:Parks Canada|Parcs Canada)\s*[-–|:]\s*', re.I)   # 23 Nov: 'Parks Canada - X National Historic Site of Canada'
+OF_CANADA = re.compile(r'\s+(?:of Canada|du Canada)\s*$', re.I)
+
+
 def cut_tail(s):
-    return TAILS.sub('', str(s or '')).strip(' \t-•|')
+    t = TAILS.sub('', str(s or '')).strip(' \t-•|')
+    return OF_CANADA.sub('', AGENCY_PREFIX.sub('', t)).strip(' \t-•|')
 
 
 # 21 Nov (owner, 8:17 PM: "If they look like official websites ... fix it so it will read it"): the agencies' own web sites that
@@ -615,12 +620,29 @@ def _unescape(s):
     return s
 
 
+# 23 Nov (job 10, the owner's own run): Canada.ca pages (Parks Canada's heritage directory, 385 parks) open with these
+# headings before the page's own h1; they were taken for the park's name
+CHROME_HEADINGS = {'language selection', 'menus', 'topics menu', 'you are here', 'search', 'main menu', 'navigation',
+                   'sélection de la langue', 'vous êtes ici', 'menu principal'}
+
+
 def is_menu_chrome(s):
     """A site or section menu (for example 'STATE PARKS MENU') is not a park name."""
     t = re.sub(r'\s+', ' ', str(s or '')).strip().strip('|-•').strip()
     if not t:
         return False
+    if t.lower().rstrip(':').strip() in CHROME_HEADINGS:
+        return True
     return t.upper() == 'MENU' or 'MENU' in t.upper().split()
+
+
+# 23 Nov (job 10): a heading that is still a script template ("' + park.name + '": Minnesota DNR's park pages, 253 parks) means
+# the page builds itself: it is opened in the browser like any other page that builds itself
+TEMPLATE_HEADING = re.compile(r'<h1[^>]*>\s*[\'"]\s*\+\s*[A-Za-z_$][\w.$\[\]\'"]*\s*\+\s*[\'"]', re.I)
+
+
+def unfilled_template(html):
+    return bool(TEMPLATE_HEADING.search(html or ''))
 
 
 def _heading_and_title(html, text):
@@ -631,12 +653,20 @@ def _heading_and_title(html, text):
         title = cut_tail(title)
         if is_menu_chrome(title):
             title = ''
+        found = []
         for lv, inner in re.findall(r'<h([1-3])[^>]*>(.*?)</h\1>', html, re.I | re.S):
             cand = _unescape(' '.join(re.sub(r'<[^>]+>', ' ', inner).split()))
             cand = cut_tail(cand)
             if cand and not is_menu_chrome(cand):
-                heading = cand
-                break
+                found.append((lv, cand))
+        # 23 Nov: the page's own h1 before any h2 / h3 that comes earlier in the page (Canada.ca puts its menus first)
+        h1 = [c for lv, c in found if lv == '1']
+        heading = h1[0] if h1 else (found[0][1] if found else '')
+        if h1:   # ... and a heading that says the same name in full ('Rib Mountain' / 'Rib Mountain State Park') wins
+            for _lv, c in found:
+                if c != heading and c.lower().startswith(heading.lower() + ' ') and len(c) <= len(heading) + 40:
+                    heading = c
+                    break
         m = re.search(r'property=["\']og:title["\'][^>]*content=["\']([^"\']+)', html, re.I)
         if not m:
             m = re.search(r'content=["\']([^"\']+)["\'][^>]*property=["\']og:title["\']', html, re.I)
@@ -701,6 +731,10 @@ def best_name_of(title, heading, og, jname):
     # keep a heading that still names a place; a bare 'Welcome' is not a name
     if h and not (kinds_in(h) or len(h.split()) >= 2):
         h = ''
+    # 23 Nov: the h1 'Rib Mountain' and the title 'Rib Mountain State Park | Wisconsin DNR': the title's first part is the full name
+    t0 = re.split(r'\s*(?:\||–|—| - |::)\s*', t)[0].strip() if t else ''
+    if h and t0 and t0.lower().startswith(h.lower() + ' ') and len(t0) <= len(h) + 40 and name_core(h) == name_core(t0):
+        h = t0
     if h and t and name_core(h) and name_core(t) and name_core(h) != name_core(t):
         return {'title': raw_title or heading, 'heading': h, 'best': None, 'og': o, 'jsonld': j,
                 'quote': clip(raw_title or h), 'disagree': True}

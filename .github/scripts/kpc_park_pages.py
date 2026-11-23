@@ -588,6 +588,8 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
         extra = getter.links_for(url) if hasattr(getter, 'links_for') else []
         vis = R.visible_of(body, headers, final or url, extra)
         kind = _kind_of_status(st, vis.get('text'), final or url, is_pdf=bool(vis.get('pdf')))
+        if kind == 'html' and R.unfilled_template(vis.get('html')):
+            kind = 'script-built'     # 23 Nov: a heading still a script template (Minnesota DNR): open it in the browser
         browsed = False
         if kind == 'script-built' and not rng and hasattr(getter, 'browser_html') and budget_left():
             # 22 Nov: a page that builds itself is opened once in the browser (same manners, counted as a request) and read

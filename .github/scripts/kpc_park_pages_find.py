@@ -310,6 +310,8 @@ class Fetcher:
         extra = self.getter.links_for(url) if hasattr(self.getter, 'links_for') else []
         vis = R.visible_of(body, headers, final or url, extra)
         kind = P._kind_of_status(st, vis.get('text'), final or url, is_pdf=bool(vis.get('pdf')))
+        if kind == 'html' and R.unfilled_template(vis.get('html')):
+            kind = 'script-built'
         if kind == 'refused' and not from_copy and not (isinstance(st, str) and P.robots_block(st)):
             P._remember_refusal(self.state, R.host_of(final or url) or host, self.today, final or url)
         page = {'url': url, 'final': final or url, 'status': st, 'kind': kind, 'text': vis.get('text') or '',
