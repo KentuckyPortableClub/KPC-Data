@@ -720,6 +720,15 @@ def name_agreeing(name, pota_name):
         v = compare_names(x, pota_name)
         if v in ('same', 'same-core'):
             return x, v
+    # 23 Nov: the page writes an apostrophe POTA leaves out, or as page code ('Hazen&#039;s Notch', 'Moore&#8217;s Creek'
+    # against 'Hazens Notch', "Moore's Creek"): the same name. Apostrophes are taken out of both before comparing.
+    import html as _html
+    flat = lambda t: re.sub(r"['’‘`´]", '', _html.unescape(str(t or '')))
+    for x in seen:
+        if flat(x) != x or flat(pota_name) != str(pota_name or ''):
+            v = compare_names(flat(x), flat(pota_name))
+            if v in ('same', 'same-core'):
+                return _html.unescape(x), v
     return None, None
 
 
@@ -1786,6 +1795,9 @@ def build_facts(ref, area, pota, area_parks, asked, pages, today, shared_with, o
     if name['vs_pota'] not in ('same', 'same-core'):
         if read_blocks and not shared_with:
             name['headings'] = list(main.get('headings') or [])   # 23 Nov: a later heading can carry the park's name
+            if main.get('pdf') or main.get('kind') == 'pdf':
+                # a PDF has no headings and no menu: its name is one of its first lines
+                name['headings'] += [ln.strip() for ln in main_text.splitlines() if 3 < len(ln.strip()) <= 90][:12]
         part, v = name_agreeing(name, pota.get('name'))
         if part:
             name.update({'best': part, 'vs_pota': v, 'disagree': False})

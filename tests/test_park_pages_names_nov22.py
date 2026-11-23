@@ -28,6 +28,12 @@ if callable(h):
           h({'heading': 'Explore This Park', 'title': 'Big Bend National Park (U.S. National Park Service)'}, 'Big Bend National Park')[1] in ('same', 'same-core'))
     check('title "Banff National Park - Parks Canada": agrees', h({'heading': 'Language selection', 'title': 'Banff National Park - Parks Canada'}, 'Banff National Park')[1] in ('same', 'same-core'))
     check('a page that names another park still differs', h({'heading': 'Welcome', 'title': 'Pine Mountain State Park | Kentucky'}, 'Cherokee State Park') == (None, None))
+    # 23 Nov: apostrophes written as page code, or left out by POTA
+    check("'Hazen&#039;s Notch State Park' on the page agrees with POTA's 'Hazens Notch State Park'",
+          h({'heading': 'Hazen&#039;s Notch State Park'}, 'Hazens Notch State Park')[1] in ('same', 'same-core'))
+    check("'Moore&#8217;s Creek State Forest' agrees with POTA's \"Moore's Creek State Forest\"",
+          h({'title': 'Moore&#8217;s Creek State Forest | Invented Forestry'}, "Moore's Creek State Forest")[1] in ('same', 'same-core'))
+    check('an apostrophe does not make two different names agree', h({'heading': "Hazen's Notch State Park"}, 'Hazel Notch State Park') == (None, None))
 
 REFS = ['US-9401', 'US-9402']
 U = lambda r: f'https://parks.invented.example/park/{r}'
