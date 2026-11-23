@@ -399,7 +399,13 @@ def combine(parks, sizes, pages, links):
             row['size'] = sizes[ref]; have.append('size')
         if ref in pages:
             row['page'] = {k: v for k, v in pages[ref].items() if k != '_pota'}; have.append('page')
-        if ref in links:
+        # 23 Nov 2026: POTA lists no link for the park, but the reader read the park's own official page from the official-links
+        # bot's address. An empty 'no link' row said nothing and made the keys pass over everything that page gave (371 parks,
+        # 254 of them Alberta Parks): it is left out, so the reader's own-page test stands.
+        no_link = ref in links and str(links[ref].get('page_kind') or '') == 'no link'
+        if no_link and (pages.get(ref) or {}).get('own_page') == 'own' and not (pages.get(ref) or {}).get('unofficial'):
+            c["page read from the official-links bot's address (POTA lists no link)"] += 1
+        elif ref in links:
             row['link'] = links[ref]; have.append('link')
         row['facts_from'] = have
         rows[ref] = row
