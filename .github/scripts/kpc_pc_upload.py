@@ -24,7 +24,7 @@ import argparse, collections, datetime, json, os, pathlib, re, sys, zipfile
 
 HERE = pathlib.Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
-VERSION = 'kpc_pc_upload 2026-11-22a'
+VERSION = 'kpc_pc_upload 2026-11-23a'
 MAX_TOTAL = 300_000_000
 MAX_FILE = 60_000_000
 NAME_RX = re.compile(r'^(manifest\.json|pages/(?:[A-Z]{2}-[A-Z0-9]{1,4}|CA)\.json|crosswalk/[a-z0-9][a-z0-9-]{0,79}\.json)$')
@@ -191,6 +191,59 @@ def better_read(old, new):
     return str(((new or {}).get('page') or {}).get('read') or '') >= str(((old or {}).get('page') or {}).get('read') or '')
 
 
+def found_rows(P):
+    """23 Nov 2026 (rule sheet L): every park of the pack the own-page finder looked for, sorted by park number (never the
+    order it was looked in). -> [{ref, area, name, level, how, url, was, why, for, date}]"""
+    rows = []
+    for area, d in sorted(P['pages'].items()):
+        for ref, v in sorted(d['parks'].items()):
+            fd = (v or {}).get('found')
+            if not isinstance(fd, dict) or fd.get('level') not in ('sure', 'unsure', 'no'):
+                continue
+            rows.append({'ref': ref, 'area': (v or {}).get('area') or area, 'name': ((v or {}).get('pota') or {}).get('name') or '',
+                         'level': fd['level'], 'how': str(fd.get('how') or '')[:20], 'url': str(fd.get('url') or '')[:300],
+                         'was': str(((v or {}).get('asked') or {}).get('was') or '')[:300], 'why': str(fd.get('why') or '')[:160],
+                         'for': str(fd.get('for') or '')[:30], 'date': str(fd.get('date') or '')[:10]})
+    return rows
+
+
+def write_found(P, found_dir, questions_file):
+    """The whole found-and-unsure list on tools-out (official-links/found-<made>.json); the UNSURE ones as one waiting-room
+    question file for a person (data/waiting/questions/official-links.json.gz, answer YES / NO / NOT SURE). -> counts"""
+    import gzip
+    c = collections.Counter()
+    rows = found_rows(P)
+    for r in rows: c[f"own-page finder: {r['level']}"] += 1
+    if not rows: return c
+    if found_dir:
+        write_json(pathlib.Path(found_dir) / f"found-{P['made']}.json",
+                   {'about': 'Own-page finder (rule sheet L): parks whose POTA link was missing, dead or the agency front page. sure = read '
+                             "as the park's page; unsure = for a person; no = not found. Counts by level and area in the run report.",
+                    'made': P['made'], 'rows': rows})
+        c['found list written (tools-out)'] += 1
+    unsure = {r['ref']: dict(r, question="Is this the park's own official page? (YES / NO / NOT SURE)") for r in rows if r['level'] == 'unsure'}
+    if questions_file:
+        qf = pathlib.Path(questions_file)
+        old = {}
+        if qf.is_file():
+            try: old = (json.loads(gzip.decompress(qf.read_bytes())) or {}).get('rows') or {}
+            except (OSError, ValueError, EOFError): old = {}
+        for ref, r in old.items():
+            if isinstance(r, dict) and r.get('answer'): unsure[ref] = r          # a person's answer is kept, whatever the new run says
+        sure_now = {r['ref'] for r in rows if r['level'] == 'sure'}
+        keep = {ref: r for ref, r in sorted(unsure.items()) if ref not in sure_now or r.get('answer')}
+        if keep or old:
+            qf.parent.mkdir(parents=True, exist_ok=True)
+            doc = {'about': "Own-page finder (rule sheet L): a page on the agency's own site that carries the park's name but has no "
+                            'second witness (or a witness against it). Nothing is taken until a person says YES.', 'rows': keep}
+            raw = gzip.compress((json.dumps(doc, ensure_ascii=False, indent=1) + '\n').encode('utf-8'), 9, mtime=0)
+            if not qf.is_file() or qf.read_bytes() != raw:
+                qf.write_bytes(raw)
+                c['waiting-room questions written'] += 1
+        c['unsure parks for a person'] = len(keep)
+    return c
+
+
 def merge(P, pages_dir, xw_dir):
     """Every park on file is kept unless the PC's read of it is better or, as good and newer (better_read). -> counts"""
     c = collections.Counter()
@@ -234,6 +287,8 @@ def main(argv=None):
     ap.add_argument('--pages', default='')
     ap.add_argument('--crosswalk', default='')
     ap.add_argument('--report', default='')
+    ap.add_argument('--found', default='', help="23 Nov: tools-out folder for the own-page finder's list (official-links)")
+    ap.add_argument('--questions', default='', help='23 Nov: the waiting-room question file for the unsure finds')
     a = ap.parse_args(argv)
     P, probs = read_pack(a.pack, a.parkinfo)
     lines = [f'{VERSION}: {pathlib.Path(a.pack).name}']
@@ -248,6 +303,7 @@ def main(argv=None):
     if a.step == 'merge':
         if not a.pages or not a.crosswalk: print('merge needs --pages and --crosswalk'); return 2
         c = merge(P, a.pages, a.crosswalk)
+        c.update(write_found(P, a.found, a.questions))
         lines += [f'  {v:7,}  {k}' for k, v in sorted(c.items())]
     print('\n'.join(lines))
     if a.report: pathlib.Path(a.report).write_text('\n'.join(lines) + '\n', encoding='utf-8')
