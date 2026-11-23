@@ -18,7 +18,7 @@ Nothing is downloaded and no input file is changed. Standard library only.
 """
 import argparse, collections, csv, datetime, glob, json, os, re, sys, tempfile
 
-VERSION = 'kpc_park_facts 8 (2026-11-23)'
+VERSION = 'kpc_park_facts 9 (2026-11-23)'
 REF = re.compile(r'^[A-Z0-9]{1,4}-\d{4,5}$')
 AREA = re.compile(r'^(US|CA)-[A-Z]{2}$')
 
@@ -276,11 +276,63 @@ def read_pages(folder):
                 'parts': [str(x)[:80] for x in _first(p.get('parts'), 12) if str(x).strip()],
                 'inside_of': [{'unit': str(u.get('unit') or '')[:100], 'kind': str(u.get('kind') or '')[:40], 'pota_ref': u.get('pota_ref')}
                               for u in _first(p.get('inside_of'), 3) if isinstance(u, dict) and str(u.get('unit') or '').strip()],
+                'map_names': map_names_of(p.get('maps')) if own.get('is') == 'own' and not p.get('unofficial') else [],
                 'maps': [{'url': str(m.get('url') or '')[:300], 'kind': m.get('kind'), 'names_park': bool(m.get('names_park'))}
                          for m in _first(p.get('maps'), 6) if isinstance(m, dict) and str(m.get('url') or '').startswith('https://')],
             }
     SHARED_POINTS[0] = drop_shared_points(out)
+    SHARED_MAP_NAMES[0] = drop_shared_map_names(out)
     return out, areas
+
+
+# 23 Nov 2026 (owner 12:51 AM 'Yes'; rule sheet W5 MAP-LINK NAME): the park's own page links the agency's OWN map viewer and
+# the link itself names the place (Wisconsin DNR: dnrmaps.wi.gov/H5/?Viewer=Public_Access_Lands&ID=MACK WILDLIFE AREA;
+# Massachusetts and Indiana: ...?find=<name>; Colorado: ...&value=<name>). That name is the one the agency's map uses.
+# Never a street-map site, a booking site or a document; never the id of the map itself (32 letters and digits); and a
+# value that 3 or more parks' links carry is a map of everything, not this park's name.
+MAP_NAME_PARAMS = ('id', 'find', 'value', 'parkname', 'name', 'lbl', 'query', 'search', 'feature', 'unit', 'property')
+MAP_HOST_NO = re.compile(r'google\.|goo\.gl|bing\.com|openstreetmap|apple\.com|mapquest|reserveamerica|recreation\.gov|parcsnbparks|adobe\.com', re.I)
+MAP_PARAM_RX = re.compile(r'[?&#;]([A-Za-z_]{1,12})=([^&#]{3,160})')
+SHARED_MAP_NAME_PARKS = 3
+SHARED_MAP_NAMES = [0]
+
+
+def map_names_of(maps):
+    import urllib.parse
+    out = []
+    for m in maps or []:
+        u = str((m or {}).get('url') or '') if isinstance(m, dict) else ''
+        u = u.replace('&amp;', '&')
+        if not u.startswith('https://') or MAP_HOST_NO.search(u) or re.search(r'\.pdf(\?|#|$)', u, re.I):
+            continue
+        host = urllib.parse.urlparse(u).netloc.lower()
+        for mm in MAP_PARAM_RX.finditer(u):
+            param = mm.group(1).lower()
+            if param not in MAP_NAME_PARAMS:
+                continue
+            v = ' '.join(urllib.parse.unquote_plus(mm.group(2)).split())
+            if param == 'query' and ',' in v:
+                v = v.split(',')[-1].strip()            # ArcGIS: query=<layer>,<field>,<value>
+            if (re.fullmatch(r'[0-9a-fA-F-]{20,}', v) or re.match(r'(?i)https?:|urn:', v) or len(re.findall(r'[A-Za-z]', v)) < 4
+                    or len(v) > 80 or v.lower() in ('true', 'false', 'null', 'none', 'dark', 'light')):
+                continue
+            if not any(x['name'].lower() == v.lower() for x in out):
+                out.append({'name': v, 'host': host, 'param': param})
+    return out[:3]
+
+
+def drop_shared_map_names(pages):
+    seen = {}
+    for ref, f in pages.items():
+        for m in f.get('map_names') or []:
+            seen.setdefault((m['host'], m['param'], m['name'].lower()), set()).add(ref)
+    bad = {k for k, refs in seen.items() if len(refs) >= SHARED_MAP_NAME_PARKS}
+    n = 0
+    for f in pages.values():
+        keep = [m for m in f.get('map_names') or [] if (m['host'], m['param'], m['name'].lower()) not in bad]
+        n += len(f.get('map_names') or []) - len(keep)
+        f['map_names'] = keep
+    return n
 
 
 SHARED_POINT_PARKS = 3   # the same point on this many parks' pages of one site = the site's own furniture, never a park's point
@@ -441,6 +493,8 @@ def combine(parks, sizes, pages, links):
             c['page gives an address'] += 1
         if pg.get('directions'):
             c['page gives directions (roads or towns)'] += 1
+        if pg.get('map_names'):
+            c["page's map link names the place"] += 1
         if pg.get('offsets'):
             c['page says how far and which way from a town'] += 1
         if pg.get('counties'):
