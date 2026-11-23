@@ -13,6 +13,11 @@ echo It looks on each agency's OWN site for the parks POTA gives no link, a dead
 echo Same manners as the reader: robots.txt always wins, slow, no search engine, no Wikipedia, tourism or trail sites.
 echo A page is taken only when SURE (its own name and a second witness); the rest is listed for a person.
 pause
+if exist 0b-INSTALL-PDF-READER.bat (
+  echo First, the PDF reader ^(pypdf^), once: it makes the next runs read PDF pages better...
+  call 0b-INSTALL-PDF-READER.bat
+  findstr /b RESULT pdf-install-log.txt
+)
 cd page-reader
 set "ARGS=--data data --out out --state out\state.json --agency-table data\key-agency-table.json --priority-file ..\PRIVATE\priority-parks.csv"
 echo.
