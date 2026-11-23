@@ -16,7 +16,7 @@ READER = 'v1'
 CONFIRM = 'confirm 2026-11-21'
 QUOTE_MAX = 200
 REFRESH_DAYS = 30
-REFUSAL_DAYS = 30
+REFUSAL_DAYS = 7    # 22 Nov: a site set aside is asked again after a week (was 30 days)
 MAX_PER_PARK = 4
 PDF_FIRST = 400_000
 
@@ -635,6 +635,30 @@ def best_name_of(title, heading, og, jname):
     best = h or t or o or j or None
     return {'title': raw_title or (heading or ''), 'heading': h or t or '', 'best': best, 'og': o,
             'jsonld': j, 'quote': clip(raw_title or h or best or ''), 'disagree': False}
+
+
+NAME_SPLIT = re.compile(r'\s*(?:\||–|—| - |::| \u2022 |:)\s*')
+
+
+def name_agreeing(name, pota_name):
+    """22 Nov 2026 (owner: "we not doing a good job of confirming park names"): the page's heading was often site chrome
+    ('Main navigation', 'Explore This Park', 'Official websites use .mass.gov', 'Language selection'), so 7,303 of 8,763 own
+    pages said the name differs. The name is looked for in the heading, the title and the best name, whole and in their
+    parts (split at | – — - :: •). -> (the part that agrees, 'same' | 'same-core') or (None, None)."""
+    seen = []
+    for s in ((name or {}).get('heading'), (name or {}).get('title'), (name or {}).get('best')):
+        if not s:
+            continue
+        s = str(s)
+        for x in [s, re.sub(r'\s*\([^)]*\)', ' ', s)] + NAME_SPLIT.split(re.sub(r'\s*\([^)]*\)', ' ', s)):
+            x = (x or '').strip()
+            if x and x not in seen:
+                seen.append(x)
+    for x in seen:
+        v = compare_names(x, pota_name)
+        if v in ('same', 'same-core'):
+            return x, v
+    return None, None
 
 
 def find_other_part(area_parks, ref, page_name, parts, my_type):
@@ -1445,6 +1469,10 @@ def build_facts(ref, area, pota, area_parks, asked, pages, today, shared_with, o
         main_text = ''
         text = ''
     name['vs_pota'] = compare_names(name.get('best'), pota.get('name')) if name.get('best') else ('differs' if name.get('disagree') else None)
+    if name['vs_pota'] not in ('same', 'same-core'):
+        part, v = name_agreeing(name, pota.get('name'))
+        if part:
+            name.update({'best': part, 'vs_pota': v, 'disagree': False})
     words = kinds_in(name.get('best') or '') if name.get('best') else []
     combined, parts = combined_of(name.get('best') or '') if name.get('best') else (False, [])
     if combined:

@@ -45,8 +45,9 @@ with tempfile.TemporaryDirectory() as t:
     check('the site is not put aside after one refusal', 'parks.invented.example' not in (st.get('refused') or {}))
 
     r, facts, asked, st = run(t, {'US-9201': 403, 'US-9202': 403, 'US-9203': 403, 'US-9204': 200, 'US-9205': 200})
-    check('three different refused pages: the site is put aside, the rest are not asked', asked == {'US-9201', 'US-9202', 'US-9203'}
-          and 'parks.invented.example' in (st.get('refused') or {}))
+    # 22 Nov: three refused pages no longer put the site aside (now 10, test_park_pages_refusals_nov22.py)
+    check('three different refused pages: the rest of the site is still asked', asked == set(REFS)
+          and 'parks.invented.example' not in (st.get('refused') or {}))
 
     r, facts, asked, st = run(t, {'US-9201': 'robots', 'US-9202': 200, 'US-9203': 200, 'US-9204': 200, 'US-9205': 200})
     check('a robots "no" for one address is not remembered for the whole site', asked >= set(REFS[1:]) and not (st.get('refused') or {}))

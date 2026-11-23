@@ -242,7 +242,7 @@ class LiveGetter:
         return self.M.resting()
 
 
-REFUSALS_FOR_HOST = 3   # 21 Nov: a site is passed over only after this many DIFFERENT pages refused us (401 / 403 / a wall)
+REFUSALS_FOR_HOST = 10  # 22 Nov 11:56 PM (owner: "U sure we are getting refused"): 3 put whole sites aside (BLM: 3 pages refused, 723 parks never asked); now 10 DIFFERENT pages (401 / 403 / a wall)
 
 
 def _refusal_rule(state):
