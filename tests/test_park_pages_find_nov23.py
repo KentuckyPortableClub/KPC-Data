@@ -180,6 +180,14 @@ with tempfile.TemporaryDirectory() as d:
                                           on_save=lambda r, w: calls.append(len(r)), save_every=0)
     check('progress is saved while it walks (a window closed part way keeps what was found)', len(calls) >= len(rows) - 1 > 0)
     check('it asks each agency list once, however many parks use it', getter.calls.count(LIST) <= 1)
+    st = {}
+    busy = P.KeeperCopyGetter({}, t, None)      # every answer 'not in the copy': the sites said nothing
+    rows, written, reqs = FIND.find_links(areas, facts, busy, st, '2026-11-23', quiet=True, web=web, docs=docs)
+    again = {a[1] for a in FIND.worklist(facts, st, '2026-11-23')}
+    check('a park whose sites were busy or not asked is looked for again next run (no 30-day rest)',
+          rows and all(r['level'] == 'no' for r in rows) and {'US-9603', 'US-9604', 'US-9608'} <= again
+          and all('busy' in r['reason'] for r in rows if r['ref'] in again))
+    check('a park with nowhere to look rests 30 days as before', 'US-9606' not in again and st['found']['US-9606']['date'] == '2026-11-23')
 
 # no outside site in the rule: a tourism page never counts (official list only)
 check('(d) a tourism site is not official', not FIND.R.official_host('https://www.visitzz.com/heron-marsh'))

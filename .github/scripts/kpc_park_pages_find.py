@@ -194,6 +194,7 @@ class Fetcher:
         self.max_requests, self.deadline, self.get_max = max_requests, deadline, get_max_seconds
         self.requests = 0
         self.cache = {}
+        self.busy = 0     # answers that say nothing about the page (busy, refused, not asked): the park is tried again next run
 
     def time_up(self):
         return self.deadline is not None and time.time() >= self.deadline
@@ -211,11 +212,13 @@ class Fetcher:
             return None
         host = R.host_of(url)
         if host and P._refused_until(self.state, host, self.today):
+            self.busy += 1
             page = {'url': url, 'final': url, 'status': 'refused', 'kind': 'refused', 'text': '', 'links': []}
             self.cache[key] = page
             return page
         from_copy = isinstance(self.getter, P.KeeperCopyGetter) and self.getter.copy._rec(url) is not None
         if not from_copy and not self.left():
+            self.busy += 1
             return None
         if not from_copy:
             self.requests += 1
@@ -237,6 +240,8 @@ class Fetcher:
                 'family': R.family_of(final or url), 'thin': len((vis.get('text') or '').strip()) < 400}
         if from_copy:
             page['kept_date'] = (self.getter.copy._rec(url) or {}).get('date') or ''
+        if kind in ('resting', 'refused'):
+            self.busy += 1
         self.cache[key] = page
         return page
 
@@ -376,6 +381,7 @@ def find_links(areas, facts_by_area, getter, state, today, first=(), areas_only=
             print(f'Looking for the own page of park {i + 1:,} of {len(todo):,} ({ref}, {why}).', flush=True)
         best = ('no', 'nothing on the agency sites named this park', None, '', '')
         reads = 0
+        busy0 = F.busy
         for how, url in candidates_for(ref, row, fact, why, F, kept or {}, sisters.get((area, row.get('type') or ''))):
             if reads >= READS_PER_PARK:
                 break
@@ -391,6 +397,9 @@ def find_links(areas, facts_by_area, getter, state, today, first=(), areas_only=
             if level == 'unsure' and best[0] != 'unsure':
                 best = (level, reason, built, how, page.get('final') or url)
         level, reason, built, how, url = best
+        busy = F.busy > busy0
+        if level == 'no' and busy:
+            reason = 'a site was busy, refused or not asked this run: looked for again next run'
         found = {'url': url if level != 'no' else '', 'how': how, 'level': level, 'why': reason, 'for': why,
                  'date': today, 'rule': FIND_RULE, 'was': (fact.get('asked') or {}).get('url') or ''}
         if level == 'sure' and built:
@@ -409,7 +418,7 @@ def find_links(areas, facts_by_area, getter, state, today, first=(), areas_only=
             kept_fact = dict(fact)
             kept_fact['found'] = found
             written[area][ref] = kept_fact
-        state.setdefault('found', {})[ref] = dict(found)
+        state.setdefault('found', {})[ref] = dict(found, date='' if (level == 'no' and busy) else today)
         rows.append({'ref': ref, 'area': area, 'why': why, 'level': level, 'how': how, 'url': found['url'], 'reason': reason})
     state['find_stopped'] = stopped
     state['find_left'] = max(0, len(todo) - len(rows)) if stopped else 0
@@ -432,7 +441,8 @@ def summary_lines(rows, requests, state):
     lines = [f'Own-page finder ({FIND_RULE}): {len(rows):,} parks looked at, {requests:,} request(s).',
              f"  sure (taken as the park's page): {c['sure']:,}",
              f'  unsure (listed for a person):     {c["unsure"]:,}',
-             f'  not found:                        {c["no"]:,}']
+             f'  not found:                        {c["no"]:,}',
+             f'    of them, a site was busy or not asked (looked for again next run): {sum(1 for r in rows if "busy" in r["reason"]):,}']
     if state.get('find_stopped'):
         lines.append(f"  stopped ({state['find_stopped']}); {state.get('find_left', 0):,} parks are left for the next run.")
     for k in sorted(k for k in c if ' by ' in k or k.startswith('for ')):
