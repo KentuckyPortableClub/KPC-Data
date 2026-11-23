@@ -144,24 +144,25 @@
    "updated": "2026-11-22"
   },
   "US-CA": {
-   "checked": 410,
+   "checked": 411,
    "counts": {
-    "agree": 83,
-    "handover_hints": 42,
+    "agree": 106,
+    "handover_hints": 40,
     "no_page": 1,
-    "no_size": 185,
-    "off": 32,
+    "no_size": 187,
+    "not_read": 0,
+    "off": 20,
     "ours_unknown": 12,
-    "parks": 410,
+    "parks": 411,
     "retired": 0,
-    "unsure": 78,
-    "weak": 18,
-    "with_outline": 391
+    "unsure": 67,
+    "weak": 16,
+    "with_outline": 393
    },
    "left": 0,
-   "parks": 410,
-   "status": "queued",
-   "updated": "2026-11-09"
+   "parks": 411,
+   "status": "done",
+   "updated": "2026-11-23"
   },
   "US-CO": {
    "checked": 276,
@@ -1131,6 +1132,7 @@
   "ksoutdoors.com": 1795475203.699929,
   "ksoutdoors.gov": 1795475234.4505506,
   "maine.gov": 1795472930.2139065,
+  "ohv.parks.ca.gov": 1795480730.894527,
   "outdoornebraska.gov": 1795475473.5628872,
   "tnstateparks.com": 1795430345.0894592,
   "www.alapark.com": 1795435195.785201,
@@ -1139,6 +1141,7 @@
   "www.blm.gov": 1795478598.0712123,
   "www.destateparks.com": 1795473760.9565387,
   "www.fhwa.dot.gov": 1795476591.1508057,
+  "www.fire.ca.gov": 1795481458.568547,
   "www.floridastateparks.org": 1795436850.291285,
   "www.ksoutdoors.gov": 1795475132.007652,
   "www.lastateparks.com": 1795474392.932798,
@@ -1154,42 +1157,56 @@
  },
  "last": {
   "areas": [
-   "US-NM"
+   "US-CA"
   ],
   "manners": {
-   "browser": 5,
-   "dropped_queued": 3,
-   "errors": 0,
+   "browser": 6,
+   "dropped_queued": 4,
+   "errors": 3,
+   "for_person": 3,
    "for_person_urls": [
     [
-     "https://nmhistoricsites.org/robots.txt",
-     "robots.txt answered with a web page, not a robots file (the answer came from another site (https://www.nmhistoricsites.dca.nm.gov/): not read as \"no rules\"): not read as \"no rules\": a person downloads what is needed from nmhistoricsites.org"
+     "http://parks.ca.gov/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from parks.ca.gov this run"
     ],
     [
-     "http://www.emnrd.state.nm.us/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from www.emnrd.state.nm.us this run"
+     "https://files.santaclaracounty.gov/migrated/MartialCottleGuideMap.pdf",
+     "HTTP 403 twice"
+    ],
+    [
+     "http://dbw.parks.ca.gov/robots.txt",
+     "robots.txt answered unreachable: nothing fetched from dbw.parks.ca.gov this run"
+    ],
+    [
+     "https://www.fire.ca.gov/what-we-do/natural-resource-management/demonstration-state-forests/boggs-demonstration-state-forest",
+     "HTTP 403 twice"
+    ],
+    [
+     "https://www.fire.ca.gov/what-we-do/natural-resource-management/demonstration-state-forests/jackson-demonstration-state-forest",
+     "HTTP 403 twice"
     ]
    ],
-   "host_rule": 7,
-   "requests": 194,
-   "rested": 32,
+   "host_rule": 21,
+   "requests": 821,
+   "rested": 28,
+   "retry403": 3,
    "robots": 2,
-   "robots_unreadable": 1,
-   "strikes": 0
+   "robots_unreadable": 2,
+   "strikes": 9
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 3,
-   "no_size": 55,
-   "ours_unknown": 11,
-   "pages_read": 148,
-   "parks": 124,
+   "handover_hints": 40,
+   "no_size": 188,
+   "ours_unknown": 12,
+   "pages_read": 621,
+   "parks": 411,
    "retired": 0,
-   "size_agree": 23,
-   "size_off": 8,
-   "size_unsure": 9,
+   "size_agree": 106,
+   "size_off": 20,
+   "size_unsure": 67,
    "skipped_fresh": 0,
-   "with_outline": 106
+   "with_outline": 393
   },
   "when": "2026-11-23"
  },
