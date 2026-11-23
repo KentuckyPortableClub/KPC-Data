@@ -407,6 +407,9 @@ OFFICIAL_SITES = {
     # Quebec ZECs: the body the province names to run the territory
     'zecoieblanche.com': 'ZEC (Quebec)', 'zecpetitecascapedia.com': 'ZEC (Quebec)', 'zecbonaventure.com': 'ZEC (Quebec)',
     'zecforestville.reseauzec.com': 'ZEC (Quebec)', 'zecmadeleine.com': 'ZEC (Quebec)',
+    # 23 Nov 12:51 AM (owner: "Yes"): the associations whose sites carry their members' own park pages
+    'saskregionalparks.ca': 'Saskatchewan Regional Parks (association)', 'nrdnet.org': "Nebraska's Natural Resources Districts (association)",
+    'ontarioconservationareas.ca': 'Conservation Ontario (association)',
     # Land trusts that own and run the place
     'natureconservancy.ca': 'land trust (owner)', 'naturetrust.nb.ca': 'land trust (owner)', 'islandnaturetrust.ca': 'land trust (owner)',
     'nature.org': 'land trust (owner)', 'triangleland.org': 'land trust (owner)',
@@ -702,7 +705,31 @@ def best_name_of(title, heading, og, jname):
 NAME_SPLIT = re.compile(r'\s*(?:\||–|—| - |::| \u2022 |:)\s*')
 
 
-def name_agreeing(name, pota_name):
+# 23 Nov 2026 12:51 AM (owner's ruling W-G5, "Yes"): the page's name and POTA's name carry the same words but call the place
+# another kind ('Anthony Branch Fishery Area' / 'Anthony Branch State Fish and Wildlife Area', 'Sielbeck Forest SNA' /
+# 'Sielbeck Forest State Natural Area'): the same name ('same-words'). The words that only say what kind of place it is are
+# set aside; every other word must be on both sides (a 'North Unit' on one side only still differs). Never when another
+# park of the area carries the page's name as its own: that page is the other park's.
+KIND_ONLY = set("""state national provincial territorial county regional municipal city town federal public park parks forest forests
+ wildlife management area areas fish fishery fisheries fishing hunting game land lands recreation recreational natural nature
+ preserve preserves reserve reservation conservation habitat historic historical history site sites memorial monument refuge
+ wilderness scenic wild access unit tract property waterfowl production wetland wetlands sanctuary heritage ecological protected
+ special study interpretive herd district department division the of and at in for a an blm usfs nwr wma sna snp sp sf sra swa
+ sfwa nf np nm nhs nra wpa wsa acec nca hma wsr""".split())
+
+
+def name_words(s):
+    import html as _html
+    t = re.sub(r"['’‘`´]", '', _html.unescape(str(s or ''))).lower()
+    return {w for w in re.findall(r'[a-z0-9]+', t) if w not in KIND_ONLY}
+
+
+def same_words(a, b):
+    wa, wb = name_words(a), name_words(b)
+    return bool(wa) and wa == wb and (len(wa) >= 2 or max(len(w) for w in wa) >= 4)
+
+
+def name_agreeing(name, pota_name, others=None):
     """22 Nov 2026 (owner: "we not doing a good job of confirming park names"): the page's heading was often site chrome
     ('Main navigation', 'Explore This Park', 'Official websites use .mass.gov', 'Language selection'), so 7,303 of 8,763 own
     pages said the name differs. The name is looked for in the heading, the title and the best name, whole and in their
@@ -718,7 +745,7 @@ def name_agreeing(name, pota_name):
                 seen.append(x)
     for x in seen:
         v = compare_names(x, pota_name)
-        if v in ('same', 'same-core'):
+        if v == 'same' or (v == 'same-core' and norm_written(x) not in (others or ())):
             return x, v
     # 23 Nov: the page writes an apostrophe POTA leaves out, or as page code ('Hazen&#039;s Notch', 'Moore&#8217;s Creek'
     # against 'Hazens Notch', "Moore's Creek"): the same name. Apostrophes are taken out of both before comparing.
@@ -727,8 +754,11 @@ def name_agreeing(name, pota_name):
     for x in seen:
         if flat(x) != x or flat(pota_name) != str(pota_name or ''):
             v = compare_names(flat(x), flat(pota_name))
-            if v in ('same', 'same-core'):
+            if v == 'same' or (v == 'same-core' and norm_written(flat(x)) not in (others or ())):
                 return _html.unescape(x), v
+    for x in seen:
+        if same_words(x, pota_name) and norm_written(_html.unescape(x)) not in (others or ()):
+            return _html.unescape(x), 'same-words'
     return None, None
 
 
@@ -1792,13 +1822,16 @@ def build_facts(ref, area, pota, area_parks, asked, pages, today, shared_with, o
         main_text = ''
         text = ''
     name['vs_pota'] = compare_names(name.get('best'), pota.get('name')) if name.get('best') else ('differs' if name.get('disagree') else None)
+    if read_blocks and not shared_with:
+        name['headings'] = list(main.get('headings') or [])   # 23 Nov: a later heading can carry the park's name
+        if main.get('pdf') or main.get('kind') == 'pdf':
+            # a PDF has no headings and no menu: its name is one of its first lines
+            name['headings'] += [ln.strip() for ln in main_text.splitlines() if 3 < len(ln.strip()) <= 90][:12]
+    others = {norm_written((row or {}).get('name')) for r2, row in (area_parks or {}).items() if r2 != ref} - {norm_written(pota.get('name'))}
+    if name['vs_pota'] == 'same-core' and norm_written(name.get('best')) in others:
+        name['vs_pota'] = 'differs'    # 23 Nov: the page carries ANOTHER park's own name (same core, another kind): that park's page
     if name['vs_pota'] not in ('same', 'same-core'):
-        if read_blocks and not shared_with:
-            name['headings'] = list(main.get('headings') or [])   # 23 Nov: a later heading can carry the park's name
-            if main.get('pdf') or main.get('kind') == 'pdf':
-                # a PDF has no headings and no menu: its name is one of its first lines
-                name['headings'] += [ln.strip() for ln in main_text.splitlines() if 3 < len(ln.strip()) <= 90][:12]
-        part, v = name_agreeing(name, pota.get('name'))
+        part, v = name_agreeing(name, pota.get('name'), others)
         if part:
             name.update({'best': part, 'vs_pota': v, 'disagree': False})
     words = kinds_in(name.get('best') or '') if name.get('best') else []
