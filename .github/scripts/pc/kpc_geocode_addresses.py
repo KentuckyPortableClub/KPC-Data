@@ -167,7 +167,232 @@ def _ca_manners(scripts):
     return Manners('KPC address points')
 
 
-def run(out, scripts, today=None, poster=post_batch, allow=robots_allow, ca_manners=_ca_manners, ca_lookup=canada_lookup):
+# ---------------------------------------------------------------------------------------------------------------------
+# 23 Nov 2026 (owner 4:11 AM: "How many 2 miles east of is they ... do all 3"): TOWN POINTS. A page that says '2 miles east of
+# Shiocton' gives a town, a distance and a direction (the reader keeps them in location.offsets). The town's own point comes
+# from a government town list, checked live that morning:
+#   US: the Census Bureau's Gazetteer place files, one small text file per state
+#       (www2.census.gov/geo/docs/maps-data/data/gazetteer/2024_Gazetteer/2024_gaz_place_<state number>.txt; columns by name:
+#       USPS, NAME, INTPTLAT, INTPTLONG; tabs in 2024, bars in 2026: both are read). Each state's file is fetched once.
+#   Canada: Natural Resources Canada's Geolocator place names (keys=geonames: name, province, category, lat, lng). Each town
+#       once. Lakes, rivers and other features of the same name are passed over.
+# The point made from it is APPROXIMATE (road miles, a town's middle): it goes in location.near with how far off it may be
+# (within_km), NEVER in location.coords, so nothing reads it as the page's own point. A made point more than NEAR_MAX_KM from
+# POTA's pin is the wrong town and is left out. Any failure here is one printed line: the address points are never held up.
+TOWN_URL = 'https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2024_Gazetteer/2024_gaz_place_%s.txt'
+FIPS = dict(zip(STATES[:51], '01 02 04 05 06 08 09 10 11 12 13 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 '
+                             '39 40 41 42 44 45 46 47 48 49 50 51 53 54 55 56'.split()))
+BEARING = {'N': 0, 'NE': 45, 'E': 90, 'SE': 135, 'S': 180, 'SW': 225, 'W': 270, 'NW': 315}
+NEAR_MAX_KM = 60.0       # a made point farther than this from POTA's pin: the wrong town of that name
+TOWN_MAX_KM = 150.0      # the named town itself must be within this distance of POTA's pin
+CA_TOWNS_A_RUN = 1500
+PLACE_KIND = re.compile(r'\s+(city and borough|consolidated government|unified government|metropolitan government|metro government|'
+                        r'charter township|urban county|municipality|township|borough|village|city|town|CDP|plantation|comunidad|'
+                        r'zona urbana|corporation)(\s+\(balance\))?\s*$', re.I)
+NOT_A_TOWN = re.compile(r'(?i)lake|river|creek|brook|stream|mount|peak|hill|ridge|island|bay|cove|point|cape|rapids|falls|channel|park|'
+                        r'reserve|forest|glacier|valley|marsh|pond|beach|shoal|rock|spring|canal|dam|bridge|railway|school|library|church')
+
+
+def norm_town(s):
+    import unicodedata
+    t = unicodedata.normalize('NFKD', str(s or '')).encode('ascii', 'ignore').decode('ascii').lower()
+    t = re.sub(r"['’`]", '', t)
+    t = re.sub(r'\bsaint\b|\bste?\b\.?', 'st', t)
+    t = re.sub(r'\bmount\b|\bmt\b\.?', 'mt', t)
+    t = re.sub(r'\bfort\b|\bft\b\.?', 'ft', t)
+    return ' '.join(re.sub(r'[^a-z0-9]+', ' ', t).split())
+
+
+def parse_places(text):
+    """A Census Gazetteer place file -> {town name (normalised): [(lat, lon), ...]}. Columns are found by their names, so the
+    2024 layout (tabs) and the 2026 layout (bars, one more column) are both read."""
+    lines = [ln for ln in str(text or '').splitlines() if ln.strip()]
+    if not lines:
+        return {}
+    sep = '|' if '|' in lines[0] else '\t'
+    head = [h.strip().upper() for h in lines[0].split(sep)]
+    try:
+        ni, la, lo = head.index('NAME'), head.index('INTPTLAT'), head.index('INTPTLONG')
+    except ValueError:
+        return {}
+    out = {}
+    for ln in lines[1:]:
+        c = ln.split(sep)
+        if len(c) <= max(ni, la, lo):
+            continue
+        try:
+            pt = (float(c[la].strip()), float(c[lo].strip()))
+        except ValueError:
+            continue
+        k = norm_town(PLACE_KIND.sub('', c[ni].strip()))
+        if k:
+            out.setdefault(k, []).append(pt)
+    return out
+
+
+def offset_point(lat, lon, km, direction):
+    import math
+    b = math.radians(BEARING[direction])
+    return (round(lat + km * math.cos(b) / 110.574, 5),
+            round(lon + km * math.sin(b) / (111.320 * max(0.2, math.cos(math.radians(lat)))), 5))
+
+
+def _km(a, b):
+    import math
+    la1, lo1, la2, lo2 = map(math.radians, (a[0], a[1], b[0], b[1]))
+    h = math.sin((la2 - la1) / 2) ** 2 + math.cos(la1) * math.cos(la2) * math.sin((lo2 - lo1) / 2) ** 2
+    return 6371.0088 * 2 * math.asin(min(1.0, math.sqrt(h)))
+
+
+def us_places_live(M, st):
+    """One state's Census place file, through the manners (robots.txt and pace first). -> text or None."""
+    url = TOWN_URL % FIPS[st]
+    if not M.robots_ok(url):
+        return None
+    code, _h, body, _f = M.get(url)
+    if code != 200 or not body:
+        return None
+    return body.decode('utf-8', 'replace') if isinstance(body, bytes) else str(body)
+
+
+def ca_places_live(M, town):
+    """Natural Resources Canada's place names for one town name -> [[lat, lon, category, province], ...] (exact name only)."""
+    import urllib.parse
+    code, _h, body, _f = M.get(CA_URL + '?' + urllib.parse.urlencode({'q': town, 'lang': 'en', 'keys': 'geonames'}))
+    if code != 200 or not body:
+        return None
+    try:
+        items = json.loads(body.decode('utf-8', 'replace') if isinstance(body, bytes) else body)
+    except ValueError:
+        return None
+    want, out = norm_town(town), []
+    for it in items if isinstance(items, list) else []:
+        if not isinstance(it, dict) or str(it.get('key') or '') != 'geonames' or norm_town(it.get('name')) != want:
+            continue
+        cat = str(it.get('category') or '')
+        if NOT_A_TOWN.search(cat):
+            continue
+        try:
+            out.append([round(float(it['lat']), 5), round(float(it['lng']), 5), cat[:30], str(it.get('province') or '')[:30]])
+        except (TypeError, ValueError, KeyError):
+            continue
+    return out
+
+
+def town_points(files, out, scripts, manners=_ca_manners, us_places=us_places_live, ca_places=ca_places_live):
+    """Fill location.near from location.offsets for every park's own page (or its own list row). -> (points, parks, looked up)."""
+    cache = pathlib.Path(out) / 'towns'
+    try:
+        sys.path.insert(0, str(pathlib.Path(scripts).resolve()))
+        import kpc_park_pages_rules as R
+        if not hasattr(R, 'offsets_in'): R = None
+    except Exception:  # noqa: BLE001
+        R = None
+    M = None
+    us, ca_path = {}, cache / 'ca.json'
+    ca = json.loads(ca_path.read_text(encoding='utf-8')) if ca_path.is_file() else {}
+    looked = ca_new = 0
+
+    def the_manners():
+        nonlocal M
+        if M is None:
+            M = manners(scripts) if manners else False
+        return M or None
+
+    def us_state(st):
+        nonlocal looked
+        if st in us:
+            return us[st]
+        f = cache / f'us-{st}.json'
+        if f.is_file():
+            us[st] = {k: [tuple(p) for p in v] for k, v in json.loads(f.read_text(encoding='utf-8')).items()}
+            return us[st]
+        us[st] = {}
+        m = the_manners()
+        if st in FIPS and m is not None:
+            text = us_places(m, st)
+            looked += 1
+            got = parse_places(text) if text else {}
+            if got:
+                cache.mkdir(parents=True, exist_ok=True)
+                f.write_text(json.dumps(got), encoding='utf-8')
+                us[st] = got
+        return us[st]
+
+    def ca_town(name):
+        nonlocal looked, ca_new
+        k = norm_town(name)
+        if k in ca:
+            return ca[k]
+        m = the_manners()
+        if m is None or ca_new >= CA_TOWNS_A_RUN or (ca_new == 0 and not m.robots_ok(CA_URL)):
+            return []
+        got = ca_places(m, name)
+        looked += 1; ca_new += 1
+        if got is None:
+            return []          # no answer this time: asked again on a later run
+        ca[k] = got
+        if ca_new % 50 == 0:
+            cache.mkdir(parents=True, exist_ok=True)
+            ca_path.write_text(json.dumps(ca), encoding='utf-8')
+            print(f'  {ca_new} Canadian towns looked up', flush=True)
+        return got
+
+    points = parks = 0
+    for f, d in files.items():
+        for ref, fact in (d.get('parks') or {}).items():
+            if not isinstance(fact, dict) or fact.get('unofficial') or (fact.get('own_page') or {}).get('is') not in ('own', 'list-row'):
+                continue
+            loc = fact.get('location') or {}
+            if not loc.get('offsets') and R is not None and isinstance(loc.get('directions'), dict):
+                # a page read before the reader kept offsets: its saved directions sentences hold them (no page is read again)
+                sent = loc['directions'].get('sent')
+                said = sent if isinstance(sent, str) else ' '.join(str(x) for x in (sent or []) if isinstance(x, str))
+                try:
+                    found = R.offsets_in(said) if said else []
+                except Exception:  # noqa: BLE001
+                    found = []
+                if found:
+                    loc['offsets'] = found
+                    fact['location'] = loc
+            offs = [o for o in (loc.get('offsets') or []) if isinstance(o, dict) and o.get('of') and o.get('dir') in BEARING]
+            pin = (fact.get('pota') or {}).get('pin') or [None, None]
+            if not offs or pin[0] is None:
+                continue
+            area = str(fact.get('area') or '')
+            near = []
+            for o in offs[:2]:
+                try:
+                    km = float(o.get('km'))
+                except (TypeError, ValueError):
+                    continue
+                if area.startswith('US-'):
+                    cands = us_state(area[3:]).get(norm_town(o['of'])) or []
+                elif area == 'CA' or area.startswith('CA-'):
+                    cands = [(c[0], c[1]) for c in ca_town(o['of'])]
+                else:
+                    cands = []
+                cands = [c for c in cands if _km(c, pin) <= TOWN_MAX_KM]
+                if not cands:
+                    continue
+                town = min(cands, key=lambda c: _km(c, pin))
+                la, lo = offset_point(town[0], town[1], km, o['dir'])
+                far = _km((la, lo), pin)
+                if far > NEAR_MAX_KM:
+                    continue
+                near.append({'lat': la, 'lon': lo, 'within_km': max(3.0, round(0.5 * km, 1)),
+                             'from': f"{o.get('km')} km {o['dir']} of {o['of']} (town list)"[:60], 'km_from_pin': round(far, 1)})
+            if near != (loc.get('near') or []):
+                fact.setdefault('location', {})['near'] = near
+            if near:
+                points += len(near); parks += 1
+    if ca_new:
+        cache.mkdir(parents=True, exist_ok=True)
+        ca_path.write_text(json.dumps(ca), encoding='utf-8')
+    return points, parks, looked
+
+
+def run(out, scripts, today=None, poster=post_batch, allow=robots_allow, ca_manners=_ca_manners, ca_lookup=canada_lookup, towns=town_points):
     sys.path.insert(0, str(pathlib.Path(scripts).resolve()))
     import kpc_park_pages_rules as R
     today = today or datetime.date.today().isoformat()
@@ -252,11 +477,18 @@ def run(out, scripts, today=None, poster=post_batch, allow=robots_allow, ca_mann
             if got_one:
                 parks += 1
                 fact.setdefault('page', {})['read'] = max(str((fact.get('page') or {}).get('read') or ''), today)
+    town_line = ''
+    if towns:
+        try:
+            tp, tk, tl = towns(files, out, scripts)
+            town_line = f' Town points (approximate, from "so far from a town"): {tp} for {tk} park(s), {tl} town list request(s).'
+        except Exception as e:  # noqa: BLE001  (never holds up the address points)
+            town_line = f' Town points: not made this run ({type(e).__name__}: {str(e)[:80]}).'
     for f, d in files.items():
         tmp = f.with_name(f.name + '.tmp'); tmp.write_text(json.dumps(d, ensure_ascii=False), encoding='utf-8'); tmp.replace(f)
     matched = sum(1 for v in known.values() if v)
     print(f'Addresses turned into map points: {matched} of {len(known)} looked up ({len(want)} new this run, {asked} request(s)); '
-          f'{added} map point(s) added to {parks} park(s).', flush=True)
+          f'{added} map point(s) added to {parks} park(s).' + town_line, flush=True)
     return 0
 
 
