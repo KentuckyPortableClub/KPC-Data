@@ -1463,6 +1463,135 @@ def map_link_address(url):
     return clip(_cut_at_zip(a), 160)
 
 
+# 23 Nov 2026 5:10 AM (owner: "Yea go ahead" on Arkansas and Illinois). Both sites were opened first.
+# ARKANSAS GFC: every WMA page draws its own outline from a GeoJSON feature in the page's script
+#   (map.fitBounds(L.geoJson({"type": "Feature", "properties": {}, "geometry": {"type": "MultiPolygon", "coordinates": [[[[-91.89,
+#   35.04], ...). A point inside each of its largest parts is the page's own point ('outline in the page'). Only when the
+#   page holds ONE such outline (several = a map of many places: none is taken).
+# ILLINOIS DNR: the park's own figures are in the page as a field list, the name of each field on its own line and the
+#   value on the next ('Park Latitude' / '41.626', 'Park Longitude' / '-88.518', 'Park Address' / '13608 Fox Road',
+#   'Park City' / 'Yorkville', 'Park Zip' / '60560'). The other park's figures in the page's tracking data are never read.
+GEOM_RX = re.compile(r'"geometry"\s*:\s*\{\s*"type"\s*:\s*"(?:Multi)?Polygon"\s*,\s*"coordinates"\s*:\s*(?=\[)')
+
+
+def _ring_inside(lon, lat, ring):
+    n, inside = len(ring), False
+    j = n - 1
+    for i in range(n):
+        xi, yi, xj, yj = ring[i][0], ring[i][1], ring[j][0], ring[j][1]
+        if (yi > lat) != (yj > lat) and lon < (xj - xi) * (lat - yi) / ((yj - yi) or 1e-12) + xi:
+            inside = not inside
+        j = i
+    return inside
+
+
+def outline_points(html):
+    """[(lat, lon)]: a point inside each of the (up to 3) largest parts of the ONE outline the page's script carries."""
+    h = html or ''
+    ms = list(GEOM_RX.finditer(h))
+    if len(ms) != 1:
+        return []
+    try:
+        coords, _end = json.JSONDecoder().raw_decode(h, ms[0].end())
+    except ValueError:
+        return []
+    rings = []
+    def take(poly):
+        ring = poly[0] if poly and isinstance(poly[0], list) and poly[0] and isinstance(poly[0][0], list) else None
+        if not ring or len(ring) < 4:
+            return
+        try:
+            pts = [(float(c[0]), float(c[1])) for c in ring]
+        except (TypeError, ValueError, IndexError):
+            return
+        if any(not (-180 <= x <= 180 and -90 <= y <= 90) for x, y in pts):
+            return
+        a = cx = cy = 0.0
+        for k in range(len(pts) - 1):
+            cr = pts[k][0] * pts[k + 1][1] - pts[k + 1][0] * pts[k][1]
+            a += cr; cx += (pts[k][0] + pts[k + 1][0]) * cr; cy += (pts[k][1] + pts[k + 1][1]) * cr
+        if abs(a) < 1e-12:
+            return
+        cand = [(cx / (3 * a), cy / (3 * a)),
+                ((min(x for x, _ in pts) + max(x for x, _ in pts)) / 2, (min(y for _, y in pts) + max(y for _, y in pts)) / 2)]
+        for x, y in cand:
+            if _ring_inside(x, y, pts):
+                rings.append((abs(a), round(y, 6), round(x, 6)))
+                return
+    if isinstance(coords, list) and coords:
+        deep = coords[0]
+        if isinstance(deep, list) and deep and isinstance(deep[0], list) and deep[0] and isinstance(deep[0][0], list):
+            for poly in coords: take(poly)          # MultiPolygon
+        else:
+            take(coords)                            # Polygon
+    rings.sort(reverse=True)
+    return [(la, lo) for _a, la, lo in rings[:3]]
+
+
+_FIELD_NUM = re.compile(r'^-?\d{1,3}\.\d{2,8}$')
+
+
+def _field_value(lines, i, label_rx):
+    """The value of a field: what follows its name on the same line (the name may be printed twice: 'Park Zip Park Zip
+    60560'), else the next line that is not the name again."""
+    rest = lines[i]
+    for _ in range(3):
+        m = label_rx.match(rest)
+        if not m:
+            break
+        rest = rest[m.end():].strip()
+    if rest:
+        return rest
+    for nxt in lines[i + 1:i + 5]:
+        if not nxt or label_rx.fullmatch(nxt):
+            continue
+        return nxt
+    return ''
+
+
+LAT_FIELD = re.compile(r'(?i)(?:park\s+|site\s+)?latitude\s*:?(?=\s|$)')
+LON_FIELD = re.compile(r'(?i)(?:park\s+|site\s+)?longitude\s*:?(?=\s|$)')
+ADDR_FIELD = re.compile(r'(?i)(?:park|site|street|physical)\s+address\s*:?(?=\s|$)')
+CITY_FIELD = re.compile(r'(?i)(?:park\s+|site\s+)?city\s*:?(?=\s|$)')
+ZIP_FIELD = re.compile(r'(?i)(?:park\s+|site\s+)?zip(?:\s*code)?\s*:?(?=\s|$)')
+
+
+def field_latlon(text):
+    """(lat, lon, role) from a field list: 'Park Latitude' on one line, its number on the next, and the same for the
+    longitude. One of each only."""
+    lines = [ln.strip() for ln in (text or '').splitlines()]
+    lat, lon, park = set(), set(), False
+    for i, ln in enumerate(lines):
+        for rx, bag in ((LAT_FIELD, lat), (LON_FIELD, lon)):
+            if rx.match(ln):
+                v = _field_value(lines, i, rx)
+                if _FIELD_NUM.match(v):
+                    bag.add(float(v)); park = park or ln.lower().startswith(('park', 'site'))
+    if len(lat) == 1 and len(lon) == 1:
+        return next(iter(lat)), next(iter(lon)), 'park' if park else 'unknown'
+    return None
+
+
+def field_address(text, area):
+    """An address given as a field list ('Park Address' / '13608 Fox Road', 'Park City' / 'Yorkville', 'Park Zip' / '60560'):
+    one address, with the state of the park's own area. -> {'text', 'role', 'why'} or None."""
+    lines = [ln.strip() for ln in (text or '').splitlines()]
+    got = {}
+    for i, ln in enumerate(lines):
+        for key, rx in (('street', ADDR_FIELD), ('city', CITY_FIELD), ('zip', ZIP_FIELD)):
+            if rx.match(ln):
+                v = _field_value(lines, i, rx)
+                if v and len(v) <= 60:
+                    got.setdefault(key, set()).add(v)
+    if any(len(got.get(k) or ()) != 1 for k in ('street', 'city', 'zip')):
+        return None
+    street, city, zipc = (next(iter(got[k])) for k in ('street', 'city', 'zip'))
+    st = str(area or '')[3:5] if str(area or '').startswith('US-') else ''
+    if not (re.match(r'\d{1,6}[A-Za-z]?\s+\S', street) and re.fullmatch(r"[A-Za-z .'’-]{2,40}", city) and re.fullmatch(r'\d{5}(?:-\d{4})?', zipc) and st):
+        return None
+    return {'text': clip(f'{street}, {city}, {st} {zipc}', 160), 'role': 'park', 'why': 'a field list on the page (address, city, zip)'}
+
+
 def html_coords(html, text):
     """JSON-LD geo, meta tags, then a labelled line. Map-link points are added by the caller."""
     out = []
@@ -1498,6 +1627,11 @@ def html_coords(html, text):
             add(a, b, 'meta ICBM')
     for la, lo, where in page_data_points(html):      # 23 Nov: the page's own data
         add(la, lo, where)
+    for la, lo in outline_points(html):               # 23 Nov: the park's own outline drawn by the page (Arkansas GFC)
+        add(la, lo, 'outline in the page', 'park')
+    fl = field_latlon(text)                           # 23 Nov: a field list (Illinois DNR)
+    if fl:
+        add(fl[0], fl[1], 'field list', fl[2])
     for m in re.finditer(r'(Geographic Coordinates|GPS|Lat\s*/\s*Long)\s*[:\s]+(-?\d{1,3}\.\d+)\s*[,/]\s*(-?\d{1,3}\.\d+)',
                          text or '', re.I):
         add(m.group(2), m.group(3), 'labelled line', 'park')
@@ -2014,6 +2148,9 @@ def _location(main, pages, pota, area, pin):
     # 23 Nov: addresses under an address label (split lines, no street word), then the address a map link drives to
     have = {norm_written(a.get('text'))[:60] for a in loc['addresses']}
     extra = labelled_addresses(text)
+    fa = field_address(text, area)
+    if fa:
+        extra.append(fa)
     for p in pages:
         for url, _t in p.get('links') or []:
             a = map_link_address(url)
