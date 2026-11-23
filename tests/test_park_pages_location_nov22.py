@@ -76,6 +76,20 @@ check('a point printed as Latitude / Longitude lines (with N and W) is read', pt
 pts = [(round(c['lat'], 4), round(c['lon'], 4)) for c in R.html_coords('', 'Lat: 44.5012, Long: 80.2010 W')]
 check('Lat / Long with a W letter gives a west (negative) longitude', pts == [(44.5012, -80.201)])
 
+# 22 Nov 11:10 PM (owner: "look at American parks"): formats seen on real US pages
+pts = [(round(c['lat'], 4), round(c['lon'], 4)) for c in R.html_coords('', '| Latitude/Longitude: | 47.0234361031 -113.306023437 |')]
+check('a Latitude/Longitude table row with a space between the numbers is read', pts == [(47.0234, -113.306)])
+pts = [(round(c['lat'], 4), round(c['lon'], 4), c['role']) for c in R.html_coords('', 'GPS coordinates of parking lot\n41.693108\n-86.714900')]
+check('"GPS coordinates of parking lot" with the numbers on the next lines is a parking point', pts == [(41.6931, -86.7149, 'parking')])
+d = R.directions_of('Test Unit\nLocation 1 Driving directions:\n- From the intersection of US 2 and Test - Milan Road, travel North 7.5 miles.') or {}
+check('"Driving directions:" with the way on the next line is directions, and "US 2" is a road', 'US 2' in d.get('roads', []))
+d = R.directions_of('Open: Jan 1 to Dec 31\nDirections:\n8.1 miles north of Testlodge on Hwy 212.\n\nLocation Map') or {}
+check('"Directions:" alone on its line with the way below is directions', d.get('roads') == ['Hwy 212'] and d.get('towns') == ['Testlodge'])
+d = R.directions_of('Directions\nTest State Fish & Wildlife Area is located on State Rt 26 and can be reached from I-80.') or {}
+check('"State Rt 26" is a road', 'State Rt 26' in d.get('roads', []))
+check("an area manager's contact address is an office, not the park",
+      [a['role'] for a in R.addresses_in('Contact\nTest Person\nWildlife Area Manager\n360-555-0100\n4686 Test Road\nTestville, WA 98520')] == ['office'])
+
 tool = ROOT / '.github' / 'scripts' / 'pc' / 'kpc_reread_location.py'
 r = subprocess.run([sys.executable, '-I', str(tool), '--selftest'], capture_output=True, text=True)
 check('the PC tool marks only own pages with no address, point or directions for reading again, once',

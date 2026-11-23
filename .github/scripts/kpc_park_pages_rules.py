@@ -80,7 +80,8 @@ ZIP_RX = re.compile(r'\b(\d{5})(?:-\d{4})?\b')
 # 22 Nov 2026 (owner: 'dont think it is doing the best job'): a Canadian postal code ends an address the same way a ZIP does
 POSTAL_RX = re.compile(r'\b[ABCEGHJ-NPRSTVXY]\d[ABCEGHJ-NPRSTV-Z][ -]?\d[ABCEGHJ-NPRSTV-Z]\d\b')
 PO_RX = re.compile(r'\bP\.?\s*O\.?\s*Box\s+\d+\b', re.I)
-OFFICE_WORD = re.compile(r'field office|district office|ranger district|headquarters|supervisor.?s office|'
+OFFICE_WORD = re.compile(r'field office|district office|ranger district|headquarters|supervisor.?s office|area manager|'
+                         r'regional office|region \d+ office|\bcontact\b|'
                          r'\bmailing\b|p\.?\s*o\.?\s*box', re.I)
 PARK_ADDR = re.compile(r'park address|physical address|\bentrance\b|visitor cent(?:er|re)|\blocation\b', re.I)
 # 22 Nov 2026 (owner: "the address and directions seem very low"): the finders below replace the two short one-line
@@ -126,6 +127,7 @@ DIR_HEADS = {'directions', 'getting here', 'getting there', 'how to get there', 
              'how to get here', 'getting here and parking'}
 DIR_LINE = re.compile(r'(?im)^[ \t]*(?:directions|driving directions|getting there|how to get there|location|access|find it)'
                       r'[ \t]*:[ \t]*(\S.{15,})$')
+DIR_LABEL_NEXT = re.compile(r'(?im)\b(?:driving\s+)?directions\s*:\s*\|?\s*\n((?:[ \t]*[-•]?[ \t]*\S.*\n?){1,4})')
 DIR_SENT = re.compile(r'(?i)(?:\bfind it\b|\blocated\s+(?:about\s+|approximately\s+|just\s+)?(?:\d+(?:\.\d+)?|one|two|three|four|'
                       r'five|six|seven|eight|nine|ten|a half)\s+(?:-\s*)?(?:miles?|km|kilomet(?:er|re)s?)\b|\bà\s+(?:environ\s+)?\d+\s*km\b|\bfrom\s+(?:I-\d|US|U\.S\.|Interstate|Highway|Hwy|'
                       r'State Route|Route|SR|CR|County Road|the (?:town|city|village) of)|\b(?:take|follow|travel|drive|go|turn)\s+'
@@ -138,6 +140,8 @@ ROAD_RX = [
     re.compile(r'\b(?:Highway|Hwy|Route|Rte|County Road|CR|SR|FM|RM|FR|FSR|Co\.? Rd\.?)\s+[A-Z]?\d{0,5}[A-Z]?\b(?<=[0-9A-Z])'),
     re.compile(r'\b\d{1,4}(?:st|nd|rd|th)\s+(?:Ave|Avenue|St|Street|Rd|Road|Lane|Ln|Trail)\b'),
     re.compile(r'(?i)\b(?:route|autoroute)\s+\d{1,4}\b'),   # 22 Nov: Canada ('par la route 132', 'Autoroute 20')
+    re.compile(r'\b(?:US|SR|SH|CR|FM)\s+\d{1,4}[A-Z]?\b'),   # 'US 2', 'SR 20' (no hyphen)
+    re.compile(r'\b(?:(?:State|IL|Illinois|Indiana|Ohio|Iowa|Missouri|Kentucky|[A-Z]{2})\s+)?(?:Rt|Rte|Route)\.?\s+\d{1,4}[A-Z]?\b'),   # 'State Rt 26', 'Illinois Route 154'
     re.compile(r'\bI-\d{1,3}\b'),
     re.compile(r'\bexit\s+\d+\b', re.I),
     re.compile(r'\b(?:US|UT|SR|[A-Z]{2})-\d{1,4}\b'),
@@ -976,6 +980,12 @@ def directions_block(text):
     m = DIR_LINE.search(text or '')
     if m and not _menu_like(m.group(1)):
         return m.group(1)
+    # 22 Nov 11 PM: 'Location 1 Driving directions:' (WDFW) or 'Directions:' alone on its line (Montana FWP), the way on the next lines
+    for m in DIR_LABEL_NEXT.finditer(text or ''):
+        rows = [ln.strip(' -•\t') for ln in m.group(1).splitlines() if ln.strip(' -•\t')][:4]
+        block = ' '.join(rows)
+        if block and not _menu_like(block):
+            return block
     sents = []
     for m in DIR_SENT.finditer(text or ''):
         sent = _sentence(text, m.start())
@@ -1118,6 +1128,12 @@ def html_coords(html, text):
     for m in re.finditer(r'(Geographic Coordinates|GPS|Lat\s*/\s*Long)\s*[:\s]+(-?\d{1,3}\.\d+)\s*[,/]\s*(-?\d{1,3}\.\d+)',
                          text or '', re.I):
         add(m.group(2), m.group(3), 'labelled line', 'park')
+    # 22 Nov 11 PM (owner: "look at American parks"): Montana FWP prints 'Latitude/Longitude: 47.0234 -113.3060' (a space, often in a
+    # table row with |), Indiana DNR 'GPS coordinates of parking lot 41.693108 -86.714900' (numbers on the next lines)
+    for m in re.finditer(r'(?i)\b(Lat(?:itude)?\s*/\s*Long(?:itude)?|GPS(?:\s+coordinates?)?(?:\s+(?:of|for)\s+(?:the\s+)?([a-z ]{3,30}?))?)'
+                         r'\s*[:|]?\s*\|?\s*(-?\d{1,2}\.\d{3,})\s*[,/|\s]\s*\|?\s*(-?\d{1,3}\.\d{3,})', text or ''):
+        what = (m.group(2) or '').strip().lower()
+        add(m.group(3), m.group(4), 'labelled line', 'parking' if 'parking' in what else ('unknown' if what else 'park'))
     # 22 Nov 2026 (owner: "have you even look at the weblinks"): Tourism Saskatchewan and others print the point as two
     # labelled lines, 'Latitude: 51.8027° N' then 'Longitude: -106.4602° W'; a W or S letter makes the number negative
     for m in LATLON_LINES.finditer(text or ''):

@@ -65,7 +65,7 @@ def pull_one(R, M, fact):
     return loc, addr, pt, 'read'
 
 
-def run(out, scripts, workers=8, max_minutes=180, today=None, manners=None, again=False, canada=False):
+def run(out, scripts, workers=8, max_minutes=180, today=None, manners=None, again=False, canada=False, sites=None):
     sys.path.insert(0, str(pathlib.Path(scripts).resolve()))
     import kpc_park_pages_rules as R
     if manners is None:
@@ -83,9 +83,11 @@ def run(out, scripts, workers=8, max_minutes=180, today=None, manners=None, agai
                 continue
             if canada and not (str(fact.get('area') or '').upper().split('-')[0] == 'CA' and not (fact.get('location') or {}).get('addresses')):
                 continue          # --canada (22 Nov 10:39 PM): only Canadian parks still without an address (the finder now knows Canada)
-            if ref in done and not (again and not str(done[ref]).endswith('again')):
+            if ref in done and not ((again and not str(done[ref]).endswith('again')) or (sites and not str(done[ref]).endswith('sites'))):
                 continue          # --again (22 Nov, after the finders learnt Canada): a park still without a place is read once more
             host = R.host_of((fact.get('page') or {}).get('final_url') or '') or '?'
+            if sites and host not in sites:
+                continue          # --sites (22 Nov 11 PM): only the sites whose page format the finders just learnt
             todo.setdefault(host, []).append((f, ref))
     total = sum(len(v) for v in todo.values())
     print(f'Own pages to read for an address, map point or directions: {total} on {len(todo)} sites '
@@ -128,7 +130,7 @@ def run(out, scripts, workers=8, max_minutes=180, today=None, manners=None, agai
                     if pt and not conf.get('coords') and (fact.get('own_page') or {}).get('is') == 'own': conf['coords'] = pt
                     fact.setdefault('page', {})['read'] = today          # a newer read: the upload keeps it
                     fact['location_pulled'] = today
-                    done[ref] = today + (' again' if again else '')
+                    done[ref] = today + (' sites' if sites else ' again' if again else '')
                     counts['read'] += 1
                     counts['address'] += bool(old.get('addresses'))
                     counts['point'] += bool(old.get('coords'))
@@ -196,6 +198,7 @@ if __name__ == '__main__':
     ap.add_argument('--workers', type=int, default=8); ap.add_argument('--max-minutes', type=float, default=180)
     ap.add_argument('--again', action='store_true', help='read once more the parks still without an address, point or directions')
     ap.add_argument('--canada', action='store_true', help='only Canadian parks still without an address')
+    ap.add_argument('--sites', default='', help='only these sites (comma-separated host names), read once more')
     ap.add_argument('--selftest', action='store_true')
     a = ap.parse_args()
-    sys.exit(selftest() if a.selftest else run(a.out, a.scripts, a.workers, a.max_minutes, again=a.again, canada=a.canada))
+    sys.exit(selftest() if a.selftest else run(a.out, a.scripts, a.workers, a.max_minutes, again=a.again, canada=a.canada, sites={h.strip() for h in a.sites.split(',') if h.strip()} or None))
