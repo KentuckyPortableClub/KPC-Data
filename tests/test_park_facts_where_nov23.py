@@ -42,6 +42,6 @@ with tempfile.TemporaryDirectory() as t:
     check('the same point on another site is not counted with them', pts('US-9705') == [(42.466, -87.810)])
     check('park facts carries the offset, the county and the approximate point', pages['US-9705'].get('offsets') == [{'km': 3.2, 'dir': 'E', 'of': 'Shiocton'}]
           and pages['US-9705'].get('counties') == ['Outagamie'] and (pages['US-9705'].get('near') or [{}])[0].get('within_km') == 3.0)
-    check('the version says 7', PF.VERSION.startswith('kpc_park_facts 7'))
+    check('the version is 7 or later', int(PF.VERSION.split()[1]) >= 7)
 print('ALL PASS' if ok else 'SOME FAILED')
 sys.exit(0 if ok else 1)

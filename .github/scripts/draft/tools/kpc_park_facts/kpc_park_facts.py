@@ -18,7 +18,7 @@ Nothing is downloaded and no input file is changed. Standard library only.
 """
 import argparse, collections, csv, datetime, glob, json, os, re, sys, tempfile
 
-VERSION = 'kpc_park_facts 7 (2026-11-23)'
+VERSION = 'kpc_park_facts 8 (2026-11-23)'
 REF = re.compile(r'^[A-Z0-9]{1,4}-\d{4,5}$')
 AREA = re.compile(r'^(US|CA)-[A-Z]{2}$')
 
@@ -187,7 +187,7 @@ def _first(xs, n):
 _R = [None]
 
 
-def _agree(nm, pota_name):
+def _agree(nm, pota_name, others=None):
     """The reader's own name check (kpc_park_pages_rules.name_agreeing) on the saved heading and title; (None, None) when the
     reader's rules are not at hand or nothing agrees."""
     if _R[0] is None:
@@ -201,9 +201,19 @@ def _agree(nm, pota_name):
     if not _R[0] or not isinstance(nm, dict):
         return None, None
     try:
-        return _R[0].name_agreeing(nm, pota_name)
+        return _R[0].name_agreeing(nm, pota_name, others)
     except Exception:  # noqa: BLE001
         return None, None
+
+
+def _norm_name(s):
+    return ' '.join(re.sub(r'[^a-z0-9]+', ' ', str(s or '').lower()).split())
+
+
+def _others(area_names, own):
+    """The other parks' names of the area (a name two parks share stays in: the page could be either's)."""
+    k = _norm_name(own)
+    return {n for n, c in area_names.items() if n and (n != k or c > 1)}
 
 
 def read_pages(folder):
@@ -215,12 +225,19 @@ def read_pages(folder):
         with open(path, encoding='utf-8') as f:
             d = json.load(f)
         areas.append(d.get('area') or os.path.basename(path)[:-5])
+        # 23 Nov (ruling W-G5): the area's park names, so 'same words, another kind' never takes another park's own name
+        area_names = collections.Counter(_norm_name(((q or {}).get('pota') or {}).get('name')) for q in (d.get('parks') or {}).values() if isinstance(q, dict))
         for ref, p in (d.get('parks') or {}).items():
             if not REF.match(str(ref)) or not isinstance(p, dict):
                 continue
             pg, own, nm = p.get('page') or {}, p.get('own_page') or {}, p.get('name') or {}
             loc, man, st = p.get('location') or {}, p.get('manager') or {}, p.get('status_words') or {}
             pota = p.get('pota') or {}
+            oth = _others(area_names, pota.get('name'))
+            ag = _agree(nm, pota.get('name'), oth)
+            vs = ag[1] or nm.get('vs_pota')
+            if not ag[1] and vs == 'same-core' and _norm_name(nm.get('best') or nm.get('heading') or nm.get('title')) in oth:
+                vs = 'differs'      # 23 Nov: the page carries ANOTHER park's own name: that park's page
             out[ref] = {
                 '_pota': {'area': p.get('area') or d.get('area'), 'name': pota.get('name'), 'type': pota.get('type'),
                           'pin': pota.get('pin'), 'link': pota.get('link')},
@@ -229,8 +246,8 @@ def read_pages(folder):
                 'own_page': own.get('is'), 'unofficial': bool(p.get('unofficial')),
                 # 22 Nov 2026 (owner: "not doing a good job of confirming park names"): a heading that was site chrome hid the
                 # name; the part of the heading / title that agrees with POTA's name is used when there is one
-                'name_vs_pota': _agree(nm, pota.get('name'))[1] or nm.get('vs_pota'),
-                'name_on_page': (_agree(nm, pota.get('name'))[0] or nm.get('heading') or nm.get('title') or '')[:120],
+                'name_vs_pota': vs,
+                'name_on_page': (ag[0] or nm.get('heading') or nm.get('title') or '')[:120],
                 'sizes': [{'acres': s.get('acres'), 'as': s.get('as'), 'total': s.get('total'), 'clean': s.get('clean')}
                           for s in _first(p.get('sizes'), 3)],
                 # 22 Nov (owner: "address and directions would help matching"): each page point with its role (park, visitor
