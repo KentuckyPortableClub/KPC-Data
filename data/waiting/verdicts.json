@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-23T02:22Z",
+ "checked": "2026-11-23T08:11Z",
  "switched_on": false,
  "results": [
   {
@@ -288,19 +288,17 @@
    "why": [],
    "notes": [],
    "verdict": "PASS",
-   "fp": "4ba417fa3f9247a4",
-   "net": true
+   "fp": "c0fee643fa72eec1",
+   "net": false
   },
   {
    "path": "data/trails/index.json",
    "kind": "trails",
-   "why": [
-    "F-T4 trail index 139 -> 101 lines (under 80% of the saved list)"
-   ],
+   "why": [],
    "notes": [],
-   "verdict": "HOLD",
-   "fp": "b4b0a6da69cb08f2",
-   "net": true
+   "verdict": "PASS",
+   "fp": "508b7159e9dac52a",
+   "net": false
   },
   {
    "path": "data/trails/state-report.json",
