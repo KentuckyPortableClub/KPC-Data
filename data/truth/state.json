@@ -125,11 +125,12 @@
   "US-AZ": {
    "checked": 123,
    "counts": {
-    "agree": 15,
-    "handover_hints": 13,
+    "agree": 17,
+    "handover_hints": 11,
     "no_page": 0,
     "no_size": 62,
-    "off": 4,
+    "not_read": 0,
+    "off": 2,
     "ours_unknown": 23,
     "parks": 123,
     "retired": 0,
@@ -138,9 +139,9 @@
     "with_outline": 109
    },
    "left": 0,
-   "parks": 123,
-   "status": "queued",
-   "updated": "2026-11-09"
+   "parks": 119,
+   "status": "done",
+   "updated": "2026-11-22"
   },
   "US-CA": {
    "checked": 410,
@@ -1123,6 +1124,7 @@
   }
  },
  "hosts": {
+  "azstateparks.com": 1795478420.435771,
   "dep.nj.gov": 1795471462.1561859,
   "destateparks.com": 1795473632.1745288,
   "ksoutdoors.com": 1795475203.699929,
@@ -1132,6 +1134,8 @@
   "tnstateparks.com": 1795430345.0894592,
   "www.alapark.com": 1795435195.785201,
   "www.arcgis.com": 1795452861.2430022,
+  "www.azgfd.com": 1795478511.0647395,
+  "www.blm.gov": 1795478598.0712123,
   "www.destateparks.com": 1795473760.9565387,
   "www.fhwa.dot.gov": 1795476591.1508057,
   "www.floridastateparks.org": 1795436850.291285,
@@ -1149,52 +1153,50 @@
  },
  "last": {
   "areas": [
-   "US-NV"
+   "US-AZ"
   ],
   "manners": {
    "browser": 2,
-   "dropped_queued": 1,
    "errors": 0,
-   "for_person": 3,
+   "for_person": 4,
    "for_person_urls": [
     [
-     "https://www.nevadawilderness.org/bad_lands_wilderness_study_area",
+     "https://azstateparks.com/fort-verde",
      "HTTP 403 twice"
     ],
     [
-     "https://www.nevadawilderness.org/Bald_Mountain_Wilderness_trails",
+     "https://azstateparks.com/verde-river",
      "HTTP 403 twice"
     ],
     [
-     "https://www.outdoorsy.com/guide/high-rock-lake-wilderness",
+     "https://www.azgfd.com/location/robbins-butte-wildlife-area/",
      "HTTP 403 twice"
     ],
     [
-     "http://www.sangres.com/robots.txt",
-     "robots.txt answered unreachable: nothing fetched from www.sangres.com this run"
+     "https://www.azgfd.com/location/upper-verde-river-wildlife-area/",
+     "HTTP 403 twice"
     ]
    ],
-   "host_rule": 4,
-   "requests": 250,
-   "rested": 18,
-   "retry403": 3,
-   "robots": 8,
-   "robots_unreadable": 1,
-   "strikes": 6
+   "host_rule": 8,
+   "requests": 168,
+   "rested": 49,
+   "retry403": 4,
+   "robots": 0,
+   "strikes": 11
   },
   "stat": {
    "errors": 0,
-   "handover_hints": 8,
-   "no_size": 53,
-   "ours_unknown": 37,
-   "pages_read": 198,
-   "parks": 367,
+   "handover_hints": 11,
+   "no_size": 59,
+   "ours_unknown": 23,
+   "pages_read": 120,
+   "parks": 119,
    "retired": 0,
-   "size_agree": 69,
-   "size_off": 18,
-   "size_unsure": 21,
+   "size_agree": 17,
+   "size_off": 2,
+   "size_unsure": 5,
    "skipped_fresh": 0,
-   "with_outline": 198
+   "with_outline": 106
   },
   "when": "2026-11-22"
  },

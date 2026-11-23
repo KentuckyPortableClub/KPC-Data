@@ -422,12 +422,13 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM BOT park truth checker (2026-11-22): grade me: US-CO data/status/samples/park-truth-checker-US-CO-2026-11-22.md (+ review.md) — done; gate none; {"agree": 94, "handover_hints": 8, "no_page": 1, "no_size": 92, "not_read": 0, "off": 16, "ours_unknown": 15, "parks": 276, "retired": 0, "u · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45047915571)
 - FROM BOT park truth checker (2026-11-22): grade me: US-MT data/status/samples/park-truth-checker-US-MT-2026-11-22.md (+ review.md) — done; gate none; {"agree": 55, "handover_hints": 6, "no_page": 0, "no_size": 122, "not_read": 1, "off": 28, "ours_unknown": 7, "parks": 254, "retired": 0, "u · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45047915571)
 - FROM BOT park truth checker (2026-11-22): grade me: US-NV data/status/samples/park-truth-checker-US-NV-2026-11-22.md (+ review.md) — done; gate none; {"agree": 69, "handover_hints": 8, "no_page": 2, "no_size": 51, "not_read": 0, "off": 18, "ours_unknown": 37, "parks": 367, "retired": 0, "u · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45047915571)
-- FROM WAITING ROOM (held since 2026-11-20, 2 days): acres data/acres.json held: 430 rows without acres or a source (e.g. US-0042)
-- FROM WAITING ROOM (held since 2026-11-08, 14 days): trails data/trails/US-13626.json held: F-T3 length 16 -> 114 km (outside -25% / +50%)
-- FROM WAITING ROOM (held since 2026-11-08, 14 days): trails data/trails/US-9203.json held: F-T2 points 19246 -> 1822 (under half the saved line) · F-T3 length 138 -> 88 km (outside -25% / +50%)
-- FROM WAITING ROOM (held since 2026-11-09, 13 days): trails data/trails/index.json held: F-T4 trail index 139 -> 101 lines (under 80% of the saved list)
-- FROM WAITING ROOM (held since 2026-11-04, 18 days): trails data/trails/state-report.json held: F-T1 the line has no points
-- FROM WAITING ROOM (held since 2026-11-10, 12 days): truth data/truth/US-UT.json held: F-R2 6 OFF rows share the size 2,200,000.0 ac
-- FROM WAITING ROOM (held since 2026-11-10, 12 days): truth data/truth/US-WA.json held: F-R2 5 OFF rows share the size 564.0 ac · F-R3 157 of 188 sized parks are OFF (over half: a reading problem?)
-- FROM WAITING ROOM (held since 2026-11-22): key data/world-key/GB.json held: F-O3 retired parks still outlined: GB-3369
-- FROM WAITING ROOM (held since 2026-11-18, 4 days): key data/world-key/ZA.json held: F-O2 4 of 76 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks?
+- FROM BOT park truth checker (2026-11-23): grade me: US-AZ data/status/samples/park-truth-checker-US-AZ-2026-11-23.md (+ review.md) — done; gate none; {"agree": 17, "handover_hints": 11, "no_page": 0, "no_size": 62, "not_read": 0, "off": 2, "ours_unknown": 23, "parks": 123, "retired": 0, "u · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45047915571)
+- FROM WAITING ROOM (held since 2026-11-20, 3 days): acres data/acres.json held: 430 rows without acres or a source (e.g. US-0042)
+- FROM WAITING ROOM (held since 2026-11-08, 15 days): trails data/trails/US-13626.json held: F-T3 length 16 -> 114 km (outside -25% / +50%)
+- FROM WAITING ROOM (held since 2026-11-08, 15 days): trails data/trails/US-9203.json held: F-T2 points 19246 -> 1822 (under half the saved line) · F-T3 length 138 -> 88 km (outside -25% / +50%)
+- FROM WAITING ROOM (held since 2026-11-09, 14 days): trails data/trails/index.json held: F-T4 trail index 139 -> 101 lines (under 80% of the saved list)
+- FROM WAITING ROOM (held since 2026-11-04, 19 days): trails data/trails/state-report.json held: F-T1 the line has no points
+- FROM WAITING ROOM (held since 2026-11-10, 13 days): truth data/truth/US-UT.json held: F-R2 6 OFF rows share the size 2,200,000.0 ac
+- FROM WAITING ROOM (held since 2026-11-10, 13 days): truth data/truth/US-WA.json held: F-R2 5 OFF rows share the size 564.0 ac · F-R3 157 of 188 sized parks are OFF (over half: a reading problem?)
+- FROM WAITING ROOM (held since 2026-11-22, 1 days): key data/world-key/GB.json held: F-O3 retired parks still outlined: GB-3369
+- FROM WAITING ROOM (held since 2026-11-18, 5 days): key data/world-key/ZA.json held: F-O2 4 of 76 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks?

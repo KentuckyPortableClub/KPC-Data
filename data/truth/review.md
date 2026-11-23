@@ -45,7 +45,7 @@ Updated 2026-11-22. Tolerance 15% (R3). Score 0-8 = POTA pin + name + size + sou
 | US-ID | 362 | 232 | 3 | **6** | 77 | 124 | 18 | 2 | 0 | 18 |
 | US-MT | 254 | 246 | 55 | **28** | 32 | 122 | 7 | 6 | 0 | 7 |
 | US-NV | 367 | 198 | 69 | **18** | 21 | 51 | 37 | 8 | 0 | 13 |
-| US-AZ | 123 | 109 | 15 | **4** | 5 | 62 | 23 | 13 | 0 | 7 |
+| US-AZ | 123 | 109 | 17 | **2** | 5 | 62 | 23 | 11 | 0 | 7 |
 | US-NM | 123 | 105 | 20 | **10** | 10 | 53 | 11 | 4 | 0 | 8 |
 | US-CA | 410 | 391 | 83 | **32** | 78 | 185 | 12 | 42 | 0 | 18 |
 | US-OR | 440 | 384 | 51 | **30** | 46 | 229 | 26 | 28 | 0 | 19 |
@@ -2497,31 +2497,27 @@ Last · [www.nps.gov](https://www.nps.gov/pipe/learn/index.htm)
 
 ## US-AZ
 
-**Agree:** 15 parks: 0 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 15 agree (second agency).
+**Agree:** 17 parks: 0 agree (same agency: our outline came from the agency whose page we read, so this proves our copy, not the agency) · 17 agree (second agency).
 
 **Size more than 15% off (our outline vs the agency):**
 
-- US-6090 Beaver Dam Mountain Wilderness Area: ours 4,846 ac vs agency 17,600 acres (= 17,600 ac; 72% off) · cause: agency bigger: our outline may miss a tract · [www.blm.gov](https://www.blm.gov/visit/beaver-dam-mountains-wilderness) · “untains Wilderness | Utah View Map In Full Screen The Beaver Dam Mountains Wilderness now contains a total of 17,600 acres and is managed by the Bureau of Land ”
-- US-0179 San Bernardino National Wildlife Refuge: ours 1,208 ac vs agency 2,369 acre (= 2,369 ac; 49% off) · cause: agency bigger: our outline may miss a tract · [www.fws.gov](https://www.fws.gov/refuge/san-bernardino) · “o Laws & Regulations Contact Us Visit Us Activities Trails Rules & Policies Get Involved News Species Map The 2,369-acre refuge lies along the international bor”
-- US-0172 Bill Williams River National Wildlife Refuge: ours 4,372 ac vs agency 6,100 acres (= 6,100 ac; 28% off) · cause: agency bigger: our outline may miss a tract · [www.fws.gov](https://www.fws.gov/refuge/bill-williams-river) · “River and is one of the last ecologically functioning river habitats in the southwest United States. In 1993, 6,100 acres of the Havasu Lake National Wildlife R”
+- US-6090 Beaver Dam Mountain Wilderness Area: ours 7,304 ac vs agency 17,600 acres (= 17,600 ac; 58% off) · cause: agency bigger: our outline may miss a tract · [www.blm.gov](https://www.blm.gov/visit/beaver-dam-mountains-wilderness) · “untains Wilderness | Utah View Map In Full Screen The Beaver Dam Mountains Wilderness now contains a total of 17,600 acres and is managed by the Bureau of Land ”
 - US-0177 Kofa National Wildlife Refuge: ours 664,509 ac vs agency 547,719 acres (= 547,719 ac; 21% off) · cause: agency smaller: our outline may hold water, a lease or a neighbour tract · [www.fws.gov](https://www.fws.gov/refuge/kofa/about-us) · “area’s most notable mines, the King of Arizona gold mine. Wilderness Area Kofa Wilderness Designated in 1990 547,719 acres The Wilderness Act of 1964 created th”
 
 **Unsure (no clean total found; the nearest number is only a guess):**
 
-- US-0175 Cibola National Wildlife Refuge: ours 14,482 ac · cause: whole park compared (POTA lists it in 2 states: {'US-AZ': 10745, 'US-CA': 3737}) · [www.fws.gov](https://www.fws.gov/refuge/cibola)
+- US-0172 Bill Williams River National Wildlife Refuge: ours 4,945 ac · cause: no total-looking sentence: numbers found were parts or other units
+- US-0175 Cibola National Wildlife Refuge: ours 15,599 ac · cause: whole park compared (POTA lists it in 2 states: {'US-CA': 4854, 'US-AZ': 10745}) · [www.fws.gov](https://www.fws.gov/refuge/cibola)
 - US-0176 Imperial National Wildlife Refuge: ours 31,475 ac · cause: the agency figure may cover several states; our outline may be this state's share only · [www.fws.gov](https://www.fws.gov/refuge/imperial)
-- US-1053 Boyce Thompson Arboretum State Park: ours 295 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-4431 Prescott National Forest: ours 1,257,131 ac · cause: no total-looking sentence: numbers found were parts or other units
 - US-4432 Tonto National Forest: ours 2,866,817 ac · cause: no total-looking sentence: numbers found were parts or other units
 
 **Handover / closure hints (a person decides; nothing applied):**
 
-- US-0172 Bill Williams River National Wildlife Refuge · managed by: “Learn More About Us What We Do The National Wildlife Refuge System is a series of lands and waters owned and managed by the U.S. Fish and Wildlife Service. Wildlife conservation is at the heart of the” · owner now: U.S · [www.fws.gov](https://www.fws.gov/refuge/bill-williams-river)
-- US-0173 Buenos Aires National Wildlife Refuge · managed by: “Learn More About Us What We Do The National Wildlife Refuge System is a series of lands and waters owned and managed by the U.S. Fish and Wildlife Service. Wildlife conservation is at the heart of the” · owner now: U.S · [www.fws.gov](https://www.fws.gov/refuge/buenos-aires)
+- US-0173 Buenos Aires National Wildlife Refuge · managed by: “olunteer opportunities Services The National Wildlife Refuge System is a series of lands and waters owned and managed by the U.S. Fish and Wildlife Service. Wildlife conservation is at the heart of th” · owner now: U.S · [www.fws.gov](https://www.fws.gov/refuge/buenos-aires)
 - US-0174 Cabeza Prieta National Wildlife Refuge · managed by: “ss areas can be part of national wildlife refuges, national parks, national forests or public lands managed by the Bureau of Land Management. Learn more about wilderness area , Cabeza Prieta National ” · owner now: Bureau of Land Management · [www.fws.gov](https://www.fws.gov/refuge/cabeza-prieta)
 - US-0176 Imperial National Wildlife Refuge · managed by: “ss areas can be part of national wildlife refuges, national parks, national forests or public lands managed by the Bureau of Land Management. Learn more about wilderness area and named it “Imperial Re” · owner now: Bureau of Land Management · [www.fws.gov](https://www.fws.gov/refuge/imperial/about-us)
-- US-0178 Leslie Canyon National Wildlife Refuge · managed by: “Learn More About Us What We Do The National Wildlife Refuge System is a series of lands and waters owned and managed by the U.S. Fish and Wildlife Service. Wildlife conservation is at the heart of the” · owner now: U.S · [www.fws.gov](https://www.fws.gov/refuge/leslie-canyon)
-- US-0179 San Bernardino National Wildlife Refuge · managed by: “Learn More About Us What We Do The National Wildlife Refuge System is a series of lands and waters owned and managed by the U.S. Fish and Wildlife Service. Wildlife conservation is at the heart of the” · owner now: U.S · [www.fws.gov](https://www.fws.gov/refuge/san-bernardino)
+- US-0179 San Bernardino National Wildlife Refuge · managed by: “- National Parks and Federal Recreation Lands Pass covers recreation opportunities on public lands managed by four Department of the Interior agencies – the National Park Service, Fish and Wildlife Se” · owner now: Department of Agriculture’s U.S · [www.fws.gov](https://www.fws.gov/refuge/san-bernardino)
 - US-0911 Casa Grande Ruins National Monument · managed by: “pecial Events Check the calender to catch a special event. Online Park Bookstore The park bookstore is operated by Western National Parks. Virtually visit and shop online! Plants of the Sonoran Desert” · owner now: Western National Parks · [www.nps.gov](https://www.nps.gov/cagr/index.htm)
 - US-0917 Chiricahua National Park · transfer: “with adobe and board-and-batten walls. Two years after Neil finished the house, the Forest Service transferred him to Flagstaff. The house experienced another phase of a building when Neil and Emma's ” · owner now: Flagstaff · [www.nps.gov](https://www.nps.gov/chir/learn/historyculture/faraway-ranch.htm)
 - US-0972 Wupatki National Monument · managed by: “ia A selection of Images and a virtual tour of Wupatki National Monument. Park Store The Park Store is managed by Western National Parks Association. Education Review lesson plans and field trip infor” · owner now: Western National Parks Association · [www.nps.gov](https://www.nps.gov/wupa/learn/index.htm)
