@@ -262,6 +262,34 @@ def name_match(park_name, wname):
     return 'part' if key and hit * 2 >= len(key) and hit else 'none'
 
 
+_READER = [None]
+
+
+def reader_official(host):
+    """23 Nov 2026 (owner: "U sure the not offical pages are not offical"): ONE list of official sites. The page reader's
+    list (kpc_park_pages_rules: its named sites and its government address rules) is asked too, so a site the reader reads as
+    the agency's own is not 'other site' here. -> 'named' (on the reader's own list of agencies' sites), 'rule' (a government
+    address the reader knows: a county, a town), or ''. With the reader missing, '' (this tool then answers as before)."""
+    if _READER[0] is None:
+        here = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', '..'))
+        if here not in sys.path:
+            sys.path.insert(0, here)
+        try:
+            import kpc_park_pages_rules as RR
+            _READER[0] = RR
+        except Exception:  # noqa: BLE001
+            _READER[0] = False
+    RR = _READER[0]
+    if not RR or not host:
+        return ''
+    try:
+        if RR.official_site(host):
+            return 'named'
+        return 'rule' if RR.official_host('https://' + host + '/x') else ''
+    except Exception:  # noqa: BLE001
+        return ''
+
+
 def read_link(link, park_name='', pota_type='', area='', areas=()):
     """Everything one link says, with no network: a dict of the report's columns (page kind is finished later, once shared links are known)."""
     pu, host, segs = split_link(link)
@@ -273,7 +301,11 @@ def read_link(link, park_name='', pota_type='', area='', areas=()):
     if ag is None and host.count('.') >= 2 and host.split('.', 1)[1] in AGENCY and host.split('.', 1)[1] not in ('in.gov', 'tn.gov', 'nj.gov', 'nh.gov', 'mass.gov', 'maine.gov', 'canada.ca', 'ontario.ca'):
         ag = AGENCY[host.split('.', 1)[1]]
     r['agency'] = ag[0] if ag else host
-    r['site'] = 'agency (known)' if ag else 'not an agency site' if NOT_AGENCY.search(host) else 'government site' if GOV.search(host) else 'other site'
+    ro = '' if ag else reader_official(host)
+    # 23 Nov: a site on the reader's own list of agencies' sites wins over the not-an-agency list (the owner's 21 Nov ruling
+    # put Tourism Saskatchewan, novascotia.com and TravelOK on it: the province or state runs its parks' pages there)
+    r['site'] = ('agency (known)' if ag else 'government site' if ro == 'named' else 'not an agency site' if NOT_AGENCY.search(host)
+                 else 'government site' if GOV.search(host) or ro else 'other site')
     r['norm'] = host + '/' + '/'.join(segs).lower() + ('?' + pu.query.lower() if pu.query else '')
     if ag and ag[1] and area and area.startswith(('US-', 'CA-')): r['state_check'] = 'same state' if ag[1] == area or ag[1] in areas else f'OTHER STATE ({ag[1]})'
     got = id_rules(host, pu, segs)
