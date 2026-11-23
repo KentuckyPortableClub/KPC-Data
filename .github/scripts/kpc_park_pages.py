@@ -355,6 +355,67 @@ def _family_names_all(text, refs, area_parks):
     return True
 
 
+LIST_RULE = W.LIST_RULE   # 23 Nov: a list / shared page is followed to the park's own link, or its row is read; older reads are done again
+
+
+def _park_link(links, pota_name, list_url):
+    """23 Nov (owner: "the ones with several parks can we get on the right page?"): on a page many parks share, the ONE link
+    whose words are this park's name (same, or same core) on an official site. Two different links naming it: none (unsure)."""
+    hits = {}
+    base = norm_url(list_url)
+    for link, words in links or []:
+        if not link or not words or not str(link).startswith(('http://', 'https://')):
+            continue
+        n = norm_url(link)
+        if n == base or not R.official_host(link) or R.is_agency_home(link):
+            continue
+        if R.compare_names(' '.join(str(words).split()), pota_name) in ('same', 'same-core'):
+            hits.setdefault(n, link)
+    return next(iter(hits.values())) if len(hits) == 1 else ''
+
+
+def _list_row(text, ref, refs_here, area_parks):
+    """23 Nov: a list page with no link of its own (a table of every WMA): the one line that names this park, and the lines
+    under it up to the next park of the list (at most 2). The name, the words of the row and nothing else. Returns
+    (row text, the name as the page writes it) or ('', '') when the park is named on no line, or on more than one."""
+    core = R.name_core((area_parks.get(ref) or {}).get('name'))
+    if not text or not core or len(core) < 4:
+        return '', ''
+    words = core.split()
+    rx = re.compile(r'(?<![a-z0-9])' + r'[^a-z0-9]+'.join(re.escape(w) for w in words) + r'(?![a-z0-9])', re.I)
+    others = []
+    for r in refs_here or []:
+        if r == ref:
+            continue
+        oc = R.name_core((area_parks.get(r) or {}).get('name'))
+        if oc and oc != core:
+            others.append(re.compile(r'(?<![a-z0-9])' + r'[^a-z0-9]+'.join(re.escape(w) for w in oc.split()) + r'(?![a-z0-9])', re.I))
+    lines = [ln.strip() for ln in text.splitlines()]
+    def names_other(ln, own_span=None):
+        """Another park of the list is named on this line. A shorter name that sits inside ours does not count
+        (Blue Ridge inside Blue Ridge North); a longer one that holds ours means the line is the other park's."""
+        for o in others:
+            for m in o.finditer(ln):
+                if own_span and own_span[0] <= m.start() and m.end() <= own_span[1]:
+                    continue
+                return True
+        return False
+    hits = []
+    for i, ln in enumerate(lines):
+        m = rx.search(ln)
+        if m and not names_other(ln, (m.start(), m.end())):
+            hits.append((i, m.group(0)))
+    if len(hits) != 1:
+        return '', ''
+    i, written = hits[0]
+    row = [lines[i]]
+    for ln in lines[i + 1:i + 3]:
+        if not ln or names_other(ln) or rx.search(ln):
+            break
+        row.append(ln)
+    return '\n'.join(row), written
+
+
 def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_only=None,
                max_requests=1500, max_per_park=R.MAX_PER_PARK, max_parks=None, on_park=None,
                refresh_days=W.REFRESH_DAYS, deadline=None, out_dir=None, state_path=None,
@@ -525,6 +586,8 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
         prev = (state.get('read') or {}).get(ref) or {}
         age = W.age_days(prev.get('date'), today) if prev.get('date') else None
         fresh = bool(url and prev.get('fingerprint') and prev.get('url') == url and (age is None or age < refresh_days))
+        if len((groups.get(area) or {}).get(norm_url(url), [ref])) >= 2 and prev.get('list_rule') != LIST_RULE:
+            fresh = False   # 23 Nov: read before shared pages were followed to the park's own link
         if fresh:
             out[area][ref] = {'ref': ref, 'unchanged': True, 'page': {'fingerprint': prev.get('fingerprint'),
                              'kind': prev.get('kind'), 'read': today, 'seen': today}, 'questions': []}
@@ -580,7 +643,8 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
             done += 1
             save_progress(index)
             continue
-        if prev.get('fingerprint') and prev.get('url') == url and prev.get('fingerprint') == main.get('fingerprint'):
+        if (prev.get('fingerprint') and prev.get('url') == url and prev.get('fingerprint') == main.get('fingerprint')
+                and (len((groups.get(area) or {}).get(norm_url(url), [ref])) < 2 or prev.get('list_rule') == LIST_RULE)):
             # same text: keep the old facts, no new question
             out[area][ref] = {'ref': ref, 'unchanged': True, 'page': {'fingerprint': main.get('fingerprint'),
                              'kind': prev.get('kind') or main.get('kind'), 'read': today, 'seen': today}, 'questions': []}
@@ -598,12 +662,34 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
             kind = main.get('kind')
             text = main.get('text') or ''
             mates = [r for r in (groups.get(area) or {}).get(norm_url(url), []) if r != ref]
-            own_is, own_why = _own_is(url, (groups.get(area) or {}).get(norm_url(url), [ref]), parks, text, row['name'])
+            refs_here = (groups.get(area) or {}).get(norm_url(url), [ref])
+            own_is, own_why = _own_is(url, refs_here, parks, text, row['name'])
+            followed, listed_row, list_fp = '', '', main.get('fingerprint') or ''
+            if own_is in ('list', 'shared') and kind in ('html', 'pdf'):
+                # 23 Nov: get on the park's own page. The one link naming this park is read in place of the list (one request)
+                pick = _park_link(main.get('links'), row['name'], url)
+                if pick and used < max_per_park and budget_left():
+                    got = fetch(pick)
+                    used += 1
+                    if got is None or is_deadline(got):
+                        if time_up() or is_deadline(got):
+                            return stop('minutes', index)
+                    elif got.get('kind') in ('html', 'pdf') and (got.get('text') or '').strip():
+                        main, pages, kind, text, followed = got, [got], got.get('kind'), got.get('text') or '', pick
+                        own_is, own_why = 'own', 'followed from the page the parks share: its link names this park'
+                        mates = []
+                if not followed and own_is == 'list':
+                    # no link of its own: the list's one row that names this park
+                    rtxt, written = _list_row(text, ref, refs_here, parks)
+                    if rtxt:
+                        listed_row = rtxt
+                        pages = [dict(main, text=rtxt, title='', heading=written, og='', jsonld='', links=[], html='')]
+                        own_is, own_why = 'list-row', 'the page lists many parks; only the one row naming this park is read'
             read_blocks = own_is not in ('agency-home', 'list') and kind not in ('refused', 'resting', 'dead', 'script-built')
             fam = main.get('family') or {}
             # one facts page, one directions page, one map. Never past max_per_park.
-            if read_blocks and used < max_per_park and budget_left():
-                extra = _extra_urls(url, main, fam)
+            if read_blocks and own_is != 'list-row' and used < max_per_park and budget_left():
+                extra = _extra_urls(followed or url, main, fam)
                 for eu, role in extra:
                     if used >= max_per_park or not budget_left():
                         break
@@ -642,10 +728,18 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
             fact['evidence_draft'] = drafts[0] if drafts else None
             fact['evidence_drafts'] = drafts
             out[area][ref] = fact
+            if followed:
+                fact['asked']['followed'] = followed
+            if listed_row:
+                fact['asked']['row'] = R.clip(listed_row)
             state['read'][ref] = {'url': url, 'fingerprint': main.get('fingerprint') or '', 'date': today,
                                   'kind': fact['page']['kind'], 'final': main.get('final')}
-            if main.get('fingerprint'):
-                state['fingerprints'][norm_url(url)] = main.get('fingerprint')
+            if len(refs_here) >= 2:
+                state['read'][ref]['list_rule'] = LIST_RULE
+            if followed:
+                state['read'][ref]['followed'] = followed
+            if list_fp:
+                state['fingerprints'][norm_url(url)] = list_fp   # the page POTA links (the list), never the followed one
         except Exception as err:  # noqa: BLE001  19 Nov 8 PM: one bad page never stops the other parks
             # nothing is saved for this park, so the next run reads it again; the run says which park and why
             out[area].pop(ref, None)

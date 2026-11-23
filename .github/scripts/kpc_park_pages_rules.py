@@ -354,6 +354,54 @@ OFFICIAL_SITES = {
     'outdooralabama.com': 'Alabama', 'alabamaforeverwild.com': 'Alabama', 'destateparks.com': 'Delaware',
     'indianamuseum.org': 'Indiana', 'ndow.org': 'Nevada', 'nmhistoricsites.org': 'New Mexico', 'riparks.com': 'Rhode Island',
     'ag.ndsu.edu': 'North Dakota (Forest Service)', 'tva.com': 'Tennessee Valley Authority',
+    # 23 Nov (owner: "U sure the not offical pages are not offical"): governments and their own sites found among the 1,440
+    # 'not official' links. Each is the government, its agency or district, or a statutory body that runs the place.
+    'rigov.sharepoint.com': 'Rhode Island', 'saskatchewan.ca': 'Saskatchewan', 'quebec.ca': 'Quebec',
+    'tfsweb.tamu.edu': 'Texas A&M Forest Service', 'cpw.widen.net': 'Colorado Parks and Wildlife',
+    'usfs-public.app.box.com': 'US Forest Service', 'mackinacparks.com': 'Michigan (Mackinac State Historic Parks)',
+    'iowastateparks.reserveamerica.com': 'Iowa (state park bookings)', 'rhodeislandstateparks.reserveamerica.com': 'Rhode Island (state park bookings)',
+    'papionrd.org': 'Papio-Missouri River NRD', 'lpnnrd.org': 'Lower Platte North NRD', 'coloradoriverdistrict.org': 'Colorado River District',
+    'clevelandmetroparks.com': 'Cleveland Metroparks', 'montgomeryparks.org': 'Montgomery Parks (M-NCPPC)',
+    'ccprc.com': 'Charleston County Park and Recreation Commission', 'quincyparkdistrict.com': 'Quincy Park District',
+    'aacounty.org': 'Anne Arundel County', 'yorkcountygov.com': 'York County', 'grandcountyutah.net': 'Grand County',
+    'bchydro.com': 'BC Hydro (crown corporation)', 'wascana.ca': 'Provincial Capital Commission (Saskatchewan)',
+    'parcjeandrapeau.com': 'Montreal (Societe du parc Jean-Drapeau)', 'escarpment.ca': 'Niagara Escarpment Commission',
+    'gault.mcgill.ca': 'McGill University (owner)',
+    # agencies' own ArcGIS sites (the organisation is the agency)
+    'maine.maps.arcgis.com': 'Maine', 'public-lands-scdnr.hub.arcgis.com': 'South Carolina DNR', 'gbp-blm-egis.hub.arcgis.com': 'BLM',
+    'blm-egis.maps.arcgis.com': 'BLM', 'midnr.maps.arcgis.com': 'Michigan DNR', 'nhfg.maps.arcgis.com': 'New Hampshire Fish and Game',
+    'wadnr.maps.arcgis.com': 'Washington DNR', 'nhdfl.maps.arcgis.com': 'New Hampshire Forests and Lands',
+    'iowadnr.maps.arcgis.com': 'Iowa DNR', 'dnrec.maps.arcgis.com': 'Delaware DNREC', 'utahdnr.maps.arcgis.com': 'Utah DNR',
+    'wa-rco.maps.arcgis.com': 'Washington Recreation and Conservation Office', 'data-usfs.hub.arcgis.com': 'US Forest Service',
+    'ncc-gis.maps.arcgis.com': 'National Capital Commission',
+    # Ontario conservation authorities (statutory)
+    'abca.ca': 'Ontario CA', 'ssmrca.ca': 'Ontario CA', 'mvca.on.ca': 'Ontario CA', 'crca.ca': 'Ontario CA',
+    'lowerthames-conservation.on.ca': 'Ontario CA', 'nation.on.ca': 'Ontario CA', 'kawarthaconservation.com': 'Ontario CA',
+    'mvc.on.ca': 'Ontario CA', 'nbmca.ca': 'Ontario CA',
+    # Canada: cities, towns, counties, regional districts and MRCs that run their own parks
+    'barrie.ca': 'Barrie', 'ottawa.ca': 'Ottawa', 'laval.ca': 'Laval', 'gatineau.ca': 'Gatineau', 'markham.ca': 'Markham',
+    'mirabel.ca': 'Mirabel', 'longueuil.quebec': 'Longueuil', 'victoriaville.ca': 'Victoriaville', 'terrebonne.ca': 'Terrebonne',
+    'rawdon.ca': 'Rawdon', 'fredericton.ca': 'Fredericton', 'saanich.ca': 'Saanich', 'oakville.ca': 'Oakville',
+    'blainville.ca': 'Blainville', 'mapleridge.ca': 'Maple Ridge', 'chilliwack.com': 'Chilliwack', 'cvrd.ca': 'Cowichan Valley Regional District',
+    'rdno.ca': 'Regional District of North Okanagan', 'vaughan.ca': 'Vaughan', 'oakbay.ca': 'Oak Bay', 'oshawa.ca': 'Oshawa',
+    'victoria.ca': 'Victoria', 'beaconsfield.ca': 'Beaconsfield', 'mississauga.ca': 'Mississauga', 'st-hyacinthe.ca': 'Saint-Hyacinthe',
+    'chapleau.ca': 'Chapleau', 'stalbert.ca': 'St. Albert', 'stratford.ca': 'Stratford', 'brampton.ca': 'Brampton',
+    'candiac.ca': 'Candiac', 'dnv.org': 'District of North Vancouver', 'sherbrooke.ca': 'Sherbrooke', 'pittmeadows.ca': 'Pitt Meadows',
+    'sainte-therese.ca': 'Sainte-Therese', 'wellington.ca': 'County of Wellington', 'drummondville.ca': 'Drummondville',
+    'strathcona.ca': 'Strathcona County', 'summerside.ca': 'Summerside', 'aylmer.ca': 'Aylmer', 'petawawa.ca': 'Petawawa',
+    'penticton.ca': 'Penticton', 'newwestcity.ca': 'New Westminster', 'nicolet.ca': 'Nicolet', 'saskatoon.ca': 'Saskatoon',
+    'lakecountry.bc.ca': 'Lake Country', 'reddeer.ca': 'Red Deer', 'valleyfield.ca': 'Salaberry-de-Valleyfield',
+    'saguenay.ca': 'Saguenay', 'bromont.net': 'Bromont', 'eastman.quebec': 'Eastman', 'grandmanannb.ca': 'Grand Manan',
+    'riverhurst.ca': 'Riverhurst', 'abercorn.ca': 'Abercorn', 'armagh.ca': 'Armagh', 'hanwell.nb.ca': 'Hanwell',
+    'town.ststephen.nb.ca': 'St. Stephen', 'gov.cornwallis.mb.ca': 'Cornwallis', 'thorhildcounty.com': 'Thorhild County',
+    'prescott-russell.on.ca': 'Prescott and Russell', 'mrcdrummond.qc.ca': 'MRC de Drummond', 'mrcbhs.ca': 'MRC Beauharnois-Salaberry',
+    'morinheights.com': 'Morin-Heights', 'villededonnacona.com': 'Donnacona', 'villestoneham.com': 'Stoneham-et-Tewkesbury',
+    'villenewrichmond.com': 'New Richmond', 'cantondegore.qc.ca': 'Gore', 'cantonshefford.qc.ca': 'Shefford',
+    'saint-lin-laurentides.com': 'Saint-Lin-Laurentides', 'st-amable.qc.ca': 'Saint-Amable', 'lacducerf.ca': 'Lac-du-Cerf',
+    'mont-carmel.org': 'Mont-Carmel', 'armstrong.civicweb.net': 'Armstrong',
+    # Quebec ZECs: the body the province names to run the territory
+    'zecoieblanche.com': 'ZEC (Quebec)', 'zecpetitecascapedia.com': 'ZEC (Quebec)', 'zecbonaventure.com': 'ZEC (Quebec)',
+    'zecforestville.reseauzec.com': 'ZEC (Quebec)', 'zecmadeleine.com': 'ZEC (Quebec)',
     # Land trusts that own and run the place
     'natureconservancy.ca': 'land trust (owner)', 'naturetrust.nb.ca': 'land trust (owner)', 'islandnaturetrust.ca': 'land trust (owner)',
     'nature.org': 'land trust (owner)', 'triangleland.org': 'land trust (owner)',
@@ -376,7 +424,16 @@ def official_host(url):
     if gov_of(h) or official_site(h):
         return True
     b = base_host(h)
+    if LOCAL_GOV.search(b):
+        return True
     return b.endswith('.gov') or b.endswith('.mil') or b.endswith('.gc.ca') or '.gov.' in b
+
+
+# 23 Nov: US county / city / town addresses (co.<name>.<st>.us, ci.<name>.<st>.us ...) and Quebec towns
+# (ville.<name>.qc.ca, municipalite...qc.ca, ville-<name>.qc.ca) are their governments.
+LOCAL_GOV = re.compile(r'(^|\.)(co|ci|city|town|county|twp|township|vil|village|cityof|townof)\.[a-z0-9-]+\.[a-z]{2}\.us$'
+                       r'|(^|\.)(ville|municipalite|canton)[.-][a-z0-9.-]+\.qc\.ca$'
+                       r'|(^|\.)municipalite-[a-z0-9-]+\.(qc\.)?ca$')
 
 
 def split_urls(field):

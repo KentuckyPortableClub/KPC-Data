@@ -6,6 +6,7 @@ No network. A list is JSON only: unknown keys are ignored, and nothing in a list
 import csv, datetime, io, json, pathlib
 
 REFRESH_DAYS = 30
+LIST_RULE = 1                  # 23 Nov: a page many parks share is followed to each park's own link (or its row is read)
 RESTING_RETRY_DAYS = 1         # 22 Nov: a page that answered 'resting' (busy, a server error, an empty answer) is tried again the next day
 CONFIRMED_REFRESH_DAYS = 365   # 21 Nov: a park already confirmed by its agency id is re-read once a year (an agency may change its page)
 LIST_MAX = 5000
@@ -139,8 +140,15 @@ def build_worklist(areas, choose, keys, lists, refs, state, today, areas_only=No
         if isinstance(ref, str):
             add(ref, 1, 'refs file')
 
-    tier2, tier3, tier4, tier4r, tier5, tier6 = [], [], [], [], [], []
+    tier2, tier3, tier4, tier4r, tier4l, tier5, tier6 = [], [], [], [], [], [], []
     read = state.get('read') or {}
+    # 23 Nov: how many parks share each page. A park on a shared page read before LIST_RULE is read once more.
+    _n = lambda u: (u or '').split('#')[0].rstrip('/').lower()
+    sharing = {}
+    for ref, (area, row) in known.items():
+        u = _n(choose(ref, row) or '')
+        if u:
+            sharing[u] = sharing.get(u, 0) + 1
     for ref, (area, row) in known.items():
         if ref in used:
             continue
@@ -163,6 +171,8 @@ def build_worklist(areas, choose, keys, lists, refs, state, today, areas_only=No
             tier3.append(ref)
         elif not when:
             tier4.append(ref)
+        elif sharing.get(_n(url), 0) >= 2 and prev.get('list_rule') != LIST_RULE:
+            tier4l.append(ref)   # 23 Nov: read before shared pages were followed to the park's own link
         elif prev.get('kind') == 'resting' and age is not None and age >= RESTING_RETRY_DAYS:
             tier4r.append(ref)   # 22 Nov: 'resting' means try later, not "read": it does not wait refresh_days
         elif age is not None and age >= refresh_days:
@@ -177,6 +187,8 @@ def build_worklist(areas, choose, keys, lists, refs, state, today, areas_only=No
         add(ref, 4, 'never read')
     for ref in sorted(tier4r, key=by_old):
         add(ref, 4, 'resting last time: tried again')
+    for ref in sorted(tier4l, key=by_busy):
+        add(ref, 4, 'shared page: now read on its own link')
     for ref in sorted(tier5, key=by_old):
         add(ref, 5, f'older than {refresh_days} days')
     for ref in sorted(tier6, key=by_old):
