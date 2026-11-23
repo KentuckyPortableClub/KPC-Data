@@ -81,7 +81,7 @@ def run(out, scripts, workers=8, max_minutes=180, today=None, manners=None, agai
         for ref, fact in (d.get('parks') or {}).items():
             if not wants_place(fact):
                 continue
-            if canada and not (str(fact.get('area') or '').startswith('CA-') and not (fact.get('location') or {}).get('addresses')):
+            if canada and not (str(fact.get('area') or '').upper().split('-')[0] == 'CA' and not (fact.get('location') or {}).get('addresses')):
                 continue          # --canada (22 Nov 10:39 PM): only Canadian parks still without an address (the finder now knows Canada)
             if ref in done and not (again and not str(done[ref]).endswith('again')):
                 continue          # --again (22 Nov, after the finders learnt Canada): a park still without a place is read once more
