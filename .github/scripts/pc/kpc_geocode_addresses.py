@@ -87,7 +87,11 @@ CA_URL = 'https://geolocator.api.geo.ca/'
 def canada_address(text):
     """A Canadian civic address (a number first, a province and a postal code at the end), or None. Never a mailbox."""
     t = ' '.join(str(text or '').replace('\n', ', ').split())
-    if re.search(r'(?i)\b(?:p\.?\s*o\.?\s*box|box\s+\d|c\.?\s*p\.?\s+\d|case postale)', t) or not re.match(r'^\d', t):
+    # 22 Nov 11:20 PM: Ontario prints 'c/o X Provincial Park PO Box 252 4853 Highway 11/17 Town, ON P0T 1W0': the mailbox part is
+    # taken out and the street address kept (a text that is ONLY a mailbox still never goes)
+    t = re.sub(r'(?i)\b(?:p\.?\s*o\.?\s*box|c\.?\s*p\.?|case postale)\s+\d+\b,?', ' ', t)
+    t = _clean(t)
+    if re.search(r'(?i)\bbox\s+\d', t) or not re.match(r'^\d', t):
         return None
     return t if CA_TAIL.match(t) else None
 
@@ -191,7 +195,7 @@ def run(out, scripts, today=None, poster=post_batch, allow=robots_allow, ca_mann
                 if parts and a['text'] not in known:
                     want.setdefault(a['text'], parts)
                 elif not parts and canada_address(a.get('text')) and a['text'] not in known:
-                    want_ca.add(a['text'])
+                    want_ca.add(a['text'])          # asked with its cleaned form (canada_address), kept under the text as read
     asked = 0
     if want:
         if not allow(scripts):
@@ -215,7 +219,7 @@ def run(out, scripts, today=None, poster=post_batch, allow=robots_allow, ca_mann
         else:
             print(f'Canada: {len(want_ca)} addresses, one request each (about {len(want_ca) * 2 // 60 + 1} minutes)...', flush=True)
             for n, t in enumerate(sorted(want_ca), 1):
-                try: g = ca_lookup(M, t)
+                try: g = ca_lookup(M, canada_address(t) or t)
                 except Exception: g = None  # noqa: BLE001
                 known[t] = list(g) if g else []
                 asked += 1
@@ -298,6 +302,8 @@ def selftest():
         c = (d['K4-0001']['location'].get('coords') or [{}])[0]
         ok = ok and c.get('lat') == 37.501 and c.get('role') == 'park' and 'Census' in c.get('from', '') and d['K4-0001']['page']['read'] == '2026-11-22'
         ok = ok and not d['K4-0002']['location'].get('coords') and not d['K4-0003']['location'].get('coords') and calls == [3]
+        ok = ok and canada_address('c/o Test Falls Provincial Park PO Box 252 4853 Highway 11/17 Testfalls, ON P0T 1W0') == '4853 Highway 11/17 Testfalls, ON P0T 1W0'
+        ok = ok and canada_address('PO Box 99 Port Testy, ON N0E 1M0') is None
         ok = ok and len(d['K4-0005']['location'].get('coords') or []) == 1 and len(d['K4-0006']['location'].get('coords') or []) == 1   # shared, but right by both pins
         ok = ok and split_address('Reservations 800-555-0100 Address 122 Test Canyon Park Road Rising Fawn, GA 30738 Dade County GPS Coordinates') == ('122 Test Canyon Park Road', 'Rising Fawn', 'GA', '30738')
         c4 = (d['K4-0004']['location'].get('coords') or [{}])[0]
