@@ -16,6 +16,7 @@ import argparse, csv, datetime, io, json, os, pathlib, re, sys, tempfile, uuid
 
 URL = 'https://geocoding.geo.census.gov/geocoder/locations/addressbatch'
 BATCH = 9000
+SHARED_KM = 5.0     # an address printed on several parks' pages is used only within this distance of the park's pin
 STATES = ('AL AK AZ AR CA CO CT DE DC FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA '
           'RI SC SD TN TX UT VT VA WA WV WI WY PR VI GU').split()
 NAMES = {'alabama': 'AL', 'alaska': 'AK', 'arizona': 'AZ', 'arkansas': 'AR', 'california': 'CA', 'colorado': 'CO',
@@ -35,9 +36,27 @@ STREET_END = re.compile(r'(?i)^(?P<street>.*?\b(?:road|rd|drive|dr|street|st|ave
                         r'(?:\s+(?:[NSEW]{1,2}|north|south|east|west))?)\s+(?P<city>[A-Z][\w.\'-]+(?:\s+[A-Z][\w.\'-]+){0,3})$')
 
 
+_ADDR = [None]
+
+
+def _clean(t):
+    """22 Nov 11:15 PM: an address read before the 22 Nov fixes can carry words around it ('Reservations 800-... Address 122 Test
+    Road Testville, GA 30738 Dade County GPS Coordinates'): the reader's own address finder takes out just the address."""
+    if not _ADDR[0]:
+        try:
+            import kpc_park_pages_rules as R
+            _ADDR[0] = R.ADDR_RX
+        except Exception:  # noqa: BLE001
+            _ADDR[0] = None
+    t = re.sub(r'\s+,', ',', t)
+    t = re.sub(r'\b(?:1[-.\s]?)?\(?\d{3}\)?[-.\s]\d{3}[-.\s]\d{4}\b|\b\d{3}-\d{4}\b', ' ', t)   # phone numbers out first
+    m = _ADDR[0].search(t) if _ADDR[0] else None
+    return ' '.join(m.group(0).split()) if m else t
+
+
 def split_address(text):
     """'1217 Test Lake Road Testden, IN 47106' -> (street, city, state, zip), or None when it is not a US street address."""
-    t = ' '.join(str(text or '').replace('\n', ', ').split())
+    t = _clean(' '.join(str(text or '').replace('\n', ', ').split()))
     if re.search(r'(?i)\b(?:p\.?\s*o\.?\s*box|box\s+\d)', t):
         return None                                  # a mailbox has no place on the ground
     m = TAIL.match(t)
@@ -166,8 +185,8 @@ def run(out, scripts, today=None, poster=post_batch, allow=robots_allow, ca_mann
             if not isinstance(fact, dict) or fact.get('unofficial') or (fact.get('own_page') or {}).get('is') != 'own':
                 continue
             for a in (fact.get('location') or {}).get('addresses') or []:
-                if a.get('role') in ('office', 'mailing') or a.get('text') in shared:
-                    continue                          # never a matching point anyway (an office, a mailbox, or shared by parks)
+                if a.get('role') in ('office', 'mailing'):
+                    continue                          # never a matching point anyway (an office or a mailbox)
                 parts = split_address(a.get('text'))
                 if parts and a['text'] not in known:
                     want.setdefault(a['text'], parts)
@@ -215,12 +234,14 @@ def run(out, scripts, today=None, poster=post_batch, allow=robots_allow, ca_mann
             got_one = False
             for a in loc.get('addresses') or []:
                 g = known.get(a.get('text'))
-                if not g or a.get('role') in ('office', 'mailing') or a.get('text') in shared:
+                if not g or a.get('role') in ('office', 'mailing'):
                     continue
                 lat, lon = g[0], g[1]
                 if not R.point_ok(lat, lon, fact.get('area') or '', pin) or (round(lat, 4), round(lon, 4)) in have:
                     continue
                 km = R.haversine_km((lat, lon), (pin[0], pin[1])) if pin and pin[0] is not None else None
+                if a.get('text') in shared and (km is None or km > SHARED_KM):
+                    continue      # 22 Nov 11:15 PM: an address on several parks' pages counts only right by this park's pin (else a shared office)
                 loc.setdefault('coords', []).append({'lat': lat, 'lon': lon, 'from': 'address (US Census lookup)' if split_address(a.get('text')) else 'address (Natural Resources Canada lookup)', 'role': a.get('role') or 'unknown',
                                                      'label': '', 'km_from_pin': round(km, 2) if km is not None else None, 'address': a.get('text')})
                 have.add((round(lat, 4), round(lon, 4))); added += 1; got_one = True
@@ -238,6 +259,7 @@ def run(out, scripts, today=None, poster=post_batch, allow=robots_allow, ca_mann
 def selftest():
     here = pathlib.Path(__file__).resolve().parent
     scripts = next((p for p in (here.parent, here.parent / 'page-reader' / 'scripts') if (p / 'kpc_park_pages_rules.py').is_file()), here.parent)
+    sys.path.insert(0, str(scripts))
     ok = (split_address('1217 Test Lake Road Testden, IN 47106') == ('1217 Test Lake Road', 'Testden', 'IN', '47106')
           and split_address('17515 Highway 177, Fargo, GA 31631') == ('17515 Highway 177', 'Fargo', 'GA', '31631')
           and split_address('2680 Test Trace Parkway, Testtown, Mississippi 38804') == ('2680 Test Trace Parkway', 'Testtown', 'MS', '38804')
@@ -275,13 +297,14 @@ def selftest():
         d = json.loads((o / 'facts' / 'US-KY.json').read_text(encoding='utf-8'))['parks']
         c = (d['K4-0001']['location'].get('coords') or [{}])[0]
         ok = ok and c.get('lat') == 37.501 and c.get('role') == 'park' and 'Census' in c.get('from', '') and d['K4-0001']['page']['read'] == '2026-11-22'
-        ok = ok and not d['K4-0002']['location'].get('coords') and not d['K4-0003']['location'].get('coords') and calls == [2]
-        ok = ok and not d['K4-0005']['location'].get('coords') and not d['K4-0006']['location'].get('coords')
+        ok = ok and not d['K4-0002']['location'].get('coords') and not d['K4-0003']['location'].get('coords') and calls == [3]
+        ok = ok and len(d['K4-0005']['location'].get('coords') or []) == 1 and len(d['K4-0006']['location'].get('coords') or []) == 1   # shared, but right by both pins
+        ok = ok and split_address('Reservations 800-555-0100 Address 122 Test Canyon Park Road Rising Fawn, GA 30738 Dade County GPS Coordinates') == ('122 Test Canyon Park Road', 'Rising Fawn', 'GA', '30738')
         c4 = (d['K4-0004']['location'].get('coords') or [{}])[0]
         ok = ok and c4.get('lat') == 45.401 and 'Canada' in c4.get('from', '') and ca_calls == ['4998 Concession Test Road 7 Testton, ON K1A 0B1']
         run(o, scripts, '2026-11-23', poster=fake, allow=lambda s: True, ca_manners=lambda s: FakeCA(), ca_lookup=fake_ca)  # nothing asked again
         d2 = json.loads((o / 'facts' / 'US-KY.json').read_text(encoding='utf-8'))['parks']
-        ok = ok and calls == [2] and len(ca_calls) == 1 and len(d2['K4-0001']['location']['coords']) == 1
+        ok = ok and calls == [3] and len(ca_calls) == 1 and len(d2['K4-0001']['location']['coords']) == 1
     print('selftest', 'ALL PASS' if ok else 'FAIL')
     return 0 if ok else 1
 

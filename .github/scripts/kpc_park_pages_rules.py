@@ -1128,6 +1128,10 @@ def html_coords(html, text):
     for m in re.finditer(r'(Geographic Coordinates|GPS|Lat\s*/\s*Long)\s*[:\s]+(-?\d{1,3}\.\d+)\s*[,/]\s*(-?\d{1,3}\.\d+)',
                          text or '', re.I):
         add(m.group(2), m.group(3), 'labelled line', 'park')
+    # 22 Nov 11:15 PM: Georgia State Parks 'GPS Coordinates N 30.85644, W -85.0859' (a compass letter before each number)
+    for m in re.finditer(r'(?i)\bGPS\s+Coordinates?\s*[:\s]*\u200b?\s*([NS])\s*(-?\d{1,2}\.\d{3,})\s*[,/]?\s*([EW])\s*(-?\d{1,3}\.\d{3,})', text or ''):
+        lat, lon = abs(float(m.group(2))), abs(float(m.group(4)))
+        add(-lat if m.group(1).upper() == 'S' else lat, -lon if m.group(3).upper() == 'W' else lon, 'labelled line', 'park')
     # 22 Nov 11 PM (owner: "look at American parks"): Montana FWP prints 'Latitude/Longitude: 47.0234 -113.3060' (a space, often in a
     # table row with |), Indiana DNR 'GPS coordinates of parking lot 41.693108 -86.714900' (numbers on the next lines)
     for m in re.finditer(r'(?i)\b(Lat(?:itude)?\s*/\s*Long(?:itude)?|GPS(?:\s+coordinates?)?(?:\s+(?:of|for)\s+(?:the\s+)?([a-z ]{3,30}?))?)'
