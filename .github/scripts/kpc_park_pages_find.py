@@ -266,7 +266,7 @@ class Fetcher:
         if body[:2] == b'\x1f\x8b':
             try:
                 body = gzip.decompress(body)
-            except OSError:
+            except (OSError, EOFError, ValueError):   # 24 Nov: a cut-off .gz sitemap (EOFError) stopped the whole 2f run on the PC
                 return b''
         return body
 
