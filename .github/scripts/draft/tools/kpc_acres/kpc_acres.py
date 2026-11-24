@@ -929,11 +929,39 @@ def pdf_heading(line):
     return None
 
 
+PDF_GLUE_PIECE = re.compile(r'\$\d{1,3}(?:,\d{3})*|\d{1,3}(?:,\d{3})*\.\d{2}')
+
+
+def unglue(tok):
+    """24 Nov 2026: the FWS lands report's text comes out with cells run together ('831,847.24406,081.28' or '$149,7000.00').
+    Split a token into acre numbers (two decimals, commas every three digits) and $ amounts ONLY when there is exactly one
+    way to do it; otherwise None (the row is not read). The table's own sums still check every row that is kept."""
+    if len(tok) > 120:
+        return None
+    ways = []
+
+    def walk(i, got):
+        if len(ways) > 1:
+            return
+        if i == len(tok):
+            ways.append(list(got))
+            return
+        for m in {tok[i:j] for j in range(i + 1, len(tok) + 1)}:
+            if PDF_GLUE_PIECE.fullmatch(m):
+                walk(i + len(m), got + [m])
+
+    walk(0, [])
+    return ways[0] if len(ways) == 1 and len(ways[0]) > 1 else None
+
+
 def split_pdf_row(line):
     """'Wheeler 0.00 125.68 $149,700 0.00 8,322.98 T 25,674.62 307.38 0.00 0.00 $0 0.00 0.00 34,430.66'
     -> ('Wheeler', ['0.00', '125.68', '0.00', '8,322.98', ...]): the name and the acre numbers; $ amounts and note
     marks are passed over.  None when the line has no number cell or a cell is anything else."""
-    toks = re.sub(r'\s+', ' ', str(line)).strip().split(' ')
+    toks = []
+    for t in re.sub(r'\s+', ' ', str(line)).strip().split(' '):
+        g = None if (PDF_NUM.match(t) or PDF_MONEY.match(t) or PDF_NOTE.match(t) or not t[:1].isdigit() and t[:1] != '$') else unglue(t)
+        toks += g or [t]
     first = next((k for k, t in enumerate(toks) if PDF_NUM.match(t) or PDF_MONEY.match(t)), None)
     if first is None:
         return None
