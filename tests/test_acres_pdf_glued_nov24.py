@@ -85,6 +85,15 @@ got2, info2 = A.read_pdf_table(['\n'.join(T.HEAD + mixed)], T.cfg('US-AL'))
 check('the whole Alabama block with every row\'s columns shuffled reads the same sizes as the plain block',
       sorted((r['name'], r['size']) for r in got2) == sorted((r['name'], r['size']) for r in plain))
 check('and its total row still checks it', info2['blocks_ok'] == 1 and not info2['blocks_bad'])
+_c = {'pdf_table': 'Table 3'}
+check('a table read that adds up stays done on --resume (review of #195)',
+      not A._reread_table('read OK (pdf table "Table 3": 21 pages, 500 rows read, 0 lines not read, 0 rows not adding up; all 50 blocks add up', _c))
+check('a table that failed, or did not add up, or the old-way read, is read again',
+      A._reread_table('failed: pdf table "Table 3": 21 pages, no row read', _c)
+      and A._reread_table('read OK (pdf table "Table 3": 21 pages, 2 rows read; 2 of 2 blocks DO NOT add up', _c)
+      and A._reread_table('read OK (pdf); 3800 PDF lines skipped as unsure', _c))
+# Known limit (review of #195): with NO total cell, a part that equals the sum of the others looks like a total.
+check('known limit, written down: [60, 20, 20, 20] with no total cell gives 60', A.self_total(['60.00', '20.00', '20.00', '20.00']) == 0)
 # 24 Nov: the research file's hand copies name their page under "Source page"; that column was never read, so every hand
 # copy looked like "page not given" (and a hand copy with no page never counts as a witness).
 import json as _j, tempfile as _t  # noqa: E402

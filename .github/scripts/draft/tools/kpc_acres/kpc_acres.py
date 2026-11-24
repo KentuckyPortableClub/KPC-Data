@@ -1181,7 +1181,9 @@ def _reread_table(status, cfg):
         return False
     # 24 Nov 2026: the table reader now finds the total when the columns come out of order; a table that read no row, or
     # whose blocks did not add up, is read again on --resume (from the download cache: no new web request)
-    return st.startswith('read OK (pdf)') or st.startswith('failed: pdf table') or (st.startswith('read OK (pdf table') and 'DO NOT add up' in st)
+    if st.startswith('read OK (pdf table'):   # read as a table: done, unless its blocks did not add up or it read no row
+        return 'DO NOT add up' in st or ' 0 rows read' in st
+    return st.startswith('read OK (pdf)') or st.startswith('failed: pdf table')   # the old way, or a table that read nothing
 
 
 def read_pdf_records(data, cfg):
