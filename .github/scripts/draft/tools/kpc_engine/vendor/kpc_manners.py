@@ -121,7 +121,7 @@ SLOW_BUDGET = int(os.environ.get('KPC_SLOW_HOST_BUDGET') or 10)
 # 'rest' = the host struck out today; 'deferred' = a slow host's live budget is used up; 'crawl-delay' = the host asks for more
 # than MAX_CRAWL_DELAY s between requests (also listed for a person). Callers use next_run(st).
 # Nov 3 re-cut (Quality A13): 'robots-unreadable' = robots.txt answered 5xx or could not be reached. That is NOT a Disallow
-# ('robots'): nothing is fetched this run, but the next run asks again. Nov 10: a robots.txt 401 / 403 IS a Disallow ('robots').
+# ('robots'): nothing is fetched this run, but the next run asks again. Nov 15 (club rule R-NET1): a robots.txt 401 / 403 / other 4xx is NOT a Disallow: it means no rules (allowed).
 NEXT_RUN = ('rest', 'deferred', 'crawl-delay', 'robots-unreadable')
 def next_run(st): return isinstance(st, str) and st in NEXT_RUN
 # Nov 3 addendum (Quality spot-check, 7:05 PM CST): the two robots statuses. 'robots' = robots.txt says no (a Disallow for this URL);
@@ -604,11 +604,11 @@ class Manners:
             self.stat['dropped_queued'] = self.stat.get('dropped_queued', 0) + 1; self.dropped.append((safe_url(u), bl[0]))
             if bl[0] == 'robots': self.need(u, 'robots', bl[1])
             return bl[0], {}, b'', u
-        if not self.robots_ok(u):   # A13: a robots.txt we could not read (5xx / unreachable) is a next-run status; 401 / 403 / a Disallow is 'robots'
+        if not self.robots_ok(u):   # A13: a robots.txt we could not read (5xx / unreachable) is a next-run status; only a real Disallow line is 'robots' (a robots 401 / 403 = no rules)
             rk = self.rkey(u)
             st = 'robots-unreadable' if self.robots.get(rk) is False and rk not in getattr(self, 'robots_disallow', set()) else 'robots'
             if st == 'robots':
-                self.need(u, 'robots', 'robots.txt does not allow it (a 403 counts as no)')
+                self.need(u, 'robots', 'robots.txt has a Disallow line for this address')
                 return st, {}, b'', u
             up = self._try_https_when_http_unreadable(u, rng, timeout, head, accept)
             if up is not None:
