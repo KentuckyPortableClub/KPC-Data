@@ -53,5 +53,13 @@ got, info = A.read_pdf_table(['\n'.join(T.HEAD + glued)], T.cfg('US-AL'))
 check('the glued Alabama block reads the same rows and sizes as the plain one',
       plain and sorted((r['name'], r['size']) for r in got) == sorted((r['name'], r['size']) for r in plain))
 check('and still adds up to its printed total', info['blocks_ok'] == 1 and not info['blocks_bad'])
+# 24 Nov: the research file's hand copies name their page under "Source page"; that column was never read, so every hand
+# copy looked like "page not given" (and a hand copy with no page never counts as a witness).
+import json as _j, tempfile as _t  # noqa: E402
+with _t.NamedTemporaryFile('w', suffix='.json', delete=False, encoding='utf-8') as _f:
+    _j.dump({'Acres not downloadable': [{'Park name (as the agency writes it)': 'Invented Marsh', 'Size': 10, 'Unit': 'acres',
+                                         'Agency': 'Invented DNR', 'Source page': 'https://dnr.invented.gov/marsh'}]}, _f)
+_h = A.load_research(_f.name)[1]
+check('a hand copy keeps its "Source page" link', _h and _h[0].get('_page') == 'https://dnr.invented.gov/marsh')
 print('ALL PASS' if ok else 'SOME FAILED')
 sys.exit(0 if ok else 1)
