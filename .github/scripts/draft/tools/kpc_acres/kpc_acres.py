@@ -124,7 +124,8 @@ def norm_unit(s):
     return None
 
 
-NUM_RE = re.compile(r"[-+]?\d[\d,\.\u00a0\u202f' ]*")
+NUM_RE = re.compile(r"[-+]?(?:\d|\.\d)[\d,\.\u00a0\u202f' ]*")   # 23 Nov (audit 3): '.5' is a number too
+SPACE_GROUPS = re.compile(r"[\u00a0\u202f' ]+")
 
 
 def parse_size(v):
@@ -138,19 +139,30 @@ def parse_size(v):
     if not m:
         return None, None
     raw = m.group(0).strip().rstrip(',.')
-    for ch in ('\u00a0', '\u202f', "'", ' '):
-        raw = raw.replace(ch, '')
+    # 23 Nov (owner 'Yes', audit 3 MUST 2): space-separated digit groups are ONE number only when they look like thousands
+    # ('12 345', '1 234 567', '1 234,5'): a first group of 1-3 digits and every later group exactly 3 digits (the last may
+    # carry decimals). Otherwise the first group alone is the number ('2019 1,200' is the year 2019, not 20,191,200).
+    groups = [g for g in SPACE_GROUPS.split(raw) if g]
+    if len(groups) > 1:
+        thou = (re.fullmatch(r'[-+]?\d{1,3}', groups[0]) and all(re.fullmatch(r'\d{3}', g) for g in groups[1:-1])
+                and re.fullmatch(r'\d{3}(?:[.,]\d+)?', groups[-1]))
+        raw = ''.join(groups) if thou else groups[0].rstrip(',.')
+    else:
+        raw = groups[0] if groups else raw
     if ',' in raw and '.' in raw:
         raw = raw.replace('.', '').replace(',', '.') if raw.rfind(',') > raw.rfind('.') else raw.replace(',', '')
     elif ',' in raw:
         parts = raw.split(',')
-        raw = raw.replace(',', '') if (len(parts) > 2 or len(parts[-1]) == 3) else raw.replace(',', '.')
+        # '0,123 km2' is a decimal (a thousands comma never follows a lone 0)
+        raw = raw.replace(',', '') if ((len(parts) > 2 or len(parts[-1]) == 3) and parts[0].lstrip('+-') not in ('0', '')) else raw.replace(',', '.')
     elif raw.count('.') > 1:
         raw = raw.replace('.', '')
     try:
         val = float(raw)
     except ValueError:
         return None, None
+    if val < 0 or not math.isfinite(val):
+        return None, None   # a size is never negative (audit 3)
     rest = s[m.end():].strip()
     return val, (norm_unit(rest[:40]) if rest else None)
 
@@ -364,6 +376,10 @@ def _retry_now(status):
     """19 Nov 2026 (owner: "Fix it and use the bots"): a work item that failed only because pypdf was missing is read again on
     --resume once pypdf can be imported, and so is a PDF list refused only for its research column name; every other finished
     item stays done."""
+    if (re.search(r'network error|timed? ?out|HTTP (?:429|5\d\d)|robots\.txt unreachable', str(status or ''), re.I)
+            ):
+        return True   # 23 Nov (audit 3 S1): a list that failed on the network is asked again next run (robots.txt still rules;
+                      # a good earlier read is kept if it fails again)
     if "not found (columns: name, size, unit)" in str(status or ''):
         return True   # a PDF list refused only because the research named a spreadsheet column (fixed the same night)
     if re.search(r"failed: size column '.*' not found", str(status or '')):
@@ -2132,13 +2148,22 @@ def merge(results, parks):
             groups.setdefault(m['ref'], []).append(m)
             row_refs.setdefault(m['row'], set()).add(m['ref'])
         for ref, ms in groups.items():
+            # 23 Nov (owner 'Yes', audit 3 MUST 1): a row repeated in a list (same name, size and unit) is counted once;
+            # before, it was only flagged and added 2-3 times (one park came out 3 times too big)
+            seen_rows, uniq = set(), []
+            for m in ms:
+                k = ((m['row_name'] or '').strip().lower(), m['value'], m['unit'])
+                if k not in seen_rows:
+                    seen_rows.add(k); uniq.append(m)
+            dup_rows = len(ms) - len(uniq)
+            ms = uniq
             units = sorted({m['unit'] for m in ms})
             how = ', '.join(sorted({m['rule'] for m in ms}, key=RULE_RANK.get))
             flags = []
             if any(len(row_refs[m['row']]) > 1 for m in ms):
-                flags.append('same row matched to two parks')
-            if len(ms) > 1 and len({(m['row_name'].lower(), m['value']) for m in ms}) < len(ms):
-                flags.append('possible duplicate rows (same name and size added twice)')
+                flags.append('same row matched to two parks')   # kept and shown; park facts no longer counts it as proof (S2)
+            if dup_rows:
+                flags.append(f'{dup_rows} repeated row(s) (same name and size) counted once')
             names = list(dict.fromkeys(m['row_name'] for m in ms))
             unit_label = UNIT_LABEL.get(units[0], units[0]) if len(units) == 1 else 'mixed'
             ag = res['agency'].replace(' (hand copy)', '')
@@ -2153,7 +2178,9 @@ def merge(results, parks):
                  'how': ms[0]['how_text'] or how, 'match': how, 'parts': len(ms),
                  'source_url': ms[0].get('source_url') or res['source_url'] or '', 'read_date': res['read_date'],
                  'why': why, 'flags': flags,
-                 '_rank': (min(RULE_RANK[m['rule']] for m in ms), 1 if res['kind'] == 'hand' else 0, ii),
+                 # audit 3 S3: a tie is broken by the list itself (agency, address), not by the private work order
+                 '_rank': (min(RULE_RANK[m['rule']] for m in ms), 1 if res['kind'] == 'hand' else 0, ag.lower(),
+                           ms[0].get('source_url') or res['source_url'] or '', ii),
                  '_others': []}
             old = final.get(ref)
             if old is None:
@@ -2434,6 +2461,16 @@ def run(args, transport=None, sleep=time.sleep, gap=2.0):
         except Exception as e:  # never stop the run for one bad item
             res = new_result(it['kind'], it['agency'], it['area'], (it.get('cfg') or {}).get('url'), read_date,
                              f'failed: {type(e).__name__}: {e}'[:300])
+        # 23 Nov (owner 'Yes', audit 3 MUST 3): a failed re-read never wipes the last good read of the same list
+        if str(res.get('status') or '').startswith('failed') and os.path.exists(fp):
+            try:
+                with open(fp, encoding='utf-8') as f:
+                    old = json.load(f)
+            except (OSError, ValueError):
+                old = None
+            if old and not str(old.get('status') or '').startswith('failed') and old.get('matches'):
+                res = dict(old, status=f"{str(old.get('status') or 'ok').split('; kept:')[0]}; kept: the re-read on {read_date} failed "
+                                       f"({str(res['status'])[:120]})")
         with open(fp, 'w', encoding='utf-8') as f:
             json.dump(res, f, ensure_ascii=False)
         state['done'][it['key']] = res['status']

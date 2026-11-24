@@ -64,7 +64,9 @@ def read_acres(path):
         out[ref] = {'acres': r.get('acres'), 'value_given': r.get('value_given'), 'unit_given': r.get('unit_given'),
                     'agency': r.get('agency'), 'record_name': r.get('record_name'), 'how': r.get('how') or r.get('match'),
                     'flags': r.get('flags') or [], 'source_url': r.get('source_url'), 'read_date': r.get('read_date'),
-                    'other_sources': len(r.get('other_sources') or [])}
+                    'other_sources': len(r.get('other_sources') or []),
+                    # 23 Nov (audit 3 S4): how many rows were added together, and the outline size the bot compared with
+                    'parts': r.get('parts') or 1, 'outline_acres': r.get('outline_acres')}
     return out, os.path.basename(path)
 
 
@@ -146,7 +148,15 @@ def tag_sizes(sizes, key_layers):
         else:
             t, why = witness(ref, r, key_layers)
         r['witness'], r['witness_why'] = t, why
-        r['witness_counts'] = t in WITNESS_PROOF
+        # 23 Nov (owner 'Yes', audit 3 S2): a size the bot itself flagged (over 50x the outline, another official list more
+        # than 10% off, one row for two parks ...) or a hand copy with no source page is kept and shown, but is not proof
+        # (KPC-Links already refuses them, so the two repos now agree)
+        bad = [f for f in r.get('flags') or [] if re.match(r'(over 50x|under 0\.1|over 20 million|same row matched to two parks'
+                                                           r'|\d+ row\(s\) matched to two parks|another official list differs)', str(f))]
+        no_src = t == 'hand_copy' and not re.match(r'^https?://\S+\.\S+', str(r.get('source_url') or ''))
+        r['witness_counts'] = t in WITNESS_PROOF and not bad and not no_src
+        if t in WITNESS_PROOF and not r['witness_counts']:
+            r['witness_why'] = f"{why}; not counted as proof: " + ('the bot flagged it (' + bad[0] + ')' if bad else 'a hand copy with no source page')
     return sizes
 
 
