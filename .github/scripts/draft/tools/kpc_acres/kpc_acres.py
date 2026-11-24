@@ -1656,7 +1656,7 @@ def _hand_rows_from(v, agency=None, area=None, page=None):
         for r in v:
             if isinstance(r, dict):
                 out.append(dict(r, _agency=pick(r, *F_AGENCY) or agency, _area=pick(r, *F_AREA) or area,
-                                _page=pick(r, 'page', 'page_url', 'source_url', 'url', 'source') or page))
+                                _page=pick(r, 'page', 'page_url', 'source_url', 'source_page', 'url', 'source') or page))
             elif isinstance(r, (list, tuple)) and len(r) >= 2:  # [name, size, unit?, page?]
                 out.append({'name': r[0], 'size': r[1], 'unit': r[2] if len(r) > 2 else None,
                             '_agency': agency, '_area': area, '_page': r[3] if len(r) > 3 else page})
