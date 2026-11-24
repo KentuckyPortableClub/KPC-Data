@@ -78,6 +78,12 @@ class HostRuleRefused(urllib.error.URLError):
     """A redirect hop onto a host the host rules refuse (or from https to a plain address): it is never requested."""
 
 
+def same_site(a, b):
+    """True when two host names are the same site (letter case, a leading 'www.' and the port aside)."""
+    n = lambda h: re.sub(r'^www\.', '', str(h or '').lower().split('@')[-1].split(':')[0].rstrip('.'))
+    return bool(n(a)) and n(a) == n(b)
+
+
 def _install_hop_check():
     """Nov 10: every redirect hop of every urllib request in this process goes through the host rules BEFORE it is followed."""
     H = urllib.request.HTTPRedirectHandler
@@ -87,8 +93,11 @@ def _install_hop_check():
     def redirect_request(self, req, fp, code, msg, headers, newurl):
         newurl = urllib.parse.urljoin(req.full_url, newurl)
         ok, why = HR.host_ok(newurl)
-        if ok and urllib.parse.urlsplit(req.full_url).scheme.lower() == 'https' and urllib.parse.urlsplit(newurl).scheme.lower() != 'https':
-            ok, why = False, f'{newurl[:80]}: redirect from https to a plain address'
+        a, b = urllib.parse.urlsplit(req.full_url), urllib.parse.urlsplit(newurl)
+        if ok and a.scheme.lower() == 'https' and b.scheme.lower() != 'https' and not same_site(a.netloc, b.netloc):
+            # owner 24 Nov 2026 6:57 AM (P-1 'yes'): an https page that sends us to the plain (http) address of the SAME site is
+            # followed, for reading public pages; a plain address on ANOTHER site is still refused
+            ok, why = False, f'{newurl[:80]}: redirect from https to a plain address on another site'
         if not ok: raise HostRuleRefused(f'redirect refused: {why}')
         return orig(self, req, fp, code, msg, headers, newurl)
     redirect_request._kpc_hop_check = True
@@ -438,13 +447,15 @@ class Manners:
         if st is None:
             self._pace(h, 0.0)
             try:
-                with urllib.request.urlopen(urllib.request.Request(ru, headers={'User-Agent': self.ua}), timeout=15) as r:
-                    st, txt = r.status, r.read(ROBOTS_MAX + 1)   # RFC 9309: parse at least 500 KiB; +1 detects a truncated file
+                with urllib.request.urlopen(urllib.request.Request(ru, headers={'User-Agent': self.ua}), timeout=30) as r:
+                    st, txt = r.status, r.read(ROBOTS_MAX + 1)   # 24 Nov: 30 s, a slow robots.txt is not 'unreadable'. RFC 9309: parse at least 500 KiB; +1 detects a truncated file
                     hdr, final = {k.lower(): v for k, v in r.headers.items()}, r.geturl() or ru
             except urllib.error.HTTPError as e:
                 st, txt = e.code, b''
-            except Exception:  # noqa: BLE001
+            except Exception as e:  # noqa: BLE001
                 st, txt = 'unreachable', b''
+                # 24 Nov: say WHY (time-out, TLS, reset), so a site that stays unread (NY DEC: 567 parks) can be looked at
+                self.robots_why = getattr(self, 'robots_why', {}); self.robots_why[rk] = f'{type(e).__name__}: {str(e)[:120]}'
             if cacheable(st):
                 self._cache_write('robots ' + ru, st, {k: v for k, v in hdr.items() if k == 'www-authenticate'}, txt, final if final != ru else None)
         page = st == 200 and txt.decode('utf-8', 'replace').lstrip('\ufeff \t\r\n').startswith('<')
@@ -477,7 +488,7 @@ class Manners:
             self.robots[rk] = False                             # unknown rules: refuse this run (not cached)
             self.blocked[rk] = ('robots-unreadable', f'robots.txt answered {st}')   # addendum: every queued request to it is dropped
             self.stat['robots_unreadable'] = self.stat.get('robots_unreadable', 0) + 1
-            self.for_person.append((ru, f'robots.txt answered {st}: nothing fetched from {rk} this run'))
+            self.for_person.append((ru, f'robots.txt answered {st}' + (f' ({self.robots_why[rk]})' if st == 'unreachable' and getattr(self, 'robots_why', {}).get(rk) else '') + f': nothing fetched from {rk} this run'))
 
     def need(self, u, status, why):
         """Nov 10: a layer url this run may not fetch -> the needs-download list (only layer urls: ArcGIS REST, a data download)."""
