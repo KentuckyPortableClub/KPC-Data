@@ -1,5 +1,5 @@
 {
- "made": "2026-11-24 12:31 UTC",
+ "made": "2026-11-24 21:13 UTC",
  "snap": {
   "date": "2026-11-24",
   "outlines": {
@@ -356,6 +356,14 @@
    "made": "read by the acres bot (2026-11-24)",
    "result": "green",
    "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45329884363",
+   "waiting_on": "the bot sends what it finds through the waiting room"
+  },
+  "Intake: acres-usfs-lar-fy2025.json": {
+   "areas": "",
+   "last_run": "2026-11-24",
+   "made": "read by the acres bot (2026-11-24)",
+   "result": "green",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45433240490",
    "waiting_on": "the bot sends what it finds through the waiting room"
   },
   "Intake: camping-ca-nov1.json": {
@@ -1400,10 +1408,10 @@
   },
   "Tool trial: acres": {
    "areas": "",
-   "last_run": "2026-11-20",
-   "made": "exit 0 2026-11-20: ",
+   "last_run": "2026-11-24",
+   "made": "exit 0 2026-11-24: [234/279] None U.S. Fish and Wildlife Service (refuges): read OK (pdf table \"Table 3. National Wildlife Refuges\": 21 pages, 513 rows read, 2",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44761437443",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45444158293",
    "waiting_on": "chat 11 grades tools-out/acres/ against the spec pass mark; open files only when red"
   },
   "Tool trial: audit": {
@@ -1511,11 +1519,11 @@
    "waiting_on": "chat 8 grades the sample; Brandon GO before any card"
   },
   "closures super-bot": {
-   "areas": "1 done, 0 left",
+   "areas": "0 done, 0 left",
    "last_run": "2026-11-24",
-   "made": "1 areas read, 1 saved; see data/closures/review.md",
+   "made": "0 areas read, 0 saved; see data/closures/review.md",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45385307759",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45416858352",
    "waiting_on": "chat 11 grades the Kentucky side-by-side; Brandon GO before any merge (CL-5)"
   },
   "hours fees permits bot": {
@@ -1584,7 +1592,7 @@
   },
   "waiting room": {
    "last_run": "2026-11-24",
-   "made": "106 files waiting over 3 days in data/waiting/in/ (e.g. acres.json)",
+   "made": "105 files waiting over 3 days in data/waiting/in/ (e.g. refs.json)",
    "result": "red",
    "waiting_on": "chat 11 (look at the waiting room run)"
   },

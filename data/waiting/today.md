@@ -131,7 +131,7 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/us-key/US-WY.json | RELEASE |  |
 | 2026-11-04 | 20 | data/trails/state-report.json | HOLD | F-T1 the line has no points |
 | 2026-11-18 | 6 | data/world-key/ZA.json | HOLD | F-O2 4 of 76 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks? |
-| 2026-11-20 | 4 | data/acres.json | HOLD | 430 rows without acres or a source (e.g. US-0042) |
+| 2026-11-20 | 4 | data/acres.json | HOLD | 1 rows without acres or a source (e.g. US-4564) |
 | 2026-11-22 | 2 | data/world-key/GB.json | HOLD | F-O3 retired parks still outlined: GB-3369 |
 | ? | ? | data/ca-key/index.json | RELEASE |  |
 | ? | ? | data/ca-key/refs.json | RELEASE |  |
