@@ -606,6 +606,7 @@ def find_links(areas, facts_by_area, getter, state, today, first=(), areas_only=
             claimed[P.norm_url(t['url'])] = r
     todo = worklist(facts_by_area, state, today, first, areas_only, again)
     rows, written = [], collections.defaultdict(dict)
+    sure_now, contested = {}, set()   # 23 Nov (audit 4 SHOULD 2.2): who wins a shared page must not depend on the work order
     # 23 Nov (owner 'Yes', audit 4 MUST 2.1): an earlier SURE find whose page is named only by a core another park of the area
     # shares ('Mud Lake' for 'Mud Lake State Park' and 'Mud Lake Wildlife Area') is re-judged here, offline (no request):
     # it becomes unsure and its page counts as shared, not the park's own
@@ -662,6 +663,9 @@ def find_links(areas, facts_by_area, getter, state, today, first=(), areas_only=
             if level == 'sure':
                 best = (level, reason, built, how, page.get('final') or url)
                 break
+            if level == 'unsure' and reason.startswith('another park of the area uses or found this page'):
+                o_ = claimed.get(P.norm_url(page.get('final') or url))
+                if o_ in sure_now: contested.add(o_)   # audit 4 SHOULD 2.2: a page two parks want is sure for neither
             if level == 'unsure' and best[0] != 'unsure':
                 best = (level, reason, built, how, page.get('final') or url)
         level, reason, built, how, url = best
@@ -678,6 +682,7 @@ def find_links(areas, facts_by_area, getter, state, today, first=(), areas_only=
             built['questions'] = R.questions_for(built)
             written[area][ref] = built
             claimed[P.norm_url(url)] = ref
+            sure_now[ref] = area
             page = F.cache.get(P.norm_url(url)) or {}
             when = page.get('kept_date') or today
             built['page']['read'] = when
@@ -690,6 +695,19 @@ def find_links(areas, facts_by_area, getter, state, today, first=(), areas_only=
             written[area][ref] = kept_fact
         state.setdefault('found', {})[ref] = dict(found, date='' if (level == 'no' and busy) else today)
         rows.append({'ref': ref, 'area': area, 'why': why, 'level': level, 'how': how, 'url': found['url'], 'reason': reason})
+    # audit 4 SHOULD 2.2: a page found SURE this run for one park that another park of the area also wanted is unsure for both
+    # (before, the park looked at first kept it, and the private work order decides who is first)
+    why_c = 'another park of the area wanted the same page: a person decides'
+    for ref in sorted(contested):
+        a = sure_now[ref]
+        f2 = dict(written[a][ref])
+        f2['own_page'] = dict(f2.get('own_page') or {}, **{'is': 'shared', 'why': why_c})
+        f2['found'] = dict(f2.get('found') or {}, level='unsure', why=why_c)
+        written[a][ref] = f2
+        state.setdefault('found', {})[ref] = dict(state['found'].get(ref) or {}, level='unsure', why=why_c)
+        (state.get('read') or {}).pop(ref, None)
+        for r in rows:
+            if r['ref'] == ref: r.update(level='unsure', reason=why_c)
     state['find_stopped'] = stopped
     state['find_left'] = max(0, len(todo) - len(rows)) if stopped else 0
     return rows, dict(written), F.requests

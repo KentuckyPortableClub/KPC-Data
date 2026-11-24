@@ -251,5 +251,10 @@ class NoGet:
 rows9, written9, req9 = FIND.find_links({'US-ZZ': {'US-9630': mud_sp, 'US-9631': mud_wa}}, facts9, NoGet(), st, '2026-11-24', quiet=True, max_requests=0)
 check('an earlier sure find named only by a shared core becomes unsure, with no request',
       st['found']['US-9630']['level'] == 'unsure' and (written9['US-ZZ']['US-9630'].get('own_page') or {}).get('is') == 'shared')
+src = (ROOT / '.github/scripts/kpc_park_pages_find.py').read_text(encoding='utf-8')
+check('a page two parks want this run is sure for neither (audit 4 SHOULD 2.2)',
+      'if o_ in sure_now: contested.add(o_)' in src and "another park of the area wanted the same page: a person decides" in src)
+lvl, why, _f = FIND.judge('US-9632', 'US-ZZ', mud_wa, {'US-9632': mud_wa}, mpg, {FIND.P.norm_url(mpg['url']): 'US-9630'}, '2026-11-23', 'sister')
+check('the second park sees the page as taken (the signal the run uses)', lvl == 'unsure' and why.startswith('another park of the area uses or found this page'))
 print('ALL PASS' if ok else 'SOME FAILED')
 sys.exit(0 if ok else 1)
