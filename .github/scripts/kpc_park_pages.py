@@ -409,6 +409,8 @@ def _own_is(url, refs_here, area_parks, text, pota_name):
         return 'agency-home', 'the address has no path: it is the agency front page'
     if not R.official_host(url):
         return 'unofficial-host', f"the host {R.host_of(url)} is not an agency or its government"
+    if R.is_search_or_list_url(url):
+        return 'list', "the address is a search or list page, not this park's own page"
     n = len(refs_here)
     if n >= 3 and not _family_names_all(text, refs_here, area_parks):
         return 'list', f'{n} parks of the area list this page and it does not name each of them'

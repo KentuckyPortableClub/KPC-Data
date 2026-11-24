@@ -479,6 +479,54 @@ def is_agency_home(url):
     return not q
 
 
+# 24 Nov 2026 (owner approved E, 5:39 AM CT): a search or list address is not a park's own page;
+# a county is tagged only when the page names the park.
+SEARCH_PATH = re.compile(r'(^|/)(search|find|results|lookup|query|directory|catalog|listings?)(/|\.|$)', re.I)
+SEARCH_QUERY = re.compile(
+    r'^(q|query|search|keyword|keywords|term|terms|lookfor|searchtext|searchterm|searchstring|searchwords)$', re.I)
+
+
+def is_search_or_list_url(url):
+    """True for a search or list address (a /search path, a results page, or a q=/search= query), not a park's own page."""
+    try:
+        import urllib.parse
+        p = urllib.parse.urlparse(url or '')
+    except Exception:
+        return False
+    path = (p.path or '').lower()
+    if SEARCH_PATH.search(path):
+        return True
+    for k, _v in urllib.parse.parse_qsl(p.query or '', keep_blank_values=True):
+        if SEARCH_QUERY.match(k):
+            return True
+    return False
+
+
+def page_names_park(text, pota_name):
+    """True when a heading, the title, or the visible text names this park (same or same-core)."""
+    name = (pota_name or '').strip()
+    if not name:
+        return False
+    raw = text or ''
+    heads = list(headings_of(raw) if '<' in raw else [])
+    m = re.search(r'<title[^>]*>(.*?)</title>', raw, re.I | re.S)
+    if m:
+        heads.append(cut_tail(_unescape(' '.join(re.sub(r'<[^>]+>', ' ', m.group(1)).split()))))
+    visible = re.sub(r'<[^>]+>', ' ', raw)
+    if not heads:
+        heads.extend(visible.splitlines()[:15])
+    for h in heads:
+        if compare_names(h, name) in ('same', 'same-core'):
+            return True
+    core = name_core(name)
+    if core and len(core) >= 4:
+        words = core.split()
+        rx = re.compile(r'(?<![a-z0-9])' + r'[^a-z0-9]+'.join(re.escape(w) for w in words) + r'(?![a-z0-9])', re.I)
+        if rx.search(visible):
+            return True
+    return False
+
+
 def script_shell(url):
     import urllib.parse
     h = (host_of(url or '') or '').lower()
@@ -2223,7 +2271,7 @@ def _location(main, pages, pota, area, pin):
     loc['addresses'] = loc['addresses'][:6]
     loc['directions'] = directions_of(text)
     loc['offsets'] = offsets_in(text)
-    loc['counties'] = counties_of(text)
+    loc['counties'] = counties_of(text) if page_names_park(text, pota.get('name') or '') else []
     states = []
     for m in re.finditer(r'\b(' + '|'.join(STATE_NAME) + r')\b', text, re.I):
         name = m.group(1).title()
