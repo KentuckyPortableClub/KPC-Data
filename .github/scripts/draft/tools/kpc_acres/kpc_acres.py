@@ -932,29 +932,38 @@ def pdf_heading(line):
 PDF_GLUE_PIECE = re.compile(r'\$(?:0|[1-9]\d{0,2}(?:,\d{3})*)|(?:0|[1-9]\d{0,2}(?:,\d{3})*)\.\d{2}')   # no leading zeros: one way only
 
 
+def unglue_ways(tok):
+    """Every way to split tok into acre numbers (two decimals) and whole-dollar $ amounts. Empty if none."""
+    if len(tok) > 120:
+        return []
+    ways = []
+
+    def walk(i, got):
+        if len(ways) > 8:
+            return
+        if i == len(tok):
+            if got:
+                ways.append(list(got))
+            return
+        for j in range(i + 1, len(tok) + 1):
+            m = tok[i:j]
+            if PDF_GLUE_PIECE.fullmatch(m):
+                walk(j, got + [m])
+
+    walk(0, [])
+    return ways[:8]
+
+
 def unglue(tok):
     """24 Nov 2026: the FWS lands report's text comes out with cells run together ('831,847.24406,081.28' or '$149,7000.00').
     Split a token into acre numbers (two decimals, commas every three digits) and $ amounts ONLY when there is exactly one
     way to do it; otherwise None (the row is not read). The table's own sums still check every row that is kept."""
-    if len(tok) > 120:
-        return None
-    ways = []
-
-    def walk(i, got):
-        if len(ways) > 1:
-            return
-        if i == len(tok):
-            ways.append(list(got))
-            return
-        for m in {tok[i:j] for j in range(i + 1, len(tok) + 1)}:
-            if PDF_GLUE_PIECE.fullmatch(m):
-                walk(i + len(m), got + [m])
-
-    walk(0, [])
-    return ways[0] if len(ways) == 1 and len(ways[0]) > 1 else None
+    ways = [w for w in unglue_ways(tok) if len(w) > 1]
+    return ways[0] if len(ways) == 1 else None
 
 
 PDF_NOTE_GLUED = re.compile(r'^(?:[A-Z]{1,2}(?:,[A-Z]{1,2})*)(?=[A-Z][a-z])')   # 'EChoctaw': a note letter run into the name
+PDF_NOTE_BEFORE_NUM = re.compile(r'^((?:[A-Z]{1,3}(?:,[A-Z]{1,3})*))(?=\d|\$)')  # 'BIA0.00', 'LM21,688.74', 'E0.00'
 
 
 def self_total(nums):
@@ -969,14 +978,48 @@ def self_total(nums):
     return hits[0] if hits and len({ds[k] for k in hits}) == 1 else None
 
 
-def split_pdf_row(line):
-    """'Wheeler 0.00 125.68 $149,700 0.00 8,322.98 T 25,674.62 307.38 0.00 0.00 $0 0.00 0.00 34,430.66'
-    -> ('Wheeler', ['0.00', '125.68', '0.00', '8,322.98', ...]): the name and the acre numbers; $ amounts and note
-    marks are passed over.  None when the line has no number cell or a cell is anything else."""
-    toks = []
-    for t in re.sub(r'\s+', ' ', str(line)).strip().split(' '):
-        g = None if (PDF_NUM.match(t) or PDF_MONEY.match(t) or PDF_NOTE.match(t) or not t[:1].isdigit() and t[:1] != '$') else unglue(t)
-        toks += g or [t]
+# 24 Nov (afternoon run 45444158293): pypdf also glues a part-note or *** onto a number
+# ('7,953.197,929.00(1)', '842.640.00***'), and puts '11State Total:' at the END of the total row.
+# A $ amount and the next acre number can have more than one split ('$22971.91' = $22 + 971.91
+# or $229 + 71.91): keep the split that makes the row add up, or none if two splits both would.
+PDF_TOTAL_TAIL = re.compile(
+    r'(?P<label>Grand\s+Total|State\s+Total|Territory\s+Total|Subtotal|Totals?):?\s*$', re.I)
+PDF_STAR_TAIL = re.compile(r'(\*{2,})$')
+PDF_PART_TAIL = re.compile(r'(\(\d{1,3}\)\*?)$')
+
+
+def peel_tail(tok):
+    """Take a part-note, summary stars, or 'State Total:' off the end of a pypdf token.
+    A unit count glued in front of the label ('11State Total:') is taken only when it
+    does not steal the trailing '00' of an acre number ('0.0011State Total:')."""
+    bits, units = [], None
+    m = PDF_TOTAL_TAIL.search(tok)
+    if m and m.group('label'):
+        bits.append(re.sub(r'\s+', ' ', m.group('label')).strip())
+        tok = tok[:m.start()]
+        for n in range(1, 6):
+            if len(tok) < n:
+                break
+            tail = tok[-n:]
+            if not tail.isdigit() or (len(tail) > 1 and tail.startswith('0')):
+                continue
+            rem = tok[:-n]
+            if rem and (unglue_ways(rem) or PDF_NUM.match(rem) or PDF_MONEY.match(rem)):
+                units = int(tail)
+                tok = rem
+                break
+    m = PDF_STAR_TAIL.search(tok)
+    if m:
+        bits.append(m.group(1))
+        tok = tok[:m.start()]
+    m = PDF_PART_TAIL.search(tok)
+    if m:
+        bits.append(m.group(1))
+        tok = tok[:m.start()]
+    return tok, bits, units
+
+
+def _row_from_toks(toks, bits, units):
     first = next((k for k, t in enumerate(toks) if PDF_NUM.match(t) or PDF_MONEY.match(t)), None)
     if first is None:
         return None
@@ -986,7 +1029,90 @@ def split_pdf_row(line):
             nums.append(t)
         elif not (PDF_MONEY.match(t) or PDF_NOTE.match(t)):
             return None
-    return PDF_NOTE_GLUED.sub('', ' '.join(toks[:first]).strip()), nums
+    name = PDF_NOTE_GLUED.sub('', ' '.join(toks[:first]).strip())
+    if bits:
+        name = (name + ' ' + ' '.join(bits)).strip()
+    if units is not None and (not nums or not re.fullmatch(r'\d{1,5}', nums[0])):
+        nums = [str(units)] + nums
+    return name, nums
+
+
+def _peel_unit_count(text):
+    """A unit count glued on in front of 'State Total' ('0.0011' -> acres '...0.00' and 11 units).
+    Do not steal the trailing '00' of an acre number."""
+    for n in range(1, 6):
+        if len(text) < n:
+            break
+        tail = text[-n:]
+        if not tail.isdigit() or (len(tail) > 1 and tail.startswith('0')):
+            continue
+        rem = text[:-n]
+        if rem and (unglue_ways(rem) or PDF_NUM.match(rem) or PDF_MONEY.match(rem) or rem[-1:].isspace()
+                    or rem.split() and (unglue_ways(rem.split()[-1]) or PDF_NUM.match(rem.split()[-1])
+                                        or PDF_MONEY.match(rem.split()[-1]))):
+            return rem.rstrip(), int(tail)
+    return text, None
+
+
+def split_pdf_row(line):
+    """'Wheeler 0.00 125.68 $149,700 0.00 8,322.98 T 25,674.62 307.38 0.00 0.00 $0 0.00 0.00 34,430.66'
+    -> ('Wheeler', ['0.00', '125.68', '0.00', '8,322.98', ...]): the name and the acre numbers; $ amounts and note
+    marks are passed over.  None when the line has no number cell or a cell is anything else."""
+    line = re.sub(r'\s+', ' ', str(line)).strip()
+    bits, units, options = [], None, []
+    # pypdf puts '11State Total:' at the end, with a space between State and Total, so the label
+    # is taken off the whole line first (a per-token peel would see '11State' and 'Total:').
+    m = PDF_TOTAL_TAIL.search(line)
+    if m and m.group('label'):
+        bits.append(re.sub(r'\s+', ' ', m.group('label')).strip())
+        line, units = _peel_unit_count(line[:m.start()])
+    for t in line.split(' '):
+        if not t:
+            continue
+        core, tail, u = peel_tail(t)
+        bits.extend(tail)
+        if u is not None and units is None:
+            units = u
+        if not core:
+            continue
+        # A note mark run into a number at the end of a row ('LM0.00', 'BIA0.00', 'E0.00').
+        nm = PDF_NOTE_BEFORE_NUM.match(core) if core[:1].isalpha() else None
+        if nm and PDF_NOTE.match(nm.group(1)):
+            options.append([[nm.group(0)]])
+            core = core[nm.end():]
+            if not core:
+                continue
+        if PDF_NUM.match(core) or PDF_MONEY.match(core) or PDF_NOTE.match(core):
+            options.append([[core]])
+        elif core[:1].isdigit() or core[:1] == '$':
+            ways = [w for w in unglue_ways(core) if w]
+            options.append(ways if ways else [[core]])
+        else:
+            options.append([[core]])
+    if not options:
+        return None
+    if all(len(o) == 1 for o in options):
+        return _row_from_toks([p for o in options for p in o[0]], bits, units)
+    # More than one way to split a glued $ / acre token: keep the way that makes the row add up.
+    import itertools
+    seen, add_up, plain = [], [], []
+    for combo in itertools.islice(itertools.product(*options), 32):
+        toks = [p for way in combo for p in way]
+        got = _row_from_toks(toks, bits, units)
+        if got is None or got in seen:
+            continue
+        seen.append(got)
+        # A leading unit count on a total row is not an acre number; take it off before the add-up check.
+        acres = got[1][1:] if got[1] and re.fullmatch(r'\d{1,5}', got[1][0]) and any('.' in n for n in got[1][1:]) else got[1]
+        if self_total(acres) is not None:
+            add_up.append(got)
+        else:
+            plain.append(got)
+    if len(add_up) == 1:
+        return add_up[0]
+    if not add_up and len(plain) == 1:
+        return plain[0]
+    return None
 
 
 def pdf_page_texts(data):
