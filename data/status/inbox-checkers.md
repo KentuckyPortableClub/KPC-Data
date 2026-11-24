@@ -439,3 +439,4 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-11-22, 1 days): key data/world-key/GB.json held: F-O3 retired parks still outlined: GB-3369
 - FROM WAITING ROOM (held since 2026-11-18, 5 days): key data/world-key/ZA.json held: F-O2 4 of 76 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks?
 - FROM WAITING ROOM HEALTH (2026-11-23): RED: 105 files waiting over 3 days in data/waiting/in/ (e.g. acres.json)
+- FROM BOT closures super-bot (2026-11-24): FAILED its gate: US-KY — 17 of 26 of Kentucky's own reader's items found here on the same park (65%); 52 only here · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45302965728)
