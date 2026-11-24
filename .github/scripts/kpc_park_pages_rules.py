@@ -6,7 +6,7 @@ map-link score come from the truth checker and the documents bot. This file adds
 only what those readers do not say: labels, combined names, addresses, and the
 questions.
 """
-import hashlib, json, math, os, re, sys, zlib
+import hashlib, json, math, os, re, sys, urllib.parse, zlib
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import kpc_truth_bot as TB  # noqa: E402
 from kpc_docs_bot import gov_of, map_score, host_of, base_host, via_of  # noqa: E402
@@ -479,28 +479,35 @@ def is_agency_home(url):
     return not q
 
 
-# 24 Nov 2026 (owner approved E, 5:39 AM CT): a search or list address is not a park's own page;
+# 24 Nov 2026 (owner approved E, 5:39 AM CT; review fix 24 Nov): a search or list address is not a park's own page;
 # a county is tagged only when the page names the park.
-SEARCH_PATH = re.compile(r'(^|/)(search|find|results|lookup|query|directory|catalog|listings?)(/|\.|$)', re.I)
-SEARCH_QUERY = re.compile(
-    r'^(q|query|search|keyword|keywords|term|terms|lookfor|searchtext|searchterm|searchstring|searchwords)$', re.I)
+# Rule: a search key WITH a value; the LAST path part is a list word; or a path part holding "search" followed only by a script.
+LIST_WORDS = re.compile(r'^(search|find|results|lookup|query|directory|catalog|listings?)$', re.I)
+SEARCH_QUERY = re.compile(r'^(q|query|search|keyword|keywords|term|terms|lookfor|searchtext|searchterm|searchstring|searchwords)$', re.I)
+SCRIPT = re.compile(r'^(index|default|search\w*|results?)?\.(pl|cgi|php|aspx?|jsp|cfm)$|^[^.]+\.(pl|cgi)$', re.I)
 
 
 def is_search_or_list_url(url):
-    """True for a search or list address (a /search path, a results page, or a q=/search= query), not a park's own page."""
+    """True for a search or list address, not a park's own page:
+    - a search query with a value (q=..., search=..., keywords=...): an empty Keywords= is not a search;
+    - the LAST path part is a list word (/search, /directory, /results.aspx), not /listing/<park-name>/;
+    - a path part holding 'search' (parksearch, sitesearch) followed only by a script (index.pl, results.aspx)."""
     try:
-        import urllib.parse
         p = urllib.parse.urlparse(url or '')
     except Exception:
         return False
-    path = (p.path or '').lower()
-    if SEARCH_PATH.search(path):
-        return True
-    for k, _v in urllib.parse.parse_qsl(p.query or '', keep_blank_values=True):
-        if SEARCH_QUERY.match(k):
+    for k, v in urllib.parse.parse_qsl(p.query or '', keep_blank_values=True):
+        if SEARCH_QUERY.match(k) and v.strip():
             return True
+    segs = [s for s in (p.path or '').split('/') if s]
+    if not segs:
+        return False
+    last = re.sub(r'\.\w+$', '', segs[-1])
+    if LIST_WORDS.match(last):
+        return True
+    if len(segs) >= 2 and 'search' in segs[-2].lower() and SCRIPT.match(segs[-1]):
+        return True
     return False
-
 
 def page_names_park(text, pota_name):
     """True when a heading, the title, or the visible text names this park (same or same-core)."""

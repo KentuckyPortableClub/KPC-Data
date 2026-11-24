@@ -59,5 +59,14 @@ loc2 = R._location({'final': OWN, 'text': OWN_TEXT},
 check('a county is tagged when the own page names the park and names the county',
       loc2.get('counties') == ['Otter'])
 
+# Real address shapes (review of #187): generic/synthetic names only, never a held park.
+ME_SEARCH = 'https://apps.web.maine.gov/cgi-bin/online/doc/parksearch/index.pl?c=N'
+NS_OWN = 'https://novascotia.com/listing/invented-marsh-provincial-park/'
+EMPTY_KW = 'https://dnr.invented.gov/facilities/Detail?Keywords=&unit=4471'
+check('a parksearch/index.pl?c=N address is a search or list page', R.is_search_or_list_url(ME_SEARCH))
+check('a /listing/<name>/ address is not a search or list page', not R.is_search_or_list_url(NS_OWN))
+check('a Detail?Keywords=& address (empty Keywords) is not a search or list page',
+      not R.is_search_or_list_url(EMPTY_KW))
+
 print('ALL PASS' if ok else 'SOME FAILED')
 sys.exit(0 if ok else 1)
