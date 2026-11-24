@@ -355,8 +355,11 @@ def judge(ref, area, row, area_parks, page, claimed, today, how, sisters=(), tab
         return 'no', "the page's own name is not the park's", None
     best = (fact.get('name') or {}).get('best') or ''
     for r2, other in (area_parks or {}).items():
-        if r2 != ref and R.compare_names(best, (other or {}).get('name')) == 'same':
-            return 'unsure', 'another park of the area carries this name', fact
+        # 23 Nov (owner 'Yes', audit 4 MUST 2.1): a page named only by the core ('Mud Lake') fits every park of the area with
+        # that core ('Mud Lake State Park', 'Mud Lake Wildlife Area'): never sure for one of them
+        cmp_ = R.compare_names(best, (other or {}).get('name')) if r2 != ref else None
+        if cmp_ == 'same' or (vs == 'same-core' and cmp_ == 'same-core'):
+            return 'unsure', 'another park of the area carries this name' + (' (the same core)' if cmp_ == 'same-core' else ''), fact
     pts = [c for c in ((fact.get('location') or {}).get('coords') or [])
            if isinstance(c, dict) and (c.get('role') or 'unknown') in GOOD_ROLES and c.get('km_from_pin') is not None]
     if any(c['km_from_pin'] <= POINT_KM for c in pts):
@@ -603,6 +606,29 @@ def find_links(areas, facts_by_area, getter, state, today, first=(), areas_only=
             claimed[P.norm_url(t['url'])] = r
     todo = worklist(facts_by_area, state, today, first, areas_only, again)
     rows, written = [], collections.defaultdict(dict)
+    # 23 Nov (owner 'Yes', audit 4 MUST 2.1): an earlier SURE find whose page is named only by a core another park of the area
+    # shares ('Mud Lake' for 'Mud Lake State Park' and 'Mud Lake Wildlife Area') is re-judged here, offline (no request):
+    # it becomes unsure and its page counts as shared, not the park's own
+    where = {r: a for a, ps in facts_by_area.items() for r in ps}
+    for r, t in sorted((state.get('found') or {}).items()):
+        a = where.get(r)
+        if not a or (t or {}).get('level') != 'sure' or (areas_only and a not in areas_only):
+            continue
+        f = facts_by_area[a][r] or {}
+        nm = f.get('name') or {}
+        best = nm.get('best') or ''
+        if nm.get('vs_pota') != 'same-core' or not best:
+            continue
+        if any(r2 != r and R.compare_names(best, (row2 or {}).get('name')) == 'same-core' for r2, row2 in (areas.get(a) or {}).items()):
+            why_ = 'another park of the area carries this name (the same core): re-judged 23 Nov'
+            t.update(level='unsure', why=why_)
+            f2 = dict(f)
+            f2['own_page'] = dict(f.get('own_page') or {}, **{'is': 'shared', 'why': why_})
+            if isinstance(f2.get('found'), dict): f2['found'] = dict(f2['found'], level='unsure', why=why_)
+            written[a][r] = f2
+            if claimed.get(P.norm_url(t.get('url') or '')) == r: claimed.pop(P.norm_url(t['url']), None)
+            rows.append({'ref': r, 'area': a, 'why': t.get('for') or '', 'level': 'unsure', 'how': t.get('how') or '',
+                         'url': t.get('url') or '', 'reason': why_})
     stopped = ''
     last = [time.monotonic()]
     for i, (area, ref, why) in enumerate(todo):

@@ -173,13 +173,16 @@ def _garbled(t):
 
 
 def read_strength(fact):
-    """2 = the park's page was really read (html or pdf) and its name is clean; 1 = a read that got nothing (busy, refused, dead,
+    """3 = the park's own page, really read, name clean; 2 = the park's page was really read (html or pdf) and its name is clean; 1 = a read that got nothing (busy, refused, dead,
     a page that builds itself) or a garbled name; 0 = no read."""
     pg, nm = (fact or {}).get('page') or {}, (fact or {}).get('name') or {}
     kind = pg.get('kind')
     if not kind: return 0
     name = nm.get('heading') or nm.get('title') if isinstance(nm, dict) else nm
-    return 2 if kind in REAL_PAGE and not _garbled(name) else 1
+    if kind not in REAL_PAGE or _garbled(name): return 1
+    # 23 Nov (owner 'Yes', audit 4 SHOULD 3.1): the park's OWN page beats any other real read (a PC read of POTA's
+    # front-page link no longer replaces an own page on file)
+    return 3 if ((fact or {}).get('own_page') or {}).get('is') == 'own' else 2
 
 
 def better_read(old, new):
@@ -228,8 +231,11 @@ def write_found(P, found_dir, questions_file):
         if qf.is_file():
             try: old = (json.loads(gzip.decompress(qf.read_bytes())) or {}).get('rows') or {}
             except (OSError, ValueError, EOFError): old = {}
+        pack_areas = set(P['pages'])
         for ref, r in old.items():
             if isinstance(r, dict) and r.get('answer'): unsure[ref] = r          # a person's answer is kept, whatever the new run says
+            elif isinstance(r, dict) and r.get('area') not in pack_areas and ref not in unsure:
+                unsure[ref] = r   # audit 4 SHOULD 3.2: an open question of an area this pack does not carry stays open
         sure_now = {r['ref'] for r in rows if r['level'] == 'sure'}
         keep = {ref: r for ref, r in sorted(unsure.items()) if ref not in sure_now or r.get('answer')}
         if keep or old:

@@ -231,5 +231,25 @@ check('a page on a tourism site is never taken, even with the right name', lvl =
 lvl, why, _f = FIND.judge('US-9603', 'US-ZZ', {'name': 'Heron Marsh State Park', 'type': 'State Park', 'lat': PIN[0], 'lon': PIN[1]},
                           {}, dict(pg, kind='pdf'), {}, '2026-11-23', 'kept')
 check('a PDF never counts as the park\'s page', lvl == 'no')
+# 23 Nov (audit 4 MUST 2.1): a page named only by the core two parks share is never sure for one of them
+mud_sp = {'name': 'Mud Lake State Park', 'type': 'State Park', 'lat': PIN[0], 'lon': PIN[1], 'qsos': 1}
+mud_wa = {'name': 'Mud Lake Wildlife Area', 'type': 'State Wildlife Area', 'lat': 46.5, 'lon': -100.5, 'qsos': 1}
+mpg = {'kind': 'html', 'url': H + '/parks/mud-lake', 'final': H + '/parks/mud-lake', 'text': WORDS, 'title': 'Mud Lake',
+       'heading': 'Mud Lake', 'html': page('Mud Lake', NEAR), 'links': []}
+lvl, why, _f = FIND.judge('US-9630', 'US-ZZ', mud_sp, {'US-9630': mud_sp}, mpg, {}, '2026-11-23', 'sister')
+check('control: a page named by the core alone, no other park with that core: sure', lvl == 'sure')
+lvl, why, _f = FIND.judge('US-9630', 'US-ZZ', mud_sp, {'US-9630': mud_sp, 'US-9631': mud_wa}, mpg, {}, '2026-11-23', 'sister')
+check('a page named only by a core another park of the area shares: unsure', lvl == 'unsure' and 'same core' in why)
+# an earlier sure find of that kind is re-judged offline at the start of a run
+st = {'found': {'US-9630': {'level': 'sure', 'url': H + '/parks/mud-lake', 'for': 'no link', 'how': 'sister', 'date': '2026-11-23',
+                            'rule': FIND.FIND_RULE}}}
+facts9 = {'US-ZZ': {'US-9630': {'ref': 'US-9630', 'name': {'best': 'Mud Lake', 'vs_pota': 'same-core'}, 'own_page': {'is': 'own'},
+                                'asked': {'url': ''}, 'page': {}},
+                    'US-9631': {'ref': 'US-9631', 'name': {}, 'asked': {'url': ''}, 'page': {}}}}
+class NoGet:
+    def get(self, *a, **k): raise AssertionError('no request')
+rows9, written9, req9 = FIND.find_links({'US-ZZ': {'US-9630': mud_sp, 'US-9631': mud_wa}}, facts9, NoGet(), st, '2026-11-24', quiet=True, max_requests=0)
+check('an earlier sure find named only by a shared core becomes unsure, with no request',
+      st['found']['US-9630']['level'] == 'unsure' and (written9['US-ZZ']['US-9630'].get('own_page') or {}).get('is') == 'shared')
 print('ALL PASS' if ok else 'SOME FAILED')
 sys.exit(0 if ok else 1)
