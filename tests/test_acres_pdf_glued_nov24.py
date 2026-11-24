@@ -53,6 +53,38 @@ got, info = A.read_pdf_table(['\n'.join(T.HEAD + glued)], T.cfg('US-AL'))
 check('the glued Alabama block reads the same rows and sizes as the plain one',
       plain and sorted((r['name'], r['size']) for r in got) == sorted((r['name'], r['size']) for r in plain))
 check('and still adds up to its printed total', info['blocks_ok'] == 1 and not info['blocks_bad'])
+# 24 Nov (the 10:06 AM run): pypdf gives the FWS report with its columns OUT OF ORDER and note letters run into the name.
+# These three lines are copied from that run's report. The total is the one number equal to the sum of the others.
+REAL = ['Bon Secour 575.000.000.00 0.00 $0678.2132.340.00 6,415.33 $23,478,154 7,700.880.000.00',
+        'Cahaba River 0.000.000.00 0.00 $00.000.000.00 4,853.63 $9,536,218 4,853.630.000.00',
+        'EChoctaw 0.000.000.00 0.00 $00.000.000.00 0.00 $0 4,218.004,218.000.00']
+got = []
+for l in REAL:
+    nm, nums = A.split_pdf_row(l)
+    got.append((nm, nums[A.self_total(nums)]))
+check('out-of-order rows: the self-checking total is found and the note letter is taken off the name',
+      got == [('Bon Secour', '7,700.88'), ('Cahaba River', '4,853.63'), ('Choctaw', '4,218.00')])
+check('no leading zeros: "$0678.21" is $0 + 678.21 (one way only)', A.unglue('$0678.2132.340.00') == ['$0', '678.21', '32.34', '0.00'])
+check('a row of zeros has no total', A.self_total(['0.00', '0.00', '0.00']) is None)
+import random as _r  # noqa: E402
+_rng = _r.Random(7)
+
+
+def scramble(line):
+    toks = line.split(' ')
+    i = next(k for k, t in enumerate(toks) if num.match(t) or t[:1] == '$' or t[:1].isdigit())
+    if toks[0] in ('State',):   # the total row keeps its unit count first
+        i += 2
+    cells = [c for c in toks[i:] if not A.PDF_NOTE.match(c)]   # pypdf puts the note letters by the name, not among the cells
+    _rng.shuffle(cells)
+    return ' '.join(toks[:i] + cells)
+
+
+mixed = [T.ALABAMA[0]] + [scramble(l) for l in T.ALABAMA[1:]]
+got2, info2 = A.read_pdf_table(['\n'.join(T.HEAD + mixed)], T.cfg('US-AL'))
+check('the whole Alabama block with every row\'s columns shuffled reads the same sizes as the plain block',
+      sorted((r['name'], r['size']) for r in got2) == sorted((r['name'], r['size']) for r in plain))
+check('and its total row still checks it', info2['blocks_ok'] == 1 and not info2['blocks_bad'])
 # 24 Nov: the research file's hand copies name their page under "Source page"; that column was never read, so every hand
 # copy looked like "page not given" (and a hand copy with no page never counts as a witness).
 import json as _j, tempfile as _t  # noqa: E402
