@@ -618,6 +618,20 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
                     if keeper is not None:
                         keeper.keep(url, final or url, 200, {'content-type': 'text/html; charset=utf-8'}, built.encode('utf-8'),
                                     ref=cur.get('ref') or '', built=True)
+        if kind == 'refused' and st in (401, 403) and not rng and not from_copy and hasattr(getter, 'browser_html') and budget_left():
+            # 24 Nov 2026 (owner 7:32 AM, P-2 "yes"): a page that answers our plain reader with 401 / 403 gets ONE try in the PC's
+            # browser (BROWSER=1), with every manner of the browser read: the same User-Agent, robots.txt, Crawl-delay, the slow-host
+            # budget and the pace. A browser that also gets a wall, an empty page or nothing leaves the refusal as it was.
+            requests += 1
+            built = getter.browser_html(final or url) or ''
+            if built:
+                vis2 = R.visible_of(built.encode('utf-8'), {'content-type': 'text/html; charset=utf-8'}, final or url, extra)
+                text2 = (vis2.get('text') or '').strip()
+                if len(text2) >= 400 and not R.WALL.search(text2):
+                    vis, kind, browsed = vis2, 'html', True
+                    if keeper is not None:
+                        keeper.keep(url, final or url, 200, {'content-type': 'text/html; charset=utf-8'}, built.encode('utf-8'),
+                                    ref=cur.get('ref') or '', built=True)
         if kind == 'refused' and not from_copy and not (isinstance(st, str) and robots_block(st)):
             # 21 Nov: robots.txt is read for each address (its rules are per path), so a robots 'no' is never remembered for the
             # whole site; a 401 / 403 / wall counts towards putting the site aside (REFUSALS_FOR_HOST different pages)
