@@ -929,7 +929,7 @@ def pdf_heading(line):
     return None
 
 
-PDF_GLUE_PIECE = re.compile(r'\$\d{1,3}(?:,\d{3})*|\d{1,3}(?:,\d{3})*\.\d{2}')
+PDF_GLUE_PIECE = re.compile(r'\$(?:0|[1-9]\d{0,2}(?:,\d{3})*)|(?:0|[1-9]\d{0,2}(?:,\d{3})*)\.\d{2}')   # no leading zeros: one way only
 
 
 def unglue(tok):
@@ -954,6 +954,21 @@ def unglue(tok):
     return ways[0] if len(ways) == 1 and len(ways[0]) > 1 else None
 
 
+PDF_NOTE_GLUED = re.compile(r'^(?:[A-Z]{1,2}(?:,[A-Z]{1,2})*)(?=[A-Z][a-z])')   # 'EChoctaw': a note letter run into the name
+
+
+def self_total(nums):
+    """24 Nov 2026: the FWS report's text comes out with its columns out of order, so 'the last number' is not always the
+    row's total. The total is the one number that equals the sum of all the others (and is the biggest). Its position if
+    there is exactly one such value (the same value printed twice is fine), else None. A row of zeros gives None."""
+    if len(nums) < 3:
+        return None
+    ds = [_dec(n) for n in nums]
+    tot = sum(ds, decimal.Decimal(0))
+    hits = [k for k, d in enumerate(ds) if d > 0 and d == max(ds) and pdf_adds_up(d, tot - d, len(ds) - 1)]
+    return hits[0] if hits and len({ds[k] for k in hits}) == 1 else None
+
+
 def split_pdf_row(line):
     """'Wheeler 0.00 125.68 $149,700 0.00 8,322.98 T 25,674.62 307.38 0.00 0.00 $0 0.00 0.00 34,430.66'
     -> ('Wheeler', ['0.00', '125.68', '0.00', '8,322.98', ...]): the name and the acre numbers; $ amounts and note
@@ -971,7 +986,7 @@ def split_pdf_row(line):
             nums.append(t)
         elif not (PDF_MONEY.match(t) or PDF_NOTE.match(t)):
             return None
-    return ' '.join(toks[:first]).strip(), nums
+    return PDF_NOTE_GLUED.sub('', ' '.join(toks[:first]).strip()), nums
 
 
 def pdf_page_texts(data):
@@ -1017,8 +1032,10 @@ def read_pdf_table(pages, cfg):
         nonlocal block, state
         cnt, nums = count_off(nums)
         j = chosen(nums)
-        tot = _dec(nums[j]) if j is not None else None
         got = sum((r['dec'] for r in block), decimal.Decimal(0))
+        if add_up and self_total(nums) is not None and (j is None or not pdf_adds_up(_dec(nums[j]), got, len(block))):
+            j = self_total(nums)   # the total row's own self-checking total (its columns may be out of order too)
+        tot = _dec(nums[j]) if j is not None else None
         units = sum(1 for r in block if not r['summary'] and not r['star'])
         where = state or label
         if tot is not None and block and pdf_adds_up(tot, got, len(block)):
@@ -1085,6 +1102,9 @@ def read_pdf_table(pages, cfg):
                 miss('not_read', line, 'name not clear')
                 continue
             j = chosen(nums)
+            if add_up and (j is None or not pdf_adds_up(_dec(nums[j]), sum((_dec(n) for k, n in enumerate(nums) if k != j),
+                                                                          decimal.Decimal(0)), len(nums) - 1)):
+                j = self_total(nums) if self_total(nums) is not None else j   # columns out of order: the self-checking total
             if j is None:
                 miss('not_read', line, 'no column named for a row with several numbers')
                 continue
@@ -1156,7 +1176,14 @@ def pdf_table_status(t):
 def _reread_table(status, cfg):
     """20 Nov 2026: a PDF list whose research row now names its table (pdf_table) and that was last read the old way
     ('read OK (pdf); N PDF lines skipped as unsure') is read again on --resume.  Read once as a table, it stays done."""
-    return bool(cfg and cfg.get('pdf_table')) and str(status or '').startswith('read OK (pdf)')
+    st = str(status or '')
+    if not (cfg and cfg.get('pdf_table')):
+        return False
+    # 24 Nov 2026: the table reader now finds the total when the columns come out of order; a table that read no row, or
+    # whose blocks did not add up, is read again on --resume (from the download cache: no new web request)
+    if st.startswith('read OK (pdf table'):   # read as a table: done, unless its blocks did not add up or it read no row
+        return 'DO NOT add up' in st or ' 0 rows read' in st
+    return st.startswith('read OK (pdf)') or st.startswith('failed: pdf table')   # the old way, or a table that read nothing
 
 
 def read_pdf_records(data, cfg):
