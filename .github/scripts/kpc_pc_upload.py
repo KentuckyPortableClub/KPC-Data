@@ -191,8 +191,12 @@ def better_read(old, new):
     goes to the PC). -> True when the new read should replace the old."""
     # 23 Nov (owner 'fix everything'; the confirm of the audit response, row 2h): the PC's own-page finder took back an earlier
     # SURE find (a shared core, or a page two parks want): the downgrade wins, or the old 'sure own' would stay on file for ever
-    if ((new or {}).get('found') or {}).get('level') == 'unsure' and ((old or {}).get('found') or {}).get('level') == 'sure':
-        return True
+    # (confirm R2: only a real, same-or-newer read of the SAME page may carry the downgrade; an empty, older or other read never)
+    nf, of = (new or {}).get('found') or {}, (old or {}).get('found') or {}
+    if nf.get('level') == 'unsure' and of.get('level') == 'sure':
+        same = str(nf.get('url') or '').rstrip('/').lower() == str(of.get('url') or '').rstrip('/').lower()
+        newer = str(((new or {}).get('page') or {}).get('read') or '') >= str(((old or {}).get('page') or {}).get('read') or '')
+        if same and newer and read_strength(new) >= 2: return True
     so, sn = read_strength(old), read_strength(new)
     if sn != so: return sn > so
     return str(((new or {}).get('page') or {}).get('read') or '') >= str(((old or {}).get('page') or {}).get('read') or '')

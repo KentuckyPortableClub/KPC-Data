@@ -2175,6 +2175,8 @@ def merge(results, parks):
             flags = []
             if any(m['row'] in row_owner for m in ms):
                 flags.append('a row also matched another park by a weaker rule: given to this park only')
+            elif shared_rows and any(row_owner.get(m['row']) for m in shared_rows):
+                flags.append(f'{len(shared_rows)} shared row(s) given to a better match')   # confirm R3: not a bad flag
             elif shared_rows:
                 flags.append(f'{len(shared_rows)} row(s) matched to two parks left out')
             if dup_rows:
