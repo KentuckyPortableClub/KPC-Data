@@ -1,4 +1,4 @@
-# Waiting room: morning list (2026-11-23)
+# Waiting room: morning list (2026-11-24)
 
 For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in data/waiting/approved.json; the nightly run lets it out.
 
@@ -6,10 +6,10 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 
 | since | days | file | last check | why |
 |---|---|---|---|---|
-| 2026-11-08 | 15 | data/trails/US-13626.json | HOLD | F-T3 length 16 -> 114 km (outside -25% / +50%) |
-| 2026-11-08 | 15 | data/trails/US-9203.json | HOLD | F-T2 points 19246 -> 1822 (under half the saved line); F-T3 length 138 -> 88 km (outside -25% / +50%) |
-| 2026-11-10 | 13 | data/truth/US-UT.json | HOLD | F-R2 6 OFF rows share the size 2,200,000.0 ac |
-| 2026-11-10 | 13 | data/truth/US-WA.json | HOLD | F-R2 5 OFF rows share the size 564.0 ac; F-R3 69 of 115 sized parks are OFF (over half: a reading problem?) |
+| 2026-11-08 | 16 | data/trails/US-13626.json | HOLD | F-T3 length 16 -> 114 km (outside -25% / +50%) |
+| 2026-11-08 | 16 | data/trails/US-9203.json | HOLD | F-T2 points 19246 -> 1822 (under half the saved line); F-T3 length 138 -> 88 km (outside -25% / +50%) |
+| 2026-11-10 | 14 | data/truth/US-UT.json | HOLD | F-R2 6 OFF rows share the size 2,200,000.0 ac |
+| 2026-11-10 | 14 | data/truth/US-WA.json | HOLD | F-R2 5 OFF rows share the size 564.0 ac; F-R3 69 of 115 sized parks are OFF (over half: a reading problem?) |
 | ? | ? | data/ca-key/CA-ON.json | PASS |  |
 | ? | ? | data/campinfo/US-CO.json | PASS |  |
 | ? | ? | data/campinfo/US-GA.json | PASS |  |
@@ -129,10 +129,10 @@ For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in 
 | ? | ? | data/us-key/US-WI.json | PASS |  |
 | ? | ? | data/us-key/US-WV.json | PASS |  |
 | ? | ? | data/us-key/US-WY.json | RELEASE |  |
-| 2026-11-04 | 19 | data/trails/state-report.json | HOLD | F-T1 the line has no points |
-| 2026-11-18 | 5 | data/world-key/ZA.json | HOLD | F-O2 4 of 76 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks? |
-| 2026-11-20 | 3 | data/acres.json | HOLD | 430 rows without acres or a source (e.g. US-0042) |
-| 2026-11-22 | 1 | data/world-key/GB.json | HOLD | F-O3 retired parks still outlined: GB-3369 |
+| 2026-11-04 | 20 | data/trails/state-report.json | HOLD | F-T1 the line has no points |
+| 2026-11-18 | 6 | data/world-key/ZA.json | HOLD | F-O2 4 of 76 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks? |
+| 2026-11-20 | 4 | data/acres.json | HOLD | 430 rows without acres or a source (e.g. US-0042) |
+| 2026-11-22 | 2 | data/world-key/GB.json | HOLD | F-O3 retired parks still outlined: GB-3369 |
 | ? | ? | data/ca-key/index.json | RELEASE |  |
 | ? | ? | data/ca-key/refs.json | RELEASE |  |
 | ? | ? | data/ca-key/why-not.json | RELEASE |  |
