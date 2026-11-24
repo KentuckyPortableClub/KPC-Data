@@ -6,7 +6,7 @@ map-link score come from the truth checker and the documents bot. This file adds
 only what those readers do not say: labels, combined names, addresses, and the
 questions.
 """
-import hashlib, json, math, os, re, sys, zlib
+import hashlib, json, math, os, re, sys, urllib.parse, zlib
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import kpc_truth_bot as TB  # noqa: E402
 from kpc_docs_bot import gov_of, map_score, host_of, base_host, via_of  # noqa: E402
@@ -477,6 +477,61 @@ def is_agency_home(url):
     # 23 Nov (job 10): '/?page_id=623' (California State Parks: 253 parks) is a numbered page, not the front page
     q = [k for k, _v in urllib.parse.parse_qsl(p.query or '', keep_blank_values=True) if not HOME_QUERY_OK.match(k)]
     return not q
+
+
+# 24 Nov 2026 (owner approved E, 5:39 AM CT; review fix 24 Nov): a search or list address is not a park's own page;
+# a county is tagged only when the page names the park.
+# Rule: a search key WITH a value; the LAST path part is a list word; or a path part holding "search" followed only by a script.
+LIST_WORDS = re.compile(r'^(search|find|results|lookup|query|directory|catalog|listings?)$', re.I)
+SEARCH_QUERY = re.compile(r'^(q|query|search|keyword|keywords|term|terms|lookfor|searchtext|searchterm|searchstring|searchwords)$', re.I)
+SCRIPT = re.compile(r'^(index|default|search\w*|results?)?\.(pl|cgi|php|aspx?|jsp|cfm)$|^[^.]+\.(pl|cgi)$', re.I)
+
+
+def is_search_or_list_url(url):
+    """True for a search or list address, not a park's own page:
+    - a search query with a value (q=..., search=..., keywords=...): an empty Keywords= is not a search;
+    - the LAST path part is a list word (/search, /directory, /results.aspx), not /listing/<park-name>/;
+    - a path part holding 'search' (parksearch, sitesearch) followed only by a script (index.pl, results.aspx)."""
+    try:
+        p = urllib.parse.urlparse(url or '')
+    except Exception:
+        return False
+    for k, v in urllib.parse.parse_qsl(p.query or '', keep_blank_values=True):
+        if SEARCH_QUERY.match(k) and v.strip():
+            return True
+    segs = [s for s in (p.path or '').split('/') if s]
+    if not segs:
+        return False
+    last = re.sub(r'\.\w+$', '', segs[-1])
+    if LIST_WORDS.match(last):
+        return True
+    if len(segs) >= 2 and 'search' in segs[-2].lower() and SCRIPT.match(segs[-1]):
+        return True
+    return False
+
+def page_names_park(text, pota_name):
+    """True when a heading, the title, or the visible text names this park (same or same-core)."""
+    name = (pota_name or '').strip()
+    if not name:
+        return False
+    raw = text or ''
+    heads = list(headings_of(raw) if '<' in raw else [])
+    m = re.search(r'<title[^>]*>(.*?)</title>', raw, re.I | re.S)
+    if m:
+        heads.append(cut_tail(_unescape(' '.join(re.sub(r'<[^>]+>', ' ', m.group(1)).split()))))
+    visible = re.sub(r'<[^>]+>', ' ', raw)
+    if not heads:
+        heads.extend(visible.splitlines()[:15])
+    for h in heads:
+        if compare_names(h, name) in ('same', 'same-core'):
+            return True
+    core = name_core(name)
+    if core and len(core) >= 4:
+        words = core.split()
+        rx = re.compile(r'(?<![a-z0-9])' + r'[^a-z0-9]+'.join(re.escape(w) for w in words) + r'(?![a-z0-9])', re.I)
+        if rx.search(visible):
+            return True
+    return False
 
 
 def script_shell(url):
@@ -2223,7 +2278,7 @@ def _location(main, pages, pota, area, pin):
     loc['addresses'] = loc['addresses'][:6]
     loc['directions'] = directions_of(text)
     loc['offsets'] = offsets_in(text)
-    loc['counties'] = counties_of(text)
+    loc['counties'] = counties_of(text) if page_names_park(text, pota.get('name') or '') else []
     states = []
     for m in re.finditer(r'\b(' + '|'.join(STATE_NAME) + r')\b', text, re.I):
         name = m.group(1).title()
