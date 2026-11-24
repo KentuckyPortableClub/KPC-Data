@@ -178,15 +178,16 @@ _KIND_LIST = [  # (kind, alternatives) - most specific first.  Text is accent-fr
     ('nwr', 'national wildlife refuge|nwr'),
     ('national_wildlife_area', 'national wildlife area|reserve nationale de faune'),
     ('migratory_bird_sanctuary', 'migratory bird sanctuary|refuge d oiseaux migrateurs'),
-    ('national_trail', 'national (?:scenic|historic) trail'),
+    ('national_trail', 'national (?:scenic|historic) trail|nst|nht'),
     ('national_historic', 'national historic(?:al)? (?:site|park|landmark)|national memorial|lieu historique national'),
-    ('national_battlefield', 'national (?:military )?battlefield(?: park| site)?'),
+    ('national_battlefield', 'national (?:military )?battlefield(?: park| site)?|national military park|nmp'),
     ('national_recreation_area', 'national river and recreation area|national recreation area'),
     ('national_monument', 'national monument'),
     ('national_shore', 'national (?:sea|lake)shore'),
-    ('national_river', 'national (?:wild and )?(?:scenic )?river(?:way)?|wild and scenic river'),
+    ('national_river', 'national (?:wild and )?(?:scenic )?river(?:way)?|wild and scenic river|wild (?:and scenic )?rvr|nsr|wsr'),
     ('national_forest', 'national forest|national grassland|foret nationale'),
-    ('national_park', 'national park reserve|national park|national preserve|parc national'),
+    # 24 Nov 2026: the Park Service's own acreage report writes its kinds short ('ANIAKCHAK N PRESERVE', 'DENALI NP & PRES')
+    ('national_park', 'national park and preserve|national park reserve|national park|national preserve|parc national|np and pres(?:erve)?|n preserve|npres'),
     ('wma', 'state wildlife management area|wildlife management area|wma|state wildlife area|'
             'fish and wildlife area|fish wildlife area|wildlife area|state game lands?|state game area|'
             'game lands?|wildlife management unit|wildlife hunting access area|hunting access area'),
@@ -211,7 +212,11 @@ KIND_RES = [(k, re.compile(r'(?<![a-z0-9])(?:' + alts + r')s?(?![a-z0-9])')) for
 ABBR = {'wma': 'wma', 'sp': 'state_park', 'srp': 'state_park', 'snp': 'nature_preserve',
         'shs': 'state_historic_site', 'sf': 'state_forest', 'nwr': 'nwr', 'nf': 'national_forest',
         'sna': 'natural_area', 'pp': 'provincial_park', 'nra': 'national_recreation_area', 'np': 'national_park',
-        'sra': 'state_recreation_area'}
+        'sra': 'state_recreation_area',
+        # 24 Nov 2026 (owner: sizes from each agency's yearly list): the Park Service acreage report's short kinds
+        'nm': 'national_monument', 'nhs': 'national_historic', 'nhp': 'national_historic', 'nmem': 'national_historic',
+        'mem': 'national_historic', 'ihs': 'national_historic', 'nmp': 'national_battlefield', 'nb': 'national_battlefield',
+        'nbp': 'national_battlefield', 'nbs': 'national_battlefield', 'ns': 'national_shore', 'nl': 'national_shore'}
 # POTA / key "type" words -> kind (used only when the name itself carries no kind words)
 TYPE_WORDS = {'wma': 'wma', 'state park': 'state_park', 'nature preserve': 'nature_preserve',
               'state forest': 'state_forest', 'national forest': 'national_forest', 'national park': 'national_park',
@@ -221,7 +226,7 @@ KIND_LABEL = {k: k.replace('_', ' ') for k, _ in _KIND_LIST}
 KIND_LABEL.update({'wma': 'WMA', 'nwr': 'national wildlife refuge'})
 STOP = {'the', 'of', 'and', 'at', 'on', 'de', 'du', 'des', 'la', 'le', 'les', 'l', 'd', 'a'}
 TOKEN_MAP = {'st': 'saint', 'ste': 'sainte', 'mt': 'mount', 'mtn': 'mountain', 'ft': 'fort', 'pt': 'point',
-             'lk': 'lake', 'ck': 'creek', 'crk': 'creek', 'n': 'north', 's': 'south', 'e': 'east', 'w': 'west'}
+             'lk': 'lake', 'ck': 'creek', 'crk': 'creek', 'rvr': 'river', 'n': 'north', 's': 'south', 'e': 'east', 'w': 'west'}
 UNIT_SUFFIX = re.compile(r'(?:\s+(?:north|south|east|west|upper|lower|middle|central|ne|nw|se|sw))?'
                          r'\s+(?:unit|units|tract|tracts|section|addition|annex|parcel|portion|block|division)'
                          r'(?:\s+(?:[a-z]|\d{1,3}|[ivx]{1,4}))?$')
