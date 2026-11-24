@@ -62,6 +62,16 @@ r2['rule'] = 'number'
 got = A.merge([res('Invented Agency', [r1, r2])], Parks())
 check('a tie: neither park gets that row', 'US-9104' not in got and 'US-9105' not in got)
 
+# the flag of the park that loses a shared row (round 4): lost to a stronger match = not bad; a tie = bad; both = bad
+def flags_of(rows): return (A.merge([res('Invented Agency', rows)], Parks()).get('US-9107') or {}).get('flags') or []
+def row(ref, n, row_, rule): r = mrow(ref, 'Twin Ridge ' + n, 100, row_); r['rule'] = rule; return r
+own = row('US-9107', 'own', 8, 'number')
+lost = [own, row('US-9107', 'x', 9, 'name+kind'), row('US-9108', 'x', 9, 'number')]
+tie = [own, row('US-9107', 'y', 10, 'number'), row('US-9109', 'y', 10, 'number')]
+check('a row lost to a stronger match: the not-bad flag', any('given to a better match' in f for f in flags_of(lost)))
+check('a tie: the bad flag', any('left out' in f for f in flags_of(tie)))
+check('one of each: the tie is not hidden', any('left out' in f for f in flags_of(lost + tie[1:])))
+
 # S1: network failures are asked again
 check('a list that failed on the network is retried', A._retry_now('failed: network error (timed out)') and A._retry_now('failed: HTTP 503'))
 check('a list refused for good (HTTP 405) is not', not A._retry_now('failed: HTTP 405'))
