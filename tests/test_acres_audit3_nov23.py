@@ -53,6 +53,15 @@ b = res('A Agency', [mrow('US-9103', 'Heron Marsh', 120, 1)], url='https://a.inv
 check('a tie is decided by the list itself, whatever the work order',
       A.merge([a, b], Parks())['US-9103']['acres'] == A.merge([b, a], Parks())['US-9103']['acres'] == 120)
 
+# S8: one row matched to two parks
+r1 = mrow('US-9104', 'Twin Ridge', 300, 7); r1['rule'] = 'number'
+r2 = mrow('US-9105', 'Twin Ridge', 300, 7); r2['rule'] = 'name+kind'
+got = A.merge([res('Invented Agency', [r1, r2])], Parks())
+check('a row matched to two parks goes only to the park it matched best (its number)', got.get('US-9104', {}).get('acres') == 300 and 'US-9105' not in got)
+r2['rule'] = 'number'
+got = A.merge([res('Invented Agency', [r1, r2])], Parks())
+check('a tie: neither park gets that row', 'US-9104' not in got and 'US-9105' not in got)
+
 # S1: network failures are asked again
 check('a list that failed on the network is retried', A._retry_now('failed: network error (timed out)') and A._retry_now('failed: HTTP 503'))
 check('a list refused for good (HTTP 405) is not', not A._retry_now('failed: HTTP 405'))

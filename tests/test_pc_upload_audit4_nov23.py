@@ -27,6 +27,9 @@ check("a newer PC read of the front page never replaces the park's own page on f
       not U.better_read(f('html', '2026-11-20', 'own'), f('html', '2026-11-23', 'agency-home')))
 check("a newer read of the park's own page still replaces an older own page", U.better_read(f('html', '2026-11-20', 'own'), f('html', '2026-11-23', 'own')))
 check('an own page replaces a front-page read', U.better_read(f('html', '2026-11-23', 'agency-home'), f('html', '2026-11-20', 'own')))
+sure_old = dict(f('html', '2026-11-20', 'own'), found={'level': 'sure'})
+unsure_new = dict(f('html', '2026-11-20', 'shared'), found={'level': 'unsure'})
+check("the finder's downgrade (sure -> unsure) replaces the old sure own page on file", U.better_read(sure_old, unsure_new))
 with tempfile.TemporaryDirectory() as td:
     qf = pathlib.Path(td) / 'q.json.gz'
     old = {'rows': {'US-9701': {'ref': 'US-9701', 'area': 'US-YY', 'level': 'unsure', 'question': 'Is this ...?'}}}

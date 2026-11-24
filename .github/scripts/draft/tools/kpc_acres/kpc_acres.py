@@ -2143,11 +2143,24 @@ def merge(results, parks):
     the best match wins (number > record id > name+kind, then list > hand copy, then queue order)."""
     final = {}
     for ii, res in enumerate(results):
-        groups, row_refs = {}, {}
+        groups, row_refs, row_rank = {}, {}, {}
         for m in res['matches']:
             groups.setdefault(m['ref'], []).append(m)
             row_refs.setdefault(m['row'], set()).add(m['ref'])
+            row_rank.setdefault(m['row'], {})[m['ref']] = min(RULE_RANK[m['rule']], row_rank.get(m['row'], {}).get(m['ref'], 9))
+        # 23 Nov (owner 'fix everything'; audit 3 S8, the confirm of the audit response): one list row cannot be the whole size of
+        # two parks. A row matched to two parks goes only to the park it matched by the strongest rule (its number before its
+        # record id before its name); when two parks tie, neither park gets that row
+        row_owner = {}
+        for row, rr in row_rank.items():
+            if len(rr) > 1:
+                best = min(rr.values()); top = [r for r, k in rr.items() if k == best]
+                row_owner[row] = top[0] if len(top) == 1 else None
         for ref, ms in groups.items():
+            shared_rows = [m for m in ms if m['row'] in row_owner]
+            ms = [m for m in ms if m['row'] not in row_owner or row_owner[m['row']] == ref]
+            if not ms:
+                continue
             # 23 Nov (owner 'Yes', audit 3 MUST 1): a row repeated in a list (same name, size and unit) is counted once;
             # before, it was only flagged and added 2-3 times (one park came out 3 times too big)
             seen_rows, uniq = set(), []
@@ -2160,8 +2173,10 @@ def merge(results, parks):
             units = sorted({m['unit'] for m in ms})
             how = ', '.join(sorted({m['rule'] for m in ms}, key=RULE_RANK.get))
             flags = []
-            if any(len(row_refs[m['row']]) > 1 for m in ms):
-                flags.append('same row matched to two parks')   # kept and shown; park facts no longer counts it as proof (S2)
+            if any(m['row'] in row_owner for m in ms):
+                flags.append('a row also matched another park by a weaker rule: given to this park only')
+            elif shared_rows:
+                flags.append(f'{len(shared_rows)} row(s) matched to two parks left out')
             if dup_rows:
                 flags.append(f'{dup_rows} repeated row(s) (same name and size) counted once')
             names = list(dict.fromkeys(m['row_name'] for m in ms))
@@ -2723,8 +2738,8 @@ def selftest(update=False):
         check('under 0.1 acres' in a('US-1007', 'flags', []), 'flag: under 0.1 acres')
         check('over 20 million acres' in a('CA-3002', 'flags', []), 'flag: over 20 million acres')
         check(any(f.startswith('over 50x') for f in a('US-1008', 'flags', [])), 'flag: over 50x the outline')
-        check('same row matched to two parks' in a('US-1009', 'flags', []) and
-              'same row matched to two parks' in a('US-1010', 'flags', []), 'flag: one row matched to two parks')
+        check(a('US-1009', 'acres') is None and a('US-1010', 'acres') is None,
+              'one row matched to two parks by the same rule: neither park gets its size (audit 3 S8)')
         check(str(a('US-1011', 'how', '')).startswith('hand copy (KY Office of Nature Preserves, https://'),
               'hand size: how = "hand copy (<agency>, <page>)"')
         check('km from the pin' in uw('Cedar Creek WMA'), 'rule c: point over 25 km -> unmatched')

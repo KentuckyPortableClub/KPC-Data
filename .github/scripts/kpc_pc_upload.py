@@ -189,6 +189,10 @@ def better_read(old, new):
     """22 Nov (owner 7:10 PM "Yeah"): the PC's read wins unless it is weaker than the one on file (it came back busy, refused,
     dead or garbled where the old one read the real page); equally strong = the newer read wins (the later 'read' date, a tie
     goes to the PC). -> True when the new read should replace the old."""
+    # 23 Nov (owner 'fix everything'; the confirm of the audit response, row 2h): the PC's own-page finder took back an earlier
+    # SURE find (a shared core, or a page two parks want): the downgrade wins, or the old 'sure own' would stay on file for ever
+    if ((new or {}).get('found') or {}).get('level') == 'unsure' and ((old or {}).get('found') or {}).get('level') == 'sure':
+        return True
     so, sn = read_strength(old), read_strength(new)
     if sn != so: return sn > so
     return str(((new or {}).get('page') or {}).get('read') or '') >= str(((old or {}).get('page') or {}).get('read') or '')
