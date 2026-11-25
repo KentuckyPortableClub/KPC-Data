@@ -2,21 +2,17 @@
 
 For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in data/waiting/approved.json; the nightly run lets it out.
 
-## Held files: 17 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
+## Held files: 13 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
 
 | since | days | file | last check | why |
 |---|---|---|---|---|
 | 2026-11-08 | 17 | data/trails/US-13626.json | HOLD | F-T3 length 16 -> 114 km (outside -25% / +50%) |
-| 2026-11-08 | 17 | data/trails/US-9203.json | HOLD | F-T2 points 19246 -> 1822 (under half the saved line); F-T3 length 138 -> 88 km (outside -25% / +50%) |
 | 2026-11-10 | 15 | data/truth/US-UT.json | HOLD | F-R2 6 OFF rows share the size 2,200,000.0 ac |
 | 2026-11-10 | 15 | data/truth/US-WA.json | HOLD | F-R2 5 OFF rows share the size 564.0 ac; F-R3 69 of 115 sized parks are OFF (over half: a reading problem?) |
 | ? | ? | data/campinfo/US-CO.json | PASS |  |
 | ? | ? | data/campinfo/US-GA.json | PASS |  |
 | ? | ? | data/campinfo/US-WV.json | PASS |  |
-| 2026-11-04 | 21 | data/trails/state-report.json | HOLD | F-T1 the line has no points |
 | 2026-11-20 | 5 | data/acres.json | HOLD | 1 rows without acres or a source (e.g. US-4564) |
-| ? | ? | data/trails/index-state.json | RELEASE |  |
-| ? | ? | data/trails/index.json | PASS |  |
 | ? | ? | data/wwff/PAFF.json | PASS |  |
 | ? | ? | data/wwff/PYFF.json | RELEASE |  |
 | ? | ? | data/wwff/S5FF.json | PASS |  |

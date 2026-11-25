@@ -440,3 +440,4 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM WAITING ROOM (held since 2026-11-22, 3 days): key data/world-key/GB.json held: F-O3 retired parks still outlined: GB-3369
 - FROM WAITING ROOM (held since 2026-11-18, 7 days): key data/world-key/ZA.json held: F-O2 4 of 76 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks?
 - FROM WAITING ROOM HEALTH (2026-11-25): RED: 4 files waiting over 3 days in data/waiting/in/ (e.g. state-report.json)
+- FROM WAITING ROOM HEALTH (2026-11-25): RED: 2 files waiting over 3 days in data/waiting/in/ (e.g. US-13626.json)
