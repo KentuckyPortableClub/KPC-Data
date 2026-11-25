@@ -4,15 +4,15 @@
   "US-KY": {
    "counts": {
     "hunt": 0,
-    "note": 65,
+    "note": 66,
     "part": 0,
     "seasonal": 0,
-    "taken_down": 7,
+    "taken_down": 8,
     "whole": 1
    },
    "failed": 2,
-   "items": 73,
-   "read": "2026-11-25T10:25Z",
+   "items": 75,
+   "read": "2026-11-25T22:42Z",
    "sources": 73,
    "status": "done"
   }
@@ -21,35 +21,53 @@
   "www.fs.usda.gov": 1795688792.3397374
  },
  "last": {
-  "areas": [],
+  "areas": [
+   "US-KY"
+  ],
   "browser": [],
-  "done": [],
-  "failed": [],
+  "done": [
+   "US-KY"
+  ],
+  "failed": [
+   {
+    "area": "US-KY",
+    "src": "fs-gwj",
+    "url": "https://www.fs.usda.gov/alerts/gwj/alerts-notices",
+    "why": "rest (host resting after an earlier strike; last items kept)"
+   },
+   {
+    "area": "US-KY",
+    "src": "ky-fs-dbnf",
+    "url": "https://www.fs.usda.gov/alerts/dbnf/alerts-notices",
+    "why": "rest (host resting after an earlier strike; last items kept)"
+   }
+  ],
   "manners": {
    "errors": 0,
    "for_person_urls": [],
    "host_rule": 0,
-   "requests": 0,
-   "rested": 0,
+   "keyed_api": 1,
+   "requests": 109,
+   "rested": 2,
    "robots": 0,
    "strikes": 0
   },
   "stat": {
    "items": 0,
-   "pages": 0,
-   "pdfs": 0,
-   "requests": 0,
-   "sentences": 0,
-   "sources_failed": 0,
-   "unmatched": 0,
-   "unreadable": 0
+   "pages": 81,
+   "pdfs": 17,
+   "requests": 106,
+   "sentences": 370,
+   "sources_failed": 2,
+   "unmatched": 117,
+   "unreadable": 211
   },
-  "when": "2026-11-25T14:53Z"
+  "when": "2026-11-25T22:42Z"
  },
  "proven": "2026-10-31 (Brandon GO Oct 30 6:07 AM 'Yes': KY closures live Sat Oct 31; dry runs clean Oct 30). The 6-hour schedule runs from now; the site keeps reading the old Kentucky reader until chat 11's side-by-side PASS (CL-5).",
  "test": {
   "matched": 17,
-  "only_here": 52,
+  "only_here": 53,
   "only_there": [
    "hc-US-4687-2026-11-07",
    "hc-US-3834-2026-11-07",
@@ -64,6 +82,6 @@
   "own": 26,
   "result": "FAIL",
   "when": "2026-11-25",
-  "why": "17 of 26 of Kentucky's own reader's items found here on the same park (65%); 52 only here"
+  "why": "17 of 26 of Kentucky's own reader's items found here on the same park (65%); 53 only here"
  }
 }
