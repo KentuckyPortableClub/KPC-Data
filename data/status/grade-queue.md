@@ -1,4 +1,4 @@
-# Waiting for a grader (2026-11-25 13:37Z, written by the waiting room)
+# Waiting for a grader (2026-11-25 20:08Z, written by the waiting room)
 Rows the same as the live (already graded) copy keep their old YES: check only the NEW + CHANGED rows listed. Held = a check failed: fix first.
 
 - **data/campinfo/US-CO.json** (campinfo, PASS; grader chat 11): 154 new, 501 changed, 2 gone, 102 same (carried); check: CO-0068ac64ff, CO-0511b3728f, CO-0757f2fc8d, CO-09ac37a889, CO-0bcea7b416, CO-0c29ced837, CO-0e7cc0fe0f, CO-148ab21b82, CO-18b78e2d0d, CO-1dd9a7a093, CO-1fd8f69ef5, CO-23cf27e39a, CO-26a7d73e76, CO-280ffd6a5d, CO-285d7da9b5, CO-28f9330e93, CO-2fd063bcf1, CO-3430931b23, CO-3baf5babf4, CO-3d7279f592, CO-4098208f31, CO-42605599db, CO-45b34a6a39, CO-464c77c1bc, CO-46d010e0fe ...
@@ -10,12 +10,12 @@ Rows the same as the live (already graded) copy keep their old YES: check only t
 - **data/campstate/US-FL.json** (campstate, PASS; grader chat 11): 405 new, 0 changed, 149 gone, 0 same (carried); check: FL-db0f9af265, FL-a30c2b6bc8, FL-d4bd887dd7, FL-49e9ff7735, FL-2a1d4fefcb, FL-bcad19e689, FL-aa5ea7c8f7, FL-f1f86b7120, FL-57ddb9e8ab, FL-15d056c64b, FL-40efb30f7f, FL-b4b1a8a4d4, FL-276fd3c9a6, FL-6d7c18aa78, FL-f6f54f3f73, FL-6819ca054d, FL-27cce7cd33, FL-630cd496ab, FL-afb39a82c5, FL-b0f233d89c, FL-e993adf47d, FL-8a01bf39fa, FL-e38c466632, FL-bc7aae2d5e, FL-4c51b9186f ...
 - **data/campstate/US-HI.json** (campstate, PASS; grader chat 11): 0 new, 0 changed, 0 gone, 8 same (carried)
 - **data/campstate/US-IA.json** (campstate, PASS; grader chat 11): 0 new, 0 changed, 0 gone, 94 same (carried)
-- **data/campstate/US-IN.json** (campstate, PASS; grader chat 11): 0 new, 0 changed, 0 gone, 17 same (carried)
+- **data/campstate/US-IN.json** (campstate, PASS; grader chat 11): 1 new, 0 changed, 1 gone, 16 same (carried); check: IN-7f29dbf80a
 - **data/campstate/US-MN.json** (campstate, PASS; grader chat 11): 0 new, 0 changed, 0 gone, 53 same (carried)
 - **data/campstate/US-MT.json** (campstate, PASS; grader chat 11): 0 new, 0 changed, 0 gone, 76 same (carried)
 - **data/campstate/US-ND.json** (campstate, PASS; grader chat 11): 0 new, 0 changed, 0 gone, 2 same (carried)
 - **data/campstate/US-NH.json** (campstate, PASS; grader chat 11): 0 new, 0 changed, 0 gone, 12 same (carried)
-- **data/campstate/US-NM.json** (campstate, PASS; grader chat 11): 0 new, 0 changed, 0 gone, 52 same (carried)
+- **data/campstate/US-NM.json** (campstate, PASS; grader chat 11): 0 new, 3 changed, 0 gone, 49 same (carried); check: NM-181c751793, NM-021855d92c, NM-06e903fa8b
 - **data/campstate/US-NV.json** (campstate, PASS; grader chat 11): 0 new, 0 changed, 0 gone, 43 same (carried)
 - **data/campstate/US-OH.json** (campstate, PASS; grader chat 11): 0 new, 0 changed, 0 gone, 62 same (carried)
 - **data/campstate/US-OR.json** (campstate, PASS; grader chat 11): 1 new, 1 changed, 0 gone, 179 same (carried); check: OR-58e416ef61, OR-42f8d64c5f
