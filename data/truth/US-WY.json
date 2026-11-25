@@ -2,21 +2,22 @@
  "about": "Park truth checker: official acreage vs our outline, handover hints, second-witness score. Review lists only: nothing here changes a key or a card.",
  "area": "US-WY",
  "counts": {
-  "agree": 47,
+  "agree": 54,
   "handover_hints": 0,
   "no_page": 0,
-  "no_size": 75,
-  "off": 24,
+  "no_size": 74,
+  "not_read": 0,
+  "off": 13,
   "ours_unknown": 35,
   "parks": 294,
   "retired": 0,
-  "unsure": 33,
-  "weak": 25,
-  "with_outline": 214
+  "unsure": 37,
+  "weak": 19,
+  "with_outline": 213
  },
  "parks": {
   "US-0031": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Grand Teton National Park",
    "official": null,
@@ -72,7 +73,7 @@
    "verdict": "no size on page"
   },
   "US-0070": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Yellowstone National Park",
    "note": "whole park compared (POTA lists it in 3 states: {'US-WY': 2003734, 'US-ID': 36921, 'US-MT': 2200676})",
@@ -140,30 +141,27 @@
    "verdict": "no size on page"
   },
   "US-0609": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bamforth National Wildlife Refuge",
    "official": {
-    "acres": 1968.0,
-    "as": "1,968 acres",
-    "clean": true,
-    "line": "r the Endangered Species Act to support the last known population of the Wyoming toad. The Refuge encompasses 1,968 acres and is located southwest of Laramie, Wyoming. The four main lakes on the Refuge are associated with a series.",
-    "read": "2026-11-09",
-    "sent": "The Refuge encompasses 1,968 acres and is located southwest of Laramie, Wyoming.",
+    "acres": 1166.0,
+    "as": "1,166 acres",
+    "clean": false,
+    "line": "Bamforth National Wildlife Refuge was established on January 29, 1932, by Executive Order 9321. Consisting of 1,166 acres, the refuge is located approximately 6 miles northwest of Laramie. The refuge was established with 201 acres",
+    "read": "2026-11-22",
+    "sent": "Consisting of 1,166 acres, the refuge is located approximately 6 miles northwest of Laramie.",
     "url": "https://www.fws.gov/refuge/bamforth/about-us",
-    "why": "clean total"
+    "why": "total-looking"
    },
    "ours": {
-    "acres": 535,
+    "acres": 1171,
     "dissolved": {
      "after": 1171,
      "before": 2342,
      "copies": 1,
-     "key_union": 535,
      "parts": 0,
      "records": 2,
-     "summed": 1171,
      "tracts": 1
     },
     "manager": "",
@@ -176,7 +174,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -198,13 +196,13 @@
      "why": "FWS refuge about page"
     }
    ],
-   "pct": 73,
+   "pct": 0,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 2,
-    "size": 0,
+    "pin": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -283,10 +281,10 @@
    ],
    "t": "National Wildlife Refuge",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-0610": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Cokeville Meadows National Wildlife Refuge",
    "official": {
@@ -294,21 +292,19 @@
     "as": "6,500 acres",
     "clean": false,
     "line": "within the Bear River Valley south of Cokeville to the Utah border. Today the refuge has grown to just under 6,500 acres of wet meadows, riparian riparian Definition of riparian habitat or riparian areas. Learn more about riparian",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Today the refuge has grown to just under 6,500 acres of wet meadows, riparian riparian",
     "url": "https://www.fws.gov/refuge/cokeville-meadows/about-us",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 5622,
+    "acres": 5992,
     "dissolved": {
      "after": 5992,
      "before": 11984,
      "copies": 1,
-     "key_union": 5622,
      "parts": 0,
      "records": 2,
-     "summed": 5992,
      "tracts": 1
     },
     "manager": "",
@@ -343,7 +339,7 @@
      "why": "FWS refuge about page"
     }
    ],
-   "pct": 14,
+   "pct": 8,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -432,20 +428,18 @@
   },
   "US-0611": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Hutton Lake National Wildlife Refuge",
    "official": null,
    "ours": {
-    "acres": 1794,
+    "acres": 1990,
     "dissolved": {
      "after": 1990,
      "before": 3980,
      "copies": 1,
-     "key_union": 1794,
      "parts": 0,
      "records": 2,
-     "summed": 1990,
      "tracts": 1
     },
     "manager": "",
@@ -570,6 +564,7 @@
   "US-0613": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "National Elk National Wildlife Refuge",
    "official": null,
    "ours": {
@@ -619,7 +614,7 @@
   },
   "US-0614": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Pathfinder National Wildlife Refuge",
    "official": {
@@ -627,21 +622,19 @@
     "as": "1,968 acres",
     "clean": true,
     "line": "r the Endangered Species Act to support the last known population of the Wyoming toad. The Refuge encompasses 1,968 acres and is located southwest of Laramie, Wyoming. The four main lakes on the Refuge are associated with a series.",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The Refuge encompasses 1,968 acres and is located southwest of Laramie, Wyoming.",
     "url": "https://www.fws.gov/refuge/pathfinder/about-us",
     "why": "clean total; the agency's pages disagree: another of its pages says 23,464 acre (that one matches our outline)"
    },
    "ours": {
-    "acres": 21843,
+    "acres": 23637,
     "dissolved": {
      "after": 23637,
      "before": 26207,
      "copies": 1,
-     "key_union": 21843,
      "parts": 0,
      "records": 4,
-     "summed": 23637,
      "tracts": 3
     },
     "manager": "",
@@ -683,7 +676,7 @@
      "why": "FWS refuge about page"
     }
    ],
-   "pct": 1010,
+   "pct": 1101,
    "same_agency": false,
    "score": 4,
    "score_parts": {
@@ -726,7 +719,7 @@
    "verdict": "off"
   },
   "US-0615": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Seedskadee National Wildlife Refuge",
    "official": {
@@ -734,7 +727,7 @@
     "as": "26,210 acre",
     "clean": true,
     "line": "name Seedskadee originated from local tribes' word \"Sisk-a-dee-agie\" meaning \"river of the prairie hen.\" The 26,210 acre Refuge protects a mosaic of riparian riparian Definition of riparian habitat or riparian areas. Learn more ab",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The name Seedskadee originated from local tribes' word \"Sisk-a-dee-agie\" meaning \"river of the prairie hen.\" The 26,210 acre Refuge protects a mosaic of riparian riparian",
     "url": "https://www.fws.gov/refuge/seedskadee/about-us",
     "why": "clean total"
@@ -759,7 +752,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -783,10 +776,10 @@
    ],
    "pct": 1,
    "same_agency": false,
-   "score": 7,
+   "score": 8,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 2,
     "source": 2
    },
@@ -870,7 +863,7 @@
   },
   "US-0698": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "John D. Rockefeller Jr. National Parkway",
    "official": null,
@@ -885,7 +878,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -899,10 +892,10 @@
     }
    ],
    "pct": null,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 1
    },
@@ -922,7 +915,7 @@
    "verdict": "unsure"
   },
   "US-0817": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Fort Laramie National Historic Site",
    "official": null,
@@ -978,7 +971,7 @@
    "verdict": "no size on page"
   },
   "US-0920": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Devils Tower National Monument",
    "official": null,
@@ -1039,7 +1032,7 @@
    "verdict": "no size on page"
   },
   "US-0934": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Fossil Butte National Monument",
    "official": {
@@ -1047,7 +1040,7 @@
     "as": "8,198 acres",
     "clean": false,
     "line": "l Butte National Monument Contact Us Park Statistics Sunrise over Fossil Butte. NPS / John Collins Gross Area 8,198 acres 12.8 square miles 33.2 square kilometers Visitation Total Recreation Visits for FY 2023: 19,377 Total Recreat",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "8,198 acres",
     "url": "https://www.nps.gov/fobu/learn/management/statistics.htm",
     "why": "total-looking"
@@ -1133,7 +1126,7 @@
    "verdict": "agree"
   },
   "US-10776": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Packers Lake Public Access Area BLM Special Recreation Management Area",
    "official": {
@@ -1141,7 +1134,7 @@
     "as": "105 acre",
     "clean": false,
     "line": "t since 1959. There are four parking areas and three primitive boat launch sites, which provide access to the 105-acre lake. The main parking area offers a well-maintained handicap-accessible comfort station. The lake provides q",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "There are four parking areas and three primitive boat launch sites, which provide access to the 105-acre lake.",
     "url": "https://wgfd.wyo.gov/Public-Access/Public-Access-Areas/Packers-Lake",
     "why": "part (a lake, a purchase, a campground…)"
@@ -1157,7 +1150,7 @@
       "alias name (pin inside): Packers Lake"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -1176,10 +1169,10 @@
    ],
    "pct": 0,
    "same_agency": false,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 1,
-    "pin": 1,
+    "pin": 2,
     "size": 2,
     "source": 1
    },
@@ -1208,8 +1201,8 @@
    "verdict": "agree"
   },
   "US-10778": {
-   "cause": "a number 17 parks share from one page (500,000 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 17 parks share from the same sentence (500,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Sand Creek State Wildlife Habitat Management Area",
    "official": null,
@@ -1266,7 +1259,7 @@
    "verdict": "unsure"
   },
   "US-10789": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "North Glendo State Wildlife Habitat Management Area",
    "official": {
@@ -1274,13 +1267,13 @@
     "as": "2,562 acres",
     "clean": true,
     "line": "artment took over management responsibilities for the area in spring of 2023. The area contains approximately 2,562-acres of riverbanks and river bottoms, periodically flooded wetland areas, and upland meadows. Recreational opportu",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The area contains approximately 2,562-acres of riverbanks and river bottoms, periodically flooded wetland areas, and upland meadows.",
     "url": "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/North-Glendo",
     "why": "clean total"
    },
    "ours": {
-    "acres": 2423,
+    "acres": 2663,
     "manager": "",
     "pieces": [
      [
@@ -1308,7 +1301,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 5,
+   "pct": 4,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -1333,7 +1326,7 @@
    "verdict": "agree"
   },
   "US-10790": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Laramie Peak State Wildlife Habitat Management Area",
    "official": {
@@ -1341,7 +1334,7 @@
     "as": "37,096 acres",
     "clean": false,
     "line": "nds and agreements signed by the BLM and the State Land and Farm Loan Office, Laramie Peak provides access to 37,096 acres. There are isolated tracts of private lands remaining within the area. A variety of vegetative types exists h",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "With these private lands and agreements signed by the BLM and the State Land and Farm Loan Office, Laramie Peak provides access to 37,096 acres.",
     "url": "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Laramie-Peak",
     "why": "total-looking"
@@ -1412,7 +1405,7 @@
    "verdict": "agree"
   },
   "US-10791": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Pilot Hill State Wildlife Habitat Management Area",
    "official": {
@@ -1420,13 +1413,13 @@
     "as": "3,076 acres",
     "clean": false,
     "line": "nce wildlife habitat, provide recreational opportunities and protect the Casper Aquifer. The WHMA consists of 3,076 acres on the southern portion with limited development (WHMA) and a recreation corridor of 4,010 acres on the north",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The WHMA consists of 3,076 acres on the southern portion with limited development (WHMA) and a recreation corridor of 4,010 acres on the northern portion with multiple bike and hiking trails.",
     "url": "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Pilot-Hill",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 2752,
+    "acres": 3012,
     "manager": "",
     "pieces": [
      [
@@ -1448,7 +1441,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 11,
+   "pct": 2,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -1491,7 +1484,7 @@
    "verdict": "agree"
   },
   "US-10792": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "John/Annie Woodhouse State Wildlife Habitat Management Area",
    "official": {
@@ -1499,7 +1492,7 @@
     "as": "680 acres",
     "clean": false,
     "line": "Game and Fish Commission and the City of Cheyenne through the Board of Public Utilities, the area encompasses 680 acres of winter and summer habitat for mule deer and elk. The WHMA features a 7-acre reservoir and 1.25 miles of No",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Managed through a Memorandum of Understanding between the Wyoming Game and Fish Commission and the City of Cheyenne through the Board of Public Utilities, the area encompasses 680 acres of winter and summer habitat for mule deer and elk.",
     "url": "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/John-Annie-Woodhouse",
     "why": "total-looking"
@@ -1562,7 +1555,7 @@
   },
   "US-10793": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Jelm State Wildlife Habitat Management Area",
    "official": {
@@ -1570,7 +1563,7 @@
     "as": "1,066 acres",
     "clean": true,
     "line": "Information: The area was purchased in 1948 and is located 1 mile South of Woods Landing. The area comprises 1,066 acres of fee title, and 140 acres, which are public fishing easements across private property. There are two parkin",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The area comprises 1,066 acres of fee title, and 140 acres, which are public fishing easements across private property.",
     "url": "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Jelm",
     "why": "clean total"
@@ -1586,7 +1579,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -1600,10 +1593,10 @@
    ],
    "pct": 40,
    "same_agency": false,
-   "score": 4,
+   "score": 5,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 0,
     "source": 1
    },
@@ -1632,7 +1625,7 @@
    "verdict": "off"
   },
   "US-10795": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Shoshone Cavern AKA Spirit Mtn Cave BLM Special Recreation Management Area",
    "ours": null,
@@ -1642,8 +1635,8 @@
    "verdict": "no outline"
   },
   "US-10796": {
-   "cause": "a number 17 parks share from one page (500,000 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 17 parks share from the same sentence (500,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Coco Belle Van Meerendonk BLM Special Recreation Management Area",
    "official": null,
@@ -1658,7 +1651,7 @@
       "same name (POTA writes the kind into the name) + pin inside"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -1677,10 +1670,10 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 4,
+   "score": 5,
    "score_parts": {
     "name": 1,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 1
    },
@@ -1709,7 +1702,7 @@
    "verdict": "unsure"
   },
   "US-10797": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Half Moon State Wildlife Habitat Management Area",
    "official": {
@@ -1717,7 +1710,7 @@
     "as": "3,741 acres",
     "clean": false,
     "line": "des quality winter range for up to 700 elk and a large population of mule deer. Vegetative communities on the 3,741 acres consist mostly of sagebrush grasslands and conifer forests atop Half Moon Mountain. Perhaps the most striking",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Vegetative communities on the 3,741 acres consist mostly of sagebrush grasslands and conifer forests atop Half Moon Mountain.",
     "url": "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Half-Moon",
     "why": "total-looking"
@@ -1779,8 +1772,8 @@
    "verdict": "agree"
   },
   "US-10798": {
-   "cause": "a number 17 parks share from one page (500,000 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 17 parks share from the same sentence (500,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Viva Naughton State Wildlife Habitat Management Area",
    "official": null,
@@ -1837,7 +1830,7 @@
    "verdict": "unsure"
   },
   "US-10799": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Ellis State Wildlife Habitat Management Area",
    "ours": null,
@@ -1847,8 +1840,8 @@
    "verdict": "no outline"
   },
   "US-10800": {
-   "cause": "a number 17 parks share from one page (500,000 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 17 parks share from the same sentence (500,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Red Rim - Daley State Wildlife Habitat Management Area",
    "official": null,
@@ -1914,7 +1907,7 @@
    "verdict": "unsure"
   },
   "US-10804": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Chain Lakes State Wildlife Habitat Management Area",
    "official": {
@@ -1922,7 +1915,7 @@
     "as": "62,386 acre",
     "clean": false,
     "line": "ming is famous for its pronghorn antelope. Approximately 32 miles northwest of Rawlins in the Red Desert, the 62,386-acre Chain Lakes Wildlife Habitat Management Area (WHMA) provides winter habitat for antelope, and protects moveme",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Approximately 32 miles northwest of Rawlins in the Red Desert, the 62,386-acre Chain Lakes Wildlife Habitat Management Area (WHMA) provides winter habitat for antelope, and protects movement routes for pronghorn traveling between summer and winter ranges.",
     "url": "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Chain-Lakes",
     "why": "total-looking"
@@ -1991,8 +1984,8 @@
    "verdict": "agree"
   },
   "US-10805": {
-   "cause": "a number 17 parks share from one page (500,000 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 17 parks share from the same sentence (500,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Sinks Canyon State Wildlife Habitat Management Area",
    "official": null,
@@ -2049,21 +2042,19 @@
    "verdict": "unsure"
   },
   "US-10806": {
-   "cause": "a number 17 parks share from one page (500,000 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 17 parks share from the same sentence (500,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Sunshine State Wildlife Habitat Management Area",
    "official": null,
    "ours": {
-    "acres": 5590,
+    "acres": 4620,
     "dissolved": {
      "after": 4620,
      "before": 9236,
      "copies": 1,
-     "key_union": 5590,
      "parts": 0,
      "records": 2,
-     "summed": 4620,
      "tracts": 1
     },
     "manager": "",
@@ -2127,7 +2118,7 @@
    "verdict": "unsure"
   },
   "US-10807": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Black Butte State Wildlife Habitat Management Area",
    "official": {
@@ -2135,7 +2126,7 @@
     "as": "520 acres",
     "clean": false,
     "line": ". Black Butte provides quality winter range for up to 500 elk and a feedground. Vegetative communities on the 520 acres of Wyoming Game and Fish Commission owned land consists mostly of sagebrush grasslands with aspen and conifer",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Vegetative communities on the 520 acres of Wyoming Game and Fish Commission owned land consists mostly of sagebrush grasslands with aspen and conifer stands in the higher elevations.",
     "url": "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Black-Butte",
     "why": "total-looking"
@@ -2188,7 +2179,7 @@
    "verdict": "agree"
   },
   "US-10808": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Soda Lake State Wildlife Habitat Management Area",
    "official": {
@@ -2196,13 +2187,13 @@
     "as": "3,750 acre",
     "clean": false,
     "line": "mmonly found within this WHMA area. Rabbit Sage Grouse Waterfowl Mountain Grouse Additional Information: This 3,750-acre wildlife habitat management area (WHMA) near Pinedale, WY was established in 1948 as part of a series of elk",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "This 3,750-acre wildlife habitat management area (WHMA) near Pinedale, WY was established in 1948 as part of a series of elk feedgrounds created to provide winter forage and reduce damage to private haystacks.",
     "url": "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Soda-Lake",
     "why": "history"
    },
    "ours": {
-    "acres": 3895,
+    "acres": 4115,
     "family_fold": "layers {'sgwyc': 4115, 'padus': 3806}: one land in 2 layers, the sgwyc copy used (3,806 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -2230,7 +2221,7 @@
      "why": "about / history page of the park's site"
     }
    ],
-   "pct": 4,
+   "pct": 10,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -2264,7 +2255,7 @@
    "verdict": "agree"
   },
   "US-10809": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Luke Lynch State Wildlife Habitat Management Area",
    "official": {
@@ -2272,7 +2263,7 @@
     "as": "364 acre",
     "clean": false,
     "line": "game species commonly found within this WHMA area. Rabbit Sage Grouse Waterfowl Additional Information: This 364-acre wildlife habitat management area (WHMA) is located approximately 2.5 miles north of Pinedale, WY adjacent to",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "This 364-acre wildlife habitat management area (WHMA) is located approximately 2.5 miles north of Pinedale, WY adjacent to Fremont Lake.",
     "url": "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Luke-Lynch",
     "why": "total-looking"
@@ -2326,7 +2317,7 @@
   },
   "US-10810": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Green Mountain BLM Herd Management Area",
    "official": {
@@ -2334,7 +2325,7 @@
     "as": "117,000 acres",
     "clean": false,
     "line": ". Administered by: Lander Field Office Location: Green Mountain Herd Management Area (HMA) encompasses nearly 117,000 acres, SSE of Sweetwater Station, of which nearly 75,000 acres are BLM-administered public lands. Size: Nearly 117,",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Location: Green Mountain Herd Management Area (HMA) encompasses nearly 117,000 acres, SSE of Sweetwater Station, of which nearly 75,000 acres are BLM-administered public lands.",
     "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/wyoming/green-mountain",
     "why": "total-looking"
@@ -2405,7 +2396,7 @@
    "verdict": "off"
   },
   "US-10811": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lost Creek BLM Herd Management Area",
    "official": {
@@ -2413,7 +2404,7 @@
     "as": "235,000 acres",
     "clean": false,
     "line": "ins Field Office Location: The Lost Creek Herd Management Area (HMA) encompasses over 251,000 acres, of which 235,000 acres are BLM-administered public lands. This HMA is joined on the east by the Stewart Creek HMA, on the north by t",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Location: The Lost Creek Herd Management Area (HMA) encompasses over 251,000 acres, of which 235,000 acres are BLM-administered public lands.",
     "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/wyoming/lost-creek",
     "why": "total-looking"
@@ -2484,12 +2475,12 @@
    "verdict": "agree"
   },
   "US-10815": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Jackson National Fish Hatchery",
    "official": null,
    "ours": {
-    "acres": 24,
+    "acres": 30,
     "manager": "",
     "pieces": [
      [
@@ -2531,8 +2522,7 @@
    "verdict": "no size on page"
   },
   "US-10816": {
-   "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Saratoga National Fish Hatchery",
    "official": {
@@ -2540,13 +2530,13 @@
     "as": "120 acres",
     "clean": false,
     "line": "pm Detailed Directions Saratoga National Fish Hatchery is located 4 miles northeast of Saratoga, Wyoming, on 120 acres of land. Activities Fish viewing Featured Species brown trout Salmo trutta Yellowstone cutthroat trout Oncorh",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Saratoga National Fish Hatchery is located 4 miles northeast of Saratoga, Wyoming, on 120 acres of land.",
     "url": "https://www.fws.gov/fish-hatchery/saratoga",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 64,
+    "acres": 109,
     "manager": "",
     "pieces": [
      [
@@ -2574,13 +2564,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 47,
+   "pct": 9,
    "same_agency": false,
-   "score": 4,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 0,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -2596,10 +2586,10 @@
    ],
    "t": "National Fish Hatchery",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-10817": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Story State Fish Hatchery",
    "ours": null,
@@ -2609,7 +2599,7 @@
    "verdict": "no outline"
   },
   "US-10818": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Auburn State Fish Hatchery",
    "ours": null,
@@ -2621,6 +2611,7 @@
   "US-10819": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Boulder Rearing Station State Fish Hatchery",
    "official": null,
    "ours": {
@@ -2634,7 +2625,7 @@
       "same name (POTA writes the kind into the name) + pin inside"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -2662,10 +2653,11 @@
   "US-10820": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Clarks Fork State Fish Hatchery",
    "official": null,
    "ours": {
-    "acres": 347,
+    "acres": 305,
     "manager": "",
     "pieces": [
      [
@@ -2701,7 +2693,7 @@
    "verdict": "no size on page"
   },
   "US-10821": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Dan Speas State Fish Hatchery",
    "ours": null,
@@ -2711,7 +2703,7 @@
    "verdict": "no outline"
   },
   "US-10822": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Daniel State Fish Hatchery",
    "ours": null,
@@ -2721,7 +2713,7 @@
    "verdict": "no outline"
   },
   "US-10823": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Dubois State Fish Hatchery",
    "ours": null,
@@ -2731,7 +2723,7 @@
    "verdict": "no outline"
   },
   "US-10824": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Ten Sleep State Fish Hatchery",
    "ours": null,
@@ -2741,7 +2733,7 @@
    "verdict": "no outline"
   },
   "US-10825": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Tillett Springs State Fish Hatchery",
    "ours": null,
@@ -2753,18 +2745,17 @@
   "US-10826": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Wigwam Rearing Station State Fish Hatchery",
    "official": null,
    "ours": {
-    "acres": 349,
+    "acres": 481,
     "dissolved": {
      "after": 481,
      "before": 962,
      "copies": 1,
-     "key_union": 349,
      "parts": 0,
      "records": 2,
-     "summed": 481,
      "tracts": 1
     },
     "manager": "",
@@ -2777,7 +2768,7 @@
       "same name (POTA writes the kind into the name) + pin inside"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -2803,7 +2794,7 @@
    "verdict": "no size on page"
   },
   "US-10828": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Quebec 01 Missile Alert Facility State Park",
    "official": null,
@@ -2844,7 +2835,7 @@
    "verdict": "no size on page"
   },
   "US-10829": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Fetterman Fight National Battlefield",
    "official": null,
@@ -2859,7 +2850,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -2872,10 +2863,10 @@
     }
    ],
    "pct": null,
-   "score": 3,
+   "score": 4,
    "score_parts": {
     "name": 1,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 0
    },
@@ -2885,13 +2876,22 @@
    "verdict": "no size on page"
   },
   "US-10830": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Wagon Box Fight National Battlefield",
    "official": null,
    "ours": {
     "acres": 1,
+    "dissolved": {
+     "after": 1,
+     "before": 2,
+     "copies": 1,
+     "parts": 0,
+     "records": 2,
+     "tracts": 1
+    },
     "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 2 -> 1 acres",
     "pieces": [
      [
       292695,
@@ -2902,7 +2902,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 0
    },
    "owner_now": null,
    "pages": [
@@ -2926,7 +2926,7 @@
    "verdict": "no size on page"
   },
   "US-10835": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Pacific Creek BLM Interpretive Site",
    "ours": null,
@@ -2936,7 +2936,7 @@
    "verdict": "no outline"
   },
   "US-10836": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Emigrant Gap BLM Interpretive Site",
    "ours": null,
@@ -2946,7 +2946,7 @@
    "verdict": "no outline"
   },
   "US-10837": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Little Sandy Crossing BLM Historic Area",
    "ours": null,
@@ -2956,7 +2956,7 @@
    "verdict": "no outline"
   },
   "US-10838": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Buckskin Crossing BLM Interpretive Site",
    "ours": null,
@@ -2966,7 +2966,7 @@
    "verdict": "no outline"
   },
   "US-10839": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Devil's Gate BLM Interpretive Site",
    "ours": null,
@@ -2976,7 +2976,7 @@
    "verdict": "no outline"
   },
   "US-10840": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Gebo - Causley Historic Mining District BLM Interpretive Site",
    "ours": null,
@@ -2986,7 +2986,7 @@
    "verdict": "no outline"
   },
   "US-10841": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bennett Mountains BLM WSA Wilderness Area",
    "official": {
@@ -2994,7 +2994,7 @@
     "as": "6,003 acres",
     "clean": false,
     "line": "ram Flickr LinkedIn Bennett Mountains | Wyoming View Map In Full Screen The Bennett Mountains WSA encompasses 6,003 acres of BLM-administered land with no inholdings or split estate. The study area contains three basic types of top",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The Bennett Mountains WSA encompasses 6,003 acres of BLM-administered land with no inholdings or split estate.",
     "url": "https://www.blm.gov/visit/bennett-mountains",
     "why": "total-looking"
@@ -3040,7 +3040,7 @@
    "verdict": "ours unknown"
   },
   "US-10842": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Boar's Tusk BLM Recreation Management Area",
    "ours": null,
@@ -3050,7 +3050,7 @@
    "verdict": "no outline"
   },
   "US-10843": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bobcat Draw Badlands BLM WSA Wilderness Area",
    "official": {
@@ -3058,7 +3058,7 @@
     "as": "17,150 acres",
     "clean": false,
     "line": "dlands WSA | Wyoming View Map In Full Screen The Bobcat Draw Badlands Wilderness Study Area (WSA) encompasses 17,150 acres of BLM-administered land and 1,390 acres of state land. The WSA offers special features and scenic beauty whi",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The Bobcat Draw Badlands Wilderness Study Area (WSA) encompasses 17,150 acres of BLM-administered land and 1,390 acres of state land.",
     "url": "https://www.blm.gov/visit/bobcat-draw-badlands-wsa",
     "why": "total-looking"
@@ -3113,7 +3113,7 @@
    "verdict": "ours unknown"
   },
   "US-10845": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bobcat-Houlihan Trail BLM Recreation Management Area",
    "official": null,
@@ -3128,7 +3128,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -3141,10 +3141,10 @@
     }
    ],
    "pct": null,
-   "score": 4,
+   "score": 5,
    "score_parts": {
     "name": 1,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 1
    },
@@ -3154,7 +3154,7 @@
    "verdict": "no size on page"
   },
   "US-10847": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Burnt Hollow BLM Recreation Management Area",
    "official": {
@@ -3162,21 +3162,19 @@
     "as": "18,000 acres",
     "clean": false,
     "line": "k Instagram Flickr LinkedIn Burnt Hollow | Wyoming View Map In Full Screen Burnt Hollow consists of more than 18,000 acres of public land in sagebrush country with dramatic geologic formations and a diversity of wildlife species. Th",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Burnt Hollow consists of more than 18,000 acres of public land in sagebrush country with dramatic geologic formations and a diversity of wildlife species.",
     "url": "https://www.blm.gov/visit/burnt-hollow",
     "why": "part (a lake, a purchase, a campground…)"
    },
    "ours": {
-    "acres": 16403,
+    "acres": 18033,
     "dissolved": {
      "after": 18033,
      "before": 36066,
      "copies": 1,
-     "key_union": 16403,
      "parts": 0,
      "records": 2,
-     "summed": 18033,
      "tracts": 1
     },
     "manager": "",
@@ -3189,7 +3187,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -3201,12 +3199,12 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 9,
+   "pct": 0,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 1,
-    "pin": 1,
+    "pin": 2,
     "size": 2,
     "source": 2
    },
@@ -3226,7 +3224,7 @@
    "verdict": "agree"
   },
   "US-10848": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Castle Gardens Scenic Area BLM Recreation Management Area",
    "ours": null,
@@ -3236,7 +3234,7 @@
    "verdict": "no outline"
   },
   "US-10849": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "CCC Ponds/Pinedale Pathway BLM Recreation Management Area",
    "official": null,
@@ -3286,7 +3284,7 @@
    "verdict": "no size on page"
   },
   "US-10850": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Cedar Canyon Petroglyphs BLM Recreation Management Area",
    "ours": null,
@@ -3296,7 +3294,7 @@
    "verdict": "no outline"
   },
   "US-10853": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Cody Canal BLM Recreation Management Area",
    "official": null,
@@ -3337,7 +3335,7 @@
    "verdict": "no size on page"
   },
   "US-10854": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Corral Creek Campground BLM Recreation Management Area",
    "ours": null,
@@ -3347,7 +3345,7 @@
    "verdict": "no outline"
   },
   "US-10855": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Deep Gulch BLM Recreation Management Area",
    "ours": null,
@@ -3357,7 +3355,7 @@
    "verdict": "no outline"
   },
   "US-10856": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Dome Rock BLM Recreation Management Area",
    "ours": null,
@@ -3367,7 +3365,7 @@
    "verdict": "no outline"
   },
   "US-10857": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Dugway Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -3377,7 +3375,7 @@
    "verdict": "no outline"
   },
   "US-10860": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Four Bear Trail BLM Recreation Management Area",
    "ours": null,
@@ -3387,7 +3385,7 @@
    "verdict": "no outline"
   },
   "US-10861": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Fremont Lake Road / Skyline Drive BLM Recreation Management Area",
    "ours": null,
@@ -3397,7 +3395,7 @@
    "verdict": "no outline"
   },
   "US-10862": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Gooseberry Badlands Scenic Overlook Trail BLM Recreation Management Area",
    "ours": null,
@@ -3407,7 +3405,7 @@
    "verdict": "no outline"
   },
   "US-10863": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Green River/Warrne Bridge River Access Area BLM Recreation Management Area",
    "ours": null,
@@ -3418,20 +3416,18 @@
   },
   "US-10864": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Killpecker Sand Dunes Open Play Area BLM Recreation Management Area",
    "official": null,
    "ours": {
-    "acres": 11827,
+    "acres": 12832,
     "dissolved": {
      "after": 12832,
      "before": 38496,
      "copies": 2,
-     "key_union": 11827,
      "parts": 0,
      "records": 3,
-     "summed": 12832,
      "tracts": 1
     },
     "manager": "",
@@ -3469,7 +3465,7 @@
      "acres": 10.0,
      "as": "10 acre",
      "clean": false,
-     "line": "iew The Killpecker Sand Dunes Campground is located about 32 miles north of Rock Springs. The campground is a 10 acre flat on the edge of the Killpecker Sand Dunes Open Play Area. It contains 2 ada accessible vault toilets, fir",
+     "line": "LY. The Killpecker Sand Dunes Campground is located about 32 miles north of Rock Springs. The campground is a 10 acre flat on the edge of the Killpecker Sand Dunes Open Play Area. It contains 2 ada accessible vault toilets, fir",
      "total_like": false,
      "url": "https://www.blm.gov/visit/killpecker-sand-dunes-open-play-area-campground#:~:text=Wyoming%20Greater%20Sand%20Dunes%20Linksv/visit/killpecker-sand-dunes-open-play-area",
      "why": "part (a lake, a purchase, a campground…)"
@@ -3480,7 +3476,7 @@
    "verdict": "unsure"
   },
   "US-10865": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lance Creek Fossil Site BLM Recreation Management Area",
    "ours": null,
@@ -3490,7 +3486,7 @@
    "verdict": "no outline"
   },
   "US-10876": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lone Tree Trail BLM Recreation Management Area",
    "official": null,
@@ -3524,7 +3520,7 @@
    "verdict": "ours unknown"
   },
   "US-10877": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Mallo Trail BLM Recreation Management Area",
    "official": null,
@@ -3558,7 +3554,7 @@
    "verdict": "ours unknown"
   },
   "US-10878": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "McCullough Peaks BLM Wilderness Area",
    "official": {
@@ -3566,13 +3562,13 @@
     "as": "25,210 acres",
     "clean": false,
     "line": "agram Flickr LinkedIn McCullough Peaks | Wyoming View Map In Full Screen The McCullough Peaks WSA encompasses 25,210 acres of BLM-administered land, 640 acres of split-estate land, and 640 acres of state-owned land. The WSA consists",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The McCullough Peaks WSA encompasses 25,210 acres of BLM-administered land, 640 acres of split-estate land, and 640 acres of state-owned land.",
     "url": "https://www.blm.gov/visit/mccullough-peaks",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 23922,
+    "acres": 25046,
     "manager": "",
     "pieces": [],
     "pin": "inside",
@@ -3587,7 +3583,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 5,
+   "pct": 1,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -3630,7 +3626,7 @@
    "verdict": "agree"
   },
   "US-10879": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Muddy Mountain Environmental Education Area BLM Recreation Management Area",
    "official": {
@@ -3638,7 +3634,7 @@
     "as": "1,260 acre",
     "clean": false,
     "line": "k Instagram Flickr LinkedIn Muddy Mountain Environmental Education Area | Wyoming View Map In Full Screen The 1,260-acre Muddy Mountain Environmental Education Area (EEA) is a popular recreation area south of Casper. The 2-mile In",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The 1,260-acre Muddy Mountain Environmental Education Area (EEA) is a popular recreation area south of Casper.",
     "url": "https://www.blm.gov/visit/muddy-mountain-environmental-education-area",
     "why": "total-looking"
@@ -3718,7 +3714,7 @@
    "verdict": "agree"
   },
   "US-10880": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Paintrock Canyon Trail BLM Recreation Management Area",
    "ours": null,
@@ -3728,7 +3724,7 @@
    "verdict": "no outline"
   },
   "US-10881": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Pine Creek Camp Area BLM Recreation Management Area",
    "official": null,
@@ -3752,7 +3748,7 @@
       "words"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -3765,10 +3761,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 5,
    "score_parts": {
     "name": 1,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -3778,7 +3774,7 @@
    "verdict": "no size on page"
   },
   "US-10882": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Prior Flat Campground BLM Recreation Management Area",
    "ours": null,
@@ -3788,7 +3784,7 @@
    "verdict": "no outline"
   },
   "US-10883": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Red Canyon Overlook BLM Interpretive Site",
    "ours": null,
@@ -3798,7 +3794,7 @@
    "verdict": "no outline"
   },
   "US-10884": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Red Gulch/Alkali Backcountry Byway BLM Special Recreation Management Area",
    "ours": null,
@@ -3808,7 +3804,7 @@
    "verdict": "no outline"
   },
   "US-10885": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Rim Lake BLM Recreation Management Area",
    "ours": null,
@@ -3818,7 +3814,7 @@
    "verdict": "no outline"
   },
   "US-10886": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Salt Lick Trail BLM Recreation Management Area",
    "official": null,
@@ -3852,7 +3848,7 @@
    "verdict": "ours unknown"
   },
   "US-10887": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Scab Creek BLM Recreation Management Area",
    "official": null,
@@ -3876,7 +3872,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -3889,10 +3885,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 5,
    "score_parts": {
     "name": 1,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -3902,7 +3898,7 @@
    "verdict": "no size on page"
   },
   "US-10888": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Shirley Basin Reservoir BLM Special Recreation Management Area",
    "ours": null,
@@ -3912,7 +3908,7 @@
    "verdict": "no outline"
   },
   "US-10889": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Shirley Mountains BLM Recreation Management Area",
    "official": null,
@@ -3962,7 +3958,7 @@
    "verdict": "no size on page"
   },
   "US-10890": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Sinks Canyon BLM Recreation Management Area",
    "official": null,
@@ -4003,7 +3999,7 @@
    "verdict": "no size on page"
   },
   "US-10891": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Teton Reservoir BLM Recreation Management Area",
    "ours": null,
@@ -4013,7 +4009,7 @@
    "verdict": "no outline"
   },
   "US-10892": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "The Redds Day Use Area BLM Recreation Management Area",
    "ours": null,
@@ -4023,7 +4019,7 @@
    "verdict": "no outline"
   },
   "US-10893": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Three Patches BLM Recreation Management Area",
    "ours": null,
@@ -4033,7 +4029,7 @@
    "verdict": "no outline"
   },
   "US-10894": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Welch Ranch BLM Recreation Management Area",
    "official": {
@@ -4041,21 +4037,19 @@
     "as": "1,700 acres",
     "clean": false,
     "line": "ebook Instagram Flickr LinkedIn Welch Ranch | View Map In Full Screen The Welch Ranch area includes more than 1,700 acres of open space along the Tongue River approximately 10 miles north of Sheridan, Wyoming. This area offers exce",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The Welch Ranch area includes more than 1,700 acres of open space along the Tongue River approximately 10 miles north of Sheridan, Wyoming.",
     "url": "https://www.blm.gov/visit/welch-ranch",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 1537,
+    "acres": 1724,
     "dissolved": {
      "after": 1724,
      "before": 3448,
      "copies": 1,
-     "key_union": 1537,
      "parts": 0,
      "records": 2,
-     "summed": 1724,
      "tracts": 1
     },
     "manager": "",
@@ -4080,7 +4074,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 10,
+   "pct": 1,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -4105,7 +4099,7 @@
    "verdict": "agree"
   },
   "US-10895": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Weston Hills BLM Recreation Management Area",
    "official": null,
@@ -4155,7 +4149,7 @@
    "verdict": "no size on page"
   },
   "US-10896": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Wild Horse Point BLM Recreation Management Area",
    "ours": null,
@@ -4165,7 +4159,7 @@
    "verdict": "no outline"
   },
   "US-10897": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Greater Sand Dunes BLM Special Recreation Management Area",
    "official": null,
@@ -4215,7 +4209,7 @@
    "verdict": "no size on page"
   },
   "US-10898": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lake Hattie BLM Recreation Management Area",
    "ours": null,
@@ -4225,30 +4219,27 @@
    "verdict": "no outline"
   },
   "US-10899": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Poison Spider OHV Park BLM Recreation Management Area",
    "official": {
-    "acres": 284.0,
-    "as": "284 acre",
+    "acres": 300.0,
+    "as": "300 acres",
     "clean": false,
-    "line": "kr LinkedIn Poison Spider OHV Park | Wyoming View Map In Full Screen Poison Spider Off-Road Vehicle Park is a 284-acre open OHV play area located on the site of a former bentonite mine near Casper. It allows visitors to explore",
-    "read": "2026-11-09",
-    "sent": "Poison Spider Off-Road Vehicle Park is a 284-acre open OHV play area located on the site of a former bentonite mine near Casper.",
+    "line": "lay area located on the site of a former bentonite mine near Casper. It allows visitors to explore just under 300 acres of terrain. Use of the area is free to the public, but ATV stickers are required. There are limited picnic fa",
+    "read": "2026-11-22",
+    "sent": "It allows visitors to explore just under 300 acres of terrain.",
     "url": "https://www.blm.gov/visit/poison-spider-ohv-park",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 123,
+    "acres": 306,
     "dissolved": {
      "after": 306,
      "before": 612,
      "copies": 1,
-     "key_union": 123,
      "parts": 0,
      "records": 2,
-     "summed": 306,
      "tracts": 1
     },
     "manager": "",
@@ -4261,7 +4252,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -4273,13 +4264,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 57,
+   "pct": 2,
    "same_agency": false,
-   "score": 4,
+   "score": 7,
    "score_parts": {
     "name": 1,
-    "pin": 1,
-    "size": 0,
+    "pin": 2,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -4304,10 +4295,10 @@
    ],
    "t": "BLM Recreation Management Area",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-10900": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "South Bighorn/Red Wall Backcountry Byway BLM Recreation Management Area",
    "ours": null,
@@ -4317,7 +4308,7 @@
    "verdict": "no outline"
   },
   "US-10901": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Alkali Basin/East Sand Dunes BLM WSA Wilderness Area",
    "official": {
@@ -4325,7 +4316,7 @@
     "as": "12,800 acres",
     "clean": false,
     "line": "unes WSA | Wyoming View Map In Full Screen The Alkali Basin/East Sand Dunes Wilderness Study Area encompasses 12,800 acres of BLM-administered land with no private or state inholdings. The study area includes a portion of the Killpe",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The Alkali Basin/East Sand Dunes Wilderness Study Area encompasses 12,800 acres of BLM-administered land with no private or state inholdings.",
     "url": "https://www.blm.gov/visit/east-sand-dunes-wsa",
     "why": "total-looking"
@@ -4371,7 +4362,7 @@
    "verdict": "ours unknown"
   },
   "US-10902": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Alkali Creek BLM WSA Wilderness Area",
    "official": {
@@ -4379,13 +4370,13 @@
     "as": "10,100 acres",
     "clean": false,
     "line": "Instagram Flickr LinkedIn Alkali Creek WSA | Wyoming View Map In Full Screen The Alkali Creek WSA encompasses 10,100 acres of BLM-administered land surrounding an island of private lands totaling 680 acres. This WSA contains outstan",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The Alkali Creek WSA encompasses 10,100 acres of BLM-administered land surrounding an island of private lands totaling 680 acres.",
     "url": "https://www.blm.gov/visit/alkali-creek-wsa",
     "why": "history"
    },
    "ours": {
-    "acres": 10076,
+    "acres": 9438,
     "manager": "",
     "pieces": [],
     "pin": "inside",
@@ -4400,7 +4391,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 0,
+   "pct": 7,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -4434,7 +4425,7 @@
    "verdict": "agree"
   },
   "US-10926": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Buffalo Hump BLM WSA Wilderness Area",
    "official": {
@@ -4442,13 +4433,13 @@
     "as": "10,300 acres",
     "clean": false,
     "line": "n Buffalo Hump WSA | Wyoming View Map In Full Screen The Buffalo Hump Wilderness Study Area (WSA) encompasses 10,300 acres of BLM-administered land with no private or state inholdings. This is a sand dune area of many sand valleys,",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The Buffalo Hump Wilderness Study Area (WSA) encompasses 10,300 acres of BLM-administered land with no private or state inholdings.",
     "url": "https://www.blm.gov/visit/buffalo-hump-wsa",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 10337,
+    "acres": 9437,
     "manager": "",
     "pieces": [],
     "pin": "inside",
@@ -4463,7 +4454,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 0,
+   "pct": 8,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -4488,7 +4479,7 @@
    "verdict": "agree"
   },
   "US-10927": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Cedar Mountain BLM WSA Wilderness Area",
    "official": {
@@ -4496,13 +4487,13 @@
     "as": "21,560 acres",
     "clean": false,
     "line": "agram Flickr LinkedIn Cedar Mountain WSA | Wyoming View Map In Full Screen The Cedar Mountain WSA encompasses 21,560 acres of BLM-administered land with no private or state inholdings. The WSA is an area of rugged topography charact",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The Cedar Mountain WSA encompasses 21,560 acres of BLM-administered land with no private or state inholdings.",
     "url": "https://www.blm.gov/visit/cedar-mountain-wsa",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 18690,
+    "acres": 20426,
     "manager": "",
     "pieces": [],
     "pin": "inside",
@@ -4517,7 +4508,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 13,
+   "pct": 5,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -4542,7 +4533,7 @@
    "verdict": "agree"
   },
   "US-10928": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Copper Mountain BLM WSA Wilderness Area",
    "official": {
@@ -4550,7 +4541,7 @@
     "as": "6,858 acres",
     "clean": false,
     "line": "stagram Flickr LinkedIn Copper Mountain | Wyoming View Map In Full Screen The Copper Mountain WSA encompasses 6,858 acres of BLM-administered land without any inholdings or split estate. It is part of the Copper Mountain Range also",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The Copper Mountain WSA encompasses 6,858 acres of BLM-administered land without any inholdings or split estate.",
     "url": "https://www.blm.gov/visit/copper-mountain",
     "why": "total-looking"
@@ -4596,7 +4587,7 @@
    "verdict": "ours unknown"
   },
   "US-10929": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Cottonwood Creek Trailhead BLM Recreation Management Area",
    "ours": null,
@@ -4606,7 +4597,7 @@
    "verdict": "no outline"
   },
   "US-10930": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Devil's Playground BLM WSA Wilderness Area",
    "official": null,
@@ -4640,7 +4631,7 @@
    "verdict": "ours unknown"
   },
   "US-10931": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Ferris Mountains BLM WSA Wilderness Area",
    "official": {
@@ -4648,7 +4639,7 @@
     "as": "22,245 acres",
     "clean": false,
     "line": "agram Flickr LinkedIn Ferris Mountains | Wyoming View Map In Full Screen The Ferris Mountains WSA encompasses 22,245 acres of BLM-administered land and one private inholding of 160 acres. The study area is steep and rugged, providin",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The Ferris Mountains WSA encompasses 22,245 acres of BLM-administered land and one private inholding of 160 acres.",
     "url": "https://www.blm.gov/visit/ferris-mountains",
     "why": "total-looking"
@@ -4703,7 +4694,7 @@
    "verdict": "ours unknown"
   },
   "US-10932": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Honeycomb Buttes BLM WSA Wilderness Area",
    "official": {
@@ -4711,13 +4702,13 @@
     "as": "39,908 acres",
     "clean": false,
     "line": "m Flickr LinkedIn Honeycomb Buttes WSA | Wyoming View Map In Full Screen The Honeycomb Buttes WSA encompasses 39,908 acres of BLM-administered land, 640 acres of split estate and 640 acres of state land. This WSA is one of the best",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The Honeycomb Buttes WSA encompasses 39,908 acres of BLM-administered land, 640 acres of split estate and 640 acres of state land.",
     "url": "https://www.blm.gov/visit/honeycomb-buttes-wsa",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 40776,
+    "acres": 41801,
     "manager": "",
     "pieces": [],
     "pin": "inside",
@@ -4732,7 +4723,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 2,
+   "pct": 5,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -4775,7 +4766,7 @@
    "verdict": "agree"
   },
   "US-10933": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Honeycombs BLM WSA Wilderness Area",
    "official": {
@@ -4783,7 +4774,7 @@
     "as": "21,000 acres",
     "clean": false,
     "line": "ook Instagram Flickr LinkedIn Honeycombs WSA | Wyoming View Map In Full Screen The Honeycombs WSA encompasses 21,000 acres of BLM-administered land and 260 acres of split-estate land with minerals held by the state of Wyoming. It co",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The Honeycombs WSA encompasses 21,000 acres of BLM-administered land and 260 acres of split-estate land with minerals held by the state of Wyoming.",
     "url": "https://www.blm.gov/visit/honeycombs-wsa",
     "why": "total-looking"
@@ -4838,7 +4829,7 @@
    "verdict": "ours unknown"
   },
   "US-10934": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lake Mountain BLM WSA Wilderness Area",
    "official": {
@@ -4846,7 +4837,7 @@
     "as": "13,865 acres",
     "clean": false,
     "line": "k Instagram Flickr LinkedIn Lake Mountain | Wyoming View Map In Full Screen The Lake Mountain WSA encompasses 13,865 acres of BLM-administered land and a 40-acre inholding. The study area is in the Wyoming Range and contains an irre",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The Lake Mountain WSA encompasses 13,865 acres of BLM-administered land and a 40-acre inholding.",
     "url": "https://www.blm.gov/visit/lake-mountain",
     "why": "part (a lake, a purchase, a campground…)"
@@ -4902,12 +4893,12 @@
   },
   "US-10935": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Medicine Lodge BLM WSA Wilderness Area",
    "official": null,
    "ours": {
-    "acres": 6537,
+    "acres": 7195,
     "manager": "",
     "pieces": [],
     "pin": "inside",
@@ -4946,8 +4937,7 @@
    "verdict": "unsure"
   },
   "US-10936": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Owl Creek BLM WSA Wilderness Area",
    "official": {
@@ -4955,13 +4945,13 @@
     "as": "710 acres",
     "clean": false,
     "line": "ebook Instagram Flickr LinkedIn Owl Creek WSA | Wyoming View Map In Full Screen The Owl Creek WSA encompasses 710 acres in three units. All three units are located on the major ridge line that divides Rock Creek and the South For",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The Owl Creek WSA encompasses 710 acres in three units.",
     "url": "https://www.blm.gov/visit/owl-creek-wsa",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 536,
+    "acres": 702,
     "manager": "",
     "pieces": [],
     "pin": "inside",
@@ -4976,13 +4966,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 25,
+   "pct": 1,
    "same_agency": false,
-   "score": 5,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 1
    },
    "sizes": [
@@ -5007,10 +4997,10 @@
    ],
    "t": "Wilderness Area",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-10937": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Raymond Mountain BLM WSA Wilderness Area",
    "official": {
@@ -5018,7 +5008,7 @@
     "as": "32,936 acres",
     "clean": false,
     "line": "agram Flickr LinkedIn Raymond Mountain | Wyoming View Map In Full Screen The Raymond Mountain WSA encompasses 32,936 acres of BLM-administered land, 1,329 acres of state land and 200 acres of private inholdings. The study area is in",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The Raymond Mountain WSA encompasses 32,936 acres of BLM-administered land, 1,329 acres of state land and 200 acres of private inholdings.",
     "url": "https://www.blm.gov/visit/raymond-mountain",
     "why": "total-looking"
@@ -5082,7 +5072,7 @@
    "verdict": "ours unknown"
   },
   "US-10938": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Red Butte BLM WSA Wilderness Area",
    "official": {
@@ -5090,7 +5080,7 @@
     "as": "11,350 acres",
     "clean": false,
     "line": "ebook Instagram Flickr LinkedIn Red Butte WSA | Wyoming View Map In Full Screen The Red Butte WSA encompasses 11,350 acres of BLM-administered land. The WSA contains bare, rugged badlands created by peaks and ridges broken by irregu",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The Red Butte WSA encompasses 11,350 acres of BLM-administered land.",
     "url": "https://www.blm.gov/visit/red-butte-wsa",
     "why": "total-looking"
@@ -5136,7 +5126,7 @@
    "verdict": "ours unknown"
   },
   "US-10939": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Red Creek Badlands BLM WSA Wilderness Area",
    "official": {
@@ -5144,7 +5134,7 @@
     "as": "8,020 acres",
     "clean": false,
     "line": "ickr LinkedIn Red Creek Badlands WSA | Wyoming View Map In Full Screen The Red Creek Badlands WSA encompasses 8,020 acres of BLM-administered land and 640 acres of state land. The study area is a fragile watershed and contains high",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The Red Creek Badlands WSA encompasses 8,020 acres of BLM-administered land and 640 acres of state land.",
     "url": "https://www.blm.gov/visit/red-creek-badlands-wsa",
     "why": "total-looking"
@@ -5199,7 +5189,7 @@
    "verdict": "ours unknown"
   },
   "US-10940": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Red Lake BLM WSA Wilderness Area",
    "official": {
@@ -5207,7 +5197,7 @@
     "as": "9,515 acres",
     "clean": false,
     "line": "LinkedIn Red Lake WSA | Wyoming View Map In Full Screen The Red Lake Wilderness Study Area (WSA) encompasses 9,515 acres of BLM-administered land with no private or state inholdings in southwestern Wyoming. Rolling brush covered h",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The Red Lake Wilderness Study Area (WSA) encompasses 9,515 acres of BLM-administered land with no private or state inholdings in southwestern Wyoming.",
     "url": "https://www.blm.gov/visit/red-lake-wsa",
     "why": "part (a lake, a purchase, a campground…)"
@@ -5253,7 +5243,7 @@
    "verdict": "ours unknown"
   },
   "US-10941": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Sand Dunes BLM WSA Wilderness Area",
    "official": {
@@ -5261,13 +5251,13 @@
     "as": "27,109 acres",
     "clean": false,
     "line": "w Map In Full Screen The Sand Dunes WSA is located north and east of the City of Rock Springs. It encompasses 27,109 acres, including 600 acres of split estate land, 640 acres of state land and 160 acres of private land. The study a",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "It encompasses 27,109 acres, including 600 acres of split estate land, 640 acres of state land and 160 acres of private land.",
     "url": "https://www.blm.gov/visit/sand-dunes-wsa-0",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 27977,
+    "acres": 28139,
     "manager": "",
     "pieces": [],
     "pin": "inside",
@@ -5282,7 +5272,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 3,
+   "pct": 4,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -5334,7 +5324,7 @@
    "verdict": "agree"
   },
   "US-10942": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "South Pinnacles BLM WSA Wilderness Area",
    "official": {
@@ -5342,7 +5332,7 @@
     "as": "10,800 acres",
     "clean": false,
     "line": "ram Flickr LinkedIn South Pinnacles WSA | Wyoming View Map In Full Screen The South Pinnacles WSA encompasses 10,800 acres, including 26 acres of split estate land. The study area contains mostly flat topography, with an exposure of",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The South Pinnacles WSA encompasses 10,800 acres, including 26 acres of split estate land.",
     "url": "https://www.blm.gov/visit/south-pinnacles-wsa",
     "why": "total-looking"
@@ -5397,7 +5387,7 @@
    "verdict": "ours unknown"
   },
   "US-10943": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Trapper Creek BLM WSA Wilderness Area",
    "official": {
@@ -5405,7 +5395,7 @@
     "as": "7,200 acres",
     "clean": false,
     "line": "stagram Flickr LinkedIn Trapper Creek WSA | Wyoming View Map In Full Screen The Trapper Creek WSA encompasses 7,200 acres of BLM-administered public land with no private or state inholdings. Trapper Creek is one of the most spectac",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The Trapper Creek WSA encompasses 7,200 acres of BLM-administered public land with no private or state inholdings.",
     "url": "https://www.blm.gov/visit/trapper-creek-wsa",
     "why": "total-looking"
@@ -5451,7 +5441,7 @@
    "verdict": "ours unknown"
   },
   "US-10944": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Twin Buttes BLM WSA Wilderness Area",
    "official": {
@@ -5459,7 +5449,7 @@
     "as": "8,164 acres",
     "clean": false,
     "line": "ll Screen The Twin Buttes Wilderness Study Area (WSA) is located in southwestern Wyoming. The WSA encompasses 8,164 acres characterized by highly eroded badlands with scattered patches of sagebrush, grass and juniper. The Twin Butt",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The WSA encompasses 8,164 acres characterized by highly eroded badlands with scattered patches of sagebrush, grass and juniper.",
     "url": "https://www.blm.gov/visit/twin-buttes-wsa",
     "why": "total-looking"
@@ -5505,7 +5495,7 @@
    "verdict": "ours unknown"
   },
   "US-10945": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Whitehorse Creek BLM WSA Wilderness Area",
    "official": {
@@ -5513,7 +5503,7 @@
     "as": "4,002 acres",
     "clean": false,
     "line": "orse Creek WSA | Wyoming View Map In Full Screen The Whitehorse Creek Wilderness Study Area (WSA) encompasses 4,002 acres of BLM-administered land with no private or state inholdings. A major portion of the WSA is made up of erodin",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The Whitehorse Creek Wilderness Study Area (WSA) encompasses 4,002 acres of BLM-administered land with no private or state inholdings.",
     "url": "https://www.blm.gov/visit/whitehorse-creek-wsa",
     "why": "total-looking"
@@ -5559,7 +5549,7 @@
    "verdict": "ours unknown"
   },
   "US-10946": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Crazy Woman Creek National Battlefield",
    "ours": null,
@@ -5569,7 +5559,7 @@
    "verdict": "no outline"
   },
   "US-10947": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "The Battle of Red Buttes National Battlefield",
    "ours": null,
@@ -5579,13 +5569,13 @@
    "verdict": "no outline"
   },
   "US-11717": {
-   "cause": "a number 17 parks share from one page (500,000 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 17 parks share from the same sentence (500,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Woodruff Narrows State Fish and Wildlife Area",
    "official": null,
    "ours": {
-    "acres": 10,
+    "acres": 19,
     "manager": "",
     "pieces": [
      [
@@ -5601,7 +5591,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -5620,10 +5610,10 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 6,
+   "score": 5,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 0,
     "source": 2
    },
@@ -5643,13 +5633,13 @@
    "verdict": "unsure"
   },
   "US-11718": {
-   "cause": "a number 17 parks share from one page (500,000 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 17 parks share from the same sentence (500,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bear River State Fish and Wildlife Area",
    "official": null,
    "ours": {
-    "acres": 64,
+    "acres": 120,
     "manager": "",
     "pieces": [
      [
@@ -5665,7 +5655,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "",
     "unknown_pieces": 1
    },
@@ -5684,10 +5674,10 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 6,
+   "score": 5,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 0,
     "source": 2
    },
@@ -5709,6 +5699,7 @@
   "US-11741": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Palisades WSA USFS Recreation Area",
    "official": null,
    "ours": {
@@ -5748,13 +5739,13 @@
    "verdict": "no size on page"
   },
   "US-12704": {
-   "cause": "a number 17 parks share from one page (500,000 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 17 parks share from the same sentence (500,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bear River Divide State HMA Wildlife Area",
    "official": null,
    "ours": {
-    "acres": 210936,
+    "acres": 212655,
     "manager": "",
     "pieces": [
      [
@@ -5806,7 +5797,7 @@
    "verdict": "unsure"
   },
   "US-12718": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Kortes Reservoir/Miracle Mile BOR Recreation Site",
    "ours": null,
@@ -5816,8 +5807,8 @@
    "verdict": "no outline"
   },
   "US-12719": {
-   "cause": "a number 17 parks share from one page (500,000 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 17 parks share from the same sentence (500,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Newton Lakes BOR Recreation Site",
    "official": null,
@@ -5874,7 +5865,7 @@
    "verdict": "unsure"
   },
   "US-12720": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Ralston Reservoir BOR & State Fish and Wildlife Area",
    "ours": null,
@@ -5884,7 +5875,7 @@
    "verdict": "no outline"
   },
   "US-12721": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Miles Landing BLM Recreation Management Area",
    "ours": null,
@@ -5894,7 +5885,7 @@
    "verdict": "no outline"
   },
   "US-12722": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Wheatland Reservoir #3 BLM Recreation Management Area",
    "ours": null,
@@ -5904,7 +5895,7 @@
    "verdict": "no outline"
   },
   "US-12723": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Whitetail Day Use BLM Recreation Management Area",
    "ours": null,
@@ -5914,7 +5905,7 @@
    "verdict": "no outline"
   },
   "US-12724": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Prospect Mountain WSA State Wilderness Area",
    "official": {
@@ -5922,7 +5913,7 @@
     "as": "1,145 acres",
     "clean": true,
     "line": "ram Flickr LinkedIn Prospect Mountain | Wyoming View Map In Full Screen The Prospect Mountain WSA encompasses 1,145 acres of BLM-administered land with no inholdings or split estate. The study area is 70 percent forested with lodge",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The Prospect Mountain WSA encompasses 1,145 acres of BLM-administered land with no inholdings or split estate.",
     "url": "https://www.blm.gov/visit/prospect-mountain",
     "why": "clean total"
@@ -5969,7 +5960,7 @@
   },
   "US-12725": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Sweetwater Rocks (Lankin Dome) State Wilderness Area",
    "official": {
@@ -5977,7 +5968,7 @@
     "as": "6,316 acres",
     "clean": false,
     "line": "ckr LinkedIn Sweetwater Rocks (Lankin Dome) | Wyoming View Map In Full Screen The Lankin Dome WSA encompasses 6,316 acres of BLM-administered land, including 360 acres of surface split-estate lands within the boundaries. This WSA i",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The Lankin Dome WSA encompasses 6,316 acres of BLM-administered land, including 360 acres of surface split-estate lands within the boundaries.",
     "url": "https://www.blm.gov/visit/sweetwater-rocks-lankin-dome",
     "why": "total-looking"
@@ -6039,7 +6030,7 @@
    "verdict": "off"
   },
   "US-12726": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Camp Creek State Wildlife Habitat Management Area",
    "official": {
@@ -6047,7 +6038,7 @@
     "as": "150 acres",
     "clean": false,
     "line": "untain Grouse Additional Information: The Camp Creek Wildlife Habitat Management Area (WHMA) is approximately 150 acres, located in the southwest corner of the Gros Ventre mountain range off U.S. Highway 189. This is historic elk",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The Camp Creek Wildlife Habitat Management Area (WHMA) is approximately 150 acres, located in the southwest corner of the Gros Ventre mountain range off U.S.",
     "url": "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Camp-Creek",
     "why": "total-looking"
@@ -6100,8 +6091,8 @@
    "verdict": "agree"
   },
   "US-12727": {
-   "cause": "a number 17 parks share from one page (500,000 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 17 parks share from the same sentence (500,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Patrol Cabin State Wildlife Habitat Management Area",
    "official": null,
@@ -6167,8 +6158,8 @@
    "verdict": "unsure"
   },
   "US-12728": {
-   "cause": "a number 17 parks share from one page (500,000 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 17 parks share from the same sentence (500,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Fall Creek State Wildlife Habitat Management Area",
    "official": null,
@@ -6226,7 +6217,7 @@
    "verdict": "unsure"
   },
   "US-12730": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Dubois Badlands BLM Wilderness Area",
    "official": {
@@ -6234,7 +6225,7 @@
     "as": "4,520 acres",
     "clean": false,
     "line": "stagram Flickr LinkedIn Dubois Badlands | Wyoming View Map In Full Screen The Dubois Badlands WSA encompasses 4,520 acres of BLM-administered land with no split estate or private inholdings. The topography of the area is primarily",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The Dubois Badlands WSA encompasses 4,520 acres of BLM-administered land with no split estate or private inholdings.",
     "url": "https://www.blm.gov/visit/dubois-badlands",
     "why": "total-looking"
@@ -6280,7 +6271,7 @@
    "verdict": "ours unknown"
   },
   "US-12731": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Adobe Town BLM Wilderness Area",
    "official": {
@@ -6288,13 +6279,13 @@
     "as": "82,350 acres",
     "clean": false,
     "line": "SIT QUICK FACTS Location Sweetwater County Nearest Town Wamsutter (25 miles) & Rawlins (80 miles) BLM Acreage 82,350 acres (largest WSA in Wyoming)",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "82,350 acres (largest WSA in Wyoming)",
     "url": "https://www.blm.gov/programs/national-conservation-lands/wyoming/adobe-town-wsa",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 85645,
+    "acres": 86741,
     "manager": "",
     "pieces": [],
     "pin": "inside",
@@ -6309,7 +6300,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 4,
+   "pct": 5,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -6334,7 +6325,7 @@
    "verdict": "agree"
   },
   "US-12732": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Pryor Mountain BLM Wilderness Area",
    "official": {
@@ -6342,7 +6333,7 @@
     "as": "38 million acres",
     "clean": false,
     "line": "research grounds, and outstanding ecological and cultural resources. These areas are diverse--made up of over 38 million acres of National Monuments, National Conservation Areas, Wilderness Areas, Wilderness Study Areas, Wild and Scenic",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "These areas are diverse--made up of over 38 million acres of National Monuments, National Conservation Areas, Wilderness Areas, Wilderness Study Areas, Wild and Scenic Rivers, National Scenic and Historic Trails, and Conservation Lands of the California Desert.",
     "url": "https://www.blm.gov/programs/national-conservation-lands/about",
     "why": "no total words near it"
@@ -6393,7 +6384,7 @@
    "verdict": "ours unknown"
   },
   "US-12733": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Sheep Mountain BLM Wilderness Area",
    "official": {
@@ -6401,7 +6392,7 @@
     "as": "23,250 acres",
     "clean": false,
     "line": "agram Flickr LinkedIn Sheep Mountain WSA | Wyoming View Map In Full Screen The Sheep Mountain WSA encompasses 23,250 acres of BLM-administered public land, and 640 acres of split estate land. The WSA contains bare, rugged badlands c",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The Sheep Mountain WSA encompasses 23,250 acres of BLM-administered public land, and 640 acres of split estate land.",
     "url": "https://www.blm.gov/visit/sheep-mountain-wsa",
     "why": "total-looking"
@@ -6456,8 +6447,7 @@
    "verdict": "ours unknown"
   },
   "US-12734": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Sweetwater Canyon BLM Wilderness Area",
    "official": {
@@ -6465,13 +6455,13 @@
     "as": "9,056 acres",
     "clean": false,
     "line": "ram Flickr LinkedIn Sweetwater Canyon | Wyoming View Map In Full Screen The Sweetwater Canyon WSA encompasses 9,056 acres of BLM-administered land without any split estate or private inholdings. The WSA lies along the southeastern",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The Sweetwater Canyon WSA encompasses 9,056 acres of BLM-administered land without any split estate or private inholdings.",
     "url": "https://www.blm.gov/visit/sweetwater-canyon",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 7521,
+    "acres": 9087,
     "manager": "",
     "pieces": [],
     "pin": "inside",
@@ -6486,13 +6476,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 17,
+   "pct": 0,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -6517,10 +6507,10 @@
    ],
    "t": "BLM Wilderness Area",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-13244": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "1838 Mountain Man Rendezvous State Historic Site",
    "ours": null,
@@ -6530,7 +6520,7 @@
    "verdict": "no outline"
   },
   "US-13245": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Flaming Gorge - Green River Basin Scenic Byway - All-American Road National Parkway",
    "ours": null,
@@ -6540,20 +6530,18 @@
    "verdict": "no outline"
   },
   "US-3292": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bear River State Park",
    "official": null,
    "ours": {
-    "acres": 229,
+    "acres": 328,
     "dissolved": {
      "after": 328,
      "before": 654,
      "copies": 1,
-     "key_union": 229,
      "parts": 0,
      "records": 2,
-     "summed": 328,
      "tracts": 1
     },
     "manager": "",
@@ -6592,12 +6580,12 @@
    "verdict": "no size on page"
   },
   "US-3293": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Boysen State Park",
    "official": null,
    "ours": {
-    "acres": 45634,
+    "acres": 45061,
     "family_fold": "layers {'sgwyb': 36090, 'padus': 2337}: one land in 2 layers, the sgwyb copy used (2,337 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -6634,12 +6622,12 @@
    "verdict": "no size on page"
   },
   "US-3294": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Buffalo Bill State Park",
    "official": null,
    "ours": {
-    "acres": 14879,
+    "acres": 13946,
     "family_fold": "layers {'padus': 13946, 'sgwyb': 10353}: one land in 2 layers, the padus copy used (10,353 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -6688,12 +6676,12 @@
    "verdict": "no size on page"
   },
   "US-3295": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Curt Gowdy State Park",
    "official": null,
    "ours": {
-    "acres": 4346,
+    "acres": 3599,
     "family_fold": "layers {'sgwyb': 3599, 'padus': 833}: one land in 2 layers, the sgwyb copy used (833 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -6736,12 +6724,12 @@
    "verdict": "no size on page"
   },
   "US-3296": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Edness Kimball Wilkins State Park",
    "official": null,
    "ours": {
-    "acres": 187,
+    "acres": 354,
     "manager": "",
     "pieces": [
      [
@@ -6751,7 +6739,7 @@
       "words"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 1
    },
@@ -6764,10 +6752,10 @@
     }
    ],
    "pct": null,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 1,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -6777,7 +6765,7 @@
    "verdict": "no size on page"
   },
   "US-3297": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Glendo State Park",
    "official": null,
@@ -6819,20 +6807,18 @@
    "verdict": "no size on page"
   },
   "US-3298": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Guernsey State Park",
    "official": null,
    "ours": {
-    "acres": 9960,
+    "acres": 8811,
     "dissolved": {
      "after": 8811,
      "before": 17332,
      "copies": 1,
-     "key_union": 9960,
      "parts": 0,
      "records": 3,
-     "summed": 8811,
      "tracts": 2
     },
     "manager": "",
@@ -6877,12 +6863,12 @@
    "verdict": "no size on page"
   },
   "US-3299": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Hot Springs State Park",
    "official": null,
    "ours": {
-    "acres": 1021,
+    "acres": 1101,
     "family_fold": "layers {'sgwyb': 1101, 'padus': 395}: one land in 2 layers, the sgwyb copy used (395 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -6919,17 +6905,17 @@
    "verdict": "no size on page"
   },
   "US-3300": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Keyhole State Park",
    "official": null,
    "ours": {
-    "acres": 19407,
+    "acres": 18995,
     "dissolved": {
      "after": 16010,
      "before": 31854,
      "copies": 1,
-     "key_union": 19407,
+     "key_union": 18995,
      "parts": 0,
      "records": 2,
      "summed": 16010,
@@ -6971,12 +6957,12 @@
    "verdict": "no size on page"
   },
   "US-3301": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Seminoe State Park",
    "official": null,
    "ours": {
-    "acres": 46217,
+    "acres": 50496,
     "family_fold": "layers {'padus': 34202, 'sgwyb': 2844}: one land in 2 layers, the padus copy used (2,844 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -7013,12 +6999,12 @@
    "verdict": "no size on page"
   },
   "US-3302": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Sinks Canyon State Park",
    "official": null,
    "ours": {
-    "acres": 669,
+    "acres": 599,
     "family_fold": "layers {'sgwyb': 599, 'padus': 79}: one land in 2 layers, the sgwyb copy used (79 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -7029,7 +7015,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 1
    },
@@ -7042,10 +7028,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -7057,8 +7043,9 @@
   "US-4394": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Ashley National Forest",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-WY': 96184, 'US-UT': 1282369})",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-UT': 1282369, 'US-WY': 96184})",
    "official": {
     "acres": 1400000.0,
     "as": "1.4 million acres",
@@ -7093,8 +7080,8 @@
     "pin": "inside",
     "src": "USGS PAD-US",
     "states": [
-     "US-WY",
-     "US-UT"
+     "US-UT",
+     "US-WY"
     ],
     "unknown_pieces": 0,
     "whole_park": true
@@ -7135,6 +7122,7 @@
    "cause": "agency bigger: our outline may miss a tract",
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Medicine Bow - Routt National Forest",
    "note": "whole park compared (POTA lists it in 2 states: {'US-WY': 1084397, 'US-CO': 1255233})",
    "official": {
@@ -7213,8 +7201,9 @@
    "cause": "whole park compared (POTA lists it in 2 states: {'US-WY': 302612, 'US-ID': 2543225})",
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Caribou-Targhee National Forest",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-WY': 302612, 'US-ID': 2543225})",
+   "note": "whole park compared (POTA lists it in 4 states: {'US-UT': 302276, 'US-MT': 302276, 'US-ID': 2845501, 'US-WY': 302612})",
    "official": {
     "acres": 25000.0,
     "as": "25,000 acres",
@@ -7226,9 +7215,11 @@
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 2845837,
+    "acres": 3752665,
     "acres_by_state": {
-     "US-ID": 2543225,
+     "US-ID": 2845501,
+     "US-MT": 302276,
+     "US-UT": 302276,
      "US-WY": 302612
     },
     "manager": "",
@@ -7237,13 +7228,13 @@
       2809,
       "Caribou-Targhee National Forest (Targhee National Forest)",
       294438,
-      "name"
+      "reviewed"
      ],
      [
       2781,
       "Caribou-Targhee National Forest (Caribou National Forest)",
       7838,
-      "name"
+      "reviewed"
      ],
      [
       2624,
@@ -7261,10 +7252,10 @@
     "pin": "well outside",
     "src": "USGS PAD-US",
     "states": [
-     "US-WY",
-     "US-ID",
+     "US-UT",
      "US-MT",
-     "US-UT"
+     "US-ID",
+     "US-WY"
     ],
     "unknown_pieces": 0,
     "whole_park": true
@@ -7304,8 +7295,9 @@
   "US-4524": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Black Hills National Forest",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-SD': 1074898, 'US-WY': 176357})",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-WY': 176357, 'US-SD': 1251255})",
    "official": {
     "acres": 1200000.0,
     "as": "1.2 million acres",
@@ -7317,9 +7309,9 @@
     "why": "clean total"
    },
    "ours": {
-    "acres": 1251255,
+    "acres": 1427612,
     "acres_by_state": {
-     "US-SD": 1074898,
+     "US-SD": 1251255,
      "US-WY": 176357
     },
     "manager": "",
@@ -7328,20 +7320,20 @@
       2697,
       "Black Hills National Forest",
       176135,
-      "name"
+      "reviewed"
      ],
      [
       2617,
       "Black Hills National Forest",
       222,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "well outside",
     "src": "USGS PAD-US",
     "states": [
-     "US-SD",
-     "US-WY"
+     "US-WY",
+     "US-SD"
     ],
     "unknown_pieces": 0,
     "whole_park": true
@@ -7354,7 +7346,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 4,
+   "pct": 19,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -7376,11 +7368,12 @@
    ],
    "t": "National Forest",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "off"
   },
   "US-4534": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Bighorn National Forest",
    "official": null,
    "ours": {
@@ -7422,6 +7415,7 @@
   "US-4535": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Bridger-Teton National Forest",
    "official": {
     "acres": 3400000.0,
@@ -7507,6 +7501,7 @@
   "US-4536": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Shoshone National Forest",
    "official": {
     "acres": 2400000.0,
@@ -7575,7 +7570,7 @@
    "verdict": "agree"
   },
   "US-4558": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Continental Divide Trail National Scenic Trail",
    "note": "whole park compared (POTA lists it in 0 states: {})",
@@ -7588,11 +7583,11 @@
     "pin": "inside",
     "src": "",
     "states": [
-     "US-WY",
+     "US-CO",
      "US-NM",
+     "US-WY",
      "US-ID",
-     "US-MT",
-     "US-CO"
+     "US-MT"
     ],
     "unknown_pieces": 1,
     "whole_park": true
@@ -7619,7 +7614,7 @@
    "verdict": "ours unknown"
   },
   "US-4566": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "California National Historic Trail",
    "note": "whole park compared (POTA lists it in 0 states: {})",
@@ -7632,16 +7627,16 @@
     "pin": "inside",
     "src": "",
     "states": [
+     "US-CA",
+     "US-CO",
+     "US-OR",
+     "US-UT",
+     "US-NV",
+     "US-NE",
+     "US-MO",
      "US-KS",
      "US-WY",
-     "US-MO",
-     "US-NE",
-     "US-ID",
-     "US-CA",
-     "US-OR",
-     "US-CO",
-     "US-NV",
-     "US-UT"
+     "US-ID"
     ],
     "unknown_pieces": 1,
     "whole_park": true
@@ -7683,7 +7678,7 @@
    "verdict": "ours unknown"
   },
   "US-4573": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Mormon Pioneer National Historic Trail",
    "note": "whole park compared (POTA lists it in 0 states: {})",
@@ -7696,11 +7691,11 @@
     "pin": "inside",
     "src": "",
     "states": [
-     "US-WY",
+     "US-UT",
      "US-NE",
      "US-IA",
      "US-IL",
-     "US-UT"
+     "US-WY"
     ],
     "unknown_pieces": 1,
     "whole_park": true
@@ -7742,7 +7737,7 @@
    "verdict": "ours unknown"
   },
   "US-4574": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Nez Perce National Historic Trail",
    "note": "whole park compared (POTA lists it in 0 states: {})",
@@ -7755,10 +7750,10 @@
     "pin": "inside",
     "src": "",
     "states": [
+     "US-OR",
      "US-WY",
      "US-ID",
-     "US-MT",
-     "US-OR"
+     "US-MT"
     ],
     "unknown_pieces": 1,
     "whole_park": true
@@ -7785,7 +7780,7 @@
    "verdict": "ours unknown"
   },
   "US-4576": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Oregon National Historic Trail",
    "note": "whole park compared (POTA lists it in 0 states: {})",
@@ -7798,13 +7793,13 @@
     "pin": "inside",
     "src": "",
     "states": [
+     "US-OR",
+     "US-NE",
+     "US-WA",
+     "US-MO",
      "US-KS",
      "US-WY",
-     "US-MO",
-     "US-NE",
-     "US-ID",
-     "US-WA",
-     "US-OR"
+     "US-ID"
     ],
     "unknown_pieces": 1,
     "whole_park": true
@@ -7851,7 +7846,7 @@
    "verdict": "ours unknown"
   },
   "US-4578": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Pony Express National Historic Trail",
    "note": "whole park compared (POTA lists it in 0 states: {})",
@@ -7864,14 +7859,14 @@
     "pin": "inside",
     "src": "",
     "states": [
-     "US-KS",
-     "US-WY",
-     "US-MO",
-     "US-NE",
      "US-CA",
      "US-CO",
+     "US-UT",
      "US-NV",
-     "US-UT"
+     "US-NE",
+     "US-MO",
+     "US-KS",
+     "US-WY"
     ],
     "unknown_pieces": 1,
     "whole_park": true
@@ -7925,8 +7920,9 @@
   "US-5793": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Flaming Gorge National Recreation Area",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-WY': 201211, 'US-UT': 201231})",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-UT': 201231, 'US-WY': 201211})",
    "official": null,
    "ours": {
     "acres": 402442,
@@ -7947,8 +7943,8 @@
     "pin": "inside",
     "src": "USGS PAD-US",
     "states": [
-     "US-WY",
-     "US-UT"
+     "US-UT",
+     "US-WY"
     ],
     "unknown_pieces": 0,
     "whole_park": true
@@ -7980,12 +7976,12 @@
    "verdict": "no size on page"
   },
   "US-6107": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Hawk Springs State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 1333,
+    "acres": 1528,
     "manager": "",
     "pieces": [
      [
@@ -7995,7 +7991,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 1
    },
@@ -8008,10 +8004,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -8022,7 +8018,7 @@
   },
   "US-6108": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 1,716 acres, no total words near it)",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Table Mountain Wildlife Management Area",
    "official": {
@@ -8030,7 +8026,7 @@
     "as": "1,716 acres",
     "clean": false,
     "line": "Fish Commission entered into a cooperative agreement with the U.S. Bureau of Land Management (BLM) to manage 1,716 acres of Canada geese habitat. Wyoming Game and Fish Department has made extensive wetland improvements, resulting",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Bureau of Land Management (BLM) to manage 1,716 acres of Canada geese habitat.",
     "url": "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Table-Mountain",
     "why": "no total words near it"
@@ -8107,8 +8103,7 @@
    "verdict": "unsure"
   },
   "US-6109": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Springer/ Bump Sullivan Wildlife Management Area",
    "official": {
@@ -8116,13 +8111,13 @@
     "as": "3,420 acres",
     "clean": false,
     "line": "and is considered by many to be one of the best pheasant and goose hunting areas in the state. Consisting of 3,420 acres along U.S. Highway 85, this particular wildlife habitat management area was originally purchased to provide p",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Consisting of 3,420 acres along U.S.",
     "url": "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Springer-Bump-Sullivan",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 2890,
+    "acres": 3415,
     "family_fold": "layers {'padus': 3087, 'sgwyc': 3415}: one land in 2 layers, the sgwyc copy used (3,087 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -8145,7 +8140,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -8157,13 +8152,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 15,
+   "pct": 0,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 2,
-    "size": 0,
+    "pin": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -8179,10 +8174,10 @@
    ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-6110": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Rawhide Wildlife Management Area",
    "official": {
@@ -8190,7 +8185,7 @@
     "as": "812 acres",
     "clean": false,
     "line": "ment Area is two miles south of Lingle and eight miles northwest of Torrington on the North Platte River. The 812 acres was purchased by the Wyoming Game and Fish Commission to replace the riparian habitat lost when Grayrocks Res",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The 812 acres was purchased by the Wyoming Game and Fish Commission to replace the riparian habitat lost when Grayrocks Reservoir was constructed near Wheatland in the late 1970s.",
     "url": "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Rawhide",
     "why": "part (a lake, a purchase, a campground…)"
@@ -8258,7 +8253,7 @@
    "verdict": "agree"
   },
   "US-6111": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Register Cliff State Historic Site",
    "official": null,
@@ -8299,7 +8294,7 @@
    "verdict": "no size on page"
   },
   "US-6112": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Cottonwood Draw Wildlife Management Area",
    "official": {
@@ -8307,7 +8302,7 @@
     "as": "699 acre",
     "clean": false,
     "line": "areas. The north shore may also be used for overnight camping by boaters. In addition, public access into the 699-acre Cottonwood Draw area is provided. Cottonwood Draw is managed to provide wildlife habitat and quality wildlife",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "In addition, public access into the 699-acre Cottonwood Draw area is provided.",
     "url": "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Cottonwood-Draw",
     "why": "total-looking"
@@ -8379,7 +8374,7 @@
   },
   "US-6113": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 146,880 acre, no total words near it)",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Grayrocks Reservoir State Recreation Area",
    "official": {
@@ -8387,7 +8382,7 @@
     "as": "146,880 acre",
     "clean": false,
     "line": "g water for the coal-fired Laramie River Station. The normal water elevation is 4,404 feet with a capacity of 146,880 acre-feet and maximum depth of 74 feet. These lands are managed for public recreation and to improve present wildl",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The normal water elevation is 4,404 feet with a capacity of 146,880 acre-feet and maximum depth of 74 feet.",
     "url": "https://wgfd.wyo.gov/Public-Access/Public-Access-Areas/Grayrocks-Reservoir",
     "why": "no total words near it"
@@ -8463,7 +8458,7 @@
    "verdict": "unsure"
   },
   "US-6114": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Oregon Trail Ruts State Historic Site",
    "official": null,
@@ -8478,7 +8473,7 @@
       "name (designation code ignored)"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -8491,10 +8486,10 @@
     }
    ],
    "pct": null,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 1
    },
@@ -8504,15 +8499,15 @@
    "verdict": "no size on page"
   },
   "US-6115": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Historic Governors' Mansion State Historic Site",
    "official": null,
    "ours": {
-    "acres": 1,
+    "acres": 0,
     "manager": "",
     "pieces": [],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
@@ -8525,22 +8520,23 @@
     }
    ],
    "pct": null,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
    "sizes": [],
    "t": "State Historic Site",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "ours unknown"
   },
   "US-6116": {
    "cause": "agency bigger: our outline may miss a tract",
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Thunder Basin National Grassland",
    "official": {
     "acres": 2900000.0,
@@ -8600,17 +8596,24 @@
    "verdict": "off"
   },
   "US-6117": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Camp Douglas WW-II POW Officers' Club State Historic Site",
    "official": null,
    "ours": {
-    "acres": 0,
+    "acres": 1,
     "manager": "",
-    "pieces": [],
-    "pin": "just outside",
+    "pieces": [
+     [
+      "sgwyb50",
+      "Camp Douglas",
+      1,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
     "src": "",
-    "unknown_pieces": 1
+    "unknown_pieces": 0
    },
    "owner_now": null,
    "pages": [
@@ -8621,34 +8624,32 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
    "sizes": [],
    "t": "State Historic Site",
    "ver": 15,
-   "verdict": "ours unknown"
+   "verdict": "no size on page"
   },
   "US-6118": {
-   "cause": "a number 17 parks share from one page (500,000 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 17 parks share from the same sentence (500,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Tom Thorne/Beth Williams Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 2537,
+    "acres": 2963,
     "dissolved": {
      "after": 2963,
      "before": 5924,
      "copies": 1,
-     "key_union": 2537,
      "parts": 0,
      "records": 2,
-     "summed": 2963,
      "tracts": 1
     },
     "manager": "",
@@ -8703,7 +8704,7 @@
    "verdict": "unsure"
   },
   "US-6119": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Wyoming Pioneer Memorial Museum State Historic Site",
    "ours": null,
@@ -8713,20 +8714,18 @@
    "verdict": "no outline"
   },
   "US-6120": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Ames Monument State Historic Site",
    "official": null,
    "ours": {
-    "acres": 5,
+    "acres": 8,
     "dissolved": {
      "after": 8,
      "before": 16,
      "copies": 1,
-     "key_union": 5,
      "parts": 0,
      "records": 2,
-     "summed": 8,
      "tracts": 1
     },
     "manager": "",
@@ -8765,7 +8764,7 @@
    "verdict": "no size on page"
   },
   "US-6121": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Fort Fetterman State Historic Site",
    "official": null,
@@ -8806,20 +8805,18 @@
    "verdict": "no size on page"
   },
   "US-6122": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Wyoming Territorial Prison State Historic Site",
    "official": null,
    "ours": {
-    "acres": 176,
+    "acres": 208,
     "dissolved": {
      "after": 208,
      "before": 416,
      "copies": 1,
-     "key_union": 176,
      "parts": 0,
      "records": 2,
-     "summed": 208,
      "tracts": 1
     },
     "manager": "",
@@ -8832,7 +8829,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -8845,10 +8842,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -8859,7 +8856,7 @@
   },
   "US-6123": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Forbes/ Sheep Mountain Wildlife Management Area",
    "official": {
@@ -8867,13 +8864,13 @@
     "as": "950 acre",
     "clean": false,
     "line": ": Travel 22 miles west of Laramie on Wyoming Highway 130 and then nine miles south on the Fox Creek Road. The 950-acre area is at the western end of Sheep Mountain and is an important winter-feeding site for about 500 deer and 3",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The 950-acre area is at the western end of Sheep Mountain and is an important winter-feeding site for about 500 deer and 300 elk.",
     "url": "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Forbes-Sheep-Mountain",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 1574,
+    "acres": 1582,
     "dissolved": {
      "after": 1582,
      "before": 2533,
@@ -8884,7 +8881,7 @@
      },
      "family_fold": 628,
      "family_used": "padus",
-     "key_union": 1574,
+     "key_union": 1582,
      "parts": 0,
      "records": 3,
      "summed": 954,
@@ -8913,7 +8910,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 66,
+   "pct": 67,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -8956,7 +8953,7 @@
    "verdict": "off"
   },
   "US-6124": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Old Fort Reno State Historic Site",
    "official": null,
@@ -9002,20 +8999,12 @@
    "verdict": "no size on page"
   },
   "US-6125": {
-   "cause": "agency bigger: our outline may miss a tract",
+   "cause": "a number 4 parks share from the same sentence (55,000 ac): an agency total, not this park",
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Platte River Wilderness Area",
-   "official": {
-    "acres": 55000.0,
-    "as": "55,000 acres",
-    "clean": false,
-    "line": "tain area is located north of Interstate 80 between Laramie and Cheyenne in Albany County, Wyo. Approximately 55,000 acres in size, Pole… Sierra Madre Area Southwest of Saratoga, Wyo. on the Medicine Bow National Forest lies the Sie",
-    "read": "2026-11-09",
-    "sent": "Approximately 55,000 acres in size, Pole…",
-    "url": "https://www.fs.usda.gov/recarea/mbr/recarea/?recid=80837",
-    "why": "total-looking"
-   },
+   "official": null,
    "ours": {
     "acres": 23300,
     "manager": "",
@@ -9027,7 +9016,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -9039,7 +9028,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 58,
+   "pct": null,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -9061,15 +9050,16 @@
    ],
    "t": "Wilderness Area",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "unsure"
   },
   "US-6126": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Wick/ Beumee Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 23978,
+    "acres": 22325,
     "family_fold": "layers {'sgwyc': 22325, 'padus': 21758}: one land in 2 layers, the sgwyc copy used (21,758 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -9106,20 +9096,12 @@
    "verdict": "no size on page"
   },
   "US-6127": {
-   "cause": "agency bigger: our outline may miss a tract",
+   "cause": "a number 4 parks share from the same sentence (55,000 ac): an agency total, not this park",
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Savage Run Wilderness Area",
-   "official": {
-    "acres": 55000.0,
-    "as": "55,000 acres",
-    "clean": false,
-    "line": "tain area is located north of Interstate 80 between Laramie and Cheyenne in Albany County, Wyo. Approximately 55,000 acres in size, Pole… Sierra Madre Area Southwest of Saratoga, Wyo. on the Medicine Bow National Forest lies the Sie",
-    "read": "2026-11-09",
-    "sent": "Approximately 55,000 acres in size, Pole…",
-    "url": "https://www.fs.usda.gov/recarea/mbr/recarea/?recid=80846",
-    "why": "total-looking"
-   },
+   "official": null,
    "ours": {
     "acres": 15284,
     "manager": "",
@@ -9143,7 +9125,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 72,
+   "pct": null,
    "same_agency": false,
    "score": 5,
    "score_parts": {
@@ -9165,10 +9147,10 @@
    ],
    "t": "Wilderness Area",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "unsure"
   },
   "US-6129": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "National Historic Trails Interpretive Center National Historic Site",
    "ours": null,
@@ -9178,22 +9160,14 @@
    "verdict": "no outline"
   },
   "US-6130": {
-   "cause": "agency bigger: our outline may miss a tract",
+   "cause": "a number 4 parks share from the same sentence (55,000 ac): an agency total, not this park",
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Encampment River Wilderness Area",
-   "official": {
-    "acres": 55000.0,
-    "as": "55,000 acres",
-    "clean": false,
-    "line": "tain area is located north of Interstate 80 between Laramie and Cheyenne in Albany County, Wyo. Approximately 55,000 acres in size, Pole… Sierra Madre Area Southwest of Saratoga, Wyo. on the Medicine Bow National Forest lies the Sie",
-    "read": "2026-11-09",
-    "sent": "Approximately 55,000 acres in size, Pole…",
-    "url": "https://www.fs.usda.gov/recarea/mbr/recarea/?recid=80843",
-    "why": "total-looking"
-   },
+   "official": null,
    "ours": {
-    "acres": 13541,
+    "acres": 14681,
     "manager": "",
     "pieces": [
      [
@@ -9215,7 +9189,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 75,
+   "pct": null,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -9237,10 +9211,10 @@
    ],
    "t": "Wilderness Area",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "unsure"
   },
   "US-6131": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bessemer Bend BLM Historic Preservation Site",
    "ours": null,
@@ -9250,20 +9224,18 @@
    "verdict": "no outline"
   },
   "US-6132": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Dry Creek Petrified Tree BLM Interpretive Site",
    "official": null,
    "ours": {
-    "acres": 2959,
+    "acres": 2553,
     "dissolved": {
      "after": 2553,
      "before": 5106,
      "copies": 1,
-     "key_union": 2959,
      "parts": 0,
      "records": 2,
-     "summed": 2553,
      "tracts": 1
     },
     "manager": "",
@@ -9302,20 +9274,12 @@
    "verdict": "no size on page"
   },
   "US-6133": {
-   "cause": "agency bigger: our outline may miss a tract",
+   "cause": "a number 4 parks share from the same sentence (55,000 ac): an agency total, not this park",
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Huston Park Wilderness Area",
-   "official": {
-    "acres": 55000.0,
-    "as": "55,000 acres",
-    "clean": false,
-    "line": "tain area is located north of Interstate 80 between Laramie and Cheyenne in Albany County, Wyo. Approximately 55,000 acres in size, Pole… Sierra Madre Area Southwest of Saratoga, Wyo. on the Medicine Bow National Forest lies the Sie",
-    "read": "2026-11-09",
-    "sent": "Approximately 55,000 acres in size, Pole…",
-    "url": "https://www.fs.usda.gov/recarea/mbr/recarea/?recid=80840",
-    "why": "total-looking"
-   },
+   "official": null,
    "ours": {
     "acres": 31057,
     "manager": "",
@@ -9339,7 +9303,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 44,
+   "pct": null,
    "same_agency": false,
    "score": 5,
    "score_parts": {
@@ -9361,10 +9325,10 @@
    ],
    "t": "Wilderness Area",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "unsure"
   },
   "US-6134": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Indian Bathtubs Trail BLM Recreation Management Area",
    "ours": null,
@@ -9374,7 +9338,7 @@
    "verdict": "no outline"
   },
   "US-6135": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Pennock Mountain Wildlife Management Area",
    "official": {
@@ -9382,7 +9346,7 @@
     "as": "9860 acre",
     "clean": false,
     "line": "found within this WHMA area. Doves Rabbit Sage Grouse Waterfowl Mountain Grouse Additional Information: This 9860-acre wildlife habitat management area is five miles northeast of Saratoga in the foothills below Pennock Mountain.",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "This 9860-acre wildlife habitat management area is five miles northeast of Saratoga in the foothills below Pennock Mountain.",
     "url": "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Pennock-Mountain",
     "why": "total-looking"
@@ -9404,7 +9368,7 @@
       273812,
       "Pennock Mountain Wildlife Habitat Management Area",
       9864,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "well outside",
@@ -9453,7 +9417,7 @@
    "verdict": "agree"
   },
   "US-6136": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Encampment River Canyon BLM Recreation Management Area",
    "official": {
@@ -9461,7 +9425,7 @@
     "as": "4,547 acre",
     "clean": false,
     "line": "ver. Located two miles south of Encampment and easily accessible from BLM's Encampment River Campground, this 4,547-acre WSA contains grasslands, riparian areas and forested slopes. All 4,547 acres of this WSA were recommended for",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Located two miles south of Encampment and easily accessible from BLM's Encampment River Campground, this 4,547-acre WSA contains grasslands, riparian areas and forested slopes.",
     "url": "https://www.blm.gov/visit/encampment-river-canyon",
     "why": "part (a lake, a purchase, a campground…)"
@@ -9516,12 +9480,12 @@
    "verdict": "ours unknown"
   },
   "US-6137": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Fort Phil Kearny State Historic Site",
    "official": null,
    "ours": {
-    "acres": 351,
+    "acres": 717,
     "family_fold": "layers {'sgwyb': 717, 'padus': 697}: one land in 2 layers, the sgwyb copy used (697 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -9532,7 +9496,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -9545,10 +9509,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -9558,7 +9522,7 @@
    "verdict": "no size on page"
   },
   "US-6138": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Hole-in-the-Wall BLM Recreation Management Area",
    "official": null,
@@ -9608,7 +9572,7 @@
    "verdict": "no size on page"
   },
   "US-6139": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bud Love Wildlife Management Area",
    "official": {
@@ -9616,7 +9580,7 @@
     "as": "7,900 acre",
     "clean": false,
     "line": "t Sage Grouse Sandhill Crane Sharp tailed Grouse Turkey Waterfowl Mountain Grouse Additional Information: The 7,900 acre Bud Love Wildlife Habitat Management Area was established in 1970 to provide crucial winter habitat for big g",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The 7,900 acre Bud Love Wildlife Habitat Management Area was established in 1970 to provide crucial winter habitat for big game species.",
     "url": "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Bud-Love",
     "why": "history"
@@ -9687,7 +9651,7 @@
    "verdict": "agree"
   },
   "US-6140": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Middle Fork Powder River BLM Recreation Management Area",
    "official": null,
@@ -9749,7 +9713,7 @@
    "verdict": "no size on page"
   },
   "US-6141": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Morgan Creek Wildlife Management Area",
    "official": {
@@ -9757,21 +9721,19 @@
     "as": "4,752 acres",
     "clean": false,
     "line": "rough a cooperative agreement with the U.S. Bureau of Reclamation, the Wyoming Game & Fish Department manages 4,752 acres of land acquired in 1963. The Morgan Creek Wildlife Habitat Management Area, located 30 miles north of Sincla",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Bureau of Reclamation, the Wyoming Game & Fish Department manages 4,752 acres of land acquired in 1963.",
     "url": "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Morgan-Creek",
     "why": "history"
    },
    "ours": {
-    "acres": 4126,
+    "acres": 4819,
     "dissolved": {
      "after": 4819,
      "before": 9449,
      "copies": 1,
-     "key_union": 4126,
      "parts": 0,
      "records": 3,
-     "summed": 4819,
      "tracts": 2
     },
     "manager": "",
@@ -9807,7 +9769,7 @@
      "why": "about / history page of the park's site"
     }
    ],
-   "pct": 13,
+   "pct": 1,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -9841,17 +9803,17 @@
    "verdict": "agree"
   },
   "US-6142": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Fort Fred Steele State Historic Site",
    "official": null,
    "ours": {
-    "acres": 136,
+    "acres": 176,
     "dissolved": {
      "after": 166,
      "before": 332,
      "copies": 1,
-     "key_union": 136,
+     "key_union": 176,
      "parts": 0,
      "records": 2,
      "summed": 166,
@@ -9893,7 +9855,7 @@
    "verdict": "no size on page"
   },
   "US-6143": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Outlaw Cave Trail BLM Recreation Management Area",
    "official": null,
@@ -9927,7 +9889,7 @@
    "verdict": "ours unknown"
   },
   "US-6144": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Trail End State Historic Site",
    "official": null,
@@ -9968,7 +9930,7 @@
    "verdict": "no size on page"
   },
   "US-6145": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Ed O. Taylor Wildlife Management Area",
    "official": {
@@ -9976,7 +9938,7 @@
     "as": "10,215 acre",
     "clean": false,
     "line": "cee near the south end of the Big Horn Mountains. The area straddles the Middle Fork of the Powder River. The 10,215-acre area was purchased in 1971 to ensure the protection of winter range for elk, which summer in the Bighorn Nati",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The 10,215-acre area was purchased in 1971 to ensure the protection of winter range for elk, which summer in the Bighorn National Forest.",
     "url": "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Ed-O-Taylor",
     "why": "history"
@@ -10060,6 +10022,7 @@
   "US-6146": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Cloud Peak Wilderness Area",
    "official": null,
    "ours": {
@@ -10099,12 +10062,12 @@
    "verdict": "no size on page"
   },
   "US-6147": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Independence Rock State Historic Site",
    "official": null,
    "ours": {
-    "acres": 144,
+    "acres": 204,
     "family_fold": "layers {'sgwyb': 204, 'padus': 139}: one land in 2 layers, the sgwyb copy used (139 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -10141,7 +10104,7 @@
    "verdict": "no size on page"
   },
   "US-6148": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Connor Battlefield State Historic Site",
    "official": null,
@@ -10182,7 +10145,7 @@
    "verdict": "no size on page"
   },
   "US-6149": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Martin's Cove National Historic Site",
    "ours": null,
@@ -10192,7 +10155,7 @@
    "verdict": "no outline"
   },
   "US-6150": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Medicine Lodge Archaeological Site State Park",
    "official": null,
@@ -10226,7 +10189,7 @@
    "verdict": "ours unknown"
   },
   "US-6151": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Amsden Creek Wildlife Management Area",
    "official": {
@@ -10234,7 +10197,7 @@
     "as": "4,100 acre",
     "clean": false,
     "line": "t Sage Grouse Sandhill Crane Sharp tailed Grouse Turkey Waterfowl Mountain Grouse Additional Information: The 4,100 acre Amsden Creek Wildlife Habitat Management Area was established between 1944 through 1966 to provide crucial wi",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The 4,100 acre Amsden Creek Wildlife Habitat Management Area was established between 1944 through 1966 to provide crucial winter range and maintain summer ranges for elk and mule deer.",
     "url": "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Amsden-Creek",
     "why": "history"
@@ -10302,7 +10265,7 @@
    "verdict": "agree"
   },
   "US-6152": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Medicine Lodge Wildlife Management Area",
    "official": {
@@ -10310,7 +10273,7 @@
     "as": "12,700 acres",
     "clean": false,
     "line": "ission, State Land and Farm Loan Office and the U.S. Bureau of Land Management was instituted to maintain the 12,700 acres. Elevations vary from 4,000 feet to almost 9,000 feet with canyons and steep walls along Wet and Dry Medicine",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Bureau of Land Management was instituted to maintain the 12,700 acres.",
     "url": "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Medicine-Lodge",
     "why": "no total words near it"
@@ -10378,7 +10341,7 @@
    "verdict": "agree"
   },
   "US-6154": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Renner State Wildlife Habitat Management Area",
    "official": {
@@ -10386,7 +10349,7 @@
     "as": "15,725 acre",
     "clean": false,
     "line": "s Partridge Pheasant Rabbit Sage Grouse Sandhill Crane Waterfowl Mountain Grouse Additional Information: This 15,725-acre Wildlife Habitat Management Area is five miles southeast of Hyattville and is co-managed by the Wyoming Game",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "This 15,725-acre Wildlife Habitat Management Area is five miles southeast of Hyattville and is co-managed by the Wyoming Game and Fish Department, U.S.",
     "url": "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Renner",
     "why": "total-looking"
@@ -10457,7 +10420,7 @@
    "verdict": "agree"
   },
   "US-6155": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Big Cedar Ridge Fossil Site BLM Special Recreation Management Area",
    "ours": null,
@@ -10467,8 +10430,8 @@
    "verdict": "no outline"
   },
   "US-6156": {
-   "cause": "a number 17 parks share from one page (500,000 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 17 parks share from the same sentence (500,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Red Rim- Grizzly Wildlife Management Area",
    "official": null,
@@ -10498,7 +10461,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -10517,10 +10480,10 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -10540,7 +10503,7 @@
    "verdict": "unsure"
   },
   "US-6157": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Split Rock BLM Interpretive Site",
    "official": null,
@@ -10574,7 +10537,7 @@
    "verdict": "ours unknown"
   },
   "US-6158": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Kerns Wildlife Management Area",
    "official": {
@@ -10582,7 +10545,7 @@
     "as": "4,995 acres",
     "clean": false,
     "line": "thwest of Parkman in the Big Horn Mountains and provides crucial winter range for about 800 elk. This area of 4,995 acres was acquired between 1949 and 1970. The area consists of foothill benches separated by deep canyons, with ele",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "This area of 4,995 acres was acquired between 1949 and 1970.",
     "url": "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Kerns",
     "why": "history"
@@ -10607,7 +10570,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -10626,10 +10589,10 @@
    ],
    "pct": 1,
    "same_agency": false,
-   "score": 8,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 2,
     "source": 2
    },
@@ -10658,7 +10621,7 @@
    "verdict": "agree"
   },
   "US-6159": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Castle Gardens Petroglyph Site BLM Historic Preservation Site",
    "ours": null,
@@ -10668,7 +10631,7 @@
    "verdict": "no outline"
   },
   "US-6160": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Stewart Creek BLM Herd Management Area",
    "official": {
@@ -10676,7 +10639,7 @@
     "as": "168,000 acres",
     "clean": false,
     "line": "om the surrounding populated areas. Location: The Stewart Creek Herd Management Area (HMA) encompasses nearly 168,000 acres, mostly on BLM-administered public lands. The Continental Divide (eastern boundary of the Great Divide Basin)",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Location: The Stewart Creek Herd Management Area (HMA) encompasses nearly 168,000 acres, mostly on BLM-administered public lands.",
     "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/wyoming/stewart-creek",
     "why": "total-looking"
@@ -10738,7 +10701,7 @@
    "verdict": "agree"
   },
   "US-6161": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Continental Peak BLM Herd Management Area",
    "official": null,
@@ -10780,7 +10743,7 @@
   },
   "US-6162": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Red Gulch Dinosaur Tracksite BLM Recreation Management Area",
    "official": {
@@ -10788,7 +10751,7 @@
     "as": "40 acre",
     "clean": false,
     "line": "vered by an ancient ocean called the Sundance Sea. Not only are there hundreds of tracks at the site, but the 40-acre area could contain thousands more. The dinosaur tracks were clearly made just at the shoreline, not in deep o",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Not only are there hundreds of tracks at the site, but the 40-acre area could contain thousands more.",
     "url": "https://www.blm.gov/visit/red-gulch-dinosaur-tracksite",
     "why": "total-looking"
@@ -10842,7 +10805,7 @@
   },
   "US-6163": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Muskrat Basin BLM Herd Management Area",
    "official": null,
@@ -10903,7 +10866,7 @@
    "verdict": "unsure"
   },
   "US-6164": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Duck Swamp Interpretive Area BLM Interpretive Site",
    "ours": null,
@@ -10915,6 +10878,7 @@
   "US-6165": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Triangle BLM Herd Management Area",
    "official": null,
    "ours": {
@@ -10955,7 +10919,7 @@
   },
   "US-6166": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Conant Creek BLM Herd Management Area",
    "official": null,
@@ -11016,7 +10980,7 @@
    "verdict": "unsure"
   },
   "US-6167": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Crooks Mountain BLM Herd Management Area",
    "official": {
@@ -11024,7 +10988,7 @@
     "as": "58,000 acres",
     "clean": false,
     "line": "on: The Crooks Mountain HMA is located directly east central of Sweetwater Station, Wyo. and encompasses over 58,000 acres. Size: More than 58,000 acres. Topography/Vegetation: The lower elevations of the Crooks Mountain HMA receive",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "and encompasses over 58,000 acres.",
     "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/wyoming/crooks-mountain",
     "why": "total-looking"
@@ -11087,7 +11051,7 @@
   },
   "US-6168": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Dishpan Butte BLM Herd Management Area",
    "official": null,
@@ -11148,7 +11112,7 @@
    "verdict": "unsure"
   },
   "US-6169": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lake Cameahwait State Recreation Area",
    "ours": null,
@@ -11158,7 +11122,7 @@
    "verdict": "no outline"
   },
   "US-6170": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Yellowtail State Wildlife Area",
    "official": {
@@ -11166,7 +11130,7 @@
     "as": "19,214 acres",
     "clean": true,
     "line": "Additional Information: Yellowtail Wildlife Habitat Management Area is six miles east of Lovell and comprises 19,214 acres. Through a cooperative agreement between the Wyoming Game & Fish Commission, National Park Service, U.S. Bure",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Yellowtail Wildlife Habitat Management Area is six miles east of Lovell and comprises 19,214 acres.",
     "url": "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Yellowtail",
     "why": "clean total"
@@ -11241,7 +11205,7 @@
   },
   "US-6171": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Adobe Town BLM Herd Management Area",
    "official": {
@@ -11249,7 +11213,7 @@
     "as": "347,924 acres",
     "clean": false,
     "line": "ed public land with a small portion of intermingled private lands and is west of Baggs, Wyoming. Size: Nearly 347,924 acres Topography/Vegetation: The topography of the area is varied with everything from colorful eroded desert badla",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Size: Nearly 347,924 acres",
     "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/wyoming/adobe-town",
     "why": "total-looking"
@@ -11311,7 +11275,7 @@
    "verdict": "off"
   },
   "US-6172": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Antelope Hills BLM Herd Management Area",
    "official": {
@@ -11319,7 +11283,7 @@
     "as": "159,000 acres",
     "clean": false,
     "line": "c vistas throughout. Administered by: Lander Field Office Location: The Antelope Hills HMA encompasses nearly 159,000 acres, of both public and private lands. The area is located approximately 15 miles south/southeast of Atlantic Cit",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Location: The Antelope Hills HMA encompasses nearly 159,000 acres, of both public and private lands.",
     "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/wyoming/antelope-hills",
     "why": "total-looking"
@@ -11382,7 +11346,7 @@
   },
   "US-6173": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bighorn Canyon National Recreation Area",
    "official": {
@@ -11390,7 +11354,7 @@
     "as": "120,296 acres",
     "clean": false,
     "line": "n National Recreation Area Contact Us Park Statistics Designations: National Recreation Area October 15, 1966 Acreage: 120,296 Park Visitation Statistics Fiscal Year Recreational Non-Recreational Total Visits * Percentage Change 2007 210",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Acreage: 120,296 Park Visitation Statistics",
     "url": "https://www.nps.gov/bica/learn/management/statistics.htm",
     "why": "total-looking"
@@ -11406,7 +11370,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -11440,10 +11404,10 @@
    ],
    "pct": 86,
    "same_agency": false,
-   "score": 5,
+   "score": 4,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 0,
     "source": 1
    },
@@ -11473,7 +11437,7 @@
   },
   "US-6174": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Fifteenmile BLM Herd Management Area",
    "official": {
@@ -11481,7 +11445,7 @@
     "as": "81,000 acres",
     "clean": true,
     "line": "ce in October 1938 on lands that now make up the Fifteenmile HMA. Administered by: Worland Field Office Size: 81,000 acres. Topography/Vegetation: The HMA ranges from rolling hills to rugged canyons and badlands. The country is semi",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Size: 81,000 acres.",
     "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/wyoming/fifteenmile",
     "why": "clean total"
@@ -11552,13 +11516,13 @@
    "verdict": "off"
   },
   "US-6175": {
-   "cause": "a number 17 parks share from one page (500,000 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 17 parks share from the same sentence (500,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Sand Mesa State Wildlife Area",
    "official": null,
    "ours": {
-    "acres": 24962,
+    "acres": 21133,
     "dissolved": {
      "after": 37922,
      "before": 40490,
@@ -11569,10 +11533,8 @@
      },
      "family_fold": 16789,
      "family_used": "padus",
-     "key_union": 24962,
      "parts": 2,
      "records": 8,
-     "summed": 21133,
      "tracts": 5
     },
     "family_fold": "layers {'padus': 21133, 'sgwyc': 16789}: one land in 2 layers, the padus copy used (16,789 ac of copies not added)",
@@ -11628,20 +11590,18 @@
    "verdict": "unsure"
   },
   "US-6176": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Point of Rocks Stage Station State Historic Site",
    "official": null,
    "ours": {
-    "acres": 2,
+    "acres": 1,
     "dissolved": {
      "after": 1,
      "before": 2,
      "copies": 1,
-     "key_union": 2,
      "parts": 0,
      "records": 2,
-     "summed": 1,
      "tracts": 1
     },
     "manager": "",
@@ -11680,7 +11640,7 @@
    "verdict": "no size on page"
   },
   "US-6177": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Johnny Behind the Rocks BLM Recreation Management Area",
    "ours": null,
@@ -11690,12 +11650,12 @@
    "verdict": "no outline"
   },
   "US-6178": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Legend Rock State Petroglyph Site State Historic Site",
    "official": null,
    "ours": {
-    "acres": 21,
+    "acres": 31,
     "family_fold": "layers {'padus': 31, 'sgwyb': 30}: one land in 2 layers, the padus copy used (30 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -11732,8 +11692,7 @@
    "verdict": "no size on page"
   },
   "US-6179": {
-   "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Ocean Lake State Wildlife Area",
    "official": {
@@ -11741,13 +11700,13 @@
     "as": "13,170 acre",
     "clean": false,
     "line": "t Sage Grouse Sandhill Crane Sharp tailed Grouse Turkey Waterfowl Mountain Grouse Additional Information: The 13,170-acre Ocean Lake Wildlife Habitat Management Area was created in the 1940s through a cooperative agreement with the",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The 13,170-acre Ocean Lake Wildlife Habitat Management Area was created in the 1940s through a cooperative agreement with the U.S.",
     "url": "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Ocean-Lake",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 10825,
+    "acres": 12014,
     "family_fold": "layers {'padus': 12014, 'sgwyc': 11233}: one land in 2 layers, the padus copy used (11,233 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -11776,13 +11735,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 18,
+   "pct": 9,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -11798,11 +11757,10 @@
    ],
    "t": "State Wildlife Area",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-6180": {
-   "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Red Canyon State Wildlife Habitat Management Area",
    "official": {
@@ -11810,13 +11768,13 @@
     "as": "1,976 acre",
     "clean": false,
     "line": "Pheasant Rabbit Sage Grouse Sharp tailed Grouse Turkey Waterfowl Mountain Grouse Additional Information: This 1,976-acre wildlife habitat management area is 16 miles south of Lander on Wyoming Highway 28. It is named for its beaut",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "This 1,976-acre wildlife habitat management area is 16 miles south of Lander on Wyoming Highway 28.",
     "url": "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Red-Canyon",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 1610,
+    "acres": 2138,
     "family_fold": "layers {'sgwyc': 1988, 'padus': 1837}: one land in 2 layers, the sgwyc copy used (1,837 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -11845,13 +11803,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 19,
+   "pct": 8,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -11867,10 +11825,10 @@
    ],
    "t": "State Wildlife Habitat Management Area",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-6181": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Divide Basin BLM Herd Management Area",
    "ours": null,
@@ -11880,7 +11838,7 @@
    "verdict": "no outline"
   },
   "US-6182": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Miner's Delight BLM Historic Preservation Site",
    "ours": null,
@@ -11891,7 +11849,7 @@
   },
   "US-6183": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "McCullough Peaks BLM Herd Management Area",
    "official": null,
@@ -11942,7 +11900,7 @@
    "verdict": "unsure"
   },
   "US-6184": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "The Pinnacles Geologic Site BLM Recreation Management Area",
    "ours": null,
@@ -11952,7 +11910,7 @@
    "verdict": "no outline"
   },
   "US-6185": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "South Pass Historic Landmark National Historic Site",
    "ours": null,
@@ -11962,7 +11920,7 @@
    "verdict": "no outline"
   },
   "US-6186": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Atlantic City/South Pass BLM Recreation Management Area",
    "ours": null,
@@ -11972,7 +11930,7 @@
    "verdict": "no outline"
   },
   "US-6187": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "South Pass Historic Mining Area BLM Historic Area",
    "ours": null,
@@ -11982,7 +11940,7 @@
    "verdict": "no outline"
   },
   "US-6188": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Point of Rocks Cemetery State Historic Site",
    "official": null,
@@ -12023,12 +11981,12 @@
    "verdict": "no size on page"
   },
   "US-6189": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "South Pass City State Historic Site",
    "official": null,
    "ours": {
-    "acres": 248,
+    "acres": 363,
     "family_fold": "layers {'sgwyb': 333, 'padus': 275}: one land in 2 layers, the sgwyb copy used (275 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -12039,7 +11997,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -12052,10 +12010,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -12065,7 +12023,7 @@
    "verdict": "no size on page"
   },
   "US-6190": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Oregon Buttes BLM Historic Area",
    "ours": null,
@@ -12075,7 +12033,7 @@
    "verdict": "no outline"
   },
   "US-6191": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Tri-Territory Site BLM Historic Preservation Site",
    "ours": null,
@@ -12085,7 +12043,7 @@
    "verdict": "no outline"
   },
   "US-6192": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Superior Mail Arrow BLM Historic Preservation Site",
    "ours": null,
@@ -12095,7 +12053,7 @@
    "verdict": "no outline"
   },
   "US-6193": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "South Pass Overlook BLM Interpretive Site",
    "ours": null,
@@ -12105,7 +12063,7 @@
    "verdict": "no outline"
   },
   "US-6194": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "False Parting of the Ways BLM Interpretive Site",
    "ours": null,
@@ -12115,7 +12073,7 @@
    "verdict": "no outline"
   },
   "US-6195": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Crookston Ranch Cultural Site BLM Historic Preservation Site",
    "ours": null,
@@ -12125,7 +12083,7 @@
    "verdict": "no outline"
   },
   "US-6196": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Rock Springs BLM Herd Management Area",
    "official": null,
@@ -12169,6 +12127,7 @@
    "cause": "no total-looking sentence: numbers found were parts or other units",
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Popo Agie Wilderness Area",
    "official": null,
    "ours": {
@@ -12218,7 +12177,7 @@
    "verdict": "unsure"
   },
   "US-6198": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Salt Wells Creek BLM Herd Management Area",
    "official": null,
@@ -12264,7 +12223,7 @@
    "verdict": "no size on page"
   },
   "US-6199": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "White Mountain Petroglyphs BLM Historic Preservation Site",
    "ours": null,
@@ -12274,7 +12233,7 @@
    "verdict": "no outline"
   },
   "US-6200": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Overland Stage BLM Interpretive Site",
    "ours": null,
@@ -12286,6 +12245,7 @@
   "US-6201": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Bridger Wilderness Area",
    "official": null,
    "ours": {
@@ -12328,6 +12288,7 @@
    "cause": "no total-looking sentence: numbers found were parts or other units",
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "North Absaroka Wilderness Area",
    "official": null,
    "ours": {
@@ -12377,7 +12338,7 @@
    "verdict": "unsure"
   },
   "US-6203": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Pilot Butte Wild Horse Scenic Tour BLM Recreation Management Area",
    "ours": null,
@@ -12388,7 +12349,7 @@
   },
   "US-6204": {
    "cause": "the agency figure may cover several states; our outline may be this state's share only",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Little Colorado BLM Herd Management Area",
    "note": "the agency figure may cover several states; our outline may be this state's share only",
@@ -12397,7 +12358,7 @@
     "as": "632,000 acres",
     "clean": false,
     "line": "tered by: Rock Springs Field Office Location: The Little Colorado Herd Management Area (HMA) encompasses over 632,000 acres of BLM-administered public lands. The majority of the HMA consists of consolidated public lands along with st",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Location: The Little Colorado Herd Management Area (HMA) encompasses over 632,000 acres of BLM-administered public lands.",
     "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/wyoming/little-colorado",
     "why": "total-looking"
@@ -12459,21 +12420,19 @@
    "verdict": "unsure"
   },
   "US-6205": {
-   "cause": "a number 17 parks share from one page (500,000 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 17 parks share from the same sentence (500,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Kirk Inberg/ Kevin Roy State Wildlife Habitat Management Area",
    "official": null,
    "ours": {
-    "acres": 18599,
+    "acres": 17312,
     "dissolved": {
      "after": 17312,
      "before": 34592,
      "copies": 1,
-     "key_union": 18599,
      "parts": 0,
      "records": 2,
-     "summed": 17312,
      "tracts": 1
     },
     "manager": "",
@@ -12528,7 +12487,7 @@
    "verdict": "unsure"
   },
   "US-6206": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Spence/ Moriarity State Wildlife Habitat Management Area",
    "official": {
@@ -12536,7 +12495,7 @@
     "as": "41,156 acres",
     "clean": false,
     "line": "ence and Moriarity Wildlife Management Area was purchased in 1991 to expand crucial winter range for elk. The 41,156 acres are northeast of Dubois and managed primarily for elk. A unique feature of this wildlife management area is t",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The 41,156 acres are northeast of Dubois and managed primarily for elk.",
     "url": "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/Spence-Moriarity",
     "why": "total-looking"
@@ -12590,7 +12549,7 @@
    "verdict": "agree"
   },
   "US-6207": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Clarks Fork of the Yellowstone National Wild and Scenic River",
    "official": null,
@@ -12641,7 +12600,7 @@
    "verdict": "no size on page"
   },
   "US-6208": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Sunlight State Wildlife Habitat Management Area",
    "official": {
@@ -12649,7 +12608,7 @@
     "as": "1,414 acres",
     "clean": false,
     "line": "mation: Sunlight Wildlife Habitat Management Area is about 40 miles northwest of Cody. Between 1960 and 1965, 1,414 acres along Sunlight Trail and Painter creeks were purchased to preserve the area for wildlife habitat, public use",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Between 1960 and 1965, 1,414 acres along Sunlight Trail and Painter creeks were purchased to preserve the area for wildlife habitat, public use and access to adjacent U.S.",
     "url": "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/sunlight-basin#:~:text=Additional%20Information%3A%20Sunlight%20Wildlife%20Habitat,adjacent%20U.S.%20Forest%20Service%20lands.",
     "why": "part (a lake, a purchase, a campground…)"
@@ -12665,7 +12624,7 @@
       "words"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -12684,10 +12643,10 @@
    ],
    "pct": 0,
    "same_agency": false,
-   "score": 6,
+   "score": 5,
    "score_parts": {
     "name": 1,
-    "pin": 2,
+    "pin": 1,
     "size": 2,
     "source": 1
    },
@@ -12718,8 +12677,9 @@
   "US-6209": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Absaroka-Beartooth Wilderness Area",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-WY': 941247, 'US-MT': 941247})",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-MT': 941247, 'US-WY': 941247})",
    "official": null,
    "ours": {
     "acres": 1882494,
@@ -12739,8 +12699,8 @@
     "pin": "inside",
     "src": "",
     "states": [
-     "US-WY",
-     "US-MT"
+     "US-MT",
+     "US-WY"
     ],
     "unknown_pieces": 0,
     "whole_park": true
@@ -12769,6 +12729,7 @@
   "US-6210": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Teton Wilderness Area",
    "official": null,
    "ours": {
@@ -12811,6 +12772,7 @@
    "cause": "no total-looking sentence: numbers found were parts or other units",
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Washakie Wilderness Area",
    "official": null,
    "ours": {
@@ -12860,7 +12822,7 @@
    "verdict": "unsure"
   },
   "US-6212": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Whiskey Basin/ Little Red Creek Wildlife Management Area",
    "ours": null,
@@ -12870,7 +12832,7 @@
    "verdict": "no outline"
   },
   "US-6213": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "White Mountain BLM Herd Management Area",
    "official": {
@@ -12878,7 +12840,7 @@
     "as": "240,000 acres",
     "clean": false,
     "line": "d Office Location: The White Mountain Herd Management Area (HMA) encompasses over 393,000 acres of which over 240,000 acres are BLM-administered public lands. The majority of the HMA consists of checkerboard land ownership within the",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Location: The White Mountain Herd Management Area (HMA) encompasses over 393,000 acres of which over 240,000 acres are BLM-administered public lands.",
     "url": "https://www.blm.gov/programs/wild-horse-and-burro/herd-management/herd-management-areas/wyoming/white-mountain",
     "why": "total-looking"
@@ -12949,13 +12911,22 @@
    "verdict": "agree"
   },
   "US-6214": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Granger Stage Station State Historic Site",
    "official": null,
    "ours": {
     "acres": 1,
+    "dissolved": {
+     "after": 1,
+     "before": 2,
+     "copies": 1,
+     "parts": 0,
+     "records": 2,
+     "tracts": 1
+    },
     "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 2 -> 1 acres",
     "pieces": [
      [
       292663,
@@ -12964,9 +12935,9 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 0
    },
    "owner_now": null,
    "pages": [
@@ -12977,10 +12948,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -12990,7 +12961,7 @@
    "verdict": "no size on page"
   },
   "US-6215": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Simpsons Hollow BLM Recreation Management Area",
    "ours": null,
@@ -13000,7 +12971,7 @@
    "verdict": "no outline"
   },
   "US-6216": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Pilot Butte Overlook BLM Interpretive Site",
    "ours": null,
@@ -13013,6 +12984,7 @@
    "cause": "no total-looking sentence: numbers found were parts or other units",
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Fitzpatrick Wilderness Area",
    "official": null,
    "ours": {
@@ -13062,20 +13034,18 @@
    "verdict": "unsure"
   },
   "US-6218": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Boulder Lake BLM Recreation Management Area",
    "official": null,
    "ours": {
-    "acres": 6197,
+    "acres": 5586,
     "dissolved": {
      "after": 5586,
      "before": 11172,
      "copies": 1,
-     "key_union": 6197,
      "parts": 0,
      "records": 2,
-     "summed": 5586,
      "tracts": 1
     },
     "manager": "",
@@ -13114,7 +13084,7 @@
    "verdict": "no size on page"
   },
   "US-6219": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lombard Ferry State Historic Site",
    "ours": null,
@@ -13124,7 +13094,7 @@
    "verdict": "no outline"
   },
   "US-6220": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "NHT Auto Tour Route BLM Interpretive Site",
    "ours": null,
@@ -13134,53 +13104,22 @@
    "verdict": "no outline"
   },
   "US-6221": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Fontenelle Creek BLM Recreation Management Area",
-   "official": null,
-   "ours": {
-    "acres": 8131,
-    "manager": "",
-    "pieces": [
-     [
-      2319,
-      "Fontenelle Reservoir",
-      8131,
-      "name + Recreation.gov point inside (G-1, id 2243)"
-     ]
-    ],
-    "pin": "just outside",
-    "src": "USGS PAD-US",
-    "unknown_pieces": 0
-   },
-   "owner_now": null,
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://www.blm.gov/visit/fontenelle-creek-recreation-area",
-     "why": "the park's page (data/parkinfo)"
-    }
-   ],
-   "pct": null,
-   "score": 3,
-   "score_parts": {
-    "name": 1,
-    "pin": 1,
-    "size": 1,
-    "source": 0
-   },
-   "sizes": [],
+   "ours": null,
+   "score": null,
    "t": "BLM Recreation Management Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "no outline"
   },
   "US-6222": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Names Hill State Historic Site",
    "official": null,
    "ours": {
-    "acres": 1,
+    "acres": 4,
     "family_fold": "layers {'sgwyb': 5, 'padus': 3}: one land in 2 layers, the sgwyb copy used (3 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -13219,6 +13158,7 @@
   "US-6223": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Gros Ventre Wilderness Area",
    "official": null,
    "ours": {
@@ -13258,20 +13198,18 @@
    "verdict": "no size on page"
   },
   "US-6224": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Fort Bridger State Historic Site",
    "official": null,
    "ours": {
-    "acres": 30,
+    "acres": 41,
     "dissolved": {
      "after": 41,
      "before": 82,
      "copies": 1,
-     "key_union": 30,
      "parts": 0,
      "records": 2,
-     "summed": 41,
      "tracts": 1
     },
     "manager": "",
@@ -13310,7 +13248,7 @@
    "verdict": "no size on page"
   },
   "US-6225": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Fort Supply State Historic Site",
    "official": null,
@@ -13344,7 +13282,7 @@
    "verdict": "ours unknown"
   },
   "US-6226": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Jedediah Smith Wilderness Area",
    "official": {
@@ -13352,7 +13290,7 @@
     "as": "116,535 acres",
     "clean": true,
     "line": "ssary in wilderness . Contacts Applicable Wilderness Law(s) Public Law 98-550 Date: October 30, 1984 Acreage: 116,535 acres Wyoming Wilderness Act of 1984 - Public law 98-550 (10/30/1984) To designate certain lands in the state of Wy",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Acreage: 116,535 acres",
     "url": "https://wilderness.net/visit-wilderness/?ID=275",
     "why": "clean total"
@@ -13414,15 +13352,15 @@
    "verdict": "agree"
   },
   "US-6227": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Snake River National Wild and Scenic River",
-   "note": "whole park compared (POTA lists it in 1 states: {'US-WY': 96415})",
+   "note": "whole park compared (POTA lists it in 1 states: {'US-WY': 110992})",
    "official": null,
    "ours": {
-    "acres": 96415,
+    "acres": 110992,
     "acres_by_state": {
-     "US-WY": 96415
+     "US-WY": 110992
     },
     "family_fold": "layers {'fwsr': 86029, 'wsrc': 28629}: one land in 2 layers, the fwsr copy used (28,629 ac of copies not added)",
     "manager": "",
@@ -13440,13 +13378,13 @@
       "words"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "states": [
-     "US-WY",
-     "US-ID",
+     "US-OR",
      "US-WA",
-     "US-OR"
+     "US-WY",
+     "US-ID"
     ],
     "unknown_pieces": 0,
     "whole_park": true
@@ -13470,10 +13408,10 @@
     }
    ],
    "pct": null,
-   "score": 4,
+   "score": 5,
    "score_parts": {
     "name": 1,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 1
    },
@@ -13483,7 +13421,7 @@
    "verdict": "no size on page"
   },
   "US-6228": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Piedmont Charcoal Kilns State Historic Site",
    "official": null,
@@ -13534,7 +13472,7 @@
   },
   "US-6229": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "South Park State Wildlife Habitat Management Area",
    "official": {
@@ -13542,13 +13480,13 @@
     "as": "832 acre",
     "clean": false,
     "line": "Park Wildlife Habitat Management Area (WHMA) is eight miles south of Jackson, WY on U.S. Highway 26/89. This 832-acre area is one of several elk feedgrounds Jackson Hole. The WHMA was established in 1939 to reduce damage to pri",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "This 832-acre area is one of several elk feedgrounds Jackson Hole.",
     "url": "https://wgfd.wyo.gov/Public-Access/WHMA/WHMA/South-Park",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 1075,
+    "acres": 1230,
     "family_fold": "layers {'padus': 1230, 'sgwyc': 1006}: one land in 2 layers, the padus copy used (1,006 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -13571,7 +13509,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 29,
+   "pct": 48,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -13605,7 +13543,7 @@
    "verdict": "off"
   },
   "US-6230": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Cumberland Wildlife Management Area",
    "official": null,
@@ -13648,6 +13586,7 @@
   "US-6231": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Fort Bonneville State Historic Site",
    "official": null,
    "ours": {
@@ -13687,7 +13626,7 @@
    "verdict": "no size on page"
   },
   "US-6232": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Big Sandy Crossing State Historical Monument",
    "ours": null,
@@ -13697,21 +13636,19 @@
    "verdict": "no outline"
   },
   "US-6233": {
-   "cause": "a number 17 parks share from one page (500,000 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 17 parks share from the same sentence (500,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Greys River Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 2451,
+    "acres": 3092,
     "dissolved": {
      "after": 3092,
      "before": 6134,
      "copies": 1,
-     "key_union": 2451,
      "parts": 0,
      "records": 2,
-     "summed": 3092,
      "tracts": 1
     },
     "manager": "",
@@ -13724,7 +13661,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -13743,10 +13680,10 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -13766,5 +13703,5 @@
    "verdict": "unsure"
   }
  },
- "read": "2026-11-09"
+ "read": "2026-11-22"
 }

@@ -2,22 +2,22 @@
  "about": "Park truth checker: official acreage vs our outline, handover hints, second-witness score. Review lists only: nothing here changes a key or a card.",
  "area": "US-KS",
  "counts": {
-  "agree": 4,
+  "agree": 3,
   "handover_hints": 0,
   "no_page": 0,
-  "no_size": 107,
-  "off": 2,
-  "ours_unknown": 4,
+  "no_size": 105,
+  "off": 3,
+  "ours_unknown": 9,
   "parks": 145,
   "retired": 0,
   "unsure": 1,
-  "weak": 2,
-  "with_outline": 118
+  "weak": 7,
+  "with_outline": 124
  },
  "parks": {
   "US-0291": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Flint Hills National Wildlife Refuge",
    "official": {
@@ -25,7 +25,7 @@
     "as": "614.7 acres",
     "clean": false,
     "line": "e in Coffey and Lyon Counties, Kansas has a Cooperative Agricultural Agreement opportunity for the farming of 614.7 acres on the Refuge starting in March 2027 and continuing through December 2029. The 614.7 acres of farm ground are",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Hartford, Kansas - Flint Hills National Wildlife Refuge in Coffey and Lyon Counties, Kansas has a Cooperative Agricultural Agreement opportunity for the farming of 614.7 acres on the Refuge starting in March 2027 and continuing through December 2029.",
     "url": "https://www.fws.gov/refuge/flint_hills/",
     "why": "total-looking"
@@ -114,18 +114,19 @@
    "verdict": "off"
   },
   "US-0292": {
-   "checked": "2026-11-01",
+   "cause": "boundary vs owned: our line may be the authorized boundary, the agency counts owned land (rule 1: use owned land)",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Kirwin National Wildlife Refuge",
    "official": {
-    "acres": 10778.0,
-    "as": "10,778 acres",
-    "clean": false,
-    "line": "sas. It is an overlay project on a U.S. Bureau of Reclamation irrigation and flood control reservoir covering 10,778 acres of prairie grasslands, open water, and wetlands. The refuge serves as a vital stop for migrating birds along",
-    "read": "2026-11-01",
-    "sent": "Bureau of Reclamation irrigation and flood control reservoir covering 10,778 acres of prairie grasslands, open water, and wetlands.",
+    "acres": 5000.0,
+    "as": "5,000 acres",
+    "clean": true,
+    "line": "ar-round activity at Kirwin NWR, especially in spring and early summer. Kirwin Reservoir covers approximately 5,000 acres, although water levels can vary considerably from year to year and throughout the seasons. Anglers can fish f",
+    "read": "2026-11-09",
+    "sent": "Kirwin Reservoir covers approximately 5,000 acres, although water levels can vary considerably from year to year and throughout the seasons.",
     "url": "https://www.fws.gov/refuge/kirwin",
-    "why": "part (a lake, a purchase, a campground…)"
+    "why": "clean total; the agency's pages disagree: another of its pages says 10,778 acres (that one matches our outline)"
    },
    "ours": {
     "acres": 10778,
@@ -162,16 +163,34 @@
      "why": "FWS refuge about page"
     }
    ],
-   "pct": 0,
+   "pct": 116,
    "same_agency": false,
-   "score": 8,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 0,
     "source": 2
    },
    "sizes": [
+    {
+     "acres": 5000.0,
+     "as": "5,000 acres",
+     "clean": true,
+     "line": "ar-round activity at Kirwin NWR, especially in spring and early summer. Kirwin Reservoir covers approximately 5,000 acres, although water levels can vary considerably from year to year and throughout the seasons. Anglers can fish f",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/kirwin",
+     "why": "clean total"
+    },
+    {
+     "acres": 5800.0,
+     "as": "5,800 acres",
+     "clean": false,
+     "line": "nd area closures before your visit. Hunting Hunting is a popular public use at Kirwin NWR, with approximately 5,800 acres open to hunting for big game, turkey, migratory game birds, upland game birds, small game, coyote, and furbea",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/kirwin",
+     "why": "part (a lake, a purchase, a campground…)"
+    },
     {
      "acres": 10778.0,
      "as": "10,778 acres",
@@ -184,10 +203,10 @@
    ],
    "t": "National Wildlife Refuge",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "off"
   },
   "US-0293": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Marais Des Cygnes National Wildlife Refuge",
    "official": {
@@ -195,7 +214,7 @@
     "as": "7,500 acre",
     "clean": false,
     "line": "Wildlife Refuge was established in 1992 for the protection and restoration of bottomland hardwood forest. The 7,500 acre Refuge hosts bottomland hardwood forests which are unique in Kansas and provides an opportunity to experience",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "The 7,500 acre Refuge hosts bottomland hardwood forests which are unique in Kansas and provides an opportunity to experience a different world than what is found in most of the state.",
     "url": "https://www.fws.gov/refuge/marais-des-cygnes",
     "why": "total-looking"
@@ -324,7 +343,7 @@
    "verdict": "agree"
   },
   "US-0294": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Quivira National Wildlife Refuge",
    "official": {
@@ -332,7 +351,7 @@
     "as": "22,135 acres",
     "clean": false,
     "line": "s established in 1955 to provide and protect vital habitat for migratory waterfowl in the Central Flyway. Its 22,135 acres feature a unique combination of rare inland salt marsh and sand prairie. Quivira is listed as a Wetland of Gl",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Its 22,135 acres feature a unique combination of rare inland salt marsh and sand prairie.",
     "url": "https://www.fws.gov/refuge/quivira",
     "why": "total-looking"
@@ -455,7 +474,7 @@
    "verdict": "agree"
   },
   "US-0803": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Brown vs. Board of Education National Historic Site",
    "official": null,
@@ -517,7 +536,7 @@
    "verdict": "no size on page"
   },
   "US-0818": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Fort Larned National Historic Site",
    "official": null,
@@ -584,7 +603,7 @@
    "verdict": "no size on page"
   },
   "US-0821": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Fort Scott National Historic Site",
    "official": null,
@@ -651,7 +670,7 @@
    "verdict": "no size on page"
   },
   "US-0851": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Nicodemus National Historic Site",
    "official": null,
@@ -708,6 +727,7 @@
   "US-12398": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Olathe Prairie Center State Preserve",
    "official": null,
    "ours": {
@@ -749,6 +769,7 @@
   "US-13095": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Texas Lake Wildlife Area State Wildlife Area",
    "official": null,
    "ours": {
@@ -788,7 +809,7 @@
    "verdict": "no size on page"
   },
   "US-13456": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Pratt Fish Hatchery State Fish Hatchery",
    "ours": null,
@@ -800,6 +821,7 @@
   "US-2330": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Cedar Bluff State Park",
    "official": null,
    "ours": {
@@ -847,6 +869,7 @@
   "US-2331": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Cheney State Park",
    "official": null,
    "ours": {
@@ -888,6 +911,7 @@
   "US-2332": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Clinton State Park",
    "official": null,
    "ours": {
@@ -934,6 +958,7 @@
   "US-2333": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Crawford State Park",
    "official": null,
    "ours": {
@@ -987,8 +1012,16 @@
   "US-2334": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Cross Timbers State Park",
-   "ours": null,
+   "ours": {
+    "acres": 0,
+    "manager": "",
+    "pieces": [],
+    "pin": "just outside",
+    "src": "",
+    "unknown_pieces": 1
+   },
    "score": null,
    "t": "State Park",
    "ver": 15,
@@ -997,6 +1030,7 @@
   "US-2335": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Eisenhower State Park",
    "official": null,
    "ours": {
@@ -1031,6 +1065,7 @@
   "US-2336": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "El Dorado State Park",
    "official": null,
    "ours": {
@@ -1072,6 +1107,7 @@
   "US-2337": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Elk City State Park",
    "official": null,
    "ours": {
@@ -1113,6 +1149,7 @@
   "US-2338": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Fall River State Park",
    "official": null,
    "ours": {
@@ -1154,6 +1191,7 @@
   "US-2339": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Glen Elder State Park",
    "official": null,
    "ours": {
@@ -1201,6 +1239,7 @@
   "US-2340": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Hillsdale State Park",
    "official": null,
    "ours": {
@@ -1253,6 +1292,7 @@
   "US-2341": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Kaw River State Park",
    "official": null,
    "ours": {
@@ -1294,6 +1334,7 @@
   "US-2342": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Kanopolis Lake State Park",
    "official": null,
    "ours": {
@@ -1346,6 +1387,7 @@
   "US-2343": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Lovewell State Park",
    "official": null,
    "ours": {
@@ -1393,6 +1435,7 @@
   "US-2344": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Meade State Park",
    "official": null,
    "ours": {
@@ -1434,6 +1477,7 @@
   "US-2345": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Milford State Park",
    "official": null,
    "ours": {
@@ -1480,6 +1524,7 @@
   "US-2346": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Mushroom Rock State Park",
    "official": null,
    "ours": {
@@ -1521,6 +1566,7 @@
   "US-2347": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Perry State Park",
    "official": null,
    "ours": {
@@ -1573,6 +1619,7 @@
   "US-2348": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Pomona State Park",
    "official": null,
    "ours": {
@@ -1625,6 +1672,7 @@
   "US-2349": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Prairie Dog State Park",
    "official": null,
    "ours": {
@@ -1666,8 +1714,16 @@
   "US-2350": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Prairie Spirit Trail State Trail",
-   "ours": null,
+   "ours": {
+    "acres": 0,
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 1
+   },
    "score": null,
    "t": "State Trail",
    "ver": 15,
@@ -1676,6 +1732,7 @@
   "US-2351": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Sandhills State Park",
    "official": null,
    "ours": {
@@ -1717,6 +1774,7 @@
   "US-2352": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Historic Lake Scott State Park",
    "official": null,
    "ours": {
@@ -1758,6 +1816,7 @@
   "US-2353": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Tuttle Creek State Park",
    "official": null,
    "ours": {
@@ -1810,6 +1869,7 @@
   "US-2354": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Webster State Park",
    "official": null,
    "ours": {
@@ -1851,6 +1911,7 @@
   "US-2355": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Wilson State Park",
    "official": null,
    "ours": {
@@ -1902,7 +1963,7 @@
   },
   "US-3673": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Tallgrass Prairie Preserve National Conservation Area",
    "official": {
@@ -1910,7 +1971,7 @@
     "as": "11,000 acres",
     "clean": false,
     "line": "n the spring and early summer NPS Contact Us Begin Your Tallgrass Prairie Visit Today The preserve has nearly 11,000 acres to be explored. Take a tour of the historic buildings, go on a hike, or use our cell phone tour. Podcasts Che",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "The preserve has nearly 11,000 acres to be explored.",
     "url": "https://www.nps.gov/tapr/index.htm",
     "why": "total-looking"
@@ -1979,58 +2040,374 @@
    "verdict": "off"
   },
   "US-4566": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "California National Historic Trail",
-   "ours": null,
-   "score": null,
+   "note": "whole park compared (POTA lists it in 0 states: {})",
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "acres_by_state": {},
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "states": [
+     "US-KS",
+     "US-WY",
+     "US-MO",
+     "US-NE",
+     "US-ID",
+     "US-CA",
+     "US-OR",
+     "US-CO",
+     "US-NV",
+     "US-UT"
+    ],
+    "unknown_pieces": 1,
+    "whole_park": true
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/cali/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/cali/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/cali/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/cali/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/cali/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
    "t": "National Historic Trail",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "ours unknown"
   },
   "US-4572": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Lewis and Clark National Historic Trail",
-   "ours": null,
-   "score": null,
+   "note": "whole park compared (POTA lists it in 0 states: {})",
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "acres_by_state": {},
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "states": [
+     "US-SD",
+     "US-ND",
+     "US-KS",
+     "US-MO",
+     "US-WV",
+     "US-PA",
+     "US-NE",
+     "US-ID",
+     "US-IA",
+     "US-OH",
+     "US-MT",
+     "US-WA",
+     "US-OR",
+     "US-IN",
+     "US-IL"
+    ],
+    "unknown_pieces": 1,
+    "whole_park": true
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/lecl/index.htm",
+     "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/lecl/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/lecl/learn/historyculture/places.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/lecl/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/lecl/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/lecl/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
    "t": "National Historic Trail",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "ours unknown"
   },
   "US-4576": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Oregon National Historic Trail",
-   "ours": null,
-   "score": null,
+   "note": "whole park compared (POTA lists it in 0 states: {})",
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "acres_by_state": {},
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "states": [
+     "US-KS",
+     "US-WY",
+     "US-MO",
+     "US-NE",
+     "US-ID",
+     "US-WA",
+     "US-OR"
+    ],
+    "unknown_pieces": 1,
+    "whole_park": true
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/oreg/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/oreg/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok, no readable text",
+     "url": "https://www.nps.gov/oreg/planyourvisit/upload/National-Park-Service-Oregon-Trail-Map-508.pdf",
+     "why": "official map (parkinfo-web)"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/oreg/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/oreg/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/oreg/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
    "t": "National Historic Trail",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "ours unknown"
   },
   "US-4578": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Pony Express National Historic Trail",
-   "ours": null,
-   "score": null,
+   "note": "whole park compared (POTA lists it in 0 states: {})",
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "acres_by_state": {},
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "states": [
+     "US-KS",
+     "US-WY",
+     "US-MO",
+     "US-NE",
+     "US-CA",
+     "US-CO",
+     "US-NV",
+     "US-UT"
+    ],
+    "unknown_pieces": 1,
+    "whole_park": true
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/poex/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/poex/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/poex/learn/historyculture/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/poex/planyourvisit/upload/National-Park-Service-Pony-Express-Map-508.pdf",
+     "why": "official map (parkinfo-web)"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/poex/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/poex/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/poex/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
    "t": "National Historic Trail",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "ours unknown"
   },
   "US-4579": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Santa Fe National Historic Trail",
-   "ours": null,
-   "score": null,
+   "note": "whole park compared (POTA lists it in 0 states: {})",
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "acres_by_state": {},
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "states": [
+     "US-KS",
+     "US-MO",
+     "US-NM",
+     "US-OK",
+     "US-CO"
+    ],
+    "unknown_pieces": 1,
+    "whole_park": true
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/safe/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/safe/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/safe/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/safe/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/safe/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
    "t": "National Historic Trail",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "ours unknown"
   },
   "US-5717": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Little Jerusalem Badlands State Park",
    "official": null,
    "ours": {
@@ -2065,8 +2442,16 @@
   "US-5718": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Flint Hills Trail State Park",
-   "ours": null,
+   "ours": {
+    "acres": 0,
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 1
+   },
    "score": null,
    "t": "State Park",
    "ver": 15,
@@ -2075,6 +2460,7 @@
   "US-7384": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Atchison State Fishing Lake",
    "official": null,
    "ours": {
@@ -2122,6 +2508,7 @@
   "US-7385": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Brown State Fishing Lake",
    "official": null,
    "ours": {
@@ -2167,7 +2554,7 @@
    "verdict": "no size on page"
   },
   "US-7386": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Browning Oxbow State Fishing Lake",
    "ours": null,
@@ -2179,6 +2566,7 @@
   "US-7387": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Douglas State Fishing Lake",
    "official": null,
    "ours": {
@@ -2226,6 +2614,7 @@
   "US-7388": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Geary State Fishing Lake",
    "official": null,
    "ours": {
@@ -2273,6 +2662,7 @@
   "US-7390": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Leavenworth State Fishing Lake",
    "official": null,
    "ours": {
@@ -2320,6 +2710,7 @@
   "US-7391": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Miami State Fishing Lake",
    "official": null,
    "ours": {
@@ -2367,6 +2758,7 @@
   "US-7392": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Middle Creek State Fishing Lake",
    "official": null,
    "ours": {
@@ -2406,7 +2798,7 @@
    "verdict": "no size on page"
   },
   "US-7393": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Milford State Fish Hatchery",
    "ours": null,
@@ -2418,21 +2810,15 @@
   "US-7394": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Nebo State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 149,
+    "acres": 136,
     "manager": "",
-    "pieces": [
-     [
-      201311,
-      "Nebo State Lake Wildlife Area",
-      78,
-      "name"
-     ]
-    ],
+    "pieces": [],
     "pin": "inside",
-    "src": "USGS PAD-US",
+    "src": "",
     "unknown_pieces": 2
    },
    "owner_now": null,
@@ -2459,6 +2845,7 @@
   "US-7395": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Nemaha Wildlife Area State Fishing Lake",
    "official": null,
    "ours": {
@@ -2500,21 +2887,15 @@
   "US-7396": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Pottawatomie No 1 State Fishing Lake",
    "official": null,
    "ours": {
     "acres": 131,
     "manager": "",
-    "pieces": [
-     [
-      201252,
-      "Pottawatomie State Fishing Lake",
-      17,
-      "name"
-     ]
-    ],
+    "pieces": [],
     "pin": "inside",
-    "src": "USGS PAD-US",
+    "src": "",
     "unknown_pieces": 2
    },
    "owner_now": null,
@@ -2541,21 +2922,15 @@
   "US-7397": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Pottawatomie No 2 State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 140,
+    "acres": 0,
     "manager": "",
-    "pieces": [
-     [
-      201253,
-      "Pottawatomie State Fishing Lake",
-      255,
-      "name"
-     ]
-    ],
+    "pieces": [],
     "pin": "just outside",
-    "src": "USGS PAD-US",
+    "src": "",
     "unknown_pieces": 1
    },
    "owner_now": null,
@@ -2582,6 +2957,7 @@
   "US-7398": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Shawnee State Fishing Lake",
    "official": null,
    "ours": {
@@ -2623,6 +2999,7 @@
   "US-7399": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Tuttle Creek Willow State Fishing Lake",
    "official": null,
    "ours": {
@@ -2664,6 +3041,7 @@
   "US-7400": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Washington State Fishing Lake",
    "official": null,
    "ours": {
@@ -2717,6 +3095,7 @@
   "US-7401": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Bourbon State Fishing Lake",
    "official": null,
    "ours": {
@@ -2774,55 +3153,19 @@
    "verdict": "no size on page"
   },
   "US-7402": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Crawford State Fishing Lake",
-   "official": null,
-   "ours": {
-    "acres": 593,
-    "manager": "",
-    "pieces": [
-     [
-      201214,
-      "Crawford State Park",
-      365,
-      "name"
-     ],
-     [
-      201215,
-      "Crawford State Park Lake",
-      108,
-      "name"
-     ]
-    ],
-    "pin": "inside",
-    "src": "USGS PAD-US",
-    "unknown_pieces": 3
-   },
-   "owner_now": null,
-   "pages": [
-    {
-     "status": "rest",
-     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Southeast-Region/Crawford-State-Fishing-Lake",
-     "why": "the park's page (data/parkinfo)"
-    }
-   ],
-   "pct": null,
-   "score": 7,
-   "score_parts": {
-    "name": 2,
-    "pin": 2,
-    "size": 1,
-    "source": 2
-   },
-   "sizes": [],
+   "ours": null,
+   "score": null,
    "t": "State Fishing Lake",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "no outline"
   },
   "US-7403": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Lyon State Fishing Lake",
    "official": null,
    "ours": {
@@ -2868,7 +3211,7 @@
    "verdict": "no size on page"
   },
   "US-7405": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Melvern River State Fishing Lake",
    "ours": null,
@@ -2878,67 +3221,19 @@
    "verdict": "no outline"
   },
   "US-7406": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Mined Land State Fishing Lake",
-   "official": null,
-   "ours": {
-    "acres": 12405,
-    "manager": "",
-    "pieces": [
-     [
-      201168,
-      "Mined Land Wildlife Area",
-      515,
-      "name"
-     ],
-     [
-      201165,
-      "Mined Land Wildlife Area",
-      432,
-      "name"
-     ],
-     [
-      201169,
-      "Mined Land Wildlife Area",
-      412,
-      "name"
-     ],
-     [
-      201170,
-      "Mined Land Wildlife Area",
-      77,
-      "name"
-     ]
-    ],
-    "pin": "just outside",
-    "src": "USGS PAD-US",
-    "unknown_pieces": 5
-   },
-   "owner_now": null,
-   "pages": [
-    {
-     "status": "rest",
-     "url": "https://ksoutdoors.com/Fishing/Where-to-Fish-in-Kansas/Fishing-Locations-Public-Waters/Southeast-Region/Mined-Land-Wildlife-Area",
-     "why": "the park's page (data/parkinfo)"
-    }
-   ],
-   "pct": null,
-   "score": 6,
-   "score_parts": {
-    "name": 2,
-    "pin": 1,
-    "size": 1,
-    "source": 2
-   },
-   "sizes": [],
+   "ours": null,
+   "score": null,
    "t": "State Fishing Lake",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "no outline"
   },
   "US-7407": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Montgomery State Fishing Lake",
    "official": null,
    "ours": {
@@ -2980,6 +3275,7 @@
   "US-7408": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Neosho State Fishing Lake",
    "official": null,
    "ours": {
@@ -3027,6 +3323,7 @@
   "US-7409": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Osage State Fishing Lake",
    "official": null,
    "ours": {
@@ -3068,6 +3365,7 @@
   "US-7410": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Wilson State Fishing Lake",
    "official": null,
    "ours": {
@@ -3115,24 +3413,13 @@
   "US-7411": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Woodson State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 2925,
+    "acres": 2967,
     "manager": "",
     "pieces": [
-     [
-      201208,
-      "Woodson State Fishing Lake And Wildlife Area",
-      2471,
-      "name"
-     ],
-     [
-      201187,
-      "Woodson Wildlife Area",
-      344,
-      "name"
-     ],
      [
       201260,
       "Woodson State Fishing Lake",
@@ -3142,7 +3429,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 5
+    "unknown_pieces": 1
    },
    "owner_now": null,
    "pages": [
@@ -3168,6 +3455,7 @@
   "US-7412": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Black Kettle State Fishing Lake",
    "official": null,
    "ours": {
@@ -3202,6 +3490,7 @@
   "US-7413": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Butler State Fishing Lake",
    "official": null,
    "ours": {
@@ -3243,6 +3532,7 @@
   "US-7414": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Chase State Fishing Lake",
    "official": null,
    "ours": {
@@ -3290,6 +3580,7 @@
   "US-7415": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Cowley State Fishing Lake",
    "official": null,
    "ours": {
@@ -3337,6 +3628,7 @@
   "US-7416": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Kingman State Fishing Lake",
    "official": null,
    "ours": {
@@ -3378,6 +3670,7 @@
   "US-7417": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "McPherson State Fishing Lake",
    "official": null,
    "ours": {
@@ -3419,6 +3712,7 @@
   "US-7418": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Jewell State Fishing Lake",
    "official": null,
    "ours": {
@@ -3460,18 +3754,13 @@
   "US-7419": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Logan State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 386,
+    "acres": 368,
     "manager": "",
     "pieces": [
-     [
-      201201,
-      "Logan State Fishing Lake And Wildlife Area",
-      227,
-      "name"
-     ],
      [
       201243,
       "Logan State Fishing Lake",
@@ -3507,6 +3796,7 @@
   "US-7420": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Ottawa State Fishing Lake",
    "official": null,
    "ours": {
@@ -3554,6 +3844,7 @@
   "US-7421": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Rooks State Fishing Lake",
    "official": null,
    "ours": {
@@ -3595,6 +3886,7 @@
   "US-7422": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Saline State Fishing Lake",
    "official": null,
    "ours": {
@@ -3636,6 +3928,7 @@
   "US-7423": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Sheridan State Fishing Lake",
    "official": null,
    "ours": {
@@ -3677,6 +3970,7 @@
   "US-7424": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Sherman State Fishing Lake",
    "official": null,
    "ours": {
@@ -3718,21 +4012,15 @@
   "US-7425": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Barber State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 145,
+    "acres": 127,
     "manager": "",
-    "pieces": [
-     [
-      201191,
-      "Barber State Fishing Lake And Wildlife Area",
-      129,
-      "name"
-     ]
-    ],
+    "pieces": [],
     "pin": "just outside",
-    "src": "USGS PAD-US",
+    "src": "",
     "unknown_pieces": 2
    },
    "owner_now": null,
@@ -3759,6 +4047,7 @@
   "US-7426": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Clark State Fishing Lake",
    "official": null,
    "ours": {
@@ -3806,6 +4095,7 @@
   "US-7427": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Concannon State Fishing Lake",
    "official": null,
    "ours": {
@@ -3853,6 +4143,7 @@
   "US-7428": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Ford County State Fishing Lake",
    "official": null,
    "ours": {
@@ -3894,6 +4185,7 @@
   "US-7429": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Goodman State Fishing Lake",
    "official": null,
    "ours": {
@@ -3935,6 +4227,7 @@
   "US-7430": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Hain State Fishing Lake",
    "official": null,
    "ours": {
@@ -3976,6 +4269,7 @@
   "US-7431": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Hodgeman State Fishing Lake",
    "official": null,
    "ours": {
@@ -4017,6 +4311,7 @@
   "US-7432": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Kiowa State Fishing Lake",
    "official": null,
    "ours": {
@@ -4058,10 +4353,11 @@
   "US-7433": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Meade State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 1238,
+    "acres": 1185,
     "manager": "",
     "pieces": [
      [
@@ -4069,17 +4365,11 @@
       "Meade Wildlife Area",
       811,
       "name"
-     ],
-     [
-      201219,
-      "Meade State Park",
-      427,
-      "name"
      ]
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 4
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -4105,6 +4395,7 @@
   "US-7434": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Scott State Fishing Lake",
    "official": null,
    "ours": {
@@ -4150,7 +4441,7 @@
    "verdict": "no size on page"
   },
   "US-7477": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Cimarron National Grassland",
    "official": {
@@ -4158,7 +4449,7 @@
     "as": "108,175 acres",
     "clean": false,
     "line": "nd Located within Morton and Stevens counties in southwestern Kansas, the Cimarron National Grassland manages 108,175 acres. Comanche National Grassland The Comanche National Grassland is located in Baca, Las Animas and Otero countie",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Located within Morton and Stevens counties in southwestern Kansas, the Cimarron National Grassland manages 108,175 acres.",
     "url": "https://www.fs.usda.gov/recarea/psicc/recarea/?recid=12404",
     "why": "part (a lake, a purchase, a campground…)"
@@ -4280,7 +4571,7 @@
    "verdict": "agree"
   },
   "US-7866": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Mine Creek Civil War Battlefield State Historic Site",
    "ours": null,
@@ -4292,6 +4583,7 @@
   "US-7867": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Benedictine Bottoms State Wildlife Area",
    "official": null,
    "ours": {
@@ -4326,6 +4618,7 @@
   "US-7918": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Byron Walker State Wildlife Area",
    "official": null,
    "ours": {
@@ -4367,6 +4660,7 @@
   "US-7919": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Cedar Bluff State Wildlife Area",
    "official": null,
    "ours": {
@@ -4414,6 +4708,7 @@
   "US-7920": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Cheney State Wildlife Area",
    "official": null,
    "ours": {
@@ -4455,6 +4750,7 @@
   "US-7921": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Cheyenne Bottoms State Wildlife Area",
    "official": null,
    "ours": {
@@ -4496,6 +4792,7 @@
   "US-7922": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Clinton State Wildlife Area",
    "official": null,
    "ours": {
@@ -4542,6 +4839,7 @@
   "US-7923": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Copan State Wildlife Area",
    "official": null,
    "ours": {
@@ -4576,6 +4874,7 @@
   "US-7924": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Council Grove State Wildlife Area",
    "official": null,
    "ours": {
@@ -4610,6 +4909,7 @@
   "US-7925": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "El Dorado State Wildlife Area",
    "official": null,
    "ours": {
@@ -4618,7 +4918,7 @@
     "pieces": [],
     "pin": "just outside",
     "src": "",
-    "unknown_pieces": 5
+    "unknown_pieces": 4
    },
    "owner_now": null,
    "pages": [
@@ -4644,6 +4944,7 @@
   "US-7926": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Elk City Reservoir State Wildlife Area",
    "official": null,
    "ours": {
@@ -4678,6 +4979,7 @@
   "US-7927": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Fall River State Wildlife Area",
    "official": null,
    "ours": {
@@ -4712,6 +5014,7 @@
   "US-7928": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Glen Elder State Wildlife Area",
    "official": null,
    "ours": {
@@ -4759,6 +5062,7 @@
   "US-7929": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Hillsdale State Wildlife Area",
    "official": null,
    "ours": {
@@ -4798,6 +5102,7 @@
   "US-7930": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Hollister State Wildlife Area",
    "official": null,
    "ours": {
@@ -4839,29 +5144,24 @@
   "US-7931": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Jamestown State Wildlife Area",
    "official": null,
    "ours": {
-    "acres": 5105,
+    "acres": 4882,
     "dissolved": {
-     "after": 2303,
-     "before": 2710,
+     "after": 408,
+     "before": 815,
      "copies": 1,
-     "key_union": 5105,
+     "key_union": 4882,
      "parts": 0,
-     "records": 3,
-     "summed": 2303,
-     "tracts": 2
+     "records": 2,
+     "summed": 408,
+     "tracts": 1
     },
     "manager": "",
-    "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 2710 -> 2303 acres",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 815 -> 408 acres",
     "pieces": [
-     [
-      201157,
-      "Jamestown Wildlife Area",
-      1895,
-      "name"
-     ],
      [
       201158,
       "Jamestown Wildlife Area",
@@ -4897,6 +5197,7 @@
   "US-7932": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Kansas Veterans State Wildlife Area",
    "official": null,
    "ours": {
@@ -4931,6 +5232,7 @@
   "US-7933": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Kaw State Wildlife Area",
    "official": null,
    "ours": {
@@ -4972,6 +5274,7 @@
   "US-7934": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Lovewell State Wildlife Area",
    "official": null,
    "ours": {
@@ -5019,6 +5322,7 @@
   "US-7935": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Marais des Cygnes State Wildlife Area",
    "official": null,
    "ours": {
@@ -5060,6 +5364,7 @@
   "US-7936": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Marion State Wildlife Area",
    "official": null,
    "ours": {
@@ -5094,6 +5399,7 @@
   "US-7937": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "McPherson Valley Wetlands State Wildlife Area",
    "official": null,
    "ours": {
@@ -5135,6 +5441,7 @@
   "US-7938": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Milford State Wildlife Area",
    "official": null,
    "ours": {
@@ -5174,6 +5481,7 @@
   "US-7939": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Mined Land State Wildlife Area",
    "official": null,
    "ours": {
@@ -5266,6 +5574,7 @@
   "US-7940": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Norton State Wildlife Area",
    "official": null,
    "ours": {
@@ -5307,6 +5616,7 @@
   "US-7941": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Perry State Wildlife Area",
    "official": null,
    "ours": {
@@ -5346,6 +5656,7 @@
   "US-7942": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Pratt Sandhills State Wildlife Area",
    "official": null,
    "ours": {
@@ -5385,7 +5696,7 @@
    "verdict": "no size on page"
   },
   "US-7943": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Sandsage Bison Range State Wildlife Area",
    "ours": null,
@@ -5397,6 +5708,7 @@
   "US-7944": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Smoky Hill State Wildlife Area",
    "official": null,
    "ours": {
@@ -5431,6 +5743,7 @@
   "US-7945": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Toronto State Wildlife Area",
    "official": null,
    "ours": {
@@ -5465,6 +5778,7 @@
   "US-7946": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Tuttle Creek State Wildlife Area",
    "official": null,
    "ours": {
@@ -5504,6 +5818,7 @@
   "US-7947": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Webster State Wildlife Area",
    "official": null,
    "ours": {
@@ -5538,6 +5853,7 @@
   "US-7948": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Wilson State Wildlife Area",
    "official": null,
    "ours": {
@@ -5577,6 +5893,7 @@
   "US-7949": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Woodson State Wildlife Area",
    "official": null,
    "ours": {
@@ -5628,7 +5945,7 @@
    "verdict": "no size on page"
   },
   "US-9177": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Constitution Hall State Historic Site",
    "ours": null,
@@ -5638,7 +5955,7 @@
    "verdict": "no outline"
   },
   "US-9178": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Fort Hays State Historic Site",
    "official": null,
@@ -5689,7 +6006,7 @@
    "verdict": "no size on page"
   },
   "US-9179": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Grinter Place State Historic Site",
    "ours": null,
@@ -5699,7 +6016,7 @@
    "verdict": "no outline"
   },
   "US-9180": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Hollenberg Pony Express Station State Historic Site",
    "ours": null,
@@ -5709,7 +6026,7 @@
    "verdict": "no outline"
   },
   "US-9181": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Kaw Mission State Historic Site",
    "ours": null,
@@ -5719,7 +6036,7 @@
    "verdict": "no outline"
   },
   "US-9182": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Pawnee Indian Museum State Historic Site",
    "ours": null,
@@ -5729,7 +6046,7 @@
    "verdict": "no outline"
   },
   "US-9183": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Red Rocks State Historic Site",
    "ours": null,
@@ -5739,7 +6056,7 @@
    "verdict": "no outline"
   },
   "US-9184": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Cottonwood Ranch State Historic Site",
    "ours": null,
@@ -5749,7 +6066,7 @@
    "verdict": "no outline"
   },
   "US-9185": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "First Territorial Capitol State Historic Site",
    "ours": null,
@@ -5759,7 +6076,7 @@
    "verdict": "no outline"
   },
   "US-9186": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Goodnow House State Historic Site",
    "ours": null,
@@ -5769,7 +6086,7 @@
    "verdict": "no outline"
   },
   "US-9187": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "John Brown Museum State Historic Site",
    "ours": null,
@@ -5780,7 +6097,7 @@
   },
   "US-9188": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Shawnee Indian Mission State Historic Site",
    "official": null,
@@ -5841,7 +6158,7 @@
    "verdict": "unsure"
   },
   "US-9189": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Iowa and Sac & Fox Mission State Historic Site",
    "ours": null,
@@ -5851,7 +6168,7 @@
    "verdict": "no outline"
   },
   "US-9190": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Marais des Cygnes Massacre State Historic Site",
    "ours": null,
@@ -5861,7 +6178,7 @@
    "verdict": "no outline"
   },
   "US-9191": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Pawnee Rock State Historic Site",
    "ours": null,
@@ -5871,7 +6188,7 @@
    "verdict": "no outline"
   },
   "US-9752": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Lehigh Portland State Park",
    "official": null,
@@ -5911,5 +6228,5 @@
    "verdict": "no size on page"
   }
  },
- "read": "2026-11-01"
+ "read": "2026-11-09"
 }

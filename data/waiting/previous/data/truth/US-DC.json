@@ -7,16 +7,16 @@
   "no_page": 0,
   "no_size": 16,
   "off": 1,
-  "ours_unknown": 4,
+  "ours_unknown": 10,
   "parks": 35,
   "retired": 0,
   "unsure": 1,
-  "weak": 3,
-  "with_outline": 23
+  "weak": 15,
+  "with_outline": 29
  },
  "parks": {
   "US-0015": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Chesapeake and Ohio Canal National Historical Park",
    "ours": null,
@@ -26,7 +26,7 @@
    "verdict": "no outline"
   },
   "US-0653": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Constitution Gardens National Park",
    "official": null,
@@ -89,7 +89,7 @@
   },
   "US-0654": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "National Capital Parks - East Park",
    "note": "whole park compared (POTA lists it in 2 states: {'US-DC': 3908, 'US-MD': 1935})",
@@ -98,7 +98,7 @@
     "as": "8,000 acres",
     "clean": false,
     "line": "tional Capital Parks-East District of Columbia National Capital Parks — East invites you to explore more than 8,000 acres of scenic parkland, historic landmarks, and vibrant community spaces across Washington, D.C. and Maryland. Fr",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "National Capital Parks — East invites you to explore more than 8,000 acres of scenic parkland, historic landmarks, and vibrant community spaces across Washington, D.C.",
     "url": "https://www.nps.gov/nace/index.htm",
     "why": "total-looking"
@@ -182,7 +182,7 @@
    "verdict": "off"
   },
   "US-0655": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "National Mall and Memorial Parks National Park",
    "ours": null,
@@ -192,7 +192,7 @@
    "verdict": "no outline"
   },
   "US-0656": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Rock Creek Park",
    "official": {
@@ -200,7 +200,7 @@
     "as": "1,754 acre",
     "clean": false,
     "line": "ov Cancel Rock Creek Park • District of Columbia Rock Creek Park is truly a gem in our nation's capital. This 1,754 acre city park was officially authorized in 1890, making it the third national park to be designated by the federa",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "This 1,754 acre city park was officially authorized in 1890, making it the third national park to be designated by the federal government.",
     "url": "https://www.nps.gov/rocr/index.htm",
     "why": "history"
@@ -279,7 +279,7 @@
    "verdict": "agree"
   },
   "US-0657": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "President's Park (White House) Park",
    "ours": null,
@@ -289,15 +289,15 @@
    "verdict": "no outline"
   },
   "US-0670": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "George Washington Memorial Parkway",
-   "note": "whole park compared (POTA lists it in 3 states: {'US-DC': 135, 'US-VA': 7103, 'US-MD': 2052})",
+   "note": "whole park compared (POTA lists it in 3 states: {'US-VA': 7103, 'US-DC': 126, 'US-MD': 2052})",
    "official": null,
    "ours": {
-    "acres": 9290,
+    "acres": 9281,
     "acres_by_state": {
-     "US-DC": 135,
+     "US-DC": 126,
      "US-MD": 2052,
      "US-VA": 7103
     },
@@ -319,8 +319,8 @@
     "pin": "inside",
     "src": "USGS PAD-US",
     "states": [
-     "US-DC",
      "US-VA",
+     "US-DC",
      "US-MD"
     ],
     "unknown_pieces": 0,
@@ -360,7 +360,7 @@
    "verdict": "no size on page"
   },
   "US-0776": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Franklin Delano Roosevelt National Memorial",
    "official": null,
@@ -375,7 +375,7 @@
       "reviewed"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -409,10 +409,10 @@
     }
    ],
    "pct": null,
-   "score": 5,
+   "score": 4,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 0
    },
@@ -422,7 +422,7 @@
    "verdict": "no size on page"
   },
   "US-0780": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Korean War Veterans National Memorial",
    "official": null,
@@ -437,7 +437,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -471,10 +471,10 @@
     }
    ],
    "pct": null,
-   "score": 5,
+   "score": 4,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 0
    },
@@ -484,7 +484,7 @@
    "verdict": "no size on page"
   },
   "US-0783": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Lincoln National Memorial",
    "official": null,
@@ -547,7 +547,7 @@
   },
   "US-0784": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 3.6 million acres, a statewide / agency-wide total (over a million acres) on a park that is not a big federal unit)",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Lyndon Baines Johnson Memorial Grove on the Potomac National Memorial",
    "official": {
@@ -555,7 +555,7 @@
     "as": "3.6 million acres",
     "clean": false,
     "line": "se federal aid to public education, and the Water Quality Act to improve the nation’s water sources and added 3.6 million acres of land to the National Park Service to preserve the nation’s natural and cultural heritage for future genera",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "g his presidency, Johnson signed the landmark 1964 Civil Rights Bill seeking to end discrimination, the Primary and Secondary Education Bill to increase federal aid to public education, and the Water Quality Act to improve the nation’s water sources and added 3.6 million acres of land to the Nationa",
     "url": "https://www.nps.gov/lyba/learn/index.htm",
     "why": "a statewide / agency-wide total (over a million acres) on a park that is not a big federal unit"
@@ -629,7 +629,7 @@
    "verdict": "unsure"
   },
   "US-0785": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Martin Luther King Jr. National Memorial",
    "official": null,
@@ -682,7 +682,7 @@
    "verdict": "no size on page"
   },
   "US-0791": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Theodore Roosevelt Island National Memorial",
    "official": null,
@@ -744,7 +744,7 @@
    "verdict": "no size on page"
   },
   "US-0792": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Thomas Jefferson National Memorial",
    "official": null,
@@ -759,7 +759,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -793,10 +793,10 @@
     }
    ],
    "pct": null,
-   "score": 5,
+   "score": 4,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 0
    },
@@ -806,7 +806,7 @@
    "verdict": "no size on page"
   },
   "US-0793": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Vietnam Veterans National Memorial",
    "official": null,
@@ -821,7 +821,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -855,10 +855,10 @@
     }
    ],
    "pct": null,
-   "score": 5,
+   "score": 4,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 0
    },
@@ -868,7 +868,7 @@
    "verdict": "no size on page"
   },
   "US-0794": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Washington Monument National Memorial",
    "official": null,
@@ -930,7 +930,7 @@
    "verdict": "no size on page"
   },
   "US-0795": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "World War I National Memorial",
    "official": null,
@@ -988,12 +988,12 @@
    "verdict": "no size on page"
   },
   "US-0796": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "World War II National Memorial",
    "official": null,
    "ours": {
-    "acres": 11,
+    "acres": 2,
     "manager": "",
     "pieces": [
      [
@@ -1009,7 +1009,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -1034,10 +1034,10 @@
     }
    ],
    "pct": null,
-   "score": 5,
+   "score": 4,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 0
    },
@@ -1047,7 +1047,7 @@
    "verdict": "no size on page"
   },
   "US-0805": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Carter G. Woodson Home National Historic Site",
    "official": null,
@@ -1102,7 +1102,7 @@
    "verdict": "ours unknown"
   },
   "US-0814": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Ford's Theatre National Historic Site",
    "official": null,
@@ -1110,7 +1110,7 @@
     "acres": 0,
     "manager": "",
     "pieces": [],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 1
    },
@@ -1144,10 +1144,10 @@
     }
    ],
    "pct": null,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 1
    },
@@ -1157,7 +1157,7 @@
    "verdict": "ours unknown"
   },
   "US-0825": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [
     {
      "date_hint": null,
@@ -1181,7 +1181,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -1220,10 +1220,10 @@
     }
    ],
    "pct": null,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 1
    },
@@ -1233,7 +1233,7 @@
    "verdict": "no size on page"
   },
   "US-0848": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Mary McLeod Bethune Council House National Historic Site",
    "official": null,
@@ -1288,7 +1288,7 @@
    "verdict": "ours unknown"
   },
   "US-0853": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Pennsylvania Avenue National Historic Site",
    "official": null,
@@ -1303,7 +1303,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -1328,10 +1328,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 5,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 1
    },
@@ -1343,6 +1343,7 @@
   "US-13543": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "US National Arboretum Botanical Gardens",
    "official": null,
    "ours": {
@@ -1356,7 +1357,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -1382,7 +1383,7 @@
    "verdict": "no size on page"
   },
   "US-13597": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "George Mason National Memorial",
    "ours": null,
@@ -1392,7 +1393,7 @@
    "verdict": "no outline"
   },
   "US-13621": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Desert Shield and Desert Storm National Memorial",
    "ours": null,
@@ -1402,47 +1403,285 @@
    "verdict": "no outline"
   },
   "US-4564": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Potomac Heritage Trail National Scenic Trail",
-   "ours": null,
-   "score": null,
+   "note": "whole park compared (POTA lists it in 0 states: {})",
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "acres_by_state": {},
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "states": [
+     "US-VA",
+     "US-PA",
+     "US-DC",
+     "US-MD"
+    ],
+    "unknown_pieces": 1,
+    "whole_park": true
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/pohe/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/pohe/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/pohe/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/pohe/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/pohe/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
    "t": "National Scenic Trail",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "ours unknown"
   },
   "US-4567": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Captain John Smith Chesapeake National Historic Trail",
-   "ours": null,
-   "score": null,
+   "note": "whole park compared (POTA lists it in 0 states: {})",
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "acres_by_state": {},
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "states": [
+     "US-VA",
+     "US-PA",
+     "US-DE",
+     "US-DC",
+     "US-NY",
+     "US-MD"
+    ],
+    "unknown_pieces": 1,
+    "whole_park": true
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/cajo/planyourvisit/maps.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok, no readable text",
+     "url": "https://www.nps.gov/cajo/planyourvisit/upload/2024_993-082-DOI-NPS-CAJO-Unigrid-508-2.pdf",
+     "why": "official map (parkinfo-web)"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/cajo/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/cajo/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/cajo/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
    "t": "National Historic Trail",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "ours unknown"
   },
   "US-4581": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Star-Spangled Banner National Historic Trail",
-   "ours": null,
-   "score": null,
+   "note": "whole park compared (POTA lists it in 0 states: {})",
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "acres_by_state": {},
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "states": [
+     "US-VA",
+     "US-DC",
+     "US-MD"
+    ],
+    "unknown_pieces": 1,
+    "whole_park": true
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/stsp/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/stsp/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/stsp/learn/historyculture/the-star-spangled-banner.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok, no readable text",
+     "url": "https://www.nps.gov/stsp/upload/508-StarSpangled-Side2-2.pdf",
+     "why": "official map (parkinfo-web)"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/stsp/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/stsp/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/stsp/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
    "t": "National Historic Trail",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "ours unknown"
   },
   "US-4582": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Washington-Rochambeau Revolutionary Route National Historic Trail",
-   "ours": null,
-   "score": null,
+   "note": "whole park compared (POTA lists it in 0 states: {})",
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "acres_by_state": {},
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "states": [
+     "US-CT",
+     "US-VA",
+     "US-MA",
+     "US-PA",
+     "US-DE",
+     "US-DC",
+     "US-NY",
+     "US-MD",
+     "US-NJ",
+     "US-RI"
+    ],
+    "unknown_pieces": 1,
+    "whole_park": true
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/waro/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/waro/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok, no readable text",
+     "url": "https://www.nps.gov/waro/planyourvisit/upload/WARO_UnigridBrochure_2024_Back-2.pdf",
+     "why": "official map (parkinfo-web)"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/waro/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/waro/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/waro/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
    "t": "National Historic Trail",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "ours unknown"
   },
   "US-7499": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Dwight D. Eisenhower National Memorial",
    "official": null,
@@ -1457,7 +1696,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -1482,10 +1721,10 @@
     }
    ],
    "pct": null,
-   "score": 5,
+   "score": 4,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 0
    },
@@ -1495,7 +1734,7 @@
    "verdict": "no size on page"
   },
   "US-7891": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "African American Civil War National Memorial",
    "ours": null,
@@ -1505,7 +1744,7 @@
    "verdict": "no outline"
   },
   "US-7892": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Belmont-Paul Women's Equality National Monument",
    "official": null,
@@ -1513,7 +1752,7 @@
     "acres": 0,
     "manager": "",
     "pieces": [],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 1
    },
@@ -1547,10 +1786,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 5,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 1
    },
@@ -1560,25 +1799,137 @@
    "verdict": "ours unknown"
   },
   "US-9898": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Mount Vernon National Historic Trail",
-   "ours": null,
-   "score": null,
+   "note": "whole park compared (POTA lists it in 0 states: {})",
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "acres_by_state": {},
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "states": [
+     "US-VA",
+     "US-DC"
+    ],
+    "unknown_pieces": 1,
+    "whole_park": true
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/thingstodo/walk-bike-the-mount-vernon-trail.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/gwmp/planyourvisit/upload/Mt-Vernon-Trail-map-508-2021.pdf",
+     "why": "official map (parkinfo-web)"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/gwmp/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
    "t": "National Historic Trail",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "ours unknown"
   },
   "US-9901": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Civil War Defenses of Washington National Historic Trail",
-   "ours": null,
-   "score": null,
+   "note": "whole park compared (POTA lists it in 0 states: {})",
+   "official": {
+    "acres": 130.0,
+    "as": "130 acres",
+    "clean": false,
+    "line": "y. Places to visit Today 18 fort sites are administered by the National Park Service located on approximately 130 acres. The Battle of Fort Stevens Join us each July for the annual commemoration of the Battle of Fort Stevens and",
+    "read": "2026-11-09",
+    "sent": "Today 18 fort sites are administered by the National Park Service located on approximately 130 acres.",
+    "url": "https://www.nps.gov/cwdw/index.htm",
+    "why": "no total words near it"
+   },
+   "ours": {
+    "acres": 0,
+    "acres_by_state": {},
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "states": [
+     "US-VA",
+     "US-DC",
+     "US-MD"
+    ],
+    "unknown_pieces": 1,
+    "whole_park": true
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/cwdw/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/cwdw/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/cwdw/learn/historyculture/places.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/cwdw/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "pct": null,
+   "same_agency": false,
+   "score": 4,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [
+    {
+     "acres": 130.0,
+     "as": "130 acres",
+     "clean": false,
+     "line": "y. Places to visit Today 18 fort sites are administered by the National Park Service located on approximately 130 acres. The Battle of Fort Stevens Join us each July for the annual commemoration of the Battle of Fort Stevens and",
+     "total_like": false,
+     "url": "https://www.nps.gov/cwdw/index.htm",
+     "why": "no total words near it"
+    }
+   ],
    "t": "National Historic Trail",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "ours unknown"
   }
  },
- "read": "2026-11-01"
+ "read": "2026-11-09"
 }

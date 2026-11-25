@@ -5,13 +5,13 @@
   "agree": 8,
   "handover_hints": 4,
   "no_page": 2,
-  "no_size": 238,
+  "no_size": 237,
   "not_read": 0,
   "off": 5,
   "ours_unknown": 6,
   "parks": 277,
   "retired": 0,
-  "unsure": 1,
+  "unsure": 2,
   "weak": 12,
   "with_outline": 263
  },
@@ -1479,9 +1479,9 @@
    "verdict": "no size on page"
   },
   "US-10621": {
-   "checked": "2026-10-28",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-15",
    "n": "McGlothlin-Largen Wildlife Management Area",
    "official": null,
    "ours": {
@@ -1524,28 +1524,44 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "HTTP 403",
+     "status": "ok",
      "url": "https://www.tn.gov/twra/wildlife-management-areas/cumberland-plateau-r3/mcglothin-largen-wma.html",
      "why": "the park's page (data/parkinfo)"
     },
     {
-     "status": "HTTP 403",
+     "status": "ok",
+     "url": "https://www.tn.gov/twra/about-the-twra.html",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "rest",
      "url": "https://www.tn.gov/twra/hunting/wma-hunting.html",
      "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 112.0,
+     "as": "112 acre",
+     "clean": false,
+     "line": "71, Toll Free: 1-833-402-4698, E-mail the office Description : McGlothin-Largen Wildlife Management Area is a 112-acre WMA located on the banks of Watts Bar Lake in Roane County, Tennessee. The WMA has fields planted in small gr",
+     "total_like": false,
+     "url": "https://www.tn.gov/twra/wildlife-management-areas/cumberland-plateau-r3/mcglothin-largen-wma.html",
+     "why": "another park / unit named in the sentence"
+    }
+   ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-11181": {
    "checked": "2026-11-15",
@@ -1595,7 +1611,7 @@
   "US-11241": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Oak Ridge Wildlife Management Area",
    "official": null,
    "ours": {
@@ -1669,7 +1685,7 @@
   "US-11858": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Middle Fork Bottoms State Park",
    "official": null,
    "ours": {
@@ -1721,7 +1737,7 @@
   "US-11879": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "North Chickamauga Creek Gorge State Park",
    "official": null,
    "ours": {
@@ -1763,7 +1779,7 @@
   "US-11918": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Sherwood Forest State Natural Area",
    "official": null,
    "ours": {
@@ -1810,7 +1826,7 @@
   "US-12064": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Henderson Swamp State Wilderness Area",
    "official": null,
    "ours": {
@@ -1857,7 +1873,7 @@
   "US-12070": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Garrett Lake State Fishing Lake",
    "official": null,
    "ours": {
@@ -1913,7 +1929,7 @@
   "US-12071": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Whiteville Lake State Fishing Lake",
    "official": null,
    "ours": {
@@ -1976,7 +1992,7 @@
   "US-12072": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Bedford Lake State Fishing Lake",
    "official": null,
    "ours": {
@@ -2041,7 +2057,7 @@
   "US-12360": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Wolf River State Forest",
    "official": null,
    "ours": {
@@ -2088,7 +2104,7 @@
   "US-12361": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Scott's Gulf Wilderness State Park",
    "official": null,
    "ours": {
@@ -2142,7 +2158,7 @@
   "US-12369": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Lake Graham State Fishing Lake",
    "official": null,
    "ours": {
@@ -2189,7 +2205,7 @@
   "US-12663": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Ocoee River State Park",
    "official": null,
    "ours": {
@@ -2231,7 +2247,7 @@
   "US-12713": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Fiery Gizzard State Park",
    "official": null,
    "ours": {
@@ -2266,7 +2282,7 @@
   "US-12714": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Head of the Crow State Park",
    "official": null,
    "ours": {
@@ -2301,7 +2317,7 @@
   "US-12715": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Gibson County State Fishing Lake",
    "official": null,
    "ours": {
@@ -2423,7 +2439,7 @@
   "US-13092": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Jarrell Switch Wildlife Management Area",
    "official": null,
    "ours": {
@@ -2486,7 +2502,7 @@
   "US-13362": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Chickamauga WMA Wildlife Management Area",
    "official": null,
    "ours": {
@@ -2552,7 +2568,7 @@
   "US-13364": {
    "checked": "2026-10-29",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Cherokee Trail of Tears State Park",
    "ours": {
     "acres": 0,
@@ -2570,7 +2586,7 @@
   "US-13501": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Fort Southwest Point State Historical Park",
    "official": null,
    "ours": {
@@ -2615,7 +2631,7 @@
   "US-13563": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Bear Hollow Mountain Wildlife Management Area",
    "official": null,
    "ours": {
@@ -2679,7 +2695,7 @@
   "US-13567": {
    "checked": "2026-10-29",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Clinch River Valley State Park",
    "ours": {
     "acres": 0,
@@ -2697,7 +2713,7 @@
   "US-2928": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Bicentennial Capitol Mall State Park",
    "official": null,
    "ours": {
@@ -2755,7 +2771,7 @@
   "US-2929": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Big Cypress Tree State Park",
    "official": null,
    "ours": {
@@ -2798,7 +2814,7 @@
   "US-2930": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Big Hill Pond State Park",
    "official": null,
    "ours": {
@@ -2858,7 +2874,7 @@
   "US-2931": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Big Ridge State Park",
    "official": null,
    "ours": {
@@ -2917,7 +2933,7 @@
   "US-2932": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Bledsoe Creek State Park",
    "official": null,
    "ours": {
@@ -2960,7 +2976,7 @@
   "US-2933": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Booker T Washington State Park",
    "official": null,
    "ours": {
@@ -3009,7 +3025,7 @@
   "US-2934": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Burgess Falls State Park",
    "official": null,
    "ours": {
@@ -3075,7 +3091,7 @@
   "US-2935": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Cedars of Lebanon State Park",
    "official": null,
    "ours": {
@@ -3124,7 +3140,7 @@
   "US-2936": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Chickasaw State Park",
    "official": null,
    "ours": {
@@ -3167,7 +3183,7 @@
   "US-2937": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Cordell Hull Birthplace State Park",
    "official": null,
    "ours": {
@@ -3227,7 +3243,7 @@
   "US-2938": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Cove Lake State Park",
    "official": null,
    "ours": {
@@ -3270,7 +3286,7 @@
   "US-2939": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Cumberland Mountain State Park",
    "official": null,
    "ours": {
@@ -3335,7 +3351,7 @@
   "US-2940": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Cummins Falls State Park",
    "official": null,
    "ours": {
@@ -3378,7 +3394,7 @@
   "US-2941": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "David Crockett State Park",
    "official": null,
    "ours": {
@@ -3421,7 +3437,7 @@
   "US-2942": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Davy Crockett Birthplace State Park",
    "official": null,
    "ours": {
@@ -3463,7 +3479,7 @@
   "US-2943": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Dunbar Cave State Park",
    "official": null,
    "ours": {
@@ -3516,7 +3532,7 @@
   "US-2944": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Edgar Evins State Park",
    "official": null,
    "ours": {
@@ -3567,7 +3583,7 @@
   "US-2945": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Fall Creek Falls State Park",
    "official": null,
    "ours": {
@@ -3645,7 +3661,7 @@
   "US-2946": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Fort Loudon State Park",
    "official": null,
    "ours": {
@@ -3710,7 +3726,7 @@
   "US-2947": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Fort Pillow State Park",
    "official": null,
    "ours": {
@@ -3761,7 +3777,7 @@
   "US-2948": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Frozen Head State Park",
    "official": null,
    "ours": {
@@ -3810,7 +3826,7 @@
   "US-2949": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Harpeth River State Park",
    "official": null,
    "ours": {
@@ -3888,7 +3904,7 @@
   "US-2950": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Henry Horton State Park",
    "official": null,
    "ours": {
@@ -3939,7 +3955,7 @@
   "US-2951": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Harrison Bay State Park",
    "official": null,
    "ours": {
@@ -3988,7 +4004,7 @@
   "US-2952": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Hiwassee Ocoee State Park",
    "official": null,
    "ours": {
@@ -4037,7 +4053,7 @@
   "US-2953": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Indian Mountain State Park",
    "official": null,
    "ours": {
@@ -4090,7 +4106,7 @@
   "US-2954": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Johnsonville State Park",
    "official": null,
    "ours": {
@@ -4162,7 +4178,7 @@
   "US-2955": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Wilson Cumberland Trail State Park",
    "official": null,
    "ours": {
@@ -4228,7 +4244,7 @@
   "US-2956": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Long Hunter State Park",
    "official": null,
    "ours": {
@@ -4291,7 +4307,7 @@
   "US-2957": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Meeman-Shelby Forest State Park",
    "official": null,
    "ours": {
@@ -4339,7 +4355,7 @@
   "US-2958": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Montgomery Bell State Park",
    "official": null,
    "ours": {
@@ -4382,7 +4398,7 @@
   "US-2959": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Mousetail Landing State Park",
    "official": null,
    "ours": {
@@ -4439,7 +4455,7 @@
   "US-2960": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Nathan Bedford Forrest State Park",
    "official": null,
    "ours": {
@@ -4488,7 +4504,7 @@
   "US-2961": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Natchez Trace State Park",
    "official": null,
    "ours": {
@@ -4539,7 +4555,7 @@
   "US-2962": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Norris Dam State Park",
    "official": null,
    "ours": {
@@ -4597,7 +4613,7 @@
   "US-2963": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Old Stone Fort State Park",
    "official": null,
    "ours": {
@@ -4639,7 +4655,7 @@
   "US-2964": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Panther Creek State Park",
    "official": null,
    "ours": {
@@ -4688,7 +4704,7 @@
   "US-2965": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Paris Landing State Park",
    "official": null,
    "ours": {
@@ -4731,7 +4747,7 @@
   "US-2966": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Pickett State Park",
    "official": null,
    "ours": {
@@ -4791,7 +4807,7 @@
   "US-2967": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Pickwick Landing State Park",
    "official": null,
    "ours": {
@@ -4851,7 +4867,7 @@
   "US-2968": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Pinson Mounds State Park",
    "official": null,
    "ours": {
@@ -4899,7 +4915,7 @@
   "US-2969": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Port Royal State Park",
    "official": null,
    "ours": {
@@ -4959,7 +4975,7 @@
   "US-2970": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Red Clay State Park",
    "official": null,
    "ours": {
@@ -5017,7 +5033,7 @@
   "US-2971": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Reelfoot Lake State Park",
    "official": null,
    "ours": {
@@ -5077,7 +5093,7 @@
   "US-2972": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Roan Mountain State Park",
    "official": null,
    "ours": {
@@ -5130,7 +5146,7 @@
   "US-2973": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Rock Island State Park",
    "official": null,
    "ours": {
@@ -5179,7 +5195,7 @@
   "US-2974": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Rocky Fork State Park",
    "official": null,
    "ours": {
@@ -5221,7 +5237,7 @@
   "US-2975": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Seven Islands Birding State Park",
    "official": null,
    "ours": {
@@ -5272,7 +5288,7 @@
   "US-2976": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Sgt. Alvin C. York State Park",
    "official": null,
    "ours": {
@@ -5329,7 +5345,7 @@
   "US-2978": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Standing Stone State Park",
    "official": null,
    "ours": {
@@ -5380,7 +5396,7 @@
   "US-2979": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Sycamore Shoals State Park",
    "official": null,
    "ours": {
@@ -5439,7 +5455,7 @@
   "US-2980": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Tims Ford State Park",
    "official": null,
    "ours": {
@@ -5498,7 +5514,7 @@
   "US-2981": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "T.O. Fuller State Park",
    "official": null,
    "ours": {
@@ -5547,7 +5563,7 @@
   "US-2982": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Warriors' Path State Park",
    "official": null,
    "ours": {
@@ -5770,7 +5786,7 @@
   "US-3922": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Radnor Lake State Park",
    "official": null,
    "ours": {
@@ -5823,7 +5839,7 @@
   "US-3923": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Bone Cave Natural State Conservation Area",
    "official": null,
    "ours": {
@@ -5870,7 +5886,7 @@
   "US-3924": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Cedars of Lebanon State Forest",
    "official": null,
    "ours": {
@@ -5953,7 +5969,7 @@
   "US-3925": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Vesta Cedar Glade State Natural Area",
    "official": null,
    "ours": {
@@ -6001,7 +6017,7 @@
   "US-3926": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Bean Switch Refuge Wildlife Management Area",
    "official": null,
    "ours": {
@@ -6057,7 +6073,7 @@
   "US-3927": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Bogota Wildlife Management Area",
    "official": null,
    "ours": {
@@ -6105,7 +6121,7 @@
   "US-3928": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Bridgestone/firestone Centennial Wilderness Wildlife Management Area",
    "official": null,
    "ours": {
@@ -6178,7 +6194,7 @@
   "US-3929": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Buffalo Springs Wildlife Management Area",
    "official": null,
    "ours": {
@@ -6241,7 +6257,7 @@
   "US-3930": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Camden Wildlife Management Area",
    "official": null,
    "ours": {
@@ -6303,7 +6319,7 @@
   "US-3931": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Catoosa Wildlife Management Area",
    "official": null,
    "ours": {
@@ -6359,7 +6375,7 @@
   "US-3932": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Cedar Hill Swamp Wildlife Management Area",
    "official": null,
    "ours": {
@@ -6422,7 +6438,7 @@
   "US-3933": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Cheatham Wildlife Management Area",
    "official": null,
    "ours": {
@@ -6549,7 +6565,7 @@
   "US-3935": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Chuck Swan Wildlife Management Area",
    "official": null,
    "ours": {
@@ -6641,7 +6657,7 @@
   "US-3936": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Cowan Marsh State Wildlife Area",
    "official": null,
    "ours": {
@@ -6697,7 +6713,7 @@
   "US-3937": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Eagle Lake Refuge Wildlife Management Area",
    "official": null,
    "ours": {
@@ -6760,7 +6776,7 @@
   "US-3938": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Ernest Rice Wildlife Management Area",
    "official": null,
    "ours": {
@@ -6823,7 +6839,7 @@
   "US-3939": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Forks Of The River Wildlife Management Area",
    "official": null,
    "ours": {
@@ -6886,7 +6902,7 @@
   "US-3940": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Gooch Wildlife Management Area",
    "official": null,
    "ours": {
@@ -6960,7 +6976,7 @@
   "US-3942": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Haley-jaqueth Wildlife Management Area",
    "official": null,
    "ours": {
@@ -7023,7 +7039,7 @@
   "US-3943": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Haynes Bottom Wildlife Management Area",
    "official": null,
    "ours": {
@@ -7079,7 +7095,7 @@
   "US-3944": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Hickory Flats Wildlife Management Area",
    "official": null,
    "ours": {
@@ -7142,7 +7158,7 @@
   "US-3945": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Hop-in Wildlife Refuge",
    "official": null,
    "ours": {
@@ -7198,7 +7214,7 @@
   "US-3946": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Horns Bluff Refuge Wildlife Management Area",
    "official": null,
    "ours": {
@@ -7261,7 +7277,7 @@
   "US-3947": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Jackson Swamp Wildlife Management Area",
    "official": null,
    "ours": {
@@ -7317,7 +7333,7 @@
   "US-3948": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "John Tully Wildlife Management Area",
    "official": null,
    "ours": {
@@ -7384,7 +7400,7 @@
   "US-3949": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Kyker Bottoms Wildlife Refuge",
    "official": null,
    "ours": {
@@ -7430,7 +7446,7 @@
    "verdict": "no size on page"
   },
   "US-3950": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lauderdale Waterfowl Wildlife Management Area",
    "ours": null,
@@ -7442,7 +7458,7 @@
   "US-3951": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Laurel Hill Wildlife Management Area",
    "official": null,
    "ours": {
@@ -7512,7 +7528,7 @@
   "US-3952": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "M.T.S.U. Wildlife Management Area",
    "official": null,
    "ours": {
@@ -7568,7 +7584,7 @@
   "US-3953": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Maness Swamp State Wildlife Area",
    "official": null,
    "ours": {
@@ -7631,7 +7647,7 @@
   "US-3954": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Mingo Swamp Wildlife Management Area",
    "official": null,
    "ours": {
@@ -7697,7 +7713,7 @@
   "US-3955": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Moss Island Wildlife Management Area",
    "official": null,
    "ours": {
@@ -7753,7 +7769,7 @@
   "US-3956": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Murfree Springs State Wildlife Area",
    "official": null,
    "ours": {
@@ -7806,7 +7822,7 @@
   "US-3957": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Natchez Trace State Forest Wildlife Management Area",
    "official": null,
    "ours": {
@@ -7872,7 +7888,7 @@
   "US-3958": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "North Chickamauga Creek Wildlife Management Area",
    "official": null,
    "ours": {
@@ -7937,7 +7953,7 @@
   "US-3959": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Obion River Wildlife Management Area",
    "official": null,
    "ours": {
@@ -8061,7 +8077,7 @@
   "US-3961": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "South Fork Waterfowl State Wildlife Area",
    "official": null,
    "ours": {
@@ -8124,7 +8140,7 @@
   "US-3962": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "The Boils State Wildlife Area",
    "official": null,
    "ours": {
@@ -8190,7 +8206,7 @@
   "US-3963": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Three Rivers Wildlife Management Area",
    "official": null,
    "ours": {
@@ -8246,7 +8262,7 @@
   "US-3964": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Tumbleweed Wildlife Management Area",
    "official": null,
    "ours": {
@@ -8302,7 +8318,7 @@
   "US-3965": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "White Lake Wildlife Refuge",
    "official": null,
    "ours": {
@@ -8350,7 +8366,7 @@
   "US-3966": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "White Oak Wildlife Management Area",
    "official": null,
    "ours": {
@@ -8414,7 +8430,7 @@
   "US-3967": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Whites Mill Wildlife Refuge",
    "official": null,
    "ours": {
@@ -8472,7 +8488,7 @@
   "US-3968": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Williamsport Wildlife Management Area",
    "official": null,
    "ours": {
@@ -8535,7 +8551,7 @@
   "US-3969": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Wolf River Wildlife Management Area",
    "official": null,
    "ours": {
@@ -8607,7 +8623,7 @@
   "US-3970": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Yanahli Wildlife Management Area",
    "official": null,
    "ours": {
@@ -8665,7 +8681,7 @@
   "US-3971": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Prentice Cooper Wildlife Management Area",
    "official": null,
    "ours": {
@@ -9039,7 +9055,7 @@
   "US-5490": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Bledsoe State Forest",
    "official": null,
    "ours": {
@@ -9087,7 +9103,7 @@
   "US-5491": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Chickasaw State Forest",
    "official": null,
    "ours": {
@@ -9141,7 +9157,7 @@
   "US-5492": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Chuck Swan State Forest",
    "official": null,
    "ours": {
@@ -9197,7 +9213,7 @@
   "US-5493": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Franklin-Marion State Forest",
    "official": null,
    "ours": {
@@ -9245,7 +9261,7 @@
   "US-5494": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "John Tully State Forest",
    "official": null,
    "ours": {
@@ -9301,7 +9317,7 @@
   "US-5495": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Lewis State Forest",
    "official": null,
    "ours": {
@@ -9357,7 +9373,7 @@
   "US-5496": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Lone Mountain State Forest",
    "official": null,
    "ours": {
@@ -9413,7 +9429,7 @@
   "US-5497": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Martha Sundquist State Forest",
    "official": null,
    "ours": {
@@ -9460,7 +9476,7 @@
   "US-5498": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Pickett State Forest",
    "official": null,
    "ours": {
@@ -9528,7 +9544,7 @@
   "US-5499": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Prentice Cooper State Forest",
    "official": null,
    "ours": {
@@ -9586,7 +9602,7 @@
   "US-5500": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Scott State Forest",
    "official": null,
    "ours": {
@@ -9642,7 +9658,7 @@
   "US-5501": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Standing Stone State Forest",
    "official": null,
    "ours": {
@@ -9704,7 +9720,7 @@
   "US-5502": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Stewart State Forest",
    "official": null,
    "ours": {
@@ -9945,7 +9961,7 @@
   "US-6236": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Carroll Cabin Barrens State Natural Area",
    "official": null,
    "ours": {
@@ -10011,7 +10027,7 @@
   "US-6238": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Chimneys State Natural Area",
    "official": null,
    "ours": {
@@ -10069,7 +10085,7 @@
   "US-6239": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Colditz Cove State Natural Area",
    "official": null,
    "ours": {
@@ -10116,7 +10132,7 @@
   "US-6240": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Couchville Cedar Glade State Natural Area",
    "official": null,
    "ours": {
@@ -10163,7 +10179,7 @@
   "US-6241": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Devil's Backbone State Park",
    "official": null,
    "ours": {
@@ -10216,7 +10232,7 @@
   "US-6242": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Elsie Quarterman Cedar Glade State Natural Area",
    "official": null,
    "ours": {
@@ -10263,7 +10279,7 @@
   "US-6243": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Falling Water Falls State Natural Area",
    "official": null,
    "ours": {
@@ -10310,7 +10326,7 @@
   "US-6244": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Flat Rock Cedar Glade State Natural Area",
    "official": null,
    "ours": {
@@ -10375,7 +10391,7 @@
   "US-6245": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Ghost River State Natural Area",
    "official": null,
    "ours": {
@@ -10440,7 +10456,7 @@
   "US-6246": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Hampton Creek Cove State Natural Area",
    "official": null,
    "ours": {
@@ -10512,7 +10528,7 @@
   "US-6248": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Honey Creek State Natural Area",
    "official": null,
    "ours": {
@@ -10559,7 +10575,7 @@
   "US-6249": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "House Mountain State Natural Area",
    "official": null,
    "ours": {
@@ -10615,7 +10631,7 @@
   "US-6250": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "John and Hester Lane Cedar Glade State Natural Area",
    "official": null,
    "ours": {
@@ -10673,7 +10689,7 @@
   "US-6251": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "John Noel at Bon Aqua State Natural Area",
    "official": null,
    "ours": {
@@ -10731,7 +10747,7 @@
   "US-6252": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Laurel Snow State Natural Area",
    "official": null,
    "ours": {
@@ -10778,7 +10794,7 @@
   "US-6254": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Lucius E. Burch, Jr. State Natural Area",
    "official": null,
    "ours": {
@@ -10825,7 +10841,7 @@
   "US-6255": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "May Prairie State Natural Area",
    "official": null,
    "ours": {
@@ -10873,7 +10889,7 @@
   "US-6256": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Mount View Glade State Natural Area",
    "official": null,
    "ours": {
@@ -10931,7 +10947,7 @@
   "US-6258": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Old Forest State Natural Area",
    "official": null,
    "ours": {
@@ -10994,7 +11010,7 @@
   "US-6260": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Piney Falls State Natural Area",
    "official": null,
    "ours": {
@@ -11051,7 +11067,7 @@
   "US-6262": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Powell River State Natural Area",
    "official": null,
    "ours": {
@@ -11109,7 +11125,7 @@
   "US-6263": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Riverwoods State Natural Area",
    "official": null,
    "ours": {
@@ -11167,7 +11183,7 @@
   "US-6264": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Roundtop Mountain State Natural Area",
    "official": null,
    "ours": {
@@ -11223,7 +11239,7 @@
   "US-6265": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Rugby State Natural Area",
    "official": null,
    "ours": {
@@ -11286,7 +11302,7 @@
   "US-6266": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Savage Gulf State Natural Area",
    "official": null,
    "ours": {
@@ -11333,7 +11349,7 @@
   "US-6267": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Sequatchie Cave State Natural Area",
    "official": null,
    "ours": {
@@ -11381,7 +11397,7 @@
   "US-6268": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Short Springs State Natural Area",
    "official": null,
    "ours": {
@@ -11443,7 +11459,7 @@
   "US-6269": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Stillhouse Hollow Falls State Natural Area",
    "official": null,
    "ours": {
@@ -11499,7 +11515,7 @@
   "US-6270": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Stinging Fork Falls State Natural Area",
    "official": null,
    "ours": {
@@ -11546,7 +11562,7 @@
   "US-6271": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Sunk Lake State Natural Area",
    "official": null,
    "ours": {
@@ -11602,7 +11618,7 @@
   "US-6272": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Twin Arches State Natural Area",
    "official": null,
    "ours": {
@@ -11659,7 +11675,7 @@
   "US-6275": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Walls of Jericho State Natural Area",
    "official": null,
    "ours": {
@@ -11715,7 +11731,7 @@
   "US-6276": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Walterhill Floodplain State Natural Area",
    "official": null,
    "ours": {
@@ -11771,7 +11787,7 @@
   "US-6277": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Washmorgan Hollow State Natural Area",
    "official": null,
    "ours": {
@@ -11818,7 +11834,7 @@
   "US-6278": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Watauga River Bluffs State Natural Area",
    "official": null,
    "ours": {
@@ -11876,7 +11892,7 @@
   "US-6279": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "William B. Clark State Natural Area",
    "official": null,
    "ours": {
@@ -11952,7 +11968,7 @@
   "US-7566": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Arnold Hollow Wildlife Management Area",
    "official": null,
    "ours": {
@@ -12017,7 +12033,7 @@
   "US-7567": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Bark Camp Barrens Wildlife Management Area",
    "official": null,
    "ours": {
@@ -12087,7 +12103,7 @@
   "US-7568": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Barkley Wildlife Management Area",
    "official": null,
    "ours": {
@@ -12154,7 +12170,7 @@
   "US-7569": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Beason Creek Wildlife Management Area",
    "official": null,
    "ours": {
@@ -12212,7 +12228,7 @@
   "US-7570": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Beaverdam Creek Wildlife Management Area",
    "official": null,
    "ours": {
@@ -12278,7 +12294,7 @@
   "US-7571": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Beech River Wildlife Management Area",
    "official": null,
    "ours": {
@@ -12347,7 +12363,7 @@
   "US-7572": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Big Sandy Wildlife Management Area",
    "official": null,
    "ours": {
@@ -12412,7 +12428,7 @@
   "US-7573": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Black Bayou Refuge Wildlife Management Area",
    "official": null,
    "ours": {
@@ -12474,7 +12490,7 @@
   "US-7574": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Blackburn Fork Wildlife Management Area",
    "official": null,
    "ours": {
@@ -12537,7 +12553,7 @@
   "US-7575": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Browntown Wildlife Management Area",
    "official": null,
    "ours": {
@@ -12600,7 +12616,7 @@
   "US-7576": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Chambers Creek Wildlife Management Area",
    "official": null,
    "ours": {
@@ -12664,7 +12680,7 @@
   "US-7577": {
    "checked": "2026-10-29",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Charlotte Ann Finnel Neal Wildlife Management Area",
    "ours": {
     "acres": 496,
@@ -12689,7 +12705,7 @@
   "US-7578": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Cheatham Lake Wildlife Management Area",
    "official": null,
    "ours": {
@@ -12760,7 +12776,7 @@
   "US-7579": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Colonel Forrest V Durand Wildlife Management Area",
    "official": null,
    "ours": {
@@ -12824,7 +12840,7 @@
   "US-7580": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Cordell Hull Wildlife Management Area",
    "official": null,
    "ours": {
@@ -12932,7 +12948,7 @@
   "US-7582": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Cove Creek Wildlife Management Area",
    "official": null,
    "ours": {
@@ -12996,7 +13012,7 @@
   "US-7583": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Cypress Pond Wildlife Management Area",
    "official": null,
    "ours": {
@@ -13052,7 +13068,7 @@
   "US-7585": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Eagle Creek Wildlife Management Area",
    "official": null,
    "ours": {
@@ -13108,7 +13124,7 @@
   "US-7587": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Flintville Wildlife Management Area",
    "official": null,
    "ours": {
@@ -13171,7 +13187,7 @@
   "US-7588": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Foothills Wildlife Management Area",
    "official": null,
    "ours": {
@@ -13234,7 +13250,7 @@
   "US-7589": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Fort Ridge Wildlife Management Area",
    "official": null,
    "ours": {
@@ -13297,7 +13313,7 @@
   "US-7590": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Fourth Fractional Township Wildlife Management Area",
    "official": null,
    "ours": {
@@ -13363,7 +13379,7 @@
   "US-7591": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Grays Creek Wildlife Management Area",
    "official": null,
    "ours": {
@@ -13419,7 +13435,7 @@
   "US-7592": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Happy Hollow Wildlife Management Area",
    "official": null,
    "ours": {
@@ -13484,7 +13500,7 @@
   "US-7593": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Harmon Creek Wildlife Management Area",
    "official": null,
    "ours": {
@@ -13547,7 +13563,7 @@
   "US-7594": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Harp Wildlife Management Area",
    "official": null,
    "ours": {
@@ -13603,7 +13619,7 @@
   "US-7595": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Harts Mill Wildlife Management Area",
    "official": null,
    "ours": {
@@ -13661,7 +13677,7 @@
   "US-7596": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Headwaters Wildlife Management Area",
    "official": null,
    "ours": {
@@ -13717,7 +13733,7 @@
   "US-7597": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Hick Hill Wildlife Management Area",
    "official": null,
    "ours": {
@@ -13780,7 +13796,7 @@
   "US-7598": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Hiwassee Refuge Wildlife Management Area",
    "official": null,
    "ours": {
@@ -13847,7 +13863,7 @@
   "US-7599": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Keyes-Harrison Wildlife Management Area",
    "official": null,
    "ours": {
@@ -13910,7 +13926,7 @@
   "US-7600": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Kyles Ford Wildlife Management Area",
    "official": null,
    "ours": {
@@ -13973,7 +13989,7 @@
   "US-7601": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Lick Creek Wildlife Management Area",
    "official": null,
    "ours": {
@@ -14036,7 +14052,7 @@
   "US-7602": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Lick Creek Bottoms Wildlife Management Area",
    "official": null,
    "ours": {
@@ -14155,7 +14171,7 @@
   "US-7605": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Mt. Roosevelt Wildlife Management Area",
    "official": null,
    "ours": {
@@ -14218,7 +14234,7 @@
   "US-7606": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "New Hope Wildlife Management Area",
    "official": null,
    "ours": {
@@ -14276,7 +14292,7 @@
   "US-7607": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Nolichucky Wildlife Management Area",
    "official": null,
    "ours": {
@@ -14401,7 +14417,7 @@
   "US-7609": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "North Cumberland Wildlife Management Area",
    "official": null,
    "ours": {
@@ -14508,7 +14524,7 @@
   "US-7610": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Old Hickory Wildlife Management Area",
    "official": null,
    "ours": {
@@ -14572,7 +14588,7 @@
   "US-7611": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Owl Hollow Mill Wildlife Management Area",
    "official": null,
    "ours": {
@@ -14673,7 +14689,7 @@
   "US-7613": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Parker Branch Wildlife Management Area",
    "official": null,
    "ours": {
@@ -14738,7 +14754,7 @@
   "US-7614": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Pea Ridge Wildlife Management Area",
    "official": null,
    "ours": {
@@ -14802,7 +14818,7 @@
   "US-7615": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Percy Priest Wildlife Management Area",
    "official": null,
    "ours": {
@@ -14880,7 +14896,7 @@
   "US-7616": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Perry Switch Wildlife Management Area",
    "official": null,
    "ours": {
@@ -14938,7 +14954,7 @@
   "US-7617": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Presidents Island Wildlife Management Area",
    "official": null,
    "ours": {
@@ -15004,7 +15020,7 @@
   "US-7618": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Rankin Wildlife Management Area",
    "official": null,
    "ours": {
@@ -15067,7 +15083,7 @@
   "US-7619": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Shelton Ferry Wildlife Management Area",
    "official": null,
    "ours": {
@@ -15133,7 +15149,7 @@
   "US-7620": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Skinner Mountain Wildlife Management Area",
    "official": null,
    "ours": {
@@ -15196,7 +15212,7 @@
   "US-7621": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Spring Creek Wildlife Management Area",
    "official": null,
    "ours": {
@@ -15261,7 +15277,7 @@
   "US-7622": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Tellico Lake Wildlife Management Area",
    "official": null,
    "ours": {
@@ -15337,7 +15353,7 @@
   "US-7623": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Thorny Cypress Wildlife Management Area",
    "official": null,
    "ours": {
@@ -15393,7 +15409,7 @@
   "US-7624": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Tie Camp Wildlife Management Area",
    "official": null,
    "ours": {
@@ -15457,7 +15473,7 @@
   "US-7625": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Tigrett Wildlife Management Area",
    "official": null,
    "ours": {
@@ -15521,7 +15537,7 @@
   "US-7626": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Tull Bottom Wildlife Management Area",
    "official": null,
    "ours": {
@@ -15569,7 +15585,7 @@
   "US-7627": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "West Sandy Wildlife Management Area",
    "official": null,
    "ours": {
@@ -15631,7 +15647,7 @@
   "US-7628": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Yuchi Refuge Wildlife Management Area",
    "official": null,
    "ours": {
@@ -15701,7 +15717,7 @@
   "US-7880": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Luper Mountain Wildlife Management Area",
    "official": null,
    "ours": {
@@ -15823,7 +15839,7 @@
   "US-9718": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Savage Gulf State Park",
    "official": null,
    "ours": {
@@ -15861,5 +15877,5 @@
    "verdict": "no size on page"
   }
  },
- "read": "2026-11-15"
+ "read": "2026-11-22"
 }

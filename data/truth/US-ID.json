@@ -2,22 +2,23 @@
  "about": "Park truth checker: official acreage vs our outline, handover hints, second-witness score. Review lists only: nothing here changes a key or a card.",
  "area": "US-ID",
  "counts": {
-  "agree": 2,
+  "agree": 3,
   "handover_hints": 2,
   "no_page": 3,
-  "no_size": 146,
+  "no_size": 124,
+  "not_read": 0,
   "off": 6,
   "ours_unknown": 18,
   "parks": 362,
   "retired": 0,
-  "unsure": 52,
-  "weak": 16,
-  "with_outline": 227
+  "unsure": 77,
+  "weak": 18,
+  "with_outline": 232
  },
  "parks": {
   "US-0054": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": "2021",
@@ -29,13 +30,13 @@
     }
    ],
    "n": "Nez Perce National Historical Park",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-ID': 1403, 'US-WA': 104})",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-WA': 104, 'US-ID': 1403})",
    "official": {
     "acres": 4564.9,
     "as": "4564.93 acres",
     "clean": true,
     "line": "erce culture and history. Basic Park Statistics Interior Region(s): Columbia-Pacific Northwest Region 9 Size: 4564.93 acres Staffing: 21 permanent and 1 temporary Annual Visitation: 301,473 Budget: $2,503,000 Economic Benefits to Com",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Size: 4564.93 acres",
     "url": "https://www.nps.gov/nepe/learn/management/statistics.htm",
     "why": "clean total"
@@ -58,10 +59,10 @@
     "pin": "inside",
     "src": "USGS PAD-US",
     "states": [
-     "US-ID",
-     "US-MT",
+     "US-OR",
      "US-WA",
-     "US-OR"
+     "US-ID",
+     "US-MT"
     ],
     "unknown_pieces": 0,
     "whole_park": true
@@ -123,7 +124,7 @@
    "verdict": "off"
   },
   "US-0070": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Yellowstone National Park",
    "note": "whole park compared (POTA lists it in 3 states: {'US-WY': 2003734, 'US-ID': 36921, 'US-MT': 2200676})",
@@ -191,8 +192,8 @@
    "verdict": "no size on page"
   },
   "US-0274": {
-   "cause": "a number 5 parks share from one page (60,000 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bear Lake National Wildlife Refuge",
    "official": null,
@@ -242,7 +243,6 @@
     }
    ],
    "pct": null,
-   "same_agency": false,
    "score": 7,
    "score_parts": {
     "name": 2,
@@ -252,13 +252,13 @@
    },
    "sizes": [
     {
-     "acres": 60000.0,
-     "as": "60,000 acres",
+     "acres": 115000.0,
+     "as": "115,000 acres",
      "clean": false,
-     "line": "OK Situated just outside the Lawton/Ft. Sill area, Wichita Mountains Wildlife Refuge preserves approximately 60,000 acres of mixed grass prairie, ancient granite mountains, and fresh water lakes and streams for the benefit of wildl",
+     "line": "National Wildlife Refuge Austwell, TX Established in 1937, Aransas National Wildlife Refuge encompasses over 115,000 acres of diverse habitat along the Texas Gulf Coast. It is world-renowned as the wintering home of the last wild fl",
      "total_like": false,
      "url": "https://fws.gov",
-     "why": "no total words near it"
+     "why": "history"
     }
    ],
    "t": "National Wildlife Refuge",
@@ -266,21 +266,19 @@
    "verdict": "unsure"
   },
   "US-0275": {
-   "cause": "a number 5 parks share from one page (60,000 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Camas National Wildlife Refuge",
    "official": null,
    "ours": {
-    "acres": 11421,
+    "acres": 10797,
     "dissolved": {
      "after": 10797,
      "before": 21594,
      "copies": 1,
-     "key_union": 11421,
      "parts": 0,
      "records": 2,
-     "summed": 10797,
      "tracts": 1
     },
     "manager": "",
@@ -307,7 +305,6 @@
     }
    ],
    "pct": null,
-   "same_agency": false,
    "score": 7,
    "score_parts": {
     "name": 2,
@@ -317,13 +314,13 @@
    },
    "sizes": [
     {
-     "acres": 60000.0,
-     "as": "60,000 acres",
+     "acres": 115000.0,
+     "as": "115,000 acres",
      "clean": false,
-     "line": "OK Situated just outside the Lawton/Ft. Sill area, Wichita Mountains Wildlife Refuge preserves approximately 60,000 acres of mixed grass prairie, ancient granite mountains, and fresh water lakes and streams for the benefit of wildl",
+     "line": "National Wildlife Refuge Austwell, TX Established in 1937, Aransas National Wildlife Refuge encompasses over 115,000 acres of diverse habitat along the Texas Gulf Coast. It is world-renowned as the wintering home of the last wild fl",
      "total_like": false,
      "url": "https://fws.gov",
-     "why": "no total words near it"
+     "why": "history"
     }
    ],
    "t": "National Wildlife Refuge",
@@ -331,18 +328,18 @@
    "verdict": "unsure"
   },
   "US-0276": {
-   "cause": "a number 5 parks share from one page (60,000 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Deer Flat National Wildlife Refuge",
    "official": null,
    "ours": {
-    "acres": 887,
+    "acres": 1149,
     "dissolved": {
      "after": 1447,
      "before": 2893,
      "copies": 1,
-     "key_union": 887,
+     "key_union": 1149,
      "parts": 0,
      "records": 2,
      "summed": 1447,
@@ -372,7 +369,6 @@
     }
    ],
    "pct": null,
-   "same_agency": false,
    "score": 6,
    "score_parts": {
     "name": 2,
@@ -382,13 +378,13 @@
    },
    "sizes": [
     {
-     "acres": 60000.0,
-     "as": "60,000 acres",
+     "acres": 115000.0,
+     "as": "115,000 acres",
      "clean": false,
-     "line": "OK Situated just outside the Lawton/Ft. Sill area, Wichita Mountains Wildlife Refuge preserves approximately 60,000 acres of mixed grass prairie, ancient granite mountains, and fresh water lakes and streams for the benefit of wildl",
+     "line": "National Wildlife Refuge Austwell, TX Established in 1937, Aransas National Wildlife Refuge encompasses over 115,000 acres of diverse habitat along the Texas Gulf Coast. It is world-renowned as the wintering home of the last wild fl",
      "total_like": false,
      "url": "https://fws.gov",
-     "why": "no total words near it"
+     "why": "history"
     }
    ],
    "t": "National Wildlife Refuge",
@@ -396,13 +392,13 @@
    "verdict": "unsure"
   },
   "US-0277": {
-   "cause": "a number 3 parks share from one page (60,000 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Grays Lake National Wildlife Refuge",
    "official": null,
    "ours": {
-    "acres": 25039,
+    "acres": 26648,
     "family_fold": "layers {'sgidb': 23145, 'padus': 9405}: one land in 2 layers, the sgidb copy used (9,405 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -427,7 +423,6 @@
     }
    ],
    "pct": null,
-   "same_agency": false,
    "score": 6,
    "score_parts": {
     "name": 2,
@@ -437,13 +432,13 @@
    },
    "sizes": [
     {
-     "acres": 60000.0,
-     "as": "60,000 acres",
+     "acres": 115000.0,
+     "as": "115,000 acres",
      "clean": false,
-     "line": "OK Situated just outside the Lawton/Ft. Sill area, Wichita Mountains Wildlife Refuge preserves approximately 60,000 acres of mixed grass prairie, ancient granite mountains, and fresh water lakes and streams for the benefit of wildl",
+     "line": "National Wildlife Refuge Austwell, TX Established in 1937, Aransas National Wildlife Refuge encompasses over 115,000 acres of diverse habitat along the Texas Gulf Coast. It is world-renowned as the wintering home of the last wild fl",
      "total_like": false,
      "url": "https://www.fws.gov",
-     "why": "no total words near it"
+     "why": "history"
     }
    ],
    "t": "National Wildlife Refuge",
@@ -451,8 +446,8 @@
    "verdict": "unsure"
   },
   "US-0278": {
-   "cause": "a number 5 parks share from one page (60,000 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Kootenai National Wildlife Refuge",
    "official": null,
@@ -490,7 +485,6 @@
     }
    ],
    "pct": null,
-   "same_agency": false,
    "score": 7,
    "score_parts": {
     "name": 2,
@@ -500,13 +494,13 @@
    },
    "sizes": [
     {
-     "acres": 60000.0,
-     "as": "60,000 acres",
+     "acres": 115000.0,
+     "as": "115,000 acres",
      "clean": false,
-     "line": "OK Situated just outside the Lawton/Ft. Sill area, Wichita Mountains Wildlife Refuge preserves approximately 60,000 acres of mixed grass prairie, ancient granite mountains, and fresh water lakes and streams for the benefit of wildl",
+     "line": "National Wildlife Refuge Austwell, TX Established in 1937, Aransas National Wildlife Refuge encompasses over 115,000 acres of diverse habitat along the Texas Gulf Coast. It is world-renowned as the wintering home of the last wild fl",
      "total_like": false,
      "url": "https://fws.gov",
-     "why": "no total words near it"
+     "why": "history"
     }
    ],
    "t": "National Wildlife Refuge",
@@ -514,21 +508,19 @@
    "verdict": "unsure"
   },
   "US-0279": {
-   "cause": "a number 5 parks share from one page (60,000 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Minidoka National Wildlife Refuge",
    "official": null,
    "ours": {
-    "acres": 1985,
+    "acres": 2852,
     "dissolved": {
      "after": 2852,
      "before": 5704,
      "copies": 1,
-     "key_union": 1985,
      "parts": 0,
      "records": 2,
-     "summed": 2852,
      "tracts": 1
     },
     "manager": "",
@@ -555,7 +547,6 @@
     }
    ],
    "pct": null,
-   "same_agency": false,
    "score": 6,
    "score_parts": {
     "name": 2,
@@ -565,13 +556,13 @@
    },
    "sizes": [
     {
-     "acres": 60000.0,
-     "as": "60,000 acres",
+     "acres": 115000.0,
+     "as": "115,000 acres",
      "clean": false,
-     "line": "OK Situated just outside the Lawton/Ft. Sill area, Wichita Mountains Wildlife Refuge preserves approximately 60,000 acres of mixed grass prairie, ancient granite mountains, and fresh water lakes and streams for the benefit of wildl",
+     "line": "National Wildlife Refuge Austwell, TX Established in 1937, Aransas National Wildlife Refuge encompasses over 115,000 acres of diverse habitat along the Texas Gulf Coast. It is world-renowned as the wintering home of the last wild fl",
      "total_like": false,
      "url": "https://fws.gov",
-     "why": "no total words near it"
+     "why": "history"
     }
    ],
    "t": "National Wildlife Refuge",
@@ -579,7 +570,7 @@
    "verdict": "unsure"
   },
   "US-0280": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Oxford Slough Wetland Management District",
    "ours": null,
@@ -589,7 +580,7 @@
    "verdict": "no outline"
   },
   "US-0664": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "City of Rocks Reserve National Conservation Area",
    "official": null,
@@ -636,7 +627,7 @@
    "verdict": "no size on page"
   },
   "US-0665": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Craters of the Moon National Monument",
    "official": null,
@@ -657,7 +648,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -685,10 +676,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -698,7 +689,7 @@
    "verdict": "no size on page"
   },
   "US-0849": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Minidoka National Historic Site",
    "note": "whole park compared (POTA lists it in 1 states: {'US-ID': 302})",
@@ -720,8 +711,8 @@
     "pin": "inside",
     "src": "USGS PAD-US",
     "states": [
-     "US-ID",
-     "US-WA"
+     "US-WA",
+     "US-ID"
     ],
     "unknown_pieces": 0,
     "whole_park": true
@@ -768,12 +759,12 @@
    "verdict": "no size on page"
   },
   "US-0890": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Salmon National Wild and Scenic River",
    "official": null,
    "ours": {
-    "acres": 21111,
+    "acres": 25670,
     "manager": "",
     "pieces": [
      [
@@ -813,12 +804,12 @@
     }
    ],
    "pct": null,
-   "score": 5,
+   "score": 4,
    "score_parts": {
     "name": 1,
     "pin": 1,
     "size": 1,
-    "source": 2
+    "source": 1
    },
    "sizes": [],
    "t": "National Wild and Scenic River",
@@ -826,7 +817,7 @@
    "verdict": "no size on page"
   },
   "US-0940": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Hagerman Fossil Beds National Monument",
    "official": null,
@@ -867,7 +858,7 @@
    "verdict": "no size on page"
   },
   "US-10005": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Steck Park BLM Recreation Management Area",
    "official": null,
@@ -908,7 +899,7 @@
    "verdict": "no size on page"
   },
   "US-10006": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Idaho Centennial Trail State Trail",
    "official": {
@@ -916,7 +907,7 @@
     "as": "28 Acres",
     "clean": false,
     "line": "na Project at Poison Creek on Lake Cascade Mar 15 2024 Idaho Department of Parks and Recreation Purchase Adds 28 Acres to Bear Lake State Park The acquisition will bring 1,200 feet of new shoreline into the popular State Park an",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Idaho Department of Parks and Recreation Purchase Adds 28 Acres to Bear Lake State Park",
     "url": "https://parksandrecreation.idaho.gov/",
     "why": "part (a lake, a purchase, a campground…)"
@@ -981,7 +972,7 @@
    "verdict": "ours unknown"
   },
   "US-10070": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Menan Buttes (BLM) Natural Monument",
    "ours": null,
@@ -991,7 +982,7 @@
    "verdict": "no outline"
   },
   "US-10071": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Hell's Half Acre (BLM) Natural Monument",
    "official": {
@@ -999,7 +990,7 @@
     "as": "26.9 million acres",
     "clean": false,
     "line": "in wildland fire management efforts. Wild Horse and Burro BLM manages and protects wild horses and burros on 26.9 million acres of public lands. Timber Sales Timber sales allow for the sustainable harvest of timber for commercial purpose",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "BLM manages and protects wild horses and burros on 26.9 million acres of public lands.",
     "url": "https://www.blm.gov",
     "why": "a statewide / agency-wide total (over a million acres) on a park that is not a big federal unit"
@@ -1046,7 +1037,7 @@
    "verdict": "ours unknown"
   },
   "US-10072": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Big Southern Butte (BLM) Natural Monument",
    "ours": null,
@@ -1056,7 +1047,7 @@
    "verdict": "no outline"
   },
   "US-10268": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Hoodoo Meadows Airstrip State Recreation Area",
    "ours": null,
@@ -1066,7 +1057,7 @@
    "verdict": "no outline"
   },
   "US-10304": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Experimental Breeder Reactor-1 (DOE) National Historic Site",
    "ours": null,
@@ -1077,12 +1068,12 @@
   },
   "US-10334": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Big Jacks Creek Wilderness Area (BLM( Wilderness Area",
    "official": null,
    "ours": {
-    "acres": 55171,
+    "acres": 56288,
     "manager": "",
     "pieces": [],
     "pin": "inside",
@@ -1122,7 +1113,7 @@
    "verdict": "unsure"
   },
   "US-10335": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Little Jacks Creek Wilderness Area (BLM) Wilderness Area",
    "official": {
@@ -1130,7 +1121,7 @@
     "as": "26.9 million acres",
     "clean": false,
     "line": "in wildland fire management efforts. Wild Horse and Burro BLM manages and protects wild horses and burros on 26.9 million acres of public lands. Timber Sales Timber sales allow for the sustainable harvest of timber for commercial purpose",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "BLM manages and protects wild horses and burros on 26.9 million acres of public lands.",
     "url": "https://www.blm.gov",
     "why": "part (a lake, a purchase, a campground…)"
@@ -1177,7 +1168,7 @@
    "verdict": "ours unknown"
   },
   "US-10336": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bruneau - Jarbidge Rivers Wilderness Area (BLM) Wilderness Area",
    "official": {
@@ -1185,13 +1176,13 @@
     "as": "90,000 acres",
     "clean": false,
     "line": "Flickr LinkedIn Bruneau-Jarbidge Rivers Wilderness Area | Idaho View Map In Full Screen BLM manages more than 90,000 acres of public lands in the Bruneau-Jarbidge Rivers Wilderness. The Owyhee Canyonlands is a huge and remote area o",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "BLM manages more than 90,000 acres of public lands in the Bruneau-Jarbidge Rivers Wilderness.",
     "url": "https://www.blm.gov/visit/bruneau-jarbidge-rivers-wilderness-area",
     "why": "part (a lake, a purchase, a campground…)"
    },
    "ours": {
-    "acres": 95356,
+    "acres": 95307,
     "manager": "",
     "pieces": [],
     "pin": "inside",
@@ -1240,7 +1231,7 @@
    "verdict": "agree"
   },
   "US-10337": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "North Fork Owyhee Wilderness Area (BLM) Wilderness Area",
    "official": {
@@ -1248,7 +1239,7 @@
     "as": "26.9 million acres",
     "clean": false,
     "line": "in wildland fire management efforts. Wild Horse and Burro BLM manages and protects wild horses and burros on 26.9 million acres of public lands. Timber Sales Timber sales allow for the sustainable harvest of timber for commercial purpose",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "BLM manages and protects wild horses and burros on 26.9 million acres of public lands.",
     "url": "https://www.blm.gov",
     "why": "part (a lake, a purchase, a campground…)"
@@ -1295,7 +1286,7 @@
    "verdict": "ours unknown"
   },
   "US-10338": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Pole Creek Wilderness Area (BLM) Wilderness Area",
    "official": {
@@ -1303,7 +1294,7 @@
     "as": "26.9 million acres",
     "clean": false,
     "line": "in wildland fire management efforts. Wild Horse and Burro BLM manages and protects wild horses and burros on 26.9 million acres of public lands. Timber Sales Timber sales allow for the sustainable harvest of timber for commercial purpose",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "BLM manages and protects wild horses and burros on 26.9 million acres of public lands.",
     "url": "https://www.blm.gov",
     "why": "part (a lake, a purchase, a campground…)"
@@ -1351,12 +1342,12 @@
   },
   "US-10339": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Owyhee River Wilderness Area (BLM) Wilderness Area",
    "official": null,
    "ours": {
-    "acres": 444948,
+    "acres": 454942,
     "manager": "",
     "pieces": [],
     "pin": "inside",
@@ -1398,6 +1389,7 @@
   "US-10342": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Sand Basin HMA BLM Herd Management Area",
    "official": null,
    "ours": {
@@ -1440,6 +1432,7 @@
   "US-10343": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Hard Trigger HMA BLM Herd Management Area",
    "official": null,
    "ours": {
@@ -1482,6 +1475,7 @@
   "US-10344": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Black Mountain HMA BLM Herd Management Area",
    "official": null,
    "ours": {
@@ -1524,6 +1518,7 @@
   "US-10346": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Saylor Creek HMA BLM Herd Management Area",
    "official": null,
    "ours": {
@@ -1566,6 +1561,7 @@
   "US-10347": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Four Mile HMA BLM Herd Management Area",
    "official": null,
    "ours": {
@@ -1608,6 +1604,7 @@
   "US-10348": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Challis HMA BLM Herd Management Area",
    "official": null,
    "ours": {
@@ -1648,7 +1645,7 @@
    "verdict": "no size on page"
   },
   "US-10381": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Frank Church-River of No Return Wilderness Area",
    "official": null,
@@ -1690,7 +1687,7 @@
    "verdict": "no size on page"
   },
   "US-10382": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Gospel Hump Wilderness Wilderness Area",
    "official": null,
@@ -1733,7 +1730,7 @@
   },
   "US-10383": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 38 million acres, no total words near it)",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Jim McClure-Jerry Peak Wilderness Wilderness Area",
    "official": {
@@ -1741,13 +1738,13 @@
     "as": "38 million acres",
     "clean": false,
     "line": "research grounds, and outstanding ecological and cultural resources. These areas are diverse--made up of over 38 million acres of National Monuments, National Conservation Areas, Wilderness Areas, Wilderness Study Areas, Wild and Scenic",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "These areas are diverse--made up of over 38 million acres of National Monuments, National Conservation Areas, Wilderness Areas, Wilderness Study Areas, Wild and Scenic Rivers, National Scenic and Historic Trails, and Conservation Lands of the California Desert.",
     "url": "https://www.blm.gov/programs/national-conservation-lands/about",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 120974,
+    "acres": 119603,
     "manager": "",
     "pieces": [
      [
@@ -1810,6 +1807,7 @@
   "US-10418": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Western Heritage National Scenic Byway National Parkway",
    "official": null,
    "ours": {
@@ -1845,6 +1843,7 @@
   "US-10419": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Payette River National Scenic Byway National Parkway",
    "official": null,
    "ours": {
@@ -1880,6 +1879,7 @@
   "US-10420": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Pioneer Historic National Scenic Byway National Parkway",
    "official": null,
    "ours": {
@@ -1913,7 +1913,7 @@
    "verdict": "ours unknown"
   },
   "US-10421": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "International Selkirk Loop National Scenic Byway National Parkway",
    "ours": null,
@@ -1925,6 +1925,7 @@
   "US-10422": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Northwest Passage National Scenic Byway National Parkway",
    "official": null,
    "ours": {
@@ -1958,7 +1959,7 @@
    "verdict": "ours unknown"
   },
   "US-10423": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Pend Oreille National Scenic Byway National Parkway",
    "ours": null,
@@ -1968,7 +1969,7 @@
    "verdict": "no outline"
   },
   "US-10427": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Thomas Creek Airstrip State Recreation Area",
    "ours": null,
@@ -1978,7 +1979,7 @@
    "verdict": "no outline"
   },
   "US-10429": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Middle Fork Clearwater River National Wild and Scenic River",
    "official": null,
@@ -2030,7 +2031,7 @@
    "verdict": "no size on page"
   },
   "US-10430": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "St Joe River National Wild and Scenic River",
    "ours": null,
@@ -2040,22 +2041,54 @@
    "verdict": "no outline"
   },
   "US-10431": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Cabinet Gorge State Fish Hatchery",
-   "ours": null,
-   "score": null,
+   "official": null,
+   "ours": {
+    "acres": 29,
+    "manager": "",
+    "pieces": [
+     [
+      199838,
+      "Cabinet Gorge Hatchery",
+      29,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://idfg.idaho.gov/visit/hatchery",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
    "t": "State Fish Hatchery",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "no size on page"
   },
   "US-10432": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Clearwater State Fish Hatchery",
    "official": null,
    "ours": {
-    "acres": 15,
+    "acres": 11,
     "manager": "",
     "pieces": [
      [
@@ -2079,7 +2112,7 @@
    "pages": [
     {
      "other_unit": true,
-     "status": "rest",
+     "status": "ok",
      "url": "https://idfg.idaho.gov/visit/hatchery",
      "why": "the park's page (data/parkinfo)"
     }
@@ -2098,7 +2131,7 @@
    "verdict": "no size on page"
   },
   "US-10433": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Eagle State Fish Hatchery",
    "ours": null,
@@ -2108,12 +2141,12 @@
    "verdict": "no outline"
   },
   "US-10434": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "McCall State Fish Hatchery",
    "official": null,
    "ours": {
-    "acres": 3,
+    "acres": 5,
     "manager": "",
     "pieces": [
      [
@@ -2129,7 +2162,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -2137,16 +2170,16 @@
    "pages": [
     {
      "other_unit": true,
-     "status": "rest",
+     "status": "ok",
      "url": "https://idfg.idaho.gov/visit/hatchery",
      "why": "the park's page (data/parkinfo)"
     }
    ],
    "pct": null,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 1
    },
@@ -2156,7 +2189,7 @@
    "verdict": "no size on page"
   },
   "US-10435": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Nampa State Fish Hatchery",
    "official": null,
@@ -2179,7 +2212,7 @@
    "pages": [
     {
      "other_unit": true,
-     "status": "rest",
+     "status": "ok",
      "url": "https://idfg.idaho.gov/visit/hatchery",
      "why": "the park's page (data/parkinfo)"
     }
@@ -2198,7 +2231,7 @@
    "verdict": "no size on page"
   },
   "US-10436": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Hayspur State Fish Hatchery",
    "official": null,
@@ -2221,7 +2254,7 @@
    "pages": [
     {
      "other_unit": true,
-     "status": "rest",
+     "status": "ok",
      "url": "https://idfg.idaho.gov/visit/hatchery",
      "why": "the park's page (data/parkinfo)"
     }
@@ -2240,12 +2273,12 @@
    "verdict": "no size on page"
   },
   "US-10437": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Magic Valley State Fish Hatchery",
    "official": null,
    "ours": {
-    "acres": 19,
+    "acres": 24,
     "manager": "",
     "pieces": [
      [
@@ -2269,7 +2302,7 @@
    "pages": [
     {
      "other_unit": true,
-     "status": "rest",
+     "status": "ok",
      "url": "https://idfg.idaho.gov/visit/hatchery",
      "why": "the park's page (data/parkinfo)"
     }
@@ -2288,12 +2321,12 @@
    "verdict": "no size on page"
   },
   "US-10438": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "American Falls State Fish Hatchery",
    "official": null,
    "ours": {
-    "acres": 48,
+    "acres": 108,
     "manager": "",
     "pieces": [
      [
@@ -2317,7 +2350,7 @@
    "pages": [
     {
      "other_unit": true,
-     "status": "rest",
+     "status": "ok",
      "url": "https://idfg.idaho.gov/visit/hatchery",
      "why": "the park's page (data/parkinfo)"
     }
@@ -2336,12 +2369,12 @@
    "verdict": "no size on page"
   },
   "US-10439": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Grace State Fish Hatchery",
    "official": null,
    "ours": {
-    "acres": 7,
+    "acres": 18,
     "manager": "",
     "pieces": [
      [
@@ -2365,7 +2398,7 @@
    "pages": [
     {
      "other_unit": true,
-     "status": "rest",
+     "status": "ok",
      "url": "https://idfg.idaho.gov/visit/hatchery",
      "why": "the park's page (data/parkinfo)"
     }
@@ -2384,12 +2417,12 @@
    "verdict": "no size on page"
   },
   "US-10440": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Henrys Lake State Fish Hatchery",
    "official": null,
    "ours": {
-    "acres": 4,
+    "acres": 2,
     "manager": "",
     "pieces": [
      [
@@ -2405,54 +2438,6 @@
       "name"
      ]
     ],
-    "pin": "inside",
-    "src": "USGS PAD-US",
-    "unknown_pieces": 0
-   },
-   "owner_now": null,
-   "pages": [
-    {
-     "other_unit": true,
-     "status": "rest",
-     "url": "https://idfg.idaho.gov/visit/hatchery",
-     "why": "the park's page (data/parkinfo)"
-    }
-   ],
-   "pct": null,
-   "score": 7,
-   "score_parts": {
-    "name": 2,
-    "pin": 2,
-    "size": 1,
-    "source": 2
-   },
-   "sizes": [],
-   "t": "State Fish Hatchery",
-   "ver": 15,
-   "verdict": "no size on page"
-  },
-  "US-10441": {
-   "checked": "2026-11-09",
-   "handover": [],
-   "n": "Springfield State Fish Hatchery",
-   "official": null,
-   "ours": {
-    "acres": 44,
-    "manager": "",
-    "pieces": [
-     [
-      199683,
-      "Springfield Hatchery & Fishing Access Site",
-      73,
-      "name"
-     ],
-     [
-      199682,
-      "Springfield Hatchery & Fishing Access Site",
-      2,
-      "name"
-     ]
-    ],
     "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
@@ -2461,7 +2446,7 @@
    "pages": [
     {
      "other_unit": true,
-     "status": "rest",
+     "status": "ok",
      "url": "https://idfg.idaho.gov/visit/hatchery",
      "why": "the park's page (data/parkinfo)"
     }
@@ -2479,8 +2464,56 @@
    "ver": 15,
    "verdict": "no size on page"
   },
+  "US-10441": {
+   "checked": "2026-11-22",
+   "handover": [],
+   "n": "Springfield State Fish Hatchery",
+   "official": null,
+   "ours": {
+    "acres": 75,
+    "manager": "",
+    "pieces": [
+     [
+      199683,
+      "Springfield Hatchery & Fishing Access Site",
+      73,
+      "name"
+     ],
+     [
+      199682,
+      "Springfield Hatchery & Fishing Access Site",
+      2,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://idfg.idaho.gov/visit/hatchery",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Fish Hatchery",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
   "US-10442": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Mackay State Fish Hatchery",
    "official": null,
@@ -2503,7 +2536,7 @@
    "pages": [
     {
      "other_unit": true,
-     "status": "rest",
+     "status": "ok",
      "url": "https://idfg.idaho.gov/visit/hatchery",
      "why": "the park's page (data/parkinfo)"
     }
@@ -2522,12 +2555,12 @@
    "verdict": "no size on page"
   },
   "US-10443": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Sawtooth State Fish Hatchery",
    "official": null,
    "ours": {
-    "acres": 44,
+    "acres": 74,
     "manager": "",
     "pieces": [
      [
@@ -2551,7 +2584,7 @@
    "pages": [
     {
      "other_unit": true,
-     "status": "rest",
+     "status": "ok",
      "url": "https://idfg.idaho.gov/visit/hatchery",
      "why": "the park's page (data/parkinfo)"
     }
@@ -2570,12 +2603,12 @@
    "verdict": "no size on page"
   },
   "US-10444": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Hagerman National Fish Hatchery",
    "official": null,
    "ours": {
-    "acres": 44,
+    "acres": 66,
     "manager": "",
     "pieces": [
      [
@@ -2599,7 +2632,7 @@
    "pages": [
     {
      "other_unit": true,
-     "status": "rest",
+     "status": "ok",
      "url": "https://idfg.idaho.gov/visit/hatchery",
      "why": "the park's page (data/parkinfo)"
     }
@@ -2618,8 +2651,8 @@
    "verdict": "no size on page"
   },
   "US-10445": {
-   "cause": "a number 3 parks share from one page (60,000 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Dworshak National Fish Hatchery",
    "official": null,
@@ -2648,7 +2681,6 @@
     }
    ],
    "pct": null,
-   "same_agency": false,
    "score": 7,
    "score_parts": {
     "name": 2,
@@ -2658,13 +2690,13 @@
    },
    "sizes": [
     {
-     "acres": 60000.0,
-     "as": "60,000 acres",
+     "acres": 115000.0,
+     "as": "115,000 acres",
      "clean": false,
-     "line": "OK Situated just outside the Lawton/Ft. Sill area, Wichita Mountains Wildlife Refuge preserves approximately 60,000 acres of mixed grass prairie, ancient granite mountains, and fresh water lakes and streams for the benefit of wildl",
+     "line": "National Wildlife Refuge Austwell, TX Established in 1937, Aransas National Wildlife Refuge encompasses over 115,000 acres of diverse habitat along the Texas Gulf Coast. It is world-renowned as the wintering home of the last wild fl",
      "total_like": false,
      "url": "https://www.fws.gov",
-     "why": "no total words near it"
+     "why": "history"
     }
    ],
    "t": "National Fish Hatchery",
@@ -2672,13 +2704,13 @@
    "verdict": "unsure"
   },
   "US-10446": {
-   "cause": "a number 3 parks share from one page (60,000 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Kooskia National Fish Hatchery",
    "official": null,
    "ours": {
-    "acres": 59,
+    "acres": 134,
     "manager": "",
     "pieces": [
      [
@@ -2694,7 +2726,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -2708,23 +2740,22 @@
     }
    ],
    "pct": null,
-   "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
    "sizes": [
     {
-     "acres": 60000.0,
-     "as": "60,000 acres",
+     "acres": 115000.0,
+     "as": "115,000 acres",
      "clean": false,
-     "line": "OK Situated just outside the Lawton/Ft. Sill area, Wichita Mountains Wildlife Refuge preserves approximately 60,000 acres of mixed grass prairie, ancient granite mountains, and fresh water lakes and streams for the benefit of wildl",
+     "line": "National Wildlife Refuge Austwell, TX Established in 1937, Aransas National Wildlife Refuge encompasses over 115,000 acres of diverse habitat along the Texas Gulf Coast. It is world-renowned as the wintering home of the last wild fl",
      "total_like": false,
      "url": "https://www.fws.gov",
-     "why": "no total words near it"
+     "why": "history"
     }
    ],
    "t": "National Fish Hatchery",
@@ -2732,20 +2763,12 @@
    "verdict": "unsure"
   },
   "US-10530": {
-   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 28 Acres, no total words near it)",
+   "cause": "a number 19 parks share from the same sentence (28 ac): an agency total, not this park",
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Coeur d'Alene Parkway State Park",
-   "official": {
-    "acres": 28.0,
-    "as": "28 Acres",
-    "clean": false,
-    "line": "na Project at Poison Creek on Lake Cascade Mar 15 2024 Idaho Department of Parks and Recreation Purchase Adds 28 Acres to Bear Lake State Park The acquisition will bring 1,200 feet of new shoreline into the popular State Park an",
-    "read": "2026-11-09",
-    "sent": "Idaho Department of Parks and Recreation Purchase Adds 28 Acres to Bear Lake State Park",
-    "url": "https://www.parksandrecreation.idaho.gov",
-    "why": "no total words near it"
-   },
+   "official": null,
    "ours": {
     "acres": 10,
     "manager": "",
@@ -2769,7 +2792,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 64,
+   "pct": null,
    "same_agency": false,
    "score": 5,
    "score_parts": {
@@ -2805,10 +2828,11 @@
   "US-10536": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Roswell Marsh Wildlife Habitat Area Habitat Protection Area",
    "official": null,
    "ours": {
-    "acres": 425,
+    "acres": 707,
     "manager": "",
     "pieces": [
      [
@@ -2851,8 +2875,8 @@
    "verdict": "no size on page"
   },
   "US-10657": {
-   "cause": "a number 14 parks share from one page (26,900,000 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 17 parks share from the same sentence (26,900,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Milner Historic Recreation Area BLM Historic Area",
    "official": null,
@@ -2867,7 +2891,7 @@
       "reviewed-approx"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -2882,10 +2906,10 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -2907,15 +2931,30 @@
   "US-11089": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Ted Trueblood Wildlife Habitat Area State Wildlife Habitat Management Area",
-   "ours": null,
+   "ours": {
+    "acres": 342,
+    "manager": "",
+    "pieces": [
+     [
+      199756,
+      "Ted Trueblood Wildlife Habitat Area",
+      342,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
    "score": null,
    "t": "State Wildlife Habitat Management Area",
    "ver": 15,
    "verdict": "no outline"
   },
   "US-11157": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lava Hot Springs State Recreation Site",
    "ours": null,
@@ -2925,7 +2964,7 @@
    "verdict": "no outline"
   },
   "US-11183": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Joe T. Fallini Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -2935,13 +2974,13 @@
    "verdict": "no outline"
   },
   "US-11239": {
-   "cause": "a number 14 parks share from one page (26,900,000 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 17 parks share from the same sentence (26,900,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Chilly Slough Wetland Conservation Area BLM Interpretive Site",
    "official": null,
    "ours": {
-    "acres": 637,
+    "acres": 909,
     "manager": "",
     "pieces": [
      [
@@ -3001,12 +3040,13 @@
    "verdict": "unsure"
   },
   "US-11249": {
-   "checked": "2026-11-09",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Salmon Falls Creek Reservoir State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 49988,
+    "acres": 52132,
     "dissolved": {
      "after": 49477,
      "before": 104124,
@@ -3017,7 +3057,7 @@
      },
      "family_fold": 2430,
      "family_used": "sgakg",
-     "key_union": 49988,
+     "key_union": 52132,
      "parts": 3,
      "records": 12,
      "summed": 47047,
@@ -3059,7 +3099,7 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://idfg.idaho.gov/ifwis/fishingplanner/water/1147349421431",
      "why": "the park's page (data/parkinfo)"
     }
@@ -3072,14 +3112,24 @@
     "size": 1,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 2752.7,
+     "as": "2,752.7 acres",
+     "clean": false,
+     "line": "lls Creek Recommended Fishing Water Family Fishing Water Salmon Falls Creek Reservoir in Twin Falls County is 2,752.7 acres. Interactive Map Change basemap, overlays and print Download KMZ For GPS, Phone or Google Earth A short drive",
+     "total_like": false,
+     "url": "https://idfg.idaho.gov/ifwis/fishingplanner/water/1147349421431",
+     "why": "part (a lake, a purchase, a campground…)"
+    }
+   ],
    "t": "State Fishing Lake",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-11250": {
-   "cause": "a number 14 parks share from one page (26,900,000 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 17 parks share from the same sentence (26,900,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Thorn Creek Reservoir BLM Recreation Management Area",
    "official": null,
@@ -3132,8 +3182,8 @@
    "verdict": "unsure"
   },
   "US-11251": {
-   "cause": "a number 14 parks share from one page (26,900,000 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 17 parks share from the same sentence (26,900,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Magic Reservoir BLM Recreation Management Area",
    "official": null,
@@ -3202,7 +3252,7 @@
    "verdict": "unsure"
   },
   "US-11252": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "GrasmereReservoir State Fishing Lake",
    "official": null,
@@ -3229,8 +3279,8 @@
    "verdict": "no official page on file"
   },
   "US-11253": {
-   "cause": "a number 14 parks share from one page (26,900,000 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 17 parks share from the same sentence (26,900,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Fish Creek Reservoir BLM Recreation Management Area",
    "official": null,
@@ -3283,7 +3333,7 @@
    "verdict": "unsure"
   },
   "US-11254": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Silver Creek North and South BLM Recreation Management Area",
    "ours": null,
@@ -3293,7 +3343,7 @@
    "verdict": "no outline"
   },
   "US-11255": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Weiser Dunes Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -3303,7 +3353,7 @@
    "verdict": "no outline"
   },
   "US-11256": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Brownlee/Oxbow Reservoir BLM Recreation Management Area",
    "ours": null,
@@ -3315,6 +3365,7 @@
   "US-11257": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Crane Creek Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -3357,6 +3408,7 @@
   "US-11258": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Mormon Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -3403,21 +3455,19 @@
    "verdict": "no size on page"
   },
   "US-11259": {
-   "cause": "a number 14 parks share from one page (26,900,000 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 17 parks share from the same sentence (26,900,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Silver City Recreation Area BLM Recreation Management Area",
    "official": null,
    "ours": {
-    "acres": 3945,
+    "acres": 2624,
     "dissolved": {
      "after": 2624,
      "before": 7872,
      "copies": 2,
-     "key_union": 3945,
      "parts": 0,
      "records": 3,
-     "summed": 2624,
      "tracts": 1
     },
     "manager": "",
@@ -3468,7 +3518,7 @@
    "verdict": "unsure"
   },
   "US-11260": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "North Fork Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -3478,7 +3528,7 @@
    "verdict": "no outline"
   },
   "US-11261": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Big Cottonwood BLM Recreation Management Area",
    "ours": null,
@@ -3490,6 +3540,7 @@
   "US-11262": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Cedar Creek Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -3529,7 +3580,7 @@
    "verdict": "no size on page"
   },
   "US-11275": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bayhorse Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -3539,7 +3590,7 @@
    "verdict": "no outline"
   },
   "US-11276": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Cottonwood Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -3549,7 +3600,7 @@
    "verdict": "no outline"
   },
   "US-11277": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Deadman Hole Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -3559,7 +3610,7 @@
    "verdict": "no outline"
   },
   "US-11278": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "East Fork Recreation Site BLM Special Recreation Management Area",
    "ours": null,
@@ -3569,7 +3620,7 @@
    "verdict": "no outline"
   },
   "US-11279": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Garden Creek Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -3579,7 +3630,7 @@
    "verdict": "no outline"
   },
   "US-11280": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Little Boulder Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -3589,7 +3640,7 @@
    "verdict": "no outline"
   },
   "US-11281": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Morgan Creek Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -3599,8 +3650,8 @@
    "verdict": "no outline"
   },
   "US-11282": {
-   "cause": "a number 14 parks share from one page (26,900,000 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 17 parks share from the same sentence (26,900,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Summit Creek Recreation Area BLM Recreation Management Area",
    "official": null,
@@ -3615,7 +3666,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -3630,10 +3681,10 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -3653,7 +3704,7 @@
    "verdict": "unsure"
   },
   "US-11283": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Hammer Creek Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -3663,7 +3714,7 @@
    "verdict": "no outline"
   },
   "US-11284": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Island Bar Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -3673,7 +3724,7 @@
    "verdict": "no outline"
   },
   "US-11285": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lucile Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -3683,7 +3734,7 @@
    "verdict": "no outline"
   },
   "US-11286": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Pine Bar Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -3693,7 +3744,7 @@
    "verdict": "no outline"
   },
   "US-11287": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Shorts Bar Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -3703,7 +3754,7 @@
    "verdict": "no outline"
   },
   "US-11288": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Slate Creek Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -3713,7 +3764,7 @@
    "verdict": "no outline"
   },
   "US-11289": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Whitebird Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -3723,7 +3774,7 @@
    "verdict": "no outline"
   },
   "US-11290": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "McKay's Bend BLM Recreation Management Area",
    "ours": null,
@@ -3733,7 +3784,7 @@
    "verdict": "no outline"
   },
   "US-11291": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Pink House Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -3743,7 +3794,7 @@
    "verdict": "no outline"
   },
   "US-11295": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Agency Creek Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -3753,7 +3804,7 @@
    "verdict": "no outline"
   },
   "US-11296": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "McFarland Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -3763,7 +3814,7 @@
    "verdict": "no outline"
   },
   "US-11297": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Morgan Bar Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -3773,7 +3824,7 @@
    "verdict": "no outline"
   },
   "US-11298": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Shoup Bridge Recreation Site National Park",
    "ours": null,
@@ -3783,7 +3834,7 @@
    "verdict": "no outline"
   },
   "US-11299": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Smokey Cubs Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -3793,7 +3844,7 @@
    "verdict": "no outline"
   },
   "US-11300": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Tower Rock Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -3803,7 +3854,7 @@
    "verdict": "no outline"
   },
   "US-11301": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Williams Lake Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -3813,7 +3864,7 @@
    "verdict": "no outline"
   },
   "US-11302": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Birch Creek Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -3823,7 +3874,7 @@
    "verdict": "no outline"
   },
   "US-11303": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Kelly Island Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -3833,7 +3884,7 @@
    "verdict": "no outline"
   },
   "US-11304": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Wolf Flats Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -3843,17 +3894,61 @@
    "verdict": "no outline"
   },
   "US-11308": {
-   "checked": "2026-11-09",
+   "cause": "a number 17 parks share from the same sentence (26,900,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Blackfoot Reservoir Recreation Site BLM Recreation Management Area",
-   "ours": null,
-   "score": null,
+   "official": null,
+   "ours": {
+    "acres": 41391,
+    "manager": "",
+    "pieces": [
+     [
+      "sgakg13878",
+      "Blackfoot",
+      41391,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.blm.gov",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "same_agency": false,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 26900000.0,
+     "as": "26.9 million acres",
+     "clean": false,
+     "line": "in wildland fire management efforts. Wild Horse and Burro BLM manages and protects wild horses and burros on 26.9 million acres of public lands. Timber Sales Timber sales allow for the sustainable harvest of timber for commercial purpose",
+     "total_like": false,
+     "url": "https://www.blm.gov",
+     "why": "a statewide / agency-wide total (over a million acres) on a park that is not a big federal unit"
+    }
+   ],
    "t": "BLM Recreation Management Area",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "unsure"
   },
   "US-11309": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Cutthroat Trout Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -3863,21 +3958,19 @@
    "verdict": "no outline"
   },
   "US-11310": {
-   "cause": "a number 14 parks share from one page (26,900,000 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 17 parks share from the same sentence (26,900,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Goodenough Creek Recreation Site BLM Recreation Management Area",
    "official": null,
    "ours": {
-    "acres": 295,
+    "acres": 280,
     "dissolved": {
      "after": 280,
      "before": 560,
      "copies": 1,
-     "key_union": 295,
      "parts": 0,
      "records": 2,
-     "summed": 280,
      "tracts": 1
     },
     "manager": "",
@@ -3928,7 +4021,7 @@
    "verdict": "unsure"
   },
   "US-11311": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Graves Creek Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -3938,7 +4031,7 @@
    "verdict": "no outline"
   },
   "US-11312": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Hawkins Reservoir Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -3948,7 +4041,7 @@
    "verdict": "no outline"
   },
   "US-11313": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Heart Mountain Springs Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -3958,7 +4051,7 @@
    "verdict": "no outline"
   },
   "US-11314": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Maple Grove Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -3968,7 +4061,7 @@
    "verdict": "no outline"
   },
   "US-11315": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Morgan's Bridge Recreation Site BLM Special Recreation Management Area",
    "ours": null,
@@ -3978,17 +4071,61 @@
    "verdict": "no outline"
   },
   "US-11316": {
-   "checked": "2026-11-09",
+   "cause": "a number 17 parks share from the same sentence (26,900,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Pipeline Recreation Site BLM Recreation Management Area",
-   "ours": null,
-   "score": null,
+   "official": null,
+   "ours": {
+    "acres": 18,
+    "manager": "",
+    "pieces": [
+     [
+      "sgakg13903",
+      "Campground - Pipeline",
+      18,
+      "reviewed"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.blm.gov",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "same_agency": false,
+   "score": 5,
+   "score_parts": {
+    "name": 1,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 26900000.0,
+     "as": "26.9 million acres",
+     "clean": false,
+     "line": "in wildland fire management efforts. Wild Horse and Burro BLM manages and protects wild horses and burros on 26.9 million acres of public lands. Timber Sales Timber sales allow for the sustainable harvest of timber for commercial purpose",
+     "total_like": false,
+     "url": "https://www.blm.gov",
+     "why": "a statewide / agency-wide total (over a million acres) on a park that is not a big federal unit"
+    }
+   ],
    "t": "BLM Recreation Management Area",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "unsure"
   },
   "US-11317": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Redpoint Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -3998,7 +4135,7 @@
    "verdict": "no outline"
   },
   "US-11318": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Sage Hen Flats Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -4008,7 +4145,7 @@
    "verdict": "no outline"
   },
   "US-11319": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Trail Creek Bridge Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -4020,6 +4157,7 @@
   "US-11325": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Wilson Lake Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -4033,7 +4171,7 @@
       "name · water outline only"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "water outline only",
     "unknown_pieces": 0
    },
@@ -4060,7 +4198,7 @@
    "verdict": "no size on page"
   },
   "US-11326": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Crater Lake Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -4070,7 +4208,7 @@
    "verdict": "no outline"
   },
   "US-11327": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Crater Peak Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -4080,18 +4218,18 @@
    "verdict": "no outline"
   },
   "US-11328": {
-   "cause": "a number 14 parks share from one page (26,900,000 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 17 parks share from the same sentence (26,900,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Huckleberry Recreation Site BLM Recreation Management Area",
    "official": null,
    "ours": {
-    "acres": 85,
+    "acres": 142,
     "dissolved": {
      "after": 160,
      "before": 320,
      "copies": 1,
-     "key_union": 85,
+     "key_union": 142,
      "parts": 0,
      "records": 2,
      "summed": 160,
@@ -4145,8 +4283,8 @@
    "verdict": "unsure"
   },
   "US-11330": {
-   "cause": "a number 14 parks share from one page (26,900,000 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 17 parks share from the same sentence (26,900,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Killarney Lake Recreation Site BLM Recreation Management Area",
    "official": null,
@@ -4199,7 +4337,7 @@
    "verdict": "unsure"
   },
   "US-11331": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Mica Bay Boater Park BLM Recreation Management Area",
    "ours": null,
@@ -4209,7 +4347,7 @@
    "verdict": "no outline"
   },
   "US-11332": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Orphan Point Saddle Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -4219,7 +4357,7 @@
    "verdict": "no outline"
   },
   "US-11333": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Sheep Springs Overlook Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -4229,7 +4367,7 @@
    "verdict": "no outline"
   },
   "US-11334": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Tingly Springs Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -4239,7 +4377,7 @@
    "verdict": "no outline"
   },
   "US-11335": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Windy Bay Boater Park BLM Recreation Management Area",
    "ours": null,
@@ -4249,13 +4387,13 @@
    "verdict": "no outline"
   },
   "US-11341": {
-   "cause": "a number 14 parks share from one page (26,900,000 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 17 parks share from the same sentence (26,900,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Little Wood Reservoir BLM Recreation Management Area",
    "official": null,
    "ours": {
-    "acres": 523,
+    "acres": 637,
     "family_fold": "layers {'sgidb': 523, 'padus': 360}: one land in 2 layers, the sgidb copy used (360 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -4266,7 +4404,7 @@
       "name · water outline only"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "water outline only",
     "unknown_pieces": 0
    },
@@ -4281,10 +4419,10 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -4306,6 +4444,7 @@
   "US-11379": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Paddock Valley Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -4346,7 +4485,7 @@
    "verdict": "no size on page"
   },
   "US-11380": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Mann Creek Reservoir State Fishing Lake",
    "official": null,
@@ -4388,12 +4527,12 @@
    "verdict": "no size on page"
   },
   "US-11381": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Black Canyon Reservoir Management Area",
    "official": null,
    "ours": {
-    "acres": 1134,
+    "acres": 1138,
     "family_fold": "layers {'sgidb': 892, 'padus': 594}: one land in 2 layers, the sgidb copy used (594 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -4404,7 +4543,7 @@
       "name · water outline only"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "water outline only",
     "unknown_pieces": 0
    },
@@ -4418,10 +4557,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -4433,6 +4572,7 @@
   "US-11382": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Mountain Home Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -4446,7 +4586,7 @@
       "name · water outline only"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "water outline only",
     "unknown_pieces": 0
    },
@@ -4475,6 +4615,7 @@
   "US-11383": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Little Camas Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -4515,12 +4656,12 @@
    "verdict": "no size on page"
   },
   "US-11384": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Anderson Ranch Reservoir Management Area",
    "official": null,
    "ours": {
-    "acres": 6329,
+    "acres": 5950,
     "family_fold": "layers {'sgidb': 4605, 'padus': 4395}: one land in 2 layers, the sgidb copy used (4,395 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -4531,7 +4672,7 @@
       "name · water outline only"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "water outline only",
     "unknown_pieces": 0
    },
@@ -4545,10 +4686,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -4558,12 +4699,12 @@
    "verdict": "no size on page"
   },
   "US-11385": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Arrowrock Reservoir State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 4723,
+    "acres": 4792,
     "family_fold": "layers {'padus': 4045, 'sgidb': 3014}: one land in 2 layers, the padus copy used (3,014 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -4601,7 +4742,7 @@
    "verdict": "no size on page"
   },
   "US-11386": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lucky Peak Reservoir State Fishing Lake",
    "official": null,
@@ -4643,12 +4784,12 @@
    "verdict": "no size on page"
   },
   "US-11387": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lake Cascade Reservoir Management Area",
    "official": null,
    "ours": {
-    "acres": 29297,
+    "acres": 27148,
     "family_fold": "layers {'sgidb': 27148, 'padus': 14820}: one land in 2 layers, the sgidb copy used (14,820 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -4688,10 +4829,11 @@
   "US-11388": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Indian Creek Reservoir State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 201,
+    "acres": 380,
     "family_fold": "layers {'padus': 380, 'sgidb': 126}: one land in 2 layers, the padus copy used (126 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -4731,6 +4873,7 @@
   "US-11389": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Long Tom Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -4773,10 +4916,11 @@
   "US-11390": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Dog Creek Reservoir State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 60,
+    "acres": 95,
     "family_fold": "layers {'sgidb': 54, 'padus': 40}: one land in 2 layers, the sgidb copy used (40 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -4787,7 +4931,7 @@
       "name · water outline only"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "water outline only",
     "unknown_pieces": 0
    },
@@ -4814,12 +4958,12 @@
    "verdict": "no size on page"
   },
   "US-11391": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Deadwood Reservoir State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 2839,
+    "acres": 3172,
     "family_fold": "layers {'sgidb': 2996, 'padus': 2911}: one land in 2 layers, the sgidb copy used (2,911 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -4859,6 +5003,7 @@
   "US-11416": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Sage Hen Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -4901,10 +5046,11 @@
   "US-11417": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Horsethief Reservoir State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 406,
+    "acres": 452,
     "family_fold": "layers {'padus': 452, 'sgidb': 258}: one land in 2 layers, the padus copy used (258 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -4944,6 +5090,7 @@
   "US-11418": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Brundage Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -4986,6 +5133,7 @@
   "US-11419": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Lost Valley Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -5028,6 +5176,7 @@
   "US-11420": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Ben Ross Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -5070,6 +5219,7 @@
   "US-11421": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Herrick Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -5083,7 +5233,7 @@
       "name · water outline only"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "water outline only",
     "unknown_pieces": 0
    },
@@ -5112,6 +5262,7 @@
   "US-11423": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Blair Trail Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -5125,7 +5276,7 @@
       "name · water outline only"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "water outline only",
     "unknown_pieces": 0
    },
@@ -5154,6 +5305,7 @@
   "US-11424": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Bliss Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -5196,6 +5348,7 @@
   "US-11425": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Stone Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -5238,6 +5391,7 @@
   "US-11426": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Swan Falls Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -5280,10 +5434,11 @@
   "US-11463": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Murtaugh Lake Reservoir State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 447,
+    "acres": 849,
     "manager": "",
     "pieces": [
      [
@@ -5328,6 +5483,7 @@
   "US-11464": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Blacks Creek Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -5370,6 +5526,7 @@
   "US-11516": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Ashton Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -5383,7 +5540,7 @@
       "name · water outline only"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "water outline only",
     "unknown_pieces": 0
    },
@@ -5412,6 +5569,7 @@
   "US-11517": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "American Falls Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -5425,7 +5583,7 @@
       "name · water outline only"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "water outline only",
     "unknown_pieces": 0
    },
@@ -5454,6 +5612,7 @@
   "US-11518": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Alexander Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -5467,7 +5626,7 @@
       "name · water outline only"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "water outline only",
     "unknown_pieces": 0
    },
@@ -5496,6 +5655,7 @@
   "US-11519": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Boulder Meadows Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -5538,6 +5698,7 @@
   "US-11520": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Chesterfield Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -5580,6 +5741,7 @@
   "US-11521": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Condie Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -5593,7 +5755,7 @@
       "name · water outline only"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "water outline only",
     "unknown_pieces": 0
    },
@@ -5622,6 +5784,7 @@
   "US-11522": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Crowthers Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -5664,6 +5827,7 @@
   "US-11523": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Daniels Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -5706,6 +5870,7 @@
   "US-11524": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Deep Creek Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -5748,6 +5913,7 @@
   "US-11525": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Devils Creek Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -5790,10 +5956,11 @@
   "US-11526": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Deyo Reservoir State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 78,
+    "acres": 99,
     "family_fold": "layers {'padus': 91, 'sgidb': 52}: one land in 2 layers, the padus copy used (52 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -5832,10 +5999,11 @@
   "US-11527": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Foster Reservoir State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 132,
+    "acres": 157,
     "manager": "",
     "pieces": [
      [
@@ -5851,7 +6019,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "water outline only",
     "unknown_pieces": 0
    },
@@ -5880,6 +6048,7 @@
   "US-11528": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Tripod Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -5922,10 +6091,11 @@
   "US-11529": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Glendale Reservoir State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 284,
+    "acres": 216,
     "manager": "",
     "pieces": [
      [
@@ -5970,10 +6140,11 @@
   "US-11530": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Hells Canyon Reservoir State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 659099,
+    "acres": 660223,
     "manager": "",
     "pieces": [
      [
@@ -5983,7 +6154,7 @@
       "name · water outline only"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "water outline only",
     "unknown_pieces": 0
    },
@@ -6012,10 +6183,11 @@
   "US-11531": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Island Park Reservoir State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 10869,
+    "acres": 8486,
     "family_fold": "layers {'sgidb': 7281, 'padus': 4334}: one land in 2 layers, the sgidb copy used (4,334 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -6055,6 +6227,7 @@
   "US-11532": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Johnson Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -6097,6 +6270,7 @@
   "US-11534": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Lamont Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -6139,6 +6313,7 @@
   "US-11535": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Little Valley Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -6152,7 +6327,7 @@
       "name · water outline only"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "water outline only",
     "unknown_pieces": 0
    },
@@ -6181,6 +6356,7 @@
   "US-11536": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Lower Goose Creek Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -6223,6 +6399,7 @@
   "US-11537": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Lower Salmon Falls Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -6236,7 +6413,7 @@
       "name · water outline only"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "water outline only",
     "unknown_pieces": 0
    },
@@ -6265,6 +6442,7 @@
   "US-11538": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Moose Creek Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -6278,7 +6456,7 @@
       "name · water outline only"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "water outline only",
     "unknown_pieces": 0
    },
@@ -6305,7 +6483,7 @@
    "verdict": "no size on page"
   },
   "US-11539": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Mosquito Flat Reservoir State Fishing Lake",
    "official": null,
@@ -6334,6 +6512,7 @@
   "US-11540": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Ririe Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -6376,6 +6555,7 @@
   "US-11541": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Sheep Creek Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -6418,10 +6598,11 @@
   "US-11542": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Spring valley Reservoir State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 183,
+    "acres": 296,
     "family_fold": "layers {'padus': 296, 'sgidb': 49}: one land in 2 layers, the padus copy used (49 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -6461,6 +6642,7 @@
   "US-11543": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Treasureton Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -6503,6 +6685,7 @@
   "US-11544": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Twenty Four Mile Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -6516,7 +6699,7 @@
       "name · water outline only"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "water outline only",
     "unknown_pieces": 0
    },
@@ -6545,6 +6728,7 @@
   "US-11545": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Upper Pleasant View Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -6558,7 +6742,7 @@
       "name · water outline only"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "water outline only",
     "unknown_pieces": 0
    },
@@ -6587,6 +6771,7 @@
   "US-11546": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Upper Salmon Falls Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -6627,12 +6812,12 @@
    "verdict": "no size on page"
   },
   "US-11578": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Palisades Reservoir State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 18176,
+    "acres": 16842,
     "family_fold": "layers {'sgidb': 15958, 'padus': 14643}: one land in 2 layers, the sgidb copy used (14,643 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -6672,6 +6857,7 @@
   "US-11579": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Dworshak Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -6712,12 +6898,12 @@
    "verdict": "no size on page"
   },
   "US-11784": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Edson Fichter Nature Area Nature Park",
    "official": null,
    "ours": {
-    "acres": 11,
+    "acres": 28,
     "manager": "",
     "pieces": [
      [
@@ -6733,23 +6919,23 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://idfg.idaho.gov/",
      "why": "the park's page (data/parkinfo)"
     }
    ],
    "pct": null,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 1
    },
@@ -6759,7 +6945,7 @@
    "verdict": "no size on page"
   },
   "US-11947": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lower Herd Lake Campground BLM Recreation Management Area",
    "ours": null,
@@ -6771,6 +6957,7 @@
   "US-11948": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Hornet Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -6811,7 +6998,7 @@
    "verdict": "no size on page"
   },
   "US-12063": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "BLM Pioneer Trail BLM Special Recreation Management Area",
    "ours": null,
@@ -6823,6 +7010,7 @@
   "US-12112": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Little Payette Lake State Fishing Lake",
    "official": null,
    "ours": {
@@ -6863,7 +7051,7 @@
    "verdict": "no size on page"
   },
   "US-12153": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Ross Point BLM Special Recreation Management Area",
    "ours": null,
@@ -6873,7 +7061,7 @@
    "verdict": "no outline"
   },
   "US-12155": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Blue Creek Bay BLM Recreation Management Area",
    "ours": null,
@@ -6883,7 +7071,7 @@
    "verdict": "no outline"
   },
   "US-12157": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Poison Creek Picnic Area BLM Recreation Management Area",
    "ours": null,
@@ -6893,8 +7081,8 @@
    "verdict": "no outline"
   },
   "US-12159": {
-   "cause": "a number 14 parks share from one page (26,900,000 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 17 parks share from the same sentence (26,900,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Payette River System BLM Special Recreation Management Area",
    "official": null,
@@ -6909,7 +7097,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -6924,10 +7112,10 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -6947,7 +7135,7 @@
    "verdict": "unsure"
   },
   "US-12163": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Beauty Bay BLM Recreation Management Area",
    "ours": null,
@@ -6959,10 +7147,11 @@
   "US-12174": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Jim Moore Pond State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 45,
+    "acres": 58,
     "family_fold": "layers {'padus': 52, 'sgidb': 45}: one land in 2 layers, the padus copy used (45 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -7000,8 +7189,8 @@
    "verdict": "no size on page"
   },
   "US-12180": {
-   "cause": "a number 14 parks share from one page (26,900,000 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 17 parks share from the same sentence (26,900,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Owyhee Front BLM Recreation Management Area",
    "official": null,
@@ -7069,7 +7258,7 @@
    "verdict": "unsure"
   },
   "US-12210": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Jump Creek Falls BLM Scenic Site",
    "ours": null,
@@ -7079,7 +7268,7 @@
    "verdict": "no outline"
   },
   "US-12211": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bruneau Canyon Scenic Overlook BLM Scenic Site",
    "ours": null,
@@ -7089,7 +7278,7 @@
    "verdict": "no outline"
   },
   "US-12212": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Black Magic Canyon BLM Scenic Site",
    "ours": null,
@@ -7099,12 +7288,12 @@
    "verdict": "no outline"
   },
   "US-12214": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Claytonia Pond Wildlife Area",
    "official": null,
    "ours": {
-    "acres": 22,
+    "acres": 26,
     "family_fold": "layers {'padus': 36, 'sgidb': 26}: one land in 2 layers, the padus copy used (26 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -7123,7 +7312,7 @@
    "pages": [
     {
      "other_unit": true,
-     "status": "rest",
+     "status": "ok",
      "url": "https://idfg.idaho.gov",
      "why": "the park's page (data/parkinfo)"
     }
@@ -7142,7 +7331,7 @@
    "verdict": "no size on page"
   },
   "US-12215": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Snake River Vista BLM Recreation Management Area",
    "ours": null,
@@ -7152,7 +7341,7 @@
    "verdict": "no outline"
   },
   "US-12219": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Juniper Grove Campground BLM Recreation Management Area",
    "ours": null,
@@ -7162,7 +7351,7 @@
    "verdict": "no outline"
   },
   "US-12220": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "The Forks Campground BLM Recreation Management Area",
    "ours": null,
@@ -7172,7 +7361,7 @@
    "verdict": "no outline"
   },
   "US-12221": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lud Drexler Park BLM Recreation Management Area",
    "ours": null,
@@ -7184,10 +7373,11 @@
   "US-12222": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Mackay Reservoir State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 1138,
+    "acres": 1211,
     "dissolved": {
      "after": 1226,
      "before": 1402,
@@ -7198,8 +7388,10 @@
      },
      "family_fold": 88,
      "family_used": "sgidb",
+     "key_union": 1211,
      "parts": 0,
      "records": 4,
+     "summed": 1138,
      "tracts": 2
     },
     "family_fold": "layers {'sgidb': 1138, 'rst': 88}: one land in 2 layers, the sgidb copy used (88 ac of copies not added)",
@@ -7240,7 +7432,7 @@
    "verdict": "no size on page"
   },
   "US-12223": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bonneville Point BLM Historic Area",
    "ours": null,
@@ -7250,7 +7442,7 @@
    "verdict": "no outline"
   },
   "US-12224": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bruneau River Access BLM Wild and Scenic River",
    "ours": null,
@@ -7260,7 +7452,7 @@
    "verdict": "no outline"
   },
   "US-12225": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Shoofly Oolite Interpretive Trail BLM Interpretive Site",
    "ours": null,
@@ -7270,7 +7462,7 @@
    "verdict": "no outline"
   },
   "US-12226": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bruneau Arm Reservoir State Fishing Lake",
    "ours": null,
@@ -7282,6 +7474,7 @@
   "US-12227": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Crane Falls Lake State Fishing Lake",
    "official": null,
    "ours": {
@@ -7324,6 +7517,7 @@
   "US-12228": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Cove Arm Lake State Fishing Lake",
    "official": null,
    "ours": {
@@ -7364,7 +7558,7 @@
    "verdict": "no size on page"
   },
   "US-12229": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Blackwell Island Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -7374,7 +7568,7 @@
    "verdict": "no outline"
   },
   "US-12230": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "South Fork Snake River Access State Fish and Wildlife Area",
    "ours": null,
@@ -7384,7 +7578,7 @@
    "verdict": "no outline"
   },
   "US-12231": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Portneuf Gap River Access BLM Recreation Management Area",
    "ours": null,
@@ -7396,6 +7590,7 @@
   "US-12232": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Horseshoe Bend Mill Pond State Fishing Lake",
    "official": null,
    "ours": {
@@ -7438,6 +7633,7 @@
   "US-12233": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "CJ Strike Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -7497,7 +7693,7 @@
    "verdict": "no size on page"
   },
   "US-12289": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Old Lucile Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -7507,7 +7703,7 @@
    "verdict": "no outline"
   },
   "US-12290": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Skookumchuck Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -7519,10 +7715,11 @@
   "US-12291": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Sawyers Pond State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 69,
+    "acres": 78,
     "family_fold": "layers {'sgidb': 61, 'padus': 78}: one land in 2 layers, the padus copy used (61 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -7568,6 +7765,7 @@
   "US-12292": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Dick Knox Pond State Fishing Lake",
    "official": null,
    "ours": {
@@ -7608,13 +7806,13 @@
    "verdict": "no size on page"
   },
   "US-12298": {
-   "cause": "a number 14 parks share from one page (26,900,000 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 17 parks share from the same sentence (26,900,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Gamlin Lake Recreation Site BLM Recreation Management Area",
    "official": null,
    "ours": {
-    "acres": 218,
+    "acres": 419,
     "manager": "",
     "pieces": [
      [
@@ -7668,7 +7866,7 @@
    "verdict": "unsure"
   },
   "US-12299": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Mineral Ridge Scenic Area BLM Recreation Management Area",
    "ours": null,
@@ -7678,7 +7876,7 @@
    "verdict": "no outline"
   },
   "US-12300": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Cougar Bay Preserve BLM Recreation Management Area",
    "ours": null,
@@ -7690,10 +7888,11 @@
   "US-12301": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Hayden Lake Sportsman's Park State Fish and Wildlife Area",
    "official": null,
    "ours": {
-    "acres": 3,
+    "acres": 6,
     "manager": "",
     "pieces": [
      [
@@ -7703,7 +7902,7 @@
       "name (designation code ignored)"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 4
    },
@@ -7730,7 +7929,7 @@
    "verdict": "no size on page"
   },
   "US-12302": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Sun Peak Picnic Area BLM Recreation Management Area",
    "ours": null,
@@ -7742,10 +7941,11 @@
   "US-12303": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Wilson Springs Pond Complex State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 33,
+    "acres": 48,
     "manager": "",
     "pieces": [
      [
@@ -7761,7 +7961,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -7787,7 +7987,7 @@
    "verdict": "no size on page"
   },
   "US-12349": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Owyhee Uplands Back Country Byway National Parkway",
    "official": null,
@@ -7821,7 +8021,7 @@
    "verdict": "ours unknown"
   },
   "US-12363": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Jackass Flats BLM Recreation Management Area",
    "ours": null,
@@ -7831,7 +8031,7 @@
    "verdict": "no outline"
   },
   "US-12364": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Blackhawk Bar BLM Recreation Management Area",
    "ours": null,
@@ -7841,7 +8041,7 @@
    "verdict": "no outline"
   },
   "US-12379": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Harpers Bend Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -7851,7 +8051,7 @@
    "verdict": "no outline"
   },
   "US-12622": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Blackrock Canyon Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -7863,6 +8063,7 @@
   "US-13094": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Oneida Narrows Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -7920,7 +8121,7 @@
    "verdict": "no size on page"
   },
   "US-13107": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Borah Earthquake Interpretive Site BLM Interpretive Site",
    "ours": null,
@@ -7932,6 +8133,7 @@
   "US-13158": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Blackfoot Reservoir State Fishing Lake",
    "official": null,
    "ours": {
@@ -7989,7 +8191,7 @@
    "verdict": "no size on page"
   },
   "US-13293": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "McClendon Spring Campground BLM Recreation Management Area",
    "ours": null,
@@ -7999,7 +8201,7 @@
    "verdict": "no outline"
   },
   "US-13294": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Tower Creek Pyramids BLM Historic Area",
    "ours": null,
@@ -8009,7 +8211,7 @@
    "verdict": "no outline"
   },
   "US-13295": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Henrys Fork Snake Rive Access BLM Recreation Management Area",
    "ours": null,
@@ -8019,7 +8221,7 @@
    "verdict": "no outline"
   },
   "US-13296": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Upper Salmon River Access BLM Recreation Management Area",
    "ours": null,
@@ -8029,7 +8231,7 @@
    "verdict": "no outline"
   },
   "US-13297": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Challis Bridge BLM Recreation Management Area",
    "ours": null,
@@ -8039,7 +8241,7 @@
    "verdict": "no outline"
   },
   "US-13485": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Twin Peaks Ranch State Park",
    "ours": null,
@@ -8049,7 +8251,7 @@
    "verdict": "no outline"
   },
   "US-13577": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Jarbidge River Recreation Site BLM Recreation Management Area",
    "ours": null,
@@ -8061,6 +8263,7 @@
   "US-13616": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Duff Pond State Fishing Lake",
    "official": null,
    "ours": {
@@ -8074,7 +8277,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -8102,12 +8305,12 @@
   },
   "US-2228": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bear Lake State Park",
    "official": null,
    "ours": {
-    "acres": 69478,
+    "acres": 70443,
     "manager": "",
     "pieces": [
      [
@@ -8115,6 +8318,18 @@
       "Bear Lake",
       69474,
       "name · water outline only"
+     ],
+     [
+      199934,
+      "Bear Lake State Park",
+      913,
+      "reviewed"
+     ],
+     [
+      199935,
+      "Bear Lake State Park",
+      52,
+      "reviewed"
      ],
      [
       199718,
@@ -8129,7 +8344,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "water outline only",
     "unknown_pieces": 0
    },
@@ -8143,10 +8358,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -8175,8 +8390,8 @@
    "verdict": "unsure"
   },
   "US-2229": {
-   "cause": "a number 18 parks share from one page (28 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 19 parks share from the same sentence (28 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bruneau Dunes State Park",
    "official": null,
@@ -8238,7 +8453,7 @@
    "verdict": "unsure"
   },
   "US-2230": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Castle Rocks State Park",
    "ours": null,
@@ -8248,8 +8463,8 @@
    "verdict": "no outline"
   },
   "US-2231": {
-   "cause": "a number 18 parks share from one page (28 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 19 parks share from the same sentence (28 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Old Mission State Park",
    "official": null,
@@ -8311,7 +8526,7 @@
    "verdict": "unsure"
   },
   "US-2232": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Dworshak State Park",
    "official": {
@@ -8319,7 +8534,7 @@
     "as": "28 Acres",
     "clean": false,
     "line": "na Project at Poison Creek on Lake Cascade Mar 15 2024 Idaho Department of Parks and Recreation Purchase Adds 28 Acres to Bear Lake State Park The acquisition will bring 1,200 feet of new shoreline into the popular State Park an",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Idaho Department of Parks and Recreation Purchase Adds 28 Acres to Bear Lake State Park",
     "url": "https://parksandrecreation.idaho.gov",
     "why": "no total words near it"
@@ -8375,13 +8590,13 @@
    "verdict": "ours unknown"
   },
   "US-2233": {
-   "cause": "a number 18 parks share from one page (28 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 19 parks share from the same sentence (28 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Eagle Island State Park",
    "official": null,
    "ours": {
-    "acres": 265,
+    "acres": 542,
     "manager": "",
     "pieces": [
      [
@@ -8415,7 +8630,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "water outline only",
     "unknown_pieces": 0
    },
@@ -8430,10 +8645,10 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -8462,13 +8677,13 @@
    "verdict": "unsure"
   },
   "US-2234": {
-   "cause": "a number 18 parks share from one page (28 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 19 parks share from the same sentence (28 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Farragut State Park",
    "official": null,
    "ours": {
-    "acres": 1914,
+    "acres": 2520,
     "manager": "",
     "pieces": [
      [
@@ -8531,13 +8746,13 @@
    "verdict": "unsure"
   },
   "US-2235": {
-   "cause": "a number 18 parks share from one page (28 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 19 parks share from the same sentence (28 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Harriman State Park",
    "official": null,
    "ours": {
-    "acres": 8570,
+    "acres": 11236,
     "manager": "",
     "pieces": [
      [
@@ -8606,17 +8821,24 @@
    "verdict": "unsure"
   },
   "US-2236": {
-   "cause": "a number 18 parks share from one page (28 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 19 parks share from the same sentence (28 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Hells Gate State Park",
    "official": null,
    "ours": {
-    "acres": 680,
+    "acres": 1141,
     "manager": "",
-    "pieces": [],
+    "pieces": [
+     [
+      199787,
+      "Hells Gate State Park",
+      961,
+      "reviewed"
+     ]
+    ],
     "pin": "inside",
-    "src": "",
+    "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
    "owner_now": null,
@@ -8662,8 +8884,8 @@
    "verdict": "unsure"
   },
   "US-2237": {
-   "cause": "a number 18 parks share from one page (28 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 19 parks share from the same sentence (28 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Henrys Lake State Park",
    "official": null,
@@ -8726,23 +8948,76 @@
    "verdict": "unsure"
   },
   "US-2238": {
-   "checked": "2026-11-09",
+   "cause": "a number 19 parks share from the same sentence (28 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Heyburn State Park",
-   "ours": null,
-   "score": null,
+   "official": null,
+   "ours": {
+    "acres": 8094,
+    "manager": "",
+    "pieces": [
+     [
+      199938,
+      "Heyburn State Park",
+      8094,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://parksandrecreation.idaho.gov",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "same_agency": false,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [
+    {
+     "acres": 28.0,
+     "as": "28 Acres",
+     "clean": false,
+     "line": "na Project at Poison Creek on Lake Cascade Mar 15 2024 Idaho Department of Parks and Recreation Purchase Adds 28 Acres to Bear Lake State Park The acquisition will bring 1,200 feet of new shoreline into the popular State Park an",
+     "total_like": false,
+     "url": "https://parksandrecreation.idaho.gov",
+     "why": "no total words near it"
+    },
+    {
+     "acres": 28.0,
+     "as": "28 Acres",
+     "clean": false,
+     "line": "llion. Development of the land&hellip; Read More about Idaho Department of Parks and Recreation Purchase Adds 28 Acres to Bear Lake State Park Feb 15 2024 The RVers of Idaho Give $1,000 for Campsite Improvements at Bruneau Dunes",
+     "total_like": false,
+     "url": "https://parksandrecreation.idaho.gov",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "unsure"
   },
   "US-2239": {
-   "cause": "a number 18 parks share from one page (28 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 19 parks share from one page (28 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lake Cascade State Park",
    "official": null,
    "ours": {
-    "acres": 29297,
+    "acres": 27148,
     "family_fold": "layers {'sgidb': 27148, 'padus': 14820}: one land in 2 layers, the sgidb copy used (14,820 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -8768,12 +9043,12 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 2,
     "size": 1,
-    "source": 2
+    "source": 1
    },
    "sizes": [
     {
@@ -8802,6 +9077,7 @@
   "US-2240": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Lake Walcott State Park",
    "official": null,
    "ours": {
@@ -8841,13 +9117,13 @@
    "verdict": "no size on page"
   },
   "US-2241": {
-   "cause": "a number 18 parks share from one page (28 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 19 parks share from the same sentence (28 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Land of the Yankee Fork State Park",
    "official": null,
    "ours": {
-    "acres": 470,
+    "acres": 574,
     "manager": "",
     "pieces": [
      [
@@ -8910,13 +9186,13 @@
    "verdict": "unsure"
   },
   "US-2242": {
-   "cause": "a number 18 parks share from one page (28 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 19 parks share from the same sentence (28 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lucky Peak State Park",
    "official": null,
    "ours": {
-    "acres": 2931,
+    "acres": 2841,
     "manager": "",
     "pieces": [
      [
@@ -8926,13 +9202,25 @@
       "name · water outline only"
      ],
      [
+      199788,
+      "Lucky Peak State Park",
+      34,
+      "reviewed"
+     ],
+     [
+      199789,
+      "Lucky Peak State Park",
+      31,
+      "reviewed"
+     ],
+     [
       199735,
       "Lucky Peak State Park",
       10,
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "water outline only",
     "unknown_pieces": 0
    },
@@ -8947,10 +9235,10 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -8979,8 +9267,8 @@
    "verdict": "unsure"
   },
   "US-2243": {
-   "cause": "a number 18 parks share from one page (28 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 19 parks share from the same sentence (28 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Massacre Rocks State Park",
    "official": null,
@@ -9042,13 +9330,13 @@
    "verdict": "unsure"
   },
   "US-2244": {
-   "cause": "a number 18 parks share from one page (28 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 19 parks share from the same sentence (28 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Mary M. McCroskey State Park",
    "official": null,
    "ours": {
-    "acres": 5373,
+    "acres": 4760,
     "manager": "",
     "pieces": [
      [
@@ -9111,13 +9399,13 @@
    "verdict": "unsure"
   },
   "US-2245": {
-   "cause": "a number 18 parks share from one page (28 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 19 parks share from the same sentence (28 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Ponderosa State Park",
    "official": null,
    "ours": {
-    "acres": 1061,
+    "acres": 1470,
     "manager": "",
     "pieces": [
      [
@@ -9133,7 +9421,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -9148,10 +9436,10 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -9181,7 +9469,7 @@
   },
   "US-2246": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 755 acres, no total words near it)",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Priest Lake State Park",
    "official": {
@@ -9189,7 +9477,7 @@
     "as": "755 acres",
     "clean": false,
     "line": "Country Skiing Nordic ADA Accessibility Features: ADA Boat Ramp ADA Cabin ADA Campsite ADA Restroom ADA Trail Acreage: 755 Elevation: 2,440 Coordinates: 48.6177, -116.8291 Groups: One group camp with 12 RV hook-ups, a private beach a",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Acreage: 755 Elevation: 2,440",
     "url": "https://parksandrecreation.idaho.gov/state-park/priest-lake-state-park/",
     "why": "no total words near it"
@@ -9229,7 +9517,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "water outline only",
     "unknown_pieces": 0
    },
@@ -9243,10 +9531,10 @@
    ],
    "pct": 3090,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -9266,13 +9554,13 @@
    "verdict": "unsure"
   },
   "US-2247": {
-   "cause": "a number 18 parks share from one page (28 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 19 parks share from the same sentence (28 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Round Lake State Park",
    "official": null,
    "ours": {
-    "acres": 101,
+    "acres": 188,
     "family_fold": "layers {'padus': 147, 'sgidb': 55}: one land in 2 layers, the padus copy used (55 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -9295,7 +9583,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "water outline only",
     "unknown_pieces": 0
    },
@@ -9310,10 +9598,10 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -9342,18 +9630,18 @@
    "verdict": "unsure"
   },
   "US-2248": {
-   "cause": "a number 18 parks share from one page (28 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 19 parks share from the same sentence (28 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Thousand Springs State Park",
    "official": null,
    "ours": {
-    "acres": 982,
+    "acres": 1525,
     "dissolved": {
      "after": 1333,
      "before": 1548,
      "copies": 0,
-     "key_union": 982,
+     "key_union": 1525,
      "parts": 2,
      "records": 7,
      "summed": 1333,
@@ -9440,8 +9728,8 @@
    "verdict": "unsure"
   },
   "US-2249": {
-   "cause": "a number 18 parks share from one page (28 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 19 parks share from the same sentence (28 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Three Island Crossing State Park",
    "official": null,
@@ -9456,7 +9744,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -9471,10 +9759,10 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 1
    },
@@ -9503,8 +9791,8 @@
    "verdict": "unsure"
   },
   "US-2250": {
-   "cause": "a number 18 parks share from one page (28 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 19 parks share from the same sentence (28 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Winchester Lake State Park",
    "official": null,
@@ -9534,12 +9822,12 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 2,
     "size": 1,
-    "source": 2
+    "source": 1
    },
    "sizes": [
     {
@@ -9566,7 +9854,7 @@
    "verdict": "unsure"
   },
   "US-3424": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Ice Age Floods National Geologic Trail",
    "note": "whole park compared (POTA lists it in 0 states: {})",
@@ -9575,7 +9863,7 @@
     "as": "3,000 square miles",
     "clean": false,
     "line": "st Ice Age, 18,000 to 15,000 years ago, an ice dam in northern Idaho created Glacial Lake Missoula stretching 3,000 square miles around Missoula, Montana. The dam burst and released flood waters across Washington, down the Columbia River",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "At the end of the last Ice Age, 18,000 to 15,000 years ago, an ice dam in northern Idaho created Glacial Lake Missoula stretching 3,000 square miles around Missoula, Montana.",
     "url": "https://www.nps.gov/iafl/index.htm",
     "why": "a statewide / agency-wide total (over a million acres) on a park that is not a big federal unit"
@@ -9588,10 +9876,10 @@
     "pin": "inside",
     "src": "",
     "states": [
-     "US-ID",
-     "US-MT",
+     "US-OR",
      "US-WA",
-     "US-OR"
+     "US-ID",
+     "US-MT"
     ],
     "unknown_pieces": 1,
     "whole_park": true
@@ -9644,16 +9932,16 @@
    "verdict": "ours unknown"
   },
   "US-4387": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Wallowa-Whitman National Forest",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-ID': 143708, 'US-OR': 2250845})",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-OR': 2250845, 'US-ID': 143708})",
    "official": {
     "acres": 2400000.0,
     "as": "2.4 million acres",
     "clean": false,
     "line": "g adventure. T T T Welcome to Wallowa-Whitman National Forest The Wallowa-Whitman National Forest encompasses 2.4 million acres of public lands in northeastern Oregon and western Idaho. Our staff serve the public from offices in Baker Ci",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The Wallowa-Whitman National Forest encompasses 2.4 million acres of public lands in northeastern Oregon and western Idaho.",
     "url": "https://www.fs.usda.gov/r06/wallowa-whitman",
     "why": "part (a lake, a purchase, a campground…)"
@@ -9694,8 +9982,8 @@
     "pin": "inside",
     "src": "USGS PAD-US",
     "states": [
-     "US-ID",
-     "US-OR"
+     "US-OR",
+     "US-ID"
     ],
     "unknown_pieces": 6,
     "whole_park": true
@@ -9742,17 +10030,17 @@
    "verdict": "agree"
   },
   "US-4398": {
-   "cause": "whole park compared (POTA lists it in 2 states: {'US-ID': 24, 'US-UT': 436715})",
-   "checked": "2026-11-09",
+   "cause": "whole park compared (POTA lists it in 2 states: {'US-UT': 436715, 'US-ID': 24})",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Uinta-Wasatch-Cache National Forest",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-ID': 24, 'US-UT': 436715})",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-UT': 436715, 'US-ID': 24})",
    "official": {
     "acres": 2200000.0,
     "as": "2.2 million acres",
     "clean": true,
     "line": "picting Fire Danger Rating Areas. T T T Welcome to Uinta-Wasatch-Cache National Forest The Forest encompasses 2.2 million acres in Northern Utah and southwestern Wyoming. Offices are located in South Jordan, Logan, Ogden, Salt Lake, Plea",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The Forest encompasses 2.2 million acres in Northern Utah and southwestern Wyoming.",
     "url": "https://www.fs.usda.gov/r04/uinta-wasatch-cache",
     "why": "clean total"
@@ -9775,8 +10063,8 @@
     "pin": "inside",
     "src": "USGS PAD-US",
     "states": [
-     "US-ID",
-     "US-UT"
+     "US-UT",
+     "US-ID"
     ],
     "unknown_pieces": 2,
     "whole_park": true
@@ -9814,7 +10102,7 @@
    "verdict": "unsure"
   },
   "US-4474": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Boise National Forest",
    "official": null,
@@ -9883,8 +10171,9 @@
    "cause": "whole park compared (POTA lists it in 2 states: {'US-WY': 302612, 'US-ID': 2543225})",
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Caribou-Targhee National Forest",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-WY': 302612, 'US-ID': 2543225})",
+   "note": "whole park compared (POTA lists it in 4 states: {'US-UT': 302276, 'US-MT': 302276, 'US-ID': 2845501, 'US-WY': 302612})",
    "official": {
     "acres": 25000.0,
     "as": "25,000 acres",
@@ -9896,9 +10185,11 @@
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 2845837,
+    "acres": 3752665,
     "acres_by_state": {
-     "US-ID": 2543225,
+     "US-ID": 2845501,
+     "US-MT": 302276,
+     "US-UT": 302276,
      "US-WY": 302612
     },
     "manager": "",
@@ -9916,19 +10207,31 @@
       "name"
      ],
      [
+      2809,
+      "Caribou-Targhee National Forest (Targhee National Forest)",
+      294438,
+      "reviewed"
+     ],
+     [
       2774,
       "Caribou-Targhee National Forest (Cache National Forest)",
       263730,
       "name"
+     ],
+     [
+      2781,
+      "Caribou-Targhee National Forest (Caribou National Forest)",
+      7838,
+      "reviewed"
      ]
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
     "states": [
-     "US-WY",
-     "US-ID",
+     "US-UT",
      "US-MT",
-     "US-UT"
+     "US-ID",
+     "US-WY"
     ],
     "unknown_pieces": 2,
     "whole_park": true
@@ -9969,6 +10272,7 @@
    "cause": "agency bigger: our outline may miss a tract",
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Clearwater National Forest",
    "official": {
     "acres": 4000000.0,
@@ -10029,26 +10333,26 @@
   },
   "US-4477": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Idaho Panhandle National Forest",
-   "note": "whole park compared (POTA lists it in 3 states: {'US-ID': 1625274, 'US-MT': 401372, 'US-WA': 120321})",
+   "note": "whole park compared (POTA lists it in 3 states: {'US-WA': 1018534, 'US-ID': 1625274, 'US-MT': 926517})",
    "official": {
     "acres": 725000.0,
     "as": "725,000 acres",
     "clean": true,
     "line": "Ranger District is at the southern end of the Idaho Panhandle National Forests and consists of approximately 725,000 acres with backcountry and mixed ownerships. The main district office is in St. Maries, Idaho, with another office",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Joe Ranger District is at the southern end of the Idaho Panhandle National Forests and consists of approximately 725,000 acres with backcountry and mixed ownerships.",
     "url": "https://www.fs.usda.gov/r01/idahopanhandle/about-area",
-    "why": "clean total; the agency's pages disagree: another of its pages says 2.5 million acres (that one matches our outline)"
+    "why": "clean total"
    },
    "ours": {
-    "acres": 2146967,
+    "acres": 3570325,
     "acres_by_state": {
      "US-ID": 1625274,
-     "US-MT": 401372,
-     "US-WA": 120321
+     "US-MT": 926517,
+     "US-WA": 1018534
     },
     "manager": "",
     "pieces": [
@@ -10068,9 +10372,9 @@
     "pin": "inside",
     "src": "USGS PAD-US",
     "states": [
+     "US-WA",
      "US-ID",
-     "US-MT",
-     "US-WA"
+     "US-MT"
     ],
     "unknown_pieces": 3,
     "whole_park": true
@@ -10088,7 +10392,7 @@
      "why": "about / history page of the park's site"
     }
    ],
-   "pct": 196,
+   "pct": 392,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -10131,7 +10435,7 @@
    "verdict": "off"
   },
   "US-4478": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Nez Perce National Forest",
    "official": null,
@@ -10160,12 +10464,12 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 4,
    "score_parts": {
-    "name": 2,
+    "name": 1,
     "pin": 1,
     "size": 1,
-    "source": 2
+    "source": 1
    },
    "sizes": [],
    "t": "National Forest",
@@ -10173,7 +10477,7 @@
    "verdict": "no size on page"
   },
   "US-4479": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Payette National Forest",
    "official": null,
@@ -10233,7 +10537,7 @@
    "verdict": "no size on page"
   },
   "US-4480": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Salmon-Challis National Forest",
    "official": null,
@@ -10293,7 +10597,7 @@
    "verdict": "no size on page"
   },
   "US-4481": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Sawtooth National Forest",
    "note": "whole park compared (POTA lists it in 1 states: {'US-ID': 2144784})",
@@ -10339,8 +10643,8 @@
     "pin": "inside",
     "src": "USGS PAD-US",
     "states": [
-     "US-ID",
-     "US-UT"
+     "US-UT",
+     "US-ID"
     ],
     "unknown_pieces": 2,
     "whole_park": true
@@ -10369,7 +10673,7 @@
   },
   "US-4500": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bitterroot National Forest",
    "note": "whole park compared (POTA lists it in 2 states: {'US-ID': 467678, 'US-MT': 1663060})",
@@ -10378,7 +10682,7 @@
     "as": "743,000 acres",
     "clean": true,
     "line": "y skiing; snowboarding and snowmobiling to name a few. Forty-seven percent of the Bitterroot National Forest (743,000 acres) is comprised of portions of the Anaconda-Pintler Wilderness , Selway-Bitterroot Wilderness , and Frank Churc",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Forty-seven percent of the Bitterroot National Forest (743,000 acres) is comprised of portions of the Anaconda-Pintler Wilderness , Selway-Bitterroot Wilderness , and Frank Church-River of No Return Wilderness .",
     "url": "https://www.fs.usda.gov/r01/bitterroot/about-area",
     "why": "clean total"
@@ -10451,7 +10755,7 @@
   },
   "US-4505": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": "1906",
@@ -10477,7 +10781,7 @@
     "as": "2.2 million acres",
     "clean": true,
     "line": "ational Forest is located in the extreme Northwest corner of Montana and Northeast Idaho and encompasses over 2.2 million acres, an area nearly three times the size of Rhode Island. The Forest is bordered on the north by British Columbia",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The Kootenai National Forest is located in the extreme Northwest corner of Montana and Northeast Idaho and encompasses over 2.2 million acres, an area nearly three times the size of Rhode Island.",
     "url": "https://www.fs.usda.gov/r01/kootenai/about-area/about-forest",
     "why": "clean total"
@@ -10554,7 +10858,7 @@
    "verdict": "off"
   },
   "US-4558": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Continental Divide Trail National Scenic Trail",
    "note": "whole park compared (POTA lists it in 0 states: {})",
@@ -10567,11 +10871,11 @@
     "pin": "inside",
     "src": "",
     "states": [
-     "US-WY",
+     "US-CO",
      "US-NM",
+     "US-WY",
      "US-ID",
-     "US-MT",
-     "US-CO"
+     "US-MT"
     ],
     "unknown_pieces": 1,
     "whole_park": true
@@ -10599,16 +10903,16 @@
   },
   "US-4563": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Pacific Northwest National Scenic Trail",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-ID': 1009, 'US-WA': 1009})",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-WA': 1009, 'US-ID': 1009})",
    "official": {
     "acres": 530000.0,
     "as": "530,000 acre",
     "clean": false,
     "line": "0 miles of the Pacific Northwest Trail is located in designated Wilderness areas, including a traverse of the 530,000-acre Pasayten Wilderness. The Pacific Northwest Trail brings trail visitors through or near 18 communities between",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Over 300 miles of the Pacific Northwest Trail is located in designated Wilderness areas, including a traverse of the 530,000-acre Pasayten Wilderness.",
     "url": "https://www.fs.usda.gov/trails/pacific-northwest-nst/about-trail",
     "why": "total-looking"
@@ -10631,9 +10935,9 @@
     "pin": "inside",
     "src": "",
     "states": [
+     "US-WA",
      "US-ID",
-     "US-MT",
-     "US-WA"
+     "US-MT"
     ],
     "unknown_pieces": 0,
     "whole_park": true
@@ -10653,12 +10957,12 @@
    ],
    "pct": 100,
    "same_agency": false,
-   "score": 6,
+   "score": 4,
    "score_parts": {
-    "name": 2,
+    "name": 1,
     "pin": 2,
     "size": 0,
-    "source": 2
+    "source": 1
    },
    "sizes": [
     {
@@ -10676,7 +10980,7 @@
    "verdict": "off"
   },
   "US-4566": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "California National Historic Trail",
    "note": "whole park compared (POTA lists it in 0 states: {})",
@@ -10689,16 +10993,16 @@
     "pin": "inside",
     "src": "",
     "states": [
+     "US-CA",
+     "US-CO",
+     "US-OR",
+     "US-UT",
+     "US-NV",
+     "US-NE",
+     "US-MO",
      "US-KS",
      "US-WY",
-     "US-MO",
-     "US-NE",
-     "US-ID",
-     "US-CA",
-     "US-OR",
-     "US-CO",
-     "US-NV",
-     "US-UT"
+     "US-ID"
     ],
     "unknown_pieces": 1,
     "whole_park": true
@@ -10740,7 +11044,7 @@
    "verdict": "ours unknown"
   },
   "US-4572": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lewis and Clark National Historic Trail",
    "note": "whole park compared (POTA lists it in 0 states: {})",
@@ -10753,21 +11057,21 @@
     "pin": "inside",
     "src": "",
     "states": [
-     "US-SD",
      "US-ND",
-     "US-KS",
-     "US-MO",
-     "US-WV",
-     "US-PA",
-     "US-NE",
-     "US-ID",
-     "US-IA",
-     "US-OH",
-     "US-MT",
-     "US-WA",
-     "US-OR",
      "US-IN",
-     "US-IL"
+     "US-OR",
+     "US-NE",
+     "US-PA",
+     "US-IA",
+     "US-WA",
+     "US-MO",
+     "US-SD",
+     "US-OH",
+     "US-KS",
+     "US-IL",
+     "US-ID",
+     "US-MT",
+     "US-WV"
     ],
     "unknown_pieces": 1,
     "whole_park": true
@@ -10814,7 +11118,7 @@
    "verdict": "ours unknown"
   },
   "US-4574": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Nez Perce National Historic Trail",
    "note": "whole park compared (POTA lists it in 0 states: {})",
@@ -10827,10 +11131,10 @@
     "pin": "inside",
     "src": "",
     "states": [
+     "US-OR",
      "US-WY",
      "US-ID",
-     "US-MT",
-     "US-OR"
+     "US-MT"
     ],
     "unknown_pieces": 1,
     "whole_park": true
@@ -10857,7 +11161,7 @@
    "verdict": "ours unknown"
   },
   "US-4576": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Oregon National Historic Trail",
    "note": "whole park compared (POTA lists it in 0 states: {})",
@@ -10870,13 +11174,13 @@
     "pin": "inside",
     "src": "",
     "states": [
+     "US-OR",
+     "US-NE",
+     "US-WA",
+     "US-MO",
      "US-KS",
      "US-WY",
-     "US-MO",
-     "US-NE",
-     "US-ID",
-     "US-WA",
-     "US-OR"
+     "US-ID"
     ],
     "unknown_pieces": 1,
     "whole_park": true
@@ -10923,7 +11227,7 @@
    "verdict": "ours unknown"
   },
   "US-4584": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Ashton-Tetonia Trail State Park",
    "official": {
@@ -10931,7 +11235,7 @@
     "as": "28 Acres",
     "clean": false,
     "line": "na Project at Poison Creek on Lake Cascade Mar 15 2024 Idaho Department of Parks and Recreation Purchase Adds 28 Acres to Bear Lake State Park The acquisition will bring 1,200 feet of new shoreline into the popular State Park an",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Idaho Department of Parks and Recreation Purchase Adds 28 Acres to Bear Lake State Park",
     "url": "https://parksandrecreation.idaho.gov",
     "why": "no total words near it"
@@ -10987,7 +11291,7 @@
    "verdict": "ours unknown"
   },
   "US-4665": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Floodwood State Forest",
    "ours": null,
@@ -10997,7 +11301,7 @@
    "verdict": "no outline"
   },
   "US-4666": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Priest Lake State Forest",
    "ours": null,
@@ -11007,12 +11311,13 @@
    "verdict": "no outline"
   },
   "US-5590": {
-   "checked": "2026-11-09",
+   "cause": "a number 21 parks share from the same sentence (85,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Big Cottonwood Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 1359,
+    "acres": 1444,
     "family_fold": "layers {'sgida': 1444, 'padus': 809}: one land in 2 layers, the sgida copy used (809 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -11031,12 +11336,13 @@
    "pages": [
     {
      "other_unit": true,
-     "status": "rest",
+     "status": "ok",
      "url": "https://idfg.idaho.gov/wma",
      "why": "the park's page (data/parkinfo)"
     }
    ],
    "pct": null,
+   "same_agency": false,
    "score": 7,
    "score_parts": {
     "name": 2,
@@ -11044,26 +11350,35 @@
     "size": 1,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 85000.0,
+     "as": "85,000 acres",
+     "clean": false,
+     "line": "the public. Visit a WMA Idaho Fish and Game has 31 Wildlife Management Areas (WMAs), which range from 275 to 85,000 acres. Each has specific priorities based upon the needs of wildlife in the surrounding area. Panhandle Boundary-Sm",
+     "total_like": false,
+     "url": "https://idfg.idaho.gov/wma",
+     "why": "no total words near it"
+    }
+   ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-5591": {
-   "checked": "2026-11-09",
+   "cause": "a number 21 parks share from the same sentence (85,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Billingsley Creek Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 157,
+    "acres": 277,
     "dissolved": {
      "after": 277,
      "before": 554,
      "copies": 1,
-     "key_union": 157,
      "parts": 0,
      "records": 2,
-     "summed": 277,
      "tracts": 1
     },
     "manager": "",
@@ -11084,12 +11399,13 @@
    "pages": [
     {
      "other_unit": true,
-     "status": "rest",
+     "status": "ok",
      "url": "https://idfg.idaho.gov/wma",
      "why": "the park's page (data/parkinfo)"
     }
    ],
    "pct": null,
+   "same_agency": false,
    "score": 7,
    "score_parts": {
     "name": 2,
@@ -11097,18 +11413,28 @@
     "size": 1,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 85000.0,
+     "as": "85,000 acres",
+     "clean": false,
+     "line": "the public. Visit a WMA Idaho Fish and Game has 31 Wildlife Management Areas (WMAs), which range from 275 to 85,000 acres. Each has specific priorities based upon the needs of wildlife in the surrounding area. Panhandle Boundary-Sm",
+     "total_like": false,
+     "url": "https://idfg.idaho.gov/wma",
+     "why": "no total words near it"
+    }
+   ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-5592": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Blackfoot River Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 2182,
+    "acres": 2374,
     "family_fold": "layers {'sgida': 2374, 'padus': 1731}: one land in 2 layers, the sgida copy used (1,731 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -11131,7 +11457,8 @@
    "verdict": "no official page on file"
   },
   "US-5593": {
-   "checked": "2026-11-09",
+   "cause": "a number 21 parks share from the same sentence (85,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Boise River Wildlife Management Area",
    "official": null,
@@ -11162,7 +11489,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -11170,26 +11497,38 @@
    "pages": [
     {
      "other_unit": true,
-     "status": "rest",
+     "status": "ok",
      "url": "https://idfg.idaho.gov/wma",
      "why": "the park's page (data/parkinfo)"
     }
    ],
    "pct": null,
-   "score": 6,
+   "same_agency": false,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 85000.0,
+     "as": "85,000 acres",
+     "clean": false,
+     "line": "the public. Visit a WMA Idaho Fish and Game has 31 Wildlife Management Areas (WMAs), which range from 275 to 85,000 acres. Each has specific priorities based upon the needs of wildlife in the surrounding area. Panhandle Boundary-Sm",
+     "total_like": false,
+     "url": "https://idfg.idaho.gov/wma",
+     "why": "no total words near it"
+    }
+   ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-5594": {
-   "checked": "2026-11-09",
+   "cause": "a number 21 parks share from the same sentence (85,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Boundary Creek Wildlife Management Area",
    "official": null,
@@ -11221,12 +11560,13 @@
    "pages": [
     {
      "other_unit": true,
-     "status": "rest",
+     "status": "ok",
      "url": "https://idfg.idaho.gov/wma",
      "why": "the park's page (data/parkinfo)"
     }
    ],
    "pct": null,
+   "same_agency": false,
    "score": 7,
    "score_parts": {
     "name": 2,
@@ -11234,23 +11574,34 @@
     "size": 1,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 85000.0,
+     "as": "85,000 acres",
+     "clean": false,
+     "line": "the public. Visit a WMA Idaho Fish and Game has 31 Wildlife Management Areas (WMAs), which range from 275 to 85,000 acres. Each has specific priorities based upon the needs of wildlife in the surrounding area. Panhandle Boundary-Sm",
+     "total_like": false,
+     "url": "https://idfg.idaho.gov/wma",
+     "why": "no total words near it"
+    }
+   ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-5595": {
-   "checked": "2026-11-09",
+   "cause": "a number 21 parks share from the same sentence (85,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Camas Prairie Centennial Marsh Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 4339,
+    "acres": 6158,
     "dissolved": {
      "after": 3891,
      "before": 6194,
      "copies": 2,
-     "key_union": 4339,
+     "key_union": 6158,
      "parts": 0,
      "records": 7,
      "summed": 3891,
@@ -11290,7 +11641,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -11298,31 +11649,43 @@
    "pages": [
     {
      "other_unit": true,
-     "status": "rest",
+     "status": "ok",
      "url": "https://idfg.idaho.gov/wma",
      "why": "the park's page (data/parkinfo)"
     }
    ],
    "pct": null,
-   "score": 6,
+   "same_agency": false,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 85000.0,
+     "as": "85,000 acres",
+     "clean": false,
+     "line": "the public. Visit a WMA Idaho Fish and Game has 31 Wildlife Management Areas (WMAs), which range from 275 to 85,000 acres. Each has specific priorities based upon the needs of wildlife in the surrounding area. Panhandle Boundary-Sm",
+     "total_like": false,
+     "url": "https://idfg.idaho.gov/wma",
+     "why": "no total words near it"
+    }
+   ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-5596": {
-   "checked": "2026-11-09",
+   "cause": "a number 21 parks share from the same sentence (85,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Carey Lake Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 799,
+    "acres": 897,
     "dissolved": {
      "after": 1561,
      "before": 2401,
@@ -11334,8 +11697,10 @@
      },
      "family_fold": 762,
      "family_used": "sgida",
+     "key_union": 897,
      "parts": 2,
      "records": 9,
+     "summed": 799,
      "tracts": 6
     },
     "family_fold": "layers {'sgida': 799, 'sgidb': 517, 'padus': 245}: one land in 3 layers, the sgida copy used (762 ac of copies not added)",
@@ -11357,8 +11722,70 @@
    "pages": [
     {
      "other_unit": true,
-     "status": "rest",
+     "status": "ok",
      "url": "https://idfg.idaho.gov/wma",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "same_agency": false,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 85000.0,
+     "as": "85,000 acres",
+     "clean": false,
+     "line": "the public. Visit a WMA Idaho Fish and Game has 31 Wildlife Management Areas (WMAs), which range from 275 to 85,000 acres. Each has specific priorities based upon the needs of wildlife in the surrounding area. Panhandle Boundary-Sm",
+     "total_like": false,
+     "url": "https://idfg.idaho.gov/wma",
+     "why": "no total words near it"
+    }
+   ],
+   "t": "Wildlife Management Area",
+   "ver": 15,
+   "verdict": "unsure"
+  },
+  "US-5597": {
+   "checked": "2026-11-22",
+   "handover": [],
+   "n": "Cartier Slough Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 1023,
+    "dissolved": {
+     "after": 1023,
+     "before": 2046,
+     "copies": 1,
+     "parts": 0,
+     "records": 2,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 2046 -> 1023 acres",
+    "pieces": [
+     [
+      "idw73130",
+      "CARTIER SLOUGH WMA",
+      1023,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://idfg.idaho.gov",
      "why": "the park's page (data/parkinfo)"
     }
    ],
@@ -11375,61 +11802,9 @@
    "ver": 15,
    "verdict": "no size on page"
   },
-  "US-5597": {
-   "checked": "2026-11-09",
-   "handover": [],
-   "n": "Cartier Slough Wildlife Management Area",
-   "official": null,
-   "ours": {
-    "acres": 589,
-    "dissolved": {
-     "after": 1023,
-     "before": 2046,
-     "copies": 1,
-     "key_union": 589,
-     "parts": 0,
-     "records": 2,
-     "summed": 1023,
-     "tracts": 1
-    },
-    "manager": "",
-    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 2046 -> 1023 acres",
-    "pieces": [
-     [
-      "idw73130",
-      "CARTIER SLOUGH WMA",
-      1023,
-      "name"
-     ]
-    ],
-    "pin": "just outside",
-    "src": "",
-    "unknown_pieces": 0
-   },
-   "owner_now": null,
-   "pages": [
-    {
-     "other_unit": true,
-     "status": "rest",
-     "url": "https://idfg.idaho.gov",
-     "why": "the park's page (data/parkinfo)"
-    }
-   ],
-   "pct": null,
-   "score": 6,
-   "score_parts": {
-    "name": 2,
-    "pin": 1,
-    "size": 1,
-    "source": 2
-   },
-   "sizes": [],
-   "t": "Wildlife Management Area",
-   "ver": 15,
-   "verdict": "no size on page"
-  },
   "US-5598": {
-   "checked": "2026-11-09",
+   "cause": "a number 21 parks share from the same sentence (85,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Cecil D. Andrus Wildlife Management Area",
    "official": null,
@@ -11453,12 +11828,13 @@
    "pages": [
     {
      "other_unit": true,
-     "status": "rest",
+     "status": "ok",
      "url": "https://idfg.idaho.gov/wma",
      "why": "the park's page (data/parkinfo)"
     }
    ],
    "pct": null,
+   "same_agency": false,
    "score": 7,
    "score_parts": {
     "name": 2,
@@ -11466,18 +11842,29 @@
     "size": 1,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 85000.0,
+     "as": "85,000 acres",
+     "clean": false,
+     "line": "the public. Visit a WMA Idaho Fish and Game has 31 Wildlife Management Areas (WMAs), which range from 275 to 85,000 acres. Each has specific priorities based upon the needs of wildlife in the surrounding area. Panhandle Boundary-Sm",
+     "total_like": false,
+     "url": "https://idfg.idaho.gov/wma",
+     "why": "no total words near it"
+    }
+   ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-5599": {
-   "checked": "2026-11-09",
+   "cause": "a number 21 parks share from the same sentence (85,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "CJ Strike Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 37699,
+    "acres": 39903,
     "dissolved": {
      "after": 52402,
      "before": 85688,
@@ -11490,7 +11877,7 @@
      },
      "family_fold": 20665,
      "family_used": "sgakg",
-     "key_union": 37699,
+     "key_union": 39903,
      "parts": 0,
      "records": 11,
      "summed": 31737,
@@ -11515,12 +11902,13 @@
    "pages": [
     {
      "other_unit": true,
-     "status": "rest",
+     "status": "ok",
      "url": "https://idfg.idaho.gov/wma",
      "why": "the park's page (data/parkinfo)"
     }
    ],
    "pct": null,
+   "same_agency": false,
    "score": 7,
    "score_parts": {
     "name": 2,
@@ -11528,13 +11916,24 @@
     "size": 1,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 85000.0,
+     "as": "85,000 acres",
+     "clean": false,
+     "line": "the public. Visit a WMA Idaho Fish and Game has 31 Wildlife Management Areas (WMAs), which range from 275 to 85,000 acres. Each has specific priorities based upon the needs of wildlife in the surrounding area. Panhandle Boundary-Sm",
+     "total_like": false,
+     "url": "https://idfg.idaho.gov/wma",
+     "why": "no total words near it"
+    }
+   ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-5600": {
-   "checked": "2026-11-09",
+   "cause": "a number 21 parks share from the same sentence (85,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Coeur d'Alene River Wildlife Management Area",
    "official": null,
@@ -11573,12 +11972,13 @@
    "pages": [
     {
      "other_unit": true,
-     "status": "rest",
+     "status": "ok",
      "url": "https://idfg.idaho.gov/wma",
      "why": "the park's page (data/parkinfo)"
     }
    ],
    "pct": null,
+   "same_agency": false,
    "score": 7,
    "score_parts": {
     "name": 2,
@@ -11586,13 +11986,24 @@
     "size": 1,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 85000.0,
+     "as": "85,000 acres",
+     "clean": false,
+     "line": "the public. Visit a WMA Idaho Fish and Game has 31 Wildlife Management Areas (WMAs), which range from 275 to 85,000 acres. Each has specific priorities based upon the needs of wildlife in the surrounding area. Panhandle Boundary-Sm",
+     "total_like": false,
+     "url": "https://idfg.idaho.gov/wma",
+     "why": "no total words near it"
+    }
+   ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-5601": {
-   "checked": "2026-11-09",
+   "cause": "a number 21 parks share from the same sentence (85,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Craig Mountain Wildlife Management Area",
    "official": null,
@@ -11616,12 +12027,13 @@
    "pages": [
     {
      "other_unit": true,
-     "status": "rest",
+     "status": "ok",
      "url": "https://idfg.idaho.gov/wma",
      "why": "the park's page (data/parkinfo)"
     }
    ],
    "pct": null,
+   "same_agency": false,
    "score": 7,
    "score_parts": {
     "name": 2,
@@ -11629,26 +12041,34 @@
     "size": 1,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 85000.0,
+     "as": "85,000 acres",
+     "clean": false,
+     "line": "the public. Visit a WMA Idaho Fish and Game has 31 Wildlife Management Areas (WMAs), which range from 275 to 85,000 acres. Each has specific priorities based upon the needs of wildlife in the surrounding area. Panhandle Boundary-Sm",
+     "total_like": false,
+     "url": "https://idfg.idaho.gov/wma",
+     "why": "no total words near it"
+    }
+   ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-5602": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Deer Parks Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 2717,
+    "acres": 3199,
     "dissolved": {
      "after": 3199,
      "before": 6398,
      "copies": 1,
-     "key_union": 2717,
      "parts": 0,
      "records": 2,
-     "summed": 3199,
      "tracts": 1
     },
     "manager": "",
@@ -11669,7 +12089,7 @@
    "pages": [
     {
      "other_unit": true,
-     "status": "rest",
+     "status": "ok",
      "url": "https://idfg.idaho.gov",
      "why": "the park's page (data/parkinfo)"
     }
@@ -11688,12 +12108,13 @@
    "verdict": "no size on page"
   },
   "US-5603": {
-   "checked": "2026-11-09",
+   "cause": "a number 21 parks share from the same sentence (85,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Farragut Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 1008,
+    "acres": 1410,
     "family_fold": "layers {'sgida': 1410, 'padus': 138}: one land in 2 layers, the sgida copy used (138 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -11704,7 +12125,7 @@
       "reviewed"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -11712,26 +12133,38 @@
    "pages": [
     {
      "other_unit": true,
-     "status": "rest",
+     "status": "ok",
      "url": "https://idfg.idaho.gov/wma",
      "why": "the park's page (data/parkinfo)"
     }
    ],
    "pct": null,
-   "score": 7,
+   "same_agency": false,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 85000.0,
+     "as": "85,000 acres",
+     "clean": false,
+     "line": "the public. Visit a WMA Idaho Fish and Game has 31 Wildlife Management Areas (WMAs), which range from 275 to 85,000 acres. Each has specific priorities based upon the needs of wildlife in the surrounding area. Panhandle Boundary-Sm",
+     "total_like": false,
+     "url": "https://idfg.idaho.gov/wma",
+     "why": "no total words near it"
+    }
+   ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-5604": {
-   "checked": "2026-11-09",
+   "cause": "a number 21 parks share from the same sentence (85,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Fort Boise Wildlife Management Area",
    "official": null,
@@ -11755,12 +12188,13 @@
    "pages": [
     {
      "other_unit": true,
-     "status": "rest",
+     "status": "ok",
      "url": "https://idfg.idaho.gov/wma",
      "why": "the park's page (data/parkinfo)"
     }
    ],
    "pct": null,
+   "same_agency": false,
    "score": 7,
    "score_parts": {
     "name": 2,
@@ -11768,13 +12202,23 @@
     "size": 1,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 85000.0,
+     "as": "85,000 acres",
+     "clean": false,
+     "line": "the public. Visit a WMA Idaho Fish and Game has 31 Wildlife Management Areas (WMAs), which range from 275 to 85,000 acres. Each has specific priorities based upon the needs of wildlife in the surrounding area. Panhandle Boundary-Sm",
+     "total_like": false,
+     "url": "https://idfg.idaho.gov/wma",
+     "why": "no total words near it"
+    }
+   ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-5605": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Georgetown Summit Wildlife Management Area",
    "official": null,
@@ -11813,7 +12257,7 @@
    "pages": [
     {
      "other_unit": true,
-     "status": "rest",
+     "status": "ok",
      "url": "https://idfg.idaho.gov",
      "why": "the park's page (data/parkinfo)"
     }
@@ -11832,12 +12276,13 @@
    "verdict": "no size on page"
   },
   "US-5606": {
-   "checked": "2026-11-09",
+   "cause": "a number 21 parks share from the same sentence (85,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Hagerman Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 811,
+    "acres": 1024,
     "dissolved": {
      "after": 1752,
      "before": 2200,
@@ -11849,10 +12294,8 @@
      },
      "family_fold": 728,
      "family_used": "sgida",
-     "key_union": 811,
      "parts": 5,
      "records": 12,
-     "summed": 1024,
      "tracts": 7
     },
     "family_fold": "layers {'sgida': 1024, 'padus': 724, 'sgidb': 4}: one land in 3 layers, the sgida copy used (728 ac of copies not added)",
@@ -11874,12 +12317,13 @@
    "pages": [
     {
      "other_unit": true,
-     "status": "rest",
+     "status": "ok",
      "url": "https://idfg.idaho.gov/wma",
      "why": "the park's page (data/parkinfo)"
     }
    ],
    "pct": null,
+   "same_agency": false,
    "score": 7,
    "score_parts": {
     "name": 2,
@@ -11887,18 +12331,28 @@
     "size": 1,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 85000.0,
+     "as": "85,000 acres",
+     "clean": false,
+     "line": "the public. Visit a WMA Idaho Fish and Game has 31 Wildlife Management Areas (WMAs), which range from 275 to 85,000 acres. Each has specific priorities based upon the needs of wildlife in the surrounding area. Panhandle Boundary-Sm",
+     "total_like": false,
+     "url": "https://idfg.idaho.gov/wma",
+     "why": "no total words near it"
+    }
+   ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-5607": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Market Lake Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 5376,
+    "acres": 6014,
     "dissolved": {
      "after": 10759,
      "before": 11501,
@@ -11909,10 +12363,8 @@
      },
      "family_fold": 4745,
      "family_used": "sgida",
-     "key_union": 5376,
      "parts": 4,
      "records": 10,
-     "summed": 6014,
      "tracts": 6
     },
     "family_fold": "layers {'sgida': 6014, 'padus': 4745}: one land in 2 layers, the sgida copy used (4,745 ac of copies not added)",
@@ -11934,7 +12386,7 @@
    "pages": [
     {
      "other_unit": true,
-     "status": "rest",
+     "status": "ok",
      "url": "https://idfg.idaho.gov",
      "why": "the park's page (data/parkinfo)"
     }
@@ -11953,12 +12405,13 @@
    "verdict": "no size on page"
   },
   "US-5608": {
-   "checked": "2026-11-09",
+   "cause": "a number 21 parks share from the same sentence (85,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "McArthur Lake Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 1426,
+    "acres": 1590,
     "dissolved": {
      "after": 1909,
      "before": 3502,
@@ -11969,10 +12422,8 @@
      },
      "family_fold": 319,
      "family_used": "sgida",
-     "key_union": 1426,
      "parts": 5,
      "records": 10,
-     "summed": 1590,
      "tracts": 5
     },
     "family_fold": "layers {'sgida': 1590, 'padus': 319}: one land in 2 layers, the sgida copy used (319 ac of copies not added)",
@@ -11994,12 +12445,13 @@
    "pages": [
     {
      "other_unit": true,
-     "status": "rest",
+     "status": "ok",
      "url": "https://idfg.idaho.gov/wma",
      "why": "the park's page (data/parkinfo)"
     }
    ],
    "pct": null,
+   "same_agency": false,
    "score": 7,
    "score_parts": {
     "name": 2,
@@ -12007,26 +12459,35 @@
     "size": 1,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 85000.0,
+     "as": "85,000 acres",
+     "clean": false,
+     "line": "the public. Visit a WMA Idaho Fish and Game has 31 Wildlife Management Areas (WMAs), which range from 275 to 85,000 acres. Each has specific priorities based upon the needs of wildlife in the surrounding area. Panhandle Boundary-Sm",
+     "total_like": false,
+     "url": "https://idfg.idaho.gov/wma",
+     "why": "no total words near it"
+    }
+   ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-5609": {
-   "checked": "2026-11-09",
+   "cause": "a number 21 parks share from the same sentence (85,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Montour Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 1428,
+    "acres": 1561,
     "dissolved": {
      "after": 1561,
      "before": 3122,
      "copies": 1,
-     "key_union": 1428,
      "parts": 0,
      "records": 2,
-     "summed": 1561,
      "tracts": 1
     },
     "manager": "",
@@ -12039,7 +12500,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -12047,31 +12508,42 @@
    "pages": [
     {
      "other_unit": true,
-     "status": "rest",
+     "status": "ok",
      "url": "https://idfg.idaho.gov/wma",
      "why": "the park's page (data/parkinfo)"
     }
    ],
    "pct": null,
-   "score": 6,
+   "same_agency": false,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 85000.0,
+     "as": "85,000 acres",
+     "clean": false,
+     "line": "the public. Visit a WMA Idaho Fish and Game has 31 Wildlife Management Areas (WMAs), which range from 275 to 85,000 acres. Each has specific priorities based upon the needs of wildlife in the surrounding area. Panhandle Boundary-Sm",
+     "total_like": false,
+     "url": "https://idfg.idaho.gov/wma",
+     "why": "no total words near it"
+    }
+   ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-5610": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Montpelier Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 2632,
+    "acres": 2221,
     "family_fold": "layers {'sgida': 2221, 'padus': 1384}: one land in 2 layers, the sgida copy used (1,384 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -12090,7 +12562,7 @@
    "pages": [
     {
      "other_unit": true,
-     "status": "rest",
+     "status": "ok",
      "url": "https://idfg.idaho.gov",
      "why": "the park's page (data/parkinfo)"
     }
@@ -12109,7 +12581,8 @@
    "verdict": "no size on page"
   },
   "US-5611": {
-   "checked": "2026-11-09",
+   "cause": "a number 21 parks share from the same sentence (85,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Mud Lake Wildlife Management Area",
    "official": null,
@@ -12149,12 +12622,13 @@
    "pages": [
     {
      "other_unit": true,
-     "status": "rest",
+     "status": "ok",
      "url": "https://idfg.idaho.gov/wma",
      "why": "the park's page (data/parkinfo)"
     }
    ],
    "pct": null,
+   "same_agency": false,
    "score": 7,
    "score_parts": {
     "name": 2,
@@ -12162,18 +12636,29 @@
     "size": 1,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 85000.0,
+     "as": "85,000 acres",
+     "clean": false,
+     "line": "the public. Visit a WMA Idaho Fish and Game has 31 Wildlife Management Areas (WMAs), which range from 275 to 85,000 acres. Each has specific priorities based upon the needs of wildlife in the surrounding area. Panhandle Boundary-Sm",
+     "total_like": false,
+     "url": "https://idfg.idaho.gov/wma",
+     "why": "no total words near it"
+    }
+   ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-5612": {
-   "checked": "2026-11-09",
+   "cause": "a number 21 parks share from the same sentence (85,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Niagara Springs Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 1343,
+    "acres": 1168,
     "family_fold": "layers {'sgida': 1168, 'padus': 1154}: one land in 2 layers, the sgida copy used (1,154 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -12192,12 +12677,13 @@
    "pages": [
     {
      "other_unit": true,
-     "status": "rest",
+     "status": "ok",
      "url": "https://idfg.idaho.gov/wma",
      "why": "the park's page (data/parkinfo)"
     }
    ],
    "pct": null,
+   "same_agency": false,
    "score": 7,
    "score_parts": {
     "name": 2,
@@ -12205,18 +12691,29 @@
     "size": 1,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 85000.0,
+     "as": "85,000 acres",
+     "clean": false,
+     "line": "the public. Visit a WMA Idaho Fish and Game has 31 Wildlife Management Areas (WMAs), which range from 275 to 85,000 acres. Each has specific priorities based upon the needs of wildlife in the surrounding area. Panhandle Boundary-Sm",
+     "total_like": false,
+     "url": "https://idfg.idaho.gov/wma",
+     "why": "no total words near it"
+    }
+   ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-5613": {
-   "checked": "2026-11-09",
+   "cause": "a number 21 parks share from the same sentence (85,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Payette River Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 1129,
+    "acres": 1260,
     "dissolved": {
      "after": 1993,
      "before": 2272,
@@ -12227,10 +12724,8 @@
      },
      "family_fold": 733,
      "family_used": "sgida",
-     "key_union": 1129,
      "parts": 3,
      "records": 10,
-     "summed": 1260,
      "tracts": 7
     },
     "family_fold": "layers {'sgida': 1260, 'padus': 733}: one land in 2 layers, the sgida copy used (733 ac of copies not added)",
@@ -12244,7 +12739,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -12252,29 +12747,49 @@
    "pages": [
     {
      "other_unit": true,
-     "status": "rest",
+     "status": "ok",
      "url": "https://idfg.idaho.gov/wma",
      "why": "the park's page (data/parkinfo)"
     }
    ],
    "pct": null,
-   "score": 6,
+   "same_agency": false,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 85000.0,
+     "as": "85,000 acres",
+     "clean": false,
+     "line": "the public. Visit a WMA Idaho Fish and Game has 31 Wildlife Management Areas (WMAs), which range from 275 to 85,000 acres. Each has specific priorities based upon the needs of wildlife in the surrounding area. Panhandle Boundary-Sm",
+     "total_like": false,
+     "url": "https://idfg.idaho.gov/wma",
+     "why": "no total words near it"
+    }
+   ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-5614": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Pend Oreille Wildlife Management Area",
-   "official": null,
+   "official": {
+    "acres": 85000.0,
+    "as": "85,000 acres",
+    "clean": false,
+    "line": "the public. Visit a WMA Idaho Fish and Game has 31 Wildlife Management Areas (WMAs), which range from 275 to 85,000 acres. Each has specific priorities based upon the needs of wildlife in the surrounding area. Panhandle Boundary-Sm",
+    "read": "2026-11-22",
+    "sent": "Idaho Fish and Game has 31 Wildlife Management Areas (WMAs), which range from 275 to 85,000 acres.",
+    "url": "https://idfg.idaho.gov/wma",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 92765,
     "dissolved": {
@@ -12311,31 +12826,42 @@
    "pages": [
     {
      "other_unit": true,
-     "status": "rest",
+     "status": "ok",
      "url": "https://idfg.idaho.gov/wma",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 9,
+   "same_agency": false,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 85000.0,
+     "as": "85,000 acres",
+     "clean": false,
+     "line": "the public. Visit a WMA Idaho Fish and Game has 31 Wildlife Management Areas (WMAs), which range from 275 to 85,000 acres. Each has specific priorities based upon the needs of wildlife in the surrounding area. Panhandle Boundary-Sm",
+     "total_like": false,
+     "url": "https://idfg.idaho.gov/wma",
+     "why": "no total words near it"
+    }
+   ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-5615": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Portneuf Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 4347,
+    "acres": 3936,
     "family_fold": "layers {'sgida': 3936, 'padus': 3136}: one land in 2 layers, the sgida copy used (3,136 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -12354,7 +12880,7 @@
    "pages": [
     {
      "other_unit": true,
-     "status": "rest",
+     "status": "ok",
      "url": "https://idfg.idaho.gov",
      "why": "the park's page (data/parkinfo)"
     }
@@ -12373,20 +12899,19 @@
    "verdict": "no size on page"
   },
   "US-5616": {
-   "checked": "2026-11-09",
+   "cause": "a number 21 parks share from the same sentence (85,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Red River Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 213,
+    "acres": 321,
     "dissolved": {
      "after": 321,
      "before": 642,
      "copies": 1,
-     "key_union": 213,
      "parts": 0,
      "records": 2,
-     "summed": 321,
      "tracts": 1
     },
     "manager": "",
@@ -12407,12 +12932,13 @@
    "pages": [
     {
      "other_unit": true,
-     "status": "rest",
+     "status": "ok",
      "url": "https://idfg.idaho.gov/wma",
      "why": "the park's page (data/parkinfo)"
     }
    ],
    "pct": null,
+   "same_agency": false,
    "score": 5,
    "score_parts": {
     "name": 2,
@@ -12420,13 +12946,23 @@
     "size": 1,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 85000.0,
+     "as": "85,000 acres",
+     "clean": false,
+     "line": "the public. Visit a WMA Idaho Fish and Game has 31 Wildlife Management Areas (WMAs), which range from 275 to 85,000 acres. Each has specific priorities based upon the needs of wildlife in the surrounding area. Panhandle Boundary-Sm",
+     "total_like": false,
+     "url": "https://idfg.idaho.gov/wma",
+     "why": "no total words near it"
+    }
+   ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-5617": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "St. Maries Wildlife Management Area",
    "ours": null,
@@ -12436,7 +12972,7 @@
    "verdict": "no outline"
   },
   "US-5618": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Sand Creek Wildlife Management Area",
    "official": null,
@@ -12475,7 +13011,7 @@
    "pages": [
     {
      "other_unit": true,
-     "status": "rest",
+     "status": "ok",
      "url": "https://idfg.idaho.gov",
      "why": "the park's page (data/parkinfo)"
     }
@@ -12494,7 +13030,8 @@
    "verdict": "no size on page"
   },
   "US-5619": {
-   "checked": "2026-11-09",
+   "cause": "a number 21 parks share from the same sentence (85,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Snow Peak Wildlife Management Area",
    "official": null,
@@ -12518,12 +13055,13 @@
    "pages": [
     {
      "other_unit": true,
-     "status": "rest",
+     "status": "ok",
      "url": "https://idfg.idaho.gov/wma",
      "why": "the park's page (data/parkinfo)"
     }
    ],
    "pct": null,
+   "same_agency": false,
    "score": 7,
    "score_parts": {
     "name": 2,
@@ -12531,18 +13069,28 @@
     "size": 1,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 85000.0,
+     "as": "85,000 acres",
+     "clean": false,
+     "line": "the public. Visit a WMA Idaho Fish and Game has 31 Wildlife Management Areas (WMAs), which range from 275 to 85,000 acres. Each has specific priorities based upon the needs of wildlife in the surrounding area. Panhandle Boundary-Sm",
+     "total_like": false,
+     "url": "https://idfg.idaho.gov/wma",
+     "why": "no total words near it"
+    }
+   ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-5620": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Sterling Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 3315,
+    "acres": 3892,
     "family_fold": "layers {'sgida': 3892, 'padus': 1967}: one land in 2 layers, the sgida copy used (1,967 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -12561,7 +13109,7 @@
    "pages": [
     {
      "other_unit": true,
-     "status": "rest",
+     "status": "ok",
      "url": "https://idfg.idaho.gov",
      "why": "the park's page (data/parkinfo)"
     }
@@ -12580,12 +13128,13 @@
    "verdict": "no size on page"
   },
   "US-5621": {
-   "checked": "2026-11-09",
+   "cause": "a number 21 parks share from the same sentence (85,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Tex Creek Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 36366,
+    "acres": 38512,
     "dissolved": {
      "after": 44379,
      "before": 50456,
@@ -12596,10 +13145,8 @@
      },
      "family_fold": 5867,
      "family_used": "sgida",
-     "key_union": 36366,
      "parts": 7,
      "records": 14,
-     "summed": 38512,
      "tracts": 6
     },
     "family_fold": "layers {'sgida': 38512, 'padus': 5867}: one land in 2 layers, the sgida copy used (5,867 ac of copies not added)",
@@ -12621,12 +13168,13 @@
    "pages": [
     {
      "other_unit": true,
-     "status": "rest",
+     "status": "ok",
      "url": "https://idfg.idaho.gov/wma",
      "why": "the park's page (data/parkinfo)"
     }
    ],
    "pct": null,
+   "same_agency": false,
    "score": 7,
    "score_parts": {
     "name": 2,
@@ -12634,13 +13182,23 @@
     "size": 1,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 85000.0,
+     "as": "85,000 acres",
+     "clean": false,
+     "line": "the public. Visit a WMA Idaho Fish and Game has 31 Wildlife Management Areas (WMAs), which range from 275 to 85,000 acres. Each has specific priorities based upon the needs of wildlife in the surrounding area. Panhandle Boundary-Sm",
+     "total_like": false,
+     "url": "https://idfg.idaho.gov/wma",
+     "why": "no total words near it"
+    }
+   ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-6227": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Snake River National Wild and Scenic River",
    "ours": null,
@@ -12650,7 +13208,7 @@
    "verdict": "no outline"
   },
   "US-7360": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Curlew National Grassland",
    "official": null,
@@ -12692,11 +13250,11 @@
    "verdict": "no size on page"
   },
   "US-7361": {
-   "cause": "whole park compared (POTA lists it in 2 states: {'US-ID': 661553, 'US-OR': 661553})",
-   "checked": "2026-11-09",
+   "cause": "whole park compared (POTA lists it in 2 states: {'US-OR': 661553, 'US-ID': 661553})",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Hells Canyon National Recreation Area",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-ID': 661553, 'US-OR': 661553})",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-OR': 661553, 'US-ID': 661553})",
    "official": null,
    "ours": {
     "acres": 1323106,
@@ -12716,8 +13274,8 @@
     "pin": "inside",
     "src": "",
     "states": [
-     "US-ID",
-     "US-OR"
+     "US-OR",
+     "US-ID"
     ],
     "unknown_pieces": 0,
     "whole_park": true
@@ -12754,7 +13312,7 @@
    "verdict": "unsure"
   },
   "US-7362": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Sawtooth National Recreation Area",
    "official": null,
@@ -12796,22 +13354,13 @@
    "verdict": "no size on page"
   },
   "US-7363": {
-   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 26.9 million acres, a statewide / agency-wide total (over a million acres) on a park that is not a big federal unit)",
-   "checked": "2026-11-09",
+   "cause": "a number 17 parks share from the same sentence (26,900,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Morley Nelson Snake River Birds of Prey National Conservation Area",
-   "official": {
-    "acres": 26900000.0,
-    "as": "26.9 million acres",
-    "clean": false,
-    "line": "in wildland fire management efforts. Wild Horse and Burro BLM manages and protects wild horses and burros on 26.9 million acres of public lands. Timber Sales Timber sales allow for the sustainable harvest of timber for commercial purpose",
-    "read": "2026-11-09",
-    "sent": "BLM manages and protects wild horses and burros on 26.9 million acres of public lands.",
-    "url": "https://blm.gov",
-    "why": "a statewide / agency-wide total (over a million acres) on a park that is not a big federal unit"
-   },
+   "official": null,
    "ours": {
-    "acres": 598310,
+    "acres": 597676,
     "manager": "",
     "pieces": [],
     "pin": "inside",
@@ -12826,7 +13375,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 98,
+   "pct": null,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -12852,7 +13401,7 @@
   },
   "US-7365": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "St. Anthony Sand Dunes National Recreation Area",
    "official": null,
@@ -12912,8 +13461,8 @@
    "verdict": "unsure"
   },
   "US-7366": {
-   "cause": "a number 18 parks share from one page (28 ac): an agency total, not this park",
-   "checked": "2026-11-09",
+   "cause": "a number 19 parks share from the same sentence (28 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Trail of the Coeur d'Alene's State Trail",
    "official": null,
@@ -12928,7 +13477,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -12943,10 +13492,10 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 4,
+   "score": 5,
    "score_parts": {
     "name": 1,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 1
    },
@@ -12975,7 +13524,7 @@
    "verdict": "unsure"
   },
   "US-7805": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Antelope Valley Airstrip State Recreation Area",
    "ours": null,
@@ -12985,7 +13534,7 @@
    "verdict": "no outline"
   },
   "US-7806": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Atlanta Airstrip State Recreation Area",
    "ours": null,
@@ -12995,7 +13544,7 @@
    "verdict": "no outline"
   },
   "US-7807": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bear Trap Airstrip State Recreation Area",
    "ours": null,
@@ -13005,7 +13554,7 @@
    "verdict": "no outline"
   },
   "US-7808": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Big Creek Airstrip State Recreation Area",
    "ours": null,
@@ -13015,7 +13564,7 @@
    "verdict": "no outline"
   },
   "US-7809": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Big Southern Butte Airstrip State Recreation Area",
    "ours": null,
@@ -13025,7 +13574,7 @@
    "verdict": "no outline"
   },
   "US-7810": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bruce Meadows Airstrip State Recreation Area",
    "ours": null,
@@ -13035,7 +13584,7 @@
    "verdict": "no outline"
   },
   "US-7811": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Cavanaugh Bay Airstrip State Recreation Area",
    "ours": null,
@@ -13045,7 +13594,7 @@
    "verdict": "no outline"
   },
   "US-7812": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Copper Basin Airstrip State Recreation Area",
    "ours": null,
@@ -13055,7 +13604,7 @@
    "verdict": "no outline"
   },
   "US-7813": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Cox's Well Airstrip State Recreation Area",
    "ours": null,
@@ -13065,7 +13614,7 @@
    "verdict": "no outline"
   },
   "US-7814": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Garden Valley Airstrip State Recreation Area",
    "ours": null,
@@ -13075,7 +13624,7 @@
    "verdict": "no outline"
   },
   "US-7815": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Grasmere Airstrip State Recreation Area",
    "ours": null,
@@ -13087,6 +13636,7 @@
   "US-7816": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Henrys Lake Airstrip State Recreation Area",
    "official": null,
    "ours": {
@@ -13127,7 +13677,7 @@
    "verdict": "no size on page"
   },
   "US-7817": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Hollow Top Airstrip State Recreation Area",
    "ours": null,
@@ -13137,7 +13687,7 @@
    "verdict": "no outline"
   },
   "US-7818": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Johnson Creek Airstrip State Recreation Area",
    "ours": null,
@@ -13147,7 +13697,7 @@
    "verdict": "no outline"
   },
   "US-7819": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Laidlaw Corrals Airstrip State Recreation Area",
    "ours": null,
@@ -13157,7 +13707,7 @@
    "verdict": "no outline"
   },
   "US-7820": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Magee Airstrip State Recreation Area",
    "ours": null,
@@ -13167,7 +13717,7 @@
    "verdict": "no outline"
   },
   "US-7821": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Magic Reservoir Airstrip State Recreation Area",
    "ours": null,
@@ -13177,7 +13727,7 @@
    "verdict": "no outline"
   },
   "US-7822": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "May Airstrip State Recreation Area",
    "ours": null,
@@ -13187,7 +13737,7 @@
    "verdict": "no outline"
   },
   "US-7823": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Midway Airstrip State Recreation Area",
    "ours": null,
@@ -13197,7 +13747,7 @@
    "verdict": "no outline"
   },
   "US-7824": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Murphy Hot Springs Airstrip State Recreation Area",
    "ours": null,
@@ -13207,7 +13757,7 @@
    "verdict": "no outline"
   },
   "US-7825": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "New Meadows Airstrip State Recreation Area",
    "ours": null,
@@ -13217,7 +13767,7 @@
    "verdict": "no outline"
   },
   "US-7826": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Pine Airstrip State Recreation Area",
    "ours": null,
@@ -13227,7 +13777,7 @@
    "verdict": "no outline"
   },
   "US-7827": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Porthill/Eckhart Airstrip State Recreation Area",
    "ours": null,
@@ -13237,7 +13787,7 @@
    "verdict": "no outline"
   },
   "US-7828": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Reed Ranch Airstrip State Recreation Area",
    "ours": null,
@@ -13247,7 +13797,7 @@
    "verdict": "no outline"
   },
   "US-7829": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Slate Creek Airstrip State Recreation Area",
    "ours": null,
@@ -13257,7 +13807,7 @@
    "verdict": "no outline"
   },
   "US-7830": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Smiley Creek Airstrip State Recreation Area",
    "ours": null,
@@ -13267,7 +13817,7 @@
    "verdict": "no outline"
   },
   "US-7831": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Smith Prairie Airstrip State Recreation Area",
    "ours": null,
@@ -13277,7 +13827,7 @@
    "verdict": "no outline"
   },
   "US-7832": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Stanley Airstrip State Recreation Area",
    "ours": null,
@@ -13287,7 +13837,7 @@
    "verdict": "no outline"
   },
   "US-7833": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Twin Bridges Airstrip State Recreation Area",
    "ours": null,
@@ -13297,7 +13847,7 @@
    "verdict": "no outline"
   },
   "US-7834": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Warm Springs Creek Airstrip State Recreation Area",
    "ours": null,
@@ -13310,8 +13860,9 @@
    "cause": "whole park compared (POTA lists it in 2 states: {'US-ID': 1348689, 'US-MT': 1348689})",
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Selway-Bitterroot Wilderness Area",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-ID': 1348689, 'US-MT': 1348689})",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-MT': 1348689, 'US-ID': 1348689})",
    "official": {
     "acres": 206053.0,
     "as": "206,053 acres",
@@ -13340,8 +13891,8 @@
     "pin": "inside",
     "src": "",
     "states": [
-     "US-ID",
-     "US-MT"
+     "US-MT",
+     "US-ID"
     ],
     "unknown_pieces": 0,
     "whole_park": true
@@ -13379,5 +13930,5 @@
    "verdict": "unsure"
   }
  },
- "read": "2026-11-09"
+ "read": "2026-11-22"
 }

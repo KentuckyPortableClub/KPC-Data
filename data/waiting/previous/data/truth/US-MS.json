@@ -2,36 +2,41 @@
  "about": "Park truth checker: official acreage vs our outline, handover hints, second-witness score. Review lists only: nothing here changes a key or a card.",
  "area": "US-MS",
  "counts": {
-  "agree": 1,
-  "handover_hints": 4,
+  "agree": 6,
+  "handover_hints": 3,
   "no_page": 0,
-  "no_size": 76,
-  "off": 5,
+  "no_size": 69,
+  "not_read": 0,
+  "off": 2,
   "ours_unknown": 0,
   "parks": 155,
   "retired": 0,
-  "unsure": 7,
-  "weak": 14,
-  "with_outline": 89
+  "unsure": 12,
+  "weak": 11,
+  "with_outline": 99
  },
  "parks": {
   "US-0382": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Coldwater River National Wildlife Refuge",
    "official": null,
    "ours": {
-    "acres": 5028,
+    "acres": 2514,
+    "dissolved": {
+     "after": 2514,
+     "before": 5028,
+     "copies": 1,
+     "parts": 0,
+     "records": 2,
+     "tracts": 1
+    },
     "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 5028 -> 2514 acres",
     "pieces": [
      [
       3737,
-      "Coldwater River National Wildlife Refuge",
-      2514,
-      "name"
-     ],
-     [
-      4673,
       "Coldwater River National Wildlife Refuge",
       2514,
       "name"
@@ -69,33 +74,44 @@
    },
    "sizes": [],
    "t": "National Wildlife Refuge",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-0383": {
-   "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Dahomey National Wildlife Refuge",
-   "official": null,
+   "official": {
+    "acres": 9691.0,
+    "as": "9,691 acre",
+    "clean": false,
+    "line": "itat for migratory birds and to protect wetlands, with an emphasis on waterfowl and bottomland hardwoods. The 9,691-acre refuge was purchased from The Nature Conservancy, donated by the Mississippi Department of Transportation, an",
+    "read": "2026-11-15",
+    "sent": "The 9,691-acre refuge was purchased from The Nature Conservancy, donated by the Mississippi Department of Transportation, and leased from the West Bolivar School Board.",
+    "url": "https://www.fws.gov/refuge/Dahomey/",
+    "why": "part (a lake, a purchase, a campground…)"
+   },
    "ours": {
-    "acres": 19074,
+    "acres": 9537,
+    "dissolved": {
+     "after": 9537,
+     "before": 19074,
+     "copies": 1,
+     "parts": 0,
+     "records": 2,
+     "tracts": 1
+    },
     "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 19074 -> 9537 acres",
     "pieces": [
      [
       3763,
       "Dahomey National Wildlife Refuge",
       9537,
       "name"
-     ],
-     [
-      4702,
-      "Dahomey National Wildlife Refuge",
-      9537,
-      "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -107,17 +123,19 @@
      "why": "the park's page (data/parkinfo)"
     },
     {
+     "other_unit": true,
      "status": "ok",
      "url": "https://www.fws.gov/policies",
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": null,
+   "pct": 2,
+   "same_agency": false,
    "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 2,
-    "size": 1,
+    "pin": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -132,25 +150,32 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 7,
-   "verdict": "unsure"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-0384": {
-   "checked": "2026-10-28",
+   "cause": "whole park compared (POTA lists it in 2 states: {'US-AL': 2727, 'US-MS': 10394})",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Grand Bay National Wildlife Refuge",
-   "official": {
-    "acres": 18000.0,
-    "as": "18,000 acres",
-    "clean": false,
-    "line": "re refuge partially overlays the Grand Bay National Estuarine Research Reserve. Together, they protect nearly 18,000 acres of relatively undisturbed wildlife habitat. In addition to the wet pine savanna, other refuge habitats includ",
-    "read": "2026-10-28",
-    "url": "https://www.fws.gov/refuge/grand_bay/",
-    "why": "total-looking"
-   },
+   "note": "whole park compared (POTA lists it in 2 states: {'US-AL': 2727, 'US-MS': 10394})",
+   "official": null,
    "ours": {
-    "acres": 15334,
+    "acres": 13121,
+    "acres_by_state": {
+     "US-AL": 2727,
+     "US-MS": 10394
+    },
+    "dissolved": {
+     "after": 10394,
+     "before": 20788,
+     "copies": 2,
+     "parts": 0,
+     "records": 4,
+     "tracts": 2
+    },
     "manager": "",
+    "note": "4 joined records = 2 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 20788 -> 10394 acres",
     "pieces": [
      [
       3872,
@@ -159,15 +184,20 @@
       "name"
      ],
      [
-      4816,
+      3871,
       "Grand Bay National Wildlife Refuge",
-      7667,
-      "name"
+      2727,
+      "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 0
+    "states": [
+     "US-AL",
+     "US-MS"
+    ],
+    "unknown_pieces": 0,
+    "whole_park": true
    },
    "owner_now": null,
    "pages": [
@@ -178,7 +208,7 @@
     },
     {
      "other_unit": true,
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/grand-bay/visit-us/rules-policies",
      "why": "rules page (documents bot)"
     },
@@ -186,44 +216,47 @@
      "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/grand/about-us",
      "why": "FWS refuge about page"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/grand",
+     "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
     }
    ],
-   "pct": 15,
-   "same_agency": false,
+   "pct": null,
    "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
-    "size": 2,
+    "pin": 2,
+    "size": 1,
     "source": 2
    },
    "sizes": [
     {
      "acres": 10188.0,
      "as": "10,188 acre",
-     "clean": true,
-     "line": "nly 3% of wet pine savanna remaining across its originally range, it is considered an endangered habitat. The 10,188 acre refuge partially overlays the Grand Bay National Estuarine Research Reserve. Together, they protect nearly 18",
-     "total_like": true,
+     "clean": false,
+     "line": "panses of Gulf Coast wet pine savanna, an endangered habitat. Located in coastal Mississippi and Alabama, the 10,188-acre refuge works alongside the Grand Bay National Estuarine Research Reserve to protect nearly 18,000 acres of un",
+     "total_like": false,
      "url": "https://www.fws.gov/refuge/grand_bay/",
-     "why": "clean total"
+     "why": "part (a lake, a purchase, a campground…)"
     },
     {
      "acres": 18000.0,
      "as": "18,000 acres",
      "clean": false,
-     "line": "re refuge partially overlays the Grand Bay National Estuarine Research Reserve. Together, they protect nearly 18,000 acres of relatively undisturbed wildlife habitat. In addition to the wet pine savanna, other refuge habitats includ",
-     "total_like": true,
+     "line": "a, the 10,188-acre refuge works alongside the Grand Bay National Estuarine Research Reserve to protect nearly 18,000 acres of undisturbed habitat. The landscape features a transition from wet pine savannas to maritime forests, tidal",
+     "total_like": false,
      "url": "https://www.fws.gov/refuge/grand_bay/",
-     "why": "total-looking"
+     "why": "part (a lake, a purchase, a campground…)"
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 7,
-   "verdict": "agree"
+   "ver": 15,
+   "verdict": "unsure"
   },
   "US-0385": {
-   "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [
     {
      "date_hint": null,
@@ -235,21 +268,33 @@
     }
    ],
    "n": "Hillside National Wildlife Refuge",
-   "official": null,
+   "official": {
+    "acres": 15000.0,
+    "as": "15,000 acres",
+    "clean": false,
+    "line": "iting Location and Contact Information About Us Currently, Hillside National Wildlife Refuge encompasses over 15,000 acres of diverse habitat that is home for many different species of wildlife. Learn More About Us What We Do Manage",
+    "read": "2026-11-15",
+    "sent": "Currently, Hillside National Wildlife Refuge encompasses over 15,000 acres of diverse habitat that is home for many different species of wildlife.",
+    "url": "https://www.fws.gov/refuge/hillside/",
+    "why": "part (a lake, a purchase, a campground…)"
+   },
    "ours": {
-    "acres": 30969,
+    "acres": 15485,
+    "dissolved": {
+     "after": 15485,
+     "before": 30969,
+     "copies": 1,
+     "parts": 0,
+     "records": 2,
+     "tracts": 1
+    },
     "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 30969 -> 15485 acres",
     "pieces": [
      [
       4884,
       "Hillside National Wildlife Refuge",
       15485,
-      "name"
-     ],
-     [
-      3938,
-      "Hillside National Wildlife Refuge",
-      15484,
       "name"
      ]
     ],
@@ -275,6 +320,7 @@
      "why": "about / history page of the park's site"
     },
     {
+     "other_unit": true,
      "status": "ok",
      "url": "https://www.fws.gov/refuge/hillside/visit-us/rules-policies",
      "why": "rules page (documents bot)"
@@ -283,14 +329,20 @@
      "status": "ok",
      "url": "https://www.fws.gov/refuge/hillside/about-us",
      "why": "FWS refuge about page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/hillside",
+     "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 3,
+   "same_agency": false,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -302,29 +354,41 @@
      "total_like": false,
      "url": "https://www.fws.gov/refuge/hillside/",
      "why": "part (a lake, a purchase, a campground…)"
+    },
+    {
+     "acres": 15000.0,
+     "as": "15,000 acres",
+     "clean": false,
+     "line": "iting Location and Contact Information About Us Currently, Hillside National Wildlife Refuge encompasses over 15,000 acres of diverse habitat that is home for many different species of wildlife. Learn More About Us What We Do Manage",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/hillside",
+     "why": "part (a lake, a purchase, a campground…)"
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 7,
-   "verdict": "unsure"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-0386": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Holt Collier National Wildlife Refuge",
    "official": null,
    "ours": {
-    "acres": 5992,
+    "acres": 2996,
+    "dissolved": {
+     "after": 2996,
+     "before": 5992,
+     "copies": 2,
+     "parts": 0,
+     "records": 4,
+     "tracts": 2
+    },
     "manager": "",
+    "note": "4 joined records = 2 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 5992 -> 2996 acres",
     "pieces": [
      [
       3943,
-      "Holt Collier National Wildlife Refuge",
-      1543,
-      "name"
-     ],
-     [
-      4888,
       "Holt Collier National Wildlife Refuge",
       1543,
       "name"
@@ -334,15 +398,9 @@
       "Holt Collier National Wildlife Refuge",
       1453,
       "name"
-     ],
-     [
-      4887,
-      "Holt Collier National Wildlife Refuge",
-      1453,
-      "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -373,24 +431,28 @@
      "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/holt/about-us",
      "why": "FWS refuge about page"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/holt",
+     "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
    "sizes": [],
    "t": "National Wildlife Refuge",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-0387": {
-   "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Mathews Brake National Wildlife Refuge",
    "official": {
@@ -398,24 +460,28 @@
     "as": "2,418 acres",
     "clean": true,
     "line": "uge is one of nine refuges in the Theodore Roosevelt National Wildlife Refuge Complex. The refuge encompasses 2,418 acres in west-central Mississippi. The refuge’s primary habitat feature is Mathews Brake, the largest brake in Lefl",
-    "read": "2026-10-28",
+    "read": "2026-11-15",
+    "sent": "The refuge encompasses 2,418 acres in west-central Mississippi.",
     "url": "https://www.fws.gov/refuge/mathews-brake/about-us",
     "why": "clean total"
    },
    "ours": {
-    "acres": 4722,
+    "acres": 2363,
+    "dissolved": {
+     "after": 2363,
+     "before": 4722,
+     "copies": 1,
+     "parts": 0,
+     "records": 2,
+     "tracts": 1
+    },
     "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 4722 -> 2363 acres",
     "pieces": [
      [
       5041,
       "Mathews Brake National Wildlife Refuge",
       2363,
-      "name"
-     ],
-     [
-      4087,
-      "Mathews Brake National Wildlife Refuge",
-      2359,
       "name"
      ]
     ],
@@ -445,15 +511,20 @@
      "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/mathews/about-us",
      "why": "FWS refuge about page"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/mathews",
+     "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
     }
    ],
-   "pct": 95,
+   "pct": 2,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -477,54 +548,39 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 7,
-   "verdict": "off"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-0388": {
-   "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-10-28",
-   "handover": [
-    {
-     "date_hint": null,
-     "kind": "managed by",
-     "line": "ational wildlife refuge A national wildlife refuge is typically a contiguous area of land and water managed by the U.S. Fish and Wildlife Service for the conservation and, where appropriate, restoration of fish, wildlife and plant resources and their habitats for th",
-     "owner_now": "U.S",
-     "src": "https://www.fws.gov/refuge/mississippi-sandhill-crane/about-us",
-     "why": "about / history page of the park's site"
-    }
-   ],
+   "checked": "2026-11-15",
+   "handover": [],
    "n": "Mississippi Sandhill Crane National Wildlife Refuge",
-   "official": {
-    "acres": 20000.0,
-    "as": "20,000 acres",
-    "clean": false,
-    "line": "s the description of 'the rarest bird in North America'. Although the refuge and I-10 were both created, only 20,000 acres of the original crane habitat exist along the gulf coast. The good news is that the refuge was created and th",
-    "read": "2026-10-28",
-    "url": "https://www.fws.gov/refuge/mississippi-sandhill-crane/about-us",
-    "why": "total-looking"
-   },
+   "official": null,
    "ours": {
-    "acres": 36869,
+    "acres": 18435,
+    "dissolved": {
+     "after": 18435,
+     "before": 36869,
+     "copies": 1,
+     "parts": 0,
+     "records": 2,
+     "tracts": 1
+    },
     "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 36869 -> 18435 acres",
     "pieces": [
      [
       5081,
       "Mississippi Sandhill Crane National Wildlife Refuge",
       18435,
       "name"
-     ],
-     [
-      4125,
-      "Mississippi Sandhill Crane National Wildlife Refuge",
-      18434,
-      "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
-   "owner_now": "U.S",
+   "owner_now": null,
    "pages": [
     {
      "status": "ok",
@@ -532,70 +588,64 @@
      "why": "the park's page (data/parkinfo)"
     },
     {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/mississippi-sandhill-crane/about-us",
-     "why": "about / history page of the park's site"
-    }
-   ],
-   "pct": 84,
-   "same_agency": false,
-   "score": 5,
-   "score_parts": {
-    "name": 2,
-    "pin": 1,
-    "size": 0,
-    "source": 2
-   },
-   "sizes": [
-    {
-     "acres": 1749.0,
-     "as": "1,749 acres",
-     "clean": false,
-     "line": ". The Mississippi Sandhill Crane Refuge was eventually established on November 25, 1975, with the purchase of 1,749 acres of land from The Nature Conservancy. The refuge was established under the authority of the Endangered Species",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/mississippi-sandhill-crane/about-us",
-     "why": "part (a lake, a purchase, a campground…)"
+     "other_unit": true,
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/mississippi-sandhill-crane/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
     },
     {
-     "acres": 20000.0,
-     "as": "20,000 acres",
-     "clean": false,
-     "line": "s the description of 'the rarest bird in North America'. Although the refuge and I-10 were both created, only 20,000 acres of the original crane habitat exist along the gulf coast. The good news is that the refuge was created and th",
-     "total_like": true,
-     "url": "https://www.fws.gov/refuge/mississippi-sandhill-crane/about-us",
-     "why": "total-looking"
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/mississippi/about-us",
+     "why": "FWS refuge about page"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/mississippi",
+     "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
     }
    ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
    "t": "National Wildlife Refuge",
-   "ver": 7,
-   "verdict": "off"
+   "ver": 15,
+   "verdict": "no size on page"
   },
   "US-0389": {
-   "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Morgan Brake National Wildlife Refuge",
    "official": {
     "acres": 7400.0,
     "as": "7,400 acres",
-    "clean": true,
+    "clean": false,
     "line": "ws Library Species Map About Us Morgan Brake National Wildlife Refuge, established in 1977, encompasses about 7,400 acres in Holmes County along the ecological border between the Mississippi alluvial plain and loessal hills in the",
-    "read": "2026-10-28",
+    "read": "2026-11-15",
+    "sent": "Morgan Brake National Wildlife Refuge, established in 1977, encompasses about 7,400 acres in Holmes County along the ecological border between the Mississippi alluvial plain and loessal hills in the biologically and culturally unique Delta region of Mississippi.",
     "url": "https://www.fws.gov/refuge/morgan-brake/about-us",
-    "why": "clean total"
+    "why": "history"
    },
    "ours": {
-    "acres": 15138,
+    "acres": 7569,
+    "dissolved": {
+     "after": 7569,
+     "before": 15138,
+     "copies": 1,
+     "parts": 0,
+     "records": 2,
+     "tracts": 1
+    },
     "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 15138 -> 7569 acres",
     "pieces": [
      [
       4134,
-      "Morgan Brake National Wildlife Refuge",
-      7569,
-      "name"
-     ],
-     [
-      5090,
       "Morgan Brake National Wildlife Refuge",
       7569,
       "name"
@@ -618,6 +668,11 @@
      "why": "about / history page of the park's site"
     },
     {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/morgan-brake/visit-us",
+     "why": "about / history page of the park's site"
+    },
+    {
      "other_unit": true,
      "status": "ok",
      "url": "https://www.fws.gov/refuge/morgan-brake/visit-us/rules-policies",
@@ -627,35 +682,40 @@
      "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/morgan/about-us",
      "why": "FWS refuge about page"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/morgan",
+     "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
     }
    ],
-   "pct": 105,
+   "pct": 2,
    "same_agency": false,
-   "score": 5,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
     {
      "acres": 7400.0,
      "as": "7,400 acres",
-     "clean": true,
+     "clean": false,
      "line": "ws Library Species Map About Us Morgan Brake National Wildlife Refuge, established in 1977, encompasses about 7,400 acres in Holmes County along the ecological border between the Mississippi alluvial plain and loessal hills in the",
-     "total_like": true,
+     "total_like": false,
      "url": "https://www.fws.gov/refuge/morgan-brake/about-us",
-     "why": "clean total"
+     "why": "history"
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 7,
-   "verdict": "off"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-0390": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 800 acres, no total words near it)",
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [
     {
      "date_hint": "2012",
@@ -680,22 +740,26 @@
     "as": "800 acres",
     "clean": false,
     "line": "t from the variety of habitats the refuge provides. Four green-tree reservoirs, two major lakes (Bluff Lake – 800 acres and Loakfoma Lake – 400 acres), 16 small impoundments, and assorted wetland areas provide important habitat f",
-    "read": "2026-10-28",
+    "read": "2026-11-15",
+    "sent": "Four green-tree reservoirs, two major lakes (Bluff Lake – 800 acres and Loakfoma Lake – 400 acres), 16 small impoundments, and assorted wetland areas provide important habitat for the wood stork, American alligator, bald eagle, and wintering waterfowl.",
     "url": "https://www.fws.gov/refuge/sam-d-hamilton-noxubee/about-us",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 96660,
+    "acres": 48330,
+    "dissolved": {
+     "after": 48330,
+     "before": 96660,
+     "copies": 1,
+     "parts": 0,
+     "records": 2,
+     "tracts": 1
+    },
     "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 96660 -> 48330 acres",
     "pieces": [
      [
       4292,
-      "Sam D. Hamilton Noxubee National Wildlife Refuge",
-      48330,
-      "words"
-     ],
-     [
-      5249,
       "Sam D. Hamilton Noxubee National Wildlife Refuge",
       48330,
       "words"
@@ -723,6 +787,7 @@
      "why": "about / history page of the park's site"
     },
     {
+     "other_unit": true,
      "status": "ok",
      "url": "https://www.fws.gov/policies",
      "why": "rules page (documents bot)"
@@ -731,9 +796,14 @@
      "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/noxubee/about-us",
      "why": "FWS refuge about page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/noxubee",
+     "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
     }
    ],
-   "pct": 11982,
+   "pct": 5941,
    "same_agency": false,
    "score": 5,
    "score_parts": {
@@ -763,12 +833,12 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 7,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-0391": {
-   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-10-28",
+   "cause": "agency bigger: our outline may miss a tract",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Panther Swamp National Wildlife Refuge",
    "official": {
@@ -776,22 +846,26 @@
     "as": "40,000 acres",
     "clean": false,
     "line": "and Cotton's access for some amazing sites to find a variety of game species, but don't stop there! With over 40,000 acres of land, there are plenty of areas for you to find your next big buck, turkey, squirrel, and many other game",
-    "read": "2026-10-28",
+    "read": "2026-11-15",
+    "sent": "With over 40,000 acres of land, there are plenty of areas for you to find your next big buck, turkey, squirrel, and many other game species, but be sure to check our Current Public Use Regulations first.",
     "url": "https://www.fws.gov/refuge/panther_swamp/",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 66312,
+    "acres": 33156,
+    "dissolved": {
+     "after": 33156,
+     "before": 66312,
+     "copies": 1,
+     "parts": 0,
+     "records": 2,
+     "tracts": 1
+    },
     "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 66312 -> 33156 acres",
     "pieces": [
      [
       4205,
-      "Panther Swamp National Wildlife Refuge",
-      33156,
-      "name"
-     ],
-     [
-      5160,
       "Panther Swamp National Wildlife Refuge",
       33156,
       "name"
@@ -818,9 +892,14 @@
      "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/panther/about-us",
      "why": "FWS refuge about page"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/panther",
+     "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
     }
    ],
-   "pct": 66,
+   "pct": 17,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -850,17 +929,17 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 7,
+   "ver": 15,
    "verdict": "off"
   },
   "US-0392": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "St. Catherine Creek National Wildlife Refuge",
    "official": null,
    "ours": {
-    "acres": 49195,
+    "acres": 24933,
     "manager": "",
     "pieces": [
      [
@@ -907,6 +986,11 @@
      "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/st/about-us",
      "why": "FWS refuge about page"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/st",
+     "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
     }
    ],
    "pct": null,
@@ -929,41 +1013,44 @@
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 7,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-0393": {
-   "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Tallahatchie National Wildlife Refuge",
    "official": {
     "acres": 4199.0,
     "as": "4,199 acres",
-    "clean": true,
+    "clean": false,
     "line": "w Enforcement More on What We Do About Established in 1991, Tallahatchie National Wildlife Refuge consists of 4,199 acres in northern Mississippi. The land was historically cleared for agriculture, but since being acquired by the U",
-    "read": "2026-10-28",
+    "read": "2026-11-15",
+    "sent": "Established in 1991, Tallahatchie National Wildlife Refuge consists of 4,199 acres in northern Mississippi.",
     "url": "https://www.fws.gov/refuge/tallahatchie/",
-    "why": "clean total"
+    "why": "history"
    },
    "ours": {
-    "acres": 8372,
+    "acres": 4186,
+    "dissolved": {
+     "after": 4186,
+     "before": 8372,
+     "copies": 1,
+     "parts": 0,
+     "records": 2,
+     "tracts": 1
+    },
     "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 8372 -> 4186 acres",
     "pieces": [
      [
       4384,
       "Tallahatchie National Wildlife Refuge",
       4186,
       "name"
-     ],
-     [
-      5341,
-      "Tallahatchie National Wildlife Refuge",
-      4186,
-      "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -975,6 +1062,7 @@
      "why": "the park's page (data/parkinfo)"
     },
     {
+     "other_unit": true,
      "status": "robots",
      "url": "https://doifwsnextprod.prod.acquia-sites.com/sites/default/files/2026-10/north-ms-hunt-regs-2026_web.pdf",
      "why": "rules page (documents bot)"
@@ -983,26 +1071,31 @@
      "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/tallahatchie/about-us",
      "why": "FWS refuge about page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/tallahatchie",
+     "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
     }
    ],
-   "pct": 99,
+   "pct": 0,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 2,
-    "size": 0,
+    "pin": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
     {
      "acres": 4199.0,
      "as": "4,199 acres",
-     "clean": true,
+     "clean": false,
      "line": "w Enforcement More on What We Do About Established in 1991, Tallahatchie National Wildlife Refuge consists of 4,199 acres in northern Mississippi. The land was historically cleared for agriculture, but since being acquired by the U",
-     "total_like": true,
+     "total_like": false,
      "url": "https://www.fws.gov/refuge/tallahatchie/",
-     "why": "clean total"
+     "why": "history"
     },
     {
      "acres": 1300.0,
@@ -1012,30 +1105,59 @@
      "total_like": false,
      "url": "https://www.fws.gov/refuge/tallahatchie/",
      "why": "no total words near it"
+    },
+    {
+     "acres": 4199.0,
+     "as": "4,199 acres",
+     "clean": false,
+     "line": "w Enforcement More on What We Do About Established in 1991, Tallahatchie National Wildlife Refuge consists of 4,199 acres in northern Mississippi. The land was historically cleared for agriculture, but since being acquired by the U",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/tallahatchie",
+     "why": "history"
+    },
+    {
+     "acres": 1300.0,
+     "as": "1,300 acres",
+     "clean": false,
+     "line": "and was historically cleared for agriculture, but since being acquired by the U.S. Fish and Wildlife Service, 1,300 acres have been reforested with native hardwood species. Today, the refuge is a patchwork of old fields and bottoml",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/tallahatchie",
+     "why": "no total words near it"
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 7,
-   "verdict": "off"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-0395": {
-   "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Yazoo National Wildlife Refuge",
-   "official": null,
+   "official": {
+    "acres": 12941.0,
+    "as": "12,941 acres",
+    "clean": false,
+    "line": "introduced in 1970. In 1992, the Service purchased the 470-acre Cox property bringing total refuge acreage to 12,941 acres. Other Facilities in this Complex Yazoo National Wildlife Refuge is one of nine refuges that make up the Theo",
+    "read": "2026-11-15",
+    "sent": "In 1992, the Service purchased the 470-acre Cox property bringing total refuge acreage to 12,941 acres.",
+    "url": "https://www.fws.gov/refuge/yazoo/about-us",
+    "why": "part (a lake, a purchase, a campground…)"
+   },
    "ours": {
-    "acres": 26086,
+    "acres": 13043,
+    "dissolved": {
+     "after": 13043,
+     "before": 26086,
+     "copies": 1,
+     "parts": 0,
+     "records": 2,
+     "tracts": 1
+    },
     "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 26086 -> 13043 acres",
     "pieces": [
      [
       4492,
-      "Yazoo National Wildlife Refuge",
-      13043,
-      "name"
-     ],
-     [
-      5453,
       "Yazoo National Wildlife Refuge",
       13043,
       "name"
@@ -1063,6 +1185,7 @@
      "why": "about / history page of the park's site"
     },
     {
+     "other_unit": true,
      "status": "ok",
      "url": "https://www.fws.gov/refuge/yazoo/visit-us/rules-policies",
      "why": "rules page (documents bot)"
@@ -1071,14 +1194,20 @@
      "status": "ok",
      "url": "https://www.fws.gov/refuge/yazoo/about-us",
      "why": "FWS refuge about page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/yazoo",
+     "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 1,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -1098,7 +1227,7 @@
      "line": "gratory Bird Hunting Stamp Act in 1936 with the initial purchase of 2,166 acres. In March 1937, an additional 639 acres were purchased with plans to acquire a total of 20,000 acres. The refuge remained unstaffed from 1936 until 1",
      "total_like": false,
      "url": "https://www.fws.gov/refuge/yazoo/about-us",
-     "why": "part (a lake, a purchase, a campground…)"
+     "why": "history"
     },
     {
      "acres": 20000.0,
@@ -1107,7 +1236,7 @@
      "line": "rchase of 2,166 acres. In March 1937, an additional 639 acres were purchased with plans to acquire a total of 20,000 acres. The refuge remained unstaffed from 1936 until 1956. In 1959, the refuge office was built. The Service was gi",
      "total_like": false,
      "url": "https://www.fws.gov/refuge/yazoo/about-us",
-     "why": "part (a lake, a purchase, a campground…)"
+     "why": "history"
     },
     {
      "acres": 12471.0,
@@ -1152,21 +1281,28 @@
      "line": "gratory Bird Hunting Stamp Act in 1936 with the initial purchase of 2,166 acres. In March 1937, an additional 639 acres were purchased with plans to acquire a total of 20,000 acres. The refuge remained unstaffed from 1936 until 1",
      "total_like": false,
      "url": "https://www.fws.gov/refuge/yazoo/about-us",
-     "why": "part (a lake, a purchase, a campground…)"
+     "why": "history"
     }
    ],
    "t": "National Wildlife Refuge",
-   "ver": 7,
-   "verdict": "unsure"
+   "ver": 15,
+   "verdict": "agree"
   },
   "US-0642": {
-   "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-10-28",
+   "cause": "whole park compared (POTA lists it in 2 states: {'US-AL': 4118, 'US-MS': 31527})",
+   "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Natchez Trace Parkway National Parkway",
+   "note": "whole park compared (POTA lists it in 3 states: {'US-TN': 31527, 'US-AL': 35645, 'US-MS': 31527})",
    "official": null,
    "ours": {
-    "acres": 31527,
+    "acres": 98699,
+    "acres_by_state": {
+     "US-AL": 35645,
+     "US-MS": 31527,
+     "US-TN": 31527
+    },
     "manager": "",
     "pieces": [
      [
@@ -1178,7 +1314,13 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 0
+    "states": [
+     "US-TN",
+     "US-AL",
+     "US-MS"
+    ],
+    "unknown_pieces": 0,
+    "whole_park": true
    },
    "owner_now": null,
    "pages": [
@@ -1198,6 +1340,7 @@
      "why": "about / history page of the park's site"
     },
     {
+     "other_unit": true,
      "status": "ok",
      "url": "https://www.nps.gov/natr/learn/management/lawsandpolicies.htm",
      "why": "rules page (documents bot)"
@@ -1233,22 +1376,23 @@
     }
    ],
    "t": "National Parkway",
-   "ver": 7,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-0661": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Gulf Islands National Seashore",
    "ours": null,
    "score": null,
    "t": "National Seashore",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-0709": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Tupelo National Battlefield",
    "official": null,
    "ours": {
@@ -1279,6 +1423,7 @@
      "why": "about / history page of the park's site"
     },
     {
+     "other_unit": true,
      "status": "HTTP 404",
      "url": "https://www.nps.gov/tupe/learn/management/lawsandpolicies.htm",
      "why": "rules page (documents bot)"
@@ -1304,12 +1449,13 @@
    },
    "sizes": [],
    "t": "National Battlefield",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-0715": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Brices Cross Roads National Battlefield",
    "official": null,
    "ours": {
@@ -1340,6 +1486,7 @@
      "why": "about / history page of the park's site"
     },
     {
+     "other_unit": true,
      "status": "HTTP 404",
      "url": "https://www.nps.gov/brcr/learn/management/lawsandpolicies.htm",
      "why": "rules page (documents bot)"
@@ -1365,16 +1512,22 @@
    },
    "sizes": [],
    "t": "National Battlefield",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-0722": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Shiloh National Battlefield",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-TN': 4699, 'US-MS': 808})",
    "official": null,
    "ours": {
-    "acres": 808,
+    "acres": 5507,
+    "acres_by_state": {
+     "US-MS": 808,
+     "US-TN": 4699
+    },
     "manager": "",
     "pieces": [
      [
@@ -1384,9 +1537,14 @@
       "name"
      ]
     ],
-    "pin": "well outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 0
+    "states": [
+     "US-TN",
+     "US-MS"
+    ],
+    "unknown_pieces": 0,
+    "whole_park": true
    },
    "owner_now": null,
    "pages": [
@@ -1406,6 +1564,7 @@
      "why": "about / history page of the park's site"
     },
     {
+     "other_unit": true,
      "status": "ok",
      "url": "https://www.nps.gov/shil/learn/management/lawsandpolicies.htm",
      "why": "rules page (documents bot)"
@@ -1422,25 +1581,31 @@
     }
    ],
    "pct": null,
-   "score": 3,
+   "score": 5,
    "score_parts": {
     "name": 1,
-    "pin": 0,
+    "pin": 2,
     "size": 1,
     "source": 1
    },
    "sizes": [],
    "t": "National Battlefield",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-0723": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Vicksburg National Military Park",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-LA': 3, 'US-MS': 2444})",
    "official": null,
    "ours": {
-    "acres": 2441,
+    "acres": 2447,
+    "acres_by_state": {
+     "US-LA": 3,
+     "US-MS": 2444
+    },
     "manager": "",
     "pieces": [
      [
@@ -1448,11 +1613,22 @@
       "Vicksburg National Military Park",
       2441,
       "name"
+     ],
+     [
+      3292,
+      "Vicksburg National Military Park",
+      3,
+      "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 0
+    "states": [
+     "US-LA",
+     "US-MS"
+    ],
+    "unknown_pieces": 0,
+    "whole_park": true
    },
    "owner_now": null,
    "pages": [
@@ -1467,6 +1643,7 @@
      "why": "about / history page of the park's site"
     },
     {
+     "other_unit": true,
      "status": "ok",
      "url": "https://www.nps.gov/vick/learn/management/lawsandpolicies.htm",
      "why": "rules page (documents bot)"
@@ -1492,12 +1669,13 @@
    },
    "sizes": [],
    "t": "National Military Park",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-0747": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Natchez National Historical Park",
    "official": null,
    "ours": {
@@ -1528,6 +1706,7 @@
      "why": "about / history page of the park's site"
     },
     {
+     "other_unit": true,
      "status": "ok",
      "url": "https://www.nps.gov/natc/learn/management/lawsandpolicies.htm",
      "why": "rules page (documents bot)"
@@ -1553,12 +1732,13 @@
    },
    "sizes": [],
    "t": "National Historical Park",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-10297": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Old Trace Park Recreation Park",
    "official": null,
    "ours": {
@@ -1572,7 +1752,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -1594,11 +1774,11 @@
    },
    "sizes": [],
    "t": "Recreation Park",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-11880": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [
     {
      "date_hint": "1960",
@@ -1613,7 +1793,16 @@
    "official": null,
    "ours": {
     "acres": 41,
+    "dissolved": {
+     "after": 41,
+     "before": 82,
+     "copies": 1,
+     "parts": 0,
+     "records": 2,
+     "tracts": 1
+    },
     "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 82 -> 41 acres",
     "pieces": [
      [
       211147,
@@ -1635,171 +1824,181 @@
     }
    ],
    "pct": null,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 1,
     "size": 1,
-    "source": 1
+    "source": 2
    },
    "sizes": [],
    "t": "State Historical Park",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-11881": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Dancing Rabbit Creek Treaty State Historic Site",
    "ours": null,
    "score": null,
    "t": "State Historic Site",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-11882": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Grand Village of the Natchez State Historic Site",
    "ours": null,
    "score": null,
    "t": "State Historic Site",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-11883": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Emerald Mound National Historical Site",
    "ours": null,
    "score": null,
    "t": "National Historical Site",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-12193": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Lake Claude Bennett State Fishing Lake",
    "ours": null,
    "score": null,
    "t": "State Fishing Lake",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-12194": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Lake Lamar Bruce State Fishing Lake",
    "ours": null,
    "score": null,
    "t": "State Fishing Lake",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-12195": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Elvis Presley State Fishing Lake",
    "ours": null,
    "score": null,
    "t": "State Fishing Lake",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-12196": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Tippah County State Fishing Lake",
    "ours": null,
    "score": null,
    "t": "State Fishing Lake",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-12197": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Lake Monroe State Fishing Lake",
    "ours": null,
    "score": null,
    "t": "State Fishing Lake",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-12198": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Neshoba County State Fishing Lake",
    "ours": null,
    "score": null,
    "t": "State Fishing Lake",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-12199": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Lake Tom Bailey State Fishing Lake",
    "ours": null,
    "score": null,
    "t": "State Fishing Lake",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-12200": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Simpson County State Fishing Lake",
    "ours": null,
    "score": null,
    "t": "State Fishing Lake",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-12201": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Prentiss Walker State Fishing Lake",
    "ours": null,
    "score": null,
    "t": "State Fishing Lake",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-12202": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Lake Bogue Homa State Fishing Lake",
    "ours": null,
    "score": null,
    "t": "State Fishing Lake",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-12203": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Lake Mary Crawford State Fishing Lake",
    "ours": null,
    "score": null,
    "t": "State Fishing Lake",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-12204": {
-   "checked": "2026-10-28",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Calling Panther State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 1482,
+    "acres": 1500,
+    "dissolved": {
+     "after": 1500,
+     "before": 2982,
+     "copies": 1,
+     "parts": 0,
+     "records": 2,
+     "tracts": 1
+    },
     "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 2982 -> 1500 acres",
     "pieces": [
      [
-      78868,
-      "Calling Panther Lake",
-      1482,
+      "mszw531",
+      "CALLING PANTHER",
+      1500,
       "name"
      ]
     ],
@@ -1810,77 +2009,87 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://www.mdwfp.com/fishing-boating/lakes/calling-panther-lake",
      "why": "the park's page (data/parkinfo)"
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
     "size": 1,
-    "source": 1
+    "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 404.0,
+     "as": "404 acre",
+     "clean": false,
+     "line": "ent Menu CLOSE License, Reservation & more CLOSE Search Search Calling Panther Lake Calling Panther Lake is a 404-acre lake located in Copiah County, 5 mi. W of Crystal Springs off New Zion Rd. This lake offers a unique fishing",
+     "total_like": false,
+     "url": "https://www.mdwfp.com/fishing-boating/lakes/calling-panther-lake",
+     "why": "part (a lake, a purchase, a campground…)"
+    }
+   ],
    "t": "State Fishing Lake",
-   "ver": 7,
-   "verdict": "no size on page"
+   "ver": 15,
+   "verdict": "unsure"
   },
   "US-12205": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Lake Mike Conner State Fishing Lake",
    "ours": null,
    "score": null,
    "t": "State Fishing Lake",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-12206": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Lake Jeff Davis State Fishing Lake",
    "ours": null,
    "score": null,
    "t": "State Fishing Lake",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-12207": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Lake Walthall State Fishing Lake",
    "ours": null,
    "score": null,
    "t": "State Fishing Lake",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-12208": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Lake Perry State Fishing Lake",
    "ours": null,
    "score": null,
    "t": "State Fishing Lake",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-12638": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Bobby Cleveland Park State Recreation Site",
    "ours": null,
    "score": null,
    "t": "State Recreation Site",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-12639": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 250 acres, no total words near it)",
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Pelahatchie Shore State Recreation Area",
    "official": {
@@ -1888,7 +2097,8 @@
     "as": "250 acres",
     "clean": false,
     "line": "aps of permit hunt area boundaries are available online and at PRVWSD offices. Each zone is approximately 245-250 acres. * Upon receipt by PRVWSD office, each application will be given a number in the order it is processed. The r",
-    "read": "2026-10-28",
+    "read": "2026-11-15",
+    "sent": "Each zone is approximately 245-250 acres.",
     "url": "https://www.therez.ms.gov/parks-recreation/hunting/draw-hunt-rules",
     "why": "no total words near it"
    },
@@ -1903,7 +2113,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -1915,6 +2125,7 @@
      "why": "the park's page (data/parkinfo)"
     },
     {
+     "other_unit": true,
      "status": "ok",
      "url": "https://www.therez.ms.gov/parks-recreation/hunting/draw-hunt-rules",
      "why": "rules page (documents bot)"
@@ -1922,10 +2133,10 @@
    ],
    "pct": 76,
    "same_agency": false,
-   "score": 4,
+   "score": 5,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 0
    },
@@ -1941,12 +2152,13 @@
     }
    ],
    "t": "State Recreation Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "unsure"
   },
   "US-2532": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Buccaneer State Park",
    "official": null,
    "ours": {
@@ -1982,12 +2194,13 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-2533": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Clarkco State Park",
    "official": null,
    "ours": {
@@ -2001,7 +2214,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -2023,23 +2236,31 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-2534": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Florewood State Park",
    "official": null,
    "ours": {
-    "acres": 99,
+    "acres": 109,
+    "family_fold": "layers {'padus': 99, 'mszp': 103}: one land in 2 layers, the mszp copy used (99 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
-      211150,
-      "Florewood River Plantation State Park",
-      99,
-      "words"
+      "mszp6",
+      "FLOREWOOD",
+      75,
+      "name"
+     ],
+     [
+      "mszp5",
+      "FLOREWOOD",
+      28,
+      "name"
      ]
     ],
     "pin": "just outside",
@@ -2064,12 +2285,13 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-2535": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "George P Cossar State Park",
    "official": null,
    "ours": {
@@ -2083,7 +2305,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -2105,12 +2327,13 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-2536": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Golden Memorial State Park",
    "official": null,
    "ours": {
@@ -2146,12 +2369,13 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-2537": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Great River Road State Park",
    "official": null,
    "ours": {
@@ -2187,12 +2411,13 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-2538": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Holmes County State Park",
    "official": null,
    "ours": {
@@ -2228,16 +2453,18 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-2539": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Hugh White State Park",
    "official": null,
    "ours": {
-    "acres": 952,
+    "acres": 1235,
+    "family_fold": "layers {'padus': 952, 'mszp': 488}: one land in 2 layers, the padus copy used (488 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
@@ -2247,9 +2474,9 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 0
+    "unknown_pieces": 1
    },
    "owner_now": null,
    "pages": [
@@ -2269,12 +2496,13 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-2540": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "John W. Kyle State Park",
    "official": null,
    "ours": {
@@ -2288,9 +2516,9 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 0
+    "unknown_pieces": 1
    },
    "owner_now": null,
    "pages": [
@@ -2310,17 +2538,36 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-2541": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "J P Coleman State Park",
    "official": null,
    "ours": {
-    "acres": 1174,
+    "acres": 1976,
+    "dissolved": {
+     "after": 1540,
+     "before": 2067,
+     "copies": 0,
+     "families": {
+      "mszp": 366,
+      "padus": 1174
+     },
+     "family_fold": 366,
+     "family_used": "padus",
+     "key_union": 1976,
+     "parts": 7,
+     "records": 10,
+     "summed": 1174,
+     "tracts": 3
+    },
+    "family_fold": "layers {'padus': 1174, 'mszp': 366}: one land in 2 layers, the padus copy used (366 ac of copies not added)",
     "manager": "",
+    "note": "10 joined records = 3 tracts: 0 copies of a tract (same acres, another layer) and 7 fee tracts under a designation record folded; summed 2067 -> 1540 acres",
     "pieces": [
      [
       1852,
@@ -2351,12 +2598,13 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-2542": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Lake Lincoln State Park",
    "official": null,
    "ours": {
@@ -2392,12 +2640,13 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-2543": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Lake Lowndes State Park",
    "official": null,
    "ours": {
@@ -2433,12 +2682,13 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-2544": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Lefleur's Bluff State Park",
    "official": null,
    "ours": {
@@ -2452,7 +2702,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -2474,53 +2724,23 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-2545": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Legion State Park",
-   "official": null,
-   "ours": {
-    "acres": 431,
-    "manager": "",
-    "pieces": [
-     [
-      211160,
-      "Legion Lake State Park",
-      431,
-      "same name (POTA writes the kind into the name) + pin inside"
-     ]
-    ],
-    "pin": "just outside",
-    "src": "USGS PAD-US",
-    "unknown_pieces": 0
-   },
-   "owner_now": null,
-   "pages": [
-    {
-     "status": "rest",
-     "url": "https://www.mdwfp.com/parks-destinations/state-parks/legion",
-     "why": "the park's page (data/parkinfo)"
-    }
-   ],
-   "pct": null,
-   "score": 4,
-   "score_parts": {
-    "name": 1,
-    "pin": 1,
-    "size": 1,
-    "source": 1
-   },
-   "sizes": [],
+   "ours": null,
+   "score": null,
    "t": "State Park",
-   "ver": 7,
-   "verdict": "no size on page"
+   "ver": 15,
+   "verdict": "no outline"
   },
   "US-2546": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Leroy Percy State Park",
    "official": null,
    "ours": {
@@ -2556,32 +2776,38 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-2547": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Natchez State Park",
    "official": null,
    "ours": {
-    "acres": 6853,
+    "acres": 3650,
+    "dissolved": {
+     "after": 3428,
+     "before": 10249,
+     "copies": 2,
+     "key_union": 3650,
+     "parts": 0,
+     "records": 3,
+     "summed": 3428,
+     "tracts": 1
+    },
     "manager": "",
+    "note": "3 joined records = 1 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 10249 -> 3428 acres",
     "pieces": [
      [
       211162,
       "Natchez State Park",
       3428,
       "name"
-     ],
-     [
-      211238,
-      "Natchez State Park",
-      3425,
-      "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -2609,12 +2835,13 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-2548": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Paul B. Johnson State Park",
    "official": null,
    "ours": {
@@ -2650,22 +2877,38 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-2549": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Percy E Quin State Park",
-   "ours": null,
+   "ours": {
+    "acres": 1676,
+    "manager": "",
+    "pieces": [
+     [
+      "mszp33",
+      "PERCY QUIN State Park",
+      1676,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 0
+   },
    "score": null,
    "t": "State Park",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-2550": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Roosevelt State Park",
    "official": null,
    "ours": {
@@ -2701,12 +2944,13 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-2551": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Shepard State Park",
    "official": null,
    "ours": {
@@ -2742,12 +2986,13 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-2552": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Tishomingo State Park",
    "official": null,
    "ours": {
@@ -2761,7 +3006,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -2783,12 +3028,13 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-2553": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Tombigbee State Park",
    "official": null,
    "ours": {
@@ -2824,12 +3070,13 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-2554": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Trace State Park",
    "official": null,
    "ours": {
@@ -2865,12 +3112,13 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-2555": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Wall Doxey State Park",
    "official": null,
    "ours": {
@@ -2884,7 +3132,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -2906,11 +3154,12 @@
    },
    "sizes": [],
    "t": "State Park",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-4493": {
-   "checked": "2026-10-28",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Bienville National Forest",
    "official": null,
@@ -2932,12 +3181,13 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "host-rule",
      "url": "https://www.fs.usda.gov/detail/mississippi/about-forest/districts/?cid=stelprdb5209585",
      "why": "the park's page (data/parkinfo)"
     },
     {
-     "status": "rest",
+     "other_unit": true,
+     "status": "ok",
      "url": "https://www.fs.usda.gov/r08/mississippi",
      "why": "rules page (documents bot)"
     }
@@ -2950,13 +3200,24 @@
     "size": 1,
     "source": 1
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 1200000.0,
+     "as": "1.2 million acres",
+     "clean": false,
+     "line": "l Plain to the upland hardwoods in the northern part of the state, the National Forests in Mississippi covers 1.2 million acres of diverse natural resources and valued public lands spread across the state. Recreation The National Forests",
+     "total_like": false,
+     "url": "https://www.fs.usda.gov/r08/mississippi",
+     "why": "a page of another unit; the sentence does not name this park"
+    }
+   ],
    "t": "National Forest",
-   "ver": 7,
-   "verdict": "no size on page"
+   "ver": 15,
+   "verdict": "unsure"
   },
   "US-4494": {
-   "checked": "2026-10-28",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "De Soto National Forest",
    "official": null,
@@ -2978,12 +3239,13 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "host-rule",
      "url": "https://www.fs.usda.gov/detail/mississippi/about-forest/districts/?cid=stelprdb5209588",
      "why": "the park's page (data/parkinfo)"
     },
     {
-     "status": "rest",
+     "other_unit": true,
+     "status": "ok",
      "url": "https://www.fs.usda.gov/r08/mississippi",
      "why": "rules page (documents bot)"
     }
@@ -2996,13 +3258,24 @@
     "size": 1,
     "source": 1
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 1200000.0,
+     "as": "1.2 million acres",
+     "clean": false,
+     "line": "l Plain to the upland hardwoods in the northern part of the state, the National Forests in Mississippi covers 1.2 million acres of diverse natural resources and valued public lands spread across the state. Recreation The National Forests",
+     "total_like": false,
+     "url": "https://www.fs.usda.gov/r08/mississippi",
+     "why": "a page of another unit; the sentence does not name this park"
+    }
+   ],
    "t": "National Forest",
-   "ver": 7,
-   "verdict": "no size on page"
+   "ver": 15,
+   "verdict": "unsure"
   },
   "US-4495": {
-   "checked": "2026-10-28",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Delta National Forest",
    "official": null,
@@ -3024,12 +3297,13 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "host-rule",
      "url": "https://www.fs.usda.gov/detail/mississippi/about-forest/districts/?cid=stelprdb5209587",
      "why": "the park's page (data/parkinfo)"
     },
     {
-     "status": "rest",
+     "other_unit": true,
+     "status": "ok",
      "url": "https://www.fs.usda.gov/r08/mississippi",
      "why": "rules page (documents bot)"
     }
@@ -3042,13 +3316,24 @@
     "size": 1,
     "source": 1
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 1200000.0,
+     "as": "1.2 million acres",
+     "clean": false,
+     "line": "l Plain to the upland hardwoods in the northern part of the state, the National Forests in Mississippi covers 1.2 million acres of diverse natural resources and valued public lands spread across the state. Recreation The National Forests",
+     "total_like": false,
+     "url": "https://www.fs.usda.gov/r08/mississippi",
+     "why": "a page of another unit; the sentence does not name this park"
+    }
+   ],
    "t": "National Forest",
-   "ver": 7,
-   "verdict": "no size on page"
+   "ver": 15,
+   "verdict": "unsure"
   },
   "US-4496": {
-   "checked": "2026-10-28",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Holly Springs National Forest",
    "official": null,
@@ -3070,12 +3355,13 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "host-rule",
      "url": "https://www.fs.usda.gov/detail/mississippi/about-forest/districts/?cid=stelprdb5209589",
      "why": "the park's page (data/parkinfo)"
     },
     {
-     "status": "rest",
+     "other_unit": true,
+     "status": "ok",
      "url": "https://www.fs.usda.gov/r08/mississippi",
      "why": "rules page (documents bot)"
     }
@@ -3088,13 +3374,24 @@
     "size": 1,
     "source": 1
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 1200000.0,
+     "as": "1.2 million acres",
+     "clean": false,
+     "line": "l Plain to the upland hardwoods in the northern part of the state, the National Forests in Mississippi covers 1.2 million acres of diverse natural resources and valued public lands spread across the state. Recreation The National Forests",
+     "total_like": false,
+     "url": "https://www.fs.usda.gov/r08/mississippi",
+     "why": "a page of another unit; the sentence does not name this park"
+    }
+   ],
    "t": "National Forest",
-   "ver": 7,
-   "verdict": "no size on page"
+   "ver": 15,
+   "verdict": "unsure"
   },
   "US-4497": {
-   "checked": "2026-10-28",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Homochitto National Forest",
    "official": null,
@@ -3116,12 +3413,13 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "host-rule",
      "url": "https://www.fs.usda.gov/detail/mississippi/about-forest/districts/?cid=stelprdb5209590",
      "why": "the park's page (data/parkinfo)"
     },
     {
-     "status": "rest",
+     "other_unit": true,
+     "status": "ok",
      "url": "https://www.fs.usda.gov/r08/mississippi",
      "why": "rules page (documents bot)"
     }
@@ -3134,13 +3432,24 @@
     "size": 1,
     "source": 1
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 1200000.0,
+     "as": "1.2 million acres",
+     "clean": false,
+     "line": "l Plain to the upland hardwoods in the northern part of the state, the National Forests in Mississippi covers 1.2 million acres of diverse natural resources and valued public lands spread across the state. Recreation The National Forests",
+     "total_like": false,
+     "url": "https://www.fs.usda.gov/r08/mississippi",
+     "why": "a page of another unit; the sentence does not name this park"
+    }
+   ],
    "t": "National Forest",
-   "ver": 7,
-   "verdict": "no size on page"
+   "ver": 15,
+   "verdict": "unsure"
   },
   "US-4498": {
-   "checked": "2026-10-28",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Tombigbee National Forest",
    "official": null,
@@ -3162,12 +3471,13 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "host-rule",
      "url": "https://www.fs.usda.gov/recarea/mississippi/recarea/?recid=28859",
      "why": "the park's page (data/parkinfo)"
     },
     {
-     "status": "rest",
+     "other_unit": true,
+     "status": "ok",
      "url": "https://www.fs.usda.gov/r08/mississippi",
      "why": "rules page (documents bot)"
     }
@@ -3180,18 +3490,35 @@
     "size": 1,
     "source": 1
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 1200000.0,
+     "as": "1.2 million acres",
+     "clean": false,
+     "line": "l Plain to the upland hardwoods in the northern part of the state, the National Forests in Mississippi covers 1.2 million acres of diverse natural resources and valued public lands spread across the state. Recreation The National Forests",
+     "total_like": false,
+     "url": "https://www.fs.usda.gov/r08/mississippi",
+     "why": "a page of another unit; the sentence does not name this park"
+    }
+   ],
    "t": "National Forest",
-   "ver": 7,
-   "verdict": "no size on page"
+   "ver": 15,
+   "verdict": "unsure"
   },
   "US-4560": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Natchez Trace Trail National Scenic Trail",
+   "note": "whole park compared (POTA lists it in 3 states: {'US-TN': 31527, 'US-AL': 31527, 'US-MS': 31527})",
    "official": null,
    "ours": {
-    "acres": 31527,
+    "acres": 94581,
+    "acres_by_state": {
+     "US-AL": 31527,
+     "US-MS": 31527,
+     "US-TN": 31527
+    },
     "manager": "",
     "pieces": [
      [
@@ -3203,7 +3530,13 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 0
+    "states": [
+     "US-TN",
+     "US-AL",
+     "US-MS"
+    ],
+    "unknown_pieces": 0,
+    "whole_park": true
    },
    "owner_now": null,
    "pages": [
@@ -3223,6 +3556,7 @@
      "why": "about / history page of the park's site"
     },
     {
+     "other_unit": true,
      "status": "ok",
      "url": "https://www.nps.gov/natt/learn/management/lawsandpolicies.htm",
      "why": "rules page (documents bot)"
@@ -3248,12 +3582,13 @@
    },
    "sizes": [],
    "t": "National Scenic Trail",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-7070": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "O'Keefe Wildlife Management Area",
    "official": null,
    "ours": {
@@ -3295,16 +3630,18 @@
    },
    "sizes": [],
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-7071": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Charlie Capps Wildlife Management Area",
    "official": null,
    "ours": {
     "acres": 657,
+    "family_fold": "layers {'mszw': 460, 'padus': 657}: one land in 2 layers, the padus copy used (460 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
@@ -3326,7 +3663,7 @@
       "name (designation code ignored)"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -3348,32 +3685,71 @@
    },
    "sizes": [],
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-7072": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Riverfront Wildlife Management Area",
    "ours": null,
    "score": null,
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-7073": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "William C. Deviney Wildlife Management Area",
-   "ours": null,
+   "ours": {
+    "acres": 2848,
+    "dissolved": {
+     "after": 997,
+     "before": 2860,
+     "copies": 0,
+     "key_union": 2848,
+     "parts": 9,
+     "records": 12,
+     "summed": 997,
+     "tracts": 3
+    },
+    "manager": "",
+    "note": "12 joined records = 3 tracts: 0 copies of a tract (same acres, another layer) and 9 fee tracts under a designation record folded; summed 2860 -> 997 acres",
+    "pieces": [
+     [
+      "mszw544",
+      "WILLIAM (BILLY) C. DEVINEY  WMA",
+      929,
+      "name"
+     ],
+     [
+      "mszw545",
+      "WILLIAM (BILLY) C. DEVINEY  WMA",
+      49,
+      "name"
+     ],
+     [
+      "mszw546",
+      "WILLIAM (BILLY) C. DEVINEY  WMA",
+      19,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 0
+   },
    "score": null,
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-7074": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Stoneville Wildlife Management Area",
    "official": null,
    "ours": {
@@ -3409,26 +3785,48 @@
    },
    "sizes": [],
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-7075": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Muscadine Farms Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 762,
+    "acres": 2673,
+    "dissolved": {
+     "after": 2673,
+     "before": 3435,
+     "copies": 1,
+     "parts": 0,
+     "records": 4,
+     "tracts": 3
+    },
     "manager": "",
+    "note": "4 joined records = 3 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 3435 -> 2673 acres",
     "pieces": [
      [
-      211225,
-      "Muscadine Farms Wma",
-      762,
+      "mszw89",
+      "MUSCADINE FARMS WMA - STOCK AND WASHINGTON",
+      1203,
+      "words"
+     ],
+     [
+      "mszw90",
+      "MUSCADINE FARMS WMA -DRIFTWOOD",
+      763,
+      "name"
+     ],
+     [
+      "mszw93",
+      "MUSCADINE FARMS WMA -DRIFTWOOD",
+      707,
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -3450,12 +3848,13 @@
    },
    "sizes": [],
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-7076": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Sky Lake Wildlife Management Area",
    "official": null,
    "ours": {
@@ -3497,12 +3896,13 @@
    },
    "sizes": [],
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-7077": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Leroy Percy Wildlife Management Area",
    "official": null,
    "ours": {
@@ -3538,12 +3938,13 @@
    },
    "sizes": [],
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-7078": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Howard Miller Wildlife Management Area",
    "official": null,
    "ours": {
@@ -3563,7 +3964,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -3585,12 +3986,13 @@
    },
    "sizes": [],
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-7079": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Twin Oaks Wildlife Management Area",
    "official": null,
    "ours": {
@@ -3632,22 +4034,44 @@
    },
    "sizes": [],
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-7080": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Sunflower Wildlife Management Area",
-   "ours": null,
+   "ours": {
+    "acres": 55090,
+    "manager": "",
+    "pieces": [
+     [
+      "mszw430",
+      "SUNFLOWER WMA",
+      54079,
+      "name"
+     ],
+     [
+      "mszw302",
+      "SUNFLOWER WMA",
+      1011,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "",
+    "unknown_pieces": 0
+   },
    "score": null,
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-7081": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Lake George Wildlife Management Area",
    "official": null,
    "ours": {
@@ -3683,12 +4107,13 @@
    },
    "sizes": [],
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-7082": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Shipland Wildlife Management Area",
    "official": null,
    "ours": {
@@ -3724,12 +4149,13 @@
    },
    "sizes": [],
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-7083": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Mahannah Wildlife Management Area",
    "official": null,
    "ours": {
@@ -3771,22 +4197,79 @@
    },
    "sizes": [],
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-7084": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Phil Bryant Wildlife Management Area",
-   "ours": null,
+   "ours": {
+    "acres": 17621,
+    "dissolved": {
+     "after": 9056,
+     "before": 17689,
+     "copies": 1,
+     "key_union": 17621,
+     "parts": 7,
+     "records": 14,
+     "summed": 9056,
+     "tracts": 6
+    },
+    "manager": "",
+    "note": "14 joined records = 6 tracts: 1 copies of a tract (same acres, another layer) and 7 fee tracts under a designation record folded; summed 17689 -> 9056 acres",
+    "pieces": [
+     [
+      "mszw502",
+      "PHIL BRYANT WMA - TEN POINT",
+      6477,
+      "reviewed"
+     ],
+     [
+      "mszw516",
+      "PHIL BRYANT WMA - BACKWOODS 1",
+      1306,
+      "reviewed"
+     ],
+     [
+      "mszw500",
+      "PHIL BRYANT WMA - GOOSELAKE",
+      833,
+      "reviewed"
+     ],
+     [
+      "mszw520",
+      "PHIL BRYANT WMA - GOOSELAKE",
+      161,
+      "words"
+     ],
+     [
+      "mszw504",
+      "PHIL BRYANT WMA",
+      159,
+      "name"
+     ],
+     [
+      "mszw503",
+      "PHIL BRYANT WMA - GOOSELAKE",
+      120,
+      "words"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "",
+    "unknown_pieces": 0
+   },
    "score": null,
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-7085": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "John W. Starr Wildlife Management Area",
    "official": null,
    "ours": {
@@ -3822,12 +4305,13 @@
    },
    "sizes": [],
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-7086": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Trim Cane Wildlife Management Area",
    "official": null,
    "ours": {
@@ -3863,12 +4347,13 @@
    },
    "sizes": [],
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-7087": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Black Prairie Wildlife Management Area",
    "official": null,
    "ours": {
@@ -3910,22 +4395,38 @@
    },
    "sizes": [],
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-7088": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Choctaw Wildlife Management Area",
-   "ours": null,
+   "ours": {
+    "acres": 21391,
+    "manager": "",
+    "pieces": [
+     [
+      "mszw309",
+      "CHOCTAW WMA",
+      21391,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 0
+   },
    "score": null,
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-7089": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Yockanookany Wildlife Management Area",
    "official": null,
    "ours": {
@@ -3961,22 +4462,38 @@
    },
    "sizes": [],
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-7090": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Nanih Waiya Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 8256,
+    "acres": 8267,
+    "dissolved": {
+     "after": 8267,
+     "before": 16523,
+     "copies": 1,
+     "parts": 0,
+     "records": 3,
+     "tracts": 2
+    },
     "manager": "",
+    "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 16523 -> 8267 acres",
     "pieces": [
      [
-      211181,
-      "Nanih Waiya",
-      8256,
+      "mszw468",
+      "NANIH WAIYA WMA",
+      8260,
+      "name"
+     ],
+     [
+      "mszw134",
+      "NANIH WAIYA WMA",
+      7,
       "name"
      ]
     ],
@@ -4002,12 +4519,13 @@
    },
    "sizes": [],
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-7091": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Okatibbee Wildlife Management Area",
    "official": null,
    "ours": {
@@ -4043,12 +4561,13 @@
    },
    "sizes": [],
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-7092": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Tuscumbia Wildlife Management Area",
    "official": null,
    "ours": {
@@ -4084,16 +4603,18 @@
    },
    "sizes": [],
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-7093": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Divide Section Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 16145,
+    "acres": 17073,
+    "family_fold": "layers {'padus': 16145, 'mszw': 14835}: one land in 2 layers, the padus copy used (14,835 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
@@ -4125,12 +4646,13 @@
    },
    "sizes": [],
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-7094": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Hell Creek Wildlife Management Area",
    "official": null,
    "ours": {
@@ -4144,7 +4666,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -4166,16 +4688,18 @@
    },
    "sizes": [],
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-7095": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "John Bell Williams Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 2654,
+    "acres": 3401,
+    "family_fold": "layers {'padus': 2654, 'mszw': 758}: one land in 2 layers, the padus copy used (758 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
@@ -4207,12 +4731,13 @@
    },
    "sizes": [],
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-7096": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Canal Section Wildlife Management Area",
    "official": null,
    "ours": {
@@ -4254,32 +4779,33 @@
    },
    "sizes": [],
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-7097": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Chickasaw Wildlife Management Area",
    "ours": null,
    "score": null,
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-7098": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Graham Waterfowl Wildlife Management Area",
    "ours": null,
    "score": null,
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-7099": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Sardis Waterfowl Wildlife Management Area",
    "official": null,
    "ours": {
@@ -4315,22 +4841,80 @@
    },
    "sizes": [],
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-7100": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Upper Sardis Wildlife Management Area",
-   "ours": null,
+   "ours": {
+    "acres": 49295,
+    "manager": "",
+    "pieces": [
+     [
+      "mszw452",
+      "UPPER SARDIS WMA",
+      36406,
+      "name"
+     ],
+     [
+      "mszw120",
+      "UPPER SARDIS WMA",
+      8714,
+      "name"
+     ],
+     [
+      "mszw119",
+      "UPPER SARDIS WMA",
+      2200,
+      "name"
+     ],
+     [
+      "mszw118",
+      "UPPER SARDIS WMA",
+      1391,
+      "name"
+     ],
+     [
+      "mszw106",
+      "UPPER SARDIS WMA",
+      311,
+      "name"
+     ],
+     [
+      "mszw117",
+      "UPPER SARDIS WMA",
+      137,
+      "name"
+     ],
+     [
+      "mszw116",
+      "UPPER SARDIS WMA",
+      99,
+      "name"
+     ],
+     [
+      "mszw110",
+      "UPPER SARDIS WMA",
+      37,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 0
+   },
    "score": null,
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-7101": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Charles Ray Nix Wildlife Management Area",
    "official": null,
    "ours": {
@@ -4366,12 +4950,13 @@
    },
    "sizes": [],
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-7102": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Calhoun County Wildlife Management Area",
    "official": null,
    "ours": {
@@ -4407,12 +4992,13 @@
    },
    "sizes": [],
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-7103": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Malmaison Wildlife Management Area",
    "official": null,
    "ours": {
@@ -4448,47 +5034,57 @@
    },
    "sizes": [],
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-7104": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Chickasawhay Wildlife Management Area",
    "ours": null,
    "score": null,
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-7105": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Mason Creek Wildlife Management Area",
    "ours": null,
    "score": null,
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-7106": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Leaf River Wildlife Management Area",
    "ours": null,
    "score": null,
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-7107": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Theodore Mars Wildlife Management Area",
    "official": null,
    "ours": {
     "acres": 897,
+    "dissolved": {
+     "after": 897,
+     "before": 1784,
+     "copies": 1,
+     "parts": 0,
+     "records": 2,
+     "tracts": 1
+    },
     "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1784 -> 897 acres",
     "pieces": [
      [
       211233,
@@ -4497,7 +5093,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -4519,16 +5115,17 @@
    },
    "sizes": [],
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-7108": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Pascagoula River Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 37758,
+    "acres": 38060,
     "manager": "",
     "pieces": [
      [
@@ -4541,6 +5138,18 @@
       211205,
       "Pascagoula Wma",
       2191,
+      "name"
+     ],
+     [
+      "mszw323",
+      "PASCAGOULA WMA",
+      174,
+      "name"
+     ],
+     [
+      "mszw429",
+      "PASCAGOULA WMA",
+      128,
       "name"
      ]
     ],
@@ -4566,42 +5175,115 @@
    },
    "sizes": [],
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-7109": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Old River Wildlife Management Area",
-   "ours": null,
+   "ours": {
+    "acres": 14766,
+    "manager": "",
+    "pieces": [
+     [
+      "mszw165",
+      "OLD RIVER WMA",
+      14117,
+      "name"
+     ],
+     [
+      "mszw435",
+      "OLD RIVER WMA",
+      644,
+      "name"
+     ],
+     [
+      "mszw166",
+      "OLD RIVER WMA",
+      5,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "",
+    "unknown_pieces": 0
+   },
    "score": null,
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-7110": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Little Biloxi Wildlife Management Area",
-   "ours": null,
+   "ours": {
+    "acres": 13577,
+    "manager": "",
+    "pieces": [
+     [
+      "mszw181",
+      "LITTLE BILOXI WMA",
+      7222,
+      "name"
+     ],
+     [
+      "mszw423",
+      "LITTLE BILOXI WMA",
+      5315,
+      "name"
+     ],
+     [
+      "mszw176",
+      "LITTLE BILOXI WMA",
+      597,
+      "name"
+     ],
+     [
+      "mszw174",
+      "LITTLE BILOXI WMA",
+      240,
+      "name"
+     ],
+     [
+      "mszw175",
+      "LITTLE BILOXI WMA",
+      161,
+      "name"
+     ],
+     [
+      "mszw170",
+      "LITTLE BILOXI WMA",
+      42,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "",
+    "unknown_pieces": 0
+   },
    "score": null,
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-7111": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Red Creek Wildlife Management Area",
    "ours": null,
    "score": null,
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-7112": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Ward Bayou Wildlife Management Area",
    "official": null,
    "ours": {
@@ -4627,7 +5309,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -4649,16 +5331,16 @@
    },
    "sizes": [],
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-7113": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Pearl River Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 6973,
+    "acres": 4877,
     "manager": "",
     "pieces": [
      [
@@ -4693,7 +5375,7 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "rest",
+     "status": "ok",
      "url": "https://www.mdwfp.com/wildlife-hunting/wmas/pearl-river-wma",
      "why": "the park's page (data/parkinfo)"
     }
@@ -4708,42 +5390,64 @@
    },
    "sizes": [],
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-7114": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Bienville Wildlife Management Area",
-   "ours": null,
+   "ours": {
+    "acres": 26702,
+    "manager": "",
+    "pieces": [
+     [
+      "mszw231",
+      "BIENVILLE WMA",
+      26212,
+      "name"
+     ],
+     [
+      "mszw224",
+      "BIENVILLE WMA",
+      490,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "",
+    "unknown_pieces": 0
+   },
    "score": null,
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-7115": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Tallahala Wildlife Management Area",
    "ours": null,
    "score": null,
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-7116": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Caney Creek Wildlife Management Area",
    "ours": null,
    "score": null,
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-7117": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Canemount Wildlife Management Area",
    "official": null,
    "ours": {
@@ -4785,23 +5489,31 @@
    },
    "sizes": [],
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-7118": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Copiah County Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 6594,
+    "acres": 7642,
+    "family_fold": "layers {'mszw': 7642, 'padus': 6594}: one land in 2 layers, the mszw copy used (6,594 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
-      211218,
-      "Copiah Wma",
-      6594,
-      "words"
+      "mszw464",
+      "COPIAH COUNTY WMA",
+      7049,
+      "name"
+     ],
+     [
+      "mszw505",
+      "COPIAH COUNTY WMA",
+      593,
+      "name"
      ]
     ],
     "pin": "inside",
@@ -4826,42 +5538,58 @@
    },
    "sizes": [],
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-7119": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Natchez Wildlife Management Area",
    "ours": null,
    "score": null,
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-7120": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Caston Creek Wildlife Management Area",
    "ours": null,
    "score": null,
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-7121": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Sandy Creek Wildlife Management Area",
-   "ours": null,
+   "ours": {
+    "acres": 16869,
+    "manager": "",
+    "pieces": [
+     [
+      "mszw153",
+      "SANDY CREEK WMA",
+      16869,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 0
+   },
    "score": null,
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-7122": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Marion County Wildlife Management Area",
    "official": null,
    "ours": {
@@ -4897,12 +5625,13 @@
    },
    "sizes": [],
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-7123": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Wolf River Wildlife Management Area",
    "official": null,
    "ours": {
@@ -4938,42 +5667,43 @@
    },
    "sizes": [],
    "t": "Wildlife Management Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-7124": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Arkabutla Lake State Recreation Area",
    "ours": null,
    "score": null,
    "t": "State Recreation Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-7125": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Enid Lake State Recreation Area",
    "ours": null,
    "score": null,
    "t": "State Recreation Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-7126": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Grenada Lake State Recreation Area",
    "ours": null,
    "score": null,
    "t": "State Recreation Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-7127": {
    "checked": "2026-10-28",
    "handover": [],
+   "last_read_failed": "2026-11-15",
    "n": "Okatibbee Lake State Recreation Area",
    "official": null,
    "ours": {
@@ -5014,116 +5744,116 @@
    },
    "sizes": [],
    "t": "State Recreation Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-7128": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Sardis Lake State Recreation Area",
    "ours": null,
    "score": null,
    "t": "State Recreation Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-7129": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Columbus Lake State Recreation Area",
    "ours": null,
    "score": null,
    "t": "State Recreation Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-7130": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Aberdeen Lake State Recreation Area",
    "ours": null,
    "score": null,
    "t": "State Recreation Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-7131": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Bay Springs Lake State Recreation Area",
    "ours": null,
    "score": null,
    "t": "State Recreation Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-7132": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Jamie Whitten Historical Center State Recreation Area",
    "ours": null,
    "score": null,
    "t": "State Recreation Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-7133": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Amory Recreation Area State Recreation Area",
    "ours": null,
    "score": null,
    "t": "State Recreation Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-7134": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Holcut Memorial State Recreation Area",
    "ours": null,
    "score": null,
    "t": "State Recreation Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-7629": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Davis Lake State Recreation Area",
    "ours": null,
    "score": null,
    "t": "State Recreation Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-7630": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Chewalla Lake State Recreation Area",
    "ours": null,
    "score": null,
    "t": "State Recreation Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-7631": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Owl Creek Mounds Archeological Reserve",
    "ours": null,
    "score": null,
    "t": "Archeological Reserve",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-7632": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Pvt. John Allen National Fish Hatchery",
    "official": null,
    "ours": {
-    "acres": 62,
+    "acres": 21,
     "manager": "",
     "pieces": [
      [
@@ -5139,7 +5869,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -5151,144 +5881,197 @@
      "why": "the park's page (data/parkinfo)"
     },
     {
+     "other_unit": true,
      "status": "ok",
      "url": "https://www.fws.gov/policies",
      "why": "rules page (documents bot)"
     }
    ],
    "pct": null,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 1,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
    "sizes": [],
    "t": "National Fish Hatchery",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no size on page"
   },
   "US-7633": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Turkey Fork Lake State Recreation Area",
    "ours": null,
    "score": null,
    "t": "State Recreation Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-7634": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Ashe Lake State Recreation Area",
    "ours": null,
    "score": null,
    "t": "State Recreation Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-7635": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Airey Lake State Recreation Area",
    "ours": null,
    "score": null,
    "t": "State Recreation Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-8513": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Archusa Creek State Recreation Area",
    "ours": null,
    "score": null,
    "t": "State Recreation Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-8514": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Big Creek State Recreation Area",
    "ours": null,
    "score": null,
    "t": "State Recreation Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-8515": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Dry Creek State Recreation Area",
    "ours": null,
    "score": null,
    "t": "State Recreation Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-8516": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Dunn's Falls State Recreation Area",
    "ours": null,
    "score": null,
    "t": "State Recreation Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-8517": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Flint Creek State Recreation Area",
    "ours": null,
    "score": null,
    "t": "State Recreation Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-8518": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Maynor Creek State Recreation Area",
    "ours": null,
    "score": null,
    "t": "State Recreation Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-8519": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Turkey Creek State Recreation Area",
    "ours": null,
    "score": null,
    "t": "State Recreation Area",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   },
   "US-9847": {
-   "checked": "2026-10-28",
+   "cause": "agency bigger: our outline may miss a tract",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Clark Creek Natural Area State Park",
-   "ours": null,
-   "score": null,
+   "official": {
+    "acres": 700.0,
+    "as": "700 acres",
+    "clean": false,
+    "line": "hwestern Mississippi, is one of the Magnolia State's most beautiful outdoor treasures. Comprised of more than 700 acres, it is highlighted by some 50 waterfalls, ranging in size from 10 to 30 plus feet in height. Address 366 Fort",
+    "read": "2026-11-08",
+    "sent": "Comprised of more than 700 acres, it is highlighted by some 50 waterfalls, ranging in size from 10 to 30 plus feet in height.",
+    "url": "https://www.mdwfp.com/parks-destinations/park/clark-creek-state-park",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 572,
+    "manager": "",
+    "pieces": [
+     [
+      "mszp22",
+      "CLARK CREEK NA",
+      572,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.mdwfp.com/parks-destinations/park/clark-creek-state-park",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": 18,
+   "same_agency": false,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 0,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 700.0,
+     "as": "700 acres",
+     "clean": false,
+     "line": "hwestern Mississippi, is one of the Magnolia State's most beautiful outdoor treasures. Comprised of more than 700 acres, it is highlighted by some 50 waterfalls, ranging in size from 10 to 30 plus feet in height. Address 366 Fort",
+     "total_like": true,
+     "url": "https://www.mdwfp.com/parks-destinations/park/clark-creek-state-park",
+     "why": "total-looking"
+    }
+   ],
    "t": "State Park",
-   "ver": 7,
-   "verdict": "no outline"
+   "ver": 15,
+   "verdict": "off"
   },
   "US-9849": {
-   "checked": "2026-10-28",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "Deer Island Coastal Park",
    "ours": null,
    "score": null,
    "t": "Coastal Park",
-   "ver": 7,
+   "ver": 15,
    "verdict": "no outline"
   }
  },
- "read": "2026-10-28"
+ "read": "2026-11-15"
 }

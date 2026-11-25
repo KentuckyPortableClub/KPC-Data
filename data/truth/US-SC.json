@@ -2,22 +2,22 @@
  "about": "Park truth checker: official acreage vs our outline, handover hints, second-witness score. Review lists only: nothing here changes a key or a card.",
  "area": "US-SC",
  "counts": {
-  "agree": 18,
-  "handover_hints": 5,
+  "agree": 26,
+  "handover_hints": 3,
   "no_page": 3,
-  "no_size": 112,
+  "no_size": 108,
   "not_read": 0,
-  "off": 14,
+  "off": 9,
   "ours_unknown": 2,
   "parks": 167,
   "retired": 0,
-  "unsure": 11,
+  "unsure": 13,
   "weak": 4,
-  "with_outline": 160
+  "with_outline": 162
  },
  "parks": {
   "US-0017": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Congaree National Park",
    "official": null,
@@ -32,7 +32,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -66,10 +66,10 @@
     }
    ],
    "pct": null,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 1
    },
@@ -80,29 +80,27 @@
   },
   "US-0265": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Pinckney Island National Wildlife Refuge",
    "official": {
     "acres": 4053.0,
     "as": "4,053 acre",
-    "clean": true,
-    "line": "o the U.S. Fish and Wildlife Service, Pinckney Island was privately owned and managed as a game preserve. The 4,053 acre refuge includes Pinckney Island, Corn Island, Big and Little Harry Islands, Buzzard Island and numerous small",
-    "read": "2026-11-08",
-    "sent": "The 4,053 acre refuge includes Pinckney Island, Corn Island, Big and Little Harry Islands, Buzzard Island and numerous small hammocks.",
-    "url": "https://www.fws.gov/refuge/pinckney-island/about-us",
-    "why": "clean total"
+    "clean": false,
+    "line": "ce part of a plantation belonging to Revolutionary War veteran Major General Charles Cotesworth Pinckney. The 4,053-acre refuge consists primarily of salt marsh and tidal creeks, supporting a wide variety of bird and plant life in",
+    "read": "2026-11-22",
+    "sent": "The 4,053-acre refuge consists primarily of salt marsh and tidal creeks, supporting a wide variety of bird and plant life including large concentrations of white ibis, herons, and egrets.",
+    "url": "https://www.fws.gov/refuge/pinckney_island/",
+    "why": "total-looking"
    },
    "ours": {
-    "acres": 1373,
+    "acres": 1517,
     "dissolved": {
      "after": 1517,
      "before": 3034,
      "copies": 1,
-     "key_union": 1373,
      "parts": 0,
      "records": 2,
-     "summed": 1517,
      "tracts": 1
     },
     "manager": "",
@@ -127,11 +125,6 @@
      "why": "the park's page (data/parkinfo)"
     },
     {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/pinckney-island/about-us",
-     "why": "about / history page of the park's site"
-    },
-    {
      "other_unit": true,
      "status": "ok",
      "url": "https://www.fws.gov/policies",
@@ -148,7 +141,7 @@
      "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
     }
    ],
-   "pct": 66,
+   "pct": 63,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -161,19 +154,10 @@
     {
      "acres": 4053.0,
      "as": "4,053 acre",
-     "clean": true,
-     "line": "o the U.S. Fish and Wildlife Service, Pinckney Island was privately owned and managed as a game preserve. The 4,053 acre refuge includes Pinckney Island, Corn Island, Big and Little Harry Islands, Buzzard Island and numerous small",
-     "total_like": true,
-     "url": "https://www.fws.gov/refuge/pinckney-island/about-us",
-     "why": "clean total"
-    },
-    {
-     "acres": 10053.0,
-     "as": "10,053 acre",
      "clean": false,
-     "line": "excellent habitat for a variety of migratory birds. With little development and few management practices, the 10,053-acre refuge is one of the most pristine on... National Wildlife Refuge Hardeeville, SC You are exiting the U.S. Fi",
+     "line": "ce part of a plantation belonging to Revolutionary War veteran Major General Charles Cotesworth Pinckney. The 4,053-acre refuge consists primarily of salt marsh and tidal creeks, supporting a wide variety of bird and plant life in",
      "total_like": true,
-     "url": "https://www.fws.gov/refuge/pinckney-island/about-us",
+     "url": "https://www.fws.gov/refuge/pinckney_island/",
      "why": "total-looking"
     }
    ],
@@ -182,46 +166,19 @@
    "verdict": "off"
   },
   "US-0518": {
-   "checked": "2026-11-08",
-   "handover": [
-    {
-     "date_hint": null,
-     "kind": "transfer",
-     "line": "made improvements to the island's existing impoundments to attract waterfowl. In 1936, Mr. Dominick conveyed the island to the Service to become part of the refuge. For years, the house was operated by contracted private concessions as a bed and breakfast of sort",
-     "owner_now": "Service",
-     "src": "https://www.fws.gov/refuge/cape-romain/about-us",
-     "why": "about / history page of the park's site"
-    },
-    {
-     "date_hint": "1936",
-     "kind": "transfer",
-     "line": "ratory waterfowl and other bird species 1936 – Bulls Island, privately owned by Gayer Dominick, was conveyed to the Service to become the southern-most barrier island in Cape Romain NWR 1975 – 29,000 acres Congressionally designated as Class I National Wilderness Area 1980 – 1827 and",
-     "owner_now": "Service",
-     "src": "https://www.fws.gov/refuge/cape-romain/about-us",
-     "why": "about / history page of the park's site"
-    }
-   ],
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-22",
+   "handover": [],
    "n": "Cape Romain National Wildlife Refuge",
-   "official": {
-    "acres": 29000.0,
-    "as": "29,000 acres",
-    "clean": false,
-    "line": "nal Importance Part of the Carolinian-South Atlantic Biosphere Reserve A Class I National Wilderness Area for 29,000 acres Cultural History of Cape Romain From the Sewee Indians to pirates, from a look-out tower to two nineteenth-ce",
-    "read": "2026-11-08",
-    "sent": "A Class I National Wilderness Area for 29,000 acres",
-    "url": "https://www.fws.gov/refuge/cape-romain/about-us",
-    "why": "total-looking"
-   },
+   "official": null,
    "ours": {
-    "acres": 27039,
+    "acres": 35161,
     "dissolved": {
      "after": 35161,
      "before": 70297,
      "copies": 1,
-     "key_union": 27039,
      "parts": 0,
      "records": 2,
-     "summed": 35161,
      "tracts": 1
     },
     "manager": "",
@@ -238,7 +195,7 @@
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
-   "owner_now": "Service",
+   "owner_now": null,
    "pages": [
     {
      "status": "ok",
@@ -246,100 +203,47 @@
      "why": "the park's page (data/parkinfo)"
     },
     {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/cape-romain/about-us",
-     "why": "about / history page of the park's site"
+     "other_unit": true,
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/cape-romain/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/cape/about-us",
+     "why": "FWS refuge about page"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/cape",
+     "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
     }
    ],
-   "pct": 7,
-   "same_agency": false,
-   "score": 7,
+   "pct": null,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 2,
+    "size": 1,
     "source": 2
    },
    "sizes": [
     {
-     "acres": 29000.0,
-     "as": "29,000 acre",
-     "clean": false,
-     "line": "s. Over the years, objectives expanded to include: managing threatened and endangered species, protecting the 29,000-acre Class 1 Wilderness Area, conserving the maritime forests and associated diverse plant communities, and offeri",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/cape-romain/about-us",
-     "why": "no total words near it"
-    },
-    {
      "acres": 66306.0,
      "as": "66,306 acres",
-     "clean": true,
-     "line": "unting, photography, wildlife observation, interpretation and environmental education. The refuge consists of 66,306 acres, comprising barrier islands and salt marsh salt marsh Salt marshes are found in tidal areas near the coast, w",
-     "total_like": true,
-     "url": "https://www.fws.gov/refuge/cape-romain/about-us",
-     "why": "clean total"
-    },
-    {
-     "acres": 2000.0,
-     "as": "2000 acres",
      "clean": false,
-     "line": "maritime forest, long sandy beaches, and fresh and brackish water impoundments are found on the islands. Over 2000 acres of maritime forest is dominated by magnolia, cabbage palm and loblolly pine with an understory of red bay, ya",
+     "line": "Established in 1932 to conserve habitat for migratory birds, Cape Romain National Wildlife Refuge encompasses 66,306 acres of barrier islands, salt marshes, and maritime forests. It provides critical habitat for over 293 bird specie",
      "total_like": false,
-     "url": "https://www.fws.gov/refuge/cape-romain/about-us",
-     "why": "another park / unit named in the sentence"
-    },
-    {
-     "acres": 29000.0,
-     "as": "29,000 acres",
-     "clean": false,
-     "line": "nal Importance Part of the Carolinian-South Atlantic Biosphere Reserve A Class I National Wilderness Area for 29,000 acres Cultural History of Cape Romain From the Sewee Indians to pirates, from a look-out tower to two nineteenth-ce",
-     "total_like": true,
-     "url": "https://www.fws.gov/refuge/cape-romain/about-us",
-     "why": "total-looking"
-    },
-    {
-     "acres": 29000.0,
-     "as": "29,000 acres",
-     "clean": false,
-     "line": "Historic Places in 1980. Wilderness Area Cape Romain Wilderness - Designated in 1975 as Class I Wilderness - 29,000 acres The Wilderness Act of 1964 created the National Wilderness Preservation System \"in order to assure that an in",
-     "total_like": true,
-     "url": "https://www.fws.gov/refuge/cape-romain/about-us",
-     "why": "total-looking"
-    },
-    {
-     "acres": 29000.0,
-     "as": "29,000 acres",
-     "clean": false,
-     "line": "er Dominick, was conveyed to the Service to become the southern-most barrier island in Cape Romain NWR 1975 – 29,000 acres Congressionally designated as Class I National Wilderness Area 1980 – 1827 and 1857 lighthouses placed on the",
-     "total_like": true,
-     "url": "https://www.fws.gov/refuge/cape-romain/about-us",
-     "why": "total-looking"
-    },
-    {
-     "acres": 115000.0,
-     "as": "115,000 acres",
-     "clean": false,
-     "line": "Coastal South Carolina and Francis Marion National Forest Other Facilities in this Complex Encompassing over 115,000 acres, South Carolina Lowcountry Refuges Complex is home to four national wildlife refuges located in the coastal a",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/cape-romain/about-us",
-     "why": "part (a lake, a purchase, a campground…)"
-    },
-    {
-     "acres": 350000.0,
-     "as": "350,000 acre",
-     "clean": false,
-     "line": "sin National Wildlife Refuge, steeped in cultural history and natural resources, is located within the larger 350,000-acre Ashepoo-Combahee-Edisto (ACE) Basin System, which represents one of the largest undeveloped wetland ecosystem",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/cape-romain/about-us",
-     "why": "no total words near it"
+     "url": "https://www.fws.gov/refuge/cape_romain/",
+     "why": "history"
     }
    ],
    "t": "National Wildlife Refuge",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "unsure"
   },
   "US-0519": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Carolina Sandhills National Wildlife Refuge",
    "official": {
@@ -347,7 +251,7 @@
     "as": "47,000 acres",
     "clean": true,
     "line": "estoring habitats for migratory birds and the endangered red-cockaded woodpecker. The refuge encompasses over 47,000 acres of the unique longleaf pine/wiregrass ecosystem in South Carolina&#x27;s Sandhills region. Visitors can explo",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "The refuge encompasses over 47,000 acres of the unique longleaf pine/wiregrass ecosystem in South Carolina&#x27;s Sandhills region.",
     "url": "https://www.fws.gov/refuge/carolina_sandhills/",
     "why": "clean total"
@@ -425,39 +329,27 @@
    "verdict": "agree"
   },
   "US-0520": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-08",
-   "handover": [
-    {
-     "date_hint": "2005",
-     "kind": "renamed",
-     "line": "nd conservation opportunities served by the lands and waters of the refuge. In 2005, the refuge was renamed the Ernest F. Hollings ACE Basin National Wildlife Refuge (E.F.H. ACE Basin NWR) in honor of South Carolina's re",
-     "owner_now": null,
-     "src": "https://www.fws.gov/refuge/ernest-f-hollings-ace-basin/about-us",
-     "why": "FWS refuge about page"
-    }
-   ],
+   "checked": "2026-11-22",
+   "handover": [],
    "n": "Ernest F. Hollings ACE Basin National Wildlife Refuge",
    "official": {
     "acres": 11815.0,
-    "as": "11, 815 acres",
+    "as": "11,815 acres",
     "clean": false,
-    "line": "diversity of wildlife and plants. The E.F.H. ACE Basin NWR is composed of two units, comprising approximately 11, 815 acres. The Edisto Unit, at 7,203 acres, is located approximately 20 miles southwest of Charleston. The unit lies al",
-    "read": "2026-11-08",
-    "sent": "ACE Basin NWR is composed of two units, comprising approximately 11, 815 acres.",
-    "url": "https://www.fws.gov/refuge/ernest-f-hollings-ace-basin/about-us",
-    "why": "total-looking"
+    "line": "Established in 1990 and later renamed to honor Senator Ernest F. Hollings, the refuge protects approximately 11,815 acres within the 350,000-acre ACE Basin system. It contains two distinct units, Edisto and Combahee, featuring habi",
+    "read": "2026-11-22",
+    "sent": "Hollings, the refuge protects approximately 11,815 acres within the 350,000-acre ACE Basin system.",
+    "url": "https://www.fws.gov/refuge/ernest-f-hollings-ace-basin",
+    "why": "part (a lake, a purchase, a campground…)"
    },
    "ours": {
-    "acres": 9853,
+    "acres": 12224,
     "dissolved": {
      "after": 12224,
      "before": 24291,
      "copies": 1,
-     "key_union": 9853,
      "parts": 0,
      "records": 2,
-     "summed": 12224,
      "tracts": 1
     },
     "manager": "",
@@ -483,106 +375,52 @@
     },
     {
      "other_unit": true,
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/ernest-f-hollings-ace-basin/visit-us/rules-policies",
      "why": "rules page (documents bot)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/ernest-f-hollings-ace-basin/about-us",
      "why": "FWS refuge about page"
     }
    ],
-   "pct": 17,
+   "pct": 3,
    "same_agency": false,
-   "score": 5,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
     {
-     "acres": 350000.0,
-     "as": "350,000 acre",
-     "clean": false,
-     "line": "sin National Wildlife Refuge, steeped in cultural history and natural resources, is located within the larger 350,000-acre Ashepoo-Combahee-Edisto (ACE) Basin System, which represents one of the largest undeveloped wetland ecosystem",
-     "total_like": true,
-     "url": "https://www.fws.gov/refuge/ernest-f-hollings-ace-basin",
-     "why": "total-looking"
-    },
-    {
-     "acres": 350000.0,
-     "as": "350,000 acre",
-     "clean": false,
-     "line": "in honor of South Carolina's retired U.S. Senator Ernest F. Hollings. The refuge is located within the larger 350,000-acre Ashepoo-Combahee-Edisto (ACE) Basin system, widely recognized as a unique and critical environment for its wi",
-     "total_like": true,
-     "url": "https://www.fws.gov/refuge/ernest-f-hollings-ace-basin/about-us",
-     "why": "total-looking"
-    },
-    {
      "acres": 11815.0,
-     "as": "11, 815 acres",
+     "as": "11,815 acres",
      "clean": false,
-     "line": "diversity of wildlife and plants. The E.F.H. ACE Basin NWR is composed of two units, comprising approximately 11, 815 acres. The Edisto Unit, at 7,203 acres, is located approximately 20 miles southwest of Charleston. The unit lies al",
-     "total_like": true,
-     "url": "https://www.fws.gov/refuge/ernest-f-hollings-ace-basin/about-us",
-     "why": "total-looking"
-    },
-    {
-     "acres": 7203.0,
-     "as": "7,203 acres",
-     "clean": false,
-     "line": "he E.F.H. ACE Basin NWR is composed of two units, comprising approximately 11, 815 acres. The Edisto Unit, at 7,203 acres, is located approximately 20 miles southwest of Charleston. The unit lies along the South Edisto River and in",
-     "total_like": true,
-     "url": "https://www.fws.gov/refuge/ernest-f-hollings-ace-basin/about-us",
-     "why": "total-looking"
-    },
-    {
-     "acres": 4612.0,
-     "as": "4,612 acres",
-     "clean": false,
-     "line": "outh Edisto River and includes the Grove Plantation – the Refuge Headquarters. The Combahee Unit, consists of 4,612 acres in Beaufort, Colleton and Hampton counties, and is located about 20 miles northwest of Beaufort. Drained by t",
+     "line": "Established in 1990 and later renamed to honor Senator Ernest F. Hollings, the refuge protects approximately 11,815 acres within the 350,000-acre ACE Basin system. It contains two distinct units, Edisto and Combahee, featuring habi",
      "total_like": false,
-     "url": "https://www.fws.gov/refuge/ernest-f-hollings-ace-basin/about-us",
-     "why": "another park / unit named in the sentence"
-    },
-    {
-     "acres": 350000.0,
-     "as": "350,000 acre",
-     "clean": false,
-     "line": "and active partners, the refuge will strive to maintain the goals and objectives of the ACE Basin Project, a 350,000-acre estuary/ecosystem partnership between state, federal, corporate, private landowners, and non-governmental org",
-     "total_like": true,
-     "url": "https://www.fws.gov/refuge/ernest-f-hollings-ace-basin/about-us",
-     "why": "total-looking"
-    },
-    {
-     "acres": 115000.0,
-     "as": "115,000 acres",
-     "clean": false,
-     "line": "or South Carolina retired U.S. Senator Ernest F. Hollings. Other Facilities in this Complex Encompassing over 115,000 acres, South Carolina Lowcountry Refuges Complex is home to four national wildlife refuges located in the coastal a",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/ernest-f-hollings-ace-basin/about-us",
+     "url": "https://www.fws.gov/refuge/ernest-f-hollings-ace-basin",
      "why": "part (a lake, a purchase, a campground…)"
     },
     {
-     "acres": 110600.0,
-     "as": "110,600 acre",
+     "acres": 350000.0,
+     "as": "350,000 acre",
      "clean": false,
-     "line": "Santee National Wildlife Refuge Santee National Wildlife Refuge, superimposed on the lands and waters of the 110,600-acre Lake Marion reservoir, protects over 15,000 acres of public lands in four units, Bluff, Dingle Pond, Pine Isl",
+     "line": "later renamed to honor Senator Ernest F. Hollings, the refuge protects approximately 11,815 acres within the 350,000-acre ACE Basin system. It contains two distinct units, Edisto and Combahee, featuring habitats ranging from salt m",
      "total_like": false,
-     "url": "https://www.fws.gov/refuge/ernest-f-hollings-ace-basin/about-us",
+     "url": "https://www.fws.gov/refuge/ernest-f-hollings-ace-basin",
      "why": "part (a lake, a purchase, a campground…)"
     }
    ],
    "t": "National Wildlife Refuge",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-0521": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 350,000 acre, no total words near it)",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Santee National Wildlife Refuge",
    "official": {
@@ -590,21 +428,19 @@
     "as": "350,000 acre",
     "clean": false,
     "line": "sin National Wildlife Refuge, steeped in cultural history and natural resources, is located within the larger 350,000-acre Ashepoo-Combahee-Edisto (ACE) Basin System, which represents one of the largest undeveloped wetland ecosystem",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Hollings ACE Basin National Wildlife Refuge, steeped in cultural history and natural resources, is located within the larger 350,000-acre Ashepoo-Combahee-Edisto (ACE) Basin System, which represents one of the largest undeveloped wetland ecosystems remaining on the Atlantic Coast.",
     "url": "https://www.fws.gov/refuge/santee/about-us",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 4026,
+    "acres": 4533,
     "dissolved": {
      "after": 4533,
      "before": 9063,
      "copies": 1,
-     "key_union": 4026,
      "parts": 0,
      "records": 2,
-     "summed": 4533,
      "tracts": 1
     },
     "manager": "",
@@ -617,7 +453,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -657,10 +493,10 @@
    ],
    "pct": 99,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -743,34 +579,32 @@
    "verdict": "unsure"
   },
   "US-0522": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Savannah National Wildlife Refuge",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-GA': 15461, 'US-SC': 13028})",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-GA': 15461, 'US-SC': 15260})",
    "official": {
     "acres": 30000.0,
     "as": "30,000 acres",
     "clean": true,
-    "line": "fowl. The refuge lies in both Georgia and South Carolina, divided by the Savannah River, and encompasses over 30,000 acres of vital wildlife habitat, including tidal freswater marsh and bottomland hardwood forest. Learn More About U",
-    "read": "2026-11-08",
-    "sent": "The refuge lies in both Georgia and South Carolina, divided by the Savannah River, and encompasses over 30,000 acres of vital wildlife habitat, including tidal freswater marsh and bottomland hardwood forest.",
+    "line": "fowl. The refuge lies in both Georgia and South Carolina, divided by the Savannah River, and encompasses over 30,000 acres of vital wildlife habitat, including tidal freshwater marsh and bottomland hardwood forest. Its mission is to",
+    "read": "2026-11-22",
+    "sent": "The refuge lies in both Georgia and South Carolina, divided by the Savannah River, and encompasses over 30,000 acres of vital wildlife habitat, including tidal freshwater marsh and bottomland hardwood forest.",
     "url": "https://www.fws.gov/refuge/savannah/",
     "why": "clean total"
    },
    "ours": {
-    "acres": 28489,
+    "acres": 30721,
     "acres_by_state": {
      "US-GA": 15461,
-     "US-SC": 13028
+     "US-SC": 15260
     },
     "dissolved": {
      "after": 15260,
      "before": 30520,
      "copies": 1,
-     "key_union": 13028,
      "parts": 0,
      "records": 2,
-     "summed": 15260,
      "tracts": 1
     },
     "manager": "",
@@ -783,7 +617,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "states": [
      "US-GA",
@@ -801,12 +635,12 @@
     },
     {
      "other_unit": true,
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/savannah/visit-us/rules-policies",
      "why": "rules page (documents bot)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/savannah/about-us",
      "why": "FWS refuge about page"
     },
@@ -816,12 +650,12 @@
      "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
     }
    ],
-   "pct": 5,
+   "pct": 2,
    "same_agency": false,
-   "score": 7,
+   "score": 8,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 2,
     "source": 2
    },
@@ -830,7 +664,7 @@
      "acres": 30000.0,
      "as": "30,000 acres",
      "clean": true,
-     "line": "fowl. The refuge lies in both Georgia and South Carolina, divided by the Savannah River, and encompasses over 30,000 acres of vital wildlife habitat, including tidal freswater marsh and bottomland hardwood forest. Learn More About U",
+     "line": "fowl. The refuge lies in both Georgia and South Carolina, divided by the Savannah River, and encompasses over 30,000 acres of vital wildlife habitat, including tidal freshwater marsh and bottomland hardwood forest. Its mission is to",
      "total_like": true,
      "url": "https://www.fws.gov/refuge/savannah/",
      "why": "clean total"
@@ -839,34 +673,7 @@
      "acres": 30000.0,
      "as": "30,000 acres",
      "clean": true,
-     "line": "fowl. The refuge lies in both Georgia and South Carolina, divided by the Savannah River, and encompasses over 30,000 acres of vital wildlife habitat, including tidal freswater marsh and bottomland hardwood forest. Our Mission Savann",
-     "total_like": true,
-     "url": "https://www.fws.gov/refuge/savannah/about-us",
-     "why": "clean total"
-    },
-    {
-     "acres": 2352.0,
-     "as": "2,352 acre",
-     "clean": false,
-     "line": "tations became the initial core of the Refuge. Refuge Establishment President Calvin Coolidge established the 2,352-acre Savannah River Bird Refuge in 1927 by Executive Order. Early refuge managers realized the potential for estab",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/savannah/about-us",
-     "why": "history"
-    },
-    {
-     "acres": 10053.0,
-     "as": "10,053 acre",
-     "clean": false,
-     "line": "excellent habitat for a variety of migratory birds. With little development and few management practices, the 10,053-acre refuge is one of the most pristine on... National Wildlife Refuge Hardeeville, SC Pinckney Island National Wi",
-     "total_like": true,
-     "url": "https://www.fws.gov/refuge/savannah/about-us",
-     "why": "total-looking"
-    },
-    {
-     "acres": 30000.0,
-     "as": "30,000 acres",
-     "clean": true,
-     "line": "fowl. The refuge lies in both Georgia and South Carolina, divided by the Savannah River, and encompasses over 30,000 acres of vital wildlife habitat, including tidal freswater marsh and bottomland hardwood forest. Learn More About U",
+     "line": "fowl. The refuge lies in both Georgia and South Carolina, divided by the Savannah River, and encompasses over 30,000 acres of vital wildlife habitat, including tidal freshwater marsh and bottomland hardwood forest. Its mission is to",
      "total_like": true,
      "url": "https://www.fws.gov/refuge/savannah",
      "why": "clean total"
@@ -877,12 +684,12 @@
    "verdict": "agree"
   },
   "US-0524": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Waccamaw National Wildlife Refuge",
    "official": null,
    "ours": {
-    "acres": 14330,
+    "acres": 18998,
     "manager": "",
     "pieces": [
      [
@@ -945,7 +752,7 @@
    "verdict": "no size on page"
   },
   "US-0702": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Cowpens National Battlefield",
    "official": null,
@@ -1012,7 +819,7 @@
    "verdict": "no size on page"
   },
   "US-0720": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Kings Mountain National Military Park",
    "official": null,
@@ -1079,7 +886,7 @@
    "verdict": "no size on page"
   },
   "US-0806": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Charles Pinckney National Historic Site",
    "official": null,
@@ -1094,7 +901,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -1128,10 +935,10 @@
     }
    ],
    "pct": null,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 1
    },
@@ -1141,7 +948,7 @@
    "verdict": "no size on page"
   },
   "US-0852": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Ninety Six National Historic Site",
    "official": null,
@@ -1208,7 +1015,7 @@
    "verdict": "no size on page"
   },
   "US-0932": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Fort Sumter and Fort Moultrie National Historic Site",
    "official": null,
@@ -1223,7 +1030,7 @@
       "reviewed"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -1252,10 +1059,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 5,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 1
    },
@@ -1265,12 +1072,12 @@
    "verdict": "no size on page"
   },
   "US-10414": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Wateree Heritage Preserve",
    "official": null,
    "ours": {
-    "acres": 2862,
+    "acres": 4333,
     "manager": "",
     "pieces": [
      [
@@ -1286,7 +1093,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 4
    },
@@ -1305,10 +1112,10 @@
     }
    ],
    "pct": null,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 1
    },
@@ -1318,12 +1125,12 @@
    "verdict": "no size on page"
   },
   "US-10415": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Landsford Canal Forest Legacy Area Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 1823,
+    "acres": 1538,
     "dissolved": {
      "after": 2582,
      "before": 4120,
@@ -1334,10 +1141,8 @@
      },
      "family_fold": 1044,
      "family_used": "sgsca",
-     "key_union": 1823,
      "parts": 0,
      "records": 3,
-     "summed": 1538,
      "tracts": 2
     },
     "family_fold": "layers {'sgsca': 1538, 'padus': 1044}: one land in 2 layers, the sgsca copy used (1,044 ac of copies not added)",
@@ -1383,12 +1188,12 @@
    "verdict": "no size on page"
   },
   "US-10465": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Shealy's Pond Heritage Preserve",
    "official": null,
    "ours": {
-    "acres": 100,
+    "acres": 62,
     "family_fold": "layers {'sgscc': 62, 'padus': 60}: one land in 2 layers, the sgscc copy used (60 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -1399,7 +1204,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -1418,10 +1223,10 @@
     }
    ],
    "pct": null,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 1
    },
@@ -1431,20 +1236,18 @@
    "verdict": "no size on page"
   },
   "US-10467": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "James Ross Wildlife Reservation Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 203,
+    "acres": 305,
     "dissolved": {
      "after": 305,
      "before": 915,
      "copies": 2,
-     "key_union": 203,
      "parts": 0,
      "records": 3,
-     "summed": 305,
      "tracts": 1
     },
     "manager": "",
@@ -1489,12 +1292,12 @@
    "verdict": "no size on page"
   },
   "US-10468": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "McConnells Tract Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 249,
+    "acres": 231,
     "dissolved": {
      "after": 483,
      "before": 732,
@@ -1505,8 +1308,10 @@
      },
      "family_fold": 234,
      "family_used": "sgsca",
+     "key_union": 231,
      "parts": 0,
      "records": 3,
+     "summed": 249,
      "tracts": 2
     },
     "family_fold": "layers {'sgsca': 249, 'padus': 234}: one land in 2 layers, the sgsca copy used (234 ac of copies not added)",
@@ -1520,7 +1325,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -1539,10 +1344,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -1552,7 +1357,7 @@
    "verdict": "no size on page"
   },
   "US-10470": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Hanging Rock Battleground State Historical Park",
    "official": null,
@@ -1579,12 +1384,12 @@
    "verdict": "no official page on file"
   },
   "US-10622": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Fish Dam Ford Heritage Preserve",
    "official": null,
    "ours": {
-    "acres": 90,
+    "acres": 143,
     "family_fold": "layers {'padus': 143, 'sgscc': 138}: one land in 2 layers, the padus copy used (138 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -1628,7 +1433,7 @@
   },
   "US-10782": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lake John D. Long State Fishing Lake",
    "official": {
@@ -1636,13 +1441,13 @@
     "as": "80 acre",
     "clean": false,
     "line": "ess Additional Resources Freshwater Fishing Trends Back to SC Lakes Lake John D. Long Lake John D. Long is an 80-acre fertilized lake providing largemouth bass, bluegill, shell-cracker and catfish fishing. The lake offers a boa",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Long is an 80-acre fertilized lake providing largemouth bass, bluegill, shell-cracker and catfish fishing.",
     "url": "https://www.dnr.sc.gov/lakes/state/johndlong/index.html",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 234,
+    "acres": 285,
     "family_fold": "layers {'padus': 341, 'sgscd': 80}: one land in 2 layers, the padus copy used (80 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -1659,7 +1464,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -1677,12 +1482,12 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 192,
+   "pct": 256,
    "same_agency": false,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 0,
     "source": 2
    },
@@ -1713,7 +1518,7 @@
   "US-11995": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Fort Frederick Heritage Preserve",
    "official": null,
    "ours": {
@@ -1765,7 +1570,7 @@
   },
   "US-12107": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lake Cherokee State Fishing Lake",
    "official": {
@@ -1773,13 +1578,13 @@
     "as": "50 acres",
     "clean": true,
     "line": "er, and catfish. General Information Property Location: Gaffney, SC 29340 Latitude: 35.042 Longitude: -81.572 Acreage: 50 County: Cherokee Property Type: Public Fishing Lake Hours of Operation: This lake is open 24 hours a day to fi",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Acreage: 50 County: Cherokee",
     "url": "https://www.dnr.sc.gov/lakes/state/cherokee/index.html",
     "why": "clean total"
    },
    "ours": {
-    "acres": 103,
+    "acres": 134,
     "dissolved": {
      "after": 184,
      "before": 234,
@@ -1790,10 +1595,8 @@
      },
      "family_fold": 50,
      "family_used": "padus",
-     "key_union": 103,
      "parts": 0,
      "records": 3,
-     "summed": 134,
      "tracts": 2
     },
     "family_fold": "layers {'padus': 134, 'sgsca': 50}: one land in 2 layers, the padus copy used (50 ac of copies not added)",
@@ -1825,7 +1628,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 106,
+   "pct": 168,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -1860,7 +1663,7 @@
   },
   "US-12108": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 100 acres, no total words near it)",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lake Thicketty State Fishing Lake",
    "official": {
@@ -1868,13 +1671,13 @@
     "as": "100 acres",
     "clean": false,
     "line": "er, and catfish. General Information Property Location: Cowpens, SC 29330 Latitude: 35.079 Longitude: -81.782 Acreage: 100 County: Cherokee Property Type: Public Fishing Lake Hours of Operation: This lake is open to fishing 24 hours",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Acreage: 100 County: Cherokee",
     "url": "https://www.dnr.sc.gov/lakes/state/thicketty/index.html",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 135,
+    "acres": 159,
     "dissolved": {
      "after": 204,
      "before": 304,
@@ -1885,7 +1688,7 @@
      },
      "family_fold": 100,
      "family_used": "padus",
-     "key_union": 135,
+     "key_union": 159,
      "parts": 0,
      "records": 4,
      "summed": 104,
@@ -1926,7 +1729,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 35,
+   "pct": 59,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -1962,7 +1765,7 @@
   "US-12589": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Beaverdam Creek Waterfowl Management Area Wildlife Management Area",
    "official": null,
    "ours": {
@@ -1995,7 +1798,7 @@
    "verdict": "ours unknown"
   },
   "US-13016": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Pine Island State Park",
    "ours": null,
@@ -2005,7 +1808,7 @@
    "verdict": "no outline"
   },
   "US-13198": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Black River State Park",
    "ours": null,
@@ -2017,10 +1820,11 @@
   "US-13257": {
    "checked": "2026-11-08",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Coosawhatchie Heritage Preserve",
    "official": null,
    "ours": {
-    "acres": 10004,
+    "acres": 10772,
     "manager": "",
     "pieces": [],
     "pin": "inside",
@@ -2049,30 +1853,18 @@
    "verdict": "no size on page"
   },
   "US-2882": {
-   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 1067 acres, no total words near it)",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Aiken State Park",
-   "official": {
-    "acres": 1067.0,
-    "as": "1067 acres",
-    "clean": false,
-    "line": "rail on the South Fork of the Edisto River 3 picnic shelters for rental 4 park lakes for fishing 25 campsites 1067 acres to enjoy Golf Cart Policy Important Info EXPLORE MORE UPCOMING STATE PARK EVENTS SHARE YOUR EXPERIENCES ON SO",
-    "read": "2026-11-08",
-    "sent": "1067 acres to enjoy",
-    "url": "https://southcarolinaparks.com/aiken",
-    "why": "no total words near it"
-   },
+   "official": null,
    "ours": {
-    "acres": 1658,
+    "acres": 1175,
     "dissolved": {
      "after": 1175,
      "before": 2342,
      "copies": 1,
-     "key_union": 1658,
      "parts": 0,
      "records": 2,
-     "summed": 1175,
      "tracts": 1
     },
     "manager": "",
@@ -2097,8 +1889,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 55,
-   "same_agency": false,
+   "pct": null,
    "score": 7,
    "score_parts": {
     "name": 2,
@@ -2106,36 +1897,24 @@
     "size": 1,
     "source": 2
    },
-   "sizes": [
-    {
-     "acres": 1067.0,
-     "as": "1067 acres",
-     "clean": false,
-     "line": "rail on the South Fork of the Edisto River 3 picnic shelters for rental 4 park lakes for fishing 25 campsites 1067 acres to enjoy Golf Cart Policy Important Info EXPLORE MORE UPCOMING STATE PARK EVENTS SHARE YOUR EXPERIENCES ON SO",
-     "total_like": false,
-     "url": "https://southcarolinaparks.com/aiken",
-     "why": "no total words near it"
-    }
-   ],
+   "sizes": [],
    "t": "State Park",
    "ver": 15,
-   "verdict": "unsure"
+   "verdict": "no size on page"
   },
   "US-2883": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Andrew Jackson State Park",
    "official": null,
    "ours": {
-    "acres": 342,
+    "acres": 325,
     "dissolved": {
      "after": 325,
      "before": 649,
      "copies": 1,
-     "key_union": 342,
      "parts": 0,
      "records": 2,
-     "summed": 325,
      "tracts": 1
     },
     "manager": "",
@@ -2174,10 +1953,19 @@
    "verdict": "no size on page"
   },
   "US-2884": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Baker Creek State Park",
-   "official": null,
+   "official": {
+    "acres": 1305.0,
+    "as": "1305 acres",
+    "clean": false,
+    "line": "Pavilion perfect for family reunions and group gatherings 2 picnic shelters available first come, first serve 1305 acres in rural McCormick County PARK DEALS SEE ALL DEALS 2026 Cyber Weekend Deals Baker Creek State Park READ MORE",
+    "read": "2026-11-22",
+    "sent": "1305 acres in rural McCormick County",
+    "url": "https://southcarolinaparks.com/baker-creek",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 1335,
     "family_fold": "layers {'padus': 1335, 'sgscb': 1238}: one land in 2 layers, the padus copy used (1,238 ac of copies not added)",
@@ -2202,29 +1990,58 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 2,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 71100.0,
+     "as": "71,100 acre",
+     "clean": false,
+     "line": "ls that take bikers through oak and pine woodlands. Outside the stillness of the woods sits Lake Thurmond , a 71,100-acre lake that offers campers serene, lakeside camping sites, as well as easy lake access for boaters and fishers.",
+     "total_like": false,
+     "url": "https://southcarolinaparks.com/baker-creek",
+     "why": "part (a lake, a purchase, a campground…)"
+    },
+    {
+     "acres": 71000.0,
+     "as": "71,000 acre",
+     "clean": false,
+     "line": "and fishing fun on the South Edisto River or at Keowee-Toxaway State Park . BY THE NUMBERS 2 boat ramps into 71,000 acre Lake Thurmond 34 campsites for RVs or tents 1 Pavilion perfect for family reunions and group gatherings 2 pic",
+     "total_like": false,
+     "url": "https://southcarolinaparks.com/baker-creek",
+     "why": "part (a lake, a purchase, a campground…)"
+    },
+    {
+     "acres": 1305.0,
+     "as": "1305 acres",
+     "clean": false,
+     "line": "Pavilion perfect for family reunions and group gatherings 2 picnic shelters available first come, first serve 1305 acres in rural McCormick County PARK DEALS SEE ALL DEALS 2026 Cyber Weekend Deals Baker Creek State Park READ MORE",
+     "total_like": false,
+     "url": "https://southcarolinaparks.com/baker-creek",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-2885": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Barnwell State Park",
    "official": {
     "acres": 307.0,
     "as": "307 acres",
     "clean": false,
-    "line": "gatherings 1 Community Building perfect for reunions, weddings and more 3 small park lakes teeming with fish 307 acres to enjoy Golf Cart Policy Important Info Pet Friendly Lodging EXPLORE MORE UPCOMING STATE PARK EVENTS SHARE Y",
-    "read": "2026-11-08",
+    "line": "gatherings 1 Community Building perfect for reunions, weddings and more 3 small park lakes teeming with fish 307 acres to enjoy PARK DEALS SEE ALL DEALS 2026 Cyber Weekend Deals Barnwell State Park READ MORE Dashing Through the",
+    "read": "2026-11-22",
     "sent": "307 acres to enjoy",
     "url": "https://southcarolinaparks.com/barnwell",
     "why": "no total words near it"
@@ -2267,7 +2084,7 @@
      "acres": 307.0,
      "as": "307 acres",
      "clean": false,
-     "line": "gatherings 1 Community Building perfect for reunions, weddings and more 3 small park lakes teeming with fish 307 acres to enjoy Golf Cart Policy Important Info Pet Friendly Lodging EXPLORE MORE UPCOMING STATE PARK EVENTS SHARE Y",
+     "line": "gatherings 1 Community Building perfect for reunions, weddings and more 3 small park lakes teeming with fish 307 acres to enjoy PARK DEALS SEE ALL DEALS 2026 Cyber Weekend Deals Barnwell State Park READ MORE Dashing Through the",
      "total_like": false,
      "url": "https://southcarolinaparks.com/barnwell",
      "why": "no total words near it"
@@ -2279,7 +2096,7 @@
   },
   "US-2886": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Caesar's Head State Park",
    "official": null,
@@ -2294,7 +2111,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -2307,10 +2124,10 @@
     }
    ],
    "pct": null,
-   "score": 5,
+   "score": 4,
    "score_parts": {
     "name": 1,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 1
    },
@@ -2330,10 +2147,20 @@
    "verdict": "unsure"
   },
   "US-2887": {
-   "checked": "2026-11-08",
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 318 acres, no total words near it)",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Calhoun Falls State Park",
-   "official": null,
+   "official": {
+    "acres": 318.0,
+    "as": "318 acres",
+    "clean": false,
+    "line": "1 tennis court and 1 basketball court for your recreational use 1.75 mile loop trail for walking and exercise 318 acres providing access to beautiful Lake Russell PARK DEALS SEE ALL DEALS 2026 Cyber Weekend Deals Calhoun Falls St",
+    "read": "2026-11-22",
+    "sent": "318 acres providing access to beautiful Lake Russell",
+    "url": "https://southcarolinaparks.com/calhoun-falls",
+    "why": "no total words near it"
+   },
    "ours": {
     "acres": 483,
     "manager": "",
@@ -2357,6 +2184,67 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
+   "pct": 52,
+   "same_agency": false,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 318.0,
+     "as": "318 acres",
+     "clean": false,
+     "line": "1 tennis court and 1 basketball court for your recreational use 1.75 mile loop trail for walking and exercise 318 acres providing access to beautiful Lake Russell PARK DEALS SEE ALL DEALS 2026 Cyber Weekend Deals Calhoun Falls St",
+     "total_like": false,
+     "url": "https://southcarolinaparks.com/calhoun-falls",
+     "why": "no total words near it"
+    }
+   ],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "unsure"
+  },
+  "US-2888": {
+   "checked": "2026-11-22",
+   "handover": [],
+   "n": "Cheraw State Park",
+   "official": null,
+   "ours": {
+    "acres": 7335,
+    "dissolved": {
+     "after": 7335,
+     "before": 14613,
+     "copies": 1,
+     "parts": 0,
+     "records": 2,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 14613 -> 7335 acres",
+    "pieces": [
+     [
+      "sgscb7",
+      "Cheraw State Park",
+      7335,
+      "reviewed"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://southcarolinaparks.com/cheraw",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
    "pct": null,
    "score": 6,
    "score_parts": {
@@ -2370,30 +2258,28 @@
    "ver": 15,
    "verdict": "no size on page"
   },
-  "US-2888": {
-   "checked": "2026-11-08",
+  "US-2889": {
+   "checked": "2026-11-22",
    "handover": [],
-   "n": "Cheraw State Park",
+   "n": "Chester State Park",
    "official": null,
    "ours": {
-    "acres": 8805,
+    "acres": 527,
     "dissolved": {
-     "after": 7335,
-     "before": 14613,
+     "after": 527,
+     "before": 1048,
      "copies": 1,
-     "key_union": 8805,
      "parts": 0,
      "records": 2,
-     "summed": 7335,
      "tracts": 1
     },
     "manager": "",
-    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 14613 -> 7335 acres",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1048 -> 527 acres",
     "pieces": [
      [
-      "sgscb7",
-      "Cheraw State Park",
-      7335,
+      "sgscb8",
+      "Chester State Park",
+      527,
       "reviewed"
      ]
     ],
@@ -2405,7 +2291,7 @@
    "pages": [
     {
      "status": "ok",
-     "url": "https://southcarolinaparks.com/cheraw",
+     "url": "https://southcarolinaparks.com/chester",
      "why": "the park's page (data/parkinfo)"
     }
    ],
@@ -2422,65 +2308,13 @@
    "ver": 15,
    "verdict": "no size on page"
   },
-  "US-2889": {
-   "checked": "2026-11-08",
-   "handover": [],
-   "n": "Chester State Park",
-   "official": null,
-   "ours": {
-    "acres": 445,
-    "dissolved": {
-     "after": 527,
-     "before": 1048,
-     "copies": 1,
-     "key_union": 445,
-     "parts": 0,
-     "records": 2,
-     "summed": 527,
-     "tracts": 1
-    },
-    "manager": "",
-    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1048 -> 527 acres",
-    "pieces": [
-     [
-      "sgscb8",
-      "Chester State Park",
-      527,
-      "reviewed"
-     ]
-    ],
-    "pin": "just outside",
-    "src": "USGS PAD-US",
-    "unknown_pieces": 0
-   },
-   "owner_now": null,
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://southcarolinaparks.com/chester",
-     "why": "the park's page (data/parkinfo)"
-    }
-   ],
-   "pct": null,
-   "score": 6,
-   "score_parts": {
-    "name": 2,
-    "pin": 1,
-    "size": 1,
-    "source": 2
-   },
-   "sizes": [],
-   "t": "State Park",
-   "ver": 15,
-   "verdict": "no size on page"
-  },
   "US-2890": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Colleton State Park",
    "official": null,
    "ours": {
-    "acres": 30,
+    "acres": 35,
     "family_fold": "layers {'sgscb': 40, 'padus': 34}: one land in 2 layers, the sgscb copy used (34 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -2517,10 +2351,19 @@
    "verdict": "no size on page"
   },
   "US-2891": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Croft State Park",
-   "official": null,
+   "official": {
+    "acres": 7000.0,
+    "as": "7,000 acres",
+    "clean": false,
+    "line": "e is about three miles down from the main gate. Once an army training base, Croft State Park covers more than 7,000 acres of rolling, wooded terrain just a few miles from downtown Spartanburg. The park offers over 20 miles of bikin",
+    "read": "2026-11-22",
+    "sent": "Once an army training base, Croft State Park covers more than 7,000 acres of rolling, wooded terrain just a few miles from downtown Spartanburg.",
+    "url": "https://southcarolinaparks.com/croft",
+    "why": "history"
+   },
    "ours": {
     "acres": 6990,
     "family_fold": "layers {'sgscb': 6990, 'padus': 6842}: one land in 2 layers, the sgscb copy used (6,842 ac of copies not added)",
@@ -2545,21 +2388,50 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 0,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 7000.0,
+     "as": "7,000 acres",
+     "clean": false,
+     "line": "e is about three miles down from the main gate. Once an army training base, Croft State Park covers more than 7,000 acres of rolling, wooded terrain just a few miles from downtown Spartanburg. The park offers over 20 miles of bikin",
+     "total_like": false,
+     "url": "https://southcarolinaparks.com/croft",
+     "why": "history"
+    },
+    {
+     "acres": 165.0,
+     "as": "165 acre",
+     "clean": false,
+     "line": "NUMBERS 1 park with a rich history - the land was once several homesteads and later a WWII Army training camp 165 acre Lake Craig for fishing and paddling 50 campsites for RV or tent camping - 25 of which offer 20/30/50 amp serv",
+     "total_like": false,
+     "url": "https://southcarolinaparks.com/croft",
+     "why": "part (a lake, a purchase, a campground…)"
+    },
+    {
+     "acres": 7054.0,
+     "as": "7054 acres",
+     "clean": false,
+     "line": "- bring your own horse and ride the trails all day 20+ miles of biking trails 2.5 miles of hiking only trails 7054 acres of parkland - one of the largest in the SC State Park Service 5 miles from downtown Spartanburg, SC PARK DEAL",
+     "total_like": false,
+     "url": "https://southcarolinaparks.com/croft",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-2892": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Devil's Fork State Park",
    "official": null,
@@ -2574,7 +2446,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -2587,10 +2459,10 @@
     }
    ],
    "pct": null,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 1,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -2600,22 +2472,12 @@
    "verdict": "no size on page"
   },
   "US-2893": {
-   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Dreher Island State Park",
-   "official": {
-    "acres": 348.0,
-    "as": "348 acres",
-    "clean": true,
-    "line": "r stamp is located just outside the tackle shop in a brown box. Dreher Island State Park spans three islands, 348 acres and provides access to 12 miles of Lake Murray shoreline. Visitors will find recreational water activities, n",
-    "read": "2026-11-08",
-    "sent": "Dreher Island State Park spans three islands, 348 acres and provides access to 12 miles of Lake Murray shoreline.",
-    "url": "https://southcarolinaparks.com/dreher-island",
-    "why": "clean total"
-   },
+   "official": null,
    "ours": {
-    "acres": 445,
+    "acres": 376,
     "family_fold": "layers {'padus': 352, 'sgscb': 338}: one land in 2 layers, the padus copy used (338 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -2626,7 +2488,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -2638,42 +2500,21 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 28,
-   "same_agency": false,
-   "score": 5,
+   "pct": null,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
-    "size": 0,
+    "pin": 2,
+    "size": 1,
     "source": 2
    },
-   "sizes": [
-    {
-     "acres": 348.0,
-     "as": "348 acres",
-     "clean": true,
-     "line": "r stamp is located just outside the tackle shop in a brown box. Dreher Island State Park spans three islands, 348 acres and provides access to 12 miles of Lake Murray shoreline. Visitors will find recreational water activities, n",
-     "total_like": true,
-     "url": "https://southcarolinaparks.com/dreher-island",
-     "why": "clean total"
-    },
-    {
-     "acres": 50000.0,
-     "as": "50,000 acre",
-     "clean": false,
-     "line": "camp at one of many lakefront campsites. BY THE NUMBERS 3 islands that stretch out onto and provide access to 50,000-acre Lake Murray 30 miles from Columbia 5 lakeside villas of which two are two bedroom and three are 3 bedroom uni",
-     "total_like": false,
-     "url": "https://southcarolinaparks.com/dreher-island",
-     "why": "part (a lake, a purchase, a campground…)"
-    }
-   ],
+   "sizes": [],
    "t": "State Park",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "no size on page"
   },
   "US-2894": {
-   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Edisto Beach State Park",
    "official": {
@@ -2681,13 +2522,13 @@
     "as": "1255 acres",
     "clean": false,
     "line": "ach State Par k or enjoy some of the finest kayaking in South Carolina at Goodale State Park . BY THE NUMBERS 1255 acres make up this special park 4 miles of ADA accessible trails 1.5 miles of beach, laden with seashells 2 oceanfr",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "1255 acres make up this special park",
     "url": "https://southcarolinaparks.com/edisto-beach?gclid=CjwKCAjw9suYBhBIEiwA7iMhNN_FRu-xYosbERrkV81b55GXcG7X9DYg5CULFdNEqdnuAPlIAqrQNRoCbRUQAvD_BwE",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 1445,
+    "acres": 1165,
     "family_fold": "layers {'sgscb': 1105, 'padus': 1024}: one land in 2 layers, the sgscb copy used (1,024 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -2698,7 +2539,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -2710,13 +2551,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 15,
+   "pct": 7,
    "same_agency": false,
-   "score": 5,
+   "score": 8,
    "score_parts": {
     "name": 2,
-    "pin": 1,
-    "size": 0,
+    "pin": 2,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -2732,15 +2573,24 @@
    ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-2895": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Givhans Ferry State Park",
-   "official": null,
+   "official": {
+    "acres": 988.0,
+    "as": "988 acres",
+    "clean": false,
+    "line": "r family or other group outings 1.5 mile River Bluff Nature Trail 10 hike in campsites for tents and hammocks 988 acres of lowcountry splendor PARK DEALS SEE ALL DEALS 2026 Cyber Weekend Deals Givhans Ferry State Park READ MORE D",
+    "read": "2026-11-22",
+    "sent": "988 acres of lowcountry splendor",
+    "url": "https://southcarolinaparks.com/givhans-ferry",
+    "why": "no total words near it"
+   },
    "ours": {
-    "acres": 896,
+    "acres": 1036,
     "family_fold": "layers {'sgscb': 1036, 'padus': 1002}: one land in 2 layers, the sgscb copy used (1,002 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -2751,7 +2601,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -2763,34 +2613,52 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 5,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
-    "pin": 1,
-    "size": 1,
+    "pin": 2,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 988.0,
+     "as": "988 acres",
+     "clean": false,
+     "line": "r family or other group outings 1.5 mile River Bluff Nature Trail 10 hike in campsites for tents and hammocks 988 acres of lowcountry splendor PARK DEALS SEE ALL DEALS 2026 Cyber Weekend Deals Givhans Ferry State Park READ MORE D",
+     "total_like": false,
+     "url": "https://southcarolinaparks.com/givhans-ferry",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-2896": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Goodale State Park",
-   "official": null,
+   "official": {
+    "acres": 763.0,
+    "as": "763 acres",
+    "clean": false,
+    "line": "lding available for rental and accommodates up to 60 people 2 picnic shelters awaiting your next group picnic 763 acres of parkland near Camden, SC and less than 40 miles from downtown Columbia PARK DEALS SEE ALL DEALS 2026 Cyber",
+    "read": "2026-11-22",
+    "sent": "763 acres of parkland near Camden, SC and less than 40 miles from downtown Columbia",
+    "url": "https://southcarolinaparks.com/goodale",
+    "why": "no total words near it"
+   },
    "ours": {
-    "acres": 609,
+    "acres": 764,
     "dissolved": {
      "after": 764,
      "before": 1523,
      "copies": 1,
-     "key_union": 609,
      "parts": 0,
      "records": 2,
-     "summed": 764,
      "tracts": 1
     },
     "manager": "",
@@ -2815,27 +2683,46 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 0,
+   "same_agency": false,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 140.0,
+     "as": "140 acre",
+     "clean": false,
+     "line": "ivil War-era mill pond 3 mile cypress canoe trail, some say is the best undiscovered canoe trail in the state 140 acre park lake where you can catch bass, bream and catfish 1 great Community Building available for rental and acc",
+     "total_like": true,
+     "url": "https://southcarolinaparks.com/goodale",
+     "why": "total-looking"
+    },
+    {
+     "acres": 763.0,
+     "as": "763 acres",
+     "clean": false,
+     "line": "lding available for rental and accommodates up to 60 people 2 picnic shelters awaiting your next group picnic 763 acres of parkland near Camden, SC and less than 40 miles from downtown Columbia PARK DEALS SEE ALL DEALS 2026 Cyber",
+     "total_like": false,
+     "url": "https://southcarolinaparks.com/goodale",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-2897": {
-   "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Hamilton Branch State Park",
    "official": null,
    "ours": {
-    "acres": 788,
+    "acres": 735,
     "family_fold": "layers {'padus': 735, 'sgscb': 717}: one land in 2 layers, the padus copy used (717 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -2866,37 +2753,25 @@
     "size": 1,
     "source": 2
    },
-   "sizes": [
-    {
-     "acres": 70000.0,
-     "as": "70,000 acre",
-     "clean": false,
-     "line": "main office. Located in Plum Branch, South Carolina , Hamilton Branch State Park occupies a peninsula on the 70,000-acre Lake Thurmond. Thanks to activities such as fishing, boating and lakefront camping, the park is a haven for o",
-     "total_like": false,
-     "url": "https://southcarolinaparks.com/hamilton-branch",
-     "why": "part (a lake, a purchase, a campground…)"
-    }
-   ],
+   "sizes": [],
    "t": "State Park",
    "ver": 15,
-   "verdict": "unsure"
+   "verdict": "no size on page"
   },
   "US-2898": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Hickory Knob Resort State Park",
    "official": null,
    "ours": {
-    "acres": 1247,
+    "acres": 1001,
     "dissolved": {
      "after": 1001,
      "before": 1987,
      "copies": 1,
-     "key_union": 1247,
      "parts": 0,
      "records": 2,
-     "summed": 1001,
      "tracts": 1
     },
     "manager": "",
@@ -2945,12 +2820,12 @@
    "verdict": "unsure"
   },
   "US-2899": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Hunting Island State Park",
    "official": null,
    "ours": {
-    "acres": 4851,
+    "acres": 5291,
     "family_fold": "layers {'sgscb': 5291, 'padus': 1343}: one land in 2 layers, the sgscb copy used (1,343 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -2988,29 +2863,27 @@
   },
   "US-2900": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 2500 acres, no total words near it)",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Huntington Beach State Park",
    "official": {
     "acres": 2500.0,
     "as": "2500 acres",
     "clean": false,
-    "line": "he park 1 popular annual arts and crafts festival, held every September for over 40 years in the Atalaya home 2500 acres located in Murrells Inlet for you to enjoy Golf Cart Policy Important Info Come Out & Play 5K Race Series EXP",
-    "read": "2026-11-08",
+    "line": "he park 1 popular annual arts and crafts festival, held every September for over 40 years in the Atalaya home 2500 acres located in Murrells Inlet for you to enjoy PARK DEALS SEE ALL DEALS 2026 Cyber Weekend Deals Huntington Beach",
+    "read": "2026-11-22",
     "sent": "2500 acres located in Murrells Inlet for you to enjoy",
     "url": "https://southcarolinaparks.com/huntington-beach",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 1083,
+    "acres": 1627,
     "dissolved": {
      "after": 1627,
      "before": 3252,
      "copies": 1,
-     "key_union": 1083,
      "parts": 0,
      "records": 2,
-     "summed": 1627,
      "tracts": 1
     },
     "manager": "",
@@ -3035,7 +2908,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 57,
+   "pct": 35,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -3049,7 +2922,7 @@
      "acres": 2500.0,
      "as": "2500 acres",
      "clean": false,
-     "line": "he park 1 popular annual arts and crafts festival, held every September for over 40 years in the Atalaya home 2500 acres located in Murrells Inlet for you to enjoy Golf Cart Policy Important Info Come Out & Play 5K Race Series EXP",
+     "line": "he park 1 popular annual arts and crafts festival, held every September for over 40 years in the Atalaya home 2500 acres located in Murrells Inlet for you to enjoy PARK DEALS SEE ALL DEALS 2026 Cyber Weekend Deals Huntington Beach",
      "total_like": false,
      "url": "https://southcarolinaparks.com/huntington-beach",
      "why": "no total words near it"
@@ -3060,7 +2933,7 @@
    "verdict": "unsure"
   },
   "US-2901": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Jones Gap State Park",
    "official": null,
@@ -3075,7 +2948,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -3088,10 +2961,10 @@
     }
    ],
    "pct": null,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 1
    },
@@ -3101,20 +2974,27 @@
    "verdict": "no size on page"
   },
   "US-2902": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Kings Mountain State Park",
-   "official": null,
+   "official": {
+    "acres": 6885.0,
+    "as": "6885 acres",
+    "clean": false,
+    "line": "e Crawford and Lake York - for fishing and paddling 2 picnic shelters available for rent for group gatherings 6885 acres for you to enjoy PARK DEALS SEE ALL DEALS 2026 Cyber Weekend Deals Kings Mountain State Park READ MORE Dashin",
+    "read": "2026-11-22",
+    "sent": "6885 acres for you to enjoy",
+    "url": "https://southcarolinaparks.com/kings-mountain",
+    "why": "no total words near it"
+   },
    "ours": {
-    "acres": 8244,
+    "acres": 6947,
     "dissolved": {
      "after": 6947,
      "before": 13855,
      "copies": 0,
-     "key_union": 8244,
      "parts": 2,
      "records": 3,
-     "summed": 6947,
      "tracts": 1
     },
     "manager": "",
@@ -3139,26 +3019,38 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 1,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 6885.0,
+     "as": "6885 acres",
+     "clean": false,
+     "line": "e Crawford and Lake York - for fishing and paddling 2 picnic shelters available for rent for group gatherings 6885 acres for you to enjoy PARK DEALS SEE ALL DEALS 2026 Cyber Weekend Deals Kings Mountain State Park READ MORE Dashin",
+     "total_like": false,
+     "url": "https://southcarolinaparks.com/kings-mountain",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-2903": {
-   "checked": "2026-11-08",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lake Warren State Park",
    "official": null,
    "ours": {
-    "acres": 575,
+    "acres": 674,
     "family_fold": "layers {'sgscb': 452, 'padus': 674}: one land in 2 layers, the padus copy used (452 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -3181,7 +3073,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -3194,20 +3086,39 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 200.0,
+     "as": "200 acre",
+     "clean": false,
+     "line": "are home to a wide variety of plants and animals. Find prime South Carolina freshwater fishing and boating on 200-acre Lake Warren. The park also has a two-acre fishing pond for more great South Carolina freshwater fishing , two",
+     "total_like": false,
+     "url": "https://southcarolinaparks.com/lake-warren",
+     "why": "part (a lake, a purchase, a campground…)"
+    },
+    {
+     "acres": 200.0,
+     "as": "200 acre",
+     "clean": false,
+     "line": "some exercise on our fitness trail! 3 rental fishing boats that come equipped with an electric trolling motor 200 acre Lake George Warren waiting for your fishing adventure PARK DEALS SEE ALL DEALS 2026 Cyber Weekend Deals Lake",
+     "total_like": false,
+     "url": "https://southcarolinaparks.com/lake-warren",
+     "why": "part (a lake, a purchase, a campground…)"
+    }
+   ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-2904": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Landsford Canal State Park",
    "official": null,
@@ -3250,7 +3161,7 @@
   },
   "US-2905": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 3233 acres, no total words near it)",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lee State Park",
    "official": {
@@ -3258,13 +3169,13 @@
     "as": "3233 acres",
     "clean": false,
     "line": "trail at Colleton State Park! BY THE NUMBERS 1 of 16 SC State Parks built by the Civilian Conservation Corps 3233 acres, made up mostly of bottomland hardwood forest wetlands 4 artesian wells that flow 24 hours a day, 7 days a we",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "3233 acres, made up mostly of bottomland hardwood forest wetlands",
     "url": "https://southcarolinaparks.com/lee",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 2481,
+    "acres": 2645,
     "family_fold": "layers {'sgscb': 2645, 'padus': 1860}: one land in 2 layers, the sgscb copy used (1,860 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -3287,7 +3198,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 23,
+   "pct": 18,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -3312,12 +3223,12 @@
    "verdict": "unsure"
   },
   "US-2906": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Little Pee Dee State Park",
    "official": null,
    "ours": {
-    "acres": 923,
+    "acres": 1152,
     "dissolved": {
      "after": 1128,
      "before": 2255,
@@ -3328,7 +3239,7 @@
      },
      "family_fold": 301,
      "family_used": "padus",
-     "key_union": 923,
+     "key_union": 1152,
      "parts": 0,
      "records": 4,
      "summed": 827,
@@ -3371,7 +3282,7 @@
    "verdict": "no size on page"
   },
   "US-2907": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
@@ -3385,15 +3296,13 @@
    "n": "Myrtle Beach State Park",
    "official": null,
    "ours": {
-    "acres": 236,
+    "acres": 330,
     "dissolved": {
      "after": 330,
      "before": 657,
      "copies": 1,
-     "key_union": 236,
      "parts": 0,
      "records": 2,
-     "summed": 330,
      "tracts": 1
     },
     "manager": "",
@@ -3432,7 +3341,7 @@
    "verdict": "no size on page"
   },
   "US-2908": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Oconee State Park",
    "official": null,
@@ -3474,15 +3383,15 @@
    "verdict": "no size on page"
   },
   "US-2909": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Paris Mountain State Park",
    "official": {
     "acres": 1700.0,
     "as": "1700 acres",
     "clean": false,
-    "line": "nt pads 5 trailside camping sites 6 picnic shelters available for rent for picnics and other group gatherings 1700 acres of parkland near downtown Greenville for you to explore Golf Cart Policy Important Info Fall Foliage Report E",
-    "read": "2026-11-08",
+    "line": "nt pads 5 trailside camping sites 6 picnic shelters available for rent for picnics and other group gatherings 1700 acres of parkland near downtown Greenville for you to explore PARK DEALS SEE ALL DEALS 2026 Cyber Weekend Deals Par",
+    "read": "2026-11-22",
     "sent": "1700 acres of parkland near downtown Greenville for you to explore",
     "url": "https://southcarolinaparks.com/paris-mountain",
     "why": "no total words near it"
@@ -3499,7 +3408,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -3513,10 +3422,10 @@
    ],
    "pct": 0,
    "same_agency": false,
-   "score": 7,
+   "score": 8,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 2,
     "source": 2
    },
@@ -3525,7 +3434,7 @@
      "acres": 1700.0,
      "as": "1700 acres",
      "clean": false,
-     "line": "nt pads 5 trailside camping sites 6 picnic shelters available for rent for picnics and other group gatherings 1700 acres of parkland near downtown Greenville for you to explore Golf Cart Policy Important Info Fall Foliage Report E",
+     "line": "nt pads 5 trailside camping sites 6 picnic shelters available for rent for picnics and other group gatherings 1700 acres of parkland near downtown Greenville for you to explore PARK DEALS SEE ALL DEALS 2026 Cyber Weekend Deals Par",
      "total_like": false,
      "url": "https://southcarolinaparks.com/paris-mountain",
      "why": "no total words near it"
@@ -3536,20 +3445,27 @@
    "verdict": "agree"
   },
   "US-2910": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Poinsett State Park",
-   "official": null,
+   "official": {
+    "acres": 1000.0,
+    "as": "1000 acres",
+    "clean": false,
+    "line": "tate Park by the CCC 5 Stand Up Paddleboards, 8 Kayaks, 1 Jon Boat, 3 Canoes, 1 Pedal Boat available for rent 1000 acres of diverse landscape that offers a taste of the mountains all the way to the low country. PARK DEALS SEE ALL",
+    "read": "2026-11-22",
+    "sent": "1000 acres of diverse landscape that offers a taste of the mountains all the way to the low country.",
+    "url": "https://southcarolinaparks.com/poinsett",
+    "why": "total-looking"
+   },
    "ours": {
-    "acres": 878,
+    "acres": 1011,
     "dissolved": {
      "after": 1011,
      "before": 2012,
      "copies": 1,
-     "key_union": 878,
      "parts": 0,
      "records": 2,
-     "summed": 1011,
      "tracts": 1
     },
     "manager": "",
@@ -3562,7 +3478,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -3574,21 +3490,50 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 1,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
-    "pin": 1,
-    "size": 1,
+    "pin": 2,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 10.0,
+     "as": "10 acre",
+     "clean": false,
+     "line": "ome of which connect to the Palmetto Trail that leads hikers through the Manchester State Forest . Poinsett’s 10-acre lake makes for a serene setting, and can be used for fishing and johnboat rentals. The park also offers camps",
+     "total_like": false,
+     "url": "https://southcarolinaparks.com/poinsett",
+     "why": "part (a lake, a purchase, a campground…)"
+    },
+    {
+     "acres": 10.0,
+     "as": "10 acres",
+     "clean": false,
+     "line": "CCC camps built what is now Poinsett State Park 25.6 miles of trails for mountain biking, hiking, and running 10 acres on Levi Mill Lake to fish, swim, or boat and recreate in at Poinsett State Park 50 campsites are available wi",
+     "total_like": true,
+     "url": "https://southcarolinaparks.com/poinsett",
+     "why": "total-looking"
+    },
+    {
+     "acres": 1000.0,
+     "as": "1000 acres",
+     "clean": false,
+     "line": "tate Park by the CCC 5 Stand Up Paddleboards, 8 Kayaks, 1 Jon Boat, 3 Canoes, 1 Pedal Boat available for rent 1000 acres of diverse landscape that offers a taste of the mountains all the way to the low country. PARK DEALS SEE ALL",
+     "total_like": true,
+     "url": "https://southcarolinaparks.com/poinsett",
+     "why": "total-looking"
+    }
+   ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-2911": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Sadlers Creek State Park",
    "official": null,
@@ -3604,7 +3549,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -3617,10 +3562,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -3631,21 +3576,21 @@
   },
   "US-2912": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Santee State Park",
    "official": {
     "acres": 2500.0,
     "as": "2500 acres",
     "clean": false,
-    "line": "picnics and group gatherings 30 modern cabins- 10 located on a pier over Lake Marion and 20 on the lakeshore 2500 acres in the heart of Santee Cooper Country Golf Cart Policy Important Info Pet Friendly Lodging EXPLORE MORE UPCOM",
-    "read": "2026-11-08",
+    "line": "picnics and group gatherings 30 modern cabins- 10 located on a pier over Lake Marion and 20 on the lakeshore 2500 acres in the heart of Santee Cooper Country PARK DEALS SEE ALL DEALS 2026 Cyber Weekend Deals Santee State Park REA",
+    "read": "2026-11-22",
     "sent": "2500 acres in the heart of Santee Cooper Country",
     "url": "https://southcarolinaparks.com/santee",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 3534,
+    "acres": 2952,
     "family_fold": "layers {'sgscb': 2952, 'padus': 2828}: one land in 2 layers, the sgscb copy used (2,828 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -3668,7 +3613,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 41,
+   "pct": 18,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -3691,7 +3636,7 @@
      "acres": 2500.0,
      "as": "2500 acres",
      "clean": false,
-     "line": "picnics and group gatherings 30 modern cabins- 10 located on a pier over Lake Marion and 20 on the lakeshore 2500 acres in the heart of Santee Cooper Country Golf Cart Policy Important Info Pet Friendly Lodging EXPLORE MORE UPCOM",
+     "line": "picnics and group gatherings 30 modern cabins- 10 located on a pier over Lake Marion and 20 on the lakeshore 2500 acres in the heart of Santee Cooper Country PARK DEALS SEE ALL DEALS 2026 Cyber Weekend Deals Santee State Park REA",
      "total_like": true,
      "url": "https://southcarolinaparks.com/santee",
      "why": "total-looking"
@@ -3702,20 +3647,27 @@
    "verdict": "off"
   },
   "US-2913": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Sesquicentennial State Park",
-   "official": null,
+   "official": {
+    "acres": 1400.0,
+    "as": "1,400 acres",
+    "clean": false,
+    "line": "s as \"Sesqui,\" is a spacious, green getaway in the heart of the Sandhills region. Once you're immersed in the 1,400 acres of pines, camping sites, and nature trails you forget just how close you are to bustling, downtown Columbia,",
+    "read": "2026-11-22",
+    "sent": "Once you're immersed in the 1,400 acres of pines, camping sites, and nature trails you forget just how close you are to bustling, downtown Columbia, South Carolina .",
+    "url": "https://southcarolinaparks.com/sesqui",
+    "why": "history"
+   },
    "ours": {
-    "acres": 1175,
+    "acres": 1394,
     "dissolved": {
      "after": 1394,
      "before": 2786,
      "copies": 1,
-     "key_union": 1175,
      "parts": 0,
      "records": 2,
-     "summed": 1394,
      "tracts": 1
     },
     "manager": "",
@@ -3745,29 +3697,67 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 0,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 2.0,
+     "as": "2 acre",
+     "clean": false,
+     "line": "ot longer than six feet. There is also a dog park available at Sesquicentennial State Park. The dog park is a 2-acre, fenced-in area for dogs to run off-leash. To access the off-leash dog park, a permit is required for each do",
+     "total_like": true,
+     "url": "https://southcarolinaparks.com/sesqui",
+     "why": "total-looking"
+    },
+    {
+     "acres": 1400.0,
+     "as": "1,400 acres",
+     "clean": false,
+     "line": "s as \"Sesqui,\" is a spacious, green getaway in the heart of the Sandhills region. Once you're immersed in the 1,400 acres of pines, camping sites, and nature trails you forget just how close you are to bustling, downtown Columbia,",
+     "total_like": false,
+     "url": "https://southcarolinaparks.com/sesqui",
+     "why": "history"
+    },
+    {
+     "acres": 30.0,
+     "as": "30 acre",
+     "clean": false,
+     "line": "don't forget your permit 26 sprayers on our splash pad, the only one in the South Carolina State Park System! 30 acre park lake for paddling around and fishing 12 miles of hiking and biking trails where you can stretch your leg",
+     "total_like": true,
+     "url": "https://southcarolinaparks.com/sesqui",
+     "why": "total-looking"
+    },
+    {
+     "acres": 1419.0,
+     "as": "1419 acres",
+     "clean": false,
+     "line": "an stretch your legs 3 perfect picnic shelters and 4 picnic pads for your next family reunion or group outing 1419 acres of parkland for you to enjoy in otherwise urban Columbia, SC PARK DEALS SEE ALL DEALS 2026 Cyber Weekend Deal",
+     "total_like": false,
+     "url": "https://southcarolinaparks.com/sesqui",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-2914": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Table Rock State Park",
    "official": {
     "acres": 3083.0,
     "as": "3083 acres",
     "clean": false,
-    "line": "or group gatherings 1 Music on the Mountain bluegrass jam that takes place each month at the Table Rock Lodge 3083 acres of South Carolina mountain country protected for you Golf Cart Policy Important Info Pet Friendly Lodging Fal",
-    "read": "2026-11-08",
+    "line": "or group gatherings 1 Music on the Mountain bluegrass jam that takes place each month at the Table Rock Lodge 3083 acres of South Carolina mountain country protected for you PARK DEALS SEE ALL DEALS 2026 Cyber Weekend Deals Table",
+    "read": "2026-11-22",
     "sent": "3083 acres of South Carolina mountain country protected for you",
     "url": "https://southcarolinaparks.com/table-rock",
     "why": "total-looking"
@@ -3837,7 +3827,7 @@
      "acres": 3083.0,
      "as": "3083 acres",
      "clean": false,
-     "line": "or group gatherings 1 Music on the Mountain bluegrass jam that takes place each month at the Table Rock Lodge 3083 acres of South Carolina mountain country protected for you Golf Cart Policy Important Info Pet Friendly Lodging Fal",
+     "line": "or group gatherings 1 Music on the Mountain bluegrass jam that takes place each month at the Table Rock Lodge 3083 acres of South Carolina mountain country protected for you PARK DEALS SEE ALL DEALS 2026 Cyber Weekend Deals Table",
      "total_like": true,
      "url": "https://southcarolinaparks.com/table-rock",
      "why": "total-looking"
@@ -3848,22 +3838,12 @@
    "verdict": "agree"
   },
   "US-2915": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Woods Bay State Park",
-   "official": {
-    "acres": 1590.0,
-    "as": "1,590 acre",
-    "clean": false,
-    "line": "fers a close-up look at one of the last remaining large Carolina Bays on the Mid-Atlantic Coastal Plain . The 1,590-acre park, located in the coastal plains region , features a wide range of habitats including marsh, sandhills, oa",
-    "read": "2026-11-08",
-    "sent": "The 1,590-acre park, located in the coastal plains region , features a wide range of habitats including marsh, sandhills, oak-hickory forest and shrub bog.",
-    "url": "https://southcarolinaparks.com/woods-bay",
-    "why": "total-looking"
-   },
+   "official": null,
    "ours": {
-    "acres": 1347,
+    "acres": 1683,
     "family_fold": "layers {'sgscb': 1683, 'padus': 1587}: one land in 2 layers, the sgscb copy used (1,587 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -3874,7 +3854,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -3886,49 +3866,29 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 15,
-   "same_agency": false,
-   "score": 5,
+   "pct": null,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
-    "size": 0,
+    "pin": 2,
+    "size": 1,
     "source": 2
    },
-   "sizes": [
-    {
-     "acres": 1590.0,
-     "as": "1,590 acre",
-     "clean": false,
-     "line": "fers a close-up look at one of the last remaining large Carolina Bays on the Mid-Atlantic Coastal Plain . The 1,590-acre park, located in the coastal plains region , features a wide range of habitats including marsh, sandhills, oa",
-     "total_like": true,
-     "url": "https://southcarolinaparks.com/woods-bay",
-     "why": "total-looking"
-    },
-    {
-     "acres": 1590.0,
-     "as": "1590 acres",
-     "clean": false,
-     "line": "ave been seen and reported within the boundaries of the park 0.75 mile loop trail, the Mill Pond Nature Trail 1590 acres of parkland in the coastal plains region of South Carolina SHARE YOUR EXPERIENCES ON SOCIAL MEDIA Use #SCStat",
-     "total_like": false,
-     "url": "https://southcarolinaparks.com/woods-bay",
-     "why": "no total words near it"
-    }
-   ],
+   "sizes": [],
    "t": "State Park",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "no size on page"
   },
   "US-3872": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Charles Towne Landing State Historic Site",
    "official": {
     "acres": 664.0,
     "as": "664 acres",
     "clean": false,
-    "line": "l event days throughout the year 6 miles of trails for walking, biking and exploring 80 acres of park gardens 664 acres of beautiful lowcountry scenery for you to enjoy SHARE YOUR EXPERIENCES ON SOCIAL MEDIA Use #SCStateParks and",
-    "read": "2026-11-08",
+    "line": "l event days throughout the year 6 miles of trails for walking, biking and exploring 80 acres of park gardens 664 acres of beautiful lowcountry scenery for you to enjoy PARK DEALS SEE ALL DEALS 2026 Cyber Weekend Deals Charles To",
+    "read": "2026-11-22",
     "sent": "664 acres of beautiful lowcountry scenery for you to enjoy",
     "url": "https://southcarolinaparks.com/charles-towne-landing",
     "why": "no total words near it"
@@ -3979,7 +3939,7 @@
      "acres": 80.0,
      "as": "80 acres",
      "clean": false,
-     "line": "that are fired on special event days throughout the year 6 miles of trails for walking, biking and exploring 80 acres of park gardens 664 acres of beautiful lowcountry scenery for you to enjoy SHARE YOUR EXPERIENCES ON SOCIAL M",
+     "line": "that are fired on special event days throughout the year 6 miles of trails for walking, biking and exploring 80 acres of park gardens 664 acres of beautiful lowcountry scenery for you to enjoy PARK DEALS SEE ALL DEALS 2026 Cybe",
      "total_like": false,
      "url": "https://southcarolinaparks.com/charles-towne-landing",
      "why": "no total words near it"
@@ -3988,7 +3948,7 @@
      "acres": 664.0,
      "as": "664 acres",
      "clean": false,
-     "line": "l event days throughout the year 6 miles of trails for walking, biking and exploring 80 acres of park gardens 664 acres of beautiful lowcountry scenery for you to enjoy SHARE YOUR EXPERIENCES ON SOCIAL MEDIA Use #SCStateParks and",
+     "line": "l event days throughout the year 6 miles of trails for walking, biking and exploring 80 acres of park gardens 664 acres of beautiful lowcountry scenery for you to enjoy PARK DEALS SEE ALL DEALS 2026 Cyber Weekend Deals Charles To",
      "total_like": false,
      "url": "https://southcarolinaparks.com/charles-towne-landing",
      "why": "no total words near it"
@@ -3999,22 +3959,12 @@
    "verdict": "agree"
   },
   "US-3873": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Colonial Dorchester State Historic Site",
-   "official": {
-    "acres": 325.0,
-    "as": "325 acres",
-    "clean": false,
-    "line": "ibits to explain the history of the village once there 1 huge archaeological treasure waiting to be uncovered 325 acres just waiting to be unearthed SHARE YOUR EXPERIENCES ON SOCIAL MEDIA Use #SCStateParks and your content could",
-    "read": "2026-11-08",
-    "sent": "325 acres just waiting to be unearthed",
-    "url": "https://southcarolinaparks.com/colonial-dorchester",
-    "why": "total-looking"
-   },
+   "official": null,
    "ours": {
-    "acres": 161,
+    "acres": 333,
     "family_fold": "layers {'sgscb': 333, 'padus': 324}: one land in 2 layers, the sgscb copy used (324 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -4042,33 +3992,21 @@
      "why": "official map (parkinfo-web)"
     }
    ],
-   "pct": 50,
-   "same_agency": false,
-   "score": 6,
+   "pct": null,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 1,
     "source": 2
    },
-   "sizes": [
-    {
-     "acres": 325.0,
-     "as": "325 acres",
-     "clean": false,
-     "line": "ibits to explain the history of the village once there 1 huge archaeological treasure waiting to be uncovered 325 acres just waiting to be unearthed SHARE YOUR EXPERIENCES ON SOCIAL MEDIA Use #SCStateParks and your content could",
-     "total_like": true,
-     "url": "https://southcarolinaparks.com/colonial-dorchester",
-     "why": "total-looking"
-    }
-   ],
+   "sizes": [],
    "t": "State Historic Site",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "no size on page"
   },
   "US-3874": {
-   "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "H. Cooper Black Jr. Memorial State Recreation Area",
    "official": null,
@@ -4103,28 +4041,18 @@
     "size": 1,
     "source": 2
    },
-   "sizes": [
-    {
-     "acres": 7000.0,
-     "as": "7000 acres",
-     "clean": false,
-     "line": "THE NUMBERS 1 busy schedule -- please check our schedule of events before planning a trip to H. Cooper Black 7000 acres of longleaf pine forests and fields for all sorts of recreation 1 SC State Park available for field trial and",
-     "total_like": false,
-     "url": "https://southcarolinaparks.com/h-cooper-black",
-     "why": "part (a lake, a purchase, a campground…)"
-    }
-   ],
+   "sizes": [],
    "t": "State Recreation Area",
    "ver": 15,
-   "verdict": "unsure"
+   "verdict": "no size on page"
   },
   "US-3876": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Hampton Plantation State Historic Site",
    "official": null,
    "ours": {
-    "acres": 205,
+    "acres": 297,
     "family_fold": "layers {'sgscb': 281, 'padus': 271}: one land in 2 layers, the sgscb copy used (271 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -4135,7 +4063,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -4148,10 +4076,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -4161,20 +4089,18 @@
    "verdict": "no size on page"
   },
   "US-3877": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Keowee-Toxaway State Park",
    "official": null,
    "ours": {
-    "acres": 856,
+    "acres": 1010,
     "dissolved": {
      "after": 1010,
      "before": 2015,
      "copies": 1,
-     "key_union": 856,
      "parts": 0,
      "records": 2,
-     "summed": 1010,
      "tracts": 1
     },
     "manager": "",
@@ -4214,21 +4140,21 @@
   },
   "US-3878": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lake Greenwood State Park",
    "official": {
     "acres": 914.0,
     "as": "914 acres",
     "clean": false,
-    "line": "p gatherings 1 Drummond Center available for conferences, receptions and other events, seats up to 169 people 914 acres of parkland in Greenwood County Golf Cart Policy Important Info EXPLORE MORE UPCOMING STATE PARK EVENTS SHARE",
-    "read": "2026-11-08",
+    "line": "p gatherings 1 Drummond Center available for conferences, receptions and other events, seats up to 169 people 914 acres of parkland in Greenwood County PARK DEALS SEE ALL DEALS 2026 Cyber Weekend Deals Lake Greenwood State Park R",
+    "read": "2026-11-22",
     "sent": "914 acres of parkland in Greenwood County",
     "url": "https://southcarolinaparks.com/lake-greenwood",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 675,
+    "acres": 738,
     "family_fold": "layers {'sgscb': 738, 'padus': 714}: one land in 2 layers, the sgscb copy used (714 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -4251,7 +4177,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 26,
+   "pct": 19,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -4292,7 +4218,7 @@
      "acres": 914.0,
      "as": "914 acres",
      "clean": false,
-     "line": "p gatherings 1 Drummond Center available for conferences, receptions and other events, seats up to 169 people 914 acres of parkland in Greenwood County Golf Cart Policy Important Info EXPLORE MORE UPCOMING STATE PARK EVENTS SHARE",
+     "line": "p gatherings 1 Drummond Center available for conferences, receptions and other events, seats up to 169 people 914 acres of parkland in Greenwood County PARK DEALS SEE ALL DEALS 2026 Cyber Weekend Deals Lake Greenwood State Park R",
      "total_like": true,
      "url": "https://southcarolinaparks.com/lake-greenwood",
      "why": "total-looking"
@@ -4303,12 +4229,13 @@
    "verdict": "off"
   },
   "US-3879": {
-   "checked": "2026-11-08",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lake Hartwell State Park",
    "official": null,
    "ours": {
-    "acres": 264,
+    "acres": 308,
     "family_fold": "layers {'sgscb': 308, 'padus': 283}: one land in 2 layers, the sgscb copy used (283 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -4319,7 +4246,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -4332,25 +4259,35 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 56000.0,
+     "as": "56,000 acre",
+     "clean": false,
+     "line": "nter. Just off of I-85, at the South Carolina-Georgia border, you’ll find Lake Hartwell State Park. Thanks to 56,000-acre Lake Hartwell, fishing in this area is renowned by anglers across the state. The lake is inhabited by striped",
+     "total_like": false,
+     "url": "https://southcarolinaparks.com/lake-hartwell",
+     "why": "part (a lake, a purchase, a campground…)"
+    }
+   ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-3880": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lake Wateree State Park",
    "official": null,
    "ours": {
-    "acres": 222,
+    "acres": 350,
     "family_fold": "layers {'sgscb': 332, 'padus': 296}: one land in 2 layers, the sgscb copy used (296 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -4361,7 +4298,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -4374,10 +4311,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -4387,21 +4324,21 @@
    "verdict": "no size on page"
   },
   "US-3881": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Battle of Musgrove Mill State Historic Site",
    "official": {
     "acres": 397.0,
     "as": "397 acres",
     "clean": false,
-    "line": "pretive trails that traverse the park 1 picnic shelter with restrooms for your next picnic or group gathering 397 acres of historically significant land Fall Foliage Report EXPLORE MORE UPCOMING STATE PARK EVENTS SHARE YOUR EXPER",
-    "read": "2026-11-08",
+    "line": "pretive trails that traverse the park 1 picnic shelter with restrooms for your next picnic or group gathering 397 acres of historically significant land PARK DEALS SEE ALL DEALS 2026 Cyber Weekend Deals Battle of Musgrove Mill St",
+    "read": "2026-11-22",
     "sent": "397 acres of historically significant land",
     "url": "https://southcarolinaparks.com/musgrove-mill",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 359,
+    "acres": 397,
     "family_fold": "layers {'sgscb': 397, 'padus': 372}: one land in 2 layers, the sgscb copy used (372 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -4412,7 +4349,7 @@
       "words"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -4424,12 +4361,12 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 10,
+   "pct": 0,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 1,
-    "pin": 1,
+    "pin": 2,
     "size": 2,
     "source": 2
    },
@@ -4438,7 +4375,7 @@
      "acres": 397.0,
      "as": "397 acres",
      "clean": false,
-     "line": "pretive trails that traverse the park 1 picnic shelter with restrooms for your next picnic or group gathering 397 acres of historically significant land Fall Foliage Report EXPLORE MORE UPCOMING STATE PARK EVENTS SHARE YOUR EXPER",
+     "line": "pretive trails that traverse the park 1 picnic shelter with restrooms for your next picnic or group gathering 397 acres of historically significant land PARK DEALS SEE ALL DEALS 2026 Cyber Weekend Deals Battle of Musgrove Mill St",
      "total_like": false,
      "url": "https://southcarolinaparks.com/musgrove-mill",
      "why": "no total words near it"
@@ -4458,12 +4395,12 @@
    "verdict": "agree"
   },
   "US-3882": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Oconee Station State Historic Site",
    "official": null,
    "ours": {
-    "acres": 178,
+    "acres": 264,
     "family_fold": "layers {'sgscb': 264, 'padus': 205}: one land in 2 layers, the sgscb copy used (205 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -4500,10 +4437,19 @@
    "verdict": "no size on page"
   },
   "US-3883": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Redcliffe Plantation State Historic Site",
-   "official": null,
+   "official": {
+    "acres": 369.0,
+    "as": "369 acres",
+    "clean": false,
+    "line": "or Center Exhibit 1 small gift shop that gives you the chance to purchase a memento from Redcliffe Plantation 369 acres with a rich and complex history that underlies its beauty 1 hiking trail approximately 1.7 miles long PARK DE",
+    "read": "2026-11-22",
+    "sent": "369 acres with a rich and complex history that underlies its beauty",
+    "url": "https://southcarolinaparks.com/redcliffe",
+    "why": "part (a lake, a purchase, a campground…)"
+   },
    "ours": {
     "acres": 367,
     "manager": "",
@@ -4527,26 +4473,37 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 5,
+   "pct": 1,
+   "same_agency": false,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 1,
+    "size": 2,
     "source": 1
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 369.0,
+     "as": "369 acres",
+     "clean": false,
+     "line": "or Center Exhibit 1 small gift shop that gives you the chance to purchase a memento from Redcliffe Plantation 369 acres with a rich and complex history that underlies its beauty 1 hiking trail approximately 1.7 miles long PARK DE",
+     "total_like": false,
+     "url": "https://southcarolinaparks.com/redcliffe",
+     "why": "part (a lake, a purchase, a campground…)"
+    }
+   ],
    "t": "State Historic Site",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-3884": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Battle of Rivers Bridge State Historic Site",
    "official": null,
    "ours": {
-    "acres": 425,
+    "acres": 399,
     "family_fold": "layers {'sgscb': 399, 'padus': 376}: one land in 2 layers, the sgscb copy used (376 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -4583,12 +4540,12 @@
    "verdict": "no size on page"
   },
   "US-3885": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Rose Hill Plantation State Historic Site",
    "official": null,
    "ours": {
-    "acres": 30,
+    "acres": 45,
     "family_fold": "layers {'sgscb': 41, 'padus': 39}: one land in 2 layers, the sgscb copy used (39 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -4625,7 +4582,7 @@
    "verdict": "no size on page"
   },
   "US-3886": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Aiken Gopher Tortoise Heritage Preserve",
    "official": null,
@@ -4675,7 +4632,7 @@
    "verdict": "no size on page"
   },
   "US-3887": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bear Island Wildlife Management Area",
    "official": null,
@@ -4744,7 +4701,7 @@
   },
   "US-3888": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 100 acres, no total words near it)",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bonneau Ferry Wildlife Management Area",
    "official": {
@@ -4752,7 +4709,7 @@
     "as": "100 acres",
     "clean": false,
     "line": ". General Information Property Location: Highway 402 Cordesville, SC 29434 Latitude: 33.104 Longitude: -79.85 Acreage: 100 County: Berkeley Property Type: Public Fishing Lake Hours of Operation: Thursday - Sunday March 2 - October 31",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Acreage: 100 County: Berkeley",
     "url": "https://www.dnr.sc.gov/lakes/state/bonneauferry/index.html",
     "why": "no total words near it"
@@ -4783,7 +4740,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 12
    },
@@ -4803,10 +4760,10 @@
    ],
    "pct": 10712,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -4835,12 +4792,12 @@
    "verdict": "unsure"
   },
   "US-3889": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Botany Bay Plantation Heritage Preserve",
    "official": null,
    "ours": {
-    "acres": 3239,
+    "acres": 3700,
     "family_fold": "layers {'sgscc': 4687, 'padus': 3599}: one land in 2 layers, the sgscc copy used (3,599 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -4883,17 +4840,17 @@
    "verdict": "no size on page"
   },
   "US-3890": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Buzzard Roost Heritage Preserve",
    "official": null,
    "ours": {
-    "acres": 437,
+    "acres": 530,
     "dissolved": {
      "after": 502,
      "before": 1003,
      "copies": 1,
-     "key_union": 437,
+     "key_union": 530,
      "parts": 0,
      "records": 2,
      "summed": 502,
@@ -4941,20 +4898,18 @@
    "verdict": "no size on page"
   },
   "US-3891": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Campbells Crossroads and Angelus Tracts Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 223,
+    "acres": 349,
     "dissolved": {
      "after": 349,
      "before": 1045,
      "copies": 2,
-     "key_union": 223,
      "parts": 0,
      "records": 3,
-     "summed": 349,
      "tracts": 1
     },
     "manager": "",
@@ -4999,12 +4954,12 @@
    "verdict": "no size on page"
   },
   "US-3892": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Chestnut Ridge Heritage Preserve",
    "official": null,
    "ours": {
-    "acres": 2004,
+    "acres": 2267,
     "manager": "",
     "pieces": [
      [
@@ -5014,7 +4969,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
@@ -5027,10 +4982,10 @@
     }
    ],
    "pct": null,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 1
    },
@@ -5040,7 +4995,7 @@
    "verdict": "no size on page"
   },
   "US-3893": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Cliff Pitts Wildlife Management Area",
    "official": null,
@@ -5071,7 +5026,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
@@ -5090,10 +5045,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -5103,20 +5058,18 @@
    "verdict": "no size on page"
   },
   "US-3894": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Draper Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 622,
+    "acres": 811,
     "dissolved": {
      "after": 811,
      "before": 2428,
      "copies": 3,
-     "key_union": 622,
      "parts": 0,
      "records": 5,
-     "summed": 811,
      "tracts": 2
     },
     "manager": "",
@@ -5167,29 +5120,27 @@
    "verdict": "no size on page"
   },
   "US-3895": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Eastatoe Creek Heritage Preserve",
    "official": {
-    "acres": 373.0,
-    "as": "373 acre",
+    "acres": 374.0,
+    "as": "374 acre",
     "clean": false,
-    "line": "ading Trails Description Comments Contact GPS and Coordinates This moderate, 1.7-mile path takes you into the 373-acre Eastatoe Creek Heritage Preserve, which is a wonder nestled within a pristine mountain gorge. The Eastatoe (p",
-    "read": "2026-11-08",
-    "sent": "This moderate, 1.7-mile path takes you into the 373-acre Eastatoe Creek Heritage Preserve, which is a wonder nestled within a pristine mountain gorge.",
+    "line": "h Playground Visitor Center Waterfall Trail Head Pets No Fee Camping Summary: This 1.7-mile trail through the 374-acre preserve takes you to the namesake, Eastatoe Creek, that tumbles steeply into a pristine mountain gorge. Sign",
+    "read": "2026-11-22",
+    "sent": "This 1.7-mile trail through the 374-acre preserve takes you to the namesake, Eastatoe Creek, that tumbles steeply into a pristine mountain gorge.",
     "url": "https://www.sctrails.net/trails/trail/eastatoe-creek-heritage-preserve",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 352,
+    "acres": 376,
     "dissolved": {
      "after": 376,
      "before": 750,
      "copies": 1,
-     "key_union": 352,
      "parts": 0,
      "records": 2,
-     "summed": 376,
      "tracts": 1
     },
     "manager": "",
@@ -5214,7 +5165,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 6,
+   "pct": 1,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -5248,12 +5199,12 @@
    "verdict": "agree"
   },
   "US-3896": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Edisto River Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 1422,
+    "acres": 1740,
     "dissolved": {
      "after": 2935,
      "before": 4477,
@@ -5264,7 +5215,7 @@
      },
      "family_fold": 1393,
      "family_used": "sgsca",
-     "key_union": 1422,
+     "key_union": 1740,
      "parts": 0,
      "records": 3,
      "summed": 1542,
@@ -5313,12 +5264,12 @@
    "verdict": "no size on page"
   },
   "US-3897": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Fant's Grove Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 9960,
+    "acres": 10619,
     "dissolved": {
      "after": 14685,
      "before": 22129,
@@ -5329,7 +5280,7 @@
      },
      "family_fold": 7241,
      "family_used": "sgsca",
-     "key_union": 9960,
+     "key_union": 10619,
      "parts": 0,
      "records": 3,
      "summed": 7444,
@@ -5346,7 +5297,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 12
    },
@@ -5365,10 +5316,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -5380,7 +5331,7 @@
   "US-3898": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Forty Acre Rock Heritage Preserve",
    "official": null,
    "ours": {
@@ -5439,7 +5390,7 @@
   },
   "US-3899": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Great Pee Dee River Heritage Preserve",
    "official": {
@@ -5447,7 +5398,7 @@
     "as": "25,668 acres",
     "clean": true,
     "line": "e Lake is about 9 river miles Woodbury Wildlife Management Area and Heritage Preserve – This area consists of 25,668 acres managed for wildlife and recreation and is located at the south end of Marion County between the Great Pee De",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "This area consists of 25,668 acres managed for wildlife and recreation and is located at the south end of Marion County between the Great Pee Dee and Little Pee Dee Scenic Rivers.",
     "url": "https://www.dnr.sc.gov/water/river/scenic/greatpeedee.html",
     "why": "clean total"
@@ -5516,7 +5467,7 @@
    "verdict": "off"
   },
   "US-3900": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Hamilton Ridge Wildlife Management Area",
    "official": null,
@@ -5572,17 +5523,17 @@
    "verdict": "no size on page"
   },
   "US-3901": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Hickory Top Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 4230,
+    "acres": 3887,
     "dissolved": {
      "after": 1105,
      "before": 3315,
      "copies": 2,
-     "key_union": 4230,
+     "key_union": 3887,
      "parts": 0,
      "records": 3,
      "summed": 1105,
@@ -5630,12 +5581,12 @@
    "verdict": "no size on page"
   },
   "US-3902": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "James L. Mason Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 2342,
+    "acres": 2315,
     "dissolved": {
      "after": 4073,
      "before": 6068,
@@ -5646,7 +5597,7 @@
      },
      "family_fold": 1995,
      "family_used": "padus",
-     "key_union": 2342,
+     "key_union": 2315,
      "parts": 0,
      "records": 3,
      "summed": 2078,
@@ -5663,7 +5614,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -5682,10 +5633,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -5695,20 +5646,18 @@
    "verdict": "no size on page"
   },
   "US-3903": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lewis Ocean Bay Heritage Preserve",
    "official": null,
    "ours": {
-    "acres": 11308,
+    "acres": 10443,
     "dissolved": {
      "after": 10443,
      "before": 20870,
      "copies": 1,
-     "key_union": 11308,
      "parts": 0,
      "records": 2,
-     "summed": 10443,
      "tracts": 1
     },
     "manager": "",
@@ -5753,20 +5702,18 @@
    "verdict": "no size on page"
   },
   "US-3904": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Longleaf Pine Heritage Preserve",
    "official": null,
    "ours": {
-    "acres": 763,
+    "acres": 843,
     "dissolved": {
      "after": 843,
      "before": 1686,
      "copies": 1,
-     "key_union": 763,
      "parts": 0,
      "records": 2,
-     "summed": 843,
      "tracts": 1
     },
     "manager": "",
@@ -5811,17 +5758,17 @@
    "verdict": "no size on page"
   },
   "US-3905": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Marsh Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 9439,
+    "acres": 9160,
     "dissolved": {
      "after": 8654,
      "before": 25897,
      "copies": 2,
-     "key_union": 9439,
+     "key_union": 9160,
      "parts": 0,
      "records": 3,
      "summed": 8654,
@@ -5869,12 +5816,12 @@
    "verdict": "no size on page"
   },
   "US-3906": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Old Island Heritage Preserve",
    "official": null,
    "ours": {
-    "acres": 2486,
+    "acres": 3160,
     "family_fold": "layers {'sgscc': 3160, 'padus': 3004}: one land in 2 layers, the sgscc copy used (3,004 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -5885,7 +5832,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -5904,10 +5851,10 @@
     }
    ],
    "pct": null,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 1
    },
@@ -5917,12 +5864,12 @@
    "verdict": "no size on page"
   },
   "US-3907": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Pee Dee Station Site Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 2366,
+    "acres": 2701,
     "dissolved": {
      "after": 5309,
      "before": 8010,
@@ -5933,10 +5880,8 @@
      },
      "family_fold": 2608,
      "family_used": "sgsca",
-     "key_union": 2366,
      "parts": 0,
      "records": 3,
-     "summed": 2701,
      "tracts": 2
     },
     "family_fold": "layers {'sgsca': 2701, 'padus': 2608}: one land in 2 layers, the sgsca copy used (2,608 ac of copies not added)",
@@ -5982,12 +5927,12 @@
    "verdict": "no size on page"
   },
   "US-3908": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Samworth Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 1414,
+    "acres": 1586,
     "dissolved": {
      "after": 3123,
      "before": 4709,
@@ -5998,10 +5943,8 @@
      },
      "family_fold": 1537,
      "family_used": "sgsca",
-     "key_union": 1414,
      "parts": 0,
      "records": 3,
-     "summed": 1586,
      "tracts": 2
     },
     "family_fold": "layers {'sgsca': 1586, 'padus': 1537}: one land in 2 layers, the sgsca copy used (1,537 ac of copies not added)",
@@ -6047,17 +5990,17 @@
    "verdict": "no size on page"
   },
   "US-3909": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Santee Cooper Tract Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 74,
+    "acres": 117,
     "dissolved": {
      "after": 110,
      "before": 330,
      "copies": 2,
-     "key_union": 74,
+     "key_union": 117,
      "parts": 0,
      "records": 3,
      "summed": 110,
@@ -6073,7 +6016,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 1
    },
@@ -6092,10 +6035,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -6107,7 +6050,7 @@
   "US-3910": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Santee Cooper Wildlife Management Area",
    "official": null,
    "ours": {
@@ -6165,17 +6108,17 @@
    "verdict": "no size on page"
   },
   "US-3911": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Stevens Creek Heritage Preserve",
    "official": null,
    "ours": {
-    "acres": 382,
+    "acres": 461,
     "dissolved": {
      "after": 434,
      "before": 865,
      "copies": 1,
-     "key_union": 382,
+     "key_union": 461,
      "parts": 0,
      "records": 2,
      "summed": 434,
@@ -6217,20 +6160,18 @@
    "verdict": "no size on page"
   },
   "US-3912": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Thurmond Tract Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 144,
+    "acres": 195,
     "dissolved": {
      "after": 195,
      "before": 585,
      "copies": 2,
-     "key_union": 144,
      "parts": 0,
      "records": 3,
-     "summed": 195,
      "tracts": 1
     },
     "manager": "",
@@ -6243,7 +6184,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 1
    },
@@ -6262,10 +6203,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -6277,7 +6218,7 @@
   "US-3913": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Tillman Sand Ridge Heritage Preserve",
    "official": null,
    "ours": {
@@ -6320,7 +6261,7 @@
   "US-3914": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Cathedral Bay Heritage Preserve",
    "official": null,
    "ours": {
@@ -6361,12 +6302,12 @@
    "verdict": "no size on page"
   },
   "US-3916": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Congaree Bluffs Heritage Preserve",
    "official": null,
    "ours": {
-    "acres": 156,
+    "acres": 206,
     "family_fold": "layers {'padus': 206, 'sgscc': 201}: one land in 2 layers, the padus copy used (201 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -6377,7 +6318,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -6396,10 +6337,10 @@
     }
    ],
    "pct": null,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 1
    },
@@ -6409,19 +6350,20 @@
    "verdict": "no size on page"
   },
   "US-3917": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Little Pee Dee Bay Heritage Preserve",
    "official": null,
    "ours": {
-    "acres": 298,
+    "acres": 10455,
+    "family_fold": "layers {'sgscc': 10455, 'padus': 10386}: one land in 2 layers, the sgscc copy used (10,386 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
-      254129,
-      "Little Pee Dee State Park Bay Heritage Preserve",
-      298,
-      "name"
+      "sgscc11",
+      "Little Pee Dee Heritage Preserve and Wildlife Management Area",
+      10455,
+      "words"
      ]
     ],
     "pin": "inside",
@@ -6458,7 +6400,7 @@
   "US-3918": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Savage Bay Heritage Preserve",
    "official": null,
    "ours": {
@@ -6508,7 +6450,7 @@
   },
   "US-3919": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Congaree Creek Heritage Preserve",
    "official": {
@@ -6516,32 +6458,32 @@
     "as": "627 acre",
     "clean": false,
     "line": "he Upstate. More from \"Marie McAden\" Boardwalks and bridges allow hikers to explore the wetland forest in the 627-acre Congaree Creek Heritage Preserve. Walking through a wetland forest beneath a canopy of trees dripping with Sp",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Boardwalks and bridges allow hikers to explore the wetland forest in the 627-acre Congaree Creek Heritage Preserve.",
     "url": "https://discoversouthcarolina.com/articles/discover-the-history-and-beauty-of-congaree-creek-heritage-preserve",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 1123,
+    "acres": 1439,
     "dissolved": {
      "after": 1261,
-     "before": 1906,
-     "copies": 1,
+     "before": 2551,
+     "copies": 2,
      "families": {
       "padus": 616,
       "sgscc": 645
      },
      "family_fold": 616,
      "family_used": "sgscc",
-     "key_union": 1123,
+     "key_union": 1439,
      "parts": 0,
-     "records": 3,
+     "records": 4,
      "summed": 645,
      "tracts": 2
     },
     "family_fold": "layers {'sgscc': 645, 'padus': 616}: one land in 2 layers, the sgscc copy used (616 ac of copies not added)",
     "manager": "",
-    "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1906 -> 1261 acres",
+    "note": "4 joined records = 2 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 2551 -> 1261 acres",
     "pieces": [
      [
       "sgscc113",
@@ -6552,7 +6494,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 6
+    "unknown_pieces": 5
    },
    "owner_now": null,
    "pages": [
@@ -6562,7 +6504,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 79,
+   "pct": 130,
    "same_agency": false,
    "score": 4,
    "score_parts": {
@@ -6596,30 +6538,27 @@
    "verdict": "off"
   },
   "US-3921": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Pacolet River Heritage Preserve",
    "official": {
-    "acres": 258.0,
-    "as": "258 acre",
+    "acres": 270.0,
+    "as": "270 acre",
     "clean": false,
-    "line": "No Fee No Camping Summary: Located near the confluence of the Pacolet River and the Lawson&rsquo;s Fork, the 258 acre preserve protects two prehistoric soapstone outcrops that date back 3-5,000 years ago and provides habitat fo",
-    "read": "2026-11-08",
-    "sent": "Located near the confluence of the Pacolet River and the Lawson&rsquo;s Fork, the 258 acre preserve protects two prehistoric soapstone outcrops that date back 3-5,000 years ago and provides habitat for uncommon plant species.",
+    "line": "gh mixed hardwood and pine upland forest and along the banks of the Pacolet River. You will traverse a quiet, 270-acre preserve that protects two ancient soap stone quarries, and provides habitat for uncommon plant species, as w",
+    "read": "2026-11-22",
+    "sent": "You will traverse a quiet, 270-acre preserve that protects two ancient soap stone quarries, and provides habitat for uncommon plant species, as well as a variety of song birds, snakes, and other wildlife.",
     "url": "https://www.sctrails.net/trails/trail/pacolet-river-heritage-preserve",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 171,
+    "acres": 278,
     "dissolved": {
      "after": 278,
      "before": 555,
      "copies": 1,
-     "key_union": 171,
      "parts": 0,
      "records": 2,
-     "summed": 278,
      "tracts": 1
     },
     "manager": "",
@@ -6644,13 +6583,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 34,
+   "pct": 3,
    "same_agency": false,
-   "score": 5,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 1
    },
    "sizes": [
@@ -6675,15 +6614,15 @@
    ],
    "t": "Heritage Preserve",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-4522": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Francis Marion National Forest",
    "official": null,
    "ours": {
-    "acres": 281293,
+    "acres": 282082,
     "manager": "",
     "pieces": [
      [
@@ -6699,14 +6638,14 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
    "owner_now": null,
    "pages": [
     {
-     "status": "ok",
+     "status": "host-rule",
      "url": "https://www.fs.usda.gov/detail/scnfs/home/?cid=fsbdev3_037393",
      "why": "the park's page (data/parkinfo)"
     },
@@ -6718,10 +6657,10 @@
     }
    ],
    "pct": null,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 1
    },
@@ -6731,7 +6670,7 @@
    "verdict": "no size on page"
   },
   "US-4523": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Sumter National Forest",
    "official": null,
@@ -6746,14 +6685,14 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
    "owner_now": null,
    "pages": [
     {
-     "status": "ok",
+     "status": "host-rule",
      "url": "https://www.fs.usda.gov/detail/scnfs/home/?cid=fsbdev3_037376",
      "why": "the park's page (data/parkinfo)"
     },
@@ -6765,10 +6704,10 @@
     }
    ],
    "pct": null,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 1
    },
@@ -6779,7 +6718,7 @@
   },
   "US-4554": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Reconstruction Era National Monument",
    "official": null,
@@ -6830,7 +6769,7 @@
    "verdict": "unsure"
   },
   "US-4577": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Overmountain Victory National Historic Trail",
    "note": "whole park compared (POTA lists it in 0 states: {})",
@@ -6894,7 +6833,7 @@
    "verdict": "ours unknown"
   },
   "US-5485": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Harbison State Forest",
    "official": {
@@ -6902,19 +6841,21 @@
     "as": "2,176 acres",
     "clean": true,
     "line": "ever leaving town. Bounded along its northeastern edge by the Broad River, Harbison State Forest encompasses 2,176 acres of forestland only nine miles from the capital city's center. More than 30 miles of roads and trails weave th",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Bounded along its northeastern edge by the Broad River, Harbison State Forest encompasses 2,176 acres of forestland only nine miles from the capital city's center.",
     "url": "https://www.scfc.gov/state-forests/harbison-state-forest/",
     "why": "clean total"
    },
    "ours": {
-    "acres": 1865,
+    "acres": 2038,
     "dissolved": {
      "after": 1865,
      "before": 2143,
      "copies": 0,
+     "key_union": 2038,
      "parts": 4,
      "records": 11,
+     "summed": 1865,
      "tracts": 7
     },
     "manager": "",
@@ -6980,7 +6921,7 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 14,
+   "pct": 6,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -7014,7 +6955,7 @@
    "verdict": "agree"
   },
   "US-5486": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Manchester State Forest",
    "official": {
@@ -7022,7 +6963,7 @@
     "as": "29,830 acres",
     "clean": false,
     "line": "ster State Forest has something for everybody. Spanning Clarendon and Sumter counties, Manchester's more than 29,830 acres of mixed pine and hardwoods offer some of the finest outdoor recreation anywhere in the state. In addition to",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Spanning Clarendon and Sumter counties, Manchester's more than 29,830 acres of mixed pine and hardwoods offer some of the finest outdoor recreation anywhere in the state.",
     "url": "https://www.scfc.gov/state-forests/manchester-state-forest/",
     "why": "total-looking"
@@ -7096,7 +7037,7 @@
    "verdict": "agree"
   },
   "US-5487": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
@@ -7113,18 +7054,18 @@
     "as": "2,508 acre",
     "clean": true,
     "line": "nu State Lands Home » State Lands » Poe Creek State Forest Poe Creek State Forest Poe Creek State Forest is a 2,508-acre tract in Oconee and Pickens counties near Lake Jocassee in the upstate of South Carolina. Nestled in the foot",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Poe Creek State Forest is a 2,508-acre tract in Oconee and Pickens counties near Lake Jocassee in the upstate of South Carolina.",
     "url": "https://www.scfc.gov/state-forests/poe-creek-state-forest/",
     "why": "clean total"
    },
    "ours": {
-    "acres": 2149,
+    "acres": 2466,
     "dissolved": {
      "after": 1762,
      "before": 2502,
      "copies": 0,
-     "key_union": 2149,
+     "key_union": 2466,
      "parts": 10,
      "records": 19,
      "summed": 1762,
@@ -7194,7 +7135,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 14,
+   "pct": 2,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -7264,7 +7205,7 @@
    "verdict": "agree"
   },
   "US-5488": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": "1991",
@@ -7281,7 +7222,7 @@
     "as": "46,572 acres",
     "clean": false,
     "line": "s conspicuously above the relative flatness of the Pee Dee region in which the forest is located. Sand Hills’ 46,572 acres are perfect for exploring, fishing, hunting, horseback riding and camping. History Sugarloaf Mountain has bee",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Sand Hills’ 46,572 acres are perfect for exploring, fishing, hunting, horseback riding and camping.",
     "url": "https://www.scfc.gov/state-forests/sand-hills-state-forest/",
     "why": "total-looking"
@@ -7350,7 +7291,7 @@
    "verdict": "agree"
   },
   "US-5489": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Wee Tee State Forest",
    "official": {
@@ -7358,7 +7299,7 @@
     "as": "12,400 acres",
     "clean": true,
     "line": "ng with legal requirements, and continually improving forest practices. Wee Tee State Forest encompasses over 12,400 acres of productive forest land. Most of the land base is dominated by 92% of bottomland hardwoods, pine/pine-hardw",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Wee Tee State Forest encompasses over 12,400 acres of productive forest land.",
     "url": "https://www.scfc.gov/state-forests/wee-tee-state-forest/",
     "why": "clean total"
@@ -7518,17 +7459,17 @@
    "verdict": "agree"
   },
   "US-8145": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "McCalla Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 5194,
+    "acres": 5454,
     "dissolved": {
      "after": 6004,
      "before": 12008,
      "copies": 1,
-     "key_union": 5194,
+     "key_union": 5454,
      "parts": 0,
      "records": 2,
      "summed": 6004,
@@ -7544,7 +7485,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -7563,10 +7504,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -7578,7 +7519,7 @@
   "US-8146": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Ditch Pond Heritage Preserve",
    "official": null,
    "ours": {
@@ -7629,17 +7570,17 @@
    "verdict": "no size on page"
   },
   "US-8147": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Altamaha Towne Heritage Preserve",
    "official": null,
    "ours": {
-    "acres": 82,
+    "acres": 95,
     "dissolved": {
      "after": 101,
      "before": 201,
      "copies": 1,
-     "key_union": 82,
+     "key_union": 95,
      "parts": 0,
      "records": 2,
      "summed": 101,
@@ -7667,7 +7608,7 @@
    "verdict": "no official page on file"
   },
   "US-8148": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lighthouse Inlet Heritage Preserve",
    "official": null,
@@ -7716,7 +7657,7 @@
   "US-8149": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Oak Lea Wildlife Management Area",
    "official": null,
    "ours": {
@@ -7776,7 +7717,7 @@
   "US-8150": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Bald Rock Heritage Preserve",
    "official": null,
    "ours": {
@@ -7819,7 +7760,7 @@
   "US-8151": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Woodbury Wildlife Management Area",
    "official": null,
    "ours": {
@@ -7874,12 +7815,12 @@
    "verdict": "no size on page"
   },
   "US-8152": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Glassy Mountain Heritage Preserve",
    "official": null,
    "ours": {
-    "acres": 40,
+    "acres": 71,
     "family_fold": "layers {'sgscc': 65, 'padus': 62}: one land in 2 layers, the sgscc copy used (62 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -7918,7 +7859,7 @@
   "US-8153": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Herbert Kirsh Wildlife Management Area",
    "official": null,
    "ours": {
@@ -7960,7 +7901,7 @@
   "US-8154": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Worth Mountain Wildlife Management Area",
    "official": null,
    "ours": {
@@ -8009,12 +7950,12 @@
    "verdict": "no size on page"
   },
   "US-9192": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Henderson Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 394,
+    "acres": 495,
     "dissolved": {
      "after": 924,
      "before": 1419,
@@ -8025,10 +7966,8 @@
      },
      "family_fold": 429,
      "family_used": "sgsca",
-     "key_union": 394,
      "parts": 0,
      "records": 3,
-     "summed": 495,
      "tracts": 2
     },
     "family_fold": "layers {'sgsca': 495, 'padus': 429}: one land in 2 layers, the sgsca copy used (429 ac of copies not added)",
@@ -8068,7 +8007,7 @@
    "verdict": "no size on page"
   },
   "US-9193": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Janet Harrison Pond Wildlife Management Area",
    "official": null,
@@ -8083,7 +8022,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -8102,10 +8041,10 @@
     }
    ],
    "pct": null,
-   "score": 4,
+   "score": 5,
    "score_parts": {
     "name": 1,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 1
    },
@@ -8115,8 +8054,8 @@
    "verdict": "no size on page"
   },
   "US-9195": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-08",
+   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "South Bluff Wildlife Management Area",
    "official": {
@@ -8124,18 +8063,18 @@
     "as": "24 acres",
     "clean": true,
     "line": "ites Loading Trails Description Comments Contact GPS and Coordinates The South Bluff Heritage Preserve covers 24 acres in Beaufort County. The South Bluff Shell Rings are the most recently discovered shell ring sites in South Ca",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "The South Bluff Heritage Preserve covers 24 acres in Beaufort County.",
     "url": "https://www.sctrails.net/trails/trail/south-bluff-heritage-preserve",
     "why": "clean total"
    },
    "ours": {
-    "acres": 19,
+    "acres": 28,
     "dissolved": {
      "after": 24,
      "before": 72,
      "copies": 2,
-     "key_union": 19,
+     "key_union": 28,
      "parts": 0,
      "records": 3,
      "summed": 24,
@@ -8151,7 +8090,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 1
    },
@@ -8163,12 +8102,12 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 21,
+   "pct": 17,
    "same_agency": false,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 0,
     "source": 2
    },
@@ -8188,7 +8127,8 @@
    "verdict": "off"
   },
   "US-9197": {
-   "checked": "2026-11-08",
+   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Victoria Bluff Wildlife Management Area",
    "official": {
@@ -8196,13 +8136,13 @@
     "as": "977 acre",
     "clean": false,
     "line": "ail Head Parking Trail Head Pets No Fee No Camping Summary: Located only minutes from Hilton Head Island, the 977 acre Victoria Bluff Heritage Preserve provides an escape from the crowds. Sign In To Add To Favorites Loading Trai",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Located only minutes from Hilton Head Island, the 977 acre Victoria Bluff Heritage Preserve provides an escape from the crowds.",
     "url": "https://www.sctrails.net/trails/trail/victoria-bluff-heritage-preserve",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 1113,
+    "acres": 1392,
     "dissolved": {
      "after": 2182,
      "before": 6634,
@@ -8213,8 +8153,10 @@
      },
      "family_fold": 1069,
      "family_used": "sgsca",
+     "key_union": 1392,
      "parts": 0,
      "records": 6,
+     "summed": 1113,
      "tracts": 2
     },
     "family_fold": "layers {'sgsca': 1113, 'padus': 1069}: one land in 2 layers, the sgsca copy used (1,069 ac of copies not added)",
@@ -8240,13 +8182,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 14,
+   "pct": 42,
    "same_agency": false,
-   "score": 7,
+   "score": 5,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 2,
+    "size": 0,
     "source": 2
    },
    "sizes": [
@@ -8262,12 +8204,12 @@
    ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "off"
   },
   "US-9198": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Childsbury Towne Wildlife Management Area",
    "official": null,
    "ours": {
@@ -8325,7 +8267,7 @@
    "verdict": "no size on page"
   },
   "US-9199": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Hatchery Wildlife Management Area",
    "official": null,
@@ -8368,7 +8310,7 @@
   "US-9200": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Dungannon Plantation Wildlife Management Area",
    "official": null,
    "ours": {
@@ -8430,12 +8372,12 @@
    "verdict": "no size on page"
   },
   "US-9201": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Fort Lamar Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 9,
+    "acres": 13,
     "dissolved": {
      "after": 28,
      "before": 43,
@@ -8446,7 +8388,7 @@
      },
      "family_fold": 13,
      "family_used": "sgsca",
-     "key_union": 9,
+     "key_union": 13,
      "parts": 0,
      "records": 3,
      "summed": 15,
@@ -8491,7 +8433,7 @@
   "US-9202": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Santee Coastal Reserve Wildlife Management Area",
    "official": null,
    "ours": {
@@ -8551,28 +8493,34 @@
   "US-9203": {
    "checked": "2026-11-08",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Palmetto State Trail",
-   "ours": null,
+   "ours": {
+    "acres": 0,
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 1
+   },
    "score": null,
    "t": "State Trail",
    "ver": 15,
    "verdict": "no outline"
   },
   "US-9204": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "McBee Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 1463,
+    "acres": 1216,
     "dissolved": {
      "after": 1216,
      "before": 3642,
      "copies": 2,
-     "key_union": 1463,
      "parts": 0,
      "records": 3,
-     "summed": 1216,
      "tracts": 1
     },
     "manager": "",
@@ -8585,7 +8533,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -8604,10 +8552,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -8619,7 +8567,7 @@
   "US-9205": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Bennett's Bay Wildlife Management Area",
    "official": null,
    "ours": {
@@ -8668,7 +8616,7 @@
    "verdict": "no size on page"
   },
   "US-9206": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Donnelley Wildlife Management Area",
    "official": null,
@@ -8724,12 +8672,12 @@
    "verdict": "no size on page"
   },
   "US-9207": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Segars-McKinnon Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 661,
+    "acres": 824,
     "dissolved": {
      "after": 1619,
      "before": 2414,
@@ -8740,10 +8688,8 @@
      },
      "family_fold": 795,
      "family_used": "padus",
-     "key_union": 661,
      "parts": 0,
      "records": 3,
-     "summed": 824,
      "tracts": 2
     },
     "family_fold": "layers {'padus': 824, 'sgsca': 795}: one land in 2 layers, the padus copy used (795 ac of copies not added)",
@@ -8791,7 +8737,7 @@
   "US-9208": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Santee-Delta Wildlife Management Area",
    "official": null,
    "ours": {
@@ -8840,20 +8786,18 @@
    "verdict": "no size on page"
   },
   "US-9209": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Ashmore Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 630,
+    "acres": 1126,
     "dissolved": {
      "after": 1126,
      "before": 3370,
      "copies": 2,
-     "key_union": 630,
      "parts": 0,
      "records": 3,
-     "summed": 1126,
      "tracts": 1
     },
     "manager": "",
@@ -8866,7 +8810,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -8885,10 +8829,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -8898,12 +8842,12 @@
    "verdict": "no size on page"
   },
   "US-9210": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bunched Arrowhead Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 282,
+    "acres": 335,
     "dissolved": {
      "after": 469,
      "before": 780,
@@ -8914,7 +8858,7 @@
      },
      "family_fold": 158,
      "family_used": "sgsca",
-     "key_union": 282,
+     "key_union": 335,
      "parts": 0,
      "records": 3,
      "summed": 311,
@@ -8931,7 +8875,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 4
    },
@@ -8950,10 +8894,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -8963,7 +8907,7 @@
    "verdict": "no size on page"
   },
   "US-9211": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Eva Russell Chandler Wildlife Management Area",
    "official": null,
@@ -9013,20 +8957,18 @@
    "verdict": "no size on page"
   },
   "US-9212": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Tall Pines Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 2213,
+    "acres": 2605,
     "dissolved": {
      "after": 2605,
      "before": 5210,
      "copies": 1,
-     "key_union": 2213,
      "parts": 0,
      "records": 2,
-     "summed": 2605,
      "tracts": 1
     },
     "manager": "",
@@ -9039,7 +8981,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 1
    },
@@ -9058,10 +9000,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -9071,12 +9013,12 @@
    "verdict": "no size on page"
   },
   "US-9213": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Watson-Cooper Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 2067,
+    "acres": 1714,
     "dissolved": {
      "after": 3386,
      "before": 6814,
@@ -9087,10 +9029,8 @@
      },
      "family_fold": 1672,
      "family_used": "sgsca",
-     "key_union": 2067,
      "parts": 0,
      "records": 4,
-     "summed": 1714,
      "tracts": 2
     },
     "family_fold": "layers {'sgsca': 1714, 'padus': 1672}: one land in 2 layers, the sgsca copy used (1,672 ac of copies not added)",
@@ -9136,12 +9076,12 @@
    "verdict": "no size on page"
   },
   "US-9214": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Palachucola Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 7396,
+    "acres": 6362,
     "dissolved": {
      "after": 13065,
      "before": 19854,
@@ -9152,7 +9092,7 @@
      },
      "family_fold": 6276,
      "family_used": "sgsca",
-     "key_union": 7396,
+     "key_union": 6362,
      "parts": 0,
      "records": 3,
      "summed": 6789,
@@ -9201,12 +9141,12 @@
    "verdict": "no size on page"
   },
   "US-9215": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Webb Wildlife Center Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 5851,
+    "acres": 6336,
     "dissolved": {
      "after": 12196,
      "before": 18056,
@@ -9217,10 +9157,8 @@
      },
      "family_fold": 5860,
      "family_used": "padus",
-     "key_union": 5851,
      "parts": 0,
      "records": 3,
-     "summed": 6336,
      "tracts": 2
     },
     "family_fold": "layers {'padus': 6336, 'sgsca': 5860}: one land in 2 layers, the padus copy used (5,860 ac of copies not added)",
@@ -9266,12 +9204,12 @@
    "verdict": "no size on page"
   },
   "US-9216": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Cartwheel Bay Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 967,
+    "acres": 1064,
     "dissolved": {
      "after": 1159,
      "before": 2295,
@@ -9282,7 +9220,7 @@
      },
      "family_fold": 568,
      "family_used": "padus",
-     "key_union": 967,
+     "key_union": 1064,
      "parts": 0,
      "records": 4,
      "summed": 591,
@@ -9311,12 +9249,12 @@
    "verdict": "no official page on file"
   },
   "US-9217": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Waccamaw River Heritage Preserve",
    "official": null,
    "ours": {
-    "acres": 7275,
+    "acres": 8557,
     "family_fold": "layers {'sgscc': 8557, 'padus': 5469}: one land in 2 layers, the sgscc copy used (5,469 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -9359,7 +9297,7 @@
    "verdict": "no size on page"
   },
   "US-9218": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Liberty Hill Wildlife Management Area",
    "official": null,
@@ -9422,12 +9360,12 @@
    "verdict": "no size on page"
   },
   "US-9219": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Belfast Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 6299,
+    "acres": 6352,
     "dissolved": {
      "after": 6394,
      "before": 15723,
@@ -9438,7 +9376,7 @@
      },
      "family_fold": 1730,
      "family_used": "sgsca",
-     "key_union": 6299,
+     "key_union": 6352,
      "parts": 2,
      "records": 5,
      "summed": 4664,
@@ -9455,7 +9393,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 6
    },
@@ -9474,10 +9412,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -9487,7 +9425,7 @@
    "verdict": "no size on page"
   },
   "US-9220": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Clinton Reservoir Tract Wildlife Management Area",
    "official": null,
@@ -9534,20 +9472,18 @@
    "verdict": "no size on page"
   },
   "US-9221": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Gray Court Tract Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 84,
+    "acres": 121,
     "dissolved": {
      "after": 121,
      "before": 243,
      "copies": 2,
-     "key_union": 84,
      "parts": 0,
      "records": 4,
-     "summed": 121,
      "tracts": 2
     },
     "manager": "",
@@ -9600,7 +9536,7 @@
   "US-9222": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Lynchburg Savanna Wildlife Management Area",
    "official": null,
    "ours": {
@@ -9649,7 +9585,8 @@
    "verdict": "no size on page"
   },
   "US-9223": {
-   "checked": "2026-11-08",
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 460 acres, no total words near it)",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Peachtree Rock Wildlife Management Area",
    "official": {
@@ -9657,32 +9594,32 @@
     "as": "460 acres",
     "clean": false,
     "line": "own Columbia, SC View Directions | Open in Maps Highlights Rich in culture, history and unusual geology. Size 460 acres Electric Vehicle Charging None Explore our work in this region Directions From Columbia: Take Highway 215 (30",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "460 acres",
     "url": "https://www.nature.org/en-us/get-involved/how-to-help/places-we-protect/peachtree-rock-heritage-preserve/",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 426,
+    "acres": 552,
     "dissolved": {
      "after": 625,
-     "before": 1085,
-     "copies": 1,
+     "before": 1545,
+     "copies": 2,
      "families": {
       "padus": 165,
       "sgsca": 460
      },
      "family_fold": 165,
      "family_used": "sgsca",
-     "key_union": 426,
+     "key_union": 552,
      "parts": 0,
-     "records": 3,
+     "records": 4,
      "summed": 460,
      "tracts": 2
     },
     "family_fold": "layers {'sgsca': 460, 'padus': 165}: one land in 2 layers, the sgsca copy used (165 ac of copies not added)",
     "manager": "",
-    "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1085 -> 625 acres",
+    "note": "4 joined records = 2 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1545 -> 625 acres",
     "pieces": [
      [
       "sgsca70",
@@ -9693,7 +9630,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 0
    },
    "owner_now": null,
    "pages": [
@@ -9718,13 +9655,13 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 7,
+   "pct": 20,
    "same_agency": false,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 2,
+    "size": 1,
     "source": 2
    },
    "sizes": [
@@ -9758,15 +9695,15 @@
    ],
    "t": "Wildlife Management Area",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "unsure"
   },
   "US-9224": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lake Wallace Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 385,
+    "acres": 766,
     "family_fold": "layers {'padus': 766, 'sgsca': 400}: one land in 2 layers, the padus copy used (400 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -9817,7 +9754,7 @@
   "US-9225": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Brasstown Creek Wildlife Management Area",
    "official": null,
    "ours": {
@@ -9873,7 +9810,7 @@
    "verdict": "no size on page"
   },
   "US-9226": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Jocassee Gorges Wildlife Management Area",
    "official": {
@@ -9881,25 +9818,25 @@
     "as": "43,500 acres",
     "clean": false,
     "line": "ated with South Carolina's Blue Ridge Escarpment and its watersheds. The Jocassee Gorges tract contains about 43,500 acres. The S.C. Department of Natural Resources owns most of this land, and activities here are governed by a manag",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Jocassee Gorges tract contains about 43,500 acres.",
     "url": "https://www.dnr.sc.gov/managed/wild/jocassee/index.htm",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 40362,
+    "acres": 39363,
     "dissolved": {
-     "after": 33042,
-     "before": 98426,
+     "after": 33119,
+     "before": 98503,
      "copies": 2,
-     "key_union": 40362,
+     "key_union": 39363,
      "parts": 0,
-     "records": 11,
-     "summed": 33042,
-     "tracts": 9
+     "records": 12,
+     "summed": 33119,
+     "tracts": 10
     },
     "manager": "",
-    "note": "11 joined records = 9 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 98426 -> 33042 acres",
+    "note": "12 joined records = 10 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 98503 -> 33119 acres",
     "pieces": [
      [
       "sgsca3",
@@ -9911,6 +9848,12 @@
       "sgscd467",
       "Jocassee Gorges",
       113,
+      "name"
+     ],
+     [
+      254017,
+      "Jocassee Gorges",
+      77,
       "name"
      ],
      [
@@ -9942,15 +9885,9 @@
       "Jocassee Gorges",
       1,
       "name"
-     ],
-     [
-      "sgscd458",
-      "Jocassee Gorges",
-      1,
-      "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 1
    },
@@ -9968,12 +9905,12 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 7,
+   "pct": 10,
    "same_agency": false,
-   "score": 7,
+   "score": 8,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 2,
     "source": 2
    },
@@ -10002,7 +9939,7 @@
    "verdict": "agree"
   },
   "US-9227": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Nine Times Wildlife Management Area",
    "ours": null,
@@ -10012,7 +9949,7 @@
    "verdict": "no outline"
   },
   "US-9228": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Peters Creek Wildlife Management Area",
    "official": {
@@ -10020,19 +9957,21 @@
     "as": "160 acres",
     "clean": true,
     "line": "und Visitor Center Waterfall Trail Head Pets No Fee No Camping Summary: Peters Creek Heritage Preserve covers 160 acres in Spartanburg County. This piedmont cove forest, with its rolling topography, an old mill dam, two creeks an",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Peters Creek Heritage Preserve covers 160 acres in Spartanburg County.",
     "url": "https://www.sctrails.net/trails/trail/peters-creek-heritage-preserve",
     "why": "clean total"
    },
    "ours": {
-    "acres": 161,
+    "acres": 173,
     "dissolved": {
      "after": 161,
      "before": 320,
      "copies": 1,
+     "key_union": 173,
      "parts": 0,
      "records": 2,
+     "summed": 161,
      "tracts": 1
     },
     "manager": "",
@@ -10057,7 +9996,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 1,
+   "pct": 8,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -10082,7 +10021,7 @@
    "verdict": "agree"
   },
   "US-9229": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Wild Turkey Wildlife Management Area",
    "ours": null,
@@ -10094,7 +10033,7 @@
   "US-9230": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Rock Hill Blackjacks Wildlife Management Area",
    "official": null,
    "ours": {
@@ -10145,17 +10084,82 @@
    "verdict": "no size on page"
   },
   "US-9758": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Chattooga National Wild and Scenic River",
-   "ours": null,
-   "score": null,
+   "note": "whole park compared (POTA lists it in 3 states: {'US-GA': 16528, 'US-NC': 16568, 'US-SC': 16528})",
+   "official": null,
+   "ours": {
+    "acres": 49624,
+    "acres_by_state": {
+     "US-GA": 16528,
+     "US-NC": 16568,
+     "US-SC": 16528
+    },
+    "manager": "",
+    "pieces": [
+     [
+      "fwsr180",
+      "Chattooga, North Carolina, South Carolina and Georgia National Wild and Scenic River",
+      10971,
+      "reviewed"
+     ],
+     [
+      "fwsr6",
+      "Chattooga, North Carolina, South Carolina and Georgia National Wild and Scenic River",
+      4651,
+      "reviewed"
+     ],
+     [
+      "fwsr95",
+      "Chattooga, North Carolina, South Carolina and Georgia National Wild and Scenic River",
+      906,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "",
+    "states": [
+     "US-GA",
+     "US-NC",
+     "US-SC"
+    ],
+    "unknown_pieces": 0,
+    "whole_park": true
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.rivers.gov/rivers/river/chattooga",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.rivers.gov/rivers/about",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.rivers.gov/rivers/history",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
    "t": "National Wild and Scenic River",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "no size on page"
   },
   "US-9759": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "May Forest State Park",
    "ours": null,
@@ -10165,5 +10169,5 @@
    "verdict": "no outline"
   }
  },
- "read": "2026-11-15"
+ "read": "2026-11-22"
 }

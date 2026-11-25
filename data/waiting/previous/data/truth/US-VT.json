@@ -2,38 +2,38 @@
  "about": "Park truth checker: official acreage vs our outline, handover hints, second-witness score. Review lists only: nothing here changes a key or a card.",
  "area": "US-VT",
  "counts": {
-  "agree": 37,
-  "handover_hints": 10,
+  "agree": 35,
+  "handover_hints": 11,
   "no_page": 0,
   "no_size": 12,
-  "off": 31,
-  "ours_unknown": 0,
+  "off": 32,
+  "ours_unknown": 2,
   "parks": 109,
   "retired": 0,
   "unsure": 12,
-  "weak": 7,
-  "with_outline": 92
+  "weak": 6,
+  "with_outline": 93
  },
  "parks": {
   "US-0329": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Silvio O Conte National Wildlife Refuge",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-NH': 7153, 'US-VT': 27090})",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-VT': 27090, 'US-NH': 7064})",
    "official": {
     "acres": 40000.0,
     "as": "40,000 acres",
     "clean": false,
     "line": "end throughout the 7.2 million acre Connecticut River watershed. Currently, the refuge is comprised of nearly 40,000 acres within parts of the four watershed states of New Hampshire, Vermont, Massachusetts, and Connecticut. The refu",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Currently, the refuge is comprised of nearly 40,000 acres within parts of the four watershed states of New Hampshire, Vermont, Massachusetts, and Connecticut.",
     "url": "https://www.fws.gov/refuge/silvio-o-conte",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 34243,
+    "acres": 34154,
     "acres_by_state": {
-     "US-NH": 7153,
+     "US-NH": 7064,
      "US-VT": 27090
     },
     "dissolved": {
@@ -57,10 +57,10 @@
     "pin": "just outside",
     "src": "USGS PAD-US",
     "states": [
-     "US-MA",
      "US-CT",
-     "US-NH",
-     "US-VT"
+     "US-MA",
+     "US-VT",
+     "US-NH"
     ],
     "unknown_pieces": 0,
     "whole_park": true
@@ -84,7 +84,7 @@
      "why": "FWS refuge about page"
     }
    ],
-   "pct": 14,
+   "pct": 15,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -127,7 +127,7 @@
    "verdict": "agree"
   },
   "US-0574": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Missisquoi National Wildlife Refuge",
    "official": {
@@ -135,7 +135,7 @@
     "as": "6,729 acres",
     "clean": false,
     "line": "squoi National Wildlife Refuge was established in 1943 to provide habitat for migratory birds. It consists of 6,729 acres, mostly wetland habitats, which support a variety of migratory birds and other wildlife. Learn More About Us",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "It consists of 6,729 acres, mostly wetland habitats, which support a variety of migratory birds and other wildlife.",
     "url": "https://www.fws.gov/refuge/missisquoi",
     "why": "total-looking"
@@ -228,7 +228,7 @@
    "verdict": "agree"
   },
   "US-0744": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Marsh-Billings-Rockefeller National Historical Park",
    "official": null,
@@ -290,7 +290,7 @@
    "verdict": "no size on page"
   },
   "US-10298": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Whipstock Hill Wildlife Management Area",
    "official": {
@@ -298,7 +298,7 @@
     "as": "425 Acres",
     "clean": false,
     "line": "Lands Agency Home Project Learning Tree Whipstock Hill Wildlife Management Area Bennington; Bennington County 425 Acres For more information about this unit please visit the web page: Whipstock Hill WMA Description and Map WMA Lo",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "425 Acres",
     "url": "https://fpr.vermont.gov/whipstock-hill-wildlife-management-area",
     "why": "total-looking"
@@ -322,7 +322,7 @@
       "sgvta326",
       "Whipstock Hill WMA",
       441,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -386,7 +386,7 @@
   },
   "US-10299": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "South Stream State Wildlife Habitat Management Area",
    "official": {
@@ -394,7 +394,7 @@
     "as": "130 Acres",
     "clean": false,
     "line": "State Lands Agency Home Project Learning Tree South Stream Wildlife Management Area Pownal; Bennington County 130 Acres For more information about this unit please visit the web page: South Stream WMA Description and Map WMA Loca",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "130 Acres",
     "url": "https://fpr.vermont.gov/south-stream-wildlife-management-area",
     "why": "total-looking"
@@ -466,7 +466,7 @@
    "verdict": "off"
   },
   "US-10300": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Kesick Swamp State Wildlife Habitat Management Area",
    "ours": null,
@@ -476,7 +476,7 @@
    "verdict": "no outline"
   },
   "US-10301": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Gale Meadows State Wildlife Habitat Management Area",
    "official": {
@@ -484,7 +484,7 @@
     "as": "707 acre",
     "clean": false,
     "line": "ildlife Management Areas General Description: Gale Meadows Wildlife Management Area (WMA) is an approximately 707-acre parcel located in the towns of Londonderry and Winhall. It is owned by the State of Vermont and managed by th",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Gale Meadows Wildlife Management Area (WMA) is an approximately 707-acre parcel located in the towns of Londonderry and Winhall.",
     "url": "https://fpr.vermont.gov/gale-meadows-wildlife-management-area",
     "why": "total-looking"
@@ -579,7 +579,7 @@
    "verdict": "agree"
   },
   "US-10302": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Atherton Meadows State Wildlife Habitat Management Area",
    "official": {
@@ -587,7 +587,7 @@
     "as": "1,032 Acres",
     "clean": false,
     "line": "Lands Agency Home Project Learning Tree Atherton Meadows Wildlife Management Area Whitingham; Windham County 1,032 Acres For more information about this unit please visit the web page: Atherton Meadows WMA Description and Map WMA",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "1,032 Acres",
     "url": "https://fpr.vermont.gov/atherton-meadows-wildlife-management-area",
     "why": "total-looking"
@@ -675,7 +675,7 @@
   },
   "US-11966": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [
     {
      "date_hint": null,
@@ -692,14 +692,25 @@
     "as": "167.7 acres",
     "clean": false,
     "line": "iconderoga Association. In 1961, the State of Vermont began acquiring the southern parcels of the Mount, with 167.7 acres in total by 1998. Today, history and nature unite over 280 acres at Mount Independence with a one-of-a-kind e",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "In 1961, the State of Vermont began acquiring the southern parcels of the Mount, with 167.7 acres in total by 1998.",
     "url": "https://historicsites.vermont.gov/mount-independence",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 80,
+    "acres": 83,
+    "dissolved": {
+     "after": 143,
+     "before": 155,
+     "copies": 1,
+     "key_union": 83,
+     "parts": 0,
+     "records": 3,
+     "summed": 143,
+     "tracts": 2
+    },
     "manager": "",
+    "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 155 -> 143 acres",
     "pieces": [
      [
       52105,
@@ -714,7 +725,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -726,14 +737,14 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 52,
+   "pct": 51,
    "same_agency": false,
-   "score": 3,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 0,
-    "source": 0
+    "source": 2
    },
    "sizes": [
     {
@@ -769,7 +780,7 @@
    "verdict": "off"
   },
   "US-13530": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Dutton Pines State Park",
    "official": {
@@ -777,7 +788,7 @@
     "as": "13 Acres",
     "clean": false,
     "line": "s Recreation State Lands Agency Home Project Learning Tree Dutton Pines State Park Dummerston; Windham County 13 Acres General Description: This parcel was part of the Dutton Farm in the late 1800s. It was the site of tree plant",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "13 Acres",
     "url": "https://fpr.vermont.gov/dutton-pines-state-park",
     "why": "total-looking"
@@ -847,7 +858,7 @@
   },
   "US-3098": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Alburgh Dunes State Park",
    "official": {
@@ -855,7 +866,7 @@
     "as": "625 acres",
     "clean": true,
     "line": "t Pets Not permitted at this park. 24 10 13 6 4 15 16 3 Photo Gallery Welcome Alburgh Dunes State Park covers 625 acres and became a state park in 1996. It is named for the sand dunes near the center and western end of its south-",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Alburgh Dunes State Park covers 625 acres and became a state park in 1996.",
     "url": "https://vtstateparks.com/alburgh.html",
     "why": "clean total"
@@ -928,7 +939,7 @@
    "verdict": "off"
   },
   "US-3099": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Allis State Park",
    "official": null,
@@ -991,7 +1002,7 @@
    "verdict": "no size on page"
   },
   "US-3100": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Big Deer State Park",
    "ours": null,
@@ -1001,7 +1012,7 @@
    "verdict": "no outline"
   },
   "US-3101": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [
     {
      "date_hint": null,
@@ -1026,7 +1037,7 @@
     "as": "3,576 acres",
     "clean": true,
     "line": "lery Welcome Image Bomoseen State Park is a great place for building sand castles! Bomoseen State Park covers 3,576 acres in the Taconic Mountains along the shores of Lake Bomoseen, the largest lake located entirely within Vermont.",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Bomoseen State Park covers 3,576 acres in the Taconic Mountains along the shores of Lake Bomoseen, the largest lake located entirely within Vermont.",
     "url": "https://vtstateparks.com/bomoseen.html",
     "why": "clean total"
@@ -1040,7 +1051,7 @@
       "sgvta445",
       "Bomoseen State Park",
       3581,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -1098,7 +1109,7 @@
    "verdict": "agree"
   },
   "US-3102": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Boulder Beach State Park",
    "ours": null,
@@ -1109,7 +1120,7 @@
   },
   "US-3103": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Branbury State Park",
    "official": null,
@@ -1132,7 +1143,7 @@
       "sgvta436",
       "Branbury State Park",
       66,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -1194,7 +1205,7 @@
    "verdict": "unsure"
   },
   "US-3104": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Brighton State Park",
    "official": null,
@@ -1207,7 +1218,7 @@
       "sgvta441",
       "Brighton State Park",
       631,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -1242,7 +1253,7 @@
   },
   "US-3105": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Burton Island State Park",
    "official": {
@@ -1250,7 +1261,7 @@
     "as": "253 acre",
     "clean": true,
     "line": "ean up after your pets. 24 2346 26 10 13 9 8 6 5 2341 15 1 16 2 18 3 Photo Gallery Welcome Burton Island is a 253-acre park off the southwestern tip of St. Albans Point in Lake Champlain’s 'Inland Sea'. The park is accessible on",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Burton Island is a 253-acre park off the southwestern tip of St.",
     "url": "https://vtstateparks.com/burton.html",
     "why": "clean total"
@@ -1274,7 +1285,7 @@
       "sgvta447",
       "Burton Island State Park",
       253,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -1328,7 +1339,7 @@
    "verdict": "off"
   },
   "US-3106": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Button Bay State Park",
    "official": {
@@ -1336,7 +1347,7 @@
     "as": "253 acre",
     "clean": true,
     "line": "ly. Please clean up after your pets. 24 12 13 9 8 6 7 4 11 17 1 16 2 18 3 Photo Gallery Welcome Button Bay, a 253-acre park, is located on a bluff in Ferrisburgh along the 130-mile long Lake Champlain. Historically, the area has",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Button Bay, a 253-acre park, is located on a bluff in Ferrisburgh along the 130-mile long Lake Champlain.",
     "url": "https://vtstateparks.com/buttonbay.html",
     "why": "clean total"
@@ -1360,7 +1371,7 @@
       "sgvta444",
       "Button Bay State Park",
       235,
-      "name"
+      "reviewed"
      ],
      [
       61008,
@@ -1430,7 +1441,7 @@
   },
   "US-3107": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Camels Hump State Park",
    "official": null,
@@ -1523,7 +1534,7 @@
   },
   "US-3108": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [
     {
      "date_hint": "1984",
@@ -1540,7 +1551,7 @@
     "as": "295 acres",
     "clean": false,
     "line": "ic & Group Events Group Camping Cottage Rentals Camp Plymouth State Park Welcome to Camp Plymouth State Park, 295 acres of state lands on the shores of Echo Lake in Plymouth, Vermont. Camp Plymouth is rich in history from the",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Welcome to Camp Plymouth State Park, 295 acres of state lands on the shores of Echo Lake in",
     "url": "https://www.vtstateparks.com/sites/stateparks/files/documents/Camp-Plymouth-Map-Guide-2025.pdf",
     "why": "total-looking"
@@ -1609,25 +1620,28 @@
    "verdict": "off"
   },
   "US-3109": {
-   "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Coolidge State Park",
-   "official": null,
+   "official": {
+    "acres": 21500.0,
+    "as": "21,500 acre",
+    "clean": false,
+    "line": "mountain views, and historic character. Coolidge State Park is the main developed recreation area within the 21,500-acre Calvin Coolidge State Forest, the largest state-owned landholding in central Vermont. The park is unique amon",
+    "read": "2026-11-09",
+    "sent": "Coolidge State Park is the main developed recreation area within the 21,500-acre Calvin Coolidge State Forest, the largest state-owned landholding in central Vermont.",
+    "url": "https://vtstateparks.com/coolidge.html",
+    "why": "part (a lake, a purchase, a campground…)"
+   },
    "ours": {
-    "acres": 5260,
+    "acres": 23596,
+    "family_fold": "layers {'sgvta': 23596, 'padus': 5787}: one land in 2 layers, the sgvta copy used (5,787 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
-      61205,
+      "sgvta18",
       "Coolidge State Forest",
-      4237,
-      "reviewed-approx"
-     ],
-     [
-      61234,
-      "Coolidge State Forest",
-      1550,
+      23596,
       "reviewed-approx"
      ]
     ],
@@ -1648,13 +1662,14 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 10,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
-    "source": 1
+    "size": 2,
+    "source": 2
    },
    "sizes": [
     {
@@ -1678,10 +1693,10 @@
    ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "unsure"
+   "verdict": "agree"
   },
   "US-3110": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Crystal Lake State Park",
    "official": null,
@@ -1739,7 +1754,7 @@
   },
   "US-3111": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "D.A.R. State Park",
    "official": null,
@@ -1816,7 +1831,7 @@
   },
   "US-3112": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Elmore State Park",
    "official": {
@@ -1824,7 +1839,7 @@
     "as": "700 acres",
     "clean": false,
     "line": "lmore to the state of Vermont. With modest means, a picnic and beach area were created. Today, with more than 700 acres, Elmore State Park has become a popular, developed recreation facility. Facilities and Amenities Image The Be",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Today, with more than 700 acres, Elmore State Park has become a popular, developed recreation facility.",
     "url": "https://vtstateparks.com/elmore.html",
     "why": "total-looking"
@@ -1846,7 +1861,7 @@
       "sgvta429",
       "Elmore State Park",
       995,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -1955,7 +1970,7 @@
   },
   "US-3113": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Emerald Lake State Park",
    "official": {
@@ -1963,7 +1978,7 @@
     "as": "500 acres",
     "clean": false,
     "line": "now call Emerald Lake. After Shaw died, the State purchased about 1,000 acres from his estate in 1957. About 500 acres east of US Route 7 became Emerald Lake State Forest. The 430 acres west of the highway became Emerald Lake St",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "About 500 acres east of US Route 7 became Emerald Lake State Forest.",
     "url": "https://vtstateparks.com/emerald.html",
     "why": "total-looking"
@@ -1987,7 +2002,7 @@
       "sgvta442",
       "Emerald Lake State Park",
       873,
-      "name"
+      "reviewed"
      ],
      [
       61078,
@@ -2107,7 +2122,7 @@
    "verdict": "off"
   },
   "US-3114": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Fort Dummer State Park",
    "official": {
@@ -2115,7 +2130,7 @@
     "as": "217 acres",
     "clean": true,
     "line": "on the Sunset Trail Fort Dummer State Park, in the Connecticut River Valley just outside Brattleboro, covers 217 acres of forested land. The park is named for Fort Dummer, Vermont’s first permanent European settlement. Built in",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Fort Dummer State Park, in the Connecticut River Valley just outside Brattleboro, covers 217 acres of forested land.",
     "url": "https://vtstateparks.com/fortdummer.html",
     "why": "clean total"
@@ -2139,7 +2154,7 @@
       "sgvta448",
       "Fort Dummer State Park",
       268,
-      "name"
+      "reviewed"
      ],
      [
       61093,
@@ -2200,7 +2215,7 @@
   },
   "US-3115": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Gifford Woods State Park",
    "official": {
@@ -2208,7 +2223,7 @@
     "as": "285 acres",
     "clean": false,
     "line": "untain Club to help protect the Long Trail corridor. With this addition, the park reached its current size of 285 acres. Today, Gifford Woods contains one of the few old-growth hardwood tree stands remaining in Vermont. The stand",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "With this addition, the park reached its current size of 285 acres.",
     "url": "https://vtstateparks.com/gifford.html",
     "why": "total-looking"
@@ -2222,7 +2237,7 @@
       "sgvta424",
       "Gifford Woods State Park",
       116,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "just outside",
@@ -2313,7 +2328,7 @@
   },
   "US-3116": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 226 acre, no total words near it)",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Grand Isle State Park",
    "official": {
@@ -2321,7 +2336,7 @@
     "as": "226 acre",
     "clean": false,
     "line": "g building from the Birchcliff resort. Three additional property acquisitions brought the park to its current 226-acre size. In the 1960s, the state developed the campground to attract visitors to the Lake Champlain Islands. Tod",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Three additional property acquisitions brought the park to its current 226-acre size.",
     "url": "https://vtstateparks.com/grandisle.html",
     "why": "no total words near it"
@@ -2345,7 +2360,7 @@
       "sgvta443",
       "Grand Isle State Park",
       206,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -2408,7 +2423,7 @@
    "verdict": "unsure"
   },
   "US-3117": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Green River Reservoir State Park",
    "official": {
@@ -2416,7 +2431,7 @@
     "as": "5,503 acres",
     "clean": false,
     "line": "ry Welcome Image An aerial view of the reservoir Green River Reservoir became a state park in March 1999 when 5,503 acres were purchased from the Morrisville Water and Light Department. Green River Reservoir offers a different expe",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Green River Reservoir became a state park in March 1999 when 5,503 acres were purchased from the Morrisville Water and Light Department.",
     "url": "https://vtstateparks.com/grriver.html",
     "why": "part (a lake, a purchase, a campground…)"
@@ -2430,7 +2445,7 @@
       "sgvta475",
       "Green River Reservoir State Park",
       6153,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -2484,7 +2499,7 @@
    "verdict": "agree"
   },
   "US-3118": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Halfmoon Pond State Park",
    "ours": null,
@@ -2494,7 +2509,7 @@
    "verdict": "no outline"
   },
   "US-3119": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Hazens Notch State Park",
    "official": {
@@ -2502,7 +2517,7 @@
     "as": "307 Acres",
     "clean": false,
     "line": "s Recreation State Lands Agency Home Project Learning Tree Hazen's Notch State Park Westfield, Orleans County 307 Acres General Description: Initial acquisitions of property to become Hazen’s Notch State Park took place in 1934 a",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "307 Acres",
     "url": "https://fpr.vermont.gov/hazens-notch-state-park",
     "why": "total-looking"
@@ -2516,7 +2531,7 @@
       "sgvta468",
       "Hazens Notch State Park",
       422,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -2565,7 +2580,7 @@
    "verdict": "agree"
   },
   "US-3120": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [
     {
      "date_hint": null,
@@ -2582,7 +2597,7 @@
     "as": "772 acres",
     "clean": true,
     "line": "area. Please clean up after your pets. 24 9 6 7 4 11 1 16 2 3 Photo Gallery Welcome Jamaica State Park covers 772 acres and opened to the public in 1969. Before the park was established, the land included several small farms and",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Jamaica State Park covers 772 acres and opened to the public in 1969.",
     "url": "https://vtstateparks.com/jamaica.html",
     "why": "clean total"
@@ -2613,7 +2628,7 @@
       "sgvta434",
       "Jamaica State Park",
       1133,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "just outside",
@@ -2653,7 +2668,7 @@
    "verdict": "agree"
   },
   "US-3121": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Kamp Kill Kare State Park",
    "ours": null,
@@ -2663,7 +2678,7 @@
    "verdict": "no outline"
   },
   "US-3122": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Kettle Pond State Park",
    "ours": null,
@@ -2673,7 +2688,7 @@
    "verdict": "no outline"
   },
   "US-3123": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Kingsland Bay State Park",
    "official": {
@@ -2681,7 +2696,7 @@
     "as": "264 acres",
     "clean": false,
     "line": "spot for local events and weddings, due in large part to the stunning backdrop of Lake Champlain. Much of the 264 acres, along the shores of Lake Champlain, remains as a natural area. The historic Hawley House (1790) is part of t",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Much of the 264 acres, along the shores of Lake Champlain, remains as a natural area.",
     "url": "https://vtstateparks.com/kingsland.html",
     "why": "total-looking"
@@ -2695,7 +2710,7 @@
       "sgvta474",
       "Kingsland Bay State Park",
       291,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -2749,7 +2764,8 @@
    "verdict": "agree"
   },
   "US-3124": {
-   "checked": "2026-11-01",
+   "cause": "agency bigger: our outline may miss a tract",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Knight Island State Park",
    "official": {
@@ -2757,25 +2773,25 @@
     "as": "185 acres",
     "clean": false,
     "line": "with Burton Island and Woods Island . The State of Vermont bought Knight Island in 1990. The island is about 185 acres. It is about one mile long and nearly half a mile wide. Most of the island is part of the park, except for a",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "The island is about 185 acres.",
     "url": "https://vtstateparks.com/knightisland.html",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 170,
+    "acres": 91,
     "manager": "",
     "pieces": [
      [
       "sgvta469",
       "Knight Island State Park",
       170,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "just outside",
     "src": "",
-    "unknown_pieces": 0
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -2790,14 +2806,14 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 8,
+   "pct": 51,
    "same_agency": false,
-   "score": 6,
+   "score": 5,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 2,
-    "source": 1
+    "size": 0,
+    "source": 2
    },
    "sizes": [
     {
@@ -2830,11 +2846,11 @@
    ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "off"
   },
   "US-3125": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 54 acre, no total words near it)",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Knight Point State Park",
    "official": {
@@ -2842,7 +2858,7 @@
     "as": "54 acre",
     "clean": false,
     "line": "e tavern in 1845, has an unusual two-story porch. Grounds / Facilities Expansive lawns are the center of this 54-acre day use park. The lawn becomes meadow west of the developed area, where the forest along the lakeside is a su",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Expansive lawns are the center of this 54-acre day use park.",
     "url": "https://vtstateparks.com/knightpoint.html",
     "why": "no total words near it"
@@ -2927,7 +2943,7 @@
   },
   "US-3126": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Lake Carmi State Park",
    "official": {
@@ -2935,7 +2951,7 @@
     "as": "1375 acre",
     "clean": false,
     "line": "bins. Please clean up after your pets. 24 12 10 13 9 8 6 4 11 15 1 16 18 3 Photo Gallery Welcome Image With a 1375-acre surface area, Carmi is the fourth largest natural lake located entirely within Vermont. It is 7.5 miles aroun",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "With a 1375-acre surface area, Carmi is the fourth largest natural lake located entirely within Vermont.",
     "url": "https://vtstateparks.com/carmi.html",
     "why": "total-looking"
@@ -2959,7 +2975,7 @@
       "sgvta446",
       "Lake Carmi State Park",
       566,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -3049,7 +3065,7 @@
    "verdict": "off"
   },
   "US-3127": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Lake St. Catherine State Park",
    "official": {
@@ -3057,7 +3073,7 @@
     "as": "117 acre",
     "clean": false,
     "line": "ne State Park has long been a destination for visitors looking to relax, refresh, and enjoy the outdoors. The 117-acre park, on the shore of picturesque Lake St. Catherine, opened in 1953 as a picnic and swimming area. The park",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "The 117-acre park, on the shore of picturesque Lake St.",
     "url": "https://vtstateparks.com/catherine.html",
     "why": "total-looking"
@@ -3081,7 +3097,7 @@
       "sgvta439",
       "Lake St. Catherine State Park",
       129,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -3136,7 +3152,7 @@
   },
   "US-3128": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Lake Shaftsbury State Park",
    "official": null,
@@ -3213,7 +3229,7 @@
    "verdict": "unsure"
   },
   "US-3129": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Little River State Park",
    "ours": null,
@@ -3223,7 +3239,7 @@
    "verdict": "no outline"
   },
   "US-3130": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Lowell Lake State Park",
    "official": {
@@ -3231,7 +3247,7 @@
     "as": "345 acres",
     "clean": false,
     "line": "loses the majority of the lakeshore, including some significant wetland habitat, making the park a total of 345 acres in size. A steering committee made of community members, the Vermont Land Trust, and staff from the Depart",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "wetland habitat, making the park a total of 345 acres in",
     "url": "https://www.vtstateparks.com/sites/stateparks/files/documents/lowell.pdf",
     "why": "a map label (no sentence)"
@@ -3245,7 +3261,7 @@
       "sgvta456",
       "Lowell Lake State Park",
       360,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -3326,24 +3342,19 @@
    "verdict": "agree"
   },
   "US-3131": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Maidstone State Park",
    "official": null,
    "ours": {
-    "acres": 222,
+    "acres": 472,
+    "family_fold": "layers {'sgvta': 442, 'padus': 413}: one land in 2 layers, the sgvta copy used (413 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
-      61335,
+      "sgvta30",
       "Maidstone State Forest",
-      294,
-      "reviewed-approx"
-     ],
-     [
-      61334,
-      "Maidstone State Forest",
-      119,
+      442,
       "reviewed-approx"
      ]
     ],
@@ -3365,12 +3376,12 @@
     }
    ],
    "pct": null,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 1,
     "size": 1,
-    "source": 1
+    "source": 2
    },
    "sizes": [],
    "t": "State Park",
@@ -3378,7 +3389,7 @@
    "verdict": "no size on page"
   },
   "US-3132": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Molly Stark State Park",
    "official": {
@@ -3386,7 +3397,7 @@
     "as": "100 acres",
     "clean": false,
     "line": "t a roadside picnic area on land owned by the towns of Wilmington and Brattleboro. In 1939, the towns donated 100 acres to the state. Later that year, Wilmington resident Olga Haslund contributed an additional 48 acres. These don",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "In 1939, the towns donated 100 acres to the state.",
     "url": "https://vtstateparks.com/mollystark.html",
     "why": "history"
@@ -3410,7 +3421,7 @@
       "sgvta433",
       "Molly Stark State Park",
       174,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -3482,7 +3493,7 @@
    "verdict": "agree"
   },
   "US-3133": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Mount Ascutney State Park",
    "official": null,
@@ -3547,7 +3558,7 @@
   },
   "US-3134": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Mount Philo State Park",
    "official": null,
@@ -3677,7 +3688,7 @@
    "verdict": "unsure"
   },
   "US-3135": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "New Discovery State Park",
    "ours": null,
@@ -3688,7 +3699,7 @@
   },
   "US-3136": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Niquette Bay State Park",
    "official": {
@@ -3696,7 +3707,7 @@
     "as": "584 acre",
     "clean": true,
     "line": "ea. 16 2 3 Photo Gallery Welcome Image A bench with a great view along the trail Niquette Bay State Park is a 584-acre park that began with a land purchase by the State of Vermont in 1975. The park is named for Niquette Bay, a s",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Niquette Bay State Park is a 584-acre park that began with a land purchase by the State of Vermont in 1975.",
     "url": "https://vtstateparks.com/niquette.html",
     "why": "clean total"
@@ -3727,7 +3738,7 @@
       "sgvta465",
       "Niquette Bay State Park",
       613,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -3782,7 +3793,7 @@
   },
   "US-3137": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "North Hero State Park",
    "official": null,
@@ -3858,7 +3869,7 @@
    "verdict": "unsure"
   },
   "US-3138": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [
     {
      "date_hint": "1965",
@@ -3924,7 +3935,7 @@
    "verdict": "no size on page"
   },
   "US-3139": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Ricker Pond State Park",
    "ours": null,
@@ -3934,7 +3945,7 @@
    "verdict": "no outline"
   },
   "US-3140": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Sand Bar State Park",
    "ours": null,
@@ -3945,7 +3956,7 @@
   },
   "US-3141": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Sentinel Rock State Park",
    "official": {
@@ -3953,7 +3964,7 @@
     "as": "356 Acres",
     "clean": false,
     "line": "ks Recreation State Lands Agency Home Project Learning Tree Sentinel Rock State Park Westmore, Orleans County 356 Acres General Description: Sentinel Rock State Park, located in the Town of Westmore in northeastern Vermont, conta",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "356 Acres",
     "url": "https://fpr.vermont.gov/sentinel-rock-state-park",
     "why": "total-looking"
@@ -4032,7 +4043,7 @@
    "verdict": "off"
   },
   "US-3142": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Seyon Lodge State Park",
    "ours": null,
@@ -4043,7 +4054,7 @@
   },
   "US-3143": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Silver Lake State Park",
    "official": {
@@ -4051,7 +4062,7 @@
     "as": "84 acre",
     "clean": false,
     "line": "ntral Vermont attractions makes it a great place for family vacations. The park borders the northern shore of 84-acre Silver Lake. The lake offers excellent fishing for northern pike, perch, smallmouth bass, and other warm-wate",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "The park borders the northern shore of 84-acre Silver Lake.",
     "url": "https://vtstateparks.com/silver.html",
     "why": "total-looking"
@@ -4075,7 +4086,7 @@
       "sgvta440",
       "Silver Lake State Park",
       36,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -4147,7 +4158,7 @@
    "verdict": "off"
   },
   "US-3144": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Smugglers' Notch State Park",
    "ours": null,
@@ -4157,7 +4168,7 @@
    "verdict": "no outline"
   },
   "US-3145": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Stillwater State Park",
    "ours": null,
@@ -4169,6 +4180,7 @@
   "US-3146": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Sweet Pond State Park",
    "official": null,
    "ours": {
@@ -4219,7 +4231,7 @@
    "verdict": "no size on page"
   },
   "US-3147": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Thetford Hill State Park",
    "official": {
@@ -4227,7 +4239,7 @@
     "as": "262 acres",
     "clean": false,
     "line": "opular with hikers, picnickers, and nature lovers because of its great views. In 1931, Dwight Goddard donated 262 acres to the State of Vermont and asked that the land remain a state forest forever. The CCC set up a camp here in",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "In 1931, Dwight Goddard donated 262 acres to the State of Vermont and asked that the land remain a state forest forever.",
     "url": "https://vtstateparks.com/thetford.html",
     "why": "history"
@@ -4280,7 +4292,7 @@
    "verdict": "agree"
   },
   "US-3148": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [
     {
      "date_hint": null,
@@ -4321,7 +4333,7 @@
      "why": "official map (documents bot)"
     },
     {
-     "status": "rest",
+     "status": "robots-unreadable",
      "url": "http://www.nae.usace.army.mil/Portals/74/docs/Recreation/TSL/TSLTrailMap.pdf",
      "why": "official map (parkinfo-web)"
     }
@@ -4340,7 +4352,7 @@
    "verdict": "no size on page"
   },
   "US-3149": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Underhill State Park",
    "ours": null,
@@ -4350,7 +4362,7 @@
    "verdict": "no outline"
   },
   "US-3150": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Waterbury Center State Park",
    "ours": null,
@@ -4360,7 +4372,7 @@
    "verdict": "no outline"
   },
   "US-3151": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Wilgus State Park",
    "official": null,
@@ -4372,7 +4384,7 @@
       "sgvta426",
       "Wilgus State Park",
       97,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "just outside",
@@ -4393,12 +4405,12 @@
     }
    ],
    "pct": null,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 1,
     "size": 1,
-    "source": 1
+    "source": 2
    },
    "sizes": [],
    "t": "State Park",
@@ -4407,7 +4419,7 @@
   },
   "US-3152": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Woodford State Park",
    "official": {
@@ -4415,7 +4427,7 @@
     "as": "398 acre",
     "clean": false,
     "line": "feet this map is intended for informational purposes only Cabin Prime lean-to Woodford State Park Welcome to 398-acre Woodford State Park. At 2,400 feet in elevation Woodford is the highest state park in Vermont. Located on",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Welcome to 398-acre Woodford State Park.",
     "url": "https://www.vtstateparks.com/sites/stateparks/files/documents/Woodford%20Map%20Guide.pdf",
     "why": "total-looking"
@@ -4502,7 +4514,7 @@
    "verdict": "off"
   },
   "US-3153": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Woods Island State Park",
    "official": {
@@ -4510,7 +4522,7 @@
     "as": "125 acres",
     "clean": false,
     "line": "Island became Vermont's forty-fifth state park in 1985. It is one mile long and a quarter-mile wide covering 125 acres. Woods Island is home to many kinds of plants, including some that are rare or threatened in Vermont. Part of",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "It is one mile long and a quarter-mile wide covering 125 acres.",
     "url": "https://vtstateparks.com/woodsisland.html",
     "why": "total-looking"
@@ -4586,17 +4598,75 @@
    "verdict": "agree"
   },
   "US-4239": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "North Country Trail National Scenic Trail",
-   "ours": null,
-   "score": null,
+   "note": "whole park compared (POTA lists it in 0 states: {})",
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "acres_by_state": {},
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "states": [
+     "US-ND",
+     "US-WI",
+     "US-PA",
+     "US-NY",
+     "US-VT",
+     "US-OH",
+     "US-MI",
+     "US-MN"
+    ],
+    "unknown_pieces": 1,
+    "whole_park": true
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/noco/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/noco/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/noco/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/noco/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/noco/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
    "t": "National Scenic Trail",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "ours unknown"
   },
   "US-4527": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Green Mountain National Forest",
    "official": null,
@@ -4643,17 +4713,95 @@
    "verdict": "no size on page"
   },
   "US-4556": {
-   "checked": "2026-11-01",
-   "handover": [],
+   "checked": "2026-11-09",
+   "handover": [
+    {
+     "date_hint": "1937",
+     "kind": "managed by",
+     "line": "ian Mountains. Conceived in 1921, built by private citizens, and completed in 1937, today the trail is managed by the National Park Service, US Forest Service, Appalachian Trail Conservancy, numerous state agencies and thousands of volunte",
+     "owner_now": "National Park Service",
+     "src": "https://www.nps.gov/appa/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
    "n": "Appalachian Trail National Scenic Trail",
-   "ours": null,
-   "score": null,
+   "note": "whole park compared (POTA lists it in 0 states: {})",
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "acres_by_state": {},
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "states": [
+     "US-CT",
+     "US-VA",
+     "US-WV",
+     "US-MA",
+     "US-PA",
+     "US-ME",
+     "US-GA",
+     "US-TN",
+     "US-NY",
+     "US-VT",
+     "US-MD",
+     "US-NH",
+     "US-NJ",
+     "US-NC"
+    ],
+    "unknown_pieces": 1,
+    "whole_park": true
+   },
+   "owner_now": "National Park Service",
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/appa/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/appa/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/appa/planyourvisit/upload/APPA_Map.pdf",
+     "why": "official map (parkinfo-web)"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/appa/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/appa/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/appa/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
    "t": "National Scenic Trail",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "ours unknown"
   },
   "US-4588": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Taconic Mountains Ramble State Park",
    "official": {
@@ -4661,7 +4809,7 @@
     "as": "204 acres",
     "clean": false,
     "line": "e park. Please clean up after your pet. 2 Photo Gallery Welcome The Carson Davidson Revocable Trust Fund gave 204 acres in Hubbardton to the Vermont Department of Forests, Parks, and Recreation, creating Taconic Mountains Ramble",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "The Carson Davidson Revocable Trust Fund gave 204 acres in Hubbardton to the Vermont Department of Forests, Parks, and Recreation, creating Taconic Mountains Ramble State Park.",
     "url": "https://vtstateparks.com/taconic.html",
     "why": "no total words near it"
@@ -4719,7 +4867,7 @@
    "verdict": "agree"
   },
   "US-4589": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Molly's Falls Pond State Park",
    "official": {
@@ -4727,7 +4875,7 @@
     "as": "1,064 acres",
     "clean": true,
     "line": "15 miles from Barre, Vermont. It is in the rural town of Cabot in north central Vermont. The property covers 1,064 acres and includes a 411 acre pond. U.S. Route 2 runs along the north side. A dam sits at the west end of the pond",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "The property covers 1,064 acres and includes a 411 acre pond.",
     "url": "https://vtstateparks.com/mollysfalls.html",
     "why": "clean total"
@@ -4850,22 +4998,34 @@
    "verdict": "agree"
   },
   "US-4590": {
-   "checked": "2026-11-01",
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 1,000 acres, no total words near it)",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Muckross State Park",
    "official": {
-    "acres": 204.0,
-    "as": "204 acres",
+    "acres": 1000.0,
+    "as": "1,000 acres",
     "clean": false,
-    "line": ". The land was given to the State of Vermont by the estate of former State Senator Edgar May. The park covers 204 acres and was once part of a much larger estate built in the early 1900s by W.D. Woolson, a local industrialist. At",
-    "read": "2026-11-01",
-    "sent": "The park covers 204 acres and was once part of a much larger estate built in the early 1900s by W.D.",
+    "line": "ate built in the early 1900s by W.D. Woolson, a local industrialist. At that time, the estate included nearly 1,000 acres, two trout ponds, and many buildings, such as a main lodge and cottages. The park may be named after Muckross",
+    "read": "2026-11-09",
+    "sent": "At that time, the estate included nearly 1,000 acres, two trout ponds, and many buildings, such as a main lodge and cottages.",
     "url": "https://vtstateparks.com/muckross.html",
-    "why": "history"
+    "why": "no total words near it"
    },
    "ours": {
-    "acres": 204,
+    "acres": 89,
+    "dissolved": {
+     "after": 204,
+     "before": 408,
+     "copies": 1,
+     "key_union": 89,
+     "parts": 0,
+     "records": 2,
+     "summed": 204,
+     "tracts": 1
+    },
     "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 408 -> 204 acres",
     "pieces": [
      [
       61142,
@@ -4891,14 +5051,14 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 0,
+   "pct": 91,
    "same_agency": false,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 2,
-    "source": 0
+    "size": 1,
+    "source": 2
    },
    "sizes": [
     {
@@ -4922,11 +5082,11 @@
    ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "unsure"
   },
   "US-5527": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Arlington State Forest",
    "official": {
@@ -4934,7 +5094,7 @@
     "as": "225 Acres",
     "clean": false,
     "line": "Recreation State Lands Agency Home Project Learning Tree Arlington State Forest Arlington; Bennington County 225 Acres General Description: Established in 1913, Arlington State Forest consists of 225 acres of forest land in the",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "225 Acres",
     "url": "https://fpr.vermont.gov/arlington-state-forest",
     "why": "total-looking"
@@ -5007,7 +5167,7 @@
    "verdict": "off"
   },
   "US-5528": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [
     {
      "date_hint": null,
@@ -5024,7 +5184,7 @@
     "as": "1,244 Acres",
     "clean": false,
     "line": "rks Recreation State Lands Agency Home Project Learning Tree Townshend State Forest Townshend; Windham County 1,244 Acres For more information about this unit please visit the web page: Townshend State Park Townshend State Park Int",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "1,244 Acres",
     "url": "https://fpr.vermont.gov/townshend-state-forest",
     "why": "total-looking"
@@ -5137,7 +5297,7 @@
   },
   "US-5529": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Mollie Beattie State Forest",
    "official": {
@@ -5145,7 +5305,7 @@
     "as": "203 Acres",
     "clean": false,
     "line": "Recreation State Lands Agency Home Project Learning Tree Mollie Beattie State Forest Grafton; Windham County 203 Acres General Description: Located in a remote area of Grafton, the Mollie Beattie State Forest is a parcel of mixe",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "203 Acres",
     "url": "https://fpr.vermont.gov/mollie-beattie-state-forest",
     "why": "total-looking"
@@ -5209,7 +5369,7 @@
    "verdict": "off"
   },
   "US-5530": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Dorand State Forest",
    "official": {
@@ -5217,7 +5377,7 @@
     "as": "531 Acres",
     "clean": false,
     "line": "eation State Lands Agency Home Project Learning Tree Dorand State Forest Grafton & Rockingham; Windham County 531 Acres General Description: Dorand State Forest is comprised of two blocks located off Cambridgeport Road and Route",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "531 Acres",
     "url": "https://fpr.vermont.gov/dorand-state-forest",
     "why": "total-looking"
@@ -5271,7 +5431,7 @@
   },
   "US-5531": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "William C. Putnam State Forest",
    "official": {
@@ -5279,7 +5439,7 @@
     "as": "146 Acres",
     "clean": false,
     "line": "s Recreation State Lands Agency Home Project Learning Tree Putnam (W.C.) State Forest Grafton; Windham County 146 Acres General Description: William C. Putnam State Forest is a hilly woodland parcel located a few miles northwest",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "146 Acres",
     "url": "https://fpr.vermont.gov/putnam-wc-state-forest",
     "why": "total-looking"
@@ -5344,7 +5504,7 @@
   },
   "US-5532": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Hapgood State Forest",
    "official": {
@@ -5352,7 +5512,7 @@
     "as": "118 Acres",
     "clean": false,
     "line": "e Parks Recreation State Lands Agency Home Project Learning Tree Hapgood State Forest Peru; Bennington County 118 Acres General Description: The 118-acre Hapgood State Forest is located in the Town of Peru and surrounds the summi",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "118 Acres",
     "url": "https://fpr.vermont.gov/hapgood-state-forest",
     "why": "total-looking"
@@ -5426,7 +5586,7 @@
   },
   "US-5533": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Williams River State Forest",
    "official": {
@@ -5434,7 +5594,7 @@
     "as": "108 Acres",
     "clean": false,
     "line": "Recreation State Lands Agency Home Project Learning Tree Williams River State Forest Chester; Windham County 108 Acres General Description: Located on Popple Dungeon Road, this small parcel features hardwood forests, larch plant",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "108 Acres",
     "url": "https://fpr.vermont.gov/williams-river-state-forest",
     "why": "total-looking"
@@ -5498,7 +5658,7 @@
    "verdict": "off"
   },
   "US-5535": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Proctor-Piper State Forest",
    "official": {
@@ -5506,7 +5666,7 @@
     "as": "1,513 Acres",
     "clean": false,
     "line": "Recreation State Lands Agency Home Project Learning Tree Proctor Piper State Forest Cavendish; Windsor County 1,513 Acres General Description: A large forested area on either side of Proctorville Gulf. The terrain is steep to moder",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "1,513 Acres",
     "url": "https://fpr.vermont.gov/proctor-piper-state-forest",
     "why": "total-looking"
@@ -5530,7 +5690,7 @@
       "sgvta14",
       "Proctor Piper State Forest",
       1537,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -5570,7 +5730,7 @@
    "verdict": "agree"
   },
   "US-5536": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Okemo State Forest",
    "official": {
@@ -5578,7 +5738,7 @@
     "as": "7,983 Acres",
     "clean": false,
     "line": "me Project Learning Tree Okemo State Forest Andover, Ludlow, Mount Holly & Weston; Windsor & Rutland Counties 7,983 Acres General Description Okemo State Forest is one of southeast Vermont’s largest state forests. It straddles town",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "7,983 Acres",
     "url": "https://fpr.vermont.gov/okemo-state-forest",
     "why": "total-looking"
@@ -5607,7 +5767,7 @@
       "sgvta27",
       "Okemo State Forest",
       8372,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -5657,7 +5817,7 @@
   },
   "US-5537": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Lord State Forest",
    "official": {
@@ -5665,7 +5825,7 @@
     "as": "64 Acres",
     "clean": false,
     "line": "s Recreation State Lands Agency Home Project Learning Tree Lord (A.C.) State Forest Cavendish; Windsor County 64 Acres General Description: Located off Oscarson Road, Lord State Forest is a small parcel of gentle terrain and lar",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "64 Acres",
     "url": "https://fpr.vermont.gov/lord-ac-state-forest",
     "why": "total-looking"
@@ -5679,7 +5839,7 @@
       "sgvta36",
       "Lord State Forest",
       200,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -5720,7 +5880,7 @@
   },
   "US-5538": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Lower Clarendon Gorge State Forest",
    "official": {
@@ -5728,7 +5888,7 @@
     "as": "73 Acres",
     "clean": false,
     "line": "tion State Lands Agency Home Project Learning Tree Lower Clarendon Gorge State Park Clarendon; Rutland County 73 Acres General Description: The 74-acre Lower Clarendon Gorge State Forest surrounds the gorge of the same name on t",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "73 Acres",
     "url": "https://fpr.vermont.gov/lower-clarendon-gorge-state-park",
     "why": "total-looking"
@@ -5803,7 +5963,7 @@
   },
   "US-5539": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Jim Jeffords State Forest",
    "official": {
@@ -5811,7 +5971,7 @@
     "as": "1,349 acres",
     "clean": false,
     "line": "n State Lands Agency Home Project Learning Tree Jim Jeffords State Forest Mendon & Shrewsbury, Rutland County 1,349 acres General Description: The recently acquired 1,349-acre Jim Jeffords State Forest connects Aitken State Forest,",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "1,349 acres",
     "url": "https://fpr.vermont.gov/jim-jeffords-state-forest",
     "why": "total-looking"
@@ -5825,7 +5985,7 @@
       "sgvta16",
       "Jim Jeffords State Forest",
       1339,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -5875,7 +6035,7 @@
   },
   "US-5540": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Aitken State Forest",
    "official": {
@@ -5883,7 +6043,7 @@
     "as": "918 Acres",
     "clean": false,
     "line": "ate Parks Recreation State Lands Agency Home Project Learning Tree Aitken State Forest Mendon; Rutland County 918 Acres General Description: Aitken State Forest is located only minutes from Rutland and can be accessed via the Not",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "918 Acres",
     "url": "https://fpr.vermont.gov/bird-mountain-wildlife-management-area/aitken-state-forest",
     "why": "total-looking"
@@ -5957,7 +6117,7 @@
   },
   "US-5541": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Calvin Coolidge State Forest",
    "official": null,
@@ -6070,7 +6230,7 @@
   },
   "US-5542": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "West Rutland State Forest",
    "official": {
@@ -6078,7 +6238,7 @@
     "as": "344 acre",
     "clean": true,
     "line": "State Forest West Rutland; Rutland County 344 Acres General Description: West Rutland State Forest is a hilly 344-acre property in the extreme northwest corner of the Town of West Rutland. It is completely forested, principally",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "West Rutland State Forest is a hilly 344-acre property in the extreme northwest corner of the Town of West Rutland.",
     "url": "https://fpr.vermont.gov/west-rutland-state-forest",
     "why": "clean total"
@@ -6152,7 +6312,7 @@
   },
   "US-5543": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [
     {
      "date_hint": null,
@@ -6169,7 +6329,7 @@
     "as": "263 acre",
     "clean": false,
     "line": "l State Forest Chittenden; Rutland County 263.50 Acres General Description: The Mt. Carmel State Forest was a 263-acre gift to the State of Vermont in 1956 from Governor Redfield Proctor. Located in the Town of Chittenden, the f",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Carmel State Forest was a 263-acre gift to the State of Vermont in 1956 from Governor Redfield Proctor.",
     "url": "https://fpr.vermont.gov/mt-carmel-state-forest",
     "why": "total-looking"
@@ -6242,7 +6402,7 @@
    "verdict": "off"
   },
   "US-5544": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Downer State Forest",
    "official": {
@@ -6250,7 +6410,7 @@
     "as": "705 Acres",
     "clean": false,
     "line": "ate Parks Recreation State Lands Agency Home Project Learning Tree Downer State Forest Sharon; Windsor County 705 Acres General Description: Downer State Forest was established in 1910 as a gift from Charles Downer for the purpos",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "705 Acres",
     "url": "https://fpr.vermont.gov/downer-state-forest",
     "why": "total-looking"
@@ -6272,7 +6432,7 @@
       "sgvta3",
       "Downer State Forest",
       733,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -6313,7 +6473,7 @@
   },
   "US-5545": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Thetford Hill State Forest",
    "official": null,
@@ -6376,7 +6536,7 @@
   },
   "US-5547": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Granville Gulf Reservation State Forest",
    "official": {
@@ -6384,7 +6544,7 @@
     "as": "1,171 acres",
     "clean": true,
     "line": "Reservation Granville; Addison County 1,171 Acres General Description: Granville Gulf Reservation consists of 1,171 acres on either side of a six-mile section of Route 100 known as the Granville Gulf. The original parcel consisted",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Granville Gulf Reservation consists of 1,171 acres on either side of a six-mile section of Route 100 known as the Granville Gulf.",
     "url": "https://fpr.vermont.gov/granville-gulf-reservation",
     "why": "clean total"
@@ -6475,6 +6635,7 @@
   "US-5548": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Washington State Forest",
    "official": null,
    "ours": {
@@ -6496,7 +6657,7 @@
       "sgvta21",
       "Washington State Forest",
       435,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -6525,7 +6686,7 @@
    "verdict": "no size on page"
   },
   "US-5549": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Roxbury State Forest",
    "official": {
@@ -6533,7 +6694,7 @@
     "as": "5,509 acres",
     "clean": false,
     "line": "arks Recreation State Lands Agency Home Project Learning Tree Roxbury State Forest Roxbury, Washington County 5,509 acres General Description: Roxbury State Forest is made up of 3 blocks. The Rice and Vogt Blocks are on the eastern",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "5,509 acres",
     "url": "https://fpr.vermont.gov/roxbury-state-forest",
     "why": "total-looking"
@@ -6564,7 +6725,7 @@
       "sgvta24",
       "Roxbury State Forest",
       6144,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -6613,7 +6774,7 @@
    "verdict": "agree"
   },
   "US-5550": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Boyer State Forest",
    "official": {
@@ -6621,7 +6782,7 @@
     "as": "354.6 Acres",
     "clean": false,
     "line": "e Parks Recreation State Lands Agency Home Project Learning Tree Boyer State Forest Berlin, Washington County 354.6 Acres General Description: Boyer State Forest is located on Crosstown Road in Berlin, Vermont. It ranges in elevati",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "354.6 Acres",
     "url": "https://fpr.vermont.gov/boyer-state-forest",
     "why": "total-looking"
@@ -6645,7 +6806,7 @@
       "sgvta42",
       "Boyer State Forest",
       364,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "just outside",
@@ -6712,7 +6873,7 @@
    "verdict": "agree"
   },
   "US-5551": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Jones State Forest",
    "official": {
@@ -6720,7 +6881,7 @@
     "as": "450 acres",
     "clean": false,
     "line": "scription: L.R. Jones State Forest is Vermont’s first State Forest and is part of the Groton Management Unit. 450 acres of the 642 acre parcel was acquired in 1909. It is located entirely in the town of Plainfield. Public access",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "450 acres of the 642 acre parcel was acquired in 1909.",
     "url": "https://fpr.vermont.gov/jones-lr-state-forest",
     "why": "history"
@@ -6802,7 +6963,7 @@
    "verdict": "agree"
   },
   "US-5552": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Groton State Forest",
    "official": {
@@ -6810,7 +6971,7 @@
     "as": "26,164 Acres",
     "clean": false,
     "line": "anville, Groton, Marshfield, Orange, Peacham, Plainfield, Topsham; Caledonia, Orange, and Washington Counties 26,164 Acres General Description: Acquisition of Groton State Forest began in 1919. The Forest is managed for timber resou",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "26,164 Acres",
     "url": "https://fpr.vermont.gov/groton-state-forest",
     "why": "total-looking"
@@ -6841,7 +7002,7 @@
       "sgvta15",
       "Groton State Forest",
       27058,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -6900,7 +7061,7 @@
   },
   "US-5553": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Camels Hump State Forest",
    "official": null,
@@ -6971,7 +7132,7 @@
    "verdict": "unsure"
   },
   "US-5554": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Putnam State Forest",
    "official": {
@@ -6979,7 +7140,7 @@
     "as": "12,855 acres",
     "clean": false,
     "line": "s the fifth largest State Forest in Vermont. Most of the 17,503-acre forest consists of one contiguous parcel 12,855 acres in size. C.C. Putnam State Forest is primarily mountainous terrain extending over nine miles along the Worces",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Most of the 17,503-acre forest consists of one contiguous parcel 12,855 acres in size.",
     "url": "https://fpr.vermont.gov/putnam-cc-state-forest",
     "why": "total-looking"
@@ -7130,7 +7291,7 @@
    "verdict": "agree"
   },
   "US-5555": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [
     {
      "date_hint": null,
@@ -7147,7 +7308,7 @@
     "as": "44,444 Acres",
     "clean": false,
     "line": "ill, Chittenden County; Cambridge, Johnson, Morristown & Stowe, Lamoille County; Waterbury, Washington County 44,444 Acres For more information about this unit please visit the web pages for the 4 State Parks located within its boun",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "44,444 Acres",
     "url": "https://fpr.vermont.gov/mt-mansfield-state-forest-0",
     "why": "total-looking"
@@ -7253,7 +7414,7 @@
   },
   "US-5556": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Lyndon State Forest",
    "official": {
@@ -7261,7 +7422,7 @@
     "as": "72.2 Acres",
     "clean": false,
     "line": "e Parks Recreation State Lands Agency Home Project Learning Tree Lyndon State Forest Lyndon, Caledonia County 72.2 Acres General Description: Lyndon State Forest was one of the first parcels of land acquired by the State of Vermon",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "72.2 Acres",
     "url": "https://fpr.vermont.gov/lyndon-state-forest",
     "why": "total-looking"
@@ -7325,7 +7486,7 @@
    "verdict": "off"
   },
   "US-5557": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Victory State Forest",
    "official": {
@@ -7333,7 +7494,7 @@
     "as": "16,272 Acres",
     "clean": false,
     "line": "Agency Home Project Learning Tree Victory State Forest Concord, Granby, Lunenburg, and Victory, Essex County 16,272 Acres General Description: Much of Victory State Forest was acquired from lumber or paper companies and has a long",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "16,272 Acres",
     "url": "https://fpr.vermont.gov/victory-state-forest",
     "why": "total-looking"
@@ -7364,7 +7525,7 @@
       "sgvta33",
       "Victory State Forest",
       16351,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -7405,7 +7566,7 @@
   },
   "US-5558": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Mathewson State Forest",
    "official": {
@@ -7413,7 +7574,7 @@
     "as": "788 Acres",
     "clean": false,
     "line": "ds Agency Home Project Learning Tree Mathewson State Forest Sheffield, Sutton, and Wheelock; Caledonia County 788 Acres General Description: Mathewson State Forest lies between the Sutton-Wheelock Road and Town Farm Road. The par",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "788 Acres",
     "url": "https://fpr.vermont.gov/mathewson-state-forest",
     "why": "total-looking"
@@ -7427,7 +7588,7 @@
       "sgvta31",
       "Mathewson State Forest",
       808,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -7486,7 +7647,7 @@
   },
   "US-5559": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Cambridge State Forest",
    "official": {
@@ -7494,7 +7655,7 @@
     "as": "22 acres",
     "clean": false,
     "line": "serves as a nature center and as a residence for a park naturalist in the summer. 4. Cambridge Natural Area. 22 acres, Cambridge State Forest, Town of Cambridge. This is a stand of old white pine and hemlock on a steep, sandy h",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "22 acres, Cambridge State Forest, Town of Cambridge.",
     "url": "https://fpr.vermont.gov/vermont-natural-areas",
     "why": "total-looking"
@@ -7621,7 +7782,7 @@
    "verdict": "off"
   },
   "US-5560": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Long Trail State Forest",
    "official": {
@@ -7629,7 +7790,7 @@
     "as": "9,529.44 Acres",
     "clean": false,
     "line": "Belvidere, Eden, Lowell, Johnson, Montgomery, Waterville, Westfield; Franklin, Lamoille and Orleans Counties 9,529.44 Acres General Description: The primary purpose of the Long Trail State Forest is protection of the Long Trail. Sinc",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "9,529.44 Acres",
     "url": "https://fpr.vermont.gov/long-trail-state-forest",
     "why": "total-looking"
@@ -7710,7 +7871,7 @@
   },
   "US-5561": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Willoughby State Forest",
    "official": {
@@ -7718,7 +7879,7 @@
     "as": "7,682 Acres",
     "clean": false,
     "line": "ome Project Learning Tree Willoughby State Forest Newark, Sutton and Westmore; Caledonia and Orleans Counties 7,682 Acres Dolloff Pond ( Photo Credit - Friends of Willoughby) General Description: Willoughby State Forest is easily a",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "7,682 Acres",
     "url": "https://fpr.vermont.gov/willoughby-state-forest",
     "why": "total-looking"
@@ -7732,7 +7893,7 @@
       "sgvta20",
       "Willoughby State Forest",
       8671,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -7800,7 +7961,7 @@
   },
   "US-5562": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Jay State Forest",
    "official": {
@@ -7808,7 +7969,7 @@
     "as": "8,242 Acres",
     "clean": false,
     "line": "Home Project Learning Tree Jay State Forest Jay, Richford, Montgomery & Westfield: Franklin & Orleans County 8,242 Acres General Description: Jay State Forest was established with the first acquisition in 1954. One of the first ma",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "8,242 Acres",
     "url": "https://fpr.vermont.gov/jay-state-forest-big-jayblack-falls-tracts",
     "why": "total-looking"
@@ -7909,7 +8070,8 @@
    "verdict": "off"
   },
   "US-5563": {
-   "checked": "2026-11-01",
+   "cause": "agency bigger: our outline may miss a tract",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Black Turn Brook State Forest",
    "official": {
@@ -7917,13 +8079,13 @@
     "as": "592 Acres",
     "clean": false,
     "line": "s Recreation State Lands Agency Home Project Learning Tree Black Turn Brook State Forest Norton, Essex County 592 Acres General Description: Black Turn Brook State Forest was established in 1994 when the state received 592 acres",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "592 Acres",
     "url": "https://fpr.vermont.gov/black-turn-brook-state-forest",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 587,
+    "acres": 310,
     "manager": "",
     "pieces": [
      [
@@ -7935,7 +8097,7 @@
     ],
     "pin": "just outside",
     "src": "",
-    "unknown_pieces": 0
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -7945,14 +8107,14 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 1,
+   "pct": 48,
    "same_agency": false,
-   "score": 6,
+   "score": 5,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 2,
-    "source": 1
+    "size": 0,
+    "source": 2
    },
    "sizes": [
     {
@@ -7976,72 +8138,20 @@
    ],
    "t": "State Forest",
    "ver": 15,
-   "verdict": "agree"
-  },
-  "US-5564": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
-   "handover": [],
-   "n": "Essex Nursery State Forest",
-   "official": {
-    "acres": 29.0,
-    "as": "29 Acres",
-    "clean": false,
-    "line": "e Parks Recreation State Lands Agency Home Project Learning Tree West Street Complex Essex, Chittenden County 29 Acres General Description: The West Street Complex serves as the \"campus\" for the Northwest Region of the Agency of",
-    "read": "2026-11-01",
-    "sent": "29 Acres",
-    "url": "https://fpr.vermont.gov/west-street-complex",
-    "why": "total-looking"
-   },
-   "ours": {
-    "acres": 10,
-    "manager": "",
-    "pieces": [
-     [
-      61432,
-      "State Tree Nursery",
-      10,
-      "alias name (pin inside): State Tree Nursery"
-     ]
-    ],
-    "pin": "inside",
-    "src": "USGS PAD-US",
-    "unknown_pieces": 0
-   },
-   "owner_now": null,
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://fpr.vermont.gov/west-street-complex",
-     "why": "the park's page (data/parkinfo)"
-    }
-   ],
-   "pct": 66,
-   "same_agency": false,
-   "score": 3,
-   "score_parts": {
-    "name": 1,
-    "pin": 2,
-    "size": 0,
-    "source": 0
-   },
-   "sizes": [
-    {
-     "acres": 29.0,
-     "as": "29 Acres",
-     "clean": false,
-     "line": "e Parks Recreation State Lands Agency Home Project Learning Tree West Street Complex Essex, Chittenden County 29 Acres General Description: The West Street Complex serves as the \"campus\" for the Northwest Region of the Agency of",
-     "total_like": true,
-     "url": "https://fpr.vermont.gov/west-street-complex",
-     "why": "total-looking"
-    }
-   ],
-   "t": "State Forest",
-   "ver": 15,
    "verdict": "off"
   },
+  "US-5564": {
+   "checked": "2026-11-09",
+   "handover": [],
+   "n": "Essex Nursery State Forest",
+   "ours": null,
+   "score": null,
+   "t": "State Forest",
+   "ver": 15,
+   "verdict": "no outline"
+  },
   "US-8305": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [
     {
      "date_hint": null,
@@ -8058,7 +8168,7 @@
     "as": "1,998 Acres",
     "clean": false,
     "line": "s Recreation State Lands Agency Home Project Learning Tree Darling State Park Burke & Kirby, Caledonia County 1,998 Acres General Description: The fire tower erected on the summit of Burke Mountain in 1912 is reported to be the fir",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "1,998 Acres",
     "url": "https://fpr.vermont.gov/darling-state-park",
     "why": "total-looking"
@@ -8082,7 +8192,7 @@
       "sgvta428",
       "Darling State Park",
       1936,
-      "name"
+      "reviewed"
      ],
      [
       61074,
@@ -8137,5 +8247,5 @@
    "verdict": "agree"
   }
  },
- "read": "2026-11-01"
+ "read": "2026-11-09"
 }

@@ -2,31 +2,29 @@
  "about": "Park truth checker: official acreage vs our outline, handover hints, second-witness score. Review lists only: nothing here changes a key or a card.",
  "area": "US-IA",
  "counts": {
-  "agree": 19,
-  "handover_hints": 3,
+  "agree": 20,
+  "handover_hints": 7,
   "no_page": 0,
   "no_size": 128,
-  "not_read": 0,
   "off": 13,
-  "ours_unknown": 3,
+  "ours_unknown": 0,
   "parks": 181,
   "retired": 0,
   "unsure": 16,
-  "weak": 4,
-  "with_outline": 179
+  "weak": 2,
+  "with_outline": 177
  },
  "parks": {
   "US-0268": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [
     {
      "date_hint": null,
      "kind": "managed by",
-     "line": "es. Management and Conservation The National Wildlife Refuge System is a series of lands and waters owned and managed by the U.S. Fish and Wildlife Service. Wildlife conservation is at the heart of the refuge system. It drives everything we do from the purpose a refuge is establis",
-     "owner_now": "U.S",
-     "src": "https://www.fws.gov/refuge/desoto/",
-     "why": "the park's page (data/parkinfo)"
+     "line": "Image Details A scenic view of Boyer Chute. Boyer Chute National Wildlife Refuge is another refuge managed by the staff of DeSoto National Wildlife Refuge and is located about one mile south on the Missouri River near Fort Calhoun, Nebraska. At Boyer Chute Nati",
+     "owner_now": "National Wildlife Refuge and",
+     "src": "https://www.fws.gov/refuge/desoto/about-us",
+     "why": "FWS refuge about page"
     }
    ],
    "n": "Desoto National Wildlife Refuge",
@@ -35,13 +33,13 @@
     "as": "8,365 acres",
     "clean": false,
     "line": "o National Wildlife Refuge is located along the Missouri River and borders both Iowa and Nebraska. Within its 8,365 acres lies DeSoto Lake, an oxbow lake that used to be a bend in the Missouri River. The refuge contains bottomland",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Within its 8,365 acres lies DeSoto Lake, an oxbow lake that used to be a bend in the Missouri River.",
     "url": "https://www.fws.gov/refuge/desoto/",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 4002,
+    "acres": 7530,
     "family_fold": "layers {'padus': 7530, 'sgiac': 3420}: one land in 2 layers, the padus copy used (3,420 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -62,21 +60,32 @@
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
-   "owner_now": "U.S",
+   "owner_now": "National Wildlife Refuge and",
    "pages": [
     {
      "status": "ok",
      "url": "https://www.fws.gov/refuge/desoto/",
      "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/desoto/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/desoto/about-us",
+     "why": "FWS refuge about page"
     }
    ],
-   "pct": 52,
+   "pct": 10,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -88,23 +97,32 @@
      "total_like": true,
      "url": "https://www.fws.gov/refuge/desoto/",
      "why": "total-looking"
+    },
+    {
+     "acres": 8365.0,
+     "as": "8,365 acres",
+     "clean": false,
+     "line": "birds and providing public recreation to local communities. Today the physical footprint of the refuge spans 8,365 acres. DeSoto National Wildlife Refuge is located in the migratory bird corridor of the Missouri River floodplain a",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/desoto/about-us",
+     "why": "total-looking"
     }
    ],
    "t": "National Wildlife Refuge",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-0269": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Driftless Area National Wildlife Refuge",
    "official": {
     "acres": 1238.0,
     "as": "1,238 acres",
     "clean": true,
-    "line": ". Restrooms There are no public restroom facilities on this refuge. Points of Interest The refuge encompasses 1,238 acres dispersed among multiple units of the Driftless Area in Iowa. This area is also known as the karst region and",
-    "read": "2026-11-22",
-    "sent": "The refuge encompasses 1,238 acres dispersed among multiple units of the Driftless Area in Iowa.",
+    "line": "egulations available. Visit our rules and policies page for maps and unit regulations. The refuge encompasses 1,238 acres of the Driftless Area in Iowa - a small portion of the entire Driftless Area. This area is also known as the",
+    "read": "2026-11-01",
+    "sent": "The refuge encompasses 1,238 acres of the Driftless Area in Iowa - a small portion of the entire Driftless Area.",
     "url": "https://www.fws.gov/refuge/driftless-area",
     "why": "clean total"
    },
@@ -149,12 +167,12 @@
     },
     {
      "other_unit": true,
-     "status": "HTTP 404",
+     "status": "ok",
      "url": "https://www.fws.gov/refuge/driftless-area/visit-us/rules-policies",
      "why": "rules page (documents bot)"
     },
     {
-     "status": "HTTP 404",
+     "status": "ok",
      "url": "https://www.fws.gov/refuge/driftless-area/about-us",
      "why": "FWS refuge about page"
     }
@@ -173,7 +191,7 @@
      "acres": 1238.0,
      "as": "1,238 acres",
      "clean": true,
-     "line": ". Restrooms There are no public restroom facilities on this refuge. Points of Interest The refuge encompasses 1,238 acres dispersed among multiple units of the Driftless Area in Iowa. This area is also known as the karst region and",
+     "line": "egulations available. Visit our rules and policies page for maps and unit regulations. The refuge encompasses 1,238 acres of the Driftless Area in Iowa - a small portion of the entire Driftless Area. This area is also known as the",
      "total_like": true,
      "url": "https://www.fws.gov/refuge/driftless-area",
      "why": "clean total"
@@ -182,9 +200,27 @@
      "acres": 1238.0,
      "as": "1,238 acre",
      "clean": false,
-     "line": "rally threatened northern monkshood and the endangered Iowa Pleistocene snail. Located in northeast Iowa, the 1,238-acre refuge consists of multiple units containing upland hardwood forests, grassland, stream, and riparian habitat",
+     "line": "s, the Iowa Pleistocene snail and northern monkshood, are found on the refuge. Located in northeast Iowa, the 1,238 acre refuge includes units that range in size from six acres to 209 acres. Refuge lands include upland hardwood fo",
      "total_like": true,
-     "url": "https://www.fws.gov/refuge/driftless-area",
+     "url": "https://www.fws.gov/refuge/driftless-area/about-us",
+     "why": "total-looking"
+    },
+    {
+     "acres": 209.0,
+     "as": "209 acres",
+     "clean": false,
+     "line": "refuge. Located in northeast Iowa, the 1,238 acre refuge includes units that range in size from six acres to 209 acres. Refuge lands include upland hardwood forests, grassland, stream and riparian riparian Definition of riparian",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/driftless-area/about-us",
+     "why": "total-looking"
+    },
+    {
+     "acres": 240000.0,
+     "as": "240,000 acres",
+     "clean": false,
+     "line": "The refuge stretches 261 river miles from Wabasha, Minnesota to Rock Island, Illinois, and protects more than 240,000 acres of Mississippi River floodplain. The... National Wildlife Refuge Winona, MN You are exiting the U.S. Fish and",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/driftless-area/about-us",
      "why": "total-looking"
     }
    ],
@@ -193,31 +229,163 @@
    "verdict": "agree"
   },
   "US-0270": {
-   "checked": "2026-11-22",
-   "handover": [],
+   "checked": "2026-11-01",
+   "handover": [
+    {
+     "date_hint": null,
+     "kind": "managed by",
+     "line": "ational wildlife refuge A national wildlife refuge is typically a contiguous area of land and water managed by the U.S. Fish and Wildlife Service for the conservation and, where appropriate, restoration of fish, wildlife and plant resources and their habitats for th",
+     "owner_now": "U.S",
+     "src": "https://www.fws.gov/refuge/iowa-wetland-management-district/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
    "n": "Iowa Wetland Management District",
-   "ours": null,
-   "score": null,
+   "official": {
+    "acres": 25000.0,
+    "as": "25,000 acres",
+    "clean": true,
+    "line": "s Map About Us Iowa Wetland Management District includes 75 waterfowl production areas encompassing more than 25,000 acres scattered throughout 18 counties in north-central Iowa. Like other wetland management districts in the prairi",
+    "read": "2026-11-01",
+    "sent": "Iowa Wetland Management District includes 75 waterfowl production areas encompassing more than 25,000 acres scattered throughout 18 counties in north-central Iowa.",
+    "url": "https://www.fws.gov/refuge/iowa-wetland-management-district/about-us",
+    "why": "clean total"
+   },
+   "ours": {
+    "acres": 23413,
+    "dissolved": {
+     "after": 23413,
+     "before": 27595,
+     "copies": 8,
+     "parts": 2,
+     "records": 91,
+     "tracts": 81
+    },
+    "manager": "",
+    "note": "91 joined records = 81 tracts: 8 copies of a tract (same acres, another layer) and 2 fee tracts under a designation record folded; summed 27595 -> 23413 acres",
+    "pieces": [
+     [
+      "fws2381",
+      "Union Hills WPA WPA, Cerro Gordo County Waterfowl Production Area",
+      2132,
+      "reviewed: the district = FWS fee (owned) tracts only, easeme"
+     ],
+     [
+      "fws2489",
+      "Lower Morse Lake WPA WPA, Wright County Waterfowl Production Area Of Ia",
+      1804,
+      "reviewed: the district = FWS fee (owned) tracts only, easeme"
+     ],
+     [
+      "fws2403",
+      "Spring Run WPA WPA, Dickinson County Waterfowl Production Area",
+      1233,
+      "reviewed: the district = FWS fee (owned) tracts only, easeme"
+     ],
+     [
+      "fws2405",
+      "Welsh Lake WPA WPA, Dickinson County Waterfowl Production Area",
+      962,
+      "reviewed: the district = FWS fee (owned) tracts only, easeme"
+     ],
+     [
+      "fws2485",
+      "Harlontown Slough WPA WPA, Worth County Waterfowl Production Area",
+      939,
+      "reviewed: the district = FWS fee (owned) tracts only, easeme"
+     ],
+     [
+      "fws2421",
+      "Dunbar Slough WPA WPA, Greene County Waterfowl Production Area",
+      887,
+      "reviewed: the district = FWS fee (owned) tracts only, easeme"
+     ],
+     [
+      "fws2392",
+      "Dugout Creek WPA WPA, Dickinson County Waterfowl Production Area",
+      788,
+      "reviewed: the district = FWS fee (owned) tracts only, easeme"
+     ],
+     [
+      "fws2471",
+      "Kiowa Marsh WPA WPA, Sac County Waterfowl Production Area",
+      756,
+      "reviewed: the district = FWS fee (owned) tracts only, easeme"
+     ]
+    ],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": "U.S",
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/iowa-wetland-management-district/map",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/iowa-wetland-management-district/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/iowa-wetland-management-district/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "pct": 6,
+   "same_agency": false,
+   "score": 5,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 2,
+    "source": 0
+   },
+   "sizes": [
+    {
+     "acres": 25000.0,
+     "as": "25,000 acres",
+     "clean": true,
+     "line": "s Map About Us Iowa Wetland Management District includes 75 waterfowl production areas encompassing more than 25,000 acres scattered throughout 18 counties in north-central Iowa. Like other wetland management districts in the prairi",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/iowa-wetland-management-district/about-us",
+     "why": "clean total"
+    }
+   ],
    "t": "Wetland Management District",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "agree"
   },
   "US-0271": {
-   "checked": "2026-11-22",
-   "handover": [],
+   "cause": "our union: one of our pieces alone matches the agency (double count?)",
+   "checked": "2026-11-01",
+   "handover": [
+    {
+     "date_hint": null,
+     "kind": "managed by",
+     "line": "ational wildlife refuge A national wildlife refuge is typically a contiguous area of land and water managed by the U.S. Fish and Wildlife Service for the conservation and, where appropriate, restoration of fish, wildlife and plant resources and their habitats for th",
+     "owner_now": "U.S",
+     "src": "https://www.fws.gov/refuge/neal-smith/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
    "n": "Neal Smith National Wildlife Refuge",
    "official": {
     "acres": 6000.0,
     "as": "6,000 acres",
     "clean": false,
-    "line": "ission is to protect and restore native tallgrass prairie, oak savanna, and sedge meadow ecosystems, covering 6,000 acres today. Originally targeted for a nuclear power plant, the land was purchased in 1991 and later renamed to hon",
-    "read": "2026-11-22",
-    "sent": "Established in 1990, the refuge mission is to protect and restore native tallgrass prairie, oak savanna, and sedge meadow ecosystems, covering 6,000 acres today.",
-    "url": "https://www.fws.gov/refuge/neal-smith",
-    "why": "history"
+    "line": "d used local seed sources to plant approximately 4,000 acres of tallgrass prairie. Today, the refuge protects 6,000 acres providing food, cover and breeding habitat for resident and migratory wildlife. The refuge also serves as a m",
+    "read": "2026-11-01",
+    "sent": "Today, the refuge protects 6,000 acres providing food, cover and breeding habitat for resident and migratory wildlife.",
+    "url": "https://www.fws.gov/refuge/neal-smith/about-us",
+    "why": "total-looking"
    },
    "ours": {
-    "acres": 6400,
+    "acres": 11917,
     "dissolved": {
      "after": 16386,
      "before": 22075,
@@ -228,10 +396,8 @@
      },
      "family_fold": 4469,
      "family_used": "padus",
-     "key_union": 6400,
      "parts": 3,
      "records": 12,
-     "summed": 11917,
      "tracts": 9
     },
     "family_fold": "layers {'padus': 11917, 'sgiac': 4469}: one land in 2 layers, the padus copy used (4,469 ac of copies not added)",
@@ -261,7 +427,7 @@
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
-   "owner_now": null,
+   "owner_now": "U.S",
    "pages": [
     {
      "status": "ok",
@@ -270,70 +436,114 @@
     },
     {
      "other_unit": true,
-     "status": "HTTP 404",
+     "status": "ok",
      "url": "https://www.fws.gov/refuge/neal-smith/visit-us/rules-policies",
      "why": "rules page (documents bot)"
     },
     {
-     "status": "HTTP 404",
+     "status": "ok",
      "url": "https://www.fws.gov/refuge/neal-smith/about-us",
      "why": "FWS refuge about page"
     }
    ],
-   "pct": 7,
+   "pct": 99,
    "same_agency": false,
-   "score": 8,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 0,
     "source": 2
    },
    "sizes": [
     {
+     "acres": 4000.0,
+     "as": "4,000 acres",
+     "clean": false,
+     "line": "plant communities, refuge staff and volunteers gathered and used local seed sources to replant or reconstruct 4,000 acres of tallgrass prairie. Today, the refuge protects 6,000 acres of wildlife habitat and provides visitors, stude",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/neal-smith",
+     "why": "total-looking"
+    },
+    {
      "acres": 6000.0,
      "as": "6,000 acres",
      "clean": false,
-     "line": "ission is to protect and restore native tallgrass prairie, oak savanna, and sedge meadow ecosystems, covering 6,000 acres today. Originally targeted for a nuclear power plant, the land was purchased in 1991 and later renamed to hon",
+     "line": "sed local seed sources to replant or reconstruct 4,000 acres of tallgrass prairie. Today, the refuge protects 6,000 acres of wildlife habitat and provides visitors, students, researchers and local landowners with educational, recre",
      "total_like": false,
      "url": "https://www.fws.gov/refuge/neal-smith",
-     "why": "history"
+     "why": "part (a lake, a purchase, a campground…)"
+    },
+    {
+     "acres": 4000.0,
+     "as": "4,000 acres",
+     "clean": false,
+     "line": "ie plant communities, refuge staff and volunteers gathered and used local seed sources to plant approximately 4,000 acres of tallgrass prairie. Today, the refuge protects 6,000 acres providing food, cover and breeding habitat for r",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/neal-smith/about-us",
+     "why": "total-looking"
+    },
+    {
+     "acres": 6000.0,
+     "as": "6,000 acres",
+     "clean": false,
+     "line": "d used local seed sources to plant approximately 4,000 acres of tallgrass prairie. Today, the refuge protects 6,000 acres providing food, cover and breeding habitat for resident and migratory wildlife. The refuge also serves as a m",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/neal-smith/about-us",
+     "why": "total-looking"
+    },
+    {
+     "acres": 3600.0,
+     "as": "3,600 acres",
+     "clean": false,
+     "line": "the Dire Emergency Supplement Appropriations Act. April 1991 - The first major parcel of land, approximately 3,600 acres was purchased from the Redlands Corporation, a subsidiary of Iowa Power. Previously, this property had been t",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/neal-smith/about-us",
+     "why": "no total words near it"
     }
    ],
    "t": "National Wildlife Refuge",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "off"
   },
   "US-0272": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-22",
+   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
+   "checked": "2026-11-01",
    "handover": [
     {
-     "date_hint": "2004",
+     "date_hint": null,
      "kind": "managed by",
-     "line": "arate refuge in 2004, it was originally part of the Mark Twain National Wildlife Refuge Complex and has been managed by the U.S. Fish and Wildlife Service since the 1940s. The refuge encompasses four distinct divisions and the Iowa River Corridor Project, providin",
-     "owner_now": "U.S",
-     "src": "https://www.fws.gov/refuge/port-louisa",
-     "why": "the park's page (data/parkinfo)"
+     "line": "ce owns more than 10,000 acres, which are part of Port Louisa National Wildlife Refuge. These lands are managed by the Iowa Department of Natural Resources through a cooperative agreement with the agency. Most of the refuge land has reverted from cropland back to",
+     "owner_now": "Iowa Department of Natural Resources",
+     "src": "https://www.fws.gov/refuge/port-louisa/about-us",
+     "why": "FWS refuge about page"
+    },
+    {
+     "date_hint": null,
+     "kind": "renamed",
+     "line": "Wildlife Refuge was disbanded and divided into five separate refuges. The Port Louisa District was renamed to the Port Louisa National Wildlife Refuge. You are exiting the U.S. Fish and Wildlife Service website You are being directed to . The page wi",
+     "owner_now": "Port Louisa National Wildlife Refuge",
+     "src": "https://www.fws.gov/refuge/port-louisa/about-us",
+     "why": "FWS refuge about page"
     }
    ],
    "n": "Port Louisa National Wildlife Refuge",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-IA': 16234, 'US-IL': 1400})",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-IL': 599, 'US-IA': 11861})",
    "official": {
-    "acres": 24149.0,
-    "as": "24,149 acres",
-    "clean": true,
-    "line": "eer opportunities Services Facility Services Law Enforcement About Port Louisa National Wildlife Refuge spans 24,149 acres across Iowa and Illinois along the Mississippi River Flyway. Officially established as a separate refuge in 2",
-    "read": "2026-11-22",
-    "sent": "Port Louisa National Wildlife Refuge spans 24,149 acres across Iowa and Illinois along the Mississippi River Flyway.",
-    "url": "https://www.fws.gov/refuge/port-louisa",
-    "why": "clean total"
+    "acres": 10000.0,
+    "as": "10,000 acres",
+    "clean": false,
+    "line": "in Tama, Benton and Iowa counties. Within the project area, the U.S. Fish and Wildlife Service owns more than 10,000 acres, which are part of Port Louisa National Wildlife Refuge. These lands are managed by the Iowa Department of Na",
+    "read": "2026-11-01",
+    "sent": "Fish and Wildlife Service owns more than 10,000 acres, which are part of Port Louisa National Wildlife Refuge.",
+    "url": "https://www.fws.gov/refuge/port-louisa/about-us",
+    "why": "total-looking"
    },
    "ours": {
-    "acres": 17634,
+    "acres": 12460,
     "acres_by_state": {
-     "US-IA": 16234,
-     "US-IL": 1400
+     "US-IA": 11861,
+     "US-IL": 599
     },
     "dissolved": {
      "after": 16275,
@@ -345,10 +555,8 @@
      },
      "family_fold": 4414,
      "family_used": "padus",
-     "key_union": 16234,
      "parts": 0,
      "records": 9,
-     "summed": 11861,
      "tracts": 7
     },
     "family_fold": "layers {'padus': 11861, 'sgiac': 4414}: one land in 2 layers, the padus copy used (4,414 ac of copies not added)",
@@ -365,21 +573,32 @@
     "pin": "inside",
     "src": "USGS PAD-US",
     "states": [
-     "US-IA",
-     "US-IL"
+     "US-IL",
+     "US-IA"
     ],
     "unknown_pieces": 0,
     "whole_park": true
    },
-   "owner_now": "U.S",
+   "owner_now": "Iowa Department of Natural Resources",
    "pages": [
     {
      "status": "ok",
      "url": "https://www.fws.gov/refuge/port-louisa",
      "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/port-louisa/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/port-louisa/about-us",
+     "why": "FWS refuge about page"
     }
    ],
-   "pct": 27,
+   "pct": 25,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -391,12 +610,75 @@
    "sizes": [
     {
      "acres": 24149.0,
-     "as": "24,149 acres",
-     "clean": true,
-     "line": "eer opportunities Services Facility Services Law Enforcement About Port Louisa National Wildlife Refuge spans 24,149 acres across Iowa and Illinois along the Mississippi River Flyway. Officially established as a separate refuge in 2",
+     "as": "24,149 acre",
+     "clean": false,
+     "line": "Activities Trails Rules & Policies Get Involved News Species Map https://www.facebook.com/PortLouisaNWR/ The 24,149 acre Port Louisa National Wildlife Refuge was established for the protection of migratory birds and other wildlife",
      "total_like": true,
      "url": "https://www.fws.gov/refuge/port-louisa",
-     "why": "clean total"
+     "why": "total-looking"
+    },
+    {
+     "acres": 24149.0,
+     "as": "24,149 acre",
+     "clean": false,
+     "line": "es Trails Rules & Policies Get Involved News Species Map https://www.facebook.com/PortLouisaNWR/ About Us The 24,149 acre Port Louisa National Wildlife Refuge was established for the protection of migratory birds and other wildlife",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/port-louisa/about-us",
+     "why": "total-looking"
+    },
+    {
+     "acres": 2609.0,
+     "as": "2,609 acre",
+     "clean": false,
+     "line": "Louisa Division. The refuge encompasses four divisions and a portion of the Iowa River Corridor Project. The 2,609-acre Louisa Division is located just east of Wapello, Iowa in Louisa County. It is protected from moderate floodin",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/port-louisa/about-us",
+     "why": "another park / unit named in the sentence"
+    },
+    {
+     "acres": 48.0,
+     "as": "48 acres",
+     "clean": false,
+     "line": "the dam. The refuge visitor contact station and office are located on this division in an area that includes 48-acres of forest and a four-acre prairie restoration situated on a bluff overlooking the Mississippi River floodplai",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/port-louisa/about-us",
+     "why": "total-looking"
+    },
+    {
+     "acres": 1400.0,
+     "as": "1,400 acre",
+     "clean": false,
+     "line": "t of present and future generations of Americans. Learn more about national wildlife refuge in the 1940s. The 1,400-acre Keithsburg Division is located in Mercer County, Illinois. The entire division lies within Pool 18, immediate",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/port-louisa/about-us",
+     "why": "no total words near it"
+    },
+    {
+     "acres": 1758.0,
+     "as": "1,758 acre",
+     "clean": false,
+     "line": "ently involved in a Habitat Rehabilitation and Enhancement Project with the U.S. Army Corps of Engineers. The 1,758-acre Big Timber Division is located two miles south of Muscatine, Iowa, in Pool 17. The division is comprised of a",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/port-louisa/about-us",
+     "why": "no total words near it"
+    },
+    {
+     "acres": 1252.0,
+     "as": "1,252 acre",
+     "clean": false,
+     "line": "Big Timber Division is located two miles south of Muscatine, Iowa, in Pool 17. The division is comprised of a 1,252-acre backwater area, as well as Turkey Island, Turkey Towhead, Otter Island and Ramsey Island. The bulk of Big Tim",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/port-louisa/about-us",
+     "why": "total-looking"
+    },
+    {
+     "acres": 2606.0,
+     "as": "2,606 acre",
+     "clean": false,
+     "line": "n, Louisa County, Iowa, approximately four miles upstream from its confluence with the Mississippi River. The 2,606-acre tract was purchased fee title by the agency in response to the Great Flood of 1993. Horseshoe Bend is a uniqu",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/port-louisa/about-us",
+     "why": "history"
     }
    ],
    "t": "National Wildlife Refuge",
@@ -404,21 +686,30 @@
    "verdict": "off"
   },
   "US-0273": {
-   "checked": "2026-11-22",
-   "handover": [],
+   "checked": "2026-11-01",
+   "handover": [
+    {
+     "date_hint": null,
+     "kind": "managed by",
+     "line": "ational wildlife refuge A national wildlife refuge is typically a contiguous area of land and water managed by the U.S. Fish and Wildlife Service for the conservation and, where appropriate, restoration of fish, wildlife and plant resources and their habitats for th",
+     "owner_now": "U.S",
+     "src": "https://www.fws.gov/refuge/union-slough/about-us",
+     "why": "about / history page of the park's site"
+    }
+   ],
    "n": "Union Slough National Wildlife Refuge",
    "official": {
     "acres": 3334.0,
-    "as": "3,334 acre",
-    "clean": false,
-    "line": "connects the Blue Earth River and the East Fork of the Des Moines River watersheds. Established in 1938, the 3,334-acre refuge provides critical marsh, prairie, and bottomland habitat for migratory waterfowl in a landscape domina",
-    "read": "2026-11-22",
-    "sent": "Established in 1938, the 3,334-acre refuge provides critical marsh, prairie, and bottomland habitat for migratory waterfowl in a landscape dominated by agriculture.",
-    "url": "https://www.fws.gov/refuge/union-slough",
-    "why": "history"
+    "as": "3,334 acres",
+    "clean": true,
+    "line": "contains a diverse mix of habitats including marsh, prairie and river bottomland. Together, these areas total 3,334 acres that follow a seven mile stretch of Union Slough and a portion of bottomland along Buffalo Creek. The habitat",
+    "read": "2026-11-01",
+    "sent": "Together, these areas total 3,334 acres that follow a seven mile stretch of Union Slough and a portion of bottomland along Buffalo Creek.",
+    "url": "https://www.fws.gov/refuge/union-slough/about-us",
+    "why": "clean total"
    },
    "ours": {
-    "acres": 3312,
+    "acres": 3054,
     "dissolved": {
      "after": 6147,
      "before": 9240,
@@ -430,10 +721,8 @@
      },
      "family_fold": 3093,
      "family_used": "sgiac",
-     "key_union": 3312,
      "parts": 0,
      "records": 6,
-     "summed": 3054,
      "tracts": 4
     },
     "family_fold": "layers {'padus': 2834, 'sgiac': 3054, 'sgiaa': 259}: one land in 3 layers, the sgiac copy used (3,093 ac of copies not added)",
@@ -441,13 +730,13 @@
     "note": "6 joined records = 4 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 9240 -> 6147 acres",
     "pieces": [
      [
-      "sgiac105582",
+      "sgiac94584",
       "Union Slough National Wildlife Refuge",
       2498,
-      "reviewed"
+      "name"
      ],
      [
-      "sgiac105676",
+      "sgiac94678",
       "Union Slough National Wildlife Refuge",
       556,
       "name"
@@ -457,7 +746,7 @@
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
-   "owner_now": null,
+   "owner_now": "U.S",
    "pages": [
     {
      "status": "ok",
@@ -465,18 +754,12 @@
      "why": "the park's page (data/parkinfo)"
     },
     {
-     "other_unit": true,
-     "status": "HTTP 404",
-     "url": "https://www.fws.gov/refuge/union-slough/visit-us/rules-policies",
-     "why": "rules page (documents bot)"
-    },
-    {
-     "status": "HTTP 404",
+     "status": "ok",
      "url": "https://www.fws.gov/refuge/union-slough/about-us",
-     "why": "FWS refuge about page"
+     "why": "about / history page of the park's site"
     }
    ],
-   "pct": 1,
+   "pct": 8,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -488,12 +771,21 @@
    "sizes": [
     {
      "acres": 3334.0,
-     "as": "3,334 acre",
+     "as": "3,334 acres",
+     "clean": true,
+     "line": "contains a diverse mix of habitats including marsh, prairie and river bottomland. Together, these areas total 3,334 acres that follow a seven mile stretch of Union Slough and a portion of bottomland along Buffalo Creek. The habitat",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/union-slough/about-us",
+     "why": "clean total"
+    },
+    {
+     "acres": 25000.0,
+     "as": "25,000 acres",
      "clean": false,
-     "line": "connects the Blue Earth River and the East Fork of the Des Moines River watersheds. Established in 1938, the 3,334-acre refuge provides critical marsh, prairie, and bottomland habitat for migratory waterfowl in a landscape domina",
+     "line": "t District The Iowa Wetland Management District includes 75 waterfowl production areas encompassing more than 25,000 acres scattered throughout 18 counties in north-central Iowa. The goal of the district is to restore and protect en",
      "total_like": false,
-     "url": "https://www.fws.gov/refuge/union-slough",
-     "why": "history"
+     "url": "https://www.fws.gov/refuge/union-slough/about-us",
+     "why": "another park / unit named in the sentence"
     }
    ],
    "t": "National Wildlife Refuge",
@@ -501,7 +793,7 @@
    "verdict": "agree"
   },
   "US-0367": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Northern Tallgrass Prairie National Wildlife Refuge",
    "ours": null,
@@ -511,7 +803,7 @@
    "verdict": "no outline"
   },
   "US-0832": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Herbert Hoover National Historic Site",
    "official": null,
@@ -521,10 +813,10 @@
     "manager": "",
     "pieces": [
      [
-      "sgiac104055",
+      "sgiac93051",
       "Herbert Hoover National Historic Site",
       187,
-      "reviewed"
+      "name"
      ]
     ],
     "pin": "inside",
@@ -560,7 +852,7 @@
   },
   "US-0922": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 272 acres, no total words near it)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Effigy Mounds National Monument",
    "official": {
@@ -568,7 +860,7 @@
     "as": "272 acres",
     "clean": false,
     "line": "y feature of this monument and not to locate or settle upon any of the lands thereof.” Public Law 87-44 added 272 acres of land to the monument: “. . . for the purposes of preserving certain prehistoric Indian mounds and protecti",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Public Law 87-44 added 272 acres of land to the monument:",
     "url": "https://www.nps.gov/efmo/learn/management/lawsandpolicies.htm",
     "why": "no total words near it"
@@ -593,7 +885,7 @@
       "name"
      ],
      [
-      "sgiac105189",
+      "sgiac94189",
       "Effigy Mounds National Monument",
       61,
       "name"
@@ -664,7 +956,6 @@
   "US-10004": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Bob Pyle Marsh Wildlife Management Area",
    "official": null,
    "ours": {
@@ -715,40 +1006,37 @@
   "US-10174": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Marble Beach State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 200,
+    "acres": 166,
     "dissolved": {
      "after": 205,
-     "before": 244,
-     "copies": 1,
+     "before": 410,
+     "copies": 2,
      "families": {
-      "sgiab": 39,
-      "sgiac": 166
+      "padus": 166,
+      "sgiab": 39
      },
      "family_fold": 39,
-     "family_used": "sgiac",
-     "key_union": 200,
+     "family_used": "padus",
      "parts": 0,
-     "records": 3,
-     "summed": 166,
+     "records": 4,
      "tracts": 2
     },
-    "family_fold": "layers {'sgiac': 166, 'sgiab': 39}: one land in 2 layers, the sgiac copy used (39 ac of copies not added)",
+    "family_fold": "layers {'padus': 166, 'sgiab': 39}: one land in 2 layers, the padus copy used (39 ac of copies not added)",
     "manager": "",
-    "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 244 -> 205 acres",
+    "note": "4 joined records = 2 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 410 -> 205 acres",
     "pieces": [
      [
-      "sgiac106694",
+      199096,
       "Marble Lake",
       166,
       "name"
      ]
     ],
     "pin": "inside",
-    "src": "",
+    "src": "USGS PAD-US",
     "unknown_pieces": 4
    },
    "owner_now": null,
@@ -775,11 +1063,10 @@
   "US-10318": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Chichaqua Wildlife Area",
    "official": null,
    "ours": {
-    "acres": 3808,
+    "acres": 2719,
     "dissolved": {
      "after": 4774,
      "before": 10242,
@@ -790,10 +1077,8 @@
      },
      "family_fold": 2055,
      "family_used": "sgiaa",
-     "key_union": 3808,
      "parts": 16,
      "records": 25,
-     "summed": 2719,
      "tracts": 8
     },
     "family_fold": "layers {'sgiaa': 2719, 'sgiac': 2055}: one land in 2 layers, the sgiaa copy used (2,055 ac of copies not added)",
@@ -810,7 +1095,7 @@
       "sgiaa33719",
       "CHICHAQUA WILDLIFE AREA",
       902,
-      "reviewed"
+      "name"
      ]
     ],
     "pin": "inside",
@@ -841,7 +1126,6 @@
   "US-10953": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "McCoy Wildlife Management Area",
    "official": null,
    "ours": {
@@ -853,7 +1137,7 @@
       "sgiaa33903",
       "MCCOY WILDLIFE AREA",
       562,
-      "reviewed"
+      "name"
      ]
     ],
     "pin": "inside",
@@ -884,19 +1168,16 @@
   "US-11265": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Crow Creek Wildlife Area",
    "official": null,
    "ours": {
-    "acres": 57,
+    "acres": 54,
     "dissolved": {
      "after": 54,
      "before": 162,
      "copies": 2,
-     "key_union": 57,
      "parts": 0,
      "records": 3,
-     "summed": 54,
      "tracts": 1
     },
     "manager": "",
@@ -935,49 +1216,18 @@
    "verdict": "no size on page"
   },
   "US-11305": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Wapsipinicon River Water State Trail",
-   "official": null,
-   "ours": {
-    "acres": 0,
-    "manager": "",
-    "pieces": [],
-    "pin": "inside",
-    "src": "",
-    "unknown_pieces": 1
-   },
-   "owner_now": null,
-   "pages": [
-    {
-     "status": "HTTP 404",
-     "url": "https://www.iowadnr.gov/Portals/idnr/uploads/riverprograms/watertrails/watertrail_wapsi_cs.pdf",
-     "why": "the park's page (data/parkinfo)"
-    },
-    {
-     "other_unit": true,
-     "status": "ok",
-     "url": "https://www.iowadnr.gov/places-go/state-parks/parks-use-rules-guidelines",
-     "why": "rules page (documents bot)"
-    }
-   ],
-   "pct": null,
-   "score": 4,
-   "score_parts": {
-    "name": 1,
-    "pin": 2,
-    "size": 1,
-    "source": 0
-   },
-   "sizes": [],
+   "ours": null,
+   "score": null,
    "t": "State Trail",
    "ver": 15,
-   "verdict": "ours unknown"
+   "verdict": "no outline"
   },
   "US-11306": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "McCausland Wildlife Area",
    "official": null,
    "ours": {
@@ -1028,11 +1278,10 @@
   "US-11307": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Princeton Wildlife Area",
    "official": null,
    "ours": {
-    "acres": 1194,
+    "acres": 753,
     "dissolved": {
      "after": 1213,
      "before": 4330,
@@ -1044,10 +1293,8 @@
      },
      "family_fold": 460,
      "family_used": "fws",
-     "key_union": 1194,
      "parts": 2,
      "records": 9,
-     "summed": 753,
      "tracts": 3
     },
     "family_fold": "layers {'fws': 753, 'padus': 444, 'sgiac': 16}: one land in 3 layers, the fws copy used (460 ac of copies not added)",
@@ -1089,7 +1336,6 @@
   "US-11323": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Syracuse Wildlife Area",
    "official": null,
    "ours": {
@@ -1116,7 +1362,7 @@
       "sgiaa89857",
       "SYRACUSE WILDLIFE AREA",
       724,
-      "reviewed"
+      "name"
      ]
     ],
     "pin": "just outside",
@@ -1147,7 +1393,6 @@
   "US-11324": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Wapsi Wildlife Area",
    "official": null,
    "ours": {
@@ -1198,7 +1443,6 @@
   "US-11377": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Mink Run Wildlife Area",
    "official": null,
    "ours": {
@@ -1249,19 +1493,16 @@
   "US-11378": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Rock Creek Island State Preserve",
    "official": null,
    "ours": {
-    "acres": 23,
+    "acres": 31,
     "dissolved": {
      "after": 31,
      "before": 93,
      "copies": 2,
-     "key_union": 23,
      "parts": 0,
      "records": 3,
-     "summed": 31,
      "tracts": 1
     },
     "manager": "",
@@ -1300,27 +1541,25 @@
    "verdict": "no size on page"
   },
   "US-11875": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Blackburn State Park",
    "official": null,
    "ours": {
-    "acres": 77,
+    "acres": 72,
     "dissolved": {
      "after": 72,
      "before": 144,
      "copies": 1,
-     "key_union": 77,
      "parts": 0,
      "records": 2,
-     "summed": 72,
      "tracts": 1
     },
     "manager": "",
     "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 144 -> 72 acres",
     "pieces": [
      [
-      "sgiab108086",
+      "sgiab97109",
       "Blackburn State Park",
       72,
       "name"
@@ -1360,7 +1599,6 @@
   "US-11877": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "La Soya Wildlife Area",
    "official": null,
    "ours": {
@@ -1402,7 +1640,6 @@
   "US-11878": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Little Mill Wildlife Area",
    "official": null,
    "ours": {
@@ -1453,7 +1690,6 @@
   "US-12191": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Turin Preserve Wildlife Management Area",
    "official": null,
    "ours": {
@@ -1480,7 +1716,7 @@
       "sgiaa38924",
       "TURIN PRESERVE WILDLIFE AREA",
       1107,
-      "reviewed"
+      "name"
      ]
     ],
     "pin": "inside",
@@ -1511,37 +1747,40 @@
   "US-12192": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Loess Hills Wildlife Area",
    "official": null,
    "ours": {
-    "acres": 12750,
+    "acres": 7073,
     "dissolved": {
-     "after": 5949,
-     "before": 8245,
+     "after": 9665,
+     "before": 17920,
      "copies": 1,
      "families": {
       "padus": 2334,
-      "sgiaa": 3119,
-      "sgiac": 496
+      "sgiaa": 7073,
+      "sgiac": 258
      },
-     "family_fold": 2830,
+     "family_fold": 2592,
      "family_used": "sgiaa",
-     "key_union": 12750,
-     "parts": 0,
-     "records": 6,
-     "summed": 3119,
+     "parts": 3,
+     "records": 9,
      "tracts": 5
     },
-    "family_fold": "layers {'sgiaa': 3119, 'padus': 2334, 'sgiac': 496}: one land in 3 layers, the sgiaa copy used (2,830 ac of copies not added)",
+    "family_fold": "layers {'sgiaa': 7073, 'padus': 2334, 'sgiac': 258}: one land in 3 layers, the sgiaa copy used (2,592 ac of copies not added)",
     "manager": "",
-    "note": "6 joined records = 5 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 8245 -> 5949 acres",
+    "note": "9 joined records = 5 tracts: 1 copies of a tract (same acres, another layer) and 3 fee tracts under a designation record folded; summed 17920 -> 9665 acres",
     "pieces": [
      [
-      "sgiaa46927",
-      "LOESS HILLS WILDLIFE AREA",
-      3119,
-      "reviewed"
+      "sgiaa34306",
+      "LOESS HILLS STATE FOREST - PREPARATION CANYON UNIT",
+      5977,
+      "name"
+     ],
+     [
+      "sgiaa34304",
+      "LOESS HILLS STATE FOREST - MONDAMIN UNIT",
+      1096,
+      "name"
      ]
     ],
     "pin": "inside",
@@ -1571,7 +1810,7 @@
   },
   "US-12376": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 410,000 acres, no total words near it)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Blackburn Wildlife Management Area",
    "official": {
@@ -1579,7 +1818,7 @@
     "as": "410,000 acres",
     "clean": false,
     "line": "Department of Natural Resources Search Menu Wildlife Management Areas The DNR's Wildlife Bureau manages over 410,000 acres that are available for public recreational use every day of the year. All of these areas are managed with rev",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "The DNR's Wildlife Bureau manages over 410,000 acres that are available for public recreational use every day of the year.",
     "url": "https://www.iowadnr.gov/places-go/wildlife-management-areas",
     "why": "no total words near it"
@@ -1649,7 +1888,6 @@
   "US-12623": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Nicholson Ford Wildlife Area",
    "official": null,
    "ours": {
@@ -1660,7 +1898,7 @@
       "sgiaa115534",
       "NICHOLSON FORD WILDLIFE AREA",
       89,
-      "reviewed"
+      "name"
      ]
     ],
     "pin": "just outside",
@@ -1691,7 +1929,6 @@
   "US-12661": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Huron Flats Wildlife Area",
    "official": null,
    "ours": {
@@ -1742,7 +1979,6 @@
   "US-12680": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Long Wildlife Management Area",
    "official": null,
    "ours": {
@@ -1793,33 +2029,32 @@
   "US-12703": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "West Salt Creek Wildlife Area",
    "official": null,
    "ours": {
-    "acres": 87,
+    "acres": 86,
     "dissolved": {
-     "after": 168,
-     "before": 254,
+     "after": 167,
+     "before": 248,
      "copies": 1,
      "families": {
       "padus": 81,
-      "sgiac": 87
+      "sgiaa": 86
      },
      "family_fold": 81,
-     "family_used": "sgiac",
+     "family_used": "sgiaa",
      "parts": 0,
      "records": 3,
      "tracts": 2
     },
-    "family_fold": "layers {'sgiac': 87, 'padus': 81}: one land in 2 layers, the sgiac copy used (81 ac of copies not added)",
+    "family_fold": "layers {'sgiaa': 86, 'padus': 81}: one land in 2 layers, the sgiaa copy used (81 ac of copies not added)",
     "manager": "",
-    "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 254 -> 168 acres",
+    "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 248 -> 167 acres",
     "pieces": [
      [
-      "sgiac108646",
-      "West Salt Creek WMA",
-      87,
+      "sgiaa115531",
+      "WEST SALT CREEK WILDLIFE AREA",
+      86,
       "name"
      ]
     ],
@@ -1851,7 +2086,6 @@
   "US-13555": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "O.S. Wing Wildlife Management Area",
    "official": null,
    "ours": {
@@ -1900,7 +2134,7 @@
    "verdict": "no size on page"
   },
   "US-2276": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Ambrose A. Call State Park",
    "official": {
@@ -1908,7 +2142,7 @@
     "as": "138 acre",
     "clean": false,
     "line": "n please visit, Park Alerts and Notices. Park Alerts & Notices About the Park Ambrose A. Call State Park is a 138-acre oasis of rugged hills and virgin timber in an area of gently rolling farmland. The park is located in norther",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Call State Park is a 138-acre oasis of rugged hills and virgin timber in an area of gently rolling farmland.",
     "url": "https://www.iowadnr.gov/Places-to-Go/State-Parks/Iowa-State-Parks/Ambrose-A-Call-State-Park",
     "why": "total-looking"
@@ -1983,24 +2217,29 @@
    "verdict": "agree"
   },
   "US-2277": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Backbone State Park",
    "official": null,
    "ours": {
-    "acres": 2077,
+    "acres": 1758,
     "dissolved": {
-     "after": 1758,
-     "before": 5405,
+     "after": 1941,
+     "before": 5588,
      "copies": 3,
-     "key_union": 2077,
+     "families": {
+      "padus": 1758,
+      "sgiab": 183
+     },
+     "family_fold": 183,
+     "family_used": "padus",
      "parts": 2,
-     "records": 6,
-     "summed": 1758,
-     "tracts": 1
+     "records": 7,
+     "tracts": 2
     },
+    "family_fold": "layers {'padus': 1758, 'sgiab': 183}: one land in 2 layers, the padus copy used (183 ac of copies not added)",
     "manager": "",
-    "note": "6 joined records = 1 tracts: 3 copies of a tract (same acres, another layer) and 2 fee tracts under a designation record folded; summed 5405 -> 1758 acres",
+    "note": "7 joined records = 2 tracts: 3 copies of a tract (same acres, another layer) and 2 fee tracts under a designation record folded; summed 5588 -> 1941 acres",
     "pieces": [
      [
       198520,
@@ -2041,7 +2280,7 @@
    "verdict": "no size on page"
   },
   "US-2278": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [
     {
      "date_hint": null,
@@ -2075,13 +2314,13 @@
     "note": "5 joined records = 3 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 666 -> 442 acres",
     "pieces": [
      [
-      "sgiab104065",
+      "sgiab93061",
       "Banner Lakes At Summerset State Park",
       207,
-      "reviewed"
+      "name"
      ],
      [
-      "sgiab104064",
+      "sgiab93060",
       "Banner Lakes At Summerset State Park",
       17,
       "name"
@@ -2120,7 +2359,7 @@
   },
   "US-2279": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Beed's Lake State Park",
    "official": null,
@@ -2194,7 +2433,7 @@
   },
   "US-2280": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 220 acres, no total words near it)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Bellevue State Park",
    "official": {
@@ -2202,7 +2441,7 @@
     "as": "220 acres",
     "clean": false,
     "line": "e Quarry Trail leads to a primitive lime kiln, and trails from the main overlook lead to Pulpit Rock. Hunt on 220 acres of public hunting land adjacent to the Nelson Unit (hunting is not allowed within park boundaries). Tall gras",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Hunt on 220 acres of public hunting land adjacent to the Nelson Unit (hunting is not allowed within park boundaries).",
     "url": "https://www.iowadnr.gov/Places-to-Go/State-Parks/Iowa-State-Parks/Bellevue-State-Park",
     "why": "no total words near it"
@@ -2284,12 +2523,12 @@
    "verdict": "unsure"
   },
   "US-2281": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Big Creek State Park",
    "official": null,
    "ours": {
-    "acres": 1537,
+    "acres": 728,
     "dissolved": {
      "after": 1324,
      "before": 5178,
@@ -2300,10 +2539,8 @@
      },
      "family_fold": 596,
      "family_used": "sgiaa",
-     "key_union": 1537,
      "parts": 11,
      "records": 28,
-     "summed": 728,
      "tracts": 5
     },
     "family_fold": "layers {'sgiaa': 728, 'sgiab': 596}: one land in 2 layers, the sgiaa copy used (596 ac of copies not added)",
@@ -2354,7 +2591,7 @@
    "verdict": "no size on page"
   },
   "US-2282": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Blackhawk State Park",
    "official": {
@@ -2362,7 +2599,7 @@
     "as": "957 acre",
     "clean": false,
     "line": "t for hiking and biking, along with snowmobiling and cross country skiing in the winter. Boat at Black Hawk’s 957-acre natural lake. Black Hawk Lake has no motor size restrictions and four boat ramps are located near the water.",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Boat at Black Hawk’s 957-acre natural lake.",
     "url": "https://www.iowadnr.gov/Places-to-Go/State-Parks/Iowa-State-Parks/Black-Hawk-State-Park",
     "why": "no total words near it"
@@ -2444,12 +2681,12 @@
   },
   "US-2283": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Cedar Rock State Park",
    "official": null,
    "ours": {
-    "acres": 347,
+    "acres": 256,
     "dissolved": {
      "after": 433,
      "before": 981,
@@ -2460,10 +2697,8 @@
      },
      "family_fold": 177,
      "family_used": "sgiab",
-     "key_union": 347,
      "parts": 3,
      "records": 16,
-     "summed": 256,
      "tracts": 6
     },
     "family_fold": "layers {'sgiab': 256, 'padus': 177}: one land in 2 layers, the sgiab copy used (177 ac of copies not added)",
@@ -2471,25 +2706,25 @@
     "note": "16 joined records = 6 tracts: 7 copies of a tract (same acres, another layer) and 3 fee tracts under a designation record folded; summed 981 -> 433 acres",
     "pieces": [
      [
-      "sgiab107706",
+      "sgiab96725",
       "Cedar Rock",
       186,
       "name"
      ],
      [
-      "sgiab106869",
+      "sgiab95885",
       "Cedar Rock",
       43,
       "name"
      ],
      [
-      "sgiab107708",
+      "sgiab96727",
       "Cedar Rock",
       20,
       "name"
      ],
      [
-      "sgiab107743",
+      "sgiab96762",
       "Cedar Rock",
       7,
       "name"
@@ -2538,7 +2773,7 @@
   },
   "US-2284": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Clear Lake State Park",
    "official": null,
@@ -2580,13 +2815,13 @@
       "name"
      ],
      [
-      "sgiab104082",
+      "sgiab93078",
       "Clear Lake Access",
       4,
       "name"
      ],
      [
-      "sgiab104080",
+      "sgiab93076",
       "Clear Lake - Harbour Area",
       2,
       "words"
@@ -2658,7 +2893,7 @@
    "verdict": "unsure"
   },
   "US-2285": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Dolliver Memorial State Park",
    "official": {
@@ -2666,7 +2901,7 @@
     "as": "594 acres",
     "clean": false,
     "line": "s natural bluffs and geological formations. Dolliver overlooks the Des Moines River Valley and spreads across 594 acres of flatlands and rugged trails. Highlights of the park include Boneyard Hollow, the Copperas Beds and histori",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Dolliver overlooks the Des Moines River Valley and spreads across 594 acres of flatlands and rugged trails.",
     "url": "https://www.iowadnr.gov/Places-to-Go/State-Parks/Iowa-State-Parks/Dolliver-Memorial-State-Park",
     "why": "total-looking"
@@ -2734,12 +2969,12 @@
    "verdict": "agree"
   },
   "US-2286": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Elinor Bedell State Park",
    "official": null,
    "ours": {
-    "acres": 105,
+    "acres": 91,
     "dissolved": {
      "after": 179,
      "before": 267,
@@ -2750,10 +2985,8 @@
      },
      "family_fold": 88,
      "family_used": "padus",
-     "key_union": 105,
      "parts": 0,
      "records": 3,
-     "summed": 91,
      "tracts": 2
     },
     "family_fold": "layers {'padus': 91, 'sgiab': 88}: one land in 2 layers, the padus copy used (88 ac of copies not added)",
@@ -2800,7 +3033,7 @@
   },
   "US-2287": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Elk Rock State Park",
    "official": null,
@@ -2867,7 +3100,7 @@
   },
   "US-2288": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Fort Defiance State Park",
    "official": {
@@ -2875,7 +3108,7 @@
     "as": "191 acres",
     "clean": false,
     "line": "Alerts & Notices About the Park Fort Defiance State Park, outside of Estherville in northwest Iowa, features 191 acres of rugged woodlands surrounded by gently rolling farmlands. The centerpiece of the park is an army-post style",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Fort Defiance State Park, outside of Estherville in northwest Iowa, features 191 acres of rugged woodlands surrounded by gently rolling farmlands.",
     "url": "https://www.iowadnr.gov/Places-to-Go/State-Parks/Iowa-State-Parks/Fort-Defiance-State-Park",
     "why": "total-looking"
@@ -2944,7 +3177,7 @@
   },
   "US-2289": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Geode State Park",
    "official": null,
@@ -3011,7 +3244,7 @@
   },
   "US-2290": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "George Wyth State Park",
    "official": null,
@@ -3108,7 +3341,7 @@
    "verdict": "unsure"
   },
   "US-2291": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Green Valley State Park",
    "official": null,
@@ -3172,20 +3405,18 @@
    "verdict": "no size on page"
   },
   "US-2292": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Gull Point State Park",
    "official": null,
    "ours": {
-    "acres": 244,
+    "acres": 226,
     "dissolved": {
      "after": 226,
      "before": 684,
      "copies": 15,
-     "key_union": 244,
      "parts": 3,
      "records": 22,
-     "summed": 226,
      "tracts": 4
     },
     "manager": "",
@@ -3198,13 +3429,13 @@
       "name"
      ],
      [
-      "sgiab104111",
+      "sgiab93107",
       "Gull Point State Park",
       7,
       "name"
      ],
      [
-      198541,
+      198538,
       "Gull Point State Park",
       4,
       "name"
@@ -3249,7 +3480,7 @@
   },
   "US-2293": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Honey Creek State Park",
    "official": {
@@ -3257,13 +3488,13 @@
     "as": "828 acres",
     "clean": false,
     "line": "ark Alerts and Notices. Park Alerts & Notices About the Park Honey Creek State Park in southern Iowa features 828 acres of rolling, timbered hills with the beautiful backdrop of Iowa’s second largest lake, Rathbun Lake. Many wood",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Honey Creek State Park in southern Iowa features 828 acres of rolling, timbered hills with the beautiful backdrop of Iowa’s second largest lake, Rathbun Lake.",
     "url": "https://www.iowadnr.gov/Places-to-Go/State-Parks/Iowa-State-Parks/Honey-Creek-State-Park",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 1549,
+    "acres": 1214,
     "dissolved": {
      "after": 1578,
      "before": 4728,
@@ -3274,10 +3505,8 @@
      },
      "family_fold": 364,
      "family_used": "sgiab",
-     "key_union": 1549,
      "parts": 0,
      "records": 12,
-     "summed": 1214,
      "tracts": 4
     },
     "family_fold": "layers {'sgiab': 1214, 'padus': 364}: one land in 2 layers, the sgiab copy used (364 ac of copies not added)",
@@ -3285,13 +3514,13 @@
     "note": "12 joined records = 4 tracts: 8 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 4728 -> 1578 acres",
     "pieces": [
      [
-      "sgiab105661",
+      "sgiab94663",
       "Honey Creek State Park",
       760,
-      "reviewed"
+      "name"
      ],
      [
-      "sgiab105658",
+      "sgiab94660",
       "Honey Creek Resort",
       454,
       "name"
@@ -3315,7 +3544,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 87,
+   "pct": 47,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -3340,7 +3569,7 @@
    "verdict": "off"
   },
   "US-2294": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Lacey-Keosauqua State Park",
    "official": {
@@ -3348,7 +3577,7 @@
     "as": "1,662 acres",
     "clean": false,
     "line": "erts & Notices About the Park Dedicated in 1920 as Iowa’s second state park, Lacey-Keosauqua State Park spans 1,662 acres and offers ample opportunity for fishing, hiking, camping and swimming. Oak-hickory bluffs and valleys charac",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Dedicated in 1920 as Iowa’s second state park, Lacey-Keosauqua State Park spans 1,662 acres and offers ample opportunity for fishing, hiking, camping and swimming.",
     "url": "https://www.iowadnr.gov/Places-to-Go/State-Parks/Iowa-State-Parks/Lacey-Keosauqua-State-Park",
     "why": "history"
@@ -3367,13 +3596,13 @@
     "note": "5 joined records = 2 tracts: 3 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 4561 -> 1522 acres",
     "pieces": [
      [
-      "sgiab104732",
+      "sgiab93732",
       "Lacey-Keosauqua State Park",
       1521,
-      "reviewed"
+      "name"
      ],
      [
-      "sgiab107753",
+      "sgiab96772",
       "Lacey-Keosauqua State Park",
       1,
       "name"
@@ -3431,7 +3660,7 @@
    "verdict": "agree"
   },
   "US-2295": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Lake Ahquabi State Park",
    "official": null,
@@ -3487,7 +3716,7 @@
    "verdict": "no size on page"
   },
   "US-2296": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Lake Anita State Park",
    "official": {
@@ -3495,7 +3724,7 @@
     "as": "1,062 acre",
     "clean": false,
     "line": "onstructed in the 1960s as a popular outdoor recreation destination in southwest Iowa. The centerpiece of the 1,062-acre park is a beautiful 171-acre artificial lake offering expansive fishing and boating opportunities. Plan Your",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "The centerpiece of the 1,062-acre park is a beautiful 171-acre artificial lake offering expansive fishing and boating opportunities.",
     "url": "https://www.iowadnr.gov/Places-to-Go/State-Parks/Iowa-State-Parks/Lake-Anita-State-Park",
     "why": "total-looking"
@@ -3573,7 +3802,7 @@
   },
   "US-2297": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Lake Darling State Park",
    "official": null,
@@ -3597,7 +3826,7 @@
       "name"
      ],
      [
-      "sgiab108108",
+      "sgiab97131",
       "Lake Darling State Park",
       16,
       "name"
@@ -3645,7 +3874,7 @@
    "verdict": "unsure"
   },
   "US-2298": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Lake Keomah State Park",
    "official": {
@@ -3653,13 +3882,13 @@
     "as": "366 acres",
     "clean": false,
     "line": "Notices. Park Alerts & Notices About the Park Lake Keomah State Park near Oskaloosa in southern Iowa features 366 acres of beautiful woods and picnic areas along an 84-acre lake. Deep woods and marshy areas provide habitat for a",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Lake Keomah State Park near Oskaloosa in southern Iowa features 366 acres of beautiful woods and picnic areas along an 84-acre lake.",
     "url": "https://www.iowadnr.gov/Places-to-Go/State-Parks/Iowa-State-Parks/Lake-Keomah-State-Park",
     "why": "part (a lake, a purchase, a campground…)"
    },
    "ours": {
-    "acres": 395,
+    "acres": 376,
     "dissolved": {
      "after": 743,
      "before": 1110,
@@ -3670,10 +3899,8 @@
      },
      "family_fold": 367,
      "family_used": "padus",
-     "key_union": 395,
      "parts": 0,
      "records": 3,
-     "summed": 376,
      "tracts": 2
     },
     "family_fold": "layers {'padus': 376, 'sgiab': 367}: one land in 2 layers, the padus copy used (367 ac of copies not added)",
@@ -3705,7 +3932,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 8,
+   "pct": 3,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -3739,20 +3966,18 @@
    "verdict": "agree"
   },
   "US-2299": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Lake Macbride State Park",
    "official": null,
    "ours": {
-    "acres": 2493,
+    "acres": 2040,
     "dissolved": {
      "after": 2040,
      "before": 6992,
      "copies": 15,
-     "key_union": 2493,
      "parts": 11,
      "records": 30,
-     "summed": 2040,
      "tracts": 4
     },
     "manager": "",
@@ -3765,19 +3990,19 @@
       "name"
      ],
      [
-      "sgiab108124",
+      "sgiab97147",
       "Lake Macbride State Park",
       22,
       "name"
      ],
      [
-      "sgiab108119",
+      "sgiab97142",
       "Lake Macbride State Park",
       5,
       "name"
      ],
      [
-      "sgiab108117",
+      "sgiab97140",
       "Lake Macbride State Park",
       4,
       "name"
@@ -3815,7 +4040,7 @@
    "verdict": "no size on page"
   },
   "US-2300": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Lake Manawa State Park",
    "official": {
@@ -3823,7 +4048,7 @@
     "as": "1,500 acres",
     "clean": false,
     "line": "k Lake Manawa is one of western Iowa’s premier spots for boating, hiking or just relaxing outdoors. More than 1,500 acres surround the lake, originally constructed in 1881 after a Missouri River flood. It continues to be a major ou",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "More than 1,500 acres surround the lake, originally constructed in 1881 after a Missouri River flood.",
     "url": "https://www.iowadnr.gov/Places-to-Go/State-Parks/Iowa-State-Parks/Lake-Manawa-State-Park",
     "why": "history"
@@ -3842,10 +4067,10 @@
     "note": "3 joined records = 1 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 4779 -> 1601 acres",
     "pieces": [
      [
-      "sgiab104797",
+      "sgiab93797",
       "Lake Manawa State Park",
       1601,
-      "reviewed"
+      "name"
      ]
     ],
     "pin": "inside",
@@ -3892,7 +4117,7 @@
   },
   "US-2301": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 400 acres, no total words near it)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Lake of Three Fires State Park",
    "official": {
@@ -3900,7 +4125,7 @@
     "as": "400 acres",
     "clean": false,
     "line": "at the beach near the lodge. Hunt at the park’s public hunting area near the north and south borders. Nearly 400 acres of hunting area surround the park, although hunting is not allowed within park borders. Stay overnight in one",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Nearly 400 acres of hunting area surround the park, although hunting is not allowed within park borders.",
     "url": "https://www.iowadnr.gov/Places-to-Go/State-Parks/Iowa-State-Parks/Lake-of-Three-Fires-State-Park",
     "why": "no total words near it"
@@ -3985,7 +4210,7 @@
   },
   "US-2302": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Lake Wapello State Park",
    "official": null,
@@ -4051,7 +4276,7 @@
    "verdict": "unsure"
   },
   "US-2303": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Ledges State Park",
    "official": null,
@@ -4114,7 +4339,7 @@
    "verdict": "no size on page"
   },
   "US-2304": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Lewis and Clark State Park",
    "official": null,
@@ -4177,12 +4402,12 @@
    "verdict": "no size on page"
   },
   "US-2305": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Maquoketa Caves State Park",
    "official": null,
    "ours": {
-    "acres": 352,
+    "acres": 327,
     "dissolved": {
      "after": 646,
      "before": 973,
@@ -4193,10 +4418,8 @@
      },
      "family_fold": 319,
      "family_used": "sgiab",
-     "key_union": 352,
      "parts": 0,
      "records": 3,
-     "summed": 327,
      "tracts": 2
     },
     "family_fold": "layers {'sgiab': 327, 'padus': 319}: one land in 2 layers, the sgiab copy used (319 ac of copies not added)",
@@ -4204,10 +4427,10 @@
     "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 973 -> 646 acres",
     "pieces": [
      [
-      "sgiab104945",
+      "sgiab93945",
       "Maquoketa Caves State Park",
       327,
-      "reviewed"
+      "name"
      ]
     ],
     "pin": "just outside",
@@ -4242,8 +4465,7 @@
    "verdict": "no size on page"
   },
   "US-2306": {
-   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "McIntosh Woods State Park",
    "official": {
@@ -4251,21 +4473,19 @@
     "as": "60 acre",
     "clean": true,
     "line": "on please visit, Park Alerts and Notices. Park Alerts & Notices About the Park McIntosh Woods State Park is a 60-acre natural enclave on the northwest shore of Clear Lake in northern Iowa. The park, founded in 1944, is a popula",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "McIntosh Woods State Park is a 60-acre natural enclave on the northwest shore of Clear Lake in northern Iowa.",
     "url": "https://www.iowadnr.gov/Places-to-Go/State-Parks/Iowa-State-Parks/McIntosh-Woods-State-Park",
     "why": "clean total"
    },
    "ours": {
-    "acres": 73,
+    "acres": 65,
     "dissolved": {
      "after": 65,
      "before": 193,
      "copies": 2,
-     "key_union": 73,
      "parts": 0,
      "records": 3,
-     "summed": 65,
      "tracts": 1
     },
     "manager": "",
@@ -4296,13 +4516,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 22,
+   "pct": 8,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -4345,10 +4565,10 @@
    ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-2307": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Mini-Wakan State Park",
    "official": null,
@@ -4411,7 +4631,7 @@
    "verdict": "no size on page"
   },
   "US-2308": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Nine Eagles State Park",
    "official": {
@@ -4419,7 +4639,7 @@
     "as": "1,100 acre",
     "clean": false,
     "line": "s and nine miles of hiking trails. Shaded picnic spots with tables and fireplaces can be found throughout the 1,100-acre park. Plan Your Visit Hike or bike the three-mile trail that winds around the lake and connects to the campgr",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Shaded picnic spots with tables and fireplaces can be found throughout the 1,100-acre park.",
     "url": "https://www.iowadnr.gov/Places-to-Go/State-Parks/Iowa-State-Parks/Nine-Eagles-State-Park",
     "why": "part (a lake, a purchase, a campground…)"
@@ -4427,22 +4647,22 @@
    "ours": {
     "acres": 1166,
     "dissolved": {
-     "after": 2273,
-     "before": 3380,
+     "after": 2262,
+     "before": 3358,
      "copies": 1,
      "families": {
       "padus": 1166,
-      "sgiab": 1107
+      "sgiab": 1096
      },
-     "family_fold": 1107,
+     "family_fold": 1096,
      "family_used": "padus",
      "parts": 0,
      "records": 3,
      "tracts": 2
     },
-    "family_fold": "layers {'padus': 1166, 'sgiab': 1107}: one land in 2 layers, the padus copy used (1,107 ac of copies not added)",
+    "family_fold": "layers {'padus': 1166, 'sgiab': 1096}: one land in 2 layers, the padus copy used (1,096 ac of copies not added)",
     "manager": "",
-    "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 3380 -> 2273 acres",
+    "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 3358 -> 2262 acres",
     "pieces": [
      [
       198558,
@@ -4503,12 +4723,12 @@
    "verdict": "agree"
   },
   "US-2309": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Okamanpedan (Tuttle) State Park",
    "official": null,
    "ours": {
-    "acres": 32,
+    "acres": 28,
     "dissolved": {
      "after": 55,
      "before": 83,
@@ -4519,10 +4739,8 @@
      },
      "family_fold": 27,
      "family_used": "sgiab",
-     "key_union": 32,
      "parts": 0,
      "records": 3,
-     "summed": 28,
      "tracts": 2
     },
     "family_fold": "layers {'sgiab': 28, 'padus': 27}: one land in 2 layers, the sgiab copy used (27 ac of copies not added)",
@@ -4530,7 +4748,7 @@
     "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 83 -> 55 acres",
     "pieces": [
      [
-      "sgiab108089",
+      "sgiab97112",
       "Okamanpedan State Park",
       28,
       "name"
@@ -4568,12 +4786,12 @@
    "verdict": "no size on page"
   },
   "US-2310": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Palisades-Kepler State Park",
    "official": null,
    "ours": {
-    "acres": 486,
+    "acres": 449,
     "dissolved": {
      "after": 480,
      "before": 1407,
@@ -4584,10 +4802,8 @@
      },
      "family_fold": 31,
      "family_used": "padus",
-     "key_union": 486,
      "parts": 2,
      "records": 7,
-     "summed": 449,
      "tracts": 2
     },
     "family_fold": "layers {'padus': 449, 'sgiab': 31}: one land in 2 layers, the padus copy used (31 ac of copies not added)",
@@ -4633,12 +4849,12 @@
    "verdict": "no size on page"
   },
   "US-2311": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Pikes Peak State Park",
    "official": null,
    "ours": {
-    "acres": 1111,
+    "acres": 963,
     "dissolved": {
      "after": 1052,
      "before": 3282,
@@ -4649,10 +4865,8 @@
      },
      "family_fold": 89,
      "family_used": "padus",
-     "key_union": 1111,
      "parts": 9,
      "records": 27,
-     "summed": 963,
      "tracts": 5
     },
     "family_fold": "layers {'padus': 963, 'sgiab': 89}: one land in 2 layers, the padus copy used (89 ac of copies not added)",
@@ -4698,12 +4912,12 @@
    "verdict": "no size on page"
   },
   "US-2312": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Pikes Point State Park",
    "official": null,
    "ours": {
-    "acres": 11,
+    "acres": 12,
     "dissolved": {
      "after": 20,
      "before": 38,
@@ -4714,10 +4928,8 @@
      },
      "family_fold": 8,
      "family_used": "padus",
-     "key_union": 11,
      "parts": 0,
      "records": 6,
-     "summed": 12,
      "tracts": 3
     },
     "family_fold": "layers {'sgiab': 8, 'padus': 12}: one land in 2 layers, the padus copy used (8 ac of copies not added)",
@@ -4770,7 +4982,7 @@
   },
   "US-2313": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 4 acre, a tiny number without size wording)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Pilot Knob State Park",
    "official": {
@@ -4778,17 +4990,17 @@
     "as": "4 acre",
     "clean": false,
     "line": "visitors in the winter. Discover some of Iowa’s most unique ecological features while exploring Pilot Knob. A 4-acre floating sphagnum bog known as Deadman’s Lake is hidden within the park, and is home to many unique wildlife",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "A 4-acre floating sphagnum bog known as Deadman’s Lake is hidden within the park, and is home to many unique wildlife species.",
     "url": "https://www.iowadnr.gov/Places-to-Go/State-Parks/Iowa-State-Parks/Pilot-Knob-State-Park",
     "why": "a tiny number without size wording"
    },
    "ours": {
-    "acres": 316,
+    "acres": 159,
     "dissolved": {
      "after": 441,
-     "before": 585,
-     "copies": 2,
+     "before": 743,
+     "copies": 3,
      "families": {
       "padus": 138,
       "sgiab": 144,
@@ -4796,18 +5008,16 @@
      },
      "family_fold": 282,
      "family_used": "sgiac",
-     "key_union": 316,
      "parts": 0,
-     "records": 6,
-     "summed": 159,
+     "records": 7,
      "tracts": 4
     },
     "family_fold": "layers {'sgiac': 159, 'padus': 138, 'sgiab': 144}: one land in 3 layers, the sgiac copy used (282 ac of copies not added)",
     "manager": "",
-    "note": "6 joined records = 4 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 585 -> 441 acres",
+    "note": "7 joined records = 4 tracts: 3 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 743 -> 441 acres",
     "pieces": [
      [
-      "sgiac106160",
+      "sgiac95168",
       "Pilot Knob State Recreation Area",
       159,
       "name"
@@ -4831,7 +5041,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 7800,
+   "pct": 3875,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -4865,7 +5075,7 @@
    "verdict": "unsure"
   },
   "US-2314": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Pine Lake State Park",
    "official": null,
@@ -4922,7 +5132,7 @@
   },
   "US-2315": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Prairie Rose State Park",
    "official": {
@@ -4930,7 +5140,7 @@
     "as": "422 acre",
     "clean": true,
     "line": "tion please visit, Park Alerts and Notices. Park Alerts & Notices About the Park Prairie Rose State Park is a 422-acre park nestled in the scenic hills of southwest Iowa. The park is named after the small town, Village of Prairi",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Prairie Rose State Park is a 422-acre park nestled in the scenic hills of southwest Iowa.",
     "url": "https://www.iowadnr.gov/Places-to-Go/State-Parks/Iowa-State-Parks/Prairie-Rose-State-Park",
     "why": "clean total"
@@ -5014,7 +5224,7 @@
    "verdict": "off"
   },
   "US-2316": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Preparation Canyon State Park",
    "official": {
@@ -5022,13 +5232,13 @@
     "as": "344 acres",
     "clean": true,
     "line": "ID About the Park Preparation Canyon State Park, in the heart of the Loess Hills in western Iowa, encompasses 344 acres, including what used to be the town of Preparation. Today, Preparation Canyon is a quiet enclave offering bac",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Preparation Canyon State Park, in the heart of the Loess Hills in western Iowa, encompasses 344 acres, including what used to be the town of Preparation.",
     "url": "https://www.iowadnr.gov/Places-to-Go/State-Parks/Iowa-State-Parks/Preparation-Canyon-State-Park",
     "why": "clean total"
    },
    "ours": {
-    "acres": 373,
+    "acres": 346,
     "dissolved": {
      "after": 684,
      "before": 1022,
@@ -5039,10 +5249,8 @@
      },
      "family_fold": 338,
      "family_used": "padus",
-     "key_union": 373,
      "parts": 0,
      "records": 3,
-     "summed": 346,
      "tracts": 2
     },
     "family_fold": "layers {'padus': 346, 'sgiab': 338}: one land in 2 layers, the padus copy used (338 ac of copies not added)",
@@ -5074,7 +5282,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 8,
+   "pct": 1,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -5100,7 +5308,7 @@
   },
   "US-2317": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Red Haw State Park",
    "official": {
@@ -5108,7 +5316,7 @@
     "as": "649 acre",
     "clean": true,
     "line": "Iowa is a beautiful, year-round destination offering lovely views and diverse recreational activities in the 649-acre park. Red Haw is well known for springtime red buds blooming abundantly around the lake, drawing visitors and",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Red Haw State Park in south-central Iowa is a beautiful, year-round destination offering lovely views and diverse recreational activities in the 649-acre park.",
     "url": "https://www.iowadnr.gov/Places-to-Go/State-Parks/Iowa-State-Parks/Red-Haw-State-Park",
     "why": "clean total"
@@ -5186,7 +5394,7 @@
   },
   "US-2318": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Rice Lake State Park",
    "official": {
@@ -5194,7 +5402,7 @@
     "as": "1200 acre",
     "clean": false,
     "line": "w perch on Rice Lake. Be sure to check length and possession limits for fish caught in this lake. Boat in the 1200-acre natural lake. Rice Lake allows any size motor and is popular for water activities such as water skiing, jet s",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Boat in the 1200-acre natural lake.",
     "url": "https://www.iowadnr.gov/Places-to-Go/State-Parks/Iowa-State-Parks/-Rice-Lake-State-Park",
     "why": "total-looking"
@@ -5225,7 +5433,7 @@
       "name"
      ],
      [
-      "sgiab105265",
+      "sgiab94265",
       "Rice Lake State Park",
       26,
       "name"
@@ -5283,7 +5491,7 @@
    "verdict": "off"
   },
   "US-2319": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Rock Creek State Park",
    "official": null,
@@ -5308,13 +5516,13 @@
     "note": "8 joined records = 3 tracts: 5 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 6144 -> 3028 acres",
     "pieces": [
      [
-      "sgiab104421",
+      "sgiab93420",
       "Rock Creek State Park",
       1261,
       "name"
      ],
      [
-      "sgiab104171",
+      "sgiab93170",
       "Rock Creek State Park",
       465,
       "name"
@@ -5353,7 +5561,7 @@
   },
   "US-2320": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Springbrook State Park",
    "official": {
@@ -5361,7 +5569,7 @@
     "as": "930 acres",
     "clean": true,
     "line": "ark Alerts & Notices About the Park Springbrook State Park is a quiet retreat in Guthrie County, encompassing 930 acres of rolling hills and mature timber. Many of the park’s structures were built by the Civilian Conservation Cor",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Springbrook State Park is a quiet retreat in Guthrie County, encompassing 930 acres of rolling hills and mature timber.",
     "url": "https://www.iowadnr.gov/Places-to-Go/State-Parks/Iowa-State-Parks/Springbrook-State-Park",
     "why": "clean total"
@@ -5447,7 +5655,7 @@
    "verdict": "off"
   },
   "US-2321": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Stone State Park",
    "official": null,
@@ -5523,7 +5731,7 @@
    "verdict": "no size on page"
   },
   "US-2322": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Trappers Bay State Park",
    "official": null,
@@ -5548,10 +5756,10 @@
     "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 148 -> 98 acres",
     "pieces": [
      [
-      "sgiab105261",
+      "sgiab94261",
       "Trapper's Bay State Park",
       50,
-      "reviewed"
+      "name"
      ]
     ],
     "pin": "inside",
@@ -5587,12 +5795,12 @@
   },
   "US-2323": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Twin Lakes State Park",
    "official": null,
    "ours": {
-    "acres": 15,
+    "acres": 19,
     "dissolved": {
      "after": 20,
      "before": 59,
@@ -5603,10 +5811,8 @@
      },
      "family_fold": 1,
      "family_used": "padus",
-     "key_union": 15,
      "parts": 2,
      "records": 7,
-     "summed": 19,
      "tracts": 2
     },
     "family_fold": "layers {'padus': 19, 'sgiab': 1}: one land in 2 layers, the padus copy used (1 ac of copies not added)",
@@ -5662,7 +5868,7 @@
    "verdict": "unsure"
   },
   "US-2324": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Union Grove State Park",
    "official": null,
@@ -5718,7 +5924,7 @@
    "verdict": "no size on page"
   },
   "US-2325": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Viking Lake State Park",
    "official": {
@@ -5726,7 +5932,7 @@
     "as": "1,000 acre",
     "clean": false,
     "line": "rk is a popular lake and camping destination with numerous recreational opportunities. A large portion of the 1,000-acre park has been left in its natural state and is abundant in wildflowers and plants. Beavers, turkeys, ducks an",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "A large portion of the 1,000-acre park has been left in its natural state and is abundant in wildflowers and plants.",
     "url": "https://www.iowadnr.gov/Places-to-Go/State-Parks/Iowa-State-Parks/Viking-Lake-State-Park",
     "why": "part (a lake, a purchase, a campground…)"
@@ -5810,7 +6016,7 @@
    "verdict": "agree"
   },
   "US-2326": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Walnut Woods State Park",
    "official": null,
@@ -5866,7 +6072,7 @@
    "verdict": "no size on page"
   },
   "US-2327": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Wapsipinicon State Park",
    "official": null,
@@ -5930,7 +6136,7 @@
    "verdict": "no size on page"
   },
   "US-2328": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Waubonsie State Park",
    "official": {
@@ -5938,7 +6144,7 @@
     "as": "2,000 acres",
     "clean": false,
     "line": "ke amongst the tranquil surroundings of the park’s ridgetop prairies and shaded woodland valleys. With nearly 2,000 acres of recreational opportunity and quiet beauty, Waubonsie State Park is an Iowa gem waiting to be explored. Bla",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "With nearly 2,000 acres of recreational opportunity and quiet beauty, Waubonsie State Park is an Iowa gem waiting to be explored.",
     "url": "https://www.iowadnr.gov/Places-to-Go/State-Parks/Iowa-State-Parks/Waubonsie-State-Park",
     "why": "total-looking"
@@ -6055,20 +6261,18 @@
    "verdict": "agree"
   },
   "US-2329": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Wild Cat Den State Park",
    "official": null,
    "ours": {
-    "acres": 458,
+    "acres": 432,
     "dissolved": {
      "after": 432,
      "before": 1280,
      "copies": 2,
-     "key_union": 458,
      "parts": 0,
      "records": 3,
-     "summed": 432,
      "tracts": 1
     },
     "manager": "",
@@ -6113,19 +6317,36 @@
    "verdict": "no size on page"
   },
   "US-4236": {
-   "cause": "whole park compared (POTA lists it in 4 states: {'US-WI': 74135, 'US-IA': 59625, 'US-IL': 21280, 'US-MN': 41099})",
-   "checked": "2026-11-22",
-   "handover": [],
+   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
+   "checked": "2026-11-01",
+   "handover": [
+    {
+     "date_hint": null,
+     "kind": "managed by",
+     "line": "dment to the original act. Other Facilities in this Complex Driftless Area National Wildlife Refuge is managed by the McGregor District of the Upper Mississippi River National Wildlife and Fish Refuge. Trempealeau National Wildlife Refuge is supervised by the La Crosse Distr",
+     "owner_now": "McGregor District of the Upper Mississippi River",
+     "src": "https://www.fws.gov/refuge/upper-mississippi-river/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
    "n": "Upper Mississippi River National Wildlife Refuge",
-   "note": "whole park compared (POTA lists it in 4 states: {'US-WI': 74135, 'US-IA': 59625, 'US-IL': 21280, 'US-MN': 41099})",
-   "official": null,
+   "note": "whole park compared (POTA lists it in 3 states: {'US-MN': 15422, 'US-WI': 52855, 'US-IA': 51575})",
+   "official": {
+    "acres": 1238.0,
+    "as": "1,238 acres",
+    "clean": true,
+    "line": "way. National Wildlife Refuge Trempealeau, WI Driftless Area National Wildlife Refuge The refuge encompasses 1,238 acres of the Driftless Area in Iowa - a small portion of the entire Driftless Area. This area is also known as the",
+    "read": "2026-11-01",
+    "sent": "The refuge encompasses 1,238 acres of the Driftless Area in Iowa - a small portion of the entire Driftless Area.",
+    "url": "https://www.fws.gov/refuge/upper-mississippi-river/about-us",
+    "why": "clean total"
+   },
    "ours": {
-    "acres": 196139,
+    "acres": 119852,
     "acres_by_state": {
-     "US-IA": 59625,
-     "US-IL": 21280,
-     "US-MN": 41099,
-     "US-WI": 74135
+     "US-IA": 51575,
+     "US-MN": 15422,
+     "US-WI": 52855
     },
     "dissolved": {
      "after": 85665,
@@ -6138,10 +6359,8 @@
      },
      "family_fold": 34090,
      "family_used": "sgiaa",
-     "key_union": 59625,
      "parts": 0,
      "records": 5,
-     "summed": 51575,
      "tracts": 4
     },
     "family_fold": "layers {'sgiaa': 51575, 'padus': 21280, 'sgiac': 12810}: one land in 3 layers, the sgiaa copy used (34,090 ac of copies not added)",
@@ -6152,21 +6371,21 @@
       "sgiaa34365",
       "UPPER MISSISSIPPI RIVER FISH & WILDLIFE REFUGE",
       51575,
-      "reviewed"
+      "name"
      ]
     ],
     "pin": "well outside",
     "src": "USGS PAD-US",
     "states": [
-     "US-WI",
-     "US-IA",
      "US-IL",
-     "US-MN"
+     "US-MN",
+     "US-WI",
+     "US-IA"
     ],
     "unknown_pieces": 0,
     "whole_park": true
    },
-   "owner_now": null,
+   "owner_now": "McGregor District of the Upper Mississippi River",
    "pages": [
     {
      "status": "ok",
@@ -6175,22 +6394,23 @@
     },
     {
      "other_unit": true,
-     "status": "HTTP 404",
+     "status": "ok",
      "url": "https://www.fws.gov/refuge/upper-mississippi-river/visit-us/rules-policies",
      "why": "rules page (documents bot)"
     },
     {
-     "status": "HTTP 404",
+     "status": "ok",
      "url": "https://www.fws.gov/refuge/upper-mississippi-river/about-us",
      "why": "FWS refuge about page"
     }
    ],
-   "pct": null,
-   "score": 5,
+   "pct": 9581,
+   "same_agency": false,
+   "score": 4,
    "score_parts": {
     "name": 2,
     "pin": 0,
-    "size": 1,
+    "size": 0,
     "source": 2
    },
    "sizes": [
@@ -6198,18 +6418,54 @@
      "acres": 240000.0,
      "as": "240,000 acres",
      "clean": false,
-     "line": "uges Federal Recreation Passes More About Our Services About Established in 1924, the refuge covers more than 240,000 acres and extends 261 miles of the Mississippi River across Minnesota, Wisconsin, Illinois, and Iowa. It is a Globa",
-     "total_like": false,
+     "line": "The refuge stretches 261 river miles from Wabasha, Minnesota to Rock Island, Illinois, and protects more than 240,000 acres of Mississippi River floodplain. The refuge hosts more than 3.7 million annual visits for hunting, fishing, w",
+     "total_like": true,
      "url": "https://www.fws.gov/refuge/upper-mississippi-river",
+     "why": "total-looking"
+    },
+    {
+     "acres": 240000.0,
+     "as": "240,000 acres",
+     "clean": false,
+     "line": ". The refuge stretches 261 river miles from Wabasha, Minnesota to Rock Island, Illinois, protecting more than 240,000 acres of Mississippi River floodplain. The refuge hosts more than 3.7 million annual visits for hunting, fishing, w",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/upper-mississippi-river",
+     "why": "total-looking"
+    },
+    {
+     "acres": 240000.0,
+     "as": "240,000 acre",
+     "clean": false,
+     "line": "se Regulations Welcome to Upper Mississippi River National Wildlife and Fish Refuge. Established in 1924, the 240,000-acre refuge provides for the needs of fish, wildlife and millions of annual visitors. To conserve this special pla",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/upper-mississippi-river/visit-us/rules-policies",
      "why": "history"
+    },
+    {
+     "acres": 240000.0,
+     "as": "240,000 acres",
+     "clean": false,
+     "line": "ing place for migratory birds, Upper Mississippi River National Wildlife and Fish Refuge now covers more than 240,000 acres and extends roughly 261 miles of the Mississippi River across four states: Minnesota, Wisconsin, Illinois and",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/upper-mississippi-river/about-us",
+     "why": "history"
+    },
+    {
+     "acres": 1238.0,
+     "as": "1,238 acres",
+     "clean": true,
+     "line": "way. National Wildlife Refuge Trempealeau, WI Driftless Area National Wildlife Refuge The refuge encompasses 1,238 acres of the Driftless Area in Iowa - a small portion of the entire Driftless Area. This area is also known as the",
+     "total_like": true,
+     "url": "https://www.fws.gov/refuge/upper-mississippi-river/about-us",
+     "why": "clean total"
     }
    ],
    "t": "National Wildlife Refuge",
    "ver": 15,
-   "verdict": "unsure"
+   "verdict": "off"
   },
   "US-4372": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Pleasant Creek State Recreation Area",
    "official": null,
@@ -6233,7 +6489,7 @@
       "name"
      ],
      [
-      "sgiab104167",
+      "sgiab93165",
       "Pleasant Creek State Recreation Area",
       1,
       "name"
@@ -6271,12 +6527,12 @@
    "verdict": "no size on page"
   },
   "US-4377": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Mines of Spain State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 1518,
+    "acres": 1422,
     "dissolved": {
      "after": 2886,
      "before": 5726,
@@ -6288,10 +6544,8 @@
      },
      "family_fold": 1464,
      "family_used": "padus",
-     "key_union": 1518,
      "parts": 3,
      "records": 12,
-     "summed": 1422,
      "tracts": 5
     },
     "family_fold": "layers {'sgiaa': 1376, 'padus': 1422, 'sgiab': 88}: one land in 3 layers, the padus copy used (1,464 ac of copies not added)",
@@ -6349,152 +6603,27 @@
    "verdict": "no size on page"
   },
   "US-4572": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Lewis and Clark National Historic Trail",
-   "note": "whole park compared (POTA lists it in 0 states: {})",
-   "official": null,
-   "ours": {
-    "acres": 0,
-    "acres_by_state": {},
-    "manager": "",
-    "pieces": [],
-    "pin": "inside",
-    "src": "",
-    "states": [
-     "US-KS",
-     "US-IA",
-     "US-IL",
-     "US-ND",
-     "US-MT",
-     "US-ID",
-     "US-OR",
-     "US-MO",
-     "US-WV",
-     "US-IN",
-     "US-NE",
-     "US-SD",
-     "US-OH",
-     "US-PA",
-     "US-WA"
-    ],
-    "unknown_pieces": 1,
-    "whole_park": true
-   },
-   "owner_now": null,
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://www.nps.gov/lecl/index.htm",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.nps.gov/lecl/learn/index.htm",
-     "why": "about / history page of the park's site"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.nps.gov/lecl/learn/historyculture/places.htm",
-     "why": "about / history page of the park's site"
-    },
-    {
-     "other_unit": true,
-     "status": "ok",
-     "url": "https://www.nps.gov/lecl/learn/management/lawsandpolicies.htm",
-     "why": "rules page (documents bot)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://www.nps.gov/lecl/learn/management/statistics.htm",
-     "why": "NPS park statistics page"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.nps.gov/lecl/learn/news/newsreleases.htm",
-     "why": "NPS news releases"
-    }
-   ],
-   "pct": null,
-   "score": 4,
-   "score_parts": {
-    "name": 1,
-    "pin": 2,
-    "size": 1,
-    "source": 0
-   },
-   "sizes": [],
+   "ours": null,
+   "score": null,
    "t": "National Historic Trail",
    "ver": 15,
-   "verdict": "ours unknown"
+   "verdict": "no outline"
   },
   "US-4573": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Mormon Pioneer National Historic Trail",
-   "note": "whole park compared (POTA lists it in 0 states: {})",
-   "official": null,
-   "ours": {
-    "acres": 0,
-    "acres_by_state": {},
-    "manager": "",
-    "pieces": [],
-    "pin": "inside",
-    "src": "",
-    "states": [
-     "US-UT",
-     "US-IA",
-     "US-IL",
-     "US-WY",
-     "US-NE"
-    ],
-    "unknown_pieces": 1,
-    "whole_park": true
-   },
-   "owner_now": null,
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://www.nps.gov/mopi/index.htm",
-     "why": "the park's page (data/parkinfo)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.nps.gov/mopi/learn/index.htm",
-     "why": "about / history page of the park's site"
-    },
-    {
-     "other_unit": true,
-     "status": "ok",
-     "url": "https://www.nps.gov/mopi/learn/management/lawsandpolicies.htm",
-     "why": "rules page (documents bot)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://www.nps.gov/mopi/learn/management/statistics.htm",
-     "why": "NPS park statistics page"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.nps.gov/mopi/learn/news/newsreleases.htm",
-     "why": "NPS news releases"
-    }
-   ],
-   "pct": null,
-   "score": 4,
-   "score_parts": {
-    "name": 1,
-    "pin": 2,
-    "size": 1,
-    "source": 0
-   },
-   "sizes": [],
+   "ours": null,
+   "score": null,
    "t": "National Historic Trail",
    "ver": 15,
-   "verdict": "ours unknown"
+   "verdict": "no outline"
   },
   "US-4655": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Backbone State Forest",
    "official": {
@@ -6502,7 +6631,7 @@
     "as": "186 acres",
     "clean": false,
     "line": "ast corner of Backbone State Park , four miles south of Strawberry Point. Activities & Access Access to these 186 acres of pine plantations and upland hardwood forest is from a parking lot located just east of the north entrance",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Access to these 186 acres of pine plantations and upland hardwood forest is from a parking lot located just east of the north entrance to Backbone State Park.",
     "url": "https://www.iowadnr.gov/places-go/state-forests/backbone-state-forest",
     "why": "part (a lake, a purchase, a campground…)"
@@ -6579,7 +6708,6 @@
   "US-4656": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Barkley Memorial State Forest",
    "official": null,
    "ours": {
@@ -6636,7 +6764,7 @@
   },
   "US-4657": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Gifford State Forest",
    "official": {
@@ -6644,7 +6772,7 @@
     "as": "8,990 acres",
     "clean": false,
     "line": "opportunities. Yellow River State Forest is in the Northeast corner of Iowa in Allamakee County. It includes 8,990 acres of forest, streams and prairies. It is in the Driftless Area landform region with steep and hilly topography.",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "It includes 8,990 acres of forest, streams and prairies.",
     "url": "https://www.iowadnr.gov/places-to-go/state-forests",
     "why": "total-looking"
@@ -6777,7 +6905,6 @@
   "US-4658": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Holst State Forest",
    "official": null,
    "ours": {
@@ -6833,8 +6960,7 @@
    "verdict": "no size on page"
   },
   "US-4659": {
-   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Loess Hills State Forest",
    "official": {
@@ -6842,13 +6968,13 @@
     "as": "11,484 acres",
     "clean": true,
     "line": "rts & Notices Loess Hills State Forest, near Iowa’s western border in Harrison and Monona counties, comprises 11,484 acres across four units. The forest sits in the heart of the Loess Hills, a unique geological ridge formed over tim",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Loess Hills State Forest, near Iowa’s western border in Harrison and Monona counties, comprises 11,484 acres across four units.",
     "url": "https://www.iowadnr.gov/places-go/state-forests/loess-hills-state-forest",
     "why": "clean total"
    },
    "ours": {
-    "acres": 13600,
+    "acres": 12349,
     "dissolved": {
      "after": 13883,
      "before": 51794,
@@ -6859,10 +6985,8 @@
      },
      "family_fold": 1534,
      "family_used": "sgiaa",
-     "key_union": 13600,
      "parts": 10,
      "records": 36,
-     "summed": 12349,
      "tracts": 8
     },
     "family_fold": "layers {'sgiaa': 12349, 'sgiab': 1534}: one land in 2 layers, the sgiaa copy used (1,534 ac of copies not added)",
@@ -6906,13 +7030,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 18,
+   "pct": 8,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -6991,11 +7115,11 @@
    ],
    "t": "State Forest",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-4660": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Pilot Mound State Forest",
    "official": {
@@ -7003,7 +7127,7 @@
     "as": "8,990 acres",
     "clean": false,
     "line": "opportunities. Yellow River State Forest is in the Northeast corner of Iowa in Allamakee County. It includes 8,990 acres of forest, streams and prairies. It is in the Driftless Area landform region with steep and hilly topography.",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "It includes 8,990 acres of forest, streams and prairies.",
     "url": "https://www.iowadnr.gov/places-to-go/state-forests",
     "why": "total-looking"
@@ -7141,7 +7265,8 @@
    "verdict": "off"
   },
   "US-4661": {
-   "checked": "2026-11-22",
+   "cause": "agency bigger: our outline may miss a tract",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Shimek State Forest",
    "official": {
@@ -7149,13 +7274,13 @@
     "as": "9,448 acres",
     "clean": false,
     "line": "Plan (3.79 MB) .pdf 47th Shimek State Forest Fall Forestry Field Day, October 7, 2025 Plan Your Visit Explore 9,448 acres across five forest units, offering several outdoor recreational opportunities. State forest trails and amenit",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Explore 9,448 acres across five forest units, offering several outdoor recreational opportunities.",
     "url": "https://www.iowadnr.gov/places-to-go/state-forests/shimek-state-forest",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 9218,
+    "acres": 4751,
     "dissolved": {
      "after": 6770,
      "before": 36729,
@@ -7167,10 +7292,8 @@
      },
      "family_fold": 2019,
      "family_used": "padus",
-     "key_union": 9218,
      "parts": 8,
      "records": 36,
-     "summed": 4751,
      "tracts": 5
     },
     "family_fold": "layers {'padus': 4751, 'sgiaa': 1042, 'sgiab': 977}: one land in 3 layers, the padus copy used (2,019 ac of copies not added)",
@@ -7214,13 +7337,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 2,
+   "pct": 50,
    "same_agency": false,
-   "score": 7,
+   "score": 5,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 2,
+    "size": 0,
     "source": 2
    },
    "sizes": [
@@ -7299,10 +7422,11 @@
    ],
    "t": "State Forest",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "off"
   },
   "US-4662": {
-   "checked": "2026-11-22",
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 15,000 acres, no total words near it)",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Stephens State Forest",
    "official": {
@@ -7310,13 +7434,13 @@
     "as": "15,000 acres",
     "clean": false,
     "line": "other people. Snowmobiling is popular in winter on designated trails throughout the forest. Hunt on more than 15,000 acres of public land. The diverse habitat is especially good for deer and turkey hunting. History & Ecology List it",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Hunt on more than 15,000 acres of public land.",
     "url": "https://www.iowadnr.gov/places-to-go/state-forests/stephens-state-forest",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 13049,
+    "acres": 6811,
     "dissolved": {
      "after": 12996,
      "before": 51714,
@@ -7328,10 +7452,8 @@
      },
      "family_fold": 6185,
      "family_used": "sgiab",
-     "key_union": 13049,
      "parts": 12,
      "records": 58,
-     "summed": 6811,
      "tracts": 11
     },
     "family_fold": "layers {'sgiab': 6811, 'sgiaa': 2954, 'padus': 3231}: one land in 3 layers, the sgiab copy used (6,185 ac of copies not added)",
@@ -7339,19 +7461,19 @@
     "note": "58 joined records = 11 tracts: 35 copies of a tract (same acres, another layer) and 12 fee tracts under a designation record folded; summed 51714 -> 12996 acres",
     "pieces": [
      [
-      "sgiab107806",
+      "sgiab96825",
       "Stephens State Forest",
       3676,
-      "reviewed"
+      "name"
      ],
      [
-      "sgiab107684",
+      "sgiab96703",
       "Stephens State Forest",
       2071,
       "name"
      ],
      [
-      "sgiab108129",
+      "sgiab97152",
       "Stephens State Forest",
       1064,
       "name"
@@ -7375,13 +7497,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 13,
+   "pct": 55,
    "same_agency": false,
-   "score": 8,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 1,
     "source": 2
    },
    "sizes": [
@@ -7406,23 +7528,21 @@
    ],
    "t": "State Forest",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "unsure"
   },
   "US-4663": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "White Pine Hollow State Forest",
    "official": null,
    "ours": {
-    "acres": 240,
+    "acres": 227,
     "dissolved": {
      "after": 227,
      "before": 305,
      "copies": 2,
-     "key_union": 240,
      "parts": 0,
      "records": 4,
-     "summed": 227,
      "tracts": 2
     },
     "manager": "",
@@ -7473,12 +7593,12 @@
    "verdict": "no size on page"
   },
   "US-4664": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Yellow River State Forest",
    "official": null,
    "ours": {
-    "acres": 9122,
+    "acres": 6778,
     "dissolved": {
      "after": 8762,
      "before": 35255,
@@ -7490,10 +7610,8 @@
      },
      "family_fold": 1984,
      "family_used": "padus",
-     "key_union": 9122,
      "parts": 15,
      "records": 51,
-     "summed": 6778,
      "tracts": 7
     },
     "family_fold": "layers {'padus': 6778, 'sgiaa': 1790, 'sgiab': 194}: one land in 3 layers, the padus copy used (1,984 ac of copies not added)",
@@ -7551,7 +7669,7 @@
    "verdict": "no size on page"
   },
   "US-4989": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Rand Bar Wildlife Management Area",
    "official": null,
@@ -7608,7 +7726,7 @@
   },
   "US-5729": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Badger Creek State Recreation Area",
    "official": {
@@ -7616,7 +7734,7 @@
     "as": "700 acres",
     "clean": false,
     "line": "utdoor destination for hunters and anglers just a few miles southwest of the Des Moines metro area. More than 700 acres can be accessed for hunting, bird watching and other nature activities. Mailing Address 3155 SE Walnut Woods",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "More than 700 acres can be accessed for hunting, bird watching and other nature activities.",
     "url": "https://www.iowadnr.gov/Places-to-Go/State-Parks/Iowa-State-Parks/Badger-Creek-State-Recreation-Area",
     "why": "total-looking"
@@ -7645,7 +7763,7 @@
       "sgiaa33657",
       "BADGER CREEK RECREATION AREA",
       1153,
-      "reviewed"
+      "name"
      ]
     ],
     "pin": "inside",
@@ -7711,7 +7829,6 @@
   "US-5730": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Blood Run State Historic Site",
    "official": null,
    "ours": {
@@ -7751,7 +7868,7 @@
    "verdict": "no size on page"
   },
   "US-5731": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Brushy Creek State Recreation Area",
    "official": {
@@ -7759,7 +7876,7 @@
     "as": "6,500 acres",
     "clean": false,
     "line": "largest state parks in Iowa, showcasing native prairie, grassland, timber, river and lake habitats across its 6,500 acres. The lake at Brushy Creek is perfect for swimming, fishing and boating. With more than 45 miles of trails, Br",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Brushy Creek State Recreation Area is one of the largest state parks in Iowa, showcasing native prairie, grassland, timber, river and lake habitats across its 6,500 acres.",
     "url": "https://www.iowadnr.gov/Places-to-Go/State-Parks/Iowa-State-Parks/Brushy-Creek-State-Recreation-Area",
     "why": "part (a lake, a purchase, a campground…)"
@@ -7844,20 +7961,18 @@
    "verdict": "agree"
   },
   "US-5732": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Emerson Bay State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 16,
+    "acres": 20,
     "dissolved": {
      "after": 20,
      "before": 60,
      "copies": 2,
-     "key_union": 16,
      "parts": 0,
      "records": 3,
-     "summed": 20,
      "tracts": 1
     },
     "manager": "",
@@ -7902,12 +8017,12 @@
    "verdict": "no size on page"
   },
   "US-5733": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Fairport State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 20,
+    "acres": 27,
     "dissolved": {
      "after": 41,
      "before": 68,
@@ -7918,10 +8033,8 @@
      },
      "family_fold": 14,
      "family_used": "sgiab",
-     "key_union": 20,
      "parts": 0,
      "records": 3,
-     "summed": 27,
      "tracts": 2
     },
     "family_fold": "layers {'sgiab': 27, 'padus': 14}: one land in 2 layers, the sgiab copy used (14 ac of copies not added)",
@@ -7929,10 +8042,10 @@
     "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 68 -> 41 acres",
     "pieces": [
      [
-      "sgiab108221",
+      "sgiab97246",
       "Fairport State Recreation Area",
       27,
-      "reviewed"
+      "name"
      ]
     ],
     "pin": "inside",
@@ -7967,12 +8080,12 @@
    "verdict": "no size on page"
   },
   "US-5734": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Fort Atkinson State Preserve",
    "official": null,
    "ours": {
-    "acres": 5,
+    "acres": 8,
     "dissolved": {
      "after": 15,
      "before": 22,
@@ -7983,10 +8096,8 @@
      },
      "family_fold": 7,
      "family_used": "padus",
-     "key_union": 5,
      "parts": 0,
      "records": 3,
-     "summed": 8,
      "tracts": 2
     },
     "family_fold": "layers {'padus': 8, 'sgiab': 7}: one land in 2 layers, the padus copy used (7 ac of copies not added)",
@@ -8032,36 +8143,45 @@
    "verdict": "no size on page"
   },
   "US-5735": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Lower Gar State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 304,
+    "acres": 315,
     "dissolved": {
      "after": 315,
-     "before": 390,
-     "copies": 3,
-     "families": {
-      "padus": 63,
-      "sgiac": 252
-     },
-     "family_fold": 63,
-     "family_used": "sgiac",
-     "key_union": 304,
+     "before": 642,
+     "copies": 4,
      "parts": 2,
-     "records": 9,
-     "summed": 252,
+     "records": 10,
      "tracts": 4
     },
-    "family_fold": "layers {'sgiac': 252, 'padus': 63}: one land in 2 layers, the sgiac copy used (63 ac of copies not added)",
     "manager": "",
-    "note": "9 joined records = 4 tracts: 3 copies of a tract (same acres, another layer) and 2 fee tracts under a designation record folded; summed 390 -> 315 acres",
+    "note": "10 joined records = 4 tracts: 4 copies of a tract (same acres, another layer) and 2 fee tracts under a designation record folded; summed 642 -> 315 acres",
     "pieces": [
      [
-      "sgiac106708",
+      199095,
       "Lower Gar Lake",
       252,
+      "name"
+     ],
+     [
+      198864,
+      "Lower Gar Lake Complex",
+      35,
+      "name"
+     ],
+     [
+      199142,
+      "Lower Gar Lake Complex",
+      16,
+      "name"
+     ],
+     [
+      198603,
+      "Lower Gar State Recreation Area",
+      12,
       "name"
      ]
     ],
@@ -8097,12 +8217,12 @@
    "verdict": "no size on page"
   },
   "US-5736": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Templar State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 81,
+    "acres": 87,
     "dissolved": {
      "after": 111,
      "before": 135,
@@ -8113,10 +8233,8 @@
      },
      "family_fold": 24,
      "family_used": "padus",
-     "key_union": 81,
      "parts": 0,
      "records": 4,
-     "summed": 87,
      "tracts": 3
     },
     "family_fold": "layers {'padus': 87, 'sgiab': 24}: one land in 2 layers, the padus copy used (24 ac of copies not added)",
@@ -8168,7 +8286,7 @@
    "verdict": "no size on page"
   },
   "US-5737": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Volga River State Recreation Area",
    "official": null,
@@ -8189,7 +8307,7 @@
       "sgiaa34334",
       "VOLGA RIVER STATE RECREATION AREA",
       5867,
-      "reviewed"
+      "name"
      ],
      [
       198595,
@@ -8236,7 +8354,7 @@
    "verdict": "no size on page"
   },
   "US-5738": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Wilson Island State Recreation Area",
    "official": {
@@ -8244,7 +8362,7 @@
     "as": "544 acres",
     "clean": true,
     "line": "ut the Park Named after former Gov. George Wilson, Wilson Island State Recreation Area in western Iowa covers 544 acres of cottonwood stands along the Missouri River. The secluded park provides a quiet retreat with campsites, hik",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "George Wilson, Wilson Island State Recreation Area in western Iowa covers 544 acres of cottonwood stands along the Missouri River.",
     "url": "https://www.iowadnr.gov/Places-to-Go/State-Parks/Iowa-State-Parks/Wilson-Island-State-Recreation-Area",
     "why": "clean total"
@@ -8266,7 +8384,7 @@
       "sgiaa34335",
       "WILSON ISLAND STATE RECREATION AREA",
       538,
-      "reviewed"
+      "name"
      ]
     ],
     "pin": "inside",
@@ -8312,7 +8430,7 @@
    "verdict": "agree"
   },
   "US-5739": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Bixby State Preserve",
    "official": null,
@@ -8368,12 +8486,12 @@
    "verdict": "no size on page"
   },
   "US-5740": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Little River Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 2090,
+    "acres": 1510,
     "dissolved": {
      "after": 2107,
      "before": 5125,
@@ -8384,10 +8502,8 @@
      },
      "family_fold": 597,
      "family_used": "padus",
-     "key_union": 2090,
      "parts": 0,
      "records": 4,
-     "summed": 1510,
      "tracts": 2
     },
     "family_fold": "layers {'padus': 1510, 'sgiaa': 597}: one land in 2 layers, the padus copy used (597 ac of copies not added)",
@@ -8433,7 +8549,7 @@
    "verdict": "no size on page"
   },
   "US-7564": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Riverton Wildlife Management Area",
    "official": null,
@@ -8461,7 +8577,7 @@
       "sgiaa101900",
       "RIVERTON WILDLIFE AREA",
       4071,
-      "reviewed"
+      "name"
      ]
     ],
     "pin": "inside",
@@ -8496,7 +8612,7 @@
    "verdict": "no size on page"
   },
   "US-8283": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Glenwood Archaeological State Historic Site",
    "official": null,
@@ -8505,7 +8621,7 @@
     "manager": "",
     "pieces": [
      [
-      "sgiac108339",
+      "sgiac99660",
       "Glenwood Archaeological State Preserve",
       893,
       "same name (POTA writes the kind into the name) + pin inside"
@@ -8539,7 +8655,6 @@
   "US-9293": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Hendrickson Marsh Wildlife Management Area",
    "official": null,
    "ours": {
@@ -8566,7 +8681,7 @@
       "sgiaa46529",
       "HENDRICKSON MARSH",
       851,
-      "reviewed"
+      "name"
      ]
     ],
     "pin": "inside",
@@ -8597,7 +8712,6 @@
   "US-9294": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Colfax Wildlife Management Area",
    "official": null,
    "ours": {
@@ -8648,7 +8762,6 @@
   "US-9295": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Redbird Farms Wildlife Management Area",
    "official": null,
    "ours": {
@@ -8699,7 +8812,6 @@
   "US-9296": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Hawkeye Wildlife Management Area",
    "official": null,
    "ours": {
@@ -8722,13 +8834,13 @@
       "name"
      ],
      [
-      "sgiac105748",
+      "sgiac94750",
       "Hawkeye WMA",
       41,
       "name"
      ],
      [
-      "sgiac105746",
+      "sgiac94748",
       "Hawkeye WMA",
       24,
       "name"
@@ -8762,19 +8874,16 @@
   "US-9297": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Hanging Rock Ridge Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 216,
+    "acres": 238,
     "dissolved": {
      "after": 238,
      "before": 714,
      "copies": 2,
-     "key_union": 216,
      "parts": 0,
      "records": 3,
-     "summed": 238,
      "tracts": 1
     },
     "manager": "",
@@ -8815,19 +8924,16 @@
   "US-9298": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Salt Creek Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 124,
+    "acres": 117,
     "dissolved": {
      "after": 117,
      "before": 349,
      "copies": 2,
-     "key_union": 124,
      "parts": 0,
      "records": 3,
-     "summed": 117,
      "tracts": 1
     },
     "manager": "",
@@ -8866,7 +8972,7 @@
    "verdict": "no size on page"
   },
   "US-9299": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Hawthorne Lake Wildlife Management Area",
    "official": null,
@@ -8884,7 +8990,7 @@
     "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 3581 -> 1806 acres",
     "pieces": [
      [
-      "sgiac107717",
+      "sgiac96736",
       "Hawthorn Lake WMA",
       1806,
       "name"
@@ -8923,7 +9029,7 @@
   },
   "US-9300": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 410,000 acres, no total words near it)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Fox River Wildlife Management Area",
    "official": {
@@ -8931,7 +9037,7 @@
     "as": "410,000 acres",
     "clean": false,
     "line": "Department of Natural Resources Search Menu Wildlife Management Areas The DNR's Wildlife Bureau manages over 410,000 acres that are available for public recreational use every day of the year. All of these areas are managed with rev",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "The DNR's Wildlife Bureau manages over 410,000 acres that are available for public recreational use every day of the year.",
     "url": "https://www.iowadnr.gov/places-go/wildlife-management-areas",
     "why": "no total words near it"
@@ -8960,7 +9066,7 @@
       "sgiaa33798",
       "FOX RIVER WILDLIFE AREA",
       809,
-      "reviewed"
+      "name"
      ]
     ],
     "pin": "inside",
@@ -9006,12 +9112,12 @@
    "verdict": "unsure"
   },
   "US-9301": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Lake Sugema Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 3886,
+    "acres": 2450,
     "dissolved": {
      "after": 2810,
      "before": 11641,
@@ -9022,10 +9128,8 @@
      },
      "family_fold": 360,
      "family_used": "padus",
-     "key_union": 3886,
      "parts": 7,
      "records": 13,
-     "summed": 2450,
      "tracts": 5
     },
     "family_fold": "layers {'padus': 2450, 'sgiac': 360}: one land in 2 layers, the padus copy used (360 ac of copies not added)",
@@ -9071,7 +9175,7 @@
    "verdict": "no size on page"
   },
   "US-9302": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Sand Creek Wildlife Management Area",
    "official": null,
@@ -9099,7 +9203,7 @@
       "sgiaa41727",
       "SAND CREEK WILDLIFE AREA",
       3751,
-      "reviewed"
+      "name"
      ]
     ],
     "pin": "inside",
@@ -9134,7 +9238,7 @@
    "verdict": "no size on page"
   },
   "US-9303": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Fogle Lake Wildlife Management Area",
    "official": null,
@@ -9198,7 +9302,6 @@
   "US-9304": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Kellerton Bird Wildlife Management Area",
    "official": null,
    "ours": {
@@ -9256,7 +9359,6 @@
   "US-9305": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Lake Shawtee Wildlife Management Area",
    "official": null,
    "ours": {
@@ -9276,7 +9378,7 @@
       "sgiaa33867",
       "LAKE SHAWTEE",
       1166,
-      "reviewed"
+      "name"
      ]
     ],
     "pin": "inside",
@@ -9305,7 +9407,7 @@
    "verdict": "no size on page"
   },
   "US-9306": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Cooper Creek Wildlife Management Area",
    "official": null,
@@ -9326,7 +9428,7 @@
       "sgiaa34156",
       "COOPER CREEK WILDLIFE AREA",
       261,
-      "reviewed"
+      "name"
      ]
     ],
     "pin": "inside",
@@ -9361,7 +9463,7 @@
    "verdict": "no size on page"
   },
   "US-9307": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Forney's Lake Wildlife Management Area",
    "official": null,
@@ -9423,7 +9525,7 @@
    "verdict": "no size on page"
   },
   "US-9308": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Green Hollow Wildlife Management Area",
    "official": null,
@@ -9444,7 +9546,7 @@
       "sgiaa33814",
       "GREEN HOLLOW WILDLIFE AREA",
       624,
-      "reviewed"
+      "name"
      ]
     ],
     "pin": "just outside",
@@ -9481,7 +9583,6 @@
   "US-9309": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "St Mary's Island Wildlife Management Area",
    "official": null,
    "ours": {
@@ -9537,20 +9638,18 @@
    "verdict": "no size on page"
   },
   "US-9310": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Nobles Lake Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 216,
+    "acres": 236,
     "dissolved": {
      "after": 236,
      "before": 708,
      "copies": 2,
-     "key_union": 216,
      "parts": 2,
      "records": 5,
-     "summed": 236,
      "tracts": 1
     },
     "manager": "",
@@ -9560,7 +9659,7 @@
       "sgiaa33924",
       "NOBLES LAKE WILDLIFE AREA",
       236,
-      "reviewed"
+      "name"
      ]
     ],
     "pin": "inside",
@@ -9595,7 +9694,7 @@
    "verdict": "no size on page"
   },
   "US-9311": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Keg Creek lake Wildlife Management Area",
    "official": null,
@@ -9653,7 +9752,6 @@
   "US-9312": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Rosenow Timber Wildlife Management Area",
    "official": null,
    "ours": {
@@ -9673,7 +9771,7 @@
       "sgiaa66933",
       "ROSENOW TIMBER",
       116,
-      "reviewed"
+      "name"
      ]
     ],
     "pin": "just outside",
@@ -9702,7 +9800,7 @@
    "verdict": "no size on page"
   },
   "US-9313": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Round Lake Wildlife Management Area",
    "official": null,
@@ -9739,12 +9837,12 @@
     },
     {
      "status": "ok",
-     "url": "https://www.iowadnr.gov/About-DNR/DNR-News-Releases?SearchTag=Round%20Lake%20Wildlife%20Area&amp;instance_overrides_key=oOOQuOsOXh3eQeosSVvb6MZ5voVXOr0NCXQjKmGaMOE&amp;page=0",
+     "url": "https://www.iowadnr.gov/About-DNR/DNR-News-Releases?SearchTag=Round%20Lake%20Wildlife%20Area&amp;instance_overrides_key=UHGb2V1AnNyj3ManzmpmgCaF1wQnm3w77QBcbbNqb1Y&amp;page=0",
      "why": "about / history page of the park's site"
     },
     {
      "status": "ok",
-     "url": "https://www.iowadnr.gov/About-DNR/DNR-News-Releases?SearchTag=Round%20Lake%20Wildlife%20Area&amp;instance_overrides_key=oOOQuOsOXh3eQeosSVvb6MZ5voVXOr0NCXQjKmGaMOE&amp;page=1",
+     "url": "https://www.iowadnr.gov/About-DNR/DNR-News-Releases?SearchTag=Round%20Lake%20Wildlife%20Area&amp;instance_overrides_key=UHGb2V1AnNyj3ManzmpmgCaF1wQnm3w77QBcbbNqb1Y&amp;page=1",
      "why": "about / history page of the park's site"
     },
     {
@@ -9768,7 +9866,7 @@
    "verdict": "no size on page"
   },
   "US-9314": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Beaver Lake Wildlife Management Area",
    "official": null,
@@ -9824,12 +9922,12 @@
    "verdict": "no size on page"
   },
   "US-9315": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Three Mile Lake Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 3095,
+    "acres": 2677,
     "dissolved": {
      "after": 3130,
      "before": 8480,
@@ -9840,10 +9938,8 @@
      },
      "family_fold": 453,
      "family_used": "padus",
-     "key_union": 3095,
      "parts": 0,
      "records": 4,
-     "summed": 2677,
      "tracts": 2
     },
     "family_fold": "layers {'padus': 2677, 'sgiaa': 453}: one land in 2 layers, the padus copy used (453 ac of copies not added)",
@@ -9891,7 +9987,6 @@
   "US-9316": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Elk Grove Wildlife Management Area",
    "official": null,
    "ours": {
@@ -9942,11 +10037,10 @@
   "US-9317": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Harrier Marsh Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 421,
+    "acres": 385,
     "dissolved": {
      "after": 420,
      "before": 875,
@@ -9957,10 +10051,8 @@
      },
      "family_fold": 35,
      "family_used": "sgiaa",
-     "key_union": 421,
      "parts": 2,
      "records": 6,
-     "summed": 385,
      "tracts": 2
     },
     "family_fold": "layers {'sgiaa': 385, 'padus': 35}: one land in 2 layers, the sgiaa copy used (35 ac of copies not added)",
@@ -10002,7 +10094,6 @@
   "US-9318": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Finn Pond Wildlife Management Area",
    "official": null,
    "ours": {
@@ -10051,7 +10142,7 @@
    "verdict": "no size on page"
   },
   "US-9319": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Goose Lake Wildlife Management Area",
    "official": null,
@@ -10072,7 +10163,7 @@
       "sgiaa33811",
       "GOOSE LAKE WILDLIFE AREA",
       1290,
-      "reviewed"
+      "name"
      ]
     ],
     "pin": "inside",
@@ -10109,11 +10200,10 @@
   "US-9320": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Tomahawk Marsh Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 424,
+    "acres": 377,
     "dissolved": {
      "after": 428,
      "before": 1182,
@@ -10124,10 +10214,8 @@
      },
      "family_fold": 51,
      "family_used": "padus",
-     "key_union": 424,
      "parts": 0,
      "records": 4,
-     "summed": 377,
      "tracts": 2
     },
     "family_fold": "layers {'padus': 377, 'sgiaa': 51}: one land in 2 layers, the padus copy used (51 ac of copies not added)",
@@ -10169,11 +10257,10 @@
   "US-9321": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Big Sioux River Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 1712,
+    "acres": 1436,
     "dissolved": {
      "after": 3099,
      "before": 4537,
@@ -10185,10 +10272,8 @@
      },
      "family_fold": 1663,
      "family_used": "sgiaa",
-     "key_union": 1712,
      "parts": 6,
      "records": 13,
-     "summed": 1436,
      "tracts": 7
     },
     "family_fold": "layers {'sgiaa': 1436, 'padus': 1386, 'sgiac': 277}: one land in 3 layers, the sgiaa copy used (1,663 ac of copies not added)",
@@ -10230,7 +10315,6 @@
   "US-9322": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Morse Lake Wildlife Management Area",
    "official": null,
    "ours": {
@@ -10257,7 +10341,7 @@
       "sgiaa33918",
       "MORSE LAKE WILDLIFE AREA",
       230,
-      "reviewed"
+      "name"
      ],
      [
       "sgiaa35131",
@@ -10294,7 +10378,6 @@
   "US-9323": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Lower Morse Lake Wildlife Management Area",
    "official": null,
    "ours": {
@@ -10328,7 +10411,7 @@
       "sgiaa33897",
       "LOWER MORSE LAKE WILDLIFE AREA",
       306,
-      "reviewed"
+      "name"
      ],
      [
       "sgiaa118744",
@@ -10363,7 +10446,7 @@
    "verdict": "no size on page"
   },
   "US-9324": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Elm Lake Wildlife Management Area",
    "official": null,
@@ -10440,7 +10523,6 @@
   "US-9325": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Buffalo Basins Wildlife Management Area",
    "official": null,
    "ours": {
@@ -10491,7 +10573,6 @@
   "US-9326": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Waterman Prarie Complex Wildlife Management Area",
    "official": null,
    "ours": {
@@ -10547,20 +10628,20 @@
    "verdict": "no size on page"
   },
   "US-9327": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Wittrock Indian Village State Preserve",
    "official": null,
    "ours": {
-    "acres": 5,
+    "acres": 6,
     "family_fold": "layers {'sgiac': 6, 'padus': 5}: one land in 2 layers, the sgiac copy used (5 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
-      "sgiac105915",
+      "sgiac94920",
       "Wittrock Indian Village State Preserve",
       6,
-      "reviewed"
+      "name"
      ]
     ],
     "pin": "inside",
@@ -10595,20 +10676,18 @@
    "verdict": "no size on page"
   },
   "US-9328": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Little Storm Lake Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 298,
+    "acres": 274,
     "dissolved": {
      "after": 274,
      "before": 822,
      "copies": 2,
-     "key_union": 298,
      "parts": 0,
      "records": 3,
-     "summed": 274,
      "tracts": 1
     },
     "manager": "",
@@ -10655,30 +10734,20 @@
   "US-9329": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Rush Lake Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 467,
+    "acres": 347,
     "dissolved": {
-     "after": 544,
-     "before": 1168,
-     "copies": 1,
-     "families": {
-      "sgiaa": 347,
-      "sgiac": 197
-     },
-     "family_fold": 197,
-     "family_used": "sgiaa",
-     "key_union": 467,
+     "after": 347,
+     "before": 1043,
+     "copies": 2,
      "parts": 2,
      "records": 5,
-     "summed": 347,
-     "tracts": 2
+     "tracts": 1
     },
-    "family_fold": "layers {'sgiaa': 347, 'sgiac': 197}: one land in 2 layers, the sgiaa copy used (197 ac of copies not added)",
     "manager": "",
-    "note": "5 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 2 fee tracts under a designation record folded; summed 1168 -> 544 acres",
+    "note": "5 joined records = 1 tracts: 2 copies of a tract (same acres, another layer) and 2 fee tracts under a designation record folded; summed 1043 -> 347 acres",
     "pieces": [
      [
       "sgiaa33983",
@@ -10713,12 +10782,12 @@
    "verdict": "no size on page"
   },
   "US-9330": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Deweys Pasture Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 5504,
+    "acres": 5025,
     "dissolved": {
      "after": 7688,
      "before": 10229,
@@ -10730,10 +10799,8 @@
      },
      "family_fold": 2663,
      "family_used": "sgiaa",
-     "key_union": 5504,
      "parts": 9,
      "records": 14,
-     "summed": 5025,
      "tracts": 5
     },
     "family_fold": "layers {'sgiaa': 5025, 'padus': 2359, 'sgiac': 304}: one land in 3 layers, the sgiaa copy used (2,663 ac of copies not added)",
@@ -10779,31 +10846,29 @@
    "verdict": "no size on page"
   },
   "US-9331": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Eagle Lake Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 582,
+    "acres": 434,
     "dissolved": {
-     "after": 780,
-     "before": 1213,
+     "after": 706,
+     "before": 1139,
      "copies": 1,
      "families": {
       "padus": 434,
-      "sgiaa": 346
+      "sgiaa": 272
      },
-     "family_fold": 346,
+     "family_fold": 272,
      "family_used": "padus",
-     "key_union": 582,
      "parts": 0,
-     "records": 5,
-     "summed": 434,
-     "tracts": 4
+     "records": 4,
+     "tracts": 3
     },
-    "family_fold": "layers {'padus': 434, 'sgiaa': 346}: one land in 2 layers, the padus copy used (346 ac of copies not added)",
+    "family_fold": "layers {'padus': 434, 'sgiaa': 272}: one land in 2 layers, the padus copy used (272 ac of copies not added)",
     "manager": "",
-    "note": "5 joined records = 4 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1213 -> 780 acres",
+    "note": "4 joined records = 3 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1139 -> 706 acres",
     "pieces": [
      [
       199074,
@@ -10812,7 +10877,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -10831,10 +10896,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -10846,11 +10911,10 @@
   "US-9332": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Blue Wing Marsh Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 1005,
+    "acres": 579,
     "dissolved": {
      "after": 1027,
      "before": 2184,
@@ -10861,10 +10925,8 @@
      },
      "family_fold": 448,
      "family_used": "sgiaa",
-     "key_union": 1005,
      "parts": 2,
      "records": 7,
-     "summed": 579,
      "tracts": 3
     },
     "family_fold": "layers {'sgiaa': 579, 'sgiac': 448}: one land in 2 layers, the sgiaa copy used (448 ac of copies not added)",
@@ -10904,12 +10966,12 @@
    "verdict": "no size on page"
   },
   "US-9333": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Barringers Slough Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 1699,
+    "acres": 1618,
     "dissolved": {
      "after": 1726,
      "before": 4473,
@@ -10921,10 +10983,8 @@
      },
      "family_fold": 108,
      "family_used": "sgiaa",
-     "key_union": 1699,
      "parts": 0,
      "records": 8,
-     "summed": 1618,
      "tracts": 4
     },
     "family_fold": "layers {'sgiaa': 1618, 'padus': 106, 'sgiac': 2}: one land in 3 layers, the sgiaa copy used (108 ac of copies not added)",
@@ -10978,21 +11038,11 @@
   "US-9334": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Teal Basins State Waterfowl Management Area",
    "official": null,
    "ours": {
     "acres": 151,
-    "dissolved": {
-     "after": 151,
-     "before": 302,
-     "copies": 1,
-     "parts": 0,
-     "records": 2,
-     "tracts": 1
-    },
     "manager": "",
-    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 302 -> 151 acres",
     "pieces": [
      [
       "sgiaa34031",
@@ -11029,7 +11079,6 @@
   "US-9335": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Wapsi Flats Wildlife Management Area",
    "official": null,
    "ours": {
@@ -11078,7 +11127,7 @@
    "verdict": "no size on page"
   },
   "US-9337": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Sweet Marsh Wildlife Management Area",
    "official": null,
@@ -11107,7 +11156,7 @@
       "sgiaa60929",
       "SWEET MARSH",
       3266,
-      "reviewed"
+      "name"
      ]
     ],
     "pin": "inside",
@@ -11144,7 +11193,6 @@
   "US-9338": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Turkey River Wildlife Management Area",
    "official": null,
    "ours": {
@@ -11193,7 +11241,7 @@
    "verdict": "no size on page"
   },
   "US-9339": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Cardinal Marsh Wildlife Management Area",
    "official": null,
@@ -11251,19 +11299,16 @@
   "US-9340": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Bluffton Fir Stand State Preserve",
    "official": null,
    "ours": {
-    "acres": 128,
+    "acres": 93,
     "dissolved": {
      "after": 93,
      "before": 279,
      "copies": 2,
-     "key_union": 128,
      "parts": 0,
      "records": 3,
-     "summed": 93,
      "tracts": 1
     },
     "manager": "",
@@ -11302,7 +11347,7 @@
    "verdict": "no size on page"
   },
   "US-9341": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Pine Creek Wildlife Management Area",
    "official": null,
@@ -11358,7 +11403,7 @@
    "verdict": "no size on page"
   },
   "US-9342": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Coon Creek Wildlife Management Area",
    "official": null,
@@ -11414,7 +11459,7 @@
    "verdict": "no size on page"
   },
   "US-9343": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "South Pine Creek Wildlife Management Area",
    "official": null,
@@ -11442,7 +11487,7 @@
       "sgiaa34015",
       "SOUTH PINE CREEK WILDLIFE AREA",
       239,
-      "reviewed"
+      "name"
      ]
     ],
     "pin": "just outside",
@@ -11477,7 +11522,7 @@
    "verdict": "no size on page"
   },
   "US-9344": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Canoe Creek Wildlife Management Area",
    "official": null,
@@ -11505,7 +11550,7 @@
       "sgiaa33709",
       "CANOE CREEK WILDLIFE AREA",
       495,
-      "reviewed"
+      "name"
      ]
     ],
     "pin": "inside",
@@ -11540,7 +11585,7 @@
    "verdict": "no size on page"
   },
   "US-9345": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "North Bear Creek Wildlife Management Area",
    "official": null,
@@ -11568,7 +11613,7 @@
       "sgiaa33925",
       "NORTH BEAR CREEK WILDLIFE AREA",
       969,
-      "reviewed"
+      "name"
      ]
     ],
     "pin": "inside",
@@ -11603,7 +11648,7 @@
    "verdict": "no size on page"
   },
   "US-9346": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "South Bear Creek Wildlife Management Area",
    "official": null,
@@ -11659,7 +11704,7 @@
    "verdict": "no size on page"
   },
   "US-9347": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Big Mill Creek Wildlife Management Area",
    "official": null,
@@ -11717,7 +11762,6 @@
   "US-9348": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Barber Creek Wildlife Management Area",
    "official": null,
    "ours": {
@@ -11766,7 +11810,7 @@
    "verdict": "no size on page"
   },
   "US-9349": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Lost Grove Lake Wildlife Management Area",
    "official": null,
@@ -11787,7 +11831,7 @@
       "sgiaa33890",
       "LOST GROVE LAKE WILDLIFE AREA",
       1699,
-      "reviewed"
+      "name"
      ]
     ],
     "pin": "inside",
@@ -11822,7 +11866,7 @@
    "verdict": "no size on page"
   },
   "US-9350": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Wiese Slough Wildlife Management Area",
    "official": null,
@@ -11846,7 +11890,7 @@
       "name"
      ],
      [
-      "sgiac106372",
+      "sgiac95380",
       "Wiese Slough WMA",
       1,
       "name"
@@ -11886,7 +11930,6 @@
   "US-9351": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Red Cedar Wildlife Management Area",
    "official": null,
    "ours": {
@@ -11937,7 +11980,6 @@
   "US-9352": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Cedar Bottoms Wildlife Management Area",
    "official": null,
    "ours": {
@@ -11986,7 +12028,7 @@
    "verdict": "no size on page"
   },
   "US-9353": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Cone Marsh Wildlife Management Area",
    "official": null,
@@ -12044,7 +12086,6 @@
   "US-9354": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Fox Hills Wildlife Management Area",
    "official": null,
    "ours": {
@@ -12072,7 +12113,7 @@
       "sgiaa58928",
       "FOX HILLS WILDLIFE AREA",
       1452,
-      "reviewed"
+      "name"
      ]
     ],
     "pin": "just outside",
@@ -12103,7 +12144,6 @@
   "US-9873": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Boone Forks Wildlife Management Area",
    "official": null,
    "ours": {
@@ -12130,7 +12170,7 @@
       "sgiaa48133",
       "BOONE FORKS WILDLIFE AREA",
       4677,
-      "reviewed"
+      "name"
      ]
     ],
     "pin": "inside",
@@ -12161,11 +12201,10 @@
   "US-9913": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Colo Bogs Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 689,
+    "acres": 522,
     "dissolved": {
      "after": 691,
      "before": 1029,
@@ -12176,10 +12215,8 @@
      },
      "family_fold": 169,
      "family_used": "sgiaa",
-     "key_union": 689,
      "parts": 3,
      "records": 6,
-     "summed": 522,
      "tracts": 2
     },
     "family_fold": "layers {'sgiaa': 522, 'padus': 169}: one land in 2 layers, the sgiaa copy used (169 ac of copies not added)",
@@ -12190,7 +12227,7 @@
       "sgiaa33726",
       "COLO BOGS",
       522,
-      "reviewed"
+      "name"
      ]
     ],
     "pin": "inside",
@@ -12221,11 +12258,10 @@
   "US-9975": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Iowa River Corridor Wildlife Area",
    "official": null,
    "ours": {
-    "acres": 11962,
+    "acres": 9845,
     "dissolved": {
      "after": 14476,
      "before": 24315,
@@ -12236,10 +12272,8 @@
      },
      "family_fold": 4631,
      "family_used": "sgiaa",
-     "key_union": 11962,
      "parts": 33,
      "records": 43,
-     "summed": 9845,
      "tracts": 7
     },
     "family_fold": "layers {'sgiaa': 9845, 'sgiac': 4631}: one land in 2 layers, the sgiaa copy used (4,631 ac of copies not added)",
@@ -12281,7 +12315,6 @@
   "US-9988": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Wapello Bottoms Wildlife Area",
    "official": null,
    "ours": {
@@ -12308,7 +12341,7 @@
       "sgiaa47327",
       "WAPELLO BOTTOMS WILDLIFE AREA",
       2813,
-      "reviewed"
+      "name"
      ]
     ],
     "pin": "just outside",
@@ -12337,5 +12370,5 @@
    "verdict": "no size on page"
   }
  },
- "read": "2026-11-22"
+ "read": "2026-11-01"
 }

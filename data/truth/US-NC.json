@@ -2,22 +2,22 @@
  "about": "Park truth checker: official acreage vs our outline, handover hints, second-witness score. Review lists only: nothing here changes a key or a card.",
  "area": "US-NC",
  "counts": {
-  "agree": 31,
+  "agree": 43,
   "handover_hints": 20,
   "no_page": 1,
-  "no_size": 146,
+  "no_size": 147,
   "not_read": 0,
-  "off": 15,
+  "off": 7,
   "ours_unknown": 5,
   "parks": 253,
   "retired": 0,
-  "unsure": 27,
+  "unsure": 23,
   "weak": 8,
-  "with_outline": 225
+  "with_outline": 227
  },
  "parks": {
   "US-0034": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Great Smoky Mountains National Park",
    "note": "whole park compared (POTA lists it in 2 states: {'US-TN': 241082, 'US-NC': 280725})",
@@ -26,7 +26,7 @@
     "as": "522,427 acres",
     "clean": true,
     "line": "t Smoky Mountains National Park Contact Us Park Statistics Acreage Great Smoky Mountains National Park covers 522,427 acres (800 miles 2 ), divided almost evenly between the states of North Carolina and Tennessee. Visitation More tha",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Great Smoky Mountains National Park covers 522,427 acres (800 miles 2 ), divided almost evenly between the states of North Carolina and Tennessee.",
     "url": "https://www.nps.gov/grsm/learn/management/statistics.htm",
     "why": "clean total"
@@ -127,7 +127,7 @@
    "verdict": "agree"
   },
   "US-0410": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Alligator River National Wildlife Refuge",
    "official": {
@@ -135,7 +135,7 @@
     "as": "160,000 acres",
     "clean": false,
     "line": "onal Wildlife Refuge Yours to enjoy... Alligator River National Wildlife Refuge encompasses a broad expanse (160,000 acres) of mysterious wildlands and waters. Visitors are welcome to explore this unique upland swamp refuge. Desig",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "expanse (160,000 acres) of mysterious wildlands and waters.",
     "url": "https://www.fws.gov/sites/default/files/documents/2024-09/tearsheet-map-2024-alligator-river-nwr.pdf",
     "why": "a map label (no sentence)"
@@ -228,7 +228,7 @@
    "verdict": "agree"
   },
   "US-0411": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Cedar Island National Wildlife Refuge",
    "official": null,
@@ -271,18 +271,8 @@
      "why": "the park's page (data/parkinfo)"
     },
     {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/cedar-island/about-us",
-     "why": "about / history page of the park's site"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/cedar-island/visit-us",
-     "why": "about / history page of the park's site"
-    },
-    {
      "other_unit": true,
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/cedar-island/visit-us/rules-policies",
      "why": "rules page (documents bot)"
     },
@@ -311,12 +301,12 @@
    "verdict": "no size on page"
   },
   "US-0412": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Currituck National Wildlife Refuge",
    "official": null,
    "ours": {
-    "acres": 2734,
+    "acres": 3811,
     "dissolved": {
      "after": 7486,
      "before": 11296,
@@ -327,10 +317,8 @@
      },
      "family_fold": 3675,
      "family_used": "sgnca",
-     "key_union": 2734,
      "parts": 0,
      "records": 3,
-     "summed": 3811,
      "tracts": 2
     },
     "family_fold": "layers {'sgnca': 3811, 'padus': 3675}: one land in 2 layers, the sgnca copy used (3,675 ac of copies not added)",
@@ -356,18 +344,8 @@
      "why": "the park's page (data/parkinfo)"
     },
     {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/currituck/about-us",
-     "why": "about / history page of the park's site"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/currituck/visit-us",
-     "why": "about / history page of the park's site"
-    },
-    {
      "other_unit": true,
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/currituck/visit-us/rules-policies",
      "why": "rules page (documents bot)"
     }
@@ -386,7 +364,7 @@
    "verdict": "no size on page"
   },
   "US-0413": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Mackay Island National Wildlife Refuge",
    "official": {
@@ -394,7 +372,7 @@
     "as": "7,835 acres",
     "clean": false,
     "line": "of the Migratory Bird Conservation Act of 1929. The Service established the original acquisition boundary of 7,835 acres in 1961 and expanded the boundary to 9,503 acres in 1991. The Secretary of the Interior issued a proclamation",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "The Service established the original acquisition boundary of 7,835 acres in 1961 and expanded the boundary to 9,503 acres in 1991.",
     "url": "https://www.fws.gov/refuge/mackay-island/about-us",
     "why": "history"
@@ -548,7 +526,7 @@
    "verdict": "agree"
   },
   "US-0414": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Mattamuskeet National Wildlife Refuge",
    "official": {
@@ -556,21 +534,19 @@
     "as": "50,180 acres",
     "clean": true,
     "line": "e Albemarle-Pamlico Peninsula in Hyde County, North Carolina, was established in 1934. The refuge consists of 50,180 acres of open water, marsh, timber, and croplands. The refuge’s main feature is the shallow 40,000 acre Lake Mattam",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "The refuge consists of 50,180 acres of open water, marsh, timber, and croplands.",
     "url": "https://www.fws.gov/refuge/mattamuskeet/about-us",
     "why": "clean total"
    },
    "ours": {
-    "acres": 52501,
+    "acres": 49881,
     "dissolved": {
      "after": 49881,
      "before": 149351,
      "copies": 2,
-     "key_union": 52501,
      "parts": 0,
      "records": 3,
-     "summed": 49881,
      "tracts": 1
     },
     "manager": "",
@@ -616,7 +592,7 @@
      "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
     }
    ],
-   "pct": 5,
+   "pct": 1,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -704,21 +680,27 @@
    "verdict": "agree"
   },
   "US-0415": {
-   "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Pea Island National Wildlife Refuge",
-   "official": null,
+   "official": {
+    "acres": 5000.0,
+    "as": "5,000 acre",
+    "clean": false,
+    "line": "rhead sea turtles; and to provide opportunities for public enjoyment of wildlife and wildlands resources. The 5,000-acre refuge is located on the north end of Hatteras Island, a coastal barrier island and part of a chain of island",
+    "read": "2026-11-22",
+    "sent": "The 5,000-acre refuge is located on the north end of Hatteras Island, a coastal barrier island and part of a chain of islands known as the Outer Banks, and includes beach, dunes, brackish ponds, and marshes.",
+    "url": "https://www.fws.gov/refuge/pea-island/about-us",
+    "why": "part (a lake, a purchase, a campground…)"
+   },
    "ours": {
-    "acres": 3500,
+    "acres": 4984,
     "dissolved": {
      "after": 4984,
      "before": 9968,
      "copies": 1,
-     "key_union": 3500,
      "parts": 0,
      "records": 2,
-     "summed": 4984,
      "tracts": 1
     },
     "manager": "",
@@ -769,12 +751,13 @@
      "why": "FWS refuge about page"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 0,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -799,10 +782,10 @@
    ],
    "t": "National Wildlife Refuge",
    "ver": 15,
-   "verdict": "unsure"
+   "verdict": "agree"
   },
   "US-0416": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Pee Dee National Wildlife Refuge",
    "official": {
@@ -810,7 +793,7 @@
     "as": "8,500 acres",
     "clean": true,
     "line": "a migratory bird sanctuary to provide habitat for waterfowl and other migratory birds. The refuge encompasses 8,500 acres of diverse landscape in south-central North Carolina, managing habitats for nearly 200 migratory bird species",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "The refuge encompasses 8,500 acres of diverse landscape in south-central North Carolina, managing habitats for nearly 200 migratory bird species and several rare species.",
     "url": "https://www.fws.gov/refuge/pee_dee/",
     "why": "clean total"
@@ -888,7 +871,7 @@
    "verdict": "agree"
   },
   "US-0417": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Pocosin Lakes National Wildlife Refuge",
    "official": {
@@ -896,7 +879,7 @@
     "as": "110,106 acres",
     "clean": true,
     "line": "ydrology Restoration Audio Described Version Pocosin Lakes National Wildlife Refuge encompasses approximately 110,106 acres of Washington, Hyde, and Tyrrell Counties in eastern North Carolina. In addition to more than 8,300 acres of",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Pocosin Lakes National Wildlife Refuge encompasses approximately 110,106 acres of Washington, Hyde, and Tyrrell Counties in eastern North Carolina.",
     "url": "https://www.fws.gov/refuge/pocosin_lakes/",
     "why": "clean total"
@@ -1031,7 +1014,7 @@
    "verdict": "agree"
   },
   "US-0418": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Roanoke River National Wildlife Refuge",
    "official": {
@@ -1039,7 +1022,7 @@
     "as": "20,978 acres",
     "clean": false,
     "line": "f the National Wildlife Refuge System. Introduction Roanoke River National Wildlife Refuge, which consists of 20,978 acres, was established in August 1989 to protect and enhance forested wetlands with high waterfowl value. The exten",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Refuge, which consists of 20,978 acres, was established in August 1989",
     "url": "https://www.fws.gov/sites/default/files/documents/general-brochure-roanoke-river-national-wildlife-refuge_0.pdf",
     "why": "a map label (no sentence)"
@@ -1077,27 +1060,17 @@
     },
     {
      "status": "ok",
-     "url": "https://www.fws.gov/refuge/roanoke-river/about-us",
-     "why": "about / history page of the park's site"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/roanoke-river/visit-us",
-     "why": "about / history page of the park's site"
-    },
-    {
-     "status": "ok",
      "url": "https://www.fws.gov/sites/default/files/documents/general-brochure-roanoke-river-national-wildlife-refuge_0.pdf",
      "why": "official map (documents bot)"
     },
     {
      "other_unit": true,
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/roanoke-river/visit-us/rules-policies",
      "why": "rules page (documents bot)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/roanoke-river/about-us",
      "why": "FWS refuge about page"
     }
@@ -1136,30 +1109,27 @@
    "verdict": "agree"
   },
   "US-0419": {
-   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Swanquarter National Wildlife Refuge",
    "official": {
-    "acres": 13200.0,
-    "as": "13,200 acres",
+    "acres": 16400.0,
+    "as": "16,400 acres",
     "clean": false,
-    "line": "prey nesting and colonial nesting birds occur. Refuge habitats consist of irregularly flooded brackish marsh (13,200 acres) and forested wetlands (3,200 acres). The refuge provides habitat for American alligators and bald eagles as",
-    "read": "2026-11-08",
-    "sent": "Refuge habitats consist of irregularly flooded brackish marsh (13,200 acres) and forested wetlands (3,200 acres).",
-    "url": "https://www.fws.gov/refuge/swanquarter/about-us",
+    "line": "w volunteer opportunities About Swanquarter National Wildlife Refuge is an extensive coastal marsh protecting 16,400 acres, including the Swanquarter National Wilderness Area. The refuge serves as a vital wintering area for migrator",
+    "read": "2026-11-22",
+    "sent": "Swanquarter National Wildlife Refuge is an extensive coastal marsh protecting 16,400 acres, including the Swanquarter National Wilderness Area.",
+    "url": "https://www.fws.gov/refuge/swanquarter/",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 18121,
+    "acres": 16656,
     "dissolved": {
      "after": 16656,
      "before": 49935,
      "copies": 2,
-     "key_union": 18121,
      "parts": 0,
      "records": 3,
-     "summed": 16656,
      "tracts": 1
     },
     "manager": "",
@@ -1185,12 +1155,12 @@
     },
     {
      "other_unit": true,
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/swanquarter/visit-us/rules-policies",
      "why": "rules page (documents bot)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/swanquarter/about-us",
      "why": "FWS refuge about page"
     },
@@ -1200,48 +1170,48 @@
      "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
     }
    ],
-   "pct": 37,
+   "pct": 2,
    "same_agency": false,
-   "score": 5,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
     {
-     "acres": 8800.0,
-     "as": "8,800 acres",
+     "acres": 6120.0,
+     "as": "6,120 acre",
      "clean": false,
-     "line": "rican alligators, bald eagles, black bear, and secretive marsh birds also reside in the refuge. Approximately 8,800 acres of the refuge are designated as the Swanquarter National Wilderness Area, part of the National Wilderness Pre",
+     "line": "joy the challenge of hunting fast-flying diving ducks have a great public opportunity at Swanquarter NWR. The 6,120-acre hunt area is accessible by boat and open for waterfowl hunting during State seasons. Open-water hunting is no",
      "total_like": true,
      "url": "https://www.fws.gov/refuge/swanquarter/",
      "why": "total-looking"
     },
     {
-     "acres": 13200.0,
-     "as": "13,200 acres",
+     "acres": 16400.0,
+     "as": "16,400 acres",
      "clean": false,
-     "line": "prey nesting and colonial nesting birds occur. Refuge habitats consist of irregularly flooded brackish marsh (13,200 acres) and forested wetlands (3,200 acres). The refuge provides habitat for American alligators and bald eagles as",
+     "line": "w volunteer opportunities About Swanquarter National Wildlife Refuge is an extensive coastal marsh protecting 16,400 acres, including the Swanquarter National Wilderness Area. The refuge serves as a vital wintering area for migrator",
      "total_like": true,
-     "url": "https://www.fws.gov/refuge/swanquarter/about-us",
+     "url": "https://www.fws.gov/refuge/swanquarter/",
      "why": "total-looking"
     },
     {
-     "acres": 3200.0,
-     "as": "3,200 acres",
+     "acres": 6120.0,
+     "as": "6,120 acre",
      "clean": false,
-     "line": "ds occur. Refuge habitats consist of irregularly flooded brackish marsh (13,200 acres) and forested wetlands (3,200 acres). The refuge provides habitat for American alligators and bald eagles as well as protection for migratory wat",
+     "line": "joy the challenge of hunting fast-flying diving ducks have a great public opportunity at Swanquarter NWR. The 6,120-acre hunt area is accessible by boat and open for waterfowl hunting during State seasons. Open-water hunting is no",
      "total_like": true,
-     "url": "https://www.fws.gov/refuge/swanquarter/about-us",
+     "url": "https://www.fws.gov/refuge/swanquarter",
      "why": "total-looking"
     },
     {
-     "acres": 8800.0,
-     "as": "8,800 acres",
+     "acres": 16400.0,
+     "as": "16,400 acres",
      "clean": false,
-     "line": "rican alligators, bald eagles, black bear, and secretive marsh birds also reside in the refuge. Approximately 8,800 acres of the refuge are designated as the Swanquarter National Wilderness Area, part of the National Wilderness Pre",
+     "line": "w volunteer opportunities About Swanquarter National Wildlife Refuge is an extensive coastal marsh protecting 16,400 acres, including the Swanquarter National Wilderness Area. The refuge serves as a vital wintering area for migrator",
      "total_like": true,
      "url": "https://www.fws.gov/refuge/swanquarter",
      "why": "total-looking"
@@ -1249,10 +1219,10 @@
    ],
    "t": "National Wildlife Refuge",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-0566": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": "1974",
@@ -1270,7 +1240,7 @@
     "as": "113,000 acres",
     "clean": false,
     "line": "onal Wildlife Refuge contains some of the most important wildlife habitat in the mid-Atlantic region. At near 113,000 acres, the refuge is the largest intact remnant of a vast swamp that once covered more than one million acres. Lear",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "At near 113,000 acres, the refuge is the largest intact remnant of a vast swamp that once covered more than one million acres.",
     "url": "https://www.fws.gov/refuge/great_dismal_swamp/",
     "why": "history"
@@ -1394,8 +1364,7 @@
    "verdict": "agree"
   },
   "US-0682": {
-   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Cape Hatteras National Seashore",
    "official": {
@@ -1403,13 +1372,13 @@
     "as": "24,470 acres",
     "clean": true,
     "line": "ter Banks Visitors Bureau Visitor Conversion Study (2003) Acreage Cape Hatteras National Seashore encompasses 24,470 acres. Nearby Pea Island National Wildlife Refuge, within the authorized Seashore boundary, is 5,880 acres. Designa",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Cape Hatteras National Seashore encompasses 24,470 acres.",
     "url": "https://www.nps.gov/caha/learn/management/statistics.htm",
     "why": "clean total"
    },
    "ours": {
-    "acres": 37433,
+    "acres": 26665,
     "family_fold": "layers {'padus': 26665, 'sgnca': 21188}: one land in 2 layers, the padus copy used (21,188 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -1458,13 +1427,13 @@
      "why": "NPS news releases"
     }
    ],
-   "pct": 53,
+   "pct": 9,
    "same_agency": false,
-   "score": 5,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -1489,15 +1458,15 @@
    ],
    "t": "National Seashore",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-0683": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Cape Lookout National Seashore",
    "official": null,
    "ours": {
-    "acres": 39108,
+    "acres": 29509,
     "family_fold": "layers {'sgnca': 34721, 'padus': 13019}: one land in 2 layers, the sgnca copy used (13,019 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -1567,12 +1536,12 @@
    "verdict": "no size on page"
   },
   "US-0706": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Moores Creek National Battlefield",
    "official": null,
    "ours": {
-    "acres": 75,
+    "acres": 90,
     "family_fold": "layers {'sgnca': 90, 'padus': 88}: one land in 2 layers, the sgnca copy used (88 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -1631,7 +1600,7 @@
   },
   "US-0718": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Guilford Courthouse National Military Park",
    "official": {
@@ -1639,13 +1608,13 @@
     "as": "70 acres",
     "clean": false,
     "line": "applied for a pension on May 19, 1829 at Charles City Courthouse. In the application, he stated that he owned 70 acres of exhausted land and that his family consisted of a \"wife who is now old and infirm, a son of about 20 years",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "In the application, he stated that he owned 70 acres of exhausted land and that his family consisted of a \"wife who is now old and infirm, a son of about 20 years of age, who has been for years past afflicted with a grievous issue, and is a weighty expense to him, being unable to work except in ligh",
     "url": "https://www.nps.gov/guco/learn/historyculture/african-americans-guilford-courthouse.htm",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 156,
+    "acres": 215,
     "family_fold": "layers {'padus': 228, 'sgnca': 135}: one land in 2 layers, the padus copy used (135 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -1656,7 +1625,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -1694,12 +1663,12 @@
      "why": "NPS news releases"
     }
    ],
-   "pct": 123,
+   "pct": 207,
    "same_agency": false,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 0,
     "source": 2
    },
@@ -1719,7 +1688,7 @@
    "verdict": "off"
   },
   "US-0797": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Wright Brothers National Memorial",
    "official": null,
@@ -1781,17 +1750,17 @@
    "verdict": "no size on page"
   },
   "US-0804": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Carl Sandburg National Historic Site",
    "official": null,
    "ours": {
-    "acres": 217,
+    "acres": 276,
     "dissolved": {
      "after": 292,
      "before": 579,
      "copies": 2,
-     "key_union": 217,
+     "key_union": 276,
      "parts": 0,
      "records": 4,
      "summed": 292,
@@ -1813,7 +1782,7 @@
       "words"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -1847,10 +1816,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -1860,7 +1829,7 @@
    "verdict": "no size on page"
   },
   "US-0820": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Fort Raleigh National Historic Site",
    "official": {
@@ -1868,21 +1837,19 @@
     "as": "355.45 acres",
     "clean": true,
     "line": "the National Park Service Public Statistics Office . Acreage Fort Raleigh National Historic Site encompasses 355.45 acres. Designations 1934 Fort Raleigh State Park established (North Carolina Historical Commission) 1941 Fort Ralei",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Fort Raleigh National Historic Site encompasses 355.45 acres.",
     "url": "https://www.nps.gov/fora/learn/management/statistics.htm",
     "why": "clean total"
    },
    "ours": {
-    "acres": 336,
+    "acres": 367,
     "dissolved": {
      "after": 367,
      "before": 712,
      "copies": 1,
-     "key_union": 336,
      "parts": 0,
      "records": 3,
-     "summed": 367,
      "tracts": 2
     },
     "manager": "",
@@ -1939,7 +1906,7 @@
      "why": "NPS news releases"
     }
    ],
-   "pct": 5,
+   "pct": 3,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -1964,7 +1931,7 @@
    "verdict": "agree"
   },
   "US-10259": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "NC Vietnam Veteran's Memorial Historic Site",
    "ours": null,
@@ -1974,12 +1941,12 @@
    "verdict": "no outline"
   },
   "US-10260": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Birkhead Mountains Wilderness Area",
    "official": null,
    "ours": {
-    "acres": 4769,
+    "acres": 5216,
     "family_fold": "layers {'wld': 5216, 'sgnca': 5084}: one land in 2 layers, the wld copy used (5,084 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -1997,7 +1964,7 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok",
+     "status": "host-rule",
      "url": "https://www.fs.usda.gov/recarea/nfsnc/recreation/hiking/recarea/?recid=49146&actid=51",
      "why": "the park's page (data/parkinfo)"
     },
@@ -2022,20 +1989,18 @@
    "verdict": "no size on page"
   },
   "US-10262": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Linville Gorge Wilderness Area",
    "official": null,
    "ours": {
-    "acres": 13224,
+    "acres": 12183,
     "dissolved": {
      "after": 12183,
      "before": 24131,
      "copies": 1,
-     "key_union": 13224,
      "parts": 0,
      "records": 2,
-     "summed": 12183,
      "tracts": 1
     },
     "manager": "",
@@ -2055,7 +2020,7 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok",
+     "status": "host-rule",
      "url": "https://www.fs.usda.gov/recarea/nfsnc/null/recarea/?recid=48974&actid=37",
      "why": "the park's page (data/parkinfo)"
     },
@@ -2080,7 +2045,7 @@
    "verdict": "no size on page"
   },
   "US-10263": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bonner House Historic Site",
    "ours": null,
@@ -2090,7 +2055,7 @@
    "verdict": "no outline"
   },
   "US-10388": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Palmer Marsh House Historic Site",
    "ours": null,
@@ -2100,7 +2065,7 @@
    "verdict": "no outline"
   },
   "US-10389": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Hiwassee Dam Recreation Park",
    "ours": null,
@@ -2110,7 +2075,7 @@
    "verdict": "no outline"
   },
   "US-10397": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Southern Nantahala Wilderness Area",
    "note": "whole park compared (POTA lists it in 2 states: {'US-GA': 23604, 'US-NC': 23604})",
@@ -2131,7 +2096,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "",
     "states": [
      "US-GA",
@@ -2143,7 +2108,7 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok",
+     "status": "host-rule",
      "url": "https://www.fs.usda.gov/detail/nfsnc/specialplaces/?cid=fseprd561556",
      "why": "the park's page (data/parkinfo)"
     },
@@ -2155,10 +2120,10 @@
     }
    ],
    "pct": null,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -2170,15 +2135,23 @@
   "US-10398": {
    "checked": "2026-11-08",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Chatuge Dam Trail Recreation Park",
-   "ours": null,
+   "ours": {
+    "acres": 0,
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 1
+   },
    "score": null,
    "t": "Recreation Park",
    "ver": 15,
    "verdict": "no outline"
   },
   "US-10399": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Apalachia Reservoir Recreation Park",
    "ours": null,
@@ -2188,7 +2161,7 @@
    "verdict": "no outline"
   },
   "US-10406": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lake Rim Fishing & Boating Multiple Use Area",
    "ours": null,
@@ -2198,7 +2171,7 @@
    "verdict": "no outline"
   },
   "US-10511": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Jessups Mill Pond State Game Land",
    "ours": null,
@@ -2208,20 +2181,18 @@
    "verdict": "no outline"
   },
   "US-11019": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Shining Rock Wilderness Area",
    "official": null,
    "ours": {
-    "acres": 20145,
+    "acres": 18723,
     "dissolved": {
      "after": 18723,
      "before": 37201,
      "copies": 1,
-     "key_union": 20145,
      "parts": 0,
      "records": 2,
-     "summed": 18723,
      "tracts": 1
     },
     "manager": "",
@@ -2241,7 +2212,7 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok",
+     "status": "host-rule",
      "url": "https://www.fs.usda.gov/recarea/nfsnc/recarea/?recid=48260",
      "why": "the park's page (data/parkinfo)"
     },
@@ -2266,20 +2237,18 @@
    "verdict": "no size on page"
   },
   "US-11020": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Middle Prong Wilderness Area",
    "official": null,
    "ours": {
-    "acres": 7974,
+    "acres": 7482,
     "dissolved": {
      "after": 7482,
      "before": 14962,
      "copies": 1,
-     "key_union": 7974,
      "parts": 0,
      "records": 2,
-     "summed": 7482,
      "tracts": 1
     },
     "manager": "",
@@ -2299,7 +2268,7 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok",
+     "status": "host-rule",
      "url": "https://www.fs.usda.gov/recarea/nfsnc/recarea/?recid=48250",
      "why": "the park's page (data/parkinfo)"
     },
@@ -2324,7 +2293,7 @@
    "verdict": "no size on page"
   },
   "US-11238": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Micken's Branch Multiple Use Area",
    "ours": null,
@@ -2334,7 +2303,7 @@
    "verdict": "no outline"
   },
   "US-11271": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Joyce Kilmer-Slickrock Wilderness Area",
    "official": null,
@@ -2356,7 +2325,7 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok",
+     "status": "host-rule",
      "url": "https://www.fs.usda.gov/recarea/nfsnc/recarea/?recid=70827",
      "why": "the park's page (data/parkinfo)"
     },
@@ -2381,18 +2350,20 @@
    "verdict": "no size on page"
   },
   "US-11375": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Averasboro Battlefield Historic Site",
    "official": null,
    "ours": {
-    "acres": 124,
+    "acres": 140,
     "dissolved": {
      "after": 124,
      "before": 248,
      "copies": 1,
+     "key_union": 140,
      "parts": 0,
      "records": 2,
+     "summed": 124,
      "tracts": 1
     },
     "manager": "",
@@ -2417,17 +2388,17 @@
    "verdict": "no official page on file"
   },
   "US-11856": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Fonta-Flora State Trail",
    "official": null,
    "ours": {
-    "acres": 183,
+    "acres": 220,
     "dissolved": {
      "after": 240,
      "before": 480,
      "copies": 1,
-     "key_union": 183,
+     "key_union": 220,
      "parts": 0,
      "records": 2,
      "summed": 240,
@@ -2469,7 +2440,7 @@
    "verdict": "no size on page"
   },
   "US-12119": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Moses H. Cone National Park",
    "ours": null,
@@ -2480,7 +2451,7 @@
   },
   "US-12175": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 624.1 acres, no total words near it)",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Vance State Game Land",
    "official": {
@@ -2488,7 +2459,7 @@
     "as": "624.1 acres",
     "clean": false,
     "line": "ldlife Management Area offers a tranquil and picturesque setting that is perfect for walkers and hikers. With 624.1 acres of unspoiled ... Nestled in the heart of Henderson, the Crooked Run Wildlife Management Area offers a tranqui",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "With 624.1 acres of unspoiled ...",
     "url": "https://www.mypacer.com/parks/365319/crooked-run-wildlife-management-area-henderson",
     "why": "no total words near it"
@@ -2550,7 +2521,7 @@
    "verdict": "unsure"
   },
   "US-12320": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Yadkin River State Trail",
    "official": null,
@@ -2584,7 +2555,7 @@
    "verdict": "ours unknown"
   },
   "US-12371": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Julian Price National Park",
    "ours": null,
@@ -2594,7 +2565,7 @@
    "verdict": "no outline"
   },
   "US-12414": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Doughton Recreation Park",
    "ours": null,
@@ -2604,7 +2575,7 @@
    "verdict": "no outline"
   },
   "US-12662": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Harmon Den Wildlife Management Area",
    "ours": null,
@@ -2615,7 +2586,7 @@
   },
   "US-12717": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 28,000 acres, no total words near it)",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Deep River State Trail",
    "official": {
@@ -2623,13 +2594,13 @@
     "as": "28,000 acres",
     "clean": false,
     "line": "aters for present and future generations. PLC connects people with nature. Since 1990, PLC has protected over 28,000 acres of land, completing over 200 land protection projects. North Carolina's Piedmont is a special place, with its",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Since 1990, PLC has protected over 28,000 acres of land, completing over 200 land protection projects.",
     "url": "https://trails.nc.gov/state-trails/deep-river-state-trail",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 1424,
+    "acres": 2459,
     "manager": "",
     "pieces": [
      [
@@ -2657,7 +2628,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 95,
+   "pct": 91,
    "same_agency": false,
    "score": 5,
    "score_parts": {
@@ -2682,7 +2653,7 @@
    "verdict": "unsure"
   },
   "US-13002": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Dan River State Trail",
    "official": null,
@@ -2716,20 +2687,18 @@
    "verdict": "ours unknown"
   },
   "US-2721": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bay Tree Lake State Park",
    "official": null,
    "ours": {
-    "acres": 1763,
+    "acres": 2045,
     "dissolved": {
      "after": 2045,
      "before": 4089,
      "copies": 0,
-     "key_union": 1763,
      "parts": 2,
      "records": 3,
-     "summed": 2045,
      "tracts": 1
     },
     "manager": "",
@@ -2742,7 +2711,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -2755,10 +2724,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -2768,12 +2737,12 @@
    "verdict": "no size on page"
   },
   "US-2722": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Carolina Beach State Park",
    "official": null,
    "ours": {
-    "acres": 759,
+    "acres": 701,
     "dissolved": {
      "after": 1333,
      "before": 1961,
@@ -2785,10 +2754,8 @@
      },
      "family_fold": 632,
      "family_used": "sgncd",
-     "key_union": 759,
      "parts": 2,
      "records": 5,
-     "summed": 701,
      "tracts": 3
     },
     "family_fold": "layers {'sgncd': 701, 'padus': 627, 'sgnca': 5}: one land in 3 layers, the sgncd copy used (632 ac of copies not added)",
@@ -2828,12 +2795,12 @@
    "verdict": "no size on page"
   },
   "US-2723": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Carvers Creek State Park",
    "official": null,
    "ours": {
-    "acres": 4985,
+    "acres": 4887,
     "dissolved": {
      "after": 12371,
      "before": 17264,
@@ -2844,7 +2811,7 @@
      },
      "family_fold": 4503,
      "family_used": "sgnca",
-     "key_union": 4985,
+     "key_union": 4887,
      "parts": 2,
      "records": 7,
      "summed": 7868,
@@ -2899,12 +2866,12 @@
    "verdict": "no size on page"
   },
   "US-2724": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Chimney Rock State Park",
    "official": null,
    "ours": {
-    "acres": 8130,
+    "acres": 7316,
     "dissolved": {
      "after": 20365,
      "before": 27623,
@@ -2915,7 +2882,7 @@
      },
      "family_fold": 7091,
      "family_used": "sgnca",
-     "key_union": 8130,
+     "key_union": 7316,
      "parts": 2,
      "records": 8,
      "summed": 13274,
@@ -2938,7 +2905,7 @@
       "words"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
@@ -2972,10 +2939,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -2986,35 +2953,39 @@
   },
   "US-2725": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Cliffs of the Neuse State Park",
    "official": null,
    "ours": {
-    "acres": 1508,
+    "acres": 1072,
     "dissolved": {
-     "after": 1069,
-     "before": 3201,
+     "after": 1072,
+     "before": 3204,
      "copies": 2,
-     "key_union": 1508,
      "parts": 0,
-     "records": 3,
-     "summed": 1069,
-     "tracts": 1
+     "records": 4,
+     "tracts": 2
     },
     "manager": "",
-    "note": "3 joined records = 1 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 3201 -> 1069 acres",
+    "note": "4 joined records = 2 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 3204 -> 1072 acres",
     "pieces": [
      [
       "sgnca2987",
       "Cliffs of the Neuse State Park",
       1069,
       "name"
+     ],
+     [
+      "sgncd3778",
+      "Cliffs of the Neuse",
+      3,
+      "name"
      ]
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 0
    },
    "owner_now": null,
    "pages": [
@@ -3048,7 +3019,7 @@
    "verdict": "unsure"
   },
   "US-2726": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Crowders Mountain State Park",
    "official": null,
@@ -3105,20 +3076,18 @@
    "verdict": "no size on page"
   },
   "US-2727": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Dismal Swamp State Park",
    "official": null,
    "ours": {
-    "acres": 15570,
+    "acres": 14442,
     "dissolved": {
      "after": 14442,
      "before": 43053,
      "copies": 2,
-     "key_union": 15570,
      "parts": 0,
      "records": 5,
-     "summed": 14442,
      "tracts": 3
     },
     "manager": "",
@@ -3179,7 +3148,7 @@
    "verdict": "no size on page"
   },
   "US-2728": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Elk Knob State Park",
    "official": null,
@@ -3233,7 +3202,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -3256,10 +3225,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -3269,12 +3238,12 @@
    "verdict": "no size on page"
   },
   "US-2729": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Eno River State Park",
    "official": null,
    "ours": {
-    "acres": 5149,
+    "acres": 4655,
     "dissolved": {
      "after": 13207,
      "before": 16096,
@@ -3286,10 +3255,8 @@
      },
      "family_fold": 8552,
      "family_used": "sgnca",
-     "key_union": 5149,
      "parts": 9,
      "records": 16,
-     "summed": 4655,
      "tracts": 6
     },
     "family_fold": "layers {'sgnca': 4655, 'padus': 4342, 'sgncd': 4210}: one land in 3 layers, the sgnca copy used (8,552 ac of copies not added)",
@@ -3329,12 +3296,12 @@
    "verdict": "no size on page"
   },
   "US-2730": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Fort Macon State Park",
    "official": null,
    "ours": {
-    "acres": 567,
+    "acres": 537,
     "dissolved": {
      "after": 901,
      "before": 1975,
@@ -3345,10 +3312,8 @@
      },
      "family_fold": 364,
      "family_used": "padus",
-     "key_union": 567,
      "parts": 0,
      "records": 4,
-     "summed": 537,
      "tracts": 2
     },
     "family_fold": "layers {'padus': 537, 'sgnca': 364}: one land in 2 layers, the padus copy used (364 ac of copies not added)",
@@ -3398,33 +3363,39 @@
    "verdict": "no size on page"
   },
   "US-2731": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Goose Creek State Park",
    "official": null,
    "ours": {
-    "acres": 1694,
+    "acres": 1696,
     "dissolved": {
-     "after": 1694,
-     "before": 5085,
+     "after": 1696,
+     "before": 5087,
      "copies": 1,
      "parts": 2,
-     "records": 4,
-     "tracts": 1
+     "records": 5,
+     "tracts": 2
     },
     "manager": "",
-    "note": "4 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 2 fee tracts under a designation record folded; summed 5085 -> 1694 acres",
+    "note": "5 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 2 fee tracts under a designation record folded; summed 5087 -> 1696 acres",
     "pieces": [
      [
       214833,
       "Goose Creek State Park",
       1694,
       "name"
+     ],
+     [
+      "sgncd310",
+      "Goose Creek",
+      2,
+      "name"
      ]
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 0
    },
    "owner_now": null,
    "pages": [
@@ -3448,7 +3419,7 @@
    "verdict": "no size on page"
   },
   "US-2732": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Gorges State Park",
    "official": {
@@ -3456,7 +3427,7 @@
     "as": "8,000 acres",
     "clean": true,
     "line": "of the park, from backpacking to horseback riding. This park located in the Blue Ridge Escarpment spans over 8,000 acres of temperate rainforest and hosts extraordinary biodiversity. The park features 26 waterfalls, the northern b",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "This park located in the Blue Ridge Escarpment spans over 8,000 acres of temperate rainforest and hosts extraordinary biodiversity.",
     "url": "https://www.ncparks.gov/gorges-state-park/home",
     "why": "clean total"
@@ -3518,7 +3489,7 @@
    "verdict": "agree"
   },
   "US-2733": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
@@ -3564,7 +3535,7 @@
    "n": "Grandfather Mountain State Park",
    "official": null,
    "ours": {
-    "acres": 3887,
+    "acres": 3424,
     "dissolved": {
      "after": 6657,
      "before": 13045,
@@ -3575,7 +3546,7 @@
      },
      "family_fold": 405,
      "family_used": "sgnca",
-     "key_union": 3887,
+     "key_union": 3424,
      "parts": 2,
      "records": 7,
      "summed": 6252,
@@ -3630,12 +3601,12 @@
    "verdict": "no size on page"
   },
   "US-2734": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Hammocks Beach State Park",
    "official": null,
    "ours": {
-    "acres": 1569,
+    "acres": 1780,
     "dissolved": {
      "after": 3220,
      "before": 6330,
@@ -3646,10 +3617,8 @@
      },
      "family_fold": 1440,
      "family_used": "padus",
-     "key_union": 1569,
      "parts": 3,
      "records": 12,
-     "summed": 1780,
      "tracts": 7
     },
     "family_fold": "layers {'padus': 1780, 'sgncd': 1440}: one land in 2 layers, the padus copy used (1,440 ac of copies not added)",
@@ -3689,29 +3658,29 @@
    "verdict": "no size on page"
   },
   "US-2735": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Hanging Rock State Park",
    "official": null,
    "ours": {
     "acres": 8451,
     "dissolved": {
-     "after": 15205,
-     "before": 30359,
+     "after": 15075,
+     "before": 30360,
      "copies": 0,
      "families": {
       "sgnca": 8451,
-      "sgncd": 6754
+      "sgncd": 6624
      },
-     "family_fold": 6754,
+     "family_fold": 6624,
      "family_used": "sgnca",
-     "parts": 9,
-     "records": 15,
-     "tracts": 6
+     "parts": 12,
+     "records": 16,
+     "tracts": 4
     },
-    "family_fold": "layers {'sgnca': 8451, 'sgncd': 6754}: one land in 2 layers, the sgnca copy used (6,754 ac of copies not added)",
+    "family_fold": "layers {'sgnca': 8451, 'sgncd': 6624}: one land in 2 layers, the sgnca copy used (6,624 ac of copies not added)",
     "manager": "",
-    "note": "15 joined records = 6 tracts: 0 copies of a tract (same acres, another layer) and 9 fee tracts under a designation record folded; summed 30359 -> 15205 acres",
+    "note": "16 joined records = 4 tracts: 0 copies of a tract (same acres, another layer) and 12 fee tracts under a designation record folded; summed 30360 -> 15075 acres",
     "pieces": [
      [
       "sgnca3748",
@@ -3722,7 +3691,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 0
    },
    "owner_now": null,
    "pages": [
@@ -3746,20 +3715,18 @@
    "verdict": "no size on page"
   },
   "US-2737": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Jockey's Ridge State Park",
    "official": null,
    "ours": {
-    "acres": 297,
+    "acres": 438,
     "dissolved": {
      "after": 438,
      "before": 875,
      "copies": 1,
-     "key_union": 297,
      "parts": 0,
      "records": 2,
-     "summed": 438,
      "tracts": 1
     },
     "manager": "",
@@ -3798,12 +3765,12 @@
    "verdict": "no size on page"
   },
   "US-2738": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Jones Lake State Park",
    "official": null,
    "ours": {
-    "acres": 1338,
+    "acres": 1931,
     "dissolved": {
      "after": 5585,
      "before": 7515,
@@ -3815,10 +3782,8 @@
      },
      "family_fold": 3654,
      "family_used": "padus",
-     "key_union": 1338,
      "parts": 0,
      "records": 6,
-     "summed": 1931,
      "tracts": 5
     },
     "family_fold": "layers {'padus': 1931, 'sgnca': 1736, 'sgncd': 1918}: one land in 3 layers, the padus copy used (3,654 ac of copies not added)",
@@ -3832,7 +3797,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -3845,10 +3810,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -3858,12 +3823,12 @@
    "verdict": "no size on page"
   },
   "US-2739": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lake James State Park",
    "official": null,
    "ours": {
-    "acres": 3721,
+    "acres": 3952,
     "dissolved": {
      "after": 4275,
      "before": 12104,
@@ -3875,10 +3840,8 @@
      },
      "family_fold": 323,
      "family_used": "padus",
-     "key_union": 3721,
      "parts": 2,
      "records": 8,
-     "summed": 3952,
      "tracts": 5
     },
     "family_fold": "layers {'padus': 3952, 'sgnca': 312, 'sgncd': 11}: one land in 3 layers, the padus copy used (323 ac of copies not added)",
@@ -3924,20 +3887,18 @@
    "verdict": "no size on page"
   },
   "US-2740": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lake Norman State Park",
    "official": null,
    "ours": {
-    "acres": 1866,
+    "acres": 1988,
     "dissolved": {
      "after": 1988,
      "before": 5907,
      "copies": 1,
-     "key_union": 1866,
      "parts": 5,
      "records": 10,
-     "summed": 1988,
      "tracts": 4
     },
     "manager": "",
@@ -3968,7 +3929,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -3981,10 +3942,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -3994,20 +3955,18 @@
    "verdict": "no size on page"
   },
   "US-2741": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lake Waccamaw State Park",
    "official": null,
    "ours": {
-    "acres": 10525,
+    "acres": 11497,
     "dissolved": {
      "after": 11497,
      "before": 33997,
      "copies": 1,
-     "key_union": 10525,
      "parts": 3,
      "records": 7,
-     "summed": 11497,
      "tracts": 3
     },
     "manager": "",
@@ -4032,7 +3991,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -4045,10 +4004,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -4058,12 +4017,12 @@
    "verdict": "no size on page"
   },
   "US-2742": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lumber River State Park",
    "official": null,
    "ours": {
-    "acres": 17159,
+    "acres": 16660,
     "dissolved": {
      "after": 28463,
      "before": 49104,
@@ -4074,7 +4033,7 @@
      },
      "family_fold": 9297,
      "family_used": "sgnca",
-     "key_union": 17159,
+     "key_union": 16660,
      "parts": 18,
      "records": 27,
      "summed": 19166,
@@ -4123,41 +4082,46 @@
    "verdict": "no size on page"
   },
   "US-2743": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Mayo River State Park",
    "official": null,
    "ours": {
-    "acres": 3526,
+    "acres": 3731,
     "dissolved": {
-     "after": 5070,
-     "before": 10178,
+     "after": 5026,
+     "before": 10180,
      "copies": 2,
      "families": {
-      "padus": 1,
-      "sgnca": 3526,
-      "sgncd": 1543
+      "sgnca": 3731,
+      "sgncd": 1295
      },
-     "family_fold": 1544,
+     "family_fold": 1295,
      "family_used": "sgnca",
-     "parts": 22,
-     "records": 32,
+     "parts": 23,
+     "records": 33,
      "tracts": 8
     },
-    "family_fold": "layers {'sgnca': 3526, 'sgncd': 1543, 'padus': 1}: one land in 3 layers, the sgnca copy used (1,544 ac of copies not added)",
+    "family_fold": "layers {'sgnca': 3731, 'sgncd': 1295}: one land in 2 layers, the sgnca copy used (1,295 ac of copies not added)",
     "manager": "",
-    "note": "32 joined records = 8 tracts: 2 copies of a tract (same acres, another layer) and 22 fee tracts under a designation record folded; summed 10178 -> 5070 acres",
+    "note": "33 joined records = 8 tracts: 2 copies of a tract (same acres, another layer) and 23 fee tracts under a designation record folded; summed 10180 -> 5026 acres",
     "pieces": [
      [
       "sgnca4332",
       "Mayo River State Park",
       3526,
       "name"
+     ],
+     [
+      "sgnca21275",
+      "Mayo River State Park Proposed Dedicated Nature Preserve",
+      205,
+      "words"
      ]
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 2
+    "unknown_pieces": 1
    },
    "owner_now": null,
    "pages": [
@@ -4181,12 +4145,12 @@
    "verdict": "no size on page"
   },
   "US-2744": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Medoc Mountain State Park",
    "official": null,
    "ours": {
-    "acres": 4456,
+    "acres": 4092,
     "dissolved": {
      "after": 8398,
      "before": 12466,
@@ -4198,8 +4162,10 @@
      },
      "family_fold": 3942,
      "family_used": "sgnca",
+     "key_union": 4092,
      "parts": 0,
      "records": 5,
+     "summed": 4456,
      "tracts": 4
     },
     "family_fold": "layers {'sgnca': 4456, 'padus': 3939, 'sgncd': 3}: one land in 3 layers, the sgnca copy used (3,942 ac of copies not added)",
@@ -4246,20 +4212,18 @@
   },
   "US-2745": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Merchants Millpond State Park",
    "official": null,
    "ours": {
-    "acres": 3605,
+    "acres": 3392,
     "dissolved": {
      "after": 3392,
      "before": 10210,
      "copies": 2,
-     "key_union": 3605,
      "parts": 3,
      "records": 7,
-     "summed": 3392,
      "tracts": 2
     },
     "manager": "",
@@ -4314,12 +4278,12 @@
    "verdict": "unsure"
   },
   "US-2746": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Morrow Mountain State Park",
    "official": null,
    "ours": {
-    "acres": 6453,
+    "acres": 5810,
     "dissolved": {
      "after": 11567,
      "before": 17376,
@@ -4331,10 +4295,8 @@
      },
      "family_fold": 5757,
      "family_used": "sgncd",
-     "key_union": 6453,
      "parts": 0,
      "records": 5,
-     "summed": 5810,
      "tracts": 4
     },
     "family_fold": "layers {'sgncd': 5810, 'padus': 5596, 'sgnca': 161}: one land in 3 layers, the sgncd copy used (5,757 ac of copies not added)",
@@ -4374,7 +4336,7 @@
    "verdict": "no size on page"
   },
   "US-2747": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
@@ -4388,7 +4350,7 @@
    "n": "Mount Mitchell State Park",
    "official": null,
    "ours": {
-    "acres": 6951,
+    "acres": 5150,
     "dissolved": {
      "after": 13305,
      "before": 18368,
@@ -4400,7 +4362,7 @@
      },
      "family_fold": 4509,
      "family_used": "sgnca",
-     "key_union": 6951,
+     "key_union": 5150,
      "parts": 8,
      "records": 13,
      "summed": 8796,
@@ -4455,48 +4417,40 @@
    "verdict": "no size on page"
   },
   "US-2748": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "New River State Park",
    "official": null,
    "ours": {
-    "acres": 3340,
+    "acres": 3370,
     "dissolved": {
-     "after": 5639,
-     "before": 10752,
+     "after": 4918,
+     "before": 10753,
      "copies": 0,
      "families": {
-      "sgnca": 3894,
-      "sgncd": 1745
+      "sgnca": 3370,
+      "sgncd": 1548
      },
-     "family_fold": 1745,
+     "family_fold": 1548,
      "family_used": "sgnca",
-     "key_union": 3340,
-     "parts": 18,
-     "records": 23,
-     "summed": 3894,
-     "tracts": 5
+     "parts": 20,
+     "records": 24,
+     "tracts": 4
     },
-    "family_fold": "layers {'sgnca': 3894, 'sgncd': 1745}: one land in 2 layers, the sgnca copy used (1,745 ac of copies not added)",
+    "family_fold": "layers {'sgnca': 3370, 'sgncd': 1548}: one land in 2 layers, the sgnca copy used (1,548 ac of copies not added)",
     "manager": "",
-    "note": "23 joined records = 5 tracts: 0 copies of a tract (same acres, another layer) and 18 fee tracts under a designation record folded; summed 10752 -> 5639 acres",
+    "note": "24 joined records = 4 tracts: 0 copies of a tract (same acres, another layer) and 20 fee tracts under a designation record folded; summed 10753 -> 4918 acres",
     "pieces": [
      [
       "sgnca5366",
       "New River State Park",
       3370,
       "name"
-     ],
-     [
-      "sgnca21338",
-      "New River State Park Dedicated Nature Preserve",
-      524,
-      "words"
      ]
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 0
    },
    "owner_now": null,
    "pages": [
@@ -4520,12 +4474,12 @@
    "verdict": "no size on page"
   },
   "US-2749": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Pettigrew State Park",
    "official": null,
    "ours": {
-    "acres": 20333,
+    "acres": 21788,
     "dissolved": {
      "after": 40021,
      "before": 65356,
@@ -4536,10 +4490,8 @@
      },
      "family_fold": 18233,
      "family_used": "padus",
-     "key_union": 20333,
      "parts": 8,
      "records": 18,
-     "summed": 21788,
      "tracts": 9
     },
     "family_fold": "layers {'padus': 21788, 'sgncd': 18233}: one land in 2 layers, the padus copy used (18,233 ac of copies not added)",
@@ -4553,7 +4505,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
@@ -4566,10 +4518,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -4579,7 +4531,7 @@
    "verdict": "no size on page"
   },
   "US-2750": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Pilot Mountain State Park",
    "official": null,
@@ -4641,12 +4593,12 @@
    "verdict": "no size on page"
   },
   "US-2751": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Raven Rock State Park",
    "official": null,
    "ours": {
-    "acres": 6033,
+    "acres": 5542,
     "dissolved": {
      "after": 12157,
      "before": 17566,
@@ -4658,7 +4610,7 @@
      },
      "family_fold": 5025,
      "family_used": "sgnca",
-     "key_union": 6033,
+     "key_union": 5542,
      "parts": 0,
      "records": 6,
      "summed": 7132,
@@ -4713,7 +4665,8 @@
    "verdict": "no size on page"
   },
   "US-2752": {
-   "checked": "2026-11-08",
+   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Singletary Lake State Park",
    "official": {
@@ -4721,21 +4674,19 @@
     "as": "649 acres",
     "clean": false,
     "line": "975-acre Bladen Lakes State Forest. Developed primarily for organized group camping, the park is comprised of 649 acres of land and a 572-acre natural lake. In addition to group camping, Singletary Lake State Park offers ample op",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Developed primarily for organized group camping, the park is comprised of 649 acres of land and a 572-acre natural lake.",
     "url": "https://stateparks.com/singletary_lake_state_park_in_north_carolina.html",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 695,
+    "acres": 1319,
     "dissolved": {
      "after": 1319,
      "before": 3370,
      "copies": 1,
-     "key_union": 695,
      "parts": 2,
      "records": 4,
-     "summed": 1319,
      "tracts": 1
     },
     "manager": "",
@@ -4748,7 +4699,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -4760,13 +4711,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 7,
+   "pct": 103,
    "same_agency": false,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 1,
-    "size": 2,
+    "pin": 2,
+    "size": 0,
     "source": 2
    },
    "sizes": [
@@ -4818,20 +4769,20 @@
    ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "off"
   },
   "US-2753": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "South Mountains State Park",
    "official": null,
    "ours": {
-    "acres": 23549,
+    "acres": 21344,
     "dissolved": {
      "after": 36421,
      "before": 79092,
      "copies": 2,
-     "key_union": 23549,
+     "key_union": 21344,
      "parts": 0,
      "records": 4,
      "summed": 36421,
@@ -4879,24 +4830,24 @@
    "verdict": "no size on page"
   },
   "US-2754": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Stone Mountain State Park",
    "official": null,
    "ours": {
-    "acres": 15531,
+    "acres": 15511,
     "dissolved": {
-     "after": 25643,
-     "before": 54568,
+     "after": 25644,
+     "before": 54569,
      "copies": 1,
-     "key_union": 15531,
+     "key_union": 15511,
      "parts": 5,
-     "records": 11,
-     "summed": 25643,
-     "tracts": 5
+     "records": 12,
+     "summed": 25644,
+     "tracts": 6
     },
     "manager": "",
-    "note": "11 joined records = 5 tracts: 1 copies of a tract (same acres, another layer) and 5 fee tracts under a designation record folded; summed 54568 -> 25643 acres",
+    "note": "12 joined records = 6 tracts: 1 copies of a tract (same acres, another layer) and 5 fee tracts under a designation record folded; summed 54569 -> 25644 acres",
     "pieces": [
      [
       "sgnca6501",
@@ -4923,6 +4874,12 @@
       "name"
      ],
      [
+      "sgncd2112",
+      "Stone Mountain",
+      1,
+      "name"
+     ],
+     [
       "sgncd2266",
       "Stone Mountain",
       1,
@@ -4931,7 +4888,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 0
    },
    "owner_now": null,
    "pages": [
@@ -4955,12 +4912,12 @@
    "verdict": "no size on page"
   },
   "US-2755": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "William B. Umstead State Park",
    "official": null,
    "ours": {
-    "acres": 5947,
+    "acres": 5611,
     "dissolved": {
      "after": 9311,
      "before": 20515,
@@ -4972,10 +4929,8 @@
      },
      "family_fold": 3700,
      "family_used": "padus",
-     "key_union": 5947,
      "parts": 0,
      "records": 6,
-     "summed": 5611,
      "tracts": 4
     },
     "family_fold": "layers {'padus': 5611, 'sgnca': 3688, 'sgncd': 12}: one land in 3 layers, the padus copy used (3,700 ac of copies not added)",
@@ -5015,22 +4970,22 @@
    "verdict": "no size on page"
   },
   "US-3378": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Blue Ridge National Parkway",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-VA': 35237, 'US-NC': 65440})",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-VA': 35237, 'US-NC': 55449})",
    "official": null,
    "ours": {
-    "acres": 100677,
+    "acres": 90686,
     "acres_by_state": {
-     "US-NC": 65440,
+     "US-NC": 55449,
      "US-VA": 35237
     },
     "dissolved": {
      "after": 52788,
      "before": 105545,
      "copies": 1,
-     "key_union": 65440,
+     "key_union": 55449,
      "parts": 0,
      "records": 2,
      "summed": 52788,
@@ -5098,7 +5053,7 @@
    "verdict": "no size on page"
   },
   "US-3791": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Trail of Tears National Historic Trail",
    "note": "whole park compared (POTA lists it in 0 states: {})",
@@ -5107,7 +5062,7 @@
     "as": "640 acres",
     "clean": false,
     "line": "ail of Tears, as well as subsequent history of the home and region. NPS Cherokee leader John Brown, who owned 640 acres in this area, ordered the construction of Browns Ferry Tavern in 1803. In 1838, the road running past this st",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Cherokee leader John Brown, who owned 640 acres in this area, ordered the construction of Browns Ferry Tavern in 1803.",
     "url": "https://www.nps.gov/trte/index.htm",
     "why": "a page of another unit; the sentence does not name this park"
@@ -5120,14 +5075,14 @@
     "pin": "inside",
     "src": "",
     "states": [
-     "US-MO",
-     "US-AR",
      "US-OK",
-     "US-GA",
-     "US-TN",
+     "US-IL",
      "US-AL",
-     "US-NC",
-     "US-IL"
+     "US-AR",
+     "US-TN",
+     "US-GA",
+     "US-MO",
+     "US-NC"
     ],
     "unknown_pieces": 1,
     "whole_park": true
@@ -5192,12 +5147,12 @@
    "verdict": "ours unknown"
   },
   "US-3841": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Falls Lake State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 5330,
+    "acres": 4891,
     "dissolved": {
      "after": 7777,
      "before": 14622,
@@ -5208,10 +5163,8 @@
      },
      "family_fold": 2886,
      "family_used": "padus",
-     "key_union": 5330,
      "parts": 4,
      "records": 11,
-     "summed": 4891,
      "tracts": 6
     },
     "family_fold": "layers {'padus': 4891, 'sgncd': 2886}: one land in 2 layers, the padus copy used (2,886 ac of copies not added)",
@@ -5225,7 +5178,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -5238,10 +5191,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -5251,7 +5204,7 @@
    "verdict": "no size on page"
   },
   "US-3842": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Fort Fisher State Recreation Area",
    "official": null,
@@ -5307,7 +5260,7 @@
    "verdict": "no size on page"
   },
   "US-3843": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Haw River at Iron Ore Access Belt State Park",
    "official": null,
@@ -5322,7 +5275,7 @@
       "reviewed-approx"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -5335,10 +5288,10 @@
     }
    ],
    "pct": null,
-   "score": 5,
+   "score": 4,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 0
    },
@@ -5348,7 +5301,7 @@
    "verdict": "no size on page"
   },
   "US-3844": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Jordan Lake State Recreation Area",
    "official": null,
@@ -5406,12 +5359,12 @@
   },
   "US-3845": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Kerr Lake State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 3027,
+    "acres": 2489,
     "dissolved": {
      "after": 4198,
      "before": 7590,
@@ -5422,10 +5375,8 @@
      },
      "family_fold": 1709,
      "family_used": "sgnca",
-     "key_union": 3027,
      "parts": 4,
      "records": 12,
-     "summed": 2489,
      "tracts": 6
     },
     "family_fold": "layers {'sgnca': 2489, 'sgncd': 1709}: one land in 2 layers, the sgnca copy used (1,709 ac of copies not added)",
@@ -5475,12 +5426,12 @@
    "verdict": "unsure"
   },
   "US-3846": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Mount Jefferson Natural State Conservation Area",
    "official": null,
    "ours": {
-    "acres": 1586,
+    "acres": 1309,
     "family_fold": "layers {'sgnca': 2001, 'padus': 1176}: one land in 2 layers, the sgnca copy used (1,176 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -5523,12 +5474,12 @@
    "verdict": "no size on page"
   },
   "US-3847": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Occoneechee Mountain Natural State Conservation Area",
    "official": null,
    "ours": {
-    "acres": 141,
+    "acres": 238,
     "dissolved": {
      "after": 618,
      "before": 847,
@@ -5539,7 +5490,7 @@
      },
      "family_fold": 221,
      "family_used": "sgnca",
-     "key_union": 141,
+     "key_union": 238,
      "parts": 0,
      "records": 5,
      "summed": 397,
@@ -5604,20 +5555,18 @@
    "verdict": "no size on page"
   },
   "US-3848": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Weymouth Woods-Sandhills State Nature Preserve",
    "official": null,
    "ours": {
-    "acres": 637,
+    "acres": 919,
     "dissolved": {
      "after": 919,
      "before": 1838,
      "copies": 1,
-     "key_union": 637,
      "parts": 0,
      "records": 2,
-     "summed": 919,
      "tracts": 1
     },
     "manager": "",
@@ -5630,7 +5579,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -5653,10 +5602,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -5666,8 +5615,7 @@
    "verdict": "no size on page"
   },
   "US-3849": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
@@ -5684,21 +5632,19 @@
     "as": "178 acre",
     "clean": false,
     "line": "anks Rentals Hotels Dining Shopping Activities Events Real Estate Deals Bald Head Woods SHARE SHARE Close The 178 acre parcel of undeveloped territory, managed by the N.C. Division of Coastal Management (DCM), in partnership wit",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "The 178 acre parcel of undeveloped territory, managed by the N.C.",
     "url": "https://www.capefear-nc.com/bald-head-woods.html",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 135,
+    "acres": 189,
     "dissolved": {
      "after": 189,
      "before": 567,
      "copies": 2,
-     "key_union": 135,
      "parts": 0,
      "records": 3,
-     "summed": 189,
      "tracts": 1
     },
     "manager": "",
@@ -5723,13 +5669,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 24,
+   "pct": 6,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -5754,11 +5700,11 @@
    ],
    "t": "State Conservation Area",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-3850": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 4.5 million acres, a statewide / agency-wide total (over a million acres) on a park that is not a big federal unit)",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bird Island Reserve State Conservation Area",
    "official": {
@@ -5766,21 +5712,19 @@
     "as": "4.5 million acres",
     "clean": false,
     "line": "populations of bird species that face environmental threats such as habitat loss and fragmentation. More than 4.5 million acres in North Carolina are identified as IBAs. Audubon and its local partners work to protect and manage these are",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "More than 4.5 million acres in North Carolina are identified as IBAs.",
     "url": "https://www.nccoast.org/project/bird-island-coastal-reserve/",
     "why": "a statewide / agency-wide total (over a million acres) on a park that is not a big federal unit"
    },
    "ours": {
-    "acres": 1409,
+    "acres": 1523,
     "dissolved": {
      "after": 1523,
      "before": 3046,
      "copies": 1,
-     "key_union": 1409,
      "parts": 0,
      "records": 2,
-     "summed": 1523,
      "tracts": 1
     },
     "manager": "",
@@ -5845,7 +5789,7 @@
    "verdict": "unsure"
   },
   "US-3851": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Brumley Forest State Nature Preserve",
    "ours": null,
@@ -5855,7 +5799,7 @@
    "verdict": "no outline"
   },
   "US-3852": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
@@ -5872,7 +5816,7 @@
     "as": "1,007 acre",
     "clean": false,
     "line": ": Lookout Loop, East Trail Moderate : North Trail, Ridge Trail, Sedge Trail, West Trail Natural Features The 1,007-acre Buxton Woods component of the N.C. Coastal Reserve is located on Hatteras Island in the Southern Outer Banks.",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "The 1,007-acre Buxton Woods component of the N.C.",
     "url": "https://www.deq.nc.gov/about/divisions/coastal-management/nc-coastal-reserve/reserve-sites/buxton-woods-reserve",
     "why": "total-looking"
@@ -5953,7 +5897,7 @@
   },
   "US-3853": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Emily and Richardson Preyer Buckridge State Reserve",
    "official": {
@@ -5961,7 +5905,7 @@
     "as": "44,000 acres",
     "clean": false,
     "line": "rotected sites established for long-term research, education and stewardship. This program protects more than 44,000 acres of estuarine land and water, which provides essential habitat for wildlife; offers educational opportunities",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "This program protects more than 44,000 acres of estuarine land and water, which provides essential habitat for wildlife;",
     "url": "https://deq.nc.gov/about/divisions/coastal-management/nc-coastal-reserve-and-national-estuarine-research-reserve",
     "why": "total-looking"
@@ -6032,7 +5976,7 @@
    "verdict": "off"
   },
   "US-3854": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Flower Hill State Nature Preserve",
    "ours": null,
@@ -6042,7 +5986,7 @@
    "verdict": "no outline"
   },
   "US-3857": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Horton Grove State Nature Preserve",
    "ours": null,
@@ -6054,6 +5998,7 @@
   "US-3859": {
    "checked": "2026-11-08",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Johnston Mill State Nature Preserve",
    "official": null,
    "ours": {
@@ -6067,7 +6012,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -6093,8 +6038,7 @@
    "verdict": "no size on page"
   },
   "US-3860": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Kitty Hawk Woods State Preserve",
    "official": {
@@ -6102,13 +6046,13 @@
     "as": "1,890 acres",
     "clean": false,
     "line": "The Kitty Hawk Woods Reserve is located on the Outer Banks in Kitty Hawk. The reserve encompasses a total of 1,890 acres and is bordered by Albemarle Sound on the west, and Kitty Hawk Bay to the south, which contains the reserve’s",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "The reserve encompasses a total of 1,890 acres and is bordered by Albemarle Sound on the west, and Kitty Hawk Bay to the south, which contains the reserve’s Kitty Hawk Bay Islands.",
     "url": "https://deq.nc.gov/about/divisions/coastal-management/nc-coastal-reserve/reserve-sites/kitty-hawk-woods-reserve",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 1604,
+    "acres": 1920,
     "dissolved": {
      "after": 1899,
      "before": 3337,
@@ -6119,7 +6063,7 @@
      },
      "family_fold": 461,
      "family_used": "padus",
-     "key_union": 1604,
+     "key_union": 1920,
      "parts": 0,
      "records": 3,
      "summed": 1438,
@@ -6154,13 +6098,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 15,
+   "pct": 2,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -6185,10 +6129,10 @@
    ],
    "t": "State Preserve",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-3861": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
@@ -6202,7 +6146,7 @@
    "n": "Little River Natural State Conservation Area",
    "official": null,
    "ours": {
-    "acres": 246,
+    "acres": 388,
     "manager": "",
     "pieces": [
      [
@@ -6218,7 +6162,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -6236,10 +6180,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -6249,7 +6193,7 @@
    "verdict": "no size on page"
   },
   "US-3862": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Nags Head Woods Ecological State Preserve",
    "ours": null,
@@ -6259,17 +6203,48 @@
    "verdict": "no outline"
   },
   "US-3863": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Palmetto-Peartree State Preserve",
-   "ours": null,
-   "score": null,
+   "official": null,
+   "ours": {
+    "acres": 11051,
+    "manager": "",
+    "pieces": [
+     [
+      214405,
+      "The Conservation Fund - Palmetto-Peartree Preserve",
+      11051,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.visitnc.com/listing/VyZ6/the-palmetto-peartree-preserve",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
    "t": "State Preserve",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "no size on page"
   },
   "US-3864": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Permuda Island State Reserve",
    "official": {
@@ -6277,21 +6252,19 @@
     "as": "63 acres",
     "clean": false,
     "line": "Onslow County. The component is situated in Stump Sound, landward of Topsail Island. Permuda Island contains 63 acres of upland and is approximately 1.5 miles long. The estuarine waters of Stump Sound protect the island from hi",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Permuda Island contains 63 acres of upland and is approximately 1.5 miles long.",
     "url": "https://deq.nc.gov/about/divisions/coastal-management/nc-coastal-reserve/reserve-sites/permuda-island-reserve",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 57,
+    "acres": 63,
     "dissolved": {
      "after": 63,
      "before": 126,
      "copies": 1,
-     "key_union": 57,
      "parts": 0,
      "records": 2,
-     "summed": 63,
      "tracts": 1
     },
     "manager": "",
@@ -6322,7 +6295,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 10,
+   "pct": 0,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -6348,7 +6321,7 @@
   },
   "US-3865": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 0.65 acres, a tiny number without size wording)",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Roanoke Island Marshes State Game Land",
    "official": {
@@ -6356,32 +6329,32 @@
     "as": "0.65 acres",
     "clean": false,
     "line": "ocations. Game land user... Read more Geographic area: Maps of the Atlantic Ocean Category: Hunting & Fishing Size: 0.65MB Publication: August 2020 Language: English This product is available exclusively in digital format, for use",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Size: 0.65MB",
     "url": "https://store.avenza.com/products/roanoke-island-marshes-game-land-north-carolina-wildlife-resources-commission-map",
     "why": "a tiny number without size wording"
    },
    "ours": {
-    "acres": 2535,
+    "acres": 2422,
     "dissolved": {
-     "after": 4311,
-     "before": 6690,
+     "after": 4312,
+     "before": 6691,
      "copies": 0,
      "families": {
       "padus": 2947,
-      "sgncc": 1364
+      "sgncc": 1365
      },
-     "family_fold": 1364,
+     "family_fold": 1365,
      "family_used": "padus",
-     "key_union": 2535,
+     "key_union": 2422,
      "parts": 2,
-     "records": 8,
+     "records": 9,
      "summed": 2947,
-     "tracts": 6
+     "tracts": 7
     },
-    "family_fold": "layers {'padus': 2947, 'sgncc': 1364}: one land in 2 layers, the padus copy used (1,364 ac of copies not added)",
+    "family_fold": "layers {'padus': 2947, 'sgncc': 1365}: one land in 2 layers, the padus copy used (1,365 ac of copies not added)",
     "manager": "",
-    "note": "8 joined records = 6 tracts: 0 copies of a tract (same acres, another layer) and 2 fee tracts under a designation record folded; summed 6690 -> 4311 acres",
+    "note": "9 joined records = 7 tracts: 0 copies of a tract (same acres, another layer) and 2 fee tracts under a designation record folded; summed 6691 -> 4312 acres",
     "pieces": [
      [
       214769,
@@ -6398,7 +6371,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 0
    },
    "owner_now": null,
    "pages": [
@@ -6408,7 +6381,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 362043,
+   "pct": 345900,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -6433,8 +6406,7 @@
    "verdict": "unsure"
   },
   "US-3866": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Ward State Nature Preserve",
    "official": {
@@ -6442,21 +6414,19 @@
     "as": "296 Acres",
     "clean": false,
     "line": "servancy Skip to content Search for: Search Give Give Selma Cornelison Ward Nature Preserve – Randolph County 296 Acres Managed by the NC Zoo, the Selma Cornelison Ward Nature Preserve protects 296 acres at the headwaters of Bach",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "296 Acres",
     "url": "https://www.piedmontland.org/protected-places/parks-trails-and-preserves/preserves/selma-cornelison-ward-nature-preserve-randolph-county/",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 202,
+    "acres": 324,
     "dissolved": {
      "after": 324,
      "before": 647,
      "copies": 1,
-     "key_union": 202,
      "parts": 0,
      "records": 2,
-     "summed": 324,
      "tracts": 1
     },
     "manager": "",
@@ -6481,13 +6451,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 32,
+   "pct": 9,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -6512,11 +6482,12 @@
    ],
    "t": "State Nature Preserve",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-3867": {
    "checked": "2026-11-08",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Swift Creek Bluffs State Nature Preserve",
    "official": null,
    "ours": {
@@ -6556,7 +6527,7 @@
    "verdict": "no size on page"
   },
   "US-3868": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Theodore Roosevelt State Conservation Area",
    "official": {
@@ -6564,7 +6535,7 @@
     "as": "265 acre",
     "clean": false,
     "line": "ll Shores ' wild side with a visit to the pristine, undeveloped Theodore Roosevelt Natural Area, an expansive 265 acre nature preserve, conveniently located next to the town's most visited attraction, the North Carolina Aquarium",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Take a walk on Pine Knoll Shores ' wild side with a visit to the pristine, undeveloped Theodore Roosevelt Natural Area, an expansive 265 acre nature preserve, conveniently located next to the town's most visited attraction, the North Carolina Aquarium .",
     "url": "https://www.beaufort-nc.com/theodore-roosevelt-natural-area.html",
     "why": "total-looking"
@@ -6641,6 +6612,15 @@
      "total_like": false,
      "url": "https://www.beaufort-nc.com/theodore-roosevelt-natural-area.html",
      "why": "history"
+    },
+    {
+     "acres": 389.0,
+     "as": "389 acre",
+     "clean": false,
+     "line": "he most visited and highly acclaimed destinations along the Crystal Coast, and for good reason. The expansive 389 acre park, which features gorgeous inlet... Atlantic Beach 252-726-3775 Crystal Coast Lady Cruises Website Crystal",
+     "total_like": false,
+     "url": "https://www.crystalcoast.com/crystal-coast-beach-guidelines.html",
+     "why": "a page of another unit; the sentence does not name this park"
     }
    ],
    "t": "State Conservation Area",
@@ -6648,8 +6628,7 @@
    "verdict": "agree"
   },
   "US-3869": {
-   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Three Top Mountain State Game Land",
    "official": {
@@ -6657,13 +6636,13 @@
     "as": "3,100 acre",
     "clean": false,
     "line": "of recreational opportunities, as well as rich ecology and abundant wildlife. Hunters can take advantage of a 3,100 acre game land, hikers find rugged trails and hidden waterfalls, and in the spring birders can enjoy nesting songb",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Hunters can take advantage of a 3,100 acre game land, hikers find rugged trails and hidden waterfalls, and in the spring birders can enjoy nesting songbirds like the rose-breasted grosbeak.",
     "url": "https://blueridgeconservancy.org/three-top-mountain-game-lands/",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 4565,
+    "acres": 3460,
     "dissolved": {
      "after": 5549,
      "before": 17275,
@@ -6674,10 +6653,8 @@
      },
      "family_fold": 2089,
      "family_used": "sgnca",
-     "key_union": 4565,
      "parts": 5,
      "records": 14,
-     "summed": 3460,
      "tracts": 6
     },
     "family_fold": "layers {'sgnca': 3460, 'sgncc': 2089}: one land in 2 layers, the sgnca copy used (2,089 ac of copies not added)",
@@ -6703,13 +6680,13 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 47,
+   "pct": 12,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -6725,24 +6702,30 @@
    ],
    "t": "State Game Land",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-3870": {
-   "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Van Swamp State Game Land",
-   "official": null,
+   "official": {
+    "acres": 5505.0,
+    "as": "5,505 acres",
+    "clean": false,
+    "line": "Jordan Thicket Rd VAN SWAMP GAME LAND N.C. Wildlife Resources Commission Beaufort and Washington Counties (5,505 acres) Hunter Access Road Trail Game Land 0 10.5 Miles",
+    "read": "2026-11-22",
+    "sent": "Beaufort and Washington Counties (5,505 acres)",
+    "url": "https://www.ncwildlife.gov/media/850/download?attachment",
+    "why": "a map label (no sentence)"
+   },
    "ours": {
-    "acres": 6878,
+    "acres": 5515,
     "dissolved": {
      "after": 5515,
      "before": 27540,
      "copies": 3,
-     "key_union": 6878,
      "parts": 2,
      "records": 6,
-     "summed": 5515,
      "tracts": 1
     },
     "manager": "",
@@ -6774,12 +6757,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 0,
+   "same_agency": false,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -6795,11 +6779,12 @@
    ],
    "t": "State Game Land",
    "ver": 15,
-   "verdict": "unsure"
+   "verdict": "agree"
   },
   "US-3871": {
    "checked": "2026-11-08",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "White Pines State Nature Preserve",
    "official": null,
    "ours": {
@@ -6813,7 +6798,7 @@
       "words"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -6839,20 +6824,18 @@
    "verdict": "no size on page"
   },
   "US-4508": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Croatan National Forest",
    "official": null,
    "ours": {
-    "acres": 176412,
+    "acres": 164257,
     "dissolved": {
      "after": 164257,
      "before": 326108,
      "copies": 1,
-     "key_union": 176412,
      "parts": 0,
      "records": 2,
-     "summed": 164257,
      "tracts": 1
     },
     "manager": "",
@@ -6872,7 +6855,7 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok",
+     "status": "host-rule",
      "url": "https://www.fs.usda.gov/recarea/nfsnc/recreation/natureviewing/recarea/?recid=48466&actid=63",
      "why": "the park's page (data/parkinfo)"
     },
@@ -6897,7 +6880,7 @@
    "verdict": "no size on page"
   },
   "US-4509": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Nantahala National Forest",
    "official": null,
@@ -6919,7 +6902,7 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok",
+     "status": "host-rule",
      "url": "https://www.fs.usda.gov/recarea/nfsnc/recarea/?recid=48634",
      "why": "the park's page (data/parkinfo)"
     },
@@ -6944,7 +6927,7 @@
    "verdict": "no size on page"
   },
   "US-4510": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Pisgah National Forest",
    "official": null,
@@ -6966,7 +6949,7 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok",
+     "status": "host-rule",
      "url": "https://www.fs.usda.gov/recarea/nfsnc/recarea/?recid=48114",
      "why": "the park's page (data/parkinfo)"
     },
@@ -6991,20 +6974,18 @@
    "verdict": "no size on page"
   },
   "US-4511": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Uwharrie National Forest",
    "official": null,
    "ours": {
-    "acres": 56080,
+    "acres": 51743,
     "dissolved": {
      "after": 51743,
      "before": 102783,
      "copies": 1,
-     "key_union": 56080,
      "parts": 0,
      "records": 2,
-     "summed": 51743,
      "tracts": 1
     },
     "manager": "",
@@ -7017,14 +6998,14 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
    "owner_now": null,
    "pages": [
     {
-     "status": "ok",
+     "status": "host-rule",
      "url": "https://www.fs.usda.gov/recarea/nfsnc/recarea/?recid=48934",
      "why": "the park's page (data/parkinfo)"
     },
@@ -7041,10 +7022,10 @@
     }
    ],
    "pct": null,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -7054,7 +7035,7 @@
    "verdict": "no size on page"
   },
   "US-4556": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": "1937",
@@ -7078,18 +7059,18 @@
     "states": [
      "US-CT",
      "US-VA",
-     "US-WV",
-     "US-MA",
-     "US-PA",
-     "US-ME",
-     "US-GA",
-     "US-TN",
-     "US-NY",
-     "US-VT",
-     "US-MD",
-     "US-NH",
      "US-NJ",
-     "US-NC"
+     "US-NH",
+     "US-TN",
+     "US-GA",
+     "US-NY",
+     "US-MD",
+     "US-WV",
+     "US-NC",
+     "US-MA",
+     "US-ME",
+     "US-VT",
+     "US-PA"
     ],
     "unknown_pieces": 1,
     "whole_park": true
@@ -7142,7 +7123,7 @@
    "verdict": "ours unknown"
   },
   "US-4577": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Overmountain Victory National Historic Trail",
    "note": "whole park compared (POTA lists it in 0 states: {})",
@@ -7209,6 +7190,7 @@
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 14 million acres, a statewide / agency-wide total (over a million acres) on a park that is not a big federal unit)",
    "checked": "2026-11-08",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Bladen Lakes State Forest",
    "official": {
     "acres": 14000000.0,
@@ -7221,7 +7203,7 @@
     "why": "a statewide / agency-wide total (over a million acres) on a park that is not a big federal unit"
    },
    "ours": {
-    "acres": 40157,
+    "acres": 33672,
     "dissolved": {
      "after": 58365,
      "before": 169209,
@@ -7232,10 +7214,8 @@
      },
      "family_fold": 24693,
      "family_used": "ncg",
-     "key_union": 40157,
      "parts": 14,
      "records": 24,
-     "summed": 33672,
      "tracts": 6
     },
     "family_fold": "layers {'ncg': 33672, 'sgncc': 24693}: one land in 2 layers, the ncg copy used (24,693 ac of copies not added)",
@@ -7295,12 +7275,12 @@
    "verdict": "unsure"
   },
   "US-4853": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Clemmons Educational State Forest",
    "official": null,
    "ours": {
-    "acres": 258,
+    "acres": 814,
     "family_fold": "layers {'padus': 824, 'sgnca': 1114}: one land in 2 layers, the sgnca copy used (824 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -7317,14 +7297,14 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
    "owner_now": null,
    "pages": [
     {
-     "status": "ok",
+     "status": "robots",
      "url": "https://www.ncesf.org/clemmons.html",
      "why": "the park's page (data/parkinfo)"
     },
@@ -7336,10 +7316,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -7349,7 +7329,7 @@
    "verdict": "no size on page"
   },
   "US-4854": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "DuPont State Recreational Forest State Forest",
    "official": null,
@@ -7371,19 +7351,9 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok",
+     "status": "robots",
      "url": "https://www.dupontstaterecreationalforest.com/",
      "why": "the park's page (data/parkinfo)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.dupontstaterecreationalforest.com/divisions/nc-forest-service/resist-wildfire-north-carolina/disaster-mitigation-program",
-     "why": "about / history page of the park's site"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.dupontstaterecreationalforest.com/about-ncdacs",
-     "why": "about / history page of the park's site"
     },
     {
      "other_unit": true,
@@ -7406,12 +7376,12 @@
    "verdict": "no size on page"
   },
   "US-4855": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Headwaters State Forest",
    "official": null,
    "ours": {
-    "acres": 8135,
+    "acres": 6839,
     "dissolved": {
      "after": 18136,
      "before": 36747,
@@ -7423,10 +7393,8 @@
      },
      "family_fold": 11297,
      "family_used": "sgnca",
-     "key_union": 8135,
      "parts": 0,
      "records": 6,
-     "summed": 6839,
      "tracts": 3
     },
     "family_fold": "layers {'sgnca': 6839, 'ncg': 6208, 'padus': 5089}: one land in 3 layers, the sgnca copy used (11,297 ac of copies not added)",
@@ -7440,14 +7408,14 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
    "owner_now": null,
    "pages": [
     {
-     "status": "ok",
+     "status": "robots",
      "url": "https://www.dupontstaterecreationalforest.com/",
      "why": "the park's page (data/parkinfo)"
     },
@@ -7459,10 +7427,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -7472,17 +7440,17 @@
    "verdict": "no size on page"
   },
   "US-4856": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Holmes Educational State Forest",
    "official": null,
    "ours": {
-    "acres": 171,
+    "acres": 279,
     "dissolved": {
      "after": 264,
      "before": 527,
      "copies": 1,
-     "key_union": 171,
+     "key_union": 279,
      "parts": 0,
      "records": 2,
      "summed": 264,
@@ -7505,7 +7473,7 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok",
+     "status": "robots",
      "url": "https://www.ncesf.org/holmes.html",
      "why": "the park's page (data/parkinfo)"
     },
@@ -7530,20 +7498,18 @@
    "verdict": "no size on page"
   },
   "US-4857": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Jordan Lake Educational State Forest",
    "official": null,
    "ours": {
-    "acres": 872,
+    "acres": 946,
     "dissolved": {
      "after": 946,
      "before": 1891,
      "copies": 1,
-     "key_union": 872,
      "parts": 0,
      "records": 2,
-     "summed": 946,
      "tracts": 1
     },
     "manager": "",
@@ -7563,7 +7529,7 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok",
+     "status": "robots",
      "url": "https://www.ncesf.org/jordanlake.html",
      "why": "the park's page (data/parkinfo)"
     },
@@ -7588,7 +7554,7 @@
    "verdict": "no size on page"
   },
   "US-4858": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Mountain Island Educational State Forest",
    "official": null,
@@ -7610,7 +7576,7 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok",
+     "status": "robots",
      "url": "https://www.ncesf.org/mtIsland.html",
      "why": "the park's page (data/parkinfo)"
     },
@@ -7635,7 +7601,7 @@
    "verdict": "no size on page"
   },
   "US-4859": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Rendezvous Mountain State Park",
    "official": null,
@@ -7676,7 +7642,7 @@
    "verdict": "no size on page"
   },
   "US-4860": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Turnbull Creek Educational State Forest",
    "official": null,
@@ -7698,7 +7664,7 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok",
+     "status": "robots",
      "url": "https://www.ncesf.org/turnbull.html",
      "why": "the park's page (data/parkinfo)"
     },
@@ -7723,12 +7689,12 @@
    "verdict": "no size on page"
   },
   "US-4861": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Tuttle Educational State Forest",
    "official": null,
    "ours": {
-    "acres": 159,
+    "acres": 271,
     "family_fold": "layers {'sgnca': 159, 'padus': 126}: one land in 2 layers, the sgnca copy used (126 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -7746,7 +7712,7 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok",
+     "status": "robots",
      "url": "https://www.ncesf.org/tuttle/home.html",
      "why": "the park's page (data/parkinfo)"
     },
@@ -7771,12 +7737,12 @@
    "verdict": "no size on page"
   },
   "US-6830": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Alamance Battleground State Historic Site",
    "official": null,
    "ours": {
-    "acres": 72,
+    "acres": 96,
     "family_fold": "layers {'sgnca': 144, 'padus': 58}: one land in 2 layers, the sgnca copy used (58 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -7793,7 +7759,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -7811,10 +7777,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -7824,7 +7790,7 @@
    "verdict": "no size on page"
   },
   "US-6831": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Battleship North Carolina State Historic Site",
    "official": null,
@@ -7871,12 +7837,12 @@
   },
   "US-6832": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bennett Place State Historic Site",
    "official": null,
    "ours": {
-    "acres": 17,
+    "acres": 30,
     "family_fold": "layers {'sgnca': 34, 'padus': 30}: one land in 2 layers, the sgnca copy used (30 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -7887,7 +7853,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -7905,10 +7871,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -7928,8 +7894,7 @@
    "verdict": "unsure"
   },
   "US-6833": {
-   "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bentonville Battlefield State Historic Site",
    "official": {
@@ -7937,13 +7902,13 @@
     "as": "1986 + 36 acres",
     "clean": false,
     "line": "ase in visitation prompted the General Assembly to appropriate funding for the purchase of additional land in 1986, and 36 acres were added to Bentonville. This land included an important section of earthworks constructed by the Confedera",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "",
     "url": "https://historicsites.nc.gov/all-sites/bentonville-battlefield/history",
     "why": "sum of the pieces named in one sentence"
    },
    "ours": {
-    "acres": 1602,
+    "acres": 2111,
     "family_fold": "layers {'sgnca': 2387, 'padus': 1897}: one land in 2 layers, the sgnca copy used (1,897 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -7960,7 +7925,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -7977,13 +7942,13 @@
      "why": "about / history page of the park's site"
     }
    ],
-   "pct": 21,
+   "pct": 4,
    "same_agency": false,
-   "score": 5,
+   "score": 8,
    "score_parts": {
     "name": 2,
-    "pin": 1,
-    "size": 0,
+    "pin": 2,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -8053,10 +8018,10 @@
    ],
    "t": "State Historic Site",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-6834": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Brunswick Town/Ft. Anderson State Historic Site",
    "official": null,
@@ -8071,7 +8036,7 @@
       "words"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -8089,10 +8054,10 @@
     }
    ],
    "pct": null,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 1,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -8103,7 +8068,7 @@
   },
   "US-6835": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Charles B Aycock Birthplace State Historic Site",
    "official": {
@@ -8111,18 +8076,18 @@
     "as": "380 acres",
     "clean": false,
     "line": "Benjamin Aycock and Serena Hooks Aycock Over his life, Benjamin’s land holdings increased exponentially, from 380 acres in the 1850s to over a thousand in the 1860s. As a prominent local farmer, Benjamin made money through the sa",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Over his life, Benjamin’s land holdings increased exponentially, from 380 acres in the 1850s to over a thousand in the 1860s.",
     "url": "https://historicsites.nc.gov/all-sites/governor-charles-b-aycock-birthplace/history",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 21,
+    "acres": 19,
     "dissolved": {
      "after": 16,
      "before": 32,
      "copies": 1,
-     "key_union": 21,
+     "key_union": 19,
      "parts": 0,
      "records": 2,
      "summed": 16,
@@ -8155,7 +8120,7 @@
      "why": "about / history page of the park's site"
     }
    ],
-   "pct": 94,
+   "pct": 95,
    "same_agency": false,
    "score": 5,
    "score_parts": {
@@ -8180,30 +8145,27 @@
    "verdict": "off"
   },
   "US-6836": {
-   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 40 acres, no total words near it)",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Charlotte Hawkins Brown Museum State Historic Site",
    "official": {
     "acres": 40.0,
     "as": "40 acres",
     "clean": false,
-    "line": "he Palmer campus. After lengthy negotiations, Archives and History purchased from the American Muslim Mission 40 acres containing the heart of the campus. In November 1987, the memorial officially opened as a state historic site",
-    "read": "2026-11-08",
-    "sent": "After lengthy negotiations, Archives and History purchased from the American Muslim Mission 40 acres containing the heart of the campus.",
+    "line": "strations later the school closed its doors. Bennett College purchased the Palmer campus, but in 1980 it sold 40 acres of the main campus with major surviving buildings to the American Muslim Mission. The American Muslim Mission",
+    "read": "2026-11-22",
+    "sent": "Bennett College purchased the Palmer campus, but in 1980 it sold 40 acres of the main campus with major surviving buildings to the American Muslim Mission.",
     "url": "https://historicsites.nc.gov/all-sites/charlotte-hawkins-brown-museum/history",
-    "why": "no total words near it"
+    "why": "history"
    },
    "ours": {
-    "acres": 22,
+    "acres": 36,
     "dissolved": {
      "after": 36,
      "before": 72,
      "copies": 1,
-     "key_union": 22,
      "parts": 0,
      "records": 2,
-     "summed": 36,
      "tracts": 1
     },
     "manager": "",
@@ -8216,7 +8178,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -8233,13 +8195,13 @@
      "why": "about / history page of the park's site"
     }
    ],
-   "pct": 45,
+   "pct": 10,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
-    "pin": 1,
-    "size": 1,
+    "pin": 2,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -8264,10 +8226,10 @@
    ],
    "t": "State Historic Site",
    "ver": 15,
-   "verdict": "unsure"
+   "verdict": "agree"
   },
   "US-6837": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "CSS Neuse Civil War Interpretive Center State Historic Site",
    "ours": null,
@@ -8277,7 +8239,7 @@
    "verdict": "no outline"
   },
   "US-6838": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
@@ -8291,12 +8253,12 @@
    "n": "Duke Homestead State Historic Site",
    "official": null,
    "ours": {
-    "acres": 36,
+    "acres": 50,
     "dissolved": {
      "after": 45,
      "before": 90,
      "copies": 1,
-     "key_union": 36,
+     "key_union": 50,
      "parts": 0,
      "records": 2,
      "summed": 45,
@@ -8343,20 +8305,18 @@
    "verdict": "no size on page"
   },
   "US-6839": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Fort Dobbs State Historic Site",
    "official": null,
    "ours": {
-    "acres": 35,
+    "acres": 58,
     "dissolved": {
      "after": 58,
      "before": 115,
      "copies": 1,
-     "key_union": 35,
      "parts": 0,
      "records": 2,
-     "summed": 58,
      "tracts": 1
     },
     "manager": "",
@@ -8395,18 +8355,20 @@
    "verdict": "no size on page"
   },
   "US-6840": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Fort Fisher State Historic Site",
    "official": null,
    "ours": {
-    "acres": 38,
+    "acres": 46,
     "dissolved": {
      "after": 38,
      "before": 76,
      "copies": 1,
+     "key_union": 46,
      "parts": 0,
      "records": 2,
+     "summed": 38,
      "tracts": 1
     },
     "manager": "",
@@ -8419,7 +8381,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -8437,10 +8399,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -8450,17 +8412,17 @@
    "verdict": "no size on page"
   },
   "US-6841": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Historic Bath State Historic Site",
    "official": null,
    "ours": {
-    "acres": 8,
+    "acres": 7,
     "dissolved": {
      "after": 9,
      "before": 18,
      "copies": 1,
-     "key_union": 8,
+     "key_union": 7,
      "parts": 0,
      "records": 2,
      "summed": 9,
@@ -8476,7 +8438,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -8494,10 +8456,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -8507,12 +8469,12 @@
    "verdict": "no size on page"
   },
   "US-6842": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Historic Edenton State Historic Site",
    "official": null,
    "ours": {
-    "acres": 128,
+    "acres": 172,
     "manager": "",
     "pieces": [
      [
@@ -8528,7 +8490,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -8546,10 +8508,10 @@
     }
    ],
    "pct": null,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -8559,7 +8521,7 @@
    "verdict": "no size on page"
   },
   "US-6843": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Historic Halifax State Historic Site",
    "official": null,
@@ -8607,7 +8569,7 @@
   },
   "US-6844": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Historic Stagville State Historic Site",
    "official": {
@@ -8615,18 +8577,18 @@
     "as": "165 acres",
     "clean": false,
     "line": "te preserves a Bennehan family house (c. 1799), the Horton Grove slave quarters (c. 1851), a barn (1860), and 165 acres of land. Historic Stagville is a Site of Conscience and a site of memory. Plan Your Visit Location and Hours",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "1851), a barn (1860), and 165 acres of land.",
     "url": "https://historicsites.nc.gov/all-sites/historic-stagville",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 54,
+    "acres": 72,
     "dissolved": {
      "after": 68,
      "before": 135,
      "copies": 1,
-     "key_union": 54,
+     "key_union": 72,
      "parts": 0,
      "records": 2,
      "summed": 68,
@@ -8654,7 +8616,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 67,
+   "pct": 56,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -8679,20 +8641,18 @@
    "verdict": "off"
   },
   "US-6845": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Horne Creek Living Historical Farm State Historic Site",
    "official": null,
    "ours": {
-    "acres": 62,
+    "acres": 111,
     "dissolved": {
      "after": 111,
      "before": 222,
      "copies": 1,
-     "key_union": 62,
      "parts": 0,
      "records": 2,
-     "summed": 111,
      "tracts": 1
     },
     "manager": "",
@@ -8737,7 +8697,7 @@
   },
   "US-6846": {
    "cause": "the agency figure may cover several states; our outline may be this state's share only",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "House in the Horseshoe State Historic Site",
    "note": "the agency figure may cover several states; our outline may be this state's share only",
@@ -8746,19 +8706,21 @@
     "as": "2,500 acre",
     "clean": false,
     "line": "ip Alston sold the house and plantation and left the state. Retreat In 1798 Gov. Benjamin Williams bought the 2,500-acre plantation. Besides serving four one-year terms as the state's governor and a colonel under George Washington",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Benjamin Williams bought the 2,500-acre plantation.",
     "url": "https://historicsites.nc.gov/all-sites/house-horseshoe/history",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 12,
+    "acres": 14,
     "dissolved": {
      "after": 12,
      "before": 24,
      "copies": 1,
+     "key_union": 14,
      "parts": 0,
      "records": 2,
+     "summed": 12,
      "tracts": 1
     },
     "manager": "",
@@ -8771,7 +8733,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -8788,12 +8750,12 @@
      "why": "about / history page of the park's site"
     }
    ],
-   "pct": 100,
+   "pct": 99,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -8822,7 +8784,7 @@
    "verdict": "unsure"
   },
   "US-6847": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "NC Transportation Museum State Historic Site",
    "ours": null,
@@ -8833,7 +8795,7 @@
   },
   "US-6848": {
    "cause": "the agency figure may cover several states; our outline may be this state's share only",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "President James K. Polk State Historic Site",
    "note": "the agency figure may cover several states; our outline may be this state's share only",
@@ -8842,18 +8804,18 @@
     "as": "450 acres",
     "clean": false,
     "line": "t (Source: Library of Congress) When James was 11, the family sold the homestead (by then it encompassed over 450 acres) and moved west to join his grandfather in Tennessee. The future president attended academies there, then ret",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "When James was 11, the family sold the homestead (by then it encompassed over 450 acres) and moved west to join his grandfather in Tennessee.",
     "url": "https://historicsites.nc.gov/all-sites/president-james-k-polk/history",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 13,
+    "acres": 18,
     "dissolved": {
      "after": 20,
      "before": 40,
      "copies": 1,
-     "key_union": 13,
+     "key_union": 18,
      "parts": 0,
      "records": 2,
      "summed": 20,
@@ -8886,7 +8848,7 @@
      "why": "about / history page of the park's site"
     }
    ],
-   "pct": 97,
+   "pct": 96,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -8929,20 +8891,18 @@
    "verdict": "unsure"
   },
   "US-6849": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Reed Gold Mine State Historic Site",
    "official": null,
    "ours": {
-    "acres": 668,
+    "acres": 831,
     "dissolved": {
      "after": 831,
      "before": 1648,
      "copies": 1,
-     "key_union": 668,
      "parts": 0,
      "records": 2,
-     "summed": 831,
      "tracts": 1
     },
     "manager": "",
@@ -8955,7 +8915,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -8973,10 +8933,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -8987,7 +8947,7 @@
   },
   "US-6850": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Roanoke Island Festival Park State Historic Site",
    "official": {
@@ -8995,7 +8955,7 @@
     "as": "27 acre",
     "clean": true,
     "line": "Park History Comes Alive at Roanoke Island Festival Park Step into history at Roanoke Island Festival Park, a 27-acre site where you can explore life as it was for the first English settlers in 1585. Costumed interpreters bring",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Step into history at Roanoke Island Festival Park, a 27-acre site where you can explore life as it was for the first English settlers in 1585.",
     "url": "https://www.roanokeisland.com/",
     "why": "clean total"
@@ -9048,17 +9008,17 @@
    "verdict": "off"
   },
   "US-6851": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Somerset Place State Historic Site",
    "official": null,
    "ours": {
-    "acres": 10,
+    "acres": 12,
     "dissolved": {
      "after": 11,
      "before": 22,
      "copies": 1,
-     "key_union": 10,
+     "key_union": 12,
      "parts": 0,
      "records": 2,
      "summed": 11,
@@ -9105,7 +9065,7 @@
    "verdict": "no size on page"
   },
   "US-6852": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "State Capitol State Historic Site",
    "ours": null,
@@ -9116,7 +9076,7 @@
   },
   "US-6853": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Thomas Wolfe Memorial State Historic Site",
    "official": null,
@@ -9186,12 +9146,12 @@
    "verdict": "unsure"
   },
   "US-6854": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Town Creek Indian Mound State Historic Site",
    "official": null,
    "ours": {
-    "acres": 42,
+    "acres": 45,
     "family_fold": "layers {'sgnca': 57, 'padus': 54}: one land in 2 layers, the sgnca copy used (54 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -9233,12 +9193,12 @@
    "verdict": "no size on page"
   },
   "US-6855": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Tryon Palace State Historic Site",
    "official": null,
    "ours": {
-    "acres": 17,
+    "acres": 11,
     "family_fold": "layers {'padus': 21, 'sgnca': 20}: one land in 2 layers, the padus copy used (20 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -9285,7 +9245,8 @@
    "verdict": "no size on page"
   },
   "US-6856": {
-   "checked": "2026-11-08",
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 2.28 acres, a tiny number without size wording)",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Zebulon B. Vance Birthplace State Historic Site",
    "official": {
@@ -9293,18 +9254,18 @@
     "as": "2.28 acres",
     "clean": false,
     "line": "e Vance Birthplace project remained scarce through World War II, the state of North Carolina finally acquired 2.28 acres from the Wheeler family in 1957. By 1960, workmen began reconstructing the Vance house, utilizing materials s",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Though funding for the Vance Birthplace project remained scarce through World War II, the state of North Carolina finally acquired 2.28 acres from the Wheeler family in 1957.",
     "url": "https://historicsites.nc.gov/all-sites/zebulon-b-vance-birthplace/history",
     "why": "a tiny number without size wording"
    },
    "ours": {
-    "acres": 2,
+    "acres": 3,
     "dissolved": {
      "after": 5,
      "before": 10,
      "copies": 1,
-     "key_union": 2,
+     "key_union": 3,
      "parts": 0,
      "records": 2,
      "summed": 5,
@@ -9337,13 +9298,13 @@
      "why": "about / history page of the park's site"
     }
    ],
-   "pct": 13,
+   "pct": 30,
    "same_agency": false,
-   "score": 6,
+   "score": 5,
    "score_parts": {
     "name": 1,
     "pin": 1,
-    "size": 2,
+    "size": 1,
     "source": 2
    },
    "sizes": [
@@ -9359,12 +9320,12 @@
    ],
    "t": "State Historic Site",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "unsure"
   },
   "US-6877": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Yadkin River State Game Land",
    "official": null,
    "ours": {
@@ -9427,7 +9388,7 @@
    "verdict": "no size on page"
   },
   "US-6878": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
@@ -9444,18 +9405,18 @@
     "as": "24,440 acres",
     "clean": false,
     "line": "avy TowerRd Fire Dept Rd Cove Rd ALLIGATOR RIVER GAME LAND N.C. Wildlife Resources Commission Tyrrell County (24,440 acres) Game Land Federal Land Gate Open Sep.1 - Mar.1, Apr.1 - End of Turkey Season Permanently Closed Gate Non-WRC",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Tyrrell County (24,440 acres)",
     "url": "https://www.ncwildlife.gov/media/811/download?attachment",
     "why": "a map label (no sentence)"
    },
    "ours": {
-    "acres": 27817,
+    "acres": 26102,
     "dissolved": {
      "after": 40324,
      "before": 103272,
      "copies": 1,
-     "key_union": 27817,
+     "key_union": 26102,
      "parts": 5,
      "records": 12,
      "summed": 40324,
@@ -9519,7 +9480,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 14,
+   "pct": 7,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -9544,7 +9505,7 @@
    "verdict": "agree"
   },
   "US-6879": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Angola Bay State Game Land",
    "official": {
@@ -9552,7 +9513,7 @@
     "as": "34,150 acres",
     "clean": false,
     "line": "d George Creek Cypress 41 ANGOLA BAY GAME LAND N.C. Wildlife Resources Commission Duplin and Pender Counties (34,150 acres)",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Duplin and Pender Counties (34,150 acres)",
     "url": "https://www.ncwildlife.gov/media/810/download?attachment",
     "why": "a map label (no sentence)"
@@ -9560,22 +9521,22 @@
    "ours": {
     "acres": 34490,
     "dissolved": {
-     "after": 47862,
-     "before": 150779,
+     "after": 47876,
+     "before": 150793,
      "copies": 2,
      "families": {
       "padus": 34490,
-      "sgncc": 13372
+      "sgncc": 13386
      },
-     "family_fold": 13372,
+     "family_fold": 13386,
      "family_used": "padus",
      "parts": 5,
-     "records": 12,
-     "tracts": 5
+     "records": 13,
+     "tracts": 6
     },
-    "family_fold": "layers {'padus': 34490, 'sgncc': 13372}: one land in 2 layers, the padus copy used (13,372 ac of copies not added)",
+    "family_fold": "layers {'padus': 34490, 'sgncc': 13386}: one land in 2 layers, the padus copy used (13,386 ac of copies not added)",
     "manager": "",
-    "note": "12 joined records = 5 tracts: 2 copies of a tract (same acres, another layer) and 5 fee tracts under a designation record folded; summed 150779 -> 47862 acres",
+    "note": "13 joined records = 6 tracts: 2 copies of a tract (same acres, another layer) and 5 fee tracts under a designation record folded; summed 150793 -> 47876 acres",
     "pieces": [
      [
       214714,
@@ -9586,7 +9547,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 0
    },
    "owner_now": null,
    "pages": [
@@ -9627,21 +9588,27 @@
    "verdict": "agree"
   },
   "US-6880": {
-   "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bachelor Bay State Game Land",
-   "official": null,
+   "official": {
+    "acres": 2790.0,
+    "as": "2,790 acres",
+    "clean": false,
+    "line": "oanoke River Wetlands Game Land BACHELOR BAY GAME LAND The Nature Conservancy Bertie and Washington Counties (2,790 acres) 0 10.5 Miles Game Land Type Black Bear Sanctuary Other Game Lands WRC Boating Access Area",
+    "read": "2026-11-22",
+    "sent": "Bertie and Washington Counties (2,790 acres)",
+    "url": "https://www.ncwildlife.gov/media/813/download?attachment",
+    "why": "a map label (no sentence)"
+   },
    "ours": {
-    "acres": 2348,
+    "acres": 2786,
     "dissolved": {
      "after": 2786,
      "before": 5572,
      "copies": 0,
-     "key_union": 2348,
      "parts": 2,
      "records": 3,
-     "summed": 2786,
      "tracts": 1
     },
     "manager": "",
@@ -9672,12 +9639,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 0,
+   "same_agency": false,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -9693,15 +9661,15 @@
    ],
    "t": "State Game Land",
    "ver": 15,
-   "verdict": "unsure"
+   "verdict": "agree"
   },
   "US-6881": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bertie County State Game Land",
    "official": null,
    "ours": {
-    "acres": 4698,
+    "acres": 4238,
     "dissolved": {
      "after": 8112,
      "before": 18580,
@@ -9713,10 +9681,8 @@
      },
      "family_fold": 3874,
      "family_used": "sgncb",
-     "key_union": 4698,
      "parts": 8,
      "records": 14,
-     "summed": 4238,
      "tracts": 5
     },
     "family_fold": "layers {'sgncb': 4238, 'sgnca': 1991, 'sgncc': 1883}: one land in 3 layers, the sgncb copy used (3,874 ac of copies not added)",
@@ -9730,7 +9696,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -9749,10 +9715,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -9762,7 +9728,7 @@
    "verdict": "no size on page"
   },
   "US-6882": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bladen Lakes State Game Land",
    "ours": null,
@@ -9774,7 +9740,7 @@
   "US-6883": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Brinkleyville State Game Land",
    "official": null,
    "ours": {
@@ -9832,7 +9798,7 @@
   "US-6884": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Buckhorn State Game Land",
    "official": null,
    "ours": {
@@ -9881,7 +9847,7 @@
    "verdict": "no size on page"
   },
   "US-6885": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
@@ -9898,21 +9864,19 @@
     "as": "17,970 acres",
     "clean": false,
     "line": "Lookout Alligator No Public Access ï BUCKRIDGE GAME LAND N.C. Division of Coastal Management Tyrrell County (17,970 acres) Game Land Federal Land à Gate Open Sep.1 - End of Deer Season à Permanently Closed Gate !y Boating Access Ar",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Tyrrell County (17,970 acres)",
     "url": "https://www.ncwildlife.gov/media/814/download?attachment",
     "why": "a map label (no sentence)"
    },
    "ours": {
-    "acres": 16840,
+    "acres": 17966,
     "dissolved": {
      "after": 17966,
      "before": 53898,
      "copies": 1,
-     "key_union": 16840,
      "parts": 2,
      "records": 4,
-     "summed": 17966,
      "tracts": 1
     },
     "manager": "",
@@ -9943,7 +9907,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 6,
+   "pct": 0,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -9970,7 +9934,7 @@
   "US-6886": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Buffalo Cove State Game Land",
    "official": null,
    "ours": {
@@ -10026,18 +9990,26 @@
    "verdict": "no size on page"
   },
   "US-6887": {
-   "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bullard & Branch Hunting Preserve State Game Land",
-   "official": null,
+   "official": {
+    "acres": 256.0,
+    "as": "256 acres",
+    "clean": false,
+    "line": "rs Swamp Atkinson Wire BULLARD AND BRANCH HUNTING PRESERVE N.C. Wildlife Resources Commission Robeson County (256 acres) 0 0.50.25 Miles",
+    "read": "2026-11-22",
+    "sent": "Robeson County (256 acres)",
+    "url": "https://www.ncwildlife.gov/media/815/download?attachment",
+    "why": "a map label (no sentence)"
+   },
    "ours": {
-    "acres": 186,
+    "acres": 241,
     "dissolved": {
      "after": 256,
      "before": 1280,
      "copies": 3,
-     "key_union": 186,
+     "key_union": 241,
      "parts": 4,
      "records": 8,
      "summed": 256,
@@ -10071,12 +10043,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 6,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -10092,12 +10065,12 @@
    ],
    "t": "State Game Land",
    "ver": 15,
-   "verdict": "unsure"
+   "verdict": "agree"
   },
   "US-6888": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Butner-Falls of the Neuse State Game Land",
    "official": null,
    "ours": {
@@ -10154,7 +10127,7 @@
    "verdict": "no size on page"
   },
   "US-6889": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
@@ -10171,7 +10144,7 @@
     "as": "975 acres",
     "clean": false,
     "line": "ail PAMLICO SOUND Buxton LighthouseRd BUXTON WOODS GAME LAND N.C. Division of Coastal Management Dare County (975 acres) Game Land Federal Land Permanently Closed Gate 4WD Hunter Road 0 0.50.25 Miles",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Dare County (975 acres)",
     "url": "https://www.ncwildlife.gov/media/817/download?attachment",
     "why": "a map label (no sentence)"
@@ -10187,7 +10160,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -10207,10 +10180,10 @@
    ],
    "pct": 3,
    "same_agency": false,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 2,
     "source": 0
    },
@@ -10230,7 +10203,7 @@
    "verdict": "agree"
   },
   "US-6890": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
@@ -10244,7 +10217,7 @@
    "n": "Cape Fear River Wetlands State Game Land",
    "official": null,
    "ours": {
-    "acres": 7071,
+    "acres": 7548,
     "dissolved": {
      "after": 12135,
      "before": 37285,
@@ -10255,10 +10228,8 @@
      },
      "family_fold": 4587,
      "family_used": "sgnca",
-     "key_union": 7071,
      "parts": 9,
      "records": 16,
-     "summed": 7548,
      "tracts": 4
     },
     "family_fold": "layers {'sgnca': 7548, 'sgncc': 4587}: one land in 2 layers, the sgnca copy used (4,587 ac of copies not added)",
@@ -10304,20 +10275,18 @@
    "verdict": "no size on page"
   },
   "US-6891": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Carteret County State Game Land",
    "official": null,
    "ours": {
-    "acres": 6071,
+    "acres": 7168,
     "dissolved": {
      "after": 7168,
      "before": 33730,
      "copies": 3,
-     "key_union": 6071,
      "parts": 3,
      "records": 8,
-     "summed": 7168,
      "tracts": 2
     },
     "manager": "",
@@ -10369,7 +10338,7 @@
   },
   "US-6892": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 0.7 acres, a tiny number without size wording)",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Chatham State Game Land",
    "official": {
@@ -10377,21 +10346,19 @@
     "as": "0.7 acres",
     "clean": false,
     "line": "a Maps of Duke Energy: Harris Nuclear Plant Maps of North Carolina, United States Category: Hunting & Fishing Size: 0.7MB Publication: August 2020 Language: English This product is available exclusively in digital format, for use",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Size: 0.7MB",
     "url": "https://www.avenzamaps.com/maps/1186083/chatham-game-land",
     "why": "a tiny number without size wording"
    },
    "ours": {
-    "acres": 2400,
+    "acres": 2671,
     "dissolved": {
      "after": 2671,
      "before": 10684,
      "copies": 2,
-     "key_union": 2400,
      "parts": 3,
      "records": 6,
-     "summed": 2671,
      "tracts": 1
     },
     "manager": "",
@@ -10404,7 +10371,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -10416,12 +10383,12 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 342757,
+   "pct": 381471,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -10443,7 +10410,7 @@
   "US-6893": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Chowan State Game Land",
    "official": null,
    "ours": {
@@ -10511,7 +10478,7 @@
   "US-6894": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Chowan Swamp State Game Land",
    "official": null,
    "ours": {
@@ -10570,7 +10537,7 @@
   "US-6895": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Cold Mountain State Game Land",
    "official": null,
    "ours": {
@@ -10626,12 +10593,12 @@
    "verdict": "no size on page"
   },
   "US-6896": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Columbus County State Game Land",
    "official": null,
    "ours": {
-    "acres": 12138,
+    "acres": 10744,
     "dissolved": {
      "after": 15973,
      "before": 53019,
@@ -10642,10 +10609,8 @@
      },
      "family_fold": 5229,
      "family_used": "sgncb",
-     "key_union": 12138,
      "parts": 10,
      "records": 16,
-     "summed": 10744,
      "tracts": 4
     },
     "family_fold": "layers {'sgncb': 10744, 'sgncc': 5229}: one land in 2 layers, the sgncb copy used (5,229 ac of copies not added)",
@@ -10693,7 +10658,7 @@
   "US-6897": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Croatan State Game Land",
    "official": null,
    "ours": {
@@ -10754,12 +10719,12 @@
    "verdict": "no size on page"
   },
   "US-6898": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Currituck Banks State Game Land",
    "official": null,
    "ours": {
-    "acres": 235,
+    "acres": 275,
     "dissolved": {
      "after": 407,
      "before": 815,
@@ -10770,8 +10735,10 @@
      },
      "family_fold": 172,
      "family_used": "sgncb",
+     "key_union": 275,
      "parts": 2,
      "records": 6,
+     "summed": 235,
      "tracts": 3
     },
     "family_fold": "layers {'sgncb': 235, 'sgncc': 172}: one land in 2 layers, the sgncb copy used (172 ac of copies not added)",
@@ -10819,7 +10786,7 @@
   "US-6899": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Dan River State Game Land",
    "official": null,
    "ours": {
@@ -10888,7 +10855,7 @@
    "verdict": "no size on page"
   },
   "US-6900": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Dare State Game Land",
    "official": {
@@ -10896,7 +10863,7 @@
     "as": "46,055 acres",
     "clean": false,
     "line": "15 This road section is blocked due to failed bridge. DARE GAME LAND U.S. Air Force Dare and Hyde Counties (46,055 acres) Gate Closed at All Times Gate Closed During Permit Bear Hunt Gate Closed During Operational Hours Secondary",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Dare and Hyde Counties (46,055 acres)",
     "url": "https://www.ncwildlife.gov/media/825/download?attachment",
     "why": "a map label (no sentence)"
@@ -10973,7 +10940,7 @@
   },
   "US-6901": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Dover Bay State Game Land",
    "official": null,
@@ -11040,8 +11007,7 @@
    "verdict": "unsure"
   },
   "US-6902": {
-   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
@@ -11062,17 +11028,17 @@
    ],
    "n": "Dupont State Game Land",
    "official": {
-    "acres": 7600.0,
-    "as": "7600 acres",
+    "acres": 10400.0,
+    "as": "10,400 acres",
     "clean": false,
-    "line": "ionship with DuPont’s External Affairs, and its newly formed “Land Legacy” program. The bargain sale of these 7600 acres fit well with the goals of DuPont’s Land Legacy Program , and received critical support from DuPont’s Justin",
-    "read": "2026-11-08",
-    "sent": "The bargain sale of these 7600 acres fit well with the goals of DuPont’s Land Legacy Program , and received critical support from DuPont’s Justin Carisio (External Affairs) and Diane Boc (Corporate Real Estate).",
-    "url": "https://www.dupontforest.com/about/history/",
-    "why": "total-looking"
+    "line": "ays to get involved Updates & News Stay up to date on how we’re caring, protecting and inspiring love for the 10,400 acres of forest land between Hendersonville and Brevard, North Carolina. Local Tourism Development Authorities Inve",
+    "read": "2026-11-22",
+    "sent": "Stay up to date on how we’re caring, protecting and inspiring love for the 10,400 acres of forest land between Hendersonville and Brevard, North Carolina.",
+    "url": "https://www.dupontforest.com/",
+    "why": "history"
    },
    "ours": {
-    "acres": 13736,
+    "acres": 11949,
     "dissolved": {
      "after": 18246,
      "before": 35848,
@@ -11083,10 +11049,8 @@
      },
      "family_fold": 6297,
      "family_used": "ncg",
-     "key_union": 13736,
      "parts": 6,
      "records": 15,
-     "summed": 11949,
      "tracts": 8
     },
     "family_fold": "layers {'ncg': 11949, 'sgncc': 6297}: one land in 2 layers, the ncg copy used (6,297 ac of copies not added)",
@@ -11122,13 +11086,13 @@
      "why": "about / history page of the park's site"
     }
    ],
-   "pct": 81,
+   "pct": 15,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -11145,7 +11109,7 @@
      "acres": 10300.0,
      "as": "10,300 acre",
      "clean": false,
-     "line": "of Dupont Forest Skip to navigation Skip to content Become a Member Donate Menu History of Dupont Forest The 10,300 acre DuPont State Recreational Forest (DSRF) was acquired in three major phases, spanning from 1995 to 2000. The 7",
+     "line": "n Farm Access Area🚧 All Alerts Hunting season is Now Become a Member Donate Menu History of Dupont Forest The 10,300 acre DuPont State Recreational Forest (DSRF) was acquired in three major phases, spanning from 1995 to 2000. The 7",
      "total_like": false,
      "url": "https://www.dupontforest.com/about/history/",
      "why": "history"
@@ -11207,12 +11171,12 @@
    ],
    "t": "State Game Land",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-6903": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Elk Knob State Game Land",
    "official": null,
    "ours": {
@@ -11263,7 +11227,7 @@
   "US-6904": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Embro State Game Land",
    "official": null,
    "ours": {
@@ -11321,7 +11285,7 @@
   },
   "US-6905": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Goose Creek State Game Land",
    "official": null,
@@ -11398,7 +11362,7 @@
   "US-6906": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Green River State Game Land",
    "official": null,
    "ours": {
@@ -11463,7 +11427,7 @@
   },
   "US-6907": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Green Swamp State Game Land",
    "official": null,
@@ -11495,7 +11459,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -11515,10 +11479,10 @@
     }
    ],
    "pct": null,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -11538,7 +11502,7 @@
    "verdict": "unsure"
   },
   "US-6908": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
@@ -11611,7 +11575,7 @@
   "US-6909": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Harris State Game Land",
    "official": null,
    "ours": {
@@ -11667,7 +11631,7 @@
    "verdict": "no size on page"
   },
   "US-6910": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Headwaters State Game Land",
    "ours": null,
@@ -11677,12 +11641,12 @@
    "verdict": "no outline"
   },
   "US-6911": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Hill Farm State Game Land",
    "official": null,
    "ours": {
-    "acres": 166,
+    "acres": 157,
     "dissolved": {
      "after": 301,
      "before": 772,
@@ -11693,10 +11657,8 @@
      },
      "family_fold": 144,
      "family_used": "padus",
-     "key_union": 166,
      "parts": 0,
      "records": 5,
-     "summed": 157,
      "tracts": 2
     },
     "family_fold": "layers {'padus': 157, 'sgnca': 144}: one land in 2 layers, the padus copy used (144 ac of copies not added)",
@@ -11736,24 +11698,31 @@
    "verdict": "no size on page"
   },
   "US-6912": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Holly Shelter State Game Land",
    "official": null,
    "ours": {
-    "acres": 68036,
+    "acres": 66848,
     "dissolved": {
-     "after": 81120,
-     "before": 275582,
+     "after": 139974,
+     "before": 275583,
      "copies": 1,
-     "key_union": 68036,
+     "families": {
+      "sgnca": 80569,
+      "sgncc": 59405
+     },
+     "family_fold": 59405,
+     "family_used": "sgnca",
+     "key_union": 66848,
      "parts": 8,
-     "records": 15,
-     "summed": 81120,
-     "tracts": 6
+     "records": 16,
+     "summed": 80569,
+     "tracts": 7
     },
+    "family_fold": "layers {'sgnca': 80569, 'sgncc': 59405}: one land in 2 layers, the sgnca copy used (59,405 ac of copies not added)",
     "manager": "",
-    "note": "15 joined records = 6 tracts: 1 copies of a tract (same acres, another layer) and 8 fee tracts under a designation record folded; summed 275582 -> 81120 acres",
+    "note": "16 joined records = 7 tracts: 1 copies of a tract (same acres, another layer) and 8 fee tracts under a designation record folded; summed 275583 -> 139974 acres",
     "pieces": [
      [
       "sgnca3895",
@@ -11766,35 +11735,11 @@
       "Holly Shelter Game Land Dedicated Nature Preserve",
       15336,
       "words"
-     ],
-     [
-      "sgncc929",
-      "Holly Shelter",
-      206,
-      "name"
-     ],
-     [
-      "sgncc273",
-      "Holly Shelter",
-      162,
-      "name"
-     ],
-     [
-      "sgncc254",
-      "Holly Shelter",
-      102,
-      "name"
-     ],
-     [
-      "sgncc291",
-      "Holly Shelter",
-      81,
-      "name"
      ]
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 0
    },
    "owner_now": null,
    "pages": [
@@ -11826,7 +11771,7 @@
   "US-6913": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Hyco State Game Land",
    "official": null,
    "ours": {
@@ -11882,7 +11827,7 @@
    "verdict": "no size on page"
   },
   "US-6914": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "J Morgan Futch State Game Land",
    "official": {
@@ -11890,13 +11835,13 @@
     "as": "600 acres",
     "clean": false,
     "line": "11 5 6 4 1 3 19 18 17 13 7 10 2 J. MORGAN FUTCH GAME LAND N.C. Wildlife Resources Commission Tyrrell County (600 acres) 0 0.50.25 Miles´ # Waterfowl Blind # Disabled Sportsman Blind Ã Hunter Bridge Ã Hunter Walk-in (No Ditch) ¾j",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Tyrrell County (600 acres)",
     "url": "https://www.ncwildlife.gov/media/831/download?attachment",
     "why": "a map label (no sentence)"
    },
    "ours": {
-    "acres": 642,
+    "acres": 598,
     "dissolved": {
      "after": 772,
      "before": 2382,
@@ -11907,10 +11852,8 @@
      },
      "family_fold": 174,
      "family_used": "sgnca",
-     "key_union": 642,
      "parts": 13,
      "records": 19,
-     "summed": 598,
      "tracts": 4
     },
     "family_fold": "layers {'sgnca': 598, 'sgncc': 174}: one land in 2 layers, the sgnca copy used (174 ac of copies not added)",
@@ -11942,7 +11885,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 7,
+   "pct": 0,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -11969,7 +11912,7 @@
   "US-6915": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Johns River State Game Land",
    "official": null,
    "ours": {
@@ -12027,7 +11970,7 @@
   "US-6916": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Jordan State Game Land",
    "official": null,
    "ours": {
@@ -12083,7 +12026,7 @@
    "verdict": "no size on page"
   },
   "US-6917": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
@@ -12100,21 +12043,19 @@
     "as": "20,505 acres",
     "clean": false,
     "line": "JUNIPER CREEK GAME LAND N.C. Wildlife Resources Commission Brunswick and Columubs Counties (20,505 acres) Designated Camping Area Disabled Sportsman Blind Gate Open Sep.1 - Mar.1, Apr.1-End Of Turkey Season Permane",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Brunswick and Columubs Counties (20,505 acres)",
     "url": "https://www.ncwildlife.gov/media/833/download?attachment",
     "why": "a map label (no sentence)"
    },
    "ours": {
-    "acres": 22501,
+    "acres": 20541,
     "dissolved": {
      "after": 20541,
      "before": 102360,
      "copies": 3,
-     "key_union": 22501,
      "parts": 7,
      "records": 11,
-     "summed": 20541,
      "tracts": 1
     },
     "manager": "",
@@ -12145,7 +12086,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 10,
+   "pct": 0,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -12172,7 +12113,7 @@
   "US-6918": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Kerr Scott State Game Land",
    "official": null,
    "ours": {
@@ -12222,20 +12163,18 @@
   },
   "US-6919": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lantern Acres State Game Land",
    "official": null,
    "ours": {
-    "acres": 1655,
+    "acres": 1831,
     "dissolved": {
      "after": 1831,
      "before": 7322,
      "copies": 2,
-     "key_union": 1655,
      "parts": 4,
      "records": 7,
-     "summed": 1831,
      "tracts": 1
     },
     "manager": "",
@@ -12248,7 +12187,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -12267,10 +12206,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -12292,7 +12231,7 @@
   "US-6920": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Lee State Game Land",
    "official": null,
    "ours": {
@@ -12343,7 +12282,7 @@
   "US-6922": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Linwood State Game Land",
    "official": null,
    "ours": {
@@ -12403,7 +12342,7 @@
   "US-6923": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Lower Fishing Creek State Game Land",
    "official": null,
    "ours": {
@@ -12454,7 +12393,7 @@
   "US-6924": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Lower Roanoke River State Game Land",
    "official": null,
    "ours": {
@@ -12517,7 +12456,7 @@
   "US-6925": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Mayo State Game Land",
    "official": null,
    "ours": {
@@ -12566,13 +12505,21 @@
    "verdict": "no size on page"
   },
   "US-6926": {
-   "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Mitchell River State Game Land",
-   "official": null,
+   "official": {
+    "acres": 2430.0,
+    "as": "2,430 acres",
+    "clean": false,
+    "line": "r Haystack 1323 To Thurmond BlueRidgeParkway N.C. Wildlife Resources Commission Alleghany and Surry Counties (2,430 acres) MITCHELL RIVER GAME LAND Gate Open Sep.1 - end of Feb. & During Turkey Season Disabled Sportsman Blind Publi",
+    "read": "2026-11-22",
+    "sent": "Alleghany and Surry Counties (2,430 acres)",
+    "url": "https://www.ncwildlife.gov/media/944/download?attachment",
+    "why": "a map label (no sentence)"
+   },
    "ours": {
-    "acres": 2051,
+    "acres": 2432,
     "dissolved": {
      "after": 2866,
      "before": 10138,
@@ -12583,10 +12530,8 @@
      },
      "family_fold": 434,
      "family_used": "sgnca",
-     "key_union": 2051,
      "parts": 5,
      "records": 10,
-     "summed": 2432,
      "tracts": 4
     },
     "family_fold": "layers {'sgnca': 2432, 'sgncc': 434}: one land in 2 layers, the sgnca copy used (434 ac of copies not added)",
@@ -12600,7 +12545,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -12618,12 +12563,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": null,
+   "pct": 0,
+   "same_agency": false,
    "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 2,
-    "size": 1,
+    "pin": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -12639,11 +12585,11 @@
    ],
    "t": "State Game Land",
    "ver": 15,
-   "verdict": "unsure"
+   "verdict": "agree"
   },
   "US-6927": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 71.75 acres, no total words near it)",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Nantahala State Game Land",
    "official": {
@@ -12651,7 +12597,7 @@
     "as": "71.75 acres",
     "clean": false,
     "line": "n acres of North Carolina game lands. Tract boundaries as pictured i... Read more Category: Hunting & Fishing Size: 71.75MB Publication: August 2025 Language: English This product is available exclusively in digital format, for use",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Size: 71.75MB",
     "url": "https://www.avenzamaps.com/maps/1299685/nantahala-game-land",
     "why": "no total words near it"
@@ -12660,7 +12606,7 @@
     "acres": 527696,
     "dissolved": {
      "after": 846556,
-     "before": 911939,
+     "before": 911969,
      "copies": 15,
      "families": {
       "sgncb": 527696,
@@ -12668,13 +12614,13 @@
      },
      "family_fold": 318860,
      "family_used": "sgncb",
-     "parts": 26,
-     "records": 134,
+     "parts": 31,
+     "records": 139,
      "tracts": 93
     },
     "family_fold": "layers {'sgncb': 527696, 'sgncc': 318860}: one land in 2 layers, the sgncb copy used (318,860 ac of copies not added)",
     "manager": "",
-    "note": "134 joined records = 93 tracts: 15 copies of a tract (same acres, another layer) and 26 fee tracts under a designation record folded; summed 911939 -> 846556 acres",
+    "note": "139 joined records = 93 tracts: 15 copies of a tract (same acres, another layer) and 31 fee tracts under a designation record folded; summed 911969 -> 846556 acres",
     "pieces": [
      [
       "sgncb52",
@@ -12685,7 +12631,7 @@
     ],
     "pin": "inside",
     "src": "",
-    "unknown_pieces": 5
+    "unknown_pieces": 0
    },
    "owner_now": null,
    "pages": [
@@ -12728,7 +12674,7 @@
   "US-6928": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Needmore State Game Land",
    "official": null,
    "ours": {
@@ -12786,12 +12732,12 @@
    "verdict": "no size on page"
   },
   "US-6929": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
      "kind": "closed",
-     "line": "I I ) /.,, ,,,, \\ ,,. ,I / B :-: Gate Open Sep.1-Mar .1, Apr.1-End of Turkey Season :-: Permanently Closed Gate I) Public Parking 5; Boating Access Area - Secondary Road Trail Game Land NOTE: Camping is all",
+     "line": "I I ) /.,, ,,,, \\ ,,. ,I / B :-: Gate Open Sep.1-Mar.1, Apr.1-End of Turkey Season :-: Permanently Closed Gate I) Public Parking 5; Boating Access Area - Secondary Road Trail Game Land NOTE: Camping is all",
      "owner_now": null,
      "src": "https://www.ncwildlife.gov/media/836/download?attachment",
      "why": "the park's page (data/parkinfo)"
@@ -12800,44 +12746,37 @@
    "n": "Neuse River State Game Land",
    "official": null,
    "ours": {
-    "acres": 5738,
+    "acres": 5965,
     "dissolved": {
-     "after": 16018,
-     "before": 30835,
+     "after": 16107,
+     "before": 30878,
      "copies": 1,
      "families": {
-      "padus": 8872,
+      "padus": 3257,
+      "sgnca": 3966,
       "sgncb": 5965,
-      "sgncc": 1181
+      "sgncc": 2919
      },
-     "family_fold": 7146,
-     "family_used": "padus",
-     "key_union": 5738,
-     "parts": 7,
-     "records": 17,
-     "summed": 8872,
+     "family_fold": 10142,
+     "family_used": "sgncb",
+     "parts": 8,
+     "records": 18,
      "tracts": 9
     },
-    "family_fold": "layers {'sgncb': 5965, 'padus': 8872, 'sgncc': 1181}: one land in 3 layers, the padus copy used (7,146 ac of copies not added)",
+    "family_fold": "layers {'sgncb': 5965, 'sgnca': 3966, 'padus': 3257, 'sgncc': 2919}: one land in 4 layers, the sgncb copy used (10,142 ac of copies not added)",
     "manager": "",
-    "note": "17 joined records = 9 tracts: 1 copies of a tract (same acres, another layer) and 7 fee tracts under a designation record folded; summed 30835 -> 16018 acres",
+    "note": "18 joined records = 9 tracts: 1 copies of a tract (same acres, another layer) and 8 fee tracts under a designation record folded; summed 30878 -> 16107 acres",
     "pieces": [
      [
-      214802,
-      "Neuse River Game Land",
-      5615,
-      "name"
-     ],
-     [
-      211863,
-      "Neuse River Game Land",
-      3257,
+      "sgncb54",
+      "Neuse River",
+      5965,
       "name"
      ]
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 0
    },
    "owner_now": null,
    "pages": [
@@ -12867,7 +12806,7 @@
    "verdict": "no size on page"
   },
   "US-6930": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "New Lake State Game Land",
    "official": {
@@ -12875,21 +12814,19 @@
     "as": "1,420 acres",
     "clean": false,
     "line": "of Coastal Management, N.C. Wildlife Resources Commission, The Nature Conservancy Hyde and Tyrrell Counties (1,420 acres) Game Land Federal Land Permanently Closed Gate Secondary Road Trail 0 10.5 Miles",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Hyde and Tyrrell Counties (1,420 acres)",
     "url": "https://www.ncwildlife.gov/media/837/download?attachment",
     "why": "a map label (no sentence)"
    },
    "ours": {
-    "acres": 1506,
+    "acres": 1417,
     "dissolved": {
      "after": 1417,
      "before": 4672,
      "copies": 2,
-     "key_union": 1506,
      "parts": 3,
      "records": 6,
-     "summed": 1417,
      "tracts": 1
     },
     "manager": "",
@@ -12902,7 +12839,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -12920,12 +12857,12 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 6,
+   "pct": 0,
    "same_agency": false,
-   "score": 7,
+   "score": 8,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 2,
     "source": 2
    },
@@ -12947,7 +12884,7 @@
   "US-6931": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Nicholson Creek State Game Land",
    "official": null,
    "ours": {
@@ -13003,7 +12940,7 @@
    "verdict": "no size on page"
   },
   "US-6932": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
@@ -13017,7 +12954,7 @@
    "n": "North River State Game Land",
    "official": null,
    "ours": {
-    "acres": 28919,
+    "acres": 26654,
     "dissolved": {
      "after": 57810,
      "before": 122371,
@@ -13029,10 +12966,8 @@
      },
      "family_fold": 31156,
      "family_used": "sgncb",
-     "key_union": 28919,
      "parts": 13,
      "records": 23,
-     "summed": 26654,
      "tracts": 9
     },
     "family_fold": "layers {'sgncb': 26654, 'sgnca': 16528, 'sgncc': 14628}: one land in 3 layers, the sgncb copy used (31,156 ac of copies not added)",
@@ -13078,12 +13013,12 @@
    "verdict": "no size on page"
   },
   "US-6933": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Northwest River Marsh State Game Land",
    "official": null,
    "ours": {
-    "acres": 3210,
+    "acres": 2895,
     "dissolved": {
      "after": 4328,
      "before": 12978,
@@ -13094,10 +13029,8 @@
      },
      "family_fold": 1433,
      "family_used": "sgnca",
-     "key_union": 3210,
      "parts": 5,
      "records": 10,
-     "summed": 2895,
      "tracts": 3
     },
     "family_fold": "layers {'sgnca': 2895, 'sgncc': 1433}: one land in 2 layers, the sgnca copy used (1,433 ac of copies not added)",
@@ -13143,12 +13076,12 @@
    "verdict": "no size on page"
   },
   "US-6934": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Pee Dee River State Game Land",
    "official": null,
    "ours": {
-    "acres": 10883,
+    "acres": 8938,
     "dissolved": {
      "after": 27842,
      "before": 30976,
@@ -13161,10 +13094,8 @@
      },
      "family_fold": 18904,
      "family_used": "sgncb",
-     "key_union": 10883,
      "parts": 29,
      "records": 62,
-     "summed": 8938,
      "tracts": 31
     },
     "family_fold": "layers {'sgncb': 8938, 'sgnca': 6849, 'padus': 3978, 'sgncc': 8077}: one land in 4 layers, the sgncb copy used (18,904 ac of copies not added)",
@@ -13178,7 +13109,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 8
    },
@@ -13191,10 +13122,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -13206,7 +13137,7 @@
   "US-6935": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Perkins State Game Land",
    "official": null,
    "ours": {
@@ -13257,7 +13188,7 @@
   "US-6936": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Pisgah State Game Land",
    "official": null,
    "ours": {
@@ -13346,7 +13277,7 @@
   "US-6937": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Pisgah WRC State Game Land",
    "official": null,
    "ours": {
@@ -13404,7 +13335,7 @@
   },
   "US-6938": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Pond Mountain State Game Land",
    "official": {
@@ -13412,13 +13343,13 @@
     "as": "2,900 acre",
     "clean": false,
     "line": "nd Mountain now offers one of the largest public access game land properties in northwest North Carolina. The 2,900 acre game lands allows recreational opportunities such as horseback riding, hiking, fishing, hunting, and cross co",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "The 2,900 acre game lands allows recreational opportunities such as horseback riding, hiking, fishing, hunting, and cross country skiing.",
     "url": "https://blueridgeconservancy.org/pond-mountain-game-lands-1/",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 4799,
+    "acres": 4218,
     "dissolved": {
      "after": 10132,
      "before": 18240,
@@ -13430,7 +13361,7 @@
      },
      "family_fold": 6341,
      "family_used": "sgnca",
-     "key_union": 4799,
+     "key_union": 4218,
      "parts": 8,
      "records": 15,
      "summed": 3791,
@@ -13459,7 +13390,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 65,
+   "pct": 45,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -13484,21 +13415,13 @@
    "verdict": "off"
   },
   "US-6939": {
-   "checked": "2026-11-08",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Pungo River State Game Land",
-   "official": {
-    "acres": 350.0,
-    "as": "350 acres",
-    "clean": false,
-    "line": "Gum Beech UpperDowryCrk St Paul Rd 264 PUNGO RIVER GAME LAND N.C. Wildlife Resources Commission Hyde County (350 acres) Game Land Type Black Bear Sanctuary Non-WRC Boating Access Secondary Route 0 10.5 Miles",
-    "read": "2026-11-08",
-    "sent": "Hyde County (350 acres)",
-    "url": "https://www.ncwildlife.gov/media/841/download?attachment",
-    "why": "a map label (no sentence)"
-   },
+   "official": null,
    "ours": {
-    "acres": 320,
+    "acres": 472,
     "dissolved": {
      "after": 824,
      "before": 1522,
@@ -13510,10 +13433,8 @@
      },
      "family_fold": 352,
      "family_used": "padus",
-     "key_union": 320,
      "parts": 4,
      "records": 8,
-     "summed": 472,
      "tracts": 3
     },
     "family_fold": "layers {'padus': 472, 'sgnca': 350, 'sgncc': 2}: one land in 3 layers, the padus copy used (352 ac of copies not added)",
@@ -13545,13 +13466,12 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 9,
-   "same_agency": false,
-   "score": 8,
+   "pct": null,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 1,
     "source": 2
    },
    "sizes": [
@@ -13567,12 +13487,12 @@
    ],
    "t": "State Game Land",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "unsure"
   },
   "US-6940": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "R Wayne Bailey-Caswell State Game Land",
    "official": null,
    "ours": {
@@ -13636,7 +13556,7 @@
    "verdict": "no size on page"
   },
   "US-6941": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Little Fork Forest State Game Land",
    "official": {
@@ -13644,21 +13564,19 @@
     "as": "1,270 acres",
     "clean": false,
     "line": "rk Ck Rawhide Rd Rd Ivy HUFFMAN MOUNTAIN Summit Rd Twomile Br W hite OakRd N.C. Forest Service Wilkes County (1,270 acres) LITTLE FORK STATE FOREST GAME LAND Public Parking Hunter Vehicle Access Road Secondary Route Game Land 0 0.5",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Wilkes County (1,270 acres)",
     "url": "https://www.ncwildlife.gov/media/946/download?attachment",
     "why": "a map label (no sentence)"
    },
    "ours": {
-    "acres": 1137,
+    "acres": 1270,
     "dissolved": {
      "after": 1270,
      "before": 3810,
      "copies": 2,
-     "key_union": 1137,
      "parts": 0,
      "records": 3,
-     "summed": 1270,
      "tracts": 1
     },
     "manager": "",
@@ -13689,7 +13607,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 10,
+   "pct": 0,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -13714,7 +13632,7 @@
    "verdict": "agree"
   },
   "US-6942": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Rhodes Pond State Game Land",
    "official": {
@@ -13722,13 +13640,13 @@
     "as": "470 acres",
     "clean": false,
     "line": "Swamp South River Falcon Exit 70 RHODES POND GAME LAND N.C. Wildlife Resources Commission Cumberland County (470 acres) WRC Boating Access Area Public Fishing Area Game Land 0 0.50.25 Miles",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Cumberland County (470 acres)",
     "url": "https://www.ncwildlife.gov/media/842/download?attachment",
     "why": "a map label (no sentence)"
    },
    "ours": {
-    "acres": 496,
+    "acres": 503,
     "dissolved": {
      "after": 932,
      "before": 1874,
@@ -13739,7 +13657,7 @@
      },
      "family_fold": 461,
      "family_used": "sgnca",
-     "key_union": 496,
+     "key_union": 503,
      "parts": 0,
      "records": 4,
      "summed": 471,
@@ -13756,7 +13674,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -13774,12 +13692,12 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 6,
+   "pct": 7,
    "same_agency": false,
-   "score": 7,
+   "score": 8,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 2,
     "source": 2
    },
@@ -13799,7 +13717,7 @@
    "verdict": "agree"
   },
   "US-6944": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Rockfish Creek State Game Land",
    "official": {
@@ -13807,21 +13725,19 @@
     "as": "2,690 acres",
     "clean": false,
     "line": "rnpike Rd L McLaughlin Rd John RussellRd W Palm erSt 401 WallaceMcLean Rd The Nature Conservancy Hoke County (2,690 acres) ROCKFISH CREEK GAME LAND Game Land Safety Zone Secondary Road Federal Land 0 10.5 Miles",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Hoke County (2,690 acres)",
     "url": "https://www.ncwildlife.gov/media/893/download?attachment",
     "why": "a map label (no sentence)"
    },
    "ours": {
-    "acres": 2543,
+    "acres": 2689,
     "dissolved": {
      "after": 2689,
      "before": 8068,
      "copies": 1,
-     "key_union": 2543,
      "parts": 2,
      "records": 4,
-     "summed": 2689,
      "tracts": 1
     },
     "manager": "",
@@ -13852,7 +13768,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 5,
+   "pct": 0,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -13877,7 +13793,7 @@
    "verdict": "agree"
   },
   "US-6945": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
@@ -13894,18 +13810,18 @@
     "as": "390 acres",
     "clean": false,
     "line": "onville Camp Lejeune Old TownePointBlvd ROCKY RUN GAME LAND N.C. Wildlife Resources Commission Onslow County (390 acres) Game Land Federal Land Secondary Road Trail Permanently Closed Gate 0 0.50.25 Miles",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Onslow County (390 acres)",
     "url": "https://www.ncwildlife.gov/rocky-road-pdf/download?attachmen",
     "why": "a map label (no sentence)"
    },
    "ours": {
-    "acres": 367,
+    "acres": 419,
     "dissolved": {
      "after": 390,
      "before": 1560,
      "copies": 2,
-     "key_union": 367,
+     "key_union": 419,
      "parts": 2,
      "records": 5,
      "summed": 390,
@@ -13939,7 +13855,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 6,
+   "pct": 7,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -13965,12 +13881,12 @@
   },
   "US-6946": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Sampson State Game Land",
    "official": null,
    "ours": {
-    "acres": 248,
+    "acres": 638,
     "dissolved": {
      "after": 835,
      "before": 1363,
@@ -13981,10 +13897,8 @@
      },
      "family_fold": 197,
      "family_used": "sgnca",
-     "key_union": 248,
      "parts": 2,
      "records": 7,
-     "summed": 638,
      "tracts": 3
     },
     "family_fold": "layers {'sgnca': 638, 'ncg': 197}: one land in 2 layers, the sgnca copy used (197 ac of copies not added)",
@@ -14048,7 +13962,7 @@
   "US-6947": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Sandhills State Game Land",
    "official": null,
    "ours": {
@@ -14107,7 +14021,7 @@
   "US-6948": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Sandy Creek State Game Land",
    "official": null,
    "ours": {
@@ -14158,7 +14072,7 @@
   "US-6949": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Sandy Mush State Game Land",
    "official": null,
    "ours": {
@@ -14217,7 +14131,7 @@
   "US-6950": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Second Creek State Game Land",
    "official": null,
    "ours": {
@@ -14276,7 +14190,7 @@
   "US-6951": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Shocco Creek State Game Land",
    "official": null,
    "ours": {
@@ -14334,7 +14248,7 @@
   "US-6952": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "South Mountains State Game Land",
    "official": null,
    "ours": {
@@ -14392,7 +14306,7 @@
    "verdict": "no size on page"
   },
   "US-6953": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
@@ -14465,7 +14379,7 @@
    "verdict": "no size on page"
   },
   "US-6954": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
@@ -14505,7 +14419,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -14524,10 +14438,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -14537,7 +14451,7 @@
    "verdict": "no size on page"
   },
   "US-6955": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Sutton Lake State Game Land",
    "official": {
@@ -14545,7 +14459,7 @@
     "as": "1,340 acres",
     "clean": false,
     "line": "d Wilmington 133 421 River Cape Fear 140 17 74 SUTTON LAKE GAME LAND Duke Energy Progress New Hanover County (1,340 acres) WRC Boating Access Area Public Fishing Area Secondary Road Trail Archery Zone Restricted Firearms Zone 0 10.",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "New Hanover County (1,340 acres)",
     "url": "https://www.ncwildlife.gov/media/847/download?attachment",
     "why": "a map label (no sentence)"
@@ -14570,7 +14484,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -14590,10 +14504,10 @@
    ],
    "pct": 1,
    "same_agency": false,
-   "score": 8,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 2,
     "source": 2
    },
@@ -14615,7 +14529,7 @@
   "US-6956": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Tar River State Game Land",
    "official": null,
    "ours": {
@@ -14671,7 +14585,7 @@
    "verdict": "no size on page"
   },
   "US-6957": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Texas Plantation State Game Land",
    "official": {
@@ -14679,7 +14593,7 @@
     "as": "1,500 acres",
     "clean": false,
     "line": "TEXAS PLANTATION GAME LAND N.C. Wildlife Resources Commission Tyrrell County (1,500 acres) Ford Landing Buzzard Pt Little Alligator River Little Alligator River Fort Landing Rd Alligator River Game L",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Tyrrell County (1,500 acres)",
     "url": "https://www.ncwildlife.gov/media/849/download?attachment",
     "why": "a map label (no sentence)"
@@ -14749,7 +14663,7 @@
   "US-6958": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Thurmond Chatham State Game Land",
    "official": null,
    "ours": {
@@ -14813,7 +14727,7 @@
   "US-6959": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Tillery State Game Land",
    "official": null,
    "ours": {
@@ -14870,7 +14784,7 @@
   "US-6960": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Toxaway State Game Land",
    "official": null,
    "ours": {
@@ -14929,7 +14843,7 @@
   "US-6961": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Upper Roanoke River State Game Land",
    "official": null,
    "ours": {
@@ -14987,7 +14901,7 @@
   "US-6962": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Uwharrie State Game Land",
    "official": null,
    "ours": {
@@ -15044,7 +14958,7 @@
    "verdict": "no size on page"
   },
   "US-6963": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Nutbush Wildlife Management Area",
    "ours": null,
@@ -15055,20 +14969,18 @@
   },
   "US-6964": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Voice of America State Game Land",
    "official": null,
    "ours": {
-    "acres": 2391,
+    "acres": 2827,
     "dissolved": {
      "after": 2827,
      "before": 11273,
      "copies": 3,
-     "key_union": 2391,
      "parts": 0,
      "records": 5,
-     "summed": 2827,
      "tracts": 2
     },
     "manager": "",
@@ -15131,12 +15043,12 @@
   },
   "US-6965": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "White Oak River State Game Land",
    "official": null,
    "ours": {
-    "acres": 3123,
+    "acres": 2597,
     "dissolved": {
      "after": 3737,
      "before": 11522,
@@ -15147,10 +15059,8 @@
      },
      "family_fold": 1140,
      "family_used": "sgnca",
-     "key_union": 3123,
      "parts": 2,
      "records": 9,
-     "summed": 2597,
      "tracts": 5
     },
     "family_fold": "layers {'sgnca': 2597, 'sgncc': 1140}: one land in 2 layers, the sgnca copy used (1,140 ac of copies not added)",
@@ -15207,7 +15117,7 @@
    "verdict": "unsure"
   },
   "US-6966": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Whitehall Plantation State Game Land",
    "official": {
@@ -15215,13 +15125,13 @@
     "as": "7,025 acres",
     "clean": false,
     "line": "EHALL PLANTATION GAME LAND ildlife Resources Commission, The Nature Conservancy Bladen and Pender Counties (7,025 acres)",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Bladen and Pender Counties (7,025 acres)",
     "url": "https://www.ncwildlife.gov/media/852/download?attachment",
     "why": "a map label (no sentence)"
    },
    "ours": {
-    "acres": 6734,
+    "acres": 7084,
     "dissolved": {
      "after": 12037,
      "before": 20229,
@@ -15234,8 +15144,10 @@
      },
      "family_fold": 5303,
      "family_used": "sgncb",
+     "key_union": 7084,
      "parts": 3,
      "records": 13,
+     "summed": 6734,
      "tracts": 9
     },
     "family_fold": "layers {'sgncb': 6734, 'padus': 1835, 'sgnca': 1438, 'sgncc': 2030}: one land in 4 layers, the sgncb copy used (5,303 ac of copies not added)",
@@ -15267,7 +15179,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 4,
+   "pct": 1,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -15294,7 +15206,7 @@
   "US-6967": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "William H Silver State Game Land",
    "official": null,
    "ours": {
@@ -15350,7 +15262,7 @@
    "verdict": "no size on page"
   },
   "US-8005": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Fontana TVA Dam National Recreation Area",
    "ours": null,
@@ -15360,8 +15272,7 @@
    "verdict": "no outline"
   },
   "US-8006": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Rachel Carson State Reserve",
    "official": {
@@ -15369,21 +15280,19 @@
     "as": "2,315 acres",
     "clean": false,
     "line": "orth River Channel, is almost two miles long and less than a mile wide. The entire Rachel Carson component is 2,315 acres. Acquisition of the area was completed in 1985, with the addition of Middle Marsh in 1989. This site is also",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "The entire Rachel Carson component is 2,315 acres.",
     "url": "https://deq.nc.gov/about/divisions/coastal-management/nc-coastal-reserve/reserve-sites/rachel-carson-reserve",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 1012,
+    "acres": 2315,
     "dissolved": {
      "after": 2315,
      "before": 4630,
      "copies": 1,
-     "key_union": 1012,
      "parts": 0,
      "records": 2,
-     "summed": 2315,
      "tracts": 1
     },
     "manager": "",
@@ -15414,13 +15323,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 56,
+   "pct": 0,
    "same_agency": false,
-   "score": 5,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -15436,15 +15345,15 @@
    ],
    "t": "State Reserve",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-8007": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Edenton National Fish Hatchery",
    "official": null,
    "ours": {
-    "acres": 51,
+    "acres": 66,
     "family_fold": "layers {'sgnca': 66, 'padus': 122}: one land in 2 layers, the padus copy used (66 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -15490,7 +15399,7 @@
   "US-8008": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Armstrong State Fish Hatchery",
    "official": null,
    "ours": {
@@ -15533,7 +15442,7 @@
   "US-8009": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Marion State Fish Hatchery",
    "official": null,
    "ours": {
@@ -15584,7 +15493,7 @@
    "verdict": "no size on page"
   },
   "US-8010": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "McKinney Lake State Fish Hatchery",
    "ours": null,
@@ -15594,7 +15503,7 @@
    "verdict": "no outline"
   },
   "US-8011": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bobby N. Setzer State Fish Hatchery",
    "ours": null,
@@ -15606,7 +15515,7 @@
   "US-8012": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Table Rock State Fish Hatchery",
    "official": null,
    "ours": {
@@ -15649,7 +15558,7 @@
   "US-8013": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Watha State Fish Hatchery",
    "official": null,
    "ours": {
@@ -15698,7 +15607,7 @@
    "verdict": "no size on page"
   },
   "US-8226": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Upchurch Lake State Fishing Lake",
    "ours": null,
@@ -15708,15 +15617,15 @@
    "verdict": "no outline"
   },
   "US-8313": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Mountains to Sea State Trail",
-   "note": "whole park compared (POTA lists it in 1 states: {'US-NC': 3252})",
+   "note": "whole park compared (POTA lists it in 1 states: {'US-NC': 1087})",
    "official": null,
    "ours": {
-    "acres": 3252,
+    "acres": 1087,
     "acres_by_state": {
-     "US-NC": 3252
+     "US-NC": 1087
     },
     "family_fold": "layers {'padus': 814, 'sgnca': 256}: one land in 2 layers, the padus copy used (256 ac of copies not added)",
     "manager": "",
@@ -15775,20 +15684,18 @@
    "verdict": "no size on page"
   },
   "US-9372": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Governor Caswell Memorial State Historic Site",
    "official": null,
    "ours": {
-    "acres": 37,
+    "acres": 48,
     "dissolved": {
      "after": 48,
      "before": 96,
      "copies": 1,
-     "key_union": 37,
      "parts": 0,
      "records": 2,
-     "summed": 48,
      "tracts": 1
     },
     "manager": "",
@@ -15832,26 +15739,46 @@
    "verdict": "no size on page"
   },
   "US-9758": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Chattooga National Wild and Scenic River",
-   "note": "whole park compared (POTA lists it in 1 states: {'US-NC': 40})",
+   "note": "whole park compared (POTA lists it in 3 states: {'US-GA': 16528, 'US-NC': 16568, 'US-SC': 16528})",
    "official": null,
    "ours": {
-    "acres": 40,
+    "acres": 49624,
     "acres_by_state": {
-     "US-NC": 40
+     "US-GA": 16528,
+     "US-NC": 16568,
+     "US-SC": 16528
     },
     "manager": "",
     "pieces": [
      [
+      "fwsr180",
+      "Chattooga, North Carolina, South Carolina and Georgia National Wild and Scenic River",
+      10971,
+      "reviewed"
+     ],
+     [
+      "fwsr6",
+      "Chattooga, North Carolina, South Carolina and Georgia National Wild and Scenic River",
+      4651,
+      "reviewed"
+     ],
+     [
+      "fwsr95",
+      "Chattooga, North Carolina, South Carolina and Georgia National Wild and Scenic River",
+      906,
+      "reviewed"
+     ],
+     [
       "sgnca9068",
       "Chattooga National Wild and Scenic River",
       40,
-      "name"
+      "reviewed"
      ]
     ],
-    "pin": "well outside",
+    "pin": "inside",
     "src": "",
     "states": [
      "US-GA",
@@ -15880,12 +15807,12 @@
     }
    ],
    "pct": null,
-   "score": 4,
+   "score": 6,
    "score_parts": {
-    "name": 2,
-    "pin": 0,
+    "name": 1,
+    "pin": 2,
     "size": 1,
-    "source": 1
+    "source": 2
    },
    "sizes": [],
    "t": "National Wild and Scenic River",
@@ -15893,5 +15820,5 @@
    "verdict": "no size on page"
   }
  },
- "read": "2026-11-15"
+ "read": "2026-11-22"
 }

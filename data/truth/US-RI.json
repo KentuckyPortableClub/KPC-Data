@@ -2,45 +2,28 @@
  "about": "Park truth checker: official acreage vs our outline, handover hints, second-witness score. Review lists only: nothing here changes a key or a card.",
  "area": "US-RI",
  "counts": {
-  "agree": 1,
-  "handover_hints": 2,
-  "no_page": 1,
-  "no_size": 41,
-  "off": 3,
-  "ours_unknown": 2,
+  "agree": 8,
+  "handover_hints": 3,
+  "no_page": 0,
+  "no_size": 34,
+  "not_read": 1,
+  "off": 0,
+  "ours_unknown": 1,
   "parks": 61,
   "retired": 0,
-  "unsure": 9,
-  "weak": 13,
+  "unsure": 14,
+  "weak": 8,
   "with_outline": 58
  },
  "parks": {
   "US-0513": {
-   "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-11-09",
-   "handover": [
-    {
-     "date_hint": "1973",
-     "kind": "transfer",
-     "line": "le to appreciate the natural environment of the island. The refuge was established in 1973 with the transfer of 28 acres from the U.S. Coast Guard, and has grown to its current size of 134 acres today. Block Island National Wildlife Refuge is administered as part of the Rhode Island National Wildlif",
-     "owner_now": "U.S",
-     "src": "https://www.fws.gov/refuge/block-island/about-us",
-     "why": "FWS refuge about page"
-    }
-   ],
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-22",
+   "handover": [],
    "n": "Block Island National Wildlife Refuge",
-   "official": {
-    "acres": 134.0,
-    "as": "134 acres",
-    "clean": false,
-    "line": "blished in 1973 with the transfer of 28 acres from the U.S. Coast Guard, and has grown to its current size of 134 acres today. Block Island National Wildlife Refuge is administered as part of the Rhode Island National Wildlife Re",
-    "read": "2026-11-09",
-    "sent": "Coast Guard, and has grown to its current size of 134 acres today.",
-    "url": "https://www.fws.gov/refuge/block-island/about-us",
-    "why": "total-looking"
-   },
+   "official": null,
    "ours": {
-    "acres": 183,
+    "acres": 219,
     "manager": "",
     "pieces": [
      [
@@ -72,7 +55,7 @@
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
-   "owner_now": "U.S",
+   "owner_now": null,
    "pages": [
     {
      "status": "ok",
@@ -81,80 +64,74 @@
     },
     {
      "other_unit": true,
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/block-island/visit-us/rules-policies",
      "why": "rules page (documents bot)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/block-island/about-us",
      "why": "FWS refuge about page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/block-island",
+     "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
     }
    ],
-   "pct": 37,
-   "same_agency": false,
-   "score": 5,
+   "pct": null,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 0,
+    "size": 1,
     "source": 2
    },
    "sizes": [
     {
      "acres": 28.0,
-     "as": "28 acres",
+     "as": "28 acre",
      "clean": false,
-     "line": "to appreciate the natural environment of the island. The refuge was established in 1973 with the transfer of 28 acres from the U.S. Coast Guard, and has grown to its current size of 134 acres today. Block Island National Wildli",
+     "line": "g a member of the Friends of the National Wildlife Refuges of Rhode Island . About Established in 1973 from a 28-acre U.S. Coast Guard transfer, Block Island National Wildlife Refuge has grown to 134 acres and is part of the Rh",
      "total_like": false,
-     "url": "https://www.fws.gov/refuge/block-island/about-us",
+     "url": "https://www.fws.gov/refuge/block-island",
      "why": "history"
     },
     {
      "acres": 134.0,
      "as": "134 acres",
      "clean": false,
-     "line": "blished in 1973 with the transfer of 28 acres from the U.S. Coast Guard, and has grown to its current size of 134 acres today. Block Island National Wildlife Refuge is administered as part of the Rhode Island National Wildlife Re",
-     "total_like": true,
-     "url": "https://www.fws.gov/refuge/block-island/about-us",
-     "why": "total-looking"
-    },
-    {
-     "acres": 787.0,
-     "as": "787 acres",
-     "clean": false,
-     "line": "tory birds. National Wildlife Refuge Middletown, RI Trustom Pond National Wildlife Refuge The refuge includes 787 acres of various wildlife habitats including fields, shrublands, woodlands, fresh and saltwater ponds and sandy bea",
+     "line": "ablished in 1973 from a 28-acre U.S. Coast Guard transfer, Block Island National Wildlife Refuge has grown to 134 acres and is part of the Rhode Island National Wildlife Refuge Complex. The refuge is internationally recognized as",
      "total_like": false,
-     "url": "https://www.fws.gov/refuge/block-island/about-us",
+     "url": "https://www.fws.gov/refuge/block-island",
      "why": "part (a lake, a purchase, a campground…)"
     }
    ],
    "t": "National Wildlife Refuge",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "unsure"
   },
   "US-0514": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "John H. Chafee National Wildlife Refuge",
    "official": {
     "acres": 550.0,
     "as": "550 acre",
     "clean": false,
-    "line": "tory waterfowl that rely on it, including the largest population of black ducks in Rhode Island. In fact, the 550-acre refuge was established specifically to protect the population of black ducks that winter there. The refuge’s",
-    "read": "2026-11-09",
-    "sent": "In fact, the 550-acre refuge was established specifically to protect the population of black ducks that winter there.",
-    "url": "https://www.fws.gov/refuge/john-h-chafee/about-us",
-    "why": "total-looking"
+    "line": "or the continuing benefit of the American people. View volunteer opportunities About Established in 1973, the 550-acre John H. Chafee National Wildlife Refuge at Pettaquamscutt Cove was created primarily to protect the wintering",
+    "read": "2026-11-22",
+    "sent": "Established in 1973, the 550-acre John H.",
+    "url": "https://www.fws.gov/refuge/john_h_chafee/",
+    "why": "history"
    },
    "ours": {
-    "acres": 334,
+    "acres": 502,
     "dissolved": {
      "after": 562,
      "before": 1124,
      "copies": 1,
-     "key_union": 334,
+     "key_union": 502,
      "parts": 0,
      "records": 2,
      "summed": 562,
@@ -182,13 +159,8 @@
      "why": "the park's page (data/parkinfo)"
     },
     {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/john-h-chafee/about-us",
-     "why": "about / history page of the park's site"
-    },
-    {
      "other_unit": true,
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/john-h-chafee/visit-us/rules-policies",
      "why": "rules page (documents bot)"
     },
@@ -203,13 +175,13 @@
      "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
     }
    ],
-   "pct": 39,
+   "pct": 9,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -217,41 +189,38 @@
      "acres": 550.0,
      "as": "550 acre",
      "clean": false,
-     "line": "tory waterfowl that rely on it, including the largest population of black ducks in Rhode Island. In fact, the 550-acre refuge was established specifically to protect the population of black ducks that winter there. The refuge’s",
-     "total_like": true,
-     "url": "https://www.fws.gov/refuge/john-h-chafee/about-us",
-     "why": "total-looking"
-    },
-    {
-     "acres": 787.0,
-     "as": "787 acres",
-     "clean": false,
-     "line": "tory birds. National Wildlife Refuge Middletown, RI Trustom Pond National Wildlife Refuge The refuge includes 787 acres of various wildlife habitats including fields, shrublands, woodlands, fresh and saltwater ponds and sandy bea",
+     "line": "or the continuing benefit of the American people. View volunteer opportunities About Established in 1973, the 550-acre John H. Chafee National Wildlife Refuge at Pettaquamscutt Cove was created primarily to protect the wintering",
      "total_like": false,
-     "url": "https://www.fws.gov/refuge/john-h-chafee/about-us",
-     "why": "part (a lake, a purchase, a campground…)"
+     "url": "https://www.fws.gov/refuge/john_h_chafee/",
+     "why": "history"
     }
    ],
    "t": "National Wildlife Refuge",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-0515": {
-   "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Ninigret National Wildlife Refuge",
-   "official": null,
+   "official": {
+    "acres": 858.0,
+    "as": "858 acres",
+    "clean": false,
+    "line": "benefit of the American people. Jobs About Established in 1970, Ninigret National Wildlife Refuge consists of 858 acres of diverse upland and wetland habitats including grasslands, shrub lands, and wooded swamps. Formerly part of",
+    "read": "2026-11-22",
+    "sent": "Established in 1970, Ninigret National Wildlife Refuge consists of 858 acres of diverse upland and wetland habitats including grasslands, shrub lands, and wooded swamps.",
+    "url": "https://www.fws.gov/refuge/ninigret",
+    "why": "history"
+   },
    "ours": {
-    "acres": 575,
+    "acres": 882,
     "dissolved": {
      "after": 882,
      "before": 1764,
      "copies": 1,
-     "key_union": 575,
      "parts": 0,
      "records": 2,
-     "summed": 882,
      "tracts": 1
     },
     "manager": "",
@@ -276,33 +245,24 @@
      "why": "the park's page (data/parkinfo)"
     },
     {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/ninigret/about-us",
-     "why": "about / history page of the park's site"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/ninigret/visit-us",
-     "why": "about / history page of the park's site"
-    },
-    {
      "other_unit": true,
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/ninigret/visit-us/rules-policies",
      "why": "rules page (documents bot)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/ninigret/about-us",
      "why": "FWS refuge about page"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 3,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -310,77 +270,41 @@
      "acres": 858.0,
      "as": "858 acres",
      "clean": false,
-     "line": "Wildlife Refuge is one of five national wildlife refuges in Rhode Island. Established in 1970, it consists of 858 acres of diverse upland and wetland habitats including grasslands, shrub lands, wooded swamps and freshwater ponds.",
+     "line": "benefit of the American people. Jobs About Established in 1970, Ninigret National Wildlife Refuge consists of 858 acres of diverse upland and wetland habitats including grasslands, shrub lands, and wooded swamps. Formerly part of",
      "total_like": false,
-     "url": "https://www.fws.gov/refuge/ninigret/about-us",
+     "url": "https://www.fws.gov/refuge/ninigret",
      "why": "history"
-    },
-    {
-     "acres": 787.0,
-     "as": "787 acres",
-     "clean": false,
-     "line": "tory birds. National Wildlife Refuge Middletown, RI Trustom Pond National Wildlife Refuge The refuge includes 787 acres of various wildlife habitats including fields, shrublands, woodlands, fresh and saltwater ponds and sandy bea",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/ninigret/about-us",
-     "why": "part (a lake, a purchase, a campground…)"
-    },
-    {
-     "acres": 787.0,
-     "as": "787 acres",
-     "clean": false,
-     "line": "tory birds. National Wildlife Refuge Middletown, RI Trustom Pond National Wildlife Refuge The refuge includes 787 acres of various wildlife habitats including fields, shrublands, woodlands, fresh and saltwater ponds and sandy bea",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/ninigret/visit-us",
-     "why": "part (a lake, a purchase, a campground…)"
-    },
-    {
-     "acres": 858.0,
-     "as": "858 acres",
-     "clean": false,
-     "line": "Wildlife Refuge is one of five national wildlife refuges in Rhode Island. Established in 1970, it consists of 858 acres of diverse upland and wetland habitats including grasslands, shrub lands, wooded swamps and freshwater ponds.",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/ninigret/about-us",
-     "why": "history"
-    },
-    {
-     "acres": 787.0,
-     "as": "787 acres",
-     "clean": false,
-     "line": "tory birds. National Wildlife Refuge Middletown, RI Trustom Pond National Wildlife Refuge The refuge includes 787 acres of various wildlife habitats including fields, shrublands, woodlands, fresh and saltwater ponds and sandy bea",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/ninigret/about-us",
-     "why": "part (a lake, a purchase, a campground…)"
     }
    ],
    "t": "National Wildlife Refuge",
    "ver": 15,
-   "verdict": "unsure"
+   "verdict": "agree"
   },
   "US-0516": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
      "kind": "managed by",
-     "line": "oint National Wildlife Refuge! This refuge is one of five National Wildlife Refuges in Rhode Island managed by the U.S. Fish and Wildlife Service. There are over 570 National Wildlife Refuges in the United States and its territories, and our mission",
+     "line": "Rhode Island. About Sachuest Point National Wildlife Refuge is one of five refuges in Rhode Island managed by the U.S. Fish and Wildlife Service to protect coastal habitats. The refuge is specifically managed for migratory species like the piping plover, snowy ow",
      "owner_now": "U.S",
-     "src": "https://www.fws.gov/refuge/sachuest-point/about-us",
-     "why": "about / history page of the park's site"
+     "src": "https://www.fws.gov/refuge/sachuest-point",
+     "why": "the park's page (data/parkinfo)"
     }
    ],
    "n": "Sachuest Point National Wildlife Refuge",
    "official": {
     "acres": 242.0,
-    "as": "242 acre",
+    "as": "242 acres",
     "clean": false,
-    "line": "In 1970, a land donation from the Audubon Society of Rhode Island and land transfers from the Navy led to the 242 acre refuge that you see today, which serves as an important stopover and wintering area for migratory birds. Othe",
-    "read": "2026-11-09",
-    "sent": "In 1970, a land donation from the Audubon Society of Rhode Island and land transfers from the Navy led to the 242 acre refuge that you see today, which serves as an important stopover and wintering area for migratory birds.",
-    "url": "https://www.fws.gov/refuge/sachuest-point/about-us",
-    "why": "history"
+    "line": "visitors annually, the site offers activities like photography, wildlife observation, and fishing across its 242 acres of undeveloped coastline. About Us Get Involved Rules & Policies Sachuest Point National Wildlife Refuge 769",
+    "read": "2026-11-22",
+    "sent": "Attracting over 320,000 visitors annually, the site offers activities like photography, wildlife observation, and fishing across its 242 acres of undeveloped coastline.",
+    "url": "https://www.fws.gov/refuge/sachuest-point",
+    "why": "no total words near it"
    },
    "ours": {
-    "acres": 237,
+    "acres": 242,
     "manager": "",
     "pieces": [
      [
@@ -408,28 +332,18 @@
      "why": "the park's page (data/parkinfo)"
     },
     {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/sachuest-point/about-us",
-     "why": "about / history page of the park's site"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/sachuest-point/visit-us",
-     "why": "about / history page of the park's site"
-    },
-    {
      "other_unit": true,
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/sachuest-point/visit-us/rules-policies",
      "why": "rules page (documents bot)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/sachuest-point/about-us",
      "why": "FWS refuge about page"
     }
    ],
-   "pct": 2,
+   "pct": 0,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -441,48 +355,12 @@
    "sizes": [
     {
      "acres": 242.0,
-     "as": "242 acre",
+     "as": "242 acres",
      "clean": false,
-     "line": "In 1970, a land donation from the Audubon Society of Rhode Island and land transfers from the Navy led to the 242 acre refuge that you see today, which serves as an important stopover and wintering area for migratory birds. Othe",
+     "line": "visitors annually, the site offers activities like photography, wildlife observation, and fishing across its 242 acres of undeveloped coastline. About Us Get Involved Rules & Policies Sachuest Point National Wildlife Refuge 769",
      "total_like": false,
-     "url": "https://www.fws.gov/refuge/sachuest-point/about-us",
-     "why": "history"
-    },
-    {
-     "acres": 787.0,
-     "as": "787 acres",
-     "clean": false,
-     "line": "diverse... National Wildlife Refuge Charlestown, RI Trustom Pond National Wildlife Refuge The refuge includes 787 acres of various wildlife habitats including fields, shrublands, woodlands, fresh and saltwater ponds and sandy bea",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/sachuest-point/about-us",
-     "why": "part (a lake, a purchase, a campground…)"
-    },
-    {
-     "acres": 787.0,
-     "as": "787 acres",
-     "clean": false,
-     "line": "diverse... National Wildlife Refuge Charlestown, RI Trustom Pond National Wildlife Refuge The refuge includes 787 acres of various wildlife habitats including fields, shrublands, woodlands, fresh and saltwater ponds and sandy bea",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/sachuest-point/visit-us",
-     "why": "part (a lake, a purchase, a campground…)"
-    },
-    {
-     "acres": 242.0,
-     "as": "242 acre",
-     "clean": false,
-     "line": "In 1970, a land donation from the Audubon Society of Rhode Island and land transfers from the Navy led to the 242 acre refuge that you see today, which serves as an important stopover and wintering area for migratory birds. Othe",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/sachuest-point/about-us",
-     "why": "history"
-    },
-    {
-     "acres": 787.0,
-     "as": "787 acres",
-     "clean": false,
-     "line": "diverse... National Wildlife Refuge Charlestown, RI Trustom Pond National Wildlife Refuge The refuge includes 787 acres of various wildlife habitats including fields, shrublands, woodlands, fresh and saltwater ponds and sandy bea",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/sachuest-point/about-us",
-     "why": "part (a lake, a purchase, a campground…)"
+     "url": "https://www.fws.gov/refuge/sachuest-point",
+     "why": "no total words near it"
     }
    ],
    "t": "National Wildlife Refuge",
@@ -490,30 +368,19 @@
    "verdict": "agree"
   },
   "US-0517": {
-   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 52 acre, no total words near it)",
-   "checked": "2026-11-09",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Trustom Pond National Wildlife Refuge",
-   "official": {
-    "acres": 52.0,
-    "as": "52 acre",
-    "clean": false,
-    "line": "north; and by private land to the northeast and east. East of its main body, the refuge also owns a separate 52-acre parcel, bordered by private farmland to the west and east, Matunuck Schoolhouse Road on the north, and Card P",
-    "read": "2026-11-09",
-    "sent": "East of its main body, the refuge also owns a separate 52-acre parcel, bordered by private farmland to the west and east, Matunuck Schoolhouse Road on the north, and Card Ponds Road on the south.",
-    "url": "https://www.fws.gov/refuge/trustom-pond/about-us",
-    "why": "no total words near it"
-   },
+   "official": null,
    "ours": {
-    "acres": 598,
+    "acres": 663,
     "dissolved": {
      "after": 663,
      "before": 1326,
      "copies": 1,
-     "key_union": 598,
      "parts": 0,
      "records": 2,
-     "summed": 663,
      "tracts": 1
     },
     "manager": "",
@@ -526,21 +393,16 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
    "owner_now": null,
    "pages": [
     {
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/trustom-pond/visit-us",
      "why": "the park's page (data/parkinfo)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/trustom-pond/about-us",
-     "why": "about / history page of the park's site"
     },
     {
      "status": "ok",
@@ -549,12 +411,12 @@
     },
     {
      "other_unit": true,
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/trustom-pond/visit-us/rules-policies",
      "why": "rules page (documents bot)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/trustom-pond/about-us",
      "why": "FWS refuge about page"
     },
@@ -564,79 +426,15 @@
      "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
     }
    ],
-   "pct": 1050,
-   "same_agency": false,
-   "score": 6,
+   "pct": null,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
    "sizes": [
-    {
-     "acres": 787.0,
-     "as": "787 acres",
-     "clean": false,
-     "line": "ion programs Trapping View All Activities Trails Take a hike in this captivating coastal refuge that includes 787 acres of various wildlife habitats including fields, shrublands, woodlands, fresh and saltwater ponds and sandy bea",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/trustom-pond/visit-us",
-     "why": "part (a lake, a purchase, a campground…)"
-    },
-    {
-     "acres": 52.0,
-     "as": "52 acre",
-     "clean": false,
-     "line": "north; and by private land to the northeast and east. East of its main body, the refuge also owns a separate 52-acre parcel, bordered by private farmland to the west and east, Matunuck Schoolhouse Road on the north, and Card P",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/trustom-pond/about-us",
-     "why": "no total words near it"
-    },
-    {
-     "acres": 365.0,
-     "as": "365 acres",
-     "clean": false,
-     "line": "olhouse Road on the north, and Card Ponds Road on the south. In 1974, Mrs. Ann Kenyon Morse donated the first 365 acres to the refuge. In 1982, The Audubon Society of Rhode Island donated 151 acres. The refuge now includes 787 ac",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/trustom-pond/about-us",
-     "why": "part (a lake, a purchase, a campground…)"
-    },
-    {
-     "acres": 151.0,
-     "as": "151 acres",
-     "clean": false,
-     "line": "Kenyon Morse donated the first 365 acres to the refuge. In 1982, The Audubon Society of Rhode Island donated 151 acres. The refuge now includes 787 acres in either fee title or conservation easement conservation easement A conse",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/trustom-pond/about-us",
-     "why": "history"
-    },
-    {
-     "acres": 787.0,
-     "as": "787 acres",
-     "clean": false,
-     "line": "acres to the refuge. In 1982, The Audubon Society of Rhode Island donated 151 acres. The refuge now includes 787 acres in either fee title or conservation easement conservation easement A conservation easement is a voluntary leg",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/trustom-pond/about-us",
-     "why": "part (a lake, a purchase, a campground…)"
-    },
-    {
-     "acres": 1283.0,
-     "as": "1,283 acres",
-     "clean": false,
-     "line": "out conservation easement . The Land Protection Plan (Appendix E) expanded the refuge acquisition boundary by 1,283 acres. The refuge may now acquire up to 1,536 acres from willing sellers within the newly expanded acquisition boun",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/trustom-pond/about-us",
-     "why": "history"
-    },
-    {
-     "acres": 1536.0,
-     "as": "1,536 acres",
-     "clean": false,
-     "line": "n Plan (Appendix E) expanded the refuge acquisition boundary by 1,283 acres. The refuge may now acquire up to 1,536 acres from willing sellers within the newly expanded acquisition boundary. Our Mission Refuge Purposes: Each unit o",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/trustom-pond/about-us",
-     "why": "history"
-    },
     {
      "acres": 365.0,
      "as": "365 acres",
@@ -645,6 +443,24 @@
      "total_like": false,
      "url": "https://www.fws.gov/sites/default/files/documents/Trustom%20Pond%20NWR%20Trail%20Map.pdf",
      "why": "a map label (no sentence)"
+    },
+    {
+     "acres": 787.0,
+     "as": "787 acres",
+     "clean": false,
+     "line": "tate. In 1974, Mrs. Ann Kenyon Morse donated the first 365 acres to the r efuge. Today, the refuge includes 787 acres of various wildlife habitats including fields, shrublands, woodlands, saltwater ponds and sandy beaches. App",
+     "total_like": false,
+     "url": "https://www.fws.gov/sites/default/files/documents/Trustom%20Pond%20NWR%20Trail%20Map.pdf",
+     "why": "a map label (no sentence)"
+    },
+    {
+     "acres": 787.0,
+     "as": "787 acres",
+     "clean": false,
+     "line": "he south coast of Rhode Island in South Kingstown. Established in 1974 through a donation, it now encompasses 787 acres of diverse habitats managed as a sanctuary for migratory birds. The landscape features coastal salt ponds and",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/trustom-pond",
+     "why": "history"
     }
    ],
    "t": "National Wildlife Refuge",
@@ -652,7 +468,7 @@
    "verdict": "unsure"
   },
   "US-0789": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Roger Williams National Memorial",
    "official": null,
@@ -720,7 +536,7 @@
   },
   "US-10541": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 33 acres, no total words near it)",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Gull Cove State Recreation Area",
    "official": {
@@ -728,28 +544,26 @@
     "as": "33 acres",
     "clean": false,
     "line": "to Harkney Hill Rd., 2 miles on right. Cement slab (S) State-owned & operated None Yes Exeter Breakheart Pond 33 acres. In Arcadia Management Area. Rt. 3, to Rt. 165, to Frosty Hollow Rd., to Austin Farm Rd., ¼ mile. Gravel ramp",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Breakheart Pond 33 acres.",
     "url": "https://dem.ri.gov/natural-resources-bureau/fish-wildlife/freshwater-fishing/public-boat-launching-sites#salt",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 4,
+    "acres": 3,
     "dissolved": {
      "after": 3,
      "before": 9,
      "copies": 2,
-     "key_union": 4,
      "parts": 0,
      "records": 3,
-     "summed": 3,
      "tracts": 1
     },
     "manager": "",
     "note": "3 joined records = 1 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 9 -> 3 acres",
     "pieces": [
      [
-      "sgria713",
+      "sgrib678",
       "Gull Cove Fishing Area",
       3,
       "name"
@@ -784,7 +598,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 88,
+   "pct": 91,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -873,7 +687,7 @@
   },
   "US-10542": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 33 acres, no total words near it)",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Camp Cronin State Recreation Area",
    "official": {
@@ -881,31 +695,29 @@
     "as": "33 acres",
     "clean": false,
     "line": "to Harkney Hill Rd., 2 miles on right. Cement slab (S) State-owned & operated None Yes Exeter Breakheart Pond 33 acres. In Arcadia Management Area. Rt. 3, to Rt. 165, to Frosty Hollow Rd., to Austin Farm Rd., ¼ mile. Gravel ramp",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Breakheart Pond 33 acres.",
     "url": "https://dem.ri.gov/natural-resources-bureau/fish-wildlife/freshwater-fishing/public-boat-launching-sites#salt",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 14,
+    "acres": 26,
     "dissolved": {
      "after": 26,
      "before": 78,
      "copies": 2,
-     "key_union": 14,
      "parts": 0,
      "records": 3,
-     "summed": 26,
      "tracts": 1
     },
     "manager": "",
     "note": "3 joined records = 1 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 78 -> 26 acres",
     "pieces": [
      [
-      "sgria680",
+      "sgrib648",
       "Camp Cronin",
       26,
-      "reviewed"
+      "name"
      ]
     ],
     "pin": "just outside",
@@ -937,7 +749,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 58,
+   "pct": 21,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -1027,7 +839,7 @@
   "US-10543": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Patriots Park State Historic Site",
    "official": null,
    "ours": {
@@ -1044,13 +856,13 @@
     "note": "3 joined records = 1 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 3 -> 1 acres",
     "pieces": [
      [
-      "sgria869",
+      "sgrib825",
       "Patriot Park",
       1,
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -1078,11 +890,11 @@
   "US-10544": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Jerimoth Hill State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 8,
+    "acres": 6,
     "manager": "",
     "pieces": [
      [
@@ -1124,7 +936,7 @@
    "verdict": "no size on page"
   },
   "US-10545": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Hillsdale Preserve Management Area",
    "ours": null,
@@ -1135,7 +947,7 @@
   },
   "US-10546": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Eight Rod Farm Wildlife Management Area",
    "official": null,
@@ -1186,7 +998,7 @@
    "verdict": "unsure"
   },
   "US-10547": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Silver Spring State Recreation Area",
    "ours": null,
@@ -1197,7 +1009,7 @@
   },
   "US-10548": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 38 acres, no total words near it)",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Barber Pond State Recreation Area",
    "official": {
@@ -1205,7 +1017,7 @@
     "as": "38 acres",
     "clean": false,
     "line": "t road, ramp is on the right. (A) Handicapped Accessible none Yes Cranston John L. Curran Public Fishing Area 38 acres. Fiskville Reservoir. Rt. 295 N to Scituate Ave., west to Seven Mile Rd. pond on left (S) State-owned & opera",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Curran Public Fishing Area 38 acres.",
     "url": "https://dem.ri.gov/natural-resources-bureau/fish-wildlife/freshwater-fishing/public-boat-launching-sites#salt",
     "why": "no total words near it"
@@ -1347,21 +1159,18 @@
    "verdict": "unsure"
   },
   "US-2868": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-09",
    "n": "Beavertail State Park",
    "official": null,
    "ours": {
-    "acres": 141,
+    "acres": 195,
     "dissolved": {
      "after": 195,
      "before": 756,
      "copies": 6,
-     "key_union": 141,
      "parts": 3,
      "records": 11,
-     "summed": 195,
      "tracts": 2
     },
     "manager": "",
@@ -1387,9 +1196,19 @@
    "owner_now": null,
    "pages": [
     {
+     "status": "ok",
+     "url": "https://riparks.ri.gov/parks/beavertail-state-park",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://riparks.ri.gov/parks",
+     "why": "about / history page of the park's site"
+    },
+    {
      "status": "HTTP 404",
      "url": "https://www.riparks.com/parks/beavertail.php",
-     "why": "the park's page (data/parkinfo)"
+     "why": "the park's page (documents bot)"
     }
    ],
    "pct": null,
@@ -1406,18 +1225,21 @@
    "verdict": "no size on page"
   },
   "US-2869": {
-   "checked": "2026-11-09",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Blackstone River State Park",
    "official": null,
    "ours": {
-    "acres": 299,
+    "acres": 344,
     "dissolved": {
      "after": 299,
      "before": 406,
      "copies": 0,
+     "key_union": 344,
      "parts": 3,
      "records": 12,
+     "summed": 299,
      "tracts": 9
     },
     "manager": "",
@@ -1472,7 +1294,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -1480,8 +1302,13 @@
    "pages": [
     {
      "status": "ok",
-     "url": "https://tourblackstone.com/blackstone-river-state-park/",
+     "url": "https://riparks.ri.gov/History-HistoryBlackstone",
      "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://tourblackstone.com/blackstone-river-state-park/",
+     "why": "the park's page (documents bot)"
     },
     {
      "status": "ok",
@@ -1490,22 +1317,41 @@
     }
    ],
    "pct": null,
-   "score": 4,
+   "score": 5,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 0
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 17.0,
+     "as": "17 acre",
+     "clean": false,
+     "line": "e museum, in Old Ashton in 1835 to serve as the superintendent's cottage for the Upper Mill and to manage the 17 acre farm that served to provide some of the food needs for the mill workers, whose houses comprised the early vil",
+     "total_like": false,
+     "url": "https://riparks.ri.gov/History-HistoryBlackstone",
+     "why": "history"
+    },
+    {
+     "acres": 17.0,
+     "as": "17 acre",
+     "clean": false,
+     "line": "he Blackstone River State park began in 1986 with the State of Rhode Island acquiring the Kelly house and its 17 acre farm, known as Ashton Meadows. The movement to create a park and to rescue the 3.5 miles of canal and towpath",
+     "total_like": false,
+     "url": "https://riparks.ri.gov/History-HistoryBlackstone",
+     "why": "part (a lake, a purchase, a campground…)"
+    }
+   ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-2870": {
-   "checked": "2026-11-01",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-09",
    "n": "Brenton Point State Park",
    "official": null,
    "ours": {
@@ -1516,7 +1362,7 @@
      "copies": 2,
      "families": {
       "padus": 161,
-      "sgria": 62
+      "sgrib": 62
      },
      "family_fold": 62,
      "family_used": "padus",
@@ -1524,7 +1370,7 @@
      "records": 4,
      "tracts": 2
     },
-    "family_fold": "layers {'padus': 161, 'sgria': 62}: one land in 2 layers, the padus copy used (62 ac of copies not added)",
+    "family_fold": "layers {'padus': 161, 'sgrib': 62}: one land in 2 layers, the padus copy used (62 ac of copies not added)",
     "manager": "",
     "note": "4 joined records = 2 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 347 -> 223 acres",
     "pieces": [
@@ -1535,47 +1381,64 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
    "owner_now": null,
    "pages": [
     {
+     "status": "ok",
+     "url": "https://riparks.ri.gov/parks/brenton-point-state-park",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://riparks.ri.gov/parks",
+     "why": "about / history page of the park's site"
+    },
+    {
      "status": "HTTP 404",
      "url": "https://www.riparks.com/parks/brenton.php",
-     "why": "the park's page (data/parkinfo)"
+     "why": "the park's page (documents bot)"
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 89.0,
+     "as": "89 acre",
+     "clean": false,
+     "line": "ncture with the Atlantic Ocean. Occupying the former grounds of one of Newport’s grandest estates, the park’s 89-acre site is ideal for picnicking, hiking, bird watching, fishing or enjoying the majestic views of the ocean. It",
+     "total_like": false,
+     "url": "https://riparks.ri.gov/parks/brenton-point-state-park",
+     "why": "part (a lake, a purchase, a campground…)"
+    }
+   ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-2871": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-09",
    "n": "Burlingame State Park",
    "official": null,
    "ours": {
-    "acres": 1626,
+    "acres": 2251,
     "dissolved": {
      "after": 2251,
      "before": 6222,
      "copies": 5,
-     "key_union": 1626,
      "parts": 0,
      "records": 9,
-     "summed": 2251,
      "tracts": 4
     },
     "manager": "",
@@ -1594,7 +1457,7 @@
       "name"
      ],
      [
-      "sgria24",
+      "sgrib22",
       "Burlingame State Park - Sanctuary Road",
       31,
       "words"
@@ -1613,9 +1476,19 @@
    "owner_now": null,
    "pages": [
     {
+     "status": "ok",
+     "url": "https://riparks.ri.gov/parks/burlingame-state-park",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://riparks.ri.gov/parks",
+     "why": "about / history page of the park's site"
+    },
+    {
      "status": "HTTP 404",
      "url": "https://www.riparks.com/Locations/LocationBurlingameCampground.html",
-     "why": "the park's page (data/parkinfo)"
+     "why": "the park's page (documents bot)"
     }
    ],
    "pct": null,
@@ -1632,34 +1505,40 @@
    "verdict": "no size on page"
   },
   "US-2872": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-09",
    "n": "Colt State Park",
-   "official": null,
+   "official": {
+    "acres": 464.0,
+    "as": "464 acres",
+    "clean": false,
+    "line": ", and open fields with historic stone walls. Colt State Park is a true gem within the State Park System. With 464 acres of lawns, four miles of paved pathways, hiking trails, historic stone walls, and one of the state’s most spec",
+    "read": "2026-11-22",
+    "sent": "With 464 acres of lawns, four miles of paved pathways, hiking trails, historic stone walls, and one of the state’s most spectacular shorelines, Colt State Park is a favorite among visitors and locals alike.",
+    "url": "https://riparks.ri.gov/parks/colt-state-park",
+    "why": "part (a lake, a purchase, a campground…)"
+   },
    "ours": {
-    "acres": 286,
+    "acres": 463,
     "dissolved": {
      "after": 463,
      "before": 1381,
      "copies": 4,
-     "key_union": 286,
      "parts": 0,
      "records": 7,
-     "summed": 463,
      "tracts": 3
     },
     "manager": "",
     "note": "7 joined records = 3 tracts: 4 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1381 -> 463 acres",
     "pieces": [
      [
-      "sgria109",
+      "sgrib105",
       "Colt State Park",
       443,
-      "reviewed"
+      "name"
      ],
      [
-      "sgria762",
+      "sgrib723",
       "Colt State Park",
       16,
       "name"
@@ -1678,15 +1557,100 @@
    "owner_now": null,
    "pages": [
     {
+     "status": "ok",
+     "url": "https://riparks.ri.gov/parks/colt-state-park",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://riparks.ri.gov/parks",
+     "why": "about / history page of the park's site"
+    },
+    {
      "status": "HTTP 404",
      "url": "https://www.riparks.com/parks/colt.php",
+     "why": "the park's page (documents bot)"
+    }
+   ],
+   "pct": 0,
+   "same_agency": false,
+   "score": 8,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 2,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 464.0,
+     "as": "464 acres",
+     "clean": false,
+     "line": ", and open fields with historic stone walls. Colt State Park is a true gem within the State Park System. With 464 acres of lawns, four miles of paved pathways, hiking trails, historic stone walls, and one of the state’s most spec",
+     "total_like": false,
+     "url": "https://riparks.ri.gov/parks/colt-state-park",
+     "why": "part (a lake, a purchase, a campground…)"
+    },
+    {
+     "acres": 464.0,
+     "as": "464 acres",
+     "clean": false,
+     "line": "if the activity requires a Special Use Permit . History Of Colt State Park (1968) Colt State Park’s more than 464 acres of lawns, stone walls, and curving drives along one of the state’s most spectacular shorelines stands in cont",
+     "total_like": false,
+     "url": "https://riparks.ri.gov/parks/colt-state-park",
+     "why": "part (a lake, a purchase, a campground…)"
+    }
+   ],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "agree"
+  },
+  "US-2873": {
+   "checked": "2026-11-22",
+   "handover": [],
+   "n": "Fishermen's Memorial State Park",
+   "official": null,
+   "ours": {
+    "acres": 67,
+    "dissolved": {
+     "after": 67,
+     "before": 201,
+     "copies": 2,
+     "parts": 0,
+     "records": 3,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "3 joined records = 1 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 201 -> 67 acres",
+    "pieces": [
+     [
+      "sgrib269",
+      "Fishermans Memorial State Park",
+      67,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://rhodeislandstateparks.reserveamerica.com/camping/fishermens-memorial-campground/r/campgroundDetails.do?contractCode=RI&parkId=252611",
      "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.riparks.com/Locations/LocationFishermens.html",
+     "why": "the park's page (documents bot)"
     }
    ],
    "pct": null,
-   "score": 7,
+   "score": 5,
    "score_parts": {
-    "name": 2,
+    "name": 0,
     "pin": 2,
     "size": 1,
     "source": 2
@@ -1696,63 +1660,34 @@
    "ver": 15,
    "verdict": "no size on page"
   },
-  "US-2873": {
-   "checked": "2026-11-01",
-   "handover": [],
-   "last_read_failed": "2026-11-09",
-   "n": "Fishermen's Memorial State Park",
-   "official": null,
-   "ours": {
-    "acres": 37,
-    "dissolved": {
-     "after": 67,
-     "before": 201,
-     "copies": 2,
-     "key_union": 37,
-     "parts": 0,
-     "records": 3,
-     "summed": 67,
-     "tracts": 1
-    },
-    "manager": "",
-    "note": "3 joined records = 1 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 201 -> 67 acres",
-    "pieces": [
-     [
-      "sgria275",
-      "Fishermans Memorial State Park",
-      67,
-      "name"
-     ]
-    ],
-    "pin": "just outside",
-    "src": "",
-    "unknown_pieces": 0
-   },
-   "owner_now": null,
-   "pages": [
+  "US-2874": {
+   "checked": "2026-11-22",
+   "handover": [
     {
-     "status": "HTTP 404",
-     "url": "https://www.riparks.com/Locations/LocationFishermens.html",
+     "date_hint": "1965",
+     "kind": "transfer",
+     "line": "tional panoramic view of both Newport Harbor and the East Passage of Narragansett Bay. Before being deeded to the State of Rhode Island in 1965, Fort Adams had served the U.S. Navy for ten years and the U.S. Army for more than a century. Today the park offers a wide range",
+     "owner_now": "State of Rhode Island",
+     "src": "https://riparks.ri.gov/parks/fort-adams-state-park",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "date_hint": "1965",
+     "kind": "transfer",
+     "line": "f the activity requires a Special Use Permit . History Of Fort Adams State Park (1965) Before being deeded to the State of Rhode Island in 1965, Fort Adams had served the U.S. Navy for ten years and the U.S. Army for more than a century. The Fort rests at an elbow to the",
+     "owner_now": "State of Rhode Island",
+     "src": "https://riparks.ri.gov/parks/fort-adams-state-park",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "date_hint": null,
+     "kind": "managed by",
+     "line": "Education Canoe Kayak Launch Pet-Friendly Restroom Facilities Fort Adams Trust: Historic Fort Adams is operated by the Fort Adams Trust, a non-profit with a mission to protect and promote historic places and public spaces at the gatewa",
+     "owner_now": "Fort Adams Trust",
+     "src": "https://riparks.ri.gov/parks/fort-adams-state-park",
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": null,
-   "score": 4,
-   "score_parts": {
-    "name": 0,
-    "pin": 1,
-    "size": 1,
-    "source": 2
-   },
-   "sizes": [],
-   "t": "State Park",
-   "ver": 15,
-   "verdict": "no size on page"
-  },
-  "US-2874": {
-   "checked": "2026-11-01",
-   "handover": [],
-   "last_read_failed": "2026-11-09",
    "n": "Fort Adams State Park",
    "official": null,
    "ours": {
@@ -1770,12 +1705,22 @@
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
-   "owner_now": null,
+   "owner_now": "State of Rhode Island",
    "pages": [
+    {
+     "status": "ok",
+     "url": "https://riparks.ri.gov/parks/fort-adams-state-park",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://riparks.ri.gov/parks",
+     "why": "about / history page of the park's site"
+    },
     {
      "status": "HTTP 404",
      "url": "https://www.riparks.com/Locations/LocationFortAdams.html",
-     "why": "the park's page (data/parkinfo)"
+     "why": "the park's page (documents bot)"
     }
    ],
    "pct": null,
@@ -1794,35 +1739,33 @@
   "US-2875": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Fort Wetherill State Park",
    "official": null,
    "ours": {
-    "acres": 28,
+    "acres": 61,
     "dissolved": {
      "after": 61,
      "before": 183,
      "copies": 4,
-     "key_union": 28,
      "parts": 0,
      "records": 6,
-     "summed": 61,
      "tracts": 2
     },
     "manager": "",
     "note": "6 joined records = 2 tracts: 4 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 183 -> 61 acres",
     "pieces": [
      [
-      "sgria567",
+      "sgrib540",
       "Fort Wetherill State Park",
       54,
       "name"
      ],
      [
-      "sgria566",
+      "sgrib539",
       "Fort Wetherill State Park",
       7,
-      "reviewed"
+      "name"
      ]
     ],
     "pin": "inside",
@@ -1853,32 +1796,30 @@
   "US-2876": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Goddard Memorial State Park",
    "official": null,
    "ours": {
-    "acres": 268,
+    "acres": 478,
     "dissolved": {
      "after": 478,
      "before": 1434,
      "copies": 2,
-     "key_union": 268,
      "parts": 0,
      "records": 3,
-     "summed": 478,
      "tracts": 1
     },
     "manager": "",
     "note": "3 joined records = 1 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1434 -> 478 acres",
     "pieces": [
      [
-      "sgria94",
+      "sgrib90",
       "Goddard Park",
       478,
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -1906,16 +1847,16 @@
   "US-2877": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Haines Memorial State Park",
    "official": null,
    "ours": {
-    "acres": 37,
+    "acres": 68,
     "dissolved": {
      "after": 81,
      "before": 243,
      "copies": 4,
-     "key_union": 37,
+     "key_union": 68,
      "parts": 0,
      "records": 6,
      "summed": 81,
@@ -1925,16 +1866,16 @@
     "note": "6 joined records = 2 tracts: 4 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 243 -> 81 acres",
     "pieces": [
      [
-      "sgria4252",
+      "sgrib900",
       "Haines Memorial State Park",
       73,
       "name"
      ],
      [
-      "sgria13547",
+      "sgrib954",
       "Haines Memorial State Park",
       8,
-      "reviewed"
+      "name"
      ]
     ],
     "pin": "just outside",
@@ -1963,41 +1904,49 @@
    "verdict": "no size on page"
   },
   "US-2878": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-09",
    "n": "Lincoln Woods State Park",
-   "official": null,
+   "official": {
+    "acres": 627.0,
+    "as": "627 acres",
+    "clean": false,
+    "line": "he Salyersville, Lonsdale, and Quinsnicket areas of Lincoln. Over the years since, Lincoln Woods has grown to 627 acres, which now rim the pond and include playing fields to the south. The facilities have grown and improved to in",
+    "read": "2026-11-22",
+    "sent": "Over the years since, Lincoln Woods has grown to 627 acres, which now rim the pond and include playing fields to the south.",
+    "url": "https://riparks.ri.gov/parks/lincoln-woods-state-park",
+    "why": "part (a lake, a purchase, a campground…)"
+   },
    "ours": {
-    "acres": 538,
+    "acres": 654,
     "dissolved": {
      "after": 654,
      "before": 1898,
      "copies": 4,
      "families": {
       "padus": 32,
-      "sgria": 622
+      "sgrib": 622
      },
      "family_fold": 32,
-     "family_used": "sgria",
-     "key_union": 538,
+     "family_used": "sgrib",
+     "key_union": 654,
      "parts": 0,
      "records": 9,
      "summed": 622,
      "tracts": 5
     },
-    "family_fold": "layers {'sgria': 622, 'padus': 32}: one land in 2 layers, the sgria copy used (32 ac of copies not added)",
+    "family_fold": "layers {'sgrib': 622, 'padus': 32}: one land in 2 layers, the sgrib copy used (32 ac of copies not added)",
     "manager": "",
     "note": "9 joined records = 5 tracts: 4 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1898 -> 654 acres",
     "pieces": [
      [
-      "sgria53",
+      "sgrib50",
       "Lincoln Woods State Park",
       598,
       "name"
      ],
      [
-      "sgria883",
+      "sgrib835",
       "Lincoln Woods State Park",
       24,
       "name"
@@ -2010,49 +1959,78 @@
    "owner_now": null,
    "pages": [
     {
+     "status": "ok",
+     "url": "https://riparks.ri.gov/parks/lincoln-woods-state-park",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://riparks.ri.gov/parks",
+     "why": "about / history page of the park's site"
+    },
+    {
      "status": "HTTP 404",
      "url": "https://riparks.com/Locations/LocationLincolnWoods.html",
-     "why": "the park's page (data/parkinfo)"
+     "why": "the park's page (documents bot)"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 4,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 627.0,
+     "as": "627 acres",
+     "clean": false,
+     "line": "he Salyersville, Lonsdale, and Quinsnicket areas of Lincoln. Over the years since, Lincoln Woods has grown to 627 acres, which now rim the pond and include playing fields to the south. The facilities have grown and improved to in",
+     "total_like": false,
+     "url": "https://riparks.ri.gov/parks/lincoln-woods-state-park",
+     "why": "part (a lake, a purchase, a campground…)"
+    }
+   ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-2879": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-09",
    "n": "Rocky Point State Park",
-   "official": null,
+   "official": {
+    "acres": 120.0,
+    "as": "120 acres",
+    "clean": false,
+    "line": "on tower, hotels, clambakes, restaurants, a swimming pool, rides, games, and concerts – but the attraction of 120 acres of land for public use within 10 miles of downtown Providence has been a consistent draw since 1850. Rocky Po",
+    "read": "2026-11-22",
+    "sent": "Over the 150+ years of the property's existence, it has served as a location for nature trails, a ferry pier, an observation tower, hotels, clambakes, restaurants, a swimming pool, rides, games, and concerts – but the attraction of 120 acres of land for public use within 10 miles of downtown Provide",
+    "url": "https://riparks.ri.gov/parks/rocky-point-state-park",
+    "why": "no total words near it"
+   },
    "ours": {
-    "acres": 88,
+    "acres": 128,
     "dissolved": {
      "after": 127,
      "before": 461,
      "copies": 5,
      "families": {
       "padus": 80,
-      "sgria": 47
+      "sgrib": 47
      },
      "family_fold": 47,
      "family_used": "padus",
-     "key_union": 88,
+     "key_union": 128,
      "parts": 0,
      "records": 7,
      "summed": 80,
      "tracts": 2
     },
-    "family_fold": "layers {'padus': 80, 'sgria': 47}: one land in 2 layers, the padus copy used (47 ac of copies not added)",
+    "family_fold": "layers {'padus': 80, 'sgrib': 47}: one land in 2 layers, the padus copy used (47 ac of copies not added)",
     "manager": "",
     "note": "7 joined records = 2 tracts: 5 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 461 -> 127 acres",
     "pieces": [
@@ -2063,67 +2041,70 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
    "owner_now": null,
    "pages": [
     {
+     "status": "ok",
+     "url": "https://riparks.ri.gov/parks/rocky-point-state-park",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://riparks.ri.gov/parks",
+     "why": "about / history page of the park's site"
+    },
+    {
      "status": "HTTP 404",
      "url": "https://riparks.com/Locations/LocationRockyPoint.html",
-     "why": "the park's page (data/parkinfo)"
+     "why": "the park's page (documents bot)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 7,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
-    "pin": 1,
-    "size": 1,
+    "pin": 2,
+    "size": 2,
     "source": 2
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 120.0,
+     "as": "120 acres",
+     "clean": false,
+     "line": "on tower, hotels, clambakes, restaurants, a swimming pool, rides, games, and concerts – but the attraction of 120 acres of land for public use within 10 miles of downtown Providence has been a consistent draw since 1850. Rocky Po",
+     "total_like": false,
+     "url": "https://riparks.ri.gov/parks/rocky-point-state-park",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-2880": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
-   "n": "Snake Den State Park",
+   "n": "Snake Den/Dame Farm State Park",
    "official": {
     "acres": 1000.0,
     "as": "1,000 acre",
     "clean": false,
     "line": "griculture & Forest Environment) Snake Den State Park is located along Route 6 in Johnston, Rhode Island. The 1,000-acre undeveloped property boasts self-guided walking trails, beautiful trees, flowers, plants, and a working farm",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The 1,000-acre undeveloped property boasts self-guided walking trails, beautiful trees, flowers, plants, and a working farm as well.",
     "url": "https://riparks.ri.gov/other-state-lands/snake-dendame-farm",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 478,
-    "dissolved": {
-     "after": 891,
-     "before": 2427,
-     "copies": 2,
-     "families": {
-      "padus": 123,
-      "sgria": 768
-     },
-     "family_fold": 123,
-     "family_used": "sgria",
-     "key_union": 478,
-     "parts": 0,
-     "records": 6,
-     "summed": 768,
-     "tracts": 4
-    },
+    "acres": 865,
     "family_fold": "layers {'sgria': 768, 'padus': 123}: one land in 2 layers, the sgria copy used (123 ac of copies not added)",
     "manager": "",
-    "note": "6 joined records = 4 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 2427 -> 891 acres",
     "pieces": [
      [
       "sgria754",
@@ -2150,13 +2131,13 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 52,
+   "pct": 14,
    "same_agency": false,
-   "score": 5,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -2172,16 +2153,15 @@
    ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-2881": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-09",
    "n": "World War II Veterans Memorial State Park",
    "official": null,
    "ours": {
-    "acres": 10,
+    "acres": 15,
     "manager": "",
     "pieces": [
      [
@@ -2197,23 +2177,28 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
    "owner_now": null,
    "pages": [
     {
+     "status": "ok",
+     "url": "https://riparks.ri.gov/Locations-LocationWorldWarII",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
      "status": "HTTP 404",
      "url": "https://www.riparks.com/Locations/LocationWorldWarII.html",
-     "why": "the park's page (data/parkinfo)"
+     "why": "the park's page (documents bot)"
     }
    ],
    "pct": null,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 1
    },
@@ -2223,7 +2208,7 @@
    "verdict": "no size on page"
   },
   "US-4582": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Washington-Rochambeau Revolutionary Route National Historic Trail",
    "note": "whole park compared (POTA lists it in 0 states: {})",
@@ -2236,16 +2221,16 @@
     "pin": "inside",
     "src": "",
     "states": [
-     "US-CT",
      "US-VA",
-     "US-MA",
-     "US-PA",
      "US-DE",
-     "US-DC",
-     "US-NY",
+     "US-MA",
      "US-MD",
+     "US-PA",
+     "US-NY",
      "US-NJ",
-     "US-RI"
+     "US-RI",
+     "US-CT",
+     "US-DC"
     ],
     "unknown_pieces": 1,
     "whole_park": true
@@ -2298,12 +2283,12 @@
    "verdict": "ours unknown"
   },
   "US-5482": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Wickaboxet Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 557,
+    "acres": 673,
     "manager": "",
     "pieces": [
      [
@@ -2319,7 +2304,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -2332,10 +2317,10 @@
     }
    ],
    "pct": null,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 1
    },
@@ -2346,7 +2331,7 @@
   },
   "US-5483": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lincoln Woods State Forest",
    "official": null,
@@ -2408,61 +2393,89 @@
    "verdict": "unsure"
   },
   "US-5484": {
-   "checked": "2026-11-09",
+   "cause": "no page could be read: robots",
+   "checked": "2026-11-22",
    "handover": [],
-   "n": "George Washington Memorial State Forest",
+   "n": "George Washington Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 3202,
+    "acres": 3433,
     "dissolved": {
-     "after": 6033,
-     "before": 11695,
+     "after": 6264,
+     "before": 11926,
      "copies": 2,
      "families": {
-      "padus": 3202,
-      "sgria": 2831
+      "padus": 3433,
+      "sgrib": 2831
      },
      "family_fold": 2831,
      "family_used": "padus",
      "parts": 0,
-     "records": 4,
-     "tracts": 2
+     "records": 6,
+     "tracts": 4
     },
-    "family_fold": "layers {'padus': 3202, 'sgria': 2831}: one land in 2 layers, the padus copy used (2,831 ac of copies not added)",
+    "family_fold": "layers {'padus': 3433, 'sgrib': 2831}: one land in 2 layers, the padus copy used (2,831 ac of copies not added)",
     "manager": "",
-    "note": "4 joined records = 2 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 11695 -> 6033 acres",
+    "note": "6 joined records = 4 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 11926 -> 6264 acres",
     "pieces": [
      [
       57294,
       "George Washington Management Area",
       3202,
-      "same name (POTA writes the kind into the name) + pin inside"
+      "name"
+     ],
+     [
+      57293,
+      "George Washington Management Area",
+      195,
+      "name"
+     ],
+     [
+      57295,
+      "George Washington Management Area",
+      36,
+      "name"
      ]
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
-   "pages": [],
+   "owner_now": null,
+   "pages": [
+    {
+     "other_unit": true,
+     "status": "robots",
+     "url": "https://rigov.sharepoint.com/sites/DEM-NR-PD-Team/Shared%20Documents/LandAcquisition/Legal_Records",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
    "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
    "sizes": [],
    "t": "State Forest",
    "ver": 15,
-   "verdict": "no official page on file"
+   "verdict": "not read"
   },
   "US-6979": {
-   "checked": "2026-11-01",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-09",
    "n": "Arcadia Management Area",
    "official": null,
    "ours": {
-    "acres": 13564,
+    "acres": 16246,
     "dissolved": {
      "after": 8501,
      "before": 16434,
      "copies": 0,
-     "key_union": 13564,
+     "key_union": 16246,
      "parts": 23,
      "records": 29,
      "summed": 8501,
@@ -2515,9 +2528,19 @@
    "owner_now": null,
    "pages": [
     {
+     "status": "ok",
+     "url": "https://riparks.ri.gov/other-state-lands/arcadia-wildlife-management-area",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://riparks.ri.gov/other-state-lands",
+     "why": "about / history page of the park's site"
+    },
+    {
      "status": "HTTP 404",
      "url": "https://riparks.com/Locations/LocationArcadia.html",
-     "why": "the park's page (data/parkinfo)"
+     "why": "the park's page (documents bot)"
     }
    ],
    "pct": null,
@@ -2528,13 +2551,23 @@
     "size": 1,
     "source": 0
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 14000.0,
+     "as": "14,000 acres",
+     "clean": false,
+     "line": "ion of Agriculture and Forest Environment , Arcadia is the state’s largest management area consisting of over 14,000 acres of mixed hardwoods, evergreens and fields. It was purchased through funds from the Federal Aid to Wildlife Re",
+     "total_like": false,
+     "url": "https://riparks.ri.gov/other-state-lands/arcadia-wildlife-management-area",
+     "why": "part (a lake, a purchase, a campground…)"
+    }
+   ],
    "t": "Management Area",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-6980": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Beach Pond Wildlife Management Area",
    "ours": null,
@@ -2546,16 +2579,16 @@
   "US-6981": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Great Swamp Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 3551,
+    "acres": 3698,
     "dissolved": {
      "after": 3347,
      "before": 11803,
      "copies": 2,
-     "key_union": 3551,
+     "key_union": 3698,
      "parts": 6,
      "records": 16,
      "summed": 3347,
@@ -2641,7 +2674,7 @@
   "US-6982": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Big River Wildlife Management Area",
    "official": null,
    "ours": {
@@ -2658,10 +2691,10 @@
     "note": "3 joined records = 1 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 25140 -> 8380 acres",
     "pieces": [
      [
-      "sgria10848",
+      "sgrib949",
       "Big River",
       8380,
-      "reviewed"
+      "name"
      ]
     ],
     "pin": "inside",
@@ -2695,12 +2728,12 @@
    "verdict": "no size on page"
   },
   "US-6983": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Woody Hill Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 1082,
+    "acres": 806,
     "manager": "",
     "pieces": [
      [
@@ -2722,7 +2755,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -2730,15 +2763,20 @@
    "pages": [
     {
      "status": "ok",
+     "url": "https://dem.ri.gov/sites/g/files/xkgbur861/files/2022-11/44.pdf",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
      "url": "https://dem.ri.gov/sites/g/files/xkgbur861/files/programs/naturalresources/documents/map-management-areas.pdf",
      "why": "official map (parkinfo-web)"
     }
    ],
    "pct": null,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -2748,7 +2786,7 @@
    "verdict": "no size on page"
   },
   "US-6984": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Black Hut Wildlife Management Area",
    "official": null,
@@ -2760,7 +2798,7 @@
      "copies": 6,
      "families": {
       "padus": 1336,
-      "sgria": 381
+      "sgrib": 381
      },
      "family_fold": 381,
      "family_used": "padus",
@@ -2768,7 +2806,7 @@
      "records": 11,
      "tracts": 5
     },
-    "family_fold": "layers {'padus': 1336, 'sgria': 381}: one land in 2 layers, the padus copy used (381 ac of copies not added)",
+    "family_fold": "layers {'padus': 1336, 'sgrib': 381}: one land in 2 layers, the padus copy used (381 ac of copies not added)",
     "manager": "",
     "note": "11 joined records = 5 tracts: 6 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 2479 -> 1717 acres",
     "pieces": [
@@ -2792,6 +2830,7 @@
    "owner_now": null,
    "pages": [
     {
+     "other_unit": true,
      "status": "robots",
      "url": "https://rigov.sharepoint.com/sites/DEM-NR-PD-Team/Shared%20Documents/LandAcquisition/Legal_Records",
      "why": "the park's page (data/parkinfo)"
@@ -2816,20 +2855,18 @@
    "verdict": "no size on page"
   },
   "US-6985": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Round Top Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 110,
+    "acres": 181,
     "dissolved": {
      "after": 181,
      "before": 586,
      "copies": 3,
-     "key_union": 110,
      "parts": 0,
      "records": 6,
-     "summed": 181,
      "tracts": 3
     },
     "manager": "",
@@ -2886,12 +2923,12 @@
   },
   "US-6986": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Simmons Mill Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 11,
+    "acres": 34,
     "manager": "",
     "pieces": [
      [
@@ -2943,30 +2980,28 @@
    "verdict": "unsure"
   },
   "US-6987": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Cocumcussoc State Park",
    "official": null,
    "ours": {
-    "acres": 248,
+    "acres": 420,
     "dissolved": {
      "after": 420,
      "before": 1260,
      "copies": 2,
-     "key_union": 248,
      "parts": 0,
      "records": 3,
-     "summed": 420,
      "tracts": 1
     },
     "manager": "",
     "note": "3 joined records = 1 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1260 -> 420 acres",
     "pieces": [
      [
-      "sgria436",
+      "sgrib419",
       "Cocumcussoc",
       420,
-      "reviewed"
+      "name"
      ]
     ],
     "pin": "just outside",
@@ -2997,32 +3032,30 @@
   "US-6988": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Grills State Preserve",
    "official": null,
    "ours": {
-    "acres": 387,
+    "acres": 724,
     "dissolved": {
      "after": 724,
-     "before": 2158,
-     "copies": 4,
-     "key_union": 387,
+     "before": 2172,
+     "copies": 6,
      "parts": 0,
-     "records": 7,
-     "summed": 724,
+     "records": 9,
      "tracts": 3
     },
     "manager": "",
-    "note": "7 joined records = 3 tracts: 4 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 2158 -> 724 acres",
+    "note": "9 joined records = 3 tracts: 6 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 2172 -> 724 acres",
     "pieces": [
      [
-      "sgria437",
+      "sgrib420",
       "Bradford Dye / Grills Preserve",
       505,
       "words"
      ],
      [
-      "sgria33784",
+      "sgrib1013",
       "Grills Preserve",
       212,
       "name"
@@ -3036,7 +3069,7 @@
     ],
     "pin": "inside",
     "src": "",
-    "unknown_pieces": 2
+    "unknown_pieces": 0
    },
    "owner_now": null,
    "pages": [
@@ -3060,7 +3093,7 @@
    "verdict": "no size on page"
   },
   "US-6989": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Black Farm Wildlife Management Area",
    "official": null,
@@ -3127,37 +3160,37 @@
    "verdict": "no size on page"
   },
   "US-6990": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Nicholas Farm Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 1373,
+    "acres": 1504,
     "dissolved": {
      "after": 1545,
      "before": 4052,
      "copies": 3,
      "families": {
       "padus": 705,
-      "sgria": 840
+      "sgrib": 840
      },
      "family_fold": 705,
-     "family_used": "sgria",
-     "key_union": 1373,
+     "family_used": "sgrib",
+     "key_union": 1504,
      "parts": 0,
      "records": 11,
      "summed": 840,
      "tracts": 8
     },
-    "family_fold": "layers {'sgria': 840, 'padus': 705}: one land in 2 layers, the sgria copy used (705 ac of copies not added)",
+    "family_fold": "layers {'sgrib': 840, 'padus': 705}: one land in 2 layers, the sgrib copy used (705 ac of copies not added)",
     "manager": "",
     "note": "11 joined records = 8 tracts: 3 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 4052 -> 1545 acres",
     "pieces": [
      [
-      "sgria393",
+      "sgrib379",
       "Nicholas Farm",
       840,
-      "reviewed"
+      "name"
      ]
     ],
     "pin": "inside",
@@ -3191,18 +3224,20 @@
    "verdict": "no size on page"
   },
   "US-6991": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Rockville Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 573,
+    "acres": 825,
     "dissolved": {
      "after": 573,
      "before": 872,
      "copies": 0,
+     "key_union": 825,
      "parts": 3,
      "records": 9,
+     "summed": 573,
      "tracts": 6
     },
     "manager": "",
@@ -3245,7 +3280,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
@@ -3258,10 +3293,10 @@
     }
    ],
    "pct": null,
-   "score": 4,
+   "score": 5,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 0
    },
@@ -3273,33 +3308,33 @@
   "US-6992": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "JL Curran State Park",
    "official": null,
    "ours": {
-    "acres": 245,
+    "acres": 335,
     "dissolved": {
      "after": 338,
      "before": 932,
      "copies": 2,
      "families": {
       "padus": 41,
-      "sgria": 297
+      "sgrib": 297
      },
      "family_fold": 41,
-     "family_used": "sgria",
-     "key_union": 245,
+     "family_used": "sgrib",
+     "key_union": 335,
      "parts": 0,
      "records": 4,
      "summed": 297,
      "tracts": 2
     },
-    "family_fold": "layers {'sgria': 297, 'padus': 41}: one land in 2 layers, the sgria copy used (41 ac of copies not added)",
+    "family_fold": "layers {'sgrib': 297, 'padus': 41}: one land in 2 layers, the sgrib copy used (41 ac of copies not added)",
     "manager": "",
     "note": "4 joined records = 2 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 932 -> 338 acres",
     "pieces": [
      [
-      "sgria603",
+      "sgrib573",
       "J.L. Curran",
       297,
       "name"
@@ -3332,7 +3367,7 @@
   },
   "US-7508": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 13 acre, no total words near it)",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Pulaski State Park",
    "official": {
@@ -3340,34 +3375,32 @@
     "as": "13 acre",
     "clean": false,
     "line": ". From the first class trout fishing in the spring, to enjoying a picnic, a short hike, or a cool swim in the 13 acre Peck Pond in the summer, to cross-country skiing on the 10 miles of groomed trails into the adjacent George W",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "From the first class trout fishing in the spring, to enjoying a picnic, a short hike, or a cool swim in the 13 acre Peck Pond in the summer, to cross-country skiing on the 10 miles of groomed trails into the adjacent George Washington Management area in the winter, Pulaski provides year round enjoym",
     "url": "https://riparks.ri.gov/parks/pulaski-state-park",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 160,
+    "acres": 343,
     "dissolved": {
      "after": 343,
      "before": 1029,
      "copies": 2,
-     "key_union": 160,
      "parts": 0,
      "records": 3,
-     "summed": 343,
      "tracts": 1
     },
     "manager": "",
     "note": "3 joined records = 1 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1029 -> 343 acres",
     "pieces": [
      [
-      "sgria916",
+      "sgrib863",
       "Pulaski State Park",
       343,
-      "reviewed"
+      "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -3390,12 +3423,12 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 1131,
+   "pct": 2538,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -3435,16 +3468,16 @@
   "US-7518": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Kimball Wildlife Refuge",
    "official": null,
    "ours": {
-    "acres": 13,
+    "acres": 26,
     "dissolved": {
      "after": 29,
      "before": 87,
      "copies": 2,
-     "key_union": 13,
+     "key_union": 26,
      "parts": 0,
      "records": 3,
      "summed": 29,
@@ -3454,10 +3487,10 @@
     "note": "3 joined records = 1 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 87 -> 29 acres",
     "pieces": [
      [
-      "sgria768",
+      "sgrib729",
       "Kimball Refuge",
       29,
-      "reviewed"
+      "name"
      ]
     ],
     "pin": "just outside",
@@ -3488,16 +3521,16 @@
   "US-7714": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Buck Hill Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 1585,
+    "acres": 2034,
     "dissolved": {
      "after": 2374,
      "before": 2492,
      "copies": 4,
-     "key_union": 1585,
+     "key_union": 2034,
      "parts": 0,
      "records": 10,
      "summed": 2374,
@@ -3525,7 +3558,7 @@
       "name"
      ],
      [
-      "sgria8587",
+      "sgrib913",
       "Buck Hill",
       47,
       "name"
@@ -3537,7 +3570,7 @@
       "name"
      ],
      [
-      "sgria9174",
+      "sgrib946",
       "Buck Hill",
       12,
       "name"
@@ -3574,17 +3607,17 @@
    "verdict": "no size on page"
   },
   "US-7715": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Durfee Hill Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 1092,
+    "acres": 1577,
     "dissolved": {
      "after": 1476,
      "before": 1577,
      "copies": 0,
-     "key_union": 1092,
+     "key_union": 1577,
      "parts": 2,
      "records": 8,
      "summed": 1476,
@@ -3630,7 +3663,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -3643,10 +3676,10 @@
     }
    ],
    "pct": null,
-   "score": 4,
+   "score": 5,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 0
    },
@@ -3658,11 +3691,11 @@
   "US-7716": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Carolina Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 1452,
+    "acres": 1977,
     "manager": "",
     "pieces": [
      [
@@ -3728,13 +3761,12 @@
    "verdict": "no size on page"
   },
   "US-7717": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-09",
    "n": "Charlestown Breachway State Park",
    "official": null,
    "ours": {
-    "acres": 50,
+    "acres": 87,
     "dissolved": {
      "after": 88,
      "before": 138,
@@ -3745,8 +3777,10 @@
      },
      "family_fold": 38,
      "family_used": "sgrib",
+     "key_union": 87,
      "parts": 0,
      "records": 3,
+     "summed": 50,
      "tracts": 2
     },
     "family_fold": "layers {'sgrib': 50, 'padus': 38}: one land in 2 layers, the sgrib copy used (38 ac of copies not added)",
@@ -3760,16 +3794,305 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
    "owner_now": null,
    "pages": [
     {
+     "status": "ok",
+     "url": "https://riparks.ri.gov/beaches/charlestown-breachway",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://riparks.ri.gov/beaches",
+     "why": "about / history page of the park's site"
+    },
+    {
      "status": "HTTP 404",
      "url": "https://riparks.com/beach/charlestown.php",
+     "why": "the park's page (documents bot)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Park",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7718": {
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-22",
+   "handover": [],
+   "n": "East Matunuck State Beach",
+   "official": null,
+   "ours": {
+    "acres": 51,
+    "dissolved": {
+     "after": 32,
+     "before": 96,
+     "copies": 2,
+     "key_union": 51,
+     "parts": 0,
+     "records": 3,
+     "summed": 32,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "3 joined records = 1 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 96 -> 32 acres",
+    "pieces": [
+     [
+      "sgrib579",
+      "East Matunuck State Beach",
+      32,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://riparks.ri.gov/beaches/east-matunuck-state-beach",
      "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://riparks.ri.gov/beaches",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://riparks.com/beach/east-matunuck.php",
+     "why": "the park's page (documents bot)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 144.0,
+     "as": "144 acres",
+     "clean": false,
+     "line": "with a sandy, gently sloping shoreline. Noted for its strong surf, East Matunuck State Beach totals more than 144 acres with a modern beach pavilion, powered in part by solar energy, and large parking lot. Watch the ferry cruise",
+     "total_like": false,
+     "url": "https://riparks.ri.gov/beaches/east-matunuck-state-beach",
+     "why": "part (a lake, a purchase, a campground…)"
+    }
+   ],
+   "t": "State Beach",
+   "ver": 15,
+   "verdict": "unsure"
+  },
+  "US-7719": {
+   "checked": "2026-11-22",
+   "handover": [],
+   "n": "Misquamicut State Beach",
+   "official": null,
+   "ours": {
+    "acres": 58,
+    "dissolved": {
+     "after": 66,
+     "before": 198,
+     "copies": 4,
+     "key_union": 58,
+     "parts": 0,
+     "records": 6,
+     "summed": 66,
+     "tracts": 2
+    },
+    "manager": "",
+    "note": "6 joined records = 2 tracts: 4 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 198 -> 66 acres",
+    "pieces": [
+     [
+      "sgrib633",
+      "Misquamicut State Beach",
+      36,
+      "name"
+     ],
+     [
+      "sgrib632",
+      "Misquamicut State Beach",
+      30,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://riparks.ri.gov/beaches/misquamicut-state-beach",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://riparks.ri.gov/beaches",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://riparks.ri.gov/beaches/misquamicut-state-beach-parking-lot-entrance-project",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://riparks.com/beach/misquamicut.php",
+     "why": "the park's page (documents bot)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Beach",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7720": {
+   "checked": "2026-11-22",
+   "handover": [],
+   "n": "Roger W. Wheeler State Beach",
+   "official": null,
+   "ours": {
+    "acres": 25,
+    "dissolved": {
+     "after": 29,
+     "before": 87,
+     "copies": 2,
+     "key_union": 25,
+     "parts": 0,
+     "records": 3,
+     "summed": 29,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "3 joined records = 1 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 87 -> 29 acres",
+    "pieces": [
+     [
+      "sgrib257",
+      "Roger Wheeler State Beach",
+      29,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://riparks.ri.gov/beaches/roger-w-wheeler-state-beach",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://riparks.ri.gov/beaches",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://riparks.com/beach/roger-wheeler.php",
+     "why": "the park's page (documents bot)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Beach",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-7721": {
+   "checked": "2026-11-22",
+   "handover": [
+    {
+     "date_hint": "1954",
+     "kind": "transfer",
+     "line": "currents . History of Salty Brine State Beach Galilee State Beach, now Salty Brine State Beach, was turned over to the state Division of Parks and Recreation by the Division of Harbors and Rivers in 1954. It was renamed in 1990 after Walter Leslie Brian, a prominent radio personality. More history C",
+     "owner_now": "Division of Harbors and Rivers",
+     "src": "https://riparks.ri.gov/beaches/salty-brine-state-beach",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "n": "Salty Brine State Beach",
+   "official": null,
+   "ours": {
+    "acres": 1,
+    "dissolved": {
+     "after": 2,
+     "before": 6,
+     "copies": 2,
+     "key_union": 1,
+     "parts": 0,
+     "records": 3,
+     "summed": 2,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "3 joined records = 1 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 6 -> 2 acres",
+    "pieces": [
+     [
+      "sgrib651",
+      "Salty Brine State Beach",
+      2,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": "Division of Harbors and Rivers",
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://riparks.ri.gov/beaches/salty-brine-state-beach",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://riparks.ri.gov/beaches",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://riparks.com/beach/salty-brine.php",
+     "why": "the park's page (documents bot)"
     }
    ],
    "pct": null,
@@ -3781,214 +4104,14 @@
     "source": 2
    },
    "sizes": [],
-   "t": "State Park",
-   "ver": 15,
-   "verdict": "no size on page"
-  },
-  "US-7718": {
-   "checked": "2026-11-01",
-   "handover": [],
-   "last_read_failed": "2026-11-09",
-   "n": "East Matunuck State Beach",
-   "official": null,
-   "ours": {
-    "acres": 56,
-    "dissolved": {
-     "after": 32,
-     "before": 96,
-     "copies": 2,
-     "key_union": 56,
-     "parts": 0,
-     "records": 3,
-     "summed": 32,
-     "tracts": 1
-    },
-    "manager": "",
-    "note": "3 joined records = 1 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 96 -> 32 acres",
-    "pieces": [
-     [
-      "sgria609",
-      "East Matunuck State Beach",
-      32,
-      "reviewed"
-     ]
-    ],
-    "pin": "inside",
-    "src": "",
-    "unknown_pieces": 0
-   },
-   "owner_now": null,
-   "pages": [
-    {
-     "status": "HTTP 404",
-     "url": "https://riparks.com/beach/east-matunuck.php",
-     "why": "the park's page (data/parkinfo)"
-    }
-   ],
-   "pct": null,
-   "score": 6,
-   "score_parts": {
-    "name": 2,
-    "pin": 2,
-    "size": 1,
-    "source": 1
-   },
-   "sizes": [],
    "t": "State Beach",
    "ver": 15,
    "verdict": "no size on page"
-  },
-  "US-7719": {
-   "checked": "2026-11-01",
-   "handover": [],
-   "last_read_failed": "2026-11-09",
-   "n": "Misquamicut State Beach",
-   "official": null,
-   "ours": {
-    "acres": 44,
-    "dissolved": {
-     "after": 66,
-     "before": 198,
-     "copies": 4,
-     "key_union": 44,
-     "parts": 0,
-     "records": 6,
-     "summed": 66,
-     "tracts": 2
-    },
-    "manager": "",
-    "note": "6 joined records = 2 tracts: 4 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 198 -> 66 acres",
-    "pieces": [
-     [
-      "sgria665",
-      "Misquamicut State Beach",
-      36,
-      "name"
-     ],
-     [
-      "sgria664",
-      "Misquamicut State Beach",
-      30,
-      "reviewed"
-     ]
-    ],
-    "pin": "inside",
-    "src": "",
-    "unknown_pieces": 0
-   },
-   "owner_now": null,
-   "pages": [
-    {
-     "status": "HTTP 404",
-     "url": "https://riparks.com/beach/misquamicut.php",
-     "why": "the park's page (data/parkinfo)"
-    }
-   ],
-   "pct": null,
-   "score": 6,
-   "score_parts": {
-    "name": 2,
-    "pin": 2,
-    "size": 1,
-    "source": 1
-   },
-   "sizes": [],
-   "t": "State Beach",
-   "ver": 15,
-   "verdict": "no size on page"
-  },
-  "US-7720": {
-   "checked": "2026-11-01",
-   "handover": [],
-   "last_read_failed": "2026-11-09",
-   "n": "Roger W. Wheeler State Beach",
-   "official": null,
-   "ours": {
-    "acres": 21,
-    "dissolved": {
-     "after": 29,
-     "before": 87,
-     "copies": 2,
-     "key_union": 21,
-     "parts": 0,
-     "records": 3,
-     "summed": 29,
-     "tracts": 1
-    },
-    "manager": "",
-    "note": "3 joined records = 1 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 87 -> 29 acres",
-    "pieces": [
-     [
-      "sgria263",
-      "Roger Wheeler State Beach",
-      29,
-      "name"
-     ]
-    ],
-    "pin": "just outside",
-    "src": "",
-    "unknown_pieces": 0
-   },
-   "owner_now": null,
-   "pages": [
-    {
-     "status": "HTTP 404",
-     "url": "https://riparks.com/beach/roger-wheeler.php",
-     "why": "the park's page (data/parkinfo)"
-    }
-   ],
-   "pct": null,
-   "score": 4,
-   "score_parts": {
-    "name": 1,
-    "pin": 1,
-    "size": 1,
-    "source": 1
-   },
-   "sizes": [],
-   "t": "State Beach",
-   "ver": 15,
-   "verdict": "no size on page"
-  },
-  "US-7721": {
-   "checked": "2026-11-01",
-   "handover": [],
-   "last_read_failed": "2026-11-09",
-   "n": "Salty Brine State Beach",
-   "official": null,
-   "ours": {
-    "acres": 0,
-    "manager": "",
-    "pieces": [],
-    "pin": "just outside",
-    "src": "",
-    "unknown_pieces": 3
-   },
-   "owner_now": null,
-   "pages": [
-    {
-     "status": "HTTP 404",
-     "url": "https://riparks.com/beach/salty-brine.php",
-     "why": "the park's page (data/parkinfo)"
-    }
-   ],
-   "pct": null,
-   "score": 5,
-   "score_parts": {
-    "name": 2,
-    "pin": 1,
-    "size": 1,
-    "source": 1
-   },
-   "sizes": [],
-   "t": "State Beach",
-   "ver": 15,
-   "verdict": "ours unknown"
   },
   "US-7722": {
-   "checked": "2026-11-01",
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-09",
    "n": "Scarborough North State Beach",
    "official": null,
    "ours": {
@@ -4009,9 +4132,19 @@
    "owner_now": null,
    "pages": [
     {
+     "status": "ok",
+     "url": "https://riparks.ri.gov/beaches/scarborough-north-state-beach",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://riparks.ri.gov/beaches",
+     "why": "about / history page of the park's site"
+    },
+    {
      "status": "HTTP 404",
      "url": "https://riparks.com/beach/scarborough-north.php",
-     "why": "the park's page (data/parkinfo)"
+     "why": "the park's page (documents bot)"
     }
    ],
    "pct": null,
@@ -4022,33 +4155,50 @@
     "size": 1,
     "source": 0
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 26.0,
+     "as": "26 acre",
+     "clean": false,
+     "line": "te Parks Submit Scarborough North State Beach One of Rhode Island’s most popular and well known beaches, this 26-acre facility with over 2,000 feet of beach frontage is located only 35 miles south of Providence on Ocean Road in",
+     "total_like": false,
+     "url": "https://riparks.ri.gov/beaches/scarborough-north-state-beach",
+     "why": "part (a lake, a purchase, a campground…)"
+    }
+   ],
    "t": "State Beach",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "unsure"
   },
   "US-7723": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-09",
    "n": "John H. Chaffee Rome Point State Nature Preserve",
+   "official": {
+    "acres": 230.0,
+    "as": "230 acre",
+    "clean": false,
+    "line": "r size Original More State of Rhode Island Rhode Island State Parks Submit John H. Chafee Nature Preserve The 230-acre John H. Chafee Nature Preserve at Rome Point in North Kingstown is an undeveloped conservation area home to a",
+    "read": "2026-11-22",
+    "sent": "The 230-acre John H.",
+    "url": "https://riparks.ri.gov/parks/john-h-chafee-nature-preserve",
+    "why": "total-looking"
+   },
    "ours": {
-    "acres": 154,
+    "acres": 244,
     "dissolved": {
      "after": 244,
      "before": 732,
      "copies": 2,
-     "key_union": 154,
      "parts": 0,
      "records": 3,
-     "summed": 244,
      "tracts": 1
     },
     "manager": "",
     "note": "3 joined records = 1 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 732 -> 244 acres",
     "pieces": [
      [
-      "sgria647",
+      "sgrib615",
       "Rome Point",
       244,
       "alias name (pin inside): Rome Point"
@@ -4058,40 +4208,88 @@
     "src": "",
     "unknown_pieces": 0
    },
-   "score": null,
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://riparks.ri.gov/parks/john-h-chafee-nature-preserve",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://riparks.com/Locations/LocationJohnHChafee.html",
+     "why": "the park's page (documents bot)"
+    }
+   ],
+   "pct": 6,
+   "same_agency": false,
+   "score": 6,
+   "score_parts": {
+    "name": 1,
+    "pin": 1,
+    "size": 2,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 230.0,
+     "as": "230 acre",
+     "clean": false,
+     "line": "r size Original More State of Rhode Island Rhode Island State Parks Submit John H. Chafee Nature Preserve The 230-acre John H. Chafee Nature Preserve at Rome Point in North Kingstown is an undeveloped conservation area home to a",
+     "total_like": true,
+     "url": "https://riparks.ri.gov/parks/john-h-chafee-nature-preserve",
+     "why": "total-looking"
+    },
+    {
+     "acres": 200.0,
+     "as": "200 acres",
+     "clean": false,
+     "line": "ffshore (seasonally). In April 2001, the Narragansett Electric Company, a National Grid Company, donated over 200 acres of pristine waterfront property to the state of Rhode Island in honor of the late U.S. Senator, John H. Chafe",
+     "total_like": false,
+     "url": "https://riparks.ri.gov/parks/john-h-chafee-nature-preserve",
+     "why": "no total words near it"
+    },
+    {
+     "acres": 200.0,
+     "as": "200 acres",
+     "clean": false,
+     "line": "horeline property. On April 2, 2001, the Narragansett Electric Company, a National Grid Company, donated over 200 acres of pristine water front property to the state of Rhode Island in honor of the late U.S. Senator, John H. Chaf",
+     "total_like": false,
+     "url": "https://riparks.ri.gov/parks/john-h-chafee-nature-preserve",
+     "why": "no total words near it"
+    }
+   ],
    "t": "State Nature Preserve",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "agree"
   },
   "US-7865": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "East State Beach",
    "official": null,
    "ours": {
-    "acres": 98,
+    "acres": 199,
     "dissolved": {
      "after": 199,
      "before": 597,
      "copies": 4,
-     "key_union": 98,
      "parts": 0,
      "records": 6,
-     "summed": 199,
      "tracts": 2
     },
     "manager": "",
     "note": "6 joined records = 2 tracts: 4 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 597 -> 199 acres",
     "pieces": [
      [
-      "sgria270",
+      "sgrib264",
       "East Beach",
       134,
-      "reviewed"
+      "name"
      ],
      [
-      "sgria125",
+      "sgrib121",
       "East Beach",
       65,
       "name"
@@ -4123,15 +4321,15 @@
    "verdict": "no size on page"
   },
   "US-7971": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Blackstone River Valley National Historical Park",
-   "note": "whole park compared (POTA lists it in 1 states: {'US-MA': 203})",
+   "note": "whole park compared (POTA lists it in 1 states: {'US-MA': 193})",
    "official": null,
    "ours": {
-    "acres": 203,
+    "acres": 193,
     "acres_by_state": {
-     "US-MA": 203
+     "US-MA": 193
     },
     "manager": "",
     "pieces": [],
@@ -4187,29 +4385,29 @@
    "verdict": "no size on page"
   },
   "US-8293": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Sapowet Marsh State Wildlife Area",
    "official": null,
    "ours": {
-    "acres": 276,
+    "acres": 261,
     "dissolved": {
      "after": 389,
      "before": 739,
      "copies": 2,
      "families": {
       "padus": 214,
-      "sgria": 175
+      "sgrib": 175
      },
      "family_fold": 175,
      "family_used": "padus",
-     "key_union": 276,
+     "key_union": 261,
      "parts": 0,
      "records": 8,
      "summed": 214,
      "tracts": 6
     },
-    "family_fold": "layers {'sgria': 175, 'padus': 214}: one land in 2 layers, the padus copy used (175 ac of copies not added)",
+    "family_fold": "layers {'sgrib': 175, 'padus': 214}: one land in 2 layers, the padus copy used (175 ac of copies not added)",
     "manager": "",
     "note": "8 joined records = 6 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 739 -> 389 acres",
     "pieces": [
@@ -4270,5 +4468,5 @@
    "verdict": "no size on page"
   }
  },
- "read": "2026-11-09"
+ "read": "2026-11-22"
 }

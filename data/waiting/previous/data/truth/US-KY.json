@@ -5,28 +5,29 @@
   "agree": 111,
   "handover_hints": 5,
   "no_page": 0,
-  "no_size": 65,
+  "no_size": 68,
+  "not_read": 0,
   "off": 5,
-  "ours_unknown": 0,
+  "ours_unknown": 1,
   "parks": 193,
   "retired": 0,
   "unsure": 8,
-  "weak": 26,
-  "with_outline": 189
+  "weak": 29,
+  "with_outline": 193
  },
  "parks": {
   "US-0019": {
-   "cause": "whole park compared (POTA lists it in 2 states: {'US-TN': 5365, 'US-VA': 7614})",
-   "checked": "2026-10-30",
+   "cause": "whole park compared (POTA lists it in 2 states: {'US-VA': 9293, 'US-TN': 5365})",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Cumberland Gap National Historical Park",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-TN': 5365, 'US-VA': 7614})",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-VA': 9293, 'US-TN': 5365})",
    "official": null,
    "ours": {
     "acres": 24225,
     "acres_by_state": {
      "US-TN": 5365,
-     "US-VA": 7614
+     "US-VA": 9293
     },
     "manager": "",
     "pieces": [
@@ -40,8 +41,8 @@
     "pin": "inside",
     "src": "NPS units",
     "states": [
-     "US-TN",
-     "US-VA"
+     "US-VA",
+     "US-TN"
     ],
     "unknown_pieces": 0,
     "whole_park": true
@@ -110,7 +111,7 @@
   },
   "US-0050": {
    "cause": "boundary vs owned: our line may be the authorized boundary, the agency counts owned land (rule 1: use owned land)",
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Mammoth Cave National Park",
    "official": {
@@ -118,7 +119,7 @@
     "as": "52,830 acres",
     "clean": true,
     "line": "the web site. Geographic Figures All elevations are listed as Height above mean sea level (AMSL) Total Area: 52,830 acres (21,380 hectares) Lowest Surface Elevation: 411 feet (125 meters) Green River near Brownsville Highest Surfac",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Total Area: 52,830 acres (21,380 hectares)",
     "url": "https://www.nps.gov/maca/learn/management/statistics.htm",
     "why": "clean total"
@@ -215,7 +216,7 @@
    "verdict": "off"
   },
   "US-0295": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Clarks River National Wildlife Refuge",
    "official": null,
@@ -278,7 +279,7 @@
    "verdict": "no size on page"
   },
   "US-0538": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Reelfoot National Wildlife Refuge",
    "official": null,
@@ -311,7 +312,7 @@
      "why": "the park's page (Kentucky answer key)"
     },
     {
-     "status": "rest",
+     "status": "robots-unreadable",
      "url": "https://legacy.fws.gov/sites/default/files/documents/RF%20Gen%20Brochure.pdf",
      "why": "official map (Kentucky answer key)"
     },
@@ -346,16 +347,16 @@
    "verdict": "no size on page"
   },
   "US-0608": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Ohio River Islands National Wildlife Refuge",
-   "note": "whole park compared (POTA lists it in 1 states: {'US-WV': 2734})",
+   "note": "whole park compared (POTA lists it in 1 states: {'US-WV': 1807})",
    "official": {
     "acres": 3440.0,
     "as": "3440 acres",
     "clean": false,
     "line": "four islands and four mainland tracts scattered along 362 miles of the upper Ohio River. Most of the refuge's 3440 acres of land and underwater habitat are located in West Virginia; however, Pennsylvania and Kentucky each have two",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Most of the refuge's 3440 acres of land and underwater habitat are located in West Virginia;",
     "url": "https://www.fws.gov/refuge/ohio-river-islands",
     "why": "total-looking"
@@ -363,7 +364,7 @@
    "ours": {
     "acres": 3717,
     "acres_by_state": {
-     "US-WV": 2734
+     "US-WV": 1807
     },
     "manager": "KDFWR",
     "pieces": [
@@ -383,8 +384,8 @@
     "pin": "inside",
     "src": "Corps of Engineers, FWS refuges, KDFWR public hunting areas",
     "states": [
-     "US-PA",
-     "US-WV"
+     "US-WV",
+     "US-PA"
     ],
     "unknown_pieces": 0,
     "whole_park": true
@@ -451,7 +452,7 @@
    "verdict": "agree"
   },
   "US-0686": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [
     {
      "date_hint": null,
@@ -468,7 +469,7 @@
     "as": "125,000 acres",
     "clean": true,
     "line": "This Site All NPS Exiting nps.gov Cancel Big South Fork National River & Recreation Area • KY,TN Encompassing 125,000 acres of the Cumberland Plateau, Big South Fork National River and Recreation Area protects the free-flowing Big So",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Encompassing 125,000 acres of the Cumberland Plateau, Big South Fork National River and Recreation Area protects the free-flowing Big South Fork of the Cumberland River and its tributaries.",
     "url": "https://www.nps.gov/biso/index.htm",
     "why": "clean total"
@@ -551,7 +552,7 @@
   },
   "US-0703": {
    "cause": "boundary vs owned: our line may be the authorized boundary, the agency counts owned land (rule 1: use owned land)",
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [
     {
      "date_hint": "2006",
@@ -568,7 +569,7 @@
     "as": "1007 acres",
     "clean": true,
     "line": "Site All NPS Exiting nps.gov Cancel Fort Donelson National Battlefield Contact Us Park Statistics Park Size: 1007 acres (as of 2010) Annual Visitation: Total Visits: 705,397 (Fiscal Year 2010) Recreational: 208,887 Annual Budget:",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Park Size: 1007 acres (as of 2010)",
     "stale_year": 2010,
     "url": "https://www.nps.gov/fodo/learn/management/statistics.htm",
@@ -659,7 +660,7 @@
    "verdict": "off"
   },
   "US-0724": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Abraham Lincoln Birthplace National Historic Site",
    "official": null,
@@ -722,7 +723,7 @@
   },
   "US-10098": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Green River National Wildlife Refuge",
    "official": null,
@@ -794,7 +795,7 @@
    "verdict": "unsure"
   },
   "US-10099": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Wolf Creek National Fish Hatchery",
    "official": null,
@@ -849,7 +850,7 @@
   "US-10102": {
    "checked": "2026-10-29",
    "handover": [],
-   "last_read_failed": "2026-10-30",
+   "last_read_failed": "2026-11-15",
    "n": "Pine Mountain State Trail",
    "official": null,
    "ours": {
@@ -895,7 +896,7 @@
    "verdict": "no size on page"
   },
   "US-10103": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "The Cumberland River Wilderness Area",
    "official": null,
@@ -947,7 +948,7 @@
   },
   "US-10104": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 708,000 acres, no total words near it)",
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Red River National Wild and Scenic River",
    "official": {
@@ -955,7 +956,7 @@
     "as": "708,000 acres",
     "clean": false,
     "line": "onal Forest Spread across 21 counties of eastern Kentucky, the Daniel Boone National Forest manages more than 708,000 acres of national forest system lands within a 2.1 million-acre proclamation boundary. From over 600 miles of trail",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Spread across 21 counties of eastern Kentucky, the Daniel Boone National Forest manages more than 708,000 acres of national forest system lands within a 2.1 million-acre proclamation boundary.",
     "url": "https://www.fs.usda.gov/r08/danielboone",
     "why": "no total words near it"
@@ -1041,7 +1042,7 @@
    "verdict": "unsure"
   },
   "US-10105": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "The Green National Wild and Scenic River",
    "official": null,
@@ -1098,7 +1099,7 @@
    "verdict": "no size on page"
   },
   "US-10106": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "The Rockcastle National Wild and Scenic River",
    "official": null,
@@ -1150,7 +1151,7 @@
   },
   "US-10107": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Big South Fork National Wild and Scenic River",
    "official": null,
@@ -1211,7 +1212,7 @@
    "verdict": "unsure"
   },
   "US-10111": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Rock Creek National Wild and Scenic River",
    "official": null,
@@ -1262,7 +1263,7 @@
    "verdict": "no size on page"
   },
   "US-10112": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Bad Branch National Wild and Scenic River",
    "official": null,
@@ -1313,7 +1314,7 @@
    "verdict": "no size on page"
   },
   "US-10121": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Cane Creek Wildlife Management Area",
    "official": {
@@ -1321,7 +1322,7 @@
     "as": "6677 acres",
     "clean": true,
     "line": "Public Land Search | KDFWR --> Cane Creek WMA Get Directions Close Return to Search --> WMA Overview Size: 6677 acres Location: Laurel Contact: (606) 376-8083; London Ranger district 606-864-4163 Elevation: minimum 728 feet, ma",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 6677 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=38",
     "why": "clean total"
@@ -1388,7 +1389,7 @@
    "verdict": "agree"
   },
   "US-10124": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Clay Wildlife Management Area",
    "official": {
@@ -1396,7 +1397,7 @@
     "as": "8979 acres",
     "clean": true,
     "line": "Public Land Search | KDFWR --> Clay WMA Get Directions Close Return to Search --> WMA Overview Size: 8979 acres Location: Nicholas, Fleming, Bath Contact: 859-473-0036 Elevation: minimum 597 feet, maximum 959 feet. Entran",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 8979 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=155",
     "why": "clean total"
@@ -1454,7 +1455,7 @@
    "verdict": "agree"
   },
   "US-10128": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Ferguson Creek Wildlife Management Area",
    "official": {
@@ -1462,7 +1463,7 @@
     "as": "615 acres",
     "clean": true,
     "line": "ublic Land Search | KDFWR --> Ferguson Creek WMA Get Directions Close Return to Search --> WMA Overview Size: 615 acres Location: Livingston Contact: (270)-753-6913 Elevation: minimum 302 feet, maximum 553 feet. Entrance GPS coor",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 615 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9715",
     "why": "clean total"
@@ -1529,7 +1530,7 @@
    "verdict": "agree"
   },
   "US-10131": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Gabbard Branch Wildlife Management Area",
    "official": {
@@ -1537,7 +1538,7 @@
     "as": "809 acres",
     "clean": true,
     "line": "ublic Land Search | KDFWR --> Gabbard Branch WMA Get Directions Close Return to Search --> WMA Overview Size: 809 acres Location: Butler Contact: Office (270) 646-5167 Elevation: minimum 401 feet, maximum 672 feet. Entrance GPS c",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 809 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9713",
     "why": "clean total"
@@ -1604,7 +1605,7 @@
    "verdict": "agree"
   },
   "US-10137": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Harris-Dickerson Wildlife Management Area",
    "official": {
@@ -1612,7 +1613,7 @@
     "as": "1837 acres",
     "clean": true,
     "line": "lic Land Search | KDFWR --> Harris-Dickerson WMA Get Directions Close Return to Search --> WMA Overview Size: 1837 acres Location: Hopkins Contact: Office (270) 476-1889 Elevation: minimum 378 feet, maximum 393 feet. Entrance GPS",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 1837 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9709",
     "why": "clean total"
@@ -1679,7 +1680,7 @@
    "verdict": "agree"
   },
   "US-10138": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Hoskins Wildlife Management Area",
    "official": {
@@ -1687,7 +1688,7 @@
     "as": "5292 acres",
     "clean": true,
     "line": "Public Land Search | KDFWR --> Hoskins HAA Get Directions Close Return to Search --> WMA Overview Size: 5292 acres Location: Leslie, Harlan Contact: (606)-654-2533 Elevation: minimum 880 feet, maximum 2520 feet. Entrance GPS",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 5292 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9711",
     "why": "clean total"
@@ -1745,7 +1746,7 @@
    "verdict": "agree"
   },
   "US-10139": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Jefferson National Forest Wildlife Management Area",
    "official": {
@@ -1753,7 +1754,7 @@
     "as": "857 acres",
     "clean": true,
     "line": "and Search | KDFWR --> Jefferson National Forest Get Directions Close Return to Search --> WMA Overview Size: 857 acres Location: Letcher & Pike Contact: 1-888-265-0019 Elevation: minimum feet, maximum feet. Entrance GPS coordina",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 857 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9078",
     "why": "clean total"
@@ -1842,7 +1843,7 @@
    "verdict": "agree"
   },
   "US-10140": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Kentucky Lake Wildlife Management Area",
    "official": {
@@ -1850,7 +1851,7 @@
     "as": "4044 acres",
     "clean": true,
     "line": "Public Land Search | KDFWR --> Kentucky Lake WMA Get Directions Close Return to Search --> WMA Overview Size: 4044 acres Location: Calloway & Marshall Contact: (270) 753-6913 Elevation: minimum 359 feet, maximum 458 feet. Entrance",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 4044 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=227",
     "why": "clean total"
@@ -1908,7 +1909,7 @@
    "verdict": "agree"
   },
   "US-10141": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Kentucky Ridge Wildlife Management Area",
    "official": {
@@ -1916,7 +1917,7 @@
     "as": "3505 acres",
     "clean": true,
     "line": "and Search | KDFWR --> Kentucky Ridge Forest WMA Get Directions Close Return to Search --> WMA Overview Size: 3505 acres Location: Bell Contact: (606)-654-2533 Elevation: minimum 1002 feet, maximum 2229 feet. Entrance GPS coordina",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 3505 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=186",
     "why": "clean total"
@@ -1992,7 +1993,7 @@
    "verdict": "agree"
   },
   "US-10145": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Meadow Creek Wildlife Management Area",
    "official": {
@@ -2000,7 +2001,7 @@
     "as": "232 acres",
     "clean": true,
     "line": "Public Land Search | KDFWR --> Meadow Creek WMA Get Directions Close Return to Search --> WMA Overview Size: 232 acres Location: Wayne Contact: (270)283-0244 Elevation: minimum 900 feet, maximum 980 feet. Entrance GPS coordinate",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 232 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9224",
     "why": "clean total"
@@ -2067,7 +2068,7 @@
    "verdict": "agree"
   },
   "US-10146": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Mill Creek Wildlife Management Area",
    "official": {
@@ -2075,7 +2076,7 @@
     "as": "13009 acres",
     "clean": true,
     "line": "Public Land Search | KDFWR --> Mill Creek WMA Get Directions Close Return to Search --> WMA Overview Size: 13009 acres Location: Jackson Contact: (270)283-0244 Elevation: minimum 940 feet, maximum 1495 feet. Entrance GPS coordin",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 13009 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=37",
     "why": "clean total"
@@ -2169,7 +2170,7 @@
    "verdict": "agree"
   },
   "US-10148": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Mud Camp Creek Wildlife Management Area",
    "official": {
@@ -2177,7 +2178,7 @@
     "as": "572 acres",
     "clean": true,
     "line": "ublic Land Search | KDFWR --> Mud Camp Creek WMA Get Directions Close Return to Search --> WMA Overview Size: 572 acres Location: Cumberland Contact: (270)283-0244 Elevation: minimum 525 feet, maximum 926 feet. Entrance GPS coord",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 572 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=146",
     "why": "clean total"
@@ -2253,7 +2254,7 @@
    "verdict": "agree"
   },
   "US-10153": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Old Trace Creek Wildlife Management Area",
    "official": {
@@ -2261,7 +2262,7 @@
     "as": "874 acres",
     "clean": true,
     "line": "blic Land Search | KDFWR --> Old Trace Creek WMA Get Directions Close Return to Search --> WMA Overview Size: 874 acres Location: Lewis Contact: (606)-780-0854 Elevation: minimum 780 feet, maximum 1140 feet. Entrance GPS coordina",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 874 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9609",
     "why": "clean total"
@@ -2328,7 +2329,7 @@
    "verdict": "agree"
   },
   "US-10155": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Paul Van Booven Wildlife Management Area",
    "official": {
@@ -2336,7 +2337,7 @@
     "as": "2287 acres",
     "clean": true,
     "line": "blic Land Search | KDFWR --> Paul Van Booven WMA Get Directions Close Return to Search --> WMA Overview Size: 2287 acres Location: Breathitt Contact: (606)-654-2533 Elevation: minimum 739 feet, maximum 1543 feet. Entrance GPS coor",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 2287 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9105",
     "why": "clean total"
@@ -2430,7 +2431,7 @@
    "verdict": "agree"
   },
   "US-10157": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Ping-Sinking Valley Wildlife Management Area",
    "official": {
@@ -2438,7 +2439,7 @@
     "as": "806 acres",
     "clean": true,
     "line": "Land Search | KDFWR --> Ping-Sinking Valley WMA Get Directions Close Return to Search --> WMA Overview Size: 806 acres Location: Pulaski Contact: (270)-283-0244 Elevation: minimum 850 feet, maximum 1250 feet. Entrance GPS coordi",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 806 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9208",
     "why": "clean total"
@@ -2514,7 +2515,7 @@
    "verdict": "agree"
   },
   "US-10158": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Pioneer Weapons Wildlife Management Area",
    "official": {
@@ -2522,7 +2523,7 @@
     "as": "7731 acres",
     "clean": true,
     "line": "blic Land Search | KDFWR --> Pioneer Weapons WMA Get Directions Close Return to Search --> WMA Overview Size: 7731 acres Location: Bath & Menifee Contact: 859-473-0061 Elevation: minimum 744 feet, maximum 1315 feet. Entrance GPS c",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 7731 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=36",
     "why": "clean total"
@@ -2598,7 +2599,7 @@
    "verdict": "agree"
   },
   "US-10159": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Redbird Wildlife Management Area",
    "official": {
@@ -2606,7 +2607,7 @@
     "as": "24033 acres",
     "clean": true,
     "line": "Public Land Search | KDFWR --> Redbird WMA Get Directions Close Return to Search --> WMA Overview Size: 24033 acres Location: Clay & Leslie Contact: (606)-654-2533 Elevation: minimum 842 feet, maximum 1881 feet. Entrance GPS",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 24033 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=35",
     "why": "clean total"
@@ -2700,7 +2701,7 @@
    "verdict": "agree"
   },
   "US-10160": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Rockcastle River Wildlife Management Area",
    "official": {
@@ -2708,7 +2709,7 @@
     "as": "2922 acres",
     "clean": true,
     "line": "lic Land Search | KDFWR --> Rockcastle River WMA Get Directions Close Return to Search --> WMA Overview Size: 2922 acres Location: Pulaski Contact: (270)283-0244 Elevation: minimum 780 feet, maximum 1360 feet. Entrance GPS coordin",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 2922 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9217",
     "why": "clean total"
@@ -2775,7 +2776,7 @@
    "verdict": "agree"
   },
   "US-10161": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Rolling Fork Wildlife Management Area",
    "official": {
@@ -2783,7 +2784,7 @@
     "as": "2896 acres",
     "clean": true,
     "line": "Public Land Search | KDFWR --> Rolling Fork WMA Get Directions Close Return to Search --> WMA Overview Size: 2896 acres Location: Nelson, Larue Contact: (502) 477-9024 Elevation: minimum 520 feet, maximum 980 feet. Entrance GPS c",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 2896 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9219",
     "why": "clean total"
@@ -2850,7 +2851,7 @@
    "verdict": "agree"
   },
   "US-10162": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Ross Creek Wildlife Management Area",
    "official": {
@@ -2858,7 +2859,7 @@
     "as": "1296 acres",
     "clean": true,
     "line": "Public Land Search | KDFWR --> Ross Creek WMA Get Directions Close Return to Search --> WMA Overview Size: 1296 acres Location: Lee, Estill Contact: (606)344-0585 Elevation: minimum 605 feet, maximum 1180 feet. Entrance GPS coo",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 1296 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9705",
     "why": "clean total"
@@ -2916,7 +2917,7 @@
    "verdict": "agree"
   },
   "US-10164": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Shillalah Creek Wildlife Management Area",
    "official": {
@@ -2924,7 +2925,7 @@
     "as": "2535 acres",
     "clean": true,
     "line": "blic Land Search | KDFWR --> Shillalah Creek WMA Get Directions Close Return to Search --> WMA Overview Size: 2535 acres Location: Bell & Harlan Contact: (606)-654-2533 Elevation: minimum 1313 feet, maximum 3332 feet. Entrance GPS",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 2535 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=170",
     "why": "clean total"
@@ -3000,7 +3001,7 @@
    "verdict": "agree"
   },
   "US-10166": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Stephens Creek Wildlife Management Area",
    "official": {
@@ -3008,7 +3009,7 @@
     "as": "398 acres",
     "clean": true,
     "line": "ublic Land Search | KDFWR --> Stephens Creek WMA Get Directions Close Return to Search --> WMA Overview Size: 398 acres Location: Gallatin Contact: (859) 428-2262 Elevation: minimum 470 feet, maximum 800 feet. Entrance GPS coordi",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 398 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9232",
     "why": "clean total"
@@ -3084,7 +3085,7 @@
    "verdict": "agree"
   },
   "US-10167": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Simon Kenton Wildlife Management Area",
    "official": {
@@ -3092,7 +3093,7 @@
     "as": "982 acres",
     "clean": true,
     "line": "Public Land Search | KDFWR --> Simon Kenton WMA Get Directions Close Return to Search --> WMA Overview Size: 982 acres Location: Mason Contact: 859-473-0036 Elevation: minimum 555 feet, maximum 920 feet. Entrance GPS coordinates",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 982 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9613",
     "why": "clean total"
@@ -3159,7 +3160,7 @@
    "verdict": "agree"
   },
   "US-10168": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Sunny Brook Wildlife Management Area",
    "official": {
@@ -3167,7 +3168,7 @@
     "as": "142 acres",
     "clean": true,
     "line": "Public Land Search | KDFWR --> Sunny Brook WMA Get Directions Close Return to Search --> WMA Overview Size: 142 acres Location: Rowan Contact: 859-473-0061 Elevation: minimum 800 feet, maximum 1140 feet. Entrance GPS coordinate",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 142 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9707",
     "why": "clean total"
@@ -3225,7 +3226,7 @@
    "verdict": "agree"
   },
   "US-10170": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Twin Knobs Campground Wildlife Management Area",
    "official": {
@@ -3233,7 +3234,7 @@
     "as": "686 acres",
     "clean": true,
     "line": "ic Land Search | KDFWR --> Twin Knobs Campground Get Directions Close Return to Search --> WMA Overview Size: 686 acres Location: Rowan Contact: 859-473-0061 Elevation: minimum feet, maximum feet. Entrance GPS coordinates: Latitu",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 686 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9116",
     "why": "clean total"
@@ -3304,7 +3305,7 @@
    "verdict": "agree"
   },
   "US-10171": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Zilpo Campground Wildlife Management Area",
    "official": {
@@ -3312,7 +3313,7 @@
     "as": "221 acres",
     "clean": true,
     "line": "Public Land Search | KDFWR --> Zilpo Campground Get Directions Close Return to Search --> WMA Overview Size: 221 acres Location: Bath Contact: 859-473-0061 Elevation: minimum feet, maximum feet. Entrance GPS coordinates: Latitud",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 221 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9094",
     "why": "clean total"
@@ -3374,17 +3375,53 @@
    "verdict": "agree"
   },
   "US-10172": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Salato Wildlife Refuge",
-   "ours": null,
-   "score": null,
+   "official": null,
+   "ours": {
+    "acres": 249,
+    "manager": "Kentucky Department of Fish and Wildlife Resources",
+    "pieces": [
+     [
+      "bpad",
+      "Salato Wildlife Refuge",
+      249,
+      "file"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US (fallback)",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://fw.ky.gov/Education/Pages/Salato-Wildlife-Education-Center.aspx",
+     "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://fw.ky.gov/Education/Documents/salatotrailmap.pdf",
+     "why": "official map (Kentucky answer key)"
+    }
+   ],
+   "pct": null,
+   "score": 5,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
    "t": "Other",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "no size on page"
   },
   "US-10173": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Kentucky Horse Park",
    "official": null,
@@ -3430,17 +3467,59 @@
    "verdict": "no size on page"
   },
   "US-11181": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Sheltowee Trace National Recreation Trail",
-   "ours": null,
-   "score": null,
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "manager": "",
+    "pieces": [
+     [
+      "trl",
+      "Sheltowee Trace National Recreation Trail",
+      0,
+      "official trail line (US Forest Service)"
+     ]
+    ],
+    "pin": "not checked",
+    "src": "trl",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fs.usda.gov/wildflowers/regions/southern/SheltoweeTrace/index.shtml",
+     "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/stelprdb5427184.pdf",
+     "why": "official map (Kentucky answer key)"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.fs.usda.gov/visit/know-before-you-go",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "pct": null,
+   "score": 3,
+   "score_parts": {
+    "name": 1,
+    "pin": 1,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
    "t": "Trail",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "no size on page"
   },
   "US-11274": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Horse Mill Branch Wildlife Management Area",
    "official": {
@@ -3448,7 +3527,7 @@
     "as": "640 acres",
     "clean": true,
     "line": "ic Land Search | KDFWR --> Horse Mill Branch WMA Get Directions Close Return to Search --> WMA Overview Size: 640 acres Location: Morgan Contact: 859-473-0061 Elevation: minimum 880 feet, maximum 1240 feet. Entrance GPS coordinat",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 640 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9721",
     "why": "clean total"
@@ -3526,7 +3605,7 @@
   "US-12079": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-10-30",
+   "last_read_failed": "2026-11-15",
    "n": "Little Sextons Creek Wildlife Management Area",
    "official": null,
    "ours": {
@@ -3576,7 +3655,7 @@
    "verdict": "no size on page"
   },
   "US-12083": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "University of the Cumberlands Wildlife Management Area",
    "official": {
@@ -3584,7 +3663,7 @@
     "as": "10275 acres",
     "clean": true,
     "line": "ch | KDFWR --> University of the Cumberlands WMA Get Directions Close Return to Search --> WMA Overview Size: 10275 acres Location: Whitley,McCreary Contact: (270)283-0244 Elevation: minimum 940 feet, maximum 2120 feet. Entrance GP",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 10275 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9727",
     "why": "clean total"
@@ -3656,7 +3735,7 @@
    "verdict": "agree"
   },
   "US-1251": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Carr Creek State Park",
    "official": null,
@@ -3708,7 +3787,7 @@
    "verdict": "no size on page"
   },
   "US-1252": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Columbus Belmont State Park",
    "official": null,
@@ -3760,7 +3839,7 @@
    "verdict": "no size on page"
   },
   "US-1253": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Dawkins Line Rail Trail State Park",
    "official": null,
@@ -3812,7 +3891,7 @@
    "verdict": "no size on page"
   },
   "US-1254": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "E.P. 'Tom' Sawyer State Park",
    "official": null,
@@ -3864,7 +3943,7 @@
    "verdict": "no size on page"
   },
   "US-1255": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Fishtrap Lake Wildlife Management Area",
    "official": {
@@ -3872,7 +3951,7 @@
     "as": "13138 acres",
     "clean": true,
     "line": "Public Land Search | KDFWR --> Fishtrap Lake WMA Get Directions Close Return to Search --> WMA Overview Size: 13138 acres Location: Pike Contact: 606-207-3385 Elevation: minimum 749 feet, maximum 1989 feet. Entrance GPS coordinates",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 13138 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=25",
     "why": "clean total"
@@ -3930,7 +4009,7 @@
    "verdict": "agree"
   },
   "US-1256": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Fort Boonesborough State Park",
    "official": null,
@@ -3982,7 +4061,7 @@
    "verdict": "no size on page"
   },
   "US-1257": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "General Burnside State Park",
    "official": null,
@@ -4034,7 +4113,7 @@
    "verdict": "no size on page"
   },
   "US-1258": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Grayson Lake State Park",
    "official": null,
@@ -4086,7 +4165,7 @@
    "verdict": "no size on page"
   },
   "US-1259": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Green River Lake State Park",
    "official": null,
@@ -4144,7 +4223,7 @@
    "verdict": "no size on page"
   },
   "US-1260": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "John James Audubon State Park",
    "official": null,
@@ -4202,7 +4281,7 @@
    "verdict": "no size on page"
   },
   "US-1261": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Kincaid Lake State Park",
    "official": null,
@@ -4260,7 +4339,7 @@
    "verdict": "no size on page"
   },
   "US-1262": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Kingdom Come State Park",
    "official": null,
@@ -4318,7 +4397,7 @@
    "verdict": "no size on page"
   },
   "US-1263": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Lake Malone State Park",
    "official": null,
@@ -4371,7 +4450,7 @@
   },
   "US-1264": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [
     {
      "date_hint": "2019",
@@ -4396,7 +4475,7 @@
     "as": "896 acres",
     "clean": true,
     "line": "erness Road Park is a city park located just south of London, Kentucky in Laurel County. The park encompasses 896 acres and includes a section of the Wilderness Road that early settlers used to reach Kentucky. The park is named f",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "The park encompasses 896 acres and includes a section of the Wilderness Road that early settlers used to reach Kentucky.",
     "url": "https://levijacksonpark.com/history/",
     "why": "clean total"
@@ -4454,7 +4533,7 @@
    "verdict": "off"
   },
   "US-1265": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Lincoln Homestead State Park",
    "official": null,
@@ -4506,7 +4585,7 @@
    "verdict": "no size on page"
   },
   "US-1266": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Mineral Mounds State Park",
    "official": null,
@@ -4558,7 +4637,7 @@
    "verdict": "no size on page"
   },
   "US-1267": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "My Old Kentucky Home State Park",
    "official": null,
@@ -4610,7 +4689,7 @@
    "verdict": "no size on page"
   },
   "US-1268": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Nolin Lake State Park",
    "official": null,
@@ -4662,7 +4741,7 @@
    "verdict": "no size on page"
   },
   "US-1269": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Old Fort Harrod State Park",
    "official": null,
@@ -4714,7 +4793,7 @@
    "verdict": "no size on page"
   },
   "US-1270": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Paintsville Lake State Park",
    "official": null,
@@ -4766,7 +4845,7 @@
    "verdict": "no size on page"
   },
   "US-1271": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Taylorsville Lake State Park",
    "official": null,
@@ -4818,7 +4897,7 @@
    "verdict": "no size on page"
   },
   "US-1272": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Yatesville Lake State Park",
    "official": null,
@@ -4870,7 +4949,7 @@
    "verdict": "no size on page"
   },
   "US-1273": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Barren River Lake State Park",
    "official": null,
@@ -4922,7 +5001,7 @@
    "verdict": "no size on page"
   },
   "US-1274": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Blue Licks Battlefield State Park",
    "official": null,
@@ -4980,7 +5059,7 @@
    "verdict": "no size on page"
   },
   "US-1275": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Buckhorn Lake State Park",
    "official": null,
@@ -5035,7 +5114,7 @@
    "cause": "agency bigger: our outline may miss a tract",
    "checked": "2026-10-29",
    "handover": [],
-   "last_read_failed": "2026-10-30",
+   "last_read_failed": "2026-11-15",
    "n": "Green River State Natural Area",
    "official": {
     "acres": 440.0,
@@ -5110,7 +5189,7 @@
    "verdict": "off"
   },
   "US-1276": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Carter Caves State Park",
    "official": null,
@@ -5162,7 +5241,7 @@
    "verdict": "no size on page"
   },
   "US-1277": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Cumberland Falls State Park",
    "official": null,
@@ -5220,7 +5299,7 @@
    "verdict": "no size on page"
   },
   "US-1278": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Dale Hollow State Park",
    "official": null,
@@ -5278,7 +5357,7 @@
    "verdict": "no size on page"
   },
   "US-1279": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "General Butler State Park",
    "official": null,
@@ -5330,7 +5409,7 @@
    "verdict": "no size on page"
   },
   "US-1280": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Greenbo Lake State Park",
    "official": null,
@@ -5388,7 +5467,7 @@
    "verdict": "no size on page"
   },
   "US-1281": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Jenny Wiley State Park",
    "official": null,
@@ -5446,7 +5525,7 @@
    "verdict": "no size on page"
   },
   "US-1282": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Kenlake State Park",
    "official": null,
@@ -5504,7 +5583,7 @@
    "verdict": "no size on page"
   },
   "US-1283": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Kentucky Dam Village State Park",
    "official": null,
@@ -5556,7 +5635,7 @@
    "verdict": "no size on page"
   },
   "US-1284": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Lake Barkley State Park",
    "official": null,
@@ -5608,7 +5687,7 @@
    "verdict": "no size on page"
   },
   "US-1285": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Lake Cumberland State Park",
    "official": null,
@@ -5660,7 +5739,7 @@
    "verdict": "no size on page"
   },
   "US-1286": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Natural Bridge State Park",
    "official": null,
@@ -5718,7 +5797,7 @@
    "verdict": "no size on page"
   },
   "US-1287": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Pennyrile Forest State Park",
    "official": null,
@@ -5770,7 +5849,7 @@
    "verdict": "no size on page"
   },
   "US-1288": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Pine Mountain State Park",
    "official": null,
@@ -5828,7 +5907,7 @@
    "verdict": "no size on page"
   },
   "US-1289": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Rough River Dam State Park",
    "official": null,
@@ -5880,7 +5959,7 @@
    "verdict": "no size on page"
   },
   "US-12971": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Bat Cave State Nature Preserve",
    "official": {
@@ -5888,7 +5967,7 @@
     "as": "155 acres",
     "clean": false,
     "line": "dicated December 16, 1981, Bat Cave and Cascade Caverns State Nature Preserves consist of two tracts totaling 155 acres located within the boundaries of Carter Caves State Park. These preserves are located within the boundaries o",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Dedicated December 16, 1981, Bat Cave and Cascade Caverns State Nature Preserves consist of two tracts totaling 155 acres located within the boundaries of Carter Caves State Park.",
     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Carter-Caves.aspx",
     "why": "history"
@@ -5971,7 +6050,7 @@
   "US-12972": {
    "checked": "2026-10-29",
    "handover": [],
-   "last_read_failed": "2026-10-30",
+   "last_read_failed": "2026-11-15",
    "n": "Cascade Caverns State Nature Preserve",
    "official": null,
    "ours": {
@@ -6011,7 +6090,7 @@
    "verdict": "no size on page"
   },
   "US-12974": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Clear Creek Wildlife Management Area",
    "official": {
@@ -6019,7 +6098,7 @@
     "as": "858 acres",
     "clean": true,
     "line": "Public Land Search | KDFWR --> Clear Creek WMA Get Directions Close Return to Search --> WMA Overview Size: 858 acres Location: Hopkins Contact: Office (270) 476-1889 Elevation: minimum 330 feet, maximum 378 feet. Entrance GPS",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 858 acres",
     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=9006",
     "why": "clean total"
@@ -6086,7 +6165,7 @@
    "verdict": "agree"
   },
   "US-13598": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Beaver Lake State Fishing Lake",
    "official": {
@@ -6094,7 +6173,7 @@
     "as": "146 acre",
     "clean": false,
     "line": "sheries | KDFWR Beaver Lake CLOSE Beaver Lake Fish Attractors in Google maps! Beaver Lake 5 ft Contours Note: 146 acre lake Possession or use of live shad for bait is prohibited. Special Fishing Regulations for Beaver Lake Speci",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Note: 146 acre lake",
     "url": "https://app.fw.ky.gov/fisheries/waterbodydetail.aspx?wid=49",
     "why": "part (a lake, a purchase, a campground…)"
@@ -6147,7 +6226,7 @@
    "verdict": "agree"
   },
   "US-13599": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Kingfisher Lakes State Fishing Lake",
    "official": {
@@ -6155,7 +6234,7 @@
     "as": "21.2 + 13.8 acres",
     "clean": false,
     "line": "CLOSE Kingfisher Lakes 1-foot contours in Google maps! Kingfisher Lakes Fish attractors in Google maps! Note: 21.2 and 13.8 acre lakes Special Boating Regulations for Kingfisher Lakes Regulation Description Notes KRS KAR Internal combusti",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "",
     "url": "https://app.fw.ky.gov/fisheries/waterbodydetail.aspx?wid=40",
     "why": "sum of the pieces named in one sentence"
@@ -6217,7 +6296,7 @@
    "verdict": "agree"
   },
   "US-13600": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Carpenters Lake State Fishing Lake",
    "official": {
@@ -6225,7 +6304,7 @@
     "as": "69.1 acre",
     "clean": false,
     "line": "Fisheries | KDFWR Carpenter Lake CLOSE Carpenter Lake 2-ft Contours in Google maps! Note: 69.1 acre lake Special Fishing Regulations for Carpenter Lake Species Regulation Description Notes KRS KAR LARGEMOUTH B",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Note: 69.1 acre lake",
     "url": "https://app.fw.ky.gov/fisheries/waterbodydetail.aspx?wid=39",
     "why": "part (a lake, a purchase, a campground…)"
@@ -6278,7 +6357,7 @@
    "verdict": "agree"
   },
   "US-13601": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Guist Creek Lake State Fishing Lake",
    "official": {
@@ -6286,7 +6365,7 @@
     "as": "328 acre",
     "clean": false,
     "line": "st Creek Lake Largemouth Bass Fishing Quality Assessment Guist Creek Lake 5-ft Contours in Google maps! Note: 328 acre lake Special Fishing Regulations for Guist Creek Lake Species Regulation Description Notes KRS KAR HYBRID STR",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Note: 328 acre lake",
     "url": "https://app.fw.ky.gov/fisheries/waterbodydetail.aspx?wid=56",
     "why": "part (a lake, a purchase, a campground…)"
@@ -6339,7 +6418,7 @@
    "verdict": "agree"
   },
   "US-13606": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Bullock Pen State Fishing Lake",
    "official": {
@@ -6347,7 +6426,7 @@
     "as": "148.9 acre",
     "clean": false,
     "line": "e CLOSE Bullock Pen Lake Fish Attractors in Google maps! Bullock Pen Lake 5-ft Contours in Google maps! Note: 148.9 acre lake Jug and Limb Lines Prohibited. Special Fishing Regulations for Bullock Pen Lake Species Regulation Descr",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Note: 148.9 acre lake",
     "url": "https://app.fw.ky.gov/fisheries/waterbodydetail.aspx?wid=51",
     "why": "part (a lake, a purchase, a campground…)"
@@ -6400,7 +6479,7 @@
    "verdict": "agree"
   },
   "US-13607": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Boltz State Fishing Lake",
    "official": {
@@ -6408,7 +6487,7 @@
     "as": "92.1 acre",
     "clean": false,
     "line": "WR Boltz Lake CLOSE Boltz Lake Fish Attractors in Google maps! Boltz Lake 5-ft Contours in Google maps! Note: 92.1 acre lake Possession or use of live shad for bait is prohibited. Special Fishing Regulations for Boltz Lake Specie",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Note: 92.1 acre lake",
     "url": "https://app.fw.ky.gov/fisheries/waterbodydetail.aspx?wid=50",
     "why": "part (a lake, a purchase, a campground…)"
@@ -6461,7 +6540,7 @@
    "verdict": "agree"
   },
   "US-3779": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Big Bone Lick State Historic Site",
    "official": null,
@@ -6513,7 +6592,7 @@
    "verdict": "no size on page"
   },
   "US-3781": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Breaks Interstate State Park",
    "official": null,
@@ -6571,7 +6650,7 @@
   "US-3782": {
    "checked": "2026-10-29",
    "handover": [],
-   "last_read_failed": "2026-10-30",
+   "last_read_failed": "2026-11-15",
    "n": "Dr. Thomas Walker State Historic Site",
    "official": null,
    "ours": {
@@ -6622,7 +6701,7 @@
    "verdict": "no size on page"
   },
   "US-3783": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Jefferson Davis State Historic Site",
    "official": null,
@@ -6674,7 +6753,7 @@
    "verdict": "no size on page"
   },
   "US-3784": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Old Mulkey Meetinghouse State Historic Site",
    "official": null,
@@ -6728,7 +6807,7 @@
   "US-3785": {
    "checked": "2026-10-29",
    "handover": [],
-   "last_read_failed": "2026-10-30",
+   "last_read_failed": "2026-11-15",
    "n": "Perryville Battlefield State Historic Site",
    "official": null,
    "ours": {
@@ -6779,7 +6858,7 @@
    "verdict": "no size on page"
   },
   "US-3786": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Waveland State Historic Site",
    "official": null,
@@ -6831,7 +6910,7 @@
    "verdict": "no size on page"
   },
   "US-3787": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "White Hall State Historic Site",
    "official": null,
@@ -6872,7 +6951,7 @@
    "verdict": "no size on page"
   },
   "US-3788": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Wickliffe Mounds State Historic Site",
    "official": null,
@@ -6924,7 +7003,7 @@
    "verdict": "no size on page"
   },
   "US-3789": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-15",
    "handover": [],
    "n": "William Whitley House State Historic Site",
    "official": null,
@@ -6965,7 +7044,7 @@
    "verdict": "no size on page"
   },
   "US-3790": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Fort Heiman National Battlefield",
    "official": null,
@@ -7013,18 +7092,109 @@
    "verdict": "no size on page"
   },
   "US-3791": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Trail of Tears National Historic Trail",
-   "ours": null,
-   "score": null,
+   "note": "whole park compared (POTA lists it in 0 states: {})",
+   "official": {
+    "acres": 640.0,
+    "as": "640 acres",
+    "clean": false,
+    "line": "ail of Tears, as well as subsequent history of the home and region. NPS Cherokee leader John Brown, who owned 640 acres in this area, ordered the construction of Browns Ferry Tavern in 1803. In 1838, the road running past this st",
+    "read": "2026-11-08",
+    "sent": "Cherokee leader John Brown, who owned 640 acres in this area, ordered the construction of Browns Ferry Tavern in 1803.",
+    "url": "https://www.nps.gov/trte/index.htm",
+    "why": "a page of another unit; the sentence does not name this park"
+   },
+   "ours": {
+    "acres": 0,
+    "acres_by_state": {},
+    "manager": "",
+    "pieces": [
+     [
+      "trl",
+      "Trail of Tears National Historic Trail",
+      0,
+      "official trail line (National Park Service)"
+     ]
+    ],
+    "pin": "not checked",
+    "src": "trl",
+    "states": [
+     "US-MO",
+     "US-AR",
+     "US-OK",
+     "US-GA",
+     "US-TN",
+     "US-AL",
+     "US-NC",
+     "US-IL"
+    ],
+    "unknown_pieces": 0,
+    "whole_park": true
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/trte/index.htm",
+     "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/trte/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/trte/planyourvisit/upload/National-Park-Service-Trail-of-Tears-Map-508.pdf",
+     "why": "official map (documents bot)"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/trte/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    }
+   ],
+   "pct": null,
+   "same_agency": false,
+   "score": 3,
+   "score_parts": {
+    "name": 1,
+    "pin": 1,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [
+    {
+     "acres": 640.0,
+     "as": "640 acres",
+     "clean": false,
+     "line": "ail of Tears, as well as subsequent history of the home and region. NPS Cherokee leader John Brown, who owned 640 acres in this area, ordered the construction of Browns Ferry Tavern in 1803. In 1838, the road running past this st",
+     "total_like": false,
+     "url": "https://www.nps.gov/trte/index.htm",
+     "why": "a page of another unit; the sentence does not name this park"
+    },
+    {
+     "acres": 4300.0,
+     "as": "4,300 acres",
+     "clean": false,
+     "line": "e conditions in the Ohio River to allow a safe crossing. NPS The Pea Ridge National Military Park encompasses 4,300 acres and features a visitor center, museum, self-guided tours, reconstructed Elkhorn Tavern, and a retracement tra",
+     "total_like": false,
+     "url": "https://www.nps.gov/trte/index.htm",
+     "why": "another park / unit named in the sentence"
+    }
+   ],
    "t": "National / NPS",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "ours unknown"
   },
   "US-3792": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 170,000 acres, no total words near it)",
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Land Between the Lakes National Recreation Area",
    "official": {
@@ -7032,7 +7202,7 @@
     "as": "170,000 acres",
     "clean": false,
     "line": "test Buzz Joint effort rescues injured eagle in LBL October 8, 2026 Joint effort rescues injured eagle in LBL 170,000 acres in your pocket - The LBL App is live July 22, 2026 170,000 acres in your pocket – The LBL App is live Wildlif",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "170,000 acres in your pocket - The LBL App is live",
     "url": "https://landbetweenthelakes.us/",
     "why": "no total words near it"
@@ -7062,12 +7232,12 @@
    ],
    "pct": 37,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
     "size": 1,
-    "source": 1
+    "source": 2
    },
    "sizes": [
     {
@@ -7094,7 +7264,7 @@
    "verdict": "unsure"
   },
   "US-3793": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Ballard Wildlife Management Area",
    "official": {
@@ -7102,7 +7272,7 @@
     "as": "8014 acres",
     "clean": true,
     "line": "Public Land Search | KDFWR --> Ballard WMA Get Directions Close Return to Search --> WMA Overview Size: 8014 acres Location: Ballard Contact: (270) 224-2244 Elevation: minimum 286 feet, maximum 367 feet. Entrance GPS coordin",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 8014 acres",
     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=224",
     "why": "clean total"
@@ -7187,7 +7357,7 @@
    "verdict": "agree"
   },
   "US-3794": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Beaver Creek Wildlife Management Area",
    "official": {
@@ -7195,7 +7365,7 @@
     "as": "17753 acres",
     "clean": true,
     "line": "Public Land Search | KDFWR --> Beaver Creek WMA Get Directions Close Return to Search --> WMA Overview Size: 17753 acres Location: McCreary & Pulaski Contact: (606) 376-8083 Elevation: minimum 721 feet, maximum 1438 feet. Entrance",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 17753 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=39",
     "why": "clean total"
@@ -7307,7 +7477,7 @@
    "verdict": "agree"
   },
   "US-3795": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Beechy Creek Wildlife Management Area",
    "official": {
@@ -7315,7 +7485,7 @@
     "as": "119 acres",
     "clean": false,
     "line": "on Public Hunting Area Location Regional Locator WMA Overview Location & Size: Calloway County, 119 acres. Contact: (270) 753-6913 Elevation: minimum 365 feet, maximum 458 feet. Entrance GPS coordinates: Latit",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Location & Size: Calloway County, 119 acres.",
     "url": "https://fw.ky.gov/More/Documents/BeechyCreekWMA-ALL.pdf",
     "why": "a map label (no sentence)"
@@ -7374,7 +7544,7 @@
    "verdict": "agree"
   },
   "US-3796": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Big Rivers Wildlife Management Area",
    "official": {
@@ -7382,7 +7552,7 @@
     "as": "7574 acres",
     "clean": true,
     "line": "arch | KDFWR --> Big Rivers WMA and State Forest Get Directions Close Return to Search --> WMA Overview Size: 7574 acres Location: Crittenden & Union Contact: Office (270) 374-3025 Elevation: minimum 330 feet, maximum 600 feet. En",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 7574 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9203",
     "why": "clean total"
@@ -7458,7 +7628,7 @@
    "verdict": "agree"
   },
   "US-3797": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Boatwright Wildlife Management Area",
    "official": {
@@ -7466,7 +7636,7 @@
     "as": "8802 acres",
     "clean": true,
     "line": "Public Land Search | KDFWR --> Boatwright WMA Get Directions Close Return to Search --> WMA Overview Size: 8802 acres Location: Ballard Contact: (270) 224-2244 Elevation: minimum 295 feet, maximum 361 feet. Entrance GPS coordin",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 8802 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=222",
     "why": "clean total"
@@ -7587,7 +7757,7 @@
    "verdict": "agree"
   },
   "US-3798": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Buck Creek Wildlife Management Area",
    "official": {
@@ -7595,7 +7765,7 @@
     "as": "850 acres",
     "clean": false,
     "line": "on Public Hunting Area Location Regional Locator WMA Overview Location & Size: Pulaski County, 850 acres Contact: (606) 877-8409 Elevation: minimum 760 feet, maximum 1240 feet. Entrance GPS coordinates: Lati",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Location & Size: Pulaski County, 850 acres",
     "url": "https://fw.ky.gov/More/Documents/BuckCreekWMA_All.pdf",
     "why": "a map label (no sentence)"
@@ -7654,7 +7824,7 @@
    "verdict": "agree"
   },
   "US-3799": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Burchell-Beech Wildlife Management Area",
    "official": {
@@ -7662,7 +7832,7 @@
     "as": "1241 acres",
     "clean": true,
     "line": "Land Search | KDFWR --> Burchell-Beech Creek WMA Get Directions Close Return to Search --> WMA Overview Size: 1241 acres Location: Clay Contact: (606)344-0585 Elevation: minimum 928 feet, maximum 1663 feet. Entrance GPS coordinate",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 1241 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=18",
     "why": "clean total"
@@ -7756,7 +7926,7 @@
    "verdict": "agree"
   },
   "US-3800": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Cedar Creek Lake Wildlife Management Area",
    "official": {
@@ -7764,7 +7934,7 @@
     "as": "796 acres",
     "clean": true,
     "line": "lic Land Search | KDFWR --> Cedar Creek Lake WMA Get Directions Close Return to Search --> WMA Overview Size: 796 acres Location: Lincoln Contact: (270)283-0244 Elevation: minimum 836 feet, maximum 1006 feet. Entrance GPS coordin",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 796 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9004",
     "why": "clean total"
@@ -7868,7 +8038,7 @@
   },
   "US-3801": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 708,000 acres, no total words near it)",
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Clifty Wilderness Area",
    "official": {
@@ -7876,7 +8046,7 @@
     "as": "708,000 acres",
     "clean": false,
     "line": "onal Forest Spread across 21 counties of eastern Kentucky, the Daniel Boone National Forest manages more than 708,000 acres of national forest system lands within a 2.1 million-acre proclamation boundary. From over 600 miles of trail",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Spread across 21 counties of eastern Kentucky, the Daniel Boone National Forest manages more than 708,000 acres of national forest system lands within a 2.1 million-acre proclamation boundary.",
     "url": "https://www.fs.usda.gov/r08/danielboone",
     "why": "no total words near it"
@@ -7962,7 +8132,7 @@
    "verdict": "unsure"
   },
   "US-3802": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Clyde E Buckley Sanctuary",
    "official": {
@@ -7970,7 +8140,7 @@
     "as": "375 acre",
     "clean": false,
     "line": "life Sanctuary: Nestled in the beautiful, rural landscape of Woodford County, Buckley Wildlife Sanctuary is a 375 acre nature preserve dedicated to environmental education and conservation. Now managed by Bluegrass Greensource,",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Nestled in the beautiful, rural landscape of Woodford County, Buckley Wildlife Sanctuary is a 375 acre nature preserve dedicated to environmental education and conservation.",
     "url": "https://bggreensource.org/buckley/",
     "why": "total-looking"
@@ -8028,7 +8198,7 @@
    "verdict": "agree"
   },
   "US-3803": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Coil Estate Wildlife Management Area",
    "official": {
@@ -8036,7 +8206,7 @@
     "as": "795 acres",
     "clean": false,
     "line": "Information Public Hunting Area Location Regional Locator WMA Overview Location & Size: Carlisle County, 795 acres. Contact: (270) 224-2244 Elevation: minimum 310 feet, maximum 320 feet. Entrance GPS coordinates: Latitu",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Location & Size: Carlisle County, 795 acres.",
     "url": "https://fw.ky.gov/More/Documents/CoilEstateWMA_ALL.pdf",
     "why": "a map label (no sentence)"
@@ -8104,7 +8274,7 @@
    "verdict": "agree"
   },
   "US-3804": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Cranks Creek Wildlife Management Area",
    "official": {
@@ -8112,7 +8282,7 @@
     "as": "2,155 acres",
     "clean": false,
     "line": "tion Public Hunting Area Location Regional Locator WMA Overview Location & Size: Harlan County, 2,155 acres Contact: (606) 654-2533 Elevation: minimum 1424 feet, maximum 2948 feet. Entrance GPS coordinate: L",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Location & Size: Harlan County, 2,155 acres",
     "url": "https://fw.ky.gov/More/Documents/CranksCreekWMA_ALL.pdf",
     "why": "a map label (no sentence)"
@@ -8171,7 +8341,7 @@
    "verdict": "agree"
   },
   "US-3805": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Curtis Gates Lloyd Wildlife Management Area",
    "official": {
@@ -8179,7 +8349,7 @@
     "as": "1105 acres",
     "clean": true,
     "line": "c Land Search | KDFWR --> Curtis Gates Lloyd WMA Get Directions Close Return to Search --> WMA Overview Size: 1105 acres Location: Grant Contact: (859) 428-2262 Elevation: minimum 720 feet, maximum 943 feet. Entrance GPS coordinat",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 1105 acres",
     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=153",
     "why": "clean total"
@@ -8255,7 +8425,7 @@
    "verdict": "agree"
   },
   "US-3806": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Dennis-Gray Wildlife Management Area",
    "official": {
@@ -8263,7 +8433,7 @@
     "as": "102 acres",
     "clean": true,
     "line": "Public Land Search | KDFWR --> Dennis-Gray WMA Get Directions Close Return to Search --> WMA Overview Size: 102 acres Location: Adair Contact: (270)283-0244 Elevation: minimum 702 feet, maximum 748 feet. Entrance GPS coordinate",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 102 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=148",
     "why": "clean total"
@@ -8330,7 +8500,7 @@
    "verdict": "agree"
   },
   "US-3807": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Dix River Wildlife Management Area",
    "official": {
@@ -8338,7 +8508,7 @@
     "as": "400 acres",
     "clean": true,
     "line": "ile to parking area on the right. Dix River WMA is located in east central Lincoln County and consists of the 400 acres. The topography consists of flat bottomlands and the majority of the property is bounded by Dix River and Mud",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Dix River WMA is located in east central Lincoln County and consists of the 400 acres.",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9032",
     "why": "clean total"
@@ -8459,7 +8629,7 @@
    "verdict": "agree"
   },
   "US-3808": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Doug Travis Wildlife Management Area",
    "official": {
@@ -8467,7 +8637,7 @@
     "as": "4132 acres",
     "clean": true,
     "line": "Public Land Search | KDFWR --> Doug Travis WMA Get Directions Close Return to Search --> WMA Overview Size: 4132 acres Location: Carlisle & Hickman Contact: (270) 488-3233 Elevation: minimum 280 feet, maximum 456 feet. Entrance",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 4132 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=40",
     "why": "clean total"
@@ -8534,7 +8704,7 @@
    "verdict": "agree"
   },
   "US-3809": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Dr. James R. Rich Wildlife Management Area",
    "official": {
@@ -8542,7 +8712,7 @@
     "as": "2264 acres",
     "clean": true,
     "line": "ic Land Search | KDFWR --> Dr. James R. Rich WMA Get Directions Close Return to Search --> WMA Overview Size: 2264 acres Location: Owen Contact: (502) 535-6335 Elevation: minimum 714 feet, maximum 940 feet. Entrance GPS coordinate",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 2264 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=34",
     "why": "clean total"
@@ -8618,7 +8788,7 @@
    "verdict": "agree"
   },
   "US-3810": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Dr. Norman And Martha Adair Wildlife Management Area",
    "official": {
@@ -8626,7 +8796,7 @@
     "as": "635 acres",
     "clean": true,
     "line": "arch | KDFWR --> Dr. Norman and Martha Adair WMA Get Directions Close Return to Search --> WMA Overview Size: 635 acres Location: Boone Contact: (859) 428-2262 Elevation: minimum 517 feet, maximum 846 feet. Entrance GPS coordinat",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 635 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=149",
     "why": "clean total"
@@ -8702,7 +8872,7 @@
    "verdict": "agree"
   },
   "US-3811": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Ed Mabry-Laurel Gorge Wildlife Management Area",
    "official": {
@@ -8710,7 +8880,7 @@
     "as": "1,485 acres",
     "clean": false,
     "line": "MA Information Public Hunting Area Location Regional Locator WMA Overview Location & Size: Elliot County, 1,485 acres. Contact: (606) 474-8535 Elevation: minimum 720 feet, maximum 1160 feet. Entrance GPS coordinates: Latit",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Location & Size: Elliot County, 1,485 acres.",
     "url": "https://fw.ky.gov/More/Documents/EdMabry-LaurelGorgeWMA_ALL.pdf",
     "why": "a map label (no sentence)"
@@ -8769,7 +8939,7 @@
    "verdict": "agree"
   },
   "US-3812": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Fleming Wildlife Management Area",
    "official": {
@@ -8777,7 +8947,7 @@
     "as": "1907 acres",
     "clean": true,
     "line": "Public Land Search | KDFWR --> Fleming WMA Get Directions Close Return to Search --> WMA Overview Size: 1907 acres Location: Fleming Contact: 859-473-0036 Elevation: minimum 792 feet, maximum 1245 feet. Entrance GPS coordina",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 1907 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=154",
     "why": "clean total"
@@ -8844,7 +9014,7 @@
    "verdict": "agree"
   },
   "US-3813": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Griffith Woods Wildlife Management Area",
    "official": {
@@ -8852,7 +9022,7 @@
     "as": "746 acres",
     "clean": true,
     "line": "ublic Land Search | KDFWR --> Griffith Woods WMA Get Directions Close Return to Search --> WMA Overview Size: 746 acres Location: Harrison Contact: (502) 545-3836 Elevation: minimum 790 feet, maximum 920 feet. Entrance GPS coordi",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 746 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9201",
     "why": "clean total"
@@ -8975,7 +9145,7 @@
   "US-3814": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-10-30",
+   "last_read_failed": "2026-11-15",
    "n": "Hensley-Pine Mountain Wildlife Management Area",
    "official": null,
    "ours": {
@@ -9020,7 +9190,7 @@
    "verdict": "no size on page"
   },
   "US-3815": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Higginson-Henry Wildlife Management Area",
    "official": {
@@ -9028,7 +9198,7 @@
     "as": "5446 acres",
     "clean": true,
     "line": "blic Land Search | KDFWR --> Higginson-Henry WMA Get Directions Close Return to Search --> WMA Overview Size: 5446 acres Location: Union Contact: Office (270) 389-3580 Elevation: minimum 396 feet, maximum 675 feet. Entrance GPS co",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 5446 acres",
     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=132",
     "why": "clean total"
@@ -9122,7 +9292,7 @@
    "verdict": "agree"
   },
   "US-3816": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "John A. Kleber Wildlife Management Area",
    "official": {
@@ -9130,7 +9300,7 @@
     "as": "4463 acres",
     "clean": true,
     "line": "ublic Land Search | KDFWR --> John A. Kleber WMA Get Directions Close Return to Search --> WMA Overview Size: 4463 acres Location: Owen & Franklin Contact: (502) 535-6335 Elevation: minimum 620 feet, maximum 920 feet. Entrance GPS",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 4463 acres",
     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=14",
     "why": "clean total"
@@ -9197,7 +9367,7 @@
    "verdict": "agree"
   },
   "US-3817": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "John C. Williams Wildlife Management Area",
    "official": {
@@ -9205,7 +9375,7 @@
     "as": "1073 acres",
     "clean": true,
     "line": "lic Land Search | KDFWR --> John C. Williams WMA Get Directions Close Return to Search --> WMA Overview Size: 1073 acres Location: Nelson Contact: (502) 477-9024 Elevation: minimum 419 feet, maximum 485 feet. Entrance GPS coordina",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 1073 acres",
     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=238",
     "why": "clean total"
@@ -9281,7 +9451,7 @@
    "verdict": "agree"
   },
   "US-3818": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Jones-Keeney Wildlife Management Area",
    "official": {
@@ -9289,7 +9459,7 @@
     "as": "2,055 acres",
     "clean": false,
     "line": "on Public Hunting Area Location Regional Locator WMA Overview Location & Size: Caldwell County, 2,055 acres. Contact: (270) 753-6913 Elevation: minimum 390 feet, maximum 688 feet. Entrance GPS coordinates: Latit",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Location & Size: Caldwell County, 2,055 acres.",
     "url": "https://fw.ky.gov/More/Documents/Jones-KeeneyWMA_All.pdf",
     "why": "a map label (no sentence)"
@@ -9348,7 +9518,7 @@
    "verdict": "agree"
   },
   "US-3819": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Kaler Bottoms Wildlife Management Area",
    "official": {
@@ -9356,7 +9526,7 @@
     "as": "1904 acres",
     "clean": true,
     "line": "Public Land Search | KDFWR --> Kaler Bottoms WMA Get Directions Close Return to Search --> WMA Overview Size: 1904 acres Location: Graves Contact: (270) 753-6913 Elevation: minimum 341 feet, maximum 470 feet. Entrance GPS coordina",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 1904 acres",
     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=21",
     "why": "clean total"
@@ -9423,7 +9593,7 @@
    "verdict": "agree"
   },
   "US-3820": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Kentucky River Wildlife Management Area",
    "official": {
@@ -9431,7 +9601,7 @@
     "as": "3643 acres",
     "clean": true,
     "line": "ublic Land Search | KDFWR --> Kentucky River WMA Get Directions Close Return to Search --> WMA Overview Size: 3643 acres Location: Henry & Owen Contact: (502) 535-6335 Elevation: minimum 438 feet, maximum 891 feet. Entrance GPS co",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 3643 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=169",
     "why": "clean total"
@@ -9525,7 +9695,7 @@
    "verdict": "agree"
   },
   "US-3821": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "L. B. Davison Wildlife Management Area",
    "official": {
@@ -9533,7 +9703,7 @@
     "as": "137 acres",
     "clean": false,
     "line": "mation Public Hunting Area Location Regional Locator WMA Overview Location & Size: Ohio County, 137 acres. Contact: (270) 476-1889 Elevation: minimum 406 feet, maximum 522 feet. Entrance GPS coordinates: Latit",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Location & Size: Ohio County, 137 acres.",
     "url": "https://fw.ky.gov/More/Documents/L.B.DavisonWMA_ALL.pdf",
     "why": "a map label (no sentence)"
@@ -9592,7 +9762,7 @@
    "verdict": "agree"
   },
   "US-3822": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Lee K. Nelson Wildlife Management Area",
    "official": {
@@ -9600,7 +9770,7 @@
     "as": "60 acres",
     "clean": true,
     "line": "Public Land Search | KDFWR --> Lee K. Nelson WMA Get Directions Close Return to Search --> WMA Overview Size: 60 acres Location: Webster Contact: Office (270) 389-3580 Elevation: minimum 412 feet, maximum 550 feet. Entrance GPS",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 60 acres",
     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=9011",
     "why": "clean total"
@@ -9667,7 +9837,7 @@
    "verdict": "agree"
   },
   "US-3823": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Livingston County Wildlife Management Area",
    "official": {
@@ -9675,7 +9845,7 @@
     "as": "2430 acres",
     "clean": true,
     "line": "--> Livingston County WMA and State Natural Area Get Directions Close Return to Search --> WMA Overview Size: 2430 acres Location: Livingston Contact: 270) 210-9774 Elevation: minimum 300 feet, maximum 667 feet. Entrance GPS coord",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 2430 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9117",
     "why": "clean total"
@@ -9796,7 +9966,7 @@
    "verdict": "agree"
   },
   "US-3824": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Marion County Wildlife Management Area",
    "official": {
@@ -9804,7 +9974,7 @@
     "as": "1,341 acres",
     "clean": true,
     "line": "ion Public Hunting Area Location Regional Locator WMA Overview Location & Size: Marion County, 1,341 acres. Contact: (502) 477-9024 Elevation: minimum 780 feet, maximum 1200 feet. Entrance GPS coordinates: Latit",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Location & Size: Marion County, 1,341 acres.",
     "url": "https://fw.ky.gov/More/Documents/MarionCountyWMAandSF_ALL.pdf",
     "why": "clean total"
@@ -9863,7 +10033,7 @@
    "verdict": "agree"
   },
   "US-3825": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Miller Welch Wildlife Management Area",
    "official": {
@@ -9871,7 +10041,7 @@
     "as": "1847 acres",
     "clean": true,
     "line": "ch | KDFWR --> Miller Welch-Central Kentucky WMA Get Directions Close Return to Search --> WMA Overview Size: 1847 acres Location: Madison Contact: (859) 986-4130 Elevation: minimum 868 feet, maximum 1095 feet. Entrance GPS coordi",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 1847 acres",
     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=15",
     "why": "clean total"
@@ -9947,7 +10117,7 @@
    "verdict": "agree"
   },
   "US-3826": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Mullins Wildlife Management Area",
    "official": {
@@ -9955,7 +10125,7 @@
     "as": "259 acres",
     "clean": false,
     "line": "on Public Hunting Area Location Regional Locator WMA Overview Location & Size: Kenton County; 259 acres. Contact: (859) 428-2262 Elevation: minimum 780 feet, maximum 923 feet. Entrance GPS coordinates: Lat",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "259 acres.",
     "url": "https://fw.ky.gov/More/Documents/MullinsWMA_ALL.pdf",
     "why": "a map label (no sentence)"
@@ -10014,7 +10184,7 @@
    "verdict": "agree"
   },
   "US-3827": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Obion Creek Wildlife Management Area",
    "official": {
@@ -10022,7 +10192,7 @@
     "as": "5326 acres",
     "clean": true,
     "line": "Public Land Search | KDFWR --> Obion Creek WMA Get Directions Close Return to Search --> WMA Overview Size: 5326 acres Location: Hickman, Carlisle & Fulton Contact: (270)-753-6913 Elevation: minimum 278 feet, maximum 398 feet. E",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 5326 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=176",
     "why": "clean total"
@@ -10134,7 +10304,7 @@
    "verdict": "agree"
   },
   "US-3828": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Peabody Wildlife Management Area",
    "official": {
@@ -10142,7 +10312,7 @@
     "as": "40744 acres",
     "clean": true,
     "line": "Public Land Search | KDFWR --> Peabody WMA Get Directions Close Return to Search --> WMA Overview Size: 40744 acres Location: Ohio, Hopkins & Muhlenberg Contact: Office (270) 476-1889 Elevation: minimum 324 feet, maximum 654",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 40744 acres",
     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=229",
     "why": "clean total"
@@ -10218,7 +10388,7 @@
    "verdict": "agree"
   },
   "US-3829": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "R. F. Tarter Wildlife Management Area",
    "official": {
@@ -10226,7 +10396,7 @@
     "as": "1171 acres",
     "clean": true,
     "line": "Public Land Search | KDFWR --> R. F. Tarter WMA Get Directions Close Return to Search --> WMA Overview Size: 1171 acres Location: Adair & Russell Contact: (270)283-0244 Elevation: minimum 770 feet, maximum 1077 feet. Entrance GPS",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 1171 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=171",
     "why": "clean total"
@@ -10311,7 +10481,7 @@
    "verdict": "agree"
   },
   "US-3830": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Sloughs Wildlife Management Area",
    "official": {
@@ -10319,7 +10489,7 @@
     "as": "11173 acres",
     "clean": true,
     "line": "Public Land Search | KDFWR --> Sloughs WMA Get Directions Close Return to Search --> WMA Overview Size: 11173 acres Location: Henderson & Union Contact: Office (270) 827-2673 Elevation: minimum 338 feet, maximum 487 feet. Ent",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 11173 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=230",
     "why": "clean total"
@@ -10395,7 +10565,7 @@
    "verdict": "agree"
   },
   "US-3831": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "South Shore Wildlife Management Area",
    "official": {
@@ -10403,7 +10573,7 @@
     "as": "98 acres",
     "clean": false,
     "line": "on Public Hunting Area Location Regional Locator WMA Overview Location & Size: Greenup County, 98 acres. Contact: (606) 474-8535. Elevation: minimum 480 feet, maximum 550 feet. Entrance GPS coordinates: Lati",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Location & Size: Greenup County, 98 acres.",
     "url": "https://fw.ky.gov/More/Documents/SouthShoreWMA_ALL.pdf",
     "why": "a map label (no sentence)"
@@ -10463,7 +10633,7 @@
   },
   "US-3832": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Stone Mountain Wildlife Management Area",
    "official": null,
@@ -10526,7 +10696,7 @@
    "verdict": "unsure"
   },
   "US-3833": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "T. N. Sullivan Wildlife Management Area",
    "official": {
@@ -10534,7 +10704,7 @@
     "as": "146 acres",
     "clean": false,
     "line": "n Public Hunting Area Location Regional Locator WMA Overview Location & Size: Franklin County, 146 acres. Contact: (502) 535-6335 Elevation: minimum 540 feet, maximum 798 feet. Entrance GPS coordinates: Latit",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Location & Size: Franklin County, 146 acres.",
     "url": "https://fw.ky.gov/More/Documents/TN_SullivanWMA_All.pdf",
     "why": "a map label (no sentence)"
@@ -10593,7 +10763,7 @@
    "verdict": "agree"
   },
   "US-3834": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Tradewater Wildlife Management Area",
    "official": {
@@ -10601,7 +10771,7 @@
     "as": "727 acres",
     "clean": true,
     "line": "Public Land Search | KDFWR --> Tradewater WMA Get Directions Close Return to Search --> WMA Overview Size: 727 acres Location: Christian & Hopkins Contact: (270) 753-6913 Elevation: minimum 373 feet, maximum 641 feet. Entrance",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 727 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=128",
     "why": "clean total"
@@ -10668,7 +10838,7 @@
    "verdict": "agree"
   },
   "US-3835": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Twin Eagle Wildlife Management Area",
    "official": {
@@ -10676,7 +10846,7 @@
     "as": "167 acres",
     "clean": false,
     "line": "mation Public Hunting Area Location Regional Locator WMA Overview Location & Size: Owen County, 167 acres. Contact: (502) 535-6335 Elevation: minimum 451 feet, maximum 804 feet. Entrance GPS coordinates: Latit",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Location & Size: Owen County, 167 acres.",
     "url": "https://fw.ky.gov/More/Documents/TwinEagleWMA_ALL.pdf",
     "why": "a map label (no sentence)"
@@ -10735,7 +10905,7 @@
    "verdict": "agree"
   },
   "US-3836": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Veterans Memorial Wildlife Management Area",
    "official": {
@@ -10743,7 +10913,7 @@
     "as": "2998 acres",
     "clean": true,
     "line": "ic Land Search | KDFWR --> Veterans Memorial WMA Get Directions Close Return to Search --> WMA Overview Size: 2998 acres Location: Scott Contact: (502) 545-3836 Elevation: minimum 855 feet, maximum 1025 feet. Entrance GPS coordina",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 2998 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9202",
     "why": "clean total"
@@ -10819,7 +10989,7 @@
    "verdict": "agree"
   },
   "US-3837": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "West Kentucky Wildlife Management Area",
    "official": {
@@ -10827,7 +10997,7 @@
     "as": "4495 acres",
     "clean": true,
     "line": "Public Land Search | KDFWR --> West Kentucky WMA Get Directions Close Return to Search --> WMA Overview Size: 4495 acres Location: McCracken Contact: (270) 488-3233 Elevation: minimum 297 feet, maximum 451 feet. Entrance GPS coord",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 4495 acres",
     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=137",
     "why": "clean total"
@@ -10903,7 +11073,7 @@
    "verdict": "agree"
   },
   "US-3838": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Winford Wildlife Management Area",
    "official": {
@@ -10911,7 +11081,7 @@
     "as": "236 acres",
     "clean": false,
     "line": "on Public Hunting Area Location Regional Locator WMA Overview Location & Size: Carlisle County, 236 acres. Contact: (270) 224-2244 Elevation: minimum 301 feet, maximum 319 feet. Entrance GPS coordinates: Lati",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Location & Size: Carlisle County, 236 acres.",
     "url": "https://fw.ky.gov/More/Documents/WinfordWMA_ALL.pdf",
     "why": "a map label (no sentence)"
@@ -10970,7 +11140,7 @@
    "verdict": "agree"
   },
   "US-3839": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Yatesville Lake Wildlife Management Area",
    "official": {
@@ -10978,7 +11148,7 @@
     "as": "13191 acres",
     "clean": true,
     "line": "blic Land Search | KDFWR --> Yatesville Lake WMA Get Directions Close Return to Search --> WMA Overview Size: 13191 acres Location: Lawrence Contact: 606-776-2620 Elevation: minimum 585 feet, maximum 1046 feet. Entrance GPS coordin",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 13191 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=23",
     "why": "clean total"
@@ -11081,7 +11251,7 @@
    "verdict": "agree"
   },
   "US-3840": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Yellowbank Wildlife Management Area",
    "official": {
@@ -11089,7 +11259,7 @@
     "as": "7555 acres",
     "clean": true,
     "line": "Public Land Search | KDFWR --> Yellowbank WMA Get Directions Close Return to Search --> WMA Overview Size: 7555 acres Location: Breckinridge Contact: Office (270) 547-6856 Elevation: minimum 382 feet, maximum 872 feet. Entrance",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 7555 acres",
     "url": "https://app.fw.ky.gov/public_lands_search/detail.aspx?Kdfwr_id=192",
     "why": "clean total"
@@ -11165,7 +11335,7 @@
    "verdict": "agree"
   },
   "US-4484": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Daniel Boone National Forest",
    "official": {
@@ -11173,7 +11343,7 @@
     "as": "708,000 acres",
     "clean": false,
     "line": "onal Forest Spread across 21 counties of eastern Kentucky, the Daniel Boone National Forest manages more than 708,000 acres of national forest system lands within a 2.1 million-acre proclamation boundary. From over 600 miles of trail",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Spread across 21 counties of eastern Kentucky, the Daniel Boone National Forest manages more than 708,000 acres of national forest system lands within a 2.1 million-acre proclamation boundary.",
     "url": "https://www.fs.usda.gov/dbnf/",
     "why": "part (a lake, a purchase, a campground…)"
@@ -11259,16 +11429,16 @@
    "verdict": "agree"
   },
   "US-4526": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "George Washington & Jefferson National Forest",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-WV': 126258, 'US-VA': 1673580})",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-VA': 1673580, 'US-WV': 126258})",
    "official": {
     "acres": 1800000.0,
     "as": "1.8 million acres",
     "clean": false,
     "line": "West Virginia, the George Washington and Jefferson National Forest blankets the Blue Ridge mountains offering 1.8 million acres of lush woodlands, unique mountain balds, peaceful waterways, and adventures galore. With more wildlife and t",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Stretching along the border of Virginia and West Virginia, the George Washington and Jefferson National Forest blankets the Blue Ridge mountains offering 1.8 million acres of lush woodlands, unique mountain balds, peaceful waterways, and adventures galore.",
     "url": "https://www.fs.usda.gov/gwj",
     "why": "total-looking"
@@ -11291,8 +11461,8 @@
     "pin": "inside",
     "src": "KDFWR public hunting areas",
     "states": [
-     "US-WV",
-     "US-VA"
+     "US-VA",
+     "US-WV"
     ],
     "unknown_pieces": 0,
     "whole_park": true
@@ -11368,17 +11538,94 @@
    "verdict": "agree"
   },
   "US-4572": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Lewis and Clark National Historic Trail",
-   "ours": null,
-   "score": null,
+   "note": "whole park compared (POTA lists it in 0 states: {})",
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "acres_by_state": {},
+    "manager": "",
+    "pieces": [
+     [
+      "trl",
+      "Lewis and Clark National Historic Trail",
+      0,
+      "official trail line (National Park Service)"
+     ]
+    ],
+    "pin": "not checked",
+    "src": "trl",
+    "states": [
+     "US-SD",
+     "US-ND",
+     "US-KS",
+     "US-MO",
+     "US-WV",
+     "US-PA",
+     "US-NE",
+     "US-ID",
+     "US-IA",
+     "US-OH",
+     "US-MT",
+     "US-WA",
+     "US-OR",
+     "US-IN",
+     "US-IL"
+    ],
+    "unknown_pieces": 0,
+    "whole_park": true
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/lecl/index.htm",
+     "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/lecl/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/lecl/learn/historyculture/places.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/lecl/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/lecl/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/lecl/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 3,
+   "score_parts": {
+    "name": 1,
+    "pin": 1,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
    "t": "National / NPS",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "no size on page"
   },
   "US-4687": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Dewey Lake Wildlife Management Area",
    "official": {
@@ -11386,7 +11633,7 @@
     "as": "9,172 acres",
     "clean": false,
     "line": "Public Hunting Area Location Regional Locator WMA Overview Location & Size: Floyd County. WMA is 9,172 acres, Dewey Lake is 961 acres. Contact: (606) 226-9133; COE (606) 789-4521 Elevation: minimum 612 feet, maximu",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "WMA is 9,172 acres, Dewey Lake is 961 acres.",
     "url": "https://fw.ky.gov/More/Documents/DeweyLakeWMA-ALL.pdf",
     "why": "a map label (no sentence)"
@@ -11454,7 +11701,7 @@
    "verdict": "agree"
   },
   "US-4688": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Kentenia State Forest",
    "official": {
@@ -11462,7 +11709,7 @@
     "as": "4,081 acres",
     "clean": false,
     "line": "Corp. It is located in Harlan County along the south side of Pine Mountain in seven scattered tracts totaling 4,081 acres. The largest of these tracts is accessible by Little Shepherd Trail on the crest of Pine Mountain. The forest",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "It is located in Harlan County along the south side of Pine Mountain in seven scattered tracts totaling 4,081 acres.",
     "url": "https://eec.ky.gov/Natural-Resources/Forestry/ky-state-forests/Pages/Kentenia-State-Forest.aspx",
     "why": "history"
@@ -11558,7 +11805,7 @@
   },
   "US-4689": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Kentucky Ridge State Forest",
    "official": {
@@ -11566,7 +11813,7 @@
     "as": "15,251 acres",
     "clean": true,
     "line": "cky Ridge State Forest Main Content ​​​​Kentucky Ridge State Forest ​​Kentucky Ridge State Forest consists of 15,251 acres and was acquired by lease in 1930, as part of the Land Use and Resettlement Program. The lease was sustained",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "​​Kentucky Ridge State Forest consists of 15,251 acres and was acquired by lease in 1930, as part of the Land Use and Resettlement Program.",
     "url": "https://eec.ky.gov/Natural-Resources/Forestry/ky-state-forests/Pages/Kentucky-Ridge-State-Forest.aspx",
     "why": "clean total; the agency's pages disagree: another of its pages says 11,794 acres (that one matches our outline)"
@@ -11633,7 +11880,7 @@
    "verdict": "off"
   },
   "US-4690": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Knobs State Forest",
    "official": {
@@ -11641,7 +11888,7 @@
     "as": "2,033 acres",
     "clean": false,
     "line": "on Public Hunting Area Location Regional Locator WMA Overview Location & Size: Bullitt County, 2,033 acres. Contact: (502) 477-9024 Elevation: minimum 467 feet, maximum 975 feet. Entrance GPS coordinates: Lati",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Location & Size: Bullitt County, 2,033 acres.",
     "url": "https://fw.ky.gov/More/Documents/KnobsStateForestandWMA_All.pdf",
     "why": "a map label (no sentence)"
@@ -11778,7 +12025,7 @@
    "verdict": "agree"
   },
   "US-4692": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Pennyrile State Forest",
    "official": {
@@ -11786,7 +12033,7 @@
     "as": "14,379 acres",
     "clean": false,
     "line": "h and Wildlife Resources. Pennyrile State Forest Overview Location & Size: Christian & Caldwell counties, 14,379 acres. Contact: (270) 753-6913 Elevation: minimum 390 feet, maximum 780 feet Entrance GPS coordinates: Latitud",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "14,379 acres.",
     "url": "https://eec.ky.gov/Natural-Resources/Forestry/Documents/PennyrileStateForestandTradewaterWMA_ALL.pdf",
     "why": "a map label (no sentence)"
@@ -11859,7 +12106,7 @@
    "verdict": "agree"
   },
   "US-4693": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Tygarts State Forest",
    "official": {
@@ -11867,7 +12114,7 @@
     "as": "1,184 acres",
     "clean": false,
     "line": "d funding to the division to acquire an additional 238 acres adjoining the original boundary. It is presently 1,184 acres in size and adjoins Carter Caves State Resort Park . The forest is open for public recreation, including hiki",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "It is presently 1,184 acres in size and adjoins Carter Caves State Resort Park .",
     "url": "https://eec.ky.gov/Natural-Resources/Forestry/ky-state-forests/Pages/Tygarts-State-Forest.aspx",
     "why": "no total words near it"
@@ -11971,7 +12218,7 @@
    "verdict": "agree"
   },
   "US-7708": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Mill Springs Battlefield National Monument",
    "official": null,
@@ -12038,7 +12285,7 @@
    "verdict": "no size on page"
   },
   "US-7890": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Isaac Shelby Cemetery State Historic Site",
    "official": null,
@@ -12090,7 +12337,7 @@
    "verdict": "no size on page"
   },
   "US-7950": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Camp Nelson National Monument",
    "official": null,
@@ -12152,7 +12399,7 @@
    "verdict": "no size on page"
   },
   "US-7951": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Green River State Forest",
    "official": {
@@ -12160,7 +12407,7 @@
     "as": "1,092 acres",
     "clean": true,
     "line": "est 40%, wetland 14%, open water 0% Directions & Description: The Green River State Forest consists of 1,092 acres located about five miles northeast of the town of Henderson in Henderson County. Directions: It lies no",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "The Green River State Forest consists of 1,092 acres",
     "url": "https://fw.ky.gov/More/Documents/GreenRiverStateForest_ALL.pdf",
     "why": "clean total"
@@ -12263,7 +12510,7 @@
    "verdict": "agree"
   },
   "US-7952": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Marrowbone State Forest",
    "official": {
@@ -12271,7 +12518,7 @@
     "as": "1,955 acres",
     "clean": false,
     "line": "ting Area Location Regional Locator WMA Overview Location & Size: Metcalfe & Cumberland counties, 1,955 acres. Contact: (270) 646-5167 Elevation: minimum 655 feet, maximum 1120 feet. Entrance GPS coordinates: Lati",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "1,955 acres.",
     "url": "https://fw.ky.gov/More/Documents/MarrowboneStateForestandWMA_ALL.pdf",
     "why": "a map label (no sentence)"
@@ -12339,7 +12586,7 @@
    "verdict": "agree"
   },
   "US-7953": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Metropolis Lake State Nature Preserve",
    "official": {
@@ -12347,7 +12594,7 @@
     "as": "123 acre",
     "clean": true,
     "line": "t Metropolis Lake State Nature Prese​rve​ Dedicated Aug. 10, 1984, Metropolis Lake State Nature Preserve is a 123-acre tract in McCracken County. This preserve contains the 50-acre Metropolis Lake, one of only a few natural lake",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "10, 1984, Metropolis Lake State Nature Preserve is a 123-acre tract in McCracken County.",
     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Metropolis-Lake.aspx",
     "why": "clean total"
@@ -12450,7 +12697,7 @@
    "verdict": "agree"
   },
   "US-7954": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [
     {
      "date_hint": null,
@@ -12467,7 +12714,7 @@
     "as": "175 acres",
     "clean": false,
     "line": "e to Blackacre State Nature Preserve . Access Type: Open to Public County: Jefferson Region: Bluegrass Region Size: 175 Owner: Office of Kentucky Nature Preserves Manager: Nature Preseve Manager Office of Kentucky Nature Preserves",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 175 Owner:",
     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Blackacre.aspx",
     "why": "total-looking"
@@ -12529,7 +12776,7 @@
    "verdict": "agree"
   },
   "US-7955": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Six Mile Island State Nature Preserve",
    "official": {
@@ -12537,7 +12784,7 @@
     "as": "85.58 acres",
     "clean": false,
     "line": "nd is 1.5 miles upstream from landing. Access Type: Open to Public County: Jefferson Region: Bluegrass Region Size: 85.58 Owner: Office of Kentucky Nature Preserves Manager: Nature Preseve Manager Office of Kentucky Nature Preserves",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 85.58 Owner:",
     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Six-Mile-Island.aspx",
     "why": "total-looking"
@@ -12599,7 +12846,7 @@
    "verdict": "agree"
   },
   "US-7956": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Beargrass Creek State Nature Preserve",
    "official": {
@@ -12607,7 +12854,7 @@
     "as": "41 acre",
     "clean": true,
     "line": "Beargrass Creek State Nature ​​Preserve​ Dedicated Feb. 17, 1982, Beargrass Creek State Nature Preserve is a 41-acre second growth woodland in Jefferson County. Located in close proximity to Joe Creason Park and the Louisville",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "17, 1982, Beargrass Creek State Nature Preserve is a 41-acre second growth woodland in Jefferson County.",
     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Beargrass-Creek.aspx",
     "why": "clean total"
@@ -12669,7 +12916,7 @@
    "verdict": "agree"
   },
   "US-7957": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Hall-Hill/Vernon-Douglas State Nature Preserve",
    "official": {
@@ -12677,7 +12924,7 @@
     "as": "730 acre",
     "clean": false,
     "line": "rnon-Douglas State Nature Preserve is located within a rugged, steep, forested section of Hardin County. This 730-acre preserve protects one of the most mature second-growth forests in the Knobs physiographic region. Hall Hollow",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "This 730-acre preserve protects one of the most mature second-growth forests in the Knobs physiographic region.",
     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Vernon-Douglas.aspx",
     "why": "total-looking"
@@ -12762,7 +13009,7 @@
    "verdict": "agree"
   },
   "US-7958": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Kentucky River Palisades/Tom Dorman State Nature Preserve",
    "official": {
@@ -12770,7 +13017,7 @@
     "as": "945.95 acres",
     "clean": false,
     "line": "g lot will be closing on March 1st 2020. Access Type: Open to Public County: Garrard Region: Bluegrass Region Size: 945.95 Owner: Office of Kentucky Nature Preserves|The Nature Conservancy of Kentucky Manager: Nature Preseve Manager",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 945.95 Owner:",
     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Tom-Dorman.aspx",
     "why": "total-looking"
@@ -12855,7 +13102,7 @@
    "verdict": "agree"
   },
   "US-7959": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Quiet Trails State Nature Preserve",
    "official": {
@@ -12863,7 +13110,7 @@
     "as": "177 acres",
     "clean": true,
     "line": "ve Main Content ​​​About Quiet Trails State​​ Nature Preserve​ Quiet Trails State Nature Preserve consists of 177 acres of ridges and ravines bordering the Licking River in Harrison County, generously donated to the Commonwealth",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Quiet Trails State Nature Preserve consists of 177 acres of ridges and ravines bordering the Licking River in Harrison County, generously donated to the Commonwealth by Mr.",
     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Quiet-Trails.aspx",
     "why": "clean total"
@@ -12957,7 +13204,7 @@
    "verdict": "agree"
   },
   "US-7960": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Crooked Creek State Nature Preserve",
    "official": {
@@ -12965,7 +13212,7 @@
     "as": "728 acres",
     "clean": false,
     "line": "State Nature Preserve was established when the original 60-acre tract was dedicated on June 15, 1999. Today, 728 acres make up this unique preserve in Lewis County. The preserve features a unique oak barrens community and adjace",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Today, 728 acres make up this unique preserve in Lewis County.",
     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Crooked-Creek.aspx",
     "why": "total-looking"
@@ -13036,7 +13283,7 @@
    "verdict": "agree"
   },
   "US-7961": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Jesse Stuart State Nature Preserve",
    "official": {
@@ -13044,7 +13291,7 @@
     "as": "710 acres",
     "clean": false,
     "line": "les to parking area on right side of road. Access Type: Open to Public County: Greenup Region: Eastern Region Size: 710 Owner: Office of Kentucky Nature Preserves Manager: Nature Preseve Manager Office of Kentucky Nature Preserves",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 710 Owner:",
     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Jesse-Stuart.aspx",
     "why": "no total words near it"
@@ -13110,7 +13357,7 @@
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 3145.42 acres, no total words near it)",
    "checked": "2026-10-29",
    "handover": [],
-   "last_read_failed": "2026-10-30",
+   "last_read_failed": "2026-11-15",
    "n": "Little South Fork State Natural Area",
    "official": {
     "acres": 3145.4,
@@ -13180,7 +13427,7 @@
    "verdict": "unsure"
   },
   "US-7963": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Pilot Knob State Nature Preserve",
    "official": {
@@ -13188,7 +13435,7 @@
     "as": "742 acres",
     "clean": false,
     "line": "he original 308-acre area was dedicated on Sept. 26, 1985. KHLCF additions bring the total acres conserved to 742 acres. A sandstone outcrop at the southeast end of the 730-foot-high knob is considered to be the prominence upon w",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "KHLCF additions bring the total acres conserved to 742 acres.",
     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Pilot-Knob.aspx",
     "why": "total-looking"
@@ -13273,7 +13520,7 @@
    "verdict": "agree"
   },
   "US-7964": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "William H. Martin State Natural Area",
    "official": {
@@ -13281,7 +13528,7 @@
     "as": "458.96 acres",
     "clean": false,
     "line": "ver on the Pulaski and Laurel County line. Access Type: Open to Public County: Pulaski Region: Eastern Region Size: 458.96 Owner: Office of Kentucky Nature Preserves Manager: Nature Preseve Manager ​Office of Kentucky Nature Preserve",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 458.96 Owner:",
     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Dr.-William-H.-Martin-WWCA.aspx",
     "why": "no total words near it"
@@ -13353,7 +13600,7 @@
    "verdict": "agree"
   },
   "US-7965": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Brigadoon State Nature Preserve",
    "official": {
@@ -13361,7 +13608,7 @@
     "as": "187 acres",
     "clean": false,
     "line": "es were dedicated on June 12, 2001 and a very small tract was dedicated on December 9, 2010. Today a total of 187 acres are protected. The rich woodlands contain an impressive array of spring wildflowers including several species",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Today a total of 187 acres are protected.",
     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Brigadoon.aspx",
     "why": "total-looking"
@@ -13455,7 +13702,7 @@
    "verdict": "agree"
   },
   "US-7966": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Bad Branch State Nature Preserve",
    "official": {
@@ -13463,7 +13710,7 @@
     "as": "2829 acres",
     "clean": false,
     "line": "r 10 vehilces or one bus available. ​ Access Type: Open to Public County: Letcher Region: Southeastern Region Size: 2829 Owner: Office of Kentucky Nature Preserves | The Nature Conservancy Manager: Nature Preseve Manager ​Office of",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 2829 Owner:",
     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Bad-Branch.aspx",
     "why": "no total words near it"
@@ -13558,7 +13805,7 @@
    "verdict": "agree"
   },
   "US-7967": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Blanton Forest State Nature Preserve",
    "official": {
@@ -13566,7 +13813,7 @@
     "as": "3,509 acres",
     "clean": false,
     "line": "ge Land Conservation Fund and the Kentucky Natural Lands Trust, Blanton Forest State Nature Preserve protects 3,509 acres of old-growth and second-growth forests. As one of 13 large old-growth tracts remaining in the eastern United",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Today, with assistance from the Kentucky Heritage Land Conservation Fund and the Kentucky Natural Lands Trust, Blanton Forest State Nature Preserve protects 3,509 acres of old-growth and second-growth forests.",
     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Blanton-Forest.aspx",
     "why": "total-looking"
@@ -13651,7 +13898,7 @@
    "verdict": "agree"
   },
   "US-7968": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "E. Lucy Braun State Nature Preserve",
    "official": {
@@ -13659,7 +13906,7 @@
     "as": "609 acre",
     "clean": false,
     "line": "king Trails E. Lucy Braun State Nature Preserve Main Content ​About E. Lucy Braun Sta​te Nature Preserve​ The 609-acre E. Lucy Braun State Nature Preserve is located on the south slope of Pine Mountain in Harlan County. It conta",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "The 609-acre E.",
     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/E.-Lucy-Braun.aspx",
     "why": "total-looking"
@@ -13721,7 +13968,7 @@
    "verdict": "agree"
   },
   "US-7970": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Sinking Creek State Natural Area",
    "official": {
@@ -13729,7 +13976,7 @@
     "as": "301 acres",
     "clean": false,
     "line": "o the public via the Sheltowee Trace trail. Access Type: Open to Public County: Laurel Region: Eastern Region Size: 301 Owner: Office of Kentucky Nature Preserves Manager: Nature Preseve Manager ​Office of Kentucky Nature Preserve",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 301 Owner:",
     "url": "https://eec.ky.gov/Nature-Preserves/Locations/Pages/Sinking-Creek.aspx",
     "why": "total-looking"
@@ -13782,7 +14029,7 @@
    "verdict": "agree"
   },
   "US-8144": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [
     {
      "date_hint": "2026",
@@ -13815,7 +14062,7 @@
     "as": "2,221 acres",
     "clean": false,
     "line": "ek Information Outdoor Recreation Area Location Regional Locator Overview Location & Size: Meade County, 2,221 acres Contact: 502-942-9171 Elevation: minimum 390 feet, maximum 690 feet Entrance GPS Coordinates: Latitude N 3",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Location & Size: Meade County, 2,221 acres",
     "url": "https://fw.ky.gov/Documents/Otter_Creek_Brochure_Map.pdf",
     "why": "a map label (no sentence)"
@@ -13882,7 +14129,7 @@
    "verdict": "agree"
   },
   "US-9756": {
-   "checked": "2026-10-30",
+   "checked": "2026-11-08",
    "handover": [],
    "n": "Decker Wildlife Management Area",
    "official": {
@@ -13890,7 +14137,7 @@
     "as": "300 acres",
     "clean": true,
     "line": "Public Land Search | KDFWR --> Decker WMA Get Directions Close Return to Search --> WMA Overview Size: 300 acres Location: Boone Contact: (859) 428-2262 Elevation: minimum 665 feet, maximum 908 feet. Entrance GPS coordinat",
-    "read": "2026-10-30",
+    "read": "2026-11-08",
     "sent": "Size: 300 acres",
     "url": "https://app.fw.ky.gov/Public_Lands_Search/detail.aspx?Kdfwr_id=9717",
     "why": "clean total"
@@ -13948,5 +14195,5 @@
    "verdict": "agree"
   }
  },
- "read": "2026-11-01"
+ "read": "2026-11-15"
 }

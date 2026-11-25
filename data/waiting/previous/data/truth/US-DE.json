@@ -7,16 +7,16 @@
   "no_page": 0,
   "no_size": 66,
   "off": 1,
-  "ours_unknown": 8,
+  "ours_unknown": 12,
   "parks": 89,
   "retired": 0,
   "unsure": 2,
-  "weak": 0,
-  "with_outline": 79
+  "weak": 4,
+  "with_outline": 85
  },
  "parks": {
   "US-0229": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [
     {
      "date_hint": null,
@@ -33,19 +33,21 @@
     "as": "16,251 acres",
     "clean": false,
     "line": "liferefuge https://twitter.com/usfwsnortheast Visit Us Stretching eight miles along Delaware Bay and covering 16,251 acres, Bombay Hook National Wildlife Refuge provides habitat for wildlife. Four-fifths of the refuge is tidal salt",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Stretching eight miles along Delaware Bay and covering 16,251 acres, Bombay Hook National Wildlife Refuge provides habitat for wildlife.",
     "url": "https://www.fws.gov/refuge/bombay-hook/visit-us",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 15915,
+    "acres": 17376,
     "dissolved": {
      "after": 15915,
      "before": 31283,
      "copies": 1,
+     "key_union": 17376,
      "parts": 0,
      "records": 3,
+     "summed": 15915,
      "tracts": 2
     },
     "manager": "",
@@ -86,7 +88,7 @@
      "why": "about / history page of the park's site"
     }
    ],
-   "pct": 2,
+   "pct": 7,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -120,7 +122,7 @@
    "verdict": "agree"
   },
   "US-0230": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [
     {
      "date_hint": null,
@@ -137,19 +139,21 @@
     "as": "10,000 acres",
     "clean": false,
     "line": "ituated along the marshes of the western Delaware Bay, Prime Hook National Wildlife Refuge protects more than 10,000 acres of valuable habitat for wildlife of all kinds. Roughly 80% of the refuge is a mix of fresh and saltwater wetl",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "Situated along the marshes of the western Delaware Bay, Prime Hook National Wildlife Refuge protects more than 10,000 acres of valuable habitat for wildlife of all kinds.",
     "url": "https://www.fws.gov/refuge/Prime_Hook/",
     "why": "part (a lake, a purchase, a campground…)"
    },
    "ours": {
-    "acres": 9238,
+    "acres": 9726,
     "dissolved": {
      "after": 9238,
      "before": 18476,
      "copies": 1,
+     "key_union": 9726,
      "parts": 0,
      "records": 2,
+     "summed": 9238,
      "tracts": 1
     },
     "manager": "",
@@ -190,7 +194,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 8,
+   "pct": 3,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -215,10 +219,10 @@
    "verdict": "agree"
   },
   "US-0733": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "First State National Historical Park",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-DE': 889, 'US-PA': 216})",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-PA': 216, 'US-DE': 889})",
    "official": null,
    "ours": {
     "acres": 1105,
@@ -238,8 +242,8 @@
     "pin": "just outside",
     "src": "USGS PAD-US",
     "states": [
-     "US-DE",
-     "US-PA"
+     "US-PA",
+     "US-DE"
     ],
     "unknown_pieces": 0,
     "whole_park": true
@@ -278,15 +282,15 @@
    "verdict": "no size on page"
   },
   "US-0898": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "White Clay Creek National Wild and Scenic River",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-DE': 11772, 'US-PA': 19186})",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-PA': 19186, 'US-DE': 19186})",
    "official": null,
    "ours": {
-    "acres": 30958,
+    "acres": 38372,
     "acres_by_state": {
-     "US-DE": 11772,
+     "US-DE": 19186,
      "US-PA": 19186
     },
     "manager": "",
@@ -307,8 +311,8 @@
     "pin": "inside",
     "src": "",
     "states": [
-     "US-DE",
-     "US-PA"
+     "US-PA",
+     "US-DE"
     ],
     "unknown_pieces": 0,
     "whole_park": true
@@ -336,7 +340,7 @@
   },
   "US-10531": {
    "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Fork Branch State Nature Preserve",
    "official": {
@@ -344,53 +348,49 @@
     "as": "236 acres",
     "clean": false,
     "line": "Nature Preserve, in Dover. Contact Us Benjamin Schlusser Manager, Office of Nature Preserves 302-739-9039 At 236 acres, the Anne McClements Woods Tract of the Fork Branch Nature Preserve is the largest forested area within Dover",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "At 236 acres, the Anne McClements Woods Tract of the Fork Branch Nature Preserve is the largest forested area within Dover City limits.",
     "url": "https://dnrec.delaware.gov/parks/planning/fork-branch-preserve/",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 290,
+    "acres": 363,
     "dissolved": {
-     "after": 351,
-     "before": 640,
-     "copies": 1,
+     "after": 589,
+     "before": 878,
+     "copies": 3,
      "families": {
-      "padus": 290,
-      "sgded": 61
+      "padus": 273,
+      "sgded": 316
      },
-     "family_fold": 61,
-     "family_used": "padus",
+     "family_fold": 273,
+     "family_used": "sgded",
+     "key_union": 363,
      "parts": 4,
-     "records": 10,
-     "tracts": 5
+     "records": 11,
+     "summed": 316,
+     "tracts": 4
     },
-    "family_fold": "layers {'padus': 290, 'sgded': 61}: one land in 2 layers, the padus copy used (61 ac of copies not added)",
+    "family_fold": "layers {'padus': 273, 'sgded': 316}: one land in 2 layers, the sgded copy used (273 ac of copies not added)",
     "manager": "",
-    "note": "10 joined records = 5 tracts: 1 copies of a tract (same acres, another layer) and 4 fee tracts under a designation record folded; summed 640 -> 351 acres",
+    "note": "11 joined records = 4 tracts: 3 copies of a tract (same acres, another layer) and 4 fee tracts under a designation record folded; summed 878 -> 589 acres",
     "pieces": [
      [
-      76408,
+      "sgded96",
       "Fork Branch Nature Preserve",
-      267,
+      256,
       "name"
      ],
      [
-      60653,
+      "sgded45",
       "Fork Branch Nature Preserve",
-      15,
-      "name"
-     ],
-     [
-      60693,
-      "Fork Branch Nature Preserve",
-      8,
+      60,
       "name"
      ]
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 3
+    "unknown_pieces": 6
    },
    "owner_now": null,
    "pages": [
@@ -400,7 +400,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 23,
+   "pct": 54,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -426,7 +426,7 @@
   },
   "US-10659": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 68,000 acres, no total words near it)",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Augustine State Beach",
    "official": {
@@ -434,13 +434,13 @@
     "as": "68,000 acres",
     "clean": false,
     "line": "ce Education Center Training Centers and Ranges The DNREC Division of Fish and Wildlife manages approximately 68,000 acres of Delaware land at 19 public wildlife areas that provide hunting opportunities as well as habitat for a vari",
-    "read": "2026-11-01",
+    "read": "2026-11-09",
     "sent": "The DNREC Division of Fish and Wildlife manages approximately 68,000 acres of Delaware land at 19 public wildlife areas that provide hunting opportunities as well as habitat for a variety of species.",
     "url": "https://dnrec.delaware.gov/fish-wildlife/wildlife-areas/",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 3259,
+    "acres": 2273,
     "manager": "",
     "pieces": [
      [
@@ -474,7 +474,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 95,
+   "pct": 97,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -501,21 +501,15 @@
   "US-10667": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Abbotts Pond State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 24,
+    "acres": 54,
     "manager": "",
-    "pieces": [
-     [
-      76200,
-      "Abbotts Pond",
-      24,
-      "name"
-     ]
-    ],
+    "pieces": [],
     "pin": "inside",
-    "src": "USGS PAD-US",
+    "src": "",
     "unknown_pieces": 3
    },
    "owner_now": null,
@@ -542,10 +536,11 @@
   "US-10668": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Andrews State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 51,
+    "acres": 80,
     "manager": "",
     "pieces": [
      [
@@ -589,18 +584,13 @@
   "US-10669": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Blairs Pond State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 50,
+    "acres": 182,
     "manager": "",
     "pieces": [
-     [
-      76206,
-      "Blairs Pond",
-      42,
-      "name"
-     ],
      [
       57512,
       "Blairs Pond",
@@ -608,7 +598,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 4
    },
@@ -636,10 +626,11 @@
   "US-10670": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Chipmans Pond State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 126,
+    "acres": 97,
     "manager": "",
     "pieces": [
      [
@@ -655,7 +646,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 3
    },
@@ -683,10 +674,11 @@
   "US-10671": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Concord Pond State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 115,
+    "acres": 125,
     "manager": "",
     "pieces": [
      [
@@ -736,10 +728,11 @@
   "US-10672": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Coursey Pond State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 94,
+    "acres": 104,
     "manager": "",
     "pieces": [
      [
@@ -783,21 +776,15 @@
   "US-10673": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Craigs Pond State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 3,
+    "acres": 15,
     "manager": "",
-    "pieces": [
-     [
-      57523,
-      "Craigs Pond",
-      3,
-      "name"
-     ]
-    ],
+    "pieces": [],
     "pin": "just outside",
-    "src": "USGS PAD-US",
+    "src": "",
     "unknown_pieces": 4
    },
    "owner_now": null,
@@ -824,10 +811,11 @@
   "US-10674": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Derby Pond State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 83,
+    "acres": 71,
     "manager": "",
     "pieces": [
      [
@@ -871,10 +859,11 @@
   "US-10675": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Garrisons State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 95,
+    "acres": 119,
     "manager": "",
     "pieces": [
      [
@@ -918,10 +907,11 @@
   "US-10676": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Griffith State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 105,
+    "acres": 51,
     "manager": "",
     "pieces": [
      [
@@ -937,7 +927,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 1
    },
@@ -965,10 +955,11 @@
   "US-10677": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Haven State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 220,
+    "acres": 122,
     "manager": "",
     "pieces": [
      [
@@ -1012,10 +1003,11 @@
   "US-10678": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Hearns Pond State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 77,
+    "acres": 243,
     "manager": "",
     "pieces": [
      [
@@ -1031,7 +1023,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
@@ -1059,13 +1051,14 @@
   "US-10679": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Horseys Pond State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 0,
+    "acres": 102,
     "manager": "",
     "pieces": [],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 8
    },
@@ -1093,10 +1086,11 @@
   "US-10680": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Ingrams Pond State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 95,
+    "acres": 83,
     "manager": "",
     "pieces": [
      [
@@ -1140,13 +1134,14 @@
   "US-10681": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Masseys Millpond State Fishing Lake",
    "official": null,
    "ours": {
     "acres": 0,
     "manager": "",
     "pieces": [],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "",
     "unknown_pieces": 1
    },
@@ -1174,11 +1169,11 @@
   "US-10682": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "McGinnis Pond State Fishing Lake",
    "official": null,
    "ours": {
     "acres": 142,
-    "family_fold": "layers {'padus': 142, 'sgdec': 108}: one land in 2 layers, the padus copy used (108 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
@@ -1188,7 +1183,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 3
    },
@@ -1216,13 +1211,14 @@
   "US-10683": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Millsboro Pond State Fishing Lake",
    "official": null,
    "ours": {
     "acres": 0,
     "manager": "",
     "pieces": [],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "",
     "unknown_pieces": 1
    },
@@ -1250,10 +1246,11 @@
   "US-10684": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Moores State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 75,
+    "acres": 116,
     "manager": "",
     "pieces": [
      [
@@ -1269,7 +1266,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 3
    },
@@ -1297,18 +1294,13 @@
   "US-10685": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Mud Mill Pond State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 26,
+    "acres": 55,
     "manager": "",
     "pieces": [
-     [
-      57569,
-      "Mud Mill Pond",
-      22,
-      "name"
-     ],
      [
       57568,
       "Mud Mill Pond",
@@ -1344,21 +1336,15 @@
   "US-10686": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Portsville Pond State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 24,
+    "acres": 25,
     "manager": "",
-    "pieces": [
-     [
-      57592,
-      "Portsville Pond",
-      24,
-      "name"
-     ]
-    ],
-    "pin": "inside",
-    "src": "USGS PAD-US",
+    "pieces": [],
+    "pin": "just outside",
+    "src": "",
     "unknown_pieces": 3
    },
    "owner_now": null,
@@ -1383,7 +1369,7 @@
    "verdict": "no size on page"
   },
   "US-10687": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Trussum Pond State Fishing Lake",
    "ours": null,
@@ -1395,10 +1381,11 @@
   "US-10688": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Tubmill Pond State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 28,
+    "acres": 9,
     "manager": "",
     "pieces": [
      [
@@ -1442,21 +1429,15 @@
   "US-10689": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Tussock Pond State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 5,
+    "acres": 11,
     "manager": "",
-    "pieces": [
-     [
-      57602,
-      "Tussock Pond",
-      5,
-      "name"
-     ]
-    ],
-    "pin": "just outside",
-    "src": "USGS PAD-US",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
     "unknown_pieces": 3
    },
    "owner_now": null,
@@ -1483,10 +1464,11 @@
   "US-10690": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Wagamons Pond State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 40,
+    "acres": 52,
     "manager": "",
     "pieces": [
      [
@@ -1496,7 +1478,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 1
    },
@@ -1524,6 +1506,7 @@
   "US-10691": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Waples Pond State Fishing Lake",
    "official": null,
    "ours": {
@@ -1565,6 +1548,7 @@
   "US-11809": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Becks Pond State Fishing Lake",
    "official": null,
    "ours": {
@@ -1578,7 +1562,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 5
    },
@@ -1606,10 +1590,11 @@
   "US-11810": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Raccoon Pond State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 289,
+    "acres": 379,
     "manager": "",
     "pieces": [
      [
@@ -1647,13 +1632,14 @@
   "US-11811": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Records Pond State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 0,
+    "acres": 73,
     "manager": "",
     "pieces": [],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "",
     "unknown_pieces": 3
    },
@@ -1681,55 +1667,23 @@
   "US-11812": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Trap Pond State Fishing Lake",
    "official": null,
    "ours": {
-    "acres": 2410,
-    "dissolved": {
-     "after": 2410,
-     "before": 2573,
-     "copies": 0,
-     "parts": 2,
-     "records": 7,
-     "tracts": 5
-    },
+    "acres": 2333,
     "manager": "",
-    "note": "7 joined records = 5 tracts: 0 copies of a tract (same acres, another layer) and 2 fee tracts under a designation record folded; summed 2573 -> 2410 acres",
     "pieces": [
      [
-      60712,
+      "sgdea380",
       "Trap Pond State Park",
-      2118,
-      "name"
-     ],
-     [
-      60714,
-      "Trap Pond State Park",
-      163,
-      "name"
-     ],
-     [
-      60716,
-      "Trap Pond State Park",
-      74,
-      "name"
-     ],
-     [
-      60715,
-      "Trap Pond State Park",
-      44,
-      "name"
-     ],
-     [
-      60718,
-      "Trap Pond State Park",
-      11,
+      517,
       "name"
      ]
     ],
     "pin": "inside",
-    "src": "USGS PAD-US",
-    "unknown_pieces": 5
+    "src": "",
+    "unknown_pieces": 0
    },
    "owner_now": null,
    "pages": [
@@ -1755,20 +1709,33 @@
   "US-12938": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Laurel Industrial Forest Land State Wildlife Area",
    "official": null,
    "ours": {
-    "acres": 359,
+    "acres": 554,
     "manager": "",
     "pieces": [
+     [
+      "sgdec38",
+      "Industrial Forest Lands - Laurel Complex",
+      462,
+      "words"
+     ],
      [
       "sgdec69",
       "Industrial Forest Lands - Laurel Complex",
       359,
       "words"
+     ],
+     [
+      "sgdec21",
+      "Industrial Forest Lands - Laurel Complex",
+      272,
+      "words"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -1796,6 +1763,7 @@
   "US-12939": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Barr Industrial Forest Land State Wildlife Area",
    "official": null,
    "ours": {
@@ -1837,40 +1805,41 @@
   "US-1730": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Alapocas Run State Park",
    "official": null,
    "ours": {
-    "acres": 413,
+    "acres": 375,
+    "dissolved": {
+     "after": 372,
+     "before": 743,
+     "copies": 2,
+     "families": {
+      "padus": 233,
+      "sgdea": 139
+     },
+     "family_fold": 139,
+     "family_used": "padus",
+     "key_union": 375,
+     "parts": 7,
+     "records": 14,
+     "summed": 233,
+     "tracts": 5
+    },
+    "family_fold": "layers {'padus': 233, 'sgdea': 139}: one land in 2 layers, the padus copy used (139 ac of copies not added)",
     "manager": "",
+    "note": "14 joined records = 5 tracts: 2 copies of a tract (same acres, another layer) and 7 fee tracts under a designation record folded; summed 743 -> 372 acres",
     "pieces": [
      [
       76397,
       "Alapocas Run State Park",
       233,
       "name"
-     ],
-     [
-      60659,
-      "Alapocas Run State Park",
-      143,
-      "name"
-     ],
-     [
-      60656,
-      "Alapocas Run State Park",
-      26,
-      "name"
-     ],
-     [
-      60657,
-      "Alapocas Run State Park",
-      11,
-      "name"
      ]
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 5
+    "unknown_pieces": 4
    },
    "owner_now": null,
    "pages": [
@@ -1896,11 +1865,30 @@
   "US-1731": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Bellevue State Park",
    "official": null,
    "ours": {
-    "acres": 273,
+    "acres": 173,
+    "dissolved": {
+     "after": 303,
+     "before": 304,
+     "copies": 1,
+     "families": {
+      "padus": 273,
+      "sgdea": 30
+     },
+     "family_fold": 30,
+     "family_used": "padus",
+     "key_union": 173,
+     "parts": 0,
+     "records": 5,
+     "summed": 273,
+     "tracts": 4
+    },
+    "family_fold": "layers {'padus': 273, 'sgdea': 30}: one land in 2 layers, the padus copy used (30 ac of copies not added)",
     "manager": "",
+    "note": "5 joined records = 4 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 304 -> 303 acres",
     "pieces": [
      [
       76431,
@@ -1943,16 +1931,19 @@
   "US-1732": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Brandywine Creek State Park",
    "official": null,
    "ours": {
-    "acres": 1173,
+    "acres": 776,
     "dissolved": {
      "after": 1173,
      "before": 1237,
      "copies": 0,
+     "key_union": 776,
      "parts": 3,
      "records": 9,
+     "summed": 1173,
      "tracts": 6
     },
     "manager": "",
@@ -2023,11 +2014,30 @@
   "US-1733": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Cape Henlopen State Park",
    "official": null,
    "ours": {
-    "acres": 5918,
+    "acres": 6042,
+    "dissolved": {
+     "after": 5470,
+     "before": 11037,
+     "copies": 5,
+     "families": {
+      "padus": 4605,
+      "sgdea": 865
+     },
+     "family_fold": 865,
+     "family_used": "padus",
+     "key_union": 6042,
+     "parts": 21,
+     "records": 35,
+     "summed": 4605,
+     "tracts": 9
+    },
+    "family_fold": "layers {'padus': 4605, 'sgdea': 865}: one land in 2 layers, the padus copy used (865 ac of copies not added)",
     "manager": "",
+    "note": "35 joined records = 9 tracts: 5 copies of a tract (same acres, another layer) and 21 fee tracts under a designation record folded; summed 11037 -> 5470 acres",
     "pieces": [
      [
       60681,
@@ -2039,36 +2049,6 @@
       60684,
       "Cape Henlopen State Park",
       964,
-      "name"
-     ],
-     [
-      76404,
-      "Cape Henlopen State Park",
-      562,
-      "name"
-     ],
-     [
-      60682,
-      "Cape Henlopen State Park",
-      432,
-      "name"
-     ],
-     [
-      60685,
-      "Cape Henlopen State Park",
-      279,
-      "name"
-     ],
-     [
-      60683,
-      "Cape Henlopen State Park",
-      33,
-      "name"
-     ],
-     [
-      60680,
-      "Cape Henlopen State Park",
-      7,
       "name"
      ]
     ],
@@ -2100,21 +2080,28 @@
   "US-1734": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Delaware Seashore State Park",
    "official": null,
    "ours": {
-    "acres": 232,
+    "acres": 1159,
     "manager": "",
     "pieces": [
      [
-      60689,
+      "sgdea102",
       "Delaware Seashore State Park",
-      232,
+      1732,
+      "reviewed"
+     ],
+     [
+      "sgdea101",
+      "Delaware Seashore State Park",
+      208,
       "name"
      ]
     ],
-    "pin": "inside",
-    "src": "USGS PAD-US",
+    "pin": "just outside",
+    "src": "",
     "unknown_pieces": 1
    },
    "owner_now": null,
@@ -2141,22 +2128,47 @@
   "US-1735": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Fenwick Island State Park",
    "official": null,
    "ours": {
-    "acres": 6,
+    "acres": 217,
     "manager": "",
     "pieces": [
      [
-      8811,
-      "Fenwick Island Beach",
-      6,
+      "sgdea467",
+      "Fenwick Island State Park",
+      149,
+      "name"
+     ],
+     [
+      "sgdea474",
+      "Fenwick Island State Park",
+      81,
+      "name"
+     ],
+     [
+      "sgdea226",
+      "Fenwick Island State Park",
+      51,
+      "reviewed"
+     ],
+     [
+      "sgdea227",
+      "Fenwick Island State Park",
+      42,
+      "name"
+     ],
+     [
+      "sgdea473",
+      "Fenwick Island State Park",
+      11,
       "name"
      ]
     ],
     "pin": "inside",
-    "src": "USGS PAD-US",
-    "unknown_pieces": 2
+    "src": "",
+    "unknown_pieces": 3
    },
    "owner_now": null,
    "pages": [
@@ -2182,17 +2194,29 @@
   "US-1736": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Fort Delaware State Park",
    "official": null,
    "ours": {
-    "acres": 256,
+    "acres": 144,
+    "dissolved": {
+     "after": 257,
+     "before": 513,
+     "copies": 1,
+     "key_union": 144,
+     "parts": 0,
+     "records": 2,
+     "summed": 257,
+     "tracts": 1
+    },
     "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 513 -> 257 acres",
     "pieces": [
      [
-      76409,
+      "sgdea30",
       "Fort Delaware State Park",
-      256,
-      "name"
+      257,
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -2223,10 +2247,11 @@
   "US-1737": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Fort DuPont State Park",
    "official": null,
    "ours": {
-    "acres": 665,
+    "acres": 344,
     "manager": "",
     "pieces": [
      [
@@ -2276,11 +2301,23 @@
   "US-1738": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Fox Point State Park",
    "official": null,
    "ours": {
-    "acres": 107,
+    "acres": 151,
+    "dissolved": {
+     "after": 107,
+     "before": 213,
+     "copies": 1,
+     "key_union": 151,
+     "parts": 0,
+     "records": 2,
+     "summed": 107,
+     "tracts": 1
+    },
     "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 213 -> 107 acres",
     "pieces": [
      [
       76411,
@@ -2317,12 +2354,20 @@
   "US-1739": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Holts Landing State Park",
    "official": null,
    "ours": {
-    "acres": 0,
+    "acres": 111,
     "manager": "",
-    "pieces": [],
+    "pieces": [
+     [
+      "sgdea103",
+      "Holts Landing State Park",
+      206,
+      "reviewed"
+     ]
+    ],
     "pin": "inside",
     "src": "",
     "unknown_pieces": 1
@@ -2351,10 +2396,11 @@
   "US-1740": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Killens Pond State Park",
    "official": null,
    "ours": {
-    "acres": 1442,
+    "acres": 921,
     "manager": "",
     "pieces": [
      [
@@ -2392,10 +2438,12 @@
   "US-1741": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Lums Pond State Park",
    "official": null,
    "ours": {
     "acres": 1863,
+    "family_fold": "layers {'padus': 1863, 'sgdea': 1754}: one land in 2 layers, the padus copy used (1,754 ac of copies not added)",
     "manager": "",
     "pieces": [
      [
@@ -2433,55 +2481,41 @@
   "US-1742": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Trap Pond State Park",
    "official": null,
    "ours": {
-    "acres": 2410,
+    "acres": 2333,
     "dissolved": {
-     "after": 2410,
-     "before": 2573,
-     "copies": 0,
-     "parts": 2,
-     "records": 7,
-     "tracts": 5
+     "after": 3138,
+     "before": 4887,
+     "copies": 4,
+     "families": {
+      "padus": 2118,
+      "sgdea": 1020
+     },
+     "family_fold": 1020,
+     "family_used": "padus",
+     "key_union": 2333,
+     "parts": 25,
+     "records": 36,
+     "summed": 2118,
+     "tracts": 7
     },
+    "family_fold": "layers {'padus': 2118, 'sgdea': 1020}: one land in 2 layers, the padus copy used (1,020 ac of copies not added)",
     "manager": "",
-    "note": "7 joined records = 5 tracts: 0 copies of a tract (same acres, another layer) and 2 fee tracts under a designation record folded; summed 2573 -> 2410 acres",
+    "note": "36 joined records = 7 tracts: 4 copies of a tract (same acres, another layer) and 25 fee tracts under a designation record folded; summed 4887 -> 3138 acres",
     "pieces": [
      [
       60712,
       "Trap Pond State Park",
       2118,
       "name"
-     ],
-     [
-      60714,
-      "Trap Pond State Park",
-      163,
-      "name"
-     ],
-     [
-      60716,
-      "Trap Pond State Park",
-      74,
-      "name"
-     ],
-     [
-      60715,
-      "Trap Pond State Park",
-      44,
-      "name"
-     ],
-     [
-      60718,
-      "Trap Pond State Park",
-      11,
-      "name"
      ]
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 5
+    "unknown_pieces": 6
    },
    "owner_now": null,
    "pages": [
@@ -2507,22 +2541,28 @@
   "US-1743": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "White Clay Creek State Park",
    "official": null,
    "ours": {
-    "acres": 4059,
+    "acres": 4029,
+    "dissolved": {
+     "after": 3548,
+     "before": 7061,
+     "copies": 0,
+     "key_union": 4029,
+     "parts": 2,
+     "records": 4,
+     "summed": 3548,
+     "tracts": 2
+    },
     "manager": "",
+    "note": "4 joined records = 2 tracts: 0 copies of a tract (same acres, another layer) and 2 fee tracts under a designation record folded; summed 7061 -> 3548 acres",
     "pieces": [
      [
       76428,
       "White Clay Creek State Park",
       3520,
-      "name"
-     ],
-     [
-      60719,
-      "White Clay Creek State Park",
-      511,
       "name"
      ],
      [
@@ -2565,6 +2605,7 @@
   "US-1744": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Wilmington State Park",
    "official": null,
    "ours": {
@@ -2573,7 +2614,7 @@
     "pieces": [],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 2
+    "unknown_pieces": 1
    },
    "owner_now": null,
    "pages": [
@@ -2599,15 +2640,52 @@
   "US-4366": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Auburn Valley State Park",
    "official": null,
    "ours": {
-    "acres": 0,
+    "acres": 284,
+    "dissolved": {
+     "after": 134,
+     "before": 223,
+     "copies": 0,
+     "key_union": 284,
+     "parts": 6,
+     "records": 10,
+     "summed": 134,
+     "tracts": 4
+    },
     "manager": "",
-    "pieces": [],
+    "note": "10 joined records = 4 tracts: 0 copies of a tract (same acres, another layer) and 6 fee tracts under a designation record folded; summed 223 -> 134 acres",
+    "pieces": [
+     [
+      "sgdea15",
+      "Auburn Valley State Park",
+      75,
+      "name"
+     ],
+     [
+      "sgdea16",
+      "Auburn Valley State Park",
+      36,
+      "name"
+     ],
+     [
+      "sgdea500",
+      "Auburn Valley State Park",
+      14,
+      "name"
+     ],
+     [
+      "sgdea18",
+      "Auburn Valley State Park",
+      9,
+      "name"
+     ]
+    ],
     "pin": "inside",
     "src": "",
-    "unknown_pieces": 7
+    "unknown_pieces": 6
    },
    "owner_now": null,
    "pages": [
@@ -2631,7 +2709,7 @@
    "verdict": "ours unknown"
   },
   "US-4367": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "First State Heritage State Park",
    "ours": null,
@@ -2641,49 +2719,173 @@
    "verdict": "no outline"
   },
   "US-4567": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Captain John Smith Chesapeake National Historic Trail",
-   "ours": null,
-   "score": null,
+   "note": "whole park compared (POTA lists it in 0 states: {})",
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "acres_by_state": {},
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "states": [
+     "US-VA",
+     "US-PA",
+     "US-DE",
+     "US-DC",
+     "US-NY",
+     "US-MD"
+    ],
+    "unknown_pieces": 1,
+    "whole_park": true
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/cajo/planyourvisit/maps.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok, no readable text",
+     "url": "https://www.nps.gov/cajo/planyourvisit/upload/2024_993-082-DOI-NPS-CAJO-Unigrid-508-2.pdf",
+     "why": "official map (parkinfo-web)"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/cajo/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/cajo/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/cajo/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
    "t": "National Historic Trail",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "ours unknown"
   },
   "US-4582": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Washington-Rochambeau Revolutionary Route National Historic Trail",
-   "ours": null,
-   "score": null,
+   "note": "whole park compared (POTA lists it in 0 states: {})",
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "acres_by_state": {},
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "states": [
+     "US-CT",
+     "US-VA",
+     "US-MA",
+     "US-PA",
+     "US-DE",
+     "US-DC",
+     "US-NY",
+     "US-MD",
+     "US-NJ",
+     "US-RI"
+    ],
+    "unknown_pieces": 1,
+    "whole_park": true
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/waro/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/waro/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok, no readable text",
+     "url": "https://www.nps.gov/waro/planyourvisit/upload/WARO_UnigridBrochure_2024_Back-2.pdf",
+     "why": "official map (parkinfo-web)"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/waro/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/waro/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/waro/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
    "t": "National Historic Trail",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "ours unknown"
   },
   "US-4609": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Blackbird State Forest",
    "official": null,
    "ours": {
-    "acres": 3146,
+    "acres": 6359,
     "dissolved": {
-     "after": 3577,
-     "before": 14421,
-     "copies": 2,
+     "after": 5954,
+     "before": 18607,
+     "copies": 9,
      "families": {
-      "padus": 3146,
-      "sgdeb": 431
+      "padus": 3090,
+      "sgdea": 796,
+      "sgdeb": 2068
      },
-     "family_fold": 431,
+     "family_fold": 2864,
      "family_used": "padus",
-     "parts": 19,
-     "records": 26,
-     "tracts": 5
+     "key_union": 6359,
+     "parts": 32,
+     "records": 47,
+     "summed": 3090,
+     "tracts": 6
     },
-    "family_fold": "layers {'padus': 3146, 'sgdeb': 431}: one land in 2 layers, the padus copy used (431 ac of copies not added)",
+    "family_fold": "layers {'padus': 3090, 'sgdeb': 2068, 'sgdea': 796}: one land in 3 layers, the padus copy used (2,864 ac of copies not added)",
     "manager": "",
-    "note": "26 joined records = 5 tracts: 2 copies of a tract (same acres, another layer) and 19 fee tracts under a designation record folded; summed 14421 -> 3577 acres",
+    "note": "47 joined records = 6 tracts: 9 copies of a tract (same acres, another layer) and 32 fee tracts under a designation record folded; summed 18607 -> 5954 acres",
     "pieces": [
      [
       54721,
@@ -2692,21 +2894,9 @@
       "name"
      ],
      [
-      54731,
+      54722,
       "Blackbird State Forest",
-      172,
-      "name"
-     ],
-     [
-      54728,
-      "Blackbird State Forest",
-      103,
-      "name"
-     ],
-     [
-      52037,
-      "Blackbird State Forest",
-      57,
+      276,
       "name"
      ]
     ],
@@ -2747,34 +2937,43 @@
    "verdict": "no size on page"
   },
   "US-4610": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Redden State Forest",
    "official": null,
    "ours": {
-    "acres": 11609,
+    "acres": 13895,
     "dissolved": {
-     "after": 13667,
-     "before": 29033,
-     "copies": 0,
+     "after": 34420,
+     "before": 37496,
+     "copies": 12,
      "families": {
-      "padus": 11609,
-      "sgdeb": 2058
+      "padus": 14679,
+      "sgdea": 7827,
+      "sgdeb": 11914
      },
-     "family_fold": 2058,
+     "family_fold": 19741,
      "family_used": "padus",
-     "parts": 30,
-     "records": 38,
-     "tracts": 8
+     "key_union": 13895,
+     "parts": 16,
+     "records": 73,
+     "summed": 14679,
+     "tracts": 45
     },
-    "family_fold": "layers {'padus': 11609, 'sgdeb': 2058}: one land in 2 layers, the padus copy used (2,058 ac of copies not added)",
+    "family_fold": "layers {'padus': 14679, 'sgdeb': 11914, 'sgdea': 7827}: one land in 3 layers, the padus copy used (19,741 ac of copies not added)",
     "manager": "",
-    "note": "38 joined records = 8 tracts: 0 copies of a tract (same acres, another layer) and 30 fee tracts under a designation record folded; summed 29033 -> 13667 acres",
+    "note": "73 joined records = 45 tracts: 12 copies of a tract (same acres, another layer) and 16 fee tracts under a designation record folded; summed 37496 -> 34420 acres",
     "pieces": [
      [
       54734,
       "Redden State Forest",
       9502,
+      "name"
+     ],
+     [
+      76166,
+      "Redden State Forest",
+      1695,
       "name"
      ],
      [
@@ -2784,27 +2983,33 @@
       "name"
      ],
      [
+      54743,
+      "Redden State Forest",
+      452,
+      "name"
+     ],
+     [
+      54747,
+      "Redden State Forest",
+      354,
+      "name"
+     ],
+     [
       76137,
       "Redden State Forest",
       328,
       "name"
      ],
      [
+      52039,
+      "Redden State Forest",
+      303,
+      "name"
+     ],
+     [
       54742,
       "Redden State Forest",
       292,
-      "name"
-     ],
-     [
-      54746,
-      "Redden State Forest",
-      218,
-      "name"
-     ],
-     [
-      54735,
-      "Redden State Forest",
-      181,
       "name"
      ]
     ],
@@ -2845,29 +3050,30 @@
    "verdict": "no size on page"
   },
   "US-4611": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Taber State Forest",
    "official": null,
    "ours": {
     "acres": 1340,
     "dissolved": {
-     "after": 2371,
-     "before": 2631,
+     "after": 3642,
+     "before": 3902,
      "copies": 0,
      "families": {
       "padus": 1031,
+      "sgdea": 1271,
       "sgdeb": 1340
      },
-     "family_fold": 1031,
+     "family_fold": 2302,
      "family_used": "sgdeb",
      "parts": 4,
-     "records": 8,
-     "tracts": 4
+     "records": 9,
+     "tracts": 5
     },
-    "family_fold": "layers {'sgdeb': 1340, 'padus': 1031}: one land in 2 layers, the sgdeb copy used (1,031 ac of copies not added)",
+    "family_fold": "layers {'sgdeb': 1340, 'sgdea': 1271, 'padus': 1031}: one land in 3 layers, the sgdeb copy used (2,302 ac of copies not added)",
     "manager": "",
-    "note": "8 joined records = 4 tracts: 0 copies of a tract (same acres, another layer) and 4 fee tracts under a designation record folded; summed 2631 -> 2371 acres",
+    "note": "9 joined records = 5 tracts: 0 copies of a tract (same acres, another layer) and 4 fee tracts under a designation record folded; summed 3902 -> 3642 acres",
     "pieces": [
      [
       "sgdeb11",
@@ -2915,10 +3121,11 @@
   "US-5719": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Ted Harvey State Conservation Area",
    "official": null,
    "ours": {
-    "acres": 2751,
+    "acres": 3596,
     "dissolved": {
      "after": 3722,
      "before": 6469,
@@ -2929,8 +3136,10 @@
      },
      "family_fold": 971,
      "family_used": "padus",
+     "key_union": 3596,
      "parts": 3,
      "records": 9,
+     "summed": 2751,
      "tracts": 6
     },
     "family_fold": "layers {'padus': 2751, 'sgdec': 971}: one land in 2 layers, the padus copy used (971 ac of copies not added)",
@@ -2978,10 +3187,11 @@
   "US-5720": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Tappahanna State Wildlife Area",
    "official": null,
    "ours": {
-    "acres": 461,
+    "acres": 381,
     "family_fold": "layers {'sgdec': 461, 'padus': 165}: one land in 2 layers, the sgdec copy used (165 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -3026,27 +3236,30 @@
   "US-5721": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Norman G Wilder State Wildlife Area",
    "official": null,
    "ours": {
-    "acres": 3472,
+    "acres": 4869,
     "dissolved": {
-     "after": 4712,
-     "before": 8967,
+     "after": 4380,
+     "before": 8978,
      "copies": 2,
      "families": {
-      "padus": 3472,
-      "sgdec": 1240
+      "padus": 3402,
+      "sgdec": 978
      },
-     "family_fold": 1240,
+     "family_fold": 978,
      "family_used": "padus",
-     "parts": 7,
-     "records": 17,
-     "tracts": 8
+     "key_union": 4869,
+     "parts": 10,
+     "records": 18,
+     "summed": 3402,
+     "tracts": 6
     },
-    "family_fold": "layers {'padus': 3472, 'sgdec': 1240}: one land in 2 layers, the padus copy used (1,240 ac of copies not added)",
+    "family_fold": "layers {'padus': 3402, 'sgdec': 978}: one land in 2 layers, the padus copy used (978 ac of copies not added)",
     "manager": "",
-    "note": "17 joined records = 8 tracts: 2 copies of a tract (same acres, another layer) and 7 fee tracts under a designation record folded; summed 8967 -> 4712 acres",
+    "note": "18 joined records = 6 tracts: 2 copies of a tract (same acres, another layer) and 10 fee tracts under a designation record folded; summed 8978 -> 4380 acres",
     "pieces": [
      [
       57580,
@@ -3055,21 +3268,21 @@
       "name"
      ],
      [
-      57584,
+      57583,
       "Norman G. Wilder Wildlife Area",
-      140,
-      "name"
-     ],
-     [
-      57581,
-      "Norman G. Wilder Wildlife Area",
-      106,
+      166,
       "name"
      ],
      [
       57586,
       "Norman G. Wilder Wildlife Area",
       32,
+      "name"
+     ],
+     [
+      57585,
+      "Norman G. Wilder Wildlife Area",
+      10,
       "name"
      ]
     ],
@@ -3101,6 +3314,7 @@
   "US-5722": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "McGinnis Pond State Wildlife Area",
    "official": null,
    "ours": {
@@ -3143,27 +3357,30 @@
   "US-5723": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Milford Neck State Wildlife Area",
    "official": null,
    "ours": {
-    "acres": 5633,
+    "acres": 6621,
     "dissolved": {
-     "after": 6788,
-     "before": 13778,
-     "copies": 1,
+     "after": 7088,
+     "before": 16815,
+     "copies": 7,
      "families": {
-      "padus": 5633,
-      "sgdec": 1155
+      "padus": 5570,
+      "sgdea": 1518
      },
-     "family_fold": 1155,
+     "family_fold": 1518,
      "family_used": "padus",
-     "parts": 11,
-     "records": 20,
-     "tracts": 8
+     "key_union": 6621,
+     "parts": 20,
+     "records": 31,
+     "summed": 5570,
+     "tracts": 4
     },
-    "family_fold": "layers {'padus': 5633, 'sgdec': 1155}: one land in 2 layers, the padus copy used (1,155 ac of copies not added)",
+    "family_fold": "layers {'padus': 5570, 'sgdea': 1518}: one land in 2 layers, the padus copy used (1,518 ac of copies not added)",
     "manager": "",
-    "note": "20 joined records = 8 tracts: 1 copies of a tract (same acres, another layer) and 11 fee tracts under a designation record folded; summed 13778 -> 6788 acres",
+    "note": "31 joined records = 4 tracts: 7 copies of a tract (same acres, another layer) and 20 fee tracts under a designation record folded; summed 16815 -> 7088 acres",
     "pieces": [
      [
       76228,
@@ -3175,18 +3392,6 @@
       57560,
       "Milford Neck Wildlife Area",
       439,
-      "name"
-     ],
-     [
-      57483,
-      "Milford Neck Wildlife Area",
-      42,
-      "name"
-     ],
-     [
-      57562,
-      "Milford Neck Wildlife Area",
-      21,
       "name"
      ]
     ],
@@ -3218,16 +3423,19 @@
   "US-5724": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Prime Hook State Wildlife Area",
    "official": null,
    "ours": {
-    "acres": 662,
+    "acres": 610,
     "dissolved": {
      "after": 662,
      "before": 1323,
      "copies": 1,
+     "key_union": 610,
      "parts": 0,
      "records": 2,
+     "summed": 662,
      "tracts": 1
     },
     "manager": "",
@@ -3268,10 +3476,11 @@
   "US-5725": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Marshy Hope State Wildlife Area",
    "official": null,
    "ours": {
-    "acres": 1071,
+    "acres": 1466,
     "family_fold": "layers {'sgdec': 1071, 'padus': 967}: one land in 2 layers, the sgdec copy used (967 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -3310,6 +3519,7 @@
   "US-5726": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Old Furnace State Wildlife Area",
    "official": null,
    "ours": {
@@ -3369,10 +3579,11 @@
   "US-5727": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Nanticoke State Wildlife Area",
    "official": null,
    "ours": {
-    "acres": 3236,
+    "acres": 4614,
     "dissolved": {
      "after": 3481,
      "before": 9237,
@@ -3383,8 +3594,10 @@
      },
      "family_fold": 245,
      "family_used": "sgdec",
+     "key_union": 4614,
      "parts": 9,
      "records": 14,
+     "summed": 3236,
      "tracts": 5
     },
     "family_fold": "layers {'sgdec': 3236, 'padus': 245}: one land in 2 layers, the sgdec copy used (245 ac of copies not added)",
@@ -3426,16 +3639,19 @@
   "US-5728": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Midlands State Wildlife Area",
    "official": null,
    "ours": {
-    "acres": 5334,
+    "acres": 5833,
     "dissolved": {
      "after": 5334,
      "before": 10646,
      "copies": 0,
+     "key_union": 5833,
      "parts": 8,
      "records": 9,
+     "summed": 5334,
      "tracts": 1
     },
     "manager": "",
@@ -3476,10 +3692,11 @@
   "US-7645": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Assawoman Bay State Wildlife Area",
    "official": null,
    "ours": {
-    "acres": 2274,
+    "acres": 3174,
     "dissolved": {
      "after": 3841,
      "before": 6102,
@@ -3490,8 +3707,10 @@
      },
      "family_fold": 1567,
      "family_used": "padus",
+     "key_union": 3174,
      "parts": 6,
      "records": 13,
+     "summed": 2274,
      "tracts": 7
     },
     "family_fold": "layers {'padus': 2274, 'sgdec': 1567}: one land in 2 layers, the padus copy used (1,567 ac of copies not added)",
@@ -3557,10 +3776,11 @@
   "US-7646": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Augustine State Wildlife Area",
    "official": null,
    "ours": {
-    "acres": 3317,
+    "acres": 4180,
     "dissolved": {
      "after": 4179,
      "before": 9817,
@@ -3571,8 +3791,10 @@
      },
      "family_fold": 862,
      "family_used": "padus",
+     "key_union": 4180,
      "parts": 7,
      "records": 14,
+     "summed": 3317,
      "tracts": 6
     },
     "family_fold": "layers {'padus': 3317, 'sgdec': 862}: one land in 2 layers, the padus copy used (862 ac of copies not added)",
@@ -3626,27 +3848,31 @@
   "US-7647": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Blackiston State Wildlife Area",
    "official": null,
    "ours": {
-    "acres": 2403,
+    "acres": 2734,
     "dissolved": {
-     "after": 4553,
-     "before": 4736,
+     "after": 3047,
+     "before": 6317,
      "copies": 0,
      "families": {
-      "padus": 2150,
+      "padus": 75,
+      "sgdea": 569,
       "sgdec": 2403
      },
-     "family_fold": 2150,
+     "family_fold": 644,
      "family_used": "sgdec",
-     "parts": 3,
-     "records": 9,
+     "key_union": 2734,
+     "parts": 10,
+     "records": 16,
+     "summed": 2403,
      "tracts": 6
     },
-    "family_fold": "layers {'sgdec': 2403, 'padus': 2150}: one land in 2 layers, the sgdec copy used (2,150 ac of copies not added)",
+    "family_fold": "layers {'sgdec': 2403, 'sgdea': 569, 'padus': 75}: one land in 3 layers, the sgdec copy used (644 ac of copies not added)",
     "manager": "",
-    "note": "9 joined records = 6 tracts: 0 copies of a tract (same acres, another layer) and 3 fee tracts under a designation record folded; summed 4736 -> 4553 acres",
+    "note": "16 joined records = 6 tracts: 0 copies of a tract (same acres, another layer) and 10 fee tracts under a designation record folded; summed 6317 -> 3047 acres",
     "pieces": [
      [
       "sgdec46",
@@ -3683,10 +3909,11 @@
   "US-7648": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Chesapeake and Delaware Canal Conservation Area",
    "official": null,
    "ours": {
-    "acres": 8133,
+    "acres": 5474,
     "family_fold": "layers {'padus': 8133, 'sgdec': 4923}: one land in 2 layers, the padus copy used (4,923 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -3731,10 +3958,11 @@
   "US-7649": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Cedar Swamp State Wildlife Area",
    "official": null,
    "ours": {
-    "acres": 6540,
+    "acres": 6148,
     "dissolved": {
      "after": 10962,
      "before": 15380,
@@ -3745,8 +3973,10 @@
      },
      "family_fold": 4422,
      "family_used": "padus",
+     "key_union": 6148,
      "parts": 2,
      "records": 7,
+     "summed": 6540,
      "tracts": 5
     },
     "family_fold": "layers {'padus': 6540, 'sgdec': 4422}: one land in 2 layers, the padus copy used (4,422 ac of copies not added)",
@@ -3806,6 +4036,7 @@
   "US-7650": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Eagles Nest State Wildlife Area",
    "official": null,
    "ours": {
@@ -3863,6 +4094,7 @@
   "US-7653": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Tony Florio Woodland Beach State Wildlife Area",
    "official": null,
    "ours": {
@@ -3915,30 +4147,86 @@
    "verdict": "no size on page"
   },
   "US-9877": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Junction and Breakwater National Recreation Trail",
-   "ours": null,
-   "score": null,
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nrtapplication.org/trails/junction-and-breakwater-trail",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
    "t": "National Recreation Trail",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "ours unknown"
   },
   "US-9878": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Northern Delaware Greenway National Recreation Trail",
-   "ours": null,
-   "score": null,
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nrtapplication.org/trails/northern-delaware-greenway-trail-wilmington",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
    "t": "National Recreation Trail",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "ours unknown"
   },
   "US-9879": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Pinelands Nature National Recreation Trail",
-   "ours": null,
+   "ours": {
+    "acres": 0,
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 1
+   },
    "score": null,
    "t": "National Recreation Trail",
    "ver": 15,
@@ -3947,8 +4235,16 @@
   "US-9881": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Pomeroy and Newark National Recreation Trail",
-   "ours": null,
+   "ours": {
+    "acres": 0,
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 1
+   },
    "score": null,
    "t": "National Recreation Trail",
    "ver": 15,
@@ -3957,16 +4253,19 @@
   "US-9882": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Little Creek State Wildlife Area",
    "official": null,
    "ours": {
-    "acres": 9222,
+    "acres": 5205,
     "dissolved": {
      "after": 9222,
      "before": 13992,
      "copies": 0,
+     "key_union": 5205,
      "parts": 3,
      "records": 11,
+     "summed": 9222,
      "tracts": 8
     },
     "manager": "",
@@ -4049,15 +4348,16 @@
   "US-9883": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Port Penn Interpretive Center State Historic Site",
    "official": null,
    "ours": {
-    "acres": 0,
+    "acres": 2,
     "manager": "",
     "pieces": [],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 3
+    "unknown_pieces": 5
    },
    "owner_now": null,
    "pages": [
@@ -4081,7 +4381,7 @@
    "verdict": "ours unknown"
   },
   "US-9885": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Indian River Life-Saving Station State Historic Site",
    "ours": null,
@@ -4091,7 +4391,7 @@
    "verdict": "no outline"
   },
   "US-9886": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Dupont Nature Center State Conservation Area",
    "ours": null,
@@ -4103,12 +4403,30 @@
   "US-9887": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Beach Plum Island State Nature Preserve",
    "official": null,
    "ours": {
-    "acres": 135,
+    "acres": 154,
+    "dissolved": {
+     "after": 256,
+     "before": 296,
+     "copies": 1,
+     "families": {
+      "padus": 135,
+      "sgded": 121
+     },
+     "family_fold": 121,
+     "family_used": "padus",
+     "key_union": 154,
+     "parts": 3,
+     "records": 7,
+     "summed": 135,
+     "tracts": 3
+    },
     "family_fold": "layers {'sgded': 121, 'padus': 135}: one land in 2 layers, the padus copy used (121 ac of copies not added)",
     "manager": "",
+    "note": "7 joined records = 3 tracts: 1 copies of a tract (same acres, another layer) and 3 fee tracts under a designation record folded; summed 296 -> 256 acres",
     "pieces": [
      [
       76401,
@@ -4125,7 +4443,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 2
    },
    "owner_now": null,
    "pages": [
@@ -4151,33 +4469,19 @@
   "US-9889": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "Bellevue Woods State Nature Preserve",
    "official": null,
    "ours": {
     "acres": 29,
-    "dissolved": {
-     "after": 33,
-     "before": 37,
-     "copies": 1,
-     "families": {
-      "padus": 4,
-      "sgded": 29
-     },
-     "family_fold": 4,
-     "family_used": "sgded",
-     "parts": 0,
-     "records": 4,
-     "tracts": 3
-    },
     "family_fold": "layers {'sgded': 29, 'padus': 4}: one land in 2 layers, the sgded copy used (4 ac of copies not added)",
     "manager": "",
-    "note": "4 joined records = 3 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 37 -> 33 acres",
     "pieces": [
      [
       "sgded33",
       "Bellevue Woods Nature Preserve",
       17,
-      "name"
+      "reviewed"
      ],
      [
       "sgded32",
@@ -4188,7 +4492,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 0
+    "unknown_pieces": 1
    },
    "owner_now": null,
    "pages": [
@@ -4214,38 +4518,36 @@
   "US-9890": {
    "checked": "2026-11-01",
    "handover": [],
+   "last_read_failed": "2026-11-09",
    "n": "James Branch State Nature Preserve",
    "official": null,
    "ours": {
-    "acres": 746,
+    "acres": 1578,
     "dissolved": {
-     "after": 875,
-     "before": 2225,
-     "copies": 0,
+     "after": 1026,
+     "before": 2778,
+     "copies": 1,
      "families": {
-      "padus": 746,
-      "sgded": 129
+      "padus": 647,
+      "sgdea": 282,
+      "sgded": 97
      },
-     "family_fold": 129,
+     "family_fold": 379,
      "family_used": "padus",
-     "parts": 25,
-     "records": 30,
-     "tracts": 5
+     "key_union": 1578,
+     "parts": 29,
+     "records": 36,
+     "summed": 647,
+     "tracts": 6
     },
-    "family_fold": "layers {'padus': 746, 'sgded': 129}: one land in 2 layers, the padus copy used (129 ac of copies not added)",
+    "family_fold": "layers {'padus': 647, 'sgdea': 282, 'sgded': 97}: one land in 3 layers, the padus copy used (379 ac of copies not added)",
     "manager": "",
-    "note": "30 joined records = 5 tracts: 0 copies of a tract (same acres, another layer) and 25 fee tracts under a designation record folded; summed 2225 -> 875 acres",
+    "note": "36 joined records = 6 tracts: 1 copies of a tract (same acres, another layer) and 29 fee tracts under a designation record folded; summed 2778 -> 1026 acres",
     "pieces": [
      [
       60700,
       "James Branch Nature Preserve",
       647,
-      "name"
-     ],
-     [
-      52014,
-      "James Branch Nature Preserve",
-      99,
       "name"
      ]
     ],
@@ -4276,18 +4578,20 @@
   },
   "US-9891": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "Blackbird Creek National Reserve",
    "official": null,
    "ours": {
-    "acres": 522,
+    "acres": 817,
     "dissolved": {
      "after": 522,
      "before": 1632,
      "copies": 1,
+     "key_union": 817,
      "parts": 11,
      "records": 14,
+     "summed": 522,
      "tracts": 2
     },
     "manager": "",
@@ -4342,7 +4646,7 @@
    "verdict": "unsure"
   },
   "US-9892": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-09",
    "handover": [],
    "n": "St. Jones National Reserve",
    "official": null,
@@ -4365,7 +4669,7 @@
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 2
+    "unknown_pieces": 3
    },
    "owner_now": null,
    "pages": [
@@ -4389,5 +4693,5 @@
    "verdict": "no size on page"
   }
  },
- "read": "2026-11-01"
+ "read": "2026-11-09"
 }

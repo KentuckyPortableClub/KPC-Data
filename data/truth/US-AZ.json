@@ -2,11 +2,12 @@
  "about": "Park truth checker: official acreage vs our outline, handover hints, second-witness score. Review lists only: nothing here changes a key or a card.",
  "area": "US-AZ",
  "counts": {
-  "agree": 15,
-  "handover_hints": 13,
+  "agree": 17,
+  "handover_hints": 11,
   "no_page": 0,
   "no_size": 62,
-  "off": 4,
+  "not_read": 0,
+  "off": 2,
   "ours_unknown": 23,
   "parks": 123,
   "retired": 0,
@@ -16,7 +17,7 @@
  },
  "parks": {
   "US-0030": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Grand Canyon National Park",
    "official": {
@@ -24,7 +25,7 @@
     "as": "493,059 ha",
     "clean": false,
     "line": "isit this link for Trip Planning Information Geography Grand Canyon National Park Park Size: 1,218,375 acres (493,059 ha) 1,904 square miles (4,931 km 2 ) Length: 278 river miles (447 km) Width: Minimum at Marble Canyon, 600 feet",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "1,218,375 acres (493,059 ha)",
     "url": "https://www.nps.gov/grca/learn/management/statistics.htm",
     "why": "total-looking"
@@ -124,7 +125,7 @@
    "verdict": "agree"
   },
   "US-0057": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Petrified Forest National Park",
    "official": null,
@@ -180,7 +181,7 @@
    "verdict": "no size on page"
   },
   "US-0060": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Saguaro National Park",
    "official": null,
@@ -195,7 +196,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -228,10 +229,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 5,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 1
    },
@@ -241,39 +242,19 @@
    "verdict": "no size on page"
   },
   "US-0172": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-09",
-   "handover": [
-    {
-     "date_hint": null,
-     "kind": "managed by",
-     "line": "Learn More About Us What We Do The National Wildlife Refuge System is a series of lands and waters owned and managed by the U.S. Fish and Wildlife Service. Wildlife conservation is at the heart of the refuge system. It drives everything we do from the purpose a refuge is establis",
-     "owner_now": "U.S",
-     "src": "https://www.fws.gov/refuge/bill-williams-river",
-     "why": "the park's page (data/parkinfo)"
-    }
-   ],
+   "cause": "no total-looking sentence: numbers found were parts or other units",
+   "checked": "2026-11-22",
+   "handover": [],
    "n": "Bill Williams River National Wildlife Refuge",
-   "official": {
-    "acres": 6100.0,
-    "as": "6,100 acres",
-    "clean": false,
-    "line": "River and is one of the last ecologically functioning river habitats in the southwest United States. In 1993, 6,100 acres of the Havasu Lake National Wildlife Refuge was designated as Bill Williams River National Wildlife Refuge du",
-    "read": "2026-11-09",
-    "sent": "In 1993, 6,100 acres of the Havasu Lake National Wildlife Refuge was designated as Bill Williams River National Wildlife Refuge due to its uniqueness and diversity of habitat.",
-    "url": "https://www.fws.gov/refuge/bill-williams-river",
-    "why": "total-looking"
-   },
+   "official": null,
    "ours": {
-    "acres": 4372,
+    "acres": 4945,
     "dissolved": {
      "after": 4945,
      "before": 9890,
      "copies": 1,
-     "key_union": 4372,
      "parts": 0,
      "records": 2,
-     "summed": 4945,
      "tracts": 1
     },
     "manager": "",
@@ -290,45 +271,49 @@
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
-   "owner_now": "U.S",
+   "owner_now": null,
    "pages": [
     {
      "status": "ok",
      "url": "https://www.fws.gov/refuge/bill-williams-river",
      "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/bill-williams-river/about-us",
+     "why": "FWS refuge about page"
     }
    ],
-   "pct": 28,
-   "same_agency": false,
-   "score": 6,
+   "pct": null,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 1,
     "source": 2
    },
    "sizes": [
     {
      "acres": 6100.0,
-     "as": "6,100 acres",
+     "as": "6,100 acre",
      "clean": false,
-     "line": "River and is one of the last ecologically functioning river habitats in the southwest United States. In 1993, 6,100 acres of the Havasu Lake National Wildlife Refuge was designated as Bill Williams River National Wildlife Refuge du",
-     "total_like": true,
+     "line": "cottonwood-willow forests in the region and serves as a Globally Important Bird Area. Designated in 1993, the 6,100-acre site provides a vital resting and breeding ground for migratory birds and at least six federally listed threa",
+     "total_like": false,
      "url": "https://www.fws.gov/refuge/bill-williams-river",
-     "why": "total-looking"
+     "why": "history"
     }
    ],
    "t": "National Wildlife Refuge",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "unsure"
   },
   "US-0173": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
      "kind": "managed by",
-     "line": "Learn More About Us What We Do The National Wildlife Refuge System is a series of lands and waters owned and managed by the U.S. Fish and Wildlife Service. Wildlife conservation is at the heart of the refuge system. It drives everything we do from the purpose a refuge is establis",
+     "line": "olunteer opportunities Services The National Wildlife Refuge System is a series of lands and waters owned and managed by the U.S. Fish and Wildlife Service. Wildlife conservation is at the heart of the refuge system. It drives everything we do from the purpose a refuge is establis",
      "owner_now": "U.S",
      "src": "https://www.fws.gov/refuge/buenos-aires",
      "why": "the park's page (data/parkinfo)"
@@ -339,9 +324,9 @@
     "acres": 117464.0,
     "as": "117,464 acre",
     "clean": false,
-    "line": "& Regulations Contact Us Visit Us Activities Trails Rules & Policies Get Involved Events News Species Map The 117,464-acre refuge is home to a wide variety of plants and animals. Visitors will find semi-desert grasslands, cottonwood",
-    "read": "2026-11-09",
-    "sent": "The 117,464-acre refuge is home to a wide variety of plants and animals.",
+    "line": "divided into three management units. The main portion of the refuge encompasses approximately 110,000 of the 117,464 acre refuge. This tract is made up Sonoran semi-desert grassland. The other two units are the Brown Canyon Unit an",
+    "read": "2026-11-22",
+    "sent": "The main portion of the refuge encompasses approximately 110,000 of the 117,464 acre refuge.",
     "url": "https://www.fws.gov/refuge/buenos-aires",
     "why": "total-looking"
    },
@@ -391,7 +376,7 @@
      "acres": 117464.0,
      "as": "117,464 acre",
      "clean": false,
-     "line": "& Regulations Contact Us Visit Us Activities Trails Rules & Policies Get Involved Events News Species Map The 117,464-acre refuge is home to a wide variety of plants and animals. Visitors will find semi-desert grasslands, cottonwood",
+     "line": "divided into three management units. The main portion of the refuge encompasses approximately 110,000 of the 117,464 acre refuge. This tract is made up Sonoran semi-desert grassland. The other two units are the Brown Canyon Unit an",
      "total_like": true,
      "url": "https://www.fws.gov/refuge/buenos-aires",
      "why": "total-looking"
@@ -400,10 +385,10 @@
      "acres": 117464.0,
      "as": "117,464 acre",
      "clean": false,
-     "line": "es are scheduled throughout the year. Learn More About Visiting Location and Contact Information About Us The 117,464-acre refuge is home to a wide variety of plants and animals. Visitors will find semi-desert grasslands, cottonwood",
-     "total_like": true,
+     "line": "f the fence removal projects. About Established in 1985 to protect the endangered masked bobwhite quail, this 117,464-acre refuge encompasses diverse biotic communities including semi-desert grasslands, wetlands, and the unique syca",
+     "total_like": false,
      "url": "https://www.fws.gov/refuge/buenos-aires",
-     "why": "total-looking"
+     "why": "history"
     }
    ],
    "t": "National Wildlife Refuge",
@@ -411,7 +396,7 @@
    "verdict": "agree"
   },
   "US-0174": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
@@ -428,7 +413,7 @@
     "as": "803,418 acres",
     "clean": false,
     "line": "r us all a chance to unplug from the stresses of daily life and reconnect with our natural surroundings. With 803,418 acres of designated wilderness area wilderness area Wilderness areas are places untamed by humans. The Wilderness A",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "With 803,418 acres of designated wilderness area wilderness area",
     "url": "https://www.fws.gov/refuge/cabeza-prieta",
     "why": "no total words near it"
@@ -562,26 +547,26 @@
    "verdict": "agree"
   },
   "US-0175": {
-   "cause": "whole park compared (POTA lists it in 2 states: {'US-AZ': 10745, 'US-CA': 3737})",
-   "checked": "2026-11-09",
+   "cause": "whole park compared (POTA lists it in 2 states: {'US-CA': 4854, 'US-AZ': 10745})",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Cibola National Wildlife Refuge",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-AZ': 10745, 'US-CA': 3737})",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-CA': 4854, 'US-AZ': 10745})",
    "official": {
     "acres": 18444.0,
     "as": "18,444 acre",
     "clean": false,
     "line": "oring of the banks of the Colorado River by the Bureau of Reclamation to prevent flooding. The purpose of the 18,444-acre refuge is to protect and recreate the marshes, backwaters, and meanders that historically provided wintering",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The purpose of the 18,444-acre refuge is to protect and recreate the marshes, backwaters, and meanders that historically provided wintering grounds for migratory waterfowl and other wildlife that natural flooding would have formed.",
     "url": "https://www.fws.gov/refuge/cibola",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 14482,
+    "acres": 15599,
     "acres_by_state": {
      "US-AZ": 10745,
-     "US-CA": 3737
+     "US-CA": 4854
     },
     "dissolved": {
      "after": 10745,
@@ -604,8 +589,8 @@
     "pin": "inside",
     "src": "USGS PAD-US",
     "states": [
-     "US-AZ",
-     "US-CA"
+     "US-CA",
+     "US-AZ"
     ],
     "unknown_pieces": 0,
     "whole_park": true
@@ -623,7 +608,7 @@
      "why": "FWS refuge about page"
     }
    ],
-   "pct": 21,
+   "pct": 15,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -685,7 +670,7 @@
   },
   "US-0176": {
    "cause": "the agency figure may cover several states; our outline may be this state's share only",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
@@ -703,7 +688,7 @@
     "as": "25,768 acre",
     "clean": false,
     "line": "ecies Map Imperial National Wildlife Refuge was established by Executive Order 8685 on February 14, 1941. The 25,768-acre refuge protects 30 miles of wildlife habitat along the lower Colorado River. Visit Us Image Details Visitors",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The 25,768-acre refuge protects 30 miles of wildlife habitat along the lower Colorado River.",
     "url": "https://www.fws.gov/refuge/imperial",
     "why": "total-looking"
@@ -807,7 +792,7 @@
   },
   "US-0177": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Kofa National Wildlife Refuge",
    "official": {
@@ -815,7 +800,7 @@
     "as": "547,719 acres",
     "clean": false,
     "line": "area’s most notable mines, the King of Arizona gold mine. Wilderness Area Kofa Wilderness Designated in 1990 547,719 acres The Wilderness Act of 1964 created the National Wilderness Preservation System \"in order to assure that an in",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "547,719 acres",
     "url": "https://www.fws.gov/refuge/kofa/about-us",
     "why": "total-looking"
@@ -950,25 +935,16 @@
    "verdict": "off"
   },
   "US-0178": {
-   "checked": "2026-11-09",
-   "handover": [
-    {
-     "date_hint": null,
-     "kind": "managed by",
-     "line": "Learn More About Us What We Do The National Wildlife Refuge System is a series of lands and waters owned and managed by the U.S. Fish and Wildlife Service. Wildlife conservation is at the heart of the refuge system. It drives everything we do from the purpose a refuge is establis",
-     "owner_now": "U.S",
-     "src": "https://www.fws.gov/refuge/leslie-canyon",
-     "why": "the park's page (data/parkinfo)"
-    }
-   ],
+   "checked": "2026-11-22",
+   "handover": [],
    "n": "Leslie Canyon National Wildlife Refuge",
    "official": {
     "acres": 2765.0,
     "as": "2,765 acre",
     "clean": false,
-    "line": "t Laws & Regulations Contact Us Visit Us Activities Trails Rules & Policies Get Involved News Species Map The 2,765-acre refuge was established in 1988 to protect two of the eight native fish species of the Río Yaqui watershed: th",
-    "read": "2026-11-09",
-    "sent": "The 2,765-acre refuge was established in 1988 to protect two of the eight native fish species of the Río Yaqui watershed: the Yaqui chub (Gila purpurea) and the Yaqui topminnow (Poeciliopsis sonoriensis).",
+    "line": "while doing something personally satisfying. Learn How To Get Involved Services Special Use Permits About The 2,765-acre Leslie Canyon National Wildlife Refuge was established in 1988 to conserve fish and wildlife species that are",
+    "read": "2026-11-22",
+    "sent": "The 2,765-acre Leslie Canyon National Wildlife Refuge was established in 1988 to conserve fish and wildlife species that are listed as threatened or endangered.",
     "url": "https://www.fws.gov/refuge/leslie-canyon",
     "why": "history"
    },
@@ -996,7 +972,7 @@
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
-   "owner_now": "U.S",
+   "owner_now": null,
    "pages": [
     {
      "status": "ok",
@@ -1004,9 +980,9 @@
      "why": "the park's page (data/parkinfo)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/leslie-canyon/about-us",
-     "why": "about / history page of the park's site"
+     "why": "FWS refuge about page"
     }
    ],
    "pct": 0,
@@ -1023,37 +999,10 @@
      "acres": 2765.0,
      "as": "2,765 acre",
      "clean": false,
-     "line": "t Laws & Regulations Contact Us Visit Us Activities Trails Rules & Policies Get Involved News Species Map The 2,765-acre refuge was established in 1988 to protect two of the eight native fish species of the Río Yaqui watershed: th",
+     "line": "while doing something personally satisfying. Learn How To Get Involved Services Special Use Permits About The 2,765-acre Leslie Canyon National Wildlife Refuge was established in 1988 to conserve fish and wildlife species that are",
      "total_like": false,
      "url": "https://www.fws.gov/refuge/leslie-canyon",
      "why": "history"
-    },
-    {
-     "acres": 2765.0,
-     "as": "2,765 acre",
-     "clean": false,
-     "line": "ake more excellent wildlife watching. Learn More About Visiting Location and Contact Information About Us The 2,765-acre refuge was established in 1988 to protect two of the eight native fish species of the Río Yaqui watershed: th",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/leslie-canyon",
-     "why": "history"
-    },
-    {
-     "acres": 2765.0,
-     "as": "2,765 acre",
-     "clean": false,
-     "line": "Regulations Contact Us Visit Us Activities Trails Rules & Policies Get Involved News Species Map About Us The 2,765-acre refuge was established in 1988 to protect two of the eight native fish species of the Río Yaqui watershed: th",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/leslie-canyon/about-us",
-     "why": "history"
-    },
-    {
-     "acres": 2369.0,
-     "as": "2,369 acre",
-     "clean": false,
-     "line": "nal Wildlife Refuge was created. Other Facilities in this Complex San Bernardino National Wildlife Refuge The 2,369-acre refuge lies along the international border with Mexico in southeast Arizona's Cochise County. National Wildli",
-     "total_like": true,
-     "url": "https://www.fws.gov/refuge/leslie-canyon/about-us",
-     "why": "total-looking"
     }
    ],
    "t": "National Wildlife Refuge",
@@ -1061,14 +1010,13 @@
    "verdict": "agree"
   },
   "US-0179": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
      "kind": "managed by",
-     "line": "Learn More About Us What We Do The National Wildlife Refuge System is a series of lands and waters owned and managed by the U.S. Fish and Wildlife Service. Wildlife conservation is at the heart of the refuge system. It drives everything we do from the purpose a refuge is establis",
-     "owner_now": "U.S",
+     "line": "- National Parks and Federal Recreation Lands Pass covers recreation opportunities on public lands managed by four Department of the Interior agencies – the National Park Service, Fish and Wildlife Service, Bureau of Land Management, and the Bureau o",
+     "owner_now": "Department of Agriculture’s U.S",
      "src": "https://www.fws.gov/refuge/san-bernardino",
      "why": "the park's page (data/parkinfo)"
     }
@@ -1078,22 +1026,20 @@
     "acres": 2369.0,
     "as": "2,369 acre",
     "clean": false,
-    "line": "o Laws & Regulations Contact Us Visit Us Activities Trails Rules & Policies Get Involved News Species Map The 2,369-acre refuge lies along the international border with Mexico in southeast Arizona's Cochise County. Visit Us Nation",
-    "read": "2026-11-09",
-    "sent": "The 2,369-acre refuge lies along the international border with Mexico in southeast Arizona's Cochise County.",
+    "line": "help your community by doing what you love. Learn How to Get Involved Services Special Use Permits About The 2,369-acre refuge was established in 1982 to conserve fish and wildlife species that are listed as threatened or endange",
+    "read": "2026-11-22",
+    "sent": "The 2,369-acre refuge was established in 1982 to conserve fish and wildlife species that are listed as threatened or endangered.",
     "url": "https://www.fws.gov/refuge/san-bernardino",
-    "why": "total-looking"
+    "why": "history"
    },
    "ours": {
-    "acres": 1208,
+    "acres": 2368,
     "dissolved": {
      "after": 2368,
      "before": 4736,
      "copies": 1,
-     "key_union": 1208,
      "parts": 0,
      "records": 2,
-     "summed": 2368,
      "tracts": 1
     },
     "manager": "",
@@ -1110,21 +1056,26 @@
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
-   "owner_now": "U.S",
+   "owner_now": "Department of Agriculture’s U.S",
    "pages": [
     {
      "status": "ok",
      "url": "https://www.fws.gov/refuge/san-bernardino",
      "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/san-bernardino/about-us",
+     "why": "FWS refuge about page"
     }
    ],
-   "pct": 49,
+   "pct": 0,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -1132,45 +1083,36 @@
      "acres": 2369.0,
      "as": "2,369 acre",
      "clean": false,
-     "line": "o Laws & Regulations Contact Us Visit Us Activities Trails Rules & Policies Get Involved News Species Map The 2,369-acre refuge lies along the international border with Mexico in southeast Arizona's Cochise County. Visit Us Nation",
-     "total_like": true,
+     "line": "help your community by doing what you love. Learn How to Get Involved Services Special Use Permits About The 2,369-acre refuge was established in 1982 to conserve fish and wildlife species that are listed as threatened or endange",
+     "total_like": false,
      "url": "https://www.fws.gov/refuge/san-bernardino",
-     "why": "total-looking"
-    },
-    {
-     "acres": 2369.0,
-     "as": "2,369 acre",
-     "clean": false,
-     "line": "the otherwise arid Chihuahuan Desert. Learn More About Visiting Location and Contact Information About Us The 2,369-acre refuge lies along the international border with Mexico in southeast Arizona's Cochise County. It was establis",
-     "total_like": true,
-     "url": "https://www.fws.gov/refuge/san-bernardino",
-     "why": "total-looking"
+     "why": "history"
     }
    ],
    "t": "National Wildlife Refuge",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-0194": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Havasu National Wildlife Refuge",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-AZ': 32366, 'US-CA': 6909})",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-CA': 6241, 'US-AZ': 32366})",
    "official": {
     "acres": 37515.0,
     "as": "37,515 acres",
-    "clean": true,
-    "line": "D. Roosevelt in 1941 for the primary purpose of providing migratory bird habitat. The refuge is comprised of 37,515 acres along the lower Colorado River in Arizona and California. The refuge protects 30 river miles and encompasses",
-    "read": "2026-11-09",
-    "sent": "The refuge is comprised of 37,515 acres along the lower Colorado River in Arizona and California.",
-    "url": "https://www.fws.gov/refuge/havasu/about-us",
-    "why": "clean total"
+    "clean": false,
+    "line": "Services Tours Environmental Education About Established in 1941, Havasu National Wildlife Refuge encompasses 37,515 acres along the lower Colorado River in Arizona and California to provide essential migratory bird habitat. The ref",
+    "read": "2026-11-22",
+    "sent": "Established in 1941, Havasu National Wildlife Refuge encompasses 37,515 acres along the lower Colorado River in Arizona and California to provide essential migratory bird habitat.",
+    "url": "https://www.fws.gov/refuge/havasu",
+    "why": "history"
    },
    "ours": {
-    "acres": 39275,
+    "acres": 38607,
     "acres_by_state": {
      "US-AZ": 32366,
-     "US-CA": 6909
+     "US-CA": 6241
     },
     "dissolved": {
      "after": 32366,
@@ -1199,8 +1141,8 @@
     "pin": "inside",
     "src": "USGS PAD-US",
     "states": [
-     "US-AZ",
-     "US-CA"
+     "US-CA",
+     "US-AZ"
     ],
     "unknown_pieces": 0,
     "whole_park": true
@@ -1208,7 +1150,7 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/havasu/about-us",
      "why": "the park's page (data/parkinfo)"
     },
@@ -1218,7 +1160,7 @@
      "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
     }
    ],
-   "pct": 5,
+   "pct": 3,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -1231,29 +1173,11 @@
     {
      "acres": 37515.0,
      "as": "37,515 acres",
-     "clean": true,
-     "line": "D. Roosevelt in 1941 for the primary purpose of providing migratory bird habitat. The refuge is comprised of 37,515 acres along the lower Colorado River in Arizona and California. The refuge protects 30 river miles and encompasses",
-     "total_like": true,
-     "url": "https://www.fws.gov/refuge/havasu/about-us",
-     "why": "clean total"
-    },
-    {
-     "acres": 17801.0,
-     "as": "17,801 acres",
-     "clean": true,
-     "line": "long the Colorado River for 30 miles between Needles, California and Lake Havasu City, Arizona it encompasses 17,801 acres which is approximately one-third of the refuge. The Wilderness is rich in wildlife including quail, geese, du",
-     "total_like": true,
-     "url": "https://www.fws.gov/refuge/havasu/about-us",
-     "why": "clean total"
-    },
-    {
-     "acres": 17600.0,
-     "as": "17,600 acre",
      "clean": false,
-     "line": "the 20-mile Topock Gorge. Elusive mountain lions roam and thousands of bats emerge from historic mines in the 17,600 acre Wilderness Area. View Our Species View More Opportunities View All Projects You are exiting the U.S. Fish and",
+     "line": "Services Tours Environmental Education About Established in 1941, Havasu National Wildlife Refuge encompasses 37,515 acres along the lower Colorado River in Arizona and California to provide essential migratory bird habitat. The ref",
      "total_like": false,
      "url": "https://www.fws.gov/refuge/havasu",
-     "why": "no total words near it"
+     "why": "history"
     }
    ],
    "t": "National Wildlife Refuge",
@@ -1261,16 +1185,16 @@
    "verdict": "agree"
   },
   "US-0645": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Glen Canyon National Recreation Area",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-AZ': 44648, 'US-UT': 1192449})",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-UT': 1192449, 'US-AZ': 44648})",
    "official": {
     "acres": 1250000.0,
     "as": "1.25 million acres",
     "clean": true,
     "line": "earch This Site All NPS Exiting nps.gov Cancel Glen Canyon National Recreation Area • AZ,UT Encompassing over 1.25 million acres, Glen Canyon National Recreation Area offers unparalleled opportunities for water-based & backcountry recreat",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Encompassing over 1.25 million acres, Glen Canyon National Recreation Area offers unparalleled opportunities for water-based & backcountry recreation.",
     "url": "https://www.nps.gov/glca/index.htm",
     "why": "clean total"
@@ -1290,11 +1214,11 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "states": [
-     "US-AZ",
-     "US-UT"
+     "US-UT",
+     "US-AZ"
     ],
     "unknown_pieces": 0,
     "whole_park": true
@@ -1319,10 +1243,10 @@
    ],
    "pct": 1,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 2,
     "source": 1
    },
@@ -1369,16 +1293,16 @@
    "verdict": "agree"
   },
   "US-0676": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lake Mead National Recreation Area",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-AZ': 710205, 'US-NV': 581651})",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-NV': 581651, 'US-AZ': 710205})",
    "official": {
     "acres": 1500000.0,
     "as": "1.5 million acres",
     "clean": false,
     "line": "tdoor thrills, striking landscapes, and brilliant blue waters. This year-round recreation area spreads across 1.5 million acres of mountains, canyons, valleys and two vast reservoirs. Visitors come here for scenic drives, biking, hiking,",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "This year-round recreation area spreads across 1.5 million acres of mountains, canyons, valleys and two vast reservoirs.",
     "url": "https://www.nps.gov/lake/index.htm",
     "why": "no total words near it"
@@ -1401,8 +1325,8 @@
     "pin": "inside",
     "src": "USGS PAD-US",
     "states": [
-     "US-AZ",
-     "US-NV"
+     "US-NV",
+     "US-AZ"
     ],
     "unknown_pieces": 0,
     "whole_park": true
@@ -1423,12 +1347,12 @@
    ],
    "pct": 14,
    "same_agency": false,
-   "score": 8,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
     "size": 2,
-    "source": 2
+    "source": 1
    },
    "sizes": [
     {
@@ -1446,7 +1370,7 @@
    "verdict": "agree"
   },
   "US-0760": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Tumacacori National Historical Park",
    "official": null,
@@ -1507,7 +1431,7 @@
    "verdict": "no size on page"
   },
   "US-0771": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Coronado National Memorial",
    "official": null,
@@ -1568,7 +1492,7 @@
    "verdict": "no size on page"
   },
   "US-0815": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Fort Bowie National Historic Site",
    "official": null,
@@ -1583,7 +1507,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -1616,10 +1540,10 @@
     }
    ],
    "pct": null,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 1
    },
@@ -1629,7 +1553,7 @@
    "verdict": "no size on page"
   },
   "US-0835": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Hubbell Trading Post National Historic Site",
    "official": null,
@@ -1644,7 +1568,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -1677,10 +1601,10 @@
     }
    ],
    "pct": null,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 1
    },
@@ -1690,7 +1614,7 @@
    "verdict": "no size on page"
   },
   "US-0908": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Canyon de Chelly National Monument",
    "ours": null,
@@ -1700,7 +1624,7 @@
    "verdict": "no outline"
   },
   "US-0911": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
@@ -1770,7 +1694,7 @@
    "verdict": "no size on page"
   },
   "US-0917": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": "1923",
@@ -1787,7 +1711,7 @@
     "as": "12,025 acres",
     "clean": false,
     "line": "to search for more information. NPS/ C. Bubar Acreage The original monument was 4,238 acres. Current size is 12,025 acres. · 6,407 acres were added on June 10, 1938 (Presidential Proclamation No. 228; 52 Stat 1551) · 440 acre Faraw",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Current size is 12,025 acres.",
     "url": "https://www.nps.gov/chir/learn/management/statistics.htm",
     "why": "no total words near it"
@@ -1923,7 +1847,7 @@
    "verdict": "agree"
   },
   "US-0948": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Montezuma Castle National Monument",
    "official": null,
@@ -1979,7 +1903,7 @@
    "verdict": "no size on page"
   },
   "US-0951": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Navajo National Monument",
    "official": null,
@@ -1994,7 +1918,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -2027,10 +1951,10 @@
     }
    ],
    "pct": null,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 1
    },
@@ -2040,7 +1964,7 @@
    "verdict": "no size on page"
   },
   "US-0954": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Organ Pipe Cactus National Monument",
    "official": {
@@ -2048,7 +1972,7 @@
     "as": "516 square miles",
     "clean": false,
     "line": "t Fiscal Year Report How We Count Visitation Total Acreage Organ Pipe Cactus National Monument is composed of 516 square miles or 330,689 square acres. Last updated: February 24, 2015 Park footer Contact Info Mailing Address: 10 Organ P",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Organ Pipe Cactus National Monument is composed of 516 square miles or 330,689 square acres.",
     "url": "https://www.nps.gov/orpi/learn/management/statistics.htm",
     "why": "total-looking"
@@ -2116,7 +2040,7 @@
    "verdict": "agree"
   },
   "US-0956": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Pipe Spring National Monument",
    "official": null,
@@ -2172,7 +2096,7 @@
    "verdict": "no size on page"
   },
   "US-0964": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Sunset Crater Volcano National Monument",
    "official": null,
@@ -2233,7 +2157,7 @@
    "verdict": "no size on page"
   },
   "US-0966": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Tonto National Monument",
    "official": null,
@@ -2248,7 +2172,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -2276,10 +2200,10 @@
     }
    ],
    "pct": null,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 1
    },
@@ -2289,7 +2213,7 @@
    "verdict": "no size on page"
   },
   "US-0967": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Tuzigoot National Monument",
    "official": null,
@@ -2345,7 +2269,7 @@
    "verdict": "no size on page"
   },
   "US-0969": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Walnut Canyon National Monument",
    "official": null,
@@ -2406,7 +2330,7 @@
    "verdict": "no size on page"
   },
   "US-0972": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
@@ -2473,10 +2397,11 @@
   "US-10311": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Fort Verde State Historical Park",
    "official": null,
    "ours": {
-    "acres": 10,
+    "acres": 14,
     "dissolved": {
      "after": 22,
      "before": 34,
@@ -2487,7 +2412,7 @@
      },
      "family_fold": 10,
      "family_used": "sgaze",
-     "key_union": 10,
+     "key_union": 14,
      "parts": 2,
      "records": 4,
      "summed": 12,
@@ -2530,7 +2455,7 @@
    "verdict": "no size on page"
   },
   "US-10510": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Dos Cabezas Mountains Wilderness Area",
    "official": {
@@ -2538,7 +2463,7 @@
     "as": "11,700 acre",
     "clean": false,
     "line": "ube Facebook Instagram Flickr LinkedIn Dos Cabezas Mountains Wilderness | Arizona View Map In Full Screen The 11,700-acre Dos Cabezas Mountains Wilderness in Arizona is managed by the Bureau of Land Management. The wilderness area",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The 11,700-acre Dos Cabezas Mountains Wilderness in Arizona is managed by the Bureau of Land Management.",
     "url": "https://www.blm.gov/visit/dos-cabezas-mountains-wilderness",
     "why": "total-looking"
@@ -2586,18 +2511,17 @@
   "US-10512": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Verde River Greenway State Natural Area",
    "official": null,
    "ours": {
-    "acres": 448,
+    "acres": 649,
     "dissolved": {
      "after": 649,
      "before": 1296,
      "copies": 1,
-     "key_union": 448,
      "parts": 0,
      "records": 2,
-     "summed": 649,
      "tracts": 1
     },
     "manager": "",
@@ -2638,6 +2562,7 @@
   "US-10513": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Granite Mountain Hotshots State Park",
    "official": null,
    "ours": {
@@ -2677,12 +2602,12 @@
    "verdict": "no size on page"
   },
   "US-10514": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "San Pedro Riparian BLM National Conservation Area",
    "official": null,
    "ours": {
-    "acres": 61943,
+    "acres": 60983,
     "manager": "",
     "pieces": [],
     "pin": "inside",
@@ -2713,15 +2638,16 @@
   "US-10516": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Jerome State Historical Park",
    "official": null,
    "ours": {
-    "acres": 39,
+    "acres": 8,
     "dissolved": {
      "after": 7,
      "before": 21,
      "copies": 2,
-     "key_union": 39,
+     "key_union": 8,
      "parts": 0,
      "records": 3,
      "summed": 7,
@@ -2737,7 +2663,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -2765,10 +2691,11 @@
   "US-10518": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Tombstone Courthouse State Historical Park",
    "official": null,
    "ours": {
-    "acres": 5,
+    "acres": 3,
     "dissolved": {
      "after": 9,
      "before": 14,
@@ -2779,8 +2706,10 @@
      },
      "family_fold": 4,
      "family_used": "sgaza",
+     "key_union": 3,
      "parts": 0,
      "records": 3,
+     "summed": 5,
      "tracts": 2
     },
     "family_fold": "layers {'sgaza': 5, 'padus': 4}: one land in 2 layers, the sgaza copy used (4 ac of copies not added)",
@@ -2822,6 +2751,7 @@
   "US-1052": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Alamo Lake State Park",
    "official": null,
    "ours": {
@@ -2876,13 +2806,21 @@
    "verdict": "no size on page"
   },
   "US-1053": {
-   "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Boyce Thompson Arboretum State Park",
-   "official": null,
+   "official": {
+    "acres": 400.0,
+    "as": "400 acres",
+    "clean": false,
+    "line": "lant Research in Yonkers, New York (now at Cornell University in Ithaca), and the Boyce Thompson Arboretum on 400 acres around the Picket Post House, in Queen Creek Canyon. 1869 1907 1913 1917 1918 1922 1923 1925 1925 1926 1926 1",
+    "read": "2026-11-22",
+    "sent": "In 1924 he founded the Boyce Thompson Institute for Plant Research in Yonkers, New York (now at Cornell University in Ithaca), and the Boyce Thompson Arboretum on 400 acres around the Picket Post House, in Queen Creek Canyon.",
+    "url": "https://btarboretum.org/history/",
+    "why": "history"
+   },
    "ours": {
-    "acres": 295,
+    "acres": 402,
     "family_fold": "layers {'sgaze': 402, 'sgaza': 369}: one land in 2 layers, the sgaze copy used (369 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -2910,12 +2848,13 @@
      "why": "about / history page of the park's site"
     }
    ],
-   "pct": null,
-   "score": 7,
+   "pct": 0,
+   "same_agency": false,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -2940,23 +2879,22 @@
    ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "unsure"
+   "verdict": "agree"
   },
   "US-1054": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Buckskin Mountain State Park",
    "official": null,
    "ours": {
-    "acres": 1069,
+    "acres": 949,
     "dissolved": {
      "after": 949,
      "before": 1893,
      "copies": 1,
-     "key_union": 1069,
      "parts": 0,
      "records": 2,
-     "summed": 949,
      "tracts": 1
     },
     "manager": "",
@@ -2997,18 +2935,17 @@
   "US-1055": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Catalina State Park",
    "official": null,
    "ours": {
-    "acres": 6331,
+    "acres": 5473,
     "dissolved": {
      "after": 5473,
      "before": 10946,
      "copies": 1,
-     "key_union": 6331,
      "parts": 0,
      "records": 2,
-     "summed": 5473,
      "tracts": 1
     },
     "manager": "",
@@ -3049,6 +2986,7 @@
   "US-1056": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Cattail Cove State Park",
    "official": null,
    "ours": {
@@ -3106,15 +3044,16 @@
   "US-1057": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Dead Horse Ranch State Park",
    "official": null,
    "ours": {
-    "acres": 589,
+    "acres": 356,
     "dissolved": {
      "after": 335,
      "before": 1005,
      "copies": 2,
-     "key_union": 589,
+     "key_union": 356,
      "parts": 0,
      "records": 3,
      "summed": 335,
@@ -3158,10 +3097,11 @@
   "US-1058": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Homolovi State Park",
    "official": null,
    "ours": {
-    "acres": 4052,
+    "acres": 4542,
     "dissolved": {
      "after": 5925,
      "before": 10467,
@@ -3172,10 +3112,8 @@
      },
      "family_fold": 1383,
      "family_used": "sgaza",
-     "key_union": 4052,
      "parts": 0,
      "records": 4,
-     "summed": 4542,
      "tracts": 3
     },
     "family_fold": "layers {'sgaza': 4542, 'padus': 1383}: one land in 2 layers, the sgaza copy used (1,383 ac of copies not added)",
@@ -3217,6 +3155,7 @@
   "US-1059": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Kartchner Caverns State Park",
    "official": null,
    "ours": {
@@ -3267,10 +3206,11 @@
   "US-1060": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Lake Havasu State Park",
    "official": null,
    "ours": {
-    "acres": 634,
+    "acres": 929,
     "family_fold": "layers {'sgaza': 929, 'padus': 492, 'sgaze': 349}: one land in 3 layers, the sgaza copy used (841 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -3281,7 +3221,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -3309,18 +3249,17 @@
   "US-1061": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Lost Dutchman State Park",
    "official": null,
    "ours": {
-    "acres": 205,
+    "acres": 309,
     "dissolved": {
      "after": 309,
      "before": 618,
      "copies": 1,
-     "key_union": 205,
      "parts": 0,
      "records": 2,
-     "summed": 309,
      "tracts": 1
     },
     "manager": "",
@@ -3333,7 +3272,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -3361,6 +3300,7 @@
   "US-1062": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Lyman Lake State Park",
    "official": null,
    "ours": {
@@ -3418,18 +3358,17 @@
   "US-1063": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Oracle State Park",
    "official": null,
    "ours": {
-    "acres": 3469,
+    "acres": 4121,
     "dissolved": {
      "after": 4121,
      "before": 12335,
      "copies": 2,
-     "key_union": 3469,
      "parts": 0,
      "records": 3,
-     "summed": 4121,
      "tracts": 1
     },
     "manager": "",
@@ -3470,10 +3409,11 @@
   "US-1064": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Patagonia Lake State Park",
    "official": null,
    "ours": {
-    "acres": 2939,
+    "acres": 2591,
     "dissolved": {
      "after": 3191,
      "before": 5782,
@@ -3484,10 +3424,8 @@
      },
      "family_fold": 600,
      "family_used": "sgaza",
-     "key_union": 2939,
      "parts": 0,
      "records": 3,
-     "summed": 2591,
      "tracts": 2
     },
     "family_fold": "layers {'sgaza': 2591, 'padus': 600}: one land in 2 layers, the sgaza copy used (600 ac of copies not added)",
@@ -3529,10 +3467,11 @@
   "US-1065": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Picacho Peak State Park",
    "official": null,
    "ours": {
-    "acres": 3530,
+    "acres": 3724,
     "dissolved": {
      "after": 7185,
      "before": 10905,
@@ -3543,10 +3482,8 @@
      },
      "family_fold": 3461,
      "family_used": "sgaze",
-     "key_union": 3530,
      "parts": 0,
      "records": 3,
-     "summed": 3724,
      "tracts": 2
     },
     "family_fold": "layers {'sgaze': 3724, 'padus': 3461}: one land in 2 layers, the sgaze copy used (3,461 ac of copies not added)",
@@ -3560,7 +3497,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -3588,18 +3525,17 @@
   "US-1066": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Red Rock State Park",
    "official": null,
    "ours": {
-    "acres": 247,
+    "acres": 287,
     "dissolved": {
      "after": 287,
      "before": 855,
      "copies": 2,
-     "key_union": 247,
      "parts": 0,
      "records": 3,
-     "summed": 287,
      "tracts": 1
     },
     "manager": "",
@@ -3640,10 +3576,11 @@
   "US-1067": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Roper Lake State Park",
    "official": null,
    "ours": {
-    "acres": 283,
+    "acres": 336,
     "dissolved": {
      "after": 669,
      "before": 1005,
@@ -3654,10 +3591,8 @@
      },
      "family_fold": 333,
      "family_used": "sgaza",
-     "key_union": 283,
      "parts": 0,
      "records": 4,
-     "summed": 336,
      "tracts": 3
     },
     "family_fold": "layers {'sgaza': 336, 'padus': 333}: one land in 2 layers, the sgaza copy used (333 ac of copies not added)",
@@ -3699,15 +3634,16 @@
   "US-1068": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Slide Rock State Park",
    "official": null,
    "ours": {
-    "acres": 89,
+    "acres": 74,
     "dissolved": {
      "after": 55,
      "before": 164,
      "copies": 2,
-     "key_union": 89,
+     "key_union": 74,
      "parts": 0,
      "records": 3,
      "summed": 55,
@@ -3751,15 +3687,16 @@
   "US-1069": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Tonto Natural Bridge State Park",
    "official": null,
    "ours": {
-    "acres": 494,
+    "acres": 229,
     "dissolved": {
      "after": 191,
      "before": 382,
      "copies": 1,
-     "key_union": 494,
+     "key_union": 229,
      "parts": 0,
      "records": 2,
      "summed": 191,
@@ -3775,7 +3712,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -3801,7 +3738,7 @@
    "verdict": "no size on page"
   },
   "US-10995": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Sunshine Loop and Dutchman Mountain Bike Trails BLM Recreation Management Area",
    "ours": null,
@@ -3813,6 +3750,7 @@
   "US-11028": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Robbins Butte Wildlife Area State Wildlife Area",
    "official": null,
    "ours": {
@@ -3845,7 +3783,7 @@
    "verdict": "ours unknown"
   },
   "US-11045": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Painted Rock Petroglyph Site National Historical Site",
    "ours": null,
@@ -3855,7 +3793,7 @@
    "verdict": "no outline"
   },
   "US-11046": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Eagletail Mountains Wilderness Area",
    "official": {
@@ -3863,7 +3801,7 @@
     "as": "97,880 acre",
     "clean": false,
     "line": "uTube Facebook Instagram Flickr LinkedIn Eagletail Mountains Wilderness | Arizona View Map In Full Screen The 97,880-acre Eagletail Mountains Wilderness in Arizona is managed by the Bureau of Land Management. Known for its striking",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The 97,880-acre Eagletail Mountains Wilderness in Arizona is managed by the Bureau of Land Management.",
     "url": "https://www.blm.gov/visit/eagletail-mountains-wilderness",
     "why": "total-looking"
@@ -3909,7 +3847,7 @@
    "verdict": "ours unknown"
   },
   "US-11047": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": "1990",
@@ -3926,13 +3864,13 @@
     "as": "30,300 acres",
     "clean": false,
     "line": "am Flickr LinkedIn Trigo Mountain Wilderness | Arizona View Map In Full Screen The Trigo Mountain Wilderness (30,300 acres) in Arizona, is managed by the Bureau of Land Management. In 1990, the Trigo Mountain Wilderness became part",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The Trigo Mountain Wilderness (30,300 acres) in Arizona, is managed by the Bureau of Land Management.",
     "url": "https://www.blm.gov/visit/trigo-mountain-wilderness",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 29133,
+    "acres": 30697,
     "manager": "",
     "pieces": [],
     "pin": "inside",
@@ -3947,7 +3885,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 4,
+   "pct": 1,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -3972,7 +3910,7 @@
    "verdict": "agree"
   },
   "US-11049": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": "1990",
@@ -3989,7 +3927,7 @@
     "as": "24,600 acre",
     "clean": false,
     "line": "uTube Facebook Instagram Flickr LinkedIn New Water Mountains Wilderness | Arizona View Map In Full Screen The 24,600-acre New Water Mountains Wilderness in Arizona is managed by the Bureau of Land Management. In 1990, the New Water",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The 24,600-acre New Water Mountains Wilderness in Arizona is managed by the Bureau of Land Management.",
     "url": "https://www.blm.gov/visit/new-water-mountains-wilderness",
     "why": "total-looking"
@@ -4037,10 +3975,11 @@
   "US-11087": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Upper Verde River State Wildlife Area",
    "official": null,
    "ours": {
-    "acres": 886,
+    "acres": 1085,
     "manager": "",
     "pieces": [
      [
@@ -4078,6 +4017,7 @@
   "US-11122": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "General Crook National Recreation Trail",
    "official": null,
    "ours": {
@@ -4112,6 +4052,7 @@
   "US-11123": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Highline National Recreation Trail",
    "official": null,
    "ours": {
@@ -4146,6 +4087,7 @@
   "US-11124": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Rockin' River Ranch State Park",
    "official": null,
    "ours": {
@@ -4159,7 +4101,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -4185,7 +4127,7 @@
    "verdict": "no size on page"
   },
   "US-11942": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Wabayuma Peak BLM Wilderness Area",
    "official": {
@@ -4193,7 +4135,7 @@
     "as": "40,000 acre",
     "clean": false,
     "line": "ter YouTube Facebook Instagram Flickr LinkedIn Wabayuma Peak Wilderness | Arizona View Map In Full Screen The 40,000-acre Wabayuma Peak Wilderness is located in Mohave County, 20 miles southeast of Kingman, Arizona. This wilderness",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The 40,000-acre Wabayuma Peak Wilderness is located in Mohave County, 20 miles southeast of Kingman, Arizona.",
     "url": "https://www.blm.gov/visit/wabayuma-peak-wilderness",
     "why": "total-looking"
@@ -4241,10 +4183,11 @@
   "US-11943": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Sonoita Creek State Natural Area",
    "official": null,
    "ours": {
-    "acres": 8427,
+    "acres": 7904,
     "family_fold": "layers {'sgaze': 7904, 'padus': 5239}: one land in 2 layers, the sgaze copy used (5,239 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -4281,7 +4224,7 @@
    "verdict": "no size on page"
   },
   "US-11944": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Dankworth Pond State Park",
    "ours": null,
@@ -4293,10 +4236,11 @@
   "US-11945": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Page Springs State Fish Hatchery",
    "official": null,
    "ours": {
-    "acres": 89,
+    "acres": 179,
     "manager": "",
     "pieces": [
      [
@@ -4306,7 +4250,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 1
    },
@@ -4334,10 +4278,11 @@
   "US-11946": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Willcox Playa State Wildlife Area",
    "official": null,
    "ours": {
-    "acres": 414,
+    "acres": 557,
     "manager": "",
     "pieces": [
      [
@@ -4375,10 +4320,11 @@
   "US-11949": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Becker Lake State Wildlife Area",
    "official": null,
    "ours": {
-    "acres": 599,
+    "acres": 635,
     "manager": "",
     "pieces": [
      [
@@ -4388,7 +4334,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 1
    },
@@ -4416,10 +4362,11 @@
   "US-11950": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Cluff Ranch State Wildlife Area",
    "official": null,
    "ours": {
-    "acres": 667,
+    "acres": 774,
     "manager": "",
     "pieces": [
      [
@@ -4455,7 +4402,7 @@
    "verdict": "no size on page"
   },
   "US-11971": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Virgin River Canyon BLM Recreation Management Area",
    "ours": null,
@@ -4465,7 +4412,7 @@
    "verdict": "no outline"
   },
   "US-11975": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Table Mesa BLM Recreation Management Area",
    "ours": null,
@@ -4477,10 +4424,11 @@
   "US-11978": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Whitewater Draw State Wildlife Area",
    "official": null,
    "ours": {
-    "acres": 2283,
+    "acres": 1691,
     "manager": "",
     "pieces": [
      [
@@ -4518,6 +4466,7 @@
   "US-11979": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Allen Severson State Wildlife Area",
    "official": null,
    "ours": {
@@ -4552,6 +4501,7 @@
   "US-11981": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Arivaca Lake State Wildlife Area",
    "official": null,
    "ours": {
@@ -4593,10 +4543,11 @@
   "US-11982": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Base & Meridian State Wildlife Area",
    "official": null,
    "ours": {
-    "acres": 448,
+    "acres": 628,
     "manager": "",
     "pieces": [
      [
@@ -4634,10 +4585,11 @@
   "US-11984": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Quigley-Achee State Wildlife Area",
    "official": null,
    "ours": {
-    "acres": 423,
+    "acres": 610,
     "manager": "",
     "pieces": [
      [
@@ -4647,7 +4599,7 @@
       "words"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 1
    },
@@ -4675,6 +4627,7 @@
   "US-11985": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Raymond State Wildlife Area",
    "official": null,
    "ours": {
@@ -4709,10 +4662,11 @@
   "US-11986": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Wenima State Wildlife Area",
    "official": null,
    "ours": {
-    "acres": 402,
+    "acres": 353,
     "manager": "",
     "pieces": [
      [
@@ -4750,13 +4704,14 @@
   "US-11987": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "White Mountain State Wildlife Area",
    "official": null,
    "ours": {
     "acres": 0,
     "manager": "",
     "pieces": [],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 1
    },
@@ -4782,7 +4737,7 @@
    "verdict": "ours unknown"
   },
   "US-12142": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Dominguez-Escalante Site National Historic Site",
    "ours": null,
@@ -4792,7 +4747,7 @@
    "verdict": "no outline"
   },
   "US-12160": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Hot Well Dunes BLM Recreation Management Area",
    "official": {
@@ -4800,21 +4755,19 @@
     "as": "2,000 acres",
     "clean": false,
     "line": "today is one of the most unique recreation spots in Arizona. Hot Well Dunes provides the opportunity to ride 2,000 acres of sand dunes, set up a camp, and then soak in relaxing hot tubs, all in the same location. However, please b",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Hot Well Dunes provides the opportunity to ride 2,000 acres of sand dunes, set up a camp, and then soak in relaxing hot tubs, all in the same location.",
     "url": "https://www.blm.gov/visit/hot-well-dunes",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 1731,
+    "acres": 2227,
     "dissolved": {
      "after": 2227,
      "before": 4454,
      "copies": 1,
-     "key_union": 1731,
      "parts": 0,
      "records": 2,
-     "summed": 2227,
      "tracts": 1
     },
     "manager": "",
@@ -4839,7 +4792,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 13,
+   "pct": 11,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -4873,7 +4826,7 @@
    "verdict": "agree"
   },
   "US-12161": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Round Mountain Rockhound BLM Special Recreation Management Area",
    "ours": null,
@@ -4883,7 +4836,7 @@
    "verdict": "no outline"
   },
   "US-12162": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Sears Point BLM Historic Preservation Site",
    "ours": null,
@@ -4895,6 +4848,7 @@
   "US-13330": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Sipe White Mountain State Wildlife Area",
    "official": null,
    "ours": {
@@ -4936,10 +4890,11 @@
   "US-13331": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Lamar Haines Memorial State Wildlife Area",
    "official": null,
    "ours": {
-    "acres": 70,
+    "acres": 155,
     "manager": "",
     "pieces": [
      [
@@ -4977,10 +4932,11 @@
   "US-13332": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Sunflower Flat State Wildlife Area",
    "official": null,
    "ours": {
-    "acres": 123,
+    "acres": 159,
     "manager": "",
     "pieces": [
      [
@@ -5182,7 +5138,7 @@
    "verdict": "no size on page"
   },
   "US-13593": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Boulders OHV Staging Area BLM Recreation Management Area",
    "ours": null,
@@ -5192,7 +5148,7 @@
    "verdict": "no outline"
   },
   "US-13594": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Black Canyon National Recreation Trail",
    "official": null,
@@ -5226,7 +5182,7 @@
    "verdict": "ours unknown"
   },
   "US-3390": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "River Island State Park",
    "ours": null,
@@ -5238,18 +5194,17 @@
   "US-3672": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Fool Hollow Lake State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 555,
+    "acres": 732,
     "dissolved": {
      "after": 732,
      "before": 1455,
      "copies": 1,
-     "key_union": 555,
      "parts": 0,
      "records": 2,
-     "summed": 732,
      "tracts": 1
     },
     "manager": "",
@@ -5290,6 +5245,7 @@
   "US-4427": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Apache-Sitgreaves National Forest",
    "official": null,
    "ours": {
@@ -5331,6 +5287,7 @@
   "US-4428": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Coconino National Forest",
    "official": {
     "acres": 1800000.0,
@@ -5397,6 +5354,7 @@
   "US-4429": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Coronado National Forest",
    "official": null,
    "ours": {
@@ -5438,6 +5396,7 @@
   "US-4430": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Kaibab National Forest",
    "official": {
     "acres": 1600000.0,
@@ -5509,6 +5468,7 @@
    "cause": "no total-looking sentence: numbers found were parts or other units",
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Prescott National Forest",
    "official": null,
    "ours": {
@@ -5561,6 +5521,7 @@
    "cause": "no total-looking sentence: numbers found were parts or other units",
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Tonto National Forest",
    "official": null,
    "ours": {
@@ -5610,7 +5571,7 @@
    "verdict": "unsure"
   },
   "US-4433": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Agua Fria National Monument",
    "official": null,
@@ -5644,7 +5605,7 @@
    "verdict": "ours unknown"
   },
   "US-4434": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
@@ -5661,7 +5622,7 @@
     "as": "189,600 acres",
     "clean": false,
     "line": "Forest National Monument, which takes its name from one of the longest living trees in the Arizona desert, is 189,600 acres, of which 128,400 acres are administered by the Bureau of Land Management (BLM) with the balance of land priv",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The Ironwood Forest National Monument, which takes its name from one of the longest living trees in the Arizona desert, is 189,600 acres, of which 128,400 acres are administered by the Bureau of Land Management (BLM) with the balance of land privately owned or State Trust land.",
     "url": "https://www.blm.gov/visit/ironwood",
     "why": "total-looking"
@@ -5718,6 +5679,7 @@
   "US-4435": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Sonoran Desert National Monument",
    "official": {
     "acres": 486400.0,
@@ -5788,6 +5750,7 @@
   "US-4436": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Vermilion Cliffs National Monument",
    "official": {
     "acres": 280000.0,
@@ -5863,7 +5826,7 @@
    "verdict": "ours unknown"
   },
   "US-4557": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Arizona Trail National Scenic Trail",
    "official": {
@@ -5871,7 +5834,7 @@
     "as": "45 million acres",
     "clean": false,
     "line": "land from new road building and large-scale logging. If finalized, the proposal will remove protections from 45 million acres of National Forests across the country. This directly impacts the Arizona National Scenic Trail on the Corona",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "If finalized, the proposal will remove protections from 45 million acres of National Forests across the country.",
     "url": "https://aztrail.org/",
     "why": "a statewide / agency-wide total (over a million acres) on a park that is not a big federal unit"
@@ -5917,7 +5880,7 @@
    "verdict": "ours unknown"
   },
   "US-4571": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Juan Bautista de Anza National Historic Trail",
    "note": "whole park compared (POTA lists it in 0 states: {})",
@@ -5930,8 +5893,8 @@
     "pin": "inside",
     "src": "",
     "states": [
-     "US-AZ",
-     "US-CA"
+     "US-CA",
+     "US-AZ"
     ],
     "unknown_pieces": 1,
     "whole_park": true
@@ -5968,7 +5931,7 @@
    "verdict": "ours unknown"
   },
   "US-4575": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Old Spanish National Historic Trail",
    "note": "whole park compared (POTA lists it in 0 states: {})",
@@ -5981,12 +5944,12 @@
     "pin": "inside",
     "src": "",
     "states": [
-     "US-NM",
-     "US-AZ",
-     "US-CA",
-     "US-CO",
+     "US-UT",
      "US-NV",
-     "US-UT"
+     "US-NM",
+     "US-CO",
+     "US-CA",
+     "US-AZ"
     ],
     "unknown_pieces": 1,
     "whole_park": true
@@ -6033,7 +5996,7 @@
    "verdict": "ours unknown"
   },
   "US-5965": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Stateline Campground BLM Recreation Management Area",
    "ours": null,
@@ -6043,7 +6006,7 @@
    "verdict": "no outline"
   },
   "US-6043": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Honeymoon Historic Trail National Historic Trail",
    "ours": null,
@@ -6055,6 +6018,7 @@
   "US-6071": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Little Black Mountain Petroglyph Site State Historic Site",
    "official": null,
    "ours": {
@@ -6097,8 +6061,9 @@
    "cause": "agency bigger: our outline may miss a tract",
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Beaver Dam Mountain Wilderness Area",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-AZ': 2423, 'US-UT': 2423})",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-UT': 3652, 'US-AZ': 3652})",
    "official": {
     "acres": 17600.0,
     "as": "17,600 acres",
@@ -6110,18 +6075,18 @@
     "why": "clean total"
    },
    "ours": {
-    "acres": 4846,
+    "acres": 7304,
     "acres_by_state": {
-     "US-AZ": 2423,
-     "US-UT": 2423
+     "US-AZ": 3652,
+     "US-UT": 3652
     },
     "manager": "",
     "pieces": [],
     "pin": "well outside",
     "src": "",
     "states": [
-     "US-AZ",
-     "US-UT"
+     "US-UT",
+     "US-AZ"
     ],
     "unknown_pieces": 6,
     "whole_park": true
@@ -6134,7 +6099,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 72,
+   "pct": 58,
    "same_agency": false,
    "score": 3,
    "score_parts": {
@@ -6179,10 +6144,11 @@
   "US-7381": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Las Cienegas National Conservation Area",
    "official": null,
    "ours": {
-    "acres": 49693,
+    "acres": 50332,
     "manager": "",
     "pieces": [],
     "pin": "inside",
@@ -6213,6 +6179,7 @@
   "US-7382": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Arlington State Wildlife Area",
    "official": null,
    "ours": {
@@ -6247,13 +6214,14 @@
   "US-7383": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Tonto State Fish Hatchery",
    "official": null,
    "ours": {
     "acres": 0,
     "manager": "",
     "pieces": [],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 1
    },
@@ -6281,10 +6249,11 @@
   "US-7637": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Riordan Mansion State Park",
    "official": null,
    "ours": {
-    "acres": 2,
+    "acres": 4,
     "dissolved": {
      "after": 11,
      "before": 17,
@@ -6295,7 +6264,7 @@
      },
      "family_fold": 5,
      "family_used": "sgaza",
-     "key_union": 2,
+     "key_union": 4,
      "parts": 0,
      "records": 3,
      "summed": 6,
@@ -6312,7 +6281,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -6338,7 +6307,7 @@
    "verdict": "no size on page"
   },
   "US-7887": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Grand Canyon-Parashant National Monument",
    "official": null,
@@ -6389,6 +6358,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
+   "last_read_failed": "2026-11-22",
    "n": "Muggins Mountain Wilderness Area",
    "official": {
     "acres": 7711.0,
@@ -6404,7 +6374,7 @@
     "acres": 0,
     "manager": "",
     "pieces": [],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "",
     "unknown_pieces": 1
    },
@@ -6443,6 +6413,7 @@
   "US-8298": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Mittry Lake Wildlife Area",
    "official": {
     "acres": 600.0,
@@ -6506,6 +6477,7 @@
   "US-8312": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Gila Box Riparian National Conservation Area",
    "official": {
     "acres": 23000.0,
@@ -6518,7 +6490,7 @@
     "why": "total-looking"
    },
    "ours": {
-    "acres": 22522,
+    "acres": 23384,
     "manager": "",
     "pieces": [],
     "pin": "inside",
@@ -6576,7 +6548,7 @@
    "verdict": "agree"
   },
   "US-9757": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Butterfield Overland National Historic Trail",
    "note": "whole park compared (POTA lists it in 0 states: {})",
@@ -6589,13 +6561,13 @@
     "pin": "inside",
     "src": "",
     "states": [
-     "US-MO",
-     "US-AR",
-     "US-NM",
-     "US-TX",
-     "US-AZ",
      "US-OK",
-     "US-CA"
+     "US-TX",
+     "US-AR",
+     "US-MO",
+     "US-NM",
+     "US-CA",
+     "US-AZ"
     ],
     "unknown_pieces": 1,
     "whole_park": true
@@ -6642,5 +6614,5 @@
    "verdict": "ours unknown"
   }
  },
- "read": "2026-11-09"
+ "read": "2026-11-22"
 }

@@ -1,7 +1,7 @@
 {
- "made": "2026-11-24 21:13 UTC",
+ "made": "2026-11-25 02:23 UTC",
  "snap": {
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "outlines": {
    "US": {
     "official": 11297,
@@ -144,12 +144,12 @@
   }
  },
  "first": {
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "outlines": {
    "US": {
-    "official": 11277,
-    "pin": 1426,
-    "approximate": 415
+    "official": 11291,
+    "pin": 1424,
+    "approximate": 403
    },
    "Canada": {
     "official": 4348,
@@ -157,9 +157,9 @@
     "approximate": 39
    },
    "World": {
-    "official": 28666,
+    "approx": 14513,
     "pin": 17333,
-    "approx": 14513
+    "official": 28666
    }
   },
   "questions": {
@@ -328,10 +328,10 @@
   },
   "GPS packs": {
    "areas": "",
-   "last_run": "2026-11-17",
-   "made": "51 state packs built 2026-11-17 (4 MB, branch gps-packs)",
+   "last_run": "2026-11-24",
+   "made": "51 state packs built 2026-11-24 (4 MB, branch gps-packs)",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/44171642997",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45488967412",
    "waiting_on": "chat 3 links them on the site after Brandon GO"
   },
   "Hard look reader": {
@@ -1519,11 +1519,11 @@
    "waiting_on": "chat 8 grades the sample; Brandon GO before any card"
   },
   "closures super-bot": {
-   "areas": "0 done, 0 left",
+   "areas": "1 done, 0 left",
    "last_run": "2026-11-24",
-   "made": "0 areas read, 0 saved; see data/closures/review.md",
+   "made": "1 areas read, 1 saved; see data/closures/review.md",
    "result": "green",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45416858352",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45508204917",
    "waiting_on": "chat 11 grades the Kentucky side-by-side; Brandon GO before any merge (CL-5)"
   },
   "hours fees permits bot": {
@@ -1536,10 +1536,10 @@
   },
   "key-doctor": {
    "areas": "",
-   "last_run": "2026-11-24",
-   "made": "NOs: 434 of 723 NOs landed; 289 missing (re-applied to overrides.fixed.json); 1211 came back in the key release: 12767 parks pass, 351 held, 50 files; per-park release ON stuck: 0 area(s) stuck; see stuck-2026-11-24.md ",
+   "last_run": "2026-11-25",
+   "made": "NOs: 434 of 723 NOs landed; 289 missing (re-applied to overrides.fixed.json); 1211 came back in the key release: 0 parks pass, 0 held, 0 files; per-park release ON stuck: 0 area(s) stuck; see stuck-2026-11-25.md ",
    "result": "amber",
-   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45393499440",
+   "run": "https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45532281492",
    "waiting_on": "chat 10 (came-back NOs / stuck areas); per-park release in release-approved"
   },
   "layer intake": {
@@ -1591,8 +1591,8 @@
    "waiting_on": "nothing (facts only)"
   },
   "waiting room": {
-   "last_run": "2026-11-24",
-   "made": "105 files waiting over 3 days in data/waiting/in/ (e.g. refs.json)",
+   "last_run": "2026-11-25",
+   "made": "4 files waiting over 3 days in data/waiting/in/ (e.g. state-report.json)",
    "result": "red",
    "waiting_on": "chat 11 (look at the waiting room run)"
   },

@@ -8,7 +8,7 @@
   "no_size": 41,
   "not_read": 0,
   "off": 33,
-  "ours_unknown": 4,
+  "ours_unknown": 5,
   "parks": 229,
   "retired": 0,
   "unsure": 32,
@@ -220,9 +220,8 @@
    "verdict": "unsure"
   },
   "US-0734": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-15",
    "n": "George Rogers Clark National Historical Park",
    "official": null,
    "ours": {
@@ -289,16 +288,15 @@
   },
   "US-0765": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-01",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-15",
    "n": "Indiana Dunes National Park",
    "official": {
     "acres": 16000.0,
     "as": "16,000 acres",
     "clean": false,
     "line": "etlands. Known for its striking plant and bird diversity, it's easy to find inspiration throughout the park’s 16,000 acres. Plan your visit About the park Central Avenue Beach at low water levels, spring 2006. NPS Photo Sunset at In",
-    "read": "2026-11-01",
+    "read": "2026-11-22",
     "sent": "Known for its striking plant and bird diversity, it's easy to find inspiration throughout the park’s 16,000 acres.",
     "url": "https://www.nps.gov/indu/index.htm",
     "why": "total-looking"
@@ -431,9 +429,8 @@
   },
   "US-0782": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-01",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-15",
    "n": "Lincoln Boyhood Home National Memorial",
    "official": null,
    "ours": {
@@ -486,10 +483,10 @@
     }
    ],
    "pct": null,
-   "score": 4,
+   "score": 5,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 0
    },
@@ -4189,7 +4186,7 @@
   "US-11818": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Martindale State Fishing Lake",
    "official": null,
    "ours": {
@@ -4332,7 +4329,7 @@
   "US-11996": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Adams Mill State Fishing Lake",
    "official": null,
    "ours": {
@@ -4472,7 +4469,7 @@
   "US-11998": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Lake Wawasee State Fishing Lake",
    "official": null,
    "ours": {
@@ -4698,7 +4695,7 @@
   "US-12001": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Trail Creek State Fishing Lake",
    "official": null,
    "ours": {
@@ -4764,7 +4761,7 @@
   "US-12002": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Williams Dam State Fishing Lake",
    "official": null,
    "ours": {
@@ -6776,7 +6773,7 @@
   "US-13082": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Jug Rock State Nature Preserve",
    "official": null,
    "ours": {
@@ -6939,7 +6936,7 @@
   "US-13102": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Deniston State Natural Area",
    "official": null,
    "ours": {
@@ -6990,7 +6987,7 @@
   "US-13103": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Hindostan Falls State Fishing Lake",
    "official": null,
    "ours": {
@@ -7033,7 +7030,7 @@
   "US-13104": {
    "checked": "2026-10-28",
    "handover": [],
-   "last_read_failed": "2026-11-15",
+   "last_read_failed": "2026-11-22",
    "n": "Three Rivers State Fishing Lake",
    "official": null,
    "ours": {
@@ -16976,11 +16973,11 @@
    "verdict": "unsure"
   },
   "US-4572": {
-   "checked": "2026-11-01",
+   "checked": "2026-11-22",
    "handover": [],
-   "last_read_failed": "2026-11-15",
    "n": "Lewis and Clark National Historic Trail",
    "note": "whole park compared (POTA lists it in 0 states: {})",
+   "official": null,
    "ours": {
     "acres": 0,
     "acres_by_state": {},
@@ -16989,29 +16986,71 @@
     "pin": "inside",
     "src": "",
     "states": [
-     "US-ND",
-     "US-IN",
-     "US-OR",
-     "US-NE",
-     "US-PA",
+     "US-KS",
      "US-IA",
-     "US-WA",
+     "US-IL",
+     "US-ND",
+     "US-MT",
+     "US-ID",
+     "US-OR",
      "US-MO",
+     "US-WV",
+     "US-IN",
+     "US-NE",
      "US-SD",
      "US-OH",
-     "US-KS",
-     "US-IL",
-     "US-ID",
-     "US-MT",
-     "US-WV"
+     "US-PA",
+     "US-WA"
     ],
     "unknown_pieces": 1,
     "whole_park": true
    },
-   "score": null,
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/lecl/index.htm",
+     "why": "the park's page (Kentucky answer key)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/lecl/learn/index.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/lecl/learn/historyculture/places.htm",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.nps.gov/lecl/learn/management/lawsandpolicies.htm",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.nps.gov/lecl/learn/management/statistics.htm",
+     "why": "NPS park statistics page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/lecl/learn/news/newsreleases.htm",
+     "why": "NPS news releases"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 1,
+    "source": 0
+   },
+   "sizes": [],
    "t": "National Historic Trail",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "ours unknown"
   },
   "US-4667": {
    "checked": "2026-11-15",
@@ -18529,5 +18568,5 @@
    "verdict": "ours unknown"
   }
  },
- "read": "2026-11-15"
+ "read": "2026-11-22"
 }

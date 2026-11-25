@@ -2,12 +2,12 @@
  "about": "Park truth checker: official acreage vs our outline, handover hints, second-witness score. Review lists only: nothing here changes a key or a card.",
  "area": "US-WV",
  "counts": {
-  "agree": 20,
+  "agree": 24,
   "handover_hints": 1,
   "no_page": 0,
   "no_size": 28,
   "not_read": 0,
-  "off": 11,
+  "off": 7,
   "ours_unknown": 5,
   "parks": 172,
   "retired": 0,
@@ -17,10 +17,10 @@
  },
  "parks": {
   "US-0015": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Chesapeake and Ohio Canal National Historical Park",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-WV': 118, 'US-MD': 13211})",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-MD': 13211, 'US-WV': 118})",
    "official": null,
    "ours": {
     "acres": 13329,
@@ -40,9 +40,9 @@
     "pin": "well outside",
     "src": "USGS PAD-US",
     "states": [
+     "US-MD",
      "US-WV",
-     "US-DC",
-     "US-MD"
+     "US-DC"
     ],
     "unknown_pieces": 0,
     "whole_park": true
@@ -95,7 +95,7 @@
    "verdict": "no size on page"
   },
   "US-0607": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Canaan Valley National Wildlife Refuge",
    "official": {
@@ -103,7 +103,7 @@
     "as": "18,986 acres",
     "clean": false,
     "line": "ey National Wildlife Refuge, established in 1994, is the nation&#x27;s 500th refuge and currently encompasses 18,986 acres. Its unique high-elevation climate supports a diverse array of species more typical of northern latitudes, in",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Canaan Valley National Wildlife Refuge, established in 1994, is the nation&#x27;s 500th refuge and currently encompasses 18,986 acres.",
     "url": "https://www.fws.gov/refuge/canaan_valley/",
     "why": "history"
@@ -128,7 +128,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -158,10 +158,10 @@
    ],
    "pct": 11,
    "same_agency": false,
-   "score": 7,
+   "score": 8,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 2,
     "source": 2
    },
@@ -181,31 +181,31 @@
    "verdict": "agree"
   },
   "US-0608": {
-   "cause": "whole park compared (POTA lists it in 1 states: {'US-WV': 1807})",
-   "checked": "2026-11-08",
+   "cause": "whole park compared (POTA lists it in 1 states: {'US-WV': 2372})",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Ohio River Islands National Wildlife Refuge",
-   "note": "whole park compared (POTA lists it in 1 states: {'US-WV': 1807})",
+   "note": "whole park compared (POTA lists it in 1 states: {'US-WV': 2372})",
    "official": {
     "acres": 3440.0,
     "as": "3,440 acres",
     "clean": true,
     "line": "est Virginia. The Refuge currently consists of all or part of 22 islands and four mainland units encompassing 3,440 acres of valuable fish and wildlife habitat within one of the nation's busiest waterways. As acquisition progresses",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "The Refuge currently consists of all or part of 22 islands and four mainland units encompassing 3,440 acres of valuable fish and wildlife habitat within one of the nation's busiest waterways.",
     "url": "https://www.fws.gov/refuge/ohio-river-islands/about-us",
     "why": "clean total"
    },
    "ours": {
-    "acres": 1807,
+    "acres": 2372,
     "acres_by_state": {
-     "US-WV": 1807
+     "US-WV": 2372
     },
     "dissolved": {
      "after": 2734,
      "before": 5468,
      "copies": 1,
-     "key_union": 1807,
+     "key_union": 2372,
      "parts": 0,
      "records": 2,
      "summed": 2734,
@@ -255,7 +255,7 @@
      "why": "FWS refuge about page"
     }
    ],
-   "pct": 47,
+   "pct": 31,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -307,7 +307,7 @@
    "verdict": "unsure"
   },
   "US-0629": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Tomlinson Run State Park",
    "official": {
@@ -315,21 +315,19 @@
     "as": "1,398 acres",
     "clean": false,
     "line": "inson Run State Park sits along the Ohio River at the top of West Virginia's Northern Panhandle. The park has 1,398 acres and is divided into two sections: a wilderness area and a developed area with traditional park offerings. Boo",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "The park has 1,398 acres and is divided into two sections: a wilderness area and a developed area with traditional park offerings.",
     "url": "https://wvstateparks.com/park/tomlinson-run-state-park/",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 1432,
+    "acres": 1361,
     "dissolved": {
      "after": 1361,
      "before": 2721,
      "copies": 1,
-     "key_union": 1432,
      "parts": 0,
      "records": 2,
-     "summed": 1361,
      "tracts": 1
     },
     "manager": "",
@@ -359,7 +357,7 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 2,
+   "pct": 3,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -384,8 +382,7 @@
    "verdict": "agree"
   },
   "US-0631": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Cathedral State Park",
    "official": {
@@ -393,21 +390,19 @@
     "as": "133 acre",
     "clean": false,
     "line": "ns one of the largest stands of virgin hemlock in West Virginia. Designated a National Natural Landmark, this 133-acre park offers sanctuary for these ancient trees, as well as 170 species of trees, ferns and wildflowers. Book N",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Designated a National Natural Landmark, this 133-acre park offers sanctuary for these ancient trees, as well as 170 species of trees, ferns and wildflowers.",
     "url": "https://wvstateparks.com/park/cathedral-state-park/",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 91,
+    "acres": 127,
     "dissolved": {
      "after": 127,
      "before": 254,
      "copies": 1,
-     "key_union": 91,
      "parts": 0,
      "records": 2,
-     "summed": 127,
      "tracts": 1
     },
     "manager": "",
@@ -437,13 +432,13 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 32,
+   "pct": 5,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -459,10 +454,10 @@
    ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-0632": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Monongahela National Forest",
    "official": {
@@ -470,9 +465,9 @@
     "as": "900,000 acres",
     "clean": false,
     "line": "ds and trails on the Monongahela National Forest except in designated… Fishing Fishing OverviewWith more than 900,000 acres of National Forest System lands that range in elevation between 1,425 feet and 4,863 feet above… View All Opp",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Fishing OverviewWith more than 900,000 acres of National Forest System lands that range in elevation between 1,425 feet and 4,863 feet above…",
-    "url": "https://www.fs.usda.gov/mnf",
+    "url": "https://www.fs.usda.gov/r09/monongahela",
     "why": "part (a lake, a purchase, a campground…)"
    },
    "ours": {
@@ -493,7 +488,7 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok",
+     "status": "host-rule",
      "url": "https://www.fs.usda.gov/mnf",
      "why": "the park's page (data/parkinfo)"
     },
@@ -520,24 +515,6 @@
      "clean": false,
      "line": "T T Welcome to Monongahela National Forest Established in 1920, the Monongahela National Forest spans nearly 1 million acres across 10 counties in eastern West Virginia. Locally known as \"the Mon,\" this landscape provides clean water,",
      "total_like": false,
-     "url": "https://www.fs.usda.gov/mnf",
-     "why": "history"
-    },
-    {
-     "acres": 900000.0,
-     "as": "900,000 acres",
-     "clean": false,
-     "line": "ds and trails on the Monongahela National Forest except in designated… Fishing Fishing OverviewWith more than 900,000 acres of National Forest System lands that range in elevation between 1,425 feet and 4,863 feet above… View All Opp",
-     "total_like": false,
-     "url": "https://www.fs.usda.gov/mnf",
-     "why": "part (a lake, a purchase, a campground…)"
-    },
-    {
-     "acres": 1000000.0,
-     "as": "1 million acres",
-     "clean": false,
-     "line": "T T Welcome to Monongahela National Forest Established in 1920, the Monongahela National Forest spans nearly 1 million acres across 10 counties in eastern West Virginia. Locally known as \"the Mon,\" this landscape provides clean water,",
-     "total_like": false,
      "url": "https://www.fs.usda.gov/r09/monongahela",
      "why": "history"
     },
@@ -556,7 +533,7 @@
    "verdict": "agree"
   },
   "US-0695": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Gauley River National Recreation Area",
    "official": null,
@@ -619,7 +596,7 @@
   },
   "US-0696": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "New River Gorge National Park",
    "official": {
@@ -627,7 +604,7 @@
     "as": "70,000 acres",
     "clean": true,
     "line": "rd through deep canyons, the New River is among the oldest rivers on the continent. The park encompasses over 70,000 acres of land along the New River, is rich in cultural and natural history, and offers an abundance of scenic and r",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "The park encompasses over 70,000 acres of land along the New River, is rich in cultural and natural history, and offers an abundance of scenic and recreational opportunities.",
     "url": "https://www.nps.gov/neri/index.htm",
     "why": "clean total"
@@ -643,7 +620,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -673,10 +650,10 @@
    ],
    "pct": 24,
    "same_agency": false,
-   "score": 4,
+   "score": 5,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 0,
     "source": 1
    },
@@ -696,7 +673,7 @@
    "verdict": "off"
   },
   "US-0697": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bluestone National Wild and Scenic River",
    "official": null,
@@ -763,16 +740,16 @@
    "verdict": "no size on page"
   },
   "US-0735": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Harpers Ferry National Historical Park",
-   "note": "whole park compared (POTA lists it in 3 states: {'US-VA': 735, 'US-WV': 2184, 'US-MD': 798})",
+   "note": "whole park compared (POTA lists it in 3 states: {'US-VA': 488, 'US-MD': 798, 'US-WV': 2184})",
    "official": null,
    "ours": {
-    "acres": 3717,
+    "acres": 3470,
     "acres_by_state": {
      "US-MD": 798,
-     "US-VA": 735,
+     "US-VA": 488,
      "US-WV": 2184
     },
     "manager": "",
@@ -788,8 +765,8 @@
     "src": "USGS PAD-US",
     "states": [
      "US-VA",
-     "US-WV",
-     "US-MD"
+     "US-MD",
+     "US-WV"
     ],
     "unknown_pieces": 0,
     "whole_park": true
@@ -842,7 +819,7 @@
    "verdict": "no size on page"
   },
   "US-10031": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Elk River Trail State Trail",
    "official": null,
@@ -876,8 +853,8 @@
    "verdict": "ours unknown"
   },
   "US-12031": {
-   "cause": "a number 16 parks share from one page (217 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 16 parks share from the same sentence (217 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Big South Wildlife Management Area",
    "official": null,
@@ -962,8 +939,8 @@
    "verdict": "unsure"
   },
   "US-12032": {
-   "cause": "a number 16 parks share from one page (217 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 16 parks share from the same sentence (217 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Burning Springs Wildlife Management Area",
    "official": null,
@@ -1067,21 +1044,19 @@
    "verdict": "unsure"
   },
   "US-12033": {
-   "cause": "a number 16 parks share from one page (217 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 16 parks share from the same sentence (217 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Cheat Canyon Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 3538,
+    "acres": 3806,
     "dissolved": {
      "after": 3806,
      "before": 7610,
      "copies": 0,
-     "key_union": 3538,
      "parts": 2,
      "records": 3,
-     "summed": 3806,
      "tracts": 1
     },
     "manager": "",
@@ -1094,7 +1069,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -1124,10 +1099,10 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -1174,21 +1149,19 @@
    "verdict": "unsure"
   },
   "US-12034": {
-   "cause": "a number 16 parks share from one page (217 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 16 parks share from the same sentence (217 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Daniels Ridge Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 3672,
+    "acres": 3379,
     "dissolved": {
      "after": 3379,
      "before": 6755,
      "copies": 1,
-     "key_union": 3672,
      "parts": 0,
      "records": 2,
-     "summed": 3379,
      "tracts": 1
     },
     "manager": "",
@@ -1272,20 +1245,18 @@
   },
   "US-12035": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Dents Run Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 1418,
+    "acres": 1261,
     "dissolved": {
      "after": 1261,
      "before": 2521,
      "copies": 1,
-     "key_union": 1418,
      "parts": 0,
      "records": 2,
-     "summed": 1261,
      "tracts": 1
     },
     "manager": "",
@@ -1377,8 +1348,8 @@
    "verdict": "unsure"
   },
   "US-12036": {
-   "cause": "a number 16 parks share from one page (217 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 16 parks share from the same sentence (217 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Fairfax Pond-Rehe Wildlife Management Area",
    "official": null,
@@ -1402,7 +1373,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -1432,10 +1403,10 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -1482,21 +1453,19 @@
    "verdict": "unsure"
   },
   "US-12037": {
-   "cause": "a number 16 parks share from one page (217 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 16 parks share from the same sentence (217 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Federal Ridge Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 946,
+    "acres": 1146,
     "dissolved": {
      "after": 1146,
      "before": 2270,
      "copies": 1,
-     "key_union": 946,
      "parts": 0,
      "records": 2,
-     "summed": 1146,
      "tracts": 1
     },
     "manager": "",
@@ -1509,7 +1478,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -1539,10 +1508,10 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -1589,21 +1558,19 @@
    "verdict": "unsure"
   },
   "US-12038": {
-   "cause": "a number 16 parks share from one page (217 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 16 parks share from the same sentence (217 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Fox Forest Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 104,
+    "acres": 123,
     "dissolved": {
      "after": 123,
      "before": 246,
      "copies": 1,
-     "key_union": 104,
      "parts": 0,
      "records": 2,
-     "summed": 123,
      "tracts": 1
     },
     "manager": "",
@@ -1696,21 +1663,19 @@
    "verdict": "unsure"
   },
   "US-12039": {
-   "cause": "a number 16 parks share from one page (217 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 16 parks share from the same sentence (217 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Little Canaan Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 2671,
+    "acres": 3072,
     "dissolved": {
      "after": 3072,
      "before": 6143,
      "copies": 1,
-     "key_union": 2671,
      "parts": 0,
      "records": 2,
-     "summed": 3072,
      "tracts": 1
     },
     "manager": "",
@@ -1803,21 +1768,19 @@
    "verdict": "unsure"
   },
   "US-12040": {
-   "cause": "a number 16 parks share from one page (217 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 16 parks share from the same sentence (217 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Little Kanawha River Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 9358,
+    "acres": 8359,
     "dissolved": {
      "after": 8359,
      "before": 16625,
      "copies": 1,
-     "key_union": 9358,
      "parts": 0,
      "records": 2,
-     "summed": 8359,
      "tracts": 1
     },
     "manager": "",
@@ -1910,18 +1873,18 @@
    "verdict": "unsure"
   },
   "US-12041": {
-   "cause": "a number 16 parks share from one page (217 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 16 parks share from the same sentence (217 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lost River Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 51,
+    "acres": 53,
     "dissolved": {
      "after": 56,
      "before": 112,
      "copies": 1,
-     "key_union": 51,
+     "key_union": 53,
      "parts": 0,
      "records": 2,
      "summed": 56,
@@ -2007,13 +1970,13 @@
    "verdict": "unsure"
   },
   "US-12042": {
-   "cause": "a number 16 parks share from one page (217 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 16 parks share from the same sentence (217 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lynn Camp Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 2329,
+    "acres": 2067,
     "family_fold": "layers {'sgwva': 2067, 'padus': 2008}: one land in 2 layers, the sgwva copy used (2,008 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -2104,13 +2067,13 @@
    "verdict": "unsure"
   },
   "US-12043": {
-   "cause": "a number 16 parks share from one page (217 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 16 parks share from the same sentence (217 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "McCausland Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 804,
+    "acres": 610,
     "family_fold": "layers {'padus': 610, 'sgwva': 593}: one land in 2 layers, the padus copy used (593 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -2196,21 +2159,19 @@
    "verdict": "unsure"
   },
   "US-12044": {
-   "cause": "a number 16 parks share from one page (217 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 16 parks share from the same sentence (217 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Panther Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 10785,
+    "acres": 11527,
     "dissolved": {
      "after": 11527,
      "before": 23046,
      "copies": 1,
-     "key_union": 10785,
      "parts": 0,
      "records": 2,
-     "summed": 11527,
      "tracts": 1
     },
     "manager": "",
@@ -2304,12 +2265,12 @@
   },
   "US-12045": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Sandy Creek Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 2775,
+    "acres": 2420,
     "family_fold": "layers {'padus': 2420, 'sgwva': 2264}: one land in 2 layers, the padus copy used (2,264 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -2399,21 +2360,19 @@
    "verdict": "unsure"
   },
   "US-12046": {
-   "cause": "a number 16 parks share from one page (217 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 16 parks share from the same sentence (217 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Sideling Hill Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 2633,
+    "acres": 2418,
     "dissolved": {
      "after": 2418,
      "before": 4833,
      "copies": 1,
-     "key_union": 2633,
      "parts": 0,
      "records": 2,
-     "summed": 2418,
      "tracts": 1
     },
     "manager": "",
@@ -2507,20 +2466,18 @@
   },
   "US-12047": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Spring Run Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 92,
+    "acres": 145,
     "dissolved": {
      "after": 145,
      "before": 290,
      "copies": 1,
-     "key_union": 92,
      "parts": 0,
      "records": 2,
-     "summed": 145,
      "tracts": 1
     },
     "manager": "",
@@ -2602,21 +2559,19 @@
    "verdict": "unsure"
   },
   "US-12048": {
-   "cause": "a number 16 parks share from one page (217 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 16 parks share from the same sentence (217 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Toll Gate Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 797,
+    "acres": 944,
     "dissolved": {
      "after": 944,
      "before": 1882,
      "copies": 1,
-     "key_union": 797,
      "parts": 0,
      "records": 2,
-     "summed": 944,
      "tracts": 1
     },
     "manager": "",
@@ -2629,7 +2584,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -2659,10 +2614,10 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -2710,12 +2665,12 @@
   },
   "US-12049": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Walker Creek Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 3729,
+    "acres": 3221,
     "family_fold": "layers {'padus': 3221, 'sgwva': 3137}: one land in 2 layers, the padus copy used (3,137 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -2726,7 +2681,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -2755,10 +2710,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -2806,20 +2761,18 @@
   },
   "US-12050": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "White Horse Mountain Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 1099,
+    "acres": 1765,
     "dissolved": {
      "after": 1765,
      "before": 3530,
      "copies": 1,
-     "key_union": 1099,
      "parts": 0,
      "records": 2,
-     "summed": 1765,
      "tracts": 1
     },
     "manager": "",
@@ -2832,7 +2785,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -2861,10 +2814,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -2911,12 +2864,12 @@
    "verdict": "unsure"
   },
   "US-12051": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "White Sulphur Springs National Fish Hatchery",
    "official": null,
    "ours": {
-    "acres": 47,
+    "acres": 69,
     "manager": "",
     "pieces": [
      [
@@ -2964,7 +2917,7 @@
    "verdict": "no size on page"
   },
   "US-12052": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bowden State Fish Hatchery",
    "ours": null,
@@ -2974,7 +2927,7 @@
    "verdict": "no outline"
   },
   "US-12053": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Edray State Fish Hatchery",
    "ours": null,
@@ -2984,7 +2937,7 @@
    "verdict": "no outline"
   },
   "US-12054": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Ridge State Fish Hatchery",
    "ours": null,
@@ -2994,7 +2947,7 @@
    "verdict": "no outline"
   },
   "US-12055": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Petersburg State Fish Hatchery",
    "ours": null,
@@ -3004,7 +2957,7 @@
    "verdict": "no outline"
   },
   "US-12056": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Apple Grove State Fish Hatchery",
    "ours": null,
@@ -3014,7 +2967,7 @@
    "verdict": "no outline"
   },
   "US-12436": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Big Draft Wilderness Area",
    "official": {
@@ -3022,7 +2975,7 @@
     "as": "5,144 acre",
     "clean": false,
     "line": "door Ethics Visitor Maps and Guides Recreation Region: White Sulphur Ranger District Big Draft Wilderness The 5,144 acre Big Draft Wilderness is located on the Southern tip of the Forest, just south of Blue Bend Recreation Area an",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "The 5,144 acre Big Draft Wilderness is located on the Southern tip of the Forest, just south of Blue Bend Recreation Area and about five miles north of White Sulphur Springs, West Virginia.",
     "url": "https://www.fs.usda.gov/r09/monongahela/recreation/big-draft-wilderness",
     "why": "total-looking"
@@ -3081,7 +3034,7 @@
    "verdict": "agree"
   },
   "US-12437": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Cranberry Wilderness Area",
    "official": {
@@ -3089,7 +3042,7 @@
     "as": "47,815 acres",
     "clean": true,
     "line": "Maps and Guides Recreation Region: Gauley Ranger District Cranberry Wilderness The Cranberry Wilderness spans 47,815 acres in Pocahontas and Webster Counties, West Virginia. It is the largest Forest Service Wilderness Area in the ea",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "The Cranberry Wilderness spans 47,815 acres in Pocahontas and Webster Counties, West Virginia.",
     "url": "https://www.fs.usda.gov/r09/monongahela/recreation/cranberry-wilderness",
     "why": "clean total"
@@ -3153,7 +3106,7 @@
    "verdict": "agree"
   },
   "US-12438": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Dolly Sods Wilderness Area",
    "official": {
@@ -3161,7 +3114,7 @@
     "as": "17,371 acre",
     "clean": false,
     "line": "d Outdoor Ethics Visitor Maps and Guides Recreation Region: Potomac Ranger District Dolly Sods Wilderness The 17,371 acre Dolly Sods Wilderness in the Monongahela National Forest is part of the National Wilderness Preservation Syst",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "The 17,371 acre Dolly Sods Wilderness in the Monongahela National Forest is part of the National Wilderness Preservation System.",
     "url": "https://www.fs.usda.gov/r09/monongahela/recreation/dolly-sods-wilderness",
     "why": "part (a lake, a purchase, a campground…)"
@@ -3258,7 +3211,7 @@
   },
   "US-12439": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "North Laurel Fork Wilderness Area",
    "official": {
@@ -3266,7 +3219,7 @@
     "as": "11,839 acre",
     "clean": false,
     "line": "Maple, Birch, and Cherry is occasionally broken up by beautiful meadows along the river. Within the combined 11,839 acre Wilderness Area the elevations range from 2,900 feet to over 3,700 feet. Laurel Fork Wilderness has 18.5 mile",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Within the combined 11,839 acre Wilderness Area the elevations range from 2,900 feet to over 3,700 feet.",
     "url": "https://www.fs.usda.gov/r09/monongahela/recreation/laurel-fork-wilderness",
     "why": "total-looking"
@@ -3331,7 +3284,7 @@
   },
   "US-12440": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "South Laurel Fork Wilderness Area",
    "official": {
@@ -3339,7 +3292,7 @@
     "as": "11,839 acre",
     "clean": false,
     "line": "Maple, Birch, and Cherry is occasionally broken up by beautiful meadows along the river. Within the combined 11,839 acre Wilderness Area the elevations range from 2,900 feet to over 3,700 feet. Laurel Fork Wilderness has 18.5 mile",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Within the combined 11,839 acre Wilderness Area the elevations range from 2,900 feet to over 3,700 feet.",
     "url": "https://www.fs.usda.gov/r09/monongahela/recreation/laurel-fork-wilderness",
     "why": "total-looking"
@@ -3403,7 +3356,7 @@
    "verdict": "off"
   },
   "US-12441": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Otter Creek Wilderness Area",
    "official": {
@@ -3411,7 +3364,7 @@
     "as": "20,698 acres",
     "clean": true,
     "line": "tor Maps and Guides Recreation Region: Cheat Ranger District Otter Creek Wilderness Otter Creek Wilderness is 20,698 acres in size. The Otter Creek Wilderness lies in a bowl formed by Shavers Mountain and McGowan Mountain. Most of t",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Otter Creek Wilderness is 20,698 acres in size.",
     "url": "https://www.fs.usda.gov/r09/monongahela/recreation/otter-creek-wilderness",
     "why": "clean total"
@@ -3475,7 +3428,7 @@
    "verdict": "agree"
   },
   "US-12442": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Roaring Plains West Wilderness Area",
    "official": {
@@ -3483,7 +3436,7 @@
     "as": "6,792 acre",
     "clean": false,
     "line": "and Outdoor Ethics Visitor Maps and Guides Recreation Region: Potomac Ranger District Roaring Plains West The 6,792 acre Roaring Plains West Wilderness area is located approximately 3 miles southwest of the Dolly Sods Wilderness .",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "The 6,792 acre Roaring Plains West Wilderness area is located approximately 3 miles southwest of the Dolly Sods Wilderness .",
     "url": "https://www.fs.usda.gov/r09/monongahela/recreation/roaring-plains-west",
     "why": "total-looking"
@@ -3547,7 +3500,7 @@
    "verdict": "agree"
   },
   "US-12443": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Spice Run Wilderness Area",
    "official": {
@@ -3555,7 +3508,7 @@
     "as": "6,030 acre",
     "clean": false,
     "line": "door Ethics Visitor Maps and Guides Recreation Region: White Sulphur Ranger District Spice Run Wilderness The 6,030 acre Spice Run Wilderness is located south of Calvin Price State Forest. The area is about 2 miles in length and 3",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "The 6,030 acre Spice Run Wilderness is located south of Calvin Price State Forest.",
     "url": "https://www.fs.usda.gov/r09/monongahela/recreation/spice-run-wilderness",
     "why": "total-looking"
@@ -3619,7 +3572,7 @@
    "verdict": "agree"
   },
   "US-1797": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Audra State Park",
    "official": null,
@@ -3674,7 +3627,7 @@
    "verdict": "no size on page"
   },
   "US-1798": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Babcock State Park",
    "official": {
@@ -3682,21 +3635,19 @@
     "as": "4,127 acres",
     "clean": false,
     "line": "» Babcock State Park Babcock State Park One of West Virginia’s most iconic locations, Babcock State Park has 4,127 acres of stunning scenery. Located 20 miles southeast of the New River Gorge Bridge, the park is known for the Glad",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "One of West Virginia’s most iconic locations, Babcock State Park has 4,127 acres of stunning scenery.",
     "url": "https://wvstateparks.com/park/babcock-state-park/",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 4407,
+    "acres": 4062,
     "dissolved": {
      "after": 4062,
      "before": 8120,
      "copies": 1,
-     "key_union": 4407,
      "parts": 0,
      "records": 2,
-     "summed": 4062,
      "tracts": 1
     },
     "manager": "",
@@ -3726,7 +3677,7 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 7,
+   "pct": 2,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -3769,8 +3720,7 @@
    "verdict": "agree"
   },
   "US-1799": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Beartown State Park",
    "official": {
@@ -3778,18 +3728,18 @@
     "as": "110 acre",
     "clean": true,
     "line": "que pathways and rocky views are in your future with a visit to Beartown State Park. Beartown State Park is a 110-acre natural area located on the eastern summit of Droop Mountain in northern Greenbrier County and a small portio",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Beartown State Park is a 110-acre natural area located on the eastern summit of Droop Mountain in northern Greenbrier County and a small portion of Pocahontas County.",
     "url": "https://wvstateparks.com/park/beartown-state-park/",
     "why": "clean total"
    },
    "ours": {
-    "acres": 92,
+    "acres": 117,
     "dissolved": {
      "after": 107,
      "before": 214,
      "copies": 1,
-     "key_union": 92,
+     "key_union": 117,
      "parts": 0,
      "records": 2,
      "summed": 107,
@@ -3822,13 +3772,13 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 16,
+   "pct": 6,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -3844,20 +3794,20 @@
    ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-1800": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Beech Fork State Park",
    "official": null,
    "ours": {
-    "acres": 12504,
+    "acres": 12419,
     "dissolved": {
      "after": 14307,
      "before": 16139,
      "copies": 1,
-     "key_union": 12504,
+     "key_union": 12419,
      "parts": 0,
      "records": 3,
      "summed": 14307,
@@ -3910,18 +3860,20 @@
    "verdict": "no size on page"
   },
   "US-1801": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Berkeley Springs State Park",
    "official": null,
    "ours": {
-    "acres": 5,
+    "acres": 3,
     "dissolved": {
      "after": 5,
      "before": 10,
      "copies": 1,
+     "key_union": 3,
      "parts": 0,
      "records": 2,
+     "summed": 5,
      "tracts": 1
     },
     "manager": "",
@@ -3934,7 +3886,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -3947,10 +3899,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -3960,20 +3912,18 @@
    "verdict": "no size on page"
   },
   "US-1802": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Blackwater Falls State Park",
    "official": null,
    "ours": {
-    "acres": 2114,
+    "acres": 2280,
     "dissolved": {
      "after": 2280,
      "before": 4559,
      "copies": 1,
-     "key_union": 2114,
      "parts": 0,
      "records": 2,
-     "summed": 2280,
      "tracts": 1
     },
     "manager": "",
@@ -4017,20 +3967,18 @@
    "verdict": "no size on page"
   },
   "US-1803": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Blennerhassett Island State Park",
    "official": null,
    "ours": {
-    "acres": 345,
+    "acres": 503,
     "dissolved": {
      "after": 503,
      "before": 1006,
      "copies": 1,
-     "key_union": 345,
      "parts": 0,
      "records": 2,
-     "summed": 503,
      "tracts": 1
     },
     "manager": "",
@@ -4043,7 +3991,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -4061,10 +4009,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -4075,17 +4023,17 @@
   },
   "US-1804": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bluestone State Park",
    "official": null,
    "ours": {
-    "acres": 1081,
+    "acres": 1375,
     "dissolved": {
      "after": 2005,
      "before": 3118,
      "copies": 1,
-     "key_union": 1081,
+     "key_union": 1375,
      "parts": 0,
      "records": 3,
      "summed": 2005,
@@ -4109,7 +4057,7 @@
     ],
     "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 0
+    "unknown_pieces": 4
    },
    "owner_now": null,
    "pages": [
@@ -4148,20 +4096,18 @@
    "verdict": "unsure"
   },
   "US-1805": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Cacapon Resort State Park",
    "official": null,
    "ours": {
-    "acres": 4891,
+    "acres": 6325,
     "dissolved": {
      "after": 6325,
      "before": 12622,
      "copies": 1,
-     "key_union": 4891,
      "parts": 0,
      "records": 2,
-     "summed": 6325,
      "tracts": 1
     },
     "manager": "",
@@ -4200,20 +4146,18 @@
    "verdict": "no size on page"
   },
   "US-1806": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Canaan Valley Resort State Park",
    "official": null,
    "ours": {
-    "acres": 5376,
+    "acres": 5807,
     "dissolved": {
      "after": 5807,
      "before": 11612,
      "copies": 1,
-     "key_union": 5376,
      "parts": 0,
      "records": 2,
-     "summed": 5807,
      "tracts": 1
     },
     "manager": "",
@@ -4258,7 +4202,7 @@
   },
   "US-1807": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Carnifex Ferry Battlefield State Park",
    "official": {
@@ -4266,21 +4210,19 @@
     "as": "156 acre",
     "clean": false,
     "line": "y Battlefield State Park Carnifex Ferry Battlefield State Park Set on the rim of the Gauley River Canyon, the 156-acre Carnifex Ferry Battlefield State Park is an important Civil War battle site. Book Now Learn More Set on the r",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Set on the rim of the Gauley River Canyon, the 156-acre Carnifex Ferry Battlefield State Park is an important Civil War battle site.",
     "url": "https://wvstateparks.com/park/carnifex-ferry-battlefield-state-park/",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 229,
+    "acres": 292,
     "dissolved": {
      "after": 292,
      "before": 584,
      "copies": 1,
-     "key_union": 229,
      "parts": 0,
      "records": 2,
-     "summed": 292,
      "tracts": 1
     },
     "manager": "",
@@ -4310,7 +4252,7 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 47,
+   "pct": 87,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -4344,17 +4286,17 @@
    "verdict": "off"
   },
   "US-1808": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Cass Scenic Railroad State Park",
    "official": null,
    "ours": {
-    "acres": 719,
+    "acres": 392,
     "dissolved": {
      "after": 575,
      "before": 957,
      "copies": 1,
-     "key_union": 719,
+     "key_union": 392,
      "parts": 0,
      "records": 3,
      "summed": 575,
@@ -4376,7 +4318,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -4394,10 +4336,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -4407,20 +4349,18 @@
    "verdict": "no size on page"
   },
   "US-1809": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Cedar Creek State Park",
    "official": null,
    "ours": {
-    "acres": 1428,
+    "acres": 2507,
     "dissolved": {
      "after": 2507,
      "before": 5012,
      "copies": 1,
-     "key_union": 1428,
      "parts": 0,
      "records": 2,
-     "summed": 2507,
      "tracts": 1
     },
     "manager": "",
@@ -4464,7 +4404,7 @@
    "verdict": "no size on page"
   },
   "US-1810": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Chief Logan State Park",
    "official": null,
@@ -4519,20 +4459,18 @@
    "verdict": "no size on page"
   },
   "US-1811": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Droop Mountain Battlefield State Park",
    "official": null,
    "ours": {
-    "acres": 214,
+    "acres": 293,
     "dissolved": {
      "after": 293,
      "before": 585,
      "copies": 1,
-     "key_union": 214,
      "parts": 0,
      "records": 2,
-     "summed": 293,
      "tracts": 1
     },
     "manager": "",
@@ -4545,7 +4483,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -4563,10 +4501,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -4576,17 +4514,17 @@
    "verdict": "no size on page"
   },
   "US-1812": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Fairfax Stone State Park",
    "official": null,
    "ours": {
-    "acres": 5,
+    "acres": 4,
     "dissolved": {
      "after": 9,
      "before": 13,
      "copies": 1,
-     "key_union": 5,
+     "key_union": 4,
      "parts": 0,
      "records": 4,
      "summed": 9,
@@ -4641,7 +4579,7 @@
   },
   "US-1813": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Hawks Nest State Park",
    "official": {
@@ -4649,21 +4587,19 @@
     "as": "270 acre",
     "clean": true,
     "line": "ate Park Hawks Nest State Park Nestled in the heart of whitewater rafting country, Hawks Nest State Park is a 270-acre recreational area with a nature museum, jetboat rides, hiking trails and one of the most challenging whitewat",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Nestled in the heart of whitewater rafting country, Hawks Nest State Park is a 270-acre recreational area with a nature museum, jetboat rides, hiking trails and one of the most challenging whitewater boating waterways in the nation.",
     "url": "https://wvstateparks.com/park/hawks-nest-state-park/",
     "why": "clean total"
    },
    "ours": {
-    "acres": 114,
+    "acres": 207,
     "dissolved": {
      "after": 207,
      "before": 414,
      "copies": 1,
-     "key_union": 114,
      "parts": 0,
      "records": 2,
-     "summed": 207,
      "tracts": 1
     },
     "manager": "",
@@ -4693,7 +4629,7 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 58,
+   "pct": 23,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -4727,7 +4663,7 @@
    "verdict": "off"
   },
   "US-1814": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Holly River State Park",
    "official": {
@@ -4735,21 +4671,19 @@
     "as": "8,101 acres",
     "clean": false,
     "line": "Gift Cards 1-833-WV-PARKS Book Now Home » Explore Parks » Holly River State Park Holly River State Park With 8,101 acres, Holly River is West Virginia's second largest state park and is known for its wide range of flora, including",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "With 8,101 acres, Holly River is West Virginia's second largest state park and is known for its wide range of flora, including wildflowers and ferns.",
     "url": "https://wvstateparks.com/park/holly-river-state-park/",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 8591,
+    "acres": 8128,
     "dissolved": {
      "after": 8128,
      "before": 16250,
      "copies": 1,
-     "key_union": 8591,
      "parts": 0,
      "records": 2,
-     "summed": 8128,
      "tracts": 1
     },
     "manager": "",
@@ -4779,7 +4713,7 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 6,
+   "pct": 0,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -4813,7 +4747,7 @@
    "verdict": "agree"
   },
   "US-1815": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Little Beaver State Park",
    "official": {
@@ -4821,21 +4755,19 @@
     "as": "562 acres",
     "clean": false,
     "line": "t Cards 1-833-WV-PARKS Book Now Home » Explore Parks » Little Beaver State Park Little Beaver State Park With 562 acres, Little Beaver State Park offers family fun, beautiful scenery and incredible outdoor recreation. The park fe",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "With 562 acres, Little Beaver State Park offers family fun, beautiful scenery and incredible outdoor recreation.",
     "url": "https://wvstateparks.com/park/little-beaver-state-park/",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 494,
+    "acres": 552,
     "dissolved": {
      "after": 552,
      "before": 1103,
      "copies": 1,
-     "key_union": 494,
      "parts": 0,
      "records": 2,
-     "summed": 552,
      "tracts": 1
     },
     "manager": "",
@@ -4865,7 +4797,7 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 12,
+   "pct": 2,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -4908,7 +4840,7 @@
    "verdict": "agree"
   },
   "US-1816": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lost River State Park",
    "official": {
@@ -4916,21 +4848,19 @@
     "as": "3,934 acres",
     "clean": false,
     "line": "handle, Lost River State Park provides cabin lodging and an abundance of outdoor recreation. The park’s quiet 3,934 acres of woods provide a secluded getaway for nature lovers. Book Now Learn More Located in the wooded mountains of",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "The park’s quiet 3,934 acres of woods provide a secluded getaway for nature lovers.",
     "url": "https://wvstateparks.com/park/lost-river-state-park/",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 3825,
+    "acres": 4094,
     "dissolved": {
      "after": 4094,
      "before": 8188,
      "copies": 1,
-     "key_union": 3825,
      "parts": 0,
      "records": 2,
-     "summed": 4094,
      "tracts": 1
     },
     "manager": "",
@@ -4960,7 +4890,7 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 3,
+   "pct": 4,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -4986,7 +4916,7 @@
   },
   "US-1817": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Moncove Lake State Park",
    "official": {
@@ -4994,18 +4924,18 @@
     "as": "250 acre",
     "clean": false,
     "line": "w Home » Explore Parks » Moncove Lake State Park Moncove Lake State Park Hidden among the hills is a peaceful 250-acre park with a 500-acre wildlife management area. Moncove Lake State Park resides on the southeastern edge of We",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Hidden among the hills is a peaceful 250-acre park with a 500-acre wildlife management area.",
     "url": "https://wvstateparks.com/park/moncove-lake-state-park/",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 114,
+    "acres": 135,
     "dissolved": {
      "after": 171,
      "before": 295,
      "copies": 1,
-     "key_union": 114,
+     "key_union": 135,
      "parts": 0,
      "records": 3,
      "summed": 171,
@@ -5044,7 +4974,7 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 54,
+   "pct": 46,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -5096,20 +5026,18 @@
    "verdict": "off"
   },
   "US-1818": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "North Bend State Park",
    "official": null,
    "ours": {
-    "acres": 3423,
+    "acres": 2765,
     "dissolved": {
      "after": 2765,
      "before": 5527,
      "copies": 1,
-     "key_union": 3423,
      "parts": 0,
      "records": 2,
-     "summed": 2765,
      "tracts": 1
     },
     "manager": "",
@@ -5153,20 +5081,18 @@
    "verdict": "no size on page"
   },
   "US-1819": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Pinnacle Rock State Park",
    "official": null,
    "ours": {
-    "acres": 350,
+    "acres": 393,
     "dissolved": {
      "after": 393,
      "before": 786,
      "copies": 1,
-     "key_union": 350,
      "parts": 0,
      "records": 2,
-     "summed": 393,
      "tracts": 1
     },
     "manager": "",
@@ -5210,20 +5136,18 @@
    "verdict": "no size on page"
   },
   "US-1820": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Pipestem Resort State Park",
    "official": null,
    "ours": {
-    "acres": 4624,
+    "acres": 4211,
     "dissolved": {
      "after": 4211,
      "before": 8418,
      "copies": 1,
-     "key_union": 4624,
      "parts": 0,
      "records": 2,
-     "summed": 4211,
      "tracts": 1
     },
     "manager": "",
@@ -5262,20 +5186,18 @@
    "verdict": "no size on page"
   },
   "US-1821": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Pricketts Fort State Park",
    "official": null,
    "ours": {
-    "acres": 170,
+    "acres": 214,
     "dissolved": {
      "after": 214,
      "before": 428,
      "copies": 1,
-     "key_union": 170,
      "parts": 0,
      "records": 2,
-     "summed": 214,
      "tracts": 1
     },
     "manager": "",
@@ -5288,7 +5210,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -5301,10 +5223,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -5314,8 +5236,7 @@
    "verdict": "no size on page"
   },
   "US-1822": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Stonewall Resort State Park",
    "official": {
@@ -5323,21 +5244,19 @@
     "as": "1,900 acres",
     "clean": false,
     "line": "arks » Stonewall Resort State Park Stonewall Resort State Park Just three miles off I-79 and extending across 1,900 acres, Stonewall Resort State Park offers a secluded retreat surrounded by rolling hills. Among the park features i",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Just three miles off I-79 and extending across 1,900 acres, Stonewall Resort State Park offers a secluded retreat surrounded by rolling hills.",
     "url": "https://wvstateparks.com/park/stonewall-resort-state-park/",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 1609,
+    "acres": 1843,
     "dissolved": {
      "after": 1843,
      "before": 3685,
      "copies": 1,
-     "key_union": 1609,
      "parts": 0,
      "records": 2,
-     "summed": 1843,
      "tracts": 1
     },
     "manager": "",
@@ -5367,13 +5286,13 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 15,
+   "pct": 3,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -5398,20 +5317,20 @@
    ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-1823": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Tu-Endie-Wei State Park",
    "official": null,
    "ours": {
-    "acres": 1,
+    "acres": 2,
     "dissolved": {
      "after": 3,
      "before": 6,
      "copies": 1,
-     "key_union": 1,
+     "key_union": 2,
      "parts": 0,
      "records": 2,
      "summed": 3,
@@ -5427,7 +5346,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -5440,10 +5359,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -5453,7 +5372,7 @@
    "verdict": "no size on page"
   },
   "US-1824": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Twin Falls Resort State Park",
    "official": null,
@@ -5508,20 +5427,18 @@
    "verdict": "no size on page"
   },
   "US-1825": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Tygart Lake State Park",
    "official": null,
    "ours": {
-    "acres": 2394,
+    "acres": 2103,
     "dissolved": {
      "after": 2103,
      "before": 4204,
      "copies": 1,
-     "key_union": 2394,
      "parts": 0,
      "records": 2,
-     "summed": 2103,
      "tracts": 1
     },
     "manager": "",
@@ -5534,7 +5451,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -5552,10 +5469,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -5566,7 +5483,7 @@
   },
   "US-1826": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Valley Falls State Park",
    "official": null,
@@ -5631,7 +5548,7 @@
    "verdict": "unsure"
   },
   "US-1827": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Watoga State Park",
    "official": {
@@ -5639,7 +5556,7 @@
     "as": "10,100 acres",
     "clean": false,
     "line": "State Park Located in the mountains of Pocahontas County, Watoga State Park is West Virginia’s largest. With 10,100 acres of land, Watoga offers many recreational activities including hiking, fishing and boating. Book Now Learn Mor",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "With 10,100 acres of land, Watoga offers many recreational activities including hiking, fishing and boating.",
     "url": "https://wvstateparks.com/park/watoga-state-park/",
     "why": "total-looking"
@@ -5715,8 +5632,7 @@
    "verdict": "agree"
   },
   "US-1828": {
-   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Watters Smith Memorial State Park",
    "official": {
@@ -5724,21 +5640,19 @@
     "as": "532 acre",
     "clean": false,
     "line": "West Virginia and the pioneer spirit of Watters Smith are both preserved in the homestead restoration at this 532-acre historical park. This historical park, located in Harrison County, features log cabins, period-accurate build",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "The heritage of early West Virginia and the pioneer spirit of Watters Smith are both preserved in the homestead restoration at this 532-acre historical park.",
     "url": "https://wvstateparks.com/park/watters-smith-memorial-state-park/",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 646,
+    "acres": 537,
     "dissolved": {
      "after": 537,
      "before": 1074,
      "copies": 1,
-     "key_union": 646,
      "parts": 0,
      "records": 2,
-     "summed": 537,
      "tracts": 1
     },
     "manager": "",
@@ -5768,13 +5682,13 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 21,
+   "pct": 1,
    "same_agency": false,
-   "score": 6,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -5790,10 +5704,10 @@
    ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-4526": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "George Washington & Jefferson National Forest",
    "note": "whole park compared (POTA lists it in 2 states: {'US-VA': 1673580, 'US-WV': 126258})",
@@ -5802,9 +5716,9 @@
     "as": "1.8 million acres",
     "clean": false,
     "line": "West Virginia, the George Washington and Jefferson National Forest blankets the Blue Ridge mountains offering 1.8 million acres of lush woodlands, unique mountain balds, peaceful waterways, and adventures galore. With more wildlife and t",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Stretching along the border of Virginia and West Virginia, the George Washington and Jefferson National Forest blankets the Blue Ridge mountains offering 1.8 million acres of lush woodlands, unique mountain balds, peaceful waterways, and adventures galore.",
-    "url": "https://www.fs.usda.gov/gwj",
+    "url": "https://www.fs.usda.gov/r08/gwj",
     "why": "total-looking"
    },
    "ours": {
@@ -5852,7 +5766,7 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok",
+     "status": "host-rule",
      "url": "https://www.fs.usda.gov/gwj",
      "why": "the park's page (Kentucky answer key)"
     },
@@ -5884,24 +5798,6 @@
      "clean": false,
      "line": "p Explore your forests Experience lush woodlands, cold mountain streams, and unique mountaintop balds on over 1.8 million acres of Appalachian forests. Recreation Opportunities T T T Welcome to the George Washington & Jefferson National",
      "total_like": false,
-     "url": "https://www.fs.usda.gov/gwj",
-     "why": "no total words near it"
-    },
-    {
-     "acres": 1800000.0,
-     "as": "1.8 million acres",
-     "clean": false,
-     "line": "West Virginia, the George Washington and Jefferson National Forest blankets the Blue Ridge mountains offering 1.8 million acres of lush woodlands, unique mountain balds, peaceful waterways, and adventures galore. With more wildlife and t",
-     "total_like": true,
-     "url": "https://www.fs.usda.gov/gwj",
-     "why": "total-looking"
-    },
-    {
-     "acres": 1800000.0,
-     "as": "1.8 million acres",
-     "clean": false,
-     "line": "p Explore your forests Experience lush woodlands, cold mountain streams, and unique mountaintop balds on over 1.8 million acres of Appalachian forests. Recreation Opportunities T T T Welcome to the George Washington & Jefferson National",
-     "total_like": false,
      "url": "https://www.fs.usda.gov/r08/gwj",
      "why": "no total words near it"
     },
@@ -5920,7 +5816,7 @@
    "verdict": "agree"
   },
   "US-4556": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": "1937",
@@ -5944,18 +5840,18 @@
     "states": [
      "US-CT",
      "US-VA",
-     "US-WV",
-     "US-MA",
-     "US-PA",
-     "US-ME",
-     "US-GA",
-     "US-TN",
-     "US-NY",
-     "US-VT",
-     "US-MD",
-     "US-NH",
      "US-NJ",
-     "US-NC"
+     "US-NH",
+     "US-TN",
+     "US-GA",
+     "US-NY",
+     "US-MD",
+     "US-WV",
+     "US-NC",
+     "US-MA",
+     "US-ME",
+     "US-VT",
+     "US-PA"
     ],
     "unknown_pieces": 1,
     "whole_park": true
@@ -6008,7 +5904,7 @@
    "verdict": "ours unknown"
   },
   "US-4572": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lewis and Clark National Historic Trail",
    "note": "whole park compared (POTA lists it in 0 states: {})",
@@ -6021,21 +5917,21 @@
     "pin": "inside",
     "src": "",
     "states": [
-     "US-SD",
-     "US-ND",
      "US-KS",
+     "US-IA",
+     "US-IL",
+     "US-ND",
+     "US-MT",
+     "US-ID",
+     "US-OR",
      "US-MO",
      "US-WV",
-     "US-PA",
-     "US-NE",
-     "US-ID",
-     "US-IA",
-     "US-OH",
-     "US-MT",
-     "US-WA",
-     "US-OR",
      "US-IN",
-     "US-IL"
+     "US-NE",
+     "US-SD",
+     "US-OH",
+     "US-PA",
+     "US-WA"
     ],
     "unknown_pieces": 1,
     "whole_park": true
@@ -6088,7 +5984,7 @@
    "verdict": "ours unknown"
   },
   "US-5582": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Cabwaylingo State Forest",
    "official": null,
@@ -6143,7 +6039,7 @@
    "verdict": "no size on page"
   },
   "US-5583": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Calvin Price State Forest",
    "official": null,
@@ -6200,7 +6096,7 @@
   },
   "US-5584": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Camp Creek State Park and Forest State Park",
    "official": {
@@ -6208,7 +6104,7 @@
     "as": "6,000 acres",
     "clean": false,
     "line": "And Forest Camp Creek State Park and Forest is known for beautiful waterfalls and great camping. With nearly 6,000 acres of lush forest, 35 miles of trails and seven miles of seasonally stocked trout streams, there is something fo",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "With nearly 6,000 acres of lush forest, 35 miles of trails and seven miles of seasonally stocked trout streams, there is something for every hiker, biker, horseback rider and angler to explore and enjoy.",
     "url": "https://wvstateparks.com/park/camp-creek-state-park/",
     "why": "total-looking"
@@ -6284,20 +6180,18 @@
    "verdict": "off"
   },
   "US-5585": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Coopers Rock State Forest",
    "official": null,
    "ours": {
-    "acres": 12378,
+    "acres": 13057,
     "dissolved": {
      "after": 13057,
      "before": 26107,
      "copies": 1,
-     "key_union": 12378,
      "parts": 0,
      "records": 2,
-     "summed": 13057,
      "tracts": 1
     },
     "manager": "",
@@ -6341,7 +6235,7 @@
    "verdict": "no size on page"
   },
   "US-5586": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Greenbrier State Forest",
    "official": {
@@ -6349,7 +6243,7 @@
     "as": "5,100 acres",
     "clean": false,
     "line": "1-833-WV-PARKS Book Now Home » Explore Parks » Greenbrier State Forest Greenbrier State Forest Covering over 5,100 acres in southeastern West Virginia, Greenbrier State Forest delivers secluded natural beauty with a wide range of",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Covering over 5,100 acres in southeastern West Virginia, Greenbrier State Forest delivers secluded natural beauty with a wide range of recreational options like fishing, swimming, hiking and mountain biking.",
     "url": "https://wvstateparks.com/park/greenbrier-state-forest/",
     "why": "total-looking"
@@ -6425,7 +6319,7 @@
    "verdict": "agree"
   },
   "US-5587": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Kanawha State Forest",
    "official": {
@@ -6433,7 +6327,7 @@
     "as": "9,300 acres",
     "clean": true,
     "line": "ed seven miles from Charleston, Kanawha State Forest is a paradise for outdoor enthusiasts. The forest covers 9,300 acres with more than 60 miles of hiking and biking trails that are ideal for every season. Many naturalists take no",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "The forest covers 9,300 acres with more than 60 miles of hiking and biking trails that are ideal for every season.",
     "url": "https://wvstateparks.com/park/kanawha-state-forest/",
     "why": "clean total"
@@ -6500,7 +6394,7 @@
    "verdict": "agree"
   },
   "US-5588": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Kumbrabow State Forest",
    "official": {
@@ -6508,21 +6402,19 @@
     "as": "9,474 acres",
     "clean": false,
     "line": "sits on top of Rich Mountain along the Western edge of the Allegheny Highlands in Randolph County. Made up of 9,474 acres at an elevation of more than 3,000 feet above sea level, it is West Virginia’s highest state forest. Book Now",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Made up of 9,474 acres at an elevation of more than 3,000 feet above sea level, it is West Virginia’s highest state forest.",
     "url": "https://wvstateparks.com/park/kumbrabow-state-forest/",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 9744,
+    "acres": 9158,
     "dissolved": {
      "after": 9158,
      "before": 18310,
      "copies": 1,
-     "key_union": 9744,
      "parts": 0,
      "records": 2,
-     "summed": 9158,
      "tracts": 1
     },
     "manager": "",
@@ -6577,7 +6469,7 @@
    "verdict": "agree"
   },
   "US-5589": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Seneca State Forest",
    "official": {
@@ -6585,21 +6477,19 @@
     "as": "12,884 acres",
     "clean": false,
     "line": "Virginia's state forests, Seneca is located in rugged Pocahontas County bordering the Greenbrier River. With 12,884 acres of lush woodlands to explore, the forest offers a variety of recreational opportunities, including boating in",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "With 12,884 acres of lush woodlands to explore, the forest offers a variety of recreational opportunities, including boating in Seneca Lake and hiking or biking 23 miles of trails.",
     "url": "https://wvstateparks.com/park/seneca-state-forest/",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 13620,
+    "acres": 12858,
     "dissolved": {
      "after": 12858,
      "before": 25703,
      "copies": 1,
-     "key_union": 13620,
      "parts": 0,
      "records": 2,
-     "summed": 12858,
      "tracts": 1
     },
     "manager": "",
@@ -6629,7 +6519,7 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 6,
+   "pct": 0,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -6654,18 +6544,18 @@
    "verdict": "agree"
   },
   "US-6993": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bear Rock Lakes Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 284,
+    "acres": 249,
     "dissolved": {
      "after": 237,
      "before": 474,
      "copies": 1,
-     "key_union": 284,
+     "key_union": 249,
      "parts": 0,
      "records": 2,
      "summed": 237,
@@ -6729,18 +6619,18 @@
    "verdict": "unsure"
   },
   "US-6994": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Burches Run Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 56,
+    "acres": 52,
     "dissolved": {
      "after": 43,
      "before": 86,
      "copies": 1,
-     "key_union": 56,
+     "key_union": 52,
      "parts": 0,
      "records": 2,
      "summed": 43,
@@ -6756,7 +6646,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -6771,10 +6661,10 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -6794,21 +6684,19 @@
    "verdict": "unsure"
   },
   "US-6995": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Castlemans Run Lake Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 594,
+    "acres": 842,
     "dissolved": {
      "after": 842,
      "before": 1683,
      "copies": 1,
-     "key_union": 594,
      "parts": 0,
      "records": 2,
-     "summed": 842,
      "tracts": 1
     },
     "manager": "",
@@ -6869,8 +6757,8 @@
    "verdict": "unsure"
   },
   "US-6996": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Cecil H. Underwood Wildlife Management Area",
    "official": null,
@@ -6894,76 +6782,6 @@
       "name"
      ]
     ],
-    "pin": "inside",
-    "src": "USGS PAD-US",
-    "unknown_pieces": 0
-   },
-   "owner_now": null,
-   "pages": [
-    {
-     "other_unit": true,
-     "status": "ok",
-     "url": "https://wvdnr.gov/lands-waters/wildlife-management-areas/",
-     "why": "the park's page (data/parkinfo)"
-    },
-    {
-     "status": "ok, no readable text",
-     "url": "http://www.wvdnr.gov/wmamapproj/pdf/pdf300/CecilHUnderwoodFinal11x17_300dpi.pdf",
-     "why": "official map (parkinfo-web)"
-    }
-   ],
-   "pct": null,
-   "same_agency": false,
-   "score": 7,
-   "score_parts": {
-    "name": 2,
-    "pin": 2,
-    "size": 1,
-    "source": 2
-   },
-   "sizes": [
-    {
-     "acres": 1400000.0,
-     "as": "1.4 million acres",
-     "clean": false,
-     "line": "bles wildlife biologists to conserve and manage habitat to benefit all wildlife species. At the present time, 1.4 million acres, representing eight percent of the state’s total land area are managed by the Wildlife Resources Section for",
-     "total_like": false,
-     "url": "https://wvdnr.gov/lands-waters/wildlife-management-areas/",
-     "why": "a statewide / agency-wide total (over a million acres) on a park that is not a big federal unit"
-    }
-   ],
-   "t": "Wildlife Management Area",
-   "ver": 15,
-   "verdict": "unsure"
-  },
-  "US-6997": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
-   "handover": [],
-   "n": "Center Branch Wildlife Management Area",
-   "official": null,
-   "ours": {
-    "acres": 1232,
-    "dissolved": {
-     "after": 944,
-     "before": 1887,
-     "copies": 1,
-     "key_union": 1232,
-     "parts": 0,
-     "records": 2,
-     "summed": 944,
-     "tracts": 1
-    },
-    "manager": "",
-    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1887 -> 944 acres",
-    "pieces": [
-     [
-      273152,
-      "Center Branch Wildlife Management Area",
-      944,
-      "name"
-     ]
-    ],
     "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
@@ -6978,12 +6796,7 @@
     },
     {
      "status": "ok, no readable text",
-     "url": "http://wvdnr.gov/wmamapproj/pdf/pdf300/CenterBranchFinal11x17_300dpi.pdf",
-     "why": "official map (documents bot)"
-    },
-    {
-     "status": "ok, no readable text",
-     "url": "http://www.wvdnr.gov/wmamapproj/pdf/pdf300/CenterBranchFinal11x17_300dpi.pdf",
+     "url": "http://www.wvdnr.gov/wmamapproj/pdf/pdf300/CecilHUnderwoodFinal11x17_300dpi.pdf",
      "why": "official map (parkinfo-web)"
     }
    ],
@@ -7011,22 +6824,93 @@
    "ver": 15,
    "verdict": "unsure"
   },
+  "US-6997": {
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
+   "handover": [],
+   "n": "Center Branch Wildlife Management Area",
+   "official": null,
+   "ours": {
+    "acres": 944,
+    "dissolved": {
+     "after": 944,
+     "before": 1887,
+     "copies": 1,
+     "parts": 0,
+     "records": 2,
+     "tracts": 1
+    },
+    "manager": "",
+    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1887 -> 944 acres",
+    "pieces": [
+     [
+      273152,
+      "Center Branch Wildlife Management Area",
+      944,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://wvdnr.gov/lands-waters/wildlife-management-areas/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok, no readable text",
+     "url": "http://wvdnr.gov/wmamapproj/pdf/pdf300/CenterBranchFinal11x17_300dpi.pdf",
+     "why": "official map (documents bot)"
+    },
+    {
+     "status": "ok, no readable text",
+     "url": "http://www.wvdnr.gov/wmamapproj/pdf/pdf300/CenterBranchFinal11x17_300dpi.pdf",
+     "why": "official map (parkinfo-web)"
+    }
+   ],
+   "pct": null,
+   "same_agency": false,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 1400000.0,
+     "as": "1.4 million acres",
+     "clean": false,
+     "line": "bles wildlife biologists to conserve and manage habitat to benefit all wildlife species. At the present time, 1.4 million acres, representing eight percent of the state’s total land area are managed by the Wildlife Resources Section for",
+     "total_like": false,
+     "url": "https://wvdnr.gov/lands-waters/wildlife-management-areas/",
+     "why": "a statewide / agency-wide total (over a million acres) on a park that is not a big federal unit"
+    }
+   ],
+   "t": "Wildlife Management Area",
+   "ver": 15,
+   "verdict": "unsure"
+  },
   "US-6998": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Cross Creek Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 2371,
+    "acres": 2014,
     "dissolved": {
      "after": 2014,
      "before": 4027,
      "copies": 1,
-     "key_union": 2371,
      "parts": 0,
      "records": 2,
-     "summed": 2014,
      "tracts": 1
     },
     "manager": "",
@@ -7087,8 +6971,8 @@
    "verdict": "unsure"
   },
   "US-6999": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Dunkard Fork Wildlife Management Area",
    "official": null,
@@ -7160,21 +7044,19 @@
    "verdict": "unsure"
   },
   "US-7000": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Hillcrest Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 1359,
+    "acres": 2208,
     "dissolved": {
      "after": 2208,
      "before": 4414,
      "copies": 1,
-     "key_union": 1359,
      "parts": 0,
      "records": 2,
-     "summed": 2208,
      "tracts": 1
     },
     "manager": "",
@@ -7235,21 +7117,19 @@
    "verdict": "unsure"
   },
   "US-7001": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lantz Farm and Nature Preserve Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 385,
+    "acres": 526,
     "dissolved": {
      "after": 526,
      "before": 1052,
      "copies": 1,
-     "key_union": 385,
      "parts": 0,
      "records": 2,
-     "summed": 526,
      "tracts": 1
     },
     "manager": "",
@@ -7310,21 +7190,19 @@
    "verdict": "unsure"
   },
   "US-7002": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lewis Wetzel Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 14955,
+    "acres": 13490,
     "dissolved": {
      "after": 13490,
      "before": 26969,
      "copies": 1,
-     "key_union": 14955,
      "parts": 0,
      "records": 2,
-     "summed": 13490,
      "tracts": 1
     },
     "manager": "",
@@ -7385,8 +7263,8 @@
    "verdict": "unsure"
   },
   "US-7003": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Little Indian Creek Wildlife Management Area",
    "official": null,
@@ -7458,21 +7336,19 @@
    "verdict": "unsure"
   },
   "US-7004": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Pedlar Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 435,
+    "acres": 763,
     "dissolved": {
      "after": 763,
      "before": 1526,
      "copies": 1,
-     "key_union": 435,
      "parts": 0,
      "records": 2,
-     "summed": 763,
      "tracts": 1
     },
     "manager": "",
@@ -7485,7 +7361,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -7510,10 +7386,10 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -7533,19 +7409,21 @@
    "verdict": "unsure"
   },
   "US-7005": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Pleasant Creek Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 2786,
+    "acres": 2989,
     "dissolved": {
      "after": 2786,
      "before": 5555,
      "copies": 1,
+     "key_union": 2989,
      "parts": 0,
      "records": 2,
+     "summed": 2786,
      "tracts": 1
     },
     "manager": "",
@@ -7558,9 +7436,9 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 0
+    "unknown_pieces": 1
    },
    "owner_now": null,
    "pages": [
@@ -7578,10 +7456,10 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -7601,8 +7479,8 @@
    "verdict": "unsure"
   },
   "US-7006": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Pruntytown State Farm Wildlife Management Area",
    "official": null,
@@ -7626,7 +7504,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -7646,10 +7524,10 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -7669,21 +7547,19 @@
    "verdict": "unsure"
   },
   "US-7007": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Snake Hill Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 2637,
+    "acres": 2959,
     "dissolved": {
      "after": 2959,
      "before": 5916,
      "copies": 1,
-     "key_union": 2637,
      "parts": 0,
      "records": 2,
-     "summed": 2959,
      "tracts": 1
     },
     "manager": "",
@@ -7744,21 +7620,19 @@
    "verdict": "unsure"
   },
   "US-7008": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Teter Creek Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 167,
+    "acres": 141,
     "dissolved": {
      "after": 141,
      "before": 282,
      "copies": 1,
-     "key_union": 167,
      "parts": 0,
      "records": 2,
-     "summed": 141,
      "tracts": 1
     },
     "manager": "",
@@ -7819,18 +7693,18 @@
    "verdict": "unsure"
   },
   "US-7009": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Upper Deckers Creek Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 42,
+    "acres": 60,
     "dissolved": {
      "after": 56,
      "before": 112,
      "copies": 1,
-     "key_union": 42,
+     "key_union": 60,
      "parts": 0,
      "records": 2,
      "summed": 56,
@@ -7894,8 +7768,8 @@
    "verdict": "unsure"
   },
   "US-7010": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Allegheny Wildlife Management Area",
    "official": null,
@@ -7959,8 +7833,8 @@
    "verdict": "unsure"
   },
   "US-7011": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Edwards Run Wildlife Management Area",
    "official": null,
@@ -8032,13 +7906,13 @@
    "verdict": "unsure"
   },
   "US-7012": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Fort Mill Ridge Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 254,
+    "acres": 232,
     "family_fold": "layers {'padus': 232, 'sgwva': 227}: one land in 2 layers, the padus copy used (227 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -8097,8 +7971,8 @@
    "verdict": "unsure"
   },
   "US-7013": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Nathaniel Mountain Wildlife Management Area",
    "official": null,
@@ -8165,13 +8039,13 @@
    "verdict": "unsure"
   },
   "US-7014": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Shannondale Springs Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 1837,
+    "acres": 1640,
     "family_fold": "layers {'padus': 1640, 'sgwva': 1576}: one land in 2 layers, the padus copy used (1,576 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -8225,21 +8099,19 @@
    "verdict": "unsure"
   },
   "US-7015": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Short Mountain Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 7741,
+    "acres": 8246,
     "dissolved": {
      "after": 8246,
      "before": 16423,
      "copies": 1,
-     "key_union": 7741,
      "parts": 0,
      "records": 2,
-     "summed": 8246,
      "tracts": 1
     },
     "manager": "",
@@ -8295,8 +8167,8 @@
    "verdict": "unsure"
   },
   "US-7016": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Sleepy Creek Wildlife Management Area",
    "official": null,
@@ -8368,13 +8240,13 @@
    "verdict": "unsure"
   },
   "US-7017": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "South Branch Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 2139,
+    "acres": 1474,
     "family_fold": "layers {'padus': 1298, 'sgwva': 1264}: one land in 2 layers, the padus copy used (1,264 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -8385,7 +8257,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -8410,10 +8282,10 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -8433,18 +8305,18 @@
    "verdict": "unsure"
   },
   "US-7018": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Thorn Creek Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 621,
+    "acres": 638,
     "dissolved": {
      "after": 764,
      "before": 1335,
      "copies": 1,
-     "key_union": 621,
+     "key_union": 638,
      "parts": 0,
      "records": 4,
      "summed": 764,
@@ -8520,8 +8392,8 @@
    "verdict": "unsure"
   },
   "US-7019": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Warden Lake Wildlife Management Area",
    "official": null,
@@ -8593,21 +8465,19 @@
    "verdict": "unsure"
   },
   "US-7020": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Widmeyer Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 220,
+    "acres": 436,
     "dissolved": {
      "after": 436,
      "before": 872,
      "copies": 1,
-     "key_union": 220,
      "parts": 0,
      "records": 2,
-     "summed": 436,
      "tracts": 1
     },
     "manager": "",
@@ -8620,7 +8490,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -8645,10 +8515,10 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -8668,8 +8538,8 @@
    "verdict": "unsure"
   },
   "US-7021": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Becky Creek Wildlife Management Area",
    "official": null,
@@ -8741,21 +8611,19 @@
    "verdict": "unsure"
   },
   "US-7022": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Big Ditch Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 284,
+    "acres": 355,
     "dissolved": {
      "after": 355,
      "before": 710,
      "copies": 1,
-     "key_union": 284,
      "parts": 0,
      "records": 2,
-     "summed": 355,
      "tracts": 1
     },
     "manager": "",
@@ -8816,21 +8684,19 @@
    "verdict": "unsure"
   },
   "US-7023": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Burnsville Lake Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 14348,
+    "acres": 13268,
     "dissolved": {
      "after": 13268,
      "before": 26526,
      "copies": 1,
-     "key_union": 14348,
      "parts": 0,
      "records": 2,
-     "summed": 13268,
      "tracts": 1
     },
     "manager": "",
@@ -8891,21 +8757,19 @@
    "verdict": "unsure"
   },
   "US-7024": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Elk River Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 20926,
+    "acres": 19850,
     "dissolved": {
      "after": 19850,
      "before": 39513,
      "copies": 1,
-     "key_union": 20926,
      "parts": 0,
      "records": 3,
-     "summed": 19850,
      "tracts": 2
     },
     "manager": "",
@@ -8972,21 +8836,19 @@
    "verdict": "unsure"
   },
   "US-7025": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Handley Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 869,
+    "acres": 777,
     "dissolved": {
      "after": 777,
      "before": 1553,
      "copies": 1,
-     "key_union": 869,
      "parts": 0,
      "records": 2,
-     "summed": 777,
      "tracts": 1
     },
     "manager": "",
@@ -9047,21 +8909,19 @@
    "verdict": "unsure"
   },
   "US-7026": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Huttonsville State Farm Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 2956,
+    "acres": 2805,
     "dissolved": {
      "after": 2805,
      "before": 5609,
      "copies": 1,
-     "key_union": 2956,
      "parts": 0,
      "records": 2,
-     "summed": 2805,
      "tracts": 1
     },
     "manager": "",
@@ -9117,18 +8977,18 @@
    "verdict": "unsure"
   },
   "US-7027": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Slatyfork Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 58,
+    "acres": 61,
     "dissolved": {
      "after": 99,
      "before": 161,
      "copies": 1,
-     "key_union": 58,
+     "key_union": 61,
      "parts": 0,
      "records": 3,
      "summed": 99,
@@ -9193,21 +9053,19 @@
    "verdict": "unsure"
   },
   "US-7028": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Smoke Camp Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 189,
+    "acres": 285,
     "dissolved": {
      "after": 285,
      "before": 568,
      "copies": 1,
-     "key_union": 189,
      "parts": 0,
      "records": 2,
-     "summed": 285,
      "tracts": 1
     },
     "manager": "",
@@ -9268,21 +9126,19 @@
    "verdict": "unsure"
   },
   "US-7029": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Stonecoal Lake Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 3993,
+    "acres": 3080,
     "dissolved": {
      "after": 3080,
      "before": 6158,
      "copies": 1,
-     "key_union": 3993,
      "parts": 0,
      "records": 2,
-     "summed": 3080,
      "tracts": 1
     },
     "manager": "",
@@ -9295,7 +9151,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -9320,10 +9176,10 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -9343,21 +9199,19 @@
    "verdict": "unsure"
   },
   "US-7030": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Stonewall Jackson Lake Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 17410,
+    "acres": 18399,
     "dissolved": {
      "after": 18399,
      "before": 36784,
      "copies": 1,
-     "key_union": 17410,
      "parts": 0,
      "records": 2,
-     "summed": 18399,
      "tracts": 1
     },
     "manager": "",
@@ -9370,7 +9224,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -9390,10 +9244,10 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -9413,21 +9267,19 @@
    "verdict": "unsure"
   },
   "US-7031": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Summersville Lake Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 6558,
+    "acres": 6175,
     "dissolved": {
      "after": 6175,
      "before": 12345,
      "copies": 1,
-     "key_union": 6558,
      "parts": 0,
      "records": 2,
-     "summed": 6175,
      "tracts": 1
     },
     "manager": "",
@@ -9488,18 +9340,18 @@
    "verdict": "unsure"
   },
   "US-7032": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Valley Bend Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 40,
+    "acres": 35,
     "dissolved": {
      "after": 32,
      "before": 64,
      "copies": 1,
-     "key_union": 40,
+     "key_union": 35,
      "parts": 0,
      "records": 2,
      "summed": 32,
@@ -9553,8 +9405,8 @@
    "verdict": "unsure"
   },
   "US-7033": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Wallback Wildlife Management Area",
    "official": null,
@@ -9626,21 +9478,19 @@
    "verdict": "unsure"
   },
   "US-7034": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Anawalt Lake Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 1419,
+    "acres": 1796,
     "dissolved": {
      "after": 1796,
      "before": 3591,
      "copies": 1,
-     "key_union": 1419,
      "parts": 0,
      "records": 2,
-     "summed": 1796,
      "tracts": 1
     },
     "manager": "",
@@ -9701,18 +9551,18 @@
    "verdict": "unsure"
   },
   "US-7035": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Berwind Lake Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 112,
+    "acres": 101,
     "dissolved": {
      "after": 182,
      "before": 273,
      "copies": 1,
-     "key_union": 112,
+     "key_union": 101,
      "parts": 0,
      "records": 3,
      "summed": 182,
@@ -9772,21 +9622,19 @@
    "verdict": "unsure"
   },
   "US-7036": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Beury Mountain Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 11311,
+    "acres": 10542,
     "dissolved": {
      "after": 10542,
      "before": 31564,
      "copies": 1,
-     "key_union": 11311,
      "parts": 3,
      "records": 5,
-     "summed": 10542,
      "tracts": 1
     },
     "manager": "",
@@ -9842,8 +9690,8 @@
    "verdict": "unsure"
   },
   "US-7037": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bluestone Lake Wildlife Management Area",
    "official": null,
@@ -9907,19 +9755,21 @@
    "verdict": "unsure"
   },
   "US-7038": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Horse Creek Lake Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 47,
+    "acres": 50,
     "dissolved": {
      "after": 47,
      "before": 94,
      "copies": 1,
+     "key_union": 50,
      "parts": 0,
      "records": 2,
+     "summed": 47,
      "tracts": 1
     },
     "manager": "",
@@ -9970,13 +9820,13 @@
    "verdict": "unsure"
   },
   "US-7039": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Meadow River Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 2034,
+    "acres": 2707,
     "family_fold": "layers {'sgwva': 2707, 'padus': 2640}: one land in 2 layers, the sgwva copy used (2,640 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -10030,13 +9880,13 @@
    "verdict": "unsure"
   },
   "US-7040": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Moncove Lake Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 631,
+    "acres": 870,
     "family_fold": "layers {'sgwva': 870, 'padus': 792}: one land in 2 layers, the sgwva copy used (792 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -10047,7 +9897,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -10072,10 +9922,10 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -10095,8 +9945,8 @@
    "verdict": "unsure"
   },
   "US-7041": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Plum Orchard Lake Wildlife Management Area",
    "official": null,
@@ -10168,21 +10018,19 @@
    "verdict": "unsure"
   },
   "US-7042": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "R.D. Bailey Lake Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 18680,
+    "acres": 17782,
     "dissolved": {
      "after": 17782,
      "before": 35552,
      "copies": 1,
-     "key_union": 18680,
      "parts": 0,
      "records": 2,
-     "summed": 17782,
      "tracts": 1
     },
     "manager": "",
@@ -10238,21 +10086,19 @@
    "verdict": "unsure"
   },
   "US-7043": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Tate Lohr Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 607,
+    "acres": 1042,
     "dissolved": {
      "after": 1042,
      "before": 2078,
      "copies": 1,
-     "key_union": 607,
      "parts": 0,
      "records": 2,
-     "summed": 1042,
      "tracts": 1
     },
     "manager": "",
@@ -10313,13 +10159,13 @@
    "verdict": "unsure"
   },
   "US-7044": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Tug Fork Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 8083,
+    "acres": 6778,
     "family_fold": "layers {'padus': 6778, 'sgwva': 6520}: one land in 2 layers, the padus copy used (6,520 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -10378,21 +10224,19 @@
    "verdict": "unsure"
   },
   "US-7045": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Amherst/Plymouth Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 7014,
+    "acres": 7529,
     "dissolved": {
      "after": 7529,
      "before": 15052,
      "copies": 1,
-     "key_union": 7014,
      "parts": 0,
      "records": 2,
-     "summed": 7529,
      "tracts": 1
     },
     "manager": "",
@@ -10405,7 +10249,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -10430,10 +10274,10 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -10453,21 +10297,19 @@
    "verdict": "unsure"
   },
   "US-7046": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Beech Fork Lake Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 8953,
+    "acres": 9480,
     "dissolved": {
      "after": 9480,
      "before": 18956,
      "copies": 1,
-     "key_union": 8953,
      "parts": 0,
      "records": 2,
-     "summed": 9480,
      "tracts": 1
     },
     "manager": "",
@@ -10528,21 +10370,19 @@
    "verdict": "unsure"
   },
   "US-7047": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Big Ugly Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 6428,
+    "acres": 5539,
     "dissolved": {
      "after": 5539,
      "before": 11011,
      "copies": 1,
-     "key_union": 6428,
      "parts": 0,
      "records": 3,
-     "summed": 5539,
      "tracts": 2
     },
     "manager": "",
@@ -10609,21 +10449,19 @@
    "verdict": "unsure"
   },
   "US-7048": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Chief Cornstalk Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 10958,
+    "acres": 11678,
     "dissolved": {
      "after": 11678,
      "before": 23355,
      "copies": 1,
-     "key_union": 10958,
      "parts": 0,
      "records": 2,
-     "summed": 11678,
      "tracts": 1
     },
     "manager": "",
@@ -10679,8 +10517,8 @@
    "verdict": "unsure"
   },
   "US-7049": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "East Lynn Lake Wildlife Management Area",
    "official": null,
@@ -10752,21 +10590,19 @@
    "verdict": "unsure"
   },
   "US-7050": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Green Bottom Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 985,
+    "acres": 1117,
     "dissolved": {
      "after": 1117,
      "before": 2233,
      "copies": 1,
-     "key_union": 985,
      "parts": 0,
      "records": 2,
-     "summed": 1117,
      "tracts": 1
     },
     "manager": "",
@@ -10827,13 +10663,13 @@
    "verdict": "unsure"
   },
   "US-7051": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Hilbert Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 266,
+    "acres": 384,
     "family_fold": "layers {'padus': 384, 'sgwva': 375}: one land in 2 layers, the padus copy used (375 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -10892,8 +10728,8 @@
    "verdict": "unsure"
   },
   "US-7052": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Laurel Lake Wildlife Management Area",
    "official": null,
@@ -10917,7 +10753,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -10942,10 +10778,10 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -10965,13 +10801,13 @@
    "verdict": "unsure"
   },
   "US-7053": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "McClintic Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 3919,
+    "acres": 3655,
     "family_fold": "layers {'sgwva': 3655, 'padus': 3395}: one land in 2 layers, the sgwva copy used (3,395 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -11025,21 +10861,19 @@
    "verdict": "unsure"
   },
   "US-7054": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Mill Creek Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 1391,
+    "acres": 1465,
     "dissolved": {
      "after": 1465,
      "before": 2919,
      "copies": 1,
-     "key_union": 1391,
      "parts": 0,
      "records": 2,
-     "summed": 1465,
      "tracts": 1
     },
     "manager": "",
@@ -11100,8 +10934,8 @@
    "verdict": "unsure"
   },
   "US-7056": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Upper Mud River Wildlife Management Area",
    "official": null,
@@ -11173,21 +11007,19 @@
    "verdict": "unsure"
   },
   "US-7057": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Buffalo Run Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 108,
+    "acres": 136,
     "dissolved": {
      "after": 136,
      "before": 272,
      "copies": 1,
-     "key_union": 108,
      "parts": 0,
      "records": 2,
-     "summed": 136,
      "tracts": 1
     },
     "manager": "",
@@ -11200,7 +11032,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -11225,10 +11057,10 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -11248,21 +11080,19 @@
    "verdict": "unsure"
   },
   "US-7058": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Conaway Run Lake Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 485,
+    "acres": 626,
     "dissolved": {
      "after": 626,
      "before": 1252,
      "copies": 1,
-     "key_union": 485,
      "parts": 0,
      "records": 2,
-     "summed": 626,
      "tracts": 1
     },
     "manager": "",
@@ -11323,21 +11153,19 @@
    "verdict": "unsure"
   },
   "US-7059": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Frozen Camp Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 3116,
+    "acres": 3781,
     "dissolved": {
      "after": 3781,
      "before": 7558,
      "copies": 1,
-     "key_union": 3116,
      "parts": 0,
      "records": 2,
-     "summed": 3781,
      "tracts": 1
     },
     "manager": "",
@@ -11398,8 +11226,8 @@
    "verdict": "unsure"
   },
   "US-7060": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Hughes River Wildlife Management Area",
    "official": null,
@@ -11415,7 +11243,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -11440,10 +11268,10 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -11463,21 +11291,19 @@
    "verdict": "unsure"
   },
   "US-7061": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "OBrien Lake Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 1029,
+    "acres": 1090,
     "dissolved": {
      "after": 1090,
      "before": 2179,
      "copies": 1,
-     "key_union": 1029,
      "parts": 0,
      "records": 2,
-     "summed": 1090,
      "tracts": 1
     },
     "manager": "",
@@ -11490,7 +11316,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -11515,10 +11341,10 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 1,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -11538,21 +11364,19 @@
    "verdict": "unsure"
   },
   "US-7062": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Ritchie Mines Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 7751,
+    "acres": 6774,
     "dissolved": {
      "after": 6774,
      "before": 13513,
      "copies": 1,
-     "key_union": 7751,
      "parts": 0,
      "records": 2,
-     "summed": 6774,
      "tracts": 1
     },
     "manager": "",
@@ -11613,18 +11437,18 @@
    "verdict": "unsure"
   },
   "US-7063": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Rollins Lake Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 51,
+    "acres": 71,
     "dissolved": {
      "after": 75,
      "before": 150,
      "copies": 1,
-     "key_union": 51,
+     "key_union": 71,
      "parts": 0,
      "records": 2,
      "summed": 75,
@@ -11688,21 +11512,19 @@
    "verdict": "unsure"
   },
   "US-7064": {
-   "cause": "a number 16 parks share from one page (217 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 16 parks share from the same sentence (217 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Sand Hill Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 2005,
+    "acres": 1901,
     "dissolved": {
      "after": 1901,
      "before": 3781,
      "copies": 1,
-     "key_union": 2005,
      "parts": 0,
      "records": 2,
-     "summed": 1901,
      "tracts": 1
     },
     "manager": "",
@@ -11715,7 +11537,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -11745,10 +11567,10 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -11795,21 +11617,19 @@
    "verdict": "unsure"
   },
   "US-7065": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Stumptown Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 1561,
+    "acres": 1781,
     "dissolved": {
      "after": 1781,
      "before": 3561,
      "copies": 1,
-     "key_union": 1561,
      "parts": 0,
      "records": 2,
-     "summed": 1781,
      "tracts": 1
     },
     "manager": "",
@@ -11822,7 +11642,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -11847,10 +11667,10 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -11870,8 +11690,8 @@
    "verdict": "unsure"
   },
   "US-7066": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "The Jug Wildlife Management Area",
    "official": null,
@@ -11943,8 +11763,8 @@
    "verdict": "unsure"
   },
   "US-7067": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Turkey Run Wildlife Management Area",
    "official": null,
@@ -11970,7 +11790,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -11995,10 +11815,10 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -12018,21 +11838,19 @@
    "verdict": "unsure"
   },
   "US-7068": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Woodrum Lake Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 1811,
+    "acres": 1661,
     "dissolved": {
      "after": 1661,
      "before": 3321,
      "copies": 1,
-     "key_union": 1811,
      "parts": 0,
      "records": 2,
-     "summed": 1661,
      "tracts": 1
     },
     "manager": "",
@@ -12093,17 +11911,17 @@
    "verdict": "unsure"
   },
   "US-7069": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Panther State Forest",
    "official": null,
    "ours": {
-    "acres": 45,
+    "acres": 28,
     "dissolved": {
      "after": 32,
      "before": 64,
      "copies": 1,
-     "key_union": 45,
+     "key_union": 28,
      "parts": 0,
      "records": 2,
      "summed": 32,
@@ -12150,7 +11968,7 @@
    "verdict": "no size on page"
   },
   "US-9739": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Forks of the Coal State Natural Area",
    "ours": null,
@@ -12160,21 +11978,19 @@
    "verdict": "no outline"
   },
   "US-9740": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Chief Logan Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 186,
+    "acres": 325,
     "dissolved": {
      "after": 325,
      "before": 650,
      "copies": 1,
-     "key_union": 186,
      "parts": 0,
      "records": 2,
-     "summed": 325,
      "tracts": 1
     },
     "manager": "",
@@ -12230,7 +12046,7 @@
    "verdict": "unsure"
   },
   "US-9741": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "North Bend Rail Trail State Trail",
    "official": null,
@@ -12269,7 +12085,7 @@
    "verdict": "ours unknown"
   },
   "US-9742": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Greenbrier River Trail State Trail",
    "official": null,
@@ -12303,8 +12119,8 @@
    "verdict": "ours unknown"
   },
   "US-9743": {
-   "cause": "a number 76 parks share from one page (1,400,000 ac): an agency total, not this park",
-   "checked": "2026-11-08",
+   "cause": "a number 76 parks share from the same sentence (1,400,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Tomblin Wildlife Management Area",
    "official": null,
@@ -12358,7 +12174,7 @@
   },
   "US-9755": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Summersville Lake State Park",
    "official": null,
@@ -12373,7 +12189,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -12391,10 +12207,10 @@
     }
    ],
    "pct": null,
-   "score": 5,
+   "score": 4,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 0
    },
@@ -12414,7 +12230,7 @@
    "verdict": "unsure"
   },
   "US-9914": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Elk Fork Lake Wildlife Management Area",
    "official": {
@@ -12422,7 +12238,7 @@
     "as": "1,418 acres",
     "clean": false,
     "line": "pen: All year Size: 209 acres Game Fish: Channel catfish, largemouth bass Hunting: Elk Fork Lake WMA Terrain: 1,418 acres, hilly with oak-hickory forest Big Game : Deer, turkey Small Game: Squirrel Nearby: O’Brien Lake WMA, Frozen",
-    "read": "2026-11-08",
+    "read": "2026-11-22",
     "sent": "Terrain: 1,418 acres, hilly with oak-hickory forest",
     "url": "https://wvdnr.gov/elk-fork-lake/",
     "why": "total-looking"
@@ -12530,7 +12346,7 @@
    "verdict": "agree"
   },
   "US-9915": {
-   "checked": "2026-11-08",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Cedar Lakes State Recreation Area",
    "ours": null,
@@ -12540,5 +12356,5 @@
    "verdict": "no outline"
   }
  },
- "read": "2026-11-15"
+ "read": "2026-11-22"
 }

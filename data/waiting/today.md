@@ -1,172 +1,22 @@
-# Waiting room: morning list (2026-11-24)
+# Waiting room: morning list (2026-11-25)
 
 For chat 11. Held = checked, not live. Release = your YES (+ chat 2 recheck) in data/waiting/approved.json; the nightly run lets it out.
 
-## Held files: 167 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
+## Held files: 17 (US + Canada first, then North America, W1-W10, rest; oldest first inside)
 
 | since | days | file | last check | why |
 |---|---|---|---|---|
-| 2026-11-08 | 16 | data/trails/US-13626.json | HOLD | F-T3 length 16 -> 114 km (outside -25% / +50%) |
-| 2026-11-08 | 16 | data/trails/US-9203.json | HOLD | F-T2 points 19246 -> 1822 (under half the saved line); F-T3 length 138 -> 88 km (outside -25% / +50%) |
-| 2026-11-10 | 14 | data/truth/US-UT.json | HOLD | F-R2 6 OFF rows share the size 2,200,000.0 ac |
-| 2026-11-10 | 14 | data/truth/US-WA.json | HOLD | F-R2 5 OFF rows share the size 564.0 ac; F-R3 69 of 115 sized parks are OFF (over half: a reading problem?) |
-| ? | ? | data/ca-key/CA-ON.json | PASS |  |
+| 2026-11-08 | 17 | data/trails/US-13626.json | HOLD | F-T3 length 16 -> 114 km (outside -25% / +50%) |
+| 2026-11-08 | 17 | data/trails/US-9203.json | HOLD | F-T2 points 19246 -> 1822 (under half the saved line); F-T3 length 138 -> 88 km (outside -25% / +50%) |
+| 2026-11-10 | 15 | data/truth/US-UT.json | HOLD | F-R2 6 OFF rows share the size 2,200,000.0 ac |
+| 2026-11-10 | 15 | data/truth/US-WA.json | HOLD | F-R2 5 OFF rows share the size 564.0 ac; F-R3 69 of 115 sized parks are OFF (over half: a reading problem?) |
 | ? | ? | data/campinfo/US-CO.json | PASS |  |
 | ? | ? | data/campinfo/US-GA.json | PASS |  |
 | ? | ? | data/campinfo/US-WV.json | PASS |  |
-| ? | ? | data/campstate/US-AK.json | PASS |  |
-| ? | ? | data/campstate/US-AZ.json | PASS |  |
-| ? | ? | data/campstate/US-CO.json | PASS |  |
-| ? | ? | data/campstate/US-FL.json | PASS |  |
-| ? | ? | data/campstate/US-HI.json | PASS |  |
-| ? | ? | data/campstate/US-IA.json | PASS |  |
-| ? | ? | data/campstate/US-IN.json | PASS |  |
-| ? | ? | data/campstate/US-MN.json | PASS |  |
-| ? | ? | data/campstate/US-MT.json | PASS |  |
-| ? | ? | data/campstate/US-ND.json | PASS |  |
-| ? | ? | data/campstate/US-NH.json | PASS |  |
-| ? | ? | data/campstate/US-NM.json | PASS |  |
-| ? | ? | data/campstate/US-NV.json | PASS |  |
-| ? | ? | data/campstate/US-OH.json | PASS |  |
-| ? | ? | data/campstate/US-OR.json | PASS |  |
-| ? | ? | data/campstate/US-PA.json | PASS |  |
-| ? | ? | data/campstate/US-SD.json | PASS |  |
-| ? | ? | data/campstate/US-UT.json | PASS |  |
-| ? | ? | data/campstate/US-VA.json | PASS |  |
-| ? | ? | data/campstate/US-VT.json | PASS |  |
-| ? | ? | data/truth/US-AL.json | RELEASE |  |
-| ? | ? | data/truth/US-AR.json | RELEASE |  |
-| ? | ? | data/truth/US-AZ.json | PASS |  |
-| ? | ? | data/truth/US-CA.json | PASS |  |
-| ? | ? | data/truth/US-CO.json | RELEASE |  |
-| ? | ? | data/truth/US-CT.json | PASS |  |
-| ? | ? | data/truth/US-DC.json | RELEASE |  |
-| ? | ? | data/truth/US-DE.json | RELEASE |  |
-| ? | ? | data/truth/US-FL.json | RELEASE |  |
-| ? | ? | data/truth/US-GA.json | RELEASE |  |
-| ? | ? | data/truth/US-IA.json | PASS |  |
-| ? | ? | data/truth/US-ID.json | PASS |  |
-| ? | ? | data/truth/US-IL.json | RELEASE |  |
-| ? | ? | data/truth/US-IN.json | RELEASE |  |
-| ? | ? | data/truth/US-KS.json | RELEASE |  |
-| ? | ? | data/truth/US-KY.json | RELEASE |  |
-| ? | ? | data/truth/US-LA.json | RELEASE |  |
-| ? | ? | data/truth/US-MA.json | PASS |  |
-| ? | ? | data/truth/US-MD.json | PASS |  |
-| ? | ? | data/truth/US-ME.json | PASS |  |
-| ? | ? | data/truth/US-MN.json | PASS |  |
-| ? | ? | data/truth/US-MO.json | RELEASE |  |
-| ? | ? | data/truth/US-MS.json | RELEASE |  |
-| ? | ? | data/truth/US-MT.json | PASS |  |
-| ? | ? | data/truth/US-NC.json | RELEASE |  |
-| ? | ? | data/truth/US-ND.json | PASS |  |
-| ? | ? | data/truth/US-NE.json | RELEASE |  |
-| ? | ? | data/truth/US-NH.json | RELEASE |  |
-| ? | ? | data/truth/US-NJ.json | RELEASE |  |
-| ? | ? | data/truth/US-NM.json | PASS |  |
-| ? | ? | data/truth/US-NV.json | PASS |  |
-| ? | ? | data/truth/US-NY.json | PASS |  |
-| ? | ? | data/truth/US-OK.json | PASS |  |
-| ? | ? | data/truth/US-OR.json | PASS |  |
-| ? | ? | data/truth/US-PA.json | RELEASE |  |
-| ? | ? | data/truth/US-RI.json | RELEASE |  |
-| ? | ? | data/truth/US-SC.json | RELEASE |  |
-| ? | ? | data/truth/US-SD.json | PASS |  |
-| ? | ? | data/truth/US-TN.json | RELEASE |  |
-| ? | ? | data/truth/US-TX.json | PASS |  |
-| ? | ? | data/truth/US-VA.json | RELEASE |  |
-| ? | ? | data/truth/US-VT.json | RELEASE |  |
-| ? | ? | data/truth/US-WI.json | PASS |  |
-| ? | ? | data/truth/US-WV.json | RELEASE |  |
-| ? | ? | data/truth/US-WY.json | PASS |  |
-| ? | ? | data/us-key/US-AK.json | PASS |  |
-| ? | ? | data/us-key/US-AL.json | PASS |  |
-| ? | ? | data/us-key/US-AR.json | PASS |  |
-| ? | ? | data/us-key/US-AZ.json | PASS |  |
-| ? | ? | data/us-key/US-CA.json | PASS |  |
-| ? | ? | data/us-key/US-CO.json | PASS |  |
-| ? | ? | data/us-key/US-CT.json | PASS |  |
-| ? | ? | data/us-key/US-DC.json | PASS |  |
-| ? | ? | data/us-key/US-DE.json | PASS |  |
-| ? | ? | data/us-key/US-FL.json | PASS |  |
-| ? | ? | data/us-key/US-GA.json | PASS |  |
-| ? | ? | data/us-key/US-HI.json | RELEASE |  |
-| ? | ? | data/us-key/US-IA.json | PASS |  |
-| ? | ? | data/us-key/US-ID.json | PASS |  |
-| ? | ? | data/us-key/US-IL.json | PASS |  |
-| ? | ? | data/us-key/US-IN.json | PASS |  |
-| ? | ? | data/us-key/US-KS.json | PASS |  |
-| ? | ? | data/us-key/US-LA.json | RELEASE |  |
-| ? | ? | data/us-key/US-MA.json | PASS |  |
-| ? | ? | data/us-key/US-MD.json | PASS |  |
-| ? | ? | data/us-key/US-ME.json | PASS |  |
-| ? | ? | data/us-key/US-MI.json | PASS |  |
-| ? | ? | data/us-key/US-MN.json | PASS |  |
-| ? | ? | data/us-key/US-MO.json | PASS |  |
-| ? | ? | data/us-key/US-MS.json | PASS |  |
-| ? | ? | data/us-key/US-MT.json | PASS |  |
-| ? | ? | data/us-key/US-NC.json | PASS |  |
-| ? | ? | data/us-key/US-ND.json | PASS |  |
-| ? | ? | data/us-key/US-NE.json | PASS |  |
-| ? | ? | data/us-key/US-NH.json | PASS |  |
-| ? | ? | data/us-key/US-NJ.json | PASS |  |
-| ? | ? | data/us-key/US-NM.json | RELEASE |  |
-| ? | ? | data/us-key/US-NV.json | PASS |  |
-| ? | ? | data/us-key/US-NY.json | PASS |  |
-| ? | ? | data/us-key/US-OH.json | PASS |  |
-| ? | ? | data/us-key/US-OK.json | PASS |  |
-| ? | ? | data/us-key/US-OR.json | PASS |  |
-| ? | ? | data/us-key/US-PA.json | RELEASE |  |
-| ? | ? | data/us-key/US-RI.json | RELEASE |  |
-| ? | ? | data/us-key/US-SC.json | PASS |  |
-| ? | ? | data/us-key/US-SD.json | PASS |  |
-| ? | ? | data/us-key/US-TN.json | PASS |  |
-| ? | ? | data/us-key/US-TX.json | PASS |  |
-| ? | ? | data/us-key/US-UT.json | PASS |  |
-| ? | ? | data/us-key/US-VA.json | PASS |  |
-| ? | ? | data/us-key/US-VT.json | RELEASE |  |
-| ? | ? | data/us-key/US-WA.json | PASS |  |
-| ? | ? | data/us-key/US-WI.json | PASS |  |
-| ? | ? | data/us-key/US-WV.json | PASS |  |
-| ? | ? | data/us-key/US-WY.json | RELEASE |  |
-| 2026-11-04 | 20 | data/trails/state-report.json | HOLD | F-T1 the line has no points |
-| 2026-11-18 | 6 | data/world-key/ZA.json | HOLD | F-O2 4 of 76 outlines carry a layer name that shares no word with the park (5%; live 0/69): outlines swapped to other parks? |
-| 2026-11-20 | 4 | data/acres.json | HOLD | 1 rows without acres or a source (e.g. US-4564) |
-| 2026-11-22 | 2 | data/world-key/GB.json | HOLD | F-O3 retired parks still outlined: GB-3369 |
-| ? | ? | data/ca-key/index.json | RELEASE |  |
-| ? | ? | data/ca-key/refs.json | RELEASE |  |
-| ? | ? | data/ca-key/why-not.json | RELEASE |  |
+| 2026-11-04 | 21 | data/trails/state-report.json | HOLD | F-T1 the line has no points |
+| 2026-11-20 | 5 | data/acres.json | HOLD | 1 rows without acres or a source (e.g. US-4564) |
 | ? | ? | data/trails/index-state.json | RELEASE |  |
 | ? | ? | data/trails/index.json | PASS |  |
-| ? | ? | data/us-key/area-tables.json | PASS |  |
-| ? | ? | data/us-key/changed-parks.json | RELEASE |  |
-| ? | ? | data/us-key/index.json | RELEASE |  |
-| ? | ? | data/us-key/lost-finds.json | RELEASE |  |
-| ? | ? | data/us-key/overrides-parks-01.json | PASS |  |
-| ? | ? | data/us-key/overrides-parks-02.json | PASS |  |
-| ? | ? | data/us-key/overrides.json | PASS |  |
-| ? | ? | data/world-key/AE.json | PASS |  |
-| ? | ? | data/world-key/AU.json | PASS |  |
-| ? | ? | data/world-key/BZ.json | PASS |  |
-| ? | ? | data/world-key/CD.json | PASS |  |
-| ? | ? | data/world-key/CL.json | PASS |  |
-| ? | ? | data/world-key/CO.json | PASS |  |
-| ? | ? | data/world-key/FO.json | PASS |  |
-| ? | ? | data/world-key/GR.json | PASS |  |
-| ? | ? | data/world-key/ID.json | PASS |  |
-| ? | ? | data/world-key/IM.json | PASS |  |
-| ? | ? | data/world-key/KE.json | PASS |  |
-| ? | ? | data/world-key/LK.json | PASS |  |
-| ? | ? | data/world-key/LR.json | PASS |  |
-| ? | ? | data/world-key/MT.json | PASS |  |
-| ? | ? | data/world-key/MV.json | PASS |  |
-| ? | ? | data/world-key/MX.json | PASS |  |
-| ? | ? | data/world-key/NC.json | PASS |  |
-| ? | ? | data/world-key/NZ.json | PASS |  |
-| ? | ? | data/world-key/PR.json | PASS |  |
-| ? | ? | data/world-key/PY.json | PASS |  |
-| ? | ? | data/world-key/VI.json | PASS |  |
-| ? | ? | data/world-key/index.json | PASS |  |
 | ? | ? | data/wwff/PAFF.json | PASS |  |
 | ? | ? | data/wwff/PYFF.json | RELEASE |  |
 | ? | ? | data/wwff/S5FF.json | PASS |  |

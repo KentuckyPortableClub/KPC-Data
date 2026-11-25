@@ -2,21 +2,22 @@
  "about": "Park truth checker: official acreage vs our outline, handover hints, second-witness score. Review lists only: nothing here changes a key or a card.",
  "area": "US-LA",
  "counts": {
-  "agree": 9,
-  "handover_hints": 5,
+  "agree": 8,
+  "handover_hints": 4,
   "no_page": 0,
-  "no_size": 93,
-  "off": 7,
+  "no_size": 97,
+  "not_read": 0,
+  "off": 3,
   "ours_unknown": 1,
   "parks": 123,
   "retired": 0,
-  "unsure": 6,
-  "weak": 3,
+  "unsure": 7,
+  "weak": 2,
   "with_outline": 116
  },
  "parks": {
   "US-0040": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Jean Lafitte National Historical Park",
    "official": null,
@@ -78,7 +79,7 @@
    "verdict": "no size on page"
   },
   "US-0296": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Atchafalaya National Wildlife Refuge",
    "official": {
@@ -86,7 +87,7 @@
     "as": "18,000 acres",
     "clean": false,
     "line": "e is a natural treasure on the northshore of Lake Pontchartrain north of New Orleans, LA. The refuge has over 18,000 acres of freshwater and brackish marsh, bald cypress-tupelo forest, bayous, hardwood forest hammocks, and pine sava",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The refuge has over 18,000 acres of freshwater and brackish marsh, bald cypress-tupelo forest, bayous, hardwood forest hammocks, and pine savannah.",
     "url": "https://www.fws.gov/refuge/atchafalaya/about-us",
     "why": "total-looking"
@@ -227,7 +228,7 @@
    "verdict": "agree"
   },
   "US-0297": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
@@ -244,21 +245,19 @@
     "as": "14,668 acre",
     "clean": false,
     "line": "National Wildlife Refuge, established in 1992, is located in Concordia Parish in east central Louisiana. The 14,668 acre refuge is composed of some of the last remaining, least disturbed bottomland hardwoods in the Mississippi Riv",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The 14,668 acre refuge is composed of some of the last remaining, least disturbed bottomland hardwoods in the Mississippi River Delta.",
     "url": "https://www.fws.gov/refuge/bayou-cocodrie/about-us",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 14924,
+    "acres": 16146,
     "dissolved": {
      "after": 16146,
      "before": 31301,
      "copies": 1,
-     "key_union": 14924,
      "parts": 0,
      "records": 3,
-     "summed": 16146,
      "tracts": 2
     },
     "manager": "",
@@ -294,7 +293,7 @@
      "why": "about / history page of the park's site"
     }
    ],
-   "pct": 2,
+   "pct": 10,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -338,7 +337,7 @@
   },
   "US-0298": {
    "cause": "the agency figure may cover several states; our outline may be this state's share only",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bayou Sauvage National Wildlife Refuge",
    "note": "the agency figure may cover several states; our outline may be this state's share only",
@@ -347,13 +346,13 @@
     "as": "3,619 acres",
     "clean": true,
     "line": "Mississippi River. The refuge consists of *seven, non-contiguous management units, ranging in size from 81 to 3,619 acres. The refuge’s primary... National Wildlife Refuge Franklin, LA Mandalay National Wildlife Refuge Mandalay Nat",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The refuge consists of *seven, non-contiguous management units, ranging in size from 81 to 3,619 acres.",
     "url": "https://www.fws.gov/refuge/bayou-sauvage-urban/about-us",
     "why": "clean total"
    },
    "ours": {
-    "acres": 27901,
+    "acres": 27437,
     "manager": "",
     "pieces": [
      [
@@ -397,7 +396,7 @@
      "why": "FWS refuge about page"
     }
    ],
-   "pct": 671,
+   "pct": 658,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -432,7 +431,7 @@
   },
   "US-0299": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bayou Teche National Wildlife Refuge",
    "official": {
@@ -440,13 +439,13 @@
     "as": "3,619 acres",
     "clean": true,
     "line": "Mississippi River. The refuge consists of *seven, non-contiguous management units, ranging in size from 81 to 3,619 acres. The refuge’s primary objective is to support the Louisiana black bear by restoring and managing bottomland h",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The refuge consists of *seven, non-contiguous management units, ranging in size from 81 to 3,619 acres.",
     "url": "https://www.fws.gov/refuge/bayou-teche",
     "why": "clean total"
    },
    "ours": {
-    "acres": 11627,
+    "acres": 11763,
     "manager": "",
     "pieces": [
      [
@@ -485,7 +484,7 @@
      "why": "FWS refuge about page"
     }
    ],
-   "pct": 221,
+   "pct": 225,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -519,7 +518,7 @@
    "verdict": "off"
   },
   "US-0300": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Big Branch Marsh National Wildlife Refuge",
    "official": {
@@ -527,7 +526,7 @@
     "as": "18,000 acres",
     "clean": false,
     "line": "e is a natural treasure on the northshore of Lake Pontchartrain north of New Orleans, LA. The refuge has over 18,000 acres of freshwater and brackish marsh, bald cypress-tupelo forest, bayous, hardwood forest hammocks, and pine sava",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The refuge has over 18,000 acres of freshwater and brackish marsh, bald cypress-tupelo forest, bayous, hardwood forest hammocks, and pine savannah.",
     "url": "https://www.fws.gov/refuge/big-branch-marsh",
     "why": "total-looking"
@@ -610,20 +609,18 @@
   },
   "US-0301": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Black Bayou Lake National Wildlife Refuge",
    "official": null,
    "ours": {
-    "acres": 2977,
+    "acres": 3644,
     "dissolved": {
      "after": 3644,
      "before": 7281,
      "copies": 1,
-     "key_union": 2977,
      "parts": 0,
      "records": 2,
-     "summed": 3644,
      "tracts": 1
     },
     "manager": "",
@@ -648,23 +645,13 @@
      "why": "the park's page (data/parkinfo)"
     },
     {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/black-bayou-lake/about-us",
-     "why": "about / history page of the park's site"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/black-bayou-lake/visit-us",
-     "why": "about / history page of the park's site"
-    },
-    {
      "other_unit": true,
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/black-bayou-lake/visit-us/rules-policies",
      "why": "rules page (documents bot)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/black-bayou-lake/about-us",
      "why": "FWS refuge about page"
     }
@@ -679,39 +666,21 @@
    },
    "sizes": [
     {
-     "acres": 5300.0,
-     "as": "5300 acre",
+     "acres": 1500.0,
+     "as": "1,500 acres",
      "clean": false,
-     "line": "ilities are closed. Learn More About Visiting Location and Contact Information About Us Black Bayou Lake is a 5300 acre refuge providing habitat for waterfowl, endangered wildlife, neo-tropical migrants, and resident wildlife. A",
+     "line": "ects and Research About Established in 1997, Black Bayou Lake National Wildlife Refuge protects approximately 1,500 acres of shallow lake habitat studded with bald cypress and water tupelo trees. Although suburban Monroe surrounds",
      "total_like": false,
      "url": "https://www.fws.gov/refuge/black-bayou-lake",
-     "why": "part (a lake, a purchase, a campground…)"
-    },
-    {
-     "acres": 1600.0,
-     "as": "1600 acre",
-     "clean": false,
-     "line": "nd bald cypress that shelter a variety of species from broad-banded water snakes to a multitude of frogs. The 1600 acre lake provides a home for iconic species such as the American alligator, anhingas, great blue herons, and more",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/black-bayou-lake",
-     "why": "part (a lake, a purchase, a campground…)"
+     "why": "history"
     },
     {
      "acres": 1500.0,
      "as": "1,500 acres",
      "clean": false,
-     "line": "tension Act). The central physical feature of the Refuge is the lake itself Black Bayou Lake is approximately 1,500 acres of shallow water studded with baldcypress and water tupelo trees. The lake is owned by the City of Monroe, wh",
+     "line": "ation house. The central physical feature of the Refuge is the lake itself. Black Bayou Lake is approximately 1,500 acres of shallow water studded with bald cypress and water tupelo trees. The lake is owned by the City of Monroe, w",
      "total_like": false,
-     "url": "https://www.fws.gov/refuge/black-bayou-lake/about-us",
-     "why": "part (a lake, a purchase, a campground…)"
-    },
-    {
-     "acres": 1500.0,
-     "as": "1,500 acres",
-     "clean": false,
-     "line": "tension Act). The central physical feature of the Refuge is the lake itself Black Bayou Lake is approximately 1,500 acres of shallow water studded with baldcypress and water tupelo trees. The lake is owned by the City of Monroe, wh",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/black-bayou-lake/about-us",
+     "url": "https://www.fws.gov/refuge/black-bayou-lake",
      "why": "part (a lake, a purchase, a campground…)"
     }
    ],
@@ -720,30 +689,19 @@
    "verdict": "unsure"
   },
   "US-0302": {
-   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-09",
+   "cause": "a number 4 parks share from the same sentence (18,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Bogue Chitto National Wildlife Refuge",
-   "official": {
-    "acres": 18000.0,
-    "as": "18,000 acres",
-    "clean": false,
-    "line": "e is a natural treasure on the northshore of Lake Pontchartrain north of New Orleans, LA. The refuge has over 18,000 acres of freshwater and brackish marsh, bald cypress-tupelo forest, bayous, hardwood forest hammocks, and pine sava",
-    "read": "2026-11-09",
-    "sent": "The refuge has over 18,000 acres of freshwater and brackish marsh, bald cypress-tupelo forest, bayous, hardwood forest hammocks, and pine savannah.",
-    "url": "https://www.fws.gov/refuge/bogue-chitto/about-us",
-    "why": "total-looking"
-   },
+   "official": null,
    "ours": {
-    "acres": 26866,
+    "acres": 29114,
     "dissolved": {
      "after": 29114,
      "before": 58089,
      "copies": 1,
-     "key_union": 26866,
      "parts": 0,
      "records": 2,
-     "summed": 29114,
      "tracts": 1
     },
     "manager": "",
@@ -784,7 +742,7 @@
      "why": "FWS refuge about page"
     }
    ],
-   "pct": 49,
+   "pct": null,
    "same_agency": false,
    "score": 5,
    "score_parts": {
@@ -842,33 +800,22 @@
    ],
    "t": "National Wildlife Refuge",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "unsure"
   },
   "US-0303": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-09",
+   "cause": "a number 4 parks share from the same sentence (18,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Breton National Wildlife Refuge",
-   "official": {
-    "acres": 18000.0,
-    "as": "18,000 acres",
-    "clean": false,
-    "line": "e is a natural treasure on the northshore of Lake Pontchartrain north of New Orleans, LA. The refuge has over 18,000 acres of freshwater and brackish marsh, bald cypress-tupelo forest, bayous, hardwood forest hammocks, and pine sava",
-    "read": "2026-11-09",
-    "sent": "The refuge has over 18,000 acres of freshwater and brackish marsh, bald cypress-tupelo forest, bayous, hardwood forest hammocks, and pine savannah.",
-    "url": "https://www.fws.gov/refuge/breton/visit-us",
-    "why": "total-looking"
-   },
+   "official": null,
    "ours": {
-    "acres": 7164,
+    "acres": 12093,
     "dissolved": {
      "after": 12093,
      "before": 24186,
      "copies": 1,
-     "key_union": 7164,
      "parts": 0,
      "records": 2,
-     "summed": 12093,
      "tracts": 1
     },
     "manager": "",
@@ -914,7 +861,7 @@
      "why": "FWS refuge about page"
     }
    ],
-   "pct": 60,
+   "pct": null,
    "same_agency": false,
    "score": 5,
    "score_parts": {
@@ -963,11 +910,11 @@
    ],
    "t": "National Wildlife Refuge",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "unsure"
   },
   "US-0304": {
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": "2001",
@@ -984,21 +931,19 @@
     "as": "14,927 acres",
     "clean": true,
     "line": "it, administratively transferred to Cameron Prairie National Wildlife Refuge from Sabine in 2001, consists of 14,927 acres of brackish to intermediate marsh. These marshes are managed as a nursery for brown and white shrimp, blue cr",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "This unit, administratively transferred to Cameron Prairie National Wildlife Refuge from Sabine in 2001, consists of 14,927 acres of brackish to intermediate marsh.",
     "url": "https://www.fws.gov/refuge/cameron-prairie",
     "why": "clean total"
    },
    "ours": {
-    "acres": 25904,
+    "acres": 24392,
     "dissolved": {
      "after": 24392,
      "before": 48783,
      "copies": 1,
-     "key_union": 25904,
      "parts": 0,
      "records": 2,
-     "summed": 24392,
      "tracts": 1
     },
     "manager": "",
@@ -1023,7 +968,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 74,
+   "pct": 63,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -1057,20 +1002,11 @@
    "verdict": "off"
   },
   "US-0305": {
-   "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-09",
+   "cause": "a number 4 parks share from the same sentence (18,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Cat Island National Wildlife Refuge",
-   "official": {
-    "acres": 18000.0,
-    "as": "18,000 acres",
-    "clean": false,
-    "line": "e is a natural treasure on the northshore of Lake Pontchartrain north of New Orleans, LA. The refuge has over 18,000 acres of freshwater and brackish marsh, bald cypress-tupelo forest, bayous, hardwood forest hammocks, and pine sava",
-    "read": "2026-11-09",
-    "sent": "The refuge has over 18,000 acres of freshwater and brackish marsh, bald cypress-tupelo forest, bayous, hardwood forest hammocks, and pine savannah.",
-    "url": "https://www.fws.gov/refuge/cat-island/about-us",
-    "why": "total-looking"
-   },
+   "official": null,
    "ours": {
     "acres": 10817,
     "dissolved": {
@@ -1119,7 +1055,7 @@
      "why": "FWS refuge about page"
     }
    ],
-   "pct": 40,
+   "pct": null,
    "same_agency": false,
    "score": 5,
    "score_parts": {
@@ -1168,16 +1104,15 @@
    ],
    "t": "National Wildlife Refuge",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "unsure"
   },
   "US-0306": {
-   "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Catahoula National Wildlife Refuge",
    "official": null,
    "ours": {
-    "acres": 60775,
+    "acres": 62844,
     "dissolved": {
      "after": 63051,
      "before": 88289,
@@ -1188,7 +1123,7 @@
      },
      "family_fold": 25238,
      "family_used": "fsod",
-     "key_union": 60775,
+     "key_union": 62844,
      "parts": 0,
      "records": 3,
      "summed": 37813,
@@ -1217,23 +1152,13 @@
      "why": "the park's page (data/parkinfo)"
     },
     {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/catahoula/visit-us",
-     "why": "about / history page of the park's site"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/catahoula/about-us",
-     "why": "about / history page of the park's site"
-    },
-    {
      "other_unit": true,
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/catahoula/visit-us/rules-policies",
      "why": "rules page (documents bot)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/catahoula/about-us",
      "why": "FWS refuge about page"
     }
@@ -1246,54 +1171,24 @@
     "size": 1,
     "source": 2
    },
-   "sizes": [
-    {
-     "acres": 25000.0,
-     "as": "25,000 acres",
-     "clean": false,
-     "line": "a NWR was established in 1958 as a wintering area for migratory waterfowl. Most of the Refuge's approximately 25,000 acres are lowland hardwood forests subject to backwater flooding from the Ouachita, Black, and Red Rivers. Visit Us",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/catahoula",
-     "why": "another park / unit named in the sentence"
-    }
-   ],
+   "sizes": [],
    "t": "National Wildlife Refuge",
    "ver": 15,
-   "verdict": "unsure"
+   "verdict": "no size on page"
   },
   "US-0307": {
-   "checked": "2026-11-09",
-   "handover": [
-    {
-     "date_hint": null,
-     "kind": "managed by",
-     "line": "ational wildlife refuge A national wildlife refuge is typically a contiguous area of land and water managed by the U.S. Fish and Wildlife Service for the conservation and, where appropriate, restoration of fish, wildlife and plant resources and their habitats for th",
-     "owner_now": "U.S",
-     "src": "https://www.fws.gov/refuge/darbonne/about-us",
-     "why": "about / history page of the park's site"
-    }
-   ],
+   "checked": "2026-11-22",
+   "handover": [],
    "n": "D'Arbonne National Wildlife Refuge",
-   "official": {
-    "acres": 17421.0,
-    "as": "17,421 acres",
-    "clean": false,
-    "line": "rtment of the Army. The Corps owned the refuge until 1981, when the Service finally acquired the fee title of 17,421 acres of deep overflow swamp, bottomland hardwood forest, and mixed pine/hardwood uplands Other Facilities in this",
-    "read": "2026-11-09",
-    "sent": "The Corps owned the refuge until 1981, when the Service finally acquired the fee title of 17,421 acres of deep overflow swamp, bottomland hardwood forest, and mixed pine/hardwood uplands",
-    "url": "https://www.fws.gov/refuge/darbonne/about-us",
-    "why": "no total words near it"
-   },
+   "official": null,
    "ours": {
-    "acres": 16610,
+    "acres": 17639,
     "dissolved": {
      "after": 17639,
      "before": 52917,
      "copies": 2,
-     "key_union": 16610,
      "parts": 0,
      "records": 3,
-     "summed": 17639,
      "tracts": 1
     },
     "manager": "",
@@ -1310,7 +1205,7 @@
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
-   "owner_now": "U.S",
+   "owner_now": null,
    "pages": [
     {
      "other_unit": true,
@@ -1320,65 +1215,35 @@
     },
     {
      "status": "ok",
-     "url": "https://www.fws.gov/refuge/darbonne/about-us",
-     "why": "about / history page of the park's site"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/darbonne/visit-us",
-     "why": "about / history page of the park's site"
-    },
-    {
-     "status": "ok",
      "url": "https://www.fws.gov/sites/default/files/documents/darbonneavenza_public_0.pdf",
      "why": "official map (documents bot)"
     },
     {
      "other_unit": true,
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/darbonne/visit-us/rules-policies",
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 5,
-   "same_agency": false,
-   "score": 8,
+   "pct": null,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 1,
     "source": 2
    },
-   "sizes": [
-    {
-     "acres": 17421.0,
-     "as": "17,421 acres",
-     "clean": false,
-     "line": "rtment of the Army. The Corps owned the refuge until 1981, when the Service finally acquired the fee title of 17,421 acres of deep overflow swamp, bottomland hardwood forest, and mixed pine/hardwood uplands Other Facilities in this",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/darbonne/about-us",
-     "why": "no total words near it"
-    }
-   ],
+   "sizes": [],
    "t": "National Wildlife Refuge",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "no size on page"
   },
   "US-0308": {
-   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
-   "checked": "2026-11-09",
+   "cause": "a number 4 parks share from the same sentence (18,000 ac): an agency total, not this park",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Delta National Wildlife Refuge",
-   "official": {
-    "acres": 18000.0,
-    "as": "18,000 acres",
-    "clean": false,
-    "line": "e is a natural treasure on the northshore of Lake Pontchartrain north of New Orleans, LA. The refuge has over 18,000 acres of freshwater and brackish marsh, bald cypress-tupelo forest, bayous, hardwood forest hammocks, and pine sava",
-    "read": "2026-11-09",
-    "sent": "The refuge has over 18,000 acres of freshwater and brackish marsh, bald cypress-tupelo forest, bayous, hardwood forest hammocks, and pine savannah.",
-    "url": "https://www.fws.gov/refuge/delta/visit-us",
-    "why": "total-looking"
-   },
+   "official": null,
    "ours": {
     "acres": 50260,
     "dissolved": {
@@ -1427,7 +1292,7 @@
      "why": "FWS refuge about page"
     }
    ],
-   "pct": 179,
+   "pct": null,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -1476,23 +1341,13 @@
    ],
    "t": "National Wildlife Refuge",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "unsure"
   },
   "US-0309": {
-   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 25,000 acres, no total words near it)",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Grand Cote National Wildlife Refuge",
-   "official": {
-    "acres": 25000.0,
-    "as": "25,000 acres",
-    "clean": false,
-    "line": "a NWR was established in 1958 as a wintering area for migratory waterfowl. Most of the Refuge's approximately 25,000 acres are lowland hardwood forests subject to backwater flooding from the Ouachita, Black, and Red Rivers. National",
-    "read": "2026-11-09",
-    "sent": "Most of the Refuge's approximately 25,000 acres are lowland hardwood forests subject to backwater flooding from the Ouachita, Black, and Red Rivers.",
-    "url": "https://www.fws.gov/refuge/grand-cote/about-us",
-    "why": "no total words near it"
-   },
+   "official": null,
    "ours": {
     "acres": 5927,
     "dissolved": {
@@ -1525,29 +1380,18 @@
      "why": "the park's page (data/parkinfo)"
     },
     {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/grand-cote/about-us",
-     "why": "about / history page of the park's site"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/grand-cote/visit-us",
-     "why": "about / history page of the park's site"
-    },
-    {
      "other_unit": true,
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/grand-cote/visit-us/rules-policies",
      "why": "rules page (documents bot)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/grand-cote/about-us",
      "why": "FWS refuge about page"
     }
    ],
-   "pct": 76,
-   "same_agency": false,
+   "pct": null,
    "score": 7,
    "score_parts": {
     "name": 2,
@@ -1555,41 +1399,13 @@
     "size": 1,
     "source": 2
    },
-   "sizes": [
-    {
-     "acres": 25000.0,
-     "as": "25,000 acres",
-     "clean": false,
-     "line": "a NWR was established in 1958 as a wintering area for migratory waterfowl. Most of the Refuge's approximately 25,000 acres are lowland hardwood forests subject to backwater flooding from the Ouachita, Black, and Red Rivers. National",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/grand-cote/about-us",
-     "why": "no total words near it"
-    },
-    {
-     "acres": 25000.0,
-     "as": "25,000 acres",
-     "clean": false,
-     "line": "a NWR was established in 1958 as a wintering area for migratory waterfowl. Most of the Refuge's approximately 25,000 acres are lowland hardwood forests subject to backwater flooding from the Ouachita, Black, and Red Rivers. National",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/grand-cote/visit-us",
-     "why": "no total words near it"
-    },
-    {
-     "acres": 25000.0,
-     "as": "25,000 acres",
-     "clean": false,
-     "line": "a NWR was established in 1958 as a wintering area for migratory waterfowl. Most of the Refuge's approximately 25,000 acres are lowland hardwood forests subject to backwater flooding from the Ouachita, Black, and Red Rivers. National",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/grand-cote/about-us",
-     "why": "no total words near it"
-    }
-   ],
+   "sizes": [],
    "t": "National Wildlife Refuge",
    "ver": 15,
-   "verdict": "unsure"
+   "verdict": "no size on page"
   },
   "US-0311": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lacassine National Wildlife Refuge",
    "official": {
@@ -1597,7 +1413,7 @@
     "as": "34,724 acre",
     "clean": false,
     "line": "yways, making the refuge critically important to migratory birds, especially wintering waterfowl. Most of the 34,724-acre refuge consists of freshwater marsh with only a few natural ridges and levees. The dominant feature of the re",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Most of the 34,724-acre refuge consists of freshwater marsh with only a few natural ridges and levees.",
     "url": "https://www.fws.gov/refuge/lacassine/about-us",
     "why": "total-looking"
@@ -1738,18 +1554,18 @@
    "verdict": "agree"
   },
   "US-0312": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lake Ophelia National Wildlife Refuge",
    "official": {
     "acres": 17500.0,
     "as": "17,500 acres",
     "clean": false,
-    "line": "uch of the area that would become Lake Ophelia NWR was cleared for agriculture. Today, the Refuge consists of 17,500 acres characterized by ridges and swales that create a great diversity of plant and animal communities. The refuge",
-    "read": "2026-11-09",
-    "sent": "Today, the Refuge consists of 17,500 acres characterized by ridges and swales that create a great diversity of plant and animal communities.",
+    "line": "ore habitat for migratory birds, aquatic resources, and endangered plants and animals. The refuge consists of 17,500 acres of diverse topography, featuring ridges, swales, and the 350-acre Lake Ophelia. Major habitats include bottom",
+    "read": "2026-11-22",
+    "sent": "The refuge consists of 17,500 acres of diverse topography, featuring ridges, swales, and the 350-acre Lake Ophelia.",
     "url": "https://www.fws.gov/refuge/lake-ophelia",
-    "why": "total-looking"
+    "why": "part (a lake, a purchase, a campground…)"
    },
    "ours": {
     "acres": 17982,
@@ -1777,7 +1593,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -1790,97 +1606,52 @@
     },
     {
      "other_unit": true,
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/lake-ophelia/visit-us/rules-policies",
      "why": "rules page (documents bot)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/lake-ophelia/about-us",
      "why": "FWS refuge about page"
     }
    ],
    "pct": 3,
    "same_agency": false,
-   "score": 8,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 2,
     "source": 2
    },
    "sizes": [
     {
-     "acres": 17500.0,
-     "as": "17,500 acres",
+     "acres": 12000.0,
+     "as": "12,000 acres",
      "clean": false,
-     "line": "uch of the area that would become Lake Ophelia NWR was cleared for agriculture. Today, the Refuge consists of 17,500 acres characterized by ridges and swales that create a great diversity of plant and animal communities. The refuge",
-     "total_like": true,
-     "url": "https://www.fws.gov/refuge/lake-ophelia",
-     "why": "total-looking"
-    },
-    {
-     "acres": 350.0,
-     "as": "350 acre",
-     "clean": false,
-     "line": "swales that create a great diversity of plant and animal communities. The refuge is named for Lake Ophelia, a 350-acre permanently flooded lake. Learn More About Us What We Do Refuge staff use a variety of tools to manage wildli",
+     "line": "plants and animals. Horseback riding is not authorized on the refuge. Fishing and hunting is allowed on over 12,000 acres of the refuge. Special refuge regulations apply. Regulations Brochure 2026-2027 An annual recreational activi",
      "total_like": false,
      "url": "https://www.fws.gov/refuge/lake-ophelia",
-     "why": "part (a lake, a purchase, a campground…)"
-    },
-    {
-     "acres": 17500.0,
-     "as": "17,500 acres",
-     "clean": true,
-     "line": "ing habitat for migratory birds, aquatic resources, and endangered plants and animals. The Refuge consists of 17,500 acres. Topography on the refuge is characterized by ridges and swales that create a great diversity of plant and an",
-     "total_like": true,
-     "url": "https://www.fws.gov/refuge/lake-ophelia/about-us",
-     "why": "clean total"
-    },
-    {
-     "acres": 350.0,
-     "as": "350 acre",
-     "clean": false,
-     "line": "swales that create a great diversity of plant and animal communities. The refuge is named for Lake Ophelia, a 350-acre permanently flooded lake. Major habitat types found on the refuge include: 8,400 acres bottomland forest, 4,2",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/lake-ophelia/about-us",
-     "why": "part (a lake, a purchase, a campground…)"
-    },
-    {
-     "acres": 8400.0,
-     "as": "8,400 acres",
-     "clean": false,
-     "line": "named for Lake Ophelia, a 350-acre permanently flooded lake. Major habitat types found on the refuge include: 8,400 acres bottomland forest, 4,200 acres reforestation and 3,400 acres cropland that are used to provide winter forage",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/lake-ophelia/about-us",
-     "why": "part (a lake, a purchase, a campground…)"
-    },
-    {
-     "acres": 4200.0,
-     "as": "4,200 acres",
-     "clean": false,
-     "line": "cre permanently flooded lake. Major habitat types found on the refuge include: 8,400 acres bottomland forest, 4,200 acres reforestation and 3,400 acres cropland that are used to provide winter forage for migratory waterfowl, 500 ac",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/lake-ophelia/about-us",
-     "why": "part (a lake, a purchase, a campground…)"
-    },
-    {
-     "acres": 3400.0,
-     "as": "3,400 acres",
-     "clean": false,
-     "line": "Major habitat types found on the refuge include: 8,400 acres bottomland forest, 4,200 acres reforestation and 3,400 acres cropland that are used to provide winter forage for migratory waterfowl, 500 acres of managed moist soil wetl",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/lake-ophelia/about-us",
-     "why": "part (a lake, a purchase, a campground…)"
-    },
-    {
-     "acres": 500.0,
-     "as": "500 acres",
-     "clean": false,
-     "line": "acres reforestation and 3,400 acres cropland that are used to provide winter forage for migratory waterfowl, 500 acres of managed moist soil wetlands and 1,000 acres of lakes and bayous. Other Facilities in this Complex Lake Oph",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/lake-ophelia/about-us",
      "why": "no total words near it"
+    },
+    {
+     "acres": 17500.0,
+     "as": "17,500 acres",
+     "clean": false,
+     "line": "ore habitat for migratory birds, aquatic resources, and endangered plants and animals. The refuge consists of 17,500 acres of diverse topography, featuring ridges, swales, and the 350-acre Lake Ophelia. Major habitats include bottom",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/lake-ophelia",
+     "why": "part (a lake, a purchase, a campground…)"
+    },
+    {
+     "acres": 350.0,
+     "as": "350 acre",
+     "clean": false,
+     "line": "nts and animals. The refuge consists of 17,500 acres of diverse topography, featuring ridges, swales, and the 350-acre Lake Ophelia. Major habitats include bottomland forests, reforestation areas, croplands for wintering waterfo",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/lake-ophelia",
+     "why": "part (a lake, a purchase, a campground…)"
     }
    ],
    "t": "National Wildlife Refuge",
@@ -1888,7 +1659,7 @@
    "verdict": "agree"
   },
   "US-0314": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Mandalay National Wildlife Refuge",
    "official": {
@@ -1896,21 +1667,19 @@
     "as": "4,212 acres",
     "clean": true,
     "line": "nting. Located approximately five miles southwest of Houma, LA, Mandalay National Wildlife Refuge encompasses 4,212 acres of freshwater marsh, cypress-tupelo swamp and man-made canals, and is bisected by the Gulf Intracoastal Water",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Located approximately five miles southwest of Houma, LA, Mandalay National Wildlife Refuge encompasses 4,212 acres of freshwater marsh, cypress-tupelo swamp and man-made canals, and is bisected by the Gulf Intracoastal Waterway.",
     "url": "https://www.fws.gov/refuge/mandalay/visit-us",
     "why": "clean total"
    },
    "ours": {
-    "acres": 4735,
+    "acres": 4390,
     "dissolved": {
      "after": 4390,
      "before": 8780,
      "copies": 1,
-     "key_union": 4735,
      "parts": 0,
      "records": 2,
-     "summed": 4390,
      "tracts": 1
     },
     "manager": "",
@@ -1951,7 +1720,7 @@
      "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
     }
    ],
-   "pct": 12,
+   "pct": 4,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -2004,29 +1773,36 @@
   },
   "US-0315": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-09",
-   "handover": [],
+   "checked": "2026-11-22",
+   "handover": [
+    {
+     "date_hint": null,
+     "kind": "managed by",
+     "line": "can help answer questions you may have about the refuge. The visitor center also has a nature store operated by the Friends of Red River Refuge open only when volunteers are available to staff it. There are 5 miles of hiking trails at the Visitor Center/Head",
+     "owner_now": "Friends of Red River Refuge",
+     "src": "https://www.fws.gov/refuge/red-river",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
    "n": "Red River National Wildlife Refuge",
    "official": {
     "acres": 50000.0,
     "as": "50,000 acres",
     "clean": true,
-    "line": "in August 2002 consisting of 1,377 acres. According to legislation, the refuge shall consist of approximately 50,000 acres of Federal lands and waters along that section of the Red River between Colfax, Louisiana and the Arkansas st",
-    "read": "2026-11-09",
-    "sent": "According to legislation, the refuge shall consist of approximately 50,000 acres of Federal lands and waters along that section of the Red River between Colfax, Louisiana and the Arkansas state line, a distance of approximately 120 miles.",
-    "url": "https://www.fws.gov/refuge/red-river/about-us",
+    "line": "and conserve native plant and animal communities within the Red River basin. It aims to eventually encompass 50,000 acres of federal lands and waters along a 120-mile stretch of the Red River between Colfax, Louisiana, and the Arka",
+    "read": "2026-11-22",
+    "sent": "It aims to eventually encompass 50,000 acres of federal lands and waters along a 120-mile stretch of the Red River between Colfax, Louisiana, and the Arkansas state line.",
+    "url": "https://www.fws.gov/refuge/red-river",
     "why": "clean total"
    },
    "ours": {
-    "acres": 12182,
+    "acres": 15107,
     "dissolved": {
      "after": 15107,
      "before": 30214,
      "copies": 1,
-     "key_union": 12182,
      "parts": 0,
      "records": 2,
-     "summed": 15107,
      "tracts": 1
     },
     "manager": "",
@@ -2039,97 +1815,36 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
-   "owner_now": null,
+   "owner_now": "Friends of Red River Refuge",
    "pages": [
     {
      "status": "ok",
      "url": "https://www.fws.gov/refuge/red-river",
      "why": "the park's page (data/parkinfo)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/red-river/about-us",
-     "why": "about / history page of the park's site"
-    },
-    {
-     "other_unit": true,
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/red-river/visit-us/rules-policies",
-     "why": "rules page (documents bot)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/red-river/about-us",
-     "why": "FWS refuge about page"
     }
    ],
-   "pct": 76,
+   "pct": 70,
    "same_agency": false,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 0,
     "source": 2
    },
    "sizes": [
     {
-     "acres": 1377.0,
-     "as": "1,377 acres",
-     "clean": false,
-     "line": "fuge Act - signed into law on October 13, 2000. The first land purchase was made in August 2002 consisting of 1,377 acres. According to legislation, the refuge shall consist of approximately 50,000 acres of Federal lands and waters",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/red-river/about-us",
-     "why": "part (a lake, a purchase, a campground…)"
-    },
-    {
      "acres": 50000.0,
      "as": "50,000 acres",
      "clean": true,
-     "line": "in August 2002 consisting of 1,377 acres. According to legislation, the refuge shall consist of approximately 50,000 acres of Federal lands and waters along that section of the Red River between Colfax, Louisiana and the Arkansas st",
+     "line": "and conserve native plant and animal communities within the Red River basin. It aims to eventually encompass 50,000 acres of federal lands and waters along a 120-mile stretch of the Red River between Colfax, Louisiana, and the Arka",
      "total_like": true,
-     "url": "https://www.fws.gov/refuge/red-river/about-us",
+     "url": "https://www.fws.gov/refuge/red-river",
      "why": "clean total"
-    },
-    {
-     "acres": 50000.0,
-     "as": "50,000 acres",
-     "clean": false,
-     "line": "t through the reforestation of marginal farmlands and highly erodible lands in the Red River Valley. Once the 50,000 acres has been acquired, the refuge will connect with other conservation areas reducing habitat fragmentation and p",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/red-river/about-us",
-     "why": "history"
-    },
-    {
-     "acres": 1377.0,
-     "as": "1,377 acres",
-     "clean": false,
-     "line": "fuge Act - signed into law on October 13, 2000. The first land purchase was made in August 2002 consisting of 1,377 acres. According to legislation, the refuge shall consist of approximately 50,000 acres of Federal lands and waters",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/red-river/about-us",
-     "why": "part (a lake, a purchase, a campground…)"
-    },
-    {
-     "acres": 50000.0,
-     "as": "50,000 acres",
-     "clean": true,
-     "line": "in August 2002 consisting of 1,377 acres. According to legislation, the refuge shall consist of approximately 50,000 acres of Federal lands and waters along that section of the Red River between Colfax, Louisiana and the Arkansas st",
-     "total_like": true,
-     "url": "https://www.fws.gov/refuge/red-river/about-us",
-     "why": "clean total"
-    },
-    {
-     "acres": 50000.0,
-     "as": "50,000 acres",
-     "clean": false,
-     "line": "t through the reforestation of marginal farmlands and highly erodible lands in the Red River Valley. Once the 50,000 acres has been acquired, the refuge will connect with other conservation areas reducing habitat fragmentation and p",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/red-river/about-us",
-     "why": "history"
     }
    ],
    "t": "National Wildlife Refuge",
@@ -2138,7 +1853,7 @@
   },
   "US-0316": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 184,000 acres, no total words near it)",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": "2018",
@@ -2155,7 +1870,7 @@
     "as": "184,000 acres",
     "clean": false,
     "line": "ates and U.S. territories, all of which are administered by the U.S. Fish and Wildlife Service. The more than 184,000 acres of land contained within boundaries of the four National Wildlife Refuges in southwest Louisiana supports num",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The more than 184,000 acres of land contained within boundaries of the four National Wildlife Refuges in southwest Louisiana supports numerous species of both plants and wildlife.",
     "url": "https://www.fws.gov/refuge/sabine/about-us",
     "why": "no total words near it"
@@ -2283,18 +1998,18 @@
    "verdict": "unsure"
   },
   "US-0318": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Tensas River National Wildlife Refuge",
    "official": {
     "acres": 80000.0,
     "as": "80,000 acres",
-    "clean": false,
-    "line": "mmals, birds, reptiles, amphibians, and fish can be found on the refuge. Today, the refuge consists of nearly 80,000 acres of bottomland hardwood forests and oxbow lakes. This type of habitat once covered 25 million acres of the Mis",
-    "read": "2026-11-09",
-    "sent": "Today, the refuge consists of nearly 80,000 acres of bottomland hardwood forests and oxbow lakes.",
-    "url": "https://www.fws.gov/refuge/tensas-river/about-us",
-    "why": "total-looking"
+    "clean": true,
+    "line": "develop environmental resources and conserve diverse fish and wildlife habitat. The refuge consists of nearly 80,000 acres of bottomland hardwood forests and oxbow lakes, supporting the state&#x27;s largest population of the Louisia",
+    "read": "2026-11-22",
+    "sent": "The refuge consists of nearly 80,000 acres of bottomland hardwood forests and oxbow lakes, supporting the state&#x27;s largest population of the Louisiana black bear.",
+    "url": "https://www.fws.gov/refuge/tensas-river",
+    "why": "clean total"
    },
    "ours": {
     "acres": 77852,
@@ -2328,18 +2043,13 @@
      "why": "the park's page (data/parkinfo)"
     },
     {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/tensas-river/about-us",
-     "why": "about / history page of the park's site"
-    },
-    {
      "other_unit": true,
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/tensas-river/visit-us/rules-policies",
      "why": "rules page (documents bot)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/tensas-river/about-us",
      "why": "FWS refuge about page"
     }
@@ -2357,38 +2067,11 @@
     {
      "acres": 80000.0,
      "as": "80,000 acres",
-     "clean": false,
-     "line": "mmals, birds, reptiles, amphibians, and fish can be found on the refuge. Today, the refuge consists of nearly 80,000 acres of bottomland hardwood forests and oxbow lakes. This type of habitat once covered 25 million acres of the Mis",
+     "clean": true,
+     "line": "develop environmental resources and conserve diverse fish and wildlife habitat. The refuge consists of nearly 80,000 acres of bottomland hardwood forests and oxbow lakes, supporting the state&#x27;s largest population of the Louisia",
      "total_like": true,
-     "url": "https://www.fws.gov/refuge/tensas-river/about-us",
-     "why": "total-looking"
-    },
-    {
-     "acres": 25000000.0,
-     "as": "25 million acres",
-     "clean": false,
-     "line": "ists of nearly 80,000 acres of bottomland hardwood forests and oxbow lakes. This type of habitat once covered 25 million acres of the Mississippi Alluvial Valley. Today, the state's largest population of the Louisiana black bear lives t",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/tensas-river/about-us",
-     "why": "history"
-    },
-    {
-     "acres": 80000.0,
-     "as": "80,000 acres",
-     "clean": false,
-     "line": "mmals, birds, reptiles, amphibians, and fish can be found on the refuge. Today, the refuge consists of nearly 80,000 acres of bottomland hardwood forests and oxbow lakes. This type of habitat once covered 25 million acres of the Mis",
-     "total_like": true,
-     "url": "https://www.fws.gov/refuge/tensas-river/about-us",
-     "why": "total-looking"
-    },
-    {
-     "acres": 25000000.0,
-     "as": "25 million acres",
-     "clean": false,
-     "line": "ists of nearly 80,000 acres of bottomland hardwood forests and oxbow lakes. This type of habitat once covered 25 million acres of the Mississippi Alluvial Valley. Today, the state's largest population of the Louisiana black bear lives t",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/tensas-river/about-us",
-     "why": "history"
+     "url": "https://www.fws.gov/refuge/tensas-river",
+     "why": "clean total"
     }
    ],
    "t": "National Wildlife Refuge",
@@ -2396,29 +2079,10 @@
    "verdict": "agree"
   },
   "US-0319": {
-   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 26,130 acres, no total words near it)",
-   "checked": "2026-11-09",
-   "handover": [
-    {
-     "date_hint": "2014",
-     "kind": "transfer",
-     "line": "16,191 acres, was purchased from one landowner in parcels from 1997-1999. Plum Creek Timber Company sold 4,939 acres to the Service on the western edge of the refuge from 1999 to 2004 and the Barrs and Glawson tract north of Mollicy was acquired in 2014. Active acquisition continues on the Refuge to",
-     "owner_now": "Service",
-     "src": "https://www.fws.gov/refuge/upper-ouachita/about-us",
-     "why": "about / history page of the park's site"
-    }
-   ],
+   "checked": "2026-11-22",
+   "handover": [],
    "n": "Upper Ouachita National Wildlife Refuge",
-   "official": {
-    "acres": 26130.0,
-    "as": "26,130 acres",
-    "clean": false,
-    "line": "d a purchase agreement. In early 1978, when the Service learned that Pennzoil was willing to sell most of its 26,130 acres in the refuge area, an environmental assessment was prepared and signed by the Service’s Regional Director on",
-    "read": "2026-11-09",
-    "sent": "In early 1978, when the Service learned that Pennzoil was willing to sell most of its 26,130 acres in the refuge area, an environmental assessment was prepared and signed by the Service’s Regional Director on July 20, 1978.",
-    "url": "https://www.fws.gov/refuge/upper-ouachita/about-us",
-    "why": "no total words near it"
-   },
+   "official": null,
    "ours": {
     "acres": 54556,
     "dissolved": {
@@ -2443,7 +2107,7 @@
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
-   "owner_now": "Service",
+   "owner_now": null,
    "pages": [
     {
      "status": "ok",
@@ -2451,29 +2115,18 @@
      "why": "the park's page (data/parkinfo)"
     },
     {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/upper-ouachita/about-us",
-     "why": "about / history page of the park's site"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/upper-ouachita/visit-us",
-     "why": "about / history page of the park's site"
-    },
-    {
      "other_unit": true,
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/upper-ouachita/visit-us/rules-policies",
      "why": "rules page (documents bot)"
     },
     {
-     "status": "ok",
+     "status": "HTTP 404",
      "url": "https://www.fws.gov/refuge/upper-ouachita/about-us",
      "why": "FWS refuge about page"
     }
    ],
-   "pct": 109,
-   "same_agency": false,
+   "pct": null,
    "score": 7,
    "score_parts": {
     "name": 2,
@@ -2481,95 +2134,22 @@
     "size": 1,
     "source": 2
    },
-   "sizes": [
-    {
-     "acres": 26130.0,
-     "as": "26,130 acres",
-     "clean": false,
-     "line": "d a purchase agreement. In early 1978, when the Service learned that Pennzoil was willing to sell most of its 26,130 acres in the refuge area, an environmental assessment was prepared and signed by the Service’s Regional Director on",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/upper-ouachita/about-us",
-     "why": "no total words near it"
-    },
-    {
-     "acres": 20834.0,
-     "as": "20,834 acres",
-     "clean": false,
-     "line": "rvice’s Regional Director on July 20, 1978. In November, the first acquisition was completed with the sale of 20,834 acres by Pennzoil. Only the surface rights to the land were acquired, with Pennzoil reserving in perpetuity all oil",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/upper-ouachita/about-us",
-     "why": "no total words near it"
-    },
-    {
-     "acres": 16191.0,
-     "as": "16,191 acres",
-     "clean": false,
-     "line": "ennzoil reserving in perpetuity all oil and gas deposits found under the land. The Mollicy Unit, which totals 16,191 acres, was purchased from one landowner in parcels from 1997-1999. Plum Creek Timber Company sold 4,939 acres to th",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/upper-ouachita/about-us",
-     "why": "part (a lake, a purchase, a campground…)"
-    },
-    {
-     "acres": 4939.0,
-     "as": "4,939 acres",
-     "clean": false,
-     "line": "tals 16,191 acres, was purchased from one landowner in parcels from 1997-1999. Plum Creek Timber Company sold 4,939 acres to the Service on the western edge of the refuge from 1999 to 2004 and the Barrs and Glawson tract north of M",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/upper-ouachita/about-us",
-     "why": "history"
-    },
-    {
-     "acres": 26130.0,
-     "as": "26,130 acres",
-     "clean": false,
-     "line": "d a purchase agreement. In early 1978, when the Service learned that Pennzoil was willing to sell most of its 26,130 acres in the refuge area, an environmental assessment was prepared and signed by the Service’s Regional Director on",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/upper-ouachita/about-us",
-     "why": "no total words near it"
-    },
-    {
-     "acres": 20834.0,
-     "as": "20,834 acres",
-     "clean": false,
-     "line": "rvice’s Regional Director on July 20, 1978. In November, the first acquisition was completed with the sale of 20,834 acres by Pennzoil. Only the surface rights to the land were acquired, with Pennzoil reserving in perpetuity all oil",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/upper-ouachita/about-us",
-     "why": "no total words near it"
-    },
-    {
-     "acres": 16191.0,
-     "as": "16,191 acres",
-     "clean": false,
-     "line": "ennzoil reserving in perpetuity all oil and gas deposits found under the land. The Mollicy Unit, which totals 16,191 acres, was purchased from one landowner in parcels from 1997-1999. Plum Creek Timber Company sold 4,939 acres to th",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/upper-ouachita/about-us",
-     "why": "part (a lake, a purchase, a campground…)"
-    },
-    {
-     "acres": 4939.0,
-     "as": "4,939 acres",
-     "clean": false,
-     "line": "tals 16,191 acres, was purchased from one landowner in parcels from 1997-1999. Plum Creek Timber Company sold 4,939 acres to the Service on the western edge of the refuge from 1999 to 2004 and the Barrs and Glawson tract north of M",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/upper-ouachita/about-us",
-     "why": "history"
-    }
-   ],
+   "sizes": [],
    "t": "National Wildlife Refuge",
    "ver": 15,
-   "verdict": "unsure"
+   "verdict": "no size on page"
   },
   "US-0723": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Vicksburg National Military Park",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-MS': 2441, 'US-LA': 3})",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-LA': 3, 'US-MS': 2444})",
    "official": null,
    "ours": {
-    "acres": 2444,
+    "acres": 2447,
     "acres_by_state": {
      "US-LA": 3,
-     "US-MS": 2441
+     "US-MS": 2444
     },
     "manager": "",
     "pieces": [
@@ -2577,14 +2157,14 @@
       3292,
       "Vicksburg National Military Park",
       3,
-      "name"
+      "reviewed"
      ]
     ],
-    "pin": "well outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "states": [
-     "US-MS",
-     "US-LA"
+     "US-LA",
+     "US-MS"
     ],
     "unknown_pieces": 0,
     "whole_park": true
@@ -2619,12 +2199,12 @@
     }
    ],
    "pct": null,
-   "score": 4,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 0,
+    "pin": 2,
     "size": 1,
-    "source": 1
+    "source": 2
    },
    "sizes": [],
    "t": "National Military Park",
@@ -2632,7 +2212,7 @@
    "verdict": "no size on page"
   },
   "US-0729": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Cane River Creole National Historical Park",
    "official": null,
@@ -2694,7 +2274,7 @@
    "verdict": "no size on page"
   },
   "US-0958": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Poverty Point National Monument",
    "ours": null,
@@ -2706,11 +2286,11 @@
   "US-10097": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Queen Bess Island Wildlife Refuge",
    "official": null,
    "ours": {
-    "acres": 29,
+    "acres": 41,
     "family_fold": "layers {'sglac': 41, 'lar': 35}: one land in 2 layers, the sglac copy used (35 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -2749,7 +2329,7 @@
   "US-10109": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "State Wildlife Refuge",
    "official": null,
    "ours": {
@@ -2800,19 +2380,17 @@
   "US-10119": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Waddill Wildlife Refuge",
    "official": null,
    "ours": {
-    "acres": 182,
+    "acres": 244,
     "dissolved": {
      "after": 244,
      "before": 732,
      "copies": 2,
-     "key_union": 182,
      "parts": 0,
      "records": 3,
-     "summed": 244,
      "tracts": 1
     },
     "manager": "",
@@ -2853,7 +2431,7 @@
   "US-10134": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "White Lake Wetlands Conservation Area",
    "official": null,
    "ours": {
@@ -2904,7 +2482,7 @@
   "US-10142": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Rockefeller Wildlife Refuge",
    "official": null,
    "ours": {
@@ -2955,19 +2533,17 @@
   "US-10352": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Floy Ward McElroy Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 416,
+    "acres": 689,
     "dissolved": {
      "after": 689,
      "before": 2746,
      "copies": 3,
-     "key_union": 416,
      "parts": 0,
      "records": 4,
-     "summed": 689,
      "tracts": 1
     },
     "manager": "",
@@ -2980,7 +2556,7 @@
       "words"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -3008,11 +2584,11 @@
   "US-10353": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Isle Dernieres Barrier Islands Wildlife Refuge",
    "official": null,
    "ours": {
-    "acres": 1977,
+    "acres": 2677,
     "manager": "",
     "pieces": [
      [
@@ -3028,7 +2604,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -3054,7 +2630,7 @@
    "verdict": "no size on page"
   },
   "US-10354": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Forts Randolph & Buhlow State Historic Site",
    "ours": null,
@@ -3066,11 +2642,11 @@
   "US-10413": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Acadiana Conservation Corridor Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 1653,
+    "acres": 2105,
     "dissolved": {
      "after": 4430,
      "before": 8718,
@@ -3081,7 +2657,7 @@
      },
      "family_fold": 2145,
      "family_used": "sglab",
-     "key_union": 1653,
+     "key_union": 2105,
      "parts": 0,
      "records": 4,
      "summed": 2285,
@@ -3098,7 +2674,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -3124,7 +2700,7 @@
    "verdict": "no size on page"
   },
   "US-10447": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Audubon State Historic Site",
    "ours": null,
@@ -3136,7 +2712,7 @@
   "US-10448": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Centenary State Historic Site",
    "official": null,
    "ours": {
@@ -3178,7 +2754,7 @@
   "US-10449": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Fort Jessup State Historic Site",
    "official": null,
    "ours": {
@@ -3220,7 +2796,7 @@
   "US-10450": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Fort St. Jean Baptiste State Historic Site",
    "official": null,
    "ours": {
@@ -3262,7 +2838,7 @@
   "US-10451": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Longfellow-Evangeline State Historic Site",
    "official": null,
    "ours": {
@@ -3276,7 +2852,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -3304,7 +2880,7 @@
   "US-10452": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Los Adaes State Historic Site",
    "official": null,
    "ours": {
@@ -3346,7 +2922,7 @@
   "US-10453": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Mansfield State Historic Site",
    "official": null,
    "ours": {
@@ -3388,7 +2964,7 @@
   "US-10454": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Rebel State Historic Site",
    "official": null,
    "ours": {
@@ -3430,7 +3006,7 @@
   "US-10455": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Rosedown Plantation State Historic Site",
    "official": null,
    "ours": {
@@ -3472,7 +3048,7 @@
   "US-10456": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Esler Field Wildlife Management Area",
    "official": null,
    "ours": {
@@ -3514,7 +3090,7 @@
   "US-10562": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Port Hudson State Historic Site",
    "official": null,
    "ours": {
@@ -3528,7 +3104,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -3556,7 +3132,7 @@
   "US-10563": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Fort Johnson-Vernon Wildlife Management Area",
    "official": null,
    "ours": {
@@ -3570,7 +3146,7 @@
       "reviewed"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -3598,7 +3174,7 @@
   "US-12489": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Bogue Chitto Wildlife Management Area",
    "official": null,
    "ours": {
@@ -3640,7 +3216,7 @@
   "US-12490": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Flatwoods Savanna Wildlife Management Area",
    "official": null,
    "ours": {
@@ -3654,7 +3230,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -3682,11 +3258,11 @@
   "US-13090": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "John Franks Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 3353,
+    "acres": 3777,
     "family_fold": "layers {'sglac': 3777, 'sglab': 3664}: one land in 2 layers, the sglac copy used (3,664 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -3725,7 +3301,7 @@
   "US-2356": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Bayou Segnette State Park",
    "official": null,
    "ours": {
@@ -3767,7 +3343,7 @@
   "US-2357": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Bogue Chitto State Park",
    "official": null,
    "ours": {
@@ -3809,7 +3385,7 @@
   "US-2358": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Chemin-A-Haut State Park",
    "official": null,
    "ours": {
@@ -3851,7 +3427,7 @@
   "US-2359": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Chicot State Park",
    "official": null,
    "ours": {
@@ -3891,7 +3467,7 @@
    "verdict": "no size on page"
   },
   "US-2360": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Cypremort Point State Park",
    "ours": null,
@@ -3903,7 +3479,7 @@
   "US-2361": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Fairview-Riverside State Park",
    "official": null,
    "ours": {
@@ -3945,7 +3521,7 @@
   "US-2362": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Fontainebleau State Park",
    "official": null,
    "ours": {
@@ -3987,7 +3563,7 @@
   "US-2363": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Grand Isle State Park",
    "official": null,
    "ours": {
@@ -4027,7 +3603,7 @@
    "verdict": "no size on page"
   },
   "US-2365": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Jimmie Davis State Park",
    "ours": null,
@@ -4039,7 +3615,7 @@
   "US-2366": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Lake Bistineau State Park",
    "official": null,
    "ours": {
@@ -4081,7 +3657,7 @@
   "US-2367": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Lake Bruin State Park",
    "official": null,
    "ours": {
@@ -4123,7 +3699,7 @@
   "US-2368": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Lake Claiborne State Park",
    "official": null,
    "ours": {
@@ -4165,7 +3741,7 @@
   "US-2369": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Lake D'Arbonne State Park",
    "official": null,
    "ours": {
@@ -4207,11 +3783,11 @@
   "US-2370": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Lake Fausse Pointe State Park",
    "official": null,
    "ours": {
-    "acres": 5048,
+    "acres": 5572,
     "manager": "",
     "pieces": [
      [
@@ -4255,7 +3831,7 @@
   "US-2371": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "North Toledo Bend State Park",
    "official": null,
    "ours": {
@@ -4297,7 +3873,7 @@
   "US-2372": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Palmetto Island State Park",
    "official": null,
    "ours": {
@@ -4337,7 +3913,7 @@
    "verdict": "no size on page"
   },
   "US-2373": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Poverty Point Reservoir State Park",
    "ours": null,
@@ -4347,7 +3923,7 @@
    "verdict": "no outline"
   },
   "US-2374": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Saint Bernard State Park",
    "ours": null,
@@ -4359,7 +3935,7 @@
   "US-2375": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Sam Houston Jones State Park",
    "official": null,
    "ours": {
@@ -4401,7 +3977,7 @@
   "US-2376": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "South Toledo Bend State Park",
    "official": null,
    "ours": {
@@ -4443,7 +4019,7 @@
   "US-2377": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Tickfaw State Park",
    "official": null,
    "ours": {
@@ -4457,7 +4033,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -4485,7 +4061,7 @@
   "US-4042": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Alexander State Forest Wildlife Management Area",
    "official": null,
    "ours": {
@@ -4543,7 +4119,7 @@
   "US-4043": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Atchafalaya Delta Wildlife Management Area",
    "official": null,
    "ours": {
@@ -4594,7 +4170,7 @@
   "US-4044": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Attakapas Island Wildlife Management Area",
    "official": null,
    "ours": {
@@ -4653,7 +4229,7 @@
   "US-4045": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Bayou Macon Wildlife Management Area",
    "official": null,
    "ours": {
@@ -4711,11 +4287,11 @@
   "US-4046": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Bayou Pierre Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 3129,
+    "acres": 2837,
     "dissolved": {
      "after": 5108,
      "before": 10740,
@@ -4726,10 +4302,8 @@
      },
      "family_fold": 2271,
      "family_used": "sglaa",
-     "key_union": 3129,
      "parts": 0,
      "records": 4,
-     "summed": 2837,
      "tracts": 2
     },
     "family_fold": "layers {'sglaa': 2837, 'padus': 2271}: one land in 2 layers, the sglaa copy used (2,271 ac of copies not added)",
@@ -4771,19 +4345,17 @@
   "US-4047": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Ben Lilly Conservation Area",
    "official": null,
    "ours": {
-    "acres": 212,
+    "acres": 269,
     "dissolved": {
      "after": 269,
      "before": 807,
      "copies": 2,
-     "key_union": 212,
      "parts": 0,
      "records": 3,
-     "summed": 269,
      "tracts": 1
     },
     "manager": "",
@@ -4824,11 +4396,11 @@
   "US-4048": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Big Colewa Bayou Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 511,
+    "acres": 929,
     "dissolved": {
      "after": 2745,
      "before": 4639,
@@ -4839,7 +4411,7 @@
      },
      "family_fold": 947,
      "family_used": "sglab",
-     "key_union": 511,
+     "key_union": 929,
      "parts": 0,
      "records": 4,
      "summed": 1798,
@@ -4884,7 +4456,7 @@
   "US-4049": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Big Lake Wildlife Management Area",
    "official": null,
    "ours": {
@@ -4935,7 +4507,7 @@
   "US-4050": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Biloxi Wildlife Management Area",
    "official": null,
    "ours": {
@@ -4993,7 +4565,7 @@
   "US-4051": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Bodcau Wildlife Management Area",
    "official": null,
    "ours": {
@@ -5051,7 +4623,7 @@
   "US-4052": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Boeuf Wildlife Management Area",
    "official": null,
    "ours": {
@@ -5109,7 +4681,7 @@
   "US-4053": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Buckhorn Wildlife Management Area",
    "official": null,
    "ours": {
@@ -5160,7 +4732,7 @@
   "US-4055": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Clear Creek Wildlife Management Area",
    "official": null,
    "ours": {
@@ -5211,7 +4783,7 @@
   "US-4056": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Dewey Wills Wildlife Management Area",
    "official": null,
    "ours": {
@@ -5270,11 +4842,11 @@
   "US-4057": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Elbow Slough Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 73,
+    "acres": 162,
     "dissolved": {
      "after": 333,
      "before": 673,
@@ -5285,7 +4857,7 @@
      },
      "family_fold": 160,
      "family_used": "padus",
-     "key_union": 73,
+     "key_union": 162,
      "parts": 0,
      "records": 4,
      "summed": 173,
@@ -5302,7 +4874,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -5330,19 +4902,17 @@
   "US-4058": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Elm Hall Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 2131,
+    "acres": 2853,
     "dissolved": {
      "after": 2853,
      "before": 11398,
      "copies": 3,
-     "key_union": 2131,
      "parts": 0,
      "records": 4,
-     "summed": 2853,
      "tracts": 1
     },
     "manager": "",
@@ -5355,7 +4925,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -5383,7 +4953,7 @@
   "US-4059": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Grassy Lake Wildlife Management Area",
    "official": null,
    "ours": {
@@ -5434,7 +5004,7 @@
   "US-4060": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Hutchinson Creek Wildlife Management Area",
    "official": null,
    "ours": {
@@ -5493,7 +5063,7 @@
   "US-4061": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "J. C. 'Sonny' Gilbert Wildlife Management Area",
    "official": null,
    "ours": {
@@ -5544,7 +5114,7 @@
   "US-4062": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Joyce Wildlife Management Area",
    "official": null,
    "ours": {
@@ -5602,19 +5172,17 @@
   "US-4063": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Lake Boeuf Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 430,
+    "acres": 802,
     "dissolved": {
      "after": 802,
      "before": 3205,
      "copies": 3,
-     "key_union": 430,
      "parts": 0,
      "records": 4,
-     "summed": 802,
      "tracts": 1
     },
     "manager": "",
@@ -5655,11 +5223,11 @@
   "US-4064": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Lake Ramsey Savannah Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 664,
+    "acres": 839,
     "dissolved": {
      "after": 1635,
      "before": 3312,
@@ -5670,10 +5238,8 @@
      },
      "family_fold": 796,
      "family_used": "sglaa",
-     "key_union": 664,
      "parts": 0,
      "records": 4,
-     "summed": 839,
      "tracts": 2
     },
     "family_fold": "layers {'sglaa': 839, 'sglab': 796}: one land in 2 layers, the sglaa copy used (796 ac of copies not added)",
@@ -5715,11 +5281,11 @@
   "US-4065": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Little River Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 7074,
+    "acres": 7890,
     "dissolved": {
      "after": 19013,
      "before": 25583,
@@ -5731,7 +5297,7 @@
      },
      "family_fold": 12443,
      "family_used": "sglaa",
-     "key_union": 7074,
+     "key_union": 7890,
      "parts": 0,
      "records": 5,
      "summed": 6570,
@@ -5776,11 +5342,11 @@
   "US-4066": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Loggy Bayou Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 8410,
+    "acres": 6579,
     "dissolved": {
      "after": 12923,
      "before": 25970,
@@ -5791,10 +5357,8 @@
      },
      "family_fold": 6344,
      "family_used": "padus",
-     "key_union": 8410,
      "parts": 0,
      "records": 4,
-     "summed": 6579,
      "tracts": 2
     },
     "family_fold": "layers {'padus': 6579, 'sglac': 6344}: one land in 2 layers, the padus copy used (6,344 ac of copies not added)",
@@ -5836,11 +5400,11 @@
   "US-4067": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Manchac Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 6247,
+    "acres": 7348,
     "dissolved": {
      "after": 15684,
      "before": 30387,
@@ -5851,7 +5415,7 @@
      },
      "family_fold": 7356,
      "family_used": "sglab",
-     "key_union": 6247,
+     "key_union": 7348,
      "parts": 0,
      "records": 4,
      "summed": 8328,
@@ -5896,11 +5460,11 @@
   "US-4068": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Marsh Bayou Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 370,
+    "acres": 672,
     "dissolved": {
      "after": 1327,
      "before": 2671,
@@ -5911,10 +5475,8 @@
      },
      "family_fold": 655,
      "family_used": "padus",
-     "key_union": 370,
      "parts": 0,
      "records": 4,
-     "summed": 672,
      "tracts": 2
     },
     "family_fold": "layers {'padus': 672, 'sglab': 655}: one land in 2 layers, the padus copy used (655 ac of copies not added)",
@@ -5928,7 +5490,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -5956,7 +5518,7 @@
   "US-4069": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Maurepas Swamp Wildlife Management Area",
    "official": null,
    "ours": {
@@ -6015,7 +5577,7 @@
   "US-4070": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Pass-a-Loutre Wildlife Management Area",
    "official": null,
    "ours": {
@@ -6073,7 +5635,7 @@
   "US-4071": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Pearl River Wildlife Management Area",
    "official": null,
    "ours": {
@@ -6131,7 +5693,7 @@
   "US-4072": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Fort Johnson North Wildlife Management Area",
    "official": null,
    "ours": {
@@ -6173,7 +5735,7 @@
   "US-4073": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Pointe-aux-Chenes Wildlife Management Area",
    "official": null,
    "ours": {
@@ -6231,7 +5793,7 @@
   "US-4074": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Pomme de Terre Wildlife Management Area",
    "official": null,
    "ours": {
@@ -6282,11 +5844,11 @@
   "US-4075": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Richard K. Yancey Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 72019,
+    "acres": 76263,
     "dissolved": {
      "after": 147135,
      "before": 298489,
@@ -6297,10 +5859,8 @@
      },
      "family_fold": 70872,
      "family_used": "sglac",
-     "key_union": 72019,
      "parts": 0,
      "records": 4,
-     "summed": 76263,
      "tracts": 2
     },
     "family_fold": "layers {'sglac': 76263, 'sglab': 70872}: one land in 2 layers, the sglac copy used (70,872 ac of copies not added)",
@@ -6342,11 +5902,11 @@
   "US-4076": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Russell Sage Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 41405,
+    "acres": 39271,
     "dissolved": {
      "after": 94585,
      "before": 133854,
@@ -6358,10 +5918,8 @@
      },
      "family_fold": 55314,
      "family_used": "sglaa",
-     "key_union": 41405,
      "parts": 0,
      "records": 5,
-     "summed": 39271,
      "tracts": 4
     },
     "family_fold": "layers {'sglaa': 39271, 'sglab': 38213, 'padus': 17101}: one land in 3 layers, the sglaa copy used (55,314 ac of copies not added)",
@@ -6403,7 +5961,7 @@
   "US-4077": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Sabine Island Wildlife Management Area",
    "official": null,
    "ours": {
@@ -6461,7 +6019,7 @@
   "US-4078": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Sabine Wildlife Management Area",
    "official": null,
    "ours": {
@@ -6491,7 +6049,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -6519,11 +6077,11 @@
   "US-4079": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Salvador Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 33971,
+    "acres": 34067,
     "family_fold": "layers {'sglab': 36447, 'sglac': 34087, 'sglaa': 32085, 'padus': 30166}: one land in 4 layers, the sglab copy used (96,338 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -6562,19 +6120,17 @@
   "US-4080": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Timken Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 3053,
+    "acres": 2867,
     "dissolved": {
      "after": 2867,
      "before": 11468,
      "copies": 3,
-     "key_union": 3053,
      "parts": 0,
      "records": 4,
-     "summed": 2867,
      "tracts": 1
     },
     "manager": "",
@@ -6615,7 +6171,7 @@
   "US-4081": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Sandy Hollow Wildlife Management Area",
    "official": null,
    "ours": {
@@ -6674,7 +6230,7 @@
   "US-4082": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Sherburne Wildlife Management Area",
    "official": null,
    "ours": {
@@ -6732,11 +6288,11 @@
   "US-4083": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Soda Lake Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 1617,
+    "acres": 2151,
     "dissolved": {
      "after": 4538,
      "before": 8832,
@@ -6747,7 +6303,7 @@
      },
      "family_fold": 2147,
      "family_used": "sglab",
-     "key_union": 1617,
+     "key_union": 2151,
      "parts": 0,
      "records": 4,
      "summed": 2391,
@@ -6764,7 +6320,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -6792,7 +6348,7 @@
   "US-4084": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Spring Bayou Wildlife Management Area",
    "official": null,
    "ours": {
@@ -6850,19 +6406,17 @@
   "US-4085": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Tangipahoa Parish School Board Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 1142,
+    "acres": 1665,
     "dissolved": {
      "after": 1665,
      "before": 6638,
      "copies": 3,
-     "key_union": 1142,
      "parts": 0,
      "records": 4,
-     "summed": 1665,
      "tracts": 1
     },
     "manager": "",
@@ -6903,7 +6457,7 @@
   "US-4086": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Thistlethwaite Wildlife Management Area",
    "official": null,
    "ours": {
@@ -6961,11 +6515,11 @@
   "US-4087": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Tunica Hills Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 7562,
+    "acres": 6503,
     "dissolved": {
      "after": 18307,
      "before": 24552,
@@ -6977,10 +6531,8 @@
      },
      "family_fold": 11804,
      "family_used": "sglab",
-     "key_union": 7562,
      "parts": 0,
      "records": 5,
-     "summed": 6503,
      "tracts": 4
     },
     "family_fold": "layers {'sglab': 6503, 'sglaa': 6245, 'padus': 5559}: one land in 3 layers, the sglab copy used (11,804 ac of copies not added)",
@@ -7022,11 +6574,11 @@
   "US-4088": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Walnut Hill Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 371,
+    "acres": 660,
     "dissolved": {
      "after": 1511,
      "before": 2106,
@@ -7038,7 +6590,7 @@
      },
      "family_fold": 905,
      "family_used": "padus",
-     "key_union": 371,
+     "key_union": 660,
      "parts": 0,
      "records": 4,
      "summed": 606,
@@ -7055,7 +6607,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -7083,7 +6635,7 @@
   "US-4089": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "West Bay Wildlife Management Area",
    "official": null,
    "ours": {
@@ -7139,17 +6691,17 @@
    "verdict": "no size on page"
   },
   "US-4486": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Kisatchie National Forest",
    "official": {
     "acres": 604000.0,
-    "as": "604,000 acres",
+    "as": "604,000 Acres",
     "clean": false,
-    "line": "rest Current Fire Information Kisatchie National Forest Come visit Louisiana's ONLY national forest with over 604,000 acres to explore! T T T Welcome to Kisatchie National Forest Located in seven parishes in central and northern Loui",
-    "read": "2026-11-09",
-    "sent": "Come visit Louisiana's ONLY national forest with over 604,000 acres to explore!",
-    "url": "https://www.fs.usda.gov/kisatchie",
+    "line": "eries hunting regulations and guidelines. Hunting Info/Permit Kisatchie's Five Ranger Districts Spanning Over 604,000 Acres Calcasieu Ranger District - Rapides & Vernon Parishes - Leesville & Alexandria Image With over 183,000 acres",
+    "read": "2026-11-22",
+    "sent": "Kisatchie's Five Ranger Districts Spanning Over 604,000 Acres",
+    "url": "https://www.fs.usda.gov/r08/kisatchie",
     "why": "total-looking"
    },
    "ours": {
@@ -7176,7 +6728,7 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "ok",
+     "status": "host-rule",
      "url": "https://www.fs.usda.gov/kisatchie",
      "why": "the park's page (data/parkinfo)"
     },
@@ -7207,9 +6759,9 @@
      "as": "604,000 acres",
      "clean": false,
      "line": "rest Current Fire Information Kisatchie National Forest Come visit Louisiana's ONLY national forest with over 604,000 acres to explore! T T T Welcome to Kisatchie National Forest Located in seven parishes in central and northern Loui",
-     "total_like": true,
-     "url": "https://www.fs.usda.gov/kisatchie",
-     "why": "total-looking"
+     "total_like": false,
+     "url": "https://www.fs.usda.gov/r08/kisatchie",
+     "why": "a page of another unit; the sentence does not name this park"
     },
     {
      "acres": 604000.0,
@@ -7217,7 +6769,7 @@
      "clean": false,
      "line": "eries hunting regulations and guidelines. Hunting Info/Permit Kisatchie's Five Ranger Districts Spanning Over 604,000 Acres Calcasieu Ranger District - Rapides & Vernon Parishes - Leesville & Alexandria Image With over 183,000 acres",
      "total_like": true,
-     "url": "https://www.fs.usda.gov/kisatchie",
+     "url": "https://www.fs.usda.gov/r08/kisatchie",
      "why": "total-looking"
     },
     {
@@ -7225,9 +6777,9 @@
      "as": "183,000 acres",
      "clean": false,
      "line": "604,000 Acres Calcasieu Ranger District - Rapides & Vernon Parishes - Leesville & Alexandria Image With over 183,000 acres divided into two units, Vernon Unit (near Leesville) and Evangeline Unit (near Alexandria/Pineville), the Cal",
-     "total_like": true,
-     "url": "https://www.fs.usda.gov/kisatchie",
-     "why": "total-looking"
+     "total_like": false,
+     "url": "https://www.fs.usda.gov/r08/kisatchie",
+     "why": "a page of another unit; the sentence does not name this park"
     },
     {
      "acres": 85000.0,
@@ -7235,7 +6787,7 @@
      "clean": false,
      "line": "is filled with beautiful longleaf pines, pitcher plant bogs, serene lakes, and scenic trails. Visitors to the 85,000-acre Vernon Unit in Vernon Parish can enjoy the recreation serenity of a longleaf pine ecosystem and the historic",
      "total_like": false,
-     "url": "https://www.fs.usda.gov/kisatchie",
+     "url": "https://www.fs.usda.gov/r08/kisatchie",
      "why": "no total words near it"
     },
     {
@@ -7244,7 +6796,7 @@
      "clean": false,
      "line": "ing, fishing, non=motorized boating, and a group-picnic shelter. Little Cypress Recreation Complex features a 3-acre spring-fed pond surrounded by the 0.5-mile, fully-accessible Ol' Sarge Interpretive Trail. Wolf Rock Cave may",
      "total_like": false,
-     "url": "https://www.fs.usda.gov/kisatchie",
+     "url": "https://www.fs.usda.gov/r08/kisatchie",
      "why": "a tiny number without size wording"
     },
     {
@@ -7253,7 +6805,7 @@
      "clean": false,
      "line": "ouisiana used by its early people, dating back to the Late Archaic time period, 2500-1000 BC. Visitors to the 97,000-acre Evangeline Unit in Rapides Parish can enjoy panoramic views from the shores of Kincaid Lake, swimming, boatin",
      "total_like": false,
-     "url": "https://www.fs.usda.gov/kisatchie",
+     "url": "https://www.fs.usda.gov/r08/kisatchie",
      "why": "no total words near it"
     },
     {
@@ -7262,7 +6814,7 @@
      "clean": false,
      "line": "istrict - Claiborne & Webster Parishes - near Homer and Minden, LA Image Near the state line of Arkansas, the 32,000-acre Caney Ranger District is a fisherman's dream with serene Caney and Corney Lakes. Visitors can enjoy a wide va",
      "total_like": false,
-     "url": "https://www.fs.usda.gov/kisatchie",
+     "url": "https://www.fs.usda.gov/r08/kisatchie",
      "why": "no total words near it"
     },
     {
@@ -7271,7 +6823,7 @@
      "clean": false,
      "line": "hiking and biking on the Sugar Cane National Recreation Trail. At Corney Lake Recreation Area, the beautiful 2,300-acre lake offers scenery of bald cypress, tupelo gum bottomlands, and breezy upland pines. Download and print the",
      "total_like": false,
-     "url": "https://www.fs.usda.gov/kisatchie",
+     "url": "https://www.fs.usda.gov/r08/kisatchie",
      "why": "part (a lake, a purchase, a campground…)"
     }
    ],
@@ -7280,7 +6832,7 @@
    "verdict": "agree"
   },
   "US-4568": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "El Camino Real de los Tejas National Historic Trail",
    "note": "whole park compared (POTA lists it in 0 states: {})",
@@ -7344,11 +6896,11 @@
   "US-6445": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "St. Tammany Wildlife Refuge",
    "official": null,
    "ours": {
-    "acres": 1082,
+    "acres": 1019,
     "dissolved": {
      "after": 2301,
      "before": 4283,
@@ -7359,7 +6911,7 @@
      },
      "family_fold": 991,
      "family_used": "lar",
-     "key_union": 1082,
+     "key_union": 1019,
      "parts": 0,
      "records": 4,
      "summed": 1310,
@@ -7404,11 +6956,11 @@
   "US-9760": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Bussey Brake Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 1638,
+    "acres": 2090,
     "family_fold": "layers {'sglab': 2614, 'sglac': 2091}: one land in 2 layers, the sglab copy used (2,091 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -7447,19 +6999,17 @@
   "US-9761": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Elmer's Island Wildlife Refuge",
    "official": null,
    "ours": {
-    "acres": 931,
+    "acres": 1145,
     "dissolved": {
      "after": 1145,
      "before": 4568,
      "copies": 3,
-     "key_union": 931,
      "parts": 0,
      "records": 4,
-     "summed": 1145,
      "tracts": 1
     },
     "manager": "",
@@ -7500,7 +7050,7 @@
   "US-9769": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Marsh Island Wildlife Refuge",
    "official": null,
    "ours": {
@@ -7549,5 +7099,5 @@
    "verdict": "no size on page"
   }
  },
- "read": "2026-11-09"
+ "read": "2026-11-22"
 }

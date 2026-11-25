@@ -3,53 +3,41 @@
  "area": "US-NE",
  "counts": {
   "agree": 4,
-  "handover_hints": 2,
+  "handover_hints": 3,
   "no_page": 3,
-  "no_size": 159,
+  "no_size": 160,
+  "not_read": 0,
   "off": 4,
-  "ours_unknown": 6,
+  "ours_unknown": 7,
   "parks": 201,
   "retired": 0,
-  "unsure": 4,
-  "weak": 14,
-  "with_outline": 183
+  "unsure": 3,
+  "weak": 13,
+  "with_outline": 187
  },
  "parks": {
   "US-0441": {
-   "cause": "the agency figure may cover several states; our outline may be this state's share only",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [
     {
      "date_hint": null,
      "kind": "managed by",
-     "line": "ist releasing a banded mallard. The National Wildlife Refuge System is a series of lands and waters owned and managed by the U.S. Fish and Wildlife Service. Wildlife conservation is at the heart of the refuge system. It drives everything we do from the purpose a refuge is establis",
-     "owner_now": "U.S",
+     "line": "place to stop to get orientated to the refuge and to pick up a brochure for your visit. Boyer Chute is managed by nearby DeSoto National Wildlife Refuge, and any questions regarding your visit to Boyer Chute can be answered by calling the DeSoto Visito",
+     "owner_now": "DeSoto National Wildlife Refuge",
      "src": "https://www.fws.gov/refuge/boyer_chute/",
      "why": "the park's page (data/parkinfo)"
     }
    ],
    "n": "Boyer Chute National Wildlife Refuge",
-   "note": "the agency figure may cover several states; our outline may be this state's share only",
-   "official": {
-    "acres": 8365.0,
-    "as": "8,365 acres",
-    "clean": false,
-    "line": "incredible number of migratory waterfowl that utilize the refuge as a sanctuary and resting place. Within its 8,365 acres lies DeSoto Lake, which is an oxbow lake that used to be a bend in the Missouri River. DeSoto National Wildli",
-    "read": "2026-11-09",
-    "sent": "Within its 8,365 acres lies DeSoto Lake, which is an oxbow lake that used to be a bend in the Missouri River.",
-    "url": "https://www.fws.gov/refuge/boyer-chute/about-us",
-    "why": "total-looking"
-   },
+   "official": null,
    "ours": {
-    "acres": 3070,
+    "acres": 3968,
     "dissolved": {
      "after": 3968,
      "before": 7936,
      "copies": 1,
-     "key_union": 3070,
      "parts": 0,
      "records": 2,
-     "summed": 3968,
      "tracts": 1
     },
     "manager": "",
@@ -66,7 +54,7 @@
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
-   "owner_now": "U.S",
+   "owner_now": "DeSoto National Wildlife Refuge",
    "pages": [
     {
      "status": "ok",
@@ -74,13 +62,23 @@
      "why": "the park's page (data/parkinfo)"
     },
     {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/boyer-chute/about-us",
-     "why": "about / history page of the park's site"
+     "other_unit": true,
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/boyer-chute/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/boyer/about-us",
+     "why": "FWS refuge about page"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/boyer",
+     "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
     }
    ],
-   "pct": 63,
-   "same_agency": false,
+   "pct": null,
    "score": 7,
    "score_parts": {
     "name": 2,
@@ -88,32 +86,13 @@
     "size": 1,
     "source": 2
    },
-   "sizes": [
-    {
-     "acres": 8365.0,
-     "as": "8,365 acres",
-     "clean": false,
-     "line": "incredible number of migratory waterfowl that utilize the refuge as a sanctuary and resting place. Within its 8,365 acres lies DeSoto Lake, which is an oxbow lake that used to be a bend in the Missouri River. DeSoto National Wildli",
-     "total_like": true,
-     "url": "https://www.fws.gov/refuge/boyer-chute/about-us",
-     "why": "total-looking"
-    },
-    {
-     "acres": 8365.0,
-     "as": "8,365 acres",
-     "clean": false,
-     "line": "o National Wildlife Refuge is located along the Missouri River and borders both Iowa and Nebraska. Within its 8,365 acres lies DeSoto Lake, an oxbow lake that used to be a bend in the Missouri River. The refuge contains bottomland",
-     "total_like": true,
-     "url": "https://www.fws.gov/refuge/boyer-chute/about-us",
-     "why": "total-looking"
-    }
-   ],
+   "sizes": [],
    "t": "National Wildlife Refuge",
    "ver": 15,
-   "verdict": "unsure"
+   "verdict": "no size on page"
   },
   "US-0442": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Crescent Lake National Wildlife Refuge",
    "official": null,
@@ -179,7 +158,7 @@
    "verdict": "no size on page"
   },
   "US-0443": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Fort Niobrara National Wildlife Refuge",
    "official": {
@@ -187,7 +166,7 @@
     "as": "19,131 acres",
     "clean": false,
     "line": "e. View volunteer opportunities About Established in 1912, Fort Niobrara National Wildlife Refuge encompasses 19,131 acres along the Niobrara River in the Nebraska Sandhills. The refuge features a diverse mix of ecosystems, includin",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Established in 1912, Fort Niobrara National Wildlife Refuge encompasses 19,131 acres along the Niobrara River in the Nebraska Sandhills.",
     "url": "https://www.fws.gov/refuge/fort_niobrara/",
     "why": "history"
@@ -275,7 +254,7 @@
   },
   "US-0445": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 91 acres, no total words near it)",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "North Platte National Wildlife Refuge",
    "official": {
@@ -283,21 +262,19 @@
     "as": "91 acres",
     "clean": false,
     "line": "ed vehicles on authorized trails only. To view a map of Lake Alice public use opportunities, click here (File size: 91 KB). The map will open in a separate window. Lake Minatare Unit This unit is open for permitted activities fro",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "To view a map of Lake Alice public use opportunities, click here (File size: 91 KB).",
     "url": "https://www.fws.gov/locations/north-platte-national-wildlife-refuge/rules-and-policies",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 2441,
+    "acres": 2916,
     "dissolved": {
      "after": 2916,
      "before": 5832,
      "copies": 1,
-     "key_union": 2441,
      "parts": 0,
      "records": 2,
-     "summed": 2916,
      "tracts": 1
     },
     "manager": "",
@@ -338,7 +315,7 @@
      "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
     }
    ],
-   "pct": 2582,
+   "pct": 3104,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -363,7 +340,7 @@
    "verdict": "unsure"
   },
   "US-0446": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Funk WPA Wetland Management District",
    "ours": null,
@@ -373,7 +350,7 @@
    "verdict": "no outline"
   },
   "US-0447": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Valentine National Wildlife Refuge",
    "official": {
@@ -381,7 +358,7 @@
     "as": "71,772 acre",
     "clean": false,
     "line": "as in the country where sharp-tailed grouse and prairie chickens may be hunted in the same place. Most of the 71,772-acre refuge is grasslands, offering perfect conditions for these birds. Get Involved Whether you want to further c",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Most of the 71,772-acre refuge is grasslands, offering perfect conditions for these birds.",
     "url": "https://www.fws.gov/refuge/valentine/",
     "why": "total-looking"
@@ -480,7 +457,7 @@
    "verdict": "agree"
   },
   "US-0675": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Missouri National Recreational River National Wild and Scenic River",
    "note": "whole park compared (POTA lists it in 0 states: {})",
@@ -493,8 +470,8 @@
     "pin": "just outside",
     "src": "",
     "states": [
-     "US-SD",
-     "US-NE"
+     "US-NE",
+     "US-SD"
     ],
     "unknown_pieces": 1,
     "whole_park": true
@@ -532,7 +509,7 @@
    "verdict": "ours unknown"
   },
   "US-0900": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Agate Fossil Beds National Monument",
    "official": null,
@@ -593,7 +570,7 @@
    "verdict": "no size on page"
   },
   "US-0942": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Homestead National Historical Park",
    "official": {
@@ -601,7 +578,7 @@
     "as": "160 acres",
     "clean": false,
     "line": "ward expansion of the United States. It was a revolutionary concept for distributing public land. By granting 160 acres of free land to claimants, it allowed nearly any man or woman the opportunity to own land. Millions of people",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "By granting 160 acres of free land to claimants, it allowed nearly any man or woman the opportunity to own land.",
     "url": "https://www.nps.gov/home/learn/historyculture/index.htm",
     "why": "no total words near it"
@@ -617,7 +594,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -651,10 +628,10 @@
    ],
    "pct": 15,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 2,
     "source": 1
    },
@@ -674,7 +651,7 @@
    "verdict": "agree"
   },
   "US-0962": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Scotts Bluff National Monument",
    "official": {
@@ -682,7 +659,7 @@
     "as": "3,000 acres",
     "clean": false,
     "line": "eological and paleontological history as well as human history, there is much to discover while exploring the 3,000 acres of Scotts Bluff National Monument. Plan your visit About the park Thousands of covered wagons rolled by Eagle",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Rich with geological and paleontological history as well as human history, there is much to discover while exploring the 3,000 acres of Scotts Bluff National Monument.",
     "url": "https://www.nps.gov/scbl/index.htm",
     "why": "total-looking"
@@ -745,17 +722,17 @@
    "verdict": "agree"
   },
   "US-11273": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Pressey Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 1906,
+    "acres": 1681,
     "dissolved": {
      "after": 3242,
      "before": 4906,
      "copies": 0,
-     "key_union": 1906,
+     "key_union": 1681,
      "parts": 3,
      "records": 7,
      "summed": 3242,
@@ -803,11 +780,11 @@
   "US-11867": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Hickory Ridge Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 366,
+    "acres": 564,
     "dissolved": {
      "after": 1121,
      "before": 1678,
@@ -818,10 +795,8 @@
      },
      "family_fold": 557,
      "family_used": "sgneb",
-     "key_union": 366,
      "parts": 0,
      "records": 5,
-     "summed": 564,
      "tracts": 4
     },
     "family_fold": "layers {'sgneb': 564, 'padus': 557}: one land in 2 layers, the sgneb copy used (557 ac of copies not added)",
@@ -864,11 +839,11 @@
   "US-11868": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Pawnee Prairie Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 985,
+    "acres": 1140,
     "dissolved": {
      "after": 2259,
      "before": 3378,
@@ -879,10 +854,8 @@
      },
      "family_fold": 1119,
      "family_used": "sgneb",
-     "key_union": 985,
      "parts": 0,
      "records": 4,
-     "summed": 1140,
      "tracts": 3
     },
     "family_fold": "layers {'sgneb': 1140, 'padus': 1119}: one land in 2 layers, the sgneb copy used (1,119 ac of copies not added)",
@@ -925,16 +898,16 @@
   "US-11871": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Bassway Strip Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 1127,
+    "acres": 1084,
     "dissolved": {
      "after": 915,
      "before": 2743,
      "copies": 1,
-     "key_union": 1127,
+     "key_union": 1084,
      "parts": 2,
      "records": 4,
      "summed": 915,
@@ -979,7 +952,7 @@
   "US-12087": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Scotia Canal Wildlife Management Area",
    "official": null,
    "ours": {
@@ -1022,7 +995,7 @@
   "US-12088": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Davis Creek Wildlife Management Area",
    "official": null,
    "ours": {
@@ -1065,7 +1038,7 @@
   "US-12089": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Arcadia Diversion Dam Wildlife Management Area",
    "official": null,
    "ours": {
@@ -1079,7 +1052,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -1108,7 +1081,7 @@
   "US-12090": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Milburn Dam Wildlife Management Area",
    "official": null,
    "ours": {
@@ -1151,7 +1124,7 @@
   "US-12091": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Myrtle E. Hall Wildlife Management Area",
    "official": null,
    "ours": {
@@ -1209,7 +1182,7 @@
   "US-12337": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Cub Creek (northern) State Recreation Area",
    "official": null,
    "ours": {
@@ -1251,16 +1224,16 @@
   "US-12362": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Buffalo Bill State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 256,
+    "acres": 342,
     "dissolved": {
      "after": 323,
      "before": 813,
      "copies": 1,
-     "key_union": 256,
+     "key_union": 342,
      "parts": 2,
      "records": 5,
      "summed": 323,
@@ -1310,11 +1283,11 @@
   "US-12383": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "East Gothenburg Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 31,
+    "acres": 38,
     "family_fold": "layers {'sgneb': 38, 'padus': 37}: one land in 2 layers, the sgneb copy used (37 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -1354,11 +1327,11 @@
   "US-12384": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Kinter’s Ford Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 180,
+    "acres": 210,
     "dissolved": {
      "after": 409,
      "before": 619,
@@ -1369,10 +1342,8 @@
      },
      "family_fold": 199,
      "family_used": "padus",
-     "key_union": 180,
      "parts": 3,
      "records": 5,
-     "summed": 210,
      "tracts": 2
     },
     "family_fold": "layers {'padus': 210, 'sgneb': 199}: one land in 2 layers, the padus copy used (199 ac of copies not added)",
@@ -1415,19 +1386,17 @@
   "US-12385": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Lores Branch Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 114,
+    "acres": 130,
     "dissolved": {
      "after": 130,
      "before": 260,
      "copies": 1,
-     "key_union": 114,
      "parts": 0,
      "records": 2,
-     "summed": 130,
      "tracts": 1
     },
     "manager": "",
@@ -1469,19 +1438,17 @@
   "US-12386": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Prairie Knoll Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 109,
+    "acres": 120,
     "dissolved": {
      "after": 120,
      "before": 240,
      "copies": 1,
-     "key_union": 109,
      "parts": 0,
      "records": 2,
-     "summed": 120,
      "tracts": 1
     },
     "manager": "",
@@ -1494,7 +1461,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -1523,19 +1490,17 @@
   "US-12397": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Berggren-Young Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 108,
+    "acres": 160,
     "dissolved": {
      "after": 160,
      "before": 478,
      "copies": 2,
-     "key_union": 108,
      "parts": 0,
      "records": 3,
-     "summed": 160,
      "tracts": 1
     },
     "manager": "",
@@ -1548,7 +1513,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -1577,11 +1542,11 @@
   "US-12407": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Brady Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 29,
+    "acres": 41,
     "family_fold": "layers {'padus': 85, 'sgneb': 39}: one land in 2 layers, the padus copy used (39 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -1598,7 +1563,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -1627,7 +1592,7 @@
   "US-12408": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "West Brady Wildlife Management Area",
    "official": null,
    "ours": {
@@ -1642,7 +1607,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -1671,11 +1636,11 @@
   "US-12444": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Loch Linda Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 14,
+    "acres": 27,
     "family_fold": "layers {'sgneb': 38, 'padus': 33}: one land in 2 layers, the sgneb copy used (33 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -1686,7 +1651,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -1715,19 +1680,17 @@
   "US-12445": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Ayr Lake Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 148,
+    "acres": 171,
     "dissolved": {
      "after": 171,
      "before": 342,
      "copies": 1,
-     "key_union": 148,
      "parts": 0,
      "records": 2,
-     "summed": 171,
      "tracts": 1
     },
     "manager": "",
@@ -1769,16 +1732,16 @@
   "US-12619": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Bur Oak Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 94,
+    "acres": 140,
     "dissolved": {
      "after": 278,
      "before": 416,
      "copies": 1,
-     "key_union": 94,
+     "key_union": 140,
      "parts": 0,
      "records": 3,
      "summed": 278,
@@ -1827,7 +1790,7 @@
    "verdict": "no size on page"
   },
   "US-12686": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "East Phillips Canyon Wildlife Management Area",
    "official": null,
@@ -1871,11 +1834,11 @@
   "US-12736": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Gifford Point Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 1154,
+    "acres": 1526,
     "family_fold": "layers {'padus': 3011, 'sgneb': 1308}: one land in 2 layers, the padus copy used (1,308 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -1921,7 +1884,7 @@
   "US-12946": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Elwood Reservoir Wildlife Management Area",
    "official": null,
    "ours": {
@@ -1964,11 +1927,11 @@
   "US-12947": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Coot Shallows Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 21,
+    "acres": 44,
     "family_fold": "layers {'padus': 44, 'sgneb': 43}: one land in 2 layers, the padus copy used (43 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -2008,19 +1971,17 @@
   "US-12948": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Cornhusker Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 554,
+    "acres": 847,
     "dissolved": {
      "after": 847,
      "before": 2534,
      "copies": 1,
-     "key_union": 554,
      "parts": 2,
      "records": 4,
-     "summed": 847,
      "tracts": 1
     },
     "manager": "",
@@ -2033,7 +1994,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -2062,7 +2023,7 @@
   "US-13093": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Oak Glen Wildlife Management Area",
    "official": null,
    "ours": {
@@ -2085,7 +2046,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -2114,12 +2075,23 @@
   "US-13202": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Deep Well Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 172,
+    "acres": 239,
+    "dissolved": {
+     "after": 397,
+     "before": 635,
+     "copies": 1,
+     "key_union": 239,
+     "parts": 0,
+     "records": 3,
+     "summed": 397,
+     "tracts": 2
+    },
     "manager": "",
+    "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 635 -> 397 acres",
     "pieces": [
      [
       216157,
@@ -2134,9 +2106,9 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
-    "unknown_pieces": 1
+    "unknown_pieces": 0
    },
    "owner_now": null,
    "pages": [
@@ -2163,19 +2135,17 @@
   "US-13204": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Wilkinson Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 805,
+    "acres": 940,
     "dissolved": {
      "after": 940,
      "before": 1874,
      "copies": 1,
-     "key_union": 805,
      "parts": 0,
      "records": 2,
-     "summed": 940,
      "tracts": 1
     },
     "manager": "",
@@ -2217,11 +2187,11 @@
   "US-13205": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Dr. Bruce Cowgill Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 175,
+    "acres": 233,
     "family_fold": "layers {'padus': 233, 'sgneb': 217}: one land in 2 layers, the padus copy used (217 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -2232,7 +2202,7 @@
       "words"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -2261,19 +2231,17 @@
   "US-13212": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Arnold Trupp Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 76,
+    "acres": 161,
     "dissolved": {
      "after": 161,
      "before": 316,
      "copies": 1,
-     "key_union": 76,
      "parts": 0,
      "records": 3,
-     "summed": 161,
      "tracts": 2
     },
     "manager": "",
@@ -2321,7 +2289,7 @@
   "US-13213": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Guide Rock Diversion Dam Wildlife Management Area",
    "official": null,
    "ours": {
@@ -2335,7 +2303,7 @@
       "reviewed"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -2364,11 +2332,11 @@
   "US-13272": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "West Gothenburg Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 31,
+    "acres": 45,
     "family_fold": "layers {'sgneb': 51, 'padus': 44}: one land in 2 layers, the sgneb copy used (44 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -2408,16 +2376,16 @@
   "US-13327": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Cozad Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 134,
+    "acres": 204,
     "dissolved": {
      "after": 391,
      "before": 589,
      "copies": 1,
-     "key_union": 134,
+     "key_union": 204,
      "parts": 0,
      "records": 3,
      "summed": 391,
@@ -2468,19 +2436,17 @@
   "US-13328": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "West Cozad Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 45,
+    "acres": 48,
     "dissolved": {
      "after": 48,
      "before": 96,
      "copies": 1,
-     "key_union": 45,
      "parts": 0,
      "records": 2,
-     "summed": 48,
      "tracts": 1
     },
     "manager": "",
@@ -2493,7 +2459,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -2522,11 +2488,11 @@
   "US-13329": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Plum Creek Canyon Reservoir Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 3,
+    "acres": 4,
     "family_fold": "layers {'padus': 4, 'sgneb': 1}: one land in 2 layers, the padus copy used (1 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -2537,7 +2503,7 @@
       "words"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -2565,7 +2531,7 @@
   "US-13378": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Sherman Reservoir Wildlife Management Area",
    "official": null,
    "ours": {
@@ -2613,7 +2579,7 @@
    "verdict": "no size on page"
   },
   "US-13379": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Kent Diversion Dam Wildlife Management Area",
    "official": null,
@@ -2655,7 +2621,7 @@
    "verdict": "no size on page"
   },
   "US-13380": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Mirdan Canal Wildlife Management Area",
    "official": null,
@@ -2697,20 +2663,18 @@
    "verdict": "no size on page"
   },
   "US-13433": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "North Platte National Wildlife Refuge",
    "official": null,
    "ours": {
-    "acres": 2441,
+    "acres": 2916,
     "dissolved": {
      "after": 2916,
      "before": 5832,
      "copies": 1,
-     "key_union": 2441,
      "parts": 0,
      "records": 2,
-     "summed": 2916,
      "tracts": 1
     },
     "manager": "",
@@ -2761,40 +2725,43 @@
   "US-13434": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Wildcat Hills Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 932,
+    "acres": 901,
     "dissolved": {
      "after": 1266,
      "before": 1977,
      "copies": 1,
      "families": {
-      "nep": 711,
       "padus": 365,
-      "sgneb": 190
+      "sgneb": 901
      },
-     "family_fold": 555,
-     "family_used": "nep",
-     "key_union": 932,
+     "family_fold": 365,
+     "family_used": "sgneb",
      "parts": 0,
      "records": 6,
-     "summed": 711,
      "tracts": 5
     },
-    "family_fold": "layers {'nep': 711, 'padus': 365, 'sgneb': 190}: one land in 3 layers, the nep copy used (555 ac of copies not added)",
+    "family_fold": "layers {'sgneb': 901, 'padus': 365}: one land in 2 layers, the sgneb copy used (365 ac of copies not added)",
     "manager": "",
     "note": "6 joined records = 5 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1977 -> 1266 acres",
     "pieces": [
      [
-      "nep67",
+      "sgneb350",
       "Wildcat HIlls SRA",
       711,
       "name"
+     ],
+     [
+      "sgneb335",
+      "Wildcat Hills WMA",
+      190,
+      "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -2823,7 +2790,7 @@
   "US-13491": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Cedar Valley Wildlife Management Area",
    "official": null,
    "ours": {
@@ -2846,7 +2813,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -2875,11 +2842,11 @@
   "US-13492": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Wellfleet Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 48,
+    "acres": 62,
     "family_fold": "layers {'sgneb': 63, 'padus': 121}: one land in 2 layers, the padus copy used (63 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -2896,7 +2863,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -2925,28 +2892,28 @@
   "US-13536": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Alexandria Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 1125,
+    "acres": 1303,
     "dissolved": {
      "after": 1309,
      "before": 3819,
      "copies": 2,
      "families": {
-      "nep": 101,
-      "padus": 1208
+      "padus": 1208,
+      "sgneb": 101
      },
      "family_fold": 101,
      "family_used": "padus",
-     "key_union": 1125,
+     "key_union": 1303,
      "parts": 5,
      "records": 9,
      "summed": 1208,
      "tracts": 2
     },
-    "family_fold": "layers {'padus': 1208, 'nep': 101}: one land in 2 layers, the padus copy used (101 ac of copies not added)",
+    "family_fold": "layers {'padus': 1208, 'sgneb': 101}: one land in 2 layers, the padus copy used (101 ac of copies not added)",
     "manager": "",
     "note": "9 joined records = 2 tracts: 2 copies of a tract (same acres, another layer) and 5 fee tracts under a designation record folded; summed 3819 -> 1309 acres",
     "pieces": [
@@ -2957,7 +2924,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -2986,19 +2953,17 @@
   "US-13537": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Alfon C. Haring Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 225,
+    "acres": 313,
     "dissolved": {
      "after": 313,
      "before": 626,
      "copies": 1,
-     "key_union": 225,
      "parts": 0,
      "records": 2,
-     "summed": 313,
      "tracts": 1
     },
     "manager": "",
@@ -3011,7 +2976,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -3040,19 +3005,17 @@
   "US-13540": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Rakes Creek Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 222,
+    "acres": 316,
     "dissolved": {
      "after": 316,
      "before": 631,
      "copies": 1,
-     "key_union": 222,
      "parts": 0,
      "records": 2,
-     "summed": 316,
      "tracts": 1
     },
     "manager": "",
@@ -3065,7 +3028,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -3094,16 +3057,16 @@
   "US-13608": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "American Game Marsh Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 104,
+    "acres": 166,
     "dissolved": {
      "after": 326,
      "before": 487,
      "copies": 1,
-     "key_union": 104,
+     "key_union": 166,
      "parts": 0,
      "records": 3,
      "summed": 326,
@@ -3154,11 +3117,11 @@
   "US-13609": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Anderson Bridge Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 106,
+    "acres": 160,
     "family_fold": "layers {'padus': 305, 'sgneb': 137}: one land in 2 layers, the padus copy used (137 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -3204,19 +3167,17 @@
   "US-13610": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Arrowhead Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 187,
+    "acres": 320,
     "dissolved": {
      "after": 320,
      "before": 637,
      "copies": 1,
-     "key_union": 187,
      "parts": 0,
      "records": 2,
-     "summed": 320,
      "tracts": 1
     },
     "manager": "",
@@ -3229,7 +3190,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -3256,7 +3217,7 @@
    "verdict": "no size on page"
   },
   "US-13611": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Darr Wildlife Management Area",
    "official": null,
@@ -3301,11 +3262,11 @@
   "US-13612": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Darr Strip Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 720,
+    "acres": 1070,
     "dissolved": {
      "after": 2000,
      "before": 3003,
@@ -3316,7 +3277,7 @@
      },
      "family_fold": 981,
      "family_used": "padus",
-     "key_union": 720,
+     "key_union": 1070,
      "parts": 0,
      "records": 3,
      "summed": 1019,
@@ -3333,7 +3294,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -3362,19 +3323,17 @@
   "US-13613": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Ballards Marsh Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 1858,
+    "acres": 1589,
     "dissolved": {
      "after": 1589,
      "before": 3151,
      "copies": 1,
-     "key_union": 1858,
      "parts": 0,
      "records": 2,
-     "summed": 1589,
      "tracts": 1
     },
     "manager": "",
@@ -3416,16 +3375,16 @@
   "US-13614": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Kirkpatrick Basin North Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 501,
+    "acres": 798,
     "dissolved": {
      "after": 851,
      "before": 1247,
      "copies": 1,
-     "key_union": 501,
+     "key_union": 798,
      "parts": 0,
      "records": 7,
      "summed": 851,
@@ -3471,7 +3430,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -3500,19 +3459,17 @@
   "US-13615": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Kirkpatrick Basin South Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 309,
+    "acres": 417,
     "dissolved": {
      "after": 417,
      "before": 1248,
      "copies": 1,
-     "key_union": 309,
      "parts": 4,
      "records": 6,
-     "summed": 417,
      "tracts": 1
     },
     "manager": "",
@@ -3525,7 +3482,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -3554,36 +3511,39 @@
   "US-13628": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Two Rivers Wildlife Management Area",
    "ours": {
-    "acres": 810,
+    "acres": 964,
     "dissolved": {
      "after": 1505,
      "before": 2127,
      "copies": 1,
      "families": {
-      "nep": 622,
       "padus": 541,
-      "sgneb": 342
+      "sgneb": 964
      },
-     "family_fold": 883,
-     "family_used": "nep",
-     "key_union": 810,
+     "family_fold": 541,
+     "family_used": "sgneb",
      "parts": 0,
      "records": 5,
-     "summed": 622,
      "tracts": 4
     },
-    "family_fold": "layers {'nep': 622, 'sgneb': 342, 'padus': 541}: one land in 3 layers, the nep copy used (883 ac of copies not added)",
+    "family_fold": "layers {'sgneb': 964, 'padus': 541}: one land in 2 layers, the sgneb copy used (541 ac of copies not added)",
     "manager": "",
     "note": "5 joined records = 4 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 2127 -> 1505 acres",
     "pieces": [
      [
-      "nep58",
+      "sgneb313",
       "Two Rivers SRA",
       622,
       "name"
+     ],
+     [
+      "sgneb314",
+      "Two Rivers WMA",
+      342,
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -3598,18 +3558,16 @@
   "US-13629": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Killdeer Lake Wildlife Management Area",
    "ours": {
-    "acres": 59,
+    "acres": 90,
     "dissolved": {
      "after": 90,
      "before": 179,
      "copies": 1,
-     "key_union": 59,
      "parts": 0,
      "records": 2,
-     "summed": 90,
      "tracts": 1
     },
     "manager": "",
@@ -3622,7 +3580,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -3634,18 +3592,16 @@
   "US-13630": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Flatsedge Wildlife Management Area",
    "ours": {
-    "acres": 41,
+    "acres": 80,
     "dissolved": {
      "after": 80,
      "before": 160,
      "copies": 1,
-     "key_union": 41,
      "parts": 0,
      "records": 2,
-     "summed": 80,
      "tracts": 1
     },
     "manager": "",
@@ -3658,7 +3614,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -3670,7 +3626,7 @@
   "US-2608": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Ashfall Fossil Beds State Historical Park",
    "official": null,
    "ours": {
@@ -3712,19 +3668,17 @@
   "US-2609": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Ash Hollow State Park",
    "official": null,
    "ours": {
-    "acres": 845,
+    "acres": 1050,
     "dissolved": {
      "after": 1050,
      "before": 2099,
      "copies": 1,
-     "key_union": 845,
      "parts": 0,
      "records": 2,
-     "summed": 1050,
      "tracts": 1
     },
     "manager": "",
@@ -3765,11 +3719,11 @@
   "US-2610": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Arbor Lodge State Historical Park",
    "official": null,
    "ours": {
-    "acres": 26,
+    "acres": 59,
     "family_fold": "layers {'sgnec': 74, 'padus': 112}: one land in 2 layers, the padus copy used (74 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -3814,19 +3768,17 @@
   "US-2611": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Bowring Ranch State Historical Park",
    "official": null,
    "ours": {
-    "acres": 488,
+    "acres": 435,
     "dissolved": {
      "after": 435,
      "before": 870,
      "copies": 1,
-     "key_union": 488,
      "parts": 0,
      "records": 2,
-     "summed": 435,
      "tracts": 1
     },
     "manager": "",
@@ -3867,23 +3819,23 @@
   "US-2612": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Buffalo Bill Ranch State Historical Park",
    "official": null,
    "ours": {
-    "acres": 256,
+    "acres": 342,
     "dissolved": {
      "after": 323,
-     "before": 1279,
-     "copies": 3,
-     "key_union": 256,
+     "before": 1046,
+     "copies": 2,
+     "key_union": 342,
      "parts": 2,
-     "records": 7,
+     "records": 6,
      "summed": 323,
      "tracts": 2
     },
     "manager": "",
-    "note": "7 joined records = 2 tracts: 3 copies of a tract (same acres, another layer) and 2 fee tracts under a designation record folded; summed 1279 -> 323 acres",
+    "note": "6 joined records = 2 tracts: 2 copies of a tract (same acres, another layer) and 2 fee tracts under a designation record folded; summed 1046 -> 323 acres",
     "pieces": [
      [
       216042,
@@ -3898,7 +3850,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -3926,16 +3878,16 @@
   "US-2613": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Chadron State Park",
    "official": null,
    "ours": {
-    "acres": 632,
+    "acres": 984,
     "dissolved": {
      "after": 1793,
      "before": 4715,
      "copies": 3,
-     "key_union": 632,
+     "key_union": 984,
      "parts": 0,
      "records": 7,
      "summed": 1793,
@@ -3997,19 +3949,17 @@
   "US-2614": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Eugene T. Mahoney State Park",
    "official": null,
    "ours": {
-    "acres": 575,
+    "acres": 676,
     "dissolved": {
      "after": 676,
      "before": 3369,
      "copies": 3,
-     "key_union": 575,
      "parts": 4,
      "records": 8,
-     "summed": 676,
      "tracts": 1
     },
     "manager": "",
@@ -4050,16 +4000,16 @@
   "US-2615": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Fort Atkinson State Historical Park",
    "official": null,
    "ours": {
-    "acres": 126,
+    "acres": 155,
     "dissolved": {
      "after": 304,
      "before": 458,
      "copies": 1,
-     "key_union": 126,
+     "key_union": 155,
      "parts": 0,
      "records": 4,
      "summed": 304,
@@ -4115,16 +4065,16 @@
   "US-2616": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Fort Hartsuff State Historical Park",
    "official": null,
    "ours": {
-    "acres": 15,
+    "acres": 18,
     "dissolved": {
      "after": 37,
      "before": 55,
      "copies": 1,
-     "key_union": 15,
+     "key_union": 18,
      "parts": 0,
      "records": 3,
      "summed": 37,
@@ -4174,31 +4124,31 @@
   "US-2617": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Fort Kearny State Historical Park",
    "official": null,
    "ours": {
-    "acres": 214,
+    "acres": 235,
     "dissolved": {
      "after": 641,
-     "before": 1013,
-     "copies": 2,
+     "before": 827,
+     "copies": 1,
      "families": {
-      "nep": 186,
       "padus": 417,
+      "sgneb": 186,
       "sgnec": 38
      },
      "family_fold": 224,
      "family_used": "padus",
-     "key_union": 214,
+     "key_union": 235,
      "parts": 0,
-     "records": 9,
+     "records": 8,
      "summed": 417,
      "tracts": 7
     },
-    "family_fold": "layers {'nep': 186, 'padus': 417, 'sgnec': 38}: one land in 3 layers, the padus copy used (224 ac of copies not added)",
+    "family_fold": "layers {'sgneb': 186, 'padus': 417, 'sgnec': 38}: one land in 3 layers, the padus copy used (224 ac of copies not added)",
     "manager": "",
-    "note": "9 joined records = 7 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1013 -> 641 acres",
+    "note": "8 joined records = 7 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 827 -> 641 acres",
     "pieces": [
      [
       216383,
@@ -4259,7 +4209,7 @@
   "US-2618": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Fort Robinson State Park",
    "official": null,
    "ours": {
@@ -4276,10 +4226,10 @@
     "note": "9 joined records = 1 tracts: 3 copies of a tract (same acres, another layer) and 5 fee tracts under a designation record folded; summed 111495 -> 22333 acres",
     "pieces": [
      [
-      "nep23",
+      "sgneb113",
       "Fort Robinson SP",
       22333,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -4310,36 +4260,34 @@
   "US-2619": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Indian Cave State Park",
    "official": null,
    "ours": {
-    "acres": 3893,
+    "acres": 3400,
     "dissolved": {
      "after": 5347,
      "before": 16854,
      "copies": 2,
      "families": {
-      "nep": 3400,
-      "padus": 1947
+      "padus": 1947,
+      "sgneb": 3400
      },
      "family_fold": 1947,
-     "family_used": "nep",
-     "key_union": 3893,
+     "family_used": "sgneb",
      "parts": 7,
      "records": 14,
-     "summed": 3400,
      "tracts": 5
     },
-    "family_fold": "layers {'nep': 3400, 'padus': 1947}: one land in 2 layers, the nep copy used (1,947 ac of copies not added)",
+    "family_fold": "layers {'sgneb': 3400, 'padus': 1947}: one land in 2 layers, the sgneb copy used (1,947 ac of copies not added)",
     "manager": "",
     "note": "14 joined records = 5 tracts: 2 copies of a tract (same acres, another layer) and 7 fee tracts under a designation record folded; summed 16854 -> 5347 acres",
     "pieces": [
      [
-      "nep26",
+      "sgneb147",
       "Indian Cave SP",
       3400,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -4370,28 +4318,28 @@
   "US-2620": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Niobrara State Park",
    "official": null,
    "ours": {
-    "acres": 1590,
+    "acres": 1879,
     "dissolved": {
      "after": 4313,
      "before": 6787,
      "copies": 2,
      "families": {
-      "nep": 1237,
-      "padus": 3076
+      "padus": 3076,
+      "sgneb": 1237
      },
      "family_fold": 1237,
      "family_used": "padus",
-     "key_union": 1590,
+     "key_union": 1879,
      "parts": 0,
      "records": 5,
      "summed": 3076,
      "tracts": 3
     },
-    "family_fold": "layers {'padus': 3076, 'nep': 1237}: one land in 2 layers, the padus copy used (1,237 ac of copies not added)",
+    "family_fold": "layers {'padus': 3076, 'sgneb': 1237}: one land in 2 layers, the padus copy used (1,237 ac of copies not added)",
     "manager": "",
     "note": "5 joined records = 3 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 6787 -> 4313 acres",
     "pieces": [
@@ -4436,28 +4384,28 @@
   "US-2621": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Platte River State Park",
    "official": null,
    "ours": {
-    "acres": 693,
+    "acres": 538,
     "dissolved": {
      "after": 1437,
      "before": 2341,
      "copies": 2,
      "families": {
-      "nep": 452,
-      "padus": 985
+      "padus": 985,
+      "sgneb": 452
      },
      "family_fold": 452,
      "family_used": "padus",
-     "key_union": 693,
+     "key_union": 538,
      "parts": 0,
      "records": 5,
      "summed": 985,
      "tracts": 3
     },
-    "family_fold": "layers {'padus': 985, 'nep': 452}: one land in 2 layers, the padus copy used (452 ac of copies not added)",
+    "family_fold": "layers {'padus': 985, 'sgneb': 452}: one land in 2 layers, the padus copy used (452 ac of copies not added)",
     "manager": "",
     "note": "5 joined records = 3 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 2341 -> 1437 acres",
     "pieces": [
@@ -4474,7 +4422,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -4502,36 +4450,34 @@
   "US-2622": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Ponca State Park",
    "official": null,
    "ours": {
-    "acres": 2492,
+    "acres": 2124,
     "dissolved": {
      "after": 3583,
      "before": 10457,
      "copies": 2,
      "families": {
-      "nep": 2124,
-      "padus": 1459
+      "padus": 1459,
+      "sgneb": 2124
      },
      "family_fold": 1459,
-     "family_used": "nep",
-     "key_union": 2492,
+     "family_used": "sgneb",
      "parts": 5,
      "records": 14,
-     "summed": 2124,
      "tracts": 7
     },
-    "family_fold": "layers {'nep': 2124, 'padus': 1459}: one land in 2 layers, the nep copy used (1,459 ac of copies not added)",
+    "family_fold": "layers {'sgneb': 2124, 'padus': 1459}: one land in 2 layers, the sgneb copy used (1,459 ac of copies not added)",
     "manager": "",
     "note": "14 joined records = 7 tracts: 2 copies of a tract (same acres, another layer) and 5 fee tracts under a designation record folded; summed 10457 -> 3583 acres",
     "pieces": [
      [
-      "nep45",
+      "sgneb240",
       "Ponca SP",
       2124,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -4562,31 +4508,31 @@
   "US-2623": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Rock Creek Station State Historical Park",
    "official": null,
    "ours": {
-    "acres": 203,
+    "acres": 395,
     "dissolved": {
      "after": 434,
-     "before": 865,
-     "copies": 3,
+     "before": 825,
+     "copies": 2,
      "families": {
-      "nep": 40,
       "padus": 41,
+      "sgneb": 40,
       "sgnec": 353
      },
      "family_fold": 81,
      "family_used": "sgnec",
-     "key_union": 203,
+     "key_union": 395,
      "parts": 0,
-     "records": 6,
+     "records": 5,
      "summed": 353,
      "tracts": 3
     },
-    "family_fold": "layers {'sgnec': 353, 'padus': 41, 'nep': 40}: one land in 3 layers, the sgnec copy used (81 ac of copies not added)",
+    "family_fold": "layers {'sgnec': 353, 'padus': 41, 'sgneb': 40}: one land in 3 layers, the sgnec copy used (81 ac of copies not added)",
     "manager": "",
-    "note": "6 joined records = 3 tracts: 3 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 865 -> 434 acres",
+    "note": "5 joined records = 3 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 825 -> 434 acres",
     "pieces": [
      [
       "sgnec48",
@@ -4595,7 +4541,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -4623,39 +4569,37 @@
   "US-2624": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Smith Falls State Park",
    "official": null,
    "ours": {
-    "acres": 232,
+    "acres": 266,
     "dissolved": {
      "after": 309,
      "before": 841,
      "copies": 2,
      "families": {
-      "nep": 266,
-      "padus": 43
+      "padus": 43,
+      "sgneb": 266
      },
      "family_fold": 43,
-     "family_used": "nep",
-     "key_union": 232,
+     "family_used": "sgneb",
      "parts": 0,
      "records": 5,
-     "summed": 266,
      "tracts": 3
     },
-    "family_fold": "layers {'nep': 266, 'padus': 43}: one land in 2 layers, the nep copy used (43 ac of copies not added)",
+    "family_fold": "layers {'sgneb': 266, 'padus': 43}: one land in 2 layers, the sgneb copy used (43 ac of copies not added)",
     "manager": "",
     "note": "5 joined records = 3 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 841 -> 309 acres",
     "pieces": [
      [
-      "nep54",
+      "sgneb285",
       "Smith Falls SP",
       266,
-      "name"
+      "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -4692,6 +4636,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
+   "last_read_failed": "2026-11-22",
    "n": "Nebraska National Forest",
    "official": null,
    "ours": {
@@ -4740,6 +4685,7 @@
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Samuel R McKelvie National Forest",
    "official": {
     "acres": 1335.0,
@@ -4808,7 +4754,7 @@
    "verdict": "off"
   },
   "US-3373": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Chimney Rock National Historic Site",
    "ours": null,
@@ -4818,7 +4764,7 @@
    "verdict": "no outline"
   },
   "US-3374": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Neligh Mill State Historic Site",
    "ours": null,
@@ -4830,8 +4776,23 @@
   "US-3375": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Stolley National Historic Site",
-   "ours": null,
+   "ours": {
+    "acres": 39,
+    "manager": "",
+    "pieces": [
+     [
+      103429,
+      "Stolley Park",
+      39,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
    "score": null,
    "t": "National Historic Site",
    "ver": 15,
@@ -4840,36 +4801,34 @@
   "US-3376": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Victoria Springs State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 24,
+    "acres": 60,
     "dissolved": {
      "after": 118,
      "before": 238,
      "copies": 2,
      "families": {
-      "nep": 60,
-      "padus": 58
+      "padus": 58,
+      "sgneb": 60
      },
      "family_fold": 58,
-     "family_used": "nep",
-     "key_union": 24,
+     "family_used": "sgneb",
      "parts": 0,
      "records": 4,
-     "summed": 60,
      "tracts": 2
     },
-    "family_fold": "layers {'nep': 60, 'padus': 58}: one land in 2 layers, the nep copy used (58 ac of copies not added)",
+    "family_fold": "layers {'sgneb': 60, 'padus': 58}: one land in 2 layers, the sgneb copy used (58 ac of copies not added)",
     "manager": "",
     "note": "4 joined records = 2 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 238 -> 118 acres",
     "pieces": [
      [
-      "nep61",
+      "sgneb319",
       "Victoria Springs SRA",
       60,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -4899,17 +4858,17 @@
   },
   "US-3377": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Schilling Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 1377,
+    "acres": 1808,
     "dissolved": {
      "after": 3551,
      "before": 5306,
      "copies": 1,
-     "key_union": 1377,
+     "key_union": 1808,
      "parts": 0,
      "records": 4,
      "summed": 3551,
@@ -4975,7 +4934,7 @@
   "US-3483": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Atlanta National Waterfowl Production Area",
    "official": null,
    "ours": {
@@ -5017,7 +4976,7 @@
   "US-3484": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Peterson National Waterfowl Production Area",
    "official": null,
    "ours": {
@@ -5057,7 +5016,7 @@
    "verdict": "no size on page"
   },
   "US-3485": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Jensen Lagoon National Waterfowl Production Area",
    "official": null,
@@ -5086,12 +5045,12 @@
     }
    ],
    "pct": null,
-   "score": 4,
+   "score": 5,
    "score_parts": {
     "name": 1,
     "pin": 2,
     "size": 1,
-    "source": 0
+    "source": 1
    },
    "sizes": [],
    "t": "National Waterfowl Production Area",
@@ -5101,7 +5060,7 @@
   "US-3486": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Moger National Waterfowl Production Area",
    "official": null,
    "ours": {
@@ -5142,21 +5101,30 @@
   },
   "US-3487": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-09",
-   "handover": [],
+   "checked": "2026-11-22",
+   "handover": [
+    {
+     "date_hint": null,
+     "kind": "managed by",
+     "line": "es. Management and Conservation The National Wildlife Refuge System is a series of lands and waters owned and managed by the U.S. Fish and Wildlife Service. Wildlife conservation is at the heart of the refuge system. It drives everything we do from the purpose a refuge is establis",
+     "owner_now": "U.S",
+     "src": "https://www.fws.gov/refuge/desoto/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
    "n": "DeSoto (NE) National Wildlife Refuge",
    "official": {
     "acres": 8365.0,
     "as": "8,365 acres",
     "clean": false,
     "line": "o National Wildlife Refuge is located along the Missouri River and borders both Iowa and Nebraska. Within its 8,365 acres lies DeSoto Lake, an oxbow lake that used to be a bend in the Missouri River. The refuge contains bottomland",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "Within its 8,365 acres lies DeSoto Lake, an oxbow lake that used to be a bend in the Missouri River.",
     "url": "https://www.fws.gov/refuge/desoto/",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 4047,
+    "acres": 4357,
     "manager": "",
     "pieces": [
      [
@@ -5172,34 +5140,24 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
-   "owner_now": null,
+   "owner_now": "U.S",
    "pages": [
     {
      "status": "ok",
      "url": "https://www.fws.gov/refuge/desoto/",
      "why": "the park's page (data/parkinfo)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/desoto/about-us",
-     "why": "FWS refuge about page"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.fws.gov/refuge/desoto",
-     "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
     }
    ],
-   "pct": 52,
+   "pct": 48,
    "same_agency": false,
-   "score": 5,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 0,
     "source": 2
    },
@@ -5212,24 +5170,6 @@
      "total_like": true,
      "url": "https://www.fws.gov/refuge/desoto/",
      "why": "total-looking"
-    },
-    {
-     "acres": 8365.0,
-     "as": "8,365 acres",
-     "clean": false,
-     "line": "birds and providing public recreation to local communities. Today the physical footprint of the refuge spans 8,365 acres. DeSoto National Wildlife Refuge is located in the migratory bird corridor of the Missouri River floodplain a",
-     "total_like": true,
-     "url": "https://www.fws.gov/refuge/desoto/about-us",
-     "why": "total-looking"
-    },
-    {
-     "acres": 8365.0,
-     "as": "8,365 acres",
-     "clean": false,
-     "line": "o National Wildlife Refuge is located along the Missouri River and borders both Iowa and Nebraska. Within its 8,365 acres lies DeSoto Lake, an oxbow lake that used to be a bend in the Missouri River. The refuge contains bottomland",
-     "total_like": true,
-     "url": "https://www.fws.gov/refuge/desoto",
-     "why": "total-looking"
     }
    ],
    "t": "National Wildlife Refuge",
@@ -5237,7 +5177,7 @@
    "verdict": "off"
   },
   "US-3488": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Alberding Lagoon National Wildlife Management Area",
    "ours": null,
@@ -5249,7 +5189,7 @@
   "US-3489": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Massie National Waterfowl Production Area",
    "official": null,
    "ours": {
@@ -5263,7 +5203,7 @@
       "reviewed-approx"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -5291,7 +5231,7 @@
   "US-3490": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Smith Lagoon National Waterfowl Production Area",
    "official": null,
    "ours": {
@@ -5332,7 +5272,7 @@
   },
   "US-3491": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lake Wanahoo State Recreation Area",
    "official": null,
@@ -5392,17 +5332,71 @@
    "verdict": "unsure"
   },
   "US-3492": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Willa Cather Memorial Prairie State Historic Site",
-   "ours": null,
-   "score": null,
+   "official": {
+    "acres": 612.0,
+    "as": "612 acre",
+    "clean": false,
+    "line": "h played a key role in nurturing Willa Cather's own interest in the arts. Restoration and conservation of the 612-acre Willa Cather Memorial Prairie ; Coordination of an immersive summer teacher institute to foster the study of",
+    "read": "2026-11-22",
+    "sent": "Restoration and conservation of the 612-acre Willa Cather Memorial Prairie ;",
+    "url": "https://www.willacather.org/about/foundation",
+    "why": "total-looking"
+   },
+   "ours": {
+    "acres": 0,
+    "manager": "",
+    "pieces": [],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.willacather.org/learn/cather-prairie",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.willacather.org/about/life-literature",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.willacather.org/about/foundation",
+     "why": "about / history page of the park's site"
+    }
+   ],
+   "pct": null,
+   "same_agency": false,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [
+    {
+     "acres": 612.0,
+     "as": "612 acre",
+     "clean": false,
+     "line": "h played a key role in nurturing Willa Cather's own interest in the arts. Restoration and conservation of the 612-acre Willa Cather Memorial Prairie ; Coordination of an immersive summer teacher institute to foster the study of",
+     "total_like": true,
+     "url": "https://www.willacather.org/about/foundation",
+     "why": "total-looking"
+    }
+   ],
    "t": "State Historic Site",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "ours unknown"
   },
   "US-3493": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Nine Mile Prairie National Historical Park",
    "ours": null,
@@ -5412,7 +5406,7 @@
    "verdict": "no outline"
   },
   "US-4010": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Heron Haven State Park",
    "ours": null,
@@ -5422,7 +5416,7 @@
    "verdict": "no outline"
   },
   "US-4011": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Chalco Hills State Recreation Area",
    "ours": null,
@@ -5432,7 +5426,7 @@
    "verdict": "no outline"
   },
   "US-4012": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Elkhorn Crossing State Park",
    "ours": null,
@@ -5442,7 +5436,7 @@
    "verdict": "no outline"
   },
   "US-4013": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Prairie View State Recreation Area",
    "ours": null,
@@ -5454,7 +5448,7 @@
   "US-4014": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Prairie Queen State Recreation Area",
    "official": null,
    "ours": {
@@ -5494,7 +5488,7 @@
    "verdict": "no size on page"
   },
   "US-4015": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Platte River Landing State Park",
    "ours": null,
@@ -5506,19 +5500,17 @@
   "US-4016": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Cottontail Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 106,
+    "acres": 148,
     "dissolved": {
      "after": 148,
      "before": 294,
      "copies": 1,
-     "key_union": 106,
      "parts": 0,
      "records": 2,
-     "summed": 148,
      "tracts": 1
     },
     "manager": "",
@@ -5558,7 +5550,7 @@
   },
   "US-4017": {
    "cause": "agency bigger: our outline may miss a tract",
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lincoln Saline Wetland State Park",
    "official": {
@@ -5566,7 +5558,7 @@
     "as": "1,110 acres",
     "clean": false,
     "line": "an economic screening analysis on its potential impacts. The revised critical habitat designation consist of 1,110 acres. It is smaller than the previous designation, but contains sufficient suitable habitat to support recovery of",
-    "read": "2026-11-09",
+    "read": "2026-11-22",
     "sent": "The revised critical habitat designation consist of 1,110 acres.",
     "url": "https://www.lincoln.ne.gov/City/Departments/Parks-and-Recreation/Parks-Facilities/Saline-Wetlands",
     "why": "total-looking"
@@ -5582,7 +5574,7 @@
       "reviewed-approx"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -5596,12 +5588,12 @@
    ],
    "pct": 92,
    "same_agency": false,
-   "score": 3,
+   "score": 4,
    "score_parts": {
-    "name": 2,
-    "pin": 1,
+    "name": 1,
+    "pin": 2,
     "size": 0,
-    "source": 0
+    "source": 1
    },
    "sizes": [
     {
@@ -5684,7 +5676,7 @@
   "US-4018": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Wildwood Lake Wildlife Management Area",
    "official": null,
    "ours": {
@@ -5726,16 +5718,16 @@
   "US-4019": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Wild Plum Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 27,
+    "acres": 39,
     "dissolved": {
      "after": 35,
      "before": 70,
      "copies": 1,
-     "key_union": 27,
+     "key_union": 39,
      "parts": 0,
      "records": 2,
      "summed": 35,
@@ -5751,7 +5743,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -5779,11 +5771,11 @@
   "US-4020": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Timber Point Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 118,
+    "acres": 165,
     "family_fold": "layers {'padus': 165, 'sgnea': 160}: one land in 2 layers, the padus copy used (160 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -5822,7 +5814,7 @@
   "US-4021": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Red Cedar Wildlife Management Area",
    "official": null,
    "ours": {
@@ -5865,11 +5857,11 @@
   "US-4022": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Merganser Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 86,
+    "acres": 103,
     "family_fold": "layers {'sgnea': 103, 'padus': 99}: one land in 2 layers, the sgnea copy used (99 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -5880,7 +5872,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -5908,7 +5900,7 @@
   "US-4023": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Chalkrock Wildlife Management Area",
    "official": null,
    "ours": {
@@ -5950,19 +5942,17 @@
   "US-4024": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Bruning Dam Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 203,
+    "acres": 240,
     "dissolved": {
      "after": 240,
      "before": 479,
      "copies": 1,
-     "key_union": 203,
      "parts": 0,
      "records": 2,
-     "summed": 240,
      "tracts": 1
     },
     "manager": "",
@@ -6001,7 +5991,7 @@
    "verdict": "no size on page"
   },
   "US-4025": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Buckley Creek State Recreation Area",
    "ours": null,
@@ -6013,19 +6003,17 @@
   "US-4026": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Liberty Cove State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 224,
+    "acres": 262,
     "dissolved": {
      "after": 262,
      "before": 524,
      "copies": 1,
-     "key_union": 224,
      "parts": 0,
      "records": 2,
-     "summed": 262,
      "tracts": 1
     },
     "manager": "",
@@ -6038,7 +6026,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -6064,7 +6052,7 @@
    "verdict": "no size on page"
   },
   "US-4027": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lone Star State Recreation Area",
    "ours": null,
@@ -6074,7 +6062,7 @@
    "verdict": "no outline"
   },
   "US-4028": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Prairie Lake State Recreation Area",
    "ours": null,
@@ -6086,7 +6074,7 @@
   "US-4029": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Roseland Lake State Recreation Area",
    "official": null,
    "ours": {
@@ -6128,19 +6116,17 @@
   "US-4030": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Bear Creek Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 133,
+    "acres": 120,
     "dissolved": {
      "after": 120,
      "before": 238,
      "copies": 1,
-     "key_union": 133,
      "parts": 0,
      "records": 2,
-     "summed": 120,
      "tracts": 1
     },
     "manager": "",
@@ -6181,11 +6167,11 @@
   "US-4031": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Big Indian State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 177,
+    "acres": 233,
     "family_fold": "layers {'sgnea': 233, 'padus': 102}: one land in 2 layers, the sgnea copy used (102 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -6224,7 +6210,7 @@
   "US-4032": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Clatonia State Recreation Area",
    "official": null,
    "ours": {
@@ -6238,7 +6224,7 @@
       "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -6266,19 +6252,17 @@
   "US-4033": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Cub Creek (southern) State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 116,
+    "acres": 136,
     "dissolved": {
      "after": 136,
      "before": 271,
      "copies": 1,
-     "key_union": 116,
      "parts": 0,
      "records": 2,
-     "summed": 136,
      "tracts": 1
     },
     "manager": "",
@@ -6319,19 +6303,17 @@
   "US-4034": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Leisure Lake Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 56,
+    "acres": 85,
     "dissolved": {
      "after": 85,
      "before": 169,
      "copies": 1,
-     "key_union": 56,
      "parts": 0,
      "records": 2,
-     "summed": 85,
      "tracts": 1
     },
     "manager": "",
@@ -6372,19 +6354,17 @@
   "US-4035": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Swanton Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 128,
+    "acres": 162,
     "dissolved": {
      "after": 162,
      "before": 322,
      "copies": 1,
-     "key_union": 128,
      "parts": 0,
      "records": 2,
-     "summed": 162,
      "tracts": 1
     },
     "manager": "",
@@ -6425,8 +6405,23 @@
   "US-4036": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Walnut Creek State Recreation Area",
-   "ours": null,
+   "ours": {
+    "acres": 383,
+    "manager": "",
+    "pieces": [
+     [
+      118464,
+      "Walnut Creek Recreation Area",
+      383,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
    "score": null,
    "t": "State Recreation Area",
    "ver": 15,
@@ -6435,7 +6430,7 @@
   "US-4037": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Willard L. Meyer State Recreation Area",
    "official": null,
    "ours": {
@@ -6477,7 +6472,7 @@
   "US-4038": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Wolf-Wildcat Wildlife Management Area",
    "official": null,
    "ours": {
@@ -6519,19 +6514,17 @@
   "US-4039": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Maple Creek State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 478,
+    "acres": 557,
     "dissolved": {
      "after": 557,
      "before": 1110,
      "copies": 1,
-     "key_union": 478,
      "parts": 0,
      "records": 2,
-     "summed": 557,
      "tracts": 1
     },
     "manager": "",
@@ -6572,11 +6565,11 @@
   "US-4040": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Maskenthine Lake State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 552,
+    "acres": 731,
     "family_fold": "layers {'padus': 731, 'sgnea': 680}: one land in 2 layers, the padus copy used (680 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -6615,19 +6608,17 @@
   "US-4041": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Pilger State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 112,
+    "acres": 119,
     "dissolved": {
      "after": 119,
      "before": 238,
      "copies": 1,
-     "key_union": 112,
      "parts": 0,
      "records": 2,
-     "summed": 119,
      "tracts": 1
     },
     "manager": "",
@@ -6666,7 +6657,7 @@
    "verdict": "no size on page"
   },
   "US-4566": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "California National Historic Trail",
    "note": "whole park compared (POTA lists it in 0 states: {})",
@@ -6679,16 +6670,16 @@
     "pin": "inside",
     "src": "",
     "states": [
+     "US-CA",
+     "US-CO",
+     "US-OR",
+     "US-UT",
+     "US-NV",
+     "US-NE",
+     "US-MO",
      "US-KS",
      "US-WY",
-     "US-MO",
-     "US-NE",
-     "US-ID",
-     "US-CA",
-     "US-OR",
-     "US-CO",
-     "US-NV",
-     "US-UT"
+     "US-ID"
     ],
     "unknown_pieces": 1,
     "whole_park": true
@@ -6730,7 +6721,7 @@
    "verdict": "ours unknown"
   },
   "US-4572": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lewis and Clark National Historic Trail",
    "note": "whole park compared (POTA lists it in 0 states: {})",
@@ -6743,21 +6734,21 @@
     "pin": "inside",
     "src": "",
     "states": [
-     "US-SD",
      "US-ND",
-     "US-KS",
-     "US-MO",
-     "US-WV",
-     "US-PA",
-     "US-NE",
-     "US-ID",
-     "US-IA",
-     "US-OH",
-     "US-MT",
-     "US-WA",
-     "US-OR",
      "US-IN",
-     "US-IL"
+     "US-OR",
+     "US-NE",
+     "US-PA",
+     "US-IA",
+     "US-WA",
+     "US-MO",
+     "US-SD",
+     "US-OH",
+     "US-KS",
+     "US-IL",
+     "US-ID",
+     "US-MT",
+     "US-WV"
     ],
     "unknown_pieces": 1,
     "whole_park": true
@@ -6804,7 +6795,7 @@
    "verdict": "ours unknown"
   },
   "US-4573": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Mormon Pioneer National Historic Trail",
    "note": "whole park compared (POTA lists it in 0 states: {})",
@@ -6817,11 +6808,11 @@
     "pin": "inside",
     "src": "",
     "states": [
-     "US-WY",
+     "US-UT",
      "US-NE",
      "US-IA",
      "US-IL",
-     "US-UT"
+     "US-WY"
     ],
     "unknown_pieces": 1,
     "whole_park": true
@@ -6863,7 +6854,7 @@
    "verdict": "ours unknown"
   },
   "US-4576": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Oregon National Historic Trail",
    "note": "whole park compared (POTA lists it in 0 states: {})",
@@ -6876,13 +6867,13 @@
     "pin": "inside",
     "src": "",
     "states": [
+     "US-OR",
+     "US-NE",
+     "US-WA",
+     "US-MO",
      "US-KS",
      "US-WY",
-     "US-MO",
-     "US-NE",
-     "US-ID",
-     "US-WA",
-     "US-OR"
+     "US-ID"
     ],
     "unknown_pieces": 1,
     "whole_park": true
@@ -6929,7 +6920,7 @@
    "verdict": "ours unknown"
   },
   "US-4578": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Pony Express National Historic Trail",
    "note": "whole park compared (POTA lists it in 0 states: {})",
@@ -6942,14 +6933,14 @@
     "pin": "inside",
     "src": "",
     "states": [
-     "US-KS",
-     "US-WY",
-     "US-MO",
-     "US-NE",
      "US-CA",
      "US-CO",
+     "US-UT",
      "US-NV",
-     "US-UT"
+     "US-NE",
+     "US-MO",
+     "US-KS",
+     "US-WY"
     ],
     "unknown_pieces": 1,
     "whole_park": true
@@ -7001,7 +6992,7 @@
    "verdict": "ours unknown"
   },
   "US-5622": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Niobrara National Wild and Scenic River",
    "official": null,
@@ -7065,29 +7056,29 @@
   "US-5625": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Mormon Island State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 109,
+    "acres": 168,
     "dissolved": {
      "after": 723,
      "before": 875,
      "copies": 1,
      "families": {
-      "nep": 152,
       "padus": 331,
-      "sgneb": 240
+      "sgneb": 240,
+      "sgnec": 152
      },
      "family_fold": 392,
      "family_used": "padus",
-     "key_union": 109,
+     "key_union": 168,
      "parts": 0,
      "records": 5,
      "summed": 331,
      "tracts": 4
     },
-    "family_fold": "layers {'sgneb': 240, 'padus': 331, 'nep': 152}: one land in 3 layers, the padus copy used (392 ac of copies not added)",
+    "family_fold": "layers {'sgneb': 240, 'padus': 331, 'sgnec': 152}: one land in 3 layers, the padus copy used (392 ac of copies not added)",
     "manager": "",
     "note": "5 joined records = 4 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 875 -> 723 acres",
     "pieces": [
@@ -7132,16 +7123,16 @@
   "US-5626": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Windmill State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 123,
+    "acres": 174,
     "dissolved": {
      "after": 333,
      "before": 834,
      "copies": 3,
-     "key_union": 123,
+     "key_union": 174,
      "parts": 0,
      "records": 5,
      "summed": 333,
@@ -7191,16 +7182,16 @@
   "US-5627": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Cheyenne State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 24,
+    "acres": 19,
     "dissolved": {
      "after": 33,
      "before": 132,
      "copies": 3,
-     "key_union": 24,
+     "key_union": 19,
      "parts": 0,
      "records": 4,
      "summed": 33,
@@ -7244,29 +7235,29 @@
   "US-5628": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Fort Kearny State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 214,
+    "acres": 235,
     "dissolved": {
      "after": 641,
      "before": 1013,
      "copies": 2,
      "families": {
-      "nep": 186,
       "padus": 417,
+      "sgneb": 186,
       "sgnec": 38
      },
      "family_fold": 224,
      "family_used": "padus",
-     "key_union": 214,
+     "key_union": 235,
      "parts": 0,
      "records": 9,
      "summed": 417,
      "tracts": 7
     },
-    "family_fold": "layers {'nep': 186, 'padus': 417, 'sgnec': 38}: one land in 3 layers, the padus copy used (224 ac of copies not added)",
+    "family_fold": "layers {'sgneb': 186, 'padus': 417, 'sgnec': 38}: one land in 3 layers, the padus copy used (224 ac of copies not added)",
     "manager": "",
     "note": "9 joined records = 7 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1013 -> 641 acres",
     "pieces": [
@@ -7329,11 +7320,11 @@
   "US-5629": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Sherman Reservoir State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 4386,
+    "acres": 3707,
     "family_fold": "layers {'sgnec': 4386, 'padus': 2710}: one land in 2 layers, the sgnec copy used (2,710 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -7372,39 +7363,39 @@
   "US-5630": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Calamus Reservoir State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 718,
+    "acres": 1069,
     "dissolved": {
      "after": 2261,
      "before": 3449,
      "copies": 1,
      "families": {
-      "nep": 1188,
-      "sgneb": 1073
+      "sgneb": 1073,
+      "sgnec": 1188
      },
      "family_fold": 1073,
-     "family_used": "nep",
-     "key_union": 718,
+     "family_used": "sgnec",
+     "key_union": 1069,
      "parts": 0,
      "records": 3,
      "summed": 1188,
      "tracts": 2
     },
-    "family_fold": "layers {'nep': 1188, 'sgneb': 1073}: one land in 2 layers, the nep copy used (1,073 ac of copies not added)",
+    "family_fold": "layers {'sgnec': 1188, 'sgneb': 1073}: one land in 2 layers, the sgnec copy used (1,073 ac of copies not added)",
     "manager": "",
     "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 3449 -> 2261 acres",
     "pieces": [
      [
-      "nep71",
+      "sgnec71",
       "Calamus Reservoir SRA",
       1188,
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -7432,11 +7423,11 @@
   "US-5631": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Merritt Reservoir State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 442,
+    "acres": 691,
     "family_fold": "layers {'sgnec': 823, 'sgneb': 729}: one land in 2 layers, the sgnec copy used (729 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -7475,16 +7466,16 @@
   "US-5632": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "North Loup State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 17,
+    "acres": 26,
     "dissolved": {
      "after": 43,
      "before": 103,
      "copies": 3,
-     "key_union": 17,
+     "key_union": 26,
      "parts": 0,
      "records": 5,
      "summed": 43,
@@ -7534,33 +7525,33 @@
   "US-5642": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Swanson Reservoir State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 1150,
+    "acres": 1649,
     "dissolved": {
      "after": 1907,
      "before": 3207,
      "copies": 1,
      "families": {
-      "nep": 1300,
-      "sgneb": 607
+      "sgneb": 607,
+      "sgnec": 1300
      },
      "family_fold": 607,
-     "family_used": "nep",
-     "key_union": 1150,
+     "family_used": "sgnec",
+     "key_union": 1649,
      "parts": 0,
      "records": 3,
      "summed": 1300,
      "tracts": 2
     },
-    "family_fold": "layers {'nep': 1300, 'sgneb': 607}: one land in 2 layers, the nep copy used (607 ac of copies not added)",
+    "family_fold": "layers {'sgnec': 1300, 'sgneb': 607}: one land in 2 layers, the sgnec copy used (607 ac of copies not added)",
     "manager": "",
     "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 3207 -> 1907 acres",
     "pieces": [
      [
-      "nep73",
+      "sgnec73",
       "Swanson Reservoir SRA",
       1300,
       "name"
@@ -7594,16 +7585,16 @@
   "US-5646": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Lake McConaughy State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 6155,
+    "acres": 5227,
     "dissolved": {
      "after": 37073,
      "before": 74106,
      "copies": 1,
-     "key_union": 6155,
+     "key_union": 5227,
      "parts": 0,
      "records": 3,
      "summed": 37073,
@@ -7653,26 +7644,28 @@
   "US-5647": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Branched Oak State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 6833,
+    "acres": 5336,
     "dissolved": {
      "after": 9728,
      "before": 15518,
      "copies": 2,
      "families": {
-      "nep": 2895,
-      "padus": 6833
+      "padus": 6833,
+      "sgneb": 2895
      },
      "family_fold": 2895,
      "family_used": "padus",
+     "key_union": 5336,
      "parts": 0,
      "records": 6,
+     "summed": 6833,
      "tracts": 4
     },
-    "family_fold": "layers {'padus': 6833, 'nep': 2895}: one land in 2 layers, the padus copy used (2,895 ac of copies not added)",
+    "family_fold": "layers {'padus': 6833, 'sgneb': 2895}: one land in 2 layers, the padus copy used (2,895 ac of copies not added)",
     "manager": "",
     "note": "6 joined records = 4 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 15518 -> 9728 acres",
     "pieces": [
@@ -7723,28 +7716,28 @@
   "US-5648": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Memphis Lake State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 223,
+    "acres": 224,
     "dissolved": {
      "after": 507,
      "before": 767,
      "copies": 2,
      "families": {
-      "nep": 130,
-      "padus": 377
+      "padus": 377,
+      "sgneb": 130
      },
      "family_fold": 130,
      "family_used": "padus",
-     "key_union": 223,
+     "key_union": 224,
      "parts": 0,
      "records": 7,
      "summed": 377,
      "tracts": 5
     },
-    "family_fold": "layers {'padus': 377, 'nep': 130}: one land in 2 layers, the padus copy used (130 ac of copies not added)",
+    "family_fold": "layers {'padus': 377, 'sgneb': 130}: one land in 2 layers, the padus copy used (130 ac of copies not added)",
     "manager": "",
     "note": "7 joined records = 5 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 767 -> 507 acres",
     "pieces": [
@@ -7801,30 +7794,30 @@
   "US-5649": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Pawnee State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 1828,
+    "acres": 2245,
     "dissolved": {
      "after": 3998,
-     "before": 6534,
-     "copies": 2,
+     "before": 5266,
+     "copies": 1,
      "families": {
-      "nep": 1268,
-      "padus": 2730
+      "padus": 2730,
+      "sgneb": 1268
      },
      "family_fold": 1268,
      "family_used": "padus",
-     "key_union": 1828,
+     "key_union": 2245,
      "parts": 0,
-     "records": 6,
+     "records": 5,
      "summed": 2730,
      "tracts": 4
     },
-    "family_fold": "layers {'padus': 2730, 'nep': 1268}: one land in 2 layers, the padus copy used (1,268 ac of copies not added)",
+    "family_fold": "layers {'padus': 2730, 'sgneb': 1268}: one land in 2 layers, the padus copy used (1,268 ac of copies not added)",
     "manager": "",
-    "note": "6 joined records = 4 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 6534 -> 3998 acres",
+    "note": "5 joined records = 4 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 5266 -> 3998 acres",
     "pieces": [
      [
       2582,
@@ -7873,28 +7866,28 @@
   "US-5650": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Louisville State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 184,
+    "acres": 360,
     "dissolved": {
      "after": 754,
      "before": 1138,
      "copies": 2,
      "families": {
-      "nep": 192,
-      "padus": 562
+      "padus": 562,
+      "sgneb": 192
      },
      "family_fold": 192,
      "family_used": "padus",
-     "key_union": 184,
+     "key_union": 360,
      "parts": 0,
      "records": 6,
      "summed": 562,
      "tracts": 4
     },
-    "family_fold": "layers {'padus': 562, 'nep': 192}: one land in 2 layers, the padus copy used (192 ac of copies not added)",
+    "family_fold": "layers {'padus': 562, 'sgneb': 192}: one land in 2 layers, the padus copy used (192 ac of copies not added)",
     "manager": "",
     "note": "6 joined records = 4 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1138 -> 754 acres",
     "pieces": [
@@ -7945,30 +7938,30 @@
   "US-5651": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Olive Creek Lake State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 674,
+    "acres": 656,
     "dissolved": {
      "after": 984,
-     "before": 1480,
-     "copies": 2,
+     "before": 1232,
+     "copies": 1,
      "families": {
-      "nep": 248,
-      "padus": 736
+      "padus": 736,
+      "sgneb": 248
      },
      "family_fold": 248,
      "family_used": "padus",
-     "key_union": 674,
+     "key_union": 656,
      "parts": 0,
-     "records": 6,
+     "records": 5,
      "summed": 736,
      "tracts": 4
     },
-    "family_fold": "layers {'padus': 736, 'nep': 248}: one land in 2 layers, the padus copy used (248 ac of copies not added)",
+    "family_fold": "layers {'padus': 736, 'sgneb': 248}: one land in 2 layers, the padus copy used (248 ac of copies not added)",
     "manager": "",
-    "note": "6 joined records = 4 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1480 -> 984 acres",
+    "note": "5 joined records = 4 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1232 -> 984 acres",
     "pieces": [
      [
       2581,
@@ -8017,30 +8010,30 @@
   "US-5652": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Bluestem Lake State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 1156,
+    "acres": 956,
     "dissolved": {
      "after": 1464,
-     "before": 2346,
-     "copies": 2,
+     "before": 1905,
+     "copies": 1,
      "families": {
-      "nep": 441,
-      "padus": 1023
+      "padus": 1023,
+      "sgneb": 441
      },
      "family_fold": 441,
      "family_used": "padus",
-     "key_union": 1156,
+     "key_union": 956,
      "parts": 0,
-     "records": 6,
+     "records": 5,
      "summed": 1023,
      "tracts": 4
     },
-    "family_fold": "layers {'padus': 1023, 'nep': 441}: one land in 2 layers, the padus copy used (441 ac of copies not added)",
+    "family_fold": "layers {'padus': 1023, 'sgneb': 441}: one land in 2 layers, the padus copy used (441 ac of copies not added)",
     "manager": "",
-    "note": "6 joined records = 4 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 2346 -> 1464 acres",
+    "note": "5 joined records = 4 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1905 -> 1464 acres",
     "pieces": [
      [
       2563,
@@ -8089,28 +8082,28 @@
   "US-5653": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Stagecoach Lake State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 921,
+    "acres": 666,
     "dissolved": {
      "after": 1143,
      "before": 1943,
      "copies": 2,
      "families": {
-      "nep": 400,
-      "padus": 743
+      "padus": 743,
+      "sgneb": 400
      },
      "family_fold": 400,
      "family_used": "padus",
-     "key_union": 921,
+     "key_union": 666,
      "parts": 0,
      "records": 6,
      "summed": 743,
      "tracts": 4
     },
-    "family_fold": "layers {'padus': 743, 'nep': 400}: one land in 2 layers, the padus copy used (400 ac of copies not added)",
+    "family_fold": "layers {'padus': 743, 'sgneb': 400}: one land in 2 layers, the padus copy used (400 ac of copies not added)",
     "manager": "",
     "note": "6 joined records = 4 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1943 -> 1143 acres",
     "pieces": [
@@ -8161,30 +8154,30 @@
   "US-5654": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Wagon Train Lake State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 851,
+    "acres": 1073,
     "dissolved": {
      "after": 1879,
-     "before": 3015,
-     "copies": 2,
+     "before": 2447,
+     "copies": 1,
      "families": {
-      "nep": 568,
-      "padus": 1311
+      "padus": 1311,
+      "sgneb": 568
      },
      "family_fold": 568,
      "family_used": "padus",
-     "key_union": 851,
+     "key_union": 1073,
      "parts": 0,
-     "records": 6,
+     "records": 5,
      "summed": 1311,
      "tracts": 4
     },
-    "family_fold": "layers {'padus': 1311, 'nep': 568}: one land in 2 layers, the padus copy used (568 ac of copies not added)",
+    "family_fold": "layers {'padus': 1311, 'sgneb': 568}: one land in 2 layers, the padus copy used (568 ac of copies not added)",
     "manager": "",
-    "note": "6 joined records = 4 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 3015 -> 1879 acres",
+    "note": "5 joined records = 4 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 2447 -> 1879 acres",
     "pieces": [
      [
       2589,
@@ -8205,7 +8198,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -8233,36 +8226,34 @@
   "US-5655": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Lake Minatare State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 2260,
+    "acres": 2400,
     "dissolved": {
      "after": 4362,
      "before": 9162,
      "copies": 2,
      "families": {
-      "nep": 2400,
-      "padus": 1962
+      "padus": 1962,
+      "sgneb": 2400
      },
      "family_fold": 1962,
-     "family_used": "nep",
-     "key_union": 2260,
+     "family_used": "sgneb",
      "parts": 0,
      "records": 5,
-     "summed": 2400,
      "tracts": 3
     },
-    "family_fold": "layers {'nep': 2400, 'padus': 1962}: one land in 2 layers, the nep copy used (1,962 ac of copies not added)",
+    "family_fold": "layers {'sgneb': 2400, 'padus': 1962}: one land in 2 layers, the sgneb copy used (1,962 ac of copies not added)",
     "manager": "",
     "note": "5 joined records = 3 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 9162 -> 4362 acres",
     "pieces": [
      [
-      "nep37",
+      "sgneb202",
       "Minatare Lake SRA",
       2400,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -8293,15 +8284,30 @@
   "US-5656": {
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Flanagan Lake State Recreation Area",
-   "ours": null,
+   "ours": {
+    "acres": 721,
+    "manager": "",
+    "pieces": [
+     [
+      117508,
+      "Flanagan Lake & Recreation Area",
+      721,
+      "reviewed"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 0
+   },
    "score": null,
    "t": "State Recreation Area",
    "ver": 15,
    "verdict": "no outline"
   },
   "US-5657": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Standing Bear Lake State Recreation Area",
    "official": null,
@@ -8316,7 +8322,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -8328,7 +8334,7 @@
    "verdict": "no official page on file"
   },
   "US-5658": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Lake Zorinsky State Park",
    "official": null,
@@ -8343,7 +8349,7 @@
       "words"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -8357,33 +8363,31 @@
   "US-5659": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Alexandria Lakes State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 61,
+    "acres": 101,
     "dissolved": {
      "after": 200,
-     "before": 501,
-     "copies": 3,
+     "before": 400,
+     "copies": 2,
      "families": {
-      "nep": 101,
-      "padus": 99
+      "padus": 99,
+      "sgneb": 101
      },
      "family_fold": 99,
-     "family_used": "nep",
-     "key_union": 61,
+     "family_used": "sgneb",
      "parts": 0,
-     "records": 6,
-     "summed": 101,
+     "records": 5,
      "tracts": 3
     },
-    "family_fold": "layers {'nep': 101, 'padus': 99}: one land in 2 layers, the nep copy used (99 ac of copies not added)",
+    "family_fold": "layers {'sgneb': 101, 'padus': 99}: one land in 2 layers, the sgneb copy used (99 ac of copies not added)",
     "manager": "",
-    "note": "6 joined records = 3 tracts: 3 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 501 -> 200 acres",
+    "note": "5 joined records = 3 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 400 -> 200 acres",
     "pieces": [
      [
-      "nep1",
+      "sgneb1",
       "Alexandria SRA",
       101,
       "name"
@@ -8417,16 +8421,16 @@
   "US-5660": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Box Butte Reservoir State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 192,
+    "acres": 207,
     "dissolved": {
      "after": 182,
      "before": 362,
      "copies": 1,
-     "key_union": 192,
+     "key_union": 207,
      "parts": 0,
      "records": 2,
      "summed": 182,
@@ -8442,7 +8446,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -8470,28 +8474,28 @@
   "US-5661": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Bridgeport State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 173,
+    "acres": 326,
     "dissolved": {
      "after": 1002,
      "before": 1654,
      "copies": 2,
      "families": {
-      "nep": 326,
-      "padus": 676
+      "padus": 676,
+      "sgneb": 326
      },
      "family_fold": 326,
      "family_used": "padus",
-     "key_union": 173,
+     "key_union": 326,
      "parts": 0,
      "records": 5,
      "summed": 676,
      "tracts": 3
     },
-    "family_fold": "layers {'padus': 676, 'nep': 326}: one land in 2 layers, the padus copy used (326 ac of copies not added)",
+    "family_fold": "layers {'padus': 676, 'sgneb': 326}: one land in 2 layers, the padus copy used (326 ac of copies not added)",
     "manager": "",
     "note": "5 joined records = 3 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1654 -> 1002 acres",
     "pieces": [
@@ -8536,28 +8540,28 @@
   "US-5662": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Conestoga Lake State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 456,
+    "acres": 855,
     "dissolved": {
      "after": 1222,
      "before": 1852,
      "copies": 2,
      "families": {
-      "nep": 315,
-      "padus": 907
+      "padus": 907,
+      "sgneb": 315
      },
      "family_fold": 315,
      "family_used": "padus",
-     "key_union": 456,
+     "key_union": 855,
      "parts": 0,
      "records": 5,
      "summed": 907,
      "tracts": 3
     },
-    "family_fold": "layers {'padus': 907, 'nep': 315}: one land in 2 layers, the padus copy used (315 ac of copies not added)",
+    "family_fold": "layers {'padus': 907, 'sgneb': 315}: one land in 2 layers, the padus copy used (315 ac of copies not added)",
     "manager": "",
     "note": "5 joined records = 3 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1852 -> 1222 acres",
     "pieces": [
@@ -8574,7 +8578,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -8602,29 +8606,27 @@
   "US-5663": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Dead Timber State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 174,
+    "acres": 200,
     "dissolved": {
      "after": 200,
      "before": 799,
      "copies": 3,
-     "key_union": 174,
      "parts": 0,
      "records": 4,
-     "summed": 200,
      "tracts": 1
     },
     "manager": "",
     "note": "4 joined records = 1 tracts: 3 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 799 -> 200 acres",
     "pieces": [
      [
-      "nep16",
+      "sgneb79",
       "Dead Timber SRA",
       200,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -8655,11 +8657,11 @@
   "US-5664": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Enders Reservoir State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 1063,
+    "acres": 1241,
     "family_fold": "layers {'sgneb': 990, 'sgnec': 751}: one land in 2 layers, the sgneb copy used (751 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -8698,28 +8700,26 @@
   "US-5665": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Fremont Lakes State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 530,
+    "acres": 681,
     "dissolved": {
      "after": 1348,
      "before": 2682,
      "copies": 2,
      "families": {
-      "nep": 667,
-      "padus": 681
+      "padus": 681,
+      "sgneb": 667
      },
      "family_fold": 667,
      "family_used": "padus",
-     "key_union": 530,
      "parts": 0,
      "records": 4,
-     "summed": 681,
      "tracts": 2
     },
-    "family_fold": "layers {'padus': 681, 'nep': 667}: one land in 2 layers, the padus copy used (667 ac of copies not added)",
+    "family_fold": "layers {'padus': 681, 'sgneb': 667}: one land in 2 layers, the padus copy used (667 ac of copies not added)",
     "manager": "",
     "note": "4 joined records = 2 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 2682 -> 1348 acres",
     "pieces": [
@@ -8758,7 +8758,7 @@
   "US-5666": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Gallagher Canyon State Recreation Area",
    "official": null,
    "ours": {
@@ -8768,8 +8768,8 @@
      "before": 73,
      "copies": 1,
      "families": {
-      "nep": 24,
-      "sgneb": 25
+      "sgneb": 25,
+      "sgnec": 24
      },
      "family_fold": 24,
      "family_used": "sgneb",
@@ -8779,7 +8779,7 @@
      "summed": 25,
      "tracts": 2
     },
-    "family_fold": "layers {'sgneb': 25, 'nep': 24}: one land in 2 layers, the sgneb copy used (24 ac of copies not added)",
+    "family_fold": "layers {'sgneb': 25, 'sgnec': 24}: one land in 2 layers, the sgneb copy used (24 ac of copies not added)",
     "manager": "",
     "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 73 -> 49 acres",
     "pieces": [
@@ -8818,27 +8818,29 @@
   "US-5667": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Johnson Lake State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 68,
+    "acres": 73,
     "dissolved": {
      "after": 68,
      "before": 204,
      "copies": 2,
+     "key_union": 73,
      "parts": 0,
      "records": 3,
+     "summed": 68,
      "tracts": 1
     },
     "manager": "",
     "note": "3 joined records = 1 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 204 -> 68 acres",
     "pieces": [
      [
-      "nep27",
+      "sgneb151",
       "Johnson Lake SRA",
       68,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -8869,19 +8871,17 @@
   "US-5668": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Keller Park State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 171,
+    "acres": 198,
     "dissolved": {
      "after": 198,
      "before": 786,
      "copies": 3,
-     "key_union": 171,
      "parts": 0,
      "records": 4,
-     "summed": 198,
      "tracts": 1
     },
     "manager": "",
@@ -8922,26 +8922,15 @@
   "US-5669": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Lake Maloney State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 53,
-    "dissolved": {
-     "after": 62,
-     "before": 124,
-     "copies": 1,
-     "key_union": 53,
-     "parts": 0,
-     "records": 2,
-     "summed": 62,
-     "tracts": 1
-    },
+    "acres": 62,
     "manager": "",
-    "note": "2 joined records = 1 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 124 -> 62 acres",
     "pieces": [
      [
-      "nep33",
+      "sgneb185",
       "Maloney Reservoir SRA",
       62,
       "name"
@@ -8975,16 +8964,16 @@
   "US-5671": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Lake Ogallala State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 323,
+    "acres": 250,
     "dissolved": {
      "after": 559,
      "before": 1677,
      "copies": 2,
-     "key_union": 323,
+     "key_union": 250,
      "parts": 0,
      "records": 3,
      "summed": 559,
@@ -8994,10 +8983,10 @@
     "note": "3 joined records = 1 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1677 -> 559 acres",
     "pieces": [
      [
-      "nep30",
+      "sgneb165",
       "Lake Ogallala SRA",
       559,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -9028,28 +9017,28 @@
   "US-5672": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Pelican Point State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 29,
+    "acres": 39,
     "dissolved": {
      "after": 110,
      "before": 182,
      "copies": 2,
      "families": {
-      "nep": 36,
-      "padus": 74
+      "padus": 74,
+      "sgneb": 36
      },
      "family_fold": 36,
      "family_used": "padus",
-     "key_union": 29,
+     "key_union": 39,
      "parts": 0,
      "records": 5,
      "summed": 74,
      "tracts": 3
     },
-    "family_fold": "layers {'padus': 74, 'nep': 36}: one land in 2 layers, the padus copy used (36 ac of copies not added)",
+    "family_fold": "layers {'padus': 74, 'sgneb': 36}: one land in 2 layers, the padus copy used (36 ac of copies not added)",
     "manager": "",
     "note": "5 joined records = 3 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 182 -> 110 acres",
     "pieces": [
@@ -9094,39 +9083,39 @@
   "US-5673": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Red Willow Reservoir State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 697,
+    "acres": 805,
     "dissolved": {
      "after": 1775,
      "before": 3133,
      "copies": 1,
      "families": {
-      "nep": 1358,
-      "sgneb": 417
+      "sgneb": 417,
+      "sgnec": 1358
      },
      "family_fold": 417,
-     "family_used": "nep",
-     "key_union": 697,
+     "family_used": "sgnec",
+     "key_union": 805,
      "parts": 0,
      "records": 3,
      "summed": 1358,
      "tracts": 2
     },
-    "family_fold": "layers {'nep': 1358, 'sgneb': 417}: one land in 2 layers, the nep copy used (417 ac of copies not added)",
+    "family_fold": "layers {'sgnec': 1358, 'sgneb': 417}: one land in 2 layers, the sgnec copy used (417 ac of copies not added)",
     "manager": "",
     "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 3133 -> 1775 acres",
     "pieces": [
      [
-      "nep69",
+      "sgnec69",
       "Red Willow Reservoir SRA",
       1358,
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -9154,16 +9143,16 @@
   "US-5674": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Summit Lake State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 359,
+    "acres": 505,
     "dissolved": {
      "after": 535,
      "before": 1605,
      "copies": 2,
-     "key_union": 359,
+     "key_union": 505,
      "parts": 0,
      "records": 3,
      "summed": 535,
@@ -9173,10 +9162,10 @@
     "note": "3 joined records = 1 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1605 -> 535 acres",
     "pieces": [
      [
-      "nep56",
+      "sgneb297",
       "Summit Lake SRA",
       535,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -9207,16 +9196,16 @@
   "US-5675": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Sutherland Reservoir State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 113,
+    "acres": 93,
     "dissolved": {
      "after": 105,
      "before": 210,
      "copies": 1,
-     "key_union": 113,
+     "key_union": 93,
      "parts": 0,
      "records": 2,
      "summed": 105,
@@ -9260,28 +9249,26 @@
   "US-5676": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Two Rivers State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 892,
+    "acres": 679,
     "dissolved": {
      "after": 1301,
      "before": 3221,
      "copies": 3,
      "families": {
-      "nep": 622,
-      "padus": 679
+      "padus": 679,
+      "sgneb": 622
      },
      "family_fold": 622,
      "family_used": "padus",
-     "key_union": 892,
      "parts": 0,
      "records": 5,
-     "summed": 679,
      "tracts": 2
     },
-    "family_fold": "layers {'padus': 679, 'nep': 622}: one land in 2 layers, the padus copy used (622 ac of copies not added)",
+    "family_fold": "layers {'padus': 679, 'sgneb': 622}: one land in 2 layers, the padus copy used (622 ac of copies not added)",
     "manager": "",
     "note": "5 joined records = 2 tracts: 3 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 3221 -> 1301 acres",
     "pieces": [
@@ -9320,16 +9307,16 @@
   "US-5677": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Union Pacific State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 34,
+    "acres": 36,
     "dissolved": {
      "after": 38,
      "before": 152,
      "copies": 3,
-     "key_union": 34,
+     "key_union": 36,
      "parts": 0,
      "records": 4,
      "summed": 38,
@@ -9373,39 +9360,39 @@
   "US-5678": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Verdon Lake State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 20,
+    "acres": 56,
     "dissolved": {
      "after": 129,
-     "before": 279,
-     "copies": 2,
+     "before": 204,
+     "copies": 1,
      "families": {
-      "nep": 75,
-      "padus": 54
+      "padus": 54,
+      "sgneb": 75
      },
      "family_fold": 54,
-     "family_used": "nep",
-     "key_union": 20,
+     "family_used": "sgneb",
+     "key_union": 56,
      "parts": 0,
-     "records": 4,
+     "records": 3,
      "summed": 75,
      "tracts": 2
     },
-    "family_fold": "layers {'nep': 75, 'padus': 54}: one land in 2 layers, the nep copy used (54 ac of copies not added)",
+    "family_fold": "layers {'sgneb': 75, 'padus': 54}: one land in 2 layers, the sgneb copy used (54 ac of copies not added)",
     "manager": "",
-    "note": "4 joined records = 2 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 279 -> 129 acres",
+    "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 204 -> 129 acres",
     "pieces": [
      [
-      "nep60",
+      "sgneb318",
       "Verdon SRA",
       75,
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -9433,29 +9420,27 @@
   "US-5679": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Willow Creek State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 1971,
+    "acres": 1650,
     "dissolved": {
      "after": 1650,
      "before": 4950,
      "copies": 2,
-     "key_union": 1971,
      "parts": 0,
      "records": 3,
-     "summed": 1650,
      "tracts": 1
     },
     "manager": "",
     "note": "3 joined records = 1 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 4950 -> 1650 acres",
     "pieces": [
      [
-      "nep65",
+      "sgneb340",
       "Willow Creek SRA",
       1650,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -9487,6 +9472,7 @@
    "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
    "checked": "2026-11-09",
    "handover": [],
+   "last_read_failed": "2026-11-22",
    "n": "Oglala National Grassland",
    "official": {
     "acres": 1335.0,
@@ -9557,19 +9543,17 @@
   "US-8614": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "War Axe State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 27,
+    "acres": 25,
     "dissolved": {
      "after": 25,
      "before": 100,
      "copies": 3,
-     "key_union": 27,
      "parts": 0,
      "records": 4,
-     "summed": 25,
      "tracts": 1
     },
     "manager": "",
@@ -9610,16 +9594,16 @@
   "US-8615": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Wood River West Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 12,
+    "acres": 25,
     "dissolved": {
      "after": 28,
      "before": 56,
      "copies": 1,
-     "key_union": 12,
+     "key_union": 25,
      "parts": 0,
      "records": 2,
      "summed": 28,
@@ -9635,7 +9619,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -9663,11 +9647,11 @@
   "US-8616": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Martin's Reach Wildlife Management Area",
    "official": null,
    "ours": {
-    "acres": 96,
+    "acres": 130,
     "family_fold": "layers {'padus': 247, 'sgneb': 90}: one land in 2 layers, the padus copy used (90 ac of copies not added)",
     "manager": "",
     "pieces": [
@@ -9710,7 +9694,7 @@
    "verdict": "no size on page"
   },
   "US-9356": {
-   "checked": "2026-11-09",
+   "checked": "2026-11-22",
    "handover": [],
    "n": "Willow Lake Wildlife Management Area",
    "ours": null,
@@ -9722,28 +9706,28 @@
   "US-9357": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Blue River State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 16,
+    "acres": 19,
     "dissolved": {
      "after": 46,
      "before": 74,
      "copies": 2,
      "families": {
-      "nep": 14,
-      "padus": 32
+      "padus": 32,
+      "sgneb": 14
      },
      "family_fold": 14,
      "family_used": "padus",
-     "key_union": 16,
+     "key_union": 19,
      "parts": 0,
      "records": 5,
      "summed": 32,
      "tracts": 3
     },
-    "family_fold": "layers {'padus': 32, 'nep': 14}: one land in 2 layers, the padus copy used (14 ac of copies not added)",
+    "family_fold": "layers {'padus': 32, 'sgneb': 14}: one land in 2 layers, the padus copy used (14 ac of copies not added)",
     "manager": "",
     "note": "5 joined records = 3 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 74 -> 46 acres",
     "pieces": [
@@ -9760,7 +9744,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -9788,29 +9772,27 @@
   "US-9358": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Cottonwood Lake State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 145,
+    "acres": 240,
     "dissolved": {
      "after": 240,
      "before": 957,
      "copies": 3,
-     "key_union": 145,
      "parts": 0,
      "records": 4,
-     "summed": 240,
      "tracts": 1
     },
     "manager": "",
     "note": "4 joined records = 1 tracts: 3 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 957 -> 240 acres",
     "pieces": [
      [
-      "nep14",
+      "sgneb69",
       "Cottonwood Lake SRA",
       240,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -9841,7 +9823,7 @@
   "US-9359": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Danish Alps State Recreation Area",
    "official": null,
    "ours": {
@@ -9858,13 +9840,13 @@
     "note": "3 joined records = 1 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 2238 -> 746 acres",
     "pieces": [
      [
-      "nep15",
+      "sgneb74",
       "Danish Alps SRA",
       746,
-      "name"
+      "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -9892,19 +9874,17 @@
   "US-9360": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Lewis and Clark Lake State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 32665,
+    "acres": 26969,
     "dissolved": {
      "after": 26969,
      "before": 28315,
      "copies": 2,
-     "key_union": 32665,
      "parts": 0,
      "records": 5,
-     "summed": 26969,
      "tracts": 3
     },
     "manager": "",
@@ -9917,10 +9897,10 @@
       "name"
      ],
      [
-      "nep75",
+      "sgneb380",
       "Lewis and Clark Lake SRA",
       673,
-      "name"
+      "reviewed"
      ],
      [
       216387,
@@ -9957,36 +9937,36 @@
   "US-9362": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Long Pine State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 133,
+    "acres": 143,
     "dissolved": {
      "after": 305,
      "before": 764,
      "copies": 3,
      "families": {
-      "nep": 154,
-      "padus": 151
+      "padus": 151,
+      "sgneb": 154
      },
      "family_fold": 151,
-     "family_used": "nep",
-     "key_union": 133,
+     "family_used": "sgneb",
+     "key_union": 143,
      "parts": 0,
      "records": 6,
      "summed": 154,
      "tracts": 3
     },
-    "family_fold": "layers {'nep': 154, 'padus': 151}: one land in 2 layers, the nep copy used (151 ac of copies not added)",
+    "family_fold": "layers {'sgneb': 154, 'padus': 151}: one land in 2 layers, the sgneb copy used (151 ac of copies not added)",
     "manager": "",
     "note": "6 joined records = 3 tracts: 3 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 764 -> 305 acres",
     "pieces": [
      [
-      "nep31",
+      "sgneb177",
       "Long Pine SRA",
       154,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -10017,39 +9997,39 @@
   "US-9363": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Medicine Creek State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 357,
+    "acres": 518,
     "dissolved": {
      "after": 1465,
      "before": 2472,
      "copies": 1,
      "families": {
-      "nep": 1007,
-      "sgneb": 458
+      "sgneb": 458,
+      "sgnec": 1007
      },
      "family_fold": 458,
-     "family_used": "nep",
-     "key_union": 357,
+     "family_used": "sgnec",
+     "key_union": 518,
      "parts": 0,
      "records": 3,
      "summed": 1007,
      "tracts": 2
     },
-    "family_fold": "layers {'nep': 1007, 'sgneb': 458}: one land in 2 layers, the nep copy used (458 ac of copies not added)",
+    "family_fold": "layers {'sgnec': 1007, 'sgneb': 458}: one land in 2 layers, the sgnec copy used (458 ac of copies not added)",
     "manager": "",
     "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 2472 -> 1465 acres",
     "pieces": [
      [
-      "nep34",
+      "sgnec34",
       "Medicine Creek SRA",
       1007,
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "",
     "unknown_pieces": 0
    },
@@ -10077,36 +10057,34 @@
   "US-9364": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Riverview State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 24,
+    "acres": 38,
     "dissolved": {
      "after": 75,
      "before": 151,
      "copies": 2,
      "families": {
-      "nep": 38,
-      "padus": 37
+      "padus": 37,
+      "sgneb": 38
      },
      "family_fold": 37,
-     "family_used": "nep",
-     "key_union": 24,
+     "family_used": "sgneb",
      "parts": 0,
      "records": 4,
-     "summed": 38,
      "tracts": 2
     },
-    "family_fold": "layers {'nep': 38, 'padus': 37}: one land in 2 layers, the nep copy used (37 ac of copies not added)",
+    "family_fold": "layers {'sgneb': 38, 'padus': 37}: one land in 2 layers, the sgneb copy used (37 ac of copies not added)",
     "manager": "",
     "note": "4 joined records = 2 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 151 -> 75 acres",
     "pieces": [
      [
-      "nep46",
+      "sgneb260",
       "Riverview SRA",
       38,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -10137,31 +10115,31 @@
   "US-9365": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Rock Creek State Recreation Area",
    "official": null,
    "ours": {
     "acres": 104,
     "dissolved": {
      "after": 203,
-     "before": 411,
-     "copies": 2,
+     "before": 307,
+     "copies": 1,
      "families": {
-      "nep": 104,
-      "padus": 99
+      "padus": 99,
+      "sgneb": 104
      },
      "family_fold": 99,
-     "family_used": "nep",
+     "family_used": "sgneb",
      "parts": 0,
-     "records": 4,
+     "records": 3,
      "tracts": 2
     },
-    "family_fold": "layers {'nep': 104, 'padus': 99}: one land in 2 layers, the nep copy used (99 ac of copies not added)",
+    "family_fold": "layers {'sgneb': 104, 'padus': 99}: one land in 2 layers, the sgneb copy used (99 ac of copies not added)",
     "manager": "",
-    "note": "4 joined records = 2 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 411 -> 203 acres",
+    "note": "3 joined records = 2 tracts: 1 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 307 -> 203 acres",
     "pieces": [
      [
-      "nep47",
+      "sgneb262",
       "Rock Creek Lake SRA",
       104,
       "name"
@@ -10195,29 +10173,29 @@
   "US-9366": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Rock Creek Station State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 203,
+    "acres": 395,
     "dissolved": {
      "after": 434,
      "before": 865,
      "copies": 3,
      "families": {
-      "nep": 40,
       "padus": 41,
+      "sgneb": 40,
       "sgnec": 353
      },
      "family_fold": 81,
      "family_used": "sgnec",
-     "key_union": 203,
+     "key_union": 395,
      "parts": 0,
      "records": 6,
      "summed": 353,
      "tracts": 3
     },
-    "family_fold": "layers {'sgnec': 353, 'padus': 41, 'nep': 40}: one land in 3 layers, the sgnec copy used (81 ac of copies not added)",
+    "family_fold": "layers {'sgnec': 353, 'padus': 41, 'sgneb': 40}: one land in 3 layers, the sgnec copy used (81 ac of copies not added)",
     "manager": "",
     "note": "6 joined records = 3 tracts: 3 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 865 -> 434 acres",
     "pieces": [
@@ -10228,7 +10206,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -10256,36 +10234,34 @@
   "US-9367": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Rockford Lake State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 363,
+    "acres": 436,
     "dissolved": {
      "after": 857,
      "before": 2150,
      "copies": 3,
      "families": {
-      "nep": 436,
-      "padus": 421
+      "padus": 421,
+      "sgneb": 436
      },
      "family_fold": 421,
-     "family_used": "nep",
-     "key_union": 363,
+     "family_used": "sgneb",
      "parts": 0,
      "records": 5,
-     "summed": 436,
      "tracts": 2
     },
-    "family_fold": "layers {'nep': 436, 'padus': 421}: one land in 2 layers, the nep copy used (421 ac of copies not added)",
+    "family_fold": "layers {'sgneb': 436, 'padus': 421}: one land in 2 layers, the sgneb copy used (421 ac of copies not added)",
     "manager": "",
     "note": "5 joined records = 2 tracts: 3 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 2150 -> 857 acres",
     "pieces": [
      [
-      "nep50",
+      "sgneb266",
       "Rockford Lake SRA",
       436,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -10316,32 +10292,30 @@
   "US-9368": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Sandy Channel State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 106,
+    "acres": 181,
     "dissolved": {
      "after": 181,
      "before": 723,
      "copies": 3,
-     "key_union": 106,
      "parts": 0,
      "records": 4,
-     "summed": 181,
      "tracts": 1
     },
     "manager": "",
     "note": "4 joined records = 1 tracts: 3 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 723 -> 181 acres",
     "pieces": [
      [
-      "nep51",
+      "sgneb271",
       "Sandy Channel SRA",
       181,
-      "name"
+      "reviewed"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -10369,28 +10343,28 @@
   "US-9369": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Schramm Park State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 294,
+    "acres": 362,
     "dissolved": {
      "after": 1025,
      "before": 1687,
      "copies": 2,
      "families": {
-      "nep": 331,
-      "padus": 694
+      "padus": 694,
+      "sgneb": 331
      },
      "family_fold": 331,
      "family_used": "padus",
-     "key_union": 294,
+     "key_union": 362,
      "parts": 0,
      "records": 7,
      "summed": 694,
      "tracts": 5
     },
-    "family_fold": "layers {'padus': 694, 'nep': 331}: one land in 2 layers, the padus copy used (331 ac of copies not added)",
+    "family_fold": "layers {'padus': 694, 'sgneb': 331}: one land in 2 layers, the padus copy used (331 ac of copies not added)",
     "manager": "",
     "note": "7 joined records = 5 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 1687 -> 1025 acres",
     "pieces": [
@@ -10447,29 +10421,27 @@
   "US-9370": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Walgren Lake State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 67,
+    "acres": 130,
     "dissolved": {
      "after": 130,
      "before": 518,
      "copies": 3,
-     "key_union": 67,
      "parts": 0,
      "records": 4,
-     "summed": 130,
      "tracts": 1
     },
     "manager": "",
     "note": "4 joined records = 1 tracts: 3 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 518 -> 130 acres",
     "pieces": [
      [
-      "nep63",
+      "sgneb321",
       "Walgren Lake SRA",
       130,
-      "name"
+      "reviewed"
      ]
     ],
     "pin": "inside",
@@ -10500,28 +10472,28 @@
   "US-9371": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-09",
+   "last_read_failed": "2026-11-22",
    "n": "Wildcat Hills State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 929,
+    "acres": 722,
     "dissolved": {
      "after": 1943,
      "before": 3365,
      "copies": 2,
      "families": {
-      "nep": 711,
-      "padus": 1232
+      "padus": 1232,
+      "sgneb": 711
      },
      "family_fold": 711,
      "family_used": "padus",
-     "key_union": 929,
+     "key_union": 722,
      "parts": 0,
      "records": 7,
      "summed": 1232,
      "tracts": 5
     },
-    "family_fold": "layers {'nep': 711, 'padus': 1232}: one land in 2 layers, the padus copy used (711 ac of copies not added)",
+    "family_fold": "layers {'sgneb': 711, 'padus': 1232}: one land in 2 layers, the padus copy used (711 ac of copies not added)",
     "manager": "",
     "note": "7 joined records = 5 tracts: 2 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 3365 -> 1943 acres",
     "pieces": [
@@ -10550,7 +10522,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -10576,5 +10548,5 @@
    "verdict": "no size on page"
   }
  },
- "read": "2026-11-09"
+ "read": "2026-11-22"
 }

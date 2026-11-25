@@ -2,23 +2,22 @@
  "about": "Park truth checker: official acreage vs our outline, handover hints, second-witness score. Review lists only: nothing here changes a key or a card.",
  "area": "US-SD",
  "counts": {
-  "agree": 11,
-  "handover_hints": 4,
+  "agree": 13,
+  "handover_hints": 3,
   "no_page": 1,
-  "no_size": 48,
-  "not_read": 0,
-  "off": 1,
-  "ours_unknown": 6,
+  "no_size": 46,
+  "off": 3,
+  "ours_unknown": 4,
   "parks": 120,
   "retired": 0,
-  "unsure": 50,
-  "weak": 5,
-  "with_outline": 118
+  "unsure": 49,
+  "weak": 6,
+  "with_outline": 116
  },
  "parks": {
   "US-0005": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 244,000 acres, no total words near it)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Badlands National Park",
    "official": {
@@ -26,7 +25,7 @@
     "as": "244,000 acres",
     "clean": false,
     "line": "posits contain one of the world’s richest fossil beds. Ancient horses and rhinos once roamed here. The park’s 244,000 acres protect an expanse of mixed-grass prairie where bison, bighorn sheep, prairie dogs, and black-footed ferrets",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "The park’s 244,000 acres protect an expanse of mixed-grass prairie where bison, bighorn sheep, prairie dogs, and black-footed ferrets live today.",
     "url": "https://www.nps.gov/badl/index.htm",
     "why": "no total words near it"
@@ -100,7 +99,7 @@
    "verdict": "unsure"
   },
   "US-0068": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Wind Cave National Park",
    "official": null,
@@ -163,23 +162,31 @@
   },
   "US-0525": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Huron Wetland Management District",
    "official": null,
    "ours": {
-    "acres": 12611,
+    "acres": 11631,
     "dissolved": {
-     "after": 12611,
-     "before": 16257,
+     "after": 14066,
+     "before": 17712,
      "copies": 7,
+     "key_union": 11631,
      "parts": 4,
-     "records": 59,
-     "tracts": 48
+     "records": 60,
+     "summed": 14066,
+     "tracts": 49
     },
     "manager": "",
-    "note": "59 joined records = 48 tracts: 7 copies of a tract (same acres, another layer) and 4 fee tracts under a designation record folded; summed 16257 -> 12611 acres",
+    "note": "60 joined records = 49 tracts: 7 copies of a tract (same acres, another layer) and 4 fee tracts under a designation record folded; summed 17712 -> 14066 acres",
     "pieces": [
+     [
+      "fws2277",
+      "Maga-Ta-Hopi WPA, Beadle County Waterfowl Production Area",
+      1455,
+      "reviewed: the district = FWS fee (owned) tracts only, easeme"
+     ],
      [
       "fws2330",
       "Harter WPA, Hyde County Waterfowl Production Area",
@@ -220,12 +227,6 @@
       "fws2276",
       "LeClaire WPA, Beadle County Waterfowl Production Area",
       522,
-      "reviewed: the district = FWS fee (owned) tracts only, easeme"
-     ],
-     [
-      "fws2307",
-      "Campbell WPA, Hand County Waterfowl Production Area",
-      481,
       "reviewed: the district = FWS fee (owned) tracts only, easeme"
      ]
     ],
@@ -304,7 +305,7 @@
    "verdict": "unsure"
   },
   "US-0527": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Lacreek National Wildlife Refuge",
    "official": {
@@ -312,19 +313,21 @@
     "as": "16,570 acres",
     "clean": false,
     "line": "ed in 1935 as a breeding ground for migratory birds and other wildlife in southwestern South Dakota. Spanning 16,570 acres, the refuge contains a diverse landscape of native sandhills, marshes, and prairies within the Lake Creek val",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Spanning 16,570 acres, the refuge contains a diverse landscape of native sandhills, marshes, and prairies within the Lake Creek valley.",
     "url": "https://www.fws.gov/refuge/Lacreek/",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 16571,
+    "acres": 17438,
     "dissolved": {
      "after": 16571,
      "before": 33142,
      "copies": 1,
+     "key_union": 17438,
      "parts": 0,
      "records": 2,
+     "summed": 16571,
      "tracts": 1
     },
     "manager": "",
@@ -355,7 +358,7 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 0,
+   "pct": 5,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -381,12 +384,12 @@
   },
   "US-0528": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Lake Andes National Wildlife Refuge",
    "official": null,
    "ours": {
-    "acres": 1119,
+    "acres": 1123,
     "manager": "",
     "pieces": [
      [
@@ -473,17 +476,205 @@
    "verdict": "unsure"
   },
   "US-0529": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Madison Wetland Management District",
-   "ours": null,
-   "score": null,
+   "official": {
+    "acres": 27000.0,
+    "as": "27,000 acres",
+    "clean": false,
+    "line": "over 1 million acres of grass were plowed up in the western corn belt from 2006-2011. In South Dakota alone, 27,000 acres of native prairie were converted to cropland in 2011-2012. Conservation easements are another way to protect",
+    "read": "2026-11-01",
+    "sent": "In South Dakota alone, 27,000 acres of native prairie were converted to cropland in 2011-2012.",
+    "url": "https://www.fws.gov/refuge/madison-wetland-management-district",
+    "why": "no total words near it"
+   },
+   "ours": {
+    "acres": 26497,
+    "dissolved": {
+     "after": 36869,
+     "before": 44242,
+     "copies": 19,
+     "key_union": 26497,
+     "parts": 0,
+     "records": 248,
+     "summed": 36869,
+     "tracts": 229
+    },
+    "manager": "",
+    "note": "248 joined records = 229 tracts: 19 copies of a tract (same acres, another layer) and 0 fee tracts under a designation record folded; summed 44242 -> 36869 acres",
+    "pieces": [
+     [
+      "fws3477",
+      "Dry Lake WPA, Brookings County Waterfowl Production Area",
+      1443,
+      "reviewed: the district = FWS fee (owned) tracts only, easeme"
+     ],
+     [
+      "fws3706",
+      "Buffalo Lake WPA, Minnehaha County Waterfowl Production Area",
+      1116,
+      "reviewed: the district = FWS fee (owned) tracts only, easeme"
+     ],
+     [
+      "fws3475",
+      "Brush Lake WPA, Brookings County Waterfowl Production Area",
+      686,
+      "reviewed: the district = FWS fee (owned) tracts only, easeme"
+     ],
+     [
+      "fws3630",
+      "Lake Henry WPA, Lake County Waterfowl Production Area",
+      639,
+      "reviewed: the district = FWS fee (owned) tracts only, easeme"
+     ],
+     [
+      "fws3632",
+      "Long Lake WPA, Lake County Waterfowl Production Area",
+      600,
+      "reviewed: the district = FWS fee (owned) tracts only, easeme"
+     ],
+     [
+      "fws3479",
+      "Errington WPA, Brookings County Waterfowl Production Area",
+      568,
+      "reviewed: the district = FWS fee (owned) tracts only, easeme"
+     ],
+     [
+      "fws3472",
+      "Bjornlie WPA, Brookings County Waterfowl Production Area",
+      540,
+      "reviewed: the district = FWS fee (owned) tracts only, easeme"
+     ],
+     [
+      "fws3748",
+      "Miller WPA, Turner County Waterfowl Production Area",
+      500,
+      "reviewed: the district = FWS fee (owned) tracts only, easeme"
+     ]
+    ],
+    "pin": "inside",
+    "src": "",
+    "unknown_pieces": 0
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/madison-wetland-management-district",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/madison-wetland-management-district/about-us",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/madison-wetland-management-district/visit-us",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/madison-wetland-management-district/visit-us/rules-policies",
+     "why": "rules page (documents bot)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/madison-wetland-management-district/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "pct": 2,
+   "same_agency": false,
+   "score": 5,
+   "score_parts": {
+    "name": 1,
+    "pin": 2,
+    "size": 2,
+    "source": 0
+   },
+   "sizes": [
+    {
+     "acres": 38000.0,
+     "as": "38,000 acres",
+     "clean": false,
+     "line": "ota and South Dakota. Learn more about waterfowl production area . It was purchased in 1959. Since then, over 38,000 acres have been purchased in the Madison Wetland Management District for ducks and other wildlife. Funds to purchas",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/madison-wetland-management-district",
+     "why": "part (a lake, a purchase, a campground…)"
+    },
+    {
+     "acres": 5000000.0,
+     "as": "5 million acres",
+     "clean": false,
+     "line": "s. Hunters over the age of 16 are required to purchase a stamp prior to hunting waterfowl. Nationwide, nearly 5 million acres of habitat have been protected with funds from Duck Stamp sales. These areas are open to hunting as well as o",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/madison-wetland-management-district",
+     "why": "a statewide / agency-wide total (over a million acres) on a park that is not a big federal unit"
+    },
+    {
+     "acres": 1000000.0,
+     "as": "1 million acres",
+     "clean": false,
+     "line": "In the past decade, more than 15,000 wetland acres per year have been drained in the state. In addition, over 1 million acres of grass were plowed up in the western corn belt from 2006-2011. In South Dakota alone, 27,000 acres of nativ",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/madison-wetland-management-district",
+     "why": "a statewide / agency-wide total (over a million acres) on a park that is not a big federal unit"
+    },
+    {
+     "acres": 27000.0,
+     "as": "27,000 acres",
+     "clean": false,
+     "line": "over 1 million acres of grass were plowed up in the western corn belt from 2006-2011. In South Dakota alone, 27,000 acres of native prairie were converted to cropland in 2011-2012. Conservation easements are another way to protect",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/madison-wetland-management-district",
+     "why": "no total words near it"
+    },
+    {
+     "acres": 320.0,
+     "as": "320 acres",
+     "clean": false,
+     "line": "e striking colors of the wood duck, and hear the song of a western meadowlark. Coteau Prairie WPA This WPA is 320 acres and contains 165 acres of upland that has never been plowed, a real “jewel” in the landscape. Here you will f",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/madison-wetland-management-district/visit-us",
+     "why": "no total words near it"
+    },
+    {
+     "acres": 165.0,
+     "as": "165 acres",
+     "clean": false,
+     "line": "e wood duck, and hear the song of a western meadowlark. Coteau Prairie WPA This WPA is 320 acres and contains 165 acres of upland that has never been plowed, a real “jewel” in the landscape. Here you will find an abundance of nat",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/madison-wetland-management-district/visit-us",
+     "why": "no total words near it"
+    },
+    {
+     "acres": 350.0,
+     "as": "350 acres",
+     "clean": false,
+     "line": "ges once common to the region. Travel 19 miles east of Watertown on US Highway 212. Cox WPA This WPA contains 350 acres are native sod and 80 acres of restored grassland of which 58 acres were reestablished to compliment the Dako",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/madison-wetland-management-district/visit-us",
+     "why": "part (a lake, a purchase, a campground…)"
+    },
+    {
+     "acres": 80.0,
+     "as": "80 acres",
+     "clean": false,
+     "line": ". Travel 19 miles east of Watertown on US Highway 212. Cox WPA This WPA contains 350 acres are native sod and 80 acres of restored grassland of which 58 acres were reestablished to compliment the Dakota Skipper habitat, a candid",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/madison-wetland-management-district/visit-us",
+     "why": "part (a lake, a purchase, a campground…)"
+    }
+   ],
    "t": "Wetland Management District",
    "ver": 15,
-   "verdict": "no outline"
+   "verdict": "agree"
   },
   "US-0530": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [
     {
      "date_hint": "2024",
@@ -500,7 +691,7 @@
     "as": "21,498 acre",
     "clean": false,
     "line": "Area by the American Bird Conservancy and a Wetland of International Importance. Visit Us Image Details This 21,498-acre refuge includes Sand Lake, a 11,450-acre lake created by the last ice age. Each spring and fall, thousands of",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "This 21,498-acre refuge includes Sand Lake, a 11,450-acre lake created by the last ice age.",
     "url": "https://www.fws.gov/refuge/sand_lake/",
     "why": "part (a lake, a purchase, a campground…)"
@@ -525,7 +716,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -565,10 +756,10 @@
    ],
    "pct": 9,
    "same_agency": false,
-   "score": 8,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 2,
     "source": 2
    },
@@ -615,27 +806,29 @@
    "verdict": "agree"
   },
   "US-0531": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Waubay National Wildlife Refuge",
    "official": {
     "acres": 4650.0,
     "as": "4,650 acres",
     "clean": false,
-    "line": "tablished in 1935 as a refuge and breeding ground for migratory birds and other wildlife. The Refuge includes 4,650 acres of lakes, marshes, grasslands, and woodlands which support diverse and abundant wildlife. The Refuge offers m",
-    "read": "2026-11-22",
+    "line": "system of lands in the world dedicated to preserving fish, wildlife, and their habitats. The Refuge includes 4,650 acres of lakes, marshes, grasslands, and woodlands which support diverse and abundant wildlife. The name Waubay com",
+    "read": "2026-11-01",
     "sent": "The Refuge includes 4,650 acres of lakes, marshes, grasslands, and woodlands which support diverse and abundant wildlife.",
     "url": "https://www.fws.gov/refuge/waubay/",
     "why": "part (a lake, a purchase, a campground…)"
    },
    "ours": {
-    "acres": 4631,
+    "acres": 4273,
     "dissolved": {
      "after": 4631,
      "before": 9262,
      "copies": 1,
+     "key_union": 4273,
      "parts": 0,
      "records": 2,
+     "summed": 4631,
      "tracts": 1
     },
     "manager": "",
@@ -660,13 +853,23 @@
      "why": "the park's page (data/parkinfo)"
     },
     {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/waubay/about-us",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/waubay/visit-us",
+     "why": "about / history page of the park's site"
+    },
+    {
      "other_unit": true,
-     "status": "HTTP 404",
+     "status": "ok",
      "url": "https://www.fws.gov/refuge/waubay/visit-us/rules-policies",
      "why": "rules page (documents bot)"
     },
     {
-     "status": "HTTP 404",
+     "status": "ok",
      "url": "https://www.fws.gov/refuge/waubay/about-us",
      "why": "FWS refuge about page"
     },
@@ -676,7 +879,7 @@
      "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
     }
    ],
-   "pct": 0,
+   "pct": 8,
    "same_agency": false,
    "score": 8,
    "score_parts": {
@@ -690,7 +893,7 @@
      "acres": 4650.0,
      "as": "4,650 acres",
      "clean": false,
-     "line": "tablished in 1935 as a refuge and breeding ground for migratory birds and other wildlife. The Refuge includes 4,650 acres of lakes, marshes, grasslands, and woodlands which support diverse and abundant wildlife. The Refuge offers m",
+     "line": "system of lands in the world dedicated to preserving fish, wildlife, and their habitats. The Refuge includes 4,650 acres of lakes, marshes, grasslands, and woodlands which support diverse and abundant wildlife. The name Waubay com",
      "total_like": false,
      "url": "https://www.fws.gov/refuge/waubay/",
      "why": "part (a lake, a purchase, a campground…)"
@@ -699,25 +902,25 @@
      "acres": 4650.0,
      "as": "4,650 acres",
      "clean": false,
-     "line": "competitive process. Cooperative Agriculture Opportunities About Waubay National Wildlife Refuge encompasses 4,650 acres of wetlands, native tallgrass prairie, and bur oak forest that provide a wide variety of nesting habitat for",
+     "line": "fe populations and habitats according to its purpose. Our History Waubay National Wildlife Refuge encompasses 4,650 acres of wetlands, native tallgrass prairie, and bur oak forest that provide a wide variety of nesting habitat for",
      "total_like": false,
-     "url": "https://www.fws.gov/refuge/waubay/",
+     "url": "https://www.fws.gov/refuge/waubay/about-us",
      "why": "part (a lake, a purchase, a campground…)"
     },
     {
      "acres": 4650.0,
      "as": "4,650 acres",
      "clean": false,
-     "line": "tablished in 1935 as a refuge and breeding ground for migratory birds and other wildlife. The Refuge includes 4,650 acres of lakes, marshes, grasslands, and woodlands which support diverse and abundant wildlife. The Refuge offers m",
+     "line": "fe populations and habitats according to its purpose. Our History Waubay National Wildlife Refuge encompasses 4,650 acres of wetlands, native tallgrass prairie, and bur oak forest that provide a wide variety of nesting habitat for",
      "total_like": false,
-     "url": "https://www.fws.gov/refuge/waubay",
+     "url": "https://www.fws.gov/refuge/waubay/about-us",
      "why": "part (a lake, a purchase, a campground…)"
     },
     {
      "acres": 4650.0,
      "as": "4,650 acres",
      "clean": false,
-     "line": "competitive process. Cooperative Agriculture Opportunities About Waubay National Wildlife Refuge encompasses 4,650 acres of wetlands, native tallgrass prairie, and bur oak forest that provide a wide variety of nesting habitat for",
+     "line": "system of lands in the world dedicated to preserving fish, wildlife, and their habitats. The Refuge includes 4,650 acres of lakes, marshes, grasslands, and woodlands which support diverse and abundant wildlife. The name Waubay com",
      "total_like": false,
      "url": "https://www.fws.gov/refuge/waubay",
      "why": "part (a lake, a purchase, a campground…)"
@@ -728,42 +931,40 @@
    "verdict": "agree"
   },
   "US-0532": {
-   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 40,000 acres, no total words near it)",
-   "checked": "2026-11-22",
-   "handover": [
-    {
-     "date_hint": null,
-     "kind": "managed by",
-     "line": "petitive process. Grassland Easements Wetland Easements Cooperative Agriculture Opportunities About Managed by the U.S. Fish and Wildlife Service, the Waubay Wetland Management District focuses on conserving and enhancing fish, wildlife, plants,",
-     "owner_now": "U.S",
-     "src": "https://www.fws.gov/refuge/waubay-wetland-management-district",
-     "why": "the park's page (data/parkinfo)"
-    }
-   ],
+   "checked": "2026-11-01",
+   "handover": [],
    "n": "Waubay Wetland Management District",
    "official": {
-    "acres": 40000.0,
-    "as": "40,000 acres",
+    "acres": 27000.0,
+    "as": "27,000 acres",
     "clean": false,
-    "line": "nd protect the vital habitats of the Prairie Pothole Region of North America. Visitors are welcome to explore 40,000 acres of waterfowl production areas. These public lands are open to hunting, fishing, wildlife observation and othe",
-    "read": "2026-11-22",
-    "sent": "Visitors are welcome to explore 40,000 acres of waterfowl production areas.",
-    "url": "https://www.fws.gov/refuge/waubay-wetland-management-district",
+    "line": "ver one million acres of grass were plowed up in the western corn belt from 2006-2011. In South Dakota alone, 27,000 acres of native prairie were converted to cropland in just two years (2011-2012). Conservation easements are an eff",
+    "read": "2026-11-01",
+    "sent": "In South Dakota alone, 27,000 acres of native prairie were converted to cropland in just two years (2011-2012).",
+    "url": "https://www.fws.gov/refuge/waubay-wetland-management-district/about-us",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 33835,
+    "acres": 26156,
     "dissolved": {
-     "after": 33835,
-     "before": 39411,
+     "after": 35508,
+     "before": 41084,
      "copies": 11,
+     "key_union": 26156,
      "parts": 10,
-     "records": 194,
-     "tracts": 173
+     "records": 195,
+     "summed": 35508,
+     "tracts": 174
     },
     "manager": "",
-    "note": "194 joined records = 173 tracts: 11 copies of a tract (same acres, another layer) and 10 fee tracts under a designation record folded; summed 39411 -> 33835 acres",
+    "note": "195 joined records = 174 tracts: 11 copies of a tract (same acres, another layer) and 10 fee tracts under a designation record folded; summed 41084 -> 35508 acres",
     "pieces": [
+     [
+      "fws5957",
+      "O'Farrell WPA, Grant County Waterfowl Production Area",
+      1673,
+      "reviewed: the district = FWS fee (owned) tracts only, easeme"
+     ],
      [
       "fws5831",
       "Dry Lake WPA, Clark County Waterfowl Production Area",
@@ -805,19 +1006,13 @@
       "Lardy WPA, Day County Waterfowl Production Area",
       841,
       "reviewed: the district = FWS fee (owned) tracts only, easeme"
-     ],
-     [
-      "fws5993",
-      "Ruckdaschel WPA, Marshall County Waterfowl Production Area",
-      823,
-      "reviewed: the district = FWS fee (owned) tracts only, easeme"
      ]
     ],
     "pin": "inside",
     "src": "",
     "unknown_pieces": 0
    },
-   "owner_now": "U.S",
+   "owner_now": null,
    "pages": [
     {
      "status": "ok",
@@ -825,63 +1020,109 @@
      "why": "the park's page (data/parkinfo)"
     },
     {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/waubay-wetland-management-district/about-us",
+     "why": "about / history page of the park's site"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/waubay-wetland-management-district/visit-us",
+     "why": "about / history page of the park's site"
+    },
+    {
      "other_unit": true,
-     "status": "HTTP 404",
+     "status": "ok",
      "url": "https://www.fws.gov/refuge/waubay-wetland-management-district/visit-us/rules-policies",
      "why": "rules page (documents bot)"
     },
     {
-     "status": "HTTP 404",
+     "status": "ok",
      "url": "https://www.fws.gov/refuge/waubay-wetland-management-district/about-us",
      "why": "FWS refuge about page"
     }
    ],
-   "pct": 15,
+   "pct": 3,
    "same_agency": false,
-   "score": 3,
+   "score": 4,
    "score_parts": {
     "name": 0,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 0
    },
    "sizes": [
     {
+     "acres": 4650.0,
+     "as": "4,650 acres",
+     "clean": false,
+     "line": "system of lands in the world dedicated to preserving fish, wildlife, and their habitats. The Refuge includes 4,650 acres of lakes, marshes, grasslands, and woodlands which support diverse and abundant wildlife. The name Waubay com",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/waubay-wetland-management-district",
+     "why": "part (a lake, a purchase, a campground…)"
+    },
+    {
      "acres": 40000.0,
      "as": "40,000 acres",
      "clean": false,
-     "line": "nd protect the vital habitats of the Prairie Pothole Region of North America. Visitors are welcome to explore 40,000 acres of waterfowl production areas. These public lands are open to hunting, fishing, wildlife observation and othe",
+     "line": "on Waterfowl Production Area, located in Day County, was the first parcel purchased in 1959. Since then, over 40,000 acres have been purchased in Waubay Wetland Management District for ducks and other wildlife. Funds to purchase wat",
      "total_like": false,
-     "url": "https://www.fws.gov/refuge/waubay-wetland-management-district",
+     "url": "https://www.fws.gov/refuge/waubay-wetland-management-district/about-us",
+     "why": "part (a lake, a purchase, a campground…)"
+    },
+    {
+     "acres": 5000000.0,
+     "as": "5 million acres",
+     "clean": false,
+     "line": "s. Hunters over the age of 16 are required to purchase a stamp prior to hunting waterfowl. Nationwide, nearly 5 million acres of habitat have been protected with funds from Duck Stamp sales. These areas are open to hunting as well as o",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/waubay-wetland-management-district/about-us",
+     "why": "a statewide / agency-wide total (over a million acres) on a park that is not a big federal unit"
+    },
+    {
+     "acres": 27000.0,
+     "as": "27,000 acres",
+     "clean": false,
+     "line": "ver one million acres of grass were plowed up in the western corn belt from 2006-2011. In South Dakota alone, 27,000 acres of native prairie were converted to cropland in just two years (2011-2012). Conservation easements are an eff",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/waubay-wetland-management-district/about-us",
      "why": "no total words near it"
     },
     {
-     "acres": 340000.0,
-     "as": "340,000 acres",
-     "clean": false,
-     "line": "ldlife, plants, and their habitats. Established in 1959, the Waubay Wetland Management District protects over 340,000 acres of vital habitat in the Prairie Pothole Region, including 40,000 acres of public Waterfowl Production Areas.",
-     "total_like": false,
-     "url": "https://www.fws.gov/refuge/waubay-wetland-management-district",
-     "why": "history"
-    },
-    {
      "acres": 40000.0,
      "as": "40,000 acres",
      "clean": false,
-     "line": "and Management District protects over 340,000 acres of vital habitat in the Prairie Pothole Region, including 40,000 acres of public Waterfowl Production Areas. McCarlson Waterfowl Production Area, located in Day County, was the fir",
+     "line": "on Waterfowl Production Area, located in Day County, was the first parcel purchased in 1959. Since then, over 40,000 acres have been purchased in Waubay Wetland Management District for ducks and other wildlife. Funds to purchase wat",
      "total_like": false,
-     "url": "https://www.fws.gov/refuge/waubay-wetland-management-district",
-     "why": "history"
+     "url": "https://www.fws.gov/refuge/waubay-wetland-management-district/about-us",
+     "why": "part (a lake, a purchase, a campground…)"
+    },
+    {
+     "acres": 5000000.0,
+     "as": "5 million acres",
+     "clean": false,
+     "line": "s. Hunters over the age of 16 are required to purchase a stamp prior to hunting waterfowl. Nationwide, nearly 5 million acres of habitat have been protected with funds from Duck Stamp sales. These areas are open to hunting as well as o",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/waubay-wetland-management-district/about-us",
+     "why": "a statewide / agency-wide total (over a million acres) on a park that is not a big federal unit"
+    },
+    {
+     "acres": 27000.0,
+     "as": "27,000 acres",
+     "clean": false,
+     "line": "ver one million acres of grass were plowed up in the western corn belt from 2006-2011. In South Dakota alone, 27,000 acres of native prairie were converted to cropland in just two years (2011-2012). Conservation easements are an eff",
+     "total_like": false,
+     "url": "https://www.fws.gov/refuge/waubay-wetland-management-district/about-us",
+     "why": "no total words near it"
     }
    ],
    "t": "Wetland Management District",
    "ver": 15,
-   "verdict": "unsure"
+   "verdict": "agree"
   },
   "US-0675": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
-   "n": "Missouri National Recreational River National Wild and Scenic River",
+   "n": "Missouri National Recreational River National Wild & Scenic River",
    "note": "whole park compared (POTA lists it in 0 states: {})",
    "official": null,
    "ours": {
@@ -937,7 +1178,7 @@
    "verdict": "ours unknown"
   },
   "US-0786": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Mount Rushmore National Memorial",
    "official": {
@@ -945,7 +1186,7 @@
     "as": "1,278.45 acres",
     "clean": false,
     "line": "This Site All NPS Exiting nps.gov Cancel Mount Rushmore National Memorial Contact Us Park Statistics Acreage 1,278.45 acres Visitation by Year 1940s 1941 393,000 1942 139,694 1943 31,412 1944 29,575 1945 84,712 1946 324,596 1947 427,",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "1,278.45 acres",
     "url": "https://www.nps.gov/moru/learn/management/statistics.htm",
     "why": "total-looking"
@@ -1024,7 +1265,7 @@
    "verdict": "agree"
   },
   "US-0850": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Minuteman Missile National Historic Site",
    "official": null,
@@ -1091,7 +1332,7 @@
    "verdict": "no size on page"
   },
   "US-0944": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Jewel Cave National Monument",
    "official": null,
@@ -1153,7 +1394,7 @@
    "verdict": "no size on page"
   },
   "US-10319": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "South Scalp Creek State Recreation Area",
    "official": null,
@@ -1168,7 +1409,7 @@
       "reviewed"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -1182,10 +1423,10 @@
     }
    ],
    "pct": null,
-   "score": 5,
+   "score": 4,
    "score_parts": {
     "name": 1,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 1
    },
@@ -1195,12 +1436,12 @@
    "verdict": "no size on page"
   },
   "US-10320": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "South Wheeler State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 234,
+    "acres": 189,
     "manager": "",
     "pieces": [
      [
@@ -1210,7 +1451,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
@@ -1224,10 +1465,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -1237,7 +1478,7 @@
    "verdict": "no size on page"
   },
   "US-10321": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Joe Day Bay State Recreation Area",
    "official": null,
@@ -1279,12 +1520,12 @@
    "verdict": "no size on page"
   },
   "US-10322": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "South Shore State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 246,
+    "acres": 139,
     "manager": "",
     "pieces": [
      [
@@ -1321,16 +1562,23 @@
    "verdict": "no size on page"
   },
   "US-10323": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "White Swan State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 43,
+    "acres": 28,
     "manager": "",
-    "pieces": [],
+    "pieces": [
+     [
+      255379,
+      "White Swan Recreation Area",
+      19,
+      "name"
+     ]
+    ],
     "pin": "inside",
-    "src": "",
+    "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
    "owner_now": null,
@@ -1356,12 +1604,12 @@
    "verdict": "no size on page"
   },
   "US-10324": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Whetstone Bay State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 93,
+    "acres": 89,
     "manager": "",
     "pieces": [
      [
@@ -1398,12 +1646,12 @@
    "verdict": "no size on page"
   },
   "US-10325": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "West Shore State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 82,
+    "acres": 26,
     "manager": "",
     "pieces": [
      [
@@ -1413,7 +1661,7 @@
       "words"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 1
    },
@@ -1427,10 +1675,10 @@
     }
    ],
    "pct": null,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -1440,12 +1688,12 @@
    "verdict": "no size on page"
   },
   "US-10326": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Walth Bay State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 39,
+    "acres": 29,
     "manager": "",
     "pieces": [
      [
@@ -1482,60 +1730,18 @@
    "verdict": "no size on page"
   },
   "US-10327": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Thomas Bay State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 68,
+    "acres": 64,
     "manager": "",
     "pieces": [
      [
       255370,
       "Thomas Bay Recreation Area",
       64,
-      "name"
-     ]
-    ],
-    "pin": "inside",
-    "src": "USGS PAD-US",
-    "unknown_pieces": 2
-   },
-   "owner_now": null,
-   "pages": [
-    {
-     "other_unit": true,
-     "status": "ok",
-     "url": "https://gfp.sd.gov/lakeside-use-areas/",
-     "why": "the park's page (data/parkinfo)"
-    }
-   ],
-   "pct": null,
-   "score": 7,
-   "score_parts": {
-    "name": 2,
-    "pin": 2,
-    "size": 1,
-    "source": 2
-   },
-   "sizes": [],
-   "t": "State Recreation Area",
-   "ver": 15,
-   "verdict": "no size on page"
-  },
-  "US-10328": {
-   "checked": "2026-11-22",
-   "handover": [],
-   "n": "Sutton Bay State Recreation Area",
-   "official": null,
-   "ours": {
-    "acres": 76,
-    "manager": "",
-    "pieces": [
-     [
-      255367,
-      "Sutton Bay",
-      65,
       "name"
      ]
     ],
@@ -1565,13 +1771,55 @@
    "ver": 15,
    "verdict": "no size on page"
   },
+  "US-10328": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Sutton Bay State Recreation Area",
+   "official": null,
+   "ours": {
+    "acres": 90,
+    "manager": "",
+    "pieces": [
+     [
+      255367,
+      "Sutton Bay",
+      65,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://gfp.sd.gov/lakeside-use-areas/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Recreation Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
   "US-10329": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Hugh Glass State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 666,
+    "acres": 511,
     "manager": "",
     "pieces": [
      [
@@ -1581,7 +1829,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
@@ -1595,10 +1843,10 @@
     }
    ],
    "pct": null,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -1608,57 +1856,22 @@
    "verdict": "no size on page"
   },
   "US-10330": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Newell Lake State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 36,
-    "manager": "",
-    "pieces": [],
-    "pin": "inside",
-    "src": "",
-    "unknown_pieces": 2
-   },
-   "owner_now": null,
-   "pages": [
-    {
-     "other_unit": true,
-     "status": "ok",
-     "url": "https://gfp.sd.gov/lakeside-use-areas/",
-     "why": "the park's page (data/parkinfo)"
-    }
-   ],
-   "pct": null,
-   "score": 7,
-   "score_parts": {
-    "name": 2,
-    "pin": 2,
-    "size": 1,
-    "source": 2
-   },
-   "sizes": [],
-   "t": "State Recreation Area",
-   "ver": 15,
-   "verdict": "no size on page"
-  },
-  "US-10331": {
-   "checked": "2026-11-22",
-   "handover": [],
-   "n": "Bailey State Recreation Area",
-   "official": null,
-   "ours": {
-    "acres": 719,
+    "acres": 619,
     "manager": "",
     "pieces": [
      [
-      255274,
-      "Bailey (s. Angostura) Recreation Area",
-      719,
+      255206,
+      "Newell Lake Game Production Area",
+      807,
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
@@ -1672,10 +1885,52 @@
     }
    ],
    "pct": null,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Recreation Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-10331": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Bailey State Recreation Area",
+   "official": null,
+   "ours": {
+    "acres": 635,
+    "manager": "",
+    "pieces": [
+     [
+      255274,
+      "Bailey (s. Angostura) Recreation Area",
+      719,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://gfp.sd.gov/lakeside-use-areas/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -1685,16 +1940,23 @@
    "verdict": "no size on page"
   },
   "US-10340": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Wall Lake State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 14,
+    "acres": 15,
     "manager": "",
-    "pieces": [],
+    "pieces": [
+     [
+      255373,
+      "Wall Lake",
+      15,
+      "name"
+     ]
+    ],
     "pin": "inside",
-    "src": "",
+    "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
    "owner_now": null,
@@ -1720,18 +1982,66 @@
    "verdict": "no size on page"
   },
   "US-10341": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Clay County State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 120,
+    "acres": 55,
     "manager": "",
     "pieces": [
      [
       255286,
       "Clay County",
       114,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://gfp.sd.gov/lakeside-use-areas/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Recreation Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-10349": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Sand Creek State Recreation Area",
+   "official": null,
+   "ours": {
+    "acres": 100,
+    "manager": "",
+    "pieces": [
+     [
+      255132,
+      "Sand Creek To Springfield",
+      77,
+      "words"
+     ],
+     [
+      255354,
+      "Sand Creek Recreation Area",
+      46,
       "name"
      ]
     ],
@@ -1761,61 +2071,13 @@
    "ver": 15,
    "verdict": "no size on page"
   },
-  "US-10349": {
-   "checked": "2026-11-22",
-   "handover": [],
-   "n": "Sand Creek State Recreation Area",
-   "official": null,
-   "ours": {
-    "acres": 123,
-    "manager": "",
-    "pieces": [
-     [
-      255132,
-      "Sand Creek To Springfield",
-      77,
-      "words"
-     ],
-     [
-      255354,
-      "Sand Creek Recreation Area",
-      46,
-      "name"
-     ]
-    ],
-    "pin": "inside",
-    "src": "USGS PAD-US",
-    "unknown_pieces": 3
-   },
-   "owner_now": null,
-   "pages": [
-    {
-     "other_unit": true,
-     "status": "ok",
-     "url": "https://gfp.sd.gov/lakeside-use-areas/",
-     "why": "the park's page (data/parkinfo)"
-    }
-   ],
-   "pct": null,
-   "score": 7,
-   "score_parts": {
-    "name": 2,
-    "pin": 2,
-    "size": 1,
-    "source": 2
-   },
-   "sizes": [],
-   "t": "State Recreation Area",
-   "ver": 15,
-   "verdict": "no size on page"
-  },
   "US-10350": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Tabor State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 63,
+    "acres": 56,
     "manager": "",
     "pieces": [
      [
@@ -1852,12 +2114,12 @@
    "verdict": "no size on page"
   },
   "US-10360": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Shaw Creek State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 27,
+    "acres": 40,
     "manager": "",
     "pieces": [
      [
@@ -1867,7 +2129,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
@@ -1881,10 +2143,10 @@
     }
    ],
    "pct": null,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -1894,12 +2156,12 @@
    "verdict": "no size on page"
   },
   "US-10361": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Chantier Creek State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 100,
+    "acres": 65,
     "manager": "",
     "pieces": [
      [
@@ -1936,12 +2198,12 @@
    "verdict": "no size on page"
   },
   "US-10362": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Peoria Flats State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 28,
+    "acres": 17,
     "manager": "",
     "pieces": [
      [
@@ -1978,7 +2240,7 @@
    "verdict": "no size on page"
   },
   "US-10363": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "DeGray State Recreation Area",
    "official": null,
@@ -2020,144 +2282,18 @@
    "verdict": "no size on page"
   },
   "US-10364": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Joe Creek State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 61,
+    "acres": 35,
     "manager": "",
     "pieces": [
      [
       255306,
       "Joe Creek Recreation Area",
       66,
-      "name"
-     ]
-    ],
-    "pin": "inside",
-    "src": "USGS PAD-US",
-    "unknown_pieces": 2
-   },
-   "owner_now": null,
-   "pages": [
-    {
-     "other_unit": true,
-     "status": "ok",
-     "url": "https://gfp.sd.gov/lakeside-use-areas/",
-     "why": "the park's page (data/parkinfo)"
-    }
-   ],
-   "pct": null,
-   "score": 7,
-   "score_parts": {
-    "name": 2,
-    "pin": 2,
-    "size": 1,
-    "source": 2
-   },
-   "sizes": [],
-   "t": "State Recreation Area",
-   "ver": 15,
-   "verdict": "no size on page"
-  },
-  "US-10365": {
-   "checked": "2026-11-22",
-   "handover": [],
-   "n": "Little Bend State Recreation Area",
-   "official": null,
-   "ours": {
-    "acres": 454,
-    "manager": "",
-    "pieces": [
-     [
-      255324,
-      "Little Bend Recreation Area",
-      454,
-      "name"
-     ]
-    ],
-    "pin": "inside",
-    "src": "USGS PAD-US",
-    "unknown_pieces": 2
-   },
-   "owner_now": null,
-   "pages": [
-    {
-     "other_unit": true,
-     "status": "ok",
-     "url": "https://gfp.sd.gov/lakeside-use-areas/",
-     "why": "the park's page (data/parkinfo)"
-    }
-   ],
-   "pct": null,
-   "score": 7,
-   "score_parts": {
-    "name": 2,
-    "pin": 2,
-    "size": 1,
-    "source": 2
-   },
-   "sizes": [],
-   "t": "State Recreation Area",
-   "ver": 15,
-   "verdict": "no size on page"
-  },
-  "US-10366": {
-   "checked": "2026-11-22",
-   "handover": [],
-   "n": "Foster Bay State Recreation Area",
-   "official": null,
-   "ours": {
-    "acres": 121,
-    "manager": "",
-    "pieces": [
-     [
-      255300,
-      "Foster Bay Recreation Area",
-      121,
-      "name"
-     ]
-    ],
-    "pin": "inside",
-    "src": "USGS PAD-US",
-    "unknown_pieces": 2
-   },
-   "owner_now": null,
-   "pages": [
-    {
-     "other_unit": true,
-     "status": "ok",
-     "url": "https://gfp.sd.gov/lakeside-use-areas/",
-     "why": "the park's page (data/parkinfo)"
-    }
-   ],
-   "pct": null,
-   "score": 7,
-   "score_parts": {
-    "name": 2,
-    "pin": 2,
-    "size": 1,
-    "source": 2
-   },
-   "sizes": [],
-   "t": "State Recreation Area",
-   "ver": 15,
-   "verdict": "no size on page"
-  },
-  "US-10367": {
-   "checked": "2026-11-22",
-   "handover": [],
-   "n": "Minneconjou State Recreation Area",
-   "official": null,
-   "ours": {
-    "acres": 25,
-    "manager": "",
-    "pieces": [
-     [
-      255330,
-      "Minneconjou Recreation Area",
-      25,
       "name"
      ]
     ],
@@ -2187,13 +2323,139 @@
    "ver": 15,
    "verdict": "no size on page"
   },
+  "US-10365": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Little Bend State Recreation Area",
+   "official": null,
+   "ours": {
+    "acres": 258,
+    "manager": "",
+    "pieces": [
+     [
+      255324,
+      "Little Bend Recreation Area",
+      454,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://gfp.sd.gov/lakeside-use-areas/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Recreation Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-10366": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Foster Bay State Recreation Area",
+   "official": null,
+   "ours": {
+    "acres": 82,
+    "manager": "",
+    "pieces": [
+     [
+      255300,
+      "Foster Bay Recreation Area",
+      121,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://gfp.sd.gov/lakeside-use-areas/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 6,
+   "score_parts": {
+    "name": 2,
+    "pin": 1,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Recreation Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-10367": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Minneconjou State Recreation Area",
+   "official": null,
+   "ours": {
+    "acres": 21,
+    "manager": "",
+    "pieces": [
+     [
+      255330,
+      "Minneconjou Recreation Area",
+      25,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
+    "unknown_pieces": 2
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://gfp.sd.gov/lakeside-use-areas/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 7,
+   "score_parts": {
+    "name": 2,
+    "pin": 2,
+    "size": 1,
+    "source": 2
+   },
+   "sizes": [],
+   "t": "State Recreation Area",
+   "ver": 15,
+   "verdict": "no size on page"
+  },
   "US-10368": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Bush's Landing State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 87,
+    "acres": 92,
     "manager": "",
     "pieces": [
      [
@@ -2230,12 +2492,12 @@
    "verdict": "no size on page"
   },
   "US-10369": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "East Shore State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 8,
+    "acres": 13,
     "manager": "",
     "pieces": [
      [
@@ -2245,7 +2507,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
@@ -2259,10 +2521,10 @@
     }
    ],
    "pct": null,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -2272,7 +2534,7 @@
    "verdict": "no size on page"
   },
   "US-10370": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Fort George State Recreation Area",
    "official": null,
@@ -2314,12 +2576,12 @@
    "verdict": "no size on page"
   },
   "US-10371": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Antelope Creek State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 53,
+    "acres": 38,
     "manager": "",
     "pieces": [
      [
@@ -2329,44 +2591,9 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
-   },
-   "owner_now": null,
-   "pages": [
-    {
-     "other_unit": true,
-     "status": "ok",
-     "url": "https://gfp.sd.gov/lakeside-use-areas/",
-     "why": "the park's page (data/parkinfo)"
-    }
-   ],
-   "pct": null,
-   "score": 6,
-   "score_parts": {
-    "name": 2,
-    "pin": 1,
-    "size": 1,
-    "source": 2
-   },
-   "sizes": [],
-   "t": "State Recreation Area",
-   "ver": 15,
-   "verdict": "no size on page"
-  },
-  "US-10372": {
-   "checked": "2026-11-22",
-   "handover": [],
-   "n": "Spillway (Ft. Randall) State Recreation Area",
-   "official": null,
-   "ours": {
-    "acres": 0,
-    "manager": "",
-    "pieces": [],
-    "pin": "inside",
-    "src": "",
-    "unknown_pieces": 1
    },
    "owner_now": null,
    "pages": [
@@ -2388,15 +2615,50 @@
    "sizes": [],
    "t": "State Recreation Area",
    "ver": 15,
+   "verdict": "no size on page"
+  },
+  "US-10372": {
+   "checked": "2026-11-01",
+   "handover": [],
+   "n": "Spillway (Ft. Randall) State Recreation Area",
+   "official": null,
+   "ours": {
+    "acres": 0,
+    "manager": "",
+    "pieces": [],
+    "pin": "just outside",
+    "src": "",
+    "unknown_pieces": 1
+   },
+   "owner_now": null,
+   "pages": [
+    {
+     "other_unit": true,
+     "status": "ok",
+     "url": "https://gfp.sd.gov/lakeside-use-areas/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "pct": null,
+   "score": 4,
+   "score_parts": {
+    "name": 1,
+    "pin": 1,
+    "size": 1,
+    "source": 1
+   },
+   "sizes": [],
+   "t": "State Recreation Area",
+   "ver": 15,
    "verdict": "ours unknown"
   },
   "US-10373": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "East Whitelock State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 103,
+    "acres": 114,
     "manager": "",
     "pieces": [
      [
@@ -2433,12 +2695,12 @@
    "verdict": "no size on page"
   },
   "US-10374": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Bob's Landing State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 6,
+    "acres": 2,
     "manager": "",
     "pieces": [],
     "pin": "inside",
@@ -2455,12 +2717,12 @@
     }
    ],
    "pct": null,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 2,
     "size": 1,
-    "source": 2
+    "source": 1
    },
    "sizes": [],
    "t": "State Recreation Area",
@@ -2468,12 +2730,12 @@
    "verdict": "no size on page"
   },
   "US-10375": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Dodge Draw State Vehicle Recreational Area",
    "official": null,
    "ours": {
-    "acres": 86,
+    "acres": 85,
     "manager": "",
     "pieces": [
      [
@@ -2510,7 +2772,7 @@
    "verdict": "no size on page"
   },
   "US-10376": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Le Beau State Recreation Area",
    "official": null,
@@ -2552,12 +2814,12 @@
    "verdict": "no size on page"
   },
   "US-10377": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Bowdle Beach State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 25,
+    "acres": 16,
     "manager": "",
     "pieces": [
      [
@@ -2594,12 +2856,12 @@
    "verdict": "no size on page"
   },
   "US-10378": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Dude Ranch State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 26,
+    "acres": 18,
     "manager": "",
     "pieces": [
      [
@@ -2636,12 +2898,12 @@
    "verdict": "no size on page"
   },
   "US-10379": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Elm Creek State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 174,
+    "acres": 107,
     "manager": "",
     "pieces": [
      [
@@ -2651,7 +2913,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
@@ -2665,10 +2927,10 @@
     }
    ],
    "pct": null,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -2680,16 +2942,8 @@
   "US-11905": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Centennial Trail State Trail",
-   "ours": {
-    "acres": 0,
-    "manager": "",
-    "pieces": [],
-    "pin": "inside",
-    "src": "",
-    "unknown_pieces": 1
-   },
+   "ours": null,
    "score": null,
    "t": "State Trail",
    "ver": 15,
@@ -2697,7 +2951,7 @@
   },
   "US-2916": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 15 acres, no total words near it)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Bear Butte State Park",
    "official": {
@@ -2705,13 +2959,13 @@
     "as": "15 acres",
     "clean": false,
     "line": "s may be closed. Please contact the park directly for current status. Vault toilets usually remain open. Park Size: 15 non-electric campsites, 4 non-electric horse campsites and middle camp non-electric campsites; available on fi",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Park Size: 15 non-electric campsites, 4 non-electric horse campsites and middle camp non-electric campsites;",
     "url": "https://gfp.sd.gov/parks/detail/bear-butte-state-park/",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 1920,
+    "acres": 1846,
     "manager": "",
     "pieces": [
      [
@@ -2727,7 +2981,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 4
    },
@@ -2744,12 +2998,12 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 12700,
+   "pct": 12207,
    "same_agency": false,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -2769,7 +3023,7 @@
    "verdict": "unsure"
   },
   "US-2917": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Custer State Park",
    "official": {
@@ -2777,7 +3031,7 @@
     "as": "71,000 acres",
     "clean": true,
     "line": "are waiting to be discovered. Bring your family to Custer State Park and let yourself run wild. Encompassing 71,000 acres in the Black Hills, Custer State Park is home to abundant wildlife and adventure; camping, hiking, biking, sw",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Encompassing 71,000 acres in the Black Hills, Custer State Park is home to abundant wildlife and adventure;",
     "url": "https://gfp.sd.gov/parks/detail/custer-state-park/",
     "why": "clean total"
@@ -2858,7 +3112,7 @@
   },
   "US-2918": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 14 acres, no total words near it)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Fort Sisseton State Park",
    "official": {
@@ -2866,13 +3120,13 @@
     "as": "14 acres",
     "clean": false,
     "line": "s may be closed. Please contact the park directly for current status. Vault toilets usually remain open. Park Size: 14 campsites and 3 camping cabins (each sleeps 6 people) Directions: Hwy 20 to Hwy 25, follow it all the way to E",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Park Size: 14 campsites and 3 camping cabins (each sleeps 6 people)",
     "url": "https://gfp.sd.gov/parks/detail/fort-sisseton-historic-state-park/",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 187,
+    "acres": 156,
     "manager": "",
     "pieces": [
      [
@@ -2899,7 +3153,7 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 1236,
+   "pct": 1014,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -2924,15 +3178,15 @@
    "verdict": "unsure"
   },
   "US-2919": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Good Earth State Park",
    "official": null,
    "ours": {
-    "acres": 663,
+    "acres": 524,
     "manager": "",
     "pieces": [],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "",
     "unknown_pieces": 2
    },
@@ -2950,12 +3204,12 @@
     }
    ],
    "pct": null,
-   "score": 7,
+   "score": 5,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
-    "source": 2
+    "source": 1
    },
    "sizes": [],
    "t": "State Park",
@@ -2964,7 +3218,7 @@
   },
   "US-2920": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 89 acres, no total words near it)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Hartford Beach State Park",
    "official": {
@@ -2972,13 +3226,13 @@
     "as": "89 acres",
     "clean": false,
     "line": "s may be closed. Please contact the park directly for current status. Vault toilets usually remain open. Park Size: 89 campsites and 4 camping cabins Directions: 15 miles north of Milbank off SD Highway 15 Nearest Town: Corona Sh",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Park Size: 89 campsites and 4 camping cabins",
     "url": "https://gfp.sd.gov/parks/detail/hartford-beach-state-park/",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 329,
+    "acres": 194,
     "manager": "",
     "pieces": [
      [
@@ -3000,7 +3254,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 270,
+   "pct": 118,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -3026,7 +3280,7 @@
   },
   "US-2921": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 72 acres, no total words near it)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Lake Herman State Park",
    "official": {
@@ -3034,13 +3288,13 @@
     "as": "72 acres",
     "clean": false,
     "line": "s may be closed. Please contact the park directly for current status. Vault toilets usually remain open. Park Size: 72 campsites and 4 camping cabins Directions: 2 miles west of Madison off SD Hwy 34 Nearest Town: Madison Show Mo",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Park Size: 72 campsites and 4 camping cabins",
     "url": "https://gfp.sd.gov/parks/detail/lake-herman-state-park/",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 269,
+    "acres": 278,
     "manager": "",
     "pieces": [
      [
@@ -3050,7 +3304,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
@@ -3067,12 +3321,12 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 274,
+   "pct": 286,
    "same_agency": false,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -3093,7 +3347,7 @@
   },
   "US-2922": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 126 acres, no total words near it)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Newton Hills State Park",
    "official": {
@@ -3101,13 +3355,13 @@
     "as": "126 acres",
     "clean": false,
     "line": "s may be closed. Please contact the park directly for current status. Vault toilets usually remain open. Park Size: 126 campsites, 10 horse campsites, 11 camping cabins, modern cabin, and 2 group lodges. Directions: 6 miles south",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Park Size: 126 campsites, 10 horse campsites, 11 camping cabins, modern cabin, and 2 group lodges.",
     "url": "https://gfp.sd.gov/parks/detail/newton-hills-state-park/",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 1047,
+    "acres": 985,
     "manager": "",
     "pieces": [
      [
@@ -3134,7 +3388,7 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 731,
+   "pct": 682,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -3160,7 +3414,7 @@
   },
   "US-2923": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 139 acres, no total words near it)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Oakwood Lakes State Park",
    "official": {
@@ -3168,13 +3422,13 @@
     "as": "139 acres",
     "clean": false,
     "line": "s may be closed. Please contact the park directly for current status. Vault toilets usually remain open. Park Size: 139 campsites, 7 camping cabins, and 6 horse campsites Directions: 7 miles north and 3 miles west of Volga, SD, of",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Park Size: 139 campsites, 7 camping cabins, and 6 horse campsites",
     "url": "https://gfp.sd.gov/parks/detail/oakwood-lakes-state-park/",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 335,
+    "acres": 482,
     "manager": "",
     "pieces": [
      [
@@ -3196,7 +3450,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 141,
+   "pct": 247,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -3221,7 +3475,8 @@
    "verdict": "unsure"
   },
   "US-2924": {
-   "checked": "2026-11-22",
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 435 acres, no total words near it)",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Palisades State Park",
    "official": {
@@ -3229,17 +3484,24 @@
     "as": "435 acres",
     "clean": false,
     "line": "00 to match Governor Noem's and GFP&rsquo;s commitment to the expansion. The park will grow from 167 acres to 435 acres; with the new property following Split Rock Creek to the South. To date GFP has installed the primary road sy",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "The park will grow from 167 acres to 435 acres;",
     "url": "https://gfp.sd.gov/parks/detail/palisades-state-park/",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 438,
+    "acres": 299,
     "manager": "",
-    "pieces": [],
+    "pieces": [
+     [
+      255339,
+      "Palisades",
+      167,
+      "name"
+     ]
+    ],
     "pin": "inside",
-    "src": "",
+    "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
    "owner_now": null,
@@ -3255,13 +3517,13 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 1,
+   "pct": 31,
    "same_agency": false,
-   "score": 8,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 1,
     "source": 2
    },
    "sizes": [
@@ -3295,11 +3557,11 @@
    ],
    "t": "State Park",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "unsure"
   },
   "US-2925": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 2 acres, a tiny number without size wording)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Roy Lake State Park",
    "official": {
@@ -3307,7 +3569,7 @@
     "as": "2 acres",
     "clean": false,
     "line": "s may be closed. Please contact the park directly for current status. Vault toilets usually remain open. Park Size: 2 campgrounds with 101 campsites, 3 camping cabins, 6 modern cabins, and 6 suites. Directions: 3 miles southwest",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Park Size: 2 campgrounds with 101 campsites, 3 camping cabins, 6 modern cabins, and 6 suites.",
     "url": "https://gfp.sd.gov/parks/detail/roy-lake-state-park/",
     "why": "a tiny number without size wording"
@@ -3372,7 +3634,7 @@
   },
   "US-2926": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 14 acres, no total words near it)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Sica Hollow State Park",
    "official": {
@@ -3380,13 +3642,13 @@
     "as": "14 acres",
     "clean": false,
     "line": "ampsites - non-electrical: $16 per night Horse Camp: $18 per night Show More Park Specs Open: Year-round Park Size: 14 Campsites Directions: 15 miles northwest of Sisseton off SD Hwy 10 Nearest Town: Sisseton Show More Make Reser",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Park Size: 14 Campsites",
     "url": "https://gfp.sd.gov/parks/detail/sica-hollow-state-park/",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 893,
+    "acres": 969,
     "manager": "",
     "pieces": [
      [
@@ -3408,7 +3670,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 6279,
+   "pct": 6821,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -3434,7 +3696,7 @@
   },
   "US-2927": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 25 acres, no total words near it)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Union Grove State Park",
    "official": {
@@ -3442,7 +3704,7 @@
     "as": "25 acres",
     "clean": false,
     "line": "s may be closed. Please contact the park directly for current status. Vault toilets usually remain open. Park Size: 25 campsites, including 4 horse campsites Directions: 11 miles south of Beresford off I-29, Exit 38 Nearest Town:",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Park Size: 25 campsites, including 4 horse campsites",
     "url": "https://gfp.sd.gov/parks/detail/union-grove-state-park/",
     "why": "no total words near it"
@@ -3458,7 +3720,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
@@ -3477,10 +3739,10 @@
    ],
    "pct": 1888,
    "same_agency": false,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -3500,7 +3762,7 @@
    "verdict": "unsure"
   },
   "US-4501": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Custer Gallatin National Forest",
    "ours": null,
@@ -3510,25 +3772,24 @@
    "verdict": "no outline"
   },
   "US-4524": {
-   "cause": "our union: one of our pieces alone matches the agency (double count?)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Black Hills National Forest",
-   "note": "whole park compared (POTA lists it in 2 states: {'US-WY': 176357, 'US-SD': 1251255})",
+   "note": "whole park compared (POTA lists it in 2 states: {'US-SD': 1074898, 'US-WY': 176357})",
    "official": {
     "acres": 1200000.0,
     "as": "1.2 million acres",
     "clean": true,
     "line": "T Welcome to the Black Hills National Forest The Black Hills, in western SD and northeastern WY, consists of 1.2 million acres of forested hills and mountains, approximately 110 miles long and 70 miles wide. The name \"Black Hills\" comes",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "The Black Hills, in western SD and northeastern WY, consists of 1.2 million acres of forested hills and mountains, approximately 110 miles long and 70 miles wide.",
-    "url": "https://www.fs.usda.gov/r02/blackhills",
+    "url": "https://www.fs.usda.gov/blackhills",
     "why": "clean total"
    },
    "ours": {
-    "acres": 1427612,
+    "acres": 1251255,
     "acres_by_state": {
-     "US-SD": 1251255,
+     "US-SD": 1074898,
      "US-WY": 176357
     },
     "manager": "",
@@ -3538,25 +3799,13 @@
       "Black Hills National Forest",
       1074898,
       "name"
-     ],
-     [
-      2697,
-      "Black Hills National Forest",
-      176135,
-      "reviewed"
-     ],
-     [
-      2617,
-      "Black Hills National Forest",
-      222,
-      "reviewed"
      ]
     ],
     "pin": "just outside",
     "src": "USGS PAD-US",
     "states": [
-     "US-WY",
-     "US-SD"
+     "US-SD",
+     "US-WY"
     ],
     "unknown_pieces": 0,
     "whole_park": true
@@ -3564,7 +3813,7 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "host-rule",
+     "status": "ok",
      "url": "https://www.fs.usda.gov/blackhills",
      "why": "the park's page (data/parkinfo)"
     },
@@ -3580,16 +3829,25 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 19,
+   "pct": 4,
    "same_agency": false,
-   "score": 5,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 0,
+    "size": 2,
     "source": 2
    },
    "sizes": [
+    {
+     "acres": 1200000.0,
+     "as": "1.2 million acres",
+     "clean": true,
+     "line": "T Welcome to the Black Hills National Forest The Black Hills, in western SD and northeastern WY, consists of 1.2 million acres of forested hills and mountains, approximately 110 miles long and 70 miles wide. The name \"Black Hills\" comes",
+     "total_like": true,
+     "url": "https://www.fs.usda.gov/blackhills",
+     "why": "clean total"
+    },
     {
      "acres": 1200000.0,
      "as": "1.2 million acres",
@@ -3602,96 +3860,25 @@
    ],
    "t": "National Forest",
    "ver": 15,
-   "verdict": "off"
+   "verdict": "agree"
   },
   "US-4572": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Lewis and Clark National Historic Trail",
-   "note": "whole park compared (POTA lists it in 0 states: {})",
-   "official": null,
-   "ours": {
-    "acres": 0,
-    "acres_by_state": {},
-    "manager": "",
-    "pieces": [],
-    "pin": "inside",
-    "src": "",
-    "states": [
-     "US-KS",
-     "US-IA",
-     "US-IL",
-     "US-ND",
-     "US-MT",
-     "US-ID",
-     "US-OR",
-     "US-MO",
-     "US-WV",
-     "US-IN",
-     "US-NE",
-     "US-SD",
-     "US-OH",
-     "US-PA",
-     "US-WA"
-    ],
-    "unknown_pieces": 1,
-    "whole_park": true
-   },
-   "owner_now": null,
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://www.nps.gov/lecl/index.htm",
-     "why": "the park's page (Kentucky answer key)"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.nps.gov/lecl/learn/index.htm",
-     "why": "about / history page of the park's site"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.nps.gov/lecl/learn/historyculture/places.htm",
-     "why": "about / history page of the park's site"
-    },
-    {
-     "other_unit": true,
-     "status": "ok",
-     "url": "https://www.nps.gov/lecl/learn/management/lawsandpolicies.htm",
-     "why": "rules page (documents bot)"
-    },
-    {
-     "status": "HTTP 404",
-     "url": "https://www.nps.gov/lecl/learn/management/statistics.htm",
-     "why": "NPS park statistics page"
-    },
-    {
-     "status": "ok",
-     "url": "https://www.nps.gov/lecl/learn/news/newsreleases.htm",
-     "why": "NPS news releases"
-    }
-   ],
-   "pct": null,
-   "score": 4,
-   "score_parts": {
-    "name": 1,
-    "pin": 2,
-    "size": 1,
-    "source": 0
-   },
-   "sizes": [],
+   "ours": null,
+   "score": null,
    "t": "National Historic Trail",
    "ver": 15,
-   "verdict": "ours unknown"
+   "verdict": "no outline"
   },
   "US-5644": {
    "checked": "2026-11-01",
    "handover": [],
-   "last_read_failed": "2026-11-22",
    "n": "Fisher Grove State Park",
    "official": null,
    "ours": {
-    "acres": 312,
+    "acres": 252,
     "manager": "",
     "pieces": [
      [
@@ -3701,7 +3888,7 @@
       "name"
      ]
     ],
-    "pin": "just outside",
+    "pin": "inside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
@@ -3727,12 +3914,12 @@
    "verdict": "no size on page"
   },
   "US-5645": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Spirit Mound Historic Prairie State Park",
    "official": null,
    "ours": {
-    "acres": 318,
+    "acres": 298,
     "manager": "",
     "pieces": [
      [
@@ -3742,7 +3929,7 @@
       "words"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 1
    },
@@ -3755,10 +3942,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 5,
    "score_parts": {
     "name": 1,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -3768,10 +3955,20 @@
    "verdict": "no size on page"
   },
   "US-7487": {
-   "checked": "2026-11-22",
+   "cause": "agency smaller: our outline may hold water, a lease or a neighbour tract",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Buffalo Gap National Grassland",
-   "official": null,
+   "official": {
+    "acres": 1335.0,
+    "as": "1,335 acres",
+    "clean": true,
+    "line": "Located on the Wall Ranger District of Buffalo Gap National Grassland, the Baja OHV Area covers approximately 1,335 acres and is open to motorized cross-country travel. The terrain is made up of… Bessey Fish Pond Site Open This sma",
+    "read": "2026-11-01",
+    "sent": "Located on the Wall Ranger District of Buffalo Gap National Grassland, the Baja OHV Area covers approximately 1,335 acres and is open to motorized cross-country travel.",
+    "url": "https://www.fs.usda.gov/recarea/nebraska/recarea/?recid=30329",
+    "why": "clean total"
+   },
    "ours": {
     "acres": 586971,
     "manager": "",
@@ -3790,7 +3987,7 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "host-rule",
+     "status": "ok",
      "url": "https://www.fs.usda.gov/recarea/nebraska/recarea/?recid=30329",
      "why": "the park's page (data/parkinfo)"
     },
@@ -3801,24 +3998,53 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": null,
-   "score": 5,
+   "pct": 43868,
+   "same_agency": false,
+   "score": 4,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 1,
+    "size": 0,
     "source": 1
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 116000.0,
+     "as": "116,000 acre",
+     "clean": false,
+     "line": "a National Grassland. This… Samuel R. McKelvie National Forest Located south of Nenzel in Cherry County, this 116,000-acre national forest is a fantastic representation of the unique Nebraska Sandhills prairie… Recreation Search Sit",
+     "total_like": true,
+     "url": "https://www.fs.usda.gov/recarea/nebraska/recarea/?recid=30329",
+     "why": "total-looking"
+    },
+    {
+     "acres": 1335.0,
+     "as": "1,335 acres",
+     "clean": true,
+     "line": "Located on the Wall Ranger District of Buffalo Gap National Grassland, the Baja OHV Area covers approximately 1,335 acres and is open to motorized cross-country travel. The terrain is made up of… Bessey Fish Pond Site Open This sma",
+     "total_like": true,
+     "url": "https://www.fs.usda.gov/recarea/nebraska/recarea/?recid=30329",
+     "why": "clean total"
+    }
+   ],
    "t": "National Grassland",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "off"
   },
   "US-7488": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Fort Pierre National Grassland",
-   "official": null,
+   "official": {
+    "acres": 116000.0,
+    "as": "116,000 acre",
+    "clean": false,
+    "line": "a National Grassland. This… Samuel R. McKelvie National Forest Located south of Nenzel in Cherry County, this 116,000-acre national forest is a fantastic representation of the unique Nebraska Sandhills prairie… Recreation Search Sit",
+    "read": "2026-11-01",
+    "sent": "Located south of Nenzel in Cherry County, this 116,000-acre national forest is a fantastic representation of the unique Nebraska Sandhills prairie…",
+    "url": "https://www.fs.usda.gov/recarea/nebraska/recarea/?recid=10637",
+    "why": "total-looking"
+   },
    "ours": {
     "acres": 115811,
     "manager": "",
@@ -3837,7 +4063,7 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "host-rule",
+     "status": "ok",
      "url": "https://www.fs.usda.gov/recarea/nebraska/recarea/?recid=10637",
      "why": "the park's page (data/parkinfo)"
     },
@@ -3848,22 +4074,42 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": null,
-   "score": 6,
+   "pct": 0,
+   "same_agency": false,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 1
    },
-   "sizes": [],
+   "sizes": [
+    {
+     "acres": 116000.0,
+     "as": "116,000 acre",
+     "clean": false,
+     "line": "a National Grassland. This… Samuel R. McKelvie National Forest Located south of Nenzel in Cherry County, this 116,000-acre national forest is a fantastic representation of the unique Nebraska Sandhills prairie… Recreation Search Sit",
+     "total_like": true,
+     "url": "https://www.fs.usda.gov/recarea/nebraska/recarea/?recid=10637",
+     "why": "total-looking"
+    },
+    {
+     "acres": 1335.0,
+     "as": "1,335 acres",
+     "clean": false,
+     "line": "Located on the Wall Ranger District of Buffalo Gap National Grassland, the Baja OHV Area covers approximately 1,335 acres and is open to motorized cross-country travel. The terrain is made up of… Bessey Fish Pond Site Open This sma",
+     "total_like": false,
+     "url": "https://www.fs.usda.gov/recarea/nebraska/recarea/?recid=10637",
+     "why": "another park / unit named in the sentence"
+    }
+   ],
    "t": "National Grassland",
    "ver": 15,
-   "verdict": "no size on page"
+   "verdict": "agree"
   },
   "US-7489": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Grand River National Grassland",
    "official": null,
@@ -3885,7 +4131,7 @@
    "owner_now": null,
    "pages": [
     {
-     "status": "host-rule",
+     "status": "ok",
      "url": "https://www.fs.usda.gov/recarea/dpg/recarea/?recid=79472",
      "why": "the park's page (data/parkinfo)"
     },
@@ -3905,6 +4151,15 @@
     "source": 1
    },
    "sizes": [
+    {
+     "acres": 70000.0,
+     "as": "70,000 acres",
+     "clean": false,
+     "line": "Daah Hey Trail, fishing, camping, and more. Sheyenne National Grassland Explore Sheyenne National Grassland’s 70,000 acres of public land in southeastern North Dakota. Recreation Search Site Type TERRA TRAIL (18) CAMPGROUND (13) INT",
+     "total_like": false,
+     "url": "https://www.fs.usda.gov/recarea/dpg/recarea/?recid=79472",
+     "why": "part (a lake, a purchase, a campground…)"
+    },
     {
      "acres": 1200000.0,
      "as": "1.2 million acres",
@@ -3929,7 +4184,7 @@
    "verdict": "unsure"
   },
   "US-7844": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Adams Homestead State Nature Preserve",
    "official": {
@@ -3937,7 +4192,7 @@
     "as": "1,500 acres",
     "clean": false,
     "line": "ch State Parks Photo &copy; Allie Ellingson Adams Homestead and Nature Preserve Visit Us On Facebook Spanning 1,500 acres along the Missouri River, this area was donated to the people of South Dakota in 1984 by Mary and Maud Adams,",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Spanning 1,500 acres along the Missouri River, this area was donated to the people of South Dakota in 1984 by Mary and Maud Adams, granddaughters of original homesteader Stephen Searls Adams.",
     "url": "https://gfp.sd.gov/parks/detail/adams-homestead-and-nature-preserve/",
     "why": "history"
@@ -3946,7 +4201,7 @@
     "acres": 0,
     "manager": "",
     "pieces": [],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "",
     "unknown_pieces": 1
    },
@@ -3960,10 +4215,10 @@
    ],
    "pct": null,
    "same_agency": false,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -3984,7 +4239,7 @@
   },
   "US-8155": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 4 acres, a tiny number without size wording)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Angostura State Recreation Area",
    "official": {
@@ -3992,15 +4247,21 @@
     "as": "4 acres",
     "clean": false,
     "line": "s may be closed. Please contact the park directly for current status. Vault toilets usually remain open. Park Size: 4 campgrounds with 171 campsites and 14 camping cabins Directions: 10 miles southeast of Hot Springs off US High",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Park Size: 4 campgrounds with 171 campsites and 14 camping cabins",
     "url": "https://gfp.sd.gov/parks/detail/angostura-recreation-area/",
     "why": "a tiny number without size wording"
    },
    "ours": {
-    "acres": 3144,
+    "acres": 6403,
     "manager": "",
     "pieces": [
+     [
+      2299,
+      "Angostura Reservoir",
+      4841,
+      "name"
+     ],
      [
       255141,
       "Angostura Reservoir Game Production Area",
@@ -4020,7 +4281,7 @@
       "words"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
@@ -4037,12 +4298,12 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 78500,
+   "pct": 159975,
    "same_agency": false,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -4062,12 +4323,12 @@
    "verdict": "unsure"
   },
   "US-8156": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Beaver Creek State Natural Area",
    "official": null,
    "ours": {
-    "acres": 150,
+    "acres": 114,
     "manager": "",
     "pieces": [
      [
@@ -4077,7 +4338,7 @@
       "reviewed"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 1
    },
@@ -4090,7 +4351,7 @@
   },
   "US-8157": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 49 acres, no total words near it)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Big Sioux State Recreation Area",
    "official": {
@@ -4098,13 +4359,13 @@
     "as": "49 acres",
     "clean": false,
     "line": "s may be closed. Please contact the park directly for current status. Vault toilets usually remain open. Park Size: 49 campsites and 3 camping cabins Directions: 4 miles southwest of Brandon off I-90 Exit 406 Nearest Town: Brando",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Park Size: 49 campsites and 3 camping cabins",
     "url": "https://gfp.sd.gov/parks/detail/big-sioux-recreation-area/",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 575,
+    "acres": 441,
     "manager": "",
     "pieces": [
      [
@@ -4114,7 +4375,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
@@ -4131,12 +4392,12 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 1073,
+   "pct": 800,
    "same_agency": false,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -4156,7 +4417,8 @@
    "verdict": "unsure"
   },
   "US-8158": {
-   "checked": "2026-11-22",
+   "cause": "agency bigger: our outline may miss a tract",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Big Stone Island State Recreation Area",
    "official": {
@@ -4164,13 +4426,13 @@
     "as": "100 acre",
     "clean": false,
     "line": "-day South Dakota, they met an American Indian village on a rocky island (Big Island). This island is now the 100-acre nature area that is a natural refuge for a variety of wildlife, including songbirds, waterfowl and shore bird",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "This island is now the 100-acre nature area that is a natural refuge for a variety of wildlife, including songbirds, waterfowl and shore birds.",
     "url": "https://gfp.sd.gov/parks/detail/big-stone-island-nature-area/",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 105,
+    "acres": 70,
     "manager": "",
     "pieces": [
      [
@@ -4197,13 +4459,13 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 5,
+   "pct": 30,
    "same_agency": false,
-   "score": 8,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 0,
     "source": 2
    },
    "sizes": [
@@ -4219,10 +4481,11 @@
    ],
    "t": "State Recreation Area",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "off"
   },
   "US-8159": {
-   "checked": "2026-11-22",
+   "cause": "agency bigger: our outline may miss a tract",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Burke Lake State Recreation Area",
    "official": {
@@ -4230,17 +4493,24 @@
     "as": "206 acre",
     "clean": false,
     "line": "e that averages only eight feet in depth. Native and introduced prairie grasses and wildflowers abound in the 206-acre park, and wildlife of all kinds inhabit this unique area. Read More About This Park Activities Boating Canoei",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Native and introduced prairie grasses and wildflowers abound in the 206-acre park, and wildlife of all kinds inhabit this unique area.",
     "url": "https://gfp.sd.gov/parks/detail/burke-lake-recreation-area/",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 193,
+    "acres": 106,
     "manager": "",
-    "pieces": [],
-    "pin": "inside",
-    "src": "",
+    "pieces": [
+     [
+      255281,
+      "Burke Lake",
+      205,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
    "owner_now": null,
@@ -4256,13 +4526,13 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 6,
+   "pct": 49,
    "same_agency": false,
-   "score": 8,
+   "score": 5,
    "score_parts": {
     "name": 2,
-    "pin": 2,
-    "size": 2,
+    "pin": 1,
+    "size": 0,
     "source": 2
    },
    "sizes": [
@@ -4296,11 +4566,11 @@
    ],
    "t": "State Recreation Area",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "off"
   },
   "US-8160": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 44 acres, no total words near it)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Buryanek State Recreation Area",
    "official": {
@@ -4308,17 +4578,24 @@
     "as": "44 acres",
     "clean": false,
     "line": "s may be closed. Please contact the park directly for current status. Vault toilets usually remain open. Park Size: 44 campsites and 3 camping cabins Directions: 20 miles northwest of Platte off SD Hwy 44 Nearest Town: Burke Show",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Park Size: 44 campsites and 3 camping cabins",
     "url": "https://gfp.sd.gov/parks/detail/buryanek-recreation-area/",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 228,
+    "acres": 218,
     "manager": "",
-    "pieces": [],
-    "pin": "just outside",
-    "src": "",
+    "pieces": [
+     [
+      255282,
+      "Buryanek Recreation Area",
+      75,
+      "name"
+     ]
+    ],
+    "pin": "inside",
+    "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
    "owner_now": null,
@@ -4334,12 +4611,12 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 418,
+   "pct": 395,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 1,
+    "pin": 2,
     "size": 1,
     "source": 2
    },
@@ -4359,8 +4636,7 @@
    "verdict": "unsure"
   },
   "US-8161": {
-   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 146 acres, no total words near it)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Chief White Crane State Recreation Area",
    "official": {
@@ -4368,13 +4644,13 @@
     "as": "146 acres",
     "clean": false,
     "line": "en Oct. 1 and April 30 water systems may be closed. Please contact the park directly for current status. Park Size: 146 campsites (2 tent sites non-electric) and 10 camping cabins Directions: 4 miles west of Yankton off SD Hwy 52,",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Park Size: 146 campsites (2 tent sites non-electric) and 10 camping cabins",
     "url": "https://gfp.sd.gov/parks/detail/chief-white-crane-recreation-area/",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 209,
+    "acres": 128,
     "manager": "",
     "pieces": [
      [
@@ -4401,13 +4677,13 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 43,
+   "pct": 12,
    "same_agency": false,
-   "score": 6,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 1,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -4423,11 +4699,11 @@
    ],
    "t": "State Recreation Area",
    "ver": 15,
-   "verdict": "unsure"
+   "verdict": "agree"
   },
   "US-8162": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 46 acres, no total words near it)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Cow Creek State Recreation Area",
    "official": {
@@ -4435,13 +4711,13 @@
     "as": "46 acres",
     "clean": false,
     "line": "s may be closed. Please contact the park directly for current status. Vault toilets usually remain open. Park Size: 46 campsites and 4 camping cabins Directions: 15 miles northwest of Pierre off SD Highway 1804 Nearest Town: Pier",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Park Size: 46 campsites and 4 camping cabins",
     "url": "https://gfp.sd.gov/parks/detail/cow-creek-recreation-area-/",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 271,
+    "acres": 173,
     "manager": "",
     "pieces": [
      [
@@ -4468,7 +4744,7 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 489,
+   "pct": 276,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -4494,7 +4770,7 @@
   },
   "US-8163": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 2 acres, a tiny number without size wording)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Farm Island State Recreation Area",
    "official": {
@@ -4502,13 +4778,13 @@
     "as": "2 acres",
     "clean": false,
     "line": "s may be closed. Please contact the park directly for current status. Vault toilets usually remain open. Park Size: 2 campground with 90 campsites and 4 camping cabins Directions: 4 miles east of Pierre off SD Highway 34 Nearest",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Park Size: 2 campground with 90 campsites and 4 camping cabins",
     "url": "https://gfp.sd.gov/parks/detail/farm-island-recreation-area/",
     "why": "a tiny number without size wording"
    },
    "ours": {
-    "acres": 1289,
+    "acres": 473,
     "manager": "",
     "pieces": [
      [
@@ -4518,7 +4794,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
@@ -4535,12 +4811,12 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 64350,
+   "pct": 23550,
    "same_agency": false,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -4560,47 +4836,17 @@
    "verdict": "unsure"
   },
   "US-8164": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "George S. Mickelson State Trail",
-   "official": null,
-   "ours": {
-    "acres": 0,
-    "manager": "",
-    "pieces": [],
-    "pin": "inside",
-    "src": "",
-    "unknown_pieces": 1
-   },
-   "owner_now": null,
-   "pages": [
-    {
-     "status": "ok",
-     "url": "https://gfp.sd.gov/parks/detail/george-s--mickelson-trail/",
-     "why": "the park's page (data/parkinfo)"
-    },
-    {
-     "other_unit": true,
-     "status": "ok",
-     "url": "https://gfp.sd.gov/parks/detail/george-s--mickelson-trail/pages/44/",
-     "why": "rules page (documents bot)"
-    }
-   ],
-   "pct": null,
-   "score": 4,
-   "score_parts": {
-    "name": 1,
-    "pin": 2,
-    "size": 1,
-    "source": 0
-   },
-   "sizes": [],
+   "ours": null,
+   "score": null,
    "t": "State Trail",
    "ver": 15,
-   "verdict": "ours unknown"
+   "verdict": "no outline"
   },
   "US-8165": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Indian Creek State Recreation Area",
    "official": null,
@@ -4646,7 +4892,7 @@
    "verdict": "no size on page"
   },
   "US-8166": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "LaFramboise Island State Natural Area",
    "official": null,
@@ -4661,7 +4907,7 @@
       "reviewed"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 0
    },
@@ -4679,10 +4925,10 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 5,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 1
    },
@@ -4692,7 +4938,7 @@
    "verdict": "no size on page"
   },
   "US-8167": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Lake Alvin State Recreation Area",
    "official": {
@@ -4700,7 +4946,7 @@
     "as": "59 acre",
     "clean": false,
     "line": "Ellingson Lake Alvin Recreation Area Although small in size, Lake Alvin has become a very popular area. This 59 acre park is best known for its beach facilities and excellent fishing. Its proximity to Sioux Falls and Newton Hi",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "This 59 acre park is best known for its beach facilities and excellent fishing.",
     "url": "https://gfp.sd.gov/parks/detail/lake-alvin-recreation-area/",
     "why": "part (a lake, a purchase, a campground…)"
@@ -4763,7 +5009,7 @@
   },
   "US-8168": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 30 acres, no total words near it)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Lake Cochrane State Recreation Area",
    "official": {
@@ -4771,17 +5017,24 @@
     "as": "30 acres",
     "clean": false,
     "line": "s may be closed. Please contact the park directly for current status. Vault toilets usually remain open. Park Size: 30 campsites and 1 camping cabin Directions: 10 miles east of Clear Lake off SD Highway 22 Nearest Town: Clear La",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Park Size: 30 campsites and 1 camping cabin",
     "url": "https://gfp.sd.gov/parks/detail/lake-cochrane-recreation-area/",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 23,
+    "acres": 20,
     "manager": "",
-    "pieces": [],
+    "pieces": [
+     [
+      255288,
+      "Cochrane",
+      29,
+      "name (designation code ignored)"
+     ]
+    ],
     "pin": "inside",
-    "src": "",
+    "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
    "owner_now": null,
@@ -4797,7 +5050,7 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 23,
+   "pct": 33,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -4823,7 +5076,7 @@
   },
   "US-8169": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 13 acres, no total words near it)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Lake Hiddenwood State Recreation Area",
    "official": {
@@ -4831,13 +5084,13 @@
     "as": "13 acres",
     "clean": false,
     "line": "s may be closed. Please contact the park directly for current status. Vault toilets usually remain open. Park Size: 13 campsites Directions: 5 miles Northeast of Selby off Hwy 12/83 Nearest Town: Selby Show More Make Reservations",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Park Size: 13 campsites",
     "url": "https://gfp.sd.gov/parks/detail/lake-hiddenwood-recreation-area/",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 331,
+    "acres": 210,
     "manager": "",
     "pieces": [
      [
@@ -4847,7 +5100,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
@@ -4864,12 +5117,12 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 2446,
+   "pct": 1515,
    "same_agency": false,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -4890,7 +5143,7 @@
   },
   "US-8170": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 41 acres, no total words near it)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Lake Louise State Recreation Area",
    "official": {
@@ -4898,13 +5151,13 @@
     "as": "41 acres",
     "clean": false,
     "line": "s may be closed. Please contact the park directly for current status. Vault toilets usually remain open. Park Size: 41 campsites and 2 camping cabins Directions: Head north on Highway 45 for 7 miles, then turn west onto 191st St.",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Park Size: 41 campsites and 2 camping cabins",
     "url": "https://gfp.sd.gov/parks/detail/lake-louise-recreation-area/",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 1304,
+    "acres": 969,
     "manager": "",
     "pieces": [
      [
@@ -4920,7 +5173,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
@@ -4937,12 +5190,12 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 3080,
+   "pct": 2263,
    "same_agency": false,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -4963,7 +5216,7 @@
   },
   "US-8171": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 2 acres, a tiny number without size wording)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Lake Poinsett State Recreation Area",
    "official": {
@@ -4971,13 +5224,13 @@
     "as": "2 acres",
     "clean": false,
     "line": "s may be closed. Please contact the park directly for current status. Vault toilets usually remain open. Park Size: 2 campgrounds with 112 campsites and 4 camping cabins Directions: 14 miles northeast of Arlington off US Hwy 81",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Park Size: 2 campgrounds with 112 campsites and 4 camping cabins",
     "url": "https://gfp.sd.gov/parks/detail/lake-poinsett-recreation-area/",
     "why": "a tiny number without size wording"
    },
    "ours": {
-    "acres": 211,
+    "acres": 152,
     "manager": "",
     "pieces": [
      [
@@ -5004,7 +5257,7 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 10450,
+   "pct": 7500,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -5030,7 +5283,7 @@
   },
   "US-8172": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 9,000 acre, no total words near it)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [
     {
      "date_hint": null,
@@ -5047,13 +5300,13 @@
     "as": "9,000 acre",
     "clean": false,
     "line": "James Buchanan. In the 1930s, the lake was completely dry and used for pasture. In the 1980s, the area was a 9,000-acre marsh. Heavy rains and snowmelt in the mid-80s filled the lake to over 20 feet deep. The lake is so distinct",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "In the 1980s, the area was a 9,000-acre marsh.",
     "url": "https://gfp.sd.gov/parks/detail/lake-thompson-recreation-area/",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 549,
+    "acres": 398,
     "manager": "",
     "pieces": [
      [
@@ -5086,7 +5339,7 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 94,
+   "pct": 96,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -5121,7 +5374,7 @@
   },
   "US-8173": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 4 acres, a tiny number without size wording)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Lake Vermillion State Recreation Area",
    "official": {
@@ -5129,13 +5382,13 @@
     "as": "4 acres",
     "clean": false,
     "line": "s may be closed. Please contact the park directly for current status. Vault toilets usually remain open. Park Size: 4 campgrounds with 130 campsites and 9 camping cabins Directions: 5 miles south of I-90, Exit 374 Nearest Town:",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Park Size: 4 campgrounds with 130 campsites and 9 camping cabins",
     "url": "https://gfp.sd.gov/parks/detail/lake-vermillion-recreation-area/",
     "why": "a tiny number without size wording"
    },
    "ours": {
-    "acres": 311,
+    "acres": 281,
     "manager": "",
     "pieces": [
      [
@@ -5145,7 +5398,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 3
    },
@@ -5162,12 +5415,12 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 7675,
+   "pct": 6925,
    "same_agency": false,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -5197,7 +5450,7 @@
   },
   "US-8174": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 418 acres, no total words near it)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Lewis and Clark State Recreation Area",
    "official": {
@@ -5205,7 +5458,7 @@
     "as": "418 acres",
     "clean": false,
     "line": "s may be closed. Please contact the park directly for current status. Vault toilets usually remain open. Park Size: 418 campsites, 20 camping cabins and 5 tent-only sites. Same-day reservations: 108 sites. Call 1.800.710.2267 star",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Park Size: 418 campsites, 20 camping cabins and 5 tent-only sites.",
     "url": "https://gfp.sd.gov/parks/detail/lewis-and-clark-recreation-area/",
     "why": "no total words near it"
@@ -5270,7 +5523,7 @@
   },
   "US-8175": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 5 acres, no total words near it)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Little Moreau State Recreation Area",
    "official": {
@@ -5278,13 +5531,13 @@
     "as": "5 acres",
     "clean": false,
     "line": "1 and April 30, please contact the park directly for current status. Vault toilets usually remain open. Park Size: 5 campsites available on a first-come, first-served basis Directions: 6 miles south of Timber Lake off SD Hwy 20",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Park Size: 5 campsites available on a first-come, first-served basis",
     "url": "https://gfp.sd.gov/parks/detail/little-moreau-recreation-area/",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 2973,
+    "acres": 2763,
     "manager": "",
     "pieces": [
      [
@@ -5317,7 +5570,7 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 59360,
+   "pct": 55160,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -5343,7 +5596,7 @@
   },
   "US-8176": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 10 acres, no total words near it)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Llewellyn Johns State Recreation Area",
    "official": {
@@ -5351,13 +5604,13 @@
     "as": "10 acres",
     "clean": false,
     "line": "s may be closed. Please contact the park directly for current status. Vault toilets usually remain open. Park Size: 10 campsites Directions: 12 miles south of Lemmon off SD Hwy 73 Nearest Town: Lemmon Show More Make Reservations",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Park Size: 10 campsites",
     "url": "https://gfp.sd.gov/parks/detail/llewellyn-johns-recreation-area/",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 153,
+    "acres": 86,
     "manager": "",
     "pieces": [
      [
@@ -5367,7 +5620,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
@@ -5384,12 +5637,12 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 1430,
+   "pct": 760,
    "same_agency": false,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -5410,7 +5663,7 @@
   },
   "US-8177": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 38 acres, no total words near it)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Mina Lake State Recreation Area",
    "official": {
@@ -5418,15 +5671,21 @@
     "as": "38 acres",
     "clean": false,
     "line": "s may be closed. Please contact the park directly for current status. Vault toilets usually remain open. Park Size: 38 campsites, 1 camping cabin and 1 modern cabin Directions: 12 miles west of Aberdeen off US Hwy 12 Nearest Town",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Park Size: 38 campsites, 1 camping cabin and 1 modern cabin",
     "url": "https://gfp.sd.gov/parks/detail/mina-lake-recreation-area/",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 376,
+    "acres": 431,
     "manager": "",
     "pieces": [
+     [
+      255327,
+      "Mina",
+      302,
+      "name"
+     ],
      [
       254917,
       "Mina",
@@ -5451,7 +5710,7 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 889,
+   "pct": 1034,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -5477,12 +5736,12 @@
   },
   "US-8178": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "North Point State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 1062,
+    "acres": 1268,
     "manager": "",
     "pieces": [
      [
@@ -5529,7 +5788,7 @@
   },
   "US-8179": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 25 acres, no total words near it)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "North Wheeler State Recreation Area",
    "official": {
@@ -5537,13 +5796,13 @@
     "as": "25 acres",
     "clean": false,
     "line": "s may be closed. Please contact the park directly for current status. Vault toilets usually remain open. Park Size: 25 campsites Directions: 16 miles south of Platte off SD Highway 1804 Nearest Town: Geddes Show More Maps Campgro",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Park Size: 25 campsites",
     "url": "https://gfp.sd.gov/parks/detail/north-wheeler-recreation-area/",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 165,
+    "acres": 129,
     "manager": "",
     "pieces": [
      [
@@ -5553,7 +5812,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
@@ -5565,12 +5824,12 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 560,
+   "pct": 416,
    "same_agency": false,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -5591,7 +5850,7 @@
   },
   "US-8180": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 3 acres, a tiny number without size wording)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Oahe Downstream State Recreation Area",
    "official": {
@@ -5599,13 +5858,13 @@
     "as": "3 acres",
     "clean": false,
     "line": "area and campground 3 remain open year-round. Between Oct. 1 and April 30, water systems may be closed. Park Size: 3 campgrounds with 205 campsites, 8 camping cabins, 4 modern cabins, and group lodge Directions: 5 miles north o",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Park Size: 3 campgrounds with 205 campsites, 8 camping cabins, 4 modern cabins, and group lodge",
     "url": "https://gfp.sd.gov/parks/detail/oahe-downstream-recreation-area/",
     "why": "a tiny number without size wording"
    },
    "ours": {
-    "acres": 936,
+    "acres": 612,
     "manager": "",
     "pieces": [
      [
@@ -5615,7 +5874,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
@@ -5633,12 +5892,12 @@
      "why": "rules page (documents bot)"
     }
    ],
-   "pct": 31100,
+   "pct": 20300,
    "same_agency": false,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -5659,7 +5918,7 @@
   },
   "US-8181": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 18 acres, no total words near it)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Okobojo Point State Recreation Area",
    "official": {
@@ -5667,13 +5926,13 @@
     "as": "18 acres",
     "clean": false,
     "line": "s may be closed. Please contact the park directly for current status. Vault toilets usually remain open. Park Size: 18 campsites, first-come, first-served basis. Directions: 17 miles northwest of Pierre off SD 1804 Nearest Town:",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Park Size: 18 campsites, first-come, first-served basis.",
     "url": "https://gfp.sd.gov/parks/detail/okobojo-point-recreation-area/",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 124,
+    "acres": 95,
     "manager": "",
     "pieces": [
      [
@@ -5683,7 +5942,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
@@ -5700,12 +5959,12 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 589,
+   "pct": 428,
    "same_agency": false,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -5725,7 +5984,7 @@
    "verdict": "unsure"
   },
   "US-8182": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Pease Creek State Recreation Area",
    "official": {
@@ -5733,13 +5992,13 @@
     "as": "600 acres",
     "clean": false,
     "line": "th Dakota Game, Fish, and Parks × Search State Parks Photo &copy; GFP Pease Creek Recreation Area With almost 600 acres to explore and easy access to the Missouri River's Lake Francis Case for great fishing, Pease Creek is a popu",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "With almost 600 acres to explore and easy access to the Missouri River's Lake Francis Case for great fishing, Pease Creek is a popular day use and camping park.",
     "url": "https://gfp.sd.gov/parks/detail/pease-creek-recreation-area/",
     "why": "total-looking"
    },
    "ours": {
-    "acres": 601,
+    "acres": 554,
     "manager": "",
     "pieces": [
      [
@@ -5749,7 +6008,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
@@ -5761,12 +6020,12 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 0,
+   "pct": 8,
    "same_agency": false,
-   "score": 8,
+   "score": 7,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 2,
     "source": 2
    },
@@ -5796,7 +6055,7 @@
   },
   "US-8183": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 76 acres, no total words near it)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Pelican Lake State Recreation Area",
    "official": {
@@ -5804,15 +6063,21 @@
     "as": "76 acres",
     "clean": false,
     "line": "s may be closed. Please contact the park directly for current status. Vault toilets usually remain open. Park Size: 76 campsites, 2 camping cabins, and 7 horse camp sites Directions: 9 miles SW of Watertown off US Hwy 212 Nearest",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Park Size: 76 campsites, 2 camping cabins, and 7 horse camp sites",
     "url": "https://gfp.sd.gov/parks/detail/pelican-lake-recreation-area/",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 608,
+    "acres": 566,
     "manager": "",
     "pieces": [
+     [
+      255341,
+      "Pelican Lake",
+      444,
+      "name"
+     ],
      [
       255213,
       "Pelican Lake",
@@ -5837,7 +6102,7 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 700,
+   "pct": 645,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -5863,7 +6128,7 @@
   },
   "US-8184": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 2 acres, a tiny number without size wording)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Pickerel Lake State Recreation Area",
    "official": {
@@ -5871,15 +6136,21 @@
     "as": "2 acres",
     "clean": false,
     "line": "s may be closed. Please contact the park directly for current status. Vault toilets usually remain open. Park Size: 2 campgrounds with 65 campsites, 7 camping cabins, and 1 modern cabin Directions: Located 10 miles north of Waub",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Park Size: 2 campgrounds with 65 campsites, 7 camping cabins, and 1 modern cabin",
     "url": "https://gfp.sd.gov/parks/detail/pickerel-lake-recreation-area/",
     "why": "a tiny number without size wording"
    },
    "ours": {
-    "acres": 496,
+    "acres": 406,
     "manager": "",
     "pieces": [
+     [
+      255343,
+      "Pickerel Lake",
+      391,
+      "name"
+     ],
      [
       255214,
       "Pickerel Lake (okroi)",
@@ -5887,7 +6158,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
@@ -5904,12 +6175,12 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 24700,
+   "pct": 20200,
    "same_agency": false,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -5938,7 +6209,8 @@
    "verdict": "unsure"
   },
   "US-8185": {
-   "checked": "2026-11-22",
+   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 67 acres, no total words near it)",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Pierson Ranch State Recreation Area",
    "official": {
@@ -5946,13 +6218,13 @@
     "as": "67 acres",
     "clean": false,
     "line": "s may be closed. Please contact the park directly for current status. Vault toilets usually remain open. Park Size: 67 campsites, 2 camping cabins and 1 kitchenette picnic shelter available to rent for $50 Directions: 4 miles W o",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Park Size: 67 campsites, 2 camping cabins and 1 kitchenette picnic shelter available to rent for $50",
     "url": "https://gfp.sd.gov/parks/detail/pierson-ranch-recreation-area/",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 68,
+    "acres": 51,
     "manager": "",
     "pieces": [
      [
@@ -5979,13 +6251,13 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 1,
+   "pct": 24,
    "same_agency": false,
-   "score": 8,
+   "score": 7,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 2,
+    "size": 1,
     "source": 2
    },
    "sizes": [
@@ -6001,11 +6273,11 @@
    ],
    "t": "State Recreation Area",
    "ver": 15,
-   "verdict": "agree"
+   "verdict": "unsure"
   },
   "US-8186": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 36 acres, no total words near it)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Platte Creek State Recreation Area",
    "official": {
@@ -6013,13 +6285,13 @@
     "as": "36 acres",
     "clean": false,
     "line": "s may be closed. Please contact the park directly for current status. Vault toilets usually remain open. Park Size: 36 campsites Directions: 8 miles west and 10 miles south of Platte of SD Hwy 44, or 6 miles south and 8 miles wes",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Park Size: 36 campsites",
     "url": "https://gfp.sd.gov/parks/detail/platte-creek-recreation-area/",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 274,
+    "acres": 234,
     "manager": "",
     "pieces": [
      [
@@ -6046,7 +6318,7 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 661,
+   "pct": 550,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -6071,12 +6343,12 @@
    "verdict": "unsure"
   },
   "US-8187": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Randall Creek State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 168,
+    "acres": 138,
     "manager": "",
     "pieces": [
      [
@@ -6112,12 +6384,12 @@
    "verdict": "no size on page"
   },
   "US-8188": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Revheim Bay State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 136,
+    "acres": 109,
     "manager": "",
     "pieces": [
      [
@@ -6154,7 +6426,7 @@
   },
   "US-8189": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 26 acres, no total words near it)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Richmond Lake State Recreation Area",
    "official": {
@@ -6162,15 +6434,21 @@
     "as": "26 acres",
     "clean": false,
     "line": "s may be closed. Please contact the park directly for current status. Vault toilets usually remain open. Park Size: 26 campsites and 1 camping cabin Directions: 11 miles northwest of Aberdeen off US Highway 281 Nearest Town: Aber",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Park Size: 26 campsites and 1 camping cabin",
     "url": "https://gfp.sd.gov/parks/detail/richmond-lake-recreation-area/",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 462,
+    "acres": 345,
     "manager": "",
     "pieces": [
+     [
+      255348,
+      "Richmond Lake",
+      314,
+      "name"
+     ],
      [
       255222,
       "Richmond Lake Game Production Area",
@@ -6195,7 +6473,7 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 1677,
+   "pct": 1227,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -6230,7 +6508,7 @@
   },
   "US-8190": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 62 acres, no total words near it)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Rocky Point State Recreation Area",
    "official": {
@@ -6238,13 +6516,13 @@
     "as": "62 acres",
     "clean": false,
     "line": "s may be closed. Please contact the park directly for current status. Vault toilets usually remain open. Park Size: 62 campsites Directions: 8 miles east of Belle Fourche off SD Hwy 212 Nearest Town: Belle Fourche Show More Make",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Park Size: 62 campsites",
     "url": "https://gfp.sd.gov/parks/detail/rocky-point-recreation-area/",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 394,
+    "acres": 269,
     "manager": "",
     "pieces": [
      [
@@ -6271,7 +6549,7 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 535,
+   "pct": 334,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -6306,7 +6584,7 @@
   },
   "US-8191": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 17 acres, no total words near it)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Sandy Shore State Recreation Area",
    "official": {
@@ -6314,17 +6592,24 @@
     "as": "17 acres",
     "clean": false,
     "line": "s may be closed. Please contact the park directly for current status. Vault toilets usually remain open. Park Size: 17 campsites and 2 camping cabins Directions: 5 miles west of Watertown off US Highway 212 Nearest Town: Watertow",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Park Size: 17 campsites and 2 camping cabins",
     "url": "https://gfp.sd.gov/parks/detail/sandy-shore-recreation-area/",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 36,
+    "acres": 29,
     "manager": "",
-    "pieces": [],
-    "pin": "inside",
-    "src": "",
+    "pieces": [
+     [
+      255355,
+      "Sandy Shore",
+      22,
+      "name"
+     ]
+    ],
+    "pin": "just outside",
+    "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
    "owner_now": null,
@@ -6340,12 +6625,12 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 112,
+   "pct": 71,
    "same_agency": false,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -6366,7 +6651,7 @@
   },
   "US-8192": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 85 acres, no total words near it)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Shadehill State Recreation Area",
    "official": {
@@ -6374,26 +6659,31 @@
     "as": "85 acres",
     "clean": false,
     "line": "her water systems may be closed. Contact the park for current status. Vault toilets usually remain open. Park Size: 85 campsites with 7 camping cabins and a group lodge Directions: 12 miles south of Lemmon off SD Hwy 73 Nearest T",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Park Size: 85 campsites with 7 camping cabins and a group lodge",
     "url": "https://gfp.sd.gov/parks/detail/shadehill-recreation-area/",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 6227,
+    "acres": 11623,
+    "dissolved": {
+     "after": 6206,
+     "before": 12433,
+     "copies": 0,
+     "key_union": 11623,
+     "parts": 2,
+     "records": 3,
+     "summed": 6206,
+     "tracts": 1
+    },
     "manager": "",
+    "note": "3 joined records = 1 tracts: 0 copies of a tract (same acres, another layer) and 2 fee tracts under a designation record folded; summed 12433 -> 6206 acres",
     "pieces": [
      [
-      2343,
-      "Shadehill Reservoir",
-      5335,
-      "name"
-     ],
-     [
-      255356,
-      "Shadehill Reservoir Recreation Area",
-      892,
-      "name"
+      255232,
+      "Shadehill Reservoir Game Production Area",
+      6206,
+      "words"
      ]
     ],
     "pin": "inside",
@@ -6413,7 +6703,7 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 7226,
+   "pct": 13574,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -6439,7 +6729,7 @@
   },
   "US-8193": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 22 acres, no total words near it)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [
     {
      "date_hint": "2012",
@@ -6456,13 +6746,13 @@
     "as": "22 acres",
     "clean": false,
     "line": "s may be closed. Please contact the park directly for current status. Vault toilets usually remain open. Park Size: 22 electrical campsites, 40 non-electrical campsites, 11 horse campsites, and 2 group sites (Group sites are firs",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Park Size: 22 electrical campsites, 40 non-electrical campsites, 11 horse campsites, and 2 group sites",
     "url": "https://gfp.sd.gov/parks/detail/sheps-canyon-recreation-area/",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 724,
+    "acres": 735,
     "manager": "",
     "pieces": [],
     "pin": "inside",
@@ -6482,14 +6772,14 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 3191,
+   "pct": 3241,
    "same_agency": false,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
     "pin": 2,
     "size": 1,
-    "source": 2
+    "source": 1
    },
    "sizes": [
     {
@@ -6508,7 +6798,7 @@
   },
   "US-8194": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 2 acres, a tiny number without size wording)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Snake Creek State Recreation Area",
    "official": {
@@ -6516,13 +6806,13 @@
     "as": "2 acres",
     "clean": false,
     "line": "s may be closed. Please contact the park directly for current status. Vault toilets usually remain open. Park Size: 2 campgrounds with 115 campsites and 10 camping cabins Directions: 14 miles west of Platte off SD Hwy 44 Nearest",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Park Size: 2 campgrounds with 115 campsites and 10 camping cabins",
     "url": "https://gfp.sd.gov/parks/detail/snake-creek-recreation-area/",
     "why": "a tiny number without size wording"
    },
    "ours": {
-    "acres": 705,
+    "acres": 911,
     "manager": "",
     "pieces": [
      [
@@ -6544,7 +6834,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 35150,
+   "pct": 45450,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -6569,7 +6859,7 @@
    "verdict": "unsure"
   },
   "US-8195": {
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Spearfish Canyon Nature Recreation Area",
    "official": null,
@@ -6595,12 +6885,12 @@
     }
    ],
    "pct": null,
-   "score": 6,
+   "score": 5,
    "score_parts": {
     "name": 2,
     "pin": 2,
     "size": 1,
-    "source": 1
+    "source": 0
    },
    "sizes": [],
    "t": "Nature Recreation Area",
@@ -6609,7 +6899,7 @@
   },
   "US-8196": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 10 acres, no total words near it)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Spring Creek State Recreation Area",
    "official": {
@@ -6617,13 +6907,13 @@
     "as": "10 acres",
     "clean": false,
     "line": "s may be closed. Please contact the park directly for current status. Vault toilets usually remain open. Park Size: 10 modern cabins and 12 suites. Convenience store and marina with boat slips. On-site restaurant managed by conce",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Park Size: 10 modern cabins and 12 suites.",
     "url": "https://gfp.sd.gov/parks/detail/spring-creek-recreation-area/",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 149,
+    "acres": 185,
     "manager": "",
     "pieces": [
      [
@@ -6650,7 +6940,7 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 1390,
+   "pct": 1750,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -6676,7 +6966,7 @@
   },
   "US-8197": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 20 acres, no total words near it)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Springfield State Recreation Area",
    "official": {
@@ -6684,13 +6974,13 @@
     "as": "20 acres",
     "clean": false,
     "line": "s may be closed. Please contact the park directly for current status. Vault toilets usually remain open. Park Size: 20 campsites and 2 camping cabins Directions: 1 mile east of Springfield off SD Hwy 37 Nearest Town: Springfield",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Park Size: 20 campsites and 2 camping cabins",
     "url": "https://gfp.sd.gov/parks/detail/springfield-recreation-area/",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 117,
+    "acres": 113,
     "manager": "",
     "pieces": [
      [
@@ -6706,7 +6996,7 @@
       "name"
      ]
     ],
-    "pin": "inside",
+    "pin": "just outside",
     "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
@@ -6723,12 +7013,12 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 485,
+   "pct": 465,
    "same_agency": false,
-   "score": 7,
+   "score": 6,
    "score_parts": {
     "name": 2,
-    "pin": 2,
+    "pin": 1,
     "size": 1,
     "source": 2
    },
@@ -6749,7 +7039,7 @@
   },
   "US-8198": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 2 acres, a tiny number without size wording)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Swan Creek State Recreation Area",
    "official": {
@@ -6757,13 +7047,13 @@
     "as": "2 acres",
     "clean": false,
     "line": "s may be closed. Please contact the park directly for current status. Vault toilets usually remain open. Park Size: 2 campgrounds with 26 campsites Directions: 9 miles west of Akaska off US Hwy 83 Nearest Town: Akaska Show More",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Park Size: 2 campgrounds with 26 campsites",
     "url": "https://gfp.sd.gov/parks/detail/swan-creek-recreation-area/",
     "why": "a tiny number without size wording"
    },
    "ours": {
-    "acres": 115,
+    "acres": 151,
     "manager": "",
     "pieces": [
      [
@@ -6790,7 +7080,7 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 5650,
+   "pct": 7450,
    "same_agency": false,
    "score": 7,
    "score_parts": {
@@ -6816,7 +7106,7 @@
   },
   "US-8199": {
    "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 42 acres, no total words near it)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "Walker's Point State Recreation Area",
    "official": {
@@ -6824,17 +7114,24 @@
     "as": "42 acres",
     "clean": false,
     "line": "s may be closed. Please contact the park directly for current status. Vault toilets usually remain open. Park Size: 42 campsites and 2 camping cabins Directions: 9 miles southeast of Madison off SD Hwy 19 Nearest Town: Madison Sh",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Park Size: 42 campsites and 2 camping cabins",
     "url": "https://gfp.sd.gov/parks/detail/walker's-point-recreation-area/",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 50,
+    "acres": 61,
     "manager": "",
-    "pieces": [],
+    "pieces": [
+     [
+      255372,
+      "Walkers Point Recreation Area",
+      9,
+      "name"
+     ]
+    ],
     "pin": "inside",
-    "src": "",
+    "src": "USGS PAD-US",
     "unknown_pieces": 2
    },
    "owner_now": null,
@@ -6845,7 +7142,7 @@
      "why": "the park's page (data/parkinfo)"
     }
    ],
-   "pct": 19,
+   "pct": 45,
    "same_agency": false,
    "score": 6,
    "score_parts": {
@@ -6879,8 +7176,7 @@
    "verdict": "unsure"
   },
   "US-8200": {
-   "cause": "no total-looking sentence: numbers found were parts or other units (nearest number found: 120 acres, no total words near it)",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "West Bend State Recreation Area",
    "official": {
@@ -6888,13 +7184,13 @@
     "as": "120 acres",
     "clean": false,
     "line": "s may be closed. Please contact the park directly for current status. Vault toilets usually remain open. Park Size: 120 campsites and 4 camping cabins Directions: 35 miles southeast of Pierre off SD Highway 34 Nearest Town: Harrol",
-    "read": "2026-11-22",
+    "read": "2026-11-01",
     "sent": "Park Size: 120 campsites and 4 camping cabins",
     "url": "https://gfp.sd.gov/parks/detail/west-bend-recreation-area/",
     "why": "no total words near it"
    },
    "ours": {
-    "acres": 211,
+    "acres": 126,
     "manager": "",
     "pieces": [
      [
@@ -6921,13 +7217,13 @@
      "why": "official map (documents bot)"
     }
    ],
-   "pct": 76,
+   "pct": 5,
    "same_agency": false,
-   "score": 7,
+   "score": 8,
    "score_parts": {
     "name": 2,
     "pin": 2,
-    "size": 1,
+    "size": 2,
     "source": 2
    },
    "sizes": [
@@ -6943,16 +7239,16 @@
    ],
    "t": "State Recreation Area",
    "ver": 15,
-   "verdict": "unsure"
+   "verdict": "agree"
   },
   "US-8201": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "West Pollock State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 240,
+    "acres": 127,
     "manager": "",
     "pieces": [
      [
@@ -7004,12 +7300,12 @@
   },
   "US-8202": {
    "cause": "no total-looking sentence: numbers found were parts or other units",
-   "checked": "2026-11-22",
+   "checked": "2026-11-01",
    "handover": [],
    "n": "West Whitlock State Recreation Area",
    "official": null,
    "ours": {
-    "acres": 267,
+    "acres": 325,
     "manager": "",
     "pieces": [
      [
@@ -7060,5 +7356,5 @@
    "verdict": "unsure"
   }
  },
- "read": "2026-11-22"
+ "read": "2026-11-01"
 }
