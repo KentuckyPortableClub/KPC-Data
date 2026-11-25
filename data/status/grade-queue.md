@@ -1,4 +1,4 @@
-# Waiting for a grader (2026-11-24 21:13Z, written by the waiting room)
+# Waiting for a grader (2026-11-25 00:31Z, written by the waiting room)
 Rows the same as the live (already graded) copy keep their old YES: check only the NEW + CHANGED rows listed. Held = a check failed: fix first.
 
 - **data/ca-key/CA-ON.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build CA-44729612014): 0 new, 3 changed, 1 gone, 1176 same (carried); check: CA-4865, CA-4890, CA-5506
@@ -131,7 +131,7 @@ Rows the same as the live (already graded) copy keep their old YES: check only t
 - **data/us-key/lost-finds.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44613348117): whole file changed, no rows to list: look at the whole file
 - **data/us-key/overrides-parks-01.json** (key, PASS): a part of the override set, counted with data/us-key/overrides.json
 - **data/us-key/overrides-parks-02.json** (key, PASS): a part of the override set, counted with data/us-key/overrides.json
-- **data/us-key/overrides.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44613348117): 11 new, 322 changed, 0 gone, 4716 same (carried); check: US-6063, US-7461, US-7462, US-7581, US-9167, US-11142, US-12233, US-12277, US-12918, US-12938, US-13075, US-0425, US-0428, US-0450, US-0643, US-0661, US-0677, US-0697, US-0802, US-0888, US-0898, US-1080, US-1085, US-1092, US-1093 ...
+- **data/us-key/overrides.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44613348117): 11 new, 323 changed, 0 gone, 4715 same (carried); check: US-6063, US-7461, US-7462, US-7581, US-9167, US-11142, US-12233, US-12277, US-12918, US-12938, US-13075, US-0425, US-0428, US-0450, US-0643, US-0661, US-0677, US-0697, US-0802, US-0888, US-0898, US-1080, US-1085, US-1092, US-1093 ...
 - **data/world-key/AE.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build W-44085508762): 0 new, 1 changed, 0 gone, 108 same (carried); check: AE-0002
 - **data/world-key/AU.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build W-44085508762): 0 new, 1 changed, 0 gone, 10738 same (carried); check: AU-8945
 - **data/world-key/BZ.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build W-44085508762): 0 new, 1 changed, 0 gone, 68 same (carried); check: BZ-0024
