@@ -18,7 +18,7 @@ Nothing is downloaded and no input file is changed. Standard library only.
 """
 import argparse, collections, csv, datetime, glob, json, os, re, sys, tempfile
 
-VERSION = 'kpc_park_facts 10 (2026-11-23)'
+VERSION = 'kpc_park_facts 11 (2026-11-26)'
 REF = re.compile(r'^[A-Z0-9]{1,4}-\d{4,5}$')
 AREA = re.compile(r'^(US|CA)-[A-Z]{2}$')
 
@@ -258,6 +258,10 @@ def read_pages(folder):
                 # name; the part of the heading / title that agrees with POTA's name is used when there is one
                 'name_vs_pota': vs,
                 'name_on_page': (ag[0] or nm.get('heading') or nm.get('title') or '')[:120],
+                # 26 Nov 2026 (owner 5:55 PM: 'can it do a search of the whole page to find possible real names'): every name the
+                # page calls the park (title, headings, og / schema name, 'also known as', kind phrases in the text that share a
+                # real word with POTA's name), for the key's 'page names the land' test
+                'names': [str((x or {}).get('name') or '')[:110] for x in _first(nm.get('names'), 12) if (x or {}).get('name')],
                 'sizes': [{'acres': s.get('acres'), 'as': s.get('as'), 'total': s.get('total'), 'clean': s.get('clean')}
                           for s in _first(p.get('sizes'), 3)],
                 # 22 Nov (owner: "address and directions would help matching"): each page point with its role (park, visitor
