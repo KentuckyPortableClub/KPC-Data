@@ -1,0 +1,2763 @@
+{
+ "about": "Hours, fees and permits as the agency's own sentences (hours / fees / permits bot). Facts only; nothing reaches a card until Brandon's GO.",
+ "area": "US-HI",
+ "counts": {
+  "fees": 1,
+  "hours": 9,
+  "hours_lines": 11,
+  "no_page": 0,
+  "nothing": 73,
+  "parks": 102,
+  "permits": 6,
+  "season": 1,
+  "season_lines": 1
+ },
+ "parks": {
+  "US-0036": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Haleakala National Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/hale/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Park",
+   "ver": 12
+  },
+  "US-0037": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Hawai'i Volcanoes National Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/havo/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Park",
+   "ver": 12
+  },
+  "US-0043": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Kalaupapa National Historical Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/kala/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Historical Park",
+   "ver": 12
+  },
+  "US-0117": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Hakalau Forest National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/hakalau_forest/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/hakalau/about-us",
+     "why": "FWS refuge about page"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/hakalau",
+     "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0118": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [
+    {
+     "line": "The viewpoint site is open to the public from 8:30 am to 4:30 pm, Tuesday through Saturday .",
+     "read": "2026-11-02",
+     "url": "https://www.fws.gov/refuge/hanalei/"
+    }
+   ],
+   "hunting_hours": [],
+   "n": "Hanalei National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/hanalei/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/hanalei/about-us",
+     "why": "FWS refuge about page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/hanalei",
+     "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0119": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Hawaiian Islands National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/hawaiian-islands",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/hawaiian-islands/about-us",
+     "why": "FWS refuge about page"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0123": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Huleia National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/huleia/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/huleia/about-us",
+     "why": "FWS refuge about page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/huleia",
+     "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0124": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "James Campbell National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/james_campbell/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/james/about-us",
+     "why": "FWS refuge about page"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/james",
+     "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0125": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Kakahaia National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/kakahaia/map",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/kakahaia/about-us",
+     "why": "FWS refuge about page"
+    },
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/kakahaia",
+     "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0126": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Kealia Pond National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/kealia_pond/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/kealia/about-us",
+     "why": "FWS refuge about page"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/kealia",
+     "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0127": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Kilauea Point National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/kilauea_point/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/kilauea/about-us",
+     "why": "FWS refuge about page"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/kilauea",
+     "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0128": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "O'ahu Forest National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/oahu_forest/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0129": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Pearl Harbor National Wildlife Refuge",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.fws.gov/refuge/pearl_harbor/",
+     "why": "the park's page (data/parkinfo)"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/pearl/about-us",
+     "why": "FWS refuge about page"
+    },
+    {
+     "status": "HTTP 404",
+     "url": "https://www.fws.gov/refuge/pearl",
+     "why": "FWS refuge home page (v12: the about / visit pages 404 since Oct 29)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Wildlife Refuge",
+   "ver": 12
+  },
+  "US-0739": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Kaloko-Honokohau National Historical Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/kaho/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Historical Park",
+   "ver": 12
+  },
+  "US-0753": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Pu'uhonua o Honaunau National Historical Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/puho/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Historical Park",
+   "ver": 12
+  },
+  "US-0855": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours (season only)",
+   "hunting_hours": [],
+   "n": "Pu'ukohola Heiau National Historic Site",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/puhe/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [
+    {
+     "line": "Pu'ukohola Heiau National Historic Site is open all year round and shares the history of the beginning stages of the Hawaiian Kingdom.",
+     "read": "2026-11-02",
+     "url": "https://www.nps.gov/puhe/index.htm"
+    }
+   ],
+   "status": "nothing found",
+   "t": "National Historic Site",
+   "ver": 12
+  },
+  "US-0971": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "World War II Valor in the Pacific National Monument",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok, no readable text",
+     "url": "https://www.nps.gov/perl/learn/historyculture/upload/valr-foundation-document.pdf",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "National Monument",
+   "ver": 12
+  },
+  "US-10904": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "ʻEwa Forest Reserve",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "HTTP 404",
+     "url": "https://dlnr.hawaii.gov/forestry/frs/reserves/oahu/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Forest Reserve",
+   "ver": 12
+  },
+  "US-10905": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Honolulu Watershed Forest Reserve",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "HTTP 404",
+     "url": "https://dlnr.hawaii.gov/forestry/frs/reserves/oahu/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Forest Reserve",
+   "ver": 12
+  },
+  "US-10906": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Round Top Forest Reserve",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "HTTP 404",
+     "url": "https://dlnr.hawaii.gov/forestry/frs/reserves/oahu/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Forest Reserve",
+   "ver": 12
+  },
+  "US-10907": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Mokuleia Forest Reserve",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "HTTP 404",
+     "url": "https://dlnr.hawaii.gov/forestry/frs/reserves/oahu/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Forest Reserve",
+   "ver": 12
+  },
+  "US-10908": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Pupukea Forest Reserve",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/forestry/frs/reserves/oahu/pupukea-forest-reserve/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "Forest Reserve",
+   "ver": 12
+  },
+  "US-10909": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Kuliʻouʻou Forest Reserve",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "HTTP 404",
+     "url": "https://dlnr.hawaii.gov/forestry/frs/reserves/oahu/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Forest Reserve",
+   "ver": 12
+  },
+  "US-10910": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Waimanalo Forest Reserve",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "HTTP 404",
+     "url": "https://dlnr.hawaii.gov/forestry/frs/reserves/oahu/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Forest Reserve",
+   "ver": 12
+  },
+  "US-10911": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Ke’ehi Lagoon Memorial State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/keehi-lagoon-memorial-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-10912": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "'Ualaka'a State Trail",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/hiking/oahu/ualakaa-trail/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Trail",
+   "ver": 12
+  },
+  "US-10913": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Diamond Head Summit State Trail",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/hiking/oahu/diamond-head-summit-trail/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [
+    {
+     "line": "Hiking permit not required for groups less than 25.",
+     "read": "2026-11-02",
+     "url": "https://dlnr.hawaii.gov/dsp/hiking/oahu/diamond-head-summit-trail/"
+    }
+   ],
+   "season": [],
+   "status": "ok",
+   "t": "State Trail",
+   "ver": 12
+  },
+  "US-10914": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Ka‘ena Point State Trail",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/hiking/oahu/kaena-point-trail/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Trail",
+   "ver": 12
+  },
+  "US-10915": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Nakoa State Trail",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/hiking/oahu/nakoa-trail/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Trail",
+   "ver": 12
+  },
+  "US-10916": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Kapaʻeleʻele State Trail",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/hiking/oahu/kapaeleele-trail/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Trail",
+   "ver": 12
+  },
+  "US-10917": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "ʻAiea Loop State Trail",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/hiking/oahu/aiea-loop-trail/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Trail",
+   "ver": 12
+  },
+  "US-10918": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Waʻahila Ridge State Trail",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/hiking/oahu/waahila-ridge-trail/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Trail",
+   "ver": 12
+  },
+  "US-10919": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Na Ala Hele State Trail",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://hawaiitrails.ehawaii.gov/trails/#/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Trail",
+   "ver": 12
+  },
+  "US-10920": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Kawainui Marsh Wildlife Reserve",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/wildlife/sanctuaries/kawainui/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "Wildlife Reserve",
+   "ver": 12
+  },
+  "US-10921": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Hawaii Capital National Historic District",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://npgallery.nps.gov/AssetDetail/NRIS/78001020",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Historic District",
+   "ver": 12
+  },
+  "US-10922": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Marconi Wireless Telegraphy Station Kahuku National Historic Site",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://npgallery.nps.gov/AssetDetail/NRIS/13000352",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Historic Site",
+   "ver": 12
+  },
+  "US-10923": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Artillery District of Honolulu Historic Site",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://npgallery.nps.gov/AssetDetail/NRIS/64000142",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "Historic Site",
+   "ver": 12
+  },
+  "US-10924": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Kuaokala Game Reserve",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/recreation/hunting/gma/kuaokala/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "Game Reserve",
+   "ver": 12
+  },
+  "US-10925": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "HI State Game Reserve",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "HTTP 404",
+     "url": "https://dlnr.hawaii.gov/forestry/frs/reserves/oahu/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Game Reserve",
+   "ver": 12
+  },
+  "US-12062": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Old Kona Airport State Recreation Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dar/marine-managed-areas/hawaii-marine-life-conservation-districts/hawaii-old-kona-airport/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Recreation Area",
+   "ver": 12
+  },
+  "US-12095": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Halele'a Forest Reserve",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/forestry/frs/reserves/kauai/halelea",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "Forest Reserve",
+   "ver": 12
+  },
+  "US-2208": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Akaka Falls State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/akaka-falls-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2209": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Ahupua'a O Kahana State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/ahupuaa-o-kahana-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [
+    {
+     "line": "No permits are required and detailed trail maps are available at the Orientation Center.",
+     "read": "2026-11-02",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/ahupuaa-o-kahana-state-park/"
+    }
+   ],
+   "season": [],
+   "status": "ok",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2210": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [
+    {
+     "line": "Non-Hawaii residents are required to purchase Park Entry Reservations ($5 per person) or a Parking Reservation ($10 per vehicle) prior to arrival at Hāʻena SP.",
+     "read": "2026-11-02",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/kauai/haena-state-park/"
+    }
+   ],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Ha'ena State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/kauai/haena-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2211": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Heeia State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/heeia-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2212": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Ka'ena Point State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/kaena-point-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [
+    {
+     "line": "The Vehicle Access Special Use Permit is required to drive a vehicle into Ka‘ena Point State Park Reserve, Mokuleʻia Section, beyond the gate and the paved road that ends at the gravel parking area.",
+     "read": "2026-11-02",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/kaena-point-state-park/"
+    }
+   ],
+   "season": [],
+   "status": "ok",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2213": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Kaumahina Wayside State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/maui/kaumahina-state-wayside/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2214": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [
+    {
+     "line": "Gates Close at 7:00pm",
+     "read": "2026-11-02",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/kekaha-kai-kona-coast-state-park/"
+    }
+   ],
+   "hunting_hours": [],
+   "n": "Kekaha Kai State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/kekaha-kai-kona-coast-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2215": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Koke`e State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/kauai/kokee-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2216": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Makapuʻu  Point Wayside State Trail",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/hiking/oahu/makapuu-point-lighthouse-trail/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Trail",
+   "ver": 12
+  },
+  "US-2217": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [
+    {
+     "line": "Summer months May, June, July – 5:00am – 7:45pm",
+     "read": "2026-11-02",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/maui/makena-state-park/"
+    }
+   ],
+   "hunting_hours": [],
+   "n": "Makena State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/maui/makena-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2218": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Nu'uanu Pali Wayside State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/nuuanu-pali-state-wayside/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2219": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Palaau State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/molokai/palaau-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2220": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [
+    {
+     "line": "Park is open from 5:30 am-7:45 pm daily.",
+     "read": "2026-11-02",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/kauai/polihale-state-park/"
+    }
+   ],
+   "hunting_hours": [],
+   "n": "Polihale State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/kauai/polihale-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2221": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Puaa Kaa Wayside State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/maui/puaa-kaa-state-wayside/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2222": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Pu'u 'Ualakaa State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/puu-ualakaa-state-wayside/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2223": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Waimea Canyon State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/kauai/waimea-canyon-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2224": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Waianapanapa State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/maui/waianapanapa-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [
+    {
+     "line": "Permits titled “Undesignated Campground” do not allow you to camp in your vehicle, you must purchase a Campervan Permit.",
+     "read": "2026-11-02",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/maui/waianapanapa-state-park/"
+    }
+   ],
+   "season": [],
+   "status": "ok",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2225": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [
+    {
+     "line": "Gates lock at 6:00pm",
+     "read": "2026-11-02",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/wailuku-river-state-park/"
+    }
+   ],
+   "hunting_hours": [],
+   "n": "Wailuku River State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/wailuku-river-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2226": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Wailua River State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/kauai/wailua-river-state-park/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-2227": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Wailua Valley Wayside State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/maui/wailua-valley-state-wayside/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-3391": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Na Pali Coast State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/kauai/napali-coast-state-wilderness-park/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [
+    {
+     "line": "Hāʻena SP now requires advanced reservations for entry except for those with valid camping permits for the Nāpali Coast SWP and for Hawaii residents.",
+     "read": "2026-11-02",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/kauai/napali-coast-state-wilderness-park/"
+    }
+   ],
+   "season": [],
+   "status": "ok",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-4565": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Ala Kahakai National Historic Trail",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/alka/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Historic Trail",
+   "ver": 12
+  },
+  "US-6401": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Mauna Kea State Recreation Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "HTTP 404",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/mauna-kea-state-recreation-area/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Recreation Area",
+   "ver": 12
+  },
+  "US-6402": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Lava Tree State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/lava-tree-state-monument/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-6403": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [
+    {
+     "line": "Gates Close at 8:00pm",
+     "read": "2026-11-02",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/hapuna-beach-state-recreation-area/"
+    }
+   ],
+   "hunting_hours": [],
+   "n": "Hapuna Beach State Recreation Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/hapuna-beach-state-recreation-area/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "State Recreation Area",
+   "ver": 12
+  },
+  "US-6404": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Kalopa State Recreation Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/kalopa-state-recreation-area/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Recreation Area",
+   "ver": 12
+  },
+  "US-6405": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Kealakekua Bay State Historical Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/kealakekua-bay-state-historical-park/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [
+    {
+     "line": "All vessels are required to obtain a permit from State Parks before transiting the waters of Kealakekua Bay.",
+     "read": "2026-11-02",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/kealakekua-bay-state-historical-park/"
+    }
+   ],
+   "season": [],
+   "status": "ok",
+   "t": "State Historical Park",
+   "ver": 12
+  },
+  "US-6406": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Mackenzie State Recreation Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/mackenzie-state-recreation-area/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Recreation Area",
+   "ver": 12
+  },
+  "US-6407": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [
+    {
+     "line": "Monday through Friday from 9:00am to 4:00pm.",
+     "read": "2026-11-02",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/wailoa-river-state-recreation-area/"
+    }
+   ],
+   "hunting_hours": [],
+   "n": "Wailoa River State Recreation Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/wailoa-river-state-recreation-area/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "State Recreation Area",
+   "ver": 12
+  },
+  "US-6408": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Ahukini State Recreation Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/kauai/ahukini-state-recreational-pier/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Recreation Area",
+   "ver": 12
+  },
+  "US-6409": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Waimea State Recreation Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/kauai/waimea-state-recreational-pier/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Recreation Area",
+   "ver": 12
+  },
+  "US-6410": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Iao Valley State Preserve",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/maui/iao-valley-state-monument/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Preserve",
+   "ver": 12
+  },
+  "US-6411": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Polipoli State Recreation Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/maui/polipoli-spring-state-recreation-area/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Recreation Area",
+   "ver": 12
+  },
+  "US-6412": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Aiea Bay State Recreation Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/aiea-bay-state-recreation-area/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Recreation Area",
+   "ver": 12
+  },
+  "US-6413": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Keawa Heiau State Recreation Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/keaiwa-heiau-state-recreation-area/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Recreation Area",
+   "ver": 12
+  },
+  "US-6414": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Malaekahana State Recreation Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/malaekahana-state-recreation-area/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Recreation Area",
+   "ver": 12
+  },
+  "US-6415": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Sand Island State Recreation Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/sand-island-state-recreation-area/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Recreation Area",
+   "ver": 12
+  },
+  "US-6416": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Wa'ahila Ridge State Recreation Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/waahila-ridge-state-recreation-area/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Recreation Area",
+   "ver": 12
+  },
+  "US-6417": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Wahiawa Freshwater State Recreation Area",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/wahiawa-freshwater-state-recreation-area/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Recreation Area",
+   "ver": 12
+  },
+  "US-6419": {
+   "attraction_fees": [],
+   "attraction_hours": [
+    {
+     "line": "Self-guided tours on Saturday, 10 AM – 3:30 PM.",
+     "read": "2026-11-02",
+     "scope": "attraction",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/hulihee-palace/"
+    }
+   ],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Hulihe'e Palace State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/hulihee-palace/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-6420": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Kiholo  Reserve State Reserve",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/kiholo-state-park-reserve/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Reserve",
+   "ver": 12
+  },
+  "US-6421": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Kohala Historical Sites State Preserve",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/kohala-historical-sites-state-monument/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Preserve",
+   "ver": 12
+  },
+  "US-6422": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [
+    {
+     "line": "Gates lock at 4:00pm",
+     "read": "2026-11-02",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/lapakahi-state-historical-park/"
+    }
+   ],
+   "hunting_hours": [],
+   "n": "Lapakahi State Historical Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/lapakahi-state-historical-park/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "State Historical Park",
+   "ver": 12
+  },
+  "US-6423": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Manuka State Preserve",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/hawaii/manuka-state-wayside/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Preserve",
+   "ver": 12
+  },
+  "US-6424": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Pāʻulaʻula State Historic Site",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "HTTP 404",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/kauai/pa'ula'ula-state-historic-site",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "State Historic Site",
+   "ver": 12
+  },
+  "US-6425": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [
+    {
+     "line": "6:00 am to 6:00 pm Daily – Last entry at 4:30pm for the 4:00pm reservation.",
+     "read": "2026-11-02",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/diamond-head-state-monument/"
+    },
+    {
+     "line": "Gates Close at 6:00 pm",
+     "read": "2026-11-02",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/diamond-head-state-monument/"
+    },
+    {
+     "line": "The gates are locked at 6:00 pm daily and all visitors must be out of the park by this time.",
+     "read": "2026-11-02",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/diamond-head-state-monument/"
+    }
+   ],
+   "hunting_hours": [],
+   "n": "Diamond Head State Preserve",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/diamond-head-state-monument/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "ok",
+   "t": "State Preserve",
+   "ver": 12
+  },
+  "US-6426": {
+   "attraction_fees": [],
+   "attraction_hours": [
+    {
+     "line": "UPDATED: 7/24/24 – Kamaʻāina Sundays, a once-a-month event where Hawaii residents can tour the palace for free, 9 am to 2 pm.",
+     "read": "2026-11-02",
+     "scope": "attraction",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/iolani-palace-state-monument/"
+    },
+    {
+     "line": "tour hours are 9 am to 2:15 pm from Wednesday through Saturday.",
+     "read": "2026-11-02",
+     "scope": "attraction",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/iolani-palace-state-monument/"
+    }
+   ],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Iolani Palace State Preserve",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/iolani-palace-state-monument/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Preserve",
+   "ver": 12
+  },
+  "US-6427": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Kaiwi State Scenic Site",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/kaiwi-state-scenic-shoreline/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "Scenic Site",
+   "ver": 12
+  },
+  "US-6428": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "La'ie Point State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/laie-point-state-wayside/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-6429": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Pu'u O Mahuka Heiau State Historic Site",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/puu-o-mahuka-heiau-state-historic-site/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Historic Site",
+   "ver": 12
+  },
+  "US-6430": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Queen Emma Summer Palace State Park",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/queen-emma-summer-palace/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Park",
+   "ver": 12
+  },
+  "US-6431": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Royal Mausoleum State Preserve",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/dsp/parks/oahu/royal-mausoleum-state-monument/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "State Preserve",
+   "ver": 12
+  },
+  "US-7690": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Nounou Forest Reserve",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/forestry/frs/reserves/kauai/nounou-and-kalepa-forest-reserves/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "Forest Reserve",
+   "ver": 12
+  },
+  "US-7691": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Kalepa Forest Reserve",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/forestry/frs/reserves/kauai/nounou-and-kalepa-forest-reserves/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "Forest Reserve",
+   "ver": 12
+  },
+  "US-7692": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Kaneohe Forest Reserve",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "HTTP 404",
+     "url": "https://dlnr.hawaii.gov/forestry/frs/reserves/oahu/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Forest Reserve",
+   "ver": 12
+  },
+  "US-7693": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Hanauma Bay Nature Reserve",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "HTTP 404",
+     "url": "https://www.honolulu.gov/parks-hbay.html",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Nature Reserve",
+   "ver": 12
+  },
+  "US-7694": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hunting_hours": [],
+   "n": "Kohala Forest Reserve",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "HTTP 404",
+     "url": "https://dlnr.hawaii.gov/forestry/frs/reserves/hawaii-island/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "no page opened",
+   "t": "Forest Reserve",
+   "ver": 12
+  },
+  "US-7695": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Hilo Forest Reserve",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://dlnr.hawaii.gov/forestry/frs/reserves/hawaii-island/hilo/",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "Forest Reserve",
+   "ver": 12
+  },
+  "US-7696": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Malama-ki Forest Reserve",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://mapcarta.com/24047090",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "Forest Reserve",
+   "ver": 12
+  },
+  "US-7915": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Honouliuli National Historic Site",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/hono/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Historic Site",
+   "ver": 12
+  },
+  "US-7916": {
+   "attraction_fees": [],
+   "attraction_hours": [],
+   "campground_hours": [],
+   "checked": "2026-11-02",
+   "fees": [],
+   "hours": [],
+   "hours_note": "the agency pages we read print no hours",
+   "hunting_hours": [],
+   "n": "Pearl Harbor National Memorial",
+   "office_hours": [],
+   "other_fees": [],
+   "pages": [
+    {
+     "status": "ok",
+     "url": "https://www.nps.gov/perl/index.htm",
+     "why": "the park's page (data/parkinfo)"
+    }
+   ],
+   "permits": [],
+   "season": [],
+   "status": "nothing found",
+   "t": "National Memorial",
+   "ver": 12
+  }
+ },
+ "read": "2026-11-02"
+}
