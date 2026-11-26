@@ -1,0 +1,3212 @@
+{
+ "about": "kpc engine acres (engine): sizes computed from the official outline record (SURE matches only, approx, equal-area). No agency list page was read, so \"Agencies\" is empty. Waiting room + chat 11 before use.",
+ "Agencies": [],
+ "Acres not downloadable": [
+  {
+   "Park number (if matched)": "CA-5199",
+   "Park name (as the agency writes it)": "Heritage Heritage Center Park / Parc centre Marysville Heritage",
+   "Size": 2,
+   "Unit": "acres",
+   "Agency": "Parks",
+   "Source page": "https://services2.arcgis.com/iLWAxhpxafhOza2U/arcgis/rest/services/Parks_Public_View/FeatureServer/0/query?where=OBJECTID%3D98&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services2.arcgis.com/iLWAxhpxafhOza2U/arcgis/rest/services/Parks_Public_View/FeatureServer/0; read 2026-11-05"
+  },
+  {
+   "Park number (if matched)": "CA-4864",
+   "Park name (as the agency writes it)": "Fort Henry National Historic Site",
+   "Size": 62,
+   "Unit": "acres",
+   "Agency": "Property Boundaries",
+   "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D2269&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-05"
+  },
+  {
+   "Park number (if matched)": "CA-4866",
+   "Park name (as the agency writes it)": "Fort Mississauga National Historic Site",
+   "Size": 56,
+   "Unit": "acres",
+   "Agency": "Property Boundaries",
+   "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D2309&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-05"
+  },
+  {
+   "Park number (if matched)": "CA-4889",
+   "Park name (as the agency writes it)": "Trent-Severn Waterway National Historic Site",
+   "Size": 138746,
+   "Unit": "acres",
+   "Agency": "Property Boundaries",
+   "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D2260&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-05"
+  },
+  {
+   "Park number (if matched)": "CA-4890",
+   "Park name (as the agency writes it)": "Woodside National Historic Site",
+   "Size": 14,
+   "Unit": "acres",
+   "Agency": "Property Boundaries",
+   "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D2332&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-4900",
+   "Park name (as the agency writes it)": "Cartier-Brébeuf National Historic Site",
+   "Size": 13,
+   "Unit": "acres",
+   "Agency": "Property Boundaries",
+   "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D1838&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-05"
+  },
+  {
+   "Park number (if matched)": "CA-4903",
+   "Park name (as the agency writes it)": "Forges du Saint-Maurice National Historic Site",
+   "Size": 117,
+   "Unit": "acres",
+   "Agency": "Property Boundaries",
+   "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D1951&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-05"
+  },
+  {
+   "Park number (if matched)": "CA-4912",
+   "Park name (as the agency writes it)": "Lévis Forts National Historic Site",
+   "Size": 12,
+   "Unit": "acres",
+   "Agency": "Property Boundaries",
+   "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D1851&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-05"
+  },
+  {
+   "Park number (if matched)": "CA-4920",
+   "Park name (as the agency writes it)": "Sainte-Anne-de-Bellevue Canal National Historic Site",
+   "Size": 12,
+   "Unit": "acres",
+   "Agency": "Property Boundaries",
+   "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D4700&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-05"
+  },
+  {
+   "Park number (if matched)": "CA-4922",
+   "Park name (as the agency writes it)": "Saint-Ours Canal National Historic Site",
+   "Size": 14,
+   "Unit": "acres",
+   "Agency": "Property Boundaries",
+   "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D4701&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-05"
+  },
+  {
+   "Park number (if matched)": "US-7973",
+   "Park name (as the agency writes it)": "Baltimore--Washington Parkway",
+   "Size": 4290,
+   "Unit": "acres",
+   "Agency": "National Register of Historic Places Polygons",
+   "Source page": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?where=OBJECTID%3D394660&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "US-0054",
+   "Park name (as the agency writes it)": "Nez Perce National Historical Park",
+   "Size": 4226,
+   "Unit": "acres",
+   "Agency": "National Park Service",
+   "Source page": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2/query?where=OBJECTID%3D1187&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "US-0822",
+   "Park name (as the agency writes it)": "Fort Smith National Historic Site",
+   "Size": 60,
+   "Unit": "acres",
+   "Agency": "National Register of Historic Places Polygons",
+   "Source page": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?where=OBJECTID%3D387660&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-5973",
+   "Park name (as the agency writes it)": "Salt Creek WMA",
+   "Size": 5887,
+   "Unit": "acres",
+   "Agency": "Utah Division of Wildlife Resources (AGOL owner dwrutah, Utah DNR org) (land, state GIS table)",
+   "Source page": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0/query?where=OBJECTID%3D206&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "US-5990",
+   "Park name (as the agency writes it)": "Timpie Springs WMA",
+   "Size": 1403,
+   "Unit": "acres",
+   "Agency": "Utah Division of Wildlife Resources (AGOL owner dwrutah, Utah DNR org) (land, state GIS table)",
+   "Source page": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0/query?where=OBJECTID%3D231&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "US-5991",
+   "Park name (as the agency writes it)": "Clear Lake WMA",
+   "Size": 6024,
+   "Unit": "acres",
+   "Agency": "Utah Division of Wildlife Resources (AGOL owner dwrutah, Utah DNR org) (land, state GIS table)",
+   "Source page": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0/query?where=OBJECTID%3D41&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "US-13486",
+   "Park name (as the agency writes it)": "Bellamy River WMA - East",
+   "Size": 21,
+   "Unit": "acres",
+   "Agency": "NH GRANIT conservation and public lands",
+   "Source page": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/0/query?where=OBJECTID%3D5894&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-5663",
+   "Park name (as the agency writes it)": "Hepworth",
+   "Size": 94,
+   "Unit": "acres",
+   "Agency": "Grey County GIS (upper-tier municipal government) publishing Grey Sauble Conservation Authority property data",
+   "Source page": "https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3/query?where=OBJECTID%3D1056&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3; read 2026-11-09"
+  },
+  {
+   "Park number (if matched)": "CA-5664",
+   "Park name (as the agency writes it)": "Massie Hills",
+   "Size": 232,
+   "Unit": "acres",
+   "Agency": "Grey County GIS (upper-tier municipal government) publishing Grey Sauble Conservation Authority property data",
+   "Source page": "https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3/query?where=OBJECTID%3D1053&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3; read 2026-11-09"
+  },
+  {
+   "Park number (if matched)": "CA-5666",
+   "Park name (as the agency writes it)": "Bighead River",
+   "Size": 51,
+   "Unit": "acres",
+   "Agency": "Grey County GIS (upper-tier municipal government) publishing Grey Sauble Conservation Authority property data",
+   "Source page": "https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3/query?where=OBJECTID%3D972&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3; read 2026-11-09"
+  },
+  {
+   "Park number (if matched)": "US-10476",
+   "Park name (as the agency writes it)": "BLM",
+   "Size": 8,
+   "Unit": "acres",
+   "Agency": "State of Oregon (Oregon parklands) (park, state GIS table)",
+   "Source page": "https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0/query?where=OBJECTID%3D5132&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-3630",
+   "Park name (as the agency writes it)": "Indian Key Historic State Park",
+   "Size": 111,
+   "Unit": "acres",
+   "Agency": "Florida State Parks (DEP) (park, state GIS table)",
+   "Source page": "https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0/query?where=OBJECTID%3D20&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-1080",
+   "Park name (as the agency writes it)": "DeGray Lake Resort State Park",
+   "Size": 828,
+   "Unit": "acres",
+   "Agency": "Arkansas State Parks (park, state GIS table)",
+   "Source page": "https://gis.ardot.gov/hosting/rest/services/Hosted/StateParks/FeatureServer/0/query?where=OBJECTID%3D54&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://gis.ardot.gov/hosting/rest/services/Hosted/StateParks/FeatureServer/0; read 2026-11-24"
+  },
+  {
+   "Park number (if matched)": "US-7980",
+   "Park name (as the agency writes it)": "Fort Baldwin Historic Site",
+   "Size": 7,
+   "Unit": "acres",
+   "Agency": "National Register of Historic Places Polygons",
+   "Source page": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?where=OBJECTID%3D400828&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1; read 2026-11-13"
+  },
+  {
+   "Park number (if matched)": "CA-0831",
+   "Park name (as the agency writes it)": "Inuujaarvik Territorial Park",
+   "Size": 3,
+   "Unit": "acres",
+   "Agency": "Crown-Indigenous Relations and Northern Affairs Canada (Nunavut Map Viewer); SOURCE=GN-ENV (Government of Nunavut Environment)",
+   "Source page": "https://services.aadnc-aandc.gc.ca/arcgis/rest/services/nms20/nms/MapServer/21/query?where=OBJECTID%3D648&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services.aadnc-aandc.gc.ca/arcgis/rest/services/nms20/nms/MapServer/21; read 2026-11-05"
+  },
+  {
+   "Park number (if matched)": "CA-4794",
+   "Park name (as the agency writes it)": "Kootenai House",
+   "Size": 0,
+   "Unit": "acres",
+   "Agency": "Government of British Columbia (Historic Places)",
+   "Source page": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82/query?where=OBJECTID%3D6132845&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "CA-6253",
+   "Park name (as the agency writes it)": "Moirs Ltd. Power House",
+   "Size": 3,
+   "Unit": "acres",
+   "Agency": "Heritage Properties",
+   "Source page": "https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/Heritage_Properties/FeatureServer/0/query?where=OBJECTID%3D102&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/Heritage_Properties/FeatureServer/0; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-10237",
+   "Park name (as the agency writes it)": "Mongoquinong Nature Preserve",
+   "Size": 160,
+   "Unit": "acres",
+   "Agency": "Indiana DNR properties",
+   "Source page": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0/query?where=OBJECTID%3D4818&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "CA-6367",
+   "Park name (as the agency writes it)": "Kinghurst Management Unit",
+   "Size": 353,
+   "Unit": "acres",
+   "Agency": "Grey County GIS publishing Saugeen Valley Conservation Authority property data",
+   "Source page": "https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/4/query?where=OBJECTID%3D768&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/4; read 2026-11-05"
+  },
+  {
+   "Park number (if matched)": "CA-6564",
+   "Park name (as the agency writes it)": "Blanche Provincial Park",
+   "Size": 63,
+   "Unit": "acres",
+   "Agency": "NS_Lands_Proposed_or_Pending_Protection",
+   "Source page": "https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0/query?where=OBJECTID%3D104&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "US-0526",
+   "Park name (as the agency writes it)": "Wildcat Hollow",
+   "Size": 732,
+   "Unit": "acres",
+   "Agency": "IDNR Properties",
+   "Source page": "https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11/query?where=OBJECTID%3D47&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11; read 2026-11-05"
+  },
+  {
+   "Park number (if matched)": "US-3684",
+   "Park name (as the agency writes it)": "Coon Creek Tract",
+   "Size": 316,
+   "Unit": "acres",
+   "Agency": "Alabama Dept of Conservation and Natural Resources, State La (preserve, state GIS table)",
+   "Source page": "https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0/query?where=OBJECTID%3D55&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0; read 2026-11-18"
+  },
+  {
+   "Park number (if matched)": "US-5748",
+   "Park name (as the agency writes it)": "Fort Abercrombie",
+   "Size": 16,
+   "Unit": "acres",
+   "Agency": "National Register of Historic Places Polygons",
+   "Source page": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?where=OBJECTID%3D400953&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1; read 2026-11-15"
+  },
+  {
+   "Park number (if matched)": "US-0374",
+   "Park name (as the agency writes it)": "BIG MUDDY NATIONAL FISH AND WILDLIFE REFUGE",
+   "Size": 5326,
+   "Unit": "acres",
+   "Agency": "US Fish and Wildlife Service",
+   "Source page": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?where=OBJECTID%3D4297&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "US-11955",
+   "Park name (as the agency writes it)": "Genoa National Fish Hatchery",
+   "Size": 160,
+   "Unit": "acres",
+   "Agency": "US Fish and Wildlife Service",
+   "Source page": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWS_NWRS_HQ_PublicHuntUnits_view/FeatureServer/0/query?where=OBJECTID%3D1602&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWS_NWRS_HQ_PublicHuntUnits_view/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "US-13395",
+   "Park name (as the agency writes it)": "County Line",
+   "Size": 5,
+   "Unit": "acres",
+   "Agency": "Washington Department of Fish and Wildlife (wild, state GIS table)",
+   "Source page": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0/query?geometry=-122.255%2C45.618&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "Notes": "computed from the official outline polygon (approx); layer https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-13397",
+   "Park name (as the agency writes it)": "Modrow Bridge",
+   "Size": 2,
+   "Unit": "acres",
+   "Agency": "Washington Department of Fish and Wildlife (wild, state GIS table)",
+   "Source page": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0/query?geometry=-122.837%2C46.0474&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "Notes": "computed from the official outline polygon (approx); layer https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-13398",
+   "Park name (as the agency writes it)": "Beginners' Hole",
+   "Size": 2,
+   "Unit": "acres",
+   "Agency": "Washington Department of Fish and Wildlife (wild, state GIS table)",
+   "Source page": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0/query?geometry=-122.807%2C46.0469&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "Notes": "computed from the official outline polygon (approx); layer https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-13399",
+   "Park name (as the agency writes it)": "Hand",
+   "Size": 6,
+   "Unit": "acres",
+   "Agency": "Washington Department of Fish and Wildlife (wild, state GIS table)",
+   "Source page": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0/query?geometry=-122.798%2C46.0442&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "Notes": "computed from the official outline polygon (approx); layer https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-11699",
+   "Park name (as the agency writes it)": "Savage Fen",
+   "Size": 290,
+   "Unit": "acres",
+   "Agency": "DNR Management Units",
+   "Source page": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D4419&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-11700",
+   "Park name (as the agency writes it)": "Wolsfeld Woods",
+   "Size": 222,
+   "Unit": "acres",
+   "Agency": "DNR Management Units",
+   "Source page": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D4431&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-11701",
+   "Park name (as the agency writes it)": "Wood-Rill",
+   "Size": 141,
+   "Unit": "acres",
+   "Agency": "DNR Management Units",
+   "Source page": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D4463&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-13655",
+   "Park name (as the agency writes it)": "Janet Johnson Memorial WMA",
+   "Size": 787,
+   "Unit": "acres",
+   "Agency": "DNR Management Units",
+   "Source page": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D6680&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0; read 2026-11-24"
+  },
+  {
+   "Park number (if matched)": "US-13656",
+   "Park name (as the agency writes it)": "Rush Lake WMA",
+   "Size": 676,
+   "Unit": "acres",
+   "Agency": "DNR Management Units",
+   "Source page": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D5364&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0; read 2026-11-24"
+  },
+  {
+   "Park number (if matched)": "US-13657",
+   "Park name (as the agency writes it)": "Nessel WMA",
+   "Size": 72,
+   "Unit": "acres",
+   "Agency": "DNR Management Units",
+   "Source page": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D6092&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0; read 2026-11-24"
+  },
+  {
+   "Park number (if matched)": "US-13658",
+   "Park name (as the agency writes it)": "Wild Rose WMA",
+   "Size": 199,
+   "Unit": "acres",
+   "Agency": "DNR Management Units",
+   "Source page": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D5953&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0; read 2026-11-24"
+  },
+  {
+   "Park number (if matched)": "US-12678",
+   "Park name (as the agency writes it)": "Little Nelchina State Recreation Site",
+   "Size": 22,
+   "Unit": "acres",
+   "Agency": "Alaska State Parks (DNR) (park, state GIS table)",
+   "Source page": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2/query?where=OBJECTID%3D50&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2; read 2026-11-05"
+  },
+  {
+   "Park number (if matched)": "US-5877",
+   "Park name (as the agency writes it)": "Desert Lake WMA",
+   "Size": 2804,
+   "Unit": "acres",
+   "Agency": "Utah Division of Wildlife Resources (AGOL owner dwrutah, Utah DNR org) (land, state GIS table)",
+   "Source page": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0/query?where=OBJECTID%3D54&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-6251",
+   "Park name (as the agency writes it)": "GRAND PARADE",
+   "Size": 2,
+   "Unit": "acres",
+   "Agency": "HRM Parks",
+   "Source page": "https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/HRM_Parks_2/FeatureServer/0/query?where=OBJECTID%3D88&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/HRM_Parks_2/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-6252",
+   "Park name (as the agency writes it)": "SCOTT MANOR HOUSE",
+   "Size": 3,
+   "Unit": "acres",
+   "Agency": "HRM Parks",
+   "Source page": "https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/HRM_Parks_2/FeatureServer/0/query?where=OBJECTID%3D384&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services2.arcgis.com/11XBiaBYA9Ep0yNJ/arcgis/rest/services/HRM_Parks_2/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-5258",
+   "Park name (as the agency writes it)": "Killarney Lake Park",
+   "Size": 574,
+   "Unit": "acres",
+   "Agency": "Parks",
+   "Source page": "https://services2.arcgis.com/iLWAxhpxafhOza2U/arcgis/rest/services/Parks_Public_View/FeatureServer/0/query?where=OBJECTID%3D105&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services2.arcgis.com/iLWAxhpxafhOza2U/arcgis/rest/services/Parks_Public_View/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-5166",
+   "Park name (as the agency writes it)": "Dominion Park",
+   "Size": 8,
+   "Unit": "acres",
+   "Agency": "Parks",
+   "Source page": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?where=OBJECTID%3D1&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-5190",
+   "Park name (as the agency writes it)": "Little River Reservoir",
+   "Size": 360,
+   "Unit": "acres",
+   "Agency": "Parks",
+   "Source page": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?where=OBJECTID%3D12&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-5219",
+   "Park name (as the agency writes it)": "Riverview Park",
+   "Size": 6,
+   "Unit": "acres",
+   "Agency": "Parks",
+   "Source page": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?where=OBJECTID%3D24&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-5224",
+   "Park name (as the agency writes it)": "Seaside Park",
+   "Size": 17,
+   "Unit": "acres",
+   "Agency": "Parks",
+   "Source page": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?where=OBJECTID%3D21&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-5694",
+   "Park name (as the agency writes it)": "King Square West",
+   "Size": 6,
+   "Unit": "acres",
+   "Agency": "Parks",
+   "Source page": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?where=OBJECTID%3D33&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-5697",
+   "Park name (as the agency writes it)": "Larche Memorial Park",
+   "Size": 2,
+   "Unit": "acres",
+   "Agency": "Parks",
+   "Source page": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?where=OBJECTID%3D30&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-5713",
+   "Park name (as the agency writes it)": "Queen Square West",
+   "Size": 6,
+   "Unit": "acres",
+   "Agency": "Parks",
+   "Source page": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?where=OBJECTID%3D25&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-0962",
+   "Park name (as the agency writes it)": "Angrignon",
+   "Size": 238,
+   "Unit": "acres",
+   "Agency": "",
+   "Source page": "https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0/query?where=OBJECTID%3D1237&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-0992",
+   "Park name (as the agency writes it)": "La Fontaine",
+   "Size": 88,
+   "Unit": "acres",
+   "Agency": "",
+   "Source page": "https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0/query?where=OBJECTID%3D2186&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-1000",
+   "Park name (as the agency writes it)": "Ruisseau-De Montigny",
+   "Size": 27,
+   "Unit": "acres",
+   "Agency": "",
+   "Source page": "https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0/query?where=OBJECTID%3D268&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-4988",
+   "Park name (as the agency writes it)": "Promenade-Bellerive",
+   "Size": 57,
+   "Unit": "acres",
+   "Agency": "",
+   "Source page": "https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0/query?where=OBJECTID%3D2204&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-5005",
+   "Park name (as the agency writes it)": "Rapides",
+   "Size": 71,
+   "Unit": "acres",
+   "Agency": "",
+   "Source page": "https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0/query?where=OBJECTID%3D1112&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-5010",
+   "Park name (as the agency writes it)": "René-Lévesque",
+   "Size": 43,
+   "Unit": "acres",
+   "Agency": "",
+   "Source page": "https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0/query?where=OBJECTID%3D2194&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services2.arcgis.com/Hc1GO2uRPLk6Rkn0/arcgis/rest/services/V_Parcs_analyse_Tous/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-4902",
+   "Park name (as the agency writes it)": "Coteau-du-Lac National Historic Site",
+   "Size": 13,
+   "Unit": "acres",
+   "Agency": "Property Boundaries",
+   "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D2051&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "US-8143",
+   "Park name (as the agency writes it)": "Boggy Depot Site",
+   "Size": 58,
+   "Unit": "acres",
+   "Agency": "National Register of Historic Places Polygons",
+   "Source page": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?where=OBJECTID%3D400187&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-12938",
+   "Park name (as the agency writes it)": "Industrial Forest Lands - Laurel Complex",
+   "Size": 359,
+   "Unit": "acres",
+   "Agency": "Delaware Fish & Wildlife (DNREC) (wild, state GIS table)",
+   "Source page": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17/query?where=OBJECTID%3D69&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17; read 2026-11-05"
+  },
+  {
+   "Park number (if matched)": "US-6326",
+   "Park name (as the agency writes it)": "T. M. Goodwin Waterfowl Management Area",
+   "Size": 3451,
+   "Unit": "acres",
+   "Agency": "FWC (wild, state GIS table)",
+   "Source page": "https://gis.myfwc.com/mapping/rest/services/Open_Data/Wildlife_Management_Areas_Florida/MapServer/1/query?where=OBJECTID%3D12&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://gis.myfwc.com/mapping/rest/services/Open_Data/Wildlife_Management_Areas_Florida/MapServer/1; read 2026-11-16"
+  },
+  {
+   "Park number (if matched)": "CA-4899",
+   "Park name (as the agency writes it)": "Lieu historique national du Canal-de-Carillon",
+   "Size": 32,
+   "Unit": "acres",
+   "Agency": "",
+   "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D4687&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-4901",
+   "Park name (as the agency writes it)": "Lieu historique national du Canal-de-Chambly",
+   "Size": 404,
+   "Unit": "acres",
+   "Agency": "",
+   "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D1968&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-4904",
+   "Park name (as the agency writes it)": "Lieu historique national du Fort-Chambly",
+   "Size": 2,
+   "Unit": "acres",
+   "Agency": "",
+   "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D1973&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-4911",
+   "Park name (as the agency writes it)": "Lieu historique national du Canal-de-Lachine",
+   "Size": 356,
+   "Unit": "acres",
+   "Agency": "",
+   "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D1997&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-4917",
+   "Park name (as the agency writes it)": "Lieu historique national du Parc-Montmorency",
+   "Size": 2,
+   "Unit": "acres",
+   "Agency": "",
+   "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D1820&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-4796",
+   "Park name (as the agency writes it)": "Rogers Pass",
+   "Size": 335534,
+   "Unit": "acres",
+   "Agency": "",
+   "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D3063&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-1055",
+   "Park name (as the agency writes it)": "Lieu historique national de Lower Fort Garry",
+   "Size": 66,
+   "Unit": "acres",
+   "Agency": "",
+   "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D2557&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-4891",
+   "Park name (as the agency writes it)": "Lieu historique national Ardgowan",
+   "Size": 4,
+   "Unit": "acres",
+   "Agency": "",
+   "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D529&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "US-1253",
+   "Park name (as the agency writes it)": "Dawkins Line Rail Trail",
+   "Size": 455,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D38&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "CA-4960",
+   "Park name (as the agency writes it)": "Michel-Chartrand, Parc",
+   "Size": 410,
+   "Unit": "acres",
+   "Agency": "",
+   "Source page": "https://www.donneesquebec.ca/recherche/dataset/2bf9329d-d6b4-4041-8581-e4ffaa3538e6/resource/481ca9a8-7ab7-4937-9092-66d3f4acb6d3/download/parcsespacesverts.json",
+   "Notes": "computed from the official outline polygon (approx); layer https://www.donneesquebec.ca/recherche/dataset/2bf9329d-d6b4-4041-8581-e4ffaa3538e6/resource/481ca9a8-7ab7-4937-9092-66d3f4acb6d3/download/parcsespacesverts.json; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-3797",
+   "Park name (as the agency writes it)": "Boatwright Wildlife Management Area",
+   "Size": 256,
+   "Unit": "acres",
+   "Agency": "Kentucky Heritage Land Conservation Fund",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Heritage_Land_Conservation_Fund_WGS84WM/MapServer/0/query?where=OBJECTID%3D99&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Heritage_Land_Conservation_Fund_WGS84WM/MapServer/0; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-3813",
+   "Park name (as the agency writes it)": "Griffith Woods Wildlife Management Area",
+   "Size": 377,
+   "Unit": "acres",
+   "Agency": "Kentucky Heritage Land Conservation Fund",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Heritage_Land_Conservation_Fund_WGS84WM/MapServer/0/query?where=OBJECTID%3D162&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Heritage_Land_Conservation_Fund_WGS84WM/MapServer/0; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-3828",
+   "Park name (as the agency writes it)": "Peabody Wildlife Management Area",
+   "Size": 7991,
+   "Unit": "acres",
+   "Agency": "Kentucky Heritage Land Conservation Fund",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Heritage_Land_Conservation_Fund_WGS84WM/MapServer/0/query?where=OBJECTID%3D129&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Heritage_Land_Conservation_Fund_WGS84WM/MapServer/0; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-3832",
+   "Park name (as the agency writes it)": "Stone Mountain Wildlife Management Area and State Natural Area",
+   "Size": 1025,
+   "Unit": "acres",
+   "Agency": "Kentucky Heritage Land Conservation Fund",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Heritage_Land_Conservation_Fund_WGS84WM/MapServer/0/query?where=OBJECTID%3D58&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Heritage_Land_Conservation_Fund_WGS84WM/MapServer/0; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-10141",
+   "Park name (as the agency writes it)": "Kentucky Ridge Forest Wildlife Management Area",
+   "Size": 3394,
+   "Unit": "acres",
+   "Agency": "Kentucky Heritage Land Conservation Fund",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Heritage_Land_Conservation_Fund_WGS84WM/MapServer/0/query?where=OBJECTID%3D92&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Heritage_Land_Conservation_Fund_WGS84WM/MapServer/0; read 2026-11-13"
+  },
+  {
+   "Park number (if matched)": "US-2218",
+   "Park name (as the agency writes it)": "NUUANU PALI STATE WAYSIDE",
+   "Size": 4,
+   "Unit": "acres",
+   "Agency": "Hawaii Division of State Parks (DLNR) (park, state GIS table)",
+   "Source page": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16/query?where=OBJECTID%3D12&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16; read 2026-11-24"
+  },
+  {
+   "Park number (if matched)": "US-6426",
+   "Park name (as the agency writes it)": "Iolani Palace",
+   "Size": 11,
+   "Unit": "acres",
+   "Agency": "National Register of Historic Places Polygons",
+   "Source page": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?where=OBJECTID%3D384329&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1; read 2026-11-24"
+  },
+  {
+   "Park number (if matched)": "US-4854",
+   "Park name (as the agency writes it)": "Dupont State Forest",
+   "Size": 12469,
+   "Unit": "acres",
+   "Agency": "NC Natural Heritage Program, NC Dept of Natural and Cultural (preserve, state GIS table)",
+   "Source page": "https://ncnhde.natureserve.org/arcgis/rest/services/NC_Public/Managed_Areas/MapServer/0/query?where=OBJECTID%3D3364&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://ncnhde.natureserve.org/arcgis/rest/services/NC_Public/Managed_Areas/MapServer/0; read 2026-11-05"
+  },
+  {
+   "Park number (if matched)": "US-0731",
+   "Park name (as the agency writes it)": "Columbia River Gorge National Scenic Area",
+   "Size": 292690,
+   "Unit": "acres",
+   "Agency": "Forest Service national designated areas (monuments, NRAs, scenic areas)",
+   "Source page": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0/query?where=OBJECTID%3D76&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0; read 2026-11-09"
+  },
+  {
+   "Park number (if matched)": "US-4477",
+   "Park name (as the agency writes it)": "Idaho Panhandle National Forests",
+   "Size": 2498281,
+   "Unit": "acres",
+   "Agency": "USDA Forest Service",
+   "Source page": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?where=OBJECTID%3D187&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "US-4427",
+   "Park name (as the agency writes it)": "Apache-Sitgreaves National Forests",
+   "Size": 2015864,
+   "Unit": "acres",
+   "Agency": "USDA Forest Service",
+   "Source page": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?where=OBJECTID%3D189&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "US-4397",
+   "Park name (as the agency writes it)": "Manti-La Sal National Forest",
+   "Size": 1340004,
+   "Unit": "acres",
+   "Agency": "USDA Forest Service",
+   "Source page": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?where=OBJECTID%3D65&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0; read 2026-11-09"
+  },
+  {
+   "Park number (if matched)": "US-4477",
+   "Park name (as the agency writes it)": "Idaho Panhandle National Forests",
+   "Size": 2498281,
+   "Unit": "acres",
+   "Agency": "USDA Forest Service",
+   "Source page": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?where=OBJECTID%3D187&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "US-4424",
+   "Park name (as the agency writes it)": "Ouachita National Forest",
+   "Size": 1784193,
+   "Unit": "acres",
+   "Agency": "USDA Forest Service",
+   "Source page": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?where=OBJECTID%3D113&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0; read 2026-11-09"
+  },
+  {
+   "Park number (if matched)": "US-4514",
+   "Park name (as the agency writes it)": "Cibola National Forest",
+   "Size": 1883163,
+   "Unit": "acres",
+   "Agency": "USDA Forest Service",
+   "Source page": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?where=OBJECTID%3D20&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0; read 2026-11-09"
+  },
+  {
+   "Park number (if matched)": "US-4514",
+   "Park name (as the agency writes it)": "Cibola National Forest",
+   "Size": 1883163,
+   "Unit": "acres",
+   "Agency": "USDA Forest Service",
+   "Source page": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0/query?where=OBJECTID%3D20&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_BasicOwnership_02/MapServer/0; read 2026-11-09"
+  },
+  {
+   "Park number (if matched)": "US-13324",
+   "Park name (as the agency writes it)": "City of Sparks",
+   "Size": 3,
+   "Unit": "acres",
+   "Agency": "Nevada outdoor recreation areas (NV Division of State Parks SCORP, DCNR server) (land, state GIS table)",
+   "Source page": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0/query?where=OBJECTID%3D517&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "US-13275",
+   "Park name (as the agency writes it)": "Pioneer Memorial Park",
+   "Size": 6,
+   "Unit": "acres",
+   "Agency": "Nevada outdoor recreation areas (NV Division of State Parks SCORP, DCNR server) (land, state GIS table)",
+   "Source page": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0/query?where=OBJECTID%3D232&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0; read 2026-11-05"
+  },
+  {
+   "Park number (if matched)": "US-13287",
+   "Park name (as the agency writes it)": "Pershing County Park",
+   "Size": 2,
+   "Unit": "acres",
+   "Agency": "Nevada outdoor recreation areas (NV Division of State Parks SCORP, DCNR server) (land, state GIS table)",
+   "Source page": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0/query?where=OBJECTID%3D259&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0; read 2026-11-05"
+  },
+  {
+   "Park number (if matched)": "CA-5184",
+   "Park name (as the agency writes it)": "Henry Park",
+   "Size": 11,
+   "Unit": "acres",
+   "Agency": "Parks",
+   "Source page": "https://services2.arcgis.com/iLWAxhpxafhOza2U/arcgis/rest/services/Parks_Public_View/FeatureServer/0/query?where=OBJECTID%3D97&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services2.arcgis.com/iLWAxhpxafhOza2U/arcgis/rest/services/Parks_Public_View/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "US-2213",
+   "Park name (as the agency writes it)": "KAUMAHINA STATE WAYSIDE",
+   "Size": 7,
+   "Unit": "acres",
+   "Agency": "Hawaii Division of State Parks (DLNR) (park, state GIS table)",
+   "Source page": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16/query?where=OBJECTID%3D25&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16; read 2026-11-05"
+  },
+  {
+   "Park number (if matched)": "US-2221",
+   "Park name (as the agency writes it)": "PUAA KAA STATE WAYSIDE",
+   "Size": 2,
+   "Unit": "acres",
+   "Agency": "Hawaii Division of State Parks (DLNR) (park, state GIS table)",
+   "Source page": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16/query?where=OBJECTID%3D70&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16; read 2026-11-05"
+  },
+  {
+   "Park number (if matched)": "US-0980",
+   "Park name (as the agency writes it)": "Beall Woods",
+   "Size": 635,
+   "Unit": "acres",
+   "Agency": "IDNR Properties",
+   "Source page": "https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11/query?where=OBJECTID%3D120&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11; read 2026-11-05"
+  },
+  {
+   "Park number (if matched)": "US-4105",
+   "Park name (as the agency writes it)": "Washington County",
+   "Size": 1575,
+   "Unit": "acres",
+   "Agency": "IDNR Properties",
+   "Source page": "https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11/query?where=OBJECTID%3D124&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11; read 2026-11-05"
+  },
+  {
+   "Park number (if matched)": "US-4122",
+   "Park name (as the agency writes it)": "Fall Creek Scenic Overlook",
+   "Size": 218,
+   "Unit": "acres",
+   "Agency": "IDNR Properties",
+   "Source page": "https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11/query?where=OBJECTID%3D272&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11; read 2026-11-05"
+  },
+  {
+   "Park number (if matched)": "CA-2219",
+   "Park name (as the agency writes it)": "Parc Central",
+   "Size": 94,
+   "Unit": "acres",
+   "Agency": "",
+   "Source page": "https://services3.arcgis.com/qsNXG7LzoUbR4c1C/arcgis/rest/services/AireAmenagee/FeatureServer/0/query?where=OBJECTID%3D2&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services3.arcgis.com/qsNXG7LzoUbR4c1C/arcgis/rest/services/AireAmenagee/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "US-0329",
+   "Park name (as the agency writes it)": "SILVIO O. CONTE NATIONAL FISH AND WILDLIFE REFUGE",
+   "Size": 26816,
+   "Unit": "acres",
+   "Agency": "US Fish and Wildlife Service",
+   "Source page": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?where=OBJECTID%3D675&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "US-0329",
+   "Park name (as the agency writes it)": "SILVIO O. CONTE NATIONAL FISH AND WILDLIFE REFUGE",
+   "Size": 26816,
+   "Unit": "acres",
+   "Agency": "US Fish and Wildlife Service",
+   "Source page": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?where=OBJECTID%3D675&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "US-0329",
+   "Park name (as the agency writes it)": "SILVIO O. CONTE NATIONAL FISH AND WILDLIFE REFUGE",
+   "Size": 26816,
+   "Unit": "acres",
+   "Agency": "US Fish and Wildlife Service",
+   "Source page": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0/query?where=OBJECTID%3D675&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "US-12830",
+   "Park name (as the agency writes it)": "Old Ruby State Park Heritage Site",
+   "Size": 7,
+   "Unit": "acres",
+   "Agency": "Washington State Department of Natural Resources (Non-DNR Major Public Lands parcels; MANAGER field gives WDFW / State Parks) (land, state GIS table)",
+   "Source page": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1/query?where=OBJECTID%3D4052&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-7238",
+   "Park name (as the agency writes it)": "Salcha River State Recreation Site",
+   "Size": 62,
+   "Unit": "acres",
+   "Agency": "Alaska State Parks (DNR) (park, state GIS table)",
+   "Source page": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2/query?where=OBJECTID%3D73&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2; read 2026-11-05"
+  },
+  {
+   "Park number (if matched)": "US-7239",
+   "Park name (as the agency writes it)": "Tok River State Recreation Site",
+   "Size": 9,
+   "Unit": "acres",
+   "Agency": "Alaska State Parks (DNR) (park, state GIS table)",
+   "Source page": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2/query?where=OBJECTID%3D112&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2; read 2026-11-05"
+  },
+  {
+   "Park number (if matched)": "US-10695",
+   "Park name (as the agency writes it)": "Coffeepot Lake",
+   "Size": 307,
+   "Unit": "acres",
+   "Agency": "Washington State Department of Natural Resources (Non-DNR Major Public Lands parcels; MANAGER field gives WDFW / State Parks) (land, state GIS table)",
+   "Source page": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1/query?where=OBJECTID%3D1505&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1; read 2026-11-25"
+  },
+  {
+   "Park number (if matched)": "US-13106",
+   "Park name (as the agency writes it)": "Penitente Canyon Recreation Area",
+   "Size": 4550,
+   "Unit": "acres",
+   "Agency": "BLM recreation management areas · official (BLM planning area)",
+   "Source page": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0/query?where=OBJECTID%3D10516&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0; read 2026-11-17"
+  },
+  {
+   "Park number (if matched)": "US-4553",
+   "Park name (as the agency writes it)": "Río Grande del Norte National Monument",
+   "Size": 311028,
+   "Unit": "acres",
+   "Agency": "BLM national monuments / conservation areas",
+   "Source page": "https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0/query?where=OBJECTID%3D21349&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://gis.blm.gov/arcgis/rest/services/lands/BLM_Natl_NLCS_NM_NCA_poly/MapServer/0; read 2026-11-17"
+  },
+  {
+   "Park number (if matched)": "US-7563",
+   "Park name (as the agency writes it)": "Black River Recreation Area",
+   "Size": 1277,
+   "Unit": "acres",
+   "Agency": "BLM recreation areas",
+   "Source page": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9/query?where=OBJECTID%3D14054&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/9; read 2026-11-17"
+  },
+  {
+   "Park number (if matched)": "US-7893",
+   "Park name (as the agency writes it)": "Augusta Canal National Heritage Area",
+   "Size": 133,
+   "Unit": "acres",
+   "Agency": "National_Heritage_Areas_Updated2023",
+   "Source page": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/National_Heritage_Areas_Updated2023/FeatureServer/0/query?where=OBJECTID%3D1&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/National_Heritage_Areas_Updated2023/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "US-11215",
+   "Park name (as the agency writes it)": "Bear Paw Battlefield",
+   "Size": 1065,
+   "Unit": "acres",
+   "Agency": "",
+   "Source page": "https://gisservice.mt.gov/ArcGIS/rest/services/msdi_administrative_boundaries_map_v1/MapServer/70/query?where=OBJECTID%3D209&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://gisservice.mt.gov/ArcGIS/rest/services/msdi_administrative_boundaries_map_v1/MapServer/70; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-5989",
+   "Park name (as the agency writes it)": "Sulphur Spring Conservation Area",
+   "Size": 208,
+   "Unit": "acres",
+   "Agency": "Grey County GIS publishing Saugeen Valley Conservation Authority property data",
+   "Source page": "https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/4/query?where=OBJECTID%3D779&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/4; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "CA-6553",
+   "Park name (as the agency writes it)": "Portobello Provincial Park",
+   "Size": 4,
+   "Unit": "acres",
+   "Agency": "NS_Lands_Proposed_or_Pending_Protection",
+   "Source page": "https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0/query?where=OBJECTID%3D97&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-6557",
+   "Park name (as the agency writes it)": "Louis Head Provincial Park",
+   "Size": 17,
+   "Unit": "acres",
+   "Agency": "NS_Lands_Proposed_or_Pending_Protection",
+   "Source page": "https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0/query?where=OBJECTID%3D40&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-6558",
+   "Park name (as the agency writes it)": "Horne Settlement Provincial Park",
+   "Size": 4,
+   "Unit": "acres",
+   "Agency": "NS_Lands_Proposed_or_Pending_Protection",
+   "Source page": "https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0/query?where=OBJECTID%3D82&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-6560",
+   "Park name (as the agency writes it)": "Kingsburg Beach Provincial Park",
+   "Size": 3,
+   "Unit": "acres",
+   "Agency": "NS_Lands_Proposed_or_Pending_Protection",
+   "Source page": "https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0/query?where=OBJECTID%3D136&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services1.arcgis.com/qpxtVXh93G601MmT/arcgis/rest/services/Nova_Scotia_Parks_and_Protected_Areas_System/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "US-4246",
+   "Park name (as the agency writes it)": "Whitefish Dunes",
+   "Size": 411,
+   "Unit": "acres",
+   "Agency": "Natural Area Parcel Ownership",
+   "Source page": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/ER_DNR_NA_StateNaturalAreas_WTM/MapServer/2/query?where=OBJECTID%3D23788&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/ER_DNR_NA_StateNaturalAreas_WTM/MapServer/2; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-4255",
+   "Park name (as the agency writes it)": "Lodi Marsh",
+   "Size": 640,
+   "Unit": "acres",
+   "Agency": "Natural Area Parcel Ownership",
+   "Source page": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/ER_DNR_NA_StateNaturalAreas_WTM/MapServer/2/query?where=OBJECTID%3D23972&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/ER_DNR_NA_StateNaturalAreas_WTM/MapServer/2; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-8219",
+   "Park name (as the agency writes it)": "Jackson Marsh",
+   "Size": 590,
+   "Unit": "acres",
+   "Agency": "Natural Area Parcel Ownership",
+   "Source page": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/ER_DNR_NA_StateNaturalAreas_WTM/MapServer/2/query?where=OBJECTID%3D24367&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/ER_DNR_NA_StateNaturalAreas_WTM/MapServer/2; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-8667",
+   "Park name (as the agency writes it)": "Haskell Noyes Woods",
+   "Size": 62,
+   "Unit": "acres",
+   "Agency": "Natural Area Parcel Ownership",
+   "Source page": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/ER_DNR_NA_StateNaturalAreas_WTM/MapServer/2/query?where=OBJECTID%3D23571&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/ER_DNR_NA_StateNaturalAreas_WTM/MapServer/2; read 2026-11-07"
+  },
+  {
+   "Park number (if matched)": "US-8668",
+   "Park name (as the agency writes it)": "Waterloo Prairie",
+   "Size": 221,
+   "Unit": "acres",
+   "Agency": "Natural Area Parcel Ownership",
+   "Source page": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/ER_DNR_NA_StateNaturalAreas_WTM/MapServer/2/query?where=OBJECTID%3D23634&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/ER_DNR_NA_StateNaturalAreas_WTM/MapServer/2; read 2026-11-15"
+  },
+  {
+   "Park number (if matched)": "US-9837",
+   "Park name (as the agency writes it)": "C.D. (Buzz) Besadny Fish And Wildlife Area",
+   "Size": 2754,
+   "Unit": "acres",
+   "Agency": "Wisconsin DNR (land, state GIS table)",
+   "Source page": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0/query?where=OBJECTID%3D716896&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/LF_AGOL_STAGING_WTM_Ext/MapServer/0; read 2026-11-15"
+  },
+  {
+   "Park number (if matched)": "US-11165",
+   "Park name (as the agency writes it)": "Chalk Bluff Natural Area",
+   "Size": 55,
+   "Unit": "acres",
+   "Agency": "Arkansas Natural Heritage Commission (preserve, state GIS table)",
+   "Source page": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Boundaries/FeatureServer/21/query?where=OBJECTID%3D15&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Boundaries/FeatureServer/21; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-11027",
+   "Park name (as the agency writes it)": "Big Canoe Creek",
+   "Size": 384,
+   "Unit": "acres",
+   "Agency": "Alabama Dept of Conservation and Natural Resources, State La (preserve, state GIS table)",
+   "Source page": "https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0/query?where=OBJECTID%3D181&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0; read 2026-11-05"
+  },
+  {
+   "Park number (if matched)": "US-1112",
+   "Park name (as the agency writes it)": "Powhatan Historic State Park",
+   "Size": 15,
+   "Unit": "acres",
+   "Agency": "Arkansas State Parks (park, state GIS table)",
+   "Source page": "https://gis.ardot.gov/hosting/rest/services/Hosted/StateParks/FeatureServer/0/query?where=OBJECTID%3D15&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://gis.ardot.gov/hosting/rest/services/Hosted/StateParks/FeatureServer/0; read 2026-11-05"
+  },
+  {
+   "Park number (if matched)": "US-1251",
+   "Park name (as the agency writes it)": "Carr Creek",
+   "Size": 42,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D12&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1252",
+   "Park name (as the agency writes it)": "Columbus-Belmont",
+   "Size": 160,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D25&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1254",
+   "Park name (as the agency writes it)": "E.P. Tom Sawyer",
+   "Size": 545,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D8&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1256",
+   "Park name (as the agency writes it)": "Fort Boonesborough",
+   "Size": 159,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D45&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1258",
+   "Park name (as the agency writes it)": "Grayson Lake",
+   "Size": 1204,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D31&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1259",
+   "Park name (as the agency writes it)": "Green River Lake",
+   "Size": 1313,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D30&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1260",
+   "Park name (as the agency writes it)": "John James Audubon",
+   "Size": 1295,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D1&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1261",
+   "Park name (as the agency writes it)": "Kincaid Lake",
+   "Size": 477,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D21&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1262",
+   "Park name (as the agency writes it)": "Kingdom Come",
+   "Size": 1461,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D33&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1263",
+   "Park name (as the agency writes it)": "Lake Malone",
+   "Size": 376,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D4&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1265",
+   "Park name (as the agency writes it)": "Lincoln Homestead",
+   "Size": 212,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D16&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1266",
+   "Park name (as the agency writes it)": "Mineral Mound",
+   "Size": 536,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D23&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1267",
+   "Park name (as the agency writes it)": "My Old Kentucky Home",
+   "Size": 298,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D15&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1268",
+   "Park name (as the agency writes it)": "Nolin Lake",
+   "Size": 155,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D27&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1269",
+   "Park name (as the agency writes it)": "Old Fort Harrod",
+   "Size": 22,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D43&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1270",
+   "Park name (as the agency writes it)": "Paintsville Lake",
+   "Size": 198,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D9&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1271",
+   "Park name (as the agency writes it)": "Taylorsville Lake",
+   "Size": 2026,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D19&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1272",
+   "Park name (as the agency writes it)": "Yatesville Lake",
+   "Size": 1693,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D44&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1273",
+   "Park name (as the agency writes it)": "Barren River Lake",
+   "Size": 1030,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D49&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1274",
+   "Park name (as the agency writes it)": "Blue Licks State Park State Nature Preserve",
+   "Size": 54,
+   "Unit": "acres",
+   "Agency": "Office of Kentucky Nature Preserves",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0/query?where=OBJECTID%3D6&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1275",
+   "Park name (as the agency writes it)": "Buckhorn Lake",
+   "Size": 616,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D10&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1276",
+   "Park name (as the agency writes it)": "Carter Caves",
+   "Size": 1820,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D28&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1277",
+   "Park name (as the agency writes it)": "Cumberland Falls",
+   "Size": 1895,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D6&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1279",
+   "Park name (as the agency writes it)": "General Butler",
+   "Size": 550,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D34&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1280",
+   "Park name (as the agency writes it)": "Greenbo Lake",
+   "Size": 3439,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D11&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1281",
+   "Park name (as the agency writes it)": "Jenny Wiley",
+   "Size": 1483,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D26&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1282",
+   "Park name (as the agency writes it)": "Kenlake",
+   "Size": 1526,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D29&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1283",
+   "Park name (as the agency writes it)": "Kentucky Dam Village",
+   "Size": 1493,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D47&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1284",
+   "Park name (as the agency writes it)": "Lake Barkley",
+   "Size": 3356,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D40&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1285",
+   "Park name (as the agency writes it)": "Lake Cumberland",
+   "Size": 3642,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D42&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1286",
+   "Park name (as the agency writes it)": "Natural Bridge",
+   "Size": 2490,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D20&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1287",
+   "Park name (as the agency writes it)": "Pennyrile Forest",
+   "Size": 930,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D7&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1288",
+   "Park name (as the agency writes it)": "Pine Mountain",
+   "Size": 1765,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D17&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-1289",
+   "Park name (as the agency writes it)": "Rough River Dam",
+   "Size": 253,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D32&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-3779",
+   "Park name (as the agency writes it)": "Big Bone Lick",
+   "Size": 735,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D41&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-13"
+  },
+  {
+   "Park number (if matched)": "US-3782",
+   "Park name (as the agency writes it)": "Dr. Thomas Walker",
+   "Size": 12,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D48&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-13"
+  },
+  {
+   "Park number (if matched)": "US-3783",
+   "Park name (as the agency writes it)": "Jefferson Davis",
+   "Size": 16,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D2&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-13"
+  },
+  {
+   "Park number (if matched)": "US-3784",
+   "Park name (as the agency writes it)": "Old Mulkey Meetinghouse",
+   "Size": 72,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D24&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-13"
+  },
+  {
+   "Park number (if matched)": "US-3785",
+   "Park name (as the agency writes it)": "Perryville Battlefield",
+   "Size": 800,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D46&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-13"
+  },
+  {
+   "Park number (if matched)": "US-3786",
+   "Park name (as the agency writes it)": "Waveland",
+   "Size": 13,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D14&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-13"
+  },
+  {
+   "Park number (if matched)": "US-3788",
+   "Park name (as the agency writes it)": "Wickliffe Mounds",
+   "Size": 21,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D3&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-13"
+  },
+  {
+   "Park number (if matched)": "US-3789",
+   "Park name (as the agency writes it)": "William Whitley House State Historic Site",
+   "Size": 31,
+   "Unit": "acres",
+   "Agency": "Kentucky Heritage Land Conservation Fund",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Heritage_Land_Conservation_Fund_WGS84WM/MapServer/0/query?where=OBJECTID%3D115&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Heritage_Land_Conservation_Fund_WGS84WM/MapServer/0; read 2026-11-13"
+  },
+  {
+   "Park number (if matched)": "US-7890",
+   "Park name (as the agency writes it)": "Isaac Shelby Cemetery",
+   "Size": 4,
+   "Unit": "acres",
+   "Agency": "Kentucky Department of Parks",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8/query?where=OBJECTID%3D35&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8; read 2026-11-13"
+  },
+  {
+   "Park number (if matched)": "US-4688",
+   "Park name (as the agency writes it)": "Kentenia State Forest",
+   "Size": 2796,
+   "Unit": "acres",
+   "Agency": "Kentucky Division of Forestry",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_StateForests_WGS84WM/MapServer/1/query?where=OBJECTID%3D3&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_StateForests_WGS84WM/MapServer/1; read 2026-11-13"
+  },
+  {
+   "Park number (if matched)": "US-4689",
+   "Park name (as the agency writes it)": "Kentucky Ridge State Forest",
+   "Size": 9041,
+   "Unit": "acres",
+   "Agency": "Kentucky Division of Forestry",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_StateForests_WGS84WM/MapServer/1/query?where=OBJECTID%3D16&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_StateForests_WGS84WM/MapServer/1; read 2026-11-13"
+  },
+  {
+   "Park number (if matched)": "US-4690",
+   "Park name (as the agency writes it)": "Knobs State Forest and Wildlife Management Area",
+   "Size": 426,
+   "Unit": "acres",
+   "Agency": "Kentucky Division of Forestry",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_StateForests_WGS84WM/MapServer/1/query?where=OBJECTID%3D19&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_StateForests_WGS84WM/MapServer/1; read 2026-11-13"
+  },
+  {
+   "Park number (if matched)": "US-4692",
+   "Park name (as the agency writes it)": "Pennyrile State Forest",
+   "Size": 13766,
+   "Unit": "acres",
+   "Agency": "Kentucky Division of Forestry",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_StateForests_WGS84WM/MapServer/1/query?where=OBJECTID%3D41&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_StateForests_WGS84WM/MapServer/1; read 2026-11-13"
+  },
+  {
+   "Park number (if matched)": "US-4693",
+   "Park name (as the agency writes it)": "Tygarts State Forest",
+   "Size": 683,
+   "Unit": "acres",
+   "Agency": "Kentucky Division of Forestry",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_StateForests_WGS84WM/MapServer/1/query?where=OBJECTID%3D23&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_StateForests_WGS84WM/MapServer/1; read 2026-11-13"
+  },
+  {
+   "Park number (if matched)": "US-7951",
+   "Park name (as the agency writes it)": "Green River State Forest",
+   "Size": 688,
+   "Unit": "acres",
+   "Agency": "Kentucky Division of Forestry",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_StateForests_WGS84WM/MapServer/1/query?where=OBJECTID%3D51&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_StateForests_WGS84WM/MapServer/1; read 2026-11-13"
+  },
+  {
+   "Park number (if matched)": "US-7952",
+   "Park name (as the agency writes it)": "Marrowbone State Forest and Wildlife Management Area",
+   "Size": 305,
+   "Unit": "acres",
+   "Agency": "Kentucky Division of Forestry",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_StateForests_WGS84WM/MapServer/1/query?where=OBJECTID%3D27&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_StateForests_WGS84WM/MapServer/1; read 2026-11-13"
+  },
+  {
+   "Park number (if matched)": "US-5756",
+   "Park name (as the agency writes it)": "Browns Park WMA",
+   "Size": 3134,
+   "Unit": "acres",
+   "Agency": "Utah Division of Wildlife Resources (AGOL owner dwrutah, Utah DNR org) (land, state GIS table)",
+   "Source page": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0/query?where=OBJECTID%3D27&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-5170",
+   "Park name (as the agency writes it)": "Fallsview Park",
+   "Size": 8,
+   "Unit": "acres",
+   "Agency": "Parks",
+   "Source page": "https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0/query?where=OBJECTID%3D11&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://services.arcgis.com/DLk7hgTJeJILuEBg/arcgis/rest/services/Parks3/FeatureServer/0; read 2026-11-03"
+  },
+  {
+   "Park number (if matched)": "US-12064",
+   "Park name (as the agency writes it)": "Henderson Swamp",
+   "Size": 24,
+   "Unit": "acres",
+   "Agency": "Tennessee Wildlife Resources Agency (credit: TWRA) (wild, state GIS table)",
+   "Source page": "https://tnmap.tn.gov/arcgis/rest/services/ENVIRONMENTAL/TWRA/MapServer/3/query?where=OBJECTID%3D29&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://tnmap.tn.gov/arcgis/rest/services/ENVIRONMENTAL/TWRA/MapServer/3; read 2026-11-15"
+  },
+  {
+   "Park number (if matched)": "US-13631",
+   "Park name (as the agency writes it)": "Winter WMA",
+   "Size": 544,
+   "Unit": "acres",
+   "Agency": "DNR Management Units",
+   "Source page": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D5456&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-13632",
+   "Park name (as the agency writes it)": "Two Rivers WMA",
+   "Size": 725,
+   "Unit": "acres",
+   "Agency": "DNR Management Units",
+   "Source page": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D5855&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-13633",
+   "Park name (as the agency writes it)": "Talcot Lake WMA",
+   "Size": 5320,
+   "Unit": "acres",
+   "Agency": "DNR Management Units",
+   "Source page": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D5080&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-13634",
+   "Park name (as the agency writes it)": "Sodus WMA",
+   "Size": 756,
+   "Unit": "acres",
+   "Agency": "DNR Management Units",
+   "Source page": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D6223&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-13635",
+   "Park name (as the agency writes it)": "Phyllis Voosen WMA",
+   "Size": 969,
+   "Unit": "acres",
+   "Agency": "DNR Management Units",
+   "Source page": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D5541&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-13636",
+   "Park name (as the agency writes it)": "Lyons WMA",
+   "Size": 572,
+   "Unit": "acres",
+   "Agency": "DNR Management Units",
+   "Source page": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D5479&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-13637",
+   "Park name (as the agency writes it)": "Lamberton WMA",
+   "Size": 1362,
+   "Unit": "acres",
+   "Agency": "DNR Management Units",
+   "Source page": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D6089&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-13638",
+   "Park name (as the agency writes it)": "Lake Maria WMA",
+   "Size": 951,
+   "Unit": "acres",
+   "Agency": "DNR Management Units",
+   "Source page": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D5365&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-13639",
+   "Park name (as the agency writes it)": "Hopeful WMA",
+   "Size": 589,
+   "Unit": "acres",
+   "Agency": "DNR Management Units",
+   "Source page": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D5807&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-13640",
+   "Park name (as the agency writes it)": "Hole-In-Mountain WMA",
+   "Size": 638,
+   "Unit": "acres",
+   "Agency": "DNR Management Units",
+   "Source page": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D6120&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-13641",
+   "Park name (as the agency writes it)": "Green Valley WMA",
+   "Size": 793,
+   "Unit": "acres",
+   "Agency": "DNR Management Units",
+   "Source page": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D5577&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-13642",
+   "Park name (as the agency writes it)": "Fenmont WMA",
+   "Size": 517,
+   "Unit": "acres",
+   "Agency": "DNR Management Units",
+   "Source page": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D5532&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-13643",
+   "Park name (as the agency writes it)": "Coon Creek WMA",
+   "Size": 1103,
+   "Unit": "acres",
+   "Agency": "DNR Management Units",
+   "Source page": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D5783&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-13644",
+   "Park name (as the agency writes it)": "Cedar Rock WMA",
+   "Size": 653,
+   "Unit": "acres",
+   "Agency": "DNR Management Units",
+   "Source page": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D5086&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-13645",
+   "Park name (as the agency writes it)": "Budolfson WMA",
+   "Size": 617,
+   "Unit": "acres",
+   "Agency": "DNR Management Units",
+   "Source page": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D5613&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-13646",
+   "Park name (as the agency writes it)": "Bohemian WMA",
+   "Size": 664,
+   "Unit": "acres",
+   "Agency": "DNR Management Units",
+   "Source page": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D6394&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-13647",
+   "Park name (as the agency writes it)": "Badger Lake WMA",
+   "Size": 538,
+   "Unit": "acres",
+   "Agency": "DNR Management Units",
+   "Source page": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D5390&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-13648",
+   "Park name (as the agency writes it)": "Altona WMA",
+   "Size": 636,
+   "Unit": "acres",
+   "Agency": "DNR Management Units",
+   "Source page": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D5416&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-13649",
+   "Park name (as the agency writes it)": "Old Koschak Farm WMA",
+   "Size": 87,
+   "Unit": "acres",
+   "Agency": "DNR Management Units",
+   "Source page": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D6602&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-13650",
+   "Park name (as the agency writes it)": "Darwin S. Myers WMA",
+   "Size": 746,
+   "Unit": "acres",
+   "Agency": "DNR Management Units",
+   "Source page": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D5368&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-13651",
+   "Park name (as the agency writes it)": "Zim WMA",
+   "Size": 612,
+   "Unit": "acres",
+   "Agency": "DNR Management Units",
+   "Source page": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0/query?where=OBJECTID%3D6177&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-7953",
+   "Park name (as the agency writes it)": "Metropolis Lake State Nature Preserve",
+   "Size": 123,
+   "Unit": "acres",
+   "Agency": "Office of Kentucky Nature Preserves",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0/query?where=OBJECTID%3D24&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-7955",
+   "Park name (as the agency writes it)": "Six Mile Island State Nature Preserve",
+   "Size": 86,
+   "Unit": "acres",
+   "Agency": "Office of Kentucky Nature Preserves",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0/query?where=OBJECTID%3D29&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-7956",
+   "Park name (as the agency writes it)": "Beargrass Creek State Nature Preserve",
+   "Size": 41,
+   "Unit": "acres",
+   "Agency": "Office of Kentucky Nature Preserves",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0/query?where=OBJECTID%3D3&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-7959",
+   "Park name (as the agency writes it)": "Quiet Trails State Nature Preserve",
+   "Size": 177,
+   "Unit": "acres",
+   "Agency": "Office of Kentucky Nature Preserves",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0/query?where=OBJECTID%3D28&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-7960",
+   "Park name (as the agency writes it)": "Crooked Creek State Nature Preserve",
+   "Size": 728,
+   "Unit": "acres",
+   "Agency": "Office of Kentucky Nature Preserves",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0/query?where=OBJECTID%3D10&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-7961",
+   "Park name (as the agency writes it)": "Jesse Stuart State Nature Preserve",
+   "Size": 711,
+   "Unit": "acres",
+   "Agency": "Office of Kentucky Nature Preserves",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0/query?where=OBJECTID%3D16&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-7963",
+   "Park name (as the agency writes it)": "Pilot Knob State Nature Preserve",
+   "Size": 742,
+   "Unit": "acres",
+   "Agency": "Office of Kentucky Nature Preserves",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0/query?where=OBJECTID%3D26&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-7965",
+   "Park name (as the agency writes it)": "Brigadoon State Nature Preserve",
+   "Size": 187,
+   "Unit": "acres",
+   "Agency": "Office of Kentucky Nature Preserves",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0/query?where=OBJECTID%3D8&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-7966",
+   "Park name (as the agency writes it)": "Bad Branch State Nature Preserve",
+   "Size": 2830,
+   "Unit": "acres",
+   "Agency": "Office of Kentucky Nature Preserves",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0/query?where=OBJECTID%3D1&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-7967",
+   "Park name (as the agency writes it)": "Blanton Forest State Nature Preserve",
+   "Size": 3503,
+   "Unit": "acres",
+   "Agency": "Office of Kentucky Nature Preserves",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0/query?where=OBJECTID%3D5&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-7968",
+   "Park name (as the agency writes it)": "E. Lucy Braun State Park State Nature Preserve",
+   "Size": 609,
+   "Unit": "acres",
+   "Agency": "Office of Kentucky Nature Preserves",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0/query?where=OBJECTID%3D13&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-7970",
+   "Park name (as the agency writes it)": "Sinking Creek State Natural Area",
+   "Size": 301,
+   "Unit": "acres",
+   "Agency": "Kentucky Heritage Land Conservation Fund",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Heritage_Land_Conservation_Fund_WGS84WM/MapServer/0/query?where=OBJECTID%3D181&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Heritage_Land_Conservation_Fund_WGS84WM/MapServer/0; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-12971",
+   "Park name (as the agency writes it)": "Bat Cave State Nature Preserve",
+   "Size": 136,
+   "Unit": "acres",
+   "Agency": "Office of Kentucky Nature Preserves",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0/query?where=OBJECTID%3D2&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-12972",
+   "Park name (as the agency writes it)": "Cascade Caverns State Nature Preserve",
+   "Size": 21,
+   "Unit": "acres",
+   "Agency": "Office of Kentucky Nature Preserves",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0/query?where=OBJECTID%3D9&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_State_Nature_Preserves_WGS84WM/MapServer/0; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-10105",
+   "Park name (as the agency writes it)": "Green River Wild River",
+   "Size": 7019,
+   "Unit": "acres",
+   "Agency": "Office of Kentucky Nature Preserves (Kentucky Wild Rivers)",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Wild_River_Corridors_WGS84WM/MapServer/0/query?where=OBJECTID%3D4&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Wild_River_Corridors_WGS84WM/MapServer/0; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-10111",
+   "Park name (as the agency writes it)": "Rock Creek Wild River",
+   "Size": 6236,
+   "Unit": "acres",
+   "Agency": "Office of Kentucky Nature Preserves (Kentucky Wild Rivers)",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Wild_River_Corridors_WGS84WM/MapServer/0/query?where=OBJECTID%3D8&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Wild_River_Corridors_WGS84WM/MapServer/0; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-10112",
+   "Park name (as the agency writes it)": "Bad Branch Wild River",
+   "Size": 1347,
+   "Unit": "acres",
+   "Agency": "Office of Kentucky Nature Preserves (Kentucky Wild Rivers)",
+   "Source page": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Wild_River_Corridors_WGS84WM/MapServer/0/query?where=OBJECTID%3D1&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_KNP_Wild_River_Corridors_WGS84WM/MapServer/0; read 2026-11-12"
+  },
+  {
+   "Park number (if matched)": "US-3616",
+   "Park name (as the agency writes it)": "Dudley Farm Historic State Park",
+   "Size": 333,
+   "Unit": "acres",
+   "Agency": "Florida State Parks (DEP) (park, state GIS table)",
+   "Source page": "https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0/query?where=OBJECTID%3D61&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-3622",
+   "Park name (as the agency writes it)": "Fort Mose Historic State Park",
+   "Size": 42,
+   "Unit": "acres",
+   "Agency": "Florida State Parks (DEP) (park, state GIS table)",
+   "Source page": "https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0/query?where=OBJECTID%3D46&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-3643",
+   "Park name (as the agency writes it)": "Orman House Historic State Park",
+   "Size": 9,
+   "Unit": "acres",
+   "Agency": "Florida State Parks (DEP) (park, state GIS table)",
+   "Source page": "https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0/query?where=OBJECTID%3D7&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-3646",
+   "Park name (as the agency writes it)": "Paynes Creek Historic State Park",
+   "Size": 399,
+   "Unit": "acres",
+   "Agency": "Florida State Parks (DEP) (park, state GIS table)",
+   "Source page": "https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0/query?where=OBJECTID%3D99&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-10751",
+   "Park name (as the agency writes it)": "Idywild",
+   "Size": 1495,
+   "Unit": "acres",
+   "Agency": "Maryland DNR (Maryland Natural Areas) (preserve, state GIS table)",
+   "Source page": "https://dnr.geodata.md.gov/dnrdata/rest/services/Environment/MDNaturalAreasGuide/MapServer/0/query?where=OBJECTID%3D16&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://dnr.geodata.md.gov/dnrdata/rest/services/Environment/MDNaturalAreasGuide/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-10763",
+   "Park name (as the agency writes it)": "Fishing Bay Marshes",
+   "Size": 16870,
+   "Unit": "acres",
+   "Agency": "Maryland DNR (Maryland Natural Areas) (preserve, state GIS table)",
+   "Source page": "https://dnr.geodata.md.gov/dnrdata/rest/services/Environment/MDNaturalAreasGuide/MapServer/0/query?where=OBJECTID%3D12&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://dnr.geodata.md.gov/dnrdata/rest/services/Environment/MDNaturalAreasGuide/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-10765",
+   "Park name (as the agency writes it)": "Millington",
+   "Size": 488,
+   "Unit": "acres",
+   "Agency": "Maryland DNR (Maryland Natural Areas) (preserve, state GIS table)",
+   "Source page": "https://dnr.geodata.md.gov/dnrdata/rest/services/Environment/MDNaturalAreasGuide/MapServer/0/query?where=OBJECTID%3D21&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://dnr.geodata.md.gov/dnrdata/rest/services/Environment/MDNaturalAreasGuide/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-0042",
+   "Park name (as the agency writes it)": "Fort Gaines",
+   "Size": 32,
+   "Unit": "acres",
+   "Agency": "",
+   "Source page": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1/query?where=OBJECTID%3D379681&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1; read 2026-11-01"
+  },
+  {
+   "Park number (if matched)": "CA-4865",
+   "Park name (as the agency writes it)": "Fort Malden National Historic Site",
+   "Size": 13,
+   "Unit": "acres",
+   "Agency": "Property Boundaries",
+   "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D2355&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-01"
+  },
+  {
+   "Park number (if matched)": "CA-4887",
+   "Park name (as the agency writes it)": "Sir John Johnson House National Historic Site",
+   "Size": 8,
+   "Unit": "acres",
+   "Agency": "Property Boundaries",
+   "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D4694&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-4816",
+   "Park name (as the agency writes it)": "Cape Spear Lighthouse National Historic Site",
+   "Size": 130,
+   "Unit": "acres",
+   "Agency": "Property Boundaries",
+   "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D48&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-4817",
+   "Park name (as the agency writes it)": "Castle Hill National Historic Site",
+   "Size": 57,
+   "Unit": "acres",
+   "Agency": "Property Boundaries",
+   "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D14&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "CA-4822",
+   "Park name (as the agency writes it)": "Port au Choix National Historic Site",
+   "Size": 2130,
+   "Unit": "acres",
+   "Agency": "Property Boundaries",
+   "Source page": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4/query?where=OBJECTID%3D411&outFields=%2A&f=html",
+   "Notes": "computed from the official outline polygon (approx); layer https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4; read 2026-11-02"
+  },
+  {
+   "Park number (if matched)": "US-13392",
+   "Park name (as the agency writes it)": "Massey Bar",
+   "Size": 11,
+   "Unit": "acres",
+   "Agency": "Washington Department of Fish and Wildlife (wild, state GIS table)",
+   "Source page": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0/query?geometry=-122.807%2C46.4588&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "Notes": "computed from the official outline polygon (approx); layer https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0; read 2026-11-04"
+  },
+  {
+   "Park number (if matched)": "US-13396",
+   "Park name (as the agency writes it)": "Steel Bridge",
+   "Size": 1,
+   "Unit": "acres",
+   "Agency": "Washington Department of Fish and Wildlife (wild, state GIS table)",
+   "Source page": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0/query?geometry=-122.233%2C45.6066&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&returnGeometry=true&outSR=4326&resultRecordCount=25&maxAllowableOffset=5e-05&geometryPrecision=6&distance=150&units=esriSRUnit_Meter&where=1%3D1&f=json",
+   "Notes": "computed from the official outline polygon (approx); layer https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0; read 2026-11-04"
+  }
+ ],
+ "Sources": [
+  {
+   "Host": "services2.arcgis.com",
+   "Agency/area": "Parks",
+   "Kind": "GIS layer",
+   "Example URL": "https://services2.arcgis.com/iLWAxhpxafhOza2U/arcgis/rest/services/Parks_Public_View/FeatureServer/0",
+   "# times used": 12,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "idgsi-rpgdi-arcgis.spac-pspc.gc.ca",
+   "Agency/area": "Property Boundaries",
+   "Kind": "GIS layer",
+   "Example URL": "https://idgsi-rpgdi-arcgis.spac-pspc.gc.ca/gisserver/rest/services/Hosted/DFRP_PUBLIC/FeatureServer/4",
+   "# times used": 23,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "mapservices.nps.gov",
+   "Agency/area": "National Register of Historic Places Polygons",
+   "Kind": "GIS layer",
+   "Example URL": "https://mapservices.nps.gov/arcgis/rest/services/cultural_resources/nrhp_locations/MapServer/1",
+   "# times used": 7,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "services1.arcgis.com",
+   "Agency/area": "National Park Service",
+   "Kind": "GIS layer",
+   "Example URL": "https://services1.arcgis.com/fBc8EJBxQRMcHlei/arcgis/rest/services/NPS_Land_Resources_Division_Boundary_and_Tract_Data_Service/FeatureServer/2",
+   "# times used": 7,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "services.arcgis.com",
+   "Agency/area": "Utah Division of Wildlife Resources (AGOL owner dwrutah, Utah DNR org) (land, state GIS table)",
+   "Kind": "GIS layer",
+   "Example URL": "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/WMAs_WFL1/FeatureServer/0",
+   "# times used": 18,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "nhgeodata.unh.edu",
+   "Agency/area": "NH GRANIT conservation and public lands",
+   "Kind": "GIS layer",
+   "Example URL": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/EC_Conservation/FeatureServer/0",
+   "# times used": 1,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "gis.grey.ca",
+   "Agency/area": "Grey County GIS (upper-tier municipal government) publishing Grey Sauble Conservation Authority property data",
+   "Kind": "GIS layer",
+   "Example URL": "https://gis.grey.ca/server/rest/services/Public/Service_ConservationAuthorities/MapServer/3",
+   "# times used": 5,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "maps.prd.state.or.us",
+   "Agency/area": "State of Oregon (Oregon parklands) (park, state GIS table)",
+   "Kind": "GIS layer",
+   "Example URL": "https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_Parklands/FeatureServer/0",
+   "# times used": 1,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "ca.dep.state.fl.us",
+   "Agency/area": "Florida State Parks (DEP) (park, state GIS table)",
+   "Kind": "GIS layer",
+   "Example URL": "https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/0",
+   "# times used": 5,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "gis.ardot.gov",
+   "Agency/area": "Arkansas State Parks (park, state GIS table)",
+   "Kind": "GIS layer",
+   "Example URL": "https://gis.ardot.gov/hosting/rest/services/Hosted/StateParks/FeatureServer/0",
+   "# times used": 2,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "services.aadnc-aandc.gc.ca",
+   "Agency/area": "Crown-Indigenous Relations and Northern Affairs Canada (Nunavut Map Viewer); SOURCE=GN-ENV (Government of Nunavut Environment)",
+   "Kind": "GIS layer",
+   "Example URL": "https://services.aadnc-aandc.gc.ca/arcgis/rest/services/nms20/nms/MapServer/21",
+   "# times used": 1,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "maps.gov.bc.ca",
+   "Agency/area": "Government of British Columbia (Historic Places)",
+   "Kind": "GIS layer",
+   "Example URL": "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/82",
+   "# times used": 1,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "gisdata.in.gov",
+   "Agency/area": "Indiana DNR properties",
+   "Kind": "GIS layer",
+   "Example URL": "https://gisdata.in.gov/server/rest/services/Hosted/ManagedLands_DNR_Open/FeatureServer/0",
+   "# times used": 1,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "maps.dnr.illinois.gov",
+   "Agency/area": "IDNR Properties",
+   "Kind": "GIS layer",
+   "Example URL": "https://maps.dnr.illinois.gov/geoservices/rest/services/BaseLayers/MapServer/11",
+   "# times used": 4,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "conservationgis.alabama.gov",
+   "Agency/area": "Alabama Dept of Conservation and Natural Resources, State La (preserve, state GIS table)",
+   "Kind": "GIS layer",
+   "Example URL": "https://conservationgis.alabama.gov/adcnrweb/rest/services/ForeverWildTracts/MapServer/0",
+   "# times used": 2,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "geodataservices.wdfw.wa.gov",
+   "Agency/area": "Washington Department of Fish and Wildlife (wild, state GIS table)",
+   "Kind": "GIS layer",
+   "Example URL": "https://geodataservices.wdfw.wa.gov/arcgis/rest/services/WP_RealEstate/ManagedPlaces/MapServer/0",
+   "# times used": 6,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "apps.bwsr.state.mn.us",
+   "Agency/area": "DNR Management Units",
+   "Kind": "GIS layer",
+   "Example URL": "https://apps.bwsr.state.mn.us/arcgis/rest/services/DNR_Management_Units/MapServer/0",
+   "# times used": 28,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "arcgis.dnr.alaska.gov",
+   "Agency/area": "Alaska State Parks (DNR) (park, state GIS table)",
+   "Kind": "GIS layer",
+   "Example URL": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/2",
+   "# times used": 3,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "enterprise.firstmap.delaware.gov",
+   "Agency/area": "Delaware Fish & Wildlife (DNREC) (wild, state GIS table)",
+   "Kind": "GIS layer",
+   "Example URL": "https://enterprise.firstmap.delaware.gov/arcgis/rest/services/Environmental/DE_Protected_Natural_Resources/MapServer/17",
+   "# times used": 1,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "gis.myfwc.com",
+   "Agency/area": "FWC (wild, state GIS table)",
+   "Kind": "GIS layer",
+   "Example URL": "https://gis.myfwc.com/mapping/rest/services/Open_Data/Wildlife_Management_Areas_Florida/MapServer/1",
+   "# times used": 1,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "kygisserver.ky.gov",
+   "Agency/area": "Kentucky Department of Parks",
+   "Kind": "GIS layer",
+   "Example URL": "https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_State_Parks_Features_WGS84WM/MapServer/8",
+   "# times used": 73,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "www.donneesquebec.ca",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": "https://www.donneesquebec.ca/recherche/dataset/2bf9329d-d6b4-4041-8581-e4ffaa3538e6/resource/481ca9a8-7ab7-4937-9092-66d3f4acb6d3/download/parcsespacesverts.json",
+   "# times used": 1,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "geodata.hawaii.gov",
+   "Agency/area": "Hawaii Division of State Parks (DLNR) (park, state GIS table)",
+   "Kind": "GIS layer",
+   "Example URL": "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/16",
+   "# times used": 3,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "ncnhde.natureserve.org",
+   "Agency/area": "NC Natural Heritage Program, NC Dept of Natural and Cultural (preserve, state GIS table)",
+   "Kind": "GIS layer",
+   "Example URL": "https://ncnhde.natureserve.org/arcgis/rest/services/NC_Public/Managed_Areas/MapServer/0",
+   "# times used": 1,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "apps.fs.usda.gov",
+   "Agency/area": "Forest Service national designated areas (monuments, NRAs, scenic areas)",
+   "Kind": "GIS layer",
+   "Example URL": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_OtherNationalDesignatedArea_01/MapServer/0",
+   "# times used": 8,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "arcgis.water.nv.gov",
+   "Agency/area": "Nevada outdoor recreation areas (NV Division of State Parks SCORP, DCNR server) (land, state GIS table)",
+   "Kind": "GIS layer",
+   "Example URL": "https://arcgis.water.nv.gov/arcgis/rest/services/Hosted/SCORPRecAreas_Master/FeatureServer/0",
+   "# times used": 3,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "services3.arcgis.com",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": "https://services3.arcgis.com/qsNXG7LzoUbR4c1C/arcgis/rest/services/AireAmenagee/FeatureServer/0",
+   "# times used": 1,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "gis.dnr.wa.gov",
+   "Agency/area": "Washington State Department of Natural Resources (Non-DNR Major Public Lands parcels; MANAGER field gives WDFW / State Parks) (land, state GIS table)",
+   "Kind": "GIS layer",
+   "Example URL": "https://gis.dnr.wa.gov/site3/rest/services/Public_Boundaries/WADNR_PUBLIC_Major_Public_Lands_NonDNR/MapServer/1",
+   "# times used": 2,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "gis.blm.gov",
+   "Agency/area": "BLM recreation management areas · official (BLM planning area)",
+   "Kind": "GIS layer",
+   "Example URL": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_poly/MapServer/0",
+   "# times used": 3,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "gisservice.mt.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": "https://gisservice.mt.gov/ArcGIS/rest/services/msdi_administrative_boundaries_map_v1/MapServer/70",
+   "# times used": 1,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "dnrmaps.wi.gov",
+   "Agency/area": "Natural Area Parcel Ownership",
+   "Kind": "GIS layer",
+   "Example URL": "https://dnrmaps.wi.gov/arcgis/rest/services/LF_DML/ER_DNR_NA_StateNaturalAreas_WTM/MapServer/2",
+   "# times used": 6,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "gis.arkansas.gov",
+   "Agency/area": "Arkansas Natural Heritage Commission (preserve, state GIS table)",
+   "Kind": "GIS layer",
+   "Example URL": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Boundaries/FeatureServer/21",
+   "# times used": 1,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "tnmap.tn.gov",
+   "Agency/area": "Tennessee Wildlife Resources Agency (credit: TWRA) (wild, state GIS table)",
+   "Kind": "GIS layer",
+   "Example URL": "https://tnmap.tn.gov/arcgis/rest/services/ENVIRONMENTAL/TWRA/MapServer/3",
+   "# times used": 1,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "dnr.geodata.md.gov",
+   "Agency/area": "Maryland DNR (Maryland Natural Areas) (preserve, state GIS table)",
+   "Kind": "GIS layer",
+   "Example URL": "https://dnr.geodata.md.gov/dnrdata/rest/services/Environment/MDNaturalAreasGuide/MapServer/0",
+   "# times used": 3,
+   "Status": "OK",
+   "Detail": "answered the engine (official outline layer)",
+   "Retry?": "NO"
+  },
+  {
+   "Host": "services7.arcgis.com",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (host resting: 3 strikes)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "services6.arcgis.com",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "token-only (needs sign-in)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "geoengine.utc.edu",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (host resting: 3 strikes)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "tiles.arcgis.com",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "token-only (needs sign-in)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "ws.lioservices.lrc.gov.on.ca",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (host resting: 3 strikes)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "services9.arcgis.com",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "token-only (needs sign-in)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "services8.arcgis.com",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "token-only (needs sign-in)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "services5.arcgis.com",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "token-only (needs sign-in)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "enterprise-dev.gisdata.mn.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (host resting: 3 strikes)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "gis2.statelands.wyo.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (host resting: 3 strikes)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "maps2.grca.on.ca",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (host resting: 3 strikes)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "idfg.idaho.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (host resting: 3 strikes)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "gisp.itd.idaho.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (host resting: 3 strikes)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "utility.arcgis.com",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "token-only (needs sign-in)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "idt.idao.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (host resting: 3 strikes)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "gis.rvca.ca",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (host resting: 3 strikes)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "nsgiwa.novascotia.ca",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (robots)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "mapservices.gov.yk.ca",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (robots)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "www.fhwa.dot.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (HTTP 403: server refuses this client)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "dnr.wisconsin.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (HTTP 403: server refuses this client)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "inl.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (Cloudflare / robot challenge)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "services.dwr.virginia.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (host resting: 3 strikes)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "kanplan.ksdot.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (robots)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "gis.dmr.nd.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (host resting: 3 strikes)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "dec.ny.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (robots)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "anrmaps.vermont.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (host resting: 3 strikes)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "dnr.alaska.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (robots)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "mdc.mo.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (HTTP 403: server refuses this client)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "services.nconemap.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "token-only (needs sign-in)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "outdoornebraska.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (Cloudflare / robot challenge)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "gis.princeedwardisland.ca",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (host resting: 3 strikes)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "www.mass.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (HTTP 403: server refuses this client)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "dep.nj.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (HTTP 403: server refuses this client)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "gis.ohiodnr.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (robots)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "servicescarto.mrnf.gouv.qc.ca",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (host resting: 3 strikes)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "geospatial.alberta.ca",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (host resting: 3 strikes)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "www.blm.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (HTTP 403: server refuses this client)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "programs.iowadnr.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (host resting: 3 strikes)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "idt.idaho.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (robots.txt not readable this run)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "www.dfg.idaho.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (robots.txt not readable this run)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "arcgisserver.digital.mass.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (robots.txt not readable this run)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "www.tn.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (robots)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "openmaps.gov.bc.ca",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (host resting: 3 strikes)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "www.parksandrecreation.idaho.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (robots.txt not readable this run)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "www.idfg.id.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (robots.txt not readable this run)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "www.sam.usace.army.mil",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (robots)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "www.nww.usace.army.mil",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (robots)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "ndgishub.nd.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (robots.txt not readable this run)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "gis.emnrd.nm.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (robots.txt not readable this run)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "www.fs.usda.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (host rule: saved copies only or never contact; on the needs-download list)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "tpwd.texas.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (robots.txt not readable this run)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "services-eu1.arcgis.com",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (host rule: saved copies only or never contact; on the needs-download list)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "www.dec.ny.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (robots.txt not readable this run)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "www.nh.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (robots)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "www.ksoutdoors.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (robots)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "ksoutdoors.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (robots)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "www.spk.usace.army.mil",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (robots)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "tnstateparks.com",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (robots)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "apps.web.maine.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (robots)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "www2.dnr.sc.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (robots.txt not readable this run)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "www.michigan.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (robots)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "www.swt.usace.army.mil",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (robots)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "www.wlf.louisiana.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (robots.txt not readable this run)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "www.mvk.usace.army.mil",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (robots)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "www.tva.com",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (Cloudflare / robot challenge)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "www.maine.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (HTTP 403: server refuses this client)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "hawaiitrails.ehawaii.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (robots)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "datamap.gov.wales",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (robots)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "conservationexplorer.dcnr.pa.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (robots.txt not readable this run)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "www.ncforestservice.gov",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (robots)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "www5.agr.gc.ca",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (robots)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "www.apps.geomatics.gov.nt.ca",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (robots.txt not readable this run)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "gis-erd-der.gnb.ca",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (host resting: 3 strikes)",
+   "Retry?": "YES"
+  },
+  {
+   "Host": "gis.lsrca.on.ca",
+   "Agency/area": null,
+   "Kind": "GIS layer",
+   "Example URL": null,
+   "# times used": 0,
+   "Status": "BLOCKED",
+   "Detail": "blocked (host resting: 3 strikes)",
+   "Retry?": "YES"
+  }
+ ]
+}

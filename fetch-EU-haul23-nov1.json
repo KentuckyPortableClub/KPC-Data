@@ -1,0 +1,59 @@
+{
+ "about": "eu-haul2 + eu-haul3 WFS layers (Nov 1 2026)",
+ "items": [
+  {
+   "url": "https://www.lfu.bayern.de/gdi/wfs/natur/schutzgebiete?service=WFS&version=2.0.0&request=GetFeature&outputFormat=GEOJSON&count=20000&typeNames=natur_wfsschutzgebiete:naturpark",
+   "area": "DE",
+   "name": "de-naturpark",
+   "agency": "www.lfu.bayern.de",
+   "note": "eu-haul2/3: 2 parks | native grid (ETRS89 UTM 32N): the WFS refused the GPS-degrees request (400)",
+   "closes": [
+    "DE-0025",
+    "DE-0028"
+   ]
+  },
+  {
+   "url": "https://inspire.brandenburg.de/services/schutzg_wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=app:np&outputFormat=application/json",
+   "area": "DE",
+   "name": "de-np",
+   "agency": "inspire.brandenburg.de",
+   "note": "eu-haul2/3: 11 parks | native grid (ETRS89 UTM 32N): the WFS refused the GPS-degrees request (400)",
+   "closes": [
+    "DE-0063",
+    "DE-0068",
+    "DE-0073",
+    "DE-0074",
+    "DE-0075",
+    "DE-0076",
+    "DE-0083",
+    "DE-0085",
+    "DE-0086",
+    "DE-0090",
+    "DE-0091"
+   ]
+  },
+  {
+   "url": "https://www.geodatenportal.sachsen-anhalt.de/gfds/ws/wfs/942f5d74-6c2b-263a/GDI-LSA_Schutzgebiete/ows.wfs?service=WFS&version=2.0.0&request=GetFeature&typeNames=sg:lau_nup_lsa&outputFormat=application/json",
+   "area": "DE",
+   "name": "de-lau-nup-lsa",
+   "agency": "www.geodatenportal.sachsen-anhalt.de",
+   "note": "eu-haul2/3: 2 parks | native grid (ETRS89 UTM 32N): the WFS refused the GPS-degrees request (400)",
+   "closes": [
+    "DE-0064",
+    "DE-0071"
+   ]
+  },
+  {
+   "url": "https://www.lfu.bayern.de/gdi/wfs/natur/schutzgebiete?service=WFS&version=2.0.0&request=GetFeature&outputFormat=GEOJSON&count=20000&typeNames=natur_wfsschutzgebiete:naturschutzgebiet",
+   "area": "DE",
+   "name": "de-naturschutzgebiet",
+   "agency": "www.lfu.bayern.de",
+   "note": "eu-haul2/3: 3 parks | native grid (ETRS89 UTM 32N): the WFS refused the GPS-degrees request (400)",
+   "closes": [
+    "DE-0296",
+    "DE-0591",
+    "DE-0812"
+   ]
+  }
+ ]
+}

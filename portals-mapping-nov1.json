@@ -1,0 +1,254 @@
+{
+ "HN": [
+  {
+   "url": "http://geoportal.icf.gob.hn/geonetwork/srv/eng/home",
+   "what": "ICF GeoNetwork catalogue",
+   "status": "did not answer today"
+  }
+ ],
+ "TH": [
+  {
+   "url": "https://catalog.dnp.go.th/dataset/prtc",
+   "what": "DNP Data Catalog: legal protected-area boundaries (shp, updated 21 Aug 2025)",
+   "status": "504 timeout today - retry"
+  }
+ ],
+ "AR": [
+  {
+   "url": "https://www.ign.gob.ar/NuestrasActividades/InformacionGeoespacial/CapasSIG",
+   "what": "IGN Capas SIG download page (area_protegida)",
+   "status": "page known; WFS http://wms.ign.gob.ar/geoserver/ows did not answer"
+  }
+ ],
+ "KR": [
+  {
+   "url": "https://www.data.go.kr/data/15017313/fileData.do",
+   "what": "data.go.kr: 국립공원공단 국립공원 공원경계 (file download)",
+   "status": "works (used)"
+  }
+ ],
+ "BR": [
+  {
+   "url": "https://dados.mma.gov.br/dataset/44b6dc8a-dc82-4a84-8d95-1b0da7c85dac",
+   "what": "MMA dados abertos: CNUC conservation units",
+   "status": "works (used)"
+  }
+ ],
+ "CY": [
+  {
+   "url": "https://data.gov.cy/el/dataset/ethnika-dasika-parka",
+   "what": "data.gov.cy: National Forest Parks",
+   "status": "works (used)"
+  }
+ ],
+ "UA": [
+  {
+   "url": "https://data.gov.ua/dataset/mepr_05",
+   "what": "data.gov.ua Ministry of Environment dataset",
+   "status": "no polygon layer found"
+  }
+ ],
+ "SG": [
+  {
+   "url": "https://data.gov.sg/datasets/d_77d7ec97be83d44f61b85454f844382f/view",
+   "what": "data.gov.sg parks dataset",
+   "status": "works (used)"
+  }
+ ],
+ "BD": [
+  {
+   "url": "http://geoportal.bforest.gov.bd/geoserver/ows",
+   "what": "BFIS GeoPortal GeoServer",
+   "status": "HTTP 500 / TLS failure today"
+  }
+ ],
+ "VN": [
+  {
+   "url": "https://vnsdi.mae.gov.vn",
+   "what": "Vietnam NSDI portal",
+   "status": "no open PA layer found"
+  }
+ ],
+ "AM": [
+  {
+   "url": "https://data.opendata.am/dataset/recc-c1139523f06b4710b35beb832c3d8ec3",
+   "what": "opendata.am: Specially protected areas of nature (REC Caucasus, credited to the Ministry)",
+   "status": "points to a GFW-hosted layer, not used"
+  }
+ ],
+ "MG": [
+  {
+   "url": "https://madagascarportal.org/api/ap/hn_ap_liste.csv",
+   "what": "Government PA list CSV (no boundaries)",
+   "status": "list only"
+  }
+ ],
+ "HK": [
+  {
+   "url": "https://portal.csdi.gov.hk",
+   "what": "CSDI portal",
+   "status": "no polygon boundary layer found"
+  }
+ ],
+ "AL": [
+  {
+   "url": "https://geoportal.asig.gov.al/service/akzm/wms",
+   "what": "ASIG geoportal WMS (zonat_mbrojtura_081124)",
+   "status": "WMS image only"
+  }
+ ],
+ "BO": [
+  {
+   "url": "https://geo.gob.bo/catalogue/#/dataset/2868",
+   "what": "GeoBolivia catalogue: SERNAP protected areas 2024",
+   "status": "HTTP 500 / no response - retry"
+  }
+ ],
+ "VU": [
+  {
+   "url": "https://vanuatu-data.sprep.org/resource/conservation-areas-geojson",
+   "what": "Vanuatu conservation areas (VANRIS)",
+   "status": "403 - retry from a browser"
+  }
+ ],
+ "ZW": [
+  {
+   "url": "https://zimgeoportal.org.zw/datasets/",
+   "what": "Zimbabwe geoportal datasets",
+   "status": "no PA layer found"
+  }
+ ],
+ "MU": [
+  {
+   "url": "https://geoportal.govmu.org/geoserver/ows",
+   "what": "Mauritius geoportal GeoServer (geonode:islet_parks)",
+   "status": "islet parks only"
+  }
+ ],
+ "CI": [
+  {
+   "url": "https://geoportail.anstat.ci/details-cartes/99",
+   "what": "ANSTAT geoportail map 99 (Aire protégée)",
+   "status": "403 - retry"
+  }
+ ],
+ "ZM": [
+  {
+   "url": "https://www.map.gov.zm/arcgis/rest/services/NSDI_Vector",
+   "what": "Zambia NSDI ArcGIS folder",
+   "status": "slow (30-80 s per call)"
+  }
+ ],
+ "AZ": [
+  {
+   "url": "https://opendata.az",
+   "what": "opendata.az (11 MENR geographic services announced)",
+   "status": "no service URL found"
+  }
+ ],
+ "PW": [
+  {
+   "url": "https://palau-data.sprep.org/dataset/protected-areas-network-pan",
+   "what": "Palau PAN dataset",
+   "status": "sprep.org 403 from box"
+  }
+ ],
+ "CK": [
+  {
+   "url": "https://cookislands-data.sprep.org/dataset/cook-islands-protected-areas-pa-maps",
+   "what": "NES Cook Islands PA maps",
+   "status": "Cloudflare 403 from box"
+  }
+ ],
+ "MN": [
+  {
+   "url": "https://eic.mn/geodata/download.php",
+   "what": "EIC Mongolia geodata downloads",
+   "status": "works (used)"
+  }
+ ],
+ "GH": [
+  {
+   "url": "https://data.gov.gh/dataset/shapefiles-forest-and-game-reserves-ghana-2010",
+   "what": "data.gov.gh: Forest and Game Reserves 2010",
+   "status": "500 / timeout - retry"
+  }
+ ],
+ "FK": [
+  {
+   "url": "https://dataportal.saeri.org/dataset/d09f2361-693b-4c0f-a1ab-8d23957c41a1",
+   "what": "SAERI data portal: FI nature reserves",
+   "status": "works (used)"
+  }
+ ],
+ "ME": [
+  {
+   "url": "https://data.gov.me/dataset/189a0ae7-5d0b-419a-a2a0-a1a1ccbda8b8",
+   "what": "data.gov.me: zaštićena područja prirode",
+   "status": "zip downloaded corrupt today - retry"
+  }
+ ],
+ "GI": [
+  {
+   "url": "https://download.geoportal.gov.gi/geoserver/gibgis/wfs",
+   "what": "Gibraltar geoportal WFS",
+   "status": "403 (likely geo/IP block)"
+  }
+ ],
+ "MW": [
+  {
+   "url": "https://www.masdap.mw/",
+   "what": "MASDAP GeoNode",
+   "status": "TLS EOF / 500 - retry"
+  }
+ ],
+ "LA": [
+  {
+   "url": "https://nfms.maf.gov.la/arcgis/rest/services/nfms/NFMS_LayerTree/MapServer",
+   "what": "MAF NFMS ArcGIS (Conservation 85 / Protection 86)",
+   "status": "SSL EOF / 500 - retry"
+  }
+ ],
+ "MA": [
+  {
+   "url": "https://sigdef.eauxetforets.gov.ma/server/rest/services",
+   "what": "ANEF SIGDEF ArcGIS server",
+   "status": "SSL chain error"
+  }
+ ],
+ "SN": [
+  {
+   "url": "https://www.geosenegal.gouv.sn/aires-protegees-du-senegal.html",
+   "what": "Géo Sénégal: aires protégées",
+   "status": "hosting suspended page"
+  }
+ ],
+ "SC": [
+  {
+   "url": "https://webgis.gov.sc/",
+   "what": "Seychelles government web GIS",
+   "status": "no REST/OWS endpoint found"
+  }
+ ],
+ "SA": [
+  {
+   "url": "https://www.ncw.gov.sa/gis",
+   "what": "NCW GIS portal",
+   "status": "no PA geometry endpoint found"
+  }
+ ],
+ "AE": [
+  {
+   "url": "https://edp.ead.ae/server/rest/services/Enviroportal/ProtectedArea/MapServer",
+   "what": "EAD Enviroportal (Abu Dhabi)",
+   "status": "alt service"
+  }
+ ],
+ "FR": [
+  {
+   "url": "https://data.geopf.fr/wfs/ows",
+   "what": "IGN Géoplateforme WFS (patrinat_* layers, also French overseas)",
+   "status": "works (used)"
+  }
+ ]
+}
