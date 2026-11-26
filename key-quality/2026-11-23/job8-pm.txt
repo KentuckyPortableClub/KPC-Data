@@ -1,0 +1,41 @@
+KPC key quality, job 8 (PM): Canada, what the US proofs would confirm (count only; no rule changed; no park named)
+Ran on: KPC-Links main 119caa8d, the saved Canada keys data/ca-key/CA-XX.json (15 areas), the boundary-cache release CA-ALL.json.gz (saved 2026-11-13, 60,479 records),
+KPC-Data park-facts.json.gz at efd17011 (made 2026-11-23, kpc_park_facts 10; 5,900 Canada parks, all with a pin). Proofs = kpc_match_checks.py as ruled for the US (link_tie/id_agrees, size_vote,
+link_name_agree + place, page_name_agrees + place, page_pins inside a joined record), in the US order (id, size, link, page point, page name). Nothing is moved: the US drop checks were not applied.
+Saved Canada acres check: the key's acres equal the saved hectares x 2.471 (median ratio 1.000 on 3,349 records), so the size proof reads the same unit.
+
+Canada joined parks: 4,387; joined by NAME alone: 4,130 (the rest: 257 rest on a person's answer or a code).
+
+WHAT EACH PROOF WOULD CONFIRM, the name-only parks (first proof that holds, US order):
+  link: 2,254
+  NO PROOF REACHES: 1,249
+  page name: 541
+  size: 54
+  page point: 32
+  confirmed in all: 2,881 of 4,130 (70%)
+EACH PROOF ON ITS OWN (a park can have several): id 0, size 54, link 2,302, page name 2,586, page point 1,243
+
+WHY ID CONFIRMS 0: the id test knows only US id kinds (NPS unit code, MN DNR unit id). 85 name-only Canada parks carry a Canadian link id (Parks Canada DFHD, Canada's Historic Places, Sepaq, NS protected areas), but no joined saved record holds that value in its own fields (0 of them), so a new id kind would not help on these saved copies.
+SIZE: 54 agree, 27 far off (the US size check would send those 27 to the check list), the rest no vote (Canada has no acreage-bot size; only page sizes).
+NO PROOF REACHES 1,249: own page 334, no own page 915; of them 7 have a page point inside the land but no link or page name to go with it (the US page-point proof needs one).
+
+BY PROVINCE: name-only parks | id | size | link | page point | page name | confirmed | no proof   (first proof that holds)
+CA-BC | 1194 | 0 | 24 | 1047 | 15 | 17 | 1103 | 91
+CA-ON | 878 | 0 | 21 | 626 | 6 | 93 | 746 | 132
+CA-QC | 404 | 0 | 0 | 7 | 0 | 16 | 23 | 381
+CA-AB | 388 | 0 | 0 | 92 | 2 | 269 | 363 | 25
+CA-NS | 349 | 0 | 0 | 237 | 4 | 38 | 279 | 70
+CA-NB | 301 | 0 | 7 | 45 | 0 | 4 | 56 | 245
+CA-SK | 268 | 0 | 1 | 103 | 5 | 27 | 136 | 132
+CA-MB | 208 | 0 | 1 | 48 | 0 | 42 | 91 | 117
+CA-NL | 65 | 0 | 0 | 24 | 0 | 23 | 47 | 18
+CA-YT | 23 | 0 | 0 | 6 | 0 | 0 | 6 | 17
+CA-NU | 22 | 0 | 0 | 8 | 0 | 7 | 15 | 7
+CA-NT | 14 | 0 | 0 | 3 | 0 | 3 | 6 | 8
+CA-PE | 14 | 0 | 0 | 8 | 0 | 1 | 9 | 5
+CA-SI | 1 | 0 | 0 | 0 | 0 | 1 | 1 | 0
+CA-SP | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 1
+
+WHERE NOTHING REACHES: Quebec 381 (214 have no POTA link at all; only 124 have an own page) and New Brunswick 245 (POTA's link is the province's list page for 190). The proofs need an own page; these provinces mostly have none in the facts.
+
+RECOMMENDATION (the owner rules; the Canada hash moves, so a draft PR): switching the US proofs on for Canada would confirm about 2,900 of 4,130 name-only parks (70%) with no new rule text; the page-point proof could reach about 7 more if it did not need a link or page name in Canada.

@@ -1,0 +1,32 @@
+KPC KEY & 2-FER REVIEWS — BUNDLE
+Nov 17, 2026 · for Brandon (KZ4CP)
+
+Three independent, read-only reviews. Open the .docx in each folder (same text as the .md).
+Each review's CSVs (one per finding where it touches more than ~10 parks) are in its csv/ subfolder.
+
+reviewer-A-us-key/        Handoff 5, Reviewer A — the US key, park by park
+reviewer-B-canada-world/  Handoff 5, Reviewer B — Canada key, world key, and the key machinery
+2fer-code-review/         Handoff 6 — the 2-fer code
+
+handoff-briefs/           The original handoff instructions, where still available.
+  - handoff8-key-batch-agents-parts.txt  (next job: scorecard + key bug fixes + tripwire T6 — NOT started yet)
+  NOTE: the Handoff 5 and Handoff 6 brief files had aged off the box by bundle time,
+  so they are not included. Each review worked from the point-by-point outline passed to it
+  and says so in its own document.
+
+TOP FINDINGS AT A GLANCE
+A (US key):
+  1. A person's "no" undone by a twin copy of the same layer (29 parks; +101 NOs whose record acreage changed)
+  2. D3 can't see state-table copies of designation layers -> bare names become "official" land (139 parks)
+  3. Lakeside parks take the whole lake with D4 off (104 parks; D4 needs one widening before it goes on)
+B (Canada/world/machinery):
+  1. A park grabs a neighbour's land when its name is the start of the other's (CA 32 parks; world 222)
+  2. Japan loses ~140 parks to a one-line reading bug (+ A10 licence question)
+  3. Canada saves hand joins/NOs as bare record numbers with no name check (will drift on next CPCAD republish)
+  + the 14 US rule switches can't actually be turned on (no workflow passes them; not in any fingerprint)
+2-fer code (Handoff 6):
+  1. "Official" trusted too far — 74 US parks drawn from summary/historic/project/lake layers
+  2. Measuring grid (5 m) coarser than the size rule; no "not sure" band (ruling N3 not honoured; 472 rows near a size line)
+  3. Quiet failures — a crashed water/closed-area check turns a row into a candidate; crashed pairs vanish and the run stays green
+
+All work was read-only: no pushes, pull requests, GitHub Actions runs, or issue comments.

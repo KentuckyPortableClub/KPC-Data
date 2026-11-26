@@ -1,0 +1,2283 @@
+{
+ "tool": "KPC 13 same-land finder",
+ "area": "US-TN",
+ "built": "2026-11-22",
+ "about": "Pairs of POTA parks whose outlines overlap, with the five same-land tests. SAME LAND: likely and CHECK rows are questions for the checker; nothing here relabels a 2-fer.",
+ "counts": {
+  "parks": 277,
+  "outlines": 230,
+  "pairs_overlapping": 45,
+  "SAME LAND: likely": 4,
+  "CHECK": 12,
+  "NOT SAME": 29,
+  "one_inside_the_other": 1
+ },
+ "left_out": [
+  [
+   "US-11181",
+   "a trail or river line, not an area"
+  ],
+  [
+   "US-3791",
+   "a trail or river line, not an area"
+  ],
+  [
+   "US-4556",
+   "a trail or river line, not an area"
+  ],
+  [
+   "US-4577",
+   "a trail or river line, not an area"
+  ],
+  [
+   "US-8313",
+   "a trail or river line, not an area"
+  ],
+  [
+   "US-12360",
+   "sgtnd: source down (refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-12361",
+   "sgtna: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnj: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); tnd: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); tnd: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); tnd: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-12369",
+   "sgtne: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-12663",
+   "sgtna: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnf: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtng: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnj: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-12713",
+   "sgtna: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnj: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-12714",
+   "sgtna: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnj: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-13364",
+   "sgtnj: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-13501",
+   "sgtna: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnj: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-13567",
+   "sgtnj: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-2957",
+   "sgtna: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnf: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnf: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtng: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnj: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-2972",
+   "sgtna: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnf: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtng: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnj: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); tnd: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-2974",
+   "sgtna: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnf: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtng: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnj: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-5497",
+   "sgtnd: source down (refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-6235",
+   "sgtnf: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnh: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); tnd: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-6241",
+   "sgtna: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnf: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnj: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); tnd: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-6242",
+   "sgtnh: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-6246",
+   "sgtnf: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnh: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnh: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnh: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); tnd: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-6248",
+   "sgtnh: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-6251",
+   "sgtnf: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnh: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); tnd: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-6254",
+   "sgtnh: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-6258",
+   "sgtnh: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnh: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-6264",
+   "sgtnf: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnh: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-6269",
+   "sgtnf: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnh: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnh: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); tnd: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-6272",
+   "sgtnh: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-6277",
+   "sgtnf: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-6279",
+   "sgtnf: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); tnd: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-7577",
+   "sgtne: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-9718",
+   "sgtna: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); sgtnj: source down (refused, no request made: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ]
+ ],
+ "pairs": [
+  {
+   "id": "US-3933+US-7578",
+   "refs": [
+    "US-3933",
+    "US-7578"
+   ],
+   "names": [
+    "Cheatham Wildlife Management Area",
+    "Cheatham Lake Wildlife Management Area"
+   ],
+   "acres": [
+    23220.8,
+    23220.8
+   ],
+   "overlap_acres": 23220.8,
+   "verdict": "SAME LAND: likely",
+   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers.",
+   "tests": {
+    "S1": "SAME RECORD",
+    "S1_records": [
+     "PAD-US:255408",
+     "PAD-US:255698",
+     "sgtnc:23",
+     "sgtnc:308",
+     "sgtne:27",
+     "sgtne:420",
+     "sgtne:421",
+     "sgtne:422",
+     "sgtne:423",
+     "sgtne:424",
+     "sgtne:425",
+     "sgtne:426",
+     "sgtne:427",
+     "sgtne:428",
+     "sgtne:429",
+     "sgtne:430",
+     "sgtne:431",
+     "sgtne:432",
+     "sgtne:433",
+     "sgtni:202",
+     "sgtni:39"
+    ],
+    "S2": "SAME SHAPE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 1.0,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "cheatham",
+     "cheatham"
+    ],
+    "S4": false,
+    "S4_m": 12143,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-7580+US-7581",
+   "refs": [
+    "US-7580",
+    "US-7581"
+   ],
+   "names": [
+    "Cordell Hull Wildlife Management Area",
+    "Cordell Hull Waterfowl Refuge Wildlife Management Area"
+   ],
+   "acres": [
+    17125.5,
+    17125.5
+   ],
+   "overlap_acres": 17125.5,
+   "verdict": "SAME LAND: likely",
+   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers.",
+   "tests": {
+    "S1": "SAME RECORD",
+    "S1_records": [
+     "PAD-US:255409",
+     "PAD-US:255413",
+     "sgtnc:687",
+     "sgtnc:688",
+     "sgtnc:689",
+     "sgtnc:690",
+     "sgtne:16",
+     "sgtne:19",
+     "sgtni:20",
+     "sgtni:27"
+    ],
+    "S2": "SAME SHAPE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 1.0,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "cordell hull",
+     "cordell hull waterfowl"
+    ],
+    "S4": false,
+    "S4_m": 12957,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-2971+US-3960",
+   "refs": [
+    "US-2971",
+    "US-3960"
+   ],
+   "names": [
+    "Reelfoot Lake State Park",
+    "Reelfoot State Wildlife Area"
+   ],
+   "acres": [
+    20043.9,
+    22166.8
+   ],
+   "overlap_acres": 20043.9,
+   "verdict": "SAME LAND: likely",
+   "why": "The outlines are almost the same shape, the names are the same family, and the same agency runs both.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S1_records": [
+     "PAD-US:255640",
+     "PAD-US:255740"
+    ],
+    "S2": "SAME SHAPE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 0.904,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "reelfoot",
+     "reelfoot"
+    ],
+    "S4": false,
+    "S4_m": 9688,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-3971+US-5499",
+   "refs": [
+    "US-3971",
+    "US-5499"
+   ],
+   "names": [
+    "Prentice Cooper Wildlife Management Area",
+    "Prentice Cooper State Forest"
+   ],
+   "acres": [
+    27508.1,
+    24391.8
+   ],
+   "overlap_acres": 24391.8,
+   "verdict": "SAME LAND: likely",
+   "why": "The outlines are almost the same shape, the names are the same family, and the same agency runs both.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S1_records": [
+     "PAD-US:256230"
+    ],
+    "S2": "SAME SHAPE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 0.887,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "prentice cooper",
+     "prentice cooper"
+    ],
+    "S4": true,
+    "S4_m": 9,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-0642+US-4560",
+   "refs": [
+    "US-0642",
+    "US-4560"
+   ],
+   "names": [
+    "Natchez Trace Parkway National Parkway",
+    "Natchez Trace Trail National Scenic Trail"
+   ],
+   "acres": [
+    31527.1,
+    31527.1
+   ],
+   "overlap_acres": 31527.1,
+   "verdict": "CHECK",
+   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers, but one outline is not graded official: a person should look.",
+   "tests": {
+    "S1": "SAME RECORD",
+    "S1_records": [
+     "PAD-US:3552"
+    ],
+    "S2": "SAME SHAPE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 1.0,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "natchez trace parkway parkway",
+     "natchez trace"
+    ],
+    "S4": true,
+    "S4_m": 46,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "National Park Service"
+     ],
+     [
+      "National Park Service"
+     ]
+    ]
+   },
+   "fers": [],
+   "grades": [
+    "official",
+    "approximate"
+   ]
+  },
+  {
+   "id": "US-3934+US-5491",
+   "refs": [
+    "US-3934",
+    "US-5491"
+   ],
+   "names": [
+    "Chickasaw State Wildlife Area",
+    "Chickasaw State Forest"
+   ],
+   "acres": [
+    14526.8,
+    14526.8
+   ],
+   "overlap_acres": 14526.8,
+   "verdict": "CHECK",
+   "why": "The outlines are almost the same shape but the managing agency could not be read for one of them: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S1_records": [
+     "PAD-US:255551",
+     "PAD-US:255597"
+    ],
+    "S2": "SAME SHAPE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 1.0,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "chickasaw",
+     "chickasaw"
+    ],
+    "S4": false,
+    "S4_m": 365,
+    "S5": "unknown",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     []
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-3935+US-5492",
+   "refs": [
+    "US-3935",
+    "US-5492"
+   ],
+   "names": [
+    "Chuck Swan Wildlife Management Area",
+    "Chuck Swan State Forest"
+   ],
+   "acres": [
+    24662.7,
+    24363.5
+   ],
+   "overlap_acres": 23715.5,
+   "verdict": "CHECK",
+   "why": "The outlines are almost the same shape but the managing agency could not be read for one of them: a person should look.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "SAME SHAPE",
+    "S2_of_smaller": 0.973,
+    "S2_of_larger": 0.962,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "chuck swan",
+     "chuck swan"
+    ],
+    "S4": false,
+    "S4_m": 5527,
+    "S5": "unknown",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     []
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-0538+US-3960",
+   "refs": [
+    "US-0538",
+    "US-3960"
+   ],
+   "names": [
+    "Reelfoot National Wildlife Refuge",
+    "Reelfoot State Wildlife Area"
+   ],
+   "acres": [
+    26101.4,
+    22166.8
+   ],
+   "overlap_acres": 20111.3,
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S1_records": [
+     "PAD-US:255640",
+     "PAD-US:255740"
+    ],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.907,
+    "S2_of_larger": 0.771,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "reelfoot",
+     "reelfoot"
+    ],
+    "S4": false,
+    "S4_m": 5640,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency",
+      "U.S. Fish and Wildlife Service"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-0538+US-2971",
+   "refs": [
+    "US-0538",
+    "US-2971"
+   ],
+   "names": [
+    "Reelfoot National Wildlife Refuge",
+    "Reelfoot Lake State Park"
+   ],
+   "acres": [
+    26101.4,
+    20043.9
+   ],
+   "overlap_acres": 20043.9,
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S1_records": [
+     "PAD-US:255640",
+     "PAD-US:255740"
+    ],
+    "S2": "ONE INSIDE THE OTHER",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 0.768,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "reelfoot",
+     "reelfoot"
+    ],
+    "S4": false,
+    "S4_m": 10362,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency",
+      "U.S. Fish and Wildlife Service"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-11879+US-2955",
+   "refs": [
+    "US-11879",
+    "US-2955"
+   ],
+   "names": [
+    "North Chickamauga Creek Gorge State Park",
+    "Wilson Cumberland Trail State Park"
+   ],
+   "acres": [
+    7108.9,
+    18984.7
+   ],
+   "overlap_acres": 7108.9,
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S1_records": [
+     "PAD-US:255602"
+    ],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 0.374,
+    "S3": false,
+    "S3_score": 26.1,
+    "S3_names": [
+     "north chickamauga creek gorge",
+     "wilson cumberland"
+    ],
+    "S4": false,
+    "S4_m": 6205,
+    "S5": "unknown",
+    "S5_agencies": [
+     [],
+     []
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-2935+US-3924",
+   "refs": [
+    "US-2935",
+    "US-3924"
+   ],
+   "names": [
+    "Cedars of Lebanon State Park",
+    "Cedars of Lebanon State Forest"
+   ],
+   "acres": [
+    2297.5,
+    9358.3
+   ],
+   "overlap_acres": 2286.8,
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S1_records": [
+     "PAD-US:255595"
+    ],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 0.995,
+    "S2_of_larger": 0.244,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "cedars lebanon",
+     "cedars lebanon"
+    ],
+    "S4": false,
+    "S4_m": 5323,
+    "S5": "unknown",
+    "S5_agencies": [
+     [],
+     []
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-2966+US-5498",
+   "refs": [
+    "US-2966",
+    "US-5498"
+   ],
+   "names": [
+    "Pickett State Park",
+    "Pickett State Forest"
+   ],
+   "acres": [
+    4641.0,
+    24578.2
+   ],
+   "overlap_acres": 4641.0,
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S1_records": [
+     "PAD-US:255633",
+     "PAD-US:255634"
+    ],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 0.189,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "pickett",
+     "pickett"
+    ],
+    "S4": false,
+    "S4_m": 2152,
+    "S5": "unknown",
+    "S5_agencies": [
+     [],
+     []
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-2961+US-3957",
+   "refs": [
+    "US-2961",
+    "US-3957"
+   ],
+   "names": [
+    "Natchez Trace State Park",
+    "Natchez Trace State Forest Wildlife Management Area"
+   ],
+   "acres": [
+    8222.3,
+    45825.9
+   ],
+   "overlap_acres": 8222.3,
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S1_records": [
+     "PAD-US:255627"
+    ],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 0.179,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "natchez trace",
+     "natchez trace"
+    ],
+    "S4": false,
+    "S4_m": 6160,
+    "S5": "unknown",
+    "S5_agencies": [
+     [],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-2978+US-5501",
+   "refs": [
+    "US-2978",
+    "US-5501"
+   ],
+   "names": [
+    "Standing Stone State Park",
+    "Standing Stone State Forest"
+   ],
+   "acres": [
+    1050.9,
+    9406.2
+   ],
+   "overlap_acres": 1050.9,
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S1_records": [
+     "PAD-US:255644"
+    ],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 0.112,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "standing stone",
+     "standing stone"
+    ],
+    "S4": false,
+    "S4_m": 2341,
+    "S5": "unknown",
+    "S5_agencies": [
+     [],
+     []
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-2936+US-5491",
+   "refs": [
+    "US-2936",
+    "US-5491"
+   ],
+   "names": [
+    "Chickasaw State Park",
+    "Chickasaw State Forest"
+   ],
+   "acres": [
+    1386.8,
+    14526.8
+   ],
+   "overlap_acres": 1386.8,
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S1_records": [
+     "PAD-US:255597"
+    ],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 0.095,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "chickasaw",
+     "chickasaw"
+    ],
+    "S4": false,
+    "S4_m": 5671,
+    "S5": "unknown",
+    "S5_agencies": [
+     [],
+     []
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-2936+US-3934",
+   "refs": [
+    "US-2936",
+    "US-3934"
+   ],
+   "names": [
+    "Chickasaw State Park",
+    "Chickasaw State Wildlife Area"
+   ],
+   "acres": [
+    1386.8,
+    14526.8
+   ],
+   "overlap_acres": 1386.8,
+   "verdict": "CHECK",
+   "why": "The two park numbers share an agency record but not all of their records: a person should look.",
+   "tests": {
+    "S1": "SHARES A RECORD",
+    "S1_records": [
+     "PAD-US:255597"
+    ],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 0.095,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "chickasaw",
+     "chickasaw"
+    ],
+    "S4": false,
+    "S4_m": 6032,
+    "S5": "unknown",
+    "S5_agencies": [
+     [],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-0534+US-7568",
+   "refs": [
+    "US-0534",
+    "US-7568"
+   ],
+   "names": [
+    "Cross Creeks National Wildlife Refuge",
+    "Barkley Wildlife Management Area"
+   ],
+   "acres": [
+    6601.3,
+    12002.5
+   ],
+   "overlap_acres": 3295.7,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.499,
+    "S2_of_larger": 0.275,
+    "S3": false,
+    "S3_score": 21.1,
+    "S3_names": [
+     "cross creeks",
+     "barkley"
+    ],
+    "S4": false,
+    "S4_m": 9737,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "U.S. Fish and Wildlife Service"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer (full detail)",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-13563+US-6275",
+   "refs": [
+    "US-13563",
+    "US-6275"
+   ],
+   "names": [
+    "Bear Hollow Mountain Wildlife Management Area",
+    "Walls of Jericho State Natural Area"
+   ],
+   "acres": [
+    16564.7,
+    739.5
+   ],
+   "overlap_acres": 736.6,
+   "verdict": "NOT SAME",
+   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 0.996,
+    "S2_of_larger": 0.044,
+    "S3": false,
+    "S3_score": 36.4,
+    "S3_names": [
+     "bear hollow mountain",
+     "walls jericho"
+    ],
+    "S4": false,
+    "S4_m": 1242,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-3969+US-6245",
+   "refs": [
+    "US-3969",
+    "US-6245"
+   ],
+   "names": [
+    "Wolf River Wildlife Management Area",
+    "Ghost River State Natural Area"
+   ],
+   "acres": [
+    8367.5,
+    2083.9
+   ],
+   "overlap_acres": 353.5,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.17,
+    "S2_of_larger": 0.042,
+    "S3": false,
+    "S3_score": 66.7,
+    "S3_names": [
+     "wolf river",
+     "ghost river"
+    ],
+    "S4": false,
+    "S4_m": 7089,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-2929+US-3959",
+   "refs": [
+    "US-2929",
+    "US-3959"
+   ],
+   "names": [
+    "Big Cypress Tree State Park",
+    "Obion River Wildlife Management Area"
+   ],
+   "acres": [
+    386.8,
+    9407.2
+   ],
+   "overlap_acres": 322.0,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.833,
+    "S2_of_larger": 0.034,
+    "S3": false,
+    "S3_score": 44.4,
+    "S3_names": [
+     "big cypress tree",
+     "obion river"
+    ],
+    "S4": false,
+    "S4_m": 8607,
+    "S5": "unknown",
+    "S5_agencies": [
+     [],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-3960+US-7573",
+   "refs": [
+    "US-3960",
+    "US-7573"
+   ],
+   "names": [
+    "Reelfoot State Wildlife Area",
+    "Black Bayou Refuge Wildlife Management Area"
+   ],
+   "acres": [
+    22166.8,
+    1373.9
+   ],
+   "overlap_acres": 324.7,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.236,
+    "S2_of_larger": 0.015,
+    "S3": false,
+    "S3_score": 10.5,
+    "S3_names": [
+     "reelfoot",
+     "black bayou"
+    ],
+    "S4": false,
+    "S4_m": 1698,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-3940+US-3963",
+   "refs": [
+    "US-3940",
+    "US-3963"
+   ],
+   "names": [
+    "Gooch Wildlife Management Area",
+    "Three Rivers Wildlife Management Area"
+   ],
+   "acres": [
+    8477.8,
+    1630.9
+   ],
+   "overlap_acres": 53.1,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.033,
+    "S2_of_larger": 0.006,
+    "S3": false,
+    "S3_score": 11.8,
+    "S3_names": [
+     "gooch",
+     "three rivers"
+    ],
+    "S4": false,
+    "S4_m": 13017,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-3944+US-6255",
+   "refs": [
+    "US-3944",
+    "US-6255"
+   ],
+   "names": [
+    "Hickory Flats Wildlife Management Area",
+    "May Prairie State Natural Area"
+   ],
+   "acres": [
+    767.3,
+    353.3
+   ],
+   "overlap_acres": 2.7,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.008,
+    "S2_of_larger": 0.004,
+    "S3": false,
+    "S3_score": 33.3,
+    "S3_names": [
+     "hickory flats",
+     "may prairie"
+    ],
+    "S4": false,
+    "S4_m": 1348,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "State conservation department (TDEC; PAD-US 'SDC')"
+     ]
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-13362+US-7598",
+   "refs": [
+    "US-13362",
+    "US-7598"
+   ],
+   "names": [
+    "Chickamauga WMA Wildlife Management Area",
+    "Hiwassee Refuge Wildlife Management Area"
+   ],
+   "acres": [
+    6017.0,
+    8393.9
+   ],
+   "overlap_acres": 20.8,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.003,
+    "S2_of_larger": 0.002,
+    "S3": false,
+    "S3_score": 31.6,
+    "S3_names": [
+     "chickamauga",
+     "hiwassee"
+    ],
+    "S4": false,
+    "S4_m": 8808,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-11879+US-3958",
+   "refs": [
+    "US-11879",
+    "US-3958"
+   ],
+   "names": [
+    "North Chickamauga Creek Gorge State Park",
+    "North Chickamauga Creek Wildlife Management Area"
+   ],
+   "acres": [
+    7108.9,
+    3130.4
+   ],
+   "overlap_acres": 6.3,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.002,
+    "S2_of_larger": 0.001,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "north chickamauga creek gorge",
+     "north chickamauga creek"
+    ],
+    "S4": false,
+    "S4_m": 7952,
+    "S5": "unknown",
+    "S5_agencies": [
+     [],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-3940+US-3959",
+   "refs": [
+    "US-3940",
+    "US-3959"
+   ],
+   "names": [
+    "Gooch Wildlife Management Area",
+    "Obion River Wildlife Management Area"
+   ],
+   "acres": [
+    8477.8,
+    9407.2
+   ],
+   "overlap_acres": 8.5,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.001,
+    "S2_of_larger": 0.001,
+    "S3": false,
+    "S3_score": 25.0,
+    "S3_names": [
+     "gooch",
+     "obion river"
+    ],
+    "S4": false,
+    "S4_m": 19737,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-3792+US-7568",
+   "refs": [
+    "US-3792",
+    "US-7568"
+   ],
+   "names": [
+    "Land Between the Lakes National Recreation Area",
+    "Barkley Wildlife Management Area"
+   ],
+   "acres": [
+    63693.8,
+    12002.5
+   ],
+   "overlap_acres": 33.7,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.003,
+    "S2_of_larger": 0.001,
+    "S3": false,
+    "S3_score": 21.1,
+    "S3_names": [
+     "land between",
+     "barkley"
+    ],
+    "S4": false,
+    "S4_m": 35894,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "U.S. Forest Service"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-3945+US-3959",
+   "refs": [
+    "US-3945",
+    "US-3959"
+   ],
+   "names": [
+    "Hop-in Wildlife Refuge",
+    "Obion River Wildlife Management Area"
+   ],
+   "acres": [
+    653.2,
+    9407.2
+   ],
+   "overlap_acres": 6.8,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.01,
+    "S2_of_larger": 0.001,
+    "S3": false,
+    "S3_score": 14.3,
+    "S3_names": [
+     "hop",
+     "obion river"
+    ],
+    "S4": false,
+    "S4_m": 1531,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-0539+US-2965",
+   "refs": [
+    "US-0539",
+    "US-2965"
+   ],
+   "names": [
+    "Tennessee National Wildlife Refuge",
+    "Paris Landing State Park"
+   ],
+   "acres": [
+    21152.0,
+    789.2
+   ],
+   "overlap_acres": 21.1,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.027,
+    "S2_of_larger": 0.001,
+    "S3": false,
+    "S3_score": 0.0,
+    "S3_names": [
+     "",
+     "paris landing"
+    ],
+    "S4": false,
+    "S4_m": 63620,
+    "S5": "unknown",
+    "S5_agencies": [
+     [
+      "Tennessee Valley Authority",
+      "U.S. Fish and Wildlife Service"
+     ],
+     []
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer (full detail)",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-3959+US-3963",
+   "refs": [
+    "US-3959",
+    "US-3963"
+   ],
+   "names": [
+    "Obion River Wildlife Management Area",
+    "Three Rivers Wildlife Management Area"
+   ],
+   "acres": [
+    9407.2,
+    1630.9
+   ],
+   "overlap_acres": 1.3,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.001,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 43.5,
+    "S3_names": [
+     "obion river",
+     "three rivers"
+    ],
+    "S4": false,
+    "S4_m": 8984,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-0722+US-2930",
+   "refs": [
+    "US-0722",
+    "US-2930"
+   ],
+   "names": [
+    "Shiloh National Battlefield",
+    "Big Hill Pond State Park"
+   ],
+   "acres": [
+    4699.3,
+    4978.7
+   ],
+   "overlap_acres": 0.4,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 42.1,
+    "S3_names": [
+     "shiloh",
+     "big hill pond"
+    ],
+    "S4": false,
+    "S4_m": 38014,
+    "S5": "unknown",
+    "S5_agencies": [
+     [
+      "National Park Service"
+     ],
+     []
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer (full detail)",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-0537+US-2947",
+   "refs": [
+    "US-0537",
+    "US-2947"
+   ],
+   "names": [
+    "Lower Hatchie National Wildlife Refuge",
+    "Fort Pillow State Park"
+   ],
+   "acres": [
+    12352.7,
+    1707.2
+   ],
+   "overlap_acres": 1.5,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.001,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 41.7,
+    "S3_names": [
+     "lower hatchie",
+     "fort pillow"
+    ],
+    "S4": false,
+    "S4_m": 6563,
+    "S5": "unknown",
+    "S5_agencies": [
+     [
+      "U.S. Fish and Wildlife Service"
+     ],
+     []
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer (full detail)",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-2945+US-3928",
+   "refs": [
+    "US-2945",
+    "US-3928"
+   ],
+   "names": [
+    "Fall Creek Falls State Park",
+    "Bridgestone/firestone Centennial Wilderness Wildlife Management Area"
+   ],
+   "acres": [
+    7743.8,
+    18132.9
+   ],
+   "overlap_acres": 1.6,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 37.5,
+    "S3_names": [
+     "fall creek falls",
+     "bridgestone firestone centennial"
+    ],
+    "S4": false,
+    "S4_m": 26079,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-0686+US-5500",
+   "refs": [
+    "US-0686",
+    "US-5500"
+   ],
+   "names": [
+    "Big South Fork National Recreation Area",
+    "Scott State Forest"
+   ],
+   "acres": [
+    83326.3,
+    2841.8
+   ],
+   "overlap_acres": 35.6,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.013,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 31.6,
+    "S3_names": [
+     "big south fork",
+     "scott"
+    ],
+    "S4": false,
+    "S4_m": 1355,
+    "S5": "unknown",
+    "S5_agencies": [
+     [
+      "National Park Service"
+     ],
+     []
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-2948+US-7609",
+   "refs": [
+    "US-2948",
+    "US-7609"
+   ],
+   "names": [
+    "Frozen Head State Park",
+    "North Cumberland Wildlife Management Area"
+   ],
+   "acres": [
+    41930.6,
+    160384.4
+   ],
+   "overlap_acres": 55.4,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.001,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 29.6,
+    "S3_names": [
+     "frozen head",
+     "north cumberland"
+    ],
+    "S4": false,
+    "S4_m": 36372,
+    "S5": "unknown",
+    "S5_agencies": [
+     [],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-12774+US-4525",
+   "refs": [
+    "US-12774",
+    "US-4525"
+   ],
+   "names": [
+    "Erwin National Fish Hatchery",
+    "Cherokee National Forest"
+   ],
+   "acres": [
+    32.2,
+    660605.8
+   ],
+   "overlap_acres": 0.5,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.015,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 29.6,
+    "S3_names": [
+     "erwin fish hatchery",
+     "cherokee"
+    ],
+    "S4": false,
+    "S4_m": 224032,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "U.S. Fish and Wildlife Service"
+     ],
+     [
+      "U.S. Forest Service"
+     ]
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer (full detail)"
+   ]
+  },
+  {
+   "id": "US-0686+US-5498",
+   "refs": [
+    "US-0686",
+    "US-5498"
+   ],
+   "names": [
+    "Big South Fork National Recreation Area",
+    "Pickett State Forest"
+   ],
+   "acres": [
+    83326.3,
+    24578.2
+   ],
+   "overlap_acres": 30.9,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.001,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 28.6,
+    "S3_names": [
+     "big south fork",
+     "pickett"
+    ],
+    "S4": false,
+    "S4_m": 13308,
+    "S5": "unknown",
+    "S5_agencies": [
+     [
+      "National Park Service"
+     ],
+     []
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-0034+US-7588",
+   "refs": [
+    "US-0034",
+    "US-7588"
+   ],
+   "names": [
+    "Great Smoky Mountains National Park",
+    "Foothills Wildlife Management Area"
+   ],
+   "acres": [
+    241081.6,
+    9245.6
+   ],
+   "overlap_acres": 26.1,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.003,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 26.7,
+    "S3_names": [
+     "great smoky mountains",
+     "foothills"
+    ],
+    "S4": false,
+    "S4_m": 53038,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "National Park Service"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer (full detail)",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-4525+US-7622",
+   "refs": [
+    "US-4525",
+    "US-7622"
+   ],
+   "names": [
+    "Cherokee National Forest",
+    "Tellico Lake Wildlife Management Area"
+   ],
+   "acres": [
+    660605.8,
+    5086.7
+   ],
+   "overlap_acres": 0.4,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 26.7,
+    "S3_names": [
+     "cherokee",
+     "tellico"
+    ],
+    "S4": false,
+    "S4_m": 61427,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "U.S. Forest Service"
+     ],
+     [
+      "State fish and wildlife agency",
+      "Tennessee Valley Authority"
+     ]
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer (full detail)",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-0537+US-5494",
+   "refs": [
+    "US-0537",
+    "US-5494"
+   ],
+   "names": [
+    "Lower Hatchie National Wildlife Refuge",
+    "John Tully State Forest"
+   ],
+   "acres": [
+    12352.7,
+    2136.4
+   ],
+   "overlap_acres": 1.1,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 26.1,
+    "S3_names": [
+     "lower hatchie",
+     "john tully"
+    ],
+    "S4": false,
+    "S4_m": 10186,
+    "S5": "unknown",
+    "S5_agencies": [
+     [
+      "U.S. Fish and Wildlife Service"
+     ],
+     []
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer (full detail)",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-2980+US-7611",
+   "refs": [
+    "US-2980",
+    "US-7611"
+   ],
+   "names": [
+    "Tims Ford State Park",
+    "Owl Hollow Mill Wildlife Management Area"
+   ],
+   "acres": [
+    3177.8,
+    2457.4
+   ],
+   "overlap_acres": 0.4,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 25.0,
+    "S3_names": [
+     "tims ford",
+     "owl hollow mill"
+    ],
+    "S4": false,
+    "S4_m": 6182,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Tennessee Valley Authority"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-2955+US-3958",
+   "refs": [
+    "US-2955",
+    "US-3958"
+   ],
+   "names": [
+    "Wilson Cumberland Trail State Park",
+    "North Chickamauga Creek Wildlife Management Area"
+   ],
+   "acres": [
+    18984.7,
+    3130.4
+   ],
+   "overlap_acres": 6.3,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.002,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 25.0,
+    "S3_names": [
+     "wilson cumberland",
+     "north chickamauga creek"
+    ],
+    "S4": false,
+    "S4_m": 13168,
+    "S5": "unknown",
+    "S5_agencies": [
+     [],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-0034+US-4525",
+   "refs": [
+    "US-0034",
+    "US-4525"
+   ],
+   "names": [
+    "Great Smoky Mountains National Park",
+    "Cherokee National Forest"
+   ],
+   "acres": [
+    241081.6,
+    660605.8
+   ],
+   "overlap_acres": 61.4,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.0,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 20.7,
+    "S3_names": [
+     "great smoky mountains",
+     "cherokee"
+    ],
+    "S4": false,
+    "S4_m": 110563,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "National Park Service"
+     ],
+     [
+      "U.S. Forest Service"
+     ]
+    ]
+   },
+   "fers": []
+  },
+  {
+   "id": "US-3953+US-3959",
+   "refs": [
+    "US-3953",
+    "US-3959"
+   ],
+   "names": [
+    "Maness Swamp State Wildlife Area",
+    "Obion River Wildlife Management Area"
+   ],
+   "acres": [
+    1248.1,
+    9407.2
+   ],
+   "overlap_acres": 1.9,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.002,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 17.4,
+    "S3_names": [
+     "maness swamp",
+     "obion river"
+    ],
+    "S4": false,
+    "S4_m": 7890,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer, but only part of the park's records could be read",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  },
+  {
+   "id": "US-0685+US-3931",
+   "refs": [
+    "US-0685",
+    "US-3931"
+   ],
+   "names": [
+    "Obed National Wild and Scenic River",
+    "Catoosa Wildlife Management Area"
+   ],
+   "acres": [
+    3160.3,
+    79407.5
+   ],
+   "overlap_acres": 20.0,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.006,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 9.1,
+    "S3_names": [
+     "obed wild river",
+     "catoosa"
+    ],
+    "S4": false,
+    "S4_m": 7969,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "National Park Service"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [],
+   "outline_from": [
+    "live agency layer (full detail)",
+    "live agency layer, but only part of the park's records could be read"
+   ]
+  }
+ ],
+ "club_same_land_rows": []
+}

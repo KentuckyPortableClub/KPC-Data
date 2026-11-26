@@ -1,0 +1,489 @@
+{
+ "about": "Known answers for the park page reader (hand-off 05). level 'must' = the reader must give exactly this from its fixture and never the opposite; level 'report' = the club has no checked answer: give what the page says with its quote, the club compares later. basis says how the club knows. You make the fixtures (small, trimmed, from pages you open by hand); the Red Cliffs page text is supplied. If a page no longer says what a 'must' row says, do NOT bend the reader: write it in your notes with the sentence you saw.",
+ "combined_units": [
+  {
+   "ref": "US-0022",
+   "area": "US-AK",
+   "pota_name": "Denali National Park",
+   "level": "must",
+   "basis": "the owner opened POTA's link and read the headline of the page, 19 Nov 2026",
+   "expect": {
+    "designation.combined": true,
+    "designation.parts": [
+     "National Park",
+     "National Preserve"
+    ],
+    "designation.pota_numbers_part": null,
+    "questions_include": [
+     "COMBINED_UNIT"
+    ]
+   },
+   "also": {
+    "level": "must",
+    "basis": "stored truth row (sample-data/truth-rows.json), page https://www.nps.gov/dena/learn/management/statistics.htm read 10 Nov 2026",
+    "expect": {
+     "sizes_labelled": [
+      {
+       "label": "Park",
+       "acres": 4740091
+      },
+      {
+       "label": "Preserve",
+       "acres": 1334118
+      }
+     ],
+     "questions_include": [
+      "SIZE_LISTED_BY_PART"
+     ],
+     "never": "one size given as THE size of this page without its label; the wilderness figure (2,146,270) given as a total"
+    }
+   }
+  },
+  {
+   "ref": "US-0026",
+   "area": "US-AK",
+   "pota_name": "Gates of the Arctic National Park",
+   "level": "must",
+   "basis": "the owner opened POTA's link and read the headline of the page, 19 Nov 2026",
+   "expect": {
+    "designation.combined": true,
+    "designation.parts": [
+     "National Park",
+     "National Preserve"
+    ],
+    "designation.pota_numbers_part": null,
+    "questions_include": [
+     "COMBINED_UNIT"
+    ]
+   }
+  },
+  {
+   "ref": "US-0044",
+   "area": "US-AK",
+   "pota_name": "Katmai National Park",
+   "level": "must",
+   "basis": "the owner opened POTA's link and read the headline of the page, 19 Nov 2026",
+   "expect": {
+    "designation.combined": true,
+    "designation.parts": [
+     "National Park",
+     "National Preserve"
+    ],
+    "designation.pota_numbers_part": null,
+    "questions_include": [
+     "COMBINED_UNIT"
+    ]
+   }
+  },
+  {
+   "ref": "US-0048",
+   "area": "US-AK",
+   "pota_name": "Lake Clark National Park",
+   "level": "must",
+   "basis": "the owner opened POTA's link and read the headline of the page, 19 Nov 2026",
+   "expect": {
+    "designation.combined": true,
+    "designation.parts": [
+     "National Park",
+     "National Preserve"
+    ],
+    "designation.pota_numbers_part": null,
+    "questions_include": [
+     "COMBINED_UNIT"
+    ]
+   }
+  },
+  {
+   "ref": "US-0069",
+   "area": "US-AK",
+   "pota_name": "Wrangell-St. Elias National Park",
+   "level": "must",
+   "basis": "the owner opened POTA's link and read the headline of the page, 19 Nov 2026",
+   "expect": {
+    "designation.combined": true,
+    "designation.parts": [
+     "National Park",
+     "National Preserve"
+    ],
+    "designation.pota_numbers_part": null,
+    "questions_include": [
+     "COMBINED_UNIT"
+    ]
+   }
+  },
+  {
+   "ref": "US-0665",
+   "area": "US-ID",
+   "pota_name": "Craters of the Moon National Monument",
+   "level": "must",
+   "basis": "the owner opened POTA's link and read the headline of the page, 19 Nov 2026",
+   "expect": {
+    "designation.combined": true,
+    "designation.parts": [
+     "National Monument",
+     "National Preserve"
+    ],
+    "designation.pota_numbers_part": null,
+    "questions_include": [
+     "COMBINED_UNIT"
+    ]
+   }
+  },
+  {
+   "ref": "US-12607",
+   "area": "US-AK",
+   "pota_name": "Glacier Bay National Park",
+   "level": "must",
+   "basis": "stored park list: POTA numbers Glacier Bay National Preserve as US-0029, same page nps.gov/glba",
+   "expect": {
+    "designation.combined": true,
+    "designation.parts": [
+     "National Park",
+     "National Preserve"
+    ],
+    "designation.pota_numbers_part": "US-0029",
+    "questions_include": [
+     "COMBINED_BOTH_NUMBERED"
+    ]
+   },
+   "expect_more": {
+    "own_page": "shared",
+    "shared_with_include": [
+     "US-0029"
+    ]
+   }
+  },
+  {
+   "ref": "US-0033",
+   "area": "US-CO",
+   "pota_name": "Great Sand Dunes National Park",
+   "level": "must",
+   "basis": "stored park list: POTA numbers Great Sand Dunes National Preserve as US-8295",
+   "expect": {
+    "designation.combined": true,
+    "designation.parts": [
+     "National Park",
+     "National Preserve"
+    ],
+    "designation.pota_numbers_part": "US-8295",
+    "questions_include": [
+     "COMBINED_BOTH_NUMBERED"
+    ]
+   }
+  },
+  {
+   "ref": "US-0902",
+   "area": "US-AK",
+   "pota_name": "Aniakchak National Monument",
+   "level": "must",
+   "basis": "stored park list: US-0902, US-0003 and US-0878 all list https://www.nps.gov/ania/index.htm",
+   "expect": {
+    "own_page": "shared",
+    "shared_with_include": [
+     "US-0003",
+     "US-0878"
+    ],
+    "designation.combined": true,
+    "designation.pota_numbers_part": "US-0003",
+    "page_read_once_for_all_three": true
+   }
+  },
+  {
+   "ref": "US-0696",
+   "area": "US-WV",
+   "pota_name": "New River Gorge National Park",
+   "level": "report",
+   "basis": "the owner read the page 19 Nov 2026: one combined unit, park and preserve together",
+   "expect": {
+    "designation.combined": true
+   }
+  },
+  {
+   "ref": "US-0040",
+   "area": "US-LA",
+   "pota_name": "Jean Lafitte National Historical Park",
+   "level": "report",
+   "basis": "same",
+   "expect": {
+    "designation.combined": true,
+    "note": "joined with 'and', not '&'"
+   }
+  },
+  {
+   "ref": "US-0953",
+   "area": "US-OR",
+   "pota_name": "Oregon Caves National Monument",
+   "level": "report",
+   "basis": "same",
+   "expect": {
+    "designation.combined": true
+   }
+  }
+ ],
+ "inside_a_bigger_unit": [
+  {
+   "ref": "US-6063",
+   "area": "US-UT",
+   "pota_name": "Red Cliffs BLM Recreation Management Area",
+   "level": "must",
+   "fixture": "fixtures/blm-red-cliffs-recreation-area.page.txt",
+   "basis": "the page text the owner saved from POTA's link, 19 Nov 2026; see example-facts-US-6063.json for every block",
+   "expect": {
+    "name.best": "Red Cliffs Recreation Area",
+    "inside_of[0].unit": "Red Cliffs National Conservation Area",
+    "inside_of[0].pota_ref": "US-6077",
+    "location.addresses[0].role": "office",
+    "questions_include": [
+     "INSIDE_BIGGER_UNIT",
+     "OFFICE_ADDRESS_ONLY"
+    ],
+    "never": [
+     "the St. George Field Office address given as the park's location",
+     "'Cottonwood Canyon Wilderness' in inside_of (the sentence is about a trail)",
+     "a second inside_of row from 'As you explore the Red Cliffs National Conservation Area please follow all posted regulations' (a rule line)",
+     "'11 sites', '$15', '11 feet 9 inches', '480 feet', '2 miles' read as a size",
+     "designation.combined true"
+    ]
+   }
+  },
+  {
+   "ref": "US-6077",
+   "area": "US-UT",
+   "pota_name": "Red Cliffs BLM National Conservation Area",
+   "level": "report",
+   "basis": "none yet",
+   "expect": {
+    "note": "the unit US-6063 lies in; report its size with the quote"
+   }
+  },
+  {
+   "ref": "US-6058",
+   "area": "US-UT",
+   "pota_name": "Red Cliffs Archeological Site BLM Historic Area",
+   "level": "report",
+   "basis": "none yet",
+   "expect": {}
+  },
+  {
+   "ref": "US-6062",
+   "area": "US-UT",
+   "pota_name": "Red Cliffs Dinosaur Track Site BLM Historic Area",
+   "level": "report",
+   "basis": "none yet",
+   "expect": {}
+  }
+ ],
+ "address-facts": [
+  {
+   "level": "must",
+   "basis": "the map address the owner pasted for US-6063, 19 Nov 2026 (the 'View Map In Full Screen' link of the page); no request is made for this test",
+   "address": "https://experience.arcgis.com/experience/bde784e367c3495fa76e3d071720182b#widget_6=active_datasource_id:dataSource_6,center:-12624110.76729428%2C4470298.853808017%2C102100,level:17.60048100681119,marker:-113.405%2C37.224%3B%3BRed%20Cliffs%20Recreation%20Area",
+   "expect": {
+    "marker": {
+     "lat": 37.224,
+     "lon": -113.405,
+     "label": "Red Cliffs Recreation Area",
+     "role": "park",
+     "km_from_pin_at_most": 0.1
+    },
+    "center": {
+     "lat": 37.22345,
+     "lon": -113.40432,
+     "tolerance_deg": 0.0001,
+     "role": "unknown"
+    },
+    "requests_made": 0,
+    "never": "latitude and longitude swapped (ArcGIS writes longitude first)"
+   }
+  }
+ ],
+ "page_kinds_and_links": [
+  {
+   "ref": "US-12938",
+   "area": "US-DE",
+   "pota_name": "Laurel Industrial Forest Land State Wildlife Area",
+   "level": "must",
+   "basis": "POTA's link is the agency's map document (documents.dnrec.delaware.gov, a PDF); the owner read the map 19 Nov 2026: three named tracts. Delaware's sites have refused the club's bots before.",
+   "expect": {
+    "either": [
+     {
+      "page.kind": "refused",
+      "on_person_list": true
+     },
+     {
+      "page.kind": "pdf",
+      "parts_include": [
+       "Whitesville Tract",
+       "Edwin Bell Tract",
+       "Ralph's Corner"
+      ],
+      "questions_include": [
+       "MANY_TRACTS"
+      ]
+     }
+    ],
+    "never": "the page asked again after a refusal; 'Industrial Forest Land' or 'Laurel Complex' given as a tract"
+   }
+  },
+  {
+   "ref": "US-5722",
+   "area": "US-DE",
+   "pota_name": "McGinnis Pond State Wildlife Area",
+   "level": "report",
+   "basis": "the owner read the agency map 19 Nov 2026: the wildlife area is the land around the pond",
+   "expect": {
+    "page.kind_one_of": [
+     "pdf",
+     "refused"
+    ]
+   }
+  },
+  {
+   "ref": "US-10682",
+   "area": "US-DE",
+   "pota_name": "McGinnis Pond State Fishing Lake",
+   "level": "must",
+   "basis": "stored park list: POTA's link is an experience.arcgis.com map app",
+   "expect": {
+    "page.kind_one_of": [
+     "script-built",
+     "refused"
+    ],
+    "questions_include_one_of": [
+     "SCRIPT_BUILT",
+     "REFUSED"
+    ],
+    "never": "a name, a size or a tract invented from an empty app shell"
+   }
+  },
+  {
+   "ref": "US-11524",
+   "area": "US-ID",
+   "pota_name": "Deep Creek Reservoir State Fishing Lake",
+   "level": "must",
+   "basis": "stored park list: POTA's link is https://www.idfg.idaho.gov (the agency's front page)",
+   "expect": {
+    "own_page": "agency-home",
+    "questions_include": [
+     "AGENCY_HOME_ONLY"
+    ],
+    "sizes": [],
+    "requests_for_park_facts": 0
+   }
+  },
+  {
+   "ref": "US-8295",
+   "area": "US-CO",
+   "pota_name": "Great Sand Dunes National Preserve",
+   "level": "must",
+   "basis": "stored park list: POTA's link is a colorado.com article",
+   "expect": {
+    "own_page": "unofficial-host",
+    "questions_include": [
+     "UNOFFICIAL_HOST"
+    ],
+    "sizes": [],
+    "inside_of": []
+   }
+  },
+  {
+   "ref": "US-1092",
+   "area": "US-AR",
+   "pota_name": "Lake Fort Smith State Park",
+   "level": "report",
+   "basis": "club note 19 Nov 2026: arkansasstateparks.com now lands on arkansas.com and the page gives no park size",
+   "expect": {
+    "questions_include": [
+     "LINK_MOVED"
+    ],
+    "sizes": [],
+    "note": "a lake size on the page, if any, is a part, never the park"
+   }
+  },
+  {
+   "ref": "US-0878",
+   "area": "US-AK",
+   "pota_name": "Aniakchak National Wild and Scenic River",
+   "level": "must",
+   "basis": "stored row: the website field holds TWO addresses separated by a space",
+   "expect": {
+    "asked.url": "https://www.nps.gov/ania/index.htm",
+    "asked.others_noted": 1,
+    "designation.combined": false,
+    "note": "'Wild and Scenic River' is one kind, not two"
+   }
+  }
+ ],
+ "kind_words_and_sizes": [
+  {
+   "ref": "US-3673",
+   "area": "US-KS",
+   "pota_name": "Tallgrass Prairie Preserve National Conservation Area",
+   "level": "report",
+   "basis": "stored row: POTA's type is 'National Conservation Area', the link is nps.gov/tapr (a National Preserve); club note: the page says 'nearly 11,000 acres'",
+   "expect": {
+    "questions_include": [
+     "DESIGNATION_DIFFERS"
+    ],
+    "size_kept_as_said_not_clean": "nearly 11,000 acres"
+   }
+  },
+  {
+   "ref": "US-4502",
+   "area": "US-MT",
+   "pota_name": "Flathead National Forest",
+   "level": "report",
+   "basis": "club note 19 Nov 2026: the page says '2.4-million-acre'",
+   "expect": {
+    "size_kept_as_said_not_clean": "2.4-million-acre",
+    "location.coords_park": []
+   }
+  },
+  {
+   "ref": "US-4501",
+   "area": "US-MT",
+   "pota_name": "Custer Gallatin National Forest",
+   "level": "must",
+   "basis": "a forest of many districts in two states; the headquarters address is an office",
+   "expect": {
+    "location.coords_park": [],
+    "any_address_role_not": "park",
+    "questions_exclude": [
+     "PIN_FAR_FROM_PAGE"
+    ]
+   }
+  }
+ ],
+ "open_today_no_known_answer": [
+  {
+   "ref": "US-1035",
+   "area": "US-AL",
+   "pota_name": "Buck's Pocket State Park",
+   "level": "report",
+   "basis": "two outside passes disagreed today on whether a 669-acre record is the whole park",
+   "expect": {
+    "want": "every size on the page with its sentence"
+   }
+  },
+  {
+   "ref": "US-12717",
+   "area": "US-NC",
+   "pota_name": "Deep River State Trail",
+   "level": "report",
+   "basis": "two passes disagreed today (a 1,669-acre record)",
+   "expect": {
+    "want": "sizes; a trail gives no park point"
+   }
+  },
+  {
+   "ref": "US-1656",
+   "area": "US-CT",
+   "pota_name": "Chatfield Hollow State Park",
+   "level": "report",
+   "basis": "two passes disagreed today (a 399-acre record)",
+   "expect": {
+    "want": "sizes"
+   }
+  }
+ ]
+}

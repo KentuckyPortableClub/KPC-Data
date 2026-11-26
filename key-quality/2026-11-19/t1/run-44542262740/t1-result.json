@@ -1,0 +1,195 @@
+{
+ "picked": 30,
+ "skipped": [
+  {
+   "ref": "US-6345",
+   "size": "large",
+   "why": "no page has GeoPDF coordinates or a map's words (at most 250 words, 2+ map words)"
+  },
+  {
+   "ref": "US-7063",
+   "size": "small",
+   "why": "stored docs-bot map link http://wvdnr.gov/wmamapproj/pdf/pdf300/RollinsLakeFinal11x17_300dpi.pdf"
+  },
+  {
+   "ref": "US-12035",
+   "size": "large",
+   "why": "stored docs-bot map link http://wvdnr.gov/wmamapproj/pdf/pdf300/DentsRunFinal11x17_300dpi.pdf"
+  },
+  {
+   "ref": "US-7062",
+   "size": "large",
+   "why": "stored docs-bot map link http://wvdnr.gov/wmamapproj/pdf/pdf300/Ritchie_Mines11x17Final_300dpi.pdf"
+  },
+  {
+   "ref": "US-2663",
+   "size": "small",
+   "why": "stored docs-bot map link https://www.nhstateparks.org/NHStateParks/media/NHStateParks/PDFs/State%20Park%20Improvements/Molli_Site_Rendering.pdf"
+  },
+  {
+   "ref": "US-2664",
+   "size": "large",
+   "why": "stored docs-bot map link https://www.nhstateparks.org/NHStateParks/media/NHStateParks/PDFs/Maps/monadnock-hiking-map_info_3-2026-combined.pdf"
+  },
+  {
+   "ref": "US-1406",
+   "size": "small",
+   "why": "stored docs-bot map link https://elibrary.dcnr.pa.gov/GetDocument?docId=1736597&DocName=sf-PUd15.pdf"
+  }
+ ],
+ "find_rate": "30 of 37 parks walked (81%)",
+ "summary": {
+  "small": {
+   "n": 10,
+   "WRONG LAND": {
+    "k": 0,
+    "range": [
+     0.0,
+     0.278
+    ]
+   },
+   "TOO BIG": {
+    "k": 1,
+    "range": [
+     0.018,
+     0.404
+    ]
+   },
+   "MISSING PIECES": {
+    "k": 1,
+    "range": [
+     0.018,
+     0.404
+    ]
+   },
+   "GOOD": {
+    "k": 3,
+    "range": [
+     0.108,
+     0.603
+    ]
+   },
+   "FAILED": {
+    "k": 5,
+    "range": [
+     0.237,
+     0.763
+    ]
+   }
+  },
+  "middle": {
+   "n": 10,
+   "WRONG LAND": {
+    "k": 0,
+    "range": [
+     0.0,
+     0.278
+    ]
+   },
+   "TOO BIG": {
+    "k": 1,
+    "range": [
+     0.018,
+     0.404
+    ]
+   },
+   "MISSING PIECES": {
+    "k": 1,
+    "range": [
+     0.018,
+     0.404
+    ]
+   },
+   "GOOD": {
+    "k": 2,
+    "range": [
+     0.057,
+     0.51
+    ]
+   },
+   "FAILED": {
+    "k": 6,
+    "range": [
+     0.313,
+     0.832
+    ]
+   }
+  },
+  "large": {
+   "n": 10,
+   "WRONG LAND": {
+    "k": 0,
+    "range": [
+     0.0,
+     0.278
+    ]
+   },
+   "TOO BIG": {
+    "k": 0,
+    "range": [
+     0.0,
+     0.278
+    ]
+   },
+   "MISSING PIECES": {
+    "k": 0,
+    "range": [
+     0.0,
+     0.278
+    ]
+   },
+   "GOOD": {
+    "k": 2,
+    "range": [
+     0.057,
+     0.51
+    ]
+   },
+   "FAILED": {
+    "k": 8,
+    "range": [
+     0.49,
+     0.943
+    ]
+   }
+  },
+  "all": {
+   "n": 30,
+   "WRONG LAND": {
+    "k": 0,
+    "range": [
+     0.0,
+     0.114
+    ]
+   },
+   "TOO BIG": {
+    "k": 2,
+    "range": [
+     0.018,
+     0.213
+    ]
+   },
+   "MISSING PIECES": {
+    "k": 2,
+    "range": [
+     0.018,
+     0.213
+    ]
+   },
+   "GOOD": {
+    "k": 7,
+    "range": [
+     0.118,
+     0.409
+    ]
+   },
+   "FAILED": {
+    "k": 19,
+    "range": [
+     0.455,
+     0.781
+    ]
+   }
+  }
+ }
+}

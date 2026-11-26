@@ -1,0 +1,36 @@
+{"src": "official campground layers (outside research E)", "read": "2026-11-21",
+ "camps": [
+  ["L-f7c332fd80", "1", 34.153229, -107.857829, "c", "", "", "", "Bureau of Land Management, Headquarters (HQ)", "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_pts/MapServer/3/query?objectIds=88035&outFields=*&f=html"],
+  ["L-7d80d47d2a", "Aguirre Spring Hostsite", 32.410836, -106.548519, "c", "", "", "", "Bureau of Land Management, Headquarters (HQ)", "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_pts/MapServer/3/query?objectIds=80581&outFields=*&f=html"],
+  ["L-de6278424b", "Aguirre Spring Recreation Area", 32.371945, -106.556614, "c", "", "", "", "Bureau of Land Management, Headquarters (HQ)", "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_pts/MapServer/3/query?objectIds=90906&outFields=*&f=html"],
+  ["L-8d34b00e04", "Camp Site", 36.663319, -105.688353, "c", "", "", "", "Bureau of Land Management, Headquarters (HQ)", "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_pts/MapServer/3/query?objectIds=80534&outFields=*&f=html"],
+  ["L-66c517cd4e", "Campsite", 36.665571, -105.669762, "c", "", "", "", "Bureau of Land Management, Headquarters (HQ)", "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_pts/MapServer/3/query?objectIds=80813&outFields=*&f=html"],
+  ["L-e769ae20dd", "Campsite", 36.648461, -105.693436, "c", "", "", "", "Bureau of Land Management, Headquarters (HQ)", "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_pts/MapServer/3/query?objectIds=80499&outFields=*&f=html"],
+  ["L-5a16666b8a", "El Aguaje Campground Shelter", 36.666825, -105.672281, "c", "", "", "", "Bureau of Land Management, Headquarters (HQ)", "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_pts/MapServer/2/query?objectIds=80545&outFields=*&f=html"],
+  ["L-02381c4e6a", "Group Campground", 34.151348, -107.856992, "grp", "", "", "", "Bureau of Land Management, Headquarters (HQ)", "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_pts/MapServer/3/query?objectIds=88042&outFields=*&f=html"],
+  ["L-f319c752b3", "Joe Skeen Campsite", 34.944665, -107.820256, "c", "", "", "", "Bureau of Land Management, Headquarters (HQ)", "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_pts/MapServer/3/query?objectIds=80473&outFields=*&f=html"],
+  ["L-de49454d02", "Little Arsenic Springs Campground", 36.667149, -105.680848, "c", "", "", "", "Bureau of Land Management, Headquarters (HQ)", "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_pts/MapServer/2/query?objectIds=80858&outFields=*&f=html"],
+  ["L-f07b432812", "Red River Camp Site Shelter", 36.665792, -105.669498, "prim", "", "", "", "Bureau of Land Management, Headquarters (HQ)", "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_pts/MapServer/4/query?objectIds=80620&outFields=*&f=html"],
+  ["L-4b41d37698", "Rio Grande Gorge Shelter", 36.682645, -105.690477, "prim", "", "", "", "Bureau of Land Management, Headquarters (HQ)", "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_pts/MapServer/4/query?objectIds=80479&outFields=*&f=html"],
+  ["L-db9666e8a9", "Rio Pueblo Campground", 36.337769, -105.731174, "c", "", "", "", "Bureau of Land Management, Headquarters (HQ)", "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_pts/MapServer/2/query?objectIds=80543&outFields=*&f=html"],
+  ["L-4fe46ca4b8", "Sunset Reef Campground", 32.119614, -104.424297, "c", "", "https://www.blm.gov/visit/sunset-reef-campground", "", "Bureau of Land Management, Headquarters (HQ)", "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_pts/MapServer/2/query?objectIds=91022&outFields=*&f=html"],
+  ["L-4839def6df", "Taos Junction Campground", 36.336095, -105.736289, "c", "", "", "", "Bureau of Land Management, Headquarters (HQ)", "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_pts/MapServer/2/query?objectIds=80644&outFields=*&f=html"]
+ ],
+ "extra": {
+  "L-02381c4e6a": {"why": "campground (by type field); type: OVERNIGHT SITE | Campsite - Developed - Reservable - Fee; state by outline", "read_date": "2026-11-21"},
+  "L-4839def6df": {"why": "campground (by type field); type: OVERNIGHT SITE | Campground; state by outline", "read_date": "2026-11-21"},
+  "L-4b41d37698": {"why": "campground (by type field); type: OVERNIGHT SITE | Campsite - Primitive - Reservable - No Fee; state by outline", "read_date": "2026-11-21"},
+  "L-4fe46ca4b8": {"why": "campground (by type field); type: CAMPGROUND | Campground; state by outline", "read_date": "2026-11-21"},
+  "L-5a16666b8a": {"why": "campground (by type field); type: OVERNIGHT SITE | Campground; state by outline", "read_date": "2026-11-21"},
+  "L-66c517cd4e": {"why": "campground (by type field); type: OVERNIGHT SITE | Campsite - Developed - Non Reservable - Fee; state by outline", "read_date": "2026-11-21"},
+  "L-7d80d47d2a": {"why": "campground (by type field); type: OVERNIGHT SITE | Campsite - Developed - Non Reservable - No Fee; state by outline", "read_date": "2026-11-21"},
+  "L-8d34b00e04": {"why": "campground (by type field); type: OVERNIGHT SITE | Campsite - Developed - Non Reservable - Fee; state by outline", "read_date": "2026-11-21"},
+  "L-db9666e8a9": {"why": "campground (by type field); type: OVERNIGHT SITE | Campground; state by outline", "read_date": "2026-11-21"},
+  "L-de49454d02": {"why": "campground (by type field); type: OVERNIGHT SITE | Campground; state by outline", "read_date": "2026-11-21"},
+  "L-de6278424b": {"why": "campground (by type field); type: OVERNIGHT SITE | Campsite - Developed - Non Reservable - Fee; state by outline", "read_date": "2026-11-21"},
+  "L-e769ae20dd": {"why": "campground (by type field); type: OVERNIGHT SITE | Campsite - Developed - Non Reservable - Fee; state by outline", "read_date": "2026-11-21"},
+  "L-f07b432812": {"why": "campground (by type field); type: OVERNIGHT SITE | Campsite - Primitive - Non Reservable - Fee; state by outline", "read_date": "2026-11-21"},
+  "L-f319c752b3": {"why": "campground (by type field); type: OVERNIGHT SITE | Campsite - Developed - Non Reservable - No Fee; state by outline", "read_date": "2026-11-21"},
+  "L-f7c332fd80": {"why": "campground (by type field); type: OVERNIGHT SITE | Campsite - Developed - Non Reservable - Fee; state by outline", "read_date": "2026-11-21"}
+ }
+}

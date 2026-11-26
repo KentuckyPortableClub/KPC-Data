@@ -1,0 +1,47 @@
+{
+ "countries": {
+  "AT": {
+   "records": 80,
+   "eu_compilation_records": 1,
+   "wfs_links_that_open": 78,
+   "notes": [
+    "data.europa.eu SPARQL: 3694 dataset(s) in Europe with a protected-area word (schutzgebiet*, naturschutzgebiet*, landschaftsschutzgebiet*, vogelschutzgebiet*, europaschutzgebiet*, nationalpark*, naturpark*, biosphärenreservat*, ffh gebiet*, natura 2000), 135 in a catalogue of AT, 6 in the EEA catalogue",
+    "national catalogue: https://geometadatensuche.inspire.gv.at/metadatensuche/srv/ger/csw: \"Schutzgebiet\" -> 0 record(s)"
+   ],
+   "read_date": "2026-11-01"
+  },
+  "DE": {
+   "records": 80,
+   "eu_compilation_records": 1,
+   "wfs_links_that_open": 51,
+   "notes": [
+    "data.europa.eu SPARQL: 3694 dataset(s) in Europe with a protected-area word (schutzgebiet*, naturschutzgebiet*, landschaftsschutzgebiet*, vogelschutzgebiet*, europaschutzgebiet*, nationalpark*, naturpark*, biosphärenreservat*, ffh gebiet*, natura 2000), 919 in a catalogue of DE, 6 in the EEA catalogue",
+    "national catalogue: https://gdk.gdi-de.org/gdi-de/srv/ger/csw -> err:ConnectTimeout"
+   ],
+   "read_date": "2026-11-01"
+  },
+  "ES": {
+   "records": 23,
+   "eu_compilation_records": 0,
+   "wfs_links_that_open": 0,
+   "notes": [
+    "data.europa.eu SPARQL: 363 dataset(s) in Europe with a protected-area word (espacios naturales protegidos, espacio natural protegido, espacios protegidos, áreas protegidas, zonas protegidas, parque nacional, parques nacionales, parque natural, parques naturales, reserva natural, red natura, lugares de importancia comunitaria, zepa, espais naturals protegits, espais protegits, parc natural, natura sarea, espazos naturais protexidos), 361 in a catalogue of ES, 0 in the EEA catalogue; 5 batch(es) did not answer",
+    "national catalogue: https://www.idee.es/csw-codsi-idee/srv/spa/csw: \"espacios naturales protegidos\" -> 100 record(s); https://www.idee.es/csw-codsi-idee/srv/spa/csw: \"red natura\" -> 100 record(s)"
+   ],
+   "read_date": "2026-11-01"
+  }
+ },
+ "web": {
+  "requests": 0,
+  "cache_hits": 0,
+  "robots_refused": 0,
+  "rested": 0,
+  "banned": 0,
+  "errors": 0,
+  "blocked": 0
+ },
+ "resting_hosts": [],
+ "blocked_hosts": {
+  "e-gov.ooe.gv.at": "403 Forbidden on https://e-gov.ooe.gv.at/robots.txt"
+ }
+}

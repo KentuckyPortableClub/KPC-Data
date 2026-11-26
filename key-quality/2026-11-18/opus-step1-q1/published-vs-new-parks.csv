@@ -1,0 +1,657 @@
+area,ref,name,activations,old class,new class,old records,new records,what changed
+US-NC,US-8313,Mountains to Sea State Trail,2617,two,verified,214857 214858 sgnca17449 sgnca9186 sgnca9190,trl8313,records changed; class two -> verified
+US-VA,US-3378,Blue Ridge National Parkway,2408,two,verified,3546 sgvae491135 sgvae491138 sgvae491144 sgvae491146 sgvae491152 sgvae491158 sgvae491177 sgvae491178 sgvae491179 sgvae491462 sgvae491465,3546,records changed; class two -> verified
+US-VA,US-4526,George Washington & Jefferson National Forest,2231,verified,verified,2975 2984 sgvae490181 sgvae490198 sgvae490239 sgvae490296 sgvae490597 sgvae490614 sgvae490628 sgvae491485 sgvae491489 sgvae491505,2635 271121 271123 2975 2984,records changed
+US-CO,US-4404,Pike National Forest,1793,pin,flagged,,2703,outline gained; class pin -> flagged; hard flags - -> PIN_FAR
+US-VA,US-0064,Shenandoah National Park,1545,verified,verified,3474 sgvae492329 sgvae492332 sgvae492344 sgvae492442 sgvae492449 sgvae492450 sgvae492459 sgvae492460 sgvae492461 sgvae492489 sgvae492495,271114 271115 271116 271117 3474 sgvae492454,records changed
+US-FL,US-3627,General James A. Van Fleet State Trail,1149,verified,verified,191916 fnl1079 sgfla38,trl3627,records changed
+US-VA,US-0712,Manassas National Battlefield,766,verified,verified,3106 sgvae491596 sgvae491597 sgvae491598 sgvae491612 sgvae491621 sgvae491623 sgvae491650 sgvae491662 sgvae491665 sgvae491675 sgvae491696,3106 sgvae491596,records changed
+US-WA,US-3216,Lake Sammamish State Park,667,verified,verified,271473 sgwaa94 sgwad1349 sgwad1367 sgwad5379 sgwae66126,271473 sgwaa94 sgwad1349 sgwad1367 sgwad5379,records changed
+US-MT,US-0070,Yellowstone National Park,619,verified,verified,3482 sgmtd52,3482,records changed
+US-VA,US-9907,First Landing National Recreation Trail,609,flagged,verified,54565,trl9907,records changed; class flagged -> verified; hard flags OTHER_PARK/SHARED -> -
+US-IN,US-4215,Morgan-Monroe State Forest,574,verified,flagged,200710 sgina4593 sgina4594 sgina4595 sgina4596 sgina5695,200710 sgina4593 sgina4594 sgina4595 sgina4596 sgina5695,class verified -> flagged; hard flags - -> SIZE_BIG
+US-NV,US-0676,Lake Mead National Recreation Area,567,verified,verified,3508 sgnvb12 sgnvd12,3508,records changed
+US-PA,US-1352,Fort Washington State Park,547,verified,flagged,251624 76498 sgpaa117 sgpab159 sgpab160 sgpab161 sgpab162 sgpab163,251624 76498 sgpaa117 sgpab159 sgpab160 sgpab161 sgpab162 sgpab163,class verified -> flagged; hard flags - -> SIZE_BIG
+US-AL,US-4560,Natchez Trace Trail National Scenic Trail,469,flagged,verified,3552,trl4560,records changed; class flagged -> verified; hard flags SHARED -> -
+US-VA,US-0016,Colonial National Historical Park,469,verified,verified,3195 sgvae490551 sgvae490553 sgvae490554 sgvae490555 sgvae490558 sgvae490568 sgvae490569 sgvae490573 sgvae490574 sgvae490577 sgvae490681,3195 sgvae490681,records changed
+US-MS,US-4560,Natchez Trace Trail National Scenic Trail,466,flagged,verified,3552,trl4560,records changed; class flagged -> verified; hard flags SHARED -> -
+US-TN,US-4560,Natchez Trace Trail National Scenic Trail,466,flagged,verified,3552,trl4560,records changed; class flagged -> verified; hard flags SHARED -> -
+US-VA,US-0735,Harpers Ferry National Historical Park,444,verified,verified,3206 sgvae491780 sgvae491781 sgvae491782 sgvae491783,3206,records changed
+US-WI,US-9862,Peter Helland State Wildlife Area,439,verified,flagged,272724 78108 78192 78194 sgwia713502 sgwid19769036 sgwid19769037 sgwid19769042 sgwid19769043 sgwid19769045 sgwid19769252 sgwid19806710,272724 78108 78192 78194 sgwia713502 sgwid19769036 sgwid19769037 sgwid19769042 sgwid19769043 sgwid19769045 sgwid19769252 sgwid19806710,class verified -> flagged; hard flags - -> SIZE_BIG
+US-NC,US-3843,Haw River at Iron Ore Access Belt State Park,429,two,pin,214838,,outline lost; class two -> pin
+US-FL,US-1915,Silver Springs State Park,403,flagged,flagged,fnl2730 sgfla139 sgflf15484 sgflf24510 sgflf5429 sgflf55919 sgflf67842,fnl2730 sgfla139 sgflf67842,records changed; hard flags SHARED/SIZE_BIG -> SIZE_BIG
+US-WI,US-4306,Mack State Wildlife Area,401,verified,flagged,272648 72049 sgwia713398 sgwid19756250 sgwid19756251 sgwid19756252 sgwid19756253 sgwid19756256 sgwid19756257 sgwid19756258 sgwid19756259 sgwid19806983,272648 72049 sgwia713398 sgwid19756250 sgwid19756251 sgwid19756252 sgwid19756253 sgwid19756256 sgwid19756257 sgwid19756258 sgwid19756259 sgwid19806983,class verified -> flagged; hard flags - -> SIZE_BIG
+US-ID,US-4474,Boise National Forest,396,flagged,verified,2768 2770 2771 2794 2801 sgidd231 sgidd249,2768 2770 2771 2794 2801 sgidd231 sgidd249,class flagged -> verified; hard flags SHARED -> -
+US-CO,US-1208,Arkansas River Headwaters Recreation Park,380,flagged,pin,184168 cow29,,outline lost; class flagged -> pin; hard flags PIN_FAR -> -
+US-FL,US-6327,Tenoroc Wildlife Area,378,one,two,sgflf2908 sgflf33136 sgflf52650 sgflf53148 sgflf74798,sgflf2908 sgflf33136 sgflf52650 sgflf53148 sgflf74798,class one -> two
+US-NV,US-0021,Death Valley National Park,372,verified,verified,3434 sgnvb2 sgnvd2,3434,records changed
+US-VA,US-0567,James River National Wildlife Refuge,371,verified,verified,3973 4919 sgvae490158 sgvae490549 sgvae491835 sgvae491836 sgvae491837 sgvae491838 sgvae491848 sgvae491849 sgvae492282,3973 4919 sgvae490549,records changed
+US-AR,US-7278,Cypress Bayou Wildlife Management Area,357,verified,flagged,166785 arw1796,166785 arw1796,class verified -> flagged; hard flags - -> SIZE_BIG
+US-IN,US-4162,Mounds on Brookville Lake State Recreation Area,355,two,pin,ind3169 ind3170 ind3171 sgina3169 sgina3170 sgina3171 sginc3169 sginc3170 sginc3171,,outline lost; class two -> pin
+US-AR,US-7523,DeGray Wildlife Management Area,344,flagged,one,arw1827 sgarc64,arw1827 sgarc64,class flagged -> one; hard flags SHARED -> -
+US-OR,US-4381,Mount Hood National Forest,342,flagged,flagged,2893 2907 2908 2909 2911,2893 2907 2908 2909 2911,hard flags OTHER_PARK/SHARED -> OTHER_PARK
+US-PA,US-5471,Michaux State Forest,339,verified,two,250996 57072 sgpae1005 sgpae120762 sgpae120763 sgpae133974 sgpae1898 sgpae1945 sgpae2015 sgpae2029 sgpae2167 sgpae997,250996 57072 sgpae1005 sgpae120762 sgpae120763 sgpae133974 sgpae1898 sgpae1945 sgpae2015 sgpae2029 sgpae2167 sgpae997,class verified -> two
+US-WI,US-4298,Killsnake State Wildlife Area,336,verified,flagged,272599 sgwia713380 sgwid19752308 sgwid19764985 sgwid19768010 sgwid19768027 sgwid19768028 sgwid19773050 sgwid19773051 sgwid19777657 sgwid19777679 wid713380,272599 sgwia713380 sgwid19752308 sgwid19764985 sgwid19768010 sgwid19768027 sgwid19768028 sgwid19773050 sgwid19773051 sgwid19777657 sgwid19777679 wid713380,class verified -> flagged; hard flags - -> SIZE_BIG
+US-FL,US-1923,Tomoka State Park,327,flagged,verified,191877 sgfla29 sgflf10162 sgflf11479 sgflf12216 sgflf15601 sgflf36373 sgflf4222 sgflf5624 sgflf61070 sgflf68887 sgflf69394,191877 sgfla29 sgflf10162 sgflf11479 sgflf12216 sgflf15601 sgflf36373 sgflf4222 sgflf5624 sgflf61070 sgflf68887 sgflf69394,class flagged -> verified; hard flags SHARED -> -
+US-MT,US-4504,Helena - Lewis and Clark National Forest,322,verified,verified,2662 2670 sgmtd742,2662 2670,records changed
+US-AR,US-1091,Lake Dardanelle State Park,320,verified,verified,sgarb45 sgarc26,sgarb45,records changed
+US-DE,US-7645,Assawoman Bay State Wildlife Area,316,one,two,52015 52016 57490 57491 57492 57493 57494 57495 sgdec55 sgdec56 sgdec68 sgdec70,57490 57491 57492 sgdea1108 sgdea1299 sgdea1300 sgdea826 sgdea827 sgdec55 sgdec56 sgdec68 sgdec70,records changed; class one -> two
+US-IL,US-1004,Kankakee River State Park,313,verified,flagged,70817 71098 sgila1046 sgilb197 sgilc8558,70817 71098 sgila1046 sgilb197 sgilc8558,class verified -> flagged; hard flags - -> SIZE_BIG
+US-VA,US-0691,Prince William Forest Park,311,verified,verified,3540 sgvae490607 sgvae490993 sgvae491471 sgvae491472 sgvae491474 sgvae491476 sgvae491477 sgvae491479 sgvae491518 sgvae491519 sgvae492281,3540 sgvae491471,records changed
+US-IN,US-4206,Hoosier Prairie State Nature Preserve,307,verified,flagged,200738 200740 200742 200794 ind3997 sgina3997 sgina3998 sginb3997 sginb3998 sginb3999 sginb4000 sginb4001,200738 200740 200742 200794 ind3997 sgina3997 sgina3998 sginb3997 sginb3998 sginb3999 sginb4000 sginb4001,class verified -> flagged; hard flags - -> SIZE_BIG
+US-NY,US-2013,Belmont Lake State Park,307,verified,flagged,237453 sgnyb578 sgnyb988,237453 sgnyb578 sgnyb988,class verified -> flagged; hard flags - -> SIZE_BIG
+US-VA,US-5510,Conway-Robinson Memorial State Forest,307,verified,flagged,270415 57427 sgvaa35 sgvae486646,270415 57427 sgvaa35 sgvae486646,class verified -> flagged; hard flags - -> SIZE_BIG
+US-AR,US-7280,Dardanelle Wildlife Management Area,297,flagged,two,arw1814 sgarc26,arw1814,records changed; class flagged -> two; hard flags SHARED -> -
+US-ID,US-4563,Pacific Northwest National Scenic Trail,294,two,verified,fsod86,trl4563,records changed; class two -> verified
+US-WA,US-4563,Pacific Northwest National Scenic Trail,293,two,verified,fsod86,trl4563,records changed; class two -> verified
+US-VA,US-0671,Assateague Island National Seashore,292,two,two,3322 sgvae490557,3322,records changed
+US-FL,US-3667,Withlacoochee State Trail,289,verified,verified,191921 fnl3400 sgfla8 sgflf4008 sgflf58051,trl3667,records changed
+US-GA,US-7139,Arabia Mountain National Heritage Area,289,two,pin,sggae49,,outline lost; class two -> pin
+US-MT,US-4501,Custer Gallatin National Forest,285,verified,verified,2652 sgmtd1213,2652,records changed
+US-AR,US-7294,Holland Bottoms Wildlife Management Area,279,flagged,two,166798 arw1853,arw1853,records changed; class flagged -> two; hard flags SHARED -> -
+US-AR,US-7180,Holland Bottoms State Natural Area,278,flagged,pin,166798,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-IN,US-4163,Cagles Mill Lake National Recreation Area,276,flagged,flagged,ind3224 ind3225 ind3226 sgina3224 sgina3225 sgina3226 sginc3224 sginc3225 sginc3226,ind3224 ind3225 ind3226 sgina3224 sgina3225 sgina3226 sginc3224 sginc3225 sginc3226,hard flags OTHER_PARK/SHARED -> OTHER_PARK
+US-MT,US-4507,Lolo National Forest,272,verified,verified,2673 sgmtd746,2673,records changed
+US-GA,US-7893,Augusta Canal National Heritage Area,269,two,pin,sggae1,,outline lost; class two -> pin
+US-IN,US-4179,Mt Etna on Salamonie Lake State Recreation Area,262,flagged,pin,ind5037,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-FL,US-6744,Terra Ceia Preserve Frog Creek State Conservation Area,252,flagged,pin,sgfla42,,outline lost; class flagged -> pin; hard flags OTHER_PARK/PIN_FAR/SHARED -> -
+US-AR,US-1080,DeGray Lake Resort State Park,251,flagged,pin,sgarc64,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-IN,US-5691,Raccoon Lake State Recreation Area,250,flagged,verified,201124 sgide1769 sginc3262,201124 sgide1769,records changed; class flagged -> verified; hard flags SHARED -> -
+US-MT,US-0028,Glacier National Park,245,verified,verified,3442 sgmtd225,3442,records changed
+US-NV,US-0974,Tule Springs Fossil Beds National Monument,243,verified,verified,3412 sgnvb6 sgnvd6,3412,records changed
+US-IN,US-5685,Lieber State Recreation Area,242,two,pin,sginc3226,,outline lost; class two -> pin
+US-PA,US-1380,Marsh Creek State Park,242,verified,flagged,251652 60902 60935 76502 sgpaa526 sgpab137 sgpab138,251652 60902 60935 76502 sgpaa526 sgpab137 sgpab138,class verified -> flagged; hard flags - -> SIZE_BIG
+US-WI,US-4274,Brillion State Wildlife Area,238,verified,flagged,272468 sgwia713321 sgwid19752255 sgwid19752258 sgwid19752323 sgwid19752324 sgwid19752326 sgwid19752327 sgwid19752330 sgwid19768034 sgwid19814200 wid713321,272468 sgwia713321 sgwid19752255 sgwid19752258 sgwid19752323 sgwid19752324 sgwid19752326 sgwid19752327 sgwid19752330 sgwid19768034 sgwid19814200 wid713321,class verified -> flagged; hard flags - -> SIZE_BIG
+US-CA,US-7378,Upper Newport Bay Ecological Reserve,233,verified,flagged,183621 sgcaa86 sgcac475 sgcac476 sgcac477 sgcac491,183621 sgcaa86 sgcac475 sgcac476 sgcac477 sgcac491,class verified -> flagged; hard flags - -> SIZE_BIG
+US-MT,US-4499,Beaverhead-Deerlodge National Forest,231,verified,verified,2645 2655 sgmtd745,2645 2655,records changed
+US-SD,US-2917,Custer State Park,226,verified,flagged,255269 sgsda995 sgsdb995,255269 sgsda995 sgsdb995,class verified -> flagged; hard flags - -> SIZE_BIG
+US-OR,US-2829,Fort Stevens State Park,219,verified,flagged,241354 78905 sgora205 sgorb174 sgord10332 sgord2079 sgord2393 sgord2394 sgord2397 sgord2449 sgord3613 sgord3923,241354 78905 sgora205 sgorb174 sgord10332 sgord2079 sgord2393 sgord2394 sgord2397 sgord2449 sgord3613 sgord3923,class verified -> flagged; hard flags - -> SIZE_BIG
+US-VA,US-9902,Colonial National Parkway,219,flagged,pin,3195,,outline lost; class flagged -> pin; hard flags OTHER_PARK/SHARED -> -
+US-VA,US-1310,New River Trail State Park,213,verified,verified,270654 270659 54619 54623 54630 54635 sgvad288 sgvad88 sgvad91 sgvae486341 sgvae486344 sgvae486946,trl1310,records changed
+US-VA,US-0019,Cumberland Gap National Historical Park,211,verified,verified,3198 sgvae491697 sgvae491698 sgvae491699 sgvae491700 sgvae491701 sgvae491702,3198 sgvae491702,records changed
+US-PA,US-5466,Delaware State Forest,210,verified,two,250984 76196 9323 sgpae12287 sgpae12289 sgpae139579 sgpae2018 sgpae277 sgpae3787 sgpae54758 sgpae675 sgpae676,250984 76196 9323 sgpae12287 sgpae12289 sgpae139579 sgpae2018 sgpae277 sgpae3787 sgpae54758 sgpae675 sgpae676,class verified -> two
+US-ID,US-4479,Payette National Forest,209,flagged,verified,2794 2795 2798 sgidb1937273 sgidd124 sgidd8,2795 sgidb1937273 sgidd124 sgidd8,records changed; class flagged -> verified; hard flags SHARED -> -
+US-ID,US-4500,Bitterroot National Forest,208,verified,flagged,2646 sgidd152 sgidd37 sgidd88,2646 sgidd152 sgidd37 sgidd88,class verified -> flagged; hard flags - -> SIZE_BIG
+US-MT,US-4500,Bitterroot National Forest,208,flagged,verified,2611 2647 sgmtd743,2611 2647,records changed; class flagged -> verified; hard flags BIG_PIECE/SIZE_BIG -> -
+US-WI,US-4284,Eldorado State Wildlife Area,204,verified,flagged,272535 sgwia713346 sgwid19753732 sgwid19753740 sgwid19753741 sgwid19753744 sgwid19753745 sgwid19753786 sgwid19753787 sgwid19753788 sgwid19753792 wid713346,272535 sgwia713346 sgwid19753732 sgwid19753740 sgwid19753741 sgwid19753744 sgwid19753745 sgwid19753786 sgwid19753787 sgwid19753788 sgwid19753792 wid713346,class verified -> flagged; hard flags - -> SIZE_BIG
+US-NH,US-2678,Silver Lake State Park,203,verified,flagged,nhc3947 nhc9626 nhc9707 sgnha3947 sgnha9626 sgnha9707 sgnhc2674 sgnhd3947 sgnhd9626 sgnhd9707,nhc3947 nhc9626 nhc9707 sgnha3947 sgnha9626 sgnha9707 sgnhc2674 sgnhd3947 sgnhd9626 sgnhd9707,class verified -> flagged; hard flags - -> SIZE_BIG
+US-VA,US-0730,Cedar Creek and Belle Grove National Historical Park,202,verified,verified,3190 sgvae491102 sgvae491103 sgvae491111 sgvae491113 sgvae491114 sgvae491514 sgvae491784 sgvae491798 sgvae491827 sgvae491843,3190,records changed
+US-IN,US-4169,Miami on Mississinewa Lake State Recreation Area,200,flagged,pin,2526,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-FL,US-3660,Suwannee River Wilderness State Trail,198,flagged,verified,sgfla109,trl3660,records changed; class flagged -> verified; hard flags PIN_FAR -> -
+US-NC,US-6937,Pisgah WRC State Game Land,197,flagged,verified,sgncb62 sgncc1191 sgncc1192 sgncc1217 sgncc635 sgncc656 sgncc760 sgncc764 sgncc771 sgncc794 sgncc806 sgncc807,sgnca5869 sgncb62 sgncc1192 sgncc1217 sgncc238 sgncc656 sgncc713 sgncc760 sgncc762 sgncc794 sgncc806 sgncc807,records changed; class flagged -> verified; hard flags SHARED -> -
+US-VA,US-0707,Petersburg National Battlefield,194,verified,verified,271113 3101 sgvae490579 sgvae491709 sgvae491710 sgvae491739 sgvae491746 sgvae491750 sgvae491753 sgvae491754 sgvae491763 sgvae491773,271113 3101 sgvae491710,records changed
+US-FL,US-3620,Florida Keys Overseas Heritage Trail State Park,188,verified,verified,9556 fnl945 sgfla128,trl3620,records changed
+US-IN,US-4164,Cecil M. Harden Lake State Recreation Area,188,verified,verified,2522 ind3261 ind3262 sgina3261 sgina3262 sginc3261 sginc3262,2522 ind3261 ind3262 sgina3261 sgina3262 sginc3261,records changed
+US-WI,US-4277,Collins Marsh State Wildlife Area,186,verified,flagged,272499 sgwia713335 sgwia714180 sgwid19755182 sgwid19755183 sgwid19755185 sgwid19755243 sgwid19755244 sgwid19755245 sgwid19755247 wid713335 wid714180,272499 sgwia713335 sgwia714180 sgwid19755182 sgwid19755183 sgwid19755185 sgwid19755243 sgwid19755244 sgwid19755245 sgwid19755247 wid713335 wid714180,class verified -> flagged; hard flags - -> SIZE_BIG
+US-WI,US-4339,Waunakee Marsh State Wildlife Area,175,two,flagged,272989 sgwia713521 sgwid19752893 sgwid19752894 sgwid19752895 sgwid19752896 sgwid19752899 sgwid19752900 sgwid19752901 sgwid19752903 sgwid19752905 wid713521,272989 sgwia713521 sgwid19752893 sgwid19752894 sgwid19752895 sgwid19752896 sgwid19752899 sgwid19752900 sgwid19752901 sgwid19752903 sgwid19752905 wid713521,class two -> flagged; hard flags - -> SIZE_BIG
+US-PA,US-1429,Tuscarora State Park,174,verified,flagged,251703 60957 76507 sgpaa13 sgpab225,251703 60957 76507 sgpaa13 sgpab225,class verified -> flagged; hard flags - -> SIZE_BIG
+US-OR,US-2827,Elijah Bristow State Park,171,verified,flagged,241353 osp50 sgora50 sgorb43 sgord2973 sgord2982 sgord3396 sgord3397 sgord3398 sgord3399 sgord3401 sgord3687,241353 osp50 sgora50 sgorb43 sgord2973 sgord2982 sgord3396 sgord3397 sgord3398 sgord3399 sgord3401 sgord3687,class verified -> flagged; hard flags - -> SIZE_BIG
+US-WI,US-8671,Tichigan State Wildlife Area,171,verified,flagged,272951 78199 78200 sgwia713509 sgwid19756950 sgwid19756978 sgwid19756988 sgwid19756989 sgwid19756990 sgwid19756991 sgwid19810260 wid713509,272951 78199 78200 sgwia713509 sgwid19756950 sgwid19756978 sgwid19756988 sgwid19756989 sgwid19756990 sgwid19756991 sgwid19810260 wid713509,class verified -> flagged; hard flags - -> SIZE_BIG
+US-CO,US-1219,Golden Gate Canyon State Park,170,verified,flagged,184244 189362 189363 189364 189365 189367 189368 189369 189370 189371 189373 sgcob12,184244 189362 189363 189364 189365 189367 189368 189369 189370 189371 189373 sgcob12,class verified -> flagged; hard flags - -> SIZE_BIG
+US-FL,US-3608,Blackwater Heritage State Trail,166,verified,verified,9560 sgfla178 sgflf55677,trl3608,records changed
+US-ID,US-4481,Sawtooth National Forest,166,flagged,verified,2771 2783 2801 2802 2803 sgidd59 sgidd87,2783 2802 2803 sgidd59 sgidd87,records changed; class flagged -> verified; hard flags SHARED -> -
+US-IN,US-4177,Dora-New Holland on Salamonie Lake State Recreation Area,166,flagged,pin,ind5037,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-VA,US-0566,Great Dismal Swamp National Wildlife Refuge,162,verified,verified,271120 3884 4828 sgvae487660 sgvae490123 sgvae490543 sgvae490545 sgvae490546 sgvae490548 sgvae490953 sgvae492275 sgvae492283,271120 3884 4828 sgvae490548,records changed
+US-WI,US-4286,French Creek State Wildlife Area,162,verified,flagged,272553 sgwia713351 sgwid19752512 sgwid19752513 sgwid19752514 sgwid19752515 sgwid19752516 sgwid19752517 sgwid19752518 sgwid19752519 sgwid19752520 wid713351,272553 sgwia713351 sgwid19752512 sgwid19752513 sgwid19752514 sgwid19752515 sgwid19752516 sgwid19752517 sgwid19752518 sgwid19752519 sgwid19752520 wid713351,class verified -> flagged; hard flags - -> SIZE_BIG
+US-AK,US-7884,Kenai Mountains-Turnagain Arm National Heritage Area,161,one,pin,fsod168,,outline lost; class one -> pin
+US-WI,US-4303,Little Rice State Wildlife Area,160,verified,flagged,272633 sgwia713392 sgwid19753817 sgwid19753818 sgwid19753829 sgwid19753830 sgwid19753835 sgwid19753857 sgwid19753858 sgwid19794550 sgwid19794555 wid713392,272633 sgwia713392 sgwid19753817 sgwid19753818 sgwid19753829 sgwid19753830 sgwid19753835 sgwid19753857 sgwid19753858 sgwid19794550 sgwid19794555 wid713392,class verified -> flagged; hard flags - -> SIZE_BIG
+US-AR,US-1093,Lake Frierson State Park,159,verified,verified,166848 sgarc5,166848,records changed
+US-IN,US-4186,Big Walnut - Tall Timbers Trail State Nature Preserve,155,flagged,pin,200769 200770 200771,,outline lost; class flagged -> pin; hard flags BIG_PIECE/SIZE_BIG -> -
+US-OR,US-9155,Historic Columbia River Highway State Trail,153,verified,verified,241566 sgorb181 sgorb415,trl9155,records changed
+US-VA,US-0726,Appomattox Court House National Historical Park,152,verified,verified,3185 sgvae491549 sgvae491550 sgvae491551 sgvae491556 sgvae491558 sgvae491559 sgvae491562 sgvae491574 sgvae491577 sgvae491578 sgvae491579,3185 sgvae491558,records changed
+US-NH,US-2658,Kingston State Park,151,two,flagged,nhc9599 sgnha9599 sgnhc1144 sgnhd9599,nhc9599 sgnha9599 sgnhc1144 sgnhd9599,class two -> flagged; hard flags - -> SIZE_BIG
+US-NV,US-4393,Gold Butte National Monument,151,verified,pin,nca21295 sgnvf4422 sgnvi506,,outline lost; class verified -> pin; VERIFIED OUTLINE LOST
+US-WI,US-1443,Buckhorn State Park,151,verified,flagged,272299 78247 78256 sgwia713572 sgwid19771829 sgwid19771830 sgwid19771831 sgwid19771832 sgwid19771833 sgwid19771834 sgwid19806744 sgwid19806748,272299 78247 78256 sgwia713572 sgwid19771829 sgwid19771830 sgwid19771831 sgwid19771832 sgwid19771833 sgwid19771834 sgwid19806744 sgwid19806748,class verified -> flagged; hard flags - -> SIZE_BIG
+US-GA,US-7902,Walton Wildlife Management Area,150,verified,verified,195119 sggaa28 sggac763,sggac763,records changed
+US-OR,US-5461,Tillamook State Forest,149,two,flagged,241270 242102,242102,records changed; class two -> flagged; hard flags - -> PIN_FAR
+US-VA,US-0569,Occoquan Bay National Wildlife Refuge,148,verified,verified,4176 5131 sgvae490550 sgvae491839,4176 5131 sgvae491839,records changed
+US-OR,US-4388,Willamette National Forest,147,verified,verified,2909 2939,2939,records changed
+US-AZ,US-4435,Sonoran Desert National Monument,144,verified,flagged,nca22329 sgazg1353,nca22329 sgazg1353,class verified -> flagged; hard flags - -> SIZE_BIG
+US-VA,US-0713,Richmond National Battlefield,142,verified,verified,3107 sgvae491523 sgvae491524 sgvae491526 sgvae491529 sgvae491533 sgvae491539 sgvae491542 sgvae491785 sgvae491786 sgvae491789 sgvae491846,3107 sgvae491533 sgvah2004103,records changed
+US-AR,US-1094,Lake Ouachita State Park,141,verified,verified,166849 sgarc92,166849,records changed
+US-FL,US-4633,Okaloacoochee Slough State Forest,141,flagged,two,190274 sgflb25 sgflf10532 sgflf12937 sgflf30220 sgflf35015 sgflf5138 sgflf65715 sgflf661 sgflf73331 sgflf78804 sgflf840,190274 sgflb25 sgflf10532 sgflf31401 sgflf35015 sgflf35016 sgflf5138 sgflf52029 sgflf65715 sgflf661 sgflf73331 sgflf840,records changed; class flagged -> two; hard flags SHARED -> -
+US-OK,US-2803,Sequoyah State Park,140,flagged,two,237702 sgide1365 sgide1366 sgoka2 sgoka49,sgide1366 sgoka49,records changed; class flagged -> two; hard flags OTHER_PARK/SHARED -> -
+US-WI,US-4297,Kiel Marsh State Wildlife Area,140,verified,flagged,272598 sgwia713377 sgwid19752315 sgwid19752316 sgwid19752317 sgwid19752318 sgwid19752319 sgwid19752320 sgwid19752321 sgwid19757778 sgwid19757779 wid713377,272598 sgwia713377 sgwid19752315 sgwid19752316 sgwid19752317 sgwid19752318 sgwid19752319 sgwid19752320 sgwid19752321 sgwid19757778 sgwid19757779 wid713377,class verified -> flagged; hard flags - -> SIZE_BIG
+US-FL,US-8371,Silver Springs Forest State Conservation Area,139,flagged,verified,191568 fnl2728 sgfle41386 sgflf15484 sgflf24510 sgflf5429 sgflf55919 sgflf67842,191568 fnl2728 sgfle41386,records changed; class flagged -> verified; hard flags SHARED -> -
+US-AR,US-1088,Lake Catherine State Park,138,verified,verified,166843 sgarb2 sgarc37,166843 sgarb2,records changed
+US-TN,US-11858,Middle Fork Bottoms State Park,137,two,two,255778 sgtna369 sgtnj259,sgtna369 sgtnj259,records changed
+US-FL,US-1843,Bulow Creek State Park,135,flagged,verified,191840 sgfla2 sgflf12888 sgflf17911 sgflf21652 sgflf25189 sgflf3005 sgflf46551 sgflf67501 sgflf72028 sgflf72483 sgflf78060,191840 sgfla2 sgflf12888 sgflf17911 sgflf21652 sgflf25189 sgflf3005 sgflf46551 sgflf67501 sgflf72028 sgflf72483 sgflf78060,class flagged -> verified; hard flags SHARED -> -
+US-FL,US-6318,Okaloacoochee Slough Wildlife Management Area,135,flagged,two,sgflf12937 sgflf30220 sgflf59213 sgflf78804 sgflg147 sgflg223,sgflf59213 sgflg147 sgflg223,records changed; class flagged -> two; hard flags SHARED -> -
+US-IN,US-4180,Mt Hope on Salamonie Lake State Recreation Area,135,flagged,pin,ind5037,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-WI,US-1437,Aztalan State Park,132,verified,flagged,272289 sgwia713562 sgwid19760929 sgwid19760930 sgwid19760931 sgwid19760932 sgwid19760933 sgwid19760934 sgwid19760935 sgwid19760936 sgwid19770225 sgwid19770226,272289 sgwia713562 sgwid19760929 sgwid19760930 sgwid19760931 sgwid19760932 sgwid19760933 sgwid19760934 sgwid19760935 sgwid19760936 sgwid19770225 sgwid19770226,class verified -> flagged; hard flags - -> SIZE_BIG
+US-UT,US-6077,Red Cliffs BLM National Conservation Area,129,flagged,pin,nca21306 nca21307,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-WI,US-9857,New Munster State Wildlife Area,129,verified,flagged,272685 78102 sgwia713414 sgwid19754934 sgwid19754935 sgwid19754936 sgwid19754937 sgwid19754947 sgwid19754961 sgwid19754962 sgwid19754963 wid713414,272685 78102 sgwia713414 sgwid19754934 sgwid19754935 sgwid19754936 sgwid19754937 sgwid19754947 sgwid19754961 sgwid19754962 sgwid19754963 wid713414,class verified -> flagged; hard flags - -> SIZE_BIG
+US-FL,US-1853,De Leon Springs State Park,126,flagged,verified,191889 sgfla40 sgflf12318 sgflf27930 sgflf502 sgflf61406 sgflf71661,191889 sgfla40,records changed; class flagged -> verified; hard flags OTHER_PARK -> -
+US-NY,US-2079,Hudson Highlands State Park,124,verified,flagged,237391 sgnyb1048 sgnyb451 sgnyb452 sgnyb456 sgnyb457 sgnyb467 sgnyb475 sgnyb478 sgnyb488 sgnyb596 sgnyb620,237391 sgnyb1048 sgnyb451 sgnyb452 sgnyb456 sgnyb457 sgnyb467 sgnyb475 sgnyb478 sgnyb488 sgnyb596 sgnyb620,class verified -> flagged; hard flags - -> SIZE_BIG
+US-PA,US-5480,Weiser State Forest,123,verified,flagged,251017 76194 76198 sgpae141409 sgpae141442 sgpae372 sgpae37509 sgpae54357 sgpae726 sgpae744 sgpae907 sgpae908,251017 76194 76198 sgpae141409 sgpae141442 sgpae372 sgpae37509 sgpae54357 sgpae726 sgpae744 sgpae907 sgpae908,class verified -> flagged; hard flags - -> SIZE_BIG
+US-MO,US-0374,Big Muddy National Wildlife Refuge,121,pin,verified,,3632,outline gained; class pin -> verified
+US-OR,US-4385,Umatilla National Forest,120,flagged,verified,2904 2926 2927 2929 2936,2927 2929 2936,records changed; class flagged -> verified; hard flags SHARED -> -
+US-VA,US-0561,Chincoteague National Wildlife Refuge,120,verified,verified,3719 4653 sgvae491115 sgvae491116 sgvae491117 sgvae491118 sgvae491119 sgvae491799 sgvae491808 sgvae491810 sgvae491812 sgvae491816,3719 4653 sgvae491799,records changed
+US-CO,US-1226,Lathrop State Park,119,verified,flagged,189389 189445 sgcob25 sgcoc489 sgcod216,189389 189445 sgcob25 sgcoc489 sgcod216,class verified -> flagged; hard flags - -> SIZE_BIG
+US-FL,US-3614,Crystal River Preserve State Park,119,flagged,verified,191774 sgfla144 sgflf13253 sgflf14936 sgflf18837 sgflf27196 sgflf2819 sgflf3175 sgflf3412 sgflf47841 sgflf48061 sgflf7126,191774 sgfla144 sgflf13253 sgflf18837 sgflf27196 sgflf28046 sgflf2819 sgflf3175 sgflf3412 sgflf48492 sgflf48934 sgflf7126,records changed; class flagged -> verified; hard flags SHARED -> -
+US-IN,US-5693,Cataract Falls State Recreation Area,118,verified,two,201092 sginc3225,201092,records changed; class verified -> two
+US-IN,US-4168,Frances Slocum on Mississinewa Lake State Recreation Area,110,flagged,pin,2526,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-IA,US-5730,Blood Run State Historic Site,109,one,pin,198260,,outline lost; class one -> pin
+US-ID,US-4387,Wallowa-Whitman National Forest,109,flagged,verified,2677 2798 2931 2937 sgidd12 sgidd149 sgidd202 sgidd34 sgidd64 sgidd92,2677 2798 2931 2937 sgidd12 sgidd149 sgidd202 sgidd34 sgidd64 sgidd92,class flagged -> verified; hard flags SHARED -> -
+US-IN,US-4171,Paynetown on Monroe Lake State Recreation Area,109,flagged,pin,2527,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-CA,US-0210,San Joaquin River National Wildlife Refuge,108,verified,flagged,4299 5256,4299 5256,class verified -> flagged; hard flags - -> SIZE_BIG
+US-IN,US-10561,Indiana War Memorial Plaza National Historical Site,105,one,pin,157431 200686,,outline lost; class one -> pin
+US-TX,US-6611,White Oak Creek Wildlife Management Area,105,verified,flagged,261817 sgtxb1516 sgtxc139 sgtxd1101,261817 sgtxb1516 sgtxc139 sgtxd1101,class verified -> flagged; hard flags - -> SIZE_BIG
+US-FL,US-6319,Perry Oldenburg Wildlife Area,104,two,one,191926 sgflg124,191926 sgflg124,class two -> one
+US-IN,US-4174,Newton-Stewart on Patoka Lake State Recreation Area,104,flagged,pin,ind4773,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-WA,US-5574,Tiger Mountain State Forest,104,two,pin,271371,,outline lost; class two -> pin
+US-AL,US-3692,Heron Bay and Portersville Bay State Fish and Wildlife Area,103,one,pin,78849,,outline lost; class one -> pin
+US-RI,US-2878,Lincoln Woods State Park,103,flagged,verified,57179 57180 57181 sgria53 sgria883 sgrib50 sgrib835 sgric53 sgric883,57179 57180 57181 sgria53 sgria883 sgrib50 sgrib835 sgric53 sgric883,class flagged -> verified; hard flags SHARED -> -
+US-VA,US-0560,Back Bay National Wildlife Refuge,103,verified,verified,3600 4530 sgvae491098 sgvae491099 sgvae491100 sgvae491101 sgvae491104 sgvae491105 sgvae491106 sgvae491107 sgvae491110 sgvae491483,3600 4530 sgvae491104,records changed
+US-ID,US-5614,Pend Oreille Wildlife Management Area,102,two,two,199488 199490 199492 199493 199494 199495 199496 199497 199499 199500 sgida73150 sgidb1935855,199488 199490 199492 199493 199494 199495 199496 199497 199498 199499 199500 sgida73150,records changed
+US-NC,US-0416,Pee Dee National Wildlife Refuge,102,verified,flagged,4214 5169 sgnca5672,4214 5169 sgnca5672,class verified -> flagged; hard flags - -> SIZE_BIG
+US-WA,US-10411,Willapa Hills State Park Trail State Trail,101,verified,verified,271587 sgwad2112,trl10411,records changed
+US-AR,US-11088,Frierson Wildlife Management Area,100,flagged,two,arw1758 sgarc5,arw1758 sgarc5,class flagged -> two; hard flags SHARED -> -
+US-VA,US-1315,Seven Bends State Park,100,verified,flagged,270667 54652 54653 54654 sgvad345 sgvad346 sgvad347 sgvae486266 sgvae486272 sgvae486274,270667 54652 54653 54654 sgvad345 sgvad346 sgvad347 sgvae486266 sgvae486272 sgvae486274,class verified -> flagged; hard flags - -> SIZE_BIG
+US-WI,US-9834,Bloomfield State Wildlife Area,100,verified,flagged,272462 sgwia713451 sgwid19817606 sgwid19817611 sgwid19817613 sgwid19817614 sgwid19817615 sgwid19817691 sgwid19817694 sgwid19817695 sgwid19817828 wid713451,272462 sgwia713451 sgwid19817606 sgwid19817611 sgwid19817613 sgwid19817614 sgwid19817615 sgwid19817691 sgwid19817694 sgwid19817695 sgwid19817828 wid713451,class verified -> flagged; hard flags - -> SIZE_BIG
+US-PA,US-1369,Laurel Hill State Park,98,verified,flagged,251641 60930 sgpaa34 sgpab177 sgpab178 sgpab233,251641 60930 sgpaa34 sgpab177 sgpab178 sgpab233,class verified -> flagged; hard flags - -> SIZE_BIG
+US-VA,US-9957,Shenandoah Wilderness Area,98,flagged,pin,3474,,outline lost; class flagged -> pin; hard flags BIG_PIECE/OTHER_PARK/SHARED/SIZE_BIG -> -
+US-AR,US-1092,Lake Fort Smith State Park,97,two,two,166847 sgarc355,166847,records changed
+US-FL,US-3656,Beker - South Fork State Park,96,pin,flagged,,fnl2768 sgfla102,outline gained; class pin -> flagged; hard flags - -> PIN_FAR
+US-IA,US-2306,McIntosh Woods State Park,96,verified,flagged,198556 sgiab104134 sgiac104134 sgiad104134,198556 sgiab104134 sgiac104134 sgiad104134,class verified -> flagged; hard flags - -> SIZE_BIG
+US-MT,US-4505,Kootenai National Forest,95,verified,verified,2616 2667 2669 sgmtd741,2616 2667 2669,records changed
+US-WA,US-10407,Columbia Plateau State Park Trail State Trail,95,verified,verified,271583 sgwad2227 sgwad2228 sgwad2229 sgwad3997 sgwad3998 sgwad6041,trl10407,records changed
+US-WI,US-4315,Mullet Creek State Wildlife Area,95,verified,flagged,272676 sgwia713410 sgwid19753693 sgwid19753695 sgwid19753696 sgwid19753698 sgwid19753699 sgwid19753700 sgwid19753701 sgwid19753702 sgwid19753703 wid713410,272676 sgwia713410 sgwid19753693 sgwid19753695 sgwid19753696 sgwid19753698 sgwid19753699 sgwid19753700 sgwid19753701 sgwid19753702 sgwid19753703 wid713410,class verified -> flagged; hard flags - -> SIZE_BIG
+US-DE,US-0229,Bombay Hook National Wildlife Refuge,94,verified,verified,3650 4584 sgdec77 sgdee241,3650 4584 sgdec77,records changed
+US-ID,US-4480,Salmon-Challis National Forest,94,flagged,verified,2770 2782 2797 2799 sgidd102 sgidd111,2782 2797 2799 sgidd102 sgidd111,records changed; class flagged -> verified; hard flags SHARED -> -
+US-OR,US-9528,Banks-Vernonia State Trail,94,verified,verified,241564 sgorb398 sgorb419 sgorb420,trl9528,records changed
+US-NC,US-11856,Fonta-Flora State Trail,93,verified,verified,214830 sgnca3495,trl11856,records changed
+US-CA,US-3586,Verdugo Mountains State Park,92,two,two,183914 sgcab659,sgcab659,records changed
+US-WI,US-4324,Powell Marsh State Wildlife Area,92,verified,flagged,272739 sgwia713428 sgwid19743400 sgwid19745560 sgwid19758035 sgwid19758036 sgwid19758039 sgwid19758041 sgwid19758059 sgwid19758062 sgwid19758069 wid713428,272739 sgwia713428 sgwid19743400 sgwid19745560 sgwid19758035 sgwid19758036 sgwid19758039 sgwid19758041 sgwid19758059 sgwid19758062 sgwid19758069 wid713428,class verified -> flagged; hard flags - -> SIZE_BIG
+US-RI,US-5483,Lincoln Woods State Forest,91,flagged,pin,57179,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-ID,US-2240,Lake Walcott State Park,90,two,pin,sgidb1937524,,outline lost; class two -> pin
+US-LA,US-0314,Mandalay National Wildlife Refuge,90,verified,flagged,4070 5025,4070 5025,class verified -> flagged; hard flags - -> SIZE_BIG
+US-MT,US-0054,Nez Perce National Historical Park,90,pin,verified,,3231,outline gained; class pin -> verified
+US-OR,US-0054,Nez Perce National Historical Park,90,pin,verified,,3232,outline gained; class pin -> verified
+US-TX,US-6550,Cooper Wildlife Management Area,90,flagged,one,261821 sgtxb1806 sgtxc161 sgtxd1158,261821 sgtxb1806 sgtxc161 sgtxd1158,class flagged -> one; hard flags PIN_FAR -> -
+US-WI,US-10785,Honey Creek State Wildlife Area,90,verified,flagged,272582 sgwia713365 sgwia714193 sgwid19756922 sgwid19756923 sgwid19756924 sgwid19756931 sgwid19756932 sgwid19756933 sgwid19756935 wid713365 wid714193,272582 sgwia713365 sgwia714193 sgwid19756922 sgwid19756923 sgwid19756924 sgwid19756931 sgwid19756932 sgwid19756933 sgwid19756935 wid713365 wid714193,class verified -> flagged; hard flags - -> SIZE_BIG
+US-NC,US-3852,Buxton Woods State Reserve,89,flagged,pin,214543,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-WA,US-3203,Palouse to Cascades State Park State Trail,89,two,verified,sgwad2221,trl3203,records changed; class two -> verified
+US-WA,US-3173,Columbia Hills State Park,88,flagged,verified,271416 sgwaa25 sgwad2518 sgwad3492,271416 sgwaa25 sgwad2518 sgwad3492,class flagged -> verified; hard flags SHARED -> -
+US-DE,US-0230,Prime Hook National Wildlife Refuge,87,verified,verified,4247 5205 sgdee243,4247 5205,records changed
+US-FL,US-6328,Three Lakes Wildlife Management Area,87,verified,flagged,191753 sgflf15252 sgflf19672 sgflf20317 sgflf2170 sgflf2959 sgflf30219 sgflf39369 sgflf49564 sgflf54715 sgflf71232 sgflg234,191753 sgflf15252 sgflf19672 sgflf20317 sgflf2170 sgflf2959 sgflf30219 sgflf39369 sgflf49564 sgflf54715 sgflf71232 sgflg234,class verified -> flagged; hard flags - -> SIZE_BIG
+US-NE,US-4017,Lincoln Saline Wetland State Park,87,one,pin,215703,,outline lost; class one -> pin
+US-AK,US-0022,Denali National Park,86,verified,verified,3435,3300 3435,records changed
+US-ID,US-2242,Lucky Peak State Park,86,flagged,verified,199735 199788 199789 sgidb1939893,199735 199788 199789,records changed; class flagged -> verified; hard flags SHARED -> -
+US-OK,US-2802,Sequoyah Bay State Park,86,flagged,verified,237702 sgide1365 sgide1366 sgoka2 sgoka49,237702 sgide1365 sgoka2,records changed; class flagged -> verified; hard flags OTHER_PARK/SHARED -> -
+US-MD,US-4767,Pocomoke State Forest,85,verified,verified,56811 9283 9284 9287 9291 mdd489 sgmda489,56811 56814 9283 9284 9285 9286 9287 9288 9291 mdd489 sgmda489,records changed
+US-OR,US-9149,Ontario State Recreation Area,85,verified,verified,241512 osp222 sgora222 sgorb190 sgord5650 sgord5651 sgord5652 sgord5653 sgore16578 sgore21580,241512 osp222 sgora222 sgorb190 sgord5650 sgord5651 sgord5652 sgord5653 sgore21580,records changed
+US-TX,US-0551,McFaddin National Wildlife Refuge,85,verified,flagged,4093 5047,4093 5047,class verified -> flagged; hard flags - -> SIZE_BIG
+US-VA,US-0572,Rappahannock River Valley National Wildlife Refuge,85,verified,verified,4258 5216 sgvae490129 sgvae490138 sgvae490144 sgvae490145 sgvae490149 sgvae490150 sgvae490151 sgvae491840 sgvae493031 sgvae495436,4258 5216 sgvae490149,records changed
+US-AR,US-7349,Ozark Lake Wildlife Management Area,84,two,two,arw1817 sgarc397,arw1817,records changed
+US-GA,US-7452,Rich Mountain Wildlife Management Area,84,flagged,verified,194396 195073 sggaa9 sggac745,194396 sggaa9 sggac745,records changed; class flagged -> verified; hard flags OTHER_PARK/SHARED -> -
+US-IN,US-10193,Elkhart Bog State Nature Preserve,83,flagged,verified,71149 ind3561 sgina3561 sginb3560 sginb3561 sginb3562,71149 ind3561 sgina3561 sginb3560 sginb3561 sginb3562,class flagged -> verified; hard flags SIZE_BIG -> -
+US-NC,US-6889,Buxton Woods State Game Land,81,flagged,pin,214543,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-SC,US-5487,Poe Creek State Forest,81,verified,two,254293 254295 254296 254297 254298 254300 254301 254482 254484 254485 254486 254488,254293 254295 254296 254297 254298 254300 254301 254482 254484 254485 254486 254488,class verified -> two
+US-CA,US-8300,Alabama Hills Scenic National Recreation Area,80,two,flagged,nca21318 nca21319 sgcad486,nca21318 nca21319 sgcad486,class two -> flagged; hard flags - -> SIZE_BIG
+US-OR,US-4382,Ochoco National Forest,80,flagged,verified,2912 2913,2913,records changed; class flagged -> verified; hard flags SHARED -> -
+US-WA,US-8664,Fishtrap National Recreation Area,80,flagged,pin,sgwae30756,,outline lost; class flagged -> pin; hard flags PIN_FAR/SHARED -> -
+US-FL,US-4627,Lake George State Forest,79,flagged,verified,191648 sgflb18 sgflf16788 sgflf2191 sgflf22700 sgflf23541 sgflf2500 sgflf36874 sgflf43423 sgflf534 sgflf60532 sgflf68722,191648 sgflb18 sgflf13679 sgflf16676 sgflf16788 sgflf22700 sgflf23541 sgflf2500 sgflf43423 sgflf534 sgflf60532 sgflf68722,records changed; class flagged -> verified; hard flags SHARED -> -
+US-VA,US-1301,High Bridge Trail State Park,78,verified,verified,270625 270627 270628 54567 54568 54571 sgvac15 sgvac27 sgvad15 sgvad56 sgvae486267 sgvae486312,trl1301,records changed
+US-FL,US-4613,Big Shoals State Forest,77,flagged,verified,191636 sgflb3 sgfld233 sgflf21292 sgflf27794 sgflf37314 sgflf37979 sgflf43333 sgflf46839 sgflf50252 sgflf56485 sgflf7868,191636 sgflb3,records changed; class flagged -> verified; hard flags SHARED -> -
+US-IN,US-4170,Hardin Ridge on Monroe Lake State Recreation Area,76,flagged,pin,2527,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-AR,US-7356,St. Francis National Forest Wildlife Management Area,75,flagged,flagged,3018 arw1759,3018 arw1759,hard flags OTHER_PARK -> OTHER_PARK/SIZE_BIG
+US-CA,US-0209,San Diego Bay National Wildlife Refuge,75,flagged,verified,167834 4297 5254,167834 4297 5254,class flagged -> verified; hard flags SIZE_BIG -> -
+US-NV,US-9285,Avi Kwa Ame (Spirit Mountain) National Monument,75,flagged,one,sgnvf4823,sgnvf4823,class flagged -> one; hard flags PIN_FAR -> -
+US-AR,US-9164,Lake Conway State Recreation Area,72,two,pin,sgarc53,,outline lost; class two -> pin
+US-WA,US-3252,Potholes State Park,72,flagged,verified,2341 271518 sgwaa147 sgwae10603,271518 sgwaa147,records changed; class flagged -> verified; hard flags SHARED -> -
+US-AR,US-1085,Hobbs State Park,71,flagged,flagged,166869 arw1722 sgarb7,166869 sgarb7,records changed
+US-DE,US-11809,Becks Pond State Fishing Lake,71,one,one,76203 sgdee671 sgdee672 sgdee673 sgdee674 sgdee675,76203 sgdea1219 sgdea781 sgdea782 sgdea843 sgdea844 sgdee671 sgdee672 sgdee673 sgdee674 sgdee675,records changed
+US-FL,US-1838,Big Shoals State Park,71,flagged,verified,191836 sgfla85 sgfld1090 sgfld233 sgfld627 sgfld908 sgflf21292 sgflf25581 sgflf27794 sgflf37314 sgflf37979 sgflf7868,191836 sgfla85 sgfld1090 sgfld627 sgfld908 sgflf25581,records changed; class flagged -> verified; hard flags SHARED -> -
+US-VA,US-0563,Elizabeth Hartwell Mason Neck National Wildlife Refuge,71,verified,verified,3808 4748 sgvae490424 sgvae490431 sgvae490435 sgvae490440 sgvae490441 sgvae490444 sgvae490445 sgvae490446 sgvae492286 sgvae492287,3808 4748,records changed
+US-VA,US-1321,Staunton River State Park,70,verified,flagged,270683 270684 54677 54678 54679 sgvac21 sgvad364 sgvad366 sgvad367 sgvae486313 sgvae487089 sgvae487090,270683 270684 54677 54678 54679 sgvac21 sgvad364 sgvad366 sgvad367 sgvae486313 sgvae487089 sgvae487090,class verified -> flagged; hard flags - -> SIZE_BIG
+US-WI,US-10650,Nevin Springs State Fish and Wildlife Area,70,one,pin,272683,,outline lost; class one -> pin
+US-VT,US-5541,Calvin Coolidge State Forest,69,flagged,one,61202 61205 61207 61214 61216 61217 61220 61225 61229 61230 61231 61234,61202 61205 61207 61214 61216 61217 61220 61225 61229 61230 61231 61234,class flagged -> one; hard flags SHARED -> -
+US-FL,US-12097,Hickory Hammock Wildlife Management Area,68,two,verified,sgflg24,sgflg24,class two -> verified
+US-CA,US-12612,Blue Sky Ecological Reserve,67,verified,flagged,183391 sgcaa11 sgcac427 sgcac428 sgcac429 sgcac430,183391 sgcaa11 sgcac427 sgcac428 sgcac429 sgcac430,class verified -> flagged; hard flags - -> SIZE_BIG
+US-FL,US-0237,Crystal River National Wildlife Refuge,67,flagged,verified,3757 4695 sgflf14936 sgflf47841 sgflf48061,3757 4695,records changed; class flagged -> verified; hard flags SHARED -> -
+US-ID,US-5599,CJ Strike Wildlife Management Area,66,flagged,verified,199370 199371 199372 199373 199374 3678 4612 sgakg13808 sgida73156 sgidb1937412 sgidc815,199370 199371 199372 199373 199374 3678 4612 sgida73156,records changed; class flagged -> verified; hard flags SHARED -> -
+US-VA,US-0905,Booker T. Washington National Monument,66,verified,verified,3342 sgvae491704 sgvae491705 sgvae491706 sgvae491707 sgvae491708,3342 sgvae491708,records changed
+US-AR,US-10236,Lake Sylvia State Recreation Area,65,two,pin,sgarc128,,outline lost; class two -> pin
+US-AR,US-7293,Hobbs State Park Wildlife Management Area,65,flagged,flagged,166869 arw1722 sgarb7,166869,records changed; hard flags SHARED -> SHARED/SIZE_BIG
+US-OR,US-9159,Lower Deschutes National Wild and Scenic River,65,flagged,pin,sgord5150,,outline lost; class flagged -> pin; hard flags PIN_FAR/SHARED -> -
+US-VA,US-0562,Eastern Shore of Virginia National Wildlife Refuge,65,verified,verified,3800 4740 sgvae490120 sgvae490632 sgvae490633 sgvae490635 sgvae490644 sgvae490645 sgvae490646 sgvae490650 sgvae490660 sgvae490679,3800 4740 sgvae490679,records changed
+US-ID,US-2250,Winchester Lake State Park,64,two,pin,sgidb1936754,,outline lost; class two -> pin
+US-FL,US-6320,Platt Branch Wildlife Area,63,two,flagged,191927 sgflg247,191927 sgflg247,class two -> flagged; hard flags - -> SIZE_BIG
+US-ID,US-4478,Nez Perce National Forest,63,flagged,none,2677 sgidd36 sgidd50 sgidd53,sgidd36 sgidd50 sgidd53,records changed; class flagged -> none; hard flags OTHER_PARK/SHARED -> -
+US-IN,US-4172,Jackson on Patoka Lake State Recreation Area,62,flagged,pin,ind4773,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-TX,US-6591,Pat Mayse Wildlife Management Area,62,verified,flagged,261816 sgtxb1744 sgtxc129 sgtxd1307 sgtxd6151 sgtxd6153 sgtxd6446 sgtxd991,261816 sgtxb1744 sgtxc129 sgtxd1307 sgtxd6151 sgtxd6153 sgtxd6446 sgtxd991,class verified -> flagged; hard flags - -> SIZE_BIG
+US-DE,US-5722,McGinnis Pond State Wildlife Area,61,verified,verified,76226 sgdea679 sgdea751 sgdea752 sgdea753 sgdec16 sgdee762 sgdee763 sgdee764,sgdea751 sgdec16,records changed
+US-FL,US-3661,Tallahassee-St. Marks Historic Railroad State Trail,61,verified,verified,191920 sgfla82,trl3661,records changed
+US-MT,US-0402,Lee Metcalf National Wildlife Refuge,61,verified,verified,4038 4992 sgmtd70,4038 4992,records changed
+US-WI,US-4322,Pine Island State Wildlife Area,61,verified,flagged,272732 78196 78197 sgwia713426 sgwid19752364 sgwid19752406 sgwid19752407 sgwid19752408 sgwid19768443 sgwid19768444 sgwid19773004 wid713426,272732 78196 78197 sgwia713426 sgwid19752364 sgwid19752406 sgwid19752407 sgwid19752408 sgwid19768443 sgwid19768444 sgwid19773004 wid713426,class verified -> flagged; hard flags - -> SIZE_BIG
+US-DE,US-7653,Tony Florio Woodland Beach State Wildlife Area,60,one,two,57603 57604 76245 sgdec35 sgdec8 sgdec9 sgdee868,57604 76245 sgdea1144 sgdea634 sgdea649 sgdea746 sgdea820 sgdea822 sgdea823 sgdec35 sgdec8 sgdec9,records changed; class one -> two
+US-UT,US-6063,Red Cliffs BLM Recreation Management Area,60,flagged,verified,nca21306 nca21307 rma9123 rst9123 rst9145 sgakg9145,rma9123 rst9123 rst9145 sgakg9145,records changed; class flagged -> verified; hard flags SHARED -> -
+US-WI,US-4321,Peters Marsh State Wildlife Area,60,verified,flagged,272726 sgwia713424 sgwid19768173 sgwid19768174 sgwid19768175 sgwid19768181 sgwid19768184 sgwid19768185 sgwid19768572 sgwid19768574 sgwid19769348 wid713424,272726 sgwia713424 sgwid19768173 sgwid19768174 sgwid19768175 sgwid19768181 sgwid19768184 sgwid19768185 sgwid19768572 sgwid19768574 sgwid19769348 wid713424,class verified -> flagged; hard flags - -> SIZE_BIG
+US-DE,US-10677,Haven State Fishing Lake,58,two,two,57534 76221 sgdee785 sgdee786 sgdee787,57534 76221 sgdea582 sgdea583 sgdea584 sgdea657 sgdee785 sgdee786 sgdee787,records changed
+US-FL,US-1859,Dunns Creek State Park,57,flagged,verified,191847 sgfla9 sgflf1106 sgflf30971 sgflf56247,191847 sgfla9 sgflf56247,records changed; class flagged -> verified; hard flags SHARED -> -
+US-FL,US-8354,Lake George State Conservation Area,56,flagged,verified,190338 sgflf269 sgflf29536 sgflf36214 sgflf36874 sgflf38545 sgflf44640 sgflf46917 sgflf46929 sgflf56374 sgflf71065 sgflf73472,190338 sgfle25672 sgflf269 sgflf29536 sgflf36214 sgflf38545 sgflf44640 sgflf46917 sgflf46929 sgflf56374 sgflf71065 sgflf73472,records changed; class flagged -> verified; hard flags SHARED -> -
+US-WI,US-4290,Grand River Marsh State Wildlife Area,56,verified,flagged,272565 78081 sgwia713357 sgwid19754237 sgwid19755964 sgwid19783289 sgwid19801558 sgwid19809140 sgwid19809141 sgwid19809143 sgwid19809157 sgwid19809159,272565 78081 sgwia713357 sgwid19754237 sgwid19755964 sgwid19783289 sgwid19801558 sgwid19809140 sgwid19809141 sgwid19809143 sgwid19809157 sgwid19809159,class verified -> flagged; hard flags - -> SIZE_BIG
+US-CT,US-6859,Enders State Forest,55,verified,flagged,54378 56463 sgcta4078 sgctb2221 sgctb2240 sgctb2244 sgctb2254 sgctb2258 sgctb2281 sgctb2282 sgctb2283 sgctc27,54378 56463 sgcta4078 sgctb2221 sgctb2240 sgctb2244 sgctb2254 sgctb2258 sgctb2281 sgctb2282 sgctb2283 sgctc27,class verified -> flagged; hard flags - -> SIZE_BIG
+US-DE,US-10675,Garrisons State Fishing Lake,55,verified,verified,57533 76219 sgdee685 sgdee779 sgdee780 sgdee781,57533 76219 sgdea1093 sgdea1307 sgdea830 sgdea993 sgdee685 sgdee779 sgdee780 sgdee781,records changed
+US-MI,US-1517,Mackinac Island State Park,55,flagged,two,71154,71154,class flagged -> two; hard flags SHARED -> -
+US-FL,US-3645,Palatka-to-Lake Butler State Trail,54,verified,verified,191919 fnl2214 sgfla57,trl3645,records changed
+US-VA,US-0573,Wallops Island National Wildlife Refuge,54,flagged,flagged,4448 5405 sgvae490625,4448 5405,records changed
+US-DE,US-10688,Tubmill Pond State Fishing Lake,53,one,one,76242 9349 sgdee827,76242 9349 sgdea1023 sgdee827,records changed
+US-OR,US-4380,Malheur National Forest,53,flagged,verified,2903 2904 2912 2926,2903 2904 2912 2926,class flagged -> verified; hard flags SHARED -> -
+US-AR,US-1095,Lake Poinsett State Park,52,verified,verified,166850 sgarb31 sgarc107,166850 sgarb31,records changed
+US-FL,US-3640,Nature Coast State Trail,52,verified,verified,191918 fnl2029 sgfla48 sgflf25584,trl3640,records changed
+US-IN,US-10237,Mongoquinong State Nature Preserve,52,flagged,pin,200896 200897,,outline lost; class flagged -> pin; hard flags PIN_FAR -> -
+US-FL,US-6292,Big Bend Wildlife Management Area,51,verified,two,191735 sgflf1008 sgflf10238 sgflf13644 sgflf23712 sgflf33457 sgflg189 sgflg190 sgflg191 sgflg192 sgflg193,191735 sgflf1008 sgflf10238 sgflf13644 sgflf23712 sgflf33457 sgflg189 sgflg190 sgflg191 sgflg192 sgflg193,class verified -> two
+US-GA,US-7914,Sandhills East Wildlife Management Area,51,flagged,pin,sggaa34 sggaa90 sggac768 sggac821,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-IN,US-4175,Tillery Hill on Patoka Lake State Recreation Area,51,flagged,pin,ind4773,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-NV,US-9288,Wee Thump Joshua Tree BLM National Conservation Area,51,two,verified,wbl218,wbl218,class two -> verified
+US-WA,US-12287,Vancouver Lake Wildlife Area State Wildlife Area,51,two,two,sgwab1468 sgwab1708 sgwae9889 sgwaf1468,sgwab1468 sgwab1708 sgwaf1468,records changed
+US-WI,US-0605,Trempealeau National Wildlife Refuge,51,verified,flagged,4410 5367,4410 5367,class verified -> flagged; hard flags - -> SIZE_BIG
+US-CO,US-0220,Alamosa National Wildlife Refuge,50,verified,flagged,3571 4504,3571 4504,class verified -> flagged; hard flags - -> SIZE_BIG
+US-DE,US-7646,Augustine State Wildlife Area,50,flagged,verified,57497 57498 57499 76247 sgdea1147 sgdea1151 sgdea787 sgdea880 sgdea881 sgdec14 sgdec6 sgdec62,57497 57498 57499 sgdea1147 sgdea1151 sgdea557 sgdea787 sgdea880 sgdea881 sgdec14 sgdec6 sgdec62,records changed; class flagged -> verified; hard flags SHARED -> -
+US-VT,US-3109,Coolidge State Park,50,verified,pin,61205 61234 sgvta18,,outline lost; class verified -> pin; VERIFIED OUTLINE LOST
+US-WA,US-3176,Curlew Lake State Park,50,verified,verified,271576 sgwaa34 sgwad4055 sgwad4893 sgwad6317 sgwae12322,271576 sgwaa34 sgwad4055 sgwad4893 sgwad6317,records changed
+US-IN,US-4173,Lick Fork on Patoka Lake State Recreation Area,49,flagged,pin,ind4773,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-AL,US-4596,Geneva State Forest,48,flagged,verified,166055,166055,class flagged -> verified; hard flags SIZE_BIG -> -
+US-AR,US-1089,Lake Charles State Park,48,verified,verified,166844 sgarb50 sgarc98,166844 sgarb50,records changed
+US-AR,US-1090,Lake Chicot State Park,48,verified,verified,sgarb4 sgarc414,sgarb4,records changed
+US-AR,US-4373,Blue Mountain Lake (Outlet Area and Waveland Park) National Recreation Area,48,two,one,2492 sgarc404,2492,records changed; class two -> one
+US-MT,US-0947,Little Bighorn Battlefield National Monument,48,verified,verified,3388 sgmtd79,3388,records changed
+US-IL,US-4150,Ray Norbut State Fish and Wildlife Area,46,flagged,flagged,70877 71080 sgila1091 sgila1149 sgild57,70877 71080 sgila1091 sgila1149 sgild57,hard flags BIG_PIECE -> BIG_PIECE/SIZE_BIG
+US-IN,US-10239,McCloskey's Burr Oak Savanna State Nature Preserve,46,flagged,verified,70989 ind4481 ind4482 sgina4481 sgina4482 sginb4480 sginb4481 sginb4482,70989 ind4481 ind4482 sgina4481 sgina4482 sginb4480 sginb4481 sginb4482,class flagged -> verified; hard flags SIZE_BIG -> -
+US-LA,US-0304,Cameron Prairie National Wildlife Refuge,46,verified,flagged,3688 4622,3688 4622,class verified -> flagged; hard flags - -> SIZE_BIG
+US-OR,US-10506,Estacada- Boring State Trail,46,verified,verified,241565 sgorb394,trl10506,records changed
+US-WI,US-13535,La Crosse Area Comprehensive State Fish and Wildlife Area,46,flagged,flagged,272605 sgwia712643 sgwia713917 sgwid19775639 sgwid19789227 sgwid19790556 sgwid19790557 sgwid19791053 sgwid19797397 sgwid19797952 sgwid19797953 sgwid19805941,272605 sgwia712643 sgwia713917 sgwid19775639 sgwid19789227 sgwid19790556 sgwid19790557 sgwid19791053 sgwid19797397 sgwid19797952 wid712643 wid713917,records changed
+US-WI,US-4347,Yellowstone State Wildlife Area,46,verified,flagged,273022 273024 sgwia713550 sgwia713551 sgwia713552 sgwid19755079 sgwid19755080 sgwid19755086 sgwid19755087 wid713550 wid713551 wid713552,273022 273024 sgwia713550 sgwia713551 sgwia713552 sgwid19755079 sgwid19755080 sgwid19755086 sgwid19755087 wid713550 wid713551 wid713552,class verified -> flagged; hard flags - -> SIZE_BIG
+US-DE,US-9892,St. Jones National Reserve,45,one,one,57596 76238 sgdea36 sgdee497 sgdee819,57596 76238 sgdea36 sgdea869 sgdee497 sgdee819,records changed
+US-IA,US-2320,Springbrook State Park,45,verified,flagged,198574 sgiab107852 sgiac107852 sgiad107852,198574 sgiab107852 sgiac107852 sgiad107852,class verified -> flagged; hard flags - -> SIZE_BIG
+US-MT,US-7994,Selway-Bitterroot Wilderness Area,45,verified,verified,sgmtd206 wld372,wld372,records changed
+US-WA,US-3226,Loomis Lake State Park,45,flagged,verified,271578 sgwaa104 sgwad2415 sgwad5387 sgwad6280 sgwae74821,271578 sgwaa104 sgwad2415 sgwad5387 sgwad6280,records changed; class flagged -> verified; hard flags SHARED -> -
+US-WA,US-8665,Sprague Lake State Wildlife Area,45,verified,verified,158391 sgwab1449 sgwab1547 sgwae68411 sgwaf1449,158391 sgwab1449 sgwab1547 sgwaf1449,records changed
+US-WI,US-9868,Turtle Creek State Wildlife Area,45,verified,flagged,272971 sgwia713514 sgwid19757091 sgwid19757092 sgwid19758115 sgwid19758116 sgwid19758128 sgwid19758148 sgwid19758150 sgwid19770078 sgwid19780472 wid713514,272971 sgwia713514 sgwid19757091 sgwid19757092 sgwid19758115 sgwid19758116 sgwid19758128 sgwid19758148 sgwid19758150 sgwid19770078 sgwid19780472 wid713514,class verified -> flagged; hard flags - -> SIZE_BIG
+US-CT,US-10961,Mattatuck State Forest,44,verified,flagged,51917 53002 53003 53007 53008 53009 53015 53016 53020 8923 sgcta4082 sgctc95,51917 53002 53003 53007 53008 53009 53015 53016 53020 8923 sgcta4082 sgctc95,class verified -> flagged; hard flags - -> SIZE_BIG
+US-GA,US-7906,Chattahoochee Fall Line Almo Tract Wildlife Management Area,44,flagged,flagged,194888 195025 sggaa181 sggac828,195025 sggaa181 sggac828,records changed
+US-PA,US-12664,Pine Creek Rail Trail State Trail,44,one,verified,250947,trl12664,records changed; class one -> verified
+US-WA,US-3215,Lake Isabella State Park,44,verified,verified,271471 sgwaa92 sgwad2583 sgwae20097,271471 sgwaa92 sgwad2583,records changed
+US-WI,US-4334,Tom Lawin State Wildlife Area,44,verified,flagged,272954 sgwia713373 sgwid19788213 sgwid19788432 sgwid19788433 sgwid19788435 sgwid19788444 sgwid19788607 sgwid19788608 sgwid19789035 sgwid19801597 wid713373,272954 sgwia713373 sgwid19788213 sgwid19788432 sgwid19788433 sgwid19788435 sgwid19788444 sgwid19788607 sgwid19788608 sgwid19789035 sgwid19801597 wid713373,class verified -> flagged; hard flags - -> SIZE_BIG
+US-CT,US-6863,James L. Goodwin State Forest,43,verified,verified,51916 52997 54380 sgcta4080 sgctb11872 sgctb11873 sgctb11888 sgctb7153 sgctb7155 sgctb7158 sgctb7166,51916 52977 52997 54380 sgcta4080 sgctb11872 sgctb11873 sgctb11888 sgctb7153 sgctb7155 sgctb7158 sgctb7166,records changed
+US-GA,US-9793,Ball's Ferry Property Wildlife Management Area,43,two,two,195122 sggaa195 sggac911,sggaa195 sggac911,records changed
+US-PA,US-1389,Nescopeck State Park,43,verified,flagged,251661 60905 sgpaa59 sgpab195,251661 60905 sgpaa59 sgpab195,class verified -> flagged; hard flags - -> SIZE_BIG
+US-FL,US-6321,Rotenberger Wildlife Management Area,42,verified,flagged,191749 sgflf10898 sgflf15509 sgflf18301 sgflf18463 sgflf24385 sgflf29058 sgflf29585 sgflf34681 sgflf37699 sgflf47432 sgflf716,191749 sgflf10898 sgflf15509 sgflf18301 sgflf18463 sgflf24385 sgflf29058 sgflf29585 sgflf34681 sgflf37699 sgflf47432 sgflf716,class verified -> flagged; hard flags - -> SIZE_BIG
+US-ID,US-11386,Lucky Peak Reservoir State Fishing Lake,42,flagged,one,199788 199789 sgidb1939893,sgidb1939893,records changed; class flagged -> one; hard flags OTHER_PARK/SHARED -> -
+US-NH,US-2670,Northwood Meadows State Park,42,verified,flagged,56905 56906 sgnha5048 sgnha5049 sgnhc2120 sgnhc2121 sgnhd5048 sgnhd5049,56905 56906 sgnha5048 sgnha5049 sgnhc2120 sgnhc2121 sgnhd5048 sgnhd5049,class verified -> flagged; hard flags - -> SIZE_BIG
+US-NV,US-0464,Ash Meadows National Wildlife Refuge,42,verified,verified,3594 4524 sgakh1225 sgnvb3 sgnvb9 sgnvd9 sgnvh1225 sgnvi504,3594 4524 sgakh1225 sgnvb3 sgnvh1225 sgnvi504,records changed
+US-OR,US-12843,The North Spit BLM Recreation Management Area,42,verified,two,rst11632 rst11675 rst12338 rst12956 sgakh1811,rst12956,records changed; class verified -> two
+US-WI,US-8668,Waterloo Prairie State Natural Area,42,flagged,verified,72052 sgwic6734 sgwif23634,sgwif23634,records changed; class flagged -> verified; hard flags SHARED -> -
+US-AR,US-7266,Blue Mountain Wildlife Management Area,41,flagged,two,arw1767 sgarc404,arw1767,records changed; class flagged -> two; hard flags SHARED -> -
+US-CT,US-12092,Nipmuck State Forest,41,verified,flagged,51965 51967 53136 53155 53159 53160 53161 53180 53181 54387 sgcta4092 sgctc8,51965 51967 53136 53155 53159 53160 53161 53180 53181 54387 sgcta4092 sgctc8,class verified -> flagged; hard flags - -> SIZE_BIG
+US-DE,US-11810,Raccoon Pond State Fishing Lake,41,one,one,57593 sgdee802 sgdee803,57593 sgdea1025 sgdea777 sgdee802 sgdee803,records changed
+US-IA,US-2315,Prairie Rose State Park,41,verified,flagged,198568 sgiaa40526 sgiab107867 sgiab107868 sgiac107867 sgiac107868 sgiad107867 sgiad107868,198568 sgiaa40526 sgiab107867 sgiab107868 sgiac107867 sgiac107868 sgiad107867 sgiad107868,class verified -> flagged; hard flags - -> SIZE_BIG
+US-MI,US-1505,Historic Mill Discovery State Park,41,two,pin,71006,,outline lost; class two -> pin
+US-TX,US-6535,Angelina-Neches/Dam B Wildlife Management Area,41,verified,flagged,261814 sgtxb1564 sgtxc140 sgtxd1366,261814 sgtxb1564 sgtxc140 sgtxd1366,class verified -> flagged; hard flags - -> SIZE_BIG
+US-AR,US-7190,Bull Shoals Lake State Recreation Area,40,two,pin,sgarc122,,outline lost; class two -> pin
+US-FL,US-8344,Dunns Creek State Conservation Area,40,flagged,two,190331 sgfle10357 sgflf1106 sgflf30971,190331 sgfle10357,records changed; class flagged -> two; hard flags SHARED -> -
+US-WI,US-4346,Yellow River State Wildlife Area,40,verified,flagged,273021 sgwia713324 sgwid19796296 sgwid19796298 sgwid19796299 sgwid19796300 sgwid19796301 sgwid19796302 sgwid19796303 sgwid19796305 sgwid19796306 wid713324,273021 sgwia713324 sgwid19796296 sgwid19796298 sgwid19796299 sgwid19796300 sgwid19796301 sgwid19796302 sgwid19796303 sgwid19796305 sgwid19796306 wid713324,class verified -> flagged; hard flags - -> SIZE_BIG
+US-DE,US-10670,Chipmans Pond State Fishing Lake,39,one,one,57519 8654 sgdee748 sgdee749 sgdee750,57519 8654 sgdea1091 sgdea1176 sgdea579 sgdee748 sgdee749 sgdee750,records changed
+US-IA,US-2316,Preparation Canyon State Park,39,verified,flagged,198569 sgiab104168 sgiac104168 sgiad104168,198569 sgiab104168 sgiac104168 sgiad104168,class verified -> flagged; hard flags - -> SIZE_BIG
+US-ID,US-2239,Lake Cascade State Park,39,flagged,pin,2309 sgidb1939824,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-NH,US-2680,Wadleigh State Park,39,verified,flagged,nhc4137 sgnha4137 sgnhc1799 sgnhd4137,nhc4137 sgnha4137 sgnhc1799 sgnhd4137,class verified -> flagged; hard flags - -> SIZE_BIG
+US-RI,US-10544,Jerimoth Hill State Recreation Area,39,one,pin,57110 57316,,outline lost; class one -> pin
+US-WA,US-3218,Lake Wenatchee State Park,39,verified,verified,271475 sgwaa96 sgwad4044 sgwae31397,271475 sgwaa96 sgwad4044,records changed
+US-WI,US-4283,Dunnville State Wildlife Area,39,verified,flagged,272529 78182 sgwia713345 sgwid19753311 sgwid19764484 sgwid19764485 sgwid19764488 sgwid19770387 sgwid19777061 sgwid19777897 sgwid19784460 wid713345,272529 78182 sgwia713345 sgwid19753311 sgwid19764484 sgwid19764485 sgwid19764488 sgwid19770387 sgwid19777061 sgwid19777897 sgwid19784460 wid713345,class verified -> flagged; hard flags - -> SIZE_BIG
+US-WI,US-9831,Allenton Marsh State Wildlife Area,39,two,flagged,272417 sgwia713306 sgwid19758221 sgwid19758228 sgwid19758229 sgwid19758230 sgwid19758231 sgwid19758232 sgwid19758233 sgwid19758251 sgwid19790093 wid713306,272417 sgwia713306 sgwid19758221 sgwid19758228 sgwid19758229 sgwid19758230 sgwid19758231 sgwid19758232 sgwid19758233 sgwid19758251 sgwid19790093 wid713306,class two -> flagged; hard flags - -> SIZE_BIG
+US-WI,US-9848,Jefferson Marsh State Wildlife Area,39,verified,flagged,272591 sgwia713371 sgwid19770427 sgwid19770428 sgwid19770430 sgwid19801640 sgwid19801658 sgwid19801659 sgwid19801660 sgwid19801682 sgwid19801684 wid713371,272591 sgwia713371 sgwid19770427 sgwid19770428 sgwid19770430 sgwid19801640 sgwid19801658 sgwid19801659 sgwid19801660 sgwid19801682 sgwid19801684 wid713371,class verified -> flagged; hard flags - -> SIZE_BIG
+US-MT,US-0399,Charles M. Russell National Wildlife Refuge,38,verified,verified,3711 4645 sgmtd1153 sgmtd1659,3711 4645,records changed
+US-TX,US-6563,Guadalupe Delta Wildlife Management Area,38,one,flagged,263424 263425 263426 263427 sgtxb1707 sgtxc124 sgtxc126 sgtxc127 sgtxd1036 sgtxd1043 sgtxd1047 sgtxd1626,263424 263425 263426 263427 sgtxb1707 sgtxc124 sgtxc126 sgtxc127 sgtxd1036 sgtxd1043 sgtxd1047 sgtxd1626,class one -> flagged; hard flags - -> SIZE_BIG
+US-WI,US-9832,Avon Bottoms State Wildlife Area,38,verified,flagged,272426 72044 sgwia713310 sgwid19757048 sgwid19757059 sgwid19757070 sgwid19757081 sgwid19757089 sgwid19767871 sgwid19801534 sgwid19801536 sgwid19801735,272426 72044 sgwia713310 sgwid19757048 sgwid19757059 sgwid19757070 sgwid19757081 sgwid19757089 sgwid19767871 sgwid19801534 sgwid19801536 sgwid19801735,class verified -> flagged; hard flags - -> SIZE_BIG
+US-DE,US-10684,Moores State Fishing Lake,37,verified,verified,57567 76231 sgdee842 sgdee843 sgdee844,57567 76231 sgdea1119 sgdea1131 sgdea729 sgdea779 sgdee842 sgdee843 sgdee844,records changed
+US-NV,US-0470,Sheldon National Wildlife Refuge,37,verified,verified,4329 5286 sgnvb13 sgnvd13,4329 5286,records changed
+US-OR,US-10479,Oasis BLM Recreation Management Area,37,one,pin,rma11297 rst11297,,outline lost; class one -> pin
+US-VA,US-0565,Fisherman Island National Wildlife Refuge,37,verified,verified,3850 4792 sgvae490421 sgvae490582 sgvae490583 sgvae490584 sgvae490585 sgvae490586 sgvae490587,3850 4792 sgvae490584,records changed
+US-WA,US-3213,Lake Chelan State Park,37,flagged,verified,271469 sgwaa90 sgwad4043 sgwae21969,271469 sgwaa90 sgwad4043,records changed; class flagged -> verified; hard flags SHARED -> -
+US-DE,US-10683,Millsboro Pond State Fishing Lake,36,one,one,sgdee768,sgdea563 sgdee768,records changed
+US-UT,US-11761,Quail Creek Reservoir Designated Dispersed Camping Area BLM Special Recreation Management Area,36,flagged,pin,157844,,outline lost; class flagged -> pin; hard flags OTHER_PARK/SHARED -> -
+US-VT,US-3147,Thetford Hill State Park,36,flagged,pin,61435,,outline lost; class flagged -> pin; hard flags OTHER_PARK/SHARED -> -
+US-DE,US-10676,Griffith State Fishing Lake,35,two,two,76220 9343 sgdee783,76220 9343 sgdea684 sgdee783,records changed
+US-DE,US-10680,Ingrams Pond State Fishing Lake,35,one,one,57537 9345 sgdee731,57537 9345 sgdea1101 sgdea618 sgdea685 sgdea686 sgdee731,records changed
+US-IL,US-0526,Wildcat Hollow State Nature Preserve,35,verified,verified,70754 sgila1159,sgila1159,records changed
+US-AR,US-0162,Bald Knob National Wildlife Refuge,34,verified,flagged,3603 4533,3603 4533,class verified -> flagged; hard flags - -> SIZE_BIG
+US-CA,US-3415,California State Railroad Museum State Park,34,flagged,pin,183878,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-MT,US-0829,Grant-Kohrs Ranch National Historic Site,34,verified,verified,3139 sgmtd274,3139,records changed
+US-NV,US-9239,Black Rock Desert - High Rock Canyon Emigrant Trails National Conservation Area,34,two,flagged,nca21291 sgnvf2,nca21291 sgnvf2,class two -> flagged; hard flags - -> SIZE_BIG
+US-OR,US-0596,Umatilla National Wildlife Refuge,34,verified,flagged,4423 5380,4423 5380,class verified -> flagged; hard flags - -> PIN_FAR
+US-WA,US-0596,Umatilla National Wildlife Refuge,34,verified,flagged,4424 5381 sgwae6169,4424 5381,records changed; class verified -> flagged; hard flags - -> PIN_FAR
+US-WA,US-12285,Shillapoo South Wildlife Area State Wildlife Area,34,flagged,two,sgwab1432 sgwab181 sgwad3203 sgwad3386 sgwad6215 sgwad6342 sgwaf1432 sgwag181 wdw158 wdw159 wdw160,sgwab1432 sgwaf1432,records changed; class flagged -> two; hard flags SHARED -> -
+US-WI,US-9870,Van Loon State Wildlife Area,34,verified,flagged,272983 sgwia713517 sgwid19754991 sgwid19754996 sgwid19755023 sgwid19755025 sgwid19755050 sgwid19755051 sgwid19764538 sgwid19764939 sgwid19768699 wid713517,272983 sgwia713517 sgwid19754991 sgwid19754996 sgwid19755023 sgwid19755025 sgwid19755050 sgwid19755051 sgwid19764538 sgwid19764939 sgwid19768699 wid713517,class verified -> flagged; hard flags - -> SIZE_BIG
+US-AR,US-0163,Big Lake National Wildlife Refuge,33,flagged,verified,166827 3630 4563 sgarc56,3630 4563 sgarc56,records changed; class flagged -> verified; hard flags SHARED -> -
+US-DE,US-10674,Derby Pond State Fishing Lake,33,one,one,76216 9342 sgdee774,76216 9342 sgdea1326 sgdee774,records changed
+US-IA,US-4659,Loess Hills State Forest,33,verified,flagged,198475 198477 198478 sgiaa34303 sgiaa34306 sgiaa58128 sgiab104169 sgiab104779 sgiab107829 sgiac104169 sgiac104779 sgiac107829,198475 198477 198478 sgiaa34303 sgiaa34306 sgiaa58128 sgiab104169 sgiab104779 sgiab107829 sgiac104169 sgiac104779 sgiac107829,class verified -> flagged; hard flags - -> SIZE_BIG
+US-ID,US-2228,Bear Lake State Park,33,verified,verified,199718 199719 199934 199935 sgidb1938970,199718 199719 199934 199935,records changed
+US-WA,US-12306,Oak Creek State Wildlife Area,33,verified,verified,271385 78900 78901 sgwab1404 sgwab174 sgwad1896 sgwaf1404 sgwag174 wdw81 wdw82 wdw84 wdw85,271385 78900 78901 sgwab1404 sgwab174 sgwaf1404 sgwag174 wdw81 wdw82 wdw83 wdw84 wdw85,records changed
+US-WI,US-12077,Buckhorn State Wildlife Area,33,verified,flagged,272470 sgwia713323 sgwid19771741 sgwid19771742 sgwid19771747 sgwid19771748 sgwid19771752 sgwid19771757 sgwid19771764 sgwid19771769 sgwid19771773 wid713323,272470 sgwia713323 sgwid19771741 sgwid19771742 sgwid19771747 sgwid19771748 sgwid19771752 sgwid19771757 sgwid19771764 sgwid19771769 sgwid19771773 wid713323,class verified -> flagged; hard flags - -> SIZE_BIG
+US-WI,US-4244,Big Bay Sand Spit and Bog State Natural Area,33,flagged,pin,272294 sgwic6861 sgwif23770,,outline lost; class flagged -> pin; hard flags OTHER_PARK/SHARED -> -
+US-WI,US-9854,Lima Marsh State Wildlife Area,33,verified,flagged,272628 72048 sgwia713391 sgwia714208 sgwid19757105 sgwid19757106 sgwid19757108 sgwid19757109 sgwid19757110 sgwid19757115 wid713391 wid714208,272628 72048 sgwia713391 sgwia714208 sgwid19757105 sgwid19757106 sgwid19757108 sgwid19757109 sgwid19757110 sgwid19757115 wid713391 wid714208,class verified -> flagged; hard flags - -> SIZE_BIG
+US-AR,US-7265,Big Lake Wildlife Management Area,32,flagged,two,166827 arw1746,arw1746,records changed; class flagged -> two; hard flags SHARED -> -
+US-AR,US-7342,Henry Gray Hurricane Lake Wildlife Management Area,32,verified,flagged,166828 arw1720,166828 arw1720,class verified -> flagged; hard flags - -> SIZE_BIG
+US-AR,US-7439,Bois D'Arc Lake State Recreation Area,32,two,pin,sgarc285,,outline lost; class two -> pin
+US-MI,US-6818,Mackinac Island State Harbor,31,flagged,pin,71154,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-MO,US-6529,Truman Reservoir Management Lands State Park,31,two,pin,mol967,,outline lost; class two -> pin
+US-NH,US-2644,Cardigan Mountain State Park,31,verified,pin,nhc2202,,outline lost; class verified -> pin; VERIFIED OUTLINE LOST
+US-SC,US-9195,South Bluff Wildlife Management Area,31,verified,flagged,254115 sgsca135 sgscc109 sgscc110,254115 sgsca135 sgscc109 sgscc110,class verified -> flagged; hard flags - -> SIZE_BIG
+US-TX,US-0554,Santa Ana National Wildlife Refuge,31,verified,flagged,4309 4310 5266,4309 4310 5266,class verified -> flagged; hard flags - -> SIZE_BIG
+US-TX,US-6548,Chaparral Wildlife Management Area,31,verified,flagged,261775 sgtxb1699 sgtxc114 sgtxd1644,261775 sgtxb1699 sgtxc114 sgtxd1644,class verified -> flagged; hard flags - -> SIZE_BIG
+US-UT,US-5971,Harold S. Crane State Waterfowl Management Area,31,two,two,sgutb89,263943 sgutb89,records changed
+US-WI,US-9850,Jennings Creek State Wildlife Area,31,verified,flagged,272592 sgwia713372 sgwid19752668 sgwid19752671 sgwid19752673 sgwid19752674 sgwid19752676 sgwid19752681 sgwid19752682 sgwid19752683 sgwid19752684 wid713372,272592 sgwia713372 sgwid19752668 sgwid19752671 sgwid19752673 sgwid19752674 sgwid19752676 sgwid19752681 sgwid19752682 sgwid19752683 sgwid19752684 wid713372,class verified -> flagged; hard flags - -> SIZE_BIG
+US-AR,US-11970,Greenlee Lake Recreation Area State Recreation Area,30,two,pin,sgarc280,,outline lost; class two -> pin
+US-FL,US-12128,Stormwater Treatment Area 1 East State Conservation Area,30,flagged,pin,190265,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-MT,US-4548,Pompeys Pillar National Monument,30,two,two,nca21305 sgakh1426 sgmtd53,nca21305 sgakh1426,records changed
+US-WI,US-4271,Beaver Brook State Wildlife Area,30,verified,flagged,272439 78173 sgwia713314 sgwid19758167 sgwid19758169 sgwid19758171 sgwid19758172 sgwid19758179 sgwid19758190 sgwid19758191 sgwid19769436 wid713314,272439 78173 sgwia713314 sgwid19758167 sgwid19758169 sgwid19758171 sgwid19758172 sgwid19758179 sgwid19758190 sgwid19758191 sgwid19769436 wid713314,class verified -> flagged; hard flags - -> SIZE_BIG
+US-WI,US-9837,Buzz Besadny State Fish and Wildlife Area,30,two,flagged,272474 sgwia713376 sgwid19754982 sgwid19754983 sgwid19759579 sgwid19771104 sgwid19771105 sgwid19771108 sgwid19773449 sgwid19777562 sgwid19783995 sgwid19784266,272474 sgwia713376 sgwid19754982 sgwid19754983 sgwid19759579 sgwid19771104 sgwid19771105 sgwid19771108 sgwid19773449 sgwid19777562 sgwid19783995 sgwid19784266,class two -> flagged; hard flags - -> SIZE_BIG
+US-AR,US-7272,Caney Creek Wildlife Management Area,29,two,verified,arw1785,arw1785,class two -> verified
+US-CA,US-12681,Spenceville State Wildlife Area,29,verified,flagged,183603 sgcaa283 sgcac1453 sgcac1454 sgcac1455 sgcac1457 sgcac1472 sgcac1474 sgcac1515,183603 sgcaa283 sgcac1453 sgcac1454 sgcac1455 sgcac1457 sgcac1472 sgcac1474 sgcac1515,class verified -> flagged; hard flags - -> SIZE_BIG
+US-DE,US-10678,Hearns Pond State Fishing Lake,29,one,one,57479 57535 sgdee788 sgdee789,57479 57535 sgdea1092 sgdea1213 sgdea632 sgdea633 sgdea801 sgdee788 sgdee789,records changed
+US-GA,US-9795,Sandhills West Wildlife Management Area,29,flagged,pin,sggaa34 sggaa90 sggac768 sggac821,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-NY,US-8063,North-South Lake State Recreation Area,29,two,pin,237093,,outline lost; class two -> pin
+US-OR,US-2849,Prineville Reservoir State Park,29,flagged,verified,2364 241369 sgora108 sgorb84 sgore21688 sgore25343 sgore829,241369 sgora108 sgorb84 sgore21688 sgore25343 sgore829,records changed; class flagged -> verified; hard flags SHARED -> -
+US-DE,US-11811,Records Pond State Fishing Lake,28,one,one,sgdee831 sgdee832 sgdee833,sgdea1129 sgdea1238 sgdea1276 sgdee831 sgdee832 sgdee833,records changed
+US-DE,US-11812,Trap Pond State Fishing Lake,28,flagged,pin,sgdea380,,outline lost; class flagged -> pin; hard flags OTHER_PARK/SHARED -> -
+US-FL,US-12127,Stormwater Treatment Area 1 West State Conservation Area,28,flagged,pin,190265,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-KS,US-7399,Tuttle Creek Willow State Fishing Lake,28,flagged,pin,201224,,outline lost; class flagged -> pin; hard flags OTHER_PARK/SHARED -> -
+US-VA,US-9929,First Mountain State Forest,28,verified,flagged,271053 57435 sgvaa40 sgvae487000,271053 57435 sgvaa40 sgvae487000,class verified -> flagged; hard flags - -> SIZE_BIG
+US-WA,US-12413,Spokane Plains Battlefield State Heritage Area,28,two,one,271397 sgwaa174 sgwad4289,271397 sgwaa174,records changed; class two -> one
+US-WI,US-10654,Rowan Creek State Fish and Wildlife Area,28,verified,flagged,272842 sgwia712704 sgwid19764648 sgwid19775323 sgwid19777674 sgwid19777946 sgwid19779981 sgwid19779982 sgwid19779983 sgwid19780158 sgwid19780159 wid712704,272842 sgwia712704 sgwid19764648 sgwid19775323 sgwid19777674 sgwid19777946 sgwid19779981 sgwid19779982 sgwid19779983 sgwid19780158 sgwid19780159 wid712704,class verified -> flagged; hard flags - -> SIZE_BIG
+US-WI,US-4295,Joel Marsh State Wildlife Area,28,verified,flagged,272593 sgwia713374 sgwid19777863 sgwid19777864 sgwid19778658 sgwid19778659 sgwid19778660 sgwid19778661 sgwid19778662 sgwid19778663 sgwid19778664 wid713374,272593 sgwia713374 sgwid19777863 sgwid19777864 sgwid19778658 sgwid19778659 sgwid19778660 sgwid19778661 sgwid19778662 sgwid19778663 sgwid19778664 wid713374,class verified -> flagged; hard flags - -> SIZE_BIG
+US-DE,US-10682,McGinnis Pond State Fishing Lake,27,flagged,flagged,76226 sgdee762 sgdee763 sgdee764,sgdea751,records changed
+US-IA,US-5738,Wilson Island State Recreation Area,27,verified,flagged,198247 sgiaa34335 sgiab104420 sgiac104420 sgiad104420,198247 sgiaa34335 sgiab104420 sgiac104420 sgiad104420,class verified -> flagged; hard flags - -> SIZE_BIG
+US-MT,US-10529,Sundance Lodge (BLM) Recreation Site,27,two,pin,rst10995,,outline lost; class two -> pin
+US-NJ,US-11992,Whiting State Conservation Area,27,verified,pin,229060,,outline lost; class verified -> pin; VERIFIED OUTLINE LOST
+US-NV,US-9274,North McCullough Wilderness Area,27,two,verified,wbl214,wbl214,class two -> verified
+US-VA,US-9951,Priest Wilderness Area,27,verified,verified,sgvae500344 wld351,wld351,records changed
+US-WA,US-12552,Skagit Bay Estuary State Wildlife Area,27,flagged,two,sgwab1437 sgwab183 sgwaf1437 sgwag183 wdw110 wdw111 wdw112 wdw118 wdw119 wdw120 wdw121 wdw122,sgwab1437 sgwad4768 sgwad495 sgwad525 sgwad589 sgwaf1437 wdw112,records changed; class flagged -> two; hard flags SHARED -> -
+US-WA,US-3154,Alta Lake State Park,27,verified,verified,271573 sgwaa1 sgwad6622 sgwad745 sgwae15016,271573 sgwaa1 sgwad6622 sgwad745,records changed
+US-WI,US-9839,Deansville State Wildlife Area,27,verified,flagged,272514 sgwia713338 sgwid19752714 sgwid19752915 sgwid19752916 sgwid19752917 sgwid19752920 sgwid19752923 sgwid19752924 sgwid19773762 sgwid19773763 wid713338,272514 sgwia713338 sgwid19752714 sgwid19752915 sgwid19752916 sgwid19752917 sgwid19752920 sgwid19752923 sgwid19752924 sgwid19773762 sgwid19773763 wid713338,class verified -> flagged; hard flags - -> SIZE_BIG
+US-FL,US-6290,Bell Ridge Longleaf Wildlife Area,26,two,one,191722 sgflg218,191722 sgflg218,class two -> one
+US-ID,US-10657,Milner Historic Recreation Area BLM Historic Area,26,verified,pin,rst13871,,outline lost; class verified -> pin; VERIFIED OUTLINE LOST
+US-MO,US-7189,Beaver Creek State Recreation Area,26,one,pin,mol123,,outline lost; class one -> pin
+US-MT,US-0883,Flathead National Wild and Scenic River,26,two,two,fwsr198 fwsr30 sgmtd256 wsrc21,fwsr198 fwsr30 wsrc21,records changed
+US-OR,US-9143,Detroit Lake State Recreation Area,26,flagged,verified,osp188 osp190 sgora188 sgora189 sgora190 sgora191 sgorb158 sgorb159 sgorb160 sgorb161 sgord5672 sgord5673,osp188 osp190 sgora188 sgora190 sgora191 sgorb158 sgorb159 sgorb160 sgorb161 sgord5672 sgord5673 sgore21565,records changed; class flagged -> verified; hard flags SHARED -> -
+US-WI,US-9860,Paradise Marsh State Wildlife Area,26,verified,flagged,272711 sgwia713420 sgwid19752447 sgwid19752448 sgwid19752450 sgwid19752451 sgwid19752452 sgwid19752455 sgwid19752457 sgwid19752458 sgwid19777537 wid713420,272711 sgwia713420 sgwid19752447 sgwid19752448 sgwid19752450 sgwid19752451 sgwid19752452 sgwid19752455 sgwid19752457 sgwid19752458 sgwid19777537 wid713420,class verified -> flagged; hard flags - -> SIZE_BIG
+US-DE,US-10671,Concord Pond State Fishing Lake,25,one,one,52018 57520 57521 sgdee752 sgdee753 sgdee754,52018 57520 57521 sgdea747 sgdea799 sgdea800 sgdee752 sgdee753 sgdee754,records changed
+US-OR,US-2847,Oswald West State Park,25,verified,flagged,osp131 sgora131 sgorb105 sgord5394 sgord6078 sgord6079 sgord6080 sgord6081 sgord6083 sgord6084 sgord6085 sgord6086,osp131 sgora131 sgorb105 sgord5394 sgord6078 sgord6079 sgord6080 sgord6081 sgord6083 sgord6084 sgord6085 sgord6086,class verified -> flagged; hard flags - -> SIZE_BIG
+US-TX,US-3510,Powderhorn Ranch State Wildlife Area,25,two,one,263464 sgtxc116,263464 sgtxc116,class two -> one
+US-WA,US-12553,Skagit Headquarters State Wildlife Area,25,flagged,two,sgwab1361 sgwab1544 sgwab183 sgwaf1361 sgwag183 wdw110 wdw111 wdw118 wdw119 wdw120 wdw121 wdw122,sgwab1361 sgwab1544 sgwaf1361,records changed; class flagged -> two; hard flags SHARED -> -
+US-WI,US-4288,Germania Marsh State Wildlife Area,25,two,flagged,272557 sgwia713353 sgwia714187 sgwid19755992 sgwid19755993 sgwid19756006 sgwid19756007 sgwid19756008 sgwid19756009 sgwid19756082 wid713353 wid714187,272557 sgwia713353 sgwia714187 sgwid19755992 sgwid19755993 sgwid19756006 sgwid19756007 sgwid19756008 sgwid19756009 sgwid19756082 wid713353 wid714187,class two -> flagged; hard flags - -> SIZE_BIG
+US-WI,US-4308,McKenzie Creek State Wildlife Area,25,verified,flagged,272655 272656 sgwia712671 sgwia713400 sgwid19756442 sgwid19756448 sgwid19756450 sgwid19756578 sgwid19770349 sgwid19770354 sgwid19770359 wid713400,272655 272656 sgwia712671 sgwia713400 sgwid19756442 sgwid19756448 sgwid19756450 sgwid19756578 sgwid19770349 sgwid19770354 sgwid19770359 wid713400,class verified -> flagged; hard flags - -> SIZE_BIG
+US-DE,US-10672,Coursey Pond State Fishing Lake,24,one,one,57522 76213 sgdee755 sgdee756,57522 76213 sgdea671 sgdea742 sgdee755 sgdee756,records changed
+US-GA,US-9797,Chattahoochee Fall Line Hilliard Tract Wildlife Management Area,24,flagged,flagged,194888 195025 sggaa116 sggac1004,195025 sggaa116 sggac1004,records changed
+US-IL,US-11351,Weinberg-King Spunky Bottoms Unit State Park,24,one,pin,70886,,outline lost; class one -> pin
+US-TX,US-6554,Elephant Mountain Wildlife Management Area,24,verified,flagged,261776 sgtxb1392 sgtxc86 sgtxd1018,261776 sgtxb1392 sgtxc86 sgtxd1018,class verified -> flagged; hard flags - -> SIZE_BIG
+US-WI,US-4272,Bill Cross State Wildlife Area,24,verified,flagged,272457 sgwia713317 sgwid19794381 sgwid19794391 sgwid19794392 sgwid19794401 sgwid19794405 sgwid19794406 sgwid19794414 sgwid19794418 sgwid19794419 wid713317,272457 sgwia713317 sgwid19794381 sgwid19794391 sgwid19794392 sgwid19794401 sgwid19794405 sgwid19794406 sgwid19794414 sgwid19794418 sgwid19794419 wid713317,class verified -> flagged; hard flags - -> SIZE_BIG
+US-WY,US-6188,Point of Rocks Cemetery State Historic Site,24,flagged,pin,292667,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-AR,US-9168,Lake Jack Nolen State Recreation Area,23,two,pin,sgarc258,,outline lost; class two -> pin
+US-CO,US-9675,Two Buttes State Wildlife Area,23,flagged,none,188957 189274 189275 sgcoc866 sgcoc867 sgcod362,188957 189274 189275 sgcoc866 sgcoc867 sgcod362,class flagged -> none; hard flags PIN_FAR -> -
+US-DE,US-10679,Horseys Pond State Fishing Lake,23,one,one,57536 9344 sgdee791 sgdee792 sgdee793 sgdee794 sgdee795 sgdee796,sgdea1029 sgdea667 sgdea668 sgdea785 sgdea816 sgdea817 sgdea837 sgdea838 sgdea839 sgdea840 sgdea841 sgdea848,records changed
+US-FL,US-6304,Fort White Wildlife Area,23,two,flagged,191925 sgflg143,191925 sgflg143,class two -> flagged; hard flags - -> SIZE_BIG
+US-NV,US-9271,Muddy Mountains BLM Wilderness Area,23,flagged,flagged,sgakg9718 sgnvi515 wbl213,wbl213,records changed; hard flags BIG_PIECE/SIZE_BIG -> SIZE_BIG
+US-OR,US-9565,Mongold State Park,23,flagged,two,osp189 sgora189 sgore21566,osp189 sgora189 sgore21566,class flagged -> two; hard flags SHARED -> -
+US-VA,US-9941,Brush Mountain East Wilderness Area,23,flagged,flagged,sgvae500504 wld45 wld46,wld45,records changed; hard flags SHARED -> PIN_FAR
+US-WA,US-3165,Bridgeport State Park,23,flagged,verified,158273 271407 sgide2338 sgwaa14 sgwad750,271407 sgide2338 sgwaa14 sgwad750,records changed; class flagged -> verified; hard flags SHARED -> -
+US-DE,US-10691,Waples Pond State Fishing Lake,22,one,one,76244 sgdee863 sgdee864,76244 sgdea1127 sgdea776 sgdee863 sgdee864,records changed
+US-OK,US-6365,Osage Wildlife Management Area,22,one,flagged,odw75 odw76 sgokb18,sgokb18,records changed; class one -> flagged; hard flags - -> PIN_FAR
+US-OR,US-10412,Yaquina Head Outstanding Natural Area BLM Special Recreation Management Area,22,one,two,nca21371,nca21371,class one -> two
+US-VA,US-5506,Browne State Forest,22,verified,flagged,10578 268712 sgvaa31 sgvae486663,10578 268712 sgvaa31 sgvae486663,class verified -> flagged; hard flags - -> SIZE_BIG
+US-WI,US-12358,Pinnacle Rock State Fish and Wildlife Area,22,one,pin,272735,,outline lost; class one -> pin
+US-WI,US-4254,Chimney Rock Oak Savanna State Natural Area,22,flagged,verified,272488 sgwic7343 sgwif23733,sgwif23733,records changed; class flagged -> verified; hard flags SHARED -> -
+US-WI,US-4276,Chimney Rock State Wildlife Area,22,verified,flagged,272488 sgwia713332 sgwid19757957 sgwid19757961 sgwid19757962 sgwid19757963 sgwid19757964 sgwid19757965 sgwid19757966 sgwid19757968 sgwid19757969 wid713332,272488 sgwia713332 sgwid19757957 sgwid19757961 sgwid19757962 sgwid19757963 sgwid19757964 sgwid19757965 sgwid19757966 sgwid19757968 sgwid19757969 wid713332,class verified -> flagged; hard flags - -> SIZE_BIG
+US-NH,US-2683,Wentworth State Park,21,verified,flagged,56931 sgnha3435 sgnha3436 sgnhc772 sgnhd3435 sgnhd3436,56931 sgnha3435 sgnha3436 sgnhc772 sgnhd3435 sgnhd3436,class verified -> flagged; hard flags - -> SIZE_BIG
+US-OH,US-9442,Acadia Cliffs State Wildlife Area,21,verified,verified,71613 sgohb2 sgohb393 sgohb619 sgohe2 sgohe570 sgohe571 sgohf416 sgohf620 sgohf693,sgohb2 sgohb619 sgohe2 sgohe570 sgohe571 sgohf416 sgohf620 sgohf693,records changed
+US-WA,US-3174,Conconully State Park,21,verified,verified,2313 2314 271417 sgwaa27 sgwaa28 sgwad4053 sgwad429 sgwae11501 sgwae29595,2313 2314 271417 sgwaa27 sgwaa28 sgwad4053 sgwad429 sgwae11501,records changed
+US-WI,US-11928,McCann Creek State Fish and Wildlife Area,21,verified,flagged,272652 72058 sgwia712668 sgwia713926 sgwid19769378 sgwid19778925 sgwid19778927 sgwid19778928 sgwid19788908 sgwid19788909 wid712668 wid713926,272652 72058 sgwia712668 sgwia713926 sgwid19769378 sgwid19778925 sgwid19778927 sgwid19778928 sgwid19788908 sgwid19788909 wid712668 wid713926,class verified -> flagged; hard flags - -> SIZE_BIG
+US-AK,US-10281,White Mountains National Recreation Area BLM Recreation Management Area,20,flagged,flagged,rst11010 sgakg11010,2165 rst11010 sgakg11010,records changed
+US-DE,US-10690,Wagamons Pond State Fishing Lake,20,one,one,76243 sgdee862,76243 sgdea1295 sgdee862,records changed
+US-MI,US-13570,Gladwin Field Trial Wildlife Management Area,20,flagged,pin,71502 mid783 sgmib88,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-MI,US-4263,Piers Gorge Unit of Menominee River State Recreation Area,20,flagged,pin,272354 mid404,,outline lost; class flagged -> pin; hard flags OTHER_PARK/SHARED -> -
+US-MO,US-10135,Blue Spring Branch State Conservation Area,20,verified,flagged,mol82 sgmoc390 sgmod152 sgmof390 sgmoh390,mol82 sgmoc390 sgmod152 sgmof390 sgmoh390,class verified -> flagged; hard flags - -> SIZE_BIG
+US-MT,US-0396,Benton Lake National Wildlife Refuge,20,verified,verified,3626 4556 sgmtd4158,3626 4556,records changed
+US-NC,US-0417,Pocosin Lakes National Wildlife Refuge,20,verified,flagged,4234 5190 sgnca5932,4234 5190 sgnca5932,class verified -> flagged; hard flags - -> SIZE_BIG
+US-TN,US-12064,Henderson Swamp State Wilderness Area,20,verified,pin,255796,,outline lost; class verified -> pin; VERIFIED OUTLINE LOST
+US-VA,US-11672,Harrison Lake National Fish Hatchery,20,verified,verified,3926 4871 sgvae490602 sgvae491822 sgvae491823 sgvae491824 sgvae491825,3926 4871 sgvae491822,records changed
+US-WI,US-4263,Piers Gorge Unit of Menominee River State Recreation Area,20,flagged,pin,272355 sgwia713692 sgwid19793915 sgwid19793916 sgwid19793920 sgwid19793922 sgwid19793923 sgwid19810465 sgwid19810469 sgwid19810491 sgwid19810492 sgwid19810493,,outline lost; class flagged -> pin; hard flags OTHER_PARK/SHARED -> -
+US-WY,US-3302,Sinks Canyon State Park,20,flagged,verified,292692 sgwya9 sgwyb35,292692 sgwya9 sgwyb35,class flagged -> verified; hard flags SHARED -> -
+US-DE,US-12938,Laurel Industrial Forest Land State Wildlife Area,19,one,one,sgdec21 sgdec38 sgdec69,sgdec69,records changed
+US-HI,US-10913,Diamond Head Summit State Trail,19,flagged,pin,195365,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-MT,US-10524,Acton (BLM) Recreation Site,19,verified,pin,rst10988,,outline lost; class verified -> pin; VERIFIED OUTLINE LOST
+US-NH,US-4868,Annett State Forest,19,pin,flagged,,56939 sgnha10009 sgnha10010 sgnha10011 sgnha10012 sgnhc2298 sgnhc2522 sgnhc2607 sgnhc2610 sgnhc2651 sgnhd10009 sgnhd10010,outline gained; class pin -> flagged; hard flags - -> PIN_FAR
+US-NV,US-13164,Nellis Dunes BLM Recreation Management Area,19,verified,verified,rst9704 sgakg9704 sgnvb439 sgnvd439,rst9704 sgakg9704,records changed
+US-NY,US-0478,Seatuck National Wildlife Refuge,19,verified,flagged,4321 5278,4321 5278,class verified -> flagged; hard flags - -> SIZE_BIG
+US-OR,US-9994,Dean Creek Elk Viewing BLM Recreation Management Area,19,verified,verified,rma11203 rma11268 rst11203 rst11268 rst13218 sgakg11203 sgakg11268 sgakg13218 sgorf3420,rma11203 rma11268 rst11203 rst11268 rst13218 sgakg11203 sgakg11268 sgakg13218,records changed
+US-VA,US-9960,Thunder Ridge Wilderness Area,19,verified,verified,sgvae500347 wld170,wld170,records changed
+US-DE,US-10668,Andrews State Fishing Lake,18,verified,verified,57489 76201 sgdee188 sgdee189 sgdee190,57489 76201 sgdea623 sgdea624 sgdea641 sgdea694 sgdea748 sgdee188 sgdee189 sgdee190,records changed
+US-FL,US-10566,Stuart's Landing South State Conservation Area,18,flagged,verified,190447 sgfld665,sgfld665,records changed; class flagged -> verified; hard flags SHARED -> -
+US-MT,US-0823,Fort Union Trading Post National Historic Site,18,verified,verified,3133 sgmtd99,3133,records changed
+US-NV,US-0467,Moapa Valley National Wildlife Refuge,18,verified,verified,4126 5082 sgnvb759 sgnvd4,4126 5082,records changed
+US-UT,US-6035,Zion NPS Wilderness Area,18,flagged,pin,3485,,outline lost; class flagged -> pin; hard flags OTHER_PARK/SHARED -> -
+US-WA,US-10706,Klickitat State Park State Trail,18,verified,verified,271584 sgwad4384,trl10706,records changed
+US-AR,US-11213,Bragg Lake State Fish and Wildlife Area,17,two,pin,sgarc370,,outline lost; class two -> pin
+US-AR,US-7307,Muddy Creek Wildlife Management Area,17,two,verified,arw1728,arw1728,class two -> verified
+US-MT,US-0674,Bighorn Canyon National Recreation Area,17,verified,verified,3492 sgmtd261,3492,records changed
+US-MT,US-0701,Big Hole National Battlefield,17,verified,verified,3094 sgmtd122,3094,records changed
+US-OK,US-6380,Wister Wildlife Management Area,17,flagged,verified,237725 sgokb101 sgokb102 sgokb103 sgokc104,237725 sgokb101 sgokb102 sgokb103 sgokc104,class flagged -> verified; hard flags PIN_FAR -> -
+US-VA,US-9959,Three Ridges Wilderness Area,17,verified,verified,sgvae500343 wld157,wld157,records changed
+US-ID,US-11387,Lake Cascade Reservoir Management Area,16,one,one,2309 sgidb1939824,sgidb1939824,records changed
+US-NH,US-2652,Forest Lake State Park,16,verified,flagged,56895 56896 sgnha441 sgnha690 sgnhc434 sgnhd441 sgnhd690,56895 56896 sgnha441 sgnha690 sgnhc434 sgnhd441 sgnhd690,class verified -> flagged; hard flags - -> SIZE_BIG
+US-OR,US-0501,Klamath Marsh National Wildlife Refuge,16,verified,flagged,4004 4954,4004 4954,class verified -> flagged; hard flags - -> SIZE_BIG
+US-VA,US-9945,Kimberling Creek Wilderness Area,16,verified,verified,sgvae500349 wld252,wld252,records changed
+US-WA,US-12286,Shillapoo North Wildlife Area State Wildlife Area,16,flagged,two,sgwab1431 sgwab181 sgwad3203 sgwad3386 sgwad6215 sgwad6342 sgwaf1431 sgwag181 wdw158 wdw159 wdw160,sgwab1431 sgwaf1431,records changed; class flagged -> two; hard flags SHARED -> -
+US-AK,US-12381,Delta BLM Wild and Scenic River,15,one,pin,rst11370,,outline lost; class one -> pin
+US-AR,US-7183,Longview Saline State Natural Area,15,flagged,two,arw1766 sgara38,sgara38,records changed; class flagged -> two; hard flags SHARED -> -
+US-AR,US-7184,Moro Big Pine State Natural Area,15,two,two,sgara59,arw1769 sgara59,records changed
+US-AR,US-7290,Gum Flats Wildlife Management Area,15,two,verified,arw1836,arw1836,class two -> verified
+US-AR,US-7343,J Perry Mikles Blue Mountain Wildlife Management Area,15,flagged,none,arw1767 arw1811,arw1811,records changed; class flagged -> none; hard flags SHARED -> -
+US-MT,US-4549,Upper Missouri River Breaks National Monument,15,two,two,1980 nca21303 nca21304 sgmtd141,1980 nca21303 nca21304,records changed
+US-NV,US-13269,Lake Tahoe-Eastshore Dr Byway Area of Outstanding Natural Beauty,15,one,pin,230200,,outline lost; class one -> pin
+US-OR,US-9981,Molalla River Corridor BLM Recreation Management Area,15,two,pin,rst12171,,outline lost; class two -> pin
+US-UT,US-6062,Red Cliffs Dinosaur Track Site BLM Historic Area,15,flagged,pin,rma9123,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-VA,US-5509,Chilton Woods State Forest,15,flagged,flagged,270414 57426 sgvaa34 sgvae486632,270414 57426 sgvaa34 sgvae486632,hard flags PIN_FAR -> PIN_FAR/SIZE_BIG
+US-WI,US-9856,Namekagon Barrens State Wildlife Area,15,verified,flagged,272678 sgwia713411 sgwid19811972 sgwid19811973 sgwid19811984 sgwid19813193 sgwid19813194 sgwid19813197 sgwid19813198 sgwid19813205 sgwid19813206 wid713411,272678 sgwia713411 sgwid19811972 sgwid19811973 sgwid19811984 sgwid19813193 sgwid19813194 sgwid19813197 sgwid19813198 sgwid19813205 sgwid19813206 wid713411,class verified -> flagged; hard flags - -> SIZE_BIG
+US-AR,US-7329,Sweden Creek Falls Wildlife Management Area,14,flagged,two,166762 arw1826 sgara73,166762 sgara73,records changed; class flagged -> two; hard flags SHARED -> -
+US-AR,US-7338,Cut-Off Creek Wildlife Management Area,14,flagged,two,166784 arw1780,arw1780,records changed; class flagged -> two; hard flags SHARED -> -
+US-AR,US-7524,Lake Greeson National Recreation Area,14,flagged,pin,sgarc80,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-AR,US-9167,Lake Hinkle State Recreation Area,14,two,pin,sgarc50,,outline lost; class two -> pin
+US-CA,US-1132,Burton Creek State Park,14,verified,flagged,183791 183941 183942 sgcab489 sgcab790 sgcab792,183791 183941 183942 sgcab489 sgcab790 sgcab792,class verified -> flagged; hard flags - -> SIZE_BIG
+US-CT,US-12777,Paugnut State Forest,14,verified,flagged,51971 51972 51973 51974 51975 51976 51977 51978 51979 53269 sgcta4095 sgctc11,51971 51972 51973 51974 51975 51976 51977 51978 51979 53269 sgcta4095 sgctc11,class verified -> flagged; hard flags - -> SIZE_BIG
+US-CT,US-1673,Haddam Island State Park,14,two,flagged,sgcta4192 sgctb7638,sgcta4192 sgctb7638,class two -> flagged; hard flags - -> SIZE_BIG
+US-ID,US-11249,Salmon Falls Creek Reservoir State Fishing Lake,14,one,one,sgakg13883 sgakg13885 sgakg13898 sgakg13907 sgakg9624 sgakh1161 sgakh1202 sgidb1939645 sgidc836 sgidc842 sgidc844 sgidc866,sgakg13883 sgakg13885 sgakg13898 sgakg13907 sgakg9624 sgidb1939645,records changed
+US-MT,US-0407,Red Rock Lakes National Wildlife Refuge,14,verified,verified,4260 5218 sgmtd208,4260 5218,records changed
+US-OR,US-10503,White River State Wildlife Area,14,verified,verified,241335 sgorc15 sgord2730 sgord2732 sgord3023 sgord4644 sgord5376 sgord5581 sgord5584 sgord5588 sgorg477 sgorg493,241335 sgorc15 sgord2730 sgord2732 sgord3023 sgord4644 sgord5376 sgord5573 sgord5581 sgord5584 sgord5587 sgord5588,records changed
+US-VA,US-0844,Maggie L. Walker National Historic Site,14,verified,verified,271112 3154 sgvae490561,271112 3154,records changed
+US-VA,US-9955,St. Mary's Wilderness Area,14,verified,two,sgvae500508 wld274,wld274,records changed; class verified -> two
+US-WI,US-9866,South Beaver Creek State Wildlife Area,14,verified,flagged,272885 sgwia713498 sgwid19754655 sgwid19754661 sgwid19754664 sgwid19768215 sgwid19768216 sgwid19768218 sgwid19768219 sgwid19768221 sgwid19788412 wid713498,272885 sgwia713498 sgwid19754655 sgwid19754661 sgwid19754664 sgwid19768215 sgwid19768216 sgwid19768218 sgwid19768219 sgwid19768221 sgwid19788412 wid713498,class verified -> flagged; hard flags - -> SIZE_BIG
+US-NE,US-3489,Massie National Waterfowl Production Area,13,flagged,pin,4664,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-NH,US-13486,Bellamy River Wildlife Management Area - East Wildlife Management Area,13,two,pin,57850 sgnhb5,,outline lost; class two -> pin
+US-NV,US-13047,Pine Nut Mountain BLM Herd Management Area,13,one,one,hma105 sgnvi447,hma105,records changed
+US-UT,US-11739,Three Peaks RC Track BLM Special Recreation Management Area,13,flagged,pin,rst9179,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-VA,US-9938,Barbours Creek Wilderness Area,13,verified,verified,sgvae500345 wld29,wld29,records changed
+US-WY,US-10890,Sinks Canyon BLM Recreation Management Area,13,flagged,pin,292692,,outline lost; class flagged -> pin; hard flags PIN_FAR/SHARED -> -
+US-AR,US-7163,Cutoff Creek State Natural Area,12,flagged,pin,166784,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-AR,US-7317,Provo Wildlife Management Area,12,two,verified,arw1788,arw1788,class two -> verified
+US-CA,US-12611,Agua Hedionda Lagoon Ecological Reserve,12,verified,flagged,183367 sgcaa1 sgcac425,183367 sgcaa1 sgcac425,class verified -> flagged; hard flags - -> SIZE_BIG
+US-FL,US-10565,Stuart's Landing North State Conservation Area,12,flagged,verified,190447 sgfld454,sgfld454,records changed; class flagged -> verified; hard flags SHARED -> -
+US-ID,US-12233,CJ Strike Reservoir State Fishing Lake,12,flagged,flagged,rst13808 sgakg13808 sgida73156 sgidb1937412 sgidc815,rst13808 sgakg13808 sgida73156,records changed
+US-MI,US-4264,Quiver Falls Unit of Menominee River State Recreation Area,12,flagged,pin,272354,,outline lost; class flagged -> pin; hard flags OTHER_PARK/SHARED -> -
+US-MT,US-10528,Shepherd Ah Nei BLM Special Recreation Management Area,12,two,pin,rst10990,,outline lost; class two -> pin
+US-NE,US-3483,Atlanta National Waterfowl Production Area,12,two,pin,4221,,outline lost; class two -> pin
+US-NE,US-3486,Moger National Waterfowl Production Area,12,flagged,pin,4664,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-NE,US-3490,Smith Lagoon National Waterfowl Production Area,12,flagged,pin,4664,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-UT,US-5750,Black Ridge Canyons Wilderness Area,12,two,two,wbl160 wbl291 wsa128 wsa692,wbl160 wbl291,records changed
+US-VA,US-0564,Featherstone National Wildlife Refuge,12,verified,verified,3844 4786 sgvae491850 sgvae491851,3844 4786 sgvae491850,records changed
+US-WA,US-12530,Skookumchuck State Wildlife Area,12,verified,verified,158387 sgwab1439 sgwae13697 sgwaf1439,158387 sgwab1439 sgwaf1439,records changed
+US-WA,US-3380,Lake Chelan National Recreation Area,12,flagged,verified,3506 sgwae21969,3506,records changed; class flagged -> verified; hard flags SHARED -> -
+US-WI,US-12642,Tamarack Creek State Wildlife Area,12,verified,flagged,272942 sgwia713505 sgwid19757947 sgwid19757948 sgwid19757949 sgwid19757950 sgwid19757952 sgwid19757953 sgwid19758004 sgwid19758007 sgwid19758008 wid713505,272942 sgwia713505 sgwid19757947 sgwid19757948 sgwid19757949 sgwid19757950 sgwid19757952 sgwid19757953 sgwid19758004 sgwid19758007 sgwid19758008 wid713505,class verified -> flagged; hard flags - -> SIZE_BIG
+US-WI,US-4264,Quiver Falls Unit of Menominee River State Recreation Area,12,flagged,pin,272354,,outline lost; class flagged -> pin; hard flags OTHER_PARK/SHARED -> -
+US-AR,US-7348,Longview Saline Wildlife Management Area,11,flagged,pin,arw1766,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-CA,US-12610,Buena Vista Creek Ecological Reserve,11,verified,flagged,183397 sgcaa16 sgcac414 sgcac415 sgcac419,183397 sgcaa16 sgcac414 sgcac415 sgcac419,class verified -> flagged; hard flags - -> SIZE_BIG
+US-ME,US-0450,Lake Umbagog National Wildlife Refuge,11,two,flagged,4425 5382,4425 5382,class two -> flagged; hard flags - -> SIZE_BIG
+US-MT,US-7990,Lee Metcalf BLM Wilderness Area,11,two,two,sgmtd248 wbl177 wld186,wbl177 wld186,records changed
+US-NH,US-4886,Connecticut Lakes State Forest,11,pin,flagged,,56956 sgnha138 sgnha3 sgnha345 sgnha346 sgnha347 sgnha495 sgnha510 sgnha917 sgnhc66 sgnhd138 sgnhd3,outline gained; class pin -> flagged; hard flags - -> PIN_FAR
+US-NV,US-13307,Mount Rose Wilderness National Forest,11,flagged,flagged,wld326,230494 wld326,records changed
+US-OK,US-11322,Beech Creek National Scenic Reserve,11,two,pin,fsod75,,outline lost; class two -> pin
+US-UT,US-5896,Muddy Creek BLM Herd Management Area,11,flagged,none,hma123 sgakh1511,hma123,records changed; class flagged -> none; hard flags SHARED -> -
+US-VA,US-9956,Shawvers Run Wilderness Area,11,verified,verified,sgvae500346 wld374,wld374,records changed
+US-WI,US-4330,Spring Creek State Wildlife Area,11,verified,flagged,272898 sgwia713499 sgwid19756882 sgwid19756883 sgwid19756884 sgwid19756885 sgwid19756886 sgwid19756887 sgwid19756888 sgwid19756889 sgwid19756890 wid713499,272898 sgwia713499 sgwid19756882 sgwid19756883 sgwid19756884 sgwid19756885 sgwid19756886 sgwid19756887 sgwid19756888 sgwid19756889 sgwid19756890 wid713499,class verified -> flagged; hard flags - -> SIZE_BIG
+US-AR,US-7301,Lake Greeson Wildlife Management Area,10,flagged,two,166771 sgarc80,166771,records changed; class flagged -> two; hard flags SHARED -> -
+US-CO,US-1249,Vega State Park,10,flagged,flagged,184880 2406 sgcod366,184880 2406 sgcoc873 sgcod366,records changed
+US-ND,US-0437,White Horse Hill Game Preserve,10,pin,two,,5429,outline gained; class pin -> two
+US-NV,US-0466,Fallon National Wildlife Refuge,10,verified,flagged,3820 4762 sgnvb758,3820 4762 sgnvb758,class verified -> flagged; hard flags - -> SIZE_BIG
+US-MT,US-6209,Absaroka-Beartooth Wilderness Area,9,verified,verified,sgmtd241 wld1,wld1,records changed
+US-NH,US-8029,Sculptured Rocks State Natural Area,9,verified,flagged,56883 sgnha2783 sgnhc670 sgnhd2783,56883 sgnha2783 sgnhc670 sgnhd2783,class verified -> flagged; hard flags - -> SIZE_BIG
+US-NV,US-13013,Dogskin Mountains BLM Herd Management Area,9,pin,none,,sgnvi435,outline gained; class pin -> none
+US-NV,US-13279,Dayton State Historical Monument,9,flagged,pin,230196,,outline lost; class flagged -> pin; hard flags OTHER_PARK/SHARED -> -
+US-OR,US-10017,Quartzville Creek BLM Wild and Scenic River,9,two,pin,rst11856 rst11966,,outline lost; class two -> pin
+US-VA,US-9940,Brush Mountain Wilderness Area,9,flagged,verified,sgvae500421 sgvae500504 wld45 wld46,wld46,records changed; class flagged -> verified; hard flags SHARED -> -
+US-VA,US-9946,Lewis Fork Wilderness Area,9,verified,verified,sgvae500352 wld187,wld187,records changed
+US-WI,US-4299,Kimberly Clark State Wildlife Area,9,verified,flagged,272600 78185 sgwia713381 sgwid19750507 sgwid19750510 sgwid19750529 sgwid19756752 sgwid19756765 sgwid19756809 sgwid19756857 sgwid19756876 wid713381,272600 78185 sgwia713381 sgwid19750507 sgwid19750510 sgwid19750529 sgwid19756752 sgwid19756765 sgwid19756809 sgwid19756857 sgwid19756876 wid713381,class verified -> flagged; hard flags - -> SIZE_BIG
+US-CA,US-12615,Heenan Lake State Wildlife Area,8,verified,flagged,183483 sgcaa231 sgcac1445 sgcac1446,183483 sgcaa231 sgcac1445 sgcac1446,class verified -> flagged; hard flags - -> SIZE_BIG
+US-ND,US-8522,White Lake National Wildlife Refuge,8,verified,flagged,4471 5430,4471 5430,class verified -> flagged; hard flags - -> SIZE_BIG
+US-NE,US-3484,Peterson National Waterfowl Production Area,8,two,pin,3869,,outline lost; class two -> pin
+US-NE,US-3485,Jensen Lagoon National Waterfowl Production Area,8,two,pin,3993,,outline lost; class two -> pin
+US-NH,US-2660,Lake Tarleton State Park,8,verified,flagged,52053 sgnha989 sgnhd989,52053 sgnha989 sgnhd989,class verified -> flagged; hard flags - -> SIZE_BIG
+US-UT,US-5782,Indian Creek BLM Special Recreation Management Area,8,pin,flagged,,rst14458,outline gained; class pin -> flagged; hard flags - -> PIN_FAR
+US-UT,US-5903,Muddy Creek BLM Wilderness Area,8,two,two,sgakh1511 wbl269 wbl298,wbl269 wbl298,records changed
+US-VA,US-9952,Raccoon Branch Wilderness Area,8,verified,verified,sgvae500424 wld167,wld167,records changed
+US-VA,US-9954,Rich Hole Wilderness Area,8,verified,verified,sgvae500342 wld195,wld195,records changed
+US-WA,US-12246,Pacific Lake Recreation Site - Lakeview Ranch BLM Recreation Management Area,8,two,pin,rma10677 rst10677,,outline lost; class two -> pin
+US-WA,US-12251,Priest Rapids Wildlife Area State Fish and Wildlife Area,8,verified,verified,158369 sgwab1416 sgwae40462 sgwaf1416,158369 sgwab1416 sgwaf1416,records changed
+US-WA,US-12846,Columbia Hills State Natural Area,8,flagged,verified,271305 271416,271305,records changed; class flagged -> verified; hard flags SHARED -> -
+US-WA,US-3199,Hope Island State Park,8,flagged,two,158737 sgwaa73 sgwad3675,sgwaa73,records changed; class flagged -> two; hard flags OTHER_PARK -> -
+US-ID,US-2246,Priest Lake State Park,7,verified,verified,199741 199742 199743 199744 sgidb1935309,199741 199742 199743 199744,records changed
+US-MO,US-13160,John Baumgardt Memorial State Conservation Area,7,verified,flagged,mol465 sgmoc1114 sgmof1114 sgmoh1114,mol465 sgmoc1114 sgmof1114 sgmoh1114,class verified -> flagged; hard flags - -> SIZE_BIG
+US-MT,US-0398,Bowdoin National Wildlife Refuge,7,flagged,flagged,3658 4592 sgmtd232,3658 4592,records changed
+US-MT,US-7998,Hailstone National Wildlife Refuge,7,flagged,verified,3911 4856 sgmtd4164,3911 4856,records changed; class flagged -> verified; hard flags BIG_PIECE/SIZE_BIG -> -
+US-MT,US-8004,Swan River National Wildlife Refuge,7,verified,verified,4381 5338 sgmtd4570,4381 5338,records changed
+US-OR,US-10474,Sutton Mountain Wilderness Area,7,one,two,wsa1437,wsa1437,class one -> two
+US-WA,US-12243,Sherman Creek Wildlife Area State Fish and Wildlife Area,7,flagged,two,271391 sgwab1430 sgwab180 sgwad137 sgwad236 sgwad240 sgwad5093 sgwad5891 sgwaf1430 sgwag180 wdw8 wdw9,sgwab1430 sgwab180 sgwad137 sgwad236 sgwad240 sgwad5093 sgwad5891 sgwad6405 sgwaf1430 sgwag180 wdw8 wdw9,records changed; class flagged -> two; hard flags SHARED -> -
+US-WA,US-12343,White Salmon National Wild and Scenic River,7,two,two,fwsr173,fwsr171 fwsr173 fwsr257,records changed
+US-WA,US-12345,Merrill Lake State Wildlife Area,7,flagged,verified,78898 sgwab1493 sgwae50459 sgwaf1493,78898 sgwab1493 sgwaf1493,records changed; class flagged -> verified; hard flags SHARED -> -
+US-WA,US-13419,Chambers Lake State Fishing Lake,7,verified,two,158258 sgwab300 sgwae52472,sgwab300 sgwae52472,records changed; class verified -> two
+US-CA,US-12614,Slinkard/Little Antelope State Wildlife Area,6,verified,flagged,183600 sgcaa280 sgcac1826 sgcac1827 sgcac1828 sgcac1829 sgcac1839,183600 sgcaa280 sgcac1826 sgcac1827 sgcac1828 sgcac1829 sgcac1839,class verified -> flagged; hard flags - -> SIZE_BIG
+US-MT,US-0404,Medicine Lake National Wildlife Refuge,6,verified,verified,4106 5063 sgmtd4567,4106 5063,records changed
+US-MT,US-12940,Creston National Fish Hatchery,6,verified,verified,3753 4691 sgmtd109,3753 4691,records changed
+US-NV,US-13035,Granite Range BLM Herd Management Area,6,pin,flagged,,sgnvi412,outline gained; class pin -> flagged; hard flags - -> PIN_FAR
+US-OR,US-10475,Pat's Cabin Wilderness Area,6,one,pin,wsa1412,,outline lost; class one -> pin
+US-UT,US-11169,Bridge Hollow on the Green River BLM Recreation Management Area,6,two,pin,rma10005 rst10005,,outline lost; class two -> pin
+US-UT,US-6058,Red Cliffs Archeological Site BLM Historic Area,6,flagged,pin,rma9123,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-VA,US-9948,Little Wilson Creek Wilderness Area,6,verified,verified,sgvae500389 wld260,wld260,records changed
+US-VA,US-9949,Mountain Lake Wilderness Area,6,verified,verified,sgvae500353 wld288,wld288,records changed
+US-VA,US-9950,Peters Mountain Wilderness Area,6,verified,verified,sgvae500348 wld145,wld145,records changed
+US-VA,US-9953,Ramseys Draft Wilderness Area,6,verified,verified,sgvae500340 wld356,wld356,records changed
+US-VT,US-3131,Maidstone State Park,6,verified,pin,61334 61335 sgvta30,,outline lost; class verified -> pin; VERIFIED OUTLINE LOST
+US-ID,US-0277,Grays Lake National Wildlife Refuge,5,verified,verified,3881 4825 sgidb1938408,3881 4825,records changed
+US-ID,US-0890,Salmon National Wild and Scenic River,5,two,two,fwsr245 fwsr246,fwsr245 fwsr246 fwsr72,records changed
+US-ME,US-0338,Cross Island National Wildlife Refuge,5,verified,flagged,3756 4694,3756 4694,class verified -> flagged; hard flags - -> SIZE_BIG
+US-NH,US-2648,Dixville Notch State Park,5,verified,flagged,56891 sgnha52 sgnhc89 sgnhd52,56891 sgnha52 sgnhc89 sgnhd52,class verified -> flagged; hard flags - -> SIZE_BIG
+US-NV,US-12816,Sand Mountain National Recreation Area,5,verified,verified,rma9489 rma9522 rst9489 rst9522 sgakg9489 sgakg9522 sgnvb444 sgnvd444,rma9489 rma9522 rst9489 rst9522 sgakg9489 sgakg9522 sgnvb444,records changed
+US-NV,US-13139,Muddy Mountains BLM Herd Management Area,5,flagged,flagged,hma181 sgakg9718 sgnvi515,hma181 sgnvi515,records changed; hard flags SHARED -> PIN_FAR
+US-UT,US-11347,Swinging Bridge Trailhead BLM Recreation Management Area,5,flagged,pin,rma13737,,outline lost; class flagged -> pin; hard flags PIN_FAR -> -
+US-VA,US-9947,Little Dry Run Wilderness Area,5,verified,verified,sgvae500351 wld189,wld189,records changed
+US-WA,US-10695,Coffeepot Lake Nature Recreation Area,5,verified,pin,rma9874 rst9874,,outline lost; class verified -> pin; VERIFIED OUTLINE LOST
+US-WA,US-12244,Swanson Lakes Wildlife Area State Fish and Wildlife Area,5,flagged,two,271391 sgwab1455 sgwab187 sgwad1245 sgwad1304 sgwad1426 sgwae43105 sgwae43430 sgwaf1455 sgwag187 wdw11,sgwab1455 sgwab187 sgwad1245 sgwad1304 sgwad1426 sgwae43105 sgwae43430 sgwaf1455 sgwag187 wdw11,records changed; class flagged -> two; hard flags SHARED -> -
+US-WA,US-12245,Twin Lakes BLM Recreation Management Area,5,verified,verified,rma11311 rst11311 sgakg11311 sgwae24273 sgwae56106,rma11311 rst11311 sgakg11311,records changed
+US-WA,US-12570,Starvation Lake State Recreation Area,5,two,pin,sgwae32088,,outline lost; class two -> pin
+US-WA,US-3268,Skagit Island Marine State Park,5,flagged,verified,158737 158744 sgwaa168 sgwad3675 sgwad414 sgwad559,158744 sgwaa168 sgwad414 sgwad559,records changed; class flagged -> verified; hard flags OTHER_PARK/SHARED -> -
+US-AK,US-0029,Glacier Bay National Preserve,4,flagged,verified,3302 3441,3302,records changed; class flagged -> verified; hard flags OTHER_PARK/SHARED -> -
+US-ID,US-13158,Blackfoot Reservoir State Fishing Lake,4,flagged,flagged,2306 rst13878 sgakg13878 sgidb1939185 sgidc850,199587 2306 rst13878 sgakg13878 sgidb1939185 sgidc850,records changed
+US-MT,US-0401,Lake Mason National Wildlife Refuge,4,verified,verified,4025 4980 sgmtd119 sgmtd67,4025 4980,records changed
+US-MT,US-0403,Lost Trail National Wildlife Refuge,4,verified,verified,4055 5010 sgmtd147,4055 5010,records changed
+US-MT,US-0409,War Horse National Wildlife Refuge,4,verified,verified,4455 5413 sgmtd212,4455 5413,records changed
+US-MT,US-12631,Terry Badlands BLM Wilderness Area,4,two,two,sgmtd721 wsa208 wsa209 wsa210 wsa211,wsa208 wsa209 wsa210 wsa211,records changed
+US-MT,US-12646,Seven Sisters Wildlife Management Area,4,flagged,flagged,211769 211792 78877 78878 sgmtb8672 sgmtc41272 sgmtd360 sgmtd654 sgmtf274,211769 sgmtb8672 sgmtd360,records changed
+US-MT,US-12918,Seven Sisters State Fish and Wildlife Area,4,flagged,flagged,211769 211792 78877 78878 sgmtb8672 sgmtc41272 sgmtd360 sgmtd654 sgmtf274,sgmtb8672,records changed; hard flags OTHER_PARK/SHARED -> SHARED
+US-MT,US-7999,Hewitt Lake National Wildlife Refuge,4,verified,verified,3936 4882 sgmtd4558,3936 4882,records changed
+US-NV,US-13029,Flanigan BLM Herd Management Area,4,pin,flagged,,sgnvi429,outline gained; class pin -> flagged; hard flags - -> PIN_FAR
+US-NV,US-13031,Garfield Flat BLM Herd Management Area,4,pin,none,,sgnvi454,outline gained; class pin -> none
+US-NV,US-13122,Horse Mountain BLM Herd Management Area,4,pin,none,,sgnvi449,outline gained; class pin -> none
+US-OR,US-0509,Upper Klamath National Wildlife Refuge,4,flagged,verified,4429 5386,4429 5386,class flagged -> verified; hard flags PIN_FAR -> -
+US-OR,US-10021,Topsy BLM Recreation Management Area,4,verified,pin,rma11215 rst11215 rst12988,,outline lost; class verified -> pin; VERIFIED OUTLINE LOST
+US-OR,US-10026,Devils Garden Lava Bed Wilderness Area,4,two,one,sgakh1847 wsa1358 wsa1359,wsa1358 wsa1359,records changed; class two -> one
+US-WA,US-12522,Nile Springs State Wildlife Area,4,verified,verified,158357 wdw83,158357,records changed
+US-WA,US-12525,Bridgeport State Wildlife Area,4,flagged,verified,158273 271407 sgwab1301 sgwab1302 sgwab1771 sgwaf1301 sgwaf1302,158273 sgwab1301 sgwaf1301,records changed; class flagged -> verified; hard flags SHARED -> -
+US-WA,US-13397,Modrow Bridge State Recreation Site,4,two,pin,158255,,outline lost; class two -> pin
+US-WA,US-13441,Lake Desire State Fishing Lake,4,verified,two,158261 sgwab343 sgwae52647,sgwab343 sgwae52647,records changed; class verified -> two
+US-WY,US-6130,Encampment River Wilderness Area,4,flagged,two,wld123 wsa1063,wld123,records changed; class flagged -> two; hard flags SHARED -> -
+US-AK,US-4592,Haines State Forest,3,verified,two,165912 sgakb752 sgakb807 sgakc402 sgakc403 sgakc404 sgakc405 sgakc406 sgakc407 sgakc408 sgakc409 sgakc410,165912 sgakb752 sgakb807 sgakc402 sgakc403 sgakc404 sgakc405 sgakc406 sgakc407 sgakc408 sgakc409 sgakc410,class verified -> two
+US-ID,US-10429,Middle Fork Clearwater River National Wild and Scenic River,3,two,two,fwsr214,fwsr214 fwsr55,records changed
+US-ID,US-13094,Oneida Narrows Reservoir State Fishing Lake,3,one,one,rst13881 sgakg13881 sgakh1165 sgidb1939782 sgidc857,rst13881 sgakg13881 sgidb1939782 sgidc857,records changed
+US-NV,US-13034,Goshute BLM Herd Management Area,3,pin,flagged,,hab86 sgnvi416,outline gained; class pin -> flagged; hard flags - -> PIN_FAR
+US-NV,US-13119,Stonewall BLM Herd Management Area,3,pin,none,,sgnvi462,outline gained; class pin -> none
+US-NV,US-13129,Lahontan BLM Herd Management Area,3,pin,none,,sgnvi446,outline gained; class pin -> none
+US-NV,US-13138,Wassuk BLM Herd Management Area,3,pin,flagged,,hma127 sgnvi450,outline gained; class pin -> flagged; hard flags - -> PIN_FAR
+US-NV,US-13165,Big Dune BLM Special Recreation Management Area,3,two,two,rst9775 sgakg9775 sgakh1210 sgnvb443 sgnvd443 sgnvh1210,rst9775 sgakg9775 sgakh1210 sgnvh1210,records changed
+US-UT,US-11711,Elbow Ranch BLM Recreation Management Area,3,two,pin,263935,,outline lost; class two -> pin
+US-WA,US-11142,West Foster Creek Wildlife Area,3,flagged,pin,158410 sgwab1473 sgwaf1473,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-WA,US-12272,Bridgeport Bar Wildlife Area State Fish and Wildlife Area,3,flagged,verified,158274 sgwab1301 sgwab1302 sgwab1771 sgwaf1301 sgwaf1302,158274 sgwab1302 sgwab1771 sgwaf1302,records changed; class flagged -> verified; hard flags SHARED -> -
+US-WA,US-13398,Beginner's Hole State Recreation Site,3,two,pin,158013,,outline lost; class two -> pin
+US-WA,US-13403,Loomis Lake State Fishing Lake,3,flagged,two,271578 sgwaa104 sgwab1536 sgwae74821,sgwab1536 sgwae74821,records changed; class flagged -> two; hard flags SHARED -> -
+US-WY,US-10944,Twin Buttes BLM WSA Wilderness Area,3,flagged,pin,wsa1089,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-CA,US-3541,Point Sal State Beach,2,flagged,verified,184057 sgakh591 sgcab605,184057 sgakh591 sgcab605,class flagged -> verified; hard flags SIZE_BIG -> -
+US-ID,US-10339,Owyhee River Wilderness Area (BLM) Wilderness Area,2,two,two,wbl171 wsa1409 wsa1410,wbl171,records changed
+US-ME,US-0339,Franklin Island National Wildlife Refuge,2,verified,flagged,3861 4804,3861 4804,class verified -> flagged; hard flags - -> SIZE_BIG
+US-MT,US-12633,Sheep Creek BLM Wilderness Area,2,two,two,sgmtd717 wsa214,wsa214,records changed
+US-MT,US-12634,Axolotl Lakes BLM Wilderness Area,2,verified,verified,sgakg11093 sgmtd690 wsa197,sgakg11093 wsa197,records changed
+US-MT,US-7996,Black Coulee National Wildlife Refuge,2,verified,verified,3640 4573 sgmtd91,3640 4573,records changed
+US-NV,US-13019,Buffalo Hills BLM Herd Management Area,2,pin,flagged,,sgnvi414,outline gained; class pin -> flagged; hard flags - -> PIN_FAR
+US-NV,US-13033,Goldfield BLM Herd Management Area,2,one,one,hma5 sgnvb222 sgnvd222 sgnvi459,hma5 sgnvi459,records changed
+US-NV,US-13042,Montezuma Peak BLM Herd Management Area,2,pin,flagged,,sgnvi460,outline gained; class pin -> flagged; hard flags - -> PIN_FAR
+US-NV,US-13052,Spruce-Pequop BLM Herd Management Area,2,pin,none,,sgnvi417,outline gained; class pin -> none
+US-NV,US-13053,Stone Cabin BLM Herd Management Area,2,pin,none,,sgnvi481,outline gained; class pin -> none
+US-NV,US-13115,Gold Butte BLM Herd Management Area,2,flagged,none,hma58 nca21295 sgnvf4422 sgnvi506,hma58 sgnvi506,records changed; class flagged -> none; hard flags SHARED -> -
+US-NV,US-13123,Bald Mountain BLM Herd Management Area,2,pin,none,,sgnvi430,outline gained; class pin -> none
+US-NV,US-13128,Jackson Mountains BLM Herd Management Area,2,pin,flagged,,sgnvi408,outline gained; class pin -> flagged; hard flags - -> PIN_FAR
+US-NV,US-13130,Lava Beds BLM Herd Management Area,2,pin,flagged,,sgnvi415,outline gained; class pin -> flagged; hard flags - -> PIN_FAR
+US-NV,US-9260,Jumbo Springs Wilderness Area,2,two,verified,wbl209,wbl209,class two -> verified
+US-NV,US-9262,Lime Canyon BLM Wilderness Area,2,two,verified,wbl211,wbl211,class two -> verified
+US-OR,US-12468,Swiftwater Day Use BLM Recreation Management Area,2,verified,verified,rma11300 rst11300 rst13573 sgakg11300 sgakg13573 sgorf2816,rma11300 rst11300 rst13573 sgakg11300 sgakg13573,records changed
+US-OR,US-12841,Fawn Creek BLM Recreation Management Area,2,pin,two,,sgakg12757 sgorf3756,outline gained; class pin -> two
+US-OR,US-12951,Prineville Reservoir State Fish and Wildlife Area,2,flagged,verified,2364 sgorc57,sgorc57,records changed; class flagged -> verified; hard flags SHARED -> -
+US-OR,US-12961,Old Miners Meadow BLM Recreation Management Area,2,verified,verified,rst12974 sgakg12974 sgorf5636,rst12974 sgakg12974,records changed
+US-OR,US-13069,Dry Creek Buttes BLM Wilderness Area,2,one,one,wsa1365 wsa1366,wsa1365,records changed
+US-UT,US-6045,Swasey Mountain BLM Herd Management Area,2,flagged,pin,sgakg9696,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-UT,US-6046,Swasey Mountain BLM Wilderness Area,2,verified,verified,sgakg9696 wsa628 wsa633 wsa637 wsa638 wsa639 wsa640 wsa642 wsa643 wsa644 wsa645 wsa646,wsa628 wsa633 wsa637 wsa638 wsa639 wsa640 wsa642 wsa643 wsa644 wsa645 wsa646 wsa647,records changed
+US-VA,US-9939,Beartown Wilderness Area,2,verified,verified,sgvae500350 wld31,wld31,records changed
+US-VA,US-9942,Garden Mountain Wilderness Area,2,verified,verified,sgvae500422 wld141,wld141,records changed
+US-WA,US-12486,Entiat State Wildlife Area,2,verified,verified,158311 sgwab1344 sgwad1126 sgwae40169 sgwaf1344,158311 sgwab1344 sgwad1126 sgwaf1344,records changed
+US-AK,US-3392,Kachemak Bay Wilderness State Park,1,flagged,verified,165859 165860 165888 165889 165890 sgaka116 sgaka147 sgake116 sgake147 sgakf116 sgakf147,165859 165860 sgaka147 sgake147 sgakf147,records changed; class flagged -> verified; hard flags OTHER_PARK/SHARED -> -
+US-MT,US-0408,UL Bend National Wildlife Refuge,1,verified,verified,4422 5379 sgmtd4573,4422 5379,records changed
+US-MT,US-12632,Sleeping Giant BLM Wilderness Area,1,verified,verified,sgakg11078 sgakh1482 sgmtd718 wsa215,sgakg11078 sgakh1482 wsa215,records changed
+US-MT,US-12635,Humbug Spires BLM Wilderness Area,1,verified,verified,sgakg10983 sgakh1363 sgmtd710 wsa201 wsa202 wsa203,sgakg10983 sgakh1363 wsa201 wsa202 wsa203,records changed
+US-NV,US-13024,Callaghan BLM Herd Management Area,1,pin,flagged,,sgnvi436,outline gained; class pin -> flagged; hard flags - -> PIN_FAR
+US-NV,US-13044,Palmetto BLM Herd Management Area,1,pin,none,,sgnvi461,outline gained; class pin -> none
+US-NV,US-13046,Paymaster BLM Herd Management Area,1,pin,none,,hab25 sgnvi456,outline gained; class pin -> none
+US-NV,US-13124,Calico Mountains BLM Herd Management Area,1,flagged,none,hma67 sgnvi411,hma67 sgnvi411,class flagged -> none; hard flags SHARED -> -
+US-NV,US-13178,Mt. Irish Archaeological Site Archeological Reserve,1,flagged,pin,sgnvh1238,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-NV,US-9242,Calico Mountains Wilderness Area,1,verified,verified,sgnvi411 wbl205,wbl205,records changed
+US-OR,US-10482,Riverside BLM Recreation Management Area,1,flagged,one,sgord1379 sgord2400 sgord2516 sgord264 sgord2661 sgord4848 sgord4850 sgord5947 sgord6238 sgord6239 sgord626 sgord627,rma11312 rst11312 sgakg11312,records changed; class flagged -> one; hard flags SHARED -> -
+US-OR,US-12952,Riverside State Fish and Wildlife Area,1,flagged,verified,241330 sgorc16 sgorc19 sgorc43 sgord2661 sgord4849 sgord4850 sgord5947 sgord6123 sgord6239 sgord626 sgord627,241330 sgorc16 sgorc19 sgorc43 sgord2661 sgord4849 sgord4850 sgord5947 sgord6123 sgord6239 sgord626 sgord627,class flagged -> verified; hard flags SHARED -> -
+US-OR,US-13098,Neptune South Wayside State Recreation Site,1,flagged,pin,osp46,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-OR,US-13099,Neptune North Wayside State Recreation Site,1,flagged,pin,osp46,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-UT,US-11748,Cedar Mesa BLM Special Recreation Management Area,1,pin,flagged,,rst14459,outline gained; class pin -> flagged; hard flags - -> PIN_FAR
+US-VA,US-9958,Stone Mountain Wilderness Area,1,two,two,sgvae500505 sgvae500507 wld413,wld413,records changed
+US-WA,US-12277,West Foster Creek Wildlife Area State Fish and Wildlife Area,1,flagged,pin,158410 sgwab1473 sgwaf1473,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-WA,US-12572,Merrill Lake State Conservation Area,1,flagged,two,271357 78898 sgwae50459,271357,records changed; class flagged -> two; hard flags SHARED -> -
+US-WA,US-12830,Old Ruby State Park State Heritage Area,1,two,pin,271501 sgwaa128,,outline lost; class two -> pin
+US-WA,US-12831,Ruby BLM Special Recreation Management Area,1,flagged,pin,271501,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-WA,US-13376,Potholes Reservoir State Fishing Lake,1,flagged,pin,2341 271518 sgwaa147 sgwae10603,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-WY,US-10930,Devil's Playground BLM WSA Wilderness Area,1,flagged,pin,wsa1089,,outline lost; class flagged -> pin; hard flags SHARED -> -
+US-WY,US-12724,Prospect Mountain WSA State Wilderness Area,1,one,two,wsa1064,wsa1064,class one -> two
+US-WY,US-12725,Sweetwater Rocks (Lankin Dome) State Wilderness Area,1,two,pin,rst10741,,outline lost; class two -> pin
+US-AK,US-0003,Aniakchak National Preserve,0,flagged,verified,3294 3337,3294,records changed; class flagged -> verified; hard flags OTHER_PARK/SHARED -> -
+US-AK,US-0643,Noatak National Preserve,0,pin,two,,3310,outline gained; class pin -> two
+US-AK,US-0902,Aniakchak National Monument,0,flagged,verified,3294 3337,3337,records changed; class flagged -> verified; hard flags OTHER_PARK/SHARED -> -
+US-NV,US-13041,Maverick-Medicine BLM Herd Management Area,0,pin,none,,sgnvi422,outline gained; class pin -> none
+US-NV,US-13043,New Pass-Ravenswood BLM Herd Management Area,0,pin,none,,sgnvi434,outline gained; class pin -> none
+US-NV,US-13048,Rocky Hills BLM Herd Management Area,0,pin,flagged,,sgnvi433,outline gained; class pin -> flagged; hard flags - -> PIN_FAR
+US-NV,US-13132,Seven Mile BLM Herd Management Area,0,pin,flagged,,hma104 sgnvi448,outline gained; class pin -> flagged; hard flags - -> PIN_FAR
+US-NV,US-13141,Roberts Mountains BLM Herd Management Area,0,one,one,hma119 sgnvi440,hma119,records changed
+US-UT,US-6010,Deep Creek BLM Wilderness Area,0,flagged,verified,sgakg9147 wbl257 wbl268 wbl303,sgakg9147,records changed; class flagged -> verified; hard flags SHARED -> -
+US-UT,US-6011,Deep Creek North BLM Wilderness Area,0,flagged,pin,wbl257 wbl268 wbl303,,outline lost; class flagged -> pin; hard flags SHARED -> -

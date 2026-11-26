@@ -1,0 +1,22 @@
+KPC key quality, job 9 (PM): wetland districts, the 6 pin-only parks (counts only; no park named; nothing sent to the keeper)
+Ran on: KPC-Links main 119caa8d website keys (22 wetland-district parks: 16 with fws rows, 6 with no rows, as the note says), the boundary-cache release US-XX.json.gz of each park's own state,
+KPC-Data park-facts.json.gz at efd17011 (made 2026-11-23) for POTA's pin. 'Within 5 km' = the record's saved shape holds the pin or its edge is within 5 km. 'FWS' = layer fws/fwsr, or Mang_Name FWS, or the manager text names the Fish and Wildlife Service.
+
+THE SORT: records nearby but none names it 6; a saved record fits 0; nothing saved nearby 0.
+  No saved record anywhere in these 6 states names any of the 6 districts (0 records with the district's name + 'Wetland Management District').
+
+PER PARK (counts): records within 5 km | by layer | FWS records | waterfowl production area records | nearest FWS record
+  park 1 (IA): 11 | padus 4, sgiac 4, sgiaa 3 | 4 | 6 | holds the pin, a national wildlife refuge (another unit)
+  park 2 (ID): 11 | padus 5, sgidb 4, sgidd 2 | 2 | 2 | 0.27 km, a waterfowl production area
+  park 3 (ME): 5 | padus 3, sgmea 1, sgmeb 1 | 2 | 2 | 0.08 km, a waterfowl production area
+  park 4 (MN): 18 | sgmne 7, padus 5, sgmnf 3, sgmna 2, sgmng 1 | 2 | 3 | holds the pin, a waterfowl production area
+  park 5 (NE): 2 | padus 2 | 2 | 2 | holds the pin, a waterfowl production area
+  park 6 (SD): 12 | padus 7, fws 5 | 9 | 9 | holds the pin, a waterfowl production area
+
+WHAT THE NEARBY FWS LAND IS:
+  2 parks: a waterfowl production area carrying the district's own place name (the district is named after it) lies 0.1-0.3 km from the pin (PAD-US, FWS).
+  3 parks: a county-wide waterfowl production area record (PAD-US, FWS; one also on the saved fws layer) holds the pin.
+  1 park: the pin sits in a national wildlife refuge (a separate unit); waterfowl production areas lie 2.5-2.9 km off (one of them a PAD-US FWS record, the others on state layers).
+  PAD-US carries most of these records twice (two record numbers, same name and acres).
+
+RECOMMENDATION (no rule changed; the owner rules, the matching chat builds): a district is not one piece of land, so no saved record will ever carry its name. The 16 that keep an outline were joined to FWS tracts. A rule 'a wetland district joins the FWS-owned waterfowl production area records that hold its pin or carry its own place name' would give 5 of the 6 an outline from records already saved (PAD-US FWS), with no fetch. The sixth stays a pin (its pin is in another unit).

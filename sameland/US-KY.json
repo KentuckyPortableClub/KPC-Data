@@ -1,0 +1,1166 @@
+{
+ "tool": "KPC 13 same-land finder",
+ "area": "US-KY",
+ "built": "2026-11-22",
+ "about": "Pairs of POTA parks whose outlines overlap, with the five same-land tests. SAME LAND: likely and CHECK rows are questions for the checker; nothing here relabels a 2-fer.",
+ "counts": {
+  "parks": 193,
+  "outlines": 176,
+  "pairs_overlapping": 18,
+  "SAME LAND: likely": 1,
+  "CHECK": 1,
+  "NOT SAME": 16,
+  "one_inside_the_other": 0
+ },
+ "left_out": [
+  [
+   "US-3791",
+   "a trail or river line, not an area"
+  ],
+  [
+   "US-4572",
+   "a trail or river line, not an area"
+  ],
+  [
+   "US-11181",
+   "a trail or river line, not an area"
+  ],
+  [
+   "US-0019",
+   "bnps: source down (refused, no request made: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-0050",
+   "bnps: source down (refused, no request made: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-0686",
+   "bnps: source down (refused, no request made: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-0703",
+   "bnps: source down (refused, no request made: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-0724",
+   "bnps: source down (refused, no request made: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-3790",
+   "bnps: source down (refused, no request made: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-3801",
+   "bwilder: source down (refused, no request made: apps.fs.usda.gov: saved copies only, no live read)"
+  ],
+  [
+   "US-3802",
+   "'Clyde E Buckley Sanctuary' on bpad: no record with this name on the layer"
+  ],
+  [
+   "US-4484",
+   "bdbnfo: source down (refused, no request made: apps.fs.usda.gov: saved copies only, no live read)"
+  ],
+  [
+   "US-7708",
+   "bnps: source down (refused, no request made: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-7950",
+   "bnps: source down (refused, no request made: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-10098",
+   "bfws: source down (refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-10099",
+   "bfws: source down (refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included)); bfws: source down (refused, no request made: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included))"
+  ],
+  [
+   "US-10172",
+   "'Salato Wildlife Refuge' on bpad: no record with this name on the layer"
+  ]
+ ],
+ "pairs": [
+  {
+   "id": "US-10139+US-4526",
+   "refs": [
+    "US-10139",
+    "US-4526"
+   ],
+   "names": [
+    "Jefferson National Forest Wildlife Management Area",
+    "George Washington & Jefferson National Forest"
+   ],
+   "acres": [
+    857.5,
+    857.5
+   ],
+   "overlap_acres": 857.5,
+   "verdict": "SAME LAND: likely",
+   "why": "Both park numbers point to the same agency record, so this looks like one piece of land with two park numbers.",
+   "tests": {
+    "S1": "SAME RECORD",
+    "S1_records": [
+     "bwma:jefferson national forest"
+    ],
+    "S2": "SAME SHAPE",
+    "S2_of_smaller": 1.0,
+    "S2_of_larger": 1.0,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "jefferson",
+     "george washington jefferson"
+    ],
+    "S4": false,
+    "S4_m": 294735,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10139+US-4526@same land@37.093,-82.733",
+     "kind": "same land",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-10112+US-7966",
+   "refs": [
+    "US-10112",
+    "US-7966"
+   ],
+   "names": [
+    "Bad Branch National Wild and Scenic River",
+    "Bad Branch State Nature Preserve"
+   ],
+   "acres": [
+    1346.7,
+    2830.0
+   ],
+   "overlap_acres": 1205.2,
+   "verdict": "CHECK",
+   "why": "The names are the same family and the POTA pins are within 200 m, though the outlines only partly overlap: a person should look.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.895,
+    "S2_of_larger": 0.426,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "bad branch wild river",
+     "bad branch"
+    ],
+    "S4": true,
+    "S4_m": 164,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Office of Kentucky Nature Preserves (Energy and Environment Cabinet)"
+     ],
+     [
+      "Office of Kentucky Nature Preserves (Energy and Environment Cabinet)"
+     ]
+    ],
+    "owner_field": [
+     [],
+     [
+      "The Nature Conservancy & Office of Kentucky Nature Preserves"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10112+US-7966@area@37.089,-82.767",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-10103+US-1277",
+   "refs": [
+    "US-10103",
+    "US-1277"
+   ],
+   "names": [
+    "The Cumberland River Wilderness Area",
+    "Cumberland Falls State Park"
+   ],
+   "acres": [
+    3162.4,
+    2001.9
+   ],
+   "overlap_acres": 503.8,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.252,
+    "S2_of_larger": 0.159,
+    "S3": false,
+    "S3_score": 76.9,
+    "S3_names": [
+     "cumberland river",
+     "cumberland falls"
+    ],
+    "S4": false,
+    "S4_m": 13638,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Office of Kentucky Nature Preserves (Energy and Environment Cabinet)"
+     ],
+     [
+      "Kentucky Department of Parks (Tourism, Arts and Heritage Cabinet)",
+      "Office of Kentucky Nature Preserves (Energy and Environment Cabinet)"
+     ]
+    ],
+    "owner_field": [
+     [],
+     [
+      "Kentucky State Parks"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10103+US-1277+US-4484@area@36.831,-84.321",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-10103+US-1277+US-4484@area@36.855,-84.317",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-10103+US-1277@area@36.837,-84.329",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-1276+US-12971",
+   "refs": [
+    "US-1276",
+    "US-12971"
+   ],
+   "names": [
+    "Carter Caves State Park",
+    "Bat Cave State Nature Preserve"
+   ],
+   "acres": [
+    1820.3,
+    135.9
+   ],
+   "overlap_acres": 133.5,
+   "verdict": "NOT SAME",
+   "why": "The smaller park lies inside the bigger one: normal layering, not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "SMALL ONE INSIDE",
+    "S2_of_smaller": 0.983,
+    "S2_of_larger": 0.073,
+    "S3": false,
+    "S3_score": 70.0,
+    "S3_names": [
+     "carter caves",
+     "bat cave"
+    ],
+    "S4": false,
+    "S4_m": 802,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Kentucky Department of Parks (Tourism, Arts and Heritage Cabinet)"
+     ],
+     [
+      "Office of Kentucky Nature Preserves (Energy and Environment Cabinet)"
+     ]
+    ],
+    "owner_field": [
+     [],
+     [
+      "Kentucky State Parks"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-1276+US-12971+US-4693@area@38.385,-83.134",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-1276+US-12971@area@38.380,-83.130",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-10106+US-7964",
+   "refs": [
+    "US-10106",
+    "US-7964"
+   ],
+   "names": [
+    "The Rockcastle National Wild and Scenic River",
+    "William H. Martin State Natural Area"
+   ],
+   "acres": [
+    3529.0,
+    459.2
+   ],
+   "overlap_acres": 57.2,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.124,
+    "S2_of_larger": 0.016,
+    "S3": false,
+    "S3_score": 34.3,
+    "S3_names": [
+     "rockcastle wild river",
+     "william martin"
+    ],
+    "S4": false,
+    "S4_m": 1025,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Office of Kentucky Nature Preserves (Energy and Environment Cabinet)"
+     ],
+     [
+      "Office of Kentucky Nature Preserves (Energy and Environment Cabinet)"
+     ]
+    ],
+    "owner_field": [
+     [],
+     [
+      "Office of Kentucky Nature Preserves"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10106+US-4484+US-7964@area@37.046,-84.319",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-10106+US-4484+US-7964@area@37.048,-84.321",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-10106+US-7964@area@37.048,-84.322",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-10106+US-10121",
+   "refs": [
+    "US-10106",
+    "US-10121"
+   ],
+   "names": [
+    "The Rockcastle National Wild and Scenic River",
+    "Cane Creek Wildlife Management Area"
+   ],
+   "acres": [
+    3529.0,
+    6677.1
+   ],
+   "overlap_acres": 97.4,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.028,
+    "S2_of_larger": 0.015,
+    "S3": false,
+    "S3_score": 25.8,
+    "S3_names": [
+     "rockcastle wild river",
+     "cane creek"
+    ],
+    "S4": false,
+    "S4_m": 5058,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Office of Kentucky Nature Preserves (Energy and Environment Cabinet)"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10106+US-10121+US-4484@area@37.041,-84.301",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-10106+US-10121@area@37.041,-84.301",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-1276+US-12972",
+   "refs": [
+    "US-1276",
+    "US-12972"
+   ],
+   "names": [
+    "Carter Caves State Park",
+    "Cascade Caverns State Nature Preserve"
+   ],
+   "acres": [
+    1820.3,
+    20.6
+   ],
+   "overlap_acres": 19.0,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.923,
+    "S2_of_larger": 0.01,
+    "S3": false,
+    "S3_score": 66.7,
+    "S3_names": [
+     "carter caves",
+     "cascade caverns"
+    ],
+    "S4": false,
+    "S4_m": 2233,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Kentucky Department of Parks (Tourism, Arts and Heritage Cabinet)"
+     ],
+     [
+      "Office of Kentucky Nature Preserves (Energy and Environment Cabinet)"
+     ]
+    ],
+    "owner_field": [
+     [],
+     [
+      "Kentucky State Parks"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-1276+US-12972@area@38.357,-83.112",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-10106+US-10160",
+   "refs": [
+    "US-10106",
+    "US-10160"
+   ],
+   "names": [
+    "The Rockcastle National Wild and Scenic River",
+    "Rockcastle River Wildlife Management Area"
+   ],
+   "acres": [
+    3529.0,
+    2922.3
+   ],
+   "overlap_acres": 27.0,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.009,
+    "S2_of_larger": 0.008,
+    "S3": true,
+    "S3_score": 100.0,
+    "S3_names": [
+     "rockcastle wild river",
+     "rockcastle river"
+    ],
+    "S4": false,
+    "S4_m": 9933,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Office of Kentucky Nature Preserves (Energy and Environment Cabinet)"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10106+US-10160+US-4484@area@37.121,-84.298",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-10106+US-10160@area@37.121,-84.298",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-10102+US-10112",
+   "refs": [
+    "US-10102",
+    "US-10112"
+   ],
+   "names": [
+    "Pine Mountain State Trail",
+    "Bad Branch National Wild and Scenic River"
+   ],
+   "acres": [
+    198.2,
+    1346.7
+   ],
+   "overlap_acres": 10.2,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.051,
+    "S2_of_larger": 0.008,
+    "S3": false,
+    "S3_score": 29.4,
+    "S3_names": [
+     "pine mountain",
+     "bad branch wild river"
+    ],
+    "S4": false,
+    "S4_m": 33649,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Kentucky Department of Parks (Tourism, Arts and Heritage Cabinet)"
+     ],
+     [
+      "Office of Kentucky Nature Preserves (Energy and Environment Cabinet)"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10102+US-10112@trail@37.092,-82.769",
+     "kind": "trail",
+     "live": false
+    },
+    {
+     "id": "US-10102+US-10112@trail@37.104,-82.760",
+     "kind": "trail",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-10102+US-7966",
+   "refs": [
+    "US-10102",
+    "US-7966"
+   ],
+   "names": [
+    "Pine Mountain State Trail",
+    "Bad Branch State Nature Preserve"
+   ],
+   "acres": [
+    198.2,
+    2830.0
+   ],
+   "overlap_acres": 16.9,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.085,
+    "S2_of_larger": 0.006,
+    "S3": false,
+    "S3_score": 26.1,
+    "S3_names": [
+     "pine mountain",
+     "bad branch"
+    ],
+    "S4": false,
+    "S4_m": 33605,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Kentucky Department of Parks (Tourism, Arts and Heritage Cabinet)"
+     ],
+     [
+      "Office of Kentucky Nature Preserves (Energy and Environment Cabinet)"
+     ]
+    ],
+    "owner_field": [
+     [],
+     [
+      "The Nature Conservancy & Office of Kentucky Nature Preserves"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10102+US-7966@trail@37.082,-82.798",
+     "kind": "trail",
+     "live": false
+    },
+    {
+     "id": "US-10102+US-7966@trail@37.084,-82.794",
+     "kind": "trail",
+     "live": false
+    },
+    {
+     "id": "US-10102+US-7966@trail@37.086,-82.792",
+     "kind": "trail",
+     "live": true
+    },
+    {
+     "id": "US-10102+US-7966@trail@37.098,-82.770",
+     "kind": "trail",
+     "live": false
+    },
+    {
+     "id": "US-10102+US-7966@trail@37.105,-82.755",
+     "kind": "trail",
+     "live": false
+    },
+    {
+     "id": "US-10102+US-7966@trail@37.109,-82.743",
+     "kind": "trail",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-10102+US-3781",
+   "refs": [
+    "US-10102",
+    "US-3781"
+   ],
+   "names": [
+    "Pine Mountain State Trail",
+    "Breaks Interstate State Park"
+   ],
+   "acres": [
+    198.2,
+    4078.0
+   ],
+   "overlap_acres": 13.4,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.067,
+    "S2_of_larger": 0.003,
+    "S3": false,
+    "S3_score": 33.3,
+    "S3_names": [
+     "pine mountain",
+     "breaks interstate"
+    ],
+    "S4": false,
+    "S4_m": 14894,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Kentucky Department of Parks (Tourism, Arts and Heritage Cabinet)"
+     ],
+     [
+      "Kentucky Department of Parks (Tourism, Arts and Heritage Cabinet)"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10102+US-3781@trail@37.294,-82.339",
+     "kind": "trail",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-10102+US-4526",
+   "refs": [
+    "US-10102",
+    "US-4526"
+   ],
+   "names": [
+    "Pine Mountain State Trail",
+    "George Washington & Jefferson National Forest"
+   ],
+   "acres": [
+    198.2,
+    857.5
+   ],
+   "overlap_acres": 2.9,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.015,
+    "S2_of_larger": 0.003,
+    "S3": false,
+    "S3_score": 30.0,
+    "S3_names": [
+     "pine mountain",
+     "george washington jefferson"
+    ],
+    "S4": false,
+    "S4_m": 265812,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Kentucky Department of Parks (Tourism, Arts and Heritage Cabinet)"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10102+US-4526@trail@37.110,-82.741",
+     "kind": "trail",
+     "live": false
+    },
+    {
+     "id": "US-10102+US-4526@trail@37.111,-82.739",
+     "kind": "trail",
+     "live": false
+    },
+    {
+     "id": "US-10102+US-4526@trail@37.208,-82.534",
+     "kind": "trail",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-10102+US-10139",
+   "refs": [
+    "US-10102",
+    "US-10139"
+   ],
+   "names": [
+    "Pine Mountain State Trail",
+    "Jefferson National Forest Wildlife Management Area"
+   ],
+   "acres": [
+    198.2,
+    857.5
+   ],
+   "overlap_acres": 2.9,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.015,
+    "S2_of_larger": 0.003,
+    "S3": false,
+    "S3_score": 18.2,
+    "S3_names": [
+     "pine mountain",
+     "jefferson"
+    ],
+    "S4": false,
+    "S4_m": 29563,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Kentucky Department of Parks (Tourism, Arts and Heritage Cabinet)"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10102+US-10139@trail@37.110,-82.741",
+     "kind": "trail",
+     "live": false
+    },
+    {
+     "id": "US-10102+US-10139@trail@37.111,-82.739",
+     "kind": "trail",
+     "live": false
+    },
+    {
+     "id": "US-10102+US-10139@trail@37.208,-82.534",
+     "kind": "trail",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-1276+US-4693",
+   "refs": [
+    "US-1276",
+    "US-4693"
+   ],
+   "names": [
+    "Carter Caves State Park",
+    "Tygarts State Forest"
+   ],
+   "acres": [
+    1820.3,
+    1175.7
+   ],
+   "overlap_acres": 1.9,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.002,
+    "S2_of_larger": 0.001,
+    "S3": false,
+    "S3_score": 42.1,
+    "S3_names": [
+     "carter caves",
+     "tygarts"
+    ],
+    "S4": false,
+    "S4_m": 2283,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "Kentucky Department of Parks (Tourism, Arts and Heritage Cabinet)"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-1276+US-12971+US-4693@area@38.385,-83.134",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-1276+US-4693@area@38.379,-83.137",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-1276+US-4693@area@38.379,-83.139",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-1276+US-4693@area@38.380,-83.141",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-1276+US-4693@area@38.380,-83.142",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-1276+US-4693@area@38.385,-83.134",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-1281+US-4687",
+   "refs": [
+    "US-1281",
+    "US-4687"
+   ],
+   "names": [
+    "Jenny Wiley State Park",
+    "Dewey Lake Wildlife Management Area"
+   ],
+   "acres": [
+    1484.0,
+    9173.5
+   ],
+   "overlap_acres": 2.2,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.001,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 50.0,
+    "S3_names": [
+     "jenny wiley",
+     "dewey"
+    ],
+    "S4": false,
+    "S4_m": 4464,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "Kentucky Department of Parks (Tourism, Arts and Heritage Cabinet)",
+      "State fish and wildlife agency"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-1281+US-4687@area@37.691,-82.705",
+     "kind": "area",
+     "live": false
+    },
+    {
+     "id": "US-1281+US-4687@area@37.707,-82.731",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-1281+US-4687@area@37.727,-82.744",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-10158+US-10171",
+   "refs": [
+    "US-10158",
+    "US-10171"
+   ],
+   "names": [
+    "Pioneer Weapons Wildlife Management Area",
+    "Zilpo Campground Wildlife Management Area"
+   ],
+   "acres": [
+    7732.3,
+    221.0
+   ],
+   "overlap_acres": 1.1,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.005,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 38.7,
+    "S3_names": [
+     "pioneer weapons",
+     "zilpo campground"
+    ],
+    "S4": false,
+    "S4_m": 7412,
+    "S5": "same",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "State fish and wildlife agency"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10158+US-10171+US-4484@area@38.075,-83.497",
+     "kind": "area",
+     "live": true
+    },
+    {
+     "id": "US-10158+US-10171@area@38.075,-83.497",
+     "kind": "area",
+     "live": false
+    }
+   ]
+  },
+  {
+   "id": "US-4526+US-7966",
+   "refs": [
+    "US-4526",
+    "US-7966"
+   ],
+   "names": [
+    "George Washington & Jefferson National Forest",
+    "Bad Branch State Nature Preserve"
+   ],
+   "acres": [
+    857.5,
+    2830.0
+   ],
+   "overlap_acres": 0.7,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.001,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 21.6,
+    "S3_names": [
+     "george washington jefferson",
+     "bad branch"
+    ],
+    "S4": false,
+    "S4_m": 298741,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "Office of Kentucky Nature Preserves (Energy and Environment Cabinet)"
+     ]
+    ],
+    "owner_field": [
+     [],
+     [
+      "The Nature Conservancy & Office of Kentucky Nature Preserves"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-4526+US-7966@area@37.100,-82.747",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  },
+  {
+   "id": "US-10139+US-7966",
+   "refs": [
+    "US-10139",
+    "US-7966"
+   ],
+   "names": [
+    "Jefferson National Forest Wildlife Management Area",
+    "Bad Branch State Nature Preserve"
+   ],
+   "acres": [
+    857.5,
+    2830.0
+   ],
+   "overlap_acres": 0.7,
+   "verdict": "NOT SAME",
+   "why": "The outlines only partly overlap and the names or pins do not match: not the same land.",
+   "tests": {
+    "S1": null,
+    "S1_records": [],
+    "S2": "PART OVERLAP",
+    "S2_of_smaller": 0.001,
+    "S2_of_larger": 0.0,
+    "S3": false,
+    "S3_score": 21.1,
+    "S3_names": [
+     "jefferson",
+     "bad branch"
+    ],
+    "S4": false,
+    "S4_m": 4048,
+    "S5": "different",
+    "S5_agencies": [
+     [
+      "State fish and wildlife agency"
+     ],
+     [
+      "Office of Kentucky Nature Preserves (Energy and Environment Cabinet)"
+     ]
+    ],
+    "owner_field": [
+     [],
+     [
+      "The Nature Conservancy & Office of Kentucky Nature Preserves"
+     ]
+    ]
+   },
+   "fers": [
+    {
+     "id": "US-10139+US-7966@area@37.100,-82.747",
+     "kind": "area",
+     "live": true
+    }
+   ]
+  }
+ ],
+ "club_same_land_rows": [
+  {
+   "fer_id": "US-0703+US-3790@same land@36.503,-88.061",
+   "refs": [
+    "US-0703",
+    "US-3790"
+   ],
+   "live": true,
+   "tool_verdict": "NO OUTLINE (one park could not be drawn)"
+  },
+  {
+   "fer_id": "US-10139+US-4526@same land@37.093,-82.733",
+   "refs": [
+    "US-10139",
+    "US-4526"
+   ],
+   "live": true,
+   "tool_verdict": "SAME LAND: likely"
+  }
+ ]
+}

@@ -1,0 +1,842 @@
+{
+ "version": "1.0.0",
+ "done": {
+  "https://mapservices.gov.yk.ca/arcgis/rest/services/GeoYukon/GY_ParksProtectedAreas/MapServer/0": {
+   "status": "failed",
+   "key": "f02f7da2c50a984f"
+  },
+  "https://services.arcgis.com/Eb8P5h4CJk8utIBz/arcgis/rest/services/Point_Of_Interest_Kananaskis_View/FeatureServer/0": {
+   "status": "failed",
+   "key": "c4d0a4384c4c2c8a"
+  },
+  "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_forest_tenure/MapServer/12": {
+   "status": "failed",
+   "key": "dbd4cd28e37f0220"
+  },
+  "https://maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_forest_tenure/MapServer/5": {
+   "status": "failed",
+   "key": "939f95ffad64a1b0"
+  },
+  "https://services2.arcgis.com/gdcQ6sUWKP8qwBmV/arcgis/rest/services/Campsites_WGS/FeatureServer/0": {
+   "status": "failed",
+   "key": "2b71fc8813599a6b"
+  },
+  "https://services2.arcgis.com/AhxrK3F6WM8ECvDi/arcgis/rest/services/Campgrounds/FeatureServer/0": {
+   "status": "failed",
+   "key": "898344f30f560577"
+  },
+  "https://services2.arcgis.com/AhxrK3F6WM8ECvDi/arcgis/rest/services/Campgrounds_OHV/FeatureServer/32": {
+   "status": "failed",
+   "key": "13d00c89104b5f1c"
+  },
+  "https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/PARKS_BOUNDARIES/MapServer/1": {
+   "status": "read OK",
+   "key": "16703bd5c79577ef"
+  },
+  "https://services1.arcgis.com/nRHtyn3uE1kyzoYc/arcgis/rest/services/CampgroundCabinAreas/FeatureServer/0": {
+   "status": "failed",
+   "key": "3669bcdcd4940da3"
+  },
+  "https://services1.arcgis.com/nRHtyn3uE1kyzoYc/arcgis/rest/services/FL_State_Parks_Campsites/FeatureServer/0": {
+   "status": "failed",
+   "key": "e7b37f8e3e2201d3"
+  },
+  "https://services.arcgis.com/s8wtJX9suxFen6TA/arcgis/rest/services/Management_Area_Campsite/FeatureServer/0": {
+   "status": "failed",
+   "key": "a4debdda17cd6b34"
+  },
+  "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Designated_Campsites/FeatureServer/0": {
+   "status": "failed",
+   "key": "30518ee68c6988c7"
+  },
+  "https://services.arcgis.com/HQ0xoN0EzDPBOEci/arcgis/rest/services/Public_Use_Campsites/FeatureServer/0": {
+   "status": "failed",
+   "key": "9a77aa32a06bb5be"
+  },
+  "https://geodata.hawaii.gov/arcgis/rest/services/Infrastructure/MapServer/31": {
+   "status": "read OK",
+   "key": "80b7ce8dad758e0d"
+  },
+  "https://services2.arcgis.com/r6iFVcMJeA4kB4GC/arcgis/rest/services/Parks_RecAreas_Forests_Camping/FeatureServer/0": {
+   "status": "failed",
+   "key": "ce9bbd30724e6904"
+  },
+  "https://services.arcgis.com/b9DHj1BjfdLLFv11/arcgis/rest/services/Campground_Types/FeatureServer/0": {
+   "status": "failed",
+   "key": "b06027e25176c0ce"
+  },
+  "https://gisdata.in.gov/server/rest/services/Hosted/416Campgrounds/FeatureServer/0": {
+   "status": "read OK",
+   "key": "d318be072bb166a5"
+  },
+  "https://gisdata.in.gov/server/rest/services/Hosted/Camping_Sites_RO/FeatureServer/0": {
+   "status": "read OK",
+   "key": "e3ba4ad0f7d81768"
+  },
+  "https://gisdata.in.gov/server/rest/services/Hosted/Dispersed_Camping_RO/FeatureServer/0": {
+   "status": "read OK",
+   "key": "389adcc708d822a1"
+  },
+  "https://gisdata.in.gov/server/rest/services/Hosted/Sites_Camping/FeatureServer/8": {
+   "status": "read OK",
+   "key": "a9223c9256f508d7"
+  },
+  "https://gisdata.in.gov/server/rest/services/Hosted/Streamside_Camping_RO/FeatureServer/0": {
+   "status": "read OK",
+   "key": "4c005ebb97967924"
+  },
+  "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_State_Park_Campsites_WM_gdb/FeatureServer/0": {
+   "status": "failed",
+   "key": "8d7ae31a08799f05"
+  },
+  "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/DNRRecreationSearchPointsOPENDATA/FeatureServer/0": {
+   "status": "failed",
+   "key": "0566c1d4b274b000"
+  },
+  "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/dnrParksAndRecreation/FeatureServer/2": {
+   "status": "failed",
+   "key": "fe1a389246d36b10"
+  },
+  "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/dnrParksAndRecreation/FeatureServer/3": {
+   "status": "failed",
+   "key": "4e5f198f7f8efcf9"
+  },
+  "https://gisblue.mdc.mo.gov/arcgis/rest/services/Infrastructure/Camping/MapServer/0": {
+   "status": "read OK",
+   "key": "d8804b59cbd12b56"
+  },
+  "https://services3.arcgis.com/Cdxz8r11hT0MGzg1/arcgis/rest/services/FWPLND_SMITHRIVER_BOATCAMPS/FeatureServer/0": {
+   "status": "failed",
+   "key": "6e7d52bb7c827e3f"
+  },
+  "https://services1.arcgis.com/YfqBAUM5nWR3yhGP/arcgis/rest/services/Game_Land_Access/FeatureServer/0": {
+   "status": "failed",
+   "key": "d1bdd3f2c62b749e"
+  },
+  "https://services3.arcgis.com/G9FKQ0xH9VagrUos/arcgis/rest/services/NDPRD_Campground_Centers/FeatureServer/1": {
+   "status": "failed",
+   "key": "7cfb67d490689529"
+  },
+  "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/Camping_Facilities_Electric_Plus_ONLY/FeatureServer/8": {
+   "status": "failed",
+   "key": "52c252141fa7122c"
+  },
+  "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/Camping_Facility_Basic_ONLY/FeatureServer/8": {
+   "status": "failed",
+   "key": "0304b8694aefa120"
+  },
+  "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/Camping_Facility_Electric_ONLY/FeatureServer/8": {
+   "status": "failed",
+   "key": "01cc7690cce402b2"
+  },
+  "https://services5.arcgis.com/IOshH1zLrIieqrNk/arcgis/rest/services/Camping_Facility_Full_Service_ONLY/FeatureServer/8": {
+   "status": "failed",
+   "key": "034bcb8277be3909"
+  },
+  "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/arcgis/rest/services/Campgrounds/FeatureServer/0": {
+   "status": "failed",
+   "key": "97c027c67d3e9ed9"
+  },
+  "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/arcgis/rest/services/Campsites/FeatureServer/0": {
+   "status": "failed",
+   "key": "3c08ecc24fe016c3"
+  },
+  "https://services.arcgis.com/1xFZPtKn1wKC6POA/arcgis/rest/services/NY_State_Parks_Camping/FeatureServer/0": {
+   "status": "failed",
+   "key": "0df7bd0d8ad7588c"
+  },
+  "https://gis.ohiodnr.gov/arcgis/rest/services/DOW_Services/DOW_Facilities/MapServer/14": {
+   "status": "failed",
+   "key": "aeb1034cec63ad8c"
+  },
+  "https://gis.ohiodnr.gov/arcgis/rest/services/DSP_Services/Viewer_CampingUnits_Amenities/MapServer/0": {
+   "status": "failed",
+   "key": "8d9da6322ea004e9"
+  },
+  "https://gis.ohiodnr.gov/arcgis/rest/services/DWC_Services/Watercraft_Paddling_Draw/MapServer/8": {
+   "status": "failed",
+   "key": "4b02ae11bd025611"
+  },
+  "https://www.gis.dcnr.pa.gov/agsprod/rest/services/BOF/Camping/MapServer/0": {
+   "status": "read OK",
+   "key": "2a0b1a0d7886a791"
+  },
+  "https://www.gis.dcnr.pa.gov/agsprod/rest/services/Parks/State_Parks/MapServer/13": {
+   "status": "read OK",
+   "key": "35e6ca0fb0c94f9c"
+  },
+  "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/TN_State_Parks_Campsites/FeatureServer/0": {
+   "status": "failed",
+   "key": "d45d998f641b6d06"
+  },
+  "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/TSP_Campground_Point/FeatureServer/1": {
+   "status": "failed",
+   "key": "dce8a598583e5f32"
+  },
+  "https://services3.arcgis.com/PWXNAH2YKmZY7lBq/arcgis/rest/services/Campgrounds/FeatureServer/0": {
+   "status": "failed",
+   "key": "df4e6983ba723279"
+  },
+  "https://tpwd.texas.gov/arcgis/rest/services/Cultural/NRV_DEV_for_CRViewer_on_PRO/MapServer/3": {
+   "status": "read OK",
+   "key": "b78332876f8dfc9d"
+  },
+  "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/Campsites/FeatureServer/0": {
+   "status": "failed",
+   "key": "8454733076fae14b"
+  },
+  "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/DPRCampsitesandDayUse/FeatureServer/0": {
+   "status": "failed",
+   "key": "a12e8599bffcfa97"
+  },
+  "https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/Campsites/FeatureServer/78": {
+   "status": "failed",
+   "key": "363d69eedc398980"
+  },
+  "https://services9.arcgis.com/SQbkdxLkuQJuLGtx/arcgis/rest/services/West_Virginia_Camping_Areas/FeatureServer/40": {
+   "status": "failed",
+   "key": "93d01ca77ae813df"
+  },
+  "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/CG_DAYUSE_PARKING/FeatureServer/1": {
+   "status": "failed",
+   "key": "385fe197ceab7816"
+  },
+  "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/Campgrounds_ReservationUpdates/FeatureServer/1": {
+   "status": "failed",
+   "key": "4a77eabbafbda017"
+  },
+  "https://services1.arcgis.com/WOPmQY9FJsLgGOzw/arcgis/rest/services/Campsites_ReservationUpdates/FeatureServer/0": {
+   "status": "failed",
+   "key": "9c19c71ff294ca9c"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Chugach+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "08be6d3f336f7de2"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Tongass+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "5f5d7e21c0edf68d"
+  },
+  "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_pts/MapServer/2": {
+   "status": "read OK",
+   "key": "abf76fae91cb43ed"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27National+Forests+in+Alabama%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "b0746b2c51911ceb"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Ozark-St.+Francis+National+Forests%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "e28e3c39d31785b7"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Coronado+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "2acd79580e3f93b0"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Tonto+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "584672ccb56b5b6e"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Coconino+National+Forest+Recreation%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "a2fb16a688f90bf1"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Apache-Sitgreaves+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "5c6016924f4577ab"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Prescott+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "77029c95ff0a1013"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Kaibab+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "bfe6ab5574cb5556"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Angeles+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "fb0d1d7ea92ff65c"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Lake+Tahoe+Basin+Management+Unit%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "f210986097048b48"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Cleveland+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "f24b6065c625b887"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Inyo+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "228550c39e701fae"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27San+Bernardino+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "3094e582ac3767d8"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Los+Padres+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "f46c4864fdc3db7f"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Plumas+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "6776ac5a6798104a"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Eldorado+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "630e1a1d6888749e"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Stanislaus+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "344c00a1b6276175"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Shasta-Trinity+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "009e781a5d17e8c6"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Lassen+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "e15b83421bad1d72"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Mendocino+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "0e2c75b2cab04908"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Sierra+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "8960fa05b60ff736"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Sequoia+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "6df11c9e3f7cd040"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Modoc+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "dd0c8a1a126ea02a"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Six+Rivers+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "edbbb55f0be73026"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Pike-San+Isabel+National+Forests%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "25c2cbddfe0504ff"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Arapaho+%26+Roosevelt+National+Forests+Pawnee+NG%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "e1a92fe7765fb818"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Grand+Mesa%2C+Uncompahgre+and+Gunnison+National+Fore%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "394e27fd20929636"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27White+River+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "ddea30e86bad154b"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27San+Juan+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "8e660af7113bada7"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Rio+Grande+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "09f6c84876b04ec5"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Manti-La+Sal+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "fe1e822168a964fe"
+  },
+  "https://services5.arcgis.com/ttNGmDvKQA7oeDQ3/arcgis/rest/services/CPWAdminData/FeatureServer/0": {
+   "status": "failed",
+   "key": "28565807d80df33d"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Medicine+Bow-Routt+NFs+and+Thunder+Basin+NG%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "37210d35e66aaa23"
+  },
+  "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_pts/MapServer/3": {
+   "status": "read OK",
+   "key": "9d13499cab2d8300"
+  },
+  "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Becks-Pond": {
+   "status": "failed",
+   "key": "e9f91d83fd735ed7"
+  },
+  "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Haven-Lake": {
+   "status": "failed",
+   "key": "c9f141fbd297b708"
+  },
+  "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Garrisons-Lake": {
+   "status": "failed",
+   "key": "89e2ab5f2c8aafeb"
+  },
+  "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Masseys-Mill-Pond": {
+   "status": "failed",
+   "key": "8369777bc9722fa8"
+  },
+  "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Tubmill-Pond": {
+   "status": "failed",
+   "key": "e0c037862ba9c16a"
+  },
+  "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?data_id=dataSource_1-1850bf342a5-layer-10%3A30&views=Trussom-Pond": {
+   "status": "failed",
+   "key": "8700bad32551cfd8"
+  },
+  "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Raccoon-Pond": {
+   "status": "failed",
+   "key": "a6a88685e41e3d26"
+  },
+  "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Chipman-Pond": {
+   "status": "failed",
+   "key": "e551d959ce10db38"
+  },
+  "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Millsboro-Pond": {
+   "status": "failed",
+   "key": "fc0dc2311e25264a"
+  },
+  "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Griffith-Pond": {
+   "status": "failed",
+   "key": "c52f17ab06a0084f"
+  },
+  "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Ingrams-Pond": {
+   "status": "failed",
+   "key": "d3d56eaedd62726d"
+  },
+  "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Moores-Lake": {
+   "status": "failed",
+   "key": "9484195df652b0c0"
+  },
+  "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Blairs-Pond": {
+   "status": "failed",
+   "key": "104f00adeaedd5a7"
+  },
+  "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Derby-Pond": {
+   "status": "failed",
+   "key": "f7537833619ac579"
+  },
+  "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Abbotts-Pond": {
+   "status": "failed",
+   "key": "02dfecd5e13140f2"
+  },
+  "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Mud-Mill-Pond": {
+   "status": "failed",
+   "key": "69e6d08e8ced3aa8"
+  },
+  "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Records-Pond": {
+   "status": "failed",
+   "key": "5865ba91ec7f0b9f"
+  },
+  "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Hearns-Pond": {
+   "status": "failed",
+   "key": "f4a9319ec1e81c79"
+  },
+  "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=McGinnis-Pond": {
+   "status": "failed",
+   "key": "0163bb401570a72b"
+  },
+  "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Concord-Pond": {
+   "status": "failed",
+   "key": "ee396ad2fee287fd"
+  },
+  "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Portsville-Pond": {
+   "status": "failed",
+   "key": "75666e0f82075089"
+  },
+  "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Coursey-Pond": {
+   "status": "failed",
+   "key": "25318af9a78af7b2"
+  },
+  "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Trussom-Pond%2CTussock-Pond": {
+   "status": "failed",
+   "key": "70e50e0014c80494"
+  },
+  "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Craigs-Pond": {
+   "status": "failed",
+   "key": "d7c409004f1874b5"
+  },
+  "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Horsey-Pond": {
+   "status": "failed",
+   "key": "ff9f4224cc0d26da"
+  },
+  "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Waples-Pond": {
+   "status": "failed",
+   "key": "792812965feccde9"
+  },
+  "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Wagamons-Pond": {
+   "status": "failed",
+   "key": "9eee7c649bfa5756"
+  },
+  "https://experience.arcgis.com/experience/d59b72d092604ae2943da0f8e71387fc/page/Pond-Maps/?views=Andrews-Lake": {
+   "status": "failed",
+   "key": "67064b4b00b92675"
+  },
+  "https://services3.arcgis.com/XYg2eF8UuxZVuVmF/arcgis/rest/services/FFS_Recreation_Points/FeatureServer/1": {
+   "status": "failed",
+   "key": "9a3032aa832b5946"
+  },
+  "https://services2.arcgis.com/z6TmTIyYXEYhuNM0/arcgis/rest/services/WMA_Infrastructure/FeatureServer/7": {
+   "status": "failed",
+   "key": "9084c227387998b1"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27National+Forests+in+Florida%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "e110d9e4baa2aa6d"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Chattahoochee-Oconee+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "3022ef814769efa1"
+  },
+  "https://services6.arcgis.com/9QlSLDqa0P1cHLhu/arcgis/rest/services/WRD_WMA_Public/FeatureServer/6": {
+   "status": "failed",
+   "key": "de8b0a2546d6a44c"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Uinta-Wasatch-Cache+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "099ee6468d11f1aa"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Boise+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "60c9ca96a1e250c9"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Caribou-Targhee+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "26b8385aa1003f0b"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Idaho+Panhandle+National+Forests%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "82b783b202011f8b"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Payette+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "b4c18a28d201bb0d"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Bitterroot+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "b60e411bc7501963"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Sawtooth+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "ea16f69bcfdde21e"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Wallowa+Whitman+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "403bd821b9f1c2c4"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Kootenai+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "e2fa80c24b68ed68"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Salmon-Challis+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "090339ce69af1801"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Nez+Perce-Clearwater+National+Forests%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "666325e82cbf9dbe"
+  },
+  "https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/IDFG_Fishing_and_Boating_Access_FFW_App/FeatureServer/1": {
+   "status": "failed",
+   "key": "4dfcf14326f265af"
+  },
+  "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recs_pts/MapServer/4": {
+   "status": "read OK",
+   "key": "46a8b47b155b834c"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Lolo+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "44edd08ed35cf455"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Shawnee+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "4b200c91f0f01a49"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Hoosier+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "0a1b61d1e1708be4"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Kisatchie+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "0f5f6fc53b88b662"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27White+Mountain+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "fd29b49bfe65f1bd"
+  },
+  "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/ArcGIS/rest/services/dnrParksAndRecreation/FeatureServer/2": {
+   "status": "failed",
+   "key": "b7436567e080e108"
+  },
+  "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/ArcGIS/rest/services/dnrParksAndRecreation/FeatureServer/3": {
+   "status": "failed",
+   "key": "4d62377f9be2b270"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Huron-Manistee+National+Forests%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "6aea311196679ef5"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Ottawa+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "3d692be4b49318ac"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Hiawatha+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "746079dff5e204c3"
+  },
+  "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_parks_and_trails_campsites/FeatureServer/0": {
+   "status": "read OK",
+   "key": "b10f1959c00211f3"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Superior+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "3c493ec14a9b7219"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Chippewa+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "b609d8015d13354e"
+  },
+  "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_state_forest_campgrounds/FeatureServer/0": {
+   "status": "read OK",
+   "key": "6da0bde462adacd1"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Mark+Twain+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "fa324c5954b380b4"
+  },
+  "https://services8.arcgis.com/RPgcHScWtnrsNIP7/arcgis/rest/services/DSP_RS2_Features/FeatureServer/0": {
+   "status": "failed",
+   "key": "df87f0b5a45412c0"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27National+Forests+in+Mississippi%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "d2dcca9e58a17c3f"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Helena-Lewis+and+Clark+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "c0b07ec393608986"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Beaverhead-Deerlodge+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "6f2eb5165c7386ff"
+  },
+  "https://services3.arcgis.com/Cdxz8r11hT0MGzg1/arcgis/rest/services/FWPLND_FWPLANDS_PTS/FeatureServer/0": {
+   "status": "failed",
+   "key": "d398d4f92ba9ef63"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Flathead+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "eb57336090ff9f09"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Cherokee+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "5b51e1dac39404a4"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27National+Forests+in+North+Carolina%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "300375af60cd48cb"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=recareaname+like+%27%25Harmon+Den%25%27&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus&f=html": {
+   "status": "failed",
+   "key": "cd265ba7711ffa61"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Nebraska+National+Forests+and+Grasslands%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "cd6168e3a32a8948"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Lincoln+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "3e61a5df112c35c9"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Santa+Fe+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "eba3cbcf7b992775"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Gila+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "8b26e7b5460e4566"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Carson+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "3b2dc3b35453bdee"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Humboldt-Toiyabe+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "f9f6425844f1bf8e"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=recareaname+like+%27%25Angel%25%27+and+forestname+like+%27%25Toiyabe%25%27&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus&f=html": {
+   "status": "failed",
+   "key": "0b44332e2986ab5f"
+  },
+  "https://services6.arcgis.com/DZHaqZm9cxOD4CWM/arcgis/rest/services/DEC_pointsinterest/FeatureServer/0": {
+   "status": "failed",
+   "key": "95e32dff8da4c6bc"
+  },
+  "https://data.ny.gov/resource/9uuk-x7vh.json": {
+   "status": "failed",
+   "key": "ff758028b7416838"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Green+Mountain+%26+Finger+Lakes+National+Forests%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "5762e781a19ba4ca"
+  },
+  "https://gis2.ohiodnr.gov/ArcGIS/rest/services/DOW_Services/DOW_Facilities/MapServer/14": {
+   "status": "read OK",
+   "key": "ba47e78847f056d2"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Wayne+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "0fde42e7066a2e70"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Ouachita+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "0c4d20ab59d339d2"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Cibola+National+Forest+and+Grasslands%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "47f084f1f3679264"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Deschutes+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "b02ff49ed2bef0a8"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Umpqua+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "3e1f926ddcd53cb5"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Mt.+Hood+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "47ac041fbd509dc0"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Siuslaw+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "acb15ce76ee83e5c"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Fremont-Winema+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "89618100fd388342"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Rogue+River-Siskiyou+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "c8413698aa19f660"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Willamette+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "9a7472dd3027c7da"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Ochoco+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "e2d089be08860688"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Klamath+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "7be677c7a9762d62"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Malheur+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "7b394e09dfafdaa8"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Allegheny+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "69c7b38c5f7dc5ea"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Francis+Marion+and+Sumter+National+Forests%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "0d90601eb6511828"
+  },
+  "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/DEV_-_SCDNR_Public_Lands_Viewer/FeatureServer/3": {
+   "status": "failed",
+   "key": "66353e1b4c110edb"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Black+Hills+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "b4d65118a3f53f36"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Custer+Gallatin+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "5c775897c765a847"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Daniel+Boone+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "0959bc34f83fe728"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27National+Forests+and+Grasslands+in+Texas%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "d2128e793375f582"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Dixie+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "2d02aa249722e68b"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Fishlake+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "87f1d0fadd237634"
+  },
+  "https://services.arcgis.com/ZzrwjTRez6FJiOq4/arcgis/rest/services/ULTRA_Properties_2_view/FeatureServer/0": {
+   "status": "failed",
+   "key": "9e9f66c7a7407d51"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Ashley+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "54a6b13488681266"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27George+Washington+%26+Jefferson+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "b33a78b4a25fbe0a"
+  },
+  "https://anrmaps.vermont.gov/arcgis/rest/services/map_services/MAP_ANR_ANRATLASFPR_WM_NOCACHE/MapServer/175": {
+   "status": "read OK",
+   "key": "4b0af6e7c8e6fed3"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Columbia+River+Gorge+National+Scenic+Area%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "580f068c4cacee88"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Okanogan-Wenatchee+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "f0ab328b04c3d2c4"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Gifford+Pinchot+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "4d660340244773e2"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Mt.+Baker-Snoqualmie+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "1d22b352508bb76e"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Umatilla+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "6b7e35660e2befc6"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Olympic+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "8eeea2e9849e8e23"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Colville+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "eadee8703fcd6d20"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Chequamegon-Nicolet+NF%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "d250d79c27ef3b6c"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Monongahela+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "8c68a4132f6f0d21"
+  },
+  "https://services9.arcgis.com/SQbkdxLkuQJuLGtx/arcgis/rest/services/West_Virginia_Wildlife_Management_Areas/FeatureServer/14": {
+   "status": "failed",
+   "key": "4d95cda397bd6181"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Bridger-Teton+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "8adcc688811f4ad0"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Bighorn+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "ab83777d266e345c"
+  },
+  "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query?where=forestname%3D%27Shoshone+National+Forest%27+and+markeractivity+in+%28%27Campground+Camping%27%2C%27RV+Camping%27%2C%27Group+Camping%27%2C%27Horse+Camping%27%2C%27OHV+Camping%27%2C%27Dispersed+Camping%27%2C%27Cabin+Rentals%27%29&outFields=recareaname%2Cmarkeractivity%2Crecareaurl%2Copenstatus%2Clatitude%2Clongitude&f=html": {
+   "status": "failed",
+   "key": "e93f320ae57f0c1f"
+  }
+ },
+ "updated": "2026-11-01"
+}

@@ -1,0 +1,3593 @@
+{
+ "area": "US-DC",
+ "reader": "v1",
+ "parks": {
+  "US-0653": {
+   "ref": "US-0653",
+   "area": "US-DC",
+   "reader": "v1",
+   "pota": {
+    "name": "Constitution Gardens National Park",
+    "type": "National Park",
+    "pin": [
+     38.8904,
+     -77.0436
+    ],
+    "link": "https://www.nps.gov/coga/index.htm",
+    "qsos": 2017
+   },
+   "asked": {
+    "url": "https://www.nps.gov/coga/index.htm",
+    "from": "pota",
+    "others_noted": 0
+   },
+   "page": {
+    "final_url": "https://www.nps.gov/coga/index.htm",
+    "status": 200,
+    "kind": "html",
+    "read": "2026-11-22",
+    "by": "bot",
+    "fingerprint": "fa019f4f0dff",
+    "host": "www.nps.gov",
+    "family": "nps",
+    "nps_code": "coga",
+    "moved": false,
+    "final_host": "www.nps.gov",
+    "dead_twice": false,
+    "requests": 2
+   },
+   "own_page": {
+    "is": "own",
+    "why": "official host; only this park of the area lists the page",
+    "shared_with": [],
+    "host": "www.nps.gov"
+   },
+   "name": {
+    "title": "Constitution Gardens",
+    "heading": "Explore This Park",
+    "best": null,
+    "vs_pota": "differs",
+    "quote": "Constitution Gardens"
+   },
+   "designation": {
+    "words": [],
+    "combined": false,
+    "parts": [],
+    "pota_numbers_part": null,
+    "vs_pota_type": null
+   },
+   "inside_of": [],
+   "maybe_inside": [],
+   "contains": [],
+   "sizes": [],
+   "location": {
+    "coords": [
+     {
+      "lat": 38.873781,
+      "lon": -77.024403,
+      "from": "address (US Census lookup)",
+      "role": "unknown",
+      "label": "",
+      "km_from_pin": 2.49,
+      "address": "1100 Ohio Drive SW Washington, DC 20242"
+     }
+    ],
+    "dropped_points": 0,
+    "addresses": [
+     {
+      "text": "1100 Ohio Drive SW Washington, DC 20242 Phone: 202 426-6841",
+      "role": "unknown",
+      "why": "a street and a ZIP, with no office or park word"
+     },
+     {
+      "text": "1100 Ohio Drive SW Washington, DC 20242",
+      "role": "unknown",
+      "why": "a street and a ZIP, with no office or park word"
+     }
+    ],
+    "directions": null,
+    "state_words": [
+     "Ohio",
+     "Washington"
+    ]
+   },
+   "maps": [
+    {
+     "url": "https://www.nps.gov/coga/planyourvisit/maps.htm",
+     "text": "Maps",
+     "kind": "web-map",
+     "score": 2,
+     "via": "the agency site",
+     "names_park": false,
+     "names_unit": "",
+     "status": "not opened"
+    }
+   ],
+   "parts": [],
+   "manager": {
+    "agency": "National Park Service",
+    "office": "",
+    "quote": ""
+   },
+   "status_words": {
+    "closed": null,
+    "handover": null,
+    "renamed": null
+   },
+   "unofficial": false,
+   "confirm": {
+    "agency_id": null,
+    "size": null,
+    "manager": {
+     "agency": "National Park Service",
+     "from": "the agency's own web host",
+     "quote": ""
+    },
+    "address": {
+     "text": "1100 Ohio Drive SW Washington, DC 20242 Phone: 202 426-6841",
+     "role": "unknown"
+    },
+    "coords": null,
+    "map_link": null
+   },
+   "questions": [
+    {
+     "code": "NAME_DIFFERS",
+     "for": "reviewer",
+     "plain": "POTA: 'Constitution Gardens National Park'. Page: 'Explore This Park'.",
+     "quote": "Constitution Gardens"
+    }
+   ],
+   "evidence_draft": null,
+   "evidence_drafts": [],
+   "location_pulled": "2026-11-22",
+   "from_pc_upload": "2026-11-22"
+  },
+  "US-0655": {
+   "ref": "US-0655",
+   "area": "US-DC",
+   "reader": "v1",
+   "pota": {
+    "name": "National Mall and Memorial Parks National Park",
+    "type": "Park",
+    "pin": [
+     38.8897,
+     -77.0282
+    ],
+    "link": "https://www.nps.gov/nama/index.htm",
+    "qsos": 30604
+   },
+   "asked": {
+    "url": "https://www.nps.gov/nama/index.htm",
+    "from": "pota",
+    "others_noted": 0
+   },
+   "page": {
+    "final_url": "https://www.nps.gov/nama/index.htm",
+    "status": 200,
+    "kind": "html",
+    "read": "2026-11-22",
+    "by": "bot",
+    "fingerprint": "8e31d2dac008",
+    "host": "www.nps.gov",
+    "family": "nps",
+    "nps_code": "nama",
+    "moved": false,
+    "final_host": "www.nps.gov",
+    "dead_twice": false,
+    "requests": 2
+   },
+   "own_page": {
+    "is": "own",
+    "why": "official host; only this park of the area lists the page",
+    "shared_with": [],
+    "host": "www.nps.gov"
+   },
+   "name": {
+    "title": "National Mall and Memorial Parks",
+    "heading": "Explore This Park",
+    "best": null,
+    "vs_pota": "differs",
+    "quote": "National Mall and Memorial Parks"
+   },
+   "designation": {
+    "words": [],
+    "combined": false,
+    "parts": [],
+    "pota_numbers_part": null,
+    "vs_pota_type": null
+   },
+   "inside_of": [],
+   "maybe_inside": [],
+   "contains": [],
+   "sizes": [],
+   "location": {
+    "coords": [
+     {
+      "lat": 38.873781,
+      "lon": -77.024403,
+      "from": "address (US Census lookup)",
+      "role": "unknown",
+      "label": "",
+      "km_from_pin": 1.8,
+      "address": "1100 Ohio Drive SW Washington, DC 20242"
+     }
+    ],
+    "dropped_points": 0,
+    "addresses": [
+     {
+      "text": "1100 Ohio Drive SW Washington, DC 20242",
+      "role": "unknown",
+      "why": "a street and a ZIP, with no office or park word"
+     }
+    ],
+    "directions": null,
+    "state_words": [
+     "Washington",
+     "Ohio"
+    ]
+   },
+   "maps": [
+    {
+     "url": "https://www.nps.gov/nama/planyourvisit/maps.htm",
+     "text": "Maps",
+     "kind": "web-map",
+     "score": 2,
+     "via": "the agency site",
+     "names_park": false,
+     "names_unit": "",
+     "status": "not opened"
+    }
+   ],
+   "parts": [],
+   "manager": {
+    "agency": "National Park Service",
+    "office": "",
+    "quote": ""
+   },
+   "status_words": {
+    "closed": null,
+    "handover": null,
+    "renamed": null
+   },
+   "unofficial": false,
+   "confirm": {
+    "agency_id": null,
+    "size": null,
+    "manager": {
+     "agency": "National Park Service",
+     "from": "the agency's own web host",
+     "quote": ""
+    },
+    "address": {
+     "text": "1100 Ohio Drive SW Washington, DC 20242",
+     "role": "unknown"
+    },
+    "coords": null,
+    "map_link": null
+   },
+   "questions": [
+    {
+     "code": "NAME_DIFFERS",
+     "for": "reviewer",
+     "plain": "POTA: 'National Mall and Memorial Parks National Park'. Page: 'Explore This Park'.",
+     "quote": "National Mall and Memorial Parks"
+    }
+   ],
+   "evidence_draft": null,
+   "evidence_drafts": [],
+   "from_pc_upload": "2026-11-22"
+  },
+  "US-0656": {
+   "ref": "US-0656",
+   "area": "US-DC",
+   "reader": "v1",
+   "pota": {
+    "name": "Rock Creek Park",
+    "type": "Park",
+    "pin": [
+     38.9596,
+     -77.0531
+    ],
+    "link": "https://www.nps.gov/rocr/index.htm",
+    "qsos": 15902
+   },
+   "asked": {
+    "url": "https://www.nps.gov/rocr/index.htm",
+    "from": "pota",
+    "others_noted": 0
+   },
+   "page": {
+    "final_url": "https://www.nps.gov/rocr/index.htm",
+    "status": 200,
+    "kind": "html",
+    "read": "2026-11-22",
+    "by": "bot",
+    "fingerprint": "545fb4ff59df",
+    "host": "www.nps.gov",
+    "family": "nps",
+    "nps_code": "rocr",
+    "moved": false,
+    "final_host": "www.nps.gov",
+    "dead_twice": false,
+    "requests": 2
+   },
+   "own_page": {
+    "is": "own",
+    "why": "official host; only this park of the area lists the page",
+    "shared_with": [],
+    "host": "www.nps.gov"
+   },
+   "name": {
+    "title": "Rock Creek Park",
+    "heading": "Explore This Park",
+    "best": null,
+    "vs_pota": "differs",
+    "quote": "Rock Creek Park"
+   },
+   "designation": {
+    "words": [],
+    "combined": false,
+    "parts": [],
+    "pota_numbers_part": null,
+    "vs_pota_type": null
+   },
+   "inside_of": [],
+   "maybe_inside": [],
+   "contains": [],
+   "sizes": [
+    {
+     "acres": 1754.0,
+     "as": "1,754 acre",
+     "label": "",
+     "line": "ov Cancel Rock Creek Park • District of Columbia Rock Creek Park is truly a gem in our nation's capital.",
+     "quote": "This 1,754 acre city park was officially authorized in 1890, making it the third national park to be designated by the federal government.",
+     "total": false,
+     "clean": false,
+     "why": "history",
+     "source_url": "https://www.nps.gov/rocr/index.htm"
+    }
+   ],
+   "location": {
+    "coords": [
+     {
+      "lat": 38.935208,
+      "lon": -77.052276,
+      "from": "address (US Census lookup)",
+      "role": "unknown",
+      "label": "",
+      "km_from_pin": 2.71,
+      "address": "3545 Williamsburg Lane NW Washington, DC 20008"
+     }
+    ],
+    "dropped_points": 0,
+    "addresses": [
+     {
+      "text": "3545 Williamsburg Lane NW Washington, DC 20008 Phone: 202-895-6000",
+      "role": "unknown",
+      "why": "a street and a ZIP, with no office or park word"
+     },
+     {
+      "text": "3545 Williamsburg Lane NW Washington, DC 20008",
+      "role": "unknown",
+      "why": "a street and a ZIP, with no office or park word"
+     }
+    ],
+    "directions": {
+     "sent": "Now that you know the basics, learn how to get to where you want to go! Go for a Hike! We have over 32 miles of hiking trails and paths for you to explore. Follow one of our suggested hikes or create your own! Join a Ranger-led Program! Participate in ranger-led and other programs to learn more about nature, history, stars and planets, recreational opportunities, and more!",
+     "roads": [],
+     "towns": []
+    },
+    "state_words": [
+     "Washington"
+    ]
+   },
+   "maps": [
+    {
+     "url": "https://www.nps.gov/rocr/planyourvisit/maps.htm",
+     "text": "Maps",
+     "kind": "web-map",
+     "score": 2,
+     "via": "the agency site",
+     "names_park": false,
+     "names_unit": "",
+     "status": "not opened"
+    },
+    {
+     "url": "https://www.nps.gov/rocr/learn/management/carter-barron-amphitheater-rehabilitation.htm",
+     "text": "Closed for Repairs Carter Barron Rehabilitation",
+     "kind": "web-map",
+     "score": 2,
+     "via": "the agency site",
+     "names_park": false,
+     "names_unit": "",
+     "status": "not opened"
+    }
+   ],
+   "parts": [],
+   "manager": {
+    "agency": "National Park Service",
+    "office": "",
+    "quote": ""
+   },
+   "status_words": {
+    "closed": null,
+    "handover": null,
+    "renamed": null
+   },
+   "unofficial": false,
+   "confirm": {
+    "agency_id": null,
+    "size": null,
+    "manager": {
+     "agency": "National Park Service",
+     "from": "the agency's own web host",
+     "quote": ""
+    },
+    "address": {
+     "text": "3545 Williamsburg Lane NW Washington, DC 20008 Phone: 202-895-6000",
+     "role": "unknown"
+    },
+    "coords": null,
+    "map_link": null
+   },
+   "questions": [
+    {
+     "code": "NAME_DIFFERS",
+     "for": "reviewer",
+     "plain": "POTA: 'Rock Creek Park'. Page: 'Explore This Park'.",
+     "quote": "Rock Creek Park"
+    }
+   ],
+   "evidence_draft": null,
+   "evidence_drafts": [],
+   "location_pulled": "2026-11-22",
+   "from_pc_upload": "2026-11-22"
+  },
+  "US-0657": {
+   "ref": "US-0657",
+   "area": "US-DC",
+   "reader": "v1",
+   "pota": {
+    "name": "President's Park (White House) Park",
+    "type": "Park",
+    "pin": [
+     38.8948,
+     -77.035
+    ],
+    "link": "https://www.nps.gov/whho/index.htm",
+    "qsos": 2670
+   },
+   "asked": {
+    "url": "https://www.nps.gov/whho/index.htm",
+    "from": "pota",
+    "others_noted": 0
+   },
+   "page": {
+    "final_url": "https://www.nps.gov/whho/index.htm",
+    "status": 200,
+    "kind": "html",
+    "read": "2026-11-23",
+    "by": "bot",
+    "fingerprint": "b67c97bacd0b",
+    "host": "www.nps.gov",
+    "family": "nps",
+    "nps_code": "whho",
+    "moved": false,
+    "final_host": "www.nps.gov",
+    "dead_twice": false,
+    "requests": 2
+   },
+   "own_page": {
+    "is": "own",
+    "why": "official host; only this park of the area lists the page",
+    "shared_with": [],
+    "host": "www.nps.gov"
+   },
+   "name": {
+    "title": "The White House and President's Park",
+    "heading": "The White House and President's Park District of Columbia",
+    "best": "The White House and President's Park",
+    "vs_pota": "same-words",
+    "quote": "The White House and President's Park"
+   },
+   "designation": {
+    "words": [],
+    "combined": false,
+    "parts": [],
+    "pota_numbers_part": null,
+    "vs_pota_type": null
+   },
+   "inside_of": [],
+   "maybe_inside": [],
+   "contains": [],
+   "sizes": [],
+   "location": {
+    "coords": [],
+    "dropped_points": 0,
+    "addresses": [
+     {
+      "text": "1849 C Street NW Room 1426 Washington, DC 20240",
+      "role": "unknown",
+      "why": "a street and a ZIP, with no office or park word"
+     }
+    ],
+    "directions": null,
+    "state_words": [
+     "Washington"
+    ],
+    "offsets": [],
+    "counties": []
+   },
+   "maps": [
+    {
+     "url": "https://www.nps.gov/whho/planyourvisit/maps.htm",
+     "text": "Maps",
+     "kind": "web-map",
+     "score": 2,
+     "via": "the agency site",
+     "names_park": false,
+     "names_unit": "",
+     "status": "not opened"
+    }
+   ],
+   "parts": [],
+   "manager": {
+    "agency": "National Park Service",
+    "office": "is owned by the American people and stewarded by the National Park",
+    "quote": "is owned by the American people and stewarded by the National Park"
+   },
+   "status_words": {
+    "closed": null,
+    "handover": null,
+    "renamed": null
+   },
+   "unofficial": false,
+   "confirm": {
+    "agency_id": null,
+    "size": null,
+    "manager": {
+     "agency": "National Park Service",
+     "from": "the agency's own web host",
+     "quote": "is owned by the American people and stewarded by the National Park"
+    },
+    "address": {
+     "text": "1849 C Street NW Room 1426 Washington, DC 20240",
+     "role": "unknown"
+    },
+    "coords": null,
+    "map_link": null
+   },
+   "questions": [],
+   "evidence_draft": null,
+   "evidence_drafts": [],
+   "from_pc_upload": "2026-11-23"
+  },
+  "US-0776": {
+   "ref": "US-0776",
+   "area": "US-DC",
+   "reader": "v1",
+   "pota": {
+    "name": "Franklin Delano Roosevelt National Memorial",
+    "type": "National Memorial",
+    "pin": [
+     38.8835,
+     -77.043
+    ],
+    "link": "https://www.nps.gov/frde/index.htm",
+    "qsos": 1194
+   },
+   "asked": {
+    "url": "https://www.nps.gov/frde/index.htm",
+    "from": "pota",
+    "others_noted": 0
+   },
+   "page": {
+    "final_url": "https://www.nps.gov/frde/index.htm",
+    "status": 200,
+    "kind": "html",
+    "read": "2026-11-22",
+    "by": "bot",
+    "fingerprint": "eca9878756b4",
+    "host": "www.nps.gov",
+    "family": "nps",
+    "nps_code": "frde",
+    "moved": false,
+    "final_host": "www.nps.gov",
+    "dead_twice": false,
+    "requests": 2
+   },
+   "own_page": {
+    "is": "own",
+    "why": "official host; only this park of the area lists the page",
+    "shared_with": [],
+    "host": "www.nps.gov"
+   },
+   "name": {
+    "title": "Franklin Delano Roosevelt Memorial",
+    "heading": "Explore This Park",
+    "best": null,
+    "vs_pota": "differs",
+    "quote": "Franklin Delano Roosevelt Memorial"
+   },
+   "designation": {
+    "words": [],
+    "combined": false,
+    "parts": [],
+    "pota_numbers_part": null,
+    "vs_pota_type": null
+   },
+   "inside_of": [],
+   "maybe_inside": [],
+   "contains": [],
+   "sizes": [],
+   "location": {
+    "coords": [
+     {
+      "lat": 38.873781,
+      "lon": -77.024403,
+      "from": "address (US Census lookup)",
+      "role": "unknown",
+      "label": "",
+      "km_from_pin": 1.94,
+      "address": "1100 Ohio Drive SW Washington, DC 20242"
+     }
+    ],
+    "dropped_points": 0,
+    "addresses": [
+     {
+      "text": "1100 Ohio Drive SW Washington, DC 20242 Phone: 202 426-6841",
+      "role": "unknown",
+      "why": "a street and a ZIP, with no office or park word"
+     },
+     {
+      "text": "1100 Ohio Drive SW Washington, DC 20242",
+      "role": "unknown",
+      "why": "a street and a ZIP, with no office or park word"
+     }
+    ],
+    "directions": null,
+    "state_words": [
+     "South Dakota",
+     "Ohio",
+     "Washington"
+    ]
+   },
+   "maps": [
+    {
+     "url": "https://www.nps.gov/frde/planyourvisit/maps.htm",
+     "text": "Maps",
+     "kind": "web-map",
+     "score": 2,
+     "via": "the agency site",
+     "names_park": false,
+     "names_unit": "",
+     "status": "not opened"
+    }
+   ],
+   "parts": [],
+   "manager": {
+    "agency": "National Park Service",
+    "office": "",
+    "quote": ""
+   },
+   "status_words": {
+    "closed": null,
+    "handover": null,
+    "renamed": null
+   },
+   "unofficial": false,
+   "confirm": {
+    "agency_id": null,
+    "size": null,
+    "manager": {
+     "agency": "National Park Service",
+     "from": "the agency's own web host",
+     "quote": ""
+    },
+    "address": {
+     "text": "1100 Ohio Drive SW Washington, DC 20242 Phone: 202 426-6841",
+     "role": "unknown"
+    },
+    "coords": null,
+    "map_link": null
+   },
+   "questions": [
+    {
+     "code": "NAME_DIFFERS",
+     "for": "reviewer",
+     "plain": "POTA: 'Franklin Delano Roosevelt National Memorial'. Page: 'Explore This Park'.",
+     "quote": "Franklin Delano Roosevelt Memorial"
+    }
+   ],
+   "evidence_draft": null,
+   "evidence_drafts": [],
+   "location_pulled": "2026-11-22",
+   "from_pc_upload": "2026-11-22"
+  },
+  "US-0780": {
+   "ref": "US-0780",
+   "area": "US-DC",
+   "reader": "v1",
+   "pota": {
+    "name": "Korean War Veterans National Memorial",
+    "type": "National Memorial",
+    "pin": [
+     38.8878,
+     -77.0478
+    ],
+    "link": "https://www.nps.gov/kowa/index.htm",
+    "qsos": 1138
+   },
+   "asked": {
+    "url": "https://www.nps.gov/kowa/index.htm",
+    "from": "pota",
+    "others_noted": 0
+   },
+   "page": {
+    "final_url": "https://www.nps.gov/kowa/index.htm",
+    "status": 200,
+    "kind": "html",
+    "read": "2026-11-22",
+    "by": "bot",
+    "fingerprint": "dd16fed3f21d",
+    "host": "www.nps.gov",
+    "family": "nps",
+    "nps_code": "kowa",
+    "moved": false,
+    "final_host": "www.nps.gov",
+    "dead_twice": false,
+    "requests": 2
+   },
+   "own_page": {
+    "is": "own",
+    "why": "official host; only this park of the area lists the page",
+    "shared_with": [],
+    "host": "www.nps.gov"
+   },
+   "name": {
+    "title": "Korean War Veterans Memorial",
+    "heading": "Explore This Park",
+    "best": null,
+    "vs_pota": "differs",
+    "quote": "Korean War Veterans Memorial"
+   },
+   "designation": {
+    "words": [],
+    "combined": false,
+    "parts": [],
+    "pota_numbers_part": null,
+    "vs_pota_type": null
+   },
+   "inside_of": [],
+   "maybe_inside": [],
+   "contains": [],
+   "sizes": [],
+   "location": {
+    "coords": [
+     {
+      "lat": 38.873781,
+      "lon": -77.024403,
+      "from": "address (US Census lookup)",
+      "role": "unknown",
+      "label": "",
+      "km_from_pin": 2.56,
+      "address": "1100 Ohio Drive SW Washington, DC 20242"
+     }
+    ],
+    "dropped_points": 0,
+    "addresses": [
+     {
+      "text": "1100 Ohio Drive SW Washington, DC 20242 Phone: 202 426-6841",
+      "role": "unknown",
+      "why": "a street and a ZIP, with no office or park word"
+     },
+     {
+      "text": "1100 Ohio Drive SW Washington, DC 20242",
+      "role": "unknown",
+      "why": "a street and a ZIP, with no office or park word"
+     }
+    ],
+    "directions": null,
+    "state_words": [
+     "Ohio",
+     "Washington"
+    ]
+   },
+   "maps": [
+    {
+     "url": "https://www.nps.gov/kowa/planyourvisit/maps.htm",
+     "text": "Maps",
+     "kind": "web-map",
+     "score": 2,
+     "via": "the agency site",
+     "names_park": false,
+     "names_unit": "",
+     "status": "not opened"
+    }
+   ],
+   "parts": [],
+   "manager": {
+    "agency": "National Park Service",
+    "office": "",
+    "quote": ""
+   },
+   "status_words": {
+    "closed": null,
+    "handover": null,
+    "renamed": null
+   },
+   "unofficial": false,
+   "confirm": {
+    "agency_id": null,
+    "size": null,
+    "manager": {
+     "agency": "National Park Service",
+     "from": "the agency's own web host",
+     "quote": ""
+    },
+    "address": {
+     "text": "1100 Ohio Drive SW Washington, DC 20242 Phone: 202 426-6841",
+     "role": "unknown"
+    },
+    "coords": null,
+    "map_link": null
+   },
+   "questions": [
+    {
+     "code": "NAME_DIFFERS",
+     "for": "reviewer",
+     "plain": "POTA: 'Korean War Veterans National Memorial'. Page: 'Explore This Park'.",
+     "quote": "Korean War Veterans Memorial"
+    }
+   ],
+   "evidence_draft": null,
+   "evidence_drafts": [],
+   "location_pulled": "2026-11-22",
+   "from_pc_upload": "2026-11-22"
+  },
+  "US-0783": {
+   "ref": "US-0783",
+   "area": "US-DC",
+   "reader": "v1",
+   "pota": {
+    "name": "Lincoln National Memorial",
+    "type": "National Memorial",
+    "pin": [
+     38.8893,
+     -77.0502
+    ],
+    "link": "https://www.nps.gov/linc/index.htm",
+    "qsos": 1567
+   },
+   "asked": {
+    "url": "https://www.nps.gov/linc/index.htm",
+    "from": "pota",
+    "others_noted": 0
+   },
+   "page": {
+    "final_url": "https://www.nps.gov/linc/index.htm",
+    "status": 200,
+    "kind": "html",
+    "read": "2026-11-22",
+    "by": "bot",
+    "fingerprint": "9bc2af43564c",
+    "host": "www.nps.gov",
+    "family": "nps",
+    "nps_code": "linc",
+    "moved": false,
+    "final_host": "www.nps.gov",
+    "dead_twice": false,
+    "requests": 2
+   },
+   "own_page": {
+    "is": "own",
+    "why": "official host; only this park of the area lists the page",
+    "shared_with": [],
+    "host": "www.nps.gov"
+   },
+   "name": {
+    "title": "Lincoln Memorial",
+    "heading": "Explore This Park",
+    "best": null,
+    "vs_pota": "differs",
+    "quote": "Lincoln Memorial"
+   },
+   "designation": {
+    "words": [],
+    "combined": false,
+    "parts": [],
+    "pota_numbers_part": null,
+    "vs_pota_type": null
+   },
+   "inside_of": [],
+   "maybe_inside": [],
+   "contains": [],
+   "sizes": [],
+   "location": {
+    "coords": [
+     {
+      "lat": 38.873781,
+      "lon": -77.024403,
+      "from": "address (US Census lookup)",
+      "role": "unknown",
+      "label": "",
+      "km_from_pin": 2.82,
+      "address": "1100 Ohio Drive SW Washington, DC 20242"
+     }
+    ],
+    "dropped_points": 0,
+    "addresses": [
+     {
+      "text": "1100 Ohio Drive SW Washington, DC 20242 Phone: 202-426-6841",
+      "role": "unknown",
+      "why": "a street and a ZIP, with no office or park word"
+     },
+     {
+      "text": "1100 Ohio Drive SW Washington, DC 20242",
+      "role": "unknown",
+      "why": "a street and a ZIP, with no office or park word"
+     }
+    ],
+    "directions": null,
+    "state_words": [
+     "Georgia",
+     "Ohio",
+     "Washington"
+    ]
+   },
+   "maps": [
+    {
+     "url": "https://www.nps.gov/linc/planyourvisit/maps.htm",
+     "text": "Maps",
+     "kind": "web-map",
+     "score": 2,
+     "via": "the agency site",
+     "names_park": false,
+     "names_unit": "",
+     "status": "not opened"
+    }
+   ],
+   "parts": [],
+   "manager": {
+    "agency": "National Park Service",
+    "office": "",
+    "quote": ""
+   },
+   "status_words": {
+    "closed": null,
+    "handover": null,
+    "renamed": null
+   },
+   "unofficial": false,
+   "confirm": {
+    "agency_id": null,
+    "size": null,
+    "manager": {
+     "agency": "National Park Service",
+     "from": "the agency's own web host",
+     "quote": ""
+    },
+    "address": {
+     "text": "1100 Ohio Drive SW Washington, DC 20242 Phone: 202-426-6841",
+     "role": "unknown"
+    },
+    "coords": null,
+    "map_link": null
+   },
+   "questions": [
+    {
+     "code": "NAME_DIFFERS",
+     "for": "reviewer",
+     "plain": "POTA: 'Lincoln National Memorial'. Page: 'Explore This Park'.",
+     "quote": "Lincoln Memorial"
+    }
+   ],
+   "evidence_draft": null,
+   "evidence_drafts": [],
+   "location_pulled": "2026-11-22",
+   "from_pc_upload": "2026-11-22"
+  },
+  "US-0784": {
+   "ref": "US-0784",
+   "area": "US-DC",
+   "reader": "v1",
+   "pota": {
+    "name": "Lyndon Baines Johnson Memorial Grove on the Potomac National Memorial",
+    "type": "National Memorial",
+    "pin": [
+     38.8779,
+     -77.0509
+    ],
+    "link": "https://www.nps.gov/lyba/index.htm",
+    "qsos": 51690
+   },
+   "asked": {
+    "url": "https://www.nps.gov/lyba/index.htm",
+    "from": "pota",
+    "others_noted": 0
+   },
+   "page": {
+    "final_url": "https://www.nps.gov/lyba/index.htm",
+    "status": 200,
+    "kind": "html",
+    "read": "2026-11-23",
+    "by": "bot",
+    "fingerprint": "dee5ca1a9db6",
+    "host": "www.nps.gov",
+    "family": "nps",
+    "nps_code": "lyba",
+    "moved": false,
+    "final_host": "www.nps.gov",
+    "dead_twice": false,
+    "requests": 2
+   },
+   "own_page": {
+    "is": "own",
+    "why": "official host; only this park of the area lists the page",
+    "shared_with": [],
+    "host": "www.nps.gov"
+   },
+   "name": {
+    "title": "LBJ Memorial Grove on the Potomac",
+    "heading": "Lyndon Baines Johnson Memorial Grove on the Potomac District of Columbia",
+    "best": null,
+    "vs_pota": "differs",
+    "quote": "LBJ Memorial Grove on the Potomac"
+   },
+   "designation": {
+    "words": [],
+    "combined": false,
+    "parts": [],
+    "pota_numbers_part": null,
+    "vs_pota_type": null
+   },
+   "inside_of": [],
+   "maybe_inside": [],
+   "contains": [],
+   "sizes": [],
+   "location": {
+    "coords": [],
+    "dropped_points": 0,
+    "addresses": [
+     {
+      "text": "c/o Turkey Run Park George Washington Memorial Parkway McLean, VA 22101",
+      "role": "unknown",
+      "why": "a street and a ZIP, with no office or park word"
+     }
+    ],
+    "directions": null,
+    "state_words": [
+     "Washington"
+    ],
+    "offsets": [],
+    "counties": []
+   },
+   "maps": [
+    {
+     "url": "https://www.nps.gov/lyba/planyourvisit/maps.htm",
+     "text": "Maps",
+     "kind": "web-map",
+     "score": 2,
+     "via": "the agency site",
+     "names_park": false,
+     "names_unit": "",
+     "status": "not opened"
+    }
+   ],
+   "parts": [],
+   "manager": {
+    "agency": "National Park Service",
+    "office": "",
+    "quote": ""
+   },
+   "status_words": {
+    "closed": null,
+    "handover": null,
+    "renamed": null
+   },
+   "unofficial": false,
+   "confirm": {
+    "agency_id": null,
+    "size": null,
+    "manager": {
+     "agency": "National Park Service",
+     "from": "the agency's own web host",
+     "quote": ""
+    },
+    "address": {
+     "text": "c/o Turkey Run Park George Washington Memorial Parkway McLean, VA 22101",
+     "role": "unknown"
+    },
+    "coords": null,
+    "map_link": null
+   },
+   "questions": [
+    {
+     "code": "NAME_DIFFERS",
+     "for": "reviewer",
+     "plain": "POTA: 'Lyndon Baines Johnson Memorial Grove on the Potomac National Memorial'. Page: 'Lyndon Baines Johnson Memorial Grove on the Potomac District of Columbia'.",
+     "quote": "LBJ Memorial Grove on the Potomac"
+    }
+   ],
+   "evidence_draft": null,
+   "evidence_drafts": [],
+   "from_pc_upload": "2026-11-23"
+  },
+  "US-0785": {
+   "ref": "US-0785",
+   "area": "US-DC",
+   "reader": "v1",
+   "pota": {
+    "name": "Martin Luther King Jr. National Memorial",
+    "type": "National Memorial",
+    "pin": [
+     38.8864,
+     -77.0444
+    ],
+    "link": "https://www.nps.gov/mlkm/index.htm",
+    "qsos": 1196
+   },
+   "asked": {
+    "url": "https://www.nps.gov/mlkm/index.htm",
+    "from": "pota",
+    "others_noted": 0
+   },
+   "page": {
+    "final_url": "https://www.nps.gov/mlkm/index.htm",
+    "status": 200,
+    "kind": "html",
+    "read": "2026-11-22",
+    "by": "bot",
+    "fingerprint": "bbdb9b5c1283",
+    "host": "www.nps.gov",
+    "family": "nps",
+    "nps_code": "mlkm",
+    "moved": false,
+    "final_host": "www.nps.gov",
+    "dead_twice": false,
+    "requests": 2
+   },
+   "own_page": {
+    "is": "own",
+    "why": "official host; only this park of the area lists the page",
+    "shared_with": [],
+    "host": "www.nps.gov"
+   },
+   "name": {
+    "title": "Martin Luther King, Jr. Memorial",
+    "heading": "Explore This Park",
+    "best": null,
+    "vs_pota": "differs",
+    "quote": "Martin Luther King, Jr. Memorial"
+   },
+   "designation": {
+    "words": [],
+    "combined": false,
+    "parts": [],
+    "pota_numbers_part": null,
+    "vs_pota_type": null
+   },
+   "inside_of": [],
+   "maybe_inside": [],
+   "contains": [],
+   "sizes": [],
+   "location": {
+    "coords": [
+     {
+      "lat": 38.873781,
+      "lon": -77.024403,
+      "from": "address (US Census lookup)",
+      "role": "unknown",
+      "label": "",
+      "km_from_pin": 2.23,
+      "address": "1100 Ohio Drive SW Washington, DC 20242"
+     }
+    ],
+    "dropped_points": 0,
+    "addresses": [
+     {
+      "text": "1100 Ohio Drive SW Washington, DC 20242 Phone: 202 426-6841",
+      "role": "unknown",
+      "why": "a street and a ZIP, with no office or park word"
+     },
+     {
+      "text": "1100 Ohio Drive SW Washington, DC 20242",
+      "role": "unknown",
+      "why": "a street and a ZIP, with no office or park word"
+     }
+    ],
+    "directions": null,
+    "state_words": [
+     "Washington",
+     "Ohio"
+    ]
+   },
+   "maps": [
+    {
+     "url": "https://www.nps.gov/mlkm/planyourvisit/maps.htm",
+     "text": "Maps",
+     "kind": "web-map",
+     "score": 2,
+     "via": "the agency site",
+     "names_park": false,
+     "names_unit": "",
+     "status": "not opened"
+    }
+   ],
+   "parts": [],
+   "manager": {
+    "agency": "National Park Service",
+    "office": "",
+    "quote": ""
+   },
+   "status_words": {
+    "closed": null,
+    "handover": null,
+    "renamed": null
+   },
+   "unofficial": false,
+   "confirm": {
+    "agency_id": null,
+    "size": null,
+    "manager": {
+     "agency": "National Park Service",
+     "from": "the agency's own web host",
+     "quote": ""
+    },
+    "address": {
+     "text": "1100 Ohio Drive SW Washington, DC 20242 Phone: 202 426-6841",
+     "role": "unknown"
+    },
+    "coords": null,
+    "map_link": null
+   },
+   "questions": [
+    {
+     "code": "NAME_DIFFERS",
+     "for": "reviewer",
+     "plain": "POTA: 'Martin Luther King Jr. National Memorial'. Page: 'Explore This Park'.",
+     "quote": "Martin Luther King, Jr. Memorial"
+    }
+   ],
+   "evidence_draft": null,
+   "evidence_drafts": [],
+   "location_pulled": "2026-11-22",
+   "from_pc_upload": "2026-11-22"
+  },
+  "US-0791": {
+   "ref": "US-0791",
+   "area": "US-DC",
+   "reader": "v1",
+   "pota": {
+    "name": "Theodore Roosevelt Island National Memorial",
+    "type": "National Memorial",
+    "pin": [
+     38.8972,
+     -77.064
+    ],
+    "link": "https://www.nps.gov/this/index.htm",
+    "qsos": 5591
+   },
+   "asked": {
+    "url": "https://www.nps.gov/this/index.htm",
+    "from": "pota",
+    "others_noted": 0
+   },
+   "page": {
+    "final_url": "https://www.nps.gov/this/index.htm",
+    "status": 200,
+    "kind": "html",
+    "read": "2026-11-22",
+    "by": "bot",
+    "fingerprint": "65d09c447695",
+    "host": "www.nps.gov",
+    "family": "nps",
+    "nps_code": "this",
+    "moved": false,
+    "final_host": "www.nps.gov",
+    "dead_twice": false,
+    "requests": 2
+   },
+   "own_page": {
+    "is": "own",
+    "why": "official host; only this park of the area lists the page",
+    "shared_with": [],
+    "host": "www.nps.gov"
+   },
+   "name": {
+    "title": "Theodore Roosevelt Island",
+    "heading": "Explore This Park",
+    "best": null,
+    "vs_pota": "differs",
+    "quote": "Theodore Roosevelt Island"
+   },
+   "designation": {
+    "words": [],
+    "combined": false,
+    "parts": [],
+    "pota_numbers_part": null,
+    "vs_pota_type": null
+   },
+   "inside_of": [],
+   "maybe_inside": [],
+   "contains": [],
+   "sizes": [],
+   "location": {
+    "coords": [
+     {
+      "lat": 38.960761,
+      "lon": -77.148252,
+      "from": "address (US Census lookup)",
+      "role": "unknown",
+      "label": "",
+      "km_from_pin": 10.15,
+      "address": "700 George Washington Memorial Parkway McLean, VA 22101 Phone: 703 289-2500"
+     }
+    ],
+    "dropped_points": 0,
+    "addresses": [
+     {
+      "text": "700 George Washington Memorial Parkway McLean, VA 22101 Phone: 703 289-2500",
+      "role": "unknown",
+      "why": "a street and a ZIP, with no office or park word"
+     }
+    ],
+    "directions": null,
+    "state_words": [
+     "Washington"
+    ]
+   },
+   "maps": [
+    {
+     "url": "https://www.nps.gov/this/planyourvisit/maps.htm",
+     "text": "Maps",
+     "kind": "web-map",
+     "score": 2,
+     "via": "the agency site",
+     "names_park": false,
+     "names_unit": "",
+     "status": "not opened"
+    }
+   ],
+   "parts": [],
+   "manager": {
+    "agency": "National Park Service",
+    "office": "",
+    "quote": ""
+   },
+   "status_words": {
+    "closed": null,
+    "handover": null,
+    "renamed": null
+   },
+   "unofficial": false,
+   "confirm": {
+    "agency_id": null,
+    "size": null,
+    "manager": {
+     "agency": "National Park Service",
+     "from": "the agency's own web host",
+     "quote": ""
+    },
+    "address": {
+     "text": "700 George Washington Memorial Parkway McLean, VA 22101 Phone: 703 289-2500",
+     "role": "unknown"
+    },
+    "coords": null,
+    "map_link": null
+   },
+   "questions": [
+    {
+     "code": "NAME_DIFFERS",
+     "for": "reviewer",
+     "plain": "POTA: 'Theodore Roosevelt Island National Memorial'. Page: 'Explore This Park'.",
+     "quote": "Theodore Roosevelt Island"
+    }
+   ],
+   "evidence_draft": null,
+   "evidence_drafts": [],
+   "location_pulled": "2026-11-22",
+   "from_pc_upload": "2026-11-22"
+  },
+  "US-0792": {
+   "ref": "US-0792",
+   "area": "US-DC",
+   "reader": "v1",
+   "pota": {
+    "name": "Thomas Jefferson National Memorial",
+    "type": "National Memorial",
+    "pin": [
+     38.8814,
+     -77.0365
+    ],
+    "link": "https://www.nps.gov/thje/index.htm",
+    "qsos": 2335
+   },
+   "asked": {
+    "url": "https://www.nps.gov/thje/index.htm",
+    "from": "pota",
+    "others_noted": 0
+   },
+   "page": {
+    "final_url": "https://www.nps.gov/thje/index.htm",
+    "status": 200,
+    "kind": "html",
+    "read": "2026-11-22",
+    "by": "bot",
+    "fingerprint": "df4591ac3f1f",
+    "host": "www.nps.gov",
+    "family": "nps",
+    "nps_code": "thje",
+    "moved": false,
+    "final_host": "www.nps.gov",
+    "dead_twice": false,
+    "requests": 2
+   },
+   "own_page": {
+    "is": "own",
+    "why": "official host; only this park of the area lists the page",
+    "shared_with": [],
+    "host": "www.nps.gov"
+   },
+   "name": {
+    "title": "Thomas Jefferson Memorial",
+    "heading": "Explore This Park",
+    "best": null,
+    "vs_pota": "differs",
+    "quote": "Thomas Jefferson Memorial"
+   },
+   "designation": {
+    "words": [],
+    "combined": false,
+    "parts": [],
+    "pota_numbers_part": null,
+    "vs_pota_type": null
+   },
+   "inside_of": [],
+   "maybe_inside": [],
+   "contains": [],
+   "sizes": [],
+   "location": {
+    "coords": [
+     {
+      "lat": 38.873781,
+      "lon": -77.024403,
+      "from": "address (US Census lookup)",
+      "role": "unknown",
+      "label": "",
+      "km_from_pin": 1.35,
+      "address": "1100 Ohio Drive SW Washington, DC 20242"
+     }
+    ],
+    "dropped_points": 0,
+    "addresses": [
+     {
+      "text": "1100 Ohio Drive SW Washington, DC 20242 Phone: 202 426-6841",
+      "role": "unknown",
+      "why": "a street and a ZIP, with no office or park word"
+     },
+     {
+      "text": "1100 Ohio Drive SW Washington, DC 20242",
+      "role": "unknown",
+      "why": "a street and a ZIP, with no office or park word"
+     }
+    ],
+    "directions": null,
+    "state_words": [
+     "Ohio",
+     "Washington"
+    ]
+   },
+   "maps": [
+    {
+     "url": "https://www.nps.gov/thje/planyourvisit/maps.htm",
+     "text": "Maps",
+     "kind": "web-map",
+     "score": 2,
+     "via": "the agency site",
+     "names_park": false,
+     "names_unit": "",
+     "status": "not opened"
+    }
+   ],
+   "parts": [],
+   "manager": {
+    "agency": "National Park Service",
+    "office": "",
+    "quote": ""
+   },
+   "status_words": {
+    "closed": null,
+    "handover": null,
+    "renamed": null
+   },
+   "unofficial": false,
+   "confirm": {
+    "agency_id": null,
+    "size": null,
+    "manager": {
+     "agency": "National Park Service",
+     "from": "the agency's own web host",
+     "quote": ""
+    },
+    "address": {
+     "text": "1100 Ohio Drive SW Washington, DC 20242 Phone: 202 426-6841",
+     "role": "unknown"
+    },
+    "coords": null,
+    "map_link": null
+   },
+   "questions": [
+    {
+     "code": "NAME_DIFFERS",
+     "for": "reviewer",
+     "plain": "POTA: 'Thomas Jefferson National Memorial'. Page: 'Explore This Park'.",
+     "quote": "Thomas Jefferson Memorial"
+    }
+   ],
+   "evidence_draft": null,
+   "evidence_drafts": [],
+   "location_pulled": "2026-11-22",
+   "from_pc_upload": "2026-11-22"
+  },
+  "US-0793": {
+   "ref": "US-0793",
+   "area": "US-DC",
+   "reader": "v1",
+   "pota": {
+    "name": "Vietnam Veterans National Memorial",
+    "type": "National Memorial",
+    "pin": [
+     38.8913,
+     -77.0477
+    ],
+    "link": "https://www.nps.gov/vive/index.htm",
+    "qsos": 1380
+   },
+   "asked": {
+    "url": "https://www.nps.gov/vive/index.htm",
+    "from": "pota",
+    "others_noted": 0
+   },
+   "page": {
+    "final_url": "https://www.nps.gov/vive/index.htm",
+    "status": 200,
+    "kind": "html",
+    "read": "2026-11-22",
+    "by": "bot",
+    "fingerprint": "55acf13681b4",
+    "host": "www.nps.gov",
+    "family": "nps",
+    "nps_code": "vive",
+    "moved": false,
+    "final_host": "www.nps.gov",
+    "dead_twice": false,
+    "requests": 2
+   },
+   "own_page": {
+    "is": "own",
+    "why": "official host; only this park of the area lists the page",
+    "shared_with": [],
+    "host": "www.nps.gov"
+   },
+   "name": {
+    "title": "Vietnam Veterans Memorial",
+    "heading": "Explore This Park",
+    "best": null,
+    "vs_pota": "differs",
+    "quote": "Vietnam Veterans Memorial"
+   },
+   "designation": {
+    "words": [],
+    "combined": false,
+    "parts": [],
+    "pota_numbers_part": null,
+    "vs_pota_type": null
+   },
+   "inside_of": [],
+   "maybe_inside": [],
+   "contains": [],
+   "sizes": [],
+   "location": {
+    "coords": [
+     {
+      "lat": 38.873781,
+      "lon": -77.024403,
+      "from": "address (US Census lookup)",
+      "role": "unknown",
+      "label": "",
+      "km_from_pin": 2.8,
+      "address": "1100 Ohio Drive SW Washington, DC 20242"
+     }
+    ],
+    "dropped_points": 0,
+    "addresses": [
+     {
+      "text": "1100 Ohio Drive SW Washington, DC 20242 Phone: 202-426-6841",
+      "role": "unknown",
+      "why": "a street and a ZIP, with no office or park word"
+     },
+     {
+      "text": "1100 Ohio Drive SW Washington, DC 20242",
+      "role": "unknown",
+      "why": "a street and a ZIP, with no office or park word"
+     }
+    ],
+    "directions": null,
+    "state_words": [
+     "Ohio",
+     "Washington"
+    ]
+   },
+   "maps": [
+    {
+     "url": "https://www.nps.gov/vive/planyourvisit/maps.htm",
+     "text": "Maps",
+     "kind": "web-map",
+     "score": 2,
+     "via": "the agency site",
+     "names_park": false,
+     "names_unit": "",
+     "status": "not opened"
+    }
+   ],
+   "parts": [],
+   "manager": {
+    "agency": "National Park Service",
+    "office": "",
+    "quote": ""
+   },
+   "status_words": {
+    "closed": null,
+    "handover": null,
+    "renamed": null
+   },
+   "unofficial": false,
+   "confirm": {
+    "agency_id": null,
+    "size": null,
+    "manager": {
+     "agency": "National Park Service",
+     "from": "the agency's own web host",
+     "quote": ""
+    },
+    "address": {
+     "text": "1100 Ohio Drive SW Washington, DC 20242 Phone: 202-426-6841",
+     "role": "unknown"
+    },
+    "coords": null,
+    "map_link": null
+   },
+   "questions": [
+    {
+     "code": "NAME_DIFFERS",
+     "for": "reviewer",
+     "plain": "POTA: 'Vietnam Veterans National Memorial'. Page: 'Explore This Park'.",
+     "quote": "Vietnam Veterans Memorial"
+    }
+   ],
+   "evidence_draft": null,
+   "evidence_drafts": [],
+   "location_pulled": "2026-11-22",
+   "from_pc_upload": "2026-11-22"
+  },
+  "US-0794": {
+   "ref": "US-0794",
+   "area": "US-DC",
+   "reader": "v1",
+   "pota": {
+    "name": "Washington Monument National Memorial",
+    "type": "National Memorial",
+    "pin": [
+     38.8894,
+     -77.0355
+    ],
+    "link": "https://www.nps.gov/wamo/index.htm",
+    "qsos": 3823
+   },
+   "asked": {
+    "url": "https://www.nps.gov/wamo/index.htm",
+    "from": "pota",
+    "others_noted": 0
+   },
+   "page": {
+    "final_url": "https://www.nps.gov/wamo/index.htm",
+    "status": 200,
+    "kind": "html",
+    "read": "2026-11-22",
+    "by": "bot",
+    "fingerprint": "17b9d0bdc21e",
+    "host": "www.nps.gov",
+    "family": "nps",
+    "nps_code": "wamo",
+    "moved": false,
+    "final_host": "www.nps.gov",
+    "dead_twice": false,
+    "requests": 2
+   },
+   "own_page": {
+    "is": "own",
+    "why": "official host; only this park of the area lists the page",
+    "shared_with": [],
+    "host": "www.nps.gov"
+   },
+   "name": {
+    "title": "Washington Monument",
+    "heading": "Explore This Park",
+    "best": null,
+    "vs_pota": "differs",
+    "quote": "Washington Monument"
+   },
+   "designation": {
+    "words": [],
+    "combined": false,
+    "parts": [],
+    "pota_numbers_part": null,
+    "vs_pota_type": null
+   },
+   "inside_of": [],
+   "maybe_inside": [],
+   "contains": [],
+   "sizes": [],
+   "location": {
+    "coords": [
+     {
+      "lat": 38.873781,
+      "lon": -77.024403,
+      "from": "address (US Census lookup)",
+      "role": "unknown",
+      "label": "",
+      "km_from_pin": 1.98,
+      "address": "1100 Ohio Drive SW Washington, DC 20242"
+     }
+    ],
+    "dropped_points": 0,
+    "addresses": [
+     {
+      "text": "1100 Ohio Drive SW Washington, DC 20242 Phone: 202-426-6841",
+      "role": "unknown",
+      "why": "a street and a ZIP, with no office or park word"
+     },
+     {
+      "text": "1100 Ohio Drive SW Washington, DC 20242",
+      "role": "unknown",
+      "why": "a street and a ZIP, with no office or park word"
+     }
+    ],
+    "directions": null,
+    "state_words": [
+     "Washington",
+     "Ohio"
+    ]
+   },
+   "maps": [
+    {
+     "url": "https://www.nps.gov/wamo/planyourvisit/maps.htm",
+     "text": "Maps",
+     "kind": "web-map",
+     "score": 2,
+     "via": "the agency site",
+     "names_park": false,
+     "names_unit": "",
+     "status": "not opened"
+    }
+   ],
+   "parts": [],
+   "manager": {
+    "agency": "National Park Service",
+    "office": "",
+    "quote": ""
+   },
+   "status_words": {
+    "closed": null,
+    "handover": null,
+    "renamed": null
+   },
+   "unofficial": false,
+   "confirm": {
+    "agency_id": null,
+    "size": null,
+    "manager": {
+     "agency": "National Park Service",
+     "from": "the agency's own web host",
+     "quote": ""
+    },
+    "address": {
+     "text": "1100 Ohio Drive SW Washington, DC 20242 Phone: 202-426-6841",
+     "role": "unknown"
+    },
+    "coords": null,
+    "map_link": null
+   },
+   "questions": [
+    {
+     "code": "NAME_DIFFERS",
+     "for": "reviewer",
+     "plain": "POTA: 'Washington Monument National Memorial'. Page: 'Explore This Park'.",
+     "quote": "Washington Monument"
+    }
+   ],
+   "evidence_draft": null,
+   "evidence_drafts": [],
+   "location_pulled": "2026-11-22",
+   "from_pc_upload": "2026-11-22"
+  },
+  "US-0795": {
+   "ref": "US-0795",
+   "area": "US-DC",
+   "reader": "v1",
+   "pota": {
+    "name": "World War I National Memorial",
+    "type": "National Memorial",
+    "pin": [
+     38.896,
+     -77.0329
+    ],
+    "link": "https://www.nps.gov/wwim/index.htm",
+    "qsos": 900
+   },
+   "asked": {
+    "url": "https://www.nps.gov/wwim/index.htm",
+    "from": "pota",
+    "others_noted": 0
+   },
+   "page": {
+    "final_url": "https://www.nps.gov/wwim/index.htm",
+    "status": 200,
+    "kind": "html",
+    "read": "2026-11-23",
+    "by": "bot",
+    "fingerprint": "cd57787245ae",
+    "host": "www.nps.gov",
+    "family": "nps",
+    "nps_code": "wwim",
+    "moved": false,
+    "final_host": "www.nps.gov",
+    "dead_twice": false,
+    "requests": 2
+   },
+   "own_page": {
+    "is": "own",
+    "why": "official host; only this park of the area lists the page",
+    "shared_with": [],
+    "host": "www.nps.gov"
+   },
+   "name": {
+    "title": "World War I Memorial",
+    "heading": "World War I Memorial",
+    "best": "World War I Memorial",
+    "vs_pota": "same-core",
+    "quote": "World War I Memorial"
+   },
+   "designation": {
+    "words": [],
+    "combined": false,
+    "parts": [],
+    "pota_numbers_part": null,
+    "vs_pota_type": null
+   },
+   "inside_of": [],
+   "maybe_inside": [],
+   "contains": [],
+   "sizes": [],
+   "location": {
+    "coords": [],
+    "dropped_points": 0,
+    "addresses": [],
+    "directions": null,
+    "state_words": [
+     "Pennsylvania"
+    ],
+    "offsets": [],
+    "counties": []
+   },
+   "maps": [
+    {
+     "url": "https://www.nps.gov/wwim/planyourvisit/maps.htm",
+     "text": "Maps",
+     "kind": "web-map",
+     "score": 2,
+     "via": "the agency site",
+     "names_park": false,
+     "names_unit": "",
+     "status": "not opened"
+    }
+   ],
+   "parts": [],
+   "manager": {
+    "agency": "National Park Service",
+    "office": "",
+    "quote": ""
+   },
+   "status_words": {
+    "closed": null,
+    "handover": null,
+    "renamed": null
+   },
+   "unofficial": false,
+   "confirm": {
+    "agency_id": null,
+    "size": null,
+    "manager": {
+     "agency": "National Park Service",
+     "from": "the agency's own web host",
+     "quote": ""
+    },
+    "address": null,
+    "coords": null,
+    "map_link": null
+   },
+   "questions": [],
+   "evidence_draft": null,
+   "evidence_drafts": [],
+   "from_pc_upload": "2026-11-23"
+  },
+  "US-0796": {
+   "ref": "US-0796",
+   "area": "US-DC",
+   "reader": "v1",
+   "pota": {
+    "name": "World War II National Memorial",
+    "type": "National Memorial",
+    "pin": [
+     38.8894,
+     -77.0402
+    ],
+    "link": "https://www.nps.gov/wwii/index.htm",
+    "qsos": 1219
+   },
+   "asked": {
+    "url": "https://www.nps.gov/wwii/index.htm",
+    "from": "pota",
+    "others_noted": 0
+   },
+   "page": {
+    "final_url": "https://www.nps.gov/wwii/index.htm",
+    "status": 200,
+    "kind": "html",
+    "read": "2026-11-22",
+    "by": "bot",
+    "fingerprint": "201465d2e5f6",
+    "host": "www.nps.gov",
+    "family": "nps",
+    "nps_code": "wwii",
+    "moved": false,
+    "final_host": "www.nps.gov",
+    "dead_twice": false,
+    "requests": 2
+   },
+   "own_page": {
+    "is": "own",
+    "why": "official host; only this park of the area lists the page",
+    "shared_with": [],
+    "host": "www.nps.gov"
+   },
+   "name": {
+    "title": "World War II Memorial",
+    "heading": "Explore This Park",
+    "best": null,
+    "vs_pota": "differs",
+    "quote": "World War II Memorial"
+   },
+   "designation": {
+    "words": [],
+    "combined": false,
+    "parts": [],
+    "pota_numbers_part": null,
+    "vs_pota_type": null
+   },
+   "inside_of": [],
+   "maybe_inside": [],
+   "contains": [],
+   "sizes": [],
+   "location": {
+    "coords": [
+     {
+      "lat": 38.873781,
+      "lon": -77.024403,
+      "from": "address (US Census lookup)",
+      "role": "unknown",
+      "label": "",
+      "km_from_pin": 2.21,
+      "address": "1100 Ohio Drive SW Washington, DC 20242"
+     }
+    ],
+    "dropped_points": 0,
+    "addresses": [
+     {
+      "text": "1100 Ohio Drive SW Washington, DC 20242 Phone: 202-426-6841",
+      "role": "unknown",
+      "why": "a street and a ZIP, with no office or park word"
+     },
+     {
+      "text": "1100 Ohio Drive SW Washington, DC 20242",
+      "role": "unknown",
+      "why": "a street and a ZIP, with no office or park word"
+     }
+    ],
+    "directions": null,
+    "state_words": [
+     "Ohio",
+     "Washington"
+    ]
+   },
+   "maps": [
+    {
+     "url": "https://www.nps.gov/wwii/planyourvisit/maps.htm",
+     "text": "Maps",
+     "kind": "web-map",
+     "score": 2,
+     "via": "the agency site",
+     "names_park": false,
+     "names_unit": "",
+     "status": "not opened"
+    }
+   ],
+   "parts": [],
+   "manager": {
+    "agency": "National Park Service",
+    "office": "",
+    "quote": ""
+   },
+   "status_words": {
+    "closed": null,
+    "handover": null,
+    "renamed": null
+   },
+   "unofficial": false,
+   "confirm": {
+    "agency_id": null,
+    "size": null,
+    "manager": {
+     "agency": "National Park Service",
+     "from": "the agency's own web host",
+     "quote": ""
+    },
+    "address": {
+     "text": "1100 Ohio Drive SW Washington, DC 20242 Phone: 202-426-6841",
+     "role": "unknown"
+    },
+    "coords": null,
+    "map_link": null
+   },
+   "questions": [
+    {
+     "code": "NAME_DIFFERS",
+     "for": "reviewer",
+     "plain": "POTA: 'World War II National Memorial'. Page: 'Explore This Park'.",
+     "quote": "World War II Memorial"
+    }
+   ],
+   "evidence_draft": null,
+   "evidence_drafts": [],
+   "location_pulled": "2026-11-22",
+   "from_pc_upload": "2026-11-22"
+  },
+  "US-0805": {
+   "ref": "US-0805",
+   "area": "US-DC",
+   "reader": "v1",
+   "pota": {
+    "name": "Carter G. Woodson Home National Historic Site",
+    "type": "National Historic Site",
+    "pin": [
+     38.9108,
+     -77.0241
+    ],
+    "link": "https://www.nps.gov/cawo/index.htm",
+    "qsos": 336
+   },
+   "asked": {
+    "url": "https://www.nps.gov/cawo/index.htm",
+    "from": "pota",
+    "others_noted": 0
+   },
+   "page": {
+    "final_url": "https://www.nps.gov/cawo/index.htm",
+    "status": 200,
+    "kind": "html",
+    "read": "2026-11-22",
+    "by": "bot",
+    "fingerprint": "7aba2ba117b8",
+    "host": "www.nps.gov",
+    "family": "nps",
+    "nps_code": "cawo",
+    "moved": false,
+    "final_host": "www.nps.gov",
+    "dead_twice": false,
+    "requests": 2
+   },
+   "own_page": {
+    "is": "own",
+    "why": "official host; only this park of the area lists the page",
+    "shared_with": [],
+    "host": "www.nps.gov"
+   },
+   "name": {
+    "title": "Carter G. Woodson Home National Historic Site",
+    "heading": "Explore This Park",
+    "best": null,
+    "vs_pota": "differs",
+    "quote": "Carter G. Woodson Home National Historic Site"
+   },
+   "designation": {
+    "words": [],
+    "combined": false,
+    "parts": [],
+    "pota_numbers_part": null,
+    "vs_pota_type": null
+   },
+   "inside_of": [],
+   "maybe_inside": [],
+   "contains": [],
+   "sizes": [],
+   "location": {
+    "coords": [
+     {
+      "lat": 38.868099,
+      "lon": -76.994373,
+      "from": "address (US Census lookup)",
+      "role": "unknown",
+      "label": "",
+      "km_from_pin": 5.4,
+      "address": "1900 Anacostia Drive SE Washington, DC 20020"
+     }
+    ],
+    "dropped_points": 0,
+    "addresses": [
+     {
+      "text": "National Capital Parks — East Attn: Carter G. Woodson Home NHS 1900 Anacostia Drive SE Washington, DC 20020 Phone: 771-208-1506",
+      "role": "unknown",
+      "why": "a street and a ZIP, with no office or park word"
+     },
+     {
+      "text": "1900 Anacostia Drive SE Washington, DC 20020",
+      "role": "unknown",
+      "why": "a street and a ZIP, with no office or park word"
+     }
+    ],
+    "directions": null,
+    "state_words": [
+     "Washington"
+    ]
+   },
+   "maps": [
+    {
+     "url": "https://www.nps.gov/cawo/planyourvisit/maps.htm",
+     "text": "Maps",
+     "kind": "web-map",
+     "score": 2,
+     "via": "the agency site",
+     "names_park": false,
+     "names_unit": "",
+     "status": "not opened"
+    },
+    {
+     "url": "https://www.nps.gov/cawo/contacts.htm",
+     "text": "Contact Carter G. Woodson Home National Historic Site",
+     "kind": "web-map",
+     "score": 2,
+     "via": "the agency site",
+     "names_park": true,
+     "names_unit": "",
+     "status": "not opened"
+    }
+   ],
+   "parts": [],
+   "manager": {
+    "agency": "National Park Service",
+    "office": "",
+    "quote": ""
+   },
+   "status_words": {
+    "closed": null,
+    "handover": null,
+    "renamed": "now known as Black History Month"
+   },
+   "unofficial": false,
+   "confirm": {
+    "agency_id": null,
+    "size": null,
+    "manager": {
+     "agency": "National Park Service",
+     "from": "the agency's own web host",
+     "quote": ""
+    },
+    "address": {
+     "text": "National Capital Parks — East Attn: Carter G. Woodson Home NHS 1900 Anacostia Drive SE Washington, DC 20020 Phone: 771-208-1506",
+     "role": "unknown"
+    },
+    "coords": null,
+    "map_link": {
+     "url": "https://www.nps.gov/cawo/contacts.htm",
+     "kind": "web-map",
+     "text": "Contact Carter G. Woodson Home National Historic Site"
+    }
+   },
+   "questions": [
+    {
+     "code": "NAME_DIFFERS",
+     "for": "reviewer",
+     "plain": "POTA: 'Carter G. Woodson Home National Historic Site'. Page: 'Explore This Park'.",
+     "quote": "Carter G. Woodson Home National Historic Site"
+    },
+    {
+     "code": "CLOSED_OR_MOVED_WORDS",
+     "for": "reviewer",
+     "plain": "now known as Black History Month",
+     "quote": "now known as Black History Month"
+    }
+   ],
+   "evidence_draft": null,
+   "evidence_drafts": [],
+   "location_pulled": "2026-11-22",
+   "from_pc_upload": "2026-11-22"
+  },
+  "US-0814": {
+   "ref": "US-0814",
+   "area": "US-DC",
+   "reader": "v1",
+   "pota": {
+    "name": "Ford's Theatre National Historic Site",
+    "type": "National Historic Site",
+    "pin": [
+     38.8967,
+     -77.026
+    ],
+    "link": "https://www.nps.gov/foth/index.htm",
+    "qsos": 374
+   },
+   "asked": {
+    "url": "https://www.nps.gov/foth/index.htm",
+    "from": "pota",
+    "others_noted": 0
+   },
+   "page": {
+    "final_url": "https://www.nps.gov/foth/index.htm",
+    "status": 200,
+    "kind": "html",
+    "read": "2026-11-22",
+    "by": "bot",
+    "fingerprint": "8a64417119b2",
+    "host": "www.nps.gov",
+    "family": "nps",
+    "nps_code": "foth",
+    "moved": false,
+    "final_host": "www.nps.gov",
+    "dead_twice": false,
+    "requests": 2
+   },
+   "own_page": {
+    "is": "own",
+    "why": "official host; only this park of the area lists the page",
+    "shared_with": [],
+    "host": "www.nps.gov"
+   },
+   "name": {
+    "title": "Ford's Theatre National Historic Site",
+    "heading": "Explore This Park",
+    "best": null,
+    "vs_pota": "differs",
+    "quote": "Ford's Theatre National Historic Site"
+   },
+   "designation": {
+    "words": [],
+    "combined": false,
+    "parts": [],
+    "pota_numbers_part": null,
+    "vs_pota_type": null
+   },
+   "inside_of": [],
+   "maybe_inside": [],
+   "contains": [],
+   "sizes": [],
+   "location": {
+    "coords": [
+     {
+      "lat": 38.873781,
+      "lon": -77.024403,
+      "from": "address (US Census lookup)",
+      "role": "unknown",
+      "label": "",
+      "km_from_pin": 2.55,
+      "address": "1100 Ohio Drive SW Washington, DC 20242"
+     }
+    ],
+    "dropped_points": 0,
+    "addresses": [
+     {
+      "text": "1100 Ohio Drive SW Washington, DC 20242 Phone: 202-426-6841",
+      "role": "unknown",
+      "why": "a street and a ZIP, with no office or park word"
+     },
+     {
+      "text": "1100 Ohio Drive SW Washington, DC 20242",
+      "role": "unknown",
+      "why": "a street and a ZIP, with no office or park word"
+     }
+    ],
+    "directions": null,
+    "state_words": [
+     "Pennsylvania",
+     "Ohio",
+     "Washington"
+    ]
+   },
+   "maps": [
+    {
+     "url": "https://www.nps.gov/foth/planyourvisit/maps.htm",
+     "text": "Maps",
+     "kind": "web-map",
+     "score": 2,
+     "via": "the agency site",
+     "names_park": false,
+     "names_unit": "",
+     "status": "not opened"
+    }
+   ],
+   "parts": [],
+   "manager": {
+    "agency": "National Park Service",
+    "office": "",
+    "quote": ""
+   },
+   "status_words": {
+    "closed": null,
+    "handover": null,
+    "renamed": null
+   },
+   "unofficial": false,
+   "confirm": {
+    "agency_id": null,
+    "size": null,
+    "manager": {
+     "agency": "National Park Service",
+     "from": "the agency's own web host",
+     "quote": ""
+    },
+    "address": {
+     "text": "1100 Ohio Drive SW Washington, DC 20242 Phone: 202-426-6841",
+     "role": "unknown"
+    },
+    "coords": null,
+    "map_link": null
+   },
+   "questions": [
+    {
+     "code": "NAME_DIFFERS",
+     "for": "reviewer",
+     "plain": "POTA: 'Ford's Theatre National Historic Site'. Page: 'Explore This Park'.",
+     "quote": "Ford's Theatre National Historic Site"
+    }
+   ],
+   "evidence_draft": null,
+   "evidence_drafts": [],
+   "location_pulled": "2026-11-22",
+   "from_pc_upload": "2026-11-22"
+  },
+  "US-0825": {
+   "ref": "US-0825",
+   "area": "US-DC",
+   "reader": "v1",
+   "pota": {
+    "name": "Frederick Douglass National Historic Site",
+    "type": "National Historic Site",
+    "pin": [
+     38.863,
+     -76.9854
+    ],
+    "link": "https://www.nps.gov/frdo/index.htm",
+    "qsos": 1347
+   },
+   "asked": {
+    "url": "https://www.nps.gov/frdo/index.htm",
+    "from": "pota",
+    "others_noted": 0
+   },
+   "page": {
+    "final_url": "https://www.nps.gov/frdo/index.htm",
+    "status": 200,
+    "kind": "html",
+    "read": "2026-11-22",
+    "by": "bot",
+    "fingerprint": "61890075d621",
+    "host": "www.nps.gov",
+    "family": "nps",
+    "nps_code": "frdo",
+    "moved": false,
+    "final_host": "www.nps.gov",
+    "dead_twice": false,
+    "requests": 2
+   },
+   "own_page": {
+    "is": "own",
+    "why": "official host; only this park of the area lists the page",
+    "shared_with": [],
+    "host": "www.nps.gov"
+   },
+   "name": {
+    "title": "Frederick Douglass National Historic Site",
+    "heading": "Explore This Park",
+    "best": null,
+    "vs_pota": "differs",
+    "quote": "Frederick Douglass National Historic Site"
+   },
+   "designation": {
+    "words": [],
+    "combined": false,
+    "parts": [],
+    "pota_numbers_part": null,
+    "vs_pota_type": null
+   },
+   "inside_of": [],
+   "maybe_inside": [],
+   "contains": [],
+   "sizes": [],
+   "location": {
+    "coords": [
+     {
+      "lat": 38.864093,
+      "lon": -76.985648,
+      "from": "address (US Census lookup)",
+      "role": "unknown",
+      "label": "",
+      "km_from_pin": 0.12,
+      "address": "1411 W Street SE Washington, DC 20020 Phone: 771-208-1499 This phone number is to the ranger offices at the Frederick Douglass National Historic Site."
+     }
+    ],
+    "dropped_points": 0,
+    "addresses": [
+     {
+      "text": "1411 W Street SE Washington, DC 20020 Phone: 771-208-1499 This phone number is to the ranger offices at the Frederick Douglass National Historic Site.",
+      "role": "unknown",
+      "why": "a street and a ZIP, with no office or park word"
+     }
+    ],
+    "directions": {
+     "sent": "Hours and seasons Reservations and timed entry Fees and passes Plan an off-season visit Tour the Historic House The only way to get inside Frederick Douglass's home is to be on a guided tour. Rangers lead tours at scheduled times. Annual Oratorical Contest This is a competition for students to test their public speaking skills and for them to become great orators like Frederick Douglass.",
+     "roads": [],
+     "towns": [
+      "Do\nEvery"
+     ]
+    },
+    "state_words": [
+     "Washington"
+    ]
+   },
+   "maps": [
+    {
+     "url": "https://www.nps.gov/frdo/planyourvisit/maps.htm",
+     "text": "Maps",
+     "kind": "web-map",
+     "score": 2,
+     "via": "the agency site",
+     "names_park": false,
+     "names_unit": "",
+     "status": "not opened"
+    }
+   ],
+   "parts": [],
+   "manager": {
+    "agency": "National Park Service",
+    "office": "",
+    "quote": ""
+   },
+   "status_words": {
+    "closed": null,
+    "handover": null,
+    "renamed": null
+   },
+   "unofficial": false,
+   "confirm": {
+    "agency_id": null,
+    "size": null,
+    "manager": {
+     "agency": "National Park Service",
+     "from": "the agency's own web host",
+     "quote": ""
+    },
+    "address": {
+     "text": "1411 W Street SE Washington, DC 20020 Phone: 771-208-1499 This phone number is to the ranger offices at the Frederick Douglass National Historic Site.",
+     "role": "unknown"
+    },
+    "coords": null,
+    "map_link": null
+   },
+   "questions": [
+    {
+     "code": "NAME_DIFFERS",
+     "for": "reviewer",
+     "plain": "POTA: 'Frederick Douglass National Historic Site'. Page: 'Explore This Park'.",
+     "quote": "Frederick Douglass National Historic Site"
+    }
+   ],
+   "evidence_draft": null,
+   "evidence_drafts": [],
+   "from_pc_upload": "2026-11-22"
+  },
+  "US-0848": {
+   "ref": "US-0848",
+   "area": "US-DC",
+   "reader": "v1",
+   "pota": {
+    "name": "Mary McLeod Bethune Council House National Historic Site",
+    "type": "National Historic Site",
+    "pin": [
+     38.9081,
+     -77.0307
+    ],
+    "link": "https://www.nps.gov/mamc/index.htm",
+    "qsos": 337
+   },
+   "asked": {
+    "url": "https://www.nps.gov/mamc/index.htm",
+    "from": "pota",
+    "others_noted": 0
+   },
+   "page": {
+    "final_url": "https://www.nps.gov/mamc/index.htm",
+    "status": 200,
+    "kind": "html",
+    "read": "2026-11-22",
+    "by": "bot",
+    "fingerprint": "f940632bdf6c",
+    "host": "www.nps.gov",
+    "family": "nps",
+    "nps_code": "mamc",
+    "moved": false,
+    "final_host": "www.nps.gov",
+    "dead_twice": false,
+    "requests": 2
+   },
+   "own_page": {
+    "is": "own",
+    "why": "official host; only this park of the area lists the page",
+    "shared_with": [],
+    "host": "www.nps.gov"
+   },
+   "name": {
+    "title": "Mary McLeod Bethune Council House National Historic Site",
+    "heading": "Explore This Park",
+    "best": null,
+    "vs_pota": "differs",
+    "quote": "Mary McLeod Bethune Council House National Historic Site"
+   },
+   "designation": {
+    "words": [],
+    "combined": false,
+    "parts": [],
+    "pota_numbers_part": null,
+    "vs_pota_type": null
+   },
+   "inside_of": [],
+   "maybe_inside": [],
+   "contains": [],
+   "sizes": [],
+   "location": {
+    "coords": [
+     {
+      "lat": 38.907963,
+      "lon": -77.030678,
+      "from": "address (US Census lookup)",
+      "role": "unknown",
+      "label": "",
+      "km_from_pin": 0.02,
+      "address": "1318 Vermont Avenue NW Washington, DC 20005"
+     }
+    ],
+    "dropped_points": 0,
+    "addresses": [
+     {
+      "text": "Mary McLeod Bethune Council House National Historic Site 1318 Vermont Avenue NW Washington, DC 20005 Phone: 771-208-1583",
+      "role": "unknown",
+      "why": "a street and a ZIP, with no office or park word"
+     },
+     {
+      "text": "1318 Vermont Avenue NW Washington, DC 20005",
+      "role": "unknown",
+      "why": "a street and a ZIP, with no office or park word"
+     }
+    ],
+    "directions": {
+     "sent": "Follow us on the NPS App",
+     "roads": [],
+     "towns": []
+    },
+    "state_words": [
+     "Washington",
+     "Vermont"
+    ]
+   },
+   "maps": [
+    {
+     "url": "https://www.nps.gov/mamc/planyourvisit/maps.htm",
+     "text": "Maps",
+     "kind": "web-map",
+     "score": 2,
+     "via": "the agency site",
+     "names_park": false,
+     "names_unit": "",
+     "status": "not opened"
+    }
+   ],
+   "parts": [],
+   "manager": {
+    "agency": "National Park Service",
+    "office": "National Headquarters",
+    "quote": ""
+   },
+   "status_words": {
+    "closed": null,
+    "handover": null,
+    "renamed": null
+   },
+   "unofficial": false,
+   "confirm": {
+    "agency_id": null,
+    "size": null,
+    "manager": {
+     "agency": "National Park Service",
+     "from": "the agency's own web host",
+     "quote": ""
+    },
+    "address": {
+     "text": "Mary McLeod Bethune Council House National Historic Site 1318 Vermont Avenue NW Washington, DC 20005 Phone: 771-208-1583",
+     "role": "unknown"
+    },
+    "coords": null,
+    "map_link": null
+   },
+   "questions": [
+    {
+     "code": "NAME_DIFFERS",
+     "for": "reviewer",
+     "plain": "POTA: 'Mary McLeod Bethune Council House National Historic Site'. Page: 'Explore This Park'.",
+     "quote": "Mary McLeod Bethune Council House National Historic Site"
+    }
+   ],
+   "evidence_draft": null,
+   "evidence_drafts": [],
+   "location_pulled": "2026-11-22",
+   "from_pc_upload": "2026-11-22"
+  },
+  "US-0853": {
+   "ref": "US-0853",
+   "area": "US-DC",
+   "reader": "v1",
+   "pota": {
+    "name": "Pennsylvania Avenue National Historic Site",
+    "type": "National Historic Site",
+    "pin": [
+     38.8958,
+     -77.0313
+    ],
+    "link": "https://www.nps.gov/paav/index.htm",
+    "qsos": 2390
+   },
+   "asked": {
+    "url": "https://www.nps.gov/paav/index.htm",
+    "from": "pota",
+    "others_noted": 0
+   },
+   "page": {
+    "final_url": "https://www.nps.gov/paav/index.htm",
+    "status": 200,
+    "kind": "html",
+    "read": "2026-11-22",
+    "by": "bot",
+    "fingerprint": "7af54ba679c0",
+    "host": "www.nps.gov",
+    "family": "nps",
+    "nps_code": "paav",
+    "moved": false,
+    "final_host": "www.nps.gov",
+    "dead_twice": false,
+    "requests": 2
+   },
+   "own_page": {
+    "is": "own",
+    "why": "official host; only this park of the area lists the page",
+    "shared_with": [],
+    "host": "www.nps.gov"
+   },
+   "name": {
+    "title": "Pennsylvania Avenue",
+    "heading": "Explore This Park",
+    "best": null,
+    "vs_pota": "differs",
+    "quote": "Pennsylvania Avenue"
+   },
+   "designation": {
+    "words": [],
+    "combined": false,
+    "parts": [],
+    "pota_numbers_part": null,
+    "vs_pota_type": null
+   },
+   "inside_of": [],
+   "maybe_inside": [],
+   "contains": [],
+   "sizes": [],
+   "location": {
+    "coords": [
+     {
+      "lat": 38.873781,
+      "lon": -77.024403,
+      "from": "address (US Census lookup)",
+      "role": "unknown",
+      "label": "",
+      "km_from_pin": 2.52,
+      "address": "1100 Ohio Drive SW Washington, DC 20242"
+     }
+    ],
+    "dropped_points": 0,
+    "addresses": [
+     {
+      "text": "1100 Ohio Drive SW Washington, DC 20242 Phone: 202 426-6841",
+      "role": "unknown",
+      "why": "a street and a ZIP, with no office or park word"
+     },
+     {
+      "text": "1100 Ohio Drive SW Washington, DC 20242",
+      "role": "unknown",
+      "why": "a street and a ZIP, with no office or park word"
+     }
+    ],
+    "directions": null,
+    "state_words": [
+     "Pennsylvania",
+     "Washington",
+     "Ohio"
+    ]
+   },
+   "maps": [
+    {
+     "url": "https://www.nps.gov/paav/planyourvisit/maps.htm",
+     "text": "Maps",
+     "kind": "web-map",
+     "score": 2,
+     "via": "the agency site",
+     "names_park": false,
+     "names_unit": "",
+     "status": "not opened"
+    }
+   ],
+   "parts": [],
+   "manager": {
+    "agency": "National Park Service",
+    "office": "",
+    "quote": ""
+   },
+   "status_words": {
+    "closed": null,
+    "handover": null,
+    "renamed": null
+   },
+   "unofficial": false,
+   "confirm": {
+    "agency_id": null,
+    "size": null,
+    "manager": {
+     "agency": "National Park Service",
+     "from": "the agency's own web host",
+     "quote": ""
+    },
+    "address": {
+     "text": "1100 Ohio Drive SW Washington, DC 20242 Phone: 202 426-6841",
+     "role": "unknown"
+    },
+    "coords": null,
+    "map_link": null
+   },
+   "questions": [
+    {
+     "code": "NAME_DIFFERS",
+     "for": "reviewer",
+     "plain": "POTA: 'Pennsylvania Avenue National Historic Site'. Page: 'Explore This Park'.",
+     "quote": "Pennsylvania Avenue"
+    }
+   ],
+   "evidence_draft": null,
+   "evidence_drafts": [],
+   "location_pulled": "2026-11-22",
+   "from_pc_upload": "2026-11-22"
+  },
+  "US-13543": {
+   "ref": "US-13543",
+   "area": "US-DC",
+   "reader": "v1",
+   "pota": {
+    "name": "US National Arboretum Botanical Gardens",
+    "type": "Botanical Gardens",
+    "pin": [
+     38.9064,
+     -76.9694
+    ],
+    "link": "https://www.usna.usda.gov/visit/rules-and-guidelines/",
+    "qsos": 1129
+   },
+   "asked": {
+    "url": "https://www.usna.usda.gov/visit/rules-and-guidelines/",
+    "from": "pota",
+    "others_noted": 0
+   },
+   "page": {
+    "final_url": "https://www.usna.usda.gov/visit/rules-and-guidelines/",
+    "status": "robots-unreadable",
+    "kind": "resting",
+    "read": "2026-11-21",
+    "by": "bot",
+    "fingerprint": "e3b0c44298fc",
+    "host": "www.usna.usda.gov",
+    "family": "state",
+    "nps_code": "",
+    "moved": false,
+    "final_host": "www.usna.usda.gov",
+    "dead_twice": false,
+    "requests": 1,
+    "seen": "2026-11-23"
+   },
+   "own_page": {
+    "is": "own",
+    "why": "official host; only this park of the area lists the page",
+    "shared_with": [],
+    "host": "www.usna.usda.gov"
+   },
+   "name": {
+    "title": "",
+    "heading": "",
+    "best": null,
+    "vs_pota": null,
+    "quote": ""
+   },
+   "designation": {
+    "words": [],
+    "combined": false,
+    "parts": [],
+    "pota_numbers_part": null,
+    "vs_pota_type": null
+   },
+   "inside_of": [],
+   "maybe_inside": [],
+   "contains": [],
+   "sizes": [],
+   "location": {
+    "coords": [],
+    "dropped_points": 0,
+    "addresses": [],
+    "directions": null,
+    "state_words": []
+   },
+   "maps": [],
+   "parts": [],
+   "manager": null,
+   "status_words": {
+    "closed": null,
+    "handover": null,
+    "renamed": null
+   },
+   "unofficial": false,
+   "confirm": {
+    "agency_id": null,
+    "size": null,
+    "manager": null,
+    "address": null,
+    "coords": null,
+    "map_link": null
+   },
+   "questions": [],
+   "evidence_draft": null,
+   "evidence_drafts": [],
+   "from_pc_upload": "2026-11-23"
+  },
+  "US-13597": {
+   "ref": "US-13597",
+   "area": "US-DC",
+   "reader": "v1",
+   "pota": {
+    "name": "George Mason National Memorial",
+    "type": "National Memorial",
+    "pin": [
+     38.8796,
+     -77.0392
+    ],
+    "link": "https://www.nps.gov/nama/planyourvisit/george-mason-memorial.htm",
+    "qsos": 136
+   },
+   "asked": {
+    "url": "https://www.nps.gov/nama/planyourvisit/george-mason-memorial.htm",
+    "from": "pota",
+    "others_noted": 0
+   },
+   "page": {
+    "final_url": "https://www.nps.gov/nama/planyourvisit/george-mason-memorial.htm",
+    "status": 200,
+    "kind": "html",
+    "read": "2026-11-22",
+    "by": "bot",
+    "fingerprint": "ba215f9357c5",
+    "host": "www.nps.gov",
+    "family": "nps",
+    "nps_code": "nama",
+    "moved": false,
+    "final_host": "www.nps.gov",
+    "dead_twice": false,
+    "requests": 2
+   },
+   "own_page": {
+    "is": "own",
+    "why": "official host; only this park of the area lists the page",
+    "shared_with": [],
+    "host": "www.nps.gov"
+   },
+   "name": {
+    "title": "George Mason Memorial - National Mall and Memorial Parks",
+    "heading": "Explore This Park",
+    "best": null,
+    "vs_pota": "differs",
+    "quote": "George Mason Memorial - National Mall and Memorial Parks"
+   },
+   "designation": {
+    "words": [],
+    "combined": false,
+    "parts": [],
+    "pota_numbers_part": null,
+    "vs_pota_type": null
+   },
+   "inside_of": [],
+   "maybe_inside": [],
+   "contains": [],
+   "sizes": [],
+   "location": {
+    "coords": [
+     {
+      "lat": 38.873781,
+      "lon": -77.024403,
+      "from": "address (US Census lookup)",
+      "role": "unknown",
+      "label": "",
+      "km_from_pin": 1.44,
+      "address": "1100 Ohio Drive SW Washington, DC 20242"
+     }
+    ],
+    "dropped_points": 0,
+    "addresses": [
+     {
+      "text": "1100 Ohio Drive SW Washington, DC 20242 Phone: 202-426-6841",
+      "role": "unknown",
+      "why": "a street and a ZIP, with no office or park word"
+     },
+     {
+      "text": "1100 Ohio Drive SW Washington, DC 20242",
+      "role": "unknown",
+      "why": "a street and a ZIP, with no office or park word"
+     }
+    ],
+    "directions": null,
+    "state_words": [
+     "Virginia",
+     "Ohio",
+     "Washington"
+    ]
+   },
+   "maps": [
+    {
+     "url": "https://www.nps.gov/nama/planyourvisit/maps.htm",
+     "text": "Maps",
+     "kind": "web-map",
+     "score": 2,
+     "via": "the agency site",
+     "names_park": false,
+     "names_unit": "",
+     "status": "not opened"
+    }
+   ],
+   "parts": [],
+   "manager": {
+    "agency": "National Park Service",
+    "office": "",
+    "quote": ""
+   },
+   "status_words": {
+    "closed": null,
+    "handover": null,
+    "renamed": null
+   },
+   "unofficial": false,
+   "confirm": {
+    "agency_id": null,
+    "size": null,
+    "manager": {
+     "agency": "National Park Service",
+     "from": "the agency's own web host",
+     "quote": ""
+    },
+    "address": {
+     "text": "1100 Ohio Drive SW Washington, DC 20242 Phone: 202-426-6841",
+     "role": "unknown"
+    },
+    "coords": null,
+    "map_link": null
+   },
+   "questions": [
+    {
+     "code": "NAME_DIFFERS",
+     "for": "reviewer",
+     "plain": "POTA: 'George Mason National Memorial'. Page: 'Explore This Park'.",
+     "quote": "George Mason Memorial - National Mall and Memorial Parks"
+    }
+   ],
+   "evidence_draft": null,
+   "evidence_drafts": [],
+   "location_pulled": "2026-11-22",
+   "from_pc_upload": "2026-11-22"
+  },
+  "US-13621": {
+   "ref": "US-13621",
+   "area": "US-DC",
+   "reader": "v1",
+   "pota": {
+    "name": "Desert Shield and Desert Storm National Memorial",
+    "type": "National Memorial",
+    "pin": [
+     38.8915,
+     -77.0512
+    ],
+    "link": "https://www.nps.gov/dsds/index.htm",
+    "qsos": 216
+   },
+   "asked": {
+    "url": "https://www.nps.gov/dsds/index.htm",
+    "from": "pota",
+    "others_noted": 0
+   },
+   "page": {
+    "final_url": "https://www.nps.gov/dsds/index.htm",
+    "status": 200,
+    "kind": "html",
+    "read": "2026-11-22",
+    "by": "bot",
+    "fingerprint": "49bc1f93072b",
+    "host": "www.nps.gov",
+    "family": "nps",
+    "nps_code": "dsds",
+    "moved": false,
+    "final_host": "www.nps.gov",
+    "dead_twice": false,
+    "requests": 2
+   },
+   "own_page": {
+    "is": "own",
+    "why": "official host; only this park of the area lists the page",
+    "shared_with": [],
+    "host": "www.nps.gov"
+   },
+   "name": {
+    "title": "Desert Shield and Desert Storm Memorial",
+    "heading": "Explore This Park",
+    "best": null,
+    "vs_pota": "differs",
+    "quote": "Desert Shield and Desert Storm Memorial"
+   },
+   "designation": {
+    "words": [],
+    "combined": false,
+    "parts": [],
+    "pota_numbers_part": null,
+    "vs_pota_type": null
+   },
+   "inside_of": [],
+   "maybe_inside": [],
+   "contains": [],
+   "sizes": [],
+   "location": {
+    "coords": [
+     {
+      "lat": 38.873781,
+      "lon": -77.024403,
+      "from": "address (US Census lookup)",
+      "role": "unknown",
+      "label": "",
+      "km_from_pin": 3.04,
+      "address": "1100 Ohio Drive SW Washington, DC 20242"
+     }
+    ],
+    "dropped_points": 0,
+    "addresses": [
+     {
+      "text": "1100 Ohio Drive SW Washington, DC 20242 Phone: 202-426-6841 National Mall and Memorial Parks information.",
+      "role": "unknown",
+      "why": "a street and a ZIP, with no office or park word"
+     },
+     {
+      "text": "1100 Ohio Drive SW Washington, DC 20242",
+      "role": "unknown",
+      "why": "a street and a ZIP, with no office or park word"
+     }
+    ],
+    "directions": null,
+    "state_words": [
+     "Ohio",
+     "Washington"
+    ]
+   },
+   "maps": [
+    {
+     "url": "https://www.nps.gov/dsds/planyourvisit/maps.htm",
+     "text": "Maps",
+     "kind": "web-map",
+     "score": 2,
+     "via": "the agency site",
+     "names_park": false,
+     "names_unit": "",
+     "status": "not opened"
+    }
+   ],
+   "parts": [],
+   "manager": {
+    "agency": "National Park Service",
+    "office": "",
+    "quote": ""
+   },
+   "status_words": {
+    "closed": null,
+    "handover": null,
+    "renamed": null
+   },
+   "unofficial": false,
+   "confirm": {
+    "agency_id": null,
+    "size": null,
+    "manager": {
+     "agency": "National Park Service",
+     "from": "the agency's own web host",
+     "quote": ""
+    },
+    "address": {
+     "text": "1100 Ohio Drive SW Washington, DC 20242 Phone: 202-426-6841 National Mall and Memorial Parks information.",
+     "role": "unknown"
+    },
+    "coords": null,
+    "map_link": null
+   },
+   "questions": [
+    {
+     "code": "NAME_DIFFERS",
+     "for": "reviewer",
+     "plain": "POTA: 'Desert Shield and Desert Storm National Memorial'. Page: 'Explore This Park'.",
+     "quote": "Desert Shield and Desert Storm Memorial"
+    }
+   ],
+   "evidence_draft": null,
+   "evidence_drafts": [],
+   "location_pulled": "2026-11-22",
+   "from_pc_upload": "2026-11-22"
+  },
+  "US-7499": {
+   "ref": "US-7499",
+   "area": "US-DC",
+   "reader": "v1",
+   "pota": {
+    "name": "Dwight D. Eisenhower National Memorial",
+    "type": "National Memorial",
+    "pin": [
+     38.887,
+     -77.0187
+    ],
+    "link": "https://www.nps.gov/ddem/index.htm",
+    "qsos": 623
+   },
+   "asked": {
+    "url": "https://www.nps.gov/ddem/index.htm",
+    "from": "pota",
+    "others_noted": 0
+   },
+   "page": {
+    "final_url": "https://www.nps.gov/ddem/index.htm",
+    "status": 200,
+    "kind": "html",
+    "read": "2026-11-22",
+    "by": "bot",
+    "fingerprint": "cdee2da74a24",
+    "host": "www.nps.gov",
+    "family": "nps",
+    "nps_code": "ddem",
+    "moved": false,
+    "final_host": "www.nps.gov",
+    "dead_twice": false,
+    "requests": 2
+   },
+   "own_page": {
+    "is": "own",
+    "why": "official host; only this park of the area lists the page",
+    "shared_with": [],
+    "host": "www.nps.gov"
+   },
+   "name": {
+    "title": "Dwight D. Eisenhower Memorial",
+    "heading": "Explore This Park",
+    "best": null,
+    "vs_pota": "differs",
+    "quote": "Dwight D. Eisenhower Memorial"
+   },
+   "designation": {
+    "words": [],
+    "combined": false,
+    "parts": [],
+    "pota_numbers_part": null,
+    "vs_pota_type": null
+   },
+   "inside_of": [],
+   "maybe_inside": [],
+   "contains": [],
+   "sizes": [],
+   "location": {
+    "coords": [
+     {
+      "lat": 38.873781,
+      "lon": -77.024403,
+      "from": "address (US Census lookup)",
+      "role": "unknown",
+      "label": "",
+      "km_from_pin": 1.55,
+      "address": "1100 Ohio Drive SW Washington, DC 20242"
+     }
+    ],
+    "dropped_points": 0,
+    "addresses": [
+     {
+      "text": "1100 Ohio Drive SW Washington, DC 20242 Phone: 202 426-6841 Phone at Survey Lodge Ranger Station, for visitor inquiries.",
+      "role": "unknown",
+      "why": "a street and a ZIP, with no office or park word"
+     },
+     {
+      "text": "1100 Ohio Drive SW Washington, DC 20242",
+      "role": "unknown",
+      "why": "a street and a ZIP, with no office or park word"
+     }
+    ],
+    "directions": null,
+    "state_words": [
+     "Kansas",
+     "Ohio",
+     "Washington"
+    ]
+   },
+   "maps": [
+    {
+     "url": "https://www.nps.gov/ddem/planyourvisit/maps.htm",
+     "text": "Maps",
+     "kind": "web-map",
+     "score": 2,
+     "via": "the agency site",
+     "names_park": false,
+     "names_unit": "",
+     "status": "not opened"
+    }
+   ],
+   "parts": [],
+   "manager": {
+    "agency": "National Park Service",
+    "office": "",
+    "quote": ""
+   },
+   "status_words": {
+    "closed": null,
+    "handover": null,
+    "renamed": null
+   },
+   "unofficial": false,
+   "confirm": {
+    "agency_id": null,
+    "size": null,
+    "manager": {
+     "agency": "National Park Service",
+     "from": "the agency's own web host",
+     "quote": ""
+    },
+    "address": {
+     "text": "1100 Ohio Drive SW Washington, DC 20242 Phone: 202 426-6841 Phone at Survey Lodge Ranger Station, for visitor inquiries.",
+     "role": "unknown"
+    },
+    "coords": null,
+    "map_link": null
+   },
+   "questions": [
+    {
+     "code": "NAME_DIFFERS",
+     "for": "reviewer",
+     "plain": "POTA: 'Dwight D. Eisenhower National Memorial'. Page: 'Explore This Park'.",
+     "quote": "Dwight D. Eisenhower Memorial"
+    }
+   ],
+   "evidence_draft": null,
+   "evidence_drafts": [],
+   "location_pulled": "2026-11-22",
+   "from_pc_upload": "2026-11-22"
+  },
+  "US-7891": {
+   "ref": "US-7891",
+   "area": "US-DC",
+   "reader": "v1",
+   "pota": {
+    "name": "African American Civil War National Memorial",
+    "type": "National Memorial",
+    "pin": [
+     38.9165,
+     -77.0259
+    ],
+    "link": "https://www.nps.gov/afam/index.htm",
+    "qsos": 492
+   },
+   "asked": {
+    "url": "https://www.nps.gov/afam/index.htm",
+    "from": "pota",
+    "others_noted": 0
+   },
+   "page": {
+    "final_url": "https://www.nps.gov/afam/index.htm",
+    "status": 200,
+    "kind": "html",
+    "read": "2026-11-22",
+    "by": "bot",
+    "fingerprint": "150ff023d865",
+    "host": "www.nps.gov",
+    "family": "nps",
+    "nps_code": "afam",
+    "moved": false,
+    "final_host": "www.nps.gov",
+    "dead_twice": false,
+    "requests": 2
+   },
+   "own_page": {
+    "is": "own",
+    "why": "official host; only this park of the area lists the page",
+    "shared_with": [],
+    "host": "www.nps.gov"
+   },
+   "name": {
+    "title": "African American Civil War Memorial",
+    "heading": "Explore This Park",
+    "best": null,
+    "vs_pota": "differs",
+    "quote": "African American Civil War Memorial"
+   },
+   "designation": {
+    "words": [],
+    "combined": false,
+    "parts": [],
+    "pota_numbers_part": null,
+    "vs_pota_type": null
+   },
+   "inside_of": [],
+   "maybe_inside": [],
+   "contains": [],
+   "sizes": [],
+   "location": {
+    "coords": [
+     {
+      "lat": 38.873781,
+      "lon": -77.024403,
+      "from": "address (US Census lookup)",
+      "role": "unknown",
+      "label": "",
+      "km_from_pin": 4.75,
+      "address": "1100 Ohio Drive SW Washington, DC 20242"
+     }
+    ],
+    "dropped_points": 0,
+    "addresses": [
+     {
+      "text": "1100 Ohio Drive SW Washington, DC 20242 Phone: 202 426-6841",
+      "role": "unknown",
+      "why": "a street and a ZIP, with no office or park word"
+     },
+     {
+      "text": "1100 Ohio Drive SW Washington, DC 20242",
+      "role": "unknown",
+      "why": "a street and a ZIP, with no office or park word"
+     }
+    ],
+    "directions": null,
+    "state_words": [
+     "Pennsylvania",
+     "Ohio",
+     "Washington"
+    ]
+   },
+   "maps": [
+    {
+     "url": "https://www.nps.gov/afam/planyourvisit/maps.htm",
+     "text": "Maps",
+     "kind": "web-map",
+     "score": 2,
+     "via": "the agency site",
+     "names_park": false,
+     "names_unit": "",
+     "status": "not opened"
+    }
+   ],
+   "parts": [],
+   "manager": {
+    "agency": "National Park Service",
+    "office": "",
+    "quote": ""
+   },
+   "status_words": {
+    "closed": null,
+    "handover": null,
+    "renamed": null
+   },
+   "unofficial": false,
+   "confirm": {
+    "agency_id": null,
+    "size": null,
+    "manager": {
+     "agency": "National Park Service",
+     "from": "the agency's own web host",
+     "quote": ""
+    },
+    "address": {
+     "text": "1100 Ohio Drive SW Washington, DC 20242 Phone: 202 426-6841",
+     "role": "unknown"
+    },
+    "coords": null,
+    "map_link": null
+   },
+   "questions": [
+    {
+     "code": "NAME_DIFFERS",
+     "for": "reviewer",
+     "plain": "POTA: 'African American Civil War National Memorial'. Page: 'Explore This Park'.",
+     "quote": "African American Civil War Memorial"
+    }
+   ],
+   "evidence_draft": null,
+   "evidence_drafts": [],
+   "location_pulled": "2026-11-22",
+   "from_pc_upload": "2026-11-22"
+  },
+  "US-7892": {
+   "ref": "US-7892",
+   "area": "US-DC",
+   "reader": "v1",
+   "pota": {
+    "name": "Belmont-Paul Women's Equality National Monument",
+    "type": "National Monument",
+    "pin": [
+     38.8923,
+     -77.0037
+    ],
+    "link": "https://www.nps.gov/bepa/index.htm",
+    "qsos": 591
+   },
+   "asked": {
+    "url": "https://www.nps.gov/bepa/index.htm",
+    "from": "pota",
+    "others_noted": 0
+   },
+   "page": {
+    "final_url": "https://www.nps.gov/bepa/index.htm",
+    "status": 200,
+    "kind": "html",
+    "read": "2026-11-22",
+    "by": "bot",
+    "fingerprint": "7be31724477d",
+    "host": "www.nps.gov",
+    "family": "nps",
+    "nps_code": "bepa",
+    "moved": false,
+    "final_host": "www.nps.gov",
+    "dead_twice": false,
+    "requests": 2
+   },
+   "own_page": {
+    "is": "own",
+    "why": "official host; only this park of the area lists the page",
+    "shared_with": [],
+    "host": "www.nps.gov"
+   },
+   "name": {
+    "title": "Belmont-Paul Women's Equality National Monument",
+    "heading": "Explore This Park",
+    "best": null,
+    "vs_pota": "differs",
+    "quote": "Belmont-Paul Women's Equality National Monument"
+   },
+   "designation": {
+    "words": [],
+    "combined": false,
+    "parts": [],
+    "pota_numbers_part": null,
+    "vs_pota_type": null
+   },
+   "inside_of": [],
+   "maybe_inside": [],
+   "contains": [],
+   "sizes": [],
+   "location": {
+    "coords": [
+     {
+      "lat": 38.873781,
+      "lon": -77.024403,
+      "from": "address (US Census lookup)",
+      "role": "unknown",
+      "label": "",
+      "km_from_pin": 2.73,
+      "address": "1100 Ohio Drive SW Washington, DC 20242"
+     }
+    ],
+    "dropped_points": 0,
+    "addresses": [
+     {
+      "text": "1100 Ohio Drive SW Washington, DC 20242 Phone: 202-441-7572 This phone is monitored when the monument is open.",
+      "role": "unknown",
+      "why": "a street and a ZIP, with no office or park word"
+     },
+     {
+      "text": "1100 Ohio Drive SW Washington, DC 20242",
+      "role": "unknown",
+      "why": "a street and a ZIP, with no office or park word"
+     }
+    ],
+    "directions": null,
+    "state_words": [
+     "Washington",
+     "Ohio"
+    ]
+   },
+   "maps": [
+    {
+     "url": "https://www.nps.gov/bepa/planyourvisit/maps.htm",
+     "text": "Maps",
+     "kind": "web-map",
+     "score": 2,
+     "via": "the agency site",
+     "names_park": false,
+     "names_unit": "",
+     "status": "not opened"
+    }
+   ],
+   "parts": [],
+   "manager": {
+    "agency": "National Park Service",
+    "office": "",
+    "quote": ""
+   },
+   "status_words": {
+    "closed": null,
+    "handover": null,
+    "renamed": null
+   },
+   "unofficial": false,
+   "confirm": {
+    "agency_id": null,
+    "size": null,
+    "manager": {
+     "agency": "National Park Service",
+     "from": "the agency's own web host",
+     "quote": ""
+    },
+    "address": {
+     "text": "1100 Ohio Drive SW Washington, DC 20242 Phone: 202-441-7572 This phone is monitored when the monument is open.",
+     "role": "unknown"
+    },
+    "coords": null,
+    "map_link": null
+   },
+   "questions": [
+    {
+     "code": "NAME_DIFFERS",
+     "for": "reviewer",
+     "plain": "POTA: 'Belmont-Paul Women's Equality National Monument'. Page: 'Explore This Park'.",
+     "quote": "Belmont-Paul Women's Equality National Monument"
+    }
+   ],
+   "evidence_draft": null,
+   "evidence_drafts": [],
+   "location_pulled": "2026-11-22",
+   "from_pc_upload": "2026-11-22"
+  }
+ }
+}

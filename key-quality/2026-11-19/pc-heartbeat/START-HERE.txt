@@ -1,0 +1,15 @@
+KPC heartbeat (19 Nov 2026)
+
+What it is: every 20 minutes your PC looks at when the club's two watchdog bots last ran on GitHub.
+If one is overdue (GitHub skipped it, as on the morning of 19 Nov), the PC starts it once.
+The watchdog then restarts whatever timed bot was missed. It starts nothing else and changes nothing.
+
+Setup (2 minutes), with the PC on and gh logged in (the same login your PC helper uses):
+  1. Put this folder anywhere that stays put (for example next to your pc-runner folder).
+  2. Double-click 1-TEST-HEARTBEAT.bat   -> you should see one line naming KPC-Links and KPC-Data with minutes.
+  3. Double-click 2-HEARTBEAT-ON.bat     -> it is on. No window pops up; kpc-heartbeat.log gets one line per look.
+  To stop it: 3-HEARTBEAT-OFF.bat
+
+It only works while the PC is on and online. The watchdog bots never go red, so this sends you no emails.
+The look-and-decide part is tested; the three .bat files could not be tried on Windows from the chat,
+so if step 2 or 3 shows an error, send the text of it to a chat.

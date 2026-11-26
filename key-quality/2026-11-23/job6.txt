@@ -1,0 +1,23 @@
+KPC key quality, job 6: Maryland, the 11 parks whose outline is under a third of the agency's figure (counts only; no park named)
+Ran on: KPC-Links main a5168092 (US rules c6f3a95b1018), data/us-key/US-MD.json (built from the 3 Nov read); boundary-cache release US-MD.json.gz;
+KPC-Data data/park-facts.json.gz made 2026-11-23 (kpc_park_facts 10, commit a3b5d31802, pre-upload). Counter: kpc_match_checks_count.predict_state.
+Shape areas measured offline from the saved shapes (_r), same method as the builder's union (shapely 2.2, Python 3.12).
+
+Today Maryland has 14 parks sent to the check list by size: 11 with the outline under a third of the figure (this job), 3 over 3 times it (noted at the end).
+
+The agency figure, all 11: witness agency_document (the Maryland DNR land acreage report, park facts size.witness), unit acres. 8 are one number; 3 are a total of parts (2 to 4 numbers added). No figure is shared with another park (no "total for many parks"). No unit problem.
+How the outline's acres were measured, all 11: key 'ac' with no ac_how (the builder's union path), and in every one 'ac' equals the plain sum of the joined records' GIS_Acres.
+Layers in the outlines: all 11 join PAD-US records plus the Maryland DNR state layer sgmda (11 of 11); 9 of 11 also the mdd layer (the same DNR lands again, same record numbers).
+
+THE ANSWER
+- Outline missing land: 0.
+- Agency figure wrong: 0.
+- Outline is fine, its acres were MEASURED wrong: 10 of 11. The saved shapes of the joined records, unioned, give 0.86 to 1.07 times the agency figure (median 1.00): the land is there. The two DNR layers (mdd, sgmda) carry 0 acres on file, and the builder's guard "a union can never be bigger than its records' own acres added up" (kpc_us_key.py, the KPC_ONE_RECORD_ONE_PARK cap after the union) then cuts 'ac' down to the PAD-US slivers' acres (0.2% to 13% of the figure). So the size check compares the agency's true number with a wrong small 'ac' and drops the park to a pin.
+- Can't tell: 1 of 11. Its two joined records are the same 138-141 acres in two layers; the saved copies hold no other record of its name; the figure is about 3.3 times that. Either land is missing from every saved layer or the figure counts something else: a person (or the agency's own map) decides.
+
+How wide the same fault is (screen on all 50 states, saved keys): 85 parks in 21 states have 'ac' equal to the GIS_Acres sum while a joined record with 0 acres on file carries a shape more than twice that (MD 14, AR 11, WA 10, UT 8, MA 6, CO 5, SD 5, OK 4, the rest 1 to 3). Only Maryland's 10 trip the size check today; the others show too-small acres on the website.
+
+The other 3 Maryland size drops (outline over 3 times the figure), for the record: 2 are the same fault the other way (key 'ac' about 14 times the figure, while the joined records' own shapes union to 0.90 and 1.26 times it: the stored 'ac' does not fit the records joined now, likely left from records moved away later); 1 joins a PAD-US record of other land about 11 km away (key far_place note) besides its own small piece.
+
+RECOMMENDATION (no rule changed; the owner rules, the matching chat builds)
+The cap after the union should not count a record with no acres on file as 0: either skip the cap when any joined record has 0 or no GIS_Acres, or put that record's own measured shape area into the sum (the KPC_MEASURED_ACRES path already measures such records). Expected effect on today's saved keys: the 10 Maryland parks stop dropping to a pin by size (they would confirm by size instead, ratio 0.86 to 1.07); the other 75 parks get true acres. It moves only 'ac', a builder value, so it is a key-rule change (US hash moves): rule sheet line, test, draft PR.

@@ -1,0 +1,88 @@
+KPC key quality, job 4: the PLACE rows on the check list, split (counts only; no park named)
+Ran on: KPC-Links main a5168092 (US rules c6f3a95b1018) website keys data/us-key; boundary-cache release US-XX.json.gz (50 states);
+KPC-Data data/park-facts.json.gz made 2026-11-23 (kpc_park_facts 10, commit a3b5d31802, the pre-upload one); counter kpc_match_checks_count.predict_state, rows read from its own output.
+
+SUMMARY
+- One place test sends every place row: "POTA's pin is in another of the park's records" (pin 3c). The county test (W6) and the parent-unit test send none today.
+- Cause 1: one Wisconsin park, 442 rows (25%): its POTA name covers two units, and pin 3c does not see that the record's name is one part of the park's own name.
+- Cause 2: pieces of the same park under a slightly different label (other spelling or kind word, a "- X Unit" / county suffix): about 620 rows in about 210 parks. The other 737 rows are mixed: mostly other places carrying the park's name (a road, river, pond, resort), some still pieces of the same park. 329 of the 540 parks are already confirmed another way.
+RECOMMENDATION (no rule changed): pin 3c could leave a record alone when its bare name is one part of the park's own POTA name, or the park's name plus a unit / county / section suffix: on today's keys that is up to about 1,060 of the 1,798 rows (cause 1 + cause 2; the name groups are my reading, so a count with the real rule comes first).
+
+All check rows today: 6679. Place: 540 parks, 1798 rows (the 22 Nov note said 538 / about 1,900).
+
+1. Which place test sent each row: ONE test sends all of them.
+   pin 3c ("POTA's pin is in another of the park's records, none of this record's name"): 540 parks, 1798 rows, 329 of the parks confirmed another way.
+   P5 parent unit (the page says the park lies inside a bigger unit): 0 rows (53 parks carry a parent unit in the park facts; none hit).
+   W6 county: 0 rows, because the park facts carry NO county_areas yet (0 of 18,951 parks); it can only fire after the upload.
+   "Pin outside the joined land" and "far from the pin" do not send rows to the check list in kpc_match_checks.py; they only stop a link confirm.
+
+2. The parks, by how they end: confirmed by link 294, outlined by None 206, confirmed by id 17, confirmed by page name 10, confirmed by size 8, pin by None 5
+
+3. Concentration: the top 1 park holds 442 rows; top 23 parks hold 868 rows (48%); 428 parks have 1 or 2 rows.
+
+4. How far the dropped record lies from POTA's pin (nearest edge):
+   under 0.5 km: 313 rows, 202 parks
+   0.5-2 km: 273 rows, 157 parks
+   2-10 km: 767 rows, 199 parks
+   10-50 km: 390 rows, 80 parks
+   over 50 km: 55 rows, 7 parks
+   same layer as the record that holds the pin: 1338 rows; another layer: 460
+
+5. The dropped record's name against the park's name (my reading by a name rule, approximate):
+   A park name holds the record name: 530 rows, 48 parks, 23 confirmed another way
+   B same name, other spelling/kind word: 320 rows, 139 parks, 92 confirmed another way
+   C same name + county/unit suffix: 299 rows, 72 parks, 42 confirmed another way
+   D park name + another word (road, pond, river, resort, preserve...): 456 rows, 264 parks, 172 confirmed another way
+   E some words shared: 172 rows, 44 parks, 18 confirmed another way
+   F no name words shared: 21 rows, 10 parks, 3 confirmed another way
+
+6. Table: state x name group (parks / rows / parks confirmed another way). Every row is test pin 3c.
+state | A | B | C | D | E | F | total
+WI | 1/442/1 | - | 2/61/0 | - | - | - | 3/503/1
+MA | 2/3/2 | 11/42/11 | - | 32/40/32 | 9/101/9 | - | 50/186/50
+IA | 2/5/0 | 8/20/5 | 12/64/6 | 8/21/2 | 2/2/1 | - | 28/112/12
+OR | 6/10/0 | 3/23/1 | - | 14/43/1 | 6/23/0 | - | 27/99/2
+FL | 6/16/6 | 8/37/8 | 4/23/4 | 5/5/5 | 2/6/2 | 1/11/1 | 26/98/26
+CO | 1/2/1 | 4/4/2 | 5/43/3 | 7/25/7 | 2/4/1 | - | 17/78/14
+MN | - | 7/19/0 | - | 7/35/0 | - | - | 13/54/0
+NC | 1/1/0 | - | - | 37/46/26 | 1/2/1 | - | 39/49/27
+CT | 2/6/2 | 3/8/3 | 3/4/3 | 7/22/5 | - | 1/1/1 | 13/41/11
+MO | 1/1/1 | 5/5/5 | 1/3/1 | 20/31/20 | 1/1/1 | - | 26/41/26
+CA | 1/1/1 | 5/6/1 | 3/3/0 | 26/28/6 | - | - | 35/38/8
+TX | - | 6/7/5 | 7/22/5 | 4/9/3 | - | - | 13/38/10
+WA | 1/1/1 | 7/8/6 | - | 15/23/13 | - | - | 22/32/20
+ME | 1/1/0 | 4/21/0 | 2/6/0 | 1/1/1 | - | 2/2/0 | 9/31/1
+AL | 1/1/0 | - | 8/22/7 | - | 3/5/0 | - | 11/28/7
+NH | 2/6/1 | 1/21/1 | - | - | - | - | 3/27/2
+SC | 1/3/1 | 3/4/0 | 1/1/0 | 5/14/3 | 1/2/1 | 1/1/0 | 11/25/4
+TN | 2/2/2 | 6/12/5 | 3/4/3 | 4/6/4 | - | - | 13/24/12
+NY | - | 4/4/0 | 2/12/1 | 5/7/0 | - | 1/1/0 | 11/24/1
+IN | - | 1/1/0 | 6/9/1 | 7/7/2 | 2/5/0 | 1/1/0 | 17/23/3
+KS | - | 8/19/8 | - | 1/1/1 | 1/1/1 | - | 9/21/9
+OH | - | 11/14/10 | - | 3/3/3 | - | 2/3/1 | 14/20/13
+NV | 2/2/0 | 1/7/1 | - | 2/10/2 | - | - | 4/19/2
+ID | 1/5/0 | 1/1/0 | - | 2/3/0 | 7/7/0 | - | 11/16/0
+MI | - | 5/6/0 | - | 5/8/0 | 1/1/0 | 1/1/0 | 11/16/0
+RI | - | 2/3/1 | 6/8/1 | 2/3/1 | - | - | 8/14/3
+MD | 1/1/1 | 1/2/1 | 1/1/1 | 5/8/5 | - | - | 8/12/8
+PA | 6/6/0 | - | 1/3/1 | 2/2/2 | - | - | 9/11/3
+GA | - | 3/4/3 | 2/7/2 | - | - | - | 5/11/5
+DE | 1/3/1 | 2/3/0 | - | 2/3/1 | 1/2/0 | - | 6/11/2
+MS | - | - | 2/2/2 | 1/9/0 | - | - | 3/11/2
+UT | 1/3/0 | - | - | 2/2/1 | 3/5/0 | - | 6/10/1
+WY | - | 2/2/2 | - | 3/3/3 | 1/4/0 | - | 6/9/5
+IL | 1/1/1 | - | - | 6/7/6 | - | - | 7/8/7
+NJ | 1/1/0 | 1/1/1 | - | 5/6/1 | - | - | 7/8/2
+SD | - | 1/1/1 | - | 6/6/5 | - | - | 7/7/6
+MT | 1/2/1 | - | - | 2/4/0 | 1/1/1 | - | 4/7/2
+OK | - | 2/2/2 | 1/1/1 | 4/4/4 | - | - | 6/7/6
+AR | - | 6/6/4 | - | - | - | - | 6/6/4
+NM | 1/4/0 | 1/1/1 | - | - | - | - | 2/5/1
+HI | - | 3/3/2 | - | 1/1/1 | - | - | 4/4/3
+VA | - | 1/1/0 | - | 1/3/1 | - | - | 2/4/1
+AK | - | - | - | 2/4/2 | - | - | 2/4/2
+AZ | - | - | - | 2/2/2 | - | - | 2/2/2
+ND | - | 1/1/1 | - | - | - | - | 1/1/1
+LA | - | - | - | 1/1/1 | - | - | 1/1/1
+VT | - | 1/1/1 | - | - | - | - | 1/1/1
+NE | 1/1/0 | - | - | - | - | - | 1/1/0

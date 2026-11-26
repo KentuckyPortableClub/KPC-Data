@@ -1,0 +1,18 @@
+#278 at 299d354: its own preserve_apart() (cut from the branch file, as its test does) run on the REAL saved shapes (boundary-cache),
+the REAL joined rows of run 44528656941 (rules 7c6e01e1bc2b = the PR's base) and POTA's REAL pins. Applied to the finished rows, so a
+mid-build case that ends as before (Colorado's Great Sand Dunes pair) does not show here: the measure run's notices show it.
+AK: Park Service records 23, named Preserve 10 | moved 3: US-0026 Gates of the Arctic National Preserve (3301), US-0044 Katmai National Preserve (3304), US-0048 Lake Clark National Preserve (3305) | kept as a person's question: US-0069 Wrangell-St. Elias National Preserve (3314)
+AL: Park Service records 11, named Preserve 1 | moved 0 | kept 0
+CA: Park Service records 26, named Preserve 1 | moved 0 | kept 0
+CO: Park Service records 14, named Preserve 1 | moved 0 | kept 0
+FL: Park Service records 14, named Preserve 3 | moved 0 | kept 0
+ID: Park Service records 7, named Preserve 1 | moved 0 | kept as a person's question: US-0665 Craters of the Moon National Preserve (3299)
+KS: Park Service records 5, named Preserve 1 | moved 0 | kept 0
+LA: Park Service records 3, named Preserve 1 | moved 0 | kept 0
+NM: Park Service records 15, named Preserve 1 | moved 0 | kept 0
+NV: Park Service records 6, named Preserve 1 | moved 0 | kept 0
+OR: Park Service records 5, named Preserve 1 | moved 0 | kept 0
+TX: Park Service records 13, named Preserve 1 | moved 0 | kept 0
+WV: Park Service records 6, named Preserve 1 | moved 0 | kept 0
+Rules hash on the branch: 90b7fc0a1d2c (main 7c6e01e1bc2b). kpc_preflight.check_hash_pair('us-key', '7c6e01e1bc2b', '90b7fc0a1d2c', changelog) = OK.
+Tests on the branch: test_r_pp1_park_preserve_nov19.py ALL PASS, test_nps_park_preserve_nov19.py ALL PASS, test_h8_nps_codes_nov17.py 12/12.

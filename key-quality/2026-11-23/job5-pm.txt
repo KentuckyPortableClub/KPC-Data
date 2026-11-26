@@ -1,0 +1,65 @@
+KPC key quality, job 5 (PM): pins outside the joined land, recounted (counts only; no park named)
+Ran on: KPC-Links main 119caa8d (website keys data/us-key; match pass = kpc_match_checks_count.predict_state with main's kpc_match_checks.py), boundary-cache release US-XX.json.gz,
+KPC-Data data/park-facts.json.gz at efd17011 (saved 23 Nov 12:31 PM CT; made 2026-11-23, kpc_park_facts 10). Tested = parks joined after the pass with POTA's pin and a saved shape; 'outside' = the pin is in none of the joined records' shapes.
+Method check: the same script on the morning park facts (a3b5d31802) gives 2,222 of 11,098 outside, as in the note; 1,173 confirmed (note 1,161, today's rules), 703 within 500 m (note 679).
+
+THE FIVE NUMBERS (morning note -> today)
+  pin outside the joined land: 2,222 of 11,098 -> 2,222 of 11,097
+  already confirmed another way: 1,161 -> 1,240 (link 854, id 171, page name 110, size 105)
+  not confirmed: 1,061 -> 982; of them within 500 m of the land (a gate or office pin): 679 -> 654
+  leftover: 382 -> 328; over 2 km: 147 -> 133; over 10 km: 36 -> 36
+
+THE LEFTOVER BY OWN PAGE: own page, no point 187, no own page 82, own page with a point 59
+  of the ones with a page point: page point also off the land 56, page point inside the land 3
+  (all not-confirmed parks, 982: own page, no point 471, no own page 438, own page with a point 73)
+
+LEFTOVER BY STATE: parks | 0.5-2 km | 2-10 km | over 10 km | own page with a point / own page no point / no own page
+CO | 35 | 18 | 17 | 0 | 3 / 30 / 2
+NH | 27 | 20 | 2 | 5 | 1 / 1 / 25
+UT | 24 | 9 | 11 | 4 | 2 / 17 / 5
+WY | 20 | 7 | 6 | 7 | 3 / 13 / 4
+NV | 18 | 7 | 10 | 1 | 2 / 11 / 5
+CA | 14 | 10 | 3 | 1 | 1 / 7 / 6
+NC | 13 | 11 | 2 | 0 | 1 / 10 / 2
+OK | 11 | 5 | 4 | 2 | 5 / 6 / 0
+MO | 10 | 10 | 0 | 0 | 0 / 10 / 0
+TN | 9 | 7 | 2 | 0 | 0 / 9 / 0
+OR | 8 | 2 | 3 | 3 | 3 / 5 / 0
+AK | 7 | 4 | 2 | 1 | 4 / 2 / 1
+KS | 7 | 6 | 1 | 0 | 0 / 7 / 0
+MA | 7 | 4 | 1 | 2 | 6 / 1 / 0
+MN | 7 | 4 | 3 | 0 | 0 / 4 / 3
+ID | 6 | 3 | 3 | 0 | 1 / 3 / 2
+MT | 6 | 2 | 2 | 2 | 1 / 3 / 2
+TX | 6 | 5 | 0 | 1 | 0 / 0 / 6
+VT | 6 | 4 | 2 | 0 | 1 / 5 / 0
+WA | 6 | 5 | 1 | 0 | 3 / 2 / 1
+OH | 5 | 4 | 1 | 0 | 0 / 5 / 0
+VA | 5 | 3 | 2 | 0 | 1 / 3 / 1
+AR | 4 | 4 | 0 | 0 | 2 / 0 / 2
+IL | 4 | 1 | 1 | 2 | 4 / 0 / 0
+ME | 4 | 1 | 3 | 0 | 1 / 2 / 1
+MS | 4 | 4 | 0 | 0 | 0 / 3 / 1
+NY | 4 | 3 | 1 | 0 | 1 / 2 / 1
+WV | 4 | 1 | 2 | 1 | 0 / 2 / 2
+AL | 3 | 1 | 2 | 0 | 1 / 1 / 1
+AZ | 3 | 2 | 1 | 0 | 0 / 3 / 0
+CT | 3 | 1 | 1 | 1 | 2 / 0 / 1
+MI | 3 | 3 | 0 | 0 | 0 / 2 / 1
+PA | 3 | 3 | 0 | 0 | 0 / 2 / 1
+RI | 3 | 3 | 0 | 0 | 0 / 2 / 1
+WI | 3 | 1 | 2 | 0 | 3 / 0 / 0
+DE | 2 | 2 | 0 | 0 | 0 / 2 / 0
+FL | 2 | 1 | 1 | 0 | 1 / 1 / 0
+HI | 2 | 2 | 0 | 0 | 0 / 2 / 0
+IA | 2 | 1 | 0 | 1 | 1 / 0 / 1
+IN | 2 | 2 | 0 | 0 | 1 / 1 / 0
+MD | 2 | 1 | 1 | 0 | 2 / 0 / 0
+ND | 2 | 1 | 0 | 1 | 0 / 1 / 1
+NE | 2 | 1 | 1 | 0 | 0 / 1 / 1
+NJ | 2 | 1 | 0 | 1 | 1 / 1 / 0
+NM | 2 | 2 | 0 | 0 | 0 / 2 / 0
+SC | 2 | 2 | 0 | 0 | 0 / 1 / 1
+SD | 2 | 0 | 2 | 0 | 0 / 1 / 1
+DC | 1 | 0 | 1 | 0 | 0 / 1 / 0
+LA | 1 | 1 | 0 | 0 | 1 / 0 / 0

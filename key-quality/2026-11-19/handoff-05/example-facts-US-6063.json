@@ -1,0 +1,165 @@
+{
+ "about": "Worked example: the facts the reader should store for US-6063 from fixtures/blm-red-cliffs-recreation-area.page.txt (the page text the owner saved) plus the map address he pasted. Field names are the contract; change one only with a note in your pull request. Where the saved TEXT cannot show a thing the live page would (the heading tag, the links), the value is marked so.",
+ "ref": "US-6063",
+ "area": "US-UT",
+ "reader": "v1",
+ "pota": {
+  "name": "Red Cliffs BLM Recreation Management Area",
+  "type": "BLM Recreation Management Area",
+  "pin": [
+   37.224,
+   -113.405
+  ],
+  "link": "https://www.blm.gov/visit/red-cliffs-recreation-area",
+  "qsos": 2540
+ },
+ "asked": {
+  "url": "https://www.blm.gov/visit/red-cliffs-recreation-area",
+  "from": "pota",
+  "others_noted": 0
+ },
+ "page": {
+  "final_url": "https://www.blm.gov/visit/red-cliffs-recreation-area",
+  "status": 200,
+  "kind": "html",
+  "read": "2026-11-19",
+  "by": "bot",
+  "fingerprint": "<12 hex>",
+  "host": "www.blm.gov",
+  "family": "blm"
+ },
+ "own_page": {
+  "is": "own",
+  "why": "official host (blm.gov); only this park of the area lists the page; the heading names the park"
+ },
+ "name": {
+  "title": "Red Cliffs Recreation Area | Utah",
+  "heading": "Red Cliffs Recreation Area",
+  "best": "Red Cliffs Recreation Area",
+  "vs_pota": "same-core",
+  "quote": "Red Cliffs Recreation Area | Utah",
+  "note": "POTA writes the agency's letters into many names ('BLM', 'WMA', 'NWR'). Strip those letters and the kind words before comparing, or every BLM park reads as 'differs'. Test it."
+ },
+ "designation": {
+  "words": [
+   "Recreation Area"
+  ],
+  "combined": false,
+  "parts": [],
+  "pota_numbers_part": null,
+  "vs_pota_type": "shares a word (Recreation ... Area)"
+ },
+ "inside_of": [
+  {
+   "unit": "Red Cliffs National Conservation Area",
+   "kind": "National Conservation Area",
+   "pota_ref": "US-6077",
+   "quote": "This welcomed oasis within the Red Cliffs National Conservation Area protects critical habitats for the threatened Mojave Desert tortoise"
+  }
+ ],
+ "maybe_inside": [],
+ "contains": [],
+ "sizes": [],
+ "location": {
+  "coords": [
+   {
+    "lat": 37.224,
+    "lon": -113.405,
+    "from": "map-link marker",
+    "label": "Red Cliffs Recreation Area",
+    "role": "park",
+    "km_from_pin": 0.0,
+    "source": "https://experience.arcgis.com/experience/bde784e367c3495fa76e3d071720182b#... (the page's \"View Map In Full Screen\" link; read from the address, not opened)"
+   },
+   {
+    "lat": 37.22345,
+    "lon": -113.40432,
+    "from": "map-link center (Web Mercator)",
+    "role": "unknown",
+    "km_from_pin": 0.08
+   }
+  ],
+  "dropped_points": 0,
+  "addresses": [
+   {
+    "text": "St. George Field Office, 4001 East Aviator Dr., St. George, Utah 84790",
+    "role": "office",
+    "why": "under 'Addresses'; names a Field Office; 'This site is managed by St George Field Office'"
+   }
+  ],
+  "directions": {
+   "sent": "Access note: To enter the Red Cliffs Recreation Area, vehicle and trailer height and width is restricted to 11 feet 9 inches to pass through two narrow underpasses beneath the I-15 freeway. ... From I-15 northbound, take exit 22 for UT-228 north toward Leeds, then turn right onto Old Highway 91.",
+   "roads": [
+    "I-15",
+    "exit 22",
+    "UT-228",
+    "Old Highway 91",
+    "West Red Cliffs Campground Road",
+    "exit 23",
+    "Silver Reef Road",
+    "Main Street"
+   ],
+   "towns": [
+    "Saint George",
+    "Leeds",
+    "Cedar City"
+   ]
+  },
+  "state_words": [
+   "Utah"
+  ]
+ },
+ "maps": [
+  {
+   "url": "https://www.blm.gov/sites/blm.gov/files/documents/files/UT_RedCliffs_NCA.pdf",
+   "text": "External Map",
+   "kind": "pdf",
+   "names_park": false,
+   "names_unit": "Red Cliffs National Conservation Area (file name)",
+   "status": "not opened",
+   "note": "a map of the bigger unit, not of this park: listed for the PDF finder under US-6077, not US-6063"
+  },
+  {
+   "url": "https://experience.arcgis.com/experience/bde784e367c3495fa76e3d071720182b#...",
+   "text": "View Map In Full Screen",
+   "kind": "web-map",
+   "names_park": true,
+   "status": "not opened (script-built app)"
+  }
+ ],
+ "parts": [],
+ "manager": {
+  "agency": "Bureau of Land Management",
+  "office": "St. George Field Office",
+  "quote": "This site is managed by St George Field Office; visit their page for office hours and directions."
+ },
+ "status_words": {
+  "closed": null,
+  "handover": null,
+  "renamed": null
+ },
+ "questions": [
+  {
+   "code": "INSIDE_BIGGER_UNIT",
+   "for": "reviewer",
+   "plain": "The page says this place is within 'Red Cliffs National Conservation Area' (POTA US-6077).",
+   "quote": "This welcomed oasis within the Red Cliffs National Conservation Area protects critical habitats"
+  },
+  {
+   "code": "OFFICE_ADDRESS_ONLY",
+   "for": "information",
+   "plain": "The only address on the page is the St. George Field Office, not the park.",
+   "quote": "St. George Field Office 4001 East Aviator Dr."
+  }
+ ],
+ "evidence_draft": {
+  "ref": "US-6063",
+  "who": "bot: park page reader v1",
+  "source": "https://www.blm.gov/visit/red-cliffs-recreation-area",
+  "saw": "Red Cliffs Recreation Area | Utah ... This welcomed oasis within the Red Cliffs National Conservation Area",
+  "date": "2026-11-19",
+  "question": "INSIDE_BIGGER_UNIT",
+  "draft": true
+ },
+ "what_the_club_did_with_this_by_hand_today": "The owner read this page and ruled US-6063 is the small recreation area, not the 61,251-acre management area around it. The reader would have put that sentence in front of the reviewer before the key guessed."
+}
