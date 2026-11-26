@@ -432,9 +432,8 @@ Bots append one line per batch: "grade me" = a passed self-gate + a 10-12 record
 - FROM BOT closures super-bot (2026-11-23): FAILED its gate: US-KY — 17 of 26 of Kentucky's own reader's items found here on the same park (65%); 52 only here · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45149365586)
 - FROM BOT closures super-bot (2026-11-24): FAILED its gate: US-KY — 17 of 26 of Kentucky's own reader's items found here on the same park (65%); 52 only here · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45302965728)
 - FROM BOT closures super-bot (2026-11-25): FAILED its gate: US-KY — 17 of 26 of Kentucky's own reader's items found here on the same park (65%); 52 only here · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45594586538)
-- FROM WAITING ROOM (held since 2026-11-20, 5 days): acres data/acres.json held: 1 rows without acres or a source (e.g. US-4564)
-- FROM WAITING ROOM (held since 2026-11-08, 17 days): trails data/trails/US-13626.json held: F-T3 length 16 -> 114 km (outside -25% / +50%)
-- FROM WAITING ROOM (held since 2026-11-10, 15 days): truth data/truth/US-UT.json held: F-R2 6 OFF rows share the size 2,200,000.0 ac
-- FROM WAITING ROOM (held since 2026-11-10, 15 days): truth data/truth/US-WA.json held: F-R2 5 OFF rows share the size 564.0 ac · F-R3 69 of 115 sized parks are OFF (over half: a reading problem?)
-- FROM WAITING ROOM HEALTH (2026-11-25): RED: 11 files waiting over 3 days in data/waiting/in/ (e.g. US-WV.json)
 - FROM BOT closures super-bot (2026-11-25): FAILED its gate: US-KY — 17 of 26 of Kentucky's own reader's items found here on the same park (65%); 53 only here · [run](https://github.com/KentuckyPortableClub/KPC-Data/actions/runs/45715398944)
+- FROM WAITING ROOM (held since 2026-11-20, 6 days): acres data/acres.json held: 1 rows without acres or a source (e.g. US-4564)
+- FROM WAITING ROOM (held since 2026-11-08, 18 days): trails data/trails/US-13626.json held: F-T3 length 16 -> 114 km (outside -25% / +50%)
+- FROM WAITING ROOM (held since 2026-11-10, 16 days): truth data/truth/US-UT.json held: F-R2 6 OFF rows share the size 2,200,000.0 ac
+- FROM WAITING ROOM (held since 2026-11-10, 16 days): truth data/truth/US-WA.json held: F-R2 5 OFF rows share the size 564.0 ac · F-R3 69 of 115 sized parks are OFF (over half: a reading problem?)
