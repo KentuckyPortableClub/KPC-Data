@@ -10548,7 +10548,7 @@
    "status": "open",
    "url": "https://utility.arcgis.com/usrsvcs/servers/4787d99dcb1f4728b33f89a9eb9ae03e/rest/services/OpenData/SouthDakota_ParksAndRecreationAreas/FeatureServer/0",
    "who": "person",
-   "why": "KPC park-info engine: robots.txt answered with a web page, not a robots file (the answer came from another site (https://www.arcgis.com/index.html): not read as \"no rules\"): not read as \"no rules\""
+   "why": "KPC park-info engine: robots.txt has a Disallow line for this address"
   },
   {
    "added": "2026-11-18",
@@ -11631,6 +11631,24 @@
    "why": "KPC park-info engine: services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included) (services1.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included): a person downloads it in a browser)"
   },
   {
+   "added": "2026-11-26",
+   "area": "",
+   "check": "",
+   "expected": null,
+   "have": null,
+   "host": "services2.arcgis.com",
+   "id": "|url:13d00c89104b",
+   "layer": "url:13d00c89104b",
+   "note": "",
+   "page": "https://hub.arcgis.com/search?q=Campgrounds%20OHV",
+   "source": "KPC park-info engine",
+   "src": "",
+   "status": "open",
+   "url": "https://services2.arcgis.com/AhxrK3F6WM8ECvDi/arcgis/rest/services/Campgrounds_OHV/FeatureServer/32",
+   "who": "person",
+   "why": "KPC park-info engine: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included) (services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included): a person downloads it in a browser)"
+  },
+  {
    "added": "2026-11-12",
    "area": "",
    "check": "",
@@ -11701,6 +11719,24 @@
    "url": "https://services.arcgis.com/mMUesHYPkXjaFGfS/arcgis/rest/services/Manitoba_Wildlife_Lands/FeatureServer/0",
    "who": "person",
    "why": "KPC park-info engine: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included) (services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included): a person downloads it in a browser)"
+  },
+  {
+   "added": "2026-11-26",
+   "area": "",
+   "check": "",
+   "expected": null,
+   "have": null,
+   "host": "services2.arcgis.com",
+   "id": "|url:173991b4dabf",
+   "layer": "url:173991b4dabf",
+   "note": "",
+   "page": "https://hub.arcgis.com/search?q=Trailheads%20Geodatabase",
+   "source": "KPC park-info engine",
+   "src": "",
+   "status": "open",
+   "url": "https://services2.arcgis.com/AhxrK3F6WM8ECvDi/arcgis/rest/services/Trailheads Geodatabase/FeatureServer/1",
+   "who": "person",
+   "why": "KPC park-info engine: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included) (services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included): a person downloads it in a browser)"
   },
   {
    "added": "2026-11-12",
@@ -12043,6 +12079,24 @@
    "url": "https://services3.arcgis.com/G9FKQ0xH9VagrUos/arcgis/rest/services/ND_Base_Amenity/FeatureServer/0",
    "who": "person",
    "why": "KPC park-info engine: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included) (services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included): a person downloads it in a browser)"
+  },
+  {
+   "added": "2026-11-26",
+   "area": "",
+   "check": "",
+   "expected": null,
+   "have": null,
+   "host": "services2.arcgis.com",
+   "id": "|url:2b3d83eea656",
+   "layer": "url:2b3d83eea656",
+   "note": "",
+   "page": "https://hub.arcgis.com/search?q=OHV%20Trailheads%20withUse",
+   "source": "KPC park-info engine",
+   "src": "",
+   "status": "open",
+   "url": "https://services2.arcgis.com/AhxrK3F6WM8ECvDi/arcgis/rest/services/OHV_Trailheads_withUse/FeatureServer/101",
+   "who": "person",
+   "why": "KPC park-info engine: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included) (services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included): a person downloads it in a browser)"
   },
   {
    "added": "2026-11-11",
@@ -12529,6 +12583,24 @@
    "url": "https://services3.arcgis.com/Jdnp1TjADvSDxMAX/arcgis/rest/services/PRDBASPublicView/FeatureServer/0",
    "who": "person",
    "why": "KPC park-info engine: services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included) (services3.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included): a person downloads it in a browser)"
+  },
+  {
+   "added": "2026-11-26",
+   "area": "",
+   "check": "",
+   "expected": null,
+   "have": null,
+   "host": "services2.arcgis.com",
+   "id": "|url:46f571585f39",
+   "layer": "url:46f571585f39",
+   "note": "",
+   "page": "https://hub.arcgis.com/search?q=ParkingPoints",
+   "source": "KPC park-info engine",
+   "src": "",
+   "status": "open",
+   "url": "https://services2.arcgis.com/AhxrK3F6WM8ECvDi/arcgis/rest/services/ParkingPoints/FeatureServer/0",
+   "who": "person",
+   "why": "KPC park-info engine: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included) (services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included): a person downloads it in a browser)"
   },
   {
    "added": "2026-11-12",
@@ -13485,6 +13557,24 @@
    "why": "KPC park-info engine: services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included) (services5.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included): a person downloads it in a browser)"
   },
   {
+   "added": "2026-11-26",
+   "area": "",
+   "check": "",
+   "expected": null,
+   "have": null,
+   "host": "services2.arcgis.com",
+   "id": "|url:79c327b2cea3",
+   "layer": "url:79c327b2cea3",
+   "note": "",
+   "page": "https://hub.arcgis.com/search?q=Trailheads%20Geodatabase",
+   "source": "KPC park-info engine",
+   "src": "",
+   "status": "open",
+   "url": "https://services2.arcgis.com/AhxrK3F6WM8ECvDi/arcgis/rest/services/Trailheads Geodatabase/FeatureServer/0",
+   "who": "person",
+   "why": "KPC park-info engine: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included) (services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included): a person downloads it in a browser)"
+  },
+  {
    "added": "2026-11-11",
    "area": "",
    "check": "",
@@ -13771,6 +13861,24 @@
    "url": "https://services6.arcgis.com/56eqCzQ5SZhBaDST/arcgis/rest/services/RegionalParksBoundaries_OpenData/FeatureServer/0",
    "who": "person",
    "why": "KPC park-info engine: services6.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included) (services6.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included): a person downloads it in a browser)"
+  },
+  {
+   "added": "2026-11-26",
+   "area": "",
+   "check": "",
+   "expected": null,
+   "have": null,
+   "host": "services2.arcgis.com",
+   "id": "|url:898344f30f56",
+   "layer": "url:898344f30f56",
+   "note": "",
+   "page": "https://hub.arcgis.com/search?q=Campgrounds",
+   "source": "KPC park-info engine",
+   "src": "",
+   "status": "open",
+   "url": "https://services2.arcgis.com/AhxrK3F6WM8ECvDi/arcgis/rest/services/Campgrounds/FeatureServer/0",
+   "who": "person",
+   "why": "KPC park-info engine: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included) (services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included): a person downloads it in a browser)"
   },
   {
    "added": "2026-11-11",
@@ -14439,6 +14547,24 @@
    "why": "KPC park-info engine: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included) (services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included): a person downloads it in a browser)"
   },
   {
+   "added": "2026-11-26",
+   "area": "",
+   "check": "",
+   "expected": null,
+   "have": null,
+   "host": "services2.arcgis.com",
+   "id": "|url:b03c1bc8f0e8",
+   "layer": "url:b03c1bc8f0e8",
+   "note": "",
+   "page": "https://hub.arcgis.com/search?q=Trailheads%20Geodatabase",
+   "source": "KPC park-info engine",
+   "src": "",
+   "status": "open",
+   "url": "https://services2.arcgis.com/AhxrK3F6WM8ECvDi/arcgis/rest/services/Trailheads Geodatabase/FeatureServer/2",
+   "who": "person",
+   "why": "KPC park-info engine: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included) (services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included): a person downloads it in a browser)"
+  },
+  {
    "added": "2026-11-13",
    "area": "",
    "check": "",
@@ -14455,6 +14581,24 @@
    "url": "https://services.arcgis.com/b9DHj1BjfdLLFv11/arcgis/rest/services/FirstResponderParkingAreas/FeatureServer/0",
    "who": "person",
    "why": "KPC park-info engine: services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included) (services.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included): a person downloads it in a browser)"
+  },
+  {
+   "added": "2026-11-26",
+   "area": "",
+   "check": "",
+   "expected": null,
+   "have": null,
+   "host": "services2.arcgis.com",
+   "id": "|url:b13c2e97c99a",
+   "layer": "url:b13c2e97c99a",
+   "note": "",
+   "page": "https://hub.arcgis.com/search?q=ParkEntryPoints",
+   "source": "KPC park-info engine",
+   "src": "",
+   "status": "open",
+   "url": "https://services2.arcgis.com/AhxrK3F6WM8ECvDi/arcgis/rest/services/ParkEntryPoints/FeatureServer/2",
+   "who": "person",
+   "why": "KPC park-info engine: services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included) (services2.arcgis.com: services*.arcgis.com, saved copies only (no live read, robots.txt included): a person downloads it in a browser)"
   },
   {
    "added": "2026-11-12",
