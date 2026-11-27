@@ -41,6 +41,8 @@ JOB = 'KPC park page reader'
 GET_MAX_SECONDS = 90  # wall-clock cap on one download; a slow trickle cannot run past this
 SAVE_EVERY_SECONDS = 30         # 22 Nov: how often the facts and state are written during a walk (also on stop, error and end)
 KEEP_ON_SKIP = ('refused', 'resting', 'script-built')   # a read that says nothing new keeps the earlier facts (21 Nov)
+EMPTY_FP = R.fp_of('')   # 26 Nov 2026: the fingerprint of a page with no words ('e3b0c44298fc'): never 'read before'
+REFUSED_DAYS = 7   # 26 Nov 2026: a page that refused us is asked again after a week (the host rule still stops a host for a run)
 
 
 def load_json(path, default):
@@ -676,11 +678,12 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
         cache[key] = page
         return page
 
-    groups = {}
+    groups, chosen_all = {}, {}
     for area, parks in areas.items():
         if areas_only and area not in areas_only:
             continue
         chosen = {ref: choose_link(ref, row, web, docs)[0] for ref, row in parks.items()}
+        chosen_all[area] = chosen
         groups[area] = _shared_map(chosen)
         out.setdefault(area, {})
     if refs:
@@ -694,6 +697,41 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
     else:
         sequence = [(area, ref) for area, parks in areas.items()
                     if not (areas_only and area not in areas_only) for ref in parks]
+
+    def is_fresh(area, ref, url):
+        """26 Nov 2026 (owner 8:49 PM: 'webpage reader I think waste a lot of time going oh i read these 1000 pages before';
+        PC state: 3,806 'resting', 1,050 'refused', 101 PDF and 51 script-built reads saved with the fingerprint of an EMPTY
+        page, so each was passed over as 'read before' for the whole refresh window and never really read: BLM 897 parks,
+        NY DEC 567, Missouri 430, the Forest Service 268, NY state parks 194). Only a page that was really read (html or pdf with
+        words) counts as read; a resting or empty read is due on the next run; a refused page waits REFUSED_DAYS; a page that
+        builds itself waits only while the PC has no page browser (BROWSER=1)."""
+        prev = (state.get('read') or {}).get(ref) or {}
+        age = W.age_days(prev.get('date'), today) if prev.get('date') else None
+        kind, fp = prev.get('kind'), prev.get('fingerprint')
+        if not (url and fp and prev.get('url') == url and age is not None and has_old(area, ref)):
+            return False
+        if kind in ('html', 'pdf') and fp != EMPTY_FP: ok = age < refresh_days
+        elif kind == 'dead': ok = age < refresh_days
+        elif kind == 'refused': ok = age < REFUSED_DAYS
+        elif kind == 'script-built' and fp != EMPTY_FP: ok = age < refresh_days and os.environ.get('BROWSER') != '1'
+        else: ok = False   # resting, or nothing read: due now
+        if len((groups.get(area) or {}).get(norm_url(url), [ref])) >= 2 and prev.get('list_rule') != LIST_RULE:
+            ok = False   # 23 Nov: read before shared pages were followed to the park's own link
+        if reextract:
+            ok = False   # 23 Nov: reading the kept pages again with today's finders
+        if url and '?' in url and prev.get('key_rule') != URL_KEY_RULE:
+            ok = False   # 23 Nov 'q1': a numbered page read under the old address key was another park's page
+        return ok
+
+    # 26 Nov 2026: the parks that are due are read FIRST (never really read before them all), and a park read before is passed
+    # over without a line on the screen; the saved 'left' list stays sorted, so the read order is still never saved
+    _due = [not is_fresh(a, r, (chosen_all.get(a) or {}).get(r)) for a, r in sequence]
+    _never = sum(1 for (a, r), d in zip(sequence, _due) if d and (((state.get('read') or {}).get(r) or {}).get('fingerprint') or EMPTY_FP) == EMPTY_FP)
+    sequence = [x for x, d in zip(sequence, _due) if d] + [x for x, d in zip(sequence, _due) if not d]
+    _n_due, _bar_n, _bar_t0 = sum(_due), [0], time.time()
+    if not quiet:
+        print(f'{sum(_due):,} park(s) are due now ({_never:,} not read yet, or only an empty, resting or refused answer before); they are read '
+              f'first. {len(_due) - sum(_due):,} read before are passed over quietly.', flush=True)
 
     def stop(reason, index):
         if keeper is not None:
@@ -714,9 +752,7 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
             _write_progress(out_dir, out, state, state_path)
         return out, requests
 
-    _t0p = time.time()
     for index, (area, ref) in enumerate(sequence):
-        if index % 25 == 0: print(_kpc_bar(index, len(sequence), f'pages read ({area})', _t0p), flush=True)
         parks = areas[area]
         if max_parks is not None and done >= max_parks:
             return stop('parks', index)
@@ -724,19 +760,14 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
         cur['ref'] = ref
         url, src, others = choose_link(ref, row, web, docs)
         progress(area, done, 'reading')
-        if on_park:
-            on_park(done + 1, ref)
         # A page read inside the refresh window is not fetched again. The caller keeps the old fact.
         prev = (state.get('read') or {}).get(ref) or {}
-        age = W.age_days(prev.get('date'), today) if prev.get('date') else None
-        fresh = bool(url and prev.get('fingerprint') and prev.get('url') == url and age is not None and age < refresh_days
-                     and has_old(area, ref))
-        if len((groups.get(area) or {}).get(norm_url(url), [ref])) >= 2 and prev.get('list_rule') != LIST_RULE:
-            fresh = False   # 23 Nov: read before shared pages were followed to the park's own link
-        if reextract:
-            fresh = False   # 23 Nov: reading the kept pages again with today's finders
-        if url and '?' in url and prev.get('key_rule') != URL_KEY_RULE:
-            fresh = False   # 23 Nov 'q1': a numbered page read under the old address key was another park's page
+        fresh = is_fresh(area, ref, url)
+        if on_park and not fresh:
+            on_park(done + 1, ref)
+        if not fresh and not quiet:
+            _bar_n[0] += 1
+            if _bar_n[0] % 25 == 1: print(_kpc_bar(_bar_n[0] - 1, _n_due, f'due pages read ({area})', _bar_t0), flush=True)
         if fresh:
             out[area][ref] = {'ref': ref, 'unchanged': True, 'page': {'fingerprint': prev.get('fingerprint'),
                              'kind': prev.get('kind'), 'read': today, 'seen': today}, 'questions': []}
@@ -789,7 +820,8 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
             done += 1
             save_progress(index)
             continue
-        if (not reextract and prev.get('fingerprint') and prev.get('url') == url and prev.get('fingerprint') == main.get('fingerprint')
+        if (not reextract and prev.get('fingerprint') and prev.get('fingerprint') != EMPTY_FP and prev.get('url') == url
+                and prev.get('fingerprint') == main.get('fingerprint')
                 and has_old(area, ref)
                 and (len((groups.get(area) or {}).get(norm_url(url), [ref])) < 2 or prev.get('list_rule') == LIST_RULE)):
             # same text: keep the old facts, no new question
