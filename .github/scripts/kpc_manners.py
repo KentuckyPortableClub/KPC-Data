@@ -144,6 +144,16 @@ MAX_CRAWL_DELAY = 120   # a host asking for more than this waits for the slow pa
 # (KPC_SLOW_PASS=1, set by the buttons for that one step) obeys ANY Crawl-delay in full: there is no upper limit.
 if os.environ.get('KPC_SLOW_PASS') == '1':
     MAX_CRAWL_DELAY = float('inf')
+SAY_WAIT_OVER = 20   # 27 Nov 2026 (owner's PC: long silences): a wait longer than this many seconds is said on the screen first
+
+
+def _say_time(s):
+    """27 Nov 2026: '45 s', '8 min', '1 h 5 min' for the waiting line."""
+    s = int(round(s))
+    if s < 90:
+        return f'{s} s'
+    m = (s + 30) // 60
+    return f'{m} min' if m < 60 else f'{m // 60} h {m % 60} min'
 # Nov 3 (Super, answer-sheet task): ArcGIS Hub asks for Crawl-delay 60. Obeying it must not stall a nightly run, so:
 #  * KPC_MANNERS_CACHE=<dir> keeps plain 200 GET answers on disk (the workflow saves the dir with actions/cache). A cached answer
 #    younger than KPC_MANNERS_CACHE_DAYS (default 7) is returned with no request at all. By default only SLOW hosts (Crawl-delay of
@@ -162,7 +172,8 @@ SLOW_BUDGET = int(os.environ.get('KPC_SLOW_HOST_BUDGET') or 10)
 # than MAX_CRAWL_DELAY s between requests (also listed for a person). Callers use next_run(st).
 # Nov 3 re-cut (Quality A13): 'robots-unreadable' = robots.txt answered 5xx or could not be reached. That is NOT a Disallow
 # ('robots'): nothing is fetched this run, but the next run asks again. Nov 15 (club rule R-NET1): a robots.txt 401 / 403 / other 4xx is NOT a Disallow: it means no rules (allowed).
-NEXT_RUN = ('rest', 'stopped', 'deferred', 'crawl-delay', 'robots-unreadable')   # 26 Nov: 'stopped' = a host stopped for this run only
+NEXT_RUN = ('rest', 'stopped', 'deferred', 'crawl-delay', 'robots-unreadable', 'took-too-long')   # 26 Nov: 'stopped' = a host stopped for this run only
+# 27 Nov 2026: 'took-too-long' = the park's time limit was reached before this page could be asked: not this run, never blocked
 def next_run(st): return isinstance(st, str) and st in NEXT_RUN
 # Nov 3 addendum (Quality spot-check, 7:05 PM CST): the two robots statuses. 'robots' = robots.txt says no (a Disallow for this URL);
 # 'robots-unreadable' = robots.txt could not be read (A13, retried next run). A caller (or a grader) that
@@ -445,6 +456,9 @@ class Manners:
         self.dropped = []             # addendum: [(url without secrets, status)] queued requests dropped without any request
         self.for_person = []          # A2: [(url without secrets, why)] - every second 403 and every Crawl-delay skip, never only a count
         self.stat['for_person_urls'] = self.for_person   # saved with M.stat by the bots that keep it (detective, truth)
+        self.until = None             # 27 Nov 2026: unix time a page read may not wait past (the reader's per-park limit); None = no limit
+        self.paced_s = 0.0            # 27 Nov 2026: seconds waited so far for the sites' own pace (the slow pass does not count it against a park)
+        self.say = lambda line: print(line, flush=True)   # 27 Nov 2026: where a long wait is said; None = quiet
         self._rlk = threading.Lock()  # A12: one robots.txt read per host:port even with threads
         self._lk = threading.Lock()   # A12: pacing is thread-safe; the rest of the module is still meant for one thread per Manners
 
@@ -518,7 +532,11 @@ class Manners:
         """One robots.txt request. -> (status or None, body, headers, final url, error)."""
         self._pace(self.host(ru), 0.0)
         try:
-            with self._urlopen(urllib.request.Request(ru, headers={'User-Agent': self.ua}), 30) as r:
+            # 27 Nov 2026 (owner's PC: the reader went silent for good, twice at the same park): this request runs while
+            # robots_ok() holds self._rlk. If robots.txt redirected to another host, the redirect check called robots_ok()
+            # again and waited for that same lock forever. A robots.txt file is not a page, so its redirect hops skip the
+            # robots check (the host rules still apply to every hop); an off-site robots answer is judged by _load_robots.
+            with self._urlopen(urllib.request.Request(ru, headers={'User-Agent': self.ua}), 30, hop_robots=False) as r:
                 return r.status, r.read(ROBOTS_MAX + 1), {k.lower(): v for k, v in r.headers.items()}, r.geturl() or ru, None
         except urllib.error.HTTPError as e:
             return e.code, b'', {}, ru, None
@@ -596,13 +614,36 @@ class Manners:
         except Exception: d = None  # noqa: BLE001
         return float(d) if d else 0.0
 
-    def _pace(self, h, cd, strike=0):
-        """Wait until this host may be asked again: max(gap, Crawl-delay), doubled per strike (A5, A6, A12)."""
+    def _pace(self, h, cd, strike=0, may_skip=False):
+        """Wait until this host may be asked again: max(gap, Crawl-delay), doubled per strike (A5, A6, A12).
+        27 Nov 2026 (owner's PC: 12 and 17 minutes with nothing on the screen): a wait over SAY_WAIT_OVER seconds is said
+        first, in one plain line. may_skip=True (a page read): when self.until is set and the wait would run past it, the
+        host is NOT asked and nothing is waited (-> False); the caller leaves the page for later. The wait is never cut short.
+        In the slow pass (KPC_SLOW_PASS=1) every wait is obeyed in full, however long."""
         with self._lk:
             w = max(self.gap, cd) * (2 ** strike) - (time.time() - self.last.get(h, 0))
+            if (may_skip and w > 0 and self.until is not None and MAX_CRAWL_DELAY != float('inf')
+                    and time.time() + w > self.until):
+                return False
             self.last[h] = time.time() + max(0.0, w)
-        if w > 0: time.sleep(w)   # never cut a Crawl-delay short
+        if w > SAY_WAIT_OVER:
+            asks = f'the site asks for {max(self.gap, cd):g} s between requests' if cd > self.gap else 'our own pause between requests'
+            if strike:
+                asks += f', doubled {"once" if strike == 1 else f"{strike} times"} after failed tries'
+            self._say(f'Waiting {_say_time(w)} before asking {h} again: {asks}.')
+        if w > 0:
+            time.sleep(w)   # never cut a Crawl-delay short
+            self.paced_s += w
         self.stat['requests'] += 1
+        return True
+
+    def _say(self, line):
+        """27 Nov 2026: one plain line on the screen (the reader's window), so a long wait is never silent."""
+        if self.say:
+            try:
+                self.say('    ' + line)
+            except Exception:  # noqa: BLE001  (a closed screen never stops a read)
+                pass
 
     def _budget(self, h, slow):
         """A9: the slow-host budget counts REQUESTS (a 403 retry or a 5xx retry uses one more), not calls."""
@@ -694,10 +735,13 @@ class Manners:
         c.verify_flags &= ~getattr(ssl, 'VERIFY_X509_STRICT', 0)
         return c
 
-    def _urlopen(self, req, timeout):
+    def _urlopen(self, req, timeout, hop_robots=True):
         """urlopen with the redirect-hop robots check and the extra-strict-only TLS retry (the store engine's rule)."""
         h = self.host(req.full_url)
-        _HOP.manners = self
+        # 27 Nov 2026: the hop check that was on before is put back afterwards (it was set to None, so a robots.txt read in
+        # the middle of a page's redirects switched the check off for that page's later hops); hop_robots=False for robots.txt
+        before = getattr(_HOP, 'manners', None)
+        _HOP.manners = self if hop_robots else None
         try:
             try:
                 ctx = self._ctx(h)
@@ -712,7 +756,7 @@ class Manners:
                     return urllib.request.urlopen(req, timeout=timeout, context=self._ctx(h))
                 raise
         finally:
-            _HOP.manners = None
+            _HOP.manners = before
 
     def get(self, u, rng=None, timeout=40, head=False, accept='text/html,application/pdf,application/json,*/*;q=0.8',
              deadline=None, max_time=None):
@@ -761,17 +805,29 @@ class Manners:
         if cond:   # 26 Nov (doing less): the site's own ETag / Last-Modified from the last read; a 304 means "unchanged"
             if cond.get('etag'): hdr['If-None-Match'] = cond['etag']
             if cond.get('last-modified'): hdr['If-Modified-Since'] = cond['last-modified']
-        end = None
-        if max_time is not None:
-            end = time.time() + float(max_time)
-        if deadline is not None:
-            end = float(deadline) if end is None else min(end, float(deadline))
         for attempt in range(3):
-            if end is not None and time.time() >= end:
+            if deadline is not None and time.time() >= float(deadline):
                 return 'err:deadline', {}, b'', u
             if self.dead.get(h, 0) > time.time(): return 'stopped', {}, b'', u
             if not self._budget(h, slow): return 'deferred', {}, b'', u
-            self._pace(h, cd, self.strike.get(h, 0))
+            if not self._pace(h, cd, self.strike.get(h, 0), may_skip=True):
+                # 27 Nov 2026: the wait this site needs would run past the park's time limit. The site is not asked (its
+                # Crawl-delay is never cut short): a site that asks for a delay waits for the slow pass, any other one for
+                # the next run. Nothing is saved as blocked.
+                if slow: self.slow_used[h] = max(0, self.slow_used.get(h, 0) - 1)
+                if cd > self.gap:
+                    self.stat['crawl_delay_wait'] = self.stat.get('crawl_delay_wait', 0) + 1
+                    return 'crawl-delay', {}, b'', u
+                return 'took-too-long', {}, b'', u
+            # 27 Nov 2026: the download clock (max_time) starts AFTER the polite wait. It started before it, so a site asking
+            # more than max_time (90 s) between requests was waited for and then never asked (the slow pass read none of them).
+            end = None
+            if max_time is not None:
+                end = time.time() + float(max_time)
+            if deadline is not None:
+                end = float(deadline) if end is None else min(end, float(deadline))
+            if end is not None and time.time() >= end:
+                return 'err:deadline', {}, b'', u
             try:
                 sock_timeout = timeout if end is None else max(0.01, min(float(timeout), end - time.time()))
                 req = urllib.request.Request(u, headers=hdr, method='HEAD' if head else 'GET')
@@ -815,7 +871,13 @@ class Manners:
                     try: ra = int((e.headers or {}).get('Retry-After') or 0)
                     except Exception: ra = 0  # noqa: BLE001
                     if attempt == 2: return e.code, ehd, b'', u
-                    time.sleep(min(max(ra, 20 * (attempt + 1)), max(120, cd))); continue
+                    pause = min(max(ra, 20 * (attempt + 1)), max(120, cd))
+                    if self.until is not None and time.time() + pause > self.until:
+                        return e.code, ehd, b'', u   # 27 Nov 2026: no time left for this park: busy, asked again next run
+                    if pause > SAY_WAIT_OVER:
+                        self._say(f'Waiting {_say_time(pause)} before asking {h} again: it answered {e.code} (busy)'
+                                  + (' and asked us to wait.' if ra else '.'))
+                    time.sleep(pause); continue
                 if e.code == 416 and rng: return self.get(u, None, timeout, head, accept, deadline=deadline, max_time=max_time)
                 return e.code, ehd, b'', u
             except RobotsHopRefused as e:   # the redirect went to a host whose robots.txt says no, or that is busy / stopped
@@ -979,7 +1041,8 @@ def browser_html(u, M, timeout_ms=30000):
             _BROWSER['pw'] = sync_playwright().start()
             _BROWSER['b'] = _BROWSER['pw'].chromium.launch()
             _BROWSER['ctx'] = _BROWSER['b'].new_context(user_agent=M.ua)
-        M._pace(h, cd)
+        if not M._pace(h, cd, may_skip=True):
+            return ''   # 27 Nov 2026: the wait would run past the park's time limit: not asked now (never cut short)
         M.stat['browser'] = M.stat.get('browser', 0) + 1
         pg = _BROWSER['ctx'].new_page()
         try:

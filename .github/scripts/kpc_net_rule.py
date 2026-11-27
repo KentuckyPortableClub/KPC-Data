@@ -78,6 +78,7 @@ REASON_WORDS = dict(REASONS)
 _TEXT_STATUS = {
     'robots': 'disallow',
     'robots-unreadable': 'busy', 'rest': 'busy', 'err': 'busy', 'not-in-copy': 'busy',
+    'took-too-long': 'busy',   # 27 Nov 2026: the park's time limit was reached: not this run, tried again next run, never blocked
     'stopped': 'stopped', 'refused': 'stopped',
     'crawl-delay': 'slow', 'deferred': 'slow',
     'host-rule': 'club-rule',

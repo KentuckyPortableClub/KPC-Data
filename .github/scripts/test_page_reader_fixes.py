@@ -29,7 +29,9 @@ def web(pages):
 
 
 def ua_manners():
-    return KM.Manners('test reader')
+    M = KM.Manners('test reader')
+    M.say = None   # 27 Nov 2026: the waiting lines stay off the test screen (one line per test file)
+    return M
 
 
 ROBOTS_OK = (200, 'User-agent: *\nDisallow: /private\n', {'Content-Type': 'text/plain'})
@@ -631,6 +633,164 @@ def h_a_page_already_read_is_not_read_again_unless_asked():
                      refresh_days=P.NEVER_DAYS)
         assert len(w.asked('/p')) == n, 'months later, no new request (the default)'
         assert state['read']['US-1'].get('validators', {}).get('etag') == '"v1"'
+
+
+# ------------------------------------------------------------------------- I: never silent, never stuck (27 Nov 2026)
+class FakeClock:
+    """A made-up clock: time.time() is a number, and time.sleep() moves it on at once (nothing really waits)."""
+    def __init__(self, t=1_800_000_000.0):
+        self.t, self.sleeps = t, []
+
+    def sleep(self, s):
+        self.sleeps.append(s)
+        self.t += max(0.0, s)
+
+    def __enter__(self):
+        self._old = (time.time, time.sleep)
+        time.time, time.sleep = (lambda: self.t), self.sleep
+        return self
+
+    def __exit__(self, *a):
+        time.time, time.sleep = self._old
+
+
+@test
+def i_a_robots_txt_that_redirects_to_another_site_never_hangs():
+    """The owner's PC, 27 Nov: a robots.txt that redirected to another host waited forever on the robots lock."""
+    import threading, urllib.request
+
+    def robots_moved(req):
+        # what urllib does with a 301 for robots.txt: it asks the redirect check before following
+        urllib.request.HTTPRedirectHandler().redirect_request(req, None, 301, 'Moved', {}, 'https://www.moved.example/robots.txt')
+        return ROBOTS_OK
+    web({'https://moved.example/robots.txt': robots_moved, 'https://moved.example/a': (200, PAGE, {})})
+    M = ua_manners()
+    got = []
+    t = threading.Thread(target=lambda: got.append(M.get('https://moved.example/a')), daemon=True)
+    t.start()
+    t.join(5)
+    assert not t.is_alive(), 'the read is stuck (the robots lock waits on itself)'
+    assert got[0][0] == 200 and KM._HOP.manners is None
+    # a robots.txt read in the middle of a page's redirect puts the page's own hop check back afterwards
+    web({'https://two.example/robots.txt': ROBOTS_OK})
+    KM._HOP.manners = M
+    try:
+        urllib.request.HTTPRedirectHandler().redirect_request(urllib.request.Request('https://one.example/x'), None, 302, 'Found', {},
+                                                             'https://two.example/y')
+        assert KM._HOP.manners is M, 'the hop check is still on for the later hops'
+    finally:
+        KM._HOP.manners = None
+
+
+@test
+def i_a_long_wait_says_what_it_waits_for_first():
+    said = []
+    web({'https://cd.example/robots.txt': (200, 'User-agent: *\nCrawl-delay: 100\n', {}),
+         'https://cd.example/a': (200, PAGE, {}), 'https://cd.example/b': (200, PAGE, {}),
+         'https://busy.example/robots.txt': ROBOTS_OK, 'https://busy.example/c': (503, '', {'Retry-After': '60'})})
+    with FakeClock() as c:
+        M = ua_manners()
+        M.say = said.append
+        assert M.get('https://cd.example/a', max_time=90)[0] == 200
+        assert M.get('https://busy.example/c', max_time=90)[0] == 503
+    waits = [s for s in c.sleeps if s > KM.SAY_WAIT_OVER]
+    assert waits and len(said) == len(waits), (said, c.sleeps)
+    assert 'Waiting 2 min before asking cd.example again: the site asks for 100 s between requests.' in said[0], said
+    assert any('Waiting 60 s before asking busy.example again: it answered 503 (busy) and asked us to wait.' in x for x in said), said
+    assert not any(0 < s <= KM.SAY_WAIT_OVER for s in waits)
+
+
+@test
+def i_the_download_clock_starts_after_the_polite_wait():
+    """Before 27 Nov the 90 s download cap ran during the Crawl-delay wait: a site asking 300 s was waited for, then never asked."""
+    web({'https://slow.example/robots.txt': (200, 'User-agent: *\nCrawl-delay: 300\n', {}),
+         'https://slow.example/a': (200, PAGE, {}), 'https://slow.example/b': (200, PAGE, {})})
+    KM.MAX_CRAWL_DELAY, KM.SLOW_BUDGET = float('inf'), 5000   # what KPC_SLOW_PASS=1 sets
+    try:
+        with FakeClock() as c:
+            M = ua_manners()
+            assert M.get('https://slow.example/a', max_time=90)[0] == 200
+            assert M.get('https://slow.example/b', max_time=90)[0] == 200
+        assert sum(1 for s in c.sleeps if s >= 300) == 2, f'both 300 s waits obeyed in full ({c.sleeps})'
+    finally:
+        KM.MAX_CRAWL_DELAY, KM.SLOW_BUDGET = 120, 10
+
+
+@test
+def i_a_park_past_its_time_limit_is_noted_and_the_next_park_is_read():
+    import contextlib, io
+    clock = FakeClock()
+
+    def stuck_page(req):
+        clock.t += 400   # this one page takes 400 s
+        return (200, PAGE, {})
+    pages = {'https://hang.example/robots.txt': ROBOTS_OK, 'https://hang.example/a': stuck_page,
+             'https://ok.example/robots.txt': ROBOTS_OK, 'https://ok.example/b': (200, PAGE, {})}
+    parks = {'US-1': ('Rib Mountain State Park', 'https://hang.example/a', 'State Park'),
+             'US-2': ('Rib Mountain State Park', 'https://ok.example/b', 'State Park')}
+    w = web(pages)
+    screen = io.StringIO()
+    with tempfile.TemporaryDirectory() as td, clock, contextlib.redirect_stdout(screen):
+        t = pathlib.Path(td)
+        areas, wb, docs, truth = make_area(t / 'data', parks)
+        state = {}
+        facts, _ = P.read_parks(areas, wb, docs, truth, P.LiveGetter(state), state, '2026-11-27', refs=['US-1', 'US-2'],
+                                out_dir=str(t / 'out'))
+        disallow = P.write_disallow_list(t / 'out')
+    f1, f2 = facts['US-ZZ']['US-1'], facts['US-ZZ']['US-2']
+    nr = f1['page'].get('not_read') or {}
+    assert nr.get('reason') == 'busy' and 'not this run (took too long: hang.example)' in nr.get('why', ''), f1['page']
+    assert 'Park US-1: not this run (took too long: hang.example). It is tried again next run.' in screen.getvalue()
+    assert f2['page']['kind'] == 'html' and len(w.asked('/b')) == 1, 'the next park is read'
+    assert state['read']['US-1']['kind'] == 'resting' and disallow == 0 and state['hosts'] == {}, 'never saved as blocked'
+    assert NR.reason_of('took-too-long', 'resting') == 'busy' and not NR.is_block('busy')
+    # the next run asks it again
+    w = web(pages)
+    with tempfile.TemporaryDirectory() as td, FakeClock():
+        t = pathlib.Path(td)
+        areas, wb, docs, truth = make_area(t / 'data', parks)
+        P.read_parks(areas, wb, docs, truth, P.LiveGetter(state), state, '2026-11-28', refs=['US-1'], quiet=True)
+    assert len(w.asked('hang.example/a')) == 1, 'tried again next run'
+
+
+@test
+def i_a_crawl_delay_longer_than_the_park_limit_waits_for_the_slow_pass():
+    import kpc_park_pages_slow as SL
+    pages = {'https://cd.example/robots.txt': (200, 'User-agent: *\nCrawl-delay: 100\n', {}), 'https://cd.example/a': (200, PAGE, {})}
+    parks = {'US-1': ('Rib Mountain State Park', 'https://cd.example/a', 'State Park')}
+    old = P.PARK_MAX_SECONDS
+    P.PARK_MAX_SECONDS = 60   # shorter than the site's 100 s
+    try:
+        with tempfile.TemporaryDirectory() as td:
+            t = pathlib.Path(td)
+            areas, wb, docs, truth = make_area(t / 'data', parks)
+            state = {}
+            w = web(pages)
+            with FakeClock() as c:
+                facts, _ = P.read_parks(areas, wb, docs, truth, P.LiveGetter(state), state, '2026-11-27', refs=['US-1'], quiet=True,
+                                        out_dir=str(t / 'out'))
+            assert not w.asked('/a') and not [s for s in c.sleeps if s > 0], 'the site is not asked, and no wait was cut short'
+            assert facts['US-ZZ']['US-1']['page']['not_read']['reason'] == 'slow'
+            assert SL.waiting(str(t / 'out' / 'facts'))[0] == ['US-1'], 'on the slow pass list'
+            KM.MAX_CRAWL_DELAY, KM.SLOW_BUDGET = float('inf'), 5000   # the slow pass (KPC_SLOW_PASS=1)
+            w = FW.FakeWeb(pages).install(KM, P)
+            with FakeClock() as c:
+                facts, _ = P.read_parks(areas, wb, docs, truth, P.LiveGetter(state), state, '2026-11-27', refs=['US-1'], quiet=True,
+                                        out_dir=str(t / 'out'))
+            assert facts['US-ZZ']['US-1']['page']['kind'] == 'html' and len(w.asked('/a')) == 1
+            assert any(abs(s - 100) < 1e-6 for s in c.sleeps), f'the 100 s delay obeyed in full ({c.sleeps})'
+    finally:
+        P.PARK_MAX_SECONDS = old
+        KM.MAX_CRAWL_DELAY, KM.SLOW_BUDGET = 120, 10
+
+
+@test
+def i_a_long_read_says_still_on_about_once_a_minute():
+    watch = {'host': 'www.fs.usda.gov', 'ref': 'US-3660', 'since': 1000.0, 'said': 0}
+    lines = [P._still_line(watch, now) for now in (1030, 1065, 1070, 1125, 1190)]
+    assert lines == [None, '    still on www.fs.usda.gov, 1 min (park US-3660)', None, '    still on www.fs.usda.gov, 2 min (park US-3660)',
+                     '    still on www.fs.usda.gov, 3 min (park US-3660)'], lines
+    assert P._still_line({'since': None}, 5000) is None
 
 
 def main():

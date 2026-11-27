@@ -7,7 +7,7 @@ Every request goes through kpc_manners.Manners. This file does not fetch on its 
 Part 1 of the hand-off is `read` and `--selftest`. Later commands are named here and
 filled in by the later parts; until then they say so and do no work.
 """
-import argparse, datetime, json, os, pathlib, re, sys, time, urllib.parse
+import argparse, datetime, json, os, pathlib, re, sys, threading, time, urllib.parse
 
 
 def _kpc_bar(i, n, label, t0):
@@ -42,6 +42,15 @@ import kpc_net_rule as NR  # noqa: E402
 
 JOB = 'KPC park page reader'
 GET_MAX_SECONDS = 90  # wall-clock cap on one download; a slow trickle cannot run past this
+# 27 Nov 2026 (owner's PC: the run sat silent 12 and 17 minutes on one park): the most time one park may take, waiting and
+# reading together. Past it the park is noted "not this run (took too long: <site>)", never saved as blocked, tried again
+# next run, and the run goes on. A site whose Crawl-delay would need longer is not asked now (the slow pass obeys it in full).
+# In the slow pass the Crawl-delay waits do not count against it. Change it here, or set KPC_PARK_MAX_SECONDS.
+PARK_MAX_SECONDS = 300
+try:
+    PARK_MAX_SECONDS = float(os.environ.get('KPC_PARK_MAX_SECONDS') or PARK_MAX_SECONDS)
+except ValueError:
+    pass
 SAVE_EVERY_SECONDS = 30         # 22 Nov: how often the facts and state are written during a walk (also on stop, error and end)
 KEEP_ON_SKIP = ('refused', 'resting', 'script-built', 'dead')   # a read that says nothing new keeps the earlier facts (21 Nov); 26 Nov: a dead link too,
                                                               # with the failed try saved BESIDE the good facts (page.last_try), never instead of them
@@ -657,6 +666,19 @@ def _list_row(text, ref, refs_here, area_parks):
     return '\n'.join(row), written
 
 
+def _still_line(watch, now):
+    """27 Nov 2026 (owner's PC: no line for 12 and 17 minutes): while one read takes long, a short line about once a minute,
+    e.g. '    still on www.fs.usda.gov, 3 min (park US-3660)'. watch = {'host', 'ref', 'since' (monotonic), 'said'}."""
+    since = watch.get('since')
+    if since is None:
+        return None
+    mins = int((now - since) // 60)
+    if mins < 1 or mins <= watch.get('said', 0):
+        return None
+    watch['said'] = mins
+    return f'    still on {watch.get("host") or "a site"}, {mins} min (park {watch.get("ref") or "?"})'
+
+
 def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_only=None,
                max_requests=1500, max_per_park=R.MAX_PER_PARK, max_parks=None, on_park=None,
                refresh_days=None, deadline=None, out_dir=None, state_path=None,
@@ -679,6 +701,28 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
     cache = {}  # norm url -> fetched page dict
     cur = {}    # the park being read (for the page keeper)
     started = time.time() if started is None else started
+    # 27 Nov 2026: one park may take at most PARK_MAX_SECONDS (waiting + reading); the slow pass does not count the sites'
+    # own Crawl-delay waits. The Manners object gets the limit (M.until), so it never starts a wait that would pass it.
+    _M = getattr(getter, 'M', None) or getattr(getattr(getter, 'live', None), 'M', None)
+    slow_pass = _KM.MAX_CRAWL_DELAY == float('inf')
+    if _M is not None and quiet:
+        _M.say = None
+    watch = {'host': '', 'ref': '', 'since': None, 'said': 0}
+    watch_stop = threading.Event()
+
+    def park_end():
+        if cur.get('t0') is None:
+            return None
+        paced = (_M.paced_s - cur.get('paced0', 0.0)) if (slow_pass and _M is not None) else 0.0
+        return cur['t0'] + PARK_MAX_SECONDS + paced
+
+    def _watch_loop():
+        while not watch_stop.wait(5):
+            line = _still_line(watch, time.monotonic())
+            if line:
+                print(line, flush=True)
+    if not quiet:
+        threading.Thread(target=_watch_loop, name='kpc-still-on', daemon=True).start()
 
     def budget_left():
         return requests < max_requests and (deadline is None or time.time() < deadline)
@@ -742,6 +786,34 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
         key = norm_url(url) + (f'|rng{rng[0]}-{rng[1]}' if rng else '')
         if key in cache:
             return cache[key]   # one page shared by several parks is asked once per run
+        pe = park_end()
+        if pe is not None and time.time() >= pe:
+            # 27 Nov 2026: this park has used its time: the page is not asked (not counted, not kept for other parks)
+            return too_long(url, host)
+        if _M is not None:
+            _M.until = pe
+        get_deadline = deadline
+        if pe is not None and not slow_pass:
+            get_deadline = pe if deadline is None else min(deadline, pe)
+        watch.update(host=host, ref=cur.get('ref') or '', since=time.monotonic(), said=0)
+        try:
+            return _fetch_asked(url, rng, host, key, get_deadline)
+        finally:
+            watch['since'] = None
+            if _M is not None:
+                _M.until = None
+
+    def too_long(url, host):
+        if not cur.get('said_long') and not quiet:
+            print(f'    Park {cur.get("ref")}: not this run (took too long: {host}). It is tried again next run.', flush=True)
+        cur['said_long'] = True
+        why = f'not this run (took too long: {host})'
+        return {'url': url, 'final': url, 'status': 'took-too-long', 'kind': 'resting', 'text': '', 'links': [],
+                'fingerprint': '', 'html': '', 'title': '', 'heading': '', 'headings': [], 'thin': True,
+                'not_read': {'reason': 'busy', 'why': why, 'status': 'took-too-long', 'date': today}}
+
+    def _fetch_asked(url, rng, host, key, get_deadline):
+        nonlocal requests
         requests += 1
         pre_browsed = ''
         if (host and host in (state.get('browser_hosts') or {}) and not rng and os.environ.get('BROWSER') == '1'
@@ -755,9 +827,12 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
             st, headers, body, final = 200, {'content-type': 'text/html; charset=utf-8'}, pre_browsed.encode('utf-8'), url
         else:
             try:
-                st, headers, body, final = getter.get(url, rng=rng, deadline=deadline, max_time=get_max_seconds)
+                st, headers, body, final = getter.get(url, rng=rng, deadline=get_deadline, max_time=get_max_seconds)
             except TypeError:
                 st, headers, body, final = getter.get(url, rng=rng)
+            pe = park_end()
+            if st == 'took-too-long' or (st == 'err:deadline' and not time_up() and pe is not None and time.time() >= pe):
+                return too_long(url, host)   # 27 Nov 2026: the park's limit was reached during this page (or before its wait)
             if host and not rng and (st == 'rest' or (isinstance(st, str) and st.startswith('err') and st != 'err:deadline')
                                      or (isinstance(st, int) and st >= 500)):
                 state.setdefault('browser_hosts', {})[host] = today   # 27 Nov: read through the browser from now on
@@ -933,6 +1008,7 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
               f'first. {len(_due) - sum(_due):,} read before are passed over quietly.', flush=True)
 
     def stop(reason, index):
+        watch_stop.set()   # 27 Nov 2026: the 'still on' watcher ends with the walk
         if keeper is not None:
             keeper.save()
         state['stopped'] = reason
@@ -957,6 +1033,7 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
             return stop('parks', index)
         row = parks[ref]
         cur['ref'] = ref
+        cur.update(t0=time.time(), paced0=(_M.paced_s if _M is not None else 0.0), said_long=False)   # 27 Nov 2026: this park's clock
         url, src, others = choose_link(ref, row, web, docs)
         progress(area, done, 'reading')
         # A page read inside the refresh window is not fetched again. The caller keeps the old fact.
@@ -1143,6 +1220,8 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
             continue
         done += 1
         save_progress(index)
+    watch_stop.set()   # 27 Nov 2026: the 'still on' watcher ends with the walk
+    cur['t0'] = None
     state['left'] = []
     state['stopped'] = ''
     if keeper is not None:
