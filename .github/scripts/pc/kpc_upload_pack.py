@@ -29,8 +29,9 @@ VERSION = 'kpc_upload_pack 2026-11-22a'
 HERE = pathlib.Path(__file__).resolve().parent
 BOTS = HERE.parent                                   # Tools\KPC-PC-BOTS-NOV21
 TOOLS = BOTS.parent                                  # Tools
-STORE = TOOLS / 'KPC-TOOLS-NOV14' / '1-STORE-TOOL' / 'kpc-outline-store-full'
-XWALK = TOOLS / 'KPC-ID-crosswalk'
+_first = lambda *ps: next((p for p in ps if p.is_dir()), ps[-1])   # 26 Nov: the new folder name first, then the old one
+STORE = _first(TOOLS.parent / '3-MAP-STORE-US-CA', TOOLS / 'KPC-TOOLS-NOV14' / '1-STORE-TOOL' / 'kpc-outline-store-full')
+XWALK = _first(TOOLS / 'PARK-ID-MATCHER', TOOLS / 'KPC-ID-crosswalk')
 AREA_RX = re.compile(r'^(?:[A-Z]{2}-[A-Z0-9]{1,4}|CA)$')   # US-XX, and CA (all of Canada in one file)
 WDPA = re.compile(r'wdpa|protected ?planet|unep[\s-]?wcmc', re.I)
 
@@ -173,9 +174,20 @@ def make_pack(out_dir, pages_dir, proposals, lists_dir, link_ids, approved, now=
                 'pages': pages, 'crosswalk': xw, 'left_out': dict(counts)}
     out = pathlib.Path(out_dir); out.mkdir(parents=True, exist_ok=True)
     zp = out / f'kpc-upload-pack-{now.strftime("%Y-%m-%d-%H%M")}.zip'
-    with zipfile.ZipFile(zp, 'w', zipfile.ZIP_DEFLATED) as z:
+    # 26 Nov 2026 (saving correctly): the pack is written to a .part file, opened again and checked (every member reads back
+    # the same, every page file holds the park count the manifest says), and only then given its name
+    part = zp.with_name(zp.name + '.part')
+    with zipfile.ZipFile(part, 'w', zipfile.ZIP_DEFLATED) as z:
         z.writestr('manifest.json', json.dumps(manifest, indent=1))
         for n, b in sorted(members.items()): z.writestr(n, b)
+    with zipfile.ZipFile(part) as z:
+        bad = z.testzip()
+        ok = bad is None and all(z.read(n) == b for n, b in members.items()) and all(
+            len(json.loads(z.read(f'pages/{a}.json')).get('parks') or {}) == k for a, k in pages.items())
+    if not ok:
+        part.unlink()
+        return None, counts, why + ['the pack did not read back the same: nothing was saved (the earlier packs are untouched)']
+    os.replace(part, zp)
     counts['areas of page facts packed'] = len(pages); counts['parks of page facts packed'] = sum(pages.values())
     counts['agencies of crosswalk packed'] = len(xw)
     return zp, counts, why

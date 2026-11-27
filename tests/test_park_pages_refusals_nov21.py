@@ -41,7 +41,8 @@ with tempfile.TemporaryDirectory() as t:
     r, facts, asked, st = run(t, {'US-9201': 403, 'US-9202': 200, 'US-9203': 200, 'US-9204': 200, 'US-9205': 200})
     check('one refused page: every other park on the site is still asked and read', r.returncode == 0 and asked == set(REFS)
           and all((facts[x].get('page') or {}).get('kind') == 'html' for x in REFS[1:]))
-    check('the refused page itself stays refused', (facts['US-9201'].get('page') or {}).get('kind') == 'refused')
+    # 27 Nov 2026 (owner: 'sure we are just polite'): a 403 is that page only, for this run: 'resting', asked again next run
+    check('the 403 page itself waits for the next run (resting)', (facts['US-9201'].get('page') or {}).get('kind') == 'resting')
     check('the site is not put aside after one refusal', 'parks.invented.example' not in (st.get('refused') or {}))
 
     r, facts, asked, st = run(t, {'US-9201': 403, 'US-9202': 403, 'US-9203': 403, 'US-9204': 200, 'US-9205': 200})

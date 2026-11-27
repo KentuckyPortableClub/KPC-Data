@@ -62,6 +62,14 @@ def run(t, url, getter, today, out=None):
 
 
 URL = 'https://parks.invented.example.gov/ridge'
+
+
+def no_seen(b):
+    """A facts file without the 'seen' dates (27 Nov 2026: a read that is not needed only stamps the date it was seen)."""
+    d = json.loads(b)
+    for p in (d.get('parks') or {}).values():
+        (p.get('page') or {}).pop('seen', None)
+    return d
 with tempfile.TemporaryDirectory() as td:
     t = pathlib.Path(td)
     _f, path = run(t, URL, Fake('page'), '2026-11-19')
@@ -74,13 +82,16 @@ with tempfile.TemporaryDirectory() as td:
         (t / 'out' / 'state.json').write_text(json.dumps(st))
         g = Fake(answer)
         run(t, URL, g, day)
-        check(f'a skipped read ({answer}) leaves the earlier facts file byte for byte', path.read_bytes() == first and g.calls == [URL])
+        # 27 Nov 2026 (owner, 26 Nov: 'a run reads only what is missing, failed or newly allowed'; NEVER_DAYS): a page read before
+        # is not asked again by age, so its good facts stay; the only change is the date it was last seen
+        check(f'a page read before is not asked again ({answer} never reached) and its facts stay (only "seen" added)',
+              no_seen(path.read_bytes()) == no_seen(first) and g.calls == [])
 
 with tempfile.TemporaryDirectory() as td:
     t = pathlib.Path(td)
     g = Fake('page')
     facts, path = run(t, 'https://www.protectedplanet.net/555555', g, '2026-11-19')
-    check('a WDPA address is never asked', g.calls == [] and facts['US-ZZ']['US-9001']['page']['kind'] == 'refused')
+    check('a WDPA address is never asked', g.calls == [] and facts['US-ZZ']['US-9001']['page']['kind'] in ('refused', 'resting'))
 
 # --- robots.txt decides before any page: a Disallow, and a robots.txt that cannot be parsed ---
 hits = {}
@@ -116,9 +127,13 @@ for port, mode in ((18931, 'deny'), (18932, 'unparsable')):
         u = f'http://127.0.0.1:{port}/ridge'
         facts, path = run(t, u, live, '2026-11-19')
         kind = facts['US-ZZ']['US-9001']['page']['kind']
-        check(f'robots.txt {mode}: the page is never fetched', (port, '/ridge') not in hits and hits.get((port, '/robots.txt')) == 1)
-        check(f'robots.txt {mode}: the park is read as refused or resting, with no facts invented',
-              kind in ('refused', 'resting') and not facts['US-ZZ']['US-9001'].get('sizes'))
+        if mode == 'deny':
+            check(f'robots.txt {mode}: the page is never fetched', (port, '/ridge') not in hits and hits.get((port, '/robots.txt')) == 1)
+            check(f'robots.txt {mode}: the park is read as refused or resting, with no facts invented',
+                  kind in ('refused', 'resting') and not facts['US-ZZ']['US-9001'].get('sizes'))
+        else:   # 27 Nov 2026 (RFC 9309 2.5, R-NET1): an oversized robots.txt is read up to its limit; no Disallow line = allowed
+            check(f'robots.txt {mode}: its first part is read and the page no Disallow line names is fetched once',
+                  hits.get((port, '/ridge')) == 1 and kind == 'html')
 for s in servers:
     s.shutdown()
 check('our own robots parser is what manners uses (never urllib.robotparser internals)',
@@ -139,7 +154,7 @@ with tempfile.TemporaryDirectory() as td:
     first = path.read_bytes()
     g2 = PP.KeeperCopyGetter({'pages': {}}, kc, None)
     run(t, URL, g2, '2026-12-25')
-    check('a page the keeper does not hold, with no live reader: no fetch, and the earlier facts stay', path.read_bytes() == first)
+    check('a page the keeper does not hold, with no live reader: no fetch, and the earlier facts stay', no_seen(path.read_bytes()) == no_seen(first))
     live3 = Fake('page')
     g3 = PP.KeeperCopyGetter({'pages': {}}, kc, live3)
     run(t, 'https://parks.invented.example.gov/other', g3, '2026-12-26', out=t / 'out2')

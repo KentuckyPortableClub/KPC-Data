@@ -7,7 +7,7 @@ Every request goes through kpc_manners.Manners. This file does not fetch on its 
 Part 1 of the hand-off is `read` and `--selftest`. Later commands are named here and
 filled in by the later parts; until then they say so and do no work.
 """
-import argparse, datetime, json, os, pathlib, re, sys, time, urllib.parse
+import argparse, datetime, json, os, pathlib, re, sys, threading, time, urllib.parse
 
 
 def _kpc_bar(i, n, label, t0):
@@ -32,15 +32,32 @@ import kpc_manners as _KM  # noqa: E402
 # 23 Nov (job 10, owner 1:03 PM): the PC's slow-sites step (2g) may wait longer between pages of a site whose robots.txt asks
 # for a long Crawl-delay, never cutting it short: it sets KPC_MAX_CRAWL_DELAY (900 s at most) for that one run, which reads only
 # the parks waiting on such sites. The nightly walk keeps kpc_manners' own 120 s (kpc_manners.py itself is frozen, N15).
+# 26 Nov 2026 (owner's site rule: "obey it by going slow, however long; never skip because it is long"): the 900 s cap is gone.
+# KPC_SLOW_PASS=1 (kpc_manners) obeys any Crawl-delay; KPC_MAX_CRAWL_DELAY only ever raises the nightly limit.
 try:
-    _KM.MAX_CRAWL_DELAY = max(_KM.MAX_CRAWL_DELAY, min(900.0, float(os.environ.get('KPC_MAX_CRAWL_DELAY') or 0)))
+    _KM.MAX_CRAWL_DELAY = max(_KM.MAX_CRAWL_DELAY, float(os.environ.get('KPC_MAX_CRAWL_DELAY') or 0))
 except ValueError:
     pass
+import kpc_net_rule as NR  # noqa: E402
 
 JOB = 'KPC park page reader'
 GET_MAX_SECONDS = 90  # wall-clock cap on one download; a slow trickle cannot run past this
+# 27 Nov 2026 (owner's PC: the run sat silent 12 and 17 minutes on one park): the most time one park may take, waiting and
+# reading together. Past it the park is noted "not this run (took too long: <site>)", never saved as blocked, tried again
+# next run, and the run goes on. A site whose Crawl-delay would need longer is not asked now (the slow pass obeys it in full).
+# In the slow pass the Crawl-delay waits do not count against it. Change it here, or set KPC_PARK_MAX_SECONDS.
+PARK_MAX_SECONDS = 300
+try:
+    PARK_MAX_SECONDS = float(os.environ.get('KPC_PARK_MAX_SECONDS') or PARK_MAX_SECONDS)
+except ValueError:
+    pass
 SAVE_EVERY_SECONDS = 30         # 22 Nov: how often the facts and state are written during a walk (also on stop, error and end)
-KEEP_ON_SKIP = ('refused', 'resting', 'script-built')   # a read that says nothing new keeps the earlier facts (21 Nov)
+KEEP_ON_SKIP = ('refused', 'resting', 'script-built', 'dead')   # a read that says nothing new keeps the earlier facts (21 Nov); 26 Nov: a dead link too,
+                                                              # with the failed try saved BESIDE the good facts (page.last_try), never instead of them
+NEVER_DAYS = 36500   # 26 Nov 2026 (owner: a run reads only what is missing, failed or newly allowed): a page already read is not read again by age
+EMPTY_FP = R.fp_of('')   # 26 Nov 2026: the fingerprint of a page with no words ('e3b0c44298fc'): never 'read before'
+DEAD_RETRY_DAYS = 7   # 26 Nov: a dead link is tried again after a week (a failure, not a page we have)
+REFUSED_DAYS = 7   # (no longer used: a refused page is due every run) # 26 Nov 2026: a page that refused us is asked again after a week (the host rule still stops a host for a run)
 
 
 def load_json(path, default):
@@ -62,8 +79,36 @@ def save_json(path, obj, only_if_changed=False):
     p.parent.mkdir(parents=True, exist_ok=True)
     tmp = p.with_name(p.name + '.tmp')   # 22 Nov: written whole, then put in place: a reader stopped mid-write never leaves half a file
     tmp.write_text(text, encoding='utf-8')
+    # 26 Nov 2026 (owner: "make sure we are actually saving the info correctly"): the new file is read back BEFORE it replaces
+    # the old one; a file that does not read back the same is never put in place (the old one stays, the run says so)
+    try:
+        back = json.loads(tmp.read_text(encoding='utf-8'))
+    except (OSError, ValueError) as e:
+        raise SaveFailed(f'{p.name}: the new file did not read back ({e}); the old file is kept') from e
+    if back != json.loads(text):
+        raise SaveFailed(f'{p.name}: the new file read back different; the old file is kept')
     os.replace(tmp, p)
     return True
+
+
+class SaveFailed(OSError):
+    """A result file that did not read back the same as what was written. The earlier file is kept."""
+
+
+def load_facts_file(path):
+    """An area's facts file -> its parks. A file that is there but cannot be read is copied aside first (facts/<area>.json.unreadable-<time>),
+    so a run never writes over parks it could not read (26 Nov: load_json gave {} and the next save kept only this run's parks)."""
+    p = pathlib.Path(path)
+    if not p.is_file():
+        return {}
+    try:
+        return (json.loads(p.read_text(encoding='utf-8')) or {}).get('parks') or {}
+    except (OSError, ValueError):
+        import shutil
+        bad = p.with_name(p.name + '.unreadable-' + time.strftime('%Y%m%d-%H%M%S'))
+        shutil.copy2(p, bad)
+        print(f'::warning title=Facts file could not be read::{p} was copied to {bad.name} before anything was written', flush=True)
+        return {}
 
 
 def park_row(row):
@@ -180,10 +225,28 @@ def norm_url(url):
     return host + path + ('?' + urllib.parse.urlencode(q) if q else '')
 
 
+def replay_journal(man, journal):
+    """26 Nov 2026: every page kept since the list was last saved is in manifest.journal, one line each (written and checked
+    as it was kept). A cut-off last line (a run killed mid-write) is skipped; its page is simply kept again next time."""
+    pages = man.setdefault('pages', {})
+    try:
+        with open(journal, encoding='utf-8') as fh:
+            for line in fh:
+                try:
+                    rec = json.loads(line)
+                except ValueError:
+                    continue
+                if isinstance(rec, dict) and isinstance(rec.get('url'), str) and isinstance(rec.get('rec'), dict):
+                    pages[rec['url']] = rec['rec']
+    except OSError:
+        pass
+    return man
+
+
 def kept_manifest(path):
     """The kept pages' manifest, less the copies saved under the OLD address key (a numbered page saved before 23 Nov 'q1'
     shares its file with every other page of that site: its content is not this page's)."""
-    man = load_json(path, {}) or {}
+    man = replay_journal(load_json(path, {}) or {}, pathlib.Path(path).with_name('manifest.journal'))
     pages = man.get('pages') or {}
     stale = [u for u, rec in pages.items() if '?' in str(u) and (rec or {}).get('kr') != URL_KEY_RULE]
     for u in stale:
@@ -260,7 +323,22 @@ class KeeperCopyGetter:
         return self.live.browser_html(url) if self.live is not None and hasattr(self.live, 'browser_html') else ''
 
     def resting(self):
-        return self.live.resting() if self.live is not None and hasattr(self.live, 'resting') else {}
+        return {}
+
+    def stop_host(self, host, why):
+        if self.live is not None and hasattr(self.live, 'stop_host'):
+            self.live.stop_host(host, why)
+
+    def refuse_host(self, host, why, wall=False):
+        if self.live is not None and hasattr(self.live, 'refuse_host'):
+            self.live.refuse_host(host, why, wall=wall)
+
+    def clear_pending(self, host):
+        if self.live is not None and hasattr(self.live, 'clear_pending'):
+            self.live.clear_pending(host)
+
+    def disallow_line(self, url):
+        return self.live.disallow_line(url) if self.live is not None and hasattr(self.live, 'disallow_line') else ''
 
 
 class PageKeeper:
@@ -274,13 +352,30 @@ class PageKeeper:
         self.root = pathlib.Path(folder)
         self.today = today
         self.man_path = self.root / 'manifest.json'
-        self.man = load_json(self.man_path, {}) or {}
+        self.journal = self.root / 'manifest.journal'
+        self.man = replay_journal(load_json(self.man_path, {}) or {}, self.journal)
         self.man.setdefault('pages', {})
         self.kept = self.errors = self.unsaved = 0
 
-    def keep(self, url, final, status, headers, body, ref='', built=False):
+    def has(self, url):
+        rec = self.man['pages'].get(url)
+        return bool(rec and (self.root / rec.get('file', '')).is_file())
+
+    def copy_of(self, url):
+        """(200, headers, body, final) of the kept copy (used when the site answers 304 Not Modified)."""
+        import gzip
+        rec = self.man['pages'][url]
+        raw = (self.root / rec['file']).read_bytes()
+        return 200, {'content-type': rec.get('type') or 'text/html'}, gzip.decompress(raw), rec.get('final') or url
+
+    def keep(self, url, final, status, headers, body, ref='', built=False, kind=None):
+        """26 Nov 2026 (saving correctly): the copy is written to a .tmp file, read back and unpacked, then put in place; a
+        copy that does not read back is never kept. A read that is not a real page (a wall, an empty or thin answer, a
+        page that builds itself) never replaces a good copy kept before."""
         try:
             if status != 200 or not isinstance(body, (bytes, bytearray)) or not body or len(body) > self.MAX_BYTES:
+                return
+            if kind is not None and kind not in ('html', 'pdf') and url in self.man['pages']:
                 return
             import gzip, hashlib
             ctype = ''
@@ -291,24 +386,47 @@ class PageKeeper:
             path = self.root / rel
             path.parent.mkdir(parents=True, exist_ok=True)
             raw = bytes(body)
-            path.write_bytes(raw if raw[:2] == b'\x1f\x8b' else gzip.compress(raw, 6))
+            packed = raw if raw[:2] == b'\x1f\x8b' else gzip.compress(raw, 6)
+            tmp = path.with_name(path.name + '.tmp')
+            tmp.write_bytes(packed)
+            if gzip.decompress(tmp.read_bytes()) != (gzip.decompress(raw) if raw[:2] == b'\x1f\x8b' else raw):
+                tmp.unlink()
+                self.errors += 1
+                return
+            os.replace(tmp, path)
             rec = {'file': rel, 'status': 200, 'type': ctype or 'text/html', 'final': final or url, 'date': self.today, 'kr': URL_KEY_RULE}
             if ref: rec['ref'] = ref
             if built: rec['built'] = True
+            # 26 Nov (saving correctly): the list entry is written at once, one line in manifest.journal, flushed to disk and
+            # read back; the whole list is rewritten (temp, check, rename) every 40 pages and at every stop
+            line = json.dumps({'url': url, 'rec': rec}, ensure_ascii=False) + '\n'
+            with open(self.journal, 'a', encoding='utf-8') as fh:
+                fh.write(line)
+                fh.flush()
+                os.fsync(fh.fileno())
+            with open(self.journal, 'rb') as fh:
+                fh.seek(max(0, os.path.getsize(self.journal) - len(line.encode('utf-8'))))
+                if fh.read().decode('utf-8', 'replace') != line:
+                    self.errors += 1
+                    return
             self.man['pages'][url] = rec
             self.kept += 1
             self.unsaved += 1
             if self.unsaved >= 40:
                 self.save()
-        except OSError:
+        except (OSError, EOFError, ValueError):
             self.errors += 1
 
     def save(self):
         try:
             if self.unsaved:
                 self.root.mkdir(parents=True, exist_ok=True)
-                save_json(self.man_path, self.man)
+                save_json(self.man_path, self.man)      # temp file, read back, then renamed
                 self.unsaved = 0
+                try:
+                    self.journal.unlink()               # only after the whole list is safely in place
+                except FileNotFoundError:
+                    pass
         except OSError:
             self.errors += 1
 
@@ -320,9 +438,30 @@ def request_url(url):
 
 class LiveGetter:
     def __init__(self, state):
-        resting = state.get('hosts') if isinstance(state.get('hosts'), dict) else None
-        self.M = Manners(JOB, resting)
+        # 26 Nov 2026 (owner's site rule, audit path L): a rest saved by an earlier run is never loaded
+        self.M = Manners(JOB)
+        self.M.p2_browser = os.environ.get('BROWSER') == '1'   # P-2: the reader tries the page browser once after a 401 / 403
         self.calls = []
+        # the site's own ETag / Last-Modified from the last real read of each page (doing less: a 304 = unchanged)
+        for ref, r in (state.get('read') or {}).items():
+            if isinstance(r, dict) and r.get('validators') and r.get('url'):
+                self.M.conditional[request_url(r['url'])] = r['validators']
+
+    def stop_host(self, host, why):
+        self.M.stop_host(host, why)
+
+    def refuse_host(self, host, why, wall=False):
+        return self.M.refuse_host(host, why, wall=wall)
+
+    def clear_pending(self, host):
+        self.M.pending_stop.pop(str(host or '').lower(), None)
+        self.M.page_read(host)   # the page browser read it: the site is not refusing
+
+    def disallow_line(self, url):
+        return self.M.disallow_line(request_url(url))
+
+    def robots_note(self, url):
+        return self.M.robots_note.get(self.M.rkey(request_url(url))) or ('', '')
 
     def get(self, url, rng=None, deadline=None, max_time=None):
         self.calls.append(url)
@@ -355,6 +494,12 @@ def _refusal_rule(state):
 
 
 def _refused_until(state, host, today):
+    """26 Nov 2026 (owner's site rule, audit path M): a site is never set aside across runs. A 401 / 403 / 429 stops it for
+    THIS run only (kpc_manners.stop_host). Always False; kept so older callers still work."""
+    return False
+
+
+def _refused_until_old(state, host, today):
     _refusal_rule(state)
     when = (state.get('refused') or {}).get(host)
     if not when:
@@ -375,15 +520,19 @@ def _remember_refusal(state, host, today, url=''):
     if u and u not in pages:
         pages.append(u)
         del pages[:-REFUSALS_FOR_HOST]
-    if not url or len(pages) >= REFUSALS_FOR_HOST:
-        state.setdefault('refused', {})[host] = today
+    # 26 Nov: counted only (for the status page); never a set-aside for later runs
+    state['refused'] = {}
 
 
 def _kind_of_status(st, body_text, url, is_pdf=False):
+    # 26 Nov 2026 (owner's site rule): 'refused' = a REAL robots.txt Disallow line, and nothing else. A 401 / 403 / 429, a wall,
+    # the club's own host list and a busy site are 'resting' (not now: asked again next run), never saved as blocked.
+    if st == 'robots':
+        return 'refused'
     if isinstance(st, str) and robots_block(st) and not next_run(st):
-        return 'refused'
-    if st in (401, 403):
-        return 'refused'
+        return 'resting'
+    if st in (401, 403, 429):
+        return 'resting'
     if isinstance(st, str) and (next_run(st) or str(st).startswith('err')):
         return 'resting'
     if st in (404, 410):
@@ -392,8 +541,8 @@ def _kind_of_status(st, body_text, url, is_pdf=False):
         return 'resting'
     if isinstance(st, str):
         return 'resting'
-    if R.WALL.search(body_text or ''):
-        return 'refused'
+    if R.WALL.search(body_text or '') and len((body_text or '').strip()) < NR.WALL_MAX_CHARS:
+        return 'resting'   # 26 Nov: an "are you human" wall = not now (the reader stops that site for the run); a long page that only mentions 'captcha' is read
     if is_pdf or urllib.parse.urlparse(url or '').path.lower().endswith('.pdf'):
         return 'pdf'
     if R.script_shell(url):
@@ -517,15 +666,29 @@ def _list_row(text, ref, refs_here, area_parks):
     return '\n'.join(row), written
 
 
+def _still_line(watch, now):
+    """27 Nov 2026 (owner's PC: no line for 12 and 17 minutes): while one read takes long, a short line about once a minute,
+    e.g. '    still on www.fs.usda.gov, 3 min (park US-3660)'. watch = {'host', 'ref', 'since' (monotonic), 'said'}."""
+    since = watch.get('since')
+    if since is None:
+        return None
+    mins = int((now - since) // 60)
+    if mins < 1 or mins <= watch.get('said', 0):
+        return None
+    watch['said'] = mins
+    return f'    still on {watch.get("host") or "a site"}, {mins} min (park {watch.get("ref") or "?"})'
+
+
 def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_only=None,
                max_requests=1500, max_per_park=R.MAX_PER_PARK, max_parks=None, on_park=None,
-               refresh_days=W.REFRESH_DAYS, deadline=None, out_dir=None, state_path=None,
+               refresh_days=None, deadline=None, out_dir=None, state_path=None,
                get_max_seconds=GET_MAX_SECONDS, quiet=False, started=None, keeper=None, reextract=False):
     """Read every chosen park. Returns {area: {ref: fact}} and the request count.
     refs, when given, is the worklist order across areas. A fresh fingerprint is not fetched again.
     A page older than refresh_days is fetched; the same fingerprint is not parsed again.
     When out_dir is set, facts and state are written after every park (only if they changed),
     so a run that is cut off keeps what it already read."""
+    refresh_days = NEVER_DAYS if refresh_days is None else refresh_days   # 26 Nov: never by age unless asked
     state.setdefault('hosts', {})
     state.setdefault('refused', {})
     state.setdefault('dead', {})
@@ -538,6 +701,28 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
     cache = {}  # norm url -> fetched page dict
     cur = {}    # the park being read (for the page keeper)
     started = time.time() if started is None else started
+    # 27 Nov 2026: one park may take at most PARK_MAX_SECONDS (waiting + reading); the slow pass does not count the sites'
+    # own Crawl-delay waits. The Manners object gets the limit (M.until), so it never starts a wait that would pass it.
+    _M = getattr(getter, 'M', None) or getattr(getattr(getter, 'live', None), 'M', None)
+    slow_pass = _KM.MAX_CRAWL_DELAY == float('inf')
+    if _M is not None and quiet:
+        _M.say = None
+    watch = {'host': '', 'ref': '', 'since': None, 'said': 0}
+    watch_stop = threading.Event()
+
+    def park_end():
+        if cur.get('t0') is None:
+            return None
+        paced = (_M.paced_s - cur.get('paced0', 0.0)) if (slow_pass and _M is not None) else 0.0
+        return cur['t0'] + PARK_MAX_SECONDS + paced
+
+    def _watch_loop():
+        while not watch_stop.wait(5):
+            line = _still_line(watch, time.monotonic())
+            if line:
+                print(line, flush=True)
+    if not quiet:
+        threading.Thread(target=_watch_loop, name='kpc-still-on', daemon=True).start()
 
     def budget_left():
         return requests < max_requests and (deadline is None or time.time() < deadline)
@@ -595,28 +780,77 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
         host = R.host_of(url)
         if R.is_wdpa(url):
             # never WDPA (21 Nov): not asked, not counted as a request
-            return {'url': url, 'final': url, 'status': 'refused', 'kind': 'refused', 'text': '', 'links': [],
-                    'fingerprint': '', 'html': '', 'title': '', 'heading': '', 'skipped': 'wdpa'}
-        if host and _refused_until(state, host, today):
-            return {'url': url, 'final': url, 'status': 'refused', 'kind': 'refused', 'text': '', 'links': [],
-                    'fingerprint': '', 'html': '', 'title': '', 'heading': '', 'skipped': 'refused'}
+            return {'url': url, 'final': url, 'status': 'host-rule', 'kind': 'resting', 'text': '', 'links': [],
+                    'fingerprint': '', 'html': '', 'title': '', 'heading': '', 'skipped': 'wdpa',
+                    'not_read': {'reason': 'club-rule', 'why': 'a WDPA address is never read'}}
         key = norm_url(url) + (f'|rng{rng[0]}-{rng[1]}' if rng else '')
         if key in cache:
-            return cache[key]
-        requests += 1
+            return cache[key]   # one page shared by several parks is asked once per run
+        pe = park_end()
+        if pe is not None and time.time() >= pe:
+            # 27 Nov 2026: this park has used its time: the page is not asked (not counted, not kept for other parks)
+            return too_long(url, host)
+        if _M is not None:
+            _M.until = pe
+        get_deadline = deadline
+        if pe is not None and not slow_pass:
+            get_deadline = pe if deadline is None else min(deadline, pe)
+        watch.update(host=host, ref=cur.get('ref') or '', since=time.monotonic(), said=0)
         try:
-            st, headers, body, final = getter.get(url, rng=rng, deadline=deadline, max_time=get_max_seconds)
-        except TypeError:
-            st, headers, body, final = getter.get(url, rng=rng)
+            return _fetch_asked(url, rng, host, key, get_deadline)
+        finally:
+            watch['since'] = None
+            if _M is not None:
+                _M.until = None
+
+    def too_long(url, host):
+        if not cur.get('said_long') and not quiet:
+            print(f'    Park {cur.get("ref")}: not this run (took too long: {host}). It is tried again next run.', flush=True)
+        cur['said_long'] = True
+        why = f'not this run (took too long: {host})'
+        return {'url': url, 'final': url, 'status': 'took-too-long', 'kind': 'resting', 'text': '', 'links': [],
+                'fingerprint': '', 'html': '', 'title': '', 'heading': '', 'headings': [], 'thin': True,
+                'not_read': {'reason': 'busy', 'why': why, 'status': 'took-too-long', 'date': today}}
+
+    def _fetch_asked(url, rng, host, key, get_deadline):
+        nonlocal requests
+        requests += 1
+        pre_browsed = ''
+        if (host and host in (state.get('browser_hosts') or {}) and not rng and os.environ.get('BROWSER') == '1'
+                and hasattr(getter, 'browser_html') and not isinstance(getter, KeeperCopyGetter)):
+            # 27 Nov 2026 (owner's PC run of 26 Nov: www.dec.ny.gov, www.fs.usda.gov, Michigan DNR and others stopped answering
+            # the plain reader, struck out and rested for a day, so 3,806 parks stayed 'resting'): a site that struck out on the
+            # plain reader is read through the PC's page browser first, with every manner of the browser read (robots.txt,
+            # Crawl-delay, the slow-host budget, the pace, and a site still resting is not asked)
+            pre_browsed = getter.browser_html(url) or ''
+        if pre_browsed:
+            st, headers, body, final = 200, {'content-type': 'text/html; charset=utf-8'}, pre_browsed.encode('utf-8'), url
+        else:
+            try:
+                st, headers, body, final = getter.get(url, rng=rng, deadline=get_deadline, max_time=get_max_seconds)
+            except TypeError:
+                st, headers, body, final = getter.get(url, rng=rng)
+            pe = park_end()
+            if st == 'took-too-long' or (st == 'err:deadline' and not time_up() and pe is not None and time.time() >= pe):
+                return too_long(url, host)   # 27 Nov 2026: the park's limit was reached during this page (or before its wait)
+            if host and not rng and (st == 'rest' or (isinstance(st, str) and st.startswith('err') and st != 'err:deadline')
+                                     or (isinstance(st, int) and st >= 500)):
+                state.setdefault('browser_hosts', {})[host] = today   # 27 Nov: read through the browser from now on
         from_copy = isinstance(getter, KeeperCopyGetter) and getter.copy._rec(url) is not None
-        if keeper is not None and not rng and not from_copy:
-            keeper.keep(url, final or url, st, headers, body, ref=cur.get('ref') or '')   # 23 Nov: the page is kept for later fixes
+        if st == 304 and keeper is not None and keeper.has(url):
+            # 26 Nov (doing less): the site says the page has not changed since our last read: the kept copy is the page
+            st, headers, body, final = keeper.copy_of(url)
+            from_copy = True
         extra = getter.links_for(url) if hasattr(getter, 'links_for') else []
         vis = R.visible_of(body, headers, final or url, extra)
         kind = _kind_of_status(st, vis.get('text'), final or url, is_pdf=bool(vis.get('pdf')))
         if kind == 'html' and R.unfilled_template(vis.get('html')):
             kind = 'script-built'     # 23 Nov: a heading still a script template (Minnesota DNR): open it in the browser
-        browsed = False
+        wall = st == 200 and kind == 'resting'
+        browsed = bool(pre_browsed)
+        if pre_browsed and kind == 'html' and keeper is not None and not from_copy:
+            # 27 Nov: a page read through the browser first is kept like any other page, so choice 2 can read it again later
+            keeper.keep(url, final or url, 200, headers, body, ref=cur.get('ref') or '', built=True, kind='html')
         if kind == 'script-built' and not rng and hasattr(getter, 'browser_html') and budget_left():
             # 22 Nov: a page that builds itself is opened once in the browser (same manners, counted as a request) and read
             # like any other page; when the browser is off, missing, refused or the page is still empty, it stays for a person
@@ -629,11 +863,12 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
                     vis, kind, browsed = vis2, 'html', True
                     if keeper is not None:
                         keeper.keep(url, final or url, 200, {'content-type': 'text/html; charset=utf-8'}, built.encode('utf-8'),
-                                    ref=cur.get('ref') or '', built=True)
-        if kind == 'refused' and st in (401, 403) and not rng and not from_copy and hasattr(getter, 'browser_html') and budget_left():
+                                    ref=cur.get('ref') or '', built=True, kind='html')
+        if kind == 'resting' and st in (401, 403) and not rng and not from_copy and hasattr(getter, 'browser_html') and budget_left():
             # 24 Nov 2026 (owner 7:32 AM, P-2 "yes"): a page that answers our plain reader with 401 / 403 gets ONE try in the PC's
             # browser (BROWSER=1), with every manner of the browser read: the same User-Agent, robots.txt, Crawl-delay, the slow-host
             # budget and the pace. A browser that also gets a wall, an empty page or nothing leaves the refusal as it was.
+            # (26 Nov: restored as it was; a 401 / 403 is now kind 'resting', never 'refused'. A 429 gets no browser try.)
             requests += 1
             built = getter.browser_html(final or url) or ''
             if built:
@@ -643,11 +878,33 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
                     vis, kind, browsed = vis2, 'html', True
                     if keeper is not None:
                         keeper.keep(url, final or url, 200, {'content-type': 'text/html; charset=utf-8'}, built.encode('utf-8'),
-                                    ref=cur.get('ref') or '', built=True)
-        if kind == 'refused' and not from_copy and not (isinstance(st, str) and robots_block(st)):
-            # 21 Nov: robots.txt is read for each address (its rules are per path), so a robots 'no' is never remembered for the
-            # whole site; a 401 / 403 / wall counts towards putting the site aside (REFUSALS_FOR_HOST different pages)
-            _remember_refusal(state, R.host_of(final or url) or host, today, final or url)
+                                    ref=cur.get('ref') or '', built=True, kind='html')
+        if st in NR.P2_BROWSER_CODES and not from_copy:
+            if browsed:
+                if hasattr(getter, 'clear_pending'):
+                    getter.clear_pending(R.host_of(final or url) or host)
+            elif hasattr(getter, 'refuse_host'):
+                # 27 Nov (owner: "sure we are just polite"): the browser try was refused too, or was not possible: THIS page
+                # waits for the next run and the site carries on (5 in a row stop it for this run)
+                getter.refuse_host(R.host_of(final or url) or host, f'HTTP {st}, and the page browser did not get the page either')
+        if keeper is not None and not rng and not from_copy and not browsed:
+            keeper.keep(url, final or url, st, headers, body, ref=cur.get('ref') or '', kind=kind)   # 23 Nov: kept for later fixes
+        if wall and not from_copy and hasattr(getter, 'refuse_host'):
+            getter.refuse_host(R.host_of(final or url) or host, 'the page is an "are you human" wall', wall=True)
+        if (wall or st in (401, 403, 429)) and not from_copy and not browsed:
+            _remember_refusal(state, R.host_of(final or url) or host, today, final or url)   # counted for the status page only
+        not_read = None
+        if kind not in ('html', 'pdf'):
+            reason = 'stopped' if wall else NR.reason_of(st, kind)
+            why = ''
+            if reason == 'disallow':
+                why = getter.disallow_line(url) if hasattr(getter, 'disallow_line') else ''
+                why = why or 'robots.txt has a Disallow line for this address'
+            elif reason == 'busy' and hasattr(getter, 'robots_note') and st == 'robots-unreadable':
+                why = (getter.robots_note(url) or ('', ''))[1]
+            not_read = {'reason': reason, 'why': why or NR.REASON_WORDS.get(reason, ''), 'status': st, 'date': today}
+            if reason == 'disallow':
+                not_read['line'] = why
         if kind == 'dead':
             prev = (state.get('dead') or {}).get(url)
             twice = False
@@ -661,26 +918,31 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
             vis_dead = twice
         else:
             vis_dead = False
-        if kind == 'resting' and isinstance(st, str) and st == 'rest':
-            pass
         page = {'url': url, 'final': final or url, 'status': st, 'kind': kind, 'text': vis.get('text') or '',
                 'html': vis.get('html') or '', 'title': vis.get('title') or '', 'heading': vis.get('heading') or '',
                 'og': vis.get('og') or '', 'jsonld': vis.get('jsonld') or '', 'links': vis.get('links') or [],
                 'headings': vis.get('headings') or [],
                 'fingerprint': R.fp_of(vis.get('text') or ''), 'dead_twice': vis_dead, 'family': R.family_of(final or url),
                 'thin': len((vis.get('text') or '').strip()) < 400}
+        if not_read:
+            page['not_read'] = not_read
+        if isinstance(headers, dict) and st == 200 and kind in ('html', 'pdf'):
+            v = {k: headers[k] for k in ('etag', 'last-modified') if headers.get(k)}
+            if v:
+                page['validators'] = v
         if browsed:
             page['browser'] = True
         if from_copy:
-            page['kept_date'] = (getter.copy._rec(url) or {}).get('date') or ''
+            page['kept_date'] = (getter.copy._rec(url) or {}).get('date') or '' if isinstance(getter, KeeperCopyGetter) and getter.copy._rec(url) else today
         cache[key] = page
         return page
 
-    groups = {}
+    groups, chosen_all = {}, {}
     for area, parks in areas.items():
         if areas_only and area not in areas_only:
             continue
         chosen = {ref: choose_link(ref, row, web, docs)[0] for ref, row in parks.items()}
+        chosen_all[area] = chosen
         groups[area] = _shared_map(chosen)
         out.setdefault(area, {})
     if refs:
@@ -695,7 +957,58 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
         sequence = [(area, ref) for area, parks in areas.items()
                     if not (areas_only and area not in areas_only) for ref in parks]
 
+    def is_fresh(area, ref, url):
+        """26 Nov 2026 (owner 8:49 PM: 'webpage reader I think waste a lot of time going oh i read these 1000 pages before';
+        PC state: 3,806 'resting', 1,050 'refused', 101 PDF and 51 script-built reads saved with the fingerprint of an EMPTY
+        page, so each was passed over as 'read before' for the whole refresh window and never really read: BLM 897 parks,
+        NY DEC 567, Missouri 430, the Forest Service 268, NY state parks 194). Only a page that was really read (html or pdf with
+        words) counts as read; a resting or empty read is due on the next run; a refused page waits REFUSED_DAYS; a page that
+        builds itself waits only while the PC has no page browser (BROWSER=1)."""
+        prev = (state.get('read') or {}).get(ref) or {}
+        age = W.age_days(prev.get('date'), today) if prev.get('date') else None
+        kind, fp = prev.get('kind'), prev.get('fingerprint')
+        if not (url and fp and prev.get('url') == url and age is not None and has_old(area, ref)):
+            return False
+        if kind in ('html', 'pdf') and fp != EMPTY_FP: ok = age < refresh_days
+        elif kind == 'dead': ok = age < min(refresh_days, DEAD_RETRY_DAYS)   # 26 Nov: a dead link is a failure: tried again after a week
+        elif kind == 'refused': ok = False   # 26 Nov (owner's site rule, audit path N): robots.txt is read fresh every run
+        elif kind == 'script-built' and fp != EMPTY_FP: ok = age < refresh_days and os.environ.get('BROWSER') != '1'
+        else: ok = False   # resting, or nothing read: due now
+        if len((groups.get(area) or {}).get(norm_url(url), [ref])) >= 2 and prev.get('list_rule') != LIST_RULE:
+            ok = False   # 23 Nov: read before shared pages were followed to the park's own link
+        if reextract:
+            ok = False   # 23 Nov: reading the kept pages again with today's finders
+        if url and '?' in url and prev.get('key_rule') != URL_KEY_RULE:
+            ok = False   # 23 Nov 'q1': a numbered page read under the old address key was another park's page
+        return ok
+
+    # 26 Nov 2026: the parks that are due are read FIRST (never really read before them all), and a park read before is passed
+    # over without a line on the screen; the saved 'left' list stays sorted, so the read order is still never saved
+    if 'browser_hosts' not in state:
+        # 27 Nov 2026: once, the sites behind the empty 'resting' reads of earlier runs start on the browser list
+        bh = state.setdefault('browser_hosts', {})
+        for v in (state.get('read') or {}).values():
+            if v.get('kind') == 'resting' and (v.get('fingerprint') or EMPTY_FP) == EMPTY_FP and R.host_of(v.get('url') or ''):
+                bh.setdefault(R.host_of(v.get('url')), today)
+        for h in (state.get('hosts') or {}):
+            bh.setdefault(h, today)
+    if not quiet:
+        _bh = len(state.get('browser_hosts') or {})
+        if _bh and os.environ.get('BROWSER') != '1':
+            print(f'{_bh} site(s) stopped answering the plain reader before. The page browser is OFF, so they may rest again: '
+                  f'run 0-INSTALL-PAGE-BROWSER.bat once.', flush=True)
+        elif _bh:
+            print(f'{_bh} site(s) that stopped answering the plain reader are read through the page browser.', flush=True)
+    _due = [not is_fresh(a, r, (chosen_all.get(a) or {}).get(r)) for a, r in sequence]
+    _never = sum(1 for (a, r), d in zip(sequence, _due) if d and (((state.get('read') or {}).get(r) or {}).get('fingerprint') or EMPTY_FP) == EMPTY_FP)
+    sequence = [x for x, d in zip(sequence, _due) if d] + [x for x, d in zip(sequence, _due) if not d]
+    _n_due, _bar_n, _bar_t0 = sum(_due), [0], time.time()
+    if not quiet:
+        print(f'{sum(_due):,} park(s) are due now ({_never:,} not read yet, or only an empty, resting or refused answer before); they are read '
+              f'first. {len(_due) - sum(_due):,} read before are passed over quietly.', flush=True)
+
     def stop(reason, index):
+        watch_stop.set()   # 27 Nov 2026: the 'still on' watcher ends with the walk
         if keeper is not None:
             keeper.save()
         state['stopped'] = reason
@@ -714,29 +1027,23 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
             _write_progress(out_dir, out, state, state_path)
         return out, requests
 
-    _t0p = time.time()
     for index, (area, ref) in enumerate(sequence):
-        if index % 25 == 0: print(_kpc_bar(index, len(sequence), f'pages read ({area})', _t0p), flush=True)
         parks = areas[area]
         if max_parks is not None and done >= max_parks:
             return stop('parks', index)
         row = parks[ref]
         cur['ref'] = ref
+        cur.update(t0=time.time(), paced0=(_M.paced_s if _M is not None else 0.0), said_long=False)   # 27 Nov 2026: this park's clock
         url, src, others = choose_link(ref, row, web, docs)
         progress(area, done, 'reading')
-        if on_park:
-            on_park(done + 1, ref)
         # A page read inside the refresh window is not fetched again. The caller keeps the old fact.
         prev = (state.get('read') or {}).get(ref) or {}
-        age = W.age_days(prev.get('date'), today) if prev.get('date') else None
-        fresh = bool(url and prev.get('fingerprint') and prev.get('url') == url and age is not None and age < refresh_days
-                     and has_old(area, ref))
-        if len((groups.get(area) or {}).get(norm_url(url), [ref])) >= 2 and prev.get('list_rule') != LIST_RULE:
-            fresh = False   # 23 Nov: read before shared pages were followed to the park's own link
-        if reextract:
-            fresh = False   # 23 Nov: reading the kept pages again with today's finders
-        if url and '?' in url and prev.get('key_rule') != URL_KEY_RULE:
-            fresh = False   # 23 Nov 'q1': a numbered page read under the old address key was another park's page
+        fresh = is_fresh(area, ref, url)
+        if on_park and not fresh:
+            on_park(done + 1, ref)
+        if not fresh and not quiet:
+            _bar_n[0] += 1
+            if _bar_n[0] % 25 == 1: print(_kpc_bar(_bar_n[0] - 1, _n_due, f'due pages read ({area})', _bar_t0), flush=True)
         if fresh:
             out[area][ref] = {'ref': ref, 'unchanged': True, 'page': {'fingerprint': prev.get('fingerprint'),
                              'kind': prev.get('kind'), 'read': today, 'seen': today}, 'questions': []}
@@ -784,12 +1091,15 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
             skipped = R.build_facts(ref, area, pota, parks, asked, [main], today, [], 'unknown', 'the read was skipped',
                                     read_blocks=False)
             skipped['page']['kind'] = main.get('kind')
+            nr = main.get('not_read') or {'reason': NR.reason_of(main.get('status'), main.get('kind')), 'status': main.get('status')}
             out[area][ref] = {'ref': ref, 'unchanged': True, 'keep_exact': True, 'fallback': skipped,
+                              'last_try': dict(nr, date=today, url=url),
                               'page': {'kind': main.get('kind'), 'read': today}, 'questions': []}
             done += 1
             save_progress(index)
             continue
-        if (not reextract and prev.get('fingerprint') and prev.get('url') == url and prev.get('fingerprint') == main.get('fingerprint')
+        if (not reextract and prev.get('fingerprint') and prev.get('fingerprint') != EMPTY_FP and prev.get('url') == url
+                and prev.get('fingerprint') == main.get('fingerprint')
                 and has_old(area, ref)
                 and (len((groups.get(area) or {}).get(norm_url(url), [ref])) < 2 or prev.get('list_rule') == LIST_RULE)):
             # same text: keep the old facts, no new question
@@ -893,6 +1203,8 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
                 fact['asked']['row'] = R.clip(listed_row)
             state['read'][ref] = {'url': url, 'fingerprint': main.get('fingerprint') or '', 'date': when,
                                   'kind': fact['page']['kind'], 'final': main.get('final'), 'key_rule': URL_KEY_RULE}
+            if main.get('validators'):
+                state['read'][ref]['validators'] = main['validators']   # 26 Nov: the next read asks "changed since?" (ETag / Last-Modified)
             if len(refs_here) >= 2:
                 state['read'][ref]['list_rule'] = LIST_RULE
             if followed:
@@ -908,6 +1220,8 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
             continue
         done += 1
         save_progress(index)
+    watch_stop.set()   # 27 Nov 2026: the 'still on' watcher ends with the walk
+    cur['t0'] = None
     state['left'] = []
     state['stopped'] = ''
     if keeper is not None:
@@ -920,8 +1234,8 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
         for a in finished:
             c.pop(a, None)
         state['cutoff'] = c
-    if isinstance(getter, LiveGetter) or (isinstance(getter, KeeperCopyGetter) and getter.live is not None):
-        state['hosts'] = getter.resting()
+    state['hosts'] = {}   # 26 Nov 2026 (owner's site rule): no rest is carried into the next run
+    state['refused'] = {}
     return out, requests
 
 
@@ -1130,7 +1444,7 @@ def area_parks_to_save(path, parks):
     """21 Nov: the parks to write for one area: every park already in the file, with this run's parks over them. Before, the
     file was replaced by this run's parks alone, so a run that stopped part way (or saved after each park) wiped the facts of
     every park it had not reached yet, and a park re-read as unchanged lost its full fact (only a stub was left)."""
-    old = load_json(path, {}).get('parks') or {}
+    old = load_facts_file(path)
     keep = dict(old)
     keep.update(parks)
     return keep
@@ -1144,16 +1458,88 @@ def write_facts(out_dir, facts_by_area):
                   only_if_changed=True)
 
 
+def set_aside_shared_names(out_dir, limit=None):
+    """26 Nov 2026 (audit F11; the junk table's shared_limit): a page "name" that more than `limit` parks of the SAME site carry
+    is the site's heading, not a park's name ('Other Name(s)' on 110 historicplaces.ca parks, 'FISH, WILDLIFE & PARKS' on 108
+    myfwp.mt.gov parks). It is set aside for every park whose own POTA name it is not. Runs over the saved facts of every
+    area; idempotent (a name set aside before still counts). -> number of parks changed."""
+    limit = R.SHARED_LIMIT if limit is None else limit
+    root = pathlib.Path(out_dir) / 'facts'
+    if not root.is_dir():
+        return 0
+    files = {f: load_facts_file(f) for f in sorted(root.glob('*.json'))}
+
+    def shown(fact):
+        nm = fact.get('name') or {}
+        for x in nm.get('set_aside') or []:
+            if x.get('rule') == 'shared':
+                return x.get('name') or ''
+        return nm.get('best') or nm.get('heading') or nm.get('title') or ''
+
+    count = {}
+    for parks in files.values():
+        for ref, fact in parks.items():
+            if not isinstance(fact, dict) or fact.get('unchanged'):
+                continue
+            n = R.norm_written(shown(fact))
+            host = (fact.get('page') or {}).get('host') or (fact.get('own_page') or {}).get('host') or ''
+            if n and host:
+                count.setdefault((host, n), set()).add(ref)
+    many = {k for k, v in count.items() if len(v) > limit}
+    changed = 0
+    for f, parks in files.items():
+        touched = False
+        for ref, fact in parks.items():
+            if not isinstance(fact, dict) or fact.get('unchanged'):
+                continue
+            val = shown(fact)
+            host = (fact.get('page') or {}).get('host') or (fact.get('own_page') or {}).get('host') or ''
+            if (host, R.norm_written(val)) not in many:
+                continue
+            nm = dict(fact.get('name') or {})
+            if R.compare_names(val, (fact.get('pota') or {}).get('name')) in ('same', 'same-core'):
+                continue
+            if any(x.get('rule') == 'shared' for x in nm.get('set_aside') or []) and not any(nm.get(k) == val for k in ('best', 'heading', 'title')):
+                continue
+            n_same = len(count[(host, R.norm_written(val))])
+            nm['set_aside'] = list(nm.get('set_aside') or []) + [{'name': R.clip(val, 120), 'from': 'heading', 'rule': 'shared',
+                                                                 'why': f'{n_same} parks of {host} carry this same name: it is the site\'s, not the park\'s'}]
+            for k in ('best', 'heading', 'title'):
+                if nm.get(k) == val:
+                    nm[k] = None if k == 'best' else ''
+            nm['vs_pota'] = None
+            nm['names'] = [x for x in nm.get('names') or [] if R.norm_written(x.get('name')) != R.norm_written(val)]
+            fact = dict(fact, name=nm)
+            fact['questions'] = R.questions_for(fact)
+            parks[ref] = fact
+            touched = True
+            changed += 1
+        if touched:
+            doc = load_json(f, {}) or {}
+            doc['parks'] = parks
+            save_json(f, doc)
+    return changed
+
+
 def merge_unchanged(out_dir, facts_by_area):
     """A park marked unchanged keeps the fact already on disk."""
     root = pathlib.Path(out_dir)
     for area, parks in facts_by_area.items():
         path = root / 'facts' / f'{area}.json'
-        old = load_json(path, {}).get('parks') or {}
+        old = load_facts_file(path)
         for ref, fact in list(parks.items()):
             if fact.get('keep_exact'):
-                # a skipped read: the earlier fact, byte for byte; with no earlier fact, the skipped one
-                parks[ref] = old[ref] if ref in old else fact.get('fallback') or {'ref': ref}
+                # a skipped read: the earlier facts stay (name, sizes, everything); 26 Nov: the failed try is written BESIDE them
+                # (page.last_try with its date and reason), never instead of them. With no earlier fact, the skipped one.
+                if ref in old and isinstance(old[ref], dict) and not old[ref].get('unchanged'):
+                    kept = dict(old[ref])
+                    page = dict(kept.get('page') or {})
+                    if fact.get('last_try'):
+                        page['last_try'] = fact['last_try']
+                    kept['page'] = page
+                    parks[ref] = kept
+                else:
+                    parks[ref] = fact.get('fallback') or {'ref': ref}
                 continue
             if fact.get('unchanged') and ref not in old:
                 parks.pop(ref, None)   # audit 2 MUST 1: never an empty stub in place of the facts
@@ -1232,6 +1618,9 @@ def _finish(args, facts, order, lists, state, state_path, today, requests, old_f
             changes.extend(W.change_rows(ref, (old_facts.get(area) or {}).get(ref), fact, today))
     merge_unchanged(args.out, facts)
     write_facts(args.out, facts)
+    n_shared = set_aside_shared_names(args.out)
+    if n_shared and not getattr(args, 'quiet', False):
+        print(f'{n_shared:,} page name(s) set aside: the same heading on more than {R.SHARED_LIMIT} parks of one site.', flush=True)
     seen = {i['ref'] for i in order}
     full = list(order) + [{'ref': ref, 'area': area, 'tier': 9, 'why': ''}
                           for area, parks in facts.items() for ref in parks if ref not in seen]
@@ -1246,6 +1635,8 @@ def _finish(args, facts, order, lists, state, state_path, today, requests, old_f
               'stopped': state.get('stopped') or ''})
     if state_path:
         save_json(state_path, state)
+    write_disallow_list(args.out)
+    write_status(args)
     if getattr(args, 'not_sure', ''):
         ns = NS.NotSure(args.not_sure)
         NS.note_from_reader(ns, facts, today)
@@ -1255,6 +1646,51 @@ def _finish(args, facts, order, lists, state, state_path, today, requests, old_f
             for ref, row in parks.items():
                 qsos[ref] = row.get('qsos') or 0
         ns.summary(today=today, qsos=qsos)
+
+
+def write_disallow_list(out_dir):
+    """26 Nov 2026 (audit 6.4 change 5): the pages a REAL robots.txt Disallow line refused, each with that line: the owner's
+    hand-look / hand-download list (out/robots-disallow-hand-look.csv). Nothing else goes on it."""
+    import csv
+    rows = []
+    for area, parks in sorted(W.load_facts(out_dir).items()):
+        for ref, f in sorted(parks.items()):
+            pg = (f or {}).get('page') or {}
+            nr = pg.get('not_read') or {}
+            if pg.get('kind') == 'refused' and nr.get('reason') == 'disallow':
+                rows.append([ref, pg.get('host') or '', pg.get('final_url') or (f.get('asked') or {}).get('url') or '', nr.get('line') or '', nr.get('date') or pg.get('read') or ''])
+    p = pathlib.Path(out_dir) / 'robots-disallow-hand-look.csv'
+    tmp = p.with_name(p.name + '.tmp')
+    with tmp.open('w', encoding='utf-8', newline='') as fh:
+        w = csv.writer(fh)
+        w.writerow(['park', 'site', 'page', 'robots.txt line that says no', 'checked on'])
+        w.writerows(rows)
+    os.replace(tmp, p)
+    return len(rows)
+
+
+def write_status(args):
+    """26 Nov 2026: PAGE-READER-STATUS.txt at the end of every run (and the 'status' command). Never stops a run."""
+    try:
+        import kpc_page_status as ST
+        p, _ = ST.write(args.out, getattr(args, 'status_file', '') or None)
+        if not getattr(args, 'quiet', False):
+            print(f'The status page is {p}.', flush=True)
+    except Exception as e:  # noqa: BLE001
+        print(f'::warning title=Status page not written::{type(e).__name__}: {e}', flush=True)
+
+
+def cmd_status(args):
+    """Reads nothing from the web: the status page from the files already on this PC."""
+    import kpc_page_status as ST
+    if not args.out:
+        print('The status page needs --out, the folder the reader writes.')
+        return 0
+    n = set_aside_shared_names(args.out)   # files only
+    p, text = ST.write(args.out, getattr(args, 'status_file', '') or None)
+    print(text)
+    print(f'Saved as {p}.' + (f' ({n:,} shared page names set aside.)' if n else ''))
+    return 0
 
 
 def cmd_worklist(args):
@@ -1283,7 +1719,7 @@ def cmd_read(args):
     if reextract:
         # 23 Nov: only the kept pages, never a site. Every park whose page is kept is read again; the others are not touched.
         man = pathlib.Path(kept_dir) / 'manifest.json'
-        if not kept_dir or not man.is_file():
+        if not kept_dir or not (man.is_file() or man.with_name('manifest.journal').is_file()):
             print('No pages are kept yet (the reader keeps them from its next run on). Nothing was read again.')
             return 0
         getter = KeeperCopyGetter(kept_manifest(man), man.parent, None)
@@ -1347,14 +1783,18 @@ def cmd_read(args):
     get_max = getattr(args, 'max_get_seconds', None)
     if get_max is None:
         get_max = GET_MAX_SECONDS
+    pk = (PageKeeper(kept_dir, today) if kept_dir and not reextract and keep_arg != 'off'
+          and (keep_arg or isinstance(getter, LiveGetter) or (isinstance(getter, KeeperCopyGetter) and getter.live is not None)) else None)
+    M = getattr(getter, 'M', None) or getattr(getattr(getter, 'live', None), 'M', None)
+    if M is not None:
+        # 26 Nov (doing less): ask "changed since?" only for pages whose copy is kept on this PC (a 304 then reads the copy)
+        keep_urls = {request_url(r['url']) for r in (state.get('read') or {}).values() if isinstance(r, dict) and r.get('url') and pk and pk.has(r['url'])}
+        M.conditional = {u: v for u, v in M.conditional.items() if u in keep_urls}
     facts, reqs = read_parks(areas, web, docs, truth, getter, state, today, refs=refs, areas_only=areas_only,
                              max_requests=args.max_requests, max_per_park=args.max_per_park, max_parks=args.max_parks,
                              on_park=None if args.quiet else on_park, refresh_days=args.refresh_days, deadline=deadline,
                              out_dir=args.out or None, state_path=state_path or None,
-                             get_max_seconds=get_max, quiet=bool(args.quiet), reextract=reextract,
-                             keeper=(PageKeeper(kept_dir, today) if kept_dir and not reextract and keep_arg != 'off'
-                                     and (keep_arg or isinstance(getter, LiveGetter)
-                                          or (isinstance(getter, KeeperCopyGetter) and getter.live is not None)) else None))
+                             get_max_seconds=get_max, quiet=bool(args.quiet), reextract=reextract, keeper=pk)
     if not state.get('stopped'):
         state['run'] = 'done'
     else:
@@ -1441,6 +1881,7 @@ def cmd_report(args):
     pathlib.Path(args.out, 'summary.md').write_text('\n'.join(lines) + '\n', encoding='utf-8')
     if not args.quiet:
         print('\n'.join(lines))
+    write_status(args)
     return 0
 
 
@@ -1610,12 +2051,12 @@ def selftest():
         getter = FixtureGetter(manifest, t)
         state = {}
         facts, reqs = read_parks(areas, web, docs, truth, getter, state, '2026-11-19', refs=['US-9'])
-        check('a 403 is refused and counted for its site (put aside after 3 different pages, 21 Nov)',
-              facts['US-DE']['US-9']['page']['kind'] == 'refused' and 'documents.example.gov' not in state['refused']
-              and len(state['refusal_pages']['documents.example.gov']) == 1)
+        check('26 Nov: a 403 is "not now", never saved as blocked (kind resting, reason stopped), and no site is set aside',
+              facts['US-DE']['US-9']['page']['kind'] == 'resting' and not state['refused']
+              and facts['US-DE']['US-9']['page']['not_read']['reason'] == 'stopped')
         getter2 = FixtureGetter(manifest, t)
         facts2, reqs2 = read_parks(areas, web, docs, truth, getter2, state, '2026-11-20', refs=['US-9'])
-        check('a refused host is not asked the next day', reqs2 == 0 and getter2.calls == [])
+        check('26 Nov: a page that answered 403 is asked again on the next run', reqs2 == 1 and getter2.calls == ['https://documents.example.gov/a.pdf'])
 
     # worklist: list drop first, then approximate, then pin with a page, then never-read by qsos, then old
     areas = {'US-UT': {
@@ -1663,7 +2104,9 @@ def main(argv=None):
                    help='wall-clock cap on one download, in seconds')
     p.add_argument('--max-per-park', type=int, default=R.MAX_PER_PARK)
     p.add_argument('--max-parks', type=int, default=None)
-    p.add_argument('--refresh-days', type=int, default=W.REFRESH_DAYS)
+    p.add_argument('--refresh-days', type=int, default=NEVER_DAYS, help='26 Nov: a page already read is read again only when asked, '
+                   'with this many days (default: never)')
+    p.add_argument('--status-file', default='', help='26 Nov: where PAGE-READER-STATUS.txt goes (default: the tool folder)')
     p.add_argument('--links', default='')
     p.add_argument('--lists', default='')
     p.add_argument('--lists-done', default='')
@@ -1713,6 +2156,8 @@ def _dispatch(args):
         return cmd_worklist(args)
     if args.command == 'report':
         return cmd_report(args)
+    if args.command == 'status':
+        return cmd_status(args)
     if args.command == 'person-page':
         return cmd_person_page(args)
     if args.command == 'intake':
