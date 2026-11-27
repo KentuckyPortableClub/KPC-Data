@@ -606,10 +606,24 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
         if key in cache:
             return cache[key]
         requests += 1
-        try:
-            st, headers, body, final = getter.get(url, rng=rng, deadline=deadline, max_time=get_max_seconds)
-        except TypeError:
-            st, headers, body, final = getter.get(url, rng=rng)
+        pre_browsed = ''
+        if (host and host in (state.get('browser_hosts') or {}) and not rng and os.environ.get('BROWSER') == '1'
+                and hasattr(getter, 'browser_html') and not isinstance(getter, KeeperCopyGetter)):
+            # 27 Nov 2026 (owner's PC run of 26 Nov: www.dec.ny.gov, www.fs.usda.gov, Michigan DNR and others stopped answering
+            # the plain reader, struck out and rested for a day, so 3,806 parks stayed 'resting'): a site that struck out on the
+            # plain reader is read through the PC's page browser first, with every manner of the browser read (robots.txt,
+            # Crawl-delay, the slow-host budget, the pace, and a site still resting is not asked)
+            pre_browsed = getter.browser_html(url) or ''
+        if pre_browsed:
+            st, headers, body, final = 200, {'content-type': 'text/html; charset=utf-8'}, pre_browsed.encode('utf-8'), url
+        else:
+            try:
+                st, headers, body, final = getter.get(url, rng=rng, deadline=deadline, max_time=get_max_seconds)
+            except TypeError:
+                st, headers, body, final = getter.get(url, rng=rng)
+            if host and not rng and (st == 'rest' or (isinstance(st, str) and st.startswith('err') and st != 'err:deadline')
+                                     or (isinstance(st, int) and st >= 500)):
+                state.setdefault('browser_hosts', {})[host] = today   # 27 Nov: read through the browser from now on
         from_copy = isinstance(getter, KeeperCopyGetter) and getter.copy._rec(url) is not None
         if keeper is not None and not rng and not from_copy:
             keeper.keep(url, final or url, st, headers, body, ref=cur.get('ref') or '')   # 23 Nov: the page is kept for later fixes
@@ -618,7 +632,7 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
         kind = _kind_of_status(st, vis.get('text'), final or url, is_pdf=bool(vis.get('pdf')))
         if kind == 'html' and R.unfilled_template(vis.get('html')):
             kind = 'script-built'     # 23 Nov: a heading still a script template (Minnesota DNR): open it in the browser
-        browsed = False
+        browsed = bool(pre_browsed)
         if kind == 'script-built' and not rng and hasattr(getter, 'browser_html') and budget_left():
             # 22 Nov: a page that builds itself is opened once in the browser (same manners, counted as a request) and read
             # like any other page; when the browser is off, missing, refused or the page is still empty, it stays for a person
@@ -725,6 +739,21 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
 
     # 26 Nov 2026: the parks that are due are read FIRST (never really read before them all), and a park read before is passed
     # over without a line on the screen; the saved 'left' list stays sorted, so the read order is still never saved
+    if 'browser_hosts' not in state:
+        # 27 Nov 2026: once, the sites behind the empty 'resting' reads of earlier runs start on the browser list
+        bh = state.setdefault('browser_hosts', {})
+        for v in (state.get('read') or {}).values():
+            if v.get('kind') == 'resting' and (v.get('fingerprint') or EMPTY_FP) == EMPTY_FP and R.host_of(v.get('url') or ''):
+                bh.setdefault(R.host_of(v.get('url')), today)
+        for h in (state.get('hosts') or {}):
+            bh.setdefault(h, today)
+    if not quiet:
+        _bh = len(state.get('browser_hosts') or {})
+        if _bh and os.environ.get('BROWSER') != '1':
+            print(f'{_bh} site(s) stopped answering the plain reader before. The page browser is OFF, so they may rest again: '
+                  f'run 0-INSTALL-PAGE-BROWSER.bat once.', flush=True)
+        elif _bh:
+            print(f'{_bh} site(s) that stopped answering the plain reader are read through the page browser.', flush=True)
     _due = [not is_fresh(a, r, (chosen_all.get(a) or {}).get(r)) for a, r in sequence]
     _never = sum(1 for (a, r), d in zip(sequence, _due) if d and (((state.get('read') or {}).get(r) or {}).get('fingerprint') or EMPTY_FP) == EMPTY_FP)
     sequence = [x for x, d in zip(sequence, _due) if d] + [x for x, d in zip(sequence, _due) if not d]

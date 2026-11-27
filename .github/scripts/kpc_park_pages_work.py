@@ -412,6 +412,13 @@ def render_summary(facts_by_area, order, state, today, requests):
         lines.append('None.')
     refused = sorted((state.get('refused') or {}))
     lines.append('Hosts that refused: ' + (', '.join(refused) if refused else 'none') + '.')
+    # 27 Nov 2026: say which sites stopped answering the plain reader (read through the page browser next time)
+    bh = sorted(state.get('browser_hosts') or {})
+    if bh:
+        lines.append(f'Sites read through the page browser ({len(bh)}): ' + ', '.join(bh[:15]) + (' ...' if len(bh) > 15 else '') + '.')
+    resting = sum(1 for v in (state.get('read') or {}).values() if v.get('kind') == 'resting')
+    if resting:
+        lines.append(f'Parks still waiting on a site that did not answer: {resting:,}.')
     why = state.get('stopped') or ''
     if why:
         lines.append(f'The run stopped on {why}. The next run continues from the parks that are left.')
