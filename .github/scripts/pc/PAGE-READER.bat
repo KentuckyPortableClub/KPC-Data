@@ -21,12 +21,12 @@ echo        and the slow sites (as slowly as each site asks). Uses the internet.
 echo        It can run all night. Close the window to stop; it carries on next time.
 echo     Q  Quit
 echo.
-set "C="
-set /p "C=    Type 1, 2 or 3 and press Enter: "
-if /i "%C%"=="1" goto status
-if /i "%C%"=="2" goto reread
-if /i "%C%"=="3" goto missing
-if /i "%C%"=="Q" exit /b
+rem 27 Nov 2026: one key press, no Enter (the same way the store room button asks). Typed answers were not taken on the owner's PC.
+choice /c 123Q /n /m "    Press 1, 2, 3 or Q (no Enter needed): "
+if errorlevel 4 exit /b
+if errorlevel 3 goto missing
+if errorlevel 2 goto reread
+if errorlevel 1 goto status
 goto menu
 
 :status
