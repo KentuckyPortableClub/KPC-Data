@@ -41,8 +41,9 @@ check(K.robots_allowed(rules('User-agent: *\nDisallow: /secret\n'), UA, 'https:/
       f'Disallow: /secret is refused on Python {PY} (no fail-open)')
 
 # --- a RobotFileParser or any foreign object must not fail open
-check(K.robots_allowed(object(), UA, 'https://ex.test/') is False,
-      'an unknown rules object is refused (do not fail open)')
+# 27 Nov 2026 (owner's site rule R-NET1, kpc_net_rule): only a real Disallow line is a no; an object with no rules shows none
+check(K.robots_allowed(object(), UA, 'https://ex.test/') is True,
+      'an unknown rules object shows no Disallow line: allowed (only a real Disallow line is a no)')
 
 # --- longest match: Allow: /a then Disallow: /a/b refuses /a/b/x
 rp = rules('User-agent: *\nAllow: /a\nDisallow: /a/b\n')
@@ -60,10 +61,10 @@ check(K.robots_allowed(rp, UA, 'https://ex.test/a/b/x') is True,
 check(K.robots_allowed(rp, UA, 'https://ex.test/a/x') is False,
       'Disallow: /a still refuses a shorter path')
 
-# --- equal length: Disallow wins
+# --- equal length: Allow wins (RFC 9309 2.2.2; 27 Nov 2026, the page reader fix: this test said Disallow before)
 rp = rules('User-agent: *\nAllow: /a\nDisallow: /a\n')
-check(K.robots_allowed(rp, UA, 'https://ex.test/a/x') is False,
-      'at the same path length, Disallow wins')
+check(K.robots_allowed(rp, UA, 'https://ex.test/a/x') is True,
+      'at the same path length, Allow wins (RFC 9309)')
 
 # --- Allow: /parks after Disallow: /  (order that first-match would get wrong)
 rp = rules('User-agent: *\nDisallow: /\nAllow: /parks\nDisallow: /parks/guides/\n')
@@ -96,7 +97,9 @@ check(K.robots_allowed(rp, 'OtherBot/1.0', 'https://ex.test/private/x') is True,
 
 # --- no file vs unreadable vs parse error
 check(K.robots_allowed(None, UA, 'https://ex.test/') is True, 'no robots file = allowed')
-check(K.robots_allowed(False, UA, 'https://ex.test/') is False, 'unreadable robots = do not fetch')
+# 27 Nov 2026 (R-NET1 in kpc_net_rule): a 5xx / unreachable robots.txt stops the site for the RUN inside Manners.get; the rules
+# object itself carries no Disallow line, so robots_allowed has nothing to refuse
+check(K.robots_allowed(False, UA, 'https://ex.test/') is True, 'robots_allowed(False) has no Disallow line (the run stop lives in Manners.get)')
 
 # --- live fetch through Manners: /a/b is not fetched; /a is
 hits = {}
@@ -238,13 +241,13 @@ try:
     K.parse_robots('User-agent: *\nDisallow: /\n' + '#' * (K.ROBOTS_MAX + 1))
 except Exception as e:  # noqa: BLE001
     long_err = e
-check(long_err is not None, f'a robots.txt longer than ROBOTS_MAX is a parse error (got {long_err!r})')
+check(long_err is None, f'a robots.txt longer than ROBOTS_MAX: the first part is read (RFC 9309 2.5; got {long_err!r})')
 nul_err = None
 try:
     K.parse_robots('User-agent: *\nDisallow: /\n\x00')
 except Exception as e:  # noqa: BLE001
     nul_err = e
-check(nul_err is not None, f'a robots.txt with a NUL is a parse error (got {nul_err!r})')
+check(nul_err is None, f'a robots.txt with a NUL is read, not a parse error (only a Disallow line is a no; got {nul_err!r})')
 
 # Through Manners: an oversized robots.txt is unreadable, so the page is not fetched
 class Hlong(http.server.BaseHTTPRequestHandler):
@@ -265,9 +268,9 @@ threading.Thread(target=sl.serve_forever, daemon=True).start()
 basel = f'http://127.0.0.1:{sl.server_address[1]}'
 Ml = K.Manners('too-long robots test'); Ml.gap = 0.0
 st_long, _, body_long, _ = Ml.get(basel + '/ok.htm')
-check(st_long == 'robots-unreadable', f'oversized robots.txt through get() is robots-unreadable (got {st_long!r})')
-check(body_long == b'' and hits.get(('long', '/ok.htm'), 0) == 0,
-      'an oversized robots.txt does not fail open: the page was not fetched')
+check(st_long == 200, f'oversized robots.txt through get(): its first part is read and /ok.htm is not disallowed (got {st_long!r})')
+check(body_long == b'should-not-be-read' and hits.get(('long', '/ok.htm'), 0) == 1,
+      'an oversized robots.txt: the page no Disallow line names is fetched once')
 sl.shutdown()
 
 s.shutdown(); s2.shutdown()

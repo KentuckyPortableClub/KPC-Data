@@ -247,8 +247,9 @@ try:
     fno, _ = PP.read_parks(areas3, {}, {}, {}, g_no, st_no, '2026-11-19', refs=['US-N1'])
     g_no2 = One('robots')
     PP.read_parks(areas3, {}, {}, {}, g_no2, st_no, '2026-11-20', refs=['US-N1'])
-    check('R-PR10 plain: robots.txt no is refused, remembered, and not asked again',
-          fno['US-NO']['US-N1']['page']['kind'] == 'refused' and 'REFUSED' in codes(fno['US-NO']['US-N1']) and g_no2.calls == [])
+    # 27 Nov 2026 (owner's site rule R-NET1: robots.txt is read fresh every run; nothing is saved as blocked)
+    check('R-PR10 plain: robots.txt no is refused this run, and asked again the next run (no verdict remembered)',
+          fno['US-NO']['US-N1']['page']['kind'] == 'refused' and 'REFUSED' in codes(fno['US-NO']['US-N1']) and len(g_no2.calls) == 1)
     g5 = One(503)
     st5 = {}
     f5, _ = PP.read_parks(areas3, {}, {}, {}, g5, st5, '2026-11-19', refs=['US-N2'])

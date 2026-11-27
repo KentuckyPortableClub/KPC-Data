@@ -947,7 +947,9 @@ def src_ky_parks(url):
     rk = M.rkey(url)
     if rk in M.blocked: raise RuntimeError(M.blocked[rk][0])
     if not M.robots_ok(url):
-        raise RuntimeError('robots-unreadable' if M.robots.get(rk) is False and rk not in getattr(M, 'robots_disallow', set()) else 'robots')
+        # 27 Nov 2026: the page reader's site-rule fix keeps an unreadable robots.txt in M.blocked (no longer robots[rk] = False);
+        # without this, a 5xx robots.txt would be reported as a Disallow ('robots'), against R-NET1
+        raise RuntimeError('robots-unreadable' if (rk in getattr(M, 'blocked', {}) or (M.robots.get(rk) is False and rk not in getattr(M, 'robots_disallow', set()))) else 'robots')
     cd = M.crawl_delay(url)
     if cd > _KMB.MAX_CRAWL_DELAY:
         M.for_person.append((url, f'Crawl-delay {cd:g} s is over {_KMB.MAX_CRAWL_DELAY} s: not read')); raise RuntimeError('crawl-delay')

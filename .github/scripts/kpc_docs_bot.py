@@ -43,7 +43,7 @@ PDF_FIRST = 400_000
 PDF_MAX = 2_000_000
 TODAY = time.strftime('%Y-%m-%d')
 STAT = {'requests': 0, 'parks': 0, 'maps_ok': 0, 'maps_found': 0, 'dates': 0, 'rules': 0, 'browser': 0, 'robots': 0, 'strikes': 0, 'errors': 0, 'skipped_fresh': 0}
-LAST, ROBOTS, DEAD, STRIKE = {}, {}, {}, {}
+LAST, ROBOTS, DEAD, STRIKE, REFUSED_ROW = {}, {}, {}, {}, {}
 ROBOTS_SAID, ROBOTS_REFUSED = {}, {}
 QUEUE = ['US-KY',
          'US-TN', 'US-NC', 'US-VA', 'US-WV', 'US-GA', 'US-AL', 'US-SC', 'US-FL', 'US-MS',                     # southeast (2-fer region order)
@@ -156,37 +156,35 @@ def robots_rkey(u):
 
 
 def _load_docs_robots(u, rk):
-    """Read robots.txt for this scheme+host. 200 = its rules; 404/410 and other 4xx except
-    429 = no rules (RFC 9309); 429, 5xx, a time-out, or no connection = unreadable: nothing
-    is fetched from this host this run (not treated as permission)."""
+    """26 Nov 2026: the owner's site rule (kpc_net_rule.ROBOTS_TABLE, the same table as kpc_manners). Only a real Disallow line
+    says no. A web page, an empty file, a file we cannot parse, a file over 500 KB (its first 500 KB are read), 401 / 403 /
+    other 4xx = no rules, allowed. 429 / 5xx / no answer = busy: nothing from this host this run, asked again next run."""
     pu = urllib.parse.urlparse(u)
     ru = f'{pu.scheme or "https"}://{pu.netloc}/robots.txt'
+    NR = kpc_manners.NR
+    st, raw, err = None, b'', None
     try:
-        with urllib.request.urlopen(urllib.request.Request(ru, headers={'User-Agent': UA}), timeout=15) as r:
+        with urllib.request.urlopen(urllib.request.Request(ru, headers={'User-Agent': UA}), timeout=30) as r:
             st, raw = r.status, r.read(kpc_manners.ROBOTS_MAX + 1)
     except urllib.error.HTTPError as e:
         st, raw = e.code, b''
     except Exception as e:  # noqa: BLE001
-        ROBOTS[rk] = False
-        ROBOTS_SAID[rk] = 'robots.txt unreadable (' + str(e)[:40] + ')'
+        err = f'{type(e).__name__}: {str(e)[:60]}'
+    txt = raw.decode('utf-8', 'replace')
+    page = st == 200 and txt.lstrip('\ufeff \t\r\n').startswith('<') and not kpc_manners.ROBOTS_LINE_RX.search(txt)
+    verdict, key, why = NR.robots_verdict(st, raw, False, page, err)
+    ROBOTS_SAID[rk] = why
+    if verdict == 'busy':
+        ROBOTS[rk] = False      # this run only (ROBOTS lives in memory)
         return
-    if st in (404, 410) or (isinstance(st, int) and 400 <= st < 500 and st != 429):
-        ROBOTS[rk] = None   # no file, or unavailable = no rules
-        ROBOTS_SAID[rk] = f'no robots.txt ({st})' if st not in (404, 410) else 'no robots.txt'
-        return
-    if st != 200:
-        ROBOTS[rk] = False
-        ROBOTS_SAID[rk] = f'robots.txt unreadable ({st})'
+    if verdict == 'no-rules':
+        ROBOTS[rk] = None
         return
     try:
-        if len(raw) > kpc_manners.ROBOTS_MAX:
-            raise ValueError('robots.txt too long')
-        txt = raw.decode('utf-8', 'replace')
         ROBOTS[rk] = kpc_manners.parse_robots(txt)
         ROBOTS_SAID[rk] = ' | '.join(l.strip() for l in txt.splitlines() if l.strip() and not l.startswith('#'))[:160]
-    except Exception as e:  # noqa: BLE001
-        ROBOTS[rk] = False
-        ROBOTS_SAID[rk] = 'robots.txt could not be parsed (' + str(e)[:40] + ')'
+    except Exception:  # noqa: BLE001
+        ROBOTS[rk] = None
 
 
 def robots_status(u):
@@ -199,10 +197,7 @@ def robots_status(u):
     if rp is False:
         STAT['robots'] += 1; ROBOTS_REFUSED[rk] = ROBOTS_REFUSED.get(rk, 0) + 1
         return 'robots-unreadable'
-    try:
-        ok = kpc_manners.robots_allowed(rp, UA, u)
-    except Exception:  # noqa: BLE001
-        ok = False   # rules we cannot apply = do not fetch
+    ok = kpc_manners.robots_allowed(rp, UA, u)   # 26 Nov: only a real Disallow line says no
     if not ok:
         STAT['robots'] += 1; ROBOTS_REFUSED[rk] = ROBOTS_REFUSED.get(rk, 0) + 1
         return 'robots'
@@ -213,8 +208,16 @@ def robots_ok(u):
     return robots_status(u) is None
 
 
+def _refusals_in_a_row():
+    try:
+        import kpc_net_rule as NR
+        return NR.REFUSALS_IN_A_ROW
+    except Exception:  # noqa: BLE001
+        return 5
+
+
 def rested(h):
-    """Three strikes = the host rests a day; the rest is remembered across runs in state.json."""
+    """A host stopped for THIS run (a 429, 5 refused pages in a row, or three server errors). Never carried into the next run."""
     return DEAD.get(h, 0) > time.time()
 
 
@@ -236,17 +239,25 @@ def get(u, rng=None, timeout=40, head=False):
             req = urllib.request.Request(u, headers=hdr, method='HEAD' if head else 'GET')
             with urllib.request.urlopen(req, timeout=timeout) as r:
                 body = b'' if head else r.read(PDF_MAX if rng else 3_000_000)
+                REFUSED_ROW.pop(h, None)
                 return r.status, {k.lower(): v for k, v in r.headers.items()}, body, r.geturl()
         except urllib.error.HTTPError as e:
-            if e.code in (429, 500, 502, 503, 504):
+            if e.code in (401, 403, 429):
+                # owner 27 Nov ("sure we are just polite"): a 401 / 403 is THIS page only and the site carries on;
+                # REFUSALS_IN_A_ROW of them in a row, or one 429 (the site says slow down), stop the host for THIS run. No retry.
+                REFUSED_ROW[h] = REFUSED_ROW.get(h, 0) + 1
+                if e.code == 429 or REFUSED_ROW[h] >= _refusals_in_a_row(): DEAD[h] = float('inf')
+                STAT['strikes'] += 1
+                return e.code, {k.lower(): v for k, v in (e.headers or {}).items()}, b'', u
+            if e.code in (500, 502, 503, 504):
                 STRIKE[h] = STRIKE.get(h, 0) + 1; STAT['strikes'] += 1
-                if STRIKE[h] >= STRIKES_OUT: DEAD[h] = time.time() + 86400; return 'rest', {}, b'', u
+                if STRIKE[h] >= STRIKES_OUT: DEAD[h] = float('inf'); return 'rest', {}, b'', u
                 time.sleep(20 * (attempt + 1)); continue
             if e.code == 416 and rng: return get(u, None, timeout, head)   # the file is smaller than the range
             return e.code, {k.lower(): v for k, v in (e.headers or {}).items()}, b'', u
         except (urllib.error.URLError, TimeoutError, OSError, ValueError) as e:
             STRIKE[h] = STRIKE.get(h, 0) + 1; STAT['strikes'] += 1; STAT['errors'] += 1
-            if STRIKE[h] >= STRIKES_OUT: DEAD[h] = time.time() + 86400; return 'rest', {}, b'', u
+            if STRIKE[h] >= STRIKES_OUT: DEAD[h] = float('inf'); return 'rest', {}, b'', u   # this run only
             if attempt == 2: return 'err:' + str(e)[:60], {}, b'', u
             time.sleep(10 * (attempt + 1))
     return 'err', {}, b'', u
@@ -1223,8 +1234,7 @@ def review(state):
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     state = load(OUT / 'state.json', {'areas': {}, 'hosts': {}})
-    for h, t in (state.get('hosts') or {}).items():
-        if t > time.time(): DEAD[h] = t
+    state['hosts'] = {}   # 26 Nov (owner's site rule): a rest from an earlier run is never carried over
     want = (os.environ.get('AREAS') or '').upper().split()
     def stale(a):   # an area whose records were made by an older rule set is read again (VER)
         try: return any((p.get('ver') or 1) < VER for p in (load(OUT / f'{a}.json', {}).get('parks') or {}).values())
@@ -1240,7 +1250,7 @@ def main():
     for area in areas:
         if late(): break
         run_area(area, state, web, lists, ky)
-    state['hosts'] = {h: t for h, t in DEAD.items() if t > time.time()}
+    state['hosts'] = {}   # 26 Nov: nothing is carried into the next run
     state['last'] = {'when': TODAY, 'areas': areas[:8], 'stat': STAT}
     save(OUT / 'state.json', state)
     review(state)

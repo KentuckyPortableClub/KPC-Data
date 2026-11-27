@@ -88,8 +88,8 @@ def why_needed(fact):
     codes = {q.get('code') for q in fact.get('questions') or [] if isinstance(q, dict)}
     if own == 'agency-home' or 'AGENCY_HOME_ONLY' in codes:
         return 'agency home only'
-    if pg.get('kind') == 'dead' or 'LINK_DEAD' in codes:
-        return 'dead link'
+    if pg.get('kind') == 'dead' or 'LINK_DEAD' in codes or (pg.get('last_try') or {}).get('reason') == 'dead':
+        return 'dead link'   # 26 Nov: a dead link noted beside the earlier facts counts too
     if not asked.get('url') or pg.get('kind') == 'none' or 'NO_PAGE' in codes:
         return 'no link'
     return ''
@@ -257,8 +257,8 @@ class Fetcher:
         except TypeError:
             st, _h, body, _f = self.getter.get(url)
         if st != 200:
-            if st in (401, 403) or (isinstance(st, str) and P.robots_block(st) and not P.next_run(st)):
-                self.said_no += 1      # the site says no
+            if st == 'robots':
+                self.said_no += 1      # 26 Nov (owner's site rule): only a real robots.txt Disallow line is the site saying no
             elif isinstance(st, str) and (P.next_run(st) or st.startswith('err')) or (isinstance(st, int) and st >= 500):
                 self.busy += 1         # busy or resting: the park is looked for again next run
             return b''
@@ -290,11 +290,6 @@ class Fetcher:
         if R.is_wdpa(url):
             return None
         host = R.host_of(url)
-        if host and P._refused_until(self.state, host, self.today):
-            self.said_no += 1
-            page = {'url': url, 'final': url, 'status': 'refused', 'kind': 'refused', 'text': '', 'links': []}
-            self.cache[key] = page
-            return page
         from_copy = isinstance(self.getter, P.KeeperCopyGetter) and self.getter.copy._rec(url) is not None
         if not from_copy and not self.left():
             self.busy += 1
@@ -305,15 +300,21 @@ class Fetcher:
             st, headers, body, final = self.getter.get(url, deadline=self.deadline, max_time=self.get_max)
         except TypeError:
             st, headers, body, final = self.getter.get(url)
-        if self.keeper is not None and not from_copy:
-            self.keeper.keep(url, final or url, st, headers, body)
         extra = self.getter.links_for(url) if hasattr(self.getter, 'links_for') else []
         vis = R.visible_of(body, headers, final or url, extra)
         kind = P._kind_of_status(st, vis.get('text'), final or url, is_pdf=bool(vis.get('pdf')))
         if kind == 'html' and R.unfilled_template(vis.get('html')):
             kind = 'script-built'
-        if kind == 'refused' and not from_copy and not (isinstance(st, str) and P.robots_block(st)):
-            P._remember_refusal(self.state, R.host_of(final or url) or host, self.today, final or url)
+        if self.keeper is not None and not from_copy:
+            self.keeper.keep(url, final or url, st, headers, body, kind=kind)   # 26 Nov: a wall never replaces a good kept copy
+        if st in (401, 403, 429) and not from_copy:
+            P._remember_refusal(self.state, R.host_of(final or url) or host, self.today, final or url)   # counted only (26 Nov)
+            # 27 Nov (owner: "sure we are just polite"): a 429 stops the site for this run; a 401 / 403 is this page only
+            # (the finder makes no browser try), and 5 in a row stop the site for this run
+            if st == 429 and hasattr(self.getter, 'stop_host'):
+                self.getter.stop_host(R.host_of(final or url) or host, f'HTTP {st}')
+            elif st != 429 and hasattr(self.getter, 'refuse_host'):
+                self.getter.refuse_host(R.host_of(final or url) or host, f'HTTP {st}')
         page = {'url': url, 'final': final or url, 'status': st, 'kind': kind, 'text': vis.get('text') or '',
                 'html': vis.get('html') or '', 'title': vis.get('title') or '', 'heading': vis.get('heading') or '',
                 'og': vis.get('og') or '', 'jsonld': vis.get('jsonld') or '', 'links': vis.get('links') or [],

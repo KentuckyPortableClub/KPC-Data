@@ -46,7 +46,7 @@ with tempfile.TemporaryDirectory() as t:
     check('3 refused pages: the site is NOT put aside, every park is asked', r.returncode == 0 and asked == set(REFS)
           and HOST not in (st.get('refused') or {}))
     check('3 refused pages: each refused page stays refused, the others are read',
-          all((facts[x].get('page') or {}).get('kind') == 'refused' for x in REFS[:3])
+          all((facts[x].get('page') or {}).get('kind') == 'resting' for x in REFS[:3])   # 27 Nov: a 403 = that page, this run
           and all((facts[x].get('page') or {}).get('kind') == 'html' for x in REFS[3:]))
 
     r, facts, asked, st = run(t, set(REFS[:9]))
@@ -54,8 +54,10 @@ with tempfile.TemporaryDirectory() as t:
           and HOST not in (st.get('refused') or {}))
 
     r, facts, asked, st = run(t, set(REFS[:10]))
-    check('10 refused pages: the site is put aside and the last 2 parks are not asked', asked == set(REFS[:10])
-          and (st.get('refused') or {}).get(HOST) == '2026-11-22')
+    # 27 Nov 2026 (owner: 'sure we are just polite'): nothing is saved as blocked; five refusals IN A ROW stop the site for the
+    # run inside Manners (test_page_reader_fixes.py); this fixture reader has no Manners, so every park is asked
+    check('10 refused pages: nothing is saved as blocked and every park is asked', asked == set(REFS)
+          and HOST not in (st.get('refused') or {}))
 
     old = {'refused': {HOST: '2026-11-22'}, 'refusal_pages': {HOST: [U(x) for x in REFS[:3]]}, 'refusal_rule': 3}
     r, facts, asked, st = run(t, set(), state=old)
@@ -64,7 +66,7 @@ with tempfile.TemporaryDirectory() as t:
     for days_ago, day, want in ((8, '2026-11-14', True), (6, '2026-11-16', False)):
         st0 = {'refused': {HOST: day}, 'refusal_pages': {HOST: [U(x) for x in REFS[:10]]}, 'refusal_rule': 10}
         r, facts, asked, st = run(t, set(), state=st0)
-        check(f'a site set aside {days_ago} days ago is ' + ('asked again (rest is 7 days)' if want else 'still resting'),
-              (asked == set(REFS)) if want else (not asked))
+        # 27 Nov 2026 (R-NET1: no verdict from an earlier run): a site set aside by an older run is asked again, whatever its age
+        check(f'a site set aside {days_ago} days ago by an older run is asked again (no saved verdict)', asked == set(REFS))
 print('ALL PASS' if ok else 'SOME FAILED')
 sys.exit(0 if ok else 1)

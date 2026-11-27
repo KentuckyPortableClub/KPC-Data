@@ -804,6 +804,92 @@ def best_name_of(title, heading, og, jname):
 NAME_SPLIT = re.compile(r'\s*(?:\||–|—| - |::| \u2022 |:)\s*')
 
 
+# 26 Nov 2026 (audit F11: 989 page "names" that were headings, menus, sign-up lines or the site's own name). The junk table is
+# DATA (kpc_name_junk.json, with a why and real examples per row); the code below only applies it.
+def _load_junk():
+    p = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'kpc_name_junk.json')
+    with open(p, encoding='utf-8') as f:
+        d = json.load(f)
+    d['_rx'] = [(re.compile(r['rx'], re.I), r['why']) for r in d['patterns']]
+    return d
+
+
+JUNK = _load_junk()
+SHARED_LIMIT = int(JUNK.get('shared_limit') or 2)
+
+
+def _kind_only(s):
+    words = re.findall(r"[a-z]+", re.sub(r"['’]", '', str(s or '').lower()))
+    if not words:
+        return True
+    sing = lambda w: w[:-3] + 'y' if w.endswith('ies') else (w[:-1] if w.endswith('s') and not w.endswith('ss') else w)
+    return all(w in KIND_ONLY or sing(w) in KIND_ONLY or w in ('reservoirs', 'lakes', 'ponds', 'waterways', 'rivers', 'sites') for w in words)
+
+
+def place_words(s):
+    """The words of a name that say WHERE (not what kind of place): 'Rib Mountain State Park' -> {'rib', 'mountain'}."""
+    return {w for w in name_words(s) if len(w) >= 3 and not w.isdigit()}
+
+
+def junk_why(cand):
+    """Why this text can never be a park's name ('' when it could be one). Pure: the table, the word count, kind words only."""
+    c = ' '.join(str(cand or '').split()).strip(' |-:')
+    if not c:
+        return ''
+    first = re.split(r'\s+[|\u2013\u2014]\s+|\s*\|\s*|\s+-\s+', c)[0].strip()
+    for rx, why in JUNK['_rx']:
+        if rx.search(c) and (rx.search(first) or not first):
+            return why
+    if len(first.split()) > int(JUNK.get('max_words') or 16):
+        return 'a sentence, not a name'
+    if _kind_only(first):
+        return 'it only says what kind of place it is, not which one'
+    return ''
+
+
+def vet_name(cand, pota_name, title='', others=None, is_heading=False):
+    """'' when the candidate may stand as the page's name for this park, else why it is set aside.
+    A part that names THIS park (POTA's name) always stands. Never the name of ANOTHER park of the area. A heading must share
+    a place word with POTA's name or with the page's title (a heading that does neither is page furniture)."""
+    if not cand:
+        return ''
+    v = compare_names(cand, pota_name) if pota_name else None
+    if v in ('same', 'same-core') or (pota_name and same_words(cand, pota_name)):
+        return ''
+    why = junk_why(cand)
+    if why:
+        return why
+    nw = norm_written(cand)
+    if others and nw in others:
+        return 'the name of another park of the area'
+    if is_heading:
+        pw = place_words(cand)
+        if not (pw & place_words(pota_name)) and not (pw & place_words(title)):
+            return 'shares no place word with the park\'s name or the page title'
+    return ''
+
+
+def vet_name_block(name, pota_name, others):
+    """Clear heading / title / best that cannot be this park's name; each one set aside is kept in name['set_aside'] with
+    where it came from and why. Returns the same dict."""
+    set_aside = list(name.get('set_aside') or [])
+    title_raw = name.get('title') or ''
+    gone = set()
+    for field in ('heading', 'title', 'best'):
+        val = name.get(field)
+        if not val:
+            continue
+        why = 'set aside above' if val in gone else vet_name(val, pota_name, '' if field == 'title' else title_raw, others, is_heading=field == 'heading')
+        if why:
+            gone.add(val)
+            if why != 'set aside above' and not any(x['name'] == clip(val, 120) and x['from'] == field for x in set_aside):
+                set_aside.append({'name': clip(val, 120), 'from': field, 'why': why})
+            name[field] = None if field == 'best' else ''
+    if set_aside:
+        name['set_aside'] = set_aside
+    return name
+
+
 # 23 Nov 2026 12:51 AM (owner's ruling W-G5, "Yes"): the page's name and POTA's name carry the same words but call the place
 # another kind ('Anthony Branch Fishery Area' / 'Anthony Branch State Fish and Wildlife Area', 'Sielbeck Forest SNA' /
 # 'Sielbeck Forest State Natural Area'): the same name ('same-words'). The words that only say what kind of place it is are
@@ -1068,6 +1154,70 @@ def sizes_labelled(text, name, pota_type):
                     'why': 'round words, kept as said'})
         have.add(round(acres))
     return out
+
+
+LANG_RX = re.compile(r'<html[^>]*\blang\s*=\s*["\']?([a-zA-Z]{2})', re.I)
+UNIT_WORDS = {'acre': 'acres', 'ac': 'acres', 'hectare': 'hectares', 'ha': 'hectares', 'square mile': 'square miles', 'sq mi': 'square miles',
+              'mi2': 'square miles', 'mi²': 'square miles', 'square kilometer': 'km²', 'square kilometre': 'km²', 'sq km': 'km²', 'km2': 'km²', 'km²': 'km²'}
+SIZE_DISAGREE = 0.10   # 26 Nov 2026 (audit F13): two clean totals more than 10% apart: neither is clean
+
+
+def page_language(html, url):
+    """'fr', 'en' or '' from the page's own lang mark, else its address ('/fr/', 'lang=fr', '-fra')."""
+    m = LANG_RX.search(html or '')
+    if m:
+        return m.group(1).lower()
+    u = str(url or '').lower()
+    if re.search(r'/fr(?:/|-|$)|[?&](?:lang|language)=fr|-fra\.|/francais|\.qc\.ca|quebec\.ca', u):
+        return 'fr'
+    return ''
+
+
+def size_detail(row, text, lang):
+    """26 Nov 2026 (owner: always save the number as written, the unit as written and acres computed). Adds 'number',
+    'unit', 'written' (the words on the page, before any tidying) and, when the page's language makes the number ambiguous,
+    'ambiguous' with both readings: never a clean total then."""
+    said = str(row.get('as') or '')
+    m = re.match(r'\s*([\d.,\s\u00a0\u202f]+?)\s*(million\s*)?([A-Za-z²2. ]+)$', said)
+    num, unit = (m.group(1).strip(), (m.group(3) or '').strip()) if m else (said.split()[0] if said.split() else '', ' '.join(said.split()[1:]))
+    row['number'] = num
+    u = re.sub(r'[^a-z²2 ]', '', unit.lower()).strip()
+    u = re.sub(r's$', '', u) if u not in ('sq km', 'sq mi') else u
+    row['unit'] = UNIT_WORDS.get(u, unit)
+    digits = re.sub(r'\D', '', num)
+    written = ''
+    if digits and text:
+        rx = re.compile(r'(?<![\d.,])' + r'[\s.,\u00a0\u202f]?'.join(re.escape(c) for c in digits) + r'(?![\d])\s*(?:million\s*)?[-\s]?\s*' + re.escape((unit.split() or [''])[0][:2]) + r'[\w²]*', re.I)
+        mm = rx.search(text)
+        if mm:
+            written = ' '.join(mm.group(0).split())
+    row['written'] = written or said
+    w = row['written']
+    metric = row['unit'] in ('hectares', 'km²')
+    three = re.search(r'(?<![\d.,])\d{1,3}([.,])\d{3}(?![\d.,])', w)
+    if three and lang == 'fr' and three.group(1) == ',':
+        row['ambiguous'] = {'readings_acres': [round(row['acres'] / 1000, 3), round(row['acres'], 1)],
+                            'why': 'a French page writes a comma as the decimal mark: the number could be read two ways'}
+        row['clean'] = False
+        row['why'] = (row.get('why') or '') + '; the number could be read two ways (French page, comma)'
+    return row
+
+
+def check_sizes(rows):
+    """26 Nov 2026 (audit F13): when the park's pages give two clean totals more than 10% apart, neither is a clean total;
+    each says why and names the other figure."""
+    clean = [r for r in rows if r.get('total') and r.get('clean') and r.get('acres')]
+    if len(clean) < 2:
+        return rows
+    lo, hi = min(r['acres'] for r in clean), max(r['acres'] for r in clean)
+    if hi <= lo * (1 + SIZE_DISAGREE):
+        return rows
+    for r in clean:
+        others = sorted({o.get('as') for o in clean if o is not r and abs(o['acres'] - r['acres']) > r['acres'] * SIZE_DISAGREE})
+        r['clean'] = False
+        r['disagrees_with'] = others[:4]
+        r['why'] = (r.get('why') or '') + '; the page gives another total that disagrees by more than 10% (' + ', '.join(others[:3]) + ')'
+    return rows
 
 
 def _round_acres(phrase):
@@ -1857,6 +2007,11 @@ def questions_for(fact):
         add('NAME_DIFFERS',
             f"POTA: '{fact.get('pota', {}).get('name', '')}'. Page: '{(fact.get('name') or {}).get('heading') or (fact.get('name') or {}).get('title') or ''}'.",
             (fact.get('name') or {}).get('quote'))
+    nm = fact.get('name') or {}
+    if nm.get('set_aside') and not nm.get('best'):
+        x = nm['set_aside'][0]
+        add('TITLE_NOT_A_NAME', f"The page's {x.get('from')} '{x.get('name')}' is not a park name ({x.get('why')}). No official name was read.",
+            x.get('name'), 'information')
     if d.get('vs_pota_type') == 'differs':
         add('DESIGNATION_DIFFERS',
             f"POTA says '{fact.get('pota', {}).get('type', '')}'. The page says '{', '.join(d.get('words') or [])}'.",
@@ -1891,6 +2046,10 @@ def questions_for(fact):
             add('PIN_FAR_FROM_PAGE', f"The page's map point is {c.get('km_from_pin')} km from POTA's pin.",
                 c.get('source') or '', 'reviewer')
             break
+    dis = [s for s in fact.get('sizes') or [] if s.get('disagrees_with')]
+    if dis:
+        add('SIZES_DISAGREE', f"The page gives totals that disagree: {', '.join(sorted({str(s.get('as')) for s in dis})[:4])}. None is used as clean.",
+            dis[0].get('quote'), 'information')
     labels = []
     for s in fact.get('sizes') or []:
         if s.get('label') and s['label'] not in [x[0] for x in labels]:
@@ -1908,7 +2067,8 @@ def questions_for(fact):
     if page.get('kind') == 'dead' and page.get('dead_twice'):
         add('LINK_DEAD', "The link does not open.", page.get('final_url') or fact.get('asked', {}).get('url'), 'person')
     if page.get('kind') in ('refused', 'robots'):
-        add('REFUSED', "The site does not take automated visitors. For a person.",
+        line = (page.get('not_read') or {}).get('line') or ''
+        add('REFUSED', "robots.txt has a Disallow line for this page" + (f" ({line})" if line else '') + ". For a hand look or a hand download.",
             fact.get('asked', {}).get('url'), 'person')
     if page.get('kind') == 'script-built':
         add('SCRIPT_BUILT', "The page builds itself in the browser. For a person or a browser run.",
@@ -2060,7 +2220,7 @@ def name_candidates(main, main_text, pota_name, name=None):
             ws = c.split()
             while len(ws) > 1 and norm_written(ws[0]) not in pw: ws = ws[1:]
             c = ' '.join(ws)
-        if not c or len(c) > 110 or is_menu_chrome(c): return
+        if not c or len(c) > 110 or is_menu_chrome(c) or junk_why(c): return
         k = norm_written(c)
         if not k or k in seen or not (sig_words(c) & core): return
         seen.add(k); out.append({'name': c, 'from': where})
@@ -2078,6 +2238,24 @@ def name_candidates(main, main_text, pota_name, name=None):
         add(m.group(1), 'page text')
         if len(out) >= 12: break
     return out[:12]
+
+
+def offered_names(main, pota_name, others=None):
+    """26 Nov 2026: every name the page itself offers (its title, first h1, og:title, schema.org name), where each came from,
+    and why it was set aside ('' when it may stand). Report data: a later tool can compare; nothing here decides."""
+    out, seen = [], set()
+    h1 = ''
+    m = re.search(r'<h1[^>]*>(.*?)</h1>', main.get('html') or '', re.I | re.S)
+    if m:
+        h1 = cut_tail(_unescape(' '.join(re.sub(r'<[^>]+>', ' ', m.group(1)).split())))
+    title = main.get('title') or ''
+    for where, v in (('title', title), ('h1', h1 or main.get('heading')), ('og:title', main.get('og')), ('schema name', main.get('jsonld'))):
+        v = ' '.join(str(v or '').split())[:120]
+        if not v or (where, v) in seen:
+            continue
+        seen.add((where, v))
+        out.append({'name': v, 'from': where, 'set_aside': vet_name(v, pota_name, '' if where == 'title' else title, others, is_heading=where == 'h1')})
+    return out
 
 
 def build_facts(ref, area, pota, area_parks, asked, pages, today, shared_with, own_is, own_why, read_blocks=True):
@@ -2127,6 +2305,15 @@ def build_facts(ref, area, pota, area_parks, asked, pages, today, shared_with, o
         part, v = name_agreeing(name, pota.get('name'), others)
         if part:
             name.update({'best': part, 'vs_pota': v, 'disagree': False})
+    if read_blocks:
+        # 26 Nov 2026 (audit F11): a heading, menu, sign-up line, the site's own name or a neighbour's name is set aside
+        vet_name_block(name, pota.get('name'), others)
+        if name.get('set_aside'):
+            if not name.get('best'):
+                left = name.get('heading') or name.get('title') or None
+                name['best'] = left
+                name['disagree'] = False
+            name['vs_pota'] = compare_names(name['best'], pota.get('name')) if name.get('best') else None
     words = kinds_in(name.get('best') or '') if name.get('best') else []
     combined, parts = combined_of(name.get('best') or '') if name.get('best') else (False, [])
     if combined:
@@ -2159,6 +2346,9 @@ def build_facts(ref, area, pota, area_parks, asked, pages, today, shared_with, o
                 row['source_url'] = src if src and not is_wdpa(src) else ''   # the page the figure came from (21 Nov)
                 sizes.append(row)
         sizes = _dedupe_sizes(sizes)
+        lang = page_language(main.get('html') or '', main.get('final') or asked.get('url') or '')
+        raw_text = '\n'.join(p.get('text') or '' for p in pages if p.get('kind') != 'script-built')
+        sizes = check_sizes([size_detail(r, raw_text, lang) for r in sizes])
     elif read_blocks and unofficial and name.get('best'):
         pass
     loc = _blank_location()
@@ -2184,7 +2374,9 @@ def build_facts(ref, area, pota, area_parks, asked, pages, today, shared_with, o
         'own_page': {'is': own_is, 'why': own_why, 'shared_with': list(shared_with or []),
                      'host': host_of(asked.get('url') or '') or ''},
         'name': dict({k: name.get(k) for k in ('title', 'heading', 'best', 'vs_pota', 'quote') if k in name or True},
-                     names=name_candidates(main, main_text, pota.get('name'), name) if read_blocks and not unofficial else []),   # 26 Nov
+                     names=name_candidates(main, main_text, pota.get('name'), name) if read_blocks and not unofficial else [],   # 26 Nov
+                     **({'set_aside': name['set_aside']} if name.get('set_aside') else {}),
+                     offered=offered_names(main, pota.get('name'), others) if read_blocks else []),
         'designation': designation,
         'inside_of': [{k: r[k] for k in ('unit', 'kind', 'pota_ref', 'quote') if k in r or k == 'pota_ref'} for r in inside],
         'maybe_inside': maybe,
@@ -2245,6 +2437,8 @@ def _page_block(main, asked, today):
             'moved': bool(asked_h and final_h and base_host(asked_h) != base_host(final_h)),
             'final_host': final_h, 'dead_twice': bool(main.get('dead_twice')),
             'requests': main.get('requests') or 0}
+    if main.get('not_read'):
+        out['not_read'] = dict(main['not_read'])   # 26 Nov: why this page was not read (kpc_net_rule.REASONS) and, for a Disallow, the line
     if main.get('browser'):
         out['browser'] = True   # 22 Nov: the page built itself and was read after the browser ran its scripts
     return out

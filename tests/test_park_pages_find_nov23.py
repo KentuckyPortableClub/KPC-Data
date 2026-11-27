@@ -134,8 +134,9 @@ with tempfile.TemporaryDirectory() as d:
     check('the summary counts sure / unsure / not found', 'sure (taken' in summ and 'US-ZZ:' in summ)
     st = json.loads((t / 'out/state.json').read_text())
     check('state remembers what was found', st['found']['US-9603']['level'] == 'sure' and st['found']['US-9606']['level'] == 'no')
-    check('a site that says no rests 30 days (not looked for again next run, robots.txt / refusal wins)',
-          st['found']['US-9614']['date'] == '2026-11-23')
+    # 27 Nov 2026 (owner: 'sure we are just polite'; R-NET1): a 403 is that page only, for this run; nothing is saved as blocked
+    check('a site that answered 403 is looked for again next run (no 30-day rest, nothing saved as blocked)',
+          st['found']['US-9614']['date'] == '' and 'next run' in st['found']['US-9614']['why'])
     # the reader's next run: the found page is the park's page; the dead link is not asked again
     r = run(t, 'read')
     facts = json.loads((t / 'out/facts/US-ZZ.json').read_text())['parks']
@@ -160,8 +161,8 @@ with tempfile.TemporaryDirectory() as d:
     check('a person\'s own link is never covered', P.add_found({'US-9604': {'web': 'https://x.invented.gov/p'}}, st)['US-9604']['web'] == 'https://x.invented.gov/p')
     r2 = run(t, 'find-links', '--agency-table', str(t / 'table.json'))
     rows2 = json.loads((t / 'out/found-links.json').read_text())['rows']
-    check('a second run the same day looks at nobody again (30 days)', 'parks looked at' in (t / 'out/found-links-summary.txt').read_text()
-          and (t / 'out/found-links-summary.txt').read_text().startswith(f'Own-page finder ({FIND.FIND_RULE}): 0 parks'))
+    check('a second run the same day looks only at the park whose site answered 403 (the others rest 30 days)',
+          (t / 'out/found-links-summary.txt').read_text().startswith(f'Own-page finder ({FIND.FIND_RULE}): 1 parks'))
     check('the list keeps every row', len(rows2) == len(rows))
     sys.path.insert(0, str(ROOT / '.github/scripts/draft/tools/kpc_park_facts'))
     import kpc_park_facts as PF

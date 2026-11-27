@@ -4,7 +4,7 @@ before'). The PC's state had 3,806 'resting' and 1,050 'refused' reads saved wit
 took any fingerprint as 'read before', so those parks were passed over for 30 days and never really read (BLM 897, NY DEC 567).
   1  a resting read with no words is due the next day: the page is really asked
   2  a page really read (words) still waits for the refresh
-  3  a refused page waits a week, then is asked again
+  3  a refused page is asked again every run (26 Nov site rule: no saved verdict)
   4  the due parks are read first, before parks read before
   5  (27 Nov) a site that stopped answering the plain reader is read through the page browser first when BROWSER=1
 Invented parks, a fake getter, no network. Prints PASS / FAIL and ends ALL PASS or SOME FAILED."""
@@ -64,9 +64,10 @@ with tempfile.TemporaryDirectory() as td:
     asked = [c.rsplit('/', 1)[-1].upper() for c in g.calls]
     check(f'1: a resting read with no words is really asked the next day ({asked})', 'US-9001' in asked)
     check('2: a page really read yesterday still waits for the refresh', 'US-9002' not in asked)
-    check('3: a page refused three days ago waits a week', 'US-9003' not in asked)
+    # 26 Nov 2026 (owner's site rule, kpc_net_rule): robots.txt is read fresh every run, so a refused page is due every run
+    check('3: a page refused three days ago is asked again (no saved verdict)', 'US-9003' in asked)
     check('3: a page refused 16 days ago is asked again', 'US-9004' in asked)
-    check(f'4: the due parks are read first, in the worklist order ({asked})', asked[:2] == ['US-9004', 'US-9001'])
+    check(f'4: the due parks are read first, in the worklist order ({asked})', asked[:3] == ['US-9003', 'US-9004', 'US-9001'])
     check('1: the page read for real is saved with its words, not the empty fingerprint',
           state['read']['US-9001'].get('fingerprint') not in ('', PP.EMPTY_FP) and state['read']['US-9001'].get('kind') == 'html')
 

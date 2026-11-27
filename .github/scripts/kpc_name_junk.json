@@ -1,0 +1,138 @@
+{
+ "about": "Page text that is never a park's official name (26 Nov 2026, audit F11). Each row: a pattern (Python regular expression, case ignored, searched in the whole candidate), why, examples it must catch (real junk from the park facts) and real names it must NOT catch. The tests read this file: test_page_reader_fixes.py. A name carried by more than shared_limit parks of the same site is not a park's name either (unless it is that park's own POTA name).",
+ "shared_limit": 2,
+ "max_words": 16,
+ "patterns": [
+  {
+   "rx": "\\bnav\\b|\\bnavigation$|^(main|site|primary|secondary|utility|top)\\b.*\\bnav(igation)?\\b|\\bmenu\\b|\\bbreadcrumbs?\\b|^header\\b|\\bfooter\\b|\\bskip to\\b",
+   "why": "a menu or page part, not a name",
+   "catch": [
+    "Main navigation",
+    "Top Nav",
+    "Header - Primary",
+    "Site Navigation",
+    "Utility (Top) navigation",
+    "Secondary Navigation"
+   ],
+   "keep": [
+    "Navigation Point State Park",
+    "Headwaters State Forest"
+   ]
+  },
+  {
+   "rx": "subscribe|sign[ -]?up|newsletter|stay (connected|informed)|restez inform|follow us|share this|\\bcookies\\b|cookie (policy|settings|consent)|privacy|accept all",
+   "why": "a sign-up, cookie or share line",
+   "catch": [
+    "Subscribe Now!",
+    "Topic sign-up successful.",
+    "Restez informé en tout temps",
+    "We use cookies"
+   ],
+   "keep": [
+    "Cookie Mountain Natural Area"
+   ]
+  },
+  {
+   "rx": "page not found|not found|couldn.t find|ne pouvons trouver|error \\d{3}|\\b404\\b|access denied|search results?|^search\\b|find a park|^results\\b",
+   "why": "an error or search page",
+   "catch": [
+    "Search Results Page Not Found",
+    "We couldn't find the web page / Nous ne pouvons trouver cette page web",
+    "Search :",
+    "Find a Park - Oregon State Parks",
+    "State Parks and Public Lands: Maine ACF - Search Results"
+   ],
+   "keep": [
+    "Lost River State Park"
+   ]
+  },
+  {
+   "rx": "official websites use|language selection|s[ée]lection de la langue|vous [êe]tes ici|you are here|explore this park|plan your visit|additional information|maps and related links|^other names?\\b|^other name\\(s\\)|alerts \\(\\d+\\)",
+   "why": "a site heading shared by every page",
+   "catch": [
+    "Official websites use .mass.gov",
+    "Language selection",
+    "Explore This Park",
+    "Other Name(s)",
+    "Additional Information",
+    "Maps and Related Links",
+    "Patoka Lake Alerts (1)"
+   ],
+   "keep": [
+    "Explorer Lake Park"
+   ]
+  },
+  {
+   "rx": "^list of\\b|^our parks\\b|^other .*parks|^(state|provincial|national) parks and\\b|register of historic places|information service|outdoor experiences|^living in\\b|^parcs et espaces verts$",
+   "why": "a list or index page, not one park",
+   "catch": [
+    "List of National Historic Sites of Canada in Nova Scotia",
+    "Our Parks",
+    "Other State Parks and Forests",
+    "Yukon Register of Historic Places YRHP",
+    "Ramsar Sites Information Service",
+    "Living in Oromocto"
+   ],
+   "keep": [
+    "Listowel Conservation Area"
+   ]
+  },
+  {
+   "rx": "^(the )?(\\w+ )?(department|division|ministry|bureau|office|agency|commission) of\\b|^fish, wildlife (&|and) parks$|\\bdepartment of natural resources\\b|forest service$|^environment and climate change$",
+   "why": "the agency's own name, not the park's",
+   "catch": [
+    "Division of State Parks",
+    "Division of Parks & Outdoor Recreation",
+    "FISH, WILDLIFE & PARKS",
+    "MARYLAND DEPARTMENT OF NATURAL RESOURCES MARYLAND PARK SERVICE",
+    "North Dakota Forest Service",
+    "Environment and Climate Change",
+    "Division of Forestry and Wildlife: Forestry Program"
+   ],
+   "keep": [
+    "Department Creek Wildlife Area",
+    "Commissioners Point Park"
+   ]
+  },
+  {
+   "rx": "\\bTj\\b|\\bTd\\b|\\bTf\\b|\\bobj\\b.*\\bendobj\\b|^[\\d\\s.()|-]+$",
+   "why": "PDF page code or numbers, not words",
+   "catch": [
+    "0.45002 0 Td (|)Tj"
+   ],
+   "keep": [
+    "Tjornes Park"
+   ]
+  },
+  {
+   "rx": "\\bannotated\\b|^r\\.r\\.o\\.|\\breg\\.\\s*\\d|\\bunlawful\\b|\\bwhich will be on the\\b|\\bcode of\\b",
+   "why": "a law or a sentence, not a name",
+   "catch": [
+    "Montana Code Annotated 2025",
+    "R.R.O. 1990, Reg. 1098: WILDERNESS AREAS\"",
+    "Unlawful to enter, use, or occupy State lands for any purpose, when the area is posted against",
+    "Spring Mill State Park entrance, which will be on the left. These preserves are located in this"
+   ],
+   "keep": [
+    "Code Lake State Park"
+   ]
+  },
+  {
+   "rx": "\\bFAS Detail\\b|::|\\bdetail$|^trout fishing$|^hatchery facilities$|^lakes, ponds,? and reservoirs$|\\blakes and waterways$|\\bboat launching sites$|scenic byways|historic markers map",
+   "why": "a section or a topic page, not one park",
+   "catch": [
+    "FISHMT :: FAS Detail",
+    "Trout Fishing",
+    "Hatchery facilities",
+    "Lakes, Ponds, and Reservoirs",
+    "South Carolina Lakes and Waterways",
+    "Rhode Island Public Boat Launching Sites",
+    "List of Nevada Scenic Byways",
+    "Nevada State Historic Markers Map"
+   ],
+   "keep": [
+    "Trout Lake Natural Area"
+   ]
+  }
+ ]
+}

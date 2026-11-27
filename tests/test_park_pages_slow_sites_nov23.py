@@ -36,6 +36,7 @@ get = lambda v: subprocess.run([sys.executable, '-B', '-c', code], env=dict(env,
 env.pop('KPC_MAX_CRAWL_DELAY', None)
 check('the nightly walk keeps 120 s', get(None) == '120')
 check('the 2g step may wait 900 s', get('900') == '900.0')
-check('never more than 900 s, never less than 120 s, a bad value changes nothing', get('5000') == '900.0' and get('30') == '120' and get('x') == '120')
+# 26 Nov 2026 (owner's site rule: 'obey it by going slow, however long; never skip because it is long'): the 900 s cap is gone
+check('no upper cap (5000 s is obeyed), never less than 120 s, a bad value changes nothing', get('5000') == '5000.0' and get('30') == '120' and get('x') == '120')
 print('ALL PASS' if ok else 'SOME FAILED')
 sys.exit(0 if ok else 1)

@@ -12,7 +12,7 @@ Use:  M = Manners('KPC park truth checker', state.get('hosts'))   # a name for t
       st, headers, body, final_url = M.get(url)                   # st = int HTTP status, or 'rest' / 'robots' / 'err:...'
       state['hosts'] = M.resting()                                 # save before the run ends
 """
-import atexit, hashlib, importlib.util, json, os, re, threading, time, urllib.error, urllib.parse, urllib.request
+import atexit, hashlib, importlib.util, json, os, re, ssl, threading, time, urllib.error, urllib.parse, urllib.request
 
 
 def _load_host_rules():
@@ -23,6 +23,18 @@ def _load_host_rules():
 
 
 HR = _load_host_rules()   # no fallback: a fetch module without the host rules must not run
+
+
+def _load_net_rule():
+    p = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'kpc_net_rule.py')
+    spec = importlib.util.spec_from_file_location('kpc_net_rule', p); m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m)
+    return m
+
+
+NR = _load_net_rule()   # 26 Nov 2026: the owner's site rule, one table (kpc_net_rule.py)
+_HOP = threading.local()   # 26 Nov: the Manners whose request is being redirected (robots.txt of the new host is obeyed)
+STRICT_RX = re.compile(r'key identifier|key usage|basic constraints|certificate extension|unsupported|invalid.*extension|policy|explicit|'
+                       r'missing.*identifier|non-CA|CA cert', re.I)   # the store engine's list (kpc_outline_store.py)
 
 
 # Nov 15: the store engine 3.6.2 (final) rule for a robots.txt web page (kpc_outline_store.read_robots, robots_final_problem,
@@ -78,6 +90,13 @@ class HostRuleRefused(urllib.error.URLError):
     """A redirect hop onto a host the host rules refuse (or from https to a plain address): it is never requested."""
 
 
+class RobotsHopRefused(urllib.error.URLError):
+    """A redirect hop to another host whose robots.txt says no (or that is busy / stopped this run): never followed."""
+    def __init__(self, url, why, status):
+        super().__init__(f'redirect to {str(url)[:80]} not followed: {why}')
+        self.url, self.why, self.status = url, why, status
+
+
 def same_site(a, b):
     """True when two host names are the same site (letter case, a leading 'www.' and the port aside)."""
     n = lambda h: re.sub(r'^www\.', '', str(h or '').lower().split('@')[-1].split(':')[0].rstrip('.'))
@@ -99,6 +118,13 @@ def _install_hop_check():
             # followed, for reading public pages; a plain address on ANOTHER site is still refused
             ok, why = False, f'{newurl[:80]}: redirect from https to a plain address on another site'
         if not ok: raise HostRuleRefused(f'redirect refused: {why}')
+        M = getattr(_HOP, 'manners', None)
+        if M is not None and M.rkey(newurl) != M.rkey(req.full_url):
+            # 26 Nov 2026 (audit path T): a redirect to another host obeys THAT host's robots.txt and its run stop
+            if M.dead.get(M.host(newurl), 0) > time.time() or not M.robots_ok(newurl):
+                line = M.disallow_line(newurl)
+                raise RobotsHopRefused(newurl, line or (M.blocked.get(M.rkey(newurl)) or ('', 'that site is stopped or busy this run'))[1],
+                                       'robots' if line else 'robots-unreadable' if M.rkey(newurl) in M.blocked else 'stopped')
         return orig(self, req, fp, code, msg, headers, newurl)
     redirect_request._kpc_hop_check = True
     H.redirect_request = redirect_request
@@ -113,7 +139,11 @@ KEYED_API = {'ridb.recreation.gov': '/api/', 'developer.nps.gov': '/api/'}
 # Nov 3 (Mapping, bots-first review): house rule is "never bypass robots.txt". Nov 10: the ArcGIS REST exemption (opt-in since
 # Nov 3 through KPC_ARCGIS_ROBOTS_EXEMPT) is DELETED; no variable turns it back on. Crawl-delay is obeyed (longer of it and our 2 s
 # gap). A 403 on a page is retried once after a pause, then handed to a person (no strike-and-forget, no third try).
-MAX_CRAWL_DELAY = 120   # a host asking for more than this is skipped for the run and listed for a person
+MAX_CRAWL_DELAY = 120   # a host asking for more than this waits for the slow pass (never a skip, 26 Nov)
+# 26 Nov 2026 (owner's site rule: "obey it by going slow, however long; never skip because it is long"): the slow-sites pass
+# (KPC_SLOW_PASS=1, set by the buttons for that one step) obeys ANY Crawl-delay in full: there is no upper limit.
+if os.environ.get('KPC_SLOW_PASS') == '1':
+    MAX_CRAWL_DELAY = float('inf')
 # Nov 3 (Super, answer-sheet task): ArcGIS Hub asks for Crawl-delay 60. Obeying it must not stall a nightly run, so:
 #  * KPC_MANNERS_CACHE=<dir> keeps plain 200 GET answers on disk (the workflow saves the dir with actions/cache). A cached answer
 #    younger than KPC_MANNERS_CACHE_DAYS (default 7) is returned with no request at all. By default only SLOW hosts (Crawl-delay of
@@ -132,7 +162,7 @@ SLOW_BUDGET = int(os.environ.get('KPC_SLOW_HOST_BUDGET') or 10)
 # than MAX_CRAWL_DELAY s between requests (also listed for a person). Callers use next_run(st).
 # Nov 3 re-cut (Quality A13): 'robots-unreadable' = robots.txt answered 5xx or could not be reached. That is NOT a Disallow
 # ('robots'): nothing is fetched this run, but the next run asks again. Nov 15 (club rule R-NET1): a robots.txt 401 / 403 / other 4xx is NOT a Disallow: it means no rules (allowed).
-NEXT_RUN = ('rest', 'deferred', 'crawl-delay', 'robots-unreadable')
+NEXT_RUN = ('rest', 'stopped', 'deferred', 'crawl-delay', 'robots-unreadable')   # 26 Nov: 'stopped' = a host stopped for this run only
 def next_run(st): return isinstance(st, str) and st in NEXT_RUN
 # Nov 3 addendum (Quality spot-check, 7:05 PM CST): the two robots statuses. 'robots' = robots.txt says no (a Disallow for this URL);
 # 'robots-unreadable' = robots.txt could not be read (A13, retried next run). A caller (or a grader) that
@@ -267,10 +297,12 @@ def parse_robots(text):
         text = text.decode('utf-8', 'replace')
     if text.startswith('\ufeff'):
         text = text[1:]
+    # 26 Nov 2026 (owner's site rule, audit path D): a NUL ends its line, and a file over ROBOTS_MAX is read for its first
+    # ROBOTS_MAX characters (RFC 9309: parse at least 500 KiB); a cut last line is dropped. Neither is ever 'unreadable'.
     if '\x00' in text:
-        raise ValueError('NUL in robots.txt')
+        text = '\n'.join(ln.split('\x00', 1)[0] for ln in text.splitlines())
     if len(text) > ROBOTS_MAX:
-        raise ValueError('robots.txt too long')
+        text = text[:ROBOTS_MAX].rsplit('\n', 1)[0]
     groups = []
     agents, rules, delay = [], [], None
 
@@ -301,7 +333,7 @@ def parse_robots(text):
             if path == '' and not allow:
                 allow, path = True, ''   # empty Disallow = allow all
             regex, length = _compile_robots_pattern(path)
-            rules.append((allow, regex, length))
+            rules.append((allow, regex, length, f"{'Allow' if allow else 'Disallow'}: {value}"))
         elif field == 'crawl-delay':
             if not agents:
                 continue
@@ -352,35 +384,38 @@ def _robots_path(url):
     return _normalize_robots_path(path)
 
 
-def robots_allowed(rules, useragent, url):
-    """May this user-agent fetch this URL? RFC 9309 longest-match; Disallow wins ties.
-
-    rules is RobotsRules (from parse_robots), None (no file = allowed), or False (unreadable
-    or a parse error = do not fetch). A RobotFileParser or any other object is refused
-    (do not fail open). '*' and '$' wildcards are supported. Matching uses the product
-    token only; all groups for that agent are merged; paths are percent-normalized.
-    """
-    if rules is None:
-        return True
-    if rules is False or not isinstance(rules, RobotsRules):
-        return False
+def robots_decide(rules, useragent, url):
+    """-> (allowed, line). line = the robots.txt line that decided ('User-agent: x | Disallow: /p'), '' when none did.
+    RFC 9309 longest match; when an Allow and a Disallow are the same length the ALLOW wins (RFC 9309 2.2.2; audit path B:
+    the old code let the Disallow win). None (no rules) = allowed. False is never a block any more: it means no rules."""
+    if rules is None or rules is False:
+        return True, ''
+    if not isinstance(rules, RobotsRules):
+        return True, ''
     try:
         path = _robots_path(url)
         group = _pick_robots_group(rules.groups, useragent)
         if group is None:
-            return True
-        best = None  # (length, disallow_first, allow)
-        for allow, regex, length in group['rules']:
+            return True, ''
+        best = None  # (length, allow_first, allow, line)
+        for r in group['rules']:
+            allow, regex, length = r[0], r[1], r[2]
             if regex.search(path) is None:
                 continue
-            cand = (length, 0 if not allow else 1, allow)
-            if best is None or cand[0] > best[0] or (cand[0] == best[0] and cand[1] < best[1]):
+            cand = (length, 1 if allow else 0, allow, r[3] if len(r) > 3 else '')
+            if best is None or cand[0] > best[0] or (cand[0] == best[0] and cand[1] > best[1]):
                 best = cand
         if best is None:
-            return True
-        return best[2]
-    except Exception:
-        return False  # noqa: BLE001  parse/match error = do not fetch
+            return True, ''
+        agents = ', '.join(group.get('agents') or [])
+        return best[2], f'User-agent: {agents} | {best[3]}'
+    except Exception:  # noqa: BLE001
+        return True, ''   # a rule we cannot apply is not a Disallow line
+
+
+def robots_allowed(rules, useragent, url):
+    """May this user-agent fetch this URL? (see robots_decide)."""
+    return robots_decide(rules, useragent, url)[0]
 
 
 class Manners:
@@ -388,7 +423,8 @@ class Manners:
         self.ua = f'KPC bot: {job} ({SITE}; ham radio club; 1 request per 2 s per host; reads page text and metadata only)'
         self.gap, self.strikes_out, self.rest_s, self.read_max = gap, strikes_out, rest_s, read_max
         self.last, self.robots, self.strike = {}, {}, {}
-        self.dead = {h: t for h, t in (resting or {}).items() if t > time.time()}
+        # 26 Nov 2026 (owner's site rule: no verdict from an earlier run): a resting list saved by an older run is ignored
+        self.dead = {}
         self.stat = {'requests': 0, 'robots': 0, 'strikes': 0, 'errors': 0, 'rested': 0, 'host_rule': 0}
         self.job = job
         self.area = ''                # Nov 10: the bot sets the area it works on; a refused layer goes on the needs-download list with it
@@ -397,6 +433,15 @@ class Manners:
         self.refused = {}
         self.slow_used = {}
         self.blocked = {}             # host:port -> (status, why) when robots.txt is unreadable (5xx/timeout/no connection, or a non-robots HTML page)
+        self.robots_note = {}         # 26 Nov: host:port -> (kpc_net_rule key, plain words): what robots.txt said this run
+        self.last_disallow = {}       # 26 Nov: address -> the robots.txt line that refused it this run
+        self.stopped = {}             # host -> why, a host stopped for THIS run only (429, 5 refused pages in a row, 3 failures)
+        self.conditional = {}         # 26 Nov: url -> {'etag', 'last-modified'} from the last real read (the reader fills it)
+        self.p2_browser = False       # 26 Nov: True when the caller does the owner's P-2 page-browser try after a 401 / 403
+        self.pending_stop = {}        # host -> why: a 401 / 403 waiting for that one browser try
+        self.refused_row = {}         # 27 Nov: host -> 401 / 403 / wall answers IN A ROW (a page that reads sets it back to 0)
+        self._row_before = {}         # host -> that count just before its last 2xx answer (a wall is a 2xx answer)
+        self.relaxed = set()          # 26 Nov: hosts whose certificate passes only without Python's extra-strict check
         self.dropped = []             # addendum: [(url without secrets, status)] queued requests dropped without any request
         self.for_person = []          # A2: [(url without secrets, why)] - every second 403 and every Crawl-delay skip, never only a count
         self.stat['for_person_urls'] = self.for_person   # saved with M.stat by the bots that keep it (detective, truth)
@@ -406,7 +451,38 @@ class Manners:
     @staticmethod
     def host(u): return urllib.parse.urlparse(u).netloc.lower().split(':')[0]
 
-    def resting(self): return {h: t for h, t in self.dead.items() if t > time.time()}
+    def resting(self): return {}   # 26 Nov: nothing is carried into the next run (the owner's site rule)
+
+    def stop_host(self, h, why):
+        """Stop asking this host for the rest of THIS run (never saved)."""
+        h = str(h or '').lower().split(':')[0]
+        self.pending_stop.pop(h, None)
+        if h and h not in self.stopped:
+            self.stopped[h] = why; self.dead[h] = float('inf')
+
+    def refuse_host(self, h, why, wall=False, direct=False):
+        """27 Nov (owner: "sure we are just polite"): one page answered 401 / 403 or was a wall. That page waits for the
+        next run and the site carries on. NR.REFUSALS_IN_A_ROW in a row, nothing read between, stop the site for this run.
+        Each refused page is counted ONCE: by get() itself (direct), or by the reader after its one page-browser try
+        (the host is then in pending_stop), or by the reader for a wall (a 200 answer, so get() could not know).
+        -> True when the site is now stopped."""
+        h = str(h or '').lower().split(':')[0]
+        pending = self.pending_stop.pop(h, None) is not None
+        if not h or h in self.stopped: return bool(h)
+        if wall:
+            self.refused_row[h] = self._row_before.pop(h, 0)   # the wall's own 200 answer did not end the run of refusals
+        elif not (direct or pending):
+            return False                                        # get() already counted this page
+        self.refused_row[h] = self.refused_row.get(h, 0) + 1
+        if self.refused_row[h] >= NR.REFUSALS_IN_A_ROW:
+            self.stop_host(h, f'{self.refused_row[h]} pages in a row answered 401 / 403 or a wall, with nothing read between')
+            return True
+        return False
+
+    def page_read(self, h):
+        """A page of this host answered 2xx: its run of refusals is over (unless the reader finds the page is a wall)."""
+        h = str(h or '').lower().split(':')[0]
+        self._row_before[h] = self.refused_row.pop(h, 0)
 
     @staticmethod
     def rkey(u): return urllib.parse.urlparse(u).netloc.lower()   # A10: robots rules are per host AND port
@@ -416,79 +492,73 @@ class Manners:
         return bool(KEYED_API.get(h)) and (pp.path or '').startswith(KEYED_API[h])
 
     def robots_ok(self, u):
-        """Nov 15 (KPC owner, 2026-11-15: ONE robots rule everywhere = the store engine 3.6.2 rule, kpc_outline_store.read_robots):
-        robots.txt 200 = its rules (a web page with no robots line, from this site's own /robots.txt address, that is not a sign-in or
-        bot-challenge page = no rules; a page holding robots directives is parsed; any other web page = nothing fetched, for a person);
-        404/410 = no file; 401/403 and any other 4xx except 429 = "unavailable" = no rules (RFC 9309 2.3.1.3); 429, 5xx, a time-out,
-        no connection = we cannot know the rules, so this run does NOT fetch from that host:port, and that failure is never cached.
-        The cache keeps the real status. The robots read is a request like any other (A5)."""
-        h = self.host(u)
+        """26 Nov 2026, the owner's site rule (kpc_net_rule.ROBOTS_TABLE): robots.txt is read FRESH once per host:port per run
+        (never from a disk cache, never from an earlier run). Only a real Disallow line covering the address says no; a web
+        page, an empty file, a redirect, a file we cannot parse, 401 / 403 / other 4xx = no rules = allowed; 429 / 5xx / no
+        answer = busy: nothing from that host:port this run (self.blocked), asked again next run.
+        True = may fetch. False = a real Disallow (self.last_disallow holds the line) or the host is busy this run."""
         if not HR.host_ok(u)[0]: return False                # Nov 10: the host rules first; robots.txt of a blocked host is never read
         if self.keyed(u):
             self.stat['keyed_api'] = self.stat.get('keyed_api', 0) + 1; return True   # Brandon Oct 29 9:34 AM: key = permission, /api/ only
-        rk = self.rkey(u)
+        h, rk = self.host(u), self.rkey(u)
         with self._rlk:
             if rk not in self.robots: self._load_robots(u, rk, h)
-        rp = self.robots[rk]
-        if rp is False: ok = False
-        else:
-            # can_fetch(self.ua) already falls back to the '*' group; OR-ing '*' let a '*' allow override a rule aimed at us.
-            try: ok = robots_allowed(rp, self.ua, u)
-            except Exception: ok = False  # noqa: BLE001  (rules we cannot apply = do not fetch)
-        if not ok: self.stat['robots'] += 1; self.refused[h] = self.refused.get(h, 0) + 1
+        if rk in self.blocked: return False
+        ok, line = robots_decide(self.robots.get(rk), self.ua, u)
+        if not ok:
+            self.stat['robots'] += 1; self.refused[h] = self.refused.get(h, 0) + 1
+            self.last_disallow[safe_url(u)] = line
         return ok
+
+    def disallow_line(self, u):
+        """The robots.txt line that refused this address in this run ('' when none did)."""
+        return self.last_disallow.get(safe_url(u), '')
+
+    def _robots_open(self, ru):
+        """One robots.txt request. -> (status or None, body, headers, final url, error)."""
+        self._pace(self.host(ru), 0.0)
+        try:
+            with self._urlopen(urllib.request.Request(ru, headers={'User-Agent': self.ua}), 30) as r:
+                return r.status, r.read(ROBOTS_MAX + 1), {k.lower(): v for k, v in r.headers.items()}, r.geturl() or ru, None
+        except urllib.error.HTTPError as e:
+            return e.code, b'', {}, ru, None
+        except Exception as e:  # noqa: BLE001
+            return None, b'', {}, ru, f'{type(e).__name__}: {str(e)[:120]}'
 
     def _load_robots(self, u, rk, h):
         pu = urllib.parse.urlparse(u)
         ru = f'{pu.scheme or "https"}://{pu.netloc}/robots.txt'
-        c = self._cache_read('robots ' + ru, 1.0)
-        cacheable = lambda s_: isinstance(s_, int) and (s_ == 200 or (400 <= s_ < 500 and s_ != 429))
-        st, txt, hdr, final = (c[0], c[2], c[1] or {}, ru if str(c[3]).startswith('robots ') else c[3]) if c is not None and cacheable(c[0]) else (None, None, {}, ru)
-        if st is None:
-            self._pace(h, 0.0)
-            try:
-                with urllib.request.urlopen(urllib.request.Request(ru, headers={'User-Agent': self.ua}), timeout=30) as r:
-                    st, txt = r.status, r.read(ROBOTS_MAX + 1)   # 24 Nov: 30 s, a slow robots.txt is not 'unreadable'. RFC 9309: parse at least 500 KiB; +1 detects a truncated file
-                    hdr, final = {k.lower(): v for k, v in r.headers.items()}, r.geturl() or ru
-            except urllib.error.HTTPError as e:
-                st, txt = e.code, b''
-            except Exception as e:  # noqa: BLE001
-                st, txt = 'unreachable', b''
-                # 24 Nov: say WHY (time-out, TLS, reset), so a site that stays unread (NY DEC: 567 parks) can be looked at
-                self.robots_why = getattr(self, 'robots_why', {}); self.robots_why[rk] = f'{type(e).__name__}: {str(e)[:120]}'
-            if cacheable(st):
-                self._cache_write('robots ' + ru, st, {k: v for k, v in hdr.items() if k == 'www-authenticate'}, txt, final if final != ru else None)
-        page = st == 200 and txt.decode('utf-8', 'replace').lstrip('\ufeff \t\r\n').startswith('<')
-        if page:   # Nov 15: a web page at robots.txt, the store engine 3.6.2 rule
-            kind, body, why = robots_page(txt.decode('utf-8', 'replace'), hdr, final, ru)
-            if kind == 'yes': self.robots[rk] = None; return
-            if kind == 'unreadable':
-                self.robots[rk] = False; self.robots_disallow = getattr(self, 'robots_disallow', set()) | {rk}
-                self.blocked[rk] = ('robots', why)
-                self.for_person.append((ru, f'{why}: a person downloads what is needed from {rk}')); return
-            txt = body.encode('utf-8')   # a page holding robots directives: its directives are the rules
-        if st == 200:
-            try:
-                if isinstance(txt, (bytes, bytearray)) and len(txt) > ROBOTS_MAX:
-                    raise ValueError('robots.txt too long')
-                self.robots[rk] = parse_robots(txt.decode('utf-8', 'replace') if isinstance(txt, (bytes, bytearray)) else txt)
-            except Exception:  # noqa: BLE001
-                self.robots[rk] = False
-                self.blocked[rk] = ('robots-unreadable', 'robots.txt could not be parsed')
-                self.stat['robots_unreadable'] = self.stat.get('robots_unreadable', 0) + 1
-                self.for_person.append((f'{pu.scheme or "https"}://{pu.netloc}/robots.txt', f'robots.txt could not be parsed: nothing fetched from {rk} this run'))
-                return
-            # Nov 17: decide each URL by can_fetch on that page. "Disallow: /" plus a more specific Allow
-            # (Alaska: Allow: /parks, then Disallow: /) is not a whole-site block. A path that is
-            # actually disallowed is still refused in robots_ok / get, and is never fetched.
-        elif st in (404, 410): self.robots[rk] = None          # no rules
-        elif isinstance(st, int) and 400 <= st < 500 and st != 429:
-            self.robots[rk] = None   # Nov 15: 401 / 403 / other 4xx = "unavailable" = no rules (the store engine 3.6.2 rule, RFC 9309 2.3.1.3)
-        else:
-            self.robots[rk] = False                             # unknown rules: refuse this run (not cached)
-            self.blocked[rk] = ('robots-unreadable', f'robots.txt answered {st}')   # addendum: every queued request to it is dropped
+        st, txt, hdr, final, err = self._robots_open(ru)
+        if err:
+            self.robots_why = getattr(self, 'robots_why', {}); self.robots_why[rk] = err
+        body = txt.decode('utf-8', 'replace') if isinstance(txt, (bytes, bytearray)) else str(txt or '')
+        page = st == 200 and body.lstrip('\ufeff \t\r\n').startswith('<')
+        rules_text = body
+        if page:
+            kind, parsed, _why = robots_page(body, hdr, final, ru)
+            if kind == 'parsed':
+                page, rules_text = False, parsed      # a page holding real robots lines: its lines are the rules
+            elif robots_final_problem(final, ru) and ROBOTS_ANY_RX.search(_TAG_RX.sub(' ', body)):
+                page, rules_text = False, robots_normalize(_TAG_RX.sub('\n', body))   # robots lines on another site's page: still obeyed
+        off_site = bool(robots_final_problem(final, ru))
+        challenge = bool(page and (ROBOTS_WALL_RX.search(body) or ROBOTS_FORM_RX.search(body)
+                                   or ROBOTS_SIGNIN_TEXT_RX.search(_TAG_RX.sub(' ', body)) or (hdr or {}).get('www-authenticate')))
+        verdict, key, why = NR.robots_verdict(st, txt if isinstance(txt, (bytes, bytearray)) else body.encode(), off_site, page, err, challenge)
+        self.robots_note[rk] = (key, why)
+        if verdict == 'busy':
+            self.robots[rk] = None
+            self.blocked[rk] = ('robots-unreadable', why)
             self.stat['robots_unreadable'] = self.stat.get('robots_unreadable', 0) + 1
-            self.for_person.append((ru, f'robots.txt answered {st}' + (f' ({self.robots_why[rk]})' if st == 'unreachable' and getattr(self, 'robots_why', {}).get(rk) else '') + f': nothing fetched from {rk} this run'))
+            self.for_person.append((ru, f'{why}: nothing asked of {rk} this run, asked again next run'))
+            return
+        if verdict == 'no-rules':
+            self.robots[rk] = None
+            return
+        try:
+            self.robots[rk] = parse_robots(rules_text)
+        except Exception:  # noqa: BLE001  (a file we cannot read as rules holds no Disallow line we could obey)
+            self.robots[rk] = None
+            self.robots_note[rk] = ('unparsable', NR.ROBOTS_TABLE['unparsable'][1])
 
     def need(self, u, status, why):
         """Nov 10: a layer url this run may not fetch -> the needs-download list (only layer urls: ArcGIS REST, a data download)."""
@@ -596,45 +666,87 @@ class Manners:
         return None
 
 
+    def _try_bare_host_when_www_unreadable(self, u, rng, timeout, head, accept, deadline=None, max_time=None):
+        """26 Nov 2026 (NY DEC: 567 parks never read; www.dec.ny.gov's robots.txt could not be reached from the PC, while 17 pages
+        on dec.ny.gov were read): when a www. host's robots.txt does not answer, the same address on the bare host is tried
+        once, under the bare host's own robots.txt. Kept only when it answers 200 from the bare host on the same path (audit
+        6.3: a 404 there was saved as 'dead link', and a redirect back to www. read the busy host). A Disallow is never worked around."""
+        try:
+            p = urllib.parse.urlsplit(u)
+        except Exception:  # noqa: BLE001
+            return None
+        if not (p.hostname or '').lower().startswith('www.'):
+            return None
+        bu = urllib.parse.urlunsplit((p.scheme or 'https', p.netloc[4:], p.path, p.query, p.fragment))
+        st, hd, body, final = self.get(bu, rng=rng, timeout=timeout, head=head, accept=accept, deadline=deadline, max_time=max_time)
+        f = urllib.parse.urlsplit(final or bu)
+        if st in (200, 206) and (f.hostname or '').lower() == (p.hostname or '').lower()[4:] and (f.path or '/').rstrip('/') == (p.path or '/').rstrip('/'):
+            self.stat['bare_host'] = self.stat.get('bare_host', 0) + 1
+            return st, hd, body, final
+        return None
+
+    def _ctx(self, h):
+        """The TLS context: always verified. A host whose certificate passed only without Python 3.13+'s extra-strict check
+        (VERIFY_X509_STRICT) gets that one check off; the chain to a trusted root and the host name are still checked."""
+        if h not in self.relaxed:
+            return None
+        c = ssl.create_default_context()
+        c.verify_flags &= ~getattr(ssl, 'VERIFY_X509_STRICT', 0)
+        return c
+
+    def _urlopen(self, req, timeout):
+        """urlopen with the redirect-hop robots check and the extra-strict-only TLS retry (the store engine's rule)."""
+        h = self.host(req.full_url)
+        _HOP.manners = self
+        try:
+            try:
+                ctx = self._ctx(h)
+                return urllib.request.urlopen(req, timeout=timeout, **({'context': ctx} if ctx else {}))
+            except urllib.error.URLError as e:
+                r = getattr(e, 'reason', None)
+                strict = getattr(ssl, 'VERIFY_X509_STRICT', 0)
+                if (isinstance(r, ssl.SSLCertVerificationError) and strict and h not in self.relaxed
+                        and (ssl.create_default_context().verify_flags & strict) and STRICT_RX.search(str(getattr(r, 'verify_message', '') or r))):
+                    self.relaxed.add(h)
+                    self.for_person.append((h, f'certificate accepted only without the extra-strict check ({getattr(r, "verify_message", "")}); chain and name verified'))
+                    return urllib.request.urlopen(req, timeout=timeout, context=self._ctx(h))
+                raise
+        finally:
+            _HOP.manners = None
+
     def get(self, u, rng=None, timeout=40, head=False, accept='text/html,application/pdf,application/json,*/*;q=0.8',
              deadline=None, max_time=None):
         """Polite GET. Returns (status, headers dict, body bytes, final url). rng=(a,b) reads only those bytes.
-        status = int HTTP status, or 'rest' / 'robots' / 'robots-unreadable' / 'deferred' / 'crawl-delay' / 'err:...' (next_run() tells which mean
-        'try again next run').
-        deadline is a unix time; max_time is seconds from now. When either is set, the download's
-        wall-clock time is capped (a slow trickle cannot run on past the cap). With both left off,
-        the idle socket timeout is the only limit, as before."""
+        status = int HTTP status, or 'robots' (a real Disallow line: self.disallow_line(u) says which) / 'robots-unreadable'
+        (robots.txt busy: not this run) / 'stopped' (the host said 401 / 403 / 429 / failed 3 times: stopped for THIS run) /
+        'deferred' / 'crawl-delay' (a slow site: waits for the slow pass) / 'host-rule' / 'err:...'.
+        26 Nov 2026 (the owner's site rule, kpc_net_rule.PAGE_TABLE): a page answering 401 / 403 / 429 stops that host for the
+        rest of THIS run at once, with no retry; nothing is carried into the next run."""
         h = self.host(u)
         hok, hwhy = HR.host_ok(u)
         if not hok:   # Nov 10: the ONE pre-request check (kpc_host_rules.py), before rest / robots / pacing / cache: no request of any kind
             self.stat['host_rule'] += 1; self.need(u, 'host-rule', hwhy)
             return 'host-rule', {}, b'', u
-        if self.dead.get(h, 0) > time.time(): self.stat['rested'] += 1; return 'rest', {}, b'', u
-        bl = self.blocked.get(self.rkey(u))
-        if bl and not self.keyed(u):
-            # addendum (Quality's api.pota.app slip, Nov 3): once robots.txt said no to the site or could not be read, a request
-            # already queued for that host is dropped here, before any pacing or network
-            if bl[0] == 'robots-unreadable':
+        if self.dead.get(h, 0) > time.time(): self.stat['rested'] += 1; return 'stopped', {}, b'', u
+        if not self.robots_ok(u):
+            rk = self.rkey(u)
+            if rk in self.blocked:   # robots.txt did not answer: busy, not this run
                 up = self._try_https_when_http_unreadable(u, rng, timeout, head, accept, deadline=deadline, max_time=max_time)
                 if up is not None:
                     return up
-            self.stat['dropped_queued'] = self.stat.get('dropped_queued', 0) + 1; self.dropped.append((safe_url(u), bl[0]))
-            if bl[0] == 'robots': self.need(u, 'robots', bl[1])
-            return bl[0], {}, b'', u
-        if not self.robots_ok(u):   # A13: a robots.txt we could not read (5xx / unreachable) is a next-run status; only a real Disallow line is 'robots' (a robots 401 / 403 = no rules)
-            rk = self.rkey(u)
-            st = 'robots-unreadable' if self.robots.get(rk) is False and rk not in getattr(self, 'robots_disallow', set()) else 'robots'
-            if st == 'robots':
-                self.need(u, 'robots', 'robots.txt has a Disallow line for this address')
-                return st, {}, b'', u
-            up = self._try_https_when_http_unreadable(u, rng, timeout, head, accept, deadline=deadline, max_time=max_time)
-            if up is not None:
-                return up
-            return st, {}, b'', u
+                up = self._try_bare_host_when_www_unreadable(u, rng, timeout, head, accept, deadline=deadline, max_time=max_time)
+                if up is not None:
+                    return up
+                self.stat['dropped_queued'] = self.stat.get('dropped_queued', 0) + 1; self.dropped.append((safe_url(u), 'robots-unreadable'))
+                return 'robots-unreadable', {}, b'', u
+            if self.dead.get(h, 0) > time.time() or h in self.stopped:
+                return 'stopped', {}, b'', u
+            self.need(u, 'robots', f'robots.txt has a Disallow line for this address: {self.disallow_line(u)}')
+            return 'robots', {}, b'', u
         cd = self.crawl_delay(u)
         if cd > MAX_CRAWL_DELAY:
-            self.stat['crawl_delay_skip'] = self.stat.get('crawl_delay_skip', 0) + 1
-            self.for_person.append((safe_url(u), f'Crawl-delay {cd:g} s is over {MAX_CRAWL_DELAY} s: not read'))
+            # never a skip: the address waits for the slow pass, which obeys any Crawl-delay (KPC_SLOW_PASS=1)
+            self.stat['crawl_delay_wait'] = self.stat.get('crawl_delay_wait', 0) + 1
             return 'crawl-delay', {}, b'', u
         slow = cd >= SLOW_DELAY
         # A3: a keyed API answer is never written to disk, and secrets never reach the cache key
@@ -643,9 +755,12 @@ class Manners:
         if cacheable:
             c = self._cache_read(ck, CACHE_DAYS)
             if c is not None: self.stat['cache_hits'] = self.stat.get('cache_hits', 0) + 1; return c
-        tried403 = False
         hdr = {'User-Agent': self.ua, 'Accept': accept, 'Accept-Language': 'en-US,en;q=0.8,fr;q=0.5'}
         if rng: hdr['Range'] = f'bytes={rng[0]}-{rng[1]}'
+        cond = self.conditional.get(u) if not rng and not head else None
+        if cond:   # 26 Nov (doing less): the site's own ETag / Last-Modified from the last read; a 304 means "unchanged"
+            if cond.get('etag'): hdr['If-None-Match'] = cond['etag']
+            if cond.get('last-modified'): hdr['If-Modified-Since'] = cond['last-modified']
         end = None
         if max_time is not None:
             end = time.time() + float(max_time)
@@ -654,12 +769,13 @@ class Manners:
         for attempt in range(3):
             if end is not None and time.time() >= end:
                 return 'err:deadline', {}, b'', u
+            if self.dead.get(h, 0) > time.time(): return 'stopped', {}, b'', u
             if not self._budget(h, slow): return 'deferred', {}, b'', u
             self._pace(h, cd, self.strike.get(h, 0))
             try:
                 sock_timeout = timeout if end is None else max(0.01, min(float(timeout), end - time.time()))
                 req = urllib.request.Request(u, headers=hdr, method='HEAD' if head else 'GET')
-                with urllib.request.urlopen(req, timeout=sock_timeout) as r:
+                with self._urlopen(req, sock_timeout) as r:
                     if head:
                         body = b''
                     elif end is None:
@@ -668,28 +784,45 @@ class Manners:
                         body = read_capped(r, self.read_max, end)
                     hd = {k.lower(): v for k, v in r.headers.items()}
                     if cacheable and r.status == 200: self._cache_write(ck, r.status, hd, body, r.geturl())
+                    if 200 <= r.status < 300 and not head: self.page_read(h)
                     return r.status, hd, body, r.geturl()
             except urllib.error.HTTPError as e:
-                ra = 0
-                try: ra = int((e.headers or {}).get('Retry-After') or 0)
-                except Exception: ra = 0  # noqa: BLE001
                 ehd = {k.lower(): v for k, v in (e.headers or {}).items()}
-                if e.code == 403:   # A2: handled BEFORE the strike-out check, so every second 403 reaches a person
-                    self.strike[h] = self.strike.get(h, 0) + 1; self.stat['strikes'] += 1
-                    wait = max(ra, 30, self.gap, cd)
-                    if not tried403 and attempt < 2 and wait <= max(120, cd):   # A7: a longer Retry-After goes to a person instead
-                        tried403 = True; self.stat['retry403'] = self.stat.get('retry403', 0) + 1
-                        time.sleep(wait); self.last[h] = 0; continue   # the pause above already covered the gap
+                if e.code == 304:
+                    return 304, ehd, b'', u
+                verdict, key, why = NR.page_verdict(e.code)
+                if verdict == 'skip-page' and e.code in NR.P2_BROWSER_CODES and self.p2_browser:
+                    # owner 24 Nov, P-2 "yes": the reader gets ONE page-browser try first; it counts the refusal if that fails too
+                    self.pending_stop[h] = why
+                    self.for_person.append((safe_url(u), f'HTTP {e.code}: one page-browser try, then this page waits for the next run'))
+                    return e.code, ehd, b'', u
+                if verdict == 'skip-page':
+                    # owner 27 Nov ("sure we are just polite"): this page only; the site carries on at its slow pace
+                    gone = self.refuse_host(h, why, direct=True)
                     self.stat['for_person'] = self.stat.get('for_person', 0) + 1
-                    self.for_person.append((safe_url(u), 'HTTP 403 twice' if tried403 else f'HTTP 403, Retry-After {ra} s is too long to wait'))
-                    if self.strike[h] >= self.strikes_out: self.dead[h] = time.time() + self.rest_s
-                    return 403, ehd, b'', u
-                if e.code in (429, 500, 502, 503, 504):
+                    self.for_person.append((safe_url(u), f'HTTP {e.code}: this page waits for the next run' + (f'; {h} stopped for this run ({self.stopped.get(h)})' if gone else f'; {h} carries on')))
+                    return e.code, ehd, b'', u
+                if verdict == 'stop-site':
+                    self.stop_host(h, why)
+                    self.stat['for_person'] = self.stat.get('for_person', 0) + 1
+                    self.for_person.append((safe_url(u), f'HTTP {e.code}: {h} stopped for this run, asked again next run'))
+                    return e.code, ehd, b'', u
+                if verdict == 'busy':
                     self.strike[h] = self.strike.get(h, 0) + 1; self.stat['strikes'] += 1
-                    if self.strike[h] >= self.strikes_out: self.dead[h] = time.time() + self.rest_s; return 'rest', {}, b'', u
+                    if self.strike[h] >= self.strikes_out:
+                        self.stop_host(h, f'{self.strikes_out} server errors'); return e.code, ehd, b'', u
+                    ra = 0
+                    try: ra = int((e.headers or {}).get('Retry-After') or 0)
+                    except Exception: ra = 0  # noqa: BLE001
+                    if attempt == 2: return e.code, ehd, b'', u
                     time.sleep(min(max(ra, 20 * (attempt + 1)), max(120, cd))); continue
                 if e.code == 416 and rng: return self.get(u, None, timeout, head, accept, deadline=deadline, max_time=max_time)
                 return e.code, ehd, b'', u
+            except RobotsHopRefused as e:   # the redirect went to a host whose robots.txt says no, or that is busy / stopped
+                if e.status == 'robots':
+                    self.last_disallow[safe_url(u)] = e.why
+                    self.need(u, 'robots', f'redirected to {e.url}: {e.why}')
+                return e.status, {}, b'', u
             except HostRuleRefused as e:   # a redirect hop the host rules refuse: no request to it, no strike, never retried
                 self.stat['host_rule'] += 1; self.need(u, 'host-rule', str(e.reason))
                 return 'host-rule', {}, b'', u
@@ -697,12 +830,12 @@ class Manners:
                 if str(e) == 'deadline' or (end is not None and time.time() >= end):
                     return 'err:deadline', {}, b'', u
                 self.strike[h] = self.strike.get(h, 0) + 1; self.stat['strikes'] += 1; self.stat['errors'] += 1
-                if self.strike[h] >= self.strikes_out: self.dead[h] = time.time() + self.rest_s; return 'rest', {}, b'', u
+                if self.strike[h] >= self.strikes_out: self.stop_host(h, f'{self.strikes_out} failures'); return 'err:timeout', {}, b'', u
                 if attempt == 2: return 'err:' + str(e)[:60], {}, b'', u
                 time.sleep(10 * (attempt + 1))
             except (urllib.error.URLError, OSError, ValueError) as e:
                 self.strike[h] = self.strike.get(h, 0) + 1; self.stat['strikes'] += 1; self.stat['errors'] += 1
-                if self.strike[h] >= self.strikes_out: self.dead[h] = time.time() + self.rest_s; return 'rest', {}, b'', u
+                if self.strike[h] >= self.strikes_out: self.stop_host(h, f'{self.strikes_out} failures'); return 'err:' + str(e)[:60], {}, b'', u
                 if attempt == 2: return 'err:' + str(e)[:60], {}, b'', u
                 time.sleep(10 * (attempt + 1))
         return 'err', {}, b'', u

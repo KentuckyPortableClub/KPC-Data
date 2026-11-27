@@ -49,10 +49,10 @@ echo     Step 3 of 4: read the parks that wait on slow sites
 echo   ------------------------------------------------------------
 echo     As slowly as each site asks.
 %PY% -I scripts\kpc_park_pages_slow.py --out out
-set "KPC_MAX_CRAWL_DELAY=900"
+set "KPC_SLOW_PASS=1"
 set "KPC_SLOW_HOST_BUDGET=5000"
 %PY% %RF% scripts\kpc_park_pages.py --pc read --data data --out out --state out\state.json --refs-file out\slow-refs.json --max-minutes 300 --max-requests 6000
-set "KPC_MAX_CRAWL_DELAY="
+set "KPC_SLOW_PASS="
 set "KPC_SLOW_HOST_BUDGET="
 %PY% -I scripts\kpc_park_pages.py --pc report --out out >NUL 2>&1
 echo.
