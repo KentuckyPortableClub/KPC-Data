@@ -1,17 +1,41 @@
 # Closures super-bot: review (2026-11-27; RULE SHEET D; compared quietly, nothing on cards until GO)
 
-Run: 2026-11-27T14:16Z · requests 0 · pages 0 · PDFs 0 · sentences read 0 · unmatched 0 · look-alikes skipped 0 · sources failed 0
+Run: 2026-11-27T22:19Z · requests 106 · pages 81 · PDFs 17 · sentences read 372 · unmatched 117 · look-alikes skipped 212 · sources failed 2
 
-## Kentucky gate: **FAIL** — 17 of 26 of Kentucky's own reader's items found here on the same park (65%); 53 only here
+## Kentucky gate: **FAIL** — 17 of 26 of Kentucky's own reader's items found here on the same park (65%); 54 only here
 
-## US-KY (done, read 2026-11-27T10:07)
-hunt 0 · note 66 · part 0 · seasonal 0 · taken_down 8 · whole 1 · 0 banners
+## Sources that failed this run
 
-Sources that failed (last items kept): fs-gwj (rest (host resting after an earlier strike; last items kept)); ky-fs-dbnf (rest (host resting after an earlier strike; last items kept))
+- US-KY fs-gwj: rest (host resting after an earlier strike; last items kept) (https://www.fs.usda.gov/alerts/gwj/alerts-notices)
+- US-KY ky-fs-dbnf: rest (host resting after an earlier strike; last items kept) (https://www.fs.usda.gov/alerts/dbnf/alerts-notices)
+
+## US-KY (done, read 2026-11-27T22:19)
+whole 1 · part 0 · hunt 0 · seasonal 0 · note 67 · taken_down 8 · 0 banners
+
+Sources that failed (last items kept): ky-fs-dbnf (rest (host resting after an earlier strike; last items kept)); fs-gwj (rest (host resting after an earlier strike; last items kept))
 
 Dropped as another state's place (multi-state forest): 2 notices
 
 Unmatched (two parks or none; for chat 11 to judge):
+- 1. Cave Run Lake [ky-fw-quota] · nearest park name: Mammoth Cave National Park (US-0050)
+- BLIND RESTRICTIONS [ky-fw-quota] · no park name shares a word
+- Big Rivers WMA (noon Central to 5 p.m.) in Union County and at the Roberts Tract [ky-fw-quota] · nearest park name: Big Rivers Wildlife Management Area (US-3796)
+- Clay WMA & Yellowbank WMA [ky-fw-quota] · nearest park name: Yellowbank Wildlife Management Area (US-3840)
+- Day of the hunt requirements [ky-fw-quota] · no park name shares a word
+- Defined Terms [ky-fw-quota] · no park name shares a word
+- Green River Lake WMA [ky-fw-quota] = no POTA park: Green River Lake WMA has no POTA number (Green River Lake State Park US-1259 is another park) · nearest park name: Green River Lake State Park (US-1259)
+- JENNY HOLE QUOTA HUNTS: [ky-fw-quota] · nearest park name: Jenny Wiley State Park (US-1281)
+- Kentucky wildlife health, diseases and management [ky-fw-quota] · no park name shares a word
+- LIGHT GOOSE CONSERVATION ORDER SEASON [ky-fw-quota] · no park name shares a word
+- Public Land Closures [ky-fw-quota] · nearest park name: Land Between the Lakes National Recreation Area (US-3792)
+- SHOT SIZE, TYPE, SHOT SHELL LENGTH RESTRICTIONS [ky-fw-quota] · no park name shares a word
+- Sandhill Crane Quota Hunts [ky-fw-quota] · no park name shares a word
+- Sauerheber, Crenshaw and Duncan II Units [ky-fw-quota] · no park name shares a word
+- Special WMA Regulations [ky-fw-quota] · no park name shares a word
+- are open every Saturday and Sunday in January. [ky-fw-quota] · no park name shares a word
+- no more than 4 persons shall occupy a single hunt site at any one time; and [ky-fw-quota] · no park name shares a word
+- ​3. West Kentucky WMA [ky-fw-quota] · no park name shares a word
+- ​​Waterfowl Zones [ky-fw-quota] · no park name shares a word
 - Accessible/ Mobility-Impaired WMA | [ky-fw-public-land] · no park name shares a word
 - BLIND RESTRICTIONS [ky-fw-public-land] · no park name shares a word
 - Big Rivers WMA (noon Central to 5 p.m.) in Union County and at the Roberts Tract [ky-fw-public-land] · nearest park name: Big Rivers Wildlife Management Area (US-3796)
@@ -23,27 +47,8 @@ Unmatched (two parks or none; for chat 11 to judge):
 - Exceptions: [ky-fw-public-land] · no park name shares a word
 - GRAYSON LAKE WMA - Carter & Elliott counties [ky-fw-public-land] · nearest park name: Grayson Lake State Park (US-1258)
 - Green River Lake WMA [ky-fw-public-land] = no POTA park: Green River Lake WMA has no POTA number (Green River Lake State Park US-1259 is another park) · nearest park name: Green River Lake State Park (US-1259)
-- Icon Guide [ky-fw-public-land] · no park name shares a word
-- JENNY HOLE QUOTA HUNTS: [ky-fw-public-land] · nearest park name: Jenny Wiley State Park (US-1281)
-- LAKE BARKLEY WMA - Livingston, Lyon and Trigg Counties [ky-fw-public-land] · nearest park name: Lake Barkley State Park (US-1284)
-- LAKE CUMBERLAND WMA - Pulaski County [ky-fw-public-land] · nearest park name: Cumberland Gap National Historical Park (US-0019)
-- LAND BETWEEN THE LAKES - Trigg & Lyon Counties​ [ky-fw-public-land] · nearest park name: Land Between the Lakes National Recreation Area (US-3792)
-- LEGAL ELK HUNTING EQUIPMENT [ky-fw-public-land] · no park name shares a word
-- No more than four (4) persons shall occupy a single hunt site at any one time; a [ky-fw-public-land] · no park name shares a word
-- OHIO RIVER - Ballard County [ky-fw-public-land] · nearest park name: Ohio River Islands National Wildlife Refuge (US-0608)
-- Other Restrictions: [ky-fw-public-land] · no park name shares a word
-- Overview [ky-fw-public-land] · no park name shares a word
-- Public Land Closures [ky-fw-public-land] · nearest park name: Land Between the Lakes National Recreation Area (US-3792)
-- ROBINSON FOREST WMA - Breathitt, Perry & Knott counties [ky-fw-public-land] · no park name shares a word
-- Sandhill Crane Quota Hunts [ky-fw-public-land] · no park name shares a word
-- Sauerheber, Crenshaw and Duncan II Units [ky-fw-public-land] · no park name shares a word
-- 1. Cave Run Lake [ky-fw-quota] · nearest park name: Mammoth Cave National Park (US-0050)
-- BLIND RESTRICTIONS [ky-fw-quota] · no park name shares a word
-- Big Rivers WMA (noon Central to 5 p.m.) in Union County and at the Roberts Tract [ky-fw-quota] · nearest park name: Big Rivers Wildlife Management Area (US-3796)
-- Clay WMA & Yellowbank WMA [ky-fw-quota] · nearest park name: Yellowbank Wildlife Management Area (US-3840)
-- Day of the hunt requirements [ky-fw-quota] · no park name shares a word
 
-### Side-by-side vs Kentucky's own reader (kpc_park_alerts.py + hc-): matched 17 · only here 53 · only there 9
+### Side-by-side vs Kentucky's own reader (kpc_park_alerts.py + hc-): matched 17 · only here 54 · only there 9
 
 - ONLY THERE: US-4687 hc-US-4687-2026-11-07: Kentucky Fish & Wildlife: Nov 7–8: closed to everyone except drawn hunters (and one helper each) for
 - ONLY THERE: US-3834 hc-US-3834-2026-11-07: Kentucky Fish & Wildlife: Nov 7–8: closed to everyone except drawn hunters (and one helper each) for
@@ -55,6 +60,7 @@ Unmatched (two parks or none; for chat 11 to judge):
 - ONLY THERE: US-3793 hc-US-3793-2026-11-07: Kentucky Fish & Wildlife: Nov 7–8: closed to everyone except drawn hunters (and one helper each) for
 - ONLY THERE: US-1255 hc-US-1255-2026-11-21: Kentucky Fish & Wildlife: Nov 21–22: closed to everyone except drawn hunters (and one helper each) f
 - ONLY HERE: US-0019 [note] "The Pinnacle restrooms are closed, but portable restrooms are available for use instead"
+- ONLY HERE: US-0019 [note] "Pinnacle Road is temporarily closed due to winter weather conditions"
 - ONLY HERE: US-0050 [note] "Elevator for Accessible Tour Out of Service."
 - ONLY HERE: US-0050 [note] "The Green River Ferry has temporarily suspended operation due to low water levels."
 - ONLY HERE: US-0538 [note] "Due to lack of staffing, there may be times that the Visitor Center will be temporarily closed."
@@ -78,9 +84,9 @@ Unmatched (two parks or none; for chat 11 to judge):
 - ONLY HERE: US-1278 [note] "Parts of the park may be closed during the quota hunt Dec. 4-6 (youth only)."
 - ONLY HERE: US-1280 [note] "Parts of the park may be closed during the quota hunt Dec. 17-20."
 - ONLY HERE: US-1281 [note] "Jenny Wiley State Resort Park lodge is closed for critical structural integrity renovations."
-- ONLY HERE: US-1282 [note] "Parts of the park may be closed during the quota hunt Dec. 3-6."
 
 - US-0019 · ℹ️ Note: "The Pinnacle restrooms are closed, but portable restrooms are available for use instead" (National Park Service)
+- US-0019 · ℹ️ Part closed (Pinnacle Road) updated 2026-11-27: "Pinnacle Road is temporarily closed due to winter weather conditions" (National Park Service)
 - US-0050 · ℹ️ Note: "Elevator for Accessible Tour Out of Service." (National Park Service)
 - US-0050 · ℹ️ Note: "The Green River Ferry has temporarily suspended operation due to low water levels." (National Park Service)
 - US-0538 · ℹ️ Note: "Due to lack of staffing, there may be times that the Visitor Center will be temporarily closed." (US Fish and Wildlife Service)
@@ -91,5 +97,4 @@ Unmatched (two parks or none; for chat 11 to judge):
 - US-10124 · ℹ️ Part closed (closed to non-hunters) 2027-09-09 – 2027-09-12: "The main tract of the management area is closed to public use Sept. 9-12, Sept. 23-26, 2026 and Feb. 24-27, 2027, except for those regi
 - US-10124 · ℹ️ Note: "This WMA is closed to the public during quota fox hunting field trials." (Kentucky Fish and Wildlife)
 - US-10153 · ℹ️ Part closed (easternmost tract): "The easternmost tract is currently closed to public use" (Kentucky Fish and Wildlife)
-- US-10159 · ℹ️ Part closed (Sugar Creek Trailhead and Redbird Crest Trail Sections 4, 5 and 6 will also be closed duri): "Sugar Creek Trailhead and Redbird Crest Trail Sections 4, 5 and 6 will also be closed duri
 
