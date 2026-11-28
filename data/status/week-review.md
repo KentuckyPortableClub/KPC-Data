@@ -1,4 +1,4 @@
-# The week in numbers (2026-11-20 -> 2026-11-27)
+# The week in numbers (2026-11-21 -> 2026-11-28)
 
 For the weekly review (Fable, Nov 6). Made nightly by kpc_week_numbers.py; snapshots in week-numbers.json.
 
