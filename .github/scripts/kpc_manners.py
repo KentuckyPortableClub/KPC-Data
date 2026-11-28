@@ -596,6 +596,24 @@ class Manners:
         return None
 
 
+    def _try_bare_host_when_www_unreadable(self, u, rng, timeout, head, accept, deadline=None, max_time=None):
+        """26 Nov 2026 (NY DEC: 567 parks never read; www.dec.ny.gov's robots.txt could not be reached from the PC, while 17 pages
+        on dec.ny.gov were read): when a www. host's robots.txt is UNREADABLE (5xx / unreachable, never a Disallow), the same
+        address on the bare host is tried once, under the bare host's own robots.txt. A real Disallow is never worked around."""
+        try:
+            p = urllib.parse.urlsplit(u)
+        except Exception:  # noqa: BLE001
+            return None
+        if not (p.hostname or '').lower().startswith('www.'):
+            return None
+        bu = urllib.parse.urlunsplit((p.scheme or 'https', p.netloc[4:], p.path, p.query, p.fragment))
+        st, hd, body, final = self.get(bu, rng=rng, timeout=timeout, head=head, accept=accept, deadline=deadline, max_time=max_time)
+        if isinstance(st, int):
+            self.stat['bare_host'] = self.stat.get('bare_host', 0) + 1
+            return st, hd, body, final
+        return None
+
+
     def get(self, u, rng=None, timeout=40, head=False, accept='text/html,application/pdf,application/json,*/*;q=0.8',
              deadline=None, max_time=None):
         """Polite GET. Returns (status, headers dict, body bytes, final url). rng=(a,b) reads only those bytes.
@@ -618,6 +636,9 @@ class Manners:
                 up = self._try_https_when_http_unreadable(u, rng, timeout, head, accept, deadline=deadline, max_time=max_time)
                 if up is not None:
                     return up
+                up = self._try_bare_host_when_www_unreadable(u, rng, timeout, head, accept, deadline=deadline, max_time=max_time)
+                if up is not None:
+                    return up
             self.stat['dropped_queued'] = self.stat.get('dropped_queued', 0) + 1; self.dropped.append((safe_url(u), bl[0]))
             if bl[0] == 'robots': self.need(u, 'robots', bl[1])
             return bl[0], {}, b'', u
@@ -628,6 +649,9 @@ class Manners:
                 self.need(u, 'robots', 'robots.txt has a Disallow line for this address')
                 return st, {}, b'', u
             up = self._try_https_when_http_unreadable(u, rng, timeout, head, accept, deadline=deadline, max_time=max_time)
+            if up is not None:
+                return up
+            up = self._try_bare_host_when_www_unreadable(u, rng, timeout, head, accept, deadline=deadline, max_time=max_time)
             if up is not None:
                 return up
             return st, {}, b'', u
