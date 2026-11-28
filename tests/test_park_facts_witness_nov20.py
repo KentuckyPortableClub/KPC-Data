@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Park facts, 20 Nov 2026: every official size is tagged with where it came from (its witness). Offline, invented parks.
+27 Nov 2026: the builder no longer reads the old key, so it writes same_record / other_layer only when a caller gives the layers.
 
 same_record (the map layer the key already joined), other_layer, agency_document, hand_copy, unknown.
 Only agency_document and hand_copy count. Prints PASS / FAIL lines and ends ALL PASS or SOME FAILED.
@@ -7,7 +8,7 @@ Only agency_document and hand_copy count. Prints PASS / FAIL lines and ends ALL 
 import gzip, json, os, pathlib, subprocess, sys, tempfile
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-TOOL = ROOT / '.github/scripts/draft/tools/kpc_park_facts'
+TOOL = next(p for p in (ROOT / 'kpc_park_facts', ROOT / '.github/scripts/draft/tools/kpc_park_facts') if p.is_dir())   # 27 Nov: the work copy, else KPC-Data's
 sys.path.insert(0, str(TOOL))
 import kpc_park_facts as F  # noqa: E402
 
@@ -29,9 +30,11 @@ with tempfile.TemporaryDirectory() as t:
     json.dump({'parks': {'US-9101': {'n': 'Invented Lake State Park', 'src': ['sgzza']},
                          'US-9102': {'n': 'Invented Marsh', 'src': ['PAD-US']},
                          'US-9105': {'n': 'Invented Bluff', 'src': []}}}, open(t / 'key' / 'US-ZZ.json', 'w'))
-    keyl = F.read_key_layers([str(t / 'key')], str(t / 'layers.json'))
-    check('the key layers are read (state layer by its address, PAD-US by the national address)',
-          keyl['US-9101'] == {F.norm_layer(LAYER)} and keyl['US-9102'] == {F.norm_layer(F.NATIONAL_LAYERS['PAD-US'])})
+    # 27 Nov 2026 (audit section 2): the builder no longer reads the old key (read_key_layers is gone). witness() still takes
+    # the joined layers when a caller gives them, so the tag rules below are checked with sets made by hand.
+    PADUS = 'https://edits.nationalmap.gov/arcgis/rest/services/PAD-US/PAD_US/MapServer/0/query'
+    keyl = {'US-9101': {F.norm_layer(LAYER)}, 'US-9102': {F.norm_layer(PADUS)}, 'US-9105': set()}
+    check('the old key reader is gone (27 Nov)', not hasattr(F, 'read_key_layers'))
     cases = [
         ('US-9101', {'how': 'name+kind', 'source_url': LAYER}, 'same_record'),
         ('US-9101', {'how': 'name+kind', 'source_url': LAYER.replace('https://', 'http://').replace('/query?where=1%3D1&f=json', '')},
@@ -65,14 +68,16 @@ with tempfile.TemporaryDirectory() as t:
     r = subprocess.run([sys.executable, str(TOOL / 'kpc_park_facts.py'), '--parkinfo', str(t / 'parkinfo'), '--acres', str(t / 'acres.json'),
                         '--pages', str(t / 'pages'), '--key', str(t / 'key'), '--layers', str(t / 'layers.json'),
                         '--out', str(t / 'out')], capture_output=True, text=True)
-    check('the builder runs with the key', r.returncode == 0)
+    check('the builder still runs when the workflow passes --key / --layers (27 Nov: taken and ignored)', r.returncode == 0)
     doc = json.load(open(t / 'out' / 'park-facts.json'))
     s1, s2 = doc['parks']['US-9101']['size'], doc['parks']['US-9102']['size']
-    check('the file says same_record and does not count it', (s1['witness'], s1['witness_counts']) == ('same_record', False))
+    # 27 Nov 2026: was same_record; the key is not read, so a map-layer size is unknown, and still not counted
+    check('the file says unknown for a map-layer size and does not count it', (s1['witness'], s1['witness_counts']) == ('unknown', False))
     check('the file says agency_document and counts it', (s2['witness'], s2['witness_counts']) == ('agency_document', True))
     check('each size says why', bool(s1['witness_why']) and bool(s2['witness_why']))
-    check('the counts carry every tag seen', doc['counts'].get('size witness: same_record') == 1
+    check('the counts carry every tag seen', doc['counts'].get('size witness: unknown') == 1
           and doc['counts'].get('size witness: agency_document') == 1)
+    check('the file says the old key was not read', doc['inputs']['old_key'].startswith('not read'))
 
 print('ALL PASS' if ok else 'SOME FAILED')
 sys.exit(0 if ok else 1)
