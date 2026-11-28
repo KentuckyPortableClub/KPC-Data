@@ -2035,6 +2035,51 @@ def _blank_location():
     return {'coords': [], 'dropped_points': 0, 'addresses': [], 'directions': None, 'state_words': [], 'offsets': [], 'counties': []}
 
 
+_W = r"(?:(?:[A-Z]\.){1,3}|[A-Z](?:[\w'\u2019&-]|\.(?=\w))*)"   # a capitalised word or initials (C.C.); a dot never ends a sentence inside it
+ALSO_RX = re.compile(r"\b(?:also\s+(?:known|called)\s+as|formerly(?:\s+known\s+as)?|a\.?k\.?a\.?|once\s+called|now\s+called|renamed)\s*[:,]?\s*[\"\u201c]?((?:the\s+)?" + _W + r"(?:\s+(?:of|the|and|" + _W + r")){0,7})", re.I)
+SHORT_KIND = r'(?:WMA|SWA|SNA|SRA|SHS|AMA|WPA|MUA|NWR|SF|SP|Tract|Unit|Parcel|Addition|Annex)'
+PHRASE_RX = re.compile(r"\b((?:" + _W + r"\s+){1,6}?(?:" + '|'.join(re.escape(k) for k in sorted(KINDS, key=len, reverse=True)) + '|' + SHORT_KIND + r"))\b")
+
+
+def name_candidates(main, main_text, pota_name, name=None):
+    """26 Nov 2026 (owner 5:55 PM: 'the page reader has had issues reading names ... lets say it is Perkins WMA, can it do a search
+    of the whole page to find possible real names'): every name the park's own page may call it, from the WHOLE page: its title,
+    its headings (h1-h3), og:title, its schema.org name, 'also known as / formerly' phrases, and any phrase in the text that ends
+    in a kind word ('Perkins Wildlife Management Area', 'Perkins WMA', 'Perkins Tract'). A candidate is kept only when it shares a
+    real word (4+ letters, not a kind word) with POTA's name, so a neighbouring 'Smith Lake WMA' named in passing is not one.
+    At most 12, each with where it was found. Report data only: the key decides with its own tests (own official page, the
+    record holding POTA's pin, never a site-wide heading or another park's name)."""
+    core = {w for w in sig_words(pota_name) if len(w) >= 4} - {w for k in KINDS for w in sig_words(k)}
+    if not core: return []
+    out, seen = [], set()
+    pw = set(norm_written(pota_name).split())
+    def add(cand, where):
+        c = re.split(r'\s+[|\u2013\u2014]\s+|\s+-\s+|\s*\|\s*', cut_tail(_unescape(' '.join(str(cand or '').split()))))[0]
+        c = re.sub(r'^(?i:the)\s+', '', c).strip(' .,;:-|')
+        if where == 'page text':   # a sentence's first word ('Visit General C.C. Andrews State Forest') is not part of the name
+            ws = c.split()
+            while len(ws) > 1 and norm_written(ws[0]) not in pw: ws = ws[1:]
+            c = ' '.join(ws)
+        if not c or len(c) > 110 or is_menu_chrome(c): return
+        k = norm_written(c)
+        if not k or k in seen or not (sig_words(c) & core): return
+        seen.add(k); out.append({'name': c, 'from': where})
+    name = name or {}
+    for where, v in (('title', main.get('title') or name.get('title')), ('heading', main.get('heading') or name.get('heading')),
+                     ('og:title', main.get('og')), ('schema name', main.get('jsonld'))):
+        if v: add(v, where)
+    for h in main.get('headings') or []:
+        add(h, 'heading')
+    txt = str(main_text or '')[:200000]
+    for m in ALSO_RX.finditer(txt):
+        add(m.group(1), 'also known as')
+        if len(out) >= 12: break
+    for m in PHRASE_RX.finditer(txt):
+        add(m.group(1), 'page text')
+        if len(out) >= 12: break
+    return out[:12]
+
+
 def build_facts(ref, area, pota, area_parks, asked, pages, today, shared_with, own_is, own_why, read_blocks=True):
     """One park's facts from pages already fetched. read_blocks False stores nothing but the reason."""
     pin = pota.get('pin') or [None, None]
@@ -2138,7 +2183,8 @@ def build_facts(ref, area, pota, area_parks, asked, pages, today, shared_with, o
         'page': page,
         'own_page': {'is': own_is, 'why': own_why, 'shared_with': list(shared_with or []),
                      'host': host_of(asked.get('url') or '') or ''},
-        'name': {k: name.get(k) for k in ('title', 'heading', 'best', 'vs_pota', 'quote') if k in name or True},
+        'name': dict({k: name.get(k) for k in ('title', 'heading', 'best', 'vs_pota', 'quote') if k in name or True},
+                     names=name_candidates(main, main_text, pota.get('name'), name) if read_blocks and not unofficial else []),   # 26 Nov
         'designation': designation,
         'inside_of': [{k: r[k] for k in ('unit', 'kind', 'pota_ref', 'quote') if k in r or k == 'pota_ref'} for r in inside],
         'maybe_inside': maybe,

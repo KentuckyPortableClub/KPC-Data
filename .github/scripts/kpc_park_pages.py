@@ -8,6 +8,18 @@ Part 1 of the hand-off is `read` and `--selftest`. Later commands are named here
 filled in by the later parts; until then they say so and do no work.
 """
 import argparse, datetime, json, os, pathlib, re, sys, time, urllib.parse
+
+
+def _kpc_bar(i, n, label, t0):
+    """26 Nov (owner: 'a progress bar or something on the long ones'): one line, e.g.
+    [#########---------------------]  30%   12 of 40   US-NY   about 8 min left"""
+    import time as _t
+    f = (i / n) if n else 1.0
+    left = ''
+    if 0 < i < n:
+        m = (_t.time() - t0) / 60 / i * (n - i)
+        left = f'   about {m:.0f} min left' if m >= 1 else '   less than a minute left'
+    return f'  [{"#" * int(f * 30)}{"-" * (30 - int(f * 30))}] {f * 100:3.0f}%   {i} of {n}   {label}{left}'
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import kpc_park_pages_rules as R  # noqa: E402
 import kpc_park_pages_work as W  # noqa: E402
@@ -702,7 +714,9 @@ def read_parks(areas, web, docs, truth, getter, state, today, refs=None, areas_o
             _write_progress(out_dir, out, state, state_path)
         return out, requests
 
+    _t0p = time.time()
     for index, (area, ref) in enumerate(sequence):
+        if index % 25 == 0: print(_kpc_bar(index, len(sequence), f'pages read ({area})', _t0p), flush=True)
         parks = areas[area]
         if max_parks is not None and done >= max_parks:
             return stop('parks', index)
@@ -1276,6 +1290,11 @@ def cmd_read(args):
         order = [{'ref': ref, 'area': area, 'tier': 0, 'why': 'kept page read again'} for area, parks in sorted(areas.items())
                  if not areas_only or area in areas_only for ref, row in sorted(parks.items())
                  if getter.copy._rec(choose_link(ref, row, web, docs)[0] or '') is not None]
+        # 26 Nov 2026 (owner 5:57 PM: 'to save on time ... just do that step only for the ones that might have name mismatches'):
+        # with a refs file, only those parks' kept pages are read again
+        _only = set(_refs_from_args(args)) if (getattr(args, 'refs_file', '') or getattr(args, 'refs', '')) else None
+        if _only is not None:
+            order = [row for row in order if row['ref'] in _only]
         args.max_requests = max(args.max_requests, 10 * len(order) + 10)
     elif args.fixtures:
         getter = FixtureGetter(load_json(args.fixtures, {}), pathlib.Path(args.fixtures).parent)
