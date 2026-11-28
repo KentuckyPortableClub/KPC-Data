@@ -1,4 +1,4 @@
-# Waiting for a grader (2026-11-27 19:58Z, written by the waiting room)
+# Waiting for a grader (2026-11-28 09:27Z, written by the waiting room)
 Rows the same as the live (already graded) copy keep their old YES: check only the NEW + CHANGED rows listed. Held = a check failed: fix first.
 
 - **data/campinfo/US-CO.json** (campinfo, PASS; grader chat 11): 154 new, 501 changed, 2 gone, 102 same (carried); check: CO-0068ac64ff, CO-0511b3728f, CO-0757f2fc8d, CO-09ac37a889, CO-0bcea7b416, CO-0c29ced837, CO-0e7cc0fe0f, CO-148ab21b82, CO-18b78e2d0d, CO-1dd9a7a093, CO-1fd8f69ef5, CO-23cf27e39a, CO-26a7d73e76, CO-280ffd6a5d, CO-285d7da9b5, CO-28f9330e93, CO-2fd063bcf1, CO-3430931b23, CO-3baf5babf4, CO-3d7279f592, CO-4098208f31, CO-42605599db, CO-45b34a6a39, CO-464c77c1bc, CO-46d010e0fe ...
@@ -24,6 +24,7 @@ Rows the same as the live (already graded) copy keep their old YES: check only t
 - **data/campstate/US-UT.json** (campstate, PASS; grader chat 11): 159 new, 0 changed, 13 gone, 0 same (carried); check: UT-c36130fb7f, UT-1149169ed8, UT-6cf365a510, UT-42cc91938a, UT-81a0cb6025, UT-025d25ca26, UT-7bcbd67709, UT-f465e73ee0, UT-b6e96401dc, UT-9e3af08981, UT-8ab07f22ed, UT-6db8c50781, UT-b9e38c1e44, UT-c6ac9ce05a, UT-aa501f4036, UT-58c42d98ce, UT-3c07eb49d8, UT-4fbd91867d, UT-1885fe05b8, UT-878f09068a, UT-94f3584dc4, UT-dfde21cffa, UT-d0fa3761d5, UT-031991c798, UT-73e9f8d62c ...
 - **data/campstate/US-VA.json** (campstate, PASS; grader chat 11): 450 new, 0 changed, 40 gone, 0 same (carried); check: VA-83553839b1, VA-2a39cfef34, VA-2f166ccab6, VA-070eee34b7, VA-518e3516e4, VA-e917d4adc2, VA-2b649ca1ee, VA-574a73637c, VA-f40e4d991c, VA-a8d710e3a4, VA-f8e85091f1, VA-63e6e815f1, VA-a87d765f7c, VA-e5038932dc, VA-8dfe9203d7, VA-1c55c97e78, VA-688eaea1cc, VA-666dfaab6c, VA-894384e6bb, VA-73f740cab6, VA-22e455dc77, VA-6aeb8d0d89, VA-1ae5988482, VA-8e71e90e0d, VA-e02f362dc1 ...
 - **data/campstate/US-VT.json** (campstate, PASS; grader chat 11): 0 new, 0 changed, 0 gone, 147 same (carried)
+- **data/us-key/index.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build US-44613348117): 0 new, 50 changed, 0 gone, 0 same (carried); check: AK, AL, AR, AZ, CA, CO, CT, DC, DE, FL, GA, HI, IA, ID, IL, IN, KS, LA, MA, MD, ME, MI, MN, MO, MS ...
 - **data/world-key/AU.json** (key, PASS; grader chat 11 (+ chat 2 G-4); held build NONE (no build stamp: a YES cannot name a build yet)): 0 new, 1 changed, 0 gone, 10738 same (carried); check: AU-8945
 - **data/wwff/PAFF.json** (wwff, PASS; grader chat 11): 0 new, 5 changed, 0 gone, 283 same (carried); check: PAFF-0003, PAFF-0015, PAFF-0019, PAFF-0079, PAFF-0104
 - **data/wwff/PYFF.json** (wwff, PASS; grader chat 11): 1 new, 0 changed, 0 gone, 1207 same (carried); check: PYFF-1208
